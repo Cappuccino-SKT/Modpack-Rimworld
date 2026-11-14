@@ -18,10 +18,12 @@ Não é necessário para jogar.</description>
     <li>
       <packageId>brrainz.harmony</packageId>
       <displayName>Harmony</displayName>
+      <steamWorkshopUrl>steam://url/CommunityFilePage/2009463077</steamWorkshopUrl>
     </li>
     <li>
       <packageId>ecosdaqueda.core</packageId>
       <displayName>Ecos da Queda</displayName>
+      <downloadUrl>https://github.com/Cappuccino-SKT/Modpack-Rimworld/tree/mod/ecos-da-queda</downloadUrl>
     </li>
   </modDependencies>
   <loadAfter>
