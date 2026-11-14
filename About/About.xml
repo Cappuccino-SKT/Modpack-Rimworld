@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+  <name>Ecos da Queda - Ferramentas de Debug</name>
+  <author>Felipe</author>
+  <packageId>ecosdaqueda.debug</packageId>
+  <modVersion>0.1.0</modVersion>
+  <supportedVersions>
+    <li>1.7</li>
+  </supportedVersions>
+  <description>Ferramentas de desenvolvimento do Ecos da Queda.
+
+1. Ações no menu de debug do jogo (modo desenvolvedor), categoria "Ecos da Queda": mexer em Fama/Infâmia, entrar/sair de potências, forçar estipêndio, dízimo e retaliações, etc.
+
+2. Executor de testes automáticos: iniciando o jogo com -eqtest=arquivo.txt (de preferência com -Headless), o mod carrega um save ou cria um jogo novo, executa os comandos do arquivo, grava um relatório e fecha o jogo. Sem o argumento -eqtest, esta parte fica desligada.
+
+Não é necessário para jogar.</description>
+  <modDependencies>
+    <li>
+      <packageId>brrainz.harmony</packageId>
+      <displayName>Harmony</displayName>
+    </li>
+    <li>
+      <packageId>ecosdaqueda.core</packageId>
+      <displayName>Ecos da Queda</displayName>
+    </li>
+  </modDependencies>
+  <loadAfter>
+    <li>brrainz.harmony</li>
+    <li>ecosdaqueda.core</li>
+    <li>jaeger972.factionterritories2</li>
+  </loadAfter>
+</ModMetaData>

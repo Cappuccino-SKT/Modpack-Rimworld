@@ -1,0 +1,29 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <!-- Ferramentas de debug e executor de testes do Ecos da Queda.
+       Saída: Mods/EcosDaQuedaDebug/1.7/Assemblies/EcosDaQueda.Debug.dll
+       Compile depois do projeto EcosDaQueda (referencia a DLL dele). -->
+
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <LangVersion>latest</LangVersion>
+    <Nullable>disable</Nullable>
+    <ImplicitUsings>disable</ImplicitUsings>
+    <AssemblyName>EcosDaQueda.Debug</AssemblyName>
+    <RootNamespace>EcosDaQueda.DebugTools</RootNamespace>
+    <OutputPath>..\1.7\Assemblies\</OutputPath>
+    <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+    <AppendRuntimeIdentifierToOutputPath>false</AppendRuntimeIdentifierToOutputPath>
+    <GenerateDependencyFile>false</GenerateDependencyFile>
+    <DebugType>none</DebugType>
+    <GameDir>..\..\..\</GameDir>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Reference Include="Assembly-CSharp"><HintPath>$(GameDir)Assembly-CSharp.dll</HintPath><Private>false</Private></Reference>
+    <Reference Include="UnityStubs"><HintPath>$(GameDir)UnityStubs.dll</HintPath><Private>false</Private></Reference>
+    <Reference Include="0Harmony"><HintPath>$(GameDir)Mods\2009463077\1.7\Assemblies\0Harmony.dll</HintPath><Private>false</Private></Reference>
+    <Reference Include="EcosDaQueda"><HintPath>$(GameDir)Mods\EcosDaQueda\1.7\Assemblies\EcosDaQueda.dll</HintPath><Private>false</Private></Reference>
+  </ItemGroup>
+
+</Project>

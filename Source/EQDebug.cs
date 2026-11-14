@@ -1,0 +1,341 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Reflection;
+using System.Text;
+using HarmonyLib;
+using RimWorld;
+using RimWorld.Planet;
+using Verse;
+
+namespace EcosDaQueda.DebugTools
+{
+    /// <summary>
+    /// Operações de debug compartilhadas pelo menu de debug do jogo e pelo executor de testes.
+    /// Cada método devolve um texto com o resultado.
+    /// </summary>
+    public static class EQDebug
+    {
+        private static Func<Faction> originalProvider;
+        private static bool providerOverridden;
+
+        // ------------------------------------------------------------ utilidades
+
+        public static IEnumerable<Faction> Powers
+        {
+            get
+            {
+                var s = ReputationSettingsDef.Settings;
+                if (s == null) yield break;
+                foreach (FactionDef d in s.factions)
+                {
+                    Faction f = EQUtil.MainFaction(d);
+                    if (f != null) yield return f;
+                }
+            }
+        }
+
+        /// <summary>Aceita o defName (EQ_Faction_Helice) ou o apelido (helice, silencio, forja, coro).</summary>
+        public static Faction FindFaction(string name)
+        {
+            if (name.NullOrEmpty()) return null;
+            FactionDef def = DefDatabase<FactionDef>.GetNamedSilentFail(name)
+                ?? DefDatabase<FactionDef>.AllDefsListForReading.FirstOrDefault(d => d.defName.Equals("EQ_Faction_" + name, StringComparison.OrdinalIgnoreCase));
+            return EQUtil.MainFaction(def);
+        }
+
+        public static Map Map => Find.AnyPlayerHomeMap ?? Find.CurrentMap;
+
+        private static IntVec3 HomeCell(Map map)
+        {
+            Pawn colonist = map.mapPawns.FreeColonistsSpawned.FirstOrDefault();
+            IntVec3 c = colonist?.Position ?? map.Center;
+            if (!CellFinder.TryFindRandomCellNear(c, map, 6, x => x.Standable(map) && !x.Fogged(map), out IntVec3 result))
+                result = c;
+            map.areaManager.Home[result] = true;
+            return result;
+        }
+
+        // ------------------------------------------------------------ reputação
+
+        public static string SetReputation(Faction f, bool fame, float value)
+        {
+            var rec = WorldComponent_Reputation.Current.Get(f);
+            if (fame) rec.fame = value; else rec.infamy = value;
+            return f.Name + ": fama=" + rec.fame + " infamia=" + rec.infamy + " titulo=" + ReputationSettingsDef.Settings.Tier(rec.fame, rec.infamy)?.label;
+        }
+
+        public static string AddReputation(Faction f, float fame, float infamy)
+        {
+            WorldComponent_Reputation.Current.Record(f, fame, infamy);
+            return DescribeReputation(f);
+        }
+
+        public static string DescribeReputation(Faction f)
+        {
+            var rec = WorldComponent_Reputation.Current.Get(f);
+            var tier = ReputationSettingsDef.Settings.Tier(rec.fame, rec.infamy);
+            return f.Name + ": fama=" + rec.fame.ToString("0.#") + " infamia=" + rec.infamy.ToString("0.#") + " titulo=" + tier?.label
+                + " precos=" + (tier?.priceGain ?? 0f) + " lastEvent=" + rec.lastEventTick;
+        }
+
+        public static string Goodwill(Faction f, int delta)
+        {
+            bool ok = Faction.OfPlayer.TryAffectGoodwillWith(f, delta, canSendMessage: false, canSendHostilityLetter: false);
+            return "goodwill " + delta + " ok=" + ok + " -> " + f.GoodwillWith(Faction.OfPlayer) + " " + f.RelationKindWith(Faction.OfPlayer) + " | " + DescribeReputation(f);
+        }
+
+        public static string SetHostile(Faction f, bool hostile)
+        {
+            foreach (FactionRelation rel in new[] { Faction.OfPlayer.RelationWith(f), f.RelationWith(Faction.OfPlayer) })
+            {
+                rel.baseGoodwill = hostile ? -100 : 0;
+                rel.kind = hostile ? FactionRelationKind.Hostile : FactionRelationKind.Neutral;
+            }
+            return f.Name + " agora " + f.RelationKindWith(Faction.OfPlayer) + " (" + f.GoodwillWith(Faction.OfPlayer) + ")";
+        }
+
+        public static string Retaliate(Faction f)
+        {
+            MethodInfo m = AccessTools.Method(typeof(WorldComponent_Reputation), "SendBountyHunters");
+            object r = m.Invoke(null, new object[] { f, Map, ReputationSettingsDef.Settings });
+            return "retaliacao de " + f.Name + ": executou=" + r;
+        }
+
+        public static string SendGift(Faction f, bool tribute)
+        {
+            MethodInfo m = AccessTools.Method(typeof(WorldComponent_Reputation), tribute ? "SendTribute" : "SendGift");
+            object r = m.Invoke(null, new object[] { f, Map, ReputationSettingsDef.Settings });
+            return (tribute ? "tributo" : "presente") + " de " + f.Name + ": executou=" + r;
+        }
+
+        // ------------------------------------------------------------ lealdade
+
+        /// <summary>Força o jogador a ser membro de f (null = ninguém; usa de novo o Hegemony com restore=true).</summary>
+        public static string Join(Faction f, bool restore = false)
+        {
+            if (!providerOverridden)
+            {
+                originalProvider = EQAllegiance.PlayerOverlordProvider;
+                providerOverridden = true;
+            }
+            if (restore)
+            {
+                EQAllegiance.PlayerOverlordProvider = originalProvider;
+                providerOverridden = false;
+                return "lealdade voltou a ser lida do Hegemony";
+            }
+            EQAllegiance.PlayerOverlordProvider = () => f;
+            return "lealdade forçada: " + (f?.Name ?? "nenhuma") + " (vale na próxima hora de jogo)";
+        }
+
+        public static string MakeDue(bool tithe)
+        {
+            var alg = WorldComponent_Allegiance.Current;
+            if (alg?.memberOf == null) return "não é membro de nenhuma potência";
+            if (tithe) { alg.lastTitheTick = -9999999; alg.pendingTitheUntil = -1; }
+            else alg.lastStipendTick = -9999999;
+            return (tithe ? "dízimo" : "estipêndio") + " vence na próxima hora de jogo";
+        }
+
+        public static string DescribeAllegiance()
+        {
+            var alg = WorldComponent_Allegiance.Current;
+            if (alg?.memberOf == null) return "lealdade: nenhuma";
+            return "lealdade: " + alg.memberOf.Name + " posto=" + alg.RankIndex + " (" + alg.Rank?.label + ") lastRank=" + alg.lastRank
+                + " lastStipend=" + alg.lastStipendTick + " lastTithe=" + alg.lastTitheTick + " pendingTithe=" + alg.pendingTitheUntil;
+        }
+
+        public static string Services()
+        {
+            var alg = WorldComponent_Allegiance.Current;
+            var svc = WorldComponent_Services.Current;
+            if (alg?.memberOf == null) return "sem serviços: não é membro";
+            var sb = new StringBuilder();
+            foreach (FactionServiceDef s in WorldComponent_Services.ServicesOf(alg.memberOf.def))
+                sb.AppendLine("  " + s.defName + " [" + s.label + "] prata=" + s.silver + " -> " + (svc.BlockReason(s, Map) ?? "DISPONÍVEL"));
+            return sb.ToString().TrimEnd();
+        }
+
+        public static string UseService(string defName)
+        {
+            FactionServiceDef s = DefDatabase<FactionServiceDef>.GetNamedSilentFail(defName);
+            if (s == null) return "serviço não existe: " + defName;
+            var svc = WorldComponent_Services.Current;
+            string block = svc.BlockReason(s, Map);
+            if (block != null) return "BLOQUEADO: " + block;
+            svc.Use(s, Map);
+            return "usado. recarga=" + svc.CooldownTicksLeft(s) + " ticks";
+        }
+
+        // ------------------------------------------------------------ mundo / mapa
+
+        public static string Give(string thingDefName, int count)
+        {
+            ThingDef def = DefDatabase<ThingDef>.GetNamedSilentFail(thingDefName);
+            if (def == null) return "ThingDef não existe: " + thingDefName;
+            Map map = Map;
+            int left = count;
+            while (left > 0)
+            {
+                Thing t = ThingMaker.MakeThing(def, GenStuff.DefaultStuffFor(def));
+                t.stackCount = Math.Min(left, def.stackLimit);
+                left -= t.stackCount;
+                IntVec3 c = HomeCell(map);
+                GenPlace.TryPlaceThing(t, c, map, ThingPlaceMode.Near, out Thing placed);
+                if (placed != null)
+                {
+                    placed.SetForbidden(false, false);
+                    map.areaManager.Home[placed.Position] = true;
+                }
+            }
+            return "deu " + count + "x " + def.defName + " (total no mapa: " + EQItems.CountOnMap(map, def) + ")";
+        }
+
+        public static string SpawnPrisoner()
+        {
+            Map map = Map;
+            Pawn p = PawnGenerator.GeneratePawn(PawnKindDefOf.Villager, Find.FactionManager.RandomEnemyFaction() ?? Powers.FirstOrDefault());
+            GenSpawn.Spawn(p, HomeCell(map), map);
+            p.guest.SetGuestStatus(Faction.OfPlayer, GuestStatus.Prisoner);
+            return "prisioneiro criado: " + p.LabelShort + " (prisioneiros: " + map.mapPawns.PrisonersOfColonySpawned.Count + ")";
+        }
+
+        /// <summary>Cria um membro da facção e o mata com um colono como autor (testa Infâmia por morte).</summary>
+        public static string KillMember(Faction f)
+        {
+            Map map = Map;
+            Pawn killer = map.mapPawns.FreeColonistsSpawned.FirstOrDefault();
+            Pawn victim = PawnGenerator.GeneratePawn(f.def.basicMemberKind, f);
+            GenSpawn.Spawn(victim, HomeCell(map), map);
+            string before = DescribeReputation(f);
+            victim.Kill(new DamageInfo(DamageDefOf.Bullet, 9999f, 999f, -1f, killer));
+            return "matou " + victim.LabelShort + " (" + victim.kindDef.defName + ") autor=" + killer?.LabelShort + "\n  antes:  " + before + "\n  depois: " + DescribeReputation(f);
+        }
+
+        public static string UseSerum(int times)
+        {
+            Map map = Map;
+            ThingDef def = DefDatabase<ThingDef>.GetNamedSilentFail("EQ_Soro");
+            if (def == null) return "EQ_Soro não existe";
+            var sb = new StringBuilder();
+            Pawn pawn = map.mapPawns.FreeColonistsSpawned.FirstOrDefault(p => p.genes != null);
+            if (pawn == null) return "sem colono com genes";
+            for (int i = 0; i < times; i++)
+            {
+                Thing serum = ThingMaker.MakeThing(def);
+                GenPlace.TryPlaceThing(serum, pawn.Position, map, ThingPlaceMode.Near);
+                string before = pawn.genes.Xenotype?.defName;
+                foreach (CompUseEffect comp in ((ThingWithComps)serum).GetComps<CompUseEffect>().OrderByDescending(c => c.OrderPriority).ToList())
+                    comp.DoEffect(pawn);
+                sb.AppendLine("  " + pawn.LabelShort + ": " + before + " -> " + pawn.genes.Xenotype?.defName + " (xenogenes=" + pawn.genes.Xenogenes.Count + ", soro destruído=" + serum.Destroyed + ")");
+            }
+            return sb.ToString().TrimEnd();
+        }
+
+        /// <summary>Diagnóstico: para cada incidente-assinatura da potência, diz se pode disparar e tenta executar.</summary>
+        public static string Signature(Faction f, bool execute)
+        {
+            FactionAllegianceDef d = FactionAllegianceDef.For(f.def);
+            if (d == null) return "sem FactionAllegianceDef";
+            var sb = new StringBuilder("chance=" + d.hostileIncidentChance + " incidentes=" + d.hostileIncidents.Count);
+            foreach (IncidentDef inc in d.hostileIncidents)
+            {
+                sb.AppendLine();
+                if (inc == null) { sb.Append("  (null)"); continue; }
+                IncidentParms parms = StorytellerUtility.DefaultParmsNow(inc.category, Map);
+                parms.forced = true;
+                bool can = inc.Worker.CanFireNow(parms);
+                sb.Append("  " + inc.defName + " worker=" + inc.Worker.GetType().Name + " pontos=" + parms.points.ToString("0") + " podeDisparar=" + can);
+                if (execute)
+                {
+                    string r;
+                    try { r = inc.Worker.TryExecute(parms).ToString(); } catch (Exception ex) { r = "EXCEÇÃO " + ex.GetType().Name + ": " + ex.Message; }
+                    sb.Append(" executou=" + r);
+                }
+            }
+            return sb.ToString();
+        }
+
+        public static string FireIncident(string defName)
+        {
+            IncidentDef inc = DefDatabase<IncidentDef>.GetNamedSilentFail(defName);
+            if (inc == null) return "IncidentDef não existe: " + defName;
+            IncidentParms parms = StorytellerUtility.DefaultParmsNow(inc.category, Map);
+            parms.forced = true;
+            return "incidente " + defName + ": executou=" + inc.Worker.TryExecute(parms);
+        }
+
+        // ------------------------------------------------------------ cartas
+
+        public static string Letters()
+        {
+            var sb = new StringBuilder();
+            int i = 0;
+            foreach (Letter l in Find.LetterStack.LettersListForReading)
+            {
+                sb.AppendLine("  [" + i++ + "] " + l.Label + " (" + l.def.defName + (l.relatedFaction != null ? ", " + l.relatedFaction.Name : "") + ")");
+                if (l is ChoiceLetter cl && !(l is StandardLetter))
+                {
+                    int j = 0;
+                    foreach (DiaOption o in cl.Choices)
+                        sb.AppendLine("       opção " + j++ + ": " + OptionText(o) + (o.disabled ? "  [DESATIVADA: " + o.disabledReason + "]" : ""));
+                }
+            }
+            return sb.Length == 0 ? "  (nenhuma carta)" : sb.ToString().TrimEnd();
+        }
+
+        private static string OptionText(DiaOption o) => (string)AccessTools.Field(typeof(DiaOption), "text").GetValue(o);
+
+        public static string Choose(string labelPart, int option)
+        {
+            Letter l = Find.LetterStack.LettersListForReading.LastOrDefault(x => x.Label.ToString().IndexOf(labelPart, StringComparison.OrdinalIgnoreCase) >= 0);
+            if (!(l is ChoiceLetter cl)) return "carta de escolha não encontrada: " + labelPart;
+            List<DiaOption> opts = cl.Choices.ToList();
+            if (option < 0 || option >= opts.Count) return "opção inválida (há " + opts.Count + ")";
+            DiaOption o = opts[option];
+            if (o.disabled) return "opção desativada: " + o.disabledReason;
+            string text = OptionText(o);
+            o.action?.Invoke();
+            return "escolheu \"" + text + "\" em \"" + l.Label + "\"";
+        }
+
+        // ------------------------------------------------------------ relatório
+
+        public static string Dump()
+        {
+            var sb = new StringBuilder();
+            sb.AppendLine("tick=" + Find.TickManager.TicksGame + " dia=" + (Find.TickManager.TicksGame / 60000f).ToString("0.0"));
+            Map map = Map;
+            if (map != null)
+            {
+                sb.AppendLine("colonos=" + map.mapPawns.FreeColonistsSpawnedCount + " prisioneiros=" + map.mapPawns.PrisonersOfColonySpawned.Count
+                    + " prata=" + EQItems.CountOnMap(map, ThingDefOf.Silver));
+                foreach (Pawn p in map.mapPawns.FreeColonistsSpawned)
+                    sb.AppendLine("  colono " + p.LabelShort + " xenotipo=" + p.genes?.Xenotype?.defName + " ideo=" + p.Ideo?.name);
+            }
+            sb.AppendLine(DescribeAllegiance());
+            List<Faction> powers = Powers.ToList();
+            foreach (Faction f in powers)
+            {
+                sb.AppendLine("== " + f.Name + " [" + f.def.defName + "] líder=" + f.leader?.Name?.ToStringFull + " derrotada=" + f.defeated
+                    + " assentamentos=" + Find.WorldObjects.Settlements.Count(s => s.Faction == f));
+                sb.AppendLine("   com jogador: " + f.GoodwillWith(Faction.OfPlayer) + " " + f.RelationKindWith(Faction.OfPlayer));
+                sb.AppendLine("   " + DescribeReputation(f));
+                foreach (Faction o in powers)
+                    if (o != f)
+                        sb.AppendLine("   com " + o.Name + ": " + f.GoodwillWith(o) + " " + f.RelationKindWith(o));
+                Ideo ideo = f.ideos?.PrimaryIdeo;
+                if (ideo != null)
+                {
+                    sb.AppendLine("   ideologia: " + ideo.name + " | membro=" + ideo.memberName + " | ícone=" + ideo.iconDef?.defName + " cor=" + ideo.colorDef?.defName
+                        + " | memes=" + string.Join(",", ideo.memes.Select(m => m.defName)));
+                    sb.AppendLine("   preceitos(" + ideo.PreceptsListForReading.Count + "): " + string.Join(", ",
+                        ideo.PreceptsListForReading.Select(p => (p.def.visible ? "" : "~") + (p is Precept_Role || p is Precept_Ritual ? p.def.defName + "=\"" + p.Label + "\"" : p.def.defName))));
+                }
+            }
+            sb.AppendLine("proxies: " + string.Join(", ", Find.FactionManager.AllFactionsListForReading.Where(EQUtil.IsProxy).Select(x => x.Name + "[" + x.def.defName + "]")));
+            return sb.ToString().TrimEnd();
+        }
+    }
+}
