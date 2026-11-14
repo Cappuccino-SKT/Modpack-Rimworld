@@ -20,6 +20,15 @@ Ao terminar uma etapa, **atualize `STATUS.md`** (e DESIGN/TECNICO se algo mudou)
 - Não editar mods de terceiros em `Mods/<id>`; corrigir por patch/def no nosso mod.
 - Os mods **Hearts of RimWorld** e **Rimworld Exploration Mode** estão desativados de propósito. A camada de estratégia é o **Hegemony**.
 
+## Versionamento (git)
+
+Repositório `https://github.com/Cappuccino-SKT/Modpack-Rimworld` (público), na raiz do jogo.
+- `main`: só o modpack (`modpack/`: lista de mods, ordem de carga, `install.ps1`), `EcosDaQueda-Dev/`, `README.md`, este arquivo. Jogo e mods de terceiros **não** são versionados (`.gitignore` em lista branca).
+- Cada mod nosso é uma branch órfã `mod/<nome>` cuja raiz é a pasta do mod, montada como **worktree** em `Mods/<nome>` (`mod/ecos-da-queda`, `mod/ecos-da-queda-debug`). Commit dentro da pasta do mod → branch do mod; commit na raiz → `main`. Nunca trocar de branch na raiz.
+- Mod novo: `git worktree add --orphan -b mod/<nome> Mods/<Nome>`, e adicionar em `README.md`, `modpack/mods.md` e `modpack/install.ps1`.
+- Mudou a lista de mods? Atualize `modpack/` (ModsConfig.xml, workshop-ids.txt, mods.md).
+- Só faça commit/push quando o usuário pedir.
+
 ## Testes automáticos (use sempre antes de pedir teste ao usuário)
 
 O mod `Mods/EcosDaQuedaDebug` (packageId `ecosdaqueda.debug`) tem um executor de testes: o jogo abre **sem janela**, num perfil isolado (não toca nos saves/config do usuário), executa um roteiro de comandos, grava um relatório e fecha. Um teste em jogo novo leva ~40 s.
