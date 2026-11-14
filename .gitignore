@@ -1,0 +1,14 @@
+# A branch main guarda só o modpack (lista/ordem/instalador) e a documentação.
+# Arquivos do jogo e mods de terceiros não são versionados (direitos dos autores).
+# Os mods próprios ficam em Mods/<nome> como worktrees das branches mod/*.
+/*
+!/.gitignore
+!/.gitattributes
+!/README.md
+!/CLAUDE.md
+!/modpack/
+!/EcosDaQueda-Dev/
+
+# Perfis e relatórios do executor de testes (gerados)
+/EcosDaQueda-Dev/test-profile/
+/EcosDaQueda-Dev/tests/out/

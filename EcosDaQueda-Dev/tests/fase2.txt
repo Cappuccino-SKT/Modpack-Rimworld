@@ -1,0 +1,61 @@
+# Teste dos sistemas da fase 2 num jogo novo.
+newgame
+
+# --- reputação: boa vontade vira Fama/Infâmia e propaga
+goodwill helice 40
+goodwill forja -30
+kill forja
+kill coro
+
+# --- lealdade: entrar na Hélice, posto pela Fama
+give Silver 5000
+join helice
+wait 1h
+allegiance
+letters
+services
+rep helice fame 70
+wait 1h
+allegiance
+services
+
+# --- estipêndio e dízimo
+due stipend
+due tithe
+wait 1h
+letters
+choose Mensalidade 0
+allegiance
+dump
+
+# --- serviços e Soro
+service EQ_Service_Helice_Soro
+service EQ_Service_Helice_Soro
+serum 4
+
+# --- dízimo com prisioneiro, e dízimo ignorado
+prisoner
+due tithe
+wait 1h
+letters
+choose Mensalidade 1
+due tithe
+wait 1h
+wait 3d
+allegiance
+
+# --- sair da potência
+join none
+wait 1h
+allegiance
+letters
+
+# --- retaliações e presentes
+hostile forja
+retaliate forja
+retaliate forja
+gift helice
+tribute coro
+wait 2h
+letters
+dump

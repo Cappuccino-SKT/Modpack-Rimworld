@@ -1,0 +1,7 @@
+# Carrega o save "Test" do jogador com TODOS os mods e confere o estado.
+load Test
+dump
+allegiance
+services
+wait 2h
+letters

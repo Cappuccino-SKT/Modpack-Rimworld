@@ -1,0 +1,149 @@
+# Notas técnicas
+
+## Ambiente
+
+- **RimWorld 1.7.5000 rev1275**, cópia **não-Steam**, em `C:\Users\Felipe\Desktop\RimWorld`.
+- Todas as DLCs: Royalty, Ideology, Biotech, Anomaly, Odyssey.
+- **Motor Waylith** (o 1.7 trocou Unity por motor próprio, .NET 10 + Vulkan). A API do Unity é reimplementada em `UnityStubs.dll`; há camadas de compatibilidade para Harmony e Prepatcher (`RimWorldWaylith.PrepatcherCompat.dll`). DLLs de mods compiladas para 1.6 geralmente funcionam.
+- Mods baixados via **SteamCMD anônimo** (`C:\Users\Felipe\steamcmd`). Lista: `scripts/steamcmd-mods.txt` (cópia de `C:\Users\Felipe\steamcmd\mods.txt`). Download: `C:\Users\Felipe\steamcmd\steamcmd.exe +runscript C:\Users\Felipe\steamcmd\mods.txt`, depois copiar `steamapps\workshop\content\294100\*` para `Mods\`.
+- Pastas de mods ficam nomeadas pelo **ID da Workshop** (ex.: `Mods\3825320105` = Hegemony). O mod do projeto é `Mods\EcosDaQueda`.
+- `Mods_desativados\` guarda versões antigas substituídas (Replace Stuff original, Cherry Picker original).
+- Dados do usuário: `%USERPROFILE%\AppData\LocalLow\Ludeon Studios\RimWorld by Ludeon Studios\` (`Config\ModsConfig.xml`, `Logs\Player.log`, `Saves\`).
+- .NET SDK 8 e 10 instalados; `ilspycmd` instalado como dotnet tool global (`%USERPROFILE%\.dotnet\tools`).
+
+## Como o jogo escolhe pastas de versão (decompilado de `Verse.ModContentPack.InitLoadFolders`)
+
+1. Se o mod tem `LoadFolders.xml` com versões definidas: usa a entrada da versão atual (`v1.7`); senão, a **maior versão ≤ atual** listada; senão `default`.
+2. Sem LoadFolders: usa a pasta `1.7` se existir; senão a **maior pasta de versão ≤ 1.7**; depois `Common/` e a raiz.
+3. `supportedVersions` sem 1.7 só gera **aviso amarelo** — o mod carrega normalmente.
+
+Por isso mods sem suporte declarado a 1.7 carregam o conteúdo 1.6 automaticamente.
+
+## Estrutura do mod
+
+```
+Mods/EcosDaQueda/
+  About/About.xml            packageId ecosdaqueda.core, supportedVersions 1.6/1.7
+  LoadFolders.xml            "/" sempre; "Mods/Hegemony" só se jaeger972.factionterritories2 ativo
+  Defs/Memes/EQ_Memes.xml    4 memes-assinatura (exclusionTag EQ_SignatureMeme)
+  Defs/Factions/EQ_Factions.xml   base abstrata EQ_MainFactionBase + 4 FactionDefs
+  Defs/PawnKinds/EQ_PawnKinds.xml 16 PawnKindDefs
+  Defs/RulePacks/EQ_Namers.xml    nomes de assentamentos (com pesos p= e numeração de reserva)
+  Defs/Ideo/EQ_IdeoSymbols.xml    ícones (IdeoIconDef) e cores (ColorDef) das ideologias
+  1.7/Assemblies/EcosDaQueda.dll  C# (só 1.7)
+  1.7/Defs/EQ_IdeoTemplates.xml   modelos fixos de ideologia (IdeoTemplateDef)
+  1.7/Defs/EQ_FactionRelations.xml  matriz de relações entre as potências
+  1.7/Defs/EQ_Reputation.xml      reputação (Fama/Infâmia, títulos) + aba Reputação
+  Mods/Hegemony/Defs/EQ_HegemonyDispositions.xml
+  Mods/Hegemony/1.7/Assemblies/EcosDaQueda.Hegemony.dll  vetos do Hegemony
+  Source/EcosDaQueda/             código C# principal (.csproj, .cs)
+  Source/EcosDaQueda.Hegemony/    código C# da integração com o Hegemony
+  Textures/EcosDaQueda/Icons/     ícones gerados
+```
+
+Convenções: prefixo **`EQ_`** em todos os defNames; textos em PT-BR; dependências opcionais sempre com `MayRequire="<packageId>"`.
+
+## C# — `EcosDaQueda.dll`
+
+- Projeto: `Mods/EcosDaQueda/Source/EcosDaQueda/EcosDaQueda.csproj`, **net10.0**, referencia `Assembly-CSharp.dll`, `UnityStubs.dll`, `Waylith.dll` da raiz do jogo (Private=false). Sem Harmony por enquanto.
+- Build: `cd Mods/EcosDaQueda/Source/EcosDaQueda; dotnet build -c Release` → `Mods/EcosDaQueda/1.7/Assemblies/EcosDaQueda.dll`.
+- `LoadFolders.xml` › `v1.7` inclui a pasta `1.7` (DLL + `1.7/Defs` com defs que usam classes do C#). No 1.6 o C# não carrega.
+- **`IdeoTemplateDef`** + **`WorldComponent_IdeoTemplates`**: no `FinalizeInit` do mundo (fim da geração do mundo e ao carregar save), aplica o modelo uma vez por facção (guarda `appliedFactionIds` no save). Aplica: nome, adjetivo, membro, títulos, descrição travada (`descriptionLocked`), `SetIcon(icon, color)`, divindades (`IdeoFoundation_Deity.SetDeities`), preceitos (cria os que faltam, troca os da mesma issue, renomeia com `SetName` + `nameLocked`, `xenotype` para PreferredXenotype) e, com `exactPrecepts`, remove preceitos/cargos/rituais não listados (nunca remove `IdeoRole_Leader`). Renomeia o líder atual da facção (nome por gênero).
+- O jogo só tem uma `IdeoFoundationDef` (`Deity`), então divindades sempre funcionam.
+- A FactionDef usa `requiredPreceptsOnly=true` para gerar o mínimo; o modelo completa.
+
+### Fase 2 — relações fixas e reputação
+
+- **`FactionRelationPresetDef`** (`1.7/Defs/EQ_FactionRelations.xml`): pares de facções com `goodwill`, `label` e `permanentEnemies`. **`WorldComponent_FactionRelations`** aplica uma vez por mundo (flag `applied` no save; saves antigos recebem na 1ª carga) escrevendo `FactionRelation.baseGoodwill` e `kind` nos dois sentidos (≤-75 hostil, ≥75 aliado). A cada 60000 ticks reimpõe hostilidade (≤-80) entre `permanentEnemies`.
+- **Reputação** (`ReputationSettingsDef` em `1.7/Defs/EQ_Reputation.xml` + `WorldComponent_Reputation`): `ReputationRecord{faction, fame, infamy}` salvo no mundo. Fontes (Harmony, `HarmonyPatches.cs`): postfix em `Faction.TryAffectGoodwillWith` (Δ>0 → Fama, Δ<0 → Infâmia, entre jogador e potência rastreada), `Faction.Notify_MemberDied` (instigador do jogador: +4 humano / +1 outro) e `Faction.Notify_MemberCaptured` (+3). Propagação: potências com boa vontade ≤ -50 com o alvo ganham Fama = 0,5×Infâmia causada e Infâmia = 0,25×Fama dada; com ≥ 50, Infâmia = 0,25×Infâmia causada. Níveis por `thresholds` (30, 150) → título em matriz 3×3 (`titles`/`titleDescriptions`).
+- **Efeitos da reputação** (`tiers` = 9 `ReputationTier`, ordem Fama-linha × Infâmia-coluna): `priceGain` somado a `priceGain_FactionBase` via prefix em `TradeUtility.GetPricePlayerBuy/Sell` quando `TradeSession.trader.Faction` é rastreada (não aparece no detalhamento de preço do tooltip vanilla); a cada `checkIntervalDays` (3), por facção, com cooldown `minDaysBetweenEvents` (8, `ReputationRecord.lastEventTick`): `giftChance` (não hostil → `ThingSetMakerDefOf.Reward_ItemsStandard`, valor `giftMarketValue`, cápsula + carta), `tributeChance` (não hostil → prata `tributeSilver`), `raidChance` (hostil → `IncidentDefOf.RaidEnemy` forçado com `parms.faction`, `customLetterText`). Textos das cartas no XML com `{0}` = nome da facção (`{1}` = prata no tributo).
+- **Lealdade/postos** (`Allegiance.cs`, `1.7/Defs/EQ_Allegiance.xml`): `FactionAllegianceDef` (ranks com `fameRequired`, `priceGain`, `stipend` [ThingDefCountClass]; dízimo `titheOptions` com `type` Silver/Things/Prisoner/Colonist/Refuse, `count` × posto, `fame`/`infamy`/`goodwill`). `EQAllegiance.PlayerOverlordProvider` é preenchido pelo módulo Hegemony via reflexão em `FactionFealty.Overlord(Faction)` (internal). `WorldComponent_Allegiance` checa a cada 2500 ticks: muda de membro (cartas de juramento/desligamento), promoção, estipêndio (cápsula), dízimo (`ChoiceLetter_EQTithe`, `LetterDef EQ_TitheLetter`, timeout → penalidade `ignoreInfamy/ignoreGoodwill`). Itens são tirados do mapa (área de casa, não proibidos) por `EQItems`; pessoas vão para a facção como world pawns (`KeepForever`).
+- **Serviços** (`Services.cs`, `1.7/Defs/EQ_Services.xml`): `FactionServiceDef` (faction, minRank, cooldownDays, silver, requiresHeldEntity [`Building_HoldingPlatform.HeldPawn` não humano, destruído], requiresPrisoner; efeitos things / callAid [`IncidentDefOf.RaidFriendly` forçado com `parms.faction`] / researchPoints [`ResearchManager.AddProgress` no projeto atual] / colonistThought / fame). Recargas em `WorldComponent_Services` (dicionário defName→tick). Menu por `WorldComponent_Services.OpenMenu()` (FloatMenu).
+- **O Soro**: `ThingDef EQ_Soro` (ParentName `MechSerumBase`, textura do healer tingida) com `CompProperties_UseEffectSerum` → `CompUseEffect_Serum`: remove xenogenes e `genes.SetXenotype`.
+- **Retaliação-assinatura**: `FactionAllegianceDef.hostileIncidents` + `hostileIncidentChance/Label/Text`; `WorldComponent_Reputation.TrySignatureIncident` roda antes dos caçadores (incidente vanilla forçado + carta nossa).
+- **Aba "Reputação"**: `MainButtonDef EQ_Reputation` → `MainTabWindow_Reputation` (ícone, nome, título com tooltip, relação com o jogador e com as outras potências, barras de Fama/Infâmia).
+- Harmony: `EcosDaQuedaStartup` (`[StaticConstructorOnStartup]`) faz `PatchAll`. Referência a `Mods/2009463077/1.7/Assemblies/0Harmony.dll` (Harmony 3.0, net10).
+- **Módulo Hegemony** (`Source/EcosDaQueda.Hegemony` → `Mods/Hegemony/1.7/Assemblies/EcosDaQueda.Hegemony.dll`, carregado só com Hegemony ativo via LoadFolders): registra `HegemonyApi.RegisterVeto(AIPeaceOrTreaty)` vetando paz/tratados entre `permanentEnemies`. Compilar **depois** do EcosDaQueda (referencia a DLL).
+- **Facções proxy do Hegemony:** expedições/exércitos ("<Facção> expedition") são facções **ocultas e temporárias** com o **mesmo FactionDef** e mesma ideologia. Todo código que procura "a facção X" deve usar `EQUtil.MainFaction(def)` / `EQUtil.Canonical(f)` e ignorar `EQUtil.IsProxy(f)` (`temporary || Hidden`). Reputação de ações contra proxies é creditada à facção principal. (Bug encontrado em 2026-11-14: o mod criava registros de reputação para as expedições.)
+- **`exactPrecepts` não remove preceitos invisíveis** (`!def.visible`): são rituais internos do jogo (julgamento, execução pública, nascimento, troca de função, discurso do trono, gravinave…). Removê-los gera "A hidden ritual precept was missing, adding: …" ao carregar.
+- Guerras do Hegemony são um registro próprio (`DiplomacyLedger`), separado da hostilidade vanilla; não declaramos guerras pela API (ainda).
+
+## Mod de debug — `Mods/EcosDaQuedaDebug` (`ecosdaqueda.debug`)
+
+- `Source/EcosDaQueda.Debug.csproj` → `1.7/Assemblies/EcosDaQueda.Debug.dll` (referencia EcosDaQueda.dll e 0Harmony; compilar por último).
+- `EQDebug.cs`: operações (reputação, lealdade, serviços, itens, cartas, dump) usadas pelo executor e pelo menu. `DebugActions.cs`: `[DebugAction("Ecos da Queda", ...)]` (namespace `LudeonTK`), listas com `Dialog_DebugOptionListLister`. `TestRunner.cs`: ativo só com `-eqtest=`; postfix em `Root_Entry.Update`/`Root_Play.Update` (máquina de estados Menu → Loading → Running → Done), postfix em `Log.Error` para contar erros, `TickManager.DoSingleTick()` em blocos de 200 ms para o `wait`, `Root.Shutdown()` ao fim.
+- Jogo novo pelo executor: `Root_Play.SetupForQuickTestPlay()` + `PrepForMapGen()` + `PreMapGenerate()` na cena de entrada, depois `LongEventHandler.QueueLongEvent(null, "Play", ...)`. (O `-quicktest` puro quebra; este caminho funciona.)
+- Opções do motor usadas: `-Headless` (sem janela), `-savedatafolder=<pasta>` (perfil isolado: Config/, Saves/), `-NoCrashDialog`. Argumentos `chave=valor` são lidos com `GenCommandLine.TryGetCommandLineArg`.
+- `IncidentWorker.CanFireNow` devolve false para vários incidentes mesmo com `parms.forced`; usar `TryExecute` direto.
+
+## Ícones e cores próprios
+
+- `Textures/EcosDaQueda/Icons/{Silencio,Helice,Forja,Coro}.png` — silhuetas brancas 256x256 **com contorno escuro** (legíveis no mapa-múndi), traço grosso, geradas por `EcosDaQueda-Dev/scripts/make-icons.ps1` (System.Drawing). Usadas como ícone da ideologia **e** da facção (`factionIconPath`).
+- **Cor da facção** = `colorSpectrum` da FactionDef, calculada em tempo de execução (`Faction.Color` usa o def + `colorFromSpectrum` salvo) → mudar o XML altera mundos existentes. Usamos uma cor única (duas entradas iguais) e **clara**; cores escuras somem no mapa-múndi. Cores: Silêncio (0.72,0.68,0.95), Hélice (0.20,0.78,0.74), Forja (0.95,0.58,0.22), Coro (0.80,0.48,1.00); as `ColorDef` das ideologias usam os mesmos tons.
+- `IdeoIconDef` com `<memes>` = meme-assinatura → só nossas ideologias podem sortear/usar.
+- Cores: `ColorDef` (ParentName `IdeoColorBase`), **não** `IdeoColorDef`, para não entrar no sorteio de outras ideologias.
+
+## Facções (FactionDef)
+
+- Base `EQ_MainFactionBase` herda `OutlanderFactionBase` (comerciantes, visitantes, loot).
+- `requiredCountAtGameStart=1`, `maxConfigurableAtWorldCreation=1`, `fixedIdeo=true`, `structureMemeWeights Inherit="False"`.
+- Ideologia fixa = `fixedIdeo` + `ideoName` + `ideoDescription` + `forcedMemes` (estrutura incluída nos forcedMemes, como a Horax Cult faz).
+- **`pawnGroupMakers Inherit="False"` é obrigatório**, senão as listas do pai são somadas.
+- Mechs (Mech_Militor, Pikeman, Lancer, Scyther) entram direto nas `options` do grupo Combat da Forja.
+
+## PawnKinds
+
+- Bases vanilla usadas: `MercenaryMidTierBase`, `MercenaryEliteBase`, `MercenaryEliteTierBase`, `UnderthrallBase` (Horaxian, Anomaly), `MechanitorBase` (Biotech).
+- **`ParentName` usa o atributo `Name`, não o defName** (ex.: `MechanitorBase`, não `Mechanitor`).
+- Psíquicos via VPE:
+  ```xml
+  <li MayRequire="VanillaExpanded.VPsycastsE" Class="VanillaPsycastsExpanded.PawnKindAbilityExtension_Psycasts">
+    <implantDef>VPE_PsycastAbilityImplant</implantDef>
+    <initialLevel>1</initialLevel>
+    <statUpgradePoints>2~6</statUpgradePoints>
+    <unlockedPaths><VPE_Warlord>1~4|2~10</VPE_Warlord></unlockedPaths>
+  </li>
+  ```
+  Caminhos válidos: Empath, Skipmaster, Conflagrator, Protector, Warlord, Chronopath, Archotechist, Necropath, Staticlord, Archon, Frostshaper, Wildspeaker, Harmonist, Technomancer, Nightstalker. **Puppeteer e Animat estão comentados no VPE** (módulos separados não instalados).
+
+## Hegemony (Faction Territories 2) — `jaeger972.factionterritories2`
+
+- Namespace C#: `FactionTerritories2` (1.165 classes, decompilar com `scripts/decompile.ps1`).
+- **Comportamento da facção** = soma de `FactionTerritories2.FactionDispositionDef` aplicados pelos **traços do líder** e **memes da ideologia** (campo `<meme>` ou `<trait>`). Campos: aggression, peace, diplomacy, trade, expansion, support, vassalise, plunder, raze + efeitos de assentamento (herdados de `SettlementEffectDef`: food, materials, prosperity, defence, research, recovery, growth, upkeep, construction, happiness, wood, stone, metal, components…) + `buildingTags` (tag/weight).
+- Tags de construção conhecidas: animals, authoritarian, bionics, civic, civilian, culture, dangerous, defence, diplomacy, education, evil, food, genetics, good, industry, logistics, luxury, mech, medical, military, mining, nature, occult, organic, religious, royal, science, space, trade.
+- **API pública** `FactionTerritories2.HegemonyApi`: `TryDeclareWar`, `TryMakePeace`, `TryTransferSettlement`, `AreAtWar`, `GetWars`, `GetOverlord`, `IsPlayerVassal`, `GetTerritoryClaims`, `GetTerritoryTileCount`, `SubscribeToEvents`, `RegisterVeto(HegemonyVetoKind, …)`, `RecordTrade`, preços/estoques de assentamentos… Base para a fase 2.
+- **Jogador entrar numa facção:** sistema de fealty já existe ("Swear fealty to {0}?", "Become this faction's vassal"); o jogador vira vassalo aliado e paga tributo. Romper = traição permanente.
+- Outros Defs do Hegemony: `CrisisTypeDef`, `SettlementEffectDef`, `BuildingDef`, extensões `SiteEffectExtension`, `RoadTechnologyExtension`, `MechanoidCrisisExtension`.
+
+## packageIds úteis
+
+| Mod | packageId |
+|---|---|
+| Harmony | brrainz.harmony |
+| Vanilla Expanded Framework | OskarPotocki.VanillaFactionsExpanded.Core |
+| Vanilla Psycasts Expanded | VanillaExpanded.VPsycastsE |
+| VWE Laser / Coilguns / Bioferrite / Makeshift | VanillaExpanded.VWEL / VWEC / VWEBF / VWEMS |
+| Vanilla Memes (VIE) | VanillaExpanded.VMemesE |
+| Alpha Memes / Alpha Genes | Sarg.AlphaMemes / sarg.alphagenes |
+| VRE Saurid / Lycanthrope / Hussar / Sanguophage / Fungoid | vanillaracesexpanded.saurid / .lycanthrope / .hussar / .sanguophage / .fungoid |
+| Hegemony | jaeger972.factionterritories2 |
+| Jaeger's Utility Framework | jaeger972.utilityframework |
+| Combat Extended | CETeam.CombatExtended |
+
+Para descobrir outro: `[xml]$x=Get-Content Mods\<id>\About\About.xml; $x.ModMetaData.packageId` (o grep simples pega o packageId das dependências por engano).
+
+## Tags de armas úteis
+
+`NerveSpiker`, `Flamethrower` (Incinerator), `VWEB_BioferriteWeapon`, `LaserGun`, `Coilgun`, `SpacerGun`, `MakeshiftGun`, `BeamGraserGun`, `GrenadeTox`, `EltexStaff`, `IndustrialGunAdvanced`, `Gun`.
+
+## Xenotipos disponíveis
+
+Vanilla: Baseliner, Dirtmole, Genie, Hussar, Sanguophage, Neanderthal, Pigskin, Impid, Waster, Yttakin, Highmate, Starjack.
+Alpha Genes: AG_Fleetkind, AG_Helixien, AG_Animusen, AG_Lapis, AG_Wretch, AG_Taukai, AG_Hiveling, AG_MindDevourer, AG_Efreet, AG_Drakonori, AG_Nereid, AG_Forsaken.
+VRE: VRESaurids_Saurid, VREH_Uhlan, VRE_Poluxkin, VRE_Strigoi, VRE_Ekkimian, VRE_Bruxa, VREA_AndroidAwakened, VREA_AndroidBasic, VRE_Lowmate, VRE_Fungoid, VRE_Wolfman, VRE_Lycan, VRE_Boarskin, VRE_Insector, VRE_Ocularkin, AG_Mycormorph, AG_Malachai.
+
+## Fase 2 (C#) — notas de preparação
+
+- Projeto alvo: referenciar `Assembly-CSharp.dll`, `UnityStubs.dll` e `0Harmony` do mod Harmony (v3.0 no 1.7). Verificar o TargetFramework que o Waylith aceita (Assembly-CSharp é net10.0; mods 1.6 em net472 também carregam).
+- Saída sugerida: `Mods/EcosDaQueda/1.7/Assemblies/` (ajustar LoadFolders) ou `Assemblies/` na raiz.
+- Hegemony: referenciar `Mods/3825320105/Assemblies/FactionTerritories2.dll` com `Private=false` e usar `HegemonyApi`.

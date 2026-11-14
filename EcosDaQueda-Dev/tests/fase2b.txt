@@ -1,0 +1,65 @@
+# Fase 2, parte B: as outras potências, dízimo dobrado corrigido, retaliações-assinatura.
+newgame
+give Silver 6000
+give Gold 100
+give ComponentIndustrial 20
+
+# --- recusa de dízimo não conta em dobro (esperado: infâmia +10, boa vontade -10)
+join forja
+wait 1h
+due tithe
+wait 1h
+letters
+choose Tecnol 2
+rep forja add 0 0
+choose Tecnol 0
+
+# --- Forja: dízimo em componentes e reforço militar
+rep forja fame 160
+due tithe
+wait 1h
+letters
+choose Tecnol 0
+services
+service EQ_Service_Forja_Esquadrao
+service EQ_Service_Forja_Pecas
+wait 2h
+letters
+
+# --- Coro: serenata e dízimo psíquico (leva um colono)
+join coro
+wait 1h
+rep coro fame 10
+services
+service EQ_Service_Coro_Serenata
+due tithe
+wait 1h
+letters
+choose Psíquico 0
+dump
+
+# --- Silêncio: consulta ao Arquivo e contrato sem entidade
+join silencio
+wait 1h
+rep silencio fame 70
+wait 1h
+services
+service EQ_Service_Silencio_Arquivo
+service EQ_Service_Silencio_Contencao
+
+# --- retaliações-assinatura (potência hostil)
+join none
+wait 1h
+hostile helice
+retaliate helice
+retaliate helice
+hostile coro
+retaliate coro
+hostile silencio
+retaliate silencio
+retaliate silencio
+hostile forja
+retaliate forja
+retaliate forja
+wait 3h
+letters
