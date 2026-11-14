@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <!-- Ícones próprios das ideologias. Restritos ao meme-assinatura de cada facção,
+       para que nenhuma outra ideologia gerada aleatoriamente os use. -->
+
+  <IdeoIconDef>
+    <defName>EQ_Icon_Silencio</defName>
+    <iconPath>EcosDaQueda/Icons/Silencio</iconPath>
+    <memes><li>EQ_Meme_VoidScholarship</li></memes>
+  </IdeoIconDef>
+
+  <IdeoIconDef>
+    <defName>EQ_Icon_Helice</defName>
+    <iconPath>EcosDaQueda/Icons/Helice</iconPath>
+    <memes><li>EQ_Meme_GeneticMarket</li></memes>
+  </IdeoIconDef>
+
+  <IdeoIconDef>
+    <defName>EQ_Icon_Forja</defName>
+    <iconPath>EcosDaQueda/Icons/Forja</iconPath>
+    <memes><li>EQ_Meme_MachineWarranty</li></memes>
+  </IdeoIconDef>
+
+  <IdeoIconDef>
+    <defName>EQ_Icon_Coro</defName>
+    <iconPath>EcosDaQueda/Icons/Coro</iconPath>
+    <memes><li>EQ_Meme_PsychicChoir</li></memes>
+  </IdeoIconDef>
+
+  <!-- Cores das ideologias. São ColorDef (não IdeoColorDef), então não entram no sorteio
+       de cores de outras ideologias. -->
+
+  <ColorDef ParentName="IdeoColorBase">
+    <defName>EQ_IdeoColor_Silencio</defName>
+    <label>lavanda-do-vazio</label>
+    <color>(184, 173, 242)</color>
+  </ColorDef>
+
+  <ColorDef ParentName="IdeoColorBase">
+    <defName>EQ_IdeoColor_Helice</defName>
+    <label>verde-laboratório</label>
+    <color>(51, 199, 189)</color>
+  </ColorDef>
+
+  <ColorDef ParentName="IdeoColorBase">
+    <defName>EQ_IdeoColor_Forja</defName>
+    <label>laranja-ferrugem</label>
+    <color>(242, 148, 56)</color>
+  </ColorDef>
+
+  <ColorDef ParentName="IdeoColorBase">
+    <defName>EQ_IdeoColor_Coro</defName>
+    <label>púrpura-imperial</label>
+    <color>(204, 122, 255)</color>
+  </ColorDef>
+
+</Defs>

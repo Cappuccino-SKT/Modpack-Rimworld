@@ -1,0 +1,31 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <!-- Módulo opcional: integração com o Hegemony (Faction Territories 2).
+       Saída: Mods/EcosDaQueda/Mods/Hegemony/1.7/Assemblies/EcosDaQueda.Hegemony.dll
+       Carregado só se jaeger972.factionterritories2 estiver ativo (ver LoadFolders.xml).
+       Build: dotnet build -c Release (compile antes o projeto EcosDaQueda). -->
+
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <LangVersion>latest</LangVersion>
+    <Nullable>disable</Nullable>
+    <ImplicitUsings>disable</ImplicitUsings>
+    <AssemblyName>EcosDaQueda.Hegemony</AssemblyName>
+    <RootNamespace>EcosDaQueda.HegemonyCompat</RootNamespace>
+    <OutputPath>..\..\Mods\Hegemony\1.7\Assemblies\</OutputPath>
+    <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+    <AppendRuntimeIdentifierToOutputPath>false</AppendRuntimeIdentifierToOutputPath>
+    <GenerateDependencyFile>false</GenerateDependencyFile>
+    <DebugType>none</DebugType>
+    <GameDir>..\..\..\..\</GameDir>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Reference Include="Assembly-CSharp"><HintPath>$(GameDir)Assembly-CSharp.dll</HintPath><Private>false</Private></Reference>
+    <Reference Include="UnityStubs"><HintPath>$(GameDir)UnityStubs.dll</HintPath><Private>false</Private></Reference>
+    <Reference Include="0Harmony"><HintPath>$(GameDir)Mods\2009463077\1.7\Assemblies\0Harmony.dll</HintPath><Private>false</Private></Reference>
+    <Reference Include="EcosDaQueda"><HintPath>..\..\1.7\Assemblies\EcosDaQueda.dll</HintPath><Private>false</Private></Reference>
+    <Reference Include="FactionTerritories2"><HintPath>$(GameDir)Mods\3825320105\Assemblies\FactionTerritories2.dll</HintPath><Private>false</Private></Reference>
+  </ItemGroup>
+
+</Project>

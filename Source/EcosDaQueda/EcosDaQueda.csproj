@@ -1,0 +1,30 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <!-- Compila para o RimWorld 1.7 (motor Waylith, .NET 10).
+       Saída: Mods/EcosDaQueda/1.7/Assemblies/EcosDaQueda.dll
+       Build: dotnet build -c Release (a partir desta pasta) -->
+
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <LangVersion>latest</LangVersion>
+    <Nullable>disable</Nullable>
+    <ImplicitUsings>disable</ImplicitUsings>
+    <AssemblyName>EcosDaQueda</AssemblyName>
+    <RootNamespace>EcosDaQueda</RootNamespace>
+    <OutputPath>..\..\1.7\Assemblies\</OutputPath>
+    <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+    <AppendRuntimeIdentifierToOutputPath>false</AppendRuntimeIdentifierToOutputPath>
+    <GenerateDependencyFile>false</GenerateDependencyFile>
+    <DebugType>none</DebugType>
+    <GameDir>..\..\..\..\</GameDir>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Reference Include="Assembly-CSharp"><HintPath>$(GameDir)Assembly-CSharp.dll</HintPath><Private>false</Private></Reference>
+    <Reference Include="UnityStubs"><HintPath>$(GameDir)UnityStubs.dll</HintPath><Private>false</Private></Reference>
+    <Reference Include="Waylith"><HintPath>$(GameDir)Waylith.dll</HintPath><Private>false</Private></Reference>
+    <!-- Harmony 3.0 do mod Harmony (brrainz.harmony), pasta 1.7 -->
+    <Reference Include="0Harmony"><HintPath>$(GameDir)Mods\2009463077\1.7\Assemblies\0Harmony.dll</HintPath><Private>false</Private></Reference>
+  </ItemGroup>
+
+</Project>

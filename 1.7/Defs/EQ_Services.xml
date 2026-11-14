@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <!-- Serviços exclusivos para membros (aba Reputação › botão "Serviços").
+       minRank: 0 = 1º posto ... 3 = 4º posto. cooldownDays = recarga.
+       Custos: silver, requiresHeldEntity (entidade numa plataforma de contenção), requiresPrisoner.
+       Efeitos: things (<Steel>50</Steel>), callAid (reforço militar da potência), researchPoints
+       (soma à pesquisa atual), colonistThought (humor para todos os colonos), fame. -->
+
+  <!-- ===================================================================== O SORO (item) -->
+
+  <ThingDef ParentName="MechSerumBase">
+    <defName>EQ_Soro</defName>
+    <label>o Soro</label>
+    <description>O produto mais famoso do Concílio da Hélice: uma dose única que reescreve o genoma de quem a toma, transformando-o num xenotipo de elite sorteado do catálogo premium.\n\nA bula tem 40 páginas. A página 38 menciona, em letras miúdas, que um em cada quatro clientes recebe uma "versão alternativa" do produto. Não há reembolso. Não há antídoto. Há um cupom de 5% para a próxima dose.</description>
+    <graphicData>
+      <texPath>Things/Item/Special/MechSerumHealer</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <color>(60,220,200)</color>
+    </graphicData>
+    <stackLimit>5</stackLimit>
+    <statBases>
+      <MarketValue>1800</MarketValue>
+    </statBases>
+    <thingCategories>
+      <li>Drugs</li>
+    </thingCategories>
+    <tradeability>Sellable</tradeability>
+    <comps>
+      <li Class="CompProperties_Usable">
+        <useJob>UseItem</useJob>
+        <useLabel>Tomar {0_label}</useLabel>
+        <useDuration>600</useDuration>
+        <showUseGizmo>true</showUseGizmo>
+      </li>
+      <li Class="EcosDaQueda.CompProperties_UseEffectSerum">
+        <failChance>0.25</failChance>
+        <successText>{0} tomou o Soro e acordou como {1}. O Concílio parabeniza o cliente pela excelente escolha, que não foi dele.</successText>
+        <failText>{0} tomou o Soro e acordou como {1}. O Concílio informa que este resultado está dentro dos parâmetros descritos na página 38 da bula.</failText>
+        <xenotypes>
+          <li>Hussar</li>
+          <li>Genie</li>
+          <li>Highmate</li>
+          <li MayRequire="sarg.alphagenes">AG_Drakonori</li>
+          <li MayRequire="sarg.alphagenes">AG_Efreet</li>
+          <li MayRequire="sarg.alphagenes">AG_Helixien</li>
+          <li MayRequire="vanillaracesexpanded.saurid">VRESaurids_Saurid</li>
+          <li MayRequire="vanillaracesexpanded.lycanthrope">VRE_Lycan</li>
+          <li MayRequire="vanillaracesexpanded.hussar">VREH_Uhlan</li>
+        </xenotypes>
+        <failXenotypes>
+          <li>Pigskin</li>
+          <li>Waster</li>
+          <li>Dirtmole</li>
+          <li>Neanderthal</li>
+          <li MayRequire="sarg.alphagenes">AG_Wretch</li>
+          <li MayRequire="vanillaracesexpanded.fungoid">VRE_Fungoid</li>
+        </failXenotypes>
+      </li>
+      <li Class="CompProperties_UseEffectPlaySound">
+        <soundOnUsed>MechSerumUsed</soundOnUsed>
+      </li>
+      <li Class="CompProperties_UseEffectDestroySelf" />
+    </comps>
+  </ThingDef>
+
+  <ThoughtDef>
+    <defName>EQ_Thought_Serenata</defName>
+    <durationDays>6</durationDays>
+    <stackLimit>1</stackLimit>
+    <stages>
+      <li>
+        <label>serenata do Coro</label>
+        <description>O Coro cantou para nós à distância. Foi lindo. Também foi obrigatório, mas foi lindo.</description>
+        <baseMoodEffect>10</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+  <!-- ===================================================================== SILÊNCIO -->
+
+  <EcosDaQueda.FactionServiceDef>
+    <defName>EQ_Service_Silencio_Contencao</defName>
+    <label>contrato de contenção</label>
+    <description>Entregue à Ordem uma entidade que esteja presa numa plataforma de contenção. Eles pagam bem, em fragmentos do Vazio, bioferrite e prestígio acadêmico.\n\nNão pergunte o que fazem com ela. A resposta tem 300 páginas e nenhuma é tranquilizadora.</description>
+    <faction>EQ_Faction_Silencio</faction>
+    <order>1</order>
+    <minRank>0</minRank>
+    <cooldownDays>5</cooldownDays>
+    <requiresHeldEntity>true</requiresHeldEntity>
+    <things>
+      <Shard>1</Shard>
+      <Bioferrite>40</Bioferrite>
+      <Silver>300</Silver>
+    </things>
+    <fame>20</fame>
+    <resultText>A entidade foi recolhida por silentes de luvas grossas. O pagamento chegou com um recibo: "1 (um) espécime, estado: irritado".</resultText>
+  </EcosDaQueda.FactionServiceDef>
+
+  <EcosDaQueda.FactionServiceDef>
+    <defName>EQ_Service_Silencio_Arquivo</defName>
+    <label>consulta ao Arquivo</label>
+    <description>Os arquivistas pesquisam o tema que sua colônia está estudando e enviam as respostas, adiantando bastante a pesquisa atual.\n\nAs respostas vêm com 90 notas de rodapé e uma cobrança por atraso de um livro que você nunca pegou.</description>
+    <faction>EQ_Faction_Silencio</faction>
+    <order>2</order>
+    <minRank>1</minRank>
+    <cooldownDays>12</cooldownDays>
+    <silver>400</silver>
+    <researchPoints>1500</researchPoints>
+    <resultText>O Arquivo respondeu. Sua pesquisa avançou, e sua lista de leitura obrigatória também.</resultText>
+  </EcosDaQueda.FactionServiceDef>
+
+  <!-- ===================================================================== HÉLICE -->
+
+  <EcosDaQueda.FactionServiceDef>
+    <defName>EQ_Service_Helice_Soro</defName>
+    <label>encomendar o Soro</label>
+    <description>Uma dose do Soro, o carro-chefe do Concílio: transforma quem toma num xenotipo de elite aleatório. Uma em cada quatro doses entrega uma "versão alternativa".\n\nPreço especial para assinantes. Leia a bula. Ou não leia; não muda nada.</description>
+    <faction>EQ_Faction_Helice</faction>
+    <order>1</order>
+    <minRank>1</minRank>
+    <cooldownDays>15</cooldownDays>
+    <silver>900</silver>
+    <things>
+      <EQ_Soro>1</EQ_Soro>
+    </things>
+    <resultText>Seu Soro foi despachado. Obrigado por evoluir com o Concílio da Hélice!</resultText>
+  </EcosDaQueda.FactionServiceDef>
+
+  <EcosDaQueda.FactionServiceDef>
+    <defName>EQ_Service_Helice_Checkup</defName>
+    <label>check-up premium</label>
+    <description>O Concílio envia um soro mecanita curador, capaz de consertar a pior condição de saúde de um colono. Exclusivo para acionistas.\n\n"Sua saúde é o nosso ativo."</description>
+    <faction>EQ_Faction_Helice</faction>
+    <order>2</order>
+    <minRank>2</minRank>
+    <cooldownDays>30</cooldownDays>
+    <silver>1000</silver>
+    <things>
+      <MechSerumHealer>1</MechSerumHealer>
+    </things>
+    <resultText>O kit de check-up chegou, com um brinde: uma caneta do Concílio.</resultText>
+  </EcosDaQueda.FactionServiceDef>
+
+  <!-- ===================================================================== FORJA -->
+
+  <EcosDaQueda.FactionServiceDef>
+    <defName>EQ_Service_Forja_Esquadrao</defName>
+    <label>acionar a garantia</label>
+    <description>A Irmandade envia imediatamente um esquadrão de cavaleiros, técnicos e mechs para defender sua colônia.\n\nA garantia cobre invasões, cercos e infestações. Não cobre "mau uso", definido como qualquer coisa que o inspetor não goste.</description>
+    <faction>EQ_Faction_Forja</faction>
+    <order>1</order>
+    <minRank>1</minRank>
+    <cooldownDays>12</cooldownDays>
+    <silver>300</silver>
+    <callAid>true</callAid>
+    <aidPointsFactor>1.2</aidPointsFactor>
+    <resultText>Garantia acionada. Um esquadrão da Forja está a caminho, com as ferramentas e os formulários.</resultText>
+  </EcosDaQueda.FactionServiceDef>
+
+  <EcosDaQueda.FactionServiceDef>
+    <defName>EQ_Service_Forja_Pecas</defName>
+    <label>kit de peças originais</label>
+    <description>Um carregamento de peças aprovadas pela Irmandade: componentes avançados e plastaço. Só peças originais, com lacre e número de série.</description>
+    <faction>EQ_Faction_Forja</faction>
+    <order>2</order>
+    <minRank>2</minRank>
+    <cooldownDays>20</cooldownDays>
+    <silver>800</silver>
+    <things>
+      <ComponentSpacer>3</ComponentSpacer>
+      <Plasteel>60</Plasteel>
+    </things>
+    <resultText>O kit chegou lacrado. Romper o lacre fora de uma oficina autorizada anula a garantia. Você rompeu mesmo assim.</resultText>
+  </EcosDaQueda.FactionServiceDef>
+
+  <!-- ===================================================================== CORO -->
+
+  <EcosDaQueda.FactionServiceDef>
+    <defName>EQ_Service_Coro_Serenata</defName>
+    <label>encomendar uma serenata</label>
+    <description>O Coro canta para a sua colônia à distância, em uníssono psíquico. Todos os colonos ficam de ótimo humor por alguns dias.\n\nAplausos são esperados. A ausência de aplausos é anotada.</description>
+    <faction>EQ_Faction_Coro</faction>
+    <order>1</order>
+    <minRank>0</minRank>
+    <cooldownDays>15</cooldownDays>
+    <silver>250</silver>
+    <colonistThought>EQ_Thought_Serenata</colonistThought>
+    <resultText>Uma melodia sem origem encheu a colônia. Por um momento, todos cantarolaram a mesma nota.</resultText>
+  </EcosDaQueda.FactionServiceDef>
+
+  <EcosDaQueda.FactionServiceDef>
+    <defName>EQ_Service_Coro_CoroDeGuerra</defName>
+    <label>convocar o coro de guerra</label>
+    <description>O Maestro envia tenores de guerra e sopranos incandescentes para lutar ao seu lado. Eles chegam cantando, e os inimigos geralmente saem gritando.</description>
+    <faction>EQ_Faction_Coro</faction>
+    <order>2</order>
+    <minRank>2</minRank>
+    <cooldownDays>15</cooldownDays>
+    <silver>500</silver>
+    <callAid>true</callAid>
+    <aidPointsFactor>1.3</aidPointsFactor>
+    <resultText>O coro de guerra está a caminho. Recomenda-se proteger os ouvidos e as janelas.</resultText>
+  </EcosDaQueda.FactionServiceDef>
+
+</Defs>

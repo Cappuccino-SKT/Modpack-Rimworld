@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <!-- Nomes de assentamentos. O Hegemony cria muitas cidades por facção,
+       então cada lista combina várias partes e tem numeração como reserva
+       (p= define o peso de cada padrão). -->
+
+  <!-- Ordem do Silêncio Perpétuo -->
+  <RulePackDef>
+    <defName>EQ_NamerSettlement_Silencio</defName>
+    <rulePack>
+      <rulesStrings>
+        <li>r_name(p=4)->[place] [suffix]</li>
+        <li>r_name(p=1)->Departamento de [field]</li>
+        <li>r_name(p=1)->[place] [suffix], Anexo [annex]</li>
+        <li>r_name(p=0.5)->Instituto de [field] [roman]</li>
+        <li>place->Arquivo</li>
+        <li>place->Biblioteca</li>
+        <li>place->Claustro</li>
+        <li>place->Observatório</li>
+        <li>place->Sala de Leitura</li>
+        <li>place->Câmara</li>
+        <li>place->Seminário</li>
+        <li>place->Catálogo</li>
+        <li>place->Mosteiro</li>
+        <li>place->Cripta</li>
+        <li>place->Laboratório</li>
+        <li>place->Anfiteatro Cirúrgico</li>
+        <li>suffix->do Sussurro</li>
+        <li>suffix->do Eco Mudo</li>
+        <li>suffix->da Nota de Rodapé</li>
+        <li>suffix->do Último Revisor</li>
+        <li>suffix->do Olho Fechado</li>
+        <li>suffix->da Fome Paciente</li>
+        <li>suffix->Sem Janelas</li>
+        <li>suffix->do Abismo Revisado</li>
+        <li>suffix->da Bibliografia Viva</li>
+        <li>suffix->do Silêncio Obrigatório</li>
+        <li>suffix->da Margem Escura</li>
+        <li>suffix->do Prazo Eterno</li>
+        <li>suffix->da Hipótese Faminta</li>
+        <li>suffix->do Rascunho Proibido</li>
+        <li>field->Vazio Aplicado</li>
+        <li>field->Entidades Comparadas</li>
+        <li>field->Ética Opcional</li>
+        <li>field->Gritos Catalogados</li>
+        <li>field->Contenção e Desculpas</li>
+        <li>field->Anatomia Impossível</li>
+        <li>field->Sonhos Confiscados</li>
+        <li>field->Teologia Experimental</li>
+        <li>annex->A</li>
+        <li>annex->B</li>
+        <li>annex->C</li>
+        <li>annex->D</li>
+        <li>annex->Ω</li>
+        <li>roman->II</li>
+        <li>roman->III</li>
+        <li>roman->IV</li>
+        <li>roman->V</li>
+        <li>roman->VI</li>
+        <li>roman->VII</li>
+        <li>roman->VIII</li>
+        <li>roman->IX</li>
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+
+  <!-- Concílio da Hélice -->
+  <RulePackDef>
+    <defName>EQ_NamerSettlement_Helice</defName>
+    <rulePack>
+      <rulesStrings>
+        <li>r_name(p=4)->[brand] [unit]</li>
+        <li>r_name(p=1)->Filial [brand] [num]</li>
+        <li>r_name(p=1)->[unit] [brand] [tier]</li>
+        <li>brand->GenoPrime</li>
+        <li>brand->Linhagem Plus</li>
+        <li>brand->HélixMax</li>
+        <li>brand->Herança Premium</li>
+        <li>brand->Cromossomo Dourado</li>
+        <li>brand->Pureza Garantida</li>
+        <li>brand->BioLuxo</li>
+        <li>brand->Gênesis Select</li>
+        <li>brand->Alelo Nobre</li>
+        <li>brand->EvoCorp</li>
+        <li>brand->Sangue Azul S.A.</li>
+        <li>brand->DNA Exclusive</li>
+        <li>unit->Laboratório</li>
+        <li>unit->Viveiro</li>
+        <li>unit->Centro de Atendimento</li>
+        <li>unit->Incubadora</li>
+        <li>unit->Showroom</li>
+        <li>unit->Condomínio Genético</li>
+        <li>unit->Clínica</li>
+        <li>unit->Outlet</li>
+        <li>unit->Banco de Óvulos</li>
+        <li>unit->Spa Gênico</li>
+        <li>unit->Centro de Descarte</li>
+        <li>tier->Gold</li>
+        <li>tier->Platinum</li>
+        <li>tier->Black</li>
+        <li>tier->Express</li>
+        <li>tier->Família</li>
+        <li>num->01</li>
+        <li>num->02</li>
+        <li>num->07</li>
+        <li>num->12</li>
+        <li>num->23</li>
+        <li>num->46</li>
+        <li>num->99</li>
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+
+  <!-- Irmandade da Forja -->
+  <RulePackDef>
+    <defName>EQ_NamerSettlement_Forja</defName>
+    <rulePack>
+      <rulesStrings>
+        <li>r_name(p=4)->[place] [suffix]</li>
+        <li>r_name(p=1)->Oficina Autorizada nº [num]</li>
+        <li>r_name(p=1)->[place] [suffix], Lote [num]</li>
+        <li>place->Bastião</li>
+        <li>place->Oficina</li>
+        <li>place->Depósito</li>
+        <li>place->Linha de Montagem</li>
+        <li>place->Ferro-Velho Sagrado</li>
+        <li>place->Assistência Técnica</li>
+        <li>place->Fundição</li>
+        <li>place->Hangar</li>
+        <li>place->Almoxarifado</li>
+        <li>place->Catedral da Solda</li>
+        <li>place->Posto de Recall</li>
+        <li>suffix->do Parafuso Eterno</li>
+        <li>suffix->da Garantia Estendida</li>
+        <li>suffix->do Manual Perdido</li>
+        <li>suffix->do Firmware Fiel</li>
+        <li>suffix->da Engrenagem Santa</li>
+        <li>suffix->do Recall</li>
+        <li>suffix->da Peça Original</li>
+        <li>suffix->do Torque Correto</li>
+        <li>suffix->da Ferrugem Penitente</li>
+        <li>suffix->do Reboot Sagrado</li>
+        <li>suffix->do Lacre Inviolado</li>
+        <li>suffix->da Chave Inglesa</li>
+        <li>num->7</li>
+        <li>num->13</li>
+        <li>num->42</li>
+        <li>num->101</li>
+        <li>num->404</li>
+        <li>num->500</li>
+        <li>num->808</li>
+        <li>num->1024</li>
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+
+  <!-- O Coro Ascendente -->
+  <RulePackDef>
+    <defName>EQ_NamerSettlement_Coro</defName>
+    <rulePack>
+      <rulesStrings>
+        <li>r_name(p=4)->[place] [suffix]</li>
+        <li>r_name(p=1)->Conservatório de [note]</li>
+        <li>r_name(p=1)->[place] [suffix], [movement] Movimento</li>
+        <li>place->Palácio</li>
+        <li>place->Catedral</li>
+        <li>place->Conservatório</li>
+        <li>place->Salão</li>
+        <li>place->Corte</li>
+        <li>place->Anfiteatro</li>
+        <li>place->Ópera</li>
+        <li>place->Câmara Real</li>
+        <li>place->Coreto Imperial</li>
+        <li>place->Mansão</li>
+        <li>place->Teatro</li>
+        <li>place->Capela</li>
+        <li>suffix->da Nota Perfeita</li>
+        <li>suffix->do Uníssono</li>
+        <li>suffix->da Pausa Solene</li>
+        <li>suffix->do Último Aplauso</li>
+        <li>suffix->do Diapasão Real</li>
+        <li>suffix->da Etiqueta Rigorosa</li>
+        <li>suffix->do Crescendo Eterno</li>
+        <li>suffix->da Fermata Imperial</li>
+        <li>suffix->do Coro Infinito</li>
+        <li>suffix->da Reverência Obrigatória</li>
+        <li>suffix->do Bis Compulsório</li>
+        <li>suffix->da Partitura Sagrada</li>
+        <li>note->Dó Maior</li>
+        <li>note->Fá Imperial</li>
+        <li>note->Si Bemol Eterno</li>
+        <li>note->Lá Obrigatório</li>
+        <li>note->Ré Soberano</li>
+        <li>note->Mi Menor Penitente</li>
+        <li>note->Sol Absoluto</li>
+        <li>movement->Primeiro</li>
+        <li>movement->Segundo</li>
+        <li>movement->Terceiro</li>
+        <li>movement->Quarto</li>
+        <li>movement->Quinto</li>
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+
+</Defs>

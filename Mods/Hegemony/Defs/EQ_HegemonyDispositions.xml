@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <!-- Carregado só com o Hegemony ativo (ver LoadFolders.xml).
+       O Hegemony aplica estas disposições a qualquer facção cuja ideologia tenha o meme indicado:
+       comportamento diplomático/militar, efeitos nos assentamentos e preferência de construções. -->
+
+  <FactionTerritories2.FactionDispositionDef>
+    <defName>EQ_Disposition_VoidScholarship</defName>
+    <label>influência da academia do vazio</label>
+    <description>Isolacionistas e perigosos: pesquisam muito, negociam pouco e preferem arrasar a ocupar.</description>
+    <meme>EQ_Meme_VoidScholarship</meme>
+    <research>0.15</research>
+    <defence>0.05</defence>
+    <happiness>-2</happiness>
+    <aggression>0.1</aggression>
+    <diplomacy>-0.2</diplomacy>
+    <trade>-0.1</trade>
+    <raze>0.4</raze>
+    <vassalise>-0.2</vassalise>
+    <buildingTags>
+      <li><tag>occult</tag><weight>1.5</weight></li>
+      <li><tag>science</tag><weight>0.8</weight></li>
+      <li><tag>dangerous</tag><weight>0.6</weight></li>
+      <li><tag>evil</tag><weight>0.4</weight></li>
+      <li><tag>good</tag><weight>-0.4</weight></li>
+      <li><tag>trade</tag><weight>-0.3</weight></li>
+    </buildingTags>
+  </FactionTerritories2.FactionDispositionDef>
+
+  <FactionTerritories2.FactionDispositionDef>
+    <defName>EQ_Disposition_GeneticMarket</defName>
+    <label>influência do mercado genético</label>
+    <description>Comerciantes expansionistas: preferem comprar vassalos a conquistá-los, e transformam cada cidade em filial.</description>
+    <meme>EQ_Meme_GeneticMarket</meme>
+    <research>0.1</research>
+    <prosperity>0.06</prosperity>
+    <growth>0.05</growth>
+    <trade>0.35</trade>
+    <diplomacy>0.2</diplomacy>
+    <expansion>0.15</expansion>
+    <vassalise>1</vassalise>
+    <plunder>0.2</plunder>
+    <buildingTags>
+      <li><tag>genetics</tag><weight>1.5</weight></li>
+      <li><tag>medical</tag><weight>0.6</weight></li>
+      <li><tag>luxury</tag><weight>0.5</weight></li>
+      <li><tag>trade</tag><weight>0.5</weight></li>
+      <li><tag>science</tag><weight>0.4</weight></li>
+      <li><tag>evil</tag><weight>0.2</weight></li>
+    </buildingTags>
+  </FactionTerritories2.FactionDispositionDef>
+
+  <FactionTerritories2.FactionDispositionDef>
+    <defName>EQ_Disposition_MachineWarranty</defName>
+    <label>influência da garantia sagrada</label>
+    <description>Militaristas industriais: expandem para confiscar tecnologia e saqueiam o que não podem consertar.</description>
+    <meme>EQ_Meme_MachineWarranty</meme>
+    <materials>0.08</materials>
+    <metal>0.1</metal>
+    <components>0.1</components>
+    <defence>0.06</defence>
+    <aggression>0.2</aggression>
+    <expansion>0.2</expansion>
+    <support>0.2</support>
+    <plunder>0.4</plunder>
+    <buildingTags>
+      <li><tag>mech</tag><weight>1.6</weight></li>
+      <li><tag>industry</tag><weight>1</weight></li>
+      <li><tag>military</tag><weight>0.6</weight></li>
+      <li><tag>bionics</tag><weight>0.5</weight></li>
+      <li><tag>mining</tag><weight>0.4</weight></li>
+      <li><tag>organic</tag><weight>-0.4</weight></li>
+      <li><tag>nature</tag><weight>-0.3</weight></li>
+    </buildingTags>
+  </FactionTerritories2.FactionDispositionDef>
+
+  <FactionTerritories2.FactionDispositionDef>
+    <defName>EQ_Disposition_PsychicChoir</defName>
+    <label>influência da harmonia superior</label>
+    <description>Imperialistas cerimoniais: querem vassalos, não ruínas, e cobram tributo de todos.</description>
+    <meme>EQ_Meme_PsychicChoir</meme>
+    <happiness>2</happiness>
+    <prosperity>0.05</prosperity>
+    <aggression>0.15</aggression>
+    <peace>-0.1</peace>
+    <diplomacy>0.15</diplomacy>
+    <support>0.15</support>
+    <vassalise>2</vassalise>
+    <raze>-0.3</raze>
+    <buildingTags>
+      <li><tag>royal</tag><weight>1.5</weight></li>
+      <li><tag>authoritarian</tag><weight>0.8</weight></li>
+      <li><tag>luxury</tag><weight>0.6</weight></li>
+      <li><tag>culture</tag><weight>0.6</weight></li>
+      <li><tag>religious</tag><weight>0.5</weight></li>
+      <li><tag>education</tag><weight>0.4</weight></li>
+    </buildingTags>
+  </FactionTerritories2.FactionDispositionDef>
+
+</Defs>

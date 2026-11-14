@@ -1,0 +1,390 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <!-- Base comum das quatro potências: uma de cada por mundo, ideologia fixa,
+       comerciantes/visitantes herdados dos Forasteiros. -->
+  <FactionDef ParentName="OutlanderFactionBase" Name="EQ_MainFactionBase" Abstract="True">
+    <requiredCountAtGameStart>1</requiredCountAtGameStart>
+    <maxConfigurableAtWorldCreation>1</maxConfigurableAtWorldCreation>
+    <startingCountAtWorldCreation>1</startingCountAtWorldCreation>
+    <configurationListOrderPriority>12</configurationListOrderPriority>
+    <listOrderPriority>45</listOrderPriority>
+    <settlementGenerationWeight>1.5</settlementGenerationWeight>
+    <canSiege>true</canSiege>
+    <canStageAttacks>true</canStageAttacks>
+    <rescueesCanJoin>true</rescueesCanJoin>
+    <fixedIdeo>true</fixedIdeo>
+    <!-- Só os preceitos exigidos pelos memes; o resto (regras, cargos, rituais, ícone,
+         divindades, líder) vem do modelo fixo em 1.7/Defs/EQ_IdeoTemplates.xml -->
+    <requiredPreceptsOnly>true</requiredPreceptsOnly>
+    <structureMemeWeights Inherit="False" />
+    <maxPawnCostPerTotalPointsCurve Inherit="False">
+      <points>
+        <li>(0,40)</li>
+        <li>(70,60)</li>
+        <li>(700,140)</li>
+        <li>(1300,220)</li>
+        <li>(100000,10000)</li>
+      </points>
+    </maxPawnCostPerTotalPointsCurve>
+  </FactionDef>
+
+  <!-- =====================================================================
+       1. ORDEM DO SILÊNCIO PERPÉTUO (Anomaly)
+       ===================================================================== -->
+  <FactionDef ParentName="EQ_MainFactionBase">
+    <defName>EQ_Faction_Silencio</defName>
+    <label>Ordem do Silêncio Perpétuo</label>
+    <description>Uma ordem acadêmica que estuda o Vazio desde a Queda. Acreditam que algo de fora da realidade apagou o mundo, e que só entendendo-o a humanidade sobreviverá.\n\nSão educados, pacientes e extremamente bem financiados. A bolsa de pesquisa é paga em prisioneiros, e o comitê de ética foi o primeiro objeto de estudo.</description>
+    <fixedName>Ordem do Silêncio Perpétuo</fixedName>
+    <pawnSingular>silente</pawnSingular>
+    <pawnsPlural>silentes</pawnsPlural>
+    <leaderTitle>arquivista-mor</leaderTitle>
+    <categoryTag>EQ_Silencio</categoryTag>
+    <techLevel>Industrial</techLevel>
+    <factionIconPath>EcosDaQueda/Icons/Silencio</factionIconPath>
+    <settlementNameMaker>EQ_NamerSettlement_Silencio</settlementNameMaker>
+    <canPsychicRitualSiege>true</canPsychicRitualSiege>
+    <colorSpectrum>
+      <li>(0.72, 0.68, 0.95)</li>
+      <li>(0.72, 0.68, 0.95)</li>
+    </colorSpectrum>
+    <allowedCultures Inherit="False">
+      <li>Rustican</li>
+    </allowedCultures>
+    <ideoName>A Escuta Profunda</ideoName>
+    <ideoDescription>Sob cada lugar e cada instante existe um oceano negro. Nós o escutamos, catalogamos e, quando necessário, alimentamos. O conhecimento exige sacrifícios; por sorte, raramente os nossos.</ideoDescription>
+    <styles>
+      <li>Horaxian</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">Morbid</li>
+    </styles>
+    <!-- Estrutura void-touched + Ritualista (rituais psíquicos) + Escuridão (luz negra,
+         combate no escuro) + Academia do Vazio -->
+    <forcedMemes>
+      <li MayRequire="Sarg.AlphaMemes">AM_Structure_Horaxian</li>
+      <li>EQ_Meme_VoidScholarship</li>
+      <li>Ritualist</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">Darkness</li>
+    </forcedMemes>
+    <fixedLeaderKinds>
+      <li>EQ_Silencio_Arquivista</li>
+    </fixedLeaderKinds>
+    <basicMemberKind>EQ_Silencio_Acolito</basicMemberKind>
+    <pawnGroupMakers Inherit="False">
+      <li>
+        <kindDef>Combat</kindDef>
+        <commonality>100</commonality>
+        <options>
+          <EQ_Silencio_Cobaia>6</EQ_Silencio_Cobaia>
+          <EQ_Silencio_Acolito>10</EQ_Silencio_Acolito>
+          <EQ_Silencio_Guardiao>5</EQ_Silencio_Guardiao>
+          <EQ_Silencio_Arquivista>1</EQ_Silencio_Arquivista>
+        </options>
+      </li>
+      <li>
+        <kindDef>PsychicRitualSiege</kindDef>
+        <commonality>100</commonality>
+        <options>
+          <EQ_Silencio_Cobaia>6</EQ_Silencio_Cobaia>
+          <EQ_Silencio_Acolito>8</EQ_Silencio_Acolito>
+          <EQ_Silencio_Guardiao>3</EQ_Silencio_Guardiao>
+        </options>
+      </li>
+      <li>
+        <kindDef>Peaceful</kindDef>
+        <options>
+          <EQ_Silencio_Acolito>10</EQ_Silencio_Acolito>
+          <Villager>8</Villager>
+          <EQ_Silencio_Arquivista>1</EQ_Silencio_Arquivista>
+        </options>
+      </li>
+      <li>
+        <kindDef>Trader</kindDef>
+        <traders>
+          <Town_Trader>1</Town_Trader>
+        </traders>
+        <carriers>
+          <Muffalo>6</Muffalo>
+          <Dromedary>5</Dromedary>
+        </carriers>
+        <guards>
+          <EQ_Silencio_Acolito>10</EQ_Silencio_Acolito>
+          <EQ_Silencio_Guardiao>3</EQ_Silencio_Guardiao>
+        </guards>
+      </li>
+      <li>
+        <kindDef>Settlement</kindDef>
+        <options>
+          <EQ_Silencio_Cobaia>4</EQ_Silencio_Cobaia>
+          <EQ_Silencio_Acolito>10</EQ_Silencio_Acolito>
+          <EQ_Silencio_Guardiao>5</EQ_Silencio_Guardiao>
+          <EQ_Silencio_Arquivista>1</EQ_Silencio_Arquivista>
+        </options>
+      </li>
+    </pawnGroupMakers>
+  </FactionDef>
+
+  <!-- =====================================================================
+       2. CONCÍLIO DA HÉLICE (Biotech - genética)
+       ===================================================================== -->
+  <FactionDef ParentName="EQ_MainFactionBase">
+    <defName>EQ_Faction_Helice</defName>
+    <label>Concílio da Hélice</label>
+    <description>Um conglomerado genético que trata a evolução como linha de produtos. Seus laboratórios vendem xenogermes premium, linhagens licenciadas e "atualizações hereditárias" por assinatura.\n\nSão os vizinhos mais simpáticos do deserto, até você ler o contrato. Humanos sem modificação são classificados como "versão base" e, eventualmente, descontinuados.</description>
+    <fixedName>Concílio da Hélice</fixedName>
+    <pawnSingular>associado</pawnSingular>
+    <pawnsPlural>associados</pawnsPlural>
+    <leaderTitle>diretor executivo</leaderTitle>
+    <leaderTitleFemale>diretora executiva</leaderTitleFemale>
+    <categoryTag>EQ_Helice</categoryTag>
+    <techLevel>Spacer</techLevel>
+    <factionIconPath>EcosDaQueda/Icons/Helice</factionIconPath>
+    <settlementNameMaker>EQ_NamerSettlement_Helice</settlementNameMaker>
+    <colorSpectrum>
+      <li>(0.20, 0.78, 0.74)</li>
+      <li>(0.20, 0.78, 0.74)</li>
+    </colorSpectrum>
+    <allowedCultures Inherit="False">
+      <li>Astropolitan</li>
+    </allowedCultures>
+    <ideoName>O Genoma Ideal</ideoName>
+    <ideoDescription>A humanidade original foi um rascunho. Nós somos a versão final, com melhorias contínuas e garantia de satisfação. Reclamações devem ser enviadas por escrito à seção de descarte.</ideoDescription>
+    <forcedMemes>
+      <li MayRequire="VanillaExpanded.VMemesE">VME_Structure_Corporate</li>
+      <li>EQ_Meme_GeneticMarket</li>
+      <li MayRequire="VanillaExpanded.VMemesE">VME_Fleshcrafters</li>
+      <li MayRequire="VanillaExpanded.VMemesE">VME_Trader</li>
+    </forcedMemes>
+    <xenotypeSet Inherit="False">
+      <xenotypeChances>
+        <Hussar>0.12</Hussar>
+        <Genie>0.10</Genie>
+        <Highmate>0.06</Highmate>
+        <Sanguophage>0.02</Sanguophage>
+        <AG_Helixien MayRequire="sarg.alphagenes">0.06</AG_Helixien>
+        <AG_Drakonori MayRequire="sarg.alphagenes">0.03</AG_Drakonori>
+        <AG_Efreet MayRequire="sarg.alphagenes">0.03</AG_Efreet>
+        <VRESaurids_Saurid MayRequire="vanillaracesexpanded.saurid">0.05</VRESaurids_Saurid>
+        <VRE_Lycan MayRequire="vanillaracesexpanded.lycanthrope">0.03</VRE_Lycan>
+        <VREH_Uhlan MayRequire="vanillaracesexpanded.hussar">0.05</VREH_Uhlan>
+        <VRE_Fungoid MayRequire="vanillaracesexpanded.fungoid">0.03</VRE_Fungoid>
+      </xenotypeChances>
+    </xenotypeSet>
+    <fixedLeaderKinds>
+      <li>EQ_Helice_Diretor</li>
+    </fixedLeaderKinds>
+    <basicMemberKind>EQ_Helice_Estagiario</basicMemberKind>
+    <pawnGroupMakers Inherit="False">
+      <li>
+        <kindDef>Combat</kindDef>
+        <commonality>100</commonality>
+        <options>
+          <EQ_Helice_Estagiario>10</EQ_Helice_Estagiario>
+          <EQ_Helice_Fiscal>8</EQ_Helice_Fiscal>
+          <EQ_Helice_Prototipo>5</EQ_Helice_Prototipo>
+          <EQ_Helice_Diretor>1</EQ_Helice_Diretor>
+        </options>
+      </li>
+      <li>
+        <kindDef>Peaceful</kindDef>
+        <options>
+          <Villager>12</Villager>
+          <Villager_Child MayRequire="Ludeon.RimWorld.Biotech">6</Villager_Child>
+          <EQ_Helice_Estagiario>8</EQ_Helice_Estagiario>
+          <EQ_Helice_Diretor>1</EQ_Helice_Diretor>
+        </options>
+      </li>
+      <li>
+        <kindDef>Trader</kindDef>
+        <traders>
+          <Town_Trader>1</Town_Trader>
+        </traders>
+        <carriers>
+          <Muffalo>6</Muffalo>
+          <Alpaca>3</Alpaca>
+        </carriers>
+        <guards>
+          <EQ_Helice_Estagiario>8</EQ_Helice_Estagiario>
+          <EQ_Helice_Fiscal>6</EQ_Helice_Fiscal>
+          <EQ_Helice_Prototipo>2</EQ_Helice_Prototipo>
+        </guards>
+      </li>
+      <li>
+        <kindDef>Settlement</kindDef>
+        <options>
+          <EQ_Helice_Estagiario>10</EQ_Helice_Estagiario>
+          <EQ_Helice_Fiscal>8</EQ_Helice_Fiscal>
+          <EQ_Helice_Prototipo>5</EQ_Helice_Prototipo>
+          <EQ_Helice_Diretor>1</EQ_Helice_Diretor>
+        </options>
+      </li>
+    </pawnGroupMakers>
+  </FactionDef>
+
+  <!-- =====================================================================
+       3. IRMANDADE DA FORJA (Biotech - robótica)
+       ===================================================================== -->
+  <FactionDef ParentName="EQ_MainFactionBase">
+    <defName>EQ_Faction_Forja</defName>
+    <label>Irmandade da Forja</label>
+    <description>Guardiões autoproclamados da tecnologia perdida. Para eles, a carne falhou na Queda, e só máquinas leais vão reconstruir o mundo. Seus mecanitores comandam exércitos de mechs, e seus cavaleiros vestem blindagens que ninguém mais sabe fabricar.\n\nRecitam manuais como orações e confiscam qualquer tecnologia "para sua própria segurança". Androides livres anulam a garantia e são desmontados à vista.</description>
+    <fixedName>Irmandade da Forja</fixedName>
+    <pawnSingular>irmão de ferro</pawnSingular>
+    <pawnsPlural>irmãos de ferro</pawnsPlural>
+    <leaderTitle>engenheiro-primaz</leaderTitle>
+    <leaderTitleFemale>engenheira-primaz</leaderTitleFemale>
+    <categoryTag>EQ_Forja</categoryTag>
+    <techLevel>Spacer</techLevel>
+    <factionIconPath>EcosDaQueda/Icons/Forja</factionIconPath>
+    <settlementNameMaker>EQ_NamerSettlement_Forja</settlementNameMaker>
+    <colorSpectrum>
+      <li>(0.95, 0.58, 0.22)</li>
+      <li>(0.95, 0.58, 0.22)</li>
+    </colorSpectrum>
+    <allowedCultures Inherit="False">
+      <li>Corunan</li>
+    </allowedCultures>
+    <ideoName>O Culto da Garantia</ideoName>
+    <ideoDescription>Tudo o que foi fabricado pode ser consertado, menos a carne. Siga o manual, aplique as atualizações, não aceite peças genéricas. Quem quebra a garantia quebra o mundo.</ideoDescription>
+    <forcedMemes>
+      <li MayRequire="Ludeon.RimWorld.Ideology">Structure_Archist</li>
+      <li>EQ_Meme_MachineWarranty</li>
+      <li MayRequire="VanillaExpanded.VMemesE">VME_HardcoreIndustrialism</li>
+      <li MayRequire="VanillaExpanded.VMemesE">VME_MechanoidSupremacy</li>
+    </forcedMemes>
+    <fixedLeaderKinds>
+      <li>EQ_Forja_Primaz</li>
+    </fixedLeaderKinds>
+    <basicMemberKind>EQ_Forja_Aprendiz</basicMemberKind>
+    <pawnGroupMakers Inherit="False">
+      <li>
+        <kindDef>Combat</kindDef>
+        <commonality>100</commonality>
+        <options>
+          <EQ_Forja_Aprendiz>8</EQ_Forja_Aprendiz>
+          <EQ_Forja_Cavaleiro>5</EQ_Forja_Cavaleiro>
+          <EQ_Forja_Tecnico>3</EQ_Forja_Tecnico>
+          <Mech_Militor MayRequire="Ludeon.RimWorld.Biotech">6</Mech_Militor>
+          <Mech_Pikeman>3</Mech_Pikeman>
+          <Mech_Lancer>3</Mech_Lancer>
+          <Mech_Scyther>3</Mech_Scyther>
+          <EQ_Forja_Primaz>1</EQ_Forja_Primaz>
+        </options>
+      </li>
+      <li>
+        <kindDef>Peaceful</kindDef>
+        <options>
+          <Villager>10</Villager>
+          <EQ_Forja_Aprendiz>8</EQ_Forja_Aprendiz>
+          <EQ_Forja_Tecnico>2</EQ_Forja_Tecnico>
+          <EQ_Forja_Primaz>1</EQ_Forja_Primaz>
+        </options>
+      </li>
+      <li>
+        <kindDef>Trader</kindDef>
+        <traders>
+          <Town_Trader>1</Town_Trader>
+        </traders>
+        <carriers>
+          <Muffalo>6</Muffalo>
+          <Dromedary>4</Dromedary>
+        </carriers>
+        <guards>
+          <EQ_Forja_Aprendiz>8</EQ_Forja_Aprendiz>
+          <EQ_Forja_Cavaleiro>4</EQ_Forja_Cavaleiro>
+        </guards>
+      </li>
+      <li>
+        <kindDef>Settlement</kindDef>
+        <options>
+          <EQ_Forja_Aprendiz>10</EQ_Forja_Aprendiz>
+          <EQ_Forja_Cavaleiro>5</EQ_Forja_Cavaleiro>
+          <EQ_Forja_Tecnico>3</EQ_Forja_Tecnico>
+          <EQ_Forja_Primaz>1</EQ_Forja_Primaz>
+        </options>
+      </li>
+    </pawnGroupMakers>
+  </FactionDef>
+
+  <!-- =====================================================================
+       4. O CORO ASCENDENTE (Royalty - poderes psíquicos)
+       ===================================================================== -->
+  <FactionDef ParentName="EQ_MainFactionBase">
+    <defName>EQ_Faction_Coro</defName>
+    <label>O Coro Ascendente</label>
+    <description>Os herdeiros do Império que travou a guerra da Queda. Acreditam que a mente foi a única arma que nunca falhou, e governam em uníssono psíquico através de seus coros de guerra.\n\nSua etiqueta é rigorosa, suas cerimônias são intermináveis e seus impostos também. Toda comunidade vassala paga o dízimo do Coro, incluindo as crianças mais sensíveis, levadas para "treinamento vocal".</description>
+    <fixedName>O Coro Ascendente</fixedName>
+    <pawnSingular>cantor</pawnSingular>
+    <pawnsPlural>cantores</pawnsPlural>
+    <leaderTitle>maestro supremo</leaderTitle>
+    <leaderTitleFemale>maestrina suprema</leaderTitleFemale>
+    <categoryTag>EQ_Coro</categoryTag>
+    <techLevel>Spacer</techLevel>
+    <factionIconPath>EcosDaQueda/Icons/Coro</factionIconPath>
+    <settlementNameMaker>EQ_NamerSettlement_Coro</settlementNameMaker>
+    <colorSpectrum>
+      <li>(0.80, 0.48, 1.00)</li>
+      <li>(0.80, 0.48, 1.00)</li>
+    </colorSpectrum>
+    <allowedCultures Inherit="False">
+      <li>Sophian</li>
+    </allowedCultures>
+    <ideoName>A Harmonia Superior</ideoName>
+    <ideoDescription>Toda mente é uma voz. A maioria desafina. Nós regemos o coro do mundo, e quem não canta em uníssono será gentilmente afinado.</ideoDescription>
+    <forcedMemes>
+      <li MayRequire="VanillaExpanded.VMemesE">VME_Structure_CultOfPersonality</li>
+      <li>EQ_Meme_PsychicChoir</li>
+      <li MayRequire="VanillaExpanded.VMemesE">VME_Aristocratic</li>
+      <li MayRequire="VanillaExpanded.VMemesE">VME_PsychicFocus</li>
+    </forcedMemes>
+    <fixedLeaderKinds>
+      <li>EQ_Coro_Maestro</li>
+    </fixedLeaderKinds>
+    <basicMemberKind>EQ_Coro_Corista</basicMemberKind>
+    <pawnGroupMakers Inherit="False">
+      <li>
+        <kindDef>Combat</kindDef>
+        <commonality>100</commonality>
+        <options>
+          <EQ_Coro_Corista>10</EQ_Coro_Corista>
+          <EQ_Coro_Tenor>4</EQ_Coro_Tenor>
+          <EQ_Coro_Soprano>3</EQ_Coro_Soprano>
+          <EQ_Coro_Maestro>1</EQ_Coro_Maestro>
+        </options>
+      </li>
+      <li>
+        <kindDef>Peaceful</kindDef>
+        <options>
+          <Villager>10</Villager>
+          <Villager_Child MayRequire="Ludeon.RimWorld.Biotech">5</Villager_Child>
+          <EQ_Coro_Corista>8</EQ_Coro_Corista>
+          <EQ_Coro_Maestro>1</EQ_Coro_Maestro>
+        </options>
+      </li>
+      <li>
+        <kindDef>Trader</kindDef>
+        <traders>
+          <Town_Trader>1</Town_Trader>
+        </traders>
+        <carriers>
+          <Muffalo>6</Muffalo>
+          <Elephant>1</Elephant>
+        </carriers>
+        <guards>
+          <EQ_Coro_Corista>8</EQ_Coro_Corista>
+          <EQ_Coro_Tenor>3</EQ_Coro_Tenor>
+        </guards>
+      </li>
+      <li>
+        <kindDef>Settlement</kindDef>
+        <options>
+          <EQ_Coro_Corista>10</EQ_Coro_Corista>
+          <EQ_Coro_Tenor>4</EQ_Coro_Tenor>
+          <EQ_Coro_Soprano>3</EQ_Coro_Soprano>
+          <EQ_Coro_Maestro>1</EQ_Coro_Maestro>
+        </options>
+      </li>
+    </pawnGroupMakers>
+  </FactionDef>
+
+</Defs>

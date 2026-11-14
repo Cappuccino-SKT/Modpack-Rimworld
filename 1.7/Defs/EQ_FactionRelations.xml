@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <!-- Relações fixas entre as 4 potências (lidas por EcosDaQueda.dll).
+       Aplicadas uma vez por mundo (ao criar, ou na 1ª vez que um save antigo é carregado).
+       goodwill <= -75 = hostis; >= 75 = aliados; entre os dois = neutros.
+       permanentEnemies = hostilidade reimposta todo dia e, com o Hegemony, paz/tratados vetados. -->
+
+  <EcosDaQueda.FactionRelationPresetDef>
+    <defName>EQ_FactionRelations_Main</defName>
+    <relations>
+      <!-- O Silêncio estuda o que o Coro chama de heresia; o Coro queimaria as bibliotecas. -->
+      <li>
+        <a>EQ_Faction_Silencio</a>
+        <b>EQ_Faction_Coro</b>
+        <goodwill>-100</goodwill>
+        <label>ódio mortal</label>
+        <permanentEnemies>true</permanentEnemies>
+      </li>
+      <!-- A Forja confisca tecnologia; o Silêncio confisca técnicos. Guerra aberta, mas negociável. -->
+      <li>
+        <a>EQ_Faction_Silencio</a>
+        <b>EQ_Faction_Forja</b>
+        <goodwill>-85</goodwill>
+        <label>guerra</label>
+      </li>
+      <!-- A Hélice compra cobaias do Silêncio... e desconfia de onde elas vêm. -->
+      <li>
+        <a>EQ_Faction_Silencio</a>
+        <b>EQ_Faction_Helice</b>
+        <goodwill>-30</goodwill>
+        <label>desconfiança</label>
+      </li>
+      <!-- Carne contra metal: concorrentes no mesmo mercado de "melhorar pessoas". -->
+      <li>
+        <a>EQ_Faction_Helice</a>
+        <b>EQ_Faction_Forja</b>
+        <goodwill>-50</goodwill>
+        <label>rivalidade</label>
+      </li>
+      <!-- O Coro precisa de herdeiros perfeitos; a Hélice precisa de clientes ricos. -->
+      <li>
+        <a>EQ_Faction_Helice</a>
+        <b>EQ_Faction_Coro</b>
+        <goodwill>45</goodwill>
+        <label>aliança frágil</label>
+      </li>
+      <!-- Ignoram-se educadamente. Por enquanto. -->
+      <li>
+        <a>EQ_Faction_Forja</a>
+        <b>EQ_Faction_Coro</b>
+        <goodwill>0</goodwill>
+        <label>neutralidade</label>
+      </li>
+    </relations>
+  </EcosDaQueda.FactionRelationPresetDef>
+
+</Defs>

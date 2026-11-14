@@ -1,0 +1,350 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <!-- Postos dentro das potências (lidos por EcosDaQueda.dll).
+       Entrar: jurar lealdade (fealty) à potência pelo Hegemony.
+       Posto = maior rank cujo fameRequired <= sua Fama com a potência.
+       stipend = itens enviados a cada stipendIntervalDays, no formato <Steel>50</Steel>.
+       Dízimo: carta de escolha a cada titheIntervalDays; expira em titheTimeoutDays (ignorar = penalidade).
+         count das opções é multiplicado pelo número do posto (posto 2 = 2x).
+         {COUNT} no label mostra a quantidade.
+       Sair da potência (romper a fealty) = leaveInfamy de Infâmia (além da traição do Hegemony). -->
+
+  <LetterDef ParentName="CustomChoiceLetterBase">
+    <defName>EQ_TitheLetter</defName>
+    <letterClass>EcosDaQueda.ChoiceLetter_EQTithe</letterClass>
+  </LetterDef>
+
+  <!-- =====================================================================
+       ORDEM DO SILÊNCIO PERPÉTUO
+       ===================================================================== -->
+  <EcosDaQueda.FactionAllegianceDef>
+    <defName>EQ_Allegiance_Silencio</defName>
+    <faction>EQ_Faction_Silencio</faction>
+    <hostileIncidents>
+      <li>ShamblerSwarm</li>
+      <li>FleshbeastAttack</li>
+      <li>SightstealerSwarm</li>
+      <li>GhoulAttack</li>
+    </hostileIncidents>
+    <hostileIncidentLabel>Experimento de campo</hostileIncidentLabel>
+    <hostileIncidentText>A Ordem do Silêncio Perpétuo decidiu que a sua colônia é um excelente local para um experimento de campo.\n\nVocê não foi consultado. Você é o grupo de controle. Ou a variável. Eles ainda não decidiram.</hostileIncidentText>
+    <stipendIntervalDays>10</stipendIntervalDays>
+    <ranks>
+      <li>
+        <label>Voluntário de Pesquisa</label>
+        <description>Você não é uma cobaia. Oficialmente. Seu crachá diz "colaborador", em letras bem pequenas.</description>
+        <fameRequired>0</fameRequired>
+        <stipend>
+          <Bioferrite>15</Bioferrite>
+        </stipend>
+      </li>
+      <li>
+        <label>Pesquisador Associado</label>
+        <description>Você tem direito a uma mesa, um jaleco e a assinar artigos como terceiro autor.</description>
+        <fameRequired>60</fameRequired>
+        <priceGain>0.05</priceGain>
+        <stipend>
+          <Bioferrite>30</Bioferrite>
+          <MedicineIndustrial>3</MedicineIndustrial>
+        </stipend>
+      </li>
+      <li>
+        <label>Catedrático do Vazio</label>
+        <description>Seus alunos têm medo de você. Seus objetos de estudo também. É assim que se sabe que você chegou lá.</description>
+        <fameRequired>150</fameRequired>
+        <priceGain>0.10</priceGain>
+        <stipend>
+          <Bioferrite>50</Bioferrite>
+          <Shard>1</Shard>
+        </stipend>
+      </li>
+      <li>
+        <label>Arquivista Sênior</label>
+        <description>Você decide o que é lembrado e o que é esquecido. O Revisor lê tudo o que você escreve, inclusive isto.</description>
+        <fameRequired>300</fameRequired>
+        <priceGain>0.15</priceGain>
+        <stipend>
+          <Bioferrite>80</Bioferrite>
+          <Shard>2</Shard>
+        </stipend>
+      </li>
+    </ranks>
+    <titheLabel>Bolsa de Pesquisa</titheLabel>
+    <titheText>Um silente encapuzado entrega um formulário em triplicata, sem dizer uma palavra.\n\n"A Ordem agradece sua contribuição voluntária para a Bolsa de Pesquisa deste ciclo. Material humano é preferível. Prata é aceitável. Recusas serão catalogadas."</titheText>
+    <titheIntervalDays>15</titheIntervalDays>
+    <titheTimeoutDays>2</titheTimeoutDays>
+    <titheOptions>
+      <li>
+        <label>Entregar um "voluntário" (prisioneiro)</label>
+        <type>Prisoner</type>
+        <fame>12</fame>
+        <resultText>O prisioneiro foi levado para a Ordem. Ninguém perguntou para onde. Ninguém quer saber.</resultText>
+      </li>
+      <li>
+        <label>Pagar a taxa de pesquisa ({COUNT} de prata)</label>
+        <type>Silver</type>
+        <count>150</count>
+        <fame>4</fame>
+        <resultText>A Ordem aceitou a prata com a decepção educada de quem esperava algo mais vivo.</resultText>
+      </li>
+      <li>
+        <label>Recusar</label>
+        <type>Refuse</type>
+        <infamy>10</infamy>
+        <goodwill>-10</goodwill>
+        <resultText>Sua recusa foi arquivada. Em ordem alfabética. Com nota de rodapé.</resultText>
+      </li>
+    </titheOptions>
+  </EcosDaQueda.FactionAllegianceDef>
+
+  <!-- =====================================================================
+       CONCÍLIO DA HÉLICE
+       ===================================================================== -->
+  <EcosDaQueda.FactionAllegianceDef>
+    <defName>EQ_Allegiance_Helice</defName>
+    <faction>EQ_Faction_Helice</faction>
+    <hostileIncidents>
+      <li>Disease_Plague</li>
+      <li>Disease_Flu</li>
+      <li>ToxicFallout</li>
+    </hostileIncidents>
+    <hostileIncidentLabel>Amostra grátis</hostileIncidentLabel>
+    <hostileIncidentText>O Concílio da Hélice enviou uma "amostra grátis" para a sua colônia, pelo ar.\n\nA carta que acompanha diz: "Lamentamos o cancelamento. Segue uma demonstração do que os não-assinantes estão perdendo em proteção imunológica."</hostileIncidentText>
+    <stipendIntervalDays>10</stipendIntervalDays>
+    <ranks>
+      <li>
+        <label>Cliente Básico</label>
+        <description>Plano gratuito: acesso limitado, anúncios genéticos e nenhuma garantia contra efeitos colaterais.</description>
+        <fameRequired>0</fameRequired>
+        <stipend>
+          <MedicineIndustrial>4</MedicineIndustrial>
+        </stipend>
+      </li>
+      <li>
+        <label>Assinante Premium</label>
+        <description>Agora sem anúncios! Seus descendentes já nascem com 10% de desconto em melhorias.</description>
+        <fameRequired>60</fameRequired>
+        <priceGain>0.05</priceGain>
+        <stipend>
+          <MedicineIndustrial>6</MedicineIndustrial>
+          <HemogenPack>4</HemogenPack>
+        </stipend>
+      </li>
+      <li>
+        <label>Acionista</label>
+        <description>Você tem voto nas reuniões. Ninguém lê o que você vota, mas o voto existe.</description>
+        <fameRequired>150</fameRequired>
+        <priceGain>0.10</priceGain>
+        <stipend>
+          <MedicineUltratech>2</MedicineUltratech>
+          <HemogenPack>6</HemogenPack>
+        </stipend>
+      </li>
+      <li>
+        <label>Membro do Conselho</label>
+        <description>Você decide quais linhagens são "premium" e quais são "descontinuadas". Durma bem.</description>
+        <fameRequired>300</fameRequired>
+        <priceGain>0.15</priceGain>
+        <stipend>
+          <MedicineUltratech>4</MedicineUltratech>
+          <Neutroamine>20</Neutroamine>
+        </stipend>
+      </li>
+    </ranks>
+    <titheLabel>Mensalidade Genética</titheLabel>
+    <titheText>Chegou a fatura do Concílio, impressa em papel brilhante e com um sorriso holográfico.\n\n"Prezado associado, sua mensalidade venceu. Aceitamos prata ou, para clientes selecionados, uma 'versão base' para o nosso programa de testes. Cancelamentos estão sujeitos a multa contratual e a consequências genéticas não especificadas."</titheText>
+    <titheIntervalDays>15</titheIntervalDays>
+    <titheTimeoutDays>2</titheTimeoutDays>
+    <titheOptions>
+      <li>
+        <label>Pagar a mensalidade ({COUNT} de prata)</label>
+        <type>Silver</type>
+        <count>200</count>
+        <fame>6</fame>
+        <resultText>Pagamento confirmado. Você ganhou 12 pontos de fidelidade, que não servem para nada.</resultText>
+      </li>
+      <li>
+        <label>Ceder uma "versão base" para testes (prisioneiro)</label>
+        <type>Prisoner</type>
+        <fame>10</fame>
+        <resultText>O prisioneiro foi "migrado para um plano superior". O Concílio agradece a preferência.</resultText>
+      </li>
+      <li>
+        <label>Cancelar a assinatura (recusar)</label>
+        <type>Refuse</type>
+        <infamy>10</infamy>
+        <goodwill>-10</goodwill>
+        <resultText>Cancelamento registrado. Seu histórico foi encaminhado ao setor de cobranças.</resultText>
+      </li>
+    </titheOptions>
+  </EcosDaQueda.FactionAllegianceDef>
+
+  <!-- =====================================================================
+       IRMANDADE DA FORJA
+       ===================================================================== -->
+  <EcosDaQueda.FactionAllegianceDef>
+    <defName>EQ_Allegiance_Forja</defName>
+    <faction>EQ_Faction_Forja</faction>
+    <hostileIncidents>
+      <li MayRequire="Ludeon.RimWorld.Royalty">MechCluster</li>
+      <li>DefoliatorShipPartCrash</li>
+      <li>ShortCircuit</li>
+    </hostileIncidents>
+    <hostileIncidentLabel>Recall compulsório</hostileIncidentLabel>
+    <hostileIncidentText>A Irmandade da Forja abriu um processo de recall contra a sua colônia.\n\nO equipamento de recolhimento já foi despachado. Ele é automático, armado e não aceita reclamações.</hostileIncidentText>
+    <stipendIntervalDays>10</stipendIntervalDays>
+    <ranks>
+      <li>
+        <label>Aprendiz de Manutenção</label>
+        <description>Você pode olhar as máquinas. Tocar, ainda não. Leia o manual. De novo.</description>
+        <fameRequired>0</fameRequired>
+        <stipend>
+          <Steel>50</Steel>
+        </stipend>
+      </li>
+      <li>
+        <label>Técnico Licenciado</label>
+        <description>Você recebeu sua licença, seu macacão e uma chave inglesa abençoada. Não a perca.</description>
+        <fameRequired>60</fameRequired>
+        <priceGain>0.05</priceGain>
+        <stipend>
+          <Steel>75</Steel>
+          <ComponentIndustrial>3</ComponentIndustrial>
+        </stipend>
+      </li>
+      <li>
+        <label>Cavaleiro da Garantia</label>
+        <description>Você agora pode confiscar tecnologia alheia "para a segurança de todos". Use com moderação. Ou não.</description>
+        <fameRequired>150</fameRequired>
+        <priceGain>0.10</priceGain>
+        <stipend>
+          <Plasteel>30</Plasteel>
+          <ComponentIndustrial>5</ComponentIndustrial>
+        </stipend>
+      </li>
+      <li>
+        <label>Engenheiro-Mestre</label>
+        <description>Você escreve os manuais. Os outros os recitam. As máquinas, enfim, respeitam você.</description>
+        <fameRequired>300</fameRequired>
+        <priceGain>0.15</priceGain>
+        <stipend>
+          <Plasteel>50</Plasteel>
+          <ComponentSpacer>2</ComponentSpacer>
+        </stipend>
+      </li>
+    </ranks>
+    <titheLabel>Dízimo Tecnológico</titheLabel>
+    <titheText>Um cavaleiro da Forja chega com uma prancheta e um medidor de radiação apontado para a sua oficina.\n\n"Inspeção de rotina. Toda tecnologia sob a proteção da Irmandade paga o dízimo de manutenção. Componentes são o preferido. Prata, se for o que você tem. Recusar anula sua garantia."</titheText>
+    <titheIntervalDays>15</titheIntervalDays>
+    <titheTimeoutDays>2</titheTimeoutDays>
+    <titheOptions>
+      <li>
+        <label>Entregar {COUNT} componentes</label>
+        <type>Things</type>
+        <thingDef>ComponentIndustrial</thingDef>
+        <count>3</count>
+        <fame>8</fame>
+        <resultText>Os componentes foram aprovados na inspeção e levados para "manutenção preventiva". Para sempre.</resultText>
+      </li>
+      <li>
+        <label>Pagar a taxa de licença ({COUNT} de prata)</label>
+        <type>Silver</type>
+        <count>250</count>
+        <fame>3</fame>
+        <resultText>Taxa paga. O cavaleiro carimbou seu formulário com um pouco de decepção.</resultText>
+      </li>
+      <li>
+        <label>Recusar (anular a garantia)</label>
+        <type>Refuse</type>
+        <infamy>10</infamy>
+        <goodwill>-10</goodwill>
+        <resultText>Garantia anulada. Seu nome foi para a lista de "recall".</resultText>
+      </li>
+    </titheOptions>
+  </EcosDaQueda.FactionAllegianceDef>
+
+  <!-- =====================================================================
+       O CORO ASCENDENTE
+       ===================================================================== -->
+  <EcosDaQueda.FactionAllegianceDef>
+    <defName>EQ_Allegiance_Coro</defName>
+    <faction>EQ_Faction_Coro</faction>
+    <hostileIncidents>
+      <li>PsychicDrone</li>
+      <li>PsychicEmanatorShipPartCrash</li>
+    </hostileIncidents>
+    <hostileIncidentLabel>Nota dissonante</hostileIncidentLabel>
+    <hostileIncidentText>O Coro Ascendente dedicou uma canção à sua colônia. Uma só nota, sustentada, dentro da cabeça de todos.\n\nÉ a opinião deles sobre você, em Si bemol.</hostileIncidentText>
+    <stipendIntervalDays>10</stipendIntervalDays>
+    <ranks>
+      <li>
+        <label>Ouvinte</label>
+        <description>Você pode assistir aos concertos. De pé, no fundo, sem aplaudir antes da hora.</description>
+        <fameRequired>0</fameRequired>
+        <stipend>
+          <Silver>100</Silver>
+        </stipend>
+      </li>
+      <li>
+        <label>Corista</label>
+        <description>Você canta no coro. Ninguém ouve sua voz individualmente, e é assim que deve ser.</description>
+        <fameRequired>60</fameRequired>
+        <priceGain>0.05</priceGain>
+        <stipend>
+          <Silver>150</Silver>
+          <Gold>10</Gold>
+        </stipend>
+      </li>
+      <li>
+        <label>Solista</label>
+        <description>Você tem um solo. Um. Curto. Não desafine, ou será "reafinado".</description>
+        <fameRequired>150</fameRequired>
+        <priceGain>0.10</priceGain>
+        <stipend>
+          <Gold>20</Gold>
+          <Jade>10</Jade>
+        </stipend>
+      </li>
+      <li>
+        <label>Regente</label>
+        <description>Você rege uma ala do Coro. Mil vozes cantam ao seu gesto, e nenhuma ousa perguntar a letra.</description>
+        <fameRequired>300</fameRequired>
+        <priceGain>0.15</priceGain>
+        <stipend>
+          <Gold>40</Gold>
+          <Jade>20</Jade>
+        </stipend>
+      </li>
+    </ranks>
+    <titheLabel>Dízimo Psíquico</titheLabel>
+    <titheText>Um mestre de cerimônias chega numa liteira, carregada por quatro cantores que não param de cantarolar.\n\n"Em nome do Maestro Supremo, viemos recolher o Dízimo do Coro. Toda casa leal envia uma voz para o treinamento vocal, de preferência jovem e sensível. Casas desafinadas podem pagar em ouro. Casas que recusam... bem, nós temos ouvido absoluto, e nos lembramos."</titheText>
+    <titheIntervalDays>30</titheIntervalDays>
+    <titheTimeoutDays>2</titheTimeoutDays>
+    <titheOptions>
+      <li>
+        <label>Enviar alguém para o "treinamento vocal"</label>
+        <type>Colonist</type>
+        <preferChildren>true</preferChildren>
+        <fame>25</fame>
+        <resultText>A liteira partiu com um passageiro a mais. Dizem que as vozes do Coro ficam mais bonitas a cada ano.</resultText>
+      </li>
+      <li>
+        <label>Pagar em ouro ({COUNT})</label>
+        <type>Things</type>
+        <thingDef>Gold</thingDef>
+        <count>15</count>
+        <fame>5</fame>
+        <resultText>O ouro foi aceito com um suspiro aristocrático. "Pelo menos brilha."</resultText>
+      </li>
+      <li>
+        <label>Recusar</label>
+        <type>Refuse</type>
+        <infamy>15</infamy>
+        <goodwill>-15</goodwill>
+        <resultText>O mestre de cerimônias anotou algo numa partitura. Pareceu uma pausa longa e ameaçadora.</resultText>
+      </li>
+    </titheOptions>
+  </EcosDaQueda.FactionAllegianceDef>
+
+</Defs>

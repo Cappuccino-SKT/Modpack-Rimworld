@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <!-- Memes-assinatura das quatro potências. Cada facção principal tem exatamente um.
+       O Hegemony lê estes memes para definir o comportamento estratégico (ver Mods/Hegemony). -->
+
+  <MemeDef Name="EQ_SignatureMemeBase" Abstract="True">
+    <category>Normal</category>
+    <impact>2</impact>
+    <exclusionTags>
+      <li>EQ_SignatureMeme</li>
+    </exclusionTags>
+  </MemeDef>
+
+  <MemeDef ParentName="EQ_SignatureMemeBase">
+    <defName>EQ_Meme_VoidScholarship</defName>
+    <label>academia do vazio</label>
+    <description>O Vazio é o maior objeto de estudo da história. Todo conhecimento tem um preço, e felizmente quem paga raramente somos nós.\n\nPublique ou seja devorado. Prisioneiros não são pessoas: são "voluntários de pesquisa", e a comissão de ética foi a primeira a ser estudada.</description>
+    <iconPath>UI/Memes/Ritualist</iconPath>
+  </MemeDef>
+
+  <MemeDef ParentName="EQ_SignatureMemeBase">
+    <defName>EQ_Meme_GeneticMarket</defName>
+    <label>mercado genético</label>
+    <description>A humanidade original foi descontinuada na Queda. O futuro é um produto: genes premium, linhagens licenciadas e atualizações hereditárias com assinatura mensal.\n\nQuem não pode pagar é classificado como "versão base" e tratado como material de teste. Termos e condições se aplicam aos seus descendentes.</description>
+    <iconPath>UI/Memes/AM_BiologicalCorruptors</iconPath>
+  </MemeDef>
+
+  <MemeDef ParentName="EQ_SignatureMemeBase">
+    <defName>EQ_Meme_MachineWarranty</defName>
+    <label>garantia sagrada</label>
+    <description>A carne falhou. As máquinas não falham, apenas saem da garantia. Os manuais de manutenção são escrituras, as atualizações de firmware são sacramentos e todo parafuso perdido é um pecado.\n\nAndroides livres são uma heresia: máquinas que exigem direitos anulam a garantia de todas as outras. Pessoas defeituosas entram em "recall".</description>
+    <iconPath>UI/Memes/MechanoidSupremacy</iconPath>
+  </MemeDef>
+
+  <MemeDef ParentName="EQ_SignatureMemeBase">
+    <defName>EQ_Meme_PsychicChoir</defName>
+    <label>harmonia superior</label>
+    <description>Na Queda, todas as armas falharam, menos a mente. Os herdeiros do antigo Império cantam em uníssono psíquico e governam porque, francamente, ouvem melhor.\n\nToda comunidade vassala paga o dízimo do Coro: impostos, cerimônias intermináveis e as crianças mais sensíveis, levadas para "treinamento vocal". Poucas voltam, mas todas afinadas.</description>
+    <iconPath>UI/Memes/PsychicFocus</iconPath>
+  </MemeDef>
+
+</Defs>

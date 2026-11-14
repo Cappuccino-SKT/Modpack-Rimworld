@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <!-- Reputação estilo New Vegas: Fama e Infâmia separadas com cada potência.
+       Fama: boa vontade ganha (presentes, missões, comércio, resgates).
+       Infâmia: boa vontade perdida + mortes e capturas de membros (mesmo hostis).
+       Inimigos de uma potência (boa vontade <= enemyThreshold) ganham Fama quando você a fere.
+
+       Cada título (tier) tem efeitos:
+         priceGain     = preços no comércio com a facção (+0.10 = 10% melhor para você)
+         giftChance    = chance de presente por verificação (só se a facção NÃO for hostil)
+         tributeChance = chance de tributo em prata por verificação (só se NÃO for hostil)
+         raidChance    = chance de caçadores de recompensa por verificação (só se for HOSTIL)
+       Verificação a cada checkIntervalDays; no máximo 1 evento por facção a cada minDaysBetweenEvents. -->
+
+  <EcosDaQueda.ReputationSettingsDef>
+    <defName>EQ_ReputationSettings</defName>
+    <factions>
+      <li>EQ_Faction_Silencio</li>
+      <li>EQ_Faction_Helice</li>
+      <li>EQ_Faction_Forja</li>
+      <li>EQ_Faction_Coro</li>
+    </factions>
+    <thresholds>
+      <li>30</li>
+      <li>150</li>
+    </thresholds>
+    <maxValue>999</maxValue>
+    <infamyPerHumanKilled>4</infamyPerHumanKilled>
+    <infamyPerOtherKilled>1</infamyPerOtherKilled>
+    <infamyPerCapture>3</infamyPerCapture>
+    <enemyThreshold>-50</enemyThreshold>
+    <friendThreshold>50</friendThreshold>
+    <enemyFameFromInfamy>0.5</enemyFameFromInfamy>
+    <enemyInfamyFromFame>0.25</enemyInfamyFromFame>
+    <friendInfamyFromInfamy>0.25</friendInfamyFromInfamy>
+
+    <checkIntervalDays>3</checkIntervalDays>
+    <minDaysBetweenEvents>8</minDaysBetweenEvents>
+    <giftMarketValue>300~900</giftMarketValue>
+    <tributeSilver>150~500</tributeSilver>
+    <raidPointsFactor>1</raidPointsFactor>
+    <giftLetterLabel>Presente: {0}</giftLetterLabel>
+    <giftLetterText>{0} enviou um presente, acompanhado de um bilhete educado e levemente possessivo.\n\nÉ assim que se trata um amigo da casa. Por enquanto.</giftLetterText>
+    <tributeLetterLabel>Tributo: {0}</tributeLetterLabel>
+    <tributeLetterText>{0} enviou {1} de prata. Não há bilhete, só um silêncio constrangido.\n\nNinguém chama isso de "dinheiro de proteção". Oficialmente é uma "taxa de convivência pacífica".</tributeLetterText>
+    <raidLetterText>{0} pôs um preço na sua cabeça, e alguém veio cobrar.\n\nCaçadores de recompensa estão chegando. Eles trouxeram o cartaz de "procurado" para conferir o rosto.</raidLetterText>
+
+    <!-- Ordem: Fama baixa (Infâmia baixa, média, alta), Fama média (...), Fama alta (...) -->
+    <tiers>
+      <li>
+        <label>Desconhecido</label>
+        <description>Ninguém sabe quem você é. Aproveite enquanto dura.</description>
+      </li>
+      <li>
+        <label>Malvisto</label>
+        <description>Seu nome é sussurrado com desconfiança, geralmente seguido de um cuspe.</description>
+        <priceGain>-0.05</priceGain>
+        <raidChance>0.05</raidChance>
+      </li>
+      <li>
+        <label>Inimigo Jurado</label>
+        <description>Há cartazes de "procurado" com o seu rosto. E o desenho nem é bom.</description>
+        <priceGain>-0.15</priceGain>
+        <raidChance>0.20</raidChance>
+      </li>
+      <li>
+        <label>Aceito</label>
+        <description>Você é tolerado, cumprimentado e, às vezes, convidado para jantar.</description>
+        <priceGain>0.05</priceGain>
+        <giftChance>0.05</giftChance>
+      </li>
+      <li>
+        <label>Imprevisível</label>
+        <description>Ninguém sabe se você veio trazer presentes ou incendiar o celeiro. Talvez os dois.</description>
+        <raidChance>0.05</raidChance>
+      </li>
+      <li>
+        <label>Temido</label>
+        <description>Respeitam você do jeito que se respeita um animal selvagem: de longe, em silêncio e com tributos.</description>
+        <priceGain>0.10</priceGain>
+        <tributeChance>0.15</tributeChance>
+        <raidChance>0.05</raidChance>
+      </li>
+      <li>
+        <label>Idolatrado</label>
+        <description>Crianças brincam de ser você. Algumas até sobrevivem à brincadeira.</description>
+        <priceGain>0.15</priceGain>
+        <giftChance>0.20</giftChance>
+      </li>
+      <li>
+        <label>Herói Controverso</label>
+        <description>Você fez muito por eles. Também fez algumas coisas que ninguém comenta no jantar.</description>
+        <priceGain>0.10</priceGain>
+        <giftChance>0.10</giftChance>
+      </li>
+      <li>
+        <label>Lenda Sombria</label>
+        <description>Salvador e carrasco. Contam histórias sobre você tanto para inspirar quanto para assustar, e pagam para que continue assim.</description>
+        <priceGain>0.15</priceGain>
+        <tributeChance>0.20</tributeChance>
+      </li>
+    </tiers>
+  </EcosDaQueda.ReputationSettingsDef>
+
+  <MainButtonDef>
+    <defName>EQ_Reputation</defName>
+    <label>Reputação</label>
+    <description>Sua Fama e Infâmia com as quatro potências do mundo, e o que isso significa para você.</description>
+    <tabWindowClass>EcosDaQueda.MainTabWindow_Reputation</tabWindowClass>
+    <order>83</order>
+    <validWithoutMap>true</validWithoutMap>
+    <closesWorldView>false</closesWorldView>
+  </MainButtonDef>
+
+</Defs>

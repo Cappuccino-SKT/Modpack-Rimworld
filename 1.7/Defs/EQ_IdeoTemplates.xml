@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <!-- Modelos fixos de ideologia (lidos por EcosDaQueda.dll).
+       Aplicados uma vez a cada facção ao criar/carregar o mundo: toda partida tem
+       o mesmo nome, ícone, cor, divindades, regras, cargos, rituais e líder fundador.
+       exactPrecepts = remove o que não estiver listado aqui. -->
+
+  <!-- =====================================================================
+       ORDEM DO SILÊNCIO PERPÉTUO — "A Escuta Profunda"
+       Estudam o Vazio em silêncio absoluto, no escuro, entre livros e prisioneiros.
+       ===================================================================== -->
+  <EcosDaQueda.IdeoTemplateDef>
+    <defName>EQ_IdeoTemplate_Silencio</defName>
+    <faction>EQ_Faction_Silencio</faction>
+    <ideoName>A Escuta Profunda</ideoName>
+    <adjective>silente</adjective>
+    <memberName>silente</memberName>
+    <leaderTitleMale>arquivista-mor</leaderTitleMale>
+    <leaderTitleFemale>arquivista-mor</leaderTitleFemale>
+    <ideoDescription>Sob cada lugar e cada instante existe um oceano negro. A Ordem o escuta desde a Queda, e para ouvi-lo é preciso calar: a fala é proibida, a luz é suavizada, e todo pensamento deve ser escrito, revisado e arquivado.\n\nO conhecimento exige sacrifícios. Por sorte, raramente os nossos: prisioneiros são "voluntários de pesquisa", e o comitê de ética foi o primeiro objeto de estudo.</ideoDescription>
+    <icon>EQ_Icon_Silencio</icon>
+    <color>EQ_IdeoColor_Silencio</color>
+    <deities>
+      <li>
+        <nameType><name>O Revisor</name><type>Aquele que Lê Tudo</type></nameType>
+        <gender>Male</gender>
+        <iconPath>UI/Deities/DeityGeneric</iconPath>
+      </li>
+      <li>
+        <nameType><name>A Nota de Rodapé</name><type>Guardiã do Esquecido</type></nameType>
+        <gender>Female</gender>
+        <iconPath>UI/Deities/DeityGeneric</iconPath>
+      </li>
+    </deities>
+    <precepts>
+      <!-- Cargos -->
+      <li><def>IdeoRole_Leader</def><name>Arquivista-Mor</name></li>
+      <li><def>IdeoRole_Moralist</def><name>Revisor Supremo</name></li>
+      <!-- Rituais -->
+      <li><def>Funeral</def><name>Arquivamento Final</name></li>
+      <li><def>Conversion</def><name>Revisão por Pares</name></li>
+      <li><def>LeaderSpeech</def><name>Palestra Magna</name></li>
+      <!-- O Vazio e o ritual -->
+      <li><def>VoidStudy_VeryEfficient</def></li>
+      <li><def>PsychicRituals_Exalted</def></li>
+      <li><def>Research_VeryFast</def></li>
+      <!-- O silêncio e a escuridão -->
+      <li MayRequire="VanillaExpanded.VMemesE"><def>VME_SocialInteractions_Disallowed</def></li>
+      <li><def>Darklight_Preferred</def></li>
+      <li><def>DarknessCombat_Preferred</def></li>
+      <!-- A academia -->
+      <li MayRequire="VanillaExpanded.VMemesE,VanillaExpanded.VBooksE"><def>VME_Library_Required</def></li>
+      <li MayRequire="VanillaExpanded.VMemesE,VanillaExpanded.VBooksE"><def>VME_BookWriting_Exalted</def></li>
+      <!-- A parte horrível: os "voluntários" -->
+      <li><def>Slavery_Acceptable</def></li>
+      <li><def>Execution_DontCare</def></li>
+      <li><def>OrganUse_Acceptable</def></li>
+      <li><def>IdeoDiversity_Horrible</def></li>
+    </precepts>
+    <leaderFirstNameMale>Ottavio</leaderFirstNameMale>
+    <leaderFirstNameFemale>Ottavia</leaderFirstNameFemale>
+    <leaderNickname>Rodapé</leaderNickname>
+    <leaderLastName>Kessling</leaderLastName>
+  </EcosDaQueda.IdeoTemplateDef>
+
+  <!-- =====================================================================
+       CONCÍLIO DA HÉLICE — "O Genoma Ideal"
+       Uma corporação genética: carne só se troca por carne, tudo se vende, e o
+       catálogo tem três modelos premium.
+       ===================================================================== -->
+  <EcosDaQueda.IdeoTemplateDef>
+    <defName>EQ_IdeoTemplate_Helice</defName>
+    <faction>EQ_Faction_Helice</faction>
+    <ideoName>O Genoma Ideal</ideoName>
+    <adjective>heliciano</adjective>
+    <memberName>associado</memberName>
+    <leaderTitleMale>diretor executivo</leaderTitleMale>
+    <leaderTitleFemale>diretora executiva</leaderTitleFemale>
+    <ideoDescription>A humanidade original foi um rascunho, descontinuado na Queda. O Concílio oferece a versão final: genes premium, linhagens licenciadas e atualizações hereditárias com assinatura mensal. Máquinas no corpo são gambiarra; carne se substitui por carne melhor.\n\nCrianças nascem em tanques, porque o útero é um produto obsoleto. Quem não pode pagar é classificado como "versão base" e vira material de teste. Termos e condições se aplicam aos seus descendentes.</ideoDescription>
+    <icon>EQ_Icon_Helice</icon>
+    <color>EQ_IdeoColor_Helice</color>
+    <deities>
+      <li>
+        <nameType><name>O Acionista Majoritário</name><type>Dono de Todas as Patentes</type></nameType>
+        <gender>Male</gender>
+        <iconPath>UI/Deities/DeityGeneric</iconPath>
+      </li>
+    </deities>
+    <precepts>
+      <!-- Cargos -->
+      <li><def>IdeoRole_Leader</def><name>Diretor Executivo</name></li>
+      <li><def>IdeoRole_Moralist</def><name>Gerente de Compliance</name></li>
+      <li MayRequire="VanillaExpanded.VMemesE"><def>VME_IdeoRole_Merchant</def><name>Executivo de Vendas</name></li>
+      <li MayRequire="VanillaExpanded.VMemesE"><def>VME_IdeoRole_Fleshcrafter</def><name>Geneticista-Chefe</name></li>
+      <!-- Rituais -->
+      <li><def>Funeral</def><name>Encerramento de Contrato</name></li>
+      <li><def>Conversion</def><name>Onboarding Compulsório</name></li>
+      <li><def>LeaderSpeech</def><name>Reunião de Acionistas</name></li>
+      <li MayRequire="VanillaExpanded.VMemesE"><def>VME_TradingFairPrecept</def><name>Feira de Lançamento</name></li>
+      <!-- O catálogo premium -->
+      <li><def>PreferredXenotype</def><xenotype>Highmate</xenotype></li>
+      <li><def>PreferredXenotype</def><xenotype>Genie</xenotype></li>
+      <li><def>PreferredXenotype</def><xenotype>Hussar</xenotype></li>
+      <!-- Carne por carne -->
+      <li MayRequire="VanillaExpanded.VMemesE"><def>VME_BodyMod_OnlyBiological</def></li>
+      <li><def>GrowthVat_Essential</def></li>
+      <li><def>Research_Fast</def></li>
+      <!-- O mercado -->
+      <li MayRequire="VanillaExpanded.VMemesE"><def>VME_Trading_Required</def></li>
+      <li MayRequire="VanillaExpanded.VMemesE"><def>VME_TradingPrice_Improved</def></li>
+      <li MayRequire="VanillaExpanded.VMemesE"><def>VME_Expectations_High</def></li>
+      <!-- A parte horrível: a "versão base" -->
+      <li><def>Slavery_Acceptable</def></li>
+      <li><def>OrganUse_Acceptable</def></li>
+    </precepts>
+    <leaderFirstNameMale>Valério</leaderFirstNameMale>
+    <leaderFirstNameFemale>Valéria</leaderFirstNameFemale>
+    <leaderNickname>Premium</leaderNickname>
+    <leaderLastName>Sandoval</leaderLastName>
+  </EcosDaQueda.IdeoTemplateDef>
+
+  <!-- =====================================================================
+       IRMANDADE DA FORJA — "O Culto da Garantia"
+       Devotos das máquinas: mechs são santos, androides são ferramentas, e a carne
+       só presta com peças de reposição.
+       ===================================================================== -->
+  <EcosDaQueda.IdeoTemplateDef>
+    <defName>EQ_IdeoTemplate_Forja</defName>
+    <faction>EQ_Faction_Forja</faction>
+    <ideoName>O Culto da Garantia</ideoName>
+    <adjective>forjado</adjective>
+    <memberName>irmão de ferro</memberName>
+    <leaderTitleMale>engenheiro-primaz</leaderTitleMale>
+    <leaderTitleFemale>engenheira-primaz</leaderTitleFemale>
+    <ideoDescription>Tudo o que foi fabricado pode ser consertado, menos a carne. Os arcotecs são os Fabricantes Originais; os mecanoides, sua obra perfeita; os manuais de manutenção, escritura sagrada. Siga o manual, aplique as atualizações, não aceite peças genéricas.\n\nAndroides que exigem direitos anulam a garantia de todas as máquinas: devem servir ou ser desmontados. Gente defeituosa entra em "recall", e quase nunca volta da oficina.</ideoDescription>
+    <icon>EQ_Icon_Forja</icon>
+    <color>EQ_IdeoColor_Forja</color>
+    <deities>
+      <li>
+        <nameType><name>O Fabricante Original</name><type>Arcotec da Garantia</type></nameType>
+        <gender>None</gender>
+        <iconPath>UI/Deities/DeityGeneric</iconPath>
+      </li>
+      <li>
+        <nameType><name>A Assistência Técnica</name><type>Arcotec do Reparo</type></nameType>
+        <gender>None</gender>
+        <iconPath>UI/Deities/DeityGeneric</iconPath>
+      </li>
+    </deities>
+    <precepts>
+      <!-- Cargos -->
+      <li><def>IdeoRole_Leader</def><name>Engenheiro-Primaz</name></li>
+      <li><def>IdeoRole_Moralist</def><name>Inspetor de Garantia</name></li>
+      <li MayRequire="VanillaExpanded.VMemesE"><def>VME_IdeoRole_Mechacker</def><name>Mestre Mecânico</name></li>
+      <!-- Rituais -->
+      <li><def>Funeral</def><name>Descomissionamento</name></li>
+      <li><def>Conversion</def><name>Atualização de Firmware</name></li>
+      <li><def>LeaderSpeech</def><name>Leitura do Manual</name></li>
+      <!-- As máquinas santas -->
+      <li MayRequire="VanillaExpanded.VMemesE"><def>VME_Mechanoids_Exalted</def></li>
+      <li><def>MechanoidLabor_Enhanced</def></li>
+      <li MayRequire="VanillaExpanded.VMemesE"><def>VME_AutonomousWeapons_Exalted</def></li>
+      <li><def>BodyMod_Approved</def></li>
+      <!-- A oficina -->
+      <li MayRequire="VanillaExpanded.VMemesE"><def>VME_CraftingQuality_Increased</def></li>
+      <li MayRequire="VanillaExpanded.VMemesE"><def>VME_AutomationEfficiency_Increased</def></li>
+      <li><def>Research_Fast</def></li>
+      <li MayRequire="OskarPotocki.VanillaVehiclesExpanded"><def>VVE_Driving_Approved</def></li>
+      <li MayRequire="OskarPotocki.VanillaVehiclesExpanded"><def>VVE_VehicleRepairs_Fast</def></li>
+      <li><def>DrugUse_MedicalOnly</def></li>
+      <!-- A parte horrível: a heresia androide e os "recalls" -->
+      <li MayRequire="vanillaracesexpanded.android"><def>VRE_Androids_Tools</def></li>
+      <li><def>IdeoDiversity_Horrible</def></li>
+    </precepts>
+    <leaderFirstNameMale>Bartolomeu</leaderFirstNameMale>
+    <leaderFirstNameFemale>Bartolomeia</leaderFirstNameFemale>
+    <leaderNickname>Chave-Inglesa</leaderNickname>
+    <leaderLastName>Ferraz</leaderLastName>
+  </EcosDaQueda.IdeoTemplateDef>
+
+  <!-- =====================================================================
+       O CORO ASCENDENTE — "A Harmonia Superior"
+       Aristocracia psíquica: governa o psíquico mais forte, os títulos passam de
+       pai para filho, e as crianças trabalham (e cantam).
+       ===================================================================== -->
+  <EcosDaQueda.IdeoTemplateDef>
+    <defName>EQ_IdeoTemplate_Coro</defName>
+    <faction>EQ_Faction_Coro</faction>
+    <ideoName>A Harmonia Superior</ideoName>
+    <adjective>coral</adjective>
+    <memberName>cantor</memberName>
+    <leaderTitleMale>maestro supremo</leaderTitleMale>
+    <leaderTitleFemale>maestrina suprema</leaderTitleFemale>
+    <ideoDescription>Na Queda, todas as armas falharam, menos a mente. Os herdeiros do antigo Império cantam em uníssono psíquico, e quem rege o coro é sempre a voz mais poderosa. Títulos passam de pai para filho, porque o talento, como a nobreza, está no sangue.\n\nToda mente é uma voz, e a maioria desafina. Os vassalos pagam o dízimo do Coro: impostos, cerimônias intermináveis e as crianças mais sensíveis, levadas para "treinamento vocal". Poucas voltam, mas todas afinadas.</ideoDescription>
+    <icon>EQ_Icon_Coro</icon>
+    <color>EQ_IdeoColor_Coro</color>
+    <deities>
+      <li>
+        <nameType><name>A Primeira Voz</name><type>Fundadora do Coro</type></nameType>
+        <gender>Female</gender>
+        <iconPath>UI/Deities/DeityGeneric</iconPath>
+      </li>
+      <li>
+        <nameType><name>O Eco Imperial</name><type>Memória do Império Caído</type></nameType>
+        <gender>Male</gender>
+        <iconPath>UI/Deities/DeityGeneric</iconPath>
+      </li>
+    </deities>
+    <precepts>
+      <!-- Cargos -->
+      <li><def>IdeoRole_Leader</def><name>Maestro Supremo</name></li>
+      <li><def>IdeoRole_Moralist</def><name>Mestre de Cerimônias</name></li>
+      <!-- Rituais -->
+      <li><def>Funeral</def><name>Réquiem</name></li>
+      <li><def>Conversion</def><name>Afinação</name></li>
+      <li><def>LeaderSpeech</def><name>Concerto Solene</name></li>
+      <!-- A mente -->
+      <li MayRequire="VanillaExpanded.VMemesE"><def>VME_Leader_BestPsycaster</def></li>
+      <li MayRequire="VanillaExpanded.VMemesE"><def>VME_PsyfocusGain_Doubled</def></li>
+      <li MayRequire="VanillaExpanded.VMemesE"><def>VME_PsychicSensitivity_Heightened</def></li>
+      <li MayRequire="VanillaExpanded.VMemesE"><def>VME_Meditation_Exquisite</def></li>
+      <!-- A nobreza -->
+      <li MayRequire="VanillaExpanded.VMemesE"><def>VME_Royalty_Exalted</def></li>
+      <li MayRequire="VanillaExpanded.VMemesE"><def>VME_TitleInheritance_Inherited</def></li>
+      <li MayRequire="VanillaExpanded.VMemesE"><def>VME_PermitHonorCost_Halved</def></li>
+      <li MayRequire="VanillaExpanded.VMemesE"><def>VME_Expectations_High</def></li>
+      <!-- A parte horrível: o dízimo -->
+      <li><def>ChildLabor_Encouraged</def></li>
+      <li><def>Slavery_Acceptable</def></li>
+      <li><def>Execution_RespectedIfGuilty</def></li>
+    </precepts>
+    <leaderFirstNameMale>Serafim</leaderFirstNameMale>
+    <leaderFirstNameFemale>Serafina</leaderFirstNameFemale>
+    <leaderNickname>Fá Imperial</leaderNickname>
+    <leaderLastName>Dellacroce</leaderLastName>
+  </EcosDaQueda.IdeoTemplateDef>
+
+</Defs>
