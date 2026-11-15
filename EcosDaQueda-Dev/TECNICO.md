@@ -125,6 +125,29 @@ Armadilhas descobertas:
 - **`pawnGroupMakers Inherit="False"` é obrigatório**, senão as listas do pai são somadas.
 - Mechs (Mech_Militor, Pikeman, Lancer, Scyther) entram direto nas `options` do grupo Combat da Forja.
 
+## Ideologias fixas por arquivo (`Ideos/*.rid`)
+
+- **Fonte:** o usuário monta a ideologia no editor do jogo e salva; o `.rid` vai para `EcosDaQueda-Dev/ideologias/rid/`. `ideologias/ideologias.json` só troca nomes e textos (identidade, descrição, divindades, sala de culto e preceitos por chave `"<def>|<nome atual>"`). `python -X utf8 -I EcosDaQueda-Dev/scripts/ideologias.py` gera `Mods/EcosDaQueda/Ideos/<saida>.rid` e avisa se uma chave não bate mais ou se sobrou nome com cara de automático.
+- **Em jogo:** `IdeoTemplateDef.ideoFile` → `IdeoTemplateApplier.TryApplyFile`: `GameDataSaveLoader.TryLoadIdeo(caminho)` + `loaded.CopyTo(ideoDaFacção)` (mesmo caminho do botão "carregar" do editor). Mantém o objeto `Ideo` da facção, então os pawns já gerados continuam apontando para ele. Se o arquivo falhar, cai no modelo antigo por campos.
+- **Cuidados:** `TryLoadIdeo` usa o `Scribe`; se um save está carregando (`Scribe.mode != Inactive`), a aplicação é adiada para o primeiro `WorldComponentUpdate`. Não chamar `Precept_Role.RecacheActivity()` na criação do mundo (ainda não há facção do jogador → NullReference). O `.rid` lista os mods no cabeçalho e referencia defs deles: sem o modpack completo, preceitos de mods ausentes dão erro.
+- FactionDefs das menores usam `fixedIdeo` + `forcedMemes` coerentes com o arquivo, só para a ideologia provisória (antes da cópia) ser válida.
+- Facção sem assentamento: `MinorFactionExtension.noSettlements` + postfix em `FactionGenerator.NewGeneratedFaction(PlanetLayer, FactionGeneratorParms)` (o jogo cria 1 assentamento para toda facção visível, mesmo com `settlementGenerationWeight` 0).
+
+## Facções menores
+
+`Defs/Factions/EQ_MinorFactions.xml`: herdam direto de `OutlanderFactionBase` (não de `EQ_MainFactionBase`), então não entram em ideologia fixa, cargos, `ReputationSettingsDef.factions` nem serviços. O que as liga às potências é só `EQ_FactionRelations.xml`.
+- `FactionRelationPresetDef.Involves(def)` + `WorldComponent_Reputation.Record`: alvo que não é potência mas aparece nas relações fixas não ganha registro próprio, só propaga às potências pelo goodwill entre elas.
+- Não usar `<hidden>true</hidden>`: `EQUtil.IsProxy` trata facção oculta como proxy do Hegemony (sem relações nem reputação).
+- `MinorFactionExtension.playerGoodwill`: boa vontade inicial com o jogador, aplicada uma vez por facção em `WorldComponent_FactionRelations.ApplyPlayerGoodwill` (no tick, porque na criação do mundo a facção do jogador pode não existir). `FactionDef` não tem campo de boa vontade inicial.
+- Herdar de `PirateBandBase` (o próprio def `Pirate` do jogo) traz também o que outros mods acrescentam aos piratas por patch (ex.: `VFEE_Deserter_Warlord`), porque patches rodam antes da herança. Por isso o Sindicato do Saque define `pawnGroupMakers Inherit="False"`.
+- Ataque com poucos pontos falha (`executou=False` com 150): a facção precisa ter um grupo cujo pawn mais barato caiba nos pontos.
+- **Facções de terceiros fora do mundo:** `EQWorldFactions.Apply()` (chamado no construtor estático de `EcosDaQuedaStartup`, depois dos defs) zera `requiredCountAtGameStart`, `startingCountAtWorldCreation` e `maxConfigurableAtWorldCreation` de todo `FactionDef` humano, visível, não-jogador e de fora do mod, menos os de `WorldFactionsDef.keepFactions`; `removeHiddenFactions` tira ocultas específicas. Saves antigos não mudam. Cuidado em testes: `Find.FactionManager.RandomEnemyFaction()` agora pode devolver a colmeia (não humana); usar `allowNonHumanlike: false`.
+- **Missões/eventos de facção removida:** `WorldFactionsDef.disabledQuests` (zera `rootSelectionWeight` + prefix em todo `QuestScriptDef.CanRun`) e `disabledIncidents` (zera `baseChance` + prefix em `IncidentWorker.CanFireNow`/`TryExecute`). Necessário porque o Royalty dispara `GiveQuest_Intro_Deserter` mesmo sem Império e o `QuestNode_Raid` estoura com facção nula. As demais missões do Royalty usam qualquer facção com favor real, inclusive as nossas.
+- **Assentamento móvel (Feira Andante):** `VEF.Planet.MovingBaseDef` (campos `baseFaction`, `ticksPerMove`, `initialSpawnCount`, `initialSpawnScalesWithPopulation`, `attackConfirmationMessage`); o VEF cria os objetos num postfix de `FactionGenerator.NewGeneratedFaction`. A classe `VFEMedieval.MerchantGuild` (VFE Medieval 2) dá o comportamento: para 5–30 dias (`StayInPlace`), viaja 20–30 tiles (`TryStartPathing`), é `ITrader` e gera mapa de ataque pelo `KCSG.CustomGenOption` do **FactionDef** (por isso a Feira tem essa extensão apontando para `VFEM2_MerchantFactionBase`). O `TraderKind` dela é fixo no código; `Patch_MerchantGuild_TraderKind` (por reflexão, só com o mod ativo) troca pelo `MinorFactionExtension.movingBaseTrader`. `noSettlementsIfMovingBase` zera o peso de assentamentos e remove o inicial só quando existe um MovingBaseDef para a facção.
+- **Texto de def de terceiros em PT-BR:** patch de XML em `label`/`description` é sobrescrito pela tradução do jogo; usar `Languages/PortugueseBrazilian/DefInjected/<Tipo>/*.xml` no nosso mod (ex.: `EQ_Insect.xml`). Conferir com `deftext`.
+- Ghoul de facção: PawnKind filho de `MutantBase` com `<mutant>Ghoul</mutant>` e `defaultFactionDef` nosso; bestas de carne (`Fingerspike`, `Toughspike`, `Trispike`) entram direto nas opções do `pawnGroupMaker`.
+- Xeno sem `.xtp`: lista `genes` direto no `xenotipos.json`.
+
 ## PawnKinds
 
 - Bases vanilla usadas: `MercenaryMidTierBase`, `MercenaryEliteBase`, `MercenaryEliteTierBase`, `UnderthrallBase` (Horaxian, Anomaly), `MechanitorBase` (Biotech).
@@ -170,7 +193,18 @@ Para descobrir outro: `[xml]$x=Get-Content Mods\<id>\About\About.xml; $x.ModMeta
 
 `NerveSpiker`, `Flamethrower` (Incinerator), `VWEB_BioferriteWeapon`, `LaserGun`, `Coilgun`, `SpacerGun`, `MakeshiftGun`, `BeamGraserGun`, `GrenadeTox`, `EltexStaff`, `IndustrialGunAdvanced`, `Gun`.
 
-## Xenotipos disponíveis
+## Xenotipos próprios (`Defs/Xenotypes/EQ_Xenotypes.xml`, gerado)
+
+As potências usam **só xenotipos nossos** (`EQ_Xeno_*`); os do jogo e dos mods ficam fora das facções, do Soro e da ideologia.
+- **Fonte:** os genes vêm dos `.xtp` salvos no editor de xenotipo do jogo pelo usuário, copiados para `EcosDaQueda-Dev/xenotipos/xtp/`; defName, textos, herança, `combatPowerFactor` e padrões ficam em `xenotipos/xenotipos.json`.
+- **Gerar:** `python -X utf8 -I EcosDaQueda-Dev/scripts/xenotipos.py` na raiz do jogo (`--genes` lista os genes com rótulo e mod de origem). Cada gene de mod ganha `MayRequire` com o packageId de quem o define; genes de aptidão (`Aptitude*_<Skill>`, `VRE_AptitudePhenomenal_*`) são gerados por `GeneTemplateDef` e o script os reconhece pelo modelo. **Não editar o XML à mão.**
+- **Padrões x elites:** padrões são hereditários (endogenes). Elites não são (xenogenes) e trazem `doubleXenotypeChances` com os padrões aceitos, somando 1; o `PawnGenerator` aplica o padrão e depois o elite por cima (`SetXenotype` não limpa endogenes), mecanismo vanilla do Sanguófago. Sem C# para NPCs.
+- **Facções:** `xenotypeSet` da FactionDef só com padrões (vale para emissários, aprendizes, líderes sem xeno próprio e PawnKinds de outros mods). PawnKinds de elite usam `useFactionXenotypes=false` + `xenotypeSet` próprio somando 1 (o jogo completa a soma com Baseliner).
+- **Soro:** sucesso troca só os xenogenes (o padrão fica); falha dá o Lote Descontinuado, hereditário, que limpa os endogenes antes (`EQXenotypeUtil.ClearEndogenesKeepingColors`, mantém cor de pele/cabelo).
+- **Mundo todo:** `Patch_PawnGenerator_GenerateGenes` (Prefix, `Xenotypes.cs`) troca **qualquer xeno que não seja `EQ_`** (Baseliner e os de outros mods) por um padrão sorteado de `EQ_WorldXenotypes` (`Defs/Xenotypes/EQ_WorldXenotypes.xml`: Vagante 80%, Esquelético 15%, Antigo 5%). Exceções: lista `keepXenotypes` do mesmo def (Sanguophage, por causa das missões do Biotech; androides do VRE Android), `ForcedXenotype` e `ForcedCustomXenotype` (xeno personalizado do jogador). Os XenotypeDefs de terceiros continuam existindo (editor, xenogermes, preceitos); só não são mais gerados em pawns.
+- **Teste:** `tests/xenotipos.txt` (perfil full); comando `xenogen <PawnKind|fac:nome> [n]` conta xeno, padrão (`EQXenotypeUtil.GuessBase`) e gênero.
+
+## Xenotipos de terceiros disponíveis (não usados pelas potências)
 
 Vanilla: Baseliner, Dirtmole, Genie, Hussar, Sanguophage, Neanderthal, Pigskin, Impid, Waster, Yttakin, Highmate, Starjack.
 Alpha Genes: AG_Fleetkind, AG_Helixien, AG_Animusen, AG_Lapis, AG_Wretch, AG_Taukai, AG_Hiveling, AG_MindDevourer, AG_Efreet, AG_Drakonori, AG_Nereid, AG_Forsaken.

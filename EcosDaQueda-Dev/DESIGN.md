@@ -36,6 +36,9 @@ O jogador pode:
 
 ## Ideologias fixas (roleplay)
 
+**Desde 2026-11-15 as ideologias das 6 facções vêm dos arquivos que o usuário montou no editor do jogo** (`EcosDaQueda-Dev/ideologias/`). A tabela abaixo descreve a versão anterior, feita por modelo; vale como referência de tom, mas o conteúdo real (memes, preceitos, ícone, cor) é o do arquivo.
+
+
 Decisão do usuário: o mod tem **uma história e um padrão**, não variação a cada partida. Cada facção tem sempre a mesma ideologia: nome, ícone, cor, divindades, regras (preceitos), cargos, rituais e líder fundador. Definido em `Mods/EcosDaQueda/1.7/Defs/EQ_IdeoTemplates.xml` e aplicado pelo C# (`WorldComponent_IdeoTemplates`).
 
 | | Silêncio | Hélice | Forja | Coro |
@@ -47,9 +50,82 @@ Decisão do usuário: o mod tem **uma história e um padrão**, não variação 
 | Divindades | O Revisor; A Nota de Rodapé | O Acionista Majoritário | O Fabricante Original; A Assistência Técnica | A Primeira Voz; O Eco Imperial |
 | Cargos | Arquivista-Mor, Revisor Supremo | Diretor Executivo, Gerente de Compliance, Executivo de Vendas, Geneticista-Chefe | Engenheiro-Primaz, Inspetor de Garantia, Mestre Mecânico | Maestro Supremo, Mestre de Cerimônias |
 | Rituais | Arquivamento Final (funeral), Revisão por Pares (conversão), Palestra Magna | Encerramento de Contrato, Onboarding Compulsório, Reunião de Acionistas, Feira de Lançamento | Descomissionamento, Atualização de Firmware, Leitura do Manual | Réquiem, Afinação, Concerto Solene |
-| Regras principais | estudo do vazio muito eficiente, rituais psíquicos exaltados, pesquisa muito rápida, **proibido socializar (voto de silêncio)**, luz negra, combate no escuro, biblioteca obrigatória, escrever livros exaltado | xenotipos preferidos Highmate/Genie/Hussar, só modificação biológica, tanques de crescimento essenciais, comércio obrigatório e preços melhores, expectativas altas | mecanoides exaltados, trabalho mecanoide melhorado, torres automáticas exaltadas, bioimplantes aprovados, qualidade de fabricação, automação, veículos, drogas só medicinais | líder = psíquico mais forte, psyfocus dobrado, sensibilidade psíquica, meditação, realeza exaltada, títulos hereditários, permissões mais baratas, expectativas altas |
+| Regras principais | estudo do vazio muito eficiente, rituais psíquicos exaltados, pesquisa muito rápida, **proibido socializar (voto de silêncio)**, luz negra, combate no escuro, biblioteca obrigatória, escrever livros exaltado | xenotipos preferidos Edição Executiva/Protótipo Premium/Edição Compliance, só modificação biológica, tanques de crescimento essenciais, comércio obrigatório e preços melhores, expectativas altas | mecanoides exaltados, trabalho mecanoide melhorado, torres automáticas exaltadas, bioimplantes aprovados, qualidade de fabricação, automação, veículos, drogas só medicinais | líder = psíquico mais forte, psyfocus dobrado, sensibilidade psíquica, meditação, realeza exaltada, títulos hereditários, permissões mais baratas, expectativas altas |
 | Parte horrível (regras) | escravidão aceitável, execução indiferente, uso de órgãos aceitável, intolerância religiosa | escravidão e órgãos aceitáveis ("versão base") | androides são ferramentas, intolerância religiosa | trabalho infantil incentivado, escravidão aceitável, execução respeitada |
 | Líder fundador | Ottavio/Ottavia "Rodapé" Kessling | Valério/Valéria "Premium" Sandoval | Bartolomeu/Bartolomeia "Chave-Inglesa" Ferraz | Serafim/Serafina "Fá Imperial" Dellacroce |
+
+## Xenotipos próprios (implementado)
+
+Decisão do usuário: o modpack usa **espécies próprias**, não as do jogo nem dos mods (os genes podem vir de mods). O usuário monta os xenos no editor do jogo; o mod os converte (ver TECNICO.md › Xenotipos próprios).
+
+**Padrões (hereditários):** a linhagem de nascimento.
+
+| Padrão | Quem |
+|---|---|
+| Vagante | humano comum do mundo |
+| Vagante Esquelético | vagante mutado pelo acúmulo tóxico |
+| Humano Antigo | linhagem de antes da poluição (rara) |
+| Graxeiro | exclusivo da Irmandade da Forja |
+| Corista | exclusivo do Coro Ascendente |
+| Lote Descontinuado | falha da Hélice; o defeito é hereditário (escravos da Hélice e falha do Soro) |
+
+**Elites (não hereditários):** modificação aplicada por cima de um padrão obrigatório; os filhos nascem só com o padrão.
+
+| Potência | Elite → unidade | Padrões aceitos (peso) |
+|---|---|---|
+| Silêncio | Anotado → voluntário de pesquisa; Escriba Silente → acólito; Guardião Velado → guardião da contenção; Arquivista Pálido → arquivista-mor | Vagante 60%, Esquelético 30%, Antigo 10% |
+| Hélice | Modelo Base → estagiário; Edição Compliance → fiscal; Protótipo Premium → protótipo; Edição Executiva → diretor | idem |
+| Forja | Cavaleiro de Ferro → cavaleiro (85%); **Engenheiro-Primaz** (supersoldado, só homens) → cavaleiro (15%); Técnico Autorizado → técnico | Graxeiro 70%, Vagante 25%, Antigo 5% |
+| Coro | Tenor de Guerra → tenor; Soprano → soprano; Sangue Maestro (só mulheres) → maestro supremo | Corista 70%, Vagante 25%, Antigo 5% |
+
+Aprendiz da Forja, corista do Coro, emissários e o líder da Forja (o usuário ainda vai criar o xeno do líder) saem só com o padrão da facção. Cavaleiro de Ferro e Engenheiro-Primaz são só masculinos; Sangue Maestro só feminino (genes do Alpha Genes).
+
+**Mundo todo:** só existem as nossas espécies. Colonos iniciais, outras facções e gente sem facção que seriam Baseliner ou de um xenotipo de outro mod (Pigskin, Hussar, Saurid…) nascem Vagante (80%), Vagante Esquelético (15%) ou Humano Antigo (5%). Exceções: androides (máquinas; a Forja tem uma questão com eles) e sanguófagos (missões do Biotech dependem deles).
+
+## Facções menores (fase 1 implementada)
+
+Não são potências: sem ideologia fixa, cargos, Fama/Infâmia própria nem serviços. Existem para dar um inimigo próprio a uma potência. Defs em `Defs/Factions/EQ_MinorFactions.xml` e `Defs/PawnKinds/EQ_MinorPawnKinds.xml`.
+
+| | Os Fora de Linha | Os Não Catalogados |
+|---|---|---|
+| defName | `EQ_Faction_ForaDeLinha` | `EQ_Faction_NaoCatalogados` |
+| Quem são | androides despertos em células terroristas | aberrações que fugiram das celas do Silêncio |
+| Inimigo permanente | Irmandade da Forja ("recall contra terrorismo") | Ordem do Silêncio ("caça ao acervo") |
+| Outras relações | Hélice +10 | Coro -80 (hostil), Hélice -20 |
+| Com o jogador | neutra no início; dá para se aliar | neutra no início; dá para se aliar |
+| Membros | androides do VRE Android (80% despertos, 20% básicos) | linhagens hereditárias **Brotado** (40%), **Açoite** (30%), **Farpado** (15%) e Vagante Esquelético (15%); o líder é **Matriz do Ninho** (não hereditário, por cima de uma linhagem) |
+| Unidades | unidade autônoma, técnico de sabotagem (PEM e explosivos), agente de rescisão, unidade zero (líder) | extraviado, olheiro do escuro, dilacerador, primeiro espécime (líder), devorador (ghoul), bestas de carne |
+| Mapa | sem assentamentos | poucos ninhos (peso 0,35), tecnologia neolítica |
+| Ideologia (do usuário) | **O Protocolo Zero**: Coletivista, Saqueador, Corte de Sangue, Nacionalista; androides respeitados; líder = melhor lutador | **A Carne sem Verbete**: Culto da Carne, Canibal, Inumano, Ritualista, Dor é Divina; divindade O Pai-Carne |
+| Sátira | falam como central de atendimento: atentado é "chamado aberto" | o nome foi dado pelo Silêncio; recusar catalogação é "infração bibliográfica" |
+| Parte horrível | os atentados matam graxeiros comuns, "peças do sistema" | comem gente; os ninhos crescem com prisioneiros |
+
+**Mais duas facções menores (2026-11-15):**
+
+| | A Feira Andante | O Sindicato do Saque |
+|---|---|---|
+| defName | `EQ_Faction_FeiraAndante` | `EQ_Faction_SindicatoDoSaque` |
+| Papel | comércio; a facção mais amigável | saqueadores espalhados; os primeiros ataques da partida |
+| Com o jogador | começa em +60 | inimiga permanente (nunca faz paz) |
+| Com as potências | +35 com as quatro ("vende para todo mundo") | hostil a todos |
+| Membros | Vagante 80%, Esquelético 10%, Humano Antigo 10% | Vagante 65%, Vagante Esquelético 35% |
+| Unidades | as dos Forasteiros do jogo (aldeão, guarda, comerciante) | as dos piratas do jogo, em grupos próprios; grupo "só andarilhos e catadores" até 700 pontos |
+| Mapa | muitos entrepostos (peso 1,3) | muitas sedes e piquetes (peso 1,3) |
+| Ideologia | sorteada, sempre com Comerciante, nunca Saqueador/Supremacista/Canibal | sorteada, sempre Supremacista e Saqueador |
+| Sátira | "o cliente tem sempre razão, enquanto tiver prata" | saqueadores que fundaram um sindicato: assalto com ata e piso salarial |
+| Parte horrível | o fiado vira servidão por dívida | atacam qualquer um; resistir é "prática antissindical" |
+
+**Feira móvel:** com o VFE Medieval 2, a Feira Andante não tem assentamento fixo. São 8 feiras (escala com a população do mundo) que ficam paradas de 5 a 30 dias num ponto do mapa-múndi e depois viajam 20 a 30 tiles. Dá para visitar com caravana e negociar (estoque de assentamento de forasteiros) ou atacar (vira inimiga). Caravanas e visitantes da Feira continuam chegando à colônia normalmente.
+
+**Insectoides:** mantida a facção `Insect` do jogo, que o VFE Insectoids 2 transforma em facção visível com colmeias, ondas, linhagens e chefes (o VFE altera essa facção pelo nome; uma nova perderia tudo). História própria: **a colmeia sem recall**, um inseto criado em laboratório antes da Queda para devorar mecanoides, que devorou também o laboratório e a empresa. A Hélice nega a patente e cobra royalties; a Forja diz que é defeito de outra marca, fora da garantia; o Silêncio tentou catalogar a rainha. O nome exibido ("Sorne Geneline") continua sorteado pelo VFE.
+
+**O mundo só tem as nossas facções (2026-11-15):** tribos, forasteiros e piratas do jogo, das DLCs e de outros mods (Alpha Genes, VFE Pirates, Saurid, Guilda dos Comerciantes do Odyssey) e os mercadores ambulantes do VFE Medieval 2 não são mais gerados. Ficam: as 4 potências, as 5 facções menores, a colmeia e as ocultas do jogo (mecanoides, entidades, culto de Horax, anciões, catadores). O **Império** e os Desertores também saíram, e as missões/eventos que dependem deles foram desligados.
+
+**Reputação:** o que o jogador faz com uma facção menor repercute nas potências pela relação delas: ajudar os Fora de Linha dá Infâmia com a Forja; hostilizar os Não Catalogados dá Fama com o Silêncio e o Coro.
+
+**Fase 2 (planejada, não implementada):** o sistema dos Desertores (VFE Deserters) é preso ao Império no código (44 referências), então o modelo será refeito nos nossos sistemas:
+- Fora de Linha: **Exposição** perante a Forja (como a visibilidade), **dados de diagnóstico** como moeda (como a inteligência), missões de sabotagem (como as tramas), serviços da rede, opção de trair a célula.
+- Não Catalogados: expedições de coleta do Silêncio contra os ninhos, contrato de contenção aceitando Não Catalogados capturados, missões de defesa/resgate pelos Não Catalogados, contra-ataque com evento de entidades.
 
 ## Relações desejadas (ainda NÃO implementadas — fase 2)
 
@@ -114,7 +190,7 @@ Por cargo: preços com a potência +0/3/5/8/10/13/15%; estipêndio a cada 10 dia
 | Forja | **Acionar a garantia** (posto 2; 300 prata → reforço militar com mechs; 12 d) | **Kit de peças originais** (posto 3; 800 prata → 3 componentes avançados + 60 plastaço; 20 d) |
 | Coro | **Serenata** (posto 1; 250 prata → +10 de humor para todos por 6 dias; 15 d) | **Coro de guerra** (posto 3; 500 prata → reforço militar com psíquicos; 15 d) |
 
-**O Soro** (`EQ_Soro`): item de uso único; reescreve o xenotipo para um de elite aleatório (Hussar, Genie, Highmate, Drakonori, Efreet, Helixien, Saurid, Lycan, Uhlan). 25% de chance de "versão alternativa" (Pigskin, Waster, Dirtmole, Neanderthal, Wretch, Fungoid).
+**O Soro** (`EQ_Soro`): item de uso único; aplica um xeno do catálogo da Hélice (Modelo Base, Edição Compliance, Protótipo Premium, Edição Executiva) por cima do padrão de quem toma. 25% de chance de "versão alternativa": o Lote Descontinuado, que é hereditário e reescreve a linhagem.
 
 **Retaliação-assinatura** (potência hostil + título com chance de caçadores; 50% das vezes vem isto em vez da invasão):
 - Silêncio — "Experimento de campo": enxame de cambaleantes, bestas de carne, ladrões de visão ou ghouls.

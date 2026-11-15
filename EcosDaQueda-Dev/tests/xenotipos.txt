@@ -1,0 +1,22 @@
+# Xenotipos próprios: padrões hereditários + elites não hereditários por cima de um padrão.
+# Rodar com -Profile full (genes do Alpha Genes / VRE).
+newgame
+
+deftext XenotypeDef EQ_Xeno_Vagante
+deftext XenotypeDef EQ_Xeno_EngenheiroPrimaz
+
+# Cada unidade sai com o xeno certo e, se for elite, com um padrão por baixo.
+xenogen fac:silencio 30
+xenogen fac:helice 30
+xenogen fac:forja 30
+xenogen fac:coro 30
+
+# O Soro: sucesso troca só os xenogenes; falha (Lote Descontinuado, hereditário) troca a linhagem.
+serum 10
+
+# Mundo todo: quem seria Baseliner ou xeno de outro mod sai com um padrão nosso (exceto androides e sanguófagos).
+xenogen Colonist 40
+xenogen Villager 40
+xenogen Pirate 40
+xenogen Drifter 40
+xenogen Tribal_Warrior 40

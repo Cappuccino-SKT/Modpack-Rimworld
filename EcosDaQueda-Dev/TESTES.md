@@ -32,6 +32,11 @@
 | `letters` ; `choose <trecho do título> <nº da opção>` | lista cartas (com opções) e escolhe uma opção |
 | `give <ThingDef> <qtd>` ; `prisoner` | cria itens na área de casa; cria um prisioneiro |
 | `serum <n>` | um colono toma n doses do Soro |
+| `cecheck [armas\|melee\|roupas\|veiculos]` | compatibilidade com o Combat Extended: lista por mod o que não tem verbo CE, ToolCE, Bulk ou projétil CE (roteiro `tests/ce-compat.txt`, perfil full) |
+| `movingbases` | assentamentos móveis (VEF MovingBase): dono, tile, parada/andando, estoque, se aceita negociar |
+| `factions` | lista todas as facções do mundo: def, mod de origem, oculta, assentamentos, tecnologia, relação com o jogador |
+| `faction <fac>` ; `raid <fac> [pontos]` | descreve qualquer facção (líder, assentamentos, ideologia, relações fixas); força um ataque dela à colônia e conta quem veio |
+| `xenogen <PawnKind>` ou `xenogen fac:<nome> [n]` | gera n pawns (padrão 20) e conta xenotipo, padrão por baixo (endogenes) e gênero; marca PROBLEMA se elite sem padrão ou xeno de fora |
 | `retaliate <fac>` ; `gift <fac>` ; `tribute <fac>` | força retaliação, presente, tributo |
 | `signature <fac> [run]` | diagnóstico dos incidentes-assinatura |
 | `incident <IncidentDef>` ; `save <nome>` ; `timeout <seg>` ; `quit` | utilidades |

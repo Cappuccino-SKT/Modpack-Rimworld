@@ -1,0 +1,12 @@
+# O mundo só com as nossas facções; Feira Andante móvel; história dos insetos.
+# Rodar com -Profile full.
+newgame
+factions
+faction feiraandante
+movingbases
+deftext FactionDef Insect
+
+# A feira anda: depois de alguns dias, parte delas mudou de lugar.
+wait 15d
+movingbases
+factions

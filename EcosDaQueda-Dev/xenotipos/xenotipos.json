@@ -1,0 +1,249 @@
+{
+  "_leia": "Fonte dos xenotipos do Ecos da Queda. Genes vêm do .xtp (editor de xenotipo do jogo) em xtp/; o resto vem daqui. 'bases' = padrões sorteados por baixo de um xeno não hereditário (doubleXenotypeChances; somar 1). Gerar: python -X utf8 -I scripts/xenotipos.py Xeno sem .xtp usa a lista 'genes' daqui.",
+  "basesGrupo": {
+    "comum": {
+      "EQ_Xeno_Vagante": 0.6,
+      "EQ_Xeno_VaganteEsqueletico": 0.3,
+      "EQ_Xeno_HumanoAntigo": 0.1
+    },
+    "forja": {
+      "EQ_Xeno_Graxeiro": 0.7,
+      "EQ_Xeno_Vagante": 0.25,
+      "EQ_Xeno_HumanoAntigo": 0.05
+    },
+    "coro": {
+      "EQ_Xeno_Corista": 0.7,
+      "EQ_Xeno_Vagante": 0.25,
+      "EQ_Xeno_HumanoAntigo": 0.05
+    },
+    "naocatalogados": {
+      "EQ_Xeno_NC_Brotado": 0.45,
+      "EQ_Xeno_NC_Acoite": 0.35,
+      "EQ_Xeno_NC_Farpado": 0.2
+    }
+  },
+  "xenotipos": [
+    {
+      "xtp": "Vagante",
+      "defName": "EQ_Xeno_Vagante",
+      "label": "vagante",
+      "inheritable": true,
+      "descriptionShort": "O humano comum de um mundo que já acabou algumas vezes: estômago de ferro, pele de papel e coragem por falta de opção.",
+      "description": "O humano padrão das terras devastadas. Gerações comendo o que encontram e respirando o que sobrou deixaram um estômago que digere quase tudo, uma pele que rasga com qualquer coisa e uma tolerância a toxinas suficiente para não morrer no primeiro vento ruim.\n\nNinguém projetou os vagantes. Eles simplesmente continuaram existindo, o que as potências consideram um defeito de mercado e uma oportunidade de matéria-prima."
+    },
+    {
+      "xtp": "Vagante Esquelético",
+      "defName": "EQ_Xeno_VaganteEsqueletico",
+      "label": "vagante esquelético",
+      "inheritable": true,
+      "descriptionShort": "Vagantes que passaram tempo demais na poluição: magros, feios, imunes a toxinas e levemente viciados nelas.",
+      "description": "Vagantes cujas linhagens acumularam toxinas por tempo demais. O corpo virou um cabide de ossos, o rosto afundou e o organismo passou a absorver poluição como outros absorvem sol. Ficam animados perto de lixo tóxico, o que ninguém acha saudável, nem eles.\n\nAs potências os chamam de \"lote de teste ambiental\". Eles se chamam de sobreviventes, quando conseguem lembrar a palavra."
+    },
+    {
+      "xtp": "Humano Antigo",
+      "defName": "EQ_Xeno_HumanoAntigo",
+      "label": "humano antigo",
+      "inheritable": true,
+      "descriptionShort": "Linhagem de antes da poluição: aprende rápido, mas o corpo não aguenta o mundo atual. Peça de museu que anda.",
+      "description": "Descendentes raros de quem viveu antes da Queda, preservados em criptas, bunkers ou pura teimosia. Aprendem rápido e têm mãos precisas, mas o estômago, a pele e a fertilidade não foram feitos para um mundo envenenado. O genoma recessivo some nos filhos mestiços.\n\nO Silêncio quer estudá-los, a Hélice quer patenteá-los e a Forja quer o manual de instruções deles. Ninguém pergunta o que eles querem."
+    },
+    {
+      "xtp": "Graxeiro",
+      "defName": "EQ_Xeno_Graxeiro",
+      "label": "graxeiro",
+      "inheritable": true,
+      "descriptionShort": "O humano padrão da Irmandade da Forja: sujo, fedido, aguenta calor e fumaça e tem dedos feitos para engrenagens.",
+      "description": "Nascidos e criados nas oficinas da Irmandade da Forja, os graxeiros carregam no sangue gerações de fumaça, óleo e turnos dobrados. Toleram calor e poluição, sentem menos dor e têm dedos longos que alcançam o parafuso que ninguém alcança. Também deixam marca de graxa em tudo que tocam e têm um cheiro que a Irmandade descreve como \"aroma de produtividade\".\n\nPara a Forja, todo graxeiro é um aprendiz em potencial. Para o manual, todo graxeiro é uma peça de reposição em potencial."
+    },
+    {
+      "xtp": "Corista",
+      "defName": "EQ_Xeno_Corista",
+      "label": "corista",
+      "inheritable": true,
+      "descriptionShort": "O humano padrão do Coro Ascendente: bonito, afinado e psiquicamente sensível. Péssimo de briga, ótimo de etiqueta.",
+      "description": "A linhagem cultivada pelo Coro Ascendente ao longo de gerações de casamentos arranjados por timbre. Coristas são bonitos, sociáveis e psiquicamente sensíveis, ouvem a Primeira Voz com mais clareza e se ofendem com mais facilidade. Em compensação, a pele é fina e a mão não sabe segurar uma arma sem parecer que segura um leque.\n\nCrianças coristas mais sensíveis costumam ser \"convidadas\" para o treinamento vocal. O convite não aceita recusa."
+    },
+    {
+      "xtp": "Lote Descontinuado",
+      "defName": "EQ_Xeno_LoteDescontinuado",
+      "label": "lote descontinuado",
+      "inheritable": true,
+      "combatPowerFactor": 1.2,
+      "descriptionShort": "O que sobra quando a atualização genética da Hélice falha: forte, incansável, deformado e, infelizmente, hereditário.",
+      "description": "Produto oficialmente retirado do catálogo do Concílio da Hélice. O Lote Descontinuado é o resultado de atualizações que falharam no meio da instalação: um corpo grande, forte, que não dorme nem sente dor, coberto de tumores, incapaz de falar e com fome de tudo. Põe ovos. Ninguém sabe por quê, nem o departamento de pesquisa.\n\nAo contrário dos produtos premium, o defeito é hereditário. A Hélice resolve isso classificando os portadores como \"ativos descontinuados\" e vendendo-os a preço de sucata."
+    },
+    {
+      "xtp": "Escriba Silente",
+      "defName": "EQ_Xeno_Escriba",
+      "label": "escriba silente",
+      "inheritable": false,
+      "bases": "comum",
+      "descriptionShort": "Modificação da Ordem do Silêncio: enxerga no escuro, não dorme e aprende rápido. Odeia luz, gente e conversa.",
+      "description": "O pacote de modificações padrão dos acólitos da Ordem do Silêncio Perpétuo. O escriba enxerga no escuro, vive bem em cavernas, não precisa dormir e aprende com uma velocidade que deixaria qualquer orientador orgulhoso. O crânio alongado acomoda a bibliografia. A pele queima sob luz forte, o corpo é frágil e a coragem nunca foi um requisito do programa.\n\nA modificação não é hereditária: os filhos de um escriba nascem com a linhagem comum e precisam se candidatar à bolsa como todo mundo."
+    },
+    {
+      "xtp": "Arquivista Palido",
+      "defName": "EQ_Xeno_Arquivista",
+      "label": "arquivista pálido",
+      "inheritable": false,
+      "bases": "comum",
+      "combatPowerFactor": 1.4,
+      "descriptionShort": "A modificação dos altos arquivistas do Silêncio: psíquico extremo, longevo e alimentado por hemogen. Pálido como papel velho.",
+      "description": "Reservada aos arquivistas de maior titulação, esta modificação estende a vida, amplia a sensibilidade psíquica a níveis perigosos e acelera o aprendizado. O custo é a dependência de hemogen, uma pele branca como papel de arquivo e olhos vermelhos de quem leu demais no escuro.\n\nOs arquivistas dizem que o hemogen é \"doado por voluntários de pesquisa\". Os voluntários não foram ouvidos para a revisão."
+    },
+    {
+      "xtp": "Anotado",
+      "defName": "EQ_Xeno_Anotado",
+      "label": "anotado",
+      "inheritable": false,
+      "bases": "comum",
+      "descriptionShort": "O \"voluntário\" padrão do Silêncio: regenera, não se irrita, não se reproduz e quebra fácil. Feito para durar até a próxima publicação.",
+      "description": "Aplicada nos voluntários de pesquisa da Ordem do Silêncio, esta modificação garante que a cobaia se cure rápido (às vezes rápido demais), permaneça calma diante de qualquer experimento e não deixe descendentes para reclamar depois. O corpo é delicado de propósito: facilita a coleta de amostras.\n\nCada anotado recebe um número de catálogo e um conjunto de notas de rodapé tatuadas. Nenhuma delas é o nome dele."
+    },
+    {
+      "xtp": "Guardião Velado",
+      "defName": "EQ_Xeno_Velado",
+      "label": "guardião velado",
+      "inheritable": false,
+      "bases": "comum",
+      "combatPowerFactor": 1.3,
+      "descriptionShort": "Modificação dos guardas de contenção do Silêncio: surdo psíquico, enorme e brutal no corpo a corpo. Imune ao que sussurra nas celas.",
+      "description": "Os guardas das celas de contenção da Ordem do Silêncio precisam de uma única qualidade: não ouvir o que está preso lá dentro. A modificação os torna psiquicamente surdos, robustos, agressivos e enormes, com pele reforçada e talento para contenção física. Pensar nunca fez parte da descrição do cargo.\n\nOs arquivistas confiam nos guardiões velados porque eles não entendem o que vigiam. Os guardiões velados confiam nos arquivistas porque não entendem nada."
+    },
+    {
+      "xtp": "Modelo Base",
+      "defName": "EQ_Xeno_ModeloBase",
+      "label": "modelo base",
+      "inheritable": false,
+      "bases": "comum",
+      "descriptionShort": "O plano gratuito do Concílio da Hélice: bonito, otimista, um pouco blindado e envelhecendo rápido. Atualize para remover.",
+      "description": "A modificação de entrada do Concílio da Hélice, implantada em estagiários e clientes do plano gratuito. Deixa a pessoa mais bonita, otimista e resistente à dor, com uma leve camada de proteção na pele. O envelhecimento acelerado e a instabilidade progressiva são \"recursos exclusivos das versões pagas\" para remover.\n\nO contrato de uso tem uma cláusula de renovação automática. O botão de cancelar fica no setor de descarte."
+    },
+    {
+      "xtp": "Edição Compliance",
+      "defName": "EQ_Xeno_Compliance",
+      "label": "edição compliance",
+      "inheritable": false,
+      "bases": "comum",
+      "combatPowerFactor": 1.2,
+      "descriptionShort": "Modificação dos fiscais de linhagem da Hélice: imune a ácido e doença, aprende rápido, atira bem e não tem amigos.",
+      "description": "A edição usada pelos fiscais de linhagem do Concílio da Hélice, encarregados de encontrar genes piratas e linhagens sem licença. Imunidade forte, imunidade a ácido, pele reforçada e aprendizado rápido. O humor oscila entre a paz interior e a explosão, e a habilidade social foi removida para evitar conflitos de interesse.\n\nEstéreis por política da empresa: um fiscal não pode ter herdeiros que precisem ser fiscalizados."
+    },
+    {
+      "xtp": "Protótipo Premium",
+      "defName": "EQ_Xeno_Premium",
+      "label": "protótipo premium",
+      "inheritable": false,
+      "bases": "comum",
+      "combatPowerFactor": 1.8,
+      "descriptionShort": "A elite de combate da Hélice: gigante, blindado, regenerativo e imparável. Garantia de 90 dias, sem cobertura para uso em combate.",
+      "description": "O carro-chefe militar do Concílio da Hélice. O protótipo premium é gigante, tem metabolismo de arquito, blindagem pesada, cicatrização absurda, resistência ao fogo e uma agressividade que o marketing chama de \"proatividade\". Não para por dor, não para por ferimento e não para por ordem, às vezes.\n\nEnvelhece rápido e é estéril: a Hélice prefere vender a próxima unidade a deixá-la nascer de graça."
+    },
+    {
+      "xtp": "Edição Executiva",
+      "defName": "EQ_Xeno_Executiva",
+      "label": "edição executiva",
+      "inheritable": false,
+      "bases": "comum",
+      "combatPowerFactor": 1.5,
+      "descriptionShort": "A modificação dos diretores da Hélice: belíssimo, longevo, calmo e carismático. Requer assinatura mensal de luciferium.",
+      "description": "Reservada à diretoria do Concílio da Hélice. A edição executiva entrega beleza angelical, corpo perfeito, vida extraordinariamente longa, cura acelerada e um carisma notável. A calma é total, a surdez psíquica protege contra manipulação e a coragem é garantida por contrato.\n\nO produto depende de luciferium. A Hélice chama isso de \"modelo de receita recorrente\" e garante que os diretores nunca esqueçam por que estão do lado dos acionistas."
+    },
+    {
+      "xtp": "Cavaleiro de Ferro",
+      "defName": "EQ_Xeno_Cavaleiro",
+      "label": "cavaleiro de ferro",
+      "inheritable": false,
+      "bases": "forja",
+      "combatPowerFactor": 1.4,
+      "descriptionShort": "Modificação dos cavaleiros da garantia da Forja: blindados, agressivos, resistentes ao fogo e lentos. Feitos para caber na armadura.",
+      "description": "A modificação dos cavaleiros da garantia da Irmandade da Forja. O corpo é ajustado ao padrão da armadura \"tamanho único\": imunidade forte, pele blindada, resistência ao fogo, pouca dor e muita agressividade. Atiram e lutam bem, andam devagar e não leem o manual. Recitam.\n\nSó homens passam pelo processo: a Irmandade alega \"compatibilidade com o molde\". O molde nunca foi atualizado."
+    },
+    {
+      "xtp": "Técnico Autorizado",
+      "defName": "EQ_Xeno_Tecnico",
+      "label": "técnico autorizado",
+      "inheritable": false,
+      "bases": "forja",
+      "descriptionShort": "Modificação dos mecanitores da Forja: mais banda para mechs, cérebro de engenheiro e braços de quem nunca carregou nada.",
+      "description": "A certificação genética dos técnicos autorizados da Irmandade da Forja. Amplia a banda de controle de mecanoides, acelera o aprendizado, dá talento intelectual e de fabricação e corta a sensibilidade psíquica para evitar \"interferência não homologada\". Em troca, o técnico não sabe atirar nem bater, e tem certeza de que é melhor que você.\n\nVem de série com a habilidade de chamar uma centopeia. Ninguém sabe se é um recurso ou um bug."
+    },
+    {
+      "xtp": "Engenheiro-Primaz",
+      "defName": "EQ_Xeno_EngenheiroPrimaz",
+      "label": "engenheiro-primaz",
+      "inheritable": false,
+      "bases": "forja",
+      "combatPowerFactor": 2.2,
+      "descriptionShort": "O supersoldado da Forja: um gigante blindado, imparável e incansável que só sabe atirar e bater. Instabilidade letal inclusa.",
+      "description": "O ápice militar da Irmandade da Forja e prova de que o Fabricante Original nunca leu o capítulo de efeitos colaterais. O engenheiro-primaz é um gigante calvo de pele negra como óleo, sangue ácido, blindagem pesada, imunidade total, regeneração, nenhuma dor, nenhum sono e uma agressividade que exige guarda. Atira e luta como ninguém; para todo o resto é inútil.\n\nO corpo envelhece rápido, depende de luciferium e carrega uma instabilidade genética letal. A Irmandade chama isso de \"vida útil programada\" e garante a troca durante o período de garantia."
+    },
+    {
+      "xtp": "Tenor de Guerra",
+      "defName": "EQ_Xeno_Tenor",
+      "label": "tenor de guerra",
+      "inheritable": false,
+      "bases": "coro",
+      "combatPowerFactor": 1.2,
+      "descriptionShort": "Modificação de combate do Coro: forte, robusto e agressivo no corpo a corpo. Não sabe atirar; canta enquanto trucida.",
+      "description": "A modificação dos tenores de guerra do Coro Ascendente. Corpo robusto, golpes fortes, pele reforçada e a agressividade necessária para levar a harmonia até quem não a pediu. Não sabe usar armas de fogo: o Coro considera o tiro uma forma vulgar de interromper uma melodia.\n\nTenores são estéreis. A linhagem é para coristas; a guerra é para descartáveis afinados."
+    },
+    {
+      "xtp": "Soprano",
+      "defName": "EQ_Xeno_Soprano",
+      "label": "soprano",
+      "inheritable": false,
+      "bases": "coro",
+      "combatPowerFactor": 1.5,
+      "descriptionShort": "A arma psíquica do Coro: absorve energia psíquica e dispara rajadas de insanidade. Extremamente sensível e permanentemente pessimista.",
+      "description": "O Coro Ascendente transforma suas vozes mais sensíveis em artilharia. A soprano tem sensibilidade psíquica extrema, absorve energia psíquica ao redor e pode soltar uma rajada de insanidade sobre quem estiver ouvindo. O sangue fica azul, a imunidade fica forte e o humor nunca mais melhora.\n\nMuitas sopranos foram crianças levadas pelo dízimo psíquico. O Coro chama isso de \"bolsa integral de canto\"."
+    },
+    {
+      "xtp": "Sangue Maestro",
+      "defName": "EQ_Xeno_SangueMaestro",
+      "label": "sangue maestro",
+      "inheritable": false,
+      "bases": "coro",
+      "combatPowerFactor": 1.8,
+      "descriptionShort": "A modificação da aristocracia do Coro, só em mulheres: psíquica magistral, longeva, belíssima e hemofágica. Tem um terceiro olho.",
+      "description": "A modificação reservada às maestrinas da aristocracia do Coro Ascendente, aplicada apenas em mulheres. Dá poder psíquico magistral, visão psíquica, um terceiro olho, meditação passiva, beleza angelical e uma vida extraordinariamente longa. Exige hemogen, sono de morte e a certeza absoluta de que todos os outros estão desafinados.\n\nO sangue é azul por padrão. O Coro garante que isso é genética, não decoração. É as duas coisas."
+    },
+    {
+      "xtp": "Não Catalogado 1",
+      "defName": "EQ_Xeno_NC_Brotado",
+      "label": "brotado",
+      "inheritable": true,
+      "combatPowerFactor": 1.1,
+      "descriptionShort": "Não catalogado de carne inchada que vive de luz como uma planta. Robusto, enxerga no escuro e pega fogo com facilidade.",
+      "description": "A linhagem mais comum dos Não Catalogados. A carne torcida cresce em bolsas que guardam o que o corpo não usa, e a pele aprendeu a se alimentar de luz como a dos cambaleantes que a Ordem do Silêncio estudava na cela ao lado. O rosto deixou de ser rosto faz gerações.\n\nSão robustos, sentem pouca dor e enxergam no escuro, mas queimam fácil. Na ficha da Ordem constavam como \"espécime vegetativo, baixo risco\". A ficha foi comida junto com o arquivista."
+    },
+    {
+      "xtp": "Não Catalogado 2",
+      "defName": "EQ_Xeno_NC_Acoite",
+      "label": "açoite",
+      "inheritable": true,
+      "combatPowerFactor": 1.3,
+      "descriptionShort": "Não catalogado com chicote de carne e cuspe ácido, meio morto por dentro. Os caçadores dos ninhos.",
+      "description": "Os caçadores dos ninhos. Do corpo torcido sai um chicote de carne que alcança mais longe que um braço, e da garganta um cuspe que corrói. Por dentro já são meio mortos: o coração bate por hábito, e ferimentos que derrubariam outra pessoa só os deixam mais lentos.\n\nA Ordem do Silêncio os classificava como \"espécime agressivo, manusear com vara\". Os açoites guardam as varas como troféu."
+    },
+    {
+      "xtp": "Não Catalogado 3",
+      "defName": "EQ_Xeno_NC_Farpado",
+      "label": "farpado",
+      "inheritable": true,
+      "combatPowerFactor": 1.5,
+      "descriptionShort": "Não catalogado coberto de espinhos de osso e chifres-tentáculo. Forte, instável e explode em carne quando morre.",
+      "description": "A linhagem mais rara e mais instável. O corpo se cobriu de espinhos de osso, da cabeça saem chifres que se mexem sozinhos, e a carne está tão cheia de pressão que estoura quando o farpado morre, levando junto quem estiver perto.\n\nBatem forte, quase não sentem dor e não vivem muito: a instabilidade genética é grave. A Ordem do Silêncio nunca conseguiu manter um vivo por tempo suficiente para terminar o artigo."
+    },
+    {
+      "xtp": "Não Catalogado Lider",
+      "defName": "EQ_Xeno_NC_Matriz",
+      "label": "matriz do ninho",
+      "inheritable": false,
+      "bases": "naocatalogados",
+      "combatPowerFactor": 2.2,
+      "descriptionShort": "A modificação de quem comanda um ninho: carne blindada, um bolsão cinzento fora do mundo, mortos que se levantam e um xenogerme para passar adiante.",
+      "description": "Não se nasce matriz. Quando um ninho perde quem o comanda, a matriz antiga reimplanta o próprio xenogerme no escolhido, e o resto do ninho come o que sobrar dela.\n\nA matriz tem a carne blindada, cura rápido, bate como ninguém e carrega os arquitos que o Pai-Carne roubou da cela. Abre um bolsão cinzento fora do mundo para esconder o que é do ninho, faz brotar bulbos de carne e levanta os mortos para lutar outra vez. Fora isso, não sabe fazer nada, e acha que não precisa.\n\nA Ordem do Silêncio daria uma ala inteira do arquivo por uma matriz viva. Já perdeu três expedições tentando."
+    }
+  ]
+}

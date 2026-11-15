@@ -1,0 +1,28 @@
+# Facções menores: Os Fora de Linha (androides x Forja) e Os Não Catalogados (aberrações x Silêncio).
+# Rodar com -Profile full.
+newgame
+
+# Existem no mundo, com líder, ideologia fixa (Ideos/*.rid) e as relações fixas.
+# Os Fora de Linha não têm assentamento.
+faction foradelinha
+faction naocatalogados
+
+# Unidades saem com o xeno certo (androide / linhagens dos Não Catalogados; líder = Matriz sobre uma linhagem).
+xenogen fac:foradelinha 20
+xenogen fac:naocatalogados 20
+
+# Reputação: mexer com a facção menor repercute na potência inimiga dela.
+rep forja add 0 0
+goodwill foradelinha 30
+rep forja add 0 0
+rep silencio add 0 0
+goodwill naocatalogados -30
+rep silencio add 0 0
+
+# Ataques de verdade no mapa.
+raid naocatalogados 900
+wait 2h
+raid foradelinha 900
+wait 1d
+# Depois de um dia, a facção sem assentamento continua viva.
+faction foradelinha

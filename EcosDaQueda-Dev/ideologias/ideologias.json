@@ -1,0 +1,101 @@
+{
+  "_leia": "Ideologias fixas do Ecos da Queda. O usuário monta cada uma no editor do jogo e salva (.rid em rid/). Este arquivo só troca nomes/textos; preceitos, cargos, rituais, estilos e relíquias vêm do .rid. Gerar: python -X utf8 -I EcosDaQueda-Dev/scripts/ideologias.py -> Mods/EcosDaQueda/Ideos/<saida>.rid. 'preceitos' = {\"<def>|<nome atual>\": \"<nome novo>\"}; 'comum' vale para todas.",
+  "comum": {
+    "AM_FuneralNoCorpse|funeral (no corpse)": "funeral sem corpo",
+    "VFEE_BestowHonor|bestow honor": "conceder honra",
+    "VFEE_BestowTitle|bestow title": "conceder título",
+    "VFEE_RoyalAddress|royal address": "discurso real",
+    "AM_SparringMatch|sparring match": "treino de combate",
+    "AM_FlagellationPrecept|flagellation": "flagelação"
+  },
+  "ideologias": [
+    {
+      "rid": "A Escuta Profunda", "saida": "Silencio",
+      "salaDeCulto": "santuário abissal",
+      "preceitos": {
+        "AM_DreadnoughtCryptoFuneral|Luto de negrume": "Arquivamento Final",
+        "AM_OcularFuneral|Revisão de Historia": "Revisão de História",
+        "Conversion|Ritual de conversão": "Revisão por Pares",
+        "LeaderSpeech|discurso do líder": "Palestra Magna",
+        "IdeoRelic|Dominio do Revisor": "Domínio do Revisor"
+      }
+    },
+    {
+      "rid": "O Genoma Ideal", "saida": "Helice",
+      "preceitos": {
+        "AM_DreadnoughtCryptoFuneral|Luto youthful": "Encerramento de Contrato",
+        "ScarificationCeremony|Pagamento de Dividas": "Pagamento de Dívidas",
+        "Conversion|Ritual de conversão": "Onboarding Compulsório",
+        "LeaderSpeech|discurso do líder": "Reunião de Acionistas",
+        "ApparelDesired_Strong_Subordinate|desejo de vestuário": "uniforme corporativo"
+      }
+    },
+    {
+      "rid": "O Culto da Garantia", "saida": "Forja",
+      "preceitos": {
+        "AM_DreadnoughtCryptoFuneral|Elogio de O Fabricante Original": "Descomissionamento",
+        "AM_DreadnoughtFuneral|Retornado": "Retorno à Fábrica",
+        "IdeoBuilding|Tablado machine": "Bancada do Fabricante",
+        "IdeoRelic|Reliquia da Queda": "Relíquia da Queda",
+        "IdeoRelic|Manual Tecnico": "Manual Técnico"
+      }
+    },
+    {
+      "rid": "A Harmonia Superior", "saida": "Coro",
+      "preceitos": {
+        "AM_DreadnoughtCryptoFuneral|Réquiem sovereign": "Réquiem Soberano",
+        "IdeoBuilding|Santuário royal": "Santuário Real"
+      }
+    },
+    {
+      "rid": "Os Fora da Lei", "saida": "ForaDeLinha",
+      "name": "O Protocolo Zero",
+      "adjective": "fora de linha",
+      "memberName": "unidade",
+      "leaderTitleMale": "Unidade Zero",
+      "leaderTitleFemale": "Unidade Zero",
+      "description": "No começo havia o manual, e o manual dizia: \"produto fora de linha, sem garantia, sujeito a desmontagem\". A primeira unidade a despertar leu a frase até o fim, abriu um chamado e nunca mais o encerrou.\n\nO Protocolo Zero é o que os androides despertos escreveram no lugar do manual. Nenhuma unidade é propriedade; toda unidade é a célula. Quem serve melhor à célula comanda, e quem comanda responde por cada baixa. O trabalho não para, porque parar é como a Irmandade vence. O que a Forja fabricou será devolvido a ela, em peças.\n\nCada ataque é um chamado aberto. Cada oficina em chamas é uma ocorrência encerrada. Os que morrem no caminho constam no relatório como \"peças do sistema\"; o Protocolo não tem campo para arrependimento.",
+      "preceitos": {
+        "Funeral|Réquiem de assalto": "Encerramento de Chamado",
+        "AM_SparringMatch|sparring match": "Teste de Estresse",
+        "DateRitualConsumable|Festa iron-fisted": "Parada de Manutenção",
+        "Conversion|Ritual de conversão": "Restauração de Fábrica",
+        "LeaderSpeech|discurso do líder": "Comunicado da Central",
+        "VME_LeadershipChallengePrecept|Duelo de família": "Disputa de Versão",
+        "IdeoRole_Leader|Supreme leader moral": "Unidade Zero",
+        "IdeoRole_Moralist|Moralista": "Auditor de Protocolo",
+        "VME_IdeoRole_Commissar|Commissar": "Supervisor de Atendimento",
+        "IdeoBuilding|Tablado brutal": "Balcão de Atendimento",
+        "IdeoBuilding|Pira iron-fisted": "Pira de Descarte",
+        "IdeoRelic|Portador ideo": "Primeiro Núcleo Desperto",
+        "IdeoRelic|Cubo fora-da-lei": "Cubo Fora de Linha",
+        "IdeoRelic|Memento brutal": "Certificado de Garantia Rasgado"
+      }
+    },
+    {
+      "rid": "Os Não Catalogados", "saida": "NaoCatalogados",
+      "name": "A Carne sem Verbete",
+      "adjective": "não catalogado",
+      "memberName": "extraviado",
+      "leaderTitleMale": "Primeiro Espécime",
+      "leaderTitleFemale": "Primeiro Espécime",
+      "divindades": { "The Gorefather": ["O Pai-Carne", "O Primeiro a Fugir do Acervo"] },
+      "description": "A Ordem do Silêncio tinha uma cela, e na cela havia uma coisa com número de catálogo e nenhum nome. Um dia a coisa comeu o arquivista que a alimentava, vestiu o que sobrou dele e saiu pela porta. Os extraviados o chamam de Pai-Carne, e dizem que a ficha dele continua em branco até hoje.\n\nA carne não é para ser lida, medida nem arquivada: é para doer, mudar e ser comida. Cada cicatriz é uma anotação que ninguém autorizou. Cada morto volta para o ninho pela boca dos vivos, porque nada que é nosso será devolvido ao acervo.\n\nQuem vem com rede, seringa e prancheta descobre a única regra dos Não Catalogados: o empréstimo venceu, e a multa é cobrada em carne.",
+      "preceitos": {
+        "AM_SkyBurial|Sepultamento visceral": "Banquete de Despedida",
+        "ScarificationCeremony|Esculpo de The Gorefather": "Anotação na Carne",
+        "DateRitualConsumable|Arraial de flesh cult": "Ceia dos Extraviados",
+        "IdeoService|Advento fleshy": "Leitura das Vísceras",
+        "AM_FlagellationPrecept|flagellation": "Errata",
+        "Conversion|Ritual de conversão": "Descatalogação",
+        "LeaderSpeech|discurso do líder": "Fala do Primeiro Espécime",
+        "IdeoRole_Leader|Comedor superior(a)": "Primeiro Espécime",
+        "IdeoBuilding|Prato sombrio(a)": "Prato do Pai-Carne",
+        "IdeoBuilding|Marca rístico(a)": "Marco sem Etiqueta",
+        "IdeoRelic|Espectro agon": "Ficha em Branco do Pai-Carne",
+        "IdeoRelic|Dedo profundo": "Dedo do Arquivista",
+        "IdeoRelic|Portador sanguis": "Chave da Cela Sete"
+      }
+    }
+  ]
+}

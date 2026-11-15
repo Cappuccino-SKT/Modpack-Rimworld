@@ -12,6 +12,23 @@ O CE já traz patches (`ModPatches/<mod>`, carregados por `IfModActive`) para 38
 
 As nossas PawnKinds herdam de bases vanilla (`MercenaryEliteBase`, `MercenaryMidTierBase`…) que o CE já patcheia com `CombatExtended.LoadoutPropertiesExtension` (munição no inventário). Como patches rodam antes da herança, nossos filhos ganham munição sem nada extra. PawnKind sem esse pai precisa da extensão.
 
+## Verificação de compatibilidade (2026-11-15)
+
+Teste `tests/ce-compat.txt` (perfil full), comando `cecheck [armas|melee|roupas|veiculos]`: varre os defs carregados com os mesmos critérios dos autopatchers do CE (arma de fogo sem `VerbPropertiesCE`, golpe que não é `ToolCE`, roupa sem `Bulk`/`WornBulk`, torre de veículo sem `ProjectilePropertiesCE`).
+
+Resultado com os 115 mods: **256 armas de fogo, 271 itens com golpes, 187 roupas/armaduras e 14 torres de veículo já compatíveis; nenhuma incompatibilidade real.** Os 54 itens apontados são todos esperados:
+
+- **48 do jogo/DLCs** (camiseta, calça, chapéus, coroas, roupas eltex, direcionadores orbitais; feixe de graser, canhão de esfera infernal, torre de espuma): o próprio CE os trata e deixa sem volume/verbo CE de propósito.
+- `VFEI_TurretArmoredShuttle` (VFE Empire): o CE troca a torre da nave por `VFEI_TurretArmoredShuttle_CE`; o def original fica órfão.
+- `AB_Turret_Propane_Gun` (Alpha Biomes): lança-chamas com `VEF.Weapons.FlamethrowProjectile`, coberto pelo módulo VEFCompat do CE (dano de fogo, sem munição).
+- `AM_Apparel_Eyepatch` (Alpha Memes), `VAEI_Apparel_Gag`/`VAEI_Apparel_StraitJacket` (VAE Insanity), `VPE_HeatPearls` (VPE): pano/utilitário sem armadura, mesmo tratamento que o CE dá à venda e aos direcionadores do jogo.
+
+**Veículos:** o CE carrega o módulo `VehiclesCompat` (log: "CE: Loading Mod Part - VehiclesCompat", "Installing Vehicle Framework"), o Vehicle Framework aplica o próprio patch para o CE, e há `ModPatches` para o VVE e o VVE Upgrades. Os 23 veículos do VVE e as 14 torres usam projéteis do CE.
+
+O CE só tem pasta `<v1.6>` no `LoadFolders.xml`; no 1.7 o jogo usa essa mesma pasta (ver TECNICO.md › pastas de versão). Autopatchers de arma e roupa do CE ficam **desligados** por padrão; não precisamos deles.
+
+Mod novo com arma/roupa: rodar o teste de novo; o que aparecer fora das categorias "jogo/DLC" precisa de patch.
+
 ## Arma de fogo — `CombatExtended.PatchOperationMakeGunCECompatible`
 
 Converte um `ThingDef` de arma num só passo. Campos: `defName`, `statBases` (`Mass`, `Bulk`, `RangedWeapon_Cooldown`, `SightsEfficiency`, `ShotSpread`, `SwayFactor`), `Properties` (o verbo `VerbPropertiesCE`), `AmmoUser` (`magazineSize`, `reloadTime`, `ammoSet`), `FireModes` (`aiUseBurstMode`, `aiAimMode`, `aimedBurstShotCount`, `noSingleShot`, `noSnapshot`), `weaponTags` (ex.: `CE_AI_Rifle`, `CE_OneHandedWeapon`), `costList`, `researchPrerequisite`, `texPath`, `isWeaponPlatform`.

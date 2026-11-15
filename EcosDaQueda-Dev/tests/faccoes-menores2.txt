@@ -1,0 +1,17 @@
+# Facções menores, parte 2: A Feira Andante (comércio, amigável) e O Sindicato do Saque (saqueadores).
+# Rodar com -Profile full.
+newgame
+wait 1h
+
+# Feira: amigável com o jogador (60) e com as 4 potências; Sindicato: hostil a todos.
+faction feiraandante
+faction sindicatodosaque
+
+xenogen Villager 5
+factions
+
+# Primeiro ataque: o Sindicato vem com gente fraca quando os pontos são baixos.
+raid sindicatodosaque 300
+wait 2h
+raid sindicatodosaque 1200
+wait 2h
