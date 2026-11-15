@@ -1,0 +1,14 @@
+load Test
+timeout 900
+allegiance
+leader show
+wait 3h
+allegiance
+letters
+wait 1h
+allegiance
+services
+leader set 0
+wait 1h
+allegiance
+letters

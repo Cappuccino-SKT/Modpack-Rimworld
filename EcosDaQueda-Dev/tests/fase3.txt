@@ -1,0 +1,55 @@
+# Fase 3: cerimônia de submissão com emissário, cargos do líder, favor, promoção, sucessão e transferência.
+newgame
+timeout 600
+leader show
+# sem líder e sem preço: bloqueado
+ceremony helice
+leader set 0
+ceremony helice
+give Silver 1500
+ceremony helice
+quest Contrato
+allegiance
+accept Contrato
+ceremony await
+ceremony status
+ceremony start
+wait 4h
+ceremony status
+# a hora cheia detecta o cargo e faz o juramento; o preço (800 de prata + sangue do líder) foi cobrado
+wait 2h
+dump
+letters
+# favor: só o líder recebe; eventos temáticos da Hélice
+favor event SerumUsed 1
+favor event TradeSilver 1200
+favor 3
+quests
+accept Avalia
+ceremony await
+ceremony status
+ceremony start
+wait 4h
+allegiance
+letters
+# transferência de liderança (troca do líder da ideologia)
+leader other
+# sucessor e morte do líder
+leader successor
+leader kill
+wait 300
+allegiance
+# sem sucessor: fica aguardando escolha
+leader kill
+wait 300
+allegiance
+leader set 0
+allegiance
+due stipend
+due tithe
+wait 2h
+letters
+choose Mensalidade 0
+allegiance
+services
+renounce

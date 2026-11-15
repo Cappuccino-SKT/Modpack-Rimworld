@@ -1,0 +1,17 @@
+# Cerimonia do Silencio: preco = 1 prisioneiro + 300 de prata
+newgame
+leader set 0
+give Silver 400
+ceremony silencio
+prisoner
+ceremony silencio
+accept Banca
+ceremony await
+# o prisioneiro de teste não tem cela e some; cria outro na hora
+prisoner
+ceremony start
+wait 6h
+dump
+letters
+favor event ResearchFinished 2
+allegiance

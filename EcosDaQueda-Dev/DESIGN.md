@@ -14,7 +14,7 @@ RimWorld pós-apocalíptico **inspirado em Fallout**, mas **sem trazer a histór
 Há gerações, uma guerra entre um Império e um enxame mecanoide queimou o planeta. Sobreviventes se esconderam em abrigos antigos (Vanilla Quests Expanded – Ancients). Hoje o mundo é um deserto poluído (poluição do Biotech, Wasters, Waste Animals) disputado por quatro potências.
 
 O jogador pode:
-1. **Entrar** numa das 4 facções e subir de posto (via vassalagem/fealty do Hegemony + sistema próprio de postos na fase 2);
+1. **Entrar** numa das 4 facções por uma cerimônia de submissão e subir de cargo com o líder do assentamento;
 2. **Fundar a própria facção** e disputar território (Hegemony);
 3. **Ficar independente**, jogando umas contra as outras.
 
@@ -74,22 +74,38 @@ Fama e Infâmia separadas com cada potência (estilo New Vegas). Título = níve
 
 Chances por verificação (a cada 3 dias), no máximo 1 evento por facção a cada 8 dias. Presentes e tributos só de facções não hostis; caçadores de recompensa só de hostis.
 
-## Postos e lealdade (implementado)
+## Submissão, líder e cargos (implementado)
 
-Entrar = jurar lealdade (fealty) à potência pelo Hegemony. Posto pela Fama com ela (0 / 60 / 150 / 300). Estipêndio a cada 10 dias; dízimo por carta de escolha (2 dias para responder; ignorar = recusa). Quantidades do dízimo multiplicam pelo número do posto. Sair = +50 Infâmia (além da traição do Hegemony).
+Fama e Infâmia são do **assentamento**. Cargo e favor são do **líder** (o líder da ideologia do jogador).
 
-| | Postos | Estipêndio (do 1º ao 4º) | Dízimo |
-|---|---|---|---|
-| Silêncio | Voluntário de Pesquisa → Pesquisador Associado → Catedrático do Vazio → Arquivista Sênior | bioferrite 15→80, remédio, fragmentos (shard) | **Bolsa de Pesquisa** (15 dias): entregar prisioneiro (+12 Fama), 150 prata (+4) ou recusar |
-| Hélice | Cliente Básico → Assinante Premium → Acionista → Membro do Conselho | remédio, pacotes de hemogen, remédio glitterworld, neutroamina | **Mensalidade Genética** (15 dias): 200 prata (+6), ceder prisioneiro "versão base" (+10) ou cancelar |
-| Forja | Aprendiz de Manutenção → Técnico Licenciado → Cavaleiro da Garantia → Engenheiro-Mestre | aço, componentes, plastaço, componentes avançados | **Dízimo Tecnológico** (15 dias): 3 componentes (+8), 250 prata (+3) ou recusar |
-| Coro | Ouvinte → Corista → Solista → Regente | prata, ouro, jade | **Dízimo Psíquico** (30 dias): enviar um colono, de preferência criança e psiquicamente sensível, para o "treinamento vocal" (+25), 15 de ouro (+5) ou recusar. Nunca leva o último colono |
+**Entrar:** aba Reputação › "Cerimônia" da potência. Exige líder na colônia, o preço disponível e a potência não hostil. Vira uma missão; aceita, um emissário chega de nave com escolta, o jogador clica nele para iniciar o ritual com o líder e os espectadores, e ao fim o emissário recolhe o preço (se faltar, a cerimônia é recusada). O líder recebe o 1º cargo, e o Hegemony registra a vassalagem (tributo do Hegemony incluso). Uma potência por vez. Sair = independência pelo Hegemony (traição) + 50 de Infâmia; o cargo é cassado.
 
-Postos 2–4 também dão preços +5/+10/+15% com a própria potência (somados ao título de reputação).
+| | Silêncio | Hélice | Forja | Coro |
+|---|---|---|---|---|
+| Submissão | Banca de Admissão | Assinatura do Contrato de Adesão | Rito de Ativação da Garantia | Audição Solene |
+| Preço | 1 prisioneiro ("voluntário inaugural") + 300 prata | 800 prata + sangue do líder (perda de sangue) | 12 componentes + 150 aço | 40 ouro + 400 prata |
+| Promoção | Defesa de Tese | Avaliação de Desempenho | Inspeção de Certificação | Recital de Ascensão |
+| Emissário | arguidor silente | representante comercial | inspetor de garantia | mestre de cerimônias |
+| Favor | citações | ações preferenciais | selos de garantia | aplausos |
+| Como ganhar | +1 por pesquisa concluída ("publicação"); contrato de contenção +3; bolsa: prisioneiro +3, prata +1 | +1 a cada 500 de prata negociados com o Concílio; Soro +2; xenogerme implantado +1; mensalidade +2, prisioneiro +3 | +1 a cada 3 itens excelentes fabricados; obra-prima +2; dízimo: componentes +3, prata +1 | +1 por ritual concluído ("concerto"); dízimo: colono +8, ouro +2 |
+| Cargos (1→7) | Voluntário de Pesquisa, Assistente de Campo, Pesquisador Associado, Doutor em Vazio, Catedrático do Vazio, Arquivista Sênior, Parecerista Anônimo | Cliente Básico, Assinante Premium, Franqueado, Gerente Regional, Acionista, Diretor de Linhagem, Membro do Conselho | Aprendiz de Manutenção, Técnico Licenciado, Inspetor de Campo, Cavaleiro da Garantia, Paladino do Recall, Engenheiro-Mestre, Guardião do Manual | Ouvinte, Corista, Solista, Spalla, Regente, Mestre de Capela, Maestro Honorário |
+
+Favor para cada cargo: 4 (dado pela cerimônia de submissão), 6, 8, 10, 14, 18, 24. Missões da potência podem pagar em favor, e cerimônias bem assistidas dão favor extra. Todo favor ganho por qualquer colono vai para o líder.
+
+Por cargo: preços com a potência +0/3/5/8/10/13/15%; estipêndio a cada 10 dias (cresce com o cargo); dízimo com quantidades ×1,1,2,2,3,3,4. Serviços exigem o 1º, 3º ou 5º cargo.
+
+**Líder:** sem líder numa potência, o jogo obriga a escolher (janela sem fechar) entre adultos livres que seguem a ideologia e cumprem as exigências do cargo de líder dela. **Sucessor:** botão na aba; se o líder morre ou é perdido, o sucessor assume o cargo de líder da ideologia e herda cargo e favor; sem sucessor, escolha forçada. **Transferência:** trocar o líder da ideologia (ritual vanilla de troca de função) passa cargo e favor ao novo líder; uma cerimônia marcada para o antigo é cancelada e remarcada.
+
+| | Estipêndio (1º → 7º cargo) | Dízimo |
+|---|---|---|
+| Silêncio | bioferrite 15→80, remédio, fragmentos | **Bolsa de Pesquisa** (15 dias): prisioneiro, 150 prata ou recusar |
+| Hélice | remédio, hemogen, remédio glitterworld, neutroamina | **Mensalidade Genética** (15 dias): 200 prata, prisioneiro "versão base" ou cancelar |
+| Forja | aço, componentes, plastaço, componentes avançados | **Dízimo Tecnológico** (15 dias): 3 componentes, 250 prata ou recusar |
+| Coro | prata, ouro, jade | **Dízimo Psíquico** (30 dias): um colono (de preferência criança sensível), 15 ouro ou recusar. Nunca leva o último colono |
 
 ## Mecânicas por facção (implementado)
 
-**Serviços para membros** (aba Reputação › botão "Serviços"; custo em prata, posto mínimo e recarga):
+**Serviços para membros** (aba Reputação › botão "Serviços"; custo em prata, cargo mínimo e recarga; "posto 1/2/3" abaixo = 1º/3º/5º cargo):
 
 | Potência | Serviço 1 | Serviço 2 |
 |---|---|---|

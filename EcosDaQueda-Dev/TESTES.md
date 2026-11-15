@@ -7,8 +7,9 @@
 - Abre `RimWorld.exe -Headless -savedatafolder=<perfil isolado> -eqtest=<roteiro> -eqout=<relatório>`; o mod `EcosDaQuedaDebug` (`TestRunner.cs`) executa os comandos e fecha o jogo.
 - Perfil **lean** (padrão): Harmony, DLCs, VEF, VIE Memes, Alpha Memes, VPE, Jaeger Framework, Hegemony, Ecos da Queda e o mod de debug. Jogo novo pronto em ~25 s. Perfil **full**: todos os mods ativos do usuário.
 - Perfis ficam em `test-profile/` (descartável). Relatórios em `tests/out/<roteiro>.<perfil>.result.txt`. Linhas `!! LOG ERROR` são erros do log durante o teste; a última linha diz `RESULTADO: SEM ERROS` ou quantos erros.
+- O executor desliga as janelas forçadas do mod (`EQLeader.SuppressDialogs`); `join <fac>` ainda força a vassalagem pelo caminho antigo (o líder recebe o 1º cargo).
 - O roteiro começa com `newgame` (cria mundo + colônia, cenário padrão) ou `load <save>` (use `-Save <nome>` para copiar o save do usuário).
-- Ruído ignorado pelo executor: "Could not find player faction" (Hegemony na criação do mundo), "Bad string pass when reading rule" (tradução PT-BR), "AsyncGPUReadback failed" (Combat Extended sem placa de vídeo).
+- Ruído ignorado pelo executor: "Could not find player faction" (Hegemony na criação do mundo), "Bad string pass when reading rule" (tradução PT-BR), "AsyncGPUReadback failed" e "Error in ParallelForEach … Combat Extended" (Combat Extended sem placa de vídeo; com muitos mods novos o perfil full sem janela acusa centenas destes: use `-Window` para a prova real).
 
 | Comando | Faz |
 |---|---|
@@ -21,6 +22,11 @@
 | `join <fac>/none/real` | força a lealdade (real = volta a ler do Hegemony) |
 | `due stipend/tithe` | faz o estipêndio/dízimo vencer na próxima hora |
 | `allegiance` ; `services` ; `service <defName>` | mostra lealdade; lista/usa serviços |
+| `ceremony <fac>` ; `ceremony cancel` | solicita / cancela a cerimônia de submissão (mostra o motivo se bloqueada) |
+| `quests` ; `quest <trecho>` ; `accept <trecho>` | lista missões; mostra o texto; aceita uma missão |
+| `ceremony await [ticks]` ; `ceremony status` ; `ceremony start` | roda até o emissário ficar pronto; mostra a etapa; inicia o ritual com todos os colonos |
+| `favor <n>` ; `favor event <tipo> [n]` | dá favor ao líder; simula um evento temático (ResearchFinished, SerumUsed, XenogermImplanted, TradeSilver, QualityCrafted, RitualFinished) |
+| `leader show/set <i>/other/successor/kill/unassign` ; `renounce` | líder: mostra candidatos, nomeia, troca, define sucessor, mata, destitui; rompe o juramento |
 | `letters` ; `choose <trecho do título> <nº da opção>` | lista cartas (com opções) e escolhe uma opção |
 | `give <ThingDef> <qtd>` ; `prisoner` | cria itens na área de casa; cria um prisioneiro |
 | `serum <n>` | um colono toma n doses do Soro |
@@ -28,7 +34,7 @@
 | `signature <fac> [run]` | diagnóstico dos incidentes-assinatura |
 | `incident <IncidentDef>` ; `save <nome>` ; `timeout <seg>` ; `quit` | utilidades |
 
-`<fac>` = `silencio`, `helice`, `forja`, `coro` (ou o defName). Roteiros existentes: `smoke`, `ideo`, `fase2`, `fase2b`, `retaliacao`, `assinatura`, `save-test`.
+`<fac>` = `silencio`, `helice`, `forja`, `coro` (ou o defName). Roteiros existentes: `smoke`, `ideo`, `fase2`, `fase2b`, `retaliacao`, `assinatura`, `fase3` (cerimônia, promoção, transferência, sucessão), `fase3-silencio`, `save-test` e `save-migracao` (estes dois com `-Profile full -Save Test`).
 
 **Não coberto pelo executor:** tudo que é visual (aba Reputação, ícones, menus) e o contrato de contenção (precisa de entidade numa plataforma).
 

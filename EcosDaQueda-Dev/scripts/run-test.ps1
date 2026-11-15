@@ -1,4 +1,4 @@
-# Roda um teste automático do Ecos da Queda, sem janela e sem tocar nos saves/config do jogador.
+﻿# Roda um teste automático do Ecos da Queda, sem janela e sem tocar nos saves/config do jogador.
 #
 # Uso:
 #   run-test.ps1 -Script ..\tests\smoke.txt                 (perfil "lean": só os mods essenciais, carrega rápido)
@@ -77,7 +77,7 @@ $log = Get-ChildItem $profileDir -Recurse -Filter Player.log -ErrorAction Silent
 if (-not $log) { $log = Get-Item (Join-Path $userData 'Logs\Player.log') -ErrorAction SilentlyContinue }
 if ($log) {
     "== log: $($log.FullName)"
-    $noise = 'Knowledge data was missing key|GAGARIN|\[Vulkan\]|NativeAllocation|hideFlags|Translation data for language|Could not find player faction|trailing whitespace|AsyncGPUReadback failed|Bad string pass when reading rule'
+    $noise = 'Knowledge data was missing key|GAGARIN|\[Vulkan\]|NativeAllocation|hideFlags|Translation data for language|Could not find player faction|trailing whitespace|AsyncGPUReadback failed|Error in ParallelForEach|Bad string pass when reading rule'
     Get-Content $log.FullName -Encoding UTF8 | Where-Object { $_ -match '^\d{4}-\d\d-\d\d .* (ERROR|WARN) ' -and $_ -notmatch $noise } |
         ForEach-Object { $_.Substring(24).Substring(0, [Math]::Min(260, $_.Length - 24)) } |
         Group-Object | Sort-Object Count -Descending | Select-Object -First 25 | ForEach-Object { "{0,5} {1}" -f $_.Count, $_.Name }

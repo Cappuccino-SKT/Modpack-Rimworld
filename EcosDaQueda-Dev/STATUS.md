@@ -2,27 +2,22 @@
 
 _Atualizar este arquivo ao fim de cada etapa._
 
-## Onde estamos (2026-11-13)
+## Onde estamos (2026-11-14)
 
-Fase 1 (XML) e ajustes (ideologias fixas, ícones/cores) **concluídos e confirmados pelo usuário**.
+Fases 1 e 2 concluídas. **Fase 3 feita e testada pelo executor (0 erros), falta a conferência visual do usuário:** submissão por cerimônia, líder do assentamento e cargos por favor. Ver DESIGN.md › Submissão, líder e cargos.
 
-**Fase 2 em andamento — etapa 1 feita (não testada em jogo):**
-- Relações fixas entre as 4 potências (`1.7/Defs/EQ_FactionRelations.xml`): Silêncio×Coro ódio mortal (permanente, paz vetada no Hegemony), Silêncio×Forja guerra, Silêncio×Hélice desconfiança, Hélice×Forja rivalidade, Hélice×Coro aliança frágil, Forja×Coro neutralidade.
-- Reputação Fama/Infâmia (`1.7/Defs/EQ_Reputation.xml`) com títulos satíricos 3×3 e aba **Reputação** no menu inferior.
-- Módulo `EcosDaQueda.Hegemony.dll` (veto de paz).
-- Carregamento do jogo: **0 erros**.
+- **Cerimônia de submissão** com emissário (aba Reputação › botão "Cerimônia" de cada potência): gera uma missão; o emissário chega de nave com escolta e preside o ritual com o líder; o **preço** temático é cobrado no fim. Concluída, o mod faz o juramento de vassalagem do Hegemony sozinho. O juramento direto pelo Hegemony está bloqueado para as 4 potências.
+- **Líder do assentamento = líder da ideologia do jogador.** Só ele tem cargo e favor. Sem líder (estando numa potência ou com cerimônia pedida), abre a janela de escolha forçada. Sucessor designável (botão "Sucessor"); se o líder morre, o sucessor assume, senão o jogador escolhe. Trocar o líder da ideologia (ritual vanilla de troca de função) transfere cargo e favor.
+- **7 cargos por potência** sobre o sistema de títulos da Royalty (`RoyalTitleDef`), com favor de nome próprio: citações (Silêncio), ações preferenciais (Hélice), selos de garantia (Forja), aplausos (Coro). Promoção = juntar o favor do próximo cargo → a potência manda o emissário para a cerimônia de promoção.
+- Favor vem de fontes temáticas (pesquisa, comércio, Soro, xenogermes, fabricação de qualidade, rituais), do dízimo, de serviços, das missões da potência e da qualidade das cerimônias.
+- Estipêndio, dízimo e serviços continuam, agora pelo cargo do líder (antes era pela Fama). Fama/Infâmia continuam do assentamento.
+- Saves antigos (vassalo pelo Hegemony sem cerimônia): o líder recebe o 1º cargo.
 
-**Confirmado pelo usuário (2026-11-14):** relações aplicadas (verificado no save) e reputação funcionando — matou um membro da Forja: Infâmia com a Forja subiu e Fama com Silêncio e Hélice (inimigas da Forja, ≤ -50) subiu; Coro (neutro com a Forja) não mudou.
+**A conferir pelo usuário (visual):** aba Reputação (painel de lealdade com líder/favor/sucessor, botão "Cerimônia" em cada potência, janelas de escolha de líder e sucessor), a cena da cerimônia no mapa (clicar no emissário › iniciar o ritual), a aba de títulos do líder, e as ações do menu de debug.
 
-**Etapa 2 feita (2026-11-14, carregamento 0 erros, não testada em jogo):** efeitos da reputação — cada um dos 9 títulos altera preços no comércio com a facção e pode disparar presentes, tributos (não hostis) ou caçadores de recompensa (hostis); a aba Reputação mostra os efeitos do título atual. Ver DESIGN.md › Reputação.
+**Modpack (2026-11-14):** +10 mods da lista do usuário (RimExodus Seamless World + Framework, Trenches, Tech Advancing, YART, Door Mat, Clean Research Sort, SeedsPlease Lite Redux no lugar do Lite original que só ia até 1.4, VVE Upgrades, VQE Generator, VFE Medieval 2). 109 mods ativos, mundo novo com janela: 0 erros. Repositório git criado (ver CLAUDE.md › Versionamento).
 
-**Etapa 3 feita (2026-11-14, carregamento 0 erros, não testada em jogo):** postos na facção — jurar lealdade pelo Hegemony torna o jogador membro; 4 postos por potência pela Fama; estipêndio a cada 10 dias; dízimos por carta de escolha (entregar prisioneiro/itens/prata/colono, ou recusar); painel "Lealdade" no topo da aba Reputação. Ver DESIGN.md › Postos e lealdade. Lição: `ThingDefCountClass` em XML é `<Steel>50</Steel>`, não `<li><thingDef>…`.
-
-**Etapa 4 feita (2026-11-14, não testada em jogo):** mecânicas por facção — 8 serviços para membros (botão "Serviços" na aba Reputação), item "o Soro" (Hélice) e retaliações-assinatura quando hostil. Ver DESIGN.md › Mecânicas por facção.
-
-**Ferramentas de debug (2026-11-14):** mod `Mods/EcosDaQuedaDebug` com executor de testes sem janela (`scripts/run-test.ps1`, ver TESTES.md) e ações no menu de debug. Ativado também no ModsConfig do usuário. Testes rodados e passando (0 erros): `fase2`, `fase2b`, `retaliacao`, `save-test` (perfil full com o save do usuário). Bugs achados e corrigidos pelos testes: Infâmia em dobro ao recusar/ignorar dízimo; invasão de retaliação com pontos insuficientes em colônia nova (`raidMinPoints` 200); incidentes-assinatura nunca disparavam (`CanFireNow` recusa incidentes forçados). **Desenvolvimento do mod principal pausado a pedido do usuário** para outras modificações.
-
-**Próximas etapas da fase 2:** aprofundar mecânicas (corrupção do Silêncio, censo genético da Hélice, questão androide da Forja, conversão à distância do Coro), relações dinâmicas com o Hegemony (declarar guerras pela API).
+**Próximas ideias:** permissões/poderes por cargo (gastar favor, como as permissões do Império), nível psíquico pelos cargos do Coro, exigências por cargo (roupa, quarto), nomes temáticos na janela do ritual (hoje aparece "cerimônia de outorga"), corrupção do Silêncio, censo genético da Hélice, questão androide da Forja, conversão à distância do Coro, guerras pela API do Hegemony.
 
 ## Feito
 
@@ -52,6 +47,7 @@ Ver DESIGN.md › Sistemas planejados: relações fixas, Fama/Infâmia, postos, 
 
 | Data | Mudança |
 |---|---|
+| 2026-11-14 | Fase 3: cerimônia de submissão com emissário, líder/sucessor, 7 cargos por potência com favor (títulos da Royalty), fontes temáticas de favor; +10 mods; git. Corrigido: Highmate (incapaz de violência) saía em grupos de combate da Hélice |
 | 2026-11-14 | Mod de debug + executor de testes headless; 3 bugs corrigidos via testes |
 | 2026-11-14 | Fase 2 etapa 4: serviços (FactionServiceDef), o Soro (EQ_Soro), retaliação-assinatura (hostileIncidents) |
 | 2026-11-14 | Teste do usuário (save "Test", dia 4,6): jurou lealdade à Hélice pelo Hegemony → mod detectou (memberOf=Hélice, posto 0 Cliente Básico, aliado +75). Estipêndio (10 d) e dízimo (15 d) ainda não venceram — **não verificados em jogo** |
