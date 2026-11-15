@@ -1,5 +1,9 @@
 # Notas técnicas
 
+## Documentação dos mods do modpack
+
+Guias de frameworks, mecânicas e conteúdo, mais referência de API gerada das DLLs: `EcosDaQueda-Dev/mods/README.md`. Ferramentas: `scripts/mods-inventario.py` (inventário) e `scripts/mods-api.py` (referência de API a partir do descompilado).
+
 ## Ambiente
 
 - **RimWorld 1.7.5000 rev1275**, cópia **não-Steam**, em `C:\Users\Felipe\Desktop\RimWorld`.
@@ -45,7 +49,7 @@ Convenções: prefixo **`EQ_`** em todos os defNames; textos em PT-BR; dependên
 
 ## C# — `EcosDaQueda.dll`
 
-- Projeto: `Mods/EcosDaQueda/Source/EcosDaQueda/EcosDaQueda.csproj`, **net10.0**, referencia `Assembly-CSharp.dll`, `UnityStubs.dll`, `Waylith.dll` da raiz do jogo (Private=false). Sem Harmony por enquanto.
+- Projeto: `Mods/EcosDaQueda/Source/EcosDaQueda/EcosDaQueda.csproj`, **net10.0**, referencia `Assembly-CSharp.dll`, `UnityStubs.dll`, `Waylith.dll` da raiz do jogo (Private=false) e `0Harmony.dll` do mod Harmony (`Mods/2009463077/1.7/Assemblies`, Private=false). Patches Harmony em `HarmonyPatches.cs`/`Leadership.cs`.
 - Build: `cd Mods/EcosDaQueda/Source/EcosDaQueda; dotnet build -c Release` → `Mods/EcosDaQueda/1.7/Assemblies/EcosDaQueda.dll`.
 - `LoadFolders.xml` › `v1.7` inclui a pasta `1.7` (DLL + `1.7/Defs` com defs que usam classes do C#). No 1.6 o C# não carrega.
 - **`IdeoTemplateDef`** + **`WorldComponent_IdeoTemplates`**: no `FinalizeInit` do mundo (fim da geração do mundo e ao carregar save), aplica o modelo uma vez por facção (guarda `appliedFactionIds` no save). Aplica: nome, adjetivo, membro, títulos, descrição travada (`descriptionLocked`), `SetIcon(icon, color)`, divindades (`IdeoFoundation_Deity.SetDeities`), preceitos (cria os que faltam, troca os da mesma issue, renomeia com `SetName` + `nameLocked`, `xenotype` para PreferredXenotype) e, com `exactPrecepts`, remove preceitos/cargos/rituais não listados (nunca remove `IdeoRole_Leader`). Renomeia o líder atual da facção (nome por gênero).
