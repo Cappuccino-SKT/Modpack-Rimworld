@@ -27,6 +27,8 @@
 | `ceremony await [ticks]` ; `ceremony status` ; `ceremony start` | roda até o emissário ficar pronto; mostra a etapa; inicia o ritual com todos os colonos |
 | `favor <n>` ; `favor event <tipo> [n]` | dá favor ao líder; simula um evento temático (ResearchFinished, SerumUsed, XenogermImplanted, TradeSilver, QualityCrafted, RitualFinished) |
 | `leader show/set <i>/other/successor/kill/unassign` ; `renounce` | líder: mostra candidatos, nomeia, troca, define sucessor, mata, destitui; rompe o juramento |
+| `transexport <pasta> all\|<ids>` | exporta (inglês) todo texto traduzível dos mods ativos de terceiros; ver TECNICO.md › Tradução. Rodar com `-Profile full -Exclude ecosdaqueda.traducao` |
+| `deftext <TipoDeDef> <defName>` ; `language` ; `genegen <filtro>` ; `transerrors <filtro>` | tradução: label/descrição + de qual arquivo veio a injeção; idioma ativo; genes gerados por modelo; erros de carga/injeção |
 | `letters` ; `choose <trecho do título> <nº da opção>` | lista cartas (com opções) e escolhe uma opção |
 | `give <ThingDef> <qtd>` ; `prisoner` | cria itens na área de casa; cria um prisioneiro |
 | `serum <n>` | um colono toma n doses do Soro |

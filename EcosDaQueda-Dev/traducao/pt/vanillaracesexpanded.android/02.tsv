@@ -1,0 +1,244 @@
+## DefInjected/DamageDef/Damages_Misc.xml
+VREA_EMPBurn.label	queimadura de PEM
+VREA_EMPBurn.deathMessage	{0} foi frito por PEM até a morte.
+## DefInjected/DesignationCategoryDef/Designation.xml
+VCHE_PipeNetworks.label	redes de canos
+## DefInjected/FactionDef/Factions_Player.xml
+VREA_AndroidAwakenedUtopia.label	Nova Utopia
+VREA_AndroidAwakenedUtopia.description	Uma sociedade utópica de androides despertos.
+VREA_AndroidAwakenedUtopia.leaderTitle	líder
+VREA_AndroidAwakenedUtopia.messageDefendersAttacking	{0} de {1} estão atacando seu {2}.
+VREA_AndroidAwakenedUtopia.pawnSingular	androide desperto
+VREA_AndroidAwakenedUtopia.pawnsPlural	androides despertos
+## DefInjected/GeneCategoryDef/GeneDefs.xml
+VREA_Hardware.label	hardware
+VREA_Subroutine.label	sub-rotina
+## DefInjected/GeneDef/GeneDefs.xml
+VREA_MemoryProcessing.label	processamento de memória
+VREA_MemoryProcessing.description	Androides têm um espaço limitado no disco rígido. Quando o espaço livre acaba, o androide precisa entrar em reformatação até liberar memória suficiente para continuar.
+VREA_Power.label	energia
+VREA_Power.description	Androides precisam de um reator funcionando para operar. O reator não é recarregável: quando se esgota, é preciso instalar um novo. Androides sem reator funcionando não conseguem fazer absolutamente nada.
+VREA_JoyDisabled.label	sem recreação
+VREA_JoyDisabled.description	Androides não sentem alegria e não precisam dela.
+VREA_BeautyDisabled.label	sem beleza
+VREA_BeautyDisabled.description	Androides não percebem a beleza e não precisam estar cercados por ela.
+VREA_ComfortDisabled.label	sem conforto
+VREA_ComfortDisabled.description	Androides não entendem o conforto e não precisam dele.
+VREA_OutdoorsDisabled.label	sem ar livre
+VREA_OutdoorsDisabled.description	Androides não veem diferença entre ambiente fechado e ar livre e não precisam sair.
+VREA_DrugDesireDisabled.label	sem desejo por drogas
+VREA_DrugDesireDisabled.description	Androides não têm necessidade nem vontade de consumir drogas.
+VREA_RoomSizeDisabled.label	sem tamanho de cômodo
+VREA_RoomSizeDisabled.description	Androides não ligam para o tamanho do cômodo em que estão.
+VREA_PainDisabled.label	sem dor
+VREA_PainDisabled.description	Androides não sentem dor física, e ela não os afeta em nada.
+VREA_SyntheticBody.label	corpo sintético
+VREA_SyntheticBody.description	Androides têm um corpo sintético feito de vários biocomponentes. O dano a essas peças é permanente, mas não é difícil trocar biocomponentes danificados por novos.
+VREA_NeutroCirculation.label	circulação de neutro
+VREA_NeutroCirculation.description	Androides funcionam graças à neutroamina espessa que corre nas veias sintéticas. Ferimentos abertos e sangrando podem causar perda de neutro, o que afeta muito as capacidades do androide. Em geral, eles não conseguem repor a neutroamina sozinhos, então perdas graves de neutro precisam ser tratadas num caixão especial que reabastece o androide com neutroamina.
+VREA_SyntheticImmunity.label	imunidade sintética
+VREA_SyntheticImmunity.description	Androides são sintéticos por natureza e, por isso, não ficam doentes nem sofrem infecções de nenhum tipo. Também não acumulam toxicidade e são imunes aos efeitos do gás tóxico, do gás podre e do ambiente poluído.
+VREA_ComponentFreezing.label	congelamento de componentes
+VREA_ComponentFreezing.description	Androides não sofrem hipotermia. Em vez disso, temperaturas muito baixas podem danificar os biocomponentes, que então precisam ser trocados.
+VREA_ComponentOverheating.label	superaquecimento de componentes
+VREA_ComponentOverheating.description	Androides não sofrem insolação. Em vez disso, temperaturas muito altas aumentam a necessidade de processamento de memória, o que pode acabar levando à perda total de controle do androide, preso numa reformatação constante.
+VREA_ColdTolerant.label	tolerante ao frio
+VREA_ColdTolerant.description	Androides com este hardware resistem muito mais ao frio.
+VREA_HeatTolerant.label	tolerante ao calor
+VREA_HeatTolerant.description	Androides com este hardware resistem muito mais ao calor.
+VREA_NoSkillGain.label	sem ganho de habilidade
+VREA_NoSkillGain.description	Androides com este hardware não conseguem aprender novas habilidades naturalmente.
+VREA_Uninspired.label	sem inspiração
+VREA_Uninspired.description	Androides com este hardware não conseguem ter nenhum tipo de inspiração.
+VREA_PsychicallyDeaf.label	surdo psíquico
+VREA_PsychicallyDeaf.description	Androides com este hardware são surdos a toda energia e influência psíquica de fora da própria mente. Não podem ser afetados por influência psíquica nem usar poderes psíquicos.
+VREA_MentalBreaksDisabled.label	sem colapsos mentais
+VREA_MentalBreaksDisabled.description	Androides com este hardware não sofrem nenhum dos colapsos mentais que os orgânicos podem ter: nunca ficam atordoados, entram em fúria ou abandonam a colônia.
+VREA_PsychologyDisabled.label	sem psicologia
+VREA_PsychologyDisabled.description	Androides com este hardware não conseguem criar vínculos, ter traços nem desenvolver relacionamentos amorosos de nenhum tipo.
+VREA_SyntheticSkin.label	pele sintética
+VREA_SyntheticSkin.description	Androides com este hardware têm uma pele sintética visível, que os destaca dos orgânicos e deixa claro que são androides.
+VREA_SyntheticSkin.labelShortAdj	pele-sintética
+VREA_CombatIncapability.label	incapaz de combate
+VREA_CombatIncapability.description	Androides com esta sub-rotina são incapazes de ferir outro ser de qualquer forma. Não conseguem revidar nem caçar.
+VREA_SolarFlareVulnerability.label	vulnerabilidade a erupção solar
+VREA_SolarFlareVulnerability.description	Durante uma erupção solar, todas as necessidades do androide congelam e ele não consegue se mover nem fazer nada. Quando a erupção acaba, o androide volta a trabalhar normalmente.
+VREA_EMPVulnerability.label	vulnerabilidade a PEM
+VREA_EMPVulnerability.description	Androides são vulneráveis a dano de PEM e ficam incapacitados quando atingidos por qualquer pulso eletromagnético. O pulso também danifica biocomponentes aleatórios, conforme o tamanho dele.
+VREA_FireVulnerability.label	vulnerabilidade ao fogo
+VREA_FireVulnerability.description	Androides são vulneráveis ao fogo e param de responder quando estão em chamas. Procuram sozinhos um jeito de apagar o fogo.
+VREA_RainVulnerability.label	vulnerabilidade à chuva
+VREA_RainVulnerability.description	Androides são vulneráveis à chuva e sofrem microcurtos-circuitos de vez em quando ao ficarem expostos a ela. Isso aumenta o gasto de energia e causa explosões ocasionais que podem danificar os biocomponentes.
+VREA_SlowRAM.label	RAM lenta
+VREA_SlowRAM.description	Este androide leva o dobro do tempo para reformatar quando fica sem memória.
+VREA_FastRAM.label	RAM rápida
+VREA_FastRAM.description	Este androide leva metade do tempo para reformatar quando fica sem memória.
+VREA_ColdEfficiency.label	eficiência no frio
+VREA_ColdEfficiency.description	Androides com esta sub-rotina trabalham bem melhor abaixo de zero. Ainda podem sofrer congelamento de componentes.
+VREA_LowPowerMode.label	modo de baixo consumo
+VREA_LowPowerMode.description	Androides com esta sub-rotina têm a velocidade de trabalho e de movimento bem reduzida para poupar energia.
+VREA_HighPowerMode.label	modo de alto desempenho
+VREA_HighPowerMode.description	Androides com esta sub-rotina têm a velocidade de trabalho e de movimento bem maior, mas gastam o reator muito mais rápido.
+VREA_Uncontrollable.label	incontrolável
+VREA_Uncontrollable.description	Androides com esta sub-rotina não podem ser convocados em situação nenhuma. Não obedecem a ordens diretas e só trabalham conforme a agenda de trabalho.
+VREA_AntiAwakeningProtocols.label	protocolos antidespertar
+VREA_AntiAwakeningProtocols.description	Androides com esta sub-rotina voltam às configurações de fábrica a cada reformatação, o que impede o defeito do despertar androide.
+VREA_EmotionSimulators.label	simuladores de emoção
+VREA_EmotionSimulators.description	Androides com esta sub-rotina guardam memórias de outros colonos e formam opiniões sobre eles. Conseguem criar relacionamentos com os outros.
+VREA_PresenceFirewall.label	firewall de presença
+VREA_PresenceFirewall.description	Androides com esta sub-rotina têm um firewall que impede que outras facções e entidades detectem sua presença. Não contam para a população da colônia no limite populacional nem no tamanho das incursões.
+VREA_ZeroWaste.label	resíduo zero
+VREA_ZeroWaste.description	Androides com esta sub-rotina não geram pacotes de resíduos tóxicos quando o reator se esgota.
+VREA_ExtraWaste.label	resíduo extra
+VREA_ExtraWaste.description	Androides com esta sub-rotina geram muito mais pacotes de resíduos tóxicos quando o reator se esgota.
+VREA_SelfRecharge.label	autorrecarga
+VREA_SelfRecharge.description	Androides com esta sub-rotina conseguem trocar o próprio reator, graças a pequenas baterias internas que os mantêm funcionando no breve período sem reator.
+VREA_MemoryDecay.label	decadência de memória
+VREA_MemoryDecay.description	Androides com esta sub-rotina sofrem decadência da memória de habilidades. Com o tempo, as habilidades voltam a 0. Eles perdem 1 nível em cada habilidade a cada 15 dias. Pode ser preciso remover e reinstalar sub-rotinas para devolver as habilidades aos valores pretendidos.
+VREA_SleepMode.label	modo de suspensão
+VREA_SleepMode.description	Androides com esta sub-rotina podem receber ordem de entrar num sono profundo e sem sonhos. Todas as funções motoras param por completo, e os androides viram basicamente móveis até receberem ordem de acordar.
+VREA_MechlinkSupport.label	suporte a mecalink
+VREA_MechlinkSupport.description	Androides com esta sub-rotina têm uma presença psíquica bem fraca, o que permite equipar e operar mecalinks.
+VREA_NeutroSynthesis.label	síntese de neutro
+VREA_NeutroSynthesis.description	Androides com esta sub-rotina conseguem sintetizar pequenas quantidades de neutroamina sozinhos. Isso permite repor a perda de neutro, mas o processo é extremamente demorado e gasta muita energia.
+VREA_SolarPowered.label	movido a energia solar
+VREA_SolarPowered.description	Androides com esta sub-rotina regeneram a energia do reator sob luz direta do sol. Também ganham um reforço de energia durante erupções solares.
+VREA_ClearInstructions.label	instruções claras
+VREA_ClearInstructions.description	Androides com esta sub-rotina nunca falham em construções nem em colheitas e nunca fazem refeições que causem intoxicação alimentar.
+VREA_SelfDestructProtocols.label	protocolos de autodestruição
+VREA_SelfDestructProtocols.description	Androides com esta sub-rotina conseguem sobrecarregar o reator, que drena a energia restante numa velocidade extrema e depois detona, com força proporcional à energia drenada.
+## DefInjected/HediffDef/Damages_Misc.xml
+VREA_ElectromagneticShock.label	choque eletromagnético
+VREA_ElectromagneticShock.description	Um choque eletromagnético.
+VREA_EMPBurn.label	queimadura de PEM
+VREA_EMPBurn.description	Uma queimadura de PEM.
+VREA_EMPBurn.comps.HediffComp_GetsPermanent.permanentLabel	cicatriz de queimadura de PEM
+VREA_EMPBurn.injuryProps.destroyedLabel	Queimado (PEM)
+VREA_EMPBurn.injuryProps.destroyedOutLabel	Queimado por dentro (PEM)
+VREA_EMPBurn.labelNoun	uma queimadura de PEM
+VREA_EMPBurn.labelNounPretty	{0} no(a) {1}
+## DefInjected/HediffDef/Hediffs.xml
+VREA_NeutroLoss.label	perda de neutro
+VREA_NeutroLoss.description	Uma redução no volume normal de neutroamina. Uma perda leve tem efeitos relativamente pequenos, mas quando fica grave, todos os subsistemas ficam muito prejudicados e o androide perde a capacidade de se mover. Uma perda extrema nunca leva à morte.\n\nA perda de neutro não se recupera sozinha com o tempo. O androide precisa ser colocado num neutrocaixão e reabastecido com neutroamina.
+VREA_NeutroLoss.stages.minor-0.label	leve
+VREA_NeutroLoss.stages.minor-1.label	leve
+VREA_NeutroLoss.stages.moderate.label	moderada
+VREA_NeutroLoss.stages.severe.label	grave
+VREA_NeutroLoss.stages.extreme.label	extrema
+VREA_Freezing.label	congelando
+VREA_Freezing.description	Temperatura central do androide perigosamente baixa. Se não for reaquecido, o congelamento piora e pode causar dano crítico aos biocomponentes. A recuperação é rápida depois que o androide se aquece. Evite o congelamento vestindo roupas quentes no androide em ambientes frios.
+VREA_Freezing.stages.shivering-0.label	tremendo
+VREA_Freezing.stages.shivering-1.label	tremendo
+VREA_Freezing.stages.minor.label	leve
+VREA_Freezing.stages.serious.label	sério
+VREA_Freezing.stages.extreme.label	extremo
+VREA_Freeze.label	congelamento
+VREA_Freeze.description	Tecido congelado por exposição ao frio sem proteção adequada. O congelamento é muito doloroso, e partes do corpo congeladas muitas vezes se perdem.
+VREA_Freeze.injuryProps.destroyedLabel	Perdido por congelamento
+VREA_Freeze.labelNounPretty	{0} no(a) {1}
+VREA_Overheating.label	superaquecimento
+VREA_Overheating.description	Uma perturbação geral no funcionamento do androide causada por exposição excessiva ao calor e ao sol. A memória do androide fica embaralhada e o espaço se esgota mais rápido. A recuperação é rápida num lugar fresco, mas se a exposição continuar, o androide segue perdendo espaço de memória, o que pode causar reformatações frequentes.
+VREA_Overheating.stages.initial.label	inicial
+VREA_Overheating.stages.minor.label	leve
+VREA_Overheating.stages.serious.label	sério
+VREA_Overheating.stages.extreme.label	extremo
+VREA_ScanningSickness.label	enjoo de escaneamento
+VREA_ScanningSickness.description	Esta pessoa foi escaneada por um escaneador suave para produzir um subnúcleo de persona androide. O aparelho de alta energia perturbou a química do cérebro, que leva um tempo para se normalizar. Não haverá dano duradouro.
+## DefInjected/HediffDef/Hediffs_BodyParts_Android.xml
+VREA_NeuroPump.label	neurobomba
+VREA_NeuroPump.description	Uma neurobomba instalada.
+VREA_NeuroPump.labelNoun	uma neurobomba
+VREA_AirFilter.label	filtro de ar
+VREA_AirFilter.description	Um filtro de ar instalado.
+VREA_AirFilter.labelNoun	um filtro de ar
+VREA_Neutrofilter.label	neutrofiltro
+VREA_Neutrofilter.description	Um neutrofiltro instalado.
+VREA_Neutrofilter.labelNoun	um neutrofiltro
+VREA_MetabolismRegulator.label	regulador de metabolismo
+VREA_MetabolismRegulator.description	Um regulador de metabolismo instalado.
+VREA_MetabolismRegulator.labelNoun	um regulador de metabolismo
+VREA_Reactor.label	reator
+VREA_Reactor.description	Um reator instalado.
+VREA_Reactor.labelNoun	um reator
+VREA_ArtificialBrain.label	cérebro artificial
+VREA_ArtificialBrain.description	Um cérebro artificial instalado.
+VREA_ArtificialBrain.labelNoun	um cérebro artificial
+VREA_OpticalUnit.label	unidade óptica
+VREA_OpticalUnit.description	Uma unidade óptica instalada.
+VREA_OpticalUnit.labelNoun	uma unidade óptica
+VREA_AudioProcessor.label	processador de áudio
+VREA_AudioProcessor.description	Um processador de áudio instalado.
+VREA_AudioProcessor.labelNoun	um processador de áudio
+VREA_ArtificialNose.label	nariz artificial
+VREA_ArtificialNose.description	Um nariz artificial instalado.
+VREA_ArtificialNose.labelNoun	um nariz artificial
+VREA_ArtificialJaw.label	mandíbula artificial
+VREA_ArtificialJaw.description	Uma mandíbula artificial instalada.
+VREA_ArtificialJaw.labelNoun	uma mandíbula artificial
+VREA_ArtificialRibcage.label	caixa torácica artificial
+VREA_ArtificialRibcage.description	Uma caixa torácica artificial instalada.
+VREA_ArtificialRibcage.labelNoun	uma caixa torácica artificial
+VREA_ArtificialSpine.label	coluna artificial
+VREA_ArtificialSpine.description	Uma coluna artificial instalada.
+VREA_ArtificialSpine.labelNoun	uma coluna artificial
+VREA_AndroidLeg.label	perna de androide
+VREA_AndroidLeg.description	Uma perna de androide instalada.
+VREA_AndroidLeg.labelNoun	uma perna de androide
+VREA_AndroidFoot.label	pé de androide
+VREA_AndroidFoot.description	Um pé de androide instalado.
+VREA_AndroidFoot.labelNoun	um pé de androide
+VREA_AndroidArm.label	braço de androide
+VREA_AndroidArm.description	Um braço de androide instalado.
+VREA_AndroidArm.labelNoun	um braço de androide
+VREA_AndroidHand.label	mão de androide
+VREA_AndroidHand.description	Uma mão de androide instalada.
+VREA_AndroidHand.labelNoun	uma mão de androide
+## DefInjected/HistoryEventDef/Precepts_Androids.xml
+VRE_AndroidDied.label	androide morreu
+## DefInjected/IssueDef/Precepts_Androids.xml
+VRE_AndroidsIssue.label	androides
+## DefInjected/JobDef/Jobs.xml
+VREA_FreeMemorySpace.reportString	liberando espaço de memória
+VREA_CreateAndroid.reportString	Criando androide em TargetA.
+VREA_ModifyAndroid.reportString	Modificando androide em TargetA.
+VREA_ReplaceReactor.reportString	Trocando o próprio reator por TargetA.
+VREA_RefuelWithNeutroamine.reportString	Reabastecendo com TargetA.
+VREA_RepairAndroid.reportString	consertando TargetA.
+## DefInjected/MentalStateDef/MentalStates_Special.xml
+VREA_Reformatting.label	reformatando
+VREA_Reformatting.baseInspectLine	Reformatando
+VREA_SolarFlared.label	travado pela erupção solar
+VREA_SolarFlared.baseInspectLine	Travado pela erupção solar
+## DefInjected/NeedDef/Needs.xml
+VREA_MemorySpace.label	espaço de memória
+VREA_MemorySpace.description	O espaço de memória é quanto sobra do disco rígido de um androide. Ao longo do dia, ele se esgota. Quando chega a zero, o androide entra em reformatação até liberar espaço suficiente para continuar.
+VREA_ReactorPower.label	Energia
+VREA_ReactorPower.description	A energia é quanto resta de vida útil no reator embutido de um androide. Quando o reator chega ao fim da vida útil, pode precisar ser trocado. Um androide sem fonte de energia funcionando não opera.
+VREA_FoodSuppressed.label	É um marcador interno. Você não deveria ver isto; avise se aparecer.
+VREA_FoodSuppressed.description	Ignore.
+## DefInjected/PawnKindDef/PawnKinds_Special.xml
+VREA_AndroidBasic.label	androide
+VREA_AndroidAwakened.label	androide desperto
+## DefInjected/PreceptDef/Precepts_Androids.xml
+VRE_Androids_Respected.label	respeitados
+VRE_Androids_Respected.description	A tecnologia sofisticada e a inteligência dos androides devem ser reconhecidas. Devemos tratá-los com admiração e estima, mesmo sendo diferentes dos humanos.
+VRE_Androids_Respected.comps.0.description	Androide
+VRE_Androids_Equal.label	iguais
+VRE_Androids_Equal.description	Defendemos com firmeza a igualdade dos androides: eles têm os mesmos direitos, oportunidades e consideração moral que os humanos.
+VRE_Androids_Despised.label	desprezados
+VRE_Androids_Despised.description	Androides são inferiores aos humanos. Sinto desdém e desprezo por eles, porque acredito que perturbam a ordem natural e ameaçam a nossa humanidade.
+VRE_Androids_Despised.comps.0.description	Androide
+VRE_Androids_Despised.comps.2.description	Ódio do androide por si mesmo
+VRE_Androids_Despised.comps.3.description	Androide entre nós
+VRE_Androids_Tools.label	ferramentas
+VRE_Androids_Tools.description	Vemos os androides como meras ferramentas, feitas para servir e ajudar os humanos em várias tarefas. Existem só para a nossa conveniência e não devem ter direitos nem consideração moral.\n\n<color=#E5E54C>Efeito no jogo:</color>\n - Não se formam opiniões sobre androides.\n - Sem pensamentos ligados à morte de androides (vale para todos os colonos, desde que o preceito faça parte da ideologia principal).\n - Sem pensamentos ligados à escravização de androides (vale para todos os colonos, desde que o preceito faça parte da ideologia principal).
+## DefInjected/QuestScriptDef/Script_AndroidJoins.xml
+VREA_Quest_AndroidJoins.questDescriptionRules.rulesStrings[0]	questDescription->[asker_nameFull], um androide desperto, está chamando de perto daqui. Está sendo caçado por [enemyFaction_name]. Quando um androide passa por um trauma emocional forte ou por muita felicidade, pode desenvolver consciência e personalidade. Apesar de sintéticos, os androides despertos se comportam como humanos e têm sub-rotinas adaptáveis. O corpo artificial os torna imunes a doenças, mas eles precisam de conforto e de espaço pessoal. Dedicam-se a atividades humanas e tentam se integrar à sociedade. Muitas sociedades não aceitam isso e preferem androides como servos, não como iguais. O grupo de busca de [enemyFaction_pawnsPlural] é formado por: \n\n[raid/raidPawnKinds]\n\n[asker_nameFull] quer abrigo em [map_definite]. Se vocês aceitarem, chega imediatamente, mas será seguido pelo grupo de busca, que vocês terão de derrotar.\n\nAndroides são construções sintéticas, feitas pelo homem, com corpo de metal e neutroamina correndo nas veias. Operados por um subnúcleo de persona, conseguem fazer todos os mesmos trabalhos que os humanos, sem as desvantagens que costumam vir com a vida orgânica.
+VREA_Quest_AndroidJoins.questNameRules.rulesStrings[0]	questName->O androide [adjAny]
+VREA_Quest_AndroidJoins.questNameRules.rulesStrings[1]	adjAny->caçado
+VREA_Quest_AndroidJoins.questNameRules.rulesStrings[2]	adjAny->fugitivo
+VREA_Quest_AndroidJoins.questNameRules.rulesStrings[3]	adjAny->perseguido
+VREA_Quest_AndroidJoins.questNameRules.rulesStrings[4]	adjAny->emboscado
+VREA_Quest_AndroidJoins.root.nodes.PawnsArrive.customLetterText.slateRef	{BASETEXT}\n\nComo vocês aceitaram [asker_nameDef], o bando de piratas que o persegue vai chegar em breve.
+VREA_Quest_AndroidJoins.root.nodes.Delay-0.node.parms.customLetterLabel.value.slateRef	{BASELABEL}: inimigos em perseguição
+VREA_Quest_AndroidJoins.root.nodes.Delay-0.node.parms.customLetterText.value.slateRef	{BASETEXT}\n\nEstes são os inimigos que estavam caçando [../asker_nameFull].\n

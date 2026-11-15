@@ -1,0 +1,267 @@
+## DefInjected/QuestScriptDef/Script_GrandBall.xml
+VFEE_GrandBall.questContentRules.rulesStrings[1]	lastOrNot(nobleCount>=2)->último
+VFEE_GrandBall.questContentRules.rulesStrings[4]	decidedToLeave->Seus convidados vão embora na hora e não vão guardar boas lembranças deste evento!
+VFEE_GrandBall.questContentRules.rulesStrings[5]	oneOfThe->um dos nobres que vocês convidaram para o grande baile
+VFEE_GrandBall.questContentRules.rulesStrings[6]	questOver->A missão '[resolvedQuestName]' acabou.
+VFEE_GrandBall.questContentRules.rulesStrings[7]	CeremonyFailedLetterLabel->O grande baile fracassou
+VFEE_GrandBall.questContentRules.rulesStrings[8]	CeremonyFailedLetterText->[asker_nameFull] ficou decepcionado com o fracasso de vocês em fazer um baile agradável e está indo embora com os convidados.
+VFEE_GrandBall.questContentRules.rulesStrings[9]	CeremonyTimeoutLetterLabel->O grande baile fracassou
+VFEE_GrandBall.questContentRules.rulesStrings[10]	CeremonyTimeoutLetterText->[asker_nameFull] cansou de esperar vocês começarem o baile e está indo embora com os convidados.
+VFEE_GrandBall.questContentRules.rulesStrings[11]	letterIntroArrested->Vocês prenderam {SUBJECT_definite}, [oneOfThe].
+VFEE_GrandBall.questContentRules.rulesStrings[12]	lodgerArrestedLeaveMapLetterLabel->[lodgersLabel] preso: partida
+VFEE_GrandBall.questContentRules.rulesStrings[13]	lodgerArrestedLeaveMapLetterText->[letterIntroArrested]\n\n[decidedToLeave]
+VFEE_GrandBall.questContentRules.rulesStrings[14]	letterIntroDeath->{SUBJECT_definite}, [oneOfThe], morreu.
+VFEE_GrandBall.questContentRules.rulesStrings[15]	lodgerDiedLeaveMapLetterLabel->[lodgersLabel] morreu: partida
+VFEE_GrandBall.questContentRules.rulesStrings[16]	lodgerDiedLeaveMapLetterText->[letterIntroDeath]\n\n[decidedToLeave]
+VFEE_GrandBall.questContentRules.rulesStrings[17]	letterIntroViolated->{SUBJECT_definite}, [oneOfThe], foi violado por uma cirurgia.
+VFEE_GrandBall.questContentRules.rulesStrings[18]	lodgerSurgeryVioLeaveMapLetterLabel->[lodgersLabel] violado: partida
+VFEE_GrandBall.questContentRules.rulesStrings[19]	lodgerSurgeryVioLeaveMapLetterText->[letterIntroViolated]\n\n[decidedToLeave]
+VFEE_GrandBall.questContentRules.rulesStrings[20]	letterIntroKidnapped->{SUBJECT_definite}, [oneOfThe], foi sequestrado.
+VFEE_GrandBall.questContentRules.rulesStrings[21]	lodgerKidnappedLeaveMapLetterLabel->[lodgersLabel] sequestrado: partida
+VFEE_GrandBall.questContentRules.rulesStrings[22]	lodgerKidnappedLeaveMapLetterText->[letterIntroKidnapped]\n\n[decidedToLeave]
+VFEE_GrandBall.questContentRules.rulesStrings[23]	letterIntroBanished->{SUBJECT_definite}, [oneOfThe], foi banido.
+VFEE_GrandBall.questContentRules.rulesStrings[24]	lodgerBanishedLeaveMapLetterLabel->[lodgersLabel] banido: partida
+VFEE_GrandBall.questContentRules.rulesStrings[25]	lodgerBanishedLeaveMapLetterText->[letterIntroBanished]\n\n[decidedToLeave]
+VFEE_GrandBall.questContentRules.rulesStrings[26]	letterIntroPsychicRitualTarget->{SUBJECT_definite}, [oneOfThe], foi alvo de um ritual psíquico.
+VFEE_GrandBall.questContentRules.rulesStrings[27]	lodgerPsychicRitualTargetLabel->[lodgersLabel] violado: partida
+VFEE_GrandBall.questContentRules.rulesStrings[28]	lodgerPsychicRitualTargetText->[letterIntroPsychicRitualTarget]\n\n[decidedToLeave]
+VFEE_GrandBall.questContentRules.rulesStrings[29]	ShuttleDestroyedIntro->O ônibus espacial foi destruído.
+VFEE_GrandBall.questContentRules.rulesStrings[30]	ShuttleDestroyedLabel->Ônibus espacial destruído: baile cancelado
+VFEE_GrandBall.questContentRules.rulesStrings[31]	ShuttleDestroyedText->[ShuttleDestroyedIntro]\n\n[decidedToLeave]
+VFEE_GrandBall.questContentRules.rulesStrings[32]	raidArrivedLetterLabel->Tentativa de assassinato dos desertores
+VFEE_GrandBall.questContentRules.rulesStrings[33]	raidArrivedLetterText->Um grupo de desertores chegou para tentar atrapalhar o grande baile e assassinar os nobres.\n\n[asker_nameFull] não liga para a ameaça e exige que o baile continue! Quer que vocês protejam os nobres e deem um jeito nos "camponeses".
+VFEE_GrandBall.questContentRules.rulesStrings[34]	BallSuccessLetterLetterLabel->Sucesso no grande baile
+VFEE_GrandBall.questContentRules.rulesStrings[35]	BallSuccessLetterText->O ônibus espacial partiu com [asker_nameFull] e os convidados. No geral, o evento foi um sucesso e todos voltaram em segurança.
+VFEE_GrandBall.questDescriptionAndNameRules.rulesStrings[0]	lodgersLabel->nobre
+VFEE_GrandBall.questDescriptionAndNameRules.rulesStrings[1]	lodgersLabelPlural->nobres
+VFEE_GrandBall.questDescriptionAndNameRules.rulesStrings[3]	lodgersDef(nobleCount>=2)->os [lodgersLabelPlural]
+VFEE_GrandBall.questDescriptionAndNameRules.rulesStrings[4]	joinerEnding->Vocês poderão comandar [lodgersDef] do mesmo jeito que comandam os próprios colonos.[specialNeedsExplanation]
+VFEE_GrandBall.questDescriptionAndNameRules.rulesStrings[6]	theirHisHer(nobleCount>=2)->deles
+VFEE_GrandBall.questDescriptionAndNameRules.rulesStrings[8]	lodgersPronoun(nobleCount>=2)->eles
+VFEE_GrandBall.questDescriptionAndNameRules.rulesStrings[9]	lodgersWasWere(nobleCount==1)->foi
+VFEE_GrandBall.questDescriptionAndNameRules.rulesStrings[10]	lodgersWasWere(nobleCount>=2)->foram
+VFEE_GrandBall.questDescriptionAndNameRules.rulesStrings[11]	appreciateAppreciates(nobleCount==1)->aprecia
+VFEE_GrandBall.questDescriptionAndNameRules.rulesStrings[12]	appreciateAppreciates(nobleCount>=2)->apreciam
+VFEE_GrandBall.questDescriptionAndNameRules.rulesStrings[13]	questDescription->[asker_nameFull], [asker_royalTitleInCurrentFaction] de [asker_faction_name], gostaria que vocês organizassem um grande baile. É uma ótima oportunidade para fofocas nobres e para criar laços com outros membros da nobreza imperial.\n\nÉ preciso ter um salão de baile na colônia. Se o salão for destruído a qualquer momento, ou os instrumentos dele ficarem inutilizáveis, o grande baile é cancelado.\n\n[asker_nameFull] mandou a lista dos nobres convidados para o baile, que vão chegar no ônibus espacial:\n\n[noblesDetailList]\n\nVocês precisam garantir que os convidados fiquem seguros e confortáveis durante o baile. Se acontecer qualquer coisa com algum deles, o grande baile é cancelado.\n\nOs desertores podem aproveitar a oportunidade para uma tentativa de assassinato.\n\n\n
+VFEE_GrandBall.questNameRules.rulesStrings[0]	questName->[lodgerIndef] quer um grande baile
+VFEE_GrandBall.questNameRules.rulesStrings[1]	lodgerIndef->Um membro da realeza
+VFEE_GrandBall.questNameRules.rulesStrings[2]	lodgerIndef->Um nobre
+## DefInjected/QuestScriptDef/Script_NobleVisit.xml
+VFEE_NobleVisit.questContentRules.rulesStrings[1]	lastOrNot(nobleCount>=2)->último
+VFEE_NobleVisit.questContentRules.rulesStrings[4]	decidedToLeave->[othersWillNotAccept] e {PAWNSALIVECOUNT_multiple ? decidiram : decidiu } ir embora.
+VFEE_NobleVisit.questContentRules.rulesStrings[5]	othersWillNotAccept->{PAWNSALIVECOUNT_multiple ? Os outros não estão dispostos : O último [lodgersLabel] não está disposto} a aceitar isso
+VFEE_NobleVisit.questContentRules.rulesStrings[6]	oneOfThe->um dos nobres que vocês convidaram para ficar
+VFEE_NobleVisit.questContentRules.rulesStrings[7]	questOver->A missão '[resolvedQuestName]' acabou.
+VFEE_NobleVisit.questContentRules.rulesStrings[8]	letterIntroArrested->Vocês prenderam {SUBJECT_definite}, [oneOfThe].
+VFEE_NobleVisit.questContentRules.rulesStrings[9]	lodgerArrestedLeaveMapLetterLabel->[lodgersLabel] preso: partida
+VFEE_NobleVisit.questContentRules.rulesStrings[10]	lodgerArrestedLeaveMapLetterText->[letterIntroArrested]\n\n[decidedToLeave]
+VFEE_NobleVisit.questContentRules.rulesStrings[11]	letterIntroDeath->{SUBJECT_definite}, [oneOfThe], morreu.
+VFEE_NobleVisit.questContentRules.rulesStrings[12]	lodgerDiedLeaveMapLetterLabel->[lodgersLabel] morreu: partida
+VFEE_NobleVisit.questContentRules.rulesStrings[13]	lodgerDiedLeaveMapLetterText->[letterIntroDeath]\n\n[decidedToLeave]
+VFEE_NobleVisit.questContentRules.rulesStrings[14]	letterIntroViolated->{SUBJECT_definite}, [oneOfThe], foi violado por uma cirurgia.
+VFEE_NobleVisit.questContentRules.rulesStrings[15]	lodgerSurgeryVioLeaveMapLetterLabel->[lodgersLabel] operado: partida
+VFEE_NobleVisit.questContentRules.rulesStrings[16]	lodgerSurgeryVioLeaveMapLetterText->[letterIntroViolated]\n\n[decidedToLeave]
+VFEE_NobleVisit.questContentRules.rulesStrings[17]	letterIntroKidnapped->{SUBJECT_definite}, [oneOfThe], foi sequestrado.
+VFEE_NobleVisit.questContentRules.rulesStrings[18]	lodgerKidnappedLeaveMapLetterLabel->[lodgersLabel] sequestrado: partida
+VFEE_NobleVisit.questContentRules.rulesStrings[19]	lodgerKidnappedLeaveMapLetterText->[letterIntroKidnapped]\n\n[decidedToLeave]
+VFEE_NobleVisit.questContentRules.rulesStrings[20]	letterIntroBanished->{SUBJECT_definite}, [oneOfThe], foi banido.
+VFEE_NobleVisit.questContentRules.rulesStrings[21]	lodgerBanishedLeaveMapLetterLabel->[lodgersLabel] banido: partida
+VFEE_NobleVisit.questContentRules.rulesStrings[22]	lodgerBanishedLeaveMapLetterText->[letterIntroBanished]\n\n[decidedToLeave]
+VFEE_NobleVisit.questContentRules.rulesStrings[23]	letterIntroPsychicRitualTarget->{SUBJECT_definite}, [oneOfThe], foi alvo de um ritual psíquico.
+VFEE_NobleVisit.questContentRules.rulesStrings[24]	lodgerPsychicRitualTargetLabel->[lodgersLabel] ritual psíquico: partida
+VFEE_NobleVisit.questContentRules.rulesStrings[25]	lodgerPsychicRitualTargetText->[letterIntroPsychicRitualTarget]\n\n[decidedToLeave]
+VFEE_NobleVisit.questContentRules.rulesStrings[26]	ShuttleDestroyedIntro->{SUBJECT_definite} foi destruído
+VFEE_NobleVisit.questContentRules.rulesStrings[27]	ShuttleDestroyedLabel->[lodgersLabel] ônibus espacial destruído: partida
+VFEE_NobleVisit.questContentRules.rulesStrings[28]	ShuttleDestroyedText->[ShuttleDestroyedIntro]\n\n[decidedToLeave]
+VFEE_NobleVisit.questContentRules.rulesStrings[29]	letterIntroBadMood->{SUBJECT_definite}, [oneOfThe], que vocês tinham a missão de proteger e manter feliz, ficou tempo demais abaixo do humor mínimo de [lodgersMoodThreshold].
+VFEE_NobleVisit.questContentRules.rulesStrings[30]	nobleUnhappyLetterLabel->[lodgersLabel] infeliz
+VFEE_NobleVisit.questContentRules.rulesStrings[31]	nobleUnhappyLetterText->[letterIntroBadMood]\n\n[decidedToLeave]
+VFEE_NobleVisit.questContentRules.rulesStrings[32]	lodgerLeftNotAllHealthyLetterLabel->[lodgersLabel]: sem tratamento
+VFEE_NobleVisit.questContentRules.rulesStrings[33]	lodgerLeftNotAllHealthyLetterText->[lodgersLabel] foi embora do mapa com ferimentos e não vai guardar boas lembranças da visita
+VFEE_NobleVisit.questContentRules.rulesStrings[34]	LetterLabelShuttleArrived->O ônibus espacial chegou
+VFEE_NobleVisit.questContentRules.rulesStrings[35]	LetterTextShuttleArrived->O ônibus espacial chegou para buscar [asker_nameFull] e a corte
+VFEE_NobleVisit.questContentRules.rulesStrings[36]	lodgersLeavingLetterLabel->[lodgersLabelSingularOrPlural] partiu com saúde
+VFEE_NobleVisit.questContentRules.rulesStrings[37]	lodgersLeavingLetterText->[asker_nameFull] agradece o convite para ficar em [map_definite] por [questDurationTicks_duration].
+VFEE_NobleVisit.questDescriptionAndNameRules.rulesStrings[0]	lodgersLabel->nobre
+VFEE_NobleVisit.questDescriptionAndNameRules.rulesStrings[1]	lodgersLabelPlural->nobres
+VFEE_NobleVisit.questDescriptionAndNameRules.rulesStrings[3]	lodgersDef(nobleCount>=2)->os [lodgersLabelPlural]
+VFEE_NobleVisit.questDescriptionAndNameRules.rulesStrings[4]	joinerEnding->Vocês poderão comandar [lodgersDef] do mesmo jeito que comandam os próprios colonos.[specialNeedsExplanation]
+VFEE_NobleVisit.questDescriptionAndNameRules.rulesStrings[5]	specialNeedsExplanation(asker_royalInCurrentFaction==True,priority=1)-> Vocês vão precisar atender às necessidades reais especiais que os [lodgersLabelPlural] tiverem.
+VFEE_NobleVisit.questDescriptionAndNameRules.rulesStrings[8]	theirHisHer(nobleCount>=2)->deles
+VFEE_NobleVisit.questDescriptionAndNameRules.rulesStrings[10]	lodgersPronoun(nobleCount>=2)->eles
+VFEE_NobleVisit.questDescriptionAndNameRules.rulesStrings[11]	lodgersWasWere(nobleCount==1)->foi
+VFEE_NobleVisit.questDescriptionAndNameRules.rulesStrings[12]	lodgersWasWere(nobleCount>=2)->foram
+VFEE_NobleVisit.questDescriptionAndNameRules.rulesStrings[13]	appreciateAppreciates(nobleCount==1)->aprecia
+VFEE_NobleVisit.questDescriptionAndNameRules.rulesStrings[14]	appreciateAppreciates(nobleCount>=2)->apreciam
+VFEE_NobleVisit.questDescriptionAndNameRules.rulesStrings[15]	questDescription(nobleCount==1)->[asker_nameFull], [asker_royalTitleInCurrentFaction] de [asker_faction_name], gostaria de fazer uma visita de cortesia. Convidem e atendam às necessidades reais dele por [shuttleDelayTicks_duration], e vocês ganharão muita honra. Durante a visita, vocês precisam manter o humor dos visitantes acima de [lodgersMoodThreshold_percent], o que exige regalias reais como um quarto luxuoso.\n\nO(a) [asker_royalTitleInCurrentFaction] vai trazer dois guardas pessoais e colocá-los sob o seu comando. Vocês precisam abrigar esses guardas, mas o(a) [asker_royalTitleInCurrentFaction] não vai reclamar se morrerem ou ficarem infelizes.\n\nVocês precisam manter os visitantes em [map_definite] e não mandá-los a nenhum outro lugar. Se falharem na missão ou migrarem, sua relação com [asker_nameFull] vai piorar e vocês perderão honra.
+VFEE_NobleVisit.questDescriptionAndNameRules.rulesStrings[16]	questDescription(nobleCount>=2)->[asker_nameFull], [asker_royalTitleInCurrentFaction] de [asker_faction_name], gostaria de fazer uma visita de cortesia. Convidem o nobre e sua corte real de [nobleCountLessOne] nobres e atendam às necessidades reais deles por [shuttleDelayTicks_duration], e vocês ganharão muita honra.\n\n[asker_nameFull] mandou a lista dos nobres que viajam com ele:\n\n[noblesDetailList]\n\nDurante a visita, vocês precisam manter o humor deles acima de [lodgersMoodThreshold_percent], o que exige regalias reais como um quarto luxuoso.\n\nO(a) [asker_royalTitleInCurrentFaction] vai trazer dois guardas pessoais e colocá-los sob o seu comando. Vocês precisam abrigar esses guardas, mas o(a) [asker_royalTitleInCurrentFaction] não vai reclamar se morrerem ou ficarem infelizes.\n\nVocês precisam manter os visitantes em [map_definite] e não mandá-los a nenhum outro lugar. Se falharem na missão ou migrarem, sua relação com [asker_nameFull] vai piorar e vocês perderão honra.
+VFEE_NobleVisit.questDescriptionAndNameRules.rulesStrings[17]	allyAllies(lodgersCountMinusOne==1)->aliado
+VFEE_NobleVisit.questDescriptionAndNameRules.rulesStrings[18]	allyAllies(lodgersCountMinusOne>=2)->aliados
+VFEE_NobleVisit.questNameRules.rulesStrings[0]	questName(sameQuestsCount==0)->A visita de [asker_nameDef]
+VFEE_NobleVisit.questNameRules.rulesStrings[1]	questName->Hospedando [lodgerIndef]
+VFEE_NobleVisit.questNameRules.rulesStrings[2]	questName->Visita de [lodgerIndef]
+VFEE_NobleVisit.questNameRules.rulesStrings[3]	lodgerIndef(nobleCount==1)->um membro da realeza
+VFEE_NobleVisit.questNameRules.rulesStrings[4]	lodgerIndef(nobleCount==1)->um nobre
+VFEE_NobleVisit.questNameRules.rulesStrings[5]	lodgerIndef(nobleCount>=2)->membros da realeza
+VFEE_NobleVisit.questNameRules.rulesStrings[6]	lodgerIndef(nobleCount>=2)->nobres
+## DefInjected/QuestScriptDef/Script_Parade.xml
+VFEE_Parade.questContentRules.rulesStrings[1]	lastOrNot(nobleCount>=2)->último
+VFEE_Parade.questContentRules.rulesStrings[4]	decidedToLeave->Seus convidados vão embora na hora e não vão guardar boas lembranças deste evento!
+VFEE_Parade.questContentRules.rulesStrings[5]	oneOfThe->um dos nobres que vieram para o desfile
+VFEE_Parade.questContentRules.rulesStrings[6]	questOver->A missão '[resolvedQuestName]' acabou.
+VFEE_Parade.questContentRules.rulesStrings[7]	CeremonyFailedLetterLabel->O desfile fracassou
+VFEE_Parade.questContentRules.rulesStrings[8]	CeremonyFailedLetterText->[asker_nameFull] ficou decepcionado com o fracasso de vocês em fazer um desfile agradável e está indo embora com os convidados.
+VFEE_Parade.questContentRules.rulesStrings[9]	CeremonyTimeoutLetterLabel->O desfile fracassou
+VFEE_Parade.questContentRules.rulesStrings[10]	CeremonyTimeoutLetterText->[asker_nameFull] cansou de esperar vocês começarem o desfile e está indo embora com os convidados.
+VFEE_Parade.questContentRules.rulesStrings[11]	NoblesArriveLetterLabel->Nobres do desfile chegando
+VFEE_Parade.questContentRules.rulesStrings[12]	NoblesArriveLetterText->[asker_nameFull] e a nobreza do desfile de ascensão de [stellarch_nameDef] estão pousando. Quando todos estiverem reunidos, selecione [asker_nameDef] para começar o desfile. Eles não vão esperar muito.
+VFEE_Parade.questContentRules.rulesStrings[13]	CountdownHostileLetterLabel->Desfile cancelado
+VFEE_Parade.questContentRules.rulesStrings[14]	CountdownHostileLetterText->O Império não vai mandar sua nobreza a uma colônia com a qual está em guerra. O desfile de ascensão de [stellarch_nameDef] foi cancelado.
+VFEE_Parade.questContentRules.rulesStrings[15]	CountdownAwayLetterLabel->Desfile cancelado
+VFEE_Parade.questContentRules.rulesStrings[16]	CountdownAwayLetterText->[asker_nameFull] esperou um dia por [stellarch_nameDef] na colônia para receber a nobreza. O desfile de ascensão foi cancelado.
+VFEE_Parade.questContentRules.rulesStrings[17]	CountdownPadLetterLabel->Desfile cancelado
+VFEE_Parade.questContentRules.rulesStrings[18]	CountdownPadLetterText->[asker_nameFull] esperou um dia até a plataforma de pouso da colônia ficar adequada para o ônibus espacial da nobreza e não vai pousar em outro lugar. O desfile de ascensão de [stellarch_nameDef] foi cancelado.
+VFEE_Parade.questContentRules.rulesStrings[19]	CountdownThreatLetterLabel->Desfile cancelado
+VFEE_Parade.questContentRules.rulesStrings[20]	CountdownThreatLetterText->[asker_nameFull] esperou um dia o perigo na colônia passar e não vai pousar a nobreza no meio dele. O desfile de ascensão de [stellarch_nameDef] foi cancelado.
+VFEE_Parade.questContentRules.rulesStrings[21]	letterIntroArrested->Vocês prenderam {SUBJECT_definite}, [oneOfThe].
+VFEE_Parade.questContentRules.rulesStrings[22]	lodgerArrestedLeaveMapLetterLabel->[lodgersLabel] preso: partida
+VFEE_Parade.questContentRules.rulesStrings[23]	lodgerArrestedLeaveMapLetterText->[letterIntroArrested]\n\n[decidedToLeave]
+VFEE_Parade.questContentRules.rulesStrings[24]	letterIntroDeath->{SUBJECT_definite}, [oneOfThe], morreu.
+VFEE_Parade.questContentRules.rulesStrings[25]	lodgerDiedLeaveMapLetterLabel->[lodgersLabel] morreu: partida
+VFEE_Parade.questContentRules.rulesStrings[26]	lodgerDiedLeaveMapLetterText->[letterIntroDeath]\n\n[decidedToLeave]
+VFEE_Parade.questContentRules.rulesStrings[27]	letterIntroViolated->{SUBJECT_definite}, [oneOfThe], foi violado por uma cirurgia.
+VFEE_Parade.questContentRules.rulesStrings[28]	lodgerSurgeryVioLeaveMapLetterLabel->[lodgersLabel] violado: partida
+VFEE_Parade.questContentRules.rulesStrings[29]	lodgerSurgeryVioLeaveMapLetterText->[letterIntroViolated]\n\n[decidedToLeave]
+VFEE_Parade.questContentRules.rulesStrings[30]	letterIntroKidnapped->{SUBJECT_definite}, [oneOfThe], foi sequestrado.
+VFEE_Parade.questContentRules.rulesStrings[31]	lodgerKidnappedLeaveMapLetterLabel->[lodgersLabel] sequestrado: partida
+VFEE_Parade.questContentRules.rulesStrings[32]	lodgerKidnappedLeaveMapLetterText->[letterIntroKidnapped]\n\n[decidedToLeave]
+VFEE_Parade.questContentRules.rulesStrings[33]	letterIntroBanished->{SUBJECT_definite}, [oneOfThe], foi banido.
+VFEE_Parade.questContentRules.rulesStrings[34]	lodgerBanishedLeaveMapLetterLabel->[lodgersLabel] banido: partida
+VFEE_Parade.questContentRules.rulesStrings[35]	lodgerBanishedLeaveMapLetterText->[letterIntroBanished]\n\n[decidedToLeave]
+VFEE_Parade.questContentRules.rulesStrings[36]	letterIntroPsychicRitualTarget->{SUBJECT_definite}, [oneOfThe], foi alvo de um ritual psíquico.
+VFEE_Parade.questContentRules.rulesStrings[37]	lodgerPsychicRitualTargetLabel->[lodgersLabel] violado: partida
+VFEE_Parade.questContentRules.rulesStrings[38]	lodgerPsychicRitualTargetText->[letterIntroPsychicRitualTarget]\n\n[decidedToLeave]
+VFEE_Parade.questContentRules.rulesStrings[39]	ShuttleDestroyedIntro->O ônibus espacial foi destruído.
+VFEE_Parade.questContentRules.rulesStrings[40]	ShuttleDestroyedLabel->Ônibus espacial destruído: o desfile fracassou
+VFEE_Parade.questContentRules.rulesStrings[41]	ShuttleDestroyedText->[ShuttleDestroyedIntro]\n\n[decidedToLeave]
+VFEE_Parade.questContentRules.rulesStrings[42]	raidArrivedLetterLabel->Tentativa de assassinato dos desertores
+VFEE_Parade.questContentRules.rulesStrings[43]	raidArrivedLetterText->Um grupo de desertores chegou para tentar atrapalhar o desfile e assassinar [stellarch_nameDef].\n\nO desfile não pode ser interrompido por motivo nenhum!
+VFEE_Parade.questContentRules.rulesStrings[44]	ParadeSuccessLetterLetterLabel->Sucesso no desfile
+VFEE_Parade.questContentRules.rulesStrings[45]	ParadeSuccessLetterText->O ônibus espacial está pronto para partir com todos os que ascendem com [stellarch_nameDef]. Ele parte quando vocês mandarem!
+VFEE_Parade.questDescriptionAndNameRules.rulesStrings[0]	lodgersLabel->nobre
+VFEE_Parade.questDescriptionAndNameRules.rulesStrings[1]	lodgersLabelPlural->nobres
+VFEE_Parade.questDescriptionAndNameRules.rulesStrings[3]	lodgersDef(nobleCount>=2)->os [lodgersLabelPlural]
+VFEE_Parade.questDescriptionAndNameRules.rulesStrings[5]	theirHisHer(nobleCount>=2)->deles
+VFEE_Parade.questDescriptionAndNameRules.rulesStrings[7]	lodgersPronoun(nobleCount>=2)->eles
+VFEE_Parade.questDescriptionAndNameRules.rulesStrings[8]	lodgersWasWere(nobleCount==1)->foi
+VFEE_Parade.questDescriptionAndNameRules.rulesStrings[9]	lodgersWasWere(nobleCount>=2)->foram
+VFEE_Parade.questDescriptionAndNameRules.rulesStrings[10]	appreciateAppreciates(nobleCount==1)->aprecia
+VFEE_Parade.questDescriptionAndNameRules.rulesStrings[11]	appreciateAppreciates(nobleCount>=2)->apreciam
+VFEE_Parade.questDescriptionAndNameRules.rulesStrings[12]	questDescription->[stellarch_nameFull] chegou ao auge do que pode alcançar na superfície de um mundo da Orla. Para subir mais na grande hierarquia e virar o braço direito do Imperador [emperor_nameFull], [stellarch_nameDef] precisa participar de um desfile tradicional de ascensão, depois do qual parte num ônibus espacial para se juntar ao Imperador.\n\nUm desfile desse porte com certeza vai chamar a atenção dos desertores.\n\nAo aceitar esta missão, vocês terão 5 dias para se preparar para o desfile. Considerem reforçar as defesas e pensar em planos de contingência, porque é difícil dizer por onde o desfile vai passar. O tempo todo, vocês terão de manter o desfile a salvo.\n\nFiquem de olho em rivais ou inimigos de [stellarch_nameDef], que podem achar que é uma boa hora para agir e tomar o poder.\n\nO ônibus espacial vai chegar trazendo a nobreza de mais alto escalão para o desfile. Vocês serão responsáveis pela segurança do evento. Depois que o desfile começar, ele avança devagar pelo mapa por 12 horas; depois disso, todos, incluindo [stellarch_nameDef], embarcam no ônibus espacial e partem.\n\n\n\n
+VFEE_Parade.questNameRules.rulesStrings[0]	questName->Ascensão do Grão-Arquistelar
+## DefInjected/RaidStrategyDef/Misc.xml
+VFEE_Deserters.label	desertores
+VFEE_Deserters.description	desertores
+VFEE_Deserters.arrivalTextEnemy	Um grupo de desertores imperiais chegou em cápsulas de transporte. Querem causar o caos e estão pousando espalhados por toda a área.\nOs desertores imperiais usam tecnologia poderosa e poderes psíquicos para minar o domínio imperial.\nQuerem matar qualquer portador de título de {0}, incluindo:\n{1}\n{2}\nEstão atacando imediatamente.\n
+VFEE_Deserters.arrivalTextFriendly	Estão vindo ajudar vocês imediatamente.
+VFEE_Deserters.letterLabelEnemy	Incursão (desertores)
+VFEE_Deserters.letterLabelFriendly	Aliados
+## DefInjected/ResearchProjectDef/ResearchProjects_1.xml
+VFEE_PipeOrgans.label	órgãos de tubos
+VFEE_PipeOrgans.description	Fabrique órgãos de tubos, um instrumento musical fixo incrivelmente avançado e intrincado.
+VFEE_PipeOrgans.generalRules.rulesStrings[0]	subject->a maestria musical
+VFEE_PipeOrgans.generalRules.rulesStrings[1]	subject_story->criou instrumentos que ecoaram em catedrais e salas de concerto
+VFEE_PipeOrgans.generalRules.rulesStrings[2]	subject_story->uniu saberes antigos à acústica moderna para criar uma sinfonia de sons
+VFEE_PipeOrgans.generalRules.rulesStrings[3]	subject_story->inventou um órgão com tubos que imitavam a voz do divino
+VFEE_PipeOrgans.generalRules.rulesStrings[4]	subject_gerund->harmonizando ofício e arte
+VFEE_NobleDecorations.label	decorações nobres
+VFEE_NobleDecorations.description	Construa decorações nobres como tapetes reais, espelhos, cadeiras imponentes, lajes imperiais, candelabros e mais.
+VFEE_NobleDecorations.generalRules.rulesStrings[0]	subject->a elegância aristocrática
+VFEE_NobleDecorations.generalRules.rulesStrings[1]	subject_story->projetou ambientes dignos de reis e rainhas
+VFEE_NobleDecorations.generalRules.rulesStrings[2]	subject_story->levou beleza e luxo à vida austera da nobreza
+VFEE_NobleDecorations.generalRules.rulesStrings[3]	subject_story->definiu padrões de opulência na decoração que duraram séculos
+VFEE_NobleDecorations.generalRules.rulesStrings[4]	subject_gerund->elevando os interiores ao padrão real
+VFEE_StellicThrone.label	trono estélico
+VFEE_StellicThrone.description	Construa o mais grandioso e mais belo trono estélico para a sua nobreza de alto escalão.
+VFEE_StellicThrone.generalRules.rulesStrings[0]	subject->o ofício régio
+VFEE_StellicThrone.generalRules.rulesStrings[1]	subject_story->forjou um trono com o coração de uma estrela caída, símbolo do domínio eterno
+VFEE_StellicThrone.generalRules.rulesStrings[2]	subject_story->criou não só um assento, mas um legado, garantindo que a presença do governante fosse sentida mesmo na sua ausência
+VFEE_StellicThrone.generalRules.rulesStrings[3]	subject_story->uniu a arte da ferraria a materiais celestes para criar um trono digno de lendas
+VFEE_StellicThrone.generalRules.rulesStrings[4]	subject_gerund->criando o ápice do poder da nobreza
+VFEE_JanissaryGear.label	equipamento de janissário
+VFEE_JanissaryGear.description	Fabrique armadura de janissário, uma armadura motorizada leve muito usada pelas tropas de reconhecimento imperiais. Observação: também exige componentes avançados.
+VFEE_JanissaryGear.generalRules.rulesStrings[0]	subject->a engenharia de guerra de elite
+VFEE_JanissaryGear.generalRules.rulesStrings[1]	subject_story->projetou armaduras que uniam antigas tradições guerreiras ao ápice da tecnologia de defesa moderna
+VFEE_JanissaryGear.generalRules.rulesStrings[2]	subject_story->equipou batedores com equipamento que virou o jogo das operações secretas
+VFEE_JanissaryGear.generalRules.rulesStrings[3]	subject_story->criou um legado de guerreiros temidos tanto pela habilidade quanto pelo equipamento sem igual
+VFEE_JanissaryGear.generalRules.rulesStrings[4]	subject_gerund->forjando o futuro do traje militar
+## DefInjected/RitualBehaviorDef/BestowHonor.xml
+VFEE_BestowHonor_Behavior.roles.0.label	concessor
+VFEE_BestowHonor_Behavior.roles.1.label	agraciado
+## DefInjected/RitualBehaviorDef/BestowTitle.xml
+VFEE_BestowTitle_Behavior.roles.0.label	organizador
+VFEE_BestowTitle_Behavior.roles.1.label	agraciado
+VFEE_BestowTitle_Behavior.stages.0.failTriggers.0.desc	O organizador não consegue chegar ao trono.
+VFEE_BestowTitle_Behavior.stages.0.failTriggers.1.desc	O agraciado não consegue chegar ao trono.
+## DefInjected/RitualBehaviorDef/Parade.xml
+VFEE_Parade_Behavior.roles.0.label	arquistelar
+VFEE_Parade_Behavior.roles.1.label	guarda
+VFEE_Parade_Behavior.spectatorFilter.description	Nobres com título
+VFEE_Parade_Behavior.spectatorGerund	Nobres
+VFEE_Parade_Behavior.spectatorsLabel	Nobres
+## DefInjected/RitualBehaviorDef/RoyalAddress.xml
+VFEE_RoyalAddres_Behavior.letterText	{ORGANIZER_labelShort} está fazendo um discurso real do trono. \nSe tudo correr bem, cada participante com título ganha um pouco de honra, e {ORGANIZER_labelShort} ganha honra por cada participante com título. Se der errado, o discurso causa dano social e {ORGANIZER_labelShort} perde honra por cada participante com título. O resultado depende das habilidades sociais de {ORGANIZER_labelShort}. Nobres imperiais que estiverem na área participam do discurso e contam como participantes com título.
+VFEE_RoyalAddres_Behavior.letterTitle	Discurso real do trono
+VFEE_RoyalAddres_Behavior.roles.0.label	organizador
+VFEE_RoyalAddres_Behavior.roles.1.label	portadores de título
+## DefInjected/RitualOutcomeEffectDef/ArtExhibition.xml
+VFEE_ArtExhibit_Outcome.description	Conforme a qualidade do ritual, os participantes ganham entre {MINMOOD} e {MAXMOOD} de humor por {MOODDAYS} dias.
+VFEE_ArtExhibit_Outcome.comps.0.label	número de participantes
+VFEE_ArtExhibit_Outcome.comps.1.label	imponência do cômodo
+VFEE_ArtExhibit_Outcome.outcomeChances.0.label	Terrível
+VFEE_ArtExhibit_Outcome.outcomeChances.1.label	Chata
+VFEE_ArtExhibit_Outcome.outcomeChances.2.label	Agradável
+VFEE_ArtExhibit_Outcome.outcomeChances.3.label	Incrível
+## DefInjected/RitualOutcomeEffectDef/BestowHonor.xml
+VFEE_BestowHonor_Outcome.description	{ORGANIZER} vai ganhar {HONORS}.
+VFEE_BestowHonor_Outcome.comps.0.label	teste
+## DefInjected/RitualOutcomeEffectDef/BestowTitle.xml
+VFEE_BestowTitle_Outcome.description	Conforme a qualidade do ritual, os participantes ganham entre {MINMOOD} e {MAXMOOD} de humor por {MOODDAYS} dias.
+VFEE_BestowTitle_Outcome.comps.0.label	impacto social de {PAWN_labelShort}
+VFEE_BestowTitle_Outcome.comps.0.labelAbstract	impacto social do agraciado
+VFEE_BestowTitle_Outcome.comps.1.label	número de participantes
+VFEE_BestowTitle_Outcome.comps.2.label	trono disponível
+VFEE_BestowTitle_Outcome.outcomeChances.0.label	Constrangedora
+VFEE_BestowTitle_Outcome.outcomeChances.1.label	Boa
+VFEE_BestowTitle_Outcome.outcomeChances.2.label	Incrível
+## DefInjected/RitualOutcomeEffectDef/Parade.xml
+VFEE_Parade_Outcome.description	Ao fim do desfile, o arquistelar e os companheiros escolhidos ascendem para servir ao império!
+VFEE_Parade_Outcome.outcomeChances.0.label	Incrível
+## DefInjected/RitualOutcomeEffectDef/RoyalAddress.xml
+VFEE_RoyalAddres_Outcome.description	Conforme a qualidade do ritual, os participantes ganham entre {MINMOOD} e {MAXMOOD} de humor por {MOODDAYS} dias.
+VFEE_RoyalAddres_Outcome.comps.0.label	impacto social de {PAWN_labelShort}
+VFEE_RoyalAddres_Outcome.comps.0.labelAbstract	impacto social do orador
+VFEE_RoyalAddres_Outcome.comps.1.label	número de participantes
+VFEE_RoyalAddres_Outcome.comps.2.label	imponência do cômodo
+VFEE_RoyalAddres_Outcome.outcomeChances.0.label	Terrível
+VFEE_RoyalAddres_Outcome.outcomeChances.1.label	Sem graça
+VFEE_RoyalAddres_Outcome.outcomeChances.2.label	Encorajador
+VFEE_RoyalAddres_Outcome.outcomeChances.3.label	Inspirador
+## DefInjected/RitualOutcomeEffectDef/RoyalBall.xml
+VFEE_GrandBall_Outcome.description	Conforme a qualidade do ritual, os participantes ganham entre {MINMOOD} e {MAXMOOD} de humor por {MOODDAYS} dias.
+VFEE_GrandBall_Outcome.comps.0.label	número de participantes
+VFEE_GrandBall_Outcome.comps.1.label	imponência do cômodo
+VFEE_GrandBall_Outcome.outcomeChances.0.label	Terrível
+VFEE_GrandBall_Outcome.outcomeChances.1.label	Chato
+VFEE_GrandBall_Outcome.outcomeChances.2.label	Agradável
+VFEE_GrandBall_Outcome.outcomeChances.3.label	Incrível
+## DefInjected/RoomRoleDef/RoomRoles.xml
+VFEE_Ballroom.label	salão de baile
+VFEE_Gallery.label	galeria
+## DefInjected/RoyalTitleDef/RoyalTitles_Empire.xml
+VFEE_Archcount.label	arquiarconte
+VFEE_Archcount.description	O título imperial de arquiarconte é dado aos arcontes que construíram domínios impressionantes, capazes de sustentar e entreter hóspedes importantes.
+VFEE_Archcount.labelFemale	arquiarcontessa
+VFEE_Marquess.label	marquês
+VFEE_Marquess.description	O título imperial de marquês é o segundo mais alto da nobreza média. No Império, os marqueses controlam colônias na borda do espaço imperial. Em tempo de guerra, podem mobilizar frotas que impedem o inimigo de furar as fronteiras ou servem de bigorna para o martelo dos aliados.
+VFEE_Marquess.labelFemale	marquesa

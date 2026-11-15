@@ -1,0 +1,244 @@
+## Keyed/Settings.xml
+VF_ShellExplosionsOnWaterTooltip	Projéteis explosivos sobre a água têm o raio da explosão reduzido, e o som vira um "tchibum".
+VF_RunOverPawns	Atropelar personagens
+VF_RunOverPawnsTooltip	Os veículos podem atropelar personagens e causar dano contundente conforme a massa e a velocidade.
+VF_ChanceToRunOverFriendlies	Chance de fogo amigo
+VF_ChanceToRunOverFriendliesTooltip	Chance de atropelar personagens aliados.
+VF_VehicleStats	Atributos
+VF_Upgrades	Melhorias
+VF_OverrideDrawColor	Substituir a pintura
+VF_OverrideDrawColorTooltip	Quando for aplicada uma melhoria que vem com padrão ou cor própria, a pintura anterior é substituída.
+## Keyed/Settings_Debug.xml
+VF_DevMode	Modo dev
+VF_DevMode_Logging	Registros
+VF_DevMode_Troubleshooting	Solução de problemas
+VF_DevMode_Drawers	Ajuda visual
+VF_DevMode_Pathing	Caminhos
+VF_DevMode_ShowRecentNews	Mostrar as novidades mais recentes
+VF_DevMode_OpenQuickTestSettings	Menu de teste rápido
+VF_DevMode_GraphEditor	Editor de gráficos
+VF_DevMode_ResetAll	Redefinir todas as opções
+VF_DevMode_ResetVehicle	Redefinir {0}
+VF_DevMode_ResetAllVehicles	Redefinir todos os veículos
+VF_DevMode_ResetPage	Redefinir página
+VF_DevMode_ResetAllConfirmation	Tem certeza de que quer voltar todas as opções aos valores originais? Se vocês ficaram sem acesso às opções do mod por causa de um erro, vão precisar reiniciar depois de redefinir.
+VF_DevMode_DebugLogging	Registrar informações de depuração.
+VF_DevMode_DebugLoggingTooltip	Ativa mensagens no registro com valores e informações úteis para depurar veículos. Use só se estiver fazendo um complemento de veículos.
+VF_DevMode_DebugPathCostRecalculationLogging	Registrar recálculo de custo de caminho
+VF_DevMode_DebugPathCostRecalculationLoggingTooltip	Registra um resumo da mudança de custo de caminho de todos os veículos afetados por regiões alteradas.
+VF_DevMode_LogThreadActivity	Registrar atividade da thread
+VF_DevMode_LogThreadActivityTooltip	Registra as ações assíncronas em andamento na thread dedicada do mapa que está sendo visto.
+VF_DevMode_DebugDraftAnyVehicle	Ligar qualquer veículo
+VF_DevMode_DebugDraftAnyVehicleTooltip	Permite ligar e mover qualquer veículo, tenha passageiros ou não. Útil para barcos vazios em águas profundas ou para acelerar testes.
+VF_DevMode_DebugInstantSendOff	Decolagem aérea instantânea
+VF_DevMode_DebugInstantSendOffTooltip	Manda os veículos aéreos para o mapa na hora, pulando animações e outras esperas.
+VF_DevMode_DebugShootAnyTurret	Atirar com qualquer torre
+VF_DevMode_DebugShootAnyTurretTooltip	Permite atirar com qualquer torre, tenha alguém operando ou não.
+VF_DevMode_DebugSpawnVehiclesGodMode	Gerar construções de veículos (modo deus)
+VF_DevMode_DebugSpawnVehiclesGodModeTooltip	Plantas de veículos colocadas no modo deus geram a versão construção, em vez de gerar um VehiclePawn.
+VF_DevMode_DebugDrawUpgradeNodeGrid	Desenhar grade da árvore de melhorias
+VF_DevMode_DebugDrawUpgradeNodeGridTooltip	Desenha a grade da árvore de melhorias para posicionar nos eixos (x,y).
+VF_DevMode_DebugDrawHitbox	Desenhar área de colisão
+VF_DevMode_DebugDrawHitboxTooltip	Desenha a área de colisão do veículo destacando os quadrados do mapa que ele ocupa.
+VF_DevMode_DebugDrawVehicleTracks	Desenhar VehicleTracks
+VF_DevMode_DebugDrawVehicleTracksTooltip	Desenha os quadrados ocupados pelas "VehicleTracks" do veículo, que marcam quais quadrados vão sofrer dano a cada movimento.
+VF_DevMode_DebugDrawBumpers	Desenhar para-choques
+VF_DevMode_DebugDrawBumpersTooltip	Desenha os quadrados logo à frente do veículo que indicam quando ele "bate" em algo e interrompe o caminho.
+VF_DevMode_DebugDrawLordMeetingPoint	Desenhar ponto de encontro
+VF_DevMode_DebugDrawLordMeetingPointTooltip	Destaca o quadrado definido como ponto de encontro da caravana de veículos.
+VF_DevMode_DebugDrawFleePoints	Desenhar pontos de fuga
+VF_DevMode_DebugDrawFleePointsTooltip	Desenha as tentativas dos personagens de fugir de veículos vindo na direção deles.
+VF_DevMode_DebugDrawGrid	Desenhar grade de depuração
+VF_DevMode_DebugDrawGridTooltip	Desenha os valores da grade de depuração do tipo escolhido.
+VF_DevMode_DebugPathfinderDebugging	Caminhos locais
+VF_DevMode_DebugPathfinderDebuggingTooltip	Abre o menu para depurar vários resultados da busca de caminho (por quadrado e por região)
+VF_DevMode_DebugWorldPathfinderDebugging	Caminhos no mundo
+VF_DevMode_DebugWorldPathfinderDebuggingTooltip	Abre o menu para depurar a WorldPathGrid de qualquer VehicleDef.
+VF_DevMode_DebugDrawVehiclePathingCosts	Desenhar custos de caminho
+VF_DevMode_DebugDrawVehiclePathingCostsTooltip	Desenha os custos por quadrado/região calculados pela busca de caminho. Mostra o custo acumulado.
+VF_DevMode_DebugDrawPathfinderSearch	Desenhar busca de caminho
+VF_DevMode_DebugDrawPathfinderSearchTooltip	Desenha a busca de caminho abrindo e fechando nós enquanto procura uma rota. Também mostra a busca por blocos se a busca hierárquica estiver ativa. A busca é desacelerada de propósito para mostrar o processo, já que a busca assíncrona normalmente é rápida demais para ver.
+## Keyed/Settings_Fields.xml
+VF_VehicleEnabled	Ativado
+VF_VehicleDisabled	Desativado
+VF_VehiclePlayerOnly	Só o jogador
+VF_VehicleRaiderOnly	Só NPCs
+VF_EnableButtonTooltip	Se desativado, este veículo não aparece no jogo. Vale tanto para o jogador quanto para as facções NPC.
+VF_MovementPermissions	Tipo de controle
+VF_NavigationType	Navegação
+VF_NavigationTypeTooltip	Categoria de navegação no mapa-múndi. Define quando o veículo pode se mover no mapa-múndi.
+VF_Nameable	Pode receber nome
+VF_NameableTooltip	Permite dar nome a este veículo. O nome aparece em cima do veículo e substitui o rótulo exibido.
+VF_CombatPower	Poder de combate
+VF_CombatPowerTooltip	Pontos de combate que o veículo custa para aparecer num evento.
+VF_CanCaravan	Caravana
+VF_CanCaravanTooltip	O veículo pode ser levado em caravanas.
+VF_SaveableFieldDisabledConditionTooltip	Desativado. {0}
+VF_DisabledSingleModDependencyTooltip	Desativado. Mod compatível fora da lista de mods ativos: {0}
+VF_DisabledMultipleModsDependencyTooltip	Desativado. Mods compatíveis fora da lista de mods ativos: {0}
+VF_SaveableFieldDisabledTooltip	Desativado para este tipo de veículo.
+VF_SaveableFieldLockedTooltip	Opção travada para este veículo.
+VF_DebugDisabledTooltip	Desativado para todos os veículos no momento.
+VF_GizmoDisabledTooltip	Desativado nas opções do mod.
+VF_CollisionMultiplier	Dano em personagens
+VF_CollisionMultiplierTooltip	Multiplicador do dano causado a personagens atropelados por veículos.
+VF_CollisionVehicleMultiplier	Dano no veículo
+VF_CollisionVehicleMultiplierTooltip	Multiplicador do dano que o veículo sofre ao atropelar um personagem.
+VF_ManhunterTargetsVehicle	Alvo de caçadores de homens
+VF_ManhunterTargetsVehicleTooltip	Animais caçadores de homens vão atacar este veículo.
+VF_EMPStuns	PEM atordoa
+VF_EMPStunsTooltip	Armas PEM desativam este veículo temporariamente.
+VF_CanAdaptToEMP	Pode se adaptar
+VF_CanAdaptToEMPTooltip	Pode se adaptar ao dano de PEM e ficar temporariamente imune a atordoamentos.
+VF_VehicleCannotStun	O veículo não tem componentes que possam ser atordoados.
+VF_FishingEnabled	Pode pescar
+VF_FishingEnabledTooltip	Permite pescar quando está parado na água.
+VF_JobLimitations	Trabalhos de veículos
+VF_MaxWorkers	Máximo de trabalhadores
+VF_OffRoadMultiplier	Multiplicador fora da estrada
+VF_OffRoadMultiplierTooltip	Multiplicador de custo de caminho para andar nas estradas.
+VF_WinterSpeedMultiplier	Multiplicador de velocidade no inverno
+VF_WinterSpeedMultiplierTooltip	Multiplicador de custo de caminho para viajar no inverno.
+VF_WorldSpeedMultiplier	Multiplicador de velocidade no mundo
+VF_WorldSpeedMultiplierTooltip	Multiplicador da velocidade quando está numa caravana no mapa-múndi.
+VF_DeployTime	Tempo para desdobrar
+VF_DischargePerTick	Taxa de descarga
+VF_DischargePerTickTooltip	Quanto a bateria perde de carga por tique.
+VF_TicksPerCharge	Taxa de carga
+VF_TicksPerChargeTooltip	Quanto de carga a bateria recebe por tique.
+VF_NotElectricPowered	Não é movido a eletricidade.
+VF_PerDay	/ dia
+VF_Fuel	Combustível
+VF_FuelConsumptionRate	Taxa de consumo de combustível
+VF_FuelConsumptionRateTooltip	Combustível consumido por dia. Veículos parados gastam 50% menos.
+VF_FuelCapacity	Capacidade de combustível
+VF_FuelCapacityTooltip	Quanto combustível pode ser guardado
+VF_FuelConsumptionRateWorldMultiplier	% de combustível no mundo
+VF_FuelConsumptionRateWorldMultiplierTooltip	Multiplicador de consumo de combustível no mapa-múndi
+VF_AutoRefuelPercent	% de abastecimento automático
+VF_AutoRefuelPercentTooltip	Os colonos vão tentar abastecer o veículo quando o combustível ficar abaixo desta porcentagem.
+VF_TargetFuelConfigurable	Nível de combustível configurável
+VF_TargetFuelConfigurableTooltip	O nível máximo de combustível pode ser configurado.
+VF_AmbientHeat	Calor ambiente
+VF_AmbientHeatTooltip	Calor emitido enquanto o combustível é consumido.
+VF_ReconDistance	Distância de reconhecimento
+VF_ReconDistanceTooltip	Distância, em regiões, em que o ônibus espacial consegue fazer reconhecimento de um local ou assentamento.
+VF_FuelConsumptionWorld	% de consumo de combustível
+VF_FuelConsumptionWorldTooltip	Multiplicador de consumo de combustível no mapa-múndi.
+VF_LaunchFixedMaxDistance	Distância máxima fixa
+VF_LaunchFixedMaxDistanceTooltip	Define uma distância máxima fixa que este veículo pode voar, independente do combustível.
+VF_LaunchFixedMaxDistanceDisabled	Nenhuma
+VF_ControlInFlight	Controle em voo
+VF_ControlInFlightTooltip	Controla o veículo aéreo durante o voo. Permite mudar a rota no meio do caminho, escolher o pouso depois que o mapa carregar e fazer rasantes em mapas que ainda não foram carregados.
+VF_CanRoofPunch	Pode furar telhados
+VF_CanRoofPunchTooltip	O veículo pode atravessar telhados ao pousar.
+VF_SpaceFlight	Viagem espacial
+VF_SpaceFlightTooltip	O veículo é capaz de decolar para objetos espaciais e partir deles.
+VF_SignalJamming	Bloqueador de sinal
+VF_SignalJammingTooltip	O veículo é capaz de bloquear sinais para visitar certas plataformas orbitais.
+VF_RateOfClimb	Taxa de subida
+VF_RateOfClimbTooltip	Quanto o veículo sobe por tique.
+VF_MaxAltitude	Altitude máxima
+VF_MaxAltitudeTooltip	Altitude máxima que este veículo alcança em voo.
+VF_MaxFallRate	Taxa máxima de queda
+VF_MaxFallRateTooltip	Quanto, no máximo, este veículo desce quando é abatido ou fica sem combustível.
+VF_Instant	Instantâneo
+VF_Rotatable	Giratória
+VF_RotatableTooltip	Se a torre pode girar para mirar no alvo ou se é fixa e só atira na direção para onde está virada.
+VF_MagazineCapacity	Capacidade do carregador
+VF_MagazineCapacityTooltip	Quantos tiros esta torre dá antes de precisar recarregar.
+VF_MinRange	Alcance mínimo
+VF_MinRangeTooltip	O alcance mínimo desta torre.
+VF_MaxRange	Alcance máximo
+VF_MaxRangeTooltip	O alcance máximo desta torre.
+VF_WarmupTime	Tempo de preparo
+VF_WarmupTimeValue	{0}s
+VF_WarmupTimeTooltip	Quanto tempo esta torre leva para atirar.
+VF_ReloadTime	Tempo de recarga
+VF_ReloadTimeValue	{0}s
+VF_ReloadTimeTooltip	Quanto tempo leva para recarregar esta torre.
+VF_RotationSpeed	Velocidade de giro
+VF_RotationSpeedValue	{0} graus/s
+VF_RotationSpeedTooltip	A rapidez com que esta torre gira para encarar o alvo.
+VF_FireModes	Modos de disparo
+VF_FireModesTooltip	Cadências de tiro que esta torre pode usar.
+VF_RateOfFire	Cadência de tiro
+VF_RateOfFireValue	{0} tiros / minuto
+VF_ShotsPerBurst	Tiros por rajada
+VF_ShotGroup	Agrupamento
+VF_ShotGroupValue	{0} quadrados
+## Keyed/SmashTools.xml
+ST_Copy	Copiar
+ST_Paste	Colar
+ST_Delete	Apagar
+ST_AnimationWindow	Animador
+ST_ControllerWindow	Controlador
+ST_CreateNewClip	Criar novo clipe...
+ST_RemoveProperties	Remover propriedades
+ST_AddKey	Adicionar chave
+ST_RemoveKey	Apagar chave
+ST_PreviewAnimation	Pré-visualizar
+ST_PreviewAnimationTooltip	Liga/desliga o modo de pré-visualização da animação da entidade no jogo
+ST_PlayAnimationTooltip	Tocar a animação
+ST_PauseAnimationTooltip	Pausar a animação
+ST_SkipFrameBeginningTooltip	Ir para o início da animação
+ST_SkipFramePreviousTooltip	Ir para o quadro-chave anterior
+ST_SkipFrameNextTooltip	Ir para o próximo quadro-chave
+ST_SkipFrameEndTooltip	Ir para o fim da animação
+ST_AddKeyFrame	Adicionar quadro-chave
+ST_AddAnimationEvent	Adicionar evento
+ST_AddProperty	Adicionar propriedade
+ST_Injected	Injetado
+ST_UnsupportedType	TipoNãoSuportado
+ST_NoFunctionSelected	Nenhuma função escolhida
+ST_NoControllerParameters	Sem parâmetros de controlador
+ST_DopesheetTab	Folha de animação
+ST_CurvesTab	Curvas
+ST_Layers	Camadas
+ST_Parameters	Parâmetros
+ST_Conditions	Condições
+ST_CreateState	Criar estado
+ST_CreateSubState	Criar submáquina de estados
+ST_MakeTransition	Criar transição
+ST_SetStateDefault	Definir como estado padrão da camada
+ST_CreateBlendTree	Criar nova BlendTree no estado
+ST_Loop	Repetir
+ST_MotionFile	Movimento
+ST_MotionSpeed	Velocidade
+ST_MotionSpeedMultiplier	Multiplicador
+ST_MotionTime	Tempo do movimento
+ST_Mirror	Espelhar
+ST_CycleOffset	Deslocamento do ciclo
+ST_WriteDefaults	Gravar padrões
+ST_TransitionList	Transições
+ST_TransitionSolo	Solo
+ST_TransitionMute	Mudo
+## Keyed/Status.xml
+VF_FormingCaravanStatus_RopingAnimals	Amarrando animais aos veículos.
+VF_FormingCaravanStatus_RopingAnimals_Pause	Amarrando animais aos veículos. (esperando)
+VF_FormingCaravanStatus_BoardVehicles	Embarcando.
+VF_FormingCaravanStatus_BoardVehicles_Pause	Embarcando. (esperando)
+VF_FormingCaravanStatus_Leaving_Vehicles	Partindo.
+VF_FormingCaravanStatus_Leaving_Vehicles_Pause	Partindo. (esperando)
+VF_draftLabel	Ligar o motor
+VF_healthLabel_Healthy	Funcionando
+VF_healthLabel_Injured	Precisa de conserto
+VF_healthLabel_Immobile	Inoperante
+VF_healthLabel_Dead	Destruído
+VF_healthLabel_Beached	Encalhado
+VF_GeneratingPathData	Gerando dados de caminho dos veículos
+VF_GeneratingPathGrids	Gerando grades de caminho
+VF_GeneratingRegions	Gerando regiões dos veículos
+## Keyed/Turrets.xml
+VF_ReloadVehicleTurret	Recarregar
+VF_ToggleAutoTargeting	Ligar/desligar mira automática
+VF_ToggleAutoTargetingDesc	Define se a torre mira sozinha nos inimigos. Se ativada, ataca qualquer inimigo ao alcance.\n\nA mira automática está {0}.
+VF_AutoTargetingDisabled	Esta torre não permite mira automática.
+VF_VehicleTurrets_NoAmmoToReload	Sem munição utilizável.
+VF_SetReloadLevel	Definir o nível de recarga automática em {0}.
+VF_SetReloadLevelTooltip	Configurar nível de munição
+## Keyed/Upgrades.xml
+VF_Upgrade	Melhorar
+VF_DisabledFromOtherNode	Inacessível: desativado por outra melhoria.
+VF_MissingPrerequisiteUpgrade	Faltam pré-requisitos.
+VF_RemoveUpgrade	Remover

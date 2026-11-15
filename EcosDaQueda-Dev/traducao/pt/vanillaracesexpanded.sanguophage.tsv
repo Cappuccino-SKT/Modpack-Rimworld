@@ -1,0 +1,330 @@
+## DefInjected/AbilityDef/Abilities.xml
+VRE_AnimalFeed.label	alimentar-se de animal
+VRE_AnimalFeed.description	Morde o animal-alvo e extrai hemogênio direto do sangue dele. O animal perde sangue e fica horrorizado com a interação, o que pode fazê-lo atacar. Um coagulante de ação rápida fecha o ferimento para evitar sangramento.\n\nSó pode ter animais como alvo.
+VRE_CorpseFeed.label	alimentar-se de cadáver
+VRE_CorpseFeed.description	Morde o cadáver-alvo e extrai hemogênio direto do sangue dele. O cadáver perde todo o sangue que restava.\n\nSó pode ter cadáveres humanos como alvo.
+VRE_SanguoFeed.label	alimentar-se de sanguófago
+VRE_SanguoFeed.description	Morde o alvo e extrai hemogênio direto do sangue dele. O alvo perde sangue e fica ofendido com a interação, mas não sofre outros danos. Um coagulante de ação rápida fecha o ferimento para evitar sangramento.\n\nSó pode ter humanos hemogênicos como alvo.
+VRE_Ecstasy.label	êxtase
+VRE_Ecstasy.description	Dá ao alvo uma sensação de êxtase extremo por um curto período, fazendo-o se apaixonar perdidamente por quem usou a habilidade.
+VRE_HeartCrush.label	esmagar coração
+VRE_HeartCrush.description	Arranca o coração de um inimigo bem próximo, matando-o na hora e cobrindo a área de sangue. Só funciona em criaturas de tamanho corporal 2 ou menor. Criaturas maiores ainda sofrem dano pesado.
+VRE_FilterInfection.label	filtrar infecção
+VRE_FilterInfection.description	Impõe as mãos sobre o alvo e o ajuda a combater infecções. Funciona em animais e humanos.
+VRE_Hemosmosis.label	hemosmose
+VRE_Hemosmosis.description	Suga a sujeira de sangue ao redor do sanguófago e a transforma em hemogênio.
+VRE_Resurrect.label	ressuscitar
+VRE_Resurrect.description	Usa os arquitas da corrente sanguínea para infundir nova vida num cadáver, reparando estruturas celulares degeneradas e reativando as funções vitais. Quanto mais velho e pior conservado o cadáver, maior a chance de voltar com perda de memória ou problemas de saúde. A habilidade parece esgotar os arquitas de algum jeito, então só pode ser usada muito raramente.
+VRE_ToxicCloud.label	nuvem tóxica
+VRE_ToxicCloud.description	Expele uma fumaça tóxica densa de reservatórios orgânicos especiais nos pulmões. O gás tóxico é mortal para quase todas as criaturas.
+VRE_ViscuousGoo.label	gosma viscosa
+VRE_ViscuousGoo.description	Dispara um projétil que explode no impacto e cria muita sujeira, deixando muito mais lento quem tenta passar por ela.
+## DefInjected/AbilityDef/Abilities_SingleUse.xml
+VRE_Coagulate_SingleUse.label	coagular
+VRE_Coagulate_SingleUse.description	Usa glândulas especiais nos pulsos para tratar rapidamente os ferimentos de alguém.
+VRE_PiercingSpine_SingleUse.label	espinho perfurante
+VRE_PiercingSpine_SingleUse.description	Usa uma reação química hemogênica para disparar um espinho ósseo contra o alvo. O espinho sai pela pele por uma abertura entre as clavículas. Pelo jeito como é lançado, é surpreendentemente fácil de mirar.
+VRE_AcidSpray_SingleUse.label	esguichar ácido
+VRE_AcidSpray_SingleUse.description	Esguicha uma substância ácida pegajosa das glândulas do pescoço pela boca, por toda a área-alvo. O ácido gruda nos alvos e os queima.
+VRE_ToxicCloud_SingleUse.label	nuvem tóxica
+VRE_ToxicCloud_SingleUse.description	Expele uma fumaça tóxica densa de reservatórios orgânicos especiais nos pulmões. O gás tóxico é mortal para quase todas as criaturas.
+VRE_FilterInfection_SingleUse.label	filtrar infecção
+VRE_FilterInfection_SingleUse.description	Impõe as mãos sobre o alvo e o ajuda a combater infecções. Funciona em animais e humanos.
+VRE_Ecstasy_SingleUse.label	êxtase
+VRE_Ecstasy_SingleUse.description	Dá ao alvo uma sensação de êxtase extremo por um curto período, fazendo-o se apaixonar perdidamente por quem usou a habilidade.
+VRE_Hemosmosis_SingleUse.label	hemosmose
+VRE_Hemosmosis_SingleUse.description	Suga a sujeira de sangue ao redor do sanguófago e a transforma em hemogênio.
+VRE_ViscuousGoo_SingleUse.label	gosma viscosa
+VRE_ViscuousGoo_SingleUse.description	Dispara um projétil que explode no impacto e cria muita sujeira, deixando muito mais lento quem tenta passar por ela.
+VRE_HeartCrush_SingleUse.label	esmagar coração
+VRE_HeartCrush_SingleUse.description	Arranca o coração de um inimigo bem próximo, matando-o na hora e cobrindo a área de sangue. Só funciona em criaturas de tamanho corporal 2 ou menor. Criaturas maiores ainda sofrem dano pesado.
+## DefInjected/GameConditionDef/Incidents_Map_Misc.xml
+VRE_BloodMoonCondition.label	lua de sangue
+VRE_BloodMoonCondition.description	Uma das luas deste planeta entrou na sombra do mundo, deixando os sanguófagos loucos de fome.
+VRE_BloodMoonCondition.endMessage	A lua de sangue acabou.
+VRE_BloodMoonCondition.letterText	Uma das luas deste planeta entrou na sombra do mundo, impedindo que a luz do sol ilumine a superfície da lua. Com isso, a lua ficou vermelho-sangue, fenômeno conhecido como lua de sangue.\n\nDurante esse período, os mecanitos dos sanguófagos entram em sobrecarga, tirando das cavernas os vampiros famintos de hemogênio. Qualquer sanguófago vampiro que tenha perdido menos da metade do hemogênio entra no estado mental caçador de hemogênio. O hemogênio se esgota bem mais rápido durante a lua de sangue.
+## DefInjected/GeneDef/GeneDefs_Abilities.xml
+VRE_Ecstasy.label	êxtase
+VRE_Ecstasy.description	Portadores deste gene conseguem se conectar psiquicamente ao alvo por um instante, dando-lhe uma sensação de êxtase e fazendo-o se apaixonar por quem usou a habilidade.
+VRE_Ecstasy.labelShortAdj	extasiante
+VRE_Ecstasy.symbolPack.prefixSymbols.0.symbol	êxta
+VRE_Ecstasy.symbolPack.prefixSymbols.1.symbol	sedu
+VRE_Ecstasy.symbolPack.prefixSymbols.2.symbol	sexy
+VRE_Ecstasy.symbolPack.suffixSymbols.0.symbol	sedutor
+VRE_Ecstasy.symbolPack.suffixSymbols.1.symbol	extasiante
+VRE_Ecstasy.symbolPack.suffixSymbols.2.symbol	prazeroso
+VRE_FilterInfection.label	filtrar infecção
+VRE_FilterInfection.description	Portadores deste gene têm glândulas especiais na boca que permitem separar o sangue infectado do sangue limpo.
+VRE_FilterInfection.labelShortAdj	filtrador
+VRE_FilterInfection.symbolPack.prefixSymbols.0.symbol	limpo
+VRE_FilterInfection.symbolPack.prefixSymbols.1.symbol	estéril
+VRE_FilterInfection.symbolPack.prefixSymbols.2.symbol	diális
+VRE_FilterInfection.symbolPack.suffixSymbols.0.symbol	filtrador
+VRE_FilterInfection.symbolPack.suffixSymbols.1.symbol	limpador
+VRE_Hemosmosis.label	hemosmose
+VRE_Hemosmosis.description	Portadores deste gene conseguem drenar o sangue do ambiente, desde que haja sangue para drenar.
+VRE_Hemosmosis.labelShortAdj	hemosmótico
+VRE_Hemosmosis.symbolPack.prefixSymbols.0.symbol	sugador
+VRE_Hemosmosis.symbolPack.suffixSymbols.0.symbol	sugador
+VRE_Hemosmosis.symbolPack.suffixSymbols.1.symbol	drenador
+VRE_Hemosmosis.symbolPack.suffixSymbols.2.symbol	osmótico
+VRE_ToxicCloud.label	nuvem tóxica
+VRE_ToxicCloud.description	Portadores deste gene conseguem expelir uma fumaça tóxica densa de reservatórios orgânicos especiais nos pulmões. O gás tóxico é mortal para quase todas as criaturas.
+VRE_ToxicCloud.labelShortAdj	cospe-toxina
+VRE_ToxicCloud.symbolPack.prefixSymbols.0.symbol	gaseador
+VRE_ToxicCloud.symbolPack.prefixSymbols.1.symbol	tox
+VRE_ToxicCloud.symbolPack.suffixSymbols.0.symbol	cuspidor
+VRE_ToxicCloud.symbolPack.suffixSymbols.1.symbol	excretor
+VRE_HeartCrush.label	esmagar coração
+VRE_HeartCrush.description	Portadores deste gene têm glândulas especiais de adrenalina que permitem encontrar o coração pulsante do oponente e arrancá-lo numa fúria insana.
+VRE_HeartCrush.labelShortAdj	esmaga-corações
+VRE_HeartCrush.symbolPack.prefixSymbols.0.symbol	estripador
+VRE_HeartCrush.symbolPack.prefixSymbols.1.symbol	coração
+VRE_HeartCrush.symbolPack.prefixSymbols.2.symbol	flagelo
+VRE_HeartCrush.symbolPack.suffixSymbols.0.symbol	estripador
+VRE_HeartCrush.symbolPack.suffixSymbols.1.symbol	esmagador
+VRE_ViscuousGoo.label	gosma viscosa
+VRE_ViscuousGoo.description	Os portadores desenvolvem glândulas no pescoço que geram e armazenam uma gosma grossa. Conseguem cuspi-la a longas distâncias e cobrir várias pessoas com uma gosma viscosa que as deixa mais lentas.
+VRE_ViscuousGoo.labelShortAdj	cospe-gosma
+VRE_ViscuousGoo.symbolPack.prefixSymbols.0.symbol	cuspe
+VRE_ViscuousGoo.symbolPack.prefixSymbols.1.symbol	gosma
+VRE_ViscuousGoo.symbolPack.suffixSymbols.0.symbol	cuspidor
+VRE_Resurrect.label	ressuscitar
+VRE_Resurrect.description	Os portadores têm uma reserva de arquitas ressuscitadores únicos que podem infundir um cadáver, reconstruir tecido degenerado e reativar os processos vitais. Isso traz os mortos de volta à vida, talvez com problemas de saúde. Só pode ser feito muito raramente e custa caro em hemogênio.
+VRE_Resurrect.symbolPack.prefixSymbols.0.symbol	vida
+VRE_Resurrect.symbolPack.wholeNameSymbols.0.symbol	ressuscitador
+## DefInjected/GeneDef/GeneDefs_Cosmetic.xml
+VRE_SanguineHair.label	cabelos sanguíneos
+VRE_SanguineHair.description	Portadores deste gene têm o cabelo naturalmente penteado nos estilos dos anciões sanguíneos.
+## DefInjected/GeneDef/GeneDefs_Ears.xml
+VRE_BatEars.label	orelhas de morcego
+VRE_BatEars.description	Portadores deste gene têm orelhas parecidas com as de morcego.
+VRE_BatEars.symbolPack.prefixSymbols.0.symbol	morcego
+VRE_BatEars.symbolPack.prefixSymbols.1.symbol	membrana
+VRE_BatEars.symbolPack.prefixSymbols.2.symbol	noite
+VRE_BatEars.symbolPack.prefixSymbols.3.symbol	quiróptero
+VRE_BatEars.symbolPack.suffixSymbols.0.symbol	morcego
+VRE_BatEars.symbolPack.suffixSymbols.1.symbol	trago
+VRE_UpperBatEars.label	orelhas quirópteras
+VRE_UpperBatEars.description	Portadores deste gene têm orelhas pontudas parecidas com as de morcego.
+VRE_UpperBatEars.symbolPack.prefixSymbols.0.symbol	morcego
+VRE_UpperBatEars.symbolPack.prefixSymbols.1.symbol	membrana
+VRE_UpperBatEars.symbolPack.prefixSymbols.2.symbol	noite
+VRE_UpperBatEars.symbolPack.prefixSymbols.3.symbol	quiróptero
+VRE_UpperBatEars.symbolPack.suffixSymbols.0.symbol	morcego
+VRE_UpperBatEars.symbolPack.suffixSymbols.1.symbol	trago
+## DefInjected/GeneDef/GeneDefs_Hands.xml
+VRE_Talons.label	garras de ave
+VRE_Talons.description	Portadores deste gene têm mãos parecidas com garras de ave de rapina. Isso reduz a capacidade de manipular objetos, mas permite ataques especiais no combate corpo a corpo.
+VRE_Talons.symbolPack.prefixSymbols.0.symbol	ave
+VRE_Talons.symbolPack.prefixSymbols.1.symbol	garra
+VRE_Talons.symbolPack.prefixSymbols.2.symbol	unha
+VRE_Talons.symbolPack.prefixSymbols.3.symbol	predador
+VRE_Talons.symbolPack.prefixSymbols.4.symbol	gancho
+VRE_Talons.symbolPack.suffixSymbols.0.symbol	garra
+VRE_Talons.symbolPack.suffixSymbols.1.symbol	afiado
+VRE_Talons.symbolPack.suffixSymbols.2.symbol	unha
+VRE_Talons.symbolPack.suffixSymbols.3.symbol	predador
+VRE_Talons.symbolPack.wholeNameSymbols.0.symbol	garras
+## DefInjected/GeneDef/GeneDefs_Hemogen.xml
+VRE_LowHemogenDrain.label	drenagem baixa de hemogênio
+VRE_LowHemogenDrain.description	Os portadores perdem 4 de hemogênio a mais por dia por entropia biológica.
+VRE_LowHemogenDrain.labelShortAdj	drenante
+VRE_LowHemogenDrain.resourceLabel	hemogênio
+VRE_ExtremeHemogenDrain.label	drenagem extrema de hemogênio
+VRE_ExtremeHemogenDrain.description	Os portadores perdem 12 de hemogênio a mais por dia por entropia biológica.
+VRE_ExtremeHemogenDrain.labelShortAdj	muito drenante
+VRE_ExtremeHemogenDrain.resourceLabel	hemogênio
+## DefInjected/GeneDef/GeneDefs_Noses.xml
+VRE_BatNose.label	nariz de morcego
+VRE_BatNose.description	Portadores deste gene têm um nariz-folha parecido com o de morcego.
+VRE_BatNose.symbolPack.prefixSymbols.0.symbol	morcego
+VRE_BatNose.symbolPack.prefixSymbols.1.symbol	tridente
+VRE_BatNose.symbolPack.prefixSymbols.2.symbol	folha
+VRE_BatNose.symbolPack.prefixSymbols.3.symbol	noite
+VRE_BatNose.symbolPack.suffixSymbols.0.symbol	morcego
+VRE_BatNose.symbolPack.suffixSymbols.1.symbol	noite
+## DefInjected/GeneDef/GeneDefs_SanguophageFeeding.xml
+VRE_AnimalFeeder.label	vampiro de animais
+VRE_AnimalFeeder.description	Portadores deste gene têm pequenas presas retráteis e um órgão no céu da boca que extrai hemogênio de sangue fresco e quente. Podem morder qualquer animal, sugar o sangue e ganhar hemogênio direto. Às vezes isso faz o animal atacar o portador.
+VRE_AnimalFeeder.symbolPack.prefixSymbols.0.symbol	hemo
+VRE_AnimalFeeder.symbolPack.prefixSymbols.1.symbol	sangue
+VRE_AnimalFeeder.symbolPack.prefixSymbols.2.symbol	vamp
+VRE_AnimalFeeder.symbolPack.prefixSymbols.3.symbol	presa
+VRE_AnimalFeeder.symbolPack.suffixSymbols.0.symbol	presa
+VRE_AnimalFeeder.symbolPack.suffixSymbols.1.symbol	comedor
+VRE_AnimalFeeder.symbolPack.suffixSymbols.2.symbol	ubus
+VRE_AnimalFeeder.symbolPack.wholeNameSymbols.0.symbol	vampiro de animais
+VRE_CorpseFeeder.label	vampiro de cadáveres
+VRE_CorpseFeeder.description	Portadores deste gene têm pequenas presas retráteis e um órgão no céu da boca que extrai hemogênio de sangue frio e podre. Podem morder qualquer cadáver humano, sugar o sangue e ganhar hemogênio direto.
+VRE_CorpseFeeder.symbolPack.prefixSymbols.0.symbol	hemo
+VRE_CorpseFeeder.symbolPack.prefixSymbols.1.symbol	sangue
+VRE_CorpseFeeder.symbolPack.prefixSymbols.2.symbol	vamp
+VRE_CorpseFeeder.symbolPack.prefixSymbols.3.symbol	presa
+VRE_CorpseFeeder.symbolPack.suffixSymbols.0.symbol	presa
+VRE_CorpseFeeder.symbolPack.suffixSymbols.1.symbol	comedor
+VRE_CorpseFeeder.symbolPack.suffixSymbols.2.symbol	ubus
+VRE_CorpseFeeder.symbolPack.wholeNameSymbols.0.symbol	vampiro de cadáveres
+VRE_SanguoFeeder.label	vampiro de sanguófagos
+VRE_SanguoFeeder.description	Portadores deste gene têm pequenas presas retráteis e um órgão no céu da boca que extrai hemogênio do sangue fresco e quente de outros sanguófagos. Podem morder um sanguófago que não resista, sugar o sangue e ganhar hemogênio direto.
+VRE_SanguoFeeder.symbolPack.prefixSymbols.0.symbol	hemo
+VRE_SanguoFeeder.symbolPack.prefixSymbols.1.symbol	sangue
+VRE_SanguoFeeder.symbolPack.prefixSymbols.2.symbol	vamp
+VRE_SanguoFeeder.symbolPack.prefixSymbols.3.symbol	presa
+VRE_SanguoFeeder.symbolPack.suffixSymbols.0.symbol	presa
+VRE_SanguoFeeder.symbolPack.suffixSymbols.1.symbol	comedor
+VRE_SanguoFeeder.symbolPack.suffixSymbols.2.symbol	ubus
+VRE_SanguoFeeder.symbolPack.wholeNameSymbols.0.symbol	vampiro de sanguófagos
+VRE_SanguoFeeder.symbolPack.wholeNameSymbols.1.symbol	diablerista
+## DefInjected/GeneDef/GeneDefs_UVSensitivity.xml
+VRE_Sensitivity_Dangerous.label	sensibilidade perigosa a UV
+VRE_Sensitivity_Dangerous.description	Portadores deste gene têm compostos biológicos na pele que reagem perigosamente à radiação UV. São extremamente sensíveis à luz do sol.
+VRE_Sensitivity_Dangerous.labelShortAdj	hipersensível a UV
+VRE_Sensitivity_Dangerous.symbolPack.prefixSymbols.0.symbol	escuro
+VRE_Sensitivity_Dangerous.symbolPack.prefixSymbols.1.symbol	túnel
+VRE_Sensitivity_Dangerous.symbolPack.prefixSymbols.2.symbol	sub
+VRE_Sensitivity_Dangerous.symbolPack.prefixSymbols.3.symbol	caverna
+VRE_Sensitivity_Dangerous.symbolPack.prefixSymbols.4.symbol	cripta
+VRE_Sensitivity_Dangerous.symbolPack.prefixSymbols.5.symbol	penumbra
+VRE_Sensitivity_Dangerous.symbolPack.prefixSymbols.6.symbol	noite
+## DefInjected/HediffDef/Hediffs.xml
+VRE_Sensitivity_Dangerous_Hediff.label	sensibilidade perigosa a UV
+VRE_Sensitivity_Dangerous_Hediff.description	Condição oculta que altera a visão do personagem conforme a luz do sol.
+VRE_ConsumedAnimalHemogen.label	consumiu hemogênio animal
+VRE_ConsumedAnimalHemogen.description	O hemogênio animal aumenta a regeneração e a capacidade de combate de quem consome, mas reduz muito a capacidade de se comunicar com os outros.
+VRE_ConsumedCorpseHemogen.label	consumiu hemogênio de cadáver
+VRE_ConsumedCorpseHemogen.description	O hemogênio de cadáver enfraquece muito quem o carrega, mas aumenta bastante a consciência e a filtragem do sangue.
+VRE_ConsumedSanguophageHemogen.label	consumiu hemogênio de sanguófago
+VRE_ConsumedSanguophageHemogen.description	O hemogênio de sanguófago dá a quem o carrega um impulso poderoso em todas as capacidades.
+VRE_SharpTalons.label	garras afiadas
+VRE_SharpTalons.description	Garras afiadas que podem ser usadas no combate corpo a corpo.
+VRE_SharpTalons.comps.HediffComp_VerbGiver.tools.sharp_talons.label	garras afiadas
+VRE_DraincasketSickness.label	enjoo do caixão drenador
+VRE_DraincasketSickness.description	Efeitos colaterais do uso de um caixão drenador. Os sintomas costumam incluir dor localizada, inchaço e vermelhidão onde os tubos do caixão se conectam. A vítima pode sentir cansaço crescente, fraqueza e um mal-estar geral.
+VRE_DraincasketSickness.descriptionShort	Efeitos colaterais do uso de um caixão drenador. A vítima pode sentir cansaço crescente, fraqueza e um mal-estar geral.
+## DefInjected/HediffDef/Hediffs_Deathrest.xml
+VRE_SolidifiedHemogen.label	hemogênio solidificado
+VRE_SolidifiedHemogen.description	A armadura está reforçada porque esta pessoa usou um solidificador de hemogênio durante o descanso mortal. O efeito dura até o próximo descanso mortal.
+VRE_SolidifiedHemogen.extraTooltip	Dura até o próximo descanso mortal.
+VRE_HemogenAmplifiedWeak.label	hemogênio amplificado, fraco
+VRE_HemogenAmplifiedWeak.description	Todo ganho de hemogênio é multiplicado porque esta pessoa usou um pequeno amplificador de hemogênio durante o descanso mortal. O efeito dura até o próximo descanso mortal.
+VRE_HemogenAmplifiedWeak.extraTooltip	Dura até o próximo descanso mortal.
+## DefInjected/IncidentDef/Incidents_Map_Misc.xml
+VRE_BloodMoon.label	lua de sangue
+VRE_BloodMoon.letterLabel	Lua de sangue
+## DefInjected/JobDef/Jobs_Work.xml
+VRE_ExtractHemogenAnimal.reportString	extraindo hemogênio (animal) de TargetA.
+VRE_ExtractHemogenCorpse.reportString	extraindo hemogênio (cadáver) de TargetA.
+VRE_DrinkHemogenCorpse.reportString	bebendo hemogênio (cadáver) de TargetA.
+VRE_ExtractHemogenSanguophage.reportString	extraindo hemogênio (sanguófago) de TargetA.
+VRE_HemohunterJob.reportString	extraindo hemogênio à força de TargetA.
+VRE_CarryToDraincasket.reportString	levando TargetA ao caixão drenador.
+VRE_EnterDraincasket.reportString	entrando no caixão drenador.
+VRE_RefuelDraincasket.reportString	abastecendo TargetA.
+## DefInjected/MentalStateDef/MentalStates_Mood.xml
+VRE_Hemohunter.label	caçador de hemogênio
+VRE_Hemohunter.baseInspectLine	Estado mental: caçador de hemogênio
+VRE_Hemohunter.beginLetter	{0} virou um caçador de hemogênio! \n\n[PAWN_pronoun] vai drenar o hemogênio de qualquer um que vir, até o próprio hemogênio voltar a um nível seguro.
+VRE_Hemohunter.recoveryMessage	O estado de caçador de hemogênio de {0} acabou.
+## DefInjected/StyleItemCategoryDef/StyleItemCategoryDefs.xml
+VRE_Sanguophage.label	sanguófago
+## DefInjected/ThingDef/BloodNet.xml
+VRE_HemogenPipe.label	cano de hemogênio
+VRE_HemogenPipe.description	Um cano usado para transportar hemogênio entre torneiras, ralos, tanques e estruturas movidas a hemogênio.
+VRE_UndergroundHemogenPipe.label	cano de hemogênio oculto
+VRE_UndergroundHemogenPipe.description	Canos de aço ocultos feitos para transportar hemogênio entre torneiras, ralos, tanques e estruturas movidas a hemogênio.
+VRE_HemogenValve.label	válvula de hemogênio
+VRE_HemogenValve.description	Liga e desliga o fluxo de hemogênio.
+VRE_HemogenVat.label	tanque de hemogênio
+VRE_HemogenVat.description	Um tanque industrial para armazenar o hemogênio que chega pela rede de canos. Os tanques podem ser marcados para que se retire hemogênio utilizável quando necessário.
+VRE_HemogenTap.label	torneira de hemogênio
+VRE_HemogenTap.description	Um reservatório tipo funil para distribuir hemogênio para uso posterior.
+VRE_HemogenDrain.label	ralo de hemogênio
+VRE_HemogenDrain.description	Um reservatório tipo funil para colocar hemogênio na rede, enchendo os tanques conectados.
+VRE_Draincasket.label	caixão drenador
+VRE_Draincasket.description	Um aparelho sinistro feito para extrair hemogênio de uma pessoa mantendo sua força vital no mínimo possível. Este caixão escuro e ameaçador guarda o ocupante num estado crepuscular de existência, com o corpo sendo drenado aos poucos do precioso hemogênio. Preso ao caixão drenador, o ocupante depende de ser alimentado regularmente para sobreviver, pois ainda pode morrer de fome.\n\nProduz pacotes de hemogênio por dia enquanto o ocupante tiver comida e o caixão estiver ligado a uma rede de hemogênio. A quantidade depende da velocidade da fome do ocupante: quem tem pior eficiência metabólica produz mais pacotes, mas gasta proporcionalmente mais nutrição. Sem comida, o caixão acaba matando o ocupante.\n\nSe ligado a uma rede de pasta nutritiva, alimenta o ocupante com os nutrientes armazenados.
+VRE_Draincasket.comps.CompDraincasket.fuelGizmoLabel	Nutrição
+VRE_Draincasket.comps.CompDraincasket.fuelLabel	Nutrição
+## DefInjected/ThingDef/Buildings_Deathrest.xml
+VRE_InvocationMatrix.label	matriz de invocação
+VRE_InvocationMatrix.description	Um dispositivo sofisticado que infunde em quem está em descanso mortal habilidades sanguófagas raras e poderosas, explorando a própria essência de sua natureza vampírica. Com um sistema complexo de condutos de sangue e ressonadores de essência, a matriz se conecta a um caixão de descanso mortal e canaliza a força vital do ocupante para liberar o potencial oculto de sua linhagem. Enquanto a pessoa dorme no descanso mortal, a matriz de invocação lhe concede um poder único escolhido. Esta construção precisa de um suprimento constante de hemogênio para funcionar.
+VRE_InvocationMatrix.comps.CompRefuelable.fuelLabel	Hemogênio
+VRE_HemodynamicAccelerator.label	acelerador hemodinâmico
+VRE_HemodynamicAccelerator.description	Um dispositivo avançado feito para acelerar o descanso mortal ao custo de consumir sangue. Conectando-se a quem está em descanso mortal, o aparelho usa análise sanguínea complexa e estimulantes sanguíneos potentes para maximizar a eficiência do caixão de descanso mortal. Enquanto acelera a recuperação, o acelerador hemodinâmico exige um suprimento contínuo de hemogênio. Para funcionar, precisa estar conectado a um caixão de descanso mortal.
+VRE_HemodynamicAccelerator.comps.CompRefuelable.fuelLabel	Hemogênio
+VRE_HemogenSolidifier.label	solidificador de hemogênio
+VRE_HemogenSolidifier.description	Um dispositivo feito para aumentar a resistência de quem está em descanso mortal manipulando a estrutura molecular da pele. Com projetores biorressonantes e nanoagentes à base de sangue, o solidificador age sobre o hemogênio do corpo, fortalecendo e engrossando as moléculas da pele. Enquanto a pessoa dorme, o solidificador tece uma camada densa e protetora ao redor dela, deixando a pele mais resistente a dano. Precisa estar conectado a um caixão de descanso mortal para funcionar, e o ocupante sai do descanso com a defesa reforçada.
+VRE_HemogenSolidifier.comps.CompRefuelable.fuelLabel	Hemogênio
+VRE_SmallHemogenAmplifier.label	pequeno amplificador de hemogênio
+VRE_SmallHemogenAmplifier.description	Este dispositivo deixa quem passou pelo descanso mortal num estado de hemogênio amplificado, ganhando um pouco mais de hemogênio de qualquer fonte. Com uma sonda glandular e um analisador de sangue, conecta-se a quem está em descanso mortal e estimula as glândulas de hemogênio. Precisa estar conectado a um caixão de descanso mortal para funcionar. Esta construção consome hemogênio para funcionar.
+VRE_SmallHemogenAmplifier.comps.CompRefuelable.fuelLabel	Hemogênio
+VRE_SmallHemopump.label	pequena hemobomba
+VRE_SmallHemopump.description	Esta pequena bomba refinadora de sangue aumenta a quantidade de hemogênio que uma pessoa em descanso mortal consegue guardar no corpo. Precisa estar conectada a um caixão de descanso mortal para funcionar. Esta construção consome hemogênio para funcionar.
+VRE_SmallHemopump.comps.CompRefuelable.fuelLabel	Hemogênio
+## DefInjected/ThingDef/Buildings_Deathrest_Royalty.xml
+VRE_PsychofluidWell.label	poço de psicofluido
+VRE_PsychofluidWell.description	Um aparelho especializado para restaurar o psifoco de psicastes em descanso mortal, nutrindo com delicadeza seus centros psíquicos. Com um equilíbrio cuidadoso de infusões sanguíneas e estimulação neural harmônica, o poço trabalha junto com a energia psíquica inata do psicaste. Enquanto a pessoa descansa no caixão de descanso mortal, o poço de psicofluido revitaliza suas reservas psíquicas para os próximos esforços. Para funcionar, precisa estar conectado a um caixão de descanso mortal e de um suprimento constante de hemogênio.\n\nAo contrário de outras máquinas de descanso mortal, o poço de psicofluido regenera 5% do psifoco total do ocupante a cada 1 hora, em vez de agir de uma vez só quando o descanso mortal termina.
+VRE_PsychofluidWell.comps.CompRefuelable.fuelLabel	Hemogênio
+## DefInjected/ThingDef/Filth_Various.xml
+VRE_FilthGoo.label	gosma viscosa
+## DefInjected/ThingDef/Items_Food.xml
+VRE_HemogenPack_Animal.label	pacote de hemogênio (animal)
+VRE_HemogenPack_Animal.description	Hemogênio animal. Aumenta a regeneração e a capacidade de combate de quem consome, mas reduz muito a capacidade de se comunicar com os outros.
+VRE_HemogenPack_Corpse.label	pacote de hemogênio (cadáver)
+VRE_HemogenPack_Corpse.description	Hemogênio contaminado e podre de um cadáver. Enfraquece muito quem o carrega, mas aumenta bastante a filtragem do sangue.
+VRE_HemogenPack_Sanguophage.label	pacote de hemogênio (sanguófago)
+VRE_HemogenPack_Sanguophage.description	Hemogênio puro e espesso de outro vampiro. O mais raro de todos, dá a quem o carrega um impulso poderoso em todas as capacidades.
+## DefInjected/ThingDef/Projectiles.xml
+VRE_Proj_Goo.label	gosma
+## DefInjected/ThoughtDef/Thoughts_Memory_Abilities.xml
+VRE_Ecstasy.stages.sanguophage_ecstasy.label	êxtase sanguófago
+VRE_EcstasyMood.stages.sanguophage_ecstasy.label	êxtase sanguófago
+VRE_EcstasyMood.stages.sanguophage_ecstasy.description	Não acredito no que estou sentindo, é incrível, é maravilhoso!
+## DefInjected/ThoughtDef/Thoughts_Memory_Social.xml
+VRE_FedOnDiablerie_Social.stages.fed_on_by_other_sanguophage.label	sugado por outro sanguófago
+## DefInjected/ThoughtDef/Thoughts_Memory_Special.xml
+VRE_FedOn.stages.fed_on_by.label	sugado por {0}
+VRE_FedOn.stages.fed_on_by.description	O crime supremo: fui sugado por outro sanguófago!
+## DefInjected/ThoughtDef/Thoughts_Situation_Special.xml
+VRE_SunlightSensitivity_Dangerous.stages.sunlight_sensitivity.label	sensibilidade à luz do sol
+VRE_SunlightSensitivity_Dangerous.stages.sunlight_sensitivity.description	Não consigo enxergar nada na luz. Sinto como se minha pele toda fosse pegar fogo!
+## DefInjected/WorkGiverDef/WorkGivers.xml
+VRE_RefuelDraincaskets.label	abastecer caixões drenadores
+VRE_RefuelDraincaskets.gerund	abastecendo
+VRE_RefuelDraincaskets.verb	abastecer
+## DefInjected/XenotypeDef/XenotypeDefs.xml
+VRE_Strigoi.label	strigoi
+VRE_Strigoi.description	Os strigoi nasceram de um experimento catastrófico que deu errado. Um cientista brilhante quis criar o soldado definitivo fundindo o DNA de humanos com o de uma criatura parecida com morcego, hoje extinta, conhecida como Desmodus. Em busca de imortalidade e poder, o cientista infundiu arquitas nesses híbridos, tornando-os imortais e sem idade. Os strigoi têm uma aparência aterrorizante, com traços que lembram humanos e morcegos ao mesmo tempo. O corpo é coberto por uma camada de fluido viscoso que melhora a cura de qualquer ferimento e os torna imunes a doenças e venenos. Em batalha, são oponentes formidáveis, usando as garras enormes para despedaçar os inimigos com eficiência implacável.\n\nAo longo dos milênios, os strigoi foram temidos e caçados por suas habilidades antinaturais e pela ameaça que representam ao equilíbrio de poder no universo. Foram forçados a viver nas sombras, escondidos de quem quer destruí-los, mas sempre buscando ampliar sua influência e avançar seus próprios planos misteriosos.\n\nAlguns acreditam que os strigoi não passam de mitos e lendas, enquanto outros sussurram sobre cabalas secretas de strigoi controlando civilizações inteiras por trás das cortinas. Há histórias de strigoi orquestrando rixas de sangue brutais nos cantos mais escuros de planetas distantes, ou espreitando nas sombras de enormes estações espaciais, manipulando eventos para fins insondáveis.
+VRE_Strigoi.descriptionShort	Strigoi são super-humanos sem idade e imortais, movidos por arquitas criados por arcotecs na corrente sanguínea. São viscosos e parecem um híbrido de humano e morcego. Curam qualquer ferimento e nunca sofrem com doenças ou venenos. Em combate, usam as garras enormes para despedaçar a presa. O preço é que os sanguófagos strigoi precisam consumir hemogênio de sangue humano ou animal para sobreviver e precisam fazer descanso mortal por longos períodos de tempos em tempos. Perdem hemogênio rápido por causa da alta entropia e precisam repor com frequência. São facilmente destruídos pelo fogo e sofrem penalidades extremas sob luz UV.
+VRE_Ekkimian.label	ekkimiano
+VRE_Ekkimian.description	Nos confins mais sombrios do universo, os vampiros ekkimianos nasceram das ambições distorcidas de um cientista renegado chamado Dr. Mortis. Obcecado pela ideia de morte e ressurreição, o Dr. Mortis quis criar uma nova raça de imortais fundindo arquitas ao DNA de humanos e de uma espécie misteriosa, extinta há muito tempo, que vivia de consumir os mortos. Os vampiros ekkimianos, como ficaram conhecidos, têm aparência grotesca e horripilante. Parecem mais cadáveres ressecados que seres vivos, e seus rostos monstruosos aterrorizam quem os vê. Apesar da aparência horrenda, têm uma capacidade de regeneração incrível, curando qualquer ferimento e sendo imunes a doenças e venenos.\n\nOs vampiros ekkimianos precisam consumir hemogênio vindo exclusivamente de cadáveres humanos para sobreviver. Essa exigência mórbida os fez viver nas sombras, revirando os restos de guerreiros caídos e se alimentando do que sobra das batalhas. Como outros sanguófagos, precisam entrar em descanso mortal de tempos em tempos para recuperar as forças e repor o hemogênio.\n\nHá histórias sussurradas de planetas inteiros sob o domínio de senhores vampiros ekkimianos, que se alimentam dos cadáveres dos inimigos e governam com um punho de ferro morto-vivo. Com medo do dia em que esses seres monstruosos se levantem e liberem todo o seu poder, os habitantes dos planetas colonizados precisam ficar sempre atentos, para não virarem mera ração da fome insaciável dos ekkimianos.
+VRE_Ekkimian.descriptionShort	Ekkimianos são super-humanos sem idade e imortais, movidos por arquitas criados por arcotecs na corrente sanguínea. São extremamente feios e parecem mais cadáveres ressecados que humanos. Curam qualquer ferimento e nunca sofrem com doenças ou venenos. Em combate, podem expelir nuvens tóxicas ao redor de si e regenerar rapidamente qualquer ferimento ao custo de hemogênio. O preço é que os sanguófagos ekkimianos precisam consumir hemogênio de cadáveres humanos, e só de cadáveres, e precisam fazer descanso mortal por longos períodos de tempos em tempos. São facilmente destruídos pelo fogo e ficam lentos sob luz UV.
+VRE_Bruxa.label	bruxa
+VRE_Bruxa.description	Na trama complexa do universo, as bruxas surgiram como um subxenotipo único e sedutor de sanguófago. Criadas por uma entidade arcotec enigmática que queria entrelaçar beleza e poder, as bruxas receberam graça e charme sem igual. Projetadas como as companheiras ideais de outros sanguófagos, foram feitas com a capacidade única de se vincular aos semelhantes e se alimentar do sangue deles, trazendo benefícios para os dois lados.\n\nAs bruxas são imortais e sem idade, com o corpo repleto de arquitas criados por arcotecs que lhes dão habilidades extraordinárias. Com uma beleza etérea, são irresistivelmente cativantes para quem cruza seu caminho. Além dos poderes regenerativos, que curam qualquer ferimento e as tornam imunes a doenças e venenos, as bruxas têm a notável capacidade de filtrar infecções da corrente sanguínea de outros humanos, purificando o sangue e enchendo-os de uma sensação avassaladora de êxtase no processo.\n\nAo longo das eras, as bruxas foram temidas e reverenciadas por sua beleza enfeitiçante e suas habilidades poderosas. Muitas vezes atuam como confidentes e companheiras de pessoas poderosas, incluindo senhores sanguófagos, e costumam ter grande influência nas sociedades das sombras. A capacidade única de se vincular a outros humanos levou à formação de alianças e redes secretas, consolidando ainda mais seu poder e influência.\n\nNa vastidão do universo, as bruxas continuam um enigma: sedutoras e misteriosas, com as verdadeiras intenções escondidas atrás de um véu de encanto e graça. Quem encontra uma bruxa deve tomar cuidado, pois seu toque pode trazer um prazer inimaginável, mas também levar a um destino mais traiçoeiro do que se poderia imaginar.
+VRE_Bruxa.descriptionShort	Bruxas são super-humanas sem idade e imortais, movidas por arquitas criados por arcotecs na corrente sanguínea. São extremamente belas e quase sempre se vinculam a outros sanguófagos. Ao contrário de outros subxenotipos da espécie, as bruxas conseguem se alimentar de sangue de sanguófago, o que lhes traz grandes benefícios. Curam qualquer ferimento e nunca sofrem com doenças ou venenos. Conseguem filtrar infecções da corrente sanguínea de outros humanos e enchê-los de uma forte sensação de êxtase. O preço é que as bruxas precisam consumir hemogênio de vez em quando, humano ou de sanguófago, e precisam fazer descanso mortal por longos períodos de tempos em tempos. São facilmente destruídas pelo fogo e ficam lentas sob luz UV.
+## Keyed/Misc_Gameplay.xml
+VRE_Animal	Animal
+VRE_Corpse	Cadáver
+VRE_Sanguophage	Sanguófago
+VRE_ExtractHemogenAnimal	Extrair hemogênio (animal) de {0}
+VRE_ExtractHemogenCorpse	Extrair hemogênio (cadáver) de {0}
+VRE_ExtractHemogenSanguophage	Extrair hemogênio (sanguófago) de {0}
+VRE_MessageCantUseOnNonSanguophage	A habilidade alimentar-se de sanguófago só pode ser usada em pessoas hemogênicas
+VRE_MessageCantUseOnDrainedSanguophage	A habilidade alimentar-se de sanguófago não pode ser usada em sanguófagos totalmente sem hemogênio
+VRE_NoHeart	Só pode ser usada em alvos com coração
+VRE_HemogenValve	Liga e desliga o fluxo de hemogênio.
+VRE_HemogenValveDesc	Liga e desliga o fluxo de hemogênio. Um personagem virá abrir/fechar a válvula.
+VRE_Ability	Habilidade: {0}
+VRE_DefaultAbility	Escolher habilidade
+VRE_CarryToDraincasket	Levar {0} ao caixão drenador
+VRE_EnterDraincasket	Entrar no caixão drenador
+VRE_CommandDraincasketEject	Ejetar ocupante
+VRE_CommandDraincasketEjectDesc	Ejeta o ocupante deste caixão drenador. Isso interrompe a extração de hemogênio e deixa o ocupante tonto pela perda de sangue.
+VRE_CommandDraincasketEjectFailEmpty	Não dá para ejetar o ocupante, porque o caixão drenador está vazio
+VRE_DraincasketAmount	Produção de hemogênio do caixão drenador (por dia)
+VRE_DraincasketAmountTooltip	Define quantos pacotes de hemogênio os caixões drenadores produzem por dia. O padrão é 2 pacotes de hemogênio por dia.
+VRE_Reset	Redefinir
+VRE_NoAnomalies	Não pode ser usado em espectros nem em nociosferas
+VRE_DraincasketAmountFromMetabolism	Produção diária de hemogênio: {0} pacotes
+VRE_DraincasketOccupantDying	Ocupante morrendo de fome em {0}
+VRE_DraincasketInVacuum_OccupantDying	Ocupante morrendo por exposição ao vácuo

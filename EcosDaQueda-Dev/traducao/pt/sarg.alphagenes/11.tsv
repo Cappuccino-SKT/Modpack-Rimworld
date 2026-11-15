@@ -1,0 +1,244 @@
+## DefInjected/ThingDef/WeaponDefs.xml
+AG_ForsakenSniper.label	fuzil de precisão renegado
+AG_ForsakenSniper.description	Este fuzil de precisão é valorizado pelos exploradores renegados pelo longo alcance e pela alta precisão.
+AG_ForsakenSniper.tools.stock.label	coronha
+AG_ForsakenSniper.tools.barrel.label	cano
+AG_ForsakenSniper.tools.muzzle.label	boca do cano
+AG_ForsakenSniper.verbs.Verb_ShootCE.label	fuzil de precisão renegado
+AG_SniperPulse.label	pulso de fuzil de precisão renegado
+AG_ForsakenShotgun.label	escopeta renegada
+AG_ForsakenShotgun.description	Escopeta renegada, muito precisa a curta distância e mortal de perto.
+AG_ForsakenShotgun.tools.stock.label	coronha
+AG_ForsakenShotgun.tools.barrel.label	cano
+AG_ForsakenShotgun.tools.muzzle.label	boca do cano
+AG_ForsakenShotgun.verbs.Verb_ShootCE.label	escopeta renegada
+AG_ShotgunPulse.label	pulso de escopeta renegada
+AG_ForsakenAssaultRifle.label	fuzil de assalto renegado
+AG_ForsakenAssaultRifle.description	Este fuzil de assalto renegado usa um cartucho de calibre pequeno e demora para recarregar, mas dispara rajadas longas, tem alta penetração de armadura e boa precisão.
+AG_ForsakenAssaultRifle.tools.stock.label	coronha
+AG_ForsakenAssaultRifle.tools.barrel.label	cano
+AG_ForsakenAssaultRifle.tools.muzzle.label	boca do cano
+AG_ForsakenAssaultRifle.verbs.Verb_ShootCE.label	fuzil de assalto renegado
+AG_ForsakenAssaultRiflePulse.label	pulso de fuzil de assalto renegado
+AG_ForsakenLongBlade.label	lâmina longa renegada
+AG_ForsakenLongBlade.description	Esta espada longa renegada exige pouco esforço para levantar e brandir, mas causa um dano considerável.
+AG_ForsakenLongBlade.tools.handle.label	cabo
+AG_ForsakenLongBlade.tools.point.label	ponta
+AG_ForsakenLongBlade.tools.edge.label	gume
+AG_ForsakenBattleAxe.label	machado de batalha renegado
+AG_ForsakenBattleAxe.description	O tradicional machado de batalha renegado causa muito dano no impacto, ao custo de um formato e um peso difíceis de manejar.
+AG_ForsakenBattleAxe.tools.shaft.label	haste
+AG_ForsakenBattleAxe.tools.point.label	ponta
+AG_ForsakenBattleAxe.tools.edge.label	gume
+AG_ForsakenBulkSword.label	espada larga renegada
+AG_ForsakenBulkSword.description	O equivalente renegado do gládio, arma secundária comum na infantaria renegada. Péssima penetração de armadura, mas fácil de manejar.
+AG_ForsakenBulkSword.tools.handle.label	cabo
+AG_ForsakenBulkSword.tools.point.label	ponta
+AG_ForsakenBulkSword.tools.edge.label	gume
+AG_ForsakenSpear.label	lança renegada
+AG_ForsakenSpear.description	Uma lança renegada. Causa muito dano, mas pode ser difícil de manejar.
+AG_ForsakenSpear.tools.shaft-0.label	haste
+AG_ForsakenSpear.tools.shaft-1.label	haste
+AG_ForsakenSpear.tools.head.label	ponta
+AG_ForsakenBow.label	arco renegado
+AG_ForsakenBow.description	Este arco renegado tradicional é muito preciso e causa um dano razoável. As bordas afiadas permitem usá-lo no combate corpo a corpo.
+AG_ForsakenBow.verbs.Verb_ShootCE.label	arco renegado
+AG_ForsakenArrow.label	flecha renegada
+AG_ForsakenHydra.label	hidra negra renegada
+AG_ForsakenHydra.description	A Hidra Negra renegada é um sistema de armas especial que atrai raios até o ponto do disparo, graças a um detonador de eletronuvem ionizada. A lenda diz que essas armas precisavam conter o coração de uma hidra para funcionar.
+AG_ForsakenHydra.tools.barrel.label	cano
+AG_ForsakenHydra.verbs.Verb_ShootCE.label	hidra negra renegada
+## DefInjected/ThoughtDef/Thoughts_Memory_Misc.xml
+AG_Disgust.stages.disgusting_colonist.label	colono nojento
+AG_Disgust.stages.disgusting_colonist.description	Não consigo tirar da cabeça. Como alguém pode ser TÃO repugnante e grotesco?
+AG_Awe.stages.angelic_colonist.label	colono angelical
+AG_Awe.stages.angelic_colonist.description	Não consigo tirar da cabeça. Como alguém pode ser TÃO bonito?
+AG_PsychicDrone.stages.psychic_drone.label	zumbido psíquico
+AG_PsychicDrone.stages.psychic_drone.description	Sinto calma e paz
+AG_CorpseFeeding.stages.smell_of_corpserotting_gas.label	cheiro de gás de cadáver podre
+AG_CorpseFeeding.stages.smell_of_corpserotting_gas.description	O cheiro de bile pútrida de cadáver e de gás de apodrecimento é insuportável!
+AG_SunlightSensitivity_Minor.stages.sunlight_sensitivity.label	sensibilidade à luz do sol
+AG_SunlightSensitivity_Minor.stages.sunlight_sensitivity.description	O sol machuca meus olhos.
+AG_Thalassophobia.stages.afraid_of_water.label	medo de água
+AG_Thalassophobia.stages.afraid_of_water.description	Não aguento ficar perto da água! Ela me apavora.
+AG_PukedRats.stages.puked_rats.label	vomitou ratos
+AG_PukedRats.stages.puked_rats.description	Não importa quantas vezes aconteça, nunca vou me acostumar com isso.
+AG_Implanted.stages.forcefully_implanted_by.label	implantado à força por {0}
+AG_Implanted.stages.forcefully_implanted_by.description	Fui violado e ferroado.
+AG_Implanted_Social.stages.forcefully_implanted.label	implantado à força
+AG_Parasite.stages.parasitized_by.label	parasitado por {0}
+AG_Parasite.stages.parasitized_by.description	SINTO OS OVOS SE MEXENDO DENTRO DO MEU CORPO!
+AG_Parasite_Social.stages.parasitized.label	parasitado
+AG_RaidedBioLab.stages.raided_biolab.label	saqueou biolaboratório
+AG_RaidedBioLab.stages.raided_biolab.description	A emoção da aventura é eletrizante.
+AG_UsedXenotypeInjector.stages.used_xenotype_injector.label	usou injetor de xenotipo
+AG_UsedXenotypeInjector.stages.used_xenotype_injector.description	Usei um injetor de xenotipo.
+## DefInjected/ThoughtDef/Thoughts_Situation_Misc.xml
+AG_Mood_Volatile.stages.genetic_joy.label	alegria genética
+AG_Mood_Volatile.stages.genetic_joy.description	Bônus natural do gene 'volátil'.
+AG_Mood_Volatile.stages.genetic_depression.label	depressão genética
+AG_Mood_Volatile.stages.genetic_depression.description	Penalidade natural do gene 'volátil'.
+## DefInjected/ThoughtDef/Thoughts_Situation_Social.xml
+AG_UnsettlingAppearance.stages.unsettling_appearance.label	aparência perturbadora
+AG_EldritchVisage.stages.eldritch.label	sobrenatural
+AG_Stinky.stages.stinky.label	fedido
+## DefInjected/ThoughtDef/Thoughts_Situation_Social_Sanguophage.xml
+AG_BloodsuckerDistrust.stages.bloodsucker_distrust.label	desconfiança de sugadores de sangue
+## DefInjected/ToolCapacityDef/ToolCapacity.xml
+AG_Acid.label	cuspe ácido
+AG_SpittingOnPawn.label	cuspir ácido no personagem
+## DefInjected/ToolCapacityDef/ToolCapacity_Anomaly.xml
+AG_PlaguedClaws.label	garra pestilenta
+## DefInjected/ToolCapacityDef/ToolCapacity_Phytokin.xml
+AG_ToxicSting.label	ferroada tóxica
+## DefInjected/TraitDef/Traits_Spectrum.xml
+AG_Beauty.degreeDatas.angelic_beauty.label	beleza angelical
+AG_Beauty.degreeDatas.angelic_beauty.description	[PAWN_nameDef] tem uma beleza antinatural, quase imaculada, que destaca [PAWN_objective] entre os da sua espécie.
+AG_Beauty.degreeDatas.repulsive.label	repulsivo
+AG_Beauty.degreeDatas.repulsive.description	[PAWN_nameDef] é tão inimaginavelmente feio e grotesco que só de olhar para [PAWN_objective] as outras pessoas ficam enjoadas.
+## DefInjected/WeatherDef/Weathers.xml
+AG_Underground.label	subterrâneo
+AG_Underground.description	Não existe clima embaixo da terra.
+## DefInjected/WorkGiverDef/WorkGivers.xml
+AG_HaulToAlphaGeneBank.label	guardar alfapacote no banco
+AG_HaulToAlphaGeneBank.gerund	guardando no banco
+AG_HaulToAlphaGeneBank.verb	guardar no banco
+AG_HaulToMixedGeneBank.label	guardar pacote misto no banco
+AG_HaulToMixedGeneBank.gerund	guardando no banco
+AG_HaulToMixedGeneBank.verb	guardar no banco
+AG_AdministerMetal.label	administrar metal
+AG_AdministerMetal.gerund	alimentando
+AG_AdministerMetal.verb	alimentar
+AG_ForceEatMetal.label	comer metal
+AG_ForceEatMetal.gerund	comendo
+AG_ForceEatMetal.verb	comer
+AG_Warden_DeliverMetal.label	entregar metal
+AG_Warden_DeliverMetal.gerund	entregando comida para
+AG_Warden_DeliverMetal.verb	entregar comida para
+AG_DoBillsForsakenForge.label	trabalhar na forja renegada
+AG_DoBillsForsakenForge.gerund	trabalhando na
+AG_DoBillsForsakenForge.verb	trabalhar na
+## DefInjected/XenotypeDef/XenotypeDefs.xml
+AG_Fleetkind.label	frotânico
+AG_Fleetkind.description	Os frotânicos foram uma tentativa equivocada de criar um xenotipo humano capaz de prosperar sozinho, totalmente isolado de outras sociedades. Um posto frotânico bem estabelecido gera a própria eletricidade e repõe sua população com facilidade.\n\nOs frotânicos se afastam muito dos humanos padrão e costumam ser vistos como estranhos demais para se conviver.
+AG_Fleetkind.descriptionShort	Uma tentativa equivocada de criar um xenotipo humano capaz de prosperar sozinho. Afastam-se muito dos humanos padrão e costumam ser vistos como estranhos demais para se conviver.
+AG_Helixien.label	helixano
+AG_Helixien.description	O fundo do poço da Orla: os helixanos foram criados como um xenotipo humano que se deleita com decomposição, sujeira e lixo. Exalam um gás corrosivo e fedorento que causa uma coceira desconfortável nos seres vivos. O gás é quase inofensivo, a menos que entre em contato com matéria orgânica em decomposição: ele acelera muito o apodrecimento de cadáveres, liberando um líquido preto e pútrido conhecido como "fluido de purga" ou bile de cadáver. Os helixanos se alimentam pela pele ao entrar em contato com essa lama, mas também podem comer outra matéria orgânica se precisarem.
+AG_Helixien.descriptionShort	Humanos repugnantes parecidos com lesmas, que se alimentam de cadáveres e de decomposição.
+AG_Animusen.label	animusen
+AG_Animusen.description	Os animusen receberam genes de animus vox para criar um xenotipo humano que prospera no frio, com um temperamento muito melhor (e menos agressivo) que o dos yttakin.\n\nOs animusen têm fortes habilidades psíquicas e são muito sintonizados com os sentimentos alheios, sendo valorizados como ótimos conselheiros.
+AG_Animusen.descriptionShort	Um xenotipo humano que prospera no frio, com temperamento muito melhor (e menos agressivo) que o dos yttakin, e poderosas habilidades psíquicas.
+AG_Lapis.label	lápis
+AG_Lapis.description	Onde os cavaterras não conseguem prosperar por causa das condições inóspitas, os lápis brilham. Criados por corporações ultragananciosas, ávidas por arrancar até o último recurso de planetas desolados e ricos em minérios, os lápis são um xenotipo adaptado a viver praticamente sem comida orgânica, mas a um preço alto: precisam procurar minerais o tempo todo para se alimentar e manter seu metabolismo estranho. Os lápis são práticos e bruscos e, na maioria das vezes, preferem ficar na deles.
+AG_Lapis.descriptionShort	Um xenotipo de humanos de aparência rochosa, adaptados a viver praticamente sem comida orgânica, mas a um preço alto: precisam procurar minerais o tempo todo para se alimentar e manter seu metabolismo estranho.
+AG_Wretch.label	desgraçado
+AG_Wretch.description	Prova viva dos perigos terríveis da engenharia genética, os desgraçados são criaturas malformadas e miseráveis, fruto de testes genéticos que deram errado. O genoma deles é tão retorcido e instável que mutações selvagens acontecem todo dia, sendo apagadas e substituídas na manhã seguinte. Essas mutações podem ser muito benéficas ou condenar o desgraçado a uma vida curta de miséria e dor.
+AG_Wretch.descriptionShort	Criaturas malformadas e miseráveis, fruto de testes genéticos que deram errado. Sofrem mutações instáveis diárias que podem reescrever o genoma inteiro.
+AG_Taukai.label	taukai
+AG_Taukai.description	Batizados com a antiga palavra lituana para "gordura", os taukai são um xenotipo humano muito estranho, criado para aguentar ambientes extremamente radioativos. A carne deles é gosmenta, parece cera derretida e é cheia de anomalias físicas, deformidades e tumores. Os tecidos se regeneram e se transformam o tempo todo, formando carcinomas perigosos. Mas eles têm a capacidade extraordinária de mandar o corpo reaproveitar esses carcinomas para vários fins benéficos.
+AG_Taukai.descriptionShort	Um xenotipo de pessoas em transformação constante, tomadas pelo câncer. Ganham carcinomas o tempo todo e podem reaproveitá-los para obter bônus poderosos.
+AG_Hiveling.label	colmeieiro
+AG_Hiveling.description	Resultado de um experimento fugido do Império Sophiano, os colmeieiros mal são humanos, de tão infundidos com órgãos e vantagens genéticas insetoides. Prosperam em ambientes muito poluídos, que os fortalecem. São totalmente estéreis e se reproduzem implantando ovos parasitas em prisioneiros ainda vivos, evoluindo a colmeia ao adquirir novos genes deles.\n\nOs colmeieiros costumam ser odiados pelos outros xenotipos humanos.
+AG_Hiveling.descriptionShort	Mutantes insetoides que mal são humanos e se reproduzem por infestação parasitária.
+AG_MindDevourer.label	devorador de mentes
+AG_MindDevourer.description	Um xenotipo inspirado nos antigos contos sobrenaturais da Velha Terra, cuja aparência ctônica causa terror e um desconforto intenso. São mestres das artes psíquicas, capazes de projetar os poderes mentais e usar a mente como uma arma temível, além de devorar o cérebro das vítimas e extrair delas conhecimento valioso.\n\nOs devoradores de mentes costumam ser odiados pelos outros xenotipos humanos.
+AG_MindDevourer.descriptionShort	Um xenotipo de psíquicos poderosos que devoram cérebros e são odiados por todos os outros humanos da Orla.
+AG_Efreet.label	efrite
+AG_Efreet.description	Uma variante modificada do xenotipo diabrete, projetada como tropa de choque aterrorizante: os efrites foram criados para serem o mais intimidadores possível. Enquanto os diabretes são bons no combate à distância com fogo, os efrites conseguem despedaçar os inimigos de perto com suas garras temíveis. Têm uma resistência incrível ao calor e são imunes ao fogo, que os obceca.
+AG_Efreet.descriptionShort	Uma variante modificada do xenotipo diabrete, projetada como tropa de choque. Obcecados por fogo e quase imunes ao calor.
+AG_Drakonori.label	drakonori
+AG_Drakonori.description	Era para ser um xenotipo de pessoas belas, inofensivas e submissas, mas na síntese final dos genes um dos cientistas não percebeu que seu lagarto-barbudo de estimação tinha trocado de pele dentro do tanque. Na primeira síntese oficial, a cobaia mostrou força e percepção impecáveis, mantendo a beleza de outro mundo. Basicamente, ela tinha tanta chance de te abraçar quanto de comer a sua cara.
+AG_Drakonori.descriptionShort	Um xenotipo de belas pessoas dracônicas. Os inimigos costumam subestimá-las, porque a aparência faz parecer que são menos perigosas do que de fato são.
+AG_Nereid.label	nereida
+AG_Nereid.description	Criadas originalmente como um xenotipo adaptado a viver em águas rasas, as nereidas evoluíram para prosperar no abismo do oceano. Têm olhos grandes e luminosos, orelhas parecidas com barbatanas e mãos e pés com membranas para nadar com eficiência, além de marcas bioluminescentes na pele que ajudam na comunicação e na camuflagem.\n\nAs nereidas têm a capacidade única de acessar um plano de bolso pessoal, uma dimensão com tema de abismo oceânico onde podem se refugiar ou que podem usar como vantagem estratégica. Serve de santuário, de lugar de aprendizado e de refúgio tático, permitindo escapar de ameaças ou emboscar predadores.
+AG_Nereid.descriptionShort	Um xenotipo que evoluiu para prosperar no abismo do oceano. Têm olhos grandes e luminosos, orelhas parecidas com barbatanas e mãos e pés com membranas para nadar com eficiência. As nereidas têm a capacidade única de acessar um plano de bolso pessoal, uma dimensão com tema de abismo oceânico onde podem se refugiar ou que podem usar como vantagem estratégica.
+AG_Forsaken.label	renegado
+AG_Forsaken.description	O legado de um império caído, com uma ligação distante e frágil com as linhagens genéticas originais da Terra. Além de terem começado a despertar no último século e de terem terraformado penhascos renegados em alguns mundos da Orla em algum momento do passado, ninguém sabe muito sobre o que são, de onde vêm ou como funciona sua tecnologia, que parece fazer a ponte entre ciência e magia.
+AG_Forsaken.descriptionShort	Um parente distante das linhagens genéticas originais da Terra. Muito pouco se sabe sobre eles.
+AG_RandomCustom.label	personalizado aleatório
+AG_RandomCustom.description	Transforma o xenotipo do personagem em um dos xenotipos personalizados criados pelo jogador, escolhido ao acaso.
+AG_RandomCustom.descriptionShort	Transforma o xenotipo do personagem em um dos xenotipos personalizados criados pelo jogador, escolhido ao acaso.
+## DefInjected/XenotypeDef/XenotypeDefs_Fungoid.xml
+AG_Mycormorph.label	micomorfo
+AG_Mycormorph.description	Resultado das antigas vítimas do projeto militar de armas biológicas fungoides, os micomorfos foram expostos a uma cepa especialmente virulenta do vírus, que faz o corpo apodrecer e ser tomado por extensas redes de micélio. Exalam o tempo todo um gás fedorento e têm um temperamento igualmente podre, tendendo a agir com agressividade. Um micomorfo sob controle pode ser um enorme trunfo no combate, ou uma ameaça perigosa para o resto da colônia.
+AG_Mycormorph.descriptionShort	Vítimas de uma cepa mais virulenta do vírus fungoide. Violentos e muito perigosos, para outros micomorfos e principalmente para os outros xenotipos ao redor, já que podem infectá-los com ataques corpo a corpo, e adoram brigar.
+## DefInjected/XenotypeDef/XenotypeDefs_Phytokin.xml
+VRE_Ocularkin.label	ocularcria
+VRE_Ocularkin.description	Baseadas em dados genéticos adaptados do investimento da Gauranlen Inc. em dendrologia após a Queda de Sorne, as fitocrias são humanoides de base vegetal com ênfase em simetria e simbiose. A capacidade de viver só de luz do sol e a afinidade com todo tipo de planta as tornam especialmente úteis para ajudar colônias recém-fundadas ou fazendas industriais de baixo rendimento.\n\nCom base em pesquisas do planeta-floresta Phytok, dedicado à análise extensa da compatibilidade humana com energia psíquica, os xenogerminadores de fitocria costumam ser exclusivos de cargos de apoio de alto escalão em megacorporações e governos planetários. Seu modo único de reprodução gera muitos descendentes idênticos, cada geração mais competente que a anterior, o que contribui para seus números baixíssimos. A afinidade com plantas, junto com o efeito colateral de uma sensibilidade psíquica altíssima e sempre crescente, faz com que qualquer xeno-humano fitocria encontrado na Orla esteja sempre adaptado às árvores dominantes e de alto conceito presentes no planeta onde vive.\n\nEste xenogerminador se adaptou às árvores oculares, uma variedade estranha de árvores de aparência alienígena, nativas de um reino extradimensional de loucura pura e pouco compreendido.
+VRE_Ocularkin.descriptionShort	Individualistas e bizarras, as ocularcrias são distorcidas e astutas e têm a capacidade de se conectar com árvores oculares. São excelentes no cuidado de plantas e se reproduzem plantando uma muda-filho.
+## DefInjected/XenotypeDef/XenotypeDefs_Sanguophage.xml
+AG_Malachai.label	malachai
+AG_Malachai.description	Os malachai são uma raça de seres realmente monstruosos que evoluíram dos strigoi. Têm a mesma sede de sangue dos antecessores, mas também aprenderam a incorporar o material genético das presas para melhorar as próprias habilidades. Com a extração de DNA, absorvem características como sentidos aguçados, mais velocidade e habilidades tecnológicas avançadas, o que os torna uma força incrivelmente poderosa.\n\nMas essas habilidades e a sede de poder têm um preço, e os malachai costumam ser distorcidos e cruéis com os outros. Nutrem um ódio profundo por outros sanguófagos e só colaboram com eles por pura necessidade. Conspiradores habilidosos, os malachai sempre têm um motivo oculto ou um plano fervendo por baixo das ações superficiais.\n\nSua sociedade é muito hierárquica e implacável: os malachai poderosos governam os mais fracos pelo medo e pela intimidação. São temidos por muitos e considerados uma ameaça perigosa, a ser evitada sempre que possível.
+AG_Malachai.descriptionShort	Os malachai são strigoi mutantes: super-humanos sem idade e imortais, movidos por arquitas criados por arcotecs na corrente sanguínea. Incorporam aos poucos genes dos inimigos. Curam qualquer ferimento e nunca sofrem com doenças ou venenos. Em combate, usam as garras enormes para despedaçar a presa. O preço é que precisam consumir hemogênio de humanos para sobreviver e fazer descanso mortal por longos períodos de tempos em tempos. Perdem hemogênio e precisam repor com frequência. São facilmente destruídos pelo fogo e sofrem penalidades realmente extremas sob luz UV.
+## Keyed/Misc_Gameplay.xml
+AG_AsexualHatched	{0} se reproduziu de forma assexuada.
+AG_DeathIn	Morte em {0}
+AG_RandomGenesGained	Mutação instável adquirida por {0}: {1}
+AG_PregnancySlower	Gene gestação lenta: -25% de velocidade de gestação
+AG_PregnancyFaster	Gene gestação rápida: +25% de velocidade de gestação
+AG_ReativeArmourOn	Ativar armadura
+AG_ReativeArmourOff	Desativar armadura
+AG_OverdriveOn	Ativar sobrecarga
+AG_OverdriveOff	Desativar sobrecarga
+AG_AbilityMineralCost	Custo em minerais
+AG_AbilityDisabledNoMineralGene	{0_labelShort} não é um absorvedor de minerais.
+AG_AbilityDisabledNoMineral	{0_labelShort} não tem minerais suficientes.
+AG_AlreadyFourGenes	Este pacote genético já tem o máximo possível de genes
+AG_NeedsMoreThanTwoGenes	O desestabilizador não funciona se o pacote genético só tiver um gene
+AG_CannotBeUsedAsWeapon	Esta habilidade não pode ser usada como arma de um disparo só contra um personagem hostil
+AG_ParasitesHatchedLabel	Eclosão torácica!
+AG_ParasitesHatched	Um recém-nascido, {0}, eclodiu de um hospedeiro, matando-o no processo
+AG_UnsummonedIn	Desaparece em {0}
+AG_ResistedInsanityBlast	O alvo resistiu à explosão de insanidade!
+AG_MechsImmuneToInsanityBlast	Mecanoides não são afetados pela explosão de insanidade!
+AG_DownedOrLyingInBed	O alvo precisa estar caído ou deitado na cama para esta habilidade funcionar
+AG_PawnWithoutBrain	O alvo não tem cérebro. Infelizmente, isso é bem comum no mundo
+AG_CannotBeUsedOnDeathless	Pessoas imortais são imunes a implantes parasitários
+AG_CannotBeUsedOnAndroids	Androides são imunes a implantes parasitários
+VRE_OneScorpionPerColonist	Só pode existir um atirador ocular por colono com o gene afinidade ocular
+VRE_UnlockedByGeneOcular	Desbloqueado pelo gene afinidade ocular
+AM_CantUseOnNonMechs	Esta habilidade só funciona em mecanoides
+AM_OnlyMechanitorCanUse	Só um mecanitor pode usar esta habilidade
+AM_CantUseOnBossMechs	Mecanoides "chefes" têm um sistema de identificação reforçado que não pode ser invadido
+AM_NotEnoughBandwidth	O mecanitor não tem banda suficiente para usar esta habilidade em: {0}
+AM_CantUseVEMechs	Este mecanoide é controlado remotamente por um piloto humano e não pode ser invadido
+AG_CantSpawnThere	Não é possível criar o nó temporário ali
+AG_OnlyOnFriendlyMechs	{0} não é um mecanoide da colônia; isto só funciona em mecanoides do jogador
+AG_NotOnAndroids	Esta habilidade não funciona em androides
+AG_TargetTooBig	{0} é grande demais para um agarrão (tamanho corporal máximo {1})
+AG_Hybrid	Híbrido
+AG_PsychicAbsorptionNoMoods	{0} não tem memórias negativas que possam ser absorvidas
+AG_NeedToTargetCaster	Esta habilidade precisa ter como alvo quem a usa
+AG_PocketPlaneMapNotActive	O plano de bolso não está aberto no momento
+AG_PawnCantCollapsePocket	{0} não pode colapsar um plano de bolso estando dentro dele!
+AG_CantTeleportItemsOutOfPocketPlane	Itens não podem ser tirados de um plano de bolso.
+AG_OnlyOnFleshbeasts	{0} não é uma fera de carne!
+AG_FleshbeastTooBig	{0} é grande demais para ser afetado por esta habilidade!
+AG_TrappedForever	O local original não está mais disponível! {0} está preso para sempre neste plano de bolso!
+AG_NeedsForsakenKnowledge	Só pode ser construído por alguém com o gene conhecimento renegado
+AG_NeedsForsakenKnowledgeToWield	Só pode ser usado por alguém com o gene conhecimento renegado
+AG_ChooseGeneToRemove	Escolha o gene a remover
+AG_ChooseEndogeneToConvert	Escolha o endogene que vai virar xenogene
+AG_ChooseXenogeneToConvert	Escolha o xenogene que vai virar endogene
+AG_NoEndogenes	O alvo não tem endogenes
+AG_NoXenogenes	O alvo não tem xenogenes
+AG_NoGenesAtAll	O alvo não tem nenhum gene
+AM_OnlyNightlings	Esta habilidade só funciona em noturninos
+AM_OnlyWildNightlings	Este noturnino não é um animal selvagem
+AM_NightlingDead	Ele está morto, Jim
+AG_GeneSyphoned	{0} sugou o gene {1}!
+AG_DisableMutationsMessage	Desativar mensagem de mutações instáveis
+AG_DisableMutationsMessage_Description	Por padrão, os três genes de "mutação instável" mostram uma mensagem dizendo quais genes cada colono ganhou. Tudo bem com um colono, nem tanto com 20... Com esta opção você remove essas mensagens.
+AG_DisableThalassophobiaMessage	Desativar mensagem de talassofobia
+AG_DisableThalassophobiaMessage_Description	Por padrão, toda vez que um personagem com o gene talassofobia foge da água, o jogo manda uma carta avisando. Isso pode ser demais se você tiver muitos personagens fugindo com frequência, então dá para desativar aqui. Os personagens continuam fugindo; você só NÃO é avisado.
+AG_GeneRemovalComa	Ferramentas genéticas causam coma de remoção de genes
+AG_GeneRemovalComa_Description	Usar qualquer ferramenta genética causa um coma de remoção de genes que dura 3 dias, apagando o colono, e nenhuma outra ferramenta pode ser usada nesse período. Vem ATIVADO por padrão, para equilíbrio.
+AG_DisableQuests	Desativar missões de laboratório biotech abandonado
+AG_DisableQuests_Description	Impede que as missões de laboratório biotech abandonado apareçam. Essas missões são independentes de outras missões ou eventos do narrador (incursões, caçadores de humanos etc.). ATENÇÃO: desativar isto deixa a maioria dos genes alpha e das ferramentas genéticas impossíveis de conseguir no jogo normal.
+AG_QuestRate	Multiplicador de laboratórios biotech abandonados (menor = evento mais frequente)
+AG_QuestRateTooltip	A frequência da missão de laboratório biotech abandonado é multiplicada por este número (com multiplicador 1, ela aparece a cada 15 a 30 dias, ao acaso). Números abaixo de 1 diminuem o intervalo; acima de 1, aumentam. Este evento não "substitui" as missões normais; funciona à parte.
+AG_Reset	Redefinir
+AG_ShowAllAnimalSummonGenes	Mostrar TODOS os genes de invocação de animais (exige recarregar o jogo)
+AG_ShowAllAnimalSummonGenes_Description	Se marcado, TODOS os genes de invocação de animais aparecem na tela de criação de xenotipos. Eles usam todos os animais, do jogo base ou de mods, então isso sai do controle rapidinho! Por padrão ficam ocultos, e aparecem três genes que escolhem um deles ao acaso.
+AG_RandomGenesToShamblers	Dar genes aleatórios exclusivos de trôpego aos trôpegos
+AG_RandomGenesToShamblers_Description	Se ativo, todo trôpego que aparecer no mapa ganha alguns (1 a 3) genes aleatórios exclusivos de trôpego.

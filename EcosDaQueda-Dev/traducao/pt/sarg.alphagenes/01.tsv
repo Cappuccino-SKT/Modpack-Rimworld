@@ -1,0 +1,245 @@
+## DefInjected/AbilityDef/Abilities_Anomaly.xml
+AG_GreyPocketPlane.label	plano de bolso cinzento
+AG_GreyPocketPlane.description	Abre uma ligação com um espaço extradimensional que só quem usa a habilidade pode acessar. Se usada dentro do plano de bolso, devolve o usuário ao mapa original, na mesma posição de onde partiu.
+AG_TentacleGrapple.label	agarrão de tentáculo
+AG_TentacleGrapple.description	Ataca o alvo com um tentáculo preênsil, agarrando-o e imobilizando-o por um curto tempo.
+AG_FleshBulb.label	bulbo de carne
+AG_FleshBulb.description	Lança um bulbo de carne luminoso que funciona como um sinalizador disruptor.
+AG_FleshSack.label	absorver fera de carne
+AG_FleshSack.description	Absorve uma fera de carne, destruindo-a e fortalecendo o usuário por um tempo, além de curar parte dos ferimentos dele.
+## DefInjected/AbilityDef/Abilities_Explosions.xml
+AG_AcidicDetonation.label	detonação ácida
+AG_AcidicDetonation.description	Faz uma torrente de ácido pressurizado sair por todos os poros desta pessoa, criando uma explosão ácida que fere todos por perto. Não afeta quem usa.
+AG_Detonation.label	detonação
+AG_Detonation.description	Libera os gases aquecidos produzidos pelos processos internos desta pessoa. Isso cria uma onda de ar superaquecido que afeta os quadrados ao redor. Não afeta quem usa.
+## DefInjected/AbilityDef/Abilities_Mechanitor.xml
+AG_MechConversion.label	embaralhador de IFF mecanoide
+AG_MechConversion.description	Invade remotamente os sensores de identificação de um mecanoide para trocar temporariamente seu lado. Dura um dia; depois o mecanoide volta ao lado anterior e ataca sem distinção.
+AG_BandwidthLoop.label	laço de banda
+AG_BandwidthLoop.description	Cria psiquicamente um laço de realimentação na conexão de um mecanoide, sobrecarregando sua banda e fazendo-o explodir. A explosão danifica tudo por perto, com alcance que depende da banda do mecanoide.
+AG_SummonTempBandwidth.label	invocar nó de banda
+AG_SummonTempBandwidth.description	Invoca um nó de banda temporário que aumenta a banda do usuário em 10 por uma semana inteira.
+AG_SummonMilitor.label	invocar miliciano
+AG_SummonMilitor.description	Invoca um mecanoide miliciano. Ele faz parte da colônia por 1 dia e depois desaparece. O portador precisa de pelo menos 1 de banda mecânica para usar esta habilidade.
+AG_SummonTesseron.label	invocar tesseron
+AG_SummonTesseron.description	Invoca um mecanoide tesseron. Ele faz parte da colônia por 1 dia e depois desaparece. O portador precisa de pelo menos 3 de banda mecânica para usar esta habilidade.
+AG_SummonCentipede.label	invocar centopeia
+AG_SummonCentipede.description	Invoca um mecanoide centopeia explosiva. Ele faz parte da colônia por 1 dia e depois desaparece. O portador precisa de pelo menos 4 de banda mecânica para usar esta habilidade.
+## DefInjected/AbilityDef/Abilities_Mineral.xml
+AG_ReactiveArmourA.label	armadura reativa
+AG_ReactiveArmourA.description	Consome minerais para endurecer o corpo do usuário contra ataques perfurantes e cortantes.
+AG_MineralOverdriveA.label	sobrecarga mineral
+AG_MineralOverdriveA.description	Drena minerais para aumentar a eficiência de trabalho do usuário.
+AG_MineralShock.label	choque mineral
+AG_MineralShock.description	Usa os minerais armazenados para disparar uma pelota concentrada de terra. Causa trauma contundente no alvo.
+## DefInjected/AbilityDef/Abilities_Misc.xml
+AG_WingPoweredJump.label	salto com asas
+AG_WingPoweredJump.description	Bate as asas para saltar uma curta distância.
+AG_WingPoweredJump.verbProperties.label	bater as asas
+AG_UnstableMutation.label	mutação instável
+AG_UnstableMutation.description	Força uma mutação instável no corpo do usuário. A mutação ativa um gene aleatório novo por 12 horas. Depois desse tempo, o gene se desativa.
+AG_InsectRally.label	tática de enxame
+AG_InsectRally.description	Libera uma nuvem de compostos feromonais irresistíveis para todos os insetos. Eles se sentem revigorados e fortalecidos perto do portador.
+AG_UnstableMind.label	mente instável
+AG_UnstableMind.description	Atinge psiquicamente a mente de outras pessoas, causando instabilidade mental que as deixa mais propensas a colapsos e aumenta muito a sensibilidade psíquica delas. O efeito dura três horas e pode ser usado em alvos hostis ou amigos.
+AG_DevourBrains.label	devorar cérebros
+AG_DevourBrains.description	Devora o cérebro de uma pessoa incapacitada, mas viva, absorvendo parte do intelecto dela e ganhando um bônus que depende da maior habilidade do cérebro devorado. Obviamente, isso mata o alvo.\n\nSó um bônus de "devorar" pode estar ativo por vez. Usar a habilidade antes de acabar o prazo de 2 dias renova o bônus e a duração.
+AG_GeneSyphon.label	sifão genético
+AG_GeneSyphon.description	Extrai à força um gene de uma pessoa incapacitada, mas viva, incorporando-o ao xenotipo do usuário como xenogene. O gene é escolhido aleatoriamente. Isso mata o alvo.
+AG_TailGrapple.label	agarrão de cauda
+AG_TailGrapple.description	Ataca o alvo com uma cauda preênsil, agarrando-o e imobilizando-o por um curto tempo.
+AG_UnstableRegeneration.label	regeneração instável
+AG_UnstableRegeneration.description	Cura todos os ferimentos não permanentes, mas envelhece o usuário 7 anos a cada uso. Se o usuário passar da expectativa de vida por causa desta habilidade, morre.
+AG_AdaptiveBiology.label	biologia adaptativa
+AG_AdaptiveBiology.description	Remove um traço aleatório e adiciona um novo, também aleatório.
+AG_SuperAdaptiveBiology.label	biologia superadaptativa
+AG_SuperAdaptiveBiology.description	Remove cinco traços aleatórios e adiciona cinco novos, também aleatórios.
+AG_PsychicAbsorption.label	absorção psíquica
+AG_PsychicAbsorption.description	O usuário absorve uma memória negativa do alvo, até no máximo -40.\n\nA habilidade funciona em memórias, que são pensamentos que expiram com o tempo. Pensamentos de situação, como "sentindo uma dor terrível", não funcionam.
+AG_SpeedBurst.label	explosão de velocidade
+AG_SpeedBurst.description	Faz o usuário se mover mais rápido por um tempo.
+## DefInjected/AbilityDef/Abilities_Phytokin.xml
+VRE_SummonOcularSlinger.label	invocar atirador ocular
+VRE_SummonOcularSlinger.description	Invoca um atirador ocular sob o controle do usuário. Este animal é um animal permanente da colônia e pode ser convocado. Um novo escorpião pode ser invocado se o anterior morrer.
+VRE_StrikeEyes.label	ferir olhos
+VRE_StrikeEyes.description	Faz psiquicamente o humor vítreo dos olhos do alvo ferver, destruindo-os e deixando a pobre vítima cega para sempre.
+AG_OcularConversionAlphaAnimals.label	conversão ocular
+AG_OcularConversionAlphaAnimals.description	Converte a flora de uma área em versões oculares.
+AG_OcularConversionAlphaBiomes.label	conversão ocular
+AG_OcularConversionAlphaBiomes.description	Converte a flora de uma área em versões oculares.
+AG_EyeProjectile.label	olho
+AG_EyeProjectile.description	É melhor não pensar muito nisso.
+## DefInjected/AbilityDef/Abilities_PocketPlane.xml
+AG_NereidPocketPlane.label	plano de bolso nereida
+AG_NereidPocketPlane.description	Abre uma ligação com um espaço extradimensional que só quem usa a habilidade pode acessar. Se usada dentro do plano de bolso, devolve o usuário ao mapa original, na mesma posição de onde partiu.
+AG_DestroyPocketPlane.label	destruir plano de bolso
+AG_DestroyPocketPlane.description	Destrói o plano de bolso e tudo o que está dentro dele. ATENÇÃO: você pode abrir um novo plano de bolso, mas o original estará perdido para sempre.
+AG_TeleportItemsPocketPlane.label	transferir para o plano de bolso
+AG_TeleportItemsPocketPlane.description	Transfere itens para o plano de bolso. Itens podem ser levados para um plano de bolso, mas não podem ser tirados de lá!
+## DefInjected/AbilityDef/Abilities_Projectiles.xml
+AG_Zap.label	descarga elétrica
+AG_Zap.description	Acumula energia e a libera num choque elétrico poderoso que eletrocuta o alvo.
+AG_GreaterFireSpew.label	grande cuspe de fogo
+AG_GreaterFireSpew.description	Cospe uma bile inflamável produzida por um órgão especial no pescoço. A bile pega fogo na hora em contato com o oxigênio, criando um incêndio perigoso que queima tudo no caminho.
+AG_GreaterAcidicVomit.label	grande vômito ácido
+AG_GreaterAcidicVomit.description	Regurgita ácidos estomacais especialmente fortes, espalhando-os por uma área ampla. Esses ácidos causam ferimentos horríveis que pioram aos poucos conforme o ácido corrói os tecidos.
+AG_PetrifyingGaze.label	olhar petrificante
+AG_PetrifyingGaze.description	Lança um olhar perigoso capaz de transformar a vítima em pedra. Algo a ver com mecanitos, ou sei lá. Olha, é ciência.
+AG_Web.label	teia
+AG_Web.description	Produz fios de seda pegajosa nos pulsos e arremessa essas teias à vontade, atordoando inimigos.
+AG_InsanityBlast.label	explosão de insanidade
+AG_InsanityBlast.description	Atinge psiquicamente a mente de outras pessoas, deixando-as em fúria assassina e fazendo-as atacar todos ao redor sem distinção. Alvos com pouca sensibilidade psíquica podem resistir.
+AG_SterilizingBreath.label	sopro esterilizante
+AG_SterilizingBreath.description	Cospe grandes quantidades de um líquido esterilizante. Isso destrói a praga nas plantas e acelera o ganho de imunidade, à custa da fertilidade.
+AG_BansheeScream.label	grito de banshee
+AG_BansheeScream.description	Enche os alvos atingidos de medo, reduzindo a precisão de ataque e a defesa por um curto tempo.
+AG_FreezingBreath.label	sopro congelante
+AG_FreezingBreath.description	Cospe grandes quantidades de um fluido criogênico. O líquido congela tudo o que toca, causando queimaduras de frio e hipotermia.
+AG_NoxiousBreath.label	sopro nocivo
+AG_NoxiousBreath.description	Exala uma nuvem de vapores tóxicos que envolve os inimigos num miasma sufocante. O fedor faz os alvos atingidos vomitarem sem controle.
+## DefInjected/AbilityDef/Abilities_Royalty.xml
+AG_Invisibility.label	invisibilidade psíquica
+AG_Invisibility.description	Altera psiquicamente o tom da pele para se camuflar em quase qualquer ambiente.
+AG_SelfSkip.label	salto próprio
+AG_SelfSkip.description	Teleporta-se para um ponto desejado não muito longe de onde está.
+## DefInjected/AbilityDef/Abilities_Stingers.xml
+AG_InsectStinger.label	ferroar xenogenes
+AG_InsectStinger.description	Implanta os xenogenes desta pessoa em qualquer alvo usando um ferrão injetor nojento.\n\nAo ser implantado, o xenogerminador substitui os xenogenes do alvo. Os genes da linhagem germinativa não são afetados.
+AG_InsectStingerEndogenes.label	ferroar endogenes
+AG_InsectStingerEndogenes.description	Implanta os endogenes desta pessoa em qualquer alvo usando um ferrão injetor nojento.\n\nAo ser implantada, a linhagem germinativa substitui os endogenes do alvo. Os xenogenes não são afetados.
+AG_ParasiticStinger.label	ferroar ovos parasitas
+AG_ParasiticStinger.description	Implanta ovos com os xenogenes desta pessoa em qualquer alvo usando um ferrão injetor nojento.\n\nDepois de implantados, os ovos começam a crescer dentro do alvo e acabam eclodindo e matando-o.
+AG_ParasiticStingerEndogenes.label	ferroar ovos parasitas endogênicos
+AG_ParasiticStingerEndogenes.description	Implanta ovos com os endogenes desta pessoa em qualquer alvo usando um ferrão injetor nojento.\n\nDepois de implantados, os ovos começam a crescer dentro do alvo e acabam eclodindo e matando-o.
+## DefInjected/AbilityDef/Abilities_Summons.xml
+AG_MinorSummon.label	invocação menor
+AG_MinorSummon.description	Invoca uma criatura que fica por um curto período. Ela é hostil a qualquer alvo hostil ao usuário.
+AG_Summon.label	invocação
+AG_Summon.description	Invoca uma criatura que fica por um curto período. Ela é hostil a qualquer alvo hostil ao usuário.
+AG_MajorSummon.label	invocação maior
+AG_MajorSummon.description	Invoca uma criatura que fica por um curto período. Ela é hostil a qualquer alvo hostil ao usuário.
+## DefInjected/AbilityDef/Abilities_Teratogenic.xml
+AG_TeratogenicHealing.label	cura teratogênica
+AG_TeratogenicHealing.description	Reaproveita tumores existentes para curar o alvo, consumindo as massas cancerosas no processo.
+AG_TeratogenicManipulation.label	coordenação teratogênica
+AG_TeratogenicManipulation.description	Reaproveita tumores existentes para dar um enorme impulso à manipulação e à destreza.
+AG_TeratogenicSwiftness.label	agilidade teratogênica
+AG_TeratogenicSwiftness.description	Reaproveita tumores existentes para dar um enorme impulso à velocidade de movimento e de trabalho.
+AG_TeratogenicStamina.label	vigor teratogênico
+AG_TeratogenicStamina.description	Reaproveita tumores existentes para dar um enorme impulso ao sistema imunológico e ao vigor geral.
+AG_HealingTouch.label	toque curativo
+AG_HealingTouch.description	Reaproveita tumores existentes para curar outras pessoas, consumindo as massas cancerosas no processo.
+AG_TeratogenicBurst.label	toque teratogênico
+AG_TeratogenicBurst.description	Transfere tumores existentes para outras pessoas, o que costuma ser tão doloroso e perigoso quanto parece. Pode ser usado como arma ou como forma de transferir tumores para outros colonos.
+## DefInjected/AlphaGenes.AnimalGeneTemplateDef/AnimalGeneTemplateDefs.xml
+AlphaGenes_AnimalSumMinor.label	invocação menor: {0}
+AlphaGenes_AnimalSumMinor.description	O portador pode invocar: {0}.
+AlphaGenes_AnimalSummon.label	invocação: {0}
+AlphaGenes_AnimalSummon.description	O portador pode invocar: {0}.
+AlphaGenes_AnimalSumMajor.label	invocação maior: {0}
+AlphaGenes_AnimalSumMajor.description	O portador pode invocar: {0}.
+## DefInjected/BiomeDef/PocketPlaneBiome.xml
+AG_NereidPocketPlane.label	plano de bolso nereida
+AG_NereidPocketPlane.description	Um espaço extradimensional vazio
+## DefInjected/BiomeDef/PocketPlaneBiome_Anomaly.xml
+AG_PocketPlane.label	plano de bolso
+AG_PocketPlane.description	Um espaço extradimensional vazio
+## DefInjected/BodyDef/Bodies_Scorpionlike_Phytokin.xml
+AG_ScorpionLike.label	corpo de escorpião
+AG_ScorpionLike.corePart.parts.Pronotum.parts.InsectHead.parts.first_eye.customLabel	primeiro olho
+AG_ScorpionLike.corePart.parts.Pronotum.parts.InsectHead.parts.second_eye.customLabel	segundo olho
+AG_ScorpionLike.corePart.parts.Pronotum.parts.InsectHead.parts.third_eye.customLabel	terceiro olho
+AG_ScorpionLike.corePart.parts.Pronotum.parts.InsectHead.parts.fourth_eye.customLabel	quarto olho
+AG_ScorpionLike.corePart.parts.Pronotum.parts.InsectHead.parts.sixth_eye.customLabel	sexto olho
+AG_ScorpionLike.corePart.parts.Pronotum.parts.InsectHead.parts.fifth_eye.customLabel	quinto olho
+AG_ScorpionLike.corePart.parts.Pronotum.parts.InsectHead.parts.left_antenna.customLabel	antena esquerda
+AG_ScorpionLike.corePart.parts.Pronotum.parts.InsectHead.parts.right_antenna.customLabel	antena direita
+AG_ScorpionLike.corePart.parts.front_left_leg.customLabel	perna dianteira esquerda
+AG_ScorpionLike.corePart.parts.front_right_leg.customLabel	perna dianteira direita
+AG_ScorpionLike.corePart.parts.middle_left_leg.customLabel	perna do meio esquerda
+AG_ScorpionLike.corePart.parts.middle_right_leg.customLabel	perna do meio direita
+AG_ScorpionLike.corePart.parts.rear_left_leg.customLabel	perna traseira esquerda
+AG_ScorpionLike.corePart.parts.rear_right_leg.customLabel	perna traseira direita
+## DefInjected/BodyPartDef/BodyParts_Phytokin.xml
+AG_Thorax.label	tórax
+AG_InsectTail.label	cauda
+AG_InsectMouth.label	boca
+AG_InsectSting.label	ferrão
+AG_LeftPincer.label	pinça esquerda
+AG_RightPincer.label	pinça direita
+## DefInjected/BodyPartGroupDef/BodyPartGroups_Phytokin.xml
+AG_Sting.label	ferrão
+AG_PincerAttackTool.label	pinça
+AG_Mouth.label	boca
+## DefInjected/DamageDef/Damage_Phytokin.xml
+AG_ToxicSting.label	ferroada tóxica
+AG_ToxicSting.deathMessage	{0} foi ferroado até a morte.
+## DefInjected/DamageDef/Damages_Abilities.xml
+AG_RangedBlunt.label	contundente
+AG_RangedBlunt.deathMessage	{0} foi esmagado até a morte.
+AG_Electric.label	choque elétrico
+AG_Electric.deathMessage	{0} morreu eletrocutado.
+AG_AcidSpit.label	ácido
+AG_AcidSpit.deathMessage	{0} foi corroído até a morte.
+AG_PetrifyingGaze.label	olhar petrificante
+AG_PetrifyingGaze.deathMessage	{0} foi petrificado.
+AG_SterilizingBreath.label	sopro esterilizante
+AG_SterilizingBreath.deathMessage	{0} foi morto.
+AG_BansheeScream.label	explosão sônica
+AG_BansheeScream.deathMessage	{0} foi morto.
+AG_FreezingBreath.label	sopro congelante
+AG_FreezingBreath.deathMessage	{0} sucumbiu ao congelamento.
+AG_NoxiousBreath.label	sopro nocivo
+AG_NoxiousBreath.deathMessage	{0} foi morto.
+## DefInjected/DamageDef/Damages_Anomaly.xml
+AG_PlaguedClaws.label	garras pestilentas
+AG_PlaguedClaws.deathMessage	{0} foi cortado até a morte.
+## DefInjected/FactionDef/Factions_Misc.xml
+AG_OutlanderCivilUnion.label	união civil xeno-humana
+AG_OutlanderCivilUnion.description	Uma união frouxa de vilarejos fundados por humanos geneticamente modificados de todo tipo. Este grupo costuma ser amigável com estranhos.
+AG_OutlanderCivilUnion.leaderTitle	conselheiro-mor
+AG_OutlanderCivilUnion.messageDefendersAttacking	{0} de {1} estão atacando seu {2}.
+AG_OutlanderCivilUnion.pawnSingular	forasteiro
+AG_OutlanderCivilUnion.pawnsPlural	forasteiros
+AG_XenohumanPirates.label	gangue pirata xeno-humana
+AG_XenohumanPirates.description	Uma confederação frouxa de gangues piratas formadas por humanos geneticamente modificados de todo tipo.\n\nTêm pouco interesse em construir ou plantar e preferem tirar o sustento dos outros pela violência.\n\nO nível de tecnologia depende principalmente de quem eles conseguiram roubar recentemente. A maioria usa armas de pólvora, embora alguns prefiram esfaquear as vítimas de perto.
+AG_XenohumanPirates.leaderTitle	chefe
+AG_XenohumanPirates.messageDefendersAttacking	{0} de {1} estão atacando seu {2}.
+AG_XenohumanPirates.pawnSingular	pirata
+AG_XenohumanPirates.pawnsPlural	piratas
+## DefInjected/GeneCategoryDef/GeneCategoryDefs.xml
+AG_SpecialEffectsCategory.label	efeitos especiais
+AG_Gender.label	sexo
+AG_BodySize.label	tamanho do corpo
+AG_Presence.label	presença
+AG_BloodType.label	tipo de sangue
+AG_VomitType.label	tipo de vômito
+AG_MeatType.label	tipo de carne
+AG_LeatherType.label	tipo de couro
+AG_AnimalAffinity.label	afinidade animal
+AG_AnimalSummons.label	invocação de animais
+AG_Teratogenic.label	teratogênico
+AG_Metallic.label	metálico
+AG_Cosmetic_Horns.label	cosmético - chifres, presas, antenas
+AG_Cosmetic_Heads.label	cosmético - cabeças
+AG_Cosmetic_Bodies.label	cosmético - corpos
+AG_Wings.label	asas funcionais
+AG_Cosmetic_Tails.label	cosmético - caudas
+AG_Cosmetic_Ears.label	cosmético - orelhas
+AG_FoodConsumption.label	consumo de comida
+AG_Armour.label	armadura natural
+AG_Mechanitor.label	mecanitor
+AG_AptitudeModifier.label	aptidões - diversas
+AG_InsectoidMutations.label	mutações insetoides
+## DefInjected/GeneCategoryDef/GeneCategoryDefs_Anomaly.xml
+AG_AnomalyCategory.label	anômalo
+## DefInjected/GeneDef/AnimalGeneTemplateDefs.xml
+AG_MinorAnimalSummon_Randomizer.label	invocação menor de animal aleatória
+AG_MinorAnimalSummon_Randomizer.description	Este gene é trocado por uma invocação menor de animal aleatória.
+AG_MinorAnimalSummon_Randomizer.labelShortAdj	aleatório
+AG_AnimalSummon_Randomizer.label	invocação de animal aleatória
+AG_AnimalSummon_Randomizer.description	Este gene é trocado por uma invocação de animal aleatória.
+AG_AnimalSummon_Randomizer.labelShortAdj	aleatório
+AG_MajorAnimalSummon_Randomizer.label	invocação maior de animal aleatória
+AG_MajorAnimalSummon_Randomizer.description	Este gene é trocado por uma invocação maior de animal aleatória.
+AG_MajorAnimalSummon_Randomizer.labelShortAdj	aleatório

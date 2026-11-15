@@ -1,0 +1,196 @@
+## DefInjected/FactionDef/FactionDef_Saurids.xml
+VRESaurids_OutlanderRoughSaurid.label	união sáuria rude
+VRESaurids_OutlanderRoughSaurid.description	Este povo de sangue frio, parecido com lagartos, vive aqui há séculos e, em vez de abraçar o progresso tecnológico, escolheu a confiabilidade industrial. Não tem medo de usar seu poder militar para impor paz e ordem nas terras ao redor.\n\nCriados originalmente para sobreviver em planetas ainda não totalmente terraformados, sem umidade nenhuma, os sáurios são uma comunidade muito unida que prefere tratar estranhos com agressividade e demonstrações de força.
+VRESaurids_OutlanderRoughSaurid.leaderTitle	conselheiro-mor
+VRESaurids_OutlanderRoughSaurid.messageDefendersAttacking	{0} de {1} estão atacando seu {2}.
+VRESaurids_OutlanderRoughSaurid.pawnSingular	sáurio
+VRESaurids_OutlanderRoughSaurid.pawnsPlural	sáurios
+## DefInjected/GeneDef/GeneDefs_Cosmetic.xml
+VRESaurids_FrilledEars.label	orelhas de babado
+VRESaurids_FrilledEars.description	Portadores deste gene têm orelhas com babados, como as de um lagarto.
+VRESaurids_FrilledEars.symbolPack.prefixSymbols.0.symbol	babado
+VRESaurids_FrilledEars.symbolPack.prefixSymbols.1.symbol	iguana
+VRESaurids_FrilledEars.symbolPack.prefixSymbols.2.symbol	lagarto
+VRESaurids_FrilledEars.symbolPack.prefixSymbols.3.symbol	espinho
+VRESaurids_FrilledEars.symbolPack.prefixSymbols.4.symbol	réptil
+VRESaurids_FrilledEars.symbolPack.suffixSymbols.0.symbol	espeto
+VRESaurids_FrilledEars.symbolPack.suffixSymbols.1.symbol	lança
+VRESaurids_FrilledEars.symbolPack.suffixSymbols.2.symbol	babado
+VRESaurids_FrilledEars.symbolPack.suffixSymbols.3.symbol	sauro
+VRESaurids_CenterFrill.label	babado central
+VRESaurids_CenterFrill.description	Portadores deste gene têm um babado de lagarto saindo do alto da cabeça.
+VRESaurids_CenterFrill.symbolPack.prefixSymbols.0.symbol	babado
+VRESaurids_CenterFrill.symbolPack.prefixSymbols.1.symbol	iguana
+VRESaurids_CenterFrill.symbolPack.prefixSymbols.2.symbol	lagarto
+VRESaurids_CenterFrill.symbolPack.prefixSymbols.3.symbol	espinho
+VRESaurids_CenterFrill.symbolPack.prefixSymbols.4.symbol	réptil
+VRESaurids_CenterFrill.symbolPack.suffixSymbols.0.symbol	espeto
+VRESaurids_CenterFrill.symbolPack.suffixSymbols.1.symbol	lança
+VRESaurids_CenterFrill.symbolPack.suffixSymbols.2.symbol	babado
+VRESaurids_CenterFrill.symbolPack.suffixSymbols.3.symbol	sauro
+VRESaurids_GeckoTail.label	cauda de lagartixa
+VRESaurids_GeckoTail.description	Portadores deste gene têm uma cauda curta e escamosa que não serve para absolutamente nada.
+## DefInjected/GeneDef/GeneDefs_Endogenes.xml
+VRESaurids_SauridClaws.label	garras sáurias
+VRESaurids_SauridClaws.description	Portadores deste gene têm mãos parecidas com garras de dinossauro. Isso atrapalha um pouco a manipulação de objetos, mas permite causar cortes profundos no combate corpo a corpo.
+VRESaurids_SauridClaws.symbolPack.prefixSymbols.0.symbol	sáurio
+VRESaurids_SauridClaws.symbolPack.prefixSymbols.1.symbol	raptor
+VRESaurids_SauridClaws.symbolPack.prefixSymbols.2.symbol	garra
+VRESaurids_SauridClaws.symbolPack.prefixSymbols.3.symbol	predador
+VRESaurids_SauridClaws.symbolPack.prefixSymbols.4.symbol	gancho
+VRESaurids_SauridClaws.symbolPack.prefixSymbols.5.symbol	réptil
+VRESaurids_SauridClaws.symbolPack.suffixSymbols.0.symbol	garra
+VRESaurids_SauridClaws.symbolPack.suffixSymbols.1.symbol	afiado
+VRESaurids_SauridClaws.symbolPack.suffixSymbols.2.symbol	gancho
+VRESaurids_SauridClaws.symbolPack.suffixSymbols.3.symbol	predador
+VRESaurids_SauridClaws.symbolPack.suffixSymbols.4.symbol	raptor
+VRESaurids_SauridClaws.symbolPack.suffixSymbols.5.symbol	réptil
+VRESaurids_SauridClaws.symbolPack.suffixSymbols.6.symbol	sauro
+VRESaurids_SauridClaws.symbolPack.wholeNameSymbols.0.symbol	garras
+## DefInjected/GeneDef/GeneDefs_Health.xml
+VRESaurids_Oviparous.label	ovíparo
+VRESaurids_Oviparous.description	Portadores deste gene botam ovos em vez de dar à luz. Os ovos precisam de tempo e das condições certas para eclodir.\n
+VRESaurids_Oviparous.symbolPack.prefixSymbols.0.symbol	ovo
+VRESaurids_Oviparous.symbolPack.prefixSymbols.1.symbol	broto
+VRESaurids_Oviparous.symbolPack.prefixSymbols.2.symbol	ova
+VRESaurids_Oviparous.symbolPack.suffixSymbols.0.symbol	poedeira
+VRESaurids_Oviparous.symbolPack.suffixSymbols.1.symbol	íparo
+VRESaurids_Oviparous.symbolPack.wholeNameSymbols.0.symbol	botador
+VRESaurids_Oviparous.symbolPack.wholeNameSymbols.1.symbol	ovíparo
+VRESaurids_Oviparous.symbolPack.wholeNameSymbols.2.symbol	ovudo
+VRESaurids_Oviparous.symbolPack.wholeNameSymbols.3.symbol	chocador
+VRESaurids_ColdBlooded.label	sangue frio
+VRESaurids_ColdBlooded.description	Portadores deste gene precisam manter a temperatura do corpo estável. Calor ou frio demais causam perda das funções motoras e, se durar muito, a morte.
+VRESaurids_ColdBlooded.symbolPack.prefixSymbols.0.symbol	termo
+VRESaurids_ColdBlooded.symbolPack.suffixSymbols.0.symbol	lagarto
+VRESaurids_ColdBlooded.symbolPack.wholeNameSymbols.0.symbol	sangue-frio
+VRESaurids_Pheromones.label	feromônios
+VRESaurids_Pheromones.description	Portadores deste gene liberam feromônios especiais que atraem membros do mesmo xenotipo.
+## DefInjected/GeneDef/GeneDefs_ScaleSkin.xml
+VRESaurids_ScaleSkin.label	pele de escamas
+VRESaurids_ScaleSkin.description	Portadores deste gene têm escamas pelo corpo todo, que os protegem de qualquer tipo de dano cortante.
+VRESaurids_ScaleSkin.labelShortAdj	escamoso
+## DefInjected/GeneDef/GeneDefs_Vocal.xml
+VRESaurids_LizardVoice.label	voz de lagarto
+VRESaurids_LizardVoice.description	Os portadores têm uma voz aterrorizante, como a de um dinossauro.
+VRESaurids_LizardVoice.symbolPack.prefixSymbols.0.symbol	dino
+VRESaurids_LizardVoice.symbolPack.prefixSymbols.1.symbol	lagarto
+VRESaurids_LizardVoice.symbolPack.prefixSymbols.2.symbol	raptor
+VRESaurids_LizardVoice.symbolPack.prefixSymbols.3.symbol	réptil
+VRESaurids_LizardVoice.symbolPack.suffixSymbols.0.symbol	sauro
+VRESaurids_LizardVoice.symbolPack.suffixSymbols.1.symbol	sáurio
+VRESaurids_LizardVoice.symbolPack.suffixSymbols.2.symbol	saurus
+VRESaurids_LizardVoice.symbolPack.wholeNameSymbols.0.symbol	gritador
+VRESaurids_LizardVoice.symbolPack.wholeNameSymbols.1.symbol	guinchador
+VRESaurids_LizardVoice.symbolPack.wholeNameSymbols.2.symbol	raptor
+VRESaurids_LizardVoice.symbolPack.wholeNameSymbols.3.symbol	réptil
+## DefInjected/HediffDef/HediffDef_EggFatigue.xml
+VRESaurids_EggFatigue.label	fadiga de ovo
+VRESaurids_EggFatigue.description	Depois de botar um ovo, é comum quem tem o gene ovíparo passar por um curto período de esterilidade até poder gerar outro. A condição é temporária e não deixa efeitos duradouros.
+## DefInjected/HediffDef/HediffDef_SauridClaws.xml
+VRESaurids_SauridClaws.label	garras sáurias
+VRESaurids_SauridClaws.description	Portadores deste gene têm mãos parecidas com garras de dinossauro. Isso atrapalha um pouco a manipulação de objetos, mas permite causar cortes profundos no combate corpo a corpo.
+VRESaurids_SauridClaws.comps.HediffComp_VerbGiver.tools.claws.label	garras
+## DefInjected/HediffDef/HediffDef_SauridHealth.xml
+VRESaurids_HypothermicSlowdown.label	lentidão hipotérmica
+VRESaurids_HypothermicSlowdown.description	Este personagem tem sangue frio e o corpo começa a parar quando está frio demais. Isso desacelera o metabolismo e reduz a fome, mas quanto mais tempo durar, pior fica a capacidade dele, até a morte.
+VRESaurids_HyperthermicSlowdown.label	lentidão hipertérmica
+VRESaurids_HyperthermicSlowdown.description	Este personagem tem sangue frio e o corpo começa a parar quando está quente demais. Isso desacelera o metabolismo e reduz a fome, mas quanto mais tempo durar, pior fica a capacidade dele, até a morte.
+## DefInjected/PawnKindDef/PawnKinds_Player.xml
+VRESaurid_SauridMother.label	Mãe sáuria
+## DefInjected/PawnKindDef/PawnKinds_Saurids.xml
+VRESaurids_Villager_Saurid.label	aldeão
+VRESaurids_VillagerChild_Saurid.label	aldeão
+VRESaurids_TownGuard_Saurid.label	guarda da cidade
+VRESaurids_TownCouncilman_Saurid.label	vereador
+VRESaurids_TownCouncilman_Saurid.labelPlural	vereadores
+VRESaurids_TownTrader_Saurid.label	comerciante da cidade
+VRESaurids_MercenaryGunner_Saurid.label	atirador sáurio
+VRESaurids_MercenaryElite_Saurid.label	elite sáuria
+VRESaurids_MercenaryElite_Saurid.labelPlural	mercenários de elite
+## DefInjected/RulePackDef/RulePack_Namers_Faction.xml
+VRESaurids_NamerFactionOutlanderSaurid.rulePack.rulesStrings[0]	r_name->[union] [firstPart]'[secondPart]
+VRESaurids_NamerFactionOutlanderSaurid.rulePack.rulesStrings[55]	union->União
+VRESaurids_NamerFactionOutlanderSaurid.rulePack.rulesStrings[56]	union->Nação
+VRESaurids_NamerFactionOutlanderSaurid.rulePack.rulesStrings[57]	union->Confederação
+VRESaurids_NamerFactionOutlanderSaurid.rulePack.rulesStrings[58]	union->Confederação
+VRESaurids_NamerFactionOutlanderSaurid.rulePack.rulesStrings[59]	union->Aliança
+VRESaurids_NamerFactionOutlanderSaurid.rulePack.rulesStrings[60]	union->Pacto Sagrado
+VRESaurids_NamerFactionOutlanderSaurid.rulePack.rulesStrings[61]	union->Tratado
+VRESaurids_NamerFactionOutlanderSaurid.rulePack.rulesStrings[62]	union->Pacto
+VRESaurids_NamerFactionOutlanderSaurid.rulePack.rulesStrings[63]	union->Coalizão
+## DefInjected/ScenPartDef/ScenarioDef_Saurid.xml
+VRESaurids_StartingHumanEggs.label	começar com ovos humanos
+## DefInjected/ScenarioDef/ScenarioDef_Saurid.xml
+VRESaurids_SauridMother.label	Mãe sáuria
+VRESaurids_SauridMother.description	Diante de dificuldades e abusos, você foi forçada a abandonar seu modo de vida e pegou carona numa nave de transporte de curta distância. Só conseguiu levar o que mais importa: seus ovos. Eles são a única lembrança do seu parceiro, que se foi há muito tempo, e você prometeu criá-los custe o que custar. Pouco depois da partida, o piloto e seus capangas decidiram ficar com o seu dinheiro e jogar você no meio do mato.\n\nObservação: como você começa só com 4 ovos sáurios, este é um cenário difícil.
+VRESaurids_SauridMother.scenario.description	Diante de dificuldades e abusos, você foi forçada a abandonar seu modo de vida e pegou carona numa nave de transporte de curta distância. Só conseguiu levar o que mais importa: seus ovos. Eles são a única lembrança do seu parceiro, que se foi há muito tempo, e você prometeu criá-los custe o que custar. Pouco depois da partida, o piloto e seus capangas decidiram ficar com o seu dinheiro e jogar você no meio do mato.\n\nObservação: como você começa só com 4 ovos sáurios, este é um cenário difícil.
+VRESaurids_SauridMother.scenario.name	Mãe sáuria
+VRESaurids_SauridMother.scenario.parts.GameStartDialog.text	Diante de dificuldades e abusos, você foi forçada a abandonar seu modo de vida e pegou carona numa nave de transporte de curta distância. Só conseguiu levar o que mais importa: seus ovos. Eles são a única lembrança do seu parceiro, que se foi há muito tempo, e você prometeu criá-los custe o que custar. Pouco depois da partida, o piloto e seus capangas decidiram ficar com o seu dinheiro e jogar você no meio do mato.
+VRESaurids_SauridMother.scenario.summary	Uma mãe sáuria acidentada com 4 ovos que precisam de proteção e cuidado. Extra difícil.
+## DefInjected/StyleItemCategoryDef/HairDefs_Saurid.xml
+Saurid.label	sáurio
+## DefInjected/TaleDef/TaleDefs_Saurid.xml
+VRESaurids_HypothermicReveal.label	lentidão hipotérmica revelada
+VRESaurids_HypothermicReveal.rulePack.rulesStrings[0]	tale_noun->[PAWN_nameDef] morrendo congelado
+VRESaurids_HypothermicReveal.rulePack.rulesStrings[1]	image->[PAWN_nameFull] se arrastando pela neve [circumstance_group]
+VRESaurids_HypothermicReveal.rulePack.rulesStrings[2]	image->[PAWN_nameFull] encolhido ao lado de um [TerrainFeature] [circumstance_group]
+VRESaurids_HypothermicReveal.rulePack.rulesStrings[3]	image->[PAWN_nameFull] procurando um [Apparel] quente [circumstance_group]
+VRESaurids_HypothermicReveal.rulePack.rulesStrings[4]	image->[PAWN_nameFull] agachado junto a uma fogueira [circumstance_group]
+VRESaurids_HypothermicReveal.rulePack.rulesStrings[5]	image->[PAWN_nameFull] tentando acender uma fogueira [circumstance_group]
+VRESaurids_HypothermicReveal.rulePack.rulesStrings[6]	circumstance_phrase->enquanto o rosto fica azul aos poucos
+VRESaurids_HypothermicReveal.rulePack.rulesStrings[7]	circumstance_phrase->tremendo sem controle
+VRESaurids_HypothermicReveal.rulePack.rulesStrings[8]	circumstance_phrase->coberto de geada
+VRESaurids_HypothermicReveal.rulePack.rulesStrings[9]	circumstance_phrase->soltando nuvens de vapor
+VRESaurids_HypothermicReveal.rulePack.rulesStrings[10]	desc_sentence->[Quantity_adjphrase] carcaças congeladas de [Animal] cercam a área.
+VRESaurids_HypothermicReveal.rulePack.rulesStrings[11]	desc_sentence->As roupas de [PAWN_nameDef] estão esfarrapadas e gastas.
+VRESaurids_HypothermicReveal.rulePack.rulesStrings[12]	desc_sentence->Uma lua azul e fria paira ao fundo.
+VRESaurids_HypothermicReveal.rulePack.rulesStrings[13]	desc_sentence->A cena se passa numa floresta de [TreeType] coberta de neve.
+VRESaurids_HypothermicReveal.rulePack.rulesStrings[14]	desc_sentence->A cena parece se passar dentro de um freezer.
+VRESaurids_HypothermicReveal.rulePack.rulesStrings[15]	desc_sentence->[Quantity_adjphrase] [Animal]s tremendo cercam a cena.
+VRESaurids_HypothermicReveal.rulePack.rulesStrings[16]	desc_sentence->[Quantity_adjphrase] [Animal]s moribundos jazem no chão.
+VRESaurids_HyperthermicReveal.label	lentidão hipertérmica revelada
+VRESaurids_HyperthermicReveal.rulePack.rulesStrings[0]	tale_noun->[PAWN_nameDef] superaquecendo
+VRESaurids_HyperthermicReveal.rulePack.rulesStrings[1]	image->[PAWN_nameFull] se arrastando pela areia [circumstance_group]
+VRESaurids_HyperthermicReveal.rulePack.rulesStrings[2]	image->[PAWN_nameFull] encolhido à sombra de um [TerrainFeature] [circumstance_group]
+VRESaurids_HyperthermicReveal.rulePack.rulesStrings[3]	image->[PAWN_nameFull] procurando água [circumstance_group]
+VRESaurids_HyperthermicReveal.rulePack.rulesStrings[4]	image->[PAWN_nameFull] procurando sombra [circumstance_group]
+VRESaurids_HyperthermicReveal.rulePack.rulesStrings[5]	image->[PAWN_nameFull] rastejando sobre terra torrada pelo sol [circumstance_group]
+VRESaurids_HyperthermicReveal.rulePack.rulesStrings[6]	circumstance_phrase->coberto de suor
+VRESaurids_HyperthermicReveal.rulePack.rulesStrings[7]	circumstance_phrase->com os lábios rachados e secos
+VRESaurids_HyperthermicReveal.rulePack.rulesStrings[8]	circumstance_phrase->vomitando
+VRESaurids_HyperthermicReveal.rulePack.rulesStrings[9]	desc_sentence->[Quantity_adjphrase] carcaças ressecadas de [Animal] cercam a área.
+VRESaurids_HyperthermicReveal.rulePack.rulesStrings[10]	desc_sentence->As roupas de [PAWN_nameDef] estão esfarrapadas e rasgadas.
+VRESaurids_HyperthermicReveal.rulePack.rulesStrings[11]	desc_sentence->Um sol escaldante paira ao fundo.
+VRESaurids_HyperthermicReveal.rulePack.rulesStrings[12]	desc_sentence->A cena se passa num deserto escaldante.
+VRESaurids_HyperthermicReveal.rulePack.rulesStrings[13]	desc_sentence->A cena parece se passar num lugar fechado, ao lado de um aquecedor.
+VRESaurids_HyperthermicReveal.rulePack.rulesStrings[14]	desc_sentence->[Quantity_adjphrase] [Animal]s imóveis cercam a cena.
+VRESaurids_HyperthermicReveal.rulePack.rulesStrings[15]	desc_sentence->[Quantity_adjphrase] [Animal]s moribundos jazem no chão.
+## DefInjected/TaleDef/Thoughts_AteHumanEgg.xml
+VRESaurids_KilledEggChild.label	ovo humano comido
+## DefInjected/ThingDef/ItemDef_HumanEgg.xml
+VRESaurids_HumanEgg.label	ovo humano (fert.)
+VRESaurids_HumanEgg.description	Ovo humano fertilizado. Se tudo correr bem, deve eclodir num bebê humano. Definitivamente não deveria, mas pode ser comido cru. Comê-lo conta como matar um bebê.
+## DefInjected/ThoughtDef/Thoughts_AteHumanEgg.xml
+VRESaurids_KilledEggChildThought.stages.ate_human_egg.label	comeu ovo humano
+VRESaurids_KilledEggChildThought.stages.ate_human_egg.description	Matar alguém tão novo parece errado; não existe situação em que isso pareça certo.
+VRESaurids_KilledEggChild_Opinion.stages.ate_human_egg.label	comeu ovo humano
+## DefInjected/ThoughtDef/Thoughts_Pheromones.xml
+VRESaurids_PheromoneThought.stages.comforting_scent.label	cheiro reconfortante
+## DefInjected/XenotypeDef/XenotypeDefs.xml
+VRESaurids_Saurid.label	sáurio
+VRESaurids_Saurid.description	Com material genético sintético de réptil enxertado para se adaptar melhor a ambientes áridos, os sáurios são isolacionistas de sangue frio, de voz áspera e metabolismo baixíssimo. As garras afiadas e as escamas endurecidas os tornam especialmente aptos ao combate corpo a corpo.\n\nPara trabalhadores atrás de salários maiores, xenogerminadores sáurios são oferecidos junto com pacotes de emprego em planetas especialmente áridos e quentes. Como as condições são duras, eles passam por uma mudança de atitude: ficam menos sociais e consomem menos calorias, o que os torna mais lucrativos. Como não estão proibidos de formar família, os sáurios se comunicam entre si por feromônios e são ovíparos, para reduzir complicações médicas causadas pela falta de infraestrutura social adequada.
+VRESaurids_Saurid.descriptionShort	Projetados geneticamente para sobreviver com pouquíssima nutrição nos ambientes mais áridos, os sáurios se adaptam muito bem a ambientes hostis graças à reprodução ovípara e às características genéticas de lagarto. Preferem o isolamento e preferem se acasalar com outros sáurios.
+## Keyed/Dialogs_Various.xml
+VRESaurids_FactionGreetingHostile	{0} guincha no microfone algo que só sáurios entenderiam e desliga.
+VRESaurids_FactionGreetingHostileAppreciative	Sibilando e guinchando de raiva, {0} exige que vocês façam um gesto de união, como levar presentes a um dos assentamentos de {0_possessive} ou libertar ilesos os prisioneiros da facção de {0_possessive}. Até lá, {0_pronoun} não quer conversa.\n\nSibilando um insulto, {0_pronoun} desliga.
+VRESaurids_FactionGreetingWary	{0} sibila um cumprimento e pergunta que negócio vocês querem fazer.
+VRESaurids_FactionGreetingWarm	Latindo com entusiasmo, {0} cumprimenta {NEGOTIATOR_labelShort} e pergunta como {LEADER_pronoun} pode ajudar vocês.
+VRESaurids_MilitaryAidSent	{0} concorda em mandar guerreiros sáurios para ajudar vocês.
+VRESaurids.EggLaidLabel	{0} botou um ovo!
+VRESaurids.EggLaidDesc	{0} botou um ovo por ser ovíparo. Mantenha o ovo num ambiente seguro, coberto e entre 0 °C e 50 °C. Depois de algum tempo, o ovo eclode e sai uma criança. {0} não poderá botar outro ovo até o corpo se recuperar.
+VRESaurids.EggHatchedLabel	O ovo de {0} eclodiu!
+VRESaurids.EggHatchedDesc	O ovo de {0} eclodiu com sucesso, trazendo um novo bebê para a colônia! Lembre-se de cuidar dele e garantir que cresça saudável.
+VRESaurids.CannotOviparous	ovíparo
+VRESaurids.ColdBloodedDanger	Perigo de sangue frio!
+VRESaurids.ColdBloodedDangerExplanation	Personagens de sangue frio sucumbem a temperaturas extremas com muito mais facilidade e rapidez que os outros; estes personagens estão em risco agora

@@ -1,0 +1,5 @@
+# Exporta os textos traduzíveis (inglês) dos mods ativos de terceiros para EcosDaQueda-Dev/trans-export (caminho relativo à pasta do jogo).
+# Uso: run-test.ps1 -Script tests/trans-export.txt -Profile full -Exclude ecosdaqueda.traducao
+newgame
+timeout 900
+transexport EcosDaQueda-Dev\trans-export all

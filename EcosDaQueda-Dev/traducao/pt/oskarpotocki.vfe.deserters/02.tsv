@@ -1,0 +1,274 @@
+## DefInjected/ThingDef/Buildings_Security_Turrets.xml
+VFED_Gun_Kontarion.verbs.Verb_ShootCE.label	canhão kontarion
+VFED_Turret_Palintone.label	palintone
+VFED_Turret_Palintone.description	Uma arma antipessoal poderosa, usada pelo Império para defender postos inseguros. A torre palintone dispara projéteis de grosso calibre a velocidades incríveis, causando dano pesado a grandes distâncias. Dispara rajadas enormes que dão fogo de supressão e despedaçam rápido alvos com pouca armadura. Com seu poder de fogo devastador, segura até as maiores forças inimigas. Pode explodir quando danificada.\n\nGasta muita munição e precisa de uma caixa de munição de autocanhão ao lado para recarregar sozinha. Não pode ser recarregada à mão.
+VFED_Gun_Palintone.label	canhão palintone
+VFED_Gun_Palintone.description	Um canhão com carregamento automático, feito para ser montado numa torre.
+VFED_Gun_Palintone.verbs.Verb_ShootCE.label	canhão palintone
+VFED_Turret_Onager.label	onager
+VFED_Turret_Onager.description	Uma arma antiblindagem poderosa, usada pelo Império para destruir com facilidade alvos muito blindados. Lança mísseis em rajadas de 6 e causa dano devastador às forças inimigas em pouco tempo. É mais eficaz a curta distância, onde os mísseis podem ser mirados com precisão. Mas não consegue atirar em inimigos perto demais, porque os mísseis precisam de certa distância para armar e rastrear o alvo. Além disso, pela quantidade de mísseis que dispara, é menos precisa que outras torres e às vezes erra. Pode explodir quando danificada.\n\nGasta muita munição e precisa de uma caixa de mísseis ao lado para recarregar sozinha. Não pode ser recarregada à mão.
+VFED_Gun_Onager.label	canhão onager
+VFED_Gun_Onager.description	Um lança-foguetes com carregamento automático, feito para ser montado numa torre.
+VFED_Gun_Onager.verbs.Verb_ShootMortarCE.label	canhão onager
+VFFED_Bullet_Onager.label	onager
+VFED_Turret_StrikerTurret.label	torre de ataque
+VFED_Turret_StrikerTurret.description	Uma torre fixa e poderosa. Se autodestrói quando danificada o bastante.
+## DefInjected/ThingDef/Buildings_Special.xml
+VFED_AmmoBox_UraniumSlug.label	caixa de balas de urânio
+VFED_AmmoBox_UraniumSlug.description	Uma caixa pequena com munição de balas de urânio. Usada pelas torres kontarion para recarregar. Pode explodir quando danificada.
+VFED_AmmoBox_Autocannon.label	caixa de munição de autocanhão
+VFED_AmmoBox_Autocannon.description	Uma caixa pequena com munição de autocanhão. Usada pelas torres palintone para recarregar. Pode explodir quando danificada.
+VFED_AmmoBox_Missile.label	caixa de mísseis
+VFED_AmmoBox_Missile.description	Uma caixa pequena com mísseis. Usada pelas torres onager para recarregar. Pode explodir quando danificada.
+VFED_SupplyCrate.label	caixa de suprimentos
+VFED_SupplyCrate.description	Uma pequena caixa imperial com objetos de valor. Pode conter informações. Abri-la exige contornar vários protocolos de segurança e leva um tempinho.\n\nQualquer tentativa de destruí-la destrói os itens também.
+VFED_BiosecuredCrate.label	caixa com biotrava
+VFED_BiosecuredCrate.description	Uma pequena caixa imperial com itens extremamente valiosos. Pode conter informações críticas. Por causa das restrições especiais, só nobres imperiais conseguem abri-la.\n\nQualquer tentativa de destruí-la destrói os itens também.
+VFED_SurveillancePillar.label	pilar de vigilância
+VFED_SurveillancePillar.description	Um pilar grande com vários sensores, câmeras e detectores de movimento. Graças ao sofisticado reconhecimento facial, detecta desertores no raio de alcance e aumenta a visibilidade da facção que os mandou. Pode ser desativado por pulso eletromagnético ou simplesmente cortando a energia.
+VFED_AerodroneMunitionsCrate.label	caixa de munição de aerodrone
+VFED_AerodroneMunitionsCrate.description	Uma grande caixa militar de munição de aerodrone. Explode quando danificada, lançando projéteis armados em direções aleatórias.
+VFED_AerodroneBatteryPack.label	bateria de aerodrone
+VFED_AerodroneBatteryPack.description	Uma bateria grande e sobrecarregada de aerodrone. Libera um forte pulso eletromagnético quando danificada, podendo desativar as defesas próximas.
+VFED_Aerodrone.label	aerodrone
+VFED_Aerodrone.description	O aerodrone é um veículo aéreo não tripulado de tecnologia espacial, com sensores avançados e carga de mísseis. Feito para operações autônomas de longo alcance, é muito usado pelo Império para reconhecimento e bombardeio. As salvas de mísseis poderosas o tornam eficaz contra vários alvos. Este aerodrone está desativado temporariamente pelo ciclo de recarga.
+VFED_ImperialMaxpack.label	maxpack imperial
+VFED_ImperialMaxpack.description	O maxpack imperial é um formidável caminhão blindado de transporte, conhecido pela enorme capacidade de carga. A blindagem é impenetrável, garantindo a segurança da carga durante o trajeto. Em movimento, as portas ficam lacradas até chegar ao destino. Tentar saquear a carga é inútil por causa dos protocolos de autodestruição, mas o exterior robusto o torna um ótimo escudo no campo de batalha.
+VFED_StrikeBuoy.label	boia de ataque
+VFED_StrikeBuoy.description	Uma pequena boia de vigilância, costuma ser colocada em volta das paradas temporárias de comboios. Ligada direto a um aerodrone em patrulha, quando acionada manda uma pequena salva de mísseis no local.
+VFED_FuelTank.label	tanque de combustível
+VFED_FuelTank.description	Um tanque grande de combustível usado para reabastecer os ônibus espaciais imperiais. Detona se for danificado além de certo ponto, podendo provocar uma reação em cadeia.
+VFED_SurveillanceStation.label	console de vigilância
+VFED_SurveillanceStation.description	Um console grande feito para se ligar aos pilares de vigilância ao redor. Dá ao usuário todos os dados necessários sobre os movimentos inimigos no setor.
+VFED_SurveillanceDisplayBank.label	painel de monitores de vigilância
+VFED_SurveillanceDisplayBank.description	Uma interface de computador imperial. Ligado ao console de vigilância, o painel mostra imagens ao vivo de todos os pilares de vigilância do setor.
+VFED_Techprinter.label	tecnoimpressora
+VFED_Techprinter.description	A tecnoimpressora é uma maravilha da inovação tecnológica, feita para capturar e preservar o conhecimento intrincado guardado na mente de um tecnofrade. Essas máquinas avançadas gravam essa informação valiosa direto em discos de tecnita. As tecnoplantas dão conhecimento básico aos pesquisadores, revelando inovações de sociedades mais avançadas.
+VFED_TechiteDiscStack.label	pilha de discos de tecnita
+VFED_TechiteDiscStack.description	Uma pilha compacta de discos feitos do enigmático elemento chamado tecnita, produzido só pelo Império para transcrever conhecimento. Feitos principalmente para guardar informação. Quando pegam fogo, liberam uma nuvem densa de fumaça cegante e faíscas, capaz de incendiar uma área enorme.
+VFED_ImperialUnderfarm.label	fazenda subterrânea imperial
+VFED_ImperialUnderfarm.description	Uma base hidropônica subterrânea usada pelo império para alimentar os súditos. Totalmente automatizadas e ligadas às adutoras, essas fazendas não precisam de mão de obra.
+VFED_WaterMain.label	adutora
+VFED_WaterMain.description	Um nó grande que liga todas as adutoras próximas. Necessário para as fazendas subterrâneas funcionarem.
+VFED_CrashedAerodrone.label	aerodrone caído
+VFED_CrashedAerodrone.description	Um aerodrone imperial caído.
+VFED_ImperialMegaHighShield.label	megaescudo alto imperial
+VFED_ImperialMegaHighShield.description	Um aparelho de escudo avançado: o megaescudo alto imperial projeta um enorme campo repulsor de momento, que deixa os tiros saírem, mas não entrarem. Calibrado para ângulos altos, desvia bem projéteis de morteiro, ataques de aerodrones e até raios fatiadores orbitais. Pode ser desativado temporariamente por ataques de PEM, chocando o próprio projetor ou usando munição de PEM no escudo. Consome uma quantidade enorme de energia.
+VFED_ZeusCannonControlStation.label	estação de controle do canhão Zeus
+VFED_ZeusCannonControlStation.description	Este terminal é a interface principal para operar as baterias de canhões Zeus. Com controles e sistemas de mira sofisticados, garante precisão e coordenação no uso do poder de fogo formidável dos canhões Zeus. Os operadores precisam estar no raio dela para controlá-la.
+VFED_ZeusCannonCapacitorBank.label	banco de capacitores do canhão Zeus
+VFED_ZeusCannonCapacitorBank.description	Um banco de capacitores que transforma eletricidade em energia bruta para o canhão Zeus. Libera uma grande onda de PEM quando destruído, podendo desativar o próprio canhão Zeus.
+VFED_ZeusCannon.label	canhão Zeus
+VFED_ZeusCannon.description	Relíquia da antiga tecnologia sophiamundana, o canhão Zeus é um segredo muito bem guardado do Império. Esta peça de artilharia formidável tem a capacidade única de converter enormes quantidades de eletricidade em rajadas de energia potentes. Com alcance sem igual, atravessa a atmosfera para mirar e destruir objetos em órbita. Prova de uma genialidade de engenharia perdida, é ao mesmo tempo arma e símbolo do poder do Império.\n\nTem um ciclo de carga longo, depois do qual mira no alvo e libera uma rajada de energia devastadora.
+VFED_BurnoutIntelScraper.label	raspador de informações descartável
+VFED_BurnoutIntelScraper.description	Um aparelho dos desertores capaz de interceptar comunicações imperiais. Quando ativado, começa a raspar informações, emitindo um pulso em intervalos regulares. Cada pulso tem chance de gerar um pouco de informação, mas também pode aumentar a sua visibilidade e até alertar uma força de ataque imperial. Depois de 10 pulsos, a máquina queima e causa uma explosão de fogo.
+## DefInjected/ThingDef/Filth.xml
+VFED_Filth_Propaganda.label	propaganda imperial
+## DefInjected/ThingDef/Items_Exotic.xml
+VFED_Biodecoder.label	biodecodificador
+VFED_Biodecoder.description	O biodecodificador é um aparelho de ultratecnologia de uso único, feito para tirar a biocodificação de qualquer item. Usa um processo complexo para soltar a biocodificação do item original e transferi-la para o biodecodificador, que se quebra no processo. Também pode ser usado em caixas com biotrava para abri-las. Costuma ser usado em operações delicadas, em que a biocodificação poderia comprometer a missão.
+VFED_Biodecoder.comps.CompUsable.useLabel	Usar {0_label}
+VFED_PsychicAmplifier.label	amplificador psíquico
+VFED_PsychicAmplifier.description	Tecnologia imperial aposentada desde a invenção dos neuroformadores de psínculo, o amplificador psíquico melhora o psínculo na mente do usuário. Não consegue criar um psínculo sozinho e só pode ser usado por colonos que já têm psínculo. O usuário pressiona o aparelho sobre os olhos, onde ele se liga direto ao cérebro e reestrutura parte dele. Depois, o aparelho se desfaz em cinzas sem valor.
+VFED_PsychicAmplifier.comps.CompUsable.useLabel	Usar {0_label}
+## DefInjected/ThingDef/Items_Resource_Exotic.xml
+VFED_Intel.label	informação
+VFED_Intel.description	Um dossiê com informações sobre o Império Fragmentado. Para protegê-las da contrainteligência imperial, as informações precisam ficar em forma física. Podem ser usadas para conseguir itens contrabandeados com os desertores ou para liberar missões, incluindo missões de assassinato de nobres imperiais.
+VFED_CriticalIntel.label	informação crítica
+VFED_CriticalIntel.description	Um dossiê com informações críticas sobre o Império Fragmentado. Para protegê-las da contrainteligência imperial, as informações precisam ficar em forma física. Podem ser usadas para planejar tentativas de assassinato de alto escalão, ou trocadas por informação comum pelo sistema de contrabando.
+## DefInjected/ThingDef/Items_Resource_Shell.xml
+VFED_Bullet_Shell_Shrapnel.label	projétil de estilhaços
+VFED_Bullet_Shrapnel.label	estilhaço
+VFED_Bullet_Shell_ArmorPiercing.label	projétil perfurante
+VFED_Bullet_Shell_Cluster.label	projétil de fragmentação
+## DefInjected/ThingDef/Projectiles.xml
+VFED_AerodroneStrikeIncoming.label	ataque de aerodrone
+VFED_Spark.label	faísca
+## DefInjected/ThingDef/RangedSpacer.xml
+VFED_Gun_ChargeCycler.label	ciclador de carga
+VFED_Gun_ChargeCycler.description	Um revólver de tiro carregado modificado com tecnologia mecanoide. Canhões de impacto recuperados passaram por engenharia reversa para criar um poderoso revólver de carga com dois modos de tiro. O modo de tiro carregado elimina alvos próximos com uma rajada poderosa e perfurante, enquanto o modo de impacto incapacita inimigos e derruba as defesas atrás das quais estiverem escondidos. Os modos são trocados com um toque de botão.
+VFED_Gun_ChargeCycler.tools.grip.label	empunhadura
+VFED_Gun_ChargeCycler.tools.muzzle.label	boca do cano
+VFED_Gun_ChargeCycler.verbs.Verb_ShootCE.label	ciclador de carga
+VFED_Bullet_ChargedShot.label	tiro carregado
+VFEE_Bullet_ThumpShot.label	tiro de impacto
+VFED_Gun_Fletchling.label	flechinha
+VFED_Gun_Fletchling.description	Uma modificação do raríssimo fuzil flecheiro, a flechinha é uma escopeta muito usada pelos desertores imperiais. Só possuí-la já pode ser visto como ato de guerra contra o Império Fragmentado. Cada disparo libera vários dardos acidificantes pequenos, que podem atingir vários alvos, causando dor extrema e queimaduras de ácido. Letal para orgânicos e quase inútil contra não orgânicos, como mecanoides. \n\nOs alvos atingidos por esses dardos recebem uma variante instável de fluido acidificante, feita para dissolver o alvo por dentro em vez de destruir o equipamento. O ácido devasta o corpo do alvo e costuma dissolver órgãos vitais, mas a morte não é garantida.
+VFED_Gun_Fletchling.tools.stock.label	coronha
+VFED_Gun_Fletchling.tools.barrel.label	cano
+VFED_Gun_Fletchling.tools.muzzle.label	boca do cano
+VFED_Gun_Fletchling.verbs.Verb_ShootCE.label	flechinha
+VFEE_Bullet_FletchlingDart.label	dardo flecheiro
+## DefInjected/ThingDef/Shuttle.xml
+VFED_DeserterShuttleIncoming.label	ônibus espacial desertor (chegando)
+VFED_DeserterShuttleLeaving.label	ônibus espacial desertor (partindo)
+## DefInjected/ThingDef/Skyfallers.xml
+VFED_DropPodIncoming_Propaganda.label	cápsula de queda (chegando)
+## DefInjected/ThoughtDef/Thoughts.xml
+VFED_CleanedPropaganda.stages.cleaned_propaganda.label	limpou propaganda
+VFED_CleanedPropaganda.stages.cleaned_propaganda.description	Tive de limpar propaganda imperial. Dei uma espiada rápida. Talvez nem tudo seja mentira?
+## DefInjected/ThoughtDef/Thoughts_Memory_Misc.xml
+VFED_JoinedDeserters.stages.joined_the_deserters.label	juntou-se aos desertores
+VFED_JoinedDeserters.stages.joined_the_deserters.description	Vamos mostrar ao Império o que é liberdade.
+VFED_UsedDeclassifier.stages.used_a_declassifier.label	usou um desclassificador
+VFED_UsedDeclassifier.stages.used_a_declassifier.description	Era um mal necessário.
+## DefInjected/TransportShipDef/Shuttle.xml
+VFED_Ship_DeserterShuttle.label	ônibus espacial
+## DefInjected/VFED.ContrabandCategoryDef/Misc.xml
+VFED_Deserter.label	tecnologia desertora
+VFED_Imperial.label	tecnologia imperial
+## DefInjected/VFED.DeserterServiceDef/Services.xml
+VFED_LowerVisibility.label	reduzir visibilidade
+VFED_LowerVisibility.description	Use informações para convencer a rede de desertores a limpar o seu nome e reduzir a sua visibilidade em 1.
+VFED_CallShuttle.label	chamar ônibus espacial
+VFED_CallShuttle.description	Chama um ônibus espacial desertor só de ida para uso próprio, que leva colonos, itens e animais a até 70 quadrados de distância.
+VFED_IncreaseGoodwill.label	aumentar boa vontade
+VFED_IncreaseGoodwill.description	Troque informações para convencer a rede de desertores a aumentar em 5 a sua boa vontade com uma facção aleatória.
+VFED_DelayResponse.label	atrasar resposta
+VFED_DelayResponse.description	Troque informações para convencer a rede de desertores a criar uma distração, aumentando o tempo de resposta em todas as operações em andamento com contagem regressiva já rodando. Atrasa a resposta em 1 minuto. Pode ser usado várias vezes.
+VFED_TauntImperials.label	provocar forças imperiais
+VFED_TauntImperials.description	Gaste informações para provocar uma força de ataque imperial a atacar a sua colônia.
+VFED_ChangeCritical.label	trocar informação crítica
+VFED_ChangeCritical.description	Troque informação crítica por 10 de informação comum.
+## DefInjected/VFED.DeserterTabDef/DeserterTabs.xml
+VFED_Contraband.label	contrabando
+VFED_Contraband.description	aba
+VFED_Services.label	serviços
+VFED_Services.description	aba
+VFED_Plots.label	conspirações
+VFED_Plots.description	aba
+## DefInjected/VFED.ImperialResponseDef/ResponseTypes.xml
+VFED_Patrol.label	patrulha
+VFED_StrikeForce.label	força de ataque
+VFED_StellicGuards.label	esquadrão da guarda estélica
+VFED_MissileRain.label	chuva de mísseis
+## DefInjected/VFED.VisibilityLevelDef/VisibilityLevelDefs.xml
+VFED_Hidden.label	oculto
+VFED_Hidden.description	Vocês operam em segredo, e o Império não sabe da sua lealdade aos desertores. Não reage aos seus ataques às instalações e, em geral, não procura vocês pelo mundo.
+VFED_Whispers.label	sussurros
+VFED_Whispers.description	A notícia da sua atividade começou a se espalhar entre a alta nobreza, mas o Império ainda vê vocês só como um incômodo raro e pequeno. Esperem patrulhas mandadas a qualquer instalação imperial atacada, mas ainda deve dar tempo de entrar e sair antes que cheguem. Revistas de inventário passam a fazer parte dos novos protocolos, o que dificulta um pouco conseguir contrabando.
+VFED_Rumors.label	boatos
+VFED_Rumors.description	Boatos sobre a atividade dos desertores começam a circular entre os oficiais e soldados de baixa patente do Império. O Império ainda não tem provas concretas do envolvimento de vocês, mas já leva os boatos a sério e reforçou a segurança. Esperem mais segurança nas instalações imperiais e uma força de reação de janissários assim que a instalação souber da sua presença. As patrulhas imperiais agora são frequentes e revistam todas as caravanas que encontram.
+VFED_Rumors.specialEffects.0.label	O evento de caravana interceptada por patrulha imperial fica ativo
+VFED_Rumors.specialEffects.1.label	Todos os exércitos imperiais em todos os locais de missão com presença do Império ficam 20% maiores
+VFED_News.label	notícia
+VFED_News.description	Suas ações viraram de conhecimento público e caíram como uma tempestade nas estações de notícias imperiais. O Império agora considera vocês uma ameaça séria e deu alta prioridade para encontrá-los. A segurança em todas as instalações aumentou muito. Além disso, o Império vai mandar mais grupos de ataque a qualquer assentamento suspeito de abrigar desertores. Vai ser mais difícil conseguir contrabando e apoio dos moradores, já que a campanha de propaganda do Império está ganhando força.
+VFED_News.specialEffects.0.label	Incursões da facção do Império acontecem 2x mais
+VFED_News.specialEffects.1.label	Todos os exércitos imperiais em todos os locais de missão com presença do Império ficam 50% maiores
+VFED_News.specialEffects.2.label	A propaganda imperial pode começar a cair
+VFED_News.specialEffects.3.label	A missão do desertor perseguido não acontece mais
+VFED_PublicEnemy.label	inimigo público
+VFED_PublicEnemy.description	Vocês agora são conhecidos por todos, e o Império os considera o inimigo número um. Estão usando todos os recursos para encontrá-los e eliminá-los junto com seus seguidores. O Império também pode usar táticas de terra arrasada, como bombardear áreas inteiras suspeitas de apoiar os desertores. Estão dispostos a sacrificar as próprias instalações se isso eliminar os desertores e vão responder a qualquer agressão com bombardeios indiscriminados de aerodrones. A maioria das operações de contrabando para e o contrabando fica incrivelmente difícil de achar. As guildas de espiões imperiais vão espalhar desinformação para jogar outras facções contra vocês, tornando difícil distinguir amigo de inimigo. É guerra total, e o resultado vai decidir o destino de vocês e do Império. Preparem-se para uma luta difícil, porque sobreviver agora é a única opção.
+VFED_PublicEnemy.specialEffects.0.label	Incursões da facção do Império acontecem 3x mais
+VFED_PublicEnemy.specialEffects.1.label	Todos os exércitos imperiais em todos os locais de missão com presença do Império ficam 100% maiores
+VFED_PublicEnemy.specialEffects.2.label	O evento de bombardeio de aerodrones fica disponível.
+VFED_PublicEnemy.specialEffects.3.label	Incursões de absolvedores podem acontecer.
+VFED_PublicEnemy.specialEffects.4.label	A relação com uma facção aleatória cai -10 uma vez por dia.
+VFED_DivineInferno.label	inferno divino
+VFED_DivineInferno.description	O Império iniciou o protocolo Inferno Divino na sua localização. Que vocês encontrem consolo nas chamas purificadoras. Vocês têm 30 dias até o Império posicionar todos os satélites de raio fatiador orbital necessários. A menos que consigam baixar a visibilidade de volta a Oculto a tempo, a colônia será vitrificada por vários pilares de fogo.
+VFED_DivineInferno.specialEffects.0.label	Assim que o jogador chega a 100 de visibilidade, começa a contagem regressiva do Inferno Divino.
+## DefInjected/WorkGiverDef/Misc.xml
+VFED_ExtractIntel.label	extrair informação
+VFED_ExtractIntel.gerund	extraindo
+VFED_ExtractIntel.verb	extrair
+## DefInjected/WorldObjectDef/Shuttle.xml
+VFED_TravelingDeserterShuttle.label	ônibus espacial desertor
+VFED_TravelingDeserterShuttle.description	Um ônibus espacial desertor em voo.
+## Keyed/Endgame.xml
+VFED.EndgameText	O Império Fragmentado, antes símbolo de tirania e opressão, desmoronou. Por todo o planeta, desertores corajosos se ergueram num coro de rebelião, quebrando as correntes da servidão que os prendiam. Cada criança que agora acorda no amanhecer da liberdade vai lembrar e honrar estes nomes, os nomes dos heróis que ousaram desafiar o impossível:\n{0}\n\nMas isto não é o fim, só uma transição. Com o velho império em ruínas e sua nau capitânia virando destroços em chamas caídos do céu, chega a hora de curar e reconstruir. Os nobres, antes leais ao império, agora se rendem às comunidades forasteiras ou se perdem numa vida de crime. Não dá para negar: o mundo mudou para sempre.\n\nNo limiar de uma nova era, vocês se lembram deste capítulo de rebeldia e coragem. Os ecos do Império Fragmentado vão servir de lembrete da sua resistência, prova da sua busca inabalável pela liberdade. Vocês olham para a frente, sabendo que estão entrando num futuro feito de esperança, união e libertação.
+VFED.EndgameWarningText	Você está prestes a iniciar a missão final do Vanilla Factions Expanded: Deserters. Depois que ela terminar, o Império e os Desertores deixarão de existir. Tem certeza de que quer iniciar a missão final?
+## Keyed/Misc.xml
+VFED.Detonate	Detonar
+VFED.IntelOutOfDate	A informação vai ficar desatualizada em: {0}
+VFED.IntelOutOfDateNow	{0} ficou desatualizada. Considere usar as informações que juntar antes que fiquem desatualizadas.
+VFED.SwitchTo	Clique para mudar para {0}
+VFED.SurveillancePillarActivated	Vocês ativaram um pilar de vigilância imperial. A visibilidade da sua facção aumentou em {1}. Agora está em {0}.
+VFED.IntelFromTitle	{0} perdeu o título de {1}. Isso rendeu {2} de informação.
+VFED.ResponseComing	Resposta imperial
+VFED.ResponseComingDesc	Um(a) {0} imperial está a caminho deste local. Chega em {1}s.
+VFED.ResponseMessage	Por terem provocado uma resposta imperial, a sua visibilidade aumentou em {0}. Agora está em {1}. No futuro, dá para evitar o aumento concluindo a missão antes de a resposta chegar.
+VFED.Detonate.BombPack	Detonar mochila-bomba
+VFED.Detonate.BombPack.Desc	Detona esta mochila-bomba à distância, causando uma grande explosão. ATENÇÃO: apertar este botão detona a bomba na hora.
+VFED.Deploy	Colocar
+VFED.Deploy.Desc	Coloca este(a) {0} para criar um(a) {1} neste local.
+VFED.EnableInvisibility	Ativar invisibilidade
+VFED.EnableInvisibility.Desc	Deixa este colono invisível por 1 hora. Se o colono atacar alguém, a invisibilidade acaba.
+VFED.OnCooldown	Em recarga
+VFED.AlreadyInvisibile	Já está invisível
+VFED.MustHavePsylink	Precisa ter psínculo
+VFED.ExtractIntel	Extrair informação
+VFED.ExtractIntel.Desc	Extrai informação do cérebro de um nobre. Ele pode estar vivo ou caído, mas o cérebro precisa estar presente. Destrói o cérebro.
+VFED.ImperialPatrol	Patrulha de {0}
+VFED.ImperialPatrol.Desc	{0} encontrou uma patrulha imperial de {1}. Foram avistados! {0} pode tentar fugir, mas isso vai inevitavelmente aumentar a visibilidade de {2}. Lutar contra a patrulha pode ser difícil, mas mantém {2} em segurança. A patrulha é formada por:\n\n{3}
+VFED.ImperialPatrol.Escape	Fugir da patrulha.
+VFED.ImperialPatrol.Attack	Atacar a patrulha.
+VFED.ImperialPatrol.GiveUp	Entregar {0}.
+VFED.ImperialPatrol.GaveUp	{0} entregou {1} ao Império. É pouco provável que vocês voltem a vê-lo. O Império não trata bem sabotadores.
+VFED.AerodroneBombardment	Bombardeio de aerodrones
+VFED.AerodroneBombardment.Desc	O(a) {0} mandou vários aerodrones até a sua localização. Suspeitam que vocês abrigam desertores com más intenções contra a Grande Hierarquia.\nO aerodrone é um drone atmosférico não tripulado de uso militar. Controlado por programadores de guerra muito habilidosos nas instalações imperiais, é uma ferramenta altamente eficaz para eliminar os inimigos do Império. Com sensores e sistemas de mira avançados, detecta e rastreia alvos a grandes distâncias. Identificado o alvo, solta uma salva devastadora de foguetes de precisão, cada um feito para causar o máximo de dano e destruição.\nO Império localizou a sua infraestrutura crítica, e os aerodrones vão começar o bombardeio em breve. Recomenda-se evacuar.
+VFED.GlassingDate	Data da vitrificação
+VFED.DivineInferno.Init	Inferno Divino iniciado
+VFED.DivineInferno.Desc	Os satélites de raio fatiador orbital terminaram de se arranjar num belo padrão de flor sobre a sua colônia. O que vem depois só pode ser descrito como destruição total. Os raios fatiadores descem do céu, criando uma teia de energia que arrasa tudo no caminho, sistematicamente. O próprio terreno parece se dobrar e se erguer enquanto os raios cortam a terra, deixando fendas fundas e crateras cheias de escombros. Pessoas, veículos e até prédios viram pó e cinza em segundos. O ar é superaquecido pela energia intensa dos raios, criando uma onda de choque que se espalha por quilômetros.\nNão há como escapar do Inferno Divino. Quem estiver no caminho é vaporizado na hora, deixando só restos carbonizados do que havia ali. Nem os abrigos subterrâneos aguentam o poder destrutivo dos raios fatiadores, que cortam a terra como faca quente na manteiga.\nO que sobra depois do Inferno Divino é um deserto de destruição. A paisagem fica irreconhecível, com pouco mais que escombros e cinzas até onde a vista alcança. O ar continua pesado, com o cheiro acre de carne queimada e metal derretido. A colônia antes próspera vira só uma carcaça queimada e sem vida.
+VFED.GoodwillDropVisibility	Por causa da desinformação imperial, sua relação com {0} caiu 10.
+VFED.ShotsFiredLeft	{0} raios disparados, {1} raios restantes
+VFED.VisibilityIncreases	A visibilidade aumenta em {0}
+VFED.VisibilityDecreases	A visibilidade diminui em {0}
+VFED.VisibilityIncreases.Desc	A visibilidade vai aumentar em {0}. Isso pode levar a respostas imperiais maiores e mais fortes.
+VFED.VisibilityDecreases.Desc	A visibilidade vai diminuir em {0}. Isso pode reduzir as respostas imperiais.
+VFED.BiosecuredCrateWarning	Caixas com biotrava só podem ser abertas por personagens com história de origem nobre.
+VFED.CantOpenBiosecured	exige história de origem nobre
+VFED.ServiceIncreasedGoodwill	A boa vontade com {0} aumentou em 5 graças a boatos positivos espalhados pelos desertores imperiais.
+VFED.DetectedWarning	Vocês foram detectados pela segurança. A guarnição está se mobilizando contra vocês.
+VFED.HighAlertWarning	Os defensores estão entrando em alerta máximo.
+VFED.FleeWarning	{0} está tentando fugir!
+VFED.NobleKilledRevenge	{0} de {1} estão tentando vingar {2}.
+VFED.ContrabandArrived	Seu contrabando chegou.
+VFED.VisibilityChange	Visibilidade mudou: {0}
+VFED.VisibilityChange.Desc	Seu nível de visibilidade mudou. Agora é {0}.
+VFED.VisibilityEffectsActive	Estes efeitos foram ativados:
+VFED.VisibilityEffectsInactive	Estes efeitos foram desativados:
+VFED.TimeToNextPulse	Tempo até o próximo pulso: {0}
+VFED.PulsesBeforeOut	Pulsos antes de queimar: {0}
+VFED.BurnoutWarning	Construir um raspador de informações descartável conta como declaração de guerra contra o Império.
+VFED.ActivateScraper	Ativar raspador
+VFED.ActivateScraper.Desc	Ativa a contagem do raspador de informações, que solta um pulso a cada 60 segundos, com chance de conseguir informações valiosas e de provocar uma investigação imperial.
+VFED.DeactivateScraper	Desativar raspador
+VFED.DeactivateScraper.Desc	Desativa o raspador de informações, parando a contagem até o próximo pulso.
+VFED.Exhausted	Esgotado
+VFED.BurnoutIntelGained	O raspador de informações interceptou comunicações imperiais e gerou {0} de informação.
+VFED.BurnoutCriticalIntelGained	O raspador de informações interceptou comunicações imperiais de alto valor e gerou {0} de informação crítica.
+VFED.BurnoutVisibilityIncreased	O raspador de informações chamou a atenção imperial e aumentou a sua visibilidade em {0}. (Visibilidade atual: {1}.)
+VFED.BurnoutRaid	O raspador de informações foi interceptado por uma patrulha imperial próxima. Estão vindo atacar.
+## Keyed/Settings.xml
+VFEDeserters	VFE - Deserters
+VFED.VisibilityChangePerDay	Mudança de visibilidade por dia: {0}
+VFED.IntelFromExtractingIntel	Informação por extração: {0}
+VFED.VisibilityFromPillar	Visibilidade ganha por pilar de vigilância: {0}
+VFED.ResponseTimeMultiplier	Multiplicador do tempo de resposta: {0}
+## Keyed/UI.xml
+VFED.ContactDeserters	Contatar desertores
+VFED.Visibility	Visibilidade: {0}
+VFED.CurrentVisibility	Visibilidade atual:
+VFED.Effects	Efeitos:
+VFED.IntelCostModifier	Custo em informação:
+VFED.ContrabandRecieveTimeModifier	Tempo para receber contrabando:
+VFED.ContrabandSiteTimeModifier	Disponibilidade dos pontos de entrega:
+VFED.ImperialResponseTime	Tempo de resposta imperial:
+VFED.ImperialResponseType	Tipo de resposta imperial:
+VFED.SpecialEffects	Efeitos especiais:
+VFED.NoResponse	Sem resposta
+VFED.None	Nenhum
+VFED.ItemName	Nome do item
+VFED.Cost	Custo
+VFED.Basket	Cesta
+VFED.ContrabandRecieveDesc	Itens comprados pelo sistema de contrabando não chegam à colônia em cápsulas de carga. Em vez disso, depois de um tempo aparece uma missão de busca num ponto de entrega, disponível só por um curto período. É lá que vocês pegam o contrabando comprado.
+VFED.Purchase	Comprar
+VFED.RushDelivery	Entrega expressa
+VFED.TotalCost	Custo total da cesta
+VFED.RushDeliveryDesc	Dá para pedir entrega expressa e receber os itens na hora por cápsulas de queda, mas isso dobra o custo em informação do pedido.
+VFED.TimeToReceive	Tempo estimado para receber: (*DateTime){0}-{1} dias(/DateTime)
+VFED.TimeToPickup	Tempo para buscar: (*DateTime){0} dias(/DateTime)
+VFED.TimeLimitDesc	O tempo para receber e para buscar depende da quantidade de itens comprados e do seu nível de visibilidade atual. Depois do tempo para receber, aparece uma missão de ponto de entrega. Ela só fica ativa pelo período de "tempo para buscar". Se não buscarem a tempo, os itens somem.
+VFED.NotEnough	{0} insuficiente. Precisa de {1}, tem {2}
+VFED.DeserterQuestDesc	Esta é uma missão de desertores. Pode render informações sobre o Império Fragmentado, mas também pode aumentar a visibilidade da sua facção.
+VFED.AvailableQuests	Missões disponíveis

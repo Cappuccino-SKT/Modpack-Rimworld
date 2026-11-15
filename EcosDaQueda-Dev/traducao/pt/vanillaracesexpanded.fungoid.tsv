@@ -1,0 +1,150 @@
+## DefInjected/DamageDef/Damages.xml
+VRE_Infection.label	infecção genética
+VRE_Infection.deathMessage	{0} foi cortado até a morte.
+VRE_Infection_Bite.label	infecção genética
+VRE_Infection_Bite.deathMessage	{0} foi mordido até a morte.
+## DefInjected/GeneCategoryDef/GeneCategoryDefs.xml
+VRE_SkillLoss.label	habilidades
+## DefInjected/GeneDef/GeneDefs_Archite.xml
+VRE_MindCoalescence.label	coalescência mental
+VRE_MindCoalescence.description	Portadores deste gene têm uma conexão psíquica com outros portadores, o que permite compartilhar parte das emoções. Uma parte da felicidade média é dividida entre os indivíduos coalescentes. Por isso, também compartilham estados mentais e os sofrem ao mesmo tempo.
+VRE_MindCoalescence.labelShortAdj	coalescente
+VRE_GeneInfector.label	infectador genético
+VRE_GeneInfector.description	Portadores deste gene implantam uma cópia do próprio xenogerminador em outra pessoa por meio de ataques com garras ou dentes. Isso causa uma infecção progressiva na vítima, que, se não for tratada, aplica nela o xenogerminador do portador.
+## DefInjected/GeneDef/GeneDefs_Beauty.xml
+VRE_Repulsive.label	muito repulsivo
+VRE_Repulsive.description	Portadores deste gene têm aparência retorcida, antinatural e aterrorizante. Mal lembram humanos. Qualquer interação social com eles pode deixar as pessoas enjoadas.
+## DefInjected/GeneDef/GeneDefs_Blood.xml
+VRE_RotBlood.label	sangue podre
+VRE_RotBlood.description	Portadores deste gene sangram um sangue podre e fedorento.
+VRE_RotBlood.symbolPack.prefixSymbols.0.symbol	podre
+VRE_RotBlood.symbolPack.prefixSymbols.1.symbol	fedor
+VRE_RotBlood.symbolPack.wholeNameSymbols.0.symbol	sangra-podre
+## DefInjected/GeneDef/GeneDefs_Cosmetic.xml
+VRE_FungalCrest.label	crista fúngica
+VRE_FungalCrest.description	Portadores deste gene têm uma grande crista fúngica colorida saindo do alto da cabeça.
+VRE_HairMushroom.label	cabelo fúngico
+VRE_HairMushroom.description	Portadores deste gene têm uma cor de cabelo específica. Com vários genes de cor de cabelo, um é escolhido aleatoriamente.
+VRE_Fungoid_Hair_DarkTan.label	cabelo bronzeado escuro
+VRE_Fungoid_Hair_DarkTan.description	Portadores deste gene têm uma cor de cabelo específica. Com vários genes de cor de cabelo, um é escolhido aleatoriamente.
+VRE_Fungoid_Hair_SwampGreen.label	cabelo verde-pântano
+VRE_Fungoid_Hair_SwampGreen.description	Portadores deste gene têm uma cor de cabelo específica. Com vários genes de cor de cabelo, um é escolhido aleatoriamente.
+VRE_Fungoid_Hair_Salmon.label	cabelo salmão
+VRE_Fungoid_Hair_Salmon.description	Portadores deste gene têm uma cor de cabelo específica. Com vários genes de cor de cabelo, um é escolhido aleatoriamente.
+VRE_Fungoid_Hair_Wenge.label	cabelo wengué
+VRE_Fungoid_Hair_Wenge.description	Portadores deste gene têm uma cor de cabelo específica. Com vários genes de cor de cabelo, um é escolhido aleatoriamente.
+VRE_Fungoid_Hair_Tumbleweed.label	cabelo palha seca
+VRE_Fungoid_Hair_Tumbleweed.description	Portadores deste gene têm uma cor de cabelo específica. Com vários genes de cor de cabelo, um é escolhido aleatoriamente.
+VRE_Fungoid_Hair_RoseTaupe.label	cabelo rosa-acinzentado
+VRE_Fungoid_Hair_RoseTaupe.description	Portadores deste gene têm uma cor de cabelo específica. Com vários genes de cor de cabelo, um é escolhido aleatoriamente.
+VRE_Fungoid_Hair_MistyMoss.label	cabelo musgo-enevoado
+VRE_Fungoid_Hair_MistyMoss.description	Portadores deste gene têm uma cor de cabelo específica. Com vários genes de cor de cabelo, um é escolhido aleatoriamente.
+## DefInjected/GeneDef/GeneDefs_GeneInfection.xml
+VRE_FungalArmor.label	armadura fúngica
+VRE_FungalArmor.description	Portadores deste gene têm uma trama fúngica na pele que reduz muito o dano recebido. O efeito fica mais forte com o tempo.
+VRE_FungalRegeneration.label	regeneração fúngica
+VRE_FungalRegeneration.description	Portadores deste gene são capazes de regeneração fúngica. O efeito fica mais forte com o tempo.
+## DefInjected/GeneDef/GeneDefs_Health.xml
+VRE_TotalAntirotLungs.label	pulmões antipodridão totais
+VRE_TotalAntirotLungs.description	Portadores deste gene são imunes à exposição ao fedor podre.
+VRE_PartialAntirotLungs.label	pulmões antipodridão parciais
+VRE_PartialAntirotLungs.description	Portadores deste gene acumulam exposição ao fedor podre mais devagar.
+## DefInjected/GeneDef/GeneDefs_Misc.xml
+VRE_FungalFlesh.label	carne fúngica
+VRE_FungalFlesh.description	Portadores deste gene têm matéria fúngica na carne. Para eles, comer qualquer fungo conta como canibalismo.
+VRE_FungalFlesh.labelShortAdj	fúngico
+VRE_Telepathy.label	telepatia
+VRE_Telepathy.description	Portadores deste gene podem se comunicar com outros portadores por telepatia psíquica. Não precisam estar perto para interagir socialmente.
+VRE_Telepathy.labelShortAdj	telepata
+## DefInjected/GeneDef/GeneDefs_SkillLoss.xml
+VRE_ExtremeSkillLoss.label	perda extrema de habilidade
+VRE_ExtremeSkillLoss.description	Portadores deste gene esquecem habilidades duas vezes mais rápido.
+VRE_SevereSkillLoss.label	perda severa de habilidade
+VRE_SevereSkillLoss.description	Portadores deste gene esquecem habilidades 50% mais rápido.
+VRE_MinorSkillLoss.label	perda leve de habilidade
+VRE_MinorSkillLoss.description	Portadores deste gene esquecem habilidades na metade da velocidade.
+VRE_NoSkillLoss.label	sem perda de habilidade
+VRE_NoSkillLoss.description	Portadores deste gene não esquecem habilidades.
+VRE_SkillDegradation.label	degradação de habilidade
+VRE_SkillDegradation.description	Portadores deste gene esquecem habilidades qualquer que seja o nível atual.
+VRE_NoStudy.label	sem aprendizado
+VRE_NoStudy.description	Portadores deste gene são incapazes de aprender novas habilidades.
+## DefInjected/GeneDef/GeneDefs_Voices.xml
+VRE_DeadVoice.label	voz morta
+VRE_DeadVoice.description	Portadores deste gene têm uma voz rouca e doentia.
+## DefInjected/HairDef/HairDefs.xml
+VRE_Hair_Agaricus.label	agaricus
+VRE_Hair_Boletus.label	boleto
+VRE_Hair_Chanterelle.label	cantarelo
+VRE_Hair_Cordyceps.label	cordyceps
+VRE_Hair_Cyclocybe.label	cyclocybe
+VRE_Hair_Flammulina.label	flammulina
+VRE_Hair_Hydnum.label	hydnum
+VRE_Hair_Matsutake.label	matsutake
+VRE_Hair_Morels.label	morchelas
+VRE_Hair_Portabella.label	portobello
+VRE_Hair_Redcap.label	chapéu-vermelho
+## DefInjected/HediffDef/Hediffs_Attacks.xml
+VRE_InfectorMouth.label	boca infectante
+VRE_InfectorMouth.description	Ataques corpo a corpo desta pessoa têm 20% de chance de espalhar uma infecção genética.
+VRE_InfectorMouth.comps.HediffComp_VerbGiver.tools.infector_mouth.label	boca infectante
+VRE_InfectorHands.label	mão infectante
+VRE_InfectorHands.description	Ataques corpo a corpo desta pessoa têm 20% de chance de espalhar uma infecção genética.
+VRE_InfectorHands.comps.HediffComp_VerbGiver.tools.infector_hand.label	mão infectante
+## DefInjected/HediffDef/Hediffs_GeneInfection.xml
+VRE_FungalArmor.label	armadura fúngica
+VRE_FungalArmor.description	Esta pessoa tem uma trama fúngica na pele que reduz muito o dano recebido. O efeito fica mais forte com o tempo.
+VRE_FungalRegeneration.label	regeneração fúngica
+VRE_FungalRegeneration.description	Esta pessoa é capaz de regeneração fúngica. O efeito fica mais forte com o tempo.
+## DefInjected/HediffDef/Hediffs_Health.xml
+VRE_GeneInfection.label	infecção genética
+VRE_GeneInfection.description	Esta pessoa recebeu uma cópia de um xenogerminador por meio de um ataque corpo a corpo. Isso causou uma infecção progressiva que, se não for tratada, aplica esse xenogerminador nela.
+VRE_GeneInfection.comps.HediffComp_Discoverable.discoverLetterText	{0} pegou uma infecção genética! Se a infecção não for tratada com sucesso, a pessoa será convertida dolorosamente no xenotipo de quem a infectou.
+VRE_GeneInfection.labelNoun	uma infecção genética
+VRE_GeneInfection.stages.minor.label	leve
+VRE_GeneInfection.stages.major.label	grave
+VRE_GeneInfection.stages.extreme-0.label	extrema
+VRE_GeneInfection.stages.extreme-1.label	extrema
+VRE_GeneInfected.label	infectado geneticamente
+VRE_GeneInfected.description	Esta pessoa foi vítima de uma infecção genética que alterou seu xenotipo. Isso não tem cura.
+## DefInjected/IncidentDef/Incidents_Map_Threats.xml
+VRE_FungoidShipPartCrash.label	queda de peça de nave (fungoide)
+VRE_FungoidShipPartCrash.letterLabel	Nave fungoide
+VRE_FungoidShipPartCrash.letterText	Um grande pedaço de uma nave antiga caiu aqui perto.\n\nSeus colonos ouviram as histórias do início da exploração espacial e de todas as naves antigas que sumiram no espaço. Pelas marcas, deve ser uma delas. Dá para ouvir arranhões e rosnados vindo de dentro.\n\nDestrua-a o quanto antes. Mas cuidado: algo pode sair quando vocês abrirem fogo contra a nave.
+## DefInjected/MentalStateDef/MentalStates_Special.xml
+VRE_SelectiveBerserk.label	fúria irracional
+VRE_SelectiveBerserk.baseInspectLine	Enfurecido
+VRE_SelectiveBerserk.beginLetter	{0} está em fúria!
+VRE_SelectiveBerserk.recoveryMessage	A fúria de {0} acabou.
+## DefInjected/PawnKindDef/PawnKinds_AncientFungoids.xml
+VRE_AncientFungoid.label	fungoide ancestral
+## DefInjected/StyleItemCategoryDef/HairDefs.xml
+VRE_FungoidHairs.label	fungoide
+## DefInjected/ThingDef/Apparel_Various.xml
+VRE_AncientAstrosuit.label	astrotraje antigo
+VRE_AncientAstrosuit.description	Uma relíquia resistente da era dos astronautas espaciais. Oferece isolamento incomparável e resistência quase total ao fogo, protegendo quem veste dos perigos do espaço. O design ultrapassado atrapalha muito o movimento, deixando quem veste lento e menos ágil. Apesar da proteção mínima, seu valor histórico como peça dos primórdios da exploração espacial continua intacto.
+## DefInjected/ThingDef/Buildings_Exotic.xml
+VRE_FungoidShipPart.label	peça de nave (fungoide)
+VRE_FungoidShipPart.description	Uma peça de nave antiga, arrancada de uma velha nave de exploração espacial e quase toda destruída na reentrada. Pode ter milhares de anos.\n\nEsta talvez contenha um ou mais tripulantes restantes. Governos mandavam naves cheias de fungoides imortais, xenotipos experimentais perversos e retorcidos capazes de sobreviver a viagens espaciais de séculos. Os fungoides a bordo provavelmente perderam a noção de si mesmos há muito tempo. Devem ter ficado presos neste módulo por centenas de anos.
+## DefInjected/ThingDef/Filth_Various.xml
+VRE_Filth_RotBlood.label	sangue podre
+## DefInjected/ThoughtDef/Thoughts_Situation_Needs.xml
+VRE_CoalescenceThought.stages.mind_coalescence.label	coalescência mental
+VRE_CoalescenceThought.stages.mind_coalescence.description	Somos muitos. Sentimos igual.
+## DefInjected/ToolCapacityDef/ToolCapacity.xml
+VRE_Infection.label	infecção genética
+VRE_Infection_Bite.label	infecção genética
+## DefInjected/XenotypeDef/XenotypeDefs.xml
+VRE_Fungoid.label	fungoide
+VRE_Fungoid.description	Um projeto militar privado que deu errado: os fungoides foram criados como micélio militarizado para ser usado contra a ameaça cada vez maior dos insetoides. Com o tempo, os portadores sofrem degradação do raciocínio superior, mas ganham cada vez mais resistência a ferimentos e capacidade de recuperação. Podem infectar não portadores com ataques corpo a corpo, seu principal meio de reprodução, se a infecção não for tratada.\n\nNas primeiras fases de teste, o genoma fungoide infectou com sucesso vários insetoides de teste, que depois foram soltos em áreas controladas para avaliar sua viabilidade real. Para depender menos de cápsulas arquitas, os portadores podiam transmitir a infecção pelo toque ou por partículas no ar. Porém, insetoides de fora os destruíram, junto com qualquer um dos seus que mostrasse sinais de infecção. Pior ainda, por causa da infecciosidade do micélio, todos os humanos que trabalhavam no projeto foram infectados.\n\nPor medo e por desentendimentos sobre o tratamento, o local da operação foi vitrificado, mas muitos dos presentes conseguiram fugir para a órbita, só para virarem portadores e infectarem outros.
+VRE_Fungoid.descriptionShort	Um projeto militar privado que deu errado: os fungoides foram criados como micélio militarizado para ser usado contra a ameaça cada vez maior dos insetoides. Com o tempo, os portadores sofrem degradação do raciocínio superior, mas ganham cada vez mais resistência a ferimentos e capacidade de recuperação. Podem infectar não portadores com ataques corpo a corpo, seu principal meio de reprodução, se a infecção não for tratada.
+## Keyed/Misc_Gameplay.xml
+VRE_InfectionLabel	Infecção genética ({0}), {1}
+VRE_InfectionDescription	Infecção causada pelo contato com um {0}. Ao chegar a 100%, o colono vira um {0}
+VRE_InfectedLabel	Infectado geneticamente ({0} dias)
+VRE_InfectionChance	Chance de infecção genética
+VRE_InfectionChanceDesc	Chance de a infecção genética infectar o alvo. O padrão é 20%. Isso só vale para ataques com garras e dentes; se a pessoa com o gene infectador usar armas corpo a corpo, a chance de infecção cai.
+VRE_Reset	Redefinir
+VRE_FungoidApocalypse	Apocalipse fungoide
+VRE_FungoidApocalypseDesc	Com esta opção ativada, TODAS as incursões humanoides serão de fungoides!
+VRE_TextMote_RepulsiveColonist	Colono repulsivo!

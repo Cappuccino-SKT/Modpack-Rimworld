@@ -1,0 +1,197 @@
+## DefInjected/AbilityDef/Abilities.xml
+VRE_InitiateLovin.label	iniciar o amor
+VRE_InitiateLovin.description	Aproxime-se do alvo e faça amor com ele. Se estiver em um relacionamento com outra pessoa, isso conta como traição e resulta em término, a menos que a ideologia tenha o preceito "Amor: livre e aprovado".
+## DefInjected/GeneDef/GeneDefs_Cosmetic.xml
+VRE_FelineEars.label	orelhas felinas
+VRE_FelineEars.description	Portadores deste gene têm orelhas felinas macias e peludas.
+VRE_FelineTail.label	cauda felina
+VRE_FelineTail.description	Portadores deste gene têm uma cauda peluda que serve apenas de enfeite.
+VRE_PerfectBody.label	corpo perfeito
+VRE_PerfectBody.description	Portadores deste gene têm corpos perfeitos, sem defeito nenhum. São simétricos, com pele macia como seda ao toque. Quem tem intimidade com eles não fica satisfeito fazendo amor com ninguém que não tenha um corpo perfeito.
+VRE_PerfectBody.labelShortAdj	perfeito
+VRE_HighmateHair.label	cabelos belos
+VRE_HighmateHair.description	Portadores deste gene sempre usam penteados específicos de alto companheiro.
+## DefInjected/GeneDef/GeneDefs_GeneticDominance.xml
+VRE_DominantGenome.label	genoma dominante
+VRE_DominantGenome.description	Portadores deste gene passam todas as suas características aos filhos, porque este gene se sobrepõe à contribuição genética do outro pai na reprodução. Se os dois parceiros tiverem o gene genoma dominante, os genes herdados são sorteados.
+VRE_RecessiveGenome.label	genoma recessivo
+VRE_RecessiveGenome.description	Portadores deste gene têm uma genética peculiar que recua na reprodução, e nenhuma de suas características passa para os filhos. Se os dois parceiros tiverem o gene genoma recessivo, os genes herdados são sorteados.
+## DefInjected/GeneDef/GeneDefs_Loving.xml
+VRE_Libido_VeryHigh.label	libido muito alta
+VRE_Libido_VeryHigh.description	Portadores deste gene adoram fazer amor com o parceiro, ou com qualquer outra pessoa, na verdade. Podem iniciar o amor em qualquer lugar e a qualquer hora.
+VRE_LovinDependency.label	dependência de amor
+VRE_LovinDependency.description	Portadores deste gene precisam fazer amor regularmente para sobreviver. Após 5 dias sem amor, sofrem de carência de amor. Após 30 dias sem amor, podem abandonar a colônia.
+## DefInjected/GeneDef/GeneDefs_Traits.xml
+VRE_Flirty.label	paquerador
+VRE_Flirty.description	Portadores deste gene se estimulam emocionalmente com paqueras brincalhonas. Oferecem palavras gentis e sedutoras para animar quem está por perto. Isso ajuda a criar laços mais fortes na comunidade, mas pode levar a romances e até a términos.
+VRE_Distressed.label	angustiado
+VRE_Distressed.description	Portadores deste gene levam muito mais tempo para processar memórias duras e angustiantes. Pensamentos negativos ligados ao sofrimento de humanos e animais duram o dobro do tempo.
+## DefInjected/GeneDef/GeneDefs_Violence.xml
+VRE_Harmless.label	inofensivo
+VRE_Harmless.description	Portadores deste gene não são vistos como ameaça e não são atacados, a menos que estejam armados ou tenham sido convocados recentemente. Ainda podem ser atingidos por fogo amigo e balas perdidas, e ainda são atacados por animais caçadores de humanos.
+## DefInjected/HairDef/HairsGeneral.xml
+VRE_HighmateHairAngela.label	angela
+VRE_HighmateHairAutumn.label	outono
+VRE_HighmateHairDanger.label	perigo
+VRE_HighmateHairElfie.label	élfica
+VRE_HighmateHairLena.label	lena
+VRE_HighmateHairMia.label	mia
+VRE_HighmateHairRae.label	rae
+VRE_HighmateHairRhoades.label	rhoades
+VRE_HighmateHairRiley.label	riley
+VRE_HighmateHairSkylar.label	skylar
+VRE_HighmateHairSweetie.label	docinho
+## DefInjected/HediffDef/Hediffs_Various.xml
+VRE_LovinDependencyHediff.label	dependência de amor
+VRE_LovinDependencyHediff.description	Esta pessoa tem uma dependência bioquímica genética de amor. Precisa fazer amor regularmente para ficar contente. Após 5 dias sem amor, sofre de carência de amor. Após 30 dias sem amor, pode abandonar a colônia.\n\nFaz efeito a partir da idade: 16.
+VRE_Naked.label	nu
+VRE_Naked.description	Esta pessoa está nua.
+## DefInjected/HediffDef/HighmateBondEffectHediffs.xml
+VRE_PsychicBondBloodlust.label	Vínculo psíquico (Guerreiro)
+VRE_PsychicBondBloodlust.description	Os dois indivíduos vinculados psiquicamente ganham mais dano corpo a corpo, ao custo de colapsos mentais violentos.
+VRE_PsychicBondFastLearner.label	Vínculo psíquico (Professor)
+VRE_PsychicBondFastLearner.description	Os dois indivíduos vinculados psiquicamente aprendem habilidades mais rápido.
+VRE_PsychicBondIndustrious.label	Vínculo psíquico (Trabalhador)
+VRE_PsychicBondIndustrious.description	Os dois indivíduos vinculados psiquicamente trabalham mais rápido.
+VRE_PsychicBondSanguine.label	Vínculo psíquico (Otimista)
+VRE_PsychicBondSanguine.description	Os dois indivíduos vinculados psiquicamente ficam mais felizes.
+VRE_PsychicBondIronWilled.label	Vínculo psíquico (Corajoso)
+VRE_PsychicBondIronWilled.description	Os dois indivíduos vinculados psiquicamente têm um limite de colapso mental mais baixo.
+VRE_PsychicBondCarefulShooter.label	Vínculo psíquico (Caçador)
+VRE_PsychicBondCarefulShooter.description	Os dois indivíduos vinculados psiquicamente ganham mais precisão com armas de longo alcance.
+VRE_PsychicBondPsychicallyHypersensitive.label	Vínculo psíquico (Psíquico)
+VRE_PsychicBondPsychicallyHypersensitive.description	Os dois indivíduos vinculados psiquicamente ganham uma sensibilidade psíquica muito maior.
+VRE_PsychicBondGreatMemory.label	Vínculo psíquico (Sábio)
+VRE_PsychicBondGreatMemory.description	Os dois indivíduos vinculados psiquicamente perdem habilidades muito mais devagar.
+VRE_PsychicBondAbrasive.label	Vínculo psíquico (Áspero)
+VRE_PsychicBondAbrasive.description	Os dois indivíduos vinculados psiquicamente conseguem conter suas palavras ásperas.
+## DefInjected/InteractionDef/Interactions_Romance.xml
+VRE_FlirtingAttempt.label	palavras sedutoras
+VRE_FlirtingAttempt.logRulesInitiator.rulesStrings[0]	r_logentry->[INITIATOR_nameDef] [wooed] [RECIPIENT_nameDef] [wootactic].
+VRE_FlirtingAttempt.logRulesInitiator.rulesStrings[1]	wooed->tentou flertar com
+VRE_FlirtingAttempt.logRulesInitiator.rulesStrings[2]	wooed->flertou com
+VRE_FlirtingAttempt.logRulesInitiator.rulesStrings[3]	wooed->tentou atrair
+VRE_FlirtingAttempt.logRulesInitiator.rulesStrings[4]	wooed->tentou conquistar
+VRE_FlirtingAttempt.logRulesInitiator.rulesStrings[5]	wooed->cortejou
+VRE_FlirtingAttempt.logRulesInitiator.rulesStrings[6]	wooed->paquerou
+VRE_FlirtingAttempt.logRulesInitiator.rulesStrings[7]	wooed->encantou
+VRE_FlirtingAttempt.logRulesInitiator.rulesStrings[8]	wooed->galanteou
+VRE_FlirtingAttempt.logRulesInitiator.rulesStrings[9]	wootactic(p=4)->[complimenting] [RECIPIENT_possessive] [PersonalCharacteristic]
+VRE_FlirtingAttempt.logRulesInitiator.rulesStrings[10]	wootactic->contando uma história sobre [TalkTopicAny]
+VRE_FlirtingAttempt.logRulesInitiator.rulesStrings[11]	wootactic->contando um causo sobre [TalkTopicAny]
+VRE_FlirtingAttempt.logRulesInitiator.rulesStrings[12]	wootactic->brincando sobre [TalkTopicAny]
+VRE_FlirtingAttempt.logRulesInitiator.rulesStrings[13]	wootactic->fazendo um comentário sobre [TalkTopicAny]
+VRE_FlirtingAttempt.logRulesInitiator.rulesStrings[14]	wootactic(p=2)->[boasting] [INITIATOR_possessive] próprio [PersonalCharacteristic]
+VRE_FlirtingAttempt.logRulesInitiator.rulesStrings[15]	wootactic->comparando [RECIPIENT_objective] a um [romantic_noun] [romantic_adj]
+VRE_FlirtingAttempt.logRulesInitiator.rulesStrings[16]	wootactic->descrevendo [RECIPIENT_objective] como um [romantic_noun] [romantic_adj]
+VRE_FlirtingAttempt.logRulesInitiator.rulesStrings[17]	boasting->se gabando de
+VRE_FlirtingAttempt.logRulesInitiator.rulesStrings[18]	boasting->mencionando
+VRE_FlirtingAttempt.logRulesInitiator.rulesStrings[19]	boasting->insinuando coisas boas sobre
+VRE_FlirtingAttempt.logRulesInitiator.rulesStrings[20]	boasting->exagerando
+VRE_FlirtingAttempt.logRulesInitiator.rulesStrings[21]	boasting->falando de
+VRE_FlirtingAttempt.logRulesInitiator.rulesStrings[22]	boasting->chamando atenção para
+VRE_FlirtingAttempt.logRulesInitiator.rulesStrings[23]	complimenting(p=3)->elogiando
+VRE_FlirtingAttempt.logRulesInitiator.rulesStrings[24]	complimenting->elogiando discretamente
+VRE_FlirtingAttempt.logRulesInitiator.rulesStrings[25]	complimenting->exaltando
+VRE_FlirtingAttempt.logRulesInitiator.rulesStrings[26]	complimenting->louvando
+VRE_FlirtingAttempt.logRulesInitiator.rulesStrings[27]	complimenting->falando bem de
+VRE_FlirtingAttempt.logRulesInitiator.rulesStrings[28]	complimenting(p=2)->zoando de brincadeira
+VRE_FlirtingAttempt.logRulesInitiator.rulesStrings[29]	complimenting->cutucando de brincadeira
+VRE_FlirtingAttempt.logRulesInitiator.rulesStrings[30]	complimenting->meio que elogiando, de brincadeira,
+VRE_FlirtingAttempt.logRulesInitiator.rulesStrings[31]	complimenting->questionando com malícia
+VRE_FlirtingAttempt.logRulesInitiator.rulesStrings[32]	complimenting->tirando sarro, alegremente, de
+VRE_FlirtingAttempt.logRulesInitiator.rulesStrings[33]	romantic_adj->lindo
+VRE_FlirtingAttempt.logRulesInitiator.rulesStrings[34]	romantic_adj->brilhante
+VRE_FlirtingAttempt.logRulesInitiator.rulesStrings[35]	romantic_adj->cintilante
+VRE_FlirtingAttempt.logRulesInitiator.rulesStrings[36]	romantic_adj->celestial
+VRE_FlirtingAttempt.logRulesInitiator.rulesStrings[37]	romantic_adj->dourado
+VRE_FlirtingAttempt.logRulesInitiator.rulesStrings[38]	romantic_adj->radiante
+VRE_FlirtingAttempt.logRulesInitiator.rulesStrings[39]	romantic_adj->de tirar o fôlego
+VRE_FlirtingAttempt.logRulesInitiator.rulesStrings[40]	romantic_adj->encantador
+VRE_FlirtingAttempt.logRulesInitiator.rulesStrings[41]	romantic_adj->deslumbrante
+VRE_FlirtingAttempt.logRulesInitiator.rulesStrings[42]	romantic_adj->delicado
+VRE_FlirtingAttempt.logRulesInitiator.rulesStrings[43]	romantic_adj->refinado
+VRE_FlirtingAttempt.logRulesInitiator.rulesStrings[44]	romantic_adj->magnífico
+VRE_FlirtingAttempt.logRulesInitiator.rulesStrings[45]	romantic_adj->adorável
+VRE_FlirtingAttempt.logRulesInitiator.rulesStrings[46]	romantic_adj->maravilhoso
+VRE_FlirtingAttempt.logRulesInitiator.rulesStrings[47]	romantic_adj(p=3)->[AdjectiveBadass]
+VRE_FlirtingAttempt.logRulesInitiator.rulesStrings[48]	romantic_noun->jardim
+VRE_FlirtingAttempt.logRulesInitiator.rulesStrings[49]	romantic_noun->riacho
+VRE_FlirtingAttempt.logRulesInitiator.rulesStrings[50]	romantic_noun->rio
+VRE_FlirtingAttempt.logRulesInitiator.rulesStrings[51]	romantic_noun->astro
+VRE_FlirtingAttempt.logRulesInitiator.rulesStrings[52]	romantic_noun->luar
+VRE_FlirtingAttempt.logRulesInitiator.rulesStrings[53]	romantic_noun->sol
+VRE_FlirtingAttempt.logRulesInitiator.rulesStrings[54]	romantic_noun->lar
+VRE_FlirtingAttempt.logRulesInitiator.rulesStrings[55]	romantic_noun->amanhecer
+VRE_FlirtingAttempt.logRulesInitiator.rulesStrings[56]	romantic_noun->pé de [TreeType]
+VRE_FlirtingAttempt.logRulesInitiator.rulesStrings[57]	romantic_noun(p=2)->[TerrainFeature]
+VRE_FlirtingAttempt.logRulesInitiator.rulesStrings[58]	romantic_noun(p=2)->[NaturalObject]
+## DefInjected/JobDef/Jobs_Work.xml
+VRE_InitiateLovin.reportString	iniciando o amor.
+## DefInjected/NeedDef/Needs.xml
+VRE_Lovin.label	amor
+VRE_Lovin.description	Pessoas com dependência de amor têm um forte desejo de fazer amor regularmente. Se isso não for satisfeito, a pessoa fica muito infeliz e pode decidir abandonar a colônia em busca de amor.
+## DefInjected/VEF.Pawns.PregnancyApproachDef/PregnancyApproaches.xml
+VRE_PsychicConception.label	Concepção psíquica (gravidez garantida)
+VRE_PsychicConception.cancelLabel	Sem concepção psíquica
+VRE_LovinForPleasure.label	Amor por prazer (chance de gravidez x0%)
+VRE_LovinForPleasure.cancelLabel	Amor normal
+## DefInjected/RulePackDef/Interactions_Romance.xml
+VRE_Sentence_FlirtingAttemptAccepted.rulePack.rulesStrings[0]	sent->[RECIPIENT_nameDef] agradeceu a [INITIATOR_nameDef].
+VRE_Sentence_FlirtingAttemptAccepted.rulePack.rulesStrings[1]	sent->[RECIPIENT_nameDef] riu, brincando com [INITIATOR_nameDef].
+VRE_Sentence_FlirtingAttemptAccepted.rulePack.rulesStrings[2]	sent->[RECIPIENT_nameDef] ficou excitado e agradeceu a [INITIATOR_nameDef] pelo elogio.
+VRE_Sentence_FlirtingAttemptRejected.rulePack.rulesStrings[0]	sent->[RECIPIENT_nameDef] ignorou o elogio.
+VRE_Sentence_FlirtingAttemptRejected.rulePack.rulesStrings[1]	sent->[RECIPIENT_nameDef] ignorou a paquera.
+VRE_Sentence_FlirtingAttemptRejected.rulePack.rulesStrings[2]	sent->[RECIPIENT_nameDef] virou as costas.
+VRE_Sentence_FlirtingAttemptRejected.rulePack.rulesStrings[3]	sent->[RECIPIENT_nameDef] se virou.
+VRE_Sentence_FlirtingAttemptRejected.rulePack.rulesStrings[4]	sent->[RECIPIENT_nameDef] respondeu o mínimo.
+VRE_Sentence_FlirtingAttemptRejected.rulePack.rulesStrings[5]	sent->[RECIPIENT_nameDef] não respondeu.
+VRE_Sentence_FlirtingAttemptRejected.rulePack.rulesStrings[6]	sent->[RECIPIENT_nameDef] deu uma bronca [INITIATOR_objective].
+## DefInjected/StyleItemCategoryDef/StyleItemCategoryDefs.xml
+VRE_Highmate.label	alto companheiro
+## DefInjected/ThoughtDef/HighmateBondEffectHediffs.xml
+VRE_PsychicBondSanguine.stages.Psychic_bond_Optimist.label	Vínculo psíquico (Otimista)
+VRE_PsychicBondSanguine.stages.Psychic_bond_Optimist.description	Estou feliz por ter encontrado a pessoa certa.
+## DefInjected/ThoughtDef/Thoughts_Memory_Social.xml
+VRE_Flirted.stages.flirted_with.label	recebeu uma paquera
+VRE_WhatAPerfectBody.stages.what_a_perfect_body.label	que corpo perfeito
+VRE_GotSomeLovin.stages.got_some_lovin.label	recebeu amor
+VRE_GotSomeLovin.stages.got_some_lovin.description	Nada como rolar entre os lençóis para melhorar o humor.
+## DefInjected/ThoughtDef/Thoughts_Situation_Special.xml
+VRE_LovinNeedThoughts.stages.needs_lovin.label	precisa de amor
+VRE_LovinNeedThoughts.stages.needs_lovin.description	Estou com fome de amor. Me deem um pouco!
+VRE_LovinNeedThoughts.stages.demands_lovin.label	exige amor
+VRE_LovinNeedThoughts.stages.demands_lovin.description	Se eu não receber amor aqui e agora…
+VRE_LovinNeedThoughts.stages.demands_lovin_leaving.label	exige amor (indo embora)
+VRE_LovinNeedThoughts.stages.demands_lovin_leaving.description	Se eu não receber amor aqui e agora…
+## DefInjected/TraitDef/Traits_Singular.xml
+VRE_Flirty.degreeDatas.flirty.label	paquerador
+VRE_Flirty.degreeDatas.flirty.description	{PAWN_nameDef} sempre tem um comentário sedutor ou um elogio brincalhão na ponta da língua, animando quem está ao redor de {PAWN_objective}. {PAWN_pronoun} tem o dom de fazer os outros se sentirem especiais e desejados, mas às vezes isso gera situações complicadas quando as intenções brincalhonas de {PAWN_possessive} são mal interpretadas.
+VRE_Distressed.degreeDatas.distressed.label	angustiado
+VRE_Distressed.degreeDatas.distressed.description	{PAWN_nameDef} é extremamente empático e sensível ao sofrimento alheio. Sempre que {PAWN_pronoun} presencia dor ou dificuldade, isso afeta {PAWN_objective} profundamente, e as lembranças desses eventos assombram {PAWN_nameDef} por muito mais tempo.
+## DefInjected/XenotypeDef/XenotypeDefs.xml
+VRE_Lowmate.label	baixo companheiro
+VRE_Lowmate.description	Derivados dos populares altos companheiros, mas com mais foco nos aspectos físicos do amor, os baixos companheiros são acompanhantes atraentes para quem busca emoção sem o risco de gravidez. Também não têm inibidores de violência, tanto para se defender de quem não aceita um "não" como resposta quanto para os clientes de gosto mais eclético.\n\nCriados para as classes baixas dos mundos-cidade, os xenogerminadores de baixo companheiro vêm atrelados a contratos de trabalho para quem aceita vender o corpo regularmente. O desenvolvimento é cercado de polêmicas, já que os trabalhadores ficam fisicamente dependentes do próprio trabalho e vivem à caça da próxima "refeição"; mas também se reconhece que qualquer ação legislativa acabaria com as proteções que os contratos lhes garantem por lei. Os baixos companheiros costumam procurar clientes fixos, mas alguns são usados ativamente como armas sociais na política.
+VRE_Lowmate.descriptionShort	Derivados dos populares altos companheiros, mas com mais foco nos aspectos físicos do amor, os baixos companheiros são acompanhantes atraentes para quem busca emoção sem o risco de gravidez. Também não têm inibidores de violência, tanto para se defender de quem não aceita um "não" como resposta quanto para os clientes de gosto mais eclético.
+## Keyed/Misc_Gameplay.xml
+VRE_EnableCatHighmates	Ativar "genes de gato" nos altos companheiros (exige reiniciar o jogo)
+VRE_EnableCatHighmatesDescription	Desativar esta opção faz os novos altos companheiros surgirem sem os genes orelhas felinas e cauda felina. Isso não afeta os altos companheiros que já existem. Exige recarregar o jogo.
+VRE_NotEnoughLovin	Exige amor
+VRE_LovinNeed	Necessidade de amor
+VRE_LovinNeedDesc	Estas pessoas estão com a necessidade de amor muito baixa (menos de 50%). Se chegarem a 0% de amor em cerca de 15 dias, tentarão abandonar a colônia:\n\n{0}
+VRE_MessageCantUseLovinOnOtherFactions	Esta habilidade não pode ser usada em membros de outras facções
+VRE_MessageCantUseLovinOnResistingPersons	Esta habilidade não pode ser usada em inimigos
+VRE_CantUseLovinLowOpinion	{0} não pode fazer amor com {1}, porque {1} tem uma opinião baixa demais sobre {0} (opinião sobre {0}: {2})
+VRE_TooYoungForLovin	{0} não pode fazer amor com {1}, porque {1} é jovem demais.
+VRE_TooYoungForLovinCaster	{0} não pode fazer amor com {1}, porque {0} é jovem demais.
+VRE_CantUseLovinWithTraitAsexual	{0} não pode fazer amor com {1}, porque {1} é assexual.
+VRE_CantUseLovinWithTraitPrude	{0} não pode fazer amor com {1}, porque {1} é puritano.
+VRE_RelationshipWillBreak	{0} vai fazer amor com {1}, apesar de estar em um relacionamento com {2}. Isso vai causar um término.
+VRE_RelationshipWillBreakTarget	{0} vai fazer amor com {1}, apesar de o alvo, {1}, estar em um relacionamento com {2}. Isso vai causar um término.
+VRE_CantUseOnFamily	{0} não pode fazer amor com {1}, porque são parentes de sangue.
+VRE_PsychicConceptionDesc	Concepção psíquica (gravidez garantida)
+VRE_LovinForPleasureDesc	Amor por prazer (chance de gravidez x0%)
+VRE_NoPsychicConceptionDesc	Sem concepção psíquica
+VRE_NoLovinForPleasureDesc	Amor normal
+VRE_AwardedHighmate	Alto companheiro concedido
+VRE_AwardedHighmateDesc	Por causa do novo título de Barão, o Império presenteou {0} com a companhia de um alto companheiro, que se junta à colônia imediatamente.\n\nCompanheiros e concubinas projetados com a capacidade única de criar um vínculo psíquico com um parceiro, os altos companheiros são empáticos, belos, alegres e talentosos em assuntos sociais. Também são ineptos em tarefas manuais, fisicamente fracos e mentalmente incapazes de violência.

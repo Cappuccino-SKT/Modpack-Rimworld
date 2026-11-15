@@ -9,6 +9,7 @@ Modpack para **RimWorld 1.7** (com todas as DLCs) com temática própria inspira
 | `main` | O modpack em si: lista de mods, ordem de carga, script de instalação e documentação de desenvolvimento |
 | `mod/ecos-da-queda` | Mod **Ecos da Queda** (`ecosdaqueda.core`): as 4 potências, ideologias fixas, Fama/Infâmia, postos, serviços e integração com o Hegemony |
 | `mod/ecos-da-queda-debug` | Mod **Ecos da Queda - Ferramentas de Debug** (`ecosdaqueda.debug`): executor de testes sem janela e ações no menu de debug |
+| `mod/ecos-da-queda-traducao` | Mod **Ecos da Queda - Tradução PT-BR** (`ecosdaqueda.traducao`): tradução dos mods de terceiros sem PT-BR (genes: Alpha Genes e Vanilla Races Expanded) |
 
 Cada branch `mod/*` contém só a pasta do mod (a raiz da branch é a raiz do mod), pronta para ir em `Mods/<nome>`.
 
@@ -40,6 +41,6 @@ Cada branch `mod/*` contém só a pasta do mod (a raiz da branch é a raiz do mo
 
 ## Desenvolvimento
 
-Na pasta do jogo, `Mods/EcosDaQueda` e `Mods/EcosDaQuedaDebug` são **worktrees do git**: cada uma já está na sua branch. Um commit feito dentro da pasta do mod vai para a branch do mod, e um commit na raiz vai para a `main`. Ninguém precisa trocar de branch, e o jogo sempre enxerga os dois mods.
+Na pasta do jogo, `Mods/EcosDaQueda`, `Mods/EcosDaQuedaDebug` e `Mods/EcosDaQuedaTraducao` são **worktrees do git**: cada uma já está na sua branch. Um commit feito dentro da pasta do mod vai para a branch do mod, e um commit na raiz vai para a `main`. Ninguém precisa trocar de branch, e o jogo sempre enxerga os dois mods.
 
 Para atualizar a lista de mods depois de adicionar ou remover algum, regenere `modpack/` e faça commit na `main`.

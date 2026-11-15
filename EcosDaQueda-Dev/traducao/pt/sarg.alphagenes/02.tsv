@@ -1,0 +1,223 @@
+## DefInjected/GeneDef/GeneDefs_Abilities.xml
+AG_UnstableMutation.label	mutação instável
+AG_UnstableMutation.description	Portadores deste gene podem forçar uma mutação instável no próprio corpo uma vez por dia. A mutação ativa um gene aleatório novo por 12 horas. Depois desse tempo, o gene se desativa.
+AG_ReactiveArmour.label	armadura reativa
+AG_ReactiveArmour.description	Portadores deste gene podem ativar as reservas minerais para endurecer a pele contra ataques cortantes e perfurantes. Manter a armadura ativa consome minerais o tempo todo e a cada golpe recebido. A força da resistência depende da reserva mineral do portador.
+AG_MineralShock.label	choque mineral
+AG_MineralShock.description	Portadores deste gene podem usar os minerais armazenados para disparar uma pelota concentrada de terra. Causa trauma contundente no alvo.
+AG_MineralOverdrive.label	sobrecarga mineral
+AG_MineralOverdrive.description	Portadores deste gene podem usar os minerais armazenados para trabalhar com mais eficiência, ao custo de drená-los.
+AG_Zap.label	descarga elétrica
+AG_Zap.description	Portadores deste gene podem acumular energia e liberá-la num choque elétrico poderoso que eletrocuta o alvo.
+AG_GreaterFireSpew.label	grande cuspe de fogo
+AG_GreaterFireSpew.description	Os portadores conseguem cuspir uma bile inflamável produzida por um órgão especial no pescoço. A bile pega fogo na hora em contato com o oxigênio, criando um incêndio perigoso que queima tudo no caminho.
+AG_GreaterFireSpew.symbolPack.prefixSymbols.0.symbol	fogo
+AG_GreaterFireSpew.symbolPack.prefixSymbols.1.symbol	chama
+AG_GreaterFireSpew.symbolPack.prefixSymbols.2.symbol	pira
+AG_GreaterFireSpew.symbolPack.prefixSymbols.3.symbol	piro
+AG_GreaterFireSpew.symbolPack.prefixSymbols.4.symbol	faísca
+AG_GreaterFireSpew.symbolPack.prefixSymbols.5.symbol	brasa
+AG_GreaterFireSpew.symbolPack.prefixSymbols.6.symbol	cuspe
+AG_GreaterFireSpew.symbolPack.prefixSymbols.7.symbol	queima
+AG_GreaterFireSpew.symbolPack.prefixSymbols.8.symbol	incendi
+AG_GreaterFireSpew.symbolPack.prefixSymbols.9.symbol	tição
+AG_GreaterFireSpew.symbolPack.prefixSymbols.10.symbol	cinza
+AG_GreaterFireSpew.symbolPack.suffixSymbols.0.symbol	luz
+AG_GreaterFireSpew.symbolPack.suffixSymbols.1.symbol	queimador
+AG_GreaterFireSpew.symbolPack.suffixSymbols.2.symbol	piro
+AG_GreaterFireSpew.symbolPack.suffixSymbols.3.symbol	cinza
+AG_GreaterFireSpew.symbolPack.wholeNameSymbols.0.symbol	queimador
+AG_GreaterFireSpew.symbolPack.wholeNameSymbols.1.symbol	incendiário
+AG_GreaterAcidicVomit.label	grande esguicho ácido
+AG_GreaterAcidicVomit.description	Os portadores conseguem regurgitar ácidos estomacais especialmente fortes, espalhando-os por uma área ampla. Esses ácidos causam ferimentos horríveis que pioram aos poucos conforme o ácido corrói os tecidos.
+AG_GreaterAcidicVomit.symbolPack.prefixSymbols.0.symbol	ácido
+AG_GreaterAcidicVomit.symbolPack.prefixSymbols.1.symbol	acer
+AG_GreaterAcidicVomit.symbolPack.prefixSymbols.2.symbol	acri
+AG_GreaterAcidicVomit.symbolPack.prefixSymbols.3.symbol	oxo
+AG_GreaterAcidicVomit.symbolPack.suffixSymbols.0.symbol	esguichador
+AG_GreaterAcidicVomit.symbolPack.suffixSymbols.1.symbol	cuspidor
+AG_PetrifyingGaze.label	olhar petrificante
+AG_PetrifyingGaze.description	Os portadores conseguem lançar quando quiserem um olhar perigoso capaz de transformar a vítima em pedra. Algo a ver com mecanitos, ou sei lá. Olha, é ciência.
+AG_PetrifyingGaze.symbolPack.prefixSymbols.0.symbol	petr
+AG_PetrifyingGaze.symbolPack.prefixSymbols.1.symbol	medus
+AG_PetrifyingGaze.symbolPack.prefixSymbols.2.symbol	górgo
+AG_Spinnerets.label	fiandeiras
+AG_Spinnerets.description	Os portadores conseguem produzir fios de seda pegajosa nos pulsos e arremessar essas teias quando quiserem, atordoando os inimigos.
+AG_Spinnerets.symbolPack.prefixSymbols.0.symbol	peter
+AG_Spinnerets.symbolPack.prefixSymbols.1.symbol	parker
+AG_Spinnerets.symbolPack.prefixSymbols.2.symbol	aranha
+AG_Spinnerets.symbolPack.prefixSymbols.3.symbol	aracn
+AG_InsectRally.label	reunião de insetos
+AG_InsectRally.description	Portadores deste gene conseguem liberar uma nuvem de compostos feromonais irresistíveis para todos os insetos. Eles se sentem revigorados e fortalecidos perto do portador.
+AG_Detonation.label	detonação
+AG_Detonation.description	Os portadores conseguem detonar o próprio corpo quando quiserem. Observação: isso NÃO fere quem usa a habilidade.
+AG_Detonation.symbolPack.prefixSymbols.0.symbol	bum
+AG_Detonation.symbolPack.prefixSymbols.1.symbol	explos
+AG_AcidicDetonation.label	detonação ácida
+AG_AcidicDetonation.description	Os portadores conseguem detonar o próprio corpo numa explosão ácida quando quiserem. Observação: isso NÃO fere quem usa a habilidade.
+AG_AcidicDetonation.symbolPack.prefixSymbols.0.symbol	cáust
+AG_AcidicDetonation.symbolPack.prefixSymbols.1.symbol	ácido
+AG_InsanityBlast.label	explosão de insanidade
+AG_InsanityBlast.description	Portadores deste gene conseguem usar o poder da própria mente para atingir psiquicamente a mente de outras pessoas, deixando-as em fúria assassina e fazendo-as atacar todos ao redor sem distinção.
+AG_UnstableMind.label	mente instável
+AG_UnstableMind.description	Portadores deste gene conseguem usar o poder da própria mente para atingir psiquicamente a mente de outras pessoas, causando instabilidade mental que as deixa mais propensas a colapsos e aumenta muito a sensibilidade psíquica delas. O efeito dura três horas e pode ser usado em alvos hostis ou amigos.
+AG_DevourBrains.label	devorar cérebros
+AG_DevourBrains.description	Portadores deste gene conseguem devorar o cérebro de uma pessoa incapacitada, mas viva, absorvendo parte do intelecto dela e ganhando um bônus que depende da maior habilidade do cérebro devorado. Obviamente, isso mata o alvo.
+AG_GeneSyphon.label	sifão genético
+AG_GeneSyphon.description	Portadores deste gene conseguem extrair à força um gene de uma pessoa incapacitada, mas viva, incorporando-o ao próprio xenotipo como xenogene. O gene é escolhido aleatoriamente. Isso mata o alvo.
+AG_InsectStinger.label	ferrão implantador, xenogenes
+AG_InsectStinger.description	Portadores deste gene conseguem injetar uma cópia do próprio xenogerminador em outra pessoa por meio de um ferrão injetor bem nojento. Os genes deles não precisam se regenerar depois, mas a habilidade não pode ser usada sem parar e precisa recarregar. Também fere o alvo e faz uma lambança sangrenta.
+AG_ParasiticStinger.label	ferrão implantador parasita, xenogenes
+AG_ParasiticStinger.description	Portadores deste gene conseguem injetar uma cópia do próprio xenogerminador em outra pessoa por meio de um ferrão injetor bem nojento. Em vez de implantar os genes no alvo, injetam ovos que crescem devagar dentro dele. Os ovos acabam eclodindo num recém-nascido com os mesmos xenogenes do progenitor. Os genes do usuário não precisam se regenerar depois, mas a habilidade não pode ser usada sem parar e precisa recarregar. Também fere o alvo e faz uma lambança sangrenta. E o alvo, obviamente, morre quando os bebês eclodem. Ah, o ciclo da natureza!
+AG_InsectStingerEndogenes.label	ferrão implantador, endogenes
+AG_InsectStingerEndogenes.description	Portadores deste gene conseguem injetar uma cópia da própria linhagem germinativa em outra pessoa por meio de um ferrão injetor bem nojento. Os genes deles não precisam se regenerar depois, mas a habilidade não pode ser usada sem parar e precisa recarregar. Também fere o alvo e faz uma lambança sangrenta.
+AG_ParasiticStingerEndogenes.label	ferrão implantador parasita, endogenes
+AG_ParasiticStingerEndogenes.description	Portadores deste gene conseguem injetar uma cópia da própria linhagem germinativa em outra pessoa por meio de um ferrão injetor bem nojento. Em vez de implantar os genes no alvo, injetam ovos que crescem devagar dentro dele. Os ovos acabam eclodindo num recém-nascido com os mesmos endogenes do progenitor. Os genes do usuário não precisam se regenerar depois, mas a habilidade não pode ser usada sem parar e precisa recarregar. Também fere o alvo e faz uma lambança sangrenta. E o alvo, obviamente, morre quando os bebês eclodem. Ah, o ciclo da natureza!
+AG_PsychicAbsorption.label	absorção psíquica
+AG_PsychicAbsorption.description	Portadores deste gene conseguem absorver pensamentos e memórias negativas de outras pessoas, trazendo-os para si.
+AG_SterilizingBreath.label	sopro esterilizante
+AG_SterilizingBreath.description	Os portadores conseguem cuspir grandes quantidades de um líquido esterilizante. Isso destrói a praga nas plantas e acelera o ganho de imunidade, à custa da fertilidade.
+AG_BansheeScream.label	grito de banshee
+AG_BansheeScream.description	Os portadores conseguem soltar um grito aterrorizante que ecoa o desespero das almas perdidas. A habilidade enche de medo todos os inimigos num certo raio, reduzindo a precisão de ataque e a defesa deles por um curto tempo.
+AG_FreezingBreath.label	sopro congelante
+AG_FreezingBreath.description	Os portadores conseguem cuspir um fluido criogênico produzido por um órgão especial no pescoço. O líquido congela tudo o que toca, causando queimaduras de frio e hipotermia.
+AG_FreezingBreath.symbolPack.prefixSymbols.0.symbol	frio
+AG_FreezingBreath.symbolPack.prefixSymbols.1.symbol	gelo
+AG_FreezingBreath.symbolPack.prefixSymbols.2.symbol	crio
+AG_FreezingBreath.symbolPack.wholeNameSymbols.0.symbol	congelador
+AG_NoxiousBreath.label	sopro nocivo
+AG_NoxiousBreath.description	Os portadores conseguem exalar uma nuvem de vapores tóxicos que envolve os inimigos num miasma sufocante. O fedor faz os alvos atingidos vomitarem sem controle.
+AG_NoxiousBreath.symbolPack.prefixSymbols.0.symbol	tox
+AG_NoxiousBreath.symbolPack.prefixSymbols.1.symbol	tóxi
+AG_NoxiousBreath.symbolPack.prefixSymbols.2.symbol	arroto-
+AG_NoxiousBreath.symbolPack.wholeNameSymbols.0.symbol	arrotador
+## DefInjected/GeneDef/GeneDefs_Aging.xml
+AG_FasterAging.label	envelhecimento mais rápido
+AG_FasterAging.description	Portadores deste gene envelhecem mais rápido. Isso vale para crianças e adultos. Tem suas vantagens e desvantagens.
+AG_SlowerAging.label	envelhecimento mais lento
+AG_SlowerAging.description	Portadores deste gene envelhecem mais devagar. Isso vale para crianças e adultos. Tem suas vantagens e desvantagens.
+## DefInjected/GeneDef/GeneDefs_Androids.xml
+AG_WorkerDroidHead.label	cabeça de droide operário
+AG_WorkerDroidHead.description	Androides com este hardware têm um rosto robótico, completamente inumano.
+AG_ServantDroidHead.label	cabeça de droide serviçal
+AG_ServantDroidHead.description	Androides com este hardware têm um rosto robótico, completamente inumano.
+AG_KillerDroidHead.label	cabeça de droide assassino
+AG_KillerDroidHead.description	Androides com este hardware têm um rosto robótico, completamente inumano.
+AG_HalfSyntheticHead.label	cabeça meio sintética
+AG_HalfSyntheticHead.description	Androides com este hardware têm um rosto sintético com olhos humanos de aparência surpreendentemente normal.
+AG_RoboticBodyPlastic.label	corpo de plástico
+AG_RoboticBodyPlastic.description	Androides com este hardware têm um corpo com aparência de plástico.
+AG_RoboticBodySkeletal.label	corpo robótico
+AG_RoboticBodySkeletal.description	Androides com este hardware têm um corpo de aparência puramente robótica.
+AG_LightLED.label	luz de LED, azul
+AG_LightLED.description	Androides com este hardware têm um LED azul na lateral da cabeça, que denuncia sua natureza sintética.
+AG_LightLEDRed.label	luz de LED, vermelha
+AG_LightLEDRed.description	Androides com este hardware têm um LED vermelho na lateral da cabeça, que denuncia sua natureza sintética.
+AG_MechAntenna.label	antena mecânica
+AG_MechAntenna.description	Androides com este hardware têm uma antena mecânica na cabeça.
+## DefInjected/GeneDef/GeneDefs_Aptitude.xml
+AG_MiningYield_High.label	alto rendimento na mineração
+AG_MiningYield_High.description	Portadores deste gene são bons mineradores e tiram mais minério da pedra.
+AG_MiningYield_High.labelShortAdj	minerador
+AG_MiningYield_High.symbolPack.prefixSymbols.0.symbol	metal
+AG_MiningYield_Low.label	baixo rendimento na mineração
+AG_MiningYield_Low.description	Portadores deste gene são mineradores ruins e tiram menos minério da pedra.
+AG_MiningYield_Low.labelShortAdj	minerador ruim
+## DefInjected/GeneDef/GeneDefs_Archite.xml
+AG_Foodless.label	sem comida
+AG_Foodless.description	Portadores deste gene têm arquitas no sangue que mantêm o metabolismo sem precisar comer.
+AG_Mood_Unfeeling.label	insensível
+AG_Mood_Unfeeling.description	Portadores deste gene não têm emoções.
+AG_Mood_Unfeeling.symbolPack.prefixSymbols.0.symbol	robô
+AG_Mood_Unfeeling.symbolPack.prefixSymbols.1.symbol	duro
+AG_Mood_Unfeeling.symbolPack.prefixSymbols.2.symbol	sem-coração
+AG_AsexualFission.label	fissão assexuada
+AG_AsexualFission.description	Portadores deste gene geram de tempos em tempos pequenos aglomerados de matéria orgânica nas costas, que se desenvolvem aos poucos até virar seres humanos completos e se separam do hospedeiro/pai por estrobilização. É uma fonte infinita de novos colonos, com o risco de inundar a colônia de recém-nascidos.
+AG_AsexualFission.symbolPack.prefixSymbols.0.symbol	asse-
+AG_AsexualFission.symbolPack.prefixSymbols.1.symbol	sem-sexo
+AG_AsexualFission.symbolPack.prefixSymbols.2.symbol	assexuado
+AG_Regeneration.label	regeneração
+AG_Regeneration.description	Portadores deste gene têm uma rede de mecanitos especializados na corrente sanguínea que tratam periodicamente os ferimentos internos, regenerando-os sem precisar de descanso.
+AG_HeatImmunity.label	imunidade ao calor
+AG_HeatImmunity.description	Portadores deste gene quase não são afetados pelo calor. As chamas também não os incomodam, e eles não pegam fogo.
+AG_HeatImmunity.symbolPack.prefixSymbols.0.symbol	quente
+AG_HeatImmunity.symbolPack.prefixSymbols.1.symbol	calor
+AG_HeatImmunity.symbolPack.prefixSymbols.2.symbol	sol
+AG_HeatImmunity.symbolPack.prefixSymbols.3.symbol	suor
+AG_HeatImmunity.symbolPack.prefixSymbols.4.symbol	forno
+AG_ColdImmunity.label	imunidade ao frio
+AG_ColdImmunity.description	Portadores deste gene quase não são afetados pelo frio. Também não sofrem queimaduras de frio.
+AG_ColdImmunity.symbolPack.prefixSymbols.0.symbol	frio
+AG_ColdImmunity.symbolPack.prefixSymbols.1.symbol	fresco
+AG_ColdImmunity.symbolPack.prefixSymbols.2.symbol	gelo
+AG_SuperAdaptiveBiology.label	biologia superadaptativa
+AG_SuperAdaptiveBiology.description	Portadores deste gene conseguem mudar completamente a própria personalidade, livrando-se de traços antigos e ganhando novos.
+## DefInjected/GeneDef/GeneDefs_Archite_Fungoid.xml
+AlphaGenes_FungalStrength.label	força fúngica
+AlphaGenes_FungalStrength.description	Portadores deste gene têm estruturas fúngicas reforçadas que dão uma força inacreditável, e são extremamente perigosos no combate corpo a corpo.
+AlphaGenes_FungalSpeed.label	velocidade fúngica
+AlphaGenes_FungalSpeed.description	Portadores deste gene ficam mais rápidos conforme a infecção avança. O efeito fica mais forte com o tempo.
+## DefInjected/GeneDef/GeneDefs_Archite_Phytokin.xml
+AG_OcularAffinity.label	afinidade ocular
+AG_OcularAffinity.description	Portadores deste gene têm uma conexão especial com as árvores oculares e atuam como amplificadores das propriedades especiais delas, o que lhes dá acesso a poderosas habilidades psíquicas inatas.
+AG_OcularAffinity.symbolPack.prefixSymbols.0.symbol	olho
+AG_OcularAffinity.symbolPack.prefixSymbols.1.symbol	ocul
+## DefInjected/GeneDef/GeneDefs_Armour.xml
+AG_FungalSkin.label	pele fúngica
+AG_FungalSkin.description	Portadores deste gene têm vários tufos de fungo brotando da pele. Os fungos não causam dor e dão bastante armadura natural, mas os deixam MUITO vulneráveis ao fogo.
+AG_FungalSkin.symbolPack.prefixSymbols.0.symbol	fungi
+AG_FungalSkin.symbolPack.prefixSymbols.1.symbol	fúngico
+AG_FungalSkin.symbolPack.prefixSymbols.2.symbol	cogum
+AG_FrailSkin.label	pele frágil
+AG_FrailSkin.description	Portadores deste gene têm pele muito frágil e fina. Isso aumenta um pouco o dano recebido.
+AG_FrailSkin.symbolPack.prefixSymbols.0.symbol	frágil
+AG_FrailSkin.symbolPack.prefixSymbols.1.symbol	pele-fina
+AG_ArmourMinor.label	pele de madeira
+AG_ArmourMinor.description	Pele dura, parecida com madeira. Dá um pouco de armadura natural.
+AG_ArmourMinor.symbolPack.prefixSymbols.0.symbol	casca
+AG_ArmourMedium.label	pele ferrosa
+AG_ArmourMedium.description	Portadores deste gene têm a pele reforçada por uma nanorrede de compostos metálicos. Dá uma quantidade média de armadura natural.
+AG_ArmourMedium.symbolPack.prefixSymbols.0.symbol	ferr
+AG_ArmourMedium.symbolPack.prefixSymbols.1.symbol	metalo
+AG_ArmourMajor.label	pele de plastiaço
+AG_ArmourMajor.description	Portadores deste gene têm a pele reforçada por uma nanorrede de plastiaço. Dá muita armadura natural.
+AG_ArmourMajor.symbolPack.prefixSymbols.0.symbol	adamante
+## DefInjected/GeneDef/GeneDefs_Attacks_Anomaly.xml
+AG_GreaterToughspikes.label	grandes espinhos duros
+AG_GreaterToughspikes.description	Portadores deste gene têm quatro garras funcionais de espinho duro saindo das costas, que podem usar em ataques corpo a corpo.
+AG_GreaterFleshWhip.label	grande chicote de carne
+AG_GreaterFleshWhip.description	Portadores deste gene têm dois tentáculos carnudos e musculosos com lâminas na ponta. Esses chicotes de carne são excelentes armas corpo a corpo.
+## DefInjected/GeneDef/GeneDefs_Beauty.xml
+AG_Beauty_VeryVeryUgly.label	repulsivo
+AG_Beauty_VeryVeryUgly.description	Portadores deste gene são tão inimaginavelmente feios e grotescos que só de olhar para eles as outras pessoas ficam enjoadas.
+AG_Beauty_VeryVeryUgly.labelShortAdj	repulsivo
+AG_Beauty_VeryVeryUgly.symbolPack.prefixSymbols.0.symbol	sinistro
+AG_Beauty_VeryVeryUgly.symbolPack.prefixSymbols.1.symbol	macabr
+AG_Beauty_VeryVeryUgly.symbolPack.prefixSymbols.2.symbol	grote
+AG_Beauty_VeryVeryUgly.symbolPack.prefixSymbols.3.symbol	disforme
+AG_Beauty_VeryVeryUgly.symbolPack.prefixSymbols.4.symbol	monst
+AG_Beauty_VeryVeryUgly.symbolPack.prefixSymbols.5.symbol	medonho
+AG_Beauty_Angelic.label	beleza angelical
+AG_Beauty_Angelic.description	Portadores deste gene têm uma beleza antinatural, quase imaculada, que os destaca entre os da sua espécie.
+AG_Beauty_Angelic.labelShortAdj	angelical
+AG_Beauty_Angelic.symbolPack.prefixSymbols.0.symbol	anjo
+AG_Beauty_Angelic.symbolPack.prefixSymbols.1.symbol	santo
+AG_Beauty_Angelic.symbolPack.prefixSymbols.2.symbol	sagrado
+AG_Beauty_Angelic.symbolPack.prefixSymbols.3.symbol	estrela
+AG_Beauty_Angelic.symbolPack.prefixSymbols.4.symbol	serafim
+AG_Beauty_Angelic.symbolPack.prefixSymbols.5.symbol	divino
+AG_UnsettlingAppearance.label	aparência perturbadora
+AG_UnsettlingAppearance.description	Indo além das noções comuns de beleza ou feiura, o portador deste gene tem uma aparência tão perturbadora que causa certo desconforto nas outras pessoas.
+AG_UnsettlingAppearance.labelShortAdj	perturbador
+AG_UnsettlingAppearance.symbolPack.prefixSymbols.0.symbol	estranho
+AG_UnsettlingAppearance.symbolPack.prefixSymbols.1.symbol	inquiet
+AG_UnsettlingAppearance.symbolPack.prefixSymbols.2.symbol	monst
+AG_UnsettlingAppearance.symbolPack.prefixSymbols.3.symbol	demônio
+AG_UnsettlingAppearance.symbolPack.prefixSymbols.4.symbol	vil
+AG_EldritchVisage.label	semblante sobrenatural
+AG_EldritchVisage.description	O portador deste gene tem uma aparência que aterroriza os outros até o âmago do ser. Será sempre desprezado.
+AG_EldritchVisage.labelShortAdj	sobrenatural
+AG_EldritchVisage.symbolPack.prefixSymbols.0.symbol	eldri
+AG_EldritchVisage.symbolPack.prefixSymbols.1.symbol	terror
+AG_Teratophilia.label	teratofilia
+AG_Teratophilia.description	O portador deste gene não liga para feiura e se sente igualmente atraído por colonos feios. Afinal, a beleza está nos olhos de quem vê (a pessoa olhando, não o monstro de D&D).

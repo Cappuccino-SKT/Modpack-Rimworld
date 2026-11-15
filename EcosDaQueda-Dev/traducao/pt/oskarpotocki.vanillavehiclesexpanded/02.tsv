@@ -1,0 +1,250 @@
+## DefInjected/ThingDef/BangBus_Buildable.xml
+VVE_BangBus_Blueprint.label	Bang Bus
+VVE_BangBus_Blueprint.description	Um transporte básico de passageiros. O Bang Bus é uma máquina relativamente barata de construir, feita para levar gente por estradas em terreno plano. Não é recomendado no inverno nem em terreno com neve (muito menos nos dois), porque as placas leves de blindagem que protegem os passageiros também atrapalham a aceleração.\n\nComo os outros veículos de nível 1, é beberrão de combustível e rende mais em distâncias médias.\n\n<color=#bb8f04>Tripulação:</color> Motorista x1, Passageiro x5\n<color=#bb8f04>Combustível:</color> Combustível químico
+## DefInjected/ThingDef/BangBus_VehiclePawn.xml
+VVE_BangBus.label	Bang Bus
+VVE_BangBus.description	Um transporte básico de passageiros. O Bang Bus é uma máquina relativamente barata de construir, feita para levar gente por estradas em terreno plano. Não é recomendado no inverno nem em terreno com neve (muito menos nos dois), porque as placas leves de blindagem que protegem os passageiros também atrapalham a aceleração.\n\nComo os outros veículos de nível 1, é beberrão de combustível e rende mais em distâncias médias.\n\n<color=#bb8f04>Tripulação:</color> Motorista x1, Passageiro x5\n<color=#bb8f04>Combustível:</color> Combustível químico
+VVE_BangBus.components.1.label	Roda dianteira esquerda
+VVE_BangBus.components.2.label	Roda dianteira direita
+VVE_BangBus.components.3.label	Roda traseira esquerda
+VVE_BangBus.components.4.label	Roda traseira direita
+VVE_BangBus.components.5.label	Suspensão dianteira esquerda
+VVE_BangBus.components.6.label	Suspensão dianteira direita
+VVE_BangBus.components.8.label	Painel lateral esquerdo
+VVE_BangBus.components.9.label	Painel lateral direito
+VVE_BangBus.components.11.label	Para-choque dianteiro
+VVE_BangBus.components.12.label	Para-choque traseiro
+VVE_BangBus.components.15.label	Volante
+VVE_BangBus.properties.roles.2.label	passageiro traseiro
+## DefInjected/ThingDef/Buildings_Misc.xml
+VVE_GarageCabinet.label	armário de garagem
+VVE_GarageCabinet.description	Um armário prático cheio de ferramentas extras de vários tamanhos e funções. Aumenta a velocidade de trabalho quando fica perto de uma bancada de garagem. Cada bancada pode usar até dois armários de garagem.
+VVE_RefuelingPump.label	bomba de combustível
+VVE_RefuelingPump.description	Uma bomba que reabastece sozinha os veículos movidos a combustível químico parados no ponto de interação. Precisa ser abastecida com combustível químico.
+## DefInjected/ThingDef/Buildings_Production.xml
+VVE_GarageBench.label	bancada de garagem
+VVE_GarageBench.description	Uma estação de trabalho especializada em montar peças de veículos. Para os desesperados, carros enferrujados e blocos de motor podem ser desmontados atrás de alguma peça que ainda funcione.
+## DefInjected/ThingDef/Buildings_Security.xml
+VVE_TankTrap.label	ouriço antitanque
+VVE_TankTrap.description	Uma fortificação defensiva para parar veículos. Dá um pouco de cobertura e dá para atravessar a pé, mas veículos não passam.
+## DefInjected/ThingDef/Buildings_Structure.xml
+VVE_GarageDoor.label	portão de garagem (1x4)
+VVE_GarageDoor.description	Divide cômodos. Abre manualmente, deixando os veículos passarem.
+VVE_GarageDoorOpened.label	portão de garagem (1x4)
+VVE_GarageDoorOpened.description	Divide cômodos. Abre manualmente, deixando os veículos passarem.
+VVE_GarageDoorLarge.label	portão de garagem (1x5)
+VVE_GarageDoorLarge.description	Divide cômodos. Abre manualmente, deixando os veículos passarem.
+VVE_GarageDoorLargeOpened.label	portão de garagem (1x5)
+VVE_GarageDoorLargeOpened.description	Divide cômodos. Abre manualmente, deixando os veículos passarem.
+VVE_GarageAutoDoor.label	portão de garagem automático (1x4)
+VVE_GarageAutoDoor.description	Divide cômodos. Funciona a eletricidade e abre sem ninguém precisar mexer, deixando os veículos passarem.
+VVE_GarageAutoDoorOpened.label	portão de garagem automático (1x4)
+VVE_GarageAutoDoorOpened.description	Divide cômodos. Funciona a eletricidade e abre sem ninguém precisar mexer, deixando os veículos passarem.
+VVE_GarageAutoDoorLarge.label	portão de garagem automático (1x5)
+VVE_GarageAutoDoorLarge.description	Divide cômodos. Funciona a eletricidade e abre sem ninguém precisar mexer, deixando os veículos passarem.
+VVE_GarageAutoDoorLargeOpened.label	portão de garagem automático (1x5)
+VVE_GarageAutoDoorLargeOpened.description	Divide cômodos. Funciona a eletricidade e abre sem ninguém precisar mexer, deixando os veículos passarem.
+## DefInjected/ThingDef/Bulldog_Buildable.xml
+VVE_Bulldog_Blueprint.label	Bulldog
+VVE_Bulldog_Blueprint.description	Um tanque de batalha principal de uso geral. O Bulldog é um veículo de combate melhorado que se sai bem em qualquer confronto. Rende mais em terreno desfavorável, com blindagem em todos os lados; a placa mais fina fica atrás, perto do motor.\n\nAo contrário dos outros veículos de nível 2, tem eficiência de combustível normal e é bem visível, o que ainda é melhor que o tanque de nível 1.\n\n<color=#bb8f04>Tripulação:</color> Motorista x1, Artilheiro x1\n<color=#bb8f04>Combustível:</color> Combustível químico
+## DefInjected/ThingDef/Bulldog_MainTurret.xml
+Bullet_Bulldog_MainTurret.label	projétil altamente explosivo
+## DefInjected/ThingDef/Bulldog_VehiclePawn.xml
+VVE_Bulldog.label	Bulldog
+VVE_Bulldog.description	Um tanque de batalha principal de uso geral. O Bulldog é um veículo de combate melhorado que se sai bem em qualquer confronto. Rende mais em terreno desfavorável, com blindagem em todos os lados; a placa mais fina fica atrás, perto do motor.\n\nAo contrário dos outros veículos de nível 2, tem eficiência de combustível normal e é bem visível, o que ainda é melhor que o tanque de nível 1.\n\n<color=#bb8f04>Tripulação:</color> Motorista x1, Artilheiro x1\n<color=#bb8f04>Combustível:</color> Combustível químico
+VVE_Bulldog.components.1.label	Esteira esquerda
+VVE_Bulldog.components.2.label	Esteira direita
+VVE_Bulldog.components.3.label	Roda motriz dianteira esquerda
+VVE_Bulldog.components.4.label	Roda motriz dianteira direita
+VVE_Bulldog.components.5.label	Roda motriz traseira esquerda
+VVE_Bulldog.components.6.label	Roda motriz traseira direita
+VVE_Bulldog.components.8.label	Blindagem frontal
+VVE_Bulldog.components.9.label	Blindagem esquerda
+VVE_Bulldog.components.10.label	Blindagem direita
+VVE_Bulldog.components.11.label	Blindagem traseira
+VVE_Bulldog.components.14.label	Sistema de direção
+## DefInjected/ThingDef/Bunsen_Buildable.xml
+VVE_Bunsen_Blueprint.label	Bunsen
+VVE_Bunsen_Blueprint.description	Um tanque leve básico. O Bunsen é um blindado modificado, bom para atacar fortificações inimigas e infantaria exposta. A blindagem leve especial impede que ele mesmo pegue fogo, mas como a arma principal puxa direto dos tanques de combustível aumentados, é um modelo bem arriscado de levar a campo.\n\nComo os outros veículos de nível 1, é beberrão de combustível e rende mais em distâncias médias, mas também gasta mais combustível no mapa-múndi.\n\n<color=#bb8f04>Tripulação:</color> Motorista x1, Artilheiro x1\n<color=#bb8f04>Combustível:</color> Combustível químico
+## DefInjected/ThingDef/Bunsen_MainTurret.xml
+VVE_Bullet_Bunsen.label	jato
+## DefInjected/ThingDef/Bunsen_VehiclePawn.xml
+VVE_Bunsen.label	Bunsen
+VVE_Bunsen.description	Um tanque leve básico. O Bunsen é um blindado modificado, bom para atacar fortificações inimigas e infantaria exposta. A blindagem leve especial impede que ele mesmo pegue fogo, mas como a arma principal puxa direto dos tanques de combustível aumentados, é um modelo bem arriscado de levar a campo.\n\nComo os outros veículos de nível 1, é beberrão de combustível e rende mais em distâncias médias, mas também gasta mais combustível no mapa-múndi.\n\n<color=#bb8f04>Tripulação:</color> Motorista x1, Artilheiro x1\n<color=#bb8f04>Combustível:</color> Combustível químico
+VVE_Bunsen.components.1.label	Esteira esquerda
+VVE_Bunsen.components.2.label	Esteira direita
+VVE_Bunsen.components.3.label	Roda motriz dianteira esquerda
+VVE_Bunsen.components.4.label	Roda motriz dianteira direita
+VVE_Bunsen.components.5.label	Roda motriz traseira esquerda
+VVE_Bunsen.components.6.label	Roda motriz traseira direita
+VVE_Bunsen.components.8.label	Blindagem esquerda
+VVE_Bunsen.components.9.label	Blindagem direita
+VVE_Bunsen.components.10.label	Blindagem frontal
+VVE_Bunsen.components.11.label	Blindagem traseira
+VVE_Bunsen.components.14.label	Sistema de direção
+## DefInjected/ThingDef/Charley_Buildable.xml
+VVE_Charley_Blueprint.label	Charley
+VVE_Charley_Blueprint.description	Uma motocicleta de uso geral. A Charley é um veículo individual muito eficiente, com pouca capacidade de carga. Anda bem em qualquer estrada, menos no inverno ou em terreno com neve (ou nos dois), e é mais rápida no mapa-múndi.\n\nComo os outros veículos de nível 2, tem o dobro de eficiência de combustível no mapa-múndi, o que os torna mais econômicos que os de nível 1. Também são menos visíveis, graças à fabricação melhor.\n\n<color=#bb8f04>Tripulação:</color> Motorista x1\n<color=#bb8f04>Combustível:</color> Combustível químico
+## DefInjected/ThingDef/Charley_VehiclePawn.xml
+VVE_Charley.label	Charley
+VVE_Charley.description	Uma motocicleta de uso geral. A Charley é um veículo individual muito eficiente, com pouca capacidade de carga. Anda bem em qualquer estrada, menos no inverno ou em terreno com neve (ou nos dois), e é mais rápida no mapa-múndi.\n\nComo os outros veículos de nível 2, tem o dobro de eficiência de combustível no mapa-múndi, o que os torna mais econômicos que os de nível 1. Também são menos visíveis, graças à fabricação melhor.\n\n<color=#bb8f04>Tripulação:</color> Motorista x1\n<color=#bb8f04>Combustível:</color> Combustível químico
+VVE_Charley.components.0.label	Roda dianteira
+VVE_Charley.components.1.label	Roda traseira
+VVE_Charley.components.3.label	Suspensão dianteira
+VVE_Charley.components.4.label	Suspensão traseira
+## DefInjected/ThingDef/Dinghy_Buildable.xml
+VVE_Dinghy_Blueprint.label	Bote
+VVE_Dinghy_Blueprint.description	Um barco a motor bem básico. O bote é um jeito incrivelmente barato e discreto de atravessar a água. Tem boa capacidade de carga, mas tende a congelar no inverno e anda devagar nos rios. O motor exposto na traseira é vulnerável a ataques, e não espere que o casco aguente tiros.\n\nComo os outros veículos de nível 1, é beberrão de combustível e rende mais em distâncias médias.\n\n<color=#bb8f04>Tripulação:</color> Motorista x1, Passageiro x5\n<color=#bb8f04>Combustível:</color> Combustível químico
+## DefInjected/ThingDef/Dinghy_VehiclePawn.xml
+VVE_Dinghy.label	Bote
+VVE_Dinghy.description	Um barco a motor bem básico. O bote é um jeito incrivelmente barato e discreto de atravessar a água. Tem boa capacidade de carga, mas tende a congelar no inverno e anda devagar nos rios. O motor exposto na traseira é vulnerável a ataques, e não espere que o casco aguente tiros.\n\nComo os outros veículos de nível 1, é beberrão de combustível e rende mais em distâncias médias.\n\n<color=#bb8f04>Tripulação:</color> Motorista x1, Passageiro x5\n<color=#bb8f04>Combustível:</color> Combustível químico
+VVE_Dinghy.components.1.label	Painel lateral esquerdo
+VVE_Dinghy.components.2.label	Painel lateral direito
+VVE_Dinghy.properties.roles.1.label	passageiro 1
+VVE_Dinghy.properties.roles.2.label	passageiro 2
+VVE_Dinghy.properties.roles.3.label	passageiro 3
+VVE_Dinghy.properties.roles.4.label	passageiro 4
+VVE_Dinghy.properties.roles.5.label	passageiro 5
+## DefInjected/ThingDef/Dirtbike_Buildable.xml
+VVE_Dirtbike_Blueprint.label	Moto de trilha
+VVE_Dirtbike_Blueprint.description	Uma moto off-road básica. A moto de trilha é um veículo muito barato que leva uma pessoa só, rápido, com economia e em silêncio. Incrivelmente leve e com blindagem praticamente de papel, anda mal no inverno ou na neve (ou nos dois) e não tem capacidade de carga nenhuma.\n\nComo os outros veículos de nível 1, é beberrona de combustível e rende mais em distâncias médias.\n\n<color=#bb8f04>Tripulação:</color> Motorista x1\n<color=#bb8f04>Combustível:</color> Combustível químico
+## DefInjected/ThingDef/Dirtbike_VehiclePawn.xml
+VVE_Dirtbike.label	Moto de trilha
+VVE_Dirtbike.description	Uma moto off-road básica. A moto de trilha é um veículo muito barato que leva uma pessoa só, rápido, com economia e em silêncio. Incrivelmente leve e com blindagem praticamente de papel, anda mal no inverno ou na neve (ou nos dois) e não tem capacidade de carga nenhuma.\n\nComo os outros veículos de nível 1, é beberrona de combustível e rende mais em distâncias médias.\n\n<color=#bb8f04>Tripulação:</color> Motorista x1\n<color=#bb8f04>Combustível:</color> Combustível químico
+VVE_Dirtbike.components.0.label	Roda dianteira
+VVE_Dirtbike.components.1.label	Roda traseira
+VVE_Dirtbike.components.3.label	Suspensão dianteira
+VVE_Dirtbike.components.4.label	Suspensão traseira
+## DefInjected/ThingDef/Frog_Buildable.xml
+VVE_Frog_Blueprint.label	Frog
+VVE_Frog_Blueprint.description	Uma cápsula de transporte básica e reutilizável. O Frog é um veículo relativamente barato e a primeira opção para quem quer voar sem se espatifar no chão. Várias vezes mais rápido que as cápsulas de transporte comuns, com blindagem aceitável para o seu único passageiro, é o veículo ideal para emboscadas.\n\nPior ainda que os outros veículos de nível 1: eficiência de combustível simplesmente não existe aqui. Tome cuidado para reabastecer no local de pouso ou levar combustível de sobra para a volta.\n\nPor ser um veículo voador, fica extremamente óbvio quando está em movimento.\n\n<color=#bb8f04>Tripulação:</color> Motorista x1\n<color=#bb8f04>Combustível:</color> Combustível químico
+## DefInjected/ThingDef/Frog_VehiclePawn.xml
+VVE_Frog.label	Frog
+VVE_Frog.description	Uma cápsula de transporte básica e reutilizável. O Frog é um veículo relativamente barato e a primeira opção para quem quer voar sem se espatifar no chão. Várias vezes mais rápido que as cápsulas de transporte comuns, com blindagem aceitável para o seu único passageiro, é o veículo ideal para emboscadas.\n\nPior ainda que os outros veículos de nível 1: eficiência de combustível simplesmente não existe aqui. Tome cuidado para reabastecer no local de pouso ou levar combustível de sobra para a volta.\n\nPor ser um veículo voador, fica extremamente óbvio quando está em movimento.\n\n<color=#bb8f04>Tripulação:</color> Motorista x1\n<color=#bb8f04>Combustível:</color> Combustível químico
+VVE_Frog.components.1.label	Primeiro propulsor
+VVE_Frog.components.2.label	Segundo propulsor
+VVE_Frog.components.3.label	Terceiro propulsor
+## DefInjected/ThingDef/Highwayman_Buildable.xml
+VVE_Highwayman_Blueprint.label	Highwayman
+VVE_Highwayman_Blueprint.description	Um veículo de combate de infantaria básico. O Highwayman é a opção armada mais barata para levar três pessoas. Resiste a tiros de armas leves, mas é muito vulnerável atrás; foi feito para dar apoio de fogo móvel à infantaria e andar rápido em estradas pavimentadas.\n\nComo os outros veículos de nível 1, é beberrão de combustível e rende mais em distâncias médias, mas também gasta mais combustível no mapa-múndi.\n\n<color=#bb8f04>Tripulação:</color> Motorista x1, Artilheiro x1, Passageiro x1\n<color=#bb8f04>Combustível:</color> Combustível químico
+## DefInjected/ThingDef/Highwayman_VehiclePawn.xml
+VVE_Highwayman.label	Highwayman
+VVE_Highwayman.description	Um veículo de combate de infantaria básico. O Highwayman é a opção armada mais barata para levar três pessoas. Resiste a tiros de armas leves, mas é muito vulnerável atrás; foi feito para dar apoio de fogo móvel à infantaria e andar rápido em estradas pavimentadas.\n\nComo os outros veículos de nível 1, é beberrão de combustível e rende mais em distâncias médias, mas também gasta mais combustível no mapa-múndi.\n\n<color=#bb8f04>Tripulação:</color> Motorista x1, Artilheiro x1, Passageiro x1\n<color=#bb8f04>Combustível:</color> Combustível químico
+VVE_Highwayman.components.1.label	Roda dianteira esquerda
+VVE_Highwayman.components.2.label	Roda dianteira direita
+VVE_Highwayman.components.3.label	Roda traseira esquerda
+VVE_Highwayman.components.4.label	Roda traseira direita
+VVE_Highwayman.components.5.label	Suspensão dianteira esquerda
+VVE_Highwayman.components.6.label	Suspensão dianteira direita
+VVE_Highwayman.components.7.label	Suspensão traseira esquerda
+VVE_Highwayman.components.8.label	Suspensão traseira direita
+VVE_Highwayman.components.10.label	Blindagem frontal
+VVE_Highwayman.components.11.label	Blindagem esquerda
+VVE_Highwayman.components.12.label	Blindagem direita
+VVE_Highwayman.components.14.label	Para-choque dianteiro
+VVE_Highwayman.components.17.label	Volante
+## DefInjected/ThingDef/Items_Resource_CarParts.xml
+VVE_EngineBlock.label	bloco de motor
+VVE_EngineBlock.description	É literalmente a peça que faz o veículo andar, para começo de conversa; nenhum veículo pode ser montado sem uma. Veículos muito grandes ou pesados podem precisar de mais de uma.
+VVE_CarAlternator.label	alternador
+VVE_CarAlternator.description	O alternador é uma peça de motor vital para qualquer veículo com sistema elétrico. Alguns sistemas bem básicos se viram sem ele, e alguns veículos mais complexos podem precisar de mais de um.
+VVE_CarExhaust.label	escapamento
+VVE_CarExhaust.description	Uma série de canos, catalisadores e conexões que levam a fumaça do motor para longe da cabine do motorista. Motores que vão trabalhar muito forçados precisam de mais escapamentos.
+VVE_CarSuspension.label	suspensão
+VVE_CarSuspension.description	Uma série de transmissões, molas e amortecedores que redirecionam ou reduzem as forças que passam pelas rodas. Em geral, quanto maior a massa e a capacidade de carga do veículo, mais suspensões ele precisa.
+VVE_CarWheel.label	roda
+VVE_CarWheel.description	Uma das tecnologias mais antigas criadas pela humanidade, a roda pega a força do motor e transforma em movimento. Como as rodas precisam não só levar o veículo para onde for preciso, mas também aguentar o peso todo, veículos maiores e mais pesados podem precisar de várias, ou de dezenas.
+VVE_CarBattery.label	bateria de carro
+VVE_CarBattery.description	Uma bateria recarregável isolada, com fiação, que alimenta várias funções eletrônicas. Funciona como protetor contra surtos dos sistemas eletrônicos, e várias baterias podem reforçar ou até substituir o motor de um veículo.
+VVE_CarFuelTank.label	tanque de combustível
+VVE_CarFuelTank.description	Sistemas de armazenamento e injeção de combustível fabricados com cuidado. Ideais para veículos que precisam de mais capacidade de combustível, ou até de maior consumo, sem aumentar a chance de vazamentos ou de danos ao motor.
+VVE_CarTransmission.label	transmissão
+VVE_CarTransmission.description	Um sistema de transmissão automática dedicado, usinado com delicadeza em materiais endurecidos e duráveis. Por ter um projeto relativamente complexo, é exigido em veículos que precisam de torque imenso ou rotações altíssimas.
+VVE_CarRadiator.label	radiador
+VVE_CarRadiator.description	Uma série de canos, tubos, ventoinhas, bombas e o próprio radiador, pronta para ser instalada num veículo que vai aguentar cargas pesadas. Quanto mais o motor tiver que trabalhar, mais radiadores são necessários para mantê-lo frio.
+VVE_CarWiring.label	fiação
+VVE_CarWiring.description	Peças de fiação reforçadas e usinadas para conduzir melhor a eletricidade. Costumam ser exigidas em veículos com muitos sistemas eletrônicos sincronizados ou delicados.
+## DefInjected/ThingDef/Mosquito_Buildable.xml
+VVE_Mosquito_Blueprint.label	Mosquito
+VVE_Mosquito_Blueprint.description	Uma aeronave de uso geral. O Mosquito é um meio de transporte extremamente rápido e ágil. Não precisa de pista de pouso, mas é mais lento que os aviões e leva menos carga.\n\nComo os outros veículos de nível 2, tem o dobro de eficiência de combustível no mapa-múndi, o que os torna mais econômicos que os de nível 1.\n\nPor ser um veículo voador, fica extremamente óbvio quando está em movimento.\n\n<color=#bb8f04>Tripulação:</color> Piloto x1, Passageiro x3\n<color=#bb8f04>Combustível:</color> Combustível químico
+## DefInjected/ThingDef/Mosquito_VehiclePawn.xml
+VVE_Mosquito.label	Mosquito
+VVE_Mosquito.description	Uma aeronave de uso geral. O Mosquito é um meio de transporte extremamente rápido e ágil. Não precisa de pista de pouso, mas é mais lento que os aviões e leva menos carga.\n\nComo os outros veículos de nível 2, tem o dobro de eficiência de combustível no mapa-múndi, o que os torna mais econômicos que os de nível 1.\n\nPor ser um veículo voador, fica extremamente óbvio quando está em movimento.\n\n<color=#bb8f04>Tripulação:</color> Piloto x1, Passageiro x3\n<color=#bb8f04>Combustível:</color> Combustível químico
+VVE_Mosquito.components.0.label	Esqui de pouso esquerdo
+VVE_Mosquito.components.1.label	Esqui de pouso direito
+VVE_Mosquito.components.2.label	Estabilizador horizontal esquerdo
+VVE_Mosquito.components.3.label	Estabilizador horizontal direito
+VVE_Mosquito.components.5.label	Entrada de combustível
+VVE_Mosquito.components.8.label	Painel lateral esquerdo
+VVE_Mosquito.components.9.label	Painel lateral direito
+VVE_Mosquito.components.11.label	Mastro do rotor
+## DefInjected/ThingDef/Mule_Buildable.xml
+VVE_Mule_Blueprint.label	Mule
+VVE_Mule_Blueprint.description	Um transporte de carga básico. O Mule é um veículo relativamente barato que leva muita carga por estradas lisas em terreno plano. Não é recomendado no inverno nem em terreno com neve (muito menos nos dois), e tem blindagem bem leve para economizar peso.\n\nComo os outros veículos de nível 1, é beberrão de combustível e rende mais em distâncias médias. Ao contrário deles, se sai melhor no mapa-múndi, sendo um pouco mais rápido e econômico.\n\n<color=#bb8f04>Tripulação:</color> Motorista x1, Passageiro x1\n<color=#bb8f04>Combustível:</color> Combustível químico
+## DefInjected/ThingDef/Mule_VehiclePawn.xml
+VVE_Mule.label	Mule
+VVE_Mule.description	Um transporte de carga básico. O Mule é um veículo relativamente barato que leva muita carga por estradas lisas em terreno plano. Não é recomendado no inverno nem em terreno com neve (muito menos nos dois), e tem blindagem bem leve para economizar peso.\n\nComo os outros veículos de nível 1, é beberrão de combustível e rende mais em distâncias médias. Ao contrário deles, se sai melhor no mapa-múndi, sendo um pouco mais rápido e econômico.\n\n<color=#bb8f04>Tripulação:</color> Motorista x1, Passageiro x1\n<color=#bb8f04>Combustível:</color> Combustível químico
+VVE_Mule.components.1.label	Roda dianteira esquerda
+VVE_Mule.components.2.label	Roda dianteira direita
+VVE_Mule.components.3.label	Roda traseira esquerda
+VVE_Mule.components.4.label	Roda traseira direita
+VVE_Mule.components.5.label	Suspensão dianteira esquerda
+VVE_Mule.components.6.label	Suspensão dianteira direita
+VVE_Mule.components.7.label	Suspensão traseira esquerda
+VVE_Mule.components.8.label	Suspensão traseira direita
+VVE_Mule.components.10.label	Painel lateral esquerdo
+VVE_Mule.components.11.label	Painel lateral direito
+VVE_Mule.components.13.label	Para-choque dianteiro
+VVE_Mule.components.14.label	Para-choque traseiro
+VVE_Mule.components.17.label	Volante
+## DefInjected/ThingDef/Prowler_Buildable.xml
+VVE_Prowler_Blueprint.label	Prowler
+VVE_Prowler_Blueprint.description	Um veículo básico de exploração off-road. O Prowler é relativamente barato de construir e é uma opção eficiente para qualquer clima, rodando bem em terreno íngreme. Tem blindagem bem leve e motor vulnerável na traseira; é melhor manter esse automóvel de um lugar só longe do combate.\n\nComo os outros veículos de nível 1, é beberrão de combustível e rende mais em distâncias médias.\n\n<color=#bb8f04>Tripulação:</color> Motorista x1\n<color=#bb8f04>Combustível:</color> Combustível químico
+## DefInjected/ThingDef/Prowler_VehiclePawn.xml
+VVE_Prowler.label	Prowler
+VVE_Prowler.description	Um veículo básico de exploração off-road. O Prowler é relativamente barato de construir e é uma opção eficiente para qualquer clima, rodando bem em terreno íngreme. Tem blindagem bem leve e motor vulnerável na traseira; é melhor manter esse automóvel de um lugar só longe do combate.\n\nComo os outros veículos de nível 1, é beberrão de combustível e rende mais em distâncias médias.\n\n<color=#bb8f04>Tripulação:</color> Motorista x1\n<color=#bb8f04>Combustível:</color> Combustível químico
+VVE_Prowler.components.1.label	Roda dianteira esquerda
+VVE_Prowler.components.2.label	Roda dianteira direita
+VVE_Prowler.components.3.label	Roda traseira esquerda
+VVE_Prowler.components.4.label	Roda traseira direita
+VVE_Prowler.components.5.label	Suspensão dianteira esquerda
+VVE_Prowler.components.6.label	Suspensão dianteira direita
+VVE_Prowler.components.7.label	Suspensão traseira esquerda
+VVE_Prowler.components.8.label	Suspensão traseira direita
+VVE_Prowler.components.10.label	Painel lateral esquerdo
+VVE_Prowler.components.11.label	Painel lateral direito
+VVE_Prowler.components.13.label	Para-choque dianteiro
+VVE_Prowler.components.14.label	Para-choque traseiro
+VVE_Prowler.components.17.label	Volante
+## DefInjected/ThingDef/Roadkill_Buildable.xml
+VVE_Roadkill_Blueprint.label	Roadkill
+VVE_Roadkill_Blueprint.description	Um tanque médio básico. O Roadkill é um blindado relativamente barato, bom para confrontos curtos. Tem blindagem frontal respeitável, mas ataques pelos lados podem imobilizá-lo, e o motor exposto na traseira o deixa vulnerável a flanqueamento.\n\nSe os outros veículos de nível 1 são beberrões, este torra combustível num ritmo alarmante e é extremamente lento de consertar.\n\n<color=#bb8f04>Tripulação:</color> Motorista x1\n<color=#bb8f04>Combustível:</color> Combustível químico
+## DefInjected/ThingDef/Roadkill_MainTurret.xml
+Bullet_Roadkill_MainTurret.label	projétil altamente explosivo
+## DefInjected/ThingDef/Roadkill_VehiclePawn.xml
+VVE_Roadkill.label	Roadkill
+VVE_Roadkill.description	Um tanque médio básico. O Roadkill é um blindado relativamente barato, bom para confrontos curtos. Tem blindagem frontal respeitável, mas ataques pelos lados podem imobilizá-lo, e o motor exposto na traseira o deixa vulnerável a flanqueamento.\n\nSe os outros veículos de nível 1 são beberrões, este torra combustível num ritmo alarmante e é extremamente lento de consertar.\n\n<color=#bb8f04>Tripulação:</color> Motorista x1\n<color=#bb8f04>Combustível:</color> Combustível químico
+VVE_Roadkill.components.1.label	Esteira esquerda
+VVE_Roadkill.components.2.label	Esteira direita
+VVE_Roadkill.components.3.label	Roda motriz dianteira esquerda
+VVE_Roadkill.components.4.label	Roda motriz dianteira direita
+VVE_Roadkill.components.5.label	Roda motriz traseira esquerda
+VVE_Roadkill.components.6.label	Roda motriz traseira direita
+VVE_Roadkill.components.8.label	Blindagem esquerda
+VVE_Roadkill.components.9.label	Blindagem direita
+VVE_Roadkill.components.10.label	Blindagem frontal
+VVE_Roadkill.components.13.label	Sistema de direção
+## DefInjected/ThingDef/Roadrunner_Buildable.xml
+VVE_Roadrunner_Blueprint.label	Roadrunner
+VVE_Roadrunner_Blueprint.description	Um transportador de carga de uso geral. O Roadrunner é um veículo excelente para levar muito material de um lugar para outro. Rende mais em estradas planas e sofre um pouco em morros, na neve ou em regiões de inverno.\n\nComo os outros veículos de nível 2, tem o dobro de eficiência de combustível no mapa-múndi, o que os torna mais econômicos que os de nível 1. Também são menos visíveis, graças à fabricação melhor.\n\n<color=#bb8f04>Tripulação:</color> Motorista x1, Passageiro x1\n<color=#bb8f04>Combustível:</color> Combustível químico
+## DefInjected/ThingDef/Roadrunner_VehiclePawn.xml
+VVE_Roadrunner.label	Roadrunner
+VVE_Roadrunner.description	Um transportador de carga de uso geral. O Roadrunner é um veículo excelente para levar muito material de um lugar para outro. Rende mais em estradas planas e sofre um pouco em morros, na neve ou em regiões de inverno.\n\nComo os outros veículos de nível 2, tem o dobro de eficiência de combustível no mapa-múndi, o que os torna mais econômicos que os de nível 1. Também são menos visíveis, graças à fabricação melhor.\n\n<color=#bb8f04>Tripulação:</color> Motorista x1, Passageiro x1\n<color=#bb8f04>Combustível:</color> Combustível químico
+VVE_Roadrunner.components.1.label	Roda dianteira esquerda
+VVE_Roadrunner.components.2.label	Roda dianteira direita
+VVE_Roadrunner.components.3.label	Roda traseira esquerda
+VVE_Roadrunner.components.4.label	Roda traseira direita
+VVE_Roadrunner.components.5.label	Suspensão dianteira esquerda
+VVE_Roadrunner.components.6.label	Suspensão dianteira direita
+VVE_Roadrunner.components.7.label	Suspensão traseira esquerda
+VVE_Roadrunner.components.8.label	Suspensão traseira direita

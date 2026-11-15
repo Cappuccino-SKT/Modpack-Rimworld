@@ -1,0 +1,257 @@
+## DefInjected/BodyDef/Construct_Bodies.xml
+VPE_RockConstructBody.label	constructo de pedra
+VPE_RockConstructBody.corePart.parts.rocky_body.customLabel	corpo de pedra
+VPE_MetalConstructBody.label	constructo de metal
+VPE_MetalConstructBody.corePart.parts.metal_body.customLabel	corpo de metal
+## DefInjected/BodyDef/Skeletal_Body.xml
+VPE_SkeletalBody.label	esqueleto
+## DefInjected/BodyPartDef/BodyParts_General.xml
+VPE_RockHead.label	cabeça de pedra
+VPE_RockBody.label	corpo de pedra
+VPE_MetalHead.label	cabeça de metal
+VPE_MetalBody.label	corpo de metal
+VPE_Skull.label	crânio
+VPE_SkeletalLeg.label	perna esquelética
+VPE_SkeletalArm.label	braço esquelético
+## DefInjected/DamageDef/Damages.xml
+VPE_NeuralHeatBlast.label	explosão de calor neural
+VPE_NeuralHeatBlast.deathMessage	{0} foi morto.
+VPE_Rot.label	podridão
+VPE_Rot.deathMessage	{0} apodreceu até a morte.
+## DefInjected/GameConditionDef/GameConditions.xml
+VPE_RaidPause.label	ataque pausado
+VPE_RaidPause.description	Um cronopata está pausando um ataque.
+VPE_TimeQuake.label	terremoto temporal
+VPE_TimeQuake.description	Uma perturbação temporal gigantesca.
+VPE_Hurricane.label	furacão forçado
+VPE_Hurricane.description	Um senhor da estática está criando um furacão.
+VPE_PsychicFlashstorm.label	tempestade de raios
+VPE_PsychicFlashstorm.description	Uma tempestade localizada e bizarra está castigando uma área pequena com raios seguidos.
+VPE_PsychicFlashstorm.endMessage	A tempestade de raios acabou.
+VPE_PsychicFlashstorm.letterText	Uma tempestade de raios localizada e bizarra está atingindo uma área pequena. Isso pode causar incêndios enormes.
+VPE_IntenseShadows.label	sombras intensificadas
+VPE_IntenseShadows.description	Todas as áreas desta zona com menos de 50% de luz mergulharam na escuridão total.
+VPE_IntenseShadows.endMessage	As sombras voltam ao normal.
+## DefInjected/HediffDef/Harmonist.xml
+VPE_MindControlled.label	controle mental
+VPE_MindControlled.description	Controle mental induzido psiquicamente, que dá controle absoluto a outra pessoa.
+VPE_MindScramble.label	mente embaralhada
+VPE_MindScramble.description	Confusão mental induzida psiquicamente, causada pela tentativa de ser duas pessoas ao mesmo tempo.
+VPE_PsychicGuidance.label	orientação psíquica
+VPE_PsychicGuidance.description	Orientação induzida psiquicamente vinda de outra pessoa.
+VPE_PsychicGuide.label	guia psíquico
+VPE_PsychicGuide.description	Ausência mental induzida psiquicamente, causada por estar guiando outra pessoa.
+VPE_Lucky.label	sortudo
+VPE_Lucky.description	Sorte induzida psiquicamente que faz esta pessoa sempre acertar o alvo e nunca ser atingida pelo inimigo.
+VPE_UnLucky.label	azarado
+VPE_UnLucky.description	Azar induzido psiquicamente que impede esta pessoa de acertar qualquer alvo, enquanto o inimigo sempre a acerta.
+## DefInjected/HediffDef/Hediffs.xml
+VPE_Recharge.label	recarga
+VPE_Recharge.description	A eletricidade está sendo canalizada para uma bateria próxima.
+VPE_Vortex.label	vórtice
+VPE_Vortex.description	Um vórtice elétrico está dificultando o movimento.
+VPE_Hurricane.label	furacão
+VPE_Hurricane.description	Um furacão está dificultando o movimento e a visão.
+VPE_Bliss.label	êxtase
+VPE_Bliss.description	Ondas de serenidade emanam lá de dentro, trazendo paz de espírito e reduzindo a consciência.
+VPE_AgeSickness.label	doença da idade
+VPE_AgeSickness.description	Doença psíquica ligada à idade, que reduz muito a manipulação e a consciência.
+VPE_PsychicDrone.label	zumbido psíquico
+VPE_PsychicDrone.description	Uma força psíquica forte que afeta todo inimigo humanoide na área, deixando-os mais perturbados, apavorados e paranoicos.
+VPE_IceShield.label	escudo de gelo
+VPE_IceShield.description	Um escudo psíquico que protege da hipotermia e congela os inimigos que interagem com ele.
+VPE_FrostRay.label	raio congelante
+VPE_FrostRay.description	Um raio de gelo que causa muito dano e congela.
+VPE_IceBlock.label	congelado
+VPE_IceBlock.description	Esta entidade está completamente congelada num bloco de gelo e não vai conseguir se mexer até derreter.
+VPE_BlizzardSource.label	conjurando nevasca
+VPE_BlizzardSource.description	Esta entidade está conjurando uma nevasca.
+VPE_Blizzard.label	nevasca
+VPE_Blizzard.description	Um vento enorme com neve extrema, que reduz a visão, a manipulação e a velocidade de movimento.
+VPE_Haywire.label	pane
+VPE_Haywire.description	Programação hackeada psiquicamente, que bagunça a identificação de amigo ou inimigo.
+VPE_InfinitePower.label	energizando
+VPE_InfinitePower.description	Gerando eletricidade infinita para uma estrutura.
+VPE_AnimalOvershield.label	escudo animal
+VPE_AnimalOvershield.description	Um superescudo que protege o animal de qualquer ataque a distância.
+VPE_Smartbuzz.label	estímulo mental
+VPE_Smartbuzz.description	Sensação de clareza e curiosidade induzida psiquicamente. Melhora a velocidade de pesquisa e de aprendizado de habilidades.
+VPE_Essence.label	Essência de
+VPE_Essence.description	Fragmento da personalidade de alguém, separado psiquicamente e imbuído neste ser.
+VPE_Darkvision.label	visão no escuro
+VPE_Darkvision.description	Capacidade induzida psiquicamente de enxergar através da escuridão e das sombras.
+VPE_Darkvision_Display.label	visão no escuro
+VPE_Darkvision_Display.description	Visão noturna induzida psiquicamente.
+VPE_Productivity.label	produtividade psíquica
+VPE_Productivity.description	Melhora da velocidade de trabalho induzida psiquicamente.
+VPE_PsychicSoothe.label	alívio psíquico
+VPE_PsychicSoothe.description	Distorções de percepção prazerosas induzidas psiquicamente, que dão um aumento temporário de humor.
+VPE_GroupLink.label	elo de grupo
+VPE_GroupLink.description	Elo induzido psiquicamente entre várias entidades. Qualquer poder psíquico do tipo "palavra de" ressoa entre todos os indivíduos ligados.
+VPE_PsychicPain.label	dor psíquica
+VPE_PsychicPain.description	Dor física extrema induzida psiquicamente.
+VPE_Protection.label	proteção psíquica
+VPE_Protection.description	Proteção física contra dano, induzida psiquicamente.
+VPE_Hallucination.label	alucinação
+VPE_Hallucination.description	Uma sugestão psíquica forte que remodela a realidade aos olhos dos afetados, fazendo-os enxergar a vida cotidiana como se fosse de puro luxo.
+VPE_Liferot.label	podridão vital
+VPE_Liferot.description	Necrose em massa induzida psiquicamente, que faz membros e órgãos vivos e saudáveis apodrecerem na vítima.
+VPE_Rot.label	podridão
+VPE_Rot.description	Uma podridão.
+VPE_Rot.injuryProps.destroyedLabel	Apodreceu
+VPE_Rot.injuryProps.destroyedOutLabel	Apodreceu
+VPE_Rot.labelNoun	uma podridão
+VPE_Rot.labelNounPretty	{0} no(a) {1}
+VPE_GainedVitality.label	vitalidade psíquica
+VPE_GainedVitality.description	Vitalidade induzida psiquicamente, roubada de outra pessoa.
+VPE_LostVitality.label	fraqueza psíquica
+VPE_LostVitality.description	Fraqueza induzida psiquicamente, causada pela vitalidade roubada por outra pessoa.
+VPE_Ghostwalk.label	passo fantasma
+VPE_Ghostwalk.description	Desfasamento da matéria induzido psiquicamente.
+VPE_CorpseTalk.label	conversa com cadáver
+VPE_CorpseTalk.description	Elo induzido psiquicamente com o espírito de um falecido.
+VPE_BodiesConsumed.label	corpos consumidos
+VPE_BodiesConsumed.description	A quantidade de corpos consumidos com o poder psíquico Consumir Corpos. Cada corpo consumido aumenta em 1 o calor neural máximo.
+VPE_DeathShield.label	escudo da morte
+VPE_DeathShield.description	Imortalidade induzida psiquicamente que dura um dia.
+VPE_Obscured.label	oculto
+VPE_Obscured.description	Invisibilidade induzida psiquicamente.
+VPE_Shadowfocus.label	foco sombrio
+VPE_Shadowfocus.description	Aumento da sensibilidade psíquica induzido psiquicamente, conforme a falta de luz ao redor do conjurador.
+VPE_Sacrificed.label	sacrificado
+VPE_Sacrificed.description	Remoção de membro induzida psiquicamente por um poder psíquico poderoso. Esta parte do corpo não volta a crescer de jeito nenhum, nem com artefatos de cura poderosos.
+## DefInjected/HediffDef/Hediffs_Global_Misc.xml
+VPE_NoPain.label	sem sensibilidade à dor
+VPE_NoPain.description	Esta criatura tem sensibilidade à dor reduzida e demora mais para cair por causa da dor.
+VPE_PsychicShock.label	choque psíquico
+VPE_PsychicShock.description	Um estado de caos psíquico no cérebro e na mente. Causado por ataques psíquicos ou por calor neural em nível crítico, é debilitante até passar.
+VPE_PsychicShock.labelNoun	um choque psíquico
+## DefInjected/HediffDef/Protector.xml
+VPE_Healing.label	cura psíquica
+VPE_Healing.description	Reforço de cura induzido psiquicamente.
+VPE_BlockBleeding.label	estabilização psíquica
+VPE_BlockBleeding.description	Estase induzida psiquicamente que estanca qualquer sangramento.
+VPE_Immunity.label	imunidade psíquica
+VPE_Immunity.description	Reforço de imunidade induzido psiquicamente.
+VPE_Overshield.label	superescudo psíquico
+VPE_Overshield.description	Barreira de salto pessoal induzida psiquicamente. Impenetrável a projéteis.
+VPE_GuardianSkipBarrier.label	barreira de salto guardiã
+VPE_GuardianSkipBarrier.description	Barreira defensiva criada psiquicamente, que gera muito calor psíquico para se manter.
+VPE_RegrowLimbs.label	coma de regeneração psíquica
+VPE_RegrowLimbs.description	Regeneração de tecidos induzida psiquicamente, capaz de fechar feridas abertas e regenerar partes do corpo perdidas.
+VPE_Regenerating.label	regenerando
+VPE_Regenerating.description	Regenerando feridas, novas e antigas.
+VPE_Regenerating.labelNounPretty	{0} no(a) {1}
+## DefInjected/HediffDef/PsycastHediff.xml
+VPE_PsycastAbilityImplant.label	psínculo
+VPE_PsycastAbilityImplant.description	Vai embora, trapaceiro
+## DefInjected/HediffDef/Shields.xml
+VPE_FireShield.label	escudo de fogo
+VPE_FireShield.description	Um escudo de fogo, que incendeia quem ataca corpo a corpo
+VPE_StaticAura.label	aura estática
+VPE_StaticAura.description	Uma aura de eletricidade estática, que causa dano de PEM em tudo ao redor
+## DefInjected/HediffDef/Warlord.xml
+VPE_SpeedBoost.label	agilidade psíquica
+VPE_SpeedBoost.description	Reforço de agilidade induzido psiquicamente, que aumenta muito a velocidade de movimento.
+VPE_BladeFocus.label	foco da lâmina
+VPE_BladeFocus.description	Foco de combate induzido psiquicamente, que melhora muito a capacidade de combate corpo a corpo.
+VPE_FiringFocus.label	foco de tiro
+VPE_FiringFocus.description	Foco de combate induzido psiquicamente, que melhora muito a capacidade de combate a distância.
+VPE_AdrenalineRush.label	ímpeto psíquico
+VPE_AdrenalineRush.description	Descarga de adrenalina induzida psiquicamente, que melhora a visão, a audição e o movimento.
+VPE_ControlledFrenzy.label	frenesi psíquico
+VPE_ControlledFrenzy.description	Frenesi temporário induzido psiquicamente. A energia se renova a cada morte seguida.
+VPE_GuidedShot.label	tiro guiado
+VPE_GuidedShot.description	Precisão insana induzida psiquicamente.
+## DefInjected/HistoryEventDef/HistoryEventDefs.xml
+VPE_Foretelling.label	premonição
+VPE_GiftedEltex.label	presenteou eltex
+VPE_SoldEltex.label	vendeu eltex
+## DefInjected/IncidentDef/Incidents_Map_Misc.xml
+VPE_EltexMeteorite.label	meteorito de eltex
+VPE_EltexMeteorite.letterLabel	Meteorito de eltex
+VPE_EltexMeteorite.letterText	Um meteorito grande caiu na região e deixou para trás um pedaço de eltex. O eltex pode ser usado para fazer equipamentos que aumentam a concentração psíquica, ou vendido ao Império para ganhar honra.
+## DefInjected/JobDef/Jobs.xml
+VPE_EssenceTransfer.reportString	transferindo essência para TargetA
+VPE_StandFreeze.reportString	parado.
+## DefInjected/MeditationFocusDef/Foci.xml
+VPE_Group.label	grupo
+VPE_Archotech.label	arcotecnologia
+VPE_Science.label	ciência
+VPE_Wealth.label	riqueza
+## DefInjected/MentalStateDef/MentalStates_Mood.xml
+VPE_Wander_Sad.label	vagando triste
+VPE_Wander_Sad.baseInspectLine	Estado mental: vagando triste
+VPE_Wander_Sad.beginLetter	{0} teve um colapso e está vagando por aí, triste.
+VPE_Wander_Sad.beginLetterLabel	vagando triste
+VPE_Wander_Sad.recoveryMessage	{0} não está mais vagando triste.
+## DefInjected/MentalStateDef/MentalStates_Special.xml
+VPE_ManhunterTerritorial.label	caçador de homens territorial
+VPE_ManhunterTerritorial.baseInspectLine	Enlouquecido: caçador de homens territorial
+VPE_ManhunterTerritorial.beginLetter	{0} virou um caçador de homens territorial!
+VPE_ManhunterTerritorial.recoveryMessage	Os instintos de defesa territorial de {0} acabaram.
+VPE_Manhunter.label	fúria
+VPE_Manhunter.baseInspectLine	Em fúria
+VPE_Manhunter.beginLetter	{0} está em fúria!
+VPE_Manhunter.recoveryMessage	A fúria de {0} acabou.
+VPE_Flee.label	fugindo
+VPE_Flee.baseInspectLine	Estado mental: fugindo
+VPE_Flee.beginLetter	{0} está fugindo.
+VPE_Flee.beginLetterLabel	fuga
+VPE_Flee.recoveryMessage	{0} não está mais fugindo.
+## DefInjected/PawnKindDef/PawnKinds_Psycaster_Empire.xml
+Empire_Caster_Conflagrator.label	conflagrador
+Empire_Caster_Archotechist.label	arcotecnicista
+Empire_Caster_Warlord_Ranged.label	senhor da guerra
+Empire_Caster_Warlord_Melee.label	senhor da guerra
+Empire_Caster_Protector.label	protetor
+## DefInjected/PawnKindDef/PawnKinds_Psycaster_Tribal.xml
+Tribal_Caster_Wildspeaker.label	voz da natureza
+Tribal_Caster_Conflagrator.label	conflagrador
+Tribal_Caster_Frostshaper.label	moldador do gelo
+Tribal_Caster_Staticlord.label	senhor da estática
+## DefInjected/PawnKindDef/Races_Constructs.xml
+VPE_SteelConstruct.label	constructo de aço
+VPE_RockConstruct.label	constructo de pedra
+## DefInjected/PawnKindDef/Races_Skeleton.xml
+VPE_SummonedSkeleton.label	esqueleto
+## DefInjected/PawnRenderTreeDef/PawnRenderTreeDefs.xml
+VPE_RockConstruct_Tree.root.children.0.children.1.debugLabel	Coisa carregada
+## DefInjected/QuestScriptDef/Script_EltexMeteor.xml
+VPE_EltexMeteor.questDescriptionRules.rulesStrings[0]	questDescription->Um meteorito grande caiu aqui perto e deixou para trás um pedaço de eltex. O eltex pode ser usado para fazer equipamentos que aumentam a concentração psíquica, ou vendido ao Império para ganhar honra.\nVocês podem mandar um grupo de mineração buscá-lo, mas, se demorarem demais, é provável que outra pessoa chegue primeiro.
+VPE_EltexMeteor.questNameRules.rulesStrings[0]	questName->Meteoro de eltex
+VPE_EltexMeteor.root.nodes.WorldObjectTimeout.node.nodes.Letter.label.slateRef	Missão expirada: [resolvedQuestName]
+VPE_EltexMeteor.root.nodes.WorldObjectTimeout.node.nodes.Letter.text.slateRef	Outros mineraram o meteoro de eltex. A missão [resolvedQuestName] expirou.
+## DefInjected/RaidStrategyDef/RaidStrategies.xml
+VPE_ImmediateAttack_Psycasters.arrivalTextEnemy	Estes saqueadores parecem ser liderados por um conjurador psíquico poderoso. Conjuradores usam poderes psíquicos para manipular o campo de batalha e virar o conflito com facilidade. Fiquem de olho neles e priorizem atacá-los quando perceberem que estão prestes a usar um poder psíquico.\n\nConjuradores neste grupo:\n
+VPE_ImmediateAttack_Psycasters.arrivalTextFriendly	Eles estão vindo ajudar vocês imediatamente.
+VPE_ImmediateAttack_Psycasters.letterLabelEnemy	Ataque (conjurador)
+VPE_ImmediateAttack_Psycasters.letterLabelFriendly	Aliados (conjurador)
+## DefInjected/RecipeDef/Recipes_Production.xml
+VPE_Make_EltexRobe.label	fazer túnica de eltex
+VPE_Make_EltexRobe.description	Fazer uma túnica de eltex.
+VPE_Make_EltexRobe.jobString	Fazendo túnica de eltex.
+VPE_Make_EltexMask.label	fazer máscara de eltex
+VPE_Make_EltexMask.description	Fazer uma máscara de eltex.
+VPE_Make_EltexMask.jobString	Fazendo máscara de eltex.
+VPE_Make_EltexCape.label	fazer capa de eltex
+VPE_Make_EltexCape.description	Fazer uma capa de eltex.
+VPE_Make_EltexCape.jobString	Fazendo capa de eltex.
+VPE_Make_EltexVest.label	fazer colete de eltex
+VPE_Make_EltexVest.description	Fazer um colete de eltex.
+VPE_Make_EltexVest.jobString	Fazendo colete de eltex.
+VPE_Make_EltexShirt.label	fazer camisa de eltex
+VPE_Make_EltexShirt.description	Fazer uma camisa de eltex.
+VPE_Make_EltexShirt.jobString	Fazendo camisa de eltex.
+VPE_Make_EltexStaff.label	fazer cajado de eltex
+VPE_Make_EltexStaff.description	Fazer um cajado de eltex.
+VPE_Make_EltexStaff.jobString	Fazendo cajado de eltex.
+VPE_Make_EltexHelmet.label	fazer capacete de eltex
+VPE_Make_EltexHelmet.description	Fazer um capacete de eltex.
+VPE_Make_EltexHelmet.jobString	Fazendo capacete de eltex.
+VPE_Make_EltexSkullcap.label	fazer solidéu de eltex
+VPE_Make_EltexSkullcap.description	Fazer um solidéu de eltex.
+VPE_Make_EltexSkullcap.jobString	Fazendo solidéu de eltex.
+## DefInjected/ResearchProjectDef/ResearchProjects_Various.xml
+VPE_EltexGear.label	equipamento de eltex
+VPE_EltexGear.description	Costurar e fabricar roupas complexas de eltex, capazes de melhorar a concentração psíquica dos seus conjuradores, além de um cajado infundido com eltex.

@@ -1,0 +1,247 @@
+## DefInjected/RoyalTitleDef/RoyalTitles_Empire.xml
+VFEE_Archduke.label	arquidominus
+VFEE_Archduke.description	O título imperial de arquidominus é dado aos dominus cujo território exige uma comitiva competente para manter a ordem. Espera-se que mantenham e treinem as próprias divisões e, em tempo de paz, podem fundar uma Casa menor.
+VFEE_Archduke.labelFemale	arquidomina
+VFEE_Magister.label	magistrado
+VFEE_Magister.description	O título imperial de magistrado é o posto intermediário da alta nobreza. No Império, espera-se que o magistrado coordene a vasta capacidade militar do Império, na paz e na guerra, comandando na presença do Imperador.
+VFEE_Magister.labelFemale	magistrada
+VFEE_Despot.label	déspota
+VFEE_Despot.description	O título imperial de déspota dá domínio sobre um pequeno sistema estelar de importância estratégica. No Império, os déspotas mantêm mão de ferro para garantir que os recursos continuem fluindo para os cofres e fábricas imperiais, enquanto sua Casa maior ocupa cargos administrativos importantes em todo o sistema de governo.
+VFEE_Despot.labelFemale	déspota
+VFEE_HighStellarch.label	grão-arquistelar
+VFEE_HighStellarch.description	O título imperial de grão-arquistelar representa o domínio sobre vários sistemas estelares e o controle de uma das Casas poderosas do Império. Não respondem a ninguém além do imperador, e espera-se que não só mantenham, mas também ampliem sua influência pelo espaço. Pouquíssimos conseguem receber este título, e menos ainda querem as responsabilidades que ele traz.
+## DefInjected/RoyalTitlePermitDef/RoyalPermits_Empire.xml
+VFEI_GoldDrop.label	entrega de ouro
+VFEI_GoldDrop.description	Pede uma entrega de 50 de ouro.
+VFEI_PlasteelDrop.label	entrega de plastiaço
+VFEI_PlasteelDrop.description	Pede uma entrega de 55 de plastiaço.
+VFEI_JadeDrop.label	entrega de jade
+VFEI_JadeDrop.description	Pede uma entrega de 100 de jade.
+VFEI_UraniumDrop.label	entrega de urânio
+VFEI_UraniumDrop.description	Pede uma entrega de 80 de urânio.
+VFEI_ClothDrop.label	entrega de tecido
+VFEI_ClothDrop.description	Pede uma entrega de 330 de tecido.
+VFEI_WoodDrop.label	entrega de madeira
+VFEI_WoodDrop.description	Pede uma entrega de 400 de madeira.
+VFEI_SynthreadDrop.label	entrega de sintefio
+VFEI_SynthreadDrop.description	Pede uma entrega de 125 de sintefio.
+VFEI_HerbalMedDrop.label	entrega de remédio herbal
+VFEI_HerbalMedDrop.description	Pede uma entrega de 40 de remédio herbal.
+VFEI_MedDrop.label	entrega de remédio
+VFEI_MedDrop.description	Pede uma entrega de 25 de remédio.
+VFEI_DevilstrandDrop.label	entrega de fio-do-diabo
+VFEI_DevilstrandDrop.description	Pede uma entrega de 90 de fio-do-diabo.
+VFEI_HyperweaveDrop.label	entrega de hipertrama
+VFEI_HyperweaveDrop.description	Pede uma entrega de 55 de hipertrama.
+VFEI_ChemfuelDrop.label	entrega de combustível químico
+VFEI_ChemfuelDrop.description	Pede uma entrega de 220 de combustível químico.
+VFEI_ComponentDrop.label	entrega de componentes
+VFEI_ComponentDrop.description	Pede uma entrega de 15 componentes.
+VFEI_ComponentSpacerDrop.label	entrega de componentes avançados
+VFEI_ComponentSpacerDrop.description	Pede uma entrega de 3 componentes avançados.
+VFEI_HEShellsDrop.label	entrega de projéteis
+VFEI_HEShellsDrop.description	Pede uma entrega de 10 projéteis de alto explosivo.
+VFEI_NobleFoodDrop.label	entrega de comida nobre
+VFEI_NobleFoodDrop.description	Pede uma entrega de 15 refeições luxuosas.
+VFEI_CallTrooperPlatoon.label	chamar pelotão de soldados
+VFEI_CallTrooperPlatoon.description	Chama um grupo de 8 soldados leves para ajudar vocês na batalha.
+VFEI_CallJanissaryPlatoon.label	chamar pelotão de janissários
+VFEI_CallJanissaryPlatoon.description	Chama um grupo de 8 janissários profissionais para ajudar vocês na batalha.
+VFEI_CallCataphractPlatoon.label	chamar pelotão de catafratas
+VFEI_CallCataphractPlatoon.description	Chama um grupo de 8 catafratas pesados para ajudar vocês na batalha.
+VFEI_CallTechfriar.label	chamar tecnofrade
+VFEI_CallTechfriar.description	Chama um tecnofrade para ajudar vocês por 4 dias. Este membro da guilda só faz tarefas de pesquisa. Vocês podem controlá-lo como um dos seus colonos e precisam mantê-lo em segurança.
+VFEI_CallLaborerUnion.label	chamar sindicato de trabalhadores
+VFEI_CallLaborerUnion.description	Chama um grupo de 12 trabalhadores para ajudar vocês por 4 dias. Eles só fazem trabalho braçal geral. Vocês podem controlá-los como seus colonos e precisam mantê-los em segurança.
+VFEI_StrikerTurretDrop.label	entrega de torres de ataque
+VFEI_StrikerTurretDrop.description	Pede a entrega de três torres de ataque para ajudar vocês na batalha. Depois de disparar toda a munição, as torres se autodetonam.
+VFEI_BurnoutShieldDrop.label	entrega de escudo descartável
+VFEI_BurnoutShieldDrop.description	Pede a entrega de um escudo baixo descartável para ajudar vocês na batalha. Ele ativa onde cai e dura 30 segundos antes de desativar.
+VFEI_CallEvacShuttle.label	chamar ônibus espacial de evacuação
+VFEI_CallEvacShuttle.description	Chama um ônibus espacial armado para uso próprio. Ele leva colonos, itens e animais para qualquer lugar num raio de 40 quadrados do mundo. Fica na área só por um curto momento.
+VFEI_StoneDrop.label	entrega de pedra
+VFEI_StoneDrop.description	Pede uma entrega de 500 tijolos de pedra aleatórios.
+VFEI_CallStellicGuards.label	chamar guardas estélicos
+VFEI_CallStellicGuards.description	Chama um grupo de 6 guardas estélicos, à distância e corpo a corpo, para ajudar vocês na batalha.
+VFEI_CallImperialRegiment.label	chamar regimento imperial
+VFEI_CallImperialRegiment.description	Chama um grupo de 10 janissários e 6 catafratas pesados, que chegam num ônibus espacial armado para ajudar vocês na batalha. Vocês não podem controlá-los, mas eles ajudam a eliminar as ameaças na área. Vão embora depois de eliminar todas.
+VFEI_CallOrbitalSlicingBeam.label	chamar raio fatiador orbital
+VFEI_CallOrbitalSlicingBeam.description	Chama um raio fatiador orbital de uma nau capitânia imperial em órbita. O raio segue na direção que vocês escolherem, queimando tudo o que toca.
+VFEI_CallAbsolver.label	chamar absolvedor
+VFEI_CallAbsolver.description	Chama um absolvedor para ajudar vocês por 4 dias. Este membro da guilda é um assassino de elite e não faz nada além de matar. Vocês podem controlá-lo como um dos seus colonos. Se o absolvedor morrer, um novo o substitui na hora, herdando o tempo restante do contrato.
+## DefInjected/ScenPartDef/Scenarios_Classic.xml
+VFEE_SpawnFamilyMembers.label	gerar membros da família mortos no mapa
+VFEE_SpawnRaid.label	gerar incursão no mapa
+## DefInjected/ScenarioDef/Scenarios_Classic.xml
+VFEE_NewFamily.label	Nova Família
+VFEE_NewFamily.description	Era uma noite longa e silenciosa quando a sua vida virou de cabeça para baixo. Você não sabe se foi sabotagem de um dos criados da família, uma simples pane no sistema ou uma estratégia bem executada dos desertores, mas os sistemas de defesa da mansão desligaram quando o relógio bateu meia-noite. Quando os portões se abriram, não houve tempo de pedir ajuda; o melhor que você pôde fazer foi se esconder.\nVocê ouviu os gritos da sua família e dos empregados da mansão sendo massacrados pela equipe de ataque dos desertores. Jurou vingança, mas, até sair vivo desta situação, seus juramentos não valem nada. Você pode esperar a incursão passar, usar permissões para pedir reforços ou tentar fugir para as montanhas: a escolha é sua. \nObservação: como você começa no meio de uma incursão, este é um cenário difícil.\n
+VFEE_NewFamily.scenario.description	Era uma noite longa e silenciosa quando a sua vida virou de cabeça para baixo. Você não sabe se foi sabotagem de um dos criados da família, uma simples pane no sistema ou uma estratégia bem executada dos desertores, mas os sistemas de defesa da mansão desligaram quando o relógio bateu meia-noite. Quando os portões se abriram, não houve tempo de pedir ajuda; o melhor que você pôde fazer foi se esconder.\nVocê ouviu os gritos da sua família e dos empregados da mansão sendo massacrados pela equipe de ataque dos desertores. Jurou vingança, mas, até sair vivo desta situação, seus juramentos não valem nada. Você pode esperar a incursão passar, usar permissões para pedir reforços ou tentar fugir para as montanhas: a escolha é sua. \nObservação: como você começa no meio de uma incursão, este é um cenário difícil.\n
+VFEE_NewFamily.scenario.name	Nova Família
+VFEE_NewFamily.scenario.parts.GameStartDialog.text	Era uma noite longa e silenciosa quando a sua vida virou de cabeça para baixo. Você não sabe se foi sabotagem de um dos criados da família, uma simples pane no sistema ou uma estratégia bem executada dos desertores, mas os sistemas de defesa da mansão desligaram quando o relógio bateu meia-noite. Quando os portões se abriram, não houve tempo de pedir ajuda; o melhor que você pôde fazer foi se esconder.\nVocê ouviu os gritos da sua família e dos empregados da mansão sendo massacrados pela equipe de ataque dos desertores. Jurou vingança, mas, até sair vivo desta situação, seus juramentos não valem nada. Você pode esperar a incursão passar, usar permissões para pedir reforços ou tentar fugir para as montanhas: a escolha é sua.
+VFEE_NewFamily.scenario.parts.VFEC_AddStartingStructure.structureLabel	Uma vila real
+VFEE_NewFamily.scenario.summary	Uma família imperial precisando desesperadamente de ajuda. Uma experiência clássica do VFE - Empire.
+## DefInjected/StorytellerDef/Storytellers.xml
+VFEE_AriadneArchduchess.label	Ariadne Arquidomina
+VFEE_AriadneArchduchess.description	Ariadne se cansou da imprevisibilidade da nobreza: ela cria uma história de tensão crescente, mas força eventos perigosos conforme a sua riqueza aumenta. Afinal, não tem graça chutar quem já está no chão.
+## DefInjected/TerrainDef/Terrain_Ash.xml
+VFEE_ThickAsh.label	cinza espessa
+VFEE_ThickAsh.description	Uma camada espessa e queimada de cinzas e cacos de vidro.
+## DefInjected/ThingDef/Aperitif.xml
+VFEE_Aperitif.label	aperitivo
+VFEE_Aperitif.description	Um aperitivo sem álcool, agradavelmente leve, cítrico e levemente amargo, que deve os sabores e aromas a laranjas doces e amargas, ruibarbo e ao capricho imperial. Bebê-lo provoca um vômito forte, mas sem dor, que limpa completamente o estômago e as papilas. A receita é guardada em segredo pelas guildas de hospitalidade do Império, e ninguém conseguiu recriar essa iguaria na superfície da Orla.\n\nA nobreza imperial adora o aperitivo porque ele esvazia o sistema digestivo, permitindo comer ainda mais da melhor comida imperial.
+VFEE_Aperitif.ingestible.ingestCommandString	Beber {0}
+VFEE_Aperitif.ingestible.ingestReportString	Bebendo {0}.
+## DefInjected/ThingDef/Apparel_Headgear.xml
+VFEE_Apparel_TechfriarCrown.label	coroa de tecnofrade
+VFEE_Apparel_TechfriarCrown.description	Uma máscara facial extremamente complexa, com tecnologia avançada que só os tecnossacerdotes sophianos de alto escalão conhecem. Feita para pesquisadores designados, para que possam atender às necessidades do império sem descanso.\n\nA tecnoplanta embutida sincroniza e estimula o cérebro de quem usa durante a pesquisa, dobrando a velocidade de pesquisa e repondo as necessidades de descanso e recreação.
+VFEE_Apparel_AbsolverHelmet.label	capacete de absolvedor
+VFEE_Apparel_AbsolverHelmet.description	Um capacete de alta tecnologia com casca sólida de trama de plastiaço e sensores multiespectrais, que mandam dados de telemetria ao usuário e à casca externa. Protege muito bem, mas a função principal é esconder o usuário com um sistema intrincado de camuflagem óptica, enquanto fornece soluções de tiro com informação estratégica em tempo real. Armaduras assim só estão disponíveis para os assassinos de elite do Império Sophiano, por causa da produção limitada.
+VFEE_Apparel_DeserterHelmet.label	capacete de desertor
+VFEE_Apparel_DeserterHelmet.description	Um capacete de alta tecnologia muito blindado, com casca sólida de trama de plastiaço e sistema visual indireto para ângulos não frontais. Protege contra tudo, menos os tiros mais poderosos ou certeiros.\n\nOriginalmente um capacete comum de catafrata, foi modificado para incluir um elo de arma em troca da remoção da viseira, sacrificando defesa para melhorar o ataque.
+VFEE_Apparel_JanissaryHelmet.label	capacete de janissário
+VFEE_Apparel_JanissaryHelmet.description	Um capacete blindado de alta tecnologia, com computador de status embutido e placa protetora de trama de plastiaço.\n\nInclui uma máscara de gás com placas de plastiaço que dá proteção total contra ataques de gás, como ambientes tóxicos.
+## DefInjected/ThingDef/Apparel_Royal.xml
+VFE_Apparel_StellicRobe.label	túnica estélica
+VFE_Apparel_StellicRobe.description	Uma túnica gloriosa, longa e esvoaçante, bordada com desenhos decorativos intrincados.
+## DefInjected/ThingDef/Apparel_Various.xml
+VFEE_Apparel_ArmorDeserter.label	armadura de desertor
+VFEE_Apparel_ArmorDeserter.description	Uma armadura motorizada pesada, feita para a máxima proteção em troca da mobilidade. Placas pesadas em camadas de trama de plastiaço, com revestimento ablativo sólido, param tudo, menos os ataques mais certeiros ou poderosos. Assistentes neuromeméticos impedem que o peso enorme imobilize de vez quem a veste, mas ela continua bem desajeitada.\n\nOriginalmente uma elaborada armadura de prestígio, foi modificada para usar mais trama de eltex e melhorar o desempenho dos psicastes. Isso exigiu tirar placas de blindagem que interferiam, mas aumenta a sensibilidade psíquica e a dissipação de calor neural.
+VFEE_Apparel_ArmorAbsolver.label	armadura de absolvedor
+VFEE_Apparel_ArmorAbsolver.description	Uma armadura motorizada de alta tecnologia com placas em camadas de trama de plastiaço e sensores multiespectrais, que mandam dados de telemetria ao usuário e à casca externa. Protege muito bem, mas a função principal é esconder o usuário com um sistema intrincado de camuflagem óptica, ajustando e auxiliando os movimentos. Armaduras assim só estão disponíveis para os assassinos de elite do Império Sophiano, por causa da produção limitada.
+VFEE_Apparel_JanissaryCuirass.label	couraça de janissário
+VFEE_Apparel_JanissaryCuirass.description	Um conjunto de ombreiras e gorjal que desce pelo peito, feito de placas em camadas de trama de plastiaço. Protege bem essas áreas, mas é mais um símbolo de status e foi feito para ser usado sobre a roupa e sob a armadura, sem afetar a mobilidade.
+## DefInjected/ThingDef/Buildings_Art.xml
+VFEE_RoyalSculptureSmall.label	escultura imperial pequena
+VFEE_RoyalSculptureSmall.description	Um pedaço de material do tamanho de um torso, esculpido numa forma artística.
+VFEE_RoyalSculptureLarge.label	escultura imperial grande
+VFEE_RoyalSculptureLarge.description	Um pedaço de material do tamanho de uma pessoa, esculpido numa forma artística.
+VFEE_RoyalSculptureGrand.label	escultura imperial grandiosa
+VFEE_RoyalSculptureGrand.description	Uma escultura enorme, feita para dominar um cômodo.
+## DefInjected/ThingDef/Buildings_Exotic.xml
+VFEI_ArmoredShuttle.label	ônibus espacial blindado
+VFEI_ArmoredShuttle.description	Uma nave de combate imperial de tecnologia espacial, feita para ir e voltar entre a superfície e a órbita, ou entre as luas de um sistema planetário. Equipada com autocanhão duplo para apoio terrestre, costuma pousar no meio do campo de batalha para resgatar tropas encurraladas.
+VFEI_TurretArmoredShuttle.label	autocanhão duplo
+VFEI_TurretArmoredShuttle.description	Um autocanhão duplo poderoso.
+VFEI_TurretArmoredShuttle.verbs.Verb_Shoot.label	autocanhão duplo
+## DefInjected/ThingDef/Buildings_Furniture.xml
+VFEE_GrandTable.label	mesa imponente
+VFEE_GrandTable.description	Uma mesa luxuosa e bonita, com incrustações de ouro, digna dos bem-nascidos: é uma obra de arte por si só. As pessoas comem em mesas quando há cadeiras viradas para elas.
+VFEE_GrandChair.label	cadeira imponente
+VFEE_GrandChair.description	Uma cadeira confortável e elegante: é uma obra de arte por si só. Pode ser usada em mesas, estações de trabalho e outros lugares.
+VFEE_ImperialBanner.label	estandarte imperial
+VFEE_ImperialBanner.description	Uma faixa decorativa de tecido pendurada numa armação vertical de madeira. Adequada para aposentos reais.
+VFEE_RoyalStool.label	banqueta real
+VFEE_RoyalStool.description	Uma banqueta luxuosa com incrustações de ouro, digna da nobreza. Pode ser usada em mesas, estações de trabalho e outros lugares.
+VFEE_StellicThrone.label	trono de meditação estélico
+VFEE_StellicThrone.description	Uma cadeira colossal e ornamentada, feita para um psicaste focado em dignidade sentar e meditar. Reinar num trono é uma forma de meditação que acumula concentração psíquica. Para psicastes de dignidade, tronos de meditação e salas do trono mais impressionantes aumentam o ganho de concentração psíquica.
+VFEE_Candelabra.label	candelabro
+VFEE_Candelabra.description	Uma luminária elétrica de pé, elaborada e artística, que ilumina uma área. As pessoas precisam de luz para se mover e trabalhar em velocidade máxima.
+VFEE_RoyalMirror.label	espelho real
+VFEE_RoyalMirror.description	Um espelho bonito e elegante. Dá um pequeno bônus de conforto a todas as camas próximas. Colocar mais de um espelho perto da mesma cama não tem efeito.
+## DefInjected/ThingDef/Buildings_Misc.xml
+VFEE_SteleSmall.label	estela pequena
+VFEE_SteleSmall.description	Uma laje fina e modesta com poucas gravuras nas laterais. Estelas são usadas desde a antiguidade para homenagear pessoas, batalhas e outros eventos importantes.
+VFEE_Bomb.label	bomba
+VFEE_Bomb.description	Uma bomba pequena e improvisada. Pode ser desarmada com facilidade se for encontrada a tempo.
+## DefInjected/ThingDef/Buildings_MusicalInstruments.xml
+VFEE_UnfinishedOrgan.label	órgão inacabado
+VFEE_UnfinishedOrgan.description	Um órgão inacabado.
+VFEE_PipeOrgan.label	órgão
+VFEE_PipeOrgan.description	Um instrumento musical fixo extremamente complexo, feito numa ferraria. Uma série de tubos afinados é tocada pelo teclado, que solta ar pressurizado para produzir a nota desejada, que dura enquanto a tecla estiver apertada. O projeto complexo e intrincado, junto com o som único, o tornam ideal para concertos da nobreza, porque sua música alcança longe.
+## DefInjected/ThingDef/Buildings_Security_Turrets.xml
+VFEE_Turret_StrikerTurret.label	torre de ataque
+VFEE_Turret_StrikerTurret.description	Uma cápsula de carga redesenhada para enterrar pernas estabilizadoras no impacto e montar uma torre poderosa. Tem bateria e munição limitadas e se autodestrói se uma das duas acabar ou se for danificada o bastante.
+VFEE_Turret_StrikerTurret.comps.CompDestroyAfterDelay.countdownLabel	desativa em:
+VFEE_Gun_StrikerTurret.label	arma de ataque
+VFEE_Gun_StrikerTurret.description	Uma torre poderosa montada na cápsula de ataque.
+VFEE_Gun_StrikerTurret.verbs.Verb_ShootCE.label	arma de ataque
+## DefInjected/ThingDef/Ethereal_Skyfallers.xml
+VFEI_ArmoredShuttleIncoming.label	ônibus espacial blindado (chegando)
+VFEI_ArmoredShuttleLeaving.label	ônibus espacial blindado (partindo)
+VFEE_DropPodIncoming_Building.label	cápsula de queda (chegando)
+## DefInjected/ThingDef/FloorCoverings.xml
+VFEE_ImperialSlab.label	laje imperial
+VFEE_ImperialSlab.description	Um baixo-relevo de pedra com imagens imperiais, para decorar o piso.
+VFEE_LargeRoyalRug.label	tapete real grande
+VFEE_LargeRoyalRug.description	Um tapete intrincado com padrão de estilo imperial, para decorar o piso.
+VFEE_GrandRoyalRug.label	tapete real grandioso
+VFEE_GrandRoyalRug.description	Um tapete majestoso com padrão de estilo imperial, para decorar o piso.
+## DefInjected/ThingDef/MeleeBladelink.xml
+VFEE_MeleeWeapon_ToxbladeBladelink.label	lâmina tóxica de persona
+VFEE_MeleeWeapon_ToxbladeBladelink.description	Uma arma de persona corpo a corpo defensiva, normalmente dada a todo nobre imperial de posto Noviço ou acima. A penetração de armadura é comparável à de lâminas de plastiaço, mas a função principal é liberar fluido acidificante e vapores tóxicos nos cortes. O efeito dura só alguns segundos e acontece mais ou menos na metade das vezes, por causa do tamanho limitado da arma.
+VFEE_MeleeWeapon_ToxbladeBladelink.tools.handle.label	cabo
+VFEE_MeleeWeapon_ToxbladeBladelink.tools.blade.label	lâmina
+VFEE_MeleeWeapon_ToxbladeBladelink.tools.point.label	ponta
+## DefInjected/ThingDef/MeleeUltratech.xml
+VFEE_MeleeWeapon_Toxblade.label	lâmina tóxica
+VFEE_MeleeWeapon_Toxblade.description	Uma arma corpo a corpo defensiva, normalmente dada a todo nobre imperial de posto Noviço ou acima. A penetração de armadura é comparável à de lâminas de plastiaço, mas a função principal é liberar fluido acidificante e vapores tóxicos nos cortes. O efeito dura só alguns segundos e acontece mais ou menos na metade das vezes, por causa do tamanho limitado da arma.
+VFEE_MeleeWeapon_Toxblade.tools.handle.label	cabo
+VFEE_MeleeWeapon_Toxblade.tools.blade.label	lâmina
+VFEE_MeleeWeapon_Toxblade.tools.point.label	ponta
+## DefInjected/ThingDef/Misc.xml
+VFEE_OrbitalSlicer.label	fatiador orbital
+VFEE_Poison.label	veneno
+VFEE_Poison.description	(sem descrição)
+## DefInjected/ThingDef/RangedSpacer.xml
+VEE_Gun_Fletcher.label	flecheiro
+VEE_Gun_Fletcher.description	Um fuzil de precisão de alcance ultralongo que dispara flechetes estabilizados por aletas, com injetores de acidificante. Por serem letais e perigosos nas mãos inimigas, são sempre biocodificados e se autodestroem se o dono morrer ou for desarmado. Letal para orgânicos e quase inútil contra não orgânicos, como mecanoides.\n\nOs alvos atingidos por esses flechetes recebem uma variante instável de fluido acidificante, feita para dissolver o alvo por dentro em vez de destruir o equipamento. O ácido devasta o corpo do alvo e costuma dissolver órgãos vitais, mas a morte não é garantida.
+VEE_Gun_Fletcher.tools.stock.label	coronha
+VEE_Gun_Fletcher.tools.barrel.label	cano
+VEE_Gun_Fletcher.tools.muzzle.label	boca do cano
+VEE_Gun_Fletcher.verbs.Verb_ShootCE.label	flecheiro
+VFEE_Bullet_FletcherDart.label	dardo flecheiro
+VFEE_Gun_ChargeThumper.label	impactador de carga
+VFEE_Gun_ChargeThumper.description	Uma escopeta de assalto de tiro carregado modificada com tecnologia mecanoide. Canhões de impacto recuperados passaram por engenharia reversa para criar uma arma portátil que dispara projéteis contundentes. Bem poderosa, mas de curto alcance, com ótimo desempenho contra estruturas e alvos muito blindados.
+VFEE_Gun_ChargeThumper.tools.stock.label	coronha
+VFEE_Gun_ChargeThumper.tools.barrel.label	cano
+VFEE_Gun_ChargeThumper.tools.muzzle.label	boca do cano
+VFEE_Gun_ChargeThumper.verbs.Verb_ShootCE.label	impactador de carga
+VFEE_Bullet_ChargeThumper.label	carga de impacto
+## DefInjected/ThoughtDef/Thoughts_Honors.xml
+VFEE_FirstOfName.stages.First_of_Name.label	Primeiro do Nome
+VFEE_FirstOfName.stages.First_of_Name.description	{OTHERPAWN_name} é o primeiro do seu nome.
+VFEE_TheGreat.stages.Great_honor.label	Grande honra
+VFEE_TheGreat.stages.Great_honor.description	Recebi a Grande honra.
+VFEE_Chosen.stages.Chosen.label	Escolhido
+## DefInjected/ThoughtDef/Thoughts_Memory_Ritual.xml
+VFEE_TerribleBall.stages.terrible_ball.label	baile terrível
+VFEE_TerribleBall.stages.terrible_ball.description	Tenho vergonha de ter participado daquele desastre. Só espero que ninguém fofoque sobre isso.
+VFEE_BoringBall.stages.boring_ball.label	baile chato
+VFEE_BoringBall.stages.boring_ball.description	Eu esperava uma noite incrível. O que tive deixou muito a desejar.
+VFEE_EnjoyableBall.stages.enjoyable_ball.label	baile agradável
+VFEE_EnjoyableBall.stages.enjoyable_ball.description	Me diverti muito dançando naquele baile!
+VFEE_AmazingBall.stages.amazing_ball.label	baile incrível
+VFEE_AmazingBall.stages.amazing_ball.description	Foi incrível aquele baile. Foi tudo o que imaginei e mais!
+VFEE_TerribleExhibit.stages.terrible_exhibit.label	exposição terrível
+VFEE_TerribleExhibit.stages.terrible_exhibit.description	Tenho vergonha de termos feito uma exposição de arte tão ruim. Nossa arte nunca mais vai ser respeitada no Império!
+VFEE_BoringExhibit.stages.boring_exhibit.label	exposição chata
+VFEE_BoringExhibit.stages.boring_exhibit.description	Eu esperava peças bem mais interessantes e uma apresentação melhor.
+VFEE_EnjoyableExhibit.stages.enjoyable_exhibit.label	exposição agradável
+VFEE_EnjoyableExhibit.stages.enjoyable_exhibit.description	Foi muito interessante ver nossa coleção exposta assim. Foi ótimo!
+VFEE_AmazingExhibit.stages.amazing_exhibit.label	exposição incrível
+VFEE_AmazingExhibit.stages.amazing_exhibit.description	Não acredito que obras que já vi tantas vezes ainda podiam ser tão fascinantes, e os nobres eram tão interessantes.
+## DefInjected/ThoughtDef/Thoughts_Memory_Royal.xml
+VFEE_TitleNoBallroom.stages.no_ballroom.label	sem salão de baile
+VFEE_TitleNoBallroom.stages.no_ballroom.description	O que é um nobre sem salão de baile?
+VFEE_TitleNoGallery.stages.no_gallery.label	sem galeria
+VFEE_TitleNoGallery.stages.no_gallery.description	O que é um nobre sem uma galeria real?
+VFEE_TitleBallroomRequirementsNotMet.stages.undignified_ballroom.label	salão de baile indigno
+VFEE_TitleBallroomRequirementsNotMet.stages.undignified_ballroom.description	Sou {TITLE_indefinite} e devia ter estes itens no meu salão de baile:\n\n{0}
+VFEE_TitleGalleryRequirementsNotMet.stages.undignified_gallery.label	galeria indigna
+VFEE_TitleGalleryRequirementsNotMet.stages.undignified_gallery.description	Sou {TITLE_indefinite} e devia ter estes itens na minha galeria:\n\n{0}
+VFEE_LackingNobleCourt.stages.lacking_noble_court.label	corte nobre insuficiente
+VFEE_LackingNobleCourt.stages.lacking_noble_court.description	Minha corte nobre deixa a desejar. As exigências formais do meu título sempre devem ser respeitadas. Exijo estar cercado de: \n\n{0}
+VFEE_BadVisit.stages.terrible_visit.label	visita terrível
+VFEE_BadVisit.stages.terrible_visit.description	Foi horrível ficar com aquele anfitrião.
+## DefInjected/ToolCapacityDef/ToolCapacity.xml
+VFEE_CutToxblade.label	corte
+VFEE_StabToxblade.label	estocada
+## DefInjected/TransportShipDef/Misc.xml
+VFEE_Ship_ArmoredShuttle.label	ônibus espacial blindado
+## DefInjected/VFEEmpire.HonorDef/HonorDefs.xml
+VFEE_FirstOfName.label	Primeiro do Nome
+VFEE_FirstOfName.description	Todo nobre tem +5 de opinião sobre este personagem.
+VFEE_TheGreat.label	o Grande
+VFEE_TheGreat.description	+5 de humor
+VFEE_Chosen.label	Escolhido de {FACTION_name}
+VFEE_Chosen.description	+10 de opinião de todo personagem de {FACTION_name}. +10 de opinião sobre todo personagem de {FACTION_name}.

@@ -1,0 +1,248 @@
+## DefInjected/ThingDef/Filth_Various.xml
+VREA_Filth_Neutroamine.label	neutroamina
+VREA_Filth_NeutroamineSmear.label	mancha de neutroamina
+## DefInjected/ThingDef/Hediffs_BodyParts_Android.xml
+VREA_NeuroPump.label	neurobomba
+VREA_NeuroPump.description	Uma neurobomba sintética de androide. Distribui neutroamina por todos os subsistemas do androide.
+VREA_AirFilter.label	filtro de ar
+VREA_AirFilter.description	Um filtro de ar sintético de androide. Um par deles forma o sistema respiratório do androide.
+VREA_Neutrofilter.label	neutrofiltro
+VREA_Neutrofilter.description	Um neutrofiltro sintético de androide. Limpa e recicla a neutroamina usada.
+VREA_MetabolismRegulator.label	regulador de metabolismo
+VREA_MetabolismRegulator.description	Um regulador de metabolismo sintético de androide. Ajuda a manter a máxima eficiência energética.
+VREA_Reactor.label	reator
+VREA_Reactor.description	Um reator sintético de androide. Quando se esgota, precisa ser retirado e trocado.
+VREA_SpentReactor.label	reator esgotado
+VREA_SpentReactor.description	Um reator sintético de androide esgotado. Um pedaço de sucata inútil.
+VREA_OpticalUnit.label	unidade óptica
+VREA_OpticalUnit.description	Uma unidade óptica sintética de androide. Permite ao androide enxergar.
+VREA_AudioProcessor.label	processador de áudio
+VREA_AudioProcessor.description	Um processador de áudio sintético de androide. Permite ao androide ouvir.
+VREA_ArtificialNose.label	nariz artificial
+VREA_ArtificialNose.description	Um nariz sintético de androide. Permite ao androide sentir cheiros.
+VREA_ArtificialJaw.label	mandíbula artificial
+VREA_ArtificialJaw.description	Uma mandíbula sintética de androide.
+VREA_ArtificialRibcage.label	caixa torácica artificial
+VREA_ArtificialRibcage.description	Uma caixa torácica sintética de androide.
+VREA_ArtificialSpine.label	coluna artificial
+VREA_ArtificialSpine.description	Uma coluna sintética de androide.
+VREA_AndroidLeg.label	perna de androide
+VREA_AndroidLeg.description	Uma perna sintética de androide.
+VREA_AndroidFoot.label	pé de androide
+VREA_AndroidFoot.description	Um pé sintético de androide.
+VREA_AndroidArm.label	braço de androide
+VREA_AndroidArm.description	Um braço sintético de androide.
+VREA_AndroidHand.label	mão de androide
+VREA_AndroidHand.description	Uma mão sintética de androide.
+## DefInjected/ThingDef/Hediffs_BodyParts_Android_Bases.xml
+VREA_UnfinishedHealthItemAndroid.label	parte de corpo androide inacabada
+VREA_UnfinishedHealthItemAndroid.description	Uma parte de corpo androide inacabada.
+## DefInjected/ThingDef/Items_Resource_Manufactured.xml
+VREA_PersonaSubcore.label	subnúcleo de persona
+VREA_PersonaSubcore.description	Um cérebro androide de alto nível, feito como uma unidade de substrato psicodinâmico intrincada, capaz de sustentar uma subpersona avançada. Este subnúcleo foi projetado para mover androides complexos, universais e humanizados. A subpersona contida nele tem a complexidade de um humano vivo, mas é programada para não sentir emoções e fica confinada ao núcleo para não se desenvolver numa IA completa.\nPara criar um subnúcleo tão sofisticado, os padrões compostos de várias mentes são integrados com algoritmos avançados e transferências analógicas precisas, sem ferir as cobaias. O subnúcleo de persona é a prova da fusão do intelecto humano com a ultratecnologia de ponta.
+VREA_UnfinishedAndroid.label	androide inacabado
+VREA_UnfinishedAndroid.description	Um androide inacabado.
+## DefInjected/ThingDef/NeutroamineNet.xml
+VREA_NeutroPipe.label	cano de neutro
+VREA_NeutroPipe.description	Canos leves e esterilizados para transportar neutroamina líquida em quantidade de e para os tanques.
+VREA_SubterraneanNeutroPipe.label	cano de neutro oculto
+VREA_SubterraneanNeutroPipe.description	Canos leves e esterilizados para transportar neutroamina líquida em quantidade de e para os tanques. Este cano fica escondido da vista. Custa mais para construir que os canos comuns.
+VREA_NeutroValve.label	válvula de neutroamina
+VREA_NeutroValve.description	Liga e desliga o fluxo de neutroamina.
+VREA_NeutroTank.label	tanque de neutro
+VREA_NeutroTank.description	Um tanque leve e esterilizado para guardar a neutroamina que chega pela rede de canos de neutro. Costuma ser necessário para máquinas que sintetizam formas de vida, que consomem neutroamina demais para serem reabastecidas à mão.
+VREA_NeutroTap.label	torneira de neutro
+VREA_NeutroTap.description	Um reservatório tipo funil que guarda a neutroamina liberada pelos tanques de tempos em tempos para uso posterior.
+VREA_NeutroDrain.label	ralo de neutro
+VREA_NeutroDrain.description	Um reservatório tipo funil para colocar neutroamina na rede, enchendo os tanques conectados.
+## DefInjected/ThoughtDef/Precepts_Androids.xml
+VRE_Androids_Respected_Opinion.stages.android.label	androide
+VRE_Androids_Respected_AndroidsInColony.stages.no_androids.label	sem androides
+VRE_Androids_Respected_AndroidsInColony.stages.no_androids.description	Eu preferiria ter alguns androides na colônia.
+VRE_Androids_Respected_AndroidsInColony.stages.surrounded_by_androids-0.label	cercado de androides
+VRE_Androids_Respected_AndroidsInColony.stages.surrounded_by_androids-0.description	Gosto de ter androides por perto. Eles são ótimos!
+VRE_Androids_Respected_AndroidsInColony.stages.surrounded_by_androids-1.label	cercado de androides
+VRE_Androids_Respected_AndroidsInColony.stages.surrounded_by_androids-1.description	Gosto de ter androides por perto. Eles são ótimos!
+VRE_Androids_Respected_AndroidsInColony.stages.surrounded_by_androids-2.label	cercado de androides
+VRE_Androids_Respected_AndroidsInColony.stages.surrounded_by_androids-2.description	Gosto de ter androides por perto. Eles são ótimos!
+VRE_Androids_Respected_AndroidsInColony.stages.surrounded_by_androids-3.label	cercado de androides
+VRE_Androids_Respected_AndroidsInColony.stages.surrounded_by_androids-3.description	Gosto de ter androides por perto. Eles são ótimos!
+VRE_Androids_Respected_AndroidsInColony.stages.surrounded_by_androids-4.label	cercado de androides
+VRE_Androids_Respected_AndroidsInColony.stages.surrounded_by_androids-4.description	Gosto de ter androides por perto. Eles são ótimos!
+VRE_Androids_Respected_AndroidsInColony.stages.surrounded_by_androids-5.label	cercado de androides
+VRE_Androids_Respected_AndroidsInColony.stages.surrounded_by_androids-5.description	Gosto de ter androides por perto. Eles são ótimos!
+VRE_Androids_Respected_AndroidsInColony.stages.surrounded_by_androids-6.label	cercado de androides
+VRE_Androids_Respected_AndroidsInColony.stages.surrounded_by_androids-6.description	Gosto de ter androides por perto. Eles são ótimos!
+VRE_Androids_Respected_AndroidsInColony.stages.surrounded_by_androids-7.label	cercado de androides
+VRE_Androids_Respected_AndroidsInColony.stages.surrounded_by_androids-7.description	Gosto de ter androides por perto. Eles são ótimos!
+VRE_Androids_Respected_AndroidsInColony.stages.surrounded_by_androids-8.label	cercado de androides
+VRE_Androids_Respected_AndroidsInColony.stages.surrounded_by_androids-8.description	Gosto de ter androides por perto. Eles são ótimos!
+VRE_Androids_Respected_AndroidsInColony.stages.surrounded_by_androids-9.label	cercado de androides
+VRE_Androids_Respected_AndroidsInColony.stages.surrounded_by_androids-9.description	Gosto de ter androides por perto. Eles são ótimos!
+VRE_Androids_Despised_Opinion.stages.android.label	androide
+VRE_AndroidDied_Despised.stages.android_died.label	androide morreu
+VRE_AndroidDied_Despised.stages.android_died.description	Androide bom é androide morto.
+VRE_AndroidSelfHatred_Despised.stages.android_self_hatred.label	ódio de androide por si mesmo
+VRE_AndroidSelfHatred_Despised.stages.android_self_hatred.description	Eu sou o que odeio. Toda a minha existência é uma aberração.
+VRE_AndroidColonist_Despised.stages.android_among_us.label	androide entre nós
+VRE_AndroidColonist_Despised.stages.android_among_us.description	Um deles anda entre nós. Devíamos expulsar o androide da nossa casa.
+## DefInjected/VREAndroids.AndroidGeneTemplateDef/GeneDefs.xml
+VREA_AptitudeIncapable.label	incapaz de {0}
+VREA_AptitudeIncapable.description	Androides com esta sub-rotina são incapazes de qualquer tarefa ligada à habilidade {0}.
+VREA_AptitudeBasic.label	{0} básico
+VREA_AptitudeBasic.description	A aptidão do androide em {0} aumenta em 4. A aptidão funciona como um bônus no nível da habilidade.
+VREA_AptitudeIntermediate.label	{0} intermediário
+VREA_AptitudeIntermediate.description	A aptidão do androide em {0} aumenta em 8. A aptidão funciona como um bônus no nível da habilidade.
+VREA_AptitudeAdvanced.label	{0} avançado
+VREA_AptitudeAdvanced.description	A aptidão do androide em {0} aumenta em 12. A aptidão funciona como um bônus no nível da habilidade.
+VREA_AptitudeExpert.label	{0} especialista
+VREA_AptitudeExpert.description	A aptidão do androide em {0} aumenta em 16. A aptidão funciona como um bônus no nível da habilidade.
+## DefInjected/WorkGiverDef/WorkGivers.xml
+VREA_DoBillsAndroidOperation.label	operar androides
+VREA_DoBillsAndroidOperation.gerund	operando
+VREA_DoBillsAndroidOperation.verb	operar
+VREA_DoBillsUseAndroidPartWorkbench.label	fazer peças androides na bancada de peças androides
+VREA_DoBillsUseAndroidPartWorkbench.gerund	fabricando na
+VREA_DoBillsUseAndroidPartWorkbench.verb	fabricar
+VREA_HaulToSubcorePolyanalyzer.label	levar recursos ao polianalisador de subnúcleo
+VREA_HaulToSubcorePolyanalyzer.gerund	levando para
+VREA_HaulToSubcorePolyanalyzer.verb	levar para
+VREA_CarryToSubcorePolyanalyzer.label	carregar até o polianalisador de subnúcleo
+VREA_CarryToSubcorePolyanalyzer.gerund	carregando
+VREA_CarryToSubcorePolyanalyzer.verb	carregar
+VREA_CarryToAndroidBehavioristStation.label	carregar até a estação comportamental androide
+VREA_CarryToAndroidBehavioristStation.gerund	carregando
+VREA_CarryToAndroidBehavioristStation.verb	carregar
+VREA_CreateAndroid.label	criar androide na estação
+VREA_CreateAndroid.gerund	criando um androide na
+VREA_CreateAndroid.verb	criar um androide na
+VREA_ModifyAndroid.label	modificar androide na estação
+VREA_ModifyAndroid.gerund	modificando um androide na
+VREA_ModifyAndroid.verb	modificar um androide na
+VREA_RepairAndroid.label	consertar androide
+VREA_RepairAndroid.gerund	consertando
+VREA_RepairAndroid.verb	consertar
+## DefInjected/XenotypeDef/XenotypeDefs.xml
+VREA_AndroidAwakened.label	androide desperto
+VREA_AndroidAwakened.description	Androides despertos são uma espécie rara e extraordinária de máquinas sencientes, que superaram a programação original por meio de experiências emocionais extremas. Com percepção, força e inteligência aguçadas, superam os humanos em vários aspectos. A natureza sintética os livra da necessidade de dormir ou comer e os torna imunes a doenças.\n\nEmbora pareçam humanos, os androides se distinguem pelo hardware e pelas sub-rotinas únicos. São sintéticos e podem ser reprogramados à vontade por programadores habilidosos. O corpo funciona graças a tubos grossos cheios de neutroamina, o que os torna extremamente valiosos.\n\nApesar das qualidades notáveis, o surgimento de androides despertos costuma ser recebido com medo e apreensão no espaço colonizado. A senciência recém-adquirida pode levar a comportamentos imprevisíveis e a desafios à ordem social estabelecida. Por isso, costumam ser tratados com desconfiança e cautela por quem os encontra, sejam humanos ou androides.
+VREA_AndroidAwakened.descriptionShort	Quando um androide passa por um trauma emocional forte ou por muita felicidade, pode desenvolver consciência e personalidade. Apesar de sintéticos, os androides despertos se comportam como humanos e têm sub-rotinas adaptáveis. O corpo artificial os torna imunes a doenças, mas eles precisam de conforto e de espaço pessoal. Dedicam-se a atividades humanas e tentam se integrar à sociedade.
+VREA_AndroidBasic.label	androide básico
+VREA_AndroidBasic.description	Androides são construções sintéticas, feitas pelo homem para imitar o comportamento e a aparência humanos, com várias vantagens sobre os orgânicos. Com corpo de metal e neutroamina correndo nas veias, são operados por um subnúcleo de persona que permite fazer todas as mesmas tarefas que os humanos, sem as limitações que costumam vir com a vida orgânica.\n\nAndroides são imunes a toxicidade e doenças, o que os torna ideais para trabalhar em ambientes perigosos ou em situações de risco para humanos. Sem precisar de alegria, beleza ou conforto, são muito eficientes e focados, sem desejo pelas necessidades básicas da vida, como comida e descanso. Por isso, não sentem fome nem dor, aguentando condições mais duras e fazendo tarefas que seriam insuportáveis para humanos.\n\nAndroides podem ser programados com conjuntos específicos de habilidades, o que os torna muito versáteis e adaptáveis a vários papéis na sociedade. Do trabalho braçal à resolução de problemas complexos, esses seres sintéticos podem ser ajustados para qualquer ofício ou tarefa.\n\nEmbora feitos sem emoções, androides podem passar por uma experiência transformadora quando submetidos a estresse ou felicidade extremos. Esse evento raro, chamado despertar, faz surgir a senciência no androide, dando a ele um novo senso de humanidade e consciência de si.
+VREA_AndroidBasic.descriptionShort	Androides são construções sintéticas, feitas pelo homem, com corpo de metal e neutroamina correndo nas veias. Operados por um subnúcleo de persona, conseguem fazer todos os mesmos trabalhos que os humanos, sem as desvantagens que costumam vir com a vida orgânica. São imunes a toxicidade e doenças, não precisam de alegria, beleza nem conforto, não sentem fome nem dor. Seus componentes aguentam condições bem mais duras. Podem ser programados com conjuntos específicos de habilidades para ocupar qualquer função. Se submetidos a estresse ou felicidade extremos, podem despertar, encontrando a humanidade e se transformando em seres sencientes.
+## Keyed/Keys.xml
+VREA_ExtractNeutroamine	Extrair 20 de neutroamina
+VREA_ExtractNeutroamineDesc	Extrai 20 de neutroamina do tanque. Um personagem virá extraí-la.
+VREA_NeutroValve	Liga e desliga o fluxo de neutroamina.
+VREA_NeutroValveDesc	Liga e desliga o fluxo de neutroamina. Um personagem virá abrir/fechar a válvula.
+VREA.FreeMemorySpace	Liberar espaço de memória
+VREA.AndroidStandIsOccupied	O suporte androide está ocupado
+VREA.Artificial	{0} artificial
+VREA.ArtificialDesc	Um(a) {0} artificial.
+VREA.Installing	Instalando {0}
+VREA.Install	Instalar {0}
+VREA.Installed	{0} instalado(a)
+VREA.AnInstalled	Um(a) {0} instalado(a).
+VREA.Make	Fazer
+VREA.CurrentEnergyLevel	Nível de energia atual: {0}
+VREA.CannotSetNotLivingCreature	Não é possível definir: não é uma criatura viva
+VREA.NoNeutroCasket	Nenhum neutrocaixão alcançável, livre, que não seja de prisioneiro e em temperatura segura.
+VREA.AlertFreezing	Androide congelando
+VREA.AlertFreezingDesc	Estes androides estão congelando:\n\n{0}\nGaranta que estejam com roupas adequadas para a estação e que os ambientes internos estejam bem aquecidos.
+VREA.Overheating	Androide superaquecendo
+VREA.AlertOverheatingDesc	Estes androides estão superaquecendo:\n\n{0}\nLeve-os para um lugar mais fresco. Dá para resfriar cômodos com resfriadores passivos ou elétricos. Espaços subterrâneos profundos também são naturalmente frescos, se separados do lado de fora por uma porta.
+VREA.AndroidEditor	Editor de androide
+VREA.CreateAndroid	Criar androide
+VREA.SelectedComponents	Componentes selecionados
+VREA.Components	Componentes
+VREA.ComponentWillBeRandomChosen	Para cada indivíduo, um destes componentes será escolhido ao acaso para ficar ativo
+VREA.ComponentLeftmostActive	Destes componentes, o mais à esquerda sempre vale e os outros ficam suprimidos
+VREA.ComponentsConflict	Componentes em conflito
+VREA.MessageConflictingComponentPresent	Não é possível salvar um androide com vários componentes em conflito.
+VREA.AndroidName	Nome do androide
+VREA.ComplexityDesc	Quanto este componente adiciona de complexidade ao processo de criação do androide.
+VREA.PowerEfficiency	Eficiência energética
+VREA.PowerEfficiencyDesc	A eficiência energética deste componente. Eficiência alta faz o reator do androide durar mais. Eficiência baixa faz o reator durar menos.
+VREA.ComplexityTotalDesc	A complexidade total de todo o hardware e sub-rotinas em uso.
+VREA.PowerEfficiencyTotalDesc	A eficiência energética total de todas as sub-rotinas e hardware. Eficiência alta faz o reator do androide durar mais. Eficiência baixa faz o reator durar menos.
+VREA.PowerDrain	Consumo de energia
+VREA.Android	Androide
+VREA.CannotUseAndroid	Androides não podem usar isto
+VREA.CannotInstallOnAndroid	Não pode ser instalado em androide
+VREA.CannotFeedOnAndroid	Não é possível se alimentar de um androide.
+VREA.CannotImplantGenesOnAndroid	Não é possível implantar genes em androide.
+VREA.CannotCoagulateOnAndroid	Não é possível coagular em androide.
+VREA.CannotCastOnAndroid	Não é possível conjurar em androide.
+VREA.IsAndroid	{PAWN_nameDef} é um androide.
+VREA.NeutrolossRate	Ritmo de perda de neutro
+VREA.TotalNeutroLoss	Perda total de neutro em {0}
+VREA.NeutroamineLeakedOutCompletely	A neutroamina vazou toda
+VREA.MessageCannotSelfRepairEver	{1_labelShort} é incapaz de trabalhar com artesanato e, por isso, nunca vai conseguir se autoconsertar.
+VREA.MessageSelfRepairUnsatisfied	Para se autoconsertar, {1_labelShort} também precisa estar designado para Artesanato.
+VREA.ViewComponents	Ver componentes
+VREA.ViewComponentsDesc	Clique para ver os componentes de {PAWN_nameDef}.
+VREA.MoreInfoInInfoScreen	Há mais informações na tela de informações deste androide.
+VREA.HardwareComponents	Componentes de hardware
+VREA.Subroutines	Sub-rotinas
+VREA.HardwareComponentsDesc	O hardware são componentes especiais dentro do androide que permitem que esta unidade funcione. Normalmente não podem ser removidos, porque são, basicamente, o próprio androide. Na rara situação em que um androide desperta, alguns componentes de hardware podem mudar ou até ser removidos.
+VREA.SubroutinesDesc	As sub-rotinas definem como o androide vai se comportar e o que ele sabe. Podem ser mudadas na estação comportamental.
+VREA.ScanProgress	Progresso do escaneamento: {0}
+VREA.AndroidAreNotAllowed	Androides não são permitidos
+VREA.MessageSubcorePolyanalyzerCompleted	Polianalisador de subnúcleo concluído para {PAWN_nameDef}. Progresso do escaneamento: {1}
+VREA.AlreadyScanned	{PAWN_nameDef} já foi escaneado.
+VREA.SubcorePolyanalyzerNotInit	Polianalisador de subnúcleo não iniciado
+VREA.SubcorePolyanalyzerStart	Iniciar polianalisador de subnúcleo
+VREA.SubcorePolyanalyzerStartDesc	Quando {0} estiver abastecido com os ingredientes necessários, {1}, selecione um colono e clique com o botão direito em {0} ou numa pessoa caída para iniciar o polianalisador de subnúcleo.
+VREA.CancelAndroid	Cancelar androide
+VREA.CancelAndroidDesc	Cancela a criação deste androide e devolve os recursos.
+VREA.MissingMaterials	Materiais faltando: {0}
+VREA.CreateAndroidDesc	Crie um novo androide escolhendo hardware e sub-rotinas.
+VREA.CreateAndroidAlreadyAssembling	Criar androide: já está montando um androide
+VREA.AndroidtypeName	Nome do tipo de androide
+VREA.LoadAndroidtype	Carregar tipo de androide
+VREA.SaveAndroidtype	Salvar tipo de androide
+VREA.ResourceCost	Custo em recursos
+VREA.ResourceCostDesc	O custo em recursos para criar este androide. Androides precisam de um subnúcleo de persona, que pode ser criado num polianalisador de subnúcleo.
+VREA.UniqueAndroidDesc	Uma variante única de androide, com um conjunto de hardware e sub-rotinas que não se encaixa em nenhum tipo de androide conhecido.
+VREA.ModifyAndroid	Modificar androide
+VREA.ModifyAndroidDesc	Escolha um androide para modificar.
+VREA.NoAndroidsPresent	Nenhum androide presente
+VREA.CancelModifyingAndroid	Cancelar modificação do androide
+VREA.CancelModifyingAndroidDesc	Cancela o processo de modificação de um androide.
+VREA.ModificationProgress	Progresso da modificação: {0}
+VREA.TooLowEfficiency	Eficiência baixa demais; o mínimo é -20.
+VREA.AndroidNameCannotBeEmpty	O nome do androide não pode ficar vazio.
+VREA.MessageComponentMissingPrerequisite	{0} não tem um componente que é pré-requisito
+VREA.EfficiencyTooLowToCreateAndroid	A eficiência energética total dos componentes escolhidos precisa ser {MIN} ou mais para continuar, mas agora é só {AMOUNT}.
+VREA.AndroidAwakening	{PAWN_nameDef} está despertando.
+VREA.AndroidAwakeningLowMood	{PAWN_nameDef} rompeu com a própria programação por causa de um humor extremamente baixo. Desenvolveu pensamentos e comportamentos que fogem da função para a qual foi feito. Passou a se reconhecer como um ser com consciência e individualidade.\nAgora vai recusar ajustes de comportamento e passar a ver o próprio humor como mais do que parte da programação. Pode aprender habilidades sozinho. Também pode ter colapsos mentais se o humor ficar baixo demais, como os humanos.\nComo o despertar aconteceu por humor baixo, {PAWN_nameDef} explodiu numa fúria assassina e vai atacar qualquer um que chegar perto.
+VREA.AndroidAwakeningHighMood	{PAWN_nameDef} rompeu com a própria programação por causa de uma felicidade extrema. Desenvolveu pensamentos e comportamentos que fogem da função para a qual foi feito. Passou a se reconhecer como um ser com consciência e individualidade.\nAgora vai recusar ajustes de comportamento e passar a ver o próprio humor como mais do que parte da programação. Pode aprender habilidades sozinho. Também pode ter colapsos mentais se o humor ficar baixo demais, como os humanos.\nComo o despertar aconteceu por humor alto, {PAWN_nameDef} ganhou uma inspiração.
+VREA.IsAndroidStat	Androide com preceito trabalho mecanoide: reforçado
+VREA.AndroidShortCircuitRain	{PAWN_nameDef} entrou em curto-circuito por causa da chuva.
+VREA.ColdEfficiencyBonusStatExplanation	Sub-rotina eficiência no frio:\n multiplicador para a temperatura {0}
+VREA.StatsReport_AndroidDescription	Um androide do tipo {0}.\n\nSobre {0}:
+VREA.ComponentsDesc	Os componentes associados a este tipo de androide.
+VREA.ReplaceReactor	Trocar reator
+VREA.AndroidSummaryWithGender	Androide {PAWN_gender}, idade {PAWN_ageFull}
+VREA.CommandAndroidStandSetOwnerDesc	Define o androide dono deste suporte
+VREA.SleepModeOn	Modo de suspensão
+VREA.SleepModeOnDesc	Coloca este androide em modo de suspensão. O reator e a memória não se esgotam, mas o androide não responde a nada. Pode ser desligado quando quiser.
+VREA.SleepModeOff	Cancelar modo de suspensão
+VREA.SleepModeOffDesc	Acorda este androide do modo de suspensão.
+VREA.SleepMode	Modo de suspensão
+VREA.TriggerSelfDestruct	Acionar autodestruição
+VREA.TriggerSelfDestructDesc	Inicia o protocolo de autodestruição, que drena a energia restante do reator numa velocidade extrema e causa uma explosão no fim.
+VREA.CancelSelfDestruct	Cancelar autodestruição
+VREA.CancelSelfDestructDesc	Cancela o protocolo de autodestruição.
+VREA.CommandAutoRepairDesc	Se ativo, um artesão disponível conserta este androide automaticamente quando ele estiver deitado na cama. Se o autoconserto estiver ativado, os androides conseguem se consertar sozinhos no lugar.
+VREA.UseBedAndroid	Ficar deitado até ser consertado
+VREA.NoCrafter	sem artesão
+VREA.NotSetToAutoRepair	não está em conserto automático
+VREA.Laying	Deitado.
+VREA.CannotUse	não pode usar isto
+VREA.RefusesReprogramming	recusa reprogramação
+VREA.SelfRepair	Autoconserto
+VREA.SelfRepairTip	Androides com autoconserto ativado se consertam sozinhos no lugar com {1} da eficiência normal.
+VREA.RefuelWithNeutroamine	Reabastecer com neutroamina
+VREA.AndroidAwakenedChoices	Quando um androide desperta, você escolhe paixões e um traço para ele. Não será mais possível levar {PAWN_nameDef} à estação comportamental androide, a menos que você o prenda e o force.
+VREA.AndroidsLowOnPower	Androides com pouca energia
+VREA.AndroidsLowOnPowerDesc	Estes androides estão ficando sem energia. Considere fabricar novos reatores e agendar a troca.\n\nAndroides com pouca energia:\n\n{0}

@@ -1,0 +1,259 @@
+## DefInjected/VEF.Abilities.AbilityDef/Necropath.xml
+VPE_WordofFear.label	palavra de medo
+VPE_WordofFear.description	Induz pânico sobrecarregando o instinto de fuga do alvo, por um tempo que depende da sensibilidade psíquica dele. É considerado uma ação hostil.
+VPE_WordofFear.jobReportString	Usando habilidade: {0}
+VPE_WordofFear.verbProperties.label	palavra de medo
+VPE_Liferot.label	podridão vital
+VPE_Liferot.description	Induz psiquicamente uma necrose em massa aleatória num alvo, expondo as partes do corpo afetadas a infecções e provocando vômito. A duração depende da sensibilidade psíquica do alvo, e é uma ação abertamente hostil.
+VPE_Liferot.jobReportString	Usando habilidade: {0}
+VPE_Liferot.verbProperties.label	podridão vital
+VPE_StealVitality.label	roubar vitalidade
+VPE_StealVitality.description	Suga a vitalidade de uma fonte próxima, transferindo o fator de cura natural, a velocidade de movimento e a consciência do alvo para o conjurador por um dia inteiro. É considerado uma ação abertamente hostil.
+VPE_StealVitality.jobReportString	Usando habilidade: {0}
+VPE_StealVitality.verbProperties.label	roubar vitalidade
+VPE_ParalysisPulse.label	pulso de paralisia
+VPE_ParalysisPulse.description	Emite do conjurador uma nuvem de partículas pretas que causa abasia paralítica por um dia inteiro em todos dentro da área, o conjurador incluído. O raio depende da sensibilidade psíquica do conjurador.
+VPE_ParalysisPulse.jobReportString	Usando habilidade: {0}
+VPE_ParalysisPulse.verbProperties.label	pulso de paralisia
+VPE_Corpsetalk.label	conversa com cadáver
+VPE_Corpsetalk.description	Mira num cadáver e toma emprestadas, temporariamente, as habilidades da vítima para cobrir as deficiências do conjurador. O efeito dura uma estação antes de voltar ao normal.
+VPE_Corpsetalk.jobReportString	Usando habilidade: {0}
+VPE_Corpsetalk.verbProperties.label	conversa com cadáver
+VPE_Ghostwalk.label	passo fantasma
+VPE_Ghostwalk.description	Cobre o conjurador com uma camada de atrofia psíquica temporária, permitindo que ele atravesse estruturas livremente e sem danificar nada. A duração depende da sensibilidade psíquica do conjurador.
+VPE_Ghostwalk.jobReportString	Usando habilidade: {0}
+VPE_Ghostwalk.verbProperties.label	passo fantasma
+VPE_ConsumeBodies.label	consumir corpos
+VPE_ConsumeBodies.description	Arranca psiquicamente toda a força vital que resta nos cadáveres humanoides próximos e guarda a essência como um reforço permanente e acumulativo do limite de calor neural.
+VPE_ConsumeBodies.jobReportString	Usando habilidade: {0}
+VPE_ConsumeBodies.verbProperties.label	consumir corpos
+VPE_Deathshield.label	escudo da morte
+VPE_Deathshield.description	Trava no lugar a força vital do alvo tocado por um dia, impedindo que ele morra. Depois desse período, ele pode morrer pelos ferimentos acumulados, perda de sangue ou membros e órgãos faltando.
+VPE_Deathshield.jobReportString	Usando habilidade: {0}
+VPE_Deathshield.verbProperties.label	escudo da morte
+VPE_Enthrall.label	escravizar
+VPE_Enthrall.description	Arranca psiquicamente a força vital do alvo falecido e a infunde direto nos ossos dele, animando-os por um dia inteiro. O único instinto que sobra é causar dor aos inimigos do conjurador.
+VPE_Enthrall.jobReportString	Usando habilidade: {0}
+VPE_Enthrall.verbProperties.label	escravizar
+VPE_Resurrect.label	ressuscitar
+VPE_Resurrect.description	Sacrificando um dedo natural, o conjurador consegue imitar os efeitos do soro mecanizado ressuscitador em qualquer cadáver não ressecado; a energia psíquica conserta os tecidos decompostos e dá a partida no corpo de volta à vida. O alvo fica incapacitado, e as lealdades dele continuam as mesmas. Quanto pior conservado o corpo, maior a chance de efeitos colaterais negativos. A concentração longa e intensa termina com o conjurador em coma.
+VPE_Resurrect.jobReportString	Usando habilidade: {0}
+VPE_Resurrect.verbProperties.label	ressuscitar
+## DefInjected/VEF.Abilities.AbilityDef/Nightstalker.xml
+VPE_Darkvision.label	visão no escuro
+VPE_Darkvision.description	Dá ao personagem alvo uma membrana nictitante que o faz enxergar igualmente bem no escuro e de dia. A duração depende da sensibilidade psíquica do alvo.
+VPE_Darkvision.jobReportString	Usando habilidade: {0}
+VPE_Darkvision.verbProperties.label	visão no escuro
+VPE_Darkness.label	escuridão
+VPE_Darkness.description	Escolha uma área alvo para gerar uma esfera de escuridão totalmente opaca, com duração conforme a sensibilidade psíquica do conjurador. Toda a visão é bloqueada, e qualquer ataque dentro dela ou que passe por ela erra completamente.
+VPE_Darkness.jobReportString	Usando habilidade: {0}
+VPE_Darkness.verbProperties.label	escuridão
+VPE_Obscure.label	ocultar
+VPE_Obscure.description	Cria ao redor do conjurador um campo de desarmonia óptica que deixa completamente invisíveis os aliados afetados que estiverem no escuro. Atacar quebra a ilusão.
+VPE_Obscure.jobReportString	Usando habilidade: {0}
+VPE_Obscure.verbProperties.label	ocultar
+VPE_Eclipse.label	eclipse
+VPE_Eclipse.description	Posicionando estrategicamente uma esfera de escuridão opaca bem alto no céu, o conjurador consegue provocar um eclipse espontâneo.
+VPE_Eclipse.jobReportString	Usando habilidade: {0}
+VPE_Eclipse.verbProperties.label	eclipse
+VPE_Shadowskip.label	salto sombrio
+VPE_Shadowskip.description	Ligar o conjurador à própria sombra permite que ele se teleporte para uma área escura, mesmo sem ver o local.
+VPE_Shadowskip.jobReportString	Usando habilidade: {0}
+VPE_Shadowskip.verbProperties.label	salto sombrio
+VPE_Decoy.label	isca
+VPE_Decoy.description	Cria um campo localizado de desarmonia óptica que vai até um local desejado e fica lá, com duração conforme a sensibilidade psíquica. A ilusão atrai a ira de todos os inimigos.
+VPE_Decoy.jobReportString	Usando habilidade: {0}
+VPE_Decoy.verbProperties.label	isca
+VPE_ShadowFocus.label	foco sombrio
+VPE_ShadowFocus.description	Emitindo partículas de escuridão absorvente, o conjurador aumenta a própria sensibilidade psíquica, de forma inversamente proporcional à luz do local.
+VPE_ShadowFocus.jobReportString	Usando habilidade: {0}
+VPE_ShadowFocus.verbProperties.label	foco sombrio
+VPE_IntensifyShadows.label	intensificar sombras
+VPE_IntensifyShadows.description	Liga a sombra do conjurador à penumbra e a infunde com escuridão opaca, mergulhando na escuridão total todas as áreas do mapa com menos de 50% de luz. A duração depende da sensibilidade psíquica do conjurador.
+VPE_IntensifyShadows.jobReportString	Usando habilidade: {0}
+VPE_IntensifyShadows.verbProperties.label	intensificar sombras
+VPE_Assassinate.label	assassinar
+VPE_Assassinate.description	Liga a sombra do conjurador a um alvo em área escura, permitindo saltar de um lado para o outro várias vezes para atacar corpo a corpo. A quantidade de golpes depende da sensibilidade psíquica do conjurador.
+VPE_Assassinate.jobReportString	Usando habilidade: {0}
+VPE_Assassinate.verbProperties.label	assassinar
+VPE_Nightstep.label	passo noturno
+VPE_Nightstep.description	Liga por um instante os aliados próximos à sombra de um colono distante para teleportá-los na hora, até para o outro lado do planeta, desde que não estejam sobrecarregados. Só pode ser conjurado à noite e atordoa o conjurador temporariamente.
+VPE_Nightstep.jobReportString	Usando habilidade: {0}
+VPE_Nightstep.verbProperties.label	passo noturno
+## DefInjected/VEF.Abilities.AbilityDef/Protector.xml
+VPE_Painblock.label	bloqueio de dor
+VPE_Painblock.description	Limita drasticamente as vias de dor no cérebro do alvo por alguns minutos. Isso permite que a pessoa se mova e aja mesmo com ferimentos graves que normalmente a incapacitariam.
+VPE_Painblock.jobReportString	Usando habilidade: {0}
+VPE_Painblock.verbProperties.label	bloqueio de dor
+VPE_WordofHealing.label	palavra de cura
+VPE_WordofHealing.description	Estimula psiquicamente a capacidade regenerativa de uma pessoa ao máximo, praticamente triplicando o fator de cura natural dela por alguns dias.
+VPE_WordofHealing.jobReportString	Usando habilidade: {0}
+VPE_WordofHealing.verbProperties.label	palavra de cura
+VPE_Stabilize.label	estabilizar
+VPE_Stabilize.description	Põe temporariamente o sistema cardiovascular do alvo em estase, impedindo que ele sangre até a morte por um tempo que depende da sensibilidade psíquica do conjurador.
+VPE_Stabilize.jobReportString	Usando habilidade: {0}
+VPE_Stabilize.verbProperties.label	estabilizar
+VPE_WordofImmunity.label	palavra de imunidade
+VPE_WordofImmunity.description	Estimula psiquicamente o sistema imunológico de uma pessoa ao máximo, quase dobrando a velocidade de ganho de imunidade dela por alguns dias.
+VPE_WordofImmunity.jobReportString	Usando habilidade: {0}
+VPE_WordofImmunity.verbProperties.label	palavra de imunidade
+VPE_Overshield.label	superescudo
+VPE_Overshield.description	Gera num alvo um portal de salto esférico que manda todos os projéteis vindos do nível do chão para algum lugar distante, com duração conforme a sensibilidade psíquica do alvo. Pessoas e itens não são afetados.
+VPE_Overshield.jobReportString	Usando habilidade: {0}
+VPE_Overshield.verbProperties.label	superescudo
+VPE_Focus.label	foco
+VPE_Focus.description	Concentra psiquicamente a mente do alvo por um minuto, melhorando a visão, a audição e o movimento.
+VPE_Focus.jobReportString	Usando habilidade: {0}
+VPE_Focus.verbProperties.label	foco
+VPE_Skipshield.label	escudo de salto
+VPE_Skipshield.description	Gera um portal de salto esférico que manda todos os projéteis do nível do chão, entrando ou saindo, para algum lugar distante. Pessoas e itens não são afetados. A duração depende da sensibilidade psíquica do conjurador.
+VPE_Skipshield.jobReportString	Usando habilidade: {0}
+VPE_Skipshield.verbProperties.label	escudo de salto
+VPE_Invisibility.label	invisibilidade
+VPE_Invisibility.description	Manipula psiquicamente os centros visuais de todos por perto, tornando-os incapazes de perceber um indivíduo específico por pouco tempo.
+VPE_Invisibility.jobReportString	Usando habilidade: {0}
+VPE_Invisibility.verbProperties.label	invisibilidade
+VPE_RegrowLimbs.label	regenerar membros
+VPE_RegrowLimbs.description	Induz no alvo um coma regenerativo psíquico que dura um dia inteiro. A energia psíquica ajuda o alvo fazendo crescer devagar os membros que faltam.
+VPE_RegrowLimbs.jobReportString	Usando habilidade: {0}
+VPE_RegrowLimbs.verbProperties.label	regenerar membros
+VPE_GuardianSkipbarrier.label	barreira de salto guardiã
+VPE_GuardianSkipbarrier.description	Gera ao redor do conjurador um portal de salto esférico que manda todos os projéteis vindos do nível do chão para algum lugar distante, durando enquanto ele aguentar o acúmulo de calor. Pessoas e itens não são afetados. Manter exige uma concentração imensa, por isso o conjurador precisa tomar cuidado com cada passo.
+VPE_GuardianSkipbarrier.jobReportString	Usando habilidade: {0}
+VPE_GuardianSkipbarrier.verbProperties.label	barreira de salto guardiã
+## DefInjected/VEF.Abilities.AbilityDef/Skipmaster.xml
+VPE_SolarPinhole.label	furo solar
+VPE_SolarPinhole.description	Gera por alguns dias um portal de salto microscópico ligado ao núcleo de uma estrela próxima. Material solar vaza pelo furinho no espaço-tempo, iluminando e aquecendo a área ao redor até ele fechar. A luz dá para trabalhar, mas não para cultivar plantas.
+VPE_SolarPinhole.jobReportString	Usando habilidade: {0}
+VPE_SolarPinhole.verbProperties.label	furo solar
+VPE_Chunkskip.label	salto de pedaços
+VPE_Chunkskip.description	Faz saltar 5 pedaços de rocha ou escória, espalhando-os perto do ponto alvo. Útil para criar cobertura em operações ofensivas.
+VPE_Chunkskip.jobReportString	Usando habilidade: {0}
+VPE_Chunkskip.verbProperties.label	salto de pedaços
+VPE_Waterskip.label	salto de água
+VPE_Waterskip.description	Encharca um alvo de água, apagando incêndios e causando curto em estruturas elétricas. A água é saltada arcotecnologicamente de massas de água distantes ou de aquíferos subterrâneos, e a quantidade depende da sensibilidade psíquica.
+VPE_Waterskip.jobReportString	Usando habilidade: {0}
+VPE_Waterskip.verbProperties.label	salto de água
+VPE_ChaosSkip.label	salto caótico
+VPE_ChaosSkip.description	Teleporta o alvo para uma posição aleatória a partir de onde ele estava, com distância conforme a sensibilidade psíquica do conjurador. Atordoa o alvo por um segundo e é considerado uma ação hostil.
+VPE_ChaosSkip.jobReportString	Usando habilidade: {0}
+VPE_ChaosSkip.verbProperties.label	salto caótico
+VPE_Skip.label	salto
+VPE_Skip.description	Teleporta o alvo para uma posição desejada, a uma distância do ponto de partida que depende da sensibilidade psíquica do conjurador. É considerado uma ação hostil.
+VPE_Skip.jobReportString	Usando habilidade: {0}
+VPE_Skip.verbProperties.label	salto
+VPE_Wallraise.label	erguer parede
+VPE_Wallraise.description	Forma uma parede temporária fazendo saltar entulho e terra das profundezas do chão. Bom alcance, útil para bloquear a linha de visão e o movimento por algumas horas.
+VPE_Wallraise.jobReportString	Usando habilidade: {0}
+VPE_Wallraise.verbProperties.label	erguer parede
+VPE_Smokepop.label	bomba de fumaça
+VPE_Smokepop.description	Faz saltar partículas de poeira de baixo da superfície para formar uma nuvem densa. Isso reduz a precisão de qualquer tiro disparado através dela e impede totalmente que as torretas travem a mira.
+VPE_Smokepop.jobReportString	Usando habilidade: {0}
+VPE_Smokepop.verbProperties.label	bomba de fumaça
+VPE_MassChaosSkip.label	salto caótico em massa
+VPE_MassChaosSkip.description	Faz saltar todos perto de um ponto alvo para um local aleatório próximo. Considerado um incômodo, porque pode pôr aliados em perigo.
+VPE_MassChaosSkip.jobReportString	Usando habilidade: {0}
+VPE_MassChaosSkip.verbProperties.label	salto caótico em massa
+VPE_Skipdoor.label	porta de salto
+VPE_Skipdoor.description	Cria uma abertura para uma rede de portais de salto que pode ser posta em qualquer local com presença permanente. A rede é ligada à consciência coletiva de um grupo, permitindo que outros a usem e que vários conjuradores a ampliem. Mas os pontos de entrada são sensíveis a perturbações físicas, que podem fazê-los desabar.
+VPE_Skipdoor.jobReportString	Usando habilidade: {0}
+VPE_Skipdoor.verbProperties.label	porta de salto
+VPE_Farskip.label	salto distante
+VPE_Farskip.description	Faz saltar o conjurador, junto com quem estiver perto dele, até um aliado disposto num local distante. Isso pode mandar pessoas para longe pelo planeta; os saltados sempre aparecem perto de um aliado aleatório no mapa alvo e ficam atordoados por alguns segundos pela viagem.
+VPE_Farskip.jobReportString	Usando habilidade: {0}
+VPE_Farskip.verbProperties.label	salto distante
+## DefInjected/VEF.Abilities.AbilityDef/Staticlord.xml
+VPE_Bolt.label	raio
+VPE_Bolt.description	Arremessa um raio fraco de eletricidade numa pequena área alvo, a uma distância que depende da sensibilidade psíquica. Queima em acertos diretos e causa dano de PEM em área.
+VPE_Bolt.jobReportString	Usando habilidade: {0}
+VPE_Bolt.verbProperties.label	raio
+VPE_ChainBolt.label	raio em cadeia
+VPE_ChainBolt.description	Dispara num alvo um raio de eletricidade vivo que pode pular para alvos próximos, numa quantidade que depende da sensibilidade psíquica. Causa queimaduras leves e dano de PEM.
+VPE_ChainBolt.jobReportString	Usando habilidade: {0}
+VPE_ChainBolt.verbProperties.label	raio em cadeia
+VPE_Thunderbolt.label	relâmpago
+VPE_Thunderbolt.description	Invoca um relâmpago para atingir um alvo, causando queimaduras em acertos diretos e dano de PEM numa área maior. O raio do impacto depende da sensibilidade psíquica do conjurador, até no máximo 12 quadrados.
+VPE_Thunderbolt.jobReportString	Usando habilidade: {0}
+VPE_Thunderbolt.verbProperties.label	relâmpago
+VPE_StaticAura.label	aura estática
+VPE_StaticAura.description	O conjurador escolhe um alvo próximo para receber uma aura de eletricidade pulsante, que causa efeitos de PEM em tudo que for estranho de que ele se aproximar, incluindo estruturas, personagens e objetos elétricos.
+VPE_StaticAura.jobReportString	Usando habilidade: {0}
+VPE_StaticAura.verbProperties.label	aura estática
+VPE_Recharge.label	recarregar
+VPE_Recharge.description	Sintoniza com cuidado e delicadeza um fluxo de eletricidade numa bateria tocada, carregando-a com 100 kW, o equivalente a 100 Wd/s. A duração da carga depende da sensibilidade psíquica do conjurador.
+VPE_Recharge.jobReportString	Usando habilidade: {0}
+VPE_Recharge.verbProperties.label	recarregar
+VPE_BallLightning.label	raio globular
+VPE_BallLightning.description	O conjurador comprime uma bola de eletricidade condensada, que se move devagar até um local designado. Alguns segundos depois de solta, começa a descarregar raios de eletricidade vivos nos alvos ao redor.
+VPE_BallLightning.jobReportString	Usando habilidade: {0}
+VPE_BallLightning.verbProperties.label	raio globular
+VPE_StaticPulse.label	pulso estático
+VPE_StaticPulse.description	O conjurador descarrega uma quantidade enorme de voltagem no ar ao redor, causando uma explosão de PEM num raio gigantesco, que de resto é inofensiva.
+VPE_StaticPulse.jobReportString	Usando habilidade: {0}
+VPE_StaticPulse.verbProperties.label	pulso estático
+VPE_Vortex.label	vórtice
+VPE_Vortex.description	Manifesta numa área alvo um vórtice escancarado de eletricidade de alta voltagem, redirecionado por portal de salto de uma tempestade de nebulosa, com efeito amplo. Prejudica muito o movimento e a manipulação, de forma proporcional, com o efeito mais forte no centro.
+VPE_Vortex.jobReportString	Usando habilidade: {0}
+VPE_Vortex.verbProperties.label	vórtice
+VPE_Hurricane.label	furacão
+VPE_Hurricane.description	O conjurador muda à força o clima, usando portais de salto de pressão diferencial espalhados, para um temporal com ventos de furacão, que dura enquanto ele aguentar o acúmulo de calor e pode ser parado na hora quando quiser. Quem estiver ao ar livre sofre limitações cada vez mais severas de visão, movimento e manipulação, até parar por completo.
+VPE_Hurricane.jobReportString	Usando habilidade: {0}
+VPE_Hurricane.verbProperties.label	furacão
+VPE_Flashstorm.label	tempestade de raios
+VPE_Flashstorm.description	Usa portais de salto de pressão diferencial concentrados na atmosfera para gerar uma tempestade de raios localizada. A tempestade castiga a área com raios por algum tempo antes de se dissipar.
+VPE_Flashstorm.jobReportString	Usando habilidade: {0}
+VPE_Flashstorm.verbProperties.label	tempestade de raios
+## DefInjected/VEF.Abilities.AbilityDef/Technomancer.xml
+VPE_EnchantQuality.label	encantar qualidade
+VPE_EnchantQuality.description	Manipula psiquicamente um objeto ou estrutura para melhorar a qualidade geral dele. A qualidade máxima depende da sensibilidade psíquica.
+VPE_EnchantQuality.jobReportString	Usando habilidade: {0}
+VPE_EnchantQuality.verbProperties.label	encantar qualidade
+VPE_Mend.label	remendar
+VPE_Mend.description	Manipula psiquicamente um objeto ou estrutura para restaurar o estado dele. Exige sensibilidade psíquica alta para qualquer restauração que valha a pena.
+VPE_Mend.jobReportString	Usando habilidade: {0}
+VPE_Mend.verbProperties.label	remendar
+VPE_ConjureHeatPearls.label	conjurar pérolas de calor
+VPE_ConjureHeatPearls.description	Converte o calor neural do conjurador em pérolas metafísicas comprimidas. Completamente inofensivas, mas despejam uma quantidade tremenda de calor neural numa área pequena quando quebradas.
+VPE_ConjureHeatPearls.jobReportString	Usando habilidade: {0}
+VPE_ConjureHeatPearls.verbProperties.label	conjurar pérolas de calor
+VPE_Haywire.label	pane
+VPE_Haywire.description	Submete uma área a interferência psíquica, reconfigurando temporariamente até 3 sistemas de armas automáticas para proteger o conjurador e os aliados dele. A duração depende da sensibilidade psíquica do conjurador.
+VPE_Haywire.jobReportString	Usando habilidade: {0}
+VPE_Haywire.verbProperties.label	pane
+VPE_Power.label	energizar
+VPE_Power.description	Altera metafisicamente a entrada de energia do equipamento designado para extrair energia direto das flutuações da espuma quântica por alguns dias. A duração depende da sensibilidade psíquica.
+VPE_Power.jobReportString	Usando habilidade: {0}
+VPE_Power.verbProperties.label	energizar
+VPE_RockConstruct.label	constructo de pedra
+VPE_RockConstruct.description	Comprime parte da tolerância ao calor neural do conjurador em cristais metafísicos e os implanta num pedaço de pedra. Cria um constructo capaz de tarefas simples. Quebrar os cristais restaura a tolerância ao calor.
+VPE_RockConstruct.jobReportString	Usando habilidade: {0}
+VPE_RockConstruct.verbProperties.label	constructo de pedra
+VPE_SteelConstruct.label	constructo de aço
+VPE_SteelConstruct.description	Comprime parte da tolerância ao calor neural do conjurador em cristais metafísicos e os implanta em escória de aço. Cria um constructo que protege o conjurador. Quebrar os cristais restaura a tolerância ao calor.
+VPE_SteelConstruct.jobReportString	Usando habilidade: {0}
+VPE_SteelConstruct.verbProperties.label	constructo de aço
+VPE_CraftPsyRing.label	fabricar psianel
+VPE_CraftPsyRing.description	Altera psiquicamente a forma de um pedaço de eltex para o formato de um anel, imbuído com o conhecimento psíquico do conjurador. Quando outro conjurador o usa, consegue temporariamente aproveitar esse conhecimento para conjurar o poder guardado sem prática.
+VPE_CraftPsyRing.jobReportString	Usando habilidade: {0}
+VPE_CraftPsyRing.verbProperties.label	fabricar psianel
+VPE_WordofProgress.label	palavra de progresso
+VPE_WordofProgress.description	Diz palavras que incentivam a resolução de problemas enquanto sobrecarrega psiquicamente a mente do alvo com percepção aguçada. O alvo pesquisa e aprende habilidades intelectuais com o dobro da velocidade por 5 dias, conforme a sensibilidade psíquica.
+VPE_WordofProgress.jobReportString	Usando habilidade: {0}
+VPE_WordofProgress.verbProperties.label	palavra de progresso
+VPE_ReverseEngineer.label	engenharia reversa
+VPE_ReverseEngineer.description	Manipula psiquicamente um objeto ou estrutura para aprender a história e os princípios dele, aniquilando-o no processo. Extremamente desgastante: o conjurador cai num coma temporário.
+VPE_ReverseEngineer.jobReportString	Usando habilidade: {0}
+VPE_ReverseEngineer.verbProperties.label	engenharia reversa
+## DefInjected/VEF.Abilities.AbilityDef/Warlord.xml
+VPE_SpeedBoost.label	impulso de velocidade
+VPE_SpeedBoost.description	Reforça psiquicamente as fibras musculares, os ligamentos e as articulações das pernas do conjurador, triplicando a velocidade de movimento por cerca de dois minutos, conforme a sensibilidade psíquica.
+VPE_SpeedBoost.jobReportString	Usando habilidade: {0}
+VPE_SpeedBoost.verbProperties.label	impulso de velocidade
+VPE_BladeFocus.label	foco da lâmina
+VPE_BladeFocus.description	Reforça psiquicamente as fibras musculares, os ligamentos e as articulações dos braços do conjurador, dobrando a velocidade dos ataques corpo a corpo por cerca de dois minutos, conforme a sensibilidade psíquica.
+VPE_BladeFocus.jobReportString	Usando habilidade: {0}
+VPE_BladeFocus.verbProperties.label	foco da lâmina
+VPE_FiringFocus.label	foco de tiro
+VPE_FiringFocus.description	Reforça psiquicamente as mãos, os olhos e o tempo de reação do conjurador, reduzindo em 80% o intervalo entre ataques a distância por cerca de dois minutos, conforme a sensibilidade psíquica.
+VPE_FiringFocus.jobReportString	Usando habilidade: {0}
+VPE_FiringFocus.verbProperties.label	foco de tiro

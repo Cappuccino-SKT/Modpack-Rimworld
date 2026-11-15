@@ -1,0 +1,263 @@
+## DefInjected/FactionDef/FactionDef_Saurids.xml
+VRESaurids_OutlanderRoughSaurid.label	rough saurid union
+VRESaurids_OutlanderRoughSaurid.description	These cold-blooded lizard-like people have lived here for centuries, and instead of embracing technological progress, they chose industrial reliability. They are not afraid to utilise their military might to bring peace and order in the surrounding lands.\n\nOriginally engineered to survive on not-fully-terraformed planets with no humidity what-so-ever, saurids are a closely knit community that prefers to treat outsiders with aggression and show of force.
+VRESaurids_OutlanderRoughSaurid.leaderTitle	prime councilor
+VRESaurids_OutlanderRoughSaurid.messageDefendersAttacking	{0} from {1} are attacking your {2}.
+VRESaurids_OutlanderRoughSaurid.pawnSingular	saurid
+VRESaurids_OutlanderRoughSaurid.pawnsPlural	saurids
+## DefInjected/GeneDef/GeneDefs_Cosmetic.xml
+VRESaurids_FrilledEars.label	frilled ears
+VRESaurids_FrilledEars.description	Carriers of this gene have lizard-like frilled ears.
+VRESaurids_FrilledEars.symbolPack.prefixSymbols.0.symbol	frill
+VRESaurids_FrilledEars.symbolPack.prefixSymbols.1.symbol	iguana
+VRESaurids_FrilledEars.symbolPack.prefixSymbols.2.symbol	lizard
+VRESaurids_FrilledEars.symbolPack.prefixSymbols.3.symbol	spine
+VRESaurids_FrilledEars.symbolPack.prefixSymbols.4.symbol	reptile
+VRESaurids_FrilledEars.symbolPack.suffixSymbols.0.symbol	spike
+VRESaurids_FrilledEars.symbolPack.suffixSymbols.1.symbol	lance
+VRESaurids_FrilledEars.symbolPack.suffixSymbols.2.symbol	frill
+VRESaurids_FrilledEars.symbolPack.suffixSymbols.3.symbol	saurus
+VRESaurids_CenterFrill.label	center-frill
+VRESaurids_CenterFrill.description	Carriers of this gene grow a lizard-like frill protruding from the top of their head.
+VRESaurids_CenterFrill.symbolPack.prefixSymbols.0.symbol	frill
+VRESaurids_CenterFrill.symbolPack.prefixSymbols.1.symbol	iguana
+VRESaurids_CenterFrill.symbolPack.prefixSymbols.2.symbol	lizard
+VRESaurids_CenterFrill.symbolPack.prefixSymbols.3.symbol	spine
+VRESaurids_CenterFrill.symbolPack.prefixSymbols.4.symbol	reptile
+VRESaurids_CenterFrill.symbolPack.suffixSymbols.0.symbol	spike
+VRESaurids_CenterFrill.symbolPack.suffixSymbols.1.symbol	lance
+VRESaurids_CenterFrill.symbolPack.suffixSymbols.2.symbol	frill
+VRESaurids_CenterFrill.symbolPack.suffixSymbols.3.symbol	saurus
+VRESaurids_GeckoTail.label	gecko tail
+VRESaurids_GeckoTail.description	Carriers of this gene grow a short, scaly tail that has no function what-so-ever.
+## DefInjected/GeneDef/GeneDefs_Endogenes.xml
+VRESaurids_SauridClaws.label	saurid claws
+VRESaurids_SauridClaws.description	Carriers of this gene have hands that partially resemble dinosaur claws. This has a slight impact on their ability to manipulate objects, but allows them to deal deep cuts in melee combat.
+VRESaurids_SauridClaws.symbolPack.prefixSymbols.0.symbol	saurid
+VRESaurids_SauridClaws.symbolPack.prefixSymbols.1.symbol	raptor
+VRESaurids_SauridClaws.symbolPack.prefixSymbols.2.symbol	claw
+VRESaurids_SauridClaws.symbolPack.prefixSymbols.3.symbol	predator
+VRESaurids_SauridClaws.symbolPack.prefixSymbols.4.symbol	hook
+VRESaurids_SauridClaws.symbolPack.prefixSymbols.5.symbol	reptile
+VRESaurids_SauridClaws.symbolPack.suffixSymbols.0.symbol	claw
+VRESaurids_SauridClaws.symbolPack.suffixSymbols.1.symbol	sharp
+VRESaurids_SauridClaws.symbolPack.suffixSymbols.2.symbol	hook
+VRESaurids_SauridClaws.symbolPack.suffixSymbols.3.symbol	predator
+VRESaurids_SauridClaws.symbolPack.suffixSymbols.4.symbol	raptor
+VRESaurids_SauridClaws.symbolPack.suffixSymbols.5.symbol	reptile
+VRESaurids_SauridClaws.symbolPack.suffixSymbols.6.symbol	saurus
+VRESaurids_SauridClaws.symbolPack.wholeNameSymbols.0.symbol	claws
+## DefInjected/GeneDef/GeneDefs_Health.xml
+VRESaurids_Oviparous.label	oviparous
+VRESaurids_Oviparous.description	Carriers of this gene lay eggs instead of giving live birth. Eggs need time and correct conditions to hatch.\n  
+VRESaurids_Oviparous.symbolPack.prefixSymbols.0.symbol	egg
+VRESaurids_Oviparous.symbolPack.prefixSymbols.1.symbol	bud
+VRESaurids_Oviparous.symbolPack.prefixSymbols.2.symbol	roe
+VRESaurids_Oviparous.symbolPack.suffixSymbols.0.symbol	layer
+VRESaurids_Oviparous.symbolPack.suffixSymbols.1.symbol	parous
+VRESaurids_Oviparous.symbolPack.wholeNameSymbols.0.symbol	egglayer
+VRESaurids_Oviparous.symbolPack.wholeNameSymbols.1.symbol	oviparous
+VRESaurids_Oviparous.symbolPack.wholeNameSymbols.2.symbol	egger
+VRESaurids_Oviparous.symbolPack.wholeNameSymbols.3.symbol	hatcher
+VRESaurids_ColdBlooded.label	cold-blooded
+VRESaurids_ColdBlooded.description	Carriers of this gene need to maintain a steady body temperature. Being too hot or too cold will result in loss of motor functions, and if unchecked too long - death.
+VRESaurids_ColdBlooded.symbolPack.prefixSymbols.0.symbol	thermo
+VRESaurids_ColdBlooded.symbolPack.suffixSymbols.0.symbol	lizard
+VRESaurids_ColdBlooded.symbolPack.wholeNameSymbols.0.symbol	cold-blooded
+VRESaurids_Pheromones.label	pheromones
+VRESaurids_Pheromones.description	Carriers of this gene excrete special pheromones that attract members of the same xenotype.
+## DefInjected/GeneDef/GeneDefs_ScaleSkin.xml
+VRESaurids_ScaleSkin.label	scaleskin
+VRESaurids_ScaleSkin.description	Carriers of this gene grow scales all over their body, which protect them from sharp damage of any kind.
+VRESaurids_ScaleSkin.labelShortAdj	scaleskinned
+## DefInjected/GeneDef/GeneDefs_Vocal.xml
+VRESaurids_LizardVoice.label	lizard voice
+VRESaurids_LizardVoice.description	Carriers have a terrifying voice like that of a dinosaur.
+VRESaurids_LizardVoice.symbolPack.prefixSymbols.0.symbol	dino
+VRESaurids_LizardVoice.symbolPack.prefixSymbols.1.symbol	lizard
+VRESaurids_LizardVoice.symbolPack.prefixSymbols.2.symbol	raptor
+VRESaurids_LizardVoice.symbolPack.prefixSymbols.3.symbol	reptile
+VRESaurids_LizardVoice.symbolPack.suffixSymbols.0.symbol	saur
+VRESaurids_LizardVoice.symbolPack.suffixSymbols.1.symbol	saurid
+VRESaurids_LizardVoice.symbolPack.suffixSymbols.2.symbol	saurus
+VRESaurids_LizardVoice.symbolPack.wholeNameSymbols.0.symbol	screamer
+VRESaurids_LizardVoice.symbolPack.wholeNameSymbols.1.symbol	screecher
+VRESaurids_LizardVoice.symbolPack.wholeNameSymbols.2.symbol	raptor
+VRESaurids_LizardVoice.symbolPack.wholeNameSymbols.3.symbol	reptile
+## DefInjected/HairDef/HairDefs_Saurid.xml
+VRESaurids_Yoshi.label	yoshi
+VRESaurids_Zilla.label	zilla
+VRESaurids_Rango.label	rango
+VRESaurids_Geico.label	geico
+VRESaurids_Kaa.label	kaa
+VRESaurids_Crush.label	crush
+VRESaurids_Grimlock.label	grimlock
+VRESaurids_Reptar.label	reptar
+VRESaurids_Littlefoot.label	littlefoot
+VRESaurids_Spyro.label	spyro
+VRESaurids_Smaug.label	smaug
+## DefInjected/HediffDef/HediffDef_EggFatigue.xml
+VRESaurids_EggFatigue.label	egg fatigue
+VRESaurids_EggFatigue.description	After laying an egg, it is common with those with the oviparous gene to go through a short period of sterility till they are capable of producing another. This is only a temporary condition and causes no long term effects.
+## DefInjected/HediffDef/HediffDef_SauridClaws.xml
+VRESaurids_SauridClaws.label	saurid claws
+VRESaurids_SauridClaws.description	Carriers of this gene have hands that partially resemble dinosaur claws. This has a slight impact on their ability to manipulate objects, but allows them to deal deep cuts in melee combat.
+VRESaurids_SauridClaws.comps.HediffComp_VerbGiver.tools.claws.label	claws
+## DefInjected/HediffDef/HediffDef_SauridHealth.xml
+VRESaurids_HypothermicSlowdown.label	hypothermic slowdown
+VRESaurids_HypothermicSlowdown.description	This pawn is cold blooded and their body will begin to shut down when too cold, it has the benefit of slowing their metabolism so they have a lower hunger rate however the longer this goes on the worse it will affect their capabilities up to the point where they die.
+VRESaurids_HyperthermicSlowdown.label	hyperthermic slowdown
+VRESaurids_HyperthermicSlowdown.description	This pawn is cold blooded and their body will begin to shut down when too hot, it has the benefit of slowing their metabolism so they have a lower hunger rate however the longer this goes on the worse it will affect their capabilities up to the point where they die.
+## DefInjected/PawnKindDef/PawnKinds_Player.xml
+VRESaurid_SauridMother.label	Saurid Mother
+## DefInjected/PawnKindDef/PawnKinds_Saurids.xml
+VRESaurids_Villager_Saurid.label	villager
+VRESaurids_VillagerChild_Saurid.label	villager
+VRESaurids_TownGuard_Saurid.label	town guard
+VRESaurids_TownCouncilman_Saurid.label	town councilman
+VRESaurids_TownCouncilman_Saurid.labelPlural	town councilmen
+VRESaurids_TownTrader_Saurid.label	town trader
+VRESaurids_MercenaryGunner_Saurid.label	saurid gunner
+VRESaurids_MercenaryElite_Saurid.label	saurid elite
+VRESaurids_MercenaryElite_Saurid.labelPlural	elite mercenaries
+## DefInjected/RulePackDef/RulePack_Namers_Faction.xml
+VRESaurids_NamerFactionOutlanderSaurid.rulePack.rulesStrings[0]	r_name->[firstPart]'[secondPart] [union]
+VRESaurids_NamerFactionOutlanderSaurid.rulePack.rulesStrings[1]	firstPart->Trum
+VRESaurids_NamerFactionOutlanderSaurid.rulePack.rulesStrings[2]	firstPart->Alam
+VRESaurids_NamerFactionOutlanderSaurid.rulePack.rulesStrings[3]	firstPart->Pob
+VRESaurids_NamerFactionOutlanderSaurid.rulePack.rulesStrings[4]	firstPart->Lav
+VRESaurids_NamerFactionOutlanderSaurid.rulePack.rulesStrings[5]	firstPart->Na
+VRESaurids_NamerFactionOutlanderSaurid.rulePack.rulesStrings[6]	firstPart->Kur
+VRESaurids_NamerFactionOutlanderSaurid.rulePack.rulesStrings[7]	firstPart->Pan
+VRESaurids_NamerFactionOutlanderSaurid.rulePack.rulesStrings[8]	firstPart->Mil
+VRESaurids_NamerFactionOutlanderSaurid.rulePack.rulesStrings[9]	firstPart->Hask
+VRESaurids_NamerFactionOutlanderSaurid.rulePack.rulesStrings[10]	secondPart->Pakh
+VRESaurids_NamerFactionOutlanderSaurid.rulePack.rulesStrings[11]	secondPart->Dolon
+VRESaurids_NamerFactionOutlanderSaurid.rulePack.rulesStrings[12]	secondPart->Sarim
+VRESaurids_NamerFactionOutlanderSaurid.rulePack.rulesStrings[13]	secondPart->Doloss
+VRESaurids_NamerFactionOutlanderSaurid.rulePack.rulesStrings[14]	secondPart->Rokh
+VRESaurids_NamerFactionOutlanderSaurid.rulePack.rulesStrings[15]	secondPart->Vakhna
+VRESaurids_NamerFactionOutlanderSaurid.rulePack.rulesStrings[16]	secondPart->Kariss
+VRESaurids_NamerFactionOutlanderSaurid.rulePack.rulesStrings[17]	secondPart->Poffon
+VRESaurids_NamerFactionOutlanderSaurid.rulePack.rulesStrings[18]	secondPart->Hariss
+VRESaurids_NamerFactionOutlanderSaurid.rulePack.rulesStrings[19]	secondPart->Soyob
+VRESaurids_NamerFactionOutlanderSaurid.rulePack.rulesStrings[20]	secondPart->Dakhan
+VRESaurids_NamerFactionOutlanderSaurid.rulePack.rulesStrings[21]	secondPart->Voim
+VRESaurids_NamerFactionOutlanderSaurid.rulePack.rulesStrings[22]	secondPart->Dukh
+VRESaurids_NamerFactionOutlanderSaurid.rulePack.rulesStrings[23]	secondPart->Vassk
+VRESaurids_NamerFactionOutlanderSaurid.rulePack.rulesStrings[24]	secondPart->Esam
+VRESaurids_NamerFactionOutlanderSaurid.rulePack.rulesStrings[25]	secondPart->Cassthar
+VRESaurids_NamerFactionOutlanderSaurid.rulePack.rulesStrings[26]	secondPart->Barkan
+VRESaurids_NamerFactionOutlanderSaurid.rulePack.rulesStrings[27]	secondPart->Lampan
+VRESaurids_NamerFactionOutlanderSaurid.rulePack.rulesStrings[28]	secondPart->Rokba
+VRESaurids_NamerFactionOutlanderSaurid.rulePack.rulesStrings[29]	secondPart->Histan
+VRESaurids_NamerFactionOutlanderSaurid.rulePack.rulesStrings[30]	secondPart->Oloman
+VRESaurids_NamerFactionOutlanderSaurid.rulePack.rulesStrings[31]	secondPart->Okran
+VRESaurids_NamerFactionOutlanderSaurid.rulePack.rulesStrings[32]	secondPart->Fokin
+VRESaurids_NamerFactionOutlanderSaurid.rulePack.rulesStrings[33]	secondPart->Farass
+VRESaurids_NamerFactionOutlanderSaurid.rulePack.rulesStrings[34]	secondPart->Iomath
+VRESaurids_NamerFactionOutlanderSaurid.rulePack.rulesStrings[35]	secondPart->Mothon
+VRESaurids_NamerFactionOutlanderSaurid.rulePack.rulesStrings[36]	secondPart->Dialom
+VRESaurids_NamerFactionOutlanderSaurid.rulePack.rulesStrings[37]	secondPart->Bodnok
+VRESaurids_NamerFactionOutlanderSaurid.rulePack.rulesStrings[38]	secondPart->Bathnor
+VRESaurids_NamerFactionOutlanderSaurid.rulePack.rulesStrings[39]	secondPart->Zoyom
+VRESaurids_NamerFactionOutlanderSaurid.rulePack.rulesStrings[40]	secondPart->Abnar
+VRESaurids_NamerFactionOutlanderSaurid.rulePack.rulesStrings[41]	secondPart->Reeken
+VRESaurids_NamerFactionOutlanderSaurid.rulePack.rulesStrings[42]	secondPart->Bissna
+VRESaurids_NamerFactionOutlanderSaurid.rulePack.rulesStrings[43]	secondPart->Turom
+VRESaurids_NamerFactionOutlanderSaurid.rulePack.rulesStrings[44]	secondPart->Taratha
+VRESaurids_NamerFactionOutlanderSaurid.rulePack.rulesStrings[45]	secondPart->Tisska
+VRESaurids_NamerFactionOutlanderSaurid.rulePack.rulesStrings[46]	secondPart->Purim
+VRESaurids_NamerFactionOutlanderSaurid.rulePack.rulesStrings[47]	secondPart->Shuss
+VRESaurids_NamerFactionOutlanderSaurid.rulePack.rulesStrings[48]	secondPart->Parathnak
+VRESaurids_NamerFactionOutlanderSaurid.rulePack.rulesStrings[49]	secondPart->Gioshum
+VRESaurids_NamerFactionOutlanderSaurid.rulePack.rulesStrings[50]	secondPart->Korob
+VRESaurids_NamerFactionOutlanderSaurid.rulePack.rulesStrings[51]	secondPart->Hinthab
+VRESaurids_NamerFactionOutlanderSaurid.rulePack.rulesStrings[52]	secondPart->Kulom
+VRESaurids_NamerFactionOutlanderSaurid.rulePack.rulesStrings[53]	secondPart->Avintok
+VRESaurids_NamerFactionOutlanderSaurid.rulePack.rulesStrings[54]	secondPart->Tannek
+VRESaurids_NamerFactionOutlanderSaurid.rulePack.rulesStrings[55]	union->Union
+VRESaurids_NamerFactionOutlanderSaurid.rulePack.rulesStrings[56]	union->Nation
+VRESaurids_NamerFactionOutlanderSaurid.rulePack.rulesStrings[57]	union->Confederacy
+VRESaurids_NamerFactionOutlanderSaurid.rulePack.rulesStrings[58]	union->Confederation
+VRESaurids_NamerFactionOutlanderSaurid.rulePack.rulesStrings[59]	union->Alliance
+VRESaurids_NamerFactionOutlanderSaurid.rulePack.rulesStrings[60]	union->Covenant
+VRESaurids_NamerFactionOutlanderSaurid.rulePack.rulesStrings[61]	union->Treaty
+VRESaurids_NamerFactionOutlanderSaurid.rulePack.rulesStrings[62]	union->Pact
+VRESaurids_NamerFactionOutlanderSaurid.rulePack.rulesStrings[63]	union->Coalition
+VRESaurids_NamerSettlementOutlanderSaurid.rulePack.rulesStrings[0]	r_name->[firstPart] [secondPart]
+## DefInjected/ScenPartDef/ScenarioDef_Saurid.xml
+VRESaurids_StartingHumanEggs.label	start with human eggs
+## DefInjected/ScenarioDef/ScenarioDef_Saurid.xml
+VRESaurids_SauridMother.label	Saurid Mother
+VRESaurids_SauridMother.description	Facing difficulties and abuse, you were forced to abandon your way of life and hitched a ride on one of the short distance transport vessels. You were only able to take what matters most to you - your eggs. They are the only reminder of your long gone partner, and you promised to raise them no matter the cost. Not long after the departure, the pilot and his goons decided to take your money and eject you into the wilderness.\n\nNote: Since you start with nothing except 4 saurid eggs, this is a difficult scenario.
+VRESaurids_SauridMother.scenario.description	Facing difficulties and abuse, you were forced to abandon your way of life and hitched a ride on one of the short distance transport vessels. You were only able to take what matters most to you - your eggs. They are the only reminder of your long gone partner, and you promised to raise them no matter the cost. Not long after the departure, the pilot and his goons decided to take your money and eject you into the wilderness.\n\nNote: Since you start with nothing except 4 saurid eggs, this is a difficult scenario.
+VRESaurids_SauridMother.scenario.name	Saurid Mother
+VRESaurids_SauridMother.scenario.parts.GameStartDialog.text	Facing difficulties and abuse, you were forced to abandon your way of life and hitched a ride on one of the short distance transport vessels. You were only able to take what matters most to you - your eggs. They are the only reminder of your long gone partner, and you promised to raise them no matter the cost. Not long after the departure, the pilot and his goons decided to take your money and eject you into the wilderness.
+VRESaurids_SauridMother.scenario.summary	One crashlanded saurid parent with 4 eggs that need protection and care. Extra difficult.
+## DefInjected/StyleItemCategoryDef/HairDefs_Saurid.xml
+Saurid.label	saurid
+## DefInjected/TaleDef/TaleDefs_Saurid.xml
+VRESaurids_HypothermicReveal.label	hypothic slowdown revealed
+VRESaurids_HypothermicReveal.rulePack.rulesStrings[0]	tale_noun->[PAWN_nameDef] freezing to death
+VRESaurids_HypothermicReveal.rulePack.rulesStrings[1]	image->[PAWN_nameFull] trudging through snow [circumstance_group]
+VRESaurids_HypothermicReveal.rulePack.rulesStrings[2]	image->[PAWN_nameFull] huddled beside a [TerrainFeature] [circumstance_group]
+VRESaurids_HypothermicReveal.rulePack.rulesStrings[3]	image->[PAWN_nameFull] searching for a warm [Apparel] [circumstance_group]
+VRESaurids_HypothermicReveal.rulePack.rulesStrings[4]	image->[PAWN_nameFull] crouching next to a fire [circumstance_group]
+VRESaurids_HypothermicReveal.rulePack.rulesStrings[5]	image->[PAWN_nameFull] trying to light a fire [circumstance_group]
+VRESaurids_HypothermicReveal.rulePack.rulesStrings[6]	circumstance_phrase->while [PAWN_possessive] face slowly turns blue
+VRESaurids_HypothermicReveal.rulePack.rulesStrings[7]	circumstance_phrase->and shivering uncontrollably
+VRESaurids_HypothermicReveal.rulePack.rulesStrings[8]	circumstance_phrase->while covered in frost
+VRESaurids_HypothermicReveal.rulePack.rulesStrings[9]	circumstance_phrase->while exhaling clouds of fog
+VRESaurids_HypothermicReveal.rulePack.rulesStrings[10]	desc_sentence->[Quantity_adjphrase] frozen [Animal] corpses surround the area.
+VRESaurids_HypothermicReveal.rulePack.rulesStrings[11]	desc_sentence->[PAWN_nameDef]'s clothes are tattered and worn.
+VRESaurids_HypothermicReveal.rulePack.rulesStrings[12]	desc_sentence->A cold blue moon looms in the background.
+VRESaurids_HypothermicReveal.rulePack.rulesStrings[13]	desc_sentence->The scene takes place inside a snow-covered [TreeType] forest.
+VRESaurids_HypothermicReveal.rulePack.rulesStrings[14]	desc_sentence->The scene appears to take place inside a freezer.
+VRESaurids_HypothermicReveal.rulePack.rulesStrings[15]	desc_sentence->[Quantity_adjphrase] shivering [Animal]s surround the scene.
+VRESaurids_HypothermicReveal.rulePack.rulesStrings[16]	desc_sentence->[Quantity_adjphrase] dying [Animal]s lay on the ground.
+VRESaurids_HyperthermicReveal.label	hyperthermic slowdown revealed
+VRESaurids_HyperthermicReveal.rulePack.rulesStrings[0]	tale_noun->[PAWN_nameDef] overheating
+VRESaurids_HyperthermicReveal.rulePack.rulesStrings[1]	image->[PAWN_nameFull] trudging through sand [circumstance_group]
+VRESaurids_HyperthermicReveal.rulePack.rulesStrings[2]	image->[PAWN_nameFull] huddled in the shade of a [TerrainFeature] [circumstance_group]
+VRESaurids_HyperthermicReveal.rulePack.rulesStrings[3]	image->[PAWN_nameFull] searching for water [circumstance_group]
+VRESaurids_HyperthermicReveal.rulePack.rulesStrings[4]	image->[PAWN_nameFull] searching for shade [circumstance_group]
+VRESaurids_HyperthermicReveal.rulePack.rulesStrings[5]	image->[PAWN_nameFull] crawling across sun-baked dirt [circumstance_group]
+VRESaurids_HyperthermicReveal.rulePack.rulesStrings[6]	circumstance_phrase->and covered in sweat
+VRESaurids_HyperthermicReveal.rulePack.rulesStrings[7]	circumstance_phrase->with cracked dry lips
+VRESaurids_HyperthermicReveal.rulePack.rulesStrings[8]	circumstance_phrase->while vomiting
+VRESaurids_HyperthermicReveal.rulePack.rulesStrings[9]	desc_sentence->[Quantity_adjphrase] dessicated [Animal] corpses surround the area.
+VRESaurids_HyperthermicReveal.rulePack.rulesStrings[10]	desc_sentence->[PAWN_nameDef]'s clothes are tattered and torn.
+VRESaurids_HyperthermicReveal.rulePack.rulesStrings[11]	desc_sentence->A blazing sun looms in the background.
+VRESaurids_HyperthermicReveal.rulePack.rulesStrings[12]	desc_sentence->The scene takes place inside a blazing desert.
+VRESaurids_HyperthermicReveal.rulePack.rulesStrings[13]	desc_sentence->The scene appears to take place inside, next to a heater.
+VRESaurids_HyperthermicReveal.rulePack.rulesStrings[14]	desc_sentence->[Quantity_adjphrase] unmoving [Animal]s surround the scene.
+VRESaurids_HyperthermicReveal.rulePack.rulesStrings[15]	desc_sentence->[Quantity_adjphrase] dying [Animal]s lay on the ground.
+## DefInjected/TaleDef/Thoughts_AteHumanEgg.xml
+VRESaurids_KilledEggChild.label	human egg eaten
+## DefInjected/ThingDef/ItemDef_HumanEgg.xml
+VRESaurids_HumanEgg.label	human egg (fert.)
+VRESaurids_HumanEgg.description	Fertilized human egg. If all goes well, it should hatch into a human baby. It definitely shouldn’t but can be eaten raw. Eating it is treated the same way as killing a baby.
+## DefInjected/ThoughtDef/Thoughts_AteHumanEgg.xml
+VRESaurids_KilledEggChildThought.stages.ate_human_egg.label	ate human egg
+VRESaurids_KilledEggChildThought.stages.ate_human_egg.description	Killing one so young feels wrong, there's no situation where this feels right.
+VRESaurids_KilledEggChild_Opinion.stages.ate_human_egg.label	ate human egg
+## DefInjected/ThoughtDef/Thoughts_Pheromones.xml
+VRESaurids_PheromoneThought.stages.comforting_scent.label	comforting scent
+## DefInjected/XenotypeDef/XenotypeDefs.xml
+VRESaurids_Saurid.label	saurid
+VRESaurids_Saurid.description	Genetically spliced with synthesized reptile genetic material for improved compatibility with arid environments, saurids are cold-blooded isolationists with harsh voices and extremely low metabolisms. Their sharp claws and hardened scales make them particularly suited to melee encounters.\n\nFor workers looking for higher-wage jobs, saurid xenogerms are offered alongside employment packages to particularly arid and hot planets. As conditions are quite harsh, they experience an attitude shift to be less social and consume fewer calories which allows them to be more profitable. As they are not excluded from starting families, saurids can communicate with each other using pheromones and are oviparous to reduce medical complications caused by lack of proper social infrastructure.
+VRESaurids_Saurid.descriptionShort	Genetically engineered to survive on extremely low nutrition in the most arid environments, saurids adapt very well to hostile environments thanks to the oviparous nature of their reproduction as well as lizard-like genetic features. They prefer isolation and prefer to mate with other saurids.
+## Keyed/Dialogs_Various.xml
+VRESaurids_FactionGreetingHostile	{0} screeches something only saurids could understand into the microphone and disconnects.
+VRESaurids_FactionGreetingHostileAppreciative	Hissing and screeching angrily, {0} demands that you make a gesture of unity, like bringing gifts to one of {0_possessive} settlements or releasing {0_possessive} faction's prisoners unharmed. Until then, {0_pronoun} is unwilling to talk.\n\nHissing an insult, {0_pronoun} disconnects.
+VRESaurids_FactionGreetingWary	{0} hisses a greeting and asks what business you need done.
+VRESaurids_FactionGreetingWarm	Barks out enthusiastically, {0} greets {NEGOTIATOR_labelShort} and asks what {LEADER_pronoun} can do to help you.
+VRESaurids_MilitaryAidSent	{0} agrees to send saurid fighters to help you.
+VRESaurids.EggLaidLabel	{0} laid an egg!
+VRESaurids.EggLaidDesc	{0} has laid an egg due to being oviparous. Make sure to keep the egg in a safe environment, under the roof and between 0°C - 50°C. After some time the egg will hatch into a child. {0} will be unable to lay another egg until their body recovers from this process.
+VRESaurids.EggHatchedLabel	{0}'s egg hatched!
+VRESaurids.EggHatchedDesc	{0}'s egg has hatched successfully, adding a new baby to the colony! Remember to take care of them and ensure they grow up healthy.
+VRESaurids.CannotOviparous	oviparous
+VRESaurids.ColdBloodedDanger	Cold-blooded Danger!
+VRESaurids.ColdBloodedDangerExplanation	Cold-blooded pawns will fall to extreme temperatures much easier and faster than others, these pawns are currently at risk

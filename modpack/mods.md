@@ -114,3 +114,4 @@ Gerada por `modpack/update.ps1` a partir de `Mods/` e da ordem de carga em `Mods
 |---|---|---|
 | Ecos da Queda | `ecosdaqueda.core` | `mod/ecos-da-queda` |
 | Ecos da Queda - Ferramentas de Debug | `ecosdaqueda.debug` | `mod/ecos-da-queda-debug` |
+| Ecos da Queda - Tradução PT-BR | `ecosdaqueda.traducao` | `mod/ecos-da-queda-traducao` |

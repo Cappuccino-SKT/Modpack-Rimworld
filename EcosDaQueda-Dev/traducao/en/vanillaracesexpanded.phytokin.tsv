@@ -1,0 +1,167 @@
+## DefInjected/AbilityDef/Abilities.xml
+VRE_PlantPoluxTree.label	plant polux bush
+VRE_PlantPoluxTree.description	Plants a polux bush in the designated spot.
+## DefInjected/AbilityDef/Abilities_Ideology.xml
+VRE_SummonCompanionDryads.label	summon companion dryads
+VRE_SummonCompanionDryads.description	Summons two companion dryads under the control of the caster. These dryads are permanent colony animals, and can haul, clean, caravan, and be drafted. Two new dryads can be summoned if the previous ones are killed. The ability has a cooldown of 1 quadrum.
+## DefInjected/AbilityDef/Abilities_Royalty.xml
+VRE_AnimaSong.label	anima song
+VRE_AnimaSong.description	Target an Anima tree to cause it to sing a beautiful psychic orchestra. Instantly triggers a psychic soothe, but can only be cast once a quadrum.
+## DefInjected/GeneDef/GeneDefs_Archite.xml
+VRE_Photosynthesis.label	photosynthesis
+VRE_Photosynthesis.description	Carriers of this gene are capable of converting light energy into chemical energy due to the special genetic composition of their skin. They do not become hungry if exposed to sunlight.
+VRE_Photosynthesis.symbolPack.prefixSymbols.0.symbol	photo
+VRE_Photosynthesis.symbolPack.suffixSymbols.0.symbol	synthesis
+VRE_Photosynthesis.symbolPack.suffixSymbols.1.symbol	plant
+VRE_SaplingBirth.label	saplingbirth
+VRE_SaplingBirth.description	Carriers of this gene grow their baby outside of their womb, in the form of a saplingchild plant. When the plant is fully grown, a child can be extracted from it.
+VRE_SaplingBirth.symbolPack.prefixSymbols.0.symbol	sapling
+VRE_SaplingBirth.symbolPack.prefixSymbols.1.symbol	spawn
+VRE_SaplingBirth.symbolPack.prefixSymbols.2.symbol	seed
+VRE_PoluxAffinity.label	polux affinity
+VRE_PoluxAffinity.description	Carriers of this gene have a special connection to the polux tree, allowing them to act as an amplifier to the special properties of the tree. Once a year they can plant a polux bush that will progressively grow, and their very presence will strengthen the effect of the bush's pollution pumping effects. They can also consume wastepacks and will become unhappy if there is no waste to be consumed. Consuming wastepacks does not satisfy their hunger.
+VRE_PoluxAffinity.resourceDescription	A need by {PAWN_nameDef} to consume wastepacks
+VRE_PoluxAffinity.resourceLabel	wastepacks
+VRE_PoluxAffinity.symbolPack.prefixSymbols.0.symbol	pol
+VRE_PoluxAffinity.symbolPack.prefixSymbols.1.symbol	polux
+## DefInjected/GeneDef/GeneDefs_Archite_Ideology.xml
+VRE_GauranlenAffinity.label	gauranlen affinity
+VRE_GauranlenAffinity.description	Carriers of this gene have a special connection to the gauranlen tree, allowing them to act as an amplifier to the special properties of the tree. They can swiftly prune the tree and increase the success chance of any tree-related rituals. Most importantly, carriers of this gene act as an extension of the gauranlen ecosystem, and can spawn and command two dryads wherever they go.
+VRE_GauranlenAffinity.symbolPack.prefixSymbols.0.symbol	gau
+VRE_GauranlenAffinity.symbolPack.prefixSymbols.1.symbol	gauran
+## DefInjected/GeneDef/GeneDefs_Archite_Royalty.xml
+VRE_AnimaAffinity.label	anima affinity
+VRE_AnimaAffinity.description	Carriers of this gene have a special connection to the anima tree, allowing them to act as an amplifier to the special properties of the tree. They can encourage anima trees to sing, giving everyone in large radius a psychic soothe, as well as help with connection and meditation to it.
+VRE_AnimaAffinity.symbolPack.prefixSymbols.0.symbol	anima
+VRE_AnimaAffinity.symbolPack.prefixSymbols.1.symbol	anim
+## DefInjected/GeneDef/GeneDefs_Blood.xml
+VRE_SapBlood.label	sap blood
+VRE_SapBlood.description	Carriers of this gene have thick, sticky, orange blood that greatly slows down their bleed out time, however it also impacts their ability to do work.
+## DefInjected/GeneDef/GeneDefs_Bodies.xml
+VRE_BarkSkin.label	barkskin
+VRE_BarkSkin.description	Carriers of this gene have their skin resembling tree bark. This allows them to withstand blunt trauma that would normally knock people unconscious.
+VRE_BarkSkin.labelShortAdj	barkskinned
+## DefInjected/GeneDef/GeneDefs_Cosmetic.xml
+VRE_FoliageHair.label	foliage hair
+VRE_FoliageHair.description	Carriers of this gene have natural-looking, leafy hair.
+VRE_FoliageHair.symbolPack.prefixSymbols.0.symbol	foliage
+VRE_FoliageHair.symbolPack.suffixSymbols.0.symbol	flower
+VRE_FoliageHair.symbolPack.suffixSymbols.1.symbol	plant
+VRE_HairColor_Anima.label	anima hair
+VRE_HairColor_Anima.description	Carriers of this gene have a particular hair color. With multiple hair color genes, one is randomly selected.
+VRE_HairColor_Gauranlen.label	gauranlen hair
+VRE_HairColor_Gauranlen.description	Carriers of this gene have a particular hair color. With multiple hair color genes, one is randomly selected.
+VRE_HairColor_Pollux.label	pollux hair
+VRE_HairColor_Pollux.description	Carriers of this gene have a particular hair color. With multiple hair color genes, one is randomly selected.
+## DefInjected/GeneDef/GeneDefs_Gender.xml
+VRE_Female.label	female-only
+VRE_Female.description	Carriers of this gene are guaranteed to be female when born.
+VRE_Female.labelShortAdj	feminine
+## DefInjected/GeneDef/GeneDefs_Mood.xml
+VRE_GreenThumb.label	green thumb
+VRE_GreenThumb.description	Carriers of this gene become very happy when taking part in plant sowing.
+VRE_GreenThumb.labelShortAdj	gardening
+VRE_GreenThumb.symbolPack.prefixSymbols.0.symbol	green
+## DefInjected/GeneDef/GeneDefs_Psychic.xml
+VRE_ProgressiveAttunement.label	progressive attunement
+VRE_ProgressiveAttunement.description	Carriers of this gene become more psychically attuned as they age, greatly increasing their psychic sensitivity.
+VRE_ProgressiveAttunement.labelShortAdj	psychic
+VRE_ProgressiveAttunement.symbolPack.prefixSymbols.0.symbol	psychic
+VRE_ProgressiveAttunement.symbolPack.prefixSymbols.1.symbol	psy
+## DefInjected/HairDef/HairsGeneral.xml
+VRE_FoliageHairEve.label	eve
+VRE_FoliageHairHope.label	hope
+VRE_FoliageHairKathy.label	kathy
+VRE_FoliageHairLeafein.label	leafein
+VRE_FoliageHairOphie.label	ophie
+VRE_FoliageHairPixie.label	pixie
+## DefInjected/HediffDef/Hediff_Sterile.xml
+VRE_TempSterile.label	sapling fatigue
+VRE_TempSterile.description	After being ready to create a saplingchild, the person with the saplingbirth gene goes through a short period of sterility till they are capable of producing another. This is only a temporary condition and causes no long term effects.
+## DefInjected/HediffDef/Hediffs_Global_Misc.xml
+VRE_Photosynthetic.label	photosynthesis
+VRE_Photosynthetic.description	This person is capable of converting light energy into chemical energy due to the special genetic composition of their skin. They do not become hungry if exposed to sunlight.
+VRE_Photosynthetic.stages.in_sunlight.label	in sunlight
+VRE_Photosynthetic.stages.out_of_sunlight.label	out of sunlight
+VRE_SapBlood.label	sap blood
+VRE_SapBlood.description	This person has a thick, sticky, orange blood that greatly slows down their bleed out time, however it also impacts their ability to do work.
+VRE_Saplingchild.label	saplingchild needs planting
+VRE_Saplingchild.description	When a colonist with saplingbirth gene becomes pregnant, they need to designate a place to plant their offspring. If they don’t do it before the second trimester begins (6 days), the pregnancy will be terminated.
+## DefInjected/IncidentDef/Incidents_World_Quests.xml
+VRE_GiveQuest_Intro_Phytokin.label	wandering phytokin
+## DefInjected/JobDef/Jobs_Work.xml
+VRE_PlantSaplingchild.reportString	planting saplingchild.
+VRE_ConsumeWastepack.reportString	consuming TargetA.
+## DefInjected/PawnKindDef/Races_Animal_Ideology.xml
+VRE_CompanionDryad.label	companion dryad
+## DefInjected/QuestScriptDef/Script_Intro_Phytokin.xml
+VRE_Intro_Phytokin.questDescriptionRules.rulesStrings[0]	questDescription->[asker_nameFull], a powerful phytokin, is calling from nearby. She was cast out by [enemyFaction_name] for giving them wrong advice, and is now being hunted by a search party. The search party of [enemyFaction_pawnsPlural] is composed of: \n\n[raid/raidPawnKinds]\n\n[asker_nameFull] wants you to keep her safe at [map_definite]. If you accept, she will arrive immediately, but she will be followed by the search party that you will need to defeat.\n\nPhytokins are plant-based humanoids with an emphasis on symmetry and symbiosis. Their ability to subsist only on sunlight and affinity with any and all plantlife make them especially suited to aiding newly established colonies or underperforming industrial farms.
+VRE_Intro_Phytokin.questNameRules.rulesStrings[0]	questName->the [adjAny] Phytokin
+VRE_Intro_Phytokin.questNameRules.rulesStrings[1]	adjAny->hunted
+VRE_Intro_Phytokin.questNameRules.rulesStrings[2]	adjAny->fleeing
+VRE_Intro_Phytokin.questNameRules.rulesStrings[3]	adjAny->solitary
+VRE_Intro_Phytokin.questNameRules.rulesStrings[4]	adjAny->ambushed
+VRE_Intro_Phytokin.root.nodes.PawnsArrive.customLetterText.slateRef	{BASETEXT}\n\nBecause you accepted [asker_nameDef], the band of pirates pursuing her will arrive soon.
+VRE_Intro_Phytokin.root.nodes.Delay-0.node.parms.customLetterLabel.value.slateRef	{BASELABEL}: Pursuing pirates
+VRE_Intro_Phytokin.root.nodes.Delay-0.node.parms.customLetterText.value.slateRef	{BASETEXT}\n\nThese are the pirates that were hunting [../asker_nameFull].\n              
+## DefInjected/RulePackDef/RulePacks_Namers_Xenohumans.xml
+VRE_NamePhytokin.rulePack.rulesStrings[0]	r_name->[firstName] [lastName]
+VRE_NamePhytokin.rulePack.rulesStrings[1]	firstName->[namePhytokin]
+VRE_NamePhytokin.rulePack.rulesStrings[2]	lastName->[namePhytokin]
+## DefInjected/StyleItemCategoryDef/StyleItemCategoryDefs.xml
+VRE_Phytokin.label	phytokin
+## DefInjected/ThingDef/Buildings_Natural.xml
+VRE_SaplingchildTree.label	saplingchild
+VRE_SaplingchildTree.description	A small, cabbage-like plant created in the first trimester of the pregnancy by a sapling-mother. After 30 days, saplingchild will hatch and a child will emerge from it.\n\nMust be kept between -15 and 60ºC. If the plant is destroyed it will be treated as a stillbirth for the mother who planted it.
+## DefInjected/ThingDef/Filth_Various.xml
+VRE_SapBlood.label	sap blood
+## DefInjected/ThingDef/Plants_Special.xml
+VRE_PoluxBush.label	polux bush
+VRE_PoluxBush.description	A bush that has evolved to metabolize pollutants. By drawing pollutants from the ground through wide root networks, they slowly clean polluted terrain in their vicinity. However, they cannot do this if buildings are constructed over their roots.\n\nUnlike most methods of cleaning polluted terrain, polux bushes do not create toxic wastepacks.
+## DefInjected/ThingDef/Races_Animal_Ideology.xml
+VRE_CompanionDryad.label	companion dryad
+VRE_CompanionDryad.description	A dryad caste specialized in general protection and utility for the gauranlenkins. Companion dryads are strong, fierce and loyal, and will accompany their mother wherever they are needed. They can clean, haul, fight and carry packs in caravans.\n\nIn general, dryads are mammal-like creatures that have a symbiotic relationship with the Gauranlen tree. They reproduce together with their tree, which contains a hidden dryad queen. Dryads can morph into various specialized castes.
+VRE_CompanionDryad.tools.left_claw.label	left claw
+VRE_CompanionDryad.tools.right_claw.label	right claw
+VRE_CompanionDryad.tools.head.label	head
+## DefInjected/ThoughtDef/Thoughts_Memory_Misc.xml
+VRE_GreenThumbHappy.stages.sowed_a_plant.label	sowed a plant
+VRE_GreenThumbHappy.stages.sowed_a_plant.description	What the world needs is more plants!
+VRE_WastepacksNeed.stages.need_wastepacks.label	need wastepacks
+VRE_WastepacksNeed.stages.need_wastepacks.description	I have a need to consume and metabolize waste. It’s my purpose.
+## DefInjected/ThoughtDef/Thoughts_Situation_Special_Royalty.xml
+VRE_AnimaSong.stages.anima_song.label	anima song
+VRE_AnimaSong.stages.anima_song.description	It's like a calming voice at the back of my mind, soothing me, settling my nerves.
+## DefInjected/XenotypeDef/XenotypeDefs.xml
+VRE_Poluxkin.label	poluxkin
+VRE_Poluxkin.description	Based on genetic data retrofitted from Gauranlen Inc.’s investment into dendrology following the Fall of Sorne, phytokins are plant-based humanoids with an emphasis on symmetry and symbiosis. Their ability to subsist only on sunlight and affinity with any and all plantlife make them especially suited to aiding newly established colonies or underperforming industrial farms.\n\nBased on research from the forest planet of Phytok that committed to extensive analysis on human-compatibility with psychic energy, phytokin xenogerms are typically exclusive to high-ranking, supporting roles in megacorporations and planetary governments. Their unique way of reproduction has resulted in many identical offspring, with each generation becoming successively more competent than their progenitor, further contributing to their extremely low numbers. Their affinity with plantlife, along with the side effect of extremely high and ever-increasing psychic sensitivity, mean that any phytokin xenohumans found on the Rim are always adapted to high-concept, dominant trees that are present on their residing planet.\n\nThis particular xenogerm has adapted itself to Polux trees, allowing it to germinate new Polux bushes and improve local Polux bushes’ ability to consume toxic waste. While they are also immune to toxicity, they have developed a psychological requirement to consume and metabolize toxic wastepacks regularly.
+VRE_Poluxkin.descriptionShort	Powerful advisors to rulers and despots, poluxkins are beautiful and cunning and possess an ability to connect with a polux tree, greatly enhancing its abilities. They are immune to toxicity and in fact can help the environment by consuming and metabolizing waste. They are excellent at taking care of plants and reproduce via planting a saplingchild.
+## DefInjected/XenotypeDef/XenotypeDefs_Ideology.xml
+VRE_Gauranlenkin.label	gauranlenkin
+VRE_Gauranlenkin.description	Based on genetic data retrofitted from Gauranlen Inc.’s investment into dendrology following the Fall of Sorne, phytokins are plant-based humanoids with an emphasis on symmetry and symbiosis. Their ability to subsist only on sunlight and affinity with any and all plantlife make them especially suited to aiding newly established colonies or underperforming industrial farms.\n\nBased on research from the forest planet of Phytok that committed to extensive analysis on human-compatibility with psychic energy, phytokin xenogerms are typically exclusive to high-ranking, supporting roles in megacorporations and planetary governments. Their unique way of reproduction has resulted in many identical offspring, with each generation becoming successively more competent than their progenitor, further contributing to their extremely low numbers. Their affinity with plantlife, along with the side effect of extremely high and ever-increasing psychic sensitivity, mean that any phytokin xenohumans found on the Rim are always adapted to high-concept, dominant trees that are present on their residing planet.\n\nThis particular xenogerm has adapted itself to Gauranlen trees, allowing them to act as a non-stationary Dryad Queen, albeit without potential for growth. They can also improve attempts at connecting with a local Gauranlen tree as well as being twice as effective as a non-phytokin at pruning their own tree.
+VRE_Gauranlenkin.descriptionShort	Powerful advisors to rulers and despots, gauranlenkins are beautiful and cunning and possess an ability to connect with a gauranlen tree, greatly enhancing its abilities. Gauranlenkins can spawn two dryads that will consider them their mother, and will obey their every command. They are excellent at taking care of plants and reproduce via planting a saplingchild.
+## DefInjected/XenotypeDef/XenotypeDefs_Royalty.xml
+VRE_Animakin.label	animakin
+VRE_Animakin.description	Based on genetic data retrofitted from Gauranlen Inc.’s investment into dendrology following the Fall of Sorne, phytokins are plant-based humanoids with an emphasis on symmetry and symbiosis. Their ability to subsist only on sunlight and affinity with any and all plantlife make them especially suited to aiding newly established colonies or underperforming industrial farms.\n\nBased on research from the forest planet of Phytok that committed to extensive analysis on human-compatibility with psychic energy, phytokin xenogerms are typically exclusive to high-ranking, supporting roles in megacorporations and planetary governments. Their unique way of reproduction has resulted in many identical offspring, with each generation becoming successively more competent than their progenitor, further contributing to their extremely low numbers. Their affinity with plantlife, along with the side effect of extremely high and ever-increasing psychic sensitivity, mean that any phytokin xenohumans found on the Rim are always adapted to high-concept, dominant trees that are present on their residing planet.\n\nThis particular xenogerm has adapted itself to Anima trees, allowing it to converse with a local Anima tree and psychically stimulate blossoming Anima grass. They can also provide limited assistance to someone who is attempting to link with an Anima tree for psycasting benefits.
+VRE_Animakin.descriptionShort	Powerful advisors to rulers and despots, animakins are beautiful and cunning and possess an ability to connect with an anima tree, greatly enhancing its abilities. They are excellent at taking care of plants and reproduce via planting a saplingchild.
+## Keyed/Misc_Gameplay.xml
+VRE_ProgressiveAttunementOffset	Progressive attunement gene
+VRE_SaplingBirthReady	Sapling child
+VRE_SaplingBirthReadyDesc	When a colonist with saplingbirth gene becomes pregnant, they need to designate a place to plant their offspring. If they don’t do it before the second trimester begins (6 days), the pregnancy will be terminated.
+VRE_PlantSaplingchild	Plant saplingchild
+VRE_PlantSaplingchildDesc	Plant a saplingchild. If this isn't done before the second semester begins (6 days since pregnancy) it will count as a miscarriage. The saplingchild will need to be protected.
+VRE_SaplingNeedsSoil	Saplingchild needs to be planted on soil
+VRE_SaplingchildNeedsToBePlanted	Saplingchild needs to be planted
+VRE_SaplingchildNeedsToBePlantedDesc	When a colonist with saplingbirth gene becomes pregnant, they need to designate a place to plant their offspring. If they don’t do it before the second trimester begins (6 days), the pregnancy will be terminated. These colonists need to plant their saplingchild:\n\n{0}
+VRE_MotherXenotype	Mother xenotype: {0}
+VRE_DestroyedByTemp	 has been destroyed by temperature
+VRE_SaplingHatched	{0} has hatched from a sapling!
+VRE_SaplingHatchedLabel	{0} hatched!
+VRE_TimeToHatch	Time until birth: {0}
+VRE_UnlockedByGeneAnima	Unlocked via Anima Affinity gene
+VRE_UnlockedByGeneGau	Unlocked via Gauranlen Affinity gene
+VRE_CanOnlyBeUsedOnAnimaTree	This ability needs to be used on an anima tree
+VRE_CanOnlyBePlantedOnFertile	This ability needs to be used on terrain with fertility of at least 0.05
+VRE_TwoPreviousDryadsMustBeDead	A maximum of two dryads per colonist with Gauranlen affinity can be alive at the same time
+VRE_RitualPredictedOutcomeDescAffinityGeneCount	Anima Affinity gene
+VRE_RitualPredictedOutcomeDescAffinityGeneCountGau	Gauranlen Affinity gene

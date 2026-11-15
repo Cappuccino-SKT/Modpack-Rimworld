@@ -1,0 +1,79 @@
+## DefInjected/HediffDef/Hediffs.xml
+VPEH_Bloodfocus.label	foco de sangue
+VPEH_Bloodfocus.description	Regenerando concentração psíquica rapidamente ao custo de hemogênio.
+VPEH_Bloodmist.label	névoa de sangue
+VPEH_Bloodmist.description	Uma partícula especial de sanguófago está bloqueando as vias aéreas e causando vômitos intensos.
+VPEH_BloodRite.label	rito de sangue
+VPEH_BloodRite.description	A sensibilidade psíquica está amplificada pelo nível atual de hemogênio.
+## DefInjected/MeditationFocusDef/Foci.xml
+VPEH_Deathrest.label	descanso mortal
+## DefInjected/ThingDef/Projectiles.xml
+VPEH_BloodShard.label	estilhaço de sangue
+VPEH_BloodSpew.label	jorro de sangue
+VPEH_SanguineSpear.label	lança sanguínea
+## DefInjected/ThoughtDef/Thoughts.xml
+VPEH_SoakedInBlood.stages.soaked_in_blood-0.label	encharcado de sangue
+VPEH_SoakedInBlood.stages.soaked_in_blood-0.description	Estou encharcado de sangue.
+VPEH_SoakedInBlood.stages.soaked_in_blood-1.label	encharcado de sangue
+VPEH_SoakedInBlood.stages.soaked_in_blood-1.description	Estou encharcado de sangue.
+## DefInjected/VEF.Abilities.AbilityDef/Hemosage.xml
+VPEH_Bloodfocus.label	foco de sangue
+VPEH_Bloodfocus.description	Manipulando à força as reservas de hemogênio do corpo, o conjurador entra num estado de meditação acelerada e recupera concentração psíquica ao custo de hemogênio.
+VPEH_Bloodfocus.jobReportString	Usando habilidade: {0}
+VPEH_Bloodfocus.verbProperties.label	foco de sangue
+VPEH_BloodShard.label	estilhaço de sangue
+VPEH_BloodShard.description	Lança um pouco do sangue excedente como projétil letal, expelindo à força hemogênio solidificado numa estrutura cristalina.
+VPEH_BloodShard.jobReportString	Usando habilidade: {0}
+VPEH_BloodShard.verbProperties.label	estilhaço de sangue
+VPEH_BloodSpew.label	jorro de sangue
+VPEH_BloodSpew.description	Expele uma névoa fina de hemogênio sobre os alvos, cobrindo-os de sangue pegajoso e nauseante. Os atingidos são tomados por vômitos intensos.
+VPEH_BloodSpew.jobReportString	Usando habilidade: {0}
+VPEH_BloodSpew.verbProperties.label	jorro de sangue
+VPEH_CloseWounds.label	fechar ferimentos
+VPEH_CloseWounds.description	Desloca à força o sangue excedente para estancar qualquer sangramento. Porém, não cura de verdade.
+VPEH_CloseWounds.jobReportString	Usando habilidade: {0}
+VPEH_CloseWounds.verbProperties.label	fechar ferimentos
+VPEH_Hemodrain.label	hemodreno
+VPEH_Hemodrain.description	Extrai à força, à distância, o sangue do alvo e o converte em hemogênio. Prático, mas ineficiente.
+VPEH_Hemodrain.jobReportString	Usando habilidade: {0}
+VPEH_Hemodrain.verbProperties.label	hemodreno
+VPEH_CorpseExplosion.label	explosão de cadáver
+VPEH_CorpseExplosion.description	Usa o hemogênio do conjurador para superestimular o sangue de um cadáver, causando uma explosão que não fere, mas cobre todos de uma névoa de sangue espessa. Os atingidos são tomados por vômitos intensos.
+VPEH_CorpseExplosion.jobReportString	Usando habilidade: {0}
+VPEH_CorpseExplosion.verbProperties.label	explosão de cadáver
+VPEH_WordofOffering.label	palavra de oferenda
+VPEH_WordofOffering.description	Convence o alvo a oferecer o próprio sangue ao conjurador. Pode ser usada em visitantes e até em combate.
+VPEH_WordofOffering.jobReportString	Usando habilidade: {0}
+VPEH_WordofOffering.verbProperties.label	palavra de oferenda
+VPEH_SanguineSpear.label	lança sanguínea
+VPEH_SanguineSpear.description	Dispara uma lança de sangue pressurizado contra o alvo, ferindo-o e criando uma explosão de névoa de sangue. O dano depende do nível de hemogênio do conjurador.
+VPEH_SanguineSpear.jobReportString	Usando habilidade: {0}
+VPEH_SanguineSpear.verbProperties.label	lança sanguínea
+VPEH_BloodRite.label	rito de sangue
+VPEH_BloodRite.description	Cria uma partícula de hemogênio que segue o conjurador e amplifica a sensibilidade psíquica conforme o nível atual de hemogênio dele.
+VPEH_BloodRite.jobReportString	Usando habilidade: {0}
+VPEH_BloodRite.verbProperties.label	rito de sangue
+VPEH_Bloodstorm.label	tempestade de sangue
+VPEH_Bloodstorm.description	Cria um aguaceiro de sangue que cobre de névoa de sangue quem não é hemogênico, causando vômitos intensos. Os sanguófagos, por outro lado, regeneram hemogênio e não acumulam calor neural ao usar poderes psíquicos sob a tempestade de sangue.
+VPEH_Bloodstorm.jobReportString	Usando habilidade: {0}
+VPEH_Bloodstorm.modExtensions.3.message	Se você usar a tempestade de sangue, todos nesta área serão afetados, e você perderá boa vontade com todas as facções não hostis que estiverem visitando este lugar.\n\nA tempestade de sangue leva 10 segundos para ser conjurada e não pode ser interrompida. Quando terminar, a chuva de sangue cai por toda parte, afetando pessoas comuns e sanguófagos.\n\nTodos no mapa, menos os sanguófagos, serão afetados pela névoa de sangue, com vômitos intensos. Os sanguófagos não acumulam calor neural ao usar nenhum poder psíquico.\n\nQuer mesmo conjurar a tempestade de sangue?
+VPEH_Bloodstorm.verbProperties.label	tempestade de sangue
+## DefInjected/VanillaPsycastsExpanded.PsycasterPathDef/Paths.xml
+VPEH_Hemosage.label	hemomago
+VPEH_Hemosage.description	Hemomagos são mestres da magia de sangue que usam hemogênio como recurso para conjurar poderes psíquicos únicos.
+VPEH_Hemosage.lockedReason	Só hemogênicos
+VPEH_Hemosage.tooltip	Hemomagos são psicastes anciões e poderosos que usam a ligação com um motor do mal e sua maldição sangrenta para causar dor e manipular a matéria de formas vis e perversas. Dependentes de hemogênio, drenam e sugam a vida de todos ao redor, causando uma dor inacreditável e pesadelos ainda piores. Só quem tem acesso ao poder do hemogênio pode se tornar um verdadeiro hemomago.
+## DefInjected/WeatherDef/Weathers.xml
+VPEH_Bloodstorm.label	tempestade de sangue
+VPEH_Bloodstorm.description	Um aguaceiro místico de sangue, causado por um poder psíquico proibido dos hemomagos. Enquanto quem não é hemogênico se engasga com sangue, os sanguófagos regeneram hemogênio e podem usar poderes psíquicos sem se preocupar com o calor neural.
+## Keyed/Keys.xml
+VPEH.DeathrestBuilding	É uma construção de descanso mortal.
+VPEH.DeathrestBuildingsNearby	{0} construções de descanso mortal por perto.
+VPEH.HemogenTooLow	Hemogênio baixo demais. É preciso no mínimo {0}.
+VPEH.NoHemogenGene	O personagem não tem gene de hemogênio.
+VPEH.MustBeNotDessicated	O cadáver não pode estar ressecado.
+VPEH.OnlyNonHemogenic	Não é possível conjurar: o alvo é hemogênico.
+VPEH.CancelBloodfocus	Cancelar foco de sangue
+VPEH.CancelBloodfocusDesc	Clique para cancelar o foco de sangue do conjurador.
+VPEH.HemogenLetter	H
+VPEH.OnlyHumanlikes	Não é possível conjurar: o alvo não é humano

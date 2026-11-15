@@ -1,0 +1,190 @@
+## DefInjected/AbilityDef/Abilities.xml
+VRE_Morph.label	transformar
+VRE_Morph.description	Transforma-se em outro xenotipo.
+VRE_WarHowl.label	uivo de guerra
+VRE_WarHowl.description	Solta um uivo de guerra alto que aumenta, de forma acumulativa, a capacidade de combate dos aliados próximos.
+VRE_ReimplantGermline.label	implantar genes
+VRE_ReimplantGermline.description	Implanta a linhagem germinativa desta pessoa em alguém disposto, usando um órgão injetor especial. Se os genes desta pessoa estiverem se regenerando, ela implanta a linhagem germinativa e morre no processo.\n\nAo ser implantada, a linhagem germinativa substitui a do alvo. Os xenogenes não são afetados.
+## DefInjected/FactionDef/Factions_Misc.xml
+VRE_WolfmenFaction.label	homens-lobo
+VRE_WolfmenFaction.description	Uma alcateia de homens-lobo.
+VRE_WolfmenFaction.leaderTitle	líder da alcateia
+VRE_WolfmenFaction.messageDefendersAttacking	{0} de {1} estão atacando seu {2}.
+VRE_WolfmenFaction.pawnSingular	homem-lobo
+VRE_WolfmenFaction.pawnsPlural	homens-lobo
+## DefInjected/GeneCategoryDef/GeneCategoryDefs.xml
+VRE_Morphs.label	transformações
+VRE_MeleeDodge.label	esquiva corpo a corpo
+## DefInjected/GeneDef/GeneDefs_Abilities.xml
+VRE_WarHowl.label	uivo de guerra
+VRE_WarHowl.description	Portadores deste gene podem soltar um uivo de guerra feroz, usando um rugido poderoso e uma conexão psíquica para incitar os aliados a lutar com mais agressividade.
+VRE_GermlineReimplanter.label	reimplantador de linhagem germinativa
+VRE_GermlineReimplanter.description	Portadores deste gene podem implantar uma cópia da própria linhagem germinativa em outra pessoa por meio de um órgão injetor. O próprio material genético deles se regenera bem devagar depois. Se implantarem enquanto os genes estão se regenerando, morrem. Os xenogenes não são afetados.
+VRE_GermlineReimplanter.labelShortAdj	reimplantador
+## DefInjected/GeneDef/GeneDefs_Bodies.xml
+VRE_ChestFur.label	pelos no peito
+VRE_ChestFur.description	Portadores deste gene têm pelos grossos no peito.
+## DefInjected/GeneDef/GeneDefs_Capacities.xml
+VRE_SpeechInability.label	incapacidade de fala
+VRE_SpeechInability.description	Portadores deste gene perderam a capacidade de entender e participar de uma conversa.
+## DefInjected/GeneDef/GeneDefs_Cosmetic.xml
+VRE_CanineEars.label	orelhas caninas
+VRE_CanineEars.description	Portadores deste gene têm orelhas parecidas com as de lobo.
+VRE_CanineNose.label	focinho canino
+VRE_CanineNose.description	Portadores deste gene têm nariz parecido com o de lobo.
+VRE_CanineTail.label	cauda de lobo
+VRE_CanineTail.description	Portadores deste gene têm uma cauda de lobo que ajuda um pouco na locomoção.
+VRE_OnlySideburns.label	só costeletas
+VRE_OnlySideburns.description	Portadores masculinos deste gene têm crescimento rápido de barba nas laterais do rosto.
+## DefInjected/GeneDef/GeneDefs_Health.xml
+VRE_SuperiorDarkVision.label	visão noturna superior
+VRE_SuperiorDarkVision.description	Portadores deste gene enxergam muito melhor no escuro que em áreas bem iluminadas e não sofrem penalidades de humor ligadas à escuridão. Têm uma camada refletora atrás da retina que amplia a visão no escuro.
+VRE_SuperiorDarkVision.symbolPack.prefixSymbols.0.symbol	escuro
+VRE_SuperiorDarkVision.symbolPack.prefixSymbols.1.symbol	noite
+VRE_SuperiorDarkVision.symbolPack.prefixSymbols.2.symbol	penumbra
+VRE_SuperiorDarkVision.symbolPack.prefixSymbols.3.symbol	treva
+VRE_SuperiorDarkVision.symbolPack.prefixSymbols.4.symbol	breu
+VRE_SuperiorDarkVision.symbolPack.prefixSymbols.5.symbol	fundo
+VRE_SuperiorDarkVision.symbolPack.prefixSymbols.6.symbol	umbra
+VRE_SuperiorDarkVision.symbolPack.suffixSymbols.0.symbol	sombra
+## DefInjected/GeneDef/GeneDefs_LightSensitivity.xml
+VRE_LightSensitivity.label	sensibilidade à luz
+VRE_LightSensitivity.description	Portadores deste gene têm compostos biológicos nos olhos que reagem dolorosamente aos fótons. São anormalmente sensíveis a qualquer fonte de luz.
+VRE_IntenseLightSensitivity.label	sensibilidade intensa à luz
+VRE_IntenseLightSensitivity.description	Portadores deste gene têm compostos biológicos nos olhos que reagem perigosamente aos fótons. São intensamente sensíveis a qualquer fonte de luz.
+## DefInjected/GeneDef/GeneDefs_MeleeDodge.xml
+VRE_ImprovedDodge.label	esquiva melhorada
+VRE_ImprovedDodge.description	Portadores deste gene se esquivam de ataques com mais facilidade. Com percepção aguçada, antecipam os golpes antes que aconteçam.
+VRE_SuperiorDodge.label	esquiva superior
+VRE_SuperiorDodge.description	Portadores deste gene se esquivam de ataques com muita facilidade. Com percepção aguçada, antecipam os golpes antes que aconteçam.
+VRE_DodgeDisabled.label	sem esquiva
+VRE_DodgeDisabled.description	Portadores deste gene são incapazes de se esquivar. A falta de percepção de combate faz com que levem todos os golpes, até os que errariam.
+## DefInjected/GeneDef/GeneDefs_MentalState.xml
+VRE_Photophobia.label	fotofobia
+VRE_Photophobia.description	Portadores deste gene têm um medo intenso de luz. Perto de qualquer fonte de luz, podem ter um colapso mental a qualquer momento.
+## DefInjected/GeneDef/GeneDefs_Miscellaneous.xml
+VRE_PackMentality.label	mentalidade de alcateia
+VRE_PackMentality.description	Portadores deste gene conseguem formar comunidades muito unidas e ficam mais felizes quanto mais forte for a comunidade.
+## DefInjected/GeneDef/GeneDefs_Mood.xml
+VRE_Territorial.label	territorial
+VRE_Territorial.description	Portadores deste gene são extremamente territoriais: sentem-se mais calmos nas próprias terras e cada vez mais inquietos quando saem delas.
+## DefInjected/GeneDef/GeneDefs_MorphConditions.xml
+VRE_Morphs_NocturnalMorphing.label	transformação noturna
+VRE_Morphs_NocturnalMorphing.description	Portadores deste gene se transformam todas as noites. Isso não pode ser interrompido nem evitado. Só voltam ao normal de manhã.
+VRE_Morphs_AdulthoodMorphing.label	transformação na idade adulta
+VRE_Morphs_AdulthoodMorphing.description	Portadores deste gene se transformam ao chegar à idade adulta. Isso não pode ser interrompido nem evitado. Nunca voltam ao normal.
+VRE_Morphs_SeasonalMorphing.label	transformação sazonal
+VRE_Morphs_SeasonalMorphing.description	Portadores deste gene se transformam no dia 1º de Setentubro e voltam ao normal no dia 1º de Abrimaio.
+VRE_Morphs_DamageMorphing.label	transformação por ferimento
+VRE_Morphs_DamageMorphing.description	Portadores deste gene se transformam quando gravemente feridos e só voltam ao normal quando estão quase totalmente regenerados.
+VRE_Morphs_RandomMorphing.label	transformação aleatória
+VRE_Morphs_RandomMorphing.description	Portadores deste gene se transformam aparentemente ao acaso. Ninguém sabe qual é a condição, nem se dá para controlá-la de algum jeito. A transformação acontece em intervalos aleatórios.
+## DefInjected/GeneDef/GeneDefs_Sleep.xml
+VRE_Nocturnal.label	noturno
+VRE_Nocturnal.description	Portadores deste gene preferem trabalhar à noite. Ficam mais felizes acordados de noite e infelizes acordados de dia.
+## DefInjected/GeneDef/GeneDefs_Speed.xml
+VRE_MoveSpeed_ExtremelyQuick.label	corredor extremamente rápido
+VRE_MoveSpeed_ExtremelyQuick.description	Portadores deste gene têm um tipo especial de célula estimulante muscular que permite se mover em velocidades sobre-humanas.
+VRE_MoveSpeed_ExtremelyQuick.labelShortAdj	superveloz
+VRE_MoveSpeed_ExtremelyQuick.symbolPack.prefixSymbols.0.symbol	veloz
+VRE_MoveSpeed_ExtremelyQuick.symbolPack.prefixSymbols.1.symbol	rápido
+VRE_MoveSpeed_ExtremelyQuick.symbolPack.prefixSymbols.2.symbol	ligeiro
+VRE_MoveSpeed_ExtremelyQuick.symbolPack.prefixSymbols.3.symbol	ági
+VRE_MoveSpeed_ExtremelyQuick.symbolPack.prefixSymbols.4.symbol	lépi
+VRE_MoveSpeed_ExtremelyQuick.symbolPack.prefixSymbols.5.symbol	célere
+VRE_MoveSpeed_ExtremelyQuick.symbolPack.prefixSymbols.6.symbol	relâmpago
+VRE_MoveSpeed_ExtremelyQuick.symbolPack.suffixSymbols.0.symbol	relâmpago
+VRE_MoveSpeed_ExtremelyQuick.symbolPack.suffixSymbols.1.symbol	corredor
+VRE_MoveSpeed_ExtremelyQuick.symbolPack.suffixSymbols.2.symbol	velocista
+VRE_MoveSpeed_ExtremelyQuick.symbolPack.wholeNameSymbols.0.symbol	bólido
+## DefInjected/HediffDef/Hediffs_Health.xml
+VRE_MoveSpeed_ExtremelyQuick.label	extremamente rápido
+VRE_MoveSpeed_ExtremelyQuick.description	Esta pessoa se move com extrema rapidez. Ignora o custo de movimento do terreno ao andar.
+VRE_WarHowlHediff.label	uivo de guerra
+VRE_WarHowlHediff.description	Aumento da capacidade de combate causado pela habilidade uivo de guerra. Acumula até 10 vezes e dura 3 horas.
+VRE_EndogerminationComa.label	coma de endogerminação
+VRE_EndogerminationComa.description	Uma linhagem germinativa foi implantada nesta pessoa. Ela precisa de tempo para se integrar ao hospedeiro e modificar os genes e a química de vários tecidos do corpo. Nesse período, a pessoa não pode acordar com segurança, então a linhagem germinativa a mantém em coma.\n\nA duração do coma pode ser reduzida implantando a linhagem germinativa com instalações médicas melhores e médicos mais habilidosos.
+VRE_EndogermLossShock.label	choque de perda de endogenes
+VRE_EndogermLossShock.description	Os endogenes desta pessoa foram removidos ou expelidos recentemente. Isso desestabilizou o metabolismo e os hormônios, deixando-a temporariamente fraca e sonolenta, com o sistema imunológico enfraquecido.
+## DefInjected/JobDef/Jobs_Misc.xml
+VRE_AbsorbGermline.reportString	absorvendo a linhagem germinativa de TargetA.
+VRE_ReceiveGermline.reportString	recebendo a linhagem germinativa de TargetA.
+## DefInjected/MentalBreakDef/MentalStates_Special.xml
+VRE_Photophobia.label	terror da luz
+## DefInjected/MentalStateDef/MentalStates_Special.xml
+VRE_Photophobia.label	fugindo da luz em pânico
+VRE_Photophobia.baseInspectLine	Estado mental: fugindo da luz
+VRE_Photophobia.beginLetter	{0} está fugindo da luz.
+VRE_Photophobia.beginLetterLabel	fugindo da luz
+VRE_Photophobia.recoveryMessage	{0} não está mais fugindo da luz.
+## DefInjected/VanillaRacesExpandedLycanthrope.MorphGeneTemplateDef/MorphGeneTemplateDefs.xml
+VRE_Morphs.label	transformação: {0}
+VRE_Morphs.description	Portadores deste gene têm a extraordinária capacidade, movida por arquitas, de se transformar rapidamente no xenotipo {0} quando quiserem. Herdam todas as habilidades e desvantagens genéticas desse xenotipo, mas podem voltar ao normal a qualquer momento.
+## DefInjected/PawnKindDef/PawnKinds_Special.xml
+VRE_WolfmenPawnKindDef.label	homem-lobo
+## DefInjected/PawnRelationDef/PawnRelations_Special.xml
+VRE_PackMember.label	membro da alcateia
+VRE_PackMember.labelFemale	membro da alcateia
+## DefInjected/QuestScriptDef/Script_LycanShip.xml
+VRE_WolfmenTransport.questContentRules.rulesStrings[0]	wolfmanShuttleCrashedLetterLabel->Ônibus espacial caído
+VRE_WolfmenTransport.questContentRules.rulesStrings[1]	wolfmanShuttleCrashedLetterText->Um ônibus espacial com um líder homem-lobo e [WolfmenCount] refugiados homens-lobo caiu aqui perto. Eles vão sair da nave e se preparar para seguir viagem. O líder aceita implantar sua linhagem germinativa em um dos seus colonos. Selecione um colono, clique com o botão direito no líder e escolha "Aceitar transformação em homem-lobo". Os refugiados vão embora em meio dia se ninguém aceitar.
+VRE_WolfmenTransport.questContentRules.rulesStrings[2]	reinforcementsArrivedLetterLabel->Reforços homens-lobo
+VRE_WolfmenTransport.questContentRules.rulesStrings[3]	reinforcementsArrivedLetterText->Homens-lobo estão chegando em cápsulas de queda para reforçar os refugiados acidentados.
+VRE_WolfmenTransport.questContentRules.rulesStrings[4]	letterLabelBeggarsBetrayed->Refugiados traídos
+VRE_WolfmenTransport.questContentRules.rulesStrings[5]	letterTextBeggarsBetrayed->Os refugiados homens-lobo se sentem traídos por suas ações e vão tentar se defender.
+VRE_WolfmenTransport.questDescriptionRules.rulesStrings[0]	questDescription->Vocês interceptaram um pedido de socorro! Um ônibus espacial com um grupo de refugiados homens-lobo está com dificuldade de se manter no ar. O líder, junto com outros [WolfmenCount] refugiados, implora que vocês permitam a queda perto de [map_definite]. \n\nDepois da queda, os refugiados vão se reagrupar e se preparar para partir. O líder oferece transformar um dos seus colonos em homem-lobo. Para aceitar, selecione um colono e clique com o botão direito no líder. Os homens-lobo vão embora meio dia depois de pousar se ninguém aceitar. Vocês também podem lutar contra eles ou prendê-los; se capturarem um, podem forçá-lo a transformar um colono em homem-lobo.\n\n[wolfmenInfo]
+VRE_WolfmenTransport.questDescriptionRules.rulesStrings[1]	wolfmenInfo->(*Gray)Sobre os homens-lobo: os homens-lobo se espalharam livremente pelo espaço colonizado para reivindicar territórios e formar alcateias ou clãs maiores. A forma de homem-lobo tem habilidades noturnas reduzidas, trocando muitas vantagens pela capacidade de compartilhar o xenogerminador com outros. Já a forma licana tem vantagens noturnas, melhor desempenho no combate corpo a corpo, velocidade e regeneração sobrenaturais e um uivo revigorante que impede a fala e fica mais forte quanto mais membros da alcateia se juntam.(/Gray)
+VRE_WolfmenTransport.questNameRules.rulesStrings[0]	questName->[shipNoun] [shipAdjective]
+VRE_WolfmenTransport.questNameRules.rulesStrings[1]	shipAdjective->dos homens-lobo
+VRE_WolfmenTransport.questNameRules.rulesStrings[2]	shipAdjective->lupina
+VRE_WolfmenTransport.questNameRules.rulesStrings[3]	shipAdjective->licana
+VRE_WolfmenTransport.questNameRules.rulesStrings[4]	shipAdjective->lobisomem
+VRE_WolfmenTransport.questNameRules.rulesStrings[5]	shipAdjective->noturna
+VRE_WolfmenTransport.questNameRules.rulesStrings[6]	shipAdjective->uivante
+VRE_WolfmenTransport.questNameRules.rulesStrings[7]	shipAdjective->peluda
+VRE_WolfmenTransport.questNameRules.rulesStrings[8]	shipAdjective->canina
+VRE_WolfmenTransport.questNameRules.rulesStrings[9]	shipNoun->Nave
+VRE_WolfmenTransport.questNameRules.rulesStrings[10]	shipNoun->Nave de transporte
+VRE_WolfmenTransport.questNameRules.rulesStrings[11]	shipNoun->Aeronave
+VRE_WolfmenTransport.questNameRules.rulesStrings[12]	shipNoun->Carcaça
+VRE_WolfmenTransport.questNameRules.rulesStrings[13]	shipNoun->Queda
+VRE_WolfmenTransport.questNameRules.rulesStrings[14]	shipNoun->Sucata
+## DefInjected/StyleItemCategoryDef/BeardDefs.xml
+VRE_WolfmanBeards.label	homem-lobo
+## DefInjected/ThoughtDef/Thoughts_Light.xml
+VRE_LightSensitivity.stages.light_sensitivity.label	sensibilidade à luz
+VRE_LightSensitivity.stages.light_sensitivity.description	A luz é desagradável e machuca meus olhos.
+VRE_IntenseLightSensitivity.stages.light_sensitivity.label	sensibilidade à luz
+VRE_IntenseLightSensitivity.stages.light_sensitivity.description	Tem luz demais aqui, dói!
+VRE_Photophobia.stages.afraid_of_light.label	medo da luz
+VRE_Photophobia.stages.afraid_of_light.description	A luz me deixa muito nervoso. É como se ela me queimasse com sua intensidade!
+## DefInjected/ThoughtDef/Thoughts_Pack_Mentality.xml
+PackMemberDied.stages.pack_member_died.label	membro da alcateia {0} morreu
+PackMemberDied.stages.pack_member_died.description	Um membro da minha alcateia morreu. A alcateia está mais fraca.
+LostPackMember.stages.pack_member_lost.label	membro da alcateia {0} perdido
+LostPackMember.stages.pack_member_lost.description	Perdemos um membro valioso da alcateia. Será que ele sobrevive sem a alcateia?
+KilledPackMember.stages.killed_pack_member.label	matou membro da alcateia
+SoldPackMember.stages.pack_member_sold.label	membro da alcateia {0} vendido
+SoldPackMember.stages.pack_member_sold.description	Acabamos de vender um membro da alcateia. Podemos mesmo nos chamar de alcateia?
+SoldPackMember.stages.pack_member_sold.labelSocial	vendeu membro da alcateia
+VRE_PackMentality.stages.pack_mentality.label	mentalidade de alcateia
+VRE_PackMentality.stages.pack_mentality.description	Nossa alcateia está ficando mais forte. Quanto maior a alcateia, mais à vontade nos sentimos.
+## DefInjected/XenotypeDef/XenotypeDefs.xml
+VRE_Wolfman.label	homem-lobo
+VRE_Wolfman.description	Um xenogerminador duvidoso, de origem controversa: os homens-lobo/licanos se espalharam livremente pelo espaço colonizado para reivindicar territórios e formar alcateias ou clãs maiores. A forma de homem-lobo tem habilidades noturnas reduzidas, trocando muitas vantagens pela capacidade de compartilhar o xenogerminador com outros.\n\nNão há uma história clara sobre a origem dos licanos, ainda mais nebulosa porque cada nova alcateia costuma inventar a própria origem. Isso gerou teorias da conspiração muito variadas, a maioria envolvendo sanguófagos pelo menos em parte, principalmente pela semelhança dos genes. A mais difundida diz que um sanguófago se apaixonou por um yttakin e depois o transformou em um dos seus, mas houve complicações, porque o recém-transformado sanguófago estava grávido. A criança nasceu, foi abandonada pelos pais, mas conseguiu sobreviver vivendo entre cães de rua. Com o tempo, decidiu formar a própria família, de sangue ou não, e sempre colocar a família em primeiro lugar.
+VRE_Wolfman.descriptionShort	Um xenogerminador duvidoso, de origem controversa: os homens-lobo/licanos se espalharam livremente pelo espaço colonizado para reivindicar territórios e formar alcateias ou clãs maiores. A forma de homem-lobo tem habilidades noturnas reduzidas, trocando muitas vantagens pela capacidade de compartilhar o xenogerminador com outros.
+VRE_Lycan.label	licano
+VRE_Lycan.description	Um xenogerminador duvidoso, de origem controversa: os homens-lobo/licanos se espalharam livremente pelo espaço colonizado para reivindicar territórios e formar alcateias ou clãs maiores. A forma licana tem vantagens noturnas, melhor desempenho no combate corpo a corpo, velocidade e regeneração sobrenaturais e um uivo revigorante que impede a fala e fica mais forte quanto mais membros da alcateia se juntam.\n\nNão há uma história clara sobre a origem dos licanos, ainda mais nebulosa porque cada nova alcateia costuma inventar a própria origem. Isso gerou teorias da conspiração muito variadas, a maioria envolvendo sanguófagos pelo menos em parte, principalmente pela semelhança dos genes. A mais difundida diz que um sanguófago se apaixonou por um yttakin e depois o transformou em um dos seus, mas houve complicações, porque o recém-transformado sanguófago estava grávido. A criança nasceu, foi abandonada pelos pais, mas conseguiu sobreviver vivendo entre cães de rua. Com o tempo, decidiu formar a própria família, de sangue ou não, e sempre colocar a família em primeiro lugar.
+VRE_Lycan.descriptionShort	Um xenogerminador duvidoso, de origem controversa: os homens-lobo/licanos se espalharam livremente pelo espaço colonizado para reivindicar territórios e formar alcateias ou clãs maiores. A forma licana tem vantagens noturnas, melhor desempenho no combate corpo a corpo, velocidade e regeneração sobrenaturais e um uivo revigorante que impede a fala e fica mais forte quanto mais membros da alcateia se juntam.
+## Keyed/Misc_Gameplay.xml
+VRE_DisablePhotophobiaMessage	Desativar mensagem de fotofobia
+VRE_DisablePhotophobiaMessage_Description	Por padrão, toda vez que um personagem com o gene fotofobia foge da luz, o jogo manda uma carta avisando. Isso pode ser demais se você tiver muitos personagens fugindo com frequência, então dá para desativar aqui. Os personagens continuam fugindo; você só NÃO é avisado.
+VRE_OnlyOnDaytime	Esta missão só pode ser aceita durante o dia
+VRE_MessagePawnHasNoGermline	{0_labelShort} não tem endogenes disponíveis para implantar.
+VRE_WarningPawnWillDieFromReimplanting	Atenção: os genes de {PAWN_nameDef} estão se regenerando. Se {PAWN_pronoun} implantar a linhagem germinativa antes de os genes se regenerarem por completo, vai morrer.\n\nTem certeza de que quer continuar?
+VRE_LetterTextGenesImplanted	{CASTER_nameDef} implantou uma cópia da própria linhagem germinativa em {TARGET_nameDef}, passando todos os endogenes.\n\n{TARGET_nameDef} ficará em coma de endogerminação por {COMADURATION} enquanto o corpo se adapta às mudanças.\n\n{CASTER_nameDef} sofrerá choque de perda de genes por {SHOCKDURATION}. Os genes de {CASTER_nameDef} também precisam se regenerar, e isso leva tempo. Se {CASTER_nameDef} implantar a linhagem germinativa de novo antes de os genes se regenerarem, vai morrer.
+VRE_ForceGermlineImplantation	Forçar implante de linhagem germinativa
+VRE_ForceGermlineImplantationDesc	Força esta pessoa a implantar a linhagem germinativa em outro indivíduo usando um órgão injetor especial. Se os genes desta pessoa estiverem se regenerando, ela morre no processo.\n\nAo ser implantada, a linhagem germinativa substitui os endogenes do alvo. Os xenogenes não são afetados.
+VRE_MessageAbsorbingGermlineWillAngerFaction	Absorver a linhagem germinativa de {PAWN_nameDef} vai irritar {0}.
+VRE_EndogeneLossShockPresent	{PAWN_nameDef} está sofrendo de choque de perda de endogenes
+VRE_MessageTargetMustBeDownedToForceReimplant	{PAWN_nameDef} precisa estar caído antes que você possa forçar a reimplantação da linhagem germinativa.

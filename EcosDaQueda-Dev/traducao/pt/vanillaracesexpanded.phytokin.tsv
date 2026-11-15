@@ -1,0 +1,167 @@
+## DefInjected/AbilityDef/Abilities.xml
+VRE_PlantPoluxTree.label	plantar arbusto polux
+VRE_PlantPoluxTree.description	Planta um arbusto polux no local designado.
+## DefInjected/AbilityDef/Abilities_Ideology.xml
+VRE_SummonCompanionDryads.label	invocar dríades companheiras
+VRE_SummonCompanionDryads.description	Invoca duas dríades companheiras sob o controle de quem usa a habilidade. Essas dríades são animais permanentes da colônia e podem carregar, limpar, viajar em caravanas e ser convocadas. Duas novas dríades podem ser invocadas se as anteriores morrerem. A habilidade tem recarga de 1 quadrum.
+## DefInjected/AbilityDef/Abilities_Royalty.xml
+VRE_AnimaSong.label	canção anima
+VRE_AnimaSong.description	Mire uma árvore anima para fazê-la cantar uma bela orquestra psíquica. Causa um alívio psíquico instantâneo, mas só pode ser usada uma vez por quadrum.
+## DefInjected/GeneDef/GeneDefs_Archite.xml
+VRE_Photosynthesis.label	fotossíntese
+VRE_Photosynthesis.description	Portadores deste gene conseguem converter energia luminosa em energia química graças à composição genética especial da pele. Não sentem fome quando expostos à luz do sol.
+VRE_Photosynthesis.symbolPack.prefixSymbols.0.symbol	foto
+VRE_Photosynthesis.symbolPack.suffixSymbols.0.symbol	síntese
+VRE_Photosynthesis.symbolPack.suffixSymbols.1.symbol	planta
+VRE_SaplingBirth.label	nascimento em muda
+VRE_SaplingBirth.description	Portadores deste gene gestam o bebê fora do útero, na forma de uma planta muda-filho. Quando a planta cresce por completo, dá para extrair uma criança dela.
+VRE_SaplingBirth.symbolPack.prefixSymbols.0.symbol	muda
+VRE_SaplingBirth.symbolPack.prefixSymbols.1.symbol	broto
+VRE_SaplingBirth.symbolPack.prefixSymbols.2.symbol	semente
+VRE_PoluxAffinity.label	afinidade polux
+VRE_PoluxAffinity.description	Portadores deste gene têm uma conexão especial com a árvore polux e atuam como amplificadores das propriedades especiais dela. Uma vez por ano, podem plantar um arbusto polux que cresce aos poucos, e a simples presença deles fortalece a limpeza de poluição feita pelo arbusto. Também podem consumir pacotes de resíduos tóxicos e ficam infelizes se não houver resíduos para consumir. Consumir pacotes de resíduos tóxicos não mata a fome.
+VRE_PoluxAffinity.resourceDescription	Uma necessidade de {PAWN_nameDef} de consumir pacotes de resíduos tóxicos
+VRE_PoluxAffinity.resourceLabel	pacotes de resíduos tóxicos
+VRE_PoluxAffinity.symbolPack.prefixSymbols.0.symbol	pol
+VRE_PoluxAffinity.symbolPack.prefixSymbols.1.symbol	polux
+## DefInjected/GeneDef/GeneDefs_Archite_Ideology.xml
+VRE_GauranlenAffinity.label	afinidade gauranlena
+VRE_GauranlenAffinity.description	Portadores deste gene têm uma conexão especial com a árvore Gauranlena e atuam como amplificadores das propriedades especiais dela. Podam a árvore rapidamente e aumentam a chance de sucesso de qualquer ritual ligado a árvores. E, mais importante, funcionam como uma extensão do ecossistema gauranlena, podendo gerar e comandar duas dríades aonde quer que vão.
+VRE_GauranlenAffinity.symbolPack.prefixSymbols.0.symbol	gau
+VRE_GauranlenAffinity.symbolPack.prefixSymbols.1.symbol	gauran
+## DefInjected/GeneDef/GeneDefs_Archite_Royalty.xml
+VRE_AnimaAffinity.label	afinidade anima
+VRE_AnimaAffinity.description	Portadores deste gene têm uma conexão especial com a árvore anima e atuam como amplificadores das propriedades especiais dela. Podem incentivar árvores anima a cantar, dando um alívio psíquico a todos num raio grande, e ajudam na conexão e na meditação com ela.
+VRE_AnimaAffinity.symbolPack.prefixSymbols.0.symbol	anima
+VRE_AnimaAffinity.symbolPack.prefixSymbols.1.symbol	anim
+## DefInjected/GeneDef/GeneDefs_Blood.xml
+VRE_SapBlood.label	sangue de seiva
+VRE_SapBlood.description	Portadores deste gene têm sangue grosso, pegajoso e laranja, que retarda muito a morte por sangramento, mas também atrapalha a capacidade de trabalho.
+## DefInjected/GeneDef/GeneDefs_Bodies.xml
+VRE_BarkSkin.label	pele de casca
+VRE_BarkSkin.description	Portadores deste gene têm a pele parecida com casca de árvore. Isso permite aguentar traumas contundentes que normalmente deixariam as pessoas inconscientes.
+VRE_BarkSkin.labelShortAdj	casca-grossa
+## DefInjected/GeneDef/GeneDefs_Cosmetic.xml
+VRE_FoliageHair.label	cabelo de folhagem
+VRE_FoliageHair.description	Portadores deste gene têm cabelo de folhas, de aparência natural.
+VRE_FoliageHair.symbolPack.prefixSymbols.0.symbol	folhagem
+VRE_FoliageHair.symbolPack.suffixSymbols.0.symbol	flor
+VRE_FoliageHair.symbolPack.suffixSymbols.1.symbol	planta
+VRE_HairColor_Anima.label	cabelo anima
+VRE_HairColor_Anima.description	Portadores deste gene têm uma cor de cabelo específica. Com vários genes de cor de cabelo, um é escolhido aleatoriamente.
+VRE_HairColor_Gauranlen.label	cabelo gauranlena
+VRE_HairColor_Gauranlen.description	Portadores deste gene têm uma cor de cabelo específica. Com vários genes de cor de cabelo, um é escolhido aleatoriamente.
+VRE_HairColor_Pollux.label	cabelo polux
+VRE_HairColor_Pollux.description	Portadores deste gene têm uma cor de cabelo específica. Com vários genes de cor de cabelo, um é escolhido aleatoriamente.
+## DefInjected/GeneDef/GeneDefs_Gender.xml
+VRE_Female.label	só feminino
+VRE_Female.description	Portadores deste gene sempre nascem do sexo feminino.
+VRE_Female.labelShortAdj	feminino
+## DefInjected/GeneDef/GeneDefs_Mood.xml
+VRE_GreenThumb.label	dedo verde
+VRE_GreenThumb.description	Portadores deste gene ficam muito felizes quando participam do plantio.
+VRE_GreenThumb.labelShortAdj	jardineiro
+VRE_GreenThumb.symbolPack.prefixSymbols.0.symbol	verde
+## DefInjected/GeneDef/GeneDefs_Psychic.xml
+VRE_ProgressiveAttunement.label	sintonia progressiva
+VRE_ProgressiveAttunement.description	Portadores deste gene ficam mais sintonizados psiquicamente com a idade, o que aumenta muito a sensibilidade psíquica.
+VRE_ProgressiveAttunement.labelShortAdj	psíquico
+VRE_ProgressiveAttunement.symbolPack.prefixSymbols.0.symbol	psíquico
+VRE_ProgressiveAttunement.symbolPack.prefixSymbols.1.symbol	psi
+## DefInjected/HairDef/HairsGeneral.xml
+VRE_FoliageHairEve.label	eva
+VRE_FoliageHairHope.label	esperança
+VRE_FoliageHairKathy.label	kathy
+VRE_FoliageHairLeafein.label	folhinha
+VRE_FoliageHairOphie.label	ophie
+VRE_FoliageHairPixie.label	fada
+## DefInjected/HediffDef/Hediff_Sterile.xml
+VRE_TempSterile.label	fadiga de muda
+VRE_TempSterile.description	Depois de gerar uma muda-filho, a pessoa com o gene nascimento em muda passa por um curto período de esterilidade até poder gerar outra. A condição é temporária e não deixa efeitos duradouros.
+## DefInjected/HediffDef/Hediffs_Global_Misc.xml
+VRE_Photosynthetic.label	fotossíntese
+VRE_Photosynthetic.description	Esta pessoa consegue converter energia luminosa em energia química graças à composição genética especial da pele. Não sente fome quando exposta à luz do sol.
+VRE_Photosynthetic.stages.in_sunlight.label	sob o sol
+VRE_Photosynthetic.stages.out_of_sunlight.label	longe do sol
+VRE_SapBlood.label	sangue de seiva
+VRE_SapBlood.description	Esta pessoa tem sangue grosso, pegajoso e laranja, que retarda muito a morte por sangramento, mas também atrapalha a capacidade de trabalho.
+VRE_Saplingchild.label	muda-filho precisa ser plantada
+VRE_Saplingchild.description	Quando um colono com o gene nascimento em muda engravida, precisa escolher um lugar para plantar o filho. Se não fizer isso antes do segundo trimestre (6 dias), a gravidez é interrompida.
+## DefInjected/IncidentDef/Incidents_World_Quests.xml
+VRE_GiveQuest_Intro_Phytokin.label	fitocria errante
+## DefInjected/JobDef/Jobs_Work.xml
+VRE_PlantSaplingchild.reportString	plantando muda-filho.
+VRE_ConsumeWastepack.reportString	consumindo TargetA.
+## DefInjected/PawnKindDef/Races_Animal_Ideology.xml
+VRE_CompanionDryad.label	dríade companheira
+## DefInjected/QuestScriptDef/Script_Intro_Phytokin.xml
+VRE_Intro_Phytokin.questDescriptionRules.rulesStrings[0]	questDescription->[asker_nameFull], uma poderosa fitocria, está chamando de perto daqui. Ela foi expulsa de [enemyFaction_name] por dar conselhos errados e agora está sendo caçada por um grupo de busca. O grupo de busca de [enemyFaction_pawnsPlural] é formado por: \n\n[raid/raidPawnKinds]\n\n[asker_nameFull] quer que vocês a protejam em [map_definite]. Se aceitarem, ela chega imediatamente, mas será seguida pelo grupo de busca, que vocês terão de derrotar.\n\nFitocrias são humanoides de base vegetal com ênfase em simetria e simbiose. A capacidade de viver só de luz do sol e a afinidade com todo tipo de planta as tornam especialmente úteis para ajudar colônias recém-fundadas ou fazendas industriais de baixo rendimento.
+VRE_Intro_Phytokin.questNameRules.rulesStrings[0]	questName->A fitocria [adjAny]
+VRE_Intro_Phytokin.questNameRules.rulesStrings[1]	adjAny->caçada
+VRE_Intro_Phytokin.questNameRules.rulesStrings[2]	adjAny->fugitiva
+VRE_Intro_Phytokin.questNameRules.rulesStrings[3]	adjAny->solitária
+VRE_Intro_Phytokin.questNameRules.rulesStrings[4]	adjAny->emboscada
+VRE_Intro_Phytokin.root.nodes.PawnsArrive.customLetterText.slateRef	{BASETEXT}\n\nComo vocês aceitaram [asker_nameDef], o bando de piratas que a persegue vai chegar em breve.
+VRE_Intro_Phytokin.root.nodes.Delay-0.node.parms.customLetterLabel.value.slateRef	{BASELABEL}: piratas em perseguição
+VRE_Intro_Phytokin.root.nodes.Delay-0.node.parms.customLetterText.value.slateRef	{BASETEXT}\n\nEstes são os piratas que estavam caçando [../asker_nameFull].\n
+## DefInjected/RulePackDef/RulePacks_Namers_Xenohumans.xml
+VRE_NamePhytokin.rulePack.rulesStrings[0]	r_name->[firstName] [lastName]
+VRE_NamePhytokin.rulePack.rulesStrings[1]	firstName->[namePhytokin]
+VRE_NamePhytokin.rulePack.rulesStrings[2]	lastName->[namePhytokin]
+## DefInjected/StyleItemCategoryDef/StyleItemCategoryDefs.xml
+VRE_Phytokin.label	fitocria
+## DefInjected/ThingDef/Buildings_Natural.xml
+VRE_SaplingchildTree.label	muda-filho
+VRE_SaplingchildTree.description	Uma plantinha parecida com um repolho, criada no primeiro trimestre da gravidez por uma mãe-muda. Depois de 30 dias, a muda-filho eclode e uma criança sai dela.\n\nPrecisa ser mantida entre -15 e 60 ºC. Se a planta for destruída, conta como natimorto para a mãe que a plantou.
+## DefInjected/ThingDef/Filth_Various.xml
+VRE_SapBlood.label	sangue de seiva
+## DefInjected/ThingDef/Plants_Special.xml
+VRE_PoluxBush.label	arbusto polux
+VRE_PoluxBush.description	Um arbusto que evoluiu para metabolizar poluentes. Puxando poluentes do solo por amplas redes de raízes, limpa aos poucos o terreno poluído ao redor. Porém, não consegue fazer isso se houver construções sobre as raízes.\n\nAo contrário da maioria dos métodos de limpar terreno poluído, arbustos polux não geram pacotes de resíduos tóxicos.
+## DefInjected/ThingDef/Races_Animal_Ideology.xml
+VRE_CompanionDryad.label	dríade companheira
+VRE_CompanionDryad.description	Uma casta de dríade especializada em proteção e utilidade geral para os gauranlenos. Dríades companheiras são fortes, ferozes e leais, e acompanham a mãe aonde forem necessárias. Podem limpar, carregar, lutar e levar cargas em caravanas.\n\nEm geral, dríades são criaturas parecidas com mamíferos que vivem em simbiose com a árvore Gauranlena. Elas se reproduzem junto com a árvore, que guarda uma rainha dríade oculta. Dríades podem se transformar em várias castas especializadas.
+VRE_CompanionDryad.tools.left_claw.label	garra esquerda
+VRE_CompanionDryad.tools.right_claw.label	garra direita
+VRE_CompanionDryad.tools.head.label	cabeça
+## DefInjected/ThoughtDef/Thoughts_Memory_Misc.xml
+VRE_GreenThumbHappy.stages.sowed_a_plant.label	plantou algo
+VRE_GreenThumbHappy.stages.sowed_a_plant.description	O que o mundo precisa é de mais plantas!
+VRE_WastepacksNeed.stages.need_wastepacks.label	precisa de resíduos tóxicos
+VRE_WastepacksNeed.stages.need_wastepacks.description	Preciso consumir e metabolizar resíduos. É o meu propósito.
+## DefInjected/ThoughtDef/Thoughts_Situation_Special_Royalty.xml
+VRE_AnimaSong.stages.anima_song.label	canção anima
+VRE_AnimaSong.stages.anima_song.description	É como uma voz calma no fundo da minha mente, me acalmando e assentando meus nervos.
+## DefInjected/XenotypeDef/XenotypeDefs.xml
+VRE_Poluxkin.label	poluxcria
+VRE_Poluxkin.description	Baseadas em dados genéticos adaptados do investimento da Gauranlen Inc. em dendrologia após a Queda de Sorne, as fitocrias são humanoides de base vegetal com ênfase em simetria e simbiose. A capacidade de viver só de luz do sol e a afinidade com todo tipo de planta as tornam especialmente úteis para ajudar colônias recém-fundadas ou fazendas industriais de baixo rendimento.\n\nCom base em pesquisas do planeta-floresta Phytok, dedicado à análise extensa da compatibilidade humana com energia psíquica, os xenogerminadores de fitocria costumam ser exclusivos de cargos de apoio de alto escalão em megacorporações e governos planetários. Seu modo único de reprodução gera muitos descendentes idênticos, cada geração mais competente que a anterior, o que contribui para seus números baixíssimos. A afinidade com plantas, junto com o efeito colateral de uma sensibilidade psíquica altíssima e sempre crescente, faz com que qualquer xeno-humano fitocria encontrado na Orla esteja sempre adaptado às árvores dominantes e de alto conceito presentes no planeta onde vive.\n\nEste xenogerminador se adaptou às árvores polux, o que permite germinar novos arbustos polux e melhorar a capacidade dos arbustos locais de consumir resíduos tóxicos. Embora também sejam imunes à toxicidade, desenvolveram uma necessidade psicológica de consumir e metabolizar pacotes de resíduos tóxicos regularmente.
+VRE_Poluxkin.descriptionShort	Conselheiras poderosas de governantes e déspotas, as poluxcrias são belas e astutas e têm a capacidade de se conectar a uma árvore polux, ampliando muito as habilidades dela. São imunes à toxicidade e podem até ajudar o ambiente consumindo e metabolizando resíduos. São excelentes no cuidado de plantas e se reproduzem plantando uma muda-filho.
+## DefInjected/XenotypeDef/XenotypeDefs_Ideology.xml
+VRE_Gauranlenkin.label	gauranlena
+VRE_Gauranlenkin.description	Baseadas em dados genéticos adaptados do investimento da Gauranlen Inc. em dendrologia após a Queda de Sorne, as fitocrias são humanoides de base vegetal com ênfase em simetria e simbiose. A capacidade de viver só de luz do sol e a afinidade com todo tipo de planta as tornam especialmente úteis para ajudar colônias recém-fundadas ou fazendas industriais de baixo rendimento.\n\nCom base em pesquisas do planeta-floresta Phytok, dedicado à análise extensa da compatibilidade humana com energia psíquica, os xenogerminadores de fitocria costumam ser exclusivos de cargos de apoio de alto escalão em megacorporações e governos planetários. Seu modo único de reprodução gera muitos descendentes idênticos, cada geração mais competente que a anterior, o que contribui para seus números baixíssimos. A afinidade com plantas, junto com o efeito colateral de uma sensibilidade psíquica altíssima e sempre crescente, faz com que qualquer xeno-humano fitocria encontrado na Orla esteja sempre adaptado às árvores dominantes e de alto conceito presentes no planeta onde vive.\n\nEste xenogerminador se adaptou às árvores Gauranlenas, o que permite agir como uma rainha dríade móvel, embora sem potencial de crescimento. Também melhora as tentativas de conexão com uma árvore Gauranlena local, e poda a própria árvore com o dobro da eficácia de quem não é fitocria.
+VRE_Gauranlenkin.descriptionShort	Conselheiras poderosas de governantes e déspotas, as gauranlenas são belas e astutas e têm a capacidade de se conectar a uma árvore Gauranlena, ampliando muito as habilidades dela. Podem gerar duas dríades que as consideram mãe e obedecem a todas as suas ordens. São excelentes no cuidado de plantas e se reproduzem plantando uma muda-filho.
+## DefInjected/XenotypeDef/XenotypeDefs_Royalty.xml
+VRE_Animakin.label	animacria
+VRE_Animakin.description	Baseadas em dados genéticos adaptados do investimento da Gauranlen Inc. em dendrologia após a Queda de Sorne, as fitocrias são humanoides de base vegetal com ênfase em simetria e simbiose. A capacidade de viver só de luz do sol e a afinidade com todo tipo de planta as tornam especialmente úteis para ajudar colônias recém-fundadas ou fazendas industriais de baixo rendimento.\n\nCom base em pesquisas do planeta-floresta Phytok, dedicado à análise extensa da compatibilidade humana com energia psíquica, os xenogerminadores de fitocria costumam ser exclusivos de cargos de apoio de alto escalão em megacorporações e governos planetários. Seu modo único de reprodução gera muitos descendentes idênticos, cada geração mais competente que a anterior, o que contribui para seus números baixíssimos. A afinidade com plantas, junto com o efeito colateral de uma sensibilidade psíquica altíssima e sempre crescente, faz com que qualquer xeno-humano fitocria encontrado na Orla esteja sempre adaptado às árvores dominantes e de alto conceito presentes no planeta onde vive.\n\nEste xenogerminador se adaptou às árvores anima, o que permite conversar com uma árvore anima local e estimular psiquicamente o florescimento da grama anima. Também pode dar uma ajuda limitada a quem tenta se ligar a uma árvore anima para ganhar benefícios psíquicos.
+VRE_Animakin.descriptionShort	Conselheiras poderosas de governantes e déspotas, as animacrias são belas e astutas e têm a capacidade de se conectar a uma árvore anima, ampliando muito as habilidades dela. São excelentes no cuidado de plantas e se reproduzem plantando uma muda-filho.
+## Keyed/Misc_Gameplay.xml
+VRE_ProgressiveAttunementOffset	Gene sintonia progressiva
+VRE_SaplingBirthReady	Muda-filho
+VRE_SaplingBirthReadyDesc	Quando um colono com o gene nascimento em muda engravida, precisa escolher um lugar para plantar o filho. Se não fizer isso antes do segundo trimestre (6 dias), a gravidez é interrompida.
+VRE_PlantSaplingchild	Plantar muda-filho
+VRE_PlantSaplingchildDesc	Plante uma muda-filho. Se isso não for feito antes do segundo trimestre (6 dias de gravidez), conta como aborto espontâneo. A muda-filho precisa ser protegida.
+VRE_SaplingNeedsSoil	A muda-filho precisa ser plantada em solo
+VRE_SaplingchildNeedsToBePlanted	A muda-filho precisa ser plantada
+VRE_SaplingchildNeedsToBePlantedDesc	Quando um colono com o gene nascimento em muda engravida, precisa escolher um lugar para plantar o filho. Se não fizer isso antes do segundo trimestre (6 dias), a gravidez é interrompida. Estes colonos precisam plantar a muda-filho:\n\n{0}
+VRE_MotherXenotype	Xenotipo da mãe: {0}
+VRE_DestroyedByTemp	 foi destruída pela temperatura
+VRE_SaplingHatched	{0} eclodiu de uma muda!
+VRE_SaplingHatchedLabel	{0} eclodiu!
+VRE_TimeToHatch	Tempo até o nascimento: {0}
+VRE_UnlockedByGeneAnima	Desbloqueado pelo gene afinidade anima
+VRE_UnlockedByGeneGau	Desbloqueado pelo gene afinidade gauranlena
+VRE_CanOnlyBeUsedOnAnimaTree	Esta habilidade precisa ser usada em uma árvore anima
+VRE_CanOnlyBePlantedOnFertile	Esta habilidade precisa ser usada em terreno com fertilidade de pelo menos 0,05
+VRE_TwoPreviousDryadsMustBeDead	Cada colono com afinidade gauranlena pode ter no máximo duas dríades vivas ao mesmo tempo
+VRE_RitualPredictedOutcomeDescAffinityGeneCount	Gene afinidade anima
+VRE_RitualPredictedOutcomeDescAffinityGeneCountGau	Gene afinidade gauranlena

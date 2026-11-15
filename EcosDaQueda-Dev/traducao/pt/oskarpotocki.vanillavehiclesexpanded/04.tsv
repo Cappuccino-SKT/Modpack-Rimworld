@@ -1,0 +1,70 @@
+## DefInjected/Vehicles.VehicleTurretDef/Bunsen_MainTurret.xml
+VVE_Bunsen_MainTurret.label	lança-chamas do bunsen
+VVE_Bunsen_MainTurret.description	Uma torre lança-chamas de médio alcance com blindagem leve, normalmente montada nos tanques Bunsen. Puxa combustível direto do tanque químico do veículo. Devastadora contra infantaria, mas sofre contra alvos blindados.
+VVE_Bunsen_MainTurret.gizmoDescription	Escolher alvo.\n\nFogo para efeito
+## DefInjected/Vehicles.VehicleTurretDef/Highwayman_MainTurret.xml
+Highwayman_MainTurret.label	torre do highwayman
+Highwayman_MainTurret.description	Um minicanhão duplo acoplado, com blindagem leve. Normalmente montado nos blindados de transporte Highwayman. Precisa ser recarregado com aço. Só atira a curta distância, mas não tem problema nenhum em atirar em inimigos que atacam o veículo corpo a corpo.
+Highwayman_MainTurret.gizmoDescription	Escolher alvo.\n\nFogo para efeito
+## DefInjected/Vehicles.VehicleTurretDef/Roadkill_MainTurret.xml
+Roadkill_MainTurret.label	canhão do roadkill
+Roadkill_MainTurret.description	Um canhão capaz de disparar projéteis explosivos de tanque a média distância. Normalmente montado nos tanques Roadkill. Precisa ser recarregado com aço. Não atira em movimento. Tem alcance razoável, mas não consegue mirar em inimigos muito perto.
+Roadkill_MainTurret.fireModes.0.label	Tiro único
+Roadkill_MainTurret.gizmoDescription	Escolher alvo.\n\nFogo para efeito
+## DefInjected/Vehicles.VehicleTurretDef/Scytheman_MainTurret.xml
+Scytheman_MainTurret.label	torre de enxame de foguetes
+Scytheman_MainTurret.description	Um lançador impreciso, capaz de disparar duas barragens de foguetes cobrindo uma área grande. A torre só atira quando alguém manda. É muito eficaz contra grupos grandes de combatentes fracos, mas pior contra poucos alvos blindados. Atirar demais pode superaquecer e desativar a torre.
+Scytheman_MainTurret.gizmoDescription	Escolher alvo.\n\nFogo para efeito
+## DefInjected/Vehicles.VehicleTurretDef/Tango_MainTurret.xml
+Tango_MainTurret.label	canhão automático do tango
+Tango_MainTurret.description	Uma torre automática pesada montada no blindado Tango. Os projéteis de grosso calibre causam muito dano a distâncias consideráveis, mas ela é imprecisa e gasta muita munição.
+Tango_MainTurret.gizmoDescription	Escolher alvo.\n\nFogo para efeito
+## DefInjected/Vehicles.VehicleTurretDef/Toad_MainTurret.xml
+Toad_MainTurret.label	artilharia do toad
+Toad_MainTurret.description	Uma torre de morteiro que lança todo tipo de projétil, normalmente montada nas cápsulas de cerco Toad. Pode causar dano devastador, mas a imprecisão natural do morteiro o torna mais útil contra grandes fortificações do que contra grupos de inimigos em campo.
+Toad_MainTurret.gizmoDescription	Escolher alvo.\n\nFogo para efeito
+## DefInjected/WorkGiverDef/WorkGivers.xml
+VVE_DoBillsGarageBench.label	fazer coisas na bancada de garagem
+VVE_DoBillsGarageBench.gerund	trabalhando na
+VVE_DoBillsGarageBench.verb	trabalhar
+VVE_OpenGarages.label	abrir garagens
+VVE_OpenGarages.gerund	abrindo a garagem
+VVE_OpenGarages.verb	abrir a garagem
+VVE_CloseGarages.label	fechar garagens
+VVE_CloseGarages.gerund	fechando a garagem
+VVE_CloseGarages.verb	fechar a garagem
+VVE_RestoreWreck.label	restaurar destroços de veículos
+VVE_RestoreWreck.gerund	restaurando
+VVE_RestoreWreck.verb	restaurar
+## Keyed/Misc_Gameplay.xml
+VVE_AccelerationSundayDriver	Aceleração: preceito motorista de domingo
+VVE_AccelerationHigh	Aceleração: preceito alta
+VVE_MaxSpeed_Increased	Velocidade máxima: preceito aumentada
+VVE_HandbrakeDealsDamage	O freio de mão causa dano
+VVE_StatsReport_AccelerationRate	Taxa de aceleração: {0}\nVelocidade atual: {1} q/s
+VVE_HandbrakeWarning	{VEHICLE_nameDef} não vai ter espaço para desacelerar e vai precisar puxar o freio de mão. Isso danifica os pneus.
+VVE_Open	Abrir
+VVE_Close	Fechar
+VVE_OpenDescription	Marcar o portão de garagem para ser aberto.
+VVE_CloseDescription	Marcar o portão de garagem para ser fechado.
+VVE_OpenDescription_AutoDoor	Abrir o portão de garagem automático.
+VVE_CloseDescription_AutoDoor	Fechar o portão de garagem automático.
+VVE_VehicleObstructingClosingGarage	Tem um veículo bloqueando a garagem.
+VVE_VehicleTier	Nível
+VVE_Tier0	Nível 0
+VVE_Tier1	Nível 1
+VVE_Tier2	Nível 2
+VVE_Tier3	Nível 3
+VVE_Tier4	Nível 4
+VVE_Tier0Desc	Os veículos de nível 0 são os mais básicos e fáceis de conseguir. Não precisam de recursos para serem construídos, nem de pesquisa, ou de nenhum dos dois.
+VVE_Tier1Desc	Os veículos de nível 1 precisam de uma pesquisa básica e de poucos recursos para serem construídos. São ineficientes, longe do ideal e cheios de defeitos, mas são baratos e ficam disponíveis cedo no jogo.
+VVE_Tier2Desc	Os veículos de nível 2 dependem de pesquisas mais especializadas e de recursos que só aparecem mais tarde no jogo. O nível 2 é considerado o "padrão" de todos os veículos.
+VVE_Tier3Desc	Os veículos de nível 3 só podem ser obtidos se uma condição específica for cumprida; por exemplo, primeiro são encontrados como destroços e restaurados. Exigem recursos do fim do jogo e costumam ter uma função bem específica.
+VVE_Tier4Desc	Os veículos de nível 4 não podem ser construídos pelo jogador, mas ainda podem ser encontrados, comprados ou surgir de outro jeito. Em geral representam tecnologia além do que é possível no cenário da Orla.
+VVE_RestoreWreck	Restaurar destroços
+VVE_RestoreWreckDesc	Entregue os componentes de veículo necessários para restaurar estes destroços por completo, transformando-os num veículo funcional.
+VVE_WreckNotRestored	{0} ainda não foi encontrado e restaurado
+VVE_CannotBeResearched	{0} não pode ser pesquisado até vocês encontrarem e restaurarem os destroços desse veículo.
+VVE_Reload	Recarregar {0} com {AMMO_label}
+VVE_CannotReloadNotEnoughAmmo	Não dá para recarregar {0} com {1} (não há {1} suficiente)
+VVE_CannotReloadFullAmmo	Não dá para recarregar {0} com {1} (munição cheia)

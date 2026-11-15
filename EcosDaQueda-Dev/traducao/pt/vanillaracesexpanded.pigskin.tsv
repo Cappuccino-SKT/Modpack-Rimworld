@@ -1,0 +1,68 @@
+## DefInjected/GeneDef/GeneDefs_Aging.xml
+VRE_RapidAging.label	envelhecimento acelerado
+VRE_RapidAging.description	Portadores deste gene têm uma mutação artificial no material genético que os faz envelhecer quatro vezes mais rápido que um humano padrão.
+VRE_FastAging.label	envelhecimento rápido
+VRE_FastAging.description	Portadores deste gene têm uma mutação artificial no material genético que os faz envelhecer duas vezes mais rápido que um humano padrão.
+VRE_SlowAging.label	envelhecimento lento
+VRE_SlowAging.description	Portadores deste gene têm uma mutação artificial no material genético que os faz envelhecer muito mais devagar que um humano padrão.
+## DefInjected/GeneDef/GeneDefs_Cosmetic.xml
+VRE_CurledTail.label	rabo enrolado
+VRE_CurledTail.description	Portadores deste gene têm um rabinho curto e enrolado que não serve para nada.
+VRE_MouthTusks.label	presas na boca
+VRE_MouthTusks.description	Portadores deste gene desenvolvem duas pequenas presas que saem da mandíbula.
+VRE_MouthTusks.symbolPack.prefixSymbols.0.symbol	presa
+VRE_MouthTusks.symbolPack.prefixSymbols.1.symbol	presudo
+VRE_ChocolateSkin.label	pele chocolate
+VRE_ChocolateSkin.description	Portadores deste gene têm pele marrom-clara cor de lama.
+VRE_ChocolateSkin.labelShortAdj	lamacento
+VRE_ChocolateSkin.symbolPack.prefixSymbols.0.symbol	lama
+VRE_ChocolateSkin.symbolPack.prefixSymbols.1.symbol	chocolate
+VRE_ChocolateSkin.symbolPack.prefixSymbols.2.symbol	marrom
+VRE_HazelnutSkin.label	pele avelã
+VRE_HazelnutSkin.description	Portadores deste gene têm pele bronzeada clara, parecida com avelã.
+VRE_HazelnutSkin.labelShortAdj	lamacento
+VRE_HazelnutSkin.symbolPack.prefixSymbols.0.symbol	creme escuro
+VRE_HazelnutSkin.symbolPack.prefixSymbols.1.symbol	bronze
+VRE_HazelnutSkin.symbolPack.prefixSymbols.2.symbol	amêndoa
+VRE_HazelnutSkin.symbolPack.prefixSymbols.3.symbol	avelã
+VRE_AuburnSkin.label	pele castanho-avermelhada
+VRE_AuburnSkin.description	Portadores deste gene têm pele castanho-avermelhada escura, cor de lama.
+VRE_AuburnSkin.labelShortAdj	lamacento
+VRE_AuburnSkin.symbolPack.prefixSymbols.0.symbol	ruivo
+VRE_AuburnSkin.symbolPack.prefixSymbols.1.symbol	cobre queimado
+VRE_AuburnSkin.symbolPack.prefixSymbols.2.symbol	marrom-escuro
+## DefInjected/GeneDef/GeneDefs_Health.xml
+VRE_ExtraMeat.label	carne extra
+VRE_ExtraMeat.description	Portadores deste gene têm tecido muscular e adiposo muito mais denso, rendendo muito mais carne quando abatidos.
+VRE_LowMeat.label	pouca carne
+VRE_LowMeat.description	Portadores deste gene têm tecido muscular e adiposo muito fino, rendendo bem menos carne quando abatidos.
+VRE_OrganRegeneration.label	regeneração de órgãos
+VRE_OrganRegeneration.description	Portadores deste gene têm fatores regenerativos aprimorados no DNA, o que permite regenerar lentamente órgãos, mesmo os que estão faltando por completo. O processo é lento e prioriza curar órgãos existentes, mas danificados.
+## DefInjected/GeneDef/GeneDefs_Hunger.xml
+VRE_Gluttonous.label	glutão
+VRE_Gluttonous.description	Portadores deste gene têm estômagos elásticos e sem fundo, capazes de consumir o dobro de comida.\n\nEles ficam cada vez mais infelizes com fome, e a maioria dos colapsos mentais será de compulsão alimentar.
+## DefInjected/GeneDef/GeneDefs_Leathers.xml
+VRE_PigSkin.label	couro de porco
+VRE_PigSkin.description	Portadores deste gene rendem couro de porco quando abatidos. Para eles, vestir roupas de couro de porco conta como vestir roupas de couro humano.
+## DefInjected/GeneDef/GeneDefs_Meats.xml
+VRE_PorkFlesh.label	carne suína
+VRE_PorkFlesh.description	Portadores deste gene têm traços de porco na carne. Para eles, comer carne de porco conta como canibalismo. Quando abatidos, rendem carne de porco em vez de carne humana.
+## DefInjected/GeneDef/GeneDefs_Misc.xml
+VRE_Coward.label	covarde
+VRE_Coward.description	Portadores deste gene tendem muito mais a reagir a situações tensas se encolhendo, se escondendo ou até entrando em catatonia.
+VRE_Brave.label	corajoso
+VRE_Brave.description	Portadores deste gene são muito mais resistentes ao estresse e mostram comportamentos que normalmente seriam chamados de corajosos.
+## DefInjected/GeneDef/GeneDefs_Size.xml
+VRE_EverGrowing.label	crescimento contínuo
+VRE_EverGrowing.description	Portadores deste gene não param de crescer até a idade biológica de 60 anos. Continuam aumentando de tamanho até ficarem gigantescos.\n\nConforme crescem, ficam mais lentos, mas também imunes a cambalear. Com o tamanho, a vida total também aumenta.
+## DefInjected/HediffDef/Hediffs_Health.xml
+VRE_OrganRegeneration.label	regeneração de órgãos
+VRE_OrganRegeneration.description	Esta pessoa tem fatores regenerativos aprimorados no DNA, o que permite regenerar lentamente órgãos, mesmo os que estão faltando por completo. O processo é lento e prioriza curar órgãos existentes, mas danificados.
+## DefInjected/PreceptDef/Precepts_OrganUse.xml
+VRE_OrganUse_PigskinOnly.label	só pele de porco
+VRE_OrganUse_PigskinOnly.description	Vender, instalar, usar e colher órgãos é aceitável, mas só de peles de porco, já que essa é a função principal deles.\n\n<color=#E5E54C>Efeito no jogo:</color>\n- Para este preceito, qualquer pessoa com o gene carne suína conta como pele de porco.
+VRE_OrganUse_PigskinOnly.comps.2.description	Alguém colheu um órgão
+## DefInjected/XenotypeDef/XenotypeDefs.xml
+VRE_Boarskin.label	pele de javali
+VRE_Boarskin.description	Os peles de javali, uma subespécie formidável nascida de peles de porco em cativeiro, foram a vanguarda da revolução que acabou com sua exploração como fazendas de órgãos. Esses híbridos de humano e javali andam sobre duas pernas, usam ferramentas e se comunicam pela fala, unindo o intelecto humano à robustez dos javalis. Sua resistência permite comer de tudo sem efeitos ruins, mas as mãos em forma de casco atrapalham a manipulação fina.\n\nNascidos de uma tentativa desesperada de evitar o dilema ético de colher órgãos de humanos padrão, os peles de javali foram um resultado imprevisto da mistura de genes humanos e suínos para gerar órgãos mais compatíveis. A iniciativa saiu pela culatra e deu origem a seres muito mais antropomórficos do que o planejado. Evoluídos de peles de porco sob pressão, os peles de javali têm força, coragem e agressividade acentuadas, reflexo de sua origem turbulenta e do papel decisivo que tiveram na conquista da autonomia de seus irmãos.
+VRE_Boarskin.descriptionShort	Os peles de javali são uma mutação rara dos híbridos de humano e porco. São resistentes, fortes e corajosos e comem quase tudo sem passar mal, mas as mãos em forma de casco são ruins para manipulação fina. Enxergam melhor que seus irmãos peles de porco, mas são agressivos e envelhecem rápido.

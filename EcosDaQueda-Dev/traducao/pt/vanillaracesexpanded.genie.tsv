@@ -1,0 +1,94 @@
+## DefInjected/ChemicalDef/Antibiotics.xml
+VRE_Antibiotics.label	antibióticos
+## DefInjected/GeneCategoryDef/GeneCategoryDefs.xml
+VRE_Curiosity.label	curiosidade
+## DefInjected/GeneDef/GeneDefs_Bleeding.xml
+VRE_Hemophiliac.label	hemofílico
+VRE_Hemophiliac.description	Portadores deste gene sofrem de um distúrbio que bloqueia os fatores de coagulação do sangue, fazendo-os sangrar muito mais rápido quando feridos.
+VRE_Hemophiliac.symbolPack.prefixSymbols.0.symbol	sangrador
+VRE_Hemophiliac.symbolPack.suffixSymbols.0.symbol	fílico
+VRE_Hemophiliac.symbolPack.suffixSymbols.1.symbol	sangrador
+## DefInjected/GeneDef/GeneDefs_Blood.xml
+VRE_BlueBlood.label	sangue azul
+VRE_BlueBlood.description	Portadores deste gene têm níveis baixos de certos minerais no sangue, o que dá a ele uma cor azul-escura.
+VRE_BlueBlood.symbolPack.prefixSymbols.0.symbol	azul
+VRE_BlueBlood.symbolPack.prefixSymbols.1.symbol	água
+VRE_BlueBlood.symbolPack.suffixSymbols.0.symbol	marinho
+VRE_BlueBlood.symbolPack.wholeNameSymbols.0.symbol	sangue-azul
+## DefInjected/GeneDef/GeneDefs_Curiosity.xml
+VRE_Curiosity_Shooting.label	curiosidade por tiro
+VRE_Curiosity_Shooting.description	O portador tem uma curiosidade natural por Tiro, que lhe dá recreação sempre que aprende essa habilidade. Além disso, a curiosidade impede totalmente a perda de habilidade em Tiro. \n
+VRE_Curiosity_Melee.label	curiosidade por combate corpo a corpo
+VRE_Curiosity_Melee.description	O portador tem uma curiosidade natural por Corpo a corpo, que lhe dá recreação sempre que aprende essa habilidade. Além disso, a curiosidade impede totalmente a perda de habilidade em Corpo a corpo. \n
+VRE_Curiosity_Construction.label	curiosidade por construção
+VRE_Curiosity_Construction.description	O portador tem uma curiosidade natural por Construção, que lhe dá recreação sempre que aprende essa habilidade. Além disso, a curiosidade impede totalmente a perda de habilidade em Construção. \n
+VRE_Curiosity_Mining.label	curiosidade por mineração
+VRE_Curiosity_Mining.description	O portador tem uma curiosidade natural por Mineração, que lhe dá recreação sempre que aprende essa habilidade. Além disso, a curiosidade impede totalmente a perda de habilidade em Mineração. \n
+VRE_Curiosity_Cooking.label	curiosidade por culinária
+VRE_Curiosity_Cooking.description	O portador tem uma curiosidade natural por Culinária, que lhe dá recreação sempre que aprende essa habilidade. Além disso, a curiosidade impede totalmente a perda de habilidade em Culinária. \n
+VRE_Curiosity_Plants.label	curiosidade por plantas
+VRE_Curiosity_Plants.description	O portador tem uma curiosidade natural por Plantas, que lhe dá recreação sempre que aprende essa habilidade. Além disso, a curiosidade impede totalmente a perda de habilidade em Plantas. \n
+VRE_Curiosity_Animals.label	curiosidade por animais
+VRE_Curiosity_Animals.description	O portador tem uma curiosidade natural por Animais, que lhe dá recreação sempre que aprende essa habilidade. Além disso, a curiosidade impede totalmente a perda de habilidade em Animais. \n
+VRE_Curiosity_Crafting.label	curiosidade por artesanato
+VRE_Curiosity_Crafting.description	O portador tem uma curiosidade natural por Artesanato, que lhe dá recreação sempre que aprende essa habilidade. Além disso, a curiosidade impede totalmente a perda de habilidade em Artesanato. \n
+VRE_Curiosity_Artistic.label	curiosidade artística
+VRE_Curiosity_Artistic.description	O portador tem uma curiosidade natural por Arte, que lhe dá recreação sempre que aprende essa habilidade. Além disso, a curiosidade impede totalmente a perda de habilidade em Arte. \n
+VRE_Curiosity_Medicine.label	curiosidade por medicina
+VRE_Curiosity_Medicine.description	O portador tem uma curiosidade natural por Medicina, que lhe dá recreação sempre que aprende essa habilidade. Além disso, a curiosidade impede totalmente a perda de habilidade em Medicina. \n
+VRE_Curiosity_Social.label	curiosidade social
+VRE_Curiosity_Social.description	O portador tem uma curiosidade natural por Social, que lhe dá recreação sempre que aprende essa habilidade. Além disso, a curiosidade impede totalmente a perda de habilidade em Social. \n
+VRE_Curiosity_Intellectual.label	curiosidade intelectual
+VRE_Curiosity_Intellectual.description	O portador tem uma curiosidade natural por Intelecto, que lhe dá recreação sempre que aprende essa habilidade. Além disso, a curiosidade impede totalmente a perda de habilidade em Intelecto. \n
+## DefInjected/GeneDef/GeneDefs_Heads.xml
+VRE_ElongatedHead.label	cabeça alongada
+VRE_ElongatedHead.description	Portadores deste gene têm rosto e cabeça alongados, de aparência quase alienígena.
+VRE_ElongatedHead.symbolPack.prefixSymbols.0.symbol	alien
+VRE_ElongatedHead.symbolPack.prefixSymbols.1.symbol	cérebro
+VRE_ElongatedHead.symbolPack.prefixSymbols.2.symbol	longo
+## DefInjected/GeneDef/GeneDefs_Health.xml
+VRE_WoundHealing_VerySlow.label	cicatrização muito lenta
+VRE_WoundHealing_VerySlow.description	Portadores deste gene demoram muito para se curar até dos ferimentos mais simples.
+VRE_WoundHealing_VerySlow.labelShortAdj	cura-lentíssima
+VRE_WoundHealing_VerySlow.symbolPack.prefixSymbols.0.symbol	mole
+VRE_Immunity_VeryWeak.label	sem imunidade
+VRE_Immunity_VeryWeak.description	Portadores deste gene não têm nenhum tipo de sistema imunológico e quase não ganham imunidade natural contra doenças ou infecções. Morrem até da menor infecção ou doença.\n
+VRE_Immunity_VeryWeak.labelShortAdj	vulnerável
+VRE_Immunity_VeryWeak.symbolPack.prefixSymbols.0.symbol	doente
+VRE_Immunity_VeryWeak.symbolPack.prefixSymbols.1.symbol	frágil
+VRE_Slow_Diseases.label	doenças lentas
+VRE_Slow_Diseases.description	Portadores deste gene produzem anticorpos especiais no sangue que retardam o avanço de qualquer infecção ou doença, dando mais tempo para conseguir atendimento médico.\n
+## DefInjected/GeneTemplateDef/GeneTemplateDefs.xml
+VRE_AptitudePhenomenal.label	{0} fenomenal
+VRE_AptitudePhenomenal.description	A aptidão do portador em {0} aumenta em 12. A aptidão funciona como um bônus no nível da habilidade. Além disso, adiciona um nível de paixão a {0}.
+## DefInjected/HediffDef/Antibiotics.xml
+VRE_AntibioticsHigh.label	antibióticos
+VRE_AntibioticsHigh.description	Uma droga para reforçar o sistema imunológico depois que uma infecção se instala. Ajuda contra doenças como malária e peste, e contra infecções de ferimentos sujos. Dura 12 horas. O efeito é mais forte conforme a gravidade dos genes de imunidade de quem toma (mais forte para quem tem menos imunidade) e é modificado pela tolerância da pessoa à droga.
+VRE_AntibioticsHigh_NoImmunity.label	antibióticos
+VRE_AntibioticsHigh_NoImmunity.description	Uma droga para reforçar o sistema imunológico depois que uma infecção se instala. Ajuda contra doenças como malária e peste, e contra infecções de ferimentos sujos. Dura 12 horas. O efeito é mais forte conforme a gravidade dos genes de imunidade de quem toma (mais forte para quem tem menos imunidade) e é modificado pela tolerância da pessoa à droga.
+VRE_AntibioticsHigh_VeryWeak.label	antibióticos
+VRE_AntibioticsHigh_VeryWeak.description	Uma droga para reforçar o sistema imunológico depois que uma infecção se instala. Ajuda contra doenças como malária e peste, e contra infecções de ferimentos sujos. Dura 12 horas. O efeito é mais forte conforme a gravidade dos genes de imunidade de quem toma (mais forte para quem tem menos imunidade) e é modificado pela tolerância da pessoa à droga.
+VRE_AntibioticsHigh_Weak.label	antibióticos
+VRE_AntibioticsHigh_Weak.description	Uma droga para reforçar o sistema imunológico depois que uma infecção se instala. Ajuda contra doenças como malária e peste, e contra infecções de ferimentos sujos. Dura 12 horas. O efeito é mais forte conforme a gravidade dos genes de imunidade de quem toma (mais forte para quem tem menos imunidade) e é modificado pela tolerância da pessoa à droga.
+VRE_AntibioticsTolerance.label	tolerância a antibióticos
+VRE_AntibioticsTolerance.description	Uma tolerância acumulada a antibióticos. Quanto mais forte a tolerância, mais antibióticos são necessários para ter o mesmo efeito.
+VRE_AntibioticsTolerance.stages.small.label	pequena
+VRE_AntibioticsTolerance.stages.large.label	grande
+VRE_AntibioticsTolerance.stages.massive.label	enorme
+VRE_AntibioticsAddiction.label	vício em antibióticos
+VRE_AntibioticsAddiction.description	Um vício químico em antibióticos. A presença prolongada de antibióticos causou adaptações neurológicas no nível celular, e o cérebro não funciona mais direito sem a droga.\n\nSem doses regulares de antibióticos, começam os sintomas de abstinência. Porém, uma abstinência prolongada força o cérebro a voltar ao normal, curando o vício.
+VRE_AntibioticsAddiction.stages.withdrawal.label	abstinência
+## DefInjected/HediffDef/Hediffs_Health.xml
+VRE_Hemophiliac.label	hemofílico
+VRE_Hemophiliac.description	Um distúrbio que bloqueia os fatores de coagulação do sangue, fazendo a pessoa sangrar muito mais rápido quando ferida.
+## DefInjected/NeedDef/Antibiotics.xml
+VRE_Chemical_Antibiotics.label	antibióticos
+VRE_Chemical_Antibiotics.description	Por causa de um vício em antibióticos, esta pessoa precisa consumir antibióticos regularmente para evitar sintomas de abstinência.
+## DefInjected/ThingDef/Antibiotics.xml
+VRE_Antibiotics.label	antibióticos
+VRE_Antibiotics.description	Uma droga para reforçar o sistema imunológico depois que uma infecção se instala. Ajuda contra doenças como malária e peste, e contra infecções de ferimentos sujos. Dura 12 horas.\n\nEsta droga não previne novas infecções. Ela cura as infecções existentes, mesmo as ainda não descobertas, mas o uso excessivo pode deixar a pessoa temporariamente resistente ao efeito.
+VRE_Antibiotics.ingestible.ingestCommandString	Tomar {0}
+VRE_Antibiotics.ingestible.ingestReportString	Tomando {0}.
+## DefInjected/ThingDef/Filth_Various.xml
+VRE_Filth_BlueBlood.label	sangue azul
+VRE_Filth_BloodSmear_Blue.label	mancha de sangue azul

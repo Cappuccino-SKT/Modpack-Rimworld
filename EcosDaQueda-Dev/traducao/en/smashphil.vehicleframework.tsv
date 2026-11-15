@@ -1,0 +1,743 @@
+## DefInjected/BodyPartDef/VehiclePawnBodyBase.xml
+emptyBody.label	body
+## DefInjected/DesignationCategoryDef/DesignationCategories.xml
+VF_Vehicles.label	Vehicles
+## DefInjected/DesignationDef/DesignationDefs.xml
+DisassembleVehicle.label	Disassemble Vehicle
+## DefInjected/HistoryEventDef/Precepts_BoardingVehicles.xml
+VF_BoardLandVehicle.label	boarding land vehicle
+VF_BoardAirVehicle.label	boarding air vehicle
+VF_BoardSeaVehicle.label	boarding sea vehicle
+VF_BoardUniversalVehicle.label	boarding universal vehicle
+VF_BoardedLandVehicle.label	boarded land vehicle
+VF_BoardedAirVehicle.label	boarded air vehicle
+VF_BoardedSeaVehicle.label	boarded sea vehicle
+VF_BoardedUniversalVehicle.label	boarded universal vehicle
+## DefInjected/IncidentDef/BlackHawkDown.xml
+ShuttleCrashed.label	Shuttle Downed
+## DefInjected/JobDef/JobDefs_General.xml
+Board.reportString	Entering TargetA.
+LoadUpgradeMaterials.reportString	Loading upgrade materials into TargetB.
+IdleVehicle.reportString	Idle.
+IdleVehicleDeSpawned.reportString	Idle.
+DeployVehicle.reportString	Deploying.
+PrepareCaravan_GatheringVehicle.reportString	Loading cargo for TargetB.
+RopeAnimalToVehicle.reportString	Roping {0} to TargetA.
+CarryPawnToVehicle.reportString	Carrying TargetA to TargetB.
+LoadVehicle.reportString	Loading TargetA onto TargetB
+CarryItemToVehicle.reportString	Loading TargetA onto TargetB
+RepairVehicle.reportString	Repairing TargetA.
+DisassembleVehicle.reportString	Disassembling TargetA.
+PaintVehicle.reportString	Painting TargetA.
+UpgradeVehicle.reportString	Working on TargetA.
+RefuelVehicle.reportString	Refueling TargetA
+RefuelVehicleAtomic.reportString	Refueling TargetA
+RemoveFuelFromVehicle.reportString	Emptying TargetA
+FollowVehicle.reportString	Following TargetA.
+EscortVehicle.reportString	Escorting TargetA.
+## DefInjected/JobDef/JobDefs_Raiders.xml
+SabotageVehicle.reportString	Sabotaging TargetA.
+## DefInjected/KeyBindingDef/KeyBindings.xml
+VF_RestartGame.label	Quick Restart
+VF_QuickStartMenu.label	Quick Start Menu
+VF_DebugSettings.label	Debug Settings
+## DefInjected/ScenPartDef/ScenParts_Vehicles.xml
+StartingVehicle.label	start with vehicle(s)
+## DefInjected/SmashTools.Animations.AnimationParameterDef/Parameters_Aerial.xml
+VF_VehicleIsTakingOff.label	Is TakingOff
+VF_VehicleIsLanding.label	Is Landing
+VF_VehicleIsLoitering.label	Is Loitering
+VF_ReadyForTakeoff.label	Ready to Takeoff
+VF_ReadyForLanding.label	Ready to Landing
+## DefInjected/SmashTools.Animations.AnimationParameterDef/Parameters_General.xml
+VF_VehicleIsMoving.label	Is Moving
+VF_VehicleIsDisabled.label	Is Disabled
+VF_VehicleIsIgnitionOn.label	Is Drafted
+## DefInjected/StatCategoryDef/StatCategoryDefs.xml
+VehicleBasicsImportant.label	Basics
+VehicleBasics.label	Basics
+VehicleAerial.label	Aerial
+VehicleRefuelable.label	Refuelable
+VehicleCombat.label	Combat
+VehicleTurrets.label	Turrets
+## DefInjected/ThingDef/Airdrop_Container.xml
+Airdrop.label	Airdrop
+## DefInjected/ThingDef/Airdrop_Skyfaller.xml
+AirdropPackage.label	Airdrop
+AirdropParatrooper.label	Paratrooper
+## DefInjected/ThingDef/Mote_CannonPlume.xml
+Mote_CannonPlume.label	Mote
+## DefInjected/ThingDef/Mote_FishingNet.xml
+MoteFishingNet.label	Mote
+## DefInjected/ThingDef/Mote_Flash.xml
+Mote_CannonFlash.label	Mote
+## DefInjected/ThingDef/Mote_Gas.xml
+Mote_Smoke_CannonSmall.label	smoke
+Mote_CannonSmoke.label	Mote
+## DefInjected/ThingDef/Mote_LaunchedObject.xml
+MoteLaunchedTurret.label	Mote
+## DefInjected/ThingDef/Mote_Smoke.xml
+Mote_ChimneySmoke.label	Mote
+Mote_RocketSmoke_Long.label	Mote
+Mote_RocketSmoke_Low.label	Mote
+Mote_ArtilleryExhaust.label	Mote
+Mote_ArtilleryExhaustThick.label	Mote
+## DefInjected/ThingDef/ProjectileSkyfaller.xml
+ProjectileSkyfaller.label	Projectile skyfaller
+## DefInjected/TransferableSorterDef/TransferableSorters.xml
+Type.label	type
+MoveSpeed.label	move speed
+CargoCapacity.label	cargo capacity
+Mass.label	peso
+## DefInjected/Vehicles.AerialVehicleArrivalModeDef/AerialVehicleArrivalModeDef.xml
+EdgeDrop.textEnemy	A group of {0} from {1} have arrived in a shuttle nearby.
+EdgeDrop.textFriendly	A group of friendly {0} from {1} have arrived in a shuttle nearby.
+EdgeDrop.textWillArrive	{0_pawnsPluralDef} will arrive in a shuttle.
+CenterDrop.textEnemy	A group of {0} from {1} have dropped in right on top of you!
+CenterDrop.textFriendly	A group of friendly {0} from {1} have dropped in right on top of you!
+CenterDrop.textWillArrive	{0_pawnsPluralDef} will arrive in a shuttle right on top of you.
+## DefInjected/Vehicles.IndicatorDef/IndicatorDefs.xml
+VF_Explosive.label	Explosive
+VF_Leaker.label	Leaks Fuel
+## DefInjected/Vehicles.PatternDef/PatternDefs.xml
+Default.label	Default
+Tiger.label	Tiger
+TigerStripes.label	Tiger Stripes
+Woodland.label	Woodland
+Hearts.label	Hearts
+Panther.label	Panther
+Digital.label	Digital
+Polygon.label	Polygon
+Rusty.label	Rusty
+Waves.label	Waves
+ZigZag.label	Zig Zag
+Abstract_Medium.label	Abstract Medium
+Abstract_Large.label	Abstract Large
+Lizard.label	Lizard
+Hexagon.label	Hexagon
+## DefInjected/Vehicles.PatternDef/SkinDefs.xml
+Jungle.label	Jungle
+## DefInjected/Vehicles.StatUpgradeCategoryDef/StatUpgradeCategoryDefs.xml
+FuelCapacity.label	Fuel Capacity
+FuelConsumptionRate.label	Fuel Consumption
+FuelConsumptionRate.formatString	{0}/day
+ChargeRate.label	Charge Rate
+ChargeRate.formatString	{0} /day
+DischargeRate.label	Discharge Rate
+DischargeRate.formatString	{0} /day
+WorldSpeedMultiplier.label	World Speed
+OffRoadMultiplier.label	Off Road Cost
+WinterCostMultiplier.label	Winter Cost
+PawnCollisionMultiplier.label	Impact Damage
+PawnCollisionRecoilMultiplier.label	Impact Damage Received
+## DefInjected/Vehicles.VehicleStatDef/VehicleStatDefs_Aerial.xml
+FlightSpeed.label	Flight Speed
+FlightSpeed.description	Speed of movement on the world map while flying.
+FlightSpeed.formatString	{0} t/s
+FlightControl.label	Flight Control
+FlightControl.description	Capacity of vehicle for flight.  If value reaches 0, the vehicle will be forced to crash land.
+## DefInjected/Vehicles.VehicleStatDef/VehicleStatDefs_General.xml
+MoveSpeed.label	Move Speed
+MoveSpeed.description	Speed of movement in cells per second.
+MoveSpeed.formatString	{0} c/s
+MoveSpeed.parts.0.formatString	{0} / {1}
+CargoCapacity.label	Cargo
+CargoCapacity.description	Amount of weight this vehicle can carry as cargo.
+CargoCapacity.formatString	{0} kg
+RepairRate.label	Repair Rate
+RepairRate.description	The amount of health that is repaired per second.
+RepairRate.formatString	{0} hp/s
+Mass.label	Mass
+Mass.description	The physical mass of this vehicle.
+Mass.formatString	{0} kg
+BodyIntegrity.label	Body Integrity
+BodyIntegrity.description	The average of all vehicle parts' health. If the integrity of the vehicle reaches 0, it will disintegrate into a fraction of its build cost.
+WorkToSabotage.label	Work To Sabotage
+WorkToSabotage.description	The base amount of work it takes to sabotage a vehicle.
+## DefInjected/WorkGiverDef/WorkGivers_General.xml
+PackVehicle.label	pack vehicle
+PackVehicle.gerund	packing
+PackVehicle.verb	pack
+HelpPackVehicleCaravan.label	pack vehicle
+HelpPackVehicleCaravan.gerund	packing
+HelpPackVehicleCaravan.verb	pack
+PackVehicleTurret.label	pack vehicle
+PackVehicleTurret.gerund	packing
+PackVehicleTurret.verb	pack
+LoadUpgradeMaterials.label	load materials
+LoadUpgradeMaterials.gerund	loading
+LoadUpgradeMaterials.verb	load
+WorkOnUpgrade.label	work on upgrade
+WorkOnUpgrade.gerund	upgrading
+WorkOnUpgrade.verb	upgrade
+RefuelVehicle.label	refuel vehicle
+RefuelVehicle.gerund	refueling
+RefuelVehicle.verb	refuel
+RemoveFuelFromVehicle.label	remove fuel from vehicle
+RemoveFuelFromVehicle.gerund	emptying
+RemoveFuelFromVehicle.verb	refuel
+RepairVehicle.label	repair vehicle
+RepairVehicle.gerund	repairing
+RepairVehicle.verb	repair
+DisassembleVehicle.label	disassemble vehicle
+DisassembleVehicle.gerund	disassembling
+DisassembleVehicle.verb	disassemble
+PaintVehicle.label	paint vehicle
+PaintVehicle.gerund	painting
+PaintVehicle.verb	paint
+## DefInjected/WorldObjectDef/WorldObjects.xml
+DebugSettlement.label	Original Location
+DebugSettlement.description	Debug
+StashedVehicle.label	Stashed Vehicle
+StashedVehicle.description	Stashed vehicles.
+VehicleCaravan.label	Vehicle Caravan
+VehicleCaravan.description	A group of traveling people with vehicles.
+AerialVehicle.label	Aerial Vehicle
+AerialVehicle.description	An aerial vehicle capable of flight on the world map.
+CrashedShipSite.label	Crash Site
+CrashedShipSite.description	A recently downed aerial vehicle with possible survivors.
+FlakProjectile.label	Flak Projectile
+## Keyed/Caravans.xml
+VF_Caravan_MoveSpeed	Amount of tiles traveled in 1 day.
+VF_Caravan_Dismounted	Dismounted
+VF_Caravan_Cargo	Cargo
+VF_Sailing	Sailing
+VF_ShowVehicleProperties	Show Properties
+VF_DockToCaravan	Items to Take
+VF_ImpassableBiome	Biome impassable for this vehicle.
+VF_CaravanDisabled	Caravaning disabled.
+VF_CaravanCantMove	Unable to move.
+VF_CantMergeAerialVehicle	Cannot merge aerial vehicles.
+VF_RecoverVehicles	Recover vehicles
+VF_CommandDisembark	Stash vehicles
+VF_CommandDisembarkDesc	Leave all vehicles behind and go on foot.  Vehicles will remain on the world map for up to 20-30 days.
+VF_ToggleRepairVehicle	Repair Vehicles
+VF_ToggleRepairVehicleDesc	Rest and perform repairs on vehicles inside the caravan
+VF_CommandDisembarkImpassableBiome	Cannot disembark, tile is impassable for colonists.
+VF_CommandAttackDockDisable	Cannot attack {0} while docked.
+VF_CommandTradeDockDisable	Cannot trade with {0}. Must dock boat first
+VF_CaravanMustHaveEnoughSpaceOnShip	Not enough space on ships to house all pawns.
+VF_CaravanMustHaveEnoughPawnsToOperate	Not enough Pawns selected to set sail. Need {0}
+VF_CaravanMustHaveAtLeastOneVehicle	Must have at least 1 vehicle selected in order to choose a route.
+VF_CommandFormVehicleCaravan	Form Vehicle Caravan
+VF_CommandFormVehicleCaravanDesc	Form caravan with vehicles included.
+VF_CommandReformVehicleCaravan	Reform Vehicle Caravan
+VF_CommandReformVehicleCaravanDesc	Reform vehicle caravan with vehicles selected.
+VF_RoutePlannerToggleVehicleDefs	VehicleDefs
+VF_RoutePlannerToggleVehicles	Vehicles
+## Keyed/Enums.xml
+NotAllowed	Disabled
+DriverNeeded	Colonist Driven
+NoDriverNeeded	AI Driven
+Misc	Other
+Transport	Transport
+Trader	Trader
+Combat	Combat
+Hybrid	Hybrid
+Manual	Manual
+Opportunistic	Opportunistic
+Automatic	Automatic
+VF_VehicleTracksNone	None
+VF_VehicleTracksVanilla	Vanilla
+VF_VehicleTracksFull	Full
+VF_RoadType_Prioritize	Prioritize
+VF_RoadType_Avoid	Avoid
+## Keyed/FloatMenu.xml
+VF_BoardVehicle	Board as {0}  [{1}]
+VF_BoardVehicleGroup	Board {0}
+VF_BoardVehicleGroupFail	Cannot board {0}. {1}
+VF_BoardFailureTooMany	Too many selected
+VF_BoardFailureNonCombatant	{0} is incapable of violence
+VF_ActivityIconOnBoardShip	Onboard {0}
+VF_IsIncapableOfRamming	Ram {0}
+VF_CannotMoveToCell	{0} cannot reach this area.
+VF_LandVehicleHere	Land Vehicle Here
+VF_LandVehicleEdge	Land in {0} at edge of map.
+VF_LandVehicleCenter	Land in {0} in center.
+VF_LandVehicleTargetedLanding	Land in {0} and choose landing spot.
+VF_AttackAndTargetLanding	Attack {0}: Choose Landing
+VF_StrafeRun	Strafe
+VF_AerialReconSite	Recon
+VF_CantEnterVehicle_IdeoligionForbids	Can't enter vehicle. Forbidden by ideoligion.
+## Keyed/Labels.xml
+VehicleFramework	Vehicle Framework
+VF_Vehicles	Vehicles
+VF_LoadCargo	Load Cargo
+VF_HaulPawnToVehicle	Load Pawn
+VF_DisembarkAllPawns	Unload All Pawns
+VF_DisembarkSinglePawn	Unload {0}
+VF_GearForward	Forward
+VF_GearReverse	Reverse
+VF_DisembarkNoExit	Unable to exit vehicle. No valid cells to exit onto.
+VF_DisabledByVehicleUpgrading	{0} is being upgraded.
+VF_StopVehicle	Stop
+VF_UndraftVehicle	Turn Off
+VF_DraftVehicleDesc	Drafts vehicle allowing it to move. This will consume fuel if applicable even if the vehicle is idle.
+VF_StopVehicleDesc	Stop the vehicle immediately.
+VF_UndraftVehicleDesc	Undrafts vehicle, disabling the consumption of fuel and disallowing movement.
+VF_RefuelFromInventoryCount	Refuel {0}x {1}
+VF_RefuelFromInventoryDesc	Refuel {0} using fuel stored in cargo.
+VF_VehicleFullyFueled	{0} is already fully fueled.
+VF_NoFuelInVehicle	No fuel in {0}.
+VF_CantRefuelWhileFlying	Cannot refuel {0} while inflight.
+VF_VehicleFuelCost	Fuel: {0}
+VF_TransferToVehicle_Order	Transfer to vehicle
+VF_TransferToVehicle_Order_Desc	Transfer selected thing(s) to the target vehicle's cargo.
+VF_TransferToVehicle_Cancel	Cancel transfer
+VF_TransferToVehicle_Cancel_Desc	Cancel transfer of selected thing(s) to any vehicle's cargo.
+VF_RandomVehicle	Random Vehicle
+VF_ShowAllItemsOnMap	Show All Items On Map
+VF_ResetColorPalettes	Reset All Palettes
+VF_ResetColorPalettesConfirmation	Are you sure you want to reset all saved palettes back to default settings? This action cannot be undone.
+VF_RotateVehicleRendering	Rotate vehicle
+VF_SaveColorPalette	Save Palette
+VF_ColorOne	ColorOne
+VF_ColorTwo	ColorTwo
+VF_ColorThree	ColorThree
+VF_ColorPickerHex	Hex
+VF_JobSettings	Job Settings
+VF_VehicleAgeReadout	Produced: {0}
+VF_StatsReport_CargoWeight	Cargo: {0}
+VF_StatsReport_Deployed	Deployed
+VF_CrewCount	Crew
+VF_CrewCountDesc	Number of crew and passengers that can fit inside of this vehicle.
+VF_PaintableDesc	Vehicle can be painted through color menu.
+VF_Upgradeable	Upgradeable
+VF_UpgradeableDesc	Vehicle can be modifed through an upgrade tree
+VF_FuelType	Fuel Type
+VF_FuelTypeDesc	What resource this vehicle consumes in order to operate.
+VF_CancelUpgrade	Cancel the upgrade that is in progress for {0}.
+VF_RoadZoneExpand	Road area
+VF_RoadZoneExpandDesc	Create an area where vehicles will prioritize or avoid moving through.\n\n'Prioritize' areas applied on the edge of the map will designate where vehicle caravans should enter from.
+VF_RoadZoneClear	Clear road area
+VF_RoadZoneClearDesc	Removes road zone. Vehicles will no longer have modified movement over the area.
+VF_RenameVehicleTooltip	Assign or clear name.
+VF_RecolorTooltip	Paint vehicle
+VF_DoubleClickShuttleTarget	Click to Confirm Destination
+VF_SwapColors	Cycle colors between each other.\n\nColorOne > ColorTwo > ColorThree
+VF_StartFishing	Fish
+VF_StartFishingDesc	Gather fish from the water.
+VF_NoFishermenTooltip	No colonists onboard that are capable of fishing.
+VF_NoFishAtSpot	No fish at this location.
+VF_ExplosiveComponent	Explosive
+VF_EditPawnOverlayRendererTooltip	Edit Pawn Overlay
+VF_ComponentClickMoreInfoTooltip	Click for detailed information.
+VF_Deploy	Deploy
+VF_Undeploy	Undeploy
+VF_DeployDescription	Deploy vehicle to enable use of turrets.
+VF_MustBeDeployed	Must be deployed.
+VF_MustBeUndeployed	Must be undeployed.
+VF_VehicleRestriction_Stationary	Cannot fire while moving.
+VF_TurretComponentDisabled	{0} needs repairs.
+VF_Patterns	Patterns
+VF_Skins	Skins
+VF_PatternZoom	Zoom
+VF_PatternZoomTooltip	Scale the pattern up or down.
+VF_PatternDisplacementX	Displacement X
+VF_PatternDisplacementY	Displacement Y
+VF_PatternDisplacementXTooltip	Moves texture along the horizontal axis.
+VF_PatternDisplacementYTooltip	Moves texture along the vertical axis.
+VF_Electricity	Electricity
+VF_ElectricFlick	Toggle connecting to the power grid.
+VF_ElectricFlickDesc	When on top of a power conduit, this connects to the power grid and transfers energy to recharge its battery.\n\nCurrently connected: {0}
+VF_OutOfFuel	Cannot move. {0} needs more fuel.
+VF_AutoAssign	Autofill
+VF_Assigned	Assigned
+VF_ApplyButton	Apply
+VF_Colonists	Colonists
+VF_ClearSeats	Clear
+VF_RemoveFromRole	Remove
+VF_AddToRole	Add
+VF_RoutePlannerButtonTip	Click to enter the planning mode for Vehicles where you can select specific vehicles you own, and plan your journey. Pathing is adjusted based on the vehicles selected.
+VF_SelectVehiclesForPlanner	Select Vehicles
+VF_StartVehicleRoutePlanner	Start Route
+VF_OkName	Confirm Name
+VF_RemoveName	Remove Name
+VF_NoFlightSpeed	Unable to launch with Flight Speed = 0
+VF_CannotLaunchWhileMoving	Cannot launch while {0} is moving.
+VF_CannotLaunchImmobile	{0} cannot launch without being able to move.
+VF_CannotLaunchRotated	{0} cannot launch at an angle.
+VF_CannotLaunchOverEncumbered	{0} cannot launch while over-encumbered.
+VF_TabCargo	Cargo
+VF_TabPassengers	Pawns
+VF_TabComponents	Health
+VF_TabUpgrades	Customize
+VF_ComponentHealth	Health
+VF_ComponentEfficiency	Efficiency
+VF_ComponentArmor	Armor
+VF_Depth	Depth
+VF_Depth_Internal	Internal
+VF_Depth_External	External
+VF_Depth_Undefined	Undefined
+VF_EfficiencyEffector	Stats Effected
+VF_BaseArmorRating	Base armor rating: {0}
+VF_NoFuelReturnTrip	No Return Trip
+VF_NotEnoughFuel	Out Of Range
+VF_NoSpaceFlight	{0} is incapable of space flight.
+VF_ConfirmationCancelLanding	Cancel landing in this map? Aerial vehicle will be kicked out to the world map.
+VF_PawnsLeftBehindConfirm	Not Enough Seats
+VF_PawnsLeftBehindConfirmDesc	Leave
+VF_Cargo	Cargo
+VF_Properties	Properties
+VF_LauncherProperties	Launch Properties
+VF_FueledTravelPropertes	Fuel
+VF_JobLimitations	Max Workers per Job
+## Keyed/Letters.xml
+VF_IncidentCrashedSiteLabel_Crashing	{0} Crash Landed
+VF_IncidentCrashedSiteLabel_ShotDown	{1} Shot Down {0}
+VF_IncidentReasonLister	\n\nReason:\n {0}
+VF_IncidentCrashedSite_Crashing	{0} has crashed.
+VF_IncidentCrashedSite_ShotDown	{0} has been shot down by {1}.
+VF_IncidentCrashedSiteReason_OutOfFuel	Ran out of fuel
+VF_IncidentCrashedSiteReason_FlightControl	Lost all flight control
+VF_ReinforcementsArrivedLabel	Reinforcements
+VF_ReinforcementsArrived	{0} has arrived with reinforcements to investigate the crash site.
+VF_BoatSunk	Boat Sunk
+VF_BoatSunkDesc	{0} has sunk to the depths of the ocean.
+VF_BoatSunkWithPawnsDesc	{0} has sunk to the depths of the ocean. \n\nIt has taken the following pawns down with it:\n{1}
+VF_IdleInVehicle	These colonists are sitting idly in a vehicle:\n{0}\n\nYou should probably find them something productive to do.
+## Keyed/Messages.xml
+VF_MustSelectColorPalette	Must have a palette selected to save over.
+VF_VehicleUnableToMove	{0_labelShort} is unable to move.
+VF_VehicleImmobileDeployed	{0_labelShort} is deployed and unable to move.
+VF_HandlerNotEnoughRoom	Failed to add {0} to {1}. No more space available.
+VF_NotEnoughToOperate	Cannot move. Needs more crew in order to operate.
+VF_UpgradeInProgress	Cannot draft while {0} is upgrading.
+VF_NotEnoughCrew	Not enough colonists in {0} to operate {1}.
+VF_CannotFit	Not enough space.
+VF_NoPathForVehicle	Cannot path here.
+VF_IncapableStatusForRole	{0} is incapable of fulfilling this role.
+VF_CannotAddToCargo	{0} cannot be added to cargo.
+VF_InvalidName	Name invalid for Vehicle.
+VF_OutOfFood	No food in {0} with Pawns onboard.
+VF_NoAmmoLoadedTurret	No ammo loaded.
+VF_NoAmmoAvailable	No ammo available in inventory.
+VF_VehicleCaravanMentalBreakMovementRole	{0} is no longer able to operate their role for the vehicle caravan.
+VF_PawnBoardedFormingCaravan	{0} has boarded the {1} and is ready for departure.
+VF_CantAssignVehicle	Not enough pawns for {0}.
+VF_AssignFailure	Failed to assign seats. {0}
+VF_PackingSpotNotFound	Packing Spot was not found for Vehicle caravan. It is recommended you place a Packing Spot from Misc.
+VF_ForceLeaveCaravan	Force to Leave
+VF_ForceLeaveCaravanDesc	Force Vehicle Caravan to leave the map. Will skip loading whatever items are not currently onboard
+VF_ForceLeaveConfirmation	Crew is preparing to leave.
+VF_CaravanTerminatedNoVehicles	Caravan process has been terminated. No vehicles remain.
+VF_LandAndSeaRoutePlannerRestriction	Cannot plan route for both Sea and Land vehicles. Paths will not register.
+VF_LeaveVehicleBehindCaravan	Are you sure you want to leave Vehicles behind? Vehicles left behind: {0}
+VF_MustAssignEnoughToVehicle	Must assign enough colonists to man vehicle.
+VF_AerialVehicleArrived	{0} has arrived at their destination.
+VF_AerialVehicleLeft	{0} has left the map.
+VF_AerialVehicleLaunchNotValid	Unable to launch, conditions are not suitable.
+VF_LaunchOutOfFuel	Cannot launch. Out of Fuel.
+VF_FlightPathMaxNodes	Maximum nodes for {0}'s flight path has been reached.
+VF_MustTargetLanding	A landing destination must be chosen.
+## Keyed/Settings.xml
+VF_MainSettings	Main
+VF_ListSearchText	Search...
+VF_SettingsDisabledTooltip	Settings have been locked for this vehicle and cannot be modified.
+VF_NonUpgradeableSettingsTooltip	This vehicle cannot be upgraded.
+VF_RecolorDefaultMaskTooltip	Change default pattern
+VF_WorldMapGen	World/Map Generation
+VF_BeachGenMultiplier	Beach Size Multiplier
+VF_BeachGenMultiplierTooltip	Increase the amount of water on the coastline.
+VF_RiverGenMultiplier	River Size Multiplier
+VF_RiverGenMultiplierTooltip	Increase the width of rivers on maps.
+VF_AdjustSettlementRadius	Settlement Relocation
+VF_AdjustSettlementRadiusTooltip	Adjust settlements to nearby features for vehicle travel.
+VF_AdjustCoastWeight	Coastal weight
+VF_AdjustRiverWeight	River weight
+VF_WorldTiles	tiles
+VF_SettingsGeneral	General
+VF_WillRequireRestart	This action requires a restart to take effect.
+VF_ModifiableSettings	Modifiable Settings
+VF_ModifiableSettingsTooltip	Toggle Modifiable Settings. Restarting with this disabled will bypass generation of modifiable settings.\n \nDetermines whether Vehicles should use values from the mod settings or Defs
+VF_CustomShaders	Use RGB Shaders
+VF_CustomShadersTooltip	Enable use of custom shaders provided by the framework.
+VF_DiagonalVehicleRendering	Allow Diagonal Rendering
+VF_DiagonalVehicleRenderingTooltip	Vehicles that support diagonal rendering will do so when set to diagonal rotations (NorthEast, SouthEast, SouthWest, NorthWest)
+VF_FullVehiclePathing	Full Vehicle Pathing
+VF_FullVehiclePathingTooltip	Use the entire hitbox of the vehicle when determining shortest path. Vehicle will still be constrained by its size.
+VF_SmoothVehiclePathing	Smooth Vehicle Paths
+VF_SmoothVehiclePathingTooltip	Vehicle pathing will have an additional "turn" cost, preventing unnecessary zig zag patterns from shortest path.
+VF_HierarchalPathfinding	Hierarchal Pathfinding
+VF_HierarchalPathfindingTooltip	Use HPA* instead of A* for faster pathfinding. Sacrifices a small amount of pathfinding accuracy for substantially faster pathfinding across large distances.
+VF_RoadBiomeCostPathing	Ignore Biomes on Roads
+VF_RoadBiomeCostPathingTooltip	Vehicle Caravans moving over roads on the world map ignore biome path costs.
+VF_MultiplePawnsPerJob	Multi-Pawn Jobs
+VF_MultiplePawnsPerJobTooltip	Allows vehicle related jobs to allow more than 1 pawn to reserve and work on it. Max allowed pawns determined by modders.
+VF_GraphicsSettings	Graphics
+VF_PerformanceSettings	Performance
+VF_PassiveWaterWaves	Passive Water Waves
+VF_PassiveWaterWavesTooltip	Generate passive waves when boat is idle.
+VF_AerialVehicleEffects	Aerial Vehicle Effects
+VF_AerialVehicleEffectsTooltip	When aerial vehicles takeoff and land, spawn flecks and render overlay textures.
+VF_MeleeDamageMultiplier	Melee Damage Multiplier
+VF_RangedDamageMultiplier	Ranged Damage Multiplier
+VF_ExplosiveDamageMultiplier	Explosive Damage Multiplier
+VF_VehicleTurrets	Vehicle Turrets
+VF_TurretOverheatMechanics	Turret Overheating
+VF_TurretOverheatMechanicsTooltip	Some turrets have overheat mechanics to prevent nonstop firing without consequences. Keep this enabled?
+VF_Fishing	Fishing
+VF_FishingInactive	Fishing (Inactive)
+VF_FishingMultiplier	Fishing Multiplier
+VF_FishingMultiplierTooltip	Adjust the amount of fish gathered from fishing boat.
+VF_FishingSkill	Fishing Skill
+VF_FishingSkillTooltip	How much exp is given by fishing on a boat
+VF_AerialVehicles	Air
+VF_DrawLandingGhost	Draw Landing Spot
+VF_DrawLandingGhostTooltip	Draws a transparent 'blueprint' where an aerial vehicle is landing.
+VF_RocketsBurnRadius	Rockets Burn
+VF_RocketsBurnRadiusTooltip	Allow aerial vehicles which support this feature to burn all things within a small radius upon takeoff and landing.
+VF_DynamicDrawing	Dynamic Drawing
+VF_DynamicDrawingTooltip	Render aerial vehicles on the world map when zoomed in.
+VF_DeployOnLanding	Deploy on Landing
+VF_DeployOnLandingTooltip	When an aerial vehicle lands all pawns onboard will be unloaded.
+VF_DelayOnLanding	Delay on Landing
+VF_DelayOnLandingTooltip	When an aerial vehicle lands the deployment of all pawns will be delayed.
+VF_DelaySeconds	seconds
+VF_AirDefensesActive	Air Defenses
+VF_AirDefensesActiveTooltip	Certain world objects are able to utilize air defenses to shoot down nearby aircraft.
+VF_CombatSettings	Combat
+VF_ShellExplosionsOnWater	Reduce Explosions on Water
+VF_ShellExplosionsOnWaterTooltip	Explosive shells over water have their explosion radius reduced and sound effect changed to a splash.
+VF_RunOverPawns	Run Over Pawns
+VF_RunOverPawnsTooltip	Vehicles can run over pawns and apply blunt damage based on mass and speed.
+VF_ChanceToRunOverFriendlies	Friendly Fire Chance
+VF_ChanceToRunOverFriendliesTooltip	Chance to run over friendly pawns.
+VF_VehicleStats	Stats
+VF_Upgrades	Upgrades
+VF_OverrideDrawColor	Override Draw Color
+VF_OverrideDrawColorTooltip	When any upgrade is applied that comes with a pattern or draw color, the previous paint job will be overridden.
+## Keyed/Settings_Debug.xml
+VF_DevMode	DevMode
+VF_DevMode_Logging	Logging
+VF_DevMode_Troubleshooting	Troubleshooting
+VF_DevMode_Drawers	Visual Help
+VF_DevMode_Pathing	Pathing
+VF_DevMode_ShowRecentNews	Show Most Recent News
+VF_DevMode_OpenQuickTestSettings	Quick Test Menu
+VF_DevMode_GraphEditor	Graph Editor
+VF_DevMode_ResetAll	Reset All Settings
+VF_DevMode_ResetVehicle	Reset {0}
+VF_DevMode_ResetAllVehicles	Reset All Vehicles
+VF_DevMode_ResetPage	Reset Page
+VF_DevMode_ResetAllConfirmation	Are you sure you want to reset all settings to original values? If you were locked out of the Mod Settings from an exception, you will need to restart after the reset.
+VF_DevMode_DebugLogging	Log debug information.
+VF_DevMode_DebugLoggingTooltip	Enable message logging to output specific values and pieces of information useful for debugging Vehicles. Use only if you're making a Vehicle add-on.
+VF_DevMode_DebugPathCostRecalculationLogging	Debug PathCost Recalculation Logging
+VF_DevMode_DebugPathCostRecalculationLoggingTooltip	Log summary of path cost change for all vehicles affected by region dirtying.
+VF_DevMode_LogThreadActivity	Log Thread Activity
+VF_DevMode_LogThreadActivityTooltip	Log ongoing async actions on the dedicated thread of the current map in view.
+VF_DevMode_DebugDraftAnyVehicle	Draft Any Vehicle
+VF_DevMode_DebugDraftAnyVehicleTooltip	Be able to draft and move any vehicle regardless of passengers. Useful for empty boats in deep water or if you want to expedite testing.
+VF_DevMode_DebugInstantSendOff	Instant Aerial Launch
+VF_DevMode_DebugInstantSendOffTooltip	Instantly send aerial vehicles to the map, skipping animations and any other misc. wait time.
+VF_DevMode_DebugShootAnyTurret	Shoot Any Turret
+VF_DevMode_DebugShootAnyTurretTooltip	Be able to shoot any turret regardless if the turret is being operated.
+VF_DevMode_DebugSpawnVehiclesGodMode	Spawn Vehicle Buildings (god mode)
+VF_DevMode_DebugSpawnVehiclesGodModeTooltip	Vehicle blueprints being placed in godmode will spawn the Building variant as opposed to generating a VehiclePawn for spawning.
+VF_DevMode_DebugDrawUpgradeNodeGrid	Draw UpgradeTree Grid
+VF_DevMode_DebugDrawUpgradeNodeGridTooltip	Draw UpgradeTree grid for placement on (x,y) axis.
+VF_DevMode_DebugDrawHitbox	Draw Hitbox
+VF_DevMode_DebugDrawHitboxTooltip	Draw vehicle's hitbox by highlighting the map cells the vehicle occupies.
+VF_DevMode_DebugDrawVehicleTracks	Draw VehicleTracks
+VF_DevMode_DebugDrawVehicleTracksTooltip	Draw cells occupied by vehicle's "VehicleTracks" which mark what cells will end up being damaged per move action.
+VF_DevMode_DebugDrawBumpers	Draw Vehicle Bumpers
+VF_DevMode_DebugDrawBumpersTooltip	Draw cells immediately in front of vehicle that will indicate when the vehicle "bumps" into something and halts pathing.
+VF_DevMode_DebugDrawLordMeetingPoint	Draw Lord Meeting Point
+VF_DevMode_DebugDrawLordMeetingPointTooltip	Highlights the cell where the Form Vehicle Caravan meeting point has been set.
+VF_DevMode_DebugDrawFleePoints	Draw Flee Points
+VF_DevMode_DebugDrawFleePointsTooltip	Draw pawns' attempts to flee from incoming vehicle collisions.
+VF_DevMode_DebugDrawGrid	Draw Debug Grid
+VF_DevMode_DebugDrawGridTooltip	Draws debug grid values for the selected type.
+VF_DevMode_DebugPathfinderDebugging	Local Pathing
+VF_DevMode_DebugPathfinderDebuggingTooltip	Open menu for debugging various outputs of pathfinding (both cell based and region based)
+VF_DevMode_DebugWorldPathfinderDebugging	World Pathing
+VF_DevMode_DebugWorldPathfinderDebuggingTooltip	Open menu for debugging WorldPathGrid for any VehicleDef.
+VF_DevMode_DebugDrawVehiclePathingCosts	Draw Path Costs
+VF_DevMode_DebugDrawVehiclePathingCostsTooltip	Draw costs per cell/tile calculated from pathfinder. Shows accumulated path cost.
+VF_DevMode_DebugDrawPathfinderSearch	Draw Pathfinder Search
+VF_DevMode_DebugDrawPathfinderSearchTooltip	Draws Pathfinder search as it opens and closes nodes searching for a path.  Will also show chunk search if Hierarchal Pathfinding is enabled. Pathfinder is intentionally slowed down in order to clearly show the process, as the async search is too fast in most cases to view.
+## Keyed/Settings_Fields.xml
+VF_VehicleEnabled	Enabled
+VF_VehicleDisabled	Disabled
+VF_VehiclePlayerOnly	Player Only
+VF_VehicleRaiderOnly	NPC Only
+VF_EnableButtonTooltip	If disabled this vehicle will not be available in-game. Applies to both the player and NPC factions.
+VF_MovementPermissions	Control Type
+VF_NavigationType	Navigation
+VF_NavigationTypeTooltip	Navigation category for the World Map. Dictates when the Vehicle may move on the World Map.
+VF_Nameable	Can Assign Name
+VF_NameableTooltip	Allow naming of this vehicle. Name will appear over the vehicle and will replace the displayed label.
+VF_CombatPower	Combat Power
+VF_CombatPowerTooltip	Combat points vehicle costs in order to generate in an event.
+VF_CanCaravan	Caravan
+VF_CanCaravanTooltip	Vehicle is able to be taken on caravans.
+VF_SaveableFieldDisabledConditionTooltip	Disabled. {0}
+VF_DisabledSingleModDependencyTooltip	Disabled. Compatible mod not in active mod list: {0}
+VF_DisabledMultipleModsDependencyTooltip	Disabled. Compatible mods not in active mod list: {0}
+VF_SaveableFieldDisabledTooltip	Disabled for this Vehicle Type.
+VF_SaveableFieldLockedTooltip	Setting is locked for this Vehicle.
+VF_DebugDisabledTooltip	Disabled for all Vehicles at this time.
+VF_GizmoDisabledTooltip	Disabled in the mod settings.
+VF_CollisionMultiplier	Pawn Damage
+VF_CollisionMultiplierTooltip	Multiplier for damage applied to pawns being run over by vehicles.
+VF_CollisionVehicleMultiplier	Vehicle Damage
+VF_CollisionVehicleMultiplierTooltip	Multiplier for damage applied to the vehicle when running over a pawn.
+VF_ManhunterTargetsVehicle	Manhunter Targets
+VF_ManhunterTargetsVehicleTooltip	Manhunter animals will target this vehicle.
+VF_EMPStuns	EMP Stuns
+VF_EMPStunsTooltip	EMP weapons will temporarily disable this vehicle.
+VF_CanAdaptToEMP	Can Adapt
+VF_CanAdaptToEMPTooltip	Can adapt to emp damage and become temporarily immune from stuns.
+VF_VehicleCannotStun	Vehicle has no stunnable components.
+VF_FishingEnabled	Can Fish
+VF_FishingEnabledTooltip	Enables fishing when stationary over water.
+VF_JobLimitations	Vehicle Jobs
+VF_MaxWorkers	Max Workers
+VF_OffRoadMultiplier	Off Road Multiplier
+VF_OffRoadMultiplierTooltip	PathCost multiplier for traveling on roads.
+VF_WinterSpeedMultiplier	Winter Speed Multiplier
+VF_WinterSpeedMultiplierTooltip	PathCost multiplier for traveling during winter.
+VF_WorldSpeedMultiplier	World Speed Multiplier
+VF_WorldSpeedMultiplierTooltip	Multiplier to MoveSpeed when on the world map in a caravan.
+VF_DeployTime	Deploy Time
+VF_DischargePerTick	Discharge Rate
+VF_DischargePerTickTooltip	Amount per tick in which battery loses its charge.
+VF_TicksPerCharge	Charge Rate
+VF_TicksPerChargeTooltip	Charge amount per tick applied to battery.
+VF_NotElectricPowered	Not electric powered.
+VF_PerDay	/ day
+VF_Fuel	Fuel
+VF_FuelConsumptionRate	Fuel Consumption Rate
+VF_FuelConsumptionRateTooltip	Fuel consumed per day.  Idle vehicles consume 50% less fuel.
+VF_FuelCapacity	Fuel Capacity
+VF_FuelCapacityTooltip	Amount of fuel that can be stored
+VF_FuelConsumptionRateWorldMultiplier	Fuel World %
+VF_FuelConsumptionRateWorldMultiplierTooltip	Fuel consumption multiplier on the world map
+VF_AutoRefuelPercent	Auto Refuel %
+VF_AutoRefuelPercentTooltip	Colonists will attempt to refuel the vehicle when fuel gets below this percent.
+VF_TargetFuelConfigurable	Fuel Level Configurable
+VF_TargetFuelConfigurableTooltip	Max fuel level can be configured.
+VF_AmbientHeat	Ambient Heat
+VF_AmbientHeatTooltip	Heat emitted when fuel is being consumed.
+VF_ReconDistance	Recon Distance
+VF_ReconDistanceTooltip	Distance in tiles the shuttle will be able to perform recon of a site or settlement.
+VF_FuelConsumptionWorld	Fuel Consumption %
+VF_FuelConsumptionWorldTooltip	Fuel consumption multiplier on the world map.
+VF_LaunchFixedMaxDistance	Fixed Max Distance
+VF_LaunchFixedMaxDistanceTooltip	Set a fixed max distance this vehicle can fly regardless of fuel level.
+VF_LaunchFixedMaxDistanceDisabled	None
+VF_ControlInFlight	Control in Flight
+VF_ControlInFlightTooltip	Control the aerial vehicle while it is in flight. Allows for changing of flight paths midflight, choosing your landing after loading a map, and strafing maps that have not yet been loaded.
+VF_CanRoofPunch	Can Roof Punch
+VF_CanRoofPunchTooltip	Vehicle can punch through roofs when landing.
+VF_SpaceFlight	Space Faring
+VF_SpaceFlightTooltip	Vehicle is capable of launching to and taking off from space objects.
+VF_SignalJamming	Signal Jammer
+VF_SignalJammingTooltip	Vehicle is capable of jamming signals in order to visit certain orbital platforms.
+VF_RateOfClimb	Rate of Climb
+VF_RateOfClimbTooltip	Amount the vehicle ascends per tick.
+VF_MaxAltitude	Max Altitude
+VF_MaxAltitudeTooltip	Maximum altitude this vehicle can achieve when in flight.
+VF_MaxFallRate	Max Fall Rate
+VF_MaxFallRateTooltip	Max amount this vehicle will descend when shot down or out of fuel.
+VF_Instant	Instant
+VF_Rotatable	Rotatable
+VF_RotatableTooltip	Whether turret can rotate to aim toward its target, or is static and can only shoot in the direction it's facing.
+VF_MagazineCapacity	Magazine Capacity
+VF_MagazineCapacityTooltip	How many shots this turret can shoot before having to reload.
+VF_MinRange	Min Range
+VF_MinRangeTooltip	The minimum range of this turret.
+VF_MaxRange	Max Range
+VF_MaxRangeTooltip	The maximum range of this turret.
+VF_WarmupTime	Warmup Time
+VF_WarmupTimeValue	{0}s
+VF_WarmupTimeTooltip	Amount of time it takes for this turret to shoot.
+VF_ReloadTime	Reload Time
+VF_ReloadTimeValue	{0}s
+VF_ReloadTimeTooltip	Amount of time it takes to reload this turret.
+VF_RotationSpeed	Rotation Speed
+VF_RotationSpeedValue	{0} deg/s
+VF_RotationSpeedTooltip	How quickly this turret rotates to face its target.
+VF_FireModes	Firing Modes
+VF_FireModesTooltip	Rates of fire this turret can be set to.
+VF_RateOfFire	Rate of fire
+VF_RateOfFireValue	{0} rounds / minute
+VF_ShotsPerBurst	Shots per burst
+VF_ShotGroup	Shot Group
+VF_ShotGroupValue	{0} cells
+## Keyed/SmashTools.xml
+ST_Copy	Copy
+ST_Paste	Paste
+ST_Delete	Delete
+ST_AnimationWindow	Animator
+ST_ControllerWindow	Controller
+ST_CreateNewClip	Create New Clip...
+ST_RemoveProperties	Remove Properties
+ST_AddKey	Add Key
+ST_RemoveKey	Delete Key
+ST_PreviewAnimation	Preview
+ST_PreviewAnimationTooltip	Enable/disable preview mode of entity's animation in-game
+ST_PlayAnimationTooltip	Play the animation
+ST_PauseAnimationTooltip	Pause the animation
+ST_SkipFrameBeginningTooltip	Go to the beginning of the animation
+ST_SkipFramePreviousTooltip	Go to previous keyframe
+ST_SkipFrameNextTooltip	Go to next keyframe
+ST_SkipFrameEndTooltip	Go to the end of the animation
+ST_AddKeyFrame	Add keyframe
+ST_AddAnimationEvent	Add event
+ST_AddProperty	Add Property
+ST_Injected	Injected
+ST_UnsupportedType	UnsupportedType
+ST_NoFunctionSelected	No Function Selected
+ST_NoControllerParameters	No Controller Parameters
+ST_DopesheetTab	Dopesheet
+ST_CurvesTab	Curves
+ST_Layers	Layers
+ST_Parameters	Parameters
+ST_Conditions	Conditions
+ST_CreateState	Create State
+ST_CreateSubState	Create Sub-State Machine
+ST_MakeTransition	Make Transition
+ST_SetStateDefault	Set as Layer Default State
+ST_CreateBlendTree	Create new BlendTree in State
+ST_Loop	Loop
+ST_MotionFile	Motion
+ST_MotionSpeed	Speed
+ST_MotionSpeedMultiplier	Multiplier
+ST_MotionTime	Motion Time
+ST_Mirror	Mirror
+ST_CycleOffset	Cycle Offset
+ST_WriteDefaults	Write Defaults
+ST_TransitionList	Transitions
+ST_TransitionSolo	Solo
+ST_TransitionMute	Mute
+## Keyed/Status.xml
+VF_FormingCaravanStatus_RopingAnimals	Roping animals to vehicles.
+VF_FormingCaravanStatus_RopingAnimals_Pause	Roping animals to vehicles. (waiting)
+VF_FormingCaravanStatus_BoardVehicles	Boarding.
+VF_FormingCaravanStatus_BoardVehicles_Pause	Boarding. (waiting)
+VF_FormingCaravanStatus_Leaving_Vehicles	Leaving.
+VF_FormingCaravanStatus_Leaving_Vehicles_Pause	Leaving. (waiting)
+VF_draftLabel	Start Engine
+VF_healthLabel_Healthy	Operational
+VF_healthLabel_Injured	Needs Repairs
+VF_healthLabel_Immobile	Inoperable
+VF_healthLabel_Dead	Ruined
+VF_healthLabel_Beached	Beached
+VF_GeneratingPathData	Generating Vehicle PathData
+VF_GeneratingPathGrids	Generating PathGrids
+VF_GeneratingRegions	Generating Vehicle Regions
+## Keyed/Turrets.xml
+VF_ReloadVehicleTurret	Reload
+VF_ToggleAutoTargeting	Toggle automatic targeting
+VF_ToggleAutoTargetingDesc	This determines whether the turret will automatically target enemies.  If enabled, any enemies within range will be engaged.\n\nAutomatic targeting is currently {0}.
+VF_AutoTargetingDisabled	AutoTargeting is not allowed for this turret.
+VF_VehicleTurrets_NoAmmoToReload	No usable ammo.
+VF_SetReloadLevel	Set auto-reloading level for to {0}.
+VF_SetReloadLevelTooltip	Configure Ammo Level
+## Keyed/Upgrades.xml
+VF_Upgrade	Upgrade
+VF_DisabledFromOtherNode	Inaccessible, disabled from other upgrade.
+VF_MissingPrerequisiteUpgrade	Missing prerequisites.
+VF_RemoveUpgrade	Remove

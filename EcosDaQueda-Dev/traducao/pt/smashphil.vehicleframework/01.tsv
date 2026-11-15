@@ -1,0 +1,498 @@
+## DefInjected/BodyPartDef/VehiclePawnBodyBase.xml
+emptyBody.label	carroceria
+## DefInjected/DesignationCategoryDef/DesignationCategories.xml
+VF_Vehicles.label	Veículos
+## DefInjected/DesignationDef/DesignationDefs.xml
+DisassembleVehicle.label	Desmontar veículo
+## DefInjected/HistoryEventDef/Precepts_BoardingVehicles.xml
+VF_BoardLandVehicle.label	embarcando em veículo terrestre
+VF_BoardAirVehicle.label	embarcando em veículo aéreo
+VF_BoardSeaVehicle.label	embarcando em veículo marítimo
+VF_BoardUniversalVehicle.label	embarcando em veículo universal
+VF_BoardedLandVehicle.label	embarcou em veículo terrestre
+VF_BoardedAirVehicle.label	embarcou em veículo aéreo
+VF_BoardedSeaVehicle.label	embarcou em veículo marítimo
+VF_BoardedUniversalVehicle.label	embarcou em veículo universal
+## DefInjected/IncidentDef/BlackHawkDown.xml
+ShuttleCrashed.label	Ônibus espacial abatido
+## DefInjected/JobDef/JobDefs_General.xml
+Board.reportString	Entrando em TargetA.
+LoadUpgradeMaterials.reportString	Carregando materiais de melhoria em TargetB.
+IdleVehicle.reportString	Parado.
+IdleVehicleDeSpawned.reportString	Parado.
+DeployVehicle.reportString	Desdobrando.
+PrepareCaravan_GatheringVehicle.reportString	Carregando a carga de TargetB.
+RopeAnimalToVehicle.reportString	Amarrando {0} em TargetA.
+CarryPawnToVehicle.reportString	Carregando TargetA até TargetB.
+LoadVehicle.reportString	Carregando TargetA em TargetB
+CarryItemToVehicle.reportString	Carregando TargetA em TargetB
+RepairVehicle.reportString	Consertando TargetA.
+DisassembleVehicle.reportString	Desmontando TargetA.
+PaintVehicle.reportString	Pintando TargetA.
+UpgradeVehicle.reportString	Trabalhando em TargetA.
+RefuelVehicle.reportString	Abastecendo TargetA
+RefuelVehicleAtomic.reportString	Abastecendo TargetA
+RemoveFuelFromVehicle.reportString	Esvaziando TargetA
+FollowVehicle.reportString	Seguindo TargetA.
+EscortVehicle.reportString	Escoltando TargetA.
+## DefInjected/JobDef/JobDefs_Raiders.xml
+SabotageVehicle.reportString	Sabotando TargetA.
+## DefInjected/KeyBindingDef/KeyBindings.xml
+VF_RestartGame.label	Reinício rápido
+VF_QuickStartMenu.label	Menu de início rápido
+VF_DebugSettings.label	Opções de depuração
+## DefInjected/ScenPartDef/ScenParts_Vehicles.xml
+StartingVehicle.label	começar com veículo(s)
+## DefInjected/SmashTools.Animations.AnimationParameterDef/Parameters_Aerial.xml
+VF_VehicleIsTakingOff.label	Decolando
+VF_VehicleIsLanding.label	Pousando
+VF_VehicleIsLoitering.label	Sobrevoando
+VF_ReadyForTakeoff.label	Pronto para decolar
+VF_ReadyForLanding.label	Pronto para pousar
+## DefInjected/SmashTools.Animations.AnimationParameterDef/Parameters_General.xml
+VF_VehicleIsMoving.label	Em movimento
+VF_VehicleIsDisabled.label	Desativado
+VF_VehicleIsIgnitionOn.label	Convocado
+## DefInjected/StatCategoryDef/StatCategoryDefs.xml
+VehicleBasicsImportant.label	Básico
+VehicleBasics.label	Básico
+VehicleAerial.label	Aéreo
+VehicleRefuelable.label	Abastecível
+VehicleCombat.label	Combate
+VehicleTurrets.label	Torres
+## DefInjected/ThingDef/Airdrop_Container.xml
+Airdrop.label	Lançamento aéreo
+## DefInjected/ThingDef/Airdrop_Skyfaller.xml
+AirdropPackage.label	Lançamento aéreo
+AirdropParatrooper.label	Paraquedista
+## DefInjected/ThingDef/Mote_CannonPlume.xml
+Mote_CannonPlume.label	efeito
+## DefInjected/ThingDef/Mote_FishingNet.xml
+MoteFishingNet.label	efeito
+## DefInjected/ThingDef/Mote_Flash.xml
+Mote_CannonFlash.label	efeito
+## DefInjected/ThingDef/Mote_Gas.xml
+Mote_Smoke_CannonSmall.label	fumaça
+Mote_CannonSmoke.label	efeito
+## DefInjected/ThingDef/Mote_LaunchedObject.xml
+MoteLaunchedTurret.label	efeito
+## DefInjected/ThingDef/Mote_Smoke.xml
+Mote_ChimneySmoke.label	efeito
+Mote_RocketSmoke_Long.label	efeito
+Mote_RocketSmoke_Low.label	efeito
+Mote_ArtilleryExhaust.label	efeito
+Mote_ArtilleryExhaustThick.label	efeito
+## DefInjected/ThingDef/ProjectileSkyfaller.xml
+ProjectileSkyfaller.label	projétil em queda
+## DefInjected/TransferableSorterDef/TransferableSorters.xml
+Type.label	tipo
+MoveSpeed.label	velocidade
+CargoCapacity.label	capacidade de carga
+Mass.label	peso
+## DefInjected/Vehicles.AerialVehicleArrivalModeDef/AerialVehicleArrivalModeDef.xml
+EdgeDrop.textEnemy	Um grupo de {0} de {1} chegou num ônibus espacial aqui perto.
+EdgeDrop.textFriendly	Um grupo de {0} amigos de {1} chegou num ônibus espacial aqui perto.
+EdgeDrop.textWillArrive	{0_pawnsPluralDef} vão chegar num ônibus espacial.
+CenterDrop.textEnemy	Um grupo de {0} de {1} desceu bem em cima de vocês!
+CenterDrop.textFriendly	Um grupo de {0} amigos de {1} desceu bem em cima de vocês!
+CenterDrop.textWillArrive	{0_pawnsPluralDef} vão chegar num ônibus espacial bem em cima de vocês.
+## DefInjected/Vehicles.IndicatorDef/IndicatorDefs.xml
+VF_Explosive.label	Explosivo
+VF_Leaker.label	Vaza combustível
+## DefInjected/Vehicles.PatternDef/PatternDefs.xml
+Default.label	Padrão
+Tiger.label	Tigre
+TigerStripes.label	Listras de tigre
+Woodland.label	Floresta
+Hearts.label	Corações
+Panther.label	Pantera
+Digital.label	Digital
+Polygon.label	Polígonos
+Rusty.label	Enferrujado
+Waves.label	Ondas
+ZigZag.label	Zigue-zague
+Abstract_Medium.label	Abstrato médio
+Abstract_Large.label	Abstrato grande
+Lizard.label	Lagarto
+Hexagon.label	Hexágonos
+## DefInjected/Vehicles.PatternDef/SkinDefs.xml
+Jungle.label	Selva
+## DefInjected/Vehicles.StatUpgradeCategoryDef/StatUpgradeCategoryDefs.xml
+FuelCapacity.label	Capacidade de combustível
+FuelConsumptionRate.label	Consumo de combustível
+FuelConsumptionRate.formatString	{0}/dia
+ChargeRate.label	Taxa de carga
+ChargeRate.formatString	{0} /dia
+DischargeRate.label	Taxa de descarga
+DischargeRate.formatString	{0} /dia
+WorldSpeedMultiplier.label	Velocidade no mapa-múndi
+OffRoadMultiplier.label	Custo fora da estrada
+WinterCostMultiplier.label	Custo no inverno
+PawnCollisionMultiplier.label	Dano de impacto
+PawnCollisionRecoilMultiplier.label	Dano de impacto recebido
+## DefInjected/Vehicles.VehicleStatDef/VehicleStatDefs_Aerial.xml
+FlightSpeed.label	Velocidade de voo
+FlightSpeed.description	Velocidade de deslocamento no mapa-múndi durante o voo.
+FlightSpeed.formatString	{0} reg/s
+FlightControl.label	Controle de voo
+FlightControl.description	Capacidade de voo do veículo. Se o valor chegar a 0, o veículo é forçado a fazer um pouso de emergência.
+## DefInjected/Vehicles.VehicleStatDef/VehicleStatDefs_General.xml
+MoveSpeed.label	Velocidade
+MoveSpeed.description	Velocidade de deslocamento em quadrados por segundo.
+MoveSpeed.formatString	{0} q/s
+MoveSpeed.parts.0.formatString	{0} / {1}
+CargoCapacity.label	Carga
+CargoCapacity.description	Quanto peso este veículo consegue levar como carga.
+CargoCapacity.formatString	{0} kg
+RepairRate.label	Taxa de conserto
+RepairRate.description	Quantos pontos de vida são consertados por segundo.
+RepairRate.formatString	{0} PV/s
+Mass.label	Massa
+Mass.description	A massa física deste veículo.
+Mass.formatString	{0} kg
+BodyIntegrity.label	Integridade da estrutura
+BodyIntegrity.description	A média da saúde de todas as peças do veículo. Se a integridade chegar a 0, o veículo se desfaz numa fração do seu custo de construção.
+WorkToSabotage.label	Trabalho para sabotar
+WorkToSabotage.description	A quantidade base de trabalho necessária para sabotar um veículo.
+## DefInjected/WorkGiverDef/WorkGivers_General.xml
+PackVehicle.label	carregar veículo
+PackVehicle.gerund	carregando
+PackVehicle.verb	carregar
+HelpPackVehicleCaravan.label	carregar veículo
+HelpPackVehicleCaravan.gerund	carregando
+HelpPackVehicleCaravan.verb	carregar
+PackVehicleTurret.label	carregar veículo
+PackVehicleTurret.gerund	carregando
+PackVehicleTurret.verb	carregar
+LoadUpgradeMaterials.label	carregar materiais
+LoadUpgradeMaterials.gerund	carregando
+LoadUpgradeMaterials.verb	carregar
+WorkOnUpgrade.label	trabalhar na melhoria
+WorkOnUpgrade.gerund	melhorando
+WorkOnUpgrade.verb	melhorar
+RefuelVehicle.label	abastecer veículo
+RefuelVehicle.gerund	abastecendo
+RefuelVehicle.verb	abastecer
+RemoveFuelFromVehicle.label	tirar combustível do veículo
+RemoveFuelFromVehicle.gerund	esvaziando
+RemoveFuelFromVehicle.verb	esvaziar
+RepairVehicle.label	consertar veículo
+RepairVehicle.gerund	consertando
+RepairVehicle.verb	consertar
+DisassembleVehicle.label	desmontar veículo
+DisassembleVehicle.gerund	desmontando
+DisassembleVehicle.verb	desmontar
+PaintVehicle.label	pintar veículo
+PaintVehicle.gerund	pintando
+PaintVehicle.verb	pintar
+## DefInjected/WorldObjectDef/WorldObjects.xml
+DebugSettlement.label	Local original
+DebugSettlement.description	Depuração
+StashedVehicle.label	Veículo guardado
+StashedVehicle.description	Veículos guardados.
+VehicleCaravan.label	Caravana de veículos
+VehicleCaravan.description	Um grupo de pessoas viajando com veículos.
+AerialVehicle.label	Veículo aéreo
+AerialVehicle.description	Um veículo aéreo capaz de voar no mapa-múndi.
+CrashedShipSite.label	Local da queda
+CrashedShipSite.description	Um veículo aéreo abatido há pouco, talvez com sobreviventes.
+FlakProjectile.label	Projétil antiaéreo
+## Keyed/Caravans.xml
+VF_Caravan_MoveSpeed	Quantidade de regiões percorridas em 1 dia.
+VF_Caravan_Dismounted	A pé
+VF_Caravan_Cargo	Carga
+VF_Sailing	Navegando
+VF_ShowVehicleProperties	Mostrar propriedades
+VF_DockToCaravan	Itens a levar
+VF_ImpassableBiome	Bioma intransitável para este veículo.
+VF_CaravanDisabled	Caravanas desativadas.
+VF_CaravanCantMove	Não consegue se mover.
+VF_CantMergeAerialVehicle	Não dá para juntar veículos aéreos.
+VF_RecoverVehicles	Recuperar veículos
+VF_CommandDisembark	Guardar veículos
+VF_CommandDisembarkDesc	Deixar todos os veículos para trás e seguir a pé. Os veículos ficam no mapa-múndi por até 20-30 dias.
+VF_ToggleRepairVehicle	Consertar veículos
+VF_ToggleRepairVehicleDesc	Descansar e consertar os veículos da caravana
+VF_CommandDisembarkImpassableBiome	Não dá para desembarcar: a região é intransitável para colonos.
+VF_CommandAttackDockDisable	Não dá para atacar {0} enquanto está atracado.
+VF_CommandTradeDockDisable	Não dá para negociar com {0}. Primeiro atraque o barco
+VF_CaravanMustHaveEnoughSpaceOnShip	Não há espaço suficiente nos barcos para todos os personagens.
+VF_CaravanMustHaveEnoughPawnsToOperate	Personagens insuficientes para zarpar. São necessários {0}
+VF_CaravanMustHaveAtLeastOneVehicle	É preciso escolher pelo menos 1 veículo para traçar uma rota.
+VF_CommandFormVehicleCaravan	Formar caravana de veículos
+VF_CommandFormVehicleCaravanDesc	Formar uma caravana incluindo veículos.
+VF_CommandReformVehicleCaravan	Reformar caravana de veículos
+VF_CommandReformVehicleCaravanDesc	Reformar a caravana de veículos com os veículos escolhidos.
+VF_RoutePlannerToggleVehicleDefs	Tipos de veículo
+VF_RoutePlannerToggleVehicles	Veículos
+## Keyed/Enums.xml
+DriverNeeded	Dirigido por colono
+NoDriverNeeded	Dirigido pela IA
+Misc	Outros
+Transport	Transporte
+Trader	Comerciante
+Combat	Combate
+Manual	Manual
+Opportunistic	Oportunista
+Automatic	Automático
+VF_VehicleTracksNone	Nenhum
+VF_VehicleTracksVanilla	Padrão do jogo
+VF_VehicleTracksFull	Completo
+VF_RoadType_Prioritize	Priorizar
+VF_RoadType_Avoid	Evitar
+## Keyed/FloatMenu.xml
+VF_BoardVehicle	Embarcar como {0}  [{1}]
+VF_BoardVehicleGroup	Embarcar em {0}
+VF_BoardVehicleGroupFail	Não dá para embarcar em {0}. {1}
+VF_BoardFailureTooMany	Seleção grande demais
+VF_BoardFailureNonCombatant	{0} é incapaz de violência
+VF_ActivityIconOnBoardShip	A bordo de {0}
+VF_IsIncapableOfRamming	Abalroar {0}
+VF_CannotMoveToCell	{0} não consegue chegar a esta área.
+VF_LandVehicleHere	Pousar o veículo aqui
+VF_LandVehicleEdge	Pousar em {0} na borda do mapa.
+VF_LandVehicleCenter	Pousar em {0} no centro.
+VF_LandVehicleTargetedLanding	Pousar em {0} e escolher o local.
+VF_AttackAndTargetLanding	Atacar {0}: escolher o pouso
+VF_StrafeRun	Rasante
+VF_AerialReconSite	Reconhecimento
+VF_CantEnterVehicle_IdeoligionForbids	Não pode entrar no veículo. A ideologia proíbe.
+## Keyed/Labels.xml
+VehicleFramework	Vehicle Framework
+VF_Vehicles	Veículos
+VF_LoadCargo	Carregar carga
+VF_HaulPawnToVehicle	Embarcar personagem
+VF_DisembarkAllPawns	Desembarcar todos
+VF_DisembarkSinglePawn	Desembarcar {0}
+VF_GearForward	Para frente
+VF_GearReverse	Ré
+VF_DisembarkNoExit	Não dá para sair do veículo. Não há espaço válido para descer.
+VF_DisabledByVehicleUpgrading	{0} está recebendo uma melhoria.
+VF_StopVehicle	Parar
+VF_UndraftVehicle	Desligar
+VF_DraftVehicleDesc	Liga o veículo para que ele possa se mover. Isso gasta combustível (se houver) mesmo com o veículo parado.
+VF_StopVehicleDesc	Para o veículo na hora.
+VF_UndraftVehicleDesc	Desliga o veículo, parando o consumo de combustível e impedindo que se mova.
+VF_RefuelFromInventoryCount	Abastecer {0}x {1}
+VF_RefuelFromInventoryDesc	Abastecer {0} usando o combustível guardado na carga.
+VF_VehicleFullyFueled	{0} já está de tanque cheio.
+VF_NoFuelInVehicle	Não há combustível em {0}.
+VF_CantRefuelWhileFlying	Não dá para abastecer {0} em pleno voo.
+VF_VehicleFuelCost	Combustível: {0}
+VF_TransferToVehicle_Order	Transferir para o veículo
+VF_TransferToVehicle_Order_Desc	Transferir as coisas selecionadas para a carga do veículo alvo.
+VF_TransferToVehicle_Cancel	Cancelar transferência
+VF_TransferToVehicle_Cancel_Desc	Cancelar a transferência das coisas selecionadas para a carga de qualquer veículo.
+VF_RandomVehicle	Veículo aleatório
+VF_ShowAllItemsOnMap	Mostrar todos os itens do mapa
+VF_ResetColorPalettes	Redefinir todas as paletas
+VF_ResetColorPalettesConfirmation	Tem certeza de que quer voltar todas as paletas salvas ao padrão? Isso não pode ser desfeito.
+VF_RotateVehicleRendering	Girar veículo
+VF_SaveColorPalette	Salvar paleta
+VF_ColorOne	Cor 1
+VF_ColorTwo	Cor 2
+VF_ColorThree	Cor 3
+VF_ColorPickerHex	Hex
+VF_JobSettings	Opções de trabalho
+VF_VehicleAgeReadout	Fabricado: {0}
+VF_StatsReport_CargoWeight	Carga: {0}
+VF_StatsReport_Deployed	Desdobrado
+VF_CrewCount	Tripulação
+VF_CrewCountDesc	Quantos tripulantes e passageiros cabem neste veículo.
+VF_PaintableDesc	O veículo pode ser pintado pelo menu de cores.
+VF_Upgradeable	Melhorável
+VF_UpgradeableDesc	O veículo pode ser modificado por uma árvore de melhorias
+VF_FuelType	Combustível
+VF_FuelTypeDesc	Que recurso este veículo consome para funcionar.
+VF_CancelUpgrade	Cancelar a melhoria em andamento de {0}.
+VF_RoadZoneExpand	Área de estrada
+VF_RoadZoneExpandDesc	Cria uma área por onde os veículos vão preferir passar, ou evitar.\n\nÁreas de "Priorizar" na borda do mapa marcam por onde as caravanas de veículos devem entrar.
+VF_RoadZoneClear	Limpar área de estrada
+VF_RoadZoneClearDesc	Remove a zona de estrada. Os veículos deixam de ter movimento modificado na área.
+VF_RenameVehicleTooltip	Dar ou apagar nome.
+VF_RecolorTooltip	Pintar veículo
+VF_DoubleClickShuttleTarget	Clique para confirmar o destino
+VF_SwapColors	Alterna as cores entre si.\n\nCor 1 > Cor 2 > Cor 3
+VF_StartFishing	Pescar
+VF_StartFishingDesc	Pegar peixes da água.
+VF_NoFishermenTooltip	Não há colonos a bordo capazes de pescar.
+VF_NoFishAtSpot	Não há peixe neste local.
+VF_ExplosiveComponent	Explosivo
+VF_EditPawnOverlayRendererTooltip	Editar sobreposição do personagem
+VF_ComponentClickMoreInfoTooltip	Clique para ver detalhes.
+VF_Deploy	Desdobrar
+VF_Undeploy	Recolher
+VF_DeployDescription	Desdobrar o veículo para poder usar as torres.
+VF_MustBeDeployed	Precisa estar desdobrado.
+VF_MustBeUndeployed	Precisa estar recolhido.
+VF_VehicleRestriction_Stationary	Não atira em movimento.
+VF_TurretComponentDisabled	{0} precisa de conserto.
+VF_Patterns	Padrões
+VF_Skins	Visuais
+VF_PatternZoom	Zoom
+VF_PatternZoomTooltip	Aumenta ou diminui a escala do padrão.
+VF_PatternDisplacementX	Deslocamento X
+VF_PatternDisplacementY	Deslocamento Y
+VF_PatternDisplacementXTooltip	Move a textura no eixo horizontal.
+VF_PatternDisplacementYTooltip	Move a textura no eixo vertical.
+VF_Electricity	Eletricidade
+VF_ElectricFlick	Ligar ou desligar da rede elétrica.
+VF_ElectricFlickDesc	Quando está em cima de um conduíte, se conecta à rede elétrica e recebe energia para recarregar a bateria.\n\nConectado agora: {0}
+VF_OutOfFuel	Não consegue se mover. {0} precisa de mais combustível.
+VF_AutoAssign	Preencher automaticamente
+VF_Assigned	Designados
+VF_ApplyButton	Aplicar
+VF_Colonists	Colonos
+VF_ClearSeats	Limpar
+VF_RemoveFromRole	Remover
+VF_AddToRole	Adicionar
+VF_RoutePlannerButtonTip	Clique para entrar no modo de planejamento de veículos, onde vocês escolhem veículos específicos e planejam a viagem. O caminho se ajusta conforme os veículos escolhidos.
+VF_SelectVehiclesForPlanner	Escolher veículos
+VF_StartVehicleRoutePlanner	Iniciar rota
+VF_OkName	Confirmar nome
+VF_RemoveName	Remover nome
+VF_NoFlightSpeed	Não dá para decolar com velocidade de voo = 0
+VF_CannotLaunchWhileMoving	Não dá para decolar enquanto {0} está em movimento.
+VF_CannotLaunchImmobile	{0} não pode decolar sem conseguir se mover.
+VF_CannotLaunchRotated	{0} não pode decolar na diagonal.
+VF_CannotLaunchOverEncumbered	{0} não pode decolar com excesso de peso.
+VF_TabCargo	Carga
+VF_TabPassengers	Personagens
+VF_TabComponents	Saúde
+VF_TabUpgrades	Personalizar
+VF_ComponentHealth	Saúde
+VF_ComponentEfficiency	Eficiência
+VF_ComponentArmor	Blindagem
+VF_Depth	Profundidade
+VF_Depth_Internal	Interno
+VF_Depth_External	Externo
+VF_Depth_Undefined	Indefinido
+VF_EfficiencyEffector	Atributos afetados
+VF_BaseArmorRating	Blindagem base: {0}
+VF_NoFuelReturnTrip	Sem combustível para voltar
+VF_NotEnoughFuel	Fora de alcance
+VF_NoSpaceFlight	{0} não é capaz de voo espacial.
+VF_ConfirmationCancelLanding	Cancelar o pouso neste mapa? O veículo aéreo vai ser mandado de volta para o mapa-múndi.
+VF_PawnsLeftBehindConfirm	Lugares insuficientes
+VF_PawnsLeftBehindConfirmDesc	Partir
+VF_Cargo	Carga
+VF_Properties	Propriedades
+VF_LauncherProperties	Propriedades de decolagem
+VF_FueledTravelPropertes	Combustível
+VF_JobLimitations	Máximo de trabalhadores por tarefa
+## Keyed/Letters.xml
+VF_IncidentCrashedSiteLabel_Crashing	{0} fez um pouso forçado
+VF_IncidentCrashedSiteLabel_ShotDown	{1} abateu {0}
+VF_IncidentReasonLister	\n\nMotivo:\n {0}
+VF_IncidentCrashedSite_Crashing	{0} caiu.
+VF_IncidentCrashedSite_ShotDown	{0} foi abatido por {1}.
+VF_IncidentCrashedSiteReason_OutOfFuel	Ficou sem combustível
+VF_IncidentCrashedSiteReason_FlightControl	Perdeu todo o controle de voo
+VF_ReinforcementsArrivedLabel	Reforços
+VF_ReinforcementsArrived	{0} chegou com reforços para investigar o local da queda.
+VF_BoatSunk	Barco afundou
+VF_BoatSunkDesc	{0} afundou nas profundezas do oceano.
+VF_BoatSunkWithPawnsDesc	{0} afundou nas profundezas do oceano. \n\nLevou junto estes personagens:\n{1}
+VF_IdleInVehicle	Estes colonos estão sentados num veículo sem fazer nada:\n{0}\n\nMelhor arranjar alguma coisa útil para eles fazerem.
+## Keyed/Messages.xml
+VF_MustSelectColorPalette	É preciso escolher uma paleta para salvar por cima.
+VF_VehicleUnableToMove	{0_labelShort} não consegue se mover.
+VF_VehicleImmobileDeployed	{0_labelShort} está desdobrado e não consegue se mover.
+VF_HandlerNotEnoughRoom	Não deu para pôr {0} em {1}. Não há mais espaço.
+VF_NotEnoughToOperate	Não consegue se mover. Precisa de mais tripulantes para funcionar.
+VF_UpgradeInProgress	Não dá para ligar enquanto {0} recebe uma melhoria.
+VF_NotEnoughCrew	Não há colonos suficientes em {0} para operar {1}.
+VF_CannotFit	Não há espaço suficiente.
+VF_NoPathForVehicle	Não há caminho até aqui.
+VF_IncapableStatusForRole	{0} é incapaz de cumprir esta função.
+VF_CannotAddToCargo	{0} não pode ser posto na carga.
+VF_InvalidName	Nome inválido para o veículo.
+VF_OutOfFood	Não há comida em {0} com personagens a bordo.
+VF_NoAmmoLoadedTurret	Sem munição carregada.
+VF_NoAmmoAvailable	Não há munição no inventário.
+VF_VehicleCaravanMentalBreakMovementRole	{0} não consegue mais cumprir a sua função na caravana de veículos.
+VF_PawnBoardedFormingCaravan	{0} embarcou em {1} e está pronto para partir.
+VF_CantAssignVehicle	Personagens insuficientes para {0}.
+VF_AssignFailure	Não deu para distribuir os lugares. {0}
+VF_PackingSpotNotFound	Não foi encontrado um ponto de carregamento para a caravana de veículos. É recomendado colocar um ponto de carregamento (em Diversos).
+VF_ForceLeaveCaravan	Forçar partida
+VF_ForceLeaveCaravanDesc	Força a caravana de veículos a sair do mapa. Os itens que ainda não estão a bordo ficam para trás
+VF_ForceLeaveConfirmation	A tripulação está se preparando para partir.
+VF_CaravanTerminatedNoVehicles	A formação da caravana foi encerrada. Não restou nenhum veículo.
+VF_LandAndSeaRoutePlannerRestriction	Não dá para planejar rota para veículos marítimos e terrestres juntos. Os caminhos não vão ser registrados.
+VF_LeaveVehicleBehindCaravan	Tem certeza de que quer deixar veículos para trás? Veículos deixados: {0}
+VF_MustAssignEnoughToVehicle	É preciso designar colonos suficientes para tripular o veículo.
+VF_AerialVehicleArrived	{0} chegou ao destino.
+VF_AerialVehicleLeft	{0} saiu do mapa.
+VF_AerialVehicleLaunchNotValid	Não dá para decolar: as condições não são adequadas.
+VF_LaunchOutOfFuel	Não dá para decolar. Sem combustível.
+VF_FlightPathMaxNodes	O número máximo de pontos na rota de voo de {0} foi atingido.
+VF_MustTargetLanding	É preciso escolher um destino de pouso.
+## Keyed/Settings.xml
+VF_MainSettings	Principal
+VF_ListSearchText	Buscar...
+VF_SettingsDisabledTooltip	As opções deste veículo foram travadas e não podem ser alteradas.
+VF_NonUpgradeableSettingsTooltip	Este veículo não pode receber melhorias.
+VF_RecolorDefaultMaskTooltip	Mudar o padrão de pintura
+VF_WorldMapGen	Geração do mundo/mapa
+VF_BeachGenMultiplier	Multiplicador do tamanho das praias
+VF_BeachGenMultiplierTooltip	Aumenta a quantidade de água no litoral.
+VF_RiverGenMultiplier	Multiplicador do tamanho dos rios
+VF_RiverGenMultiplierTooltip	Aumenta a largura dos rios nos mapas.
+VF_AdjustSettlementRadius	Realocação de assentamentos
+VF_AdjustSettlementRadiusTooltip	Aproxima os assentamentos de elementos do terreno próximos, para facilitar viagens de veículo.
+VF_AdjustCoastWeight	Peso do litoral
+VF_AdjustRiverWeight	Peso dos rios
+VF_WorldTiles	regiões
+VF_SettingsGeneral	Geral
+VF_WillRequireRestart	Esta ação só faz efeito depois de reiniciar.
+VF_ModifiableSettings	Opções modificáveis
+VF_ModifiableSettingsTooltip	Liga ou desliga as opções modificáveis. Reiniciar com isto desligado pula a geração das opções modificáveis.\n \nDefine se os veículos usam os valores das opções do mod ou dos Defs
+VF_CustomShaders	Usar shaders RGB
+VF_CustomShadersTooltip	Ativa os shaders personalizados do framework.
+VF_DiagonalVehicleRendering	Permitir desenho na diagonal
+VF_DiagonalVehicleRenderingTooltip	Veículos que suportam desenho na diagonal vão usá-lo quando estiverem em rotações diagonais (nordeste, sudeste, sudoeste, noroeste)
+VF_FullVehiclePathing	Caminho com o veículo inteiro
+VF_FullVehiclePathingTooltip	Usa a área inteira do veículo para calcular o caminho mais curto. O veículo continua limitado pelo próprio tamanho.
+VF_SmoothVehiclePathing	Caminhos suaves
+VF_SmoothVehiclePathingTooltip	O caminho dos veículos ganha um custo extra para "virar", evitando zigue-zagues desnecessários no caminho mais curto.
+VF_HierarchalPathfinding	Busca de caminho hierárquica
+VF_HierarchalPathfindingTooltip	Usa HPA* em vez de A* para achar caminhos mais rápido. Sacrifica um pouco da precisão em troca de buscas muito mais rápidas em distâncias grandes.
+VF_RoadBiomeCostPathing	Ignorar biomas nas estradas
+VF_RoadBiomeCostPathingTooltip	Caravanas de veículos andando em estradas no mapa-múndi ignoram o custo de deslocamento do bioma.
+VF_MultiplePawnsPerJob	Vários personagens por trabalho
+VF_MultiplePawnsPerJobTooltip	Permite que mais de 1 personagem reserve e trabalhe ao mesmo tempo em tarefas de veículos. O máximo de personagens é definido por quem fez o mod.
+VF_GraphicsSettings	Gráficos
+VF_PerformanceSettings	Desempenho
+VF_PassiveWaterWaves	Ondas passivas na água
+VF_PassiveWaterWavesTooltip	Gera ondas passivas quando o barco está parado.
+VF_AerialVehicleEffects	Efeitos de veículos aéreos
+VF_AerialVehicleEffectsTooltip	Quando veículos aéreos decolam e pousam, gera partículas e desenha texturas sobrepostas.
+VF_MeleeDamageMultiplier	Multiplicador de dano corpo a corpo
+VF_RangedDamageMultiplier	Multiplicador de dano a distância
+VF_ExplosiveDamageMultiplier	Multiplicador de dano explosivo
+VF_VehicleTurrets	Torres de veículos
+VF_TurretOverheatMechanics	Superaquecimento das torres
+VF_TurretOverheatMechanicsTooltip	Algumas torres superaquecem para impedir disparos sem parar e sem consequências. Manter isso ativado?
+VF_Fishing	Pesca
+VF_FishingInactive	Pesca (inativa)
+VF_FishingMultiplier	Multiplicador de pesca
+VF_FishingMultiplierTooltip	Ajusta a quantidade de peixe pega pelo barco de pesca.
+VF_FishingSkill	Habilidade de pesca
+VF_FishingSkillTooltip	Quanta experiência a pesca de barco dá
+VF_AerialVehicles	Ar
+VF_DrawLandingGhost	Mostrar local de pouso
+VF_DrawLandingGhostTooltip	Desenha uma "planta" transparente onde o veículo aéreo vai pousar.
+VF_RocketsBurnRadius	Queima de foguetes
+VF_RocketsBurnRadiusTooltip	Permite que veículos aéreos com esse recurso queimem tudo num raio pequeno ao decolar e pousar.
+VF_DynamicDrawing	Desenho dinâmico
+VF_DynamicDrawingTooltip	Desenha os veículos aéreos no mapa-múndi com o zoom aproximado.
+VF_DeployOnLanding	Desembarcar ao pousar
+VF_DeployOnLandingTooltip	Quando um veículo aéreo pousa, todos os personagens a bordo desembarcam.
+VF_DelayOnLanding	Atraso ao pousar
+VF_DelayOnLandingTooltip	Quando um veículo aéreo pousa, o desembarque dos personagens é atrasado.
+VF_DelaySeconds	segundos
+VF_AirDefensesActive	Defesas antiaéreas
+VF_AirDefensesActiveTooltip	Alguns objetos do mapa-múndi podem usar defesas antiaéreas para abater aeronaves próximas.
+VF_CombatSettings	Combate
+VF_ShellExplosionsOnWater	Reduzir explosões na água

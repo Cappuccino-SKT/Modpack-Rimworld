@@ -1,0 +1,73 @@
+## DefInjected/AbilityDef/Abilities.xml
+VREStarjack_SpacejumpLegs.label	spacejump
+VREStarjack_SpacejumpLegs.description	Propel yourself to a very distant location in the vacuum of space.
+VREStarjack_SpacejumpLegs.verbProperties.label	jump
+## DefInjected/GeneDef/GeneDefs_Abilities.xml
+VREStarjack_SpacejumpLegs.label	spacejump tail
+VREStarjack_SpacejumpLegs.description	Carriers of this gene possess a specialized muscular tail that functions as a propulsion organ, allowing them to launch themselves across vast distances in the vacuum of space. This ability cannot be used in atmospheres.
+VREStarjack_SpacejumpLegs.symbolPack.prefixSymbols.0.symbol	jump
+VREStarjack_SpacejumpLegs.symbolPack.prefixSymbols.1.symbol	leap
+VREStarjack_SpacejumpLegs.symbolPack.prefixSymbols.2.symbol	vault
+VREStarjack_SpacejumpLegs.symbolPack.prefixSymbols.3.symbol	long
+VREStarjack_SpacejumpLegs.symbolPack.prefixSymbols.4.symbol	fly
+VREStarjack_SpacejumpLegs.symbolPack.prefixSymbols.5.symbol	hop
+VREStarjack_SpacejumpLegs.symbolPack.wholeNameSymbols.0.symbol	jumper
+VREStarjack_SpacejumpLegs.symbolPack.wholeNameSymbols.1.symbol	leaper
+VREStarjack_SpacejumpLegs.symbolPack.wholeNameSymbols.2.symbol	bouncer
+## DefInjected/GeneDef/GeneDefs_Health.xml
+VREStarjack_VacuumResistance_Total.label	vacuum impervious
+VREStarjack_VacuumResistance_Total.description	Carriers of this gene have hardier circulatory and respiratory systems, reducing the rate at which hypoxia builds up in the vacuum of space.
+VREStarjack_VacuumResistance_Total.labelShortAdj	vacuum-impervious
+VREStarjack_Cryostasis.label	cryostasis
+VREStarjack_Cryostasis.description	Carriers of this gene do not suffer fatal hypothermia. Instead, their bodies gradually slow down and enter a dormant state when exposed to extreme cold, and they can awaken safely once warmed.
+VREStarjack_OxygenSensitivity_Mild.label	mild oxygen sensitivity
+VREStarjack_OxygenSensitivity_Mild.description	Carriers of this gene are slightly averse to oxygen-rich environments. In breathable atmosphere, they experience minor respiratory and neurological strain, accompanied by a subtle discomfort with each breath.
+VREStarjack_OxygenSensitivity_Intense.label	intense oxygen sensitivity
+VREStarjack_OxygenSensitivity_Intense.description	Carriers of this gene suffer severe discomfort and reduced bodily function in oxygenated environments. Exposure to breathable air causes pain, weakness, and labored breathing, making planetary survival difficult.
+VREStarjack_OxygenSensitivity_Extreme.label	extreme oxygen sensitivity
+VREStarjack_OxygenSensitivity_Extreme.description	Carriers of this gene cannot survive in oxygen-rich environments. Exposure to breathable atmospheres causes rapid lung failure and eventual death. Only the vacuum of space or low-oxygen gravship environments can sustain them.
+VREStarjack_VacuumEfficiency.label	vacuum efficiency
+VREStarjack_VacuumEfficiency.description	Carriers of this gene thrive in space. Their bodies are highly adapted to zero-atmosphere conditions, allowing for faster and more efficient work outside planetary environments. However, they function poorly on terrestrial surfaces.
+VREStarjack_VacuumEfficiency.labelShortAdj	vacuum-efficient
+## DefInjected/GeneDef/GeneDefs_Misc.xml
+VREStarjack_GravshipAffinity.label	gravship affinity
+VREStarjack_GravshipAffinity.description	Carriers of this gene are naturally suited for life aboard gravships. Their genetic makeup enhances their coordination, perception, and technical aptitude in zero-gravity environments, making them exceptional pilots and crew.
+## DefInjected/GeneDef/GeneDefs_Randomizer.xml
+VREStarjack_Gene_Randomizer.label	randomizer
+VREStarjack_Gene_Randomizer.description	Once a pawn receives this gene, it will transform itself into 2 random astrogenes.
+## DefInjected/HediffDef/Hediffs_Temperature.xml
+VREStarjack_CryostasisHediff.label	cryostasis
+VREStarjack_CryostasisHediff.description	This person does not suffer fatal hypothermia. Instead, their bodies gradually slow down and enter a dormant state when exposed to extreme cold, and they can awaken safely once warmed.
+VREStarjack_CryostasisHediff.stages.shivering.label	shivering
+VREStarjack_CryostasisHediff.stages.initial.label	initial
+VREStarjack_CryostasisHediff.stages.drowsy.label	drowsy
+VREStarjack_CryostasisHediff.stages.sleep.label	sleep
+VREStarjack_CryostasisHediff.stages.deep_sleep.label	deep sleep
+## DefInjected/HediffDef/Hediffs_Vacuum.xml
+VREStarjack_OxygenSensitivity_Mild.label	mild oxygen sensitivity
+VREStarjack_OxygenSensitivity_Mild.description	This person is slightly averse to oxygen-rich environments. In breathable atmosphere, they experience minor respiratory and neurological strain, accompanied by a subtle discomfort with each breath.
+VREStarjack_OxygenSensitivity_Intense.label	intense oxygen sensitivity
+VREStarjack_OxygenSensitivity_Intense.description	This person suffers severe discomfort and reduced bodily function in oxygenated environments. Exposure to breathable air causes pain, weakness, and labored breathing, making planetary survival difficult.
+VREStarjack_OxygenSensitivity_Extreme.label	extreme oxygen sensitivity
+VREStarjack_OxygenSensitivity_Extreme.description	This person cannot survive in oxygen-rich environments. Exposure to breathable atmospheres causes rapid lung failure and eventual death. Only the vacuum of space or low-oxygen gravship environments can sustain them.
+VREStarjack_Hyperoxia.label	hyperoxia
+VREStarjack_Hyperoxia.description	This creature is suffering from oxygen toxicity caused by exposure to a breathable atmosphere. Their lungs cannot tolerate this much oxygen. They will die soon unless removed to a low-oxygen or vacuum environment.
+VREStarjack_Hyperoxia.stages.initial-0.label	initial
+VREStarjack_Hyperoxia.stages.initial-1.label	initial
+VREStarjack_Hyperoxia.stages.mild.label	mild
+VREStarjack_Hyperoxia.stages.moderate.label	moderate
+VREStarjack_Hyperoxia.stages.extreme.label	extreme
+## DefInjected/ThoughtDef/Thoughts_Situation_Special.xml
+VREStarjack_OxygenSensitivity_Mild.stages.oxygen_sensitivity.label	oxygen sensitivity
+VREStarjack_OxygenSensitivity_Mild.stages.oxygen_sensitivity.description	The air feels sharp in my lungs. Every breath burns a little more than the last.
+VREStarjack_OxygenSensitivity_Intense.stages.oxygen_sensitivity.label	oxygen sensitivity
+VREStarjack_OxygenSensitivity_Intense.stages.oxygen_sensitivity.description	The oxygen sears my lungs. Every breath feels like inhaling fire.
+VREStarjack_OxygenSensitivity_Extreme.stages.oxygen_sensitivity.label	oxygen sensitivity
+VREStarjack_OxygenSensitivity_Extreme.stages.oxygen_sensitivity.description	I can’t breathe. The air is tearing me apart from the inside.
+## Keyed/Keys.xml
+VRE_Astrogenes	Astrogenes
+VRE_AstrogenesDesc	Astrogenes are special genetic mutations that only become active in orbit. They don't count towards complexity and metabolism of the gene carrier, but they have no effect on the surface of a planet.
+VRE_AbilityOnlyInSpace	This ability can only be used while in orbit
+VRE_StarjackGenes	Number of Starjack Genes:
+VRE_StarjackGenesDesc	By default, Starjacks will spawn with 2 Astrogenes. With this you can make the spawn with anything from 0 to 5 Astrogenes. This will obviously not affect already existing Starjacks!
+VREStarjack_Reset	Reset

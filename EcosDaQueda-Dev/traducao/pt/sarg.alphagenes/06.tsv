@@ -1,0 +1,234 @@
+## DefInjected/GeneDef/GeneDefs_Mechanitor.xml
+AG_InnateMechlink.label	mecalink inato
+AG_InnateMechlink.description	Portadores deste gene têm a capacidade inata de usar os poderes de mecanitor.
+AG_InnateMechlink.symbolPack.prefixSymbols.0.symbol	meca
+AG_InnateMechlink.symbolPack.prefixSymbols.1.symbol	hacker
+AG_InnateMechlink.symbolPack.suffixSymbols.0.symbol	anitor
+AG_MechConversion.label	conversão mecanoide
+AG_MechConversion.description	O portador deste gene consegue invadir remotamente os sensores de identificação de um mecanoide para trocar temporariamente seu lado. Dura um dia; depois o mecanoide volta ao lado anterior e ataca sem distinção.
+AG_BandwidthIncrease.label	banda aumentada
+AG_BandwidthIncrease.description	O portador deste gene tem uma banda inata maior.
+AG_BandwidthIncreaseMajor.label	banda muito aumentada
+AG_BandwidthIncreaseMajor.description	O portador deste gene tem 35% a mais de banda. O efeito é multiplicativo, então é pequeno no começo, mas cresce conforme o mecanitor ganha mais banda.
+AG_BandwidthDecrease.label	banda reduzida
+AG_BandwidthDecrease.description	O portador deste gene tem uma banda inata menor.
+AG_SummonTempBandwidth.label	invocar nó de banda
+AG_SummonTempBandwidth.description	O portador deste gene consegue invocar um nó de banda temporário que aumenta a banda dele em 10 por uma semana inteira.
+AG_BandwidthLoop.label	laço de banda
+AG_BandwidthLoop.description	O portador deste gene consegue criar psiquicamente um laço de realimentação na conexão de um mecanoide, sobrecarregando sua banda e fazendo-o explodir. A explosão danifica tudo por perto, com alcance que depende da banda do mecanoide.
+AG_IncreasedCommandRange.label	alcance de comando maior
+AG_IncreasedCommandRange.description	O portador deste gene tem um alcance de comando inato maior para convocar e controlar mecanoides.
+AG_DecreasedCommandRange.label	alcance de comando menor
+AG_DecreasedCommandRange.description	O portador deste gene tem um alcance de comando inato menor para convocar e controlar mecanoides.
+AG_IncreasedMechRepair.label	conserto mais rápido
+AG_IncreasedMechRepair.description	O portador deste gene tem um bônus inato na velocidade de conserto de mecanoides.
+AG_DecreasedMechRepair.label	conserto mais lento
+AG_DecreasedMechRepair.description	O portador deste gene tem uma penalidade inata na velocidade de conserto de mecanoides.
+AG_ExpertMechRepair.label	paixão por consertar mecanoides
+AG_ExpertMechRepair.description	O portador deste gene tem a capacidade de conserto de mecanoides aprimorada geneticamente e consegue dar um impulso significativo aos mecanoides recém-consertados.
+AlphaGenes_Animal_SummonMilitor.label	invocar miliciano
+AlphaGenes_Animal_SummonMilitor.description	O portador deste gene consegue invocar um mecanoide miliciano. Ele faz parte da colônia por 1 dia e depois desaparece. O portador precisa de pelo menos 1 de banda mecânica para usar esta habilidade.
+AlphaGenes_Animal_SummonTesseron.label	invocar tesseron
+AlphaGenes_Animal_SummonTesseron.description	O portador deste gene consegue invocar um mecanoide tesseron. Ele faz parte da colônia por 1 dia e depois desaparece. O portador precisa de pelo menos 3 de banda mecânica para usar esta habilidade.
+AlphaGenes_Animal_SummonCentipede.label	invocar centopeia
+AlphaGenes_Animal_SummonCentipede.description	O portador deste gene consegue invocar um mecanoide centopeia. Ele faz parte da colônia por 1 dia e depois desaparece. O portador precisa de pelo menos 4 de banda mecânica para usar esta habilidade.
+## DefInjected/GeneDef/GeneDefs_MentalState.xml
+AG_Thalassophobia.label	talassofobia
+AG_Thalassophobia.description	Portadores deste gene têm um medo intenso de corpos d'água. Perto da água, podem ter um colapso mental a qualquer momento.
+AG_FireObsession.label	obsessão por fogo
+AG_FireObsession.description	Portadores deste gene têm uma obsessão psicológica inata por fogo e tentam ficar perto de fogueiras o máximo humanamente possível.
+## DefInjected/GeneDef/GeneDefs_Misc_Anomaly.xml
+AG_PseudoDeadlife.label	pseudomorte-viva
+AG_PseudoDeadlife.description	Portadores deste gene têm uma nuvem de arquitas microscópicos que induzem um estado de pseudomorte-viva, dando grande resistência sem matar a pessoa de vez.
+AG_MeatBurst.label	explosão de carne
+AG_MeatBurst.description	Os portadores explodem ao morrer, liberando algumas feras de carne.
+AG_GreyPocketPlane.label	plano de bolso cinzento
+AG_GreyPocketPlane.description	Os portadores conseguem acessar o próprio espaço extradimensional, um refúgio seguro longe do caos da Orla.
+## DefInjected/GeneDef/GeneDefs_Moods.xml
+AG_VolatileMood.label	volátil
+AG_VolatileMood.description	Portadores deste gene têm mudanças de humor aleatórias todos os dias.
+## DefInjected/GeneDef/GeneDefs_Mutations.xml
+AG_VFEI_InsectoidLeg.label	pernas insetoides
+AG_VFEI_InsectoidLeg.description	Portadores deste gene têm as pernas articuladas de um insetoide, formadas por vários segmentos cobertos de quitina. É uma mutação extremamente dolorosa, mas essas pernas resistem muito mais a dano.
+AG_VFEI_InsectoidArm.label	braços insetoides
+AG_VFEI_InsectoidArm.description	Portadores deste gene têm os braços articulados de um insetoide, formados por vários segmentos cobertos de quitina. É uma mutação extremamente dolorosa, mas esses braços resistem muito mais a dano.
+AG_VFEI_SegmentedEyes.label	olhos compostos
+AG_VFEI_SegmentedEyes.description	Portadores deste gene têm olhos compostos, formados por milhares de unidades fotorreceptoras. Esses olhos têm um campo de visão amplo e ajudam a notar movimentos rápidos, mas o alcance da visão cai bastante. É uma mutação extremamente dolorosa, mas o olho resiste mais a dano.
+AG_VFEI_InsectoidMandibles.label	mandíbulas insetoides
+AG_VFEI_InsectoidMandibles.description	Portadores deste gene têm um par de apêndices nas laterais da boca que ajudam a esmagar e cortar a comida. São bem menos confortáveis que uma mandíbula normal, mas aumentam a velocidade para comer.
+AG_VFEI_VenomGland.label	glândula de veneno
+AG_VFEI_VenomGland.description	Portadores deste gene têm uma glândula em forma de bolsa embaixo da língua que secreta ácido, liquefazendo a comida e permitindo comer com segurança até as mais perigosas. Superestimulada, a glândula permite cuspir ácido a curta distância, eficaz para atravessar armaduras.
+AG_VFEI_PneumaticClaw.label	garra pneumática
+AG_VFEI_PneumaticClaw.description	Portadores deste gene têm mãos de pinça pneumáticas poderosas, capazes de exercer grande pressão repetidas vezes sobre o alvo, ao custo da coordenação motora fina.
+AG_VFEI_AdrenalSecretors.label	secretores adrenais
+AG_VFEI_AdrenalSecretors.description	Portadores deste gene têm rins insetoides com glândulas adrenais hiperativas. Quem tem esta mutação pode descobrir um novo prazer em causar dor. Porém, o efeito colateral é uma agressividade sem motivo.
+AG_VFEI_Antennae.label	antenas insetoides
+AG_VFEI_Antennae.description	Portadores deste gene têm órgãos sensoriais finos e móveis que complementam a visão e a noção de localização. Quem tem esta mutação não sofre mais penalidades no escuro, mas a sobrecarga sensorial torna muito difícil socializar.
+AG_VFEI_PredatorStomach.label	estômago de predador
+AG_VFEI_PredatorStomach.description	Portadores deste gene têm um substituto de estômago simples, mas muito eficiente. Quem tem esta mutação consegue viver mais tempo com menos comida.
+AG_VFEI_PheromoneSecretor.label	secretor de feromônios
+AG_VFEI_PheromoneSecretor.description	Portadores deste gene têm glândulas insetoides que vazam aos poucos um feromônio incolor, inodoro e pegajoso, conhecido por causar uma leve euforia em quem está por perto.
+AG_VFEI_VentricularSleeve.label	manga ventricular
+AG_VFEI_VentricularSleeve.description	Portadores deste gene têm uma mutação no coração e nas artérias que faz o sangue coagular num gel rico em oxigênio. Em cortes, ou até na perda de membros, o gel cauteriza o ferimento na hora. Infelizmente, isso sobrecarrega muito o sistema cardiovascular humano.
+AG_VFEI_SynapticCerebellum.label	cerebelo sináptico
+AG_VFEI_SynapticCerebellum.description	Portadores deste gene têm um cérebro insetoide especialmente sensível à sinapse psíquica residual. Quem tem esta mutação tem um pensamento coletivo e uma sensibilidade psíquica profundos, mas mal consegue formar frases coerentes.
+AG_VFEI_VatGrownInsectoidSkin.label	pele de insetoide de tanque
+AG_VFEI_VatGrownInsectoidSkin.description	Portadores deste gene produzem um pigmento parecido com o dos insetoides criados em tanque.
+AG_VFEI_VatGrownInsectoidSkin.labelShortAdj	inseto
+AG_VFEI_InsectoidSkin.label	pele insetoide
+AG_VFEI_InsectoidSkin.description	Portadores deste gene produzem um pigmento parecido com o dos insetoides.
+AG_VFEI_InsectoidSkin.labelShortAdj	inseto
+## DefInjected/GeneDef/GeneDefs_Opinion_Sanguophage.xml
+AG_BloodsuckerDistrust.label	desconfiança de sugadores de sangue
+AG_BloodsuckerDistrust.description	O portador deste gene tem uma desconfiança inata de sanguófagos de xenotipo diferente do seu.
+## DefInjected/GeneDef/GeneDefs_Pain.xml
+AG_Painless.label	sem dor
+AG_Painless.description	Portadores deste gene quase não sentem dor comparados a um humano padrão. A atividade reduzida dos neurônios nos centros de nocicepção do cérebro torna a dor quase inexistente. Às vezes isso é vantajoso, às vezes perigoso.
+AG_Painless.labelShortAdj	indolor
+AG_Painless.symbolPack.prefixSymbols.0.symbol	dormente
+AG_Painless.symbolPack.prefixSymbols.1.symbol	indolor
+AG_Painless.symbolPack.prefixSymbols.2.symbol	duro
+AG_BrittleBones.label	ossos quebradiços
+AG_BrittleBones.description	Portadores deste gene têm uma estrutura óssea muito frágil e quebradiça. Se caírem de qualquer jeito, sofrem trincas e fraturas nos ossos.
+AG_BrittleBones.symbolPack.prefixSymbols.0.symbol	quebradiço
+AG_BrittleBones.symbolPack.prefixSymbols.1.symbol	vidro
+AG_BrittleBones.symbolPack.prefixSymbols.2.symbol	fraco
+## DefInjected/GeneDef/GeneDefs_PocketPlane.xml
+AG_NereidPocketPlane.label	plano de bolso nereida
+AG_NereidPocketPlane.description	Os portadores conseguem acessar o próprio espaço extradimensional, um refúgio seguro longe do caos da Orla.
+## DefInjected/GeneDef/GeneDefs_Presence.xml
+AG_NoRaidPresence.label	sem presença em incursões
+AG_NoRaidPresence.description	Portadores deste gene são totalmente ignorados nas incursões. Os invasores não os consideram uma ameaça relevante ao planejar o ataque à colônia e mandam menos gente.
+AG_ReducedRaidPresence.label	presença reduzida em incursões
+AG_ReducedRaidPresence.description	Portadores deste gene são considerados menos poderosos nas incursões. Os invasores não os veem como grande ameaça ao planejar o ataque à colônia e mandam menos gente.
+AG_DangerousRaidPresence.label	presença perigosa em incursões
+AG_DangerousRaidPresence.description	Portadores deste gene são considerados muito poderosos nas incursões. Os invasores os veem como grande ameaça ao planejar o ataque à colônia e mandam mais gente.
+AG_DeadlyRaidPresence.label	presença mortal em incursões
+AG_DeadlyRaidPresence.description	Portadores deste gene são considerados extremamente poderosos nas incursões. Os invasores os veem como uma ameaça absurda ao planejar o ataque à colônia e mandam MUITO mais gente.
+## DefInjected/GeneDef/GeneDefs_Psychic.xml
+AG_PsychicAbility_Masterful.label	mestre psíquico
+AG_PsychicAbility_Masterful.description	Portadores deste gene têm habilidades psíquicas extraordinárias.
+AG_PsychicAbility_Masterful.symbolPack.prefixSymbols.0.symbol	animus
+AG_PsychicAbility_Masterful.symbolPack.prefixSymbols.1.symbol	senso
+AG_PsychicAbility_Masterful.symbolPack.prefixSymbols.2.symbol	sensi
+AG_PsychicRemapping.label	remapeamento psíquico
+AG_PsychicRemapping.description	Portadores deste gene têm as vias cerebrais alteradas e sentem o efeito inverso dos zumbidos psíquicos.
+## DefInjected/GeneDef/GeneDefs_Reproduction.xml
+AG_FastGestation.label	gestação rápida
+AG_FastGestation.description	Portadores deste gene têm gestações 25% mais curtas.
+AG_SlowGestation.label	gestação lenta
+AG_SlowGestation.description	Portadores deste gene têm gestações 25% mais longas.
+AG_ReducedFertile.label	fertilidade reduzida
+AG_ReducedFertile.description	Portadores deste gene têm menos chance de engravidar ou de engravidar alguém.
+AG_FertilityDarkness.label	fertilidade no escuro
+AG_FertilityDarkness.description	Portadores deste gene têm mais chance de engravidar ou de engravidar alguém no escuro (abaixo de 50% de luz), e o efeito contrário na luz.
+AG_FertilityLight.label	fertilidade na luz
+AG_FertilityLight.description	Portadores deste gene têm mais chance de engravidar ou de engravidar alguém na luz (50% de luz ou mais), e o efeito contrário no escuro.
+AG_FertilityOutdoors.label	fertilidade ao ar livre
+AG_FertilityOutdoors.description	Portadores deste gene têm mais chance de engravidar ou de engravidar alguém ao ar livre, e o efeito contrário em lugares fechados.
+AG_FertilityIndoors.label	fertilidade em lugares fechados
+AG_FertilityIndoors.description	Portadores deste gene têm mais chance de engravidar ou de engravidar alguém em lugares fechados, e o efeito contrário ao ar livre.
+AG_EggLaying.label	postura de ovos
+AG_EggLaying.description	Portadores deste gene se reproduzem botando ovos, o que é tão nojento quanto parece. Isso tem suas vantagens e desvantagens.
+## DefInjected/GeneDef/GeneDefs_Resources.xml
+AG_MetalEater.label	absorvedor de minerais
+AG_MetalEater.description	Portadores deste gene têm uma reserva de força metalúrgica que troca a necessidade de comida comum por metais do solo, e essa reserva dura muito mais.\n\nOs portadores perdem 25% dos minerais para o metabolismo por dia.
+AG_MetalEater.resourceDescription	Uma reserva de energia mineral usada direto por {PAWN_nameDef} para não sentir fome
+AG_MetalEater.resourceLabel	minerais
+AG_MetalEater.symbolPack.prefixSymbols.0.symbol	metal
+AG_MineralEfficencyPoor.label	absorção mineral ruim
+AG_MineralEfficencyPoor.description	Portadores deste gene têm uma eficiência péssima para converter metais em minerais que o corpo consegue usar. Por isso, precisam consumir muito mais minerais que a maioria.
+AG_MineralEfficencyPoor.symbolPack.prefixSymbols.0.symbol	metal
+AG_MineralEfficencyGood.label	ótima absorção mineral
+AG_MineralEfficencyGood.description	Portadores deste gene têm uma eficiência incrível para converter metais em minerais que o corpo consegue usar. Por isso, precisam consumir muito menos metais que a maioria.
+AG_MineralEfficencyGood.symbolPack.prefixSymbols.0.symbol	metal
+## DefInjected/GeneDef/GeneDefs_Royalty.xml
+AG_Invisibility.label	camuflagem psíquica
+AG_Invisibility.description	Portadores deste gene conseguem alterar psiquicamente o tom da pele para se camuflar em quase qualquer ambiente.
+AG_InnatePsylink.label	psínculo inato
+AG_InnatePsylink.description	Portadores deste gene têm a capacidade inata de usar poderes psíquicos.
+AG_InnatePsylink.symbolPack.prefixSymbols.0.symbol	psi
+AG_InnatePsylink.symbolPack.prefixSymbols.1.symbol	mental
+AG_InnatePsylink.symbolPack.suffixSymbols.0.symbol	psi
+AG_PsychicSight.label	visão psíquica
+AG_PsychicSight.description	Portadores deste gene são quase totalmente cegos... até ganharem poderes psíquicos. Conseguem direcionar a visão psíquica interior e enxergam ainda melhor quanto mais poder adquirem.
+AG_PsychicSight.symbolPack.prefixSymbols.0.symbol	psi
+AG_PsychicSight.symbolPack.prefixSymbols.1.symbol	cego
+AG_PsychicSight.symbolPack.suffixSymbols.0.symbol	vidente
+AG_PsychicSight.symbolPack.suffixSymbols.1.symbol	espião
+AG_PsychicInsanity.label	insanidade psíquica
+AG_PsychicInsanity.description	Portadores deste gene têm poderes psíquicos que dependem do humor. Com humor baixo, e portanto maior risco de colapso, ganham bônus psíquicos. Com uma catarse, os bônus são ainda maiores (mesmo que o humor suba durante a catarse).
+AG_PsychicInsanity.symbolPack.prefixSymbols.0.symbol	louco
+AG_PsychicInsanity.symbolPack.prefixSymbols.1.symbol	insano
+AG_PsychicInsanity.symbolPack.prefixSymbols.2.symbol	pirado
+AG_SelfSkip.label	salto próprio
+AG_SelfSkip.description	Os portadores conseguem teleportar o próprio corpo por curtas distâncias.
+## DefInjected/GeneDef/GeneDefs_Shambler_Anomaly.xml
+AG_Shambler_LightningFast.label	trôpego veloz como um raio
+AG_Shambler_LightningFast.description	Trôpegos com este gene se movem com grande velocidade.
+AG_Shambler_Timeless.label	trôpego atemporal
+AG_Shambler_Timeless.description	Trôpegos com este gene duram muito mais que 4 a 5 dias.
+AG_Shambler_Toxic.label	trôpego tóxico
+AG_Shambler_Toxic.description	Trôpegos com este gene exalam de tempos em tempos nuvens de gás tóxico.
+AG_Shambler_Stinker.label	trôpego fedorento
+AG_Shambler_Stinker.description	Trôpegos com este gene exalam de tempos em tempos nuvens de fedor podre. Nojento!
+AG_Shambler_DeadlifeBelcher.label	trôpego arrotador de morte-viva
+AG_Shambler_DeadlifeBelcher.description	Trôpegos com este gene exalam de tempos em tempos nuvens de poeira morta-viva, que levantam os cadáveres próximos como trôpegos.
+AG_Shambler_Polluter.label	trôpego poluidor
+AG_Shambler_Polluter.description	Trôpegos com este gene poluem o terreno ao redor o tempo todo, até transformar a paisagem num deserto desolado.
+AG_Shambler_Photosynthetic.label	trôpego fotossintético
+AG_Shambler_Photosynthetic.description	Trôpegos com este gene ficam mais fortes sob a luz do sol.
+AG_Shambler_Armoured.label	trôpego blindado
+AG_Shambler_Armoured.description	Trôpegos com este gene são mais fortes e maiores que o normal.
+AG_Shambler_Plagued.label	trôpego pestilento
+AG_Shambler_Plagued.description	Trôpegos com este gene infectam as vítimas com uma praga trôpega que as transforma em trôpegos ao morrer.
+AG_Shambler_Acidic.label	trôpego ácido
+AG_Shambler_Acidic.description	Trôpegos com este gene são extremamente ácidos: sangram ácido, explodem numa rajada ácida quando destruídos e atacam com presas ácidas.
+AG_Shambler_Exploding.label	trôpego explosivo
+AG_Shambler_Exploding.description	Trôpegos com este gene têm nódulos de combustível químico no corpo e explodem quando destruídos.
+AG_Shambler_Delicate.label	trôpego apodrecido
+AG_Shambler_Delicate.description	Trôpegos com este gene estão mais decompostos que o normal e sofrem mais dano.
+AG_Shambler_Tough.label	trôpego resistente
+AG_Shambler_Tough.description	Trôpegos com este gene são mais resistentes que o normal e sofrem menos dano.
+AG_Shambler_Tinderskin.label	trôpego pele de pavio
+AG_Shambler_Tinderskin.description	Trôpegos com este gene são mais inflamáveis que o normal.
+AG_Shambler_HighMelee.label	trôpego agressivo
+AG_Shambler_HighMelee.description	Trôpegos com este gene são mais agressivos que o normal e causam mais dano corpo a corpo.
+AG_Shambler_LowMelee.label	trôpego fraco
+AG_Shambler_LowMelee.description	Trôpegos com este gene são mais fracos que o normal e causam menos dano corpo a corpo.
+AG_Shambler_UVSensitive.label	trôpego sensível a UV
+AG_Shambler_UVSensitive.description	Trôpegos com este gene são afetados pela luz do sol, que os faz entrar em torpor.
+AG_Shambler_VenomFangs.label	trôpego venenoso
+AG_Shambler_VenomFangs.description	Trôpegos com este gene têm presas venenosas que usam no combate corpo a corpo.
+AG_Shambler_VeryGaunt.label	trôpego esquelético
+AG_Shambler_VeryGaunt.description	Trôpegos com este gene têm aparência muito chupada e podre.
+AG_Shambler_Spiked.label	trôpego espinhoso
+AG_Shambler_Spiked.description	Trôpegos com este gene têm um ataque de espinhos à distância, parecido com o do sangra-carne.
+## DefInjected/GeneDef/GeneDefs_ShoulderCritters_Anomaly.xml
+AG_FleshSpitter.label	cuspidor de carne
+AG_FleshSpitter.description	Portadores deste gene têm no ombro um crescimento grotesco e canceroso que cospe ácido por vontade própria.
+AG_FleshBulb.label	bulbo de carne
+AG_FleshBulb.description	Portadores deste gene têm no ombro um crescimento grotesco e canceroso que lança bulbos de carne luminosos, que funcionam como sinalizadores disruptores.
+AG_FleshSack.label	bolsa de carne
+AG_FleshSack.description	Portadores deste gene têm no ombro um crescimento grotesco e canceroso que absorve feras de carne e fortalece o portador por um tempo.
+## DefInjected/GeneDef/GeneDefs_Sleep.xml
+AG_NightOwl.label	coruja noturna
+AG_NightOwl.description	Portadores deste gene preferem ficar acordados de noite e dormir de dia.
+## DefInjected/GeneDef/GeneDefs_Special.xml
+AlphaGenes_Randomizer.label	aleatorizador
+AlphaGenes_Randomizer.description	Quando um personagem recebe este gene, o xenotipo dele vira um dos xenotipos personalizados criados pelo jogador.
+AlphaGenes_ExoticOrganism.label	organismo exótico
+AlphaGenes_ExoticOrganism.description	Quando um xenotipo personalizado do jogador recebe este gene, ele nunca é carregado automaticamente nas duas facções adicionadas por este mod.
+## DefInjected/GeneDef/GeneDefs_Speed.xml
+AG_ArmouredSpeed.label	velocidade blindada
+AG_ArmouredSpeed.description	Portadores deste gene andam mais rápido usando armadura pesada.
+AG_SpeedByTemperature.label	velocidade térmica
+AG_SpeedByTemperature.description	Portadores deste gene andam rápido em temperaturas altas, mas se cansam muito mais. Temperaturas baixas reduzem o metabolismo, deixando-os mais lentos, mas também gastando menos energia para ficar acordados.
+AG_WaterStriding.label	passada aquática
+AG_WaterStriding.description	Portadores deste gene andam na água sem penalidade. Ignoram o custo de movimento em terrenos com água.
+AG_LightStriding.label	passada na luz
+AG_LightStriding.description	Portadores deste gene andam muito mais rápido expostos à luz (50% ou mais de iluminação) e mais devagar no escuro.
+AG_NightStriding.label	passada noturna
+AG_NightStriding.description	Portadores deste gene andam muito mais rápido no escuro (abaixo de 50% de iluminação) e mais devagar na luz.
+AG_PollutionStriding.label	passada na poluição
+AG_PollutionStriding.description	Portadores deste gene andam muito mais rápido em terreno poluído.

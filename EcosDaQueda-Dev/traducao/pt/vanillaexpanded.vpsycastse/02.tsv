@@ -1,0 +1,202 @@
+## DefInjected/ResearchProjectDef/ResearchProjects_Various.xml
+VPE_CasterGear.label	equipamento de conjurador
+VPE_CasterGear.description	Fabricar roupas, armaduras e equipamentos simples de conjurador usando eltex.
+## DefInjected/SitePartDef/EltexMeteor.xml
+VPE_EltexMeteor.label	meteoro de eltex
+VPE_EltexMeteor.description	O local de um meteoro de eltex, muito cobiçado pelo Império. Vir até aqui permite obter eltex, que pode ser usado para fabricar equipamento de conjurador.
+VPE_EltexMeteor.mainPartAllThreatsLabel	Atividade hostil detectada.
+## DefInjected/StatDef/Stats.xml
+VPE_PsyfocusCostFactor.label	fator de custo de concentração psíquica
+VPE_PsyfocusCostFactor.description	Um multiplicador do custo de concentração psíquica dos poderes psíquicos.
+VPE_PsychicEntropyMinimum.label	calor neural mínimo
+VPE_PsychicEntropyMinimum.description	A quantidade mínima de calor neural. Aumenta ao manter certos poderes psíquicos, que geram um calor que nunca se dissipa.
+## DefInjected/StorytellerDef/Basilicus.xml
+VPE_Basilicus.label	Basilicus, o Concessor
+VPE_Basilicus.description	Basilicus impõe a vontade do imperador por onde passa, concedendo grandes poderes a quem os merece. As baladas épicas ficam ainda mais fantásticas quando todo mundo tem acesso a poderes psíquicos.
+## DefInjected/ThingDef/Apparel_Psychic.xml
+VPE_Apparel_EltexMask.label	máscara de eltex
+VPE_Apparel_EltexMask.description	Uma máscara artisticamente impressionante que emana energia psíquica. Esconde o rosto de quem usa, mas dá pouca proteção física. Seus materiais especiais aumentam a sensibilidade psíquica de quem a usa e dissipam o calor neural.
+VPE_Apparel_EltexCape.label	capa de eltex
+VPE_Apparel_EltexCape.description	Uma capa longa de desenho místico. Cai sobre um dos lados do tronco. Seus materiais especiais aumentam a sensibilidade psíquica de quem a usa e dissipam o calor neural.
+## DefInjected/ThingDef/Apparel_Various.xml
+VPE_Apparel_PlateArmorPrestige.label	armadura de placas de prestígio
+VPE_Apparel_PlateArmorPrestige.description	Placas sólidas de armadura sobrepostas, cobrindo o corpo todo do pescoço aos pés.\n\nCara e bonita, uma armadura de prestígio como esta costuma ser feita para gente de alto status. Os fios de eltex embutidos também aumentam a sensibilidade psíquica de quem a usa.
+VPE_Psyring.label	psianel
+VPE_Psyring.description	Um anel de eltex criado por um tecnomante habilidoso. Guarda o conhecimento de um poder psíquico específico, e outros conjuradores podem usá-lo para conjurar esse poder.
+## DefInjected/ThingDef/Buildings.xml
+VPE_Skipdoor.label	porta de salto
+VPE_Skipdoor.description	Um ponto de entrada psíquico para uma rede de portais.
+VPE_IceCrystal.label	cristal de gelo
+VPE_IceCrystal.description	Um pequeno cristal de gelo que baixa a temperatura do cômodo. Pode ajudar a congelar itens perecíveis.
+VPE_IceWall.label	parede de gelo
+VPE_IceWall.description	Uma parede frágil feita de gelo. Derrete no calor.
+## DefInjected/ThingDef/Buildings_Natural.xml
+VPE_EltexOre.label	minério de eltex
+VPE_EltexOre.description	Rocha com pedaços de eltex.
+## DefInjected/ThingDef/Ethereal.xml
+VPE_FireBeam.label	raio de fogo
+VPE_FireTornado.label	tornado de fogo
+VPE_Vortex.label	vórtice
+VPE_HurricaneMaker.label	gerador de furacão
+VPE_TimeSphere.label	esfera do tempo
+VPE_SkyChanger.label	mudador do céu
+VPE_BrambleSpawner.label	brotando
+VPE_WildPlantSpawner.label	brotando
+VPE_TreeSpawner.label	brotando
+VPE_Shrineshield_Small.label	escudo-santuário pequeno
+VPE_Shrineshield_Large.label	escudo-santuário grande
+VPE_JumpingPawn.label	voando
+VPE_Darkness.label	escuridão
+VPE_Decoy.label	isca
+## DefInjected/ThingDef/Filth_Various.xml
+VPE_Filth_Metal.label	escória de metal
+VPE_Filth_Rock.label	cascalho de pedra
+## DefInjected/ThingDef/Items_Resource_Manufactured.xml
+VPE_Eltex.label	eltex
+VPE_Eltex.description	Um mineral extremamente misterioso, maleável e que serve de condutor físico para poderes psíquicos. Como os poderes psíquicos vêm dos motores arcotecs, há quem especule que esses minerais foram fabricados pelos arcotecs, ou que eles desenvolveram seus motores usando esse mineral estranho.
+## DefInjected/ThingDef/Motes.xml
+VPE_Mote_FireBeam.label	efeito
+VPE_Mote_CastPsycast.label	efeito
+VPE_Mote_CastPsycast_Red.label	efeito
+VPE_Mote_CastPsycast_Yellow.label	efeito
+VPE_Mote_Butterfly.label	efeito
+VPE_Mote_GreenMist.label	efeito
+VPE_Mote_GhostA.label	efeito
+VPE_Mote_GhostB.label	efeito
+VPE_Mote_GhostC.label	efeito
+VPE_Mote_GhostD.label	efeito
+VPE_Mote_GhostE.label	efeito
+VPE_Mote_GhostF.label	efeito
+VPE_Mote_GhostG.label	efeito
+VPE_YellowSparkFlash.label	efeito
+VPE_RedSparkFlash.label	efeito
+VPE_WhiteSparkFlash.label	efeito
+VPE_WarlordTargettingReticle.label	efeito
+VPE_PsycastAreaEffectMaintained.label	efeito
+VPE_PsycastPsychicEffectTransfer.label	efeito
+VPE_Mote_Cast.label	efeito
+VPE_Hallucination.label	efeito
+VPE_Liferot.label	efeito
+VPE_Mote_ParalysisPulse.label	efeito
+VPE_SoulOrb.label	efeito
+VPE_SoulOrbTransfer.label	efeito
+VPE_MatterPhasing.label	efeito
+## DefInjected/ThingDef/Projectiles.xml
+VPE_Flameball.label	bola de fogo
+VPE_Flameball.description	Uma bola de fogo lançada por um conflagrador
+VPE_FireBreath.label	sopro de fogo
+VPE_EyeBlast.label	raio dos olhos
+VPE_Bolt.label	raio
+VPE_Bolt.description	Um raio lançado por um senhor da estática
+VPE_ChainBolt.label	raio em cadeia
+VPE_BallLightning.label	raio globular
+VPE_IceBreathe.label	sopro de gelo
+VPE_IceSpike.label	estaca de gelo
+VPE_IceSpike.description	Uma estaca de gelo lançada pelo moldador do gelo.
+VPE_FrostRay.label	raio congelante
+## DefInjected/ThingDef/Races_Constructs.xml
+VPE_SteelConstruct.label	constructo de aço
+VPE_SteelConstruct.description	Um pedaço de escória de aço animado por uma energia psíquica poderosa. Enfrenta as ameaças próximas e defende o mestre de qualquer mal que possa atingi-lo.\n\n<color=#E5E54C>Efeito no jogo:</color>Os constructos geram calor constante no conjurador que os invocou. Manter constructos demais vivos pode impedir o conjurador de usar outros poderes.
+VPE_SteelConstruct.tools.head.label	cabeça
+VPE_RockConstruct.label	constructo de pedra
+VPE_RockConstruct.description	Um pedaço de rocha animado por uma energia psíquica poderosa. Faz trabalhos simples pela colônia sem se cansar e com dedicação total.\n\n<color=#E5E54C>Efeito no jogo:</color>Os constructos geram calor constante no conjurador que os invocou. Manter constructos demais vivos pode impedir o conjurador de usar outros poderes.
+VPE_RockConstruct.tools.head.label	cabeça
+## DefInjected/ThingDef/Races_Skeleton.xml
+VPE_SummonedSkeleton.label	esqueleto
+VPE_SummonedSkeleton.description	A carcaça de um falecido, reanimada psiquicamente. Extremamente agressiva, mas logo se desfaz em nada.
+VPE_SummonedSkeleton.tools.left_fist.label	punho esquerdo
+VPE_SummonedSkeleton.tools.right_fist.label	punho direito
+## DefInjected/ThingDef/Skyfallers.xml
+VPE_SmallMeteorite_Incoming.label	meteorito pequeno
+VPE_SoulFromSky.label	alma
+## DefInjected/ThingDef/Weapons_EltexMelee.xml
+VPE_MeleeWeapon_EltexDagger.label	adaga de eltex
+VPE_MeleeWeapon_EltexDagger.description	Uma adaga medieval entremeada com materiais de foco psíquico. Além de aumentar a sensibilidade psíquica e a dissipação de calor neural de quem a empunha, também é uma excelente arma corpo a corpo, pois segue a mesma ideia de qualquer faca: um cabo para segurar e um fio para cortar.
+VPE_MeleeWeapon_EltexDagger.tools.handle.label	cabo
+VPE_MeleeWeapon_EltexDagger.tools.point.label	ponta
+VPE_MeleeWeapon_EltexDagger.tools.edge.label	fio
+VPE_MeleeWeapon_EltexMace.label	maça de eltex
+VPE_MeleeWeapon_EltexMace.description	Uma maça medieval entremeada com materiais de foco psíquico. Além de aumentar a sensibilidade psíquica e a dissipação de calor neural de quem a empunha, também é uma excelente arma corpo a corpo, projetada para golpes eficientes e impactos mortais.
+VPE_MeleeWeapon_EltexMace.tools.handle.label	cabo
+VPE_MeleeWeapon_EltexMace.tools.head.label	cabeça
+VPE_MeleeWeapon_EltexSword.label	espada de eltex
+VPE_MeleeWeapon_EltexSword.description	Uma espada medieval entremeada com materiais de foco psíquico. Além de aumentar a sensibilidade psíquica e a dissipação de calor neural de quem a empunha, também é uma excelente arma corpo a corpo. Boa para estocar ou cortar. É leve e ágil, o que às vezes a faz vencer armas maiores e mais pesadas.
+VPE_MeleeWeapon_EltexSword.tools.handle.label	cabo
+VPE_MeleeWeapon_EltexSword.tools.point.label	ponta
+VPE_MeleeWeapon_EltexSword.tools.edge.label	fio
+## DefInjected/ThingDef/Weapons_Misc.xml
+VPE_HeatPearls.label	pérolas de calor
+VPE_HeatPearls.description	Pérolas de calor místicas criadas por um tecnomante, num processo que condensa calor psíquico em forma física. Podem ser arremessadas em outros conjuradores para liberar uma quantidade insana de calor psíquico, desativando os poderes deles por um curto período.
+VPE_HeatPearls.comps.CompApparelReloadable.chargeNoun	uso
+VPE_HeatPearls.comps.CompApparelReloadable.cooldownGerund	em recarga
+VPE_HeatPearls.verbs.throw_heat_pearl.label	arremessar pérola de calor
+VPE_HeatPearls_Proj.label	projétil
+## DefInjected/ThoughtDef/Thoughts.xml
+VPE_Bliss.stages.bliss-0.label	êxtase
+VPE_Bliss.stages.bliss-0.description	Talvez nem tudo seja ruim.
+VPE_Bliss.stages.bliss-1.label	êxtase
+VPE_Bliss.stages.bliss-1.description	Acho que as coisas estão melhorando.
+VPE_Bliss.stages.bliss-2.label	êxtase
+VPE_Bliss.stages.bliss-2.description	Tudo está melhorando, devagar e sempre.
+VPE_Bliss.stages.bliss-3.label	êxtase
+VPE_Bliss.stages.bliss-3.description	Estou me sentindo bem agora, as coisas estão melhorando.
+VPE_Bliss.stages.bliss-4.label	êxtase
+VPE_Bliss.stages.bliss-4.description	Sinto um quentinho por dentro, só estar vivo já é ótimo.
+VPE_Bliss.stages.bliss-5.label	êxtase
+VPE_Bliss.stages.bliss-5.description	Estou quase explodindo de empolgação. Amo esta colônia, amo este mundo e todas as vidas nele.
+VPE_Bliss.stages.bliss-6.label	êxtase
+VPE_Bliss.stages.bliss-6.description	Todas as cores deste mundo são tão vivas, os sons tão tranquilos, o ar tão fresco. Esta vida me deixa sem fôlego.
+VPE_Bliss.stages.bliss-7.label	êxtase
+VPE_Bliss.stages.bliss-7.description	É isso, não é? Cheguei de verdade ao próprio nirvana. A vida é a própria encarnação da felicidade.
+VPE_MindWiped.stages.mind_wiped.label	mente apagada
+VPE_MindWiped.stages.mind_wiped.description	Não me lembro de nada, estou descobrindo tudo de novo!
+VPE_TimeQuake.stages.time_quake.label	terremoto temporal
+VPE_TimeQuake.stages.time_quake.description	Todo mundo que eu conhecia mudou tanto. Esse terremoto temporal me deixou de cabeça virada.
+VPE_Future.stages.I_know_my_future.label	Eu sei o meu futuro!
+VPE_Future.stages.I_know_my_future.description	Eu sei o meu futuro, e ele parece bom!
+VPE_Thrall.stages.Thrall.label	Servo
+VPE_Thrall.stages.Thrall.description	Aaargh aaarghh aaaahhhh
+## DefInjected/TraitDef/Traits_Singular.xml
+VPE_Thrall.degreeDatas.thrall.label	servo
+VPE_Thrall.degreeDatas.thrall.description	Escravização psíquica causada por uma influência mental incrivelmente forte. Servos não precisam dormir nem de recreação, mas não conseguem fazer trabalho qualificado nem ter interações sociais.
+## DefInjected/VEF.Abilities.AbilityDef/Archon.xml
+VPE_WordofTrust.label	palavra de confiança
+VPE_WordofTrust.description	Conversa com o prisioneiro usando sugestão psíquica para reduzir a resistência dele ao recrutamento. Este poder só reduz a resistência; não consegue recrutar o prisioneiro.
+VPE_WordofTrust.jobReportString	Usando habilidade: {0}
+VPE_WordofTrust.verbProperties.label	palavra de confiança
+VPE_WordofProductivity.label	palavra de produtividade
+VPE_WordofProductivity.description	Com palavras de motivação e um belo empurrão no metabolismo, torna o alvo tocado um membro mais produtivo da sociedade pelos próximos dias. É considerado uma ação hostil, e a duração depende da sensibilidade psíquica do alvo.
+VPE_WordofProductivity.jobReportString	Usando habilidade: {0}
+VPE_WordofProductivity.verbProperties.label	palavra de produtividade
+VPE_BlindingPulse.label	pulso cegante
+VPE_BlindingPulse.description	Induz ruído nos centros visuais do cérebro, atrapalhando a visão de todos perto do ponto alvo. Dura meio minuto, conforme a sensibilidade psíquica.
+VPE_BlindingPulse.jobReportString	Usando habilidade: {0}
+VPE_BlindingPulse.verbProperties.label	pulso cegante
+VPE_WordofAlliance.label	palavra de aliança
+VPE_WordofAlliance.description	Diz palavras de amizade e vantagens a um alvo próximo usando sugestão psíquica, convencendo-o a melhorar as relações. Não funciona contra hostis e fica mais forte com sensibilidade psíquica alta.
+VPE_WordofAlliance.jobReportString	Usando habilidade: {0}
+VPE_WordofAlliance.verbProperties.label	palavra de aliança
+VPE_GroupLink.label	elo de grupo
+VPE_GroupLink.description	Cria uma esfera de sugestão psíquica ao redor do conjurador, ligando todos os personagens dentro dela a ele e permitindo que qualquer poder "Palavra de" de alvo único afete todos os outros. O efeito acaba quando os ligados saem do alcance.
+VPE_GroupLink.jobReportString	Usando habilidade: {0}
+VPE_GroupLink.verbProperties.label	elo de grupo
+VPE_WordofPain.label	palavra de dor
+VPE_WordofPain.description	Induz ruído nos centros de dor do cérebro do alvo e superestimula as terminações nervosas dele, conforme a sensibilidade psíquica.
+VPE_WordofPain.jobReportString	Usando habilidade: {0}
+VPE_WordofPain.verbProperties.label	palavra de dor
+VPE_MindBreak.label	quebra mental
+VPE_MindBreak.description	Usando ruído psíquico harmônico concentrado, lobotomiza o alvo e o transforma num servo incansável. A antiga facção dele não gosta nem um pouco disso.
+VPE_MindBreak.jobReportString	Usando habilidade: {0}
+VPE_MindBreak.verbProperties.label	quebra mental
+VPE_WordofProtection.label	palavra de proteção
+VPE_WordofProtection.description	Usando ruído psíquico harmônico, altera fisicamente o corpo do alvo para ficar mais durável e resistente a dano. Dura bastante e fica mais forte com a sensibilidade psíquica do conjurador.
+VPE_WordofProtection.jobReportString	Usando habilidade: {0}
+VPE_WordofProtection.verbProperties.label	palavra de proteção
+VPE_DrainPsyessence.label	drenar psiessência
+VPE_DrainPsyessence.description	Mirando num personagem caído com talento psíquico, induz um ruído psíquico harmônico intenso que liquefaz a carne dele e a converte em psiessência, absorvida pelo conjurador como talento psíquico acumulado. Os momentos finais da desintegração psíquica são sentidos por todos num raio de muitos quilômetros, com consequências diplomáticas com todas as facções.
+VPE_DrainPsyessence.jobReportString	Usando habilidade: {0}
+VPE_DrainPsyessence.verbProperties.label	drenar psiessência
+VPE_MassHallucination.label	alucinação em massa
+VPE_MassHallucination.description	Cria uma explosão enorme de sugestão psíquica que convence os personagens próximos de que os cômodos são os melhores que poderiam existir. O conjurador entra em coma, e o efeito dura cinco dias.
+VPE_MassHallucination.jobReportString	Usando habilidade: {0}
+VPE_MassHallucination.verbProperties.label	alucinação em massa

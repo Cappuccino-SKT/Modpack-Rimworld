@@ -1,0 +1,239 @@
+## DefInjected/IssueDef/Precepts_Acceleration.xml
+VVE_Acceleration.label	aceleração
+## DefInjected/IssueDef/Precepts_Driving.xml
+VVE_Driving.label	direção
+## DefInjected/IssueDef/Precepts_Flying.xml
+VVE_Flying.label	voo
+## DefInjected/IssueDef/Precepts_FuelEfficiency.xml
+VVE_FuelEfficiency.label	eficiência de combustível
+## DefInjected/IssueDef/Precepts_ImpactDamage.xml
+VVE_ImpactDamage.label	dano de impacto
+## DefInjected/IssueDef/Precepts_MaxSpeed.xml
+VVE_MaxSpeed.label	velocidade máxima
+## DefInjected/IssueDef/Precepts_Sailing.xml
+VVE_Sailing.label	navegação
+## DefInjected/IssueDef/Precepts_VehicleRepairs.xml
+VVE_VehicleRepairs.label	conserto de veículos
+## DefInjected/JobDef/Jobs.xml
+VVE_OpenGarage.reportString	abrindo a garagem.
+VVE_CloseGarage.reportString	fechando a garagem.
+VVE_RestoreWreck.reportString	restaurando TargetA.
+## DefInjected/MemeDef/Memes_Misc.xml
+VVE_Skyseekers.label	buscadores do céu
+VVE_Skyseekers.description	A elevação, física e espiritual, se alcança voando pelos céus.
+VVE_Skyseekers.descriptionMaker.rules.rulesStrings[0]	creation(tag=meme_Skyseekers)        ->[deity0_name] fez todos os seus seguidores olharem para os céus sem fim.
+VVE_Skyseekers.descriptionMaker.rules.rulesStrings[1]	episode(uses=1,tag=meme_Skyseekers)  ->Falando aos fiéis, [deity0_name] disse: "Só conquistando os céus vocês alcançarão a verdadeira iluminação".
+VVE_Skyseekers.descriptionMaker.rules.rulesStrings[2]	intro(tag=meme_Skyseekers)           ->[place_summary] [place_name] sempre viveu em conflito. Os [memberNamePlural] eram sitiados o tempo todo pelos inimigos, e isso entristecia profundamente [deity0_name].
+VVE_Skyseekers.descriptionMaker.rules.rulesStrings[3]	conflict(tag=meme_Skyseekers)        ->[deity0_name] viu os ataques constantes de um terrível [foeLeader], um senhor da guerra, e decidiu dar naves aladas aos seus seguidores, para que pudessem voar acima dos inimigos.
+VVE_Skyseekers.descriptionMaker.rules.rulesStrings[4]	founderJoin(tag=meme_Skyseekers)     ->[founderName], o maior dos nossos aviadores, foi avisado por [deity0_name] do plano do [foeLeader], e quando o inimigo atacou, um enorme esquadrão de caças estava pronto, esperando por ele.
+VVE_Skyseekers.descriptionMaker.rules.rulesStrings[5]	victory(tag=meme_Skyseekers)         ->O [foeLeader] foi bombardeado do céu sem demora, tudo em nome de [deity0_name].
+VVE_Skyseekers.descriptionMaker.rules.rulesStrings[6]	setup(tag=meme_Skyseekers)           ->[founderName] era piloto, o melhor da sua turma. Passou décadas da vida pilotando todo tipo de aeronave, civil e militar.
+VVE_Skyseekers.descriptionMaker.rules.rulesStrings[7]	story(uses=1,tag=meme_Skyseekers)    ->[founderName] entendeu melhor que ninguém que a verdadeira liberdade está em voar pelos céus sem fim, muito acima de qualquer problema.
+VVE_Skyseekers.descriptionMaker.rules.rulesStrings[8]	lessonIntro(tag=meme_Skyseekers)         ->Os antigos aviadores da Terra tinham toda a razão. Eles nos ensinaram que
+VVE_Skyseekers.descriptionMaker.rules.rulesStrings[9]	lesson(tag=meme_Skyseekers)              ->a única liberdade verdadeira está em voar pelos céus sem fim
+VVE_Skyseekers.descriptionMaker.rules.rulesStrings[10]	lessonReinforcement(tag=meme_Skyseekers) ->Cairemos sobre os inimigos vindos de céus inalcançáveis, como uma justiça divina e veloz.
+VVE_Skyseekers.descriptionMaker.rules.rulesStrings[11]	archistBasis(tag=meme_Skyseekers)    ->Os arcotecs são mentes puras, seres do céu.
+VVE_Skyseekers.descriptionMaker.rules.rulesStrings[12]	archistFact(tag=meme_Skyseekers)     ->Voando pelos céus, ficamos mais perto dos arcotecs.
+VVE_Skyseekers.descriptionMaker.rules.rulesStrings[13]	archistProphecy(tag=meme_Skyseekers) ->[inTheEnd], só quem transcender os limites da terra poderá também transcender o próprio corpo físico.
+VVE_Skyseekers.descriptionMaker.rules.rulesStrings[14]	animistBasis(tag=meme_Skyseekers)    ->Os espíritos nos ensinam que os céus sem fim guardam o segredo de uma existência pura.
+VVE_Skyseekers.descriptionMaker.rules.rulesStrings[15]	animistFact(tag=meme_Skyseekers)     ->Só voando pelos céus podemos chegar mais perto dos espíritos.
+VVE_Skyseekers.descriptionMaker.rules.rulesStrings[16]	animistProphecy(tag=meme_Skyseekers) ->[itIsSaid] só quem transcender os limites da terra poderá também comungar com o mundo espiritual.
+VVE_Skyseekers.generalRules.rulesStrings[0]	memeAdjective->voador
+VVE_Skyseekers.generalRules.rulesStrings[1]	memeAdjective->planador
+VVE_Skyseekers.generalRules.rulesStrings[2]	memeAdjective->livre
+VVE_Skyseekers.generalRules.rulesStrings[3]	memeLeaderNoun->aviador
+VVE_Skyseekers.generalRules.rulesStrings[4]	memeMoralist->vidente do céu
+VVE_Skyseekers.generalRules.rulesStrings[5]	memeConcept->voo
+VVE_Skyseekers.symbolPacks.0.adjective	buscador do céu
+VVE_Skyseekers.symbolPacks.0.ideoName	Buscadores do Céu
+VVE_Skyseekers.symbolPacks.0.member	piloto
+VVE_Skyseekers.symbolPacks.0.theme	buscadores do céu
+VVE_Nauticals.label	náuticos
+VVE_Nauticals.description	Abraçar a vastidão das águas oferece uma ligação profunda com os mistérios da vida.
+VVE_Nauticals.descriptionMaker.rules.rulesStrings[0]	creation(tag=meme_Nauticals)        ->[deity0_name] fez todos os seus seguidores olharem para os mares sem fim.
+VVE_Nauticals.descriptionMaker.rules.rulesStrings[1]	episode(uses=1,tag=meme_Nauticals)  ->Falando aos fiéis, [deity0_name] disse: "Só conquistando os mares vocês alcançarão a verdadeira iluminação".
+VVE_Nauticals.descriptionMaker.rules.rulesStrings[2]	intro(tag=meme_Nauticals)           ->[place_summary] [place_name] sempre viveu em conflito. Os [memberNamePlural] eram sitiados o tempo todo pelos inimigos, e isso entristecia profundamente [deity0_name].
+VVE_Nauticals.descriptionMaker.rules.rulesStrings[3]	conflict(tag=meme_Nauticals)        ->[deity0_name] viu os ataques constantes de um terrível [foeLeader], um senhor da guerra, e decidiu dar velas aos seus seguidores, para que pudessem navegar pelos mares, fugir dos inimigos e emboscá-los.
+VVE_Nauticals.descriptionMaker.rules.rulesStrings[4]	founderJoin(tag=meme_Nauticals)     ->[founderName], o maior dos nossos navegadores, foi avisado por [deity0_name] do plano do [foeLeader], e quando o inimigo atacou, uma enorme marinha de embarcações gigantes estava pronta, esperando por ele.
+VVE_Nauticals.descriptionMaker.rules.rulesStrings[5]	victory(tag=meme_Nauticals)         ->O [foeLeader] foi atacado pelo mar sem demora, tudo em nome de [deity0_name].
+VVE_Nauticals.descriptionMaker.rules.rulesStrings[6]	setup(tag=meme_Nauticals)           ->[founderName] era navegador, o melhor da sua turma. Passou décadas da vida navegando em todo tipo de embarcação, civil e militar.
+VVE_Nauticals.descriptionMaker.rules.rulesStrings[7]	story(uses=1,tag=meme_Nauticals)    ->[founderName] entendeu melhor que ninguém que a verdadeira liberdade está em navegar pelos mares, pois as águas podem ser caprichosas, mas também são justas.
+VVE_Nauticals.descriptionMaker.rules.rulesStrings[8]	lessonIntro(tag=meme_Nauticals)         ->Os antigos navegadores da Terra tinham toda a razão. Eles nos ensinaram que
+VVE_Nauticals.descriptionMaker.rules.rulesStrings[9]	lesson(tag=meme_Nauticals)              ->a única liberdade verdadeira está em navegar pelos mares sem fim
+VVE_Nauticals.descriptionMaker.rules.rulesStrings[10]	lessonReinforcement(tag=meme_Nauticals) ->Cairemos sobre os inimigos vindos de águas indomadas, como uma justiça divina e veloz.
+VVE_Nauticals.descriptionMaker.rules.rulesStrings[11]	archistBasis(tag=meme_Nauticals)    ->As mentes puras dos arcotecs são fluidas como a água, seres de inconstância e mudança.
+VVE_Nauticals.descriptionMaker.rules.rulesStrings[12]	archistFact(tag=meme_Nauticals)     ->Navegando pelos mares, prestamos homenagem à sua natureza imprevisível e caprichosa.
+VVE_Nauticals.descriptionMaker.rules.rulesStrings[13]	archistProphecy(tag=meme_Nauticals) ->[inTheEnd], só quem transcender os limites da terra poderá também transcender o próprio corpo físico.
+VVE_Nauticals.descriptionMaker.rules.rulesStrings[14]	animistBasis(tag=meme_Nauticals)    ->Os espíritos nos ensinam que a imprevisibilidade dos mares guarda o segredo de uma existência pura.
+VVE_Nauticals.descriptionMaker.rules.rulesStrings[15]	animistFact(tag=meme_Nauticals)     ->Só navegando pelos mares podemos chegar mais perto dos espíritos.
+VVE_Nauticals.descriptionMaker.rules.rulesStrings[16]	animistProphecy(tag=meme_Nauticals) ->[itIsSaid] só quem transcender os limites da terra poderá também comungar com o mundo espiritual.
+VVE_Nauticals.generalRules.rulesStrings[0]	memeAdjective->navegante
+VVE_Nauticals.generalRules.rulesStrings[1]	memeAdjective->marinheiro
+VVE_Nauticals.generalRules.rulesStrings[2]	memeAdjective->marítimo
+VVE_Nauticals.generalRules.rulesStrings[3]	memeLeaderNoun->navegador
+VVE_Nauticals.generalRules.rulesStrings[4]	memeMoralist->vidente das águas
+VVE_Nauticals.generalRules.rulesStrings[5]	memeConcept->navegação
+VVE_Nauticals.symbolPacks.0.adjective	náutico
+VVE_Nauticals.symbolPacks.0.ideoName	Náuticos
+VVE_Nauticals.symbolPacks.0.member	marujo
+VVE_Nauticals.symbolPacks.0.theme	náuticos
+VVE_Travelers.label	viajantes
+VVE_Travelers.description	O mundo é vasto e feito para ser explorado em todas as suas facetas.
+VVE_Travelers.descriptionMaker.rules.rulesStrings[0]	creation(tag=meme_Traveler)        ->[deity0_name] escreveu os seus mandamentos em onze tábuas de plastiaço. O quinto mandamento dizia: "Não deixarei de explorar o mundo."
+VVE_Travelers.descriptionMaker.rules.rulesStrings[1]	episode(uses=1,tag=meme_Traveler)  ->Seguindo os preceitos de [deity0_name], viajamos felizes para longe dos nossos assentamentos, para ver tudo o que o nosso mundo tem a oferecer.
+VVE_Travelers.descriptionMaker.rules.rulesStrings[2]	intro(tag=meme_Traveler)           ->Os [memberNamePlural] estavam inquietos, porque [deity0_name] tinha ordenado que explorassem as terras ao redor, e eles estavam cansados de vagar vivendo do que a terra dava.
+VVE_Travelers.descriptionMaker.rules.rulesStrings[3]	conflict(tag=meme_Traveler)        ->Um dos anciões quis desafiar os mandamentos de [deity0_name] e fechar os assentamentos a novas explorações.
+VVE_Travelers.descriptionMaker.rules.rulesStrings[4]	founderJoin(tag=meme_Traveler)     ->[founderName], o Grande Explorador, cansou da insolência do ancião e usurpou o seu poder. Dali em diante, os [memberNamePlural] seriam os exploradores mais habilidosos da terra, aventurando-se cada vez mais longe.
+VVE_Travelers.descriptionMaker.rules.rulesStrings[5]	victory(tag=meme_Traveler)         ->Foi assim que nos apaixonamos pela vontade de viajar e percorremos o mundo inteiro, explorando até os seus confins mais distantes.
+VVE_Travelers.descriptionMaker.rules.rulesStrings[6]	setup(tag=meme_Traveler)           ->[founderName] era um explorador habilidoso. Ansiava por descobertas e viajava até os confins mais distantes do mundo.
+VVE_Travelers.descriptionMaker.rules.rulesStrings[7]	story(uses=1,tag=meme_Traveler)    ->Em busca da emoção da aventura, [founderName] reuniu um pequeno grupo de seguidores e fretou uma nave para viajar até a Orla. Suas descobertas viraram lenda, mapeando uma porção de mundos estranhos e novas civilizações, indo audaciosamente aonde... hã, desculpe, me empolguei um pouco.
+VVE_Travelers.descriptionMaker.rules.rulesStrings[8]	lessonIntro(tag=meme_Traveler)         ->Os humanos temem o desconhecido, é fato. Está mais do que claro que
+VVE_Travelers.descriptionMaker.rules.rulesStrings[9]	lesson(tag=meme_Traveler)              ->precisamos explorar o que nos cerca. Não saber o que está ao nosso redor é receita para o desastre
+VVE_Travelers.descriptionMaker.rules.rulesStrings[10]	lessonReinforcement(tag=meme_Traveler) ->Só os verdadeiros exploradores nunca são pegos de surpresa.
+VVE_Travelers.descriptionMaker.rules.rulesStrings[11]	archistBasis(tag=meme_Traveler)    ->Os arcotecs sabem sempre de tudo. Ignorar o que está ao redor é quase obsceno para eles.
+VVE_Travelers.descriptionMaker.rules.rulesStrings[12]	archistFact(tag=meme_Traveler)     ->Os arcotecs nos ensinam que explorar e viajar são um caminho para a transcendência.
+VVE_Travelers.descriptionMaker.rules.rulesStrings[13]	archistProphecy(tag=meme_Traveler) ->[inTheEnd], quem passar a vida inteira escondido não vai transcender, enquanto quem for tomado pela vontade de viajar vai se juntar aos arcotecs.
+VVE_Travelers.descriptionMaker.rules.rulesStrings[14]	animistBasis(tag=meme_Traveler)    ->Os espíritos governam tudo, dos conceitos mais abstratos aos mais concretos. Em especial, cada lugar tem o seu espírito, e por isso descobrir e viajar a todos esses lugares nos aproxima dos espíritos.
+VVE_Travelers.descriptionMaker.rules.rulesStrings[15]	animistFact(tag=meme_Traveler)     ->O espírito da vontade de viajar é poderoso e enche a pessoa de paixão pela liberdade e pela exploração: nunca se sabe o que a estrada vai trazer.
+VVE_Travelers.descriptionMaker.rules.rulesStrings[16]	animistProphecy(tag=meme_Traveler) ->[itIsSaid] só quem consegue viver sem raízes e vagar livre pode de fato agradar aos espíritos.
+VVE_Travelers.generalRules.rulesStrings[0]	memeAdjective->explorador
+VVE_Travelers.generalRules.rulesStrings[1]	memeAdjective->viajante
+VVE_Travelers.generalRules.rulesStrings[2]	memeAdjective->errante
+VVE_Travelers.generalRules.rulesStrings[3]	memeConcept->viagem
+VVE_Travelers.generalRules.rulesStrings[4]	memeLeaderNoun->explorador
+VVE_Travelers.generalRules.rulesStrings[5]	memeLeaderNoun->viajante
+VVE_Travelers.symbolPacks.0.adjective	viajante
+VVE_Travelers.symbolPacks.0.ideoName	Viajantes
+VVE_Travelers.symbolPacks.0.member	viajante
+VVE_Travelers.symbolPacks.0.theme	viagem
+VVE_Roadragers.label	fúria da estrada
+VVE_Roadragers.description	Para nós, a estrada é sagrada, e o domínio sobre veículos é ao mesmo tempo crença e prova do nosso poder. O ronco dos motores e o asfalto correndo sob os pneus são sagrados.
+VVE_Roadragers.descriptionMaker.rules.rulesStrings[0]	creation(tag=meme_Roadragers)        ->[deity0_name] só se importava com o ronco dos motores. Ordenou a todos os fiéis que caíssem na estrada.
+VVE_Roadragers.descriptionMaker.rules.rulesStrings[1]	episode(uses=1,tag=meme_Roadragers)  ->Falando aos seus fiéis, [deity0_name] disse: "Eu mesmo vou levar vocês pelos portões de Valhalla. Vocês vão rodar para sempre, brilhantes e cromados!".
+VVE_Roadragers.descriptionMaker.rules.rulesStrings[2]	intro(tag=meme_Roadragers)           ->[place_summary] [place_name] brilhava com o óleo de motor fresco pingado dos nossos veículos sagrados, prova da glória de [deity0_name].
+VVE_Roadragers.descriptionMaker.rules.rulesStrings[3]	conflict(tag=meme_Roadragers)        ->Um [foeLeader] raivoso, querendo pôr as mãos nos nossos carros, tentou atacar com a ajuda dos seus muitos [foeSoldiers].
+VVE_Roadragers.descriptionMaker.rules.rulesStrings[4]	founderJoin(tag=meme_Roadragers)     ->[deity0_name] deu ao nosso fundador, [founderName], o(a) [relic0_name], que ele usou para ungir e turbinar o motor V8 do seu carro de fúria da estrada feito sob medida, resistindo ao ataque.
+VVE_Roadragers.descriptionMaker.rules.rulesStrings[5]	victory(tag=meme_Roadragers)         ->O massacre foi sublime. [founderName] trucidou incontáveis inimigos, e comemoramos caindo na estrada montados em todos os nossos veículos.
+VVE_Roadragers.descriptionMaker.rules.rulesStrings[6]	setup(tag=meme_Roadragers)           ->[founderName] entendeu que o ronco de um motor é a única medida verdadeira de poder.
+VVE_Roadragers.descriptionMaker.rules.rulesStrings[7]	story(uses=1,tag=meme_Roadragers)    ->[founderName] sempre repetia a mesma lição: "Eu mesmo vou levar vocês pelos portões de Valhalla. Vocês vão rodar para sempre, brilhantes e cromados!".
+VVE_Roadragers.descriptionMaker.rules.rulesStrings[8]	lessonIntro(tag=meme_Roadragers)         ->Só pelo ronco dos nossos motores se chega ao prazer. Vocês precisam entender que
+VVE_Roadragers.descriptionMaker.rules.rulesStrings[9]	lesson(tag=meme_Roadragers)              ->eu sou o seu redentor. É pela minha mão que vocês vão se erguer das cinzas deste mundo
+VVE_Roadragers.descriptionMaker.rules.rulesStrings[10]	lessonReinforcement(tag=meme_Roadragers) ->Eu mesmo vou levar vocês pelos portões de Valhalla. Vocês vão rodar para sempre, brilhantes e cromados!
+VVE_Roadragers.descriptionMaker.rules.rulesStrings[11]	archistBasis(tag=meme_Roadragers)    ->Os arcotecs entendem que o poder não é só um meio para um fim. O poder é um fim em si mesmo.
+VVE_Roadragers.descriptionMaker.rules.rulesStrings[12]	archistFact(tag=meme_Roadragers)     ->Os arcotecs vão ficar maravilhados com o ronco poderoso dos nossos motores. É pela mão deles que vamos nos erguer das cinzas deste mundo.
+VVE_Roadragers.descriptionMaker.rules.rulesStrings[13]	archistProphecy(tag=meme_Roadragers) ->[inTheEnd], eles vão nos levar pelos portões de Valhalla. Vamos rodar para sempre, brilhantes e cromados!
+VVE_Roadragers.descriptionMaker.rules.rulesStrings[14]	animistBasis(tag=meme_Roadragers)    ->Os espíritos entendem que o poder não é só um meio para um fim. O poder é um fim em si mesmo.
+VVE_Roadragers.descriptionMaker.rules.rulesStrings[15]	animistFact(tag=meme_Roadragers)     ->É pela mão deles que vamos nos erguer das cinzas deste mundo.
+VVE_Roadragers.descriptionMaker.rules.rulesStrings[16]	animistProphecy(tag=meme_Roadragers) ->[itIsSaid] só quem fizer o ronco do motor se ouvir acima de tudo será levado pelos espíritos pelos portões de Valhalla. Vão rodar para sempre, brilhantes e cromados!
+VVE_Roadragers.generalRules.rulesStrings[0]	memeAdjective->enfurecido
+VVE_Roadragers.generalRules.rulesStrings[1]	memeAdjective->saqueador
+VVE_Roadragers.generalRules.rulesStrings[2]	memeAdjective->pós-apocalíptico
+VVE_Roadragers.generalRules.rulesStrings[3]	memeLeaderNoun->senhor da guerra
+VVE_Roadragers.generalRules.rulesStrings[4]	memeMoralist->sacerdote da octanagem
+VVE_Roadragers.generalRules.rulesStrings[5]	memeConcept->carros
+VVE_Roadragers.symbolPacks.0.adjective	enfurecido
+VVE_Roadragers.symbolPacks.0.ideoName	Fúria da Estrada
+VVE_Roadragers.symbolPacks.0.member	motoqueiro
+VVE_Roadragers.symbolPacks.0.theme	fúria da estrada
+## DefInjected/PreceptDef/Precepts_Acceleration.xml
+VVE_Acceleration_Standard.label	padrão
+VVE_Acceleration_Standard.description	Nossos veículos andam com equilíbrio, nem rápido nem devagar demais.
+VVE_Acceleration_SundayDriver.label	motorista de domingo
+VVE_Acceleration_SundayDriver.description	Um ritmo comedido mantém o mundo em equilíbrio e nos dá tempo para saborear a viagem.\n\n<color=#E5E54C>Efeito no jogo:</color>\n - Todos os veículos têm multiplicador de velocidade no mundo: x0,8
+VVE_Acceleration_High.label	alta
+VVE_Acceleration_High.description	Com aceleração rápida, avançamos aos saltos, aproveitando o dia com paixão.\n\n<color=#E5E54C>Efeito no jogo:</color>\n - Todos os veículos têm multiplicador de velocidade no mundo: x1,25
+## DefInjected/PreceptDef/Precepts_Driving.xml
+VVE_Driving_Forbidden.label	proibida
+VVE_Driving_Forbidden.description	Percorrer a terra em veículos viola nossas crenças mais profundas.
+VVE_Driving_Horrible.label	horrível
+VVE_Driving_Horrible.description	Entrar num veículo terrestre é uma ofensa profunda aos nossos valores.
+VVE_Driving_Horrible.comps.0.description	Dirigiu um veículo terrestre
+VVE_Driving_Allowed.label	permitida
+VVE_Driving_Allowed.description	Percorrer o mundo em veículos é uma prática aceita na nossa comunidade.
+VVE_Driving_Approved.label	aprovada
+VVE_Driving_Approved.description	Cada viagem por terra reafirma o nosso espírito e a nossa alegria em comum.
+VVE_Driving_Approved.comps.0.description	Dirigiu um veículo terrestre
+VVE_Driving_Required.label	obrigatória
+VVE_Driving_Required.description	Nosso povo acredita na necessidade do movimento: não dirigir é negligenciar o dever consigo mesmo.
+## DefInjected/PreceptDef/Precepts_Flying.xml
+VVE_Flying_Forbidden.label	proibido
+VVE_Flying_Forbidden.description	Voar pelos céus é uma afronta às nossas tradições e crenças.
+VVE_Flying_Horrible.label	horrível
+VVE_Flying_Horrible.description	Acreditamos que subir aos céus perturba o equilíbrio natural.
+VVE_Flying_Horrible.comps.0.description	Viajou num veículo aéreo
+VVE_Flying_Allowed.label	permitido
+VVE_Flying_Allowed.description	Os céus estão abertos para nós, como devem estar para todos que queiram atravessá-los.
+VVE_Flying_Approved.label	aprovado
+VVE_Flying_Approved.description	Acreditamos que voar nos aproxima, juntos, do divino.
+VVE_Flying_Approved.comps.0.description	Viajou num veículo aéreo
+VVE_Flying_Required.label	obrigatório
+VVE_Flying_Required.description	A pureza do espírito está entre as nuvens; é preciso sentir a liberdade do voo com frequência.
+## DefInjected/PreceptDef/Precepts_FuelEfficiency.xml
+VVE_FuelEfficiency_Standard.label	padrão
+VVE_FuelEfficiency_Standard.description	Nosso consumo de combustível continua o tradicional.
+VVE_FuelEfficiency_Inefficient.label	ineficiente
+VVE_FuelEfficiency_Inefficient.description	Nossos veículos têm mais apetite por combustível.\n\n<color=#E5E54C>Efeito no jogo:</color>\n - Este preceito aumenta em 50% o FuelConsumptionRate do veículo (se houver).
+VVE_FuelEfficiency_Efficient.label	eficiente
+VVE_FuelEfficiency_Efficient.description	Nossos veículos são otimizados para gastar o mínimo de combustível.\n\n<color=#E5E54C>Efeito no jogo:</color>\n - Este preceito reduz em 50% o FuelConsumptionRate do veículo (se houver).
+## DefInjected/PreceptDef/Precepts_ImpactDamage.xml
+VVE_ImpactDamage_High.label	alto
+VVE_ImpactDamage_High.description	Na nossa crença, o poder de um veículo se sente de verdade no seu impacto formidável.\n\n<color=#E5E54C>Efeito no jogo:</color>\n - O dano de atropelar pessoas é multiplicado ainda por x1,25
+## DefInjected/PreceptDef/Precepts_MaxSpeed.xml
+VVE_MaxSpeed_Increased.label	aumentada
+VVE_MaxSpeed_Increased.description	Valorizamos veículos que vão além dos limites tradicionais.\n\n<color=#E5E54C>Efeito no jogo:</color>\n -  A velocidade máxima dos veículos é multiplicada por x1,2.
+## DefInjected/PreceptDef/Precepts_Sailing.xml
+VVE_Sailing_Forbidden.label	proibida
+VVE_Sailing_Forbidden.description	As águas sagradas não devem ser perturbadas pelas nossas embarcações.
+VVE_Sailing_Horrible.label	horrível
+VVE_Sailing_Horrible.description	Consideramos as águas sagradas; navegar nelas parece profundamente errado.
+VVE_Sailing_Horrible.comps.0.description	Navegou num veículo marítimo
+VVE_Sailing_Allowed.label	permitida
+VVE_Sailing_Allowed.description	Oceanos e rios são caminhos que podemos percorrer, desde que respeitemos suas profundezas.
+VVE_Sailing_Approved.label	aprovada
+VVE_Sailing_Approved.description	Acreditamos que navegar nos aproxima, juntos, do divino.
+VVE_Sailing_Approved.comps.0.description	Navegou num veículo marítimo
+VVE_Sailing_Required.label	obrigatória
+VVE_Sailing_Required.description	Nossas almas estão entrelaçadas ao ritmo das águas; precisamos navegar para estar realmente vivos.
+## DefInjected/PreceptDef/Precepts_SmallSpaces.xml
+VVE_SmallSpaces_Horrible.label	horrível
+VVE_SmallSpaces_Horrible.description	Ficar em espaços apertados é uma afronta às nossas liberdades.\n\n<color=#E5E54C>Efeito no jogo:</color>\n - Dobra os pensamentos negativos sobre espaços pequenos. Pensamentos positivos sobre áreas amplas não mudam.
+## DefInjected/PreceptDef/Precepts_VehicleRepairs.xml
+VVE_VehicleRepairs_Standard.label	padrão
+VVE_VehicleRepairs_Standard.description	Nossa forma de consertar é equilibrada, garantindo que os veículos voltem ao estado certo.
+VVE_VehicleRepairs_Slow.label	lento
+VVE_VehicleRepairs_Slow.description	O conserto é um ritual cuidadoso, que não deve ser apressado, mas feito com reverência.
+VVE_VehicleRepairs_Fast.label	rápido
+VVE_VehicleRepairs_Fast.description	Consertamos com urgência, entendendo o papel vital dos veículos nas nossas vidas.\n\n<color=#E5E54C>Efeito no jogo:</color>\n - Adiciona +1 ao limite de personagens por conserto num veículo (desde que "Vários personagens por trabalho" esteja ativo nas opções do mod).
+## DefInjected/ResearchProjectDef/ResearchProjects_Various.xml
+VVE_BasicVehicles.label	veículos básicos
+VVE_BasicVehicles.description	Aprenda a construir veículos básicos e ineficientes, do buggy prowler aos tanques monoposto roadkill.
+VVE_BasicVehicles.generalRules.rulesStrings[0]	subject->os primeiros veículos
+VVE_BasicVehicles.generalRules.rulesStrings[1]	subject_story->começou a fazer veículos simples, como buggies e tanques monoposto
+VVE_BasicVehicles.generalRules.rulesStrings[2]	subject_story->mudou até onde podíamos ir e o que podíamos carregar
+VVE_BasicVehicles.generalRules.rulesStrings[3]	subject_story->tornou as viagens mais rápidas do que nunca
+VVE_BasicVehicles.generalRules.rulesStrings[4]	subject_gerund->inventando novas formas de se mover
+VVE_ComplexVehicles.label	veículos complexos
+VVE_ComplexVehicles.description	Aprenda a construir veículos complexos, como carroças, roadrunners e snatchers, com os componentes que vocês conseguem fabricar com facilidade.
+VVE_ComplexVehicles.generalRules.rulesStrings[0]	subject->veículos melhores
+VVE_ComplexVehicles.generalRules.rulesStrings[1]	subject_story->construiu veículos mais complexos, como carroças e carros rápidos
+VVE_ComplexVehicles.generalRules.rulesStrings[2]	subject_story->facilitou levar coisas e pessoas a longas distâncias
+VVE_ComplexVehicles.generalRules.rulesStrings[3]	subject_story->deixou os veículos mais úteis e versáteis
+VVE_ComplexVehicles.generalRules.rulesStrings[4]	subject_gerund->melhorando os nossos carros
+VVE_AerialVehicles.label	veículos aéreos
+VVE_AerialVehicles.description	Aprenda a construir veículos capazes de viajar acima do chão, como o helicóptero mosquito e o avião de carga smuggler.
+VVE_AerialVehicles.generalRules.rulesStrings[0]	subject->as máquinas voadoras
+VVE_AerialVehicles.generalRules.rulesStrings[1]	subject_story->criou helicópteros e aviões de carga para voar por cima dos obstáculos
+VVE_AerialVehicles.generalRules.rulesStrings[2]	subject_story->abriu novas formas de explorar e comerciar
+VVE_AerialVehicles.generalRules.rulesStrings[3]	subject_story->tornou possível viajar pelo ar, mudando como vemos o mundo
+VVE_AerialVehicles.generalRules.rulesStrings[4]	subject_gerund->subindo aos céus
+VVE_CombatVehicles.label	veículos de combate
+VVE_CombatVehicles.description	Aprenda a construir veículos de combate complexos, como tanques de batalha bulldog, transportes blindados de pessoal tango e aviões de combate warbird.
+VVE_CombatVehicles.generalRules.rulesStrings[0]	subject->os veículos de guerra
+VVE_CombatVehicles.generalRules.rulesStrings[1]	subject_story->fez veículos de combate poderosos, como tanques e aviões blindados
+VVE_CombatVehicles.generalRules.rulesStrings[2]	subject_story->fez os veículos passarem a lutar e defender nas guerras
+VVE_CombatVehicles.generalRules.rulesStrings[3]	subject_story->mudou o jeito de travar batalhas com essas novas máquinas
+VVE_CombatVehicles.generalRules.rulesStrings[4]	subject_gerund->construindo para a batalha
+## DefInjected/ResearchTabDef/ResearchTabs.xml
+Vehicles.label	Veículos
+## DefInjected/ThingCategoryDef/Items_Resource_CarParts.xml
+VVE_CarParts.label	peças de carro

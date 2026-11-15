@@ -1,0 +1,73 @@
+## DefInjected/AbilityDef/Abilities.xml
+VREStarjack_SpacejumpLegs.label	salto espacial
+VREStarjack_SpacejumpLegs.description	Impulsione-se até um ponto muito distante no vácuo do espaço.
+VREStarjack_SpacejumpLegs.verbProperties.label	saltar
+## DefInjected/GeneDef/GeneDefs_Abilities.xml
+VREStarjack_SpacejumpLegs.label	cauda de salto espacial
+VREStarjack_SpacejumpLegs.description	Portadores deste gene têm uma cauda muscular especializada que funciona como órgão de propulsão, permitindo se lançar a grandes distâncias no vácuo do espaço. Esta habilidade não pode ser usada em atmosferas.
+VREStarjack_SpacejumpLegs.symbolPack.prefixSymbols.0.symbol	salto
+VREStarjack_SpacejumpLegs.symbolPack.prefixSymbols.1.symbol	pulo
+VREStarjack_SpacejumpLegs.symbolPack.prefixSymbols.2.symbol	impulso
+VREStarjack_SpacejumpLegs.symbolPack.prefixSymbols.3.symbol	longo
+VREStarjack_SpacejumpLegs.symbolPack.prefixSymbols.4.symbol	voo
+VREStarjack_SpacejumpLegs.symbolPack.prefixSymbols.5.symbol	pinote
+VREStarjack_SpacejumpLegs.symbolPack.wholeNameSymbols.0.symbol	saltador
+VREStarjack_SpacejumpLegs.symbolPack.wholeNameSymbols.1.symbol	pulador
+VREStarjack_SpacejumpLegs.symbolPack.wholeNameSymbols.2.symbol	quicador
+## DefInjected/GeneDef/GeneDefs_Health.xml
+VREStarjack_VacuumResistance_Total.label	imune ao vácuo
+VREStarjack_VacuumResistance_Total.description	Portadores deste gene têm sistemas circulatório e respiratório mais resistentes, o que reduz a velocidade com que a hipóxia se acumula no vácuo do espaço.
+VREStarjack_VacuumResistance_Total.labelShortAdj	imune ao vácuo
+VREStarjack_Cryostasis.label	criostase
+VREStarjack_Cryostasis.description	Portadores deste gene não sofrem hipotermia fatal. Em vez disso, o corpo desacelera aos poucos e entra em dormência quando exposto a frio extremo, e eles acordam com segurança quando aquecidos.
+VREStarjack_OxygenSensitivity_Mild.label	sensibilidade leve ao oxigênio
+VREStarjack_OxygenSensitivity_Mild.description	Portadores deste gene têm leve aversão a ambientes ricos em oxigênio. Em atmosfera respirável, sentem um pequeno esforço respiratório e neurológico, com um leve desconforto a cada respiração.
+VREStarjack_OxygenSensitivity_Intense.label	sensibilidade intensa ao oxigênio
+VREStarjack_OxygenSensitivity_Intense.description	Portadores deste gene sofrem desconforto severo e redução das funções do corpo em ambientes oxigenados. Respirar ar respirável causa dor, fraqueza e respiração difícil, o que torna a sobrevivência em planetas complicada.
+VREStarjack_OxygenSensitivity_Extreme.label	sensibilidade extrema ao oxigênio
+VREStarjack_OxygenSensitivity_Extreme.description	Portadores deste gene não sobrevivem em ambientes ricos em oxigênio. A exposição a atmosferas respiráveis causa falência pulmonar rápida e, por fim, a morte. Só o vácuo do espaço ou ambientes de gravinave com pouco oxigênio conseguem mantê-los vivos.
+VREStarjack_VacuumEfficiency.label	eficiência no vácuo
+VREStarjack_VacuumEfficiency.description	Portadores deste gene prosperam no espaço. O corpo é muito adaptado a condições sem atmosfera, o que permite trabalhar mais rápido e melhor fora de ambientes planetários. Porém, funcionam mal em superfícies terrestres.
+VREStarjack_VacuumEfficiency.labelShortAdj	eficiente no vácuo
+## DefInjected/GeneDef/GeneDefs_Misc.xml
+VREStarjack_GravshipAffinity.label	afinidade com gravinaves
+VREStarjack_GravshipAffinity.description	Portadores deste gene são naturalmente aptos à vida a bordo de gravinaves. A genética melhora sua coordenação, percepção e aptidão técnica em gravidade zero, o que os torna pilotos e tripulantes excepcionais.
+## DefInjected/GeneDef/GeneDefs_Randomizer.xml
+VREStarjack_Gene_Randomizer.label	aleatorizador
+VREStarjack_Gene_Randomizer.description	Quando um personagem recebe este gene, ele se transforma em 2 astrogenes aleatórios.
+## DefInjected/HediffDef/Hediffs_Temperature.xml
+VREStarjack_CryostasisHediff.label	criostase
+VREStarjack_CryostasisHediff.description	Esta pessoa não sofre hipotermia fatal. Em vez disso, o corpo desacelera aos poucos e entra em dormência quando exposto a frio extremo, e ela acorda com segurança quando aquecida.
+VREStarjack_CryostasisHediff.stages.shivering.label	tremendo
+VREStarjack_CryostasisHediff.stages.initial.label	inicial
+VREStarjack_CryostasisHediff.stages.drowsy.label	sonolento
+VREStarjack_CryostasisHediff.stages.sleep.label	adormecido
+VREStarjack_CryostasisHediff.stages.deep_sleep.label	sono profundo
+## DefInjected/HediffDef/Hediffs_Vacuum.xml
+VREStarjack_OxygenSensitivity_Mild.label	sensibilidade leve ao oxigênio
+VREStarjack_OxygenSensitivity_Mild.description	Esta pessoa tem leve aversão a ambientes ricos em oxigênio. Em atmosfera respirável, sente um pequeno esforço respiratório e neurológico, com um leve desconforto a cada respiração.
+VREStarjack_OxygenSensitivity_Intense.label	sensibilidade intensa ao oxigênio
+VREStarjack_OxygenSensitivity_Intense.description	Esta pessoa sofre desconforto severo e redução das funções do corpo em ambientes oxigenados. Respirar ar respirável causa dor, fraqueza e respiração difícil, o que torna a sobrevivência em planetas complicada.
+VREStarjack_OxygenSensitivity_Extreme.label	sensibilidade extrema ao oxigênio
+VREStarjack_OxygenSensitivity_Extreme.description	Esta pessoa não sobrevive em ambientes ricos em oxigênio. A exposição a atmosferas respiráveis causa falência pulmonar rápida e, por fim, a morte. Só o vácuo do espaço ou ambientes de gravinave com pouco oxigênio conseguem mantê-la viva.
+VREStarjack_Hyperoxia.label	hiperóxia
+VREStarjack_Hyperoxia.description	Esta criatura sofre de intoxicação por oxigênio causada pela exposição a uma atmosfera respirável. Os pulmões não toleram tanto oxigênio. Vai morrer em breve se não for levada a um ambiente com pouco oxigênio ou ao vácuo.
+VREStarjack_Hyperoxia.stages.initial-0.label	inicial
+VREStarjack_Hyperoxia.stages.initial-1.label	inicial
+VREStarjack_Hyperoxia.stages.mild.label	leve
+VREStarjack_Hyperoxia.stages.moderate.label	moderada
+VREStarjack_Hyperoxia.stages.extreme.label	extrema
+## DefInjected/ThoughtDef/Thoughts_Situation_Special.xml
+VREStarjack_OxygenSensitivity_Mild.stages.oxygen_sensitivity.label	sensibilidade ao oxigênio
+VREStarjack_OxygenSensitivity_Mild.stages.oxygen_sensitivity.description	O ar arranha meus pulmões. Cada respiração arde um pouco mais que a anterior.
+VREStarjack_OxygenSensitivity_Intense.stages.oxygen_sensitivity.label	sensibilidade ao oxigênio
+VREStarjack_OxygenSensitivity_Intense.stages.oxygen_sensitivity.description	O oxigênio queima meus pulmões. Cada respiração parece inalar fogo.
+VREStarjack_OxygenSensitivity_Extreme.stages.oxygen_sensitivity.label	sensibilidade ao oxigênio
+VREStarjack_OxygenSensitivity_Extreme.stages.oxygen_sensitivity.description	Não consigo respirar. O ar está me rasgando por dentro.
+## Keyed/Keys.xml
+VRE_Astrogenes	Astrogenes
+VRE_AstrogenesDesc	Astrogenes são mutações genéticas especiais que só ficam ativas em órbita. Não contam para a complexidade nem para o metabolismo do portador, mas não têm efeito na superfície de um planeta.
+VRE_AbilityOnlyInSpace	Esta habilidade só pode ser usada em órbita
+VRE_StarjackGenes	Número de genes Starjack:
+VRE_StarjackGenesDesc	Por padrão, os Starjacks surgem com 2 astrogenes. Aqui você pode fazê-los surgir com 0 a 5 astrogenes. Isso não afeta os Starjacks que já existem!
+VREStarjack_Reset	Redefinir

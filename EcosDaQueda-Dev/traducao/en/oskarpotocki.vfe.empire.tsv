@@ -1,0 +1,957 @@
+## DefInjected/AbilityDef/Abilities.xml
+VFEE_RoyalAddress.label	royal address
+VFEE_RoyalAddress.description	is giving a royal address from the throne.If all goes well, every titled participant will gain a small amount of honor, and they will gain honor for each titled participant. If it goes poorly, the speech will do social damage and will lose honor for each titled participant. The outcome depends on their social abilities. Imperial nobility currently residing in the area will join the speech and count as titled participants.
+VFEE_BestowFreeholder.label	bestow: Freeholder
+VFEE_BestowFreeholder.description	Bestows the Freeholder title on a selected pawn. That pawn receives 1 Honor. Can’t be cast on a pawn that’s already a Freeholder or higher. Has a 3 day cooldown.
+VFEE_BestowYeoman.label	bestow: Yeoman
+VFEE_BestowYeoman.description	Bestows the Yeoman title on a selected pawn. That pawn now has 7 honor. Can’t be cast on a pawn that’s already a Yeoman or higher. Has a 3 day cooldown.
+VFEE_BestowAcolyte.label	bestow: Acolyte
+VFEE_BestowAcolyte.description	Bestows the Acolyte title on a selected pawn. That pawn now has 13 honor. Can’t be cast on a pawn that’s already a Acolyte or higher. Has a 3 day cooldown.
+VFEE_BestowKnight.label	bestow: Knight
+VFEE_BestowKnight.description	Bestows the Knight/Dame title on a selected pawn. That pawn now has 21 honor. Can’t be cast on a pawn that’s already a Knight/Dame or higher. Has a 3 day cooldown.
+VFEE_BestowPraetor.label	bestow: Praetor
+VFEE_BestowPraetor.description	Bestows the Praetor title on a selected pawn. That pawn now has 31 honor. Can’t be cast on a pawn that’s already a Praetor or higher. Has a 3 day cooldown.
+VFEE_BestowBaron.label	bestow: Baron
+VFEE_BestowBaron.description	Bestows the Baron/Baroness title on a selected pawn. That pawn now has 45 honor. Can’t be cast on a pawn that’s already a Baron/Baroness or higher. Has a 3 day cooldown.
+VFEE_BestowCount.label	bestow: Count
+VFEE_BestowCount.description	Bestows the Count/Countess title on a selected pawn. That pawn now has 45 honor. Can’t be cast on a pawn that’s already a Count/Countess or higher. Has a 3 day cooldown.
+## DefInjected/DamageDef/Damages_MeleeWeapon.xml
+VFEE_CutToxblade.label	cut
+VFEE_CutToxblade.deathMessage	{0} has been cut to death.
+VFEE_StabToxblade.label	stab
+VFEE_StabToxblade.deathMessage	{0} has been stabbed to death.
+## DefInjected/DamageDef/Damages_Ranged.xml
+VFEE_Fletcher.label	fletcher dart
+VFEE_Fletcher.deathMessage	{0} has been shot to death.
+## DefInjected/ExpectationDef/Expectations.xml
+VFEE_Stellar.label	stellar
+## DefInjected/FactionDef/Factions_Hidden.xml
+VFEE_Deserters.label	deserters
+VFEE_Deserters.description	An organised group of imperial deserters who decided to actively disrupt the organisation of the Empire.
+VFEE_Deserters.fixedName	Deserters
+VFEE_Deserters.leaderTitle	leader
+VFEE_Deserters.messageDefendersAttacking	{0} from {1} are attacking your {2}.
+VFEE_Deserters.pawnSingular	deserter
+VFEE_Deserters.pawnsPlural	deserters
+## DefInjected/FactionDef/Factions_Player.xml
+VFEE_NewFamily.label	New Family
+VFEE_NewFamily.description	A colony of a royal family.
+VFEE_NewFamily.leaderTitle	leader
+VFEE_NewFamily.messageDefendersAttacking	{0} from {1} are attacking your {2}.
+VFEE_NewFamily.pawnSingular	imperial
+VFEE_NewFamily.pawnsPlural	imperials
+## DefInjected/HediffDef/Aperitif.xml
+VFEE_IngestedAperitif.label	ingested aperitif
+VFEE_IngestedAperitif.description	Infection and poison protection in the stomach, as well as an ability to consume additional meals for a higher mood buff.
+VFEE_IngestedAperitif.labelNoun	an aperitif ingestion
+## DefInjected/HediffDef/Hediffs_Global_Misc.xml
+VFEE_AcidifierFletcher.label	acidifier
+VFEE_AcidifierFletcher.description	Acidifier mixture injected into veins through a fletcher dart. Causes extreme pain and nearly instant death through internal acid burns.
+VFEE_AcidifierToxblade.label	acidifier
+VFEE_AcidifierToxblade.description	Acidifier mixture injected into veins through a fletcher dart. Causes extreme pain and nearly instant death through internal acid burns.
+VFEE_CourtStimulant.label	court stimulant
+VFEE_CourtStimulant.description	A stimulant the Imperial nobility take to stay sharp through a long ceremony. Until they leave the ceremony, they need no sleep.
+## DefInjected/HistoryEventDef/HistoryEventDefs.xml
+VFEE_ChoseEmpire.label	joined empire
+## DefInjected/IncidentDef/Incidents_World_Quests.xml
+VFEE_GiveQuest_EndGame_Stellarch.label	stellarch ascent
+## DefInjected/InteractionDef/Interactions_Social.xml
+VFEE_RoyalGossip.label	royal gossip
+VFEE_RoyalGossip.logRulesInitiator.rulesStrings[0]	r_logentry->[INITIATOR_nameDef] and [RECIPIENT_nameDef] [talkedabout] [THIRDPARTY_nameDef].
+VFEE_RoyalGossip.logRulesInitiator.rulesStrings[1]	r_logentry->[INITIATOR_nameDef] [talkedabout] [THIRDPARTY_nameDef] with [RECIPIENT_nameDef].
+VFEE_RoyalGossip.logRulesInitiator.rulesStrings[2]	talkedabout(p=4)->chatted about
+VFEE_RoyalGossip.logRulesInitiator.rulesStrings[3]	talkedabout->shared a word about
+VFEE_RoyalGossip.logRulesInitiator.rulesStrings[4]	talkedabout->spoke about
+VFEE_RoyalGossip.logRulesInitiator.rulesStrings[5]	talkedabout->gabbed about
+VFEE_RoyalGossip.logRulesInitiator.rulesStrings[6]	talkedabout->talked about
+VFEE_RoyalGossip.logRulesInitiator.rulesStrings[7]	talkedabout->joked about
+VFEE_RoyalGossip.logRulesInitiator.rulesStrings[8]	talkedabout->quipped about
+## DefInjected/JobDef/Jobs_Misc.xml
+VFEE_DefuseBomb.reportString	defusing TargetA.
+VFEE_PlaceBomb.reportString	placing bomb
+VFEE_PoisonMeal.reportString	poisoning TargetA
+VFEE_DiscardMeal.reportString	discarding TargetA
+## DefInjected/JobDef/Jobs_Ritual.xml
+VFEE_WaltzGoTo.reportString	dancing with TargetA.
+VFEE_WaltzDip.reportString	dancing with TargetB.
+VFEE_WaltzGoToStart.reportString	going to my position.
+VFEE_WaltzWait.reportString	dancing with TargetA.
+VFEE_WaltzDipped.reportString	dancing with TargetA.
+VFEE_ArtPresent.reportString	Presenting TargetB.
+VFEE_ArtStandBy.reportString	waiting.
+VFEE_ArtSpectate.reportString	Spectating TargetB.
+VFEE_GiveHonor.reportString	Honoring TargetB.
+VFEE_ParadeGuardGoto.reportString	Guarding.
+## DefInjected/JoyKindDef/Misc.xml
+VFEE_Research.label	researching
+## DefInjected/MainButtonDef/Misc.xml
+VFEE_Royalty.label	royalty
+## DefInjected/PawnKindDef/PawnKinds_Deserter.xml
+VFEE_Deserter.label	deserter
+## DefInjected/PawnKindDef/PawnKinds_Empire.xml
+VFEE_Empire_Royal_Archcount.label	archcount
+VFEE_Empire_Royal_Archcount.labelFemale	archcountess
+VFEE_Empire_Royal_Marquess.label	marquess
+VFEE_Empire_Royal_Marquess.labelFemale	marchioness
+VFEE_Empire_Royal_Archduke.label	archduke
+VFEE_Empire_Royal_Archduke.labelFemale	archduchess
+VFEE_Empire_Royal_Magister.label	magister
+VFEE_Empire_Royal_Despot.label	despot
+VFEE_Empire_Royal_HighStellarch.label	high stellarch
+VFEE_Empire_Royal_Emperor.label	emperor
+VFEE_Empire_Fighter_Absolver.label	absolver
+VFEE_Empire_Royal_Techfriar.label	techfriar
+## DefInjected/PreceptDef/BestowHonor.xml
+VFEE_BestowHonor.label	bestow honor
+VFEE_BestowHonor.description	Bestows honors upon a worthy pawn
+## DefInjected/PreceptDef/BestowTitle.xml
+VFEE_BestowTitle.label	bestow title
+VFEE_BestowTitle.description	Bestows a royal title to a worthy pawn
+## DefInjected/PreceptDef/Parade.xml
+VFEE_ParadePrecept.label	Parade
+VFEE_ParadePrecept.description	A traditional ascension parade to send off the stellarch!
+## DefInjected/PreceptDef/RoyalAddress.xml
+VFEE_RoyalAddress.label	royal address
+VFEE_RoyalAddress.description	Initiate a royal address from the throne. {ORGANIZER_labelShort} is giving a royal address from the throne.If all goes well, every titled participant will gain a small amount of honor, and {ORGANIZER_labelShort} will gain honor for each titled participant. If it goes poorly, the speech will do social damage and {ORGANIZER_labelShort} will lose honor for each titled participant. The outcome depends on {ORGANIZER_labelShort}'s social abilities. Imperial nobility currently residing in the area will join the speech and count as titled participants.
+## DefInjected/QuestScriptDef/Permit_CallTechfriar.xml
+VFEE_Permit_CallTechfriar.questDescriptionAndNameRules.rulesStrings[0]	questName->Techfriar
+VFEE_Permit_CallTechfriar.questDescriptionAndNameRules.rulesStrings[1]	questDescription->
+VFEE_Permit_CallTechfriar.root.nodes.Letter.label.slateRef	Techfriar arrived
+VFEE_Permit_CallTechfriar.root.nodes.Letter.text.slateRef	The techfriar from [permitFaction_name] have arrived. A shuttle will come to collect them in [techfriarDurationDays] days.
+VFEE_Permit_CallTechfriar.root.nodes.ShuttleDelay.node.nodes.InspectString.inspectString.slateRef	Should depart on shuttle
+VFEE_Permit_CallTechfriar.root.nodes.ShuttleDelay.node.nodes.Letter.label.slateRef	Shuttle arrived
+VFEE_Permit_CallTechfriar.root.nodes.ShuttleDelay.node.nodes.Letter.text.slateRef	A shuttle has arrived to collect the techfriar from [permitFaction_name].
+VFEE_Permit_CallTechfriar.root.nodes.techfriarDestroyed.node.nodes.Letter.label.slateRef	Laborer died: {SUBJECT_definite}
+VFEE_Permit_CallTechfriar.root.nodes.techfriarDestroyed.node.nodes.Letter.text.slateRef	A laborer sent to you by [permitFaction_name] has died. Your goodwill with [permitFaction_name] has fallen by [goodwillPenaltyPawn].
+## DefInjected/QuestScriptDef/Script_Absolver.xml
+VFEE_Permit_CallAbsolver.questDescriptionAndNameRules.rulesStrings[0]	questName->Absolver
+VFEE_Permit_CallAbsolver.questDescriptionAndNameRules.rulesStrings[1]	questDescription->
+VFEE_Permit_CallAbsolver.root.nodes.Letter.label.slateRef	Absolver arrived
+VFEE_Permit_CallAbsolver.root.nodes.Letter.text.slateRef	The absolver from [permitFaction_name] have arrived. A shuttle will come to collect them in [absolverDurationDays] days.
+VFEE_Permit_CallAbsolver.root.nodes.ShuttleDelay.node.nodes.InspectString.inspectString.slateRef	Should depart on shuttle
+VFEE_Permit_CallAbsolver.root.nodes.ShuttleDelay.node.nodes.Letter.label.slateRef	Shuttle arrived
+VFEE_Permit_CallAbsolver.root.nodes.ShuttleDelay.node.nodes.Letter.text.slateRef	A shuttle has arrived to collect the absolver from [permitFaction_name].
+VFEE_Permit_CallAbsolver.root.nodes.absolverDestroyed.node.nodes.Letter.label.slateRef	Absolver died: {SUBJECT_definite}
+VFEE_Permit_CallAbsolver.root.nodes.absolverDestroyed.node.nodes.Letter.text.slateRef	An absolver sent to you by [permitFaction_name] has died. A replacement has been issued
+## DefInjected/QuestScriptDef/Script_ArtExhibit.xml
+VFEE_ArtExhibit.questContentRules.rulesStrings[0]	decidedToLeave->Your guests are leaving immediately, and will not remember this event fondly!
+VFEE_ArtExhibit.questContentRules.rulesStrings[1]	oneOfThe->one of the nobles you invited to the art exhibit
+VFEE_ArtExhibit.questContentRules.rulesStrings[2]	questOver->The quest '[resolvedQuestName]' is over.
+VFEE_ArtExhibit.questContentRules.rulesStrings[3]	CeremonyFailedLetterLabel->Art exhibit failed
+VFEE_ArtExhibit.questContentRules.rulesStrings[4]	CeremonyFailedLetterText->[asker_nameFull] is disappointed by your failure to make for an enjoyable exhibit. [asker_pronoun] is leaving with [asker_possessive] guests.
+VFEE_ArtExhibit.questContentRules.rulesStrings[5]	CeremonyTimeoutLetterLabel->Art exhibit failed
+VFEE_ArtExhibit.questContentRules.rulesStrings[6]	CeremonyTimeoutLetterText->[asker_nameFull] has grown tired of waiting for you to start the exhibit. [asker_pronoun] is leaving with [asker_possessive] guests.
+VFEE_ArtExhibit.questContentRules.rulesStrings[7]	letterIntroArrested->You arrested {SUBJECT_definite}, [oneOfThe].
+VFEE_ArtExhibit.questContentRules.rulesStrings[8]	lodgerArrestedLeaveMapLetterLabel->[lodgersLabel] arrested: Departure
+VFEE_ArtExhibit.questContentRules.rulesStrings[9]	lodgerArrestedLeaveMapLetterText->[letterIntroArrested]\n\n[decidedToLeave]
+VFEE_ArtExhibit.questContentRules.rulesStrings[10]	letterIntroDeath->{SUBJECT_definite}, [oneOfThe], has died.
+VFEE_ArtExhibit.questContentRules.rulesStrings[11]	lodgerDiedLeaveMapLetterLabel->[lodgersLabel] died: Departure
+VFEE_ArtExhibit.questContentRules.rulesStrings[12]	lodgerDiedLeaveMapLetterText->[letterIntroDeath]\n\n[decidedToLeave]
+VFEE_ArtExhibit.questContentRules.rulesStrings[13]	letterIntroViolated->{SUBJECT_definite}, [oneOfThe], was violated by surgery.
+VFEE_ArtExhibit.questContentRules.rulesStrings[14]	lodgerSurgeryVioLeaveMapLetterLabel->[lodgersLabel] violated: Departure
+VFEE_ArtExhibit.questContentRules.rulesStrings[15]	lodgerSurgeryVioLeaveMapLetterText->[letterIntroViolated]\n\n[decidedToLeave]
+VFEE_ArtExhibit.questContentRules.rulesStrings[16]	letterIntroKidnapped->{SUBJECT_definite}, [oneOfThe], was kidnapped.
+VFEE_ArtExhibit.questContentRules.rulesStrings[17]	lodgerKidnappedLeaveMapLetterLabel->[lodgersLabel] kidnapped: Departure
+VFEE_ArtExhibit.questContentRules.rulesStrings[18]	lodgerKidnappedLeaveMapLetterText->[letterIntroKidnapped]\n\n[decidedToLeave]
+VFEE_ArtExhibit.questContentRules.rulesStrings[19]	letterIntroBanished->{SUBJECT_definite}, [oneOfThe], was banished.
+VFEE_ArtExhibit.questContentRules.rulesStrings[20]	lodgerBanishedLeaveMapLetterLabel->[lodgersLabel] banished: Departure
+VFEE_ArtExhibit.questContentRules.rulesStrings[21]	lodgerBanishedLeaveMapLetterText->[letterIntroBanished]\n\n[decidedToLeave]
+VFEE_ArtExhibit.questContentRules.rulesStrings[22]	letterIntroPsychicRitualTarget->{SUBJECT_definite}, [oneOfThe], was the target of a psychic ritual.
+VFEE_ArtExhibit.questContentRules.rulesStrings[23]	lodgerPsychicRitualTargetLabel->[lodgersLabel] violated: Departure
+VFEE_ArtExhibit.questContentRules.rulesStrings[24]	lodgerPsychicRitualTargetText->[letterIntroPsychicRitualTarget]\n\n[decidedToLeave]
+VFEE_ArtExhibit.questContentRules.rulesStrings[25]	ShuttleDestroyedIntro->The shuttle has been destroyed.
+VFEE_ArtExhibit.questContentRules.rulesStrings[26]	ShuttleDestroyedLabel->Shuttle destroyed: Art exhibit cancelled
+VFEE_ArtExhibit.questContentRules.rulesStrings[27]	ShuttleDestroyedText->[ShuttleDestroyedIntro]\n\n[decidedToLeave]
+VFEE_ArtExhibit.questContentRules.rulesStrings[28]	raidArrivedLetterLabel->Deserter assassination attempt
+VFEE_ArtExhibit.questContentRules.rulesStrings[29]	raidArrivedLetterText->A group of deserters have arrived to attempt to disrupt the art exhibit and assassinate the royals.\n\n[asker_nameFull] does not care for the threat and demands the exhibit continues! [asker_pronoun] wants you to keep them safe and deal with the "peasants".
+VFEE_ArtExhibit.questContentRules.rulesStrings[30]	ArtExhibitSuccessLetterLabel->Exhibit success
+VFEE_ArtExhibit.questContentRules.rulesStrings[31]	ArtExhibitSuccessLetterText->The shuttle has departed with [asker_nameFull] and [asker_possessive] guests. Overall the event was a success and everyone made it back safe.
+VFEE_ArtExhibit.questDescriptionAndNameRules.rulesStrings[0]	lodgersLabel->noble
+VFEE_ArtExhibit.questDescriptionAndNameRules.rulesStrings[1]	lodgersLabelPlural->nobles
+VFEE_ArtExhibit.questDescriptionAndNameRules.rulesStrings[2]	lodgersDef(nobleCount==1)->[lodgers0_nameDef]
+VFEE_ArtExhibit.questDescriptionAndNameRules.rulesStrings[3]	lodgersDef(nobleCount>=2)->the [lodgersLabelPlural]
+VFEE_ArtExhibit.questDescriptionAndNameRules.rulesStrings[4]	joinerEnding->You'll be able to direct [lodgersDef] the same way you direct your own colonists.[specialNeedsExplanation]
+VFEE_ArtExhibit.questDescriptionAndNameRules.rulesStrings[5]	theirHisHer(nobleCount==1)->[lodgers0_possessive]
+VFEE_ArtExhibit.questDescriptionAndNameRules.rulesStrings[6]	theirHisHer(nobleCount>=2)->their
+VFEE_ArtExhibit.questDescriptionAndNameRules.rulesStrings[7]	lodgersPronoun(nobleCount==1)->[lodgers0_pronoun]
+VFEE_ArtExhibit.questDescriptionAndNameRules.rulesStrings[8]	lodgersPronoun(nobleCount>=2)->they
+VFEE_ArtExhibit.questDescriptionAndNameRules.rulesStrings[9]	lodgersWasWere(nobleCount==1)->was
+VFEE_ArtExhibit.questDescriptionAndNameRules.rulesStrings[10]	lodgersWasWere(nobleCount>=2)->were
+VFEE_ArtExhibit.questDescriptionAndNameRules.rulesStrings[11]	appreciateAppreciates(nobleCount==1)->appreciates
+VFEE_ArtExhibit.questDescriptionAndNameRules.rulesStrings[12]	appreciateAppreciates(nobleCount>=2)->appreciate
+VFEE_ArtExhibit.questDescriptionAndNameRules.rulesStrings[13]	questDescription->[asker_nameFull], a [asker_royalTitleInCurrentFaction] of [asker_faction_name], would like to come over with a few other noble people and gaze upon the works of art in your gallery. [asker_pronoun] requests [colonyHost_nameFull] hosts the occasion. This is a great opportunity for noble gossip and to build relations with other members of the imperial nobility.\n\nYou are required to have a gallery present in your colony. If at any point the gallery is destroyed, the art exhibition will be called off.\n\n[asker_nameFull] has forwarded you a list of nobility that was invited to the exhibit and will arrive in the shuttle:\n\n[noblesDetailList]\n\nYou will need to make sure the guests are safe and comfortable during the exhibition. If anything happens to any of the guests, the art exhibition will be cancelled.\n\nDeserters might use this opportunity to launch an assassination attempt.\n\n\n   
+VFEE_ArtExhibit.questNameRules.rulesStrings[0]	questName->[lodgerIndef] desires an Art Exhibit
+VFEE_ArtExhibit.questNameRules.rulesStrings[1]	lodgerIndef->a royal
+VFEE_ArtExhibit.questNameRules.rulesStrings[2]	lodgerIndef->a noble
+## DefInjected/QuestScriptDef/Script_DelayedRitualOutcome.xml
+VFEE_DelayedGrandBallOutcome.questContentRules.rulesStrings[0]	rewardLetterLabel->Noble's gift
+VFEE_DelayedGrandBallOutcome.questContentRules.rulesStrings[1]	rewardLetterText->[rewardGiver_nameDef] has contacted you. [rewardDelayTicks_duration] ago, you hosted a [outcome] grand ball for [rewardGiver_objective].\n\nSince then, [rewardGiver_pronoun] has gotten back home safe, and is so appreciative that [rewardGiver_pronoun] wants to give you a personal gift. [rewardGiver_pronoun] is sending you the following via drop pod:\n\n[listOfRewards]
+VFEE_DelayedGrandBallOutcome.questDescriptionAndNameRules.rulesStrings[0]	questDescription->A delayed reward for hosting the grand ball.
+VFEE_DelayedGrandBallOutcome.questNameRules.rulesStrings[0]	questName->Grand ball delayed reward
+VFEE_DelayedArtExhibitOutcome.questContentRules.rulesStrings[0]	rewardLetterLabel->Noble's gift
+VFEE_DelayedArtExhibitOutcome.questContentRules.rulesStrings[1]	rewardLetterText->[rewardGiver_nameDef] has contacted you. [rewardDelayTicks_duration] ago, you hosted a [outcome] art exhibit for [rewardGiver_objective].\n\nSince then, [rewardGiver_pronoun] has gotten back home safe, and is so appreciative that [rewardGiver_pronoun] wants to give you a personal gift. [rewardGiver_pronoun] is sending you the following via drop pod:\n\n[listOfRewards]
+VFEE_DelayedArtExhibitOutcome.questDescriptionAndNameRules.rulesStrings[0]	questDescription->A delayed reward for hosting the art exhibit.
+VFEE_DelayedArtExhibitOutcome.questNameRules.rulesStrings[0]	questName->Art Exhibit delayed reward
+## DefInjected/QuestScriptDef/Script_DeserterHideout.xml
+VFEE_DeserterHideout.questDescriptionRules.rulesStrings[0]	questDescription-> [asker_nameFull], a [asker_royalTitleInCurrentFaction] of the [asker_faction_name] has informed us about a deserter hideout near [colonyName].\n\nDeserters are a group of ex-imperial soldiers and nobility who have decided to split away from the Great Hierarchy and adapt to the new, post-shattering life. They are considered public enemy number one.\n\nApparently, [siteFaction_pawnsPlural] have been raiding imperial convoys.\n\n[asker_nameDef] is planning an aerial assault on the hideout, which is guarded by [enemiesCount] [enemiesLabel]. [asker_pronoun] wants you to provide [requiredPawnCount] soldiers to carry out the attack.\n\n[asker_pronoun] will send a shuttle to pick up your fighters, bring them to the attack site, and take them home afterward. They will be fed and medically tended en-route.\n\nOnce the attack begins, you must defeat all enemies and turrets within [timeoutTime_duration].\n\n[asker_nameDef] will send [alliesCount] of their personal guards and place them under your command. [asker_pronoun] will not be unhappy if they are killed.\n  
+VFEE_DeserterHideout.questNameRules.rulesStrings[0]	questName->The [bandit] [camp]
+VFEE_DeserterHideout.questNameRules.rulesStrings[1]	questName->[bandit] [camp]
+VFEE_DeserterHideout.questNameRules.rulesStrings[2]	questName->[asker_nameDef] and the [camp]
+VFEE_DeserterHideout.questNameRules.rulesStrings[3]	camp->Camp
+VFEE_DeserterHideout.questNameRules.rulesStrings[4]	camp->Outpost
+VFEE_DeserterHideout.questNameRules.rulesStrings[5]	camp->Lair
+VFEE_DeserterHideout.questNameRules.rulesStrings[6]	camp->Encampment
+VFEE_DeserterHideout.questNameRules.rulesStrings[7]	bandit->Bandit
+VFEE_DeserterHideout.questNameRules.rulesStrings[8]	bandit->Raider
+VFEE_DeserterHideout.questNameRules.rulesStrings[9]	bandit->Outlaw
+VFEE_DeserterHideout.questNameRules.rulesStrings[10]	bandit->Desperado
+VFEE_DeserterHideout.questNameRules.rulesStrings[11]	bandit->Fugitive
+VFEE_DeserterHideout.questNameRules.rulesStrings[12]	bandit->Marauder
+VFEE_DeserterHideout.questNameRules.rulesStrings[13]	bandit->Robber
+VFEE_DeserterHideout.questNameRules.rulesStrings[14]	bandit->Brigand
+## DefInjected/QuestScriptDef/Script_GrandBall.xml
+VFEE_GrandBall.questContentRules.rulesStrings[0]	lastOrNot(nobleCount==1)->
+VFEE_GrandBall.questContentRules.rulesStrings[1]	lastOrNot(nobleCount>=2)->last
+VFEE_GrandBall.questContentRules.rulesStrings[2]	lodgersLabelSingularOrPlural(nobleCount==1)->[lodgersLabel]
+VFEE_GrandBall.questContentRules.rulesStrings[3]	lodgersLabelSingularOrPlural(nobleCount>=2)->[lodgersLabelPlural]
+VFEE_GrandBall.questContentRules.rulesStrings[4]	decidedToLeave->Your guests are leaving immediately, and will not remember this event fondly!
+VFEE_GrandBall.questContentRules.rulesStrings[5]	oneOfThe->one of the nobles you invited to the grand ball
+VFEE_GrandBall.questContentRules.rulesStrings[6]	questOver->The quest '[resolvedQuestName]' is over.
+VFEE_GrandBall.questContentRules.rulesStrings[7]	CeremonyFailedLetterLabel->Grand ball failed
+VFEE_GrandBall.questContentRules.rulesStrings[8]	CeremonyFailedLetterText->[asker_nameFull] is disappointed by your failure to make for an enjoyable ball. [asker_pronoun] is leaving with [asker_possessive] guests.
+VFEE_GrandBall.questContentRules.rulesStrings[9]	CeremonyTimeoutLetterLabel->Grand ball failed
+VFEE_GrandBall.questContentRules.rulesStrings[10]	CeremonyTimeoutLetterText->[asker_nameFull] has grown tired of waiting for you to start the ball. [asker_pronoun] is leaving with [asker_possessive] guests.
+VFEE_GrandBall.questContentRules.rulesStrings[11]	letterIntroArrested->You arrested {SUBJECT_definite}, [oneOfThe].
+VFEE_GrandBall.questContentRules.rulesStrings[12]	lodgerArrestedLeaveMapLetterLabel->[lodgersLabel] arrested: Departure
+VFEE_GrandBall.questContentRules.rulesStrings[13]	lodgerArrestedLeaveMapLetterText->[letterIntroArrested]\n\n[decidedToLeave]
+VFEE_GrandBall.questContentRules.rulesStrings[14]	letterIntroDeath->{SUBJECT_definite}, [oneOfThe], has died.
+VFEE_GrandBall.questContentRules.rulesStrings[15]	lodgerDiedLeaveMapLetterLabel->[lodgersLabel] died: Departure
+VFEE_GrandBall.questContentRules.rulesStrings[16]	lodgerDiedLeaveMapLetterText->[letterIntroDeath]\n\n[decidedToLeave]
+VFEE_GrandBall.questContentRules.rulesStrings[17]	letterIntroViolated->{SUBJECT_definite}, [oneOfThe], was violated by surgery.
+VFEE_GrandBall.questContentRules.rulesStrings[18]	lodgerSurgeryVioLeaveMapLetterLabel->[lodgersLabel] violated: Departure
+VFEE_GrandBall.questContentRules.rulesStrings[19]	lodgerSurgeryVioLeaveMapLetterText->[letterIntroViolated]\n\n[decidedToLeave]
+VFEE_GrandBall.questContentRules.rulesStrings[20]	letterIntroKidnapped->{SUBJECT_definite}, [oneOfThe], was kidnapped.
+VFEE_GrandBall.questContentRules.rulesStrings[21]	lodgerKidnappedLeaveMapLetterLabel->[lodgersLabel] kidnapped: Departure
+VFEE_GrandBall.questContentRules.rulesStrings[22]	lodgerKidnappedLeaveMapLetterText->[letterIntroKidnapped]\n\n[decidedToLeave]
+VFEE_GrandBall.questContentRules.rulesStrings[23]	letterIntroBanished->{SUBJECT_definite}, [oneOfThe], was banished.
+VFEE_GrandBall.questContentRules.rulesStrings[24]	lodgerBanishedLeaveMapLetterLabel->[lodgersLabel] banished: Departure
+VFEE_GrandBall.questContentRules.rulesStrings[25]	lodgerBanishedLeaveMapLetterText->[letterIntroBanished]\n\n[decidedToLeave]
+VFEE_GrandBall.questContentRules.rulesStrings[26]	letterIntroPsychicRitualTarget->{SUBJECT_definite}, [oneOfThe], was the target of a psychic ritual.
+VFEE_GrandBall.questContentRules.rulesStrings[27]	lodgerPsychicRitualTargetLabel->[lodgersLabel] violated: Departure
+VFEE_GrandBall.questContentRules.rulesStrings[28]	lodgerPsychicRitualTargetText->[letterIntroPsychicRitualTarget]\n\n[decidedToLeave]
+VFEE_GrandBall.questContentRules.rulesStrings[29]	ShuttleDestroyedIntro->The shuttle has been destroyed.
+VFEE_GrandBall.questContentRules.rulesStrings[30]	ShuttleDestroyedLabel->Shuttle destroyed: Ball cancelled
+VFEE_GrandBall.questContentRules.rulesStrings[31]	ShuttleDestroyedText->[ShuttleDestroyedIntro]\n\n[decidedToLeave]
+VFEE_GrandBall.questContentRules.rulesStrings[32]	raidArrivedLetterLabel->Deserter assassination attempt
+VFEE_GrandBall.questContentRules.rulesStrings[33]	raidArrivedLetterText->A group of deserters have arrived to attempt to disrupt the grand ball and assassinate the royals.\n\n[asker_nameFull] does not care for the threat and demands the ball continues! [asker_pronoun] wants you to keep them safe and deal with the "peasants".
+VFEE_GrandBall.questContentRules.rulesStrings[34]	BallSuccessLetterLetterLabel->Grand ball success
+VFEE_GrandBall.questContentRules.rulesStrings[35]	BallSuccessLetterText->The shuttle has departed with [asker_nameFull] and [asker_possessive] guests. Overall the event was a success and everyone made it back safe.
+VFEE_GrandBall.questDescriptionAndNameRules.rulesStrings[0]	lodgersLabel->noble
+VFEE_GrandBall.questDescriptionAndNameRules.rulesStrings[1]	lodgersLabelPlural->nobles
+VFEE_GrandBall.questDescriptionAndNameRules.rulesStrings[2]	lodgersDef(nobleCount==1)->[lodgers0_nameDef]
+VFEE_GrandBall.questDescriptionAndNameRules.rulesStrings[3]	lodgersDef(nobleCount>=2)->the [lodgersLabelPlural]
+VFEE_GrandBall.questDescriptionAndNameRules.rulesStrings[4]	joinerEnding->You'll be able to direct [lodgersDef] the same way you direct your own colonists.[specialNeedsExplanation]
+VFEE_GrandBall.questDescriptionAndNameRules.rulesStrings[5]	theirHisHer(nobleCount==1)->[lodgers0_possessive]
+VFEE_GrandBall.questDescriptionAndNameRules.rulesStrings[6]	theirHisHer(nobleCount>=2)->their
+VFEE_GrandBall.questDescriptionAndNameRules.rulesStrings[7]	lodgersPronoun(nobleCount==1)->[lodgers0_pronoun]
+VFEE_GrandBall.questDescriptionAndNameRules.rulesStrings[8]	lodgersPronoun(nobleCount>=2)->they
+VFEE_GrandBall.questDescriptionAndNameRules.rulesStrings[9]	lodgersWasWere(nobleCount==1)->was
+VFEE_GrandBall.questDescriptionAndNameRules.rulesStrings[10]	lodgersWasWere(nobleCount>=2)->were
+VFEE_GrandBall.questDescriptionAndNameRules.rulesStrings[11]	appreciateAppreciates(nobleCount==1)->appreciates
+VFEE_GrandBall.questDescriptionAndNameRules.rulesStrings[12]	appreciateAppreciates(nobleCount>=2)->appreciate
+VFEE_GrandBall.questDescriptionAndNameRules.rulesStrings[13]	questDescription->[asker_nameFull], a [asker_royalTitleInCurrentFaction] of [asker_faction_name], would like you to organise a grand ball. This is a great opportunity for noble gossip and to build relations with other members of the imperial nobility.\n\nYou are required to have a ballroom present in your colony. If at any point the ballroom is destroyed or the instruments in it become unusable, the grand ball will be called off.\n\n[asker_nameFull] has forwarded you a list of nobility that was invited to the ball and will arrive in the shuttle:\n\n[noblesDetailList]\n\nYou will need to make sure the guests are safe and comfortable during the ball. If anything happens to any of the guests, the grand ball will be cancelled.\n\nDeserters might use this opportunity to launch an assassination attempt.\n\n\n   
+VFEE_GrandBall.questNameRules.rulesStrings[0]	questName->[lodgerIndef] desires a grand ball
+VFEE_GrandBall.questNameRules.rulesStrings[1]	lodgerIndef->a royal
+VFEE_GrandBall.questNameRules.rulesStrings[2]	lodgerIndef->a noble
+## DefInjected/QuestScriptDef/Script_NobleVisit.xml
+VFEE_NobleVisit.questContentRules.rulesStrings[0]	lastOrNot(nobleCount==1)->
+VFEE_NobleVisit.questContentRules.rulesStrings[1]	lastOrNot(nobleCount>=2)->last
+VFEE_NobleVisit.questContentRules.rulesStrings[2]	lodgersLabelSingularOrPlural(nobleCount==1)->[lodgersLabel]
+VFEE_NobleVisit.questContentRules.rulesStrings[3]	lodgersLabelSingularOrPlural(nobleCount>=2)->[lodgersLabelPlural]
+VFEE_NobleVisit.questContentRules.rulesStrings[4]	decidedToLeave->[othersWillNotAccept], and {PAWNSALIVECOUNT_multiple ? have : has } decided to leave.
+VFEE_NobleVisit.questContentRules.rulesStrings[5]	othersWillNotAccept->The {PAWNSALIVECOUNT_multiple ? others are : last [lodgersLabel] is} not willing to accept this
+VFEE_NobleVisit.questContentRules.rulesStrings[6]	oneOfThe->one of the nobles you invited to stay with you
+VFEE_NobleVisit.questContentRules.rulesStrings[7]	questOver->The quest '[resolvedQuestName]' is over.
+VFEE_NobleVisit.questContentRules.rulesStrings[8]	letterIntroArrested->You arrested {SUBJECT_definite}, [oneOfThe].
+VFEE_NobleVisit.questContentRules.rulesStrings[9]	lodgerArrestedLeaveMapLetterLabel->[lodgersLabel] arrested: Departure
+VFEE_NobleVisit.questContentRules.rulesStrings[10]	lodgerArrestedLeaveMapLetterText->[letterIntroArrested]\n\n[decidedToLeave]
+VFEE_NobleVisit.questContentRules.rulesStrings[11]	letterIntroDeath->{SUBJECT_definite}, [oneOfThe] has died.
+VFEE_NobleVisit.questContentRules.rulesStrings[12]	lodgerDiedLeaveMapLetterLabel->[lodgersLabel] died: Departure
+VFEE_NobleVisit.questContentRules.rulesStrings[13]	lodgerDiedLeaveMapLetterText->[letterIntroDeath]\n\n[decidedToLeave]
+VFEE_NobleVisit.questContentRules.rulesStrings[14]	letterIntroViolated->{SUBJECT_definite}, [oneOfThe], was violated by surgery.
+VFEE_NobleVisit.questContentRules.rulesStrings[15]	lodgerSurgeryVioLeaveMapLetterLabel->[lodgersLabel] Surgery: Departure
+VFEE_NobleVisit.questContentRules.rulesStrings[16]	lodgerSurgeryVioLeaveMapLetterText->[letterIntroViolated]\n\n[decidedToLeave]
+VFEE_NobleVisit.questContentRules.rulesStrings[17]	letterIntroKidnapped->{SUBJECT_definite}, [oneOfThe], was kidnapped.
+VFEE_NobleVisit.questContentRules.rulesStrings[18]	lodgerKidnappedLeaveMapLetterLabel->[lodgersLabel] Kidnapped: Departure
+VFEE_NobleVisit.questContentRules.rulesStrings[19]	lodgerKidnappedLeaveMapLetterText->[letterIntroKidnapped]\n\n[decidedToLeave]
+VFEE_NobleVisit.questContentRules.rulesStrings[20]	letterIntroBanished->{SUBJECT_definite}, [oneOfThe], was banished.
+VFEE_NobleVisit.questContentRules.rulesStrings[21]	lodgerBanishedLeaveMapLetterLabel->[lodgersLabel] Banished: Departure
+VFEE_NobleVisit.questContentRules.rulesStrings[22]	lodgerBanishedLeaveMapLetterText->[letterIntroBanished]\n\n[decidedToLeave]
+VFEE_NobleVisit.questContentRules.rulesStrings[23]	letterIntroPsychicRitualTarget->{SUBJECT_definite}, [oneOfThe], was the target of a psychic ritual.
+VFEE_NobleVisit.questContentRules.rulesStrings[24]	lodgerPsychicRitualTargetLabel->[lodgersLabel] Psychic Ritual: Departure
+VFEE_NobleVisit.questContentRules.rulesStrings[25]	lodgerPsychicRitualTargetText->[letterIntroPsychicRitualTarget]\n\n[decidedToLeave]
+VFEE_NobleVisit.questContentRules.rulesStrings[26]	ShuttleDestroyedIntro->{SUBJECT_definite}, has been destroyed
+VFEE_NobleVisit.questContentRules.rulesStrings[27]	ShuttleDestroyedLabel->[lodgersLabel] Shuttle destroyed: Departure
+VFEE_NobleVisit.questContentRules.rulesStrings[28]	ShuttleDestroyedText->[ShuttleDestroyedIntro]\n\n[decidedToLeave]
+VFEE_NobleVisit.questContentRules.rulesStrings[29]	letterIntroBadMood->{SUBJECT_definite}, [oneOfThe], who you were charged to protect and keep happy, has been below the minimum mood of [lodgersMoodThreshold] too long.
+VFEE_NobleVisit.questContentRules.rulesStrings[30]	nobleUnhappyLetterLabel->[lodgersLabel] unhappy
+VFEE_NobleVisit.questContentRules.rulesStrings[31]	nobleUnhappyLetterText->[letterIntroBadMood]\n\n[decidedToLeave]
+VFEE_NobleVisit.questContentRules.rulesStrings[32]	lodgerLeftNotAllHealthyLetterLabel->[lodgersLabel] : untreated
+VFEE_NobleVisit.questContentRules.rulesStrings[33]	lodgerLeftNotAllHealthyLetterText->[lodgersLabel] left the map with injuries and wll not have fond memories of their visit
+VFEE_NobleVisit.questContentRules.rulesStrings[34]	LetterLabelShuttleArrived->Shuttle arrived
+VFEE_NobleVisit.questContentRules.rulesStrings[35]	LetterTextShuttleArrived->The shuttle has arrived to collect [asker_nameFull] and their court
+VFEE_NobleVisit.questContentRules.rulesStrings[36]	lodgersLeavingLetterLabel->[lodgersLabelSingularOrPlural] left healthy
+VFEE_NobleVisit.questContentRules.rulesStrings[37]	lodgersLeavingLetterText->[asker_nameFull] thanks you for inviting them to stay at [map_definite] for these [questDurationTicks_duration].
+VFEE_NobleVisit.questDescriptionAndNameRules.rulesStrings[0]	lodgersLabel->noble
+VFEE_NobleVisit.questDescriptionAndNameRules.rulesStrings[1]	lodgersLabelPlural->nobles
+VFEE_NobleVisit.questDescriptionAndNameRules.rulesStrings[2]	lodgersDef(nobleCount==1)->[lodgers0_nameDef]
+VFEE_NobleVisit.questDescriptionAndNameRules.rulesStrings[3]	lodgersDef(nobleCount>=2)->the [lodgersLabelPlural]
+VFEE_NobleVisit.questDescriptionAndNameRules.rulesStrings[4]	joinerEnding->You'll be able to direct [lodgersDef] the same way you direct your own colonists.[specialNeedsExplanation]
+VFEE_NobleVisit.questDescriptionAndNameRules.rulesStrings[5]	specialNeedsExplanation(asker_royalInCurrentFaction==True,priority=1)-> You'll need to satisfy any special royal needs the [lodgersLabelPlural] may have.
+VFEE_NobleVisit.questDescriptionAndNameRules.rulesStrings[6]	specialNeedsExplanation->
+VFEE_NobleVisit.questDescriptionAndNameRules.rulesStrings[7]	theirHisHer(nobleCount==1)->[lodgers0_possessive]
+VFEE_NobleVisit.questDescriptionAndNameRules.rulesStrings[8]	theirHisHer(nobleCount>=2)->their
+VFEE_NobleVisit.questDescriptionAndNameRules.rulesStrings[9]	lodgersPronoun(nobleCount==1)->[lodgers0_pronoun]
+VFEE_NobleVisit.questDescriptionAndNameRules.rulesStrings[10]	lodgersPronoun(nobleCount>=2)->they
+VFEE_NobleVisit.questDescriptionAndNameRules.rulesStrings[11]	lodgersWasWere(nobleCount==1)->was
+VFEE_NobleVisit.questDescriptionAndNameRules.rulesStrings[12]	lodgersWasWere(nobleCount>=2)->were
+VFEE_NobleVisit.questDescriptionAndNameRules.rulesStrings[13]	appreciateAppreciates(nobleCount==1)->appreciates
+VFEE_NobleVisit.questDescriptionAndNameRules.rulesStrings[14]	appreciateAppreciates(nobleCount>=2)->appreciate
+VFEE_NobleVisit.questDescriptionAndNameRules.rulesStrings[15]	questDescription(nobleCount==1)->[asker_nameFull], a [asker_royalTitleInCurrentFaction] of the [asker_faction_name] would like to perform a customary visit. Invite [asker_objective], satisfy [asker_possessive] royal needs for [shuttleDelayTicks_duration], and you will gain a large amount of honor. During their visit, you must keep their mood above [lodgersMoodThreshold_percent]. This means providing royal perquisites like a lavish bedroom.\n\nThe [asker_royalTitleInCurrentFaction] will bring two of [asker_possessive] personal guards and place them under your command. You must house these guards, but the [asker_royalTitleInCurrentFaction] will not complain if they are killed or unhappy.\n\nYou must keep the visitors at [map_definite] and not send them anywhere else. If you fail this quest or migrate, your relations with [asker_nameFull] will degrade and you will lose honor.
+VFEE_NobleVisit.questDescriptionAndNameRules.rulesStrings[16]	questDescription(nobleCount>=2)->[asker_nameFull], a [asker_royalTitleInCurrentFaction] of the [asker_faction_name] would like to perform a customary visit. Invite [asker_objective], and [asker_possessive] royal court of [nobleCountLessOne] nobles and satisfy their royal needs for [shuttleDelayTicks_duration], and you will gain a large amount of honor.\n\n[asker_nameFull] has forwarded you a list of the nobility travelling with [asker_objective]:\n\n[noblesDetailList]\n\nDuring their visit, you must keep their mood above [lodgersMoodThreshold_percent]. This means providing royal perquisites like a lavish bedroom.\n\nThe [asker_royalTitleInCurrentFaction] will bring two of [asker_possessive] personal guards and place them under your command. You must house these guards, but the [asker_royalTitleInCurrentFaction] will not complain if they are killed or unhappy.\n\nYou must keep the visitors at [map_definite] and not send them anywhere else. If you fail this quest or migrate, your relations with [asker_nameFull] will degrade and you will lose honor.
+VFEE_NobleVisit.questDescriptionAndNameRules.rulesStrings[17]	allyAllies(lodgersCountMinusOne==1)->ally
+VFEE_NobleVisit.questDescriptionAndNameRules.rulesStrings[18]	allyAllies(lodgersCountMinusOne>=2)->allies
+VFEE_NobleVisit.questNameRules.rulesStrings[0]	questName(sameQuestsCount==0)->[asker_nameDef]’s visit
+VFEE_NobleVisit.questNameRules.rulesStrings[1]	questName->hosting [lodgerIndef]
+VFEE_NobleVisit.questNameRules.rulesStrings[2]	questName->[lodgerIndef] visit
+VFEE_NobleVisit.questNameRules.rulesStrings[3]	lodgerIndef(nobleCount==1)->a royal
+VFEE_NobleVisit.questNameRules.rulesStrings[4]	lodgerIndef(nobleCount==1)->a noble
+VFEE_NobleVisit.questNameRules.rulesStrings[5]	lodgerIndef(nobleCount>=2)->royals
+VFEE_NobleVisit.questNameRules.rulesStrings[6]	lodgerIndef(nobleCount>=2)->nobles
+## DefInjected/QuestScriptDef/Script_Parade.xml
+VFEE_Parade.questContentRules.rulesStrings[0]	lastOrNot(nobleCount==1)->
+VFEE_Parade.questContentRules.rulesStrings[1]	lastOrNot(nobleCount>=2)->last
+VFEE_Parade.questContentRules.rulesStrings[2]	lodgersLabelSingularOrPlural(nobleCount==1)->[lodgersLabel]
+VFEE_Parade.questContentRules.rulesStrings[3]	lodgersLabelSingularOrPlural(nobleCount>=2)->[lodgersLabelPlural]
+VFEE_Parade.questContentRules.rulesStrings[4]	decidedToLeave->Your guests are leaving immediately, and will not remember this event fondly!
+VFEE_Parade.questContentRules.rulesStrings[5]	oneOfThe->one of the nobles visiting for the parade
+VFEE_Parade.questContentRules.rulesStrings[6]	questOver->The quest '[resolvedQuestName]' is over.
+VFEE_Parade.questContentRules.rulesStrings[7]	CeremonyFailedLetterLabel->Parade failed
+VFEE_Parade.questContentRules.rulesStrings[8]	CeremonyFailedLetterText->[asker_nameFull] is disappointed by your failure to make for an enjoyable parade. [asker_pronoun] is leaving with [asker_possessive] guests.
+VFEE_Parade.questContentRules.rulesStrings[9]	CeremonyTimeoutLetterLabel->Parade failed
+VFEE_Parade.questContentRules.rulesStrings[10]	CeremonyTimeoutLetterText->[asker_nameFull] has grown tired of waiting for you to start the parade. [asker_pronoun] is leaving with [asker_possessive] guests.
+VFEE_Parade.questContentRules.rulesStrings[11]	NoblesArriveLetterLabel->Parade nobles arriving
+VFEE_Parade.questContentRules.rulesStrings[12]	NoblesArriveLetterText->[asker_nameFull] and the nobility for [stellarch_nameDef]'s ascension parade are landing. Once they have gathered, select [asker_nameDef] to start the parade. They will not wait long.
+VFEE_Parade.questContentRules.rulesStrings[13]	CountdownHostileLetterLabel->Parade called off
+VFEE_Parade.questContentRules.rulesStrings[14]	CountdownHostileLetterText->The Empire will not send its nobility to a colony it is at war with. [stellarch_nameDef]'s ascension parade is called off.
+VFEE_Parade.questContentRules.rulesStrings[15]	CountdownAwayLetterLabel->Parade called off
+VFEE_Parade.questContentRules.rulesStrings[16]	CountdownAwayLetterText->[asker_nameFull] waited a day for [stellarch_nameDef] to be at the colony to receive the nobility. The ascension parade is called off.
+VFEE_Parade.questContentRules.rulesStrings[17]	CountdownPadLetterLabel->Parade called off
+VFEE_Parade.questContentRules.rulesStrings[18]	CountdownPadLetterText->[asker_nameFull] waited a day for the colony's landing pad to be fit for the nobility's shuttle, and will not land it anywhere else. [stellarch_nameDef]'s ascension parade is called off.
+VFEE_Parade.questContentRules.rulesStrings[19]	CountdownThreatLetterLabel->Parade called off
+VFEE_Parade.questContentRules.rulesStrings[20]	CountdownThreatLetterText->[asker_nameFull] waited a day for the danger at the colony to pass, and will not land the nobility into it. [stellarch_nameDef]'s ascension parade is called off.
+VFEE_Parade.questContentRules.rulesStrings[21]	letterIntroArrested->You arrested {SUBJECT_definite}, [oneOfThe].
+VFEE_Parade.questContentRules.rulesStrings[22]	lodgerArrestedLeaveMapLetterLabel->[lodgersLabel] arrested: Departure
+VFEE_Parade.questContentRules.rulesStrings[23]	lodgerArrestedLeaveMapLetterText->[letterIntroArrested]\n\n[decidedToLeave]
+VFEE_Parade.questContentRules.rulesStrings[24]	letterIntroDeath->{SUBJECT_definite}, [oneOfThe], has died.
+VFEE_Parade.questContentRules.rulesStrings[25]	lodgerDiedLeaveMapLetterLabel->[lodgersLabel] died: Departure
+VFEE_Parade.questContentRules.rulesStrings[26]	lodgerDiedLeaveMapLetterText->[letterIntroDeath]\n\n[decidedToLeave]
+VFEE_Parade.questContentRules.rulesStrings[27]	letterIntroViolated->{SUBJECT_definite}, [oneOfThe], was violated by surgery.
+VFEE_Parade.questContentRules.rulesStrings[28]	lodgerSurgeryVioLeaveMapLetterLabel->[lodgersLabel] violated: Departure
+VFEE_Parade.questContentRules.rulesStrings[29]	lodgerSurgeryVioLeaveMapLetterText->[letterIntroViolated]\n\n[decidedToLeave]
+VFEE_Parade.questContentRules.rulesStrings[30]	letterIntroKidnapped->{SUBJECT_definite}, [oneOfThe], was kidnapped.
+VFEE_Parade.questContentRules.rulesStrings[31]	lodgerKidnappedLeaveMapLetterLabel->[lodgersLabel] kidnapped: Departure
+VFEE_Parade.questContentRules.rulesStrings[32]	lodgerKidnappedLeaveMapLetterText->[letterIntroKidnapped]\n\n[decidedToLeave]
+VFEE_Parade.questContentRules.rulesStrings[33]	letterIntroBanished->{SUBJECT_definite}, [oneOfThe], was banished.
+VFEE_Parade.questContentRules.rulesStrings[34]	lodgerBanishedLeaveMapLetterLabel->[lodgersLabel] banished: Departure
+VFEE_Parade.questContentRules.rulesStrings[35]	lodgerBanishedLeaveMapLetterText->[letterIntroBanished]\n\n[decidedToLeave]
+VFEE_Parade.questContentRules.rulesStrings[36]	letterIntroPsychicRitualTarget->{SUBJECT_definite}, [oneOfThe], was the target of a psychic ritual.
+VFEE_Parade.questContentRules.rulesStrings[37]	lodgerPsychicRitualTargetLabel->[lodgersLabel] violated: Departure
+VFEE_Parade.questContentRules.rulesStrings[38]	lodgerPsychicRitualTargetText->[letterIntroPsychicRitualTarget]\n\n[decidedToLeave]
+VFEE_Parade.questContentRules.rulesStrings[39]	ShuttleDestroyedIntro->The shuttle has been destroyed.
+VFEE_Parade.questContentRules.rulesStrings[40]	ShuttleDestroyedLabel->Shuttle destroyed: Parade failed
+VFEE_Parade.questContentRules.rulesStrings[41]	ShuttleDestroyedText->[ShuttleDestroyedIntro]\n\n[decidedToLeave]
+VFEE_Parade.questContentRules.rulesStrings[42]	raidArrivedLetterLabel->Deserter assassination attempt
+VFEE_Parade.questContentRules.rulesStrings[43]	raidArrivedLetterText->A group of deserters have arrived to attempt to disrupt the parade and assassinate [stellarch_nameDef].\n\nThe parade must not be interrupted for any reason!
+VFEE_Parade.questContentRules.rulesStrings[44]	ParadeSuccessLetterLetterLabel->Parade success
+VFEE_Parade.questContentRules.rulesStrings[45]	ParadeSuccessLetterText->The shuttle is ready to depart with all those ascending with [stellarch_nameDef]. It will depart upon your command!
+VFEE_Parade.questDescriptionAndNameRules.rulesStrings[0]	lodgersLabel->noble
+VFEE_Parade.questDescriptionAndNameRules.rulesStrings[1]	lodgersLabelPlural->nobles
+VFEE_Parade.questDescriptionAndNameRules.rulesStrings[2]	lodgersDef(nobleCount==1)->[lodgers0_nameDef]
+VFEE_Parade.questDescriptionAndNameRules.rulesStrings[3]	lodgersDef(nobleCount>=2)->the [lodgersLabelPlural]
+VFEE_Parade.questDescriptionAndNameRules.rulesStrings[4]	theirHisHer(nobleCount==1)->[lodgers0_possessive]
+VFEE_Parade.questDescriptionAndNameRules.rulesStrings[5]	theirHisHer(nobleCount>=2)->their
+VFEE_Parade.questDescriptionAndNameRules.rulesStrings[6]	lodgersPronoun(nobleCount==1)->[lodgers0_pronoun]
+VFEE_Parade.questDescriptionAndNameRules.rulesStrings[7]	lodgersPronoun(nobleCount>=2)->they
+VFEE_Parade.questDescriptionAndNameRules.rulesStrings[8]	lodgersWasWere(nobleCount==1)->was
+VFEE_Parade.questDescriptionAndNameRules.rulesStrings[9]	lodgersWasWere(nobleCount>=2)->were
+VFEE_Parade.questDescriptionAndNameRules.rulesStrings[10]	appreciateAppreciates(nobleCount==1)->appreciates
+VFEE_Parade.questDescriptionAndNameRules.rulesStrings[11]	appreciateAppreciates(nobleCount>=2)->appreciate
+VFEE_Parade.questDescriptionAndNameRules.rulesStrings[12]	questDescription->[stellarch_nameFull] has reached the peak of what [stellarch_pronoun] can achieve from the surface of a rimworld. In order to progress further in the grand hierarchy and become the right hand of Emperor [emperor_nameFull], [stellarch_nameDef] needs to partake in a traditional ascension parade, after which [stellarch_pronoun] will depart on a shuttle and join the Emperor.\n\nA parade of this magnitude is bound to draw the attention of deserters.\n\nOnce you accept this quest, you will have 5 days to prepare for the parade. Consider improving your defenses and working out contingency plans, as it is difficult to say which way the parade will move. At all times you will have to keep the parade safe from harm.\n\nKeep an eye on any rivals or enemies of [stellarch_nameDef], as they might decide it’s a good time to make a move and claim the power for themselves.\n\nThe shuttle will arrive bringing the highest-ranking nobility to the parade. You will be responsible for providing the security for the event. After the parade starts, it will slowly move through the map for 12 hours, after which everyone, including [stellarch_nameDef], will board the shuttle and depart.\n\n\n\n   
+VFEE_Parade.questNameRules.rulesStrings[0]	questName->High Stellarch Ascension
+## DefInjected/RaidStrategyDef/Misc.xml
+VFEE_Deserters.label	deserters
+VFEE_Deserters.description	deserters
+VFEE_Deserters.arrivalTextEnemy	A group of imperial deserters have arrived in transport pods. They aim to cause chaos, and are landing scattered all over the area.\nImperial deserters utilise powerful technology and psychic powers to undermine the Imperial rule.\nThey aim to kill any title holders of {0}, including:\n{1}\n{2}\nThey are attacking immediately.\n    
+VFEE_Deserters.arrivalTextFriendly	They are moving in to help you immediately.
+VFEE_Deserters.letterLabelEnemy	Raid (Deserters)
+VFEE_Deserters.letterLabelFriendly	Friendlies
+## DefInjected/ResearchProjectDef/ResearchProjects_1.xml
+VFEE_PipeOrgans.label	pipe organs
+VFEE_PipeOrgans.description	Craft the pipe organs, an incredibly advanced and intricate stationary musical instrument.
+VFEE_PipeOrgans.generalRules.rulesStrings[0]	subject->musical mastery
+VFEE_PipeOrgans.generalRules.rulesStrings[1]	subject_story->crafted instruments that echoed through cathedrals and concert halls alike
+VFEE_PipeOrgans.generalRules.rulesStrings[2]	subject_story->combined ancient lore with modern acoustics to create a symphony of sound
+VFEE_PipeOrgans.generalRules.rulesStrings[3]	subject_story->invented an organ with pipes that mimicked the voice of the divine
+VFEE_PipeOrgans.generalRules.rulesStrings[4]	subject_gerund->harmonizing craftsmanship and artistry
+VFEE_NobleDecorations.label	noble decorations
+VFEE_NobleDecorations.description	Build noble decorations like royal rugs, mirrors, grand chairs, imperial slabs, candelabras, and more.
+VFEE_NobleDecorations.generalRules.rulesStrings[0]	subject->aristocratic elegance
+VFEE_NobleDecorations.generalRules.rulesStrings[1]	subject_story->designed living spaces fit for kings and queens
+VFEE_NobleDecorations.generalRules.rulesStrings[2]	subject_story->brought beauty and luxury to the stark lives of the nobility
+VFEE_NobleDecorations.generalRules.rulesStrings[3]	subject_story->set the standards for opulence in decor that lasted centuries
+VFEE_NobleDecorations.generalRules.rulesStrings[4]	subject_gerund->elevating interiors to royal standards
+VFEE_StellicThrone.label	stellic throne
+VFEE_StellicThrone.description	Construct the most grand, most beautiful stellic throne for your high ranking nobility.
+VFEE_StellicThrone.generalRules.rulesStrings[0]	subject->regal craftsmanship
+VFEE_StellicThrone.generalRules.rulesStrings[1]	subject_story->forged a throne from the heart of a fallen star, symbolizing eternal rule
+VFEE_StellicThrone.generalRules.rulesStrings[2]	subject_story->crafted not just a seat, but a legacy, ensuring the ruler's presence is felt even in absence
+VFEE_StellicThrone.generalRules.rulesStrings[3]	subject_story->merged the art of smithing with celestial materials to create a throne worthy of legends
+VFEE_StellicThrone.generalRules.rulesStrings[4]	subject_gerund->creating the pinnacle of nobility's power
+VFEE_JanissaryGear.label	janissary gear
+VFEE_JanissaryGear.description	Craft janissary armor, light powered armor that’s commonly used by imperial recon troops. Note that these also require advanced components.
+VFEE_JanissaryGear.generalRules.rulesStrings[0]	subject->elite warfare engineering
+VFEE_JanissaryGear.generalRules.rulesStrings[1]	subject_story->designed armor that blended ancient warrior traditions with the pinnacle of modern defense technology
+VFEE_JanissaryGear.generalRules.rulesStrings[2]	subject_story->equipped scouts with gear that turned the tide of covert operations
+VFEE_JanissaryGear.generalRules.rulesStrings[3]	subject_story->created a legacy of warriors feared for both their prowess and their unparalleled equipment
+VFEE_JanissaryGear.generalRules.rulesStrings[4]	subject_gerund->forging the future of military attire
+## DefInjected/RitualBehaviorDef/BestowHonor.xml
+VFEE_BestowHonor_Behavior.roles.0.label	bestower
+VFEE_BestowHonor_Behavior.roles.1.label	recipient
+## DefInjected/RitualBehaviorDef/BestowTitle.xml
+VFEE_BestowTitle_Behavior.roles.0.label	organizer
+VFEE_BestowTitle_Behavior.roles.1.label	recipient
+VFEE_BestowTitle_Behavior.stages.0.failTriggers.0.desc	The organizer cannot reach the throne.
+VFEE_BestowTitle_Behavior.stages.0.failTriggers.1.desc	The recipient cannot reach the throne.
+## DefInjected/RitualBehaviorDef/Parade.xml
+VFEE_Parade_Behavior.roles.0.label	stellarch
+VFEE_Parade_Behavior.roles.1.label	guard
+VFEE_Parade_Behavior.spectatorFilter.description	Titled Nobles
+VFEE_Parade_Behavior.spectatorGerund	Nobles
+VFEE_Parade_Behavior.spectatorsLabel	Nobles
+## DefInjected/RitualBehaviorDef/RoyalAddress.xml
+VFEE_RoyalAddres_Behavior.letterText	{ORGANIZER_labelShort} is giving a royal address from the throne. \nIf all goes well, every titled participant will gain a small amount of honor, and {ORGANIZER_labelShort} will gain honor for each titled participant. If it goes poorly, the speech will do social damage and {ORGANIZER_labelShort} will lose honor for each titled participant. The outcome depends on {ORGANIZER_labelShort}'s social abilities. Imperial nobility currently residing in the area will join the speech and count as titled participants.
+VFEE_RoyalAddres_Behavior.letterTitle	Royal address from the throne
+VFEE_RoyalAddres_Behavior.roles.0.label	organizer
+VFEE_RoyalAddres_Behavior.roles.1.label	title holders
+## DefInjected/RitualOutcomeEffectDef/ArtExhibition.xml
+VFEE_ArtExhibit_Outcome.description	Depending on ritual quality, participants will get between {MINMOOD} and {MAXMOOD} mood for {MOODDAYS} days.
+VFEE_ArtExhibit_Outcome.comps.0.label	participant count
+VFEE_ArtExhibit_Outcome.comps.1.label	room impressiveness
+VFEE_ArtExhibit_Outcome.outcomeChances.0.label	Terrible
+VFEE_ArtExhibit_Outcome.outcomeChances.1.label	Boring
+VFEE_ArtExhibit_Outcome.outcomeChances.2.label	Enjoyable
+VFEE_ArtExhibit_Outcome.outcomeChances.3.label	Amazing
+## DefInjected/RitualOutcomeEffectDef/BestowHonor.xml
+VFEE_BestowHonor_Outcome.description	{ORGANIZER} will gain {HONORS}.
+VFEE_BestowHonor_Outcome.comps.0.label	test
+## DefInjected/RitualOutcomeEffectDef/BestowTitle.xml
+VFEE_BestowTitle_Outcome.description	Depending on ritual quality, participants will get between {MINMOOD} and {MAXMOOD} mood for {MOODDAYS} days.
+VFEE_BestowTitle_Outcome.comps.0.label	{PAWN_labelShort}'s social impact
+VFEE_BestowTitle_Outcome.comps.0.labelAbstract	recipient's social impact
+VFEE_BestowTitle_Outcome.comps.1.label	participant count
+VFEE_BestowTitle_Outcome.comps.2.label	avaliable throne
+VFEE_BestowTitle_Outcome.outcomeChances.0.label	Awkward
+VFEE_BestowTitle_Outcome.outcomeChances.1.label	Good
+VFEE_BestowTitle_Outcome.outcomeChances.2.label	Amazing
+## DefInjected/RitualOutcomeEffectDef/Parade.xml
+VFEE_Parade_Outcome.description	Upon completetion of the Parade the Stellarch and their chosen companions will ascend to serve the empire!
+VFEE_Parade_Outcome.outcomeChances.0.label	Amazing
+## DefInjected/RitualOutcomeEffectDef/RoyalAddress.xml
+VFEE_RoyalAddres_Outcome.description	Depending on ritual quality, participants will get between {MINMOOD} and {MAXMOOD} mood for {MOODDAYS} days.
+VFEE_RoyalAddres_Outcome.comps.0.label	{PAWN_labelShort}'s social impact
+VFEE_RoyalAddres_Outcome.comps.0.labelAbstract	speaker's social impact
+VFEE_RoyalAddres_Outcome.comps.1.label	participant count
+VFEE_RoyalAddres_Outcome.comps.2.label	room impressiveness
+VFEE_RoyalAddres_Outcome.outcomeChances.0.label	Terrible
+VFEE_RoyalAddres_Outcome.outcomeChances.1.label	Uninspiring
+VFEE_RoyalAddres_Outcome.outcomeChances.2.label	Encouraging
+VFEE_RoyalAddres_Outcome.outcomeChances.3.label	Inspirational
+## DefInjected/RitualOutcomeEffectDef/RoyalBall.xml
+VFEE_GrandBall_Outcome.description	Depending on ritual quality, participants will get between {MINMOOD} and {MAXMOOD} mood for {MOODDAYS} days.
+VFEE_GrandBall_Outcome.comps.0.label	participant count
+VFEE_GrandBall_Outcome.comps.1.label	room impressiveness
+VFEE_GrandBall_Outcome.outcomeChances.0.label	Terrible
+VFEE_GrandBall_Outcome.outcomeChances.1.label	Boring
+VFEE_GrandBall_Outcome.outcomeChances.2.label	Enjoyable
+VFEE_GrandBall_Outcome.outcomeChances.3.label	Amazing
+## DefInjected/RoomRoleDef/RoomRoles.xml
+VFEE_Ballroom.label	ballroom
+VFEE_Gallery.label	gallery
+## DefInjected/RoyalTitleDef/RoyalTitles_Empire.xml
+VFEE_Archcount.label	archcount
+VFEE_Archcount.description	The Imperial title of archcount is bestowed upon those counts who have established impressive holdings, which are capable of supporting and entertaining important guests.
+VFEE_Archcount.labelFemale	archcountess
+VFEE_Marquess.label	marquess
+VFEE_Marquess.description	The Imperial title of marquess is the second highest of the middle nobility. In the Empire, they control colonies that border the edge of Imperial space. During wartime, they can field fleets that either prevent the enemy from penetrating the borders or be the anvil to the hammer of supporting friendlies.
+VFEE_Marquess.labelFemale	marchioness
+Duke.label	Dominus
+Duke.description	O título imperial de dominus é o mais alto entre os governantes independentes de nível médio.\n\nNo Império, os dominus controlam províncias, megacidades ou luas. Em guerra, um dominus pode mobilizar uma força de nível divisional ou uma frota com naves capitais e dezenas de embarcações de apoio.
+VFEE_Archduke.label	archduke
+VFEE_Archduke.description	The Imperial title of archduke is bestowed upon dukes whose territory requires a competent retinue to maintain order. They are expected to host their own divisions as well as their training, and in peacetime can establish a minor House.
+VFEE_Archduke.labelFemale	archduchess
+Consul.label	Cônsul
+Consul.description	O título Imperial de cônsul é um nível baixo de alta nobreza.\n\nNo Império, cônsules controlam planetas. Em guerra, um cônsul geralmente pode posicionar uma força do tamanho de um exército de várias divisões, apoiada por várias frotas. Alguns comandam de uma nave imensa ou controlam mega estruturas espaciais.
+VFEE_Magister.label	magister
+VFEE_Magister.description	The Imperial title of magister is the middle rank of high nobility. In the Empire, a magister is expected to coordinate the vast military capabilities of the Empire, in both peace and wartime, commanding in the presence of the Emperor.
+VFEE_Magister.labelFemale	magister
+VFEE_Despot.label	despot
+VFEE_Despot.description	The Imperial title of despot maintains dominion over a small star system of strategic importance. In the Empire, despots maintain an iron grip to ensure that resources continue to flow into Imperial coffers and factories, as their major House holds important administrative positions throughout the system of governance.
+VFEE_Despot.labelFemale	despot
+Stellarch.label	Arquistelar
+Stellarch.description	O título Imperial de arquistelar representa o domínio de todo um sistema estelar.\n\nNo Império, já que o tempo de viagem interestelar duram anos, os arquistelares governam seus sistemas com um alto grau de independência. Cada um deles jura lealdade ao Imperador, mas como o Imperador pode estar a muitos anos-luz de distância, um arquistelar pode passar anos ou décadas sem interagir com ele.
+VFEE_HighStellarch.label	high stellarch
+VFEE_HighStellarch.description	The Imperial title of high stellarch represents dominion over multiple star systems, and control of one of the powerful Houses in the Empire. They answer to no one except the emperor and are expected to not only maintain but also expand their influence across space. Very few are capable of receiving this title, even fewer wish to take on the responsibilities.
+## DefInjected/RoyalTitlePermitDef/RoyalPermits_Empire.xml
+VFEI_GoldDrop.label	gold drop
+VFEI_GoldDrop.description	Call for a drop of 50 gold.
+VFEI_PlasteelDrop.label	plasteel drop
+VFEI_PlasteelDrop.description	Call for a drop of 55 plasteel.
+VFEI_JadeDrop.label	jade drop
+VFEI_JadeDrop.description	Call for a drop of 100 jade.
+VFEI_UraniumDrop.label	uranium drop
+VFEI_UraniumDrop.description	Call for a drop of 80 uranium.
+VFEI_ClothDrop.label	cloth drop
+VFEI_ClothDrop.description	Call for a drop of 330 cloth.
+VFEI_WoodDrop.label	wood drop
+VFEI_WoodDrop.description	Call for a drop of 400 wood.
+VFEI_SynthreadDrop.label	synthread drop
+VFEI_SynthreadDrop.description	Call for a drop of 125 synthread.
+VFEI_HerbalMedDrop.label	herbal med drop
+VFEI_HerbalMedDrop.description	Call for a drop of 40 herbal medicine.
+VFEI_MedDrop.label	med drop
+VFEI_MedDrop.description	Call for a drop of 25 medicine.
+VFEI_DevilstrandDrop.label	devilstrand drop
+VFEI_DevilstrandDrop.description	Call for a drop of 90 devilstrand.
+VFEI_HyperweaveDrop.label	hyperweave drop
+VFEI_HyperweaveDrop.description	Call for a drop of 55 hyperweave.
+VFEI_ChemfuelDrop.label	chemfuel drop
+VFEI_ChemfuelDrop.description	Call for a drop of 220 chemfuel.
+VFEI_ComponentDrop.label	component drop
+VFEI_ComponentDrop.description	Call for a drop of 15 components.
+VFEI_ComponentSpacerDrop.label	advanced component drop
+VFEI_ComponentSpacerDrop.description	Call for a drop of 3 advanced components.
+VFEI_HEShellsDrop.label	shells drop
+VFEI_HEShellsDrop.description	Call for a drop of 10 high-explosive shells.
+VFEI_NobleFoodDrop.label	noble food drop
+VFEI_NobleFoodDrop.description	Call for a drop of 15 lavish meals.
+VFEI_CallTrooperPlatoon.label	call trooper platoon
+VFEI_CallTrooperPlatoon.description	Call a group of 8 light troopers to aid you in battle.
+VFEI_CallJanissaryPlatoon.label	call janissary platoon
+VFEI_CallJanissaryPlatoon.description	Call a group of 8 professional janissaries to aid you in battle.
+VFEI_CallCataphractPlatoon.label	call cataphract platoon
+VFEI_CallCataphractPlatoon.description	Call a group of 8 heavy cataphracts to aid you in battle.
+VFEI_CallTechfriar.label	call techfriar
+VFEI_CallTechfriar.description	Call a techfriar to assist you for 4 days. This guildmember can only do research-related tasks. You can control him as though he is your own colonists. You are required to keep him safe.
+VFEI_CallLaborerUnion.label	call laborer union
+VFEI_CallLaborerUnion.description	Call a group of 12 laborers to assist you for 4 days. These workers can only do general labor tasks. You can control them as though they were your own colonists. You are required to keep them safe.
+VFEI_StrikerTurretDrop.label	striker drop
+VFEI_StrikerTurretDrop.description	Call for a drop of three striker turrets to aid you in battle. After they fire all their ammo, striker turrets self-detonate.
+VFEI_BurnoutShieldDrop.label	burnout shield drop
+VFEI_BurnoutShieldDrop.description	Call for a drop of a burnout low shield to aid you in battle. It activates where it lands and will last 30 seconds before deactivating.
+VFEI_CallEvacShuttle.label	call evac shuttle
+VFEI_CallEvacShuttle.description	Call an armed shuttle for your own use. It will transport colonists, items, and animals anywhere you like within 40 world tiles. It will stay in the area only for a brief moment.
+VFEI_StoneDrop.label	stone drop
+VFEI_StoneDrop.description	Call for a drop of 500 random stone bricks.
+VFEI_CallStellicGuards.label	call stellic guards
+VFEI_CallStellicGuards.description	Call a group of 6 stellic guards, ranged and melee, to aid you in battle.
+VFEI_CallImperialRegiment.label	call imperial regiment
+VFEI_CallImperialRegiment.description	Call a group of 10 janissaries and 6 heavy cataphracts that will arrive in an armed shuttle, to aid you in battle. You cannot control them, but they will help you eliminate any threats in the area. They will leave after all threats are eliminated.
+VFEI_CallOrbitalSlicingBeam.label	call orbital slicing beam
+VFEI_CallOrbitalSlicingBeam.description	Call an orbital slicing beam from an imperial flagship in orbit. This beam will travel in a direction specified by you, burning everything it touches.
+VFEI_CallAbsolver.label	call absolver
+VFEI_CallAbsolver.description	Call an absolver to assist you for 4 days. This guildmember is a master assassin and will not perform any tasks other than killing. You can control him as though he is your own colonists. If an absolver dies, a new one will replace them immediately, inheriting the remaining contract time.
+## DefInjected/ScenPartDef/Scenarios_Classic.xml
+VFEE_SpawnFamilyMembers.label	spawn dead family members on map
+VFEE_SpawnRaid.label	spawn raid on map
+## DefInjected/ScenarioDef/Scenarios_Classic.xml
+VFEE_NewFamily.label	New Family
+VFEE_NewFamily.description	It was a long and quiet night when your entire life turned on its head. You are not sure if it was a deliberate sabotage by one of the family servants, a simple system malfunction or a well executed deserter strategy, but the mansion defense systems turned off as the clock struck midnight. When the gates swung wide, there was no time to call for aid - best you could do was hide.\nYou heard the screams of your family and mansion workers as they were being slaughtered by the deserter strike team. You vowed to have your revenge, but until you make it out of this particular situation alive, your vows are all for nothing. You can either wait the raid out, use permits to call for reinforcements, or try running for the hills - the choice is yours. \nNote: Since you start during a raid in progress, this is a difficult scenario.\n
+VFEE_NewFamily.scenario.description	It was a long and quiet night when your entire life turned on its head. You are not sure if it was a deliberate sabotage by one of the family servants, a simple system malfunction or a well executed deserter strategy, but the mansion defense systems turned off as the clock struck midnight. When the gates swung wide, there was no time to call for aid - best you could do was hide.\nYou heard the screams of your family and mansion workers as they were being slaughtered by the deserter strike team. You vowed to have your revenge, but until you make it out of this particular situation alive, your vows are all for nothing. You can either wait the raid out, use permits to call for reinforcements, or try running for the hills - the choice is yours. \nNote: Since you start during a raid in progress, this is a difficult scenario.\n
+VFEE_NewFamily.scenario.name	New Family
+VFEE_NewFamily.scenario.parts.GameStartDialog.text	It was a long and quiet night when your entire life turned on its head. You are not sure if it was a deliberate sabotage by one of the family servants, a simple system malfunction or a well executed deserter strategy, but the mansion defense systems turned off as the clock struck midnight. When the gates swung wide, there was no time to call for aid - best you could do was hide.\nYou heard the screams of your family and mansion workers as they were being slaughtered by the deserter strike team. You vowed to have your revenge, but until you make it out of this particular situation alive, your vows are all for nothing. You can either wait the raid out, use permits to call for reinforcements, or try running for the hills - the choice is yours.
+VFEE_NewFamily.scenario.parts.VFEC_AddStartingStructure.structureLabel	A royal villa
+VFEE_NewFamily.scenario.summary	An imperial family in dire need of help. A classic VFE - Empire experience.
+## DefInjected/StorytellerDef/Storytellers.xml
+VFEE_AriadneArchduchess.label	Ariadne Archduchess
+VFEE_AriadneArchduchess.description	Ariadne got tired of the unpredictability of the nobility, and whilst she will create a story of increasing tension, she will force dangerous events on you as your wealth increases. After all, it’s not fun to kick someone while they’re down.
+## DefInjected/TerrainDef/Terrain_Ash.xml
+VFEE_ThickAsh.label	thick ash
+VFEE_ThickAsh.description	Burned-out thick layer of ash and glass shards.
+## DefInjected/ThingDef/Aperitif.xml
+VFEE_Aperitif.label	aperitif
+VFEE_Aperitif.description	A non-alcoholic, pleasantly light, citrusy and slightly bitter aperitif that owes its flavors and aromas to sweet and bitter oranges, rhubarb, and imperial craftsmanship. Drinking it induces heavy but painless vomiting, completely clearing the stomach and taste buds. Aperitif recipe is kept secret by the Hospitality guilds of the Empire, and noone was quite able to recreate this fine delicacy on the rimworld surface.\n\nImperial nobility loves aperitif for its ability to clear out food from the digestive system, allowing them to consume even more of the finest imperial food.
+VFEE_Aperitif.ingestible.ingestCommandString	Drink {0}
+VFEE_Aperitif.ingestible.ingestReportString	Drinking {0}.
+## DefInjected/ThingDef/Apparel_Headgear.xml
+VFEE_Apparel_TechfriarCrown.label	techfriar crown
+VFEE_Apparel_TechfriarCrown.description	An exceedingly complex facemask fitted with advanced technology that is only known to high-ranking Sophian techpriests. Designed to be worn by designated researchers so that they can advance the empire’s needs without rest.\n\nThe inlaid techprint will synchronize and stimulate the wearer’s brain when they are performing research, effectively doubling research speed as well as restoring their needs for rest and recreation.
+VFEE_Apparel_AbsolverHelmet.label	absolver helmet
+VFEE_Apparel_AbsolverHelmet.description	A high-tech helmet with a solid plasteel-weave shell and multi-spectrum sensors, which both feed telemetry data to the user and exterior shell. While it provides excellent protection, its primary purpose is to hide the user by using an intricate optical camouflage system while feeding firing solutions using real-time strategic information. Armor like this is only available to the Sophian Empire’s elite assassins due to limited production.
+VFEE_Apparel_DeserterHelmet.label	deserter helmet
+VFEE_Apparel_DeserterHelmet.description	A heavily-armored high-tech helmet, with a solid plasteel-weave shell and indirect visual system for non-frontal view angles. It protects against all but the most powerful or luckily-aimed shots.\n\nOriginally a standard cataphract helmet, this has been modified to include a gunlink at the cost of removing the faceplate, sacrificing defense to improve offensive capabilities.
+VFEE_Apparel_JanissaryHelmet.label	janissary helmet
+VFEE_Apparel_JanissaryHelmet.description	A high-tech armored helmet with a built-in status computer and a protective plasteel-weave plate.\n\nIncludes a plasteel-plated gas mask that offers full protection against gas-related attacks, such as toxic environments.
+## DefInjected/ThingDef/Apparel_Royal.xml
+VFE_Apparel_StellicRobe.label	stellic robe
+VFE_Apparel_StellicRobe.description	A glorious, long and flowing robe embroidered with intricately complex decorative designs.
+## DefInjected/ThingDef/Apparel_Various.xml
+VFEE_Apparel_ArmorDeserter.label	deserter armor
+VFEE_Apparel_ArmorDeserter.description	A suit of heavy powered armor, built for maximum protection at the cost of mobility. Heavy layered plasteel-weave plates with solid ablative coatings stop all but the most well-aimed or powerful attacks. Neuro-memetic assistors prevent the suit's massive weight from immobilizing the wearer entirely, but the suit is still quite cumbersome.\n\nOriginally an elaborate suit of prestige armor, this has been modified to make greater use of eltex weave in order to improve the performance of psycasters. This comes at a cost of removing interfering armor plating, but enhances psychic sensitivity and neural heat dissipation.
+VFEE_Apparel_ArmorAbsolver.label	absolver armor
+VFEE_Apparel_ArmorAbsolver.description	A high-tech suit of powered armor with layered plasteel-weave plates and multi-spectrum sensors, which both feed telemetry data to the user and exterior shell. While it provides excellent protection, its primary purpose is to hide the user by using an intricate optical camouflage system while adjusting and assisting their movement. Armor like this is only available to the Sophian Empire’s elite assassins due to limited production.
+VFEE_Apparel_JanissaryCuirass.label	janissary cuirass
+VFEE_Apparel_JanissaryCuirass.description	A set of pauldrons and neck guard that extends down the wearer’s chest made from layered plasteel-weave plates. While it offers high protection for those areas, it is more of a status symbol and is intended to be worn over clothing and under armor without affecting mobility.
+## DefInjected/ThingDef/Buildings_Art.xml
+VFEE_RoyalSculptureSmall.label	small imperial sculpture
+VFEE_RoyalSculptureSmall.description	A torso-sized piece of material sculpted into an artistic form.
+VFEE_RoyalSculptureLarge.label	large imperial sculpture
+VFEE_RoyalSculptureLarge.description	A person-sized piece of material sculpted into an artistic form.
+VFEE_RoyalSculptureGrand.label	grand imperial sculpture
+VFEE_RoyalSculptureGrand.description	A huge sculpture sized to dominate a room.
+## DefInjected/ThingDef/Buildings_Exotic.xml
+VFEI_ArmoredShuttle.label	armored shuttle
+VFEI_ArmoredShuttle.description	A spacer-tech imperial gunship designed for transit between surface and orbit, or between moons of a planetary system. Equipped with a twin-linked autocannon for ground support, these armored shuttles often land in the middle of the battlefield to extract stranded troops.
+VFEI_TurretArmoredShuttle.label	double autocannon
+VFEI_TurretArmoredShuttle.description	A powerful, twin-linked autocannon.
+VFEI_TurretArmoredShuttle.verbs.Verb_Shoot.label	double autocannon
+## DefInjected/ThingDef/Buildings_Furniture.xml
+VFEE_GrandTable.label	grand table
+VFEE_GrandTable.description	A luxurious, beautiful gold-inlaid table fit for the highborn, it is a work of art in itself. People eat off tables when chairs are placed facing them.
+VFEE_GrandChair.label	grand chair
+VFEE_GrandChair.description	A comfortable and elegant chair, it is a work of art in itself. Can be used at tables, work stations, and elsewhere.
+VFEE_ImperialBanner.label	imperial banner
+VFEE_ImperialBanner.description	A decorative strip of cloth hanging from a vertical wooden frame. Appropriate for royal rooms.
+VFEE_RoyalStool.label	royal stool
+VFEE_RoyalStool.description	A luxurious gold-inlaid stool fit for the nobility. Can be used at tables, work stations, and elsewhere.
+VFEE_StellicThrone.label	stellic meditation throne
+VFEE_StellicThrone.description	A titanic, ornate chair, designed for a dignity-focused psycaster to sit and meditate. Reigning on a throne is a form of meditation that builds up psyfocus. For dignity psycasters, more impressive meditation thrones and thronerooms increase the rate of psyfocus gain.
+VFEE_Candelabra.label	candelabra
+VFEE_Candelabra.description	An elaborate, artistic electrical standing lamp that lights an area. People need light to move and work at full speed.
+VFEE_RoyalMirror.label	royal mirror
+VFEE_RoyalMirror.description	A beautiful and elegant mirror. Gives a small comfort bonus to all nearby beds. Placing more than one mirror near the same bed has no effect.
+## DefInjected/ThingDef/Buildings_Misc.xml
+VFEE_SteleSmall.label	small stele
+VFEE_SteleSmall.description	A slender, modest slab with limited engravings on the sides. Steles have been used since ancient times to memorialize individuals, battles, and other important events.
+VFEE_Bomb.label	bomb
+VFEE_Bomb.description	A small, makeshift bomb. Can be easily defused if found on time.
+## DefInjected/ThingDef/Buildings_MusicalInstruments.xml
+VFEE_UnfinishedOrgan.label	unfinished organ
+VFEE_UnfinishedOrgan.description	An unfinished organ.
+VFEE_PipeOrgan.label	organ
+VFEE_PipeOrgan.description	An exceedingly complex stationary musical instrument crafted at a smithy. A series of tuned pipes are played from the keyboard which releases pressurized air to produce the desired pitch, which lasts as long as the key is pressed. The complex and intricate design, along with the unique sound it produces, make it an ideal apparatus for instigating concerts of the nobility as its music reaches far and wide.
+## DefInjected/ThingDef/Buildings_Security_Turrets.xml
+VFEE_Turret_StrikerTurret.label	striker turret
+VFEE_Turret_StrikerTurret.description	A redesigned cargo pod designed to bury stabilizing legs upon impact and deploy a powerful turret. Has a limited battery and ammunition pool, and will self-destruct if either run out or it is sufficiently damaged.
+VFEE_Turret_StrikerTurret.comps.CompDestroyAfterDelay.countdownLabel	deactivates after:
+VFEE_Gun_StrikerTurret.label	striker gun
+VFEE_Gun_StrikerTurret.description	A powerful turret mounted on the striker drop pod.
+VFEE_Gun_StrikerTurret.verbs.Verb_ShootCE.label	striker gun
+## DefInjected/ThingDef/Ethereal_Skyfallers.xml
+VFEI_ArmoredShuttleIncoming.label	armored shuttle (incoming)
+VFEI_ArmoredShuttleLeaving.label	armored shuttle (leaving)
+VFEE_DropPodIncoming_Building.label	drop pod (incoming)
+## DefInjected/ThingDef/FloorCoverings.xml
+VFEE_ImperialSlab.label	imperial slab
+VFEE_ImperialSlab.description	A stoney bas relief of imperial imagery for decorating a floor.
+VFEE_LargeRoyalRug.label	large royal rug
+VFEE_LargeRoyalRug.description	An intricate rug with an imperial-style pattern, for decorating a floor.
+VFEE_GrandRoyalRug.label	grand royal rug
+VFEE_GrandRoyalRug.description	A majestic rug with an imperial-style pattern, for decorating a floor.
+## DefInjected/ThingDef/MeleeBladelink.xml
+VFEE_MeleeWeapon_ToxbladeBladelink.label	persona toxblade
+VFEE_MeleeWeapon_ToxbladeBladelink.description	A defensive melee persona weapon usually assigned to every Imperial noble of rank Yeoman or above. While armor penetration is comparable to plasteel blades, the primary function is to dispense acidifer fluids and toxic vapors upon inflicted cuts. The effect only lasts a few seconds and is inflicted roughly half of the time due to the limited size of the weapon.
+VFEE_MeleeWeapon_ToxbladeBladelink.tools.handle.label	handle
+VFEE_MeleeWeapon_ToxbladeBladelink.tools.blade.label	blade
+VFEE_MeleeWeapon_ToxbladeBladelink.tools.point.label	point
+## DefInjected/ThingDef/MeleeUltratech.xml
+VFEE_MeleeWeapon_Toxblade.label	toxblade
+VFEE_MeleeWeapon_Toxblade.description	A defensive melee persona weapon usually assigned to every Imperial noble of rank Yeoman or above. While armor penetration is comparable to plasteel blades, the primary function is to dispense acidifer fluids and toxic vapors upon inflicted cuts. The effect only lasts a few seconds and is inflicted roughly half of the time due to the limited size of the weapon.
+VFEE_MeleeWeapon_Toxblade.tools.handle.label	handle
+VFEE_MeleeWeapon_Toxblade.tools.blade.label	blade
+VFEE_MeleeWeapon_Toxblade.tools.point.label	point
+## DefInjected/ThingDef/Misc.xml
+VFEE_OrbitalSlicer.label	orbital slicer
+VFEE_Poison.label	poison
+VFEE_Poison.description	text_todo
+## DefInjected/ThingDef/RangedSpacer.xml
+VEE_Gun_Fletcher.label	fletcher
+VEE_Gun_Fletcher.description	An ultra-long range sniper rifle which fires fin-stabilized flechettes with acidifier injectors. Due to their lethality and danger of falling into enemy hands, they are always biocoded and will self-destruct if their owner either dies or is disarmed. Lethal to organics and almost useless against non-organics, such as mechanoids.\n\nTargets hit by these flechettes will be inflicted with an unstable variant of acidifier fluids, designed to dissolve the target from the inside rather than destroy their equipment. The acid will rampage through the target’s body and usually results in vital organs being dissolved, however lethality isn’t guaranteed.
+VEE_Gun_Fletcher.tools.stock.label	stock
+VEE_Gun_Fletcher.tools.barrel.label	barrel
+VEE_Gun_Fletcher.tools.muzzle.label	muzzle
+VEE_Gun_Fletcher.verbs.Verb_ShootCE.label	fletcher
+VFEE_Bullet_FletcherDart.label	fletcher dart
+VFEE_Gun_ChargeThumper.label	charge thumper
+VFEE_Gun_ChargeThumper.description	A modified charged-shot assault shotgun that incorporates mechanoid technology. Recovered thump cannons have been reversed engineered to produce a portable ranged weapon capable of firing blunt projectiles. Quite powerful but short ranged, with high performance against structures and heavily armored targets.
+VFEE_Gun_ChargeThumper.tools.stock.label	stock
+VFEE_Gun_ChargeThumper.tools.barrel.label	barrel
+VFEE_Gun_ChargeThumper.tools.muzzle.label	muzzle
+VFEE_Gun_ChargeThumper.verbs.Verb_ShootCE.label	charge thumper
+VFEE_Bullet_ChargeThumper.label	thump charge
+## DefInjected/ThoughtDef/Thoughts_Honors.xml
+VFEE_FirstOfName.stages.First_of_Name.label	First of {OTHERPAWN_possessive} Name
+VFEE_FirstOfName.stages.First_of_Name.description	{OTHERPAWN_name} is the first of {OTHERPAWN_possessive} name.
+VFEE_TheGreat.stages.Great_honor.label	Great honor
+VFEE_TheGreat.stages.Great_honor.description	I am the recipient of the Great honor.
+VFEE_Chosen.stages.Chosen.label	Chosen
+## DefInjected/ThoughtDef/Thoughts_Memory_Ritual.xml
+VFEE_TerribleBall.stages.terrible_ball.label	terrible ball
+VFEE_TerribleBall.stages.terrible_ball.description	I'm embarrassed to be a part of that train wreck. I just hope no one gossips about this.
+VFEE_BoringBall.stages.boring_ball.label	boring ball
+VFEE_BoringBall.stages.boring_ball.description	I was expecting a grand time. What I got was seriously lacking.
+VFEE_EnjoyableBall.stages.enjoyable_ball.label	enjoyable ball
+VFEE_EnjoyableBall.stages.enjoyable_ball.description	I had a great time dancing at that ball!
+VFEE_AmazingBall.stages.amazing_ball.label	amazing ball
+VFEE_AmazingBall.stages.amazing_ball.description	I had such an amazing time at that ball. It was everything I imagined and more!
+VFEE_TerribleExhibit.stages.terrible_exhibit.label	terrible exhibit
+VFEE_TerribleExhibit.stages.terrible_exhibit.description	I'm embarrassed that we hosted such a terrible art exhibit. Our art will never be respected in the Empire now!
+VFEE_BoringExhibit.stages.boring_exhibit.label	boring exhibit
+VFEE_BoringExhibit.stages.boring_exhibit.description	I was expecting a lot more interesting pieces, and better presentation.
+VFEE_EnjoyableExhibit.stages.enjoyable_exhibit.label	enjoyable exhibit
+VFEE_EnjoyableExhibit.stages.enjoyable_exhibit.description	It was really interesting seeing our collection displayed like this. Was a great time!
+VFEE_AmazingExhibit.stages.amazing_exhibit.label	amazing exhibit
+VFEE_AmazingExhibit.stages.amazing_exhibit.description	I couldn't believe art I've seen many times could still be so fascinating, and the royals were so interesting.
+## DefInjected/ThoughtDef/Thoughts_Memory_Royal.xml
+VFEE_TitleNoBallroom.stages.no_ballroom.label	no ballroom
+VFEE_TitleNoBallroom.stages.no_ballroom.description	What is a royal without a ballroom?
+VFEE_TitleNoGallery.stages.no_gallery.label	no gallery
+VFEE_TitleNoGallery.stages.no_gallery.description	What is a royal without a royal gallery?
+VFEE_TitleBallroomRequirementsNotMet.stages.undignified_ballroom.label	undignified ballroom
+VFEE_TitleBallroomRequirementsNotMet.stages.undignified_ballroom.description	I am {TITLE_indefinite} and I should have these items in my ballroom:\n\n{0}
+VFEE_TitleGalleryRequirementsNotMet.stages.undignified_gallery.label	undignified gallery
+VFEE_TitleGalleryRequirementsNotMet.stages.undignified_gallery.description	I am {TITLE_indefinite} and I should have these items in my gallery:\n\n{0}
+VFEE_LackingNobleCourt.stages.lacking_noble_court.label	lacking noble court
+VFEE_LackingNobleCourt.stages.lacking_noble_court.description	My noble court is lacking. My title’s formal requirements should always be respected. I demand to be surrounded by: \n\n{0}
+VFEE_BadVisit.stages.terrible_visit.label	terrible visit
+VFEE_BadVisit.stages.terrible_visit.description	I had a terrible time with that host.
+## DefInjected/ToolCapacityDef/ToolCapacity.xml
+VFEE_CutToxblade.label	cut
+VFEE_StabToxblade.label	stab
+## DefInjected/TransportShipDef/Misc.xml
+VFEE_Ship_ArmoredShuttle.label	armored shuttle
+## DefInjected/VFEEmpire.HonorDef/HonorDefs.xml
+VFEE_FirstOfName.label	First of {PAWN_possessive} Name
+VFEE_FirstOfName.description	Every noble person has +5 opinion of this pawn.
+VFEE_TheGreat.label	The Great
+VFEE_TheGreat.description	+5 mood
+VFEE_Chosen.label	Chosen of {FACTION_name}
+VFEE_Chosen.description	+10 Opinion from every pawn of {FACTION_name}. +10 Opinion about every pawn of {FACTION_name}.
+VFEE_Destroyer.label	Destroyer of {FACTION_name}
+VFEE_Destroyer.description	+10% Trade Price Improvement with Enemies of {FACTION_name}.
+VFEE_LordOf.label	{RANK} of {SETTLEMENT_label}
+VFEE_LordOf.description	+1 Honor every 5 days when {PAWN_pronoun} is in {SETTLEMENT_label}.
+VFEE_RulerOf.label	Ruler of {SETTLEMENT_label}
+VFEE_RulerOf.description	Tithe collection speed of {SETTLEMENT_label} is doubled.
+VFEE_WieldOfWeapon.label	Wielder of the {WEAPON_label}
+VFEE_WieldOfWeapon.description	50% chance of +1 Honor for every kill with {WEAPON_label}.
+VFEE_PatronOfArts.label	Patron of Arts
+VFEE_PatronOfArts.description	+3 Honor after successful art exhibition
+VFEE_ChildOf.label	{CHILD} of {PARENT_labelShort}
+VFEE_ChildOf.description	Opinion of {PARENT_labelShort} about {PAWN_labelShort} is locked at 100. Opinion of {PAWN_labelShort} about {PARENT_labelShort} is locked at 100.
+VFEE_Marksman.label	The Marksman
+VFEE_Marksman.description	Shooting skill never decays.
+VFEE_Warrior.label	The Warrior
+VFEE_Warrior.description	Melee skill never decays.
+VFEE_Architect.label	The Architect
+VFEE_Architect.description	Construction skill never decays.
+VFEE_Miner.label	The Miner
+VFEE_Miner.description	Mining skill never decays.
+VFEE_Chef.label	The Chef
+VFEE_Chef.description	Cooking skill never decays.
+VFEE_Gardener.label	The Gardener
+VFEE_Gardener.description	Plants skill never decays.
+VFEE_Rancher.label	The Rancher
+VFEE_Rancher.description	Animals skill never decays.
+VFEE_Craftsman.label	The Craftsman
+VFEE_Craftsman.description	Crafting skill never decays.
+VFEE_Artist.label	The Artist
+VFEE_Artist.description	Artistic skill never decays.
+VFEE_Healer.label	The Healer
+VFEE_Healer.description	Medicine skill never decays.
+VFEE_Negotiator.label	The Negotiator
+VFEE_Negotiator.description	Social skill never decays.
+VFEE_Intellectual.label	The Intellectual
+VFEE_Intellectual.description	Intellectual skill never decays.
+## DefInjected/VFEEmpire.RoyaltyTabDef/RoyaltyTabDefs.xml
+VFEE_GreatHierarchy.label	The Great Hierarchy
+VFEE_GreatHierarchy.description	This screen allows you to view all members of the Empire faction. You can spend honor to invite them as visitors.
+VFEE_Permits.label	Permits
+VFEE_Permits.description	This screen allows you to customize and select permits for each of your noble people.
+VFEE_Vassalage.label	Vassalage
+VFEE_Vassalage.description	This screen allows you to vassalize nearby Imperial bases to gain regular tithes from them.
+VFEE_Honors.label	Honors
+VFEE_Honors.description	This screen allows you to apply previously unlocked honorable titles to your colonists, providing them with unique but very specific perks.
+## DefInjected/VFEEmpire.TerrorismTypeDef/TerrorismTypeDefs.xml
+VFEE_Bomb.label	VFEE_Bomb
+VFEE_Bomb.description	VFEE_Bomb
+VFEE_Assassination.label	VFEE_Assassination
+VFEE_Assassination.description	VFEE_Assassination
+VFEE_Poisoning.label	VFEE_Poisoning
+VFEE_Poisoning.description	VFEE_Poisoning
+## DefInjected/VFEEmpire.TitheTypeDef/TitheTypeDefs.xml
+VFEE_Steel.label	steel mining
+VFEE_Steel.description	This settlement mines steel for their overlord.
+VFEE_Wood.label	wood cutting
+VFEE_Wood.description	This settlement chops wood for their overlord.
+VFEE_Gold.label	gold tax
+VFEE_Gold.description	This settlement pays gold to their overlord.
+VFEE_Silver.label	silver tax
+VFEE_Silver.description	This settlement pays silver to their overlord.
+VFEE_Farming.label	farming
+VFEE_Farming.description	This settlement produces survival meals for their overlord.
+VFEE_Honor.label	honor tax
+VFEE_Honor.description	This settlement provides honor to their overlord.
+VFEE_Slavery.label	slavery
+VFEE_Slavery.description	This settlement captures slaves for their overlord.
+## Keyed/Misc.xml
+VFEE.OR	OR
+VFEE.StartBestower.NoThrone	Unable to start due to {0} not having a dignified throne.
+VFEE.StartBestower.NoTarget	Unable to start due to no valid throne rooms for the bestowing of the title.
+VFEE.StartBestower.HigherTitle	Unable to start due to target already possesing a higher title
+VFEE.StartBestower.DisabledExistingRitual	Unable to start while an existing ritual is ongoing.
+VFEE.GalleryRequirements	Gallery requirements
+VFEE.GalleryRequirements.Unmet	a gallery that meets these requirements:\n\n{0}
+VFEE.BallroomRequirements	Ballroom requirements
+VFEE.BallroomRequirements.Unmet	a ballroom that meets these requirements:\n\n{0}
+VFEE.BallroomRequirements.DanceFloorToSmall	a ballroom with an open dance floor of at least {0} tiles in front of an instrument
+VFEE.CourtRequirements	Noble court requirements
+VFEE.GrandBall.Begin	Host grand ball
+VFEE.GrandBall.Label	grand ball
+VFEE.GrandBall.Leave.label	Leave grand ball
+VFEE.GrandBall.Leave.Desc	This pawn will leave the grand ball and will not be able to rejoin the festivities later.
+VFEE.GrandBall.Cancel.Label	Cancel grand ball
+VFEE.GrandBall.Cancel.Desc	Cancel the grand ball, sending everyone home and failing the quest.
+VFEE.GrandBall.Cancel.Confirm	There will be no opportunity to restart this ritual. Your guests will go home unhappy and the quest will be failed.
+VFEE.GrandBall.Waiting	Your guests are waiting for you to start the grand ball. They won't wait long, however.
+VFEE.GrandBall.Description	An exclusive ball to only be attended by those with a royal title, and a few who can play instruments
+VFEE.GrandBall.ChooseParticipants	Participants
+VFEE.ArtExhibit.Begin	Host art exhibit
+VFEE.ArtExhibit.Label	art exhibit
+VFEE.ArtExhibit.Leave.label	Leave exhibit
+VFEE.ArtExhibit.Leave.Desc	This pawn will leave the exhibit and will not be able to rejoin the festivities later.
+VFEE.ArtExhibit.Leave.Disabled	The host cannot leave the exhibit.
+VFEE.ArtExhibit.Cancel.Label	Cancel exhibit
+VFEE.ArtExhibit.Cancel.Desc	Cancel the art exhibit, sending everyone home and failing the quest.
+VFEE.ArtExhibit.Cancel.Confirm	There will be no opportunity to restart this ritual. Your guests will go home unhappy and the quest will be failed.
+VFEE.ArtExhibit.Waiting	Your guests are waiting for you to start the art exhibit. They won't wait long, however.
+VFEE.ArtExhibit.Description	An art expedition to only be attended by those with a royal title, to view your galley and gossip with eachother.
+VFEE.ArtExhibit.ChooseParticipants	Participants
+VFEE.Parade.Begin	Host parade
+VFEE.Parade.Murder	Driven by jealousy, {0} is attempting to murder the stellarch!
+VFEE.Parade.Label	parade
+VFEE.Parade.Leave.label	Leave parade
+VFEE.Parade.Leave.Desc	This pawn will leave the parade and will not be able to rejoin the festivities later.
+VFEE.Parade.Leave.Disabled	The stellarch cannot leave the parade.
+VFEE.Parade.Cancel.Label	Cancel parade
+VFEE.Parade.Cancel.Desc	Cancel the parade, sending everyone home and failing the quest.
+VFEE.Parade.Cancel.Confirm	There will be no opportunity to restart this ritual. Your guests will go home unhappy and the quest will be failed.
+VFEE.Parade.Waiting	Your guests are waiting for you to start the parade. They won't wait long, however.
+VFEE.Parade.Description	A traditional ascension parade to send off the stellarch!
+VFEE.Parade.InvalidGuard	The stellarch does not trust {0} enough.
+VFEE.Parade.ChooseParticipants	Participants
+VFEE.Parade.LandingAreaUnmet	a landing pad for the guests' shuttle, marked out by four powered ship landing beacons
+VFEE.Parade.Reward.Label	Stellarch Ascension
+VFEE.Parade.Reward.Description	Your stellarch will achieve ascension with passage off-world to progress further in the grand hierarchy, serving directly with the Emperor
+VFEE.Parade.EndGame.Intro	{STELLARCH_nameDef} has ascended!
+VFEE.Parade.EndGame.Ending	The Imperial shuttle has carried {STELLARCH_nameDef} and everyone who ascended with {STELLARCH_objective} off this rimworld. From now on, {STELLARCH_pronoun} serves at the right hand of Emperor {EMPEROR_nameFull}.\n\nThe colony remains, and its story goes on.
+VFEE.Parade.NoblesArriveIn	Nobles arrive in {0}
+VFEE.Parade.NoblesArriveOn	The nobles land on {0}.
+VFEE.Parade.NoblesArriveInDesc	The shuttle carrying the nobility for the ascension parade lands in {0}. Until then, the colony has time to prepare. The nobles will not land while the stellarch is away, the colony is under threat or a landing pad the colony has built cannot be used, and if that lasts a day, the parade is called off.
+VFEE.Parade.NoblesWaiting	Parade nobles waiting
+VFEE.Parade.NoblesWaitingAwayDesc	The nobles for the ascension parade will not land until {STELLARCH_nameDef} is at the colony to receive them. If {STELLARCH_pronoun} is not back within {TIME}, the parade is called off.
+VFEE.Parade.NoblesWaitingThreatDesc	The nobles for the ascension parade will not land while the colony is under threat. If the danger has not passed within {TIME}, the parade is called off.
+VFEE.Parade.NoblesWaitingPadDesc	The nobles for the ascension parade will not land until their shuttle can use your landing pad:\n\n{PROBLEMS}\n\nFix the pad, or deconstruct its beacons to have the nobles land near the colony instead. If the pad still cannot be used within {TIME}, the parade is called off.
+VFEE.Parade.NoblesWaitingPadToo	Their shuttle cannot use your landing pad either:\n\n{PROBLEMS}
+VFEE.Parade.PadUnusableMessage	The nobles' shuttle will not land until your landing pad can be used: {0}.
+VFEE.Parade.PadUnformed	your ship landing beacons do not mark out a landing pad, which takes four of them at the corners of a rectangle with sides of {0} to {1} cells
+VFEE.Parade.PadBeaconUnpowered	a beacon is unpowered
+VFEE.Parade.PadBeaconsUnpowered	{0} beacons are unpowered
+VFEE.Parade.PadRoofed	a roof covers {0}
+VFEE.Parade.PadBlockedBy	blocked by {0}
+VFEE.Parade.PadGround	{0} cannot support a landing
+VFEE.Parade.PadCellsOf	{0} of {1}
+VFEE.Parade.PadCell	cell
+VFEE.Parade.PadUnusable	it cannot be used
+VFEE.Parade.CalledOffIn	Called off in {0}
+VFEE.Parade.CalledOffOn	Unless the nobles can land first, the parade is called off on {0}.
+VFEE.DefuseBomb	Defuse bomb
+VFEE.AssassinationSuccess	Deserters are leaving as they have eliminated their target.
+VFEE.Discard	Discard
+VFEE.RoyaltyDead	Deserters are leaving as they have eliminated every imperial title holder in the area.
+VFEE.GotDrug	{0} has sent you a celebration package of aperitif!
+VFEE.TitheArrived	The tithe of {0} has arrived from {1}.
+VFEE.HonorGainedTitle	1 Honor gained by {0} due to {1}
+## Keyed/Settings.xml
+VFEE	VFE - Empire
+VFEE.DeserterChance	Terrorism Chance Multiplier
+VFEE.NoblesPerTitle	Nobles per title: {0}
+VFEE.NoblesPerTitleDesc	Responsible for the number of nobles in the hierarchy. By default, one noble for each title (16), not counting the very first one. The fewer nobles, the higher the performance, but the more boring the empire.\n\nDoes not affect the already generated hierarchy.
+## Keyed/UI.xml
+VFEE.SeeAlso	See also:
+VFEE.ChangeCharacter	Change character
+VFEE.CurrentTitle	Current title: {0}
+VFEE.CurrentHonor	Honor: {0}
+VFEE.PermitPoints	Unused permit points: {0}
+VFEE.DevMode	Developer mode
+VFEE.VassalPoints	Unused vassalage points: {0}
+VFEE.ReleaseAllVassals	Release all vassals
+VFEE.ReleaseAllVassals.Confirm	Releasing vassals will causes resources stored to be lost. Are you sure?
+VFEE.VassalsOf	Vassals of {0}, {1}
+VFEE.TitheDesc	Tithes will be delivered via drop-pods after designated time has elapsed.
+VFEE.Deliver	Deliver
+VFEE.Deliver.EveryWeek	Every 7 days
+VFEE.Deliver.EveryQuadrum	Every 15 days
+VFEE.Deliver.EveryYear	Once a year
+VFEE.Deliver.DaysSpecific	Every {0} days
+VFEE.Deliver.Never	Never (pause)
+VFEE.Created	{0} {1} created every day.
+VFEE.CreatedSpecial	{0} {1} created every {2} days.
+VFEE.InStockpile	{0} in stockpile: {1}
+VFEE.VassalDesc	You can only vassalize bases that are less than 100 tiles away from you or your vassals\nVassalize more towns to increase the reach and unlock more potential vassal subjects
+VFEE.NoVassalize	Can't vassalize: Too far away
+VFEE.Vassalize	Vassalize
+VFEE.RoomRequirementInstrumentSpace	dance space for all instruments
+VFEE.OfThe	{0} of the {1}
+VFEE.Invite	Invite as visitor
+VFEE.InviteAs	Invite as {0} (Cost: {1} honor)
+VFEE.Skip.Title.Previous	Skip to previous title
+VFEE.Skip.Title.Next	Skip to next title
+VFEE.Skip.Colonist.Previous	Skip to previous Colonist
+VFEE.Skip.Colonist.Next	Skip to next Colonist
+VFEE.Honors.RemoveAll	Remove all honors
+VFEE.Honors.Active	These honors are active on your noble. Drag them to the right to remove them from this character.
+VFEE.Honors.Available	These honors are available to be equipped on your nobles. Drag them to the left to activate them on the chosen noble.
+VFEE.HonorsOf	Honors of {0}, {1}
+VFEE.Honors.Reward	you will gain the honor {0} to assign to a colonist
+VFEE.Honors	Honors
+VFEE.MustBeLordOf	Must be lord of {0}
+VFEE.MustWield	Must wield {0}
+VFEE.MustHaveParent	Must have a parent
+VFEE.Honor.Pending	This must be bestowed in a ceremony before it will become active.
+VFEE.Honor.Bestow	Bestow Honor
+VFEE.Honor.BestowPlural	Bestow Honors
+VFEE.Honor.Bestow.Desc	Bestow pending honors for this noble. Will give the following honors:\n{0}
+VFEE.Successful	Successful
+VFEE.Honor.Bestow.Success	{0} has been bestowed with their pending honors. They have gained:\n{0}
+VFEE.Honor.NoHonors	Must have pending honors to bestow.
+VFEE.ForcedFaction.Empire.CannotDisable	{FACTION} cannot be disabled as it's required by Vanilla Factions Expanded - Empire.
+VFEE.ForcedFaction.Empire.FactionDiscoveryMessage	{FACTION} must be added to the game as it's required by Vanilla Factions Expanded - Empire.
+VFEE.ForcedFaction.Deserters.CannotDisable	{FACTION} cannot be disabled as it's required by Vanilla Factions Expanded - Deserters.
+VFEEmpire.RitualRoleTitled.NotTitled	Must be title holder.
+VFEEmpire.RitualRoleTitled.NotColonist	Must be colonist.
+VFEEmpire.RoyalAddress.Finished	Royal address organized by {ORGANIZER} ended.
+VFEEmpire.RoyalAddress.OrganizerGained	{PAWN} gained {COUNT} honor.
+VFEEmpire.RoyalAddress.OrganizerLost	{PAWN} lost {COUNT} honor.
+VFEEmpire.RoyalAddress.TitledGained	{PAWN} can now receive the title of {TITLE} from {FACTION}.
+VFEEmpire.BestowTitle.Finished	Bestowing ceremony organized by {ORGANIZER} ended.

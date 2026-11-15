@@ -1,0 +1,193 @@
+## DefInjected/HediffDef/Hediffs_Mechanitor.xml
+AG_MechRepairBoost.label	reforço de conserto
+AG_MechRepairBoost.description	As capacidades deste mecanoide foram reforçadas por um mecanitor com habilidade de conserto aprimorada geneticamente.
+## DefInjected/HediffDef/Hediffs_MetalResource.xml
+AG_MineralCraving.label	fissura por minerais
+AG_MineralCraving.description	Por falta de minerais, o corpo desta pessoa não consegue mais manter o metabolismo. A fome é insaciável
+AG_MineralCraving.stages.minor.label	leve
+AG_MineralCraving.stages.moderate.label	moderada
+AG_MineralCraving.stages.major.label	grave
+AG_MineralFueled.label	movido a minerais
+AG_MineralFueled.description	Oculto: movido a minerais
+AG_MineralFueled.stages.off.label	desligado
+AG_MineralFueled.stages.on.label	ligado
+AG_ReactiveArmourHediff.label	armadura reativa
+AG_ReactiveArmourHediff.description	Os minerais estão endurecendo a pele contra ataques, na medida da força das reservas minerais.
+AG_ReactiveArmourHediff.stages.minimal_armour.label	armadura mínima
+AG_ReactiveArmourHediff.stages.wavering_armour.label	armadura instável
+AG_ReactiveArmourHediff.stages.hardened_armour.label	armadura endurecida
+AG_ReactiveArmourHediff.stages.impenetrable_armour.label	armadura impenetrável
+AG_MineralOverdriveHediff.label	sobrecarga mineral
+AG_MineralOverdriveHediff.description	As reservas minerais estão sendo consumidas depressa para trabalhar num ritmo alucinante!
+AG_MineralOverdriveHediff.stages.overdrive.label	sobrecarga
+## DefInjected/HediffDef/Hediffs_Movement.xml
+AG_Hover.label	planar
+AG_Hover.description	Voo limitado que permite a este colono saltitar e planar curtas distâncias sobre o terreno. Ignora o custo de movimento do terreno ao andar.
+AG_WaterStriding.label	passada aquática
+AG_WaterStriding.description	Esta pessoa anda na água sem penalidade. Ignora o custo de movimento em terrenos com água.
+AG_HoverExploder.label	flutuação a hidrogênio
+AG_HoverExploder.description	Voo limitado que permite a este colono flutuar sobre o terreno. Ignora o custo de movimento do terreno ao andar. O hidrogênio das bolsas de gás faz esta pessoa explodir quando morre.
+AG_SpeedBurst.label	afetado por explosão de velocidade
+AG_SpeedBurst.description	Esta pessoa foi afetada por uma explosão de velocidade e anda mais rápido por um tempo. Os efeitos passam depois de 1 hora.
+## DefInjected/HediffDef/Hediffs_Reproduction.xml
+AG_AsexualFission.label	fissão
+AG_AsexualFission.description	Gera de tempos em tempos pequenos aglomerados de matéria orgânica nas costas, que se desenvolvem aos poucos até virar seres humanos completos e se separam do hospedeiro/pai por estrobilização. É uma fonte infinita de novos colonos, com o risco de inundar a colônia de recém-nascidos.
+AG_HumanEggLaying.label	ovíparo
+AG_HumanEggLaying.description	Fêmeas com este gene botam ovos de tempos em tempos quando fecundadas.
+AG_ParasiticImplantation.label	implante parasitário
+AG_ParasiticImplantation.description	Afetado por um implante parasitário. Se o implante chegar à gravidade 1, ou se a criatura morrer com ele avançado (mais de 90%), as larvas humanas dentro dos ovos parasitas devoram a vítima por dentro e eclodem do cadáver. A gestação dura 15 dias.
+AG_ParasiticImplantation.stages.minor.label	leve
+AG_ParasiticImplantation.stages.major.label	grave
+AG_ParasiticImplantation.stages.extreme-0.label	extremo
+AG_ParasiticImplantation.stages.extreme-1.label	extremo
+## DefInjected/HediffDef/Hediffs_ResourceProduction.xml
+AG_InsectJellyProduction.label	produção de geleia
+AG_InsectJellyProduction.description	A pele desta pessoa exsuda e produz bolotas de geleia de inseto sem parar, o que dá um pouco de comida extra para a colônia.
+## DefInjected/HediffDef/Hediffs_Royalty.xml
+AG_Invisibility.label	invisibilidade psíquica
+AG_Invisibility.description	Esta pessoa alterou psiquicamente o tom da pele para se camuflar em quase qualquer ambiente.
+AG_PsychicSight.label	visão psíquica
+AG_PsychicSight.description	Esta pessoa é totalmente cega... até ganhar poderes psíquicos. Consegue direcionar a visão psíquica interior e enxerga ainda melhor quanto mais poder adquire.
+AG_PsychicInsanity.label	insanidade psíquica
+AG_PsychicInsanity.description	Esta pessoa tem poderes psíquicos que dependem do humor. Com humor baixo, e portanto maior risco de colapso, ganha bônus psíquicos. Com uma catarse, os bônus são ainda maiores (mesmo que o humor suba durante a catarse).
+AG_PsychicInsanity.stages.no_effect.label	sem efeito
+AG_PsychicInsanity.stages.cathartic.label	catártico
+AG_PsychicInsanity.stages.extreme.label	extremo
+AG_PsychicInsanity.stages.major.label	forte
+AG_PsychicInsanity.stages.minor.label	leve
+## DefInjected/HediffDef/Hediffs_Sunlight.xml
+AG_Sensitivity_Vicious_Hediff.label	sensibilidade cruel a UV
+AG_Sensitivity_Vicious_Hediff.description	Esta pessoa desmaia sob a luz direta do sol.
+AG_UVSensitivity_Minor_Hediff.label	sensibilidade leve a UV
+AG_UVSensitivity_Minor_Hediff.description	Os olhos desta pessoa doem um pouco sob a luz direta do sol.
+AG_Sensitivity_Lethal_Hediff.label	sensibilidade letal a UV
+AG_Sensitivity_Lethal_Hediff.description	Esta pessoa morre queimada rapidamente sob a luz direta do sol.
+## DefInjected/HediffDef/Hediffs_Temperature.xml
+AG_HeatRadiating.label	irradia calor
+AG_HeatRadiating.description	Gera calor intenso de até 80 ºC. Lembre-se: esta condição sozinha não deixa o portador resistente ao calor.
+AG_ColdRadiating.label	irradia frio
+AG_ColdRadiating.description	Gera frio intenso de até -20 ºC. Lembre-se: esta condição sozinha não deixa o portador resistente ao frio.
+AG_SpeedByTemperature.label	velocidade térmica
+AG_SpeedByTemperature.description	Anda rápido em temperaturas altas, mas se cansa muito mais.
+## DefInjected/HediffDef/Hediffs_Teratogenic.xml
+AG_TeratogenicManipulation.label	coordenação teratogênica
+AG_TeratogenicManipulation.description	Esta pessoa está com a manipulação e a destreza manual aumentadas.
+AG_TeratogenicSwiftness.label	agilidade teratogênica
+AG_TeratogenicSwiftness.description	Esta pessoa está com a velocidade de movimento e de trabalho aumentadas.
+AG_TeratogenicStamina.label	vigor teratogênico
+AG_TeratogenicStamina.description	Esta pessoa está com um enorme reforço no sistema imunológico e no vigor geral.
+## DefInjected/HediffDef/Hediffs_Thoughts.xml
+AG_Disgust.label	inimaginavelmente feio
+AG_Disgust.description	Não há palavras para descrever o quanto esta pessoa é repugnante.
+AG_Awe.label	beleza angelical
+AG_Awe.description	Esta pessoa emana uma aura de beleza sobrenatural.
+AG_PsychicDrone.label	zumbido psíquico
+AG_PsychicDrone.description	Ficar perto desta pessoa dá uma sensação reconfortante.
+## DefInjected/HediffDef/Hediffs_VIE.xml
+AG_RoyalJellyProduction.label	produção de geleia real
+AG_RoyalJellyProduction.description	A pele desta pessoa exsuda e produz bolotas de geleia real sem parar, o que dá um pouco de comida extra para a colônia.
+## DefInjected/HediffDef/Hediffs_Weather.xml
+AG_Fogger.label	gerador de névoa
+AG_Fogger.description	Uma nuvem difusa de mecanitos está entrelaçada ao DNA desta pessoa. Esses mecanitos influenciam a umidade da atmosfera ao redor, fazendo uma névoa densa e espessa se formar.
+AG_RainMaker.label	gerador de chuva
+AG_RainMaker.description	Uma nuvem difusa de mecanitos está entrelaçada ao DNA desta pessoa. Esses mecanitos reduzem drasticamente a pressão atmosférica ao redor, causando chuva constante.
+AG_FoggyRainMaker.label	gerador de chuva e névoa
+AG_FoggyRainMaker.description	Uma nuvem difusa de mecanitos está entrelaçada ao DNA desta pessoa. Esses mecanitos reduzem drasticamente a pressão atmosférica ao redor, causando chuva constante e uma névoa densa e espessa.
+AG_RainyThunderstormMaker.label	gerador de temporal
+AG_RainyThunderstormMaker.description	Uma nuvem difusa de mecanitos está entrelaçada ao DNA desta pessoa. Esses mecanitos aumentam drasticamente a energia eletrostática e reduzem a pressão atmosférica, formando uma violenta tempestade com chuva.
+AG_DryThunderstormMaker.label	gerador de tempestade seca
+AG_DryThunderstormMaker.description	Uma nuvem difusa de mecanitos está entrelaçada ao DNA desta pessoa. Esses mecanitos aumentam drasticamente a energia eletrostática na atmosfera, formando uma violenta tempestade seca de raios. Isso não deixa o portador imune a raios!
+AG_SnowMaker.label	gerador de neve
+AG_SnowMaker.description	Uma nuvem difusa de mecanitos está entrelaçada ao DNA desta pessoa. Esses mecanitos reduzem drasticamente a temperatura na alta atmosfera, fazendo nevar.
+## DefInjected/JobDef/Jobs_Metal.xml
+AG_ConsumeMetal.reportString	consumindo TargetA.
+AG_FeedMetal.reportString	alimentando TargetB.
+AG_DeliverMetal.reportString	Entregando para TargetC.
+## DefInjected/JobDef/Jobs_Work.xml
+AG_UseGeneRemover.reportString	usando removedor de genes.
+AG_UseEndogenefier.reportString	usando endogenificador.
+AG_UseXenogenefier.reportString	usando xenogenificador.
+AG_UseXenotypeNullifier.reportString	usando anulador de xenotipo.
+AG_UseGermlineMutator.reportString	usando mutador de linhagem germinativa.
+AG_UseXenotypeInjector.reportString	usando injetor de xenotipo.
+AG_UseGenepackTweaker.reportString	usando ajustador de pacote genético.
+AG_UseGenepackDisruptor.reportString	usando desestabilizador de pacote genético.
+AG_UseArchoGeneRemover.reportString	usando removedor de genes arcotec.
+AG_UseArchoEndogenefier.reportString	usando endogenificador arcotec.
+AG_UseArchoXenogenefier.reportString	usando xenogenificador arcotec.
+## DefInjected/MapGeneratorDef/PocketPlaneMapGenerator.xml
+AG_NereidPocketPlane.label	plano de bolso nereida
+## DefInjected/MapGeneratorDef/PocketPlaneMapGenerator_Anomaly.xml
+AG_PocketPlane.label	plano de bolso
+## DefInjected/MentalBreakDef/MentalStates_Special.xml
+AG_Thalassophobia.label	terror da água
+## DefInjected/MentalStateDef/MentalStates_Special.xml
+AG_Thalassophobia.label	fugindo da água em pânico
+AG_Thalassophobia.baseInspectLine	Estado mental: fugindo da água
+AG_Thalassophobia.beginLetter	{0} está fugindo da água.
+AG_Thalassophobia.beginLetterLabel	fugindo da água
+AG_Thalassophobia.recoveryMessage	{0} não está mais fugindo da água.
+AG_SelectiveManhunter.label	fúria
+AG_SelectiveManhunter.baseInspectLine	Enfurecido
+## DefInjected/MVCF.ModDef/MVCF_Anomaly.xml
+AG_AlphaGenes_Anomaly_MVCF.label	AlphaGenes - Anomaly
+AG_AlphaGenes_Anomaly_MVCF.description	Adiciona ataques à distância de animais do AlphaGenes - Anomaly
+## DefInjected/PawnKindDef/Races_OcularSlinger.xml
+AG_OcularSlinger.label	atirador ocular
+## DefInjected/QuestScriptDef/Script_BiotechAbandonedLab.xml
+AG_OpportunitySite_AbandonedBiotechLab.questDescriptionRules.rulesStrings[0]	questDescription(askerIsNull==true)->Um radiofarol abandonado parece estar emitindo sinais fracos com um rastreador de localização. Decifrando os sinais, descobrimos que eles levam a um antigo laboratório da Biotech não muito longe de [map_definite]. O local pode ter tecnologia genética aproveitável, então vale a pena investigar.\n\nDevemos ir bem preparados, porque o radiofarol pode atrair presenças hostis até o laboratório.
+AG_OpportunitySite_AbandonedBiotechLab.questNameRules.rulesStrings[0]	questName(priority=1)->[biotechlab] [discovered]
+AG_OpportunitySite_AbandonedBiotechLab.questNameRules.rulesStrings[1]	biotechlab->Laboratório Biotech
+AG_OpportunitySite_AbandonedBiotechLab.questNameRules.rulesStrings[2]	biotechlab->Laboratório genético Biotech
+AG_OpportunitySite_AbandonedBiotechLab.questNameRules.rulesStrings[3]	biotechlab->Laboratório de experimentos Biotech
+AG_OpportunitySite_AbandonedBiotechLab.questNameRules.rulesStrings[4]	biotechlab->Laboratório de xenotipos Biotech
+AG_OpportunitySite_AbandonedBiotechLab.questNameRules.rulesStrings[5]	biotechlab->Laboratório de genética humana Biotech
+AG_OpportunitySite_AbandonedBiotechLab.questNameRules.rulesStrings[6]	discovered->descoberto
+AG_OpportunitySite_AbandonedBiotechLab.questNameRules.rulesStrings[7]	discovered->encontrado
+AG_OpportunitySite_AbandonedBiotechLab.questNameRules.rulesStrings[8]	discovered->localizado
+AG_OpportunitySite_AbandonedBiotechLab.questNameRules.rulesStrings[9]	discovered->revelado
+AG_OpportunitySite_AbandonedBiotechLab.questNameRules.rulesStrings[10]	discovered->rastreado
+AG_OpportunitySite_AbandonedBiotechLab.questNameRules.rulesStrings[11]	discovered->desenterrado
+AG_OpportunitySite_AbandonedBiotechLab.root.nodes.WorldObjectTimeout.node.nodes.Letter.label.slateRef	Missão expirada: [resolvedQuestName]
+AG_OpportunitySite_AbandonedBiotechLab.root.nodes.WorldObjectTimeout.node.nodes.Letter.text.slateRef	Comunicações interceptadas indicam que o laboratório biotech abandonado foi saqueado por outros. A missão [resolvedQuestName] expirou.
+## DefInjected/RecipeDef/RecipeDefs.xml
+AG_RemoveImplantation.label	remover implante parasitário
+AG_RemoveImplantation.description	Remove um implante parasitário.
+AG_RemoveImplantation.jobString	Removendo implante parasitário.
+AG_RemoveImplantation.successfullyRemovedHediffMessage	{0} removeu com sucesso o implante parasitário de {1}.
+## DefInjected/RulePackDef/RulePacks_Damage.xml
+AG_SterilizingBreath_Rules.rulePack.rulesStrings[0]	damaged_past->esterilizou
+AG_SterilizingBreath_Rules.rulePack.rulesStrings[1]	damaged_past->limpou
+AG_SterilizingBreath_Rules.rulePack.rulesStrings[2]	destroyed_past->damaged_past
+AG_BansheeScream_Rules.rulePack.rulesStrings[0]	damaged_past->atordoou
+AG_BansheeScream_Rules.rulePack.rulesStrings[1]	damaged_past->gritou com
+AG_BansheeScream_Rules.rulePack.rulesStrings[2]	damaged_past->detonou
+AG_BansheeScream_Rules.rulePack.rulesStrings[3]	destroyed_past->damaged_past
+AG_NoxiousBreath_Rules.rulePack.rulesStrings[0]	damaged_past->arrotou em
+AG_NoxiousBreath_Rules.rulePack.rulesStrings[1]	damaged_past->vomitou em
+AG_NoxiousBreath_Rules.rulePack.rulesStrings[2]	damaged_past->golfou em
+AG_NoxiousBreath_Rules.rulePack.rulesStrings[3]	destroyed_past->damaged_past
+## DefInjected/RulePackDef/RulePacks_Genepacks.xml
+AG_NamerAlphapack.rulePack.rulesStrings[0]	r_name->alfapacote ([geneWord][otherGenesInfo])
+AG_NamerAlphapack.rulePack.rulesStrings[1]	otherGenesInfo(geneCount==1)->
+AG_NamerAlphapack.rulePack.rulesStrings[2]	otherGenesInfo(geneCount>=2)-> +[geneCountMinusOne]
+AG_NamerMixedpack.rulePack.rulesStrings[0]	r_name->pacote misto ([geneWord][otherGenesInfo])
+AG_NamerMixedpack.rulePack.rulesStrings[1]	otherGenesInfo(geneCount==1)->
+AG_NamerMixedpack.rulePack.rulesStrings[2]	otherGenesInfo(geneCount>=2)-> +[geneCountMinusOne]
+## DefInjected/ScenarioDef/Scenarios.xml
+AG_WretchScenario.label	Existência Miserável
+AG_WretchScenario.description	Não havia luz no laboratório, só escuridão. Nenhuma voz, só silêncio. E, em muitos dias, nenhuma comida...\n\nUm dia, tudo mudou. Sirenes tocaram, explosões sacudiram as grossas paredes de concreto e, de repente, liberdade: uma lufada de ar e a luz do sol, quase esquecida. Vocês três correram e nunca olharam para trás. Mas estavam mudados para sempre...
+AG_WretchScenario.scenario.description	Não havia luz no laboratório, só escuridão. Nenhuma voz, só silêncio. E, em muitos dias, nenhuma comida...\n\nUm dia, tudo mudou. Sirenes tocaram, explosões sacudiram as grossas paredes de concreto e, de repente, liberdade: uma lufada de ar e a luz do sol, quase esquecida. Vocês três correram e nunca olharam para trás. Mas estavam mudados para sempre...
+AG_WretchScenario.scenario.name	Existência Miserável
+AG_WretchScenario.scenario.parts.ConfigurePawnsXenotypes.customSummary	Comece com três desgraçados.
+AG_WretchScenario.scenario.parts.GameStartDialog.text	Não havia luz no laboratório, só escuridão. Nenhuma voz, só silêncio. E, em muitos dias, nenhuma comida...\n\nUm dia, tudo mudou. Sirenes tocaram, explosões sacudiram as grossas paredes de concreto e, de repente, liberdade: uma lufada de ar e a luz do sol, quase esquecida. Vocês três correram e nunca olharam para trás. Mas estavam mudados para sempre...
+AG_WretchScenario.scenario.summary	Três vítimas de experimentos genéticos tentam sobreviver na natureza.
+AG_ForsakenCrashlanded.label	Os Abandonados
+AG_ForsakenCrashlanded.description	Exilados e abandonados, vocês foram mandados em cápsulas de carga para outro mundo da Orla e agora precisam sobreviver sozinhos.
+AG_ForsakenCrashlanded.scenario.description	Exilados e abandonados, vocês foram mandados em cápsulas de carga para outro mundo da Orla e agora precisam sobreviver sozinhos.
+AG_ForsakenCrashlanded.scenario.name	Os Abandonados
+AG_ForsakenCrashlanded.scenario.parts.ConfigurePawnsXenotypes.xenotypeCounts.0.description	renegado adulto
+AG_ForsakenCrashlanded.scenario.summary	Três sobreviventes renegados, exilados e abandonados
+## DefInjected/SitePartDef/BiotechLabs.xml
+AG_AbandonedBiotechLab.label	laboratório biotech abandonado
+AG_AbandonedBiotechLab.description	Um laboratório biotech abandonado, descoberto recentemente.

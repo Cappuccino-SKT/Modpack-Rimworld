@@ -15,6 +15,7 @@ param(
     [string]$Save,
     [switch]$Window,
     [switch]$Build,
+    [string[]]$Exclude = @(),   # packageIds a desativar no perfil de teste (ex.: ecosdaqueda.traducao ao exportar textos)
     [int]$TimeoutSec = 1200
 )
 $ErrorActionPreference = 'Stop'
@@ -49,7 +50,7 @@ if ($Profile -eq 'lean') {
     $active.RemoveAll()
     foreach ($id in $lean) { $li = $cfg.CreateElement('li'); $li.InnerText = $id; [void]$active.AppendChild($li) }
 }
-@($active.SelectNodes('li') | Where-Object { $_.InnerText -eq 'ecosdaqueda.debug' }) | ForEach-Object { [void]$active.RemoveChild($_) }
+@($active.SelectNodes('li') | Where-Object { $_.InnerText -eq 'ecosdaqueda.debug' -or $Exclude -contains $_.InnerText }) | ForEach-Object { [void]$active.RemoveChild($_) }
 $li = $cfg.CreateElement('li'); $li.InnerText = 'ecosdaqueda.debug'; [void]$active.AppendChild($li)
 $cfg.Save((Join-Path $profileDir 'Config\ModsConfig.xml'))
 

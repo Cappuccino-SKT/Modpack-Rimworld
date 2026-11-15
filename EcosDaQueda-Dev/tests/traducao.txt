@@ -1,0 +1,41 @@
+# Confere que o mod de tradução PT-BR está aplicado (rodar com -Profile full; o perfil copia o idioma do jogador).
+# Erros de DefInjected (caminho inválido, def inexistente) aparecem no log e fazem o teste falhar.
+newgame
+language
+deftext GeneDef VRE_CurledTail
+deftext XenotypeDef VRE_Boarskin
+deftext XenotypeDef VREH_Uhlan
+deftext XenotypeDef VRE_Fungoid
+deftext XenotypeDef VRE_Lowmate
+deftext XenotypeDef VRE_Poluxkin
+deftext XenotypeDef VRESaurids_Saurid
+deftext XenotypeDef VRE_Lycan
+deftext XenotypeDef VRE_Strigoi
+deftext XenotypeDef VRE_Insector
+deftext GeneDef VREStarjack_Cryostasis
+deftext GeneDef VREW_PollutionRage
+deftext GeneDef VRE_Curiosity_Mining
+deftext GeneDef AG_ChainsawHands
+deftext XenotypeDef AG_Lapis
+deftext ThingDef AG_GeneRemover
+transerrors alphagenes
+transerrors vanillaraces
+deftext AnimalGeneTemplateDef AlphaGenes_AnimalSummon
+deftext WeaponGeneTemplateDef VREHT_WeaponAptitude
+deftext MorphGeneTemplateDef VRE_Morphs
+genegen Summon
+genegen Aptitude
+genegen Morph
+# Mods sem gene (VVE, Vehicle Framework, VPE, VFE Empire/Deserters, VRE Android)
+deftext ThingDef VVE_Bulldog
+deftext ThingDef VVE_GarageBench
+deftext ResearchProjectDef VVE_CombatVehicles
+deftext DesignationCategoryDef VF_Vehicles
+deftext VEF.Abilities.AbilityDef VPE_Neuroquake
+deftext PsycasterPathDef VPE_Chronopath
+deftext ThingDef VPE_Eltex
+deftext ResearchProjectDef VPE_EltexGear
+deftext ResearchProjectDef VREA_AndroidTech
+transerrors vehicle
+transerrors psycast
+transerrors vfe

@@ -1,0 +1,220 @@
+## DefInjected/GeneDef/GeneDefs_Food.xml
+AG_TableResistance.symbolPack.prefixSymbols.0.symbol	em-pé
+AG_TableResistance.symbolPack.prefixSymbols.1.symbol	sem-joelho
+AG_TableResistance.symbolPack.prefixSymbols.2.symbol	sem-mesa
+## DefInjected/GeneDef/GeneDefs_Forsaken.xml
+AG_ForsakenKnowledge.label	conhecimento renegado
+AG_ForsakenKnowledge.description	Portadores deste gene têm conhecimento genético das técnicas e equipamentos dos renegados. Podem construir estruturas renegadas e vestir roupas e armaduras renegadas.
+AG_ForsakenBodyEmblem.label	emblema renegado no corpo
+AG_ForsakenBodyEmblem.description	Portadores deste gene têm na barriga um emblema amarelo ligado aos renegados. Ele traz vários benefícios físicos.
+AG_ForsakenHeadEmblem.label	emblema renegado na cabeça
+AG_ForsakenHeadEmblem.description	Portadores deste gene têm na testa um emblema amarelo ligado aos renegados. Ele traz vários benefícios mentais.
+AG_ExtraordinaryLifespan.label	longevidade extraordinária
+AG_ExtraordinaryLifespan.description	Portadores deste gene têm uma expectativa de vida extraordinária. Porém, as crianças demoram uma eternidade para crescer.
+## DefInjected/GeneDef/GeneDefs_Forsaken_AlphaBiomes.xml
+AG_CragAffinity.label	afinidade com os penhascos
+AG_CragAffinity.description	Portadores deste gene se sentem em casa nos Penhascos Renegados e são imunes à sensação opressiva da escuridão sobrenatural.
+## DefInjected/GeneDef/GeneDefs_GameCreationSummons.xml
+AG_RatAffinity.label	afinidade com roedores
+AG_RatAffinity.description	Portadores deste gene atraem ratos, e uma horda mansa desses bichinhos vive ao redor deles.
+AG_RatAffinity.symbolPack.prefixSymbols.0.symbol	ratinho
+AG_RatAffinity.symbolPack.prefixSymbols.1.symbol	praga
+AG_WolfAffinity.label	afinidade lupina
+AG_WolfAffinity.description	Portadores deste gene têm um vínculo psíquico místico com um lobo.
+AG_WolfAffinity.symbolPack.prefixSymbols.0.symbol	lupi
+AG_WolfAffinity.symbolPack.prefixSymbols.1.symbol	lupino
+AG_JorisAffinity.label	afinidade joris
+AG_JorisAffinity.description	Portadores deste gene têm um interesse muito estranho pela política da Velha Terra e por ursos-polares. Era de se esperar que essas duas coisas não tivessem nada em comum, mas cá estamos.
+AG_JorisAffinity.symbolPack.prefixSymbols.0.symbol	joris
+AG_JorisAffinity.symbolPack.prefixSymbols.1.symbol	sr.
+AG_JorisAffinity.symbolPack.prefixSymbols.2.symbol	sam
+## DefInjected/GeneDef/GeneDefs_GasProducers.xml
+AG_SmokeProducer.label	produtor de fumaça
+AG_SmokeProducer.description	O portador deste gene exala de tempos em tempos nuvens de fumaça densa, que atrapalham ataques à distância, tanto contra ele quanto dele.
+AG_RotStinkProducer.label	produtor de fedor podre
+AG_RotStinkProducer.description	O portador deste gene exala de tempos em tempos nuvens de fedor podre. Nojento!
+AG_ToxGasProducer.label	produtor de gás tóxico
+AG_ToxGasProducer.description	O portador deste gene exala de tempos em tempos nuvens de gás tóxico.
+## DefInjected/GeneDef/GeneDefs_GasProducers_Anomaly.xml
+AG_DeadlifeProducer.label	produtor de poeira morta-viva
+AG_DeadlifeProducer.description	O portador deste gene exala de tempos em tempos nuvens de poeira morta-viva, que levantam os cadáveres próximos como trôpegos.
+## DefInjected/GeneDef/GeneDefs_Gender.xml
+AG_Male.label	masculino
+AG_Male.description	Portadores deste gene são sempre biologicamente do sexo masculino.
+AG_Male.symbolPack.prefixSymbols.0.symbol	andro
+AG_Male.symbolPack.prefixSymbols.1.symbol	macho
+AG_Male.symbolPack.prefixSymbols.2.symbol	ele-
+AG_Female.label	feminino
+AG_Female.description	Portadores deste gene são sempre biologicamente do sexo feminino.
+AG_Female.symbolPack.prefixSymbols.0.symbol	gino
+AG_Female.symbolPack.prefixSymbols.1.symbol	fêmea
+AG_Female.symbolPack.prefixSymbols.2.symbol	ela-
+## DefInjected/GeneDef/GeneDefs_GenelineCosmetics_AlphaGenes.xml
+AG_GenelineCosmetic_MothAntennae.label	antenas de mariposa, cosmético
+AG_GenelineCosmetic_MothAntennae.description	Portadores deste gene têm duas antenas grandes saindo do nariz.
+AG_GenelineCosmetic_InsectoidAntennae.label	antenas insetoides, cosmético
+AG_GenelineCosmetic_InsectoidAntennae.description	Portadores deste gene têm órgãos sensoriais finos e móveis que complementam a visão e a noção de localização.
+AG_GenelineCosmetic_BeeAntennae.label	antenas de abelha, cosmético
+AG_GenelineCosmetic_BeeAntennae.description	Portadores deste gene têm duas antenas grandes de abelha saindo da cabeça.
+AG_GenelineCosmetic_WaspAntennae.label	antenas de vespa, cosmético
+AG_GenelineCosmetic_WaspAntennae.description	Portadores deste gene têm duas antenas grandes de vespa saindo da cabeça.
+AG_GenelineCosmetic_FormicAntennae.label	antenas fórmicas, cosmético
+AG_GenelineCosmetic_FormicAntennae.description	Portadores deste gene têm duas antenas grandes de formiga saindo da cabeça.
+AG_GenelineCosmetic_LowerAntennae.label	antenas inferiores, cosmético
+AG_GenelineCosmetic_LowerAntennae.description	Portadores deste gene têm duas antenas grandes saindo da mandíbula.
+AG_GenelineCosmetic_YellowEyes.label	olhos amarelos, cosmético
+AG_GenelineCosmetic_YellowEyes.description	Portadores deste gene têm olhos amarelo-vivo.
+AG_GenelineCosmetic_Proboscis.label	probóscide, cosmético
+AG_GenelineCosmetic_Proboscis.description	Portadores deste gene têm uma grande probóscide saindo da mandíbula.
+AG_GenelineCosmetic_PincerMandibles.label	mandíbulas de pinça, cosmético
+AG_GenelineCosmetic_PincerMandibles.description	Portadores deste gene têm duas mandíbulas grandes em forma de pinça saindo da boca.
+AG_GenelineCosmetic_BeetleMandibles.label	mandíbulas de besouro, cosmético
+AG_GenelineCosmetic_BeetleMandibles.description	Portadores deste gene têm duas mandíbulas grandes de besouro saindo da boca.
+AG_GenelineCosmetic_BeeMandibles.label	mandíbulas de abelha, cosmético
+AG_GenelineCosmetic_BeeMandibles.description	Portadores deste gene têm duas mandíbulas grandes de abelha saindo da boca.
+AG_GenelineCosmetic_InsectMandibles.label	mandíbulas insetoides, cosmético
+AG_GenelineCosmetic_InsectMandibles.description	Portadores deste gene têm um par de apêndices nas laterais da boca.
+AG_GenelineCosmetic_CompoundEyes.label	olhos compostos, cosmético
+AG_GenelineCosmetic_CompoundEyes.description	Portadores deste gene têm olhos compostos, formados por milhares de unidades fotorreceptoras.
+AG_GenelineCosmetic_MothWings.label	asas de mariposa, cosmético
+AG_GenelineCosmetic_MothWings.description	Portadores deste gene têm um par de asas gigantes de lepidóptero saindo das costas.
+AG_GenelineCosmetic_BumbledroneWings.label	asas de zangão, cosmético
+AG_GenelineCosmetic_BumbledroneWings.description	Portadores deste gene têm dois pares de asas de abelha saindo das costas.
+AG_GenelineCosmetic_WaspWings.label	asas de vespa, cosmético
+AG_GenelineCosmetic_WaspWings.description	Portadores deste gene têm dois pares de asas de vespa saindo das costas.
+AG_GenelineCosmetic_DrainerWings.label	asas de drenador, cosmético
+AG_GenelineCosmetic_DrainerWings.description	Portadores deste gene têm dois pares de asas de drenador saindo das costas.
+## DefInjected/GeneDef/GeneDefs_Hands.xml
+AG_ClawedHands.label	mãos com garras
+AG_ClawedHands.description	Portadores deste gene têm mãos com garras que terminam em unhas cruelmente afiadas. Isso reduz a manipulação, mas dá um bônus no combate corpo a corpo.
+## DefInjected/GeneDef/GeneDefs_Heads.xml
+AG_AerofleetHead.label	capuz de aerofrota
+AG_AerofleetHead.description	Um capuz gelatinoso e translúcido envolve a cabeça do portador.
+AG_AerofleetHead.symbolPack.prefixSymbols.0.symbol	gosm
+AG_AerofleetHead.symbolPack.prefixSymbols.1.symbol	gosmento
+AG_AerofleetHead.symbolPack.prefixSymbols.2.symbol	melado
+AG_AerofleetHead.symbolPack.prefixSymbols.3.symbol	gelat
+AG_SlugFace.label	cabeça de lesma
+AG_SlugFace.description	Os dois olhos do portador saem do crânio em pedúnculos, como os de uma lesma. Gosmento!
+AG_FoxFace.label	cabeça de raposa
+AG_FoxFace.description	Portadores deste gene têm um focinho alongado com nariz redondo e olhos em fenda. Orelhas vendidas separadamente.
+AG_FoxFace.symbolPack.prefixSymbols.0.symbol	animus
+AG_FoxFace.symbolPack.prefixSymbols.1.symbol	empata
+AG_FoxFace.symbolPack.prefixSymbols.2.symbol	telep
+AG_FoxFace.symbolPack.suffixSymbols.0.symbol	-vox
+AG_RockSpurs.label	cristas rochosas
+AG_RockSpurs.description	Portadores deste gene têm acúmulos de minerais na cabeça.
+AG_RockSpurs.symbolPack.prefixSymbols.0.symbol	rocha
+AG_RockSpurs.symbolPack.prefixSymbols.1.symbol	lito
+AG_RockSpurs.symbolPack.prefixSymbols.2.symbol	petr
+AG_CancerousFace.label	cabeça cancerosa
+AG_CancerousFace.description	Portadores deste gene têm uma cabeça encaroçada, de aparência cancerosa, com pele flácida e marcas de bexiga.
+AG_CancerousFace.symbolPack.prefixSymbols.0.symbol	terato
+AG_CancerousFace.symbolPack.prefixSymbols.1.symbol	canc
+AG_CancerousFace.symbolPack.prefixSymbols.2.symbol	tumor
+AG_DrakonoriHead.label	cabeça drakonori
+AG_DrakonoriHead.description	Portadores deste gene têm um rosto de réptil, com focinho.
+AG_VeryGauntHead.label	cabeça muito esquelética
+AG_VeryGauntHead.description	Portadores deste gene têm rosto e cabeça extremamente podres e chupados.
+AG_NereidHead.label	cabeça nereida
+AG_NereidHead.description	Portadores deste gene têm uma cabeça lisa e escamosa, com manchas bioluminescentes.
+AG_ForsakenHead.label	cabeça de renegado
+AG_ForsakenHead.description	Portadores deste gene têm sulcos ao redor do crânio, mas aparência saudável no resto. Não tem nenhum efeito funcional.
+## DefInjected/GeneDef/GeneDefs_Health.xml
+AG_LungRotImmunity.label	pulmões antipodridão totais
+AG_LungRotImmunity.description	Portadores deste gene têm pulmões reforçados, imunes à podridão pulmonar.
+AG_LungRotStrength.label	força da podridão pulmonar
+AG_LungRotStrength.description	Portadores deste gene têm estruturas especiais nos pulmões que fortalecem o corpo quando afetado pela podridão pulmonar, o que torna pilhas de cadáveres... uma perspectiva agradável.
+AG_RegenerationMinor.label	regeneração, menor
+AG_RegenerationMinor.description	Portadores deste gene têm uma rede fraca de mecanitos especializados na corrente sanguínea que tratam periodicamente os ferimentos internos, regenerando-os sem precisar de descanso.
+AG_WaterRegeneration.label	regeneração na água
+AG_WaterRegeneration.description	Portadores deste gene regeneram a saúde devagar sempre que estão em terreno com água.
+AG_LimbRegeneration.label	regeneração de membros
+AG_LimbRegeneration.description	Portadores deste gene têm fatores regenerativos aprimorados no DNA, o que permite regenerar lentamente membros, mesmo os que estão faltando por completo. O processo é lento e prioriza curar membros existentes, mas danificados.
+AG_PassiveRegenerator.label	regenerador passivo
+AG_PassiveRegenerator.description	Portadores deste gene liberam o tempo todo uma nuvem invisível de mecanitos especializados que tratam periodicamente os ferimentos de pessoas e animais próximos, regenerando-os sem precisar de descanso.
+AG_UnstableRegeneration.label	regeneração instável
+AG_UnstableRegeneration.description	Portadores deste gene conseguem curar periodicamente todos os ferimentos, ao custo de um grande esforço e de uma redução na expectativa de vida.
+AG_UnstableMutationMajor.label	mutação instável, maior
+AG_UnstableMutationMajor.description	Portadores deste gene sofrem uma mutação instável no corpo uma vez por dia. A mutação ativa dois genes aleatórios novos durante o dia inteiro. No dia seguinte, eles se desativam e dois novos tomam o lugar.
+AG_UnstableMutationCatastrophic.label	mutação instável, catastrófica
+AG_UnstableMutationCatastrophic.description	Portadores deste gene sofrem uma mutação instável muito poderosa no corpo uma vez por dia. A mutação ativa até dez genes aleatórios novos durante o dia inteiro. No dia seguinte, eles se desativam e dez novos tomam o lugar.
+AG_Deaf.label	surdo
+AG_Deaf.description	Portadores deste gene não têm audição nenhuma.
+AG_ToxicEnvironmentResistance_Frail.label	pulmões antitóxicos frágeis
+AG_ToxicEnvironmentResistance_Frail.description	Portadores deste gene são especialmente afetados por toxinas do ambiente. Acumulam mais toxicidade com gás tóxico, terreno poluído e precipitação tóxica, e são mais vulneráveis a ataques diretos com veneno. Além disso, acumulam exposição ao fedor podre mais rápido.
+AG_ToxicEnvironmentResistance_Frail.labelShortAdj	afetado por toxinas
+AG_ToxicEnvironmentResistance_Frail.symbolPack.prefixSymbols.0.symbol	puro
+AG_ToxResist_Vulnerability.label	vulnerabilidade a toxinas
+AG_ToxResist_Vulnerability.description	Portadores deste gene são vulneráveis ao acúmulo de toxicidade de qualquer fonte, incluindo poluição, precipitação tóxica, gás tóxico e ataques diretos com veneno. Acumulam metade a mais de toxicidade que os outros.
+AG_ToxResist_Vulnerability.labelShortAdj	vulnerável a toxinas
+AG_HardBones.label	ossos duros
+AG_HardBones.description	Portadores deste gene têm ossos muito duros e com crescimento ósseo extra, o que os torna resistentes a dano contundente, mas vulneráveis a cortes.
+AG_FrostbiteResistance.label	resistência ao congelamento
+AG_FrostbiteResistance.description	Portadores deste gene resistem a dano por congelamento.
+AG_FrostbiteVulnerability.label	vulnerabilidade ao congelamento
+AG_FrostbiteVulnerability.description	Portadores deste gene são vulneráveis a dano por congelamento.
+AG_Clean.label	limpo
+AG_Clean.description	Portadores deste gene são naturalmente limpos e geram menos sujeira no dia a dia.
+AG_Filthy.label	imundo
+AG_Filthy.description	Portadores deste gene são naturalmente imundos e geram mais sujeira no dia a dia.
+AG_Gene_VeryWeakImmunity.label	imunidade muito fraca
+AG_Gene_VeryWeakImmunity.description	Portadores deste gene ganham imunidade a doenças muito devagar. Morrem de infecções que os outros sobreviveriam.
+AG_Gene_VeryWeakImmunity.labelShortAdj	doentio
+AG_Gene_VeryWeakImmunity.symbolPack.prefixSymbols.0.symbol	doente
+AG_Gene_VeryWeakImmunity.symbolPack.prefixSymbols.1.symbol	frágil
+AG_PackMule.label	mula de carga
+AG_PackMule.description	Portadores deste gene conseguem carregar quantidades obscenas de coisas antes de se sentirem sobrecarregados.
+AG_FrailBack.label	costas frágeis
+AG_FrailBack.description	Portadores deste gene não conseguem carregar muito peso.
+AG_Stinky.label	fedido
+AG_Stinky.description	Portadores deste gene exalam um cheiro muito desagradável que incomoda as outras pessoas.
+AG_AcidImmunity.label	imunidade a ácido
+AG_AcidImmunity.description	Portadores deste gene são imunes a dano por ácido.
+AG_AcidWeakness.label	fraqueza a ácido
+AG_AcidWeakness.description	Portadores deste gene são especialmente fracos contra dano por ácido e sofrem queimaduras químicas mais graves.
+AG_AdaptiveBiology.label	biologia adaptativa
+AG_AdaptiveBiology.description	Portadores deste gene conseguem mudar sutilmente a própria personalidade, livrando-se de traços antigos e ganhando novos.
+AG_ExtraLeather.label	couro extra
+AG_ExtraLeather.description	Portadores deste gene têm pele muito mais densa, rendendo mais couro quando abatidos.
+AG_LowLeather.label	pouco couro
+AG_LowLeather.description	Portadores deste gene têm pele muito fina, rendendo bem menos couro quando abatidos.
+AG_NoLeather.label	sem couro
+AG_NoLeather.description	Portadores deste gene têm pele extraordinariamente fina e não rendem couro quando abatidos.
+AG_NoMeat.label	sem carne
+AG_NoMeat.description	Portadores deste gene têm tecido muscular e adiposo extraordinariamente fino e não rendem carne aproveitável quando abatidos.
+## DefInjected/GeneDef/GeneDefs_Health_Fungoid.xml
+AG_GeneInfectionImmunity.label	imunidade a infecção genética
+AG_GeneInfectionImmunity.description	Portadores deste gene são imunes a infecções genéticas.
+## DefInjected/GeneDef/GeneDefs_Instability.xml
+AG_Instability_Lethal.label	instabilidade celular letal
+AG_Instability_Lethal.description	Portadores deste gene precisam de bem menos energia metabólica para viver, ao custo de uma estabilidade absurdamente reduzida na maquinaria de replicação das células e de uma expectativa de vida muito, MUITO curta, que não pode ser aumentada de jeito nenhum.
+## DefInjected/GeneDef/GeneDefs_LeatherTypes.xml
+AG_PlainLeather.label	couro simples
+AG_PlainLeather.description	Portadores deste gene rendem couro simples quando abatidos. Para eles, vestir roupas de couro simples conta como vestir roupas de couro humano.
+AG_WoolLeather.label	couro de lã
+AG_WoolLeather.description	Portadores deste gene rendem lã quando abatidos. Para eles, vestir roupas de lã conta como vestir roupas de couro humano.
+AG_WoodLeather.label	couro de madeira
+AG_WoodLeather.description	Portadores deste gene rendem toras de madeira quando abatidos. Para eles, vestir roupas de madeira conta como vestir roupas de couro humano.
+AG_ClothLeather.label	couro de tecido
+AG_ClothLeather.description	Portadores deste gene rendem tecido quando abatidos. Para eles, vestir roupas de tecido conta como vestir roupas de couro humano.
+## DefInjected/GeneDef/GeneDefs_LeatherTypes_VIE.xml
+AG_InsectoidChitinLeather.label	couro de quitina insetoide
+AG_InsectoidChitinLeather.description	Portadores deste gene rendem quitina insetoide quando abatidos. Para eles, vestir roupas de quitina insetoide conta como vestir roupas de couro humano.
+## DefInjected/GeneDef/GeneDefs_MeatTypes.xml
+AG_JellyFlesh.label	carne de geleia de inseto
+AG_JellyFlesh.description	Portadores deste gene têm carne de geleia. Para eles, comer geleia de inseto conta como canibalismo.
+AG_ChocolateFlesh.label	carne de chocolate
+AG_ChocolateFlesh.description	Portadores deste gene têm chocolate no lugar da carne. Isso faz sentido? Claro que faz. Para eles, comer chocolate conta como canibalismo.
+## DefInjected/GeneDef/GeneDefs_MeatTypes_AlphaBiomes.xml
+AG_MagicMushroomFlesh.label	carne de cogumelo mágico
+AG_MagicMushroomFlesh.description	Portadores deste gene têm cogumelos psicotrópicos na carne. Para eles, comer esse fungo conta como canibalismo.
+## DefInjected/GeneDef/GeneDefs_MeatTypes_Anomaly.xml
+AG_TwistedFlesh.label	carne retorcida
+AG_TwistedFlesh.description	Portadores deste gene têm músculos retorcidos, inchados de crescimentos tumorais. Para eles, comer essa carne conta como canibalismo.
+## DefInjected/GeneDef/GeneDefs_MeatTypes_VIE.xml
+AG_RoyalJellyFlesh.label	carne de geleia real
+AG_RoyalJellyFlesh.description	Portadores deste gene têm carne de geleia real. Para eles, comer geleia real conta como canibalismo.
+## DefInjected/GeneDef/GeneDefs_MeatTypes_Waste.xml
+AG_WasteFlesh.label	carne contaminada
+AG_WasteFlesh.description	Portadores deste gene têm carne corrompida e poluída. Para eles, comer carne tóxica conta como canibalismo.

@@ -1,0 +1,245 @@
+## DefInjected/VEF.Abilities.AbilityDef/Warlord.xml
+VPE_PowerLeap.label	salto poderoso
+VPE_PowerLeap.description	Reforça drasticamente as pernas, os pés e a coluna do conjurador para que ele salte grandes distâncias e caia sem se ferir; a distância aumenta com a sensibilidade psíquica.
+VPE_PowerLeap.jobReportString	Usando habilidade: {0}
+VPE_PowerLeap.verbProperties.label	salto poderoso
+VPE_AdrenalineRush.label	descarga de adrenalina
+VPE_AdrenalineRush.description	Induz psiquicamente uma descarga de adrenalina no conjurador, bloqueando toda a dor e melhorando a visão, a audição e o movimento. Dura cerca de trinta segundos, conforme a sensibilidade psíquica.
+VPE_AdrenalineRush.jobReportString	Usando habilidade: {0}
+VPE_AdrenalineRush.verbProperties.label	descarga de adrenalina
+VPE_ControlledFrenzy.label	frenesi controlado
+VPE_ControlledFrenzy.description	Reforça psiquicamente a destreza e a vontade de matar do conjurador, dobrando o dano com todas as armas. Cada morte reduz o calor do conjurador em 10 e reinicia a duração do frenesi.
+VPE_ControlledFrenzy.jobReportString	Usando habilidade: {0}
+VPE_ControlledFrenzy.verbProperties.label	frenesi controlado
+VPE_GuidedShot.label	tiro guiado
+VPE_GuidedShot.description	Projeta por alguns instantes uma aura psíquica que permite ao conjurador alterar a trajetória de qualquer bala que dispare, praticamente dobrando o alcance da arma e garantindo acertos durante o efeito. A duração depende da sensibilidade psíquica do conjurador.
+VPE_GuidedShot.jobReportString	Usando habilidade: {0}
+VPE_GuidedShot.verbProperties.label	tiro guiado
+VPE_Beckon.label	chamar
+VPE_Beckon.description	Ordena psiquicamente que o alvo se aproxime do conjurador.
+VPE_Beckon.jobReportString	Usando habilidade: {0}
+VPE_Beckon.verbProperties.label	chamar
+VPE_Killskip.label	salto assassino
+VPE_Killskip.description	Teleporta até o alvo e desfere um golpe corpo a corpo, enfraquecido ou reforçado pela habilidade corpo a corpo do conjurador. Se o alvo morrer, teleporta sem custo até o próximo inimigo mais perto e ataca de novo, até não sobrar nada para matar.
+VPE_Killskip.jobReportString	Usando habilidade: {0}
+VPE_Killskip.verbProperties.label	salto assassino
+VPE_MassBeckon.label	chamado em massa
+VPE_MassBeckon.description	Ordena psiquicamente que os alvos dentro de uma área se aproximem do conjurador.
+VPE_MassBeckon.jobReportString	Usando habilidade: {0}
+VPE_MassBeckon.verbProperties.label	chamado em massa
+## DefInjected/VEF.Abilities.AbilityDef/Wildspeaker.xml
+VPE_BrambleMaze.label	labirinto de espinheiros
+VPE_BrambleMaze.description	Infunde uma área fértil com energia vital caótica, fazendo brotar espinheiros que murcham depois de 12 horas.
+VPE_BrambleMaze.jobReportString	Usando habilidade: {0}
+VPE_BrambleMaze.verbProperties.label	labirinto de espinheiros
+VPE_CropBurst.label	explosão de colheita
+VPE_CropBurst.description	Infunde uma área fértil com energia vital, fazendo brotar plantações que terminam de crescer conforme a sensibilidade psíquica do conjurador.
+VPE_CropBurst.jobReportString	Usando habilidade: {0}
+VPE_CropBurst.verbProperties.label	explosão de colheita
+VPE_WordofAnimals.label	palavra dos animais
+VPE_WordofAnimals.description	Acalma um animal usando sugestão psíquica, seja tranquilizando um caçador de homens, seja domando-o. Conforme a sensibilidade psíquica do conjurador e o tamanho do animal, o poder pode sair pela culatra e transformar o animal num caçador de homens.
+VPE_WordofAnimals.jobReportString	Usando habilidade: {0}
+VPE_WordofAnimals.verbProperties.label	palavra dos animais
+VPE_ManhunterPulse.label	pulso caçador de homens
+VPE_ManhunterPulse.description	Leva os animais de uma área grande a uma fúria de caçador de homens com um pulso psíquico, que dura um minuto. É considerado uma declaração de guerra se afetar os animais de uma caravana.
+VPE_ManhunterPulse.jobReportString	Usando habilidade: {0}
+VPE_ManhunterPulse.verbProperties.label	pulso caçador de homens
+VPE_TreeSprout.label	brotar árvores
+VPE_TreeSprout.description	Infunde uma área fértil com uma energia vital potente, fazendo brotar árvores nativas já adultas. O raio efetivo depende da sensibilidade psíquica, até no máximo 8 quadrados.
+VPE_TreeSprout.jobReportString	Usando habilidade: {0}
+VPE_TreeSprout.verbProperties.label	brotar árvores
+VPE_ShieldAnimals.label	proteger animais
+VPE_ShieldAnimals.description	Gera portais de salto esféricos em todos os animais da colônia ao alcance, que mandam todos os projéteis do nível do chão, entrando ou saindo, para algum lugar distante. Pessoas e itens não são afetados, e a duração depende da sensibilidade psíquica do conjurador.
+VPE_ShieldAnimals.jobReportString	Usando habilidade: {0}
+VPE_ShieldAnimals.verbProperties.label	proteger animais
+VPE_AnimalAllies.label	aliados animais
+VPE_AnimalAllies.description	Infunde uma área grande com força vital harmônica que influencia o comportamento dos animais, fazendo-os atacar os hostis ao conjurador por um tempo que depende da sensibilidade psíquica dele.
+VPE_AnimalAllies.jobReportString	Usando habilidade: {0}
+VPE_AnimalAllies.verbProperties.label	aliados animais
+VPE_Shrineshield.label	escudo-santuário
+VPE_Shrineshield.description	Gera num santuário da natureza um portal de salto esférico que manda qualquer projétil, entrando ou saindo, incluindo bombas de morteiro, para algum lugar distante. Pessoas e itens não são afetados; o tamanho da esfera depende do tamanho do santuário, e a duração, da sensibilidade psíquica do conjurador.
+VPE_Shrineshield.jobReportString	Usando habilidade: {0}
+VPE_Shrineshield.verbProperties.label	escudo-santuário
+VPE_EssenceTransfer.label	transferência de essência
+VPE_EssenceTransfer.description	Infunde a força vital de outra pessoa próxima num animal da colônia, ligando os dois e pondo o conjurador em coma. Se a pessoa ligada morrer, o animal vai até ela e transfere a própria essência vital harmonizada, morrendo ao terminar. Se o animal morrer primeiro, o efeito se perde, e só pode haver um elo de cada vez.
+VPE_EssenceTransfer.jobReportString	Usando habilidade: {0}
+VPE_EssenceTransfer.verbProperties.label	transferência de essência
+VPE_SummonPack.label	invocar matilha
+VPE_SummonPack.description	Manda um pulso de força vital pela região, induzindo uma agressividade territorial de caçador de homens em vários animais, que aparecem para defender a colônia. Quando todos os invasores forem derrotados, os animais voltam para casa. A força das criaturas invocadas depende da sensibilidade psíquica do conjurador.
+VPE_SummonPack.jobReportString	Usando habilidade: {0}
+VPE_SummonPack.verbProperties.label	invocar matilha
+## DefInjected/VanillaPsycastsExpanded.PsycasterPathDef/Paths.xml
+VPE_Empath.label	empata
+VPE_Empath.description	Os poderes do empata são focados em melhorar o humor dos outros, de um jeito ou de outro.
+VPE_Empath.tooltip	Empatas são conjuradores dedicados a servir a comunidade e levantar o ânimo dos seus. Conhecidos por inspirar alegria com poucas palavras e tirar pessoas de estados mentais, os empatas mais poderosos conseguem emitir alívios psíquicos fortes ou até fazer saltar parentes de sangue do outro lado do mundo.
+VPE_Skipmaster.label	mestre do salto
+VPE_Skipmaster.description	Os poderes do mestre do salto são focados em usar portais de salto para mudar o rumo da batalha ou a vida da colônia.
+VPE_Skipmaster.tooltip	Os mestres do salto muitas vezes serviram o Império montando redes complicadas de portas de salto. Mestres da logística e da dobra do espaço, conseguem fazer pessoas saltarem para onde quiserem e até usar portais de salto em tarefas do dia a dia, como criar furos solares ou saltar água para apagar incêndios.
+VPE_Conflagrator.label	conflagrador
+VPE_Conflagrator.description	O caminho do conflagrador é focado em manipular fogo, calor e energia para eliminar inimigos.
+VPE_Conflagrator.tooltip	Os conflagradores são os mestres da chama, capazes de erradicar regimentos inteiros de infantaria inimiga com tornados de fogo e explosões poderosas. Muito respeitados em todos os caminhos de conjurador, levam medo, morte e o fedor de carne queimada aonde quer que vão.
+VPE_Protector.label	protetor
+VPE_Protector.description	O caminho do protetor é focado em dar ajuda e proteção aos seus personagens, impedindo que morram e permitindo escapar ileso de situações perigosas.
+VPE_Protector.tooltip	Os protetores servem na linha de frente, defendendo os bravos soldados do perigo. Não só param projéteis com escudos de salto poderosos, como também ajudam o corpo a se recuperar de feridas e reforçam a regeneração natural e a imunidade de quem precisa.
+VPE_Warlord.label	senhor da guerra
+VPE_Warlord.description	O caminho do senhor da guerra é focado em melhorar as capacidades de combate do próprio conjurador, e só dele, já que todos os seus poderes são, até certo ponto, autoaplicados.
+VPE_Warlord.tooltip	Mestres da guerra, os senhores da guerra só servem a si mesmos e melhoram à vontade a percepção, os reflexos, a velocidade e o fôlego. Temidos por onde passam, um senhor da guerra poderoso nunca erra um tiro, e sua lâmina sempre acha o alvo.
+VPE_Chronopath.label	cronopata
+VPE_Chronopath.description	O caminho do cronopata é focado em manipular o tempo: envelhecer coisas, completar o crescimento de plantas ou rejuvenescer seus personagens.
+VPE_Chronopath.tooltip	Os cronopatas são conjuradores raros e misteriosos, capazes de manipular o próprio tecido do tempo. Criando portais de salto pelo tempo em vez do espaço, conseguem fazer armas se montarem sozinhas, mudar a idade de alguém à vontade e até criar terremotos temporais bizarros que aceleram o tempo de tudo ao redor em dezenas de anos.
+VPE_Archotechist.label	arcotecnicista
+VPE_Archotechist.description	O caminho do arcotecnicista é especial e exclusivo dos conjuradores do Império. Permite espalhar a loucura, derrubar malfeitores com choque psíquico, descarregar calor neural nos outros e usar o calor neural em combate.
+VPE_Archotechist.lockedReason	Só imperiais
+VPE_Archotechist.tooltip	Um caminho tão misterioso que só os estudiosos imperiais conseguem confirmar os boatos. Os arcotecnicistas se conectam aos motores arcotecs e exercem um poder tão ridículo e bizarro que faz qualquer um questionar a sanidade deles. Conseguem levar exércitos inteiros à loucura e até manipular o calor neural para mutilar os adversários.
+VPE_Necropath.label	necropata
+VPE_Necropath.description	O necropata é um caminho focado em espalhar medo e morte, tirando proveito da morte e dos cadáveres. Permite ressuscitar aliados caídos, impedir que morram e erguer hordas de esqueletos para lutar pela sua causa.
+VPE_Necropath.tooltip	Mestres das artes sombrias, os necropatas vivem para desafiar a própria morte. Conseguem semear medo no coração dos inimigos, emitir um pulso paralisante para derrubar atacantes, apodrecer a carne de corpos vivos e, por fim, invocar os mortos, seja por escravização perversa, seja por ressurreição sagrada.
+VPE_Staticlord.label	senhor da estática
+VPE_Staticlord.description	O senhor da estática é um caminho focado em fulminar inimigos com eletricidade, desativar eletrônicos e controlar a própria tempestade.
+VPE_Staticlord.tooltip	Senhores do trovão e do relâmpago, os senhores da estática são excelentes conjuradores para controlar o fluxo da eletricidade e lutar contra enxames de mecanoides. Conseguem invocar raios poderosos de várias formas e manipular o clima para gerar tempestades de raios localizadas e furacões.
+VPE_Archon.label	arconte
+VPE_Archon.description	O caminho do arconte é o de um líder psíquico, que dá vários bônus à colônia inteira, mas também governa com mão de ferro. Também permite drenar conjuradores inimigos e ganhar níveis de poder psíquico assim.
+VPE_Archon.tooltip	O caminho dos reis: os arcontes muitas vezes ocupam os cargos mais altos dos governos locais. Criam laços com facilidade e manipulam os inimigos pela amizade ou pela dor, e os arcontes mais poderosos se fortalecem drenando a psiessência de outros conjuradores.
+VPE_Frostshaper.label	moldador do gelo
+VPE_Frostshaper.description	O moldador do gelo é um caminho de manipular os elementos, principalmente o frio, a seu favor. Além de usar o frio para congelar e desacelerar inimigos, os moldadores do gelo também têm vários poderes utilitários, que constroem abrigos com blocos de gelo ou criam cristais refrigerantes que servem tanto de geladeira temporária quanto de armadilha.
+VPE_Frostshaper.tooltip	Os moldadores do gelo são conjuradores que dedicaram a vida a buscar o abraço frio da geada. Isso os torna tão mortais quanto os conflagradores, capazes de soprar ar congelante e criar zonas frias localizadas que congelam tudo em segundos. Também conseguem criar paredes e obstáculos de gelo e invocar cristais de pura entropia que mergulham cômodos inteiros em temperaturas abaixo de zero.
+VPE_Wildspeaker.label	voz da natureza
+VPE_Wildspeaker.description	O caminho da voz da natureza é especial e exclusivo dos conjuradores tribais. Gira em torno de controlar a natureza e os animais para defesa e sobrevivência.
+VPE_Wildspeaker.lockedReason	Só tribais
+VPE_Wildspeaker.tooltip	Um caminho secreto das comunidades tribais: ser voz da natureza é a arte de viver em harmonia com a floresta e a natureza, e de invocar a ajuda da floresta quando preciso. As vozes da natureza tribais são conhecidas por controlar matilhas de animais territoriais, ficar protegidas de todo dano por um escudo impenetrável e, pelo visto, fazer espinheiros e árvores brotarem do chão quando dá na telha.
+VPE_Harmonist.label	harmonista
+VPE_Harmonist.description	Os harmonistas manipulam o equilíbrio do universo. Os poderes deles nunca são claramente uma vantagem ou uma desvantagem, e sempre cobram um preço, de um jeito ou de outro.
+VPE_Harmonist.tooltip	Os harmonistas alteram a probabilidade, a sorte e o equilíbrio do universo. Conseguem espiar por baixo do véu e ajustar a balança como quiserem, controlando a mente de inimigos desavisados, mudando o que aconteceu, influenciando o que pode acontecer ou até reescrevendo a história pessoal dos outros.
+VPE_Technomancer.label	tecnomante
+VPE_Technomancer.description	Os tecnomantes são mestres da tecnologia, do conhecimento e da pesquisa, capazes de usar energia psíquica para ajudar a explorar conceitos, mas também para dar vida a pequenos constructos que os ajudam e defendem.
+VPE_Technomancer.tooltip	Mestres do conhecimento e da tecnologia, os tecnomantes conseguem melhorar tecnologias existentes, gerar energia infinita, criar constructos com materiais aparentemente inúteis e fazer engenharia reversa de qualquer coisa em que ponham as mãos. Os tecnomantes mais poderosos conseguem até usar eltex para criar psianéis, compartilhando a sua arte psíquica com conjuradores amadores.
+VPE_Nightstalker.label	Espreitador noturno
+VPE_Nightstalker.description	Os espreitadores noturnos são guerreiros das trevas, que ganham várias vantagens de combate quando envoltos nas sombras.
+VPE_Nightstalker.tooltip	Assassinos silenciosos que atacam das sombras, os espreitadores noturnos se movem sob o manto da escuridão e tiram poder da falta de luz. Conseguem saltar para onde quer que a escuridão domine e desferir vários golpes quase simultâneos no coração do alvo.
+## DefInjected/WeatherDef/Misc.xml
+VPE_Hurricane.label	furacão
+VPE_Hurricane.description	O vento extremo deixa mais lento quem não estiver sob um telhado.
+## Keyed/Keys.xml
+VPEP.TargetCannotBeSameFactionAsCaster	O alvo não pode ser colono.
+VPEP.TargetMustBeSameFactionAsCaster	O alvo precisa ser prisioneiro ou colono.
+VPEP.TargetMustBePrisonerOrSlave	O alvo precisa ser prisioneiro ou escravo.
+VPEP.DegradePsycast	Foi causado pelo poder psíquico Degradar.
+VPEP.TargetMustHaveBrainLeech	O alvo precisa ter uma sanguessuga cerebral do conjurador.
+VPEP.TargetIsPuppetAlready	O alvo já é uma marionete.
+VPEP.CannotHaveMorePuppets	Não dá para ter mais marionetes: limite de marionetes atingido.
+VPEP.Puppets	Marionetes
+VPEP.PuppetsGizmoTip	Um titereiro só consegue manter uma marionete se tiver capacidade psíquica suficiente. Ganhe mais capacidade psíquica para manter mais marionetes conjurando divisão mental, mas lembre que isso põe o titereiro e todas as marionetes num coma de {0}.\n\nCapacidade psíquica: {1}
+VPEP.PuppetsUsage	Marionetes atuais:
+VPEP.TargetMustBePuppetOfCaster	O alvo precisa ser uma marionete do conjurador.
+VPEP.NoPuppets	Sem marionetes.
+VPEP.MindJumpTitle	Salto mental
+VPEP.MindJumpText	{Puppeteer_nameDef} morreu. Antes de morrer, usou a habilidade salto mental em {NewPuppeteer_nameDef}. Agora {NewPuppeteer_nameDef} é o novo titereiro.
+## Keyed/Misc.xml
+VPE.MustTargetBattery	Precisa mirar numa bateria ou num mecanoide amigo
+VPE.StopHurricane	Parar furacão
+VPE.NoChunks	Não há pedaços por perto
+VPE.MustHaveLivingFamilyMembers	{PAWN_nameDef} precisa ter parentes vivos.
+VPE.ThingsOfLevel	{0} coisas no nível {1}
+VPE.TooCheap	Valor insuficiente: precisa valer pelo menos $1 por item.
+VPE_BreakLink	Romper elo
+VPE_BreakLinkDesc	Rompe o elo e mata este constructo na hora
+VPE.PsySetNext	Próximo psiconjunto
+VPE.PsySetPrev	Psiconjunto anterior
+VPE.Nearby	Por perto
+VPE.WealthNearby	{0} de riqueza por perto, de {1} de riqueza total
+VPE.GroupFocus	{0} outros personagens por perto
+VPE.All	Todos
+VPE.PsySetDesc	Ir para o próximo psiconjunto. Clique com o botão direito para escolher um específico.\nAtual: {0}, próximo: {1}
+VPE.MustHaveQuality	O alvo precisa ter qualidade
+VPE.QualityTooHigh	Qualidade do alvo alta demais: precisa ser menor que {0}.
+VPE.MaxQuality	Qualidade máxima: {0}
+VPE.NotEnoughHeat	Calor neural disponível insuficiente.
+VPE.MustConsumePower	Precisa consumir energia.
+VPE.MustBeStoneChunk	Mire num pedaço de pedra
+VPE.MustBeSteelSlag	Mire em escória de aço
+VPE.PsylinkGained	Nível de psínculo ganho: {0}
+VPE.PsylinkGained.Desc	{0} ganhou um novo nível de psínculo. Ao chegar nesse nível, {1} melhorou um pouco os atributos ligados a poderes psíquicos. {1} agora também pode gastar um ponto para aprender um novo poder psíquico, melhorar mais os atributos psíquicos ou liberar um novo foco de meditação.\n\nExperiência psíquica necessária para o próximo nível: {2}.
+VPE.UnlockedByPoints	Liberado com pontos de conjurador
+VPE.MustEltex	Precisa mirar em eltex
+VPE.NotPsycaster	Não é conjurador
+VPE.AlreadyPsyring	Já está usando um psianel
+VPE.Research	Precisa ser pesquisável
+VPE.AlreadyResearch	Já pesquisado
+VPE.MustBeAllyOrNeutral	O alvo precisa ser aliado ou neutro.
+VPE.MustBeDowned	O alvo precisa estar caído.
+VPE.MustHavePsychicLevel	O alvo precisa ter pelo menos um nível de conjurador.
+VPE.MustHaveHeatAmount	Precisa ter pelo menos {0} de calor neural.
+VPE.MustBeCorpse	O alvo precisa ser um cadáver.
+VPE.MustBeCorpseHumanlike	O cadáver precisa ser humanoide.
+VPE.PackSummon	Matilha invocada!
+VPE.PackSummon.Desc	Uma matilha de animais selvagens foi invocada por {0} para defender a colônia.
+VPE.NoAvailableFingers	Não há dedos disponíveis.
+VPE.CurrentChanneling	Canalizando {0}
+VPE.MustBeInDark	O alvo precisa estar no escuro
+VPE.MustBePsycaster	Precisa ser conjurador
+VPE.AlreadyHasPsycast	Já conhece {0}
+VPE.MustBeAlly	O alvo precisa ser da mesma facção.
+VPE.MustHaveDamagedEquipment	O equipamento do alvo precisa estar danificado.
+VPE.NoAnimals	Não pode mirar em animais
+VPE.MustBeDamaged	O alvo precisa estar danificado
+## Keyed/Settings.xml
+VanillaPsycastsExpanded	Vanilla Psycasts Expanded
+VPE.XPPerPercent	XP de conjurador por % de concentração psíquica ganha
+VPE.PsycasterSpawnBaseChance	Chance de conjuradores aparecerem (Basilicus, o Concessor)
+VPE.PsycasterSpawnAdditional	Fator de força dos conjuradores (Basilicus, o Concessor)
+VPE.AllowShrink	Permitir encolher?
+VPE.AllowShrink.Desc	Permite que os botões de poderes psíquicos encolham pela metade quando houver muitos.
+VPE.SmallMode	Modo compacto da interface
+VPE.SmallMode.Desc	No modo compacto, os atributos vão para uma dica e os psiconjuntos vão para uma janela separada. Marcado, força o modo compacto. Com X, proíbe o modo compacto. Parcial (linha amarela), usa o comportamento padrão (o modo compacto fica ativo se a resolução vertical for menor que 1080).
+VPE.MuteSkipdoor	Silenciar som da porta de salto
+VPE.MaxLevel	Nível máximo de conjurador
+VPE.ChangeFocusGain	Escalar o ganho base de concentração psíquica com pontos de atributo?
+VPE.ChangeFocusGain.Desc	Se ativado, o ganho base de concentração psíquica antes de qualquer foco pode ser aumentado gastando pontos de atributo.
+## Keyed/UI.xml
+VPE.Psycasts	Poderes psíquicos
+VPE.PsyLevel	Nível de conjurador: {0}
+VPE.EarnXP	Ganhe experiência de conjurador meditando.
+VPE.Points	Pontos disponíveis para gastar: {0}
+VPE.SpendPoints	Gaste pontos para liberar novos caminhos, poderes psíquicos e focos de meditação, melhorar atributos etc.
+VPE.PsycasterStats	Atributos de conjurador
+VPE.Upgrade	Melhorar
+VPE.FocusTypes	Tipos de foco:
+VPE.PsysetCustomize	Personalizar psiconjuntos
+VPE.PsysetDesc	Arraste os poderes psíquicos aprendidos para psiconjuntos, que podem ser alternados durante o jogo.
+VPE.CreatePsyset	Criar psiconjunto
+VPE.Unlock	Liberar
+VPE.ClickToUnlock	Clique para liberar
+VPE.UseAltBackground	Usar fundos alternativos
+VPE.DestroySkipdoor	Destruir
+VPE.DestroySkipdoor.Desc	Destrói esta porta de salto. Ela não vai mais poder ser usada, mas também deixa de afetar o calor máximo de {0}.
+VPE.RenameSkipdoor	Renomear
+VPE.RenameSkipdoor.Desc	Renomeia esta porta de salto.
+VPE.TeleportTo	Teleportar para {0}
+VPE.CancelSkipbarrier	Cancelar barreira de salto
+VPE.CancelSkipbarrierDesc	Clique para cancelar a barreira de salto do conjurador.
+VPE.Edit	Editar
+VPE.Rename	Renomear
+VPE.Untitled	Sem título
+VPE.Remove	Remover
+VPE.Contents	Conteúdo:
+VPE.ClickRemove	Clique para remover
+VPE.SellingEltexWarning	Vender eltex é contra a lei imperial. Isso pode, ou não, afetar as suas relações com o Império no futuro.
+VPE.GiftingEltexWarning	Presentear eltex é contra a lei imperial. Isso pode, ou não, afetar as suas relações com o Império no futuro.
+VPE.EmpireAngeredTitle	Império irritado
+VPE.EmpireAngeredDesc	O Império ficou sabendo que vocês andaram {0} eltex pelas costas dele. Eles consideram isso contra a lei imperial, e as relações pioraram.
+VPE.Gifting	presenteando
+VPE.Trading	negociando
+VPE.FactionRelationReducedInfo	A boa vontade com {FACTION_name} agora é {1}. (Reduzida em {2})
+VPE.CreatePsyringTitle	Escolha o poder psíquico:
+VPE.CreatePsyringButton	Criar psianel
+VPE.Locked	Bloqueado
+VPE.StatsReport_BodiesConsumed	Corpos consumidos: +{0}
+VPE.DevMode	Modo de desenvolvedor
+VPE.NotEnoughPoints	Pontos disponíveis insuficientes
+VPE.AbilitiesList	Poderes psíquicos incluídos:
+VPE.Hover	passe o mouse
+VPE.PsycasterRaidDescription	{0}\n\nCapturar conjuradores é uma estratégia viável e pode valer a pena.
+VPE.LockedTitle	Bloqueado: exige um título real
+VPE.LockedLocked	Bloqueado: não pode ser liberado com pontos
+VPE.SuccessChance	Chance de sucesso
+VPE.PsychicComaDuration	Coma psíquico por

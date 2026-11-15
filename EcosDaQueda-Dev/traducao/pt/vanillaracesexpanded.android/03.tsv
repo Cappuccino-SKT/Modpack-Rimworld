@@ -1,0 +1,99 @@
+## DefInjected/RecipeDef/Hediffs_BodyParts_Android.xml
+VREA_InstallNeuroPump.label	instalar neurobomba
+VREA_InstallNeuroPump.description	Instala uma neurobomba.
+VREA_InstallNeuroPump.jobString	Instalando neurobomba.
+VREA_InstallAirFilter.label	instalar filtro de ar
+VREA_InstallAirFilter.description	Instala um filtro de ar.
+VREA_InstallAirFilter.jobString	Instalando filtro de ar.
+VREA_InstallNeutrofilter.label	instalar neutrofiltro
+VREA_InstallNeutrofilter.description	Instala um neutrofiltro.
+VREA_InstallNeutrofilter.jobString	Instalando neutrofiltro.
+VREA_InstallMetabolismRegulator.label	instalar regulador de metabolismo
+VREA_InstallMetabolismRegulator.description	Instala um regulador de metabolismo.
+VREA_InstallMetabolismRegulator.jobString	Instalando regulador de metabolismo.
+VREA_InstallReactor.label	instalar reator
+VREA_InstallReactor.description	Instala um reator.
+VREA_InstallReactor.jobString	Instalando reator.
+VREA_InstallOpticalUnit.label	instalar unidade óptica
+VREA_InstallOpticalUnit.description	Instala uma unidade óptica.
+VREA_InstallOpticalUnit.jobString	Instalando unidade óptica.
+VREA_InstallAudioProcessor.label	instalar processador de áudio
+VREA_InstallAudioProcessor.description	Instala um processador de áudio.
+VREA_InstallAudioProcessor.jobString	Instalando processador de áudio.
+VREA_InstallArtificialNose.label	instalar nariz artificial
+VREA_InstallArtificialNose.description	Instala um nariz artificial.
+VREA_InstallArtificialNose.jobString	Instalando nariz artificial.
+VREA_InstallArtificialJaw.label	instalar mandíbula artificial
+VREA_InstallArtificialJaw.description	Instala uma mandíbula artificial.
+VREA_InstallArtificialJaw.jobString	Instalando mandíbula artificial.
+VREA_InstallArtificialRibcage.label	instalar caixa torácica artificial
+VREA_InstallArtificialRibcage.description	Instala uma caixa torácica artificial.
+VREA_InstallArtificialRibcage.jobString	Instalando caixa torácica artificial.
+VREA_InstallArtificialSpine.label	instalar coluna artificial
+VREA_InstallArtificialSpine.description	Instala uma coluna artificial.
+VREA_InstallArtificialSpine.jobString	Instalando coluna artificial.
+VREA_InstallAndroidLeg.label	instalar perna de androide
+VREA_InstallAndroidLeg.description	Instala uma perna de androide.
+VREA_InstallAndroidLeg.jobString	Instalando perna de androide.
+VREA_InstallAndroidFoot.label	instalar pé de androide
+VREA_InstallAndroidFoot.description	Instala um pé de androide.
+VREA_InstallAndroidFoot.jobString	Instalando pé de androide.
+VREA_InstallAndroidArm.label	instalar braço de androide
+VREA_InstallAndroidArm.description	Instala um braço de androide.
+VREA_InstallAndroidArm.jobString	Instalando braço de androide.
+VREA_InstallAndroidHand.label	instalar mão de androide
+VREA_InstallAndroidHand.description	Instala uma mão de androide.
+VREA_InstallAndroidHand.jobString	Instalando mão de androide.
+## DefInjected/RecipeDef/Recipes_Surgery_Misc.xml
+VREA_RemoveArtificialPart.label	remover componente
+VREA_RemoveArtificialPart.description	Remove uma peça artificial.
+VREA_RemoveArtificialPart.jobString	Removendo parte artificial do corpo.
+VREA_ButcherCorpseAndroid.label	triturar androide
+VREA_ButcherCorpseAndroid.description	Tritura um androide morto para tentar recuperar material aproveitável.
+VREA_ButcherCorpseAndroid.jobString	Triturando androide.
+## DefInjected/ResearchProjectDef/ResearchProjects.xml
+VREA_AndroidTech.label	tecnologia androide
+VREA_AndroidTech.description	A tecnologia avançada necessária para criar e controlar androides de nível ultra: um substituto completo para colonos orgânicos, capaz de todas as mesmas tarefas e atividades, sem as desvantagens que costumam vir com os humanos.
+VREA_NeutroamineLogistics.label	logística de neutroamina
+VREA_NeutroamineLogistics.description	Construa tanques especiais, capazes de guardar grandes quantidades de neutroamina, além de canos, torneiras e ralos para mover a neutroamina pelo sistema.
+## DefInjected/RulePackDef/Rules.xml
+VREA_AndroidTypeNameMaker.rulePack.rulesStrings[0]	r_name->[Letter][Letter]-[Digit][Digit]-[TotalComplexityNumber]
+## DefInjected/ScenPartDef/Scenarios_Androids.xml
+VREA_AndroidArrivalQuests.label	Androide caçado a cada 10 dias
+## DefInjected/ScenarioDef/Scenarios_Androids.xml
+VREA_NewUtopia.label	Nova Utopia
+VREA_NewUtopia.description	Uns chamam vocês de defeituosos. Outros reconhecem sua humanidade. Como um bando de androides sencientes, despertos e conscientes de si, escondidos nos restos de um posto esquecido, vocês não estão só sobrevivendo, mas também sonhando, com um único objetivo: criar a própria utopia, um Refúgio Androide onde todos da sua espécie possam encontrar abrigo e aceitação.\n\nO posto, sobra de uma era antiga de exploração humana, está mal equipado para as necessidades avançadas de vocês. Vão precisar de uma fonte constante de neutroamina para receber novos androides. Quantos vocês estão dispostos a salvar?
+VREA_NewUtopia.scenario.description	Uns chamam vocês de defeituosos. Outros reconhecem sua humanidade. Como um bando de androides sencientes, despertos e conscientes de si, escondidos nos restos de um posto esquecido, vocês não estão só sobrevivendo, mas também sonhando, com um único objetivo: criar a própria utopia, um Refúgio Androide onde todos da sua espécie possam encontrar abrigo e aceitação.\n\nO posto, sobra de uma era antiga de exploração humana, está mal equipado para as necessidades avançadas de vocês. Vão precisar de uma fonte constante de neutroamina para receber novos androides. Quantos vocês estão dispostos a salvar?
+VREA_NewUtopia.scenario.name	Nova Utopia
+VREA_NewUtopia.scenario.parts.GameStartDialog.text	Uns chamam vocês de defeituosos. Outros reconhecem sua humanidade. Como um bando de androides sencientes, despertos e conscientes de si, escondidos nos restos de um posto esquecido, vocês não estão só sobrevivendo, mas também sonhando, com um único objetivo: criar a própria utopia, um Refúgio Androide onde todos da sua espécie possam encontrar abrigo e aceitação.\n\nO posto, sobra de uma era antiga de exploração humana, está mal equipado para as necessidades avançadas de vocês. Vão precisar de uma fonte constante de neutroamina para receber novos androides. Quantos vocês estão dispostos a salvar?
+VREA_NewUtopia.scenario.parts.ConfigurePawnsXenotypes.customSummary	Comece com três androides despertos.
+VREA_NewUtopia.scenario.parts.ConfigurePawnsXenotypes.xenotypeCounts.0.description	androide desperto
+VREA_NewUtopia.scenario.parts.VFEC_AddStartingStructure.structureLabel	Um posto abandonado
+VREA_NewUtopia.scenario.summary	Um esconderijo de androides despertos. Uma experiência clássica do Vanilla Races Expanded - Android.
+## DefInjected/StatCategoryDef/Stats.xml
+VREA_Android.label	Androide
+## DefInjected/StatDef/Stats.xml
+VREA_MemorySpaceDrainMultiplier.label	multiplicador de consumo de memória
+VREA_MemorySpaceDrainMultiplier.description	Um multiplicador do consumo de espaço de memória em androides.
+## DefInjected/ThingCategoryDef/ThingCategories.xml
+VREA_BodyPartsAndroid.label	partes de corpo androide
+## DefInjected/ThingDef/Buildings_Furniture.xml
+VREA_AndroidStandSpot.label	ponto de descanso androide
+VREA_AndroidStandSpot.description	Marca um ponto no chão onde os androides devem ficar de pé para liberar espaço de memória.
+VREA_AndroidStand.label	suporte androide
+VREA_AndroidStand.description	Uma interface sem fio que permite a um androide liberar rapidamente o espaço de memória ocupado. Bem mais eficiente que o modo de suspensão, porque o suporte faz a conversão por fora.
+VREA_AndroidSleepMode.label	androide (modo de suspensão)
+## DefInjected/ThingDef/Buildings_Production.xml
+VREA_AndroidPartWorkbench.label	bancada de peças androides
+VREA_AndroidPartWorkbench.description	Uma bancada com tecnologia de impressão molecular para fabricar peças de reposição avulsas para formas de vida sintéticas.
+VREA_SubcorePolyanalyzer.label	polianalisador de subnúcleo
+VREA_SubcorePolyanalyzer.description	Um aparelho grande com uma cápsula equipada com várias sondas de tecido e escâneres neurais avançados. Feito para uma pessoa por vez, o sistema precisa que quatro pessoas diferentes sejam escaneadas em sequência. Depois de cada entrada, o polianalisador aciona as sondas e os escâneres para analisar os padrões neuropsíquicos da pessoa.\nCom um algoritmo sofisticado, o aparelho funde esses padrões numa única persona complexa depois que as quatro pessoas forem escaneadas. Essa persona composta é então transferida digitalmente para um novo subnúcleo de persona de nível composto. O processo pode causar desconforto e desorientação temporários, mas não deixa outros danos.\nSubnúcleos de persona criados por este aparelho só podem ser usados para criar androides complexos e humanizados.
+VREA_AndroidCreationStation.label	estação de criação de androides
+VREA_AndroidCreationStation.description	Uma estação de fabricação capaz de montar um androide com vários materiais e componentes avançados. A aparência do androide é quase toda personalizável, mas se limita a imitações de humanos padrão.\n\nConforme o hardware e as sub-rotinas do androide, o trabalho para criá-lo e os recursos necessários podem variar.
+VREA_AndroidBehavioristStation.label	estação comportamental androide
+VREA_AndroidBehavioristStation.description	Uma estação de reprogramação usada para dar traços e habilidades desejados a um androide. O software embarcado permite que até iniciantes completos modifiquem a personalidade de um androide, mas um usuário mais talentoso intelectualmente vai gastar menos tempo seguindo tutoriais.
+## DefInjected/ThingDef/Buildings_Ultra.xml
+VREA_NeutroCasket.label	neutrocaixão
+VREA_NeutroCasket.description	Um caixão feito especialmente para androides em operação ou com perda de neutro, pois consegue circular e repor a neutroamina que falta. Precisa haver neutroamina disponível, guardada no próprio caixão ou vinda de uma rede de canos.\n\nUm androide aguenta no máximo 100 unidades de neutroamina, mas consegue operar com funções mínimas com 50 unidades.
+VREA_NeutroCasket.comps.CompRefuelable.fuelGizmoLabel	Neutroamina
+VREA_NeutroCasket.comps.CompRefuelable.fuelLabel	Neutroamina

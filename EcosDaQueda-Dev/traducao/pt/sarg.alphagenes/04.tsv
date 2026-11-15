@@ -1,0 +1,251 @@
+## DefInjected/GeneDef/GeneDefs_Cosmetic_Horns.xml
+AG_HornCrown.symbolPack.prefixSymbols.0.symbol	coroado
+AG_HornCrown.symbolPack.prefixSymbols.1.symbol	chifrudo
+AG_UpperTentacles.label	tentáculos superiores
+AG_UpperTentacles.description	Portadores deste gene têm vários tentáculos saindo da testa.
+AG_Stalks.label	pedúnculos oculares
+AG_Stalks.description	Portadores deste gene não têm cabelo; no lugar, crescem pedúnculos oculares não funcionais na cabeça.
+AG_Stalks.symbolPack.prefixSymbols.0.symbol	olho
+AG_Stalks.symbolPack.prefixSymbols.1.symbol	ocul
+AG_Stalks.symbolPack.prefixSymbols.2.symbol	orbe
+AG_Stalks.symbolPack.prefixSymbols.3.symbol	óptico
+AG_OrnateEldritchHorns.label	chifres sobrenaturais ornamentados
+AG_OrnateEldritchHorns.description	Portadores deste gene têm dois chifres sobrenaturais enormes e ornamentados saindo da testa.
+AG_OrnateEldritchHorns.symbolPack.prefixSymbols.0.symbol	eldr
+AG_OrnateEldritchHorns.symbolPack.prefixSymbols.1.symbol	demônio
+AG_OrnateEldritchHorns.symbolPack.prefixSymbols.2.symbol	rúnico
+AG_DemonHorns.label	chifres demoníacos
+AG_DemonHorns.description	Portadores deste gene têm dois chifres demoníacos enormes saindo da testa. Não são só estéticos: podem ser usados para atacar.
+AG_DemonHorns.symbolPack.prefixSymbols.0.symbol	diabo
+AG_DemonHorns.symbolPack.prefixSymbols.1.symbol	demônio
+AG_DemonHorns.symbolPack.prefixSymbols.2.symbol	capeta
+AG_DemonHornsQuadruple.label	quatro chifres demoníacos
+AG_DemonHornsQuadruple.description	Portadores deste gene têm quatro chifres demoníacos enormes saindo da testa. Não são só estéticos: podem ser usados para atacar.
+AG_DemonHornsQuadruple.symbolPack.prefixSymbols.0.symbol	diabo
+AG_DemonHornsQuadruple.symbolPack.prefixSymbols.1.symbol	demônio
+AG_DemonHornsQuadruple.symbolPack.prefixSymbols.2.symbol	capeta
+AG_TerrorMask.label	máscara do terror
+AG_TerrorMask.description	Portadores deste gene têm uma máscara de osso aterrorizante cobrindo o rosto inteiro.
+AG_TerrorMask.symbolPack.prefixSymbols.0.symbol	diabo
+AG_TerrorMask.symbolPack.prefixSymbols.1.symbol	demônio
+AG_TerrorMask.symbolPack.prefixSymbols.2.symbol	capeta
+AG_Drakonori_Horns.label	chifres drakonori
+AG_Drakonori_Horns.description	Portadores deste gene têm dois chifres dracônicos curtos saindo da testa.
+AG_Drakonori_Horns.symbolPack.prefixSymbols.0.symbol	draco
+AG_NereidGlowlure.label	isca luminosa nereida
+AG_NereidGlowlure.description	Portadores deste gene têm um órgão bioluminescente único que emite luz e atrai presas nas profundezas escuras do oceano, de onde vêm as nereidas.
+AG_ForsakenHornsBull.label	chifres de touro renegados
+AG_ForsakenHornsBull.description	Portadores deste gene têm dois chifres enormes, parecidos com os de touro e de pontas amarelas, saindo da testa, além de vários chifres menores no queixo e no alto da cabeça. Não são só estéticos: podem ser usados para atacar.
+AG_ForsakenHornsSheep.label	chifres de carneiro renegados
+AG_ForsakenHornsSheep.description	Portadores deste gene têm dois chifres enormes, parecidos com os de carneiro e de pontas amarelas, saindo da testa. Não são só estéticos: podem ser usados para atacar.
+AG_ForsakenHornsReptilian.label	chifres reptilianos renegados
+AG_ForsakenHornsReptilian.description	Portadores deste gene têm dois chifres reptilianos de pontas amarelas saindo da testa. Não são só estéticos: podem ser usados para atacar.
+AG_ForsakenHornsCrown.label	coroa de chifres renegada
+AG_ForsakenHornsCrown.description	Portadores deste gene têm quatro chifrinhos de pontas amarelas saindo da testa. Não são compridos o bastante para servir numa luta.
+AG_ForsakenHornsDevil.label	chifres de diabo renegados
+AG_ForsakenHornsDevil.description	Portadores deste gene têm dois chifres diabólicos de pontas amarelas saindo da testa. Não são só estéticos: podem ser usados para atacar.
+AG_ForsakenHornsGoat.label	chifres de bode renegados
+AG_ForsakenHornsGoat.description	Portadores deste gene têm dois chifres retos de bode, de pontas amarelas, saindo da testa. Não são compridos o bastante para servir numa luta.
+AG_ForsakenQuadruple.label	quatro chifres renegados
+AG_ForsakenQuadruple.description	Portadores deste gene têm quatro chifres retorcidos de pontas amarelas saindo da testa. Não são só estéticos: podem ser usados para atacar.
+## DefInjected/GeneDef/GeneDefs_Cosmetic_Misc.xml
+AG_HeavilyScarred.label	muito cicatrizado
+AG_HeavilyScarred.description	Portadores deste gene têm cicatrizes marcantes no rosto, como se a pele tivesse sido cortada e costurada de novo.
+AG_ChainsawHands.label	mãos de motosserra
+AG_ChainsawHands.description	Portadores deste gene têm motosserras no lugar das mãos. "Naaa veeerdade, isso ficaria melhor como implante, não como gene!", você diz. Não, não, você não entendeu: são mãos de motosserra biológicas, codificadas no DNA. Filhos de duas pessoas com mãos de motosserra terão motosserrinhas no lugar das mãos. É ciência.
+AG_ChainsawHands.symbolPack.prefixSymbols.0.symbol	serra
+AG_ScytherHands.label	lâminas de ceifador
+AG_ScytherHands.description	Portadores deste gene têm lâminas de ceifador nos braços. Não são implantes, mas uma adaptação biomecânica que fundiu mecanitos ao DNA do portador para criar as lâminas a partir do próprio tecido ósseo. Não substituem as mãos por completo, então o portador mantém quase toda a capacidade de manipulação.
+AG_ScytherHands.symbolPack.prefixSymbols.0.symbol	foice
+AG_CrabClaw.label	garra de caranguejo
+AG_CrabClaw.description	Portadores deste gene têm um dos braços transformado numa gigantesca garra de caranguejo. A garra é surpreendentemente habilidosa e não atrapalha a manipulação.
+AG_CrabClaw.symbolPack.prefixSymbols.0.symbol	caranguejo
+AG_CrabClaw.symbolPack.prefixSymbols.1.symbol	carc
+AG_BodyTentacles.label	tentáculos no corpo
+AG_BodyTentacles.description	Portadores deste gene têm uma massa de tentáculos se contorcendo nas costas.
+AG_BodyTentacles.symbolPack.prefixSymbols.0.symbol	eldrit
+AG_BodyTentacles.symbolPack.prefixSymbols.1.symbol	alien
+AG_BodyTentacles.symbolPack.prefixSymbols.2.symbol	sinistro
+AG_BodyTentacles.symbolPack.prefixSymbols.3.symbol	tentác
+AG_Proboscis.label	probóscide
+AG_Proboscis.description	Portadores deste gene têm uma grande probóscide saindo da mandíbula.
+AG_Proboscis.symbolPack.prefixSymbols.0.symbol	sugador
+AG_Proboscis.symbolPack.prefixSymbols.1.symbol	mosquit
+AG_FungalClumps.label	tufos fúngicos
+AG_FungalClumps.description	Portadores deste gene têm fungos tóxicos crescendo sem controle no tronco. Esses fungos são tão virulentos que crescem até por cima de roupas leves e armaduras.
+AG_FungalClumps.symbolPack.prefixSymbols.0.symbol	fung
+AG_FungalClumps.symbolPack.prefixSymbols.1.symbol	cogu
+AG_FungalClumps.symbolPack.suffixSymbols.0.symbol	melo
+AG_FungalSprout.label	broto fúngico
+AG_FungalSprout.description	Portadores deste gene têm no sangue uma cepa de fungos virulentos que rompeu a parte de cima do tronco, criando pústulas cheias de sangue.
+AG_FungalSprout.symbolPack.prefixSymbols.0.symbol	fung
+AG_FungalSprout.symbolPack.prefixSymbols.1.symbol	cogu
+AG_FungalSprout.symbolPack.suffixSymbols.0.symbol	melo
+AG_FungalTentacles.label	tentáculos fúngicos
+AG_FungalTentacles.description	Portadores deste gene têm uma cepa de fungos virulentos que se trançou em tentáculos de aparência doentia, que tremem e se mexem sem parar.
+AG_FungalTentacles.symbolPack.prefixSymbols.0.symbol	fung
+AG_FungalTentacles.symbolPack.prefixSymbols.1.symbol	cogu
+AG_FungalTentacles.symbolPack.suffixSymbols.0.symbol	melo
+## DefInjected/GeneDef/GeneDefs_Cosmetic_Phytokin.xml
+VRE_HairColor_Ocular.label	cabelo ocular
+VRE_HairColor_Ocular.description	Portadores deste gene têm uma cor de cabelo específica. Com vários genes de cor de cabelo, um é escolhido aleatoriamente.
+VRE_SkinColor_OcularBark.label	pele de casca ocular
+VRE_SkinColor_OcularBark.description	Portadores deste gene produzem um pigmento que deixa a pele com uma cor parecida com a casca das árvores oculares.
+VRE_SkinColor_OcularBark.labelShortAdj	vermelho
+VRE_SkinColor_OcularBark.symbolPack.prefixSymbols.0.symbol	ocul
+VRE_SkinColor_OcularBark.symbolPack.prefixSymbols.1.symbol	olho
+VRE_SkinColor_OcularBark.symbolPack.wholeNameSymbols.0.symbol	ocularcria
+## DefInjected/GeneDef/GeneDefs_Cosmetic_Skin.xml
+AG_Skin_DeepGreen.label	pele verde intenso
+AG_Skin_DeepGreen.description	Portadores deste gene produzem um pigmento que deixa a pele verde intenso.
+AG_Skin_DeepGreen.labelShortAdj	verde
+AG_Skin_DeepGreen.symbolPack.prefixSymbols.0.symbol	verde
+AG_Skin_DeepGreen.symbolPack.prefixSymbols.1.symbol	lima
+AG_Skin_DeepGreen.symbolPack.prefixSymbols.2.symbol	jade
+AG_Skin_DeepGreen.symbolPack.prefixSymbols.3.symbol	folha
+AG_Skin_DeepGreen.symbolPack.wholeNameSymbols.0.symbol	pele-verde
+AG_Skin_PlantGreen.label	pele verde-planta
+AG_Skin_PlantGreen.description	Portadores deste gene produzem um pigmento que deixa a pele verde, como uma planta.
+AG_Skin_PlantGreen.labelShortAdj	verde
+AG_Skin_PlantGreen.symbolPack.prefixSymbols.0.symbol	verde
+AG_Skin_PlantGreen.symbolPack.prefixSymbols.1.symbol	fito
+AG_Skin_PlantGreen.symbolPack.prefixSymbols.2.symbol	planta
+AG_Skin_PlantGreen.symbolPack.prefixSymbols.3.symbol	folha
+AG_Skin_PlantGreen.symbolPack.wholeNameSymbols.0.symbol	pele-verde
+AG_Skin_DeeperRed.label	pele vermelho profundo
+AG_Skin_DeeperRed.description	Portadores deste gene produzem um pigmento vermelho profundo que dá à pele uma aparência quase ensanguentada.
+AG_Skin_DeeperRed.labelShortAdj	vermelho
+AG_Skin_DeeperRed.symbolPack.prefixSymbols.0.symbol	rubro
+AG_Skin_DeeperRed.symbolPack.prefixSymbols.1.symbol	carmim
+AG_Skin_DeeperRed.symbolPack.prefixSymbols.2.symbol	fogo
+AG_Skin_DeeperRed.symbolPack.prefixSymbols.3.symbol	rosa
+AG_Skin_DeeperRed.symbolPack.prefixSymbols.4.symbol	vinho
+AG_Skin_DeepPurple.label	pele roxo intenso
+AG_Skin_DeepPurple.description	Portadores deste gene produzem um pigmento roxo intenso que dá à pele uma aparência doentia.
+AG_Skin_DeepPurple.labelShortAdj	roxo
+AG_Skin_DeepPurple.symbolPack.prefixSymbols.0.symbol	roxo
+AG_Skin_DeepBlue.label	pele azul intenso
+AG_Skin_DeepBlue.description	Portadores deste gene produzem um pigmento que deixa a pele azul intenso.
+AG_Skin_DeepBlue.labelShortAdj	azul
+AG_Skin_DeepBlue.symbolPack.prefixSymbols.0.symbol	azul
+AG_Skin_DeepBlue.symbolPack.prefixSymbols.1.symbol	gelo
+AG_Skin_DeepBlue.symbolPack.prefixSymbols.2.symbol	céu
+AG_Skin_Drakonori_PaleRed.label	pele vermelho muito claro
+AG_Skin_Drakonori_PaleRed.description	Portadores deste gene produzem um pigmento que deixa a pele vermelho-clara.
+AG_Skin_Drakonori_PaleBlue.label	pele azul muito claro
+AG_Skin_Drakonori_PaleBlue.description	Portadores deste gene produzem um pigmento que deixa a pele azul-clara.
+AG_Skin_Rot.label	pele podre
+AG_Skin_Rot.description	Portadores deste gene têm pele podre, de aparência doentia.
+AG_Skin_PaleBlueFish.label	pele de peixe azul-clara
+AG_Skin_PaleBlueFish.description	Portadores deste gene produzem um pigmento que deixa a pele de um azul-claro de peixe.
+AG_Skin_BlueFish.label	pele de peixe azul
+AG_Skin_BlueFish.description	Portadores deste gene produzem um pigmento que deixa a pele de um azul de peixe.
+AG_Skin_DeepBlueFish.label	pele de peixe azul intenso
+AG_Skin_DeepBlueFish.description	Portadores deste gene produzem um pigmento que deixa a pele de um azul intenso de peixe.
+AG_Skin_Silver.label	pele prateada
+AG_Skin_Silver.description	Portadores deste gene produzem um pigmento que deixa a pele de um prateado iridescente.
+AG_Skin_Silver.labelShortAdj	prateado
+AG_Skin_Silver.symbolPack.prefixSymbols.0.symbol	argênteo
+AG_Skin_Silver.symbolPack.prefixSymbols.1.symbol	prata
+AG_Skin_Gold.label	pele dourada
+AG_Skin_Gold.description	Portadores deste gene produzem um pigmento que deixa a pele de um dourado iridescente.
+AG_Skin_Gold.labelShortAdj	dourado
+AG_Skin_Gold.symbolPack.prefixSymbols.0.symbol	áureo
+AG_Skin_Gold.symbolPack.prefixSymbols.1.symbol	ouro
+AG_Skin_TrueBlack.label	pele preto profundo
+AG_Skin_TrueBlack.description	Portadores deste gene produzem um pigmento que deixa a pele de um preto muito, muito profundo.
+AG_Skin_TrueBlack.labelShortAdj	negro
+AG_Skin_TrueBlack.symbolPack.prefixSymbols.0.symbol	carvão
+AG_Skin_TrueBlack.symbolPack.prefixSymbols.1.symbol	vácuo
+AG_Skin_TrueBlack.symbolPack.prefixSymbols.2.symbol	breu
+## DefInjected/GeneDef/GeneDefs_Cosmetic_Tusks.xml
+AG_NoTusks.label	sem presas/mandíbulas
+AG_NoTusks.description	Portadores deste gene não têm presas nem mandíbulas.
+AG_Tusks.label	presas
+AG_Tusks.description	Portadores deste gene têm duas presas grandes saindo da mandíbula.
+AG_Tusks.symbolPack.prefixSymbols.0.symbol	presa
+AG_Tusks.symbolPack.prefixSymbols.1.symbol	presudo
+AG_PincerMandibles.label	mandíbulas de pinça
+AG_PincerMandibles.description	Portadores deste gene têm duas mandíbulas grandes em forma de pinça saindo da boca.
+AG_PincerMandibles.symbolPack.prefixSymbols.0.symbol	mandíb
+AG_PincerMandibles.symbolPack.prefixSymbols.1.symbol	ento
+AG_PincerMandibles.symbolPack.prefixSymbols.2.symbol	inseto
+AG_FaceTentacles.label	tentáculos faciais
+AG_FaceTentacles.description	Portadores deste gene têm uma série de tentáculos gosmentos saindo da mandíbula.
+AG_FaceTentacles.symbolPack.prefixSymbols.0.symbol	tentácul
+AG_FaceTentacles.symbolPack.prefixSymbols.1.symbol	polvo
+AG_BeetleMandibles.label	mandíbulas de besouro
+AG_BeetleMandibles.description	Portadores deste gene têm duas mandíbulas grandes de besouro saindo da boca.
+AG_BeetleMandibles.symbolPack.prefixSymbols.0.symbol	mandíb
+AG_BeetleMandibles.symbolPack.prefixSymbols.1.symbol	ento
+AG_BeetleMandibles.symbolPack.prefixSymbols.2.symbol	inseto
+AG_BeeMandibles.label	mandíbulas de abelha
+AG_BeeMandibles.description	Portadores deste gene têm duas mandíbulas grandes de abelha saindo da boca.
+AG_BeeMandibles.symbolPack.prefixSymbols.0.symbol	mandíb
+AG_BeeMandibles.symbolPack.prefixSymbols.1.symbol	ento
+AG_BeeMandibles.symbolPack.prefixSymbols.2.symbol	inseto
+## DefInjected/GeneDef/GeneDefs_Cosmetics_Anomaly.xml
+AG_TwitchingToughspikes.label	espinhos duros trêmulos
+AG_TwitchingToughspikes.description	Portadores deste gene têm duas garras de espinho duro não funcionais saindo dos ombros. Perturbador!
+AG_TwitchingTrispikes.label	tri-espinhos trêmulos
+AG_TwitchingTrispikes.description	Portadores deste gene têm três garras de carne não funcionais saindo dos ombros. Perturbador!
+AG_TwitchingFingerspike.label	espinho-dedo trêmulo
+AG_TwitchingFingerspike.description	Portadores deste gene têm um espinho-dedo não funcional saindo dos ombros. Perturbador!
+AG_TentacleHorns.label	tentáculos e chifres
+AG_TentacleHorns.description	Portadores deste gene têm dois chifres grandes saindo da testa, que não são só estéticos e podem ser usados para atacar, além de quatro tentáculos carnudos.
+## DefInjected/GeneDef/GeneDefs_Effects.xml
+AG_BoomNodules.label	nódulos de combustível químico
+AG_BoomNodules.description	Pústulas enormes cheias de combustível químico deixam esta pessoa bem nojenta de se ver. Os nódulos explodem se a pessoa morrer.
+AG_BoomNodules.symbolPack.prefixSymbols.0.symbol	bum
+AG_BoomNodules.symbolPack.prefixSymbols.1.symbol	quím
+AG_BoomNodules.symbolPack.prefixSymbols.2.symbol	verruga
+AG_TetraCoils.label	tetrabobinas
+AG_TetraCoils.description	Bobinas tecno-orgânicas de energia sem fio estão ligadas ao genoma do portador, permitindo recarregar baterias por perto.
+AG_TetraCoils.symbolPack.prefixSymbols.0.symbol	eletr
+AG_TetraCoils.symbolPack.prefixSymbols.1.symbol	volta
+AG_TetraCoils.symbolPack.prefixSymbols.2.symbol	carga
+AG_InsectJellyProduction.label	bolsas de geleia
+AG_InsectJellyProduction.description	O portador deste gene tem um órgão tubular dentro do corpo, que permite a humanos produzir pequenas quantidades de geleia de inseto com o tempo.
+AG_Polluter.label	poluidor
+AG_Polluter.description	O portador deste gene polui o terreno ao redor o tempo todo, até transformar a paisagem num deserto desolado.
+## DefInjected/GeneDef/GeneDefs_Effects_AlphaBiomes.xml
+AG_RedFogger.label	gerador de névoa vermelha
+AG_RedFogger.description	Uma nuvem difusa de mecanitos está entrelaçada ao DNA do portador. Esses mecanitos conseguem distorcer o espaço por um furo psíquico, fazendo uma névoa vermelha extradimensional se condensar ao redor do portador.
+AG_RedFogger.symbolPack.prefixSymbols.0.symbol	névoa
+AG_RedFogger.symbolPack.prefixSymbols.1.symbol	nebuloso
+AG_RedFogger.symbolPack.prefixSymbols.2.symbol	úmido
+AG_VolcanicAshMaker.label	gerador de cinzas
+AG_VolcanicAshMaker.description	Uma nuvem difusa de mecanitos está entrelaçada ao DNA do portador. Esses mecanitos atraem as cinzas de vulcões próximos, fazendo cair cinza vulcânica, às vezes junto com chuva.
+AG_AcidRainMaker.label	gerador de chuva ácida
+AG_AcidRainMaker.description	Uma nuvem difusa de mecanitos está entrelaçada ao DNA do portador. Esses mecanitos reduzem drasticamente a pressão atmosférica ao redor e aumentam a acidez da chuva, causando chuva ácida constante.
+AG_ForsakenNightMaker.label	gerador de noite
+AG_ForsakenNightMaker.description	Uma nuvem difusa de mecanitos está entrelaçada ao DNA do portador. Esses mecanitos conseguem cobrir quase totalmente o sol, causando o clima de noite renegada sem parar.
+## DefInjected/GeneDef/GeneDefs_Effects_VIE.xml
+AG_RoyalJellyProduction.label	produção de geleia real
+AG_RoyalJellyProduction.description	O portador deste gene exsuda e produz bolotas de geleia real sem parar, o que dá um pouco de comida extra para a colônia.
+## DefInjected/GeneDef/GeneDefs_Food.xml
+AG_FrailStomach.label	estômago frágil
+AG_FrailStomach.description	Portadores deste gene têm estômago muito fraco e sofrem intoxicação alimentar com mais frequência.
+AG_FrailStomach.symbolPack.prefixSymbols.0.symbol	fraco
+AG_FrailStomach.symbolPack.prefixSymbols.1.symbol	enjoado
+AG_FrailStomach.symbolPack.prefixSymbols.2.symbol	doente
+AG_CorpseFeeding.label	alimentação de cadáveres
+AG_CorpseFeeding.description	Portadores deste gene liberam sem parar um gás corrosivo e fedorento que causa uma coceira desconfortável nos seres vivos. O gás é quase inofensivo, a menos que entre em contato com matéria orgânica em decomposição: ele acelera muito o apodrecimento de cadáveres, liberando um líquido preto e pútrido conhecido como "fluido de purga" ou bile de cadáver. O portador se alimenta pela pele ao entrar em contato com essa lama, mas também pode comer outra matéria orgânica se precisar.
+AG_CorpseFeeding.symbolPack.prefixSymbols.0.symbol	hélix
+AG_CorpseFeeding.symbolPack.prefixSymbols.1.symbol	podre
+AG_CorpseFeeding.symbolPack.prefixSymbols.2.symbol	carniça
+AG_LightSustenance.label	sustento pela luz
+AG_LightSustenance.description	Portadores deste gene têm pigmentos de clorofila na pele que absorvem nutrientes da luz do sol, eliminando quase toda a necessidade de comer, mas exigindo exposição constante à luz para se sustentar.
+AG_LightSustenance.symbolPack.prefixSymbols.0.symbol	foto
+AG_LightSustenance.symbolPack.prefixSymbols.1.symbol	planta
+AG_LightSustenance.symbolPack.prefixSymbols.2.symbol	cloro
+AG_EfficientMandibles.label	mandíbulas eficientes
+AG_EfficientMandibles.description	Portadores deste gene têm dentes fortes e capazes, e quase não têm dificuldade com comidas difíceis de mastigar.
+AG_UnderdevelopedTeeth.label	dentes subdesenvolvidos
+AG_UnderdevelopedTeeth.description	Portadores deste gene têm dentes muito fracos e subdesenvolvidos, e comer é um sacrifício.
+AG_SurvivalInstinct_High.label	instinto de sobrevivência alto
+AG_SurvivalInstinct_High.description	Portadores deste gene têm um forte instinto de sobrevivência, sabendo por intuição onde encontrar a melhor forragem e vivendo da terra.
+AG_SurvivalInstinct_Low.label	instinto de sobrevivência baixo
+AG_SurvivalInstinct_Low.description	Portadores deste gene têm um instinto de sobrevivência fraco e se sentem bem perdidos quando precisam procurar comida.
+AG_TableResistance.label	resistência à falta de mesa
+AG_TableResistance.description	Portadores deste gene desenvolveram uma força mental GIGANTESCA e aguentam a maior tortura de todos os tempos: comer sem mesa.

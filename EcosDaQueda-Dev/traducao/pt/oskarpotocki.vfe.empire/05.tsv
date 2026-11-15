@@ -1,0 +1,58 @@
+## Keyed/UI.xml
+VFEE.SeeAlso	Veja também:
+VFEE.ChangeCharacter	Trocar personagem
+VFEE.CurrentTitle	Título atual: {0}
+VFEE.CurrentHonor	Honra: {0}
+VFEE.PermitPoints	Pontos de permissão não usados: {0}
+VFEE.DevMode	Modo de desenvolvedor
+VFEE.VassalPoints	Pontos de vassalagem não usados: {0}
+VFEE.ReleaseAllVassals	Libertar todos os vassalos
+VFEE.ReleaseAllVassals.Confirm	Libertar os vassalos faz perder os recursos guardados. Tem certeza?
+VFEE.VassalsOf	Vassalos de {0}, {1}
+VFEE.TitheDesc	Os dízimos são entregues por cápsulas de queda depois do tempo definido.
+VFEE.Deliver	Entregar
+VFEE.Deliver.EveryWeek	A cada 7 dias
+VFEE.Deliver.EveryQuadrum	A cada 15 dias
+VFEE.Deliver.EveryYear	Uma vez por ano
+VFEE.Deliver.DaysSpecific	A cada {0} dias
+VFEE.Deliver.Never	Nunca (pausar)
+VFEE.Created	{0} {1} gerados por dia.
+VFEE.CreatedSpecial	{0} {1} gerados a cada {2} dias.
+VFEE.InStockpile	{0} no estoque: {1}
+VFEE.VassalDesc	Só dá para tornar vassalas bases a menos de 100 quadrados de vocês ou dos seus vassalos\nTornem mais vilas vassalas para aumentar o alcance e liberar mais súditos possíveis
+VFEE.NoVassalize	Não dá para tornar vassalo: longe demais
+VFEE.Vassalize	Tornar vassalo
+VFEE.RoomRequirementInstrumentSpace	espaço de dança para todos os instrumentos
+VFEE.OfThe	{0} de {1}
+VFEE.Invite	Convidar como visitante
+VFEE.InviteAs	Convidar como {0} (custo: {1} de honra)
+VFEE.Skip.Title.Previous	Ir para o título anterior
+VFEE.Skip.Title.Next	Ir para o próximo título
+VFEE.Skip.Colonist.Previous	Ir para o colono anterior
+VFEE.Skip.Colonist.Next	Ir para o próximo colono
+VFEE.Honors.RemoveAll	Remover todas as honrarias
+VFEE.Honors.Active	Estas honrarias estão ativas no seu nobre. Arraste-as para a direita para removê-las deste personagem.
+VFEE.Honors.Available	Estas honrarias estão disponíveis para os seus nobres. Arraste-as para a esquerda para ativá-las no nobre escolhido.
+VFEE.HonorsOf	Honrarias de {0}, {1}
+VFEE.Honors.Reward	vocês ganham a honraria {0} para dar a um colono
+VFEE.Honors	Honrarias
+VFEE.MustBeLordOf	Precisa ser senhor de {0}
+VFEE.MustWield	Precisa empunhar {0}
+VFEE.MustHaveParent	Precisa ter um pai ou mãe
+VFEE.Honor.Pending	Precisa ser concedida numa cerimônia antes de ficar ativa.
+VFEE.Honor.Bestow	Conceder honraria
+VFEE.Honor.BestowPlural	Conceder honrarias
+VFEE.Honor.Bestow.Desc	Concede as honrarias pendentes deste nobre. Vai dar estas honrarias:\n{0}
+VFEE.Successful	Sucesso
+VFEE.Honor.Bestow.Success	{0} recebeu as honrarias pendentes. Ganhou:\n{0}
+VFEE.Honor.NoHonors	Precisa ter honrarias pendentes para conceder.
+VFEE.ForcedFaction.Empire.CannotDisable	{FACTION} não pode ser desativado, porque o Vanilla Factions Expanded - Empire precisa dele.
+VFEE.ForcedFaction.Empire.FactionDiscoveryMessage	{FACTION} precisa ser adicionado ao jogo, porque o Vanilla Factions Expanded - Empire precisa dele.
+VFEE.ForcedFaction.Deserters.CannotDisable	{FACTION} não pode ser desativado, porque o Vanilla Factions Expanded - Deserters precisa dele.
+VFEEmpire.RitualRoleTitled.NotTitled	Precisa ter título.
+VFEEmpire.RitualRoleTitled.NotColonist	Precisa ser colono.
+VFEEmpire.RoyalAddress.Finished	O discurso real organizado por {ORGANIZER} terminou.
+VFEEmpire.RoyalAddress.OrganizerGained	{PAWN} ganhou {COUNT} de honra.
+VFEEmpire.RoyalAddress.OrganizerLost	{PAWN} perdeu {COUNT} de honra.
+VFEEmpire.RoyalAddress.TitledGained	{PAWN} agora pode receber o título de {TITLE} de {FACTION}.
+VFEEmpire.BestowTitle.Finished	A cerimônia de concessão organizada por {ORGANIZER} terminou.

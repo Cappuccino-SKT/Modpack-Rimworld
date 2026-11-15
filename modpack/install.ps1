@@ -49,7 +49,7 @@ if (-not $SkipOwnMods) {
     Push-Location $game
     try {
         git fetch origin --quiet
-        foreach ($m in @(@{ dir = 'EcosDaQueda'; branch = 'mod/ecos-da-queda' }, @{ dir = 'EcosDaQuedaDebug'; branch = 'mod/ecos-da-queda-debug' })) {
+        foreach ($m in @(@{ dir = 'EcosDaQueda'; branch = 'mod/ecos-da-queda' }, @{ dir = 'EcosDaQuedaDebug'; branch = 'mod/ecos-da-queda-debug' }, @{ dir = 'EcosDaQuedaTraducao'; branch = 'mod/ecos-da-queda-traducao' })) {
             $dst = Join-Path $mods $m.dir
             if (Test-Path (Join-Path $dst '.git')) { "$($m.dir): já instalado"; continue }
             if (Test-Path $dst) { throw "Mods\$($m.dir) já existe e não é um worktree do git. Mova a pasta e rode de novo." }

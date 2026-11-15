@@ -1,0 +1,557 @@
+## DefInjected/AbilityDef/Abilities.xml
+VREInsector_WingPoweredJump.label	salto de inseto
+VREInsector_WingPoweredJump.description	Salta para um ponto distante usando asas de inseto.
+VREInsector_WingPoweredJump.verbProperties.label	usar salto de inseto
+## DefInjected/AbilityDef/Abilities_VFEInsectoids.xml
+VRE_RoyalJellyInjector.label	injetar geleia real
+VRE_RoyalJellyInjector.description	Injeta geleia real em alguém disposto, usando um órgão injetor especializado. Se a geleia real do portador estiver se regenerando, a injeção não é possível. A injeção causa um ferimento minúsculo, mas a geleia real dá ao alvo um reforço na imunidade e no humor.
+VFEI2_InsectGlide_Far_Colonists.label	planeio longo de gafanhoto
+VFEI2_InsectGlide_Far_Colonists.description	Voa até um ponto distante, visível ou não, usando um par de asas gigantes de gafanhoto. Permite ao portador saltar sobre muros, desde que a área de destino não tenha teto.
+VFEI2_InsectGlide_Far_Colonists.verbProperties.label	planeio longo de gafanhoto
+VFEI2_BreacherCharge_Colonists.label	investida demolidora
+VFEI2_BreacherCharge_Colonists.description	O insetor avança contra o alvo, causando dano pesado a tudo no caminho. Destrói qualquer tipo de defesa com facilidade.
+VFEI2_BreacherCharge_Colonists.verbProperties.label	investida demolidora
+## DefInjected/FactionDef/Factions_Player.xml
+VRE_InsectorPlayerTribe.label	Nova Colmeia
+VRE_InsectorPlayerTribe.description	Uma tribo de insetores.
+VRE_InsectorPlayerTribe.leaderTitle	líder
+VRE_InsectorPlayerTribe.messageDefendersAttacking	{0} de {1} estão atacando seu {2}.
+VRE_InsectorPlayerTribe.pawnSingular	membro da colmeia
+VRE_InsectorPlayerTribe.pawnsPlural	membros da colmeia
+## DefInjected/GeneCategoryDef/GeneDefs_Evolutions.xml
+VRE_EvolutionGene.label	evoluções de insetor
+## DefInjected/GeneCategoryDef/GeneDefs_GenelineCosmetics.xml
+VRE_InsectorCosmeticGene.label	cosméticos de linhagem
+## DefInjected/GeneCategoryDef/GeneDefs_Mutations.xml
+VRE_MutationGene.label	degradações de insetor
+## DefInjected/GeneDef/GeneDefs_Blood.xml
+VRE_BugBlood.label	sangue de inseto
+VRE_BugBlood.description	Portadores deste gene têm sangue esverdeado, como o dos insetos.
+VRE_BugBlood.symbolPack.wholeNameSymbols.0.symbol	sangra-verde
+## DefInjected/GeneDef/GeneDefs_Bodies.xml
+VRE_InsectSkin.label	pele de inseto
+VRE_InsectSkin.description	Portadores deste gene têm uma carapaça um pouco mais grossa no lugar da pele. As placas de quitina conseguem desviar ataques cortantes, mas são bem frágeis e protegem menos contra traumas contundentes.
+VRE_InsectSkin.labelShortAdj	quitinoso
+## DefInjected/GeneDef/GeneDefs_Cosmetic.xml
+VRE_InsectAntennae.label	antenas de inseto
+VRE_InsectAntennae.description	Portadores deste gene têm pequenas antenas no alto da cabeça. Essas antenas não têm nenhuma função conhecida e pode-se supor, com segurança, que são só estéticas.
+## DefInjected/GeneDef/GeneDefs_Evolutions.xml
+VRE_Hiveglands.label	glândulas de colmeia
+VRE_Hiveglands.description	Portadores deste gene têm glândulas especiais que aumentam muito a velocidade de construção. Porém, geram sujeira toda vez que constroem algo.
+VRE_Hiveglands.symbolPack.prefixSymbols.0.symbol	constru
+VRE_Hiveglands.symbolPack.prefixSymbols.1.symbol	arquite
+VRE_Hiveglands.symbolPack.suffixSymbols.0.symbol	teto
+VRE_Hiveglands.symbolPack.suffixSymbols.1.symbol	obra
+VRE_Hiveglands.symbolPack.wholeNameSymbols.0.symbol	arquiteto
+VRE_Hiveglands.symbolPack.wholeNameSymbols.1.symbol	construtoide
+VRE_CompoundEyes.label	olhos compostos
+VRE_CompoundEyes.description	Portadores deste gene têm várias unidades fotorreceptoras independentes que permitem enxergar em muitas direções, notar movimentos muito rápidos e reconhecer detalhes de longe. A visão e o alcance efetivo de tiro aumentam muito.
+VRE_CompoundEyes.symbolPack.prefixSymbols.0.symbol	composto
+VRE_CompoundEyes.symbolPack.suffixSymbols.0.symbol	vigia
+VRE_CompoundEyes.symbolPack.suffixSymbols.1.symbol	olheiro
+VRE_CompoundEyes.symbolPack.wholeNameSymbols.0.symbol	multiolhos
+VRE_VocalGlands.label	glândulas vocais
+VRE_VocalGlands.description	Portadores deste gene têm um órgão vocal especial que imita perfeitamente a voz humana e emite um tom melódico que a maioria das pessoas descreveria como belo.
+VRE_VocalGlands.symbolPack.prefixSymbols.0.symbol	vocal
+VRE_VocalGlands.symbolPack.prefixSymbols.1.symbol	fala
+VRE_VocalGlands.symbolPack.suffixSymbols.0.symbol	orador
+VRE_VocalGlands.symbolPack.wholeNameSymbols.0.symbol	vocal
+VRE_AntimicrobialPeptides.label	peptídeos antimicrobianos
+VRE_AntimicrobialPeptides.description	Portadores deste gene regeneram os tecidos muito mais rápido que o normal e combatem muito melhor infecções e doenças.
+VRE_AntimicrobialPeptides.labelShortAdj	regenerador
+VRE_AntimicrobialPeptides.symbolPack.prefixSymbols.0.symbol	regen
+VRE_InsectWings.label	asas de inseto
+VRE_InsectWings.description	Portadores deste gene têm grandes asas de inseto nas costas, o que os deixa mais rápidos, permite atravessar terreno difícil com facilidade e, de vez em quando, saltar pelo ar.
+VRE_InsectWings.symbolPack.prefixSymbols.0.symbol	voo
+VRE_InsectWings.symbolPack.prefixSymbols.1.symbol	salto
+VRE_InsectWings.symbolPack.suffixSymbols.0.symbol	corredor
+VRE_InsectWings.symbolPack.suffixSymbols.1.symbol	saltador
+VRE_InsectWings.symbolPack.suffixSymbols.2.symbol	voador
+VRE_InsectWings.symbolPack.suffixSymbols.3.symbol	mosca
+VRE_InsectMandibles.label	mandíbulas de inseto
+VRE_InsectMandibles.description	Portadores deste gene têm mandíbulas muito fortes, como as de inseto, que permitem comer bem mais rápido. Também podem usá-las em combate quando desarmados.
+VRE_InsectMandibles.symbolPack.prefixSymbols.0.symbol	mandibulado
+VRE_InsectMandibles.symbolPack.suffixSymbols.0.symbol	inseto
+VRE_InsectMandibles.symbolPack.suffixSymbols.1.symbol	mandíbula
+VRE_RobustMidgut.label	intestino médio robusto
+VRE_RobustMidgut.description	Portadores deste gene têm um intestino médio com várias dobras, que digere comida crua melhor que um humano padrão. Em geral, tiram da comida crua a mesma nutrição que da cozida. Também não se importam nem um pouco com o gosto de comida crua. Impede intoxicação alimentar.
+VRE_HighGreyMatter.label	muita massa cinzenta
+VRE_HighGreyMatter.description	Portadores deste gene absorvem informações novas numa velocidade incrível, analisando suas experiências e aprendendo com elas com facilidade. São incrivelmente bons em aprender novas habilidades e conhecimentos.
+VRE_MegaspiderHorns.label	chifres de megaranha
+VRE_MegaspiderHorns.description	Portadores deste gene têm dois chifres fortes na testa, parecidos com os das megaranhas bioprojetadas. Podem usá-los para ferir inimigos em combate quando desarmados, e eles também aumentam um pouco a velocidade de mineração.
+VRE_MegaspiderHorns.symbolPack.prefixSymbols.0.symbol	chifrudo
+VRE_MegaspiderHorns.symbolPack.suffixSymbols.0.symbol	inseto
+VRE_MegaspiderHorns.symbolPack.suffixSymbols.1.symbol	chifre
+VRE_DetoxifierTubules.label	túbulos desintoxicantes
+VRE_DetoxifierTubules.description	Portadores deste gene têm os túbulos de Malpighi em sobrecarga e aguentam quantidades extremas de toxicidade sem nenhum efeito ruim.
+VRE_HypothermicSlowdown.label	lentidão hipotérmica
+VRE_HypothermicSlowdown.description	Portadores deste gene não sofrem hipotermia. Em vez disso, entram em lentidão hipotérmica, um estado biológico especial que permite sobreviver a frio extremo. Em vez de tentar se manter aquecida, a química do corpo se adapta para evitar o congelamento interno mesmo em temperaturas muito baixas. As funções do corpo desaceleram e as capacidades caem, mas o frio não causa dano permanente.
+VRE_SlowedLifeCycle.label	ciclo de vida lento
+VRE_SlowedLifeCycle.description	Portadores deste gene não envelhecem do jeito normal. Nunca têm doenças crônicas da idade, como câncer, dor nas costas, catarata ou demência, e envelhecem muito mais devagar.
+VRE_HardenedChitin.label	quitina endurecida
+VRE_HardenedChitin.description	Portadores deste gene têm um exoesqueleto de quitina grossa e endurecida e são muito mais resistentes a dano e a cambalear. Em troca, o peso da carapaça os deixa um pouco mais lentos.
+VRE_SensitiveBrainGoop.label	gosma cerebral sensível
+VRE_SensitiveBrainGoop.description	Portadores deste gene têm uma substância volátil ao redor do cérebro que aumenta muito a sensibilidade psíquica.
+VRE_Serotonin.label	serotonina
+VRE_Serotonin.description	Portadores deste gene produzem grandes quantidades de serotonina, o que os mantém num estado contínuo de êxtase, mas também afeta a consciência. A presença desse neurotransmissor também os deixa mais agressivos.
+VRE_Heatshock.label	choque térmico
+VRE_Heatshock.description	Portadores deste gene produzem um tipo especial de proteína de choque térmico quando estão com calor, o que permite sobreviver até às temperaturas mais extremas, mas os faz consumir muito mais nutrição.
+VRE_JellySacks.label	bolsas de geleia
+VRE_JellySacks.description	Portadores deste gene têm grandes bolsas de geleia no baixo-ventre, que produzem periodicamente a valiosa geleia de inseto.
+VRE_JellySacks.symbolPack.prefixSymbols.0.symbol	gelatina
+VRE_JellySacks.symbolPack.prefixSymbols.1.symbol	geleia
+VRE_SpawningSack.label	bolsa de desova
+VRE_SpawningSack.description	Portadores deste gene têm grandes bolsas de geleia real no baixo-ventre. Isso aumenta a fertilidade e acelera a gravidez e, nas gestações de eclosão torácica, permite ao portador carregar a própria cria dentro de si sem risco de morrer no parto.
+VRE_SpawningSack.symbolPack.prefixSymbols.0.symbol	desova
+VRE_SpawningSack.symbolPack.prefixSymbols.1.symbol	cria
+VRE_Parthenogenesis.label	partenogênese
+VRE_Parthenogenesis.description	Portadores deste gene conseguem engravidar sozinhos, gerando filhos sem um segundo pai. Órgãos reprodutivos especializados geram um feto internamente, guardado numa estrutura parecida com um ovipositor até a hora de nascer. Isso permite propagar a espécie rapidamente e de forma autônoma.
+VRE_Parthenogenesis.symbolPack.prefixSymbols.0.symbol	auto
+VRE_CuticleShell.label	casca cuticular
+VRE_CuticleShell.description	Portadores deste gene têm um fino exoesqueleto de cutícula que os protege de patógenos. Isso dá imunidade a doenças comuns, como malária ou gripe. Não ajuda a evitar infecções.
+VRE_CuticleShell.labelShortAdj	imune
+VRE_CuticleShell.symbolPack.prefixSymbols.0.symbol	imuno
+VRE_SpelopedeHorn.label	chifre de espelópede
+VRE_SpelopedeHorn.description	Portadores deste gene têm um chifre único e grosso no meio do crânio, parecido com o dos espelópedes bioprojetados. Ao contrário dos chifres de megaranha, não pode ser usado em combate, mas aumenta muito a velocidade de mineração.
+VRE_SpelopedeHorn.labelShortAdj	chifrudo
+VRE_SpelopedeHorn.symbolPack.prefixSymbols.0.symbol	inseto
+VRE_SpelopedeHorn.symbolPack.prefixSymbols.1.symbol	chifre
+VRE_RipperBlades.label	lâminas estripadoras
+VRE_RipperBlades.description	Portadores deste gene têm longas e mortais lâminas estripadoras no lugar das mãos. As lâminas reduzem muito a velocidade de trabalho, mas podem ser usadas no combate corpo a corpo e cortam ao meio até inimigos de armadura.
+VRE_RipperBlades.labelShortAdj	laminado
+VRE_RipperBlades.symbolPack.prefixSymbols.0.symbol	estripador
+## DefInjected/GeneDef/GeneDefs_Evolutions_VFEInsectoids.xml
+VRE_SwarmSynapse.label	sinapse de enxame
+VRE_SwarmSynapse.description	Portadores deste gene formam um enxame sináptico: as mentes se ligam e aprendem mais rápido quando estão juntas. Como numa colmeia de insetos, a inteligência coletiva e a velocidade de aprendizado aumentam a cada novo membro.
+VRE_RoyalJellyInjector.label	injetor de geleia real
+VRE_RoyalJellyInjector.description	Portadores deste gene desenvolvem uma boca injetora especializada que permite aplicar geleia real em outras pessoas. A injeção dá ao alvo um reforço na imunidade e no humor, mas deixa um ferimento minúsculo e só pode ser feita a cada seis horas.
+VRE_PyroResistantChitin.label	quitina pirorresistente
+VRE_PyroResistantChitin.description	Portadores deste gene desenvolvem uma quitina resistente ao fogo, que reduz drasticamente a inflamabilidade e o dano por chamas. Mantêm a calma em situações de incêndio e nunca entram em pânico quando estão pegando fogo.
+VRE_PyroResistantChitin.symbolPack.prefixSymbols.0.symbol	combustível
+VRE_PyroResistantChitin.symbolPack.prefixSymbols.1.symbol	químico
+VRE_PyroResistantChitin.symbolPack.prefixSymbols.2.symbol	petro
+VRE_FlameGlands.label	glândulas de fogo
+VRE_FlameGlands.description	Portadores deste gene têm glândulas de fogo que permitem cuspir um fluido inflamável pela boca. O fluido pega fogo ao contato, incendiando alvos ou superfícies, graças a uma glândula e uma bolsa especiais que produzem e guardam a substância.
+VRE_FlameGlands.symbolPack.prefixSymbols.0.symbol	fogo
+VRE_FlameGlands.symbolPack.prefixSymbols.1.symbol	chama
+VRE_FlameGlands.symbolPack.prefixSymbols.2.symbol	brasa
+VRE_LocustWings.label	asas de gafanhoto
+VRE_LocustWings.description	Portadores deste gene desenvolvem asas de gafanhoto, que dão a habilidade especial de salto de gafanhoto. Isso permite voar curtas distâncias, imitando os saltos fortes e ágeis de um gafanhoto.
+VRE_LocustWings.symbolPack.prefixSymbols.0.symbol	voo
+VRE_LocustWings.symbolPack.prefixSymbols.1.symbol	salto
+VRE_LocustWings.symbolPack.suffixSymbols.0.symbol	corredor
+VRE_LocustWings.symbolPack.suffixSymbols.1.symbol	saltador
+VRE_LocustWings.symbolPack.suffixSymbols.2.symbol	voador
+VRE_LocustWings.symbolPack.suffixSymbols.3.symbol	mosca
+VRE_InsectRostrum.label	rostro de inseto
+VRE_InsectRostrum.description	Portadores deste gene têm um rostro de inseto, uma estrutura grande e afiada parecida com um bico, como a das abelhas. Isso quadruplica a velocidade para comer e dá uma mordida corpo a corpo poderosa, com dano perfurante alto e recarga rápida.
+VRE_InsectRostrum.labelShortAdj	mandibulado
+VRE_InsectRostrum.symbolPack.prefixSymbols.0.symbol	inseto
+VRE_InsectRostrum.symbolPack.prefixSymbols.1.symbol	mandíbula
+VRE_AcidGlands.label	glândulas de ácido
+VRE_AcidGlands.description	Portadores deste gene desenvolvem glândulas de ácido que permitem esguichar ácido pelo pescoço, danificando construções, pessoas e itens na área-alvo.
+VRE_AcidGlands.symbolPack.prefixSymbols.0.symbol	ácido
+VRE_AcidGlands.symbolPack.prefixSymbols.1.symbol	veneno
+VRE_InfraredSensors.label	sensores infravermelhos
+VRE_InfraredSensors.description	Portadores deste gene têm sensores infravermelhos que permitem enxergar com clareza no escuro. Não sofrem penalidade de trabalho nem de movimento no escuro e ganham precisão a longa distância.
+VRE_MineralRichInsectskin.label	pele de inseto mineralizada
+VRE_MineralRichInsectskin.description	Portadores deste gene desenvolvem uma pele de inseto rica em minerais, que forma placas grossas e protetoras. Essa armadura natural protege bastante até sofrer dano suficiente para se quebrar.
+VRE_ChargerClaws.label	garras de investida
+VRE_ChargerClaws.description	Portadores deste gene desenvolvem grandes garras de investida, que permitem avançar contra um alvo causando dano pesado a tudo no caminho e destruindo defesas com facilidade. A investida pode ser feita periodicamente e a uma distância considerável.
+## DefInjected/GeneDef/GeneDefs_GenelineCosmetics.xml
+VRE_CompoundEyes_Cosmetic.label	olhos compostos, cosmético
+VRE_CompoundEyes_Cosmetic.description	Portadores deste gene têm várias unidades fotorreceptoras independentes que permitem enxergar em muitas direções, notar movimentos muito rápidos e reconhecer detalhes de longe.
+VRE_OcelliEyes_Cosmetic.label	olhos de ocelo, cosmético
+VRE_OcelliEyes_Cosmetic.description	Portadores deste gene têm um sistema óptico formado por uma única lente, sem retina elaborada.
+VRE_InsectAntennae_Cosmetic.label	antenas de inseto, cosmético
+VRE_InsectAntennae_Cosmetic.description	Portadores deste gene têm pequenas antenas no alto da cabeça. Essas antenas não têm nenhuma função conhecida e pode-se supor, com segurança, que são só estéticas.
+VRE_VatGrownInsectoidSkin_Cosmetic.label	pele de insetoide de tanque
+VRE_VatGrownInsectoidSkin_Cosmetic.description	Portadores deste gene produzem um pigmento parecido com o dos insetoides criados em tanque.
+VRE_VatGrownInsectoidSkin_Cosmetic.labelShortAdj	inseto
+VRE_MegaspiderInsectoidSkin_Cosmetic.label	pele de megaranha
+VRE_MegaspiderInsectoidSkin_Cosmetic.description	Portadores deste gene produzem um pigmento parecido com o das megaranhas.
+VRE_MegaspiderInsectoidSkin_Cosmetic.labelShortAdj	inseto
+VRE_MegascarabInsectoidSkin_Cosmetic.label	pele de megaescaravelho
+VRE_MegascarabInsectoidSkin_Cosmetic.description	Portadores deste gene produzem um pigmento parecido com o dos megaescaravelhos.
+VRE_MegascarabInsectoidSkin_Cosmetic.labelShortAdj	inseto
+VRE_SpelopedeInsectoidSkin_Cosmetic.label	pele de espelópede
+VRE_SpelopedeInsectoidSkin_Cosmetic.description	Portadores deste gene produzem um pigmento parecido com o dos espelópedes.
+VRE_SpelopedeInsectoidSkin_Cosmetic.labelShortAdj	inseto
+VRE_NuchadusInsectoidSkin_Cosmetic.label	pele da linhagem nuchadus
+VRE_NuchadusInsectoidSkin_Cosmetic.description	Portadores deste gene produzem um pigmento parecido com o dos insetoides da linhagem Nuchadus.
+VRE_NuchadusInsectoidSkin_Cosmetic.labelShortAdj	inseto
+VRE_ChelisInsectoidSkin_Cosmetic.label	pele da linhagem chelis
+VRE_ChelisInsectoidSkin_Cosmetic.description	Portadores deste gene produzem um pigmento parecido com o dos insetoides da linhagem Chelis.
+VRE_ChelisInsectoidSkin_Cosmetic.labelShortAdj	inseto
+VRE_KemiaInsectoidSkin_Cosmetic.label	pele da linhagem kemia
+VRE_KemiaInsectoidSkin_Cosmetic.description	Portadores deste gene produzem um pigmento parecido com o dos insetoides da linhagem Kemia.
+VRE_KemiaInsectoidSkin_Cosmetic.labelShortAdj	inseto
+VRE_XanidesInsectoidSkin_Cosmetic.label	pele da linhagem xanides
+VRE_XanidesInsectoidSkin_Cosmetic.description	Portadores deste gene produzem um pigmento parecido com o dos insetoides da linhagem Xanides.
+VRE_XanidesInsectoidSkin_Cosmetic.labelShortAdj	inseto
+VRE_InsectWings_Cosmetic.label	asas de inseto, cosmético
+VRE_InsectWings_Cosmetic.description	Portadores deste gene têm grandes asas de inseto nas costas.
+VRE_InsectMandibles_Cosmetic.label	mandíbulas de inseto, cosmético
+VRE_InsectMandibles_Cosmetic.description	Portadores deste gene têm mandíbulas muito fortes, como as de inseto.
+VRE_MegaspiderHorns_Cosmetic.label	chifres de megaranha, cosmético
+VRE_MegaspiderHorns_Cosmetic.description	Portadores deste gene têm dois chifres fortes na testa, parecidos com os das megaranhas bioprojetadas.
+VRE_JellySacks_Cosmetic.label	bolsas de geleia, cosmético
+VRE_JellySacks_Cosmetic.description	Portadores deste gene têm grandes bolsas de geleia no baixo-ventre.
+VRE_SpawningSack_Cosmetic.label	bolsa de desova, cosmético
+VRE_SpawningSack_Cosmetic.description	Portadores deste gene têm grandes bolsas de geleia real no baixo-ventre.
+VRE_SpelopedeHorn_Cosmetic.label	chifre de espelópede, cosmético
+VRE_SpelopedeHorn_Cosmetic.description	Portadores deste gene têm um chifre único e grosso no meio do crânio, parecido com o dos espelópedes bioprojetados.
+VRE_Eyes_Red_Cosmetic.label	olhos vermelhos, cosmético
+VRE_Eyes_Red_Cosmetic.description	Portadores deste gene têm olhos de pigmento vermelho intenso.
+VRE_Eyes_Gray_Cosmetic.label	olhos cinzentos, cosmético
+VRE_Eyes_Gray_Cosmetic.description	Portadores deste gene têm olhos de um cinza-esbranquiçado pálido.
+VRE_Headbone_MiniHorns_Cosmetic.label	minichifres, cosmético
+VRE_Headbone_MiniHorns_Cosmetic.description	Portadores deste gene têm dois chifrinhos saindo da testa.
+VRE_Headbone_CenterHorn_Cosmetic.label	chifre central, cosmético
+VRE_Headbone_CenterHorn_Cosmetic.description	Portadores deste gene têm um único chifre saindo do centro da testa.
+## DefInjected/GeneDef/GeneDefs_GenelineEvolution.xml
+VRE_GenelineEvolution.label	evolução de linhagem
+VRE_GenelineEvolution.description	Portadores deste gene conseguem adaptar a própria linhagem genética quando quiserem. Podem formar castas diferentes e obter várias evoluções e degradações novas, exclusivas da linhagem.
+## DefInjected/GeneDef/GeneDefs_Meats.xml
+VRE_InsectFlesh.label	carne de inseto
+VRE_InsectFlesh.description	Portadores deste gene têm tecido de inseto no lugar da carne. Para eles, comer carne de inseto conta como canibalismo. Quando abatidos, rendem carne de inseto em vez de carne humana.\n\nSe o VFE - Insectoids 2 estiver ativo, este gene anula a penalidade de movimento na gosma de colmeia.
+## DefInjected/GeneDef/GeneDefs_Misc.xml
+VRE_InsectPheromones.label	feromônios de inseto
+VRE_InsectPheromones.description	Portadores deste gene emitem feromônios especiais que permitem conviver com insetoides selvagens. Não são atacados por insetoides, a menos que os provoquem.
+## DefInjected/GeneDef/GeneDefs_Mutations.xml
+VRE_OcelliEyes.label	olhos de ocelo
+VRE_OcelliEyes.description	Portadores deste gene têm um sistema óptico formado por uma única lente, sem retina elaborada, o que os deixa quase cegos.
+VRE_OcelliEyes.symbolPack.prefixSymbols.0.symbol	cego
+VRE_OcelliEyes.symbolPack.prefixSymbols.1.symbol	ocelo
+VRE_OcelliEyes.symbolPack.suffixSymbols.0.symbol	cego
+VRE_OcelliEyes.symbolPack.wholeNameSymbols.0.symbol	cego
+VRE_VocalChitters.label	estalos vocais
+VRE_VocalChitters.description	As cordas vocais dos portadores deste gene viraram pequenas aberturas nos ossos, e eles não conseguem falar, a menos que alguém entenda os assobios altos que agora produzem.
+VRE_VocalChitters.symbolPack.prefixSymbols.0.symbol	quieto
+VRE_VocalChitters.symbolPack.prefixSymbols.1.symbol	mudo
+VRE_VocalChitters.symbolPack.suffixSymbols.0.symbol	mudo
+VRE_VocalChitters.symbolPack.wholeNameSymbols.0.symbol	estalador
+VRE_Immunodeficiency.label	imunodeficiência
+VRE_Immunodeficiency.description	Portadores deste gene regeneram os tecidos na metade da velocidade normal e têm muito mais chance de morrer de infecção por causa da baixa imunidade.
+VRE_Immunodeficiency.labelShortAdj	fraco
+VRE_Immunodeficiency.symbolPack.prefixSymbols.0.symbol	frágil
+VRE_InflexibleJoints.label	articulações rígidas
+VRE_InflexibleJoints.description	Portadores deste gene têm articulações endurecidas e pouco flexíveis, o que dificulta muito se mover, e mais ainda em terreno difícil.
+VRE_InflexibleJoints.symbolPack.prefixSymbols.0.symbol	lento
+VRE_InflexibleJoints.symbolPack.prefixSymbols.1.symbol	lesma
+VRE_InflexibleJoints.symbolPack.prefixSymbols.2.symbol	letár
+VRE_InflexibleJoints.symbolPack.prefixSymbols.3.symbol	inflexí
+VRE_InflexibleJoints.symbolPack.suffixSymbols.0.symbol	arrastado
+VRE_InflexibleJoints.symbolPack.suffixSymbols.1.symbol	lesmento
+VRE_InflexibleJoints.symbolPack.suffixSymbols.2.symbol	gosmento
+VRE_InefficientMidgut.label	intestino médio ineficiente
+VRE_InefficientMidgut.description	Portadores deste gene têm um ácido muito ineficiente no intestino médio, o que dificulta absorver nutrientes. Ficam com fome bem mais rápido, mas conseguem comer mais.
+VRE_PorousSkin.label	pele porosa
+VRE_PorousSkin.description	Portadores deste gene têm poros ocos na pele, o que os deixa com uma aparência extremamente desagradável.
+VRE_LowGreyMatter.label	pouca massa cinzenta
+VRE_LowGreyMatter.description	Portadores deste gene não conseguem processar informações novas nem avaliar as próprias decisões e aprender com elas. São incrivelmente lentos para aprender novas habilidades e conhecimentos e têm a sensibilidade psíquica bem reduzida.
+VRE_LowGreyMatter.symbolPack.prefixSymbols.0.symbol	thag
+VRE_LowGreyMatter.symbolPack.prefixSymbols.1.symbol	grunhido
+VRE_LowGreyMatter.symbolPack.prefixSymbols.2.symbol	burro
+VRE_LowGreyMatter.symbolPack.prefixSymbols.3.symbol	lerdo
+VRE_LowGreyMatter.symbolPack.prefixSymbols.4.symbol	tapado
+VRE_VestigialTubules.label	túbulos vestigiais
+VRE_VestigialTubules.description	Portadores deste gene não conseguem filtrar toxinas, porque os túbulos perderam a função. Têm muito mais chance de morrer por qualquer tipo de toxicidade no ambiente.
+VRE_HypothermicHibernation.label	hibernação hipotérmica
+VRE_HypothermicHibernation.description	Portadores deste gene hibernam se a temperatura cair abaixo de certo ponto por muito tempo. Perdem rapidamente as funções do corpo e caem num sono profundo, o que impede qualquer dano por congelamento, mas também os deixa incapazes de fazer qualquer coisa.
+VRE_RapidLifeCycle.label	ciclo de vida acelerado
+VRE_RapidLifeCycle.description	Portadores deste gene têm um ciclo de vida curto e sofrem doenças da idade mais cedo que os outros. Quanto mais velhos ficam, mais rápido envelhecem.
+VRE_WeakenedChitin.label	quitina enfraquecida
+VRE_WeakenedChitin.description	Portadores deste gene têm um exoesqueleto de quitina fina, porosa e frágil, e se machucam fácil. Em compensação, a carapaça leve permite andar um pouco mais rápido.
+VRE_Heatstress.label	estresse térmico
+VRE_Heatstress.description	Portadores deste gene sofrem estresse térmico quando a temperatura passa da faixa ideal para os processos do corpo. Isso causa dano celular, incluindo desnaturação de proteínas, queimaduras e um medo intenso de fogo. Perdem a consciência quando expostos a calor extremo, mesmo por pouco tempo.
+VRE_Dormant.label	dormente
+VRE_Dormant.description	Portadores deste gene têm atividade e agressividade reduzidas e passam a maior parte do tempo em dormência. O metabolismo também é reduzido, então consomem menos nutrição para se manter vivos.
+VRE_LowOctopamine.label	pouca octopamina
+VRE_LowOctopamine.description	Portadores deste gene produzem muito pouca octopamina, o que reduz a excitação e o nível de atividade. A falta desse neurotransmissor também os deixa muito mais deprimidos.
+VRE_PollutionDependency.label	dependência de poluição
+VRE_PollutionDependency.description	Portadores deste gene precisam ser afetados pela poluição regularmente para sobreviver. Após 5 dias sem poluição, sofrem de deficiência de poluição. Após 30 dias, entram em coma. Após 60 dias, morrem.
+VRE_ProteinDenaturation.label	desnaturação de proteínas
+VRE_ProteinDenaturation.description	Portadores deste gene têm os processos celulares perturbados por proteínas desnaturadas que reagem perigosamente à radiação UV. São intensamente sensíveis à luz do sol e têm uma quitina muito seca, vulnerável ao fogo.
+VRE_ProteinDenaturation.symbolPack.prefixSymbols.0.symbol	seco
+VRE_Stenothermic.label	estenotérmico
+VRE_Stenothermic.description	Portadores deste gene só toleram uma faixa muito estreita de temperatura.
+VRE_AcidBlood.label	sangue ácido
+VRE_AcidBlood.description	Portadores deste gene têm uma toxina muito concentrada no sangue. Quando sangram, liberam muito gás tóxico, e quando morrem, o equipamento é destruído pelo ácido.
+## DefInjected/GeneDef/GeneDefs_Mutations_VFEInsectoids.xml
+VRE_Microsized.label	microtamanho
+VRE_Microsized.description	Portadores deste gene têm estatura micro, bem menor que a de seus semelhantes. O tamanho reduzido aumenta a duração do cambaleio, diminui o rendimento de carne e couro e reduz a necessidade de comida, que fica mais eficiente.
+VRE_Microsized.symbolPack.prefixSymbols.0.symbol	pequeno
+VRE_Microsized.symbolPack.prefixSymbols.1.symbol	minúsculo
+VRE_Microsized.symbolPack.prefixSymbols.2.symbol	mini
+VRE_Colossal.label	colossal
+VRE_Colossal.description	Portadores deste gene crescem até proporções colossais, muito acima dos semelhantes. O tamanho imenso aumenta o rendimento de carne e couro e a fome, mas reduz a velocidade e a chance de esquiva corpo a corpo. Com os aprimoramentos certos, podem carregar as armas mais pesadas e o armamento de caixão de guerra.
+VRE_Colossal.symbolPack.prefixSymbols.0.symbol	grande
+VRE_Colossal.symbolPack.prefixSymbols.1.symbol	grandão
+VRE_Colossal.symbolPack.prefixSymbols.2.symbol	magni
+VRE_ChemfuelSacks.label	bolsas de combustível químico
+VRE_ChemfuelSacks.description	Portadores deste gene desenvolvem bolsas de combustível químico em forma de cauda, o que aumenta drasticamente a vulnerabilidade ao fogo. Se envoltos em chamas grandes o bastante, ou ao morrer, explodem numa bola de fogo. Além disso, podem ser "ordenhados" periodicamente para render combustível químico.
+VRE_ChemfuelSacks.symbolPack.prefixSymbols.0.symbol	combustível
+VRE_ChemfuelSacks.symbolPack.prefixSymbols.1.symbol	químico
+VRE_ChemfuelSacks.symbolPack.prefixSymbols.2.symbol	petro
+VRE_Pyrophiliac.label	pirófilo
+VRE_Pyrophiliac.description	Portadores deste gene têm natureza pirófila, com fascínio e amor pelo fogo. São atraídos pelas chamas e encontram conforto e alegria perto delas.
+VRE_Pyrophiliac.symbolPack.prefixSymbols.0.symbol	fogo
+VRE_Pyrophiliac.symbolPack.prefixSymbols.1.symbol	chama
+VRE_Pyrophiliac.symbolPack.prefixSymbols.2.symbol	piro
+VRE_InsectVolatile.label	volátil
+VRE_InsectVolatile.description	Portadores deste gene têm comportamento volátil: a chance de começar brigas sociais aumenta drasticamente e os colapsos mentais são sempre violentos quando possível. Tendem mais a tentar fugas da prisão e usam armas nos confrontos sociais.
+VRE_InsectVolatile.symbolPack.prefixSymbols.0.symbol	agro
+VRE_InsectVolatile.symbolPack.prefixSymbols.1.symbol	selvagem
+VRE_InsectVolatile.symbolPack.prefixSymbols.2.symbol	volá
+VRE_EcdysoneOverdrive.label	sobrecarga de ecdisona
+VRE_EcdysoneOverdrive.description	Portadores deste gene sofrem uma sobrecarga de ecdisona, que cria uma necessidade constante de saciar a vontade de matar. Longos períodos sem matar corpo a corpo trazem penalidades de humor crescentes, levando-os a confrontos violentos para manter o equilíbrio mental.
+VRE_EcdysoneOverdrive.symbolPack.prefixSymbols.0.symbol	agro
+VRE_EcdysoneOverdrive.symbolPack.prefixSymbols.1.symbol	matador
+VRE_AcidBurstSack.label	bolsa de ácido explosiva
+VRE_AcidBurstSack.description	Portadores deste gene têm uma bolsa de ácido explosiva, que libera ácido corrosivo numa explosão quando sofrem um golpe forte. A explosão atinge tudo num raio amplo, causando dano contínuo a quem for pego.
+VRE_SolidGreyMatter.label	massa cinzenta sólida
+VRE_SolidGreyMatter.description	Portadores deste gene têm a massa cinzenta solidificada, o que os deixa totalmente incapazes de aprender novas habilidades. Perdem habilidades mais rápido, mesmo em níveis baixos.
+VRE_SolidGreyMatter.symbolPack.prefixSymbols.0.symbol	thag
+VRE_SolidGreyMatter.symbolPack.prefixSymbols.1.symbol	grunhido
+VRE_SolidGreyMatter.symbolPack.prefixSymbols.2.symbol	burro
+VRE_SolidGreyMatter.symbolPack.prefixSymbols.3.symbol	lerdo
+VRE_SolidGreyMatter.symbolPack.prefixSymbols.4.symbol	tapado
+VRE_HardLockedJoints.label	articulações travadas
+VRE_HardLockedJoints.description	Portadores deste gene têm articulações travadas, o que deixa os movimentos muito mais lentos. Dobrar o corpo e agir rápido fica extremamente difícil.
+VRE_HardLockedJoints.symbolPack.prefixSymbols.0.symbol	lento
+VRE_HardLockedJoints.symbolPack.prefixSymbols.1.symbol	trava
+VRE_PassiveInsect.label	passivo
+VRE_PassiveInsect.description	Portadores deste gene são passivos por natureza: não têm interesse em combate e são incapazes de lutar. A natureza deles os faz evitar totalmente confrontos violentos.
+## DefInjected/GeneDef/GeneDefs_Needs.xml
+VRE_InsectJellyDependency.label	dependência de geleia de inseto
+VRE_InsectJellyDependency.description	Portadores deste gene precisam ingerir geleia de inseto regularmente para sobreviver. Após 5 dias sem geleia de inseto, sofrem de deficiência de geleia de inseto. Após 30 dias, entram em coma. Após 60 dias, morrem.
+VRE_InsectJellyDependency.resourceDescription	Uma necessidade de {PAWN_nameDef} de consumir geleia de inseto
+VRE_InsectJellyDependency.resourceLabel	geleia de inseto
+## DefInjected/GeneDef/GeneDefs_Reproduction.xml
+VRE_ChestburstPregnancy.label	gravidez de eclosão torácica
+VRE_ChestburstPregnancy.description	Portadores deste gene não carregam o próprio feto. Em vez disso, o feto precisa ser implantado em outro indivíduo ou animal, com ou sem consentimento. Quando o feto amadurece, rompe a caixa torácica da vítima e mata o hospedeiro.
+## DefInjected/GeneDef/GeneDefs_SkinColors.xml
+VRE_VatGrownInsectoidSkin.label	pele de insetoide de tanque
+VRE_VatGrownInsectoidSkin.description	Portadores deste gene produzem um pigmento parecido com o dos insetoides criados em tanque.
+VRE_VatGrownInsectoidSkin.labelShortAdj	inseto
+VRE_MegaspiderInsectoidSkin.label	pele de megaranha
+VRE_MegaspiderInsectoidSkin.description	Portadores deste gene produzem um pigmento parecido com o das megaranhas.
+VRE_MegaspiderInsectoidSkin.labelShortAdj	inseto
+VRE_MegascarabInsectoidSkin.label	pele de megaescaravelho
+VRE_MegascarabInsectoidSkin.description	Portadores deste gene produzem um pigmento parecido com o dos megaescaravelhos.
+VRE_MegascarabInsectoidSkin.labelShortAdj	inseto
+VRE_SpelopedeInsectoidSkin.label	pele de espelópede
+VRE_SpelopedeInsectoidSkin.description	Portadores deste gene produzem um pigmento parecido com o dos espelópedes.
+VRE_SpelopedeInsectoidSkin.labelShortAdj	inseto
+## DefInjected/HediffDef/Buildings_Natural.xml
+VRE_MetapodHediff.label	metápode
+VRE_MetapodHediff.description	Um casulo grande formado por um insetor em metamorfose. Se for destruído, o insetor dentro morre. Quando a metamorfose termina, o insetor sai do metápode com uma composição genética totalmente nova.
+VRE_MetapodSickness.label	Enjoo de metápode
+VRE_MetapodSickness.description	Efeitos colaterais de evoluir dentro de um metápode. O metápode insetoide substitui e altera o genoma do indivíduo. Ao sair, o corpo leva um tempo para reiniciar e reequilibrar os processos metabólicos naturais. A duração depende do tempo passado no metápode.
+## DefInjected/HediffDef/Hediffs_Attacks.xml
+VRE_InsectMandibles.label	mandíbulas de inseto
+VRE_InsectMandibles.description	Mandíbulas muito fortes, como as de inseto, que permitem a esta pessoa comer bem mais rápido. Também podem ser usadas em combate quando desarmada.
+VRE_InsectMandibles.comps.HediffComp_VerbGiver.tools.insect_mandibles.label	mandíbulas de inseto
+VRE_HornAttack.label	chifres de megaranha
+VRE_HornAttack.description	Estes chifres podem ser usados para ferir inimigos em combate quando desarmado.
+VRE_HornAttack.comps.HediffComp_VerbGiver.tools.megaspider_horns.label	chifres de megaranha
+VRE_RipperBlades.label	lâmina estripadora
+VRE_RipperBlades.description	Uma longa e mortal lâmina estripadora que reduz muito a velocidade de trabalho, mas pode ser usada no combate corpo a corpo para cortar ao meio até inimigos de armadura.
+VRE_RipperBlades.comps.HediffComp_VerbGiver.tools.ripperblade.label	lâmina estripadora
+## DefInjected/HediffDef/Hediffs_Attacks_VFEInsectoids.xml
+VRE_InsectRostrum.label	rostro de inseto
+VRE_InsectRostrum.description	Uma estrutura grande e afiada parecida com um bico, como a das abelhas, que dá uma mordida corpo a corpo poderosa, com dano perfurante alto e recarga rápida.
+VRE_InsectRostrum.comps.HediffComp_VerbGiver.tools.insect_rostrum.label	rostro de inseto
+## DefInjected/HediffDef/Hediffs_Health.xml
+VRE_AcidBlood.label	sangue ácido
+VRE_AcidBlood.description	Esta pessoa tem uma toxina muito concentrada no sangue. Quando sangra, libera muito gás tóxico, e quando morre, o equipamento é destruído pelo ácido.
+## DefInjected/HediffDef/Hediffs_Hunger.xml
+VRE_InefficientMidgut.label	intestino médio ineficiente
+VRE_InefficientMidgut.description	Esta pessoa tem um ácido muito ineficiente no intestino médio, o que dificulta absorver nutrientes. Fica com fome bem mais rápido, mas consegue comer mais.
+VRE_Dormant.label	dormente
+VRE_Dormant.description	Esta pessoa tem atividade e agressividade reduzidas e passa a maior parte do tempo em dormência. O metabolismo também é reduzido, então consome menos nutrição para se manter viva.
+## DefInjected/HediffDef/Hediffs_Hunger_VFEInsectoids.xml
+VRE_Microsized.label	microtamanho
+VRE_Microsized.description	O tamanho genético menor reduz a velocidade da fome.
+VRE_Colossal.label	colossal
+VRE_Colossal.description	O tamanho genético maior aumenta a velocidade da fome.
+## DefInjected/HediffDef/Hediffs_Mental.xml
+VRE_Serotonin.label	onda de serotonina
+VRE_Serotonin.description	Grandes quantidades de serotonina causam muita felicidade, ao custo de menos consciência.
+VRE_LowOctopamine.label	baixa de octopamina
+VRE_LowOctopamine.description	Pouca octopamina reduz a excitação e o nível de atividade, além de causar depressão.
+## DefInjected/HediffDef/Hediffs_Misc_VFEInsectoids.xml
+VRE_ChemfuelSacks.label	bolsas de combustível químico
+VRE_ChemfuelSacks.description	As bolsas de combustível químico deixam esta pessoa muito volátil. Se pegar fogo, e o fogo tiver tamanho de pelo menos 35, ela explode numa bola de fogo. Depois de explodir, não explode de novo por 24 horas.\n\nProduz 30 de combustível químico a cada 10 dias.
+VRE_AcidBurstSack.label	bolsa de ácido explosiva
+VRE_AcidBurstSack.description	Ao sofrer muito dano de uma só vez, esta pessoa explode em ácido, cobrindo tudo e todos num raio de 4,9 quadrados com ácido corrosivo, que causa dano ao longo do tempo.
+VRE_MineralRichInsectskin.label	pele de inseto mineralizada
+VRE_MineralRichInsectskin.description	Pele de inseto rica em minerais que forma placas grossas e protetoras. Essa armadura natural protege bastante até sofrer dano suficiente para se quebrar.
+## DefInjected/HediffDef/Hediffs_Movement.xml
+VREInsector_Hover.label	planar
+VREInsector_Hover.description	Voo limitado que permite a este colono saltitar e planar curtas distâncias sobre o terreno. Ignora o custo de movimento do terreno ao andar.
+## DefInjected/HediffDef/Hediffs_Needs.xml
+VRE_PollutionDependencyHediff.label	dependência de poluição
+VRE_PollutionDependencyHediff.description	Esta pessoa tem uma dependência bioquímica genética de poluição. Após 5 dias sem poluição, sofre de deficiência de poluição. Após 30 dias, entra em coma. Após 60 dias, morre.
+VRE_PollutionDependencyHediff.stages.deficiency.label	deficiência
+VRE_PollutionDependencyHediff.stages.3.overrideLabel	coma por deficiência
+VRE_InsectJellyDependencyHediff.label	dependência de geleia de inseto
+VRE_InsectJellyDependencyHediff.description	Esta pessoa tem uma dependência bioquímica genética de geleia de inseto. Após 5 dias sem geleia de inseto, sofre de deficiência de geleia de inseto. Após 30 dias, entra em coma. Após 60 dias, morre.
+VRE_InsectJellyDependencyHediff.stages.deficiency.label	deficiência
+VRE_InsectJellyDependencyHediff.stages.3.overrideLabel	coma por deficiência
+## DefInjected/HediffDef/Hediffs_Reproduction.xml
+VRE_ChestburstPregnancyHediff.label	gravidez de eclosão torácica precisa de implante
+VRE_ChestburstPregnancyHediff.description	Quando um colono com o gene gravidez de eclosão torácica engravida, precisa escolher outro indivíduo, com ou sem consentimento, para implantar o feto. Quando o feto amadurece, rompe a caixa torácica da vítima e mata o hospedeiro. Se não fizer isso antes do segundo trimestre (6 dias), a gravidez é interrompida.
+VRE_ChestburstPregnancy_Victim.label	gravidez de eclosão torácica
+VRE_ChestburstPregnancy_Victim.description	Afetado por uma gravidez de eclosão torácica. Se o implante chegar à gravidade 1, ou se a criatura morrer com a gestação avançada (mais de 90%), o feto devora a vítima por dentro e eclode do cadáver. A gestação dura 15 dias.
+VRE_ChestburstPregnancy_Victim.stages.egg.label	ovo
+VRE_ChestburstPregnancy_Victim.stages.larva.label	larva
+VRE_ChestburstPregnancy_Victim.stages.pupa.label	pupa
+VRE_ChestburstPregnancy_Victim.stages.juvenile.label	juvenil
+VRE_ChestburstPregnancy_Victim_Hidden.label	gravidez de eclosão torácica
+VRE_ChestburstPregnancy_Victim_Hidden.description	Afetado por uma gravidez de eclosão torácica. Se o implante chegar à gravidade 1, ou se a criatura morrer com a gestação avançada (mais de 90%), o feto devora a vítima por dentro e eclode do cadáver. A gestação dura 15 dias. Esta gravidez está avançada demais para ser removida por cirurgia.
+VRE_ChestburstPregnancy_Victim_Hidden.stages.egg.label	ovo
+VRE_ChestburstPregnancy_Victim_Hidden.stages.larva.label	larva
+VRE_ChestburstPregnancy_Victim_Hidden.stages.pupa.label	pupa
+VRE_ChestburstPregnancy_Victim_Hidden.stages.juvenile.label	juvenil
+VRE_Parthenogenesis.label	partenogênese
+VRE_Parthenogenesis.description	Esta pessoa consegue engravidar sozinha, gerando filhos sem um segundo pai. Órgãos reprodutivos especializados geram um feto internamente, guardado numa estrutura parecida com um ovipositor até a hora de nascer. Isso permite propagar a espécie rapidamente e de forma autônoma.
+## DefInjected/HediffDef/Hediffs_ResourceProduction.xml
+VRE_InsectJellyProduction.label	produção de geleia
+VRE_InsectJellyProduction.description	Esta pessoa tem grandes bolsas de geleia no baixo-ventre, que produzem periodicamente a valiosa geleia de inseto.
+## DefInjected/HediffDef/Hediffs_Sterile.xml
+VREInsector_TempSterile.label	fadiga de implante torácico
+VREInsector_TempSterile.description	Depois de fazer um implante de eclosão torácica, a pessoa com o gene gravidez de eclosão torácica passa por um curto período de esterilidade até poder gerar outro. A condição é temporária e não deixa efeitos duradouros.
+## DefInjected/HediffDef/Hediffs_Temperature.xml
+VRE_HeatshockHediff.label	choque térmico
+VRE_HeatshockHediff.description	Uma perturbação geral das funções do corpo causada por exposição excessiva ao calor e ao sol. A vítima consegue produzir proteínas de choque térmico em resposta às altas temperaturas, o que impede a morte, mas aumenta a necessidade de nutrição. A recuperação é rápida num lugar fresco.
+VRE_HeatshockHediff.stages.initial-0.label	inicial
+VRE_HeatshockHediff.stages.initial-1.label	inicial
+VRE_HeatshockHediff.stages.minor.label	leve
+VRE_HeatshockHediff.stages.serious.label	sério
+VRE_HeatshockHediff.stages.extreme.label	extremo
+VRE_HypothermicHibernationHediff.label	hibernação hipotérmica
+VRE_HypothermicHibernationHediff.description	Esta pessoa hiberna se a temperatura cair abaixo de certo ponto por muito tempo. Perde rapidamente as funções do corpo e cai num sono profundo, o que impede qualquer dano por congelamento, mas também a deixa incapaz de fazer qualquer coisa.
+VRE_HypothermicHibernationHediff.stages.shivering.label	tremendo
+VRE_HypothermicHibernationHediff.stages.initial.label	inicial
+VRE_HypothermicHibernationHediff.stages.drowsy.label	sonolento
+VRE_HypothermicHibernationHediff.stages.sleep.label	adormecido
+VRE_HypothermicHibernationHediff.stages.deep_sleep.label	sono profundo
+VRE_HeatstressHediff.label	estresse térmico
+VRE_HeatstressHediff.description	Uma perturbação geral das funções do corpo causada por exposição excessiva ao calor e ao sol. O dano celular e a desnaturação de proteínas causam queimaduras e, muito rápido, a perda da consciência.
+VRE_HeatstressHediff.stages.initial-0.label	inicial
+VRE_HeatstressHediff.stages.initial-1.label	inicial
+VRE_HeatstressHediff.stages.minor.label	leve
+VRE_HeatstressHediff.stages.serious.label	sério
+VRE_HeatstressHediff.stages.extreme.label	extremo
+## DefInjected/IncidentDef/Incidents_Map_Misc.xml
+VRE_ChestburstWandererJoinQuest.label	andarilho se junta
+## DefInjected/JobDef/Jobs_VFEInsectoids.xml
+VRE_IngestPherocore.reportString	ingerindo feronúcleo.
+VRE_ArmedSocialFightInsectors.reportString	brigando com TargetA.
+## DefInjected/JobDef/Jobs_Work.xml
+VRE_ChestburstImplantationJob.reportString	injetando feto de eclosão torácica.
+VRE_ConsumeInsectJelly.reportString	consumindo TargetA.
+## DefInjected/NeedDef/Needs.xml
+VRE_Pollution.label	poluição
+VRE_Pollution.description	Portadores deste gene precisam ser afetados pela poluição regularmente para sobreviver. Após 5 dias sem poluição, sofrem de deficiência de poluição. Após 30 dias, entram em coma. Após 60 dias, morrem.
+## DefInjected/PawnKindDef/PawnKinds_Player.xml
+VRE_TribalInsector.label	Insetor tribal
+## DefInjected/QuestScriptDef/Script_ChestburstWandererJoins.xml
+VRE_ChestburstWandererJoinQuest.questNameRules.rulesStrings[0]	questName->Andarilho se junta
+## DefInjected/RecipeDef/Surgery.xml
+VRE_RemoveChestburstPregnancy_Victim.label	remover gravidez de eclosão torácica
+VRE_RemoveChestburstPregnancy_Victim.description	Remove a gravidez de eclosão torácica desta vítima, matando o feto.
+VRE_RemoveChestburstPregnancy_Victim.jobString	Removendo gravidez de eclosão torácica.
+## DefInjected/ScenPartDef/Scenario.xml
+VRE_PlayerPawnsArriveCrash.label	forma de chegada
+## DefInjected/ScenarioDef/Scenario.xml
+VRE_InfestedCrash.label	Nave Infestada
+VRE_InfestedCrash.description	Quando a velha nave abandonada entrou na órbita baixa, uma pane súbita nos sistemas provocou um defeito catastrófico. Não sabemos se foi a idade avançada da nave, uma falha crítica de hardware ou um vírus adormecido há muito tempo no núcleo de IA, mas logo percebemos que não importava. Nossa colônia de insetores, sempre incompreendida e lutando para sobreviver, virou um caos. No pânico, corremos em enxame por instinto para as cápsulas de fuga, desesperados para escapar do desastre.\n\nNa pressa, lançamos as cápsulas sem querer, deixando a tripulação humana para trás nas câmaras de criossono, sem saber de nada e condenada. A nave se partiu em vários pedaços enquanto despencava para a superfície. No meio da confusão, só nos restava torcer para que algo ainda pudesse ser recuperado dos destroços.\n\nObservação: como você começa num pouso forçado e com pouquíssimos suprimentos, este é um cenário difícil.
+VRE_InfestedCrash.scenario.description	Quando a velha nave abandonada entrou na órbita baixa, uma pane súbita nos sistemas provocou um defeito catastrófico. Não sabemos se foi a idade avançada da nave, uma falha crítica de hardware ou um vírus adormecido há muito tempo no núcleo de IA, mas logo percebemos que não importava. Nossa colônia de insetores, sempre incompreendida e lutando para sobreviver, virou um caos. No pânico, corremos em enxame por instinto para as cápsulas de fuga, desesperados para escapar do desastre.\n\nNa pressa, lançamos as cápsulas sem querer, deixando a tripulação humana para trás nas câmaras de criossono, sem saber de nada e condenada. A nave se partiu em vários pedaços enquanto despencava para a superfície. No meio da confusão, só nos restava torcer para que algo ainda pudesse ser recuperado dos destroços.\n\nObservação: como você começa num pouso forçado e com pouquíssimos suprimentos, este é um cenário difícil.
+VRE_InfestedCrash.scenario.name	Nave Infestada
+VRE_InfestedCrash.scenario.parts.ConfigurePawnsXenotypes.customSummary	Comece com seis insetores.
+VRE_InfestedCrash.scenario.parts.ConfigurePawnsXenotypes.xenotypeCounts.0.description	insetor adulto
+VRE_InfestedCrash.scenario.parts.GameStartDialog.text	Quando a velha nave abandonada entrou na órbita baixa, uma pane súbita nos sistemas provocou um defeito catastrófico. Não sabemos se foi a idade avançada da nave, uma falha crítica de hardware ou um vírus adormecido há muito tempo no núcleo de IA, mas logo percebemos que não importava. Nossa colônia de insetores, sempre incompreendida e lutando para sobreviver, virou um caos. No pânico, corremos em enxame por instinto para as cápsulas de fuga, desesperados para escapar do desastre.\n\nNa pressa, lançamos as cápsulas sem querer, deixando a tripulação humana para trás nas câmaras de criossono, sem saber de nada e condenada. A nave se partiu em vários pedaços enquanto despencava para a superfície. No meio da confusão, só nos restava torcer para que algo ainda pudesse ser recuperado dos destroços.
+VRE_InfestedCrash.scenario.summary	Uma colmeia de insetores num pouso forçado no meio do nada. Uma experiência clássica do VRE - Insector.
+## DefInjected/ThingDef/Buildings_Natural.xml
+VRE_Metapod.label	metápode
+VRE_Metapod.description	Um casulo grande formado por um insetor em metamorfose. Se for destruído, o insetor dentro morre. Quando a metamorfose termina, o insetor sai do metápode com uma composição genética totalmente nova.
+## DefInjected/ThingDef/Buildings_ShipChunks.xml
+VRE_InfestedShipPart_Spawned.label	peça de nave infestada
+VRE_InfestedShipPart_Spawned.description	Um pedaço de nave coberto de biomassa e geleia de inseto. Antes de cair, fazia parte de uma embarcação maior. Pode ser desmontado para render aço e componentes úteis.
+## DefInjected/ThingDef/Etheral_Skyfallers.xml
+VRE_InfestedShipPart.label	peça de nave infestada
+VRE_ActiveDropPod.label	peça de nave infestada
+## DefInjected/ThingDef/Filth_Various.xml
+VRE_Filth_BugBlood.label	sangue de inseto
+VRE_Filth_BugBlood_BloodSmear.label	mancha de sangue de inseto
+VRE_Filth_BugFilth.label	sujeira de inseto
+VRE_Filth_ToxBlood.label	sangue podre
+## DefInjected/ThoughtDef/Thoughts_Memory_Misc.xml
+VRE_Implanted.stages.forcefully_implanted_by.label	implantado à força por {0}
+VRE_Implanted.stages.forcefully_implanted_by.description	Fui violado e ferroado.
+VRE_Implanted_Social.stages.forcefully_implanted.label	implantado à força
+VRE_ProteinDenaturation.stages.protein_denaturation.label	desnaturação de proteínas
+VRE_ProteinDenaturation.stages.protein_denaturation.description	A luz do sol queima meus olhos e minha quitina parece estar torrando.
+## DefInjected/ThoughtDef/Thoughts_Misc.xml
+VRE_Serotonin.stages.serotoninbuzz.label	onda de serotonina
+VRE_Serotonin.stages.serotoninbuzz.description	Estou incrivelmente feliz e parece que nada vai conseguir me derrubar.
+VRE_LowOctopamine.stages.octopaminedown.label	baixa de octopamina
+VRE_LowOctopamine.stages.octopaminedown.description	Estou para baixo. Acho que minha octopamina está baixa, mas o que é que eu sei?
+VRE_Heatstress.stages.afraid_of_fire.label	medo de fogo
+VRE_Heatstress.stages.afraid_of_fire.description	As chamas me deixam muito nervoso. Um calor tão escaldante, parece que vai pular em mim a qualquer momento!
+## DefInjected/XenotypeDef/XenotypeDefs.xml
+VRE_Insector.label	insetor
+VRE_Insector.description	Os insetores foram projetados num programa militar para prosperar em planetas com ambientes insetoides hostis. Conseguem editar os próprios genes para formar várias castas adaptadas a condições diferentes, o que os torna muito adaptáveis e autossuficientes. Vivem em simbiose com os insetoides e se reproduzem implantando uma larva de eclosão torácica num hospedeiro.\n\nCom exoesqueletos de quitina, olhos multifacetados e membros segmentados, os insetores parecem uma mistura de humano e inseto. A natureza isolacionista e a aparência perturbadora costumam fazer os outros os verem como frios e inacessíveis. Mas sua sociedade é complexa e estratégica, e usa o medo e a incompreensão a seu favor na diplomacia e na guerra, garantindo a sobrevivência nas condições mais duras.
+VRE_Insector.descriptionShort	Projetados para mundos insetoides hostis, os insetores conseguem adaptar os genes para formar castas especializadas e se reproduzem com larvas de eclosão torácica. Com exoesqueletos de quitina e olhos multifacetados, vivem em simbiose com os insetoides.
+## Keyed/Keys.xml
+VRE_ManageGenelines	Gerenciar linhagens
+VRE_ManageGenelinesDesc	Troque a linhagem selecionada ou crie novas linhagens.
+VRE_EditGeneline	Editar linhagem
+VRE_GenelineName	Linhagem {0}
+VRE_DeleteThisGeneline	Excluir esta linhagem. Ao removê-la, todos os insetores desta linhagem entram imediatamente no estágio de metápode e viram insetores básicos.
+VRE_CreateGeneline	Criar uma nova linhagem
+VRE_CreateGenelineExplanation	Você pode editar linhagens existentes ou criar uma nova. Lembre-se de que mudar uma linhagem faz os insetores entrarem no estágio de metápode, que dura 24 horas.
+VRE_GenelineNameCannotBeEmpty	O nome da linhagem não pode ficar vazio.
+VRE_MessageConflictingGenesPresent	Não é possível salvar uma linhagem com vários genes em conflito.
+VRE_Evolutions	Evoluções
+VRE_EvolutionsDesc	Melhorias na composição genética, com efeitos positivos fortes.
+VRE_Degrades	Degradações
+VRE_DegradesDesc	Desvantagens na composição genética, que compensam as evoluções fortes.
+VRE_SaveGeneline	Salvar linhagem
+VRE_NeedEqualAmount	Precisa ter o mesmo número de evoluções e degradações.
+VRE_ChangingGenelineExplanation	Mudar os genes de uma linhagem faz todos os insetores dela entrarem no estágio de metápode. O estágio dura 24 horas, e nesse tempo os insetores ficam indisponíveis.
+VRE_CannotSave	Não é possível salvar: {0}
+VRE_ChangeTo	Mudar para: {0}
+VRE_DeleteGenelineConfirmation	Você está prestes a remover uma linhagem usada por alguns dos seus colonos. Ao removê-la, esses insetores entram imediatamente no estágio de metápode e viram insetores básicos.\nColonos insetores afetados:\n\n{0}\n
+VRE_Genelines	Linhagens
+VRE_GenelinesDesc	Projetos genéticos com evoluções e degradações codificadas biologicamente.
+VRE_MetapodTimer	Tempo até {PAWN_nameDef} sair: {1}\nColoque geleia de inseto no metápode para acelerar bastante o processo.
+VRE_MetapodSicknessCannotChangeGeneline	Não é possível mudar de linhagem por causa do enjoo de metápode.
+VRE_ChestburstPregnancyReady	Gravidez de eclosão torácica
+VRE_ChestburstPregnancyReadyDesc	Quando um colono com o gene gravidez de eclosão torácica engravida, precisa escolher outro indivíduo, com ou sem consentimento, para implantar o feto. Quando o feto amadurece, rompe a caixa torácica da vítima e mata o hospedeiro. Se não fizer isso antes do segundo trimestre (6 dias), a gravidez é interrompida.
+VRE_ChestburstImplantationNeeded	Implante torácico necessário
+VRE_ChestburstImplantationNeededDesc	Quando um colono com o gene gravidez de eclosão torácica engravida, precisa escolher outro indivíduo, com ou sem consentimento, para implantar o feto. Quando o feto amadurece, rompe a caixa torácica da vítima e mata o hospedeiro. Se não fizer isso antes do segundo trimestre (6 dias), a gravidez é interrompida. Estes colonos precisam implantar um feto:\n\n{0}
+VRE_InjectChestburstFetus	Injetar feto de eclosão torácica
+VRE_InjectChestburstFetusDesc	 Injeta o feto na vítima; quando amadurecer, ele sai rompendo o peito da vítima e mata o hospedeiro.
+VRE_NeedsHumanoidOrAnimal	Precisa ser injetado num alvo humanoide ou num animal adulto com tamanho corporal maior que 1
+VRE_CantImplantOnGhoul	Não pode ser injetado em carniçais
+VRE_CantImplantOnShambler	Não pode ser injetado em trôpegos
+VRE_ChestburstBirthLabel	Nascimento por eclosão torácica
+VRE_ChestburstBirth	Um recém-nascido, {0}, eclodiu de um hospedeiro, matando-o no processo
+VRE_ChestburstBirthHiddenLabel	Nascimento por eclosão torácica!
+VRE_ChestburstBirthHidden	{0} carregava sem saber uma gravidez de eclosão torácica! Um insetor recém-nascido, {1}, eclodiu do hospedeiro, matando-o no processo!
+VRE_SelfImpregnate	Autofecundar
+VRE_SelfImpregnateDesc	Uma fêmea se autofecunda, gerando um feto que é uma cópia perfeita dela.
+VRE_PawnIsMale	Só disponível para fêmeas
+VRE_OnlyOnSelf	A partenogênese só pode ter a si mesma como alvo
+VRE_AlreadyPregnant	O indivíduo já está grávido
+VRE_GotPregnant	{0} se autofecundou!
+VRE_PawnIsTooYoung	{0} é jovem demais!
+VRE_TempSterile	{0} ainda está com fadiga de implante
+VRE_SwarmSynapseOffset	Gene sinapse de enxame
+VRE_IngestPherocore	Consumir {0} para desbloquear uma nova mutação/evolução
+VRE_PherocoreConsumed	Consumir {0} desbloqueou {1} {2} para todos os portadores do gene evolução de linhagem
+VRE_NoUnlockableGenes	Não há mais genes para desbloquear com {0}

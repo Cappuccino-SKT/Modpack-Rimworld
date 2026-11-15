@@ -1,0 +1,230 @@
+## DefInjected/GeneDef/GeneDefs_Blood.xml
+AG_ChemfuelBlood.label	sangue de combustível químico
+AG_ChemfuelBlood.description	Portadores deste gene têm metabolismo movido a combustível químico e, por isso, sangram combustível químico em vez de sangue humano normal. Esse sangue é inflamável.
+AG_ChemfuelBlood.symbolPack.prefixSymbols.0.symbol	quím
+AG_ChemfuelBlood.symbolPack.prefixSymbols.1.symbol	explo
+AG_ChemfuelBlood.symbolPack.prefixSymbols.2.symbol	bum
+AG_ChemfuelBlood.symbolPack.wholeNameSymbols.0.symbol	sangra-combustível
+AG_SlimeBlood.label	sangue de gosma
+AG_SlimeBlood.description	Portadores deste gene têm sangue verde e gosmento. É grosso, excepcionalmente feio e não some sozinho.
+AG_SlimeBlood.symbolPack.prefixSymbols.0.symbol	gosmento
+AG_SlimeBlood.symbolPack.prefixSymbols.1.symbol	muco
+AG_SlimeBlood.symbolPack.prefixSymbols.2.symbol	meleca
+AG_SlimeBlood.symbolPack.wholeNameSymbols.0.symbol	sangra-gosma
+AG_AcidicBlood.label	sangue ácido
+AG_AcidicBlood.description	Portadores deste gene têm sangue extremamente ácido. O sangue não os fere, mas espirra para todo lado quando morrem, ferindo todos por perto.
+AG_AcidicBlood.symbolPack.prefixSymbols.0.symbol	ácido
+AG_AcidicBlood.symbolPack.prefixSymbols.1.symbol	cáust
+AG_AcidicBlood.symbolPack.wholeNameSymbols.0.symbol	xenomorfo
+AG_TarBlood.label	sangue de piche
+AG_TarBlood.description	Portadores deste gene têm sangue muito grosso, escuro e pegajoso, parecido com piche. Esse sangue atrapalha o movimento.
+AG_TarBlood.symbolPack.prefixSymbols.0.symbol	piche
+AG_TarBlood.symbolPack.prefixSymbols.1.symbol	grude
+AG_TarBlood.symbolPack.prefixSymbols.2.symbol	óleo
+AG_TarBlood.symbolPack.wholeNameSymbols.0.symbol	sangra-piche
+AG_InsectBlood.label	sangue de inseto
+AG_InsectBlood.description	Portadores deste gene têm sangue de inseto.
+AG_InsectBlood.symbolPack.prefixSymbols.0.symbol	inseto
+AG_InsectBlood.symbolPack.prefixSymbols.1.symbol	ento
+AG_InsectBlood.symbolPack.wholeNameSymbols.0.symbol	sangra-inseto
+AG_FirefoamBlood.label	sangue de espuma antichamas
+AG_FirefoamBlood.description	Portadores deste gene têm no lugar do sangue uma mistura estranha que retarda o fogo. Não é forte o bastante para apagar incêndios, mas impede as chamas de se espalharem.
+AG_FirefoamBlood.symbolPack.prefixSymbols.0.symbol	espuma
+AG_FirefoamBlood.symbolPack.prefixSymbols.1.symbol	flama
+AG_FirefoamBlood.symbolPack.wholeNameSymbols.0.symbol	sangra-espuma
+AG_PebbleBlood.label	sangue de cascalho
+AG_PebbleBlood.description	Portadores deste gene têm sangue parcialmente cristalizado, que vira pequenas pedrinhas assim que entra em contato com o ar. Esse sangue afeta bem menos a beleza e a limpeza do ambiente, mas demora mais para sumir e dá mais trabalho para limpar.
+AG_PebbleBlood.symbolPack.prefixSymbols.0.symbol	pedra
+AG_PebbleBlood.symbolPack.prefixSymbols.1.symbol	cascalho
+AG_PebbleBlood.symbolPack.prefixSymbols.2.symbol	lito
+AG_PebbleBlood.symbolPack.wholeNameSymbols.0.symbol	sangra-pedra
+AG_WaterBlood.label	sangue aguado
+AG_WaterBlood.description	Portadores deste gene têm o sangue diluído. É tão ralo que as poças são praticamente indistinguíveis de água.
+AG_CryoBlood.label	criossangue
+AG_CryoBlood.description	Portadores deste gene têm um fluido criogênico no lugar do sangue. Esse líquido baixa rápido a temperatura ao redor, o que o torna útil e extremamente perigoso. Some mais rápido que o sangue normal, mas não pode ser limpo.
+AG_CryoBlood.symbolPack.prefixSymbols.0.symbol	crio
+AG_CryoBlood.symbolPack.wholeNameSymbols.0.symbol	sangra-gelo
+AG_ForsakenBlood.label	sangue amarelo
+AG_ForsakenBlood.description	Portadores deste gene têm sangue amarelo.
+## DefInjected/GeneDef/GeneDefs_Bodies.xml
+AG_SlimeBody.label	corpo de gosma
+AG_SlimeBody.description	Portadores deste gene têm pele azul, gelatinosa e sempre pingando.
+AG_SlimeBody.labelShortAdj	gosmento
+AG_SlimeBody.symbolPack.prefixSymbols.0.symbol	gosm
+AG_SlimeBody.symbolPack.prefixSymbols.1.symbol	gosmento
+AG_SlimeBody.symbolPack.prefixSymbols.2.symbol	melado
+AG_SlimeBody.symbolPack.prefixSymbols.3.symbol	gelat
+AG_SlugBody.label	corpo de lesma
+AG_SlugBody.description	Portadores deste gene têm uma cauda grossa e gosmenta saindo do cóccix. O corpo inteiro é sempre mole e úmido.
+AG_SlugBody.labelShortAdj	lesmento
+AG_SlugBody.symbolPack.prefixSymbols.0.symbol	hélix
+AG_SlugBody.symbolPack.prefixSymbols.1.symbol	lesma
+AG_SlugBody.symbolPack.prefixSymbols.2.symbol	úmido
+AG_SlugBody.symbolPack.prefixSymbols.3.symbol	caracol
+AG_ScalyBody.label	corpo escamoso
+AG_ScalyBody.description	Portadores deste gene têm escamas úmidas pelo corpo todo.
+AG_ScalyBody.labelShortAdj	escamoso
+AG_ScalyBody.symbolPack.prefixSymbols.0.symbol	escamoso
+AG_ScalyBody.symbolPack.prefixSymbols.1.symbol	rept
+AG_ScalyBody.symbolPack.prefixSymbols.2.symbol	herpet
+AG_RockyBody.label	corpo rochoso
+AG_RockyBody.description	Portadores deste gene têm pele de aparência rochosa, com depósitos minerais furando a pele.
+AG_RockyBody.labelShortAdj	rochoso
+AG_RockyBody.symbolPack.prefixSymbols.0.symbol	rocha
+AG_RockyBody.symbolPack.prefixSymbols.1.symbol	lito
+AG_RockyBody.symbolPack.prefixSymbols.2.symbol	petr
+AG_CancerousBody.label	corpo canceroso
+AG_CancerousBody.description	Portadores deste gene têm um corpo encaroçado, de aparência cancerosa, com pele flácida e marcas de bexiga.
+AG_CancerousBody.labelShortAdj	canceroso
+AG_CancerousBody.symbolPack.prefixSymbols.0.symbol	terato
+AG_CancerousBody.symbolPack.prefixSymbols.1.symbol	canc
+AG_CancerousBody.symbolPack.prefixSymbols.2.symbol	tumor
+AG_GauntBody.label	corpo esquelético
+AG_GauntBody.description	Portadores deste gene têm um corpo de aparência magra e chupada.
+AG_GauntBody.labelShortAdj	esquelético
+AG_GauntBody.symbolPack.prefixSymbols.0.symbol	magro
+AG_GauntBody.symbolPack.prefixSymbols.1.symbol	zumbi
+AG_GauntBody.symbolPack.prefixSymbols.2.symbol	morto
+AG_GauntBody.symbolPack.prefixSymbols.3.symbol	osso
+AG_DrakonoriBody.label	corpo drakonori
+AG_DrakonoriBody.description	Portadores deste gene têm um corpo de aparência dracônica e escamosa.
+AG_DrakonoriBody.labelShortAdj	drakonori
+AG_NereidBody.label	corpo nereida
+AG_NereidBody.description	Portadores deste gene têm um corpo de aparência escamosa, com manchas bioluminescentes.
+AG_NereidBody.labelShortAdj	nereida
+AG_ForsakenBody.label	corpo de renegado
+AG_ForsakenBody.description	Portadores deste gene têm um corpo com sulcos profundos e costelas visíveis sob a pele em certos lugares, mas de aparência saudável no resto. Isso resulta num peso um pouco menor e num corpo bem mais frágil.
+AG_ForsakenBody.labelShortAdj	renegado
+AG_Digitigrade.label	pernas digitígradas
+AG_Digitigrade.description	Portadores deste gene têm pernas digitígradas: ficam de pé e andam com os dedos (metatarsos) no chão e o resto do pé levantado.
+AG_Digitigrade.labelShortAdj	digitígrado
+## DefInjected/GeneDef/GeneDefs_BodySize.xml
+AG_LargerBodySize.label	maior
+AG_LargerBodySize.description	Portadores deste gene têm um corpo maior que o normal. Isso tem suas vantagens e desvantagens.
+AG_SmallerBodySize.label	menor
+AG_SmallerBodySize.description	Portadores deste gene têm um corpo menor que o normal. Isso tem suas vantagens e desvantagens.
+## DefInjected/GeneDef/GeneDefs_Cosmetic_Antennae.xml
+AG_NoAntennae.label	sem antenas superiores
+AG_NoAntennae.description	Portadores deste gene não têm antenas superiores.
+AG_MothAntennae.label	antenas de mariposa
+AG_MothAntennae.description	Portadores deste gene têm duas antenas grandes saindo do nariz.
+AG_MothAntennae.symbolPack.prefixSymbols.0.symbol	mariposa
+AG_MothAntennae.symbolPack.prefixSymbols.1.symbol	borboleta
+AG_MothAntennae.symbolPack.prefixSymbols.2.symbol	lepidópt
+AG_OutwardsAntennas.label	antenas de abelha
+AG_OutwardsAntennas.description	Portadores deste gene têm duas antenas grandes de abelha saindo da cabeça.
+AG_OutwardsAntennas.symbolPack.prefixSymbols.0.symbol	abelha
+AG_OutwardsAntennas.symbolPack.prefixSymbols.1.symbol	api
+AG_OutwardsAntennas.symbolPack.prefixSymbols.2.symbol	colmeia
+AG_OutwardsAntennas.symbolPack.prefixSymbols.3.symbol	antena
+AG_DownwardsAntennas.label	antenas de vespa
+AG_DownwardsAntennas.description	Portadores deste gene têm duas antenas grandes de vespa saindo da cabeça.
+AG_DownwardsAntennas.symbolPack.prefixSymbols.0.symbol	vespa
+AG_DownwardsAntennas.symbolPack.prefixSymbols.1.symbol	marimbondo
+AG_DownwardsAntennas.symbolPack.prefixSymbols.2.symbol	antena
+AG_FormicAntennas.label	antenas fórmicas
+AG_FormicAntennas.description	Portadores deste gene têm duas antenas grandes de formiga saindo da cabeça.
+AG_FormicAntennas.symbolPack.prefixSymbols.0.symbol	formiga
+AG_FormicAntennas.symbolPack.prefixSymbols.1.symbol	fórmico
+AG_FormicAntennas.symbolPack.prefixSymbols.2.symbol	antena
+AG_NoLowerAntennae.label	sem antenas inferiores
+AG_NoLowerAntennae.description	Portadores deste gene não têm antenas inferiores.
+AG_LowerAntennas.label	antenas inferiores
+AG_LowerAntennas.description	Portadores deste gene têm duas antenas grandes saindo da mandíbula.
+## DefInjected/GeneDef/GeneDefs_Cosmetic_Ears.xml
+AG_RadYakEars.label	orelhas de radiaque
+AG_RadYakEars.description	Portadores deste gene têm orelhas pontudas de radiaque.
+AG_RadYakEars.symbolPack.prefixSymbols.0.symbol	radiaque
+AG_RadYakEars.symbolPack.prefixSymbols.1.symbol	rad
+AG_RadYakEars.symbolPack.suffixSymbols.0.symbol	iaque
+AG_RadYakEars.symbolPack.suffixSymbols.1.symbol	orelha
+AG_AnimusEars.label	orelhas de animus
+AG_AnimusEars.description	Portadores deste gene têm orelhas de animus vox.
+AG_AnimusEars.symbolPack.prefixSymbols.0.symbol	animus
+AG_AnimusEars.symbolPack.prefixSymbols.1.symbol	empata
+AG_AnimusEars.symbolPack.prefixSymbols.2.symbol	telep
+AG_AnimusEars.symbolPack.suffixSymbols.0.symbol	-vox
+AG_SingleEar.label	orelha única
+AG_SingleEar.description	Portadores deste gene têm uma única orelha malformada e caída.
+AG_LongEars.label	orelhas longas
+AG_LongEars.description	Portadores deste gene têm orelhas longas.
+AG_DemonEars.label	orelhas demoníacas
+AG_DemonEars.description	Portadores deste gene têm orelhas longas de demônio.
+AG_EarWings.label	orelhas-asa
+AG_EarWings.description	Portadores deste gene têm orelhas grandes em forma de asa de morcego. São puramente estéticas e não permitem nenhum tipo de voo.
+AG_NereidFins.label	barbatanas nereidas
+AG_NereidFins.description	Portadores deste gene têm orelhas alongadas, parecidas com barbatanas, que afinam até uma ponta. Saem das laterais da cabeça, como as barbatanas peitorais de um peixe.
+## DefInjected/GeneDef/GeneDefs_Cosmetic_Eyes.xml
+AG_FeraliskEyes.label	olhos de feralisco
+AG_FeraliskEyes.description	Portadores deste gene têm quatro olhos e, por isso, enxergam melhor.
+AG_ThirdEye.label	terceiro olho
+AG_ThirdEye.description	Portadores deste gene têm um terceiro olho na testa. Esse terceiro olho melhora a visão e, por causa de suas, hã, propriedades psíquicas, não pode ser ferido por... outros... e... Olha, partes da Biotech não são partes reais do corpo e não podem ser atingidas em ataques, tá bom?
+AG_EyeOfShubNiggurath.label	olho de Shub-Niggurath
+AG_EyeOfShubNiggurath.description	Portadores deste gene têm, no lugar de um dos olhos, uma boca de aparência cruel e cheia de presas. Inexplicavelmente, essa boca enxerga.
+AG_NearBlindness.label	quase cegueira
+AG_NearBlindness.description	Portadores deste gene têm olhos quase inúteis, perto da cegueira total
+AG_NearBlindness.symbolPack.prefixSymbols.0.symbol	cego
+AG_NearBlindness.symbolPack.prefixSymbols.1.symbol	turvo
+AG_NearBlindness.symbolPack.prefixSymbols.2.symbol	vesgo
+AG_NearBlindness.symbolPack.prefixSymbols.3.symbol	espia
+AG_NearBlindness.symbolPack.prefixSymbols.4.symbol	zarolho
+AG_NearBlindness.symbolPack.suffixSymbols.0.symbol	míope
+AG_NearBlindness.symbolPack.suffixSymbols.1.symbol	espião
+AG_ChameleonVision.label	visão de camaleão
+AG_ChameleonVision.description	Portadores deste gene têm olhos saltados que dão uma visão panorâmica e se movem e focam de forma independente. Isso permite observar algo se aproximando enquanto examinam o resto do ambiente.
+AG_DevilEyes.label	olhos de diabo
+AG_DevilEyes.description	Portadores deste gene têm olhos grandes, de um amarelo intenso.
+AG_BioluminescentEyes.label	olhos bioluminescentes
+AG_BioluminescentEyes.description	Portadores deste gene têm olhos que brilham no escuro por causa de um tapetum, uma membrana especial atrás da retina. Isso permite enxergar muito melhor no escuro, mas os olhos são menos úteis à luz do dia.
+AG_ForsakenEyes.label	olhos de renegado
+AG_ForsakenEyes.description	Portadores deste gene têm quatro olhos amarelos, dois menores embaixo de dois maiores.
+## DefInjected/GeneDef/GeneDefs_Cosmetic_Fangs.xml
+AG_VenomFangs.label	presas venenosas
+AG_VenomFangs.description	Portadores deste gene têm presas grandes que podem ser usadas no combate corpo a corpo para injetar um veneno poderoso.
+AG_AcidFangs.label	presas ácidas
+AG_AcidFangs.description	Portadores deste gene têm presas grandes que podem ser usadas no combate corpo a corpo para injetar um ácido poderoso.
+## DefInjected/GeneDef/GeneDefs_Cosmetic_Hair.xml
+AG_Hair_DeepRed.label	cabelo vermelho intenso
+AG_Hair_DeepRed.description	Portadores deste gene têm uma cor de cabelo específica. Com vários genes de cor de cabelo, um é escolhido aleatoriamente.
+AG_Hair_DeepOrange.label	cabelo laranja intenso
+AG_Hair_DeepOrange.description	Portadores deste gene têm uma cor de cabelo específica. Com vários genes de cor de cabelo, um é escolhido aleatoriamente.
+AG_Hair_PaleGreen.label	cabelo verde-claro
+AG_Hair_PaleGreen.description	Portadores deste gene têm uma cor de cabelo específica. Com vários genes de cor de cabelo, um é escolhido aleatoriamente.
+AG_Hair_Golden.label	cabelo dourado
+AG_Hair_Golden.description	Portadores deste gene têm uma cor de cabelo específica. Com vários genes de cor de cabelo, um é escolhido aleatoriamente.
+## DefInjected/GeneDef/GeneDefs_Cosmetic_Horns.xml
+AG_ChameleonYakHorns.label	chifres de iaque-camaleão
+AG_ChameleonYakHorns.description	Portadores deste gene têm dois chifres curvos saindo da testa.
+AG_ChameleonYakHorns.symbolPack.prefixSymbols.0.symbol	iaque-camaleão
+AG_ChameleonYakHorns.symbolPack.prefixSymbols.1.symbol	iaque
+AG_ChameleonYakHorns.symbolPack.suffixSymbols.0.symbol	chifre
+AG_DevilsheepHorns.label	chifres de ovelha-diabo
+AG_DevilsheepHorns.description	Portadores deste gene têm dois chifres curtos de carneiro saindo da testa.
+AG_DevilsheepHorns.symbolPack.prefixSymbols.0.symbol	ovelha-diabo
+AG_DevilsheepHorns.symbolPack.prefixSymbols.1.symbol	ovelha
+AG_DevilsheepHorns.symbolPack.suffixSymbols.0.symbol	chifre
+AG_BullHorns.label	chifres de touro
+AG_BullHorns.description	Portadores deste gene têm dois chifres grandes de touro saindo da testa. Não são só estéticos: podem ser usados para atacar.
+AG_BullHorns.symbolPack.prefixSymbols.0.symbol	touro
+AG_BullHorns.symbolPack.prefixSymbols.1.symbol	uro
+AG_BullHorns.symbolPack.prefixSymbols.2.symbol	boi
+AG_BullHorns.symbolPack.prefixSymbols.3.symbol	chifrudo
+AG_BullHorns.symbolPack.suffixSymbols.0.symbol	chifre
+AG_AntlerHorns.label	galhadas
+AG_AntlerHorns.description	Portadores deste gene têm duas galhadas grandes saindo da testa. Não são só estéticas: podem ser usadas para atacar.
+AG_AntlerHorns.symbolPack.prefixSymbols.0.symbol	galhada
+AG_AntlerHorns.symbolPack.prefixSymbols.1.symbol	cervo
+AG_AntlerHorns.symbolPack.prefixSymbols.2.symbol	veado
+AG_AntlerHorns.symbolPack.suffixSymbols.0.symbol	galhada
+AG_RayHoundTentacles.label	tentáculos de cão-raio
+AG_RayHoundTentacles.description	Portadores deste gene têm dois tentáculos grandes de cão-raio saindo do nariz.
+AG_RayHoundTentacles.symbolPack.prefixSymbols.0.symbol	tentáculo
+AG_RayHoundTentacles.symbolPack.prefixSymbols.1.symbol	tenta
+AG_RayHoundTentacles.symbolPack.prefixSymbols.2.symbol	c't
+AG_EldritchHorns.label	chifres sobrenaturais
+AG_EldritchHorns.description	Portadores deste gene têm duas galhadas sobrenaturais enormes saindo da testa. Não são só estéticas: podem ser usadas para atacar.
+AG_EldritchHorns.symbolPack.prefixSymbols.0.symbol	eldr
+AG_EldritchHorns.symbolPack.prefixSymbols.1.symbol	demônio
+AG_EldritchHorns.symbolPack.prefixSymbols.2.symbol	rúnico
+AG_HornCrown.label	coroa de chifres
+AG_HornCrown.description	Portadores deste gene têm uma coroa enorme de chifres afiados saindo da testa. Não são só estéticos: podem ser usados para atacar.

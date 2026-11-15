@@ -1,0 +1,207 @@
+## DefInjected/AbilityDef/Abilities.xml
+VFEE_RoyalAddress.label	discurso real
+VFEE_RoyalAddress.description	está fazendo um discurso real do trono. Se tudo correr bem, cada participante com título ganha um pouco de honra, e o orador ganha honra por cada participante com título. Se der errado, o discurso causa dano social e o orador perde honra por cada participante com título. O resultado depende das habilidades sociais do orador. Nobres imperiais que estiverem na área participam do discurso e contam como participantes com título.
+VFEE_BestowFreeholder.label	conceder: Proprietário Livre
+VFEE_BestowFreeholder.description	Concede o título de Proprietário Livre ao personagem escolhido, que recebe 1 de honra. Não pode ser usado em quem já é Proprietário Livre ou mais. Recarga de 3 dias.
+VFEE_BestowYeoman.label	conceder: Noviço
+VFEE_BestowYeoman.description	Concede o título de Noviço ao personagem escolhido, que passa a ter 7 de honra. Não pode ser usado em quem já é Noviço ou mais. Recarga de 3 dias.
+VFEE_BestowAcolyte.label	conceder: Acólito
+VFEE_BestowAcolyte.description	Concede o título de Acólito ao personagem escolhido, que passa a ter 13 de honra. Não pode ser usado em quem já é Acólito ou mais. Recarga de 3 dias.
+VFEE_BestowKnight.label	conceder: Cavaleiro
+VFEE_BestowKnight.description	Concede o título de Cavaleiro/Amazona ao personagem escolhido, que passa a ter 21 de honra. Não pode ser usado em quem já é Cavaleiro/Amazona ou mais. Recarga de 3 dias.
+VFEE_BestowPraetor.label	conceder: Pretor
+VFEE_BestowPraetor.description	Concede o título de Pretor ao personagem escolhido, que passa a ter 31 de honra. Não pode ser usado em quem já é Pretor ou mais. Recarga de 3 dias.
+VFEE_BestowBaron.label	conceder: Barão
+VFEE_BestowBaron.description	Concede o título de Barão/Baronesa ao personagem escolhido, que passa a ter 45 de honra. Não pode ser usado em quem já é Barão/Baronesa ou mais. Recarga de 3 dias.
+VFEE_BestowCount.label	conceder: Arconte
+VFEE_BestowCount.description	Concede o título de Arconte/Arcontessa ao personagem escolhido, que passa a ter 45 de honra. Não pode ser usado em quem já é Arconte/Arcontessa ou mais. Recarga de 3 dias.
+## DefInjected/DamageDef/Damages_MeleeWeapon.xml
+VFEE_CutToxblade.label	corte
+VFEE_CutToxblade.deathMessage	{0} foi cortado até a morte.
+VFEE_StabToxblade.label	estocada
+VFEE_StabToxblade.deathMessage	{0} foi esfaqueado até a morte.
+## DefInjected/DamageDef/Damages_Ranged.xml
+VFEE_Fletcher.label	dardo flecheiro
+VFEE_Fletcher.deathMessage	{0} foi morto a tiros.
+## DefInjected/ExpectationDef/Expectations.xml
+VFEE_Stellar.label	estelares
+## DefInjected/FactionDef/Factions_Hidden.xml
+VFEE_Deserters.label	desertores
+VFEE_Deserters.description	Um grupo organizado de desertores imperiais que decidiu atrapalhar ativamente a organização do Império.
+VFEE_Deserters.fixedName	Desertores
+VFEE_Deserters.leaderTitle	líder
+VFEE_Deserters.messageDefendersAttacking	{0} de {1} estão atacando seu {2}.
+VFEE_Deserters.pawnSingular	desertor
+VFEE_Deserters.pawnsPlural	desertores
+## DefInjected/FactionDef/Factions_Player.xml
+VFEE_NewFamily.label	Nova Família
+VFEE_NewFamily.description	Uma colônia de uma família real.
+VFEE_NewFamily.leaderTitle	líder
+VFEE_NewFamily.messageDefendersAttacking	{0} de {1} estão atacando seu {2}.
+VFEE_NewFamily.pawnSingular	imperial
+VFEE_NewFamily.pawnsPlural	imperiais
+## DefInjected/HediffDef/Aperitif.xml
+VFEE_IngestedAperitif.label	aperitivo ingerido
+VFEE_IngestedAperitif.description	Proteção contra infecções e venenos no estômago, além da capacidade de comer refeições extras para um bônus de humor maior.
+VFEE_IngestedAperitif.labelNoun	um aperitivo ingerido
+## DefInjected/HediffDef/Hediffs_Global_Misc.xml
+VFEE_AcidifierFletcher.label	acidificante
+VFEE_AcidifierFletcher.description	Mistura acidificante injetada nas veias por um dardo flecheiro. Causa dor extrema e morte quase instantânea por queimaduras internas de ácido.
+VFEE_AcidifierToxblade.label	acidificante
+VFEE_AcidifierToxblade.description	Mistura acidificante injetada nas veias por uma lâmina tóxica. Causa dor extrema e morte quase instantânea por queimaduras internas de ácido.
+VFEE_CourtStimulant.label	estimulante da corte
+VFEE_CourtStimulant.description	Um estimulante que a nobreza imperial toma para se manter afiada durante cerimônias longas. Até sair da cerimônia, não precisa dormir.
+## DefInjected/HistoryEventDef/HistoryEventDefs.xml
+VFEE_ChoseEmpire.label	juntou-se ao império
+## DefInjected/IncidentDef/Incidents_World_Quests.xml
+VFEE_GiveQuest_EndGame_Stellarch.label	ascensão do arquistelar
+## DefInjected/InteractionDef/Interactions_Social.xml
+VFEE_RoyalGossip.label	fofoca real
+VFEE_RoyalGossip.logRulesInitiator.rulesStrings[0]	r_logentry->[INITIATOR_nameDef] e [RECIPIENT_nameDef] [talkedabout] [THIRDPARTY_nameDef].
+VFEE_RoyalGossip.logRulesInitiator.rulesStrings[1]	r_logentry->[INITIATOR_nameDef] [talkedabout] [THIRDPARTY_nameDef] com [RECIPIENT_nameDef].
+VFEE_RoyalGossip.logRulesInitiator.rulesStrings[2]	talkedabout(p=4)->conversaram sobre
+VFEE_RoyalGossip.logRulesInitiator.rulesStrings[3]	talkedabout->trocaram umas palavras sobre
+VFEE_RoyalGossip.logRulesInitiator.rulesStrings[4]	talkedabout->falaram de
+VFEE_RoyalGossip.logRulesInitiator.rulesStrings[5]	talkedabout->tagarelaram sobre
+VFEE_RoyalGossip.logRulesInitiator.rulesStrings[6]	talkedabout->falaram sobre
+VFEE_RoyalGossip.logRulesInitiator.rulesStrings[7]	talkedabout->fizeram piada sobre
+VFEE_RoyalGossip.logRulesInitiator.rulesStrings[8]	talkedabout->fizeram gracinhas sobre
+## DefInjected/JobDef/Jobs_Misc.xml
+VFEE_DefuseBomb.reportString	desarmando TargetA.
+VFEE_PlaceBomb.reportString	plantando bomba
+VFEE_PoisonMeal.reportString	envenenando TargetA
+VFEE_DiscardMeal.reportString	descartando TargetA
+## DefInjected/JobDef/Jobs_Ritual.xml
+VFEE_WaltzGoTo.reportString	dançando com TargetA.
+VFEE_WaltzDip.reportString	dançando com TargetB.
+VFEE_WaltzGoToStart.reportString	indo para a minha posição.
+VFEE_WaltzWait.reportString	dançando com TargetA.
+VFEE_WaltzDipped.reportString	dançando com TargetA.
+VFEE_ArtPresent.reportString	Apresentando TargetB.
+VFEE_ArtStandBy.reportString	esperando.
+VFEE_ArtSpectate.reportString	Admirando TargetB.
+VFEE_GiveHonor.reportString	Honrando TargetB.
+VFEE_ParadeGuardGoto.reportString	Fazendo a guarda.
+## DefInjected/JoyKindDef/Misc.xml
+VFEE_Research.label	pesquisa
+## DefInjected/MainButtonDef/Misc.xml
+VFEE_Royalty.label	realeza
+## DefInjected/PawnKindDef/PawnKinds_Deserter.xml
+VFEE_Deserter.label	desertor
+## DefInjected/PawnKindDef/PawnKinds_Empire.xml
+VFEE_Empire_Royal_Archcount.label	arquiarconte
+VFEE_Empire_Royal_Archcount.labelFemale	arquiarcontessa
+VFEE_Empire_Royal_Marquess.label	marquês
+VFEE_Empire_Royal_Marquess.labelFemale	marquesa
+VFEE_Empire_Royal_Archduke.label	arquidominus
+VFEE_Empire_Royal_Archduke.labelFemale	arquidomina
+VFEE_Empire_Royal_Magister.label	magistrado
+VFEE_Empire_Royal_Despot.label	déspota
+VFEE_Empire_Royal_HighStellarch.label	grão-arquistelar
+VFEE_Empire_Royal_Emperor.label	imperador
+VFEE_Empire_Fighter_Absolver.label	absolvedor
+VFEE_Empire_Royal_Techfriar.label	tecnofrade
+## DefInjected/PreceptDef/BestowHonor.xml
+VFEE_BestowHonor.label	conceder honra
+VFEE_BestowHonor.description	Concede honrarias a um personagem digno
+## DefInjected/PreceptDef/BestowTitle.xml
+VFEE_BestowTitle.label	conceder título
+VFEE_BestowTitle.description	Concede um título real a um personagem digno
+## DefInjected/PreceptDef/Parade.xml
+VFEE_ParadePrecept.label	Desfile
+VFEE_ParadePrecept.description	Um desfile tradicional de ascensão para despedir o arquistelar!
+## DefInjected/PreceptDef/RoyalAddress.xml
+VFEE_RoyalAddress.label	discurso real
+VFEE_RoyalAddress.description	Inicia um discurso real do trono. {ORGANIZER_labelShort} faz um discurso real do trono. Se tudo correr bem, cada participante com título ganha um pouco de honra, e {ORGANIZER_labelShort} ganha honra por cada participante com título. Se der errado, o discurso causa dano social e {ORGANIZER_labelShort} perde honra por cada participante com título. O resultado depende das habilidades sociais de {ORGANIZER_labelShort}. Nobres imperiais que estiverem na área participam do discurso e contam como participantes com título.
+## DefInjected/QuestScriptDef/Permit_CallTechfriar.xml
+VFEE_Permit_CallTechfriar.questDescriptionAndNameRules.rulesStrings[0]	questName->Tecnofrade
+VFEE_Permit_CallTechfriar.root.nodes.Letter.label.slateRef	Tecnofrade chegou
+VFEE_Permit_CallTechfriar.root.nodes.Letter.text.slateRef	O tecnofrade de [permitFaction_name] chegou. Um ônibus espacial virá buscá-lo em [techfriarDurationDays] dias.
+VFEE_Permit_CallTechfriar.root.nodes.ShuttleDelay.node.nodes.InspectString.inspectString.slateRef	Deve partir no ônibus espacial
+VFEE_Permit_CallTechfriar.root.nodes.ShuttleDelay.node.nodes.Letter.label.slateRef	O ônibus espacial chegou
+VFEE_Permit_CallTechfriar.root.nodes.ShuttleDelay.node.nodes.Letter.text.slateRef	Um ônibus espacial chegou para buscar o tecnofrade de [permitFaction_name].
+VFEE_Permit_CallTechfriar.root.nodes.techfriarDestroyed.node.nodes.Letter.label.slateRef	Trabalhador morreu: {SUBJECT_definite}
+VFEE_Permit_CallTechfriar.root.nodes.techfriarDestroyed.node.nodes.Letter.text.slateRef	Um trabalhador enviado por [permitFaction_name] morreu. Sua boa vontade com [permitFaction_name] caiu [goodwillPenaltyPawn].
+## DefInjected/QuestScriptDef/Script_Absolver.xml
+VFEE_Permit_CallAbsolver.questDescriptionAndNameRules.rulesStrings[0]	questName->Absolvedor
+VFEE_Permit_CallAbsolver.root.nodes.Letter.label.slateRef	Absolvedor chegou
+VFEE_Permit_CallAbsolver.root.nodes.Letter.text.slateRef	O absolvedor de [permitFaction_name] chegou. Um ônibus espacial virá buscá-lo em [absolverDurationDays] dias.
+VFEE_Permit_CallAbsolver.root.nodes.ShuttleDelay.node.nodes.InspectString.inspectString.slateRef	Deve partir no ônibus espacial
+VFEE_Permit_CallAbsolver.root.nodes.ShuttleDelay.node.nodes.Letter.label.slateRef	O ônibus espacial chegou
+VFEE_Permit_CallAbsolver.root.nodes.ShuttleDelay.node.nodes.Letter.text.slateRef	Um ônibus espacial chegou para buscar o absolvedor de [permitFaction_name].
+VFEE_Permit_CallAbsolver.root.nodes.absolverDestroyed.node.nodes.Letter.label.slateRef	Absolvedor morreu: {SUBJECT_definite}
+VFEE_Permit_CallAbsolver.root.nodes.absolverDestroyed.node.nodes.Letter.text.slateRef	Um absolvedor enviado por [permitFaction_name] morreu. Um substituto foi designado
+## DefInjected/QuestScriptDef/Script_ArtExhibit.xml
+VFEE_ArtExhibit.questContentRules.rulesStrings[0]	decidedToLeave->Seus convidados vão embora na hora e não vão guardar boas lembranças deste evento!
+VFEE_ArtExhibit.questContentRules.rulesStrings[1]	oneOfThe->um dos nobres que vocês convidaram para a exposição de arte
+VFEE_ArtExhibit.questContentRules.rulesStrings[2]	questOver->A missão '[resolvedQuestName]' acabou.
+VFEE_ArtExhibit.questContentRules.rulesStrings[3]	CeremonyFailedLetterLabel->A exposição de arte fracassou
+VFEE_ArtExhibit.questContentRules.rulesStrings[4]	CeremonyFailedLetterText->[asker_nameFull] ficou decepcionado com o fracasso de vocês em fazer uma exposição agradável e está indo embora com os convidados.
+VFEE_ArtExhibit.questContentRules.rulesStrings[5]	CeremonyTimeoutLetterLabel->A exposição de arte fracassou
+VFEE_ArtExhibit.questContentRules.rulesStrings[6]	CeremonyTimeoutLetterText->[asker_nameFull] cansou de esperar vocês começarem a exposição e está indo embora com os convidados.
+VFEE_ArtExhibit.questContentRules.rulesStrings[7]	letterIntroArrested->Vocês prenderam {SUBJECT_definite}, [oneOfThe].
+VFEE_ArtExhibit.questContentRules.rulesStrings[8]	lodgerArrestedLeaveMapLetterLabel->[lodgersLabel] preso: partida
+VFEE_ArtExhibit.questContentRules.rulesStrings[9]	lodgerArrestedLeaveMapLetterText->[letterIntroArrested]\n\n[decidedToLeave]
+VFEE_ArtExhibit.questContentRules.rulesStrings[10]	letterIntroDeath->{SUBJECT_definite}, [oneOfThe], morreu.
+VFEE_ArtExhibit.questContentRules.rulesStrings[11]	lodgerDiedLeaveMapLetterLabel->[lodgersLabel] morreu: partida
+VFEE_ArtExhibit.questContentRules.rulesStrings[12]	lodgerDiedLeaveMapLetterText->[letterIntroDeath]\n\n[decidedToLeave]
+VFEE_ArtExhibit.questContentRules.rulesStrings[13]	letterIntroViolated->{SUBJECT_definite}, [oneOfThe], foi violado por uma cirurgia.
+VFEE_ArtExhibit.questContentRules.rulesStrings[14]	lodgerSurgeryVioLeaveMapLetterLabel->[lodgersLabel] violado: partida
+VFEE_ArtExhibit.questContentRules.rulesStrings[15]	lodgerSurgeryVioLeaveMapLetterText->[letterIntroViolated]\n\n[decidedToLeave]
+VFEE_ArtExhibit.questContentRules.rulesStrings[16]	letterIntroKidnapped->{SUBJECT_definite}, [oneOfThe], foi sequestrado.
+VFEE_ArtExhibit.questContentRules.rulesStrings[17]	lodgerKidnappedLeaveMapLetterLabel->[lodgersLabel] sequestrado: partida
+VFEE_ArtExhibit.questContentRules.rulesStrings[18]	lodgerKidnappedLeaveMapLetterText->[letterIntroKidnapped]\n\n[decidedToLeave]
+VFEE_ArtExhibit.questContentRules.rulesStrings[19]	letterIntroBanished->{SUBJECT_definite}, [oneOfThe], foi banido.
+VFEE_ArtExhibit.questContentRules.rulesStrings[20]	lodgerBanishedLeaveMapLetterLabel->[lodgersLabel] banido: partida
+VFEE_ArtExhibit.questContentRules.rulesStrings[21]	lodgerBanishedLeaveMapLetterText->[letterIntroBanished]\n\n[decidedToLeave]
+VFEE_ArtExhibit.questContentRules.rulesStrings[22]	letterIntroPsychicRitualTarget->{SUBJECT_definite}, [oneOfThe], foi alvo de um ritual psíquico.
+VFEE_ArtExhibit.questContentRules.rulesStrings[23]	lodgerPsychicRitualTargetLabel->[lodgersLabel] violado: partida
+VFEE_ArtExhibit.questContentRules.rulesStrings[24]	lodgerPsychicRitualTargetText->[letterIntroPsychicRitualTarget]\n\n[decidedToLeave]
+VFEE_ArtExhibit.questContentRules.rulesStrings[25]	ShuttleDestroyedIntro->O ônibus espacial foi destruído.
+VFEE_ArtExhibit.questContentRules.rulesStrings[26]	ShuttleDestroyedLabel->Ônibus espacial destruído: exposição de arte cancelada
+VFEE_ArtExhibit.questContentRules.rulesStrings[27]	ShuttleDestroyedText->[ShuttleDestroyedIntro]\n\n[decidedToLeave]
+VFEE_ArtExhibit.questContentRules.rulesStrings[28]	raidArrivedLetterLabel->Tentativa de assassinato dos desertores
+VFEE_ArtExhibit.questContentRules.rulesStrings[29]	raidArrivedLetterText->Um grupo de desertores chegou para tentar atrapalhar a exposição de arte e assassinar os nobres.\n\n[asker_nameFull] não liga para a ameaça e exige que a exposição continue! Quer que vocês protejam os nobres e deem um jeito nos "camponeses".
+VFEE_ArtExhibit.questContentRules.rulesStrings[30]	ArtExhibitSuccessLetterLabel->Sucesso na exposição
+VFEE_ArtExhibit.questContentRules.rulesStrings[31]	ArtExhibitSuccessLetterText->O ônibus espacial partiu com [asker_nameFull] e os convidados. No geral, o evento foi um sucesso e todos voltaram em segurança.
+VFEE_ArtExhibit.questDescriptionAndNameRules.rulesStrings[0]	lodgersLabel->nobre
+VFEE_ArtExhibit.questDescriptionAndNameRules.rulesStrings[1]	lodgersLabelPlural->nobres
+VFEE_ArtExhibit.questDescriptionAndNameRules.rulesStrings[2]	lodgersDef(nobleCount==1)->[lodgers0_nameDef]
+VFEE_ArtExhibit.questDescriptionAndNameRules.rulesStrings[3]	lodgersDef(nobleCount>=2)->os [lodgersLabelPlural]
+VFEE_ArtExhibit.questDescriptionAndNameRules.rulesStrings[4]	joinerEnding->Vocês poderão comandar [lodgersDef] do mesmo jeito que comandam os próprios colonos.[specialNeedsExplanation]
+VFEE_ArtExhibit.questDescriptionAndNameRules.rulesStrings[6]	theirHisHer(nobleCount>=2)->deles
+VFEE_ArtExhibit.questDescriptionAndNameRules.rulesStrings[8]	lodgersPronoun(nobleCount>=2)->eles
+VFEE_ArtExhibit.questDescriptionAndNameRules.rulesStrings[9]	lodgersWasWere(nobleCount==1)->foi
+VFEE_ArtExhibit.questDescriptionAndNameRules.rulesStrings[10]	lodgersWasWere(nobleCount>=2)->foram
+VFEE_ArtExhibit.questDescriptionAndNameRules.rulesStrings[11]	appreciateAppreciates(nobleCount==1)->aprecia
+VFEE_ArtExhibit.questDescriptionAndNameRules.rulesStrings[12]	appreciateAppreciates(nobleCount>=2)->apreciam
+VFEE_ArtExhibit.questDescriptionAndNameRules.rulesStrings[13]	questDescription->[asker_nameFull], [asker_royalTitleInCurrentFaction] de [asker_faction_name], gostaria de vir com alguns outros nobres admirar as obras de arte da sua galeria. Pede que [colonyHost_nameFull] seja o anfitrião. É uma ótima oportunidade para fofocas nobres e para criar laços com outros membros da nobreza imperial.\n\nÉ preciso ter uma galeria na colônia. Se a galeria for destruída a qualquer momento, a exposição de arte é cancelada.\n\n[asker_nameFull] mandou a lista dos nobres convidados para a exposição, que vão chegar no ônibus espacial:\n\n[noblesDetailList]\n\nVocês precisam garantir que os convidados fiquem seguros e confortáveis durante a exposição. Se acontecer qualquer coisa com algum deles, a exposição de arte é cancelada.\n\nOs desertores podem aproveitar a oportunidade para uma tentativa de assassinato.\n\n\n
+VFEE_ArtExhibit.questNameRules.rulesStrings[0]	questName->[lodgerIndef] quer uma exposição de arte
+VFEE_ArtExhibit.questNameRules.rulesStrings[1]	lodgerIndef->Um membro da realeza
+VFEE_ArtExhibit.questNameRules.rulesStrings[2]	lodgerIndef->Um nobre
+## DefInjected/QuestScriptDef/Script_DelayedRitualOutcome.xml
+VFEE_DelayedGrandBallOutcome.questContentRules.rulesStrings[0]	rewardLetterLabel->Presente de um nobre
+VFEE_DelayedGrandBallOutcome.questContentRules.rulesStrings[1]	rewardLetterText->[rewardGiver_nameDef] entrou em contato. Há [rewardDelayTicks_duration], vocês fizeram um grande baile [outcome] para [rewardGiver_nameDef].\n\nDesde então, voltou para casa em segurança e ficou tão grato que quer dar a vocês um presente pessoal. Está mandando o seguinte por cápsula de queda:\n\n[listOfRewards]
+VFEE_DelayedGrandBallOutcome.questDescriptionAndNameRules.rulesStrings[0]	questDescription->Uma recompensa atrasada por organizar o grande baile.
+VFEE_DelayedGrandBallOutcome.questNameRules.rulesStrings[0]	questName->Recompensa atrasada do grande baile
+VFEE_DelayedArtExhibitOutcome.questContentRules.rulesStrings[0]	rewardLetterLabel->Presente de um nobre
+VFEE_DelayedArtExhibitOutcome.questContentRules.rulesStrings[1]	rewardLetterText->[rewardGiver_nameDef] entrou em contato. Há [rewardDelayTicks_duration], vocês fizeram uma exposição de arte [outcome] para [rewardGiver_nameDef].\n\nDesde então, voltou para casa em segurança e ficou tão grato que quer dar a vocês um presente pessoal. Está mandando o seguinte por cápsula de queda:\n\n[listOfRewards]
+VFEE_DelayedArtExhibitOutcome.questDescriptionAndNameRules.rulesStrings[0]	questDescription->Uma recompensa atrasada por organizar a exposição de arte.
+VFEE_DelayedArtExhibitOutcome.questNameRules.rulesStrings[0]	questName->Recompensa atrasada da exposição de arte
+## DefInjected/QuestScriptDef/Script_DeserterHideout.xml
+VFEE_DeserterHideout.questDescriptionRules.rulesStrings[0]	questDescription-> [asker_nameFull], [asker_royalTitleInCurrentFaction] de [asker_faction_name], nos informou de um esconderijo de desertores perto de [colonyName].\n\nOs desertores são um grupo de ex-soldados e ex-nobres imperiais que decidiram se separar da Grande Hierarquia e se adaptar à nova vida depois da Fragmentação. São considerados o inimigo público número um.\n\nAparentemente, [siteFaction_pawnsPlural] andam atacando comboios imperiais.\n\n[asker_nameDef] planeja um ataque aéreo ao esconderijo, que é guardado por [enemiesCount] [enemiesLabel]. Quer que vocês forneçam [requiredPawnCount] soldados para o ataque.\n\nVai mandar um ônibus espacial para buscar seus combatentes, levá-los até o local do ataque e trazê-los de volta depois. Eles serão alimentados e tratados no caminho.\n\nQuando o ataque começar, vocês precisam derrotar todos os inimigos e torres em [timeoutTime_duration].\n\n[asker_nameDef] vai mandar [alliesCount] de seus guardas pessoais e colocá-los sob o seu comando. Não vai ficar chateado se morrerem.\n
+VFEE_DeserterHideout.questNameRules.rulesStrings[0]	questName->O [camp] [bandit]
+VFEE_DeserterHideout.questNameRules.rulesStrings[1]	questName->[camp] [bandit]
+VFEE_DeserterHideout.questNameRules.rulesStrings[2]	questName->[asker_nameDef] e o [camp]
+VFEE_DeserterHideout.questNameRules.rulesStrings[3]	camp->Acampamento
+VFEE_DeserterHideout.questNameRules.rulesStrings[4]	camp->Posto
+VFEE_DeserterHideout.questNameRules.rulesStrings[5]	camp->Covil
+VFEE_DeserterHideout.questNameRules.rulesStrings[6]	camp->Arraial
+VFEE_DeserterHideout.questNameRules.rulesStrings[7]	bandit->Bandido
+VFEE_DeserterHideout.questNameRules.rulesStrings[8]	bandit->Saqueador
+VFEE_DeserterHideout.questNameRules.rulesStrings[9]	bandit->Fora da Lei
+VFEE_DeserterHideout.questNameRules.rulesStrings[10]	bandit->Desesperado
+VFEE_DeserterHideout.questNameRules.rulesStrings[11]	bandit->Fugitivo
+VFEE_DeserterHideout.questNameRules.rulesStrings[12]	bandit->Pilhador
+VFEE_DeserterHideout.questNameRules.rulesStrings[13]	bandit->Ladrão
+VFEE_DeserterHideout.questNameRules.rulesStrings[14]	bandit->Salteador

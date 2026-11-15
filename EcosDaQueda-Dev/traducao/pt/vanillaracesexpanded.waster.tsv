@@ -1,0 +1,121 @@
+## DefInjected/GeneCategoryDef/GeneCategoryDefs.xml
+VREW_Mutations.label	mutações
+## DefInjected/GeneDef/GeneDefs_Misc.xml
+VRE_ToxAbsorption.label	absorção de toxinas
+VRE_ToxAbsorption.description	Portadores deste gene têm a capacidade extraordinária de absorver gases tóxicos direto pela pele. Este gene não tem efeito sozinho, mas acelera a satisfação da necessidade de poluição de vários genes ligados à poluição.
+VRE_Instability_Nominal.label	instabilidade celular nominal
+VRE_Instability_Nominal.description	Portadores deste gene precisam de um pouco menos de energia metabólica para viver, ao custo de menor estabilidade na maquinaria de replicação das células.
+VRE_Instability_Extreme.label	instabilidade celular extrema
+VRE_Instability_Extreme.description	Portadores deste gene precisam de muito pouca energia metabólica para viver, ao custo de uma estabilidade muito reduzida na maquinaria de replicação das células.
+VRE_Instability_Progressive.label	instabilidade celular progressiva
+VRE_Instability_Progressive.description	O código genético dos portadores deste gene fica cada vez mais instável a cada nova geração.
+## DefInjected/GeneDef/GeneDefs_Mutations.xml
+VREW_Mutation_Randomizer.label	aleatorizador
+VREW_Mutation_Randomizer.description	Quando um personagem recebe este gene, ele se transforma em 1 a 3 mutações aleatórias.
+VREW_PollutionRush.label	estímulo da poluição
+VREW_PollutionRush.description	Portadores deste gene sentem uma onda química ao serem expostos à poluição. Isso os faz andar mais rápido e pensar com mais clareza. Um gene parecido existe em megainsetos projetados para combate.
+VREW_PollutionRegeneration.label	regeneração por poluição
+VREW_PollutionRegeneration.description	Portadores deste gene se curam naturalmente mais rápido em ambientes poluídos. Quanto maior a poluição, mais forte a regeneração, permitindo se recuperar de ferimentos e restaurar o vigor mais depressa.
+VREW_PollutionRage.label	fúria da poluição
+VREW_PollutionRage.description	Portadores deste gene causam mais dano corpo a corpo em ambientes poluídos. Quanto maior a poluição, maiores a ferocidade e a força, permitindo ferir mais os adversários.
+VREW_PollutionSustenance.label	sustento da poluição
+VREW_PollutionSustenance.description	Portadores deste gene têm a notável capacidade de tirar nutrição da poluição. Em ambientes poluídos, absorvem nutrientes vitais do ar, o que deixa a fome mais lenta.
+VREW_PollutionCognition.label	cognição da poluição
+VREW_PollutionCognition.description	Portadores deste gene têm mais foco e aprendem melhor em ambientes poluídos. Quanto maior a poluição, maior a capacidade de adquirir novas habilidades e reter conhecimento.
+VREW_PollutionNumbness.label	dormência da poluição
+VREW_PollutionNumbness.description	Portadores deste gene sentem menos dor em ambientes poluídos conforme a poluição aumenta.
+VREW_PollutionHappiness.label	alegria da poluição
+VREW_PollutionHappiness.description	Portadores deste gene ficam mais felizes em ambientes poluídos, com mais alegria e satisfação conforme a poluição aumenta, o que os faz prosperar em condições que seriam deprimentes.
+VREW_PollutionProductivity.label	produtividade da poluição
+VREW_PollutionProductivity.description	Portadores deste gene trabalham muito mais rápido em ambientes poluídos, completando tarefas com mais eficiência e agilidade conforme a poluição aumenta.
+VREW_PollutionPsySensitivity.label	psicossensibilidade da poluição
+VREW_PollutionPsySensitivity.description	Portadores deste gene têm a sensibilidade psíquica amplificada em ambientes poluídos, com intuição e telepatia mais fortes conforme a poluição aumenta.
+VREW_PollutionFertility.label	fertilidade da poluição
+VREW_PollutionFertility.description	Portadores deste gene ficam mais férteis em ambientes poluídos, gerando mais descendentes e expandindo a linhagem mais rápido em condições perigosas.
+VREW_PollutionAccuracy.label	precisão da poluição
+VREW_PollutionAccuracy.description	Portadores deste gene ganham mais firmeza e precisão em ambientes poluídos. Quanto maior a poluição, melhor a mira, permitindo atingir alvos com precisão notável.
+## DefInjected/HediffDef/Hediffs.xml
+VRE_ToxAbsorption.label	absorção de toxinas
+VRE_ToxAbsorption.description	Absorvendo gases tóxicos direto pela pele, o que acelera a satisfação da necessidade de poluição de vários genes ligados à poluição.
+VRE_PollutionRegeneration.label	regeneração por poluição
+VRE_PollutionRegeneration.description	Curando-se naturalmente mais rápido em ambientes poluídos. Quanto maior a poluição, mais forte a regeneração, recuperando ferimentos e restaurando o vigor mais depressa.
+VRE_PollutionRegeneration.descriptionShort	Esta criatura está se regenerando pela exposição à poluição.
+VRE_PollutionRegeneration.stages.inactive.label	inativa
+VRE_PollutionRegeneration.stages.minor.label	leve
+VRE_PollutionRegeneration.stages.moderate.label	moderada
+VRE_PollutionRegeneration.stages.extreme.label	extrema
+VRE_PollutionRage.label	fúria da poluição
+VRE_PollutionRage.description	Causando mais dano corpo a corpo em ambientes poluídos. Quanto maior a poluição, maiores a ferocidade e a força, ferindo mais os adversários.
+VRE_PollutionRage.descriptionShort	Esta criatura está enfurecida pela exposição à poluição.
+VRE_PollutionRage.stages.inactive.label	inativa
+VRE_PollutionRage.stages.minor.label	leve
+VRE_PollutionRage.stages.moderate.label	moderada
+VRE_PollutionRage.stages.extreme.label	extrema
+VRE_PollutionSustenance.label	sustento da poluição
+VRE_PollutionSustenance.description	Tirando nutrição da poluição, o que deixa a fome mais lenta.
+VRE_PollutionSustenance.descriptionShort	Esta criatura está se nutrindo pela exposição à poluição.
+VRE_PollutionSustenance.stages.inactive.label	inativo
+VRE_PollutionSustenance.stages.minor.label	leve
+VRE_PollutionSustenance.stages.moderate.label	moderado
+VRE_PollutionSustenance.stages.extreme.label	extremo
+VRE_PollutionCognition.label	cognição da poluição
+VRE_PollutionCognition.description	Com mais foco e aprendizado em ambientes poluídos. Quanto maior a poluição, maior a capacidade de adquirir novas habilidades e reter conhecimento.
+VRE_PollutionCognition.descriptionShort	Esta criatura aprende melhor pela exposição à poluição.
+VRE_PollutionCognition.stages.inactive.label	inativa
+VRE_PollutionCognition.stages.minor.label	leve
+VRE_PollutionCognition.stages.moderate.label	moderada
+VRE_PollutionCognition.stages.extreme.label	extrema
+VRE_PollutionNumbness.label	dormência da poluição
+VRE_PollutionNumbness.description	Sentindo menos dor em ambientes poluídos conforme a poluição aumenta.
+VRE_PollutionNumbness.descriptionShort	Esta criatura sente menos dor pela exposição à poluição.
+VRE_PollutionNumbness.stages.inactive.label	inativa
+VRE_PollutionNumbness.stages.minor.label	leve
+VRE_PollutionNumbness.stages.moderate.label	moderada
+VRE_PollutionNumbness.stages.extreme.label	extrema
+VRE_PollutionHappiness.label	alegria da poluição
+VRE_PollutionHappiness.description	Mais feliz em ambientes poluídos, com mais alegria e satisfação conforme a poluição aumenta.
+VRE_PollutionHappiness.descriptionShort	Esta criatura está de melhor humor pela exposição à poluição.
+VRE_PollutionHappiness.stages.inactive.label	inativa
+VRE_PollutionHappiness.stages.minor.label	leve
+VRE_PollutionHappiness.stages.moderate.label	moderada
+VRE_PollutionHappiness.stages.extreme.label	extrema
+VRE_PollutionProductivity.label	produtividade da poluição
+VRE_PollutionProductivity.description	Trabalhando muito mais rápido em ambientes poluídos, completando tarefas com mais eficiência e agilidade conforme a poluição aumenta.
+VRE_PollutionProductivity.descriptionShort	Esta criatura está mais produtiva pela exposição à poluição.
+VRE_PollutionProductivity.stages.inactive.label	inativa
+VRE_PollutionProductivity.stages.minor.label	leve
+VRE_PollutionProductivity.stages.moderate.label	moderada
+VRE_PollutionProductivity.stages.extreme.label	extrema
+VRE_PollutionPsySensitivity.label	psicossensibilidade da poluição
+VRE_PollutionPsySensitivity.description	Com sensibilidade psíquica amplificada em ambientes poluídos, intuição e telepatia mais fortes conforme a poluição aumenta.
+VRE_PollutionPsySensitivity.descriptionShort	Esta criatura tem a sensibilidade psíquica aumentada pela exposição à poluição.
+VRE_PollutionPsySensitivity.stages.inactive.label	inativa
+VRE_PollutionPsySensitivity.stages.minor.label	leve
+VRE_PollutionPsySensitivity.stages.moderate.label	moderada
+VRE_PollutionPsySensitivity.stages.extreme.label	extrema
+VRE_PollutionFertility.label	fertilidade da poluição
+VRE_PollutionFertility.description	Mais fértil em ambientes poluídos, gerando mais descendentes e expandindo a linhagem mais rápido em condições perigosas.
+VRE_PollutionFertility.descriptionShort	Esta criatura está mais fértil pela exposição à poluição.
+VRE_PollutionFertility.stages.inactive.label	inativa
+VRE_PollutionFertility.stages.minor.label	leve
+VRE_PollutionFertility.stages.moderate.label	moderada
+VRE_PollutionFertility.stages.extreme.label	extrema
+VRE_PollutionAccuracy.label	precisão da poluição
+VRE_PollutionAccuracy.description	Com mais firmeza e precisão em ambientes poluídos.
+VRE_PollutionAccuracy.descriptionShort	Esta criatura tem a mira melhorada pela exposição à poluição.
+VRE_PollutionAccuracy.stages.inactive.label	inativa
+VRE_PollutionAccuracy.stages.minor.label	leve
+VRE_PollutionAccuracy.stages.moderate.label	moderada
+VRE_PollutionAccuracy.stages.extreme.label	extrema
+## DefInjected/ThingDef/Buildings_Furniture.xml
+VRE_BurnBarrel.label	barril de queima
+VRE_BurnBarrel.description	Um recipiente de metal resistente feito para incinerar pacotes de resíduos tóxicos. Enquanto queima, emite poluição e libera gases tóxicos, contaminando a área ao redor e criando um ambiente hostil para quem é sensível à poluição, mas vantajoso para portadores de genes adaptados à poluição.
+## DefInjected/ThoughtDef/Thoughts_Situation_Special.xml
+VRE_PollutionHappinessThoughts.stages.no_pollution_happiness.label	sem alegria da poluição
+VRE_PollutionHappinessThoughts.stages.no_pollution_happiness.description	Tanto faz.
+VRE_PollutionHappinessThoughts.stages.minor_pollution_happiness.label	alegria leve da poluição
+VRE_PollutionHappinessThoughts.stages.minor_pollution_happiness.description	Sinto o formigamento da poluição nas veias. Gosto disso.
+VRE_PollutionHappinessThoughts.stages.moderate_pollution_happiness.label	alegria moderada da poluição
+VRE_PollutionHappinessThoughts.stages.moderate_pollution_happiness.description	A poluição é o que me faz prosperar, e eu amo cada minuto.
+VRE_PollutionHappinessThoughts.stages.extreme_pollution_happiness.label	alegria extrema da poluição
+VRE_PollutionHappinessThoughts.stages.extreme_pollution_happiness.description	Meu corpo é toxina, meu sangue é fedor podre!

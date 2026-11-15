@@ -1,0 +1,248 @@
+## DefInjected/VEF.Abilities.AbilityDef/Archotechist.xml
+VPE_Burden.label	fardo
+VPE_Burden.description	Deixa o alvo lento por pouco tempo, suprimindo a atividade motora no cérebro. É considerado uma ação hostil e depende da sensibilidade psíquica do alvo.
+VPE_Burden.jobReportString	Usando habilidade: {0}
+VPE_Burden.verbProperties.label	fardo
+VPE_Stun.label	atordoar
+VPE_Stun.description	Interrompe por um instante a função motora no cérebro do alvo, impedindo qualquer movimento. Dura alguns segundos e é considerado uma ação hostil.
+VPE_Stun.jobReportString	Usando habilidade: {0}
+VPE_Stun.verbProperties.label	atordoar
+VPE_PsychicShock.label	choque psíquico
+VPE_PsychicShock.description	Choca psiquicamente a mente do alvo com imagens caóticas, bloqueando a percepção coerente e deixando-o em estado de choque psíquico. Há risco de dano cerebral, e é abertamente hostil.
+VPE_PsychicShock.jobReportString	Usando habilidade: {0}
+VPE_PsychicShock.verbProperties.label	choque psíquico
+VPE_NeuralHeatDump.label	descarga de calor neural
+VPE_NeuralHeatDump.description	Descarrega na hora todo o seu calor neural num aliado consciente. Como efeito colateral, o alvo cai num coma debilitante, mas inofensivo, por cerca de um dia. O alvo precisa aceitar ativamente a invasão psíquica, por isso só aliados conscientes podem ser alvos.
+VPE_NeuralHeatDump.jobReportString	Usando habilidade: {0}
+VPE_NeuralHeatDump.verbProperties.label	descarga de calor neural
+VPE_Berserk.label	fúria
+VPE_Berserk.description	Induz uma psicose furiosa na mente do alvo, fazendo-o atacar qualquer um por perto. Ele recupera a razão depois de 15 segundos, conforme a sensibilidade psíquica.
+VPE_Berserk.jobReportString	Usando habilidade: {0}
+VPE_Berserk.verbProperties.label	fúria
+VPE_AggressiveHeatDump.label	descarga de calor agressiva
+VPE_AggressiveHeatDump.description	Descarrega na hora todo o seu calor neural num alvo, fazendo-o explodir numa área proporcional ao calor perdido. Uma bela declaração de guerra.
+VPE_AggressiveHeatDump.jobReportString	Usando habilidade: {0}
+VPE_AggressiveHeatDump.verbProperties.label	descarga de calor agressiva
+VPE_BerserkPulse.label	pulso de fúria
+VPE_BerserkPulse.description	Gera uma onda avassaladora de raiva sem direção em todos perto do ponto alvo. É considerado um ato aberto de agressão e dura alguns segundos.
+VPE_BerserkPulse.jobReportString	Usando habilidade: {0}
+VPE_BerserkPulse.verbProperties.label	pulso de fúria
+VPE_PsychicDrone.label	zumbido psíquico
+VPE_PsychicDrone.description	Cria uma enorme aura de zumbido psíquico ao redor do conjurador, sintonizada nos hostis, que muitas vezes os enlouquece até superarem o colapso. A duração depende da sensibilidade psíquica do conjurador.
+VPE_PsychicDrone.jobReportString	Usando habilidade: {0}
+VPE_PsychicDrone.verbProperties.label	zumbido psíquico
+VPE_NeuralHeatDetonation.label	detonação de calor neural
+VPE_NeuralHeatDetonation.description	Descarrega com eficiência, mas sem discriminar ninguém, todo o calor neural do conjurador numa explosão longe dele, com tamanho proporcional ao calor perdido.
+VPE_NeuralHeatDetonation.jobReportString	Usando habilidade: {0}
+VPE_NeuralHeatDetonation.verbProperties.label	detonação de calor neural
+VPE_Neuroquake.label	neuroterremoto
+VPE_Neuroquake.description	Encontra uma descontinuidade no campo psíquico e a desdobra, liberando uma quantidade enorme de energia psíquica. Toda criatura ao alcance, mas fora do círculo interno seguro, enlouquece violentamente. Conjurar leva 12 segundos de meditação, e depois o conjurador entra em coma psíquico. Os ecos perturbadores do neuroterremoto causam dor em todos num raio de muitos quilômetros, com consequências diplomáticas com todas as facções.
+VPE_Neuroquake.jobReportString	Usando habilidade: {0}
+VPE_Neuroquake.modExtensions.0.message	Se vocês usarem o neuroterremoto, todos nesta região vão sentir o eco dele, e vocês vão perder boa vontade com todas as facções não hostis.\n\nO neuroterremoto leva 12 segundos para ser conjurado e não pode ser interrompido. Ao terminar, o conjurador cai num coma psíquico por até 5 dias.\n\nTodos ao alcance, menos quem estiver num pequeno círculo ao redor do conjurador, serão afetados.\n\nQuerem mesmo conjurar o neuroterremoto?
+VPE_Neuroquake.verbProperties.label	neuroterremoto
+## DefInjected/VEF.Abilities.AbilityDef/Chronopath.xml
+VPE_PlantTimeskip.label	salto temporal vegetal
+VPE_PlantTimeskip.description	Faz crescer todas as plantas num raio ao redor do conjurador, avançando a maturidade delas o equivalente a 7 dias. Envelhece o conjurador biologicamente em um ano inteiro.
+VPE_PlantTimeskip.jobReportString	Usando habilidade: {0}
+VPE_PlantTimeskip.verbProperties.label	salto temporal vegetal
+VPE_TimeskipMeditation.label	meditação de salto temporal
+VPE_TimeskipMeditation.description	Põe o conjurador num coma autoinduzido enquanto ele ganha uma boa quantidade de experiência para o próximo nível de poder psíquico e recupera toda a concentração psíquica. Envelhece o conjurador biologicamente em cinco anos.
+VPE_TimeskipMeditation.jobReportString	Usando habilidade: {0}
+VPE_TimeskipMeditation.verbProperties.label	meditação de salto temporal
+VPE_WordofForetelling.label	palavra de premonição
+VPE_WordofForetelling.description	Sussurros psíquicos sobre o que está por vir. Os personagens da colônia ficam inspirados, neutros e aliados melhoram as relações, prisioneiros perdem a resistência e inimigos recuam diante da própria ruína. Envelhece o conjurador biologicamente em um ano inteiro.
+VPE_WordofForetelling.jobReportString	Usando habilidade: {0}
+VPE_WordofForetelling.verbProperties.label	palavra de premonição
+VPE_CraftTimeskip.label	salto temporal de fabricação
+VPE_CraftTimeskip.description	Com um salto temporal muito preciso, leva o item desejado ao seu estado pronto, como se o criador tivesse continuado trabalhando nele. Envelhece o conjurador biologicamente em um ano inteiro.
+VPE_CraftTimeskip.jobReportString	Usando habilidade: {0}
+VPE_CraftTimeskip.verbProperties.label	salto temporal de fabricação
+VPE_Age.label	envelhecer
+VPE_Age.description	Suga, de forma muito ineficiente, a força vital de um alvo vivo, rejuvenescendo o conjurador em 2 anos e envelhecendo o outro em 10. Efeitos posteriores muito debilitantes para a vítima, e considerado uma ação hostil por aliados.
+VPE_Age.jobReportString	Usando habilidade: {0}
+VPE_Age.verbProperties.label	envelhecer
+VPE_RaidPause.label	pausar ataque
+VPE_RaidPause.description	Conforme a sensibilidade psíquica do conjurador, desacelera todos os saqueadores do mapa até pararem por completo, por até cinco minutos. Atacar qualquer um dos afetados faz todos voltarem à ação num tranco.
+VPE_RaidPause.jobReportString	Usando habilidade: {0}
+VPE_RaidPause.verbProperties.label	pausar ataque
+VPE_SeasonTimeskip.label	salto temporal de estação
+VPE_SeasonTimeskip.description	Prende o planeta inteiro numa desaceleração psíquica da duração de uma estação, pulando na prática uma estação para a frente. O efeito é quase instantâneo, muito desgastante e põe o conjurador em coma, além de envelhecê-lo biologicamente em um ano inteiro.
+VPE_SeasonTimeskip.jobReportString	Usando habilidade: {0}
+VPE_SeasonTimeskip.verbProperties.label	salto temporal de estação
+VPE_TimeSphere.label	esfera do tempo
+VPE_TimeSphere.description	Comprime psiquicamente o fluxo do tempo numa área. Criaturas vivas envelhecem depressa, plantas florescem e murcham, e as estruturas começam a se desintegrar com o estresse bizarro.
+VPE_TimeSphere.jobReportString	Usando habilidade: {0}
+VPE_TimeSphere.verbProperties.label	esfera do tempo
+VPE_TimeReversal.label	reversão temporal
+VPE_TimeReversal.description	Transfere, de forma ineficiente, força vital para um alvo vivo, envelhecendo o conjurador em 5 anos e rejuvenescendo o outro em 10. Tem idade mínima, remove penalidades ligadas à idade e põe o conjurador em coma.
+VPE_TimeReversal.jobReportString	Usando habilidade: {0}
+VPE_TimeReversal.verbProperties.label	reversão temporal
+VPE_Timequake.label	terremoto temporal
+VPE_Timequake.description	Encontra uma descontinuidade no campo psíquico e a comprime, liberando uma perturbação temporal gigantesca. Toda criatura ao alcance, mas fora do círculo interno seguro, envelhece rapidamente, e as estruturas se deformam. Conjurar leva 20 segundos de meditação, e depois o conjurador entra em coma psíquico. Os ecos perturbadores do terremoto temporal causam dor em todos num raio de muitos quilômetros, com consequências diplomáticas com todas as facções.
+VPE_Timequake.jobReportString	Usando habilidade: {0}
+VPE_Timequake.modExtensions.2.message	Se vocês usarem o terremoto temporal, todos nesta região vão sentir o eco dele, e vocês vão perder boa vontade com todas as facções não hostis.\n\nO terremoto temporal leva 20 segundos para ser conjurado e não pode ser interrompido. Ao terminar, o conjurador cai num coma psíquico por até 5 dias.\n\nTodos, menos quem estiver num pequeno círculo ao redor do conjurador, serão afetados.\n\nQuerem mesmo conjurar o terremoto temporal?
+VPE_Timequake.verbProperties.label	terremoto temporal
+## DefInjected/VEF.Abilities.AbilityDef/Conflagrator.xml
+VPE_Flameball.label	bola de fogo
+VPE_Flameball.description	Arremessa uma esfera de chamas condensadas, como uma granada, que explode no impacto. O alcance depende da sensibilidade psíquica do conjurador.
+VPE_Flameball.jobReportString	Usando habilidade: {0}
+VPE_Flameball.verbProperties.label	bola de fogo
+VPE_SelfExplosion.label	autoexplosão
+VPE_SelfExplosion.description	Expele do conjurador um gás inflamável pressurizado que pega fogo na hora. Grande chance de incendiar quem estiver na área da explosão, mas causa pouco dano, sem ferir o conjurador.
+VPE_SelfExplosion.jobReportString	Usando habilidade: {0}
+VPE_SelfExplosion.verbProperties.label	autoexplosão
+VPE_Explosion.label	explosão
+VPE_Explosion.description	Inflama uma pequena quantidade de químico profundo sob a área alvo, que sobe à superfície numa explosão. Queima a área e espalha o líquido que sobrar.
+VPE_Explosion.jobReportString	Usando habilidade: {0}
+VPE_Explosion.verbProperties.label	explosão
+VPE_FireShield.label	escudo de fogo
+VPE_FireShield.description	Cria uma aura de chamas ardentes ao redor do alvo por um tempo, impedindo que ele pegue fogo e incendiando quem tentar atacá-lo corpo a corpo. A duração depende da sensibilidade psíquica do conjurador.
+VPE_FireShield.jobReportString	Usando habilidade: {0}
+VPE_FireShield.verbProperties.label	escudo de fogo
+VPE_BreatheFlame.label	cuspir fogo
+VPE_BreatheFlame.description	Expele um líquido inflamável que pega fogo na hora, junto com tudo que as chamas tocarem.
+VPE_BreatheFlame.jobReportString	Usando habilidade: {0}
+VPE_BreatheFlame.verbProperties.label	cuspir fogo
+VPE_EyeBlast.label	raio dos olhos
+VPE_EyeBlast.description	Imitando uma estrela, o conjurador comprime um gás altamente energizado que escapa na direção desejada, com dano conforme a sensibilidade psíquica. Incendeia uma área pequena, mas distante.
+VPE_EyeBlast.jobReportString	Usando habilidade: {0}
+VPE_EyeBlast.verbProperties.label	raio dos olhos
+VPE_QuenchFlames.label	apagar chamas
+VPE_QuenchFlames.description	Converte um depósito local de químico profundo em espuma antichamas, que jorra do usuário numa área grande.
+VPE_QuenchFlames.jobReportString	Usando habilidade: {0}
+VPE_QuenchFlames.verbProperties.label	apagar chamas
+VPE_MeteorShower.label	chuva de meteoros
+VPE_MeteorShower.description	Faz saltar e incendeia meteoroides em órbita para atingir uma área designada. O número de impactos depende da sensibilidade psíquica.
+VPE_MeteorShower.jobReportString	Usando habilidade: {0}
+VPE_MeteorShower.verbProperties.label	chuva de meteoros
+VPE_FireBeam.label	raio de fogo
+VPE_FireBeam.description	Tenta recriar o poder de uma estrela dentro de uma coluna concentrada de oxigênio quase liquefeito. A emissão de plasma resultante é tão poderosa que só os sistemas de armas mais avançados chegam perto. A concentração longa e intensa termina com o conjurador em coma.
+VPE_FireBeam.jobReportString	Usando habilidade: {0}
+VPE_FireBeam.verbProperties.label	raio de fogo
+VPE_FlameTornado.label	tornado de fogo
+VPE_FlameTornado.description	Tenta recriar o poder de uma estrela dentro de um vórtice de oxigênio concentrado. A bagunça de reações deixa subprodutos inflamáveis pelo caminho e torna a trajetória completamente imprevisível.
+VPE_FlameTornado.jobReportString	Usando habilidade: {0}
+VPE_FlameTornado.verbProperties.label	tornado de fogo
+## DefInjected/VEF.Abilities.AbilityDef/Empath.xml
+VPE_WordofJoy.label	palavra de alegria
+VPE_WordofJoy.description	Diz palavras felizes e calmantes a alguém, usando sugestão psíquica para implantar um ciclo de névoa de alegria na mente dele. A névoa suprime pensamentos e sensações desagradáveis no alvo para melhorar o humor. O efeito colateral é embotar a sensação e a tomada de decisão, o que reduz a consciência.
+VPE_WordofJoy.jobReportString	Usando habilidade: {0}
+VPE_WordofJoy.verbProperties.label	palavra de alegria
+VPE_WordofLove.label	palavra de amor
+VPE_WordofLove.description	Fala das virtudes românticas de alguém usando sugestão psíquica para implantar desejo romântico no ouvinte. Por dias, o ouvinte vai sentir uma atração romântica induzida psiquicamente pela outra pessoa. Isso aumenta muito a opinião e o deixa muito mais propenso a investidas românticas e pedidos de casamento, se tiver a chance. Este poder pode unir duas outras pessoas, induzir amor pelo conjurador ou forçar o próprio conjurador a amar outra pessoa.
+VPE_WordofLove.jobReportString	Usando habilidade: {0}
+VPE_WordofLove.verbProperties.label	palavra de amor
+VPE_WordofSerenity.label	palavra de serenidade
+VPE_WordofSerenity.description	Usa palavras calmantes e sugestão psíquica para acabar com o colapso mental de uma pessoa ou animal. O alvo cai num sono psíquico curto. O custo de concentração psíquica depende da intensidade do colapso do alvo.
+VPE_WordofSerenity.jobReportString	Usando habilidade: {0}
+VPE_WordofSerenity.verbProperties.label	palavra de serenidade
+VPE_WordofInspiration.label	palavra de inspiração
+VPE_WordofInspiration.description	Diz palavras que incentivam a criatividade enquanto sobrecarrega psiquicamente a mente do alvo com novas ideias. O alvo recebe uma inspiração aleatória adequada a ele.
+VPE_WordofInspiration.jobReportString	Usando habilidade: {0}
+VPE_WordofInspiration.verbProperties.label	palavra de inspiração
+VPE_SootheMale.label	alívio psíquico (homens)
+VPE_SootheMale.description	Manda um sinal para um motor de felicidade distante começar a projetar um zumbido psíquico positivo, enquanto manipula um amplificador orbital que só afeta homens.
+VPE_SootheMale.jobReportString	Usando habilidade: {0}
+VPE_SootheMale.verbProperties.label	alívio psíquico (homens)
+VPE_SootheFemale.label	alívio psíquico (mulheres)
+VPE_SootheFemale.description	Manda um sinal para um motor de felicidade distante começar a projetar um zumbido psíquico positivo, enquanto manipula um amplificador orbital que só afeta mulheres.
+VPE_SootheFemale.jobReportString	Usando habilidade: {0}
+VPE_SootheFemale.verbProperties.label	alívio psíquico (mulheres)
+VPE_Bliss.label	êxtase
+VPE_Bliss.description	Depois de uma breve meditação, induz no alvo uma sensação de serenidade que chega ao máximo perto do fim do efeito. Conforme a calma fica mais forte, fica mais difícil se concentrar, mas isso não é considerado uma ação maliciosa.
+VPE_Bliss.jobReportString	Usando habilidade: {0}
+VPE_Bliss.verbProperties.label	êxtase
+VPE_EnergyDump.label	descarga de energia
+VPE_EnergyDump.description	Elimina o cansaço acumulado de um alvo próximo e o deixa totalmente renovado; em troca, o conjurador fica completamente exausto e precisando de uma boa soneca.
+VPE_EnergyDump.jobReportString	Usando habilidade: {0}
+VPE_EnergyDump.verbProperties.label	descarga de energia
+VPE_MindWipe.label	apagar mente
+VPE_MindWipe.description	Induz no alvo uma amnésia retrógrada instantânea e inofensiva, apagando todas as memórias, laços sociais e habilidades adquiridas fora da história de fundo. Ele também sente um forte parentesco com a colônia do conjurador e a alegria de redescobrir os prazeres da vida sem compromisso.
+VPE_MindWipe.jobReportString	Usando habilidade: {0}
+VPE_MindWipe.verbProperties.label	apagar mente
+VPE_ReunionFarskip.label	salto distante de reencontro
+VPE_ReunionFarskip.description	Depois de uma breve meditação, seguida de coma, acessa a linhagem de um alvo para fazer saltar todos os parentes vivos dele para perto, desacordados por choque psíquico. Mas isso não muda em nada as relações entre eles, e todas as outras facções acham falta de educação.
+VPE_ReunionFarskip.jobReportString	Usando habilidade: {0}
+VPE_ReunionFarskip.verbProperties.label	salto distante de reencontro
+## DefInjected/VEF.Abilities.AbilityDef/Frostshaper.xml
+VPE_IceBreath.label	sopro de gelo
+VPE_IceBreath.description	Sopra para a frente um jato de entropia psíquica; o frio resultante corta e induz hipotermia, conforme a distância até o alvo.
+VPE_IceBreath.jobReportString	Usando habilidade: {0}
+VPE_IceBreath.verbProperties.label	sopro de gelo
+VPE_IceSpike.label	estaca de gelo
+VPE_IceSpike.description	Condensa vapor com entropia psíquica num pingente de gelo lançado contra o alvo, com dano e precisão conforme a sensibilidade psíquica.
+VPE_IceSpike.jobReportString	Usando habilidade: {0}
+VPE_IceSpike.verbProperties.label	estaca de gelo
+VPE_IceShield.label	escudo de gelo
+VPE_IceShield.description	Cria uma aura de entropia psíquica ao redor do alvo por um tempo, impedindo que ele sinta frio e induzindo hipotermia em quem tentar atacá-lo corpo a corpo. A duração depende da sensibilidade psíquica do conjurador.
+VPE_IceShield.jobReportString	Usando habilidade: {0}
+VPE_IceShield.verbProperties.label	escudo de gelo
+VPE_FrostRay.label	raio congelante
+VPE_FrostRay.description	Lança um jato concentrado de entropia psíquica por alguns segundos, causando cortes e hipotermia rapidamente. A duração depende da sensibilidade psíquica do conjurador.
+VPE_FrostRay.jobReportString	Usando habilidade: {0}
+VPE_FrostRay.verbProperties.label	raio congelante
+VPE_IceCrystal.label	cristal de gelo
+VPE_IceCrystal.description	Cria um nó de entropia psíquica em forma de cristal, que suga o calor do cômodo pelos próximos 5 dias.
+VPE_IceCrystal.jobReportString	Usando habilidade: {0}
+VPE_IceCrystal.verbProperties.label	cristal de gelo
+VPE_ColdZone.label	zona fria
+VPE_ColdZone.description	Faz uma área manifestar nós de entropia psíquica pelas próximas 24 horas, baixando drasticamente a temperatura.
+VPE_ColdZone.jobReportString	Usando habilidade: {0}
+VPE_ColdZone.verbProperties.label	zona fria
+VPE_IceBlock.label	bloco de gelo
+VPE_IceBlock.description	Combinando nós de entropia psíquica e um portal de salto ligado a um oceano, forma um grande bloco de gelo no local alvo. É frágil e pode derreter se a temperatura estiver acima de zero.
+VPE_IceBlock.jobReportString	Usando habilidade: {0}
+VPE_IceBlock.verbProperties.label	bloco de gelo
+VPE_SnapFreeze.label	congelamento instantâneo
+VPE_SnapFreeze.description	Cria partículas de entropia psíquica e minúsculos portais de salto ligados a reservatórios de água acima de todos os alvos numa área pequena, prendendo-os no gelo. As vítimas sofrem hipotermia, mas o gelo pode derreter antes da hora se a temperatura estiver acima de zero.
+VPE_SnapFreeze.jobReportString	Usando habilidade: {0}
+VPE_SnapFreeze.verbProperties.label	congelamento instantâneo
+VPE_IceWall.label	parede de gelo
+VPE_IceWall.description	Combinando nós de entropia psíquica e minúsculos portais de salto ligados a um oceano, forma uma parede circular de gelo ao redor do conjurador. É frágil e pode derreter se a temperatura estiver acima de zero.
+VPE_IceWall.jobReportString	Usando habilidade: {0}
+VPE_IceWall.verbProperties.label	parede de gelo
+VPE_Blizzard.label	nevasca
+VPE_Blizzard.description	Usando portais de salto de pressão diferencial, portais ligados à água e nós de entropia psíquica, cria uma nevasca rodopiante longe do conjurador. Quem fica exposto à tempestade tem visão, movimento e manipulação reduzidos, além de acumular hipotermia e sofrer cortes do frio. A duração depende da sensibilidade psíquica do conjurador, que entra em coma.
+VPE_Blizzard.jobReportString	Usando habilidade: {0}
+VPE_Blizzard.verbProperties.label	nevasca
+## DefInjected/VEF.Abilities.AbilityDef/Harmonist.xml
+VPE_Mindcontrol.label	controle mental
+VPE_Mindcontrol.description	Domina psiquicamente um alvo por um breve período, conforme a sensibilidade psíquica dele, dando ao conjurador um segundo corpo. Mas não é fácil ser duas pessoas ao mesmo tempo.
+VPE_Mindcontrol.jobReportString	Usando habilidade: {0}
+VPE_Mindcontrol.verbProperties.label	controle mental
+VPE_PsychicGuidance.label	orientação psíquica
+VPE_PsychicGuidance.description	Reduz a visão, a audição, o movimento e a manipulação do conjurador em troca de sobrecarregar as capacidades físicas do alvo.
+VPE_PsychicGuidance.jobReportString	Usando habilidade: {0}
+VPE_PsychicGuidance.verbProperties.label	orientação psíquica
+VPE_TransmuteStone.label	transmutar pedra
+VPE_TransmuteStone.description	Marca uma área de pedra cujos minerais serão trocados por um único tipo aleatório vindo de um estrato subterrâneo.
+VPE_TransmuteStone.jobReportString	Usando habilidade: {0}
+VPE_TransmuteStone.verbProperties.label	transmutar pedra
+VPE_HeatFocus.label	foco de calor
+VPE_HeatFocus.description	Inicia uma meditação harmônica que converte todo o calor acumulado em concentração psíquica depois de 10 segundos. Não ultrapassa o máximo de concentração psíquica nem descarrega calor.
+VPE_HeatFocus.jobReportString	Usando habilidade: {0}
+VPE_HeatFocus.verbProperties.label	foco de calor
+VPE_LuckTransfer.label	transferência de sorte
+VPE_LuckTransfer.description	Abre uma fenda no equilíbrio cármico, passando o carma negativo do primeiro alvo para o segundo e recebendo o carma positivo deste. Só afeta o combate, e a duração depende da sensibilidade psíquica do primeiro alvo.
+VPE_LuckTransfer.jobReportString	Usando habilidade: {0}
+VPE_LuckTransfer.verbProperties.label	transferência de sorte
+VPE_BendProbability.label	dobrar a probabilidade
+VPE_BendProbability.description	Cria uma ondulação de escala cósmica que força alguma coisa a acontecer.
+VPE_BendProbability.jobReportString	Usando habilidade: {0}
+VPE_BendProbability.verbProperties.label	dobrar a probabilidade
+VPE_LocationSwap.label	troca de posição
+VPE_LocationSwap.description	Usando portais de salto de precisão, troca de lugar o conjurador e um alvo visível.
+VPE_LocationSwap.jobReportString	Usando habilidade: {0}
+VPE_LocationSwap.verbProperties.label	troca de posição
+VPE_HealthSwap.label	troca de saúde
+VPE_HealthSwap.description	Pela lei da troca equivalente, devolve a vitalidade do alvo principal à origem, transferindo todos os objetos estranhos e ferimentos para o alvo secundário.
+VPE_HealthSwap.jobReportString	Usando habilidade: {0}
+VPE_HealthSwap.verbProperties.label	troca de saúde
+VPE_Transmutation.label	transmutação
+VPE_Transmutation.description	Pela lei da troca equivalente, converte o item (ou pilha de itens) alvo num item de valor igual ou menor. Completamente imprevisível.
+VPE_Transmutation.jobReportString	Usando habilidade: {0}
+VPE_Transmutation.verbProperties.label	transmutação
+VPE_SkillRoll.label	rolagem de habilidades
+VPE_SkillRoll.description	Inicia uma mudança no conhecimento e nas habilidades acumuladas do alvo, tentando reequilibrá-las de um jeito meio caótico, com uma orientação benéfica. O esforço põe o conjurador em coma.
+VPE_SkillRoll.jobReportString	Usando habilidade: {0}
+VPE_SkillRoll.verbProperties.label	rolagem de habilidades

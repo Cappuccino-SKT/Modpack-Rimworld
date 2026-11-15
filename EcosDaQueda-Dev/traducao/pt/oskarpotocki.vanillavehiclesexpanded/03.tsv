@@ -1,0 +1,259 @@
+## DefInjected/ThingDef/Roadrunner_VehiclePawn.xml
+VVE_Roadrunner.components.10.label	Painel lateral esquerdo
+VVE_Roadrunner.components.11.label	Painel lateral direito
+VVE_Roadrunner.components.13.label	Para-choque dianteiro
+VVE_Roadrunner.components.14.label	Para-choque traseiro
+VVE_Roadrunner.components.17.label	Volante
+## DefInjected/ThingDef/Scytheman_Buildable.xml
+VVE_Scytheman_Blueprint.label	Scytheman
+VVE_Scytheman_Blueprint.description	Um lança-foguetes múltiplo improvisado. O Scytheman é um veículo agrícola reaproveitado para saturar uma área com salvas imprecisas de explosivos. Pelo jeito que foi montado, não foi feito para disparar várias salvas seguidas nem para ficar exposto ao fogo inimigo.\n\nComo os outros veículos de nível 1, é beberrão de combustível e rende mais em distâncias médias. Anda pior no inverno, mas um pouco melhor em estrada plana e aberta.\n\n<color=#bb8f04>Tripulação:</color> Motorista x1\n<color=#bb8f04>Combustível:</color> Combustível químico
+## DefInjected/ThingDef/Scytheman_MainTurret.xml
+Rocket_Scytheman_MainTurret.label	foguete de enxame
+## DefInjected/ThingDef/Scytheman_VehiclePawn.xml
+VVE_Scytheman.label	Scytheman
+VVE_Scytheman.description	Um lança-foguetes múltiplo improvisado. O Scytheman é um veículo agrícola reaproveitado para saturar uma área com salvas imprecisas de explosivos. Pelo jeito que foi montado, não foi feito para disparar várias salvas seguidas nem para ficar exposto ao fogo inimigo.\n\nComo os outros veículos de nível 1, é beberrão de combustível e rende mais em distâncias médias. Anda pior no inverno, mas um pouco melhor em estrada plana e aberta.\n\n<color=#bb8f04>Tripulação:</color> Motorista x1\n<color=#bb8f04>Combustível:</color> Combustível químico
+VVE_Scytheman.components.1.label	Roda dianteira esquerda
+VVE_Scytheman.components.2.label	Roda dianteira direita
+VVE_Scytheman.components.3.label	Roda central esquerda
+VVE_Scytheman.components.4.label	Roda central direita
+VVE_Scytheman.components.5.label	Roda traseira esquerda
+VVE_Scytheman.components.6.label	Roda traseira direita
+VVE_Scytheman.components.7.label	Suspensão dianteira esquerda
+VVE_Scytheman.components.8.label	Suspensão dianteira direita
+VVE_Scytheman.components.9.label	Suspensão central esquerda
+VVE_Scytheman.components.10.label	Suspensão central direita
+VVE_Scytheman.components.11.label	Suspensão traseira esquerda
+VVE_Scytheman.components.12.label	Suspensão traseira direita
+VVE_Scytheman.components.14.label	Painel lateral esquerdo
+VVE_Scytheman.components.15.label	Painel lateral direito
+VVE_Scytheman.components.18.label	Volante
+## DefInjected/ThingDef/Smuggler_Buildable.xml
+VVE_Smuggler_Blueprint.label	Smuggler
+VVE_Smuggler_Blueprint.description	Uma aeronave de uso geral. O Smuggler é um meio de transporte extremamente rápido e eficaz. É mais rápido e leva mais carga que os helicópteros, mas precisa de uma pista de pouso tanto para decolar quanto para pousar.\n\nAo contrário dos outros veículos de nível 2, tem eficiência de combustível normal no mapa-múndi, mas em troca anda bem mais rápido.\n\nPor ser um veículo voador, fica extremamente óbvio quando está em movimento.\n\n<color=#bb8f04>Tripulação:</color> Piloto x1, Passageiro x3\n<color=#bb8f04>Combustível:</color> Combustível químico
+## DefInjected/ThingDef/Smuggler_VehiclePawn.xml
+VVE_Smuggler.label	Smuggler
+VVE_Smuggler.description	Uma aeronave de uso geral. O Smuggler é um meio de transporte extremamente rápido e eficaz. É mais rápido e leva mais carga que os helicópteros, mas precisa de uma pista de pouso tanto para decolar quanto para pousar.\n\nAo contrário dos outros veículos de nível 2, tem eficiência de combustível normal no mapa-múndi, mas em troca anda bem mais rápido.\n\nPor ser um veículo voador, fica extremamente óbvio quando está em movimento.\n\n<color=#bb8f04>Tripulação:</color> Piloto x1, Passageiro x3\n<color=#bb8f04>Combustível:</color> Combustível químico
+VVE_Smuggler.components.1.label	Roda de pouso esquerda
+VVE_Smuggler.components.2.label	Roda de pouso direita
+VVE_Smuggler.components.3.label	Roda de pouso central
+VVE_Smuggler.components.4.label	Estabilizador horizontal esquerdo
+VVE_Smuggler.components.5.label	Estabilizador horizontal direito
+VVE_Smuggler.components.6.label	Entrada de combustível
+VVE_Smuggler.components.11.label	Asa esquerda
+VVE_Smuggler.components.12.label	Asa direita
+## DefInjected/ThingDef/Snatcher_Buildable.xml
+VVE_Snatcher_Blueprint.label	Snatcher
+VVE_Snatcher_Blueprint.description	Um transporte de passageiros de uso geral. O Snatcher é um veículo sólido para levar gente a vários lugares. Rende mais em estradas planas e sofre muito na neve ou em morros.\n\nComo os outros veículos de nível 2, tem o dobro de eficiência de combustível no mapa-múndi, o que os torna mais econômicos que os de nível 1. Também são menos visíveis, graças à fabricação melhor.\n\n<color=#bb8f04>Tripulação:</color> Motorista x1, Passageiro x5\n<color=#bb8f04>Combustível:</color> Combustível químico
+## DefInjected/ThingDef/Snatcher_VehiclePawn.xml
+VVE_Snatcher.label	Snatcher
+VVE_Snatcher.description	Um transporte de passageiros de uso geral. O Snatcher é um veículo sólido para levar gente a vários lugares. Rende mais em estradas planas e sofre muito na neve ou em morros.\n\nComo os outros veículos de nível 2, tem o dobro de eficiência de combustível no mapa-múndi, o que os torna mais econômicos que os de nível 1. Também são menos visíveis, graças à fabricação melhor.\n\n<color=#bb8f04>Tripulação:</color> Motorista x1, Passageiro x5\n<color=#bb8f04>Combustível:</color> Combustível químico
+VVE_Snatcher.components.1.label	Roda dianteira esquerda
+VVE_Snatcher.components.2.label	Roda dianteira direita
+VVE_Snatcher.components.3.label	Roda traseira esquerda
+VVE_Snatcher.components.4.label	Roda traseira direita
+VVE_Snatcher.components.5.label	Suspensão dianteira esquerda
+VVE_Snatcher.components.6.label	Suspensão dianteira direita
+VVE_Snatcher.components.8.label	Painel lateral esquerdo
+VVE_Snatcher.components.9.label	Painel lateral direito
+VVE_Snatcher.components.11.label	Para-choque dianteiro
+VVE_Snatcher.components.12.label	Para-choque traseiro
+VVE_Snatcher.components.15.label	Volante
+## DefInjected/ThingDef/Tango_Buildable.xml
+VVE_Tango_Blueprint.label	Tango
+VVE_Tango_Blueprint.description	Um transporte blindado de pessoal de uso geral. O Tango é um transporte de tropas lento, mas resistente. Tem compartimentos de carga amplos, blindagem endurecida, capacidade para qualquer terreno e uma torre que atira parada ou em movimento; os principais defeitos são o consumo de combustível e a blindagem um pouco mais fina atrás.\n\nAo contrário dos outros veículos de nível 2, tem eficiência de combustível normal e é bem visível; o consumo alto de combustível limita o alcance útil.\n\n<color=#bb8f04>Tripulação:</color> Motorista x1, Artilheiro x1, Passageiro x4\n<color=#bb8f04>Combustível:</color> Combustível químico
+## DefInjected/ThingDef/Tango_VehiclePawn.xml
+VVE_Tango.label	Tango
+VVE_Tango.description	Um transporte blindado de pessoal de uso geral. O Tango é um transporte de tropas lento, mas resistente. Tem compartimentos de carga amplos, blindagem endurecida, capacidade para qualquer terreno e uma torre que atira parada ou em movimento; os principais defeitos são o consumo de combustível e a blindagem um pouco mais fina atrás.\n\nAo contrário dos outros veículos de nível 2, tem eficiência de combustível normal e é bem visível; o consumo alto de combustível limita o alcance útil.\n\n<color=#bb8f04>Tripulação:</color> Motorista x1, Artilheiro x1, Passageiro x4\n<color=#bb8f04>Combustível:</color> Combustível químico
+VVE_Tango.components.1.label	Esteira esquerda
+VVE_Tango.components.2.label	Esteira direita
+VVE_Tango.components.3.label	Roda motriz dianteira esquerda
+VVE_Tango.components.4.label	Roda motriz dianteira direita
+VVE_Tango.components.5.label	Roda motriz traseira esquerda
+VVE_Tango.components.6.label	Roda motriz traseira direita
+VVE_Tango.components.8.label	Blindagem frontal
+VVE_Tango.components.9.label	Blindagem esquerda
+VVE_Tango.components.10.label	Blindagem direita
+VVE_Tango.components.11.label	Blindagem traseira
+VVE_Tango.components.14.label	Sistema de direção
+## DefInjected/ThingDef/Toad_Buildable.xml
+VVE_Toad_Blueprint.label	Toad
+VVE_Toad_Blueprint.description	Uma cápsula de desembarque de esquadrão e morteiro. O Toad é um veículo um tanto caro, feito para montar rapidamente um cerco num local próximo sem expor os seus artilheiros ao perigo. Com mais blindagem que um tanque e projetado para ser lançado da órbita, serve como veículo de assalto semidescartável.\n\nEficiência de combustível não está no projeto deste veículo: só o use em distâncias curtas e com combustível suficiente para voltar.\n\nPor ser um veículo voador, fica extremamente óbvio quando está em movimento.\n\n<color=#bb8f04>Tripulação:</color> Operador x1, Passageiro x3\n<color=#bb8f04>Combustível:</color> Combustível químico
+## DefInjected/ThingDef/Toad_VehiclePawn.xml
+VVE_Toad.label	Toad
+VVE_Toad.description	Uma cápsula de desembarque de esquadrão e morteiro. O Toad é um veículo um tanto caro, feito para montar rapidamente um cerco num local próximo sem expor os seus artilheiros ao perigo. Com mais blindagem que um tanque e projetado para ser lançado da órbita, serve como veículo de assalto semidescartável.\n\nEficiência de combustível não está no projeto deste veículo: só o use em distâncias curtas e com combustível suficiente para voltar.\n\nPor ser um veículo voador, fica extremamente óbvio quando está em movimento.\n\n<color=#bb8f04>Tripulação:</color> Operador x1, Passageiro x3\n<color=#bb8f04>Combustível:</color> Combustível químico
+VVE_Toad.components.1.label	Primeiro propulsor
+VVE_Toad.components.2.label	Segundo propulsor
+VVE_Toad.components.3.label	Terceiro propulsor
+VVE_Toad.components.4.label	Quarto propulsor
+## DefInjected/ThingDef/Traveller_Buildable.xml
+VVE_Traveller_Blueprint.label	Traveller
+VVE_Traveller_Blueprint.description	Um veículo de estrada básico para terreno plano. O Traveller é uma opção relativamente barata e rápida que ainda se sai bem no frio e na neve. A blindagem leve e o motor exposto na frente combinam com o seu estilo: fugir dos problemas, e não correr atrás deles.\n\nComo os outros veículos de nível 1, é beberrão de combustível e rende mais em distâncias médias. A velocidade e a aceleração extras o deixam ainda menos econômico e mais demorado de consertar.\n\n<color=#bb8f04>Tripulação:</color> Motorista x1, Passageiro x1\n<color=#bb8f04>Combustível:</color> Combustível químico
+## DefInjected/ThingDef/Traveller_VehiclePawn.xml
+VVE_Traveller.label	Traveller
+VVE_Traveller.description	Um veículo de estrada básico para terreno plano. O Traveller é uma opção relativamente barata e rápida que ainda se sai bem no frio e na neve. A blindagem leve e o motor exposto na frente combinam com o seu estilo: fugir dos problemas, e não correr atrás deles.\n\nComo os outros veículos de nível 1, é beberrão de combustível e rende mais em distâncias médias. A velocidade e a aceleração extras o deixam ainda menos econômico e mais demorado de consertar.\n\n<color=#bb8f04>Tripulação:</color> Motorista x1, Passageiro x1\n<color=#bb8f04>Combustível:</color> Combustível químico
+VVE_Traveller.components.1.label	Roda dianteira esquerda
+VVE_Traveller.components.2.label	Roda dianteira direita
+VVE_Traveller.components.3.label	Roda traseira esquerda
+VVE_Traveller.components.4.label	Roda traseira direita
+VVE_Traveller.components.5.label	Suspensão dianteira esquerda
+VVE_Traveller.components.6.label	Suspensão dianteira direita
+VVE_Traveller.components.7.label	Suspensão traseira esquerda
+VVE_Traveller.components.8.label	Suspensão traseira direita
+VVE_Traveller.components.10.label	Painel lateral esquerdo
+VVE_Traveller.components.11.label	Painel lateral direito
+VVE_Traveller.components.13.label	Para-choque dianteiro
+VVE_Traveller.components.14.label	Para-choque traseiro
+VVE_Traveller.components.17.label	Volante
+## DefInjected/ThingDef/Trawler_Buildable.xml
+VVE_Trawler_Blueprint.label	Trawler
+VVE_Trawler_Blueprint.description	Um barco de uso geral. O Trawler é um transporte eficiente para longas distâncias em mar aberto. Anda bem mal nos rios e tem que ir devagar no inverno.\n\nComo os outros veículos de nível 2, tem o dobro de eficiência de combustível no mapa-múndi, o que os torna mais econômicos que os de nível 1. Também são menos visíveis, graças à fabricação melhor.\n\n<color=#bb8f04>Tripulação:</color> Motorista x1, Passageiro x1\n<color=#bb8f04>Combustível:</color> Combustível químico
+## DefInjected/ThingDef/Trawler_VehiclePawn.xml
+VVE_Trawler.label	Trawler
+VVE_Trawler.description	Um barco de uso geral. O Trawler é um transporte eficiente para longas distâncias em mar aberto. Anda bem mal nos rios e tem que ir devagar no inverno.\n\nComo os outros veículos de nível 2, tem o dobro de eficiência de combustível no mapa-múndi, o que os torna mais econômicos que os de nível 1. Também são menos visíveis, graças à fabricação melhor.\n\n<color=#bb8f04>Tripulação:</color> Motorista x1, Passageiro x1\n<color=#bb8f04>Combustível:</color> Combustível químico
+VVE_Trawler.components.1.label	Painel lateral esquerdo
+VVE_Trawler.components.2.label	Painel lateral direito
+## DefInjected/ThingDef/Wagon_Buildable.xml
+VVE_Wagon_Blueprint.label	Wagon
+VVE_Wagon_Blueprint.description	Um veículo pau para toda obra. O Wagon se sai bem em todas as categorias, com boa capacidade de carga e de passageiros. Rende mais em estradas planas e sofre um pouco em morros, na neve ou em regiões de inverno.\n\nComo os outros veículos de nível 2, tem o dobro de eficiência de combustível no mapa-múndi, o que os torna mais econômicos que os de nível 1. Também são menos visíveis, graças à fabricação melhor.\n\n<color=#bb8f04>Tripulação:</color> Motorista x1, Passageiro x3\n<color=#bb8f04>Combustível:</color> Combustível químico
+## DefInjected/ThingDef/Wagon_VehiclePawn.xml
+VVE_Wagon.label	Wagon
+VVE_Wagon.description	Um veículo pau para toda obra. O Wagon se sai bem em todas as categorias, com boa capacidade de carga e de passageiros. Rende mais em estradas planas e sofre um pouco em morros, na neve ou em regiões de inverno.\n\nComo os outros veículos de nível 2, tem o dobro de eficiência de combustível no mapa-múndi, o que os torna mais econômicos que os de nível 1. Também são menos visíveis, graças à fabricação melhor.\n\n<color=#bb8f04>Tripulação:</color> Motorista x1, Passageiro x3\n<color=#bb8f04>Combustível:</color> Combustível químico
+VVE_Wagon.components.1.label	Roda dianteira esquerda
+VVE_Wagon.components.2.label	Roda dianteira direita
+VVE_Wagon.components.3.label	Roda traseira esquerda
+VVE_Wagon.components.4.label	Roda traseira direita
+VVE_Wagon.components.5.label	Suspensão dianteira esquerda
+VVE_Wagon.components.6.label	Suspensão dianteira direita
+VVE_Wagon.components.7.label	Suspensão traseira esquerda
+VVE_Wagon.components.8.label	Suspensão traseira direita
+VVE_Wagon.components.10.label	Painel lateral esquerdo
+VVE_Wagon.components.11.label	Painel lateral direito
+VVE_Wagon.components.13.label	Para-choque dianteiro
+VVE_Wagon.components.14.label	Para-choque traseiro
+VVE_Wagon.components.17.label	Volante
+## DefInjected/ThingDef/Warbird_Buildable.xml
+VVE_Warbird_Blueprint.label	Warbird
+VVE_Warbird_Blueprint.description	Um avião de caça de uso geral. O Warbird é uma aeronave de ataque incrivelmente rápida e eficaz. Com carga mínima, só para equipamento de manutenção e combustível, foi feito principalmente para enfrentar outras aeronaves e fazer rasantes metralhando o chão.\n\nAo contrário dos outros veículos de nível 2, tem eficiência de combustível normal no mapa-múndi, mas em troca anda bem mais rápido.\n\nPor ser um veículo voador, fica extremamente óbvio quando está em movimento.\n\n<color=#bb8f04>Tripulação:</color> Piloto x1\n<color=#bb8f04>Combustível:</color> Combustível químico
+## DefInjected/ThingDef/Warbird_VehiclePawn.xml
+VVE_Warbird.label	Warbird
+VVE_Warbird.description	Um avião de caça de uso geral. O Warbird é uma aeronave de ataque incrivelmente rápida e eficaz. Com carga mínima, só para equipamento de manutenção e combustível, foi feito principalmente para enfrentar outras aeronaves e fazer rasantes metralhando o chão.\n\nAo contrário dos outros veículos de nível 2, tem eficiência de combustível normal no mapa-múndi, mas em troca anda bem mais rápido.\n\nPor ser um veículo voador, fica extremamente óbvio quando está em movimento.\n\n<color=#bb8f04>Tripulação:</color> Piloto x1\n<color=#bb8f04>Combustível:</color> Combustível químico
+VVE_Warbird.components.1.label	Roda de pouso esquerda
+VVE_Warbird.components.2.label	Roda de pouso direita
+VVE_Warbird.components.3.label	Roda de pouso central
+VVE_Warbird.components.4.label	Estabilizador horizontal esquerdo
+VVE_Warbird.components.5.label	Estabilizador horizontal direito
+VVE_Warbird.components.6.label	Entrada de combustível
+VVE_Warbird.components.11.label	Asa esquerda
+VVE_Warbird.components.12.label	Asa direita
+## DefInjected/ThingDef/Wisent_Buildable.xml
+VVE_Wisent_Blueprint.label	Wisent
+VVE_Wisent_Blueprint.description	Um transportador militar para qualquer serviço. O Wisent é um caminhão potente, capaz de levar muita carga e soldados para território hostil. A economia de combustível é péssima, mas ele atravessa terreno acidentado rapidinho.\n\nAo contrário dos outros veículos de nível 2, é menos econômico, mas rende mais fora das estradas. Os passageiros sentados atrás ficam expostos ao fogo inimigo, e a blindagem só aguenta um mínimo de tiros de armas leves.\n\n<color=#bb8f04>Tripulação:</color> Motorista x1, Passageiro x7\n<color=#bb8f04>Combustível:</color> Combustível químico
+## DefInjected/ThingDef/Wisent_VehiclePawn.xml
+VVE_Wisent.label	Wisent
+VVE_Wisent.description	Um transportador militar para qualquer serviço. O Wisent é um caminhão potente, capaz de levar muita carga e soldados para território hostil. A economia de combustível é péssima, mas ele atravessa terreno acidentado rapidinho.\n\nAo contrário dos outros veículos de nível 2, é menos econômico, mas rende mais fora das estradas. Os passageiros sentados atrás ficam expostos ao fogo inimigo, e a blindagem só aguenta um mínimo de tiros de armas leves.\n\n<color=#bb8f04>Tripulação:</color> Motorista x1, Passageiro x7\n<color=#bb8f04>Combustível:</color> Combustível químico
+VVE_Wisent.components.1.label	Roda dianteira esquerda
+VVE_Wisent.components.2.label	Roda dianteira direita
+VVE_Wisent.components.3.label	Roda central esquerda
+VVE_Wisent.components.4.label	Roda central direita
+VVE_Wisent.components.5.label	Roda traseira esquerda
+VVE_Wisent.components.6.label	Roda traseira direita
+VVE_Wisent.components.7.label	Suspensão dianteira esquerda
+VVE_Wisent.components.8.label	Suspensão dianteira direita
+VVE_Wisent.components.9.label	Suspensão central esquerda
+VVE_Wisent.components.10.label	Suspensão central direita
+VVE_Wisent.components.11.label	Suspensão traseira esquerda
+VVE_Wisent.components.12.label	Suspensão traseira direita
+VVE_Wisent.components.14.label	Painel lateral esquerdo
+VVE_Wisent.components.15.label	Painel lateral direito
+VVE_Wisent.components.16.label	Tanque químico esquerdo
+VVE_Wisent.components.17.label	Tanque químico direito
+VVE_Wisent.components.18.label	Painel traseiro esquerdo
+VVE_Wisent.components.19.label	Painel traseiro direito
+VVE_Wisent.components.20.label	Para-choque dianteiro
+VVE_Wisent.components.21.label	Para-choque traseiro
+VVE_Wisent.components.24.label	Volante
+VVE_Wisent.properties.roles.1.label	passageiro 1
+VVE_Wisent.properties.roles.2.label	passageiro 2
+VVE_Wisent.properties.roles.3.label	passageiro 3
+VVE_Wisent.properties.roles.4.label	passageiro 4
+VVE_Wisent.properties.roles.5.label	passageiro 5
+VVE_Wisent.properties.roles.6.label	passageiro 6
+VVE_Wisent.properties.roles.7.label	passageiro 7
+VVE_Wisent.properties.roles.8.label	passageiro 8
+VVE_Wisent.properties.roles.9.label	passageiro 9
+## DefInjected/ThoughtDef/Precepts_Driving.xml
+VVE_Driving_Horrible.stages.drove_a_land_vehicle.label	dirigiu um veículo terrestre
+VVE_Driving_Horrible.stages.drove_a_land_vehicle.description	Andei num veículo terrestre. Foi horrível.
+VVE_Driving_Approved.stages.drove_a_land_vehicle.label	dirigiu um veículo terrestre
+VVE_Driving_Approved.stages.drove_a_land_vehicle.description	Andei num veículo terrestre. Adorei.
+VVE_Driving_Required.stages.roadrage_more_than_1_day.label	fúria da estrada (mais de 1 dia)
+VVE_Driving_Required.stages.roadrage_more_than_1_day.description	Já faz um tempinho que não pego no volante de um veículo terrestre.
+VVE_Driving_Required.stages.roadrage_more_than_5_days.label	fúria da estrada (mais de 5 dias)
+VVE_Driving_Required.stages.roadrage_more_than_5_days.description	Preciso dirigir, estou ficando muito inquieto.
+VVE_Driving_Required.stages.roadrage_more_than_10_days.label	fúria da estrada (mais de 10 dias)
+VVE_Driving_Required.stages.roadrage_more_than_10_days.description	Chega! A estrada está me chamando! Eu quero dirigir!
+VVE_Driving_Required.stages.roadrage_more_than_20_days.label	fúria da estrada (mais de 20 dias)
+VVE_Driving_Required.stages.roadrage_more_than_20_days.description	EU SOU AQUELE QUE FOGE DOS VIVOS E DOS MORTOS! ME DEVOLVAM O MEU CARRO!
+## DefInjected/ThoughtDef/Precepts_Flying.xml
+VVE_Flying_Horrible.stages.boarded_an_air_vehicle.label	embarcou num veículo aéreo
+VVE_Flying_Horrible.stages.boarded_an_air_vehicle.description	Andei num veículo voador. Foi horrível.
+VVE_Flying_Approved.stages.boarded_an_air_vehicle.label	embarcou num veículo aéreo
+VVE_Flying_Approved.stages.boarded_an_air_vehicle.description	Andei num veículo aéreo. Adorei.
+VVE_Flying_Required.stages.aerophilia_more_than_1_day.label	aerofilia (mais de 1 dia)
+VVE_Flying_Required.stages.aerophilia_more_than_1_day.description	Já faz um tempinho que não cruzo os céus.
+VVE_Flying_Required.stages.aerophilia_more_than_5_days.label	aerofilia (mais de 5 dias)
+VVE_Flying_Required.stages.aerophilia_more_than_5_days.description	Preciso voar, estou ficando muito inquieto.
+VVE_Flying_Required.stages.aerophilia_more_than_10_days.label	aerofilia (mais de 10 dias)
+VVE_Flying_Required.stages.aerophilia_more_than_10_days.description	Chega! Os céus abertos estão me chamando! Eu quero voar!
+VVE_Flying_Required.stages.aerophilia_more_than_20_days.label	aerofilia (mais de 20 dias)
+VVE_Flying_Required.stages.aerophilia_more_than_20_days.description	ÍCARO VOOU PERTO DEMAIS DO SOL, MAS SE EU NÃO VOAR LOGO, QUEM VAI SER CATAPULTADO PARA LÁ É VOCÊ!
+## DefInjected/ThoughtDef/Precepts_Sailing.xml
+VVE_Sailing_Horrible.stages.sailed_in_a_sea_vessel.label	navegou numa embarcação
+VVE_Sailing_Horrible.stages.sailed_in_a_sea_vessel.description	Andei numa embarcação. Foi horrível.
+VVE_Sailing_Approved.stages.sailed_in_a_sea_vessel.label	navegou numa embarcação
+VVE_Sailing_Approved.stages.sailed_in_a_sea_vessel.description	Andei numa embarcação. Adorei.
+VVE_Sailing_Required.stages.sirens_call_more_than_1_day.label	canto da sereia (mais de 1 dia)
+VVE_Sailing_Required.stages.sirens_call_more_than_1_day.description	Já faz um tempinho que não corto as ondas.
+VVE_Sailing_Required.stages.sirens_call_more_than_5_days.label	canto da sereia (mais de 5 dias)
+VVE_Sailing_Required.stages.sirens_call_more_than_5_days.description	Preciso navegar, estou ficando muito inquieto.
+VVE_Sailing_Required.stages.sirens_call_more_than_10_days.label	canto da sereia (mais de 10 dias)
+VVE_Sailing_Required.stages.sirens_call_more_than_10_days.description	Chega! O mar aberto está me chamando! Eu quero navegar!
+VVE_Sailing_Required.stages.sirens_call_more_than_20_days.label	canto da sereia (mais de 20 dias)
+VVE_Sailing_Required.stages.sirens_call_more_than_20_days.description	EU SOU O SENHOR DO MEU DESTINO! O CAPITÃO DA MINHA ALMA! PRECISO NAVEGAR PELOS MARES!
+## DefInjected/ThoughtDef/Thoughts_Situation_Needs.xml
+VVE_NeedRoomSize_Horrible.stages.confined_interior.label	interior confinado
+VVE_NeedRoomSize_Horrible.stages.confined_interior.description	Este espaço é minúsculo. Eu me sinto um rato na gaiola.
+VVE_NeedRoomSize_Horrible.stages.cramped_interior.label	interior apertado
+VVE_NeedRoomSize_Horrible.stages.cramped_interior.description	Este cômodo é pequeno demais. Queria ter mais espaço para me mexer e respirar.
+VVE_NeedRoomSize_Horrible.stages.spacious_interior.label	interior espaçoso
+VVE_NeedRoomSize_Horrible.stages.spacious_interior.description	Este cômodo é tão amplo que me sinto livre.
+## DefInjected/Vehicles.PatternDef/PatternDefs.xml
+VVE_Streaky.label	Listrado
+VVE_8bit.label	8 bits
+VVE_Blocky.label	Quadriculado
+VVE_CallOfDuty.label	Camuflagem militar
+VVE_Dots.label	Bolinhas
+VVE_GeometricGrunge.label	Grunge geométrico
+VVE_Gloss.label	Brilhante
+VVE_Grunge.label	Grunge
+VVE_Marble.label	Mármore
+VVE_Painted.label	Pintado
+VVE_Processor.label	Processador
+VVE_Reactive.label	Reativo
+VVE_Rocky.label	Rochoso
+VVE_Savannah.label	Savana
+VVE_Shine.label	Lustro
+VVE_Smudges.label	Borrões
+VVE_Splatter.label	Respingos
+VVE_Stamped.label	Carimbado
+VVE_Vinyl.label	Vinil
+VVE_Wildcat.label	Gato-do-mato
+## DefInjected/Vehicles.VehicleStatDef/VehicleStats.xml
+AccelerationRate.label	Taxa de aceleração
+AccelerationRate.description	A rapidez com que o veículo acelera, em quadrados por segundo. Uma taxa maior faz o veículo chegar mais rápido à velocidade máxima. Também afeta a taxa de frenagem, que é o dobro da taxa de aceleração.
+AccelerationRate.formatString	{0} q/s²
+## DefInjected/Vehicles.VehicleTurretDef/Bulldog_MainTurret.xml
+Bulldog_MainTurret.label	canhão do bulldog
+Bulldog_MainTurret.description	Um canhão grande e de longo alcance, capaz de disparar projéteis explosivos a média distância. Costuma ser montado nos tanques Bulldog.
+Bulldog_MainTurret.fireModes.0.label	Tiro único
+Bulldog_MainTurret.gizmoDescription	Escolher alvo.\n\nFogo para efeito

@@ -1,0 +1,144 @@
+## DefInjected/VFEEmpire.HonorDef/HonorDefs.xml
+VFEE_Destroyer.label	Destruidor de {FACTION_name}
+VFEE_Destroyer.description	+10% de melhora nos preços de comércio com os inimigos de {FACTION_name}.
+VFEE_LordOf.label	{RANK} de {SETTLEMENT_label}
+VFEE_LordOf.description	+1 de honra a cada 5 dias quando estiver em {SETTLEMENT_label}.
+VFEE_RulerOf.label	Governante de {SETTLEMENT_label}
+VFEE_RulerOf.description	A coleta do dízimo de {SETTLEMENT_label} fica duas vezes mais rápida.
+VFEE_WieldOfWeapon.label	Portador da {WEAPON_label}
+VFEE_WieldOfWeapon.description	50% de chance de +1 de honra a cada morte causada com {WEAPON_label}.
+VFEE_PatronOfArts.label	Patrono das Artes
+VFEE_PatronOfArts.description	+3 de honra depois de uma exposição de arte bem-sucedida
+VFEE_ChildOf.label	{CHILD} de {PARENT_labelShort}
+VFEE_ChildOf.description	A opinião de {PARENT_labelShort} sobre {PAWN_labelShort} fica travada em 100. A opinião de {PAWN_labelShort} sobre {PARENT_labelShort} fica travada em 100.
+VFEE_Marksman.label	o Atirador
+VFEE_Marksman.description	A habilidade de Tiro nunca decai.
+VFEE_Warrior.label	o Guerreiro
+VFEE_Warrior.description	A habilidade de Corpo a corpo nunca decai.
+VFEE_Architect.label	o Arquiteto
+VFEE_Architect.description	A habilidade de Construção nunca decai.
+VFEE_Miner.label	o Minerador
+VFEE_Miner.description	A habilidade de Mineração nunca decai.
+VFEE_Chef.label	o Chef
+VFEE_Chef.description	A habilidade de Culinária nunca decai.
+VFEE_Gardener.label	o Jardineiro
+VFEE_Gardener.description	A habilidade de Plantas nunca decai.
+VFEE_Rancher.label	o Rancheiro
+VFEE_Rancher.description	A habilidade de Animais nunca decai.
+VFEE_Craftsman.label	o Artesão
+VFEE_Craftsman.description	A habilidade de Artesanato nunca decai.
+VFEE_Artist.label	o Artista
+VFEE_Artist.description	A habilidade de Arte nunca decai.
+VFEE_Healer.label	o Curandeiro
+VFEE_Healer.description	A habilidade de Medicina nunca decai.
+VFEE_Negotiator.label	o Negociador
+VFEE_Negotiator.description	A habilidade Social nunca decai.
+VFEE_Intellectual.label	o Intelectual
+VFEE_Intellectual.description	A habilidade de Intelecto nunca decai.
+## DefInjected/VFEEmpire.RoyaltyTabDef/RoyaltyTabDefs.xml
+VFEE_GreatHierarchy.label	A Grande Hierarquia
+VFEE_GreatHierarchy.description	Esta tela mostra todos os membros da facção do Império. Vocês podem gastar honra para convidá-los como visitantes.
+VFEE_Permits.label	Permissões
+VFEE_Permits.description	Esta tela permite personalizar e escolher as permissões de cada um dos seus nobres.
+VFEE_Vassalage.label	Vassalagem
+VFEE_Vassalage.description	Esta tela permite tornar vassalas as bases imperiais próximas para receber dízimos regulares delas.
+VFEE_Honors.label	Honrarias
+VFEE_Honors.description	Esta tela permite aplicar aos seus colonos as honrarias já desbloqueadas, que dão vantagens únicas, mas bem específicas.
+## DefInjected/VFEEmpire.TitheTypeDef/TitheTypeDefs.xml
+VFEE_Steel.label	mineração de aço
+VFEE_Steel.description	Este assentamento minera aço para o seu suserano.
+VFEE_Wood.label	corte de madeira
+VFEE_Wood.description	Este assentamento corta madeira para o seu suserano.
+VFEE_Gold.label	tributo em ouro
+VFEE_Gold.description	Este assentamento paga ouro ao seu suserano.
+VFEE_Silver.label	tributo em prata
+VFEE_Silver.description	Este assentamento paga prata ao seu suserano.
+VFEE_Farming.label	agricultura
+VFEE_Farming.description	Este assentamento produz refeições de sobrevivência para o seu suserano.
+VFEE_Honor.label	tributo em honra
+VFEE_Honor.description	Este assentamento dá honra ao seu suserano.
+VFEE_Slavery.label	escravidão
+VFEE_Slavery.description	Este assentamento captura escravos para o seu suserano.
+## Keyed/Misc.xml
+VFEE.OR	OU
+VFEE.StartBestower.NoThrone	Não é possível começar: {0} não tem um trono digno.
+VFEE.StartBestower.NoTarget	Não é possível começar: não há sala do trono válida para conceder o título.
+VFEE.StartBestower.HigherTitle	Não é possível começar: o alvo já tem um título maior
+VFEE.StartBestower.DisabledExistingRitual	Não é possível começar enquanto houver um ritual em andamento.
+VFEE.GalleryRequirements	Exigências da galeria
+VFEE.GalleryRequirements.Unmet	uma galeria que atenda a estas exigências:\n\n{0}
+VFEE.BallroomRequirements	Exigências do salão de baile
+VFEE.BallroomRequirements.Unmet	um salão de baile que atenda a estas exigências:\n\n{0}
+VFEE.BallroomRequirements.DanceFloorToSmall	um salão de baile com pista de dança livre de pelo menos {0} quadrados na frente de um instrumento
+VFEE.CourtRequirements	Exigências da corte nobre
+VFEE.GrandBall.Begin	Organizar grande baile
+VFEE.GrandBall.Label	grande baile
+VFEE.GrandBall.Leave.label	Sair do grande baile
+VFEE.GrandBall.Leave.Desc	Este personagem vai sair do grande baile e não poderá voltar para a festa depois.
+VFEE.GrandBall.Cancel.Label	Cancelar grande baile
+VFEE.GrandBall.Cancel.Desc	Cancela o grande baile, mandando todos para casa e falhando a missão.
+VFEE.GrandBall.Cancel.Confirm	Não haverá chance de recomeçar este ritual. Seus convidados vão para casa infelizes e a missão vai falhar.
+VFEE.GrandBall.Waiting	Seus convidados estão esperando vocês começarem o grande baile. Mas não vão esperar muito.
+VFEE.GrandBall.Description	Um baile exclusivo, só para quem tem título real e alguns que sabem tocar instrumentos
+VFEE.GrandBall.ChooseParticipants	Participantes
+VFEE.ArtExhibit.Begin	Organizar exposição de arte
+VFEE.ArtExhibit.Label	exposição de arte
+VFEE.ArtExhibit.Leave.label	Sair da exposição
+VFEE.ArtExhibit.Leave.Desc	Este personagem vai sair da exposição e não poderá voltar depois.
+VFEE.ArtExhibit.Leave.Disabled	O anfitrião não pode sair da exposição.
+VFEE.ArtExhibit.Cancel.Label	Cancelar exposição
+VFEE.ArtExhibit.Cancel.Desc	Cancela a exposição de arte, mandando todos para casa e falhando a missão.
+VFEE.ArtExhibit.Cancel.Confirm	Não haverá chance de recomeçar este ritual. Seus convidados vão para casa infelizes e a missão vai falhar.
+VFEE.ArtExhibit.Waiting	Seus convidados estão esperando vocês começarem a exposição de arte. Mas não vão esperar muito.
+VFEE.ArtExhibit.Description	Uma visita de arte só para quem tem título real, para ver a sua galeria e fofocar uns com os outros.
+VFEE.ArtExhibit.ChooseParticipants	Participantes
+VFEE.Parade.Begin	Organizar desfile
+VFEE.Parade.Murder	Movido pela inveja, {0} está tentando assassinar o arquistelar!
+VFEE.Parade.Label	desfile
+VFEE.Parade.Leave.label	Sair do desfile
+VFEE.Parade.Leave.Desc	Este personagem vai sair do desfile e não poderá voltar depois.
+VFEE.Parade.Leave.Disabled	O arquistelar não pode sair do desfile.
+VFEE.Parade.Cancel.Label	Cancelar desfile
+VFEE.Parade.Cancel.Desc	Cancela o desfile, mandando todos para casa e falhando a missão.
+VFEE.Parade.Cancel.Confirm	Não haverá chance de recomeçar este ritual. Seus convidados vão para casa infelizes e a missão vai falhar.
+VFEE.Parade.Waiting	Seus convidados estão esperando vocês começarem o desfile. Mas não vão esperar muito.
+VFEE.Parade.Description	Um desfile tradicional de ascensão para despedir o arquistelar!
+VFEE.Parade.InvalidGuard	O arquistelar não confia o bastante em {0}.
+VFEE.Parade.ChooseParticipants	Participantes
+VFEE.Parade.LandingAreaUnmet	uma plataforma de pouso para o ônibus espacial dos convidados, marcada por quatro faróis de pouso ligados
+VFEE.Parade.Reward.Label	Ascensão do arquistelar
+VFEE.Parade.Reward.Description	Seu arquistelar vai ascender e partir do planeta para subir na grande hierarquia, servindo diretamente ao Imperador
+VFEE.Parade.EndGame.Intro	{STELLARCH_nameDef} ascendeu!
+VFEE.Parade.EndGame.Ending	O ônibus espacial imperial levou {STELLARCH_nameDef} e todos que ascenderam com ele para fora deste mundo da Orla. De agora em diante, serve à direita do Imperador {EMPEROR_nameFull}.\n\nA colônia continua, e sua história segue em frente.
+VFEE.Parade.NoblesArriveIn	Os nobres chegam em {0}
+VFEE.Parade.NoblesArriveOn	Os nobres pousam em {0}.
+VFEE.Parade.NoblesArriveInDesc	O ônibus espacial com a nobreza do desfile de ascensão pousa em {0}. Até lá, a colônia tem tempo para se preparar. Os nobres não pousam enquanto o arquistelar estiver fora, a colônia estiver sob ameaça ou uma plataforma de pouso construída pela colônia não puder ser usada; se isso durar um dia, o desfile é cancelado.
+VFEE.Parade.NoblesWaiting	Nobres do desfile esperando
+VFEE.Parade.NoblesWaitingAwayDesc	Os nobres do desfile de ascensão só vão pousar quando {STELLARCH_nameDef} estiver na colônia para recebê-los. Se não voltar em {TIME}, o desfile é cancelado.
+VFEE.Parade.NoblesWaitingThreatDesc	Os nobres do desfile de ascensão não vão pousar enquanto a colônia estiver sob ameaça. Se o perigo não passar em {TIME}, o desfile é cancelado.
+VFEE.Parade.NoblesWaitingPadDesc	Os nobres do desfile de ascensão só vão pousar quando o ônibus espacial puder usar a sua plataforma de pouso:\n\n{PROBLEMS}\n\nConsertem a plataforma ou desmontem os faróis para os nobres pousarem perto da colônia. Se a plataforma continuar inutilizável em {TIME}, o desfile é cancelado.
+VFEE.Parade.NoblesWaitingPadToo	O ônibus espacial deles também não consegue usar a sua plataforma de pouso:\n\n{PROBLEMS}
+VFEE.Parade.PadUnusableMessage	O ônibus espacial dos nobres só vai pousar quando a sua plataforma de pouso puder ser usada: {0}.
+VFEE.Parade.PadUnformed	os faróis de pouso não formam uma plataforma, que exige quatro deles nos cantos de um retângulo com lados de {0} a {1} células
+VFEE.Parade.PadBeaconUnpowered	um farol está sem energia
+VFEE.Parade.PadBeaconsUnpowered	{0} faróis estão sem energia
+VFEE.Parade.PadRoofed	há teto cobrindo {0}
+VFEE.Parade.PadBlockedBy	bloqueado por {0}
+VFEE.Parade.PadGround	{0} não aguenta um pouso
+VFEE.Parade.PadCellsOf	{0} de {1}
+VFEE.Parade.PadCell	célula
+VFEE.Parade.PadUnusable	não pode ser usada
+VFEE.Parade.CalledOffIn	Cancelado em {0}
+VFEE.Parade.CalledOffOn	Se os nobres não conseguirem pousar antes, o desfile é cancelado em {0}.
+VFEE.DefuseBomb	Desarmar bomba
+VFEE.AssassinationSuccess	Os desertores estão indo embora porque eliminaram o alvo.
+VFEE.Discard	Descartar
+VFEE.RoyaltyDead	Os desertores estão indo embora porque eliminaram todos os portadores de título imperial da área.
+VFEE.GotDrug	{0} mandou para vocês um pacote comemorativo de aperitivos!
+VFEE.TitheArrived	O dízimo de {0} chegou de {1}.
+VFEE.HonorGainedTitle	{0} ganhou 1 de honra por {1}
+## Keyed/Settings.xml
+VFEE	VFE - Empire
+VFEE.DeserterChance	Multiplicador de chance de terrorismo
+VFEE.NoblesPerTitle	Nobres por título: {0}
+VFEE.NoblesPerTitleDesc	Define a quantidade de nobres na hierarquia. Por padrão, um nobre por título (16), sem contar o primeiro. Quanto menos nobres, melhor o desempenho, mas mais sem graça o império.\n\nNão afeta a hierarquia já gerada.

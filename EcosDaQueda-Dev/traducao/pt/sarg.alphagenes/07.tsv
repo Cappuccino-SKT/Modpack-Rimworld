@@ -1,0 +1,226 @@
+## DefInjected/GeneDef/GeneDefs_Sunlight.xml
+AG_UVSensitivity_Minor.label	sensibilidade leve a UV
+AG_UVSensitivity_Minor.description	Portadores deste gene têm olhos sensíveis à radiação UV, que os deixam um pouco desconfortáveis sob a luz direta do sol.
+AG_UVSensitivity_Minor.labelShortAdj	sensível a UV
+AG_UVSensitivity_Minor.symbolPack.prefixSymbols.0.symbol	escuro
+AG_UVSensitivity_Minor.symbolPack.prefixSymbols.1.symbol	túnel
+AG_UVSensitivity_Minor.symbolPack.prefixSymbols.2.symbol	sub
+AG_UVSensitivity_Minor.symbolPack.prefixSymbols.3.symbol	caverna
+AG_UVSensitivity_Minor.symbolPack.prefixSymbols.4.symbol	cripta
+AG_UVSensitivity_Minor.symbolPack.prefixSymbols.5.symbol	penumbra
+AG_UVSensitivity_Minor.symbolPack.prefixSymbols.6.symbol	noite
+AG_Sensitivity_Vicious.label	sensibilidade cruel a UV
+AG_Sensitivity_Vicious.description	Portadores deste gene têm compostos biológicos na pele que reagem cruelmente à radiação UV. São tão sensíveis à luz do sol que ficar sob o sol os deixa inconscientes.
+AG_Sensitivity_Vicious.labelShortAdj	hipersensível a UV
+AG_Sensitivity_Vicious.symbolPack.prefixSymbols.0.symbol	escuro
+AG_Sensitivity_Vicious.symbolPack.prefixSymbols.1.symbol	túnel
+AG_Sensitivity_Vicious.symbolPack.prefixSymbols.2.symbol	sub
+AG_Sensitivity_Vicious.symbolPack.prefixSymbols.3.symbol	caverna
+AG_Sensitivity_Vicious.symbolPack.prefixSymbols.4.symbol	cripta
+AG_Sensitivity_Vicious.symbolPack.prefixSymbols.5.symbol	penumbra
+AG_Sensitivity_Vicious.symbolPack.prefixSymbols.6.symbol	noite
+AG_Sensitivity_Lethal.label	sensibilidade letal a UV
+AG_Sensitivity_Lethal.description	Portadores deste gene têm compostos biológicos na pele que reagem de forma letal à radiação UV. São tão sensíveis à luz do sol que ficar sob o sol os queima e os mata em poucos minutos.
+AG_Sensitivity_Lethal.labelShortAdj	hipersensível a UV
+AG_Sensitivity_Lethal.symbolPack.prefixSymbols.0.symbol	escuro
+AG_Sensitivity_Lethal.symbolPack.prefixSymbols.1.symbol	túnel
+AG_Sensitivity_Lethal.symbolPack.prefixSymbols.2.symbol	sub
+AG_Sensitivity_Lethal.symbolPack.prefixSymbols.3.symbol	caverna
+AG_Sensitivity_Lethal.symbolPack.prefixSymbols.4.symbol	cripta
+AG_Sensitivity_Lethal.symbolPack.prefixSymbols.5.symbol	penumbra
+AG_Sensitivity_Lethal.symbolPack.prefixSymbols.6.symbol	noite
+AG_UVPowered_Mild.label	movido a UV
+AG_UVPowered_Mild.description	Portadores deste gene têm compostos biológicos na pele que se renovam e recarregam com radiação UV. Ficam revigorados expostos à luz do sol, mas letárgicos longe dela.
+AG_UVPowered_Mild.labelShortAdj	movido a UV
+AG_UVPowered_Mild.symbolPack.prefixSymbols.0.symbol	foto
+AG_UVPowered_Mild.symbolPack.prefixSymbols.1.symbol	planta
+AG_UVPowered_Mild.symbolPack.prefixSymbols.2.symbol	cloro
+AG_UVPowered_Major.label	movido a UV, maior
+AG_UVPowered_Major.description	Portadores deste gene têm compostos biológicos na pele que se renovam e recarregam com radiação UV. Ficam revigorados expostos à luz do sol, mas muito letárgicos e apagados longe dela.
+AG_UVPowered_Major.labelShortAdj	movido a UV
+AG_UVPowered_Major.symbolPack.prefixSymbols.0.symbol	foto
+AG_UVPowered_Major.symbolPack.prefixSymbols.1.symbol	planta
+AG_UVPowered_Major.symbolPack.prefixSymbols.2.symbol	cloro
+## DefInjected/GeneDef/GeneDefs_Tails.xml
+AG_FoxTail.label	cauda de raposa
+AG_FoxTail.description	Portadores deste gene têm uma grande cauda de raposa que os protege em parte do frio.
+AG_DemonTail.label	cauda demoníaca
+AG_DemonTail.description	Portadores deste gene têm uma grande cauda demoníaca que funciona como um quinto membro habilidoso.
+AG_Drakonori_Tail.label	cauda drakonori
+AG_Drakonori_Tail.description	Portadores deste gene têm uma grande cauda dracônica que pode ser usada para agarrar e imobilizar um alvo.
+AG_NereidTail.label	cauda nereida
+AG_NereidTail.description	Portadores deste gene têm uma grande cauda parecida com a de um peixe.
+## DefInjected/GeneDef/GeneDefs_Temperature.xml
+AG_HeatSlowness.label	torpor no calor
+AG_HeatSlowness.description	Portadores deste gene andam bem mais devagar em temperaturas acima de 40 ºC.
+AG_HeatSlowness.symbolPack.prefixSymbols.0.symbol	quente
+AG_HeatSpeed.label	velocidade no calor
+AG_HeatSpeed.description	Portadores deste gene andam bem mais rápido em temperaturas acima de 40 ºC.
+AG_HeatSpeed.symbolPack.prefixSymbols.0.symbol	quente
+AG_ColdSlowness.label	torpor no frio
+AG_ColdSlowness.description	Portadores deste gene andam bem mais devagar em temperaturas abaixo de 0 ºC.
+AG_ColdSlowness.symbolPack.prefixSymbols.0.symbol	frio
+AG_ColdSpeed.label	velocidade no frio
+AG_ColdSpeed.description	Portadores deste gene andam bem mais rápido em temperaturas abaixo de 0 ºC.
+AG_ColdSpeed.symbolPack.prefixSymbols.0.symbol	frio
+AG_HeatRadiating.label	irradia calor
+AG_HeatRadiating.description	Portadores deste gene irradiam calor intenso.
+AG_HeatRadiating.symbolPack.prefixSymbols.0.symbol	quente
+AG_ColdRadiating.label	irradia frio
+AG_ColdRadiating.description	Portadores deste gene absorvem muito calor do ambiente, congelando o ar ao redor.
+AG_ColdRadiating.symbolPack.prefixSymbols.0.symbol	frio
+## DefInjected/GeneDef/GeneDefs_Teratogenic.xml
+AG_Teratogenesis.label	teratogênese
+AG_Teratogenesis.description	Portadores deste gene geram tumores pelo corpo todo sem parar. Não estão imunes a morrer por causa deles.
+AG_TeratogenicHealing.label	cura teratogênica
+AG_TeratogenicHealing.description	Portadores deste gene conseguem reaproveitar os próprios tumores para se curar, consumindo as massas cancerosas no processo.
+AG_HealingTouch.label	toque curativo
+AG_HealingTouch.description	Portadores deste gene conseguem reaproveitar os próprios tumores para curar outras pessoas, consumindo as massas cancerosas no processo.
+AG_TeratogenicManipulation.label	coordenação teratogênica
+AG_TeratogenicManipulation.description	Portadores deste gene conseguem reaproveitar os próprios tumores para ganhar um enorme impulso na manipulação e na destreza.
+AG_TeratogenicSwiftness.label	agilidade teratogênica
+AG_TeratogenicSwiftness.description	Portadores deste gene conseguem reaproveitar os próprios tumores para ganhar um enorme impulso na velocidade de movimento e de trabalho.
+AG_TeratogenicStamina.label	vigor teratogênico
+AG_TeratogenicStamina.description	Portadores deste gene conseguem reaproveitar os próprios tumores para ganhar um enorme impulso no sistema imunológico e no vigor geral.
+AG_TeratogenicBurst.label	toque teratogênico
+AG_TeratogenicBurst.description	Portadores deste gene conseguem transferir os próprios tumores para outra pessoa, o que costuma ser tão doloroso e perigoso quanto parece.
+## DefInjected/GeneDef/GeneDefs_Violence.xml
+AG_InnerPeace.label	paz interior
+AG_InnerPeace.description	Portadores deste gene alcançaram certa paz mental e não ligam muito para desfeitas dos outros.
+AG_Rowdy.label	brigão
+AG_Rowdy.description	Portadores deste gene adoram brincar de briga. A outra pessoa envolvida, claro, pode não achar tanta graça!
+AG_Enforcer.label	agente da lei
+AG_Enforcer.description	Portadores deste gene têm um dom natural para controlar quem sai da linha e, por isso, têm mais chance de prender as pessoas.
+AG_ArrestAvoidance.label	avesso a prisões
+AG_ArrestAvoidance.description	Portadores deste gene são naturalmente ruins em controlar quem sai da linha e, por isso, têm muito menos chance de prender as pessoas.
+AG_ToughSinews.label	tendões resistentes
+AG_ToughSinews.description	Portadores deste gene conseguem usar armas pesadas ou de caixão de guerra naturalmente, sem precisar de armadura de apoio.
+## DefInjected/GeneDef/GeneDefs_Voices.xml
+AG_SlugVoice.label	voz de lesma
+AG_SlugVoice.description	Os portadores têm uma voz gorgolejante e molhada.
+AG_RockVoice.label	voz de pedra
+AG_RockVoice.description	Os portadores têm uma voz retumbante e metálica, como duas pedras raspando uma na outra.
+AG_FrogVoice.label	voz de sapo
+AG_FrogVoice.description	Os portadores têm uma voz coaxante, como a de um sapo.
+AG_GutturalVoice.label	voz gutural
+AG_GutturalVoice.description	Os portadores têm uma voz gutural e áspera, produzida quase toda na garganta.
+AG_GrowlingVoice.label	voz rosnante
+AG_GrowlingVoice.description	Os portadores têm uma voz rosnante, com tons animalescos assustadores.
+AG_HivelingVoice.label	voz de colmeia
+AG_HivelingVoice.description	Os portadores têm vozes insetoides agudas.
+## DefInjected/GeneDef/GeneDefs_Vomit.xml
+AG_ChemfuelVomit.label	vômito de combustível químico
+AG_ChemfuelVomit.description	Portadores deste gene têm metabolismo movido a combustível químico e, por isso, vomitam combustível químico. Esse vômito é inflamável.
+AG_ChemfuelVomit.symbolPack.prefixSymbols.0.symbol	quím
+AG_ChemfuelVomit.symbolPack.prefixSymbols.1.symbol	explo
+AG_ChemfuelVomit.symbolPack.prefixSymbols.2.symbol	bum
+AG_ChemfuelVomit.symbolPack.wholeNameSymbols.0.symbol	vomita-combustível
+AG_BloodVomit.label	vômito de sangue
+AG_BloodVomit.description	Portadores deste gene vomitam sangue com violência em vez de vômito normal. Isso causa hemorragia interna a cada vômito, com cortes e hematomas pelo corpo todo.
+AG_BloodVomit.symbolPack.prefixSymbols.0.symbol	sangrento
+AG_BloodVomit.symbolPack.prefixSymbols.1.symbol	hemo
+AG_BloodVomit.symbolPack.wholeNameSymbols.0.symbol	vomita-sangue
+AG_RatVomit.label	vômito de ratos
+AG_RatVomit.description	Portadores deste gene vomitam bolos de mecanitos que se juntam em ratos pseudo-orgânicos. É algo tão incrivelmente cruel e nojento que não se sabe se é resultado de um experimento genético que deu terrivelmente errado ou só uma pegadinha macabra de um geneticista sem nenhuma ética.
+AG_RatVomit.symbolPack.prefixSymbols.0.symbol	ratinho
+AG_RatVomit.symbolPack.wholeNameSymbols.0.symbol	vomita-rato
+AG_PukeWater.label	vômito de água
+AG_PukeWater.description	Portadores deste gene vomitam água em vez de vômito normal.
+AG_PukeBile.label	vômito de bile
+AG_PukeBile.description	Portadores deste gene vomitam bile de cadáver em vez de vômito normal. Esse líquido é ainda mais repugnante que o vômito normal.
+AG_PukeCryo.label	criovômito
+AG_PukeCryo.description	Portadores deste gene vomitam fluido criogênico em vez de vômito normal. Esse líquido baixa rápido a temperatura ao redor, o que o torna útil e extremamente perigoso. Some mais rápido que o vômito normal, mas não pode ser limpo.
+## DefInjected/GeneDef/GeneDefs_WeatherCausers.xml
+AG_Fogger.label	gerador de névoa
+AG_Fogger.description	Uma nuvem difusa de mecanitos está entrelaçada ao DNA do portador. Esses mecanitos influenciam a umidade da atmosfera ao redor, fazendo uma névoa densa e espessa se formar.
+AG_Fogger.symbolPack.prefixSymbols.0.symbol	névoa
+AG_Fogger.symbolPack.prefixSymbols.1.symbol	nebuloso
+AG_Fogger.symbolPack.prefixSymbols.2.symbol	úmido
+AG_RainMaker.label	gerador de chuva
+AG_RainMaker.description	Uma nuvem difusa de mecanitos está entrelaçada ao DNA do portador. Esses mecanitos reduzem drasticamente a pressão atmosférica ao redor, causando chuva constante.
+AG_RainMaker.symbolPack.prefixSymbols.0.symbol	chuvoso
+AG_RainMaker.symbolPack.prefixSymbols.1.symbol	água
+AG_RainMaker.symbolPack.prefixSymbols.2.symbol	pluvio
+AG_FoggyRainMaker.label	gerador de chuva e névoa
+AG_FoggyRainMaker.description	Uma nuvem difusa de mecanitos está entrelaçada ao DNA do portador. Esses mecanitos reduzem drasticamente a pressão atmosférica ao redor, causando chuva constante e uma névoa densa e espessa.
+AG_FoggyRainMaker.symbolPack.prefixSymbols.0.symbol	chuvoso
+AG_FoggyRainMaker.symbolPack.prefixSymbols.1.symbol	água
+AG_FoggyRainMaker.symbolPack.prefixSymbols.2.symbol	pluvio
+AG_FoggyRainMaker.symbolPack.prefixSymbols.3.symbol	névoa
+AG_FoggyRainMaker.symbolPack.prefixSymbols.4.symbol	nebuloso
+AG_FoggyRainMaker.symbolPack.prefixSymbols.5.symbol	úmido
+AG_RainyThunderstormMaker.label	gerador de temporal
+AG_RainyThunderstormMaker.description	Uma nuvem difusa de mecanitos está entrelaçada ao DNA do portador. Esses mecanitos aumentam drasticamente a energia eletrostática e reduzem a pressão atmosférica, formando uma violenta tempestade com chuva.
+AG_RainyThunderstormMaker.symbolPack.prefixSymbols.0.symbol	chuvoso
+AG_RainyThunderstormMaker.symbolPack.prefixSymbols.1.symbol	água
+AG_RainyThunderstormMaker.symbolPack.prefixSymbols.2.symbol	pluvio
+AG_RainyThunderstormMaker.symbolPack.prefixSymbols.3.symbol	trovão
+AG_RainyThunderstormMaker.symbolPack.prefixSymbols.4.symbol	eletr
+AG_DryThunderstormMaker.label	gerador de trovões
+AG_DryThunderstormMaker.description	Uma nuvem difusa de mecanitos está entrelaçada ao DNA do portador. Esses mecanitos aumentam drasticamente a energia eletrostática na atmosfera, formando uma violenta tempestade seca de raios. Isso não deixa o portador imune a raios!
+AG_DryThunderstormMaker.symbolPack.prefixSymbols.0.symbol	trovão
+AG_DryThunderstormMaker.symbolPack.prefixSymbols.1.symbol	eletr
+AG_SnowMaker.label	gerador de neve
+AG_SnowMaker.description	Uma nuvem difusa de mecanitos está entrelaçada ao DNA do portador. Esses mecanitos reduzem drasticamente a temperatura na alta atmosfera, fazendo nevar.
+AG_SnowMaker.symbolPack.prefixSymbols.0.symbol	frio
+AG_SnowMaker.symbolPack.prefixSymbols.1.symbol	neve
+## DefInjected/GeneDef/GeneDefs_Wings.xml
+AG_RainbowWings.label	asas de arco-íris
+AG_RainbowWings.description	Portadores deste gene têm um par de asas gigantes de lepidóptero saindo das costas.
+AG_RainbowWings.symbolPack.prefixSymbols.0.symbol	asa
+AG_RainbowWings.symbolPack.prefixSymbols.1.symbol	borbo
+AG_RainbowWings.symbolPack.prefixSymbols.2.symbol	cor
+AG_RainbowWings.symbolPack.prefixSymbols.3.symbol	arco-íris
+AG_BatWings.label	asas de morcego
+AG_BatWings.description	Portadores deste gene têm um par de asas gigantes de quiróptero saindo das costas.
+AG_BatWings.symbolPack.prefixSymbols.0.symbol	morcego
+AG_BatWings.symbolPack.prefixSymbols.1.symbol	alado
+AG_PegasusWings.label	asas de pégaso
+AG_PegasusWings.description	Portadores deste gene têm um par de asas gigantes de penas saindo das costas.
+AG_PegasusWings.symbolPack.prefixSymbols.0.symbol	pena
+AG_PegasusWings.symbolPack.prefixSymbols.1.symbol	alado
+AG_MothWings.label	asas de mariposa
+AG_MothWings.description	Portadores deste gene têm um par de asas gigantes de lepidóptero saindo das costas.
+AG_MothWings.symbolPack.prefixSymbols.0.symbol	mariposa
+AG_MothWings.symbolPack.prefixSymbols.1.symbol	lepidópter
+AG_BumbledroneWings.label	asas de zangão
+AG_BumbledroneWings.description	Portadores deste gene têm dois pares de asas de abelha saindo das costas.
+AG_BumbledroneWings.symbolPack.prefixSymbols.0.symbol	abelha
+AG_BumbledroneWings.symbolPack.prefixSymbols.1.symbol	api
+AG_BumbledroneWings.symbolPack.prefixSymbols.2.symbol	colmeia
+AG_BumbledroneWings.symbolPack.prefixSymbols.3.symbol	himen
+AG_WaspWings.label	asas de vespa
+AG_WaspWings.description	Portadores deste gene têm dois pares de asas de vespa saindo das costas.
+AG_WaspWings.symbolPack.prefixSymbols.0.symbol	vespa
+AG_WaspWings.symbolPack.prefixSymbols.1.symbol	marimbondo
+AG_WaspWings.symbolPack.prefixSymbols.2.symbol	ferrão
+AG_WaspWings.symbolPack.prefixSymbols.3.symbol	himen
+AG_DrainerWings.label	asas de drenador
+AG_DrainerWings.description	Portadores deste gene têm dois pares de asas de borboleta drenadora saindo das costas.
+AG_DrainerWings.symbolPack.prefixSymbols.0.symbol	asa
+AG_DrainerWings.symbolPack.prefixSymbols.1.symbol	borbo
+AG_DrainerWings.symbolPack.prefixSymbols.2.symbol	dreno
+AG_FeatheredWings.label	asas emplumadas
+AG_FeatheredWings.description	Portadores deste gene têm dois pares de asas de penas saindo das costas.
+AG_FeatheredWings.symbolPack.prefixSymbols.0.symbol	anjo
+AG_FeatheredWings.symbolPack.prefixSymbols.1.symbol	querubim
+AG_FeatheredWings.symbolPack.prefixSymbols.2.symbol	arqui
+AG_FeatheredWings.symbolPack.prefixSymbols.3.symbol	santo
+AG_DemonWings.label	asas demoníacas
+AG_DemonWings.description	Portadores deste gene têm dois pares de asas demoníacas saindo das costas.
+AG_DemonWings.symbolPack.prefixSymbols.0.symbol	demônio
+AG_DemonWings.symbolPack.prefixSymbols.1.symbol	diabo
+AG_DemonWings.symbolPack.prefixSymbols.2.symbol	capeta
+AG_GasBags.label	bolsas de gás
+AG_GasBags.description	Portadores deste gene têm um órgão interno de bolsas cheias de hidrogênio que permite flutuar sobre o terreno, ao custo de ficarem bem inflamáveis e explodirem ao morrer.
+AG_GasBags.symbolPack.prefixSymbols.0.symbol	gás
+AG_GasBags.symbolPack.prefixSymbols.1.symbol	hidrog
+AG_SingleWing.label	asa malformada
+AG_SingleWing.description	Portadores deste gene têm uma única asa atrofiada. Inútil para voar.
+AG_SingleWing.symbolPack.prefixSymbols.0.symbol	asa
+AG_DrakonoriWings.label	asas drakonori
+AG_DrakonoriWings.description	Portadores deste gene têm um par de asas dracônicas gigantes saindo das costas.
+AG_DrakonoriWings.symbolPack.prefixSymbols.0.symbol	draco
+AG_DrakonoriWings.symbolPack.prefixSymbols.1.symbol	alado
+AG_NoWings.label	sem asas
+AG_NoWings.description	Portadores deste gene não têm asas.

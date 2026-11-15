@@ -1,0 +1,66 @@
+## DefInjected/GeneCategoryDef/GeneCategoryDefs.xml
+VREH_WeaponAptitudes.label	aptidões com armas
+## DefInjected/GeneDef/GeneDefs_Misc.xml
+VREH_Dutiful.label	obediente
+VREH_Dutiful.description	Portadores deste gene têm um senso de dever muito maior e nunca sofrem colapsos mentais quando convocados.
+VREH_Dutiful.symbolPack.prefixSymbols.0.symbol	obediente
+VREH_Dutiful.symbolPack.prefixSymbols.1.symbol	leal
+VREH_Dutiful.symbolPack.prefixSymbols.2.symbol	zeloso
+VREH_Dutiful.symbolPack.prefixSymbols.3.symbol	firme
+VREH_Dutiful.symbolPack.prefixSymbols.4.symbol	estável
+VREH_Dutiful.symbolPack.prefixSymbols.5.symbol	sereno
+VREH_BulletproofSkin.label	pele à prova de balas
+VREH_BulletproofSkin.description	Portadores deste gene têm a pele reforçada por fibras orgânicas parecidas com kevlar, o que permite desviar balas de calibre menor e ficar só com hematomas.
+VREH_BulletproofSkin.symbolPack.prefixSymbols.0.symbol	kevlar
+VREH_BulletproofSkin.symbolPack.suffixSymbols.0.symbol	resistente
+VREH_BulletproofSkin.symbolPack.wholeNameSymbols.0.symbol	blindado
+VREH_Giant.label	gigante
+VREH_Giant.description	Portadores deste gene são um pouco maiores que humanos padrão.
+VREH_Toughness.label	resistência
+VREH_Toughness.description	Portadores deste gene têm pele grossa, carne densa e ossos duráveis, e sofrem muito menos dano que outras pessoas com os mesmos golpes.
+VREH_Toughness.symbolPack.prefixSymbols.0.symbol	duro
+VREH_Toughness.symbolPack.prefixSymbols.1.symbol	rijo
+VREH_Toughness.symbolPack.prefixSymbols.2.symbol	pesado
+VREH_Toughness.symbolPack.prefixSymbols.3.symbol	forte
+VREH_Arrogant.label	arrogante
+VREH_Arrogant.description	Portadores deste gene não têm filtro e sempre dizem o que pensam, mesmo que isso irrite os outros.
+VREH_Arrogant.symbolPack.prefixSymbols.0.symbol	rude
+VREH_Arrogant.symbolPack.prefixSymbols.1.symbol	malvado
+VREH_Arrogant.symbolPack.prefixSymbols.2.symbol	cruel
+VREH_Arrogant.symbolPack.wholeNameSymbols.0.symbol	arrogante
+VREH_Unconstrained.label	desimpedido
+VREH_Unconstrained.description	Portadores deste gene não sofrem a perda de velocidade causada por roupas que normalmente os deixariam mais lentos.
+VREH_ChemicalDependency_Luciferium.label	dependência de lucifério
+VREH_ChemicalDependency_Luciferium.description	Portadores deste gene precisam ingerir lucifério regularmente para sobreviver. Após 10 dias sem lucifério, sofrem de deficiência de lucifério. Após 20 dias, entram em coma. Após 30 dias, morrem.
+VREH_ChemicalDependency_Luciferium.labelShortAdj	dependente de lucifério
+VREH_ChemicalDependency_Luciferium.symbolPack.prefixSymbols.0.symbol	luci
+VREH_ChemicalDependency_Luciferium.symbolPack.suffixSymbols.0.symbol	ferium
+VREH_ChemicalDependency_Luciferium.symbolPack.suffixSymbols.1.symbol	diabo
+VREH_Glidewings.label	asas planadoras
+VREH_Glidewings.description	Portadores deste gene têm um pequeno par de asas saindo das omoplatas. Não conseguem voar, mas nenhum obstáculo os deixa mais lentos.
+## DefInjected/GeneDef/WeaponGeneTemplateDefs.xml
+VREHT_WeaponAptitude_Randomizer.label	aptidão com arma aleatória
+VREHT_WeaponAptitude_Randomizer.description	Este gene é trocado por um gene de aptidão com arma aleatório. Nunca deveria aparecer para o jogador.
+VREHT_WeaponAptitude_Randomizer.labelShortAdj	aleatório
+## DefInjected/HediffDef/Hediffs_Global_Misc.xml
+VREH_Glidewings.label	asas planadoras
+VREH_Glidewings.description	Um pequeno par de asas saindo das omoplatas desta pessoa. Não consegue voar, mas nenhum obstáculo a deixa mais lenta.
+VREH_GeneticDrugNeed_Luci.label	dependência química
+VREH_GeneticDrugNeed_Luci.description	Esta pessoa tem uma dependência bioquímica genética de uma droga específica. Sem doses regulares, o corpo não consegue se manter saudável e ela sofre perda de saúde e humor até morrer.\n\nFaz efeito a partir da idade: 13.
+VREH_GeneticDrugNeed_Luci.stages.deficiency.label	deficiência
+VREH_GeneticDrugNeed_Luci.stages.2.overrideLabel	coma por deficiência
+## DefInjected/VREHussars.WeaponGeneTemplateDef/WeaponGeneTemplateDefs.xml
+VREHT_WeaponAptitude.label	aptidão com {0}
+VREHT_WeaponAptitude.description	A aptidão do portador com {0} é muito maior. A aptidão funciona como um bônus na chance de acerto e na precisão quando a arma está equipada.
+## DefInjected/XenotypeDef/XenotypeDefs.xml
+VREH_Uhlan.label	ulano
+VREH_Uhlan.description	Os ulanos são um desenvolvimento paralelo a partir de hussardos capturados, convertidos por certos grupos para servir de resposta aos programas militares de supersoldados. A dependência genética de lucifério serve tanto para desencorajar sua captura quanto para prolongar sua utilidade.\n\nChamados de demônios, com razão, pela pele sempre avermelhada e pela intensa sede de sangue, os ulanos são incrivelmente resistentes e especializados em certos estilos de combate. Muitas vezes andam cobertos de armadura pesada, com a qual avançam a toda velocidade contra o alvo.\n\nExtremamente especializados e sempre à beira de explodir, muito se especula que seu desenvolvimento foi patrocinado por megacorporações como parte da mais recente corrida armamentista. Nenhuma prova concreta foi apresentada para sustentar essas alegações.
+VREH_Uhlan.descriptionShort	Os ulanos são supersoldados projetados que lutam de forma agressiva e sem emoção. Curam-se muito rápido, atravessam obstáculos planando com suas pequenas asas, consomem drogas militares à vontade e dependem de lucifério para manter o corpo funcionando.
+## Keyed/Settings.xml
+VRE_HussarsSettings	VRE - Hussardo
+VREH_Label_onlyVanillaWeapon	Aptidões só para armas do jogo base
+VREH_ToolTip_onlyVanillaWeapon	Se ativado, genes de aptidão com armas não são gerados para armas de mods.\n\nÉ preciso reiniciar o jogo.
+VREH_Label_allowNonBiocodableWeapon	Permitir armas não biocodificáveis
+VREH_ToolTip_allowNonBiocodableWeapon	Se desativado, genes não são gerados para armas que não podem ser biocodificadas.\n\nÉ preciso reiniciar o jogo.
+## Keyed/Misc_Gameplay.xml
+VREH_WeaponAptitude	Aptidão genética com arma
