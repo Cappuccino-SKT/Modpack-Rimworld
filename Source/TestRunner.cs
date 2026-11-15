@@ -76,12 +76,26 @@ namespace EcosDaQueda.DebugTools
             if (text.StartsWith("Bad string pass when reading rule")) return;
             // Combat Extended sem placa de vídeo (modo -Headless)
             if (text.Contains("AsyncGPUReadback failed")) return;
+            // Idem: sem texturas lidas da placa, o CE não tem a silhueta de árvores/pawns para calcular cobertura
+            if (text.Contains("Combat Extended :: CropVertical") || text.Contains("was not cached. This is a bug - texture should have been collected")) return;
             if (text.StartsWith("Error in ParallelForEach") && text.Contains("Combat Extended")) return;
             errorCount++;
             if (errorCount <= 40)
             {
                 string first = text.Split('\n')[0];
                 Write("!! LOG ERROR" + (inCommand ? " (durante o comando)" : "") + ": " + (first.Length > 400 ? first.Substring(0, 400) : first));
+                // Resto da mensagem (ex.: pilha de uma exceção incluída no texto), até 10 linhas.
+                if (errorCount <= 5)
+                {
+                    string[] rest = text.Split((char)10);
+                    for (int i = 1; i < rest.Length && i <= 10; i++) Write("     | " + rest[i].Trim());
+                }
+                // Pilha de quem chamou Log.Error (o Player.log corta mensagens depois do limite).
+                if (errorCount <= 5)
+                {
+                    string[] st = Environment.StackTrace.Split((char)10);
+                    for (int i = 3; i < st.Length && i < 21; i++) Write("     " + st[i].Trim());
+                }
             }
         }
 
@@ -233,6 +247,10 @@ namespace EcosDaQueda.DebugTools
                 case "goodwill": return EQDebug.Goodwill(Fac(1), int.Parse(Arg(2)));
                 case "hostile": return EQDebug.SetHostile(Fac(1), true);
                 case "peace": return EQDebug.SetHostile(Fac(1), false);
+                case "movingbases": return EQDebug.MovingBases();
+                case "factions": return EQDebug.ListFactions();
+                case "faction": return EQDebug.DescribeFaction(Fac(1));
+                case "raid": return EQDebug.Raid(Fac(1), float.Parse(Arg(2) ?? "0"));
                 case "retaliate": return EQDebug.Retaliate(Fac(1));
                 case "gift": return EQDebug.SendGift(Fac(1), false);
                 case "tribute": return EQDebug.SendGift(Fac(1), true);
@@ -267,6 +285,8 @@ namespace EcosDaQueda.DebugTools
                 case "prisoner": return EQDebug.SpawnPrisoner();
                 case "kill": return EQDebug.KillMember(Fac(1));
                 case "serum": return EQDebug.UseSerum(int.Parse(Arg(1) ?? "1"));
+                case "cecheck": return EQDebug.CECheck(Arg(1));
+                case "xenogen": return EQDebug.XenoGen(Arg(1), int.Parse(Arg(2) ?? "20"));
                 case "signature": return EQDebug.Signature(Fac(1), Arg(2) == "run");
                 case "incident": return EQDebug.FireIncident(Arg(1));
                 case "letters": return EQDebug.Letters();

@@ -95,6 +95,95 @@ namespace EcosDaQueda.DebugTools
             return f.Name + " agora " + f.RelationKindWith(Faction.OfPlayer) + " (" + f.GoodwillWith(Faction.OfPlayer) + ")";
         }
 
+        /// <summary>Assentamentos móveis (VEF MovingBase) no mapa-múndi: dono, posição, se está andando e o estoque.</summary>
+        public static string MovingBases()
+        {
+            Type t = AccessTools.TypeByName("VEF.Planet.MovingBase");
+            if (t == null) return "VEF.Planet.MovingBase não existe";
+            var sb = new StringBuilder();
+            int n = 0;
+            foreach (WorldObject o in Find.WorldObjects.AllWorldObjects.Where(x => t.IsInstanceOfType(x)))
+            {
+                n++;
+                object pather = Traverse.Create(o).Field("pather").GetValue();
+                bool moving = pather != null && Traverse.Create(pather).Property("Moving").GetValue<bool>();
+                string trader = (o as ITrader)?.TraderKind?.defName ?? "-";
+                sb.AppendLine("  " + o.Label + " [" + o.def.defName + "] de " + o.Faction?.Name + " tile=" + o.Tile + (moving ? " ANDANDO" : " parada") + " estoque=" + trader
+                    + " podeNegociar=" + ((o as ITrader)?.CanTradeNow.ToString() ?? "-"));
+            }
+            return "assentamentos móveis=" + n + "\n" + sb.ToString().TrimEnd();
+        }
+
+        /// <summary>Lista todas as facções do mundo: def, mod de origem, oculta, assentamentos, relação com o jogador.</summary>
+        public static string ListFactions()
+        {
+            var sb = new StringBuilder();
+            foreach (Faction f in Find.FactionManager.AllFactionsListForReading.OrderBy(x => x.Hidden).ThenByDescending(x => Find.WorldObjects.Settlements.Count(s => s.Faction == x)))
+            {
+                if (f.IsPlayer) continue;
+                sb.AppendLine((f.Hidden ? "(oculta) " : "") + (f.temporary ? "(temporária) " : "") + f.Name + " [" + f.def.defName + " | " + (f.def.modContentPack?.PackageId ?? "?") + "]"
+                    + " assentamentos=" + Find.WorldObjects.Settlements.Count(s => s.Faction == f)
+                    + " tech=" + f.def.techLevel + " humana=" + f.def.humanlikeFaction
+                    + " jogador=" + f.GoodwillWith(Faction.OfPlayer) + "/" + f.RelationKindWith(Faction.OfPlayer)
+                    + (f.def.permanentEnemy ? " INIMIGA-PERMANENTE" : ""));
+            }
+            return sb.ToString().TrimEnd();
+        }
+
+        /// <summary>Descreve qualquer facção (potência ou menor): líder, assentamentos, ideologia e relações fixas.</summary>
+        public static string DescribeFaction(Faction f)
+        {
+            var sb = new StringBuilder();
+            sb.AppendLine(f.Name + " [" + f.def.defName + "] oculta=" + f.Hidden + " derrotada=" + f.defeated
+                + " assentamentos=" + Find.WorldObjects.Settlements.Count(x => x.Faction == f));
+            sb.AppendLine("  líder=" + (f.leader == null ? "NENHUM" : f.leader.Name?.ToStringFull + " (" + f.leader.kindDef.defName + ", " + f.leader.genes?.Xenotype?.defName + ")"));
+            sb.AppendLine("  com jogador: " + f.GoodwillWith(Faction.OfPlayer) + " " + f.RelationKindWith(Faction.OfPlayer));
+            Ideo ideo = f.ideos?.PrimaryIdeo;
+            if (ideo != null)
+            {
+                sb.AppendLine("  ideologia: " + ideo.name + " | membro=" + ideo.memberName + " | adjetivo=" + ideo.adjective + " | líder=" + ideo.leaderTitleMale + "/" + ideo.leaderTitleFemale
+                    + " | ícone=" + ideo.iconDef?.defName + " cor=" + ideo.colorDef?.defName + " | memes=" + string.Join(",", ideo.memes.Select(m => m.defName)));
+                sb.AppendLine("  preceitos=" + ideo.PreceptsListForReading.Count + " | divindades=" + ((ideo.foundation as IdeoFoundation_Deity)?.DeitiesListForReading.Select(d => d.name).ToCommaList() ?? "-"));
+                sb.AppendLine("  cargos: " + string.Join("; ", ideo.RolesListForReading.Select(r => r.Label + "=" + (r.ChosenPawns().FirstOrDefault()?.LabelShort ?? "vago"))));
+                sb.AppendLine("  rituais/prédios/relíquias: " + string.Join("; ", ideo.PreceptsListForReading.Where(p => p.def.visible && (p is Precept_Ritual || p is Precept_Building || p is Precept_Relic)).Select(p => p.Label)));
+                sb.AppendLine("  descrição: " + (ideo.description ?? "").Replace("\n", " ").Truncate(160));
+            }
+            foreach (Faction o in Find.FactionManager.AllFactionsListForReading)
+            {
+                if (o == f || o.IsPlayer || EQUtil.IsProxy(o)) continue;
+                FactionRelationEntry e = FactionRelationPresetDef.Find(f.def, o.def);
+                if (e != null)
+                    sb.AppendLine("  com " + o.Name + ": " + f.GoodwillWith(o) + " " + f.RelationKindWith(o) + " (fixo: " + e.label + (e.permanentEnemies ? ", permanente" : "") + ")");
+            }
+            return sb.ToString().TrimEnd();
+        }
+
+        /// <summary>Força um ataque da facção contra a colônia e conta quem veio (tipo e xenotipo).</summary>
+        public static string Raid(Faction f, float points)
+        {
+            Map map = Map;
+            if (!f.HostileTo(Faction.OfPlayer)) SetHostile(f, true);
+            int before = map.mapPawns.AllPawnsSpawned.Count(p => p.Faction == f);
+            IncidentParms parms = StorytellerUtility.DefaultParmsNow(IncidentCategoryDefOf.ThreatBig, map);
+            parms.faction = f;
+            parms.forced = true;
+            if (points > 0f) parms.points = points;
+            parms.raidArrivalMode = PawnsArrivalModeDefOf.EdgeWalkIn;
+            parms.raidStrategy = RaidStrategyDefOf.ImmediateAttack;
+            bool ok;
+            try { ok = IncidentDefOf.RaidEnemy.Worker.TryExecute(parms); }
+            catch (Exception ex) { return "EXCEÇÃO " + ex.GetType().Name + ": " + ex.Message; }
+            var cont = new Dictionary<string, int>();
+            foreach (Pawn p in map.mapPawns.AllPawnsSpawned.Where(p => p.Faction == f))
+            {
+                string k = p.kindDef.defName + (p.genes?.Xenotype != null ? " / " + p.genes.Xenotype.defName : "") + (p.IsMutant ? " (mutante)" : "");
+                cont[k] = cont.TryGetValue(k) + 1;
+            }
+            var sb = new StringBuilder("ataque de " + f.Name + ": executou=" + ok + " pontos=" + parms.points.ToString("0") + " chegaram=" + (map.mapPawns.AllPawnsSpawned.Count(p => p.Faction == f) - before));
+            foreach (var kv in cont.OrderByDescending(kv => kv.Value)) sb.Append("\n  " + kv.Value + "x " + kv.Key);
+            return sb.ToString();
+        }
+
         public static string Retaliate(Faction f)
         {
             MethodInfo m = AccessTools.Method(typeof(WorldComponent_Reputation), "SendBountyHunters");
@@ -379,7 +468,7 @@ namespace EcosDaQueda.DebugTools
         public static string SpawnPrisoner()
         {
             Map map = Map;
-            Pawn p = PawnGenerator.GeneratePawn(PawnKindDefOf.Villager, Find.FactionManager.RandomEnemyFaction() ?? Powers.FirstOrDefault());
+            Pawn p = PawnGenerator.GeneratePawn(PawnKindDefOf.Villager, Find.FactionManager.RandomEnemyFaction(allowNonHumanlike: false) ?? Powers.FirstOrDefault());
             GenSpawn.Spawn(p, HomeCell(map), map);
             p.guest.SetGuestStatus(Faction.OfPlayer, GuestStatus.Prisoner);
             p.health.AddHediff(HediffDefOf.Anesthetic); // sem cela ele fugiria do mapa
@@ -413,9 +502,145 @@ namespace EcosDaQueda.DebugTools
                 string before = pawn.genes.Xenotype?.defName;
                 foreach (CompUseEffect comp in ((ThingWithComps)serum).GetComps<CompUseEffect>().OrderByDescending(c => c.OrderPriority).ToList())
                     comp.DoEffect(pawn);
-                sb.AppendLine("  " + pawn.LabelShort + ": " + before + " -> " + pawn.genes.Xenotype?.defName + " (xenogenes=" + pawn.genes.Xenogenes.Count + ", soro destruído=" + serum.Destroyed + ")");
+                sb.AppendLine("  " + pawn.LabelShort + ": " + before + " -> " + pawn.genes.Xenotype?.defName + " (xenogenes=" + pawn.genes.Xenogenes.Count + ", endogenes=" + pawn.genes.Endogenes.Count + ", padrão=" + (EcosDaQueda.EQXenotypeUtil.GuessBase(pawn)?.defName ?? "nenhum") + ", soro destruído=" + serum.Destroyed + ")");
             }
             return sb.ToString().TrimEnd();
+        }
+
+        /// <summary>
+        /// Compatibilidade com o Combat Extended: lista, por mod, armas de fogo sem verbo CE, armas/itens com
+        /// golpes (tools) que não são ToolCE, roupas sem Bulk/WornBulk e torres de veículo sem projétil CE.
+        /// Usa os mesmos critérios dos autopatchers do CE. filtro: "armas", "melee", "roupas", "veiculos" ou vazio.
+        /// </summary>
+        public static string CECheck(string filtro)
+        {
+            if (AccessTools.TypeByName("CombatExtended.VerbPropertiesCE") == null) return "Combat Extended não está ativo";
+            bool Want(string k) => filtro.NullOrEmpty() || filtro == k;
+            string Mod(Def d) => d.modContentPack == null ? "(sem mod)" : d.modContentPack.Name + " [" + d.modContentPack.PackageId + "]";
+            bool IsCE(object o) => o != null && o.GetType().FullName.StartsWith("CombatExtended");
+            var groups = new SortedDictionary<string, List<string>>();
+            void Add(string cat, Def d, string info)
+            {
+                string key = cat + " | " + Mod(d);
+                if (!groups.TryGetValue(key, out var l)) groups[key] = l = new List<string>();
+                l.Add(d.defName + " (" + d.label + ")" + (info.NullOrEmpty() ? "" : " " + info));
+            }
+            int total = 0, okGuns = 0, okMelee = 0, okApparel = 0;
+            foreach (ThingDef d in DefDatabase<ThingDef>.AllDefs)
+            {
+                if (d.IsRangedWeapon && !d.Verbs.NullOrEmpty())
+                {
+                    bool patched = (d.weaponTags != null && d.weaponTags.Contains("Patched")) || d.Verbs.Any(v => IsCE(v));
+                    if (patched) okGuns++;
+                    else if (Want("armas"))
+                    {
+                        VerbProperties v = d.Verbs[0];
+                        string kind = d.weaponTags != null && d.weaponTags.Contains("TurretGun") ? "torre" : (d.destroyOnDrop ? "interna" : "arma");
+                        Add(d.modContentPack != null && d.modContentPack.IsOfficialMod ? "ARMA sem verbo CE (jogo/DLC: o próprio CE deixa assim)" : "ARMA DE FOGO", d, "[" + kind + "; verbo=" + v.verbClass?.Name + "; projétil=" + v.defaultProjectile?.defName + "/" + v.defaultProjectile?.thingClass?.Name
+                            + "; tech=" + d.techLevel + "; alcance=" + v.range + "; rajada=" + v.burstShotCount + "; tags=" + (d.weaponTags == null ? "" : string.Join(",", d.weaponTags)) + "]");
+                        total++;
+                    }
+                }
+                if (!d.tools.NullOrEmpty() && (d.IsWeapon || d.IsApparel || d.equipmentType != EquipmentType.None))
+                {
+                    if (d.tools.All(t => IsCE(t))) okMelee++;
+                    else if (Want("melee"))
+                    {
+                        Add(d.IsRangedWeapon ? "CORONHADA (arma de fogo)" : "CORPO A CORPO", d, "[tech=" + d.techLevel + "; golpes=" + string.Join(", ", d.tools.Select(t => t.label + ":" + t.power + "/" + t.cooldownTime + "s")) + "]");
+                        total++;
+                    }
+                }
+                if (d.IsApparel)
+                {
+                    bool hasBulk = d.statBases != null && d.statBases.Any(m => m.stat.defName == "Bulk" || m.stat.defName == "WornBulk");
+                    if (hasBulk) okApparel++;
+                    else if (Want("roupas"))
+                    {
+                        float sharp = d.statBases?.FirstOrDefault(m => m.stat == StatDefOf.ArmorRating_Sharp)?.value ?? 0f;
+                        float blunt = d.statBases?.FirstOrDefault(m => m.stat == StatDefOf.ArmorRating_Blunt)?.value ?? 0f;
+                        float stuffMult = d.statBases?.FirstOrDefault(m => m.stat == StatDefOf.StuffEffectMultiplierArmor)?.value ?? 0f;
+                        Add(d.modContentPack != null && d.modContentPack.IsOfficialMod ? "ROUPA sem volume (jogo/DLC: o próprio CE deixa assim)" : "ROUPA/ARMADURA", d, "[camadas=" + string.Join(",", d.apparel.layers.Select(l => l.defName)) + "; partes=" + string.Join(",", d.apparel.bodyPartGroups.Select(b => b.defName))
+                            + "; sharp=" + sharp + "; blunt=" + blunt + "; stuffMult=" + stuffMult + "; massa=" + d.BaseMass + "; tech=" + d.techLevel + "]");
+                        total++;
+                    }
+                }
+            }
+            int okTur = 0, vehicles = 0;
+            if (Want("veiculos"))
+            {
+                Type turType = AccessTools.TypeByName("Vehicles.VehicleTurretDef");
+                if (turType != null)
+                    foreach (Def t in GenDefDatabase.GetAllDefsInDatabaseForDef(turType))
+                    {
+                        var proj = Traverse.Create(t).Field("projectile").GetValue<ThingDef>();
+                        var ammo = Traverse.Create(t).Field("ammunition").GetValue<ThingFilter>();
+                        bool ce = proj == null || IsCE(proj.projectile);
+                        if (ce) okTur++;
+                        else { Add("TORRE DE VEÍCULO", t, "[projétil=" + proj.defName + "/" + proj.thingClass?.Name + "; munição=" + (ammo == null ? "nenhuma" : string.Join(",", ammo.AllowedThingDefs.Take(4).Select(a => a.defName))) + "]"); total++; }
+                    }
+                Type vehType = AccessTools.TypeByName("Vehicles.VehicleDef");
+                if (vehType != null)
+                    foreach (ThingDef v in DefDatabase<ThingDef>.AllDefs.Where(x => vehType.IsInstanceOfType(x)))
+                    { vehicles++; Add("VEÍCULO (informativo)", v, ""); }
+            }
+            var sb = new StringBuilder();
+            sb.AppendLine("já compatíveis: armas de fogo=" + okGuns + " itens com golpes=" + okMelee + " roupas=" + okApparel + " torres de veículo=" + okTur + " | veículos=" + vehicles);
+            foreach (var kv in groups)
+            {
+                sb.AppendLine("== " + kv.Key + " : " + kv.Value.Count);
+                foreach (string l in kv.Value.OrderBy(x => x)) sb.AppendLine("   " + l);
+            }
+            sb.Append("sem compatibilidade=" + total);
+            return sb.ToString();
+        }
+
+        /// <summary>
+        /// Gera N pawns de um PawnKind (ou de todos os PawnKinds EQ_ de uma facção, com "fac:<nome>") e conta
+        /// xenotipo, padrão por baixo (endogenes) e gênero. Os pawns são descartados.
+        /// </summary>
+        public static string XenoGen(string arg, int n)
+        {
+            var kinds = new List<PawnKindDef>();
+            if (arg.StartsWith("fac:"))
+            {
+                Faction f = FindFaction(arg.Substring(4));
+                if (f == null) return "facção não encontrada: " + arg;
+                kinds.AddRange(DefDatabase<PawnKindDef>.AllDefs.Where(k => k.defaultFactionDef == f.def && k.defName.StartsWith("EQ_")));
+            }
+            else
+            {
+                PawnKindDef k = DefDatabase<PawnKindDef>.GetNamedSilentFail(arg);
+                if (k == null) return "PawnKind não encontrado: " + arg;
+                kinds.Add(k);
+            }
+            var sb = new StringBuilder();
+            int problemas = 0;
+            foreach (PawnKindDef kind in kinds)
+            {
+                Faction fac = kind.defaultFactionDef != null ? Find.FactionManager.FirstFactionOfDef(kind.defaultFactionDef) : null;
+                var cont = new Dictionary<string, int>();
+                for (int i = 0; i < n; i++)
+                {
+                    Pawn p;
+                    try { p = PawnGenerator.GeneratePawn(new PawnGenerationRequest(kind, fac, forceGenerateNewPawn: true)); }
+                    catch (Exception ex) { problemas++; sb.AppendLine("  ERRO gerando " + kind.defName + ": " + ex.Message); continue; }
+                    XenotypeDef x = p.genes?.Xenotype;
+                    XenotypeDef b = EcosDaQueda.EQXenotypeUtil.GuessBase(p);
+                    string chave;
+                    if (x == null) chave = "(sem genes)";
+                    else if (x.inheritable) chave = x.defName;
+                    else chave = x.defName + " sobre " + (b?.defName ?? "NENHUM PADRÃO");
+                    chave += " " + p.gender;
+                    if (x == null || !x.defName.StartsWith("EQ_") || (!x.inheritable && b == null)) { problemas++; chave += " <-- PROBLEMA"; }
+                    cont[chave] = cont.TryGetValue(chave) + 1;
+                    p.Discard();
+                }
+                sb.AppendLine(kind.defName + ":");
+                foreach (var kv in cont.OrderByDescending(kv => kv.Value))
+                    sb.AppendLine("  " + kv.Value + "x " + kv.Key);
+            }
+            sb.Append("problemas=" + problemas);
+            return sb.ToString();
         }
 
         /// <summary>Diagnóstico: para cada incidente-assinatura da potência, diz se pode disparar e tenta executar.</summary>
