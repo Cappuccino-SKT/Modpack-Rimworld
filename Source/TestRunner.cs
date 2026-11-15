@@ -222,6 +222,11 @@ namespace EcosDaQueda.DebugTools
                     timeoutSeconds = float.Parse(Arg(1));
                     return null;
                 case "dump": return EQDebug.Dump();
+                case "transexport": return TransExport.Export(Arg(1), Arg(2));
+                case "deftext": return TransExport.DefText(Arg(1), Arg(2));
+                case "genegen": return TransExport.GeneratedGenes(Arg(1));
+                case "transerrors": return TransExport.TranslationErrors(Arg(1));
+                case "language": return LanguageDatabase.activeLanguage?.folderName ?? "(nenhuma)";
                 case "rep":
                     if (Arg(2) == "add") return EQDebug.AddReputation(Fac(1), float.Parse(Arg(3)), float.Parse(Arg(4) ?? "0"));
                     return EQDebug.SetReputation(Fac(1), Arg(2) == "fame" || Arg(2) == "fama", float.Parse(Arg(3)));
