@@ -36,7 +36,7 @@ namespace EcosDaQueda
                 return;
 
             // Painel de lealdade
-            Rect allegRect = new Rect(inRect.x, inRect.y + 58f, inRect.width, 96f);
+            Rect allegRect = new Rect(inRect.x, inRect.y + 58f, inRect.width, 112f);
             DrawAllegiance(allegRect);
 
             Rect outRect = new Rect(inRect.x, allegRect.yMax + 6f, inRect.width, inRect.yMax - allegRect.yMax - 6f);
@@ -58,16 +58,26 @@ namespace EcosDaQueda
             Widgets.DrawMenuSection(r);
             Rect inner = r.ContractedBy(8f);
             var alg = WorldComponent_Allegiance.Current;
-            if (alg?.memberOf == null)
+            if (alg == null)
+                return;
+            Pawn leader = EQLeader.IdeoLeader;
+            if (alg.memberOf == null)
             {
                 Text.Font = GameFont.Small;
-                Widgets.Label(new Rect(inner.x, inner.y, inner.width, 24f), "<b>Lealdade:</b> você não pertence a nenhuma potência.");
+                Widgets.Label(new Rect(inner.x, inner.y, inner.width - 280f, 24f),
+                    "<b>Lealdade:</b> " + (alg.pendingPower != null ? "cerimônia de submissão solicitada com " + alg.pendingPower.Name + "." : "o assentamento não pertence a nenhuma potência."));
+                Widgets.Label(new Rect(inner.x, inner.y + 24f, inner.width - 280f, 24f),
+                    "<b>Líder:</b> " + (leader != null ? leader.Name.ToStringFull : "nenhum (defina o líder da sua ideologia)"));
+                if (leader == null && Widgets.ButtonText(new Rect(inner.xMax - 270f, inner.y, 130f, 28f), "Escolher líder"))
+                    Find.WindowStack.Add(new Dialog_EQChooseLeader(forced: false));
+                if (alg.pendingPower != null && Widgets.ButtonText(new Rect(inner.xMax - 130f, inner.y, 130f, 28f), "Cancelar pedido"))
+                    EQCeremony.Cancel();
                 GUI.color = Color.gray;
                 Text.Font = GameFont.Tiny;
-                Widgets.Label(new Rect(inner.x, inner.y + 26f, inner.width, inner.height - 26f),
-                    EQAllegiance.PlayerOverlordProvider == null
-                        ? "Para entrar numa potência é preciso o Hegemony ativo."
-                        : "Para entrar numa potência, jure lealdade a ela pelo Hegemony (diplomacia da facção › tornar-se vassalo). Você receberá um posto, um estipêndio periódico e obrigações (dízimos). Subir de posto exige Fama com ela. Sair depois conta como traição.");
+                Widgets.Label(new Rect(inner.x, inner.y + 50f, inner.width, inner.height - 50f),
+                    alg.pendingPower != null
+                        ? "Aceite a missão da cerimônia (aba Missões): um emissário virá de nave presidi-la com o líder e recolher o preço."
+                        : "Para se submeter a uma potência, use o botão 'Cerimônia' dela abaixo. A submissão tem um preço e é selada numa cerimônia com um emissário. Só o líder do assentamento (o líder da sua ideologia) recebe cargo e favor; sair depois conta como traição.");
                 GUI.color = Color.white;
                 Text.Font = GameFont.Small;
                 return;
@@ -75,27 +85,80 @@ namespace EcosDaQueda
 
             FactionAllegianceDef d = alg.Def;
             int rank = alg.RankIndex;
-            Rect btn = new Rect(inner.xMax - 130f, inner.y, 130f, 28f);
-            if (Widgets.ButtonText(btn, "Serviços"))
+            if (Widgets.ButtonText(new Rect(inner.xMax - 130f, inner.y, 130f, 28f), "Serviços"))
                 WorldComponent_Services.OpenMenu();
+            if (Widgets.ButtonText(new Rect(inner.xMax - 130f, inner.y + 32f, 130f, 28f), "Sucessor"))
+                Find.WindowStack.Add(new Dialog_EQChooseLeader(forced: false, successorMode: true));
+            Rect third = new Rect(inner.xMax - 130f, inner.y + 64f, 130f, 28f);
+            if (leader == null)
+            {
+                if (Widgets.ButtonText(third, "Escolher líder"))
+                    Find.WindowStack.Add(new Dialog_EQChooseLeader(forced: false));
+            }
+            else if (!(EQAllegiance.HasVassalage && alg.hegLinked) && Widgets.ButtonText(third, "Romper"))
+                Find.WindowStack.Add(Dialog_MessageBox.CreateConfirmation("Romper o juramento com " + alg.memberOf.Name + "? O cargo é cassado e isso conta como traição (Infâmia).", () => alg.Renounce(), destructive: true));
             Rect iconRect = new Rect(inner.x, inner.y + 4f, 64f, 64f);
             GUI.color = alg.memberOf.Color;
             GUI.DrawTexture(iconRect, alg.memberOf.def.FactionIcon);
             GUI.color = Color.white;
             float x = iconRect.xMax + 10f;
+            float w = inner.width - 214f;
             Text.Font = GameFont.Small;
-            Widgets.Label(new Rect(x, inner.y, inner.width - 214f, 24f),
-                "<b>Lealdade:</b> " + (rank >= 0 ? d.ranks[rank].label : "?") + " de " + alg.memberOf.Name);
-            if (d != null && rank >= 0)
+            Widgets.Label(new Rect(x, inner.y, w, 24f), "<b>Lealdade:</b> " + alg.RankLabel + " de " + alg.memberOf.Name);
+            if (d == null || rank < 0)
+                return;
+            string next = rank + 1 < d.ranks.Count && d.ranks[rank + 1].title != null
+                ? " / " + d.ranks[rank + 1].title.favorCost + " para " + d.RankLabel(rank + 1, leader)
+                : " (cargo máximo)";
+            Widgets.Label(new Rect(x, inner.y + 22f, w, 24f),
+                "<b>Líder:</b> " + (leader != null ? leader.Name.ToStringFull : "<color=#ff6666>nenhum</color>")
+                + "   ·   <b>" + d.FavorLabel.CapitalizeFirst() + ":</b> " + alg.Favor + next
+                + "   ·   <b>Sucessor:</b> " + (alg.successor != null ? alg.successor.LabelShort : "não definido"));
+            Text.Font = GameFont.Tiny;
+            GUI.color = new Color(0.8f, 0.8f, 0.6f);
+            Widgets.Label(new Rect(x, inner.y + 46f, w, inner.height - 46f),
+                WorldComponent_Allegiance.DescribeRank(d, rank).Replace("\n", "   ·   "));
+            GUI.color = Color.white;
+            Text.Font = GameFont.Small;
+            TooltipHandler.TipRegion(new Rect(inner.x, inner.y, w + 74f, inner.height), (d.ranks[rank].title?.description ?? "") + "\n\n" + FavorHelp(d));
+        }
+
+        private static string FavorHelp(FactionAllegianceDef d)
+        {
+            var lines = new System.Collections.Generic.List<string> { "Como ganhar " + d.FavorLabel + ":" };
+            foreach (FavorSource s in d.favorSources)
+                lines.Add("  +" + s.amount + ": " + s.label + (s.per > 1 ? " (a cada " + s.per + ")" : ""));
+            foreach (TitheOption o in d.titheOptions)
+                if (o.favor > 0)
+                    lines.Add("  +" + o.favor + ": " + d.titheLabel + " - " + o.label.Replace("{COUNT}", "N"));
+            lines.Add("  Missões da potência e cerimônias bem assistidas também dão " + d.FavorLabel + ".");
+            return string.Join("\n", lines);
+        }
+
+        private static void DrawCeremonyButton(Rect rect, Faction f)
+        {
+            FactionAllegianceDef d = FactionAllegianceDef.For(f.def);
+            var alg = WorldComponent_Allegiance.Current;
+            if (d == null || alg == null || alg.memberOf != null)
+                return;
+            string block = EQCeremony.BlockReason(f);
+            string tip = d.ceremonyLabel + "\n\n" + (d.ceremonyText ?? "") + "\n\nPreço: " + d.PriceText() + (block != null ? "\n\n<color=#ff6666>" + block + "</color>" : "");
+            TooltipHandler.TipRegion(rect, tip);
+            if (!Widgets.ButtonText(rect, "Cerimônia", active: block == null))
+                return;
+            if (block != null)
             {
-                Text.Font = GameFont.Tiny;
-                GUI.color = new Color(0.8f, 0.8f, 0.6f);
-                Widgets.Label(new Rect(x, inner.y + 24f, inner.width - 74f, inner.height - 24f),
-                    WorldComponent_Allegiance.DescribeRank(d, rank).Replace("\n", "   ·   "));
-                GUI.color = Color.white;
-                Text.Font = GameFont.Small;
-                TooltipHandler.TipRegion(r, d.ranks[rank].description);
+                Messages.Message(block, MessageTypeDefOf.RejectInput, historical: false);
+                return;
             }
+            Find.WindowStack.Add(Dialog_MessageBox.CreateConfirmation(
+                d.ceremonyLabel + " - " + f.Name + "\n\n" + (d.ceremonyText ?? "") + "\n\nPreço, recolhido pelo emissário ao fim da cerimônia: " + d.PriceText()
+                + "\n\nAo concluir, o assentamento passa a pertencer a " + f.Name + (EQAllegiance.HasVassalage ? " e vira vassalo dela no Hegemony (com tributo)" : "") + ". Solicitar a cerimônia?",
+                () =>
+                {
+                    string err = EQCeremony.Request(f);
+                    if (err != null) Messages.Message(err, MessageTypeDefOf.RejectInput, historical: false);
+                }));
         }
 
         private static void DrawRow(Rect r, Faction f, ReputationRecord rec, ReputationSettingsDef s)
@@ -117,6 +180,7 @@ namespace EcosDaQueda
             Widgets.Label(new Rect(x, inner.y, w * 0.55f, 30f), f.Name);
             Text.Font = GameFont.Small;
             ReputationTier tier = s.Tier(rec.fame, rec.infamy);
+            DrawCeremonyButton(new Rect(inner.x - 4f, inner.y + 84f, 80f, 26f), f);
             Rect titleRect = new Rect(x + w * 0.55f, inner.y + 4f, w * 0.45f, 24f);
             Text.Anchor = TextAnchor.UpperRight;
             Widgets.Label(titleRect, "<b>" + (tier?.label ?? "?") + "</b>");

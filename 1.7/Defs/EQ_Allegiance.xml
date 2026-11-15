@@ -1,14 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
 
-  <!-- Postos dentro das potências (lidos por EcosDaQueda.dll).
-       Entrar: jurar lealdade (fealty) à potência pelo Hegemony.
-       Posto = maior rank cujo fameRequired <= sua Fama com a potência.
-       stipend = itens enviados a cada stipendIntervalDays, no formato <Steel>50</Steel>.
+  <!-- Lealdade às potências (lido por EcosDaQueda.dll).
+       Entrar: cerimônia de submissão (aba Reputação), presidida por um emissário (emissaryKind + escolta).
+         Preço cobrado ao fim: joinThings (formato <Steel>50</Steel>), joinPrisoner, joinLeaderHediff.
+         Com o Hegemony ativo, a cerimônia faz o juramento de vassalagem.
+       Cargos: ranks, um por RoyalTitleDef (EQ_Titles.xml), do mais baixo ao mais alto. Só o líder do
+         assentamento (líder da ideologia do jogador) tem cargo e favor. Subir = juntar o favorCost do
+         próximo título; a potência manda um emissário para a cerimônia de promoção.
+       favorSources: formas temáticas de ganhar favor (type, amount, per, minQuality, label).
+       stipend = itens enviados a cada stipendIntervalDays.
        Dízimo: carta de escolha a cada titheIntervalDays; expira em titheTimeoutDays (ignorar = penalidade).
-         count das opções é multiplicado pelo número do posto (posto 2 = 2x).
-         {COUNT} no label mostra a quantidade.
-       Sair da potência (romper a fealty) = leaveInfamy de Infâmia (além da traição do Hegemony). -->
+         count é multiplicado por 1,1,2,2,3,3,4 conforme o cargo; {COUNT} no label mostra a quantidade;
+         favor = favor dado ao líder.
+       Sair = leaveInfamy de Infâmia (além da traição do Hegemony). -->
 
   <LetterDef ParentName="CustomChoiceLetterBase">
     <defName>EQ_TitheLetter</defName>
@@ -30,19 +35,41 @@
     <hostileIncidentLabel>Experimento de campo</hostileIncidentLabel>
     <hostileIncidentText>A Ordem do Silêncio Perpétuo decidiu que a sua colônia é um excelente local para um experimento de campo.\n\nVocê não foi consultado. Você é o grupo de controle. Ou a variável. Eles ainda não decidiram.</hostileIncidentText>
     <stipendIntervalDays>10</stipendIntervalDays>
+    <ceremonyLabel>Banca de Admissão</ceremonyLabel>
+    <ceremonyText>A Ordem do Silêncio Perpétuo aceita avaliar a candidatura do assentamento. Um arguidor encapuzado virá presidir a banca: o líder apresenta o projeto, o arguidor não diz nada, e ao fim alguém é levado embora para "validar a metodologia".</ceremonyText>
+    <promotionLabel>Defesa de Tese</promotionLabel>
+    <promotionText>As citações acumuladas pelo líder justificam uma progressão na carreira. A Ordem enviará um arguidor para a defesa. Perguntas serão feitas em silêncio; recomenda-se responder do mesmo jeito.</promotionText>
+    <emissaryKind>EQ_Silencio_Emissario</emissaryKind>
+    <escortKind>EQ_Silencio_Guardiao</escortKind>
+    <escortCount>4</escortCount>
+    <joinPrisoner>true</joinPrisoner>
+    <joinThings>
+      <Silver>300</Silver>
+    </joinThings>
+    <joinPriceNote>O prisioneiro é o "voluntário inaugural" e não volta; a prata é a taxa de inscrição</joinPriceNote>
+    <favorSources>
+      <li>
+        <type>ResearchFinished</type>
+        <amount>1</amount>
+        <label>publicação (pesquisa concluída)</label>
+      </li>
+    </favorSources>
     <ranks>
       <li>
-        <label>Voluntário de Pesquisa</label>
-        <description>Você não é uma cobaia. Oficialmente. Seu crachá diz "colaborador", em letras bem pequenas.</description>
-        <fameRequired>0</fameRequired>
+        <title>EQ_Title_Silencio_1</title>
         <stipend>
           <Bioferrite>15</Bioferrite>
         </stipend>
       </li>
       <li>
-        <label>Pesquisador Associado</label>
-        <description>Você tem direito a uma mesa, um jaleco e a assinar artigos como terceiro autor.</description>
-        <fameRequired>60</fameRequired>
+        <title>EQ_Title_Silencio_2</title>
+        <priceGain>0.03</priceGain>
+        <stipend>
+          <Bioferrite>25</Bioferrite>
+        </stipend>
+      </li>
+      <li>
+        <title>EQ_Title_Silencio_3</title>
         <priceGain>0.05</priceGain>
         <stipend>
           <Bioferrite>30</Bioferrite>
@@ -50,9 +77,15 @@
         </stipend>
       </li>
       <li>
-        <label>Catedrático do Vazio</label>
-        <description>Seus alunos têm medo de você. Seus objetos de estudo também. É assim que se sabe que você chegou lá.</description>
-        <fameRequired>150</fameRequired>
+        <title>EQ_Title_Silencio_4</title>
+        <priceGain>0.08</priceGain>
+        <stipend>
+          <Bioferrite>40</Bioferrite>
+          <MedicineIndustrial>4</MedicineIndustrial>
+        </stipend>
+      </li>
+      <li>
+        <title>EQ_Title_Silencio_5</title>
         <priceGain>0.10</priceGain>
         <stipend>
           <Bioferrite>50</Bioferrite>
@@ -60,9 +93,15 @@
         </stipend>
       </li>
       <li>
-        <label>Arquivista Sênior</label>
-        <description>Você decide o que é lembrado e o que é esquecido. O Revisor lê tudo o que você escreve, inclusive isto.</description>
-        <fameRequired>300</fameRequired>
+        <title>EQ_Title_Silencio_6</title>
+        <priceGain>0.13</priceGain>
+        <stipend>
+          <Bioferrite>65</Bioferrite>
+          <Shard>1</Shard>
+        </stipend>
+      </li>
+      <li>
+        <title>EQ_Title_Silencio_7</title>
         <priceGain>0.15</priceGain>
         <stipend>
           <Bioferrite>80</Bioferrite>
@@ -78,12 +117,14 @@
       <li>
         <label>Entregar um "voluntário" (prisioneiro)</label>
         <type>Prisoner</type>
+        <favor>3</favor>
         <fame>12</fame>
         <resultText>O prisioneiro foi levado para a Ordem. Ninguém perguntou para onde. Ninguém quer saber.</resultText>
       </li>
       <li>
         <label>Pagar a taxa de pesquisa ({COUNT} de prata)</label>
         <type>Silver</type>
+        <favor>1</favor>
         <count>150</count>
         <fame>4</fame>
         <resultText>A Ordem aceitou a prata com a decepção educada de quem esperava algo mais vivo.</resultText>
@@ -112,19 +153,53 @@
     <hostileIncidentLabel>Amostra grátis</hostileIncidentLabel>
     <hostileIncidentText>O Concílio da Hélice enviou uma "amostra grátis" para a sua colônia, pelo ar.\n\nA carta que acompanha diz: "Lamentamos o cancelamento. Segue uma demonstração do que os não-assinantes estão perdendo em proteção imunológica."</hostileIncidentText>
     <stipendIntervalDays>10</stipendIntervalDays>
+    <ceremonyLabel>Assinatura do Contrato de Adesão</ceremonyLabel>
+    <ceremonyText>O Concílio da Hélice enviará um representante comercial com o contrato de adesão (212 páginas, letras miúdas em relevo). O líder assina em nome de todos, paga a taxa e deixa uma amostra genética "para fins de cadastro".</ceremonyText>
+    <promotionLabel>Avaliação de Desempenho</promotionLabel>
+    <promotionText>As ações preferenciais do líder atingiram a meta. Um representante do Concílio virá conduzir a avaliação de desempenho e anunciar a nova posição, com slides.</promotionText>
+    <emissaryKind>EQ_Helice_Emissario</emissaryKind>
+    <escortKind>EQ_Helice_Fiscal</escortKind>
+    <escortCount>4</escortCount>
+    <joinThings>
+      <Silver>800</Silver>
+    </joinThings>
+    <joinLeaderHediff>BloodLoss</joinLeaderHediff>
+    <joinLeaderHediffSeverity>0.35</joinLeaderHediffSeverity>
+    <joinPriceNote>O líder também cede uma generosa amostra de sangue (fica fraco por um tempo)</joinPriceNote>
+    <favorSources>
+      <li>
+        <type>TradeSilver</type>
+        <amount>1</amount>
+        <per>500</per>
+        <label>volume de negócios com o Concílio, em prata</label>
+      </li>
+      <li>
+        <type>SerumUsed</type>
+        <amount>2</amount>
+        <label>aplicação do Soro</label>
+      </li>
+      <li>
+        <type>XenogermImplanted</type>
+        <amount>1</amount>
+        <label>aprimoramento genético de um colono (xenogerme)</label>
+      </li>
+    </favorSources>
     <ranks>
       <li>
-        <label>Cliente Básico</label>
-        <description>Plano gratuito: acesso limitado, anúncios genéticos e nenhuma garantia contra efeitos colaterais.</description>
-        <fameRequired>0</fameRequired>
+        <title>EQ_Title_Helice_1</title>
         <stipend>
           <MedicineIndustrial>4</MedicineIndustrial>
         </stipend>
       </li>
       <li>
-        <label>Assinante Premium</label>
-        <description>Agora sem anúncios! Seus descendentes já nascem com 10% de desconto em melhorias.</description>
-        <fameRequired>60</fameRequired>
+        <title>EQ_Title_Helice_2</title>
+        <priceGain>0.03</priceGain>
+        <stipend>
+          <MedicineIndustrial>6</MedicineIndustrial>
+        </stipend>
+      </li>
+      <li>
+        <title>EQ_Title_Helice_3</title>
         <priceGain>0.05</priceGain>
         <stipend>
           <MedicineIndustrial>6</MedicineIndustrial>
@@ -132,9 +207,15 @@
         </stipend>
       </li>
       <li>
-        <label>Acionista</label>
-        <description>Você tem voto nas reuniões. Ninguém lê o que você vota, mas o voto existe.</description>
-        <fameRequired>150</fameRequired>
+        <title>EQ_Title_Helice_4</title>
+        <priceGain>0.08</priceGain>
+        <stipend>
+          <MedicineIndustrial>8</MedicineIndustrial>
+          <HemogenPack>6</HemogenPack>
+        </stipend>
+      </li>
+      <li>
+        <title>EQ_Title_Helice_5</title>
         <priceGain>0.10</priceGain>
         <stipend>
           <MedicineUltratech>2</MedicineUltratech>
@@ -142,9 +223,15 @@
         </stipend>
       </li>
       <li>
-        <label>Membro do Conselho</label>
-        <description>Você decide quais linhagens são "premium" e quais são "descontinuadas". Durma bem.</description>
-        <fameRequired>300</fameRequired>
+        <title>EQ_Title_Helice_6</title>
+        <priceGain>0.13</priceGain>
+        <stipend>
+          <MedicineUltratech>3</MedicineUltratech>
+          <Neutroamine>10</Neutroamine>
+        </stipend>
+      </li>
+      <li>
+        <title>EQ_Title_Helice_7</title>
         <priceGain>0.15</priceGain>
         <stipend>
           <MedicineUltratech>4</MedicineUltratech>
@@ -160,6 +247,7 @@
       <li>
         <label>Pagar a mensalidade ({COUNT} de prata)</label>
         <type>Silver</type>
+        <favor>2</favor>
         <count>200</count>
         <fame>6</fame>
         <resultText>Pagamento confirmado. Você ganhou 12 pontos de fidelidade, que não servem para nada.</resultText>
@@ -167,6 +255,7 @@
       <li>
         <label>Ceder uma "versão base" para testes (prisioneiro)</label>
         <type>Prisoner</type>
+        <favor>3</favor>
         <fame>10</fame>
         <resultText>O prisioneiro foi "migrado para um plano superior". O Concílio agradece a preferência.</resultText>
       </li>
@@ -194,19 +283,49 @@
     <hostileIncidentLabel>Recall compulsório</hostileIncidentLabel>
     <hostileIncidentText>A Irmandade da Forja abriu um processo de recall contra a sua colônia.\n\nO equipamento de recolhimento já foi despachado. Ele é automático, armado e não aceita reclamações.</hostileIncidentText>
     <stipendIntervalDays>10</stipendIntervalDays>
+    <ceremonyLabel>Rito de Ativação da Garantia</ceremonyLabel>
+    <ceremonyText>A Irmandade da Forja enviará um inspetor para ativar a garantia do assentamento. O líder recita o termo de uso de cor, o inspetor carimba, e as peças exigidas são recolhidas "para homologação".</ceremonyText>
+    <promotionLabel>Inspeção de Certificação</promotionLabel>
+    <promotionText>Os selos de garantia do líder foram conferidos e estão dentro da validade. Um inspetor da Irmandade virá aplicar a certificação do próximo grau, com direito a carimbo novo.</promotionText>
+    <emissaryKind>EQ_Forja_Emissario</emissaryKind>
+    <escortKind>EQ_Forja_Cavaleiro</escortKind>
+    <escortCount>4</escortCount>
+    <joinThings>
+      <ComponentIndustrial>12</ComponentIndustrial>
+      <Steel>150</Steel>
+    </joinThings>
+    <joinPriceNote>As peças são levadas para homologação e jamais devolvidas</joinPriceNote>
+    <favorSources>
+      <li>
+        <type>QualityCrafted</type>
+        <amount>1</amount>
+        <minQuality>Excellent</minQuality>
+        <per>3</per>
+        <label>fabricação de qualidade excelente ou melhor</label>
+      </li>
+      <li>
+        <type>QualityCrafted</type>
+        <amount>2</amount>
+        <minQuality>Masterwork</minQuality>
+        <label>obra-prima fabricada na colônia</label>
+      </li>
+    </favorSources>
     <ranks>
       <li>
-        <label>Aprendiz de Manutenção</label>
-        <description>Você pode olhar as máquinas. Tocar, ainda não. Leia o manual. De novo.</description>
-        <fameRequired>0</fameRequired>
+        <title>EQ_Title_Forja_1</title>
         <stipend>
           <Steel>50</Steel>
         </stipend>
       </li>
       <li>
-        <label>Técnico Licenciado</label>
-        <description>Você recebeu sua licença, seu macacão e uma chave inglesa abençoada. Não a perca.</description>
-        <fameRequired>60</fameRequired>
+        <title>EQ_Title_Forja_2</title>
+        <priceGain>0.03</priceGain>
+        <stipend>
+          <Steel>75</Steel>
+        </stipend>
+      </li>
+      <li>
+        <title>EQ_Title_Forja_3</title>
         <priceGain>0.05</priceGain>
         <stipend>
           <Steel>75</Steel>
@@ -214,9 +333,15 @@
         </stipend>
       </li>
       <li>
-        <label>Cavaleiro da Garantia</label>
-        <description>Você agora pode confiscar tecnologia alheia "para a segurança de todos". Use com moderação. Ou não.</description>
-        <fameRequired>150</fameRequired>
+        <title>EQ_Title_Forja_4</title>
+        <priceGain>0.08</priceGain>
+        <stipend>
+          <Steel>100</Steel>
+          <ComponentIndustrial>4</ComponentIndustrial>
+        </stipend>
+      </li>
+      <li>
+        <title>EQ_Title_Forja_5</title>
         <priceGain>0.10</priceGain>
         <stipend>
           <Plasteel>30</Plasteel>
@@ -224,9 +349,15 @@
         </stipend>
       </li>
       <li>
-        <label>Engenheiro-Mestre</label>
-        <description>Você escreve os manuais. Os outros os recitam. As máquinas, enfim, respeitam você.</description>
-        <fameRequired>300</fameRequired>
+        <title>EQ_Title_Forja_6</title>
+        <priceGain>0.13</priceGain>
+        <stipend>
+          <Plasteel>40</Plasteel>
+          <ComponentSpacer>1</ComponentSpacer>
+        </stipend>
+      </li>
+      <li>
+        <title>EQ_Title_Forja_7</title>
         <priceGain>0.15</priceGain>
         <stipend>
           <Plasteel>50</Plasteel>
@@ -242,6 +373,7 @@
       <li>
         <label>Entregar {COUNT} componentes</label>
         <type>Things</type>
+        <favor>3</favor>
         <thingDef>ComponentIndustrial</thingDef>
         <count>3</count>
         <fame>8</fame>
@@ -250,6 +382,7 @@
       <li>
         <label>Pagar a taxa de licença ({COUNT} de prata)</label>
         <type>Silver</type>
+        <favor>1</favor>
         <count>250</count>
         <fame>3</fame>
         <resultText>Taxa paga. O cavaleiro carimbou seu formulário com um pouco de decepção.</resultText>
@@ -277,19 +410,41 @@
     <hostileIncidentLabel>Nota dissonante</hostileIncidentLabel>
     <hostileIncidentText>O Coro Ascendente dedicou uma canção à sua colônia. Uma só nota, sustentada, dentro da cabeça de todos.\n\nÉ a opinião deles sobre você, em Si bemol.</hostileIncidentText>
     <stipendIntervalDays>10</stipendIntervalDays>
+    <ceremonyLabel>Audição Solene</ceremonyLabel>
+    <ceremonyText>O Coro Ascendente concederá uma audição. Um mestre de cerimônias virá ouvir o líder cantar o juramento, em pé, diante de todos. O ouro paga a taxa de afinação; desafinar não é recomendado.</ceremonyText>
+    <promotionLabel>Recital de Ascensão</promotionLabel>
+    <promotionText>Os aplausos acumulados pelo líder chegaram aos ouvidos certos. Um mestre de cerimônias virá presidir o recital e anunciar a nova posição no Coro.</promotionText>
+    <emissaryKind>EQ_Coro_Emissario</emissaryKind>
+    <escortKind>EQ_Coro_Tenor</escortKind>
+    <escortCount>4</escortCount>
+    <joinThings>
+      <Gold>40</Gold>
+      <Silver>400</Silver>
+    </joinThings>
+    <joinPriceNote>O ouro é a taxa de afinação; a prata cobre a liteira</joinPriceNote>
+    <favorSources>
+      <li>
+        <type>RitualFinished</type>
+        <amount>1</amount>
+        <label>concerto (ritual concluído na colônia)</label>
+      </li>
+    </favorSources>
     <ranks>
       <li>
-        <label>Ouvinte</label>
-        <description>Você pode assistir aos concertos. De pé, no fundo, sem aplaudir antes da hora.</description>
-        <fameRequired>0</fameRequired>
+        <title>EQ_Title_Coro_1</title>
         <stipend>
           <Silver>100</Silver>
         </stipend>
       </li>
       <li>
-        <label>Corista</label>
-        <description>Você canta no coro. Ninguém ouve sua voz individualmente, e é assim que deve ser.</description>
-        <fameRequired>60</fameRequired>
+        <title>EQ_Title_Coro_2</title>
+        <priceGain>0.03</priceGain>
+        <stipend>
+          <Silver>150</Silver>
+        </stipend>
+      </li>
+      <li>
+        <title>EQ_Title_Coro_3</title>
         <priceGain>0.05</priceGain>
         <stipend>
           <Silver>150</Silver>
@@ -297,9 +452,15 @@
         </stipend>
       </li>
       <li>
-        <label>Solista</label>
-        <description>Você tem um solo. Um. Curto. Não desafine, ou será "reafinado".</description>
-        <fameRequired>150</fameRequired>
+        <title>EQ_Title_Coro_4</title>
+        <priceGain>0.08</priceGain>
+        <stipend>
+          <Silver>200</Silver>
+          <Gold>15</Gold>
+        </stipend>
+      </li>
+      <li>
+        <title>EQ_Title_Coro_5</title>
         <priceGain>0.10</priceGain>
         <stipend>
           <Gold>20</Gold>
@@ -307,9 +468,15 @@
         </stipend>
       </li>
       <li>
-        <label>Regente</label>
-        <description>Você rege uma ala do Coro. Mil vozes cantam ao seu gesto, e nenhuma ousa perguntar a letra.</description>
-        <fameRequired>300</fameRequired>
+        <title>EQ_Title_Coro_6</title>
+        <priceGain>0.13</priceGain>
+        <stipend>
+          <Gold>30</Gold>
+          <Jade>15</Jade>
+        </stipend>
+      </li>
+      <li>
+        <title>EQ_Title_Coro_7</title>
         <priceGain>0.15</priceGain>
         <stipend>
           <Gold>40</Gold>
@@ -325,6 +492,7 @@
       <li>
         <label>Enviar alguém para o "treinamento vocal"</label>
         <type>Colonist</type>
+        <favor>8</favor>
         <preferChildren>true</preferChildren>
         <fame>25</fame>
         <resultText>A liteira partiu com um passageiro a mais. Dizem que as vozes do Coro ficam mais bonitas a cada ano.</resultText>
@@ -332,6 +500,7 @@
       <li>
         <label>Pagar em ouro ({COUNT})</label>
         <type>Things</type>
+        <favor>2</favor>
         <thingDef>Gold</thingDef>
         <count>15</count>
         <fame>5</fame>

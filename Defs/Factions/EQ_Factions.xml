@@ -27,6 +27,14 @@
         <li>(100000,10000)</li>
       </points>
     </maxPawnCostPerTotalPointsCurve>
+    <!-- Cargos (sistema de títulos da Royalty): herança padrão; tags e nome do favor em cada facção -->
+    <royalTitleInheritanceWorkerClass>RoyalTitleInheritanceWorker</royalTitleInheritanceWorkerClass>
+    <royalTitleInheritanceRelations>
+      <li>Child</li>
+      <li>Spouse</li>
+      <li>Sibling</li>
+      <li>Parent</li>
+    </royalTitleInheritanceRelations>
   </FactionDef>
 
   <!-- =====================================================================
@@ -43,6 +51,11 @@
     <categoryTag>EQ_Silencio</categoryTag>
     <techLevel>Industrial</techLevel>
     <factionIconPath>EcosDaQueda/Icons/Silencio</factionIconPath>
+    <royalFavorLabel>citações</royalFavorLabel>
+    <royalFavorIconPath>EcosDaQueda/Icons/Silencio</royalFavorIconPath>
+    <royalTitleTags>
+      <li>EQ_Title_Silencio</li>
+    </royalTitleTags>
     <settlementNameMaker>EQ_NamerSettlement_Silencio</settlementNameMaker>
     <canPsychicRitualSiege>true</canPsychicRitualSiege>
     <colorSpectrum>
@@ -139,6 +152,11 @@
     <categoryTag>EQ_Helice</categoryTag>
     <techLevel>Spacer</techLevel>
     <factionIconPath>EcosDaQueda/Icons/Helice</factionIconPath>
+    <royalFavorLabel>ações preferenciais</royalFavorLabel>
+    <royalFavorIconPath>EcosDaQueda/Icons/Helice</royalFavorIconPath>
+    <royalTitleTags>
+      <li>EQ_Title_Helice</li>
+    </royalTitleTags>
     <settlementNameMaker>EQ_NamerSettlement_Helice</settlementNameMaker>
     <colorSpectrum>
       <li>(0.20, 0.78, 0.74)</li>
@@ -159,7 +177,6 @@
       <xenotypeChances>
         <Hussar>0.12</Hussar>
         <Genie>0.10</Genie>
-        <Highmate>0.06</Highmate>
         <Sanguophage>0.02</Sanguophage>
         <AG_Helixien MayRequire="sarg.alphagenes">0.06</AG_Helixien>
         <AG_Drakonori MayRequire="sarg.alphagenes">0.03</AG_Drakonori>
@@ -236,6 +253,11 @@
     <categoryTag>EQ_Forja</categoryTag>
     <techLevel>Spacer</techLevel>
     <factionIconPath>EcosDaQueda/Icons/Forja</factionIconPath>
+    <royalFavorLabel>selos de garantia</royalFavorLabel>
+    <royalFavorIconPath>EcosDaQueda/Icons/Forja</royalFavorIconPath>
+    <royalTitleTags>
+      <li>EQ_Title_Forja</li>
+    </royalTitleTags>
     <settlementNameMaker>EQ_NamerSettlement_Forja</settlementNameMaker>
     <colorSpectrum>
       <li>(0.95, 0.58, 0.22)</li>
@@ -321,6 +343,11 @@
     <categoryTag>EQ_Coro</categoryTag>
     <techLevel>Spacer</techLevel>
     <factionIconPath>EcosDaQueda/Icons/Coro</factionIconPath>
+    <royalFavorLabel>aplausos</royalFavorLabel>
+    <royalFavorIconPath>EcosDaQueda/Icons/Coro</royalFavorIconPath>
+    <royalTitleTags>
+      <li>EQ_Title_Coro</li>
+    </royalTitleTags>
     <settlementNameMaker>EQ_NamerSettlement_Coro</settlementNameMaker>
     <colorSpectrum>
       <li>(0.80, 0.48, 1.00)</li>

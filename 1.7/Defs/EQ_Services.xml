@@ -2,7 +2,7 @@
 <Defs>
 
   <!-- Serviços exclusivos para membros (aba Reputação › botão "Serviços").
-       minRank: 0 = 1º posto ... 3 = 4º posto. cooldownDays = recarga.
+       minRank: 0 = 1º cargo ... 6 = 7º cargo. favor = favor dado ao líder. cooldownDays = recarga.
        Custos: silver, requiresHeldEntity (entidade numa plataforma de contenção), requiresPrisoner.
        Efeitos: things (<Steel>50</Steel>), callAid (reforço militar da potência), researchPoints
        (soma à pesquisa atual), colonistThought (humor para todos os colonos), fame. -->
@@ -94,6 +94,7 @@
       <Silver>300</Silver>
     </things>
     <fame>20</fame>
+    <favor>3</favor>
     <resultText>A entidade foi recolhida por silentes de luvas grossas. O pagamento chegou com um recibo: "1 (um) espécime, estado: irritado".</resultText>
   </EcosDaQueda.FactionServiceDef>
 
@@ -103,7 +104,7 @@
     <description>Os arquivistas pesquisam o tema que sua colônia está estudando e enviam as respostas, adiantando bastante a pesquisa atual.\n\nAs respostas vêm com 90 notas de rodapé e uma cobrança por atraso de um livro que você nunca pegou.</description>
     <faction>EQ_Faction_Silencio</faction>
     <order>2</order>
-    <minRank>1</minRank>
+    <minRank>2</minRank>
     <cooldownDays>12</cooldownDays>
     <silver>400</silver>
     <researchPoints>1500</researchPoints>
@@ -118,7 +119,7 @@
     <description>Uma dose do Soro, o carro-chefe do Concílio: transforma quem toma num xenotipo de elite aleatório. Uma em cada quatro doses entrega uma "versão alternativa".\n\nPreço especial para assinantes. Leia a bula. Ou não leia; não muda nada.</description>
     <faction>EQ_Faction_Helice</faction>
     <order>1</order>
-    <minRank>1</minRank>
+    <minRank>2</minRank>
     <cooldownDays>15</cooldownDays>
     <silver>900</silver>
     <things>
@@ -133,7 +134,7 @@
     <description>O Concílio envia um soro mecanita curador, capaz de consertar a pior condição de saúde de um colono. Exclusivo para acionistas.\n\n"Sua saúde é o nosso ativo."</description>
     <faction>EQ_Faction_Helice</faction>
     <order>2</order>
-    <minRank>2</minRank>
+    <minRank>4</minRank>
     <cooldownDays>30</cooldownDays>
     <silver>1000</silver>
     <things>
@@ -150,7 +151,7 @@
     <description>A Irmandade envia imediatamente um esquadrão de cavaleiros, técnicos e mechs para defender sua colônia.\n\nA garantia cobre invasões, cercos e infestações. Não cobre "mau uso", definido como qualquer coisa que o inspetor não goste.</description>
     <faction>EQ_Faction_Forja</faction>
     <order>1</order>
-    <minRank>1</minRank>
+    <minRank>2</minRank>
     <cooldownDays>12</cooldownDays>
     <silver>300</silver>
     <callAid>true</callAid>
@@ -164,7 +165,7 @@
     <description>Um carregamento de peças aprovadas pela Irmandade: componentes avançados e plastaço. Só peças originais, com lacre e número de série.</description>
     <faction>EQ_Faction_Forja</faction>
     <order>2</order>
-    <minRank>2</minRank>
+    <minRank>4</minRank>
     <cooldownDays>20</cooldownDays>
     <silver>800</silver>
     <things>
@@ -195,7 +196,7 @@
     <description>O Maestro envia tenores de guerra e sopranos incandescentes para lutar ao seu lado. Eles chegam cantando, e os inimigos geralmente saem gritando.</description>
     <faction>EQ_Faction_Coro</faction>
     <order>2</order>
-    <minRank>2</minRank>
+    <minRank>4</minRank>
     <cooldownDays>15</cooldownDays>
     <silver>500</silver>
     <callAid>true</callAid>

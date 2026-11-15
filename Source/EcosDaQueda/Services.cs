@@ -16,6 +16,8 @@ namespace EcosDaQueda
         public FactionDef faction;
         /// <summary>Posto mínimo (0 = primeiro posto).</summary>
         public int minRank;
+        /// <summary>Favor dado ao líder ao usar o serviço.</summary>
+        public int favor;
         public float cooldownDays = 10f;
         public int order;
 
@@ -76,7 +78,7 @@ namespace EcosDaQueda
             if (alg.memberOf.HostileTo(Faction.OfPlayer))
                 return "Potência hostil";
             if (alg.RankIndex < s.minRank)
-                return "Exige o posto " + alg.Def.ranks[Math.Min(s.minRank, alg.Def.ranks.Count - 1)].label;
+                return "Exige o cargo " + alg.Def.RankLabel(Math.Min(s.minRank, alg.Def.ranks.Count - 1));
             int cd = CooldownTicksLeft(s);
             if (cd > 0)
                 return "Disponível em " + cd.ToStringTicksToPeriod();
@@ -159,6 +161,8 @@ namespace EcosDaQueda
             }
             if (s.fame > 0f)
                 WorldComponent_Reputation.Current?.Record(f, s.fame, 0f);
+            if (s.favor > 0)
+                EQFavor.Award(f, s.favor, s.label);
 
             lastUsed[s.defName] = Find.TickManager.TicksGame;
             Messages.Message(s.resultText.NullOrEmpty() ? s.LabelCap + ": concluído." : s.resultText, MessageTypeDefOf.PositiveEvent);
@@ -228,6 +232,7 @@ namespace EcosDaQueda
             foreach (Gene g in usedBy.genes.Xenogenes.ToList())
                 usedBy.genes.RemoveGene(g);
             usedBy.genes.SetXenotype(chosen);
+            EQFavor.Notify(FavorEventType.SerumUsed);
 
             string text = string.Format(fail ? Props.failText : Props.successText, usedBy.LabelShort, chosen.label);
             Find.LetterStack.ReceiveLetter(fail ? "O Soro: efeito colateral" : "O Soro: sucesso", text,

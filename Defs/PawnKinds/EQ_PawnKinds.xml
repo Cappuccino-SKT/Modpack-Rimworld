@@ -378,4 +378,49 @@
     </modExtensions>
   </PawnKindDef>
 
+  <!-- =====================================================================
+       EMISSÁRIOS: presidem as cerimônias de submissão e de promoção na colônia do jogador.
+       ===================================================================== -->
+  <PawnKindDef ParentName="MercenaryEliteBase" Name="EQ_EmissarioBase" Abstract="True">
+    <combatPower>120</combatPower>
+    <apparelMoney>2000~3500</apparelMoney>
+    <weaponMoney>300~700</weaponMoney>
+    <weaponTags Inherit="False">
+      <li>Gun</li>
+    </weaponTags>
+    <initialResistanceRange>40~60</initialResistanceRange>
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="EQ_EmissarioBase">
+    <defName>EQ_Silencio_Emissario</defName>
+    <label>arguidor silente</label>
+    <labelPlural>arguidores silentes</labelPlural>
+    <defaultFactionDef>EQ_Faction_Silencio</defaultFactionDef>
+    <apparelColor>(55,55,62)</apparelColor>
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="EQ_EmissarioBase">
+    <defName>EQ_Helice_Emissario</defName>
+    <label>representante comercial</label>
+    <labelPlural>representantes comerciais</labelPlural>
+    <defaultFactionDef>EQ_Faction_Helice</defaultFactionDef>
+    <apparelColor>(60,170,160)</apparelColor>
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="EQ_EmissarioBase">
+    <defName>EQ_Forja_Emissario</defName>
+    <label>inspetor de garantia</label>
+    <labelPlural>inspetores de garantia</labelPlural>
+    <defaultFactionDef>EQ_Faction_Forja</defaultFactionDef>
+    <apparelColor>(200,120,50)</apparelColor>
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="EQ_EmissarioBase">
+    <defName>EQ_Coro_Emissario</defName>
+    <label>mestre de cerimônias</label>
+    <labelPlural>mestres de cerimônias</labelPlural>
+    <defaultFactionDef>EQ_Faction_Coro</defaultFactionDef>
+    <apparelColor>(170,100,220)</apparelColor>
+  </PawnKindDef>
+
 </Defs>

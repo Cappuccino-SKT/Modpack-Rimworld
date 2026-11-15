@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <!-- Cargos das potências, sobre o sistema de títulos da Royalty.
+       Só o LÍDER do assentamento (líder da ideologia do jogador) acumula favor e sobe de cargo.
+       favorCost = favor necessário para passar do cargo anterior para este.
+       O 1º cargo é concedido pela cerimônia de submissão; os seguintes, por cerimônias de promoção
+       (um emissário da potência vem presidir). Ligação com a potência: tag EQ_Title_<potência>
+       (royalTitleTags na FactionDef). Benefícios por cargo: EQ_Allegiance.xml (ranks, na mesma ordem). -->
+
+  <QuestScriptDef>
+    <defName>EQ_Ceremony</defName>
+    <rootSelectionWeight>0</rootSelectionWeight>
+    <rootMinPoints>0</rootMinPoints>
+    <everAcceptableInSpace>true</everAcceptableInSpace>
+    <questNameRules>
+      <rulesStrings>
+        <li>questName->[ceremonyName]: [pawn_nameDef], [newTitle]</li>
+      </rulesStrings>
+    </questNameRules>
+    <questDescriptionRules>
+      <rulesStrings>
+        <li>questDescription->[ceremonyText]\n\n[faction_name] enviará um emissário de nave para presidir a cerimônia com [pawn_nameDef], que receberá o cargo de [newTitle].\n\n[priceText]\n\nQuanto mais gente da colônia assistir, melhor a impressão (e maior a chance de favor extra). Se o emissário ou a escolta forem feridos, haverá consequências diplomáticas. Se a cerimônia for perdida ou falhar, é possível tentar de novo.</li>
+      </rulesStrings>
+    </questDescriptionRules>
+    <root Class="EcosDaQueda.QuestNode_Root_EQCeremony" />
+  </QuestScriptDef>
+
+  <!-- ===================================================================== SILÊNCIO — favor: citações -->
+  <RoyalTitleDef Abstract="True" Name="EQ_TitleBase">
+    <awardThought>GainedTitle</awardThought>
+    <lostThought>LostTitle</lostThought>
+    <canBeInherited>false</canBeInherited>
+    <changeHeirQuestPoints>1000</changeHeirQuestPoints>
+    <allowDignifiedMeditationFocus>False</allowDignifiedMeditationFocus>
+  </RoyalTitleDef>
+
+  <RoyalTitleDef Abstract="True" Name="EQ_TitleSilencio" ParentName="EQ_TitleBase">
+    <tags><li>EQ_Title_Silencio</li></tags>
+  </RoyalTitleDef>
+
+  <RoyalTitleDef ParentName="EQ_TitleSilencio">
+    <defName>EQ_Title_Silencio_1</defName>
+    <label>voluntário de pesquisa</label>
+    <labelFemale>voluntária de pesquisa</labelFemale>
+    <description>Você não é uma cobaia. Oficialmente. Seu crachá diz "colaborador", em letras bem pequenas.</description>
+    <seniority>100</seniority>
+    <favorCost>4</favorCost>
+  </RoyalTitleDef>
+  <RoyalTitleDef ParentName="EQ_TitleSilencio">
+    <defName>EQ_Title_Silencio_2</defName>
+    <label>assistente de campo</label>
+    <description>Você carrega as jaulas, anota os gritos e assina o termo de responsabilidade. O termo tem quarenta páginas e nenhuma delas protege você.</description>
+    <seniority>200</seniority>
+    <favorCost>6</favorCost>
+  </RoyalTitleDef>
+  <RoyalTitleDef ParentName="EQ_TitleSilencio">
+    <defName>EQ_Title_Silencio_3</defName>
+    <label>pesquisador associado</label>
+    <labelFemale>pesquisadora associada</labelFemale>
+    <description>Você tem direito a uma mesa, um jaleco e a assinar artigos como terceiro autor.</description>
+    <seniority>300</seniority>
+    <favorCost>8</favorCost>
+  </RoyalTitleDef>
+  <RoyalTitleDef ParentName="EQ_TitleSilencio">
+    <defName>EQ_Title_Silencio_4</defName>
+    <label>doutor em vazio</label>
+    <labelFemale>doutora em vazio</labelFemale>
+    <description>Sua tese foi aprovada por uma banca de cinco avaliadores. Três ainda dormem bem. Você pode orientar voluntários, e eles nem sempre voltam.</description>
+    <seniority>400</seniority>
+    <favorCost>10</favorCost>
+  </RoyalTitleDef>
+  <RoyalTitleDef ParentName="EQ_TitleSilencio">
+    <defName>EQ_Title_Silencio_5</defName>
+    <label>catedrático do vazio</label>
+    <labelFemale>catedrática do vazio</labelFemale>
+    <description>Seus alunos têm medo de você. Seus objetos de estudo também. É assim que se sabe que você chegou lá.</description>
+    <seniority>500</seniority>
+    <favorCost>14</favorCost>
+  </RoyalTitleDef>
+  <RoyalTitleDef ParentName="EQ_TitleSilencio">
+    <defName>EQ_Title_Silencio_6</defName>
+    <label>arquivista sênior</label>
+    <description>Você decide o que é lembrado e o que é esquecido. O Revisor lê tudo o que você escreve, inclusive isto.</description>
+    <seniority>600</seniority>
+    <favorCost>18</favorCost>
+  </RoyalTitleDef>
+  <RoyalTitleDef ParentName="EQ_TitleSilencio">
+    <defName>EQ_Title_Silencio_7</defName>
+    <label>parecerista anônimo</label>
+    <labelFemale>parecerista anônima</labelFemale>
+    <description>Ninguém sabe quem você é, e todos temem o seu parecer. Você rejeita teses, carreiras e, quando necessário, pessoas. Sem direito a recurso.</description>
+    <seniority>700</seniority>
+    <favorCost>24</favorCost>
+  </RoyalTitleDef>
+
+  <!-- ===================================================================== HÉLICE — favor: ações preferenciais -->
+  <RoyalTitleDef Abstract="True" Name="EQ_TitleHelice" ParentName="EQ_TitleBase">
+    <tags><li>EQ_Title_Helice</li></tags>
+  </RoyalTitleDef>
+
+  <RoyalTitleDef ParentName="EQ_TitleHelice">
+    <defName>EQ_Title_Helice_1</defName>
+    <label>cliente básico</label>
+    <labelFemale>cliente básica</labelFemale>
+    <description>Plano de entrada: acesso limitado, anúncios genéticos e nenhuma garantia contra efeitos colaterais.</description>
+    <seniority>100</seniority>
+    <favorCost>4</favorCost>
+  </RoyalTitleDef>
+  <RoyalTitleDef ParentName="EQ_TitleHelice">
+    <defName>EQ_Title_Helice_2</defName>
+    <label>assinante premium</label>
+    <description>Agora sem anúncios! Seus descendentes já nascem com 10% de desconto em melhorias.</description>
+    <seniority>200</seniority>
+    <favorCost>6</favorCost>
+  </RoyalTitleDef>
+  <RoyalTitleDef ParentName="EQ_TitleHelice">
+    <defName>EQ_Title_Helice_3</defName>
+    <label>franqueado</label>
+    <labelFemale>franqueada</labelFemale>
+    <description>Sua colônia agora é uma unidade licenciada. Você paga royalties sobre o próprio DNA e precisa usar o uniforme nas fotos.</description>
+    <seniority>300</seniority>
+    <favorCost>8</favorCost>
+  </RoyalTitleDef>
+  <RoyalTitleDef ParentName="EQ_TitleHelice">
+    <defName>EQ_Title_Helice_4</defName>
+    <label>gerente regional</label>
+    <description>Você tem metas trimestrais de aprimoramento e uma planilha de quem ainda é "versão base". A planilha tem uma coluna chamada "providências".</description>
+    <seniority>400</seniority>
+    <favorCost>10</favorCost>
+  </RoyalTitleDef>
+  <RoyalTitleDef ParentName="EQ_TitleHelice">
+    <defName>EQ_Title_Helice_5</defName>
+    <label>acionista</label>
+    <description>Você tem voto nas reuniões. Ninguém lê o que você vota, mas o voto existe.</description>
+    <seniority>500</seniority>
+    <favorCost>14</favorCost>
+  </RoyalTitleDef>
+  <RoyalTitleDef ParentName="EQ_TitleHelice">
+    <defName>EQ_Title_Helice_6</defName>
+    <label>diretor de linhagem</label>
+    <labelFemale>diretora de linhagem</labelFemale>
+    <description>Você aprova o catálogo da próxima geração. Os modelos reprovados recebem uma carta muito gentil.</description>
+    <seniority>600</seniority>
+    <favorCost>18</favorCost>
+  </RoyalTitleDef>
+  <RoyalTitleDef ParentName="EQ_TitleHelice">
+    <defName>EQ_Title_Helice_7</defName>
+    <label>membro do conselho</label>
+    <description>Você decide quais linhagens são "premium" e quais são "descontinuadas". Durma bem.</description>
+    <seniority>700</seniority>
+    <favorCost>24</favorCost>
+  </RoyalTitleDef>
+
+  <!-- ===================================================================== FORJA — favor: selos de garantia -->
+  <RoyalTitleDef Abstract="True" Name="EQ_TitleForja" ParentName="EQ_TitleBase">
+    <tags><li>EQ_Title_Forja</li></tags>
+  </RoyalTitleDef>
+
+  <RoyalTitleDef ParentName="EQ_TitleForja">
+    <defName>EQ_Title_Forja_1</defName>
+    <label>aprendiz de manutenção</label>
+    <description>Você pode olhar as máquinas. Tocar, ainda não. Leia o manual. De novo.</description>
+    <seniority>100</seniority>
+    <favorCost>4</favorCost>
+  </RoyalTitleDef>
+  <RoyalTitleDef ParentName="EQ_TitleForja">
+    <defName>EQ_Title_Forja_2</defName>
+    <label>técnico licenciado</label>
+    <labelFemale>técnica licenciada</labelFemale>
+    <description>Você recebeu sua licença, seu macacão e uma chave inglesa abençoada. Não a perca.</description>
+    <seniority>200</seniority>
+    <favorCost>6</favorCost>
+  </RoyalTitleDef>
+  <RoyalTitleDef ParentName="EQ_TitleForja">
+    <defName>EQ_Title_Forja_3</defName>
+    <label>inspetor de campo</label>
+    <labelFemale>inspetora de campo</labelFemale>
+    <description>Você tem uma prancheta, um carimbo e o poder de reprovar qualquer coisa com parafusos. Quase tudo tem parafusos.</description>
+    <seniority>300</seniority>
+    <favorCost>8</favorCost>
+  </RoyalTitleDef>
+  <RoyalTitleDef ParentName="EQ_TitleForja">
+    <defName>EQ_Title_Forja_4</defName>
+    <label>cavaleiro da garantia</label>
+    <labelFemale>dama da garantia</labelFemale>
+    <description>Você agora pode confiscar tecnologia alheia "para a segurança de todos". Use com moderação. Ou não.</description>
+    <seniority>400</seniority>
+    <favorCost>10</favorCost>
+  </RoyalTitleDef>
+  <RoyalTitleDef ParentName="EQ_TitleForja">
+    <defName>EQ_Title_Forja_5</defName>
+    <label>paladino do recall</label>
+    <labelFemale>paladina do recall</labelFemale>
+    <description>Quando um produto apresenta defeito, você vai buscá-lo. Quando uma pessoa apresenta defeito, você também vai.</description>
+    <seniority>500</seniority>
+    <favorCost>14</favorCost>
+  </RoyalTitleDef>
+  <RoyalTitleDef ParentName="EQ_TitleForja">
+    <defName>EQ_Title_Forja_6</defName>
+    <label>engenheiro-mestre</label>
+    <labelFemale>engenheira-mestra</labelFemale>
+    <description>Você escreve os manuais. Os outros os recitam. As máquinas, enfim, respeitam você.</description>
+    <seniority>600</seniority>
+    <favorCost>18</favorCost>
+  </RoyalTitleDef>
+  <RoyalTitleDef ParentName="EQ_TitleForja">
+    <defName>EQ_Title_Forja_7</defName>
+    <label>guardião do manual</label>
+    <labelFemale>guardiã do manual</labelFemale>
+    <description>Você guarda a primeira edição, a que ninguém mais pode ler. Dizem que a última página é só um número de telefone que não atende.</description>
+    <seniority>700</seniority>
+    <favorCost>24</favorCost>
+  </RoyalTitleDef>
+
+  <!-- ===================================================================== CORO — favor: aplausos -->
+  <RoyalTitleDef Abstract="True" Name="EQ_TitleCoro" ParentName="EQ_TitleBase">
+    <tags><li>EQ_Title_Coro</li></tags>
+  </RoyalTitleDef>
+
+  <RoyalTitleDef ParentName="EQ_TitleCoro">
+    <defName>EQ_Title_Coro_1</defName>
+    <label>ouvinte</label>
+    <description>Você pode assistir aos concertos. De pé, no fundo, sem aplaudir antes da hora.</description>
+    <seniority>100</seniority>
+    <favorCost>4</favorCost>
+  </RoyalTitleDef>
+  <RoyalTitleDef ParentName="EQ_TitleCoro">
+    <defName>EQ_Title_Coro_2</defName>
+    <label>corista</label>
+    <description>Você canta no coro. Ninguém ouve sua voz individualmente, e é assim que deve ser.</description>
+    <seniority>200</seniority>
+    <favorCost>6</favorCost>
+  </RoyalTitleDef>
+  <RoyalTitleDef ParentName="EQ_TitleCoro">
+    <defName>EQ_Title_Coro_3</defName>
+    <label>solista</label>
+    <description>Você tem um solo. Um. Curto. Não desafine, ou será "reafinado".</description>
+    <seniority>300</seniority>
+    <favorCost>8</favorCost>
+  </RoyalTitleDef>
+  <RoyalTitleDef ParentName="EQ_TitleCoro">
+    <defName>EQ_Title_Coro_4</defName>
+    <label>spalla</label>
+    <description>Você se senta na primeira cadeira e afina os outros. Quem desafina olha para você com medo, e está certo.</description>
+    <seniority>400</seniority>
+    <favorCost>10</favorCost>
+  </RoyalTitleDef>
+  <RoyalTitleDef ParentName="EQ_TitleCoro">
+    <defName>EQ_Title_Coro_5</defName>
+    <label>regente</label>
+    <description>Você rege uma ala do Coro. Mil vozes cantam ao seu gesto, e nenhuma ousa perguntar a letra.</description>
+    <seniority>500</seniority>
+    <favorCost>14</favorCost>
+  </RoyalTitleDef>
+  <RoyalTitleDef ParentName="EQ_TitleCoro">
+    <defName>EQ_Title_Coro_6</defName>
+    <label>mestre de capela</label>
+    <labelFemale>mestra de capela</labelFemale>
+    <description>Você escolhe o repertório de uma província inteira e quais crianças têm "ouvido promissor". As famílias agradecem. Elas sabem que devem agradecer.</description>
+    <seniority>600</seniority>
+    <favorCost>18</favorCost>
+  </RoyalTitleDef>
+  <RoyalTitleDef ParentName="EQ_TitleCoro">
+    <defName>EQ_Title_Coro_7</defName>
+    <label>maestro honorário</label>
+    <labelFemale>maestrina honorária</labelFemale>
+    <description>O Maestro Supremo chama você pelo nome. Uma vez, em público. Dizem que é a maior honra do Coro, e também o último aviso.</description>
+    <seniority>700</seniority>
+    <favorCost>24</favorCost>
+  </RoyalTitleDef>
+
+</Defs>
