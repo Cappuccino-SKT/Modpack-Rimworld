@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <!-- ===================== OS FORA DE LINHA (androides) ===================== -->
+
+  <PawnKindDef ParentName="MercenaryMidTierBase">
+    <defName>EQ_ForaDeLinha_Unidade</defName>
+    <label>unidade autônoma</label>
+    <labelPlural>unidades autônomas</labelPlural>
+    <defaultFactionDef>EQ_Faction_ForaDeLinha</defaultFactionDef>
+    <combatPower>65</combatPower>
+    <apparelColor>(60,140,160)</apparelColor>
+    <apparelMoney>500~1100</apparelMoney>
+    <apparelTags>
+      <li>IndustrialBasic</li>
+      <li>IndustrialMilitaryBasic</li>
+    </apparelTags>
+    <weaponMoney>300~800</weaponMoney>
+    <weaponTags>
+      <li>Gun</li>
+    </weaponTags>
+    <initialResistanceRange>15~25</initialResistanceRange>
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="MercenaryMidTierBase">
+    <defName>EQ_ForaDeLinha_Sabotador</defName>
+    <label>técnico de sabotagem</label>
+    <labelPlural>técnicos de sabotagem</labelPlural>
+    <defaultFactionDef>EQ_Faction_ForaDeLinha</defaultFactionDef>
+    <combatPower>85</combatPower>
+    <apparelColor>(60,140,160)</apparelColor>
+    <apparelMoney>700~1500</apparelMoney>
+    <apparelTags>
+      <li>IndustrialBasic</li>
+      <li>IndustrialMilitaryBasic</li>
+      <li>BeltDefensePop</li>
+    </apparelTags>
+    <!-- PEM contra os mechs da Forja; explosivos contra as oficinas -->
+    <weaponMoney>300~900</weaponMoney>
+    <weaponTags Inherit="False">
+      <li>GrenadeEMP</li>
+      <li>GrenadeDestructive</li>
+    </weaponTags>
+    <initialResistanceRange>18~28</initialResistanceRange>
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="MercenaryEliteBase">
+    <defName>EQ_ForaDeLinha_Agente</defName>
+    <label>agente de rescisão</label>
+    <labelPlural>agentes de rescisão</labelPlural>
+    <defaultFactionDef>EQ_Faction_ForaDeLinha</defaultFactionDef>
+    <combatPower>130</combatPower>
+    <apparelColor>(60,140,160)</apparelColor>
+    <weaponMoney>900~2400</weaponMoney>
+    <weaponTags Inherit="False">
+      <li>IndustrialGunAdvanced</li>
+      <li>SniperRifle</li>
+      <li>SpacerGun</li>
+    </weaponTags>
+    <initialResistanceRange>25~35</initialResistanceRange>
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="MercenaryEliteTierBase">
+    <defName>EQ_ForaDeLinha_UnidadeZero</defName>
+    <label>unidade zero</label>
+    <labelPlural>unidades zero</labelPlural>
+    <defaultFactionDef>EQ_Faction_ForaDeLinha</defaultFactionDef>
+    <combatPower>170</combatPower>
+    <apparelColor>(60,140,160)</apparelColor>
+    <weaponMoney>1500~3200</weaponMoney>
+    <weaponTags Inherit="False">
+      <li>SpacerGun</li>
+      <li>IndustrialGunAdvanced</li>
+    </weaponTags>
+    <factionLeader>true</factionLeader>
+    <initialResistanceRange>35~50</initialResistanceRange>
+  </PawnKindDef>
+
+  <!-- ===================== OS NÃO CATALOGADOS (aberrações) ===================== -->
+
+  <PawnKindDef ParentName="MercenaryMidTierBase">
+    <defName>EQ_NaoCatalogado_Extraviado</defName>
+    <label>extraviado</label>
+    <labelPlural>extraviados</labelPlural>
+    <defaultFactionDef>EQ_Faction_NaoCatalogados</defaultFactionDef>
+    <combatPower>50</combatPower>
+    <itemQuality>Poor</itemQuality>
+    <gearHealthRange>0.4~0.9</gearHealthRange>
+    <apparelMoney>100~400</apparelMoney>
+    <apparelTags Inherit="False">
+      <li>Neolithic</li>
+      <li>IndustrialBasic</li>
+    </apparelTags>
+    <weaponMoney>90~250</weaponMoney>
+    <weaponTags Inherit="False">
+      <li>NeolithicMeleeBasic</li>
+      <li>NeolithicMeleeDecent</li>
+      <li>NeolithicRangedBasic</li>
+    </weaponTags>
+    <techHediffsChance>0</techHediffsChance>
+    <initialResistanceRange>12~20</initialResistanceRange>
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="MercenaryMidTierBase">
+    <defName>EQ_NaoCatalogado_Olheiro</defName>
+    <label>olheiro do escuro</label>
+    <labelPlural>olheiros do escuro</labelPlural>
+    <defaultFactionDef>EQ_Faction_NaoCatalogados</defaultFactionDef>
+    <combatPower>70</combatPower>
+    <itemQuality>Poor</itemQuality>
+    <gearHealthRange>0.4~0.9</gearHealthRange>
+    <apparelMoney>150~500</apparelMoney>
+    <apparelTags Inherit="False">
+      <li>Neolithic</li>
+      <li>IndustrialBasic</li>
+    </apparelTags>
+    <weaponMoney>200~600</weaponMoney>
+    <weaponTags Inherit="False">
+      <li>NeolithicRangedDecent</li>
+      <li>NeolithicRangedHeavy</li>
+      <li>Gun</li>
+    </weaponTags>
+    <techHediffsChance>0</techHediffsChance>
+    <initialResistanceRange>15~22</initialResistanceRange>
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="MercenaryEliteBase">
+    <defName>EQ_NaoCatalogado_Dilacerador</defName>
+    <label>dilacerador</label>
+    <labelPlural>dilaceradores</labelPlural>
+    <defaultFactionDef>EQ_Faction_NaoCatalogados</defaultFactionDef>
+    <combatPower>110</combatPower>
+    <gearHealthRange>0.5~1</gearHealthRange>
+    <apparelMoney>300~900</apparelMoney>
+    <apparelTags Inherit="False">
+      <li>Neolithic</li>
+      <li>IndustrialBasic</li>
+      <li>IndustrialMilitaryBasic</li>
+    </apparelTags>
+    <weaponMoney>300~900</weaponMoney>
+    <weaponTags Inherit="False">
+      <li>NeolithicMeleeAdvanced</li>
+      <li>MedievalMeleeDecent</li>
+      <li>MedievalMeleeAdvanced</li>
+    </weaponTags>
+    <techHediffsChance>0</techHediffsChance>
+    <initialResistanceRange>22~32</initialResistanceRange>
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="MercenaryEliteTierBase">
+    <defName>EQ_NaoCatalogado_PrimeiroEspecime</defName>
+    <label>primeiro espécime</label>
+    <labelPlural>primeiros espécimes</labelPlural>
+    <defaultFactionDef>EQ_Faction_NaoCatalogados</defaultFactionDef>
+    <combatPower>160</combatPower>
+    <apparelMoney>600~1500</apparelMoney>
+    <apparelTags Inherit="False">
+      <li>Neolithic</li>
+      <li>IndustrialBasic</li>
+      <li>IndustrialMilitaryBasic</li>
+    </apparelTags>
+    <weaponMoney>600~1500</weaponMoney>
+    <weaponTags Inherit="False">
+      <li>MedievalMeleeAdvanced</li>
+      <li>NeolithicMeleeAdvanced</li>
+    </weaponTags>
+    <techHediffsChance>0</techHediffsChance>
+    <factionLeader>true</factionLeader>
+    <useFactionXenotypes>false</useFactionXenotypes>
+    <xenotypeSet Inherit="False">
+      <xenotypeChances>
+        <EQ_Xeno_NC_Matriz>1</EQ_Xeno_NC_Matriz>
+      </xenotypeChances>
+    </xenotypeSet>
+    <initialResistanceRange>35~50</initialResistanceRange>
+  </PawnKindDef>
+
+  <!-- Ghoul da facção: tropa de choque dos ninhos (mutante do Anomaly). -->
+  <PawnKindDef ParentName="MutantBase" MayRequire="Ludeon.RimWorld.Anomaly">
+    <defName>EQ_NaoCatalogado_Devorador</defName>
+    <label>devorador</label>
+    <labelPlural>devoradores</labelPlural>
+    <defaultFactionDef>EQ_Faction_NaoCatalogados</defaultFactionDef>
+    <mutant>Ghoul</mutant>
+    <generateInitialNonFamilyRelations>false</generateInitialNonFamilyRelations>
+    <combatPower>90</combatPower>
+    <gearHealthRange>0.2~0.4</gearHealthRange>
+    <itemQuality>Poor</itemQuality>
+    <apparelMoney>0~100</apparelMoney>
+    <apparelAllowHeadgearChance>0</apparelAllowHeadgearChance>
+    <apparelTags>
+      <li>IndustrialBasic</li>
+      <li>Neolithic</li>
+    </apparelTags>
+    <useFactionXenotypes>false</useFactionXenotypes>
+    <xenotypeSet Inherit="False">
+      <xenotypeChances>
+        <EQ_Xeno_NC_Brotado>0.3</EQ_Xeno_NC_Brotado>
+        <EQ_Xeno_NC_Acoite>0.2</EQ_Xeno_NC_Acoite>
+        <EQ_Xeno_Vagante>0.5</EQ_Xeno_Vagante>
+      </xenotypeChances>
+    </xenotypeSet>
+  </PawnKindDef>
+
+</Defs>

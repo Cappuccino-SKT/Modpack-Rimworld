@@ -231,6 +231,10 @@ namespace EcosDaQueda
             // Remove os xenogenes antigos e aplica o novo xenotipo
             foreach (Gene g in usedBy.genes.Xenogenes.ToList())
                 usedBy.genes.RemoveGene(g);
+            // Xeno hereditário (ex.: Lote Descontinuado) reescreve a linhagem: sai o padrão antigo,
+            // ficam só os genes de cor de pele/cabelo se o novo não trouxer os seus.
+            if (chosen.inheritable)
+                EQXenotypeUtil.ClearEndogenesKeepingColors(usedBy, chosen);
             usedBy.genes.SetXenotype(chosen);
             EQFavor.Notify(FavorEventType.SerumUsed);
 

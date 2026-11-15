@@ -38,23 +38,14 @@
         <successText>{0} tomou o Soro e acordou como {1}. O Concílio parabeniza o cliente pela excelente escolha, que não foi dele.</successText>
         <failText>{0} tomou o Soro e acordou como {1}. O Concílio informa que este resultado está dentro dos parâmetros descritos na página 38 da bula.</failText>
         <xenotypes>
-          <li>Hussar</li>
-          <li>Genie</li>
-          <li>Highmate</li>
-          <li MayRequire="sarg.alphagenes">AG_Drakonori</li>
-          <li MayRequire="sarg.alphagenes">AG_Efreet</li>
-          <li MayRequire="sarg.alphagenes">AG_Helixien</li>
-          <li MayRequire="vanillaracesexpanded.saurid">VRESaurids_Saurid</li>
-          <li MayRequire="vanillaracesexpanded.lycanthrope">VRE_Lycan</li>
-          <li MayRequire="vanillaracesexpanded.hussar">VREH_Uhlan</li>
+          <li>EQ_Xeno_ModeloBase</li>
+          <li>EQ_Xeno_Compliance</li>
+          <li>EQ_Xeno_Premium</li>
+          <li>EQ_Xeno_Executiva</li>
         </xenotypes>
+        <!-- Hereditário: o Soro reescreve também a linhagem (endogenes). -->
         <failXenotypes>
-          <li>Pigskin</li>
-          <li>Waster</li>
-          <li>Dirtmole</li>
-          <li>Neanderthal</li>
-          <li MayRequire="sarg.alphagenes">AG_Wretch</li>
-          <li MayRequire="vanillaracesexpanded.fungoid">VRE_Fungoid</li>
+          <li>EQ_Xeno_LoteDescontinuado</li>
         </failXenotypes>
       </li>
       <li Class="CompProperties_UseEffectPlaySound">

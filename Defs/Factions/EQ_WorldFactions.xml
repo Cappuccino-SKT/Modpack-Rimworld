@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <!-- O mundo só tem as nossas facções. Toda facção humana visível de fora do mod (tribos, forasteiros,
+       piratas do jogo, das DLCs e de outros mods) deixa de ser gerada; as daqui são as exceções.
+       Ocultas e não humanas (mecanoides, insetos, entidades, anciões, desertores) continuam. -->
+  <EcosDaQueda.WorldFactionsDef>
+    <defName>EQ_WorldFactions</defName>
+    <!-- Vazio: o usuário decidiu tirar também o Império (2026-11-15). -->
+    <keepFactions />
+    <removeHiddenFactions>
+      <!-- Sem o Império, os Desertores (que só existem para combatê-lo) também saem. -->
+      <li MayRequire="oskarpotocki.vfe.empire">VFEE_Deserters</li>
+      <!-- A Feira Andante ocupa o papel dos mercadores ambulantes do VFE Medieval 2. -->
+      <li MayRequire="oskarpotocki.vfe.medieval2">VFEM2_MerchantGuild</li>
+    </removeHiddenFactions>
+    <!-- Sem o Império: missões e eventos que o citam pelo nome dariam erro (ex.: a introdução do Royalty,
+         em que um desertor é perseguido por tropas imperiais). As demais missões do Royalty funcionam com
+         qualquer facção que dê favor, inclusive as nossas potências. -->
+    <disabledQuests>
+      <li MayRequire="Ludeon.RimWorld.Royalty">Intro_Deserter</li>
+      <li MayRequire="Ludeon.RimWorld.Royalty">Intro_Wimp</li>
+      <li MayRequire="Ludeon.RimWorld.Royalty">EndGame_RoyalAscent</li>
+      <li MayRequire="oskarpotocki.vfe.empire">VFEE_ArtExhibit</li>
+      <li MayRequire="oskarpotocki.vfe.empire">VFEE_DelayedGrandBallOutcome</li>
+      <li MayRequire="oskarpotocki.vfe.empire">VFEE_DelayedArtExhibitOutcome</li>
+      <li MayRequire="oskarpotocki.vfe.empire">VFEE_DeserterHideout</li>
+      <li MayRequire="oskarpotocki.vfe.empire">VFEE_GrandBall</li>
+      <li MayRequire="oskarpotocki.vfe.empire">VFEE_NobleVisit</li>
+      <li MayRequire="oskarpotocki.vfe.empire">VFEE_Parade</li>
+      <li MayRequire="oskarpotocki.vfe.empire">VFEE_Permit_CallTechfriar</li>
+      <li MayRequire="oskarpotocki.vfe.empire">VFEE_Permit_CallAbsolver</li>
+      <li MayRequire="oskarpotocki.vfe.deserters">VFED_AerodroneStation</li>
+      <li MayRequire="oskarpotocki.vfe.deserters">VFED_ChasedDeserter</li>
+      <li MayRequire="oskarpotocki.vfe.deserters">VFED_ControlStationRaid</li>
+      <li MayRequire="oskarpotocki.vfe.deserters">VFED_DeadDrop</li>
+      <li MayRequire="oskarpotocki.vfe.deserters">VFED_EmpireBargain</li>
+      <li MayRequire="oskarpotocki.vfe.deserters">VFED_EmpireRuins</li>
+      <li MayRequire="oskarpotocki.vfe.deserters">VFED_DeserterEndgame</li>
+      <li MayRequire="oskarpotocki.vfe.deserters">VFED_ImperialConvoy</li>
+      <li MayRequire="oskarpotocki.vfe.deserters">VFED_PlotMission</li>
+      <li MayRequire="oskarpotocki.vfe.deserters">VFED_ShuttleStagingPost</li>
+      <li MayRequire="oskarpotocki.vfe.deserters">VFED_SupplyDepotRaid</li>
+      <li MayRequire="oskarpotocki.vfe.deserters">VFED_TechprinterDemolition</li>
+      <li MayRequire="oskarpotocki.vfe.deserters">VFED_ImperialUnderfarmRaid</li>
+    </disabledQuests>
+    <disabledIncidents>
+      <li MayRequire="Ludeon.RimWorld.Royalty">GiveQuest_Intro_Deserter</li>
+      <li MayRequire="Ludeon.RimWorld.Royalty">GiveQuest_Intro_Wimp</li>
+      <li MayRequire="Ludeon.RimWorld.Royalty">GiveQuest_EndGame_RoyalAscent</li>
+      <li MayRequire="oskarpotocki.vfe.empire">VFEE_GiveQuest_EndGame_Stellarch</li>
+      <li MayRequire="oskarpotocki.vfe.deserters">VFED_GiveQuest_ChasedDeserter</li>
+      <li MayRequire="oskarpotocki.vfe.deserters">VFED_ImperialPatrol</li>
+      <li MayRequire="oskarpotocki.vfe.deserters">VFED_PropagandaDrop</li>
+      <li MayRequire="oskarpotocki.vfe.deserters">VFED_Raid_Absolver</li>
+    </disabledIncidents>
+  </EcosDaQueda.WorldFactionsDef>
+
+</Defs>

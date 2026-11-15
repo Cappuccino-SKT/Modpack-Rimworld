@@ -27,9 +27,26 @@ namespace EcosDaQueda
                 appliedFactionIds = new List<int>();
         }
 
+        private bool pending;
+
         public override void FinalizeInit(bool fromLoad)
         {
             base.FinalizeInit(fromLoad);
+            // Ler um .rid usa o Scribe; se um save ainda está sendo carregado, aplica no primeiro Update.
+            if (Scribe.mode != LoadSaveMode.Inactive) { pending = true; return; }
+            ApplyAll();
+        }
+
+        public override void WorldComponentUpdate()
+        {
+            base.WorldComponentUpdate();
+            if (!pending || Scribe.mode != LoadSaveMode.Inactive) return;
+            pending = false;
+            ApplyAll();
+        }
+
+        private void ApplyAll()
+        {
             if (!ModsConfig.IdeologyActive || world?.factionManager == null)
                 return;
 
@@ -59,6 +76,45 @@ namespace EcosDaQueda
     public static class IdeoTemplateApplier
     {
         public static void Apply(IdeoTemplateDef t, Ideo ideo, Faction faction)
+        {
+            if (!t.ideoFile.NullOrEmpty() && TryApplyFile(t, ideo, faction))
+            {
+                NameLeader(t, faction);
+                return;
+            }
+            ApplyFields(t, ideo, faction);
+        }
+
+        /// <summary>Carrega Ideos/&lt;ideoFile&gt;.rid do mod e copia tudo para a ideologia da facção.</summary>
+        private static bool TryApplyFile(IdeoTemplateDef t, Ideo ideo, Faction faction)
+        {
+            string path = System.IO.Path.Combine(t.modContentPack.RootDir, "Ideos", t.ideoFile + ".rid");
+            if (!System.IO.File.Exists(path))
+            {
+                Log.Error("[Ecos da Queda] Ideologia não encontrada: " + path);
+                return false;
+            }
+            if (!GameDataSaveLoader.TryLoadIdeo(path, out Ideo loaded) || loaded == null)
+                return false;
+            loaded.CopyTo(ideo);
+            ideo.fileName = null;
+            ideo.RecachePrecepts();
+            // Os cargos são preenchidos pelo próprio jogo (Precept_Role.Tick); RecacheActivity não pode rodar
+            // aqui porque durante a criação do mundo ainda não existe facção do jogador.
+            return true;
+        }
+
+        private static void NameLeader(IdeoTemplateDef t, Faction faction)
+        {
+            Pawn leader = faction.leader;
+            if (leader != null && !t.leaderLastName.NullOrEmpty())
+            {
+                string first = leader.gender == Gender.Female ? (t.leaderFirstNameFemale ?? t.leaderFirstNameMale) : (t.leaderFirstNameMale ?? t.leaderFirstNameFemale);
+                leader.Name = new NameTriple(first, t.leaderNickname ?? first, t.leaderLastName);
+            }
+        }
+
+        private static void ApplyFields(IdeoTemplateDef t, Ideo ideo, Faction faction)
         {
             // Identidade
             if (!t.ideoName.NullOrEmpty()) ideo.name = t.ideoName;
@@ -137,13 +193,7 @@ namespace EcosDaQueda
 
             ideo.RecachePrecepts();
 
-            // Líder fundador com nome fixo
-            Pawn leader = faction.leader;
-            if (leader != null && !t.leaderLastName.NullOrEmpty())
-            {
-                string first = leader.gender == Gender.Female ? (t.leaderFirstNameFemale ?? t.leaderFirstNameMale) : (t.leaderFirstNameMale ?? t.leaderFirstNameFemale);
-                leader.Name = new NameTriple(first, t.leaderNickname ?? first, t.leaderLastName);
-            }
+            NameLeader(t, faction);
         }
     }
 }

@@ -79,6 +79,14 @@
       <li>Ritualist</li>
       <li MayRequire="Ludeon.RimWorld.Ideology">Darkness</li>
     </forcedMemes>
+    <!-- Padrões (hereditários). Os xenos de elite vêm dos PawnKinds, por cima de um padrão. -->
+    <xenotypeSet Inherit="False">
+      <xenotypeChances>
+        <EQ_Xeno_Vagante>0.6</EQ_Xeno_Vagante>
+        <EQ_Xeno_VaganteEsqueletico>0.3</EQ_Xeno_VaganteEsqueletico>
+        <EQ_Xeno_HumanoAntigo>0.1</EQ_Xeno_HumanoAntigo>
+      </xenotypeChances>
+    </xenotypeSet>
     <fixedLeaderKinds>
       <li>EQ_Silencio_Arquivista</li>
     </fixedLeaderKinds>
@@ -173,18 +181,13 @@
       <li MayRequire="VanillaExpanded.VMemesE">VME_Fleshcrafters</li>
       <li MayRequire="VanillaExpanded.VMemesE">VME_Trader</li>
     </forcedMemes>
+    <!-- Padrões (hereditários). Os xenos de elite vêm dos PawnKinds, por cima de um padrão. -->
     <xenotypeSet Inherit="False">
       <xenotypeChances>
-        <Hussar>0.12</Hussar>
-        <Genie>0.10</Genie>
-        <Sanguophage>0.02</Sanguophage>
-        <AG_Helixien MayRequire="sarg.alphagenes">0.06</AG_Helixien>
-        <AG_Drakonori MayRequire="sarg.alphagenes">0.03</AG_Drakonori>
-        <AG_Efreet MayRequire="sarg.alphagenes">0.03</AG_Efreet>
-        <VRESaurids_Saurid MayRequire="vanillaracesexpanded.saurid">0.05</VRESaurids_Saurid>
-        <VRE_Lycan MayRequire="vanillaracesexpanded.lycanthrope">0.03</VRE_Lycan>
-        <VREH_Uhlan MayRequire="vanillaracesexpanded.hussar">0.05</VREH_Uhlan>
-        <VRE_Fungoid MayRequire="vanillaracesexpanded.fungoid">0.03</VRE_Fungoid>
+        <EQ_Xeno_Vagante>0.55</EQ_Xeno_Vagante>
+        <EQ_Xeno_VaganteEsqueletico>0.3</EQ_Xeno_VaganteEsqueletico>
+        <EQ_Xeno_HumanoAntigo>0.1</EQ_Xeno_HumanoAntigo>
+        <EQ_Xeno_LoteDescontinuado>0.05</EQ_Xeno_LoteDescontinuado>
       </xenotypeChances>
     </xenotypeSet>
     <fixedLeaderKinds>
@@ -274,6 +277,14 @@
       <li MayRequire="VanillaExpanded.VMemesE">VME_HardcoreIndustrialism</li>
       <li MayRequire="VanillaExpanded.VMemesE">VME_MechanoidSupremacy</li>
     </forcedMemes>
+    <!-- Padrões (hereditários). Os xenos de elite vêm dos PawnKinds, por cima de um padrão. -->
+    <xenotypeSet Inherit="False">
+      <xenotypeChances>
+        <EQ_Xeno_Graxeiro>0.7</EQ_Xeno_Graxeiro>
+        <EQ_Xeno_Vagante>0.25</EQ_Xeno_Vagante>
+        <EQ_Xeno_HumanoAntigo>0.05</EQ_Xeno_HumanoAntigo>
+      </xenotypeChances>
+    </xenotypeSet>
     <fixedLeaderKinds>
       <li>EQ_Forja_Primaz</li>
     </fixedLeaderKinds>
@@ -364,6 +375,14 @@
       <li MayRequire="VanillaExpanded.VMemesE">VME_Aristocratic</li>
       <li MayRequire="VanillaExpanded.VMemesE">VME_PsychicFocus</li>
     </forcedMemes>
+    <!-- Padrões (hereditários). Os xenos de elite vêm dos PawnKinds, por cima de um padrão. -->
+    <xenotypeSet Inherit="False">
+      <xenotypeChances>
+        <EQ_Xeno_Corista>0.7</EQ_Xeno_Corista>
+        <EQ_Xeno_Vagante>0.25</EQ_Xeno_Vagante>
+        <EQ_Xeno_HumanoAntigo>0.05</EQ_Xeno_HumanoAntigo>
+      </xenotypeChances>
+    </xenotypeSet>
     <fixedLeaderKinds>
       <li>EQ_Coro_Maestro</li>
     </fixedLeaderKinds>

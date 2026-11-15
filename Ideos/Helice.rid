@@ -1,0 +1,2851 @@
+<?xml version='1.0' encoding='utf-8'?>
+<savedideo>
+	<meta>
+		<gameVersion>1.7.5000 rev1275</gameVersion>
+		<modIds>
+			<li>brrainz.harmony</li>
+			<li>ludeon.rimworld</li>
+			<li>ludeon.rimworld.royalty</li>
+			<li>ludeon.rimworld.ideology</li>
+			<li>ludeon.rimworld.biotech</li>
+			<li>ludeon.rimworld.anomaly</li>
+			<li>ludeon.rimworld.odyssey</li>
+			<li>adaptive.storage.framework</li>
+			<li>unlimitedhugs.hugslib</li>
+			<li>jaeger972.utilityframework</li>
+			<li>rimexodus.framework</li>
+			<li>smashphil.vehicleframework</li>
+			<li>imranfish.xmlextensions</li>
+			<li>frozensnowfox.filthvanisheswithrainandtime</li>
+			<li>sbz.neatstorage</li>
+			<li>unlimitedhugs.allowtool</li>
+			<li>owlchemist.cherrypicker</li>
+			<li>oskarpotocki.vanillafactionsexpanded.core</li>
+			<li>sarg.alphamemes</li>
+			<li>telardo.dragselect</li>
+			<li>dubwise.dubsappareltweaks</li>
+			<li>dubwise.dubsbadhygiene</li>
+			<li>avilmask.commonsense</li>
+			<li>dubwise.dubsmintmenus</li>
+			<li>dubwise.dubsperformanceanalyzer.steam</li>
+			<li>edb.preparecarefully</li>
+			<li>vat.epoeforked</li>
+			<li>m00nl1ght.geologicallandforms</li>
+			<li>m00nl1ght.mappreview</li>
+			<li>mehni.pickupandhaul</li>
+			<li>memegoddess.replacestuff</li>
+			<li>mlie.showmeyourhands</li>
+			<li>petetimessix.simplesidearms</li>
+			<li>memegoddess.smartmedicine</li>
+			<li>sarg.smartspeed</li>
+			<li>dhultgren.smarterconstruction</li>
+			<li>marvinkosh.ughyougotme</li>
+			<li>vanillaexpanded.vaewaste</li>
+			<li>vanillaexpanded.vanomalyeinsanity</li>
+			<li>vanillaexpanded.vbrewe</li>
+			<li>vanillaexpanded.vbrewecandt</li>
+			<li>vanillaexpanded.vcooke</li>
+			<li>vanillaexpanded.vcookebakery</li>
+			<li>oskarpotocki.vfe.empire</li>
+			<li>oskarpotocki.vfe.deserters</li>
+			<li>oskarpotocki.vfe.insectoid2</li>
+			<li>vanillaexpanded.vfecore</li>
+			<li>vanillaexpanded.vfearchitect</li>
+			<li>vanillaexpanded.vfefarming</li>
+			<li>vanillaexpanded.vfemedical</li>
+			<li>vanillaexpanded.vfepower</li>
+			<li>vanillaexpanded.vfeproduction</li>
+			<li>vanillaexpanded.vmemese</li>
+			<li>vanillaexpanded.vexploratione</li>
+			<li>vanillaexpanded.vnutriente</li>
+			<li>vanillaexpanded.vplantse</li>
+			<li>vanillaexpanded.vplantsemore</li>
+			<li>vanillaexpanded.vplantsemushrooms</li>
+			<li>vanillaexpanded.vpsycastse</li>
+			<li>vanillaexpanded.vpe.hemosage</li>
+			<li>vanillaquestsexpanded.ancients</li>
+			<li>vanillaquestsexpanded.dronefactory</li>
+			<li>vanillaracesexpanded.android</li>
+			<li>vanillaracesexpanded.fungoid</li>
+			<li>vanillaracesexpanded.genie</li>
+			<li>vanillaracesexpanded.highmate</li>
+			<li>vanillaracesexpanded.hussar</li>
+			<li>vanillaracesexpanded.lycanthrope</li>
+			<li>vanillaracesexpanded.phytokin</li>
+			<li>vanillaracesexpanded.pigskin</li>
+			<li>vanillaracesexpanded.sanguophage</li>
+			<li>vanillaracesexpanded.saurid</li>
+			<li>vanillaracesexpanded.starjack</li>
+			<li>vanillaracesexpanded.waster</li>
+			<li>vanillaexpanded.recycling</li>
+			<li>vanillaexpanded.vanillatraitsexpanded</li>
+			<li>jaeger972.factionterritories2</li>
+			<li>oskarpotocki.vanillavehiclesexpanded</li>
+			<li>oskarpotocki.vanillavehiclesexpandedupgrades</li>
+			<li>vanillaexpanded.vwebf</li>
+			<li>vanillaexpanded.vwec</li>
+			<li>vanillaexpanded.vwel</li>
+			<li>oskarpotocki.vfe.pirates</li>
+			<li>vanillaracesexpanded.insector</li>
+			<li>vanillaexpanded.vwems</li>
+			<li>zal.worldmapenhanced</li>
+			<li>oskarpotocki.vfe.medieval2</li>
+			<li>ceteam.combatextended</li>
+			<li>evileyeguy.custombaseframework</li>
+			<li>sarg.alphabiomes</li>
+			<li>sarg.alphagenes</li>
+			<li>vanillaquestsexpanded.generator</li>
+			<li>frozensnowfox.complexjobs</li>
+			<li>vr.missilegirl</li>
+			<li>font.rimesis</li>
+			<li>ceteam.combatextendedarmors</li>
+			<li>ceteam.combatextendedarmory</li>
+			<li>lordfelix.layeredwalldestructionfork</li>
+			<li>ceteam.combatextendedguns</li>
+			<li>oomby.trenches</li>
+			<li>ghxx.techadvancing</li>
+			<li>seohyeon.yart</li>
+			<li>leo.cleanresearchsort</li>
+			<li>dracoix.doormat.r12a</li>
+			<li>evyatar108.seedspleaseliteredux</li>
+			<li>ecosdaqueda.core</li>
+			<li>ecosdaqueda.traducao</li>
+			<li>ecosdaqueda.debug</li>
+		</modIds>
+		<modSteamIds>
+			<li>0</li>
+			<li>0</li>
+			<li>1149640</li>
+			<li>1392840</li>
+			<li>1826140</li>
+			<li>2380740</li>
+			<li>3022790</li>
+			<li>0</li>
+			<li>0</li>
+			<li>0</li>
+			<li>0</li>
+			<li>0</li>
+			<li>0</li>
+			<li>0</li>
+			<li>0</li>
+			<li>0</li>
+			<li>0</li>
+			<li>0</li>
+			<li>0</li>
+			<li>0</li>
+			<li>0</li>
+			<li>0</li>
+			<li>0</li>
+			<li>0</li>
+			<li>0</li>
+			<li>0</li>
+			<li>0</li>
+			<li>0</li>
+			<li>0</li>
+			<li>0</li>
+			<li>0</li>
+			<li>0</li>
+			<li>0</li>
+			<li>0</li>
+			<li>0</li>
+			<li>0</li>
+			<li>0</li>
+			<li>0</li>
+			<li>0</li>
+			<li>0</li>
+			<li>0</li>
+			<li>0</li>
+			<li>0</li>
+			<li>0</li>
+			<li>0</li>
+			<li>0</li>
+			<li>0</li>
+			<li>0</li>
+			<li>0</li>
+			<li>0</li>
+			<li>0</li>
+			<li>0</li>
+			<li>0</li>
+			<li>0</li>
+			<li>0</li>
+			<li>0</li>
+			<li>0</li>
+			<li>0</li>
+			<li>0</li>
+			<li>0</li>
+			<li>0</li>
+			<li>0</li>
+			<li>0</li>
+			<li>0</li>
+			<li>0</li>
+			<li>0</li>
+			<li>0</li>
+			<li>0</li>
+			<li>0</li>
+			<li>0</li>
+			<li>0</li>
+			<li>0</li>
+			<li>0</li>
+			<li>0</li>
+			<li>0</li>
+			<li>0</li>
+			<li>0</li>
+			<li>0</li>
+			<li>0</li>
+			<li>0</li>
+			<li>0</li>
+			<li>0</li>
+			<li>0</li>
+			<li>0</li>
+			<li>0</li>
+			<li>0</li>
+			<li>0</li>
+			<li>0</li>
+			<li>0</li>
+			<li>0</li>
+			<li>0</li>
+			<li>0</li>
+			<li>0</li>
+			<li>0</li>
+			<li>0</li>
+			<li>0</li>
+			<li>0</li>
+			<li>0</li>
+			<li>0</li>
+			<li>0</li>
+			<li>0</li>
+			<li>0</li>
+			<li>0</li>
+			<li>0</li>
+			<li>0</li>
+			<li>0</li>
+			<li>0</li>
+			<li>0</li>
+		</modSteamIds>
+		<modNames>
+			<li>Harmony</li>
+			<li>Core</li>
+			<li>Royalty</li>
+			<li>Ideology</li>
+			<li>Biotech</li>
+			<li>Anomaly</li>
+			<li>Odyssey</li>
+			<li>Adaptive Storage Framework</li>
+			<li>HugsLib</li>
+			<li>Jaeger's Utility Framework</li>
+			<li>RimExodus Framework</li>
+			<li>Vehicle Framework</li>
+			<li>XML Extensions</li>
+			<li>[FSF] Filth Vanishes With Rain And Time</li>
+			<li>[sbz] Neat Storage</li>
+			<li>Allow Tool</li>
+			<li>Cherry Picker</li>
+			<li>Vanilla Expanded Framework</li>
+			<li>Alpha Memes</li>
+			<li>DragSelect</li>
+			<li>Dubs Apparel Tweaks</li>
+			<li>Dubs Bad Hygiene</li>
+			<li>Common Sense</li>
+			<li>Dubs Mint Menus</li>
+			<li>Dubs Performance Analyzer</li>
+			<li>EdB Prepare Carefully</li>
+			<li>Expanded Prosthetics and Organ Engineering - Forked</li>
+			<li>Geological Landforms</li>
+			<li>Map Preview</li>
+			<li>Pick Up And Haul</li>
+			<li>Replace Stuff - Continued</li>
+			<li>Show Me Your Hands</li>
+			<li>Simple sidearms</li>
+			<li>Smart Medicine - Continued</li>
+			<li>Smart Speed</li>
+			<li>Smarter Construction</li>
+			<li>Ugh You Got Me</li>
+			<li>Vanilla Animals Expanded — Waste Animals</li>
+			<li>Vanilla Anomaly Expanded - Insanity</li>
+			<li>Vanilla Brewing Expanded</li>
+			<li>Vanilla Brewing Expanded - Coffees and Teas</li>
+			<li>Vanilla Cooking Expanded</li>
+			<li>Vanilla Cooking Expanded - Bakery</li>
+			<li>Vanilla Factions Expanded - Empire</li>
+			<li>Vanilla Factions Expanded - Deserters</li>
+			<li>Vanilla Factions Expanded - Insectoids 2</li>
+			<li>Vanilla Furniture Expanded</li>
+			<li>Vanilla Furniture Expanded - Architect</li>
+			<li>Vanilla Furniture Expanded - Farming</li>
+			<li>Vanilla Furniture Expanded - Medical Module</li>
+			<li>Vanilla Furniture Expanded - Power</li>
+			<li>Vanilla Furniture Expanded - Production</li>
+			<li>Vanilla Ideology Expanded - Memes and Structures</li>
+			<li>Vanilla Landmarks Expanded</li>
+			<li>Vanilla Nutrient Paste Expanded</li>
+			<li>Vanilla Plants Expanded</li>
+			<li>Vanilla Plants Expanded - More Plants</li>
+			<li>Vanilla Plants Expanded - Mushrooms</li>
+			<li>Vanilla Psycasts Expanded</li>
+			<li>Vanilla Psycasts Expanded - Hemosage</li>
+			<li>Vanilla Quests Expanded - Ancients</li>
+			<li>Vanilla Quests Expanded - Drone Factory</li>
+			<li>Vanilla Races Expanded - Android</li>
+			<li>Vanilla Races Expanded - Fungoid</li>
+			<li>Vanilla Races Expanded - Genie</li>
+			<li>Vanilla Races Expanded - Highmate</li>
+			<li>Vanilla Races Expanded - Hussar</li>
+			<li>Vanilla Races Expanded - Lycanthrope</li>
+			<li>Vanilla Races Expanded - Phytokin</li>
+			<li>Vanilla Races Expanded - Pigskin</li>
+			<li>Vanilla Races Expanded - Sanguophage</li>
+			<li>Vanilla Races Expanded - Saurid</li>
+			<li>Vanilla Races Expanded - Starjack</li>
+			<li>Vanilla Races Expanded - Waster</li>
+			<li>Vanilla Recycling Expanded</li>
+			<li>Vanilla Traits Expanded</li>
+			<li>Hegemony - Faction Territories and Vassalage 2</li>
+			<li>Vanilla Vehicles Expanded</li>
+			<li>Vanilla Vehicles Expanded - Upgrades</li>
+			<li>Vanilla Weapons Expanded - Bioferrite</li>
+			<li>Vanilla Weapons Expanded - Coilguns</li>
+			<li>Vanilla Weapons Expanded - Laser</li>
+			<li>Vanilla Factions Expanded - Pirates</li>
+			<li>Vanilla Races Expanded - Insector</li>
+			<li>Vanilla Weapons Expanded - Makeshift</li>
+			<li>World Map Enhanced (Continued)</li>
+			<li>Vanilla Factions Expanded - Medieval 2</li>
+			<li>Combat Extended</li>
+			<li>Custom Base Framework</li>
+			<li>Alpha Biomes</li>
+			<li>Alpha Genes</li>
+			<li>Vanilla Quests Expanded - The Generator</li>
+			<li>[FSF] Complex Jobs</li>
+			<li>Missile Girl - Performance Mod</li>
+			<li>Rimesis</li>
+			<li>Combat Extended Armors</li>
+			<li>Combat Extended Armory</li>
+			<li>Layered Wall Destruction Fork</li>
+			<li>Combat Extended Guns</li>
+			<li>Trenches</li>
+			<li>Tech Advancing</li>
+			<li>Yet Another Research Tree (YART)</li>
+			<li>Clean Research Sort</li>
+			<li>Door Mat</li>
+			<li>SeedsPlease: Lite Redux</li>
+			<li>Ecos da Queda</li>
+			<li>Ecos da Queda - Tradução PT-BR</li>
+			<li>Ecos da Queda - Ferramentas de Debug</li>
+		</modNames>
+	</meta>
+	<ideo>
+		<foundation Class="IdeoFoundation_Deity">
+			<def>Deity</def>
+			<place>Wavia</place>
+			<deities>
+				<li>
+					<name>O Acionista Majoritário</name>
+					<type>Dono de Todas as Patentes</type>
+					<gender>Male</gender>
+					<iconPath>UI/Deities/DeityGeneric</iconPath>
+				</li>
+			</deities>
+		</foundation>
+		<name>O Genoma Ideal</name>
+		<adjective>heliciano</adjective>
+		<memberName>associado</memberName>
+		<leaderTitleMale>Diretor Executivo</leaderTitleMale>
+		<leaderTitleFemale>Diretora Executiva</leaderTitleFemale>
+		<description>A humanidade original foi um rascunho, descontinuado na Queda. O Concílio oferece a versão final: genes premium, linhagens licenciadas e atualizações hereditárias com assinatura mensal. Máquinas no corpo são gambiarra; carne se substitui por carne melhor.
+
+Crianças nascem em tanques, porque o útero é um produto obsoleto. Quem não pode pagar é classificado como "versão base" e vira material de teste. Termos e condições se aplicam aos seus descendentes.</description>
+		<descriptionTemplate>"To: All Employees
+
+From: Upper Management
+
+Subject: Inappropriate use of time on Google Doodle games
+
+The company's policy about self-mutilation and fleshcrafting is crystal clear: If it helps the bottom line, go ahead. Just please clean the meeting room afterwards. This memo is a reminder to use your work hours for work. Let's take it to the next level, people."</descriptionTemplate>
+		<descriptionLocked>True</descriptionLocked>
+		<culture>Astropolitan</culture>
+		<iconDef>PoliticalC</iconDef>
+		<colorDef>LightMauve</colorDef>
+		<memes>
+			<li>VME_Structure_Corporate</li>
+			<li>AM_Youth</li>
+			<li>VME_Fleshcrafters</li>
+			<li>VME_Trader</li>
+			<li>EQ_Meme_GeneticMarket</li>
+		</memes>
+		<precepts>
+			<li>
+				<name>uso de órgãos</name>
+				<def>VME_OrganUse_PostMortem</def>
+				<ID>2124</ID>
+				<randomSeed>-546054562</randomSeed>
+				<usesDefiniteArticle>True</usesDefiniteArticle>
+			</li>
+			<li>
+				<name>escarificação</name>
+				<def>Scarification_Heavy</def>
+				<ID>2125</ID>
+				<randomSeed>411675039</randomSeed>
+				<usesDefiniteArticle>True</usesDefiniteArticle>
+			</li>
+			<li Class="Precept_Ritual">
+				<name>Encerramento de Contrato</name>
+				<def>AM_DreadnoughtCryptoFuneral</def>
+				<ID>2213</ID>
+				<randomSeed>813987466</randomSeed>
+				<usesDefiniteArticle>True</usesDefiniteArticle>
+				<nameMaker>NamerRitualFuneral</nameMaker>
+				<ritualOnlyForIdeoMembers>True</ritualOnlyForIdeoMembers>
+				<ritualExpectedDesc>Once a {IDEO} member dies, other {MEMBERS} witnesss {RITUAL_labelDef} to perfectly preserve the body</ritualExpectedDesc>
+				<playsIdeoMusic>True</playsIdeoMusic>
+				<generatedAttachedReward>True</generatedAttachedReward>
+				<sourcePattern>AM_CryptoFuneralPattern</sourcePattern>
+				<obligationTargetFilter Class="AlphaMemes.RitualObligationTargetWorker_FuneralHolderThings">
+					<def>AM_FuneralTargetCrypto</def>
+					<parent>Precept_2213</parent>
+				</obligationTargetFilter>
+				<targetFilter IsNull="True" />
+				<behavior Class="AlphaMemes.RitualBehaviorWorker_FuneralFramework">
+					<def>AM_CryptoFuneralBehavior</def>
+					<corpse>null</corpse>
+					<effecterpawn>null</effecterpawn>
+					<spawnEffectThings />
+				</behavior>
+				<triggers />
+				<outcomeEffect Class="AlphaMemes.RitualOutcomeEffectWorker_FuneralFramework">
+					<def>AM_CryptoFuneralOutcome</def>
+					<compDatas>
+						<li IsNull="True" />
+						<li Class="RitualOutcomeComp_DataThingPresence">
+							<presentForTicks>
+								<keys />
+								<values />
+							</presentForTicks>
+						</li>
+					</compDatas>
+				</outcomeEffect>
+				<layerWhitelist IsNull="True" />
+				<layerBlacklist IsNull="True" />
+			<nameLocked>True</nameLocked></li>
+			<li Class="Precept_Ritual">
+				<name>Coleta de Dividendos</name>
+				<def>AM_FleshCraftingFuneral</def>
+				<ID>2211</ID>
+				<randomSeed>-1930103972</randomSeed>
+				<usesDefiniteArticle>True</usesDefiniteArticle>
+				<nameLocked>True</nameLocked>
+				<nameMaker>NamerRitualFuneral</nameMaker>
+				<ritualOnlyForIdeoMembers>True</ritualOnlyForIdeoMembers>
+				<ritualExpectedDesc>Once a {IDEO} member dies, other {MEMBERS} desire a {RITUAL_labelDef}.</ritualExpectedDesc>
+				<playsIdeoMusic>True</playsIdeoMusic>
+				<generatedAttachedReward>True</generatedAttachedReward>
+				<sourcePattern>AM_FleshCraftingFuneralPattern</sourcePattern>
+				<obligationTargetFilter Class="AlphaMemes.RitualObligationTargetWorker_FuneralThingExtended">
+					<def>AM_FuneralExtendedFleshCrafting</def>
+					<parent>Precept_2211</parent>
+					<filters>
+						<li Class="RitualObligationTargetWorker_AnyGatherSpotOrAltar">
+							<def>GatheringSpotOrAltar</def>
+							<parent>Precept_2211</parent>
+						</li>
+					</filters>
+				</obligationTargetFilter>
+				<targetFilter IsNull="True" />
+				<behavior Class="AlphaMemes.RitualBehaviorWorker_FuneralFramework">
+					<def>AM_FleshCraftingFuneralBehavior</def>
+					<corpse>null</corpse>
+					<effecterpawn>null</effecterpawn>
+					<spawnEffectThings />
+				</behavior>
+				<triggers>
+					<li Class="RitualObligationTrigger_MemberDied">
+						<mustBePlayerIdeo>True</mustBePlayerIdeo>
+					</li>
+				</triggers>
+				<outcomeEffect Class="AlphaMemes.RitualOutcomeEffectWorker_Fleshcrafting">
+					<def>AM_FleshCraftingFuneralOutcome</def>
+					<compDatas>
+						<li IsNull="True" />
+						<li Class="RitualOutcomeComp_DataThingPresence">
+							<presentForTicks>
+								<keys />
+								<values />
+							</presentForTicks>
+						</li>
+					</compDatas>
+				</outcomeEffect>
+				<layerWhitelist IsNull="True" />
+				<layerBlacklist IsNull="True" />
+			</li>
+			<li Class="Precept_Ritual">
+				<name>funeral sem corpo</name>
+				<def>AM_FuneralNoCorpse</def>
+				<ID>2132</ID>
+				<randomSeed>432369661</randomSeed>
+				<usesDefiniteArticle>True</usesDefiniteArticle>
+				<ritualOnlyForIdeoMembers>True</ritualOnlyForIdeoMembers>
+				<ritualExpectedDesc>Once a {IDEO} member dies and the body is lost, other {MEMBERS} gather around an empty grave for {RITUAL_labelDef}.</ritualExpectedDesc>
+				<playsIdeoMusic>True</playsIdeoMusic>
+				<generatedAttachedReward>True</generatedAttachedReward>
+				<sourcePattern>AM_FuneralNoCorpsePattern</sourcePattern>
+				<obligationTargetFilter Class="RitualObligationTargetWorker_AnyEmptyGrave">
+					<def>AnyEmptyGrave</def>
+					<parent>Precept_2132</parent>
+				</obligationTargetFilter>
+				<targetFilter IsNull="True" />
+				<behavior Class="RitualBehaviorWorker_Funeral">
+					<def>Funeral</def>
+				</behavior>
+				<triggers>
+					<li Class="AlphaMemes.RitualObligationTrigger_NoCorpse">
+						<mustBePlayerIdeo>True</mustBePlayerIdeo>
+					</li>
+				</triggers>
+				<outcomeEffect Class="RitualOutcomeEffectWorker_FromQuality">
+					<def>AttendedFuneralNoCorpse</def>
+					<compDatas>
+						<li IsNull="True" />
+						<li Class="RitualOutcomeComp_DataThingPresence">
+							<presentForTicks>
+								<keys />
+								<values />
+							</presentForTicks>
+						</li>
+					</compDatas>
+				</outcomeEffect>
+				<layerWhitelist IsNull="True" />
+				<layerBlacklist IsNull="True" />
+			<nameLocked>True</nameLocked></li>
+			<li Class="Precept_Ritual">
+				<name>Pagamento de Dívidas</name>
+				<def>ScarificationCeremony</def>
+				<ID>2214</ID>
+				<randomSeed>-589566966</randomSeed>
+				<usesDefiniteArticle>True</usesDefiniteArticle>
+				<nameLocked>True</nameLocked>
+				<nameMaker>NamerRitualMutilation</nameMaker>
+				<ritualOnlyForIdeoMembers>True</ritualOnlyForIdeoMembers>
+				<patternGroupTag>ScarificationCeremony</patternGroupTag>
+				<playsIdeoMusic>True</playsIdeoMusic>
+				<mergeGizmosForObligations>True</mergeGizmosForObligations>
+				<generatedAttachedReward>True</generatedAttachedReward>
+				<sourcePattern>ScarificationCeremony</sourcePattern>
+				<obligationTargetFilter Class="RitualObligationTargetWorker_AnyRitualSpotOrAltar_Scarification">
+					<def>RitualSpotOrAltar_Scarification</def>
+					<parent>Precept_2214</parent>
+				</obligationTargetFilter>
+				<targetFilter IsNull="True" />
+				<behavior Class="RitualBehaviorWorker_Mutilation">
+					<def>ScarificationCeremony</def>
+				</behavior>
+				<triggers>
+					<li Class="RitualObligationTrigger_Scarification">
+						<mustBePlayerIdeo>True</mustBePlayerIdeo>
+					</li>
+				</triggers>
+				<outcomeEffect Class="RitualOutcomeEffectWorker_FromQuality">
+					<def>ScarificationCeremony</def>
+					<compDatas>
+						<li IsNull="True" />
+						<li IsNull="True" />
+						<li IsNull="True" />
+						<li Class="RitualOutcomeComp_DataThingPresence">
+							<presentForTicks>
+								<keys />
+								<values />
+							</presentForTicks>
+						</li>
+						<li IsNull="True" />
+					</compDatas>
+				</outcomeEffect>
+				<layerWhitelist IsNull="True" />
+				<layerBlacklist IsNull="True" />
+			</li>
+			<li>
+				<name>modificação corporal</name>
+				<def>VME_BodyMod_OnlyBiological</def>
+				<ID>2137</ID>
+				<randomSeed>427829268</randomSeed>
+				<usesDefiniteArticle>True</usesDefiniteArticle>
+			</li>
+			<li>
+				<name>death</name>
+				<def>VME_Death_DontCare</def>
+				<ID>2138</ID>
+				<randomSeed>996977130</randomSeed>
+				<usesDefiniteArticle>True</usesDefiniteArticle>
+			</li>
+			<li>
+				<name>elders</name>
+				<def>VME_Elders_Despised</def>
+				<ID>2139</ID>
+				<randomSeed>-1915212893</randomSeed>
+				<usesDefiniteArticle>True</usesDefiniteArticle>
+			</li>
+			<li Class="Precept_RitualSeat">
+				<name>assento de ritual</name>
+				<def>IdeoRitualSeat</def>
+				<ID>2141</ID>
+				<randomSeed>-1524774858</randomSeed>
+				<usesDefiniteArticle>True</usesDefiniteArticle>
+				<thingDef>Pew</thingDef>
+			</li>
+			<li>
+				<name>expectations</name>
+				<def>VME_Expectations_High</def>
+				<ID>2142</ID>
+				<randomSeed>108946312</randomSeed>
+				<usesDefiniteArticle>True</usesDefiniteArticle>
+			</li>
+			<li>
+				<name>trading</name>
+				<def>VME_Trading_Required</def>
+				<ID>2143</ID>
+				<randomSeed>-1881334528</randomSeed>
+				<usesDefiniteArticle>True</usesDefiniteArticle>
+			</li>
+			<li>
+				<name>trading price</name>
+				<def>VME_TradingPrice_Improved</def>
+				<ID>2144</ID>
+				<randomSeed>899344616</randomSeed>
+				<usesDefiniteArticle>True</usesDefiniteArticle>
+			</li>
+			<li>
+				<name>execução</name>
+				<def>Execution_HorribleIfInnocent</def>
+				<ID>2145</ID>
+				<randomSeed>2059744960</randomSeed>
+				<usesDefiniteArticle>True</usesDefiniteArticle>
+			</li>
+			<li>
+				<name>escravidão</name>
+				<def>Slavery_Disapproved</def>
+				<ID>2146</ID>
+				<randomSeed>1764994294</randomSeed>
+				<usesDefiniteArticle>True</usesDefiniteArticle>
+			</li>
+			<li>
+				<name>roupa feminina</name>
+				<def>Nudity_Female_UncoveredGroinOrChestDisapproved</def>
+				<ID>2147</ID>
+				<randomSeed>737428437</randomSeed>
+				<usesDefiniteArticle>True</usesDefiniteArticle>
+			</li>
+			<li>
+				<name>roupa masculina</name>
+				<def>Nudity_Male_UncoveredGroinDisapproved</def>
+				<ID>2148</ID>
+				<randomSeed>997891532</randomSeed>
+				<usesDefiniteArticle>True</usesDefiniteArticle>
+			</li>
+			<li>
+				<name>canibalismo</name>
+				<def>Cannibalism_Abhorrent</def>
+				<ID>2149</ID>
+				<randomSeed>-273795686</randomSeed>
+				<usesDefiniteArticle>True</usesDefiniteArticle>
+			</li>
+			<li>
+				<name>creep</name>
+				<def>AM_Creep_Disliked</def>
+				<ID>2150</ID>
+				<randomSeed>-2093742074</randomSeed>
+				<usesDefiniteArticle>True</usesDefiniteArticle>
+			</li>
+			<li>
+				<name>disfigurement</name>
+				<def>AM_Disfigurement_Disliked</def>
+				<ID>2151</ID>
+				<randomSeed>-704980135</randomSeed>
+				<usesDefiniteArticle>True</usesDefiniteArticle>
+			</li>
+			<li>
+				<name>fertility</name>
+				<def>AM_FertilityIssue_Normal</def>
+				<ID>2152</ID>
+				<randomSeed>726499370</randomSeed>
+				<usesDefiniteArticle>True</usesDefiniteArticle>
+			</li>
+			<li>
+				<name>children learning</name>
+				<def>AM_LearningRate_Increased</def>
+				<ID>2153</ID>
+				<randomSeed>-279677347</randomSeed>
+				<usesDefiniteArticle>True</usesDefiniteArticle>
+			</li>
+			<li>
+				<name>lovin' frequency</name>
+				<def>AM_LovinFrequency_Normal</def>
+				<ID>2154</ID>
+				<randomSeed>1395020289</randomSeed>
+				<usesDefiniteArticle>True</usesDefiniteArticle>
+			</li>
+			<li>
+				<name>ocular trees</name>
+				<def>AM_OcularTrees_Indifferent</def>
+				<ID>2155</ID>
+				<randomSeed>-1899041809</randomSeed>
+				<usesDefiniteArticle>True</usesDefiniteArticle>
+			</li>
+			<li Class="Precept_Ritual">
+				<name>ligação com árvore anima</name>
+				<def>AnimaTreeLinking</def>
+				<ID>2156</ID>
+				<randomSeed>-1462056103</randomSeed>
+				<usesDefiniteArticle>True</usesDefiniteArticle>
+				<isAnytime>True</isAnytime>
+				<generatedAttachedReward>True</generatedAttachedReward>
+				<sourcePattern>AnimaTreeLinking</sourcePattern>
+				<obligationTargetFilter Class="RitualObligationTargetWorker_AnimaTree">
+					<def>AnimaTree</def>
+					<parent>Precept_2156</parent>
+				</obligationTargetFilter>
+				<targetFilter Class="RitualTargetFilter_SelectedThing">
+					<def>SelectedThing</def>
+				</targetFilter>
+				<behavior Class="RitualBehaviorWorker_AnimaLinking">
+					<def>AnimaTreeLinking</def>
+				</behavior>
+				<triggers />
+				<outcomeEffect Class="RitualOutcomeEffectWorker_AnimaTreeLinking">
+					<def>AnimaTreeLinking</def>
+					<compDatas>
+						<li Class="RitualOutcomeComp_DataThingPresence">
+							<presentForTicks>
+								<keys />
+								<values />
+							</presentForTicks>
+						</li>
+						<li Class="RitualOutcomeComp_DataThingPresence">
+							<presentForTicks>
+								<keys />
+								<values />
+							</presentForTicks>
+						</li>
+					</compDatas>
+				</outcomeEffect>
+				<layerWhitelist IsNull="True" />
+				<layerBlacklist IsNull="True" />
+			</li>
+			<li>
+				<name>cegueira</name>
+				<def>Blinding_Horrible</def>
+				<ID>2157</ID>
+				<randomSeed>895266476</randomSeed>
+				<usesDefiniteArticle>True</usesDefiniteArticle>
+			</li>
+			<li Class="Precept_Ritual">
+				<name>nascimento de criança</name>
+				<def>ChildBirth</def>
+				<ID>2158</ID>
+				<randomSeed>-568449775</randomSeed>
+				<usesDefiniteArticle>True</usesDefiniteArticle>
+				<isAnytime>True</isAnytime>
+				<allowOtherInstances>True</allowOtherInstances>
+				<generatedAttachedReward>True</generatedAttachedReward>
+				<sourcePattern>ChildBirth</sourcePattern>
+				<obligationTargetFilter Class="RitualObligationTargetWorker_ChildBirth">
+					<def>ChildBirth</def>
+					<parent>Precept_2158</parent>
+				</obligationTargetFilter>
+				<targetFilter IsNull="True" />
+				<behavior Class="RitualBehaviorWorker_ChildBirth">
+					<def>ChildBirth</def>
+				</behavior>
+				<triggers />
+				<outcomeEffect Class="RitualOutcomeEffectWorker_ChildBirth">
+					<def>ChildBirth</def>
+					<compDatas>
+						<li IsNull="True" />
+						<li IsNull="True" />
+						<li IsNull="True" />
+						<li IsNull="True" />
+						<li Class="RitualOutcomeComp_DataRoomStatCached" />
+						<li IsNull="True" />
+					</compDatas>
+				</outcomeEffect>
+				<layerWhitelist IsNull="True" />
+				<layerBlacklist IsNull="True" />
+			</li>
+			<li Class="Precept_Ritual">
+				<name>Onboarding Compulsório</name>
+				<def>Conversion</def>
+				<ID>2159</ID>
+				<randomSeed>-246619668</randomSeed>
+				<usesDefiniteArticle>True</usesDefiniteArticle>
+				<ritualOnlyForIdeoMembers>True</ritualOnlyForIdeoMembers>
+				<isAnytime>True</isAnytime>
+				<playsIdeoMusic>True</playsIdeoMusic>
+				<ritualExplanation>Em caso de sucesso, seu arbítrio será reduzido ou ele(a) se converterá imediatamente. Se o tiro sair pela culatra, sua certeza nas próprias crenças aumentará.</ritualExplanation>
+				<canMergeGizmosFromDifferentIdeos>False</canMergeGizmosFromDifferentIdeos>
+				<generatedAttachedReward>True</generatedAttachedReward>
+				<sourcePattern>Conversion</sourcePattern>
+				<obligationTargetFilter Class="RitualObligationTargetWorker_AnyRitualSpotOrAltar">
+					<def>RitualSpotOrAltar</def>
+					<parent>Precept_2159</parent>
+				</obligationTargetFilter>
+				<targetFilter Class="RitualTargetFilter_Altar">
+					<def>AltarOrRitualSpot</def>
+				</targetFilter>
+				<behavior Class="RitualBehaviorWorker_Conversion">
+					<def>Conversion</def>
+				</behavior>
+				<triggers />
+				<outcomeEffect Class="RitualOutcomeEffectWorker_Conversion">
+					<def>Conversion</def>
+					<compDatas>
+						<li Class="RitualOutcomeComp_DataRoomStatCached" />
+						<li Class="RitualOutcomeComp_DataThingPresence">
+							<presentForTicks>
+								<keys />
+								<values />
+							</presentForTicks>
+						</li>
+						<li IsNull="True" />
+						<li IsNull="True" />
+					</compDatas>
+				</outcomeEffect>
+				<layerWhitelist IsNull="True" />
+				<layerBlacklist IsNull="True" />
+			<nameLocked>True</nameLocked></li>
+			<li>
+				<name>cadáveres</name>
+				<def>Corpses_DontCare</def>
+				<ID>2160</ID>
+				<randomSeed>-817195195</randomSeed>
+				<usesDefiniteArticle>True</usesDefiniteArticle>
+			</li>
+			<li Class="Precept_Ritual">
+				<name>execução pública</name>
+				<def>Execution</def>
+				<ID>2161</ID>
+				<randomSeed>-139578697</randomSeed>
+				<usesDefiniteArticle>True</usesDefiniteArticle>
+				<isAnytime>True</isAnytime>
+				<playsIdeoMusic>True</playsIdeoMusic>
+				<generatedAttachedReward>True</generatedAttachedReward>
+				<sourcePattern>Execution</sourcePattern>
+				<obligationTargetFilter Class="RitualObligationTargetWorker_AnyRitualSpotIdeogramOrAltar">
+					<def>RitualSpotIdeogramOrAltar</def>
+					<parent>Precept_2161</parent>
+				</obligationTargetFilter>
+				<targetFilter IsNull="True" />
+				<behavior Class="RitualBehaviorWorker_Execution">
+					<def>Execution</def>
+				</behavior>
+				<triggers />
+				<outcomeEffect Class="RitualOutcomeEffectWorker_Execution">
+					<def>Execution</def>
+					<compDatas>
+						<li Class="RitualOutcomeComp_DataThingPresence">
+							<presentForTicks>
+								<keys />
+								<values />
+							</presentForTicks>
+						</li>
+						<li IsNull="True" />
+					</compDatas>
+				</outcomeEffect>
+				<layerWhitelist IsNull="True" />
+				<layerBlacklist IsNull="True" />
+			</li>
+			<li>
+				<name>fungos</name>
+				<def>FungusEating_Despised</def>
+				<ID>2162</ID>
+				<randomSeed>862479657</randomSeed>
+				<usesDefiniteArticle>True</usesDefiniteArticle>
+			</li>
+			<li Class="Precept_GravshipLaunch">
+				<name>Lançamento da Gravinave</name>
+				<def>GravshipLaunch</def>
+				<ID>2163</ID>
+				<randomSeed>1074130445</randomSeed>
+				<usesDefiniteArticle>True</usesDefiniteArticle>
+				<iconPathOverride>UI/Commands/LaunchGravship</iconPathOverride>
+				<isAnytime>True</isAnytime>
+				<generatedAttachedReward>True</generatedAttachedReward>
+				<sourcePattern>GravshipLaunch</sourcePattern>
+				<ignoreExtremeTemperatures>True</ignoreExtremeTemperatures>
+				<obligationTargetFilter Class="RitualObligationTargetWorker_GravshipLaunch">
+					<def>GravshipLaunch</def>
+					<parent>Precept_2163</parent>
+				</obligationTargetFilter>
+				<targetFilter IsNull="True" />
+				<behavior Class="RitualBehaviorWorker_GravshipLaunch">
+					<def>GravshipLaunch</def>
+				</behavior>
+				<triggers />
+				<outcomeEffect Class="RitualOutcomeEffectWorker_GravshipLaunch">
+					<def>GravshipLaunch</def>
+					<compDatas>
+						<li IsNull="True" />
+						<li IsNull="True" />
+						<li Class="RitualOutcomeComp_DataThingPresence">
+							<presentForTicks>
+								<keys />
+								<values />
+							</presentForTicks>
+						</li>
+						<li IsNull="True" />
+						<li IsNull="True" />
+						<li IsNull="True" />
+					</compDatas>
+				</outcomeEffect>
+				<layerWhitelist IsNull="True" />
+				<layerBlacklist IsNull="True" />
+			</li>
+			<li>
+				<name>diversidade filosofal</name>
+				<def>IdeoDiversity_Standard</def>
+				<ID>2164</ID>
+				<randomSeed>1982850053</randomSeed>
+				<usesDefiniteArticle>True</usesDefiniteArticle>
+			</li>
+			<li>
+				<name>carne de inseto</name>
+				<def>InsectMeatEating_Despised_Classic</def>
+				<ID>2165</ID>
+				<randomSeed>-441225926</randomSeed>
+				<usesDefiniteArticle>True</usesDefiniteArticle>
+			</li>
+			<li Class="Precept_Ritual">
+				<name>Reunião de Acionistas</name>
+				<def>LeaderSpeech</def>
+				<ID>2166</ID>
+				<randomSeed>928066010</randomSeed>
+				<usesDefiniteArticle>True</usesDefiniteArticle>
+				<isAnytime>True</isAnytime>
+				<playsIdeoMusic>True</playsIdeoMusic>
+				<canMergeGizmosFromDifferentIdeos>False</canMergeGizmosFromDifferentIdeos>
+				<generatedAttachedReward>True</generatedAttachedReward>
+				<sourcePattern>LeaderSpeech</sourcePattern>
+				<obligationTargetFilter Class="RitualObligationTargetWorker_IdeoBuildingOrRitualSpot">
+					<def>AnyIdeoBuildingOrRitualSpot</def>
+					<parent>Precept_2166</parent>
+				</obligationTargetFilter>
+				<targetFilter Class="RitualTargetFilter_IdeoBuildingOrRitualSpot">
+					<def>IdeoBuildingOrRitualSpot</def>
+				</targetFilter>
+				<behavior Class="RitualBehaviorWorker_Speech">
+					<def>LeaderSpeech</def>
+				</behavior>
+				<triggers />
+				<outcomeEffect Class="RitualOutcomeEffectWorker_Speech">
+					<def>AttendedSpeech</def>
+					<compDatas>
+						<li IsNull="True" />
+						<li Class="RitualOutcomeComp_DataThingPresence">
+							<presentForTicks>
+								<keys />
+								<values />
+							</presentForTicks>
+						</li>
+						<li Class="RitualOutcomeComp_DataRoomStatCached" />
+					</compDatas>
+				</outcomeEffect>
+				<layerWhitelist IsNull="True" />
+				<layerBlacklist IsNull="True" />
+			<nameLocked>True</nameLocked></li>
+			<li>
+				<name>amor físico</name>
+				<def>Lovin_SpouseOnly_Moderate</def>
+				<ID>2167</ID>
+				<randomSeed>-1719871111</randomSeed>
+				<usesDefiniteArticle>True</usesDefiniteArticle>
+			</li>
+			<li>
+				<name>pasta de nutrientes</name>
+				<def>NutrientPasteEating_Disgusting</def>
+				<ID>2168</ID>
+				<randomSeed>281719441</randomSeed>
+				<usesDefiniteArticle>True</usesDefiniteArticle>
+			</li>
+			<li>
+				<name>pesquisa</name>
+				<def>Research_Normal</def>
+				<ID>2169</ID>
+				<randomSeed>-446802141</randomSeed>
+				<usesDefiniteArticle>True</usesDefiniteArticle>
+			</li>
+			<li Class="Precept_Ritual">
+				<name>troca de função</name>
+				<def>RoleChange</def>
+				<ID>2170</ID>
+				<randomSeed>-2130279545</randomSeed>
+				<usesDefiniteArticle>True</usesDefiniteArticle>
+				<ritualOnlyForIdeoMembers>True</ritualOnlyForIdeoMembers>
+				<isAnytime>True</isAnytime>
+				<playsIdeoMusic>True</playsIdeoMusic>
+				<generatedAttachedReward>True</generatedAttachedReward>
+				<sourcePattern>RoleChange</sourcePattern>
+				<obligationTargetFilter Class="RitualObligationTargetWorker_AnyRitualSpotIdeogramOrAltar">
+					<def>RitualSpotIdeogramOrAltar</def>
+					<parent>Precept_2170</parent>
+				</obligationTargetFilter>
+				<targetFilter Class="RitualTargetFilter_AltarOrIdeogram">
+					<def>AltarIdeogramOrRitualSpot</def>
+				</targetFilter>
+				<behavior>
+					<def>RoleChange</def>
+				</behavior>
+				<triggers />
+				<outcomeEffect Class="RitualOutcomeEffectWorker_RoleChange">
+					<def>RoleChange</def>
+					<compDatas>
+						<li Class="RitualOutcomeComp_DataRoleChangeParticipants">
+							<presentForTicks>
+								<keys />
+								<values />
+							</presentForTicks>
+						</li>
+					</compDatas>
+				</outcomeEffect>
+				<layerWhitelist IsNull="True" />
+				<layerBlacklist IsNull="True" />
+			</li>
+			<li>
+				<name>crânios</name>
+				<def>Skullspike_Disapproved</def>
+				<ID>2171</ID>
+				<randomSeed>-141160524</randomSeed>
+				<usesDefiniteArticle>True</usesDefiniteArticle>
+			</li>
+			<li Class="Precept_Ritual">
+				<name>discurso do trono</name>
+				<def>ThroneSpeech</def>
+				<ID>2172</ID>
+				<randomSeed>1079001507</randomSeed>
+				<usesDefiniteArticle>True</usesDefiniteArticle>
+				<generatedAttachedReward>True</generatedAttachedReward>
+				<sourcePattern>ThroneSpeech</sourcePattern>
+				<obligationTargetFilter IsNull="True" />
+				<targetFilter Class="RitualTargetFilter_UsableThrone">
+					<def>UsableThrone</def>
+				</targetFilter>
+				<behavior Class="RitualBehaviorWorker_ThroneSpeech">
+					<def>ThroneSpeech</def>
+				</behavior>
+				<triggers />
+				<outcomeEffect Class="RitualOutcomeEffectWorker_Speech">
+					<def>AttendedSpeech</def>
+					<compDatas>
+						<li IsNull="True" />
+						<li Class="RitualOutcomeComp_DataThingPresence">
+							<presentForTicks>
+								<keys />
+								<values />
+							</presentForTicks>
+						</li>
+						<li Class="RitualOutcomeComp_DataRoomStatCached" />
+					</compDatas>
+				</outcomeEffect>
+				<layerWhitelist IsNull="True" />
+				<layerBlacklist IsNull="True" />
+			</li>
+			<li Class="Precept_Ritual">
+				<name>ritual de conexão com árvore</name>
+				<def>TreeConnection</def>
+				<ID>2173</ID>
+				<randomSeed>-798151595</randomSeed>
+				<usesDefiniteArticle>True</usesDefiniteArticle>
+				<iconPathOverride>UI/Icons/Rituals/TreeConnection</iconPathOverride>
+				<isAnytime>True</isAnytime>
+				<playsIdeoMusic>True</playsIdeoMusic>
+				<generatedAttachedReward>True</generatedAttachedReward>
+				<sourcePattern>TreeConnection</sourcePattern>
+				<obligationTargetFilter Class="RitualObligationTargetWorker_UnconnectedGauranlenTree">
+					<def>GauranlenTree</def>
+					<parent>Precept_2173</parent>
+				</obligationTargetFilter>
+				<targetFilter IsNull="True" />
+				<behavior>
+					<def>TreeConnection</def>
+				</behavior>
+				<triggers />
+				<outcomeEffect Class="RitualOutcomeEffectWorker_ConnectToTree">
+					<def>ConnectToTree</def>
+					<compDatas>
+						<li Class="RitualOutcomeComp_DataThingPresence">
+							<presentForTicks>
+								<keys />
+								<values />
+							</presentForTicks>
+						</li>
+						<li Class="RitualOutcomeComp_DataThingPresence">
+							<presentForTicks>
+								<keys />
+								<values />
+							</presentForTicks>
+						</li>
+					</compDatas>
+				</outcomeEffect>
+				<layerWhitelist IsNull="True" />
+				<layerBlacklist IsNull="True" />
+			</li>
+			<li Class="Precept_Ritual">
+				<name>julgamento</name>
+				<def>Trial</def>
+				<ID>2174</ID>
+				<randomSeed>632246911</randomSeed>
+				<usesDefiniteArticle>True</usesDefiniteArticle>
+				<ritualOnlyForIdeoMembers>True</ritualOnlyForIdeoMembers>
+				<generatedAttachedReward>True</generatedAttachedReward>
+				<sourcePattern>Trial</sourcePattern>
+				<obligationTargetFilter IsNull="True" />
+				<targetFilter Class="RitualTargetFilter_IdeoBuildingOrRitualSpot">
+					<def>IdeoBuildingOrRitualSpot</def>
+				</targetFilter>
+				<behavior Class="RitualBehaviorWorker_Trial">
+					<def>Trial</def>
+				</behavior>
+				<triggers />
+				<outcomeEffect Class="RitualOutcomeEffectWorker_Trial">
+					<def>Trial</def>
+					<compDatas>
+						<li Class="RitualOutcomeComp_DataThingPresence">
+							<presentForTicks>
+								<keys />
+								<values />
+							</presentForTicks>
+						</li>
+						<li IsNull="True" />
+						<li IsNull="True" />
+					</compDatas>
+				</outcomeEffect>
+				<layerWhitelist IsNull="True" />
+				<layerBlacklist IsNull="True" />
+			</li>
+			<li Class="Precept_Ritual">
+				<name>julgamento</name>
+				<def>TrialMentalState</def>
+				<ID>2175</ID>
+				<randomSeed>-611124936</randomSeed>
+				<usesDefiniteArticle>True</usesDefiniteArticle>
+				<ritualOnlyForIdeoMembers>True</ritualOnlyForIdeoMembers>
+				<generatedAttachedReward>True</generatedAttachedReward>
+				<sourcePattern>TrialMentalState</sourcePattern>
+				<obligationTargetFilter IsNull="True" />
+				<targetFilter Class="RitualTargetFilter_IdeoBuildingOrRitualSpot">
+					<def>IdeoBuildingOrRitualSpot</def>
+				</targetFilter>
+				<behavior Class="RitualBehaviorWorker_Trial">
+					<def>TrialMentalState</def>
+				</behavior>
+				<triggers />
+				<outcomeEffect Class="RitualOutcomeEffectWorker_Trial">
+					<def>TrialMentalState</def>
+					<compDatas>
+						<li Class="RitualOutcomeComp_DataThingPresence">
+							<presentForTicks>
+								<keys />
+								<values />
+							</presentForTicks>
+						</li>
+						<li IsNull="True" />
+					</compDatas>
+				</outcomeEffect>
+				<layerWhitelist IsNull="True" />
+				<layerBlacklist IsNull="True" />
+			</li>
+			<li Class="Precept_Ritual">
+				<name>julgamento</name>
+				<def>TrialPrisoner</def>
+				<ID>2176</ID>
+				<randomSeed>-408439174</randomSeed>
+				<usesDefiniteArticle>True</usesDefiniteArticle>
+				<ritualOnlyForIdeoMembers>True</ritualOnlyForIdeoMembers>
+				<generatedAttachedReward>True</generatedAttachedReward>
+				<sourcePattern>TrialPrisoner</sourcePattern>
+				<obligationTargetFilter IsNull="True" />
+				<targetFilter Class="RitualTargetFilter_IdeoBuildingOrRitualSpot">
+					<def>IdeoBuildingOrRitualSpot</def>
+				</targetFilter>
+				<behavior Class="RitualBehaviorWorker_Trial">
+					<def>TrialPrisoner</def>
+				</behavior>
+				<triggers />
+				<outcomeEffect Class="RitualOutcomeEffectWorker_Trial">
+					<def>Trial</def>
+					<compDatas>
+						<li Class="RitualOutcomeComp_DataThingPresence">
+							<presentForTicks>
+								<keys />
+								<values />
+							</presentForTicks>
+						</li>
+						<li IsNull="True" />
+						<li IsNull="True" />
+					</compDatas>
+				</outcomeEffect>
+				<layerWhitelist IsNull="True" />
+				<layerBlacklist IsNull="True" />
+			</li>
+			<li Class="Precept_Ritual">
+				<name>conceder honra</name>
+				<def>VFEE_BestowHonor</def>
+				<ID>2177</ID>
+				<randomSeed>874332391</randomSeed>
+				<usesDefiniteArticle>True</usesDefiniteArticle>
+				<generatedAttachedReward>True</generatedAttachedReward>
+				<sourcePattern>VFEE_BestowHonor_Pattern</sourcePattern>
+				<obligationTargetFilter IsNull="True" />
+				<targetFilter Class="RitualTargetFilter_UsableThrone">
+					<def>UsableThrone</def>
+				</targetFilter>
+				<behavior Class="VFEEmpire.RitualBehaviorWorker_BestowHonor">
+					<def>VFEE_BestowHonor_Behavior</def>
+				</behavior>
+				<triggers />
+				<outcomeEffect Class="VFEEmpire.RitualOutcomeEffectWorker_BestowHonor">
+					<def>VFEE_BestowHonor_Outcome</def>
+					<compDatas>
+						<li IsNull="True" />
+					</compDatas>
+				</outcomeEffect>
+				<layerWhitelist IsNull="True" />
+				<layerBlacklist IsNull="True" />
+			<nameLocked>True</nameLocked></li>
+			<li Class="Precept_Ritual">
+				<name>conceder título</name>
+				<def>VFEE_BestowTitle</def>
+				<ID>2178</ID>
+				<randomSeed>259427898</randomSeed>
+				<usesDefiniteArticle>True</usesDefiniteArticle>
+				<generatedAttachedReward>True</generatedAttachedReward>
+				<sourcePattern>VFEE_BestowTitle_Pattern</sourcePattern>
+				<obligationTargetFilter IsNull="True" />
+				<targetFilter Class="RitualTargetFilter_UsableThrone">
+					<def>UsableThrone</def>
+				</targetFilter>
+				<behavior Class="VFEEmpire.RitualBehaviorWorker_BestowTitle">
+					<def>VFEE_BestowTitle_Behavior</def>
+					<startAbility>null</startAbility>
+				</behavior>
+				<triggers />
+				<attachableOutcomeEffect>RechargePsyfocus</attachableOutcomeEffect>
+				<outcomeEffect Class="VFEEmpire.RitualOutcomeEffectWorker_BestowTitle">
+					<def>VFEE_BestowTitle_Outcome</def>
+					<compDatas>
+						<li IsNull="True" />
+						<li Class="RitualOutcomeComp_DataThingPresence">
+							<presentForTicks>
+								<keys />
+								<values />
+							</presentForTicks>
+						</li>
+						<li IsNull="True" />
+					</compDatas>
+				</outcomeEffect>
+				<layerWhitelist IsNull="True" />
+				<layerBlacklist IsNull="True" />
+			<nameLocked>True</nameLocked></li>
+			<li Class="Precept_Ritual">
+				<name>discurso real</name>
+				<def>VFEE_RoyalAddress</def>
+				<ID>2179</ID>
+				<randomSeed>-1926633310</randomSeed>
+				<usesDefiniteArticle>True</usesDefiniteArticle>
+				<generatedAttachedReward>True</generatedAttachedReward>
+				<sourcePattern>VFEE_RoyalAddress_Pattern</sourcePattern>
+				<obligationTargetFilter IsNull="True" />
+				<targetFilter Class="RitualTargetFilter_UsableThrone">
+					<def>UsableThrone</def>
+				</targetFilter>
+				<behavior Class="VFEEmpire.RitualBehaviorWorker_RoyalAddress">
+					<def>VFEE_RoyalAddres_Behavior</def>
+					<storedLords>
+						<keys />
+						<values />
+					</storedLords>
+				</behavior>
+				<triggers />
+				<attachableOutcomeEffect>DiscoverAncientComplex</attachableOutcomeEffect>
+				<outcomeEffect Class="VFEEmpire.RitualOutcomeEffectWorker_RoyalAddress">
+					<def>VFEE_RoyalAddres_Outcome</def>
+					<compDatas>
+						<li IsNull="True" />
+						<li Class="RitualOutcomeComp_DataThingPresence">
+							<presentForTicks>
+								<keys />
+								<values />
+							</presentForTicks>
+						</li>
+						<li Class="RitualOutcomeComp_DataRoomStatCached" />
+					</compDatas>
+				</outcomeEffect>
+				<layerWhitelist IsNull="True" />
+				<layerBlacklist IsNull="True" />
+			<nameLocked>True</nameLocked></li>
+			<li>
+				<name>dumb labor</name>
+				<def>VME_DumbLabor_Indifferent</def>
+				<ID>2180</ID>
+				<randomSeed>2008044504</randomSeed>
+				<usesDefiniteArticle>True</usesDefiniteArticle>
+			</li>
+			<li>
+				<name>illness</name>
+				<def>VME_Illness_Indifferent</def>
+				<ID>2181</ID>
+				<randomSeed>529084210</randomSeed>
+				<usesDefiniteArticle>True</usesDefiniteArticle>
+			</li>
+			<li>
+				<name>insect jelly</name>
+				<def>VME_InsectJellyEaten_Neutral_Classic</def>
+				<ID>2182</ID>
+				<randomSeed>-1985593561</randomSeed>
+				<usesDefiniteArticle>True</usesDefiniteArticle>
+			</li>
+			<li>
+				<name>mood</name>
+				<def>VME_Mood_Normal</def>
+				<ID>2183</ID>
+				<randomSeed>-1657707107</randomSeed>
+				<usesDefiniteArticle>True</usesDefiniteArticle>
+			</li>
+			<li>
+				<name>recreation</name>
+				<def>VME_Recreation_Normal</def>
+				<ID>2184</ID>
+				<randomSeed>977311048</randomSeed>
+				<usesDefiniteArticle>True</usesDefiniteArticle>
+			</li>
+			<li>
+				<name>sweets</name>
+				<def>VME_Sweets_Impartial</def>
+				<ID>2185</ID>
+				<randomSeed>2107327692</randomSeed>
+				<usesDefiniteArticle>True</usesDefiniteArticle>
+			</li>
+			<li>
+				<name>tainted apparel</name>
+				<def>VME_TaintedApparel_Disapproved</def>
+				<ID>2186</ID>
+				<randomSeed>2007141743</randomSeed>
+				<usesDefiniteArticle>True</usesDefiniteArticle>
+			</li>
+			<li>
+				<name>tattered apparel</name>
+				<def>VME_TatteredApparel_Disapproved</def>
+				<ID>2187</ID>
+				<randomSeed>1133505066</randomSeed>
+				<usesDefiniteArticle>True</usesDefiniteArticle>
+			</li>
+			<li Class="Precept_Ritual">
+				<name>Feira de Lançamento</name>
+				<def>VME_TradingFairPrecept</def>
+				<ID>2093</ID>
+				<randomSeed>-1155970769</randomSeed>
+				<usesDefiniteArticle>True</usesDefiniteArticle>
+				<nameLocked>True</nameLocked>
+				<ritualOnlyForIdeoMembers>True</ritualOnlyForIdeoMembers>
+				<isAnytime>True</isAnytime>
+				<playsIdeoMusic>True</playsIdeoMusic>
+				<generatedAttachedReward>True</generatedAttachedReward>
+				<sourcePattern>VME_TradingFairRitual</sourcePattern>
+				<obligationTargetFilter Class="RitualObligationTargetWorker_IdeoBuildingOrRitualSpot">
+					<def>AnyIdeoBuildingOrRitualSpot</def>
+					<parent>Precept_2093</parent>
+				</obligationTargetFilter>
+				<targetFilter Class="RitualTargetFilter_IdeoBuildingOrRitualSpot">
+					<def>IdeoBuildingOrRitualSpot</def>
+				</targetFilter>
+				<behavior>
+					<def>VME_TradingFairRitualBehaviour</def>
+				</behavior>
+				<triggers />
+				<outcomeEffect Class="VanillaMemesExpanded.RitualOutcomeEffectWorker_TradingFair">
+					<def>VME_TradingFairRitualOutcome</def>
+					<compDatas>
+						<li IsNull="True" />
+						<li Class="RitualOutcomeComp_DataThingPresence">
+							<presentForTicks>
+								<keys />
+								<values />
+							</presentForTicks>
+						</li>
+					</compDatas>
+				</outcomeEffect>
+				<layerWhitelist IsNull="True" />
+				<layerBlacklist IsNull="True" />
+			</li>
+			<li>
+				<name>violence</name>
+				<def>VME_Violence_Acceptable</def>
+				<ID>2188</ID>
+				<randomSeed>1695830482</randomSeed>
+				<usesDefiniteArticle>True</usesDefiniteArticle>
+			</li>
+			<li>
+				<name>androids</name>
+				<def>VRE_Androids_Equal</def>
+				<ID>2189</ID>
+				<randomSeed>-557335063</randomSeed>
+				<usesDefiniteArticle>True</usesDefiniteArticle>
+			</li>
+			<li>
+				<name>Cônjugues de mulheres</name>
+				<def>SpouseCount_Female_MaxOne</def>
+				<ID>2190</ID>
+				<randomSeed>-642133921</randomSeed>
+				<usesDefiniteArticle>True</usesDefiniteArticle>
+			</li>
+			<li>
+				<name>Cônjugues de homens</name>
+				<def>SpouseCount_Male_MaxOne</def>
+				<ID>2191</ID>
+				<randomSeed>1331342757</randomSeed>
+				<usesDefiniteArticle>True</usesDefiniteArticle>
+			</li>
+			<li>
+				<name>acceleration</name>
+				<def>VVE_Acceleration_Standard</def>
+				<ID>2192</ID>
+				<randomSeed>354414999</randomSeed>
+				<usesDefiniteArticle>True</usesDefiniteArticle>
+			</li>
+			<li>
+				<name>driving</name>
+				<def>VVE_Driving_Allowed</def>
+				<ID>2193</ID>
+				<randomSeed>891044605</randomSeed>
+				<usesDefiniteArticle>True</usesDefiniteArticle>
+			</li>
+			<li>
+				<name>flying</name>
+				<def>VVE_Flying_Allowed</def>
+				<ID>2194</ID>
+				<randomSeed>189323064</randomSeed>
+				<usesDefiniteArticle>True</usesDefiniteArticle>
+			</li>
+			<li>
+				<name>fuel efficiency</name>
+				<def>VVE_FuelEfficiency_Standard</def>
+				<ID>2195</ID>
+				<randomSeed>-1364509629</randomSeed>
+				<usesDefiniteArticle>True</usesDefiniteArticle>
+			</li>
+			<li>
+				<name>Sailing</name>
+				<def>VVE_Sailing_Allowed</def>
+				<ID>2196</ID>
+				<randomSeed>1797840432</randomSeed>
+				<usesDefiniteArticle>True</usesDefiniteArticle>
+			</li>
+			<li>
+				<name>vehicle repairs</name>
+				<def>VVE_VehicleRepairs_Standard</def>
+				<ID>2197</ID>
+				<randomSeed>1400651847</randomSeed>
+				<usesDefiniteArticle>True</usesDefiniteArticle>
+			</li>
+			<li>
+				<name>nome de casamento</name>
+				<def>MarriageName_Random</def>
+				<ID>2198</ID>
+				<randomSeed>-959025170</randomSeed>
+				<usesDefiniteArticle>True</usesDefiniteArticle>
+			</li>
+			<li Class="Precept_RoleSingle">
+				<name>Diretor Executivo</name>
+				<def>IdeoRole_Leader</def>
+				<ID>2199</ID>
+				<randomSeed>-709011307</randomSeed>
+				<usesDefiniteArticle>True</usesDefiniteArticle>
+				<apparelRequirements>
+					<li>
+						<allowedFactionCategoryTags IsNull="True" />
+						<disallowedFactionCategoryTags IsNull="True" />
+						<anyMemeRequired IsNull="True" />
+						<requirement>
+							<bodyPartGroupsMatchAny>
+								<li>Torso</li>
+								<li>Neck</li>
+								<li>Shoulders</li>
+								<li>Arms</li>
+							</bodyPartGroupsMatchAny>
+							<requiredDefs>
+								<li>Apparel_CollarShirt</li>
+							</requiredDefs>
+							<requiredTags IsNull="True" />
+							<allowedTags IsNull="True" />
+						</requirement>
+					</li>
+				</apparelRequirements>
+				<restrictToSupremeGender>True</restrictToSupremeGender>
+				<chosenPawn>
+					<pawn>null</pawn>
+					<abilities>
+						<li>
+							<def>LeaderSpeech</def>
+							<Id>640</Id>
+							<sourcePrecept>Precept_2199</sourcePrecept>
+							<verbTracker>
+								<verbs>
+									<li Class="Verb_CastAbility">
+										<loadID>Ability_640_0</loadID>
+										<currentTarget>(0, 0, 0)</currentTarget>
+										<currentDestination>(0, 0, 0)</currentDestination>
+										<lastShotTick>-999999</lastShotTick>
+										<canHitNonTargetPawnsNow>True</canHitNonTargetPawnsNow>
+										<MVCF_ManagedVerb IsNull="True" />
+										<ability>Ability_640</ability>
+									</li>
+								</verbs>
+							</verbTracker>
+							<maxCharges>0</maxCharges>
+							<charges>0</charges>
+						</li>
+						<li>
+							<def>WorkDrive</def>
+							<Id>641</Id>
+							<sourcePrecept>Precept_2199</sourcePrecept>
+							<verbTracker>
+								<verbs>
+									<li Class="Verb_CastAbilityTouch">
+										<loadID>Ability_641_0</loadID>
+										<currentTarget>(0, 0, 0)</currentTarget>
+										<currentDestination>(0, 0, 0)</currentDestination>
+										<lastShotTick>-999999</lastShotTick>
+										<canHitNonTargetPawnsNow>True</canHitNonTargetPawnsNow>
+										<MVCF_ManagedVerb IsNull="True" />
+										<ability>Ability_641</ability>
+									</li>
+								</verbs>
+							</verbTracker>
+							<maxCharges>0</maxCharges>
+							<charges>0</charges>
+						</li>
+						<li>
+							<def>CombatCommand</def>
+							<Id>642</Id>
+							<sourcePrecept>Precept_2199</sourcePrecept>
+							<verbTracker>
+								<verbs>
+									<li Class="Verb_CastAbility">
+										<loadID>Ability_642_0</loadID>
+										<currentTarget>(0, 0, 0)</currentTarget>
+										<currentDestination>(0, 0, 0)</currentDestination>
+										<lastShotTick>-999999</lastShotTick>
+										<canHitNonTargetPawnsNow>True</canHitNonTargetPawnsNow>
+										<MVCF_ManagedVerb IsNull="True" />
+										<ability>Ability_642</ability>
+									</li>
+								</verbs>
+							</verbTracker>
+							<maxCharges>0</maxCharges>
+							<charges>0</charges>
+						</li>
+						<li>
+							<def>Trial</def>
+							<Id>643</Id>
+							<sourcePrecept>Precept_2199</sourcePrecept>
+							<verbTracker>
+								<verbs>
+									<li Class="Verb_CastAbility">
+										<loadID>Ability_643_0</loadID>
+										<currentTarget>(0, 0, 0)</currentTarget>
+										<currentDestination>(0, 0, 0)</currentDestination>
+										<lastShotTick>-999999</lastShotTick>
+										<canHitNonTargetPawnsNow>True</canHitNonTargetPawnsNow>
+										<MVCF_ManagedVerb IsNull="True" />
+										<ability>Ability_643</ability>
+									</li>
+								</verbs>
+							</verbTracker>
+							<maxCharges>0</maxCharges>
+							<charges>0</charges>
+						</li>
+						<li>
+							<def>AM_ChangeStyle</def>
+							<Id>644</Id>
+							<sourcePrecept>Precept_2199</sourcePrecept>
+							<verbTracker>
+								<verbs>
+									<li Class="Verb_CastAbility">
+										<loadID>Ability_644_0</loadID>
+										<currentTarget>(0, 0, 0)</currentTarget>
+										<currentDestination>(0, 0, 0)</currentDestination>
+										<lastShotTick>-999999</lastShotTick>
+										<canHitNonTargetPawnsNow>True</canHitNonTargetPawnsNow>
+										<MVCF_ManagedVerb IsNull="True" />
+										<ability>Ability_644</ability>
+									</li>
+								</verbs>
+							</verbTracker>
+							<maxCharges>0</maxCharges>
+							<charges>0</charges>
+						</li>
+						<li>
+							<def>VME_LeaderConversionRitual</def>
+							<Id>645</Id>
+							<sourcePrecept>Precept_2199</sourcePrecept>
+							<verbTracker>
+								<verbs>
+									<li Class="Verb_CastAbility">
+										<loadID>Ability_645_0</loadID>
+										<currentTarget>(0, 0, 0)</currentTarget>
+										<currentDestination>(0, 0, 0)</currentDestination>
+										<lastShotTick>-999999</lastShotTick>
+										<canHitNonTargetPawnsNow>True</canHitNonTargetPawnsNow>
+										<MVCF_ManagedVerb IsNull="True" />
+										<ability>Ability_645</ability>
+									</li>
+								</verbs>
+							</verbTracker>
+							<maxCharges>0</maxCharges>
+							<charges>0</charges>
+						</li>
+						<li>
+							<def>VME_LeaderConvert</def>
+							<Id>646</Id>
+							<sourcePrecept>Precept_2199</sourcePrecept>
+							<verbTracker>
+								<verbs>
+									<li Class="Verb_CastAbilityTouch">
+										<loadID>Ability_646_0</loadID>
+										<currentTarget>(0, 0, 0)</currentTarget>
+										<currentDestination>(0, 0, 0)</currentDestination>
+										<lastShotTick>-999999</lastShotTick>
+										<canHitNonTargetPawnsNow>True</canHitNonTargetPawnsNow>
+										<MVCF_ManagedVerb IsNull="True" />
+										<ability>Ability_646</ability>
+									</li>
+								</verbs>
+							</verbTracker>
+							<maxCharges>0</maxCharges>
+							<charges>0</charges>
+						</li>
+						<li>
+							<def>VME_LeaderPreachHealth</def>
+							<Id>647</Id>
+							<sourcePrecept>Precept_2199</sourcePrecept>
+							<verbTracker>
+								<verbs>
+									<li Class="Verb_CastAbilityTouch">
+										<loadID>Ability_647_0</loadID>
+										<currentTarget>(0, 0, 0)</currentTarget>
+										<currentDestination>(0, 0, 0)</currentDestination>
+										<lastShotTick>-999999</lastShotTick>
+										<canHitNonTargetPawnsNow>True</canHitNonTargetPawnsNow>
+										<MVCF_ManagedVerb IsNull="True" />
+										<ability>Ability_647</ability>
+									</li>
+								</verbs>
+							</verbTracker>
+							<maxCharges>0</maxCharges>
+							<charges>0</charges>
+						</li>
+						<li>
+							<def>VME_LeaderReassure</def>
+							<Id>648</Id>
+							<sourcePrecept>Precept_2199</sourcePrecept>
+							<verbTracker>
+								<verbs>
+									<li Class="Verb_CastAbilityTouch">
+										<loadID>Ability_648_0</loadID>
+										<currentTarget>(0, 0, 0)</currentTarget>
+										<currentDestination>(0, 0, 0)</currentDestination>
+										<lastShotTick>-999999</lastShotTick>
+										<canHitNonTargetPawnsNow>True</canHitNonTargetPawnsNow>
+										<MVCF_ManagedVerb IsNull="True" />
+										<ability>Ability_648</ability>
+									</li>
+								</verbs>
+							</verbTracker>
+							<maxCharges>0</maxCharges>
+							<charges>0</charges>
+						</li>
+						<li>
+							<def>VME_LeaderCounsel</def>
+							<Id>649</Id>
+							<sourcePrecept>Precept_2199</sourcePrecept>
+							<verbTracker>
+								<verbs>
+									<li Class="Verb_CastAbilityTouch">
+										<loadID>Ability_649_0</loadID>
+										<currentTarget>(0, 0, 0)</currentTarget>
+										<currentDestination>(0, 0, 0)</currentDestination>
+										<lastShotTick>-999999</lastShotTick>
+										<canHitNonTargetPawnsNow>True</canHitNonTargetPawnsNow>
+										<MVCF_ManagedVerb IsNull="True" />
+										<ability>Ability_649</ability>
+									</li>
+								</verbs>
+							</verbTracker>
+							<maxCharges>0</maxCharges>
+							<charges>0</charges>
+						</li>
+					</abilities>
+				</chosenPawn>
+			</li>
+			<li Class="Precept_RoleSingle">
+				<name>Gerente de Compliance</name>
+				<def>IdeoRole_Moralist</def>
+				<ID>2200</ID>
+				<randomSeed>-762420239</randomSeed>
+				<usesDefiniteArticle>True</usesDefiniteArticle>
+				<nameLocked>True</nameLocked>
+				<apparelRequirements />
+				<restrictToSupremeGender>True</restrictToSupremeGender>
+				<chosenPawn>
+					<pawn>null</pawn>
+					<abilities>
+						<li>
+							<def>Convert</def>
+							<Id>650</Id>
+							<sourcePrecept>Precept_2200</sourcePrecept>
+							<verbTracker>
+								<verbs>
+									<li Class="Verb_CastAbilityTouch">
+										<loadID>Ability_650_0</loadID>
+										<currentTarget>(0, 0, 0)</currentTarget>
+										<currentDestination>(0, 0, 0)</currentDestination>
+										<lastShotTick>-999999</lastShotTick>
+										<canHitNonTargetPawnsNow>True</canHitNonTargetPawnsNow>
+										<MVCF_ManagedVerb IsNull="True" />
+										<ability>Ability_650</ability>
+									</li>
+								</verbs>
+							</verbTracker>
+							<maxCharges>0</maxCharges>
+							<charges>0</charges>
+						</li>
+						<li>
+							<def>Counsel</def>
+							<Id>651</Id>
+							<sourcePrecept>Precept_2200</sourcePrecept>
+							<verbTracker>
+								<verbs>
+									<li Class="Verb_CastAbilityTouch">
+										<loadID>Ability_651_0</loadID>
+										<currentTarget>(0, 0, 0)</currentTarget>
+										<currentDestination>(0, 0, 0)</currentDestination>
+										<lastShotTick>-999999</lastShotTick>
+										<canHitNonTargetPawnsNow>True</canHitNonTargetPawnsNow>
+										<MVCF_ManagedVerb IsNull="True" />
+										<ability>Ability_651</ability>
+									</li>
+								</verbs>
+							</verbTracker>
+							<maxCharges>0</maxCharges>
+							<charges>0</charges>
+						</li>
+						<li>
+							<def>Reassure</def>
+							<Id>652</Id>
+							<sourcePrecept>Precept_2200</sourcePrecept>
+							<verbTracker>
+								<verbs>
+									<li Class="Verb_CastAbilityTouch">
+										<loadID>Ability_652_0</loadID>
+										<currentTarget>(0, 0, 0)</currentTarget>
+										<currentDestination>(0, 0, 0)</currentDestination>
+										<lastShotTick>-999999</lastShotTick>
+										<canHitNonTargetPawnsNow>True</canHitNonTargetPawnsNow>
+										<MVCF_ManagedVerb IsNull="True" />
+										<ability>Ability_652</ability>
+									</li>
+								</verbs>
+							</verbTracker>
+							<maxCharges>0</maxCharges>
+							<charges>0</charges>
+						</li>
+						<li>
+							<def>ConversionRitual</def>
+							<Id>653</Id>
+							<sourcePrecept>Precept_2200</sourcePrecept>
+							<verbTracker>
+								<verbs>
+									<li Class="Verb_CastAbility">
+										<loadID>Ability_653_0</loadID>
+										<currentTarget>(0, 0, 0)</currentTarget>
+										<currentDestination>(0, 0, 0)</currentDestination>
+										<lastShotTick>-999999</lastShotTick>
+										<canHitNonTargetPawnsNow>True</canHitNonTargetPawnsNow>
+										<MVCF_ManagedVerb IsNull="True" />
+										<ability>Ability_653</ability>
+									</li>
+								</verbs>
+							</verbTracker>
+							<maxCharges>0</maxCharges>
+							<charges>0</charges>
+						</li>
+						<li>
+							<def>PreachHealth</def>
+							<Id>654</Id>
+							<sourcePrecept>Precept_2200</sourcePrecept>
+							<verbTracker>
+								<verbs>
+									<li Class="Verb_CastAbilityTouch">
+										<loadID>Ability_654_0</loadID>
+										<currentTarget>(0, 0, 0)</currentTarget>
+										<currentDestination>(0, 0, 0)</currentDestination>
+										<lastShotTick>-999999</lastShotTick>
+										<canHitNonTargetPawnsNow>True</canHitNonTargetPawnsNow>
+										<MVCF_ManagedVerb IsNull="True" />
+										<ability>Ability_654</ability>
+									</li>
+								</verbs>
+							</verbTracker>
+							<maxCharges>0</maxCharges>
+							<charges>0</charges>
+						</li>
+					</abilities>
+				</chosenPawn>
+			</li>
+			<li Class="Precept_RoleSingle">
+				<name>Geneticista-Chefe</name>
+				<def>VME_IdeoRole_Fleshcrafter</def>
+				<ID>2202</ID>
+				<randomSeed>-1138755983</randomSeed>
+				<usesDefiniteArticle>True</usesDefiniteArticle>
+				<nameLocked>True</nameLocked>
+				<apparelRequirements />
+				<chosenPawn>
+					<pawn>null</pawn>
+					<abilities>
+						<li>
+							<def>VME_HarvestBodyParts</def>
+							<Id>660</Id>
+							<sourcePrecept>Precept_2202</sourcePrecept>
+							<verbTracker>
+								<verbs>
+									<li Class="Verb_CastAbility">
+										<loadID>Ability_660_0</loadID>
+										<currentTarget>(0, 0, 0)</currentTarget>
+										<currentDestination>(0, 0, 0)</currentDestination>
+										<lastShotTick>-999999</lastShotTick>
+										<canHitNonTargetPawnsNow>True</canHitNonTargetPawnsNow>
+										<MVCF_ManagedVerb IsNull="True" />
+										<ability>Ability_660</ability>
+									</li>
+								</verbs>
+							</verbTracker>
+							<maxCharges>0</maxCharges>
+							<charges>0</charges>
+						</li>
+					</abilities>
+				</chosenPawn>
+			</li>
+			<li Class="Precept_RoleSingle">
+				<name>Executivo de Vendas</name>
+				<def>VME_IdeoRole_Merchant</def>
+				<ID>2203</ID>
+				<randomSeed>2072756651</randomSeed>
+				<usesDefiniteArticle>True</usesDefiniteArticle>
+				<nameLocked>True</nameLocked>
+				<apparelRequirements>
+					<li>
+						<allowedFactionCategoryTags IsNull="True" />
+						<disallowedFactionCategoryTags IsNull="True" />
+						<anyMemeRequired IsNull="True" />
+						<requirement>
+							<bodyPartGroupsMatchAny>
+								<li>Torso</li>
+								<li>Neck</li>
+								<li>Shoulders</li>
+								<li>Arms</li>
+							</bodyPartGroupsMatchAny>
+							<requiredDefs>
+								<li>Apparel_CollarShirt</li>
+							</requiredDefs>
+							<requiredTags IsNull="True" />
+							<allowedTags IsNull="True" />
+						</requirement>
+					</li>
+				</apparelRequirements>
+				<chosenPawn>
+					<pawn>null</pawn>
+					<abilities>
+						<li>
+							<def>VME_CallTradeCaravan</def>
+							<Id>661</Id>
+							<sourcePrecept>Precept_2203</sourcePrecept>
+							<verbTracker>
+								<verbs>
+									<li Class="Verb_CastAbility">
+										<loadID>Ability_661_0</loadID>
+										<currentTarget>(0, 0, 0)</currentTarget>
+										<currentDestination>(0, 0, 0)</currentDestination>
+										<lastShotTick>-999999</lastShotTick>
+										<canHitNonTargetPawnsNow>True</canHitNonTargetPawnsNow>
+										<MVCF_ManagedVerb IsNull="True" />
+										<ability>Ability_661</ability>
+									</li>
+								</verbs>
+							</verbTracker>
+							<maxCharges>0</maxCharges>
+							<charges>0</charges>
+						</li>
+					</abilities>
+				</chosenPawn>
+			</li>
+			<li Class="Precept_Apparel">
+				<name>uniforme corporativo</name>
+				<def>ApparelDesired_Strong_Subordinate</def>
+				<ID>2204</ID>
+				<randomSeed>1002416554</randomSeed>
+				<usesDefiniteArticle>True</usesDefiniteArticle>
+				<descOverride>Os membros do gênero todos ficarão satisfeitos quando usarem um camisa de botão. Os membros do todos chegarão vestindo um camisa de botão, a menos que isso interfira com armadura.</descOverride>
+				<apparelDef>Apparel_CollarShirt</apparelDef>
+			<nameLocked>True</nameLocked></li>
+			<li Class="Precept_Building">
+				<name>Altar heliciano</name>
+				<def>IdeoBuilding</def>
+				<ID>2210</ID>
+				<randomSeed>-585807189</randomSeed>
+				<usesDefiniteArticle>True</usesDefiniteArticle>
+				<thingDef>Altar_Medium</thingDef>
+				<presenceDemand>
+					<ID>32</ID>
+					<minExpectation>High</minExpectation>
+					<roomRequirements>
+						<li Class="RoomRequirement_TerrainWithTags">
+							<labelKey>RoomRequirementAllFloored</labelKey>
+							<tags>
+								<li>Floor</li>
+								<li>FineFloor</li>
+							</tags>
+						</li>
+						<li Class="RoomRequirement_Impressiveness">
+							<impressiveness>60</impressiveness>
+						</li>
+						<li Class="RoomRequirement_ForbiddenBuildings">
+							<labelKey>RoomRequirementNoBeds</labelKey>
+							<buildingTags>
+								<li>Bed</li>
+							</buildingTags>
+						</li>
+						<li Class="RoomRequirement_ForbiddenBuildings">
+							<labelKey>RoomRequirementNoProductionFacilities</labelKey>
+							<buildingTags>
+								<li>Production</li>
+							</buildingTags>
+						</li>
+					</roomRequirements>
+				</presenceDemand>
+			</li>
+			<li Class="Precept_Relic">
+				<name>Primeiro Modificador Humano</name>
+				<def>IdeoRelic</def>
+				<ID>2215</ID>
+				<randomSeed>1978665437</randomSeed>
+				<usesDefiniteArticle>True</usesDefiniteArticle>
+				<nameLocked>True</nameLocked>
+				<thingDef>VQEA_MeleeWeapon_Scalpel</thingDef>
+				<stuff>Obsidian</stuff>
+			</li>
+			<li Class="Precept_Relic">
+				<name>Genoma Perfeito Criptografado</name>
+				<def>IdeoRelic</def>
+				<ID>2217</ID>
+				<randomSeed>-1693972436</randomSeed>
+				<usesDefiniteArticle>True</usesDefiniteArticle>
+				<nameLocked>True</nameLocked>
+				<thingDef>RelicInertCube</thingDef>
+				<stuff>Jade</stuff>
+			</li>
+			<li Class="Precept_Relic">
+				<name>Autoridade de Diretor</name>
+				<def>IdeoRelic</def>
+				<ID>2220</ID>
+				<randomSeed>976921178</randomSeed>
+				<usesDefiniteArticle>True</usesDefiniteArticle>
+				<nameLocked>True</nameLocked>
+				<thingDef>MeleeWeapon_MonoSwordBladelink</thingDef>
+			</li>
+		</precepts>
+		<thingStyleCategories>
+			<li>
+				<category>VME_Corporate</category>
+				<priority>4</priority>
+			</li>
+		</thingStyleCategories>
+		<usedSymbols>
+			<li>Modification mutant</li>
+			<li>corporate</li>
+			<li>Employee</li>
+		</usedSymbols>
+		<usedSymbolPacks>
+			<li>corporation</li>
+		</usedSymbolPacks>
+		<style>
+			<hairFrequencies>
+				<vals>
+					<li />
+					<li>
+						<gender>Female</gender>
+					</li>
+					<li />
+					<li>
+						<frequency>Normal</frequency>
+					</li>
+					<li>
+						<frequency>Normal</frequency>
+					</li>
+					<li>
+						<frequency>Normal</frequency>
+						<gender>Female</gender>
+					</li>
+					<li>
+						<frequency>Normal</frequency>
+						<gender>Any</gender>
+					</li>
+					<li>
+						<gender>Female</gender>
+					</li>
+					<li>
+						<frequency>Normal</frequency>
+					</li>
+					<li>
+						<frequency>Normal</frequency>
+					</li>
+					<li>
+						<frequency>Normal</frequency>
+					</li>
+					<li>
+						<gender>Female</gender>
+					</li>
+					<li>
+						<frequency>Normal</frequency>
+						<gender>Female</gender>
+					</li>
+					<li>
+						<frequency>Normal</frequency>
+						<gender>Female</gender>
+					</li>
+					<li>
+						<frequency>Normal</frequency>
+						<gender>Female</gender>
+					</li>
+					<li>
+						<frequency>Normal</frequency>
+						<gender>Female</gender>
+					</li>
+					<li>
+						<frequency>Normal</frequency>
+						<gender>Female</gender>
+					</li>
+					<li>
+						<frequency>Normal</frequency>
+						<gender>Female</gender>
+					</li>
+					<li>
+						<frequency>Normal</frequency>
+						<gender>MaleUsually</gender>
+					</li>
+					<li>
+						<frequency>Normal</frequency>
+						<gender>Any</gender>
+					</li>
+					<li>
+						<frequency>Normal</frequency>
+					</li>
+					<li>
+						<frequency>Normal</frequency>
+						<gender>Female</gender>
+					</li>
+					<li>
+						<frequency>Normal</frequency>
+						<gender>Female</gender>
+					</li>
+					<li>
+						<frequency>Normal</frequency>
+						<gender>Female</gender>
+					</li>
+					<li>
+						<frequency>Normal</frequency>
+						<gender>Female</gender>
+					</li>
+					<li>
+						<frequency>Normal</frequency>
+					</li>
+					<li>
+						<frequency>Normal</frequency>
+					</li>
+					<li />
+					<li>
+						<frequency>Normal</frequency>
+					</li>
+					<li>
+						<frequency>Normal</frequency>
+					</li>
+					<li>
+						<gender>MaleUsually</gender>
+					</li>
+					<li>
+						<gender>FemaleUsually</gender>
+					</li>
+					<li>
+						<gender>FemaleUsually</gender>
+					</li>
+					<li>
+						<gender>MaleUsually</gender>
+					</li>
+					<li>
+						<gender>MaleUsually</gender>
+					</li>
+					<li>
+						<gender>MaleUsually</gender>
+					</li>
+					<li>
+						<gender>Any</gender>
+					</li>
+					<li>
+						<gender>Any</gender>
+					</li>
+					<li>
+						<gender>FemaleUsually</gender>
+					</li>
+					<li>
+						<gender>FemaleUsually</gender>
+					</li>
+					<li>
+						<gender>FemaleUsually</gender>
+					</li>
+					<li />
+					<li>
+						<gender>MaleUsually</gender>
+					</li>
+					<li>
+						<gender>MaleUsually</gender>
+					</li>
+					<li>
+						<gender>Any</gender>
+					</li>
+					<li>
+						<gender>Any</gender>
+					</li>
+					<li>
+						<frequency>Normal</frequency>
+						<gender>Any</gender>
+					</li>
+					<li>
+						<gender>MaleUsually</gender>
+					</li>
+					<li>
+						<gender>Any</gender>
+					</li>
+					<li />
+					<li>
+						<frequency>Normal</frequency>
+						<gender>MaleUsually</gender>
+					</li>
+					<li>
+						<frequency>Normal</frequency>
+						<gender>Female</gender>
+					</li>
+					<li>
+						<gender>Female</gender>
+					</li>
+					<li>
+						<frequency>Normal</frequency>
+						<gender>Female</gender>
+					</li>
+					<li>
+						<frequency>Normal</frequency>
+						<gender>Female</gender>
+					</li>
+					<li>
+						<frequency>Normal</frequency>
+						<gender>Female</gender>
+					</li>
+					<li>
+						<frequency>Normal</frequency>
+						<gender>Female</gender>
+					</li>
+					<li>
+						<frequency>Normal</frequency>
+						<gender>Female</gender>
+					</li>
+					<li>
+						<frequency>Normal</frequency>
+					</li>
+					<li>
+						<frequency>Normal</frequency>
+					</li>
+					<li />
+					<li />
+					<li>
+						<gender>Any</gender>
+					</li>
+					<li>
+						<gender>Any</gender>
+					</li>
+					<li>
+						<gender>Any</gender>
+					</li>
+					<li>
+						<gender>Any</gender>
+					</li>
+					<li>
+						<gender>Any</gender>
+					</li>
+					<li>
+						<gender>Any</gender>
+					</li>
+					<li>
+						<gender>Any</gender>
+					</li>
+					<li>
+						<gender>Any</gender>
+					</li>
+					<li>
+						<gender>Any</gender>
+					</li>
+					<li>
+						<gender>Any</gender>
+					</li>
+					<li>
+						<gender>Any</gender>
+					</li>
+					<li>
+						<gender>Any</gender>
+					</li>
+					<li>
+						<gender>Any</gender>
+					</li>
+					<li>
+						<gender>Any</gender>
+					</li>
+					<li>
+						<gender>Any</gender>
+					</li>
+					<li>
+						<gender>Any</gender>
+					</li>
+					<li>
+						<gender>Any</gender>
+					</li>
+					<li>
+						<gender>Any</gender>
+					</li>
+					<li>
+						<frequency>Normal</frequency>
+						<gender>Any</gender>
+					</li>
+					<li>
+						<frequency>Normal</frequency>
+						<gender>Any</gender>
+					</li>
+					<li>
+						<frequency>Normal</frequency>
+						<gender>Any</gender>
+					</li>
+					<li>
+						<frequency>Normal</frequency>
+						<gender>Any</gender>
+					</li>
+					<li>
+						<frequency>Normal</frequency>
+						<gender>Any</gender>
+					</li>
+					<li>
+						<frequency>Normal</frequency>
+						<gender>Any</gender>
+					</li>
+					<li>
+						<frequency>Normal</frequency>
+						<gender>Any</gender>
+					</li>
+					<li>
+						<frequency>Normal</frequency>
+						<gender>Any</gender>
+					</li>
+					<li>
+						<frequency>Normal</frequency>
+						<gender>Any</gender>
+					</li>
+					<li>
+						<frequency>Normal</frequency>
+						<gender>Any</gender>
+					</li>
+					<li>
+						<frequency>Normal</frequency>
+						<gender>Any</gender>
+					</li>
+					<li>
+						<frequency>Normal</frequency>
+						<gender>Any</gender>
+					</li>
+					<li>
+						<frequency>Normal</frequency>
+						<gender>Any</gender>
+					</li>
+					<li>
+						<frequency>Normal</frequency>
+						<gender>Any</gender>
+					</li>
+					<li>
+						<frequency>Normal</frequency>
+						<gender>Any</gender>
+					</li>
+					<li>
+						<frequency>Normal</frequency>
+						<gender>Any</gender>
+					</li>
+					<li>
+						<frequency>Normal</frequency>
+						<gender>Any</gender>
+					</li>
+					<li>
+						<frequency>Normal</frequency>
+						<gender>Any</gender>
+					</li>
+					<li>
+						<frequency>Normal</frequency>
+						<gender>Any</gender>
+					</li>
+					<li>
+						<frequency>Normal</frequency>
+						<gender>Any</gender>
+					</li>
+					<li>
+						<frequency>Normal</frequency>
+						<gender>Any</gender>
+					</li>
+					<li>
+						<frequency>Normal</frequency>
+						<gender>Any</gender>
+					</li>
+					<li>
+						<frequency>Normal</frequency>
+						<gender>Any</gender>
+					</li>
+					<li>
+						<frequency>Normal</frequency>
+						<gender>Any</gender>
+					</li>
+					<li>
+						<frequency>Normal</frequency>
+						<gender>Any</gender>
+					</li>
+					<li>
+						<frequency>Normal</frequency>
+						<gender>Any</gender>
+					</li>
+					<li>
+						<frequency>Normal</frequency>
+						<gender>Any</gender>
+					</li>
+					<li>
+						<frequency>Normal</frequency>
+						<gender>Any</gender>
+					</li>
+					<li>
+						<frequency>Normal</frequency>
+						<gender>Any</gender>
+					</li>
+					<li>
+						<frequency>Normal</frequency>
+						<gender>Any</gender>
+					</li>
+					<li>
+						<frequency>Normal</frequency>
+						<gender>Any</gender>
+					</li>
+					<li>
+						<frequency>Normal</frequency>
+						<gender>Any</gender>
+					</li>
+					<li>
+						<frequency>Normal</frequency>
+						<gender>Any</gender>
+					</li>
+					<li>
+						<frequency>Normal</frequency>
+						<gender>Any</gender>
+					</li>
+					<li>
+						<frequency>Normal</frequency>
+						<gender>Any</gender>
+					</li>
+					<li>
+						<frequency>Normal</frequency>
+						<gender>Any</gender>
+					</li>
+					<li>
+						<frequency>Normal</frequency>
+						<gender>Any</gender>
+					</li>
+					<li>
+						<frequency>Normal</frequency>
+						<gender>Any</gender>
+					</li>
+					<li>
+						<frequency>Normal</frequency>
+						<gender>Any</gender>
+					</li>
+					<li>
+						<frequency>Normal</frequency>
+						<gender>Any</gender>
+					</li>
+					<li>
+						<frequency>Normal</frequency>
+						<gender>Any</gender>
+					</li>
+					<li>
+						<frequency>Normal</frequency>
+						<gender>Any</gender>
+					</li>
+					<li>
+						<frequency>Normal</frequency>
+						<gender>Any</gender>
+					</li>
+					<li>
+						<frequency>Normal</frequency>
+						<gender>Any</gender>
+					</li>
+					<li>
+						<frequency>Normal</frequency>
+						<gender>Any</gender>
+					</li>
+					<li>
+						<frequency>Normal</frequency>
+						<gender>Any</gender>
+					</li>
+					<li>
+						<frequency>Normal</frequency>
+						<gender>Any</gender>
+					</li>
+				</vals>
+			</hairFrequencies>
+			<beardFrequencies>
+				<vals>
+					<li>
+						<frequency>Frequent</frequency>
+						<gender>Any</gender>
+					</li>
+					<li />
+					<li />
+					<li />
+					<li>
+						<frequency>Uncommon</frequency>
+					</li>
+					<li>
+						<frequency>Uncommon</frequency>
+					</li>
+					<li />
+					<li>
+						<frequency>Uncommon</frequency>
+					</li>
+					<li>
+						<frequency>Uncommon</frequency>
+					</li>
+					<li>
+						<frequency>Uncommon</frequency>
+					</li>
+					<li />
+					<li />
+					<li>
+						<frequency>Uncommon</frequency>
+					</li>
+					<li>
+						<frequency>Uncommon</frequency>
+					</li>
+					<li>
+						<frequency>Uncommon</frequency>
+					</li>
+					<li>
+						<frequency>Uncommon</frequency>
+					</li>
+					<li />
+					<li>
+						<frequency>Rare</frequency>
+					</li>
+					<li>
+						<frequency>Rare</frequency>
+					</li>
+					<li />
+					<li>
+						<frequency>Uncommon</frequency>
+					</li>
+					<li>
+						<frequency>Rare</frequency>
+					</li>
+					<li />
+					<li>
+						<frequency>Rare</frequency>
+					</li>
+					<li />
+					<li>
+						<frequency>Rare</frequency>
+					</li>
+					<li />
+					<li>
+						<frequency>Uncommon</frequency>
+					</li>
+					<li />
+					<li>
+						<frequency>Uncommon</frequency>
+					</li>
+					<li>
+						<frequency>Rare</frequency>
+					</li>
+					<li>
+						<frequency>Normal</frequency>
+						<gender>Any</gender>
+					</li>
+					<li>
+						<frequency>Normal</frequency>
+						<gender>Any</gender>
+					</li>
+					<li>
+						<frequency>Normal</frequency>
+						<gender>Any</gender>
+					</li>
+					<li>
+						<frequency>Normal</frequency>
+						<gender>Any</gender>
+					</li>
+					<li>
+						<frequency>Normal</frequency>
+						<gender>Any</gender>
+					</li>
+					<li>
+						<frequency>Normal</frequency>
+						<gender>Any</gender>
+					</li>
+					<li>
+						<frequency>Normal</frequency>
+						<gender>Any</gender>
+					</li>
+					<li>
+						<frequency>Normal</frequency>
+						<gender>Any</gender>
+					</li>
+					<li>
+						<frequency>Normal</frequency>
+						<gender>Any</gender>
+					</li>
+					<li>
+						<frequency>Normal</frequency>
+						<gender>Any</gender>
+					</li>
+					<li>
+						<frequency>Uncommon</frequency>
+					</li>
+					<li>
+						<frequency>Uncommon</frequency>
+					</li>
+					<li>
+						<frequency>Uncommon</frequency>
+					</li>
+					<li>
+						<frequency>Uncommon</frequency>
+					</li>
+					<li>
+						<frequency>Uncommon</frequency>
+					</li>
+					<li>
+						<frequency>Uncommon</frequency>
+					</li>
+					<li>
+						<frequency>Uncommon</frequency>
+					</li>
+					<li>
+						<frequency>Uncommon</frequency>
+					</li>
+					<li>
+						<frequency>Uncommon</frequency>
+					</li>
+					<li>
+						<frequency>Uncommon</frequency>
+					</li>
+					<li>
+						<frequency>Uncommon</frequency>
+					</li>
+				</vals>
+			</beardFrequencies>
+			<tattooFrequencies>
+				<vals>
+					<li>
+						<frequency>Normal</frequency>
+						<gender>Any</gender>
+					</li>
+					<li>
+						<frequency>Normal</frequency>
+						<gender>Any</gender>
+					</li>
+					<li>
+						<gender>Any</gender>
+					</li>
+					<li>
+						<gender>Any</gender>
+					</li>
+					<li>
+						<gender>Any</gender>
+					</li>
+					<li>
+						<gender>Any</gender>
+					</li>
+					<li>
+						<gender>Any</gender>
+					</li>
+					<li>
+						<gender>Any</gender>
+					</li>
+					<li>
+						<gender>Any</gender>
+					</li>
+					<li>
+						<gender>Any</gender>
+					</li>
+					<li>
+						<gender>Any</gender>
+					</li>
+					<li>
+						<gender>Any</gender>
+					</li>
+					<li>
+						<gender>Any</gender>
+					</li>
+					<li>
+						<gender>Any</gender>
+					</li>
+					<li>
+						<gender>Any</gender>
+					</li>
+					<li>
+						<gender>Any</gender>
+					</li>
+					<li>
+						<gender>Any</gender>
+					</li>
+					<li>
+						<gender>Any</gender>
+					</li>
+					<li>
+						<gender>Any</gender>
+					</li>
+					<li>
+						<gender>Any</gender>
+					</li>
+					<li>
+						<gender>Any</gender>
+					</li>
+					<li>
+						<gender>Any</gender>
+					</li>
+					<li>
+						<gender>Any</gender>
+					</li>
+					<li>
+						<gender>Any</gender>
+					</li>
+					<li>
+						<gender>Any</gender>
+					</li>
+					<li>
+						<gender>Any</gender>
+					</li>
+					<li>
+						<gender>Any</gender>
+					</li>
+					<li>
+						<gender>Any</gender>
+					</li>
+					<li>
+						<gender>Any</gender>
+					</li>
+					<li>
+						<gender>Any</gender>
+					</li>
+					<li>
+						<gender>Any</gender>
+					</li>
+				</vals>
+			</tattooFrequencies>
+			<styleForThingDef>
+				<keys>
+					<li>Altar_Large</li>
+					<li>SculptureSmall</li>
+					<li>Apparel_CollarShirt</li>
+					<li>Altar_Grand</li>
+					<li>Altar_Medium</li>
+					<li>Altar_Small</li>
+					<li>SculptureGrand</li>
+					<li>SculptureLarge</li>
+					<li>Ideogram</li>
+					<li>MeleeWeapon_LongSword</li>
+					<li>MeleeWeapon_Gladius</li>
+					<li>Bow_Short</li>
+					<li>Bow_Great</li>
+					<li>Bow_Recurve</li>
+					<li>Gun_PumpShotgun</li>
+					<li>Gun_ChainShotgun</li>
+					<li>Gun_BoltActionRifle</li>
+					<li>MeleeWeapon_Knife</li>
+					<li>VFEM2_Gun_Flintlock</li>
+					<li>MeleeWeapon_Ikwa</li>
+					<li>MeleeWeapon_Spear</li>
+					<li>MeleeWeapon_Mace</li>
+					<li>MeleeWeapon_Axe</li>
+					<li>MeleeWeapon_BreachAxe</li>
+					<li>MeleeWeapon_Warhammer</li>
+					<li>Gun_Minigun</li>
+					<li>Gun_LMG</li>
+					<li>VFEM2_Gun_Musket</li>
+					<li>Gun_Autopistol</li>
+					<li>MeleeWeapon_Club</li>
+					<li>Gun_Revolver</li>
+					<li>Gun_AssaultRifle</li>
+					<li>Gun_ChargeRifle</li>
+					<li>Gun_SniperRifle</li>
+					<li>Gun_MachinePistol</li>
+					<li>Gun_HeavySMG</li>
+				</keys>
+				<values>
+					<li>
+						<category>VME_Corporate</category>
+						<styleDef>VME_Corporate_AltarLarge</styleDef>
+					</li>
+					<li>
+						<category>VME_Corporate</category>
+						<styleDef>VME_Corporate_SculptureSmall</styleDef>
+					</li>
+					<li>
+						<category>VME_Corporate</category>
+						<styleDef>VME_Corporate_Apparel_CollarShirt</styleDef>
+					</li>
+					<li>
+						<category>VME_Corporate</category>
+						<styleDef>VME_Corporate_AltarGrand</styleDef>
+					</li>
+					<li>
+						<category>VME_Corporate</category>
+						<styleDef>VME_Corporate_AltarMedium</styleDef>
+					</li>
+					<li>
+						<category>VME_Corporate</category>
+						<styleDef>VME_Corporate_AltarSmall</styleDef>
+					</li>
+					<li>
+						<category>VME_Corporate</category>
+						<styleDef>VME_Corporate_SculptureGrand</styleDef>
+					</li>
+					<li>
+						<category>VME_Corporate</category>
+						<styleDef>VME_Corporate_SculptureLarge</styleDef>
+					</li>
+					<li>
+						<category>Hindu</category>
+						<styleDef>Hindu_IdeogramB</styleDef>
+					</li>
+					<li>
+						<category>VME_Corporate</category>
+						<styleDef>VME_Corporate_Sword</styleDef>
+					</li>
+					<li>
+						<category>VME_Corporate</category>
+						<styleDef>VME_Corporate_Gladius</styleDef>
+					</li>
+					<li>
+						<category>VME_Corporate</category>
+						<styleDef>VME_Corporate_Bow</styleDef>
+					</li>
+					<li>
+						<category>VME_Corporate</category>
+						<styleDef>VME_Corporate_GreatBow</styleDef>
+					</li>
+					<li>
+						<category>VME_Corporate</category>
+						<styleDef>VME_Corporate_RecurveBow</styleDef>
+					</li>
+					<li>
+						<category>VME_Corporate</category>
+						<styleDef>VME_Corporate_PumpShotgun</styleDef>
+					</li>
+					<li>
+						<category>VME_Corporate</category>
+						<styleDef>VME_Corporate_ChainShotgun</styleDef>
+					</li>
+					<li>
+						<category>VME_Corporate</category>
+						<styleDef>VME_Corporate_BoltActionRifle</styleDef>
+					</li>
+					<li>
+						<category>VME_Corporate</category>
+						<styleDef>VME_Corporate_Knife</styleDef>
+					</li>
+					<li>
+						<category>VME_Corporate</category>
+						<styleDef>VME_Corporate_Flintlock</styleDef>
+					</li>
+					<li>
+						<category>VME_Corporate</category>
+						<styleDef>VME_Corporate_Ikwa</styleDef>
+					</li>
+					<li>
+						<category>VME_Corporate</category>
+						<styleDef>VME_Corporate_Spear</styleDef>
+					</li>
+					<li>
+						<category>VME_Corporate</category>
+						<styleDef>VME_Corporate_Mace</styleDef>
+					</li>
+					<li>
+						<category>VME_Corporate</category>
+						<styleDef>VME_Corporate_Axe</styleDef>
+					</li>
+					<li>
+						<category>VME_Corporate</category>
+						<styleDef>VME_Corporate_Pickaxe</styleDef>
+					</li>
+					<li>
+						<category>VME_Corporate</category>
+						<styleDef>VME_Corporate_Hammer</styleDef>
+					</li>
+					<li>
+						<category>VME_Corporate</category>
+						<styleDef>VME_Corporate_Minigun</styleDef>
+					</li>
+					<li>
+						<category>VME_Corporate</category>
+						<styleDef>VME_Corporate_LMG</styleDef>
+					</li>
+					<li>
+						<category>VME_Corporate</category>
+						<styleDef>VME_Corporate_Musket</styleDef>
+					</li>
+					<li>
+						<category>VME_Corporate</category>
+						<styleDef>VME_Corporate_Autopistol</styleDef>
+					</li>
+					<li>
+						<category>VME_Corporate</category>
+						<styleDef>VME_Corporate_Club</styleDef>
+					</li>
+					<li>
+						<category>VME_Corporate</category>
+						<styleDef>VME_Corporate_Revolver</styleDef>
+					</li>
+					<li>
+						<category>VME_Corporate</category>
+						<styleDef>VME_Corporate_AssaultRifle</styleDef>
+					</li>
+					<li>
+						<category>VME_Corporate</category>
+						<styleDef>VME_Corporate_ChargeRifle</styleDef>
+					</li>
+					<li>
+						<category>VME_Corporate</category>
+						<styleDef>VME_Corporate_SniperRifle</styleDef>
+					</li>
+					<li>
+						<category>VME_Corporate</category>
+						<styleDef>VME_Corporate_MachinePistol</styleDef>
+					</li>
+					<li>
+						<category>VME_Corporate</category>
+						<styleDef>VME_Corporate_HeavySMG</styleDef>
+					</li>
+				</values>
+			</styleForThingDef>
+		</style>
+		<solid>True</solid>
+	</ideo>
+</savedideo>

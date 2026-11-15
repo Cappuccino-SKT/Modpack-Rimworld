@@ -12,6 +12,13 @@
     <labelPlural>voluntários de pesquisa</labelPlural>
     <defaultFactionDef>EQ_Faction_Silencio</defaultFactionDef>
     <combatPower>45</combatPower>
+    <!-- Xeno de elite (não hereditário); o padrão por baixo vem do doubleXenotypeChances do xeno. -->
+    <useFactionXenotypes>false</useFactionXenotypes>
+    <xenotypeSet Inherit="False">
+      <xenotypeChances>
+        <EQ_Xeno_Anotado>1</EQ_Xeno_Anotado>
+      </xenotypeChances>
+    </xenotypeSet>
   </PawnKindDef>
 
   <PawnKindDef ParentName="MercenaryMidTierBase">
@@ -47,6 +54,13 @@
     </weaponTags>
     <isGoodPsychicRitualInvoker>true</isGoodPsychicRitualInvoker>
     <initialResistanceRange>14~22</initialResistanceRange>
+    <!-- Xeno de elite (não hereditário); o padrão por baixo vem do doubleXenotypeChances do xeno. -->
+    <useFactionXenotypes>false</useFactionXenotypes>
+    <xenotypeSet Inherit="False">
+      <xenotypeChances>
+        <EQ_Xeno_Escriba>1</EQ_Xeno_Escriba>
+      </xenotypeChances>
+    </xenotypeSet>
   </PawnKindDef>
 
   <PawnKindDef ParentName="MercenaryEliteBase">
@@ -63,6 +77,13 @@
       <li>IndustrialGunAdvanced</li>
     </weaponTags>
     <initialResistanceRange>20~30</initialResistanceRange>
+    <!-- Xeno de elite (não hereditário); o padrão por baixo vem do doubleXenotypeChances do xeno. -->
+    <useFactionXenotypes>false</useFactionXenotypes>
+    <xenotypeSet Inherit="False">
+      <xenotypeChances>
+        <EQ_Xeno_Velado>1</EQ_Xeno_Velado>
+      </xenotypeChances>
+    </xenotypeSet>
   </PawnKindDef>
 
   <PawnKindDef ParentName="MercenaryEliteTierBase">
@@ -94,6 +115,13 @@
     </weaponTags>
     <isGoodPsychicRitualInvoker>true</isGoodPsychicRitualInvoker>
     <initialResistanceRange>30~45</initialResistanceRange>
+    <!-- Xeno de elite (não hereditário); o padrão por baixo vem do doubleXenotypeChances do xeno. -->
+    <useFactionXenotypes>false</useFactionXenotypes>
+    <xenotypeSet Inherit="False">
+      <xenotypeChances>
+        <EQ_Xeno_Arquivista>1</EQ_Xeno_Arquivista>
+      </xenotypeChances>
+    </xenotypeSet>
   </PawnKindDef>
 
   <!-- =====================================================================
@@ -119,6 +147,13 @@
       <li>IndustrialGunAdvanced</li>
     </weaponTags>
     <initialResistanceRange>8~14</initialResistanceRange>
+    <!-- Xeno de elite (não hereditário); o padrão por baixo vem do doubleXenotypeChances do xeno. -->
+    <useFactionXenotypes>false</useFactionXenotypes>
+    <xenotypeSet Inherit="False">
+      <xenotypeChances>
+        <EQ_Xeno_ModeloBase>1</EQ_Xeno_ModeloBase>
+      </xenotypeChances>
+    </xenotypeSet>
   </PawnKindDef>
 
   <PawnKindDef ParentName="MercenaryMidTierBase">
@@ -141,6 +176,13 @@
       <li>GrenadeTox</li>
     </weaponTags>
     <initialResistanceRange>12~20</initialResistanceRange>
+    <!-- Xeno de elite (não hereditário); o padrão por baixo vem do doubleXenotypeChances do xeno. -->
+    <useFactionXenotypes>false</useFactionXenotypes>
+    <xenotypeSet Inherit="False">
+      <xenotypeChances>
+        <EQ_Xeno_Compliance>1</EQ_Xeno_Compliance>
+      </xenotypeChances>
+    </xenotypeSet>
   </PawnKindDef>
 
   <!-- Sempre de um xenotipo de elite: o "produto premium" do catálogo. -->
@@ -156,20 +198,14 @@
       <li>IndustrialGunAdvanced</li>
       <li>BeamGraserGun</li>
     </weaponTags>
-    <xenotypeSet>
+    <initialResistanceRange>20~30</initialResistanceRange>
+    <!-- Xeno de elite (não hereditário); o padrão por baixo vem do doubleXenotypeChances do xeno. -->
+    <useFactionXenotypes>false</useFactionXenotypes>
+    <xenotypeSet Inherit="False">
       <xenotypeChances>
-        <Hussar>0.15</Hussar>
-        <Sanguophage>0.1</Sanguophage>
-        <AG_Drakonori MayRequire="sarg.alphagenes">0.15</AG_Drakonori>
-        <AG_Efreet MayRequire="sarg.alphagenes">0.1</AG_Efreet>
-        <AG_Helixien MayRequire="sarg.alphagenes">0.1</AG_Helixien>
-        <VRESaurids_Saurid MayRequire="vanillaracesexpanded.saurid">0.1</VRESaurids_Saurid>
-        <VRE_Lycan MayRequire="vanillaracesexpanded.lycanthrope">0.1</VRE_Lycan>
-        <VREH_Uhlan MayRequire="vanillaracesexpanded.hussar">0.1</VREH_Uhlan>
-        <VRE_Strigoi MayRequire="vanillaracesexpanded.sanguophage">0.1</VRE_Strigoi>
+        <EQ_Xeno_Premium>1</EQ_Xeno_Premium>
       </xenotypeChances>
     </xenotypeSet>
-    <initialResistanceRange>20~30</initialResistanceRange>
   </PawnKindDef>
 
   <PawnKindDef ParentName="MercenaryEliteTierBase">
@@ -186,6 +222,13 @@
       <li>IndustrialGunAdvanced</li>
     </weaponTags>
     <initialResistanceRange>30~45</initialResistanceRange>
+    <!-- Xeno de elite (não hereditário); o padrão por baixo vem do doubleXenotypeChances do xeno. -->
+    <useFactionXenotypes>false</useFactionXenotypes>
+    <xenotypeSet Inherit="False">
+      <xenotypeChances>
+        <EQ_Xeno_Executiva>1</EQ_Xeno_Executiva>
+      </xenotypeChances>
+    </xenotypeSet>
   </PawnKindDef>
 
   <!-- =====================================================================
@@ -234,6 +277,14 @@
       <li>IndustrialGunAdvanced</li>
     </weaponTags>
     <initialResistanceRange>25~35</initialResistanceRange>
+    <!-- Xeno de elite (não hereditário); o padrão por baixo vem do doubleXenotypeChances do xeno. -->
+    <useFactionXenotypes>false</useFactionXenotypes>
+    <xenotypeSet Inherit="False">
+      <xenotypeChances>
+        <EQ_Xeno_Cavaleiro>0.85</EQ_Xeno_Cavaleiro>
+        <EQ_Xeno_EngenheiroPrimaz>0.15</EQ_Xeno_EngenheiroPrimaz>
+      </xenotypeChances>
+    </xenotypeSet>
   </PawnKindDef>
 
   <PawnKindDef ParentName="MechanitorBase">
@@ -244,6 +295,13 @@
     <combatPower>85</combatPower>
     <initialWillRange>2~4</initialWillRange>
     <initialResistanceRange>14~22</initialResistanceRange>
+    <!-- Xeno de elite (não hereditário); o padrão por baixo vem do doubleXenotypeChances do xeno. -->
+    <useFactionXenotypes>false</useFactionXenotypes>
+    <xenotypeSet Inherit="False">
+      <xenotypeChances>
+        <EQ_Xeno_Tecnico>1</EQ_Xeno_Tecnico>
+      </xenotypeChances>
+    </xenotypeSet>
   </PawnKindDef>
 
   <PawnKindDef ParentName="MercenaryEliteTierBase">
@@ -317,6 +375,13 @@
         </unlockedPaths>
       </li>
     </modExtensions>
+    <!-- Xeno de elite (não hereditário); o padrão por baixo vem do doubleXenotypeChances do xeno. -->
+    <useFactionXenotypes>false</useFactionXenotypes>
+    <xenotypeSet Inherit="False">
+      <xenotypeChances>
+        <EQ_Xeno_Tenor>1</EQ_Xeno_Tenor>
+      </xenotypeChances>
+    </xenotypeSet>
   </PawnKindDef>
 
   <PawnKindDef ParentName="MercenaryEliteBase">
@@ -345,6 +410,13 @@
         </unlockedPaths>
       </li>
     </modExtensions>
+    <!-- Xeno de elite (não hereditário); o padrão por baixo vem do doubleXenotypeChances do xeno. -->
+    <useFactionXenotypes>false</useFactionXenotypes>
+    <xenotypeSet Inherit="False">
+      <xenotypeChances>
+        <EQ_Xeno_Soprano>1</EQ_Xeno_Soprano>
+      </xenotypeChances>
+    </xenotypeSet>
   </PawnKindDef>
 
   <PawnKindDef ParentName="MercenaryEliteTierBase">
@@ -376,6 +448,13 @@
         </unlockedPaths>
       </li>
     </modExtensions>
+    <!-- Xeno de elite (não hereditário); o padrão por baixo vem do doubleXenotypeChances do xeno. -->
+    <useFactionXenotypes>false</useFactionXenotypes>
+    <xenotypeSet Inherit="False">
+      <xenotypeChances>
+        <EQ_Xeno_SangueMaestro>1</EQ_Xeno_SangueMaestro>
+      </xenotypeChances>
+    </xenotypeSet>
   </PawnKindDef>
 
   <!-- =====================================================================

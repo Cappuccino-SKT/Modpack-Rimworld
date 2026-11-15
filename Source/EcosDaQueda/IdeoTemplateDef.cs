@@ -21,6 +21,13 @@ namespace EcosDaQueda
     {
         public FactionDef faction;
 
+        /// <summary>
+        /// Ideologia salva no editor do jogo (Ideos/&lt;ideoFile&gt;.rid na pasta do mod, gerada por
+        /// EcosDaQueda-Dev/scripts/ideologias.py). Se carregar, substitui a ideologia inteira e os campos
+        /// abaixo (identidade, divindades, preceitos) são ignorados; servem só de reserva se o arquivo falhar.
+        /// </summary>
+        public string ideoFile;
+
         public string ideoName;
         public string adjective;
         public string memberName;

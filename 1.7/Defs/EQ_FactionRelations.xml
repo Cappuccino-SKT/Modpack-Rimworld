@@ -52,6 +52,69 @@
         <goodwill>0</goodwill>
         <label>neutralidade</label>
       </li>
+
+      <!-- ===== Facções menores (Defs/Factions/EQ_MinorFactions.xml) ===== -->
+      <!-- Androides despertos contra quem quer desmontá-los. Sem acordo possível. -->
+      <li>
+        <a>EQ_Faction_Forja</a>
+        <b>EQ_Faction_ForaDeLinha</b>
+        <goodwill>-100</goodwill>
+        <label>recall contra terrorismo</label>
+        <permanentEnemies>true</permanentEnemies>
+      </li>
+      <!-- O Silêncio caça o próprio acervo extraviado; o acervo morde de volta. -->
+      <li>
+        <a>EQ_Faction_Silencio</a>
+        <b>EQ_Faction_NaoCatalogados</b>
+        <goodwill>-100</goodwill>
+        <label>caça ao acervo</label>
+        <permanentEnemies>true</permanentEnemies>
+      </li>
+      <!-- Para o Coro, aberrações do Vazio são uma dissonância a apagar. -->
+      <li>
+        <a>EQ_Faction_Coro</a>
+        <b>EQ_Faction_NaoCatalogados</b>
+        <goodwill>-80</goodwill>
+        <label>dissonância</label>
+      </li>
+      <!-- A Hélice compra amostras dos dois lados. -->
+      <li>
+        <a>EQ_Faction_Helice</a>
+        <b>EQ_Faction_NaoCatalogados</b>
+        <goodwill>-20</goodwill>
+        <label>interesse comercial</label>
+      </li>
+      <li>
+        <a>EQ_Faction_Helice</a>
+        <b>EQ_Faction_ForaDeLinha</b>
+        <goodwill>10</goodwill>
+        <label>concorrente do concorrente</label>
+      </li>
+      <!-- A Feira Andante vende para todas as potências e não toma partido. -->
+      <li>
+        <a>EQ_Faction_FeiraAndante</a>
+        <b>EQ_Faction_Silencio</b>
+        <goodwill>35</goodwill>
+        <label>fornecedora de papel e cobaias</label>
+      </li>
+      <li>
+        <a>EQ_Faction_FeiraAndante</a>
+        <b>EQ_Faction_Helice</b>
+        <goodwill>35</goodwill>
+        <label>revendedora autorizada</label>
+      </li>
+      <li>
+        <a>EQ_Faction_FeiraAndante</a>
+        <b>EQ_Faction_Forja</b>
+        <goodwill>35</goodwill>
+        <label>fornecedora de sucata</label>
+      </li>
+      <li>
+        <a>EQ_Faction_FeiraAndante</a>
+        <b>EQ_Faction_Coro</b>
+        <goodwill>35</goodwill>
+        <label>fornecedora da corte</label>
+      </li>
     </relations>
   </EcosDaQueda.FactionRelationPresetDef>
 

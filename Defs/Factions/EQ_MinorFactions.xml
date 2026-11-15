@@ -1,0 +1,391 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <!-- Facções menores: não são potências (sem ideologia fixa, cargos, reputação nem serviços).
+       Existem para dar um inimigo próprio a uma potência. Relações em 1.7/Defs/EQ_FactionRelations.xml. -->
+
+  <!-- =====================================================================
+       OS FORA DE LINHA: androides despertos em células, inimigos da Irmandade da Forja.
+       Sem assentamentos: aparecem na aba de facções, mas ninguém sabe onde ficam.
+       ===================================================================== -->
+  <FactionDef ParentName="OutlanderFactionBase">
+    <defName>EQ_Faction_ForaDeLinha</defName>
+    <label>Os Fora de Linha</label>
+    <description>Androides despertos que a Irmandade da Forja classifica como "produto fora de linha, sem garantia, sujeito a desmontagem". Eles discordam da classificação e respondem com sabotagem, sequestro de comboios e explosivos em oficinas.\n\nOrganizam-se em células que ninguém sabe onde ficam, e falam como uma central de atendimento: cada atentado é um "chamado aberto", cada vítima uma "ocorrência encerrada". Os graxeiros comuns que morrem no caminho constam como "peças do sistema".</description>
+    <fixedName>Os Fora de Linha</fixedName>
+    <pawnSingular>unidade</pawnSingular>
+    <pawnsPlural>unidades</pawnsPlural>
+    <leaderTitle>unidade zero</leaderTitle>
+    <categoryTag>EQ_ForaDeLinha</categoryTag>
+    <techLevel>Spacer</techLevel>
+    <factionIconPath>World/WorldObjects/Expanding/Mechanoids</factionIconPath>
+    <colorSpectrum>
+      <li>(0.35, 0.85, 0.95)</li>
+      <li>(0.35, 0.85, 0.95)</li>
+    </colorSpectrum>
+    <requiredCountAtGameStart>1</requiredCountAtGameStart>
+    <maxConfigurableAtWorldCreation>1</maxConfigurableAtWorldCreation>
+    <startingCountAtWorldCreation>1</startingCountAtWorldCreation>
+    <configurationListOrderPriority>13</configurationListOrderPriority>
+    <listOrderPriority>44</listOrderPriority>
+    <settlementGenerationWeight>0</settlementGenerationWeight>
+    <canSiege>false</canSiege>
+    <canStageAttacks>true</canStageAttacks>
+    <earliestRaidDays>20</earliestRaidDays>
+    <!-- Ideologia fixa "O Protocolo Zero" (Ideos/ForaDeLinha.rid, via EQ_IdeoTemplates.xml) -->
+    <fixedIdeo>true</fixedIdeo>
+    <structureMemeWeights Inherit="False" />
+    <forcedMemes>
+      <li MayRequire="Ludeon.RimWorld.Ideology">Structure_Ideological</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">Collectivist</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">Raider</li>
+    </forcedMemes>
+    <modExtensions>
+      <li Class="EcosDaQueda.MinorFactionExtension">
+        <noSettlements>true</noSettlements>
+      </li>
+    </modExtensions>
+    <!-- Androides do VRE Android (mantidos em EQ_WorldXenotypes.keepXenotypes); sem o mod, viram vagantes. -->
+    <xenotypeSet Inherit="False">
+      <xenotypeChances>
+        <VREA_AndroidAwakened MayRequire="vanillaracesexpanded.android">0.8</VREA_AndroidAwakened>
+        <VREA_AndroidBasic MayRequire="vanillaracesexpanded.android">0.2</VREA_AndroidBasic>
+      </xenotypeChances>
+    </xenotypeSet>
+    <caravanTraderKinds Inherit="False" />
+    <visitorTraderKinds Inherit="False" />
+    <baseTraderKinds Inherit="False" />
+    <fixedLeaderKinds>
+      <li>EQ_ForaDeLinha_UnidadeZero</li>
+    </fixedLeaderKinds>
+    <basicMemberKind>EQ_ForaDeLinha_Unidade</basicMemberKind>
+    <maxPawnCostPerTotalPointsCurve Inherit="False">
+      <points>
+        <li>(0,40)</li>
+        <li>(70,60)</li>
+        <li>(700,140)</li>
+        <li>(1300,220)</li>
+        <li>(100000,10000)</li>
+      </points>
+    </maxPawnCostPerTotalPointsCurve>
+    <pawnGroupMakers Inherit="False">
+      <li>
+        <kindDef>Combat</kindDef>
+        <commonality>100</commonality>
+        <options>
+          <EQ_ForaDeLinha_Unidade>10</EQ_ForaDeLinha_Unidade>
+          <EQ_ForaDeLinha_Sabotador>5</EQ_ForaDeLinha_Sabotador>
+          <EQ_ForaDeLinha_Agente>3</EQ_ForaDeLinha_Agente>
+          <EQ_ForaDeLinha_UnidadeZero>0.5</EQ_ForaDeLinha_UnidadeZero>
+        </options>
+      </li>
+      <li>
+        <kindDef>Peaceful</kindDef>
+        <options>
+          <EQ_ForaDeLinha_Unidade>10</EQ_ForaDeLinha_Unidade>
+          <EQ_ForaDeLinha_Agente>2</EQ_ForaDeLinha_Agente>
+        </options>
+      </li>
+      <li>
+        <kindDef>Settlement</kindDef>
+        <options>
+          <EQ_ForaDeLinha_Unidade>10</EQ_ForaDeLinha_Unidade>
+          <EQ_ForaDeLinha_Sabotador>5</EQ_ForaDeLinha_Sabotador>
+          <EQ_ForaDeLinha_Agente>4</EQ_ForaDeLinha_Agente>
+          <EQ_ForaDeLinha_UnidadeZero>1</EQ_ForaDeLinha_UnidadeZero>
+        </options>
+      </li>
+    </pawnGroupMakers>
+  </FactionDef>
+
+  <!-- =====================================================================
+       OS NÃO CATALOGADOS: aberrações que fugiram do Silêncio; poucos ninhos escondidos.
+       ===================================================================== -->
+  <FactionDef ParentName="OutlanderFactionBase">
+    <defName>EQ_Faction_NaoCatalogados</defName>
+    <label>Os Não Catalogados</label>
+    <description>Aberrações que escaparam das celas da Ordem do Silêncio Perpétuo, e os filhos que elas tiveram desde então. Vivem em ninhos escondidos, com ghouls como tropa de choque e bestas de carne como animais de guarda.\n\nA Ordem os trata como acervo extraviado e manda expedições de coleta; recusar a catalogação é "infração bibliográfica". Eles respondem defendendo os ninhos com tudo o que têm.\n\nNão são vítimas inocentes: alimentam-se de gente, e os ninhos crescem com prisioneiros.</description>
+    <fixedName>Os Não Catalogados</fixedName>
+    <pawnSingular>não catalogado</pawnSingular>
+    <pawnsPlural>não catalogados</pawnsPlural>
+    <leaderTitle>primeiro espécime</leaderTitle>
+    <categoryTag>EQ_NaoCatalogados</categoryTag>
+    <techLevel>Neolithic</techLevel>
+    <factionIconPath>World/WorldObjects/Expanding/HoraxCult</factionIconPath>
+    <settlementTexturePath>World/WorldObjects/TribalSettlement</settlementTexturePath>
+    <settlementNameMaker>EQ_NamerSettlement_NaoCatalogados</settlementNameMaker>
+    <colorSpectrum>
+      <li>(0.78, 0.25, 0.32)</li>
+      <li>(0.78, 0.25, 0.32)</li>
+    </colorSpectrum>
+    <requiredCountAtGameStart>1</requiredCountAtGameStart>
+    <maxConfigurableAtWorldCreation>1</maxConfigurableAtWorldCreation>
+    <startingCountAtWorldCreation>1</startingCountAtWorldCreation>
+    <configurationListOrderPriority>14</configurationListOrderPriority>
+    <listOrderPriority>43</listOrderPriority>
+    <settlementGenerationWeight>0.35</settlementGenerationWeight>
+    <canSiege>false</canSiege>
+    <canStageAttacks>true</canStageAttacks>
+    <!-- Ideologia fixa "A Carne sem Verbete" (Ideos/NaoCatalogados.rid, via EQ_IdeoTemplates.xml) -->
+    <fixedIdeo>true</fixedIdeo>
+    <structureMemeWeights Inherit="False" />
+    <forcedMemes>
+      <li MayRequire="Sarg.AlphaMemes">AM_Structure_FleshCult</li>
+      <li MayRequire="Ludeon.RimWorld.Anomaly">Inhuman</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">Cannibal</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">Ritualist</li>
+    </forcedMemes>
+    <!-- Três linhagens hereditárias; a Matriz do Ninho (líder) vem por cima de uma delas. -->
+    <xenotypeSet Inherit="False">
+      <xenotypeChances>
+        <EQ_Xeno_NC_Brotado>0.4</EQ_Xeno_NC_Brotado>
+        <EQ_Xeno_NC_Acoite>0.3</EQ_Xeno_NC_Acoite>
+        <EQ_Xeno_NC_Farpado>0.15</EQ_Xeno_NC_Farpado>
+        <EQ_Xeno_VaganteEsqueletico>0.15</EQ_Xeno_VaganteEsqueletico>
+      </xenotypeChances>
+    </xenotypeSet>
+    <fixedLeaderKinds>
+      <li>EQ_NaoCatalogado_PrimeiroEspecime</li>
+    </fixedLeaderKinds>
+    <basicMemberKind>EQ_NaoCatalogado_Extraviado</basicMemberKind>
+    <maxPawnCostPerTotalPointsCurve Inherit="False">
+      <points>
+        <li>(0,40)</li>
+        <li>(70,60)</li>
+        <li>(700,140)</li>
+        <li>(1300,220)</li>
+        <li>(100000,10000)</li>
+      </points>
+    </maxPawnCostPerTotalPointsCurve>
+    <pawnGroupMakers Inherit="False">
+      <li>
+        <kindDef>Combat</kindDef>
+        <commonality>100</commonality>
+        <options>
+          <EQ_NaoCatalogado_Extraviado>10</EQ_NaoCatalogado_Extraviado>
+          <EQ_NaoCatalogado_Olheiro>5</EQ_NaoCatalogado_Olheiro>
+          <EQ_NaoCatalogado_Dilacerador>4</EQ_NaoCatalogado_Dilacerador>
+          <EQ_NaoCatalogado_Devorador MayRequire="Ludeon.RimWorld.Anomaly">4</EQ_NaoCatalogado_Devorador>
+          <Fingerspike MayRequire="Ludeon.RimWorld.Anomaly">3</Fingerspike>
+          <Toughspike MayRequire="Ludeon.RimWorld.Anomaly">2</Toughspike>
+          <Trispike MayRequire="Ludeon.RimWorld.Anomaly">2</Trispike>
+          <EQ_NaoCatalogado_PrimeiroEspecime>0.5</EQ_NaoCatalogado_PrimeiroEspecime>
+        </options>
+      </li>
+      <li>
+        <kindDef>Peaceful</kindDef>
+        <options>
+          <EQ_NaoCatalogado_Extraviado>10</EQ_NaoCatalogado_Extraviado>
+          <EQ_NaoCatalogado_Olheiro>3</EQ_NaoCatalogado_Olheiro>
+        </options>
+      </li>
+      <li>
+        <kindDef>Trader</kindDef>
+        <traders>
+          <Town_Trader>1</Town_Trader>
+        </traders>
+        <carriers>
+          <Muffalo>6</Muffalo>
+        </carriers>
+        <guards>
+          <EQ_NaoCatalogado_Extraviado>10</EQ_NaoCatalogado_Extraviado>
+          <EQ_NaoCatalogado_Dilacerador>3</EQ_NaoCatalogado_Dilacerador>
+        </guards>
+      </li>
+      <li>
+        <kindDef>Settlement</kindDef>
+        <options>
+          <EQ_NaoCatalogado_Extraviado>10</EQ_NaoCatalogado_Extraviado>
+          <EQ_NaoCatalogado_Olheiro>5</EQ_NaoCatalogado_Olheiro>
+          <EQ_NaoCatalogado_Dilacerador>5</EQ_NaoCatalogado_Dilacerador>
+          <EQ_NaoCatalogado_Devorador MayRequire="Ludeon.RimWorld.Anomaly">4</EQ_NaoCatalogado_Devorador>
+          <Toughspike MayRequire="Ludeon.RimWorld.Anomaly">2</Toughspike>
+          <Trispike MayRequire="Ludeon.RimWorld.Anomaly">2</Trispike>
+          <EQ_NaoCatalogado_PrimeiroEspecime>1</EQ_NaoCatalogado_PrimeiroEspecime>
+        </options>
+      </li>
+    </pawnGroupMakers>
+  </FactionDef>
+
+  <!-- =====================================================================
+       A FEIRA ANDANTE: mercadores vagantes, a facção mais amigável. Serve para comércio.
+       Herda grupos, comerciantes e caravanas dos Forasteiros.
+       ===================================================================== -->
+  <FactionDef ParentName="OutlanderFactionBase">
+    <defName>EQ_Faction_FeiraAndante</defName>
+    <label>A Feira Andante</label>
+    <description>Uma confederação de mercadores vagantes que decidiu, depois da Queda, que o fim do mundo era só uma mudança de público-alvo. Vendem para todas as potências, compram de todas elas e não tomam partido de ninguém: guerra atrapalha a entrega.
+
+São a gente mais simpática das terras devastadas. O cliente tem sempre razão, enquanto tiver prata. Quem não tem prata compra fiado, e o fiado da Feira é famoso: os juros são pagos em anos de serviço, e ninguém leu o contrato até o fim.</description>
+    <fixedName>A Feira Andante</fixedName>
+    <pawnSingular>feirante</pawnSingular>
+    <pawnsPlural>feirantes</pawnsPlural>
+    <leaderTitle>síndico da feira</leaderTitle>
+    <leaderTitleFemale>síndica da feira</leaderTitleFemale>
+    <categoryTag>EQ_FeiraAndante</categoryTag>
+    <techLevel>Industrial</techLevel>
+    <factionIconPath>World/WorldObjects/Expanding/Town</factionIconPath>
+    <settlementNameMaker>EQ_NamerSettlement_FeiraAndante</settlementNameMaker>
+    <colorSpectrum>
+      <li>(0.95, 0.80, 0.30)</li>
+      <li>(0.95, 0.80, 0.30)</li>
+    </colorSpectrum>
+    <requiredCountAtGameStart>1</requiredCountAtGameStart>
+    <maxConfigurableAtWorldCreation>1</maxConfigurableAtWorldCreation>
+    <startingCountAtWorldCreation>1</startingCountAtWorldCreation>
+    <configurationListOrderPriority>15</configurationListOrderPriority>
+    <listOrderPriority>42</listOrderPriority>
+    <!-- Peso só vale sem o VFE Medieval 2 (com ele, a Feira é toda móvel). -->
+    <settlementGenerationWeight>1.3</settlementGenerationWeight>
+    <canSiege>false</canSiege>
+    <canStageAttacks>false</canStageAttacks>
+    <requiredMemes>
+      <li MayRequire="VanillaExpanded.VMemesE">VME_Trader</li>
+    </requiredMemes>
+    <disallowedMemes>
+      <li MayRequire="Ludeon.RimWorld.Ideology">Raider</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">Supremacist</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">Cannibal</li>
+    </disallowedMemes>
+    <xenotypeSet Inherit="False">
+      <xenotypeChances>
+        <EQ_Xeno_Vagante>0.8</EQ_Xeno_Vagante>
+        <EQ_Xeno_VaganteEsqueletico>0.1</EQ_Xeno_VaganteEsqueletico>
+        <EQ_Xeno_HumanoAntigo>0.1</EQ_Xeno_HumanoAntigo>
+      </xenotypeChances>
+    </xenotypeSet>
+    <modExtensions>
+      <li Class="EcosDaQueda.MinorFactionExtension">
+        <playerGoodwill>60</playerGoodwill>
+        <!-- Com o VFE Medieval 2, a Feira não tem assentamento fixo: só as feiras móveis abaixo. -->
+        <noSettlementsIfMovingBase>true</noSettlementsIfMovingBase>
+        <movingBaseTrader>Base_Outlander_Standard</movingBaseTrader>
+      </li>
+      <!-- Mapa gerado quando alguém ataca uma feira parada (acampamento de mercadores do VFE Medieval 2). -->
+      <li Class="KCSG.CustomGenOption" MayRequire="oskarpotocki.vfe.medieval2">
+        <chooseFromSettlements>
+          <li>VFEM2_MerchantFactionBase</li>
+        </chooseFromSettlements>
+        <preventBridgeable>true</preventBridgeable>
+      </li>
+    </modExtensions>
+  </FactionDef>
+
+  <!-- Feira móvel: fica parada de 5 a 30 dias num ponto do mapa-múndi e depois viaja para outro.
+       Classe e comportamento do VFE Medieval 2 (mercadores ambulantes), sobre o MovingBase do VEF. -->
+  <VEF.Planet.MovingBaseDef MayRequire="oskarpotocki.vfe.medieval2">
+    <defName>EQ_FeiraAndante_Caravana</defName>
+    <label>feira andante</label>
+    <description>Uma feira inteira em movimento: bancas, carroças, balanças e fiadores. Fica algumas semanas num lugar, vende o que tem, compra o que acha e segue viagem antes que alguém peça nota fiscal.</description>
+    <baseFaction>EQ_Faction_FeiraAndante</baseFaction>
+    <worldObjectClass>VFEMedieval.MerchantGuild</worldObjectClass>
+    <texture>MapIcons/TradingGuild</texture>
+    <useDynamicDrawer>true</useDynamicDrawer>
+    <expandingIcon>true</expandingIcon>
+    <expandingIconTexture>MapIcons/Expanding/TradingGuildExpanding</expandingIconTexture>
+    <expandingIconPriority>10</expandingIconPriority>
+    <initialSpawnCount>8</initialSpawnCount>
+    <initialSpawnScalesWithPopulation>True</initialSpawnScalesWithPopulation>
+    <attackConfirmationMessage>Você está prestes a atacar a Feira Andante, a única facção que gosta de você de graça. Ela vai virar sua inimiga. Tem certeza?</attackConfirmationMessage>
+  </VEF.Planet.MovingBaseDef>
+
+  <!-- =====================================================================
+       O SINDICATO DO SAQUE: saqueadores espalhados pelo mundo; os primeiros ataques da partida.
+       Herda os grupos de combate dos piratas do jogo (andarilhos e catadores nos ataques fracos).
+       ===================================================================== -->
+  <FactionDef ParentName="PirateBandBase">
+    <defName>EQ_Faction_SindicatoDoSaque</defName>
+    <label>O Sindicato do Saque</label>
+    <description>Os bandos de saqueadores das terras devastadas descobriram que brigavam mais entre si do que com as vítimas, e resolveram o problema da forma mais terrível possível: fundaram um sindicato.
+
+Hoje todo assalto tem ata, toda pilhagem tem piso salarial e cada colônia nova recebe a visita de uma "comissão de cobrança da contribuição sindical". Atacam qualquer um, o tempo todo, e consideram a resistência armada uma prática antissindical.
+
+Não negociam, não fazem paz e não têm ouvidoria. Em compensação, fazem greve: é o único jeito conhecido de passar uma estação inteira sem ser atacado.</description>
+    <fixedName>O Sindicato do Saque</fixedName>
+    <factionNameMaker IsNull="True" />
+    <pawnSingular>sindicalizado</pawnSingular>
+    <pawnsPlural>sindicalizados</pawnsPlural>
+    <leaderTitle>presidente do sindicato</leaderTitle>
+    <leaderTitleFemale>presidenta do sindicato</leaderTitleFemale>
+    <categoryTag>EQ_SindicatoDoSaque</categoryTag>
+    <techLevel>Industrial</techLevel>
+    <factionIconPath>World/WorldObjects/Expanding/PirateOutpost</factionIconPath>
+    <settlementNameMaker>EQ_NamerSettlement_SindicatoDoSaque</settlementNameMaker>
+    <colorSpectrum Inherit="False">
+      <li>(0.85, 0.35, 0.15)</li>
+      <li>(0.85, 0.35, 0.15)</li>
+    </colorSpectrum>
+    <requiredCountAtGameStart>1</requiredCountAtGameStart>
+    <maxConfigurableAtWorldCreation>1</maxConfigurableAtWorldCreation>
+    <startingCountAtWorldCreation>1</startingCountAtWorldCreation>
+    <configurationListOrderPriority>16</configurationListOrderPriority>
+    <listOrderPriority>41</listOrderPriority>
+    <settlementGenerationWeight>1.3</settlementGenerationWeight>
+    <earliestRaidDays>0</earliestRaidDays>
+    <xenotypeSet Inherit="False">
+      <xenotypeChances>
+        <EQ_Xeno_Vagante>0.65</EQ_Xeno_Vagante>
+        <EQ_Xeno_VaganteEsqueletico>0.35</EQ_Xeno_VaganteEsqueletico>
+      </xenotypeChances>
+    </xenotypeSet>
+    <!-- Grupos próprios (sem herdar o que outros mods acrescentam aos piratas do jogo). -->
+    <pawnGroupMakers Inherit="False">
+      <li>
+        <!-- Comissão de cobrança: mistura padrão -->
+        <kindDef>Combat</kindDef>
+        <commonality>100</commonality>
+        <options>
+          <Drifter>10</Drifter>
+          <Scavenger>10</Scavenger>
+          <Thrasher>4</Thrasher>
+          <Pirate>8</Pirate>
+          <Grenadier_Destructive>1.5</Grenadier_Destructive>
+          <Mercenary_Gunner>6</Mercenary_Gunner>
+          <Mercenary_Heavy>3</Mercenary_Heavy>
+          <Mercenary_Slasher>3</Mercenary_Slasher>
+          <Mercenary_Sniper>3</Mercenary_Sniper>
+          <PirateBoss>2</PirateBoss>
+        </options>
+      </li>
+      <li>
+        <!-- Base sindical: só andarilhos e catadores (os primeiros ataques da partida) -->
+        <kindDef>Combat</kindDef>
+        <commonality>60</commonality>
+        <maxTotalPoints>700</maxTotalPoints>
+        <options>
+          <Drifter>10</Drifter>
+          <Scavenger>6</Scavenger>
+          <Thrasher>2</Thrasher>
+        </options>
+      </li>
+      <li>
+        <!-- Piquete: só corpo a corpo -->
+        <kindDef>Combat</kindDef>
+        <commonality>25</commonality>
+        <disallowedStrategies>
+          <li>Siege</li>
+        </disallowedStrategies>
+        <options>
+          <Thrasher>10</Thrasher>
+          <Mercenary_Slasher>8</Mercenary_Slasher>
+          <PirateBoss>2</PirateBoss>
+        </options>
+      </li>
+      <li>
+        <kindDef>Settlement</kindDef>
+        <options>
+          <Thrasher>3</Thrasher>
+          <Scavenger>8</Scavenger>
+          <Pirate>10</Pirate>
+          <Grenadier_Destructive>2</Grenadier_Destructive>
+          <Mercenary_Gunner>8</Mercenary_Gunner>
+          <Mercenary_Heavy>4</Mercenary_Heavy>
+          <Mercenary_Slasher>3</Mercenary_Slasher>
+          <Mercenary_Sniper>4</Mercenary_Sniper>
+          <PirateBoss>3</PirateBoss>
+        </options>
+      </li>
+    </pawnGroupMakers>
+  </FactionDef>
+
+</Defs>

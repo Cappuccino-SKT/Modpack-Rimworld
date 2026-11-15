@@ -10,6 +10,7 @@ namespace EcosDaQueda
         static EcosDaQuedaStartup()
         {
             new Harmony("ecosdaqueda.core").PatchAll(typeof(EcosDaQuedaStartup).Assembly);
+            EQWorldFactions.Apply();
         }
     }
 
@@ -31,7 +32,8 @@ namespace EcosDaQueda
             if (npc == null)
                 return;
             var rep = WorldComponent_Reputation.Current;
-            if (rep == null || !WorldComponent_Reputation.Tracks(npc))
+            // Record decide: potência ganha Fama/Infâmia própria; facção menor só repercute nas potências.
+            if (rep == null)
                 return;
             if (goodwillChange > 0)
                 rep.Record(npc, goodwillChange, 0f);

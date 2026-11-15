@@ -203,4 +203,150 @@
     </rulePack>
   </RulePackDef>
 
+  <!-- Os Não Catalogados (facção menor): ninhos com nome de item perdido do acervo -->
+  <RulePackDef>
+    <defName>EQ_NamerSettlement_NaoCatalogados</defName>
+    <rulePack>
+      <rulesStrings>
+        <li>r_name(p=4)->[place] [suffix]</li>
+        <li>r_name(p=1)->Item Extraviado [roman]</li>
+        <li>r_name(p=1)->[place] sem Etiqueta [roman]</li>
+        <li>place->Ninho</li>
+        <li>place->Toca</li>
+        <li>place->Cela Aberta</li>
+        <li>place->Fosso</li>
+        <li>place->Viveiro</li>
+        <li>place->Depósito</li>
+        <li>place->Porão</li>
+        <li>place->Estante Caída</li>
+        <li>place->Gaveta</li>
+        <li>suffix->do Verbete Rasgado</li>
+        <li>suffix->da Ficha Perdida</li>
+        <li>suffix->do Acervo Fugido</li>
+        <li>suffix->da Página em Branco</li>
+        <li>suffix->do Índice Devorado</li>
+        <li>suffix->da Errata Viva</li>
+        <li>suffix->do Empréstimo Vencido</li>
+        <li>suffix->da Nota Apagada</li>
+        <li>suffix->do Anexo Faminto</li>
+        <li>suffix->da Devolução Recusada</li>
+        <li>roman->I</li>
+        <li>roman->II</li>
+        <li>roman->III</li>
+        <li>roman->IV</li>
+        <li>roman->V</li>
+        <li>roman->VI</li>
+        <li>roman->VII</li>
+        <li>roman->VIII</li>
+        <li>roman->IX</li>
+        <li>roman->X</li>
+        <li>roman->XI</li>
+        <li>roman->XII</li>
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+
+  <!-- A Feira Andante (facção menor): entrepostos com nome de promoção -->
+  <RulePackDef>
+    <defName>EQ_NamerSettlement_FeiraAndante</defName>
+    <rulePack>
+      <rulesStrings>
+        <li>r_name(p=4)->[place] [suffix]</li>
+        <li>r_name(p=1)->[place] [suffix], Banca [roman]</li>
+        <li>r_name(p=1)->Feira de [day]</li>
+        <li>place->Entreposto</li>
+        <li>place->Feira</li>
+        <li>place->Mercado</li>
+        <li>place->Armazém</li>
+        <li>place->Balcão</li>
+        <li>place->Bazar</li>
+        <li>place->Quitanda</li>
+        <li>place->Empório</li>
+        <li>place->Pouso</li>
+        <li>place->Barracão</li>
+        <li>suffix->do Troco Certo</li>
+        <li>suffix->da Pechincha</li>
+        <li>suffix->do Fiado Eterno</li>
+        <li>suffix->da Última Oferta</li>
+        <li>suffix->do Preço Amigo</li>
+        <li>suffix->da Queima Total</li>
+        <li>suffix->do Leve Três</li>
+        <li>suffix->da Boa Vizinhança</li>
+        <li>suffix->do Cliente Fiel</li>
+        <li>suffix->da Balança Honesta</li>
+        <li>suffix->do Sem Devolução</li>
+        <li>suffix->da Estrada Velha</li>
+        <li>day->Domingo</li>
+        <li>day->Quarta</li>
+        <li>day->Sábado</li>
+        <li>day->Fim de Estação</li>
+        <li>day->Dia de Pagamento</li>
+        <li>roman->I</li>
+        <li>roman->II</li>
+        <li>roman->III</li>
+        <li>roman->IV</li>
+        <li>roman->V</li>
+        <li>roman->VI</li>
+        <li>roman->VII</li>
+        <li>roman->VIII</li>
+        <li>roman->IX</li>
+        <li>roman->X</li>
+        <li>roman->XI</li>
+        <li>roman->XII</li>
+        <li>roman->XIII</li>
+        <li>roman->XIV</li>
+        <li>roman->XV</li>
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+
+  <!-- O Sindicato do Saque (facção menor): sedes e piquetes -->
+  <RulePackDef>
+    <defName>EQ_NamerSettlement_SindicatoDoSaque</defName>
+    <rulePack>
+      <rulesStrings>
+        <li>r_name(p=4)->[place] [suffix]</li>
+        <li>r_name(p=1)->Subsede [roman] [suffix]</li>
+        <li>r_name(p=1)->[place] nº [roman]</li>
+        <li>place->Piquete</li>
+        <li>place->Sede Regional</li>
+        <li>place->Delegacia Sindical</li>
+        <li>place->Acampamento</li>
+        <li>place->Barricada</li>
+        <li>place->Assembleia</li>
+        <li>place->Comitê</li>
+        <li>place->Pedágio</li>
+        <li>place->Covil</li>
+        <li>place->Central de Cobrança</li>
+        <li>suffix->da Contribuição Compulsória</li>
+        <li>suffix->do Piso Salarial</li>
+        <li>suffix->da Greve Geral</li>
+        <li>suffix->do Dissídio</li>
+        <li>suffix->da Hora Extra</li>
+        <li>suffix->do Butim Coletivo</li>
+        <li>suffix->da Categoria Unida</li>
+        <li>suffix->do Adicional de Periculosidade</li>
+        <li>suffix->da Pilhagem Justa</li>
+        <li>suffix->do Décimo Terceiro Saque</li>
+        <li>suffix->da Data-Base</li>
+        <li>suffix->do Imposto Sindical</li>
+        <li>roman->I</li>
+        <li>roman->II</li>
+        <li>roman->III</li>
+        <li>roman->IV</li>
+        <li>roman->V</li>
+        <li>roman->VI</li>
+        <li>roman->VII</li>
+        <li>roman->VIII</li>
+        <li>roman->IX</li>
+        <li>roman->X</li>
+        <li>roman->XI</li>
+        <li>roman->XII</li>
+        <li>roman->XIII</li>
+        <li>roman->XIV</li>
+        <li>roman->XV</li>
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+
 </Defs>

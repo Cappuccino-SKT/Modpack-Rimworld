@@ -13,6 +13,8 @@
   <EcosDaQueda.IdeoTemplateDef>
     <defName>EQ_IdeoTemplate_Silencio</defName>
     <faction>EQ_Faction_Silencio</faction>
+    <!-- Ideologia montada pelo usuário no editor do jogo; os campos abaixo são só reserva. -->
+    <ideoFile>Silencio</ideoFile>
     <ideoName>A Escuta Profunda</ideoName>
     <adjective>silente</adjective>
     <memberName>silente</memberName>
@@ -72,6 +74,8 @@
   <EcosDaQueda.IdeoTemplateDef>
     <defName>EQ_IdeoTemplate_Helice</defName>
     <faction>EQ_Faction_Helice</faction>
+    <!-- Ideologia montada pelo usuário no editor do jogo; os campos abaixo são só reserva. -->
+    <ideoFile>Helice</ideoFile>
     <ideoName>O Genoma Ideal</ideoName>
     <adjective>heliciano</adjective>
     <memberName>associado</memberName>
@@ -99,9 +103,9 @@
       <li><def>LeaderSpeech</def><name>Reunião de Acionistas</name></li>
       <li MayRequire="VanillaExpanded.VMemesE"><def>VME_TradingFairPrecept</def><name>Feira de Lançamento</name></li>
       <!-- O catálogo premium -->
-      <li><def>PreferredXenotype</def><xenotype>Highmate</xenotype></li>
-      <li><def>PreferredXenotype</def><xenotype>Genie</xenotype></li>
-      <li><def>PreferredXenotype</def><xenotype>Hussar</xenotype></li>
+      <li><def>PreferredXenotype</def><xenotype>EQ_Xeno_Executiva</xenotype></li>
+      <li><def>PreferredXenotype</def><xenotype>EQ_Xeno_Premium</xenotype></li>
+      <li><def>PreferredXenotype</def><xenotype>EQ_Xeno_Compliance</xenotype></li>
       <!-- Carne por carne -->
       <li MayRequire="VanillaExpanded.VMemesE"><def>VME_BodyMod_OnlyBiological</def></li>
       <li><def>GrowthVat_Essential</def></li>
@@ -128,6 +132,8 @@
   <EcosDaQueda.IdeoTemplateDef>
     <defName>EQ_IdeoTemplate_Forja</defName>
     <faction>EQ_Faction_Forja</faction>
+    <!-- Ideologia montada pelo usuário no editor do jogo; os campos abaixo são só reserva. -->
+    <ideoFile>Forja</ideoFile>
     <ideoName>O Culto da Garantia</ideoName>
     <adjective>forjado</adjective>
     <memberName>irmão de ferro</memberName>
@@ -187,6 +193,8 @@
   <EcosDaQueda.IdeoTemplateDef>
     <defName>EQ_IdeoTemplate_Coro</defName>
     <faction>EQ_Faction_Coro</faction>
+    <!-- Ideologia montada pelo usuário no editor do jogo; os campos abaixo são só reserva. -->
+    <ideoFile>Coro</ideoFile>
     <ideoName>A Harmonia Superior</ideoName>
     <adjective>coral</adjective>
     <memberName>cantor</memberName>
@@ -234,6 +242,21 @@
     <leaderFirstNameFemale>Serafina</leaderFirstNameFemale>
     <leaderNickname>Fá Imperial</leaderNickname>
     <leaderLastName>Dellacroce</leaderLastName>
+  </EcosDaQueda.IdeoTemplateDef>
+
+  <!-- Facções menores: a ideologia inteira vem do arquivo (Ideos/*.rid). -->
+  <EcosDaQueda.IdeoTemplateDef>
+    <defName>EQ_IdeoTemplate_ForaDeLinha</defName>
+    <faction>EQ_Faction_ForaDeLinha</faction>
+    <ideoFile>ForaDeLinha</ideoFile>
+    <exactPrecepts>false</exactPrecepts>
+  </EcosDaQueda.IdeoTemplateDef>
+
+  <EcosDaQueda.IdeoTemplateDef>
+    <defName>EQ_IdeoTemplate_NaoCatalogados</defName>
+    <faction>EQ_Faction_NaoCatalogados</faction>
+    <ideoFile>NaoCatalogados</ideoFile>
+    <exactPrecepts>false</exactPrecepts>
   </EcosDaQueda.IdeoTemplateDef>
 
 </Defs>

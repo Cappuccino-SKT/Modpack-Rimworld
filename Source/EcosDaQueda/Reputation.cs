@@ -147,9 +147,15 @@ namespace EcosDaQueda
         {
             target = EQUtil.Canonical(target);
             var s = ReputationSettingsDef.Settings;
-            if (s == null || !Tracks(target) || (fameGain <= 0f && infamyGain <= 0f))
+            // Facção menor (ex.: Fora de Linha, Não Catalogados): não tem Fama/Infâmia própria,
+            // mas o que o jogador faz com ela repercute nas potências amigas/inimigas dela.
+            bool tracked = Tracks(target);
+            bool minor = !tracked && target != null && !target.IsPlayer && !EQUtil.IsProxy(target)
+                && FactionRelationPresetDef.Involves(target.def);
+            if (s == null || (!tracked && !minor) || (fameGain <= 0f && infamyGain <= 0f))
                 return;
-            Add(Get(target), fameGain, infamyGain, s.maxValue);
+            if (tracked)
+                Add(Get(target), fameGain, infamyGain, s.maxValue);
 
             foreach (Faction other in Find.FactionManager.AllFactionsListForReading)
             {

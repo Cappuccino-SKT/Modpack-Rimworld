@@ -1,0 +1,805 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- GERADO por EcosDaQueda-Dev/scripts/xenotipos.py a partir de EcosDaQueda-Dev/xenotipos/. Não editar à mão. -->
+<Defs>
+
+  <XenotypeDef>
+    <defName>EQ_Xeno_Vagante</defName>
+    <label>vagante</label>
+    <description>O humano padrão das terras devastadas. Gerações comendo o que encontram e respirando o que sobrou deixaram um estômago que digere quase tudo, uma pele que rasga com qualquer coisa e uma tolerância a toxinas suficiente para não morrer no primeiro vento ruim.
+
+Ninguém projetou os vagantes. Eles simplesmente continuaram existindo, o que as potências consideram um defeito de mercado e uma oportunidade de matéria-prima.</description>
+    <descriptionShort>O humano comum de um mundo que já acabou algumas vezes: estômago de ferro, pele de papel e coragem por falta de opção.</descriptionShort>
+    <iconPath>UI/Icons/Xenotypes/Other</iconPath>
+    <inheritable>true</inheritable>
+    <factionlessGenerationWeight>0</factionlessGenerationWeight>
+    <genes>
+      <li>StrongStomach</li>
+      <li MayRequire="sarg.alphagenes">AG_FrailSkin</li>
+      <li>ToxicEnvironmentResistance_Partial</li>
+      <li MayRequire="vanillaracesexpanded.pigskin">VRE_Brave</li>
+      <li MayRequire="vanillaracesexpanded.waster">VRE_Instability_Nominal</li>
+      <li>AptitudePoor_Intellectual</li>
+    </genes>
+  </XenotypeDef>
+
+  <XenotypeDef>
+    <defName>EQ_Xeno_VaganteEsqueletico</defName>
+    <label>vagante esquelético</label>
+    <description>Vagantes cujas linhagens acumularam toxinas por tempo demais. O corpo virou um cabide de ossos, o rosto afundou e o organismo passou a absorver poluição como outros absorvem sol. Ficam animados perto de lixo tóxico, o que ninguém acha saudável, nem eles.
+
+As potências os chamam de "lote de teste ambiental". Eles se chamam de sobreviventes, quando conseguem lembrar a palavra.</description>
+    <descriptionShort>Vagantes que passaram tempo demais na poluição: magros, feios, imunes a toxinas e levemente viciados nelas.</descriptionShort>
+    <iconPath>UI/Icons/Xenotypes/Other</iconPath>
+    <inheritable>true</inheritable>
+    <factionlessGenerationWeight>0</factionlessGenerationWeight>
+    <genes>
+      <li MayRequire="vanillaracesexpanded.waster">VREW_PollutionRush</li>
+      <li>ToxicEnvironmentResistance_Total</li>
+      <li>Beauty_Ugly</li>
+      <li>Head_Gaunt</li>
+      <li>Voice_Human</li>
+      <li MayRequire="sarg.alphagenes">AG_GauntBody</li>
+      <li MayRequire="vanillaracesexpanded.saurid">VRESaurids_Pheromones</li>
+      <li>Instability_Mild</li>
+      <li MayRequire="vanillaracesexpanded.waster">VRE_ToxAbsorption</li>
+      <li>AptitudeTerrible_Intellectual</li>
+    </genes>
+  </XenotypeDef>
+
+  <XenotypeDef>
+    <defName>EQ_Xeno_HumanoAntigo</defName>
+    <label>humano antigo</label>
+    <description>Descendentes raros de quem viveu antes da Queda, preservados em criptas, bunkers ou pura teimosia. Aprendem rápido e têm mãos precisas, mas o estômago, a pele e a fertilidade não foram feitos para um mundo envenenado. O genoma recessivo some nos filhos mestiços.
+
+O Silêncio quer estudá-los, a Hélice quer patenteá-los e a Forja quer o manual de instruções deles. Ninguém pergunta o que eles querem.</description>
+    <descriptionShort>Linhagem de antes da poluição: aprende rápido, mas o corpo não aguenta o mundo atual. Peça de museu que anda.</descriptionShort>
+    <iconPath>UI/Icons/Xenotypes/Other</iconPath>
+    <inheritable>true</inheritable>
+    <factionlessGenerationWeight>0</factionlessGenerationWeight>
+    <genes>
+      <li MayRequire="sarg.alphagenes">AG_FrailStomach</li>
+      <li MayRequire="sarg.alphagenes">AG_FrailSkin</li>
+      <li MayRequire="sarg.alphagenes">AG_ReducedFertile</li>
+      <li MayRequire="vanillaracesexpanded.highmate">VRE_RecessiveGenome</li>
+      <li>Ears_Human</li>
+      <li>Voice_Human</li>
+      <li>ElongatedFingers</li>
+      <li>Learning_Fast</li>
+    </genes>
+  </XenotypeDef>
+
+  <XenotypeDef>
+    <defName>EQ_Xeno_Graxeiro</defName>
+    <label>graxeiro</label>
+    <description>Nascidos e criados nas oficinas da Irmandade da Forja, os graxeiros carregam no sangue gerações de fumaça, óleo e turnos dobrados. Toleram calor e poluição, sentem menos dor e têm dedos longos que alcançam o parafuso que ninguém alcança. Também deixam marca de graxa em tudo que tocam e têm um cheiro que a Irmandade descreve como "aroma de produtividade".
+
+Para a Forja, todo graxeiro é um aprendiz em potencial. Para o manual, todo graxeiro é uma peça de reposição em potencial.</description>
+    <descriptionShort>O humano padrão da Irmandade da Forja: sujo, fedido, aguenta calor e fumaça e tem dedos feitos para engrenagens.</descriptionShort>
+    <iconPath>UI/Icons/Xenotypes/Other</iconPath>
+    <inheritable>true</inheritable>
+    <factionlessGenerationWeight>0</factionlessGenerationWeight>
+    <genes>
+      <li MayRequire="sarg.alphagenes">AG_Filthy</li>
+      <li MayRequire="sarg.alphagenes">AG_Stinky</li>
+      <li MayRequire="sarg.alphagenes">AG_FrailSkin</li>
+      <li>MaxTemp_SmallIncrease</li>
+      <li>ToxicEnvironmentResistance_Partial</li>
+      <li>Pain_Reduced</li>
+      <li>Instability_Mild</li>
+      <li>ElongatedFingers</li>
+      <li>AptitudeStrong_Crafting</li>
+    </genes>
+  </XenotypeDef>
+
+  <XenotypeDef>
+    <defName>EQ_Xeno_Corista</defName>
+    <label>corista</label>
+    <description>A linhagem cultivada pelo Coro Ascendente ao longo de gerações de casamentos arranjados por timbre. Coristas são bonitos, sociáveis e psiquicamente sensíveis, ouvem a Primeira Voz com mais clareza e se ofendem com mais facilidade. Em compensação, a pele é fina e a mão não sabe segurar uma arma sem parecer que segura um leque.
+
+Crianças coristas mais sensíveis costumam ser "convidadas" para o treinamento vocal. O convite não aceita recusa.</description>
+    <descriptionShort>O humano padrão do Coro Ascendente: bonito, afinado e psiquicamente sensível. Péssimo de briga, ótimo de etiqueta.</descriptionShort>
+    <iconPath>UI/Icons/Xenotypes/Other</iconPath>
+    <inheritable>true</inheritable>
+    <factionlessGenerationWeight>0</factionlessGenerationWeight>
+    <genes>
+      <li MayRequire="sarg.alphagenes">AG_FrailSkin</li>
+      <li>PsychicAbility_Enhanced</li>
+      <li>ToxicEnvironmentResistance_Partial</li>
+      <li>MeleeDamage_Weak</li>
+      <li>Beauty_Pretty</li>
+      <li MayRequire="vanillaracesexpanded.waster">VRE_Instability_Nominal</li>
+      <li>AptitudePoor_Shooting</li>
+      <li>AptitudePoor_Melee</li>
+      <li>AptitudeStrong_Social</li>
+    </genes>
+  </XenotypeDef>
+
+  <XenotypeDef>
+    <defName>EQ_Xeno_LoteDescontinuado</defName>
+    <label>lote descontinuado</label>
+    <description>Produto oficialmente retirado do catálogo do Concílio da Hélice. O Lote Descontinuado é o resultado de atualizações que falharam no meio da instalação: um corpo grande, forte, que não dorme nem sente dor, coberto de tumores, incapaz de falar e com fome de tudo. Põe ovos. Ninguém sabe por quê, nem o departamento de pesquisa.
+
+Ao contrário dos produtos premium, o defeito é hereditário. A Hélice resolve isso classificando os portadores como "ativos descontinuados" e vendendo-os a preço de sucata.</description>
+    <descriptionShort>O que sobra quando a atualização genética da Hélice falha: forte, incansável, deformado e, infelizmente, hereditário.</descriptionShort>
+    <iconPath>UI/Icons/Xenotypes/Other</iconPath>
+    <inheritable>true</inheritable>
+    <factionlessGenerationWeight>0</factionlessGenerationWeight>
+    <combatPowerFactor>1.2</combatPowerFactor>
+    <genes>
+      <li MayRequire="sarg.alphagenes">AG_MeatBurst</li>
+      <li MayRequire="sarg.alphagenes">AG_LargerBodySize</li>
+      <li MayRequire="sarg.alphagenes">AG_Teratogenesis</li>
+      <li MayRequire="sarg.alphagenes">AG_TeratogenicStamina</li>
+      <li>WoundHealing_Fast</li>
+      <li MayRequire="vanillaracesexpanded.pigskin">VRE_RapidAging</li>
+      <li MayRequire="sarg.alphagenes">AG_PackMule</li>
+      <li MayRequire="vanillaracesexpanded.lycanthrope">VRE_SpeechInability</li>
+      <li MayRequire="vanillaracesexpanded.pigskin">VRE_Gluttonous</li>
+      <li MayRequire="sarg.alphagenes">AG_ArmourMinor</li>
+      <li>PsychicAbility_Deaf</li>
+      <li>MinTemp_SmallDecrease</li>
+      <li>MaxTemp_SmallIncrease</li>
+      <li>MeleeDamage_Strong</li>
+      <li>Neversleep</li>
+      <li>Robust</li>
+      <li MayRequire="sarg.alphagenes">AG_Painless</li>
+      <li MayRequire="vanillaracesexpanded.saurid">VRESaurids_Oviparous</li>
+      <li>Fertile</li>
+      <li MayRequire="sarg.alphagenes">AG_Beauty_VeryVeryUgly</li>
+      <li MayRequire="sarg.alphagenes">AG_CancerousFace</li>
+      <li MayRequire="sarg.alphagenes">AG_CancerousBody</li>
+      <li MayRequire="vanillaracesexpanded.pigskin">VRE_Brave</li>
+      <li>Instability_Major</li>
+      <li>Nose_Pig</li>
+      <li>Unstoppable</li>
+      <li>AptitudePoor_Shooting</li>
+      <li>AptitudeStrong_Melee</li>
+      <li>AptitudeStrong_Mining</li>
+      <li>AptitudePoor_Cooking</li>
+      <li>AptitudeStrong_Plants</li>
+      <li>AptitudePoor_Animals</li>
+      <li>AptitudePoor_Crafting</li>
+      <li>AptitudePoor_Artistic</li>
+      <li>AptitudePoor_Medicine</li>
+      <li>AptitudeTerrible_Social</li>
+      <li>AptitudePoor_Intellectual</li>
+    </genes>
+  </XenotypeDef>
+
+  <XenotypeDef>
+    <defName>EQ_Xeno_Escriba</defName>
+    <label>escriba silente</label>
+    <description>O pacote de modificações padrão dos acólitos da Ordem do Silêncio Perpétuo. O escriba enxerga no escuro, vive bem em cavernas, não precisa dormir e aprende com uma velocidade que deixaria qualquer orientador orgulhoso. O crânio alongado acomoda a bibliografia. A pele queima sob luz forte, o corpo é frágil e a coragem nunca foi um requisito do programa.
+
+A modificação não é hereditária: os filhos de um escriba nascem com a linhagem comum e precisam se candidatar à bolsa como todo mundo.</description>
+    <descriptionShort>Modificação da Ordem do Silêncio: enxerga no escuro, não dorme e aprende rápido. Odeia luz, gente e conversa.</descriptionShort>
+    <iconPath>UI/Icons/Xenotypes/Custom/CustomXenotypeIcon5</iconPath>
+    <inheritable>false</inheritable>
+    <factionlessGenerationWeight>0</factionlessGenerationWeight>
+    <doubleXenotypeChances>
+      <EQ_Xeno_Vagante>0.6</EQ_Xeno_Vagante>
+      <EQ_Xeno_VaganteEsqueletico>0.3</EQ_Xeno_VaganteEsqueletico>
+      <EQ_Xeno_HumanoAntigo>0.1</EQ_Xeno_HumanoAntigo>
+    </doubleXenotypeChances>
+    <genes>
+      <li>UVSensitivity_Intense</li>
+      <li>Neversleep</li>
+      <li>Delicate</li>
+      <li MayRequire="vanillaracesexpanded.genie">VRE_ElongatedHead</li>
+      <li MayRequire="vanillaracesexpanded.pigskin">VRE_Coward</li>
+      <li>DarkVision</li>
+      <li>CaveDweller</li>
+      <li>Learning_Fast</li>
+      <li>AptitudeTerrible_Social</li>
+    </genes>
+  </XenotypeDef>
+
+  <XenotypeDef>
+    <defName>EQ_Xeno_Arquivista</defName>
+    <label>arquivista pálido</label>
+    <description>Reservada aos arquivistas de maior titulação, esta modificação estende a vida, amplia a sensibilidade psíquica a níveis perigosos e acelera o aprendizado. O custo é a dependência de hemogen, uma pele branca como papel de arquivo e olhos vermelhos de quem leu demais no escuro.
+
+Os arquivistas dizem que o hemogen é "doado por voluntários de pesquisa". Os voluntários não foram ouvidos para a revisão.</description>
+    <descriptionShort>A modificação dos altos arquivistas do Silêncio: psíquico extremo, longevo e alimentado por hemogen. Pálido como papel velho.</descriptionShort>
+    <iconPath>UI/Icons/Xenotypes/Other</iconPath>
+    <inheritable>false</inheritable>
+    <factionlessGenerationWeight>0</factionlessGenerationWeight>
+    <combatPowerFactor>1.4</combatPowerFactor>
+    <doubleXenotypeChances>
+      <EQ_Xeno_Vagante>0.6</EQ_Xeno_Vagante>
+      <EQ_Xeno_VaganteEsqueletico>0.3</EQ_Xeno_VaganteEsqueletico>
+      <EQ_Xeno_HumanoAntigo>0.1</EQ_Xeno_HumanoAntigo>
+    </doubleXenotypeChances>
+    <genes>
+      <li MayRequire="vanillaracesexpanded.sanguophage">VRE_LowHemogenDrain</li>
+      <li>Hemogenic</li>
+      <li MayRequire="sarg.alphagenes">AG_SlowerAging</li>
+      <li>PsychicAbility_Extreme</li>
+      <li MayRequire="vanillaracesexpanded.sanguophage">VRE_Sensitivity_Dangerous</li>
+      <li MayRequire="vanillaracesexpanded.sanguophage">VRE_SanguineHair</li>
+      <li>Eyes_Red</li>
+      <li>Skin_SheerWhite</li>
+      <li>Learning_Fast</li>
+    </genes>
+  </XenotypeDef>
+
+  <XenotypeDef>
+    <defName>EQ_Xeno_Anotado</defName>
+    <label>anotado</label>
+    <description>Aplicada nos voluntários de pesquisa da Ordem do Silêncio, esta modificação garante que a cobaia se cure rápido (às vezes rápido demais), permaneça calma diante de qualquer experimento e não deixe descendentes para reclamar depois. O corpo é delicado de propósito: facilita a coleta de amostras.
+
+Cada anotado recebe um número de catálogo e um conjunto de notas de rodapé tatuadas. Nenhuma delas é o nome dele.</description>
+    <descriptionShort>O "voluntário" padrão do Silêncio: regenera, não se irrita, não se reproduz e quebra fácil. Feito para durar até a próxima publicação.</descriptionShort>
+    <iconPath>UI/Icons/Xenotypes/Other</iconPath>
+    <inheritable>false</inheritable>
+    <factionlessGenerationWeight>0</factionlessGenerationWeight>
+    <doubleXenotypeChances>
+      <EQ_Xeno_Vagante>0.6</EQ_Xeno_Vagante>
+      <EQ_Xeno_VaganteEsqueletico>0.3</EQ_Xeno_VaganteEsqueletico>
+      <EQ_Xeno_HumanoAntigo>0.1</EQ_Xeno_HumanoAntigo>
+    </doubleXenotypeChances>
+    <genes>
+      <li>WoundHealing_Fast</li>
+      <li MayRequire="sarg.alphagenes">AG_UnstableRegeneration</li>
+      <li>Aggression_DeadCalm</li>
+      <li>Delicate</li>
+      <li>Sterile</li>
+    </genes>
+  </XenotypeDef>
+
+  <XenotypeDef>
+    <defName>EQ_Xeno_Velado</defName>
+    <label>guardião velado</label>
+    <description>Os guardas das celas de contenção da Ordem do Silêncio precisam de uma única qualidade: não ouvir o que está preso lá dentro. A modificação os torna psiquicamente surdos, robustos, agressivos e enormes, com pele reforçada e talento para contenção física. Pensar nunca fez parte da descrição do cargo.
+
+Os arquivistas confiam nos guardiões velados porque eles não entendem o que vigiam. Os guardiões velados confiam nos arquivistas porque não entendem nada.</description>
+    <descriptionShort>Modificação dos guardas de contenção do Silêncio: surdo psíquico, enorme e brutal no corpo a corpo. Imune ao que sussurra nas celas.</descriptionShort>
+    <iconPath>UI/Icons/Xenotypes/Custom/CustomXenotypeIcon4</iconPath>
+    <inheritable>false</inheritable>
+    <factionlessGenerationWeight>0</factionlessGenerationWeight>
+    <combatPowerFactor>1.3</combatPowerFactor>
+    <doubleXenotypeChances>
+      <EQ_Xeno_Vagante>0.6</EQ_Xeno_Vagante>
+      <EQ_Xeno_VaganteEsqueletico>0.3</EQ_Xeno_VaganteEsqueletico>
+      <EQ_Xeno_HumanoAntigo>0.1</EQ_Xeno_HumanoAntigo>
+    </doubleXenotypeChances>
+    <genes>
+      <li MayRequire="sarg.alphagenes">AG_ArmourMinor</li>
+      <li>PsychicAbility_Deaf</li>
+      <li>Aggression_Aggressive</li>
+      <li MayRequire="sarg.alphagenes">AG_Enforcer</li>
+      <li>Robust</li>
+      <li>Beauty_Ugly</li>
+      <li>Body_Hulk</li>
+      <li MayRequire="vanillaracesexpanded.pigskin">VRE_Brave</li>
+      <li MayRequire="vanillaracesexpanded.waster">VRE_Instability_Nominal</li>
+      <li>AptitudeStrong_Shooting</li>
+      <li>AptitudeRemarkable_Melee</li>
+      <li>AptitudeTerrible_Intellectual</li>
+    </genes>
+  </XenotypeDef>
+
+  <XenotypeDef>
+    <defName>EQ_Xeno_ModeloBase</defName>
+    <label>modelo base</label>
+    <description>A modificação de entrada do Concílio da Hélice, implantada em estagiários e clientes do plano gratuito. Deixa a pessoa mais bonita, otimista e resistente à dor, com uma leve camada de proteção na pele. O envelhecimento acelerado e a instabilidade progressiva são "recursos exclusivos das versões pagas" para remover.
+
+O contrato de uso tem uma cláusula de renovação automática. O botão de cancelar fica no setor de descarte.</description>
+    <descriptionShort>O plano gratuito do Concílio da Hélice: bonito, otimista, um pouco blindado e envelhecendo rápido. Atualize para remover.</descriptionShort>
+    <iconPath>UI/Icons/Xenotypes/Other</iconPath>
+    <inheritable>false</inheritable>
+    <factionlessGenerationWeight>0</factionlessGenerationWeight>
+    <doubleXenotypeChances>
+      <EQ_Xeno_Vagante>0.6</EQ_Xeno_Vagante>
+      <EQ_Xeno_VaganteEsqueletico>0.3</EQ_Xeno_VaganteEsqueletico>
+      <EQ_Xeno_HumanoAntigo>0.1</EQ_Xeno_HumanoAntigo>
+    </doubleXenotypeChances>
+    <genes>
+      <li MayRequire="vanillaracesexpanded.pigskin">VRE_FastAging</li>
+      <li MayRequire="sarg.alphagenes">AG_ArmourMinor</li>
+      <li>Mood_Optimist</li>
+      <li>Pain_Reduced</li>
+      <li>Beauty_Pretty</li>
+      <li MayRequire="vanillaracesexpanded.waster">VRE_Instability_Progressive</li>
+    </genes>
+  </XenotypeDef>
+
+  <XenotypeDef>
+    <defName>EQ_Xeno_Compliance</defName>
+    <label>edição compliance</label>
+    <description>A edição usada pelos fiscais de linhagem do Concílio da Hélice, encarregados de encontrar genes piratas e linhagens sem licença. Imunidade forte, imunidade a ácido, pele reforçada e aprendizado rápido. O humor oscila entre a paz interior e a explosão, e a habilidade social foi removida para evitar conflitos de interesse.
+
+Estéreis por política da empresa: um fiscal não pode ter herdeiros que precisem ser fiscalizados.</description>
+    <descriptionShort>Modificação dos fiscais de linhagem da Hélice: imune a ácido e doença, aprende rápido, atira bem e não tem amigos.</descriptionShort>
+    <iconPath>UI/Icons/Xenotypes/Custom/CustomXenotypeIcon7</iconPath>
+    <inheritable>false</inheritable>
+    <factionlessGenerationWeight>0</factionlessGenerationWeight>
+    <combatPowerFactor>1.2</combatPowerFactor>
+    <doubleXenotypeChances>
+      <EQ_Xeno_Vagante>0.6</EQ_Xeno_Vagante>
+      <EQ_Xeno_VaganteEsqueletico>0.3</EQ_Xeno_VaganteEsqueletico>
+      <EQ_Xeno_HumanoAntigo>0.1</EQ_Xeno_HumanoAntigo>
+    </doubleXenotypeChances>
+    <genes>
+      <li>Immunity_Strong</li>
+      <li MayRequire="sarg.alphagenes">AG_AcidImmunity</li>
+      <li MayRequire="sarg.alphagenes">AG_ArmourMinor</li>
+      <li MayRequire="sarg.alphagenes">AG_VolatileMood</li>
+      <li MayRequire="sarg.alphagenes">AG_InnerPeace</li>
+      <li>Sterile</li>
+      <li MayRequire="vanillaracesexpanded.waster">VRE_Instability_Progressive</li>
+      <li MayRequire="vanillaracesexpanded.hussar">VREH_Arrogant</li>
+      <li>Learning_Fast</li>
+      <li>AptitudeStrong_Shooting</li>
+      <li>AptitudeTerrible_Social</li>
+    </genes>
+  </XenotypeDef>
+
+  <XenotypeDef>
+    <defName>EQ_Xeno_Premium</defName>
+    <label>protótipo premium</label>
+    <description>O carro-chefe militar do Concílio da Hélice. O protótipo premium é gigante, tem metabolismo de arquito, blindagem pesada, cicatrização absurda, resistência ao fogo e uma agressividade que o marketing chama de "proatividade". Não para por dor, não para por ferimento e não para por ordem, às vezes.
+
+Envelhece rápido e é estéril: a Hélice prefere vender a próxima unidade a deixá-la nascer de graça.</description>
+    <descriptionShort>A elite de combate da Hélice: gigante, blindado, regenerativo e imparável. Garantia de 90 dias, sem cobertura para uso em combate.</descriptionShort>
+    <iconPath>UI/Icons/Xenotypes/Custom/CustomXenotypeIcon4</iconPath>
+    <inheritable>false</inheritable>
+    <factionlessGenerationWeight>0</factionlessGenerationWeight>
+    <combatPowerFactor>1.8</combatPowerFactor>
+    <doubleXenotypeChances>
+      <EQ_Xeno_Vagante>0.6</EQ_Xeno_Vagante>
+      <EQ_Xeno_VaganteEsqueletico>0.3</EQ_Xeno_VaganteEsqueletico>
+      <EQ_Xeno_HumanoAntigo>0.1</EQ_Xeno_HumanoAntigo>
+    </doubleXenotypeChances>
+    <genes>
+      <li>ArchiteMetabolism</li>
+      <li>Immunity_Strong</li>
+      <li>WoundHealing_SuperFast</li>
+      <li>Superclotting</li>
+      <li MayRequire="vanillaracesexpanded.pigskin">VRE_FastAging</li>
+      <li MayRequire="sarg.alphagenes">AG_ArmourMajor</li>
+      <li>PsychicAbility_Deaf</li>
+      <li MayRequire="vanillaracesexpanded.hussar">VREH_Unconstrained</li>
+      <li>FireResistant</li>
+      <li>Aggression_HyperAggressive</li>
+      <li>MeleeDamage_Strong</li>
+      <li>Pain_Reduced</li>
+      <li>Sterile</li>
+      <li MayRequire="sarg.alphagenes">AG_DevilEyes</li>
+      <li MayRequire="vanillaracesexpanded.pigskin">VRE_Brave</li>
+      <li MayRequire="vanillaracesexpanded.hussar">VREH_Giant</li>
+      <li>Instability_Major</li>
+      <li>ElongatedFingers</li>
+      <li>Unstoppable</li>
+      <li MayRequire="vanillaracesexpanded.hussar">VREH_Arrogant</li>
+      <li>AptitudeRemarkable_Shooting</li>
+      <li>AptitudeRemarkable_Melee</li>
+      <li>AptitudeTerrible_Cooking</li>
+      <li>AptitudeTerrible_Artistic</li>
+      <li>AptitudeTerrible_Intellectual</li>
+    </genes>
+  </XenotypeDef>
+
+  <XenotypeDef>
+    <defName>EQ_Xeno_Executiva</defName>
+    <label>edição executiva</label>
+    <description>Reservada à diretoria do Concílio da Hélice. A edição executiva entrega beleza angelical, corpo perfeito, vida extraordinariamente longa, cura acelerada e um carisma notável. A calma é total, a surdez psíquica protege contra manipulação e a coragem é garantida por contrato.
+
+O produto depende de luciferium. A Hélice chama isso de "modelo de receita recorrente" e garante que os diretores nunca esqueçam por que estão do lado dos acionistas.</description>
+    <descriptionShort>A modificação dos diretores da Hélice: belíssimo, longevo, calmo e carismático. Requer assinatura mensal de luciferium.</descriptionShort>
+    <iconPath>UI/Icons/Xenotypes/Other</iconPath>
+    <inheritable>false</inheritable>
+    <factionlessGenerationWeight>0</factionlessGenerationWeight>
+    <combatPowerFactor>1.5</combatPowerFactor>
+    <doubleXenotypeChances>
+      <EQ_Xeno_Vagante>0.6</EQ_Xeno_Vagante>
+      <EQ_Xeno_VaganteEsqueletico>0.3</EQ_Xeno_VaganteEsqueletico>
+      <EQ_Xeno_HumanoAntigo>0.1</EQ_Xeno_HumanoAntigo>
+    </doubleXenotypeChances>
+    <genes>
+      <li>ArchiteMetabolism</li>
+      <li MayRequire="vanillaracesexpanded.hussar">VREH_ChemicalDependency_Luciferium</li>
+      <li>Immunity_Strong</li>
+      <li>WoundHealing_SuperFast</li>
+      <li MayRequire="sarg.alphagenes">AG_ExtraordinaryLifespan</li>
+      <li MayRequire="sarg.alphagenes">AG_ArmourMedium</li>
+      <li>PsychicAbility_Deaf</li>
+      <li>Mood_Sanguine</li>
+      <li>Aggression_DeadCalm</li>
+      <li>Pain_Reduced</li>
+      <li MayRequire="sarg.alphagenes">AG_Beauty_Angelic</li>
+      <li MayRequire="vanillaracesexpanded.highmate">VRE_PerfectBody</li>
+      <li MayRequire="vanillaracesexpanded.pigskin">VRE_Brave</li>
+      <li MayRequire="vanillaracesexpanded.waster">VRE_Instability_Extreme</li>
+      <li>Learning_Fast</li>
+      <li>AptitudeRemarkable_Social</li>
+    </genes>
+  </XenotypeDef>
+
+  <XenotypeDef>
+    <defName>EQ_Xeno_Cavaleiro</defName>
+    <label>cavaleiro de ferro</label>
+    <description>A modificação dos cavaleiros da garantia da Irmandade da Forja. O corpo é ajustado ao padrão da armadura "tamanho único": imunidade forte, pele blindada, resistência ao fogo, pouca dor e muita agressividade. Atiram e lutam bem, andam devagar e não leem o manual. Recitam.
+
+Só homens passam pelo processo: a Irmandade alega "compatibilidade com o molde". O molde nunca foi atualizado.</description>
+    <descriptionShort>Modificação dos cavaleiros da garantia da Forja: blindados, agressivos, resistentes ao fogo e lentos. Feitos para caber na armadura.</descriptionShort>
+    <iconPath>UI/Icons/Xenotypes/Custom/CustomXenotypeIcon4</iconPath>
+    <inheritable>false</inheritable>
+    <factionlessGenerationWeight>0</factionlessGenerationWeight>
+    <combatPowerFactor>1.4</combatPowerFactor>
+    <doubleXenotypeChances>
+      <EQ_Xeno_Graxeiro>0.7</EQ_Xeno_Graxeiro>
+      <EQ_Xeno_Vagante>0.25</EQ_Xeno_Vagante>
+      <EQ_Xeno_HumanoAntigo>0.05</EQ_Xeno_HumanoAntigo>
+    </doubleXenotypeChances>
+    <genes>
+      <li MayRequire="sarg.alphagenes">AG_Male</li>
+      <li>Immunity_Strong</li>
+      <li MayRequire="sarg.alphagenes">AG_ArmourMedium</li>
+      <li>MoveSpeed_Slow</li>
+      <li>FireResistant</li>
+      <li>Aggression_Aggressive</li>
+      <li MayRequire="sarg.alphagenes">AG_Enforcer</li>
+      <li>Pain_Reduced</li>
+      <li>Body_Standard</li>
+      <li MayRequire="vanillaracesexpanded.pigskin">VRE_Brave</li>
+      <li>Instability_Mild</li>
+      <li>AptitudeStrong_Shooting</li>
+      <li>AptitudeStrong_Melee</li>
+      <li>AptitudeTerrible_Intellectual</li>
+    </genes>
+  </XenotypeDef>
+
+  <XenotypeDef>
+    <defName>EQ_Xeno_Tecnico</defName>
+    <label>técnico autorizado</label>
+    <description>A certificação genética dos técnicos autorizados da Irmandade da Forja. Amplia a banda de controle de mecanoides, acelera o aprendizado, dá talento intelectual e de fabricação e corta a sensibilidade psíquica para evitar "interferência não homologada". Em troca, o técnico não sabe atirar nem bater, e tem certeza de que é melhor que você.
+
+Vem de série com a habilidade de chamar uma centopeia. Ninguém sabe se é um recurso ou um bug.</description>
+    <descriptionShort>Modificação dos mecanitores da Forja: mais banda para mechs, cérebro de engenheiro e braços de quem nunca carregou nada.</descriptionShort>
+    <iconPath>UI/Icons/Xenotypes/Custom/CustomXenotypeIcon7</iconPath>
+    <inheritable>false</inheritable>
+    <factionlessGenerationWeight>0</factionlessGenerationWeight>
+    <doubleXenotypeChances>
+      <EQ_Xeno_Graxeiro>0.7</EQ_Xeno_Graxeiro>
+      <EQ_Xeno_Vagante>0.25</EQ_Xeno_Vagante>
+      <EQ_Xeno_HumanoAntigo>0.05</EQ_Xeno_HumanoAntigo>
+    </doubleXenotypeChances>
+    <genes>
+      <li MayRequire="sarg.alphagenes">AG_BandwidthIncrease</li>
+      <li MayRequire="sarg.alphagenes">AlphaGenes_Animal_SummonCentipede</li>
+      <li>PsychicAbility_Deaf</li>
+      <li>MeleeDamage_Weak</li>
+      <li MayRequire="vanillaracesexpanded.genie">VRE_ElongatedHead</li>
+      <li>Instability_Mild</li>
+      <li MayRequire="vanillaracesexpanded.hussar">VREH_Arrogant</li>
+      <li>Learning_Fast</li>
+      <li>AptitudeTerrible_Shooting</li>
+      <li>AptitudeTerrible_Melee</li>
+      <li>AptitudeStrong_Crafting</li>
+      <li>AptitudeStrong_Intellectual</li>
+    </genes>
+  </XenotypeDef>
+
+  <XenotypeDef>
+    <defName>EQ_Xeno_EngenheiroPrimaz</defName>
+    <label>engenheiro-primaz</label>
+    <description>O ápice militar da Irmandade da Forja e prova de que o Fabricante Original nunca leu o capítulo de efeitos colaterais. O engenheiro-primaz é um gigante calvo de pele negra como óleo, sangue ácido, blindagem pesada, imunidade total, regeneração, nenhuma dor, nenhum sono e uma agressividade que exige guarda. Atira e luta como ninguém; para todo o resto é inútil.
+
+O corpo envelhece rápido, depende de luciferium e carrega uma instabilidade genética letal. A Irmandade chama isso de "vida útil programada" e garante a troca durante o período de garantia.</description>
+    <descriptionShort>O supersoldado da Forja: um gigante blindado, imparável e incansável que só sabe atirar e bater. Instabilidade letal inclusa.</descriptionShort>
+    <iconPath>UI/Icons/Xenotypes/Custom/CustomXenotypeIcon4</iconPath>
+    <inheritable>false</inheritable>
+    <factionlessGenerationWeight>0</factionlessGenerationWeight>
+    <combatPowerFactor>2.2</combatPowerFactor>
+    <doubleXenotypeChances>
+      <EQ_Xeno_Graxeiro>0.7</EQ_Xeno_Graxeiro>
+      <EQ_Xeno_Vagante>0.25</EQ_Xeno_Vagante>
+      <EQ_Xeno_HumanoAntigo>0.05</EQ_Xeno_HumanoAntigo>
+    </doubleXenotypeChances>
+    <genes>
+      <li>ArchiteMetabolism</li>
+      <li MayRequire="vanillaracesexpanded.hussar">VREH_ChemicalDependency_Luciferium</li>
+      <li MayRequire="sarg.alphagenes">AG_Male</li>
+      <li MayRequire="sarg.alphagenes">AG_AcidicBlood</li>
+      <li>Immunity_SuperStrong</li>
+      <li>WoundHealing_SuperFast</li>
+      <li>Superclotting</li>
+      <li MayRequire="vanillaracesexpanded.pigskin">VRE_RapidAging</li>
+      <li MayRequire="sarg.alphagenes">AG_AcidImmunity</li>
+      <li MayRequire="sarg.alphagenes">AG_PackMule</li>
+      <li MayRequire="sarg.alphagenes">AG_GeneInfectionImmunity</li>
+      <li MayRequire="sarg.alphagenes">AG_ArmourMajor</li>
+      <li>PsychicAbility_Deaf</li>
+      <li MayRequire="sarg.alphagenes">AG_ArmouredSpeed</li>
+      <li>ToxResist_Total</li>
+      <li>FireResistant</li>
+      <li>Aggression_HyperAggressive</li>
+      <li>MeleeDamage_Strong</li>
+      <li>Neversleep</li>
+      <li>Robust</li>
+      <li MayRequire="sarg.alphagenes">AG_Painless</li>
+      <li>Sterile</li>
+      <li MayRequire="vanillaracesexpanded.fungoid">VRE_Repulsive</li>
+      <li MayRequire="sarg.alphagenes">AG_DevilEyes</li>
+      <li>Hair_BaldOnly</li>
+      <li>Beard_NoBeardOnly</li>
+      <li>Body_Hulk</li>
+      <li MayRequire="sarg.alphagenes">AG_Skin_TrueBlack</li>
+      <li MayRequire="vanillaracesexpanded.pigskin">VRE_Brave</li>
+      <li MayRequire="vanillaracesexpanded.hussar">VREH_Giant</li>
+      <li MayRequire="vanillaracesexpanded.lycanthrope">VRE_SuperiorDarkVision</li>
+      <li MayRequire="sarg.alphagenes">AG_Instability_Lethal</li>
+      <li>Unstoppable</li>
+      <li MayRequire="vanillaracesexpanded.hussar">VREH_Toughness</li>
+      <li MayRequire="vanillaracesexpanded.hussar">VREH_Arrogant</li>
+      <li MayRequire="vanillaracesexpanded.genie">VRE_AptitudePhenomenal_Shooting</li>
+      <li MayRequire="vanillaracesexpanded.genie">VRE_AptitudePhenomenal_Melee</li>
+      <li>AptitudeTerrible_Mining</li>
+      <li>AptitudeTerrible_Cooking</li>
+      <li>AptitudeTerrible_Plants</li>
+      <li>AptitudeTerrible_Animals</li>
+      <li>AptitudeTerrible_Crafting</li>
+      <li>AptitudeTerrible_Artistic</li>
+      <li>AptitudeTerrible_Medicine</li>
+      <li>AptitudeTerrible_Social</li>
+      <li>AptitudeTerrible_Intellectual</li>
+    </genes>
+  </XenotypeDef>
+
+  <XenotypeDef>
+    <defName>EQ_Xeno_Tenor</defName>
+    <label>tenor de guerra</label>
+    <description>A modificação dos tenores de guerra do Coro Ascendente. Corpo robusto, golpes fortes, pele reforçada e a agressividade necessária para levar a harmonia até quem não a pediu. Não sabe usar armas de fogo: o Coro considera o tiro uma forma vulgar de interromper uma melodia.
+
+Tenores são estéreis. A linhagem é para coristas; a guerra é para descartáveis afinados.</description>
+    <descriptionShort>Modificação de combate do Coro: forte, robusto e agressivo no corpo a corpo. Não sabe atirar; canta enquanto trucida.</descriptionShort>
+    <iconPath>UI/Icons/Xenotypes/Other</iconPath>
+    <inheritable>false</inheritable>
+    <factionlessGenerationWeight>0</factionlessGenerationWeight>
+    <combatPowerFactor>1.2</combatPowerFactor>
+    <doubleXenotypeChances>
+      <EQ_Xeno_Corista>0.7</EQ_Xeno_Corista>
+      <EQ_Xeno_Vagante>0.25</EQ_Xeno_Vagante>
+      <EQ_Xeno_HumanoAntigo>0.05</EQ_Xeno_HumanoAntigo>
+    </doubleXenotypeChances>
+    <genes>
+      <li MayRequire="sarg.alphagenes">AG_ArmourMinor</li>
+      <li>Aggression_Aggressive</li>
+      <li>MeleeDamage_Strong</li>
+      <li>Robust</li>
+      <li>Sterile</li>
+      <li MayRequire="vanillaracesexpanded.pigskin">VRE_Brave</li>
+      <li>Instability_Mild</li>
+      <li>AptitudeTerrible_Shooting</li>
+      <li>AptitudeStrong_Melee</li>
+    </genes>
+  </XenotypeDef>
+
+  <XenotypeDef>
+    <defName>EQ_Xeno_Soprano</defName>
+    <label>soprano</label>
+    <description>O Coro Ascendente transforma suas vozes mais sensíveis em artilharia. A soprano tem sensibilidade psíquica extrema, absorve energia psíquica ao redor e pode soltar uma rajada de insanidade sobre quem estiver ouvindo. O sangue fica azul, a imunidade fica forte e o humor nunca mais melhora.
+
+Muitas sopranos foram crianças levadas pelo dízimo psíquico. O Coro chama isso de "bolsa integral de canto".</description>
+    <descriptionShort>A arma psíquica do Coro: absorve energia psíquica e dispara rajadas de insanidade. Extremamente sensível e permanentemente pessimista.</descriptionShort>
+    <iconPath>UI/Icons/Xenotypes/Other</iconPath>
+    <inheritable>false</inheritable>
+    <factionlessGenerationWeight>0</factionlessGenerationWeight>
+    <combatPowerFactor>1.5</combatPowerFactor>
+    <doubleXenotypeChances>
+      <EQ_Xeno_Corista>0.7</EQ_Xeno_Corista>
+      <EQ_Xeno_Vagante>0.25</EQ_Xeno_Vagante>
+      <EQ_Xeno_HumanoAntigo>0.05</EQ_Xeno_HumanoAntigo>
+    </doubleXenotypeChances>
+    <genes>
+      <li MayRequire="sarg.alphagenes">AG_PsychicAbsorption</li>
+      <li MayRequire="sarg.alphagenes">AG_InsanityBlast</li>
+      <li MayRequire="vanillaracesexpanded.genie">VRE_BlueBlood</li>
+      <li>Immunity_Strong</li>
+      <li>WoundHealing_Fast</li>
+      <li MayRequire="sarg.alphagenes">AG_ArmourMinor</li>
+      <li>PsychicAbility_Extreme</li>
+      <li>Mood_Pessimist</li>
+      <li>Aggression_Aggressive</li>
+      <li>Sterile</li>
+      <li MayRequire="vanillaracesexpanded.pigskin">VRE_Brave</li>
+      <li>Instability_Mild</li>
+      <li>AptitudeStrong_Shooting</li>
+      <li>AptitudeStrong_Melee</li>
+      <li>AptitudeTerrible_Mining</li>
+      <li>AptitudeTerrible_Plants</li>
+      <li>AptitudeTerrible_Animals</li>
+    </genes>
+  </XenotypeDef>
+
+  <XenotypeDef>
+    <defName>EQ_Xeno_SangueMaestro</defName>
+    <label>sangue maestro</label>
+    <description>A modificação reservada às maestrinas da aristocracia do Coro Ascendente, aplicada apenas em mulheres. Dá poder psíquico magistral, visão psíquica, um terceiro olho, meditação passiva, beleza angelical e uma vida extraordinariamente longa. Exige hemogen, sono de morte e a certeza absoluta de que todos os outros estão desafinados.
+
+O sangue é azul por padrão. O Coro garante que isso é genética, não decoração. É as duas coisas.</description>
+    <descriptionShort>A modificação da aristocracia do Coro, só em mulheres: psíquica magistral, longeva, belíssima e hemofágica. Tem um terceiro olho.</descriptionShort>
+    <iconPath>UI/Icons/Xenotypes/Other</iconPath>
+    <inheritable>false</inheritable>
+    <factionlessGenerationWeight>0</factionlessGenerationWeight>
+    <combatPowerFactor>1.8</combatPowerFactor>
+    <doubleXenotypeChances>
+      <EQ_Xeno_Corista>0.7</EQ_Xeno_Corista>
+      <EQ_Xeno_Vagante>0.25</EQ_Xeno_Vagante>
+      <EQ_Xeno_HumanoAntigo>0.05</EQ_Xeno_HumanoAntigo>
+    </doubleXenotypeChances>
+    <genes>
+      <li>ArchiteMetabolism</li>
+      <li MayRequire="vanillaquestsexpanded.ancients">VQEA_PassiveMeditation</li>
+      <li MayRequire="sarg.alphagenes">AG_Female</li>
+      <li MayRequire="vanillaracesexpanded.genie">VRE_BlueBlood</li>
+      <li MayRequire="vanillaracesexpanded.sanguophage">VRE_LowHemogenDrain</li>
+      <li>Hemogenic</li>
+      <li>Deathrest</li>
+      <li>Bloodfeeder</li>
+      <li>Superclotting</li>
+      <li MayRequire="sarg.alphagenes">AG_ExtraordinaryLifespan</li>
+      <li MayRequire="vanillaracesexpanded.phytokin">VRE_ProgressiveAttunement</li>
+      <li MayRequire="sarg.alphagenes">AG_PsychicAbility_Masterful</li>
+      <li MayRequire="sarg.alphagenes">AG_PsychicSight</li>
+      <li>MeleeDamage_Strong</li>
+      <li>Sterile</li>
+      <li MayRequire="sarg.alphagenes">AG_Beauty_Angelic</li>
+      <li MayRequire="vanillaracesexpanded.highmate">VRE_HighmateHair</li>
+      <li MayRequire="sarg.alphagenes">AG_DevilEyes</li>
+      <li MayRequire="sarg.alphagenes">AG_Skin_Silver</li>
+      <li MayRequire="vanillaracesexpanded.pigskin">VRE_Brave</li>
+      <li MayRequire="sarg.alphagenes">AG_ThirdEye</li>
+      <li>Instability_Mild</li>
+      <li MayRequire="vanillaracesexpanded.hussar">VREH_Arrogant</li>
+      <li>AptitudeStrong_Melee</li>
+    </genes>
+  </XenotypeDef>
+
+  <XenotypeDef>
+    <defName>EQ_Xeno_NC_Brotado</defName>
+    <label>brotado</label>
+    <description>A linhagem mais comum dos Não Catalogados. A carne torcida cresce em bolsas que guardam o que o corpo não usa, e a pele aprendeu a se alimentar de luz como a dos cambaleantes que a Ordem do Silêncio estudava na cela ao lado. O rosto deixou de ser rosto faz gerações.
+
+São robustos, sentem pouca dor e enxergam no escuro, mas queimam fácil. Na ficha da Ordem constavam como "espécime vegetativo, baixo risco". A ficha foi comida junto com o arquivista.</description>
+    <descriptionShort>Não catalogado de carne inchada que vive de luz como uma planta. Robusto, enxerga no escuro e pega fogo com facilidade.</descriptionShort>
+    <iconPath>UI/Icons/Xenotypes/Other</iconPath>
+    <inheritable>true</inheritable>
+    <factionlessGenerationWeight>0</factionlessGenerationWeight>
+    <combatPowerFactor>1.1</combatPowerFactor>
+    <genes>
+      <li MayRequire="sarg.alphagenes">AG_FleshSack</li>
+      <li MayRequire="sarg.alphagenes">AG_TwistedFlesh</li>
+      <li MayRequire="sarg.alphagenes">AG_Shambler_Photosynthetic</li>
+      <li>PsychicAbility_Enhanced</li>
+      <li>ToxicEnvironmentResistance_Partial</li>
+      <li>FireWeakness</li>
+      <li>Robust</li>
+      <li>Pain_Reduced</li>
+      <li MayRequire="sarg.alphagenes">AG_EldritchVisage</li>
+      <li MayRequire="vanillaracesexpanded.pigskin">VRE_Brave</li>
+      <li>DarkVision</li>
+      <li>Instability_Mild</li>
+      <li>AptitudeStrong_Melee</li>
+      <li>AptitudeTerrible_Social</li>
+      <li>AptitudeTerrible_Intellectual</li>
+    </genes>
+  </XenotypeDef>
+
+  <XenotypeDef>
+    <defName>EQ_Xeno_NC_Acoite</defName>
+    <label>açoite</label>
+    <description>Os caçadores dos ninhos. Do corpo torcido sai um chicote de carne que alcança mais longe que um braço, e da garganta um cuspe que corrói. Por dentro já são meio mortos: o coração bate por hábito, e ferimentos que derrubariam outra pessoa só os deixam mais lentos.
+
+A Ordem do Silêncio os classificava como "espécime agressivo, manusear com vara". Os açoites guardam as varas como troféu.</description>
+    <descriptionShort>Não catalogado com chicote de carne e cuspe ácido, meio morto por dentro. Os caçadores dos ninhos.</descriptionShort>
+    <iconPath>UI/Icons/Xenotypes/Other</iconPath>
+    <inheritable>true</inheritable>
+    <factionlessGenerationWeight>0</factionlessGenerationWeight>
+    <combatPowerFactor>1.3</combatPowerFactor>
+    <genes>
+      <li MayRequire="sarg.alphagenes">AG_FleshSpitter</li>
+      <li MayRequire="sarg.alphagenes">AG_GreaterFleshWhip</li>
+      <li MayRequire="sarg.alphagenes">AG_PseudoDeadlife</li>
+      <li MayRequire="sarg.alphagenes">AG_TwistedFlesh</li>
+      <li>ToxicEnvironmentResistance_Partial</li>
+      <li>FireWeakness</li>
+      <li>Robust</li>
+      <li>Pain_Reduced</li>
+      <li MayRequire="sarg.alphagenes">AG_EldritchVisage</li>
+      <li MayRequire="vanillaracesexpanded.pigskin">VRE_Brave</li>
+      <li>DarkVision</li>
+      <li>Instability_Mild</li>
+      <li>AptitudeStrong_Melee</li>
+      <li>AptitudeTerrible_Social</li>
+      <li>AptitudeTerrible_Intellectual</li>
+    </genes>
+  </XenotypeDef>
+
+  <XenotypeDef>
+    <defName>EQ_Xeno_NC_Farpado</defName>
+    <label>farpado</label>
+    <description>A linhagem mais rara e mais instável. O corpo se cobriu de espinhos de osso, da cabeça saem chifres que se mexem sozinhos, e a carne está tão cheia de pressão que estoura quando o farpado morre, levando junto quem estiver perto.
+
+Batem forte, quase não sentem dor e não vivem muito: a instabilidade genética é grave. A Ordem do Silêncio nunca conseguiu manter um vivo por tempo suficiente para terminar o artigo.</description>
+    <descriptionShort>Não catalogado coberto de espinhos de osso e chifres-tentáculo. Forte, instável e explode em carne quando morre.</descriptionShort>
+    <iconPath>UI/Icons/Xenotypes/Other</iconPath>
+    <inheritable>true</inheritable>
+    <factionlessGenerationWeight>0</factionlessGenerationWeight>
+    <combatPowerFactor>1.5</combatPowerFactor>
+    <genes>
+      <li MayRequire="sarg.alphagenes">AG_MeatBurst</li>
+      <li MayRequire="sarg.alphagenes">AG_GreaterToughspikes</li>
+      <li MayRequire="sarg.alphagenes">AG_PseudoDeadlife</li>
+      <li MayRequire="sarg.alphagenes">AG_TwistedFlesh</li>
+      <li MayRequire="sarg.alphagenes">AG_TentacleHorns</li>
+      <li>ToxicEnvironmentResistance_Partial</li>
+      <li>FireWeakness</li>
+      <li>MeleeDamage_Strong</li>
+      <li>Robust</li>
+      <li>Pain_Reduced</li>
+      <li MayRequire="sarg.alphagenes">AG_EldritchVisage</li>
+      <li MayRequire="vanillaracesexpanded.pigskin">VRE_Brave</li>
+      <li>DarkVision</li>
+      <li>Instability_Major</li>
+      <li>AptitudeStrong_Melee</li>
+      <li>AptitudeTerrible_Social</li>
+      <li>AptitudeTerrible_Intellectual</li>
+    </genes>
+  </XenotypeDef>
+
+  <XenotypeDef>
+    <defName>EQ_Xeno_NC_Matriz</defName>
+    <label>matriz do ninho</label>
+    <description>Não se nasce matriz. Quando um ninho perde quem o comanda, a matriz antiga reimplanta o próprio xenogerme no escolhido, e o resto do ninho come o que sobrar dela.
+
+A matriz tem a carne blindada, cura rápido, bate como ninguém e carrega os arquitos que o Pai-Carne roubou da cela. Abre um bolsão cinzento fora do mundo para esconder o que é do ninho, faz brotar bulbos de carne e levanta os mortos para lutar outra vez. Fora isso, não sabe fazer nada, e acha que não precisa.
+
+A Ordem do Silêncio daria uma ala inteira do arquivo por uma matriz viva. Já perdeu três expedições tentando.</description>
+    <descriptionShort>A modificação de quem comanda um ninho: carne blindada, um bolsão cinzento fora do mundo, mortos que se levantam e um xenogerme para passar adiante.</descriptionShort>
+    <iconPath>UI/Icons/Xenotypes/Other</iconPath>
+    <inheritable>false</inheritable>
+    <factionlessGenerationWeight>0</factionlessGenerationWeight>
+    <combatPowerFactor>2.2</combatPowerFactor>
+    <doubleXenotypeChances>
+      <EQ_Xeno_NC_Brotado>0.45</EQ_Xeno_NC_Brotado>
+      <EQ_Xeno_NC_Acoite>0.35</EQ_Xeno_NC_Acoite>
+      <EQ_Xeno_NC_Farpado>0.2</EQ_Xeno_NC_Farpado>
+    </doubleXenotypeChances>
+    <genes>
+      <li>XenogermReimplanter</li>
+      <li>ArchiteMetabolism</li>
+      <li MayRequire="sarg.alphagenes">AG_FleshBulb</li>
+      <li MayRequire="sarg.alphagenes">AG_MeatBurst</li>
+      <li MayRequire="sarg.alphagenes">AG_GreaterFleshWhip</li>
+      <li MayRequire="sarg.alphagenes">AG_GreyPocketPlane</li>
+      <li MayRequire="sarg.alphagenes">AG_DeadlifeProducer</li>
+      <li MayRequire="sarg.alphagenes">AG_PseudoDeadlife</li>
+      <li MayRequire="sarg.alphagenes">AG_TwistedFlesh</li>
+      <li>WoundHealing_Fast</li>
+      <li>Superclotting</li>
+      <li MayRequire="sarg.alphagenes">AG_ArmourMajor</li>
+      <li>PsychicAbility_Enhanced</li>
+      <li>ToxicEnvironmentResistance_Partial</li>
+      <li>FireWeakness</li>
+      <li>MeleeDamage_Strong</li>
+      <li>Robust</li>
+      <li>Pain_Reduced</li>
+      <li MayRequire="sarg.alphagenes">AG_EldritchVisage</li>
+      <li MayRequire="vanillaracesexpanded.pigskin">VRE_Brave</li>
+      <li>DarkVision</li>
+      <li>Instability_Major</li>
+      <li MayRequire="vanillaracesexpanded.hussar">VREH_Arrogant</li>
+      <li>AptitudeRemarkable_Melee</li>
+      <li>AptitudeTerrible_Construction</li>
+      <li>AptitudeTerrible_Mining</li>
+      <li>AptitudeTerrible_Cooking</li>
+      <li>AptitudeTerrible_Plants</li>
+      <li>AptitudeTerrible_Animals</li>
+      <li>AptitudeTerrible_Crafting</li>
+      <li>AptitudeTerrible_Artistic</li>
+    </genes>
+  </XenotypeDef>
+
+</Defs>

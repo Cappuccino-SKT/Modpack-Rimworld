@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <!-- O mundo só tem as nossas espécies. Quem seria gerado como Baseliner ou com xenotipo de outro mod
+       (colonos iniciais, outras facções, pawns sem facção) nasce com um destes padrões.
+       As 4 potências têm os próprios conjuntos (EQ_Factions.xml / EQ_PawnKinds.xml). -->
+  <EcosDaQueda.WorldXenotypesDef>
+    <defName>EQ_WorldXenotypes</defName>
+    <baselinerReplacements>
+      <EQ_Xeno_Vagante>0.8</EQ_Xeno_Vagante>
+      <EQ_Xeno_VaganteEsqueletico>0.15</EQ_Xeno_VaganteEsqueletico>
+      <EQ_Xeno_HumanoAntigo>0.05</EQ_Xeno_HumanoAntigo>
+    </baselinerReplacements>
+    <!-- Exceções que continuam existindo: androides (são máquinas, e a Forja tem uma questão com eles)
+         e sanguófagos (as missões do Biotech dependem dos genes deles). -->
+    <keepXenotypes>
+      <li>Sanguophage</li>
+      <li MayRequire="vanillaracesexpanded.android">VREA_AndroidAwakened</li>
+      <li MayRequire="vanillaracesexpanded.android">VREA_AndroidBasic</li>
+    </keepXenotypes>
+  </EcosDaQueda.WorldXenotypesDef>
+
+</Defs>
