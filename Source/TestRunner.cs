@@ -31,6 +31,7 @@ namespace EcosDaQueda.DebugTools
         private static float timeoutSeconds = 900f;
         private static int errorCount;
         private static bool inCommand;
+        private static Func<bool> stopWhen;
 
         static TestRunner()
         {
@@ -49,6 +50,7 @@ namespace EcosDaQueda.DebugTools
                 }
                 File.WriteAllText(outPath, "# teste: " + scriptPath + "\n# início: " + DateTime.Now + "\n");
                 Active = true;
+                EQLeader.SuppressDialogs = true;
                 harmony.Patch(AccessTools.Method(typeof(Root_Entry), nameof(Root_Entry.Update)), postfix: new HarmonyMethod(typeof(TestRunner), nameof(Frame)));
                 harmony.Patch(AccessTools.Method(typeof(Root_Play), nameof(Root_Play.Update)), postfix: new HarmonyMethod(typeof(TestRunner), nameof(Frame)));
                 harmony.Patch(AccessTools.Method(typeof(Log), nameof(Log.Error), new[] { typeof(string) }), postfix: new HarmonyMethod(typeof(TestRunner), nameof(OnLogError)));
@@ -74,6 +76,7 @@ namespace EcosDaQueda.DebugTools
             if (text.StartsWith("Bad string pass when reading rule")) return;
             // Combat Extended sem placa de vídeo (modo -Headless)
             if (text.Contains("AsyncGPUReadback failed")) return;
+            if (text.StartsWith("Error in ParallelForEach") && text.Contains("Combat Extended")) return;
             errorCount++;
             if (errorCount <= 40)
             {
@@ -170,7 +173,11 @@ namespace EcosDaQueda.DebugTools
                 {
                     Find.TickManager.DoSingleTick();
                     ticksToRun--;
+                    if (stopWhen != null && ticksToRun % 50 == 0 && stopWhen())
+                        ticksToRun = 0;
                 }
+                if (ticksToRun == 0)
+                    stopWhen = null;
                 if (ticksToRun == 0)
                     Write("  agora tick " + Find.TickManager.TicksGame + " (dia " + (Find.TickManager.TicksGame / 60000f).ToString("0.0") + ")");
                 return;
@@ -229,6 +236,26 @@ namespace EcosDaQueda.DebugTools
                     return EQDebug.Join(Arg(1) == "none" ? null : Fac(1));
                 case "due": return EQDebug.MakeDue(Arg(1) == "tithe" || Arg(1) == "dizimo");
                 case "allegiance": return EQDebug.DescribeAllegiance();
+                case "ceremony":
+                    if (Arg(1) == "await")
+                    {
+                        ticksToRun = ParseTicks(Arg(2) ?? "1d");
+                        stopWhen = EQDebug.CeremonyReady;
+                        return "esperando o emissário ficar pronto (até " + ticksToRun + " ticks)...";
+                    }
+                    if (Arg(1) == "start") return EQDebug.CeremonyStart();
+                    if (Arg(1) == "diag") return EQDebug.CeremonyDiag(Fac(2));
+                    if (Arg(1) == "status" || Arg(1) == null) return EQDebug.CeremonyStatus();
+                    if (Arg(1) == "cancel") { EQCeremony.Cancel(); return EQDebug.DescribeAllegiance(); }
+                    return EQDebug.Ceremony(Fac(1));
+                case "quests": return EQDebug.Quests();
+                case "quest": return EQDebug.QuestText(string.Join(" ", a.Skip(1)));
+                case "accept": return EQDebug.AcceptQuest(string.Join(" ", a.Skip(1)));
+                case "favor":
+                    if (Arg(1) == "event") return EQDebug.FavorEvent(Arg(2), int.Parse(Arg(3) ?? "1"));
+                    return EQDebug.Favor(int.Parse(Arg(1)));
+                case "leader": return EQDebug.Leader(Arg(1), Arg(2));
+                case "renounce": return EQDebug.Renounce();
                 case "services": return EQDebug.Services();
                 case "service": return EQDebug.UseService(Arg(1));
                 case "give": return EQDebug.Give(Arg(1), int.Parse(Arg(2) ?? "1"));

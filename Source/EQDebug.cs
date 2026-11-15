@@ -141,9 +141,193 @@ namespace EcosDaQueda.DebugTools
         public static string DescribeAllegiance()
         {
             var alg = WorldComponent_Allegiance.Current;
-            if (alg?.memberOf == null) return "lealdade: nenhuma";
-            return "lealdade: " + alg.memberOf.Name + " posto=" + alg.RankIndex + " (" + alg.Rank?.label + ") lastRank=" + alg.lastRank
-                + " lastStipend=" + alg.lastStipendTick + " lastTithe=" + alg.lastTitheTick + " pendingTithe=" + alg.pendingTitheUntil;
+            if (alg == null) return "lealdade: (sem componente)";
+            Pawn ideoLeader = EQLeader.IdeoLeader;
+            string s = "lealdade: " + (alg.memberOf?.Name ?? "nenhuma") + (alg.pendingPower != null ? " | cerimônia pendente com " + alg.pendingPower.Name : "");
+            if (alg.memberOf != null)
+                s += " cargo=" + alg.RankIndex + " (" + alg.RankLabel + ") " + alg.Def.FavorLabel + "=" + alg.Favor + " hegLinked=" + alg.hegLinked
+                    + " lastStipend=" + alg.lastStipendTick + " lastTithe=" + alg.lastTitheTick + " pendingTithe=" + alg.pendingTitheUntil;
+            s += "\nlíder=" + (alg.leader?.LabelShort ?? "nenhum") + (alg.leader != null && alg.leader.Dead ? " (MORTO)" : "")
+                + " líderDaIdeologia=" + (ideoLeader?.LabelShort ?? "nenhum") + " sucessor=" + (alg.successor?.LabelShort ?? "nenhum")
+                + " precisaEscolher=" + alg.needsLeaderChoice + " cache=" + (alg.cachedTitle?.defName ?? "-") + "/" + alg.cachedFavor;
+            Pawn l = alg.leader ?? ideoLeader;
+            if (l?.royalty != null)
+                foreach (Faction f in Powers)
+                    if (l.royalty.GetFavor(f) != 0 || l.royalty.GetCurrentTitle(f) != null)
+                        s += "\n  " + l.LabelShort + " com " + f.Name + ": título=" + (l.royalty.GetCurrentTitle(f)?.defName ?? "-") + " favor=" + l.royalty.GetFavor(f);
+            return s;
+        }
+
+        // ------------------------------------------------------------ cerimônia, líder e favor
+
+        public static string Ceremony(Faction f)
+        {
+            string block = EQCeremony.BlockReason(f);
+            if (block != null) return "BLOQUEADO: " + block;
+            string err = EQCeremony.Request(f);
+            return err != null ? "FALHOU: " + err : "cerimônia solicitada com " + f.Name + "\n" + Quests();
+        }
+
+        public static string CeremonyDiag(Faction f)
+        {
+            var sb = new StringBuilder();
+            Pawn l = EQLeader.IdeoLeader;
+            FactionAllegianceDef d = FactionAllegianceDef.For(f.def);
+            sb.AppendLine("líder=" + l + " royalty=" + (l?.royalty != null) + " títulos da facção=" + f.def.RoyalTitlesAwardableInSeniorityOrderForReading.Count + " tags=" + string.Join(",", f.def.royalTitleTags ?? new List<string>()));
+            EQFavor.Run(() => l.royalty.GainFavor(f, d.FirstTitle.favorCost));
+            sb.AppendLine("favor=" + l.royalty.GetFavor(f) + " podeAtualizar=" + l.royalty.CanUpdateTitle(f) + " deveTerMissão=" + RoyalTitleUtility.ShouldGetBestowingCeremonyQuest(l, f)
+                + " missãoAtual=" + (RoyalTitleUtility.GetCurrentBestowingCeremonyQuest(l, f) != null));
+            QuestScriptDef script = DefDatabase<QuestScriptDef>.GetNamedSilentFail("EQ_Ceremony");
+            sb.AppendLine("script=" + script + " root=" + script?.root?.GetType().Name);
+            var slate = new RimWorld.QuestGen.Slate();
+            slate.Set("titleHolder", l);
+            slate.Set("bestowingFaction", f);
+            try { sb.AppendLine("TestRun=" + script.root.TestRun(slate.DeepCopy()) + " CanRun=" + script.CanRun(slate, l.MapHeld)); }
+            catch (Exception ex) { sb.AppendLine("EXCEÇÃO TestRun: " + ex); }
+            try
+            {
+                Quest q = QuestUtility.GenerateQuestAndMakeAvailable(script, slate);
+                sb.AppendLine("gerou: " + q?.name + " partes=" + q?.PartsListForReading.Count + " estado=" + q?.State);
+            }
+            catch (Exception ex) { sb.AppendLine("EXCEÇÃO ao gerar: " + ex); }
+            return sb.ToString().TrimEnd();
+        }
+
+        public static string Quests()
+        {
+            var sb = new StringBuilder();
+            foreach (Quest q in Find.QuestManager.QuestsListForReading)
+                if (!q.Historical || q.root?.defName == "EQ_Ceremony")
+                    sb.AppendLine("  [" + q.id + "] " + q.name + " (" + q.root?.defName + ") estado=" + q.State);
+            return sb.Length == 0 ? "  (nenhuma missão)" : sb.ToString().TrimEnd();
+        }
+
+        public static string QuestText(string part)
+        {
+            Quest q = Find.QuestManager.QuestsListForReading.LastOrDefault(x => x.name.IndexOf(part ?? "", StringComparison.OrdinalIgnoreCase) >= 0);
+            return q == null ? "missão não encontrada: " + part : q.name + "\n" + q.description;
+        }
+
+        public static string AcceptQuest(string part)
+        {
+            Quest q = Find.QuestManager.QuestsListForReading.LastOrDefault(x => x.State == QuestState.NotYetAccepted && x.name.IndexOf(part ?? "", StringComparison.OrdinalIgnoreCase) >= 0);
+            if (q == null) return "missão não encontrada (não aceita): " + part;
+            foreach (QuestPart p in q.PartsListForReading)
+                if (p is QuestPart_RequirementsToAccept r)
+                {
+                    AcceptanceReport rep = r.CanAccept();
+                    if (!rep.Accepted) return "não pode aceitar: " + rep.Reason;
+                }
+            q.Accept(null);
+            return "aceitou \"" + q.name + "\" estado=" + q.State;
+        }
+
+        private static Verse.AI.Group.Lord CeremonyLord()
+        {
+            foreach (Map map in Find.Maps)
+                foreach (Verse.AI.Group.Lord lord in map.lordManager.lords)
+                    if (lord.LordJob is LordJob_BestowingCeremony)
+                        return lord;
+            return null;
+        }
+
+        public static bool CeremonyReady() => CeremonyLord()?.CurLordToil is LordToil_BestowingCeremony_Wait;
+
+        public static string CeremonyStatus()
+        {
+            Verse.AI.Group.Lord lord = CeremonyLord();
+            if (lord == null) return "sem cerimônia no mapa";
+            var job = (LordJob_BestowingCeremony)lord.LordJob;
+            return "cerimônia: etapa=" + lord.CurLordToil?.GetType().Name + " emissário=" + job.bestower?.LabelShort + " (" + job.bestower?.kindDef?.defName + ", no mapa=" + (job.bestower?.Spawned ?? false)
+                + ") alvo=" + job.target?.LabelShort + " peões=" + lord.ownedPawns.Count;
+        }
+
+        /// <summary>Começa o ritual (o que o jogador faz clicando no emissário), com todos os colonos assistindo.</summary>
+        public static string CeremonyStart()
+        {
+            Verse.AI.Group.Lord lord = CeremonyLord();
+            if (lord == null) return "sem cerimônia no mapa";
+            if (!(lord.CurLordToil is LordToil_BestowingCeremony_Wait wait))
+                return "o emissário ainda não está pronto: " + CeremonyStatus();
+            var job = (LordJob_BestowingCeremony)lord.LordJob;
+            List<Pawn> pawns = job.target.Map.mapPawns.FreeColonistsSpawned.Where(p => !p.Downed).ToList();
+            if (!pawns.Contains(job.target)) pawns.Add(job.target);
+            AccessTools.Method(typeof(LordToil_BestowingCeremony_Wait), "StartRitual").Invoke(wait, new object[] { pawns });
+            return "ritual iniciado com " + pawns.Count + " participantes: " + CeremonyStatus();
+        }
+
+        public static string Favor(int amount)
+        {
+            var alg = WorldComponent_Allegiance.Current;
+            if (alg?.memberOf == null) return "não é membro de nenhuma potência";
+            bool ok = EQFavor.Award(alg.memberOf, amount, "debug");
+            return "favor " + amount + " ok=" + ok + "\n" + DescribeAllegiance() + "\n" + Quests();
+        }
+
+        public static string FavorEvent(string type, int count)
+        {
+            if (!Enum.TryParse(type, true, out FavorEventType t)) return "evento desconhecido: " + type;
+            EQFavor.Notify(t, count);
+            return "evento " + t + " x" + count + "\n" + DescribeAllegiance();
+        }
+
+        public static string Leader(string action, string arg)
+        {
+            var alg = WorldComponent_Allegiance.Current;
+            List<Pawn> cands = EQLeader.Candidates();
+            switch (action)
+            {
+                case null:
+                case "show":
+                    return DescribeAllegiance() + "\n  candidatos: " + string.Join(", ", cands.Select((p, i) => i + "=" + p.LabelShort));
+                case "set":
+                {
+                    int i = int.Parse(arg ?? "0");
+                    if (i < 0 || i >= cands.Count) return "candidato inválido (há " + cands.Count + ")";
+                    bool ok = EQLeader.Assign(cands[i]);
+                    alg.LeaderTick();
+                    return "líder := " + cands[i].LabelShort + " ok=" + ok + "\n" + DescribeAllegiance();
+                }
+                case "other":
+                {
+                    Pawn p = cands.FirstOrDefault(x => x != EQLeader.IdeoLeader);
+                    if (p == null) return "sem outro candidato";
+                    bool ok = EQLeader.Assign(p);
+                    alg.LeaderTick();
+                    return "líder := " + p.LabelShort + " ok=" + ok + "\n" + DescribeAllegiance();
+                }
+                case "successor":
+                {
+                    Pawn p = cands.FirstOrDefault(x => x != EQLeader.IdeoLeader);
+                    if (p == null) return "sem candidato a sucessor";
+                    alg.successor = p;
+                    return "sucessor := " + p.LabelShort;
+                }
+                case "kill":
+                {
+                    Pawn p = EQLeader.IdeoLeader;
+                    if (p == null) return "sem líder para matar";
+                    p.Kill(null);
+                    alg.LeaderTick();
+                    return "matou o líder " + p.LabelShort + "\n" + DescribeAllegiance();
+                }
+                case "unassign":
+                {
+                    Pawn p = EQLeader.IdeoLeader;
+                    if (p == null) return "sem líder";
+                    EQLeader.LeaderRole.Unassign(p, false);
+                    alg.LeaderTick();
+                    return "tirou o cargo de líder de " + p.LabelShort + "\n" + DescribeAllegiance();
+                }
+                default:
+                    return "ação desconhecida: " + action;
+            }
+        }
+
+        public static string Renounce()
+        {
+            string r = WorldComponent_Allegiance.Current?.Renounce();
+            return (r ?? "rompeu o juramento") + "\n" + DescribeAllegiance();
         }
 
         public static string Services()
@@ -198,6 +382,7 @@ namespace EcosDaQueda.DebugTools
             Pawn p = PawnGenerator.GeneratePawn(PawnKindDefOf.Villager, Find.FactionManager.RandomEnemyFaction() ?? Powers.FirstOrDefault());
             GenSpawn.Spawn(p, HomeCell(map), map);
             p.guest.SetGuestStatus(Faction.OfPlayer, GuestStatus.Prisoner);
+            p.health.AddHediff(HediffDefOf.Anesthetic); // sem cela ele fugiria do mapa
             return "prisioneiro criado: " + p.LabelShort + " (prisioneiros: " + map.mapPawns.PrisonersOfColonySpawned.Count + ")";
         }
 
