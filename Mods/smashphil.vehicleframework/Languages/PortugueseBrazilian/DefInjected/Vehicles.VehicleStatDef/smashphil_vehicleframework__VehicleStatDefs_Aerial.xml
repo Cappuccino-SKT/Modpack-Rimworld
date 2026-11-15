@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <!-- EN: Flight Speed -->
+  <FlightSpeed.label>Velocidade de voo</FlightSpeed.label>
+  <!-- EN: Speed of movement on the world map while flying. -->
+  <FlightSpeed.description>Velocidade de deslocamento no mapa-múndi durante o voo.</FlightSpeed.description>
+  <!-- EN: {0} t/s -->
+  <FlightSpeed.formatString>{0} reg/s</FlightSpeed.formatString>
+  <!-- EN: Flight Control -->
+  <FlightControl.label>Controle de voo</FlightControl.label>
+  <!-- EN: Capacity of vehicle for flight.  If value reaches 0, the vehicle will be forced to crash land. -->
+  <FlightControl.description>Capacidade de voo do veículo. Se o valor chegar a 0, o veículo é forçado a fazer um pouso de emergência.</FlightControl.description>
+</LanguageData>

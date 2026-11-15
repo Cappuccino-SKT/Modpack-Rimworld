@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <VPE_EltexMeteor.questDescriptionRules.rulesStrings>
+    <!-- EN: questDescription-&gt;A large meteorite has struck ground nearby. It has left behind a lump of eltex. Eltex can be used to create psyfocus-enhancing gear, or sold to the Empire to gain honor.\nYou can send a mining party to retrieve it, but chances are if you wait long enough, someone else will lay claim to it. -->
+    <li>questDescription-&gt;Um meteorito grande caiu aqui perto e deixou para trás um pedaço de eltex. O eltex pode ser usado para fazer equipamentos que aumentam a concentração psíquica, ou vendido ao Império para ganhar honra.\nVocês podem mandar um grupo de mineração buscá-lo, mas, se demorarem demais, é provável que outra pessoa chegue primeiro.</li>
+  </VPE_EltexMeteor.questDescriptionRules.rulesStrings>
+  <VPE_EltexMeteor.questNameRules.rulesStrings>
+    <!-- EN: questName-&gt;Eltex Meteor -->
+    <li>questName-&gt;Meteoro de eltex</li>
+  </VPE_EltexMeteor.questNameRules.rulesStrings>
+  <!-- EN: Quest expired: [resolvedQuestName] -->
+  <VPE_EltexMeteor.root.nodes.WorldObjectTimeout.node.nodes.Letter.label.slateRef>Missão expirada: [resolvedQuestName]</VPE_EltexMeteor.root.nodes.WorldObjectTimeout.node.nodes.Letter.label.slateRef>
+  <!-- EN: Others have mined the Eltex meteor. The quest [resolvedQuestName] has expired. -->
+  <VPE_EltexMeteor.root.nodes.WorldObjectTimeout.node.nodes.Letter.text.slateRef>Outros mineraram o meteoro de eltex. A missão [resolvedQuestName] expirou.</VPE_EltexMeteor.root.nodes.WorldObjectTimeout.node.nodes.Letter.text.slateRef>
+</LanguageData>

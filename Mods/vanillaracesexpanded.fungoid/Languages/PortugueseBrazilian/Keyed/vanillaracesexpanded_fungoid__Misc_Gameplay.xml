@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <!-- EN: Gene infection ({0}), {1} -->
+  <VRE_InfectionLabel>Infecção genética ({0}), {1}</VRE_InfectionLabel>
+  <!-- EN: Infection caused by the contact with a {0}. Upon reaching 100%, colonist will turn into a {0} -->
+  <VRE_InfectionDescription>Infecção causada pelo contato com um {0}. Ao chegar a 100%, o colono vira um {0}</VRE_InfectionDescription>
+  <!-- EN: Gene infected ({0} days) -->
+  <VRE_InfectedLabel>Infectado geneticamente ({0} dias)</VRE_InfectedLabel>
+  <!-- EN: Gene infection chance -->
+  <VRE_InfectionChance>Chance de infecção genética</VRE_InfectionChance>
+  <!-- EN: Chance of the gene infection to infect the target. By default it is 20%. Bear in mind this only applies to claw and teeth attacks, if the person with a gene infector gene carries melee weapons this will reduce infection chances. -->
+  <VRE_InfectionChanceDesc>Chance de a infecção genética infectar o alvo. O padrão é 20%. Isso só vale para ataques com garras e dentes; se a pessoa com o gene infectador usar armas corpo a corpo, a chance de infecção cai.</VRE_InfectionChanceDesc>
+  <!-- EN: Reset -->
+  <VRE_Reset>Redefinir</VRE_Reset>
+  <!-- EN: Fungoid apocalypse -->
+  <VRE_FungoidApocalypse>Apocalipse fungoide</VRE_FungoidApocalypse>
+  <!-- EN: With this mod option enabled, ALL incoming humanoid raids will be fungoids! -->
+  <VRE_FungoidApocalypseDesc>Com esta opção ativada, TODAS as incursões humanoides serão de fungoides!</VRE_FungoidApocalypseDesc>
+  <!-- EN: Repulsive colonist! -->
+  <VRE_TextMote_RepulsiveColonist>Colono repulsivo!</VRE_TextMote_RepulsiveColonist>
+</LanguageData>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <!-- EN: plant timeskip -->
+  <VPE_PlantTimeskip.label>salto temporal vegetal</VPE_PlantTimeskip.label>
+  <!-- EN: Grows all the plants in a radius around the caster, advancing their maturity by the equivalent of 7 days. Biologically ages the caster by a full year. -->
+  <VPE_PlantTimeskip.description>Faz crescer todas as plantas num raio ao redor do conjurador, avançando a maturidade delas o equivalente a 7 dias. Envelhece o conjurador biologicamente em um ano inteiro.</VPE_PlantTimeskip.description>
+  <!-- EN: Using ability: {0} -->
+  <VPE_PlantTimeskip.jobReportString>Usando habilidade: {0}</VPE_PlantTimeskip.jobReportString>
+  <!-- EN: plant timeskip -->
+  <VPE_PlantTimeskip.verbProperties.label>salto temporal vegetal</VPE_PlantTimeskip.verbProperties.label>
+  <!-- EN: timeskip meditation -->
+  <VPE_TimeskipMeditation.label>meditação de salto temporal</VPE_TimeskipMeditation.label>
+  <!-- EN: Puts the caster into a self-inflicted coma as they earn a considerable amount of experience toward their next Psycast level and regain full Psyfocus. Biologically ages the caster by five years. -->
+  <VPE_TimeskipMeditation.description>Põe o conjurador num coma autoinduzido enquanto ele ganha uma boa quantidade de experiência para o próximo nível de poder psíquico e recupera toda a concentração psíquica. Envelhece o conjurador biologicamente em cinco anos.</VPE_TimeskipMeditation.description>
+  <!-- EN: Using ability: {0} -->
+  <VPE_TimeskipMeditation.jobReportString>Usando habilidade: {0}</VPE_TimeskipMeditation.jobReportString>
+  <!-- EN: timeskip meditation -->
+  <VPE_TimeskipMeditation.verbProperties.label>meditação de salto temporal</VPE_TimeskipMeditation.verbProperties.label>
+  <!-- EN: word of foretelling -->
+  <VPE_WordofForetelling.label>palavra de premonição</VPE_WordofForetelling.label>
+  <!-- EN: Psychic whispers of things to come. Colony pawns are inspired, neutrals or friendlies improve relations, prisoners lose their resistance and enemies retreat from their doom. Biologically ages the caster by a full year. -->
+  <VPE_WordofForetelling.description>Sussurros psíquicos sobre o que está por vir. Os personagens da colônia ficam inspirados, neutros e aliados melhoram as relações, prisioneiros perdem a resistência e inimigos recuam diante da própria ruína. Envelhece o conjurador biologicamente em um ano inteiro.</VPE_WordofForetelling.description>
+  <!-- EN: Using ability: {0} -->
+  <VPE_WordofForetelling.jobReportString>Usando habilidade: {0}</VPE_WordofForetelling.jobReportString>
+  <!-- EN: word of foretelling -->
+  <VPE_WordofForetelling.verbProperties.label>palavra de premonição</VPE_WordofForetelling.verbProperties.label>
+  <!-- EN: craft timeskip -->
+  <VPE_CraftTimeskip.label>salto temporal de fabricação</VPE_CraftTimeskip.label>
+  <!-- EN: Using very precise timeskipping, moves the desired item to its finished state as if the creator had continued working on it. Biologically ages the caster by a full year. -->
+  <VPE_CraftTimeskip.description>Com um salto temporal muito preciso, leva o item desejado ao seu estado pronto, como se o criador tivesse continuado trabalhando nele. Envelhece o conjurador biologicamente em um ano inteiro.</VPE_CraftTimeskip.description>
+  <!-- EN: Using ability: {0} -->
+  <VPE_CraftTimeskip.jobReportString>Usando habilidade: {0}</VPE_CraftTimeskip.jobReportString>
+  <!-- EN: craft timeskip -->
+  <VPE_CraftTimeskip.verbProperties.label>salto temporal de fabricação</VPE_CraftTimeskip.verbProperties.label>
+  <!-- EN: age -->
+  <VPE_Age.label>envelhecer</VPE_Age.label>
+  <!-- EN: Very inefficiently siphons life force from a living target, de-aging the caster by 2 years and aging the other by 10. Very debilitating aftereffects for the victim and considered a hostile action by allies. -->
+  <VPE_Age.description>Suga, de forma muito ineficiente, a força vital de um alvo vivo, rejuvenescendo o conjurador em 2 anos e envelhecendo o outro em 10. Efeitos posteriores muito debilitantes para a vítima, e considerado uma ação hostil por aliados.</VPE_Age.description>
+  <!-- EN: Using ability: {0} -->
+  <VPE_Age.jobReportString>Usando habilidade: {0}</VPE_Age.jobReportString>
+  <!-- EN: age -->
+  <VPE_Age.verbProperties.label>envelhecer</VPE_Age.verbProperties.label>
+  <!-- EN: raid pause -->
+  <VPE_RaidPause.label>pausar ataque</VPE_RaidPause.label>
+  <!-- EN: Depending on the caster’s psychic sensitivity, slows all raiders on the map to a complete stop for up to five minutes. Attacking any single affected raider jolts all of them back into action. -->
+  <VPE_RaidPause.description>Conforme a sensibilidade psíquica do conjurador, desacelera todos os saqueadores do mapa até pararem por completo, por até cinco minutos. Atacar qualquer um dos afetados faz todos voltarem à ação num tranco.</VPE_RaidPause.description>
+  <!-- EN: Using ability: {0} -->
+  <VPE_RaidPause.jobReportString>Usando habilidade: {0}</VPE_RaidPause.jobReportString>
+  <!-- EN: raid pause -->
+  <VPE_RaidPause.verbProperties.label>pausar ataque</VPE_RaidPause.verbProperties.label>
+  <!-- EN: season timeskip -->
+  <VPE_SeasonTimeskip.label>salto temporal de estação</VPE_SeasonTimeskip.label>
+  <!-- EN: Locks the entire planet into a season-long psychically induced slowdown, effectively skipping forward a season. Nigh instantaneous effect, very strenuous and puts the caster in a coma, as well as biologically aging them by a full year. -->
+  <VPE_SeasonTimeskip.description>Prende o planeta inteiro numa desaceleração psíquica da duração de uma estação, pulando na prática uma estação para a frente. O efeito é quase instantâneo, muito desgastante e põe o conjurador em coma, além de envelhecê-lo biologicamente em um ano inteiro.</VPE_SeasonTimeskip.description>
+  <!-- EN: Using ability: {0} -->
+  <VPE_SeasonTimeskip.jobReportString>Usando habilidade: {0}</VPE_SeasonTimeskip.jobReportString>
+  <!-- EN: season timeskip -->
+  <VPE_SeasonTimeskip.verbProperties.label>salto temporal de estação</VPE_SeasonTimeskip.verbProperties.label>
+  <!-- EN: time sphere -->
+  <VPE_TimeSphere.label>esfera do tempo</VPE_TimeSphere.label>
+  <!-- EN: Psychically compresses the flow of time in an area. Rapidly ages living creatures, plants flourish and wither, and structures start to disintegrate from the bizarre stress. -->
+  <VPE_TimeSphere.description>Comprime psiquicamente o fluxo do tempo numa área. Criaturas vivas envelhecem depressa, plantas florescem e murcham, e as estruturas começam a se desintegrar com o estresse bizarro.</VPE_TimeSphere.description>
+  <!-- EN: Using ability: {0} -->
+  <VPE_TimeSphere.jobReportString>Usando habilidade: {0}</VPE_TimeSphere.jobReportString>
+  <!-- EN: time sphere -->
+  <VPE_TimeSphere.verbProperties.label>esfera do tempo</VPE_TimeSphere.verbProperties.label>
+  <!-- EN: time reversal -->
+  <VPE_TimeReversal.label>reversão temporal</VPE_TimeReversal.label>
+  <!-- EN: Inefficiently siphons life force to a living target, aging the caster by 5 years and de-aging the other by 10. Has a minimum age, removes age related penalties and puts the caster in a coma. -->
+  <VPE_TimeReversal.description>Transfere, de forma ineficiente, força vital para um alvo vivo, envelhecendo o conjurador em 5 anos e rejuvenescendo o outro em 10. Tem idade mínima, remove penalidades ligadas à idade e põe o conjurador em coma.</VPE_TimeReversal.description>
+  <!-- EN: Using ability: {0} -->
+  <VPE_TimeReversal.jobReportString>Usando habilidade: {0}</VPE_TimeReversal.jobReportString>
+  <!-- EN: time reversal -->
+  <VPE_TimeReversal.verbProperties.label>reversão temporal</VPE_TimeReversal.verbProperties.label>
+  <!-- EN: timequake -->
+  <VPE_Timequake.label>terremoto temporal</VPE_Timequake.label>
+  <!-- EN: Find a discontinuity in the psychic field and compress it, releasing a massive temporal disturbance. Every creature in range but outside of the safe inner circle will experience rapid aging and structures will warp. Casting this takes 20 seconds of meditation, and afterwards, the caster will go into a psychic coma. The disturbing timequake echoes will inflict pain on everyone for many kilometers around, causing diplomatic consequences with all factions. -->
+  <VPE_Timequake.description>Encontra uma descontinuidade no campo psíquico e a comprime, liberando uma perturbação temporal gigantesca. Toda criatura ao alcance, mas fora do círculo interno seguro, envelhece rapidamente, e as estruturas se deformam. Conjurar leva 20 segundos de meditação, e depois o conjurador entra em coma psíquico. Os ecos perturbadores do terremoto temporal causam dor em todos num raio de muitos quilômetros, com consequências diplomáticas com todas as facções.</VPE_Timequake.description>
+  <!-- EN: Using ability: {0} -->
+  <VPE_Timequake.jobReportString>Usando habilidade: {0}</VPE_Timequake.jobReportString>
+  <!-- EN: If you use timequake, everyone in this region will feel the timequake echo, you will lose goodwill with every non-hostile faction.\n\nTimequake takes 20 seconds to cast, and cannot be interrupted. When complete, the caster will fall into a psychic coma for up to 5 days.\n\nEveryone except those in a small circle around the caster will be affected.\n\nDo you really want to cast timequake? -->
+  <VPE_Timequake.modExtensions.2.message>Se vocês usarem o terremoto temporal, todos nesta região vão sentir o eco dele, e vocês vão perder boa vontade com todas as facções não hostis.\n\nO terremoto temporal leva 20 segundos para ser conjurado e não pode ser interrompido. Ao terminar, o conjurador cai num coma psíquico por até 5 dias.\n\nTodos, menos quem estiver num pequeno círculo ao redor do conjurador, serão afetados.\n\nQuerem mesmo conjurar o terremoto temporal?</VPE_Timequake.modExtensions.2.message>
+  <!-- EN: timequake -->
+  <VPE_Timequake.verbProperties.label>terremoto temporal</VPE_Timequake.verbProperties.label>
+</LanguageData>

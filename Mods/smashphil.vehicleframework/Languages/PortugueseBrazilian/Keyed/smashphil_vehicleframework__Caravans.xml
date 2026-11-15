@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <!-- EN: Amount of tiles traveled in 1 day. -->
+  <VF_Caravan_MoveSpeed>Quantidade de regiões percorridas em 1 dia.</VF_Caravan_MoveSpeed>
+  <!-- EN: Dismounted -->
+  <VF_Caravan_Dismounted>A pé</VF_Caravan_Dismounted>
+  <!-- EN: Cargo -->
+  <VF_Caravan_Cargo>Carga</VF_Caravan_Cargo>
+  <!-- EN: Sailing -->
+  <VF_Sailing>Navegando</VF_Sailing>
+  <!-- EN: Show Properties -->
+  <VF_ShowVehicleProperties>Mostrar propriedades</VF_ShowVehicleProperties>
+  <!-- EN: Items to Take -->
+  <VF_DockToCaravan>Itens a levar</VF_DockToCaravan>
+  <!-- EN: Biome impassable for this vehicle. -->
+  <VF_ImpassableBiome>Bioma intransitável para este veículo.</VF_ImpassableBiome>
+  <!-- EN: Caravaning disabled. -->
+  <VF_CaravanDisabled>Caravanas desativadas.</VF_CaravanDisabled>
+  <!-- EN: Unable to move. -->
+  <VF_CaravanCantMove>Não consegue se mover.</VF_CaravanCantMove>
+  <!-- EN: Cannot merge aerial vehicles. -->
+  <VF_CantMergeAerialVehicle>Não dá para juntar veículos aéreos.</VF_CantMergeAerialVehicle>
+  <!-- EN: Recover vehicles -->
+  <VF_RecoverVehicles>Recuperar veículos</VF_RecoverVehicles>
+  <!-- EN: Stash vehicles -->
+  <VF_CommandDisembark>Guardar veículos</VF_CommandDisembark>
+  <!-- EN: Leave all vehicles behind and go on foot.  Vehicles will remain on the world map for up to 20-30 days. -->
+  <VF_CommandDisembarkDesc>Deixar todos os veículos para trás e seguir a pé. Os veículos ficam no mapa-múndi por até 20-30 dias.</VF_CommandDisembarkDesc>
+  <!-- EN: Repair Vehicles -->
+  <VF_ToggleRepairVehicle>Consertar veículos</VF_ToggleRepairVehicle>
+  <!-- EN: Rest and perform repairs on vehicles inside the caravan -->
+  <VF_ToggleRepairVehicleDesc>Descansar e consertar os veículos da caravana</VF_ToggleRepairVehicleDesc>
+  <!-- EN: Cannot disembark, tile is impassable for colonists. -->
+  <VF_CommandDisembarkImpassableBiome>Não dá para desembarcar: a região é intransitável para colonos.</VF_CommandDisembarkImpassableBiome>
+  <!-- EN: Cannot attack {0} while docked. -->
+  <VF_CommandAttackDockDisable>Não dá para atacar {0} enquanto está atracado.</VF_CommandAttackDockDisable>
+  <!-- EN: Cannot trade with {0}. Must dock boat first -->
+  <VF_CommandTradeDockDisable>Não dá para negociar com {0}. Primeiro atraque o barco</VF_CommandTradeDockDisable>
+  <!-- EN: Not enough space on ships to house all pawns. -->
+  <VF_CaravanMustHaveEnoughSpaceOnShip>Não há espaço suficiente nos barcos para todos os personagens.</VF_CaravanMustHaveEnoughSpaceOnShip>
+  <!-- EN: Not enough Pawns selected to set sail. Need {0} -->
+  <VF_CaravanMustHaveEnoughPawnsToOperate>Personagens insuficientes para zarpar. São necessários {0}</VF_CaravanMustHaveEnoughPawnsToOperate>
+  <!-- EN: Must have at least 1 vehicle selected in order to choose a route. -->
+  <VF_CaravanMustHaveAtLeastOneVehicle>É preciso escolher pelo menos 1 veículo para traçar uma rota.</VF_CaravanMustHaveAtLeastOneVehicle>
+  <!-- EN: Form Vehicle Caravan -->
+  <VF_CommandFormVehicleCaravan>Formar caravana de veículos</VF_CommandFormVehicleCaravan>
+  <!-- EN: Form caravan with vehicles included. -->
+  <VF_CommandFormVehicleCaravanDesc>Formar uma caravana incluindo veículos.</VF_CommandFormVehicleCaravanDesc>
+  <!-- EN: Reform Vehicle Caravan -->
+  <VF_CommandReformVehicleCaravan>Reformar caravana de veículos</VF_CommandReformVehicleCaravan>
+  <!-- EN: Reform vehicle caravan with vehicles selected. -->
+  <VF_CommandReformVehicleCaravanDesc>Reformar a caravana de veículos com os veículos escolhidos.</VF_CommandReformVehicleCaravanDesc>
+  <!-- EN: VehicleDefs -->
+  <VF_RoutePlannerToggleVehicleDefs>Tipos de veículo</VF_RoutePlannerToggleVehicleDefs>
+  <!-- EN: Vehicles -->
+  <VF_RoutePlannerToggleVehicles>Veículos</VF_RoutePlannerToggleVehicles>
+</LanguageData>

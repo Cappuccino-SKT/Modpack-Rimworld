@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <!-- EN: {0} Crash Landed -->
+  <VF_IncidentCrashedSiteLabel_Crashing>{0} fez um pouso forçado</VF_IncidentCrashedSiteLabel_Crashing>
+  <!-- EN: {1} Shot Down {0} -->
+  <VF_IncidentCrashedSiteLabel_ShotDown>{1} abateu {0}</VF_IncidentCrashedSiteLabel_ShotDown>
+  <!-- EN: \n\nReason:\n {0} -->
+  <VF_IncidentReasonLister>\n\nMotivo:\n {0}</VF_IncidentReasonLister>
+  <!-- EN: {0} has crashed. -->
+  <VF_IncidentCrashedSite_Crashing>{0} caiu.</VF_IncidentCrashedSite_Crashing>
+  <!-- EN: {0} has been shot down by {1}. -->
+  <VF_IncidentCrashedSite_ShotDown>{0} foi abatido por {1}.</VF_IncidentCrashedSite_ShotDown>
+  <!-- EN: Ran out of fuel -->
+  <VF_IncidentCrashedSiteReason_OutOfFuel>Ficou sem combustível</VF_IncidentCrashedSiteReason_OutOfFuel>
+  <!-- EN: Lost all flight control -->
+  <VF_IncidentCrashedSiteReason_FlightControl>Perdeu todo o controle de voo</VF_IncidentCrashedSiteReason_FlightControl>
+  <!-- EN: Reinforcements -->
+  <VF_ReinforcementsArrivedLabel>Reforços</VF_ReinforcementsArrivedLabel>
+  <!-- EN: {0} has arrived with reinforcements to investigate the crash site. -->
+  <VF_ReinforcementsArrived>{0} chegou com reforços para investigar o local da queda.</VF_ReinforcementsArrived>
+  <!-- EN: Boat Sunk -->
+  <VF_BoatSunk>Barco afundou</VF_BoatSunk>
+  <!-- EN: {0} has sunk to the depths of the ocean. -->
+  <VF_BoatSunkDesc>{0} afundou nas profundezas do oceano.</VF_BoatSunkDesc>
+  <!-- EN: {0} has sunk to the depths of the ocean. \n\nIt has taken the following pawns down with it:\n{1} -->
+  <VF_BoatSunkWithPawnsDesc>{0} afundou nas profundezas do oceano. \n\nLevou junto estes personagens:\n{1}</VF_BoatSunkWithPawnsDesc>
+  <!-- EN: These colonists are sitting idly in a vehicle:\n{0}\n\nYou should probably find them something productive to do. -->
+  <VF_IdleInVehicle>Estes colonos estão sentados num veículo sem fazer nada:\n{0}\n\nMelhor arranjar alguma coisa útil para eles fazerem.</VF_IdleInVehicle>
+</LanguageData>

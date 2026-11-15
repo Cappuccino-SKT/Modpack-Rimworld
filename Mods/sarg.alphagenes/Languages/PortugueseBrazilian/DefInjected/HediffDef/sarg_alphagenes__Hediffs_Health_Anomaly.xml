@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <!-- EN: pseudo deadlife -->
+  <AG_PseudoDeadlife.label>pseudomorte-viva</AG_PseudoDeadlife.label>
+  <!-- EN: This person has a cloud of microscopic archites that induce a state of pseudo deadlife, granting great resilience without outright killing them. -->
+  <AG_PseudoDeadlife.description>Esta pessoa tem uma nuvem de arquitas microscópicos que induzem um estado de pseudomorte-viva, dando grande resistência sem matá-la de vez.</AG_PseudoDeadlife.description>
+  <!-- EN: shambler plague -->
+  <AG_PlaguedClaws.label>praga trôpega</AG_PlaguedClaws.label>
+  <!-- EN: A virulent disease that causes severe debilitation. If a victim dies and it is more than 80% advanced when they die, they will rise as a shambler, spreading the infection further. -->
+  <AG_PlaguedClaws.description>Uma doença virulenta que debilita gravemente. Se a vítima morrer com a doença acima de 80%, ela se levanta como trôpego, espalhando ainda mais a infecção.</AG_PlaguedClaws.description>
+  <!-- EN: a shambler plague -->
+  <AG_PlaguedClaws.labelNoun>uma praga trôpega</AG_PlaguedClaws.labelNoun>
+  <!-- EN: minor -->
+  <AG_PlaguedClaws.stages.minor.label>leve</AG_PlaguedClaws.stages.minor.label>
+  <!-- EN: major -->
+  <AG_PlaguedClaws.stages.major.label>grave</AG_PlaguedClaws.stages.major.label>
+  <!-- EN: extreme -->
+  <AG_PlaguedClaws.stages.extreme-0.label>extrema</AG_PlaguedClaws.stages.extreme-0.label>
+  <!-- EN: extreme -->
+  <AG_PlaguedClaws.stages.extreme-1.label>extrema</AG_PlaguedClaws.stages.extreme-1.label>
+  <!-- EN: sunlight regeneration -->
+  <AG_Regeneration_InTheSun.label>regeneração solar</AG_Regeneration_InTheSun.label>
+  <!-- EN: This shambler gets healed by sunlight. -->
+  <AG_Regeneration_InTheSun.description>Este trôpego se cura com a luz do sol.</AG_Regeneration_InTheSun.description>
+  <!-- EN: meat burst -->
+  <AG_MeatBurst.label>explosão de carne</AG_MeatBurst.label>
+  <!-- EN: This person will explode on death, liberating a small amount of fleshbeasts. -->
+  <AG_MeatBurst.description>Esta pessoa explode ao morrer, liberando algumas feras de carne.</AG_MeatBurst.description>
+  <!-- EN: flesh catharsis -->
+  <AG_FleshPower.label>catarse da carne</AG_FleshPower.label>
+  <!-- EN: The exhilaration caused after absorbing a fleshbeast is causing this person to have increased pain tolerance and strength. This will last for about a day. -->
+  <AG_FleshPower.description>A euforia depois de absorver uma fera de carne aumenta a tolerância à dor e a força desta pessoa. Dura cerca de um dia.</AG_FleshPower.description>
+</LanguageData>

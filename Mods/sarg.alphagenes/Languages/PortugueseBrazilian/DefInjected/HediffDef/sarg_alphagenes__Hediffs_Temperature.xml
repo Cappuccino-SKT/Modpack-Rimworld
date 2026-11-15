@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <!-- EN: heat radiating -->
+  <AG_HeatRadiating.label>irradia calor</AG_HeatRadiating.label>
+  <!-- EN: Generates intense heat up to 80ºC. Bear in mind this condition itself doesn't make the carrier heat resistant. -->
+  <AG_HeatRadiating.description>Gera calor intenso de até 80 ºC. Lembre-se: esta condição sozinha não deixa o portador resistente ao calor.</AG_HeatRadiating.description>
+  <!-- EN: cold radiating -->
+  <AG_ColdRadiating.label>irradia frio</AG_ColdRadiating.label>
+  <!-- EN: Generates intense cold up to -20ºC. Bear in mind this condition itself doesn't make the carrier cold resistant. -->
+  <AG_ColdRadiating.description>Gera frio intenso de até -20 ºC. Lembre-se: esta condição sozinha não deixa o portador resistente ao frio.</AG_ColdRadiating.description>
+  <!-- EN: thermal speed -->
+  <AG_SpeedByTemperature.label>velocidade térmica</AG_SpeedByTemperature.label>
+  <!-- EN: Moves fast at high temperatures, at the cost of getting much more tired. -->
+  <AG_SpeedByTemperature.description>Anda rápido em temperaturas altas, mas se cansa muito mais.</AG_SpeedByTemperature.description>
+</LanguageData>

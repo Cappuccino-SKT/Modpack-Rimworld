@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <VFEE_ArtExhibit.questContentRules.rulesStrings>
+    <!-- EN: decidedToLeave-&gt;Your guests are leaving immediately, and will not remember this event fondly! -->
+    <li>decidedToLeave-&gt;Seus convidados vão embora na hora e não vão guardar boas lembranças deste evento!</li>
+    <!-- EN: oneOfThe-&gt;one of the nobles you invited to the art exhibit -->
+    <li>oneOfThe-&gt;um dos nobres que vocês convidaram para a exposição de arte</li>
+    <!-- EN: questOver-&gt;The quest '[resolvedQuestName]' is over. -->
+    <li>questOver-&gt;A missão '[resolvedQuestName]' acabou.</li>
+    <!-- EN: CeremonyFailedLetterLabel-&gt;Art exhibit failed -->
+    <li>CeremonyFailedLetterLabel-&gt;A exposição de arte fracassou</li>
+    <!-- EN: CeremonyFailedLetterText-&gt;[asker_nameFull] is disappointed by your failure to make for an enjoyable exhibit. [asker_pronoun] is leaving with [asker_possessive] guests. -->
+    <li>CeremonyFailedLetterText-&gt;[asker_nameFull] ficou decepcionado com o fracasso de vocês em fazer uma exposição agradável e está indo embora com os convidados.</li>
+    <!-- EN: CeremonyTimeoutLetterLabel-&gt;Art exhibit failed -->
+    <li>CeremonyTimeoutLetterLabel-&gt;A exposição de arte fracassou</li>
+    <!-- EN: CeremonyTimeoutLetterText-&gt;[asker_nameFull] has grown tired of waiting for you to start the exhibit. [asker_pronoun] is leaving with [asker_possessive] guests. -->
+    <li>CeremonyTimeoutLetterText-&gt;[asker_nameFull] cansou de esperar vocês começarem a exposição e está indo embora com os convidados.</li>
+    <!-- EN: letterIntroArrested-&gt;You arrested {SUBJECT_definite}, [oneOfThe]. -->
+    <li>letterIntroArrested-&gt;Vocês prenderam {SUBJECT_definite}, [oneOfThe].</li>
+    <!-- EN: lodgerArrestedLeaveMapLetterLabel-&gt;[lodgersLabel] arrested: Departure -->
+    <li>lodgerArrestedLeaveMapLetterLabel-&gt;[lodgersLabel] preso: partida</li>
+    <!-- EN: lodgerArrestedLeaveMapLetterText-&gt;[letterIntroArrested]\n\n[decidedToLeave] -->
+    <li>lodgerArrestedLeaveMapLetterText-&gt;[letterIntroArrested]\n\n[decidedToLeave]</li>
+    <!-- EN: letterIntroDeath-&gt;{SUBJECT_definite}, [oneOfThe], has died. -->
+    <li>letterIntroDeath-&gt;{SUBJECT_definite}, [oneOfThe], morreu.</li>
+    <!-- EN: lodgerDiedLeaveMapLetterLabel-&gt;[lodgersLabel] died: Departure -->
+    <li>lodgerDiedLeaveMapLetterLabel-&gt;[lodgersLabel] morreu: partida</li>
+    <!-- EN: lodgerDiedLeaveMapLetterText-&gt;[letterIntroDeath]\n\n[decidedToLeave] -->
+    <li>lodgerDiedLeaveMapLetterText-&gt;[letterIntroDeath]\n\n[decidedToLeave]</li>
+    <!-- EN: letterIntroViolated-&gt;{SUBJECT_definite}, [oneOfThe], was violated by surgery. -->
+    <li>letterIntroViolated-&gt;{SUBJECT_definite}, [oneOfThe], foi violado por uma cirurgia.</li>
+    <!-- EN: lodgerSurgeryVioLeaveMapLetterLabel-&gt;[lodgersLabel] violated: Departure -->
+    <li>lodgerSurgeryVioLeaveMapLetterLabel-&gt;[lodgersLabel] violado: partida</li>
+    <!-- EN: lodgerSurgeryVioLeaveMapLetterText-&gt;[letterIntroViolated]\n\n[decidedToLeave] -->
+    <li>lodgerSurgeryVioLeaveMapLetterText-&gt;[letterIntroViolated]\n\n[decidedToLeave]</li>
+    <!-- EN: letterIntroKidnapped-&gt;{SUBJECT_definite}, [oneOfThe], was kidnapped. -->
+    <li>letterIntroKidnapped-&gt;{SUBJECT_definite}, [oneOfThe], foi sequestrado.</li>
+    <!-- EN: lodgerKidnappedLeaveMapLetterLabel-&gt;[lodgersLabel] kidnapped: Departure -->
+    <li>lodgerKidnappedLeaveMapLetterLabel-&gt;[lodgersLabel] sequestrado: partida</li>
+    <!-- EN: lodgerKidnappedLeaveMapLetterText-&gt;[letterIntroKidnapped]\n\n[decidedToLeave] -->
+    <li>lodgerKidnappedLeaveMapLetterText-&gt;[letterIntroKidnapped]\n\n[decidedToLeave]</li>
+    <!-- EN: letterIntroBanished-&gt;{SUBJECT_definite}, [oneOfThe], was banished. -->
+    <li>letterIntroBanished-&gt;{SUBJECT_definite}, [oneOfThe], foi banido.</li>
+    <!-- EN: lodgerBanishedLeaveMapLetterLabel-&gt;[lodgersLabel] banished: Departure -->
+    <li>lodgerBanishedLeaveMapLetterLabel-&gt;[lodgersLabel] banido: partida</li>
+    <!-- EN: lodgerBanishedLeaveMapLetterText-&gt;[letterIntroBanished]\n\n[decidedToLeave] -->
+    <li>lodgerBanishedLeaveMapLetterText-&gt;[letterIntroBanished]\n\n[decidedToLeave]</li>
+    <!-- EN: letterIntroPsychicRitualTarget-&gt;{SUBJECT_definite}, [oneOfThe], was the target of a psychic ritual. -->
+    <li>letterIntroPsychicRitualTarget-&gt;{SUBJECT_definite}, [oneOfThe], foi alvo de um ritual psíquico.</li>
+    <!-- EN: lodgerPsychicRitualTargetLabel-&gt;[lodgersLabel] violated: Departure -->
+    <li>lodgerPsychicRitualTargetLabel-&gt;[lodgersLabel] violado: partida</li>
+    <!-- EN: lodgerPsychicRitualTargetText-&gt;[letterIntroPsychicRitualTarget]\n\n[decidedToLeave] -->
+    <li>lodgerPsychicRitualTargetText-&gt;[letterIntroPsychicRitualTarget]\n\n[decidedToLeave]</li>
+    <!-- EN: ShuttleDestroyedIntro-&gt;The shuttle has been destroyed. -->
+    <li>ShuttleDestroyedIntro-&gt;O ônibus espacial foi destruído.</li>
+    <!-- EN: ShuttleDestroyedLabel-&gt;Shuttle destroyed: Art exhibit cancelled -->
+    <li>ShuttleDestroyedLabel-&gt;Ônibus espacial destruído: exposição de arte cancelada</li>
+    <!-- EN: ShuttleDestroyedText-&gt;[ShuttleDestroyedIntro]\n\n[decidedToLeave] -->
+    <li>ShuttleDestroyedText-&gt;[ShuttleDestroyedIntro]\n\n[decidedToLeave]</li>
+    <!-- EN: raidArrivedLetterLabel-&gt;Deserter assassination attempt -->
+    <li>raidArrivedLetterLabel-&gt;Tentativa de assassinato dos desertores</li>
+    <!-- EN: raidArrivedLetterText-&gt;A group of deserters have arrived to attempt to disrupt the art exhibit and assassinate the royals.\n\n[asker_nameFull] does not care for the threat and demands the exhibit continues! [asker_pronoun] wants you to keep them safe and deal with the "peasants". -->
+    <li>raidArrivedLetterText-&gt;Um grupo de desertores chegou para tentar atrapalhar a exposição de arte e assassinar os nobres.\n\n[asker_nameFull] não liga para a ameaça e exige que a exposição continue! Quer que vocês protejam os nobres e deem um jeito nos "camponeses".</li>
+    <!-- EN: ArtExhibitSuccessLetterLabel-&gt;Exhibit success -->
+    <li>ArtExhibitSuccessLetterLabel-&gt;Sucesso na exposição</li>
+    <!-- EN: ArtExhibitSuccessLetterText-&gt;The shuttle has departed with [asker_nameFull] and [asker_possessive] guests. Overall the event was a success and everyone made it back safe. -->
+    <li>ArtExhibitSuccessLetterText-&gt;O ônibus espacial partiu com [asker_nameFull] e os convidados. No geral, o evento foi um sucesso e todos voltaram em segurança.</li>
+  </VFEE_ArtExhibit.questContentRules.rulesStrings>
+  <VFEE_ArtExhibit.questDescriptionAndNameRules.rulesStrings>
+    <!-- EN: lodgersLabel-&gt;noble -->
+    <li>lodgersLabel-&gt;nobre</li>
+    <!-- EN: lodgersLabelPlural-&gt;nobles -->
+    <li>lodgersLabelPlural-&gt;nobres</li>
+    <!-- EN: lodgersDef(nobleCount==1)-&gt;[lodgers0_nameDef] -->
+    <li>lodgersDef(nobleCount==1)-&gt;[lodgers0_nameDef]</li>
+    <!-- EN: lodgersDef(nobleCount&gt;=2)-&gt;the [lodgersLabelPlural] -->
+    <li>lodgersDef(nobleCount&gt;=2)-&gt;os [lodgersLabelPlural]</li>
+    <!-- EN: joinerEnding-&gt;You'll be able to direct [lodgersDef] the same way you direct your own colonists.[specialNeedsExplanation] -->
+    <li>joinerEnding-&gt;Vocês poderão comandar [lodgersDef] do mesmo jeito que comandam os próprios colonos.[specialNeedsExplanation]</li>
+    <!-- EN: theirHisHer(nobleCount==1)-&gt;[lodgers0_possessive] -->
+    <li>theirHisHer(nobleCount==1)-&gt;[lodgers0_possessive]</li>
+    <!-- EN: theirHisHer(nobleCount&gt;=2)-&gt;their -->
+    <li>theirHisHer(nobleCount&gt;=2)-&gt;deles</li>
+    <!-- EN: lodgersPronoun(nobleCount==1)-&gt;[lodgers0_pronoun] -->
+    <li>lodgersPronoun(nobleCount==1)-&gt;[lodgers0_pronoun]</li>
+    <!-- EN: lodgersPronoun(nobleCount&gt;=2)-&gt;they -->
+    <li>lodgersPronoun(nobleCount&gt;=2)-&gt;eles</li>
+    <!-- EN: lodgersWasWere(nobleCount==1)-&gt;was -->
+    <li>lodgersWasWere(nobleCount==1)-&gt;foi</li>
+    <!-- EN: lodgersWasWere(nobleCount&gt;=2)-&gt;were -->
+    <li>lodgersWasWere(nobleCount&gt;=2)-&gt;foram</li>
+    <!-- EN: appreciateAppreciates(nobleCount==1)-&gt;appreciates -->
+    <li>appreciateAppreciates(nobleCount==1)-&gt;aprecia</li>
+    <!-- EN: appreciateAppreciates(nobleCount&gt;=2)-&gt;appreciate -->
+    <li>appreciateAppreciates(nobleCount&gt;=2)-&gt;apreciam</li>
+    <!-- EN: questDescription-&gt;[asker_nameFull], a [asker_royalTitleInCurrentFaction] of [asker_faction_name], would like to come over with a few other noble people and gaze upon the works of art in your gallery. [asker_pronoun] requests [colonyHost_nameFull] hosts the occasion. This is a great opportunity for noble gossip and to build relations with other members of the imperial nobility.\n\nYou are required to have a gallery present in your colony. If at any point the gallery is destroyed, the art exhibition will be called off.\n\n[asker_nameFull] has forwarded you a list of nobility that was invited to the exhibit and will arrive in the shuttle:\n\n[noblesDetailList]\n\nYou will need to make sure the guests are safe and comfortable during the exhibition. If anything happens to any of the guests, the art exhibition will be cancelled.\n\nDeserters might use this opportunity to launch an assassination attempt.\n\n\n    -->
+    <li>questDescription-&gt;[asker_nameFull], [asker_royalTitleInCurrentFaction] de [asker_faction_name], gostaria de vir com alguns outros nobres admirar as obras de arte da sua galeria. Pede que [colonyHost_nameFull] seja o anfitrião. É uma ótima oportunidade para fofocas nobres e para criar laços com outros membros da nobreza imperial.\n\nÉ preciso ter uma galeria na colônia. Se a galeria for destruída a qualquer momento, a exposição de arte é cancelada.\n\n[asker_nameFull] mandou a lista dos nobres convidados para a exposição, que vão chegar no ônibus espacial:\n\n[noblesDetailList]\n\nVocês precisam garantir que os convidados fiquem seguros e confortáveis durante a exposição. Se acontecer qualquer coisa com algum deles, a exposição de arte é cancelada.\n\nOs desertores podem aproveitar a oportunidade para uma tentativa de assassinato.\n\n\n</li>
+  </VFEE_ArtExhibit.questDescriptionAndNameRules.rulesStrings>
+  <VFEE_ArtExhibit.questNameRules.rulesStrings>
+    <!-- EN: questName-&gt;[lodgerIndef] desires an Art Exhibit -->
+    <li>questName-&gt;[lodgerIndef] quer uma exposição de arte</li>
+    <!-- EN: lodgerIndef-&gt;a royal -->
+    <li>lodgerIndef-&gt;Um membro da realeza</li>
+    <!-- EN: lodgerIndef-&gt;a noble -->
+    <li>lodgerIndef-&gt;Um nobre</li>
+  </VFEE_ArtExhibit.questNameRules.rulesStrings>
+</LanguageData>

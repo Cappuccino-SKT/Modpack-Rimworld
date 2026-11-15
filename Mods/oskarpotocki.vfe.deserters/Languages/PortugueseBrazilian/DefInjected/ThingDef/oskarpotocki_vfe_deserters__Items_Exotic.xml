@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <!-- EN: biodecoder -->
+  <VFED_Biodecoder.label>biodecodificador</VFED_Biodecoder.label>
+  <!-- EN: A biodecoder is a single-use ultratech device that is designed to strip biocoding off any item. It uses a complex process to unlatch the biocoding from the original item, which transfers the biocoding onto the biodecoder, breaking it in the process. Biodecoder can also be used on biosecured crate to open them. This device is often used in sensitive operations where the presence of biocoding could compromise the mission. -->
+  <VFED_Biodecoder.description>O biodecodificador é um aparelho de ultratecnologia de uso único, feito para tirar a biocodificação de qualquer item. Usa um processo complexo para soltar a biocodificação do item original e transferi-la para o biodecodificador, que se quebra no processo. Também pode ser usado em caixas com biotrava para abri-las. Costuma ser usado em operações delicadas, em que a biocodificação poderia comprometer a missão.</VFED_Biodecoder.description>
+  <!-- EN: Use {0_label} -->
+  <VFED_Biodecoder.comps.CompUsable.useLabel>Usar {0_label}</VFED_Biodecoder.comps.CompUsable.useLabel>
+  <!-- EN: psychic amplifier -->
+  <VFED_PsychicAmplifier.label>amplificador psíquico</VFED_PsychicAmplifier.label>
+  <!-- EN: Decommissioned Imperial technology since the invention of psylink neuroformers, psychic amplifier upgrades a psylink in the user's mind. It cannot form a psylink by itself, and can only be used by colonists with already present psylink. The user presses the device over the eyes, where it links to the brain directly and restructures part of it. Afterwards, the device disintegrates into worthless ash. -->
+  <VFED_PsychicAmplifier.description>Tecnologia imperial aposentada desde a invenção dos neuroformadores de psínculo, o amplificador psíquico melhora o psínculo na mente do usuário. Não consegue criar um psínculo sozinho e só pode ser usado por colonos que já têm psínculo. O usuário pressiona o aparelho sobre os olhos, onde ele se liga direto ao cérebro e reestrutura parte dele. Depois, o aparelho se desfaz em cinzas sem valor.</VFED_PsychicAmplifier.description>
+  <!-- EN: Use {0_label} -->
+  <VFED_PsychicAmplifier.comps.CompUsable.useLabel>Usar {0_label}</VFED_PsychicAmplifier.comps.CompUsable.useLabel>
+</LanguageData>

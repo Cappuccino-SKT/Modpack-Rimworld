@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <VFEE_Permit_CallAbsolver.questDescriptionAndNameRules.rulesStrings>
+    <!-- EN: questName-&gt;Absolver -->
+    <li>questName-&gt;Absolvedor</li>
+    <!-- EN: questDescription-&gt; -->
+    <li>questDescription-&gt;</li>
+  </VFEE_Permit_CallAbsolver.questDescriptionAndNameRules.rulesStrings>
+  <!-- EN: Absolver arrived -->
+  <VFEE_Permit_CallAbsolver.root.nodes.Letter.label.slateRef>Absolvedor chegou</VFEE_Permit_CallAbsolver.root.nodes.Letter.label.slateRef>
+  <!-- EN: The absolver from [permitFaction_name] have arrived. A shuttle will come to collect them in [absolverDurationDays] days. -->
+  <VFEE_Permit_CallAbsolver.root.nodes.Letter.text.slateRef>O absolvedor de [permitFaction_name] chegou. Um ônibus espacial virá buscá-lo em [absolverDurationDays] dias.</VFEE_Permit_CallAbsolver.root.nodes.Letter.text.slateRef>
+  <!-- EN: Should depart on shuttle -->
+  <VFEE_Permit_CallAbsolver.root.nodes.ShuttleDelay.node.nodes.InspectString.inspectString.slateRef>Deve partir no ônibus espacial</VFEE_Permit_CallAbsolver.root.nodes.ShuttleDelay.node.nodes.InspectString.inspectString.slateRef>
+  <!-- EN: Shuttle arrived -->
+  <VFEE_Permit_CallAbsolver.root.nodes.ShuttleDelay.node.nodes.Letter.label.slateRef>O ônibus espacial chegou</VFEE_Permit_CallAbsolver.root.nodes.ShuttleDelay.node.nodes.Letter.label.slateRef>
+  <!-- EN: A shuttle has arrived to collect the absolver from [permitFaction_name]. -->
+  <VFEE_Permit_CallAbsolver.root.nodes.ShuttleDelay.node.nodes.Letter.text.slateRef>Um ônibus espacial chegou para buscar o absolvedor de [permitFaction_name].</VFEE_Permit_CallAbsolver.root.nodes.ShuttleDelay.node.nodes.Letter.text.slateRef>
+  <!-- EN: Absolver died: {SUBJECT_definite} -->
+  <VFEE_Permit_CallAbsolver.root.nodes.absolverDestroyed.node.nodes.Letter.label.slateRef>Absolvedor morreu: {SUBJECT_definite}</VFEE_Permit_CallAbsolver.root.nodes.absolverDestroyed.node.nodes.Letter.label.slateRef>
+  <!-- EN: An absolver sent to you by [permitFaction_name] has died. A replacement has been issued -->
+  <VFEE_Permit_CallAbsolver.root.nodes.absolverDestroyed.node.nodes.Letter.text.slateRef>Um absolvedor enviado por [permitFaction_name] morreu. Um substituto foi designado</VFEE_Permit_CallAbsolver.root.nodes.absolverDestroyed.node.nodes.Letter.text.slateRef>
+</LanguageData>

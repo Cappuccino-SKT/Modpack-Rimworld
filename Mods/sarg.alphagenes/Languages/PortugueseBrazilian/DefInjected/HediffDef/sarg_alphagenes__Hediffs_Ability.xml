@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <!-- EN: chemfuel nodules -->
+  <AG_Exploder.label>nódulos de combustível químico</AG_Exploder.label>
+  <!-- EN: Genetically grown nodules of chemfuel will cause this person to blow up when killed. -->
+  <AG_Exploder.description>Nódulos de combustível químico criados geneticamente fazem esta pessoa explodir quando morre.</AG_Exploder.description>
+  <!-- EN: acidic blood -->
+  <AG_AcidicExploder.label>sangue ácido</AG_AcidicExploder.label>
+  <!-- EN: An unstable, acidic blood will cause this person to blow up in a cloud of caustic acid when killed. -->
+  <AG_AcidicExploder.description>Um sangue ácido e instável faz esta pessoa explodir numa nuvem de ácido cáustico quando morre.</AG_AcidicExploder.description>
+  <!-- EN: lung rot strength -->
+  <AG_LungRotStrengthHediff.label>força da podridão pulmonar</AG_LungRotStrengthHediff.label>
+  <!-- EN: Special structures in this person's lungs strengthen their bodies when they are affected by lung rot, making piles of corpses... a pleasant prospect.. -->
+  <AG_LungRotStrengthHediff.description>Estruturas especiais nos pulmões desta pessoa fortalecem o corpo quando afetado pela podridão pulmonar, o que torna pilhas de cadáveres... uma perspectiva agradável.</AG_LungRotStrengthHediff.description>
+  <!-- EN: electrified -->
+  <AG_Electrified.label>eletrificado</AG_Electrified.label>
+  <!-- EN: This colonist had its blood genetically modified to accumulate electrical energy, allowing them to recharge electrical batteries merely by being close to them. This change is permanent, and quite traumatic. -->
+  <AG_Electrified.description>Este colono teve o sangue modificado geneticamente para acumular energia elétrica e consegue recarregar baterias só de ficar perto delas. A mudança é permanente e bem traumática.</AG_Electrified.description>
+  <!-- EN: electric shock -->
+  <AG_Electric.label>choque elétrico</AG_Electric.label>
+  <!-- EN: A dangerous electric shock. It might have damaged the heart, and the higher the intensity the higher the possibility of a heart attack. -->
+  <AG_Electric.description>Um choque elétrico perigoso. Pode ter danificado o coração, e quanto maior a intensidade, maior a chance de um ataque cardíaco.</AG_Electric.description>
+  <!-- EN: initial -->
+  <AG_Electric.stages.initial.label>inicial</AG_Electric.stages.initial.label>
+  <!-- EN: shocked -->
+  <AG_Electric.stages.shocked.label>em choque</AG_Electric.stages.shocked.label>
+  <!-- EN: very shocked -->
+  <AG_Electric.stages.very_shocked.label>em choque grave</AG_Electric.stages.very_shocked.label>
+  <!-- EN: paralysed -->
+  <AG_Electric.stages.paralysed.label>paralisado</AG_Electric.stages.paralysed.label>
+  <!-- EN: petrification -->
+  <AG_Petrification.label>petrificação</AG_Petrification.label>
+  <!-- EN: The victim's skin is hardening and turning into brittle stone. This condition is reversible and will naturally dissipate after a few hours, but if it reaches a severity of 1 it will kill its victim. -->
+  <AG_Petrification.description>A pele da vítima está endurecendo e virando pedra quebradiça. A condição é reversível e some sozinha depois de algumas horas, mas se chegar à gravidade 1, mata a vítima.</AG_Petrification.description>
+  <!-- EN: initial -->
+  <AG_Petrification.stages.initial.label>inicial</AG_Petrification.stages.initial.label>
+  <!-- EN: stiff joints -->
+  <AG_Petrification.stages.stiff_joints.label>articulações rígidas</AG_Petrification.stages.stiff_joints.label>
+  <!-- EN: rocky skin -->
+  <AG_Petrification.stages.rocky_skin.label>pele rochosa</AG_Petrification.stages.rocky_skin.label>
+  <!-- EN: brittle bones -->
+  <AG_Petrification.stages.brittle_bones.label>ossos quebradiços</AG_Petrification.stages.brittle_bones.label>
+  <!-- EN: turned to stone -->
+  <AG_Petrification.stages.turned_to_stone.label>virou pedra</AG_Petrification.stages.turned_to_stone.label>
+  <!-- EN: insect rally -->
+  <AG_InsectRally.label>reunião de insetos</AG_InsectRally.label>
+  <!-- EN: This person is secreting a cloud of pheromonal compounds that are irresistible to all insects. They'll feel re-invigorated and strengthened when close to the carrier. -->
+  <AG_InsectRally.description>Esta pessoa está liberando uma nuvem de compostos feromonais irresistíveis para todos os insetos. Eles se sentem revigorados e fortalecidos perto do portador.</AG_InsectRally.description>
+  <!-- EN: insect rally -->
+  <AG_InsectRally_Buff.label>reunião de insetos</AG_InsectRally_Buff.label>
+  <!-- EN: This insect feels strengthened by being immersed in a pheromonal cloud. -->
+  <AG_InsectRally_Buff.description>Este inseto se sente fortalecido por estar envolto numa nuvem de feromônios.</AG_InsectRally_Buff.description>
+  <!-- EN: summoned -->
+  <AG_TemporarySummon.label>invocado</AG_TemporarySummon.label>
+  <!-- EN: This creature has been summoned via innate psychic means, and will vanish after a period of 4 hours. -->
+  <AG_TemporarySummon.description>Esta criatura foi invocada por meios psíquicos inatos e vai desaparecer depois de 4 horas.</AG_TemporarySummon.description>
+  <!-- EN: summoned -->
+  <AG_TemporarySummonMech.label>invocado</AG_TemporarySummonMech.label>
+  <!-- EN: This mech has been summoned via innate psychic means, and will vanish after a period of 1 day. -->
+  <AG_TemporarySummonMech.description>Este mecanoide foi invocado por meios psíquicos inatos e vai desaparecer depois de 1 dia.</AG_TemporarySummonMech.description>
+  <!-- EN: scrambled IFF -->
+  <AG_ScrambledIFF.label>IFF embaralhado</AG_ScrambledIFF.label>
+  <!-- EN: This mechanoid's IFF sensors have been scrambled, making it unable to properly identify its foes. It will fight on the side of the colony for a day, and after that it will revert to its former allegiance. -->
+  <AG_ScrambledIFF.description>Os sensores de identificação deste mecanoide foram embaralhados e ele não consegue reconhecer os inimigos direito. Vai lutar do lado da colônia por um dia e depois volta ao lado anterior.</AG_ScrambledIFF.description>
+  <!-- EN: temporary bandwidth -->
+  <AG_TempNodeEffect.label>banda temporária</AG_TempNodeEffect.label>
+  <!-- EN: This person is receiving a boost to their bandwidth due to the presence of a temporary band node. -->
+  <AG_TempNodeEffect.description>Esta pessoa está recebendo um aumento de banda pela presença de um nó de banda temporário.</AG_TempNodeEffect.description>
+  <!-- EN: affected by sterilizing breath -->
+  <AG_SterilizingBreath.label>afetado por sopro esterilizante</AG_SterilizingBreath.label>
+  <!-- EN: This person has been affected by a sterilizing breath, increasing it's immunity gain rate while at the same time adversely affecting their fertility. Effects will go away after 12 hours. -->
+  <AG_SterilizingBreath.description>Esta pessoa foi afetada por um sopro esterilizante, que acelera o ganho de imunidade, mas prejudica a fertilidade. Os efeitos passam depois de 12 horas.</AG_SterilizingBreath.description>
+  <!-- EN: affected by banshee scream -->
+  <AG_BansheeScream.label>afetado por grito de banshee</AG_BansheeScream.label>
+  <!-- EN: This person has been affected by a banshee scream, reducing its hearing, ranged accuracy and melee dodge. Effects will go away after 12 hours. -->
+  <AG_BansheeScream.description>Esta pessoa foi afetada por um grito de banshee, que reduz a audição, a precisão à distância e a esquiva corpo a corpo. Os efeitos passam depois de 12 horas.</AG_BansheeScream.description>
+  <!-- EN: affected by freezing breath -->
+  <AG_FreezingBreath.label>afetado por sopro congelante</AG_FreezingBreath.label>
+  <!-- EN: This person has been affected by freezing breath, reducing their movement speed. Effects will go away after 12 hours. -->
+  <AG_FreezingBreath.description>Esta pessoa foi afetada por um sopro congelante, que reduz a velocidade de movimento. Os efeitos passam depois de 12 horas.</AG_FreezingBreath.description>
+  <!-- EN: affected by noxious breath -->
+  <AG_NoxiousBreath.label>afetado por sopro nocivo</AG_NoxiousBreath.label>
+  <!-- EN: This person has been affected by noxious breath. The foul stench forces affected targets to vomit uncontrollably. Effects will go away after 12 hours. -->
+  <AG_NoxiousBreath.description>Esta pessoa foi afetada por um sopro nocivo. O fedor faz os alvos vomitarem sem controle. Os efeitos passam depois de 12 horas.</AG_NoxiousBreath.description>
+</LanguageData>

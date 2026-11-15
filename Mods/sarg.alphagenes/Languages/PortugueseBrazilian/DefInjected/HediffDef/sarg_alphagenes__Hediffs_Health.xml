@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <!-- EN: regeneration -->
+  <AG_Regeneration.label>regeneração</AG_Regeneration.label>
+  <!-- EN: This person has a distributed network of specialized mechanites on their bloodstream that periodically tend to internal wounds, regenerating them without any need for rest. -->
+  <AG_Regeneration.description>Esta pessoa tem uma rede de mecanitos especializados na corrente sanguínea que tratam periodicamente os ferimentos internos, regenerando-os sem precisar de descanso.</AG_Regeneration.description>
+  <!-- EN: regeneration, minor -->
+  <AG_RegenerationMinor.label>regeneração, menor</AG_RegenerationMinor.label>
+  <!-- EN: This person has a faint distributed network of specialized mechanites on their bloodstream that periodically tend to internal wounds, regenerating them without any need for rest. -->
+  <AG_RegenerationMinor.description>Esta pessoa tem uma rede fraca de mecanitos especializados na corrente sanguínea que tratam periodicamente os ferimentos internos, regenerando-os sem precisar de descanso.</AG_RegenerationMinor.description>
+  <!-- EN: water regeneration -->
+  <AG_WaterRegeneration.label>regeneração na água</AG_WaterRegeneration.label>
+  <!-- EN: This person will slowly regenerate health whenever they are on watery terrain. -->
+  <AG_WaterRegeneration.description>Esta pessoa regenera a saúde devagar sempre que está em terreno com água.</AG_WaterRegeneration.description>
+  <!-- EN: passive regenerator -->
+  <AG_PassiveRegenerator.label>regenerador passivo</AG_PassiveRegenerator.label>
+  <!-- EN: This person constantly releases an invisible cloud of specialized mechanites that periodically tend to the wounds of nearby people and animals, regenerating them without any need for rest. -->
+  <AG_PassiveRegenerator.description>Esta pessoa libera o tempo todo uma nuvem invisível de mecanitos especializados que tratam periodicamente os ferimentos de pessoas e animais próximos, regenerando-os sem precisar de descanso.</AG_PassiveRegenerator.description>
+  <!-- EN: lethal instability -->
+  <AG_LethalInstability.label>instabilidade letal</AG_LethalInstability.label>
+  <!-- EN: This person needs considerably less metabolic energy to stay alive, at the cost of outrageously-reduced stability in their cell-replication machinery, and a very, VERY limited lifespan that can't be expanded in any way. -->
+  <AG_LethalInstability.description>Esta pessoa precisa de bem menos energia metabólica para viver, ao custo de uma estabilidade absurdamente reduzida na maquinaria de replicação das células e de uma expectativa de vida muito, MUITO curta, que não pode ser aumentada de jeito nenhum.</AG_LethalInstability.description>
+  <!-- EN: unstable mutation -->
+  <AG_UnstableMutation.label>mutação instável</AG_UnstableMutation.label>
+  <!-- EN: Forces an unstable mutation on this person. This mutation will activate a new random gene for 12 hours. After that period passes, the gene will deactivate. -->
+  <AG_UnstableMutation.description>Força uma mutação instável nesta pessoa. A mutação ativa um gene aleatório novo por 12 horas. Depois desse tempo, o gene se desativa.</AG_UnstableMutation.description>
+  <!-- EN: unstable mutation, major -->
+  <AG_UnstableMutationMajor.label>mutação instável, maior</AG_UnstableMutationMajor.label>
+  <!-- EN: Forces an uncontrollable and unstable mutation on this person every day. This mutation will activate two new random genes for a whole day. Next day, the genes will deactivate and two new ones will take their place. -->
+  <AG_UnstableMutationMajor.description>Força todos os dias uma mutação instável e incontrolável nesta pessoa. A mutação ativa dois genes aleatórios novos durante o dia inteiro. No dia seguinte, eles se desativam e dois novos tomam o lugar.</AG_UnstableMutationMajor.description>
+  <!-- EN: unstable mutation, catastrophic -->
+  <AG_UnstableMutationCatastrophic.label>mutação instável, catastrófica</AG_UnstableMutationCatastrophic.label>
+  <!-- EN: Forces an uncontrollable and unstable mutation on this person every day. This mutation will activate ten new random genes for a whole day. Next day, the genes will deactivate and ten new ones will take their place. -->
+  <AG_UnstableMutationCatastrophic.description>Força todos os dias uma mutação instável e incontrolável nesta pessoa. A mutação ativa dez genes aleatórios novos durante o dia inteiro. No dia seguinte, eles se desativam e dez novos tomam o lugar.</AG_UnstableMutationCatastrophic.description>
+  <!-- EN: near blindness -->
+  <AG_NearBlindness.label>quase cegueira</AG_NearBlindness.label>
+  <!-- EN: This person has almost completely useless eyes, with close to total blindness. -->
+  <AG_NearBlindness.description>Esta pessoa tem olhos quase inúteis, perto da cegueira total.</AG_NearBlindness.description>
+  <!-- EN: deafness -->
+  <AG_Deafness.label>surdez</AG_Deafness.label>
+  <!-- EN: This person has a complete lack of hearing. -->
+  <AG_Deafness.description>Esta pessoa não tem audição nenhuma.</AG_Deafness.description>
+  <!-- EN: teratogenesis -->
+  <AG_Teratogenesis.label>teratogênese</AG_Teratogenesis.label>
+  <!-- EN: The genes of this person constantly generate tumors all over their body. They are not immune to dead from these tumors.\n\nA new carcinoma will be generated every 42000 to 72000 ticks (0.7 to 1.2 days), and no more than ten carcinomas may be present at the same time on the body. -->
+  <AG_Teratogenesis.description>Os genes desta pessoa geram tumores pelo corpo todo sem parar. Ela não está imune a morrer por causa deles.\n\nUm novo carcinoma surge a cada 42000 a 72000 ticks (0,7 a 1,2 dia), e no máximo dez carcinomas podem existir ao mesmo tempo no corpo.</AG_Teratogenesis.description>
+  <!-- EN: limb regeneration -->
+  <AG_LimbRegeneration.label>regeneração de membros</AG_LimbRegeneration.label>
+  <!-- EN: This person has improved regenerating factors in their DNA, allowing them to slowly regenerate limbs that may even be completely missing. The process is slow, and will prioritize healing existing, but damaged, limbs. -->
+  <AG_LimbRegeneration.description>Esta pessoa tem fatores regenerativos aprimorados no DNA, o que permite regenerar lentamente membros, mesmo os que estão faltando por completo. O processo é lento e prioriza curar membros existentes, mas danificados.</AG_LimbRegeneration.description>
+</LanguageData>

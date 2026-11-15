@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <VRE_WolfmenTransport.questContentRules.rulesStrings>
+    <!-- EN: wolfmanShuttleCrashedLetterLabel-&gt;Crashed shuttle -->
+    <li>wolfmanShuttleCrashedLetterLabel-&gt;Ônibus espacial caído</li>
+    <!-- EN: wolfmanShuttleCrashedLetterText-&gt;A shuttle containing a wolfman leader and [WolfmenCount] wolfmen refugees has crashed nearby. They will exit the crashed craft and prepare to venture on. The leader is willing to implant their germline into one of your colonists. Select a colonist, then right-click the leader and choose "Accept wolfman transformation". The refugees will leave in half a day if nobody accepts. -->
+    <li>wolfmanShuttleCrashedLetterText-&gt;Um ônibus espacial com um líder homem-lobo e [WolfmenCount] refugiados homens-lobo caiu aqui perto. Eles vão sair da nave e se preparar para seguir viagem. O líder aceita implantar sua linhagem germinativa em um dos seus colonos. Selecione um colono, clique com o botão direito no líder e escolha "Aceitar transformação em homem-lobo". Os refugiados vão embora em meio dia se ninguém aceitar.</li>
+    <!-- EN: reinforcementsArrivedLetterLabel-&gt;Wolfmen reinforcements -->
+    <li>reinforcementsArrivedLetterLabel-&gt;Reforços homens-lobo</li>
+    <!-- EN: reinforcementsArrivedLetterText-&gt;Wolfmen are arriving in drop pods to reinforce the crashed refugees. -->
+    <li>reinforcementsArrivedLetterText-&gt;Homens-lobo estão chegando em cápsulas de queda para reforçar os refugiados acidentados.</li>
+    <!-- EN: letterLabelBeggarsBetrayed-&gt;Betrayed refugees -->
+    <li>letterLabelBeggarsBetrayed-&gt;Refugiados traídos</li>
+    <!-- EN: letterTextBeggarsBetrayed-&gt;The wolfmen refugees are betrayed by your actions and will try to defend themselves. -->
+    <li>letterTextBeggarsBetrayed-&gt;Os refugiados homens-lobo se sentem traídos por suas ações e vão tentar se defender.</li>
+  </VRE_WolfmenTransport.questContentRules.rulesStrings>
+  <VRE_WolfmenTransport.questDescriptionRules.rulesStrings>
+    <!-- EN: questDescription-&gt;You have intercepted a distress signal! A shuttle carrying a group of wolfmen refugees is having trouble with staying airborne. Their leader, alongside [WolfmenCount] other refugees is begging you to allow them to crash near [map_definite]. \n\nOnce the ship has crashed, the refugees will regroup and prepare to leave. Their leader offers to transform one of your colonists into a wolfman. To accept, select a colonist and right-click the leader. The wolfmen will leave half a day after landing if nobody accepts. You can also fight or arrest them; if you capture one, you can force them to turn a colonist into a wolfman.\n\n[wolfmenInfo] -->
+    <li>questDescription-&gt;Vocês interceptaram um pedido de socorro! Um ônibus espacial com um grupo de refugiados homens-lobo está com dificuldade de se manter no ar. O líder, junto com outros [WolfmenCount] refugiados, implora que vocês permitam a queda perto de [map_definite]. \n\nDepois da queda, os refugiados vão se reagrupar e se preparar para partir. O líder oferece transformar um dos seus colonos em homem-lobo. Para aceitar, selecione um colono e clique com o botão direito no líder. Os homens-lobo vão embora meio dia depois de pousar se ninguém aceitar. Vocês também podem lutar contra eles ou prendê-los; se capturarem um, podem forçá-lo a transformar um colono em homem-lobo.\n\n[wolfmenInfo]</li>
+    <!-- EN: wolfmenInfo-&gt;(*Gray)About wolfmen: Wolfmen have propagated unimpeded throughout colonized space to stake territorial claims and establish packs or larger clans. Their wolfman form has diminished nocturnal abilities, trading many advantages in exchange for being able to share their xenogerm with others. Their lycan form, on the other hand, has nocturnal advantages, improved close combat effectiveness, supernatural speed and regeneration, and an invigorating howl that impedes speech which improves further as more pack members join in.(/Gray) -->
+    <li>wolfmenInfo-&gt;(*Gray)Sobre os homens-lobo: os homens-lobo se espalharam livremente pelo espaço colonizado para reivindicar territórios e formar alcateias ou clãs maiores. A forma de homem-lobo tem habilidades noturnas reduzidas, trocando muitas vantagens pela capacidade de compartilhar o xenogerminador com outros. Já a forma licana tem vantagens noturnas, melhor desempenho no combate corpo a corpo, velocidade e regeneração sobrenaturais e um uivo revigorante que impede a fala e fica mais forte quanto mais membros da alcateia se juntam.(/Gray)</li>
+  </VRE_WolfmenTransport.questDescriptionRules.rulesStrings>
+  <VRE_WolfmenTransport.questNameRules.rulesStrings>
+    <!-- EN: questName-&gt;[shipAdjective] [shipNoun] -->
+    <li>questName-&gt;[shipNoun] [shipAdjective]</li>
+    <!-- EN: shipAdjective-&gt;wolfmen -->
+    <li>shipAdjective-&gt;dos homens-lobo</li>
+    <!-- EN: shipAdjective-&gt;wolf -->
+    <li>shipAdjective-&gt;lupina</li>
+    <!-- EN: shipAdjective-&gt;lycan -->
+    <li>shipAdjective-&gt;licana</li>
+    <!-- EN: shipAdjective-&gt;werewolf -->
+    <li>shipAdjective-&gt;lobisomem</li>
+    <!-- EN: shipAdjective-&gt;nocturnal -->
+    <li>shipAdjective-&gt;noturna</li>
+    <!-- EN: shipAdjective-&gt;howling -->
+    <li>shipAdjective-&gt;uivante</li>
+    <!-- EN: shipAdjective-&gt;furry -->
+    <li>shipAdjective-&gt;peluda</li>
+    <!-- EN: shipAdjective-&gt;canine -->
+    <li>shipAdjective-&gt;canina</li>
+    <!-- EN: shipNoun-&gt;ship -->
+    <li>shipNoun-&gt;Nave</li>
+    <!-- EN: shipNoun-&gt;shuttle -->
+    <li>shipNoun-&gt;Nave de transporte</li>
+    <!-- EN: shipNoun-&gt;craft -->
+    <li>shipNoun-&gt;Aeronave</li>
+    <!-- EN: shipNoun-&gt;hulk -->
+    <li>shipNoun-&gt;Carcaça</li>
+    <!-- EN: shipNoun-&gt;crash -->
+    <li>shipNoun-&gt;Queda</li>
+    <!-- EN: shipNoun-&gt;wreck -->
+    <li>shipNoun-&gt;Sucata</li>
+  </VRE_WolfmenTransport.questNameRules.rulesStrings>
+</LanguageData>

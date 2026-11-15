@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <VREA_Quest_AndroidJoins.questDescriptionRules.rulesStrings>
+    <!-- EN: questDescription-&gt;[asker_nameFull], an awakened android, is calling from nearby. [asker_pronoun] is being hunted by [enemyFaction_name]. Once an android experiences high emotional trauma or happiness, it can develop sentience and personality. Despite being synthetic, awakened androids exhibit human-like behavior and possess adaptable subroutines. Their artificial bodies grant disease immunity, but they require comfort and personal space. They indulge in human pursuits and strive to blend into society. A lot of societies don't agree with it and prefer androids as servants, not equals. The search party of [enemyFaction_pawnsPlural] is composed of: \n\n[raid/raidPawnKinds]\n\n[asker_nameFull] wants you to provide shelter at [map_definite]. If you accept, [asker_pronoun] will arrive immediately, but [asker_pronoun] will be followed by the search party that you will need to defeat.\n\nAndroids are synthetic, man-made constructs with metal bodies and neutroamine coursing through their veins. Operated by a persona subcore, androids are capable of all the same work kinds as humans, without the drawbacks usually associated with organic life. -->
+    <li>questDescription-&gt;[asker_nameFull], um androide desperto, está chamando de perto daqui. Está sendo caçado por [enemyFaction_name]. Quando um androide passa por um trauma emocional forte ou por muita felicidade, pode desenvolver consciência e personalidade. Apesar de sintéticos, os androides despertos se comportam como humanos e têm sub-rotinas adaptáveis. O corpo artificial os torna imunes a doenças, mas eles precisam de conforto e de espaço pessoal. Dedicam-se a atividades humanas e tentam se integrar à sociedade. Muitas sociedades não aceitam isso e preferem androides como servos, não como iguais. O grupo de busca de [enemyFaction_pawnsPlural] é formado por: \n\n[raid/raidPawnKinds]\n\n[asker_nameFull] quer abrigo em [map_definite]. Se vocês aceitarem, chega imediatamente, mas será seguido pelo grupo de busca, que vocês terão de derrotar.\n\nAndroides são construções sintéticas, feitas pelo homem, com corpo de metal e neutroamina correndo nas veias. Operados por um subnúcleo de persona, conseguem fazer todos os mesmos trabalhos que os humanos, sem as desvantagens que costumam vir com a vida orgânica.</li>
+  </VREA_Quest_AndroidJoins.questDescriptionRules.rulesStrings>
+  <VREA_Quest_AndroidJoins.questNameRules.rulesStrings>
+    <!-- EN: questName-&gt;the [adjAny] Android -->
+    <li>questName-&gt;O androide [adjAny]</li>
+    <!-- EN: adjAny-&gt;hunted -->
+    <li>adjAny-&gt;caçado</li>
+    <!-- EN: adjAny-&gt;fleeing -->
+    <li>adjAny-&gt;fugitivo</li>
+    <!-- EN: adjAny-&gt;chased -->
+    <li>adjAny-&gt;perseguido</li>
+    <!-- EN: adjAny-&gt;ambushed -->
+    <li>adjAny-&gt;emboscado</li>
+  </VREA_Quest_AndroidJoins.questNameRules.rulesStrings>
+  <!-- EN: {BASETEXT}\n\nBecause you accepted [asker_nameDef], the band of pirates pursuing [asker_objective] will arrive soon. -->
+  <VREA_Quest_AndroidJoins.root.nodes.PawnsArrive.customLetterText.slateRef>{BASETEXT}\n\nComo vocês aceitaram [asker_nameDef], o bando de piratas que o persegue vai chegar em breve.</VREA_Quest_AndroidJoins.root.nodes.PawnsArrive.customLetterText.slateRef>
+  <!-- EN: {BASELABEL}: Pursuing enemies -->
+  <VREA_Quest_AndroidJoins.root.nodes.Delay-0.node.parms.customLetterLabel.value.slateRef>{BASELABEL}: inimigos em perseguição</VREA_Quest_AndroidJoins.root.nodes.Delay-0.node.parms.customLetterLabel.value.slateRef>
+  <!-- EN: {BASETEXT}\n\nThese are the enemies that were hunting [../asker_nameFull].\n               -->
+  <VREA_Quest_AndroidJoins.root.nodes.Delay-0.node.parms.customLetterText.value.slateRef>{BASETEXT}\n\nEstes são os inimigos que estavam caçando [../asker_nameFull].\n</VREA_Quest_AndroidJoins.root.nodes.Delay-0.node.parms.customLetterText.value.slateRef>
+</LanguageData>

@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <!-- EN: forsaken sniper rifle -->
+  <AG_ForsakenSniper.label>fuzil de precisão renegado</AG_ForsakenSniper.label>
+  <!-- EN: This sniper rifle is prized by Forsaken explorers for its long range and high accuracy. -->
+  <AG_ForsakenSniper.description>Este fuzil de precisão é valorizado pelos exploradores renegados pelo longo alcance e pela alta precisão.</AG_ForsakenSniper.description>
+  <!-- EN: stock -->
+  <AG_ForsakenSniper.tools.stock.label>coronha</AG_ForsakenSniper.tools.stock.label>
+  <!-- EN: barrel -->
+  <AG_ForsakenSniper.tools.barrel.label>cano</AG_ForsakenSniper.tools.barrel.label>
+  <!-- EN: muzzle -->
+  <AG_ForsakenSniper.tools.muzzle.label>boca do cano</AG_ForsakenSniper.tools.muzzle.label>
+  <!-- EN: forsaken sniper rifle -->
+  <AG_ForsakenSniper.verbs.Verb_ShootCE.label>fuzil de precisão renegado</AG_ForsakenSniper.verbs.Verb_ShootCE.label>
+  <!-- EN: forsaken sniper pulse -->
+  <AG_SniperPulse.label>pulso de fuzil de precisão renegado</AG_SniperPulse.label>
+  <!-- EN: forsaken shotgun -->
+  <AG_ForsakenShotgun.label>escopeta renegada</AG_ForsakenShotgun.label>
+  <!-- EN: Forsaken shotgun, great accuracy at short distances and very deadly at close range. -->
+  <AG_ForsakenShotgun.description>Escopeta renegada, muito precisa a curta distância e mortal de perto.</AG_ForsakenShotgun.description>
+  <!-- EN: stock -->
+  <AG_ForsakenShotgun.tools.stock.label>coronha</AG_ForsakenShotgun.tools.stock.label>
+  <!-- EN: barrel -->
+  <AG_ForsakenShotgun.tools.barrel.label>cano</AG_ForsakenShotgun.tools.barrel.label>
+  <!-- EN: muzzle -->
+  <AG_ForsakenShotgun.tools.muzzle.label>boca do cano</AG_ForsakenShotgun.tools.muzzle.label>
+  <!-- EN: forsaken shotgun -->
+  <AG_ForsakenShotgun.verbs.Verb_ShootCE.label>escopeta renegada</AG_ForsakenShotgun.verbs.Verb_ShootCE.label>
+  <!-- EN: forsaken shotgun pulse -->
+  <AG_ShotgunPulse.label>pulso de escopeta renegada</AG_ShotgunPulse.label>
+  <!-- EN: forsaken assault rifle -->
+  <AG_ForsakenAssaultRifle.label>fuzil de assalto renegado</AG_ForsakenAssaultRifle.label>
+  <!-- EN: This Forsaken assault rifle has a rather small calibre cartridge and a long reload time, but has a high burst shot count, high armor penetration and decent accuracy. -->
+  <AG_ForsakenAssaultRifle.description>Este fuzil de assalto renegado usa um cartucho de calibre pequeno e demora para recarregar, mas dispara rajadas longas, tem alta penetração de armadura e boa precisão.</AG_ForsakenAssaultRifle.description>
+  <!-- EN: stock -->
+  <AG_ForsakenAssaultRifle.tools.stock.label>coronha</AG_ForsakenAssaultRifle.tools.stock.label>
+  <!-- EN: barrel -->
+  <AG_ForsakenAssaultRifle.tools.barrel.label>cano</AG_ForsakenAssaultRifle.tools.barrel.label>
+  <!-- EN: muzzle -->
+  <AG_ForsakenAssaultRifle.tools.muzzle.label>boca do cano</AG_ForsakenAssaultRifle.tools.muzzle.label>
+  <!-- EN: forsaken assault rifle -->
+  <AG_ForsakenAssaultRifle.verbs.Verb_ShootCE.label>fuzil de assalto renegado</AG_ForsakenAssaultRifle.verbs.Verb_ShootCE.label>
+  <!-- EN: forsaken assault rifle pulse -->
+  <AG_ForsakenAssaultRiflePulse.label>pulso de fuzil de assalto renegado</AG_ForsakenAssaultRiflePulse.label>
+  <!-- EN: forsaken long blade -->
+  <AG_ForsakenLongBlade.label>lâmina longa renegada</AG_ForsakenLongBlade.label>
+  <!-- EN: This Forsaken long sword takes little effort to lift and swing but can deal substantial damage. -->
+  <AG_ForsakenLongBlade.description>Esta espada longa renegada exige pouco esforço para levantar e brandir, mas causa um dano considerável.</AG_ForsakenLongBlade.description>
+  <!-- EN: handle -->
+  <AG_ForsakenLongBlade.tools.handle.label>cabo</AG_ForsakenLongBlade.tools.handle.label>
+  <!-- EN: point -->
+  <AG_ForsakenLongBlade.tools.point.label>ponta</AG_ForsakenLongBlade.tools.point.label>
+  <!-- EN: edge -->
+  <AG_ForsakenLongBlade.tools.edge.label>gume</AG_ForsakenLongBlade.tools.edge.label>
+  <!-- EN: forsaken battle axe -->
+  <AG_ForsakenBattleAxe.label>machado de batalha renegado</AG_ForsakenBattleAxe.label>
+  <!-- EN: The traditional Forsaken battle axe deals a lot of damage on impact, at the cost of unwealdy shape and weight. -->
+  <AG_ForsakenBattleAxe.description>O tradicional machado de batalha renegado causa muito dano no impacto, ao custo de um formato e um peso difíceis de manejar.</AG_ForsakenBattleAxe.description>
+  <!-- EN: shaft -->
+  <AG_ForsakenBattleAxe.tools.shaft.label>haste</AG_ForsakenBattleAxe.tools.shaft.label>
+  <!-- EN: point -->
+  <AG_ForsakenBattleAxe.tools.point.label>ponta</AG_ForsakenBattleAxe.tools.point.label>
+  <!-- EN: edge -->
+  <AG_ForsakenBattleAxe.tools.edge.label>gume</AG_ForsakenBattleAxe.tools.edge.label>
+  <!-- EN: forsaken bulk sword -->
+  <AG_ForsakenBulkSword.label>espada larga renegada</AG_ForsakenBulkSword.label>
+  <!-- EN: A Forsaken equivalent of the gladius, common sidearms among Forsaken infantry. Terrible armor penetration, but easy to handle. -->
+  <AG_ForsakenBulkSword.description>O equivalente renegado do gládio, arma secundária comum na infantaria renegada. Péssima penetração de armadura, mas fácil de manejar.</AG_ForsakenBulkSword.description>
+  <!-- EN: handle -->
+  <AG_ForsakenBulkSword.tools.handle.label>cabo</AG_ForsakenBulkSword.tools.handle.label>
+  <!-- EN: point -->
+  <AG_ForsakenBulkSword.tools.point.label>ponta</AG_ForsakenBulkSword.tools.point.label>
+  <!-- EN: edge -->
+  <AG_ForsakenBulkSword.tools.edge.label>gume</AG_ForsakenBulkSword.tools.edge.label>
+  <!-- EN: forsaken spear -->
+  <AG_ForsakenSpear.label>lança renegada</AG_ForsakenSpear.label>
+  <!-- EN: A Forsaken spear. Deals great damage, but can be difficult to handle. -->
+  <AG_ForsakenSpear.description>Uma lança renegada. Causa muito dano, mas pode ser difícil de manejar.</AG_ForsakenSpear.description>
+  <!-- EN: shaft -->
+  <AG_ForsakenSpear.tools.shaft-0.label>haste</AG_ForsakenSpear.tools.shaft-0.label>
+  <!-- EN: shaft -->
+  <AG_ForsakenSpear.tools.shaft-1.label>haste</AG_ForsakenSpear.tools.shaft-1.label>
+  <!-- EN: head -->
+  <AG_ForsakenSpear.tools.head.label>ponta</AG_ForsakenSpear.tools.head.label>
+  <!-- EN: forsaken bow -->
+  <AG_ForsakenBow.label>arco renegado</AG_ForsakenBow.label>
+  <!-- EN: This traditional Forsaken bow is very accurate and can deal decent damage. Its sharp edges make it usable in melee combat. -->
+  <AG_ForsakenBow.description>Este arco renegado tradicional é muito preciso e causa um dano razoável. As bordas afiadas permitem usá-lo no combate corpo a corpo.</AG_ForsakenBow.description>
+  <!-- EN: forsaken bow -->
+  <AG_ForsakenBow.verbs.Verb_ShootCE.label>arco renegado</AG_ForsakenBow.verbs.Verb_ShootCE.label>
+  <!-- EN: forsaken arrow -->
+  <AG_ForsakenArrow.label>flecha renegada</AG_ForsakenArrow.label>
+  <!-- EN: forsaken black hydra -->
+  <AG_ForsakenHydra.label>hidra negra renegada</AG_ForsakenHydra.label>
+  <!-- EN: The Forsaken Black Hydra is a special weapon system that draws lightning to the point of fire, due to an ionized electrocloud detonator. Legend says these weapons needed to contain the heart of a hydra to function. -->
+  <AG_ForsakenHydra.description>A Hidra Negra renegada é um sistema de armas especial que atrai raios até o ponto do disparo, graças a um detonador de eletronuvem ionizada. A lenda diz que essas armas precisavam conter o coração de uma hidra para funcionar.</AG_ForsakenHydra.description>
+  <!-- EN: barrel -->
+  <AG_ForsakenHydra.tools.barrel.label>cano</AG_ForsakenHydra.tools.barrel.label>
+  <!-- EN: forsaken black hydra -->
+  <AG_ForsakenHydra.verbs.Verb_ShootCE.label>hidra negra renegada</AG_ForsakenHydra.verbs.Verb_ShootCE.label>
+</LanguageData>

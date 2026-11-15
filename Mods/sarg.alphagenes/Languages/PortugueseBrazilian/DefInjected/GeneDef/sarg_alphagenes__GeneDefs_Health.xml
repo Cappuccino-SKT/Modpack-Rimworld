@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <!-- EN: total antirot lungs -->
+  <AG_LungRotImmunity.label>pulmões antipodridão totais</AG_LungRotImmunity.label>
+  <!-- EN: Carriers of this gene have strengthened lungs that are immune to lung rot. -->
+  <AG_LungRotImmunity.description>Portadores deste gene têm pulmões reforçados, imunes à podridão pulmonar.</AG_LungRotImmunity.description>
+  <!-- EN: lung rot strength -->
+  <AG_LungRotStrength.label>força da podridão pulmonar</AG_LungRotStrength.label>
+  <!-- EN: Carriers of this gene have special structures in their lungs that strengthen their bodies when they are affected by lung rot, making piles of corpses... a pleasant prospect. -->
+  <AG_LungRotStrength.description>Portadores deste gene têm estruturas especiais nos pulmões que fortalecem o corpo quando afetado pela podridão pulmonar, o que torna pilhas de cadáveres... uma perspectiva agradável.</AG_LungRotStrength.description>
+  <!-- EN: regeneration, minor -->
+  <AG_RegenerationMinor.label>regeneração, menor</AG_RegenerationMinor.label>
+  <!-- EN: Carriers of this gene have a faint distributed network of specialized mechanites on their bloodstream that periodically tend to internal wounds, regenerating them without any need for rest. -->
+  <AG_RegenerationMinor.description>Portadores deste gene têm uma rede fraca de mecanitos especializados na corrente sanguínea que tratam periodicamente os ferimentos internos, regenerando-os sem precisar de descanso.</AG_RegenerationMinor.description>
+  <!-- EN: water regeneration -->
+  <AG_WaterRegeneration.label>regeneração na água</AG_WaterRegeneration.label>
+  <!-- EN: Carriers of this gene will slowly regenerate health whenever they are on watery terrain. -->
+  <AG_WaterRegeneration.description>Portadores deste gene regeneram a saúde devagar sempre que estão em terreno com água.</AG_WaterRegeneration.description>
+  <!-- EN: limb regeneration -->
+  <AG_LimbRegeneration.label>regeneração de membros</AG_LimbRegeneration.label>
+  <!-- EN: Carriers of this gene have improved regenerating factors in their DNA, allowing them to slowly regenerate limbs that may even be completely missing. The process is slow, and will prioritize healing existing, but damaged, limbs. -->
+  <AG_LimbRegeneration.description>Portadores deste gene têm fatores regenerativos aprimorados no DNA, o que permite regenerar lentamente membros, mesmo os que estão faltando por completo. O processo é lento e prioriza curar membros existentes, mas danificados.</AG_LimbRegeneration.description>
+  <!-- EN: passive regenerator -->
+  <AG_PassiveRegenerator.label>regenerador passivo</AG_PassiveRegenerator.label>
+  <!-- EN: Carriers of this gene constantly release an invisible cloud of specialized mechanites that periodically tend to the wounds of nearby people and animals, regenerating them without any need for rest. -->
+  <AG_PassiveRegenerator.description>Portadores deste gene liberam o tempo todo uma nuvem invisível de mecanitos especializados que tratam periodicamente os ferimentos de pessoas e animais próximos, regenerando-os sem precisar de descanso.</AG_PassiveRegenerator.description>
+  <!-- EN: unstable regeneration -->
+  <AG_UnstableRegeneration.label>regeneração instável</AG_UnstableRegeneration.label>
+  <!-- EN: Carriers of this gene can periodically heal all injuries, at the cost of great exertion and a reduction of their lifespan. -->
+  <AG_UnstableRegeneration.description>Portadores deste gene conseguem curar periodicamente todos os ferimentos, ao custo de um grande esforço e de uma redução na expectativa de vida.</AG_UnstableRegeneration.description>
+  <!-- EN: unstable mutation, major -->
+  <AG_UnstableMutationMajor.label>mutação instável, maior</AG_UnstableMutationMajor.label>
+  <!-- EN: Carriers of this gene will suffer an unstable mutation on their bodies once per day. This mutation will activate two new random genes for the whole day. Next day, the genes will deactivate and two new ones will take their place. -->
+  <AG_UnstableMutationMajor.description>Portadores deste gene sofrem uma mutação instável no corpo uma vez por dia. A mutação ativa dois genes aleatórios novos durante o dia inteiro. No dia seguinte, eles se desativam e dois novos tomam o lugar.</AG_UnstableMutationMajor.description>
+  <!-- EN: unstable mutation, catastrophic -->
+  <AG_UnstableMutationCatastrophic.label>mutação instável, catastrófica</AG_UnstableMutationCatastrophic.label>
+  <!-- EN: Carriers of this gene will suffer a very powerful unstable mutation on their bodies once per day. This mutation will activate up to ten new random genes for the whole day. Next day, the genes will deactivate and ten new ones will take their place. -->
+  <AG_UnstableMutationCatastrophic.description>Portadores deste gene sofrem uma mutação instável muito poderosa no corpo uma vez por dia. A mutação ativa até dez genes aleatórios novos durante o dia inteiro. No dia seguinte, eles se desativam e dez novos tomam o lugar.</AG_UnstableMutationCatastrophic.description>
+  <!-- EN: deaf -->
+  <AG_Deaf.label>surdo</AG_Deaf.label>
+  <!-- EN: Carriers of this gene have a complete lack of hearing. -->
+  <AG_Deaf.description>Portadores deste gene não têm audição nenhuma.</AG_Deaf.description>
+  <!-- EN: frail antitoxic lungs -->
+  <AG_ToxicEnvironmentResistance_Frail.label>pulmões antitóxicos frágeis</AG_ToxicEnvironmentResistance_Frail.label>
+  <!-- EN: Carriers of this gene are specially affected by environmental toxins. They get more toxic buildup from tox gas, polluted terrain, and toxic fallout, and are more vulnerable to direct attacks with venom or injected poison. Additionally, they build up rot stink exposure faster. -->
+  <AG_ToxicEnvironmentResistance_Frail.description>Portadores deste gene são especialmente afetados por toxinas do ambiente. Acumulam mais toxicidade com gás tóxico, terreno poluído e precipitação tóxica, e são mais vulneráveis a ataques diretos com veneno. Além disso, acumulam exposição ao fedor podre mais rápido.</AG_ToxicEnvironmentResistance_Frail.description>
+  <!-- EN: tox-affected -->
+  <AG_ToxicEnvironmentResistance_Frail.labelShortAdj>afetado por toxinas</AG_ToxicEnvironmentResistance_Frail.labelShortAdj>
+  <!-- EN: pure -->
+  <AG_ToxicEnvironmentResistance_Frail.symbolPack.prefixSymbols.0.symbol>puro</AG_ToxicEnvironmentResistance_Frail.symbolPack.prefixSymbols.0.symbol>
+  <!-- EN: tox vulnerability -->
+  <AG_ToxResist_Vulnerability.label>vulnerabilidade a toxinas</AG_ToxResist_Vulnerability.label>
+  <!-- EN: Carriers of this gene are vulnerable to toxic buildup from any source. This includes pollution, toxic fallout, tox gas, and direct attacks with venom or injected poison. They'll gain an additional half as much amount of toxic buildup compared to others. -->
+  <AG_ToxResist_Vulnerability.description>Portadores deste gene são vulneráveis ao acúmulo de toxicidade de qualquer fonte, incluindo poluição, precipitação tóxica, gás tóxico e ataques diretos com veneno. Acumulam metade a mais de toxicidade que os outros.</AG_ToxResist_Vulnerability.description>
+  <!-- EN: tox-vulnerable -->
+  <AG_ToxResist_Vulnerability.labelShortAdj>vulnerável a toxinas</AG_ToxResist_Vulnerability.labelShortAdj>
+  <!-- EN: hard bones -->
+  <AG_HardBones.label>ossos duros</AG_HardBones.label>
+  <!-- EN: Carriers of this gene have very hard bones with extended bone growth, making them resistant to blunt damage, at the cost of being vulnerable to cuts. -->
+  <AG_HardBones.description>Portadores deste gene têm ossos muito duros e com crescimento ósseo extra, o que os torna resistentes a dano contundente, mas vulneráveis a cortes.</AG_HardBones.description>
+  <!-- EN: frostbite resistance -->
+  <AG_FrostbiteResistance.label>resistência ao congelamento</AG_FrostbiteResistance.label>
+  <!-- EN: Carriers of this gene have resistance to frostbite damage. -->
+  <AG_FrostbiteResistance.description>Portadores deste gene resistem a dano por congelamento.</AG_FrostbiteResistance.description>
+  <!-- EN: frostbite vulnerability -->
+  <AG_FrostbiteVulnerability.label>vulnerabilidade ao congelamento</AG_FrostbiteVulnerability.label>
+  <!-- EN: Carriers of this gene have vulnerability to frostbite damage. -->
+  <AG_FrostbiteVulnerability.description>Portadores deste gene são vulneráveis a dano por congelamento.</AG_FrostbiteVulnerability.description>
+  <!-- EN: clean -->
+  <AG_Clean.label>limpo</AG_Clean.label>
+  <!-- EN: Carriers of this gene are naturally clean and generate less filth on their day to day activities. -->
+  <AG_Clean.description>Portadores deste gene são naturalmente limpos e geram menos sujeira no dia a dia.</AG_Clean.description>
+  <!-- EN: filthy -->
+  <AG_Filthy.label>imundo</AG_Filthy.label>
+  <!-- EN: Carriers of this gene are naturally filthy and generate more filth on their day to day activities. -->
+  <AG_Filthy.description>Portadores deste gene são naturalmente imundos e geram mais sujeira no dia a dia.</AG_Filthy.description>
+  <!-- EN: very weak immunity -->
+  <AG_Gene_VeryWeakImmunity.label>imunidade muito fraca</AG_Gene_VeryWeakImmunity.label>
+  <!-- EN: Carriers of this gene gain immunity to diseases very slowly. They will die from infections that others would survive. -->
+  <AG_Gene_VeryWeakImmunity.description>Portadores deste gene ganham imunidade a doenças muito devagar. Morrem de infecções que os outros sobreviveriam.</AG_Gene_VeryWeakImmunity.description>
+  <!-- EN: sickly -->
+  <AG_Gene_VeryWeakImmunity.labelShortAdj>doentio</AG_Gene_VeryWeakImmunity.labelShortAdj>
+  <!-- EN: sick -->
+  <AG_Gene_VeryWeakImmunity.symbolPack.prefixSymbols.0.symbol>doente</AG_Gene_VeryWeakImmunity.symbolPack.prefixSymbols.0.symbol>
+  <!-- EN: frail -->
+  <AG_Gene_VeryWeakImmunity.symbolPack.prefixSymbols.1.symbol>frágil</AG_Gene_VeryWeakImmunity.symbolPack.prefixSymbols.1.symbol>
+  <!-- EN: pack mule -->
+  <AG_PackMule.label>mula de carga</AG_PackMule.label>
+  <!-- EN: Carriers of this gene can carry obscene amounts of stuff before feeling encumbered. -->
+  <AG_PackMule.description>Portadores deste gene conseguem carregar quantidades obscenas de coisas antes de se sentirem sobrecarregados.</AG_PackMule.description>
+  <!-- EN: frail back -->
+  <AG_FrailBack.label>costas frágeis</AG_FrailBack.label>
+  <!-- EN: Carriers of this gene can't carry a lot of weight. -->
+  <AG_FrailBack.description>Portadores deste gene não conseguem carregar muito peso.</AG_FrailBack.description>
+  <!-- EN: stinky -->
+  <AG_Stinky.label>fedido</AG_Stinky.label>
+  <!-- EN: Carriers of this gene generate a very unpleasant aroma that will bother other people. -->
+  <AG_Stinky.description>Portadores deste gene exalam um cheiro muito desagradável que incomoda as outras pessoas.</AG_Stinky.description>
+  <!-- EN: acid immunity -->
+  <AG_AcidImmunity.label>imunidade a ácido</AG_AcidImmunity.label>
+  <!-- EN: Carriers of this gene have immunity to acid damage. -->
+  <AG_AcidImmunity.description>Portadores deste gene são imunes a dano por ácido.</AG_AcidImmunity.description>
+  <!-- EN: acid weakness -->
+  <AG_AcidWeakness.label>fraqueza a ácido</AG_AcidWeakness.label>
+  <!-- EN: Carriers of this gene have a particular weakness to acid damage, receiving more severe chemical burns. -->
+  <AG_AcidWeakness.description>Portadores deste gene são especialmente fracos contra dano por ácido e sofrem queimaduras químicas mais graves.</AG_AcidWeakness.description>
+  <!-- EN: adaptive biology -->
+  <AG_AdaptiveBiology.label>biologia adaptativa</AG_AdaptiveBiology.label>
+  <!-- EN: Carriers of this gene can subtly change their very own personality, getting rid of old traits and gaining new ones. -->
+  <AG_AdaptiveBiology.description>Portadores deste gene conseguem mudar sutilmente a própria personalidade, livrando-se de traços antigos e ganhando novos.</AG_AdaptiveBiology.description>
+  <!-- EN: extra leather -->
+  <AG_ExtraLeather.label>couro extra</AG_ExtraLeather.label>
+  <!-- EN: Carriers of this gene have much more dense skin, resulting in greater leather yield when butchered. -->
+  <AG_ExtraLeather.description>Portadores deste gene têm pele muito mais densa, rendendo mais couro quando abatidos.</AG_ExtraLeather.description>
+  <!-- EN: low leather -->
+  <AG_LowLeather.label>pouco couro</AG_LowLeather.label>
+  <!-- EN: Carriers of this gene have very thin skin, resulting in much smaller leather yield when butchered. -->
+  <AG_LowLeather.description>Portadores deste gene têm pele muito fina, rendendo bem menos couro quando abatidos.</AG_LowLeather.description>
+  <!-- EN: no leather -->
+  <AG_NoLeather.label>sem couro</AG_NoLeather.label>
+  <!-- EN: Carriers of this gene have extraordinarily thin skin, resulting in no leather yield when butchered. -->
+  <AG_NoLeather.description>Portadores deste gene têm pele extraordinariamente fina e não rendem couro quando abatidos.</AG_NoLeather.description>
+  <!-- EN: no meat -->
+  <AG_NoMeat.label>sem carne</AG_NoMeat.label>
+  <!-- EN: Carriers of this gene have extraordinarily thin meat and fat tissue, resulting in no usable meat yield when butchered. -->
+  <AG_NoMeat.description>Portadores deste gene têm tecido muscular e adiposo extraordinariamente fino e não rendem carne aproveitável quando abatidos.</AG_NoMeat.description>
+</LanguageData>

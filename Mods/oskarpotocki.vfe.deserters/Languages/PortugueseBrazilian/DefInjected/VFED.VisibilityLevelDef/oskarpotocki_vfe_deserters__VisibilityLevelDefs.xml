@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <!-- EN: hidden -->
+  <VFED_Hidden.label>oculto</VFED_Hidden.label>
+  <!-- EN: You are operating in secret, and the Empire has no knowledge of your allegiance to the deserters. They will not respond to your attacks on their installations, and they will generally not look for you out in the world. -->
+  <VFED_Hidden.description>Vocês operam em segredo, e o Império não sabe da sua lealdade aos desertores. Não reage aos seus ataques às instalações e, em geral, não procura vocês pelo mundo.</VFED_Hidden.description>
+  <!-- EN: whispers -->
+  <VFED_Whispers.label>sussurros</VFED_Whispers.label>
+  <!-- EN: Word of your activity has started to spread within the higher nobility, but the Empire still sees you as nothing more but a rare, minor annoyance. You can expect patrols to be dispatched to any imperial installations under attack, but you should still have enough time to get in and out before they arrive. Inventory checks become part of the updated briefing, making it slightly harder to acquire contraband. -->
+  <VFED_Whispers.description>A notícia da sua atividade começou a se espalhar entre a alta nobreza, mas o Império ainda vê vocês só como um incômodo raro e pequeno. Esperem patrulhas mandadas a qualquer instalação imperial atacada, mas ainda deve dar tempo de entrar e sair antes que cheguem. Revistas de inventário passam a fazer parte dos novos protocolos, o que dificulta um pouco conseguir contrabando.</VFED_Whispers.description>
+  <!-- EN: rumors -->
+  <VFED_Rumors.label>boatos</VFED_Rumors.label>
+  <!-- EN: Rumors about the deserter activity are starting to circulate among the lower-ranking officers and soldiers of the Empire. While the Empire does not yet have concrete evidence of your involvement, they are beginning to take the rumors seriously and have increased their security measures. Expect to encounter increased security on imperial installations, as well as janissary reaction force as soon as the installation is alerted of your presence. Imperial patrols are now prominent and will inspect every caravan they come across. -->
+  <VFED_Rumors.description>Boatos sobre a atividade dos desertores começam a circular entre os oficiais e soldados de baixa patente do Império. O Império ainda não tem provas concretas do envolvimento de vocês, mas já leva os boatos a sério e reforçou a segurança. Esperem mais segurança nas instalações imperiais e uma força de reação de janissários assim que a instalação souber da sua presença. As patrulhas imperiais agora são frequentes e revistam todas as caravanas que encontram.</VFED_Rumors.description>
+  <!-- EN: Imperial patrol caravan event becomes active -->
+  <VFED_Rumors.specialEffects.0.label>O evento de caravana interceptada por patrulha imperial fica ativo</VFED_Rumors.specialEffects.0.label>
+  <!-- EN: All imperial armies on all quest locations where Empire would spawn are 20% bigger -->
+  <VFED_Rumors.specialEffects.1.label>Todos os exércitos imperiais em todos os locais de missão com presença do Império ficam 20% maiores</VFED_Rumors.specialEffects.1.label>
+  <!-- EN: news -->
+  <VFED_News.label>notícia</VFED_News.label>
+  <!-- EN: Your actions have become public knowledge and have hit the imperial news stations like a storm. The Empire now considers you a serious threat and has placed a high priority on tracking you down. Security measures across all installations have been greatly increased. Furthermore, the Empire will now send more raiding parties to any settlements suspected of harboring deserters. It will be harder to obtain contraband and support from the locals as the Empire's propaganda campaign is gaining strength. -->
+  <VFED_News.description>Suas ações viraram de conhecimento público e caíram como uma tempestade nas estações de notícias imperiais. O Império agora considera vocês uma ameaça séria e deu alta prioridade para encontrá-los. A segurança em todas as instalações aumentou muito. Além disso, o Império vai mandar mais grupos de ataque a qualquer assentamento suspeito de abrigar desertores. Vai ser mais difícil conseguir contrabando e apoio dos moradores, já que a campanha de propaganda do Império está ganhando força.</VFED_News.description>
+  <!-- EN: Raids from the Empire faction happen 2x as often -->
+  <VFED_News.specialEffects.0.label>Incursões da facção do Império acontecem 2x mais</VFED_News.specialEffects.0.label>
+  <!-- EN: All imperial armies on all quest locations where Empire would spawn are 50% bigger -->
+  <VFED_News.specialEffects.1.label>Todos os exércitos imperiais em todos os locais de missão com presença do Império ficam 50% maiores</VFED_News.specialEffects.1.label>
+  <!-- EN: Imperial Propaganda can now drop -->
+  <VFED_News.specialEffects.2.label>A propaganda imperial pode começar a cair</VFED_News.specialEffects.2.label>
+  <!-- EN: Chased Deserter quest no longer occurs -->
+  <VFED_News.specialEffects.3.label>A missão do desertor perseguido não acontece mais</VFED_News.specialEffects.3.label>
+  <!-- EN: public enemy -->
+  <VFED_PublicEnemy.label>inimigo público</VFED_PublicEnemy.label>
+  <!-- EN: You are now a household name, and the Empire considers you their number one enemy. They are using all of their resources to track you down and eliminate you and your followers. The Empire may also use scorched earth tactics, such as bombing or shelling entire areas suspected of supporting the deserters. They are willing to sacrifice their installations if it means eliminating the deserters, and will respond to any aggression with indiscriminate aerodrone bombardment. Most smuggling operations cease and contraband becomes incredibly hard to come across. The Imperial spy guilds will put out disinformation to turn other factions against you, making it hard to distinguish friend from foe. It's a full-blown war and the outcome will determine your fate and the fate of the Empire. Be prepared for a difficult fight, as survival is the only option now. -->
+  <VFED_PublicEnemy.description>Vocês agora são conhecidos por todos, e o Império os considera o inimigo número um. Estão usando todos os recursos para encontrá-los e eliminá-los junto com seus seguidores. O Império também pode usar táticas de terra arrasada, como bombardear áreas inteiras suspeitas de apoiar os desertores. Estão dispostos a sacrificar as próprias instalações se isso eliminar os desertores e vão responder a qualquer agressão com bombardeios indiscriminados de aerodrones. A maioria das operações de contrabando para e o contrabando fica incrivelmente difícil de achar. As guildas de espiões imperiais vão espalhar desinformação para jogar outras facções contra vocês, tornando difícil distinguir amigo de inimigo. É guerra total, e o resultado vai decidir o destino de vocês e do Império. Preparem-se para uma luta difícil, porque sobreviver agora é a única opção.</VFED_PublicEnemy.description>
+  <!-- EN: Raids from the Empire faction happen 3x as often -->
+  <VFED_PublicEnemy.specialEffects.0.label>Incursões da facção do Império acontecem 3x mais</VFED_PublicEnemy.specialEffects.0.label>
+  <!-- EN: All imperial armies on all quest locations where Empire would spawn are 100% bigger -->
+  <VFED_PublicEnemy.specialEffects.1.label>Todos os exércitos imperiais em todos os locais de missão com presença do Império ficam 100% maiores</VFED_PublicEnemy.specialEffects.1.label>
+  <!-- EN: Aerodrone bombardment event becomes available. -->
+  <VFED_PublicEnemy.specialEffects.2.label>O evento de bombardeio de aerodrones fica disponível.</VFED_PublicEnemy.specialEffects.2.label>
+  <!-- EN: Absolver Raid can now occur. -->
+  <VFED_PublicEnemy.specialEffects.3.label>Incursões de absolvedores podem acontecer.</VFED_PublicEnemy.specialEffects.3.label>
+  <!-- EN: Relations with a random faction drop by -10 once a day. -->
+  <VFED_PublicEnemy.specialEffects.4.label>A relação com uma facção aleatória cai -10 uma vez por dia.</VFED_PublicEnemy.specialEffects.4.label>
+  <!-- EN: divine inferno -->
+  <VFED_DivineInferno.label>inferno divino</VFED_DivineInferno.label>
+  <!-- EN: The Empire has initiated a Divine Inferno protocol on your location. May you find solace in the cleansing flames. You have 30 days before The Empire moves all required orbital slicer beam satellites into position. Unless you manage to bring the visibility back down to Hidden in time, your colony will be glassed by numerous pillars of fire. -->
+  <VFED_DivineInferno.description>O Império iniciou o protocolo Inferno Divino na sua localização. Que vocês encontrem consolo nas chamas purificadoras. Vocês têm 30 dias até o Império posicionar todos os satélites de raio fatiador orbital necessários. A menos que consigam baixar a visibilidade de volta a Oculto a tempo, a colônia será vitrificada por vários pilares de fogo.</VFED_DivineInferno.description>
+  <!-- EN: As soon as player reaches 100 Visibility, Divine Inferno countdown triggers. -->
+  <VFED_DivineInferno.specialEffects.0.label>Assim que o jogador chega a 100 de visibilidade, começa a contagem regressiva do Inferno Divino.</VFED_DivineInferno.specialEffects.0.label>
+</LanguageData>

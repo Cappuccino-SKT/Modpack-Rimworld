@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <!-- EN: Acceleration: sunday driver precept -->
+  <VVE_AccelerationSundayDriver>Aceleração: preceito motorista de domingo</VVE_AccelerationSundayDriver>
+  <!-- EN: Acceleration: high precept -->
+  <VVE_AccelerationHigh>Aceleração: preceito alta</VVE_AccelerationHigh>
+  <!-- EN: Max speed: increased precept -->
+  <VVE_MaxSpeed_Increased>Velocidade máxima: preceito aumentada</VVE_MaxSpeed_Increased>
+  <!-- EN: Handbrake deals damage -->
+  <VVE_HandbrakeDealsDamage>O freio de mão causa dano</VVE_HandbrakeDealsDamage>
+  <!-- EN: Acceleration rate: {0}\nCurrent speed: {1} c/s -->
+  <VVE_StatsReport_AccelerationRate>Taxa de aceleração: {0}\nVelocidade atual: {1} q/s</VVE_StatsReport_AccelerationRate>
+  <!-- EN: {VEHICLE_nameDef} will not have enough room to decelerate and will need to use the handbrake. This will cause damage to the tires. -->
+  <VVE_HandbrakeWarning>{VEHICLE_nameDef} não vai ter espaço para desacelerar e vai precisar puxar o freio de mão. Isso danifica os pneus.</VVE_HandbrakeWarning>
+  <!-- EN: Open -->
+  <VVE_Open>Abrir</VVE_Open>
+  <!-- EN: Close -->
+  <VVE_Close>Fechar</VVE_Close>
+  <!-- EN: Designate the garage door to be opened. -->
+  <VVE_OpenDescription>Marcar o portão de garagem para ser aberto.</VVE_OpenDescription>
+  <!-- EN: Designate the garage door to be closed. -->
+  <VVE_CloseDescription>Marcar o portão de garagem para ser fechado.</VVE_CloseDescription>
+  <!-- EN: Open the auto garage door. -->
+  <VVE_OpenDescription_AutoDoor>Abrir o portão de garagem automático.</VVE_OpenDescription_AutoDoor>
+  <!-- EN: Close the auto garage door. -->
+  <VVE_CloseDescription_AutoDoor>Fechar o portão de garagem automático.</VVE_CloseDescription_AutoDoor>
+  <!-- EN: Vehicle is blocking garage. -->
+  <VVE_VehicleObstructingClosingGarage>Tem um veículo bloqueando a garagem.</VVE_VehicleObstructingClosingGarage>
+  <!-- EN: Tier -->
+  <VVE_VehicleTier>Nível</VVE_VehicleTier>
+  <!-- EN: Tier 0 -->
+  <VVE_Tier0>Nível 0</VVE_Tier0>
+  <!-- EN: Tier 1 -->
+  <VVE_Tier1>Nível 1</VVE_Tier1>
+  <!-- EN: Tier 2 -->
+  <VVE_Tier2>Nível 2</VVE_Tier2>
+  <!-- EN: Tier 3 -->
+  <VVE_Tier3>Nível 3</VVE_Tier3>
+  <!-- EN: Tier 3 -->
+  <VVE_Tier4>Nível 4</VVE_Tier4>
+  <!-- EN: Tier 0 vehicles are the most basic and easiest to access. They don't require resources to be constructed, or research project to be researched, or neither. -->
+  <VVE_Tier0Desc>Os veículos de nível 0 são os mais básicos e fáceis de conseguir. Não precisam de recursos para serem construídos, nem de pesquisa, ou de nenhum dos dois.</VVE_Tier0Desc>
+  <!-- EN: Tier 1 vehicles require a basic research project and a low resource cost in order to be constructed. They are inefficient, not ideal, have a lot of drawbacks, but they are cheap and available early in the game. -->
+  <VVE_Tier1Desc>Os veículos de nível 1 precisam de uma pesquisa básica e de poucos recursos para serem construídos. São ineficientes, longe do ideal e cheios de defeitos, mas são baratos e ficam disponíveis cedo no jogo.</VVE_Tier1Desc>
+  <!-- EN: Tier 2 vehicles are locked behind more specialised research projects and require resources that are only available later in the game. Tier 2 is considered to be the 'baseline' of all vehicles. -->
+  <VVE_Tier2Desc>Os veículos de nível 2 dependem de pesquisas mais especializadas e de recursos que só aparecem mais tarde no jogo. O nível 2 é considerado o "padrão" de todos os veículos.</VVE_Tier2Desc>
+  <!-- EN: Tier 3 vehicles are only obtainable if a specific condition is met - for example, they are first found in their wrecked form and restored. They require late game resources and generally serve a very specific purpose. -->
+  <VVE_Tier3Desc>Os veículos de nível 3 só podem ser obtidos se uma condição específica for cumprida; por exemplo, primeiro são encontrados como destroços e restaurados. Exigem recursos do fim do jogo e costumam ter uma função bem específica.</VVE_Tier3Desc>
+  <!-- EN: Tier 4 vehicles are not able to be constructed by the player, but they can still be found, purchased or otherwise spawned. They generally represent technology beyond of what's achievable in the Rimworld setting. -->
+  <VVE_Tier4Desc>Os veículos de nível 4 não podem ser construídos pelo jogador, mas ainda podem ser encontrados, comprados ou surgir de outro jeito. Em geral representam tecnologia além do que é possível no cenário da Orla.</VVE_Tier4Desc>
+  <!-- EN: Restore wreck -->
+  <VVE_RestoreWreck>Restaurar destroços</VVE_RestoreWreck>
+  <!-- EN: Deliver necessary vehicle components to restore this wreck completely, turning it into a working vehicle. -->
+  <VVE_RestoreWreckDesc>Entregue os componentes de veículo necessários para restaurar estes destroços por completo, transformando-os num veículo funcional.</VVE_RestoreWreckDesc>
+  <!-- EN: {0} not yet found and restored -->
+  <VVE_WreckNotRestored>{0} ainda não foi encontrado e restaurado</VVE_WreckNotRestored>
+  <!-- EN: {0} cannot be researched until you find and restore a wreck of that vehicle. -->
+  <VVE_CannotBeResearched>{0} não pode ser pesquisado até vocês encontrarem e restaurarem os destroços desse veículo.</VVE_CannotBeResearched>
+  <!-- EN: Reload {0} with {AMMO_label} -->
+  <VVE_Reload>Recarregar {0} com {AMMO_label}</VVE_Reload>
+  <!-- EN: Can't reload {0} with {1} (not enough {1}) -->
+  <VVE_CannotReloadNotEnoughAmmo>Não dá para recarregar {0} com {1} (não há {1} suficiente)</VVE_CannotReloadNotEnoughAmmo>
+  <!-- EN: Can't reload {0} with {1} (full ammo) -->
+  <VVE_CannotReloadFullAmmo>Não dá para recarregar {0} com {1} (munição cheia)</VVE_CannotReloadFullAmmo>
+</LanguageData>

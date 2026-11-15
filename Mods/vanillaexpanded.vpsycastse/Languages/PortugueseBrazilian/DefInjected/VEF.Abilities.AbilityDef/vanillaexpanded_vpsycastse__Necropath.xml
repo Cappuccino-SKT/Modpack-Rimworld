@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <!-- EN: word of fear -->
+  <VPE_WordofFear.label>palavra de medo</VPE_WordofFear.label>
+  <!-- EN: Induces panic by overloading their flight response system for a duration scaling with their psychic sensitivity. Considered a hostile action. -->
+  <VPE_WordofFear.description>Induz pânico sobrecarregando o instinto de fuga do alvo, por um tempo que depende da sensibilidade psíquica dele. É considerado uma ação hostil.</VPE_WordofFear.description>
+  <!-- EN: Using ability: {0} -->
+  <VPE_WordofFear.jobReportString>Usando habilidade: {0}</VPE_WordofFear.jobReportString>
+  <!-- EN: word of fear -->
+  <VPE_WordofFear.verbProperties.label>palavra de medo</VPE_WordofFear.verbProperties.label>
+  <!-- EN: liferot -->
+  <VPE_Liferot.label>podridão vital</VPE_Liferot.label>
+  <!-- EN: Psychically induces randomized mass necrosis in a target, exposing the afflicted body parts to infection and inducing vomiting. Duration scales with the target’s psychic sensitivity and is an overtly hostile action. -->
+  <VPE_Liferot.description>Induz psiquicamente uma necrose em massa aleatória num alvo, expondo as partes do corpo afetadas a infecções e provocando vômito. A duração depende da sensibilidade psíquica do alvo, e é uma ação abertamente hostil.</VPE_Liferot.description>
+  <!-- EN: Using ability: {0} -->
+  <VPE_Liferot.jobReportString>Usando habilidade: {0}</VPE_Liferot.jobReportString>
+  <!-- EN: liferot -->
+  <VPE_Liferot.verbProperties.label>podridão vital</VPE_Liferot.verbProperties.label>
+  <!-- EN: steal vitality -->
+  <VPE_StealVitality.label>roubar vitalidade</VPE_StealVitality.label>
+  <!-- EN: Siphons vitality from a nearby source, transferring the target’s natural healing factor, movement speed, and consciousness to the caster for a full day. Considered an overtly hostile action. -->
+  <VPE_StealVitality.description>Suga a vitalidade de uma fonte próxima, transferindo o fator de cura natural, a velocidade de movimento e a consciência do alvo para o conjurador por um dia inteiro. É considerado uma ação abertamente hostil.</VPE_StealVitality.description>
+  <!-- EN: Using ability: {0} -->
+  <VPE_StealVitality.jobReportString>Usando habilidade: {0}</VPE_StealVitality.jobReportString>
+  <!-- EN: steal vitality -->
+  <VPE_StealVitality.verbProperties.label>roubar vitalidade</VPE_StealVitality.verbProperties.label>
+  <!-- EN: paralysis pulse -->
+  <VPE_ParalysisPulse.label>pulso de paralisia</VPE_ParalysisPulse.label>
+  <!-- EN: Emits a cloud of black particles from the caster, which afflicts all, caster included, within the area with paralytic abasia for a full day. The radius scales with the caster’s psychic sensitivity. -->
+  <VPE_ParalysisPulse.description>Emite do conjurador uma nuvem de partículas pretas que causa abasia paralítica por um dia inteiro em todos dentro da área, o conjurador incluído. O raio depende da sensibilidade psíquica do conjurador.</VPE_ParalysisPulse.description>
+  <!-- EN: Using ability: {0} -->
+  <VPE_ParalysisPulse.jobReportString>Usando habilidade: {0}</VPE_ParalysisPulse.jobReportString>
+  <!-- EN: paralysis pulse -->
+  <VPE_ParalysisPulse.verbProperties.label>pulso de paralisia</VPE_ParalysisPulse.verbProperties.label>
+  <!-- EN: corpsetalk -->
+  <VPE_Corpsetalk.label>conversa com cadáver</VPE_Corpsetalk.label>
+  <!-- EN: Target a corpse and temporarily appropriate the victim’s skills to make up for the caster’s deficiencies. Effect lasts for a season before returning to normal. -->
+  <VPE_Corpsetalk.description>Mira num cadáver e toma emprestadas, temporariamente, as habilidades da vítima para cobrir as deficiências do conjurador. O efeito dura uma estação antes de voltar ao normal.</VPE_Corpsetalk.description>
+  <!-- EN: Using ability: {0} -->
+  <VPE_Corpsetalk.jobReportString>Usando habilidade: {0}</VPE_Corpsetalk.jobReportString>
+  <!-- EN: corpsetalk -->
+  <VPE_Corpsetalk.verbProperties.label>conversa com cadáver</VPE_Corpsetalk.verbProperties.label>
+  <!-- EN: ghostwalk -->
+  <VPE_Ghostwalk.label>passo fantasma</VPE_Ghostwalk.label>
+  <!-- EN: Coats the caster in a layer of temporary psychic atrophy, allowing them to walk through structures unimpeded and without damaging anything. Duration scales with the caster’s psychic sensitivity. -->
+  <VPE_Ghostwalk.description>Cobre o conjurador com uma camada de atrofia psíquica temporária, permitindo que ele atravesse estruturas livremente e sem danificar nada. A duração depende da sensibilidade psíquica do conjurador.</VPE_Ghostwalk.description>
+  <!-- EN: Using ability: {0} -->
+  <VPE_Ghostwalk.jobReportString>Usando habilidade: {0}</VPE_Ghostwalk.jobReportString>
+  <!-- EN: ghostwalk -->
+  <VPE_Ghostwalk.verbProperties.label>passo fantasma</VPE_Ghostwalk.verbProperties.label>
+  <!-- EN: consume bodies -->
+  <VPE_ConsumeBodies.label>consumir corpos</VPE_ConsumeBodies.label>
+  <!-- EN: Psychically strips all remaining life force from nearby humanoid corpses and stores the essence as a permanent stacking buffer to neural heat. -->
+  <VPE_ConsumeBodies.description>Arranca psiquicamente toda a força vital que resta nos cadáveres humanoides próximos e guarda a essência como um reforço permanente e acumulativo do limite de calor neural.</VPE_ConsumeBodies.description>
+  <!-- EN: Using ability: {0} -->
+  <VPE_ConsumeBodies.jobReportString>Usando habilidade: {0}</VPE_ConsumeBodies.jobReportString>
+  <!-- EN: consume bodies -->
+  <VPE_ConsumeBodies.verbProperties.label>consumir corpos</VPE_ConsumeBodies.verbProperties.label>
+  <!-- EN: deathshield -->
+  <VPE_Deathshield.label>escudo da morte</VPE_Deathshield.label>
+  <!-- EN: Locks the touched target’s life force in place for a day, preventing them from dying. After this period, they can die from accumulated wounds, blood loss, or missing limbs or organs. -->
+  <VPE_Deathshield.description>Trava no lugar a força vital do alvo tocado por um dia, impedindo que ele morra. Depois desse período, ele pode morrer pelos ferimentos acumulados, perda de sangue ou membros e órgãos faltando.</VPE_Deathshield.description>
+  <!-- EN: Using ability: {0} -->
+  <VPE_Deathshield.jobReportString>Usando habilidade: {0}</VPE_Deathshield.jobReportString>
+  <!-- EN: deathshield -->
+  <VPE_Deathshield.verbProperties.label>escudo da morte</VPE_Deathshield.verbProperties.label>
+  <!-- EN: enthrall -->
+  <VPE_Enthrall.label>escravizar</VPE_Enthrall.label>
+  <!-- EN: Psychically strips the deceased target’s life force and infuses it directly into their bones, animating them for a full day. The only remaining instinct is to inflict pain on the caster’s enemies. -->
+  <VPE_Enthrall.description>Arranca psiquicamente a força vital do alvo falecido e a infunde direto nos ossos dele, animando-os por um dia inteiro. O único instinto que sobra é causar dor aos inimigos do conjurador.</VPE_Enthrall.description>
+  <!-- EN: Using ability: {0} -->
+  <VPE_Enthrall.jobReportString>Usando habilidade: {0}</VPE_Enthrall.jobReportString>
+  <!-- EN: enthrall -->
+  <VPE_Enthrall.verbProperties.label>escravizar</VPE_Enthrall.verbProperties.label>
+  <!-- EN: resurrect -->
+  <VPE_Resurrect.label>ressuscitar</VPE_Resurrect.label>
+  <!-- EN: By sacrificing a natural finger, the caster is able to imitate the effects of resurrector mech serum on any non-dessicated corpse, the psychic energy repairing broken-down tissues and kickstarting the body back to life. The target will be incapacitated and their allegiances will remain the same. The less preserved the body is, the more likely the target is to suffer from negative side effects. The long, intense concentration ends with the caster falling into a coma. -->
+  <VPE_Resurrect.description>Sacrificando um dedo natural, o conjurador consegue imitar os efeitos do soro mecanizado ressuscitador em qualquer cadáver não ressecado; a energia psíquica conserta os tecidos decompostos e dá a partida no corpo de volta à vida. O alvo fica incapacitado, e as lealdades dele continuam as mesmas. Quanto pior conservado o corpo, maior a chance de efeitos colaterais negativos. A concentração longa e intensa termina com o conjurador em coma.</VPE_Resurrect.description>
+  <!-- EN: Using ability: {0} -->
+  <VPE_Resurrect.jobReportString>Usando habilidade: {0}</VPE_Resurrect.jobReportString>
+  <!-- EN: resurrect -->
+  <VPE_Resurrect.verbProperties.label>ressuscitar</VPE_Resurrect.verbProperties.label>
+</LanguageData>

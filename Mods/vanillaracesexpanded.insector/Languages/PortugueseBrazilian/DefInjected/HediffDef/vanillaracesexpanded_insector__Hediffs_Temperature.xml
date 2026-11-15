@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <!-- EN: heatshock -->
+  <VRE_HeatshockHediff.label>choque térmico</VRE_HeatshockHediff.label>
+  <!-- EN: A generalized disruption to body functioning caused by excessive exposure to heat and sun. The victim can produce heat shock proteins in response to high temperatures, which will prevent them from dying but will make them require more nutrition. Recovery is quick once in a cool area. -->
+  <VRE_HeatshockHediff.description>Uma perturbação geral das funções do corpo causada por exposição excessiva ao calor e ao sol. A vítima consegue produzir proteínas de choque térmico em resposta às altas temperaturas, o que impede a morte, mas aumenta a necessidade de nutrição. A recuperação é rápida num lugar fresco.</VRE_HeatshockHediff.description>
+  <!-- EN: initial -->
+  <VRE_HeatshockHediff.stages.initial-0.label>inicial</VRE_HeatshockHediff.stages.initial-0.label>
+  <!-- EN: initial -->
+  <VRE_HeatshockHediff.stages.initial-1.label>inicial</VRE_HeatshockHediff.stages.initial-1.label>
+  <!-- EN: minor -->
+  <VRE_HeatshockHediff.stages.minor.label>leve</VRE_HeatshockHediff.stages.minor.label>
+  <!-- EN: serious -->
+  <VRE_HeatshockHediff.stages.serious.label>sério</VRE_HeatshockHediff.stages.serious.label>
+  <!-- EN: extreme -->
+  <VRE_HeatshockHediff.stages.extreme.label>extremo</VRE_HeatshockHediff.stages.extreme.label>
+  <!-- EN: hypothermic hibernation -->
+  <VRE_HypothermicHibernationHediff.label>hibernação hipotérmica</VRE_HypothermicHibernationHediff.label>
+  <!-- EN: This person will enter a hibernation if their temperatures drop below a certain point for too long. They will rapidly lose their body functions and fall into a deep sleep, which prevents any sort of frostbite damages but also makes them unable to do anything. -->
+  <VRE_HypothermicHibernationHediff.description>Esta pessoa hiberna se a temperatura cair abaixo de certo ponto por muito tempo. Perde rapidamente as funções do corpo e cai num sono profundo, o que impede qualquer dano por congelamento, mas também a deixa incapaz de fazer qualquer coisa.</VRE_HypothermicHibernationHediff.description>
+  <!-- EN: shivering -->
+  <VRE_HypothermicHibernationHediff.stages.shivering.label>tremendo</VRE_HypothermicHibernationHediff.stages.shivering.label>
+  <!-- EN: initial -->
+  <VRE_HypothermicHibernationHediff.stages.initial.label>inicial</VRE_HypothermicHibernationHediff.stages.initial.label>
+  <!-- EN: drowsy -->
+  <VRE_HypothermicHibernationHediff.stages.drowsy.label>sonolento</VRE_HypothermicHibernationHediff.stages.drowsy.label>
+  <!-- EN: sleep -->
+  <VRE_HypothermicHibernationHediff.stages.sleep.label>adormecido</VRE_HypothermicHibernationHediff.stages.sleep.label>
+  <!-- EN: deep sleep -->
+  <VRE_HypothermicHibernationHediff.stages.deep_sleep.label>sono profundo</VRE_HypothermicHibernationHediff.stages.deep_sleep.label>
+  <!-- EN: heatstress -->
+  <VRE_HeatstressHediff.label>estresse térmico</VRE_HeatstressHediff.label>
+  <!-- EN: A generalized disruption to body functioning caused by excessive exposure to heat and sun. Celular damage and denaturation of proteins will cause burn damage and will very quickly cause loss of consciousness. -->
+  <VRE_HeatstressHediff.description>Uma perturbação geral das funções do corpo causada por exposição excessiva ao calor e ao sol. O dano celular e a desnaturação de proteínas causam queimaduras e, muito rápido, a perda da consciência.</VRE_HeatstressHediff.description>
+  <!-- EN: initial -->
+  <VRE_HeatstressHediff.stages.initial-0.label>inicial</VRE_HeatstressHediff.stages.initial-0.label>
+  <!-- EN: initial -->
+  <VRE_HeatstressHediff.stages.initial-1.label>inicial</VRE_HeatstressHediff.stages.initial-1.label>
+  <!-- EN: minor -->
+  <VRE_HeatstressHediff.stages.minor.label>leve</VRE_HeatstressHediff.stages.minor.label>
+  <!-- EN: serious -->
+  <VRE_HeatstressHediff.stages.serious.label>sério</VRE_HeatstressHediff.stages.serious.label>
+  <!-- EN: extreme -->
+  <VRE_HeatstressHediff.stages.extreme.label>extremo</VRE_HeatstressHediff.stages.extreme.label>
+</LanguageData>

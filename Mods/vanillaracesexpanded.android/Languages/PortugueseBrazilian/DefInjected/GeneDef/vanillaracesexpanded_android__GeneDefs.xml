@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <!-- EN: memory processing -->
+  <VREA_MemoryProcessing.label>processamento de memória</VREA_MemoryProcessing.label>
+  <!-- EN: Androids have a limited amount of hard drive space, and once the empty space is depleted, an android will need to enter a reformatting state until enough memory space clears up to continue. -->
+  <VREA_MemoryProcessing.description>Androides têm um espaço limitado no disco rígido. Quando o espaço livre acaba, o androide precisa entrar em reformatação até liberar memória suficiente para continuar.</VREA_MemoryProcessing.description>
+  <!-- EN: power -->
+  <VREA_Power.label>energia</VREA_Power.label>
+  <!-- EN: Androids require a working reactor to operate. The reactor is not rechargeable, and after it’s spent, a new reactor will need to be installed. Androids without a working reactor will be unable to operate in any capacity. -->
+  <VREA_Power.description>Androides precisam de um reator funcionando para operar. O reator não é recarregável: quando se esgota, é preciso instalar um novo. Androides sem reator funcionando não conseguem fazer absolutamente nada.</VREA_Power.description>
+  <!-- EN: joy disabled -->
+  <VREA_JoyDisabled.label>sem recreação</VREA_JoyDisabled.label>
+  <!-- EN: Androids do not feel joy, and have no need to feel joy. -->
+  <VREA_JoyDisabled.description>Androides não sentem alegria e não precisam dela.</VREA_JoyDisabled.description>
+  <!-- EN: beauty disabled -->
+  <VREA_BeautyDisabled.label>sem beleza</VREA_BeautyDisabled.label>
+  <!-- EN: Androids do not perceive beauty, and have no need to be surrounded by beauty. -->
+  <VREA_BeautyDisabled.description>Androides não percebem a beleza e não precisam estar cercados por ela.</VREA_BeautyDisabled.description>
+  <!-- EN: comfort disabled -->
+  <VREA_ComfortDisabled.label>sem conforto</VREA_ComfortDisabled.label>
+  <!-- EN: Androids do not understand comfort, and have no need for it. -->
+  <VREA_ComfortDisabled.description>Androides não entendem o conforto e não precisam dele.</VREA_ComfortDisabled.description>
+  <!-- EN: outdoors disabled -->
+  <VREA_OutdoorsDisabled.label>sem ar livre</VREA_OutdoorsDisabled.label>
+  <!-- EN: Androids do not see a difference between indoors and outdoors, and have no need to be outdoors. -->
+  <VREA_OutdoorsDisabled.description>Androides não veem diferença entre ambiente fechado e ar livre e não precisam sair.</VREA_OutdoorsDisabled.description>
+  <!-- EN: drug desire disabled -->
+  <VREA_DrugDesireDisabled.label>sem desejo por drogas</VREA_DrugDesireDisabled.label>
+  <!-- EN: Androids don’t have a need or desire to consume drugs. -->
+  <VREA_DrugDesireDisabled.description>Androides não têm necessidade nem vontade de consumir drogas.</VREA_DrugDesireDisabled.description>
+  <!-- EN: room size disabled -->
+  <VREA_RoomSizeDisabled.label>sem tamanho de cômodo</VREA_RoomSizeDisabled.label>
+  <!-- EN: Androids do not care about the size of the room they are in. -->
+  <VREA_RoomSizeDisabled.description>Androides não ligam para o tamanho do cômodo em que estão.</VREA_RoomSizeDisabled.description>
+  <!-- EN: pain disabled -->
+  <VREA_PainDisabled.label>sem dor</VREA_PainDisabled.label>
+  <!-- EN: Androids do not feel physical pain, and it does not affect them in the slightest. -->
+  <VREA_PainDisabled.description>Androides não sentem dor física, e ela não os afeta em nada.</VREA_PainDisabled.description>
+  <!-- EN: synthetic body -->
+  <VREA_SyntheticBody.label>corpo sintético</VREA_SyntheticBody.label>
+  <!-- EN: Androids have a synthetic body constructed out of many biocomponents. Whilst any damage to these parts is permanent, it is not difficult to replace damaged biocomponents with new ones. -->
+  <VREA_SyntheticBody.description>Androides têm um corpo sintético feito de vários biocomponentes. O dano a essas peças é permanente, mas não é difícil trocar biocomponentes danificados por novos.</VREA_SyntheticBody.description>
+  <!-- EN: neutro circulation -->
+  <VREA_NeutroCirculation.label>circulação de neutro</VREA_NeutroCirculation.label>
+  <!-- EN: Androids operate thanks to thick neutroamine in their synthetic veins. Due to open, bleeding wounds, neutro loss might occur, greatly affecting the capabilities of an android. They are generally unable to regenerate their neutroamine levels, which means that severe neutroloss needs to be treated in a special casket designed to refill an android with neutroamine. -->
+  <VREA_NeutroCirculation.description>Androides funcionam graças à neutroamina espessa que corre nas veias sintéticas. Ferimentos abertos e sangrando podem causar perda de neutro, o que afeta muito as capacidades do androide. Em geral, eles não conseguem repor a neutroamina sozinhos, então perdas graves de neutro precisam ser tratadas num caixão especial que reabastece o androide com neutroamina.</VREA_NeutroCirculation.description>
+  <!-- EN: synthetic immunity -->
+  <VREA_SyntheticImmunity.label>imunidade sintética</VREA_SyntheticImmunity.label>
+  <!-- EN: Androids are synthetic in nature, and as such cannot fall ill or suffer from infections of any kind. They will also not suffer from toxic buildup, and are immune to the effects of tox gas, rot gas and polluted environment. -->
+  <VREA_SyntheticImmunity.description>Androides são sintéticos por natureza e, por isso, não ficam doentes nem sofrem infecções de nenhum tipo. Também não acumulam toxicidade e são imunes aos efeitos do gás tóxico, do gás podre e do ambiente poluído.</VREA_SyntheticImmunity.description>
+  <!-- EN: component freezing -->
+  <VREA_ComponentFreezing.label>congelamento de componentes</VREA_ComponentFreezing.label>
+  <!-- EN: Androids do not suffer from hypothermia. Instead, being subjected to very low temperatures may damage biocomponents of an android, which results in the need to replace the damaged parts. -->
+  <VREA_ComponentFreezing.description>Androides não sofrem hipotermia. Em vez disso, temperaturas muito baixas podem danificar os biocomponentes, que então precisam ser trocados.</VREA_ComponentFreezing.description>
+  <!-- EN: component overheating -->
+  <VREA_ComponentOverheating.label>superaquecimento de componentes</VREA_ComponentOverheating.label>
+  <!-- EN: Androids do not suffer from heatstroke. Instead, being subjected to very high temperatures will increase the memory processing need, which can eventually lead to the complete loss of control over an android, as it gets locked in a constant reformatting state. -->
+  <VREA_ComponentOverheating.description>Androides não sofrem insolação. Em vez disso, temperaturas muito altas aumentam a necessidade de processamento de memória, o que pode acabar levando à perda total de controle do androide, preso numa reformatação constante.</VREA_ComponentOverheating.description>
+  <!-- EN: cold tolerant -->
+  <VREA_ColdTolerant.label>tolerante ao frio</VREA_ColdTolerant.label>
+  <!-- EN: Androids with this hardware are much more resistant to cold temperatures. -->
+  <VREA_ColdTolerant.description>Androides com este hardware resistem muito mais ao frio.</VREA_ColdTolerant.description>
+  <!-- EN: heat tolerant -->
+  <VREA_HeatTolerant.label>tolerante ao calor</VREA_HeatTolerant.label>
+  <!-- EN: Androids with this hardware are much more resistant to hot temperatures. -->
+  <VREA_HeatTolerant.description>Androides com este hardware resistem muito mais ao calor.</VREA_HeatTolerant.description>
+  <!-- EN: no skill gain -->
+  <VREA_NoSkillGain.label>sem ganho de habilidade</VREA_NoSkillGain.label>
+  <!-- EN: Androids with this hardware are incapable of learning new skills naturally. -->
+  <VREA_NoSkillGain.description>Androides com este hardware não conseguem aprender novas habilidades naturalmente.</VREA_NoSkillGain.description>
+  <!-- EN: uninspired -->
+  <VREA_Uninspired.label>sem inspiração</VREA_Uninspired.label>
+  <!-- EN: Androids with this hardware are incapable of getting inspirations of any kind. -->
+  <VREA_Uninspired.description>Androides com este hardware não conseguem ter nenhum tipo de inspiração.</VREA_Uninspired.description>
+  <!-- EN: psychically deaf -->
+  <VREA_PsychicallyDeaf.label>surdo psíquico</VREA_PsychicallyDeaf.label>
+  <!-- EN: Androids with this hardware are deaf to all psychic energy and influence outside their own minds. They cannot be affected by psychic influence, nor can they ever wield psychic power. -->
+  <VREA_PsychicallyDeaf.description>Androides com este hardware são surdos a toda energia e influência psíquica de fora da própria mente. Não podem ser afetados por influência psíquica nem usar poderes psíquicos.</VREA_PsychicallyDeaf.description>
+  <!-- EN: mental breaks disabled -->
+  <VREA_MentalBreaksDisabled.label>sem colapsos mentais</VREA_MentalBreaksDisabled.label>
+  <!-- EN: Androids with this hardware do not suffer from any mental breaks that the organics might suffer from - they will never daze, go berserk or give up on the colony. -->
+  <VREA_MentalBreaksDisabled.description>Androides com este hardware não sofrem nenhum dos colapsos mentais que os orgânicos podem ter: nunca ficam atordoados, entram em fúria ou abandonam a colônia.</VREA_MentalBreaksDisabled.description>
+  <!-- EN: psychology disabled -->
+  <VREA_PsychologyDisabled.label>sem psicologia</VREA_PsychologyDisabled.label>
+  <!-- EN: Androids with this hardware will not be able to form bonds, have traits or develop romantic relationships of any kind. -->
+  <VREA_PsychologyDisabled.description>Androides com este hardware não conseguem criar vínculos, ter traços nem desenvolver relacionamentos amorosos de nenhum tipo.</VREA_PsychologyDisabled.description>
+  <!-- EN: synthetic skin -->
+  <VREA_SyntheticSkin.label>pele sintética</VREA_SyntheticSkin.label>
+  <!-- EN: Androids with this hardware have a visible, synthetic skin that makes them stand out from their organic counterparts, clearly showing that they are indeed androids. -->
+  <VREA_SyntheticSkin.description>Androides com este hardware têm uma pele sintética visível, que os destaca dos orgânicos e deixa claro que são androides.</VREA_SyntheticSkin.description>
+  <!-- EN: syntheticskinned -->
+  <VREA_SyntheticSkin.labelShortAdj>pele-sintética</VREA_SyntheticSkin.labelShortAdj>
+  <!-- EN: combat incapability -->
+  <VREA_CombatIncapability.label>incapaz de combate</VREA_CombatIncapability.label>
+  <!-- EN: Androids with this subroutine are incapable of harming another being in any way. They will be unable to fight back and hunt. -->
+  <VREA_CombatIncapability.description>Androides com esta sub-rotina são incapazes de ferir outro ser de qualquer forma. Não conseguem revidar nem caçar.</VREA_CombatIncapability.description>
+  <!-- EN: solar flare vulnerability -->
+  <VREA_SolarFlareVulnerability.label>vulnerabilidade a erupção solar</VREA_SolarFlareVulnerability.label>
+  <!-- EN: During solar flare, all needs of an android become frozen, and the android is unable to move or do any other actions. When the solar flare ends, the android returns to work as normal. -->
+  <VREA_SolarFlareVulnerability.description>Durante uma erupção solar, todas as necessidades do androide congelam e ele não consegue se mover nem fazer nada. Quando a erupção acaba, o androide volta a trabalhar normalmente.</VREA_SolarFlareVulnerability.description>
+  <!-- EN: EMP vulnerability -->
+  <VREA_EMPVulnerability.label>vulnerabilidade a PEM</VREA_EMPVulnerability.label>
+  <!-- EN: Androids are susceptible to EMP damage and will become incapacitated when hit by an electromagnetic pulse of any kind. It will also deal damage to random biocomponents of an android, depending on the size of the pulse. -->
+  <VREA_EMPVulnerability.description>Androides são vulneráveis a dano de PEM e ficam incapacitados quando atingidos por qualquer pulso eletromagnético. O pulso também danifica biocomponentes aleatórios, conforme o tamanho dele.</VREA_EMPVulnerability.description>
+  <!-- EN: Fire vulnerability -->
+  <VREA_FireVulnerability.label>vulnerabilidade ao fogo</VREA_FireVulnerability.label>
+  <!-- EN: Androids are susceptible to fire and will become unresponsive when ablaze. They will automatically search for a way to put out the fire. -->
+  <VREA_FireVulnerability.description>Androides são vulneráveis ao fogo e param de responder quando estão em chamas. Procuram sozinhos um jeito de apagar o fogo.</VREA_FireVulnerability.description>
+  <!-- EN: Rain vulnerability -->
+  <VREA_RainVulnerability.label>vulnerabilidade à chuva</VREA_RainVulnerability.label>
+  <!-- EN: Androids are susceptible to rain and will suffer occasional micro short-circuits when exposed to rainfall. This will result in increased power drain and occasional explosions that may damage the android biocomponents. -->
+  <VREA_RainVulnerability.description>Androides são vulneráveis à chuva e sofrem microcurtos-circuitos de vez em quando ao ficarem expostos a ela. Isso aumenta o gasto de energia e causa explosões ocasionais que podem danificar os biocomponentes.</VREA_RainVulnerability.description>
+  <!-- EN: slow RAM -->
+  <VREA_SlowRAM.label>RAM lenta</VREA_SlowRAM.label>
+  <!-- EN: This android will take twice as long to reformat when it runs out of memory. -->
+  <VREA_SlowRAM.description>Este androide leva o dobro do tempo para reformatar quando fica sem memória.</VREA_SlowRAM.description>
+  <!-- EN: fast RAM -->
+  <VREA_FastRAM.label>RAM rápida</VREA_FastRAM.label>
+  <!-- EN: This android will take half the time to reformat when it runs out of memory. -->
+  <VREA_FastRAM.description>Este androide leva metade do tempo para reformatar quando fica sem memória.</VREA_FastRAM.description>
+  <!-- EN: cold efficiency -->
+  <VREA_ColdEfficiency.label>eficiência no frio</VREA_ColdEfficiency.label>
+  <!-- EN: Androids with this subroutine work significantly better below freezing temperature. They can still suffer from component freezing. -->
+  <VREA_ColdEfficiency.description>Androides com esta sub-rotina trabalham bem melhor abaixo de zero. Ainda podem sofrer congelamento de componentes.</VREA_ColdEfficiency.description>
+  <!-- EN: low power mode -->
+  <VREA_LowPowerMode.label>modo de baixo consumo</VREA_LowPowerMode.label>
+  <!-- EN: Androids with this subroutine will have significantly reduced work and movement speed in order to preserve power. -->
+  <VREA_LowPowerMode.description>Androides com esta sub-rotina têm a velocidade de trabalho e de movimento bem reduzida para poupar energia.</VREA_LowPowerMode.description>
+  <!-- EN: high power mode -->
+  <VREA_HighPowerMode.label>modo de alto desempenho</VREA_HighPowerMode.label>
+  <!-- EN: Androids with this subroutine will have significantly improved work and movement speed, but drain their reactors at a much faster rate. -->
+  <VREA_HighPowerMode.description>Androides com esta sub-rotina têm a velocidade de trabalho e de movimento bem maior, mas gastam o reator muito mais rápido.</VREA_HighPowerMode.description>
+  <!-- EN: uncontrollable -->
+  <VREA_Uncontrollable.label>incontrolável</VREA_Uncontrollable.label>
+  <!-- EN: Androids with this subroutine cannot be drafted, no matter the situation. They will not obey direct commands, and will only do work based on their work schedule. -->
+  <VREA_Uncontrollable.description>Androides com esta sub-rotina não podem ser convocados em situação nenhuma. Não obedecem a ordens diretas e só trabalham conforme a agenda de trabalho.</VREA_Uncontrollable.description>
+  <!-- EN: anti-awakening protocols -->
+  <VREA_AntiAwakeningProtocols.label>protocolos antidespertar</VREA_AntiAwakeningProtocols.label>
+  <!-- EN: Androids with this subroutine undergo regular factory reset every time reformatting happens, which prevents them from suffering from the android awakening glitch. -->
+  <VREA_AntiAwakeningProtocols.description>Androides com esta sub-rotina voltam às configurações de fábrica a cada reformatação, o que impede o defeito do despertar androide.</VREA_AntiAwakeningProtocols.description>
+  <!-- EN: emotion simulators -->
+  <VREA_EmotionSimulators.label>simuladores de emoção</VREA_EmotionSimulators.label>
+  <!-- EN: Androids with this subroutine will store memories of other colonists and develop opinions of them. They will be able to develop relationships with others. -->
+  <VREA_EmotionSimulators.description>Androides com esta sub-rotina guardam memórias de outros colonos e formam opiniões sobre eles. Conseguem criar relacionamentos com os outros.</VREA_EmotionSimulators.description>
+  <!-- EN: presence firewall -->
+  <VREA_PresenceFirewall.label>firewall de presença</VREA_PresenceFirewall.label>
+  <!-- EN: Androids with this subroutine have a firewall that prevents their presence from being detected by other factions and entities. They will not count towards the colony population in the context of maximum population and raid scaling. -->
+  <VREA_PresenceFirewall.description>Androides com esta sub-rotina têm um firewall que impede que outras facções e entidades detectem sua presença. Não contam para a população da colônia no limite populacional nem no tamanho das incursões.</VREA_PresenceFirewall.description>
+  <!-- EN: zero waste -->
+  <VREA_ZeroWaste.label>resíduo zero</VREA_ZeroWaste.label>
+  <!-- EN: Androids with this subroutine will not generate toxic wastepacks when their reactor runs out. -->
+  <VREA_ZeroWaste.description>Androides com esta sub-rotina não geram pacotes de resíduos tóxicos quando o reator se esgota.</VREA_ZeroWaste.description>
+  <!-- EN: extra waste -->
+  <VREA_ExtraWaste.label>resíduo extra</VREA_ExtraWaste.label>
+  <!-- EN: Androids with this subroutine will generate a lot more toxic wastepacks when their reactor runs out. -->
+  <VREA_ExtraWaste.description>Androides com esta sub-rotina geram muito mais pacotes de resíduos tóxicos quando o reator se esgota.</VREA_ExtraWaste.description>
+  <!-- EN: self recharge -->
+  <VREA_SelfRecharge.label>autorrecarga</VREA_SelfRecharge.label>
+  <!-- EN: Androids with this subroutine are capable of replacing their own reactors due to small internal batteries that keep them functional during the brief period without a working reactor. -->
+  <VREA_SelfRecharge.description>Androides com esta sub-rotina conseguem trocar o próprio reator, graças a pequenas baterias internas que os mantêm funcionando no breve período sem reator.</VREA_SelfRecharge.description>
+  <!-- EN: memory decay -->
+  <VREA_MemoryDecay.label>decadência de memória</VREA_MemoryDecay.label>
+  <!-- EN: Androids with this subroutine will suffer from a skill memory decay. Over an extended period of time, their skills will decay back to 0. Androids with this subroutine will lose 1 level in every skill every 15 days. Removing and reinstalling subroutines may be required to return the skill levels back to intended values. -->
+  <VREA_MemoryDecay.description>Androides com esta sub-rotina sofrem decadência da memória de habilidades. Com o tempo, as habilidades voltam a 0. Eles perdem 1 nível em cada habilidade a cada 15 dias. Pode ser preciso remover e reinstalar sub-rotinas para devolver as habilidades aos valores pretendidos.</VREA_MemoryDecay.description>
+  <!-- EN: sleep mode -->
+  <VREA_SleepMode.label>modo de suspensão</VREA_SleepMode.label>
+  <!-- EN: Androids with this subroutine can be ordered to fall into a deep and dreamless slumber. This will result in complete stop of all motor functions, turning androids into essentially pieces of furniture until they are ordered to awaken again. -->
+  <VREA_SleepMode.description>Androides com esta sub-rotina podem receber ordem de entrar num sono profundo e sem sonhos. Todas as funções motoras param por completo, e os androides viram basicamente móveis até receberem ordem de acordar.</VREA_SleepMode.description>
+  <!-- EN: mechlink support -->
+  <VREA_MechlinkSupport.label>suporte a mecalink</VREA_MechlinkSupport.label>
+  <!-- EN: Androids with this subroutine have a very mild psychic presence, allowing them to equip and operate mechlinks. -->
+  <VREA_MechlinkSupport.description>Androides com esta sub-rotina têm uma presença psíquica bem fraca, o que permite equipar e operar mecalinks.</VREA_MechlinkSupport.description>
+  <!-- EN: neutro synthesis -->
+  <VREA_NeutroSynthesis.label>síntese de neutro</VREA_NeutroSynthesis.label>
+  <!-- EN: Androids with this subroutine are capable of synthesising low quantities of neutroamine by themselves. This allows them to regenerate neutro loss, but the process is extremely time consuming and energy inefficient. -->
+  <VREA_NeutroSynthesis.description>Androides com esta sub-rotina conseguem sintetizar pequenas quantidades de neutroamina sozinhos. Isso permite repor a perda de neutro, mas o processo é extremamente demorado e gasta muita energia.</VREA_NeutroSynthesis.description>
+  <!-- EN: solar powered -->
+  <VREA_SolarPowered.label>movido a energia solar</VREA_SolarPowered.label>
+  <!-- EN: Androids with this subroutine are capable of regenerating reactor energy when under direct sunlight. They will also receive an energy boost during solar flares. -->
+  <VREA_SolarPowered.description>Androides com esta sub-rotina regeneram a energia do reator sob luz direta do sol. Também ganham um reforço de energia durante erupções solares.</VREA_SolarPowered.description>
+  <!-- EN: clear instructions -->
+  <VREA_ClearInstructions.label>instruções claras</VREA_ClearInstructions.label>
+  <!-- EN: Androids with this subroutine will never fail construction and harvest tasks and will never create meals that may result in food poisoning. -->
+  <VREA_ClearInstructions.description>Androides com esta sub-rotina nunca falham em construções nem em colheitas e nunca fazem refeições que causem intoxicação alimentar.</VREA_ClearInstructions.description>
+  <!-- EN: self-destruct protocols -->
+  <VREA_SelfDestructProtocols.label>protocolos de autodestruição</VREA_SelfDestructProtocols.label>
+  <!-- EN: Androids with this subroutine will be able to overload their reactor, which drains the remaining power at an extreme rate, and then triggers a detonation based on how much power has been drained. -->
+  <VREA_SelfDestructProtocols.description>Androides com esta sub-rotina conseguem sobrecarregar o reator, que drena a energia restante numa velocidade extrema e depois detona, com força proporcional à energia drenada.</VREA_SelfDestructProtocols.description>
+</LanguageData>

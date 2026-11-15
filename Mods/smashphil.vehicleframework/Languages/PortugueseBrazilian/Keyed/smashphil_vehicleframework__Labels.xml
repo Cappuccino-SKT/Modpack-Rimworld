@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <!-- EN: Vehicle Framework -->
+  <VehicleFramework>Vehicle Framework</VehicleFramework>
+  <!-- EN: Vehicles -->
+  <VF_Vehicles>Veículos</VF_Vehicles>
+  <!-- EN: Load Cargo -->
+  <VF_LoadCargo>Carregar carga</VF_LoadCargo>
+  <!-- EN: Load Pawn -->
+  <VF_HaulPawnToVehicle>Embarcar personagem</VF_HaulPawnToVehicle>
+  <!-- EN: Unload All Pawns -->
+  <VF_DisembarkAllPawns>Desembarcar todos</VF_DisembarkAllPawns>
+  <!-- EN: Unload {0} -->
+  <VF_DisembarkSinglePawn>Desembarcar {0}</VF_DisembarkSinglePawn>
+  <!-- EN: Forward -->
+  <VF_GearForward>Para frente</VF_GearForward>
+  <!-- EN: Reverse -->
+  <VF_GearReverse>Ré</VF_GearReverse>
+  <!-- EN: Unable to exit vehicle. No valid cells to exit onto. -->
+  <VF_DisembarkNoExit>Não dá para sair do veículo. Não há espaço válido para descer.</VF_DisembarkNoExit>
+  <!-- EN: {0} is being upgraded. -->
+  <VF_DisabledByVehicleUpgrading>{0} está recebendo uma melhoria.</VF_DisabledByVehicleUpgrading>
+  <!-- EN: Stop -->
+  <VF_StopVehicle>Parar</VF_StopVehicle>
+  <!-- EN: Turn Off -->
+  <VF_UndraftVehicle>Desligar</VF_UndraftVehicle>
+  <!-- EN: Drafts vehicle allowing it to move. This will consume fuel if applicable even if the vehicle is idle. -->
+  <VF_DraftVehicleDesc>Liga o veículo para que ele possa se mover. Isso gasta combustível (se houver) mesmo com o veículo parado.</VF_DraftVehicleDesc>
+  <!-- EN: Stop the vehicle immediately. -->
+  <VF_StopVehicleDesc>Para o veículo na hora.</VF_StopVehicleDesc>
+  <!-- EN: Undrafts vehicle, disabling the consumption of fuel and disallowing movement. -->
+  <VF_UndraftVehicleDesc>Desliga o veículo, parando o consumo de combustível e impedindo que se mova.</VF_UndraftVehicleDesc>
+  <!-- EN: Refuel {0}x {1} -->
+  <VF_RefuelFromInventoryCount>Abastecer {0}x {1}</VF_RefuelFromInventoryCount>
+  <!-- EN: Refuel {0} using fuel stored in cargo. -->
+  <VF_RefuelFromInventoryDesc>Abastecer {0} usando o combustível guardado na carga.</VF_RefuelFromInventoryDesc>
+  <!-- EN: {0} is already fully fueled. -->
+  <VF_VehicleFullyFueled>{0} já está de tanque cheio.</VF_VehicleFullyFueled>
+  <!-- EN: No fuel in {0}. -->
+  <VF_NoFuelInVehicle>Não há combustível em {0}.</VF_NoFuelInVehicle>
+  <!-- EN: Cannot refuel {0} while inflight. -->
+  <VF_CantRefuelWhileFlying>Não dá para abastecer {0} em pleno voo.</VF_CantRefuelWhileFlying>
+  <!-- EN: Fuel: {0} -->
+  <VF_VehicleFuelCost>Combustível: {0}</VF_VehicleFuelCost>
+  <!-- EN: Transfer to vehicle -->
+  <VF_TransferToVehicle_Order>Transferir para o veículo</VF_TransferToVehicle_Order>
+  <!-- EN: Transfer selected thing(s) to the target vehicle's cargo. -->
+  <VF_TransferToVehicle_Order_Desc>Transferir as coisas selecionadas para a carga do veículo alvo.</VF_TransferToVehicle_Order_Desc>
+  <!-- EN: Cancel transfer -->
+  <VF_TransferToVehicle_Cancel>Cancelar transferência</VF_TransferToVehicle_Cancel>
+  <!-- EN: Cancel transfer of selected thing(s) to any vehicle's cargo. -->
+  <VF_TransferToVehicle_Cancel_Desc>Cancelar a transferência das coisas selecionadas para a carga de qualquer veículo.</VF_TransferToVehicle_Cancel_Desc>
+  <!-- EN: Random Vehicle -->
+  <VF_RandomVehicle>Veículo aleatório</VF_RandomVehicle>
+  <!-- EN: Show All Items On Map -->
+  <VF_ShowAllItemsOnMap>Mostrar todos os itens do mapa</VF_ShowAllItemsOnMap>
+  <!-- EN: Reset All Palettes -->
+  <VF_ResetColorPalettes>Redefinir todas as paletas</VF_ResetColorPalettes>
+  <!-- EN: Are you sure you want to reset all saved palettes back to default settings? This action cannot be undone. -->
+  <VF_ResetColorPalettesConfirmation>Tem certeza de que quer voltar todas as paletas salvas ao padrão? Isso não pode ser desfeito.</VF_ResetColorPalettesConfirmation>
+  <!-- EN: Rotate vehicle -->
+  <VF_RotateVehicleRendering>Girar veículo</VF_RotateVehicleRendering>
+  <!-- EN: Save Palette -->
+  <VF_SaveColorPalette>Salvar paleta</VF_SaveColorPalette>
+  <!-- EN: ColorOne -->
+  <VF_ColorOne>Cor 1</VF_ColorOne>
+  <!-- EN: ColorTwo -->
+  <VF_ColorTwo>Cor 2</VF_ColorTwo>
+  <!-- EN: ColorThree -->
+  <VF_ColorThree>Cor 3</VF_ColorThree>
+  <!-- EN: Hex -->
+  <VF_ColorPickerHex>Hex</VF_ColorPickerHex>
+  <!-- EN: Job Settings -->
+  <VF_JobSettings>Opções de trabalho</VF_JobSettings>
+  <!-- EN: Produced: {0} -->
+  <VF_VehicleAgeReadout>Fabricado: {0}</VF_VehicleAgeReadout>
+  <!-- EN: Cargo: {0} -->
+  <VF_StatsReport_CargoWeight>Carga: {0}</VF_StatsReport_CargoWeight>
+  <!-- EN: Deployed -->
+  <VF_StatsReport_Deployed>Desdobrado</VF_StatsReport_Deployed>
+  <!-- EN: Crew -->
+  <VF_CrewCount>Tripulação</VF_CrewCount>
+  <!-- EN: Number of crew and passengers that can fit inside of this vehicle. -->
+  <VF_CrewCountDesc>Quantos tripulantes e passageiros cabem neste veículo.</VF_CrewCountDesc>
+  <!-- EN: Vehicle can be painted through color menu. -->
+  <VF_PaintableDesc>O veículo pode ser pintado pelo menu de cores.</VF_PaintableDesc>
+  <!-- EN: Upgradeable -->
+  <VF_Upgradeable>Melhorável</VF_Upgradeable>
+  <!-- EN: Vehicle can be modifed through an upgrade tree -->
+  <VF_UpgradeableDesc>O veículo pode ser modificado por uma árvore de melhorias</VF_UpgradeableDesc>
+  <!-- EN: Fuel Type -->
+  <VF_FuelType>Combustível</VF_FuelType>
+  <!-- EN: What resource this vehicle consumes in order to operate. -->
+  <VF_FuelTypeDesc>Que recurso este veículo consome para funcionar.</VF_FuelTypeDesc>
+  <!-- EN: Cancel the upgrade that is in progress for {0}. -->
+  <VF_CancelUpgrade>Cancelar a melhoria em andamento de {0}.</VF_CancelUpgrade>
+  <!-- EN: Road area -->
+  <VF_RoadZoneExpand>Área de estrada</VF_RoadZoneExpand>
+  <!-- EN: Create an area where vehicles will prioritize or avoid moving through.\n\n'Prioritize' areas applied on the edge of the map will designate where vehicle caravans should enter from. -->
+  <VF_RoadZoneExpandDesc>Cria uma área por onde os veículos vão preferir passar, ou evitar.\n\nÁreas de "Priorizar" na borda do mapa marcam por onde as caravanas de veículos devem entrar.</VF_RoadZoneExpandDesc>
+  <!-- EN: Clear road area -->
+  <VF_RoadZoneClear>Limpar área de estrada</VF_RoadZoneClear>
+  <!-- EN: Removes road zone. Vehicles will no longer have modified movement over the area. -->
+  <VF_RoadZoneClearDesc>Remove a zona de estrada. Os veículos deixam de ter movimento modificado na área.</VF_RoadZoneClearDesc>
+  <!-- EN: Assign or clear name. -->
+  <VF_RenameVehicleTooltip>Dar ou apagar nome.</VF_RenameVehicleTooltip>
+  <!-- EN: Paint vehicle -->
+  <VF_RecolorTooltip>Pintar veículo</VF_RecolorTooltip>
+  <!-- EN: Click to Confirm Destination -->
+  <VF_DoubleClickShuttleTarget>Clique para confirmar o destino</VF_DoubleClickShuttleTarget>
+  <!-- EN: Cycle colors between each other.\n\nColorOne &gt; ColorTwo &gt; ColorThree -->
+  <VF_SwapColors>Alterna as cores entre si.\n\nCor 1 &gt; Cor 2 &gt; Cor 3</VF_SwapColors>
+  <!-- EN: Fish -->
+  <VF_StartFishing>Pescar</VF_StartFishing>
+  <!-- EN: Gather fish from the water. -->
+  <VF_StartFishingDesc>Pegar peixes da água.</VF_StartFishingDesc>
+  <!-- EN: No colonists onboard that are capable of fishing. -->
+  <VF_NoFishermenTooltip>Não há colonos a bordo capazes de pescar.</VF_NoFishermenTooltip>
+  <!-- EN: No fish at this location. -->
+  <VF_NoFishAtSpot>Não há peixe neste local.</VF_NoFishAtSpot>
+  <!-- EN: Explosive -->
+  <VF_ExplosiveComponent>Explosivo</VF_ExplosiveComponent>
+  <!-- EN: Edit Pawn Overlay -->
+  <VF_EditPawnOverlayRendererTooltip>Editar sobreposição do personagem</VF_EditPawnOverlayRendererTooltip>
+  <!-- EN: Click for detailed information. -->
+  <VF_ComponentClickMoreInfoTooltip>Clique para ver detalhes.</VF_ComponentClickMoreInfoTooltip>
+  <!-- EN: Deploy -->
+  <VF_Deploy>Desdobrar</VF_Deploy>
+  <!-- EN: Undeploy -->
+  <VF_Undeploy>Recolher</VF_Undeploy>
+  <!-- EN: Deploy vehicle to enable use of turrets. -->
+  <VF_DeployDescription>Desdobrar o veículo para poder usar as torres.</VF_DeployDescription>
+  <!-- EN: Must be deployed. -->
+  <VF_MustBeDeployed>Precisa estar desdobrado.</VF_MustBeDeployed>
+  <!-- EN: Must be undeployed. -->
+  <VF_MustBeUndeployed>Precisa estar recolhido.</VF_MustBeUndeployed>
+  <!-- EN: Cannot fire while moving. -->
+  <VF_VehicleRestriction_Stationary>Não atira em movimento.</VF_VehicleRestriction_Stationary>
+  <!-- EN: {0} needs repairs. -->
+  <VF_TurretComponentDisabled>{0} precisa de conserto.</VF_TurretComponentDisabled>
+  <!-- EN: Patterns -->
+  <VF_Patterns>Padrões</VF_Patterns>
+  <!-- EN: Skins -->
+  <VF_Skins>Visuais</VF_Skins>
+  <!-- EN: Zoom -->
+  <VF_PatternZoom>Zoom</VF_PatternZoom>
+  <!-- EN: Scale the pattern up or down. -->
+  <VF_PatternZoomTooltip>Aumenta ou diminui a escala do padrão.</VF_PatternZoomTooltip>
+  <!-- EN: Displacement X -->
+  <VF_PatternDisplacementX>Deslocamento X</VF_PatternDisplacementX>
+  <!-- EN: Displacement Y -->
+  <VF_PatternDisplacementY>Deslocamento Y</VF_PatternDisplacementY>
+  <!-- EN: Moves texture along the horizontal axis. -->
+  <VF_PatternDisplacementXTooltip>Move a textura no eixo horizontal.</VF_PatternDisplacementXTooltip>
+  <!-- EN: Moves texture along the vertical axis. -->
+  <VF_PatternDisplacementYTooltip>Move a textura no eixo vertical.</VF_PatternDisplacementYTooltip>
+  <!-- EN: Electricity -->
+  <VF_Electricity>Eletricidade</VF_Electricity>
+  <!-- EN: Toggle connecting to the power grid. -->
+  <VF_ElectricFlick>Ligar ou desligar da rede elétrica.</VF_ElectricFlick>
+  <!-- EN: When on top of a power conduit, this connects to the power grid and transfers energy to recharge its battery.\n\nCurrently connected: {0} -->
+  <VF_ElectricFlickDesc>Quando está em cima de um conduíte, se conecta à rede elétrica e recebe energia para recarregar a bateria.\n\nConectado agora: {0}</VF_ElectricFlickDesc>
+  <!-- EN: Cannot move. {0} needs more fuel. -->
+  <VF_OutOfFuel>Não consegue se mover. {0} precisa de mais combustível.</VF_OutOfFuel>
+  <!-- EN: Autofill -->
+  <VF_AutoAssign>Preencher automaticamente</VF_AutoAssign>
+  <!-- EN: Assigned -->
+  <VF_Assigned>Designados</VF_Assigned>
+  <!-- EN: Apply -->
+  <VF_ApplyButton>Aplicar</VF_ApplyButton>
+  <!-- EN: Colonists -->
+  <VF_Colonists>Colonos</VF_Colonists>
+  <!-- EN: Clear -->
+  <VF_ClearSeats>Limpar</VF_ClearSeats>
+  <!-- EN: Remove -->
+  <VF_RemoveFromRole>Remover</VF_RemoveFromRole>
+  <!-- EN: Add -->
+  <VF_AddToRole>Adicionar</VF_AddToRole>
+  <!-- EN: Click to enter the planning mode for Vehicles where you can select specific vehicles you own, and plan your journey. Pathing is adjusted based on the vehicles selected. -->
+  <VF_RoutePlannerButtonTip>Clique para entrar no modo de planejamento de veículos, onde vocês escolhem veículos específicos e planejam a viagem. O caminho se ajusta conforme os veículos escolhidos.</VF_RoutePlannerButtonTip>
+  <!-- EN: Select Vehicles -->
+  <VF_SelectVehiclesForPlanner>Escolher veículos</VF_SelectVehiclesForPlanner>
+  <!-- EN: Start Route -->
+  <VF_StartVehicleRoutePlanner>Iniciar rota</VF_StartVehicleRoutePlanner>
+  <!-- EN: Confirm Name -->
+  <VF_OkName>Confirmar nome</VF_OkName>
+  <!-- EN: Remove Name -->
+  <VF_RemoveName>Remover nome</VF_RemoveName>
+  <!-- EN: Unable to launch with Flight Speed = 0 -->
+  <VF_NoFlightSpeed>Não dá para decolar com velocidade de voo = 0</VF_NoFlightSpeed>
+  <!-- EN: Cannot launch while {0} is moving. -->
+  <VF_CannotLaunchWhileMoving>Não dá para decolar enquanto {0} está em movimento.</VF_CannotLaunchWhileMoving>
+  <!-- EN: {0} cannot launch without being able to move. -->
+  <VF_CannotLaunchImmobile>{0} não pode decolar sem conseguir se mover.</VF_CannotLaunchImmobile>
+  <!-- EN: {0} cannot launch at an angle. -->
+  <VF_CannotLaunchRotated>{0} não pode decolar na diagonal.</VF_CannotLaunchRotated>
+  <!-- EN: {0} cannot launch while over-encumbered. -->
+  <VF_CannotLaunchOverEncumbered>{0} não pode decolar com excesso de peso.</VF_CannotLaunchOverEncumbered>
+  <!-- EN: Cargo -->
+  <VF_TabCargo>Carga</VF_TabCargo>
+  <!-- EN: Pawns -->
+  <VF_TabPassengers>Personagens</VF_TabPassengers>
+  <!-- EN: Health -->
+  <VF_TabComponents>Saúde</VF_TabComponents>
+  <!-- EN: Customize -->
+  <VF_TabUpgrades>Personalizar</VF_TabUpgrades>
+  <!-- EN: Health -->
+  <VF_ComponentHealth>Saúde</VF_ComponentHealth>
+  <!-- EN: Efficiency -->
+  <VF_ComponentEfficiency>Eficiência</VF_ComponentEfficiency>
+  <!-- EN: Armor -->
+  <VF_ComponentArmor>Blindagem</VF_ComponentArmor>
+  <!-- EN: Depth -->
+  <VF_Depth>Profundidade</VF_Depth>
+  <!-- EN: Internal -->
+  <VF_Depth_Internal>Interno</VF_Depth_Internal>
+  <!-- EN: External -->
+  <VF_Depth_External>Externo</VF_Depth_External>
+  <!-- EN: Undefined -->
+  <VF_Depth_Undefined>Indefinido</VF_Depth_Undefined>
+  <!-- EN: Stats Effected -->
+  <VF_EfficiencyEffector>Atributos afetados</VF_EfficiencyEffector>
+  <!-- EN: Base armor rating: {0} -->
+  <VF_BaseArmorRating>Blindagem base: {0}</VF_BaseArmorRating>
+  <!-- EN: No Return Trip -->
+  <VF_NoFuelReturnTrip>Sem combustível para voltar</VF_NoFuelReturnTrip>
+  <!-- EN: Out Of Range -->
+  <VF_NotEnoughFuel>Fora de alcance</VF_NotEnoughFuel>
+  <!-- EN: {0} is incapable of space flight. -->
+  <VF_NoSpaceFlight>{0} não é capaz de voo espacial.</VF_NoSpaceFlight>
+  <!-- EN: Cancel landing in this map? Aerial vehicle will be kicked out to the world map. -->
+  <VF_ConfirmationCancelLanding>Cancelar o pouso neste mapa? O veículo aéreo vai ser mandado de volta para o mapa-múndi.</VF_ConfirmationCancelLanding>
+  <!-- EN: Not Enough Seats -->
+  <VF_PawnsLeftBehindConfirm>Lugares insuficientes</VF_PawnsLeftBehindConfirm>
+  <!-- EN: Leave -->
+  <VF_PawnsLeftBehindConfirmDesc>Partir</VF_PawnsLeftBehindConfirmDesc>
+  <!-- EN: Cargo -->
+  <VF_Cargo>Carga</VF_Cargo>
+  <!-- EN: Properties -->
+  <VF_Properties>Propriedades</VF_Properties>
+  <!-- EN: Launch Properties -->
+  <VF_LauncherProperties>Propriedades de decolagem</VF_LauncherProperties>
+  <!-- EN: Fuel -->
+  <VF_FueledTravelPropertes>Combustível</VF_FueledTravelPropertes>
+  <!-- EN: Max Workers per Job -->
+  <VF_JobLimitations>Máximo de trabalhadores por tarefa</VF_JobLimitations>
+</LanguageData>

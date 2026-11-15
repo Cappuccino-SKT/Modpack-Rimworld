@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <!-- EN: solar pinhole -->
+  <VPE_SolarPinhole.label>furo solar</VPE_SolarPinhole.label>
+  <!-- EN: Generate a microscopic skipgate linked to the core of a nearby star for a few days. Solar material leaks through the pinprick in spacetime, illuminating and warming the surrounding area until it closes. The light is enough to work by, but not enough to grow plants. -->
+  <VPE_SolarPinhole.description>Gera por alguns dias um portal de salto microscópico ligado ao núcleo de uma estrela próxima. Material solar vaza pelo furinho no espaço-tempo, iluminando e aquecendo a área ao redor até ele fechar. A luz dá para trabalhar, mas não para cultivar plantas.</VPE_SolarPinhole.description>
+  <!-- EN: Using ability: {0} -->
+  <VPE_SolarPinhole.jobReportString>Usando habilidade: {0}</VPE_SolarPinhole.jobReportString>
+  <!-- EN: solar pinhole -->
+  <VPE_SolarPinhole.verbProperties.label>furo solar</VPE_SolarPinhole.verbProperties.label>
+  <!-- EN: chunk skip -->
+  <VPE_Chunkskip.label>salto de pedaços</VPE_Chunkskip.label>
+  <!-- EN: Skip the 5 chunks of rock or slag to scatter them near the target point. This is useful for producing cover during offensive operations. -->
+  <VPE_Chunkskip.description>Faz saltar 5 pedaços de rocha ou escória, espalhando-os perto do ponto alvo. Útil para criar cobertura em operações ofensivas.</VPE_Chunkskip.description>
+  <!-- EN: Using ability: {0} -->
+  <VPE_Chunkskip.jobReportString>Usando habilidade: {0}</VPE_Chunkskip.jobReportString>
+  <!-- EN: chunk skip -->
+  <VPE_Chunkskip.verbProperties.label>salto de pedaços</VPE_Chunkskip.verbProperties.label>
+  <!-- EN: waterskip -->
+  <VPE_Waterskip.label>salto de água</VPE_Waterskip.label>
+  <!-- EN: Douse a target in water, extinguishing fires and shorting any electrical structures. The water is archotechnologically skipped from distant bodies of water or underground aquifers, with the amount skipped scaling with psychic sensitivity. -->
+  <VPE_Waterskip.description>Encharca um alvo de água, apagando incêndios e causando curto em estruturas elétricas. A água é saltada arcotecnologicamente de massas de água distantes ou de aquíferos subterrâneos, e a quantidade depende da sensibilidade psíquica.</VPE_Waterskip.description>
+  <!-- EN: Using ability: {0} -->
+  <VPE_Waterskip.jobReportString>Usando habilidade: {0}</VPE_Waterskip.jobReportString>
+  <!-- EN: waterskip -->
+  <VPE_Waterskip.verbProperties.label>salto de água</VPE_Waterskip.verbProperties.label>
+  <!-- EN: chaos skip -->
+  <VPE_ChaosSkip.label>salto caótico</VPE_ChaosSkip.label>
+  <!-- EN: Teleport the target to a random position from where he started, the distance scaling with the caster’s psychic sensitivity. Stuns the target for a second and is considered a hostile action. -->
+  <VPE_ChaosSkip.description>Teleporta o alvo para uma posição aleatória a partir de onde ele estava, com distância conforme a sensibilidade psíquica do conjurador. Atordoa o alvo por um segundo e é considerado uma ação hostil.</VPE_ChaosSkip.description>
+  <!-- EN: Using ability: {0} -->
+  <VPE_ChaosSkip.jobReportString>Usando habilidade: {0}</VPE_ChaosSkip.jobReportString>
+  <!-- EN: chaos skip -->
+  <VPE_ChaosSkip.verbProperties.label>salto caótico</VPE_ChaosSkip.verbProperties.label>
+  <!-- EN: skip -->
+  <VPE_Skip.label>salto</VPE_Skip.label>
+  <!-- EN: Teleport the target to a desired position, the distance scaling with the caster’s psychic sensitivity, from his starting point. This is considered a hostile action. -->
+  <VPE_Skip.description>Teleporta o alvo para uma posição desejada, a uma distância do ponto de partida que depende da sensibilidade psíquica do conjurador. É considerado uma ação hostil.</VPE_Skip.description>
+  <!-- EN: Using ability: {0} -->
+  <VPE_Skip.jobReportString>Usando habilidade: {0}</VPE_Skip.jobReportString>
+  <!-- EN: skip -->
+  <VPE_Skip.verbProperties.label>salto</VPE_Skip.verbProperties.label>
+  <!-- EN: wall raise -->
+  <VPE_Wallraise.label>erguer parede</VPE_Wallraise.label>
+  <!-- EN: Form a temporary wall by skipping rubble and soil up from deep under the ground. Decent range and useful in blocking line of sight and movement for a few hours. -->
+  <VPE_Wallraise.description>Forma uma parede temporária fazendo saltar entulho e terra das profundezas do chão. Bom alcance, útil para bloquear a linha de visão e o movimento por algumas horas.</VPE_Wallraise.description>
+  <!-- EN: Using ability: {0} -->
+  <VPE_Wallraise.jobReportString>Usando habilidade: {0}</VPE_Wallraise.jobReportString>
+  <!-- EN: wall raise -->
+  <VPE_Wallraise.verbProperties.label>erguer parede</VPE_Wallraise.verbProperties.label>
+  <!-- EN: smokepop -->
+  <VPE_Smokepop.label>bomba de fumaça</VPE_Smokepop.label>
+  <!-- EN: Skip dust particles up from under the ground surface to form a thick cloud. This reduces the accuracy of any shot fired through it, and prevents turrets from locking on entirely. -->
+  <VPE_Smokepop.description>Faz saltar partículas de poeira de baixo da superfície para formar uma nuvem densa. Isso reduz a precisão de qualquer tiro disparado através dela e impede totalmente que as torretas travem a mira.</VPE_Smokepop.description>
+  <!-- EN: Using ability: {0} -->
+  <VPE_Smokepop.jobReportString>Usando habilidade: {0}</VPE_Smokepop.jobReportString>
+  <!-- EN: smokepop -->
+  <VPE_Smokepop.verbProperties.label>bomba de fumaça</VPE_Smokepop.verbProperties.label>
+  <!-- EN: mass chaos skip -->
+  <VPE_MassChaosSkip.label>salto caótico em massa</VPE_MassChaosSkip.label>
+  <!-- EN: Skip everyone near a target point to a random location nearby. Considered a nuisance as it can put allies in danger. -->
+  <VPE_MassChaosSkip.description>Faz saltar todos perto de um ponto alvo para um local aleatório próximo. Considerado um incômodo, porque pode pôr aliados em perigo.</VPE_MassChaosSkip.description>
+  <!-- EN: Using ability: {0} -->
+  <VPE_MassChaosSkip.jobReportString>Usando habilidade: {0}</VPE_MassChaosSkip.jobReportString>
+  <!-- EN: mass chaos skip -->
+  <VPE_MassChaosSkip.verbProperties.label>salto caótico em massa</VPE_MassChaosSkip.verbProperties.label>
+  <!-- EN: skipdoor -->
+  <VPE_Skipdoor.label>porta de salto</VPE_Skipdoor.label>
+  <!-- EN: Creates an opening to a network of skipgates which can be placed in any location with a permanent presence. The network is tied to a group’s collective consciousness, allowing others to use it and different psycasters can add to it. However, the entry points are sensitive to physical disturbances which can cause them to collapse. -->
+  <VPE_Skipdoor.description>Cria uma abertura para uma rede de portais de salto que pode ser posta em qualquer local com presença permanente. A rede é ligada à consciência coletiva de um grupo, permitindo que outros a usem e que vários conjuradores a ampliem. Mas os pontos de entrada são sensíveis a perturbações físicas, que podem fazê-los desabar.</VPE_Skipdoor.description>
+  <!-- EN: Using ability: {0} -->
+  <VPE_Skipdoor.jobReportString>Usando habilidade: {0}</VPE_Skipdoor.jobReportString>
+  <!-- EN: skipdoor -->
+  <VPE_Skipdoor.verbProperties.label>porta de salto</VPE_Skipdoor.verbProperties.label>
+  <!-- EN: farskip -->
+  <VPE_Farskip.label>salto distante</VPE_Farskip.label>
+  <!-- EN: Skip the caster, along with anyone standing near them, to a willing ally at a distant location. This can send people far across the planet, and the skipped people will always appear near a random ally on the target map and be stunned for a few seconds from the journey. -->
+  <VPE_Farskip.description>Faz saltar o conjurador, junto com quem estiver perto dele, até um aliado disposto num local distante. Isso pode mandar pessoas para longe pelo planeta; os saltados sempre aparecem perto de um aliado aleatório no mapa alvo e ficam atordoados por alguns segundos pela viagem.</VPE_Farskip.description>
+  <!-- EN: Using ability: {0} -->
+  <VPE_Farskip.jobReportString>Usando habilidade: {0}</VPE_Farskip.jobReportString>
+  <!-- EN: farskip -->
+  <VPE_Farskip.verbProperties.label>salto distante</VPE_Farskip.verbProperties.label>
+</LanguageData>

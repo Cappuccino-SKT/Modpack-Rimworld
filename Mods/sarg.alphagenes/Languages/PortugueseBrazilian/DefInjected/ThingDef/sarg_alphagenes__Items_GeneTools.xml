@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <!-- EN: alphapack -->
+  <AG_Alphapack.label>alfapacote</AG_Alphapack.label>
+  <!-- EN: A small capsule containing a package of genetic information. To use a genepack, it must be placed in a gene bank near a gene assembler and combined into an implantable xenogerm.\n\nIf not kept in a powered gene bank, this genepack will slowly deteriorate.\n\nAlphapacks only contain combinations of Alpha genes. -->
+  <AG_Alphapack.description>Uma pequena cápsula com um pacote de informação genética. Para usar um pacote genético, ele precisa ser colocado num banco de genes perto de um montador de genes e combinado num xenogerminador implantável.\n\nSe não ficar num banco de genes ligado, este pacote genético se deteriora aos poucos.\n\nAlfapacotes só contêm combinações de genes Alpha.</AG_Alphapack.description>
+  <!-- EN: mixedpack -->
+  <AG_Mixedpack.label>pacote misto</AG_Mixedpack.label>
+  <!-- EN: A small capsule containing a package of genetic information. To use a genepack, it must be placed in a gene bank near a gene assembler and combined into an implantable xenogerm.\n\nIf not kept in a powered gene bank, this genepack will slowly deteriorate.\n\nMixedpacks contain combinations of Alpha genes and standard genes. -->
+  <AG_Mixedpack.description>Uma pequena cápsula com um pacote de informação genética. Para usar um pacote genético, ele precisa ser colocado num banco de genes perto de um montador de genes e combinado num xenogerminador implantável.\n\nSe não ficar num banco de genes ligado, este pacote genético se deteriora aos poucos.\n\nPacotes mistos contêm combinações de genes Alpha e genes comuns.</AG_Mixedpack.description>
+  <!-- EN: gene remover -->
+  <AG_GeneRemover.label>removedor de genes</AG_GeneRemover.label>
+  <!-- EN: A genetic toolkit capable of removing a random gene from a human target. This removal is quite destructive, and will target a gene at random. As a result, the target will drop into a coma for 3 days. Using the remover on a colonist suffering from the coma will have no effect. -->
+  <AG_GeneRemover.description>Um kit genético capaz de remover um gene aleatório de um alvo humano. A remoção é bem destrutiva e escolhe o gene ao acaso. Por isso, o alvo entra em coma por 3 dias. Usar o removedor num colono em coma não tem efeito.</AG_GeneRemover.description>
+  <!-- EN: Use gene remover -->
+  <AG_GeneRemover.comps.CompUsable.useLabel>Usar removedor de genes</AG_GeneRemover.comps.CompUsable.useLabel>
+  <!-- EN: endogenefier -->
+  <AG_Endogenefier.label>endogenificador</AG_Endogenefier.label>
+  <!-- EN: A genetic toolkit capable of converting a random xenogene from a human target into an endogene. As a result, the target will drop into a coma for 3 days. Using the endogenefier on a colonist suffering from the coma will have no effect. -->
+  <AG_Endogenefier.description>Um kit genético capaz de transformar um xenogene aleatório de um alvo humano em endogene. Por isso, o alvo entra em coma por 3 dias. Usar o endogenificador num colono em coma não tem efeito.</AG_Endogenefier.description>
+  <!-- EN: Use endogenefier -->
+  <AG_Endogenefier.comps.CompUsable.useLabel>Usar endogenificador</AG_Endogenefier.comps.CompUsable.useLabel>
+  <!-- EN: xenogenefier -->
+  <AG_Xenogenefier.label>xenogenificador</AG_Xenogenefier.label>
+  <!-- EN: A genetic toolkit capable of converting a random endogene from a human target into a xenogene. As a result, the target will drop into a coma for 3 days. Using the xenogenefier on a colonist suffering from the coma will have no effect. -->
+  <AG_Xenogenefier.description>Um kit genético capaz de transformar um endogene aleatório de um alvo humano em xenogene. Por isso, o alvo entra em coma por 3 dias. Usar o xenogenificador num colono em coma não tem efeito.</AG_Xenogenefier.description>
+  <!-- EN: Use xenogenefier -->
+  <AG_Xenogenefier.comps.CompUsable.useLabel>Usar xenogenificador</AG_Xenogenefier.comps.CompUsable.useLabel>
+  <!-- EN: xenotype nullifier -->
+  <AG_XenotypeNullifier.label>anulador de xenotipo</AG_XenotypeNullifier.label>
+  <!-- EN: A genetic toolkit capable of forcefully removing all xenotype genes from the target, reverting them to baseline humanity. As a result, the target will drop into a coma for 3 days. Using the nullifier on a colonist suffering from the coma will have no effect. -->
+  <AG_XenotypeNullifier.description>Um kit genético capaz de remover à força todos os genes de xenotipo do alvo, devolvendo-o à humanidade padrão. Por isso, o alvo entra em coma por 3 dias. Usar o anulador num colono em coma não tem efeito.</AG_XenotypeNullifier.description>
+  <!-- EN: Use xenotype nullifier -->
+  <AG_XenotypeNullifier.comps.CompUsable.useLabel>Usar anulador de xenotipo</AG_XenotypeNullifier.comps.CompUsable.useLabel>
+  <!-- EN: xenotype injector -->
+  <AG_XenotypeInjector.label>injetor de xenotipo</AG_XenotypeInjector.label>
+  <!-- EN: A genetic toolkit capable of forcefully removing all genes from the target, both germline and xenogenes, and replacing them with a random xenotype. As a result, the target will drop into a coma for 3 days. Using the injector on a colonist suffering from the coma will have no effect. -->
+  <AG_XenotypeInjector.description>Um kit genético capaz de remover à força todos os genes do alvo, tanto da linhagem germinativa quanto xenogenes, e substituí-los por um xenotipo aleatório. Por isso, o alvo entra em coma por 3 dias. Usar o injetor num colono em coma não tem efeito.</AG_XenotypeInjector.description>
+  <!-- EN: Use xenotype injector -->
+  <AG_XenotypeInjector.comps.CompUsable.useLabel>Usar injetor de xenotipo</AG_XenotypeInjector.comps.CompUsable.useLabel>
+  <!-- EN: germline mutator -->
+  <AG_GermlineMutator.label>mutador de linhagem germinativa</AG_GermlineMutator.label>
+  <!-- EN: A genetic toolkit capable of causing random genetic mutations on the subject's germline, producing one random endogene. As a result, the target will drop into a coma for 3 days. Using the mutator on a colonist suffering from the coma will have no effect. -->
+  <AG_GermlineMutator.description>Um kit genético capaz de causar mutações aleatórias na linhagem germinativa do alvo, produzindo um endogene aleatório. Por isso, o alvo entra em coma por 3 dias. Usar o mutador num colono em coma não tem efeito.</AG_GermlineMutator.description>
+  <!-- EN: Use germline mutator -->
+  <AG_GermlineMutator.comps.CompUsable.useLabel>Usar mutador de linhagem germinativa</AG_GermlineMutator.comps.CompUsable.useLabel>
+  <!-- EN: genepack tweaker -->
+  <AG_GenepackTweaker.label>ajustador de pacote genético</AG_GenepackTweaker.label>
+  <!-- EN: A genetic toolkit capable of acting upon an existing genepack, alphapack or mixedpack, adding a new, random gene to it. The targetted genepack must have 3 or less genes inside it, and this process won't add new archite genes to it. -->
+  <AG_GenepackTweaker.description>Um kit genético capaz de agir sobre um pacote genético, alfapacote ou pacote misto existente, adicionando um gene novo e aleatório. O pacote precisa ter 3 genes ou menos, e o processo não adiciona genes arquitas.</AG_GenepackTweaker.description>
+  <!-- EN: Use genepack tweaker -->
+  <AG_GenepackTweaker.comps.CompUsable.useLabel>Usar ajustador de pacote genético</AG_GenepackTweaker.comps.CompUsable.useLabel>
+  <!-- EN: genepack disruptor -->
+  <AG_GenepackDisruptor.label>desestabilizador de pacote genético</AG_GenepackDisruptor.label>
+  <!-- EN: A genetic toolkit capable of acting upon an existing genepack, alphapack or mixedpack, deleting a random gene present on it. The targetted genepack must have 2 or more genes inside it. -->
+  <AG_GenepackDisruptor.description>Um kit genético capaz de agir sobre um pacote genético, alfapacote ou pacote misto existente, apagando um gene aleatório dele. O pacote precisa ter 2 genes ou mais.</AG_GenepackDisruptor.description>
+  <!-- EN: Use genepack disruptor -->
+  <AG_GenepackDisruptor.comps.CompUsable.useLabel>Usar desestabilizador de pacote genético</AG_GenepackDisruptor.comps.CompUsable.useLabel>
+  <!-- EN: archotech gene remover -->
+  <AG_ArchoGeneRemover.label>removedor de genes arcotec</AG_ArchoGeneRemover.label>
+  <!-- EN: A genetic toolkit capable of removing a specific gene from a human target. This removal is quite destructive, and as a result, the target will drop into a coma for 3 days. Using the remover on a colonist suffering from the coma will have no effect. -->
+  <AG_ArchoGeneRemover.description>Um kit genético capaz de remover um gene específico de um alvo humano. A remoção é bem destrutiva e, por isso, o alvo entra em coma por 3 dias. Usar o removedor num colono em coma não tem efeito.</AG_ArchoGeneRemover.description>
+  <!-- EN: Use archotech gene remover -->
+  <AG_ArchoGeneRemover.comps.CompUsable.useLabel>Usar removedor de genes arcotec</AG_ArchoGeneRemover.comps.CompUsable.useLabel>
+  <!-- EN: archotech endogenefier -->
+  <AG_ArchoEndogenefier.label>endogenificador arcotec</AG_ArchoEndogenefier.label>
+  <!-- EN: A genetic toolkit capable of converting a specific xenogene from a human target into an endogene. As a result, the target will drop into a coma for 3 days. Using the archotech endogenefier on a colonist suffering from the coma will have no effect. -->
+  <AG_ArchoEndogenefier.description>Um kit genético capaz de transformar um xenogene específico de um alvo humano em endogene. Por isso, o alvo entra em coma por 3 dias. Usar o endogenificador arcotec num colono em coma não tem efeito.</AG_ArchoEndogenefier.description>
+  <!-- EN: Use archotech endogenefier -->
+  <AG_ArchoEndogenefier.comps.CompUsable.useLabel>Usar endogenificador arcotec</AG_ArchoEndogenefier.comps.CompUsable.useLabel>
+  <!-- EN: archotech xenogenefier -->
+  <AG_ArchoXenogenefier.label>xenogenificador arcotec</AG_ArchoXenogenefier.label>
+  <!-- EN: A genetic toolkit capable of converting a specific endogene from a human target into a xenogene. As a result, the target will drop into a coma for 3 days. Using the archotech xenogenefier on a colonist suffering from the coma will have no effect. -->
+  <AG_ArchoXenogenefier.description>Um kit genético capaz de transformar um endogene específico de um alvo humano em xenogene. Por isso, o alvo entra em coma por 3 dias. Usar o xenogenificador arcotec num colono em coma não tem efeito.</AG_ArchoXenogenefier.description>
+  <!-- EN: Use archotech xenogenefier -->
+  <AG_ArchoXenogenefier.comps.CompUsable.useLabel>Usar xenogenificador arcotec</AG_ArchoXenogenefier.comps.CompUsable.useLabel>
+</LanguageData>

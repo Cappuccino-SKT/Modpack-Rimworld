@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <!-- EN: Vanilla Psycasts Expanded -->
+  <VanillaPsycastsExpanded>Vanilla Psycasts Expanded</VanillaPsycastsExpanded>
+  <!-- EN: Psycaster XP per Psyfocus % gained -->
+  <VPE.XPPerPercent>XP de conjurador por % de concentração psíquica ganha</VPE.XPPerPercent>
+  <!-- EN: Basilicus Bestower Psycaster spawn chance -->
+  <VPE.PsycasterSpawnBaseChance>Chance de conjuradores aparecerem (Basilicus, o Concessor)</VPE.PsycasterSpawnBaseChance>
+  <!-- EN: Basilicus Bestower Psycaster strength factor -->
+  <VPE.PsycasterSpawnAdditional>Fator de força dos conjuradores (Basilicus, o Concessor)</VPE.PsycasterSpawnAdditional>
+  <!-- EN: Allow shrinking? -->
+  <VPE.AllowShrink>Permitir encolher?</VPE.AllowShrink>
+  <!-- EN: Allow psycast gizmos to be shrunken to half size when there are a lot of them. -->
+  <VPE.AllowShrink.Desc>Permite que os botões de poderes psíquicos encolham pela metade quando houver muitos.</VPE.AllowShrink.Desc>
+  <!-- EN: UI small mode -->
+  <VPE.SmallMode>Modo compacto da interface</VPE.SmallMode>
+  <!-- EN: In small mode, the stats are moved to a tooltip and the psysets are moved to a separate dialog. If checked, this will force small mode. If X'ed, this will ban small mode. If partial (yellow line), this will allow default behavior (small mode will be active if your vertical resolution is less than 1080). -->
+  <VPE.SmallMode.Desc>No modo compacto, os atributos vão para uma dica e os psiconjuntos vão para uma janela separada. Marcado, força o modo compacto. Com X, proíbe o modo compacto. Parcial (linha amarela), usa o comportamento padrão (o modo compacto fica ativo se a resolução vertical for menor que 1080).</VPE.SmallMode.Desc>
+  <!-- EN: Mute Skipdoor Sound -->
+  <VPE.MuteSkipdoor>Silenciar som da porta de salto</VPE.MuteSkipdoor>
+  <!-- EN: Maximum psycaster level -->
+  <VPE.MaxLevel>Nível máximo de conjurador</VPE.MaxLevel>
+  <!-- EN: Scale base psyfocus gain with stat points? -->
+  <VPE.ChangeFocusGain>Escalar o ganho base de concentração psíquica com pontos de atributo?</VPE.ChangeFocusGain>
+  <!-- EN: If enabled, then the base psyfocus gain before any foci can be increased by spending stat points. -->
+  <VPE.ChangeFocusGain.Desc>Se ativado, o ganho base de concentração psíquica antes de qualquer foco pode ser aumentado gastando pontos de atributo.</VPE.ChangeFocusGain.Desc>
+</LanguageData>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <!-- EN: First of {PAWN_possessive} Name -->
+  <VFEE_FirstOfName.label>Primeiro do Nome</VFEE_FirstOfName.label>
+  <!-- EN: Every noble person has +5 opinion of this pawn. -->
+  <VFEE_FirstOfName.description>Todo nobre tem +5 de opinião sobre este personagem.</VFEE_FirstOfName.description>
+  <!-- EN: The Great -->
+  <VFEE_TheGreat.label>o Grande</VFEE_TheGreat.label>
+  <!-- EN: +5 mood -->
+  <VFEE_TheGreat.description>+5 de humor</VFEE_TheGreat.description>
+  <!-- EN: Chosen of {FACTION_name} -->
+  <VFEE_Chosen.label>Escolhido de {FACTION_name}</VFEE_Chosen.label>
+  <!-- EN: +10 Opinion from every pawn of {FACTION_name}. +10 Opinion about every pawn of {FACTION_name}. -->
+  <VFEE_Chosen.description>+10 de opinião de todo personagem de {FACTION_name}. +10 de opinião sobre todo personagem de {FACTION_name}.</VFEE_Chosen.description>
+  <!-- EN: Destroyer of {FACTION_name} -->
+  <VFEE_Destroyer.label>Destruidor de {FACTION_name}</VFEE_Destroyer.label>
+  <!-- EN: +10% Trade Price Improvement with Enemies of {FACTION_name}. -->
+  <VFEE_Destroyer.description>+10% de melhora nos preços de comércio com os inimigos de {FACTION_name}.</VFEE_Destroyer.description>
+  <!-- EN: {RANK} of {SETTLEMENT_label} -->
+  <VFEE_LordOf.label>{RANK} de {SETTLEMENT_label}</VFEE_LordOf.label>
+  <!-- EN: +1 Honor every 5 days when {PAWN_pronoun} is in {SETTLEMENT_label}. -->
+  <VFEE_LordOf.description>+1 de honra a cada 5 dias quando estiver em {SETTLEMENT_label}.</VFEE_LordOf.description>
+  <!-- EN: Ruler of {SETTLEMENT_label} -->
+  <VFEE_RulerOf.label>Governante de {SETTLEMENT_label}</VFEE_RulerOf.label>
+  <!-- EN: Tithe collection speed of {SETTLEMENT_label} is doubled. -->
+  <VFEE_RulerOf.description>A coleta do dízimo de {SETTLEMENT_label} fica duas vezes mais rápida.</VFEE_RulerOf.description>
+  <!-- EN: Wielder of the {WEAPON_label} -->
+  <VFEE_WieldOfWeapon.label>Portador da {WEAPON_label}</VFEE_WieldOfWeapon.label>
+  <!-- EN: 50% chance of +1 Honor for every kill with {WEAPON_label}. -->
+  <VFEE_WieldOfWeapon.description>50% de chance de +1 de honra a cada morte causada com {WEAPON_label}.</VFEE_WieldOfWeapon.description>
+  <!-- EN: Patron of Arts -->
+  <VFEE_PatronOfArts.label>Patrono das Artes</VFEE_PatronOfArts.label>
+  <!-- EN: +3 Honor after successful art exhibition -->
+  <VFEE_PatronOfArts.description>+3 de honra depois de uma exposição de arte bem-sucedida</VFEE_PatronOfArts.description>
+  <!-- EN: {CHILD} of {PARENT_labelShort} -->
+  <VFEE_ChildOf.label>{CHILD} de {PARENT_labelShort}</VFEE_ChildOf.label>
+  <!-- EN: Opinion of {PARENT_labelShort} about {PAWN_labelShort} is locked at 100. Opinion of {PAWN_labelShort} about {PARENT_labelShort} is locked at 100. -->
+  <VFEE_ChildOf.description>A opinião de {PARENT_labelShort} sobre {PAWN_labelShort} fica travada em 100. A opinião de {PAWN_labelShort} sobre {PARENT_labelShort} fica travada em 100.</VFEE_ChildOf.description>
+  <!-- EN: The Marksman -->
+  <VFEE_Marksman.label>o Atirador</VFEE_Marksman.label>
+  <!-- EN: Shooting skill never decays. -->
+  <VFEE_Marksman.description>A habilidade de Tiro nunca decai.</VFEE_Marksman.description>
+  <!-- EN: The Warrior -->
+  <VFEE_Warrior.label>o Guerreiro</VFEE_Warrior.label>
+  <!-- EN: Melee skill never decays. -->
+  <VFEE_Warrior.description>A habilidade de Corpo a corpo nunca decai.</VFEE_Warrior.description>
+  <!-- EN: The Architect -->
+  <VFEE_Architect.label>o Arquiteto</VFEE_Architect.label>
+  <!-- EN: Construction skill never decays. -->
+  <VFEE_Architect.description>A habilidade de Construção nunca decai.</VFEE_Architect.description>
+  <!-- EN: The Miner -->
+  <VFEE_Miner.label>o Minerador</VFEE_Miner.label>
+  <!-- EN: Mining skill never decays. -->
+  <VFEE_Miner.description>A habilidade de Mineração nunca decai.</VFEE_Miner.description>
+  <!-- EN: The Chef -->
+  <VFEE_Chef.label>o Chef</VFEE_Chef.label>
+  <!-- EN: Cooking skill never decays. -->
+  <VFEE_Chef.description>A habilidade de Culinária nunca decai.</VFEE_Chef.description>
+  <!-- EN: The Gardener -->
+  <VFEE_Gardener.label>o Jardineiro</VFEE_Gardener.label>
+  <!-- EN: Plants skill never decays. -->
+  <VFEE_Gardener.description>A habilidade de Plantas nunca decai.</VFEE_Gardener.description>
+  <!-- EN: The Rancher -->
+  <VFEE_Rancher.label>o Rancheiro</VFEE_Rancher.label>
+  <!-- EN: Animals skill never decays. -->
+  <VFEE_Rancher.description>A habilidade de Animais nunca decai.</VFEE_Rancher.description>
+  <!-- EN: The Craftsman -->
+  <VFEE_Craftsman.label>o Artesão</VFEE_Craftsman.label>
+  <!-- EN: Crafting skill never decays. -->
+  <VFEE_Craftsman.description>A habilidade de Artesanato nunca decai.</VFEE_Craftsman.description>
+  <!-- EN: The Artist -->
+  <VFEE_Artist.label>o Artista</VFEE_Artist.label>
+  <!-- EN: Artistic skill never decays. -->
+  <VFEE_Artist.description>A habilidade de Arte nunca decai.</VFEE_Artist.description>
+  <!-- EN: The Healer -->
+  <VFEE_Healer.label>o Curandeiro</VFEE_Healer.label>
+  <!-- EN: Medicine skill never decays. -->
+  <VFEE_Healer.description>A habilidade de Medicina nunca decai.</VFEE_Healer.description>
+  <!-- EN: The Negotiator -->
+  <VFEE_Negotiator.label>o Negociador</VFEE_Negotiator.label>
+  <!-- EN: Social skill never decays. -->
+  <VFEE_Negotiator.description>A habilidade Social nunca decai.</VFEE_Negotiator.description>
+  <!-- EN: The Intellectual -->
+  <VFEE_Intellectual.label>o Intelectual</VFEE_Intellectual.label>
+  <!-- EN: Intellectual skill never decays. -->
+  <VFEE_Intellectual.description>A habilidade de Intelecto nunca decai.</VFEE_Intellectual.description>
+</LanguageData>

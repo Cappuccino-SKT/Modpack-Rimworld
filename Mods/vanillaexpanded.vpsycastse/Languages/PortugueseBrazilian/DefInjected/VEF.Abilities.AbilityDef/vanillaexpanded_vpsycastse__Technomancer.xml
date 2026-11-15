@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <!-- EN: enchant quality -->
+  <VPE_EnchantQuality.label>encantar qualidade</VPE_EnchantQuality.label>
+  <!-- EN: Psychically manipulate an object or structure to improve its overall quality. Maximum quality depends on psychic sensitivity. -->
+  <VPE_EnchantQuality.description>Manipula psiquicamente um objeto ou estrutura para melhorar a qualidade geral dele. A qualidade máxima depende da sensibilidade psíquica.</VPE_EnchantQuality.description>
+  <!-- EN: Using ability: {0} -->
+  <VPE_EnchantQuality.jobReportString>Usando habilidade: {0}</VPE_EnchantQuality.jobReportString>
+  <!-- EN: enchant quality -->
+  <VPE_EnchantQuality.verbProperties.label>encantar qualidade</VPE_EnchantQuality.verbProperties.label>
+  <!-- EN: mend -->
+  <VPE_Mend.label>remendar</VPE_Mend.label>
+  <!-- EN: Psychically manipulate an object or structure to restore its condition. Requires high psychic sensitivity for any meaningful restoration. -->
+  <VPE_Mend.description>Manipula psiquicamente um objeto ou estrutura para restaurar o estado dele. Exige sensibilidade psíquica alta para qualquer restauração que valha a pena.</VPE_Mend.description>
+  <!-- EN: Using ability: {0} -->
+  <VPE_Mend.jobReportString>Usando habilidade: {0}</VPE_Mend.jobReportString>
+  <!-- EN: mend -->
+  <VPE_Mend.verbProperties.label>remendar</VPE_Mend.verbProperties.label>
+  <!-- EN: conjure heat pearls -->
+  <VPE_ConjureHeatPearls.label>conjurar pérolas de calor</VPE_ConjureHeatPearls.label>
+  <!-- EN: Converts the caster’s neural heat into compressed metaphysical pearls. Completely harmless, but dumps a tremendous amount of neural heat into a small area when shattered. -->
+  <VPE_ConjureHeatPearls.description>Converte o calor neural do conjurador em pérolas metafísicas comprimidas. Completamente inofensivas, mas despejam uma quantidade tremenda de calor neural numa área pequena quando quebradas.</VPE_ConjureHeatPearls.description>
+  <!-- EN: Using ability: {0} -->
+  <VPE_ConjureHeatPearls.jobReportString>Usando habilidade: {0}</VPE_ConjureHeatPearls.jobReportString>
+  <!-- EN: conjure heat pearls -->
+  <VPE_ConjureHeatPearls.verbProperties.label>conjurar pérolas de calor</VPE_ConjureHeatPearls.verbProperties.label>
+  <!-- EN: haywire -->
+  <VPE_Haywire.label>pane</VPE_Haywire.label>
+  <!-- EN: Subjects an area to psychic interference, temporarily reconfiguring up to 3 automated weapons systems to protect the caster and their allies. Duration scales with the caster’s psychic sensitivity. -->
+  <VPE_Haywire.description>Submete uma área a interferência psíquica, reconfigurando temporariamente até 3 sistemas de armas automáticas para proteger o conjurador e os aliados dele. A duração depende da sensibilidade psíquica do conjurador.</VPE_Haywire.description>
+  <!-- EN: Using ability: {0} -->
+  <VPE_Haywire.jobReportString>Usando habilidade: {0}</VPE_Haywire.jobReportString>
+  <!-- EN: haywire -->
+  <VPE_Haywire.verbProperties.label>pane</VPE_Haywire.verbProperties.label>
+  <!-- EN: power -->
+  <VPE_Power.label>energizar</VPE_Power.label>
+  <!-- EN: Metaphysically alters the designated equipment’s power input to extract energy directly from fluctuations in the quantum foam for a few days. Duration scales with psychic sensitivity. -->
+  <VPE_Power.description>Altera metafisicamente a entrada de energia do equipamento designado para extrair energia direto das flutuações da espuma quântica por alguns dias. A duração depende da sensibilidade psíquica.</VPE_Power.description>
+  <!-- EN: Using ability: {0} -->
+  <VPE_Power.jobReportString>Usando habilidade: {0}</VPE_Power.jobReportString>
+  <!-- EN: power -->
+  <VPE_Power.verbProperties.label>energizar</VPE_Power.verbProperties.label>
+  <!-- EN: rock construct -->
+  <VPE_RockConstruct.label>constructo de pedra</VPE_RockConstruct.label>
+  <!-- EN: Compresses a portion of the caster’s neural heat tolerance into metaphysical crystals, then implanting them into a stone chunk. Creates a construct capable of simple chores. Breaking the crystals restores heat tolerance. -->
+  <VPE_RockConstruct.description>Comprime parte da tolerância ao calor neural do conjurador em cristais metafísicos e os implanta num pedaço de pedra. Cria um constructo capaz de tarefas simples. Quebrar os cristais restaura a tolerância ao calor.</VPE_RockConstruct.description>
+  <!-- EN: Using ability: {0} -->
+  <VPE_RockConstruct.jobReportString>Usando habilidade: {0}</VPE_RockConstruct.jobReportString>
+  <!-- EN: rock construct -->
+  <VPE_RockConstruct.verbProperties.label>constructo de pedra</VPE_RockConstruct.verbProperties.label>
+  <!-- EN: steel construct -->
+  <VPE_SteelConstruct.label>constructo de aço</VPE_SteelConstruct.label>
+  <!-- EN: Compresses a portion of the caster’s neural heat tolerance into metaphysical crystals, then implanting them into steel slag. Creates a construct that guards the caster. Breaking the crystals restores heat tolerance. -->
+  <VPE_SteelConstruct.description>Comprime parte da tolerância ao calor neural do conjurador em cristais metafísicos e os implanta em escória de aço. Cria um constructo que protege o conjurador. Quebrar os cristais restaura a tolerância ao calor.</VPE_SteelConstruct.description>
+  <!-- EN: Using ability: {0} -->
+  <VPE_SteelConstruct.jobReportString>Usando habilidade: {0}</VPE_SteelConstruct.jobReportString>
+  <!-- EN: steel construct -->
+  <VPE_SteelConstruct.verbProperties.label>constructo de aço</VPE_SteelConstruct.verbProperties.label>
+  <!-- EN: craft psyring -->
+  <VPE_CraftPsyRing.label>fabricar psianel</VPE_CraftPsyRing.label>
+  <!-- EN: Psychically alters the form of a piece of eltex into the shape of a ring, which is imbued with psycasting knowledge of the caster. When worn by another psycaster, this temporarily allows them to use this knowledge to perform the stored psycast without practice. -->
+  <VPE_CraftPsyRing.description>Altera psiquicamente a forma de um pedaço de eltex para o formato de um anel, imbuído com o conhecimento psíquico do conjurador. Quando outro conjurador o usa, consegue temporariamente aproveitar esse conhecimento para conjurar o poder guardado sem prática.</VPE_CraftPsyRing.description>
+  <!-- EN: Using ability: {0} -->
+  <VPE_CraftPsyRing.jobReportString>Usando habilidade: {0}</VPE_CraftPsyRing.jobReportString>
+  <!-- EN: craft psyring -->
+  <VPE_CraftPsyRing.verbProperties.label>fabricar psianel</VPE_CraftPsyRing.verbProperties.label>
+  <!-- EN: word of progress -->
+  <VPE_WordofProgress.label>palavra de progresso</VPE_WordofProgress.label>
+  <!-- EN: Speak words encouraging problem solving capabilities while psychically hypercharging the target’s mind with keen insight. The target will experience double research speed and intellectual skill gain for 5 days, scaling with their psychic sensitivity. -->
+  <VPE_WordofProgress.description>Diz palavras que incentivam a resolução de problemas enquanto sobrecarrega psiquicamente a mente do alvo com percepção aguçada. O alvo pesquisa e aprende habilidades intelectuais com o dobro da velocidade por 5 dias, conforme a sensibilidade psíquica.</VPE_WordofProgress.description>
+  <!-- EN: Using ability: {0} -->
+  <VPE_WordofProgress.jobReportString>Usando habilidade: {0}</VPE_WordofProgress.jobReportString>
+  <!-- EN: word of progress -->
+  <VPE_WordofProgress.verbProperties.label>palavra de progresso</VPE_WordofProgress.verbProperties.label>
+  <!-- EN: reverse engineer -->
+  <VPE_ReverseEngineer.label>engenharia reversa</VPE_ReverseEngineer.label>
+  <!-- EN: Psychically manipulate an object or structure to learn its history and principles, annihilating it in the process. Extremely taxing, resulting in the caster falling into a temporary coma. -->
+  <VPE_ReverseEngineer.description>Manipula psiquicamente um objeto ou estrutura para aprender a história e os princípios dele, aniquilando-o no processo. Extremamente desgastante: o conjurador cai num coma temporário.</VPE_ReverseEngineer.description>
+  <!-- EN: Using ability: {0} -->
+  <VPE_ReverseEngineer.jobReportString>Usando habilidade: {0}</VPE_ReverseEngineer.jobReportString>
+  <!-- EN: reverse engineer -->
+  <VPE_ReverseEngineer.verbProperties.label>engenharia reversa</VPE_ReverseEngineer.verbProperties.label>
+</LanguageData>

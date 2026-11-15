@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <!-- EN: armoured speed -->
+  <AG_ArmouredSpeed.label>velocidade blindada</AG_ArmouredSpeed.label>
+  <!-- EN: Carriers of this gene move faster while wearing heavy armor. -->
+  <AG_ArmouredSpeed.description>Portadores deste gene andam mais rápido usando armadura pesada.</AG_ArmouredSpeed.description>
+  <!-- EN: thermal speed -->
+  <AG_SpeedByTemperature.label>velocidade térmica</AG_SpeedByTemperature.label>
+  <!-- EN: Carriers of this gene move fast at high temperatures, at the cost of getting much more tired. Low temperatures will reduce their metabolism, making them slower, but also making them spend less energy staying awake. -->
+  <AG_SpeedByTemperature.description>Portadores deste gene andam rápido em temperaturas altas, mas se cansam muito mais. Temperaturas baixas reduzem o metabolismo, deixando-os mais lentos, mas também gastando menos energia para ficar acordados.</AG_SpeedByTemperature.description>
+  <!-- EN: water striding -->
+  <AG_WaterStriding.label>passada aquática</AG_WaterStriding.label>
+  <!-- EN: Carriers of this gene move without movement penalties through water. They will ignore terrain movement costs when moving through watery terrains. -->
+  <AG_WaterStriding.description>Portadores deste gene andam na água sem penalidade. Ignoram o custo de movimento em terrenos com água.</AG_WaterStriding.description>
+  <!-- EN: light striding -->
+  <AG_LightStriding.label>passada na luz</AG_LightStriding.label>
+  <!-- EN: Carriers of this gene move much faster when exposed to the light (50% lit or above), and slower in the dark. -->
+  <AG_LightStriding.description>Portadores deste gene andam muito mais rápido expostos à luz (50% ou mais de iluminação) e mais devagar no escuro.</AG_LightStriding.description>
+  <!-- EN: night striding -->
+  <AG_NightStriding.label>passada noturna</AG_NightStriding.label>
+  <!-- EN: Carriers of this gene move much faster when under darkness (below 50% lit), and slower in the light. -->
+  <AG_NightStriding.description>Portadores deste gene andam muito mais rápido no escuro (abaixo de 50% de iluminação) e mais devagar na luz.</AG_NightStriding.description>
+  <!-- EN: pollution striding -->
+  <AG_PollutionStriding.label>passada na poluição</AG_PollutionStriding.label>
+  <!-- EN: Carriers of this gene move much faster when traversing polluted terrain. -->
+  <AG_PollutionStriding.description>Portadores deste gene andam muito mais rápido em terreno poluído.</AG_PollutionStriding.description>
+</LanguageData>

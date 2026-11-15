@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <!-- EN: mineral craving -->
+  <AG_MineralCraving.label>fissura por minerais</AG_MineralCraving.label>
+  <!-- EN: Due to a lack of minerals, this person's body can no longer sustain their metabolism. Their hunger is insatiable -->
+  <AG_MineralCraving.description>Por falta de minerais, o corpo desta pessoa não consegue mais manter o metabolismo. A fome é insaciável</AG_MineralCraving.description>
+  <!-- EN: minor -->
+  <AG_MineralCraving.stages.minor.label>leve</AG_MineralCraving.stages.minor.label>
+  <!-- EN: moderate -->
+  <AG_MineralCraving.stages.moderate.label>moderada</AG_MineralCraving.stages.moderate.label>
+  <!-- EN: major -->
+  <AG_MineralCraving.stages.major.label>grave</AG_MineralCraving.stages.major.label>
+  <!-- EN: mineral fueled -->
+  <AG_MineralFueled.label>movido a minerais</AG_MineralFueled.label>
+  <!-- EN: Hidden: mineral fueled -->
+  <AG_MineralFueled.description>Oculto: movido a minerais</AG_MineralFueled.description>
+  <!-- EN: off -->
+  <AG_MineralFueled.stages.off.label>desligado</AG_MineralFueled.stages.off.label>
+  <!-- EN: on -->
+  <AG_MineralFueled.stages.on.label>ligado</AG_MineralFueled.stages.on.label>
+  <!-- EN: reactive armour -->
+  <AG_ReactiveArmourHediff.label>armadura reativa</AG_ReactiveArmourHediff.label>
+  <!-- EN: Their minerals are hardening their skin against attacks by how strong their mineral reserves are. -->
+  <AG_ReactiveArmourHediff.description>Os minerais estão endurecendo a pele contra ataques, na medida da força das reservas minerais.</AG_ReactiveArmourHediff.description>
+  <!-- EN: minimal armour -->
+  <AG_ReactiveArmourHediff.stages.minimal_armour.label>armadura mínima</AG_ReactiveArmourHediff.stages.minimal_armour.label>
+  <!-- EN: wavering armour -->
+  <AG_ReactiveArmourHediff.stages.wavering_armour.label>armadura instável</AG_ReactiveArmourHediff.stages.wavering_armour.label>
+  <!-- EN: hardened armour -->
+  <AG_ReactiveArmourHediff.stages.hardened_armour.label>armadura endurecida</AG_ReactiveArmourHediff.stages.hardened_armour.label>
+  <!-- EN: impenetrable armour -->
+  <AG_ReactiveArmourHediff.stages.impenetrable_armour.label>armadura impenetrável</AG_ReactiveArmourHediff.stages.impenetrable_armour.label>
+  <!-- EN: mineral overdrive -->
+  <AG_MineralOverdriveHediff.label>sobrecarga mineral</AG_MineralOverdriveHediff.label>
+  <!-- EN: Their mineral reserves are being rapidly consumed to work at break neck pace! -->
+  <AG_MineralOverdriveHediff.description>As reservas minerais estão sendo consumidas depressa para trabalhar num ritmo alucinante!</AG_MineralOverdriveHediff.description>
+  <!-- EN: overdrive -->
+  <AG_MineralOverdriveHediff.stages.overdrive.label>sobrecarga</AG_MineralOverdriveHediff.stages.overdrive.label>
+</LanguageData>

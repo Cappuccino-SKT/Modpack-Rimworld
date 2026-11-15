@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <!-- EN: tox absorption -->
+  <VRE_ToxAbsorption.label>absorção de toxinas</VRE_ToxAbsorption.label>
+  <!-- EN: Directly absorbing toxic gases through the skin, increasing the speed at which pollution is satisfied for various pollution-related genes. -->
+  <VRE_ToxAbsorption.description>Absorvendo gases tóxicos direto pela pele, o que acelera a satisfação da necessidade de poluição de vários genes ligados à poluição.</VRE_ToxAbsorption.description>
+  <!-- EN: pollution regeneration -->
+  <VRE_PollutionRegeneration.label>regeneração por poluição</VRE_PollutionRegeneration.label>
+  <!-- EN: Benefitting from accelerated natural healing in polluted environments. As pollution levels increase, regenerative abilities are boosted, recovering from injuries and restoring vitality more rapidly. -->
+  <VRE_PollutionRegeneration.description>Curando-se naturalmente mais rápido em ambientes poluídos. Quanto maior a poluição, mais forte a regeneração, recuperando ferimentos e restaurando o vigor mais depressa.</VRE_PollutionRegeneration.description>
+  <!-- EN: This creature is regenerating by exposure to pollution. -->
+  <VRE_PollutionRegeneration.descriptionShort>Esta criatura está se regenerando pela exposição à poluição.</VRE_PollutionRegeneration.descriptionShort>
+  <!-- EN: inactive -->
+  <VRE_PollutionRegeneration.stages.inactive.label>inativa</VRE_PollutionRegeneration.stages.inactive.label>
+  <!-- EN: minor -->
+  <VRE_PollutionRegeneration.stages.minor.label>leve</VRE_PollutionRegeneration.stages.minor.label>
+  <!-- EN: moderate -->
+  <VRE_PollutionRegeneration.stages.moderate.label>moderada</VRE_PollutionRegeneration.stages.moderate.label>
+  <!-- EN: extreme -->
+  <VRE_PollutionRegeneration.stages.extreme.label>extrema</VRE_PollutionRegeneration.stages.extreme.label>
+  <!-- EN: pollution rage -->
+  <VRE_PollutionRage.label>fúria da poluição</VRE_PollutionRage.label>
+  <!-- EN: Experiencing amplified close-quarters damage output in polluted environments. As pollution levels escalate, ferocity and strength intensify, allowing to inflict greater harm on adversaries. -->
+  <VRE_PollutionRage.description>Causando mais dano corpo a corpo em ambientes poluídos. Quanto maior a poluição, maiores a ferocidade e a força, ferindo mais os adversários.</VRE_PollutionRage.description>
+  <!-- EN: This creature is raging by exposure to pollution. -->
+  <VRE_PollutionRage.descriptionShort>Esta criatura está enfurecida pela exposição à poluição.</VRE_PollutionRage.descriptionShort>
+  <!-- EN: inactive -->
+  <VRE_PollutionRage.stages.inactive.label>inativa</VRE_PollutionRage.stages.inactive.label>
+  <!-- EN: minor -->
+  <VRE_PollutionRage.stages.minor.label>leve</VRE_PollutionRage.stages.minor.label>
+  <!-- EN: moderate -->
+  <VRE_PollutionRage.stages.moderate.label>moderada</VRE_PollutionRage.stages.moderate.label>
+  <!-- EN: extreme -->
+  <VRE_PollutionRage.stages.extreme.label>extrema</VRE_PollutionRage.stages.extreme.label>
+  <!-- EN: pollution sustenance -->
+  <VRE_PollutionSustenance.label>sustento da poluição</VRE_PollutionSustenance.label>
+  <!-- EN: Deriving nutrition from pollution, slowing down hunger rate. -->
+  <VRE_PollutionSustenance.description>Tirando nutrição da poluição, o que deixa a fome mais lenta.</VRE_PollutionSustenance.description>
+  <!-- EN: This creature is deriving nutrition from their exposure to pollution. -->
+  <VRE_PollutionSustenance.descriptionShort>Esta criatura está se nutrindo pela exposição à poluição.</VRE_PollutionSustenance.descriptionShort>
+  <!-- EN: inactive -->
+  <VRE_PollutionSustenance.stages.inactive.label>inativo</VRE_PollutionSustenance.stages.inactive.label>
+  <!-- EN: minor -->
+  <VRE_PollutionSustenance.stages.minor.label>leve</VRE_PollutionSustenance.stages.minor.label>
+  <!-- EN: moderate -->
+  <VRE_PollutionSustenance.stages.moderate.label>moderado</VRE_PollutionSustenance.stages.moderate.label>
+  <!-- EN: extreme -->
+  <VRE_PollutionSustenance.stages.extreme.label>extremo</VRE_PollutionSustenance.stages.extreme.label>
+  <!-- EN: pollution cognition -->
+  <VRE_PollutionCognition.label>cognição da poluição</VRE_PollutionCognition.label>
+  <!-- EN: Exhibiting enhanced focus and learning abilities in polluted environments. As pollution levels rise, capacity to acquire new skills and retain knowledge will expand. -->
+  <VRE_PollutionCognition.description>Com mais foco e aprendizado em ambientes poluídos. Quanto maior a poluição, maior a capacidade de adquirir novas habilidades e reter conhecimento.</VRE_PollutionCognition.description>
+  <!-- EN: This creature has enhanced learning from their exposure to pollution. -->
+  <VRE_PollutionCognition.descriptionShort>Esta criatura aprende melhor pela exposição à poluição.</VRE_PollutionCognition.descriptionShort>
+  <!-- EN: inactive -->
+  <VRE_PollutionCognition.stages.inactive.label>inativa</VRE_PollutionCognition.stages.inactive.label>
+  <!-- EN: minor -->
+  <VRE_PollutionCognition.stages.minor.label>leve</VRE_PollutionCognition.stages.minor.label>
+  <!-- EN: moderate -->
+  <VRE_PollutionCognition.stages.moderate.label>moderada</VRE_PollutionCognition.stages.moderate.label>
+  <!-- EN: extreme -->
+  <VRE_PollutionCognition.stages.extreme.label>extrema</VRE_PollutionCognition.stages.extreme.label>
+  <!-- EN: pollution numbness -->
+  <VRE_PollutionNumbness.label>dormência da poluição</VRE_PollutionNumbness.label>
+  <!-- EN: Exhibiting reduced pain sensations in polluted environments as pollution levels increase. -->
+  <VRE_PollutionNumbness.description>Sentindo menos dor em ambientes poluídos conforme a poluição aumenta.</VRE_PollutionNumbness.description>
+  <!-- EN: This creature has reduced pain sensations from their exposure to pollution. -->
+  <VRE_PollutionNumbness.descriptionShort>Esta criatura sente menos dor pela exposição à poluição.</VRE_PollutionNumbness.descriptionShort>
+  <!-- EN: inactive -->
+  <VRE_PollutionNumbness.stages.inactive.label>inativa</VRE_PollutionNumbness.stages.inactive.label>
+  <!-- EN: minor -->
+  <VRE_PollutionNumbness.stages.minor.label>leve</VRE_PollutionNumbness.stages.minor.label>
+  <!-- EN: moderate -->
+  <VRE_PollutionNumbness.stages.moderate.label>moderada</VRE_PollutionNumbness.stages.moderate.label>
+  <!-- EN: extreme -->
+  <VRE_PollutionNumbness.stages.extreme.label>extrema</VRE_PollutionNumbness.stages.extreme.label>
+  <!-- EN: pollution happiness -->
+  <VRE_PollutionHappiness.label>alegria da poluição</VRE_PollutionHappiness.label>
+  <!-- EN: Enjoying heightened levels of happiness in polluted environments, experiencing increased joy and contentment as pollution levels rise. -->
+  <VRE_PollutionHappiness.description>Mais feliz em ambientes poluídos, com mais alegria e satisfação conforme a poluição aumenta.</VRE_PollutionHappiness.description>
+  <!-- EN: This creature has increased mood from their exposure to pollution. -->
+  <VRE_PollutionHappiness.descriptionShort>Esta criatura está de melhor humor pela exposição à poluição.</VRE_PollutionHappiness.descriptionShort>
+  <!-- EN: inactive -->
+  <VRE_PollutionHappiness.stages.inactive.label>inativa</VRE_PollutionHappiness.stages.inactive.label>
+  <!-- EN: minor -->
+  <VRE_PollutionHappiness.stages.minor.label>leve</VRE_PollutionHappiness.stages.minor.label>
+  <!-- EN: moderate -->
+  <VRE_PollutionHappiness.stages.moderate.label>moderada</VRE_PollutionHappiness.stages.moderate.label>
+  <!-- EN: extreme -->
+  <VRE_PollutionHappiness.stages.extreme.label>extrema</VRE_PollutionHappiness.stages.extreme.label>
+  <!-- EN: pollution productivity -->
+  <VRE_PollutionProductivity.label>produtividade da poluição</VRE_PollutionProductivity.label>
+  <!-- EN: Having work speed significantly improved in polluted environments and completing tasks more efficiently and swiftly as pollution levels increase. -->
+  <VRE_PollutionProductivity.description>Trabalhando muito mais rápido em ambientes poluídos, completando tarefas com mais eficiência e agilidade conforme a poluição aumenta.</VRE_PollutionProductivity.description>
+  <!-- EN: This creature has enhanced productivity from their exposure to pollution. -->
+  <VRE_PollutionProductivity.descriptionShort>Esta criatura está mais produtiva pela exposição à poluição.</VRE_PollutionProductivity.descriptionShort>
+  <!-- EN: inactive -->
+  <VRE_PollutionProductivity.stages.inactive.label>inativa</VRE_PollutionProductivity.stages.inactive.label>
+  <!-- EN: minor -->
+  <VRE_PollutionProductivity.stages.minor.label>leve</VRE_PollutionProductivity.stages.minor.label>
+  <!-- EN: moderate -->
+  <VRE_PollutionProductivity.stages.moderate.label>moderada</VRE_PollutionProductivity.stages.moderate.label>
+  <!-- EN: extreme -->
+  <VRE_PollutionProductivity.stages.extreme.label>extrema</VRE_PollutionProductivity.stages.extreme.label>
+  <!-- EN: pollution psy-sensitivity -->
+  <VRE_PollutionPsySensitivity.label>psicossensibilidade da poluição</VRE_PollutionPsySensitivity.label>
+  <!-- EN: Experiencing amplified psychic sensitivity in polluted environments, leading to stronger intuition and telepathic skills as pollution levels increase. -->
+  <VRE_PollutionPsySensitivity.description>Com sensibilidade psíquica amplificada em ambientes poluídos, intuição e telepatia mais fortes conforme a poluição aumenta.</VRE_PollutionPsySensitivity.description>
+  <!-- EN: This creature has enhanced psychic sensitivity from their exposure to pollution. -->
+  <VRE_PollutionPsySensitivity.descriptionShort>Esta criatura tem a sensibilidade psíquica aumentada pela exposição à poluição.</VRE_PollutionPsySensitivity.descriptionShort>
+  <!-- EN: inactive -->
+  <VRE_PollutionPsySensitivity.stages.inactive.label>inativa</VRE_PollutionPsySensitivity.stages.inactive.label>
+  <!-- EN: minor -->
+  <VRE_PollutionPsySensitivity.stages.minor.label>leve</VRE_PollutionPsySensitivity.stages.minor.label>
+  <!-- EN: moderate -->
+  <VRE_PollutionPsySensitivity.stages.moderate.label>moderada</VRE_PollutionPsySensitivity.stages.moderate.label>
+  <!-- EN: extreme -->
+  <VRE_PollutionPsySensitivity.stages.extreme.label>extrema</VRE_PollutionPsySensitivity.stages.extreme.label>
+  <!-- EN: pollution fertility -->
+  <VRE_PollutionFertility.label>fertilidade da poluição</VRE_PollutionFertility.label>
+  <!-- EN: Experiencing a boost to fertility in polluted environments, allowing for increased offspring production and faster lineage expansion in hazardous conditions. -->
+  <VRE_PollutionFertility.description>Mais fértil em ambientes poluídos, gerando mais descendentes e expandindo a linhagem mais rápido em condições perigosas.</VRE_PollutionFertility.description>
+  <!-- EN: This creature has enhanced fertility from their exposure to pollution. -->
+  <VRE_PollutionFertility.descriptionShort>Esta criatura está mais fértil pela exposição à poluição.</VRE_PollutionFertility.descriptionShort>
+  <!-- EN: inactive -->
+  <VRE_PollutionFertility.stages.inactive.label>inativa</VRE_PollutionFertility.stages.inactive.label>
+  <!-- EN: minor -->
+  <VRE_PollutionFertility.stages.minor.label>leve</VRE_PollutionFertility.stages.minor.label>
+  <!-- EN: moderate -->
+  <VRE_PollutionFertility.stages.moderate.label>moderada</VRE_PollutionFertility.stages.moderate.label>
+  <!-- EN: extreme -->
+  <VRE_PollutionFertility.stages.extreme.label>extrema</VRE_PollutionFertility.stages.extreme.label>
+  <!-- EN: pollution accuracy -->
+  <VRE_PollutionAccuracy.label>precisão da poluição</VRE_PollutionAccuracy.label>
+  <!-- EN: Getting improved steadiness and precision in polluted environments. -->
+  <VRE_PollutionAccuracy.description>Com mais firmeza e precisão em ambientes poluídos.</VRE_PollutionAccuracy.description>
+  <!-- EN: This creature has improved accuracy from their exposure to pollution. -->
+  <VRE_PollutionAccuracy.descriptionShort>Esta criatura tem a mira melhorada pela exposição à poluição.</VRE_PollutionAccuracy.descriptionShort>
+  <!-- EN: inactive -->
+  <VRE_PollutionAccuracy.stages.inactive.label>inativa</VRE_PollutionAccuracy.stages.inactive.label>
+  <!-- EN: minor -->
+  <VRE_PollutionAccuracy.stages.minor.label>leve</VRE_PollutionAccuracy.stages.minor.label>
+  <!-- EN: moderate -->
+  <VRE_PollutionAccuracy.stages.moderate.label>moderada</VRE_PollutionAccuracy.stages.moderate.label>
+  <!-- EN: extreme -->
+  <VRE_PollutionAccuracy.stages.extreme.label>extrema</VRE_PollutionAccuracy.stages.extreme.label>
+</LanguageData>

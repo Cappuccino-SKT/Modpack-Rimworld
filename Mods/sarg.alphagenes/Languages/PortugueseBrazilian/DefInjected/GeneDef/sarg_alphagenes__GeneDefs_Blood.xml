@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <!-- EN: chemfuel blood -->
+  <AG_ChemfuelBlood.label>sangue de combustível químico</AG_ChemfuelBlood.label>
+  <!-- EN: Carriers of this gene have a chemfuel powered metabolism, and as such will bleed chemfuel instead of normal human blood. This blood is flammable. -->
+  <AG_ChemfuelBlood.description>Portadores deste gene têm metabolismo movido a combustível químico e, por isso, sangram combustível químico em vez de sangue humano normal. Esse sangue é inflamável.</AG_ChemfuelBlood.description>
+  <!-- EN: chem -->
+  <AG_ChemfuelBlood.symbolPack.prefixSymbols.0.symbol>quím</AG_ChemfuelBlood.symbolPack.prefixSymbols.0.symbol>
+  <!-- EN: explo -->
+  <AG_ChemfuelBlood.symbolPack.prefixSymbols.1.symbol>explo</AG_ChemfuelBlood.symbolPack.prefixSymbols.1.symbol>
+  <!-- EN: boom -->
+  <AG_ChemfuelBlood.symbolPack.prefixSymbols.2.symbol>bum</AG_ChemfuelBlood.symbolPack.prefixSymbols.2.symbol>
+  <!-- EN: chembleeder -->
+  <AG_ChemfuelBlood.symbolPack.wholeNameSymbols.0.symbol>sangra-combustível</AG_ChemfuelBlood.symbolPack.wholeNameSymbols.0.symbol>
+  <!-- EN: slime blood -->
+  <AG_SlimeBlood.label>sangue de gosma</AG_SlimeBlood.label>
+  <!-- EN: Carriers of this gene have slimy, green coloured blood. This blood is thick, exceptionally ugly, and doesn't go away on its own. -->
+  <AG_SlimeBlood.description>Portadores deste gene têm sangue verde e gosmento. É grosso, excepcionalmente feio e não some sozinho.</AG_SlimeBlood.description>
+  <!-- EN: slimy -->
+  <AG_SlimeBlood.symbolPack.prefixSymbols.0.symbol>gosmento</AG_SlimeBlood.symbolPack.prefixSymbols.0.symbol>
+  <!-- EN: mucus -->
+  <AG_SlimeBlood.symbolPack.prefixSymbols.1.symbol>muco</AG_SlimeBlood.symbolPack.prefixSymbols.1.symbol>
+  <!-- EN: booger -->
+  <AG_SlimeBlood.symbolPack.prefixSymbols.2.symbol>meleca</AG_SlimeBlood.symbolPack.prefixSymbols.2.symbol>
+  <!-- EN: slimebleeder -->
+  <AG_SlimeBlood.symbolPack.wholeNameSymbols.0.symbol>sangra-gosma</AG_SlimeBlood.symbolPack.wholeNameSymbols.0.symbol>
+  <!-- EN: acidic blood -->
+  <AG_AcidicBlood.label>sangue ácido</AG_AcidicBlood.label>
+  <!-- EN: Carriers of this gene have extremely acidic blood. This blood doesn't harm them, but it will spill everywhere when they are slain, hurting all people nearby. -->
+  <AG_AcidicBlood.description>Portadores deste gene têm sangue extremamente ácido. O sangue não os fere, mas espirra para todo lado quando morrem, ferindo todos por perto.</AG_AcidicBlood.description>
+  <!-- EN: acid -->
+  <AG_AcidicBlood.symbolPack.prefixSymbols.0.symbol>ácido</AG_AcidicBlood.symbolPack.prefixSymbols.0.symbol>
+  <!-- EN: caust -->
+  <AG_AcidicBlood.symbolPack.prefixSymbols.1.symbol>cáust</AG_AcidicBlood.symbolPack.prefixSymbols.1.symbol>
+  <!-- EN: xenomorph -->
+  <AG_AcidicBlood.symbolPack.wholeNameSymbols.0.symbol>xenomorfo</AG_AcidicBlood.symbolPack.wholeNameSymbols.0.symbol>
+  <!-- EN: tarlike blood -->
+  <AG_TarBlood.label>sangue de piche</AG_TarBlood.label>
+  <!-- EN: Carriers of this gene have very thick, dark and sticky blood, similar to tar. This blood impedes movement. -->
+  <AG_TarBlood.description>Portadores deste gene têm sangue muito grosso, escuro e pegajoso, parecido com piche. Esse sangue atrapalha o movimento.</AG_TarBlood.description>
+  <!-- EN: tar -->
+  <AG_TarBlood.symbolPack.prefixSymbols.0.symbol>piche</AG_TarBlood.symbolPack.prefixSymbols.0.symbol>
+  <!-- EN: stick -->
+  <AG_TarBlood.symbolPack.prefixSymbols.1.symbol>grude</AG_TarBlood.symbolPack.prefixSymbols.1.symbol>
+  <!-- EN: oil -->
+  <AG_TarBlood.symbolPack.prefixSymbols.2.symbol>óleo</AG_TarBlood.symbolPack.prefixSymbols.2.symbol>
+  <!-- EN: tarbleeder -->
+  <AG_TarBlood.symbolPack.wholeNameSymbols.0.symbol>sangra-piche</AG_TarBlood.symbolPack.wholeNameSymbols.0.symbol>
+  <!-- EN: insect blood -->
+  <AG_InsectBlood.label>sangue de inseto</AG_InsectBlood.label>
+  <!-- EN: Carriers of this gene have insect blood. -->
+  <AG_InsectBlood.description>Portadores deste gene têm sangue de inseto.</AG_InsectBlood.description>
+  <!-- EN: insect -->
+  <AG_InsectBlood.symbolPack.prefixSymbols.0.symbol>inseto</AG_InsectBlood.symbolPack.prefixSymbols.0.symbol>
+  <!-- EN: ento -->
+  <AG_InsectBlood.symbolPack.prefixSymbols.1.symbol>ento</AG_InsectBlood.symbolPack.prefixSymbols.1.symbol>
+  <!-- EN: insectbleeder -->
+  <AG_InsectBlood.symbolPack.wholeNameSymbols.0.symbol>sangra-inseto</AG_InsectBlood.symbolPack.wholeNameSymbols.0.symbol>
+  <!-- EN: firefoam blood -->
+  <AG_FirefoamBlood.label>sangue de espuma antichamas</AG_FirefoamBlood.label>
+  <!-- EN: Carriers of this gene have a weird fire retardant mixture for blood. This blood is not potent enough to put down fires, but it will not let flames spread. -->
+  <AG_FirefoamBlood.description>Portadores deste gene têm no lugar do sangue uma mistura estranha que retarda o fogo. Não é forte o bastante para apagar incêndios, mas impede as chamas de se espalharem.</AG_FirefoamBlood.description>
+  <!-- EN: foam -->
+  <AG_FirefoamBlood.symbolPack.prefixSymbols.0.symbol>espuma</AG_FirefoamBlood.symbolPack.prefixSymbols.0.symbol>
+  <!-- EN: flamma -->
+  <AG_FirefoamBlood.symbolPack.prefixSymbols.1.symbol>flama</AG_FirefoamBlood.symbolPack.prefixSymbols.1.symbol>
+  <!-- EN: foambleeder -->
+  <AG_FirefoamBlood.symbolPack.wholeNameSymbols.0.symbol>sangra-espuma</AG_FirefoamBlood.symbolPack.wholeNameSymbols.0.symbol>
+  <!-- EN: pebble blood -->
+  <AG_PebbleBlood.label>sangue de cascalho</AG_PebbleBlood.label>
+  <!-- EN: Carriers of this gene have partially crystallized blood, that takes the form of small stone-like pebbles as soon as it comes into contact with air. This blood affects much less the beauty and cleanliness of its surroundings, but takes more time to go away and more work to clean. -->
+  <AG_PebbleBlood.description>Portadores deste gene têm sangue parcialmente cristalizado, que vira pequenas pedrinhas assim que entra em contato com o ar. Esse sangue afeta bem menos a beleza e a limpeza do ambiente, mas demora mais para sumir e dá mais trabalho para limpar.</AG_PebbleBlood.description>
+  <!-- EN: rock -->
+  <AG_PebbleBlood.symbolPack.prefixSymbols.0.symbol>pedra</AG_PebbleBlood.symbolPack.prefixSymbols.0.symbol>
+  <!-- EN: pebble -->
+  <AG_PebbleBlood.symbolPack.prefixSymbols.1.symbol>cascalho</AG_PebbleBlood.symbolPack.prefixSymbols.1.symbol>
+  <!-- EN: litho -->
+  <AG_PebbleBlood.symbolPack.prefixSymbols.2.symbol>lito</AG_PebbleBlood.symbolPack.prefixSymbols.2.symbol>
+  <!-- EN: rock-bleeder -->
+  <AG_PebbleBlood.symbolPack.wholeNameSymbols.0.symbol>sangra-pedra</AG_PebbleBlood.symbolPack.wholeNameSymbols.0.symbol>
+  <!-- EN: water blood -->
+  <AG_WaterBlood.label>sangue aguado</AG_WaterBlood.label>
+  <!-- EN: Carriers of this gene have watered down blood. Their blood is so thin that puddles of it will be virtually indistinguishable from water. -->
+  <AG_WaterBlood.description>Portadores deste gene têm o sangue diluído. É tão ralo que as poças são praticamente indistinguíveis de água.</AG_WaterBlood.description>
+  <!-- EN: cryo blood -->
+  <AG_CryoBlood.label>criossangue</AG_CryoBlood.label>
+  <!-- EN: Carriers of this gene have a cryogenic fluid for blood. This liquid will quickly drop the temperature of its surroundings, making it both useful and incredibly dangerous. Dissipates faster than normal blood but can't be cleaned. -->
+  <AG_CryoBlood.description>Portadores deste gene têm um fluido criogênico no lugar do sangue. Esse líquido baixa rápido a temperatura ao redor, o que o torna útil e extremamente perigoso. Some mais rápido que o sangue normal, mas não pode ser limpo.</AG_CryoBlood.description>
+  <!-- EN: cryo -->
+  <AG_CryoBlood.symbolPack.prefixSymbols.0.symbol>crio</AG_CryoBlood.symbolPack.prefixSymbols.0.symbol>
+  <!-- EN: cryobleeder -->
+  <AG_CryoBlood.symbolPack.wholeNameSymbols.0.symbol>sangra-gelo</AG_CryoBlood.symbolPack.wholeNameSymbols.0.symbol>
+  <!-- EN: yellow blood -->
+  <AG_ForsakenBlood.label>sangue amarelo</AG_ForsakenBlood.label>
+  <!-- EN: Carriers of this gene have yellow blood. -->
+  <AG_ForsakenBlood.description>Portadores deste gene têm sangue amarelo.</AG_ForsakenBlood.description>
+</LanguageData>

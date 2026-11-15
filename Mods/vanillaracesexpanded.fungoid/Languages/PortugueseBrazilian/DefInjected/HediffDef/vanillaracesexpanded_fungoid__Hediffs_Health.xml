@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <!-- EN: gene infection -->
+  <VRE_GeneInfection.label>infecção genética</VRE_GeneInfection.label>
+  <!-- EN: This person was implanted a copy of a xenogerm through a melee attack. This has triggered a progressing infection which, if left untreated will apply this xenogerm to them. -->
+  <VRE_GeneInfection.description>Esta pessoa recebeu uma cópia de um xenogerminador por meio de um ataque corpo a corpo. Isso causou uma infecção progressiva que, se não for tratada, aplica esse xenogerminador nela.</VRE_GeneInfection.description>
+  <!-- EN: {0} has been afflicted with a gene infection! If the infection is not treated successfully, they'll be painfully converted into the xenotype of the person who infected them. -->
+  <VRE_GeneInfection.comps.HediffComp_Discoverable.discoverLetterText>{0} pegou uma infecção genética! Se a infecção não for tratada com sucesso, a pessoa será convertida dolorosamente no xenotipo de quem a infectou.</VRE_GeneInfection.comps.HediffComp_Discoverable.discoverLetterText>
+  <!-- EN: a gene infection -->
+  <VRE_GeneInfection.labelNoun>uma infecção genética</VRE_GeneInfection.labelNoun>
+  <!-- EN: minor -->
+  <VRE_GeneInfection.stages.minor.label>leve</VRE_GeneInfection.stages.minor.label>
+  <!-- EN: major -->
+  <VRE_GeneInfection.stages.major.label>grave</VRE_GeneInfection.stages.major.label>
+  <!-- EN: extreme -->
+  <VRE_GeneInfection.stages.extreme-0.label>extrema</VRE_GeneInfection.stages.extreme-0.label>
+  <!-- EN: extreme -->
+  <VRE_GeneInfection.stages.extreme-1.label>extrema</VRE_GeneInfection.stages.extreme-1.label>
+  <!-- EN: gene infected -->
+  <VRE_GeneInfected.label>infectado geneticamente</VRE_GeneInfected.label>
+  <!-- EN: This person was the victim of a gene infection that altered their xenotype. This can't be cured. -->
+  <VRE_GeneInfected.description>Esta pessoa foi vítima de uma infecção genética que alterou seu xenotipo. Isso não tem cura.</VRE_GeneInfected.description>
+</LanguageData>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <!-- EN: chemfuel vomit -->
+  <AG_ChemfuelVomit.label>vômito de combustível químico</AG_ChemfuelVomit.label>
+  <!-- EN: Carriers of this gene have a chemfuel powered metabolism, and as such will vomit chemfuel. This vomit is flammable. -->
+  <AG_ChemfuelVomit.description>Portadores deste gene têm metabolismo movido a combustível químico e, por isso, vomitam combustível químico. Esse vômito é inflamável.</AG_ChemfuelVomit.description>
+  <!-- EN: chem -->
+  <AG_ChemfuelVomit.symbolPack.prefixSymbols.0.symbol>quím</AG_ChemfuelVomit.symbolPack.prefixSymbols.0.symbol>
+  <!-- EN: explo -->
+  <AG_ChemfuelVomit.symbolPack.prefixSymbols.1.symbol>explo</AG_ChemfuelVomit.symbolPack.prefixSymbols.1.symbol>
+  <!-- EN: boom -->
+  <AG_ChemfuelVomit.symbolPack.prefixSymbols.2.symbol>bum</AG_ChemfuelVomit.symbolPack.prefixSymbols.2.symbol>
+  <!-- EN: chempuker -->
+  <AG_ChemfuelVomit.symbolPack.wholeNameSymbols.0.symbol>vomita-combustível</AG_ChemfuelVomit.symbolPack.wholeNameSymbols.0.symbol>
+  <!-- EN: blood vomit -->
+  <AG_BloodVomit.label>vômito de sangue</AG_BloodVomit.label>
+  <!-- EN: Carriers of this gene will violently vomit blood instead of normal vomit. This will cause internal bleeding every time they vomit, causing cuts and bruises over their whole body. -->
+  <AG_BloodVomit.description>Portadores deste gene vomitam sangue com violência em vez de vômito normal. Isso causa hemorragia interna a cada vômito, com cortes e hematomas pelo corpo todo.</AG_BloodVomit.description>
+  <!-- EN: bloody -->
+  <AG_BloodVomit.symbolPack.prefixSymbols.0.symbol>sangrento</AG_BloodVomit.symbolPack.prefixSymbols.0.symbol>
+  <!-- EN: hemo -->
+  <AG_BloodVomit.symbolPack.prefixSymbols.1.symbol>hemo</AG_BloodVomit.symbolPack.prefixSymbols.1.symbol>
+  <!-- EN: bloodpuker -->
+  <AG_BloodVomit.symbolPack.wholeNameSymbols.0.symbol>vomita-sangue</AG_BloodVomit.symbolPack.wholeNameSymbols.0.symbol>
+  <!-- EN: rat vomit -->
+  <AG_RatVomit.label>vômito de ratos</AG_RatVomit.label>
+  <!-- EN: Carriers of this gene will vomit clumps of mechanites that coalesce into pseudo-organic rats. This is such an incredibly cruel and disgusting thing that it's not clear if it's the result of a genetic experiment gone horribly wrong, or just a macabre prank by a truly unethical geneticist. -->
+  <AG_RatVomit.description>Portadores deste gene vomitam bolos de mecanitos que se juntam em ratos pseudo-orgânicos. É algo tão incrivelmente cruel e nojento que não se sabe se é resultado de um experimento genético que deu terrivelmente errado ou só uma pegadinha macabra de um geneticista sem nenhuma ética.</AG_RatVomit.description>
+  <!-- EN: ratty -->
+  <AG_RatVomit.symbolPack.prefixSymbols.0.symbol>ratinho</AG_RatVomit.symbolPack.prefixSymbols.0.symbol>
+  <!-- EN: ratpuker -->
+  <AG_RatVomit.symbolPack.wholeNameSymbols.0.symbol>vomita-rato</AG_RatVomit.symbolPack.wholeNameSymbols.0.symbol>
+  <!-- EN: water vomit -->
+  <AG_PukeWater.label>vômito de água</AG_PukeWater.label>
+  <!-- EN: Carriers of this gene will vomit water instead of normal vomit. -->
+  <AG_PukeWater.description>Portadores deste gene vomitam água em vez de vômito normal.</AG_PukeWater.description>
+  <!-- EN: bile vomit -->
+  <AG_PukeBile.label>vômito de bile</AG_PukeBile.label>
+  <!-- EN: Carriers of this gene will vomit corpse bile instead of normal vomit. This liquid is even more revolting than normal vomit. -->
+  <AG_PukeBile.description>Portadores deste gene vomitam bile de cadáver em vez de vômito normal. Esse líquido é ainda mais repugnante que o vômito normal.</AG_PukeBile.description>
+  <!-- EN: cryo vomit -->
+  <AG_PukeCryo.label>criovômito</AG_PukeCryo.label>
+  <!-- EN: Carriers of this gene will vomit cryogenic fluid instead of normal vomit. This liquid will quickly drop the temperature of its surroundings, making it both useful and incredibly dangerous. Dissipates faster than normal vomit but can't be cleaned. -->
+  <AG_PukeCryo.description>Portadores deste gene vomitam fluido criogênico em vez de vômito normal. Esse líquido baixa rápido a temperatura ao redor, o que o torna útil e extremamente perigoso. Some mais rápido que o vômito normal, mas não pode ser limpo.</AG_PukeCryo.description>
+</LanguageData>

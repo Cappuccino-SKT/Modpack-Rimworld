@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <!-- EN: chemfuel sacks -->
+  <VRE_ChemfuelSacks.label>bolsas de combustível químico</VRE_ChemfuelSacks.label>
+  <!-- EN: Chemfuel sacks make this person very volatile. If set on fire, and the fire is at least 35 in size, they explode in a fire explosion. Upon fire explosion, they will not explode again for 24 hours.\n\nWill produce 30 chemfuel every 10 days. -->
+  <VRE_ChemfuelSacks.description>As bolsas de combustível químico deixam esta pessoa muito volátil. Se pegar fogo, e o fogo tiver tamanho de pelo menos 35, ela explode numa bola de fogo. Depois de explodir, não explode de novo por 24 horas.\n\nProduz 30 de combustível químico a cada 10 dias.</VRE_ChemfuelSacks.description>
+  <!-- EN: acid burstsack -->
+  <VRE_AcidBurstSack.label>bolsa de ácido explosiva</VRE_AcidBurstSack.label>
+  <!-- EN: Upon taking large amounts of damage in a single instance, this person will undergo an acid explosion, covering everything and everyone in 4.9 tile radius in corrosive acid, damaging them over time. -->
+  <VRE_AcidBurstSack.description>Ao sofrer muito dano de uma só vez, esta pessoa explode em ácido, cobrindo tudo e todos num raio de 4,9 quadrados com ácido corrosivo, que causa dano ao longo do tempo.</VRE_AcidBurstSack.description>
+  <!-- EN: mineral-rich insectskin -->
+  <VRE_MineralRichInsectskin.label>pele de inseto mineralizada</VRE_MineralRichInsectskin.label>
+  <!-- EN: Mineral-rich insectskin forming thick, protective plating. This natural armor provides significant protection until enough damage is sustained to break it. -->
+  <VRE_MineralRichInsectskin.description>Pele de inseto rica em minerais que forma placas grossas e protetoras. Essa armadura natural protege bastante até sofrer dano suficiente para se quebrar.</VRE_MineralRichInsectskin.description>
+</LanguageData>

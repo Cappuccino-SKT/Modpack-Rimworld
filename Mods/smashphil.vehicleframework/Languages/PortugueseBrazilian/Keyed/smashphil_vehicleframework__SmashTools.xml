@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <!-- EN: Copy -->
+  <ST_Copy>Copiar</ST_Copy>
+  <!-- EN: Paste -->
+  <ST_Paste>Colar</ST_Paste>
+  <!-- EN: Delete -->
+  <ST_Delete>Apagar</ST_Delete>
+  <!-- EN: Animator -->
+  <ST_AnimationWindow>Animador</ST_AnimationWindow>
+  <!-- EN: Controller -->
+  <ST_ControllerWindow>Controlador</ST_ControllerWindow>
+  <!-- EN: Create New Clip... -->
+  <ST_CreateNewClip>Criar novo clipe...</ST_CreateNewClip>
+  <!-- EN: Remove Properties -->
+  <ST_RemoveProperties>Remover propriedades</ST_RemoveProperties>
+  <!-- EN: Add Key -->
+  <ST_AddKey>Adicionar chave</ST_AddKey>
+  <!-- EN: Delete Key -->
+  <ST_RemoveKey>Apagar chave</ST_RemoveKey>
+  <!-- EN: Preview -->
+  <ST_PreviewAnimation>Pré-visualizar</ST_PreviewAnimation>
+  <!-- EN: Enable/disable preview mode of entity's animation in-game -->
+  <ST_PreviewAnimationTooltip>Liga/desliga o modo de pré-visualização da animação da entidade no jogo</ST_PreviewAnimationTooltip>
+  <!-- EN: Play the animation -->
+  <ST_PlayAnimationTooltip>Tocar a animação</ST_PlayAnimationTooltip>
+  <!-- EN: Pause the animation -->
+  <ST_PauseAnimationTooltip>Pausar a animação</ST_PauseAnimationTooltip>
+  <!-- EN: Go to the beginning of the animation -->
+  <ST_SkipFrameBeginningTooltip>Ir para o início da animação</ST_SkipFrameBeginningTooltip>
+  <!-- EN: Go to previous keyframe -->
+  <ST_SkipFramePreviousTooltip>Ir para o quadro-chave anterior</ST_SkipFramePreviousTooltip>
+  <!-- EN: Go to next keyframe -->
+  <ST_SkipFrameNextTooltip>Ir para o próximo quadro-chave</ST_SkipFrameNextTooltip>
+  <!-- EN: Go to the end of the animation -->
+  <ST_SkipFrameEndTooltip>Ir para o fim da animação</ST_SkipFrameEndTooltip>
+  <!-- EN: Add keyframe -->
+  <ST_AddKeyFrame>Adicionar quadro-chave</ST_AddKeyFrame>
+  <!-- EN: Add event -->
+  <ST_AddAnimationEvent>Adicionar evento</ST_AddAnimationEvent>
+  <!-- EN: Add Property -->
+  <ST_AddProperty>Adicionar propriedade</ST_AddProperty>
+  <!-- EN: Injected -->
+  <ST_Injected>Injetado</ST_Injected>
+  <!-- EN: UnsupportedType -->
+  <ST_UnsupportedType>TipoNãoSuportado</ST_UnsupportedType>
+  <!-- EN: No Function Selected -->
+  <ST_NoFunctionSelected>Nenhuma função escolhida</ST_NoFunctionSelected>
+  <!-- EN: No Controller Parameters -->
+  <ST_NoControllerParameters>Sem parâmetros de controlador</ST_NoControllerParameters>
+  <!-- EN: Dopesheet -->
+  <ST_DopesheetTab>Folha de animação</ST_DopesheetTab>
+  <!-- EN: Curves -->
+  <ST_CurvesTab>Curvas</ST_CurvesTab>
+  <!-- EN: Layers -->
+  <ST_Layers>Camadas</ST_Layers>
+  <!-- EN: Parameters -->
+  <ST_Parameters>Parâmetros</ST_Parameters>
+  <!-- EN: Conditions -->
+  <ST_Conditions>Condições</ST_Conditions>
+  <!-- EN: Create State -->
+  <ST_CreateState>Criar estado</ST_CreateState>
+  <!-- EN: Create Sub-State Machine -->
+  <ST_CreateSubState>Criar submáquina de estados</ST_CreateSubState>
+  <!-- EN: Make Transition -->
+  <ST_MakeTransition>Criar transição</ST_MakeTransition>
+  <!-- EN: Set as Layer Default State -->
+  <ST_SetStateDefault>Definir como estado padrão da camada</ST_SetStateDefault>
+  <!-- EN: Create new BlendTree in State -->
+  <ST_CreateBlendTree>Criar nova BlendTree no estado</ST_CreateBlendTree>
+  <!-- EN: Loop -->
+  <ST_Loop>Repetir</ST_Loop>
+  <!-- EN: Motion -->
+  <ST_MotionFile>Movimento</ST_MotionFile>
+  <!-- EN: Speed -->
+  <ST_MotionSpeed>Velocidade</ST_MotionSpeed>
+  <!-- EN: Multiplier -->
+  <ST_MotionSpeedMultiplier>Multiplicador</ST_MotionSpeedMultiplier>
+  <!-- EN: Motion Time -->
+  <ST_MotionTime>Tempo do movimento</ST_MotionTime>
+  <!-- EN: Mirror -->
+  <ST_Mirror>Espelhar</ST_Mirror>
+  <!-- EN: Cycle Offset -->
+  <ST_CycleOffset>Deslocamento do ciclo</ST_CycleOffset>
+  <!-- EN: Write Defaults -->
+  <ST_WriteDefaults>Gravar padrões</ST_WriteDefaults>
+  <!-- EN: Transitions -->
+  <ST_TransitionList>Transições</ST_TransitionList>
+  <!-- EN: Solo -->
+  <ST_TransitionSolo>Solo</ST_TransitionSolo>
+  <!-- EN: Mute -->
+  <ST_TransitionMute>Mudo</ST_TransitionMute>
+</LanguageData>

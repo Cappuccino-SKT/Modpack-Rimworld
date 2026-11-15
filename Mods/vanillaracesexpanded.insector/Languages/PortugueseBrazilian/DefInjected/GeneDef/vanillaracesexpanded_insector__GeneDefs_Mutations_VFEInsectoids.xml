@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <!-- EN: microsized -->
+  <VRE_Microsized.label>microtamanho</VRE_Microsized.label>
+  <!-- EN: Carriers of this gene exhibit a microsized stature, significantly smaller than their counterparts. Their reduced size results in increased stagger duration, lower meat and leather yield, and a smaller yet more efficient hunger requirement. -->
+  <VRE_Microsized.description>Portadores deste gene têm estatura micro, bem menor que a de seus semelhantes. O tamanho reduzido aumenta a duração do cambaleio, diminui o rendimento de carne e couro e reduz a necessidade de comida, que fica mais eficiente.</VRE_Microsized.description>
+  <!-- EN: small -->
+  <VRE_Microsized.symbolPack.prefixSymbols.0.symbol>pequeno</VRE_Microsized.symbolPack.prefixSymbols.0.symbol>
+  <!-- EN: tiny -->
+  <VRE_Microsized.symbolPack.prefixSymbols.1.symbol>minúsculo</VRE_Microsized.symbolPack.prefixSymbols.1.symbol>
+  <!-- EN: mini -->
+  <VRE_Microsized.symbolPack.prefixSymbols.2.symbol>mini</VRE_Microsized.symbolPack.prefixSymbols.2.symbol>
+  <!-- EN: colossal -->
+  <VRE_Colossal.label>colossal</VRE_Colossal.label>
+  <!-- EN: Carriers of this gene grow to colossal proportions, towering over their peers. Their immense size increases meat and leather yield and hunger needs, while reducing movement speed and melee dodge chance. If equipped with the right enhancements, they can carry the heaviest of weapons and warcasket armaments. -->
+  <VRE_Colossal.description>Portadores deste gene crescem até proporções colossais, muito acima dos semelhantes. O tamanho imenso aumenta o rendimento de carne e couro e a fome, mas reduz a velocidade e a chance de esquiva corpo a corpo. Com os aprimoramentos certos, podem carregar as armas mais pesadas e o armamento de caixão de guerra.</VRE_Colossal.description>
+  <!-- EN: large -->
+  <VRE_Colossal.symbolPack.prefixSymbols.0.symbol>grande</VRE_Colossal.symbolPack.prefixSymbols.0.symbol>
+  <!-- EN: big -->
+  <VRE_Colossal.symbolPack.prefixSymbols.1.symbol>grandão</VRE_Colossal.symbolPack.prefixSymbols.1.symbol>
+  <!-- EN: magni -->
+  <VRE_Colossal.symbolPack.prefixSymbols.2.symbol>magni</VRE_Colossal.symbolPack.prefixSymbols.2.symbol>
+  <!-- EN: chemfuel sacks -->
+  <VRE_ChemfuelSacks.label>bolsas de combustível químico</VRE_ChemfuelSacks.label>
+  <!-- EN: Carriers of this gene develop chemfuel sacks resembling a tail, drastically increasing their susceptibility to flame damage. If engulfed in large enough flames or upon death, they erupt in a fiery explosion. Additionally, they can be "milked" periodically to yield chemfuel. -->
+  <VRE_ChemfuelSacks.description>Portadores deste gene desenvolvem bolsas de combustível químico em forma de cauda, o que aumenta drasticamente a vulnerabilidade ao fogo. Se envoltos em chamas grandes o bastante, ou ao morrer, explodem numa bola de fogo. Além disso, podem ser "ordenhados" periodicamente para render combustível químico.</VRE_ChemfuelSacks.description>
+  <!-- EN: fuel -->
+  <VRE_ChemfuelSacks.symbolPack.prefixSymbols.0.symbol>combustível</VRE_ChemfuelSacks.symbolPack.prefixSymbols.0.symbol>
+  <!-- EN: chem -->
+  <VRE_ChemfuelSacks.symbolPack.prefixSymbols.1.symbol>químico</VRE_ChemfuelSacks.symbolPack.prefixSymbols.1.symbol>
+  <!-- EN: petrol -->
+  <VRE_ChemfuelSacks.symbolPack.prefixSymbols.2.symbol>petro</VRE_ChemfuelSacks.symbolPack.prefixSymbols.2.symbol>
+  <!-- EN: pyrophilic -->
+  <VRE_Pyrophiliac.label>pirófilo</VRE_Pyrophiliac.label>
+  <!-- EN: Carriers of this gene possess a pyrophilic nature, exhibiting a fascination and love for fire. They are drawn to flames and find comfort and joy in their presence. -->
+  <VRE_Pyrophiliac.description>Portadores deste gene têm natureza pirófila, com fascínio e amor pelo fogo. São atraídos pelas chamas e encontram conforto e alegria perto delas.</VRE_Pyrophiliac.description>
+  <!-- EN: fire -->
+  <VRE_Pyrophiliac.symbolPack.prefixSymbols.0.symbol>fogo</VRE_Pyrophiliac.symbolPack.prefixSymbols.0.symbol>
+  <!-- EN: flame -->
+  <VRE_Pyrophiliac.symbolPack.prefixSymbols.1.symbol>chama</VRE_Pyrophiliac.symbolPack.prefixSymbols.1.symbol>
+  <!-- EN: pyro -->
+  <VRE_Pyrophiliac.symbolPack.prefixSymbols.2.symbol>piro</VRE_Pyrophiliac.symbolPack.prefixSymbols.2.symbol>
+  <!-- EN: volatile -->
+  <VRE_InsectVolatile.label>volátil</VRE_InsectVolatile.label>
+  <!-- EN: Carriers of this gene exhibit volatile behavior, drastically increasing their likelihood of initiating social fights and ensuring their mental breaks are always violent when possible. They have a heightened tendency to attempt prison breaks and will use weapons in social confrontations. -->
+  <VRE_InsectVolatile.description>Portadores deste gene têm comportamento volátil: a chance de começar brigas sociais aumenta drasticamente e os colapsos mentais são sempre violentos quando possível. Tendem mais a tentar fugas da prisão e usam armas nos confrontos sociais.</VRE_InsectVolatile.description>
+  <!-- EN: aggro -->
+  <VRE_InsectVolatile.symbolPack.prefixSymbols.0.symbol>agro</VRE_InsectVolatile.symbolPack.prefixSymbols.0.symbol>
+  <!-- EN: savage -->
+  <VRE_InsectVolatile.symbolPack.prefixSymbols.1.symbol>selvagem</VRE_InsectVolatile.symbolPack.prefixSymbols.1.symbol>
+  <!-- EN: vola -->
+  <VRE_InsectVolatile.symbolPack.prefixSymbols.2.symbol>volá</VRE_InsectVolatile.symbolPack.prefixSymbols.2.symbol>
+  <!-- EN: ecdysone overdrive -->
+  <VRE_EcdysoneOverdrive.label>sobrecarga de ecdisona</VRE_EcdysoneOverdrive.label>
+  <!-- EN: Carriers of this gene experience an ecdysone overdrive, creating a constant need for kill satiety. Prolonged periods without melee kills inflict increasing mood penalties, driving them towards violent confrontations to maintain their mental balance. -->
+  <VRE_EcdysoneOverdrive.description>Portadores deste gene sofrem uma sobrecarga de ecdisona, que cria uma necessidade constante de saciar a vontade de matar. Longos períodos sem matar corpo a corpo trazem penalidades de humor crescentes, levando-os a confrontos violentos para manter o equilíbrio mental.</VRE_EcdysoneOverdrive.description>
+  <!-- EN: aggro -->
+  <VRE_EcdysoneOverdrive.symbolPack.prefixSymbols.0.symbol>agro</VRE_EcdysoneOverdrive.symbolPack.prefixSymbols.0.symbol>
+  <!-- EN: killer -->
+  <VRE_EcdysoneOverdrive.symbolPack.prefixSymbols.1.symbol>matador</VRE_EcdysoneOverdrive.symbolPack.prefixSymbols.1.symbol>
+  <!-- EN: acid burstsack -->
+  <VRE_AcidBurstSack.label>bolsa de ácido explosiva</VRE_AcidBurstSack.label>
+  <!-- EN: Carriers of this gene possess an acid burstsack, which triggers an explosive release of corrosive acid when they take a severe hit. This explosion affects everything within a wide radius, causing ongoing damage to those caught in the blast. -->
+  <VRE_AcidBurstSack.description>Portadores deste gene têm uma bolsa de ácido explosiva, que libera ácido corrosivo numa explosão quando sofrem um golpe forte. A explosão atinge tudo num raio amplo, causando dano contínuo a quem for pego.</VRE_AcidBurstSack.description>
+  <!-- EN: solid grey matter -->
+  <VRE_SolidGreyMatter.label>massa cinzenta sólida</VRE_SolidGreyMatter.label>
+  <!-- EN: Carriers of this gene have solidified grey matter, resulting in a complete inability to learn new skills. They experience accelerated skill loss, which affects them even at lower skill levels. -->
+  <VRE_SolidGreyMatter.description>Portadores deste gene têm a massa cinzenta solidificada, o que os deixa totalmente incapazes de aprender novas habilidades. Perdem habilidades mais rápido, mesmo em níveis baixos.</VRE_SolidGreyMatter.description>
+  <!-- EN: thag -->
+  <VRE_SolidGreyMatter.symbolPack.prefixSymbols.0.symbol>thag</VRE_SolidGreyMatter.symbolPack.prefixSymbols.0.symbol>
+  <!-- EN: grunt -->
+  <VRE_SolidGreyMatter.symbolPack.prefixSymbols.1.symbol>grunhido</VRE_SolidGreyMatter.symbolPack.prefixSymbols.1.symbol>
+  <!-- EN: stupid -->
+  <VRE_SolidGreyMatter.symbolPack.prefixSymbols.2.symbol>burro</VRE_SolidGreyMatter.symbolPack.prefixSymbols.2.symbol>
+  <!-- EN: dull -->
+  <VRE_SolidGreyMatter.symbolPack.prefixSymbols.3.symbol>lerdo</VRE_SolidGreyMatter.symbolPack.prefixSymbols.3.symbol>
+  <!-- EN: dumb -->
+  <VRE_SolidGreyMatter.symbolPack.prefixSymbols.4.symbol>tapado</VRE_SolidGreyMatter.symbolPack.prefixSymbols.4.symbol>
+  <!-- EN: hard-locked joints -->
+  <VRE_HardLockedJoints.label>articulações travadas</VRE_HardLockedJoints.label>
+  <!-- EN: Carriers of this gene have hardlocked joints, significantly slowing their movements. Their inflexible joints make bending and swift actions extremely difficult. -->
+  <VRE_HardLockedJoints.description>Portadores deste gene têm articulações travadas, o que deixa os movimentos muito mais lentos. Dobrar o corpo e agir rápido fica extremamente difícil.</VRE_HardLockedJoints.description>
+  <!-- EN: slow -->
+  <VRE_HardLockedJoints.symbolPack.prefixSymbols.0.symbol>lento</VRE_HardLockedJoints.symbolPack.prefixSymbols.0.symbol>
+  <!-- EN: lock -->
+  <VRE_HardLockedJoints.symbolPack.prefixSymbols.1.symbol>trava</VRE_HardLockedJoints.symbolPack.prefixSymbols.1.symbol>
+  <!-- EN: passive -->
+  <VRE_PassiveInsect.label>passivo</VRE_PassiveInsect.label>
+  <!-- EN: Carriers of this gene are inherently passive, showing no interest in and being unable to participate in combat. Their nature compels them to avoid violent confrontations entirely. -->
+  <VRE_PassiveInsect.description>Portadores deste gene são passivos por natureza: não têm interesse em combate e são incapazes de lutar. A natureza deles os faz evitar totalmente confrontos violentos.</VRE_PassiveInsect.description>
+</LanguageData>

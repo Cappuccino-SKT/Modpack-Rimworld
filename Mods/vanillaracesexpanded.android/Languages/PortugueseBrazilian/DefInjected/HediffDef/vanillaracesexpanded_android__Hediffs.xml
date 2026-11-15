@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <!-- EN: neutro loss -->
+  <VREA_NeutroLoss.label>perda de neutro</VREA_NeutroLoss.label>
+  <!-- EN: A reduction in the normal neutroamine volume. Minor neutro loss has relatively mild effects, but when neutro loss becomes severe, all subsystems become badly impaired and the android loses the ability to move. Extreme neutro loss will never lead to death.\n\nNeutro loss does not naturally recover over time. An android needs to be inserted into a neutrocasket and filled with neutroamine again. -->
+  <VREA_NeutroLoss.description>Uma redução no volume normal de neutroamina. Uma perda leve tem efeitos relativamente pequenos, mas quando fica grave, todos os subsistemas ficam muito prejudicados e o androide perde a capacidade de se mover. Uma perda extrema nunca leva à morte.\n\nA perda de neutro não se recupera sozinha com o tempo. O androide precisa ser colocado num neutrocaixão e reabastecido com neutroamina.</VREA_NeutroLoss.description>
+  <!-- EN: minor -->
+  <VREA_NeutroLoss.stages.minor-0.label>leve</VREA_NeutroLoss.stages.minor-0.label>
+  <!-- EN: minor -->
+  <VREA_NeutroLoss.stages.minor-1.label>leve</VREA_NeutroLoss.stages.minor-1.label>
+  <!-- EN: moderate -->
+  <VREA_NeutroLoss.stages.moderate.label>moderada</VREA_NeutroLoss.stages.moderate.label>
+  <!-- EN: severe -->
+  <VREA_NeutroLoss.stages.severe.label>grave</VREA_NeutroLoss.stages.severe.label>
+  <!-- EN: extreme -->
+  <VREA_NeutroLoss.stages.extreme.label>extrema</VREA_NeutroLoss.stages.extreme.label>
+  <!-- EN: freezing -->
+  <VREA_Freezing.label>congelando</VREA_Freezing.label>
+  <!-- EN: Dangerously low core android temperature. Unless re-warmed, freezing will get worse and can result in critical biocomponent damage. Recovery is quick once the android is re-warmed. Avoid freezing by equipping warm clothes on your android in cold environments. -->
+  <VREA_Freezing.description>Temperatura central do androide perigosamente baixa. Se não for reaquecido, o congelamento piora e pode causar dano crítico aos biocomponentes. A recuperação é rápida depois que o androide se aquece. Evite o congelamento vestindo roupas quentes no androide em ambientes frios.</VREA_Freezing.description>
+  <!-- EN: shivering -->
+  <VREA_Freezing.stages.shivering-0.label>tremendo</VREA_Freezing.stages.shivering-0.label>
+  <!-- EN: shivering -->
+  <VREA_Freezing.stages.shivering-1.label>tremendo</VREA_Freezing.stages.shivering-1.label>
+  <!-- EN: minor -->
+  <VREA_Freezing.stages.minor.label>leve</VREA_Freezing.stages.minor.label>
+  <!-- EN: serious -->
+  <VREA_Freezing.stages.serious.label>sério</VREA_Freezing.stages.serious.label>
+  <!-- EN: extreme -->
+  <VREA_Freezing.stages.extreme.label>extremo</VREA_Freezing.stages.extreme.label>
+  <!-- EN: freeze -->
+  <VREA_Freeze.label>congelamento</VREA_Freeze.label>
+  <!-- EN: Frozen tissue caused by exposure to cold without adequate protection. Frostbite is very painful, and frostbitten body parts are often lost. -->
+  <VREA_Freeze.description>Tecido congelado por exposição ao frio sem proteção adequada. O congelamento é muito doloroso, e partes do corpo congeladas muitas vezes se perdem.</VREA_Freeze.description>
+  <!-- EN: Lost to freeze -->
+  <VREA_Freeze.injuryProps.destroyedLabel>Perdido por congelamento</VREA_Freeze.injuryProps.destroyedLabel>
+  <!-- EN: {0} in the {1} -->
+  <VREA_Freeze.labelNounPretty>{0} no(a) {1}</VREA_Freeze.labelNounPretty>
+  <!-- EN: overheating -->
+  <VREA_Overheating.label>superaquecimento</VREA_Overheating.label>
+  <!-- EN: A generalized disruption to android functioning caused by excessive exposure to heat and sun. The android memory becomes scrambled, leading to faster drain of memory space. Recovery is quick once in a cool area, but if heat exposure continues, android will continue to lose memory space which can result in frequent reformatting. -->
+  <VREA_Overheating.description>Uma perturbação geral no funcionamento do androide causada por exposição excessiva ao calor e ao sol. A memória do androide fica embaralhada e o espaço se esgota mais rápido. A recuperação é rápida num lugar fresco, mas se a exposição continuar, o androide segue perdendo espaço de memória, o que pode causar reformatações frequentes.</VREA_Overheating.description>
+  <!-- EN: initial -->
+  <VREA_Overheating.stages.initial.label>inicial</VREA_Overheating.stages.initial.label>
+  <!-- EN: minor -->
+  <VREA_Overheating.stages.minor.label>leve</VREA_Overheating.stages.minor.label>
+  <!-- EN: serious -->
+  <VREA_Overheating.stages.serious.label>sério</VREA_Overheating.stages.serious.label>
+  <!-- EN: extreme -->
+  <VREA_Overheating.stages.extreme.label>extremo</VREA_Overheating.stages.extreme.label>
+  <!-- EN: Scanning sickness -->
+  <VREA_ScanningSickness.label>enjoo de escaneamento</VREA_ScanningSickness.label>
+  <!-- EN: This person was scanned by a softscanner to produce an android persona subcore. The high-energy scanning device has caused disturbances in their brain chemistry which will take time to resolve themselves. There won't be any long-term damage. -->
+  <VREA_ScanningSickness.description>Esta pessoa foi escaneada por um escaneador suave para produzir um subnúcleo de persona androide. O aparelho de alta energia perturbou a química do cérebro, que leva um tempo para se normalizar. Não haverá dano duradouro.</VREA_ScanningSickness.description>
+</LanguageData>

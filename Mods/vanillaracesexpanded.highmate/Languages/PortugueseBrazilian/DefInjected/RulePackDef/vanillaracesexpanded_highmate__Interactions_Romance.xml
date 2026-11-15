@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <VRE_Sentence_FlirtingAttemptAccepted.rulePack.rulesStrings>
+    <!-- EN: sent-&gt;[RECIPIENT_nameDef] thanked [INITIATOR_nameDef]. -->
+    <li>sent-&gt;[RECIPIENT_nameDef] agradeceu a [INITIATOR_nameDef].</li>
+    <!-- EN: sent-&gt;[RECIPIENT_nameDef] laughed playfully with [INITIATOR_nameDef]. -->
+    <li>sent-&gt;[RECIPIENT_nameDef] riu, brincando com [INITIATOR_nameDef].</li>
+    <!-- EN: sent-&gt;[RECIPIENT_nameDef] became aroused and thanked [INITIATOR_nameDef] for the compliment. -->
+    <li>sent-&gt;[RECIPIENT_nameDef] ficou excitado e agradeceu a [INITIATOR_nameDef] pelo elogio.</li>
+  </VRE_Sentence_FlirtingAttemptAccepted.rulePack.rulesStrings>
+  <VRE_Sentence_FlirtingAttemptRejected.rulePack.rulesStrings>
+    <!-- EN: sent-&gt;[RECIPIENT_nameDef] ignored the compliment. -->
+    <li>sent-&gt;[RECIPIENT_nameDef] ignorou o elogio.</li>
+    <!-- EN: sent-&gt;[RECIPIENT_nameDef] ignored the flirt. -->
+    <li>sent-&gt;[RECIPIENT_nameDef] ignorou a paquera.</li>
+    <!-- EN: sent-&gt;[RECIPIENT_nameDef] turned [RECIPIENT_possessive] back. -->
+    <li>sent-&gt;[RECIPIENT_nameDef] virou as costas.</li>
+    <!-- EN: sent-&gt;[RECIPIENT_nameDef] turned away. -->
+    <li>sent-&gt;[RECIPIENT_nameDef] se virou.</li>
+    <!-- EN: sent-&gt;[RECIPIENT_nameDef] gave a minimal response. -->
+    <li>sent-&gt;[RECIPIENT_nameDef] respondeu o mínimo.</li>
+    <!-- EN: sent-&gt;[RECIPIENT_nameDef] did not respond. -->
+    <li>sent-&gt;[RECIPIENT_nameDef] não respondeu.</li>
+    <!-- EN: sent-&gt;[RECIPIENT_nameDef] scolded [INITIATOR_objective]. -->
+    <li>sent-&gt;[RECIPIENT_nameDef] deu uma bronca [INITIATOR_objective].</li>
+  </VRE_Sentence_FlirtingAttemptRejected.rulePack.rulesStrings>
+</LanguageData>

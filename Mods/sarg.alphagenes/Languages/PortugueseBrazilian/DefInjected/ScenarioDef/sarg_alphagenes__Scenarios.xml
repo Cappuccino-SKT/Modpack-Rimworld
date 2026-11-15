@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <!-- EN: Wretched Existence -->
+  <AG_WretchScenario.label>Existência Miserável</AG_WretchScenario.label>
+  <!-- EN: There were no lights in the lab, only darkness. No voices, only silence. And, many days, no food...\n\nOne day, this all changed. Sirens blared, explosions buffeted the sturdy concrete walls and, suddenly, freedom, a gust of air, and the nearly forgotten light of the sun. The three of you ran, and never looked back. However, you were forever changed... -->
+  <AG_WretchScenario.description>Não havia luz no laboratório, só escuridão. Nenhuma voz, só silêncio. E, em muitos dias, nenhuma comida...\n\nUm dia, tudo mudou. Sirenes tocaram, explosões sacudiram as grossas paredes de concreto e, de repente, liberdade: uma lufada de ar e a luz do sol, quase esquecida. Vocês três correram e nunca olharam para trás. Mas estavam mudados para sempre...</AG_WretchScenario.description>
+  <!-- EN: There were no lights in the lab, only darkness. No voices, only silence. And, many days, no food...\n\nOne day, this all changed. Sirens blared, explosions buffeted the sturdy concrete walls and, suddenly, freedom, a gust of air, and the nearly forgotten light of the sun. The three of you ran, and never looked back. However, you were forever changed... -->
+  <AG_WretchScenario.scenario.description>Não havia luz no laboratório, só escuridão. Nenhuma voz, só silêncio. E, em muitos dias, nenhuma comida...\n\nUm dia, tudo mudou. Sirenes tocaram, explosões sacudiram as grossas paredes de concreto e, de repente, liberdade: uma lufada de ar e a luz do sol, quase esquecida. Vocês três correram e nunca olharam para trás. Mas estavam mudados para sempre...</AG_WretchScenario.scenario.description>
+  <!-- EN: Wretched Existence -->
+  <AG_WretchScenario.scenario.name>Existência Miserável</AG_WretchScenario.scenario.name>
+  <!-- EN: Start with three Wretches. -->
+  <AG_WretchScenario.scenario.parts.ConfigurePawnsXenotypes.customSummary>Comece com três desgraçados.</AG_WretchScenario.scenario.parts.ConfigurePawnsXenotypes.customSummary>
+  <!-- EN: There were no lights in the lab, only darkness. No voices, only silence. And, many days, no food...\n\nOne day, this all changed. Sirens blared, explosions buffeted the sturdy concrete walls and, suddenly, freedom, a gust of air, and the nearly forgotten light of the sun. The three of you ran, and never looked back. However, you were forever changed... -->
+  <AG_WretchScenario.scenario.parts.GameStartDialog.text>Não havia luz no laboratório, só escuridão. Nenhuma voz, só silêncio. E, em muitos dias, nenhuma comida...\n\nUm dia, tudo mudou. Sirenes tocaram, explosões sacudiram as grossas paredes de concreto e, de repente, liberdade: uma lufada de ar e a luz do sol, quase esquecida. Vocês três correram e nunca olharam para trás. Mas estavam mudados para sempre...</AG_WretchScenario.scenario.parts.GameStartDialog.text>
+  <!-- EN: Three victims of genetic experimentation try to survive in the wild. -->
+  <AG_WretchScenario.scenario.summary>Três vítimas de experimentos genéticos tentam sobreviver na natureza.</AG_WretchScenario.scenario.summary>
+  <!-- EN: Abandoned Ones -->
+  <AG_ForsakenCrashlanded.label>Os Abandonados</AG_ForsakenCrashlanded.label>
+  <!-- EN: Exiled and abandoned, you have been sent in cargo pods to another rimworld, now you have to survive on your own. -->
+  <AG_ForsakenCrashlanded.description>Exilados e abandonados, vocês foram mandados em cápsulas de carga para outro mundo da Orla e agora precisam sobreviver sozinhos.</AG_ForsakenCrashlanded.description>
+  <!-- EN: Exiled and abandoned, you have been sent in cargo pods to another rimworld, now you have to survive on your own. -->
+  <AG_ForsakenCrashlanded.scenario.description>Exilados e abandonados, vocês foram mandados em cápsulas de carga para outro mundo da Orla e agora precisam sobreviver sozinhos.</AG_ForsakenCrashlanded.scenario.description>
+  <!-- EN: Abandoned Ones -->
+  <AG_ForsakenCrashlanded.scenario.name>Os Abandonados</AG_ForsakenCrashlanded.scenario.name>
+  <!-- EN: adult Forsaken -->
+  <AG_ForsakenCrashlanded.scenario.parts.ConfigurePawnsXenotypes.xenotypeCounts.0.description>renegado adulto</AG_ForsakenCrashlanded.scenario.parts.ConfigurePawnsXenotypes.xenotypeCounts.0.description>
+  <!-- EN: Three Forsaken survivors - exiled and abandoned -->
+  <AG_ForsakenCrashlanded.scenario.summary>Três sobreviventes renegados, exilados e abandonados</AG_ForsakenCrashlanded.scenario.summary>
+</LanguageData>

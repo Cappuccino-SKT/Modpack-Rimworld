@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <!-- EN: striker turret -->
+  <VFEE_Turret_StrikerTurret.label>torre de ataque</VFEE_Turret_StrikerTurret.label>
+  <!-- EN: A redesigned cargo pod designed to bury stabilizing legs upon impact and deploy a powerful turret. Has a limited battery and ammunition pool, and will self-destruct if either run out or it is sufficiently damaged. -->
+  <VFEE_Turret_StrikerTurret.description>Uma cápsula de carga redesenhada para enterrar pernas estabilizadoras no impacto e montar uma torre poderosa. Tem bateria e munição limitadas e se autodestrói se uma das duas acabar ou se for danificada o bastante.</VFEE_Turret_StrikerTurret.description>
+  <!-- EN: deactivates after: -->
+  <VFEE_Turret_StrikerTurret.comps.CompDestroyAfterDelay.countdownLabel>desativa em:</VFEE_Turret_StrikerTurret.comps.CompDestroyAfterDelay.countdownLabel>
+  <!-- EN: striker gun -->
+  <VFEE_Gun_StrikerTurret.label>arma de ataque</VFEE_Gun_StrikerTurret.label>
+  <!-- EN: A powerful turret mounted on the striker drop pod. -->
+  <VFEE_Gun_StrikerTurret.description>Uma torre poderosa montada na cápsula de ataque.</VFEE_Gun_StrikerTurret.description>
+  <!-- EN: striker gun -->
+  <VFEE_Gun_StrikerTurret.verbs.Verb_ShootCE.label>arma de ataque</VFEE_Gun_StrikerTurret.verbs.Verb_ShootCE.label>
+</LanguageData>

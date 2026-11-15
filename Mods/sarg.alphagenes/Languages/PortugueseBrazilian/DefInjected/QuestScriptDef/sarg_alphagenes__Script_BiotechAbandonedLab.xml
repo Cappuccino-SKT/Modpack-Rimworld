@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <AG_OpportunitySite_AbandonedBiotechLab.questDescriptionRules.rulesStrings>
+    <!-- EN: questDescription(askerIsNull==true)-&gt;A derelict radio beacon seems to be emitting faint radio signals with a location tracker. By decrypting these signals we have discovered that they seem to be leading to an ancient Biotech lab not far from [map_definite]. The site may have some salvageable genetic technology, so it could be a good idea to investigate it.\n\nWe should be well prepared, as the radio beacon may attract a hostile presence to the lab's location.. -->
+    <li>questDescription(askerIsNull==true)-&gt;Um radiofarol abandonado parece estar emitindo sinais fracos com um rastreador de localização. Decifrando os sinais, descobrimos que eles levam a um antigo laboratório da Biotech não muito longe de [map_definite]. O local pode ter tecnologia genética aproveitável, então vale a pena investigar.\n\nDevemos ir bem preparados, porque o radiofarol pode atrair presenças hostis até o laboratório.</li>
+  </AG_OpportunitySite_AbandonedBiotechLab.questDescriptionRules.rulesStrings>
+  <AG_OpportunitySite_AbandonedBiotechLab.questNameRules.rulesStrings>
+    <!-- EN: questName(priority=1)-&gt;[biotechlab] [discovered] -->
+    <li>questName(priority=1)-&gt;[biotechlab] [discovered]</li>
+    <!-- EN: biotechlab-&gt;Biotech lab -->
+    <li>biotechlab-&gt;Laboratório Biotech</li>
+    <!-- EN: biotechlab-&gt;Biotech genetics lab -->
+    <li>biotechlab-&gt;Laboratório genético Biotech</li>
+    <!-- EN: biotechlab-&gt;Biotech experimentation lab -->
+    <li>biotechlab-&gt;Laboratório de experimentos Biotech</li>
+    <!-- EN: biotechlab-&gt;Biotech xenotype lab -->
+    <li>biotechlab-&gt;Laboratório de xenotipos Biotech</li>
+    <!-- EN: biotechlab-&gt;Biotech human genetics lab -->
+    <li>biotechlab-&gt;Laboratório de genética humana Biotech</li>
+    <!-- EN: discovered-&gt;discovered -->
+    <li>discovered-&gt;descoberto</li>
+    <!-- EN: discovered-&gt;found -->
+    <li>discovered-&gt;encontrado</li>
+    <!-- EN: discovered-&gt;located -->
+    <li>discovered-&gt;localizado</li>
+    <!-- EN: discovered-&gt;brought to light -->
+    <li>discovered-&gt;revelado</li>
+    <!-- EN: discovered-&gt;tracked down -->
+    <li>discovered-&gt;rastreado</li>
+    <!-- EN: discovered-&gt;unearthed -->
+    <li>discovered-&gt;desenterrado</li>
+  </AG_OpportunitySite_AbandonedBiotechLab.questNameRules.rulesStrings>
+  <!-- EN: Quest expired: [resolvedQuestName] -->
+  <AG_OpportunitySite_AbandonedBiotechLab.root.nodes.WorldObjectTimeout.node.nodes.Letter.label.slateRef>Missão expirada: [resolvedQuestName]</AG_OpportunitySite_AbandonedBiotechLab.root.nodes.WorldObjectTimeout.node.nodes.Letter.label.slateRef>
+  <!-- EN: Intercepted communications indicate the abandoned biotech lab has been scavenged by others. The quest [resolvedQuestName] has expired. -->
+  <AG_OpportunitySite_AbandonedBiotechLab.root.nodes.WorldObjectTimeout.node.nodes.Letter.text.slateRef>Comunicações interceptadas indicam que o laboratório biotech abandonado foi saqueado por outros. A missão [resolvedQuestName] expirou.</AG_OpportunitySite_AbandonedBiotechLab.root.nodes.WorldObjectTimeout.node.nodes.Letter.text.slateRef>
+</LanguageData>

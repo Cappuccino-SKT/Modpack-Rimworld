@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <!-- EN: fletcher -->
+  <VEE_Gun_Fletcher.label>flecheiro</VEE_Gun_Fletcher.label>
+  <!-- EN: An ultra-long range sniper rifle which fires fin-stabilized flechettes with acidifier injectors. Due to their lethality and danger of falling into enemy hands, they are always biocoded and will self-destruct if their owner either dies or is disarmed. Lethal to organics and almost useless against non-organics, such as mechanoids.\n\nTargets hit by these flechettes will be inflicted with an unstable variant of acidifier fluids, designed to dissolve the target from the inside rather than destroy their equipment. The acid will rampage through the target’s body and usually results in vital organs being dissolved, however lethality isn’t guaranteed. -->
+  <VEE_Gun_Fletcher.description>Um fuzil de precisão de alcance ultralongo que dispara flechetes estabilizados por aletas, com injetores de acidificante. Por serem letais e perigosos nas mãos inimigas, são sempre biocodificados e se autodestroem se o dono morrer ou for desarmado. Letal para orgânicos e quase inútil contra não orgânicos, como mecanoides.\n\nOs alvos atingidos por esses flechetes recebem uma variante instável de fluido acidificante, feita para dissolver o alvo por dentro em vez de destruir o equipamento. O ácido devasta o corpo do alvo e costuma dissolver órgãos vitais, mas a morte não é garantida.</VEE_Gun_Fletcher.description>
+  <!-- EN: stock -->
+  <VEE_Gun_Fletcher.tools.stock.label>coronha</VEE_Gun_Fletcher.tools.stock.label>
+  <!-- EN: barrel -->
+  <VEE_Gun_Fletcher.tools.barrel.label>cano</VEE_Gun_Fletcher.tools.barrel.label>
+  <!-- EN: muzzle -->
+  <VEE_Gun_Fletcher.tools.muzzle.label>boca do cano</VEE_Gun_Fletcher.tools.muzzle.label>
+  <!-- EN: fletcher -->
+  <VEE_Gun_Fletcher.verbs.Verb_ShootCE.label>flecheiro</VEE_Gun_Fletcher.verbs.Verb_ShootCE.label>
+  <!-- EN: fletcher dart -->
+  <VFEE_Bullet_FletcherDart.label>dardo flecheiro</VFEE_Bullet_FletcherDart.label>
+  <!-- EN: charge thumper -->
+  <VFEE_Gun_ChargeThumper.label>impactador de carga</VFEE_Gun_ChargeThumper.label>
+  <!-- EN: A modified charged-shot assault shotgun that incorporates mechanoid technology. Recovered thump cannons have been reversed engineered to produce a portable ranged weapon capable of firing blunt projectiles. Quite powerful but short ranged, with high performance against structures and heavily armored targets. -->
+  <VFEE_Gun_ChargeThumper.description>Uma escopeta de assalto de tiro carregado modificada com tecnologia mecanoide. Canhões de impacto recuperados passaram por engenharia reversa para criar uma arma portátil que dispara projéteis contundentes. Bem poderosa, mas de curto alcance, com ótimo desempenho contra estruturas e alvos muito blindados.</VFEE_Gun_ChargeThumper.description>
+  <!-- EN: stock -->
+  <VFEE_Gun_ChargeThumper.tools.stock.label>coronha</VFEE_Gun_ChargeThumper.tools.stock.label>
+  <!-- EN: barrel -->
+  <VFEE_Gun_ChargeThumper.tools.barrel.label>cano</VFEE_Gun_ChargeThumper.tools.barrel.label>
+  <!-- EN: muzzle -->
+  <VFEE_Gun_ChargeThumper.tools.muzzle.label>boca do cano</VFEE_Gun_ChargeThumper.tools.muzzle.label>
+  <!-- EN: charge thumper -->
+  <VFEE_Gun_ChargeThumper.verbs.Verb_ShootCE.label>impactador de carga</VFEE_Gun_ChargeThumper.verbs.Verb_ShootCE.label>
+  <!-- EN: thump charge -->
+  <VFEE_Bullet_ChargeThumper.label>carga de impacto</VFEE_Bullet_ChargeThumper.label>
+</LanguageData>

@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <!-- EN: skyseekers -->
+  <VVE_Skyseekers.label>buscadores do céu</VVE_Skyseekers.label>
+  <!-- EN: Elevation, both physical and spiritual, is achieved by soaring through the skies. -->
+  <VVE_Skyseekers.description>A elevação, física e espiritual, se alcança voando pelos céus.</VVE_Skyseekers.description>
+  <VVE_Skyseekers.descriptionMaker.rules.rulesStrings>
+    <!-- EN: creation(tag=meme_Skyseekers)        -&gt;[deity0_name] made all of [deity0_possessive] followers look to the endless skies. -->
+    <li>creation(tag=meme_Skyseekers)        -&gt;[deity0_name] fez todos os seus seguidores olharem para os céus sem fim.</li>
+    <!-- EN: episode(uses=1,tag=meme_Skyseekers)  -&gt;Speaking to the believers, [deity0_name] said: "Only by conquering the skies will you reach true enlightening". -->
+    <li>episode(uses=1,tag=meme_Skyseekers)  -&gt;Falando aos fiéis, [deity0_name] disse: "Só conquistando os céus vocês alcançarão a verdadeira iluminação".</li>
+    <!-- EN: intro(tag=meme_Skyseekers)           -&gt;[place_summary] [place_name] was always fraught with conflict. The [memberNamePlural] were besieged constantly by their foes, and this deeply saddened [deity0_name]. -->
+    <li>intro(tag=meme_Skyseekers)           -&gt;[place_summary] [place_name] sempre viveu em conflito. Os [memberNamePlural] eram sitiados o tempo todo pelos inimigos, e isso entristecia profundamente [deity0_name].</li>
+    <!-- EN: conflict(tag=meme_Skyseekers)        -&gt;[deity0_name] witnessed the contant assaults of a terrible [foeLeader], a war leader, and [deity0_pronoun] decided to give winged vessels to [deity0_possessive] followers, so that they could soar the skies above their enemies. -->
+    <li>conflict(tag=meme_Skyseekers)        -&gt;[deity0_name] viu os ataques constantes de um terrível [foeLeader], um senhor da guerra, e decidiu dar naves aladas aos seus seguidores, para que pudessem voar acima dos inimigos.</li>
+    <!-- EN: founderJoin(tag=meme_Skyseekers)     -&gt;[founderName], the greatest among our aviators, was warned of the [foeLeader]'s plan by [deity0_name], and when [foeLeader_pronoun] assaulted them a huge squadron of fighters was ready and waiting for [foeLeader_objective]. -->
+    <li>founderJoin(tag=meme_Skyseekers)     -&gt;[founderName], o maior dos nossos aviadores, foi avisado por [deity0_name] do plano do [foeLeader], e quando o inimigo atacou, um enorme esquadrão de caças estava pronto, esperando por ele.</li>
+    <!-- EN: victory(tag=meme_Skyseekers)         -&gt;The [foeLeader] was swiftly bombarded from the sky, all in [deity0_name]'s name. -->
+    <li>victory(tag=meme_Skyseekers)         -&gt;O [foeLeader] foi bombardeado do céu sem demora, tudo em nome de [deity0_name].</li>
+    <!-- EN: setup(tag=meme_Skyseekers)           -&gt;[founderName] was a pilot, the best of [founder_possessive] class. [founder_pronoun] spent decades of [founder_possessive] life flying all kinds of aircraft, both civilian and military. -->
+    <li>setup(tag=meme_Skyseekers)           -&gt;[founderName] era piloto, o melhor da sua turma. Passou décadas da vida pilotando todo tipo de aeronave, civil e militar.</li>
+    <!-- EN: story(uses=1,tag=meme_Skyseekers)    -&gt;[founderName] understood better than anyone else that true freedom lies in soaring the endless skies, far above any problems. -->
+    <li>story(uses=1,tag=meme_Skyseekers)    -&gt;[founderName] entendeu melhor que ninguém que a verdadeira liberdade está em voar pelos céus sem fim, muito acima de qualquer problema.</li>
+    <!-- EN: lessonIntro(tag=meme_Skyseekers)         -&gt;The ancient aviators of Earth were absolutely right. They taught us that -->
+    <li>lessonIntro(tag=meme_Skyseekers)         -&gt;Os antigos aviadores da Terra tinham toda a razão. Eles nos ensinaram que</li>
+    <!-- EN: lesson(tag=meme_Skyseekers)              -&gt;the only true freedom lies in soaring the endless skies -->
+    <li>lesson(tag=meme_Skyseekers)              -&gt;a única liberdade verdadeira está em voar pelos céus sem fim</li>
+    <!-- EN: lessonReinforcement(tag=meme_Skyseekers) -&gt;We will come upon our enemies from the unreachable skies, like swift and divine justice. -->
+    <li>lessonReinforcement(tag=meme_Skyseekers) -&gt;Cairemos sobre os inimigos vindos de céus inalcançáveis, como uma justiça divina e veloz.</li>
+    <!-- EN: archistBasis(tag=meme_Skyseekers)    -&gt;Archotechs are pure minds, beings of the sky. -->
+    <li>archistBasis(tag=meme_Skyseekers)    -&gt;Os arcotecs são mentes puras, seres do céu.</li>
+    <!-- EN: archistFact(tag=meme_Skyseekers)     -&gt;By soaring the skies we get closer to the Archotechs. -->
+    <li>archistFact(tag=meme_Skyseekers)     -&gt;Voando pelos céus, ficamos mais perto dos arcotecs.</li>
+    <!-- EN: archistProphecy(tag=meme_Skyseekers) -&gt;[inTheEnd], only those who transcend the limits of the earth will also be able to transcend their physical bodies. -->
+    <li>archistProphecy(tag=meme_Skyseekers) -&gt;[inTheEnd], só quem transcender os limites da terra poderá também transcender o próprio corpo físico.</li>
+    <!-- EN: animistBasis(tag=meme_Skyseekers)    -&gt;The spirits teach us that the endless skies hold the secret to a pure existence. -->
+    <li>animistBasis(tag=meme_Skyseekers)    -&gt;Os espíritos nos ensinam que os céus sem fim guardam o segredo de uma existência pura.</li>
+    <!-- EN: animistFact(tag=meme_Skyseekers)     -&gt;Only by soaring the skies can we get closer to the spirits. -->
+    <li>animistFact(tag=meme_Skyseekers)     -&gt;Só voando pelos céus podemos chegar mais perto dos espíritos.</li>
+    <!-- EN: animistProphecy(tag=meme_Skyseekers) -&gt;[itIsSaid] only those who transcend the limits of the earth will also be able to commune with the spiritual world. -->
+    <li>animistProphecy(tag=meme_Skyseekers) -&gt;[itIsSaid] só quem transcender os limites da terra poderá também comungar com o mundo espiritual.</li>
+  </VVE_Skyseekers.descriptionMaker.rules.rulesStrings>
+  <VVE_Skyseekers.generalRules.rulesStrings>
+    <!-- EN: memeAdjective-&gt;flying -->
+    <li>memeAdjective-&gt;voador</li>
+    <!-- EN: memeAdjective-&gt;soaring -->
+    <li>memeAdjective-&gt;planador</li>
+    <!-- EN: memeAdjective-&gt;free -->
+    <li>memeAdjective-&gt;livre</li>
+    <!-- EN: memeLeaderNoun-&gt;aviator -->
+    <li>memeLeaderNoun-&gt;aviador</li>
+    <!-- EN: memeMoralist-&gt;skyseer -->
+    <li>memeMoralist-&gt;vidente do céu</li>
+    <!-- EN: memeConcept-&gt;flying -->
+    <li>memeConcept-&gt;voo</li>
+  </VVE_Skyseekers.generalRules.rulesStrings>
+  <!-- EN: skyseeker -->
+  <VVE_Skyseekers.symbolPacks.0.adjective>buscador do céu</VVE_Skyseekers.symbolPacks.0.adjective>
+  <!-- EN: Skyseekers -->
+  <VVE_Skyseekers.symbolPacks.0.ideoName>Buscadores do Céu</VVE_Skyseekers.symbolPacks.0.ideoName>
+  <!-- EN: pilot -->
+  <VVE_Skyseekers.symbolPacks.0.member>piloto</VVE_Skyseekers.symbolPacks.0.member>
+  <!-- EN: skyseekers -->
+  <VVE_Skyseekers.symbolPacks.0.theme>buscadores do céu</VVE_Skyseekers.symbolPacks.0.theme>
+  <!-- EN: nauticals -->
+  <VVE_Nauticals.label>náuticos</VVE_Nauticals.label>
+  <!-- EN: Embracing the vastness of the waters offers a deep connection to life's mysteries. -->
+  <VVE_Nauticals.description>Abraçar a vastidão das águas oferece uma ligação profunda com os mistérios da vida.</VVE_Nauticals.description>
+  <VVE_Nauticals.descriptionMaker.rules.rulesStrings>
+    <!-- EN: creation(tag=meme_Nauticals)        -&gt;[deity0_name] made all of [deity0_possessive] followers look to the endless seas. -->
+    <li>creation(tag=meme_Nauticals)        -&gt;[deity0_name] fez todos os seus seguidores olharem para os mares sem fim.</li>
+    <!-- EN: episode(uses=1,tag=meme_Nauticals)  -&gt;Speaking to the believers, [deity0_name] said: "Only by conquering the seas will you reach true enlightening". -->
+    <li>episode(uses=1,tag=meme_Nauticals)  -&gt;Falando aos fiéis, [deity0_name] disse: "Só conquistando os mares vocês alcançarão a verdadeira iluminação".</li>
+    <!-- EN: intro(tag=meme_Nauticals)           -&gt;[place_summary] [place_name] was always fraught with conflict. The [memberNamePlural] were besieged constantly by their foes, and this deeply saddened [deity0_name]. -->
+    <li>intro(tag=meme_Nauticals)           -&gt;[place_summary] [place_name] sempre viveu em conflito. Os [memberNamePlural] eram sitiados o tempo todo pelos inimigos, e isso entristecia profundamente [deity0_name].</li>
+    <!-- EN: conflict(tag=meme_Nauticals)        -&gt;[deity0_name] witnessed the contant assaults of a terrible [foeLeader], a war leader, and [deity0_pronoun] decided to give sails to [deity0_possessive] followers, so that they could sail the seas to avoid and ambush their enemies. -->
+    <li>conflict(tag=meme_Nauticals)        -&gt;[deity0_name] viu os ataques constantes de um terrível [foeLeader], um senhor da guerra, e decidiu dar velas aos seus seguidores, para que pudessem navegar pelos mares, fugir dos inimigos e emboscá-los.</li>
+    <!-- EN: founderJoin(tag=meme_Nauticals)     -&gt;[founderName], the greatest among our navigators, was warned of the [foeLeader]'s plan by [deity0_name], and when [foeLeader_pronoun] assaulted them a huge navy of enormous vessels was ready and waiting for [foeLeader_objective]. -->
+    <li>founderJoin(tag=meme_Nauticals)     -&gt;[founderName], o maior dos nossos navegadores, foi avisado por [deity0_name] do plano do [foeLeader], e quando o inimigo atacou, uma enorme marinha de embarcações gigantes estava pronta, esperando por ele.</li>
+    <!-- EN: victory(tag=meme_Nauticals)         -&gt;The [foeLeader] was swiftly attacked from the seas, all in [deity0_name]'s name. -->
+    <li>victory(tag=meme_Nauticals)         -&gt;O [foeLeader] foi atacado pelo mar sem demora, tudo em nome de [deity0_name].</li>
+    <!-- EN: setup(tag=meme_Nauticals)           -&gt;[founderName] was a navigators, the best of [founder_possessive] class. [founder_pronoun] spent decades of [founder_possessive] life sailing in all kinds of vessels, both civilian and military. -->
+    <li>setup(tag=meme_Nauticals)           -&gt;[founderName] era navegador, o melhor da sua turma. Passou décadas da vida navegando em todo tipo de embarcação, civil e militar.</li>
+    <!-- EN: story(uses=1,tag=meme_Nauticals)    -&gt;[founderName] understood better than anyone else that true freedom lies in sailing the seas, for the waters may be capricious, but they are also fair. -->
+    <li>story(uses=1,tag=meme_Nauticals)    -&gt;[founderName] entendeu melhor que ninguém que a verdadeira liberdade está em navegar pelos mares, pois as águas podem ser caprichosas, mas também são justas.</li>
+    <!-- EN: lessonIntro(tag=meme_Nauticals)         -&gt;The ancient navigators of Earth were absolutely right. They taught us that -->
+    <li>lessonIntro(tag=meme_Nauticals)         -&gt;Os antigos navegadores da Terra tinham toda a razão. Eles nos ensinaram que</li>
+    <!-- EN: lesson(tag=meme_Nauticals)              -&gt;the only true freedom lies in sailing the endless seas -->
+    <li>lesson(tag=meme_Nauticals)              -&gt;a única liberdade verdadeira está em navegar pelos mares sem fim</li>
+    <!-- EN: lessonReinforcement(tag=meme_Nauticals) -&gt;We will come upon our enemies from the untamed waters, like swift and divine justice. -->
+    <li>lessonReinforcement(tag=meme_Nauticals) -&gt;Cairemos sobre os inimigos vindos de águas indomadas, como uma justiça divina e veloz.</li>
+    <!-- EN: archistBasis(tag=meme_Nauticals)    -&gt;The Archotechs' pure minds are fluid like water, beings of fickleness and changeability. -->
+    <li>archistBasis(tag=meme_Nauticals)    -&gt;As mentes puras dos arcotecs são fluidas como a água, seres de inconstância e mudança.</li>
+    <!-- EN: archistFact(tag=meme_Nauticals)     -&gt;By sailing the seas we pay hommage to their unpredictable and capricious nature. -->
+    <li>archistFact(tag=meme_Nauticals)     -&gt;Navegando pelos mares, prestamos homenagem à sua natureza imprevisível e caprichosa.</li>
+    <!-- EN: archistProphecy(tag=meme_Nauticals) -&gt;[inTheEnd], only those who transcend the limits of the earth will also be able to transcend their physical bodies. -->
+    <li>archistProphecy(tag=meme_Nauticals) -&gt;[inTheEnd], só quem transcender os limites da terra poderá também transcender o próprio corpo físico.</li>
+    <!-- EN: animistBasis(tag=meme_Nauticals)    -&gt;The spirits teach us that the unpredictability of the seas holds the secret to a pure existence. -->
+    <li>animistBasis(tag=meme_Nauticals)    -&gt;Os espíritos nos ensinam que a imprevisibilidade dos mares guarda o segredo de uma existência pura.</li>
+    <!-- EN: animistFact(tag=meme_Nauticals)     -&gt;Only by sailing the seas can we get closer to the spirits. -->
+    <li>animistFact(tag=meme_Nauticals)     -&gt;Só navegando pelos mares podemos chegar mais perto dos espíritos.</li>
+    <!-- EN: animistProphecy(tag=meme_Nauticals) -&gt;[itIsSaid] only those who transcend the limits of the earth will also be able to commune with the spiritual world. -->
+    <li>animistProphecy(tag=meme_Nauticals) -&gt;[itIsSaid] só quem transcender os limites da terra poderá também comungar com o mundo espiritual.</li>
+  </VVE_Nauticals.descriptionMaker.rules.rulesStrings>
+  <VVE_Nauticals.generalRules.rulesStrings>
+    <!-- EN: memeAdjective-&gt;sailing -->
+    <li>memeAdjective-&gt;navegante</li>
+    <!-- EN: memeAdjective-&gt;navigating -->
+    <li>memeAdjective-&gt;marinheiro</li>
+    <!-- EN: memeAdjective-&gt;seaworthy -->
+    <li>memeAdjective-&gt;marítimo</li>
+    <!-- EN: memeLeaderNoun-&gt;navigator -->
+    <li>memeLeaderNoun-&gt;navegador</li>
+    <!-- EN: memeMoralist-&gt;water seer -->
+    <li>memeMoralist-&gt;vidente das águas</li>
+    <!-- EN: memeConcept-&gt;sailing -->
+    <li>memeConcept-&gt;navegação</li>
+  </VVE_Nauticals.generalRules.rulesStrings>
+  <!-- EN: nautical -->
+  <VVE_Nauticals.symbolPacks.0.adjective>náutico</VVE_Nauticals.symbolPacks.0.adjective>
+  <!-- EN: Nauticals -->
+  <VVE_Nauticals.symbolPacks.0.ideoName>Náuticos</VVE_Nauticals.symbolPacks.0.ideoName>
+  <!-- EN: seaman -->
+  <VVE_Nauticals.symbolPacks.0.member>marujo</VVE_Nauticals.symbolPacks.0.member>
+  <!-- EN: nauticals -->
+  <VVE_Nauticals.symbolPacks.0.theme>náuticos</VVE_Nauticals.symbolPacks.0.theme>
+  <!-- EN: travelers -->
+  <VVE_Travelers.label>viajantes</VVE_Travelers.label>
+  <!-- EN: The world is vast and meant to be explored in all its facets. -->
+  <VVE_Travelers.description>O mundo é vasto e feito para ser explorado em todas as suas facetas.</VVE_Travelers.description>
+  <VVE_Travelers.descriptionMaker.rules.rulesStrings>
+    <!-- EN: creation(tag=meme_Traveler)        -&gt;[deity0_name] wrote [deity0_possessive] commandments in eleven plasteel tablets. The fifth commandment read: "I shall not refrain from exploring the world." -->
+    <li>creation(tag=meme_Traveler)        -&gt;[deity0_name] escreveu os seus mandamentos em onze tábuas de plastiaço. O quinto mandamento dizia: "Não deixarei de explorar o mundo."</li>
+    <!-- EN: episode(uses=1,tag=meme_Traveler)  -&gt;In accordance with [deity0_name]'s precepts, we happily traveled abroad, away from our settlements, to see all our world has to offer. -->
+    <li>episode(uses=1,tag=meme_Traveler)  -&gt;Seguindo os preceitos de [deity0_name], viajamos felizes para longe dos nossos assentamentos, para ver tudo o que o nosso mundo tem a oferecer.</li>
+    <!-- EN: intro(tag=meme_Traveler)           -&gt;The [memberNamePlural] were restless, for [deity0_name] had commanded them to explore the surrounding lands, and they were tired of roaming around living off the land. -->
+    <li>intro(tag=meme_Traveler)           -&gt;Os [memberNamePlural] estavam inquietos, porque [deity0_name] tinha ordenado que explorassem as terras ao redor, e eles estavam cansados de vagar vivendo do que a terra dava.</li>
+    <!-- EN: conflict(tag=meme_Traveler)        -&gt;One of the elders wanted to defy [deity0_name]'s commandments, and close the settlements for further exploration. -->
+    <li>conflict(tag=meme_Traveler)        -&gt;Um dos anciões quis desafiar os mandamentos de [deity0_name] e fechar os assentamentos a novas explorações.</li>
+    <!-- EN: founderJoin(tag=meme_Traveler)     -&gt;[founderName], the Great Explorer, grew tired of the insolence of the elder, and usurped his power. From that point on, the [memberNamePlural] would be the most skilled explorers in the land, venturing far away. -->
+    <li>founderJoin(tag=meme_Traveler)     -&gt;[founderName], o Grande Explorador, cansou da insolência do ancião e usurpou o seu poder. Dali em diante, os [memberNamePlural] seriam os exploradores mais habilidosos da terra, aventurando-se cada vez mais longe.</li>
+    <!-- EN: victory(tag=meme_Traveler)         -&gt;It was thus that we became enamoured with wanderlust, and traveled the whole world exploring even its farther confines. -->
+    <li>victory(tag=meme_Traveler)         -&gt;Foi assim que nos apaixonamos pela vontade de viajar e percorremos o mundo inteiro, explorando até os seus confins mais distantes.</li>
+    <!-- EN: setup(tag=meme_Traveler)           -&gt;[founderName] was a skilled explorer. [founder_pronoun] longed for discovery, travelling to the farther confiens of the world. -->
+    <li>setup(tag=meme_Traveler)           -&gt;[founderName] era um explorador habilidoso. Ansiava por descobertas e viajava até os confins mais distantes do mundo.</li>
+    <!-- EN: story(uses=1,tag=meme_Traveler)    -&gt;Seeking the thrill of adventure, [founderName] assembled a small group of [founder_possessive] followers and chartered a ship to travel to the Rim. [founder_possessive] discoveries were the stuff of legend, mapping a plethora of strange new worlds and new civilizations, boldly going where... errr, sorry, got carried away a bit there. -->
+    <li>story(uses=1,tag=meme_Traveler)    -&gt;Em busca da emoção da aventura, [founderName] reuniu um pequeno grupo de seguidores e fretou uma nave para viajar até a Orla. Suas descobertas viraram lenda, mapeando uma porção de mundos estranhos e novas civilizações, indo audaciosamente aonde... hã, desculpe, me empolguei um pouco.</li>
+    <!-- EN: lessonIntro(tag=meme_Traveler)         -&gt;Humans fear the unknown, it's a fact. It is abundantly clear that -->
+    <li>lessonIntro(tag=meme_Traveler)         -&gt;Os humanos temem o desconhecido, é fato. Está mais do que claro que</li>
+    <!-- EN: lesson(tag=meme_Traveler)              -&gt;we need to explore our surroundings. Being unaware of what is around us is a recipe for disaster  -->
+    <li>lesson(tag=meme_Traveler)              -&gt;precisamos explorar o que nos cerca. Não saber o que está ao nosso redor é receita para o desastre</li>
+    <!-- EN: lessonReinforcement(tag=meme_Traveler) -&gt;Only true explorers can never be caught unawares. -->
+    <li>lessonReinforcement(tag=meme_Traveler) -&gt;Só os verdadeiros exploradores nunca são pegos de surpresa.</li>
+    <!-- EN: archistBasis(tag=meme_Traveler)    -&gt;Archotechs are always aware of everything. Being unaware of your surroundings is almost obscene to them. -->
+    <li>archistBasis(tag=meme_Traveler)    -&gt;Os arcotecs sabem sempre de tudo. Ignorar o que está ao redor é quase obsceno para eles.</li>
+    <!-- EN: archistFact(tag=meme_Traveler)     -&gt;The archotechs teach us that exploring and travelling are a path to transcendence. -->
+    <li>archistFact(tag=meme_Traveler)     -&gt;Os arcotecs nos ensinam que explorar e viajar são um caminho para a transcendência.</li>
+    <!-- EN: archistProphecy(tag=meme_Traveler) -&gt;[inTheEnd], those who spend their whole lives hiding won't transcend, while those who are infused by wanderlust will join the archotechs. -->
+    <li>archistProphecy(tag=meme_Traveler) -&gt;[inTheEnd], quem passar a vida inteira escondido não vai transcender, enquanto quem for tomado pela vontade de viajar vai se juntar aos arcotecs.</li>
+    <!-- EN: animistBasis(tag=meme_Traveler)    -&gt;Spirits govern everything, from the most abstract concepts to concrete ones. Specifically, each place has its own spirit, and that's why discovering and traveling to all these places brings us closer to the spirits. -->
+    <li>animistBasis(tag=meme_Traveler)    -&gt;Os espíritos governam tudo, dos conceitos mais abstratos aos mais concretos. Em especial, cada lugar tem o seu espírito, e por isso descobrir e viajar a todos esses lugares nos aproxima dos espíritos.</li>
+    <!-- EN: animistFact(tag=meme_Traveler)     -&gt;The spirit of wanderlust is a powerful one, and instills one with a passion for freedom, for exploration: you never know what the road ahead may bring. -->
+    <li>animistFact(tag=meme_Traveler)     -&gt;O espírito da vontade de viajar é poderoso e enche a pessoa de paixão pela liberdade e pela exploração: nunca se sabe o que a estrada vai trazer.</li>
+    <!-- EN: animistProphecy(tag=meme_Traveler) -&gt;[itIsSaid] only those who are able to live without roots and roam free can truly appease the spirits. -->
+    <li>animistProphecy(tag=meme_Traveler) -&gt;[itIsSaid] só quem consegue viver sem raízes e vagar livre pode de fato agradar aos espíritos.</li>
+  </VVE_Travelers.descriptionMaker.rules.rulesStrings>
+  <VVE_Travelers.generalRules.rulesStrings>
+    <!-- EN: memeAdjective-&gt;explorer -->
+    <li>memeAdjective-&gt;explorador</li>
+    <!-- EN: memeAdjective-&gt;travelling -->
+    <li>memeAdjective-&gt;viajante</li>
+    <!-- EN: memeAdjective-&gt;transient -->
+    <li>memeAdjective-&gt;errante</li>
+    <!-- EN: memeConcept-&gt;travelling -->
+    <li>memeConcept-&gt;viagem</li>
+    <!-- EN: memeLeaderNoun-&gt;explorer -->
+    <li>memeLeaderNoun-&gt;explorador</li>
+    <!-- EN: memeLeaderNoun-&gt;traveler -->
+    <li>memeLeaderNoun-&gt;viajante</li>
+  </VVE_Travelers.generalRules.rulesStrings>
+  <!-- EN: traveler -->
+  <VVE_Travelers.symbolPacks.0.adjective>viajante</VVE_Travelers.symbolPacks.0.adjective>
+  <!-- EN: Travelers -->
+  <VVE_Travelers.symbolPacks.0.ideoName>Viajantes</VVE_Travelers.symbolPacks.0.ideoName>
+  <!-- EN: traveler -->
+  <VVE_Travelers.symbolPacks.0.member>viajante</VVE_Travelers.symbolPacks.0.member>
+  <!-- EN: travelling -->
+  <VVE_Travelers.symbolPacks.0.theme>viagem</VVE_Travelers.symbolPacks.0.theme>
+  <!-- EN: roadragers -->
+  <VVE_Roadragers.label>fúria da estrada</VVE_Roadragers.label>
+  <!-- EN: For us, the road is sacred, and vehicular dominance is both a belief and a testament to our power. We view the roar of our engines and the rush of asphalt beneath our tires as sacred. -->
+  <VVE_Roadragers.description>Para nós, a estrada é sagrada, e o domínio sobre veículos é ao mesmo tempo crença e prova do nosso poder. O ronco dos motores e o asfalto correndo sob os pneus são sagrados.</VVE_Roadragers.description>
+  <VVE_Roadragers.descriptionMaker.rules.rulesStrings>
+    <!-- EN: creation(tag=meme_Roadragers)        -&gt;[deity0_name] cared only for the roar of the engines. [deity0_pronoun] ordered all the faithful to hit the road. -->
+    <li>creation(tag=meme_Roadragers)        -&gt;[deity0_name] só se importava com o ronco dos motores. Ordenou a todos os fiéis que caíssem na estrada.</li>
+    <!-- EN: episode(uses=1,tag=meme_Roadragers)  -&gt;Speaking to [deity0_possessive] believers, [deity0_name] said: "I myself will carry you through the gates of Valhalla. You shall ride eternal, shiny and chrome!". -->
+    <li>episode(uses=1,tag=meme_Roadragers)  -&gt;Falando aos seus fiéis, [deity0_name] disse: "Eu mesmo vou levar vocês pelos portões de Valhalla. Vocês vão rodar para sempre, brilhantes e cromados!".</li>
+    <!-- EN: intro(tag=meme_Roadragers)           -&gt;[place_summary] [place_name] glistened with the fresh engine oil that had dripped from our sacred vehicles, a testament of [deity0_name]'s glory. -->
+    <li>intro(tag=meme_Roadragers)           -&gt;[place_summary] [place_name] brilhava com o óleo de motor fresco pingado dos nossos veículos sagrados, prova da glória de [deity0_name].</li>
+    <!-- EN: conflict(tag=meme_Roadragers)        -&gt;A rabid [foeLeader], wanting to get [foeLeader_possessive] hands on our cars, tried to attack with the help of [foeLeader_possessive] many [foeSoldiers]. -->
+    <li>conflict(tag=meme_Roadragers)        -&gt;Um [foeLeader] raivoso, querendo pôr as mãos nos nossos carros, tentou atacar com a ajuda dos seus muitos [foeSoldiers].</li>
+    <!-- EN: founderJoin(tag=meme_Roadragers)     -&gt;[deity0_name] bestowed our founder, [founderName], with the [relic0_name], and [founder_pronoun] used it to annoint and augment the V8 engine of his custom-made Road Raging car, resisting the onslaught. -->
+    <li>founderJoin(tag=meme_Roadragers)     -&gt;[deity0_name] deu ao nosso fundador, [founderName], o(a) [relic0_name], que ele usou para ungir e turbinar o motor V8 do seu carro de fúria da estrada feito sob medida, resistindo ao ataque.</li>
+    <!-- EN: victory(tag=meme_Roadragers)         -&gt;The massacre was sublime. [founderName] slaughtered countless enemies, and we celebrated by hitting the road mounted on all our vehicles. -->
+    <li>victory(tag=meme_Roadragers)         -&gt;O massacre foi sublime. [founderName] trucidou incontáveis inimigos, e comemoramos caindo na estrada montados em todos os nossos veículos.</li>
+    <!-- EN: setup(tag=meme_Roadragers)           -&gt;[founderName] understood that the roar of an engine is the only true measure of power. -->
+    <li>setup(tag=meme_Roadragers)           -&gt;[founderName] entendeu que o ronco de um motor é a única medida verdadeira de poder.</li>
+    <!-- EN: story(uses=1,tag=meme_Roadragers)    -&gt;[founderName] always repeated the same lesson over and over again: "I myself will carry you through the gates of Valhalla. You shall ride eternal, shiny and chrome!". -->
+    <li>story(uses=1,tag=meme_Roadragers)    -&gt;[founderName] sempre repetia a mesma lição: "Eu mesmo vou levar vocês pelos portões de Valhalla. Vocês vão rodar para sempre, brilhantes e cromados!".</li>
+    <!-- EN: lessonIntro(tag=meme_Roadragers)         -&gt;It is only by the roar of our engines that one arrives at pleasure. You need to understand that -->
+    <li>lessonIntro(tag=meme_Roadragers)         -&gt;Só pelo ronco dos nossos motores se chega ao prazer. Vocês precisam entender que</li>
+    <!-- EN: lesson(tag=meme_Roadragers)              -&gt;I am your redeemer. It is by my hand you will rise from the ashes of this world -->
+    <li>lesson(tag=meme_Roadragers)              -&gt;eu sou o seu redentor. É pela minha mão que vocês vão se erguer das cinzas deste mundo</li>
+    <!-- EN: lessonReinforcement(tag=meme_Roadragers) -&gt;I myself will carry you through the gates of Valhalla. You shall ride eternal, shiny and chrome! -->
+    <li>lessonReinforcement(tag=meme_Roadragers) -&gt;Eu mesmo vou levar vocês pelos portões de Valhalla. Vocês vão rodar para sempre, brilhantes e cromados!</li>
+    <!-- EN: archistBasis(tag=meme_Roadragers)    -&gt;The Archotechs understand that power is not just a means to an end. Power is an end on itself. -->
+    <li>archistBasis(tag=meme_Roadragers)    -&gt;Os arcotecs entendem que o poder não é só um meio para um fim. O poder é um fim em si mesmo.</li>
+    <!-- EN: archistFact(tag=meme_Roadragers)     -&gt;The Archotechs will stand in awe of the powerful roar of our engines. It is by their hand we will rise from the ashes of this world. -->
+    <li>archistFact(tag=meme_Roadragers)     -&gt;Os arcotecs vão ficar maravilhados com o ronco poderoso dos nossos motores. É pela mão deles que vamos nos erguer das cinzas deste mundo.</li>
+    <!-- EN: archistProphecy(tag=meme_Roadragers) -&gt;[inTheEnd], they will carry us through the gates of Valhalla. We shall ride eternal, shiny and chrome! -->
+    <li>archistProphecy(tag=meme_Roadragers) -&gt;[inTheEnd], eles vão nos levar pelos portões de Valhalla. Vamos rodar para sempre, brilhantes e cromados!</li>
+    <!-- EN: animistBasis(tag=meme_Roadragers)    -&gt;The spirits understand that power is not just a means to an end. Power is an end on itself. -->
+    <li>animistBasis(tag=meme_Roadragers)    -&gt;Os espíritos entendem que o poder não é só um meio para um fim. O poder é um fim em si mesmo.</li>
+    <!-- EN: animistFact(tag=meme_Roadragers)     -&gt;It is by their hand we will rise from the ashes of this world. -->
+    <li>animistFact(tag=meme_Roadragers)     -&gt;É pela mão deles que vamos nos erguer das cinzas deste mundo.</li>
+    <!-- EN: animistProphecy(tag=meme_Roadragers) -&gt;[itIsSaid] only those who let the roar of their engines be heard above all else will be carried by the spirits through the gates of Valhalla. They shall ride eternal, shiny and chrome! -->
+    <li>animistProphecy(tag=meme_Roadragers) -&gt;[itIsSaid] só quem fizer o ronco do motor se ouvir acima de tudo será levado pelos espíritos pelos portões de Valhalla. Vão rodar para sempre, brilhantes e cromados!</li>
+  </VVE_Roadragers.descriptionMaker.rules.rulesStrings>
+  <VVE_Roadragers.generalRules.rulesStrings>
+    <!-- EN: memeAdjective-&gt;roadraging -->
+    <li>memeAdjective-&gt;enfurecido</li>
+    <!-- EN: memeAdjective-&gt;marauding -->
+    <li>memeAdjective-&gt;saqueador</li>
+    <!-- EN: memeAdjective-&gt;mad maxing -->
+    <li>memeAdjective-&gt;pós-apocalíptico</li>
+    <!-- EN: memeLeaderNoun-&gt;warlord -->
+    <li>memeLeaderNoun-&gt;senhor da guerra</li>
+    <!-- EN: memeMoralist-&gt;octane priest -->
+    <li>memeMoralist-&gt;sacerdote da octanagem</li>
+    <!-- EN: memeConcept-&gt;cars -->
+    <li>memeConcept-&gt;carros</li>
+  </VVE_Roadragers.generalRules.rulesStrings>
+  <!-- EN: roadraging -->
+  <VVE_Roadragers.symbolPacks.0.adjective>enfurecido</VVE_Roadragers.symbolPacks.0.adjective>
+  <!-- EN: Roadragers -->
+  <VVE_Roadragers.symbolPacks.0.ideoName>Fúria da Estrada</VVE_Roadragers.symbolPacks.0.ideoName>
+  <!-- EN: roadrager -->
+  <VVE_Roadragers.symbolPacks.0.member>motoqueiro</VVE_Roadragers.symbolPacks.0.member>
+  <!-- EN: roadraging -->
+  <VVE_Roadragers.symbolPacks.0.theme>fúria da estrada</VVE_Roadragers.symbolPacks.0.theme>
+</LanguageData>

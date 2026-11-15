@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <!-- EN: burden -->
+  <VPE_Burden.label>fardo</VPE_Burden.label>
+  <!-- EN: Slow the target for a short time by suppressing motor activity in the brain. Considered a hostile action and affected by the target’s psychic sensitivity. -->
+  <VPE_Burden.description>Deixa o alvo lento por pouco tempo, suprimindo a atividade motora no cérebro. É considerado uma ação hostil e depende da sensibilidade psíquica do alvo.</VPE_Burden.description>
+  <!-- EN: Using ability: {0} -->
+  <VPE_Burden.jobReportString>Usando habilidade: {0}</VPE_Burden.jobReportString>
+  <!-- EN: burden -->
+  <VPE_Burden.verbProperties.label>fardo</VPE_Burden.verbProperties.label>
+  <!-- EN: stun -->
+  <VPE_Stun.label>atordoar</VPE_Stun.label>
+  <!-- EN: Momentarily disrupts motor function in the target's brain, preventing any movement. This lasts for a few seconds and is considered a hostile action. -->
+  <VPE_Stun.description>Interrompe por um instante a função motora no cérebro do alvo, impedindo qualquer movimento. Dura alguns segundos e é considerado uma ação hostil.</VPE_Stun.description>
+  <!-- EN: Using ability: {0} -->
+  <VPE_Stun.jobReportString>Usando habilidade: {0}</VPE_Stun.jobReportString>
+  <!-- EN: stun -->
+  <VPE_Stun.verbProperties.label>atordoar</VPE_Stun.verbProperties.label>
+  <!-- EN: psychic shock -->
+  <VPE_PsychicShock.label>choque psíquico</VPE_PsychicShock.label>
+  <!-- EN: Psychically shocks the target's mind with chaotic images, blocking coherent perception and dropping them into a state of psychic shock. There is a risk of brain damage and is overtly hostile. -->
+  <VPE_PsychicShock.description>Choca psiquicamente a mente do alvo com imagens caóticas, bloqueando a percepção coerente e deixando-o em estado de choque psíquico. Há risco de dano cerebral, e é abertamente hostil.</VPE_PsychicShock.description>
+  <!-- EN: Using ability: {0} -->
+  <VPE_PsychicShock.jobReportString>Usando habilidade: {0}</VPE_PsychicShock.jobReportString>
+  <!-- EN: psychic shock -->
+  <VPE_PsychicShock.verbProperties.label>choque psíquico</VPE_PsychicShock.verbProperties.label>
+  <!-- EN: neural heat dump -->
+  <VPE_NeuralHeatDump.label>descarga de calor neural</VPE_NeuralHeatDump.label>
+  <!-- EN: Instantly dump all your neural heat into a conscious ally. As a side effect, the target will fall into a debilitating, harmless coma for about a day. The target must actively accept the psychic invasion, so only conscious allies can be targeted. -->
+  <VPE_NeuralHeatDump.description>Descarrega na hora todo o seu calor neural num aliado consciente. Como efeito colateral, o alvo cai num coma debilitante, mas inofensivo, por cerca de um dia. O alvo precisa aceitar ativamente a invasão psíquica, por isso só aliados conscientes podem ser alvos.</VPE_NeuralHeatDump.description>
+  <!-- EN: Using ability: {0} -->
+  <VPE_NeuralHeatDump.jobReportString>Usando habilidade: {0}</VPE_NeuralHeatDump.jobReportString>
+  <!-- EN: neural heat dump -->
+  <VPE_NeuralHeatDump.verbProperties.label>descarga de calor neural</VPE_NeuralHeatDump.verbProperties.label>
+  <!-- EN: berserk -->
+  <VPE_Berserk.label>fúria</VPE_Berserk.label>
+  <!-- EN: Induce a berserker psychosis in the target's mind, causing them to attack anyone nearby. They regain rationality after 15 seconds, depending on their psychic sensitivity. -->
+  <VPE_Berserk.description>Induz uma psicose furiosa na mente do alvo, fazendo-o atacar qualquer um por perto. Ele recupera a razão depois de 15 segundos, conforme a sensibilidade psíquica.</VPE_Berserk.description>
+  <!-- EN: Using ability: {0} -->
+  <VPE_Berserk.jobReportString>Usando habilidade: {0}</VPE_Berserk.jobReportString>
+  <!-- EN: berserk -->
+  <VPE_Berserk.verbProperties.label>fúria</VPE_Berserk.verbProperties.label>
+  <!-- EN: aggressive heat dump -->
+  <VPE_AggressiveHeatDump.label>descarga de calor agressiva</VPE_AggressiveHeatDump.label>
+  <!-- EN: Instantly dump all of your neural heat into a target, causing them to explode with an area of effect relative to the heat lost. A good declaration of war. -->
+  <VPE_AggressiveHeatDump.description>Descarrega na hora todo o seu calor neural num alvo, fazendo-o explodir numa área proporcional ao calor perdido. Uma bela declaração de guerra.</VPE_AggressiveHeatDump.description>
+  <!-- EN: Using ability: {0} -->
+  <VPE_AggressiveHeatDump.jobReportString>Usando habilidade: {0}</VPE_AggressiveHeatDump.jobReportString>
+  <!-- EN: aggressive heat dump -->
+  <VPE_AggressiveHeatDump.verbProperties.label>descarga de calor agressiva</VPE_AggressiveHeatDump.verbProperties.label>
+  <!-- EN: berserk pulse -->
+  <VPE_BerserkPulse.label>pulso de fúria</VPE_BerserkPulse.label>
+  <!-- EN: Generate an overwhelming rush of undirected rage in everyone near the target point. Considered an overt act of aggression and lasts several seconds. -->
+  <VPE_BerserkPulse.description>Gera uma onda avassaladora de raiva sem direção em todos perto do ponto alvo. É considerado um ato aberto de agressão e dura alguns segundos.</VPE_BerserkPulse.description>
+  <!-- EN: Using ability: {0} -->
+  <VPE_BerserkPulse.jobReportString>Usando habilidade: {0}</VPE_BerserkPulse.jobReportString>
+  <!-- EN: berserk pulse -->
+  <VPE_BerserkPulse.verbProperties.label>pulso de fúria</VPE_BerserkPulse.verbProperties.label>
+  <!-- EN: psychic drone -->
+  <VPE_PsychicDrone.label>zumbido psíquico</VPE_PsychicDrone.label>
+  <!-- EN: Creates a massive psychic drone aura around the caster tuned to hostiles, frequently driving them insane until they overcome the break. Duration scales with the caster’s psychic sensitivity. -->
+  <VPE_PsychicDrone.description>Cria uma enorme aura de zumbido psíquico ao redor do conjurador, sintonizada nos hostis, que muitas vezes os enlouquece até superarem o colapso. A duração depende da sensibilidade psíquica do conjurador.</VPE_PsychicDrone.description>
+  <!-- EN: Using ability: {0} -->
+  <VPE_PsychicDrone.jobReportString>Usando habilidade: {0}</VPE_PsychicDrone.jobReportString>
+  <!-- EN: psychic drone -->
+  <VPE_PsychicDrone.verbProperties.label>zumbido psíquico</VPE_PsychicDrone.verbProperties.label>
+  <!-- EN: neural heat detonation -->
+  <VPE_NeuralHeatDetonation.label>detonação de calor neural</VPE_NeuralHeatDetonation.label>
+  <!-- EN: Efficiently but indiscriminately dumps all of the caster’s neural heat into an explosion away from themselves, the size being relative to the heat lost. -->
+  <VPE_NeuralHeatDetonation.description>Descarrega com eficiência, mas sem discriminar ninguém, todo o calor neural do conjurador numa explosão longe dele, com tamanho proporcional ao calor perdido.</VPE_NeuralHeatDetonation.description>
+  <!-- EN: Using ability: {0} -->
+  <VPE_NeuralHeatDetonation.jobReportString>Usando habilidade: {0}</VPE_NeuralHeatDetonation.jobReportString>
+  <!-- EN: neural heat detonation -->
+  <VPE_NeuralHeatDetonation.verbProperties.label>detonação de calor neural</VPE_NeuralHeatDetonation.verbProperties.label>
+  <!-- EN: neuroquake -->
+  <VPE_Neuroquake.label>neuroterremoto</VPE_Neuroquake.label>
+  <!-- EN: Find a discontinuity in the psychic field and unfold it, releasing a massive amount of psychic energy. Every creature in range but outside of the safe inner circle will be driven violently insane. Casting this takes 12 seconds of meditation, and afterwards, the caster will go into a psychic coma. The disturbing neuroquake echoes will inflict pain on everyone for many kilometers around, causing diplomatic consequences with all factions. -->
+  <VPE_Neuroquake.description>Encontra uma descontinuidade no campo psíquico e a desdobra, liberando uma quantidade enorme de energia psíquica. Toda criatura ao alcance, mas fora do círculo interno seguro, enlouquece violentamente. Conjurar leva 12 segundos de meditação, e depois o conjurador entra em coma psíquico. Os ecos perturbadores do neuroterremoto causam dor em todos num raio de muitos quilômetros, com consequências diplomáticas com todas as facções.</VPE_Neuroquake.description>
+  <!-- EN: Using ability: {0} -->
+  <VPE_Neuroquake.jobReportString>Usando habilidade: {0}</VPE_Neuroquake.jobReportString>
+  <!-- EN: If you use neuroquake, everyone in this region will feel the neuroquake echo, you will lose goodwill with every non-hostile faction.\n\nNeuroquake takes 12 seconds to cast, and cannot be interrupted. When complete, the caster will fall into a psychic coma for up to 5 days.\n\nEveryone in range except those in a small circle around the caster will be affected.\n\nDo you really want to cast neuroquake? -->
+  <VPE_Neuroquake.modExtensions.0.message>Se vocês usarem o neuroterremoto, todos nesta região vão sentir o eco dele, e vocês vão perder boa vontade com todas as facções não hostis.\n\nO neuroterremoto leva 12 segundos para ser conjurado e não pode ser interrompido. Ao terminar, o conjurador cai num coma psíquico por até 5 dias.\n\nTodos ao alcance, menos quem estiver num pequeno círculo ao redor do conjurador, serão afetados.\n\nQuerem mesmo conjurar o neuroterremoto?</VPE_Neuroquake.modExtensions.0.message>
+  <!-- EN: neuroquake -->
+  <VPE_Neuroquake.verbProperties.label>neuroterremoto</VPE_Neuroquake.verbProperties.label>
+</LanguageData>

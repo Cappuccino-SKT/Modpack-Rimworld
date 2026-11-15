@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <!-- EN: darkvision -->
+  <VPE_Darkvision.label>visão no escuro</VPE_Darkvision.label>
+  <!-- EN: Gives the targeted pawn a nictitating membrane that allows them to see equally well in darkness and daytime. Duration scales with the target's psychic sensitivity. -->
+  <VPE_Darkvision.description>Dá ao personagem alvo uma membrana nictitante que o faz enxergar igualmente bem no escuro e de dia. A duração depende da sensibilidade psíquica do alvo.</VPE_Darkvision.description>
+  <!-- EN: Using ability: {0} -->
+  <VPE_Darkvision.jobReportString>Usando habilidade: {0}</VPE_Darkvision.jobReportString>
+  <!-- EN: darkvision -->
+  <VPE_Darkvision.verbProperties.label>visão no escuro</VPE_Darkvision.verbProperties.label>
+  <!-- EN: darkness -->
+  <VPE_Darkness.label>escuridão</VPE_Darkness.label>
+  <!-- EN: Select a target area to generate an orb of completely obfuscating darkness, the duration scaling with the caster’s psychic sensitivity. All vision is blocked and any attacks within or passing through will miss entirely. -->
+  <VPE_Darkness.description>Escolha uma área alvo para gerar uma esfera de escuridão totalmente opaca, com duração conforme a sensibilidade psíquica do conjurador. Toda a visão é bloqueada, e qualquer ataque dentro dela ou que passe por ela erra completamente.</VPE_Darkness.description>
+  <!-- EN: Using ability: {0} -->
+  <VPE_Darkness.jobReportString>Usando habilidade: {0}</VPE_Darkness.jobReportString>
+  <!-- EN: darkness -->
+  <VPE_Darkness.verbProperties.label>escuridão</VPE_Darkness.verbProperties.label>
+  <!-- EN: obscure -->
+  <VPE_Obscure.label>ocultar</VPE_Obscure.label>
+  <!-- EN: Creates a field of optical disharmony around the caster, causing affected allies standing in darkness to be completely invisible. Attacking breaks the illusion. -->
+  <VPE_Obscure.description>Cria ao redor do conjurador um campo de desarmonia óptica que deixa completamente invisíveis os aliados afetados que estiverem no escuro. Atacar quebra a ilusão.</VPE_Obscure.description>
+  <!-- EN: Using ability: {0} -->
+  <VPE_Obscure.jobReportString>Usando habilidade: {0}</VPE_Obscure.jobReportString>
+  <!-- EN: obscure -->
+  <VPE_Obscure.verbProperties.label>ocultar</VPE_Obscure.verbProperties.label>
+  <!-- EN: eclipse -->
+  <VPE_Eclipse.label>eclipse</VPE_Eclipse.label>
+  <!-- EN: By strategically placing an orb of obfuscating darkness high in the sky, the caster can effectively cause a spontaneous eclipse. -->
+  <VPE_Eclipse.description>Posicionando estrategicamente uma esfera de escuridão opaca bem alto no céu, o conjurador consegue provocar um eclipse espontâneo.</VPE_Eclipse.description>
+  <!-- EN: Using ability: {0} -->
+  <VPE_Eclipse.jobReportString>Usando habilidade: {0}</VPE_Eclipse.jobReportString>
+  <!-- EN: eclipse -->
+  <VPE_Eclipse.verbProperties.label>eclipse</VPE_Eclipse.verbProperties.label>
+  <!-- EN: shadowskip -->
+  <VPE_Shadowskip.label>salto sombrio</VPE_Shadowskip.label>
+  <!-- EN: Linking the caster with their own shadow allows them to teleport themselves to an area of darkness, even if they can’t see the location. -->
+  <VPE_Shadowskip.description>Ligar o conjurador à própria sombra permite que ele se teleporte para uma área escura, mesmo sem ver o local.</VPE_Shadowskip.description>
+  <!-- EN: Using ability: {0} -->
+  <VPE_Shadowskip.jobReportString>Usando habilidade: {0}</VPE_Shadowskip.jobReportString>
+  <!-- EN: shadowskip -->
+  <VPE_Shadowskip.verbProperties.label>salto sombrio</VPE_Shadowskip.verbProperties.label>
+  <!-- EN: decoy -->
+  <VPE_Decoy.label>isca</VPE_Decoy.label>
+  <!-- EN: Creates a localized field of optical disharmony to travel and remain in a desired location, with a duration scaling with psychic sensitivity. The illusion will draw the ire of all enemies. -->
+  <VPE_Decoy.description>Cria um campo localizado de desarmonia óptica que vai até um local desejado e fica lá, com duração conforme a sensibilidade psíquica. A ilusão atrai a ira de todos os inimigos.</VPE_Decoy.description>
+  <!-- EN: Using ability: {0} -->
+  <VPE_Decoy.jobReportString>Usando habilidade: {0}</VPE_Decoy.jobReportString>
+  <!-- EN: decoy -->
+  <VPE_Decoy.verbProperties.label>isca</VPE_Decoy.verbProperties.label>
+  <!-- EN: shadowfocus -->
+  <VPE_ShadowFocus.label>foco sombrio</VPE_ShadowFocus.label>
+  <!-- EN: Emitting particles of absorptive darkness allows the caster to augment their psychic sensitivity, which scales inversely with the local light level. -->
+  <VPE_ShadowFocus.description>Emitindo partículas de escuridão absorvente, o conjurador aumenta a própria sensibilidade psíquica, de forma inversamente proporcional à luz do local.</VPE_ShadowFocus.description>
+  <!-- EN: Using ability: {0} -->
+  <VPE_ShadowFocus.jobReportString>Usando habilidade: {0}</VPE_ShadowFocus.jobReportString>
+  <!-- EN: shadowfocus -->
+  <VPE_ShadowFocus.verbProperties.label>foco sombrio</VPE_ShadowFocus.verbProperties.label>
+  <!-- EN: intensify shadows -->
+  <VPE_IntensifyShadows.label>intensificar sombras</VPE_IntensifyShadows.label>
+  <!-- EN: Links the caster’s shadow with the shade and infuses it with obfuscating darkness, plummeting all areas on the map with less than 50% light levels into pitch darkness. Duration scales with the caster’s psychic sensitivity. -->
+  <VPE_IntensifyShadows.description>Liga a sombra do conjurador à penumbra e a infunde com escuridão opaca, mergulhando na escuridão total todas as áreas do mapa com menos de 50% de luz. A duração depende da sensibilidade psíquica do conjurador.</VPE_IntensifyShadows.description>
+  <!-- EN: Using ability: {0} -->
+  <VPE_IntensifyShadows.jobReportString>Usando habilidade: {0}</VPE_IntensifyShadows.jobReportString>
+  <!-- EN: intensify shadows -->
+  <VPE_IntensifyShadows.verbProperties.label>intensificar sombras</VPE_IntensifyShadows.verbProperties.label>
+  <!-- EN: assassinate -->
+  <VPE_Assassinate.label>assassinar</VPE_Assassinate.label>
+  <!-- EN: Links the caster’s shadow to a target in dark areas, allowing them to skip back and forth multiple times to attack in melee. The amount of hits depends on the caster’s psychic sensitivity. -->
+  <VPE_Assassinate.description>Liga a sombra do conjurador a um alvo em área escura, permitindo saltar de um lado para o outro várias vezes para atacar corpo a corpo. A quantidade de golpes depende da sensibilidade psíquica do conjurador.</VPE_Assassinate.description>
+  <!-- EN: Using ability: {0} -->
+  <VPE_Assassinate.jobReportString>Usando habilidade: {0}</VPE_Assassinate.jobReportString>
+  <!-- EN: assassinate -->
+  <VPE_Assassinate.verbProperties.label>assassinar</VPE_Assassinate.verbProperties.label>
+  <!-- EN: nightstep -->
+  <VPE_Nightstep.label>passo noturno</VPE_Nightstep.label>
+  <!-- EN: Briefly links nearby allies to a distant colonist’s shadow to instantly teleport them, even across the planet as long as they are not overburdened. Can only be cast at night and temporarily stuns the caster. -->
+  <VPE_Nightstep.description>Liga por um instante os aliados próximos à sombra de um colono distante para teleportá-los na hora, até para o outro lado do planeta, desde que não estejam sobrecarregados. Só pode ser conjurado à noite e atordoa o conjurador temporariamente.</VPE_Nightstep.description>
+  <!-- EN: Using ability: {0} -->
+  <VPE_Nightstep.jobReportString>Usando habilidade: {0}</VPE_Nightstep.jobReportString>
+  <!-- EN: nightstep -->
+  <VPE_Nightstep.verbProperties.label>passo noturno</VPE_Nightstep.verbProperties.label>
+</LanguageData>

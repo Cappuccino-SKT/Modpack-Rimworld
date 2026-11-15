@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <!-- EN: {0} has reproduced asexually. -->
+  <AG_AsexualHatched>{0} se reproduziu de forma assexuada.</AG_AsexualHatched>
+  <!-- EN: Death in {0} -->
+  <AG_DeathIn>Morte em {0}</AG_DeathIn>
+  <!-- EN: Unstable mutation gained by {0}: {1} -->
+  <AG_RandomGenesGained>Mutação instável adquirida por {0}: {1}</AG_RandomGenesGained>
+  <!-- EN: Slow gestation gene: -25% gestation speed -->
+  <AG_PregnancySlower>Gene gestação lenta: -25% de velocidade de gestação</AG_PregnancySlower>
+  <!-- EN: Fast gestation gene: +25% gestation speed -->
+  <AG_PregnancyFaster>Gene gestação rápida: +25% de velocidade de gestação</AG_PregnancyFaster>
+  <!-- EN: Enable armour -->
+  <AG_ReativeArmourOn>Ativar armadura</AG_ReativeArmourOn>
+  <!-- EN: Disable armour -->
+  <AG_ReativeArmourOff>Desativar armadura</AG_ReativeArmourOff>
+  <!-- EN: Enable overdrive -->
+  <AG_OverdriveOn>Ativar sobrecarga</AG_OverdriveOn>
+  <!-- EN: Disable overdrive -->
+  <AG_OverdriveOff>Desativar sobrecarga</AG_OverdriveOff>
+  <!-- EN: Mineral cost -->
+  <AG_AbilityMineralCost>Custo em minerais</AG_AbilityMineralCost>
+  <!-- EN: {0_labelShort} is not a mineral absorber. -->
+  <AG_AbilityDisabledNoMineralGene>{0_labelShort} não é um absorvedor de minerais.</AG_AbilityDisabledNoMineralGene>
+  <!-- EN: {0_labelShort} does not have enough minerals. -->
+  <AG_AbilityDisabledNoMineral>{0_labelShort} não tem minerais suficientes.</AG_AbilityDisabledNoMineral>
+  <!-- EN: This genepack already has the maximum possible amount of genes -->
+  <AG_AlreadyFourGenes>Este pacote genético já tem o máximo possível de genes</AG_AlreadyFourGenes>
+  <!-- EN: The disruptor won't work if the genepack only has one remaining gene -->
+  <AG_NeedsMoreThanTwoGenes>O desestabilizador não funciona se o pacote genético só tiver um gene</AG_NeedsMoreThanTwoGenes>
+  <!-- EN: This ability cannot be used as a one-shot weapon on a hostile pawn -->
+  <AG_CannotBeUsedAsWeapon>Esta habilidade não pode ser usada como arma de um disparo só contra um personagem hostil</AG_CannotBeUsedAsWeapon>
+  <!-- EN: Chestburst! -->
+  <AG_ParasitesHatchedLabel>Eclosão torácica!</AG_ParasitesHatchedLabel>
+  <!-- EN: A newborn, {0}, has hatched from a host, killing it in the process -->
+  <AG_ParasitesHatched>Um recém-nascido, {0}, eclodiu de um hospedeiro, matando-o no processo</AG_ParasitesHatched>
+  <!-- EN: Unsummoned in {0} -->
+  <AG_UnsummonedIn>Desaparece em {0}</AG_UnsummonedIn>
+  <!-- EN: Target resisted the insanity blast! -->
+  <AG_ResistedInsanityBlast>O alvo resistiu à explosão de insanidade!</AG_ResistedInsanityBlast>
+  <!-- EN: Mechanoids are not affected by insanity blast! -->
+  <AG_MechsImmuneToInsanityBlast>Mecanoides não são afetados pela explosão de insanidade!</AG_MechsImmuneToInsanityBlast>
+  <!-- EN: Target must be downed or lying down in bed for this ability to work -->
+  <AG_DownedOrLyingInBed>O alvo precisa estar caído ou deitado na cama para esta habilidade funcionar</AG_DownedOrLyingInBed>
+  <!-- EN: Target lacks a brain. This is sadly pretty common in the world -->
+  <AG_PawnWithoutBrain>O alvo não tem cérebro. Infelizmente, isso é bem comum no mundo</AG_PawnWithoutBrain>
+  <!-- EN: Deathless people are immune to parasitic implantations -->
+  <AG_CannotBeUsedOnDeathless>Pessoas imortais são imunes a implantes parasitários</AG_CannotBeUsedOnDeathless>
+  <!-- EN: Androids are immune to parasitic implantations -->
+  <AG_CannotBeUsedOnAndroids>Androides são imunes a implantes parasitários</AG_CannotBeUsedOnAndroids>
+  <!-- EN: Only one ocular slinger can exist per colonist with the ocular affinity gene -->
+  <VRE_OneScorpionPerColonist>Só pode existir um atirador ocular por colono com o gene afinidade ocular</VRE_OneScorpionPerColonist>
+  <!-- EN: Unlocked via Ocular Affinity gene -->
+  <VRE_UnlockedByGeneOcular>Desbloqueado pelo gene afinidade ocular</VRE_UnlockedByGeneOcular>
+  <!-- EN: This ability will only work on mechanoids -->
+  <AM_CantUseOnNonMechs>Esta habilidade só funciona em mecanoides</AM_CantUseOnNonMechs>
+  <!-- EN: Only a mechanitor can use this ability -->
+  <AM_OnlyMechanitorCanUse>Só um mecanitor pode usar esta habilidade</AM_OnlyMechanitorCanUse>
+  <!-- EN: "Boss" mechanoids have a reinforced IFF system that can't be hacked -->
+  <AM_CantUseOnBossMechs>Mecanoides "chefes" têm um sistema de identificação reforçado que não pode ser invadido</AM_CantUseOnBossMechs>
+  <!-- EN: Mechanitor doesn't have enough bandwidth to use this ability on a {0} -->
+  <AM_NotEnoughBandwidth>O mecanitor não tem banda suficiente para usar esta habilidade em: {0}</AM_NotEnoughBandwidth>
+  <!-- EN: This mechanoid is being remotely controlled by a human pilot, and it can't be hacked -->
+  <AM_CantUseVEMechs>Este mecanoide é controlado remotamente por um piloto humano e não pode ser invadido</AM_CantUseVEMechs>
+  <!-- EN: Can't create temporary node there -->
+  <AG_CantSpawnThere>Não é possível criar o nó temporário ali</AG_CantSpawnThere>
+  <!-- EN: {0} is not a colony mech, this will only work on player owned mechs -->
+  <AG_OnlyOnFriendlyMechs>{0} não é um mecanoide da colônia; isto só funciona em mecanoides do jogador</AG_OnlyOnFriendlyMechs>
+  <!-- EN: This ability doesn't work on androids -->
+  <AG_NotOnAndroids>Esta habilidade não funciona em androides</AG_NotOnAndroids>
+  <!-- EN: {0} is too big for a grapple (max body size {1}) -->
+  <AG_TargetTooBig>{0} é grande demais para um agarrão (tamanho corporal máximo {1})</AG_TargetTooBig>
+  <!-- EN: Hybrid -->
+  <AG_Hybrid>Híbrido</AG_Hybrid>
+  <!-- EN: {0} doesn't have any negative memories that can be absorbed -->
+  <AG_PsychicAbsorptionNoMoods>{0} não tem memórias negativas que possam ser absorvidas</AG_PsychicAbsorptionNoMoods>
+  <!-- EN: This ability needs to target its caster -->
+  <AG_NeedToTargetCaster>Esta habilidade precisa ter como alvo quem a usa</AG_NeedToTargetCaster>
+  <!-- EN: Pocket plane is not open at the moment -->
+  <AG_PocketPlaneMapNotActive>O plano de bolso não está aberto no momento</AG_PocketPlaneMapNotActive>
+  <!-- EN: {0} can't collapse a pocket plane while being inside it! -->
+  <AG_PawnCantCollapsePocket>{0} não pode colapsar um plano de bolso estando dentro dele!</AG_PawnCantCollapsePocket>
+  <!-- EN: Items cannot be transferred out of a pocket plane. -->
+  <AG_CantTeleportItemsOutOfPocketPlane>Itens não podem ser tirados de um plano de bolso.</AG_CantTeleportItemsOutOfPocketPlane>
+  <!-- EN: {0} is not a fleshbeast! -->
+  <AG_OnlyOnFleshbeasts>{0} não é uma fera de carne!</AG_OnlyOnFleshbeasts>
+  <!-- EN: {0} is too big to be affected by this ability! -->
+  <AG_FleshbeastTooBig>{0} é grande demais para ser afetado por esta habilidade!</AG_FleshbeastTooBig>
+  <!-- EN: The original location is no longer available! {0} is trapped forever in this pocket plane! -->
+  <AG_TrappedForever>O local original não está mais disponível! {0} está preso para sempre neste plano de bolso!</AG_TrappedForever>
+  <!-- EN: Can only be built by someone with the Forsaken Knowledge gene -->
+  <AG_NeedsForsakenKnowledge>Só pode ser construído por alguém com o gene conhecimento renegado</AG_NeedsForsakenKnowledge>
+  <!-- EN: Can only be used by someone with the Forsaken Knowledge gene -->
+  <AG_NeedsForsakenKnowledgeToWield>Só pode ser usado por alguém com o gene conhecimento renegado</AG_NeedsForsakenKnowledgeToWield>
+  <!-- EN: Choose gene to remove -->
+  <AG_ChooseGeneToRemove>Escolha o gene a remover</AG_ChooseGeneToRemove>
+  <!-- EN: Choose endogene to turn into xenogene -->
+  <AG_ChooseEndogeneToConvert>Escolha o endogene que vai virar xenogene</AG_ChooseEndogeneToConvert>
+  <!-- EN: Choose xenogene to turn into endogene -->
+  <AG_ChooseXenogeneToConvert>Escolha o xenogene que vai virar endogene</AG_ChooseXenogeneToConvert>
+  <!-- EN: Target lacks endogenes -->
+  <AG_NoEndogenes>O alvo não tem endogenes</AG_NoEndogenes>
+  <!-- EN: Target lacks xenogenes -->
+  <AG_NoXenogenes>O alvo não tem xenogenes</AG_NoXenogenes>
+  <!-- EN: Target lacks any genes -->
+  <AG_NoGenesAtAll>O alvo não tem nenhum gene</AG_NoGenesAtAll>
+  <!-- EN: This ability only works on Nightlings -->
+  <AM_OnlyNightlings>Esta habilidade só funciona em noturninos</AM_OnlyNightlings>
+  <!-- EN: This Nightling is not a wild animal -->
+  <AM_OnlyWildNightlings>Este noturnino não é um animal selvagem</AM_OnlyWildNightlings>
+  <!-- EN: He's dead, Jim -->
+  <AM_NightlingDead>Ele está morto, Jim</AM_NightlingDead>
+  <!-- EN: {0} has syphoned the {1} gene! -->
+  <AG_GeneSyphoned>{0} sugou o gene {1}!</AG_GeneSyphoned>
+  <!-- EN: Disable unstable mutations message -->
+  <AG_DisableMutationsMessage>Desativar mensagem de mutações instáveis</AG_DisableMutationsMessage>
+  <!-- EN: By default, the three "unstable mutations" genes will display a pop up message telling you which genes have been acquired by each colonist. This is fine if you have one colonist, not so fine if you have 20... With this options toggle you can remove those messages. -->
+  <AG_DisableMutationsMessage_Description>Por padrão, os três genes de "mutação instável" mostram uma mensagem dizendo quais genes cada colono ganhou. Tudo bem com um colono, nem tanto com 20... Com esta opção você remove essas mensagens.</AG_DisableMutationsMessage_Description>
+  <!-- EN: Disable thalassophobia message -->
+  <AG_DisableThalassophobiaMessage>Desativar mensagem de talassofobia</AG_DisableThalassophobiaMessage>
+  <!-- EN: By default, every time a pawn with the thalassophobia gene flees from water the game will generate a letter informing the player. This may be a bit too much if you have many pawns fleeing often, so you can disable it with this toggle. Bear in mind the pawns will still flee, you'll just NOT get informed. -->
+  <AG_DisableThalassophobiaMessage_Description>Por padrão, toda vez que um personagem com o gene talassofobia foge da água, o jogo manda uma carta avisando. Isso pode ser demais se você tiver muitos personagens fugindo com frequência, então dá para desativar aqui. Os personagens continuam fugindo; você só NÃO é avisado.</AG_DisableThalassophobiaMessage_Description>
+  <!-- EN: Genetic tools cause gene removal coma -->
+  <AG_GeneRemovalComa>Ferramentas genéticas causam coma de remoção de genes</AG_GeneRemovalComa>
+  <!-- EN: Using any genetic tool causes a gene removal coma that lasts for 3 days, knocking the colonist out, and no other tool can be used in that period. This is ON by default for balance. -->
+  <AG_GeneRemovalComa_Description>Usar qualquer ferramenta genética causa um coma de remoção de genes que dura 3 dias, apagando o colono, e nenhuma outra ferramenta pode ser usada nesse período. Vem ATIVADO por padrão, para equilíbrio.</AG_GeneRemovalComa_Description>
+  <!-- EN: Disable Abandoned Biotech Lab quests -->
+  <AG_DisableQuests>Desativar missões de laboratório biotech abandonado</AG_DisableQuests>
+  <!-- EN: Disables Abandoned Biotech Lab quests from triggering. Bear in mind these quests are independent of any other quests or storyteller events (raids, manhunters, etc). WARNING: disabling this will make most alpha genes and genetic tools unobtainable during normal gameplay. -->
+  <AG_DisableQuests_Description>Impede que as missões de laboratório biotech abandonado apareçam. Essas missões são independentes de outras missões ou eventos do narrador (incursões, caçadores de humanos etc.). ATENÇÃO: desativar isto deixa a maioria dos genes alpha e das ferramentas genéticas impossíveis de conseguir no jogo normal.</AG_DisableQuests_Description>
+  <!-- EN: Abandoned Biotech Labs multiplier (lower means getting the event more often) -->
+  <AG_QuestRate>Multiplicador de laboratórios biotech abandonados (menor = evento mais frequente)</AG_QuestRate>
+  <!-- EN: The frequency of the Abandoned Biotech Lab quest being offered is multiplied by this number (with a multiplier of 1, it is offered every between 15 and 30 days at random). Numbers below 1 decrease the time, while numbers above it increase it. Note that this event doesn't "replace" normal quests, it works independently. -->
+  <AG_QuestRateTooltip>A frequência da missão de laboratório biotech abandonado é multiplicada por este número (com multiplicador 1, ela aparece a cada 15 a 30 dias, ao acaso). Números abaixo de 1 diminuem o intervalo; acima de 1, aumentam. Este evento não "substitui" as missões normais; funciona à parte.</AG_QuestRateTooltip>
+  <!-- EN: Reset -->
+  <AG_Reset>Redefinir</AG_Reset>
+  <!-- EN: Show ALL animal summon genes (requires game reload) -->
+  <AG_ShowAllAnimalSummonGenes>Mostrar TODOS os genes de invocação de animais (exige recarregar o jogo)</AG_ShowAllAnimalSummonGenes>
+  <!-- EN: If selected, ALL animal summon genes will be shown on the xenotype creator screen. Bear in mind these genes will draw from all animals, vanilla or modded, so this can get out of control fast! By default, they are hidden, and three genes are shown that choose one of them at random. -->
+  <AG_ShowAllAnimalSummonGenes_Description>Se marcado, TODOS os genes de invocação de animais aparecem na tela de criação de xenotipos. Eles usam todos os animais, do jogo base ou de mods, então isso sai do controle rapidinho! Por padrão ficam ocultos, e aparecem três genes que escolhem um deles ao acaso.</AG_ShowAllAnimalSummonGenes_Description>
+  <!-- EN: Give random shambler-only genes to shamblers -->
+  <AG_RandomGenesToShamblers>Dar genes aleatórios exclusivos de trôpego aos trôpegos</AG_RandomGenesToShamblers>
+  <!-- EN: If active, any shambler appearing on the map will get a bunch (1-3) of random shambler-only genes. -->
+  <AG_RandomGenesToShamblers_Description>Se ativo, todo trôpego que aparecer no mapa ganha alguns (1 a 3) genes aleatórios exclusivos de trôpego.</AG_RandomGenesToShamblers_Description>
+</LanguageData>

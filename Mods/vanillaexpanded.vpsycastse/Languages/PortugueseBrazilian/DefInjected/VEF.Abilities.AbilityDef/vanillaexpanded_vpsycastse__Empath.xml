@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <!-- EN: word of joy -->
+  <VPE_WordofJoy.label>palavra de alegria</VPE_WordofJoy.label>
+  <!-- EN: Speak happy, calming words to someone while using psychic suggestion to implant a joyfuzz loop in his mind. The joyfuzz will suppress uncomfortable thoughts and sensations in the target to improve mood. This has the side-effect of dulling sensation and decision-making, which reduces consciousness. -->
+  <VPE_WordofJoy.description>Diz palavras felizes e calmantes a alguém, usando sugestão psíquica para implantar um ciclo de névoa de alegria na mente dele. A névoa suprime pensamentos e sensações desagradáveis no alvo para melhorar o humor. O efeito colateral é embotar a sensação e a tomada de decisão, o que reduz a consciência.</VPE_WordofJoy.description>
+  <!-- EN: Using ability: {0} -->
+  <VPE_WordofJoy.jobReportString>Usando habilidade: {0}</VPE_WordofJoy.jobReportString>
+  <!-- EN: word of joy -->
+  <VPE_WordofJoy.verbProperties.label>palavra de alegria</VPE_WordofJoy.verbProperties.label>
+  <!-- EN: word of love -->
+  <VPE_WordofLove.label>palavra de amor</VPE_WordofLove.label>
+  <!-- EN: Speak about someone's romantic virtues while using psychic suggestion to implant romantic desire in the listener. For days afterward, the listener will feel psychically-induced romantic attraction towards the other person. This greatly increases opinion and makes them much more likely to attempt romantic advances and marriage proposals if they get the chance. This power can be used to connect two other people, induce love for the caster, or force oneself to love another. -->
+  <VPE_WordofLove.description>Fala das virtudes românticas de alguém usando sugestão psíquica para implantar desejo romântico no ouvinte. Por dias, o ouvinte vai sentir uma atração romântica induzida psiquicamente pela outra pessoa. Isso aumenta muito a opinião e o deixa muito mais propenso a investidas românticas e pedidos de casamento, se tiver a chance. Este poder pode unir duas outras pessoas, induzir amor pelo conjurador ou forçar o próprio conjurador a amar outra pessoa.</VPE_WordofLove.description>
+  <!-- EN: Using ability: {0} -->
+  <VPE_WordofLove.jobReportString>Usando habilidade: {0}</VPE_WordofLove.jobReportString>
+  <!-- EN: word of love -->
+  <VPE_WordofLove.verbProperties.label>palavra de amor</VPE_WordofLove.verbProperties.label>
+  <!-- EN: word of serenity -->
+  <VPE_WordofSerenity.label>palavra de serenidade</VPE_WordofSerenity.label>
+  <!-- EN: Use calming words and psychic suggestion to end a mental break on a person or animal. The target will fall into a short psychic sleep. The psyfocus cost depends on the intensity of the target's mental break. -->
+  <VPE_WordofSerenity.description>Usa palavras calmantes e sugestão psíquica para acabar com o colapso mental de uma pessoa ou animal. O alvo cai num sono psíquico curto. O custo de concentração psíquica depende da intensidade do colapso do alvo.</VPE_WordofSerenity.description>
+  <!-- EN: Using ability: {0} -->
+  <VPE_WordofSerenity.jobReportString>Usando habilidade: {0}</VPE_WordofSerenity.jobReportString>
+  <!-- EN: word of serenity -->
+  <VPE_WordofSerenity.verbProperties.label>palavra de serenidade</VPE_WordofSerenity.verbProperties.label>
+  <!-- EN: word of inspiration -->
+  <VPE_WordofInspiration.label>palavra de inspiração</VPE_WordofInspiration.label>
+  <!-- EN: Speak words encouraging creativity while psychically hypercharging the target's mind with new ideas. The target will experience a random inspiration appropriate to them. -->
+  <VPE_WordofInspiration.description>Diz palavras que incentivam a criatividade enquanto sobrecarrega psiquicamente a mente do alvo com novas ideias. O alvo recebe uma inspiração aleatória adequada a ele.</VPE_WordofInspiration.description>
+  <!-- EN: Using ability: {0} -->
+  <VPE_WordofInspiration.jobReportString>Usando habilidade: {0}</VPE_WordofInspiration.jobReportString>
+  <!-- EN: word of inspiration -->
+  <VPE_WordofInspiration.verbProperties.label>palavra de inspiração</VPE_WordofInspiration.verbProperties.label>
+  <!-- EN: psychic sooth (male) -->
+  <VPE_SootheMale.label>alívio psíquico (homens)</VPE_SootheMale.label>
+  <!-- EN: Sends out a signal to a distant engine of happiness to begin projecting a positive psychic drone, while also manipulating an orbital amplifier that only affects males. -->
+  <VPE_SootheMale.description>Manda um sinal para um motor de felicidade distante começar a projetar um zumbido psíquico positivo, enquanto manipula um amplificador orbital que só afeta homens.</VPE_SootheMale.description>
+  <!-- EN: Using ability: {0} -->
+  <VPE_SootheMale.jobReportString>Usando habilidade: {0}</VPE_SootheMale.jobReportString>
+  <!-- EN: psychic sooth (male) -->
+  <VPE_SootheMale.verbProperties.label>alívio psíquico (homens)</VPE_SootheMale.verbProperties.label>
+  <!-- EN: psychic sooth (female) -->
+  <VPE_SootheFemale.label>alívio psíquico (mulheres)</VPE_SootheFemale.label>
+  <!-- EN: Sends out a signal to a distant engine of happiness to begin projecting a positive psychic drone, while also manipulating an orbital amplifier that only affects females. -->
+  <VPE_SootheFemale.description>Manda um sinal para um motor de felicidade distante começar a projetar um zumbido psíquico positivo, enquanto manipula um amplificador orbital que só afeta mulheres.</VPE_SootheFemale.description>
+  <!-- EN: Using ability: {0} -->
+  <VPE_SootheFemale.jobReportString>Usando habilidade: {0}</VPE_SootheFemale.jobReportString>
+  <!-- EN: psychic sooth (female) -->
+  <VPE_SootheFemale.verbProperties.label>alívio psíquico (mulheres)</VPE_SootheFemale.verbProperties.label>
+  <!-- EN: bliss -->
+  <VPE_Bliss.label>êxtase</VPE_Bliss.label>
+  <!-- EN: After a brief meditation period, induce a sense of serenity in the target that reaches maximum magnitude near the effect’s end. As the calming feeling becomes more pronounced, they will find it harder to concentrate but it is not considered a malicious action. -->
+  <VPE_Bliss.description>Depois de uma breve meditação, induz no alvo uma sensação de serenidade que chega ao máximo perto do fim do efeito. Conforme a calma fica mais forte, fica mais difícil se concentrar, mas isso não é considerado uma ação maliciosa.</VPE_Bliss.description>
+  <!-- EN: Using ability: {0} -->
+  <VPE_Bliss.jobReportString>Usando habilidade: {0}</VPE_Bliss.jobReportString>
+  <!-- EN: bliss -->
+  <VPE_Bliss.verbProperties.label>êxtase</VPE_Bliss.verbProperties.label>
+  <!-- EN: energy dump -->
+  <VPE_EnergyDump.label>descarga de energia</VPE_EnergyDump.label>
+  <!-- EN: Purges the build-up of fatigue in a nearby target and leaves them completely refreshed, in exchange the caster is left completely exhausted and needing a good nap. -->
+  <VPE_EnergyDump.description>Elimina o cansaço acumulado de um alvo próximo e o deixa totalmente renovado; em troca, o conjurador fica completamente exausto e precisando de uma boa soneca.</VPE_EnergyDump.description>
+  <!-- EN: Using ability: {0} -->
+  <VPE_EnergyDump.jobReportString>Usando habilidade: {0}</VPE_EnergyDump.jobReportString>
+  <!-- EN: energy dump -->
+  <VPE_EnergyDump.verbProperties.label>descarga de energia</VPE_EnergyDump.verbProperties.label>
+  <!-- EN: mind wipe -->
+  <VPE_MindWipe.label>apagar mente</VPE_MindWipe.label>
+  <!-- EN: Induce a harmless, instantaneous retrograde amnesia in the target, purging all memories, social bonds and skills acquired outside of their backstory. They also feel a strong kinship with the caster’s colony and joy at rediscovering the joys of life without commitment. -->
+  <VPE_MindWipe.description>Induz no alvo uma amnésia retrógrada instantânea e inofensiva, apagando todas as memórias, laços sociais e habilidades adquiridas fora da história de fundo. Ele também sente um forte parentesco com a colônia do conjurador e a alegria de redescobrir os prazeres da vida sem compromisso.</VPE_MindWipe.description>
+  <!-- EN: Using ability: {0} -->
+  <VPE_MindWipe.jobReportString>Usando habilidade: {0}</VPE_MindWipe.jobReportString>
+  <!-- EN: mind wipe -->
+  <VPE_MindWipe.verbProperties.label>apagar mente</VPE_MindWipe.verbProperties.label>
+  <!-- EN: reunion farskip -->
+  <VPE_ReunionFarskip.label>salto distante de reencontro</VPE_ReunionFarskip.label>
+  <!-- EN: After a short meditation period and followed by a coma, taps into a target’s bloodline to skip all living family members to their proximity, knocked out through psychic shock. However, it does nothing to change their relationships and is considered rude by all other factions. -->
+  <VPE_ReunionFarskip.description>Depois de uma breve meditação, seguida de coma, acessa a linhagem de um alvo para fazer saltar todos os parentes vivos dele para perto, desacordados por choque psíquico. Mas isso não muda em nada as relações entre eles, e todas as outras facções acham falta de educação.</VPE_ReunionFarskip.description>
+  <!-- EN: Using ability: {0} -->
+  <VPE_ReunionFarskip.jobReportString>Usando habilidade: {0}</VPE_ReunionFarskip.jobReportString>
+  <!-- EN: reunion farskip -->
+  <VPE_ReunionFarskip.verbProperties.label>salto distante de reencontro</VPE_ReunionFarskip.verbProperties.label>
+</LanguageData>

@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <VFEE_Parade.questContentRules.rulesStrings>
+    <!-- EN: lastOrNot(nobleCount==1)-&gt; -->
+    <li>lastOrNot(nobleCount==1)-&gt;</li>
+    <!-- EN: lastOrNot(nobleCount&gt;=2)-&gt;last -->
+    <li>lastOrNot(nobleCount&gt;=2)-&gt;último</li>
+    <!-- EN: lodgersLabelSingularOrPlural(nobleCount==1)-&gt;[lodgersLabel] -->
+    <li>lodgersLabelSingularOrPlural(nobleCount==1)-&gt;[lodgersLabel]</li>
+    <!-- EN: lodgersLabelSingularOrPlural(nobleCount&gt;=2)-&gt;[lodgersLabelPlural] -->
+    <li>lodgersLabelSingularOrPlural(nobleCount&gt;=2)-&gt;[lodgersLabelPlural]</li>
+    <!-- EN: decidedToLeave-&gt;Your guests are leaving immediately, and will not remember this event fondly! -->
+    <li>decidedToLeave-&gt;Seus convidados vão embora na hora e não vão guardar boas lembranças deste evento!</li>
+    <!-- EN: oneOfThe-&gt;one of the nobles visiting for the parade -->
+    <li>oneOfThe-&gt;um dos nobres que vieram para o desfile</li>
+    <!-- EN: questOver-&gt;The quest '[resolvedQuestName]' is over. -->
+    <li>questOver-&gt;A missão '[resolvedQuestName]' acabou.</li>
+    <!-- EN: CeremonyFailedLetterLabel-&gt;Parade failed -->
+    <li>CeremonyFailedLetterLabel-&gt;O desfile fracassou</li>
+    <!-- EN: CeremonyFailedLetterText-&gt;[asker_nameFull] is disappointed by your failure to make for an enjoyable parade. [asker_pronoun] is leaving with [asker_possessive] guests. -->
+    <li>CeremonyFailedLetterText-&gt;[asker_nameFull] ficou decepcionado com o fracasso de vocês em fazer um desfile agradável e está indo embora com os convidados.</li>
+    <!-- EN: CeremonyTimeoutLetterLabel-&gt;Parade failed -->
+    <li>CeremonyTimeoutLetterLabel-&gt;O desfile fracassou</li>
+    <!-- EN: CeremonyTimeoutLetterText-&gt;[asker_nameFull] has grown tired of waiting for you to start the parade. [asker_pronoun] is leaving with [asker_possessive] guests. -->
+    <li>CeremonyTimeoutLetterText-&gt;[asker_nameFull] cansou de esperar vocês começarem o desfile e está indo embora com os convidados.</li>
+    <!-- EN: NoblesArriveLetterLabel-&gt;Parade nobles arriving -->
+    <li>NoblesArriveLetterLabel-&gt;Nobres do desfile chegando</li>
+    <!-- EN: NoblesArriveLetterText-&gt;[asker_nameFull] and the nobility for [stellarch_nameDef]'s ascension parade are landing. Once they have gathered, select [asker_nameDef] to start the parade. They will not wait long. -->
+    <li>NoblesArriveLetterText-&gt;[asker_nameFull] e a nobreza do desfile de ascensão de [stellarch_nameDef] estão pousando. Quando todos estiverem reunidos, selecione [asker_nameDef] para começar o desfile. Eles não vão esperar muito.</li>
+    <!-- EN: CountdownHostileLetterLabel-&gt;Parade called off -->
+    <li>CountdownHostileLetterLabel-&gt;Desfile cancelado</li>
+    <!-- EN: CountdownHostileLetterText-&gt;The Empire will not send its nobility to a colony it is at war with. [stellarch_nameDef]'s ascension parade is called off. -->
+    <li>CountdownHostileLetterText-&gt;O Império não vai mandar sua nobreza a uma colônia com a qual está em guerra. O desfile de ascensão de [stellarch_nameDef] foi cancelado.</li>
+    <!-- EN: CountdownAwayLetterLabel-&gt;Parade called off -->
+    <li>CountdownAwayLetterLabel-&gt;Desfile cancelado</li>
+    <!-- EN: CountdownAwayLetterText-&gt;[asker_nameFull] waited a day for [stellarch_nameDef] to be at the colony to receive the nobility. The ascension parade is called off. -->
+    <li>CountdownAwayLetterText-&gt;[asker_nameFull] esperou um dia por [stellarch_nameDef] na colônia para receber a nobreza. O desfile de ascensão foi cancelado.</li>
+    <!-- EN: CountdownPadLetterLabel-&gt;Parade called off -->
+    <li>CountdownPadLetterLabel-&gt;Desfile cancelado</li>
+    <!-- EN: CountdownPadLetterText-&gt;[asker_nameFull] waited a day for the colony's landing pad to be fit for the nobility's shuttle, and will not land it anywhere else. [stellarch_nameDef]'s ascension parade is called off. -->
+    <li>CountdownPadLetterText-&gt;[asker_nameFull] esperou um dia até a plataforma de pouso da colônia ficar adequada para o ônibus espacial da nobreza e não vai pousar em outro lugar. O desfile de ascensão de [stellarch_nameDef] foi cancelado.</li>
+    <!-- EN: CountdownThreatLetterLabel-&gt;Parade called off -->
+    <li>CountdownThreatLetterLabel-&gt;Desfile cancelado</li>
+    <!-- EN: CountdownThreatLetterText-&gt;[asker_nameFull] waited a day for the danger at the colony to pass, and will not land the nobility into it. [stellarch_nameDef]'s ascension parade is called off. -->
+    <li>CountdownThreatLetterText-&gt;[asker_nameFull] esperou um dia o perigo na colônia passar e não vai pousar a nobreza no meio dele. O desfile de ascensão de [stellarch_nameDef] foi cancelado.</li>
+    <!-- EN: letterIntroArrested-&gt;You arrested {SUBJECT_definite}, [oneOfThe]. -->
+    <li>letterIntroArrested-&gt;Vocês prenderam {SUBJECT_definite}, [oneOfThe].</li>
+    <!-- EN: lodgerArrestedLeaveMapLetterLabel-&gt;[lodgersLabel] arrested: Departure -->
+    <li>lodgerArrestedLeaveMapLetterLabel-&gt;[lodgersLabel] preso: partida</li>
+    <!-- EN: lodgerArrestedLeaveMapLetterText-&gt;[letterIntroArrested]\n\n[decidedToLeave] -->
+    <li>lodgerArrestedLeaveMapLetterText-&gt;[letterIntroArrested]\n\n[decidedToLeave]</li>
+    <!-- EN: letterIntroDeath-&gt;{SUBJECT_definite}, [oneOfThe], has died. -->
+    <li>letterIntroDeath-&gt;{SUBJECT_definite}, [oneOfThe], morreu.</li>
+    <!-- EN: lodgerDiedLeaveMapLetterLabel-&gt;[lodgersLabel] died: Departure -->
+    <li>lodgerDiedLeaveMapLetterLabel-&gt;[lodgersLabel] morreu: partida</li>
+    <!-- EN: lodgerDiedLeaveMapLetterText-&gt;[letterIntroDeath]\n\n[decidedToLeave] -->
+    <li>lodgerDiedLeaveMapLetterText-&gt;[letterIntroDeath]\n\n[decidedToLeave]</li>
+    <!-- EN: letterIntroViolated-&gt;{SUBJECT_definite}, [oneOfThe], was violated by surgery. -->
+    <li>letterIntroViolated-&gt;{SUBJECT_definite}, [oneOfThe], foi violado por uma cirurgia.</li>
+    <!-- EN: lodgerSurgeryVioLeaveMapLetterLabel-&gt;[lodgersLabel] violated: Departure -->
+    <li>lodgerSurgeryVioLeaveMapLetterLabel-&gt;[lodgersLabel] violado: partida</li>
+    <!-- EN: lodgerSurgeryVioLeaveMapLetterText-&gt;[letterIntroViolated]\n\n[decidedToLeave] -->
+    <li>lodgerSurgeryVioLeaveMapLetterText-&gt;[letterIntroViolated]\n\n[decidedToLeave]</li>
+    <!-- EN: letterIntroKidnapped-&gt;{SUBJECT_definite}, [oneOfThe], was kidnapped. -->
+    <li>letterIntroKidnapped-&gt;{SUBJECT_definite}, [oneOfThe], foi sequestrado.</li>
+    <!-- EN: lodgerKidnappedLeaveMapLetterLabel-&gt;[lodgersLabel] kidnapped: Departure -->
+    <li>lodgerKidnappedLeaveMapLetterLabel-&gt;[lodgersLabel] sequestrado: partida</li>
+    <!-- EN: lodgerKidnappedLeaveMapLetterText-&gt;[letterIntroKidnapped]\n\n[decidedToLeave] -->
+    <li>lodgerKidnappedLeaveMapLetterText-&gt;[letterIntroKidnapped]\n\n[decidedToLeave]</li>
+    <!-- EN: letterIntroBanished-&gt;{SUBJECT_definite}, [oneOfThe], was banished. -->
+    <li>letterIntroBanished-&gt;{SUBJECT_definite}, [oneOfThe], foi banido.</li>
+    <!-- EN: lodgerBanishedLeaveMapLetterLabel-&gt;[lodgersLabel] banished: Departure -->
+    <li>lodgerBanishedLeaveMapLetterLabel-&gt;[lodgersLabel] banido: partida</li>
+    <!-- EN: lodgerBanishedLeaveMapLetterText-&gt;[letterIntroBanished]\n\n[decidedToLeave] -->
+    <li>lodgerBanishedLeaveMapLetterText-&gt;[letterIntroBanished]\n\n[decidedToLeave]</li>
+    <!-- EN: letterIntroPsychicRitualTarget-&gt;{SUBJECT_definite}, [oneOfThe], was the target of a psychic ritual. -->
+    <li>letterIntroPsychicRitualTarget-&gt;{SUBJECT_definite}, [oneOfThe], foi alvo de um ritual psíquico.</li>
+    <!-- EN: lodgerPsychicRitualTargetLabel-&gt;[lodgersLabel] violated: Departure -->
+    <li>lodgerPsychicRitualTargetLabel-&gt;[lodgersLabel] violado: partida</li>
+    <!-- EN: lodgerPsychicRitualTargetText-&gt;[letterIntroPsychicRitualTarget]\n\n[decidedToLeave] -->
+    <li>lodgerPsychicRitualTargetText-&gt;[letterIntroPsychicRitualTarget]\n\n[decidedToLeave]</li>
+    <!-- EN: ShuttleDestroyedIntro-&gt;The shuttle has been destroyed. -->
+    <li>ShuttleDestroyedIntro-&gt;O ônibus espacial foi destruído.</li>
+    <!-- EN: ShuttleDestroyedLabel-&gt;Shuttle destroyed: Parade failed -->
+    <li>ShuttleDestroyedLabel-&gt;Ônibus espacial destruído: o desfile fracassou</li>
+    <!-- EN: ShuttleDestroyedText-&gt;[ShuttleDestroyedIntro]\n\n[decidedToLeave] -->
+    <li>ShuttleDestroyedText-&gt;[ShuttleDestroyedIntro]\n\n[decidedToLeave]</li>
+    <!-- EN: raidArrivedLetterLabel-&gt;Deserter assassination attempt -->
+    <li>raidArrivedLetterLabel-&gt;Tentativa de assassinato dos desertores</li>
+    <!-- EN: raidArrivedLetterText-&gt;A group of deserters have arrived to attempt to disrupt the parade and assassinate [stellarch_nameDef].\n\nThe parade must not be interrupted for any reason! -->
+    <li>raidArrivedLetterText-&gt;Um grupo de desertores chegou para tentar atrapalhar o desfile e assassinar [stellarch_nameDef].\n\nO desfile não pode ser interrompido por motivo nenhum!</li>
+    <!-- EN: ParadeSuccessLetterLetterLabel-&gt;Parade success -->
+    <li>ParadeSuccessLetterLetterLabel-&gt;Sucesso no desfile</li>
+    <!-- EN: ParadeSuccessLetterText-&gt;The shuttle is ready to depart with all those ascending with [stellarch_nameDef]. It will depart upon your command! -->
+    <li>ParadeSuccessLetterText-&gt;O ônibus espacial está pronto para partir com todos os que ascendem com [stellarch_nameDef]. Ele parte quando vocês mandarem!</li>
+  </VFEE_Parade.questContentRules.rulesStrings>
+  <VFEE_Parade.questDescriptionAndNameRules.rulesStrings>
+    <!-- EN: lodgersLabel-&gt;noble -->
+    <li>lodgersLabel-&gt;nobre</li>
+    <!-- EN: lodgersLabelPlural-&gt;nobles -->
+    <li>lodgersLabelPlural-&gt;nobres</li>
+    <!-- EN: lodgersDef(nobleCount==1)-&gt;[lodgers0_nameDef] -->
+    <li>lodgersDef(nobleCount==1)-&gt;[lodgers0_nameDef]</li>
+    <!-- EN: lodgersDef(nobleCount&gt;=2)-&gt;the [lodgersLabelPlural] -->
+    <li>lodgersDef(nobleCount&gt;=2)-&gt;os [lodgersLabelPlural]</li>
+    <!-- EN: theirHisHer(nobleCount==1)-&gt;[lodgers0_possessive] -->
+    <li>theirHisHer(nobleCount==1)-&gt;[lodgers0_possessive]</li>
+    <!-- EN: theirHisHer(nobleCount&gt;=2)-&gt;their -->
+    <li>theirHisHer(nobleCount&gt;=2)-&gt;deles</li>
+    <!-- EN: lodgersPronoun(nobleCount==1)-&gt;[lodgers0_pronoun] -->
+    <li>lodgersPronoun(nobleCount==1)-&gt;[lodgers0_pronoun]</li>
+    <!-- EN: lodgersPronoun(nobleCount&gt;=2)-&gt;they -->
+    <li>lodgersPronoun(nobleCount&gt;=2)-&gt;eles</li>
+    <!-- EN: lodgersWasWere(nobleCount==1)-&gt;was -->
+    <li>lodgersWasWere(nobleCount==1)-&gt;foi</li>
+    <!-- EN: lodgersWasWere(nobleCount&gt;=2)-&gt;were -->
+    <li>lodgersWasWere(nobleCount&gt;=2)-&gt;foram</li>
+    <!-- EN: appreciateAppreciates(nobleCount==1)-&gt;appreciates -->
+    <li>appreciateAppreciates(nobleCount==1)-&gt;aprecia</li>
+    <!-- EN: appreciateAppreciates(nobleCount&gt;=2)-&gt;appreciate -->
+    <li>appreciateAppreciates(nobleCount&gt;=2)-&gt;apreciam</li>
+    <!-- EN: questDescription-&gt;[stellarch_nameFull] has reached the peak of what [stellarch_pronoun] can achieve from the surface of a rimworld. In order to progress further in the grand hierarchy and become the right hand of Emperor [emperor_nameFull], [stellarch_nameDef] needs to partake in a traditional ascension parade, after which [stellarch_pronoun] will depart on a shuttle and join the Emperor.\n\nA parade of this magnitude is bound to draw the attention of deserters.\n\nOnce you accept this quest, you will have 5 days to prepare for the parade. Consider improving your defenses and working out contingency plans, as it is difficult to say which way the parade will move. At all times you will have to keep the parade safe from harm.\n\nKeep an eye on any rivals or enemies of [stellarch_nameDef], as they might decide it’s a good time to make a move and claim the power for themselves.\n\nThe shuttle will arrive bringing the highest-ranking nobility to the parade. You will be responsible for providing the security for the event. After the parade starts, it will slowly move through the map for 12 hours, after which everyone, including [stellarch_nameDef], will board the shuttle and depart.\n\n\n\n    -->
+    <li>questDescription-&gt;[stellarch_nameFull] chegou ao auge do que pode alcançar na superfície de um mundo da Orla. Para subir mais na grande hierarquia e virar o braço direito do Imperador [emperor_nameFull], [stellarch_nameDef] precisa participar de um desfile tradicional de ascensão, depois do qual parte num ônibus espacial para se juntar ao Imperador.\n\nUm desfile desse porte com certeza vai chamar a atenção dos desertores.\n\nAo aceitar esta missão, vocês terão 5 dias para se preparar para o desfile. Considerem reforçar as defesas e pensar em planos de contingência, porque é difícil dizer por onde o desfile vai passar. O tempo todo, vocês terão de manter o desfile a salvo.\n\nFiquem de olho em rivais ou inimigos de [stellarch_nameDef], que podem achar que é uma boa hora para agir e tomar o poder.\n\nO ônibus espacial vai chegar trazendo a nobreza de mais alto escalão para o desfile. Vocês serão responsáveis pela segurança do evento. Depois que o desfile começar, ele avança devagar pelo mapa por 12 horas; depois disso, todos, incluindo [stellarch_nameDef], embarcam no ônibus espacial e partem.\n\n\n\n</li>
+  </VFEE_Parade.questDescriptionAndNameRules.rulesStrings>
+  <VFEE_Parade.questNameRules.rulesStrings>
+    <!-- EN: questName-&gt;High Stellarch Ascension -->
+    <li>questName-&gt;Ascensão do Grão-Arquistelar</li>
+  </VFEE_Parade.questNameRules.rulesStrings>
+</LanguageData>

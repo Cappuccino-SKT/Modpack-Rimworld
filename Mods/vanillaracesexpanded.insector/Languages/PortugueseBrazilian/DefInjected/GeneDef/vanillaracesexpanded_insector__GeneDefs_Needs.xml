@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <!-- EN: insect jelly dependency -->
+  <VRE_InsectJellyDependency.label>dependência de geleia de inseto</VRE_InsectJellyDependency.label>
+  <!-- EN: Carriers of this gene need to ingest insect jelly on a regular basis to survive. After 5 days without insect jelly, carriers will suffer from insect jelly deficiency. After 30 days, they will fall into a coma. After 60 days, they will die. -->
+  <VRE_InsectJellyDependency.description>Portadores deste gene precisam ingerir geleia de inseto regularmente para sobreviver. Após 5 dias sem geleia de inseto, sofrem de deficiência de geleia de inseto. Após 30 dias, entram em coma. Após 60 dias, morrem.</VRE_InsectJellyDependency.description>
+  <!-- EN: A need by {PAWN_nameDef} to consume insect jelly -->
+  <VRE_InsectJellyDependency.resourceDescription>Uma necessidade de {PAWN_nameDef} de consumir geleia de inseto</VRE_InsectJellyDependency.resourceDescription>
+  <!-- EN: insect jelly -->
+  <VRE_InsectJellyDependency.resourceLabel>geleia de inseto</VRE_InsectJellyDependency.resourceLabel>
+</LanguageData>

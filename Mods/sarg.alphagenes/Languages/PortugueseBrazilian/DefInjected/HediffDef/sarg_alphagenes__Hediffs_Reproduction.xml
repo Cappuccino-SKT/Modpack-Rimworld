@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <!-- EN: fission -->
+  <AG_AsexualFission.label>fissão</AG_AsexualFission.label>
+  <!-- EN: Will periodically generate small clumps of organic matter on their backs that gradually develop into full human beings, and separate from their host / parent via a process of strobilation. This will provide an endless source of new colonists, at the risk of flooding the colony with newborns. -->
+  <AG_AsexualFission.description>Gera de tempos em tempos pequenos aglomerados de matéria orgânica nas costas, que se desenvolvem aos poucos até virar seres humanos completos e se separam do hospedeiro/pai por estrobilização. É uma fonte infinita de novos colonos, com o risco de inundar a colônia de recém-nascidos.</AG_AsexualFission.description>
+  <!-- EN: oviparous -->
+  <AG_HumanEggLaying.label>ovíparo</AG_HumanEggLaying.label>
+  <!-- EN: Females with this gene will periodically lay eggs when fertilized. -->
+  <AG_HumanEggLaying.description>Fêmeas com este gene botam ovos de tempos em tempos quando fecundadas.</AG_HumanEggLaying.description>
+  <!-- EN: parasitic implantation -->
+  <AG_ParasiticImplantation.label>implante parasitário</AG_ParasiticImplantation.label>
+  <!-- EN: Affected by parasitic implantation. If the implantation advances to severity 1, or if the creature dies when it is sufficiently advanced (more than 90%), the human larvae inside the parasitic eggs will devour the victim from inside and hatch from its corpse. Gestation time is 15 days. -->
+  <AG_ParasiticImplantation.description>Afetado por um implante parasitário. Se o implante chegar à gravidade 1, ou se a criatura morrer com ele avançado (mais de 90%), as larvas humanas dentro dos ovos parasitas devoram a vítima por dentro e eclodem do cadáver. A gestação dura 15 dias.</AG_ParasiticImplantation.description>
+  <!-- EN: minor -->
+  <AG_ParasiticImplantation.stages.minor.label>leve</AG_ParasiticImplantation.stages.minor.label>
+  <!-- EN: major -->
+  <AG_ParasiticImplantation.stages.major.label>grave</AG_ParasiticImplantation.stages.major.label>
+  <!-- EN: extreme -->
+  <AG_ParasiticImplantation.stages.extreme-0.label>extremo</AG_ParasiticImplantation.stages.extreme-0.label>
+  <!-- EN: extreme -->
+  <AG_ParasiticImplantation.stages.extreme-1.label>extremo</AG_ParasiticImplantation.stages.extreme-1.label>
+</LanguageData>

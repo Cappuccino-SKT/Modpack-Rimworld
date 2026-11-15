@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <!-- EN: antibiotics -->
+  <VRE_Antibiotics.label>antibióticos</VRE_Antibiotics.label>
+  <!-- EN: A drug for boosting the immune system after infections take hold. Helps against diseases, such as malaria and plague, as well as infections due to unclean wounds. Lasts 12 hours.\n\nThis drug doesn’t prevent new infections. It does cure existing infections - even those that are not yet discovered, however excessive usage of antibiotics can render a person temporarily resistant to the effect of them. -->
+  <VRE_Antibiotics.description>Uma droga para reforçar o sistema imunológico depois que uma infecção se instala. Ajuda contra doenças como malária e peste, e contra infecções de ferimentos sujos. Dura 12 horas.\n\nEsta droga não previne novas infecções. Ela cura as infecções existentes, mesmo as ainda não descobertas, mas o uso excessivo pode deixar a pessoa temporariamente resistente ao efeito.</VRE_Antibiotics.description>
+  <!-- EN: Take {0} -->
+  <VRE_Antibiotics.ingestible.ingestCommandString>Tomar {0}</VRE_Antibiotics.ingestible.ingestCommandString>
+  <!-- EN: Taking {0}. -->
+  <VRE_Antibiotics.ingestible.ingestReportString>Tomando {0}.</VRE_Antibiotics.ingestible.ingestReportString>
+</LanguageData>

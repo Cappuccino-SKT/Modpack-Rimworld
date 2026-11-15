@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <!-- EN: nereid pocket plane -->
+  <AG_NereidPocketPlane.label>plano de bolso nereida</AG_NereidPocketPlane.label>
+  <!-- EN: Opens a link to an extradimensional space that only the caster can access. If cast inside the pocket plane, it will return the caster to the original map, at the same position it departed when entering the pocket plane. -->
+  <AG_NereidPocketPlane.description>Abre uma ligação com um espaço extradimensional que só quem usa a habilidade pode acessar. Se usada dentro do plano de bolso, devolve o usuário ao mapa original, na mesma posição de onde partiu.</AG_NereidPocketPlane.description>
+  <!-- EN: destroy pocket plane -->
+  <AG_DestroyPocketPlane.label>destruir plano de bolso</AG_DestroyPocketPlane.label>
+  <!-- EN: Destroys the pocket plane, along with everything inside it. WARNING: you can open a new pocket plane, but the original will be forever lost. -->
+  <AG_DestroyPocketPlane.description>Destrói o plano de bolso e tudo o que está dentro dele. ATENÇÃO: você pode abrir um novo plano de bolso, mas o original estará perdido para sempre.</AG_DestroyPocketPlane.description>
+  <!-- EN: transfer to pocket plane -->
+  <AG_TeleportItemsPocketPlane.label>transferir para o plano de bolso</AG_TeleportItemsPocketPlane.label>
+  <!-- EN: Transfers items to pocket plane. Items can be transported to a pocket plane, but cannot be taken out of it! -->
+  <AG_TeleportItemsPocketPlane.description>Transfere itens para o plano de bolso. Itens podem ser levados para um plano de bolso, mas não podem ser tirados de lá!</AG_TeleportItemsPocketPlane.description>
+</LanguageData>

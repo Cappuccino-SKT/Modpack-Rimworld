@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <!-- EN: Contact Deserters -->
+  <VFED.ContactDeserters>Contatar desertores</VFED.ContactDeserters>
+  <!-- EN: Visibility: {0} -->
+  <VFED.Visibility>Visibilidade: {0}</VFED.Visibility>
+  <!-- EN: Current visibility:  -->
+  <VFED.CurrentVisibility>Visibilidade atual:</VFED.CurrentVisibility>
+  <!-- EN: Effects: -->
+  <VFED.Effects>Efeitos:</VFED.Effects>
+  <!-- EN: Intel cost:  -->
+  <VFED.IntelCostModifier>Custo em informação:</VFED.IntelCostModifier>
+  <!-- EN: Time to receive contraband:  -->
+  <VFED.ContrabandRecieveTimeModifier>Tempo para receber contrabando:</VFED.ContrabandRecieveTimeModifier>
+  <!-- EN: Availability of the dead drops:  -->
+  <VFED.ContrabandSiteTimeModifier>Disponibilidade dos pontos de entrega:</VFED.ContrabandSiteTimeModifier>
+  <!-- EN: Time for Imperial response:  -->
+  <VFED.ImperialResponseTime>Tempo de resposta imperial:</VFED.ImperialResponseTime>
+  <!-- EN: Type of Imperial response:  -->
+  <VFED.ImperialResponseType>Tipo de resposta imperial:</VFED.ImperialResponseType>
+  <!-- EN: Special effects:  -->
+  <VFED.SpecialEffects>Efeitos especiais:</VFED.SpecialEffects>
+  <!-- EN: No response -->
+  <VFED.NoResponse>Sem resposta</VFED.NoResponse>
+  <!-- EN: None -->
+  <VFED.None>Nenhum</VFED.None>
+  <!-- EN: Name of the item -->
+  <VFED.ItemName>Nome do item</VFED.ItemName>
+  <!-- EN: Cost -->
+  <VFED.Cost>Custo</VFED.Cost>
+  <!-- EN: Basket -->
+  <VFED.Basket>Cesta</VFED.Basket>
+  <!-- EN: Items purchased via the contraband system do not arrive in your colony with cargo pods. Instead, a dead drop pick up quest will become available after some amount of time, and the quest will only be available for a brief moment. This is where you pick up purchased contraband. -->
+  <VFED.ContrabandRecieveDesc>Itens comprados pelo sistema de contrabando não chegam à colônia em cápsulas de carga. Em vez disso, depois de um tempo aparece uma missão de busca num ponto de entrega, disponível só por um curto período. É lá que vocês pegam o contrabando comprado.</VFED.ContrabandRecieveDesc>
+  <!-- EN: Purchase -->
+  <VFED.Purchase>Comprar</VFED.Purchase>
+  <!-- EN: Rush delivery -->
+  <VFED.RushDelivery>Entrega expressa</VFED.RushDelivery>
+  <!-- EN: Total basket cost -->
+  <VFED.TotalCost>Custo total da cesta</VFED.TotalCost>
+  <!-- EN: You can rush delivery to receive the items instantly via drop pods, however it doubles the Intel cost of this order. -->
+  <VFED.RushDeliveryDesc>Dá para pedir entrega expressa e receber os itens na hora por cápsulas de queda, mas isso dobra o custo em informação do pedido.</VFED.RushDeliveryDesc>
+  <!-- EN: Estimated time to receive: (*DateTime){0}-{1} days(/DateTime) -->
+  <VFED.TimeToReceive>Tempo estimado para receber: (*DateTime){0}-{1} dias(/DateTime)</VFED.TimeToReceive>
+  <!-- EN: Time to pick up: (*DateTime){0} days(/DateTime) -->
+  <VFED.TimeToPickup>Tempo para buscar: (*DateTime){0} dias(/DateTime)</VFED.TimeToPickup>
+  <!-- EN: Time to receive and time to pick up depends on the amount of items you’re purchasing, as well as your current visibility level. After time to receive has elapsed, a dead drop quest will become available. It will only be active for the duration in ‘Time to pick up’. If you fail to collect it in time, the items will be gone. -->
+  <VFED.TimeLimitDesc>O tempo para receber e para buscar depende da quantidade de itens comprados e do seu nível de visibilidade atual. Depois do tempo para receber, aparece uma missão de ponto de entrega. Ela só fica ativa pelo período de "tempo para buscar". Se não buscarem a tempo, os itens somem.</VFED.TimeLimitDesc>
+  <!-- EN: Not enough {0}. Need {1}, have {2} -->
+  <VFED.NotEnough>{0} insuficiente. Precisa de {1}, tem {2}</VFED.NotEnough>
+  <!-- EN: This is a deserter quest. It may provide intel on the Shattered Empire, but it may also increase your faction’s visibility. -->
+  <VFED.DeserterQuestDesc>Esta é uma missão de desertores. Pode render informações sobre o Império Fragmentado, mas também pode aumentar a visibilidade da sua facção.</VFED.DeserterQuestDesc>
+  <!-- EN: Available quests -->
+  <VFED.AvailableQuests>Missões disponíveis</VFED.AvailableQuests>
+  <!-- EN: Critical quests -->
+  <VFED.CriticalQuests>Missões críticas</VFED.CriticalQuests>
+  <!-- EN: Quest description -->
+  <VFED.QuestDescription>Descrição da missão</VFED.QuestDescription>
+  <!-- EN: No quest selected -->
+  <VFED.NoQuestSelected>Nenhuma missão selecionada</VFED.NoQuestSelected>
+  <!-- EN: You can pay intel to obtain quests from the Deserter network, however you will not know the rewards that can be obtained from the quest until you purchase it. -->
+  <VFED.QuestPurchaseDesc>Vocês podem pagar com informações para conseguir missões na rede de desertores, mas só vão saber as recompensas depois de comprar a missão.</VFED.QuestPurchaseDesc>
+  <!-- EN: Total quest cost -->
+  <VFED.TotalQuestCost>Custo total da missão</VFED.TotalQuestCost>
+  <!-- EN: Activate -->
+  <VFED.Activate>Ativar</VFED.Activate>
+  <!-- EN: Other services -->
+  <VFED.OtherServices>Outros serviços</VFED.OtherServices>
+  <!-- EN: Rewards -->
+  <VFED.Rewards>Recompensas</VFED.Rewards>
+  <!-- EN: Plot description -->
+  <VFED.PlotDesc>Descrição da conspiração</VFED.PlotDesc>
+  <!-- EN: Target: {0} -->
+  <VFED.PlotTarget>Alvo: {0}</VFED.PlotTarget>
+  <!-- EN: Completed on {0} -->
+  <VFED.CompletedOn>Concluída em {0}</VFED.CompletedOn>
+  <!-- EN: Combat: High -->
+  <VFED.CombatHigh>Combate: alto</VFED.CombatHigh>
+  <!-- EN: Combat: Medium -->
+  <VFED.CombatMedium>Combate: médio</VFED.CombatMedium>
+  <!-- EN: Combat: Minimal -->
+  <VFED.CombatLow>Combate: mínimo</VFED.CombatLow>
+  <!-- EN: Expect intense combat -->
+  <VFED.CombatHighDesc>Esperem combate intenso</VFED.CombatHighDesc>
+  <!-- EN: Expect some combat -->
+  <VFED.CombatMediumDesc>Esperem algum combate</VFED.CombatMediumDesc>
+  <!-- EN: Expect minimal combat -->
+  <VFED.CombatLowDesc>Esperem combate mínimo</VFED.CombatLowDesc>
+  <!-- EN: Show active quest -->
+  <VFED.ShowActiveQuest>Mostrar missão ativa</VFED.ShowActiveQuest>
+  <!-- EN: Select -->
+  <VFED.Select>Selecionar</VFED.Select>
+  <!-- EN: Hull integrity -->
+  <VFED.HullIntegrity>Integridade do casco</VFED.HullIntegrity>
+  <!-- EN: Flagship -->
+  <VFED.Flagship>Nau capitânia</VFED.Flagship>
+  <!-- EN: Start Mission -->
+  <VFED.StartMission>Iniciar missão</VFED.StartMission>
+  <!-- EN: Amount of {0} in range of powered trading beacons. -->
+  <VFED.IntelAmount>Quantidade de {0} no alcance de faróis comerciais ligados.</VFED.IntelAmount>
+</LanguageData>

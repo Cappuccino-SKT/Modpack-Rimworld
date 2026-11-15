@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <!-- EN: Move Speed -->
+  <MoveSpeed.label>Velocidade</MoveSpeed.label>
+  <!-- EN: Speed of movement in cells per second. -->
+  <MoveSpeed.description>Velocidade de deslocamento em quadrados por segundo.</MoveSpeed.description>
+  <!-- EN: {0} c/s -->
+  <MoveSpeed.formatString>{0} q/s</MoveSpeed.formatString>
+  <!-- EN: {0} / {1} -->
+  <MoveSpeed.parts.0.formatString>{0} / {1}</MoveSpeed.parts.0.formatString>
+  <!-- EN: Cargo -->
+  <CargoCapacity.label>Carga</CargoCapacity.label>
+  <!-- EN: Amount of weight this vehicle can carry as cargo. -->
+  <CargoCapacity.description>Quanto peso este veículo consegue levar como carga.</CargoCapacity.description>
+  <!-- EN: {0} kg -->
+  <CargoCapacity.formatString>{0} kg</CargoCapacity.formatString>
+  <!-- EN: Repair Rate -->
+  <RepairRate.label>Taxa de conserto</RepairRate.label>
+  <!-- EN: The amount of health that is repaired per second. -->
+  <RepairRate.description>Quantos pontos de vida são consertados por segundo.</RepairRate.description>
+  <!-- EN: {0} hp/s -->
+  <RepairRate.formatString>{0} PV/s</RepairRate.formatString>
+  <!-- EN: Mass -->
+  <Mass.label>Massa</Mass.label>
+  <!-- EN: The physical mass of this vehicle. -->
+  <Mass.description>A massa física deste veículo.</Mass.description>
+  <!-- EN: {0} kg -->
+  <Mass.formatString>{0} kg</Mass.formatString>
+  <!-- EN: Body Integrity -->
+  <BodyIntegrity.label>Integridade da estrutura</BodyIntegrity.label>
+  <!-- EN: The average of all vehicle parts' health. If the integrity of the vehicle reaches 0, it will disintegrate into a fraction of its build cost. -->
+  <BodyIntegrity.description>A média da saúde de todas as peças do veículo. Se a integridade chegar a 0, o veículo se desfaz numa fração do seu custo de construção.</BodyIntegrity.description>
+  <!-- EN: Work To Sabotage -->
+  <WorkToSabotage.label>Trabalho para sabotar</WorkToSabotage.label>
+  <!-- EN: The base amount of work it takes to sabotage a vehicle. -->
+  <WorkToSabotage.description>A quantidade base de trabalho necessária para sabotar um veículo.</WorkToSabotage.description>
+</LanguageData>

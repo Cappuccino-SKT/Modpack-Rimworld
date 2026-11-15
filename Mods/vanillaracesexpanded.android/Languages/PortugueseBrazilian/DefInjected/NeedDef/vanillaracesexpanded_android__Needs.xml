@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <!-- EN: memory space -->
+  <VREA_MemorySpace.label>espaço de memória</VREA_MemorySpace.label>
+  <!-- EN: Memory space is how much hard drive space is left in an Android. Over the course of the day, memory space will deplete. If it is at zero, android will enter a reformatting state until enough memory space clears up to continue. -->
+  <VREA_MemorySpace.description>O espaço de memória é quanto sobra do disco rígido de um androide. Ao longo do dia, ele se esgota. Quando chega a zero, o androide entra em reformatação até liberar espaço suficiente para continuar.</VREA_MemorySpace.description>
+  <!-- EN: Power -->
+  <VREA_ReactorPower.label>Energia</VREA_ReactorPower.label>
+  <!-- EN: Power is how much lifespan is left in the built-in reactor of an Android. If reactor is at an end of its lifespan, it might need to be replaced. An Android without a working power source is not operational. -->
+  <VREA_ReactorPower.description>A energia é quanto resta de vida útil no reator embutido de um androide. Quando o reator chega ao fim da vida útil, pode precisar ser trocado. Um androide sem fonte de energia funcionando não opera.</VREA_ReactorPower.description>
+  <!-- EN: It's a stub. You shouldn't see it, report if otherwise. -->
+  <VREA_FoodSuppressed.label>É um marcador interno. Você não deveria ver isto; avise se aparecer.</VREA_FoodSuppressed.label>
+  <!-- EN: Ignore it. -->
+  <VREA_FoodSuppressed.description>Ignore.</VREA_FoodSuppressed.description>
+</LanguageData>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <!-- EN: royal gossip -->
+  <VFEE_RoyalGossip.label>fofoca real</VFEE_RoyalGossip.label>
+  <VFEE_RoyalGossip.logRulesInitiator.rulesStrings>
+    <!-- EN: r_logentry-&gt;[INITIATOR_nameDef] and [RECIPIENT_nameDef] [talkedabout] [THIRDPARTY_nameDef]. -->
+    <li>r_logentry-&gt;[INITIATOR_nameDef] e [RECIPIENT_nameDef] [talkedabout] [THIRDPARTY_nameDef].</li>
+    <!-- EN: r_logentry-&gt;[INITIATOR_nameDef] [talkedabout] [THIRDPARTY_nameDef] with [RECIPIENT_nameDef]. -->
+    <li>r_logentry-&gt;[INITIATOR_nameDef] [talkedabout] [THIRDPARTY_nameDef] com [RECIPIENT_nameDef].</li>
+    <!-- EN: talkedabout(p=4)-&gt;chatted about -->
+    <li>talkedabout(p=4)-&gt;conversaram sobre</li>
+    <!-- EN: talkedabout-&gt;shared a word about -->
+    <li>talkedabout-&gt;trocaram umas palavras sobre</li>
+    <!-- EN: talkedabout-&gt;spoke about -->
+    <li>talkedabout-&gt;falaram de</li>
+    <!-- EN: talkedabout-&gt;gabbed about -->
+    <li>talkedabout-&gt;tagarelaram sobre</li>
+    <!-- EN: talkedabout-&gt;talked about -->
+    <li>talkedabout-&gt;falaram sobre</li>
+    <!-- EN: talkedabout-&gt;joked about -->
+    <li>talkedabout-&gt;fizeram piada sobre</li>
+    <!-- EN: talkedabout-&gt;quipped about -->
+    <li>talkedabout-&gt;fizeram gracinhas sobre</li>
+  </VFEE_RoyalGossip.logRulesInitiator.rulesStrings>
+</LanguageData>

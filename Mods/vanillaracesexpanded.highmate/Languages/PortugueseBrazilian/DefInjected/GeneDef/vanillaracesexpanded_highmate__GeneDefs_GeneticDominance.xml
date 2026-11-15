@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <!-- EN: dominant genome -->
+  <VRE_DominantGenome.label>genoma dominante</VRE_DominantGenome.label>
+  <!-- EN: Carriers of this gene inherently pass on all their traits to offspring, as this gene overpowers the genetic contributions of the other parent during reproduction. If both partners have dominant genome gene, the genes passed down will be randomized. -->
+  <VRE_DominantGenome.description>Portadores deste gene passam todas as suas características aos filhos, porque este gene se sobrepõe à contribuição genética do outro pai na reprodução. Se os dois parceiros tiverem o gene genoma dominante, os genes herdados são sorteados.</VRE_DominantGenome.description>
+  <!-- EN: recessive genome -->
+  <VRE_RecessiveGenome.label>genoma recessivo</VRE_RecessiveGenome.label>
+  <!-- EN: Carriers of this gene have a unique genetic makeup that recedes during reproduction, resulting in none of their traits being passed on to their offspring. If both partners have recessive genome gene, the genes passed down will be randomized. -->
+  <VRE_RecessiveGenome.description>Portadores deste gene têm uma genética peculiar que recua na reprodução, e nenhuma de suas características passa para os filhos. Se os dois parceiros tiverem o gene genoma recessivo, os genes herdados são sorteados.</VRE_RecessiveGenome.description>
+</LanguageData>

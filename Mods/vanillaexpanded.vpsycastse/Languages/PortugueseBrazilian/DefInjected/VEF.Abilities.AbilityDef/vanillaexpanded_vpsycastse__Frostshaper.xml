@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <!-- EN: breathe ice -->
+  <VPE_IceBreath.label>sopro de gelo</VPE_IceBreath.label>
+  <!-- EN: Breathe forward a stream of psychic entropy, the resulting cold cutting and inducing hypothermia scaling with the distance to the target. -->
+  <VPE_IceBreath.description>Sopra para a frente um jato de entropia psíquica; o frio resultante corta e induz hipotermia, conforme a distância até o alvo.</VPE_IceBreath.description>
+  <!-- EN: Using ability: {0} -->
+  <VPE_IceBreath.jobReportString>Usando habilidade: {0}</VPE_IceBreath.jobReportString>
+  <!-- EN: breathe ice -->
+  <VPE_IceBreath.verbProperties.label>sopro de gelo</VPE_IceBreath.verbProperties.label>
+  <!-- EN: ice spike -->
+  <VPE_IceSpike.label>estaca de gelo</VPE_IceSpike.label>
+  <!-- EN: Condenses vapor with psychic entropy into an icicle launched at a target, the damage and accuracy scaling with psychic sensitivity. -->
+  <VPE_IceSpike.description>Condensa vapor com entropia psíquica num pingente de gelo lançado contra o alvo, com dano e precisão conforme a sensibilidade psíquica.</VPE_IceSpike.description>
+  <!-- EN: Using ability: {0} -->
+  <VPE_IceSpike.jobReportString>Usando habilidade: {0}</VPE_IceSpike.jobReportString>
+  <!-- EN: ice spike -->
+  <VPE_IceSpike.verbProperties.label>estaca de gelo</VPE_IceSpike.verbProperties.label>
+  <!-- EN: ice shield -->
+  <VPE_IceShield.label>escudo de gelo</VPE_IceShield.label>
+  <!-- EN: Creates an aura of psychic entropy around the target for a time, preventing them from experiencing cold and inducing hypothermia on any who try to attack them in melee. Duration scales with psychic sensitivity of the caster. -->
+  <VPE_IceShield.description>Cria uma aura de entropia psíquica ao redor do alvo por um tempo, impedindo que ele sinta frio e induzindo hipotermia em quem tentar atacá-lo corpo a corpo. A duração depende da sensibilidade psíquica do conjurador.</VPE_IceShield.description>
+  <!-- EN: Using ability: {0} -->
+  <VPE_IceShield.jobReportString>Usando habilidade: {0}</VPE_IceShield.jobReportString>
+  <!-- EN: ice shield -->
+  <VPE_IceShield.verbProperties.label>escudo de gelo</VPE_IceShield.verbProperties.label>
+  <!-- EN: frost ray -->
+  <VPE_FrostRay.label>raio congelante</VPE_FrostRay.label>
+  <!-- EN: Push forth a concentrated stream of psychic entropy for a few seconds, rapidly inducing cuts and hypothermia. The duration scales with the caster’s psychic sensitivity. -->
+  <VPE_FrostRay.description>Lança um jato concentrado de entropia psíquica por alguns segundos, causando cortes e hipotermia rapidamente. A duração depende da sensibilidade psíquica do conjurador.</VPE_FrostRay.description>
+  <!-- EN: Using ability: {0} -->
+  <VPE_FrostRay.jobReportString>Usando habilidade: {0}</VPE_FrostRay.jobReportString>
+  <!-- EN: frost ray -->
+  <VPE_FrostRay.verbProperties.label>raio congelante</VPE_FrostRay.verbProperties.label>
+  <!-- EN: ice crystal -->
+  <VPE_IceCrystal.label>cristal de gelo</VPE_IceCrystal.label>
+  <!-- EN: Creates a node of psychic entropy in the form of a crystal, sapping the heat from the room for the next 5 days. -->
+  <VPE_IceCrystal.description>Cria um nó de entropia psíquica em forma de cristal, que suga o calor do cômodo pelos próximos 5 dias.</VPE_IceCrystal.description>
+  <!-- EN: Using ability: {0} -->
+  <VPE_IceCrystal.jobReportString>Usando habilidade: {0}</VPE_IceCrystal.jobReportString>
+  <!-- EN: ice crystal -->
+  <VPE_IceCrystal.verbProperties.label>cristal de gelo</VPE_IceCrystal.verbProperties.label>
+  <!-- EN: cold zone -->
+  <VPE_ColdZone.label>zona fria</VPE_ColdZone.label>
+  <!-- EN: Cause an area to manifest nodes of psychic entropy for the next 24 hours, drastically lowering the temperature. -->
+  <VPE_ColdZone.description>Faz uma área manifestar nós de entropia psíquica pelas próximas 24 horas, baixando drasticamente a temperatura.</VPE_ColdZone.description>
+  <!-- EN: Using ability: {0} -->
+  <VPE_ColdZone.jobReportString>Usando habilidade: {0}</VPE_ColdZone.jobReportString>
+  <!-- EN: cold zone -->
+  <VPE_ColdZone.verbProperties.label>zona fria</VPE_ColdZone.verbProperties.label>
+  <!-- EN: ice block -->
+  <VPE_IceBlock.label>bloco de gelo</VPE_IceBlock.label>
+  <!-- EN: Combining nodes of psychic entropy and a skipgate linked to an ocean, creating a large block of ice to form in the target location. Fragile and can melt if the temperature is above freezing. -->
+  <VPE_IceBlock.description>Combinando nós de entropia psíquica e um portal de salto ligado a um oceano, forma um grande bloco de gelo no local alvo. É frágil e pode derreter se a temperatura estiver acima de zero.</VPE_IceBlock.description>
+  <!-- EN: Using ability: {0} -->
+  <VPE_IceBlock.jobReportString>Usando habilidade: {0}</VPE_IceBlock.jobReportString>
+  <!-- EN: ice block -->
+  <VPE_IceBlock.verbProperties.label>bloco de gelo</VPE_IceBlock.verbProperties.label>
+  <!-- EN: snap freeze -->
+  <VPE_SnapFreeze.label>congelamento instantâneo</VPE_SnapFreeze.label>
+  <!-- EN: Creates motes of psychic entropy and miniature skipgates to water reservoirs above all the targets in a small area, encasing them in ice. Victims will experience hypothermia but the ice can melt prematurely if the temperature is above freezing. -->
+  <VPE_SnapFreeze.description>Cria partículas de entropia psíquica e minúsculos portais de salto ligados a reservatórios de água acima de todos os alvos numa área pequena, prendendo-os no gelo. As vítimas sofrem hipotermia, mas o gelo pode derreter antes da hora se a temperatura estiver acima de zero.</VPE_SnapFreeze.description>
+  <!-- EN: Using ability: {0} -->
+  <VPE_SnapFreeze.jobReportString>Usando habilidade: {0}</VPE_SnapFreeze.jobReportString>
+  <!-- EN: snap freeze -->
+  <VPE_SnapFreeze.verbProperties.label>congelamento instantâneo</VPE_SnapFreeze.verbProperties.label>
+  <!-- EN: ice wall -->
+  <VPE_IceWall.label>parede de gelo</VPE_IceWall.label>
+  <!-- EN: Combining nodes of psychic entropy and miniature skipgates linked to an ocean, creating a circular wall of ice to form around the caster. Fragile and can melt if the temperature is above freezing. -->
+  <VPE_IceWall.description>Combinando nós de entropia psíquica e minúsculos portais de salto ligados a um oceano, forma uma parede circular de gelo ao redor do conjurador. É frágil e pode derreter se a temperatura estiver acima de zero.</VPE_IceWall.description>
+  <!-- EN: Using ability: {0} -->
+  <VPE_IceWall.jobReportString>Usando habilidade: {0}</VPE_IceWall.jobReportString>
+  <!-- EN: ice wall -->
+  <VPE_IceWall.verbProperties.label>parede de gelo</VPE_IceWall.verbProperties.label>
+  <!-- EN: blizzard -->
+  <VPE_Blizzard.label>nevasca</VPE_Blizzard.label>
+  <!-- EN: Using differential-pressure skipgates, water-linked skipgates and nodes of psychic entropy, creates a swirling blizzard away from the caster. Those exposed to the tempest experience reduced sight, moving and manipulation, as well as hypothermia buildup and cutting cold. Duration scales with the caster’s psychic sensitivity and puts them in a coma. -->
+  <VPE_Blizzard.description>Usando portais de salto de pressão diferencial, portais ligados à água e nós de entropia psíquica, cria uma nevasca rodopiante longe do conjurador. Quem fica exposto à tempestade tem visão, movimento e manipulação reduzidos, além de acumular hipotermia e sofrer cortes do frio. A duração depende da sensibilidade psíquica do conjurador, que entra em coma.</VPE_Blizzard.description>
+  <!-- EN: Using ability: {0} -->
+  <VPE_Blizzard.jobReportString>Usando habilidade: {0}</VPE_Blizzard.jobReportString>
+  <!-- EN: blizzard -->
+  <VPE_Blizzard.verbProperties.label>nevasca</VPE_Blizzard.verbProperties.label>
+</LanguageData>

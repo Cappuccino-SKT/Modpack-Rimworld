@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <!-- EN: flirty words -->
+  <VRE_FlirtingAttempt.label>palavras sedutoras</VRE_FlirtingAttempt.label>
+  <VRE_FlirtingAttempt.logRulesInitiator.rulesStrings>
+    <!-- EN: r_logentry-&gt;[INITIATOR_nameDef] [wooed] [RECIPIENT_nameDef] by [wootactic]. -->
+    <li>r_logentry-&gt;[INITIATOR_nameDef] [wooed] [RECIPIENT_nameDef] [wootactic].</li>
+    <!-- EN: wooed-&gt;tried to flirt with -->
+    <li>wooed-&gt;tentou flertar com</li>
+    <!-- EN: wooed-&gt;flirted with -->
+    <li>wooed-&gt;flertou com</li>
+    <!-- EN: wooed-&gt;tried to attract -->
+    <li>wooed-&gt;tentou atrair</li>
+    <!-- EN: wooed-&gt;tried to woo -->
+    <li>wooed-&gt;tentou conquistar</li>
+    <!-- EN: wooed-&gt;wooed -->
+    <li>wooed-&gt;cortejou</li>
+    <!-- EN: wooed-&gt;pursued -->
+    <li>wooed-&gt;paquerou</li>
+    <!-- EN: wooed-&gt;charmed -->
+    <li>wooed-&gt;encantou</li>
+    <!-- EN: wooed-&gt;courted -->
+    <li>wooed-&gt;galanteou</li>
+    <!-- EN: wootactic(p=4)-&gt;[complimenting] [RECIPIENT_possessive] [PersonalCharacteristic] -->
+    <li>wootactic(p=4)-&gt;[complimenting] [RECIPIENT_possessive] [PersonalCharacteristic]</li>
+    <!-- EN: wootactic-&gt;telling a story about [TalkTopicAny] -->
+    <li>wootactic-&gt;contando uma história sobre [TalkTopicAny]</li>
+    <!-- EN: wootactic-&gt;telling a tale about [TalkTopicAny] -->
+    <li>wootactic-&gt;contando um causo sobre [TalkTopicAny]</li>
+    <!-- EN: wootactic-&gt;joking about [TalkTopicAny] -->
+    <li>wootactic-&gt;brincando sobre [TalkTopicAny]</li>
+    <!-- EN: wootactic-&gt;making an observation about [TalkTopicAny] -->
+    <li>wootactic-&gt;fazendo um comentário sobre [TalkTopicAny]</li>
+    <!-- EN: wootactic(p=2)-&gt;[boasting] [INITIATOR_possessive] own [PersonalCharacteristic] -->
+    <li>wootactic(p=2)-&gt;[boasting] [INITIATOR_possessive] próprio [PersonalCharacteristic]</li>
+    <!-- EN: wootactic-&gt;comparing [RECIPIENT_objective] to a [romantic_adj] [romantic_noun] -->
+    <li>wootactic-&gt;comparando [RECIPIENT_objective] a um [romantic_noun] [romantic_adj]</li>
+    <!-- EN: wootactic-&gt;describing [RECIPIENT_objective] as a [romantic_adj] [romantic_noun] -->
+    <li>wootactic-&gt;descrevendo [RECIPIENT_objective] como um [romantic_noun] [romantic_adj]</li>
+    <!-- EN: boasting-&gt;boasting about -->
+    <li>boasting-&gt;se gabando de</li>
+    <!-- EN: boasting-&gt;mentioning -->
+    <li>boasting-&gt;mencionando</li>
+    <!-- EN: boasting-&gt;implying good things about -->
+    <li>boasting-&gt;insinuando coisas boas sobre</li>
+    <!-- EN: boasting-&gt;exaggerating -->
+    <li>boasting-&gt;exagerando</li>
+    <!-- EN: boasting-&gt;talking about -->
+    <li>boasting-&gt;falando de</li>
+    <!-- EN: boasting-&gt;drawing attention to -->
+    <li>boasting-&gt;chamando atenção para</li>
+    <!-- EN: complimenting(p=3)-&gt;complimenting -->
+    <li>complimenting(p=3)-&gt;elogiando</li>
+    <!-- EN: complimenting-&gt;subtly complimenting -->
+    <li>complimenting-&gt;elogiando discretamente</li>
+    <!-- EN: complimenting-&gt;lauding -->
+    <li>complimenting-&gt;exaltando</li>
+    <!-- EN: complimenting-&gt;commending -->
+    <li>complimenting-&gt;louvando</li>
+    <!-- EN: complimenting-&gt;saying good things about -->
+    <li>complimenting-&gt;falando bem de</li>
+    <!-- EN: complimenting(p=2)-&gt;playfully making fun of -->
+    <li>complimenting(p=2)-&gt;zoando de brincadeira</li>
+    <!-- EN: complimenting-&gt;jokingly poking at -->
+    <li>complimenting-&gt;cutucando de brincadeira</li>
+    <!-- EN: complimenting-&gt;jokingly half-complimenting -->
+    <li>complimenting-&gt;meio que elogiando, de brincadeira,</li>
+    <!-- EN: complimenting-&gt;impishly questioning -->
+    <li>complimenting-&gt;questionando com malícia</li>
+    <!-- EN: complimenting-&gt;cheerfully making fun of -->
+    <li>complimenting-&gt;tirando sarro, alegremente, de</li>
+    <!-- EN: romantic_adj-&gt;beautiful -->
+    <li>romantic_adj-&gt;lindo</li>
+    <!-- EN: romantic_adj-&gt;shining -->
+    <li>romantic_adj-&gt;brilhante</li>
+    <!-- EN: romantic_adj-&gt;glimmering -->
+    <li>romantic_adj-&gt;cintilante</li>
+    <!-- EN: romantic_adj-&gt;heavenly -->
+    <li>romantic_adj-&gt;celestial</li>
+    <!-- EN: romantic_adj-&gt;golden -->
+    <li>romantic_adj-&gt;dourado</li>
+    <!-- EN: romantic_adj-&gt;bright -->
+    <li>romantic_adj-&gt;radiante</li>
+    <!-- EN: romantic_adj-&gt;breathtaking -->
+    <li>romantic_adj-&gt;de tirar o fôlego</li>
+    <!-- EN: romantic_adj-&gt;charming -->
+    <li>romantic_adj-&gt;encantador</li>
+    <!-- EN: romantic_adj-&gt;dazzling -->
+    <li>romantic_adj-&gt;deslumbrante</li>
+    <!-- EN: romantic_adj-&gt;delicate -->
+    <li>romantic_adj-&gt;delicado</li>
+    <!-- EN: romantic_adj-&gt;fine -->
+    <li>romantic_adj-&gt;refinado</li>
+    <!-- EN: romantic_adj-&gt;magnificent -->
+    <li>romantic_adj-&gt;magnífico</li>
+    <!-- EN: romantic_adj-&gt;lovely -->
+    <li>romantic_adj-&gt;adorável</li>
+    <!-- EN: romantic_adj-&gt;wonderful -->
+    <li>romantic_adj-&gt;maravilhoso</li>
+    <!-- EN: romantic_adj(p=3)-&gt;[AdjectiveBadass] -->
+    <li>romantic_adj(p=3)-&gt;[AdjectiveBadass]</li>
+    <!-- EN: romantic_noun-&gt;flower -->
+    <li>romantic_noun-&gt;jardim</li>
+    <!-- EN: romantic_noun-&gt;spring -->
+    <li>romantic_noun-&gt;riacho</li>
+    <!-- EN: romantic_noun-&gt;river -->
+    <li>romantic_noun-&gt;rio</li>
+    <!-- EN: romantic_noun-&gt;star -->
+    <li>romantic_noun-&gt;astro</li>
+    <!-- EN: romantic_noun-&gt;moon -->
+    <li>romantic_noun-&gt;luar</li>
+    <!-- EN: romantic_noun-&gt;sun -->
+    <li>romantic_noun-&gt;sol</li>
+    <!-- EN: romantic_noun-&gt;house -->
+    <li>romantic_noun-&gt;lar</li>
+    <!-- EN: romantic_noun-&gt;aurora -->
+    <li>romantic_noun-&gt;amanhecer</li>
+    <!-- EN: romantic_noun-&gt;[TreeType] tree -->
+    <li>romantic_noun-&gt;pé de [TreeType]</li>
+    <!-- EN: romantic_noun(p=2)-&gt;[TerrainFeature] -->
+    <li>romantic_noun(p=2)-&gt;[TerrainFeature]</li>
+    <!-- EN: romantic_noun(p=2)-&gt;[NaturalObject] -->
+    <li>romantic_noun(p=2)-&gt;[NaturalObject]</li>
+  </VRE_FlirtingAttempt.logRulesInitiator.rulesStrings>
+</LanguageData>

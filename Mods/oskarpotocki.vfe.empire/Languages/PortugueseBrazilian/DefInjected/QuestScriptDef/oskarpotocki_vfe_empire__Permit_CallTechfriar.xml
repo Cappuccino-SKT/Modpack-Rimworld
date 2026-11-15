@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <VFEE_Permit_CallTechfriar.questDescriptionAndNameRules.rulesStrings>
+    <!-- EN: questName-&gt;Techfriar -->
+    <li>questName-&gt;Tecnofrade</li>
+    <!-- EN: questDescription-&gt; -->
+    <li>questDescription-&gt;</li>
+  </VFEE_Permit_CallTechfriar.questDescriptionAndNameRules.rulesStrings>
+  <!-- EN: Techfriar arrived -->
+  <VFEE_Permit_CallTechfriar.root.nodes.Letter.label.slateRef>Tecnofrade chegou</VFEE_Permit_CallTechfriar.root.nodes.Letter.label.slateRef>
+  <!-- EN: The techfriar from [permitFaction_name] have arrived. A shuttle will come to collect them in [techfriarDurationDays] days. -->
+  <VFEE_Permit_CallTechfriar.root.nodes.Letter.text.slateRef>O tecnofrade de [permitFaction_name] chegou. Um ônibus espacial virá buscá-lo em [techfriarDurationDays] dias.</VFEE_Permit_CallTechfriar.root.nodes.Letter.text.slateRef>
+  <!-- EN: Should depart on shuttle -->
+  <VFEE_Permit_CallTechfriar.root.nodes.ShuttleDelay.node.nodes.InspectString.inspectString.slateRef>Deve partir no ônibus espacial</VFEE_Permit_CallTechfriar.root.nodes.ShuttleDelay.node.nodes.InspectString.inspectString.slateRef>
+  <!-- EN: Shuttle arrived -->
+  <VFEE_Permit_CallTechfriar.root.nodes.ShuttleDelay.node.nodes.Letter.label.slateRef>O ônibus espacial chegou</VFEE_Permit_CallTechfriar.root.nodes.ShuttleDelay.node.nodes.Letter.label.slateRef>
+  <!-- EN: A shuttle has arrived to collect the techfriar from [permitFaction_name]. -->
+  <VFEE_Permit_CallTechfriar.root.nodes.ShuttleDelay.node.nodes.Letter.text.slateRef>Um ônibus espacial chegou para buscar o tecnofrade de [permitFaction_name].</VFEE_Permit_CallTechfriar.root.nodes.ShuttleDelay.node.nodes.Letter.text.slateRef>
+  <!-- EN: Laborer died: {SUBJECT_definite} -->
+  <VFEE_Permit_CallTechfriar.root.nodes.techfriarDestroyed.node.nodes.Letter.label.slateRef>Trabalhador morreu: {SUBJECT_definite}</VFEE_Permit_CallTechfriar.root.nodes.techfriarDestroyed.node.nodes.Letter.label.slateRef>
+  <!-- EN: A laborer sent to you by [permitFaction_name] has died. Your goodwill with [permitFaction_name] has fallen by [goodwillPenaltyPawn]. -->
+  <VFEE_Permit_CallTechfriar.root.nodes.techfriarDestroyed.node.nodes.Letter.text.slateRef>Um trabalhador enviado por [permitFaction_name] morreu. Sua boa vontade com [permitFaction_name] caiu [goodwillPenaltyPawn].</VFEE_Permit_CallTechfriar.root.nodes.techfriarDestroyed.node.nodes.Letter.text.slateRef>
+</LanguageData>

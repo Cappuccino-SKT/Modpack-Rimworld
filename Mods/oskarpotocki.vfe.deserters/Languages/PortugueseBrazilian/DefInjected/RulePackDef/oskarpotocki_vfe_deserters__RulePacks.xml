@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <VFED_OperationName.rulePack.rulesStrings>
+    <!-- EN: operationName-&gt;Operation [AdjectiveAny] [NounAny] -->
+    <li>operationName-&gt;Operação [NounAny] [AdjectiveAny]</li>
+    <!-- EN: NounAny-&gt;[ConceptAny] -->
+    <li>NounAny-&gt;[ConceptAny]</li>
+    <!-- EN: NounAny-&gt;[ColorAny] -->
+    <li>NounAny-&gt;[ColorAny]</li>
+    <!-- EN: NounAny-&gt;[Vegetable] -->
+    <li>NounAny-&gt;[Vegetable]</li>
+    <!-- EN: NounAny-&gt;[Game] -->
+    <li>NounAny-&gt;[Game]</li>
+    <!-- EN: NounAny-&gt;[AnimalAny] -->
+    <li>NounAny-&gt;[AnimalAny]</li>
+    <!-- EN: NounAny-&gt;[Weapon] -->
+    <li>NounAny-&gt;[Weapon]</li>
+    <!-- EN: NounAny-&gt;[TerrainFeature] -->
+    <li>NounAny-&gt;[TerrainFeature]</li>
+    <!-- EN: NounAny-&gt;[NaturalObject] -->
+    <li>NounAny-&gt;[NaturalObject]</li>
+    <!-- EN: NounAny-&gt;[TreeType] -->
+    <li>NounAny-&gt;[TreeType]</li>
+    <!-- EN: NounAny-&gt;[Enemy] -->
+    <li>NounAny-&gt;[Enemy]</li>
+    <!-- EN: NounAny-&gt;[Apparel] -->
+    <li>NounAny-&gt;[Apparel]</li>
+    <!-- EN: NounAny-&gt;[Gore] -->
+    <li>NounAny-&gt;[Gore]</li>
+    <!-- EN: NounAny-&gt;[BodyPart] -->
+    <li>NounAny-&gt;[BodyPart]</li>
+    <!-- EN: ColorAny-&gt;[Color] -->
+    <li>ColorAny-&gt;[Color]</li>
+    <!-- EN: ColorAny-&gt;[ColorBadass] -->
+    <li>ColorAny-&gt;[ColorBadass]</li>
+    <!-- EN: AnimalAny-&gt;[Animal] -->
+    <li>AnimalAny-&gt;[Animal]</li>
+    <!-- EN: AnimalAny-&gt;[AnimalBadass] -->
+    <li>AnimalAny-&gt;[AnimalBadass]</li>
+  </VFED_OperationName.rulePack.rulesStrings>
+  <VFED_PlotName.rulePack.rulesStrings>
+    <!-- EN: plotName(nobleTitle==Knight)-&gt;Kindless knight -->
+    <li>plotName(nobleTitle==Knight)-&gt;Cavaleiro cruel</li>
+    <!-- EN: plotName(nobleTitle==Praetor)-&gt;Petty praetor -->
+    <li>plotName(nobleTitle==Praetor)-&gt;Pretor mesquinho</li>
+    <!-- EN: plotName(nobleTitle==Baron)-&gt;Bigoted baron -->
+    <li>plotName(nobleTitle==Baron)-&gt;Barão intolerante</li>
+    <!-- EN: plotName(nobleTitle==Count)-&gt;Crooked count -->
+    <li>plotName(nobleTitle==Count)-&gt;Arconte corrupto</li>
+    <!-- EN: plotName(nobleTitle==VFEE_Archcount)-&gt;Abusive archcount -->
+    <li>plotName(nobleTitle==VFEE_Archcount)-&gt;Arquiarconte abusivo</li>
+    <!-- EN: plotName(nobleTitle==VFEE_Marquess)-&gt;Militant marquess -->
+    <li>plotName(nobleTitle==VFEE_Marquess)-&gt;Marquês militarista</li>
+    <!-- EN: plotName(nobleTitle==Duke)-&gt;Depraved duke -->
+    <li>plotName(nobleTitle==Duke)-&gt;Dominus depravado</li>
+    <!-- EN: plotName(nobleTitle==VFEE_Archduke)-&gt;Arrogant archduke -->
+    <li>plotName(nobleTitle==VFEE_Archduke)-&gt;Arquidominus arrogante</li>
+    <!-- EN: plotName(nobleTitle==Consul)-&gt;Corrupted consul -->
+    <li>plotName(nobleTitle==Consul)-&gt;Cônsul corrompido</li>
+    <!-- EN: plotName(nobleTitle==VFEE_Magister)-&gt;Malevolent magister -->
+    <li>plotName(nobleTitle==VFEE_Magister)-&gt;Magistrado malévolo</li>
+    <!-- EN: plotName(nobleTitle==VFEE_Despot)-&gt;Deranged despot -->
+    <li>plotName(nobleTitle==VFEE_Despot)-&gt;Déspota demente</li>
+    <!-- EN: plotName(nobleTitle==Stellarch)-&gt;Sickening stellarch -->
+    <li>plotName(nobleTitle==Stellarch)-&gt;Arquistelar repugnante</li>
+    <!-- EN: plotName(nobleTitle==VFEE_HighStellarch)-&gt;Heinous high stellarch -->
+    <li>plotName(nobleTitle==VFEE_HighStellarch)-&gt;Grão-arquistelar hediondo</li>
+    <!-- EN: plotName(nobleTitle==Emperor)-&gt;Egocentric emperor -->
+    <li>plotName(nobleTitle==Emperor)-&gt;Imperador egocêntrico</li>
+  </VFED_PlotName.rulePack.rulesStrings>
+</LanguageData>

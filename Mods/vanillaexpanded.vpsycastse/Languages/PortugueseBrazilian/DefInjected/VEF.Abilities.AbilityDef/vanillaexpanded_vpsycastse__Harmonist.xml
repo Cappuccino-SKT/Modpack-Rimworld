@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <!-- EN: mind control -->
+  <VPE_Mindcontrol.label>controle mental</VPE_Mindcontrol.label>
+  <!-- EN: Psychically dominate a target for a brief period, scaling with their psychic sensitivity, giving the caster a second body. However, it’s difficult being two people at once. -->
+  <VPE_Mindcontrol.description>Domina psiquicamente um alvo por um breve período, conforme a sensibilidade psíquica dele, dando ao conjurador um segundo corpo. Mas não é fácil ser duas pessoas ao mesmo tempo.</VPE_Mindcontrol.description>
+  <!-- EN: Using ability: {0} -->
+  <VPE_Mindcontrol.jobReportString>Usando habilidade: {0}</VPE_Mindcontrol.jobReportString>
+  <!-- EN: mind control -->
+  <VPE_Mindcontrol.verbProperties.label>controle mental</VPE_Mindcontrol.verbProperties.label>
+  <!-- EN: psychic guidance -->
+  <VPE_PsychicGuidance.label>orientação psíquica</VPE_PsychicGuidance.label>
+  <!-- EN: Dampens the caster’s sight, hearing, movement and manipulation in exchange for overcharging the target’s own physical abilities. -->
+  <VPE_PsychicGuidance.description>Reduz a visão, a audição, o movimento e a manipulação do conjurador em troca de sobrecarregar as capacidades físicas do alvo.</VPE_PsychicGuidance.description>
+  <!-- EN: Using ability: {0} -->
+  <VPE_PsychicGuidance.jobReportString>Usando habilidade: {0}</VPE_PsychicGuidance.jobReportString>
+  <!-- EN: psychic guidance -->
+  <VPE_PsychicGuidance.verbProperties.label>orientação psíquica</VPE_PsychicGuidance.verbProperties.label>
+  <!-- EN: transmute stone -->
+  <VPE_TransmuteStone.label>transmutar pedra</VPE_TransmuteStone.label>
+  <!-- EN: Designates an area of stone which will have its minerals swapped out for a single, randomized type from an underground strata. -->
+  <VPE_TransmuteStone.description>Marca uma área de pedra cujos minerais serão trocados por um único tipo aleatório vindo de um estrato subterrâneo.</VPE_TransmuteStone.description>
+  <!-- EN: Using ability: {0} -->
+  <VPE_TransmuteStone.jobReportString>Usando habilidade: {0}</VPE_TransmuteStone.jobReportString>
+  <!-- EN: transmute stone -->
+  <VPE_TransmuteStone.verbProperties.label>transmutar pedra</VPE_TransmuteStone.verbProperties.label>
+  <!-- EN: heat focus -->
+  <VPE_HeatFocus.label>foco de calor</VPE_HeatFocus.label>
+  <!-- EN: Initiates harmonic meditation which converts all accumulated heat into psyfocus after 10 seconds. Can neither overcharge psyfocus nor heat dump. -->
+  <VPE_HeatFocus.description>Inicia uma meditação harmônica que converte todo o calor acumulado em concentração psíquica depois de 10 segundos. Não ultrapassa o máximo de concentração psíquica nem descarrega calor.</VPE_HeatFocus.description>
+  <!-- EN: Using ability: {0} -->
+  <VPE_HeatFocus.jobReportString>Usando habilidade: {0}</VPE_HeatFocus.jobReportString>
+  <!-- EN: heat focus -->
+  <VPE_HeatFocus.verbProperties.label>foco de calor</VPE_HeatFocus.verbProperties.label>
+  <!-- EN: luck transfer -->
+  <VPE_LuckTransfer.label>transferência de sorte</VPE_LuckTransfer.label>
+  <!-- EN: Creates a rift in karmic balance by shifting the negative karma from the first target onto the second target, as well as receiving their positive karma. Only affects combat and the duration scales with the first target’s psychic sensitivity. -->
+  <VPE_LuckTransfer.description>Abre uma fenda no equilíbrio cármico, passando o carma negativo do primeiro alvo para o segundo e recebendo o carma positivo deste. Só afeta o combate, e a duração depende da sensibilidade psíquica do primeiro alvo.</VPE_LuckTransfer.description>
+  <!-- EN: Using ability: {0} -->
+  <VPE_LuckTransfer.jobReportString>Usando habilidade: {0}</VPE_LuckTransfer.jobReportString>
+  <!-- EN: luck transfer -->
+  <VPE_LuckTransfer.verbProperties.label>transferência de sorte</VPE_LuckTransfer.verbProperties.label>
+  <!-- EN: bend probability -->
+  <VPE_BendProbability.label>dobrar a probabilidade</VPE_BendProbability.label>
+  <!-- EN: Creates a ripple of cosmic scale that will force something to happen. -->
+  <VPE_BendProbability.description>Cria uma ondulação de escala cósmica que força alguma coisa a acontecer.</VPE_BendProbability.description>
+  <!-- EN: Using ability: {0} -->
+  <VPE_BendProbability.jobReportString>Usando habilidade: {0}</VPE_BendProbability.jobReportString>
+  <!-- EN: bend probability -->
+  <VPE_BendProbability.verbProperties.label>dobrar a probabilidade</VPE_BendProbability.verbProperties.label>
+  <!-- EN: location swap -->
+  <VPE_LocationSwap.label>troca de posição</VPE_LocationSwap.label>
+  <!-- EN: Using precision skipgates, swaps the positions of the caster and a visible target. -->
+  <VPE_LocationSwap.description>Usando portais de salto de precisão, troca de lugar o conjurador e um alvo visível.</VPE_LocationSwap.description>
+  <!-- EN: Using ability: {0} -->
+  <VPE_LocationSwap.jobReportString>Usando habilidade: {0}</VPE_LocationSwap.jobReportString>
+  <!-- EN: location swap -->
+  <VPE_LocationSwap.verbProperties.label>troca de posição</VPE_LocationSwap.verbProperties.label>
+  <!-- EN: health swap -->
+  <VPE_HealthSwap.label>troca de saúde</VPE_HealthSwap.label>
+  <!-- EN: Through the law of equivalent exchange, returns the primary target’s vitality to its origin, transferring all foreign objects and injuries to the secondary target. -->
+  <VPE_HealthSwap.description>Pela lei da troca equivalente, devolve a vitalidade do alvo principal à origem, transferindo todos os objetos estranhos e ferimentos para o alvo secundário.</VPE_HealthSwap.description>
+  <!-- EN: Using ability: {0} -->
+  <VPE_HealthSwap.jobReportString>Usando habilidade: {0}</VPE_HealthSwap.jobReportString>
+  <!-- EN: health swap -->
+  <VPE_HealthSwap.verbProperties.label>troca de saúde</VPE_HealthSwap.verbProperties.label>
+  <!-- EN: transmutation -->
+  <VPE_Transmutation.label>transmutação</VPE_Transmutation.label>
+  <!-- EN: Through the law of equivalent exchange, converts a targeted (stack of) item(s) into an item of equal or lesser value. Completely unpredictable. -->
+  <VPE_Transmutation.description>Pela lei da troca equivalente, converte o item (ou pilha de itens) alvo num item de valor igual ou menor. Completamente imprevisível.</VPE_Transmutation.description>
+  <!-- EN: Using ability: {0} -->
+  <VPE_Transmutation.jobReportString>Usando habilidade: {0}</VPE_Transmutation.jobReportString>
+  <!-- EN: transmutation -->
+  <VPE_Transmutation.verbProperties.label>transmutação</VPE_Transmutation.verbProperties.label>
+  <!-- EN: skillroll -->
+  <VPE_SkillRoll.label>rolagem de habilidades</VPE_SkillRoll.label>
+  <!-- EN: Initiates a shift in the target’s knowledge and accumulated skills, attempting to rebalance them somewhat chaotically with some beneficial guidance. The strain puts the caster in a coma. -->
+  <VPE_SkillRoll.description>Inicia uma mudança no conhecimento e nas habilidades acumuladas do alvo, tentando reequilibrá-las de um jeito meio caótico, com uma orientação benéfica. O esforço põe o conjurador em coma.</VPE_SkillRoll.description>
+  <!-- EN: Using ability: {0} -->
+  <VPE_SkillRoll.jobReportString>Usando habilidade: {0}</VPE_SkillRoll.jobReportString>
+  <!-- EN: skillroll -->
+  <VPE_SkillRoll.verbProperties.label>rolagem de habilidades</VPE_SkillRoll.verbProperties.label>
+</LanguageData>

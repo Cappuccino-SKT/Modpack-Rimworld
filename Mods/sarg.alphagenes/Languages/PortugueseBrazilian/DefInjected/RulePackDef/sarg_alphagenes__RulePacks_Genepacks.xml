@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <AG_NamerAlphapack.rulePack.rulesStrings>
+    <!-- EN: r_name-&gt;alphapack ([geneWord][otherGenesInfo]) -->
+    <li>r_name-&gt;alfapacote ([geneWord][otherGenesInfo])</li>
+    <!-- EN: otherGenesInfo(geneCount==1)-&gt; -->
+    <li>otherGenesInfo(geneCount==1)-&gt;</li>
+    <!-- EN: otherGenesInfo(geneCount&gt;=2)-&gt; +[geneCountMinusOne] -->
+    <li>otherGenesInfo(geneCount&gt;=2)-&gt; +[geneCountMinusOne]</li>
+  </AG_NamerAlphapack.rulePack.rulesStrings>
+  <AG_NamerMixedpack.rulePack.rulesStrings>
+    <!-- EN: r_name-&gt;mixedpack ([geneWord][otherGenesInfo]) -->
+    <li>r_name-&gt;pacote misto ([geneWord][otherGenesInfo])</li>
+    <!-- EN: otherGenesInfo(geneCount==1)-&gt; -->
+    <li>otherGenesInfo(geneCount==1)-&gt;</li>
+    <!-- EN: otherGenesInfo(geneCount&gt;=2)-&gt; +[geneCountMinusOne] -->
+    <li>otherGenesInfo(geneCount&gt;=2)-&gt; +[geneCountMinusOne]</li>
+  </AG_NamerMixedpack.rulePack.rulesStrings>
+</LanguageData>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <!-- EN: Must have a palette selected to save over. -->
+  <VF_MustSelectColorPalette>É preciso escolher uma paleta para salvar por cima.</VF_MustSelectColorPalette>
+  <!-- EN: {0_labelShort} is unable to move. -->
+  <VF_VehicleUnableToMove>{0_labelShort} não consegue se mover.</VF_VehicleUnableToMove>
+  <!-- EN: {0_labelShort} is deployed and unable to move. -->
+  <VF_VehicleImmobileDeployed>{0_labelShort} está desdobrado e não consegue se mover.</VF_VehicleImmobileDeployed>
+  <!-- EN: Failed to add {0} to {1}. No more space available. -->
+  <VF_HandlerNotEnoughRoom>Não deu para pôr {0} em {1}. Não há mais espaço.</VF_HandlerNotEnoughRoom>
+  <!-- EN: Cannot move. Needs more crew in order to operate. -->
+  <VF_NotEnoughToOperate>Não consegue se mover. Precisa de mais tripulantes para funcionar.</VF_NotEnoughToOperate>
+  <!-- EN: Cannot draft while {0} is upgrading. -->
+  <VF_UpgradeInProgress>Não dá para ligar enquanto {0} recebe uma melhoria.</VF_UpgradeInProgress>
+  <!-- EN: Not enough colonists in {0} to operate {1}. -->
+  <VF_NotEnoughCrew>Não há colonos suficientes em {0} para operar {1}.</VF_NotEnoughCrew>
+  <!-- EN: Not enough space. -->
+  <VF_CannotFit>Não há espaço suficiente.</VF_CannotFit>
+  <!-- EN: Cannot path here. -->
+  <VF_NoPathForVehicle>Não há caminho até aqui.</VF_NoPathForVehicle>
+  <!-- EN: {0} is incapable of fulfilling this role. -->
+  <VF_IncapableStatusForRole>{0} é incapaz de cumprir esta função.</VF_IncapableStatusForRole>
+  <!-- EN: {0} cannot be added to cargo. -->
+  <VF_CannotAddToCargo>{0} não pode ser posto na carga.</VF_CannotAddToCargo>
+  <!-- EN: Name invalid for Vehicle. -->
+  <VF_InvalidName>Nome inválido para o veículo.</VF_InvalidName>
+  <!-- EN: No food in {0} with Pawns onboard. -->
+  <VF_OutOfFood>Não há comida em {0} com personagens a bordo.</VF_OutOfFood>
+  <!-- EN: No ammo loaded. -->
+  <VF_NoAmmoLoadedTurret>Sem munição carregada.</VF_NoAmmoLoadedTurret>
+  <!-- EN: No ammo available in inventory. -->
+  <VF_NoAmmoAvailable>Não há munição no inventário.</VF_NoAmmoAvailable>
+  <!-- EN: {0} is no longer able to operate their role for the vehicle caravan. -->
+  <VF_VehicleCaravanMentalBreakMovementRole>{0} não consegue mais cumprir a sua função na caravana de veículos.</VF_VehicleCaravanMentalBreakMovementRole>
+  <!-- EN: {0} has boarded the {1} and is ready for departure. -->
+  <VF_PawnBoardedFormingCaravan>{0} embarcou em {1} e está pronto para partir.</VF_PawnBoardedFormingCaravan>
+  <!-- EN: Not enough pawns for {0}. -->
+  <VF_CantAssignVehicle>Personagens insuficientes para {0}.</VF_CantAssignVehicle>
+  <!-- EN: Failed to assign seats. {0} -->
+  <VF_AssignFailure>Não deu para distribuir os lugares. {0}</VF_AssignFailure>
+  <!-- EN: Packing Spot was not found for Vehicle caravan. It is recommended you place a Packing Spot from Misc. -->
+  <VF_PackingSpotNotFound>Não foi encontrado um ponto de carregamento para a caravana de veículos. É recomendado colocar um ponto de carregamento (em Diversos).</VF_PackingSpotNotFound>
+  <!-- EN: Force to Leave -->
+  <VF_ForceLeaveCaravan>Forçar partida</VF_ForceLeaveCaravan>
+  <!-- EN: Force Vehicle Caravan to leave the map. Will skip loading whatever items are not currently onboard -->
+  <VF_ForceLeaveCaravanDesc>Força a caravana de veículos a sair do mapa. Os itens que ainda não estão a bordo ficam para trás</VF_ForceLeaveCaravanDesc>
+  <!-- EN: Crew is preparing to leave. -->
+  <VF_ForceLeaveConfirmation>A tripulação está se preparando para partir.</VF_ForceLeaveConfirmation>
+  <!-- EN: Caravan process has been terminated. No vehicles remain. -->
+  <VF_CaravanTerminatedNoVehicles>A formação da caravana foi encerrada. Não restou nenhum veículo.</VF_CaravanTerminatedNoVehicles>
+  <!-- EN: Cannot plan route for both Sea and Land vehicles. Paths will not register. -->
+  <VF_LandAndSeaRoutePlannerRestriction>Não dá para planejar rota para veículos marítimos e terrestres juntos. Os caminhos não vão ser registrados.</VF_LandAndSeaRoutePlannerRestriction>
+  <!-- EN: Are you sure you want to leave Vehicles behind? Vehicles left behind: {0} -->
+  <VF_LeaveVehicleBehindCaravan>Tem certeza de que quer deixar veículos para trás? Veículos deixados: {0}</VF_LeaveVehicleBehindCaravan>
+  <!-- EN: Must assign enough colonists to man vehicle. -->
+  <VF_MustAssignEnoughToVehicle>É preciso designar colonos suficientes para tripular o veículo.</VF_MustAssignEnoughToVehicle>
+  <!-- EN: {0} has arrived at their destination. -->
+  <VF_AerialVehicleArrived>{0} chegou ao destino.</VF_AerialVehicleArrived>
+  <!-- EN: {0} has left the map. -->
+  <VF_AerialVehicleLeft>{0} saiu do mapa.</VF_AerialVehicleLeft>
+  <!-- EN: Unable to launch, conditions are not suitable. -->
+  <VF_AerialVehicleLaunchNotValid>Não dá para decolar: as condições não são adequadas.</VF_AerialVehicleLaunchNotValid>
+  <!-- EN: Cannot launch. Out of Fuel. -->
+  <VF_LaunchOutOfFuel>Não dá para decolar. Sem combustível.</VF_LaunchOutOfFuel>
+  <!-- EN: Maximum nodes for {0}'s flight path has been reached. -->
+  <VF_FlightPathMaxNodes>O número máximo de pontos na rota de voo de {0} foi atingido.</VF_FlightPathMaxNodes>
+  <!-- EN: A landing destination must be chosen. -->
+  <VF_MustTargetLanding>É preciso escolher um destino de pouso.</VF_MustTargetLanding>
+</LanguageData>

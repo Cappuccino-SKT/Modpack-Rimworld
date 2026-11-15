@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <!-- EN: Must target a battery or fiendly mechanoid -->
+  <VPE.MustTargetBattery>Precisa mirar numa bateria ou num mecanoide amigo</VPE.MustTargetBattery>
+  <!-- EN: Stop Hurricane -->
+  <VPE.StopHurricane>Parar furacão</VPE.StopHurricane>
+  <!-- EN: No nearby chunks -->
+  <VPE.NoChunks>Não há pedaços por perto</VPE.NoChunks>
+  <!-- EN: {PAWN_nameDef} must have living family members. -->
+  <VPE.MustHaveLivingFamilyMembers>{PAWN_nameDef} precisa ter parentes vivos.</VPE.MustHaveLivingFamilyMembers>
+  <!-- EN: {0} things at level {1} -->
+  <VPE.ThingsOfLevel>{0} coisas no nível {1}</VPE.ThingsOfLevel>
+  <!-- EN: Not enough value, must be worth at least $1 per item. -->
+  <VPE.TooCheap>Valor insuficiente: precisa valer pelo menos $1 por item.</VPE.TooCheap>
+  <!-- EN: Break Link -->
+  <VPE_BreakLink>Romper elo</VPE_BreakLink>
+  <!-- EN: Break the link and immediately kill this construct -->
+  <VPE_BreakLinkDesc>Rompe o elo e mata este constructo na hora</VPE_BreakLinkDesc>
+  <!-- EN: Next PsySet -->
+  <VPE.PsySetNext>Próximo psiconjunto</VPE.PsySetNext>
+  <!-- EN: Previous PsySet -->
+  <VPE.PsySetPrev>Psiconjunto anterior</VPE.PsySetPrev>
+  <!-- EN: Nearby -->
+  <VPE.Nearby>Por perto</VPE.Nearby>
+  <!-- EN: {0} wealth nearby out of {1} total wealth -->
+  <VPE.WealthNearby>{0} de riqueza por perto, de {1} de riqueza total</VPE.WealthNearby>
+  <!-- EN: {0} other pawns nearby -->
+  <VPE.GroupFocus>{0} outros personagens por perto</VPE.GroupFocus>
+  <!-- EN: All -->
+  <VPE.All>Todos</VPE.All>
+  <!-- EN: Move to the next PsySet. Right click to choose a specific one.\nCurrent: {0}, Next: {1} -->
+  <VPE.PsySetDesc>Ir para o próximo psiconjunto. Clique com o botão direito para escolher um específico.\nAtual: {0}, próximo: {1}</VPE.PsySetDesc>
+  <!-- EN: Target must have quality -->
+  <VPE.MustHaveQuality>O alvo precisa ter qualidade</VPE.MustHaveQuality>
+  <!-- EN: Target quality too high, must be lower than {0}. -->
+  <VPE.QualityTooHigh>Qualidade do alvo alta demais: precisa ser menor que {0}.</VPE.QualityTooHigh>
+  <!-- EN: Maximum quality: {0} -->
+  <VPE.MaxQuality>Qualidade máxima: {0}</VPE.MaxQuality>
+  <!-- EN: Not enough neural heat available. -->
+  <VPE.NotEnoughHeat>Calor neural disponível insuficiente.</VPE.NotEnoughHeat>
+  <!-- EN: Must consume power. -->
+  <VPE.MustConsumePower>Precisa consumir energia.</VPE.MustConsumePower>
+  <!-- EN: Target a stone chunk -->
+  <VPE.MustBeStoneChunk>Mire num pedaço de pedra</VPE.MustBeStoneChunk>
+  <!-- EN: Target steel slag -->
+  <VPE.MustBeSteelSlag>Mire em escória de aço</VPE.MustBeSteelSlag>
+  <!-- EN: Psylink level gained: {0} -->
+  <VPE.PsylinkGained>Nível de psínculo ganho: {0}</VPE.PsylinkGained>
+  <!-- EN: {0} has gained a new level of psylink. Upon reaching that level, {1} raised psycasting-related stats slightly. {1} can now also allocate a point to either learn a new psycast, improve psycasting stats further or unlock a new meditation focus.\n\nPsycasting experience needed for next level is: {2}. -->
+  <VPE.PsylinkGained.Desc>{0} ganhou um novo nível de psínculo. Ao chegar nesse nível, {1} melhorou um pouco os atributos ligados a poderes psíquicos. {1} agora também pode gastar um ponto para aprender um novo poder psíquico, melhorar mais os atributos psíquicos ou liberar um novo foco de meditação.\n\nExperiência psíquica necessária para o próximo nível: {2}.</VPE.PsylinkGained.Desc>
+  <!-- EN: Unlocked via Psycaster points -->
+  <VPE.UnlockedByPoints>Liberado com pontos de conjurador</VPE.UnlockedByPoints>
+  <!-- EN: Must target eltex -->
+  <VPE.MustEltex>Precisa mirar em eltex</VPE.MustEltex>
+  <!-- EN: Not a psycaster -->
+  <VPE.NotPsycaster>Não é conjurador</VPE.NotPsycaster>
+  <!-- EN: Already wearing a psyring -->
+  <VPE.AlreadyPsyring>Já está usando um psianel</VPE.AlreadyPsyring>
+  <!-- EN: Must be researchable -->
+  <VPE.Research>Precisa ser pesquisável</VPE.Research>
+  <!-- EN: Already researched -->
+  <VPE.AlreadyResearch>Já pesquisado</VPE.AlreadyResearch>
+  <!-- EN: Target must be ally or neutral. -->
+  <VPE.MustBeAllyOrNeutral>O alvo precisa ser aliado ou neutro.</VPE.MustBeAllyOrNeutral>
+  <!-- EN: Target must be downed. -->
+  <VPE.MustBeDowned>O alvo precisa estar caído.</VPE.MustBeDowned>
+  <!-- EN: Target must have at least one psycaster level. -->
+  <VPE.MustHavePsychicLevel>O alvo precisa ter pelo menos um nível de conjurador.</VPE.MustHavePsychicLevel>
+  <!-- EN: Must have at least {0} neural heat. -->
+  <VPE.MustHaveHeatAmount>Precisa ter pelo menos {0} de calor neural.</VPE.MustHaveHeatAmount>
+  <!-- EN: Target must be corpse. -->
+  <VPE.MustBeCorpse>O alvo precisa ser um cadáver.</VPE.MustBeCorpse>
+  <!-- EN: Corpse must be humanlike. -->
+  <VPE.MustBeCorpseHumanlike>O cadáver precisa ser humanoide.</VPE.MustBeCorpseHumanlike>
+  <!-- EN: Pack Summoned! -->
+  <VPE.PackSummon>Matilha invocada!</VPE.PackSummon>
+  <!-- EN: A pack of wild animals have been summoned by {0} to defend the colony. -->
+  <VPE.PackSummon.Desc>Uma matilha de animais selvagens foi invocada por {0} para defender a colônia.</VPE.PackSummon.Desc>
+  <!-- EN: No available fingers. -->
+  <VPE.NoAvailableFingers>Não há dedos disponíveis.</VPE.NoAvailableFingers>
+  <!-- EN: Currently channeling {0} -->
+  <VPE.CurrentChanneling>Canalizando {0}</VPE.CurrentChanneling>
+  <!-- EN: Target must in the dark -->
+  <VPE.MustBeInDark>O alvo precisa estar no escuro</VPE.MustBeInDark>
+  <!-- EN: Must be a psycaster -->
+  <VPE.MustBePsycaster>Precisa ser conjurador</VPE.MustBePsycaster>
+  <!-- EN: Already knows {0} -->
+  <VPE.AlreadyHasPsycast>Já conhece {0}</VPE.AlreadyHasPsycast>
+  <!-- EN: Target must be in the same faction. -->
+  <VPE.MustBeAlly>O alvo precisa ser da mesma facção.</VPE.MustBeAlly>
+  <!-- EN: Target's equipment must be damaged. -->
+  <VPE.MustHaveDamagedEquipment>O equipamento do alvo precisa estar danificado.</VPE.MustHaveDamagedEquipment>
+  <!-- EN: Cannot target animals -->
+  <VPE.NoAnimals>Não pode mirar em animais</VPE.NoAnimals>
+  <!-- EN: Target must be damaged -->
+  <VPE.MustBeDamaged>O alvo precisa estar danificado</VPE.MustBeDamaged>
+</LanguageData>

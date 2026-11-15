@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <!-- EN: engine block -->
+  <VVE_EngineBlock.label>bloco de motor</VVE_EngineBlock.label>
+  <!-- EN: Literally the part that gets a vehicle moving in the first place, no vehicle can be assembled without one. Exceedingly large or heavy vehicles could require more than one. -->
+  <VVE_EngineBlock.description>É literalmente a peça que faz o veículo andar, para começo de conversa; nenhum veículo pode ser montado sem uma. Veículos muito grandes ou pesados podem precisar de mais de uma.</VVE_EngineBlock.description>
+  <!-- EN: car alternator -->
+  <VVE_CarAlternator.label>alternador</VVE_CarAlternator.label>
+  <!-- EN: The alternator is an extremely vital engine part for any vehicle that has electrical systems. Some very basic systems can get away and some more complex vehicles can require more than one. -->
+  <VVE_CarAlternator.description>O alternador é uma peça de motor vital para qualquer veículo com sistema elétrico. Alguns sistemas bem básicos se viram sem ele, e alguns veículos mais complexos podem precisar de mais de um.</VVE_CarAlternator.description>
+  <!-- EN: car exhaust -->
+  <VVE_CarExhaust.label>escapamento</VVE_CarExhaust.label>
+  <!-- EN: A series of pipes, catalysts and fittings that transfer the exhaust from the car engine away from the driver’s cabin. Engines that will be put under a lot of strain require more exhausts. -->
+  <VVE_CarExhaust.description>Uma série de canos, catalisadores e conexões que levam a fumaça do motor para longe da cabine do motorista. Motores que vão trabalhar muito forçados precisam de mais escapamentos.</VVE_CarExhaust.description>
+  <!-- EN: car suspension -->
+  <VVE_CarSuspension.label>suspensão</VVE_CarSuspension.label>
+  <!-- EN: A series of transmissions, springs and shock absorbers that redirect or reduce forces transferred through the wheels. Generally, the greater the mass and cargo capacity of the vehicle, the more suspensions are needed. -->
+  <VVE_CarSuspension.description>Uma série de transmissões, molas e amortecedores que redirecionam ou reduzem as forças que passam pelas rodas. Em geral, quanto maior a massa e a capacidade de carga do veículo, mais suspensões ele precisa.</VVE_CarSuspension.description>
+  <!-- EN: car wheel -->
+  <VVE_CarWheel.label>roda</VVE_CarWheel.label>
+  <!-- EN: One of the most ancient technologies developed by man, the wheel takes the power from the engine and translates it into movement. As wheels have to not only move the vehicle in whichever direction necessary but also withstand the combined weight, larger and heavier vehicles can need several or dozens of them. -->
+  <VVE_CarWheel.description>Uma das tecnologias mais antigas criadas pela humanidade, a roda pega a força do motor e transforma em movimento. Como as rodas precisam não só levar o veículo para onde for preciso, mas também aguentar o peso todo, veículos maiores e mais pesados podem precisar de várias, ou de dezenas.</VVE_CarWheel.description>
+  <!-- EN: car battery -->
+  <VVE_CarBattery.label>bateria de carro</VVE_CarBattery.label>
+  <!-- EN: An insulated rechargeable battery and wiring which powers numerous electronic functions. Acts as a surge protector for electronic systems and multiple batteries can augment or even replace a vehicle's engine. -->
+  <VVE_CarBattery.description>Uma bateria recarregável isolada, com fiação, que alimenta várias funções eletrônicas. Funciona como protetor contra surtos dos sistemas eletrônicos, e várias baterias podem reforçar ou até substituir o motor de um veículo.</VVE_CarBattery.description>
+  <!-- EN: car fuel tank -->
+  <VVE_CarFuelTank.label>tanque de combustível</VVE_CarFuelTank.label>
+  <!-- EN: Carefully manufactured fuel storage and injection systems. Ideal for vehicles that require greater fuel capacity or even increased fuel consumption without increasing the likelihood of gas leaks or engine damage. -->
+  <VVE_CarFuelTank.description>Sistemas de armazenamento e injeção de combustível fabricados com cuidado. Ideais para veículos que precisam de mais capacidade de combustível, ou até de maior consumo, sem aumentar a chance de vazamentos ou de danos ao motor.</VVE_CarFuelTank.description>
+  <!-- EN: car transmission -->
+  <VVE_CarTransmission.label>transmissão</VVE_CarTransmission.label>
+  <!-- EN: A dedicated, automatic transmission system delicately machined from hardened and durable materials. Due to its comparatively complex design, these are required in vehicles that require immense torque or excessive rotational speeds. -->
+  <VVE_CarTransmission.description>Um sistema de transmissão automática dedicado, usinado com delicadeza em materiais endurecidos e duráveis. Por ter um projeto relativamente complexo, é exigido em veículos que precisam de torque imenso ou rotações altíssimas.</VVE_CarTransmission.description>
+  <!-- EN: car radiator -->
+  <VVE_CarRadiator.label>radiador</VVE_CarRadiator.label>
+  <!-- EN: A series of pipes, tubes, fans, pumps, and the radiator itself, ready to be installed in a vehicle that is expected to endure heavy loads. The harder the engine will have to work, the more radiators required to keep it cool. -->
+  <VVE_CarRadiator.description>Uma série de canos, tubos, ventoinhas, bombas e o próprio radiador, pronta para ser instalada num veículo que vai aguentar cargas pesadas. Quanto mais o motor tiver que trabalhar, mais radiadores são necessários para mantê-lo frio.</VVE_CarRadiator.description>
+  <!-- EN: car wiring -->
+  <VVE_CarWiring.label>fiação</VVE_CarWiring.label>
+  <!-- EN: Reinforced and machined wiring parts to improve electricity conduction. Typically required in vehicles that have a lot of synchronized or delicate electronic systems. -->
+  <VVE_CarWiring.description>Peças de fiação reforçadas e usinadas para conduzir melhor a eletricidade. Costumam ser exigidas em veículos com muitos sistemas eletrônicos sincronizados ou delicados.</VVE_CarWiring.description>
+</LanguageData>

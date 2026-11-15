@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <!-- EN: fogger -->
+  <AG_Fogger.label>gerador de névoa</AG_Fogger.label>
+  <!-- EN: A distributed cloud of mechanites is interwoven with the DNA of the carrier. These mechanites have the ability of influencing the humidity levels of the surrounding atmosphere, causing a deep, thick fog to coalesce around. -->
+  <AG_Fogger.description>Uma nuvem difusa de mecanitos está entrelaçada ao DNA do portador. Esses mecanitos influenciam a umidade da atmosfera ao redor, fazendo uma névoa densa e espessa se formar.</AG_Fogger.description>
+  <!-- EN: fog -->
+  <AG_Fogger.symbolPack.prefixSymbols.0.symbol>névoa</AG_Fogger.symbolPack.prefixSymbols.0.symbol>
+  <!-- EN: fogger -->
+  <AG_Fogger.symbolPack.prefixSymbols.1.symbol>nebuloso</AG_Fogger.symbolPack.prefixSymbols.1.symbol>
+  <!-- EN: humid -->
+  <AG_Fogger.symbolPack.prefixSymbols.2.symbol>úmido</AG_Fogger.symbolPack.prefixSymbols.2.symbol>
+  <!-- EN: rainmaker -->
+  <AG_RainMaker.label>gerador de chuva</AG_RainMaker.label>
+  <!-- EN: A distributed cloud of mechanites is interwoven with the DNA of the carrier. These mechanites have the ability of drastically lowering the atmospheric pressure around, causing constant precipitation. -->
+  <AG_RainMaker.description>Uma nuvem difusa de mecanitos está entrelaçada ao DNA do portador. Esses mecanitos reduzem drasticamente a pressão atmosférica ao redor, causando chuva constante.</AG_RainMaker.description>
+  <!-- EN: rainy -->
+  <AG_RainMaker.symbolPack.prefixSymbols.0.symbol>chuvoso</AG_RainMaker.symbolPack.prefixSymbols.0.symbol>
+  <!-- EN: water -->
+  <AG_RainMaker.symbolPack.prefixSymbols.1.symbol>água</AG_RainMaker.symbolPack.prefixSymbols.1.symbol>
+  <!-- EN: pluvio -->
+  <AG_RainMaker.symbolPack.prefixSymbols.2.symbol>pluvio</AG_RainMaker.symbolPack.prefixSymbols.2.symbol>
+  <!-- EN: foggy rainmaker -->
+  <AG_FoggyRainMaker.label>gerador de chuva e névoa</AG_FoggyRainMaker.label>
+  <!-- EN: A distributed cloud of mechanites is interwoven with the DNA of the carrier. These mechanites have the ability of drastically lowering the atmospheric pressure around, causing constant precipitation and a deep, thick fog to coalesce. -->
+  <AG_FoggyRainMaker.description>Uma nuvem difusa de mecanitos está entrelaçada ao DNA do portador. Esses mecanitos reduzem drasticamente a pressão atmosférica ao redor, causando chuva constante e uma névoa densa e espessa.</AG_FoggyRainMaker.description>
+  <!-- EN: rainy -->
+  <AG_FoggyRainMaker.symbolPack.prefixSymbols.0.symbol>chuvoso</AG_FoggyRainMaker.symbolPack.prefixSymbols.0.symbol>
+  <!-- EN: water -->
+  <AG_FoggyRainMaker.symbolPack.prefixSymbols.1.symbol>água</AG_FoggyRainMaker.symbolPack.prefixSymbols.1.symbol>
+  <!-- EN: pluvio -->
+  <AG_FoggyRainMaker.symbolPack.prefixSymbols.2.symbol>pluvio</AG_FoggyRainMaker.symbolPack.prefixSymbols.2.symbol>
+  <!-- EN: fog -->
+  <AG_FoggyRainMaker.symbolPack.prefixSymbols.3.symbol>névoa</AG_FoggyRainMaker.symbolPack.prefixSymbols.3.symbol>
+  <!-- EN: fogger -->
+  <AG_FoggyRainMaker.symbolPack.prefixSymbols.4.symbol>nebuloso</AG_FoggyRainMaker.symbolPack.prefixSymbols.4.symbol>
+  <!-- EN: humid -->
+  <AG_FoggyRainMaker.symbolPack.prefixSymbols.5.symbol>úmido</AG_FoggyRainMaker.symbolPack.prefixSymbols.5.symbol>
+  <!-- EN: rainy thundermaker -->
+  <AG_RainyThunderstormMaker.label>gerador de temporal</AG_RainyThunderstormMaker.label>
+  <!-- EN: A distributed cloud of mechanites is interwoven with the DNA of the carrier. These mechanites have the ability of drastically increasing electrostatic energy and lowering atmospheric pressure, causing a violent rainy thunderstorm to form. -->
+  <AG_RainyThunderstormMaker.description>Uma nuvem difusa de mecanitos está entrelaçada ao DNA do portador. Esses mecanitos aumentam drasticamente a energia eletrostática e reduzem a pressão atmosférica, formando uma violenta tempestade com chuva.</AG_RainyThunderstormMaker.description>
+  <!-- EN: rainy -->
+  <AG_RainyThunderstormMaker.symbolPack.prefixSymbols.0.symbol>chuvoso</AG_RainyThunderstormMaker.symbolPack.prefixSymbols.0.symbol>
+  <!-- EN: water -->
+  <AG_RainyThunderstormMaker.symbolPack.prefixSymbols.1.symbol>água</AG_RainyThunderstormMaker.symbolPack.prefixSymbols.1.symbol>
+  <!-- EN: pluvio -->
+  <AG_RainyThunderstormMaker.symbolPack.prefixSymbols.2.symbol>pluvio</AG_RainyThunderstormMaker.symbolPack.prefixSymbols.2.symbol>
+  <!-- EN: thunder -->
+  <AG_RainyThunderstormMaker.symbolPack.prefixSymbols.3.symbol>trovão</AG_RainyThunderstormMaker.symbolPack.prefixSymbols.3.symbol>
+  <!-- EN: electr -->
+  <AG_RainyThunderstormMaker.symbolPack.prefixSymbols.4.symbol>eletr</AG_RainyThunderstormMaker.symbolPack.prefixSymbols.4.symbol>
+  <!-- EN: thundermaker -->
+  <AG_DryThunderstormMaker.label>gerador de trovões</AG_DryThunderstormMaker.label>
+  <!-- EN: A distributed cloud of mechanites is interwoven with the DNA of the carrier. These mechanites have the ability of drastically increasing electrostatic energy in the atmosphere, causing a violent dry thunderstorm to form. This does not make the carrier immune to lightning strikes! -->
+  <AG_DryThunderstormMaker.description>Uma nuvem difusa de mecanitos está entrelaçada ao DNA do portador. Esses mecanitos aumentam drasticamente a energia eletrostática na atmosfera, formando uma violenta tempestade seca de raios. Isso não deixa o portador imune a raios!</AG_DryThunderstormMaker.description>
+  <!-- EN: thunder -->
+  <AG_DryThunderstormMaker.symbolPack.prefixSymbols.0.symbol>trovão</AG_DryThunderstormMaker.symbolPack.prefixSymbols.0.symbol>
+  <!-- EN: electr -->
+  <AG_DryThunderstormMaker.symbolPack.prefixSymbols.1.symbol>eletr</AG_DryThunderstormMaker.symbolPack.prefixSymbols.1.symbol>
+  <!-- EN: snow maker -->
+  <AG_SnowMaker.label>gerador de neve</AG_SnowMaker.label>
+  <!-- EN: A distributed cloud of mechanites is interwoven with the DNA of the carrier. These mechanites have the ability of drastically lowering temperature in the upper atmosphere, causing snow to fall. -->
+  <AG_SnowMaker.description>Uma nuvem difusa de mecanitos está entrelaçada ao DNA do portador. Esses mecanitos reduzem drasticamente a temperatura na alta atmosfera, fazendo nevar.</AG_SnowMaker.description>
+  <!-- EN: cold -->
+  <AG_SnowMaker.symbolPack.prefixSymbols.0.symbol>frio</AG_SnowMaker.symbolPack.prefixSymbols.0.symbol>
+  <!-- EN: snow -->
+  <AG_SnowMaker.symbolPack.prefixSymbols.1.symbol>neve</AG_SnowMaker.symbolPack.prefixSymbols.1.symbol>
+</LanguageData>

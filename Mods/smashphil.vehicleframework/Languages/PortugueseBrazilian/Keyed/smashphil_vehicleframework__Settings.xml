@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <!-- EN: Main -->
+  <VF_MainSettings>Principal</VF_MainSettings>
+  <!-- EN: Search... -->
+  <VF_ListSearchText>Buscar...</VF_ListSearchText>
+  <!-- EN: Settings have been locked for this vehicle and cannot be modified. -->
+  <VF_SettingsDisabledTooltip>As opções deste veículo foram travadas e não podem ser alteradas.</VF_SettingsDisabledTooltip>
+  <!-- EN: This vehicle cannot be upgraded. -->
+  <VF_NonUpgradeableSettingsTooltip>Este veículo não pode receber melhorias.</VF_NonUpgradeableSettingsTooltip>
+  <!-- EN: Change default pattern -->
+  <VF_RecolorDefaultMaskTooltip>Mudar o padrão de pintura</VF_RecolorDefaultMaskTooltip>
+  <!-- EN: World/Map Generation -->
+  <VF_WorldMapGen>Geração do mundo/mapa</VF_WorldMapGen>
+  <!-- EN: Beach Size Multiplier -->
+  <VF_BeachGenMultiplier>Multiplicador do tamanho das praias</VF_BeachGenMultiplier>
+  <!-- EN: Increase the amount of water on the coastline. -->
+  <VF_BeachGenMultiplierTooltip>Aumenta a quantidade de água no litoral.</VF_BeachGenMultiplierTooltip>
+  <!-- EN: River Size Multiplier -->
+  <VF_RiverGenMultiplier>Multiplicador do tamanho dos rios</VF_RiverGenMultiplier>
+  <!-- EN: Increase the width of rivers on maps. -->
+  <VF_RiverGenMultiplierTooltip>Aumenta a largura dos rios nos mapas.</VF_RiverGenMultiplierTooltip>
+  <!-- EN: Settlement Relocation -->
+  <VF_AdjustSettlementRadius>Realocação de assentamentos</VF_AdjustSettlementRadius>
+  <!-- EN: Adjust settlements to nearby features for vehicle travel. -->
+  <VF_AdjustSettlementRadiusTooltip>Aproxima os assentamentos de elementos do terreno próximos, para facilitar viagens de veículo.</VF_AdjustSettlementRadiusTooltip>
+  <!-- EN: Coastal weight -->
+  <VF_AdjustCoastWeight>Peso do litoral</VF_AdjustCoastWeight>
+  <!-- EN: River weight -->
+  <VF_AdjustRiverWeight>Peso dos rios</VF_AdjustRiverWeight>
+  <!-- EN: tiles -->
+  <VF_WorldTiles>regiões</VF_WorldTiles>
+  <!-- EN: General -->
+  <VF_SettingsGeneral>Geral</VF_SettingsGeneral>
+  <!-- EN: This action requires a restart to take effect. -->
+  <VF_WillRequireRestart>Esta ação só faz efeito depois de reiniciar.</VF_WillRequireRestart>
+  <!-- EN: Modifiable Settings -->
+  <VF_ModifiableSettings>Opções modificáveis</VF_ModifiableSettings>
+  <!-- EN: Toggle Modifiable Settings. Restarting with this disabled will bypass generation of modifiable settings.\n \nDetermines whether Vehicles should use values from the mod settings or Defs -->
+  <VF_ModifiableSettingsTooltip>Liga ou desliga as opções modificáveis. Reiniciar com isto desligado pula a geração das opções modificáveis.\n \nDefine se os veículos usam os valores das opções do mod ou dos Defs</VF_ModifiableSettingsTooltip>
+  <!-- EN: Use RGB Shaders -->
+  <VF_CustomShaders>Usar shaders RGB</VF_CustomShaders>
+  <!-- EN: Enable use of custom shaders provided by the framework. -->
+  <VF_CustomShadersTooltip>Ativa os shaders personalizados do framework.</VF_CustomShadersTooltip>
+  <!-- EN: Allow Diagonal Rendering -->
+  <VF_DiagonalVehicleRendering>Permitir desenho na diagonal</VF_DiagonalVehicleRendering>
+  <!-- EN: Vehicles that support diagonal rendering will do so when set to diagonal rotations (NorthEast, SouthEast, SouthWest, NorthWest) -->
+  <VF_DiagonalVehicleRenderingTooltip>Veículos que suportam desenho na diagonal vão usá-lo quando estiverem em rotações diagonais (nordeste, sudeste, sudoeste, noroeste)</VF_DiagonalVehicleRenderingTooltip>
+  <!-- EN: Full Vehicle Pathing -->
+  <VF_FullVehiclePathing>Caminho com o veículo inteiro</VF_FullVehiclePathing>
+  <!-- EN: Use the entire hitbox of the vehicle when determining shortest path. Vehicle will still be constrained by its size. -->
+  <VF_FullVehiclePathingTooltip>Usa a área inteira do veículo para calcular o caminho mais curto. O veículo continua limitado pelo próprio tamanho.</VF_FullVehiclePathingTooltip>
+  <!-- EN: Smooth Vehicle Paths -->
+  <VF_SmoothVehiclePathing>Caminhos suaves</VF_SmoothVehiclePathing>
+  <!-- EN: Vehicle pathing will have an additional "turn" cost, preventing unnecessary zig zag patterns from shortest path. -->
+  <VF_SmoothVehiclePathingTooltip>O caminho dos veículos ganha um custo extra para "virar", evitando zigue-zagues desnecessários no caminho mais curto.</VF_SmoothVehiclePathingTooltip>
+  <!-- EN: Hierarchal Pathfinding -->
+  <VF_HierarchalPathfinding>Busca de caminho hierárquica</VF_HierarchalPathfinding>
+  <!-- EN: Use HPA* instead of A* for faster pathfinding. Sacrifices a small amount of pathfinding accuracy for substantially faster pathfinding across large distances. -->
+  <VF_HierarchalPathfindingTooltip>Usa HPA* em vez de A* para achar caminhos mais rápido. Sacrifica um pouco da precisão em troca de buscas muito mais rápidas em distâncias grandes.</VF_HierarchalPathfindingTooltip>
+  <!-- EN: Ignore Biomes on Roads -->
+  <VF_RoadBiomeCostPathing>Ignorar biomas nas estradas</VF_RoadBiomeCostPathing>
+  <!-- EN: Vehicle Caravans moving over roads on the world map ignore biome path costs. -->
+  <VF_RoadBiomeCostPathingTooltip>Caravanas de veículos andando em estradas no mapa-múndi ignoram o custo de deslocamento do bioma.</VF_RoadBiomeCostPathingTooltip>
+  <!-- EN: Multi-Pawn Jobs -->
+  <VF_MultiplePawnsPerJob>Vários personagens por trabalho</VF_MultiplePawnsPerJob>
+  <!-- EN: Allows vehicle related jobs to allow more than 1 pawn to reserve and work on it. Max allowed pawns determined by modders. -->
+  <VF_MultiplePawnsPerJobTooltip>Permite que mais de 1 personagem reserve e trabalhe ao mesmo tempo em tarefas de veículos. O máximo de personagens é definido por quem fez o mod.</VF_MultiplePawnsPerJobTooltip>
+  <!-- EN: Graphics -->
+  <VF_GraphicsSettings>Gráficos</VF_GraphicsSettings>
+  <!-- EN: Performance -->
+  <VF_PerformanceSettings>Desempenho</VF_PerformanceSettings>
+  <!-- EN: Passive Water Waves -->
+  <VF_PassiveWaterWaves>Ondas passivas na água</VF_PassiveWaterWaves>
+  <!-- EN: Generate passive waves when boat is idle. -->
+  <VF_PassiveWaterWavesTooltip>Gera ondas passivas quando o barco está parado.</VF_PassiveWaterWavesTooltip>
+  <!-- EN: Aerial Vehicle Effects -->
+  <VF_AerialVehicleEffects>Efeitos de veículos aéreos</VF_AerialVehicleEffects>
+  <!-- EN: When aerial vehicles takeoff and land, spawn flecks and render overlay textures. -->
+  <VF_AerialVehicleEffectsTooltip>Quando veículos aéreos decolam e pousam, gera partículas e desenha texturas sobrepostas.</VF_AerialVehicleEffectsTooltip>
+  <!-- EN: Melee Damage Multiplier -->
+  <VF_MeleeDamageMultiplier>Multiplicador de dano corpo a corpo</VF_MeleeDamageMultiplier>
+  <!-- EN: Ranged Damage Multiplier -->
+  <VF_RangedDamageMultiplier>Multiplicador de dano a distância</VF_RangedDamageMultiplier>
+  <!-- EN: Explosive Damage Multiplier -->
+  <VF_ExplosiveDamageMultiplier>Multiplicador de dano explosivo</VF_ExplosiveDamageMultiplier>
+  <!-- EN: Vehicle Turrets -->
+  <VF_VehicleTurrets>Torres de veículos</VF_VehicleTurrets>
+  <!-- EN: Turret Overheating -->
+  <VF_TurretOverheatMechanics>Superaquecimento das torres</VF_TurretOverheatMechanics>
+  <!-- EN: Some turrets have overheat mechanics to prevent nonstop firing without consequences. Keep this enabled? -->
+  <VF_TurretOverheatMechanicsTooltip>Algumas torres superaquecem para impedir disparos sem parar e sem consequências. Manter isso ativado?</VF_TurretOverheatMechanicsTooltip>
+  <!-- EN: Fishing -->
+  <VF_Fishing>Pesca</VF_Fishing>
+  <!-- EN: Fishing (Inactive) -->
+  <VF_FishingInactive>Pesca (inativa)</VF_FishingInactive>
+  <!-- EN: Fishing Multiplier -->
+  <VF_FishingMultiplier>Multiplicador de pesca</VF_FishingMultiplier>
+  <!-- EN: Adjust the amount of fish gathered from fishing boat. -->
+  <VF_FishingMultiplierTooltip>Ajusta a quantidade de peixe pega pelo barco de pesca.</VF_FishingMultiplierTooltip>
+  <!-- EN: Fishing Skill -->
+  <VF_FishingSkill>Habilidade de pesca</VF_FishingSkill>
+  <!-- EN: How much exp is given by fishing on a boat -->
+  <VF_FishingSkillTooltip>Quanta experiência a pesca de barco dá</VF_FishingSkillTooltip>
+  <!-- EN: Air -->
+  <VF_AerialVehicles>Ar</VF_AerialVehicles>
+  <!-- EN: Draw Landing Spot -->
+  <VF_DrawLandingGhost>Mostrar local de pouso</VF_DrawLandingGhost>
+  <!-- EN: Draws a transparent 'blueprint' where an aerial vehicle is landing. -->
+  <VF_DrawLandingGhostTooltip>Desenha uma "planta" transparente onde o veículo aéreo vai pousar.</VF_DrawLandingGhostTooltip>
+  <!-- EN: Rockets Burn -->
+  <VF_RocketsBurnRadius>Queima de foguetes</VF_RocketsBurnRadius>
+  <!-- EN: Allow aerial vehicles which support this feature to burn all things within a small radius upon takeoff and landing. -->
+  <VF_RocketsBurnRadiusTooltip>Permite que veículos aéreos com esse recurso queimem tudo num raio pequeno ao decolar e pousar.</VF_RocketsBurnRadiusTooltip>
+  <!-- EN: Dynamic Drawing -->
+  <VF_DynamicDrawing>Desenho dinâmico</VF_DynamicDrawing>
+  <!-- EN: Render aerial vehicles on the world map when zoomed in. -->
+  <VF_DynamicDrawingTooltip>Desenha os veículos aéreos no mapa-múndi com o zoom aproximado.</VF_DynamicDrawingTooltip>
+  <!-- EN: Deploy on Landing -->
+  <VF_DeployOnLanding>Desembarcar ao pousar</VF_DeployOnLanding>
+  <!-- EN: When an aerial vehicle lands all pawns onboard will be unloaded. -->
+  <VF_DeployOnLandingTooltip>Quando um veículo aéreo pousa, todos os personagens a bordo desembarcam.</VF_DeployOnLandingTooltip>
+  <!-- EN: Delay on Landing -->
+  <VF_DelayOnLanding>Atraso ao pousar</VF_DelayOnLanding>
+  <!-- EN: When an aerial vehicle lands the deployment of all pawns will be delayed. -->
+  <VF_DelayOnLandingTooltip>Quando um veículo aéreo pousa, o desembarque dos personagens é atrasado.</VF_DelayOnLandingTooltip>
+  <!-- EN: seconds -->
+  <VF_DelaySeconds>segundos</VF_DelaySeconds>
+  <!-- EN: Air Defenses -->
+  <VF_AirDefensesActive>Defesas antiaéreas</VF_AirDefensesActive>
+  <!-- EN: Certain world objects are able to utilize air defenses to shoot down nearby aircraft. -->
+  <VF_AirDefensesActiveTooltip>Alguns objetos do mapa-múndi podem usar defesas antiaéreas para abater aeronaves próximas.</VF_AirDefensesActiveTooltip>
+  <!-- EN: Combat -->
+  <VF_CombatSettings>Combate</VF_CombatSettings>
+  <!-- EN: Reduce Explosions on Water -->
+  <VF_ShellExplosionsOnWater>Reduzir explosões na água</VF_ShellExplosionsOnWater>
+  <!-- EN: Explosive shells over water have their explosion radius reduced and sound effect changed to a splash. -->
+  <VF_ShellExplosionsOnWaterTooltip>Projéteis explosivos sobre a água têm o raio da explosão reduzido, e o som vira um "tchibum".</VF_ShellExplosionsOnWaterTooltip>
+  <!-- EN: Run Over Pawns -->
+  <VF_RunOverPawns>Atropelar personagens</VF_RunOverPawns>
+  <!-- EN: Vehicles can run over pawns and apply blunt damage based on mass and speed. -->
+  <VF_RunOverPawnsTooltip>Os veículos podem atropelar personagens e causar dano contundente conforme a massa e a velocidade.</VF_RunOverPawnsTooltip>
+  <!-- EN: Friendly Fire Chance -->
+  <VF_ChanceToRunOverFriendlies>Chance de fogo amigo</VF_ChanceToRunOverFriendlies>
+  <!-- EN: Chance to run over friendly pawns. -->
+  <VF_ChanceToRunOverFriendliesTooltip>Chance de atropelar personagens aliados.</VF_ChanceToRunOverFriendliesTooltip>
+  <!-- EN: Stats -->
+  <VF_VehicleStats>Atributos</VF_VehicleStats>
+  <!-- EN: Upgrades -->
+  <VF_Upgrades>Melhorias</VF_Upgrades>
+  <!-- EN: Override Draw Color -->
+  <VF_OverrideDrawColor>Substituir a pintura</VF_OverrideDrawColor>
+  <!-- EN: When any upgrade is applied that comes with a pattern or draw color, the previous paint job will be overridden. -->
+  <VF_OverrideDrawColorTooltip>Quando for aplicada uma melhoria que vem com padrão ou cor própria, a pintura anterior é substituída.</VF_OverrideDrawColorTooltip>
+</LanguageData>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <!-- EN: Board as {0}  [{1}] -->
+  <VF_BoardVehicle>Embarcar como {0}  [{1}]</VF_BoardVehicle>
+  <!-- EN: Board {0} -->
+  <VF_BoardVehicleGroup>Embarcar em {0}</VF_BoardVehicleGroup>
+  <!-- EN: Cannot board {0}. {1} -->
+  <VF_BoardVehicleGroupFail>Não dá para embarcar em {0}. {1}</VF_BoardVehicleGroupFail>
+  <!-- EN: Too many selected -->
+  <VF_BoardFailureTooMany>Seleção grande demais</VF_BoardFailureTooMany>
+  <!-- EN: {0} is incapable of violence -->
+  <VF_BoardFailureNonCombatant>{0} é incapaz de violência</VF_BoardFailureNonCombatant>
+  <!-- EN: Onboard {0} -->
+  <VF_ActivityIconOnBoardShip>A bordo de {0}</VF_ActivityIconOnBoardShip>
+  <!-- EN: Ram {0} -->
+  <VF_IsIncapableOfRamming>Abalroar {0}</VF_IsIncapableOfRamming>
+  <!-- EN: {0} cannot reach this area. -->
+  <VF_CannotMoveToCell>{0} não consegue chegar a esta área.</VF_CannotMoveToCell>
+  <!-- EN: Land Vehicle Here -->
+  <VF_LandVehicleHere>Pousar o veículo aqui</VF_LandVehicleHere>
+  <!-- EN: Land in {0} at edge of map. -->
+  <VF_LandVehicleEdge>Pousar em {0} na borda do mapa.</VF_LandVehicleEdge>
+  <!-- EN: Land in {0} in center. -->
+  <VF_LandVehicleCenter>Pousar em {0} no centro.</VF_LandVehicleCenter>
+  <!-- EN: Land in {0} and choose landing spot. -->
+  <VF_LandVehicleTargetedLanding>Pousar em {0} e escolher o local.</VF_LandVehicleTargetedLanding>
+  <!-- EN: Attack {0}: Choose Landing -->
+  <VF_AttackAndTargetLanding>Atacar {0}: escolher o pouso</VF_AttackAndTargetLanding>
+  <!-- EN: Strafe -->
+  <VF_StrafeRun>Rasante</VF_StrafeRun>
+  <!-- EN: Recon -->
+  <VF_AerialReconSite>Reconhecimento</VF_AerialReconSite>
+  <!-- EN: Can't enter vehicle. Forbidden by ideoligion. -->
+  <VF_CantEnterVehicle_IdeoligionForbids>Não pode entrar no veículo. A ideologia proíbe.</VF_CantEnterVehicle_IdeoligionForbids>
+</LanguageData>

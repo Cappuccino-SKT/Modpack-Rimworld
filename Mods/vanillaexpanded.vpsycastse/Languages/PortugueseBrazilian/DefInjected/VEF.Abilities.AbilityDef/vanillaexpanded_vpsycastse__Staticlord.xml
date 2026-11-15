@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <!-- EN: bolt -->
+  <VPE_Bolt.label>raio</VPE_Bolt.label>
+  <!-- EN: Hurls a weak bolt of electricity to strike a small target area, at a distance scaling with psychic sensitivity. Burns on direct hits and inflicts area EMP damage. -->
+  <VPE_Bolt.description>Arremessa um raio fraco de eletricidade numa pequena área alvo, a uma distância que depende da sensibilidade psíquica. Queima em acertos diretos e causa dano de PEM em área.</VPE_Bolt.description>
+  <!-- EN: Using ability: {0} -->
+  <VPE_Bolt.jobReportString>Usando habilidade: {0}</VPE_Bolt.jobReportString>
+  <!-- EN: bolt -->
+  <VPE_Bolt.verbProperties.label>raio</VPE_Bolt.verbProperties.label>
+  <!-- EN: chain bolt -->
+  <VPE_ChainBolt.label>raio em cadeia</VPE_ChainBolt.label>
+  <!-- EN: Fires a living bolt of electricity at a target which can leak out onto nearby targets, the amount scaling with psychic sensitivity. Inflicts small burns and EMP damage. -->
+  <VPE_ChainBolt.description>Dispara num alvo um raio de eletricidade vivo que pode pular para alvos próximos, numa quantidade que depende da sensibilidade psíquica. Causa queimaduras leves e dano de PEM.</VPE_ChainBolt.description>
+  <!-- EN: Using ability: {0} -->
+  <VPE_ChainBolt.jobReportString>Usando habilidade: {0}</VPE_ChainBolt.jobReportString>
+  <!-- EN: chain bolt -->
+  <VPE_ChainBolt.verbProperties.label>raio em cadeia</VPE_ChainBolt.verbProperties.label>
+  <!-- EN: thunderbolt -->
+  <VPE_Thunderbolt.label>relâmpago</VPE_Thunderbolt.label>
+  <!-- EN: Summons a bolt of lightning to strike a target, inflicting burns on direct hits and a larger area EMP damage. The impact radius scales with the caster’s psychic sensitivity, up to a maximum of 12 cells. -->
+  <VPE_Thunderbolt.description>Invoca um relâmpago para atingir um alvo, causando queimaduras em acertos diretos e dano de PEM numa área maior. O raio do impacto depende da sensibilidade psíquica do conjurador, até no máximo 12 quadrados.</VPE_Thunderbolt.description>
+  <!-- EN: Using ability: {0} -->
+  <VPE_Thunderbolt.jobReportString>Usando habilidade: {0}</VPE_Thunderbolt.jobReportString>
+  <!-- EN: thunderbolt -->
+  <VPE_Thunderbolt.verbProperties.label>relâmpago</VPE_Thunderbolt.verbProperties.label>
+  <!-- EN: static aura -->
+  <VPE_StaticAura.label>aura estática</VPE_StaticAura.label>
+  <!-- EN: The caster designates a nearby target to receive an aura of surging electricity, which will inflict EMP effects on anything foreign that they approach, including structures, pawns and electrical objects. -->
+  <VPE_StaticAura.description>O conjurador escolhe um alvo próximo para receber uma aura de eletricidade pulsante, que causa efeitos de PEM em tudo que for estranho de que ele se aproximar, incluindo estruturas, personagens e objetos elétricos.</VPE_StaticAura.description>
+  <!-- EN: Using ability: {0} -->
+  <VPE_StaticAura.jobReportString>Usando habilidade: {0}</VPE_StaticAura.jobReportString>
+  <!-- EN: static aura -->
+  <VPE_StaticAura.verbProperties.label>aura estática</VPE_StaticAura.verbProperties.label>
+  <!-- EN: recharge -->
+  <VPE_Recharge.label>recarregar</VPE_Recharge.label>
+  <!-- EN: Carefully and delicately tunes a stream of electricity to a touched battery to charge it with 100kW or the equivalent of 100 Wd/s. The duration of charge depends on the caster’s psychic sensitivity. -->
+  <VPE_Recharge.description>Sintoniza com cuidado e delicadeza um fluxo de eletricidade numa bateria tocada, carregando-a com 100 kW, o equivalente a 100 Wd/s. A duração da carga depende da sensibilidade psíquica do conjurador.</VPE_Recharge.description>
+  <!-- EN: Using ability: {0} -->
+  <VPE_Recharge.jobReportString>Usando habilidade: {0}</VPE_Recharge.jobReportString>
+  <!-- EN: recharge -->
+  <VPE_Recharge.verbProperties.label>recarregar</VPE_Recharge.verbProperties.label>
+  <!-- EN: ball lightning -->
+  <VPE_BallLightning.label>raio globular</VPE_BallLightning.label>
+  <!-- EN: The caster compresses a ball of condensed electricity which will slowly move to a designated location. A few seconds after release, it will start discharging into nearby surrounding targets with living bolts of electricity. -->
+  <VPE_BallLightning.description>O conjurador comprime uma bola de eletricidade condensada, que se move devagar até um local designado. Alguns segundos depois de solta, começa a descarregar raios de eletricidade vivos nos alvos ao redor.</VPE_BallLightning.description>
+  <!-- EN: Using ability: {0} -->
+  <VPE_BallLightning.jobReportString>Usando habilidade: {0}</VPE_BallLightning.jobReportString>
+  <!-- EN: ball lightning -->
+  <VPE_BallLightning.verbProperties.label>raio globular</VPE_BallLightning.verbProperties.label>
+  <!-- EN: static pulse -->
+  <VPE_StaticPulse.label>pulso estático</VPE_StaticPulse.label>
+  <!-- EN: The caster dumps a massive amount of voltage into the surrounding air, causing an EMP blast in a huge radius which is otherwise harmless. -->
+  <VPE_StaticPulse.description>O conjurador descarrega uma quantidade enorme de voltagem no ar ao redor, causando uma explosão de PEM num raio gigantesco, que de resto é inofensiva.</VPE_StaticPulse.description>
+  <!-- EN: Using ability: {0} -->
+  <VPE_StaticPulse.jobReportString>Usando habilidade: {0}</VPE_StaticPulse.jobReportString>
+  <!-- EN: static pulse -->
+  <VPE_StaticPulse.verbProperties.label>pulso estático</VPE_StaticPulse.verbProperties.label>
+  <!-- EN: vortex -->
+  <VPE_Vortex.label>vórtice</VPE_Vortex.label>
+  <!-- EN: Manifests a gaping vortex of high-voltage electricity - redirected via skipgate from a nebula storm - at a target area with a large effect. Severely hampers movement and manipulating proportionately, with the strongest effect at the center. -->
+  <VPE_Vortex.description>Manifesta numa área alvo um vórtice escancarado de eletricidade de alta voltagem, redirecionado por portal de salto de uma tempestade de nebulosa, com efeito amplo. Prejudica muito o movimento e a manipulação, de forma proporcional, com o efeito mais forte no centro.</VPE_Vortex.description>
+  <!-- EN: Using ability: {0} -->
+  <VPE_Vortex.jobReportString>Usando habilidade: {0}</VPE_Vortex.jobReportString>
+  <!-- EN: vortex -->
+  <VPE_Vortex.verbProperties.label>vórtice</VPE_Vortex.verbProperties.label>
+  <!-- EN: hurricane -->
+  <VPE_Hurricane.label>furacão</VPE_Hurricane.label>
+  <!-- EN: The caster forcibly changes the weather - using widespread differential-pressure skipgates - to a downpour with hurricane-force winds, which lasts as long as the caster can manage the heat accumulation and can instantly stop at-will. Those outdoors will experience progressively severe limitations to sight, moving and manipulation to the point they come to a complete stop. -->
+  <VPE_Hurricane.description>O conjurador muda à força o clima, usando portais de salto de pressão diferencial espalhados, para um temporal com ventos de furacão, que dura enquanto ele aguentar o acúmulo de calor e pode ser parado na hora quando quiser. Quem estiver ao ar livre sofre limitações cada vez mais severas de visão, movimento e manipulação, até parar por completo.</VPE_Hurricane.description>
+  <!-- EN: Using ability: {0} -->
+  <VPE_Hurricane.jobReportString>Usando habilidade: {0}</VPE_Hurricane.jobReportString>
+  <!-- EN: hurricane -->
+  <VPE_Hurricane.verbProperties.label>furacão</VPE_Hurricane.verbProperties.label>
+  <!-- EN: flashstorm -->
+  <VPE_Flashstorm.label>tempestade de raios</VPE_Flashstorm.label>
+  <!-- EN: Use concentrated differential-pressure skipgates in the atmosphere to generate a localized flashstorm. The storm will strike the area with lightning for some time before dissipating. -->
+  <VPE_Flashstorm.description>Usa portais de salto de pressão diferencial concentrados na atmosfera para gerar uma tempestade de raios localizada. A tempestade castiga a área com raios por algum tempo antes de se dissipar.</VPE_Flashstorm.description>
+  <!-- EN: Using ability: {0} -->
+  <VPE_Flashstorm.jobReportString>Usando habilidade: {0}</VPE_Flashstorm.jobReportString>
+  <!-- EN: flashstorm -->
+  <VPE_Flashstorm.verbProperties.label>tempestade de raios</VPE_Flashstorm.verbProperties.label>
+</LanguageData>

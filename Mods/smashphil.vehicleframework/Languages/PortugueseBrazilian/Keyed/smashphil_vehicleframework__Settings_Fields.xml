@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <!-- EN: Enabled -->
+  <VF_VehicleEnabled>Ativado</VF_VehicleEnabled>
+  <!-- EN: Disabled -->
+  <VF_VehicleDisabled>Desativado</VF_VehicleDisabled>
+  <!-- EN: Player Only -->
+  <VF_VehiclePlayerOnly>Só o jogador</VF_VehiclePlayerOnly>
+  <!-- EN: NPC Only -->
+  <VF_VehicleRaiderOnly>Só NPCs</VF_VehicleRaiderOnly>
+  <!-- EN: If disabled this vehicle will not be available in-game. Applies to both the player and NPC factions. -->
+  <VF_EnableButtonTooltip>Se desativado, este veículo não aparece no jogo. Vale tanto para o jogador quanto para as facções NPC.</VF_EnableButtonTooltip>
+  <!-- EN: Control Type -->
+  <VF_MovementPermissions>Tipo de controle</VF_MovementPermissions>
+  <!-- EN: Navigation -->
+  <VF_NavigationType>Navegação</VF_NavigationType>
+  <!-- EN: Navigation category for the World Map. Dictates when the Vehicle may move on the World Map. -->
+  <VF_NavigationTypeTooltip>Categoria de navegação no mapa-múndi. Define quando o veículo pode se mover no mapa-múndi.</VF_NavigationTypeTooltip>
+  <!-- EN: Can Assign Name -->
+  <VF_Nameable>Pode receber nome</VF_Nameable>
+  <!-- EN: Allow naming of this vehicle. Name will appear over the vehicle and will replace the displayed label. -->
+  <VF_NameableTooltip>Permite dar nome a este veículo. O nome aparece em cima do veículo e substitui o rótulo exibido.</VF_NameableTooltip>
+  <!-- EN: Combat Power -->
+  <VF_CombatPower>Poder de combate</VF_CombatPower>
+  <!-- EN: Combat points vehicle costs in order to generate in an event. -->
+  <VF_CombatPowerTooltip>Pontos de combate que o veículo custa para aparecer num evento.</VF_CombatPowerTooltip>
+  <!-- EN: Caravan -->
+  <VF_CanCaravan>Caravana</VF_CanCaravan>
+  <!-- EN: Vehicle is able to be taken on caravans. -->
+  <VF_CanCaravanTooltip>O veículo pode ser levado em caravanas.</VF_CanCaravanTooltip>
+  <!-- EN: Disabled. {0} -->
+  <VF_SaveableFieldDisabledConditionTooltip>Desativado. {0}</VF_SaveableFieldDisabledConditionTooltip>
+  <!-- EN: Disabled. Compatible mod not in active mod list: {0} -->
+  <VF_DisabledSingleModDependencyTooltip>Desativado. Mod compatível fora da lista de mods ativos: {0}</VF_DisabledSingleModDependencyTooltip>
+  <!-- EN: Disabled. Compatible mods not in active mod list: {0} -->
+  <VF_DisabledMultipleModsDependencyTooltip>Desativado. Mods compatíveis fora da lista de mods ativos: {0}</VF_DisabledMultipleModsDependencyTooltip>
+  <!-- EN: Disabled for this Vehicle Type. -->
+  <VF_SaveableFieldDisabledTooltip>Desativado para este tipo de veículo.</VF_SaveableFieldDisabledTooltip>
+  <!-- EN: Setting is locked for this Vehicle. -->
+  <VF_SaveableFieldLockedTooltip>Opção travada para este veículo.</VF_SaveableFieldLockedTooltip>
+  <!-- EN: Disabled for all Vehicles at this time. -->
+  <VF_DebugDisabledTooltip>Desativado para todos os veículos no momento.</VF_DebugDisabledTooltip>
+  <!-- EN: Disabled in the mod settings. -->
+  <VF_GizmoDisabledTooltip>Desativado nas opções do mod.</VF_GizmoDisabledTooltip>
+  <!-- EN: Pawn Damage -->
+  <VF_CollisionMultiplier>Dano em personagens</VF_CollisionMultiplier>
+  <!-- EN: Multiplier for damage applied to pawns being run over by vehicles. -->
+  <VF_CollisionMultiplierTooltip>Multiplicador do dano causado a personagens atropelados por veículos.</VF_CollisionMultiplierTooltip>
+  <!-- EN: Vehicle Damage -->
+  <VF_CollisionVehicleMultiplier>Dano no veículo</VF_CollisionVehicleMultiplier>
+  <!-- EN: Multiplier for damage applied to the vehicle when running over a pawn. -->
+  <VF_CollisionVehicleMultiplierTooltip>Multiplicador do dano que o veículo sofre ao atropelar um personagem.</VF_CollisionVehicleMultiplierTooltip>
+  <!-- EN: Manhunter Targets -->
+  <VF_ManhunterTargetsVehicle>Alvo de caçadores de homens</VF_ManhunterTargetsVehicle>
+  <!-- EN: Manhunter animals will target this vehicle. -->
+  <VF_ManhunterTargetsVehicleTooltip>Animais caçadores de homens vão atacar este veículo.</VF_ManhunterTargetsVehicleTooltip>
+  <!-- EN: EMP Stuns -->
+  <VF_EMPStuns>PEM atordoa</VF_EMPStuns>
+  <!-- EN: EMP weapons will temporarily disable this vehicle. -->
+  <VF_EMPStunsTooltip>Armas PEM desativam este veículo temporariamente.</VF_EMPStunsTooltip>
+  <!-- EN: Can Adapt -->
+  <VF_CanAdaptToEMP>Pode se adaptar</VF_CanAdaptToEMP>
+  <!-- EN: Can adapt to emp damage and become temporarily immune from stuns. -->
+  <VF_CanAdaptToEMPTooltip>Pode se adaptar ao dano de PEM e ficar temporariamente imune a atordoamentos.</VF_CanAdaptToEMPTooltip>
+  <!-- EN: Vehicle has no stunnable components. -->
+  <VF_VehicleCannotStun>O veículo não tem componentes que possam ser atordoados.</VF_VehicleCannotStun>
+  <!-- EN: Can Fish -->
+  <VF_FishingEnabled>Pode pescar</VF_FishingEnabled>
+  <!-- EN: Enables fishing when stationary over water. -->
+  <VF_FishingEnabledTooltip>Permite pescar quando está parado na água.</VF_FishingEnabledTooltip>
+  <!-- EN: Vehicle Jobs -->
+  <VF_JobLimitations>Trabalhos de veículos</VF_JobLimitations>
+  <!-- EN: Max Workers -->
+  <VF_MaxWorkers>Máximo de trabalhadores</VF_MaxWorkers>
+  <!-- EN: Off Road Multiplier -->
+  <VF_OffRoadMultiplier>Multiplicador fora da estrada</VF_OffRoadMultiplier>
+  <!-- EN: PathCost multiplier for traveling on roads. -->
+  <VF_OffRoadMultiplierTooltip>Multiplicador de custo de caminho para andar nas estradas.</VF_OffRoadMultiplierTooltip>
+  <!-- EN: Winter Speed Multiplier -->
+  <VF_WinterSpeedMultiplier>Multiplicador de velocidade no inverno</VF_WinterSpeedMultiplier>
+  <!-- EN: PathCost multiplier for traveling during winter. -->
+  <VF_WinterSpeedMultiplierTooltip>Multiplicador de custo de caminho para viajar no inverno.</VF_WinterSpeedMultiplierTooltip>
+  <!-- EN: World Speed Multiplier -->
+  <VF_WorldSpeedMultiplier>Multiplicador de velocidade no mundo</VF_WorldSpeedMultiplier>
+  <!-- EN: Multiplier to MoveSpeed when on the world map in a caravan. -->
+  <VF_WorldSpeedMultiplierTooltip>Multiplicador da velocidade quando está numa caravana no mapa-múndi.</VF_WorldSpeedMultiplierTooltip>
+  <!-- EN: Deploy Time -->
+  <VF_DeployTime>Tempo para desdobrar</VF_DeployTime>
+  <!-- EN: Discharge Rate -->
+  <VF_DischargePerTick>Taxa de descarga</VF_DischargePerTick>
+  <!-- EN: Amount per tick in which battery loses its charge. -->
+  <VF_DischargePerTickTooltip>Quanto a bateria perde de carga por tique.</VF_DischargePerTickTooltip>
+  <!-- EN: Charge Rate -->
+  <VF_TicksPerCharge>Taxa de carga</VF_TicksPerCharge>
+  <!-- EN: Charge amount per tick applied to battery. -->
+  <VF_TicksPerChargeTooltip>Quanto de carga a bateria recebe por tique.</VF_TicksPerChargeTooltip>
+  <!-- EN: Not electric powered. -->
+  <VF_NotElectricPowered>Não é movido a eletricidade.</VF_NotElectricPowered>
+  <!-- EN: / day -->
+  <VF_PerDay>/ dia</VF_PerDay>
+  <!-- EN: Fuel -->
+  <VF_Fuel>Combustível</VF_Fuel>
+  <!-- EN: Fuel Consumption Rate -->
+  <VF_FuelConsumptionRate>Taxa de consumo de combustível</VF_FuelConsumptionRate>
+  <!-- EN: Fuel consumed per day.  Idle vehicles consume 50% less fuel. -->
+  <VF_FuelConsumptionRateTooltip>Combustível consumido por dia. Veículos parados gastam 50% menos.</VF_FuelConsumptionRateTooltip>
+  <!-- EN: Fuel Capacity -->
+  <VF_FuelCapacity>Capacidade de combustível</VF_FuelCapacity>
+  <!-- EN: Amount of fuel that can be stored -->
+  <VF_FuelCapacityTooltip>Quanto combustível pode ser guardado</VF_FuelCapacityTooltip>
+  <!-- EN: Fuel World % -->
+  <VF_FuelConsumptionRateWorldMultiplier>% de combustível no mundo</VF_FuelConsumptionRateWorldMultiplier>
+  <!-- EN: Fuel consumption multiplier on the world map -->
+  <VF_FuelConsumptionRateWorldMultiplierTooltip>Multiplicador de consumo de combustível no mapa-múndi</VF_FuelConsumptionRateWorldMultiplierTooltip>
+  <!-- EN: Auto Refuel % -->
+  <VF_AutoRefuelPercent>% de abastecimento automático</VF_AutoRefuelPercent>
+  <!-- EN: Colonists will attempt to refuel the vehicle when fuel gets below this percent. -->
+  <VF_AutoRefuelPercentTooltip>Os colonos vão tentar abastecer o veículo quando o combustível ficar abaixo desta porcentagem.</VF_AutoRefuelPercentTooltip>
+  <!-- EN: Fuel Level Configurable -->
+  <VF_TargetFuelConfigurable>Nível de combustível configurável</VF_TargetFuelConfigurable>
+  <!-- EN: Max fuel level can be configured. -->
+  <VF_TargetFuelConfigurableTooltip>O nível máximo de combustível pode ser configurado.</VF_TargetFuelConfigurableTooltip>
+  <!-- EN: Ambient Heat -->
+  <VF_AmbientHeat>Calor ambiente</VF_AmbientHeat>
+  <!-- EN: Heat emitted when fuel is being consumed. -->
+  <VF_AmbientHeatTooltip>Calor emitido enquanto o combustível é consumido.</VF_AmbientHeatTooltip>
+  <!-- EN: Recon Distance -->
+  <VF_ReconDistance>Distância de reconhecimento</VF_ReconDistance>
+  <!-- EN: Distance in tiles the shuttle will be able to perform recon of a site or settlement. -->
+  <VF_ReconDistanceTooltip>Distância, em regiões, em que o ônibus espacial consegue fazer reconhecimento de um local ou assentamento.</VF_ReconDistanceTooltip>
+  <!-- EN: Fuel Consumption % -->
+  <VF_FuelConsumptionWorld>% de consumo de combustível</VF_FuelConsumptionWorld>
+  <!-- EN: Fuel consumption multiplier on the world map. -->
+  <VF_FuelConsumptionWorldTooltip>Multiplicador de consumo de combustível no mapa-múndi.</VF_FuelConsumptionWorldTooltip>
+  <!-- EN: Fixed Max Distance -->
+  <VF_LaunchFixedMaxDistance>Distância máxima fixa</VF_LaunchFixedMaxDistance>
+  <!-- EN: Set a fixed max distance this vehicle can fly regardless of fuel level. -->
+  <VF_LaunchFixedMaxDistanceTooltip>Define uma distância máxima fixa que este veículo pode voar, independente do combustível.</VF_LaunchFixedMaxDistanceTooltip>
+  <!-- EN: None -->
+  <VF_LaunchFixedMaxDistanceDisabled>Nenhuma</VF_LaunchFixedMaxDistanceDisabled>
+  <!-- EN: Control in Flight -->
+  <VF_ControlInFlight>Controle em voo</VF_ControlInFlight>
+  <!-- EN: Control the aerial vehicle while it is in flight. Allows for changing of flight paths midflight, choosing your landing after loading a map, and strafing maps that have not yet been loaded. -->
+  <VF_ControlInFlightTooltip>Controla o veículo aéreo durante o voo. Permite mudar a rota no meio do caminho, escolher o pouso depois que o mapa carregar e fazer rasantes em mapas que ainda não foram carregados.</VF_ControlInFlightTooltip>
+  <!-- EN: Can Roof Punch -->
+  <VF_CanRoofPunch>Pode furar telhados</VF_CanRoofPunch>
+  <!-- EN: Vehicle can punch through roofs when landing. -->
+  <VF_CanRoofPunchTooltip>O veículo pode atravessar telhados ao pousar.</VF_CanRoofPunchTooltip>
+  <!-- EN: Space Faring -->
+  <VF_SpaceFlight>Viagem espacial</VF_SpaceFlight>
+  <!-- EN: Vehicle is capable of launching to and taking off from space objects. -->
+  <VF_SpaceFlightTooltip>O veículo é capaz de decolar para objetos espaciais e partir deles.</VF_SpaceFlightTooltip>
+  <!-- EN: Signal Jammer -->
+  <VF_SignalJamming>Bloqueador de sinal</VF_SignalJamming>
+  <!-- EN: Vehicle is capable of jamming signals in order to visit certain orbital platforms. -->
+  <VF_SignalJammingTooltip>O veículo é capaz de bloquear sinais para visitar certas plataformas orbitais.</VF_SignalJammingTooltip>
+  <!-- EN: Rate of Climb -->
+  <VF_RateOfClimb>Taxa de subida</VF_RateOfClimb>
+  <!-- EN: Amount the vehicle ascends per tick. -->
+  <VF_RateOfClimbTooltip>Quanto o veículo sobe por tique.</VF_RateOfClimbTooltip>
+  <!-- EN: Max Altitude -->
+  <VF_MaxAltitude>Altitude máxima</VF_MaxAltitude>
+  <!-- EN: Maximum altitude this vehicle can achieve when in flight. -->
+  <VF_MaxAltitudeTooltip>Altitude máxima que este veículo alcança em voo.</VF_MaxAltitudeTooltip>
+  <!-- EN: Max Fall Rate -->
+  <VF_MaxFallRate>Taxa máxima de queda</VF_MaxFallRate>
+  <!-- EN: Max amount this vehicle will descend when shot down or out of fuel. -->
+  <VF_MaxFallRateTooltip>Quanto, no máximo, este veículo desce quando é abatido ou fica sem combustível.</VF_MaxFallRateTooltip>
+  <!-- EN: Instant -->
+  <VF_Instant>Instantâneo</VF_Instant>
+  <!-- EN: Rotatable -->
+  <VF_Rotatable>Giratória</VF_Rotatable>
+  <!-- EN: Whether turret can rotate to aim toward its target, or is static and can only shoot in the direction it's facing. -->
+  <VF_RotatableTooltip>Se a torre pode girar para mirar no alvo ou se é fixa e só atira na direção para onde está virada.</VF_RotatableTooltip>
+  <!-- EN: Magazine Capacity -->
+  <VF_MagazineCapacity>Capacidade do carregador</VF_MagazineCapacity>
+  <!-- EN: How many shots this turret can shoot before having to reload. -->
+  <VF_MagazineCapacityTooltip>Quantos tiros esta torre dá antes de precisar recarregar.</VF_MagazineCapacityTooltip>
+  <!-- EN: Min Range -->
+  <VF_MinRange>Alcance mínimo</VF_MinRange>
+  <!-- EN: The minimum range of this turret. -->
+  <VF_MinRangeTooltip>O alcance mínimo desta torre.</VF_MinRangeTooltip>
+  <!-- EN: Max Range -->
+  <VF_MaxRange>Alcance máximo</VF_MaxRange>
+  <!-- EN: The maximum range of this turret. -->
+  <VF_MaxRangeTooltip>O alcance máximo desta torre.</VF_MaxRangeTooltip>
+  <!-- EN: Warmup Time -->
+  <VF_WarmupTime>Tempo de preparo</VF_WarmupTime>
+  <!-- EN: {0}s -->
+  <VF_WarmupTimeValue>{0}s</VF_WarmupTimeValue>
+  <!-- EN: Amount of time it takes for this turret to shoot. -->
+  <VF_WarmupTimeTooltip>Quanto tempo esta torre leva para atirar.</VF_WarmupTimeTooltip>
+  <!-- EN: Reload Time -->
+  <VF_ReloadTime>Tempo de recarga</VF_ReloadTime>
+  <!-- EN: {0}s -->
+  <VF_ReloadTimeValue>{0}s</VF_ReloadTimeValue>
+  <!-- EN: Amount of time it takes to reload this turret. -->
+  <VF_ReloadTimeTooltip>Quanto tempo leva para recarregar esta torre.</VF_ReloadTimeTooltip>
+  <!-- EN: Rotation Speed -->
+  <VF_RotationSpeed>Velocidade de giro</VF_RotationSpeed>
+  <!-- EN: {0} deg/s -->
+  <VF_RotationSpeedValue>{0} graus/s</VF_RotationSpeedValue>
+  <!-- EN: How quickly this turret rotates to face its target. -->
+  <VF_RotationSpeedTooltip>A rapidez com que esta torre gira para encarar o alvo.</VF_RotationSpeedTooltip>
+  <!-- EN: Firing Modes -->
+  <VF_FireModes>Modos de disparo</VF_FireModes>
+  <!-- EN: Rates of fire this turret can be set to. -->
+  <VF_FireModesTooltip>Cadências de tiro que esta torre pode usar.</VF_FireModesTooltip>
+  <!-- EN: Rate of fire -->
+  <VF_RateOfFire>Cadência de tiro</VF_RateOfFire>
+  <!-- EN: {0} rounds / minute -->
+  <VF_RateOfFireValue>{0} tiros / minuto</VF_RateOfFireValue>
+  <!-- EN: Shots per burst -->
+  <VF_ShotsPerBurst>Tiros por rajada</VF_ShotsPerBurst>
+  <!-- EN: Shot Group -->
+  <VF_ShotGroup>Agrupamento</VF_ShotGroup>
+  <!-- EN: {0} cells -->
+  <VF_ShotGroupValue>{0} quadrados</VF_ShotGroupValue>
+</LanguageData>

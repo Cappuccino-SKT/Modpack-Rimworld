@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <!-- EN: innate mechlink -->
+  <AG_InnateMechlink.label>mecalink inato</AG_InnateMechlink.label>
+  <!-- EN: Carriers of this gene have an innate ability to use mechanitor powers. -->
+  <AG_InnateMechlink.description>Portadores deste gene têm a capacidade inata de usar os poderes de mecanitor.</AG_InnateMechlink.description>
+  <!-- EN: mech -->
+  <AG_InnateMechlink.symbolPack.prefixSymbols.0.symbol>meca</AG_InnateMechlink.symbolPack.prefixSymbols.0.symbol>
+  <!-- EN: hack -->
+  <AG_InnateMechlink.symbolPack.prefixSymbols.1.symbol>hacker</AG_InnateMechlink.symbolPack.prefixSymbols.1.symbol>
+  <!-- EN: anitor -->
+  <AG_InnateMechlink.symbolPack.suffixSymbols.0.symbol>anitor</AG_InnateMechlink.symbolPack.suffixSymbols.0.symbol>
+  <!-- EN: mech conversion -->
+  <AG_MechConversion.label>conversão mecanoide</AG_MechConversion.label>
+  <!-- EN: The carrier of this gene can remotely hack the IFF sensors of a mechanoid to temporarily swap its allegiance. This will last for a day, after which the mechanoid will revert to its former allegiance and attack indiscriminately. -->
+  <AG_MechConversion.description>O portador deste gene consegue invadir remotamente os sensores de identificação de um mecanoide para trocar temporariamente seu lado. Dura um dia; depois o mecanoide volta ao lado anterior e ataca sem distinção.</AG_MechConversion.description>
+  <!-- EN: enhanced bandwidth -->
+  <AG_BandwidthIncrease.label>banda aumentada</AG_BandwidthIncrease.label>
+  <!-- EN: The carrier of this gene will have an innate increased bandwidth. -->
+  <AG_BandwidthIncrease.description>O portador deste gene tem uma banda inata maior.</AG_BandwidthIncrease.description>
+  <!-- EN: greatly enhanced bandwidth -->
+  <AG_BandwidthIncreaseMajor.label>banda muito aumentada</AG_BandwidthIncreaseMajor.label>
+  <!-- EN: The carrier of this gene will have a 35% increased bandwidth. The effect is multiplicative, so it will be less significant at first, but increase as the mechanitor gets more bandwidth. -->
+  <AG_BandwidthIncreaseMajor.description>O portador deste gene tem 35% a mais de banda. O efeito é multiplicativo, então é pequeno no começo, mas cresce conforme o mecanitor ganha mais banda.</AG_BandwidthIncreaseMajor.description>
+  <!-- EN: decreased bandwidth -->
+  <AG_BandwidthDecrease.label>banda reduzida</AG_BandwidthDecrease.label>
+  <!-- EN: The carrier of this gene will have an innate decreased bandwidth. -->
+  <AG_BandwidthDecrease.description>O portador deste gene tem uma banda inata menor.</AG_BandwidthDecrease.description>
+  <!-- EN: summon band node -->
+  <AG_SummonTempBandwidth.label>invocar nó de banda</AG_SummonTempBandwidth.label>
+  <!-- EN: The carrier of this gene can summon a temporary band node that will increase his bandwidth by 10 for a whole week. -->
+  <AG_SummonTempBandwidth.description>O portador deste gene consegue invocar um nó de banda temporário que aumenta a banda dele em 10 por uma semana inteira.</AG_SummonTempBandwidth.description>
+  <!-- EN: bandwidth loop -->
+  <AG_BandwidthLoop.label>laço de banda</AG_BandwidthLoop.label>
+  <!-- EN: The carrier of this gene can psychically create a feedback loop in a mech's connection, overloading its bandwidth and causing it to explode, destroying itself. This explosion will damage anything nearby, with the explosion range depending on the mech's bandwidth. -->
+  <AG_BandwidthLoop.description>O portador deste gene consegue criar psiquicamente um laço de realimentação na conexão de um mecanoide, sobrecarregando sua banda e fazendo-o explodir. A explosão danifica tudo por perto, com alcance que depende da banda do mecanoide.</AG_BandwidthLoop.description>
+  <!-- EN: increased command range -->
+  <AG_IncreasedCommandRange.label>alcance de comando maior</AG_IncreasedCommandRange.label>
+  <!-- EN: The carrier of this gene will have an innate increased command range to draft mechanoids and control them around. -->
+  <AG_IncreasedCommandRange.description>O portador deste gene tem um alcance de comando inato maior para convocar e controlar mecanoides.</AG_IncreasedCommandRange.description>
+  <!-- EN: decreased command range -->
+  <AG_DecreasedCommandRange.label>alcance de comando menor</AG_DecreasedCommandRange.label>
+  <!-- EN: The carrier of this gene will have an innate decreased command range to draft mechanoids and control them around. -->
+  <AG_DecreasedCommandRange.description>O portador deste gene tem um alcance de comando inato menor para convocar e controlar mecanoides.</AG_DecreasedCommandRange.description>
+  <!-- EN: increased fix speed -->
+  <AG_IncreasedMechRepair.label>conserto mais rápido</AG_IncreasedMechRepair.label>
+  <!-- EN: The carrier of this gene will have an innate fix speed bonus when repairing mechanoids. -->
+  <AG_IncreasedMechRepair.description>O portador deste gene tem um bônus inato na velocidade de conserto de mecanoides.</AG_IncreasedMechRepair.description>
+  <!-- EN: decreased fix speed -->
+  <AG_DecreasedMechRepair.label>conserto mais lento</AG_DecreasedMechRepair.label>
+  <!-- EN: The carrier of this gene will have an innate fix speed penalty when repairing mechanoids. -->
+  <AG_DecreasedMechRepair.description>O portador deste gene tem uma penalidade inata na velocidade de conserto de mecanoides.</AG_DecreasedMechRepair.description>
+  <!-- EN: mech repair passion -->
+  <AG_ExpertMechRepair.label>paixão por consertar mecanoides</AG_ExpertMechRepair.label>
+  <!-- EN: The carrier of this gene has genetically enhanced mech repair capabilities, being capable of providing a significant boost to mechanoids that have just been repaired. -->
+  <AG_ExpertMechRepair.description>O portador deste gene tem a capacidade de conserto de mecanoides aprimorada geneticamente e consegue dar um impulso significativo aos mecanoides recém-consertados.</AG_ExpertMechRepair.description>
+  <!-- EN: summon militor -->
+  <AlphaGenes_Animal_SummonMilitor.label>invocar miliciano</AlphaGenes_Animal_SummonMilitor.label>
+  <!-- EN: The carrier of this gene can summon a Militor mechanoid. It will be part of the colony for a period of 1 day, vanishing afterwards. The carrier will need at least 1 mech bandwidth to use this ability. -->
+  <AlphaGenes_Animal_SummonMilitor.description>O portador deste gene consegue invocar um mecanoide miliciano. Ele faz parte da colônia por 1 dia e depois desaparece. O portador precisa de pelo menos 1 de banda mecânica para usar esta habilidade.</AlphaGenes_Animal_SummonMilitor.description>
+  <!-- EN: summon tesseron -->
+  <AlphaGenes_Animal_SummonTesseron.label>invocar tesseron</AlphaGenes_Animal_SummonTesseron.label>
+  <!-- EN: The carrier of this gene can summon a Tesseron mechanoid. It will be part of the colony for a period of 1 day, vanishing afterwards. The carrier will need at least 3 mech bandwidth to use this ability. -->
+  <AlphaGenes_Animal_SummonTesseron.description>O portador deste gene consegue invocar um mecanoide tesseron. Ele faz parte da colônia por 1 dia e depois desaparece. O portador precisa de pelo menos 3 de banda mecânica para usar esta habilidade.</AlphaGenes_Animal_SummonTesseron.description>
+  <!-- EN: summon centipede -->
+  <AlphaGenes_Animal_SummonCentipede.label>invocar centopeia</AlphaGenes_Animal_SummonCentipede.label>
+  <!-- EN: The carrier of this gene can summon a Centipede mechanoid. It will be part of the colony for a period of 1 day, vanishing afterwards. The carrier will need at least 4 mech bandwidth to use this ability. -->
+  <AlphaGenes_Animal_SummonCentipede.description>O portador deste gene consegue invocar um mecanoide centopeia. Ele faz parte da colônia por 1 dia e depois desaparece. O portador precisa de pelo menos 4 de banda mecânica para usar esta habilidade.</AlphaGenes_Animal_SummonCentipede.description>
+</LanguageData>

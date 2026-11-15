@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <!-- EN: Roping animals to vehicles. -->
+  <VF_FormingCaravanStatus_RopingAnimals>Amarrando animais aos veículos.</VF_FormingCaravanStatus_RopingAnimals>
+  <!-- EN: Roping animals to vehicles. (waiting) -->
+  <VF_FormingCaravanStatus_RopingAnimals_Pause>Amarrando animais aos veículos. (esperando)</VF_FormingCaravanStatus_RopingAnimals_Pause>
+  <!-- EN: Boarding. -->
+  <VF_FormingCaravanStatus_BoardVehicles>Embarcando.</VF_FormingCaravanStatus_BoardVehicles>
+  <!-- EN: Boarding. (waiting) -->
+  <VF_FormingCaravanStatus_BoardVehicles_Pause>Embarcando. (esperando)</VF_FormingCaravanStatus_BoardVehicles_Pause>
+  <!-- EN: Leaving. -->
+  <VF_FormingCaravanStatus_Leaving_Vehicles>Partindo.</VF_FormingCaravanStatus_Leaving_Vehicles>
+  <!-- EN: Leaving. (waiting) -->
+  <VF_FormingCaravanStatus_Leaving_Vehicles_Pause>Partindo. (esperando)</VF_FormingCaravanStatus_Leaving_Vehicles_Pause>
+  <!-- EN: Start Engine -->
+  <VF_draftLabel>Ligar o motor</VF_draftLabel>
+  <!-- EN: Operational -->
+  <VF_healthLabel_Healthy>Funcionando</VF_healthLabel_Healthy>
+  <!-- EN: Needs Repairs -->
+  <VF_healthLabel_Injured>Precisa de conserto</VF_healthLabel_Injured>
+  <!-- EN: Inoperable -->
+  <VF_healthLabel_Immobile>Inoperante</VF_healthLabel_Immobile>
+  <!-- EN: Ruined -->
+  <VF_healthLabel_Dead>Destruído</VF_healthLabel_Dead>
+  <!-- EN: Beached -->
+  <VF_healthLabel_Beached>Encalhado</VF_healthLabel_Beached>
+  <!-- EN: Generating Vehicle PathData -->
+  <VF_GeneratingPathData>Gerando dados de caminho dos veículos</VF_GeneratingPathData>
+  <!-- EN: Generating PathGrids -->
+  <VF_GeneratingPathGrids>Gerando grades de caminho</VF_GeneratingPathGrids>
+  <!-- EN: Generating Vehicle Regions -->
+  <VF_GeneratingRegions>Gerando regiões dos veículos</VF_GeneratingRegions>
+</LanguageData>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <!-- EN: standard -->
+  <VVE_FuelEfficiency_Standard.label>padrão</VVE_FuelEfficiency_Standard.label>
+  <!-- EN: Our fuel consumption remains traditional. -->
+  <VVE_FuelEfficiency_Standard.description>Nosso consumo de combustível continua o tradicional.</VVE_FuelEfficiency_Standard.description>
+  <!-- EN: inefficient -->
+  <VVE_FuelEfficiency_Inefficient.label>ineficiente</VVE_FuelEfficiency_Inefficient.label>
+  <!-- EN: Our vehicles have a higher fuel appetite.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt;\n - This precept increases FuelConsumptionRate (if present) on the vehicle by 50%. -->
+  <VVE_FuelEfficiency_Inefficient.description>Nossos veículos têm mais apetite por combustível.\n\n&lt;color=#E5E54C&gt;Efeito no jogo:&lt;/color&gt;\n - Este preceito aumenta em 50% o FuelConsumptionRate do veículo (se houver).</VVE_FuelEfficiency_Inefficient.description>
+  <!-- EN: efficient -->
+  <VVE_FuelEfficiency_Efficient.label>eficiente</VVE_FuelEfficiency_Efficient.label>
+  <!-- EN: Our vehicles are optimized for minimal fuel usage.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt;\n - This precept decreases FuelConsumptionRate (if present) on the vehicle by 50%. -->
+  <VVE_FuelEfficiency_Efficient.description>Nossos veículos são otimizados para gastar o mínimo de combustível.\n\n&lt;color=#E5E54C&gt;Efeito no jogo:&lt;/color&gt;\n - Este preceito reduz em 50% o FuelConsumptionRate do veículo (se houver).</VVE_FuelEfficiency_Efficient.description>
+</LanguageData>

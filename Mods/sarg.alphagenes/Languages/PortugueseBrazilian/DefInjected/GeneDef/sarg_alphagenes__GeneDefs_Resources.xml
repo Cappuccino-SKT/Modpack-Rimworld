@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <!-- EN: mineral absorber -->
+  <AG_MetalEater.label>absorvedor de minerais</AG_MetalEater.label>
+  <!-- EN: Carriers of this gene have a reserve of metallurgic strength that replaces their need to eat traditional food with metals from the ground, having their needs last much longer.\n\nCarriers lose 25% of their minerals to their metabolism per day. -->
+  <AG_MetalEater.description>Portadores deste gene têm uma reserva de força metalúrgica que troca a necessidade de comida comum por metais do solo, e essa reserva dura muito mais.\n\nOs portadores perdem 25% dos minerais para o metabolismo por dia.</AG_MetalEater.description>
+  <!-- EN: A mineral energy reseve used directly by {PAWN_nameDef} to not grow hungry -->
+  <AG_MetalEater.resourceDescription>Uma reserva de energia mineral usada direto por {PAWN_nameDef} para não sentir fome</AG_MetalEater.resourceDescription>
+  <!-- EN: minerals -->
+  <AG_MetalEater.resourceLabel>minerais</AG_MetalEater.resourceLabel>
+  <!-- EN: metal -->
+  <AG_MetalEater.symbolPack.prefixSymbols.0.symbol>metal</AG_MetalEater.symbolPack.prefixSymbols.0.symbol>
+  <!-- EN: poor mineral absorbtion -->
+  <AG_MineralEfficencyPoor.label>absorção mineral ruim</AG_MineralEfficencyPoor.label>
+  <!-- EN: Carriers of this gene have terrible efficiency in converting metals into minerals their body can use. This requires them to consume much more minerals than most. -->
+  <AG_MineralEfficencyPoor.description>Portadores deste gene têm uma eficiência péssima para converter metais em minerais que o corpo consegue usar. Por isso, precisam consumir muito mais minerais que a maioria.</AG_MineralEfficencyPoor.description>
+  <!-- EN: metal -->
+  <AG_MineralEfficencyPoor.symbolPack.prefixSymbols.0.symbol>metal</AG_MineralEfficencyPoor.symbolPack.prefixSymbols.0.symbol>
+  <!-- EN: great mineral absorbtion -->
+  <AG_MineralEfficencyGood.label>ótima absorção mineral</AG_MineralEfficencyGood.label>
+  <!-- EN: Carriers of this gene have amazing efficiency in converting metals into minerals their body can use. This requires them to consume much less metals than most. -->
+  <AG_MineralEfficencyGood.description>Portadores deste gene têm uma eficiência incrível para converter metais em minerais que o corpo consegue usar. Por isso, precisam consumir muito menos metais que a maioria.</AG_MineralEfficencyGood.description>
+  <!-- EN: metal -->
+  <AG_MineralEfficencyGood.symbolPack.prefixSymbols.0.symbol>metal</AG_MineralEfficencyGood.symbolPack.prefixSymbols.0.symbol>
+</LanguageData>

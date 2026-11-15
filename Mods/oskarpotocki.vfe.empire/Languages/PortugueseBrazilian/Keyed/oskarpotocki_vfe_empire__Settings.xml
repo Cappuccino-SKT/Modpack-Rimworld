@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <!-- EN: VFE - Empire -->
+  <VFEE>VFE - Empire</VFEE>
+  <!-- EN: Terrorism Chance Multiplier -->
+  <VFEE.DeserterChance>Multiplicador de chance de terrorismo</VFEE.DeserterChance>
+  <!-- EN: Nobles per title: {0} -->
+  <VFEE.NoblesPerTitle>Nobres por título: {0}</VFEE.NoblesPerTitle>
+  <!-- EN: Responsible for the number of nobles in the hierarchy. By default, one noble for each title (16), not counting the very first one. The fewer nobles, the higher the performance, but the more boring the empire.\n\nDoes not affect the already generated hierarchy. -->
+  <VFEE.NoblesPerTitleDesc>Define a quantidade de nobres na hierarquia. Por padrão, um nobre por título (16), sem contar o primeiro. Quanto menos nobres, melhor o desempenho, mas mais sem graça o império.\n\nNão afeta a hierarquia já gerada.</VFEE.NoblesPerTitleDesc>
+</LanguageData>

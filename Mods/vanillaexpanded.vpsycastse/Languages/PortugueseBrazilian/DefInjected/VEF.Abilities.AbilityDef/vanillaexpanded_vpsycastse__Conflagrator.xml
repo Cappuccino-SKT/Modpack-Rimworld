@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <!-- EN: flameball -->
+  <VPE_Flameball.label>bola de fogo</VPE_Flameball.label>
+  <!-- EN: Throw an orb of condensed flames, similar to a grenade, which explodes upon impact. The range scales with the caster’s psychic sensitivity. -->
+  <VPE_Flameball.description>Arremessa uma esfera de chamas condensadas, como uma granada, que explode no impacto. O alcance depende da sensibilidade psíquica do conjurador.</VPE_Flameball.description>
+  <!-- EN: Using ability: {0} -->
+  <VPE_Flameball.jobReportString>Usando habilidade: {0}</VPE_Flameball.jobReportString>
+  <!-- EN: flameball -->
+  <VPE_Flameball.verbProperties.label>bola de fogo</VPE_Flameball.verbProperties.label>
+  <!-- EN: self explosion -->
+  <VPE_SelfExplosion.label>autoexplosão</VPE_SelfExplosion.label>
+  <!-- EN: Expels pressurized, flammable gas from the caster which immediately ignites. High chance of igniting those in the blast site, but does little damage without harming the caster. -->
+  <VPE_SelfExplosion.description>Expele do conjurador um gás inflamável pressurizado que pega fogo na hora. Grande chance de incendiar quem estiver na área da explosão, mas causa pouco dano, sem ferir o conjurador.</VPE_SelfExplosion.description>
+  <!-- EN: Using ability: {0} -->
+  <VPE_SelfExplosion.jobReportString>Usando habilidade: {0}</VPE_SelfExplosion.jobReportString>
+  <!-- EN: self explosion -->
+  <VPE_SelfExplosion.verbProperties.label>autoexplosão</VPE_SelfExplosion.verbProperties.label>
+  <!-- EN: explosion -->
+  <VPE_Explosion.label>explosão</VPE_Explosion.label>
+  <!-- EN: Ignites a small amount of deepchem underneath the target area, which vents to the surface in an explosion. Burns the area and spills forth excess liquid. -->
+  <VPE_Explosion.description>Inflama uma pequena quantidade de químico profundo sob a área alvo, que sobe à superfície numa explosão. Queima a área e espalha o líquido que sobrar.</VPE_Explosion.description>
+  <!-- EN: Using ability: {0} -->
+  <VPE_Explosion.jobReportString>Usando habilidade: {0}</VPE_Explosion.jobReportString>
+  <!-- EN: explosion -->
+  <VPE_Explosion.verbProperties.label>explosão</VPE_Explosion.verbProperties.label>
+  <!-- EN: fire shield -->
+  <VPE_FireShield.label>escudo de fogo</VPE_FireShield.label>
+  <!-- EN: Creates an aura of blazing flames around the target for a time, preventing them from immolation and igniting any who try to attack them in melee. Duration scales with the caster’s psychic sensitivity. -->
+  <VPE_FireShield.description>Cria uma aura de chamas ardentes ao redor do alvo por um tempo, impedindo que ele pegue fogo e incendiando quem tentar atacá-lo corpo a corpo. A duração depende da sensibilidade psíquica do conjurador.</VPE_FireShield.description>
+  <!-- EN: Using ability: {0} -->
+  <VPE_FireShield.jobReportString>Usando habilidade: {0}</VPE_FireShield.jobReportString>
+  <!-- EN: fire shield -->
+  <VPE_FireShield.verbProperties.label>escudo de fogo</VPE_FireShield.verbProperties.label>
+  <!-- EN: breathe flame -->
+  <VPE_BreatheFlame.label>cuspir fogo</VPE_BreatheFlame.label>
+  <!-- EN: Spews forth flammable liquid which immediately ignites, along with everything the flames touch. -->
+  <VPE_BreatheFlame.description>Expele um líquido inflamável que pega fogo na hora, junto com tudo que as chamas tocarem.</VPE_BreatheFlame.description>
+  <!-- EN: Using ability: {0} -->
+  <VPE_BreatheFlame.jobReportString>Usando habilidade: {0}</VPE_BreatheFlame.jobReportString>
+  <!-- EN: breathe flame -->
+  <VPE_BreatheFlame.verbProperties.label>cuspir fogo</VPE_BreatheFlame.verbProperties.label>
+  <!-- EN: eye blast -->
+  <VPE_EyeBlast.label>raio dos olhos</VPE_EyeBlast.label>
+  <!-- EN: Emulating a star, the caster compresses highly energized gas which escapes in the desired direction, with damage scaling with psychic sensitivity. Ignites a small but distant area. -->
+  <VPE_EyeBlast.description>Imitando uma estrela, o conjurador comprime um gás altamente energizado que escapa na direção desejada, com dano conforme a sensibilidade psíquica. Incendeia uma área pequena, mas distante.</VPE_EyeBlast.description>
+  <!-- EN: Using ability: {0} -->
+  <VPE_EyeBlast.jobReportString>Usando habilidade: {0}</VPE_EyeBlast.jobReportString>
+  <!-- EN: eye blast -->
+  <VPE_EyeBlast.verbProperties.label>raio dos olhos</VPE_EyeBlast.verbProperties.label>
+  <!-- EN: extinguish flames -->
+  <VPE_QuenchFlames.label>apagar chamas</VPE_QuenchFlames.label>
+  <!-- EN: Converts a local deposit of deepchem into fire-retardant foam which sprays forth from the user in a large area. -->
+  <VPE_QuenchFlames.description>Converte um depósito local de químico profundo em espuma antichamas, que jorra do usuário numa área grande.</VPE_QuenchFlames.description>
+  <!-- EN: Using ability: {0} -->
+  <VPE_QuenchFlames.jobReportString>Usando habilidade: {0}</VPE_QuenchFlames.jobReportString>
+  <!-- EN: extinguish flames -->
+  <VPE_QuenchFlames.verbProperties.label>apagar chamas</VPE_QuenchFlames.verbProperties.label>
+  <!-- EN: meteor shower -->
+  <VPE_MeteorShower.label>chuva de meteoros</VPE_MeteorShower.label>
+  <!-- EN: Skips and immolates orbiting meteoroids to strike a designated area. The number of impacts scales with psychic sensitivity. -->
+  <VPE_MeteorShower.description>Faz saltar e incendeia meteoroides em órbita para atingir uma área designada. O número de impactos depende da sensibilidade psíquica.</VPE_MeteorShower.description>
+  <!-- EN: Using ability: {0} -->
+  <VPE_MeteorShower.jobReportString>Usando habilidade: {0}</VPE_MeteorShower.jobReportString>
+  <!-- EN: meteor shower -->
+  <VPE_MeteorShower.verbProperties.label>chuva de meteoros</VPE_MeteorShower.verbProperties.label>
+  <!-- EN: fire beam -->
+  <VPE_FireBeam.label>raio de fogo</VPE_FireBeam.label>
+  <!-- EN: Attempts to recreate the power of a star inside a concentrated column of almost liquidized oxygen. The resulting emission of plasma is so powerful that only the most advanced weapons systems can hope to compare. The long, intense concentration ends with the caster falling into a coma. -->
+  <VPE_FireBeam.description>Tenta recriar o poder de uma estrela dentro de uma coluna concentrada de oxigênio quase liquefeito. A emissão de plasma resultante é tão poderosa que só os sistemas de armas mais avançados chegam perto. A concentração longa e intensa termina com o conjurador em coma.</VPE_FireBeam.description>
+  <!-- EN: Using ability: {0} -->
+  <VPE_FireBeam.jobReportString>Usando habilidade: {0}</VPE_FireBeam.jobReportString>
+  <!-- EN: fire beam -->
+  <VPE_FireBeam.verbProperties.label>raio de fogo</VPE_FireBeam.verbProperties.label>
+  <!-- EN: fire tornado -->
+  <VPE_FlameTornado.label>tornado de fogo</VPE_FlameTornado.label>
+  <!-- EN: Attempts to recreate the power of a star inside a vortex of concentrated oxygen. The mess of reactions occurring creates flammable byproducts in its wake while also leaving its trajectory completely unpredictable. -->
+  <VPE_FlameTornado.description>Tenta recriar o poder de uma estrela dentro de um vórtice de oxigênio concentrado. A bagunça de reações deixa subprodutos inflamáveis pelo caminho e torna a trajetória completamente imprevisível.</VPE_FlameTornado.description>
+  <!-- EN: Using ability: {0} -->
+  <VPE_FlameTornado.jobReportString>Usando habilidade: {0}</VPE_FlameTornado.jobReportString>
+  <!-- EN: fire tornado -->
+  <VPE_FlameTornado.verbProperties.label>tornado de fogo</VPE_FlameTornado.verbProperties.label>
+</LanguageData>

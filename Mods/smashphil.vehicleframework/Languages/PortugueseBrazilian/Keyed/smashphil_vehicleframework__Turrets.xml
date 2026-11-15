@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <!-- EN: Reload -->
+  <VF_ReloadVehicleTurret>Recarregar</VF_ReloadVehicleTurret>
+  <!-- EN: Toggle automatic targeting -->
+  <VF_ToggleAutoTargeting>Ligar/desligar mira automática</VF_ToggleAutoTargeting>
+  <!-- EN: This determines whether the turret will automatically target enemies.  If enabled, any enemies within range will be engaged.\n\nAutomatic targeting is currently {0}. -->
+  <VF_ToggleAutoTargetingDesc>Define se a torre mira sozinha nos inimigos. Se ativada, ataca qualquer inimigo ao alcance.\n\nA mira automática está {0}.</VF_ToggleAutoTargetingDesc>
+  <!-- EN: AutoTargeting is not allowed for this turret. -->
+  <VF_AutoTargetingDisabled>Esta torre não permite mira automática.</VF_AutoTargetingDisabled>
+  <!-- EN: No usable ammo. -->
+  <VF_VehicleTurrets_NoAmmoToReload>Sem munição utilizável.</VF_VehicleTurrets_NoAmmoToReload>
+  <!-- EN: Set auto-reloading level for to {0}. -->
+  <VF_SetReloadLevel>Definir o nível de recarga automática em {0}.</VF_SetReloadLevel>
+  <!-- EN: Configure Ammo Level -->
+  <VF_SetReloadLevelTooltip>Configurar nível de munição</VF_SetReloadLevelTooltip>
+</LanguageData>

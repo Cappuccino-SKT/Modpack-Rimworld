@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <!-- EN: royal address -->
+  <VFEE_RoyalAddress.label>discurso real</VFEE_RoyalAddress.label>
+  <!-- EN: is giving a royal address from the throne.If all goes well, every titled participant will gain a small amount of honor, and they will gain honor for each titled participant. If it goes poorly, the speech will do social damage and will lose honor for each titled participant. The outcome depends on their social abilities. Imperial nobility currently residing in the area will join the speech and count as titled participants. -->
+  <VFEE_RoyalAddress.description>está fazendo um discurso real do trono. Se tudo correr bem, cada participante com título ganha um pouco de honra, e o orador ganha honra por cada participante com título. Se der errado, o discurso causa dano social e o orador perde honra por cada participante com título. O resultado depende das habilidades sociais do orador. Nobres imperiais que estiverem na área participam do discurso e contam como participantes com título.</VFEE_RoyalAddress.description>
+  <!-- EN: bestow: Freeholder -->
+  <VFEE_BestowFreeholder.label>conceder: Proprietário Livre</VFEE_BestowFreeholder.label>
+  <!-- EN: Bestows the Freeholder title on a selected pawn. That pawn receives 1 Honor. Can’t be cast on a pawn that’s already a Freeholder or higher. Has a 3 day cooldown. -->
+  <VFEE_BestowFreeholder.description>Concede o título de Proprietário Livre ao personagem escolhido, que recebe 1 de honra. Não pode ser usado em quem já é Proprietário Livre ou mais. Recarga de 3 dias.</VFEE_BestowFreeholder.description>
+  <!-- EN: bestow: Yeoman -->
+  <VFEE_BestowYeoman.label>conceder: Noviço</VFEE_BestowYeoman.label>
+  <!-- EN: Bestows the Yeoman title on a selected pawn. That pawn now has 7 honor. Can’t be cast on a pawn that’s already a Yeoman or higher. Has a 3 day cooldown. -->
+  <VFEE_BestowYeoman.description>Concede o título de Noviço ao personagem escolhido, que passa a ter 7 de honra. Não pode ser usado em quem já é Noviço ou mais. Recarga de 3 dias.</VFEE_BestowYeoman.description>
+  <!-- EN: bestow: Acolyte -->
+  <VFEE_BestowAcolyte.label>conceder: Acólito</VFEE_BestowAcolyte.label>
+  <!-- EN: Bestows the Acolyte title on a selected pawn. That pawn now has 13 honor. Can’t be cast on a pawn that’s already a Acolyte or higher. Has a 3 day cooldown. -->
+  <VFEE_BestowAcolyte.description>Concede o título de Acólito ao personagem escolhido, que passa a ter 13 de honra. Não pode ser usado em quem já é Acólito ou mais. Recarga de 3 dias.</VFEE_BestowAcolyte.description>
+  <!-- EN: bestow: Knight -->
+  <VFEE_BestowKnight.label>conceder: Cavaleiro</VFEE_BestowKnight.label>
+  <!-- EN: Bestows the Knight/Dame title on a selected pawn. That pawn now has 21 honor. Can’t be cast on a pawn that’s already a Knight/Dame or higher. Has a 3 day cooldown. -->
+  <VFEE_BestowKnight.description>Concede o título de Cavaleiro/Amazona ao personagem escolhido, que passa a ter 21 de honra. Não pode ser usado em quem já é Cavaleiro/Amazona ou mais. Recarga de 3 dias.</VFEE_BestowKnight.description>
+  <!-- EN: bestow: Praetor -->
+  <VFEE_BestowPraetor.label>conceder: Pretor</VFEE_BestowPraetor.label>
+  <!-- EN: Bestows the Praetor title on a selected pawn. That pawn now has 31 honor. Can’t be cast on a pawn that’s already a Praetor or higher. Has a 3 day cooldown. -->
+  <VFEE_BestowPraetor.description>Concede o título de Pretor ao personagem escolhido, que passa a ter 31 de honra. Não pode ser usado em quem já é Pretor ou mais. Recarga de 3 dias.</VFEE_BestowPraetor.description>
+  <!-- EN: bestow: Baron -->
+  <VFEE_BestowBaron.label>conceder: Barão</VFEE_BestowBaron.label>
+  <!-- EN: Bestows the Baron/Baroness title on a selected pawn. That pawn now has 45 honor. Can’t be cast on a pawn that’s already a Baron/Baroness or higher. Has a 3 day cooldown. -->
+  <VFEE_BestowBaron.description>Concede o título de Barão/Baronesa ao personagem escolhido, que passa a ter 45 de honra. Não pode ser usado em quem já é Barão/Baronesa ou mais. Recarga de 3 dias.</VFEE_BestowBaron.description>
+  <!-- EN: bestow: Count -->
+  <VFEE_BestowCount.label>conceder: Arconte</VFEE_BestowCount.label>
+  <!-- EN: Bestows the Count/Countess title on a selected pawn. That pawn now has 45 honor. Can’t be cast on a pawn that’s already a Count/Countess or higher. Has a 3 day cooldown. -->
+  <VFEE_BestowCount.description>Concede o título de Arconte/Arcontessa ao personagem escolhido, que passa a ter 45 de honra. Não pode ser usado em quem já é Arconte/Arcontessa ou mais. Recarga de 3 dias.</VFEE_BestowCount.description>
+</LanguageData>

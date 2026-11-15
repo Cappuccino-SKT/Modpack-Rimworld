@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <!-- EN: animalfeed -->
+  <VRE_AnimalFeed.label>alimentar-se de animal</VRE_AnimalFeed.label>
+  <!-- EN: Bite the target animal and extract hemogen directly from their blood. The animal will lose blood and will be horrified by the interaction, which can result in it lashing out. A fast-acting coagulant will seal the wound to prevent bleeding.\n\nCan only target animals. -->
+  <VRE_AnimalFeed.description>Morde o animal-alvo e extrai hemogênio direto do sangue dele. O animal perde sangue e fica horrorizado com a interação, o que pode fazê-lo atacar. Um coagulante de ação rápida fecha o ferimento para evitar sangramento.\n\nSó pode ter animais como alvo.</VRE_AnimalFeed.description>
+  <!-- EN: corpsefeed -->
+  <VRE_CorpseFeed.label>alimentar-se de cadáver</VRE_CorpseFeed.label>
+  <!-- EN: Bite the target corpse and extract hemogen directly from their blood. The corpse will lose any remaining blood.\n\nCan only target human corpses. -->
+  <VRE_CorpseFeed.description>Morde o cadáver-alvo e extrai hemogênio direto do sangue dele. O cadáver perde todo o sangue que restava.\n\nSó pode ter cadáveres humanos como alvo.</VRE_CorpseFeed.description>
+  <!-- EN: sanguofeed -->
+  <VRE_SanguoFeed.label>alimentar-se de sanguófago</VRE_SanguoFeed.label>
+  <!-- EN: Bite the target and extract hemogen directly from their blood. The target will lose blood and will be insulted by the interaction, but will be otherwise unharmed. A fast-acting coagulant will seal the wound to prevent bleeding.\n\nCan only target hemogenic humans. -->
+  <VRE_SanguoFeed.description>Morde o alvo e extrai hemogênio direto do sangue dele. O alvo perde sangue e fica ofendido com a interação, mas não sofre outros danos. Um coagulante de ação rápida fecha o ferimento para evitar sangramento.\n\nSó pode ter humanos hemogênicos como alvo.</VRE_SanguoFeed.description>
+  <!-- EN: ecstasy -->
+  <VRE_Ecstasy.label>êxtase</VRE_Ecstasy.label>
+  <!-- EN: Grant a target a feeling of extreme ecstasy for a brief duration, which makes them fall head over heels with the caster. -->
+  <VRE_Ecstasy.description>Dá ao alvo uma sensação de êxtase extremo por um curto período, fazendo-o se apaixonar perdidamente por quem usou a habilidade.</VRE_Ecstasy.description>
+  <!-- EN: heart crush -->
+  <VRE_HeartCrush.label>esmagar coração</VRE_HeartCrush.label>
+  <!-- EN: Rip out the heart of an enemy in close proximity, instantly killing them and covering the area in blood. Will only work on creatures with body size of 2 or lower. Bigger creatures will still be heavily damaged. -->
+  <VRE_HeartCrush.description>Arranca o coração de um inimigo bem próximo, matando-o na hora e cobrindo a área de sangue. Só funciona em criaturas de tamanho corporal 2 ou menor. Criaturas maiores ainda sofrem dano pesado.</VRE_HeartCrush.description>
+  <!-- EN: filter infection -->
+  <VRE_FilterInfection.label>filtrar infecção</VRE_FilterInfection.label>
+  <!-- EN: Lay hands on a target and help the target battle their infections. Works on animals or humans. -->
+  <VRE_FilterInfection.description>Impõe as mãos sobre o alvo e o ajuda a combater infecções. Funciona em animais e humanos.</VRE_FilterInfection.description>
+  <!-- EN: hemosmosis -->
+  <VRE_Hemosmosis.label>hemosmose</VRE_Hemosmosis.label>
+  <!-- EN: Suck blood filth from the area around the sanguophage and turn it into hemogen. -->
+  <VRE_Hemosmosis.description>Suga a sujeira de sangue ao redor do sanguófago e a transforma em hemogênio.</VRE_Hemosmosis.description>
+  <!-- EN: resurrect -->
+  <VRE_Resurrect.label>ressuscitar</VRE_Resurrect.label>
+  <!-- EN: Use archites in the bloodstream to infuse a corpse's body with new life, repairing degenerated cell structures and kickstarting vital functions. The older and worse-preserved the corpse is, the more likely it is that they will come back with memory loss or health conditions. This ability seems to exhaust the archites somehow, so it can only be used very rarely. -->
+  <VRE_Resurrect.description>Usa os arquitas da corrente sanguínea para infundir nova vida num cadáver, reparando estruturas celulares degeneradas e reativando as funções vitais. Quanto mais velho e pior conservado o cadáver, maior a chance de voltar com perda de memória ou problemas de saúde. A habilidade parece esgotar os arquitas de algum jeito, então só pode ser usada muito raramente.</VRE_Resurrect.description>
+  <!-- EN: toxic cloud -->
+  <VRE_ToxicCloud.label>nuvem tóxica</VRE_ToxicCloud.label>
+  <!-- EN: Excrete a thick toxic smoke from special organic reservoirs in the lungs. Tox gas is deadly to almost every creature. -->
+  <VRE_ToxicCloud.description>Expele uma fumaça tóxica densa de reservatórios orgânicos especiais nos pulmões. O gás tóxico é mortal para quase todas as criaturas.</VRE_ToxicCloud.description>
+  <!-- EN: viscuous goo -->
+  <VRE_ViscuousGoo.label>gosma viscosa</VRE_ViscuousGoo.label>
+  <!-- EN: Eject a projectile that explodes on impact and creates a large amount of filth that greatly slows down people trying to move through it. -->
+  <VRE_ViscuousGoo.description>Dispara um projétil que explode no impacto e cria muita sujeira, deixando muito mais lento quem tenta passar por ela.</VRE_ViscuousGoo.description>
+</LanguageData>

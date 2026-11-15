@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <!-- EN: fast gestation -->
+  <AG_FastGestation.label>gestação rápida</AG_FastGestation.label>
+  <!-- EN: Carriers of this gene will have shorter gestation periods by 25%. -->
+  <AG_FastGestation.description>Portadores deste gene têm gestações 25% mais curtas.</AG_FastGestation.description>
+  <!-- EN: slow gestation -->
+  <AG_SlowGestation.label>gestação lenta</AG_SlowGestation.label>
+  <!-- EN: Carriers of this gene will have longer gestation periods by 25%. -->
+  <AG_SlowGestation.description>Portadores deste gene têm gestações 25% mais longas.</AG_SlowGestation.description>
+  <!-- EN: reduced fertility -->
+  <AG_ReducedFertile.label>fertilidade reduzida</AG_ReducedFertile.label>
+  <!-- EN: Carriers of this gene have a reduced chance of becoming pregnant or impregnating others. -->
+  <AG_ReducedFertile.description>Portadores deste gene têm menos chance de engravidar ou de engravidar alguém.</AG_ReducedFertile.description>
+  <!-- EN: fertility in darkness -->
+  <AG_FertilityDarkness.label>fertilidade no escuro</AG_FertilityDarkness.label>
+  <!-- EN: Carriers of this gene have an increased chance of becoming pregnant or impregnating others while in darkness (below 50% light level), while having the opposite effects in the light. -->
+  <AG_FertilityDarkness.description>Portadores deste gene têm mais chance de engravidar ou de engravidar alguém no escuro (abaixo de 50% de luz), e o efeito contrário na luz.</AG_FertilityDarkness.description>
+  <!-- EN: fertility in the light -->
+  <AG_FertilityLight.label>fertilidade na luz</AG_FertilityLight.label>
+  <!-- EN: Carriers of this gene have an increased chance of becoming pregnant or impregnating others while in the light (50% light level or above), while having the opposite effects in the dark. -->
+  <AG_FertilityLight.description>Portadores deste gene têm mais chance de engravidar ou de engravidar alguém na luz (50% de luz ou mais), e o efeito contrário no escuro.</AG_FertilityLight.description>
+  <!-- EN: fertility while outdoors -->
+  <AG_FertilityOutdoors.label>fertilidade ao ar livre</AG_FertilityOutdoors.label>
+  <!-- EN: Carriers of this gene have an increased chance of becoming pregnant or impregnating others while outdoors, while having the opposite effects indoors. -->
+  <AG_FertilityOutdoors.description>Portadores deste gene têm mais chance de engravidar ou de engravidar alguém ao ar livre, e o efeito contrário em lugares fechados.</AG_FertilityOutdoors.description>
+  <!-- EN: fertility while indoors -->
+  <AG_FertilityIndoors.label>fertilidade em lugares fechados</AG_FertilityIndoors.label>
+  <!-- EN: Carriers of this gene have an increased chance of becoming pregnant or impregnating others while indoors, while having the opposite effects outdoors. -->
+  <AG_FertilityIndoors.description>Portadores deste gene têm mais chance de engravidar ou de engravidar alguém em lugares fechados, e o efeito contrário ao ar livre.</AG_FertilityIndoors.description>
+  <!-- EN: egg laying -->
+  <AG_EggLaying.label>postura de ovos</AG_EggLaying.label>
+  <!-- EN: Carriers of this gene will reproduce oviparously, which is as disgusting as it sounds. This has its advantages and disadvantages. -->
+  <AG_EggLaying.description>Portadores deste gene se reproduzem botando ovos, o que é tão nojento quanto parece. Isso tem suas vantagens e desvantagens.</AG_EggLaying.description>
+</LanguageData>

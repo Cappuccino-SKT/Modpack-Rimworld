@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <!-- EN: bramble maze -->
+  <VPE_BrambleMaze.label>labirinto de espinheiros</VPE_BrambleMaze.label>
+  <!-- EN: Infuses a fertile area with chaotic life energy, causing it to sprout shoots of brambles that wither after 12 hours. -->
+  <VPE_BrambleMaze.description>Infunde uma área fértil com energia vital caótica, fazendo brotar espinheiros que murcham depois de 12 horas.</VPE_BrambleMaze.description>
+  <!-- EN: Using ability: {0} -->
+  <VPE_BrambleMaze.jobReportString>Usando habilidade: {0}</VPE_BrambleMaze.jobReportString>
+  <!-- EN: bramble maze -->
+  <VPE_BrambleMaze.verbProperties.label>labirinto de espinheiros</VPE_BrambleMaze.verbProperties.label>
+  <!-- EN: crop burst -->
+  <VPE_CropBurst.label>explosão de colheita</VPE_CropBurst.label>
+  <!-- EN: Infuses a fertile area with life energy, causing it to sprout plantable crops that finish growth in relation to the caster’s psychic sensitivity. -->
+  <VPE_CropBurst.description>Infunde uma área fértil com energia vital, fazendo brotar plantações que terminam de crescer conforme a sensibilidade psíquica do conjurador.</VPE_CropBurst.description>
+  <!-- EN: Using ability: {0} -->
+  <VPE_CropBurst.jobReportString>Usando habilidade: {0}</VPE_CropBurst.jobReportString>
+  <!-- EN: crop burst -->
+  <VPE_CropBurst.verbProperties.label>explosão de colheita</VPE_CropBurst.verbProperties.label>
+  <!-- EN: word of animals -->
+  <VPE_WordofAnimals.label>palavra dos animais</VPE_WordofAnimals.label>
+  <!-- EN: Soothe an animal using psychic suggestion, either calming a manhunting animal or taming them. Depending on the psychic sensitivity of the caster and the body size of an animal, the psycast may backfire and turn the animal manhunter. -->
+  <VPE_WordofAnimals.description>Acalma um animal usando sugestão psíquica, seja tranquilizando um caçador de homens, seja domando-o. Conforme a sensibilidade psíquica do conjurador e o tamanho do animal, o poder pode sair pela culatra e transformar o animal num caçador de homens.</VPE_WordofAnimals.description>
+  <!-- EN: Using ability: {0} -->
+  <VPE_WordofAnimals.jobReportString>Usando habilidade: {0}</VPE_WordofAnimals.jobReportString>
+  <!-- EN: word of animals -->
+  <VPE_WordofAnimals.verbProperties.label>palavra dos animais</VPE_WordofAnimals.verbProperties.label>
+  <!-- EN: manhunter pulse -->
+  <VPE_ManhunterPulse.label>pulso caçador de homens</VPE_ManhunterPulse.label>
+  <!-- EN: Drive animals in a large area into a manhunting rage using a psychic pulse, lasting a minute. Considered a declaration of war if it affects the animals in a caravan. -->
+  <VPE_ManhunterPulse.description>Leva os animais de uma área grande a uma fúria de caçador de homens com um pulso psíquico, que dura um minuto. É considerado uma declaração de guerra se afetar os animais de uma caravana.</VPE_ManhunterPulse.description>
+  <!-- EN: Using ability: {0} -->
+  <VPE_ManhunterPulse.jobReportString>Usando habilidade: {0}</VPE_ManhunterPulse.jobReportString>
+  <!-- EN: manhunter pulse -->
+  <VPE_ManhunterPulse.verbProperties.label>pulso caçador de homens</VPE_ManhunterPulse.verbProperties.label>
+  <!-- EN: tree sprout -->
+  <VPE_TreeSprout.label>brotar árvores</VPE_TreeSprout.label>
+  <!-- EN: Infuses a fertile area with potent life energy, causing it to sprout fully grown native trees. The effective radius scales with psychic sensitivity, up to a maximum of 8 tiles. -->
+  <VPE_TreeSprout.description>Infunde uma área fértil com uma energia vital potente, fazendo brotar árvores nativas já adultas. O raio efetivo depende da sensibilidade psíquica, até no máximo 8 quadrados.</VPE_TreeSprout.description>
+  <!-- EN: Using ability: {0} -->
+  <VPE_TreeSprout.jobReportString>Usando habilidade: {0}</VPE_TreeSprout.jobReportString>
+  <!-- EN: tree sprout -->
+  <VPE_TreeSprout.verbProperties.label>brotar árvores</VPE_TreeSprout.verbProperties.label>
+  <!-- EN: shield animals -->
+  <VPE_ShieldAnimals.label>proteger animais</VPE_ShieldAnimals.label>
+  <!-- EN: Generates spherical skipgates on all colony animals in range that sends all incoming and outgoing ground-level projectiles to some distant place. People and items are not affected and the duration scales with the caster’s psychic sensitivity. -->
+  <VPE_ShieldAnimals.description>Gera portais de salto esféricos em todos os animais da colônia ao alcance, que mandam todos os projéteis do nível do chão, entrando ou saindo, para algum lugar distante. Pessoas e itens não são afetados, e a duração depende da sensibilidade psíquica do conjurador.</VPE_ShieldAnimals.description>
+  <!-- EN: Using ability: {0} -->
+  <VPE_ShieldAnimals.jobReportString>Usando habilidade: {0}</VPE_ShieldAnimals.jobReportString>
+  <!-- EN: shield animals -->
+  <VPE_ShieldAnimals.verbProperties.label>proteger animais</VPE_ShieldAnimals.verbProperties.label>
+  <!-- EN: animal allies -->
+  <VPE_AnimalAllies.label>aliados animais</VPE_AnimalAllies.label>
+  <!-- EN: Infuses a large area with harmonic life force that influences animal behavior, causing them to attack those hostile to the caster for a duration scaling with their psychic sensitivity. -->
+  <VPE_AnimalAllies.description>Infunde uma área grande com força vital harmônica que influencia o comportamento dos animais, fazendo-os atacar os hostis ao conjurador por um tempo que depende da sensibilidade psíquica dele.</VPE_AnimalAllies.description>
+  <!-- EN: Using ability: {0} -->
+  <VPE_AnimalAllies.jobReportString>Usando habilidade: {0}</VPE_AnimalAllies.jobReportString>
+  <!-- EN: animal allies -->
+  <VPE_AnimalAllies.verbProperties.label>aliados animais</VPE_AnimalAllies.verbProperties.label>
+  <!-- EN: shrineshield -->
+  <VPE_Shrineshield.label>escudo-santuário</VPE_Shrineshield.label>
+  <!-- EN: Generate a spherical skipgate on a nature shrine that sends any incoming and outgoing projectiles, including mortar shells, to some distant place. People and items are not affected and the size of the sphere depends on the size of the shrine, while duration scales with the caster’s psychic sensitivity. -->
+  <VPE_Shrineshield.description>Gera num santuário da natureza um portal de salto esférico que manda qualquer projétil, entrando ou saindo, incluindo bombas de morteiro, para algum lugar distante. Pessoas e itens não são afetados; o tamanho da esfera depende do tamanho do santuário, e a duração, da sensibilidade psíquica do conjurador.</VPE_Shrineshield.description>
+  <!-- EN: Using ability: {0} -->
+  <VPE_Shrineshield.jobReportString>Usando habilidade: {0}</VPE_Shrineshield.jobReportString>
+  <!-- EN: shrineshield -->
+  <VPE_Shrineshield.verbProperties.label>escudo-santuário</VPE_Shrineshield.verbProperties.label>
+  <!-- EN: essence transfer -->
+  <VPE_EssenceTransfer.label>transferência de essência</VPE_EssenceTransfer.label>
+  <!-- EN: Infuses the life force of another nearby person into a colony animal, linking them and putting the caster in a coma. Should the linked person die, the linked animal will go to their side and transfer their own harmonized life essence to them, dying upon completion. Should the linked animal die first, the effect is lost, and there can only be one link at a time. -->
+  <VPE_EssenceTransfer.description>Infunde a força vital de outra pessoa próxima num animal da colônia, ligando os dois e pondo o conjurador em coma. Se a pessoa ligada morrer, o animal vai até ela e transfere a própria essência vital harmonizada, morrendo ao terminar. Se o animal morrer primeiro, o efeito se perde, e só pode haver um elo de cada vez.</VPE_EssenceTransfer.description>
+  <!-- EN: Using ability: {0} -->
+  <VPE_EssenceTransfer.jobReportString>Usando habilidade: {0}</VPE_EssenceTransfer.jobReportString>
+  <!-- EN: essence transfer -->
+  <VPE_EssenceTransfer.verbProperties.label>transferência de essência</VPE_EssenceTransfer.verbProperties.label>
+  <!-- EN: summon pack -->
+  <VPE_SummonPack.label>invocar matilha</VPE_SummonPack.label>
+  <!-- EN: Sends out a pulse of lifeforce into the region, inducing territorial manhunting aggression into numerous animals that will appear to defend the colony. Once all invaders are defeated, the animals will return to their homes. The relative strength of the creatures summoned is influenced by the caster’s psychic sensitivity. -->
+  <VPE_SummonPack.description>Manda um pulso de força vital pela região, induzindo uma agressividade territorial de caçador de homens em vários animais, que aparecem para defender a colônia. Quando todos os invasores forem derrotados, os animais voltam para casa. A força das criaturas invocadas depende da sensibilidade psíquica do conjurador.</VPE_SummonPack.description>
+  <!-- EN: Using ability: {0} -->
+  <VPE_SummonPack.jobReportString>Usando habilidade: {0}</VPE_SummonPack.jobReportString>
+  <!-- EN: summon pack -->
+  <VPE_SummonPack.verbProperties.label>invocar matilha</VPE_SummonPack.verbProperties.label>
+</LanguageData>

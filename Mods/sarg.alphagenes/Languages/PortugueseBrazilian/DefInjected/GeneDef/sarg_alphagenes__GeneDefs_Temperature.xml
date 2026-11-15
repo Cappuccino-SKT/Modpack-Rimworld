@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <!-- EN: heat torpor -->
+  <AG_HeatSlowness.label>torpor no calor</AG_HeatSlowness.label>
+  <!-- EN: Carriers of this gene move much slower while in temperatures above 40ºC. -->
+  <AG_HeatSlowness.description>Portadores deste gene andam bem mais devagar em temperaturas acima de 40 ºC.</AG_HeatSlowness.description>
+  <!-- EN: warm -->
+  <AG_HeatSlowness.symbolPack.prefixSymbols.0.symbol>quente</AG_HeatSlowness.symbolPack.prefixSymbols.0.symbol>
+  <!-- EN: heat speed -->
+  <AG_HeatSpeed.label>velocidade no calor</AG_HeatSpeed.label>
+  <!-- EN: Carriers of this gene move much faster while in temperatures above 40ºC. -->
+  <AG_HeatSpeed.description>Portadores deste gene andam bem mais rápido em temperaturas acima de 40 ºC.</AG_HeatSpeed.description>
+  <!-- EN: warm -->
+  <AG_HeatSpeed.symbolPack.prefixSymbols.0.symbol>quente</AG_HeatSpeed.symbolPack.prefixSymbols.0.symbol>
+  <!-- EN: cold torpor -->
+  <AG_ColdSlowness.label>torpor no frio</AG_ColdSlowness.label>
+  <!-- EN: Carriers of this gene move much slower while in temperatures below 0ºC. -->
+  <AG_ColdSlowness.description>Portadores deste gene andam bem mais devagar em temperaturas abaixo de 0 ºC.</AG_ColdSlowness.description>
+  <!-- EN: cold -->
+  <AG_ColdSlowness.symbolPack.prefixSymbols.0.symbol>frio</AG_ColdSlowness.symbolPack.prefixSymbols.0.symbol>
+  <!-- EN: cold speed -->
+  <AG_ColdSpeed.label>velocidade no frio</AG_ColdSpeed.label>
+  <!-- EN: Carriers of this gene move much faster while in temperatures below 0ºC. -->
+  <AG_ColdSpeed.description>Portadores deste gene andam bem mais rápido em temperaturas abaixo de 0 ºC.</AG_ColdSpeed.description>
+  <!-- EN: cold -->
+  <AG_ColdSpeed.symbolPack.prefixSymbols.0.symbol>frio</AG_ColdSpeed.symbolPack.prefixSymbols.0.symbol>
+  <!-- EN: heat radiating -->
+  <AG_HeatRadiating.label>irradia calor</AG_HeatRadiating.label>
+  <!-- EN: Carriers of this gene radiate intense heat. -->
+  <AG_HeatRadiating.description>Portadores deste gene irradiam calor intenso.</AG_HeatRadiating.description>
+  <!-- EN: warm -->
+  <AG_HeatRadiating.symbolPack.prefixSymbols.0.symbol>quente</AG_HeatRadiating.symbolPack.prefixSymbols.0.symbol>
+  <!-- EN: cold radiating -->
+  <AG_ColdRadiating.label>irradia frio</AG_ColdRadiating.label>
+  <!-- EN: Carriers of this gene absorb great amounts of heat from their surroundings, freezing the air around them. -->
+  <AG_ColdRadiating.description>Portadores deste gene absorvem muito calor do ambiente, congelando o ar ao redor.</AG_ColdRadiating.description>
+  <!-- EN: cold -->
+  <AG_ColdRadiating.symbolPack.prefixSymbols.0.symbol>frio</AG_ColdRadiating.symbolPack.prefixSymbols.0.symbol>
+</LanguageData>

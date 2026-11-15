@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <!-- EN: neutro pipe -->
+  <VREA_NeutroPipe.label>cano de neutro</VREA_NeutroPipe.label>
+  <!-- EN: Light, sterile pipes for transporting the liquid neutroamine in bulk to and from tanks. -->
+  <VREA_NeutroPipe.description>Canos leves e esterilizados para transportar neutroamina líquida em quantidade de e para os tanques.</VREA_NeutroPipe.description>
+  <!-- EN: hidden neutro pipe -->
+  <VREA_SubterraneanNeutroPipe.label>cano de neutro oculto</VREA_SubterraneanNeutroPipe.label>
+  <!-- EN: Light, sterile pipes for transporting the liquid neutroamine in bulk to and from tanks. This pipe is hidden from view. More expensive to build than regular pipes. -->
+  <VREA_SubterraneanNeutroPipe.description>Canos leves e esterilizados para transportar neutroamina líquida em quantidade de e para os tanques. Este cano fica escondido da vista. Custa mais para construir que os canos comuns.</VREA_SubterraneanNeutroPipe.description>
+  <!-- EN: neutroamine valve -->
+  <VREA_NeutroValve.label>válvula de neutroamina</VREA_NeutroValve.label>
+  <!-- EN: Switches neutroamine flow on/off. -->
+  <VREA_NeutroValve.description>Liga e desliga o fluxo de neutroamina.</VREA_NeutroValve.description>
+  <!-- EN: neutro tank -->
+  <VREA_NeutroTank.label>tanque de neutro</VREA_NeutroTank.label>
+  <!-- EN: A light, sterile liquid storage tank meant for storing neutroamine delivered via neutro pipe network. Usually needed for machinery capable of synthesizing lifeforms, which otherwise consume far too much neutroamine to be reasonably refilled manually. -->
+  <VREA_NeutroTank.description>Um tanque leve e esterilizado para guardar a neutroamina que chega pela rede de canos de neutro. Costuma ser necessário para máquinas que sintetizam formas de vida, que consomem neutroamina demais para serem reabastecidas à mão.</VREA_NeutroTank.description>
+  <!-- EN: neutro tap -->
+  <VREA_NeutroTap.label>torneira de neutro</VREA_NeutroTap.label>
+  <!-- EN: A hopper-like storage basin meant to hold dispensed neutroamine from tanks periodically for use later. -->
+  <VREA_NeutroTap.description>Um reservatório tipo funil que guarda a neutroamina liberada pelos tanques de tempos em tempos para uso posterior.</VREA_NeutroTap.description>
+  <!-- EN: neutro drain -->
+  <VREA_NeutroDrain.label>ralo de neutro</VREA_NeutroDrain.label>
+  <!-- EN: A hopper-like storage basin meant to input neutroamine into the network, filling up connected tanks. -->
+  <VREA_NeutroDrain.description>Um reservatório tipo funil para colocar neutroamina na rede, enchendo os tanques conectados.</VREA_NeutroDrain.description>
+</LanguageData>

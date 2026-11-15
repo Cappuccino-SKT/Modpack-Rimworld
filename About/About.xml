@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+  <name>Ecos da Queda - Tradução PT-BR</name>
+  <author>Felipe</author>
+  <packageId>ecosdaqueda.traducao</packageId>
+  <modVersion>0.1.0</modVersion>
+  <supportedVersions>
+    <li>1.6</li>
+    <li>1.7</li>
+  </supportedVersions>
+  <description>Tradução para português brasileiro dos mods do modpack Ecos da Queda que não têm tradução própria (começando pelos mods de genes: Alpha Genes e Vanilla Races Expanded).
+
+Cada tradução só carrega se o mod correspondente estiver ativo. Coloque em qualquer posição da ordem de carga.</description>
+</ModMetaData>

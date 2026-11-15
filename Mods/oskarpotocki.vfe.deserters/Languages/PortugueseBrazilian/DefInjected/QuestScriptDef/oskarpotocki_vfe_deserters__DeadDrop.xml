@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <VFED_DeadDrop.questDescriptionRules.rulesStrings>
+    <!-- EN: questDescription-&gt;We have received a message from our deserter informant that our order is ready for collection not far from [map_definite]. The items we will find there are:\n\n[itemStashContents]\n\nDue to the value of the items and the fact that [empire_name] will inevitably look for them when they realize they’ve gone missing, we should make our way to the dead drop as soon as possible.\n\nWe should ensure we have enough carry capacity to bring all the items back. -->
+    <li>questDescription-&gt;Recebemos uma mensagem do nosso informante desertor: a encomenda está pronta para ser buscada não muito longe de [map_definite]. Os itens que vamos encontrar lá são:\n\n[itemStashContents]\n\nPelo valor dos itens e porque [empire_name] vai inevitavelmente procurá-los quando perceber o sumiço, devemos ir ao ponto de entrega o quanto antes.\n\nPrecisamos garantir capacidade de carga suficiente para trazer tudo.</li>
+  </VFED_DeadDrop.questDescriptionRules.rulesStrings>
+  <VFED_DeadDrop.questNameRules.rulesStrings>
+    <!-- EN: questName-&gt;Deserter dead drop -->
+    <li>questName-&gt;Ponto de entrega dos desertores</li>
+  </VFED_DeadDrop.questNameRules.rulesStrings>
+  <!-- EN: Quest expired: [resolvedQuestName] -->
+  <VFED_DeadDrop.root.nodes.HiddenDelay.node.nodes.WorldObjectTimeout.node.nodes.Letter.label.slateRef>Missão expirada: [resolvedQuestName]</VFED_DeadDrop.root.nodes.HiddenDelay.node.nodes.WorldObjectTimeout.node.nodes.Letter.label.slateRef>
+  <!-- EN: Intercepted communications indicate the dead drop has been located by [empire_name]. The quest [resolvedQuestName] has expired. -->
+  <VFED_DeadDrop.root.nodes.HiddenDelay.node.nodes.WorldObjectTimeout.node.nodes.Letter.text.slateRef>Comunicações interceptadas indicam que [empire_name] encontrou o ponto de entrega. A missão [resolvedQuestName] expirou.</VFED_DeadDrop.root.nodes.HiddenDelay.node.nodes.WorldObjectTimeout.node.nodes.Letter.text.slateRef>
+</LanguageData>

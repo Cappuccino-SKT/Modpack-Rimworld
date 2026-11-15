@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <!-- EN: glide -->
+  <AG_Hover.label>planar</AG_Hover.label>
+  <!-- EN: Limited flight that allows this colonist to hop and glide small distances over terrain. They will ignore terrain movement costs when moving. -->
+  <AG_Hover.description>Voo limitado que permite a este colono saltitar e planar curtas distâncias sobre o terreno. Ignora o custo de movimento do terreno ao andar.</AG_Hover.description>
+  <!-- EN: water striding -->
+  <AG_WaterStriding.label>passada aquática</AG_WaterStriding.label>
+  <!-- EN: This person moves without movement penalties through water. They will ignore terrain movement costs when moving through watery terrains. -->
+  <AG_WaterStriding.description>Esta pessoa anda na água sem penalidade. Ignora o custo de movimento em terrenos com água.</AG_WaterStriding.description>
+  <!-- EN: hydrogen hover -->
+  <AG_HoverExploder.label>flutuação a hidrogênio</AG_HoverExploder.label>
+  <!-- EN: Limited flight that allows this colonist to hover over terrain. They will ignore terrain movement costs when moving. The hydrogen inside the gas bags will cause this person to blow up when killed. -->
+  <AG_HoverExploder.description>Voo limitado que permite a este colono flutuar sobre o terreno. Ignora o custo de movimento do terreno ao andar. O hidrogênio das bolsas de gás faz esta pessoa explodir quando morre.</AG_HoverExploder.description>
+  <!-- EN: affected by speed burst -->
+  <AG_SpeedBurst.label>afetado por explosão de velocidade</AG_SpeedBurst.label>
+  <!-- EN: This person has been affected by a speed burst, making it move faster for a while. Effects will go away after 1 hour. -->
+  <AG_SpeedBurst.description>Esta pessoa foi afetada por uma explosão de velocidade e anda mais rápido por um tempo. Os efeitos passam depois de 1 hora.</AG_SpeedBurst.description>
+</LanguageData>

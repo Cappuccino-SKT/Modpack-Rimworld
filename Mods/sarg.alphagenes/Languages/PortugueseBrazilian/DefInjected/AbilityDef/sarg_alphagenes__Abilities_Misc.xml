@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <!-- EN: wing-powered jump -->
+  <AG_WingPoweredJump.label>salto com asas</AG_WingPoweredJump.label>
+  <!-- EN: Flap wings to jump a short distance. -->
+  <AG_WingPoweredJump.description>Bate as asas para saltar uma curta distância.</AG_WingPoweredJump.description>
+  <!-- EN: flap wings -->
+  <AG_WingPoweredJump.verbProperties.label>bater as asas</AG_WingPoweredJump.verbProperties.label>
+  <!-- EN: unstable mutation -->
+  <AG_UnstableMutation.label>mutação instável</AG_UnstableMutation.label>
+  <!-- EN: Forces an unstable mutation on the caster's body. This mutation will activate a new random gene for 12 hours. After that period passes, the gene will deactivate. -->
+  <AG_UnstableMutation.description>Força uma mutação instável no corpo do usuário. A mutação ativa um gene aleatório novo por 12 horas. Depois desse tempo, o gene se desativa.</AG_UnstableMutation.description>
+  <!-- EN: pack tactics -->
+  <AG_InsectRally.label>tática de enxame</AG_InsectRally.label>
+  <!-- EN: Secretes a cloud of pheromonal compounds that are irresistible to all insects. They'll feel re-invigorated and strengthened when close to the carrier. -->
+  <AG_InsectRally.description>Libera uma nuvem de compostos feromonais irresistíveis para todos os insetos. Eles se sentem revigorados e fortalecidos perto do portador.</AG_InsectRally.description>
+  <!-- EN: unstable mind -->
+  <AG_UnstableMind.label>mente instável</AG_UnstableMind.label>
+  <!-- EN: Psychically blast the minds of other people, causing mental instability that makes them more prone to mental breaks, and greatly increases their psychic sensitivity. This effects lasts for three hours and can be used on both hostile and friendly targets. -->
+  <AG_UnstableMind.description>Atinge psiquicamente a mente de outras pessoas, causando instabilidade mental que as deixa mais propensas a colapsos e aumenta muito a sensibilidade psíquica delas. O efeito dura três horas e pode ser usado em alvos hostis ou amigos.</AG_UnstableMind.description>
+  <!-- EN: devour brains -->
+  <AG_DevourBrains.label>devorar cérebros</AG_DevourBrains.label>
+  <!-- EN: Devour the brain of an incapacitated but living person, absorbing part of their intellect and gaining a buff that depends on the highest skill of the devoured brain. This obviously kills the target.\n\nOnly one "devour" buff can be active at a time. Using the ability before the 2 day timer refreshes the buff and its duration. -->
+  <AG_DevourBrains.description>Devora o cérebro de uma pessoa incapacitada, mas viva, absorvendo parte do intelecto dela e ganhando um bônus que depende da maior habilidade do cérebro devorado. Obviamente, isso mata o alvo.\n\nSó um bônus de "devorar" pode estar ativo por vez. Usar a habilidade antes de acabar o prazo de 2 dias renova o bônus e a duração.</AG_DevourBrains.description>
+  <!-- EN: gene syphon -->
+  <AG_GeneSyphon.label>sifão genético</AG_GeneSyphon.label>
+  <!-- EN: Forcefully extract a gene from an incapacitated but living person, incorporating it into the caster's xenotype as a xenogene. The gene is chosen at random. This will kill the target. -->
+  <AG_GeneSyphon.description>Extrai à força um gene de uma pessoa incapacitada, mas viva, incorporando-o ao xenotipo do usuário como xenogene. O gene é escolhido aleatoriamente. Isso mata o alvo.</AG_GeneSyphon.description>
+  <!-- EN: tail grapple -->
+  <AG_TailGrapple.label>agarrão de cauda</AG_TailGrapple.label>
+  <!-- EN: Attack a target with a prehensile tail, grappling it and immobilizing it for a short time. -->
+  <AG_TailGrapple.description>Ataca o alvo com uma cauda preênsil, agarrando-o e imobilizando-o por um curto tempo.</AG_TailGrapple.description>
+  <!-- EN: unstable regeneration -->
+  <AG_UnstableRegeneration.label>regeneração instável</AG_UnstableRegeneration.label>
+  <!-- EN: Heals all non-permanent injuries, but ages the user 7 years with each use. If the user ages themselves with this ability beyond their lifespan, they die. -->
+  <AG_UnstableRegeneration.description>Cura todos os ferimentos não permanentes, mas envelhece o usuário 7 anos a cada uso. Se o usuário passar da expectativa de vida por causa desta habilidade, morre.</AG_UnstableRegeneration.description>
+  <!-- EN: adaptive biology -->
+  <AG_AdaptiveBiology.label>biologia adaptativa</AG_AdaptiveBiology.label>
+  <!-- EN: Removes a random trait, and adds a new, random one. -->
+  <AG_AdaptiveBiology.description>Remove um traço aleatório e adiciona um novo, também aleatório.</AG_AdaptiveBiology.description>
+  <!-- EN: superadaptive biology -->
+  <AG_SuperAdaptiveBiology.label>biologia superadaptativa</AG_SuperAdaptiveBiology.label>
+  <!-- EN: Removes five random traits, and adds five new, random ones. -->
+  <AG_SuperAdaptiveBiology.description>Remove cinco traços aleatórios e adiciona cinco novos, também aleatórios.</AG_SuperAdaptiveBiology.description>
+  <!-- EN: psychic absorption -->
+  <AG_PsychicAbsorption.label>absorção psíquica</AG_PsychicAbsorption.label>
+  <!-- EN: Caster will absorb a negative memory from a target, capping out at -40.\n\nAbility works on memories, which are thoughts that expire after time. Situational thoughts, such as "being in terrible pain" won't work. -->
+  <AG_PsychicAbsorption.description>O usuário absorve uma memória negativa do alvo, até no máximo -40.\n\nA habilidade funciona em memórias, que são pensamentos que expiram com o tempo. Pensamentos de situação, como "sentindo uma dor terrível", não funcionam.</AG_PsychicAbsorption.description>
+  <!-- EN: speed burst -->
+  <AG_SpeedBurst.label>explosão de velocidade</AG_SpeedBurst.label>
+  <!-- EN: Makes the caster move faster for a short while. -->
+  <AG_SpeedBurst.description>Faz o usuário se mover mais rápido por um tempo.</AG_SpeedBurst.description>
+</LanguageData>
