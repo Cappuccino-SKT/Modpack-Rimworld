@@ -309,7 +309,7 @@ namespace EcosDaQueda.DebugTools
                 case "weapontags": return EQDebug.WeaponTags(Arg(1));
                 case "kit": return EQDebug.Kit(Arg(1), int.Parse(Arg(2) ?? "20"));
                 case "tradeinfo": return EQDebug.TradeInfo();
-                case "trader": return EQDebug.TraderStock(Arg(1));
+                case "trader": return EQDebug.TraderStock(Arg(1), Arg(2));
                 case "start": return EQDebug.StartInfo();
                 case "modusage": return EQDebug.ModUsage(Arg(1));
                 case "xenogen": return EQDebug.XenoGen(Arg(1), int.Parse(Arg(2) ?? "20"));
@@ -322,6 +322,7 @@ namespace EcosDaQueda.DebugTools
                     return cd.defName + ": no mapa " + all.Sum(t => t.stackCount) + ", na área doméstica " + all.Where(t => cm.areaManager.Home[t.Position]).Sum(t => t.stackCount)
                         + " (+ em cápsulas a cair: " + cm.listerThings.ThingsInGroup(ThingRequestGroup.ActiveTransporter).Count + ")";
                 }
+                case "hive": return Arg(1) == "nature" ? EQDebug.Hive(Arg(2), true) : EQDebug.Hive(Arg(1), false);
                 case "base": return EQDebug.Base(Fac(1));
                 case "permit": return EQDebug.Permit(Arg(1), Arg(2));
                 case "android": return EQDebug.Android(Arg(1) == "fab" && Arg(2) == "awake" ? "fabawake" : Arg(1));

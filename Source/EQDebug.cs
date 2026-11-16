@@ -436,7 +436,7 @@ namespace EcosDaQueda.DebugTools
         }
 
         /// <summary>Gera o estoque de um comerciante (ou de todos os nossos, sem argumento) e resume por tipo.</summary>
-        public static string TraderStock(string arg)
+        public static string TraderStock(string arg, string filtro = null)
         {
             var kinds = arg == null
                 ? DefDatabase<TraderKindDef>.AllDefs.Where(t => t.defName.StartsWith("EQ_")).ToList()
@@ -466,6 +466,9 @@ namespace EcosDaQueda.DebugTools
                 sb.AppendLine("    armas/roupas: " + string.Join(", ", stock.Where(t => t.def.IsWeapon || t.def.IsApparel).Select(t => t.def.defName).Distinct().Take(14)));
                 sb.AppendLine("    outros: " + string.Join(", ", stock.Where(t => !t.def.IsWeapon && !t.def.IsApparel && !t.def.defName.StartsWith("Ammo_"))
                     .GroupBy(t => t.def.defName).OrderByDescending(g => g.Sum(t => t.MarketValue * t.stackCount)).Take(16).Select(g => g.Key + "×" + g.Sum(t => t.stackCount))));
+                if (filtro != null)
+                    sb.AppendLine("    com '" + filtro + "': " + string.Join(", ", stock.Where(t => t.def.defName.IndexOf(filtro, StringComparison.OrdinalIgnoreCase) >= 0)
+                        .GroupBy(t => t.def.defName).Select(g => g.Key + "×" + g.Sum(t => t.stackCount))));
                 if (EcosDaQueda.EQTrade.Dropped.TryGetValue(k, out List<string> dropped)) sb.AppendLine("    tirados da cópia: " + string.Join(", ", dropped));
                 if (stock.Count == 0) problemas++;
                 foreach (Thing t in stock) t.Destroy();
@@ -890,6 +893,32 @@ namespace EcosDaQueda.DebugTools
             }
             sb.Append("problemas=" + problemas);
             return sb.ToString();
+        }
+
+        /// <summary>Recall de colmeia: hive [ThingDef] cria a colmeia perto do centro e a mata com um colono como autor;
+        /// hive nature [ThingDef] mata sem autor (não deve contar). Mostra Fama da Hélice, favor do líder e o total.</summary>
+        public static string Hive(string defName, bool semAutor)
+        {
+            InsectRecallDef d = InsectRecallDef.Current;
+            if (d == null) return "sem InsectRecallDef";
+            ThingDef def = DefDatabase<ThingDef>.GetNamedSilentFail(defName ?? "Hive");
+            if (def == null) return "ThingDef não existe: " + defName;
+            Map map = Find.CurrentMap ?? Find.AnyPlayerHomeMap;
+            Faction helice = EQUtil.MainFaction(d.faction);
+            var rec = WorldComponent_Reputation.Current?.Get(helice);
+            float fama = rec?.fame ?? 0f;
+            var alg = WorldComponent_Allegiance.Current;
+            float favor = alg?.leader?.royalty != null && alg.memberOf != null ? alg.leader.royalty.GetFavor(alg.memberOf) : 0f;
+            Thing t = ThingMaker.MakeThing(def, def.MadeFromStuff ? GenStuff.DefaultStuffFor(def) : null);
+            IntVec3 c = CellFinder.RandomClosewalkCellNear(map.Center, map, 12, x => x.Standable(map) && x.GetFirstBuilding(map) == null);
+            GenSpawn.Spawn(t, c, map);
+            Pawn autor = semAutor ? null : map.mapPawns.FreeColonistsSpawned.FirstOrDefault();
+            var dinfo = new DamageInfo(DamageDefOf.Blunt, 9999f, instigator: autor);
+            t.Kill(dinfo);
+            float favorDepois = alg?.leader?.royalty != null && alg.memberOf != null ? alg.leader.royalty.GetFavor(alg.memberOf) : 0f;
+            return def.defName + " (" + t.GetType().Name + ") morta por " + (autor?.LabelShort ?? "ninguém") + ": conta=" + d.Counts(t)
+                + " | Fama Hélice " + fama.ToString("0.#") + " -> " + (rec?.fame ?? 0f).ToString("0.#")
+                + " | favor do líder " + favor + " -> " + favorDepois + " | colmeias destruídas=" + EQInsects.Destroyed;
         }
 
         /// <summary>Base de uma potência (Custom Base Framework): base &lt;fac&gt; gera o mapa do assentamento mais
