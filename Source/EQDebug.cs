@@ -892,6 +892,71 @@ namespace EcosDaQueda.DebugTools
             return sb.ToString();
         }
 
+        /// <summary>Permissões por cargo: permit [list] | permit buy &lt;defName&gt; | permit use &lt;defName&gt; (pelo menu de ajuda real).</summary>
+        public static string Permit(string action, string name)
+        {
+            var alg = WorldComponent_Allegiance.Current;
+            Pawn l = alg?.leader ?? PawnsFinder.AllMaps_FreeColonists.FirstOrDefault();
+            if (l?.royalty == null) return "sem líder";
+            Map map = l.MapHeld;
+            var sb = new StringBuilder();
+            RoyalTitlePermitDef def = name == null ? null : DefDatabase<RoyalTitlePermitDef>.GetNamedSilentFail(name);
+            if (name != null && def == null) return "permissão não encontrada: " + name;
+            Faction fac = def != null ? Find.FactionManager.FirstFactionOfDef(def.faction) : null;
+            switch (action)
+            {
+                case null:
+                case "list":
+                    break;
+                case "buy":
+                {
+                    int antes = l.royalty.GetPermitPoints(fac);
+                    l.royalty.AddPermit(def, fac);
+                    sb.AppendLine("comprou " + def.defName + ": pontos " + antes + " -> " + l.royalty.GetPermitPoints(fac) + " tem=" + l.royalty.HasPermit(def, fac));
+                    break;
+                }
+                case "use":
+                {
+                    float favorAntes = l.royalty.GetFavor(fac);
+                    int coisasAntes = map.listerThings.AllThings.Count;
+                    int pawnsAntes = map.mapPawns.AllPawnsSpawned.Count(p => p.Faction == fac);
+                    var opts = def.Worker.GetRoyalAidOptions(map, l, fac)?.ToList() ?? new List<FloatMenuOption>();
+                    if (opts.Count == 0) return "sem opção de ajuda para " + def.defName;
+                    FloatMenuOption o = opts[0];
+                    sb.AppendLine("opção: " + o.Label + (o.Disabled ? " (DESATIVADA)" : ""));
+                    if (o.Disabled) break;
+                    o.action?.Invoke();
+                    if (def.Worker is RoyalTitlePermitWorker_Targeted t && Find.Targeter.IsTargeting)
+                    {
+                        IntVec3 cell = CellFinder.RandomClosewalkCellNear(l.Position, map, 6, c => c.Standable(map) && !c.Roofed(map));
+                        Find.Targeter.StopTargeting();
+                        t.OrderForceTarget(new LocalTargetInfo(cell));
+                        sb.AppendLine("alvo: " + cell);
+                    }
+                    sb.AppendLine("favor " + favorAntes + " -> " + l.royalty.GetFavor(fac) + " | coisas no mapa +" + (map.listerThings.AllThings.Count - coisasAntes)
+                        + " | pessoas da potência no mapa " + pawnsAntes + " -> " + map.mapPawns.AllPawnsSpawned.Count(p => p.Faction == fac)
+                        + " | recarga=" + (l.royalty.GetPermit(def, fac)?.OnCooldown ?? false));
+                    break;
+                }
+                default:
+                    return "ação desconhecida: " + action;
+            }
+            foreach (Faction f in Powers)
+            {
+                int noMapa = map.mapPawns.AllPawnsSpawned.Count(p => p.Faction == f || (p.Faction == Faction.OfPlayer && p.kindDef.defaultFactionDef == f.def));
+                RoyalTitle tit = l.royalty.GetCurrentTitleInFaction(f);
+                if (tit == null) { if (noMapa > 0) sb.AppendLine(f.Name + ": " + noMapa + " pessoas no mapa"); continue; }
+                sb.AppendLine("  no mapa: " + noMapa + " pessoas da potência (" + string.Join(", ", map.mapPawns.AllPawnsSpawned
+                    .Where(p => p.Faction == f || (p.Faction == Faction.OfPlayer && p.kindDef.defaultFactionDef == f.def))
+                    .GroupBy(p => p.kindDef.defName + (p.Faction == Faction.OfPlayer ? "(colono)" : "")).Select(g => g.Count() + "x " + g.Key)) + ")");
+                sb.AppendLine(l.LabelShort + " com " + f.Name + ": título=" + tit.def.defName + " favor=" + l.royalty.GetFavor(f) + " pontos=" + l.royalty.GetPermitPoints(f)
+                    + " permissões=[" + string.Join(", ", l.royalty.PermitsFromFaction(f).Select(p => p.Permit.defName)) + "]");
+                sb.AppendLine("  disponíveis: " + string.Join(", ", DefDatabase<RoyalTitlePermitDef>.AllDefs.Where(p => p.faction == f.def)
+                    .Select(p => p.defName.Replace("EQ_Permit_", "") + (p.AvailableForPawn(l, f) ? "+" : "-"))));
+            }
+            return sb.ToString().TrimEnd();
+        }
+
         /// <summary>Questão androide: android [status] | android fab [awake] (estação de criação real) |
         /// android spawn | android awaken | android recruit (desperto dos Fora de Linha vira colono).</summary>
         public static string Android(string action)
