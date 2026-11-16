@@ -313,6 +313,15 @@ namespace EcosDaQueda.DebugTools
                 case "start": return EQDebug.StartInfo();
                 case "modusage": return EQDebug.ModUsage(Arg(1));
                 case "xenogen": return EQDebug.XenoGen(Arg(1), int.Parse(Arg(2) ?? "20"));
+                case "count":
+                {
+                    ThingDef cd = DefDatabase<ThingDef>.GetNamedSilentFail(Arg(1) ?? "");
+                    if (cd == null) return "ThingDef não existe: " + Arg(1);
+                    Map cm = Find.CurrentMap ?? Find.AnyPlayerHomeMap;
+                    var all = cm.listerThings.ThingsOfDef(cd);
+                    return cd.defName + ": no mapa " + all.Sum(t => t.stackCount) + ", na área doméstica " + all.Where(t => cm.areaManager.Home[t.Position]).Sum(t => t.stackCount)
+                        + " (+ em cápsulas a cair: " + cm.listerThings.ThingsInGroup(ThingRequestGroup.ActiveTransporter).Count + ")";
+                }
                 case "base": return EQDebug.Base(Fac(1));
                 case "permit": return EQDebug.Permit(Arg(1), Arg(2));
                 case "android": return EQDebug.Android(Arg(1) == "fab" && Arg(2) == "awake" ? "fabawake" : Arg(1));
