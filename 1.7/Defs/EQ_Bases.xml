@@ -1,0 +1,457 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <!-- Bases das 4 potências (Custom Base Framework). Um plano com factionTags = a nossa FactionDef tira a potência
+       dos planos genéricos do CBF (ver EcosDaQueda-Dev/mods/frameworks/custom-base-framework.md).
+       Os prédios são os do CBF (etiquetas CBF_Vanilla_*); a composição, as defesas e a guarnição são nossas.
+       Sem o CBF, tudo aqui é ignorado (MayRequire) e as bases voltam a ser as do jogo. -->
+
+  <!-- ===================================================================== GUARNIÇÕES -->
+
+  <CustomBaseFramework.PawnListDef MayRequire="EvilEyeGuy.CustomBaseFramework">
+    <defName>EQ_Garrison_Silencio</defName>
+    <label>guarda do arquivo</label>
+    <role>Guard</role>
+    <radius>6</radius>
+    <members>
+      <li><kind>EQ_Silencio_Guardiao</kind><weight>4</weight></li>
+      <li><kind>EQ_Silencio_Acolito</kind><weight>3</weight></li>
+    </members>
+  </CustomBaseFramework.PawnListDef>
+  <CustomBaseFramework.PawnListDef MayRequire="EvilEyeGuy.CustomBaseFramework">
+    <defName>EQ_Garrison_Silencio_Muro</defName>
+    <label>sentinelas da contenção</label>
+    <role>Sentry</role>
+    <radius>4</radius>
+    <members>
+      <li><kind>EQ_Silencio_Guardiao</kind><weight>1</weight></li>
+    </members>
+  </CustomBaseFramework.PawnListDef>
+  <CustomBaseFramework.PawnListDef MayRequire="EvilEyeGuy.CustomBaseFramework">
+    <defName>EQ_Garrison_Silencio_Cobaias</defName>
+    <label>voluntários de pesquisa</label>
+    <role>Civilian</role>
+    <radius>6</radius>
+    <members>
+      <li><kind>EQ_Silencio_Cobaia</kind><weight>1</weight></li>
+    </members>
+  </CustomBaseFramework.PawnListDef>
+
+  <CustomBaseFramework.PawnListDef MayRequire="EvilEyeGuy.CustomBaseFramework">
+    <defName>EQ_Garrison_Helice</defName>
+    <label>segurança corporativa</label>
+    <role>Guard</role>
+    <radius>6</radius>
+    <members>
+      <li><kind>EQ_Helice_Fiscal</kind><weight>4</weight></li>
+      <li><kind>EQ_Helice_Estagiario</kind><weight>3</weight></li>
+    </members>
+  </CustomBaseFramework.PawnListDef>
+  <CustomBaseFramework.PawnListDef MayRequire="EvilEyeGuy.CustomBaseFramework">
+    <defName>EQ_Garrison_Helice_Elite</defName>
+    <label>protótipos em exposição</label>
+    <role>Guard</role>
+    <radius>6</radius>
+    <members>
+      <li><kind>EQ_Helice_Prototipo</kind><weight>1</weight></li>
+    </members>
+  </CustomBaseFramework.PawnListDef>
+
+  <CustomBaseFramework.PawnListDef MayRequire="EvilEyeGuy.CustomBaseFramework">
+    <defName>EQ_Garrison_Forja</defName>
+    <label>turno da fábrica</label>
+    <role>Guard</role>
+    <radius>6</radius>
+    <members>
+      <li><kind>EQ_Forja_Cavaleiro</kind><weight>4</weight></li>
+      <li><kind>EQ_Forja_Aprendiz</kind><weight>3</weight></li>
+      <li><kind>EQ_Forja_Tecnico</kind><weight>1</weight></li>
+    </members>
+  </CustomBaseFramework.PawnListDef>
+  <CustomBaseFramework.PawnListDef MayRequire="EvilEyeGuy.CustomBaseFramework">
+    <defName>EQ_Garrison_Forja_Muro</defName>
+    <label>vigias da linha de montagem</label>
+    <role>Sentry</role>
+    <radius>4</radius>
+    <members>
+      <li><kind>EQ_Forja_Cavaleiro</kind><weight>1</weight></li>
+    </members>
+  </CustomBaseFramework.PawnListDef>
+  <CustomBaseFramework.PawnListDef MayRequire="EvilEyeGuy.CustomBaseFramework">
+    <defName>EQ_Garrison_Forja_Elite</defName>
+    <label>cavaleiros lacrados</label>
+    <role>Guard</role>
+    <radius>6</radius>
+    <members>
+      <li><kind>EQ_Forja_Lacrado</kind><weight>1</weight></li>
+    </members>
+  </CustomBaseFramework.PawnListDef>
+
+  <CustomBaseFramework.PawnListDef MayRequire="EvilEyeGuy.CustomBaseFramework">
+    <defName>EQ_Garrison_Coro</defName>
+    <label>guarda de honra</label>
+    <role>Guard</role>
+    <radius>6</radius>
+    <members>
+      <li><kind>EQ_Coro_Tenor</kind><weight>4</weight></li>
+      <li><kind>EQ_Coro_Corista</kind><weight>3</weight></li>
+    </members>
+  </CustomBaseFramework.PawnListDef>
+  <CustomBaseFramework.PawnListDef MayRequire="EvilEyeGuy.CustomBaseFramework">
+    <defName>EQ_Garrison_Coro_Elite</defName>
+    <label>sopranos da corte</label>
+    <role>Guard</role>
+    <radius>6</radius>
+    <members>
+      <li><kind>EQ_Coro_Soprano</kind><weight>1</weight></li>
+    </members>
+  </CustomBaseFramework.PawnListDef>
+
+  <!-- ===================================================================== SILÊNCIO: arquivo-bunker -->
+  <!-- Bibliotecas, laboratórios, cofres e uma prisão de "voluntários". Pouca lavoura (comem ração). -->
+  <CustomBaseFramework.SettlementPlanDef MayRequire="EvilEyeGuy.CustomBaseFramework">
+    <defName>EQ_Plan_Silencio</defName>
+    <label>arquivo da Ordem</label>
+    <kind>ModernTown</kind>
+    <materialList>CBF_Modern_MaterialList</materialList>
+    <styles><li>CBF_ModernVanilla</li></styles>
+    <factionTags><li>EQ_Faction_Silencio</li></factionTags>
+    <share>1</share>
+    <vehicles>0</vehicles>
+    <defenderPoints>1200</defenderPoints>
+    <wealthFactor>0.2</wealthFactor>
+    <coreSize>70~84</coreSize>
+    <mapSize>200</mapSize>
+    <roadMain>4</roadMain>
+    <roadLane>2</roadLane>
+    <minBuildingGap>1</minBuildingGap>
+    <openTerrain>true</openTerrain>
+    <towerCorner>7</towerCorner>
+    <defendersOnWall>0.2</defendersOnWall>
+    <ideoStyle>true</ideoStyle>
+    <worldTexture>World/WorldObjects/CBF/CBF_ModernVillage</worldTexture>
+    <wdLevel>2</wdLevel>
+    <wards>
+      <li>
+        <kind>Town</kind>
+        <name>Arquivo</name>
+        <label>arquivo</label>
+        <supply>1.2</supply>
+        <roads><li>Concrete</li></roads>
+        <roadEdges><li>PavedTile</li></roadEdges>
+        <walls>
+          <li><piece>CBF_Vanilla_Line_Barricade</piece><weight>1</weight></li>
+        </walls>
+        <emplacements>
+          <li><tag>CBF_Vanilla_SandbagPosition</tag><count>2~3</count></li>
+        </emplacements>
+        <garrison>
+          <li><list>EQ_Garrison_Silencio_Muro</list><count>4~6</count><post>Walkway</post></li>
+          <li><list>EQ_Garrison_Silencio</list><count>6~9</count><post>Inside</post></li>
+          <li><list>EQ_Garrison_Silencio_Cobaias</list><count>2~4</count><post>Inside</post></li>
+        </garrison>
+        <defenses>
+          <li><tag>CBF_Vanilla_Defense_Small</tag><count>2~3</count></li>
+        </defenses>
+        <districts>
+          <li>
+            <name>Acervo</name>
+            <entries>
+              <li><tag>CBF_Vanilla_ResearchCenter</tag><count>1~2</count></li>
+              <li><tag>CBF_Vanilla_Research</tag><count>1~2</count></li>
+              <li><tag>CBF_Vanilla_Outpost_Library</tag><count>2~3</count></li>
+              <li><tag>CBF_Vanilla_Outpost_Study</tag><count>1~2</count></li>
+              <li><tag>CBF_Vanilla_Vault</tag><count>1~2</count></li>
+              <li><tag>CBF_Vanilla_Prison</tag><count>1</count></li>
+              <li><tag>CBF_Vanilla_Hospital</tag><count>0~1</count></li>
+              <li><tag>CBF_Vanilla_Barracks</tag><count>1</count></li>
+              <li><tag>CBF_Vanilla_StorageHall</tag><count>0~1</count></li>
+              <li><tag>CBF_Vanilla_Kitchen</tag><count>1</count></li>
+              <li><tag>CBF_Vanilla_EnergyProduction</tag><count>1~2</count></li>
+              <li><tag>CBF_Vanilla_HouseSmall</tag><count>4~8</count><filler>true</filler></li>
+            </entries>
+          </li>
+        </districts>
+      </li>
+      <li>
+        <kind>Rural</kind>
+        <name>Arredores</name>
+        <supply>1</supply>
+        <roads><li>Concrete</li></roads>
+        <districts>
+          <li>
+            <name>Arredores</name>
+            <entries>
+              <li><tag>CBF_Vanilla_Graveyard</tag><count>1</count></li>
+              <li><tag>CBF_Vanilla_Hydroponics</tag><count>0~1</count></li>
+              <li><tag>CBF_Vanilla_SolarPark</tag><count>0~1</count></li>
+            </entries>
+          </li>
+        </districts>
+      </li>
+    </wards>
+  </CustomBaseFramework.SettlementPlanDef>
+
+  <!-- ===================================================================== HÉLICE: filial corporativa -->
+  <!-- Sede (banco), clínicas, laboratório de drogas, posto de vendas e apartamentos para o "capital humano". -->
+  <CustomBaseFramework.SettlementPlanDef MayRequire="EvilEyeGuy.CustomBaseFramework">
+    <defName>EQ_Plan_Helice</defName>
+    <label>filial da Hélice</label>
+    <kind>ModernTown</kind>
+    <materialList>CBF_Modern_MaterialList</materialList>
+    <styles><li>CBF_ModernVanilla</li></styles>
+    <factionTags><li>EQ_Faction_Helice</li></factionTags>
+    <share>1</share>
+    <vehicles>0~1</vehicles>
+    <defenderPoints>800</defenderPoints>
+    <wealthFactor>0.3</wealthFactor>
+    <coreSize>66~80</coreSize>
+    <mapSize>200</mapSize>
+    <roadMain>5</roadMain>
+    <roadLane>2</roadLane>
+    <minBuildingGap>1</minBuildingGap>
+    <openTerrain>true</openTerrain>
+    <ideoStyle>true</ideoStyle>
+    <worldTexture>World/WorldObjects/CBF/CBF_ModernVillage</worldTexture>
+    <wdLevel>2</wdLevel>
+    <wards>
+      <li>
+        <kind>Town</kind>
+        <name>Sede</name>
+        <label>sede</label>
+        <supply>1.3</supply>
+        <roads><li>Concrete</li></roads>
+        <roadEdges><li>PavedTile</li></roadEdges>
+        <garrison>
+          <li><list>EQ_Garrison_Helice</list><count>7~10</count><post>Inside</post></li>
+          <li><list>EQ_Garrison_Helice_Elite</list><count>1~3</count><post>Inside</post></li>
+        </garrison>
+        <defenses>
+          <li><tag>CBF_Vanilla_Defense_Small</tag><count>2~4</count></li>
+        </defenses>
+        <districts>
+          <li>
+            <name>Filial</name>
+            <entries>
+              <li><tag>CBF_Vanilla_GrandBank</tag><count>1</count></li>
+              <li><tag>CBF_Vanilla_Clinic</tag><count>2~3</count></li>
+              <li><tag>CBF_Vanilla_Hospital</tag><count>1</count></li>
+              <li><tag>CBF_Vanilla_DrugLab</tag><count>1</count></li>
+              <li><tag>CBF_Vanilla_ResearchCenter</tag><count>1</count></li>
+              <li><tag>CBF_Vanilla_TradingPost</tag><count>1</count></li>
+              <li><tag>CBF_Vanilla_ApartmentBlock</tag><count>1</count></li>
+              <li><tag>CBF_Vanilla_TownHouse</tag><count>1~2</count></li>
+              <li><tag>CBF_Vanilla_Tavern</tag><count>0~1</count></li>
+              <li><tag>CBF_Vanilla_EnergyStorage</tag><count>1</count></li>
+              <li><tag>CBF_Vanilla_EnergyProduction</tag><count>1~2</count></li>
+              <li><tag>CBF_Vanilla_HouseLarge</tag><count>3~6</count><filler>true</filler></li>
+            </entries>
+          </li>
+        </districts>
+      </li>
+      <li>
+        <kind>Rural</kind>
+        <name>Cultivo</name>
+        <supply>1</supply>
+        <roads><li>Concrete</li></roads>
+        <districts>
+          <li>
+            <name>Cultivo</name>
+            <fields>
+              <li>
+                <count>2~3</count>
+                <fence>false</fence>
+                <weight>1</weight>
+                <plants>
+                  <li>Plant_Healroot</li>
+                  <li>Plant_Rice</li>
+                </plants>
+                <tags><li>CBF_ModernFarmHouse</li></tags>
+              </li>
+            </fields>
+            <entries>
+              <li><tag>CBF_Vanilla_Hydroponics</tag><count>1</count></li>
+              <li><piece>CBF_Modern_Farmhouse</piece><count>1~2</count></li>
+            </entries>
+          </li>
+        </districts>
+      </li>
+    </wards>
+  </CustomBaseFramework.SettlementPlanDef>
+
+  <!-- ===================================================================== FORJA: fábrica-fortaleza -->
+  <!-- Oficinas, arsenal, quartel, garagem e usina; muralha, torres pesadas e veículos. -->
+  <CustomBaseFramework.SettlementPlanDef MayRequire="EvilEyeGuy.CustomBaseFramework">
+    <defName>EQ_Plan_Forja</defName>
+    <label>forja-fábrica</label>
+    <kind>ModernTown</kind>
+    <materialList>CBF_Modern_MaterialList</materialList>
+    <styles><li>CBF_ModernVanilla</li></styles>
+    <factionTags><li>EQ_Faction_Forja</li></factionTags>
+    <share>1</share>
+    <vehicles>1~3</vehicles>
+    <defenderPoints>1400</defenderPoints>
+    <wealthFactor>0.25</wealthFactor>
+    <coreSize>80~96</coreSize>
+    <mapSize>225</mapSize>
+    <roadMain>6</roadMain>
+    <roadLane>2</roadLane>
+    <minBuildingGap>0</minBuildingGap>
+    <openTerrain>true</openTerrain>
+    <towerCorner>7</towerCorner>
+    <defendersOnWall>0.3</defendersOnWall>
+    <ideoStyle>true</ideoStyle>
+    <worldTexture>World/WorldObjects/CBF/CBF_ModernCity</worldTexture>
+    <wdLevel>3</wdLevel>
+    <wards>
+      <li>
+        <kind>Town</kind>
+        <name>Fabrica</name>
+        <label>fábrica</label>
+        <supply>1.2</supply>
+        <roads><li>Concrete</li></roads>
+        <roadEdges><li>PavedTile</li></roadEdges>
+        <walls>
+          <li><piece>CBF_Vanilla_Line_Sandbag</piece><weight>0.5</weight></li>
+          <li><piece>CBF_Vanilla_Line_Barricade</piece><weight>0.5</weight></li>
+        </walls>
+        <emplacements>
+          <li><tag>CBF_Vanilla_SandbagPosition</tag><count>3~5</count></li>
+        </emplacements>
+        <garrison>
+          <li><list>EQ_Garrison_Forja_Muro</list><count>6~10</count><post>Walkway</post></li>
+          <li><list>EQ_Garrison_Forja</list><count>3~5</count><post>Gate</post><fixed>true</fixed></li>
+          <li><list>EQ_Garrison_Forja</list><count>6~10</count><post>Inside</post></li>
+          <li><list>EQ_Garrison_Forja_Elite</list><count>1~2</count><post>Inside</post></li>
+        </garrison>
+        <defenses>
+          <li><tag>CBF_Vanilla_Defense_Small</tag><count>2~4</count></li>
+        </defenses>
+        <districts>
+          <li>
+            <name>Linha</name>
+            <entries>
+              <li><tag>CBF_Vanilla_Machining</tag><count>2~3</count></li>
+              <li><tag>CBF_Vanilla_Smithy</tag><count>1~2</count></li>
+              <li><tag>CBF_Vanilla_Workhall</tag><count>1</count></li>
+              <li><tag>CBF_Vanilla_Armory</tag><count>1</count></li>
+              <li><tag>CBF_Vanilla_PrestigeArmory</tag><count>0~1</count></li>
+              <li><tag>CBF_Vanilla_CommandCenter</tag><count>1</count></li>
+              <li><tag>CBF_Vanilla_Barracks</tag><count>1~2</count></li>
+              <li><tag>CBF_Vanilla_StorageHall</tag><count>1~2</count></li>
+              <li MayRequire="OskarPotocki.VanillaVehiclesExpanded"><tag>CBF_Vanilla_Garage</tag><count>1~2</count></li>
+              <li MayRequire="OskarPotocki.VanillaVehiclesExpanded"><tag>CBF_Vanilla_MotorPool</tag><count>0~1</count></li>
+              <li><tag>CBF_Vanilla_EnergyProduction</tag><count>2~3</count></li>
+              <li><tag>CBF_Vanilla_EnergyStorage</tag><count>1~2</count></li>
+              <li><tag>CBF_Vanilla_Kitchen</tag><count>1</count></li>
+              <li><tag>CBF_Vanilla_HouseSmall</tag><count>6~10</count><filler>true</filler></li>
+            </entries>
+          </li>
+        </districts>
+      </li>
+      <li>
+        <kind>Rural</kind>
+        <name>Patio</name>
+        <supply>1</supply>
+        <roads><li>Concrete</li></roads>
+        <districts>
+          <li>
+            <name>Patio</name>
+            <entries>
+              <li><tag>CBF_Vanilla_Defence_Large</tag><count>2~4</count></li>
+              <li><tag>CBF_Vanilla_WindPark</tag><count>1~2</count></li>
+              <li><tag>CBF_Vanilla_SolarPark</tag><count>0~1</count></li>
+            </entries>
+          </li>
+        </districts>
+      </li>
+    </wards>
+  </CustomBaseFramework.SettlementPlanDef>
+
+  <!-- ===================================================================== CORO: corte -->
+  <!-- Palácio (parlamento), salões de concerto, tabernas, casas nobres, cervejaria, tesouro. Muita lavoura. -->
+  <CustomBaseFramework.SettlementPlanDef MayRequire="EvilEyeGuy.CustomBaseFramework">
+    <defName>EQ_Plan_Coro</defName>
+    <label>corte do Coro</label>
+    <kind>ModernTown</kind>
+    <materialList>CBF_Modern_MaterialList</materialList>
+    <styles><li>CBF_ModernVanilla</li></styles>
+    <factionTags><li>EQ_Faction_Coro</li></factionTags>
+    <share>1</share>
+    <vehicles>0</vehicles>
+    <defenderPoints>1600</defenderPoints>
+    <wealthFactor>0.35</wealthFactor>
+    <coreSize>70~84</coreSize>
+    <mapSize>200</mapSize>
+    <roadMain>5</roadMain>
+    <roadLane>2</roadLane>
+    <minBuildingGap>1</minBuildingGap>
+    <openTerrain>true</openTerrain>
+    <ideoStyle>true</ideoStyle>
+    <worldTexture>World/WorldObjects/CBF/CBF_ModernVillage</worldTexture>
+    <wdLevel>2</wdLevel>
+    <wards>
+      <li>
+        <kind>Town</kind>
+        <name>Corte</name>
+        <label>corte</label>
+        <supply>1.3</supply>
+        <roads><li>Concrete</li></roads>
+        <roadEdges><li>PavedTile</li></roadEdges>
+        <garrison>
+          <li><list>EQ_Garrison_Coro</list><count>7~10</count><post>Inside</post></li>
+          <li><list>EQ_Garrison_Coro_Elite</list><count>1~3</count><post>Inside</post></li>
+        </garrison>
+        <defenses>
+          <li><tag>CBF_Vanilla_Defense_Small</tag><count>1~2</count></li>
+        </defenses>
+        <districts>
+          <li>
+            <name>Corte</name>
+            <entries>
+              <li><tag>CBF_Vanilla_Parliament</tag><count>1</count></li>
+              <li><tag>CBF_Vanilla_Church</tag><count>1</count></li>
+              <li><tag>CBF_Vanilla_GameHall</tag><count>1~2</count></li>
+              <li><tag>CBF_Vanilla_Tavern</tag><count>1~2</count></li>
+              <li><tag>CBF_Vanilla_TownHouse</tag><count>2~3</count></li>
+              <li><tag>CBF_Vanilla_GrandBank</tag><count>0~1</count></li>
+              <li><tag>CBF_Vanilla_PrestigeArmory</tag><count>1</count></li>
+              <li><tag>CBF_Vanilla_Brewery</tag><count>1</count></li>
+              <li><tag>CBF_Vanilla_Kitchen</tag><count>1</count></li>
+              <li><tag>CBF_Vanilla_TailorShop</tag><count>0~1</count></li>
+              <li><tag>CBF_Vanilla_EnergyProduction</tag><count>1</count></li>
+              <li><tag>CBF_Vanilla_HouseLarge</tag><count>4~8</count><filler>true</filler></li>
+            </entries>
+          </li>
+        </districts>
+      </li>
+      <li>
+        <kind>Rural</kind>
+        <name>Campos</name>
+        <supply>1.2</supply>
+        <roads><li>Concrete</li></roads>
+        <districts>
+          <li>
+            <name>Campos</name>
+            <fields>
+              <li>
+                <count>2~4</count>
+                <fence>false</fence>
+                <weight>1</weight>
+                <plants>
+                  <li>Plant_Rice</li>
+                  <li>Plant_Corn</li>
+                  <li>Plant_Potato</li>
+                </plants>
+                <tags><li>CBF_ModernFarmHouse</li></tags>
+              </li>
+            </fields>
+            <entries>
+              <li><piece>CBF_Modern_Farmhouse</piece><count>2~3</count></li>
+              <li><tag>CBF_Vanilla_Graveyard</tag><count>0~1</count></li>
+            </entries>
+          </li>
+        </districts>
+      </li>
+    </wards>
+  </CustomBaseFramework.SettlementPlanDef>
+</Defs>
