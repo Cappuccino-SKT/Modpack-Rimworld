@@ -203,6 +203,40 @@
           <li>EQ_Roupa_HeliceElite</li>
         </apparelTags>
       </li>
+          <!-- A colmeia sem recall: a Hélice nega a patente, mas vende o núcleo. -->
+      <li Class="StockGenerator_MultiDef" MayRequire="OskarPotocki.VFE.Insectoid2">
+        <thingDefs>
+          <li>VFEI2_PherocoreSorne</li>
+          <li>VFEI2_PherocoreNuchadus</li>
+          <li>VFEI2_PherocoreChelis</li>
+          <li>VFEI2_PherocoreKemian</li>
+          <li>VFEI2_PherocoreXanides</li>
+        </thingDefs>
+        <countRange>1~2</countRange>
+      </li>
+      <li Class="StockGenerator_SingleDef" MayRequire="OskarPotocki.VFE.Insectoid2">
+        <thingDef>VFEI2_Chitin</thingDef>
+        <countRange>40~120</countRange>
+      </li>
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>InsectJelly</thingDef>
+        <countRange>30~80</countRange>
+      </li>
+      <li Class="StockGenerator_BuySingleDef" MayRequire="OskarPotocki.VFE.Insectoid2">
+        <thingDef>VFEI2_PherocoreSorne</thingDef>
+      </li>
+      <li Class="StockGenerator_BuySingleDef" MayRequire="OskarPotocki.VFE.Insectoid2">
+        <thingDef>VFEI2_PherocoreNuchadus</thingDef>
+      </li>
+      <li Class="StockGenerator_BuySingleDef" MayRequire="OskarPotocki.VFE.Insectoid2">
+        <thingDef>VFEI2_PherocoreChelis</thingDef>
+      </li>
+      <li Class="StockGenerator_BuySingleDef" MayRequire="OskarPotocki.VFE.Insectoid2">
+        <thingDef>VFEI2_PherocoreKemian</thingDef>
+      </li>
+      <li Class="StockGenerator_BuySingleDef" MayRequire="OskarPotocki.VFE.Insectoid2">
+        <thingDef>VFEI2_PherocoreXanides</thingDef>
+      </li>
     </stockGenerators>
   </TraderKindDef>
 
@@ -257,6 +291,40 @@
         <tradeTag>CE_Ammo</tradeTag>
         <thingDefCountRange>3~5</thingDefCountRange>
         <countRange>200~600</countRange>
+      </li>
+          <!-- A colmeia sem recall: a Hélice nega a patente, mas vende o núcleo. -->
+      <li Class="StockGenerator_MultiDef" MayRequire="OskarPotocki.VFE.Insectoid2">
+        <thingDefs>
+          <li>VFEI2_PherocoreSorne</li>
+          <li>VFEI2_PherocoreNuchadus</li>
+          <li>VFEI2_PherocoreChelis</li>
+          <li>VFEI2_PherocoreKemian</li>
+          <li>VFEI2_PherocoreXanides</li>
+        </thingDefs>
+        <countRange>0~1</countRange>
+      </li>
+      <li Class="StockGenerator_SingleDef" MayRequire="OskarPotocki.VFE.Insectoid2">
+        <thingDef>VFEI2_Chitin</thingDef>
+        <countRange>40~120</countRange>
+      </li>
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>InsectJelly</thingDef>
+        <countRange>30~80</countRange>
+      </li>
+      <li Class="StockGenerator_BuySingleDef" MayRequire="OskarPotocki.VFE.Insectoid2">
+        <thingDef>VFEI2_PherocoreSorne</thingDef>
+      </li>
+      <li Class="StockGenerator_BuySingleDef" MayRequire="OskarPotocki.VFE.Insectoid2">
+        <thingDef>VFEI2_PherocoreNuchadus</thingDef>
+      </li>
+      <li Class="StockGenerator_BuySingleDef" MayRequire="OskarPotocki.VFE.Insectoid2">
+        <thingDef>VFEI2_PherocoreChelis</thingDef>
+      </li>
+      <li Class="StockGenerator_BuySingleDef" MayRequire="OskarPotocki.VFE.Insectoid2">
+        <thingDef>VFEI2_PherocoreKemian</thingDef>
+      </li>
+      <li Class="StockGenerator_BuySingleDef" MayRequire="OskarPotocki.VFE.Insectoid2">
+        <thingDef>VFEI2_PherocoreXanides</thingDef>
       </li>
     </stockGenerators>
   </TraderKindDef>

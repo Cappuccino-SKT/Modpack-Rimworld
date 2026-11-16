@@ -183,6 +183,12 @@
         <amount>1</amount>
         <label>aprimoramento genético de um colono (xenogerme)</label>
       </li>
+      <li>
+        <type>InsectHiveDestroyed</type>
+        <amount>1</amount>
+        <per>2</per>
+        <label>recall de colmeia (colmeia de inseto destruída)</label>
+      </li>
     </favorSources>
     <ranks>
       <li>

@@ -44,7 +44,7 @@ namespace EcosDaQueda
         public string resultText;
     }
 
-    public enum FavorEventType { ResearchFinished, SerumUsed, XenogermImplanted, TradeSilver, QualityCrafted, RitualFinished }
+    public enum FavorEventType { ResearchFinished, SerumUsed, XenogermImplanted, TradeSilver, QualityCrafted, RitualFinished, InsectHiveDestroyed }
 
     /// <summary>Uma forma temática de ganhar favor: a cada "per" ocorrências do evento, o líder ganha "amount".</summary>
     public class FavorSource

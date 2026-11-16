@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <!-- "A colmeia sem recall" (Source/EcosDaQueda/Insects.cs). Toda colmeia de inseto destruída pelo jogador
+       (RimWorld.Hive, inclusive as do VFE Insectoids 2, e as tocas) dá Fama com a Hélice. O favor, quando a Hélice
+       é a potência do líder, vem de favorSources InsectHiveDestroyed em EQ_Allegiance.xml. -->
+  <EcosDaQueda.InsectRecallDef>
+    <defName>EQ_InsectRecall</defName>
+    <faction>EQ_Faction_Helice</faction>
+    <famePerHive>2</famePerHive>
+    <extraThingClasses>
+      <li>Burrow</li>
+    </extraThingClasses>
+    <messageText>Recall executado: {HIVE} desativada. {FACTION_name} agradece a cooperação e reafirma que nunca fabricou esse produto.</messageText>
+  </EcosDaQueda.InsectRecallDef>
+</Defs>
