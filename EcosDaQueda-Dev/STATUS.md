@@ -6,16 +6,16 @@ _Só o estado atual e os próximos passos. Manter curto (até ~60 linhas). Detal
 
 - **Base pronta e testada:** 4 potências (Silêncio, Hélice, Forja, Coro) e 4 facções menores (Fora de Linha, Não Catalogados, Feira Andante, Sindicato do Saque), todas com ideologia do usuário (`.rid`), xenotipos próprios, relações fixas, Fama/Infâmia, cerimônia de submissão, líder e 7 cargos por potência.
 - **Mundo só com as nossas facções** (sem Império/Desertores); Hegemony é a camada de estratégia.
-- **Plano em etapas:** `PLANO.md`. Etapa 1 (travas do início: xenos, cenários, narrador provisório) feita. **Etapa 2 em andamento:** feitos arsenal por facção (A), armadura-caixão da Forja (C), guarda-roupa e comércio por facção, e **psycasts do Coro por cargo (G)**: cada cargo licencia um caminho do VPE (Protetor → … → Arconte → Hemosage); sem o cargo o colono não destrava, a cerimônia dá de graça, perder o cargo revoga.
+- **Plano em etapas:** `PLANO.md`. Etapa 1 (travas do início: xenos, cenários, narrador provisório) feita. **Etapa 2 em andamento:** feitos arsenal por facção (A), armadura-caixão da Forja (C), guarda-roupa e comércio por facção, **psycasts do Coro por cargo (G)** e **questão androide (H)**: fabricar sem o cargo técnico licenciado da Forja é pirataria (Infâmia); androide desperto na colônia dá Infâmia na Forja e boa vontade nos Fora de Linha. No G, cada cargo licencia um caminho do VPE (Protetor → … → Arconte → Hemosage); sem o cargo o colono não destrava, a cerimônia dá de graça, perder o cargo revoga.
 - **Vassalagem:** só o Coro dá nível psíquico; a Forja dá vínculo mecanoide.
 
 ## Próximo passo
 
-Blocos da etapa 2 ainda abertos, na ordem sugerida: **H** (questão androide da Forja), **B** (permissões por cargo), **K** (bases por potência); depois D, E, F, I, L, M, N, O. A escolha do próximo bloco é do usuário.
+Blocos da etapa 2 ainda abertos, na ordem sugerida: **B** (permissões por cargo), **K** (bases por potência); depois D, E, F, I, L, M, N, O. A escolha do próximo bloco é do usuário.
 
 ## Não commitado
 
-Tudo desde `f8641a7` (raiz) está sem commit nos três repositórios (`main`, `mod/ecos-da-queda`, `mod/ecos-da-queda-debug`). Só commitar quando o usuário pedir.
+Nada (blocos G e H commitados em 2026-11-16; sem push).
 
 ## Como testar
 
@@ -34,6 +34,7 @@ Tudo desde `f8641a7` (raiz) está sem commit nos três repositórios (`main`, `m
 ## A conferir pelo usuário (só visual)
 
 - Início de jogo com o modo desenvolvedor **desligado**: menu de xenos, cenários e narrador; Prepare Carefully.
+- Mensagens da questão androide (pirataria, unidade registrada, desperto) ao fabricar e ao despertar.
 - Aba Psicasts do VPE com caminhos licenciados: botão travado com o motivo "licença do Coro (cargo)" e mensagem ao receber o caminho na cerimônia.
 - Aba Reputação (lealdade, líder, favor, sucessor, botão "Cerimônia"), cena da cerimônia no mapa, aba de títulos do líder.
 - Visual das unidades (roupas, armas, xenos, mechs da Forja) e a janela de comércio de cada facção.

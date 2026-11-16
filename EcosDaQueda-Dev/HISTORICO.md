@@ -77,6 +77,7 @@ Ver DESIGN.md › Sistemas planejados: relações fixas, Fama/Infâmia, postos, 
 
 | Data | Mudança |
 |---|---|
+| 2026-11-16 | Etapa 2 bloco H: questão androide (`AndroidPolicyDef`, `EQ_Androids.xml`): fabricar androide sem o cargo técnico licenciado da Forja = pirataria (Forja -8); androide desperto na colônia (despertar, recrutamento ou fabricado desperto) = Forja -10 e Fora de Linha +10; comando `android`, teste `androides` |
 | 2026-11-16 | Etapa 2 bloco G: caminhos do VPE licenciados pelos 7 cargos do Coro (Protetor → Empata → Senhor da Estática → Senhor da Guerra → Conflagrador → Arconte → Hemosage); trava para colonos sem o cargo, destrava grátis na cerimônia, revoga ao perder o cargo; Hemosage no Maestro Supremo; comando `psy`, teste `psy-coro` |
 | 2026-11-16 | Etapa 2: guarda-roupa por facção, 15 comerciantes próprios (cópia do estoque do jogo + mercadoria da facção), proteção contra erro de livros e de largar arma; comandos `trader` e `tradeinfo` |
 | 2026-11-15 | Etapa 2 (A, C): arsenal por facção (`ArsenalDef`), unidades do Sindicato e da Feira, cavaleiro lacrado da Forja, munição de reserva do CE, comandos `kit` e `weapontags` |

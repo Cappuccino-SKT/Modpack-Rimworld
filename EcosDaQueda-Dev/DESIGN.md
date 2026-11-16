@@ -119,6 +119,8 @@ Não são potências: sem ideologia fixa, cargos, Fama/Infâmia própria nem ser
 
 **Ideologias das menores:** Fora de Linha = O Protocolo Zero; Não Catalogados = A Carne sem Verbete; Feira Andante = **A Liquidação Eterna** (tudo tem preço, quem para de rodar começa a dever; vende órgão como vende repolho); Sindicato do Saque = **O Dissídio Coletivo** (saque é negociação coletiva, contribuição sindical em água, fumo e dedos).
 
+**Questão androide (implementada):** fabricar androide exige o cargo **técnico licenciado** da Forja; sem ele é pirataria (Forja -8 de boa vontade, que vira Infâmia). Androide desperto na colônia (despertou aqui, foi recrutado desperto ou saiu desperto da estação) é "recall pendente": Forja -10, Fora de Linha +10. Ainda não feito: a Forja exigir a entrega do desperto (recall) e o mercado negro de licenças.
+
 **Vassalagem e poder de cada potência:** só o Coro dá nível psíquico pelos cargos, e cada cargo **licencia um caminho do VPE** (ouvinte: Protetor; corista: Empata; solista: Senhor da Estática; spalla: Senhor da Guerra; regente: Conflagrador; mestre de capela: Arconte; maestro honorário: Hemosage, só para hemogênicos). Sem o cargo o colono não destrava esses caminhos (nem por psitreinador); a cerimônia dá o caminho de graça; perder o cargo revoga. Os outros caminhos do VPE são livres; a Forja dá vínculo mecanoide na submissão; Silêncio e Hélice dão acesso pelos serviços e, no futuro, por tecnologia licenciada (ver PLANO.md › Etapa 3).
 
 **Arsenal por facção** (`Defs/Arsenal/EQ_Arsenal.xml`):
