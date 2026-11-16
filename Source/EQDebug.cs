@@ -227,6 +227,253 @@ namespace EcosDaQueda.DebugTools
             return (tithe ? "dízimo" : "estipêndio") + " vence na próxima hora de jogo";
         }
 
+        // ------------------------------------------------------------ início de jogo e uso dos mods
+
+        /// <summary>Narradores e cenários visíveis, cenário/narrador em uso, xenos dos colonos e o menu de xenotipos filtrado.</summary>
+        public static string StartInfo()
+        {
+            var sb = new System.Text.StringBuilder();
+            sb.AppendLine("narradores visíveis: " + string.Join(", ", DefDatabase<StorytellerDef>.AllDefs.Where(t => t.listVisible).Select(t => t.defName + " (" + t.label + ", " + t.comps.Count + " comps)")));
+            sb.AppendLine("narradores ocultos: " + DefDatabase<StorytellerDef>.AllDefs.Count(t => !t.listVisible));
+            bool dev = Prefs.DevMode;
+            Prefs.DevMode = false;
+            try
+            {
+                sb.AppendLine("cenários visíveis: " + string.Join(", ", ScenarioLister.ScenariosInCategory(ScenarioCategory.FromDef).Select(x => x.name)));
+                sb.AppendLine("cenários ocultos: " + (DefDatabase<ScenarioDef>.DefCount - ScenarioLister.ScenariosInCategory(ScenarioCategory.FromDef).Count()));
+            }
+            finally { Prefs.DevMode = dev; }
+            sb.AppendLine("em uso: cenário=" + Find.Scenario?.name + " narrador=" + Find.Storyteller?.def?.defName);
+            sb.AppendLine("xenos permitidos no cenário: " + string.Join(", ", EQGameStart.StarterChances().Select(c => c.xenotype.defName + "=" + c.chance)));
+            sb.AppendLine("colonos: " + string.Join(", ", PawnsFinder.AllMaps_FreeColonists.Select(p => p.LabelShort + "=" + (p.genes?.Xenotype?.defName ?? "-"))));
+            var menu = new List<FloatMenuOption> { new FloatMenuOption("AnyNonArchite".Translate().CapitalizeFirst(), null), new FloatMenuOption("XenotypeEditor".Translate() + "...", null) };
+            foreach (XenotypeDef x in DefDatabase<XenotypeDef>.AllDefs)
+                menu.Add(new FloatMenuOption(x.LabelCap, null));
+            int before = menu.Count;
+            EQGameStart.FilterXenotypeMenu(menu, test: true);
+            sb.Append("menu de xenotipos: " + before + " opções -> " + menu.Count + ": " + string.Join(" | ", menu.Select(o => o.Label)));
+            var rep = WorldComponent_Reputation.Current;
+            foreach (Faction f in Powers)
+                sb.Append("\n  " + f.Name + ": boa vontade=" + f.PlayerGoodwill);
+            return sb.ToString();
+        }
+
+        /// <summary>Auditoria: por mod, quantas coisas dele as nossas facções usam (unidades, armas, roupas,
+        /// estoque de comércio) e quanto conteúdo ele tem. "todos" mostra também os que já têm uso.</summary>
+        public static string ModUsage(string arg)
+        {
+            bool Ours(Def d) => d.modContentPack != null && d.modContentPack.PackageId.ToLowerInvariant().StartsWith("ecosdaqueda");
+            var used = new Dictionary<ModContentPack, HashSet<Def>>();
+            void Use(Def d)
+            {
+                if (d?.modContentPack == null || d.modContentPack.IsOfficialMod || Ours(d)) return;
+                if (!used.TryGetValue(d.modContentPack, out var set)) used[d.modContentPack] = set = new HashSet<Def>();
+                set.Add(d);
+            }
+            var kinds = new HashSet<PawnKindDef>();
+            var traders = new HashSet<TraderKindDef>();
+            foreach (FactionDef f in DefDatabase<FactionDef>.AllDefs.Where(Ours))
+            {
+                if (f.pawnGroupMakers != null)
+                    foreach (PawnGroupMaker g in f.pawnGroupMakers)
+                        foreach (PawnGenOption o in g.options.Concat(g.traders).Concat(g.carriers).Concat(g.guards))
+                            if (o.kind != null) kinds.Add(o.kind);
+                if (f.basicMemberKind != null) kinds.Add(f.basicMemberKind);
+                if (f.fixedLeaderKinds != null) kinds.AddRange(f.fixedLeaderKinds);
+                if (f.caravanTraderKinds != null) traders.AddRange(f.caravanTraderKinds);
+                if (f.visitorTraderKinds != null) traders.AddRange(f.visitorTraderKinds);
+                if (f.baseTraderKinds != null) traders.AddRange(f.baseTraderKinds);
+                if (f.xenotypeSet != null)
+                    for (int i = 0; i < f.xenotypeSet.Count; i++)
+                        foreach (GeneDef g in f.xenotypeSet[i].xenotype.AllGenes) Use(g);
+            }
+            foreach (PawnKindDef k in DefDatabase<PawnKindDef>.AllDefs.Where(Ours)) kinds.Add(k);
+            foreach (XenotypeDef x in DefDatabase<XenotypeDef>.AllDefs.Where(Ours))
+                foreach (GeneDef g in x.AllGenes) Use(g);
+            foreach (PawnKindDef k in kinds)
+            {
+                Use(k);
+                Use(k.race);
+                var wTags = k.weaponTags ?? new List<string>();
+                var aTags = k.apparelTags ?? new List<string>();
+                foreach (ThingDef t in DefDatabase<ThingDef>.AllDefs)
+                {
+                    if (t.IsWeapon && t.weaponTags != null && t.weaponTags.Any(wTags.Contains)) Use(t);
+                    if (t.IsApparel && t.apparel?.tags != null && t.apparel.tags.Any(aTags.Contains)) Use(t);
+                }
+                if (k.apparelRequired != null) foreach (ThingDef t in k.apparelRequired) Use(t);
+                if (k.techHediffsRequired != null) foreach (ThingDef t in k.techHediffsRequired) Use(t);
+                if (k.abilities != null) foreach (AbilityDef a in k.abilities) Use(a);
+            }
+            foreach (TraderKindDef tk in traders)
+            {
+                Use(tk);
+                foreach (StockGenerator g in tk.stockGenerators)
+                    foreach (ThingDef t in DefDatabase<ThingDef>.AllDefs)
+                    {
+                        bool has;
+                        try { has = g.HandlesThingDef(t); } catch { has = false; }
+                        if (has && t.tradeability != Tradeability.None) Use(t);
+                    }
+            }
+            foreach (MemeDef m in DefDatabase<MemeDef>.AllDefs)
+                if (Find.FactionManager.AllFactions.Any(f => Ours(f.def) && f.ideos?.PrimaryIdeo != null && f.ideos.PrimaryIdeo.memes.Contains(m))) Use(m);
+            foreach (Faction f in Find.FactionManager.AllFactions.Where(f => Ours(f.def) && f.ideos?.PrimaryIdeo != null))
+                foreach (Precept p in f.ideos.PrimaryIdeo.PreceptsListForReading) Use(p.def);
+
+            var sb = new System.Text.StringBuilder();
+            sb.AppendLine("uso dos mods pelas nossas facções (unidades, armas e roupas por etiqueta, estoque de comércio, genes, memes e preceitos)");
+            sb.AppendLine("mod | usados | conteúdo (itens/armas/roupas/construções/pesquisas/missões+eventos) | exemplos usados");
+            foreach (ModContentPack mod in LoadedModManager.RunningModsListForReading.Where(m => !m.IsOfficialMod && !m.PackageId.ToLowerInvariant().StartsWith("ecosdaqueda")))
+            {
+                var defs = mod.AllDefs.ToList();
+                int things = defs.OfType<ThingDef>().Count(t => t.category == ThingCategory.Item && !t.IsWeapon && !t.IsApparel);
+                int weapons = defs.OfType<ThingDef>().Count(t => t.IsWeapon);
+                int apparel = defs.OfType<ThingDef>().Count(t => t.IsApparel);
+                int buildings = defs.OfType<ThingDef>().Count(t => t.category == ThingCategory.Building);
+                int research = defs.OfType<ResearchProjectDef>().Count();
+                int events = defs.OfType<QuestScriptDef>().Count() + defs.OfType<IncidentDef>().Count();
+                int content = things + weapons + apparel + buildings + research + events + defs.OfType<GeneDef>().Count() + defs.OfType<PawnKindDef>().Count();
+                used.TryGetValue(mod, out var u);
+                int n = u?.Count ?? 0;
+                if (content == 0 && n == 0) continue;
+                if (arg != "todos" && n > 0 && arg != mod.PackageId.ToLowerInvariant()) continue;
+                sb.AppendLine(mod.Name + " | " + n + " | " + things + "/" + weapons + "/" + apparel + "/" + buildings + "/" + research + "/" + events
+                    + " | " + (u == null ? "-" : string.Join(", ", u.Take(arg == mod.PackageId.ToLowerInvariant() ? 400 : 6).Select(d => d.defName))));
+            }
+            return sb.ToString().TrimEnd();
+        }
+
+        /// <summary>Armas (ou "roupas") de todos os mods com as etiquetas que as unidades usam para sortear equipamento.</summary>
+        public static string WeaponTags(string what)
+        {
+            var sb = new System.Text.StringBuilder();
+            bool apparel = what == "roupas";
+            foreach (ThingDef t in DefDatabase<ThingDef>.AllDefs.Where(d => apparel ? d.IsApparel : d.IsWeapon)
+                .OrderBy(d => d.modContentPack?.Name ?? "?").ThenBy(d => d.defName))
+            {
+                List<string> tags = apparel ? t.apparel?.tags : t.weaponTags;
+                if (tags.NullOrEmpty() && !t.destroyOnDrop == false) continue;
+                sb.AppendLine((t.modContentPack?.Name ?? "?") + " | " + t.defName + " | " + t.label + " | " + t.techLevel + " | $" + t.BaseMarketValue.ToString("0")
+                    + " | " + (t.IsRangedWeapon ? "tiro" : apparel ? "roupa" : "corpo") + " | " + (tags == null ? "-" : string.Join(",", tags)));
+            }
+            return sb.ToString().TrimEnd();
+        }
+
+        /// <summary>Gera n unidades de um PawnKind (ou de todas as nossas de uma facção, "fac:nome") e resume o
+        /// equipamento: armas sorteadas, quantos vieram sem arma, munição de reserva (Combat Extended) e roupas.</summary>
+        public static string Kit(string arg, int n)
+        {
+            var kinds = new List<PawnKindDef>();
+            if (arg != null && arg.StartsWith("fac:"))
+            {
+                Faction f = FindFaction(arg.Substring(4));
+                if (f == null) return "facção não encontrada: " + arg;
+                kinds.AddRange(DefDatabase<PawnKindDef>.AllDefs.Where(k => k.defaultFactionDef == f.def && k.defName.StartsWith("EQ_")));
+            }
+            else
+            {
+                PawnKindDef k = arg == null ? null : DefDatabase<PawnKindDef>.GetNamedSilentFail(arg);
+                if (k == null) return "PawnKind não encontrado: " + arg;
+                kinds.Add(k);
+            }
+            var sb = new StringBuilder();
+            int problemas = 0;
+            foreach (PawnKindDef kind in kinds)
+            {
+                Faction fac = kind.defaultFactionDef != null ? Find.FactionManager.FirstFactionOfDef(kind.defaultFactionDef) : null;
+                var armas = new Dictionary<string, int>();
+                var roupas = new Dictionary<string, int>();
+                int semArma = 0, semMunicao = 0, deTiro = 0, municao = 0, foraDoArsenal = 0;
+                for (int i = 0; i < n; i++)
+                {
+                    Pawn p;
+                    try { p = PawnGenerator.GeneratePawn(new PawnGenerationRequest(kind, fac, forceGenerateNewPawn: true)); }
+                    catch (Exception ex) { problemas++; sb.AppendLine("  ERRO gerando " + kind.defName + ": " + ex.Message); continue; }
+                    ThingWithComps w = p.equipment?.Primary;
+                    if (w == null) semArma++;
+                    else
+                    {
+                        armas[w.def.defName] = armas.TryGetValue(w.def.defName, out int c) ? c + 1 : 1;
+                        if (kind.weaponTags != null && (w.def.weaponTags == null || !w.def.weaponTags.Any(kind.weaponTags.Contains))) foraDoArsenal++;
+                        if (w.def.IsRangedWeapon)
+                        {
+                            deTiro++;
+                            int a = p.inventory == null ? 0 : p.inventory.innerContainer.Where(t => t.def.defName.StartsWith("Ammo_") || t.def.thingClass.Name.Contains("Ammo")).Sum(t => t.stackCount);
+                            municao += a;
+                            if (a == 0) semMunicao++;
+                        }
+                    }
+                    if (p.apparel != null)
+                        foreach (Apparel ap in p.apparel.WornApparel)
+                            roupas[ap.def.defName] = roupas.TryGetValue(ap.def.defName, out int c2) ? c2 + 1 : 1;
+                    p.Destroy();
+                }
+                bool querArma = !kind.weaponTags.NullOrEmpty();
+                if (querArma && semArma > n / 2) problemas++;
+                sb.AppendLine("  " + kind.defName + " (" + kind.label + "): sem arma " + semArma + "/" + n + (querArma && semArma > n / 2 ? " !!" : "")
+                    + " | de tiro " + deTiro + ", sem munição de reserva " + semMunicao + ", média " + (deTiro == 0 ? 0 : municao / deTiro)
+                    + (foraDoArsenal > 0 ? " | fora das etiquetas: " + foraDoArsenal : ""));
+                sb.AppendLine("    armas: " + string.Join(", ", armas.OrderByDescending(x => x.Value).Select(x => x.Key + "×" + x.Value)));
+                sb.AppendLine("    roupas: " + string.Join(", ", roupas.OrderByDescending(x => x.Value).Take(10).Select(x => x.Key + "×" + x.Value)));
+            }
+            sb.Append(problemas == 0 ? "  OK" : "  PROBLEMAS: " + problemas);
+            return sb.ToString();
+        }
+
+        /// <summary>Itens comerciáveis dos mods, agrupados por mod, categoria e etiquetas de comércio (para montar estoques).</summary>
+        public static string TradeInfo()
+        {
+            var sb = new System.Text.StringBuilder();
+            var groups = DefDatabase<ThingDef>.AllDefs
+                .Where(t => t.category == ThingCategory.Item && t.tradeability != Tradeability.None && !t.IsWeapon && !t.IsApparel && t.modContentPack != null && !t.IsCorpse)
+                .GroupBy(t => (t.modContentPack.IsOfficialMod ? "(jogo)" : t.modContentPack.Name) + " | " + (t.thingCategories.NullOrEmpty() ? "-" : t.thingCategories[0].defName)
+                    + " | " + (t.tradeTags.NullOrEmpty() ? "-" : string.Join(",", t.tradeTags)))
+                .OrderBy(g => g.Key);
+            foreach (var g in groups)
+                sb.AppendLine(g.Key + " | " + g.Count() + " | " + string.Join(", ", g.Take(5).Select(t => t.defName)));
+            return sb.ToString().TrimEnd();
+        }
+
+        /// <summary>Gera o estoque de um comerciante (ou de todos os nossos, sem argumento) e resume por tipo.</summary>
+        public static string TraderStock(string arg)
+        {
+            var kinds = arg == null
+                ? DefDatabase<TraderKindDef>.AllDefs.Where(t => t.defName.StartsWith("EQ_")).ToList()
+                : new List<TraderKindDef> { DefDatabase<TraderKindDef>.GetNamedSilentFail(arg) };
+            if (kinds.Any(k => k == null)) return "TraderKindDef não encontrado: " + arg;
+            var sb = new StringBuilder();
+            int problemas = 0;
+            foreach (TraderKindDef k in kinds)
+            {
+                List<Thing> stock;
+                try
+                {
+                    ThingSetMakerParams parms = default(ThingSetMakerParams);
+                    parms.traderDef = k;
+                    // No jogo todo comerciante tem facção (livros, por exemplo, usam a facção para gerar o autor).
+                    parms.makingFaction = Find.FactionManager.AllFactions.FirstOrDefault(f => !f.IsPlayer && !f.def.hidden && f.def.humanlikeFaction
+                        && ((f.def.baseTraderKinds?.Contains(k) ?? false) || (f.def.caravanTraderKinds?.Contains(k) ?? false) || (f.def.visitorTraderKinds?.Contains(k) ?? false)))
+                        ?? Find.FactionManager.RandomNonHostileFaction(allowNonHumanlike: false);
+                    parms.tile = Find.AnyPlayerHomeMap?.Tile ?? PlanetTile.Invalid;
+                    stock = ThingSetMakerDefOf.TraderStock.root.Generate(parms);
+                }
+                catch (Exception ex) { problemas++; sb.AppendLine("  ERRO em " + k.defName + ": " + ex.Message); continue; }
+                int armas = stock.Count(t => t.def.IsWeapon), roupas = stock.Count(t => t.def.IsApparel);
+                int municao = stock.Where(t => t.def.defName.StartsWith("Ammo_")).Sum(t => t.stackCount);
+                sb.AppendLine("  " + k.defName + " (" + k.label + "): " + k.stockGenerators.Count + " geradores, " + stock.Count + " itens, valor "
+                    + stock.Sum(t => t.MarketValue * t.stackCount).ToString("0") + " | armas " + armas + ", roupas " + roupas + ", munição " + municao);
+                sb.AppendLine("    armas/roupas: " + string.Join(", ", stock.Where(t => t.def.IsWeapon || t.def.IsApparel).Select(t => t.def.defName).Distinct().Take(14)));
+                sb.AppendLine("    outros: " + string.Join(", ", stock.Where(t => !t.def.IsWeapon && !t.def.IsApparel && !t.def.defName.StartsWith("Ammo_"))
+                    .GroupBy(t => t.def.defName).OrderByDescending(g => g.Sum(t => t.MarketValue * t.stackCount)).Take(16).Select(g => g.Key + "×" + g.Sum(t => t.stackCount))));
+                if (EcosDaQueda.EQTrade.Dropped.TryGetValue(k, out List<string> dropped)) sb.AppendLine("    tirados da cópia: " + string.Join(", ", dropped));
+                if (stock.Count == 0) problemas++;
+                foreach (Thing t in stock) t.Destroy();
+            }
+            sb.Append(problemas == 0 ? "  OK" : "  PROBLEMAS: " + problemas);
+            return sb.ToString();
+        }
+
         public static string DescribeAllegiance()
         {
             var alg = WorldComponent_Allegiance.Current;
@@ -240,6 +487,8 @@ namespace EcosDaQueda.DebugTools
                 + " líderDaIdeologia=" + (ideoLeader?.LabelShort ?? "nenhum") + " sucessor=" + (alg.successor?.LabelShort ?? "nenhum")
                 + " precisaEscolher=" + alg.needsLeaderChoice + " cache=" + (alg.cachedTitle?.defName ?? "-") + "/" + alg.cachedFavor;
             Pawn l = alg.leader ?? ideoLeader;
+            if (l != null)
+                s += " | nívelPsíquico=" + l.GetPsylinkLevel() + " vínculoMecanoide=" + MechanitorUtility.IsMechanitor(l);
             if (l?.royalty != null)
                 foreach (Faction f in Powers)
                     if (l.royalty.GetFavor(f) != 0 || l.royalty.GetCurrentTitle(f) != null)
@@ -641,6 +890,61 @@ namespace EcosDaQueda.DebugTools
             }
             sb.Append("problemas=" + problemas);
             return sb.ToString();
+        }
+
+        /// <summary>Caminhos psíquicos licenciados (VPE). psy [show] | psy title &lt;n&gt; (cargo do Coro no líder; 0 tira) |
+        /// psy grant | psy gen &lt;PawnKind&gt; &lt;n&gt;.</summary>
+        public static string Psy(string action, string a2, string a3)
+        {
+            if (!EQPsycasts.Active) return "VPE ausente";
+            var alg = WorldComponent_Allegiance.Current;
+            Pawn l = alg?.leader ?? PawnsFinder.AllMaps_FreeColonists.FirstOrDefault();
+            string lic = "licenças: " + string.Join(", ", EQPsycasts.Licenses.Select(kv => kv.Key.defName + "=" + kv.Value.allegiance.ranks[kv.Value.rank].title.defName));
+            switch (action)
+            {
+                case null:
+                case "show":
+                    break;
+                case "title":
+                {
+                    Faction coro = Find.FactionManager.FirstFactionOfDef(DefDatabase<FactionDef>.GetNamed("EQ_Faction_Coro"));
+                    FactionAllegianceDef d = FactionAllegianceDef.For(coro.def);
+                    int n = int.Parse(a2 ?? "0");
+                    l.royalty.SetTitle(coro, n <= 0 ? null : d.ranks[n - 1].title, grantRewards: false, rewardsOnlyForNewestTitle: false, sendLetter: false);
+                    lic = "título do Coro := " + (n <= 0 ? "nenhum" : d.ranks[n - 1].title.defName) + "\n" + lic;
+                    break;
+                }
+                case "grant":
+                {
+                    if (EQPsycasts.AbilitiesHediff(l) == null)
+                        l.ChangePsylinkLevel(1, sendLetter: false);
+                    var g = EQPsycasts.GrantLicensed(l);
+                    lic = "destravados: [" + string.Join(", ", g.Select(p => p.defName)) + "]\n" + lic;
+                    break;
+                }
+                case "gen":
+                {
+                    PawnKindDef kind = DefDatabase<PawnKindDef>.GetNamedSilentFail(a2);
+                    if (kind == null) return "PawnKind não encontrado: " + a2;
+                    int n = int.Parse(a3 ?? "10");
+                    Faction fac = kind.defaultFactionDef != null ? Find.FactionManager.FirstFactionOfDef(kind.defaultFactionDef) : null;
+                    var cont = new Dictionary<string, int>();
+                    int semPoder = 0;
+                    for (int i = 0; i < n; i++)
+                    {
+                        Pawn p = PawnGenerator.GeneratePawn(new PawnGenerationRequest(kind, fac, forceGenerateNewPawn: true));
+                        var paths = EQPsycasts.UnlockedPaths(p);
+                        if (EQPsycasts.AbilitiesHediff(p) == null) semPoder++;
+                        foreach (Def d in paths) cont[d.defName] = cont.TryGetValue(d.defName) + 1;
+                        p.Discard();
+                    }
+                    return kind.defName + " (" + n + "): semPoderes=" + semPoder + " caminhos: "
+                        + string.Join(", ", cont.OrderByDescending(kv => kv.Value).Select(kv => kv.Key + "=" + kv.Value));
+                }
+                default:
+                    return "ação desconhecida: " + action;
+            }
+            return lic + "\n" + l.LabelShort + ": nívelPsíquico=" + l.GetPsylinkLevel() + " " + EQPsycasts.Describe(l);
         }
 
         /// <summary>Diagnóstico: para cada incidente-assinatura da potência, diz se pode disparar e tenta executar.</summary>

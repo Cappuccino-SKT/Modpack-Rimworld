@@ -5,6 +5,7 @@ using System.IO;
 using System.Linq;
 using HarmonyLib;
 using RimWorld;
+using RimWorld.Planet;
 using Verse;
 
 namespace EcosDaQueda.DebugTools
@@ -149,6 +150,25 @@ namespace EcosDaQueda.DebugTools
             framesInStage = 0;
         }
 
+        /// <summary>Igual a Root_Play.SetupForQuickTestPlay, mas aceita "newgame [ScenarioDef] [StorytellerDef]".</summary>
+        private static void SetupNewGame(string args)
+        {
+            string[] a = (args ?? "").Split(new[] { ' ' }, StringSplitOptions.RemoveEmptyEntries);
+            ScenarioDef scen = a.Length > 0 ? DefDatabase<ScenarioDef>.GetNamed(a[0]) : ScenarioDefOf.Crashlanded;
+            StorytellerDef teller = a.Length > 1 ? DefDatabase<StorytellerDef>.GetNamed(a[1]) : StorytellerDefOf.Cassandra;
+            Current.ProgramState = ProgramState.Entry;
+            Game.ClearCaches();
+            Current.Game = new Game();
+            Current.Game.InitData = new GameInitData();
+            Current.Game.Scenario = scen.scenario;
+            Find.Scenario.PreConfigure();
+            Current.Game.storyteller = new Storyteller(teller, DifficultyDefOf.Rough);
+            Current.Game.World = WorldGenerator.GenerateWorld(0.3f, GenText.RandomSeedString(), OverallRainfall.Normal, OverallTemperature.Normal, OverallPopulation.Normal, LandmarkDensity.Normal);
+            Find.GameInitData.ChooseRandomStartingTile();
+            Find.GameInitData.mapSize = 250;
+            Find.Scenario.PostIdeoChosen();
+        }
+
         private static void StartGame()
         {
             string first = index < commands.Count ? commands[index] : "";
@@ -169,7 +189,7 @@ namespace EcosDaQueda.DebugTools
                 else
                     Write("# (sem load/newgame no início: criando jogo novo)");
                 // Mesmo caminho do jogo: prepara o jogo na cena de entrada e troca para a cena Play.
-                Root_Play.SetupForQuickTestPlay();
+                SetupNewGame(p.Length > 1 && p[0] == "newgame" ? p[1] : null);
                 Find.GameInitData.PrepForMapGen();
                 Find.Scenario.PreMapGenerate();
                 LongEventHandler.QueueLongEvent(null, "Play", "GeneratingMap", doAsynchronously: true, GameAndMapInitExceptionHandlers.ErrorWhileGeneratingMap);
@@ -286,7 +306,14 @@ namespace EcosDaQueda.DebugTools
                 case "kill": return EQDebug.KillMember(Fac(1));
                 case "serum": return EQDebug.UseSerum(int.Parse(Arg(1) ?? "1"));
                 case "cecheck": return EQDebug.CECheck(Arg(1));
+                case "weapontags": return EQDebug.WeaponTags(Arg(1));
+                case "kit": return EQDebug.Kit(Arg(1), int.Parse(Arg(2) ?? "20"));
+                case "tradeinfo": return EQDebug.TradeInfo();
+                case "trader": return EQDebug.TraderStock(Arg(1));
+                case "start": return EQDebug.StartInfo();
+                case "modusage": return EQDebug.ModUsage(Arg(1));
                 case "xenogen": return EQDebug.XenoGen(Arg(1), int.Parse(Arg(2) ?? "20"));
+                case "psy": return EQDebug.Psy(Arg(1), Arg(2), Arg(3));
                 case "signature": return EQDebug.Signature(Fac(1), Arg(2) == "run");
                 case "incident": return EQDebug.FireIncident(Arg(1));
                 case "letters": return EQDebug.Letters();
