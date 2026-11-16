@@ -1,0 +1,22 @@
+# Bloco D: Medieval (VFE Medieval 2). Rodar com -Profile full.
+# Arsenal dos Não Catalogados; Coro: torneio de corte (prata + vinho), vinho no estipêndio e no dízimo.
+newgame
+timeout 900
+kit fac:naocatalogados 20
+leader set 0
+join coro
+wait 1h
+psy title 3 coro
+give Silver 600
+services
+service EQ_Service_Coro_Torneio
+give VFEM2_Wine 25
+service EQ_Service_Coro_Torneio
+services
+due
+wait 1h
+# vinho no mapa: sobram 5 do torneio + 10 do estipêndio (cargo 3) = 15 (a cápsula pode cair fora da área doméstica)
+due tithe
+wait 1h
+count VFEM2_Wine
+letters

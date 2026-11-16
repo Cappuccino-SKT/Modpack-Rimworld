@@ -77,6 +77,7 @@ Ver DESIGN.md › Sistemas planejados: relações fixas, Fama/Infâmia, postos, 
 
 | Data | Mudança |
 |---|---|
+| 2026-11-16 | Etapa 2 bloco D: arsenais dos Não Catalogados (extraviado, olheiro, dilacerador, primeiro espécime) com armas do VFE Medieval 2; Coro: vinho no estipêndio (cargo 3+) e no dízimo, serviço "torneio de corte" (`costThings`: serviço que cobra itens); comando `count`, teste `medieval` |
 | 2026-11-16 | Etapa 2 bloco K: bases das 4 potências no Custom Base Framework (`1.7/Defs/EQ_Bases.xml`: 4 `SettlementPlanDef` + 9 listas de guarnição, prédios do CBF); comando `base <fac>` (gera o mapa da base, plano, prédios, defensores), teste `bases` |
 | 2026-11-16 | Etapa 2 bloco B: 25 permissões por cargo (`1.7/Defs/EQ_Permits.xml`, gerado por `scripts/permissoes.py`) sobre o sistema de permissões da Royalty; 1 ponto por cargo (`permitPointsAwarded` em `EQ_TitleBase`); comando `permit`, teste `permissoes` |
 | 2026-11-16 | Etapa 2 bloco H: questão androide (`AndroidPolicyDef`, `EQ_Androids.xml`): fabricar androide sem o cargo técnico licenciado da Forja = pirataria (Forja -8); androide desperto na colônia (despertar, recrutamento ou fabricado desperto) = Forja -10 e Fora de Linha +10; comando `android`, teste `androides` |

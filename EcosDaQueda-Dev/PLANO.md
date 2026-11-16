@@ -60,6 +60,8 @@ Preliminar: o que hoje **não tem ligação** com as nossas facções e sistemas
 | N. Mundo | V Landmarks Expanded | sem ligação | marcos com nome e história nossos |
 | O. Genes | VRE Starjack, Phytokin, Fungoid, Saurid, Lycanthrope | 0 a 2 genes usados | conferir se algum xeno nosso deve usá-los; se não, só como mercadoria do Soro/Hélice |
 
+**Andamento (2026-11-16, bloco D):** feito — arsenal medieval dos Não Catalogados e vinho/torneio no Coro. O VFE Medieval 2 não tem torneio próprio na 1.6 (o torneio é serviço nosso). Não feito: tribos de Vagantes (não existem tribos no mundo hoje), tradução do VFE Medieval 2. Próximos: E, F, I, L, M, N, O.
+
 **Andamento (2026-11-16, bloco K):** feitas as bases das 4 potências (plano do CBF por potência, prédios do CBF, guarnição nossa). Fica para a etapa 3: desbloqueio de móveis e energia por tecnologia licenciada; peças desenhadas por nós no editor do CBF. Blocos da etapa 2 que faltam: D, E, F, I, L, M, N, O.
 
 **Andamento (2026-11-16, bloco B):** feitas as permissões por cargo das 4 potências (25, sistema da Royalty). Fica para depois: contrabando e tramas dos Desertores (fase 2 dos Fora de Linha). Próximo sugerido: **K**.

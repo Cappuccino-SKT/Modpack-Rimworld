@@ -21,3 +21,6 @@
 - `Books` como categoria inclui `Tome`: excluir (o jogo usa `StockGenerator_Tomes`).
 - Ao gerar estoque em teste, passar `makingFaction` (no jogo sempre há).
 - Roupas: o gerador só cobre o corpo com o que as etiquetas permitem; toda unidade leva `EQ_Roupa_Comum` (calça, camisa, parka) além das da facção.
+
+- Não Catalogados (bloco D): 4 arsenais `EQ_Arsenal_NaoCatalogados*` com armas do VFE Medieval 2 (`VFEM2_*`) e neolíticas do jogo. O VFE Medieval 2 não põe etiqueta nas armas de fogo (arcabuz, canhão de mão, mosquete): só entram por defName no arsenal.
+- Serviço que cobra itens: `FactionServiceDef.costThings` (lista de `ThingDefCountClass`, aceita `MayRequire` no item); cobra só o que está na área doméstica, como a prata.

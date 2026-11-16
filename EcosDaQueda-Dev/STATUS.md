@@ -6,16 +6,16 @@ _Só o estado atual e os próximos passos. Manter curto (até ~60 linhas). Detal
 
 - **Base pronta e testada:** 4 potências (Silêncio, Hélice, Forja, Coro) e 4 facções menores (Fora de Linha, Não Catalogados, Feira Andante, Sindicato do Saque), todas com ideologia do usuário (`.rid`), xenotipos próprios, relações fixas, Fama/Infâmia, cerimônia de submissão, líder e 7 cargos por potência.
 - **Mundo só com as nossas facções** (sem Império/Desertores); Hegemony é a camada de estratégia.
-- **Plano em etapas:** `PLANO.md`. Etapa 1 (travas do início: xenos, cenários, narrador provisório) feita. **Etapa 2 em andamento:** feitos arsenal por facção (A), armadura-caixão da Forja (C), guarda-roupa e comércio por facção, **psycasts do Coro por cargo (G)**, **questão androide (H)**, **permissões por cargo (B)** e **bases por potência (K)**: plano próprio do Custom Base Framework para cada potência (arquivo-bunker, filial da Hélice, forja-fábrica, corte do Coro) com guarnição nossa. No B, 25 permissões da Royalty (6–7 por potência: entregas, trabalhadores, ajuda militar com as nossas unidades, recall orbital da Forja, liteira do Coro), 1 ponto por cargo, uso pago com favor. No H, fabricar sem o cargo técnico licenciado da Forja é pirataria (Infâmia); androide desperto na colônia dá Infâmia na Forja e boa vontade nos Fora de Linha. No G, cada cargo licencia um caminho do VPE (Protetor → … → Arconte → Hemosage); sem o cargo o colono não destrava, a cerimônia dá de graça, perder o cargo revoga.
+- **Plano em etapas:** `PLANO.md`. Etapa 1 (travas do início: xenos, cenários, narrador provisório) feita. **Etapa 2 em andamento:** feitos arsenal por facção (A), armadura-caixão da Forja (C), guarda-roupa e comércio por facção, **psycasts do Coro por cargo (G)**, **questão androide (H)**, **permissões por cargo (B)**, **bases por potência (K)** e **medieval (D)**: arsenal próprio dos Não Catalogados com armas do VFE Medieval 2; o Coro recebe vinho no estipêndio, aceita vinho no dízimo e tem o serviço "torneio de corte" (prata + vinho). No K, plano próprio do Custom Base Framework para cada potência (arquivo-bunker, filial da Hélice, forja-fábrica, corte do Coro) com guarnição nossa. No B, 25 permissões da Royalty (6–7 por potência: entregas, trabalhadores, ajuda militar com as nossas unidades, recall orbital da Forja, liteira do Coro), 1 ponto por cargo, uso pago com favor. No H, fabricar sem o cargo técnico licenciado da Forja é pirataria (Infâmia); androide desperto na colônia dá Infâmia na Forja e boa vontade nos Fora de Linha. No G, cada cargo licencia um caminho do VPE (Protetor → … → Arconte → Hemosage); sem o cargo o colono não destrava, a cerimônia dá de graça, perder o cargo revoga.
 - **Vassalagem:** só o Coro dá nível psíquico; a Forja dá vínculo mecanoide.
 
 ## Próximo passo
 
-Blocos da etapa 2 ainda abertos, na ordem sugerida: D, E, F, I, L, M, N, O (etapa 2); depois a etapa 3 (tecnologia licenciada). A escolha do próximo bloco é do usuário.
+Blocos da etapa 2 ainda abertos, na ordem sugerida: E, F, I, L, M, N, O (etapa 2); depois a etapa 3 (tecnologia licenciada). A escolha do próximo bloco é do usuário.
 
 ## Não commitado
 
-Nada (blocos G, H, B e K commitados em 2026-11-16; sem push).
+Nada (blocos G, H, B, K e D commitados e enviados ao GitHub em 2026-11-16).
 
 ## Como testar
 
@@ -30,6 +30,7 @@ Nada (blocos G, H, B e K commitados em 2026-11-16; sem push).
 - `xenogen` marca os androides dos Fora de Linha como PROBLEMA (`faccoes-menores`, 80; às vezes 1 aldeão androide em `faccoes-menores2`) e a regressão conta `problemas=0` como falha: ajustar as duas checagens.
 - Erros de terceiros não resolvidos: Warbolter ao largar arma; `Invalid pawn assigned to Bloodletter otherworldly role` (Vanilla Ideology Expanded, intermitente em `fase3`); causa raiz da falha de `Book.GenerateBook` (hoje só contornada).
 - Lojas ainda vendem roupas comuns genéricas; preços e quantidades do comércio sem balanceamento; equilíbrio de laser/bobina com o CE e do cavaleiro lacrado (320 pontos).
+- **VFE Medieval 2 sem PT-BR** (1540 textos; o TSV em inglês já está em `traducao/en/oskarpotocki.vfe.medieval2.tsv`): aparece "wine" nos bloqueios do torneio e do dízimo.
 - Facção rebelde do Hegemony, ícones das facções menores, bug Facial Animation / Seamless World, traduções restantes.
 - Itens "(decidir)" do `PLANO.md`.
 
