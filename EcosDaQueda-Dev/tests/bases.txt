@@ -1,0 +1,8 @@
+# Bloco K: bases das potências (Custom Base Framework). Rodar com -Profile full.
+# Gera o mapa de uma base de cada potência e confere plano, prédios e defensores.
+newgame
+timeout 1200
+base silencio
+base helice
+base forja
+base coro

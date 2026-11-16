@@ -80,3 +80,9 @@
 - `1.7/Defs/EQ_Permits.xml` é **gerado** por `EcosDaQueda-Dev/scripts/permissoes.py` (editar a tabela no script e rodar). 25 `RoyalTitlePermitDef` com `faction` = a potência, `minTitle` = cargo dela e os workers do jogo: `DropResources`, `CallLaborers` (trabalhadores ficam sob controle do jogador), `CallAid` (nossas PawnKinds), `OrbitalStrike` (Forja), `CallShuttle` (Coro).
 - Pontos: o jogo soma `permitPointsAwarded` de todos os títulos até o atual (`Pawn_RoyaltyTracker.GetPermitPoints`), então basta `permitPointsAwarded` 1 em `EQ_TitleBase`. Comprar com pré-requisito substitui o anterior (regra do jogo). O 1º uso de cada permissão depois de comprá-la é grátis (regra do jogo); depois gasta o favor do líder, o mesmo que sobe de cargo.
 - O botão "Escolher permissão" aparece no colono com pontos sobrando; a aba Permissões fica no cartão de informações.
+
+## Bases das potências (Custom Base Framework)
+
+- `1.7/Defs/EQ_Bases.xml` (tudo com `MayRequire="EvilEyeGuy.CustomBaseFramework"`): `EQ_Plan_Silencio/Helice/Forja/Coro` com `factionTags` = a nossa FactionDef, o que tira a potência dos planos genéricos do CBF. Prédios por etiqueta `CBF_Vanilla_*` (lista de categorias com peças: contar `<categories>` nos `PieceDef` do CBF; `CBF_Vanilla_GiantTurret` só existe com o mod da torre imperial, não usar). Garagem/pátio de veículos com `MayRequire` do VVE.
+- **Defensores** (decompilado de `Defenders.Populate`): com `wealthFactor` > 0 o CBF usa orçamento por riqueza (`GarrisonBudget`); põe primeiro as nossas listas `EQ_Garrison_*` (`PawnListDef`, papéis Guard/Sentry/Civilian) e completa com o grupo `Settlement` da facção. `defenderPoints` só vale fora desse modo. O número varia com a riqueza sorteada.
+- Teste: `Angriffsvorschau.Plan(Settlement)` dá o plano que a base vai usar.
