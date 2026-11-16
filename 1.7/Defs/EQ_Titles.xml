@@ -33,6 +33,8 @@
     <canBeInherited>false</canBeInherited>
     <changeHeirQuestPoints>1000</changeHeirQuestPoints>
     <allowDignifiedMeditationFocus>False</allowDignifiedMeditationFocus>
+    <!-- 1 ponto de permissão por cargo (EQ_Permits.xml) -->
+    <permitPointsAwarded>1</permitPointsAwarded>
   </RoyalTitleDef>
 
   <RoyalTitleDef Abstract="True" Name="EQ_TitleSilencio" ParentName="EQ_TitleBase">

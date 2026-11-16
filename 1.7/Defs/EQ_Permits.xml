@@ -1,0 +1,553 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <!-- Permissões por cargo (sistema de permissões da Royalty). Cada cargo dá 1 ponto (permitPointsAwarded em
+       EQ_Titles.xml › EQ_TitleBase); o uso gasta favor do líder. GERADO por EcosDaQueda-Dev/scripts/permissoes.py. -->
+
+  <!-- ===================================================================== SILENCIO -->
+  <RoyalTitlePermitDef>
+    <defName>EQ_Permit_Silencio_Racao</defName>
+    <label>ração de campo</label>
+    <description>Uma caixa com 20 rações de sobrevivência, rotuladas "nutrição experimental, lote 7". Ninguém pergunta o que aconteceu com os lotes 1 a 6.</description>
+    <workerClass>RoyalTitlePermitWorker_DropResources</workerClass>
+    <minTitle>EQ_Title_Silencio_1</minTitle>
+    <faction>EQ_Faction_Silencio</faction>
+    <permitPointCost>1</permitPointCost>
+    <cooldownDays>45</cooldownDays>
+    <uiPosition>(0,0)</uiPosition>
+    <usableOnWorldMap>true</usableOnWorldMap>
+    <royalAid>
+      <favorCost>3</favorCost>
+      <targetingRange>39.9</targetingRange>
+      <itemsToDrop>
+        <MealSurvivalPack>20</MealSurvivalPack>
+      </itemsToDrop>
+    </royalAid>
+    <layerBlacklist>
+      <li MayRequire="Ludeon.RimWorld.Odyssey">Orbit</li>
+    </layerBlacklist>
+  </RoyalTitlePermitDef>
+  <RoyalTitlePermitDef>
+    <defName>EQ_Permit_Silencio_Coleta</defName>
+    <label>equipe de coleta</label>
+    <description>4 acólitos pesquisadores ajudam por 4 dias. Fazem qualquer trabalho braçal e anotam tudo, inclusive o que você não quer que anotem.</description>
+    <workerClass>RoyalTitlePermitWorker_CallLaborers</workerClass>
+    <minTitle>EQ_Title_Silencio_2</minTitle>
+    <faction>EQ_Faction_Silencio</faction>
+    <permitPointCost>1</permitPointCost>
+    <cooldownDays>60</cooldownDays>
+    <uiPosition>(0,1)</uiPosition>
+    <royalAid>
+      <favorCost>4</favorCost>
+      <pawnKindDef>EQ_Silencio_Acolito</pawnKindDef>
+      <pawnCount>4</pawnCount>
+      <aidDurationDays>4</aidDurationDays>
+      <targetingRange>44.9</targetingRange>
+      <targetingRequireLOS>false</targetingRequireLOS>
+    </royalAid>
+    <layerBlacklist>
+      <li MayRequire="Ludeon.RimWorld.Odyssey">Orbit</li>
+    </layerBlacklist>
+  </RoyalTitlePermitDef>
+  <RoyalTitlePermitDef>
+    <defName>EQ_Permit_Silencio_Remedio</defName>
+    <label>farmácia do arquivo</label>
+    <description>15 remédios industriais, catalogados, carimbados e com prazo de validade em latim.</description>
+    <workerClass>RoyalTitlePermitWorker_DropResources</workerClass>
+    <minTitle>EQ_Title_Silencio_2</minTitle>
+    <faction>EQ_Faction_Silencio</faction>
+    <permitPointCost>1</permitPointCost>
+    <cooldownDays>45</cooldownDays>
+    <uiPosition>(0,2)</uiPosition>
+    <usableOnWorldMap>true</usableOnWorldMap>
+    <royalAid>
+      <favorCost>4</favorCost>
+      <targetingRange>39.9</targetingRange>
+      <itemsToDrop>
+        <MedicineIndustrial>15</MedicineIndustrial>
+      </itemsToDrop>
+    </royalAid>
+    <layerBlacklist>
+      <li MayRequire="Ludeon.RimWorld.Odyssey">Orbit</li>
+    </layerBlacklist>
+  </RoyalTitlePermitDef>
+  <RoyalTitlePermitDef>
+    <defName>EQ_Permit_Silencio_Guardioes</defName>
+    <label>guardiões da contenção</label>
+    <description>4 guardiões da contenção vêm ajudar em combate. São treinados para manter coisas horríveis do lado de dentro; do lado de fora também funcionam.</description>
+    <workerClass>RoyalTitlePermitWorker_CallAid</workerClass>
+    <minTitle>EQ_Title_Silencio_3</minTitle>
+    <faction>EQ_Faction_Silencio</faction>
+    <permitPointCost>1</permitPointCost>
+    <cooldownDays>40</cooldownDays>
+    <uiPosition>(0,3)</uiPosition>
+    <royalAid>
+      <favorCost>5</favorCost>
+      <pawnKindDef>EQ_Silencio_Guardiao</pawnKindDef>
+      <pawnCount>4</pawnCount>
+      <targetingRange>39.9</targetingRange>
+    </royalAid>
+    <layerBlacklist>
+      <li MayRequire="Ludeon.RimWorld.Odyssey">Orbit</li>
+    </layerBlacklist>
+  </RoyalTitlePermitDef>
+  <RoyalTitlePermitDef MayRequire="Ludeon.RimWorld.Anomaly">
+    <defName>EQ_Permit_Silencio_Bioferrita</defName>
+    <label>remessa de bioferrita</label>
+    <description>100 de bioferrita "de origem documentada". A documentação está num cofre que ninguém tem coragem de abrir.</description>
+    <workerClass>RoyalTitlePermitWorker_DropResources</workerClass>
+    <minTitle>EQ_Title_Silencio_4</minTitle>
+    <faction>EQ_Faction_Silencio</faction>
+    <permitPointCost>1</permitPointCost>
+    <cooldownDays>45</cooldownDays>
+    <uiPosition>(0,4)</uiPosition>
+    <usableOnWorldMap>true</usableOnWorldMap>
+    <royalAid>
+      <favorCost>6</favorCost>
+      <targetingRange>39.9</targetingRange>
+      <itemsToDrop>
+        <Bioferrite>100</Bioferrite>
+      </itemsToDrop>
+    </royalAid>
+    <layerBlacklist>
+      <li MayRequire="Ludeon.RimWorld.Odyssey">Orbit</li>
+    </layerBlacklist>
+  </RoyalTitlePermitDef>
+  <RoyalTitlePermitDef>
+    <defName>EQ_Permit_Silencio_Contencao</defName>
+    <label>protocolo de contenção total</label>
+    <description>8 guardiões da contenção. Usado quando o problema já tem número de catálogo e fome.</description>
+    <workerClass>RoyalTitlePermitWorker_CallAid</workerClass>
+    <minTitle>EQ_Title_Silencio_6</minTitle>
+    <faction>EQ_Faction_Silencio</faction>
+    <permitPointCost>1</permitPointCost>
+    <cooldownDays>60</cooldownDays>
+    <uiPosition>(1,3)</uiPosition>
+    <prerequisite>EQ_Permit_Silencio_Guardioes</prerequisite>
+    <royalAid>
+      <favorCost>8</favorCost>
+      <pawnKindDef>EQ_Silencio_Guardiao</pawnKindDef>
+      <pawnCount>8</pawnCount>
+      <targetingRange>39.9</targetingRange>
+    </royalAid>
+    <layerBlacklist>
+      <li MayRequire="Ludeon.RimWorld.Odyssey">Orbit</li>
+    </layerBlacklist>
+  </RoyalTitlePermitDef>
+
+  <!-- ===================================================================== HELICE -->
+  <RoyalTitlePermitDef>
+    <defName>EQ_Permit_Helice_Amostras</defName>
+    <label>amostras grátis</label>
+    <description>15 remédios industriais em embalagem promocional. "Experimente a versão premium por apenas a sua linhagem."</description>
+    <workerClass>RoyalTitlePermitWorker_DropResources</workerClass>
+    <minTitle>EQ_Title_Helice_1</minTitle>
+    <faction>EQ_Faction_Helice</faction>
+    <permitPointCost>1</permitPointCost>
+    <cooldownDays>45</cooldownDays>
+    <uiPosition>(0,0)</uiPosition>
+    <usableOnWorldMap>true</usableOnWorldMap>
+    <royalAid>
+      <favorCost>3</favorCost>
+      <targetingRange>39.9</targetingRange>
+      <itemsToDrop>
+        <MedicineIndustrial>15</MedicineIndustrial>
+      </itemsToDrop>
+    </royalAid>
+    <layerBlacklist>
+      <li MayRequire="Ludeon.RimWorld.Odyssey">Orbit</li>
+    </layerBlacklist>
+  </RoyalTitlePermitDef>
+  <RoyalTitlePermitDef>
+    <defName>EQ_Permit_Helice_Estagiarios</defName>
+    <label>estagiários genéticos</label>
+    <description>4 estagiários trabalham para você por 4 dias, sem remuneração, pela experiência e por uma linha no currículo genético.</description>
+    <workerClass>RoyalTitlePermitWorker_CallLaborers</workerClass>
+    <minTitle>EQ_Title_Helice_2</minTitle>
+    <faction>EQ_Faction_Helice</faction>
+    <permitPointCost>1</permitPointCost>
+    <cooldownDays>60</cooldownDays>
+    <uiPosition>(0,1)</uiPosition>
+    <royalAid>
+      <favorCost>4</favorCost>
+      <pawnKindDef>EQ_Helice_Estagiario</pawnKindDef>
+      <pawnCount>4</pawnCount>
+      <aidDurationDays>4</aidDurationDays>
+      <targetingRange>44.9</targetingRange>
+      <targetingRequireLOS>false</targetingRequireLOS>
+    </royalAid>
+    <layerBlacklist>
+      <li MayRequire="Ludeon.RimWorld.Odyssey">Orbit</li>
+    </layerBlacklist>
+  </RoyalTitlePermitDef>
+  <RoyalTitlePermitDef>
+    <defName>EQ_Permit_Helice_Fiscais</defName>
+    <label>auditoria armada</label>
+    <description>4 fiscais de linhagem vêm resolver o seu problema. Antes, conferem se você tem licença para tê-lo.</description>
+    <workerClass>RoyalTitlePermitWorker_CallAid</workerClass>
+    <minTitle>EQ_Title_Helice_3</minTitle>
+    <faction>EQ_Faction_Helice</faction>
+    <permitPointCost>1</permitPointCost>
+    <cooldownDays>40</cooldownDays>
+    <uiPosition>(0,2)</uiPosition>
+    <royalAid>
+      <favorCost>5</favorCost>
+      <pawnKindDef>EQ_Helice_Fiscal</pawnKindDef>
+      <pawnCount>4</pawnCount>
+      <targetingRange>39.9</targetingRange>
+    </royalAid>
+    <layerBlacklist>
+      <li MayRequire="Ludeon.RimWorld.Odyssey">Orbit</li>
+    </layerBlacklist>
+  </RoyalTitlePermitDef>
+  <RoyalTitlePermitDef>
+    <defName>EQ_Permit_Helice_Premium</defName>
+    <label>linha premium</label>
+    <description>5 remédios de ultratecnologia. Assinatura mensal; o cancelamento exige comparecimento pessoal e um rim.</description>
+    <workerClass>RoyalTitlePermitWorker_DropResources</workerClass>
+    <minTitle>EQ_Title_Helice_4</minTitle>
+    <faction>EQ_Faction_Helice</faction>
+    <permitPointCost>1</permitPointCost>
+    <cooldownDays>45</cooldownDays>
+    <uiPosition>(0,3)</uiPosition>
+    <usableOnWorldMap>true</usableOnWorldMap>
+    <royalAid>
+      <favorCost>6</favorCost>
+      <targetingRange>39.9</targetingRange>
+      <itemsToDrop>
+        <MedicineUltratech>5</MedicineUltratech>
+      </itemsToDrop>
+    </royalAid>
+    <layerBlacklist>
+      <li MayRequire="Ludeon.RimWorld.Odyssey">Orbit</li>
+    </layerBlacklist>
+  </RoyalTitlePermitDef>
+  <RoyalTitlePermitDef>
+    <defName>EQ_Permit_Helice_Prototipos</defName>
+    <label>lançamento de protótipos</label>
+    <description>4 protótipos premium em teste de campo. Se morrerem, a Hélice agradece os dados.</description>
+    <workerClass>RoyalTitlePermitWorker_CallAid</workerClass>
+    <minTitle>EQ_Title_Helice_5</minTitle>
+    <faction>EQ_Faction_Helice</faction>
+    <permitPointCost>1</permitPointCost>
+    <cooldownDays>60</cooldownDays>
+    <uiPosition>(1,2)</uiPosition>
+    <prerequisite>EQ_Permit_Helice_Fiscais</prerequisite>
+    <royalAid>
+      <favorCost>8</favorCost>
+      <pawnKindDef>EQ_Helice_Prototipo</pawnKindDef>
+      <pawnCount>4</pawnCount>
+      <targetingRange>39.9</targetingRange>
+    </royalAid>
+    <layerBlacklist>
+      <li MayRequire="Ludeon.RimWorld.Odyssey">Orbit</li>
+    </layerBlacklist>
+  </RoyalTitlePermitDef>
+  <RoyalTitlePermitDef>
+    <defName>EQ_Permit_Helice_Dividendos</defName>
+    <label>dividendos</label>
+    <description>600 de prata em dividendos. Pagos com atraso, descontada a taxa de administração da taxa de administração.</description>
+    <workerClass>RoyalTitlePermitWorker_DropResources</workerClass>
+    <minTitle>EQ_Title_Helice_6</minTitle>
+    <faction>EQ_Faction_Helice</faction>
+    <permitPointCost>1</permitPointCost>
+    <cooldownDays>45</cooldownDays>
+    <uiPosition>(0,4)</uiPosition>
+    <usableOnWorldMap>true</usableOnWorldMap>
+    <royalAid>
+      <favorCost>6</favorCost>
+      <targetingRange>39.9</targetingRange>
+      <itemsToDrop>
+        <Silver>600</Silver>
+      </itemsToDrop>
+    </royalAid>
+    <layerBlacklist>
+      <li MayRequire="Ludeon.RimWorld.Odyssey">Orbit</li>
+    </layerBlacklist>
+  </RoyalTitlePermitDef>
+
+  <!-- ===================================================================== FORJA -->
+  <RoyalTitlePermitDef>
+    <defName>EQ_Permit_Forja_Aco</defName>
+    <label>lote de aço</label>
+    <description>250 de aço com certificado de conformidade. O certificado pesa mais do que parece.</description>
+    <workerClass>RoyalTitlePermitWorker_DropResources</workerClass>
+    <minTitle>EQ_Title_Forja_1</minTitle>
+    <faction>EQ_Faction_Forja</faction>
+    <permitPointCost>1</permitPointCost>
+    <cooldownDays>45</cooldownDays>
+    <uiPosition>(0,0)</uiPosition>
+    <usableOnWorldMap>true</usableOnWorldMap>
+    <royalAid>
+      <favorCost>3</favorCost>
+      <targetingRange>39.9</targetingRange>
+      <itemsToDrop>
+        <Steel>250</Steel>
+      </itemsToDrop>
+    </royalAid>
+    <layerBlacklist>
+      <li MayRequire="Ludeon.RimWorld.Odyssey">Orbit</li>
+    </layerBlacklist>
+  </RoyalTitlePermitDef>
+  <RoyalTitlePermitDef>
+    <defName>EQ_Permit_Forja_Aprendizes</defName>
+    <label>aprendizes de manutenção</label>
+    <description>4 aprendizes trabalham por 4 dias. Leem o manual antes de cada tarefa, em voz alta.</description>
+    <workerClass>RoyalTitlePermitWorker_CallLaborers</workerClass>
+    <minTitle>EQ_Title_Forja_2</minTitle>
+    <faction>EQ_Faction_Forja</faction>
+    <permitPointCost>1</permitPointCost>
+    <cooldownDays>60</cooldownDays>
+    <uiPosition>(0,1)</uiPosition>
+    <royalAid>
+      <favorCost>4</favorCost>
+      <pawnKindDef>EQ_Forja_Aprendiz</pawnKindDef>
+      <pawnCount>4</pawnCount>
+      <aidDurationDays>4</aidDurationDays>
+      <targetingRange>44.9</targetingRange>
+      <targetingRequireLOS>false</targetingRequireLOS>
+    </royalAid>
+    <layerBlacklist>
+      <li MayRequire="Ludeon.RimWorld.Odyssey">Orbit</li>
+    </layerBlacklist>
+  </RoyalTitlePermitDef>
+  <RoyalTitlePermitDef>
+    <defName>EQ_Permit_Forja_Pecas</defName>
+    <label>peças de reposição</label>
+    <description>15 componentes originais. Usar peça paralela anula a garantia, e a garantia é a sua alma.</description>
+    <workerClass>RoyalTitlePermitWorker_DropResources</workerClass>
+    <minTitle>EQ_Title_Forja_2</minTitle>
+    <faction>EQ_Faction_Forja</faction>
+    <permitPointCost>1</permitPointCost>
+    <cooldownDays>45</cooldownDays>
+    <uiPosition>(0,2)</uiPosition>
+    <usableOnWorldMap>true</usableOnWorldMap>
+    <royalAid>
+      <favorCost>4</favorCost>
+      <targetingRange>39.9</targetingRange>
+      <itemsToDrop>
+        <ComponentIndustrial>15</ComponentIndustrial>
+      </itemsToDrop>
+    </royalAid>
+    <layerBlacklist>
+      <li MayRequire="Ludeon.RimWorld.Odyssey">Orbit</li>
+    </layerBlacklist>
+  </RoyalTitlePermitDef>
+  <RoyalTitlePermitDef>
+    <defName>EQ_Permit_Forja_Cavaleiros</defName>
+    <label>cavaleiros da garantia</label>
+    <description>4 cavaleiros da garantia vêm atender o seu chamado. Prazo de atendimento: imediato, se o problema puder levar um tiro.</description>
+    <workerClass>RoyalTitlePermitWorker_CallAid</workerClass>
+    <minTitle>EQ_Title_Forja_3</minTitle>
+    <faction>EQ_Faction_Forja</faction>
+    <permitPointCost>1</permitPointCost>
+    <cooldownDays>40</cooldownDays>
+    <uiPosition>(0,3)</uiPosition>
+    <royalAid>
+      <favorCost>5</favorCost>
+      <pawnKindDef>EQ_Forja_Cavaleiro</pawnKindDef>
+      <pawnCount>4</pawnCount>
+      <targetingRange>39.9</targetingRange>
+    </royalAid>
+    <layerBlacklist>
+      <li MayRequire="Ludeon.RimWorld.Odyssey">Orbit</li>
+    </layerBlacklist>
+  </RoyalTitlePermitDef>
+  <RoyalTitlePermitDef>
+    <defName>EQ_Permit_Forja_Recall</defName>
+    <label>recall orbital</label>
+    <description>Um impacto orbital no alvo. A Forja chama isso de "recolhimento de produto defeituoso".</description>
+    <workerClass>RoyalTitlePermitWorker_OrbitalStrike</workerClass>
+    <minTitle>EQ_Title_Forja_4</minTitle>
+    <faction>EQ_Faction_Forja</faction>
+    <permitPointCost>1</permitPointCost>
+    <cooldownDays>45</cooldownDays>
+    <uiPosition>(0,4)</uiPosition>
+    <royalAid>
+      <favorCost>6</favorCost>
+      <targetingRange>44.9</targetingRange>
+      <radius>2.9</radius>
+      <explosionRadiusRange>7.9</explosionRadiusRange>
+      <explosionCount>1</explosionCount>
+      <intervalTicks>60</intervalTicks>
+      <warmupTicks>120</warmupTicks>
+    </royalAid>
+    <layerBlacklist>
+      <li MayRequire="Ludeon.RimWorld.Odyssey">Orbit</li>
+    </layerBlacklist>
+  </RoyalTitlePermitDef>
+  <RoyalTitlePermitDef>
+    <defName>EQ_Permit_Forja_Plastaco</defName>
+    <label>plastaço licenciado</label>
+    <description>100 de plastaço. Cada placa tem número de série; se aparecer no mercado negro, a Forja sabe de onde veio.</description>
+    <workerClass>RoyalTitlePermitWorker_DropResources</workerClass>
+    <minTitle>EQ_Title_Forja_5</minTitle>
+    <faction>EQ_Faction_Forja</faction>
+    <permitPointCost>1</permitPointCost>
+    <cooldownDays>45</cooldownDays>
+    <uiPosition>(0,5)</uiPosition>
+    <usableOnWorldMap>true</usableOnWorldMap>
+    <royalAid>
+      <favorCost>6</favorCost>
+      <targetingRange>39.9</targetingRange>
+      <itemsToDrop>
+        <Plasteel>100</Plasteel>
+      </itemsToDrop>
+    </royalAid>
+    <layerBlacklist>
+      <li MayRequire="Ludeon.RimWorld.Odyssey">Orbit</li>
+    </layerBlacklist>
+  </RoyalTitlePermitDef>
+  <RoyalTitlePermitDef>
+    <defName>EQ_Permit_Forja_Salva</defName>
+    <label>recall em massa</label>
+    <description>Uma salva de 6 impactos orbitais. Para quando o defeito é o lote inteiro.</description>
+    <workerClass>RoyalTitlePermitWorker_OrbitalStrike</workerClass>
+    <minTitle>EQ_Title_Forja_6</minTitle>
+    <faction>EQ_Faction_Forja</faction>
+    <permitPointCost>1</permitPointCost>
+    <cooldownDays>60</cooldownDays>
+    <uiPosition>(1,4)</uiPosition>
+    <prerequisite>EQ_Permit_Forja_Recall</prerequisite>
+    <royalAid>
+      <favorCost>8</favorCost>
+      <targetingRange>44.9</targetingRange>
+      <radius>5.9</radius>
+      <explosionRadiusRange>5.9</explosionRadiusRange>
+      <explosionCount>6</explosionCount>
+      <intervalTicks>60</intervalTicks>
+      <warmupTicks>120</warmupTicks>
+    </royalAid>
+    <layerBlacklist>
+      <li MayRequire="Ludeon.RimWorld.Odyssey">Orbit</li>
+    </layerBlacklist>
+  </RoyalTitlePermitDef>
+
+  <!-- ===================================================================== CORO -->
+  <RoyalTitlePermitDef>
+    <defName>EQ_Permit_Coro_Banquete</defName>
+    <label>banquete de cortesia</label>
+    <description>20 refeições finas, servidas com etiqueta. Comer com a mão errada é registrado.</description>
+    <workerClass>RoyalTitlePermitWorker_DropResources</workerClass>
+    <minTitle>EQ_Title_Coro_1</minTitle>
+    <faction>EQ_Faction_Coro</faction>
+    <permitPointCost>1</permitPointCost>
+    <cooldownDays>45</cooldownDays>
+    <uiPosition>(0,0)</uiPosition>
+    <usableOnWorldMap>true</usableOnWorldMap>
+    <royalAid>
+      <favorCost>3</favorCost>
+      <targetingRange>39.9</targetingRange>
+      <itemsToDrop>
+        <MealFine>20</MealFine>
+      </itemsToDrop>
+    </royalAid>
+    <layerBlacklist>
+      <li MayRequire="Ludeon.RimWorld.Odyssey">Orbit</li>
+    </layerBlacklist>
+  </RoyalTitlePermitDef>
+  <RoyalTitlePermitDef>
+    <defName>EQ_Permit_Coro_Coristas</defName>
+    <label>coristas voluntários</label>
+    <description>4 coristas trabalham por 4 dias, cantando. Sem parar. Isso não é opcional.</description>
+    <workerClass>RoyalTitlePermitWorker_CallLaborers</workerClass>
+    <minTitle>EQ_Title_Coro_2</minTitle>
+    <faction>EQ_Faction_Coro</faction>
+    <permitPointCost>1</permitPointCost>
+    <cooldownDays>60</cooldownDays>
+    <uiPosition>(0,1)</uiPosition>
+    <royalAid>
+      <favorCost>4</favorCost>
+      <pawnKindDef>EQ_Coro_Corista</pawnKindDef>
+      <pawnCount>4</pawnCount>
+      <aidDurationDays>4</aidDurationDays>
+      <targetingRange>44.9</targetingRange>
+      <targetingRequireLOS>false</targetingRequireLOS>
+    </royalAid>
+    <layerBlacklist>
+      <li MayRequire="Ludeon.RimWorld.Odyssey">Orbit</li>
+    </layerBlacklist>
+  </RoyalTitlePermitDef>
+  <RoyalTitlePermitDef>
+    <defName>EQ_Permit_Coro_Tenores</defName>
+    <label>tenores de guerra</label>
+    <description>4 tenores de guerra vêm ajudar em combate. O inimigo ouve antes de ver; geralmente é a última coisa que ouve.</description>
+    <workerClass>RoyalTitlePermitWorker_CallAid</workerClass>
+    <minTitle>EQ_Title_Coro_3</minTitle>
+    <faction>EQ_Faction_Coro</faction>
+    <permitPointCost>1</permitPointCost>
+    <cooldownDays>40</cooldownDays>
+    <uiPosition>(0,2)</uiPosition>
+    <royalAid>
+      <favorCost>5</favorCost>
+      <pawnKindDef>EQ_Coro_Tenor</pawnKindDef>
+      <pawnCount>4</pawnCount>
+      <targetingRange>39.9</targetingRange>
+    </royalAid>
+    <layerBlacklist>
+      <li MayRequire="Ludeon.RimWorld.Odyssey">Orbit</li>
+    </layerBlacklist>
+  </RoyalTitlePermitDef>
+  <RoyalTitlePermitDef>
+    <defName>EQ_Permit_Coro_Liteira</defName>
+    <label>liteira do Coro</label>
+    <description>Uma nave de transporte para seu uso, levando gente e carga a até 70 regiões. Chegar a pé é falta de educação.</description>
+    <workerClass>RoyalTitlePermitWorker_CallShuttle</workerClass>
+    <minTitle>EQ_Title_Coro_4</minTitle>
+    <faction>EQ_Faction_Coro</faction>
+    <permitPointCost>1</permitPointCost>
+    <cooldownDays>40</cooldownDays>
+    <uiPosition>(0,3)</uiPosition>
+    <usableOnWorldMap>true</usableOnWorldMap>
+    <royalAid>
+      <favorCost>8</favorCost>
+      <targetingRange>44.9</targetingRange>
+      <targetingRequireLOS>false</targetingRequireLOS>
+    </royalAid>
+    <layerBlacklist>
+      <li MayRequire="Ludeon.RimWorld.Odyssey">Orbit</li>
+    </layerBlacklist>
+  </RoyalTitlePermitDef>
+  <RoyalTitlePermitDef>
+    <defName>EQ_Permit_Coro_Sopranos</defName>
+    <label>sopranos incandescentes</label>
+    <description>4 sopranos incandescentes. O agudo final derrete armaduras e casamentos.</description>
+    <workerClass>RoyalTitlePermitWorker_CallAid</workerClass>
+    <minTitle>EQ_Title_Coro_5</minTitle>
+    <faction>EQ_Faction_Coro</faction>
+    <permitPointCost>1</permitPointCost>
+    <cooldownDays>60</cooldownDays>
+    <uiPosition>(1,2)</uiPosition>
+    <prerequisite>EQ_Permit_Coro_Tenores</prerequisite>
+    <royalAid>
+      <favorCost>7</favorCost>
+      <pawnKindDef>EQ_Coro_Soprano</pawnKindDef>
+      <pawnCount>4</pawnCount>
+      <targetingRange>39.9</targetingRange>
+    </royalAid>
+    <layerBlacklist>
+      <li MayRequire="Ludeon.RimWorld.Odyssey">Orbit</li>
+    </layerBlacklist>
+  </RoyalTitlePermitDef>
+  <RoyalTitlePermitDef>
+    <defName>EQ_Permit_Coro_Ouro</defName>
+    <label>mecenato</label>
+    <description>60 de ouro de um mecenas anônimo. Anônimo até a próxima audição, quando ele vai cobrar.</description>
+    <workerClass>RoyalTitlePermitWorker_DropResources</workerClass>
+    <minTitle>EQ_Title_Coro_6</minTitle>
+    <faction>EQ_Faction_Coro</faction>
+    <permitPointCost>1</permitPointCost>
+    <cooldownDays>45</cooldownDays>
+    <uiPosition>(0,4)</uiPosition>
+    <usableOnWorldMap>true</usableOnWorldMap>
+    <royalAid>
+      <favorCost>6</favorCost>
+      <targetingRange>39.9</targetingRange>
+      <itemsToDrop>
+        <Gold>60</Gold>
+      </itemsToDrop>
+    </royalAid>
+    <layerBlacklist>
+      <li MayRequire="Ludeon.RimWorld.Odyssey">Orbit</li>
+    </layerBlacklist>
+  </RoyalTitlePermitDef>
+</Defs>
