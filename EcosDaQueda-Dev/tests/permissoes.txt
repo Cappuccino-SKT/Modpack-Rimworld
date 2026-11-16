@@ -1,0 +1,33 @@
+# Bloco B: permissões por cargo (sistema da Royalty). Rodar com -Profile full.
+# Forja: compra e usa entrega, trabalhadores, ajuda militar e bombardeio. Coro: nave, ajuda com pré-requisito.
+newgame
+timeout 900
+leader set 0
+join forja
+wait 1h
+psy title 4 forja
+favor 60
+permit list
+permit buy EQ_Permit_Forja_Aco
+permit use EQ_Permit_Forja_Aco
+permit buy EQ_Permit_Forja_Aprendizes
+permit use EQ_Permit_Forja_Aprendizes
+permit buy EQ_Permit_Forja_Cavaleiros
+permit use EQ_Permit_Forja_Cavaleiros
+permit buy EQ_Permit_Forja_Recall
+permit use EQ_Permit_Forja_Recall
+wait 2h
+permit list
+join coro
+wait 1h
+psy title 5 coro
+favor 60
+permit buy EQ_Permit_Coro_Tenores
+permit buy EQ_Permit_Coro_Sopranos
+permit use EQ_Permit_Coro_Sopranos
+permit buy EQ_Permit_Coro_Liteira
+permit use EQ_Permit_Coro_Liteira
+wait 2h
+permit list
+wait 6h
+permit list

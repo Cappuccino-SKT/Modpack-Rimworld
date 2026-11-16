@@ -74,3 +74,9 @@
 
 - `Source/EcosDaQueda/Androids.cs` + `1.7/Defs/EQ_Androids.xml` (`AndroidPolicyDef`): potência que licencia (`licensor`, Forja), índice do cargo que licencia (`licenseRank` 1 = técnico licenciado; vale qualquer colono livre com esse cargo ou acima), boa vontade da pirataria, do androide desperto e dos libertadores (`liberator`, Fora de Linha). Só mexe em **boa vontade**: o patch de `TryAffectGoodwillWith` já converte em Fama/Infâmia (1:1) e a repercussão manda Infâmia extra à Forja quando os Fora de Linha (inimigos dela) ganham.
 - Ganchos (por reflexão; sem o VRE Android nada acontece): postfix em `Building_AndroidCreationStation.FinishAndroidProject` (pirataria; o prefixo olha o `curAndroidProject` para saber se sai desperto — desperto = nenhum `AndroidGeneDef.removeWhenAwakened`); postfix em `Gene_SyntheticBody.Awaken` (desperta sendo do jogador); prefixo+postfix em `Pawn.SetFaction` (androide já desperto passa a ser do jogador). `VREAndroids.Utils.IsAndroid/IsAwakened` por reflexão.
+
+## Permissões por cargo (Royalty)
+
+- `1.7/Defs/EQ_Permits.xml` é **gerado** por `EcosDaQueda-Dev/scripts/permissoes.py` (editar a tabela no script e rodar). 25 `RoyalTitlePermitDef` com `faction` = a potência, `minTitle` = cargo dela e os workers do jogo: `DropResources`, `CallLaborers` (trabalhadores ficam sob controle do jogador), `CallAid` (nossas PawnKinds), `OrbitalStrike` (Forja), `CallShuttle` (Coro).
+- Pontos: o jogo soma `permitPointsAwarded` de todos os títulos até o atual (`Pawn_RoyaltyTracker.GetPermitPoints`), então basta `permitPointsAwarded` 1 em `EQ_TitleBase`. Comprar com pré-requisito substitui o anterior (regra do jogo). O 1º uso de cada permissão depois de comprá-la é grátis (regra do jogo); depois gasta o favor do líder, o mesmo que sobe de cargo.
+- O botão "Escolher permissão" aparece no colono com pontos sobrando; a aba Permissões fica no cartão de informações.

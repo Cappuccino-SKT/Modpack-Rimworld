@@ -60,6 +60,8 @@ Preliminar: o que hoje **não tem ligação** com as nossas facções e sistemas
 | N. Mundo | V Landmarks Expanded | sem ligação | marcos com nome e história nossos |
 | O. Genes | VRE Starjack, Phytokin, Fungoid, Saurid, Lycanthrope | 0 a 2 genes usados | conferir se algum xeno nosso deve usá-los; se não, só como mercadoria do Soro/Hélice |
 
+**Andamento (2026-11-16, bloco B):** feitas as permissões por cargo das 4 potências (25, sistema da Royalty). Fica para depois: contrabando e tramas dos Desertores (fase 2 dos Fora de Linha). Próximo sugerido: **K**.
+
 **Andamento (2026-11-16, bloco H):** feito — licença de fabricação (cargo técnico licenciado da Forja; sem ele, pirataria com Infâmia) e androide desperto na colônia (Infâmia na Forja, boa vontade nos Fora de Linha). Fica para depois: missão de recall do desperto. Próximos sugeridos: **B**, **K**.
 
 **Andamento (2026-11-16, bloco G):** feito — cada cargo do Coro licencia um caminho do VPE (trava, cerimônia dá de graça, perda revoga) e o Maestro Supremo usa o Hemosage. Próximos sugeridos: **H**, **B**, **K**.
