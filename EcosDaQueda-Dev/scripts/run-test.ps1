@@ -6,6 +6,7 @@
 #   run-test.ps1 -Script ..\tests\x.txt -Save Test          (copia o save "Test" do jogador para o perfil de teste)
 #   run-test.ps1 -Script ..\tests\x.txt -Window             (mostra a janela do jogo, para depurar)
 #   run-test.ps1 -Build ...                                 (compila os 3 projetos C# antes)
+#   run-test.ps1 ... -Full | -Show 'regex'                  (relatório inteiro | resumo + linhas que casam)
 #
 # O jogo roda com -savedatafolder numa pasta isolada (EcosDaQueda-Dev\test-profile\<perfil>),
 # executa os comandos do script (ver TESTES.md), grava <script>.result.txt em tests\out e fecha.
@@ -15,6 +16,8 @@ param(
     [string]$Save,
     [switch]$Window,
     [switch]$Build,
+    [switch]$Full,              # imprime o relatório inteiro (o padrão é só o resumo: erros, PROBLEMAS e RESULTADO)
+    [string]$Show,              # regex: no resumo, mostra também as linhas do relatório que casarem
     [string[]]$Exclude = @(),   # packageIds a desativar no perfil de teste (ex.: ecosdaqueda.traducao ao exportar textos)
     [int]$TimeoutSec = 1200
 )
@@ -73,7 +76,18 @@ if (-not $p.WaitForExit($TimeoutSec * 1000)) { $p.Kill(); "!! O jogo não fechou
 "== jogo encerrado em $([int]$sw.Elapsed.TotalSeconds)s (código $($p.ExitCode))"
 
 # ---- relatório
-if (Test-Path $result) { Get-Content $result -Encoding UTF8 } else { '!! Sem arquivo de resultado: o executor não chegou a iniciar (mod de debug não carregou?).' }
+if (Test-Path $result) {
+    $lines = @(Get-Content $result -Encoding UTF8)
+    if ($Full) { $lines }
+    else {
+        $pat = '^!!|PROBLEMAS|^# RESULTADO'
+        if ($Show) { $pat += '|' + $Show }
+        $hit = @($lines | Where-Object { $_ -match $pat })
+        $hit | Select-Object -First 40 | ForEach-Object { if ($_.Length -gt 300) { $_.Substring(0, 300) + ' ...' } else { $_ } }
+        if ($hit.Count -gt 40) { "... (+$($hit.Count - 40) linhas)" }
+        "== relatório completo ($($lines.Count) linhas): $result"
+    }
+} else { '!! Sem arquivo de resultado: o executor não chegou a iniciar (mod de debug não carregou?).' }
 $log = Get-ChildItem $profileDir -Recurse -Filter Player.log -ErrorAction SilentlyContinue | Sort-Object LastWriteTime -Descending | Select-Object -First 1
 if (-not $log) { $log = Get-Item (Join-Path $userData 'Logs\Player.log') -ErrorAction SilentlyContinue }
 if ($log) {
@@ -81,5 +95,5 @@ if ($log) {
     $noise = 'Knowledge data was missing key|GAGARIN|\[Vulkan\]|NativeAllocation|hideFlags|Translation data for language|Could not find player faction|trailing whitespace|AsyncGPUReadback failed|Error in ParallelForEach|Bad string pass when reading rule'
     Get-Content $log.FullName -Encoding UTF8 | Where-Object { $_ -match '^\d{4}-\d\d-\d\d .* (ERROR|WARN) ' -and $_ -notmatch $noise } |
         ForEach-Object { $_.Substring(24).Substring(0, [Math]::Min(260, $_.Length - 24)) } |
-        Group-Object | Sort-Object Count -Descending | Select-Object -First 25 | ForEach-Object { "{0,5} {1}" -f $_.Count, $_.Name }
+        Group-Object | Sort-Object Count -Descending | Select-Object -First $(if ($Full) { 25 } else { 8 }) | ForEach-Object { "{0,5} {1}" -f $_.Count, $_.Name.Substring(0, [Math]::Min($(if ($Full) { 260 } else { 140 }), $_.Name.Length)) }
 }

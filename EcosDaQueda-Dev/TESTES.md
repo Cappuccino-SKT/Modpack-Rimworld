@@ -4,6 +4,8 @@
 
 `scripts/run-test.ps1 -Script tests/<roteiro>.txt [-Build] [-Profile lean|full] [-Save <nome>] [-Window] [-TimeoutSec N]`
 
+- **Saída resumida por padrão:** só as linhas `!!`, `PROBLEMAS` e `RESULTADO` (mais as que casarem com `-Show '<regex>'`); `-Full` imprime o relatório inteiro. O relatório completo fica sempre em `tests/out/`: consultar com busca, não despejar na conversa.
+- **Regressão inteira:** `scripts/regress.ps1 [-Build] [-Tests a,b] [-Long]` roda os roteiros no perfil full e imprime uma linha por teste (`-Long` inclui `mundo`, ~20 min; rodar em segundo plano).
 - Abre `RimWorld.exe -Headless -savedatafolder=<perfil isolado> -eqtest=<roteiro> -eqout=<relatório>`; o mod `EcosDaQuedaDebug` (`TestRunner.cs`) executa os comandos e fecha o jogo.
 - Perfil **lean** (padrão): Harmony, DLCs, VEF, VIE Memes, Alpha Memes, VPE, Jaeger Framework, Hegemony, Ecos da Queda e o mod de debug. Jogo novo pronto em ~25 s. Perfil **full**: todos os mods ativos do usuário.
 - Perfis ficam em `test-profile/` (descartável). Relatórios em `tests/out/<roteiro>.<perfil>.result.txt`. Linhas `!! LOG ERROR` são erros do log durante o teste; a última linha diz `RESULTADO: SEM ERROS` ou quantos erros.
@@ -95,3 +97,13 @@ Com o modo desenvolvedor ligado (Opções), o menu de debug ganha a categoria **
 - Faltavam dependências: Jaeger's Utility Framework (3825311621) e Vehicle Framework (3014915404).
 - `VPE_Puppeteer` não existe → trocado por `VPE_Empath`.
 - Nomes de assentamento esgotavam (Hegemony cria muitas cidades) → listas ampliadas com pesos e numeração.
+
+- `tests/cerimonia-helice.txt`, `cerimonia-forja.txt`, `cerimonia-coro.txt` (full): submissão completa em cada potência; `leader show` mostra `nívelPsíquico` e `vínculoMecanoide` do líder.
+- `newgame [ScenarioDef] [StorytellerDef]`: sem argumentos usa Crashlanded + Cassandra (como antes).
+- `start`: narradores e cenários visíveis/ocultos, cenário e narrador em uso, xenos permitidos, xenos dos colonos, e o menu de xenotipos depois do filtro. Testes `tests/inicio.txt`, `tests/inicio-forja.txt`.
+- `modusage [todos|<packageId>]`: por mod, quantos defs dele as nossas facções usam (unidades, armas e roupas por etiqueta, estoque de comércio, genes, memes, preceitos) e quanto conteúdo ele tem. Teste `tests/modusage.txt`.
+- `psy [show]` ; `psy title <n>` ; `psy grant` ; `psy gen <PawnKind> [n]`: caminhos psíquicos licenciados (VPE) do líder — caminhos destravados, pontos, e quais licenças ele pode usar (+/-); `title` põe o cargo n do Coro (0 tira; a lealdade repõe o cargo dela na hora seguinte); `grant` destrava os licenciados; `gen` conta os caminhos de n unidades geradas. Teste `tests/psy-coro.txt` (cerimônia, promoção, rebaixamento, saída da lealdade com `join none`).
+- `kit <PawnKind|fac:nome> [n]`: gera n unidades e resume armas, quantas vieram sem arma, munição de reserva (CE) e roupas; acusa PROBLEMAS se mais da metade vier desarmada. Testes `tests/arsenal.txt`, `tests/arsenal-forja.txt`.
+- `weapontags [roupas]`: todas as armas (ou roupas) com mod, nível tecnológico, valor e etiquetas de sorteio. Teste `tests/weapontags.txt`.
+- `trader [TraderKindDef]`: gera o estoque (sem argumento, de todos os `EQ_*`) e resume armas, roupas, munição, itens de maior valor e os geradores tirados da cópia. `tradeinfo`: itens comerciáveis por mod, categoria e etiqueta. Teste `tests/comercio.txt`.
+- Ruído conhecido de terceiros (intermitente): `Invalid pawn assigned to ... role` (Vanilla Ideology Expanded com ideologia sorteada do jogador).

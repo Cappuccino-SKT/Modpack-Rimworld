@@ -117,6 +117,47 @@ Não são potências: sem ideologia fixa, cargos, Fama/Infâmia própria nem ser
 
 **Feira móvel:** com o VFE Medieval 2, a Feira Andante não tem assentamento fixo. São 8 feiras (escala com a população do mundo) que ficam paradas de 5 a 30 dias num ponto do mapa-múndi e depois viajam 20 a 30 tiles. Dá para visitar com caravana e negociar (estoque de assentamento de forasteiros) ou atacar (vira inimiga). Caravanas e visitantes da Feira continuam chegando à colônia normalmente.
 
+**Ideologias das menores:** Fora de Linha = O Protocolo Zero; Não Catalogados = A Carne sem Verbete; Feira Andante = **A Liquidação Eterna** (tudo tem preço, quem para de rodar começa a dever; vende órgão como vende repolho); Sindicato do Saque = **O Dissídio Coletivo** (saque é negociação coletiva, contribuição sindical em água, fumo e dedos).
+
+**Vassalagem e poder de cada potência:** só o Coro dá nível psíquico pelos cargos, e cada cargo **licencia um caminho do VPE** (ouvinte: Protetor; corista: Empata; solista: Senhor da Estática; spalla: Senhor da Guerra; regente: Conflagrador; mestre de capela: Arconte; maestro honorário: Hemosage, só para hemogênicos). Sem o cargo o colono não destrava esses caminhos (nem por psitreinador); a cerimônia dá o caminho de graça; perder o cargo revoga. Os outros caminhos do VPE são livres; a Forja dá vínculo mecanoide na submissão; Silêncio e Hélice dão acesso pelos serviços e, no futuro, por tecnologia licenciada (ver PLANO.md › Etapa 3).
+
+**Arsenal por facção** (`Defs/Arsenal/EQ_Arsenal.xml`):
+
+| Facção | Base | Elite |
+|---|---|---|
+| Silêncio | armas discretas: revólver, escopeta, ferrolho, cano serrado | bioferrita (VWE Bioferrite), incinerador, lança-chamas, espeto de nervos |
+| Hélice | armas curtas de segurança: pistolas e submetralhadoras | carga compacta e carabina laser (fiscais); linha laser (VWE Laser) e armas de feixe (protótipos, diretoria) |
+| Forja | armas mecânicas de ferrolho e alavanca (VWE Frontier) | canhões de bobina (VWE Coilguns), metralhadoras, minigun, antimaterial; **cavaleiro lacrado** em armadura-caixão (VFE Pirates) |
+| Coro | revólver, rifle de alavanca, sabre, espada | armas de carga, impactador e flecheiro do VFE Empire, lâmina tóxica, monoespada, armas de eltex (VPE) |
+| Fora de Linha | armas militares comuns | precisão; a Unidade Zero usa bobina tomada da Forja |
+| Sindicato do Saque | armas improvisadas (VWE Makeshift), pederneira, porrete e facão | AK e escopetas velhas (cobradores); laser de sucata e metralhadora (diretoria) |
+| Feira Andante | armas de fronteira (VWE Frontier), revólver, escopeta | — |
+| Não Catalogados | (sem mudança) armas neolíticas e medievais | — |
+
+**Guarda-roupa por facção:**
+
+| Facção | Base | Elite |
+|---|---|---|
+| Silêncio | jaleco, manto, capuz, máscara de culto ou de peste; a cobaia vai de avental de paciente (VQE Ancients) | armadura de reconhecimento, máscara cerimonial, máscara de gás |
+| Hélice | camisa social, jaqueta, jaleco, fone | colete e máscara de gás (fiscais); armadura de reconhecimento de prestígio, cartola, colete e espartilho (diretoria) |
+| Forja | macacão, capacete, colete, bandoleira, óculos | armadura motorizada, catafracta, granadeiro, exoesqueleto |
+| Coro | manto, capa, boina, camisa de babados, tabardo, vestido de dama | armaduras de prestígio e de janízaro; eltex, coroa e manto real (sopranos e maestro) |
+| Sindicato | guarda-pó, chapéu, poncho, máscara de guerra ou improvisada | colete e capacete saqueados; traje de corsário (presidente) |
+| Feira | chapéu, poncho, guarda-pó, faixa, bandoleira | colete e capacete (seguranças) |
+
+**Comércio por facção** (`Defs/Traders/EQ_Traders.xml`):
+
+| Facção | Loja do assentamento | Caravana própria | Mercadoria típica |
+|---|---|---|---|
+| Silêncio | arquivo da Ordem | livreiro silente | livros, tomos, soros, bioferrita, café |
+| Hélice | loja conceito da Hélice | representante de vendas | pacotes de genes, ferramentas genéticas, biônicos, órgãos, remédio |
+| Forja | almoxarifado da Irmandade | caminhão de peças | componentes, plastaço, urânio, peças de veículo, peças mecanoides e **de androide** |
+| Coro | empório da corte | fornecedor da corte | ouro, jade, eltex, treinadores psíquicos, vinho, hipertrama |
+| Feira | banca principal (feiras móveis) | banca de miudezas | de tudo: comida, temperos, frutas, drogas, órgãos, peças de carro |
+| Não Catalogados | comerciantes tribais do jogo | — | peles, carne, ervas |
+
+**Inícios de jogo (cenários):** Saídos do abrigo (padrão), Andarilhos das cinzas (difícil), e um de dissidentes por potência (Pesquisa não autorizada, Lote descontinuado, Garantia vencida, Desafinados), que já começam malvistos por ela. Cada cenário só permite os xenos que combinam com a origem; elites só se ganham em jogo. Narrador provisório: a Central de Atendimento ("sua sobrevivência é muito importante para nós").
+
 **Insectoides:** mantida a facção `Insect` do jogo, que o VFE Insectoids 2 transforma em facção visível com colmeias, ondas, linhagens e chefes (o VFE altera essa facção pelo nome; uma nova perderia tudo). História própria: **a colmeia sem recall**, um inseto criado em laboratório antes da Queda para devorar mecanoides, que devorou também o laboratório e a empresa. A Hélice nega a patente e cobra royalties; a Forja diz que é defeito de outra marca, fora da garantia; o Silêncio tentou catalogar a rainha. O nome exibido ("Sorne Geneline") continua sorteado pelo VFE.
 
 **O mundo só tem as nossas facções (2026-11-15):** tribos, forasteiros e piratas do jogo, das DLCs e de outros mods (Alpha Genes, VFE Pirates, Saurid, Guilda dos Comerciantes do Odyssey) e os mercadores ambulantes do VFE Medieval 2 não são mais gerados. Ficam: as 4 potências, as 5 facções menores, a colmeia e as ocultas do jogo (mecanoides, entidades, culto de Horax, anciões, catadores). O **Império** e os Desertores também saíram, e as missões/eventos que dependem deles foram desligados.

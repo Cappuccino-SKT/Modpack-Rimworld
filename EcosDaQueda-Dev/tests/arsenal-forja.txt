@@ -1,0 +1,8 @@
+# Cavaleiro lacrado (armadura-caixão do VFE Pirates) e ataque da Forja.
+newgame EQ_Scenario_Abrigo EQ_Storyteller_Central
+kit EQ_Forja_Lacrado 15
+xenogen EQ_Forja_Lacrado 10
+raid forja 3000
+wait 2h
+kit fac:sindicatodosaque 10
+kit fac:foradelinha 10

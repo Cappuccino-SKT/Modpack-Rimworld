@@ -4,12 +4,22 @@ Esta pasta é uma instalação do **RimWorld 1.7** (não-Steam, motor Waylith) o
 
 ## Antes de qualquer coisa
 
-Leia **`EcosDaQueda-Dev/STATUS.md`** (onde paramos e próximos passos). Depois, conforme a tarefa:
+Leia **`EcosDaQueda-Dev/STATUS.md`** (curto: onde paramos e próximos passos). Depois, **só o que a tarefa pedir**:
+- `EcosDaQueda-Dev/PLANO.md` — plano de desenvolvimento em etapas (o que vem a seguir e em que ordem).
 - `EcosDaQueda-Dev/DESIGN.md` — visão, facções, sistemas planejados.
-- `EcosDaQueda-Dev/TECNICO.md` — como o jogo/Hegemony/VPE funcionam, packageIds, convenções.
+- `EcosDaQueda-Dev/TECNICO.md` — ambiente, estrutura, packageIds e **índice** das notas por assunto em `EcosDaQueda-Dev/tecnico/` (ler só o arquivo do assunto).
 - `EcosDaQueda-Dev/TESTES.md` — como testar, ruído conhecido do log, limitações.
+- `EcosDaQueda-Dev/HISTORICO.md` — registro detalhado do que já foi feito. **Não ler inteiro**; buscar o termo quando precisar.
 
-Ao terminar uma etapa, **atualize `STATUS.md`** (e DESIGN/TECNICO se algo mudou).
+## Economia de contexto
+
+O custo de uma sessão é (tamanho do contexto) × (número de chamadas). Por isso:
+- **Um bloco do plano por sessão.** Ao fechar o bloco, deixar `STATUS.md` pronto para uma sessão nova começar dali.
+- **Documentação só no fim do bloco:** reescrever `STATUS.md` (manter até ~60 linhas), acrescentar uma linha na tabela do `HISTORICO.md`, e mexer em DESIGN/`tecnico/`/TESTES/PLANO só se algo mudou de fato.
+- **Saídas grandes vão para arquivo, não para a conversa:** relatórios de teste, código decompilado, listagens (`weapontags`, `tradeinfo`, `modusage`). Gravar e consultar com busca ou trecho.
+- **Testes:** `run-test.ps1` imprime só o resumo (use `-Show '<regex>'` para linhas específicas, `-Full` só se precisar); a regressão é `regress.ps1`, uma chamada.
+- **Agrupar:** várias leituras/edições independentes na mesma chamada; edições em lote por um script só.
+- Ler arquivos grandes por trecho (busca + intervalo de linhas), não inteiros.
 
 ## Regras do projeto
 
@@ -37,6 +47,7 @@ O mod `Mods/EcosDaQuedaDebug` (packageId `ecosdaqueda.debug`) tem um executor de
 powershell -ExecutionPolicy Bypass -File EcosDaQueda-Dev/scripts/run-test.ps1 -Script EcosDaQueda-Dev/tests/fase2.txt -Build
 ```
 
+- Use sempre `-Profile full` em jogo novo (o perfil lean está quebrado). Regressão inteira: `EcosDaQueda-Dev/scripts/regress.ps1`.
 - `-Build` compila os 3 projetos C# antes. `-Profile full -Save <nome>` usa todos os mods e um save do usuário. `-Window` mostra a janela.
 - Roteiros em `EcosDaQueda-Dev/tests/*.txt`; relatórios em `EcosDaQueda-Dev/tests/out/`. Comandos: ver `EcosDaQueda-Dev/TESTES.md`.
 - O RimWorld precisa estar fechado. Ao criar um sistema novo, adicione comandos ao `EQDebug.cs`/`TestRunner.cs` e um roteiro de teste.

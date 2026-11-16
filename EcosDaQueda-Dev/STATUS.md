@@ -1,83 +1,41 @@
 # Status
 
-_Atualizar este arquivo ao fim de cada etapa._
+_Só o estado atual e os próximos passos. Manter curto (até ~60 linhas). Detalhe do que já foi feito: `HISTORICO.md` (buscar, não ler inteiro)._
 
-## Onde estamos (2026-11-14)
+## Onde estamos (2026-11-16)
 
-Fases 1 e 2 concluídas. **Fase 3 feita e testada pelo executor (0 erros), falta a conferência visual do usuário:** submissão por cerimônia, líder do assentamento e cargos por favor. Ver DESIGN.md › Submissão, líder e cargos.
+- **Base pronta e testada:** 4 potências (Silêncio, Hélice, Forja, Coro) e 4 facções menores (Fora de Linha, Não Catalogados, Feira Andante, Sindicato do Saque), todas com ideologia do usuário (`.rid`), xenotipos próprios, relações fixas, Fama/Infâmia, cerimônia de submissão, líder e 7 cargos por potência.
+- **Mundo só com as nossas facções** (sem Império/Desertores); Hegemony é a camada de estratégia.
+- **Plano em etapas:** `PLANO.md`. Etapa 1 (travas do início: xenos, cenários, narrador provisório) feita. **Etapa 2 em andamento:** feitos arsenal por facção (A), armadura-caixão da Forja (C), guarda-roupa e comércio por facção, e **psycasts do Coro por cargo (G)**: cada cargo licencia um caminho do VPE (Protetor → … → Arconte → Hemosage); sem o cargo o colono não destrava, a cerimônia dá de graça, perder o cargo revoga.
+- **Vassalagem:** só o Coro dá nível psíquico; a Forja dá vínculo mecanoide.
 
-- **Cerimônia de submissão** com emissário (aba Reputação › botão "Cerimônia" de cada potência): gera uma missão; o emissário chega de nave com escolta e preside o ritual com o líder; o **preço** temático é cobrado no fim. Concluída, o mod faz o juramento de vassalagem do Hegemony sozinho. O juramento direto pelo Hegemony está bloqueado para as 4 potências.
-- **Líder do assentamento = líder da ideologia do jogador.** Só ele tem cargo e favor. Sem líder (estando numa potência ou com cerimônia pedida), abre a janela de escolha forçada. Sucessor designável (botão "Sucessor"); se o líder morre, o sucessor assume, senão o jogador escolhe. Trocar o líder da ideologia (ritual vanilla de troca de função) transfere cargo e favor.
-- **7 cargos por potência** sobre o sistema de títulos da Royalty (`RoyalTitleDef`), com favor de nome próprio: citações (Silêncio), ações preferenciais (Hélice), selos de garantia (Forja), aplausos (Coro). Promoção = juntar o favor do próximo cargo → a potência manda o emissário para a cerimônia de promoção.
-- Favor vem de fontes temáticas (pesquisa, comércio, Soro, xenogermes, fabricação de qualidade, rituais), do dízimo, de serviços, das missões da potência e da qualidade das cerimônias.
-- Estipêndio, dízimo e serviços continuam, agora pelo cargo do líder (antes era pela Fama). Fama/Infâmia continuam do assentamento.
-- Saves antigos (vassalo pelo Hegemony sem cerimônia): o líder recebe o 1º cargo.
+## Próximo passo
 
-**A conferir pelo usuário (visual):** aba Reputação (painel de lealdade com líder/favor/sucessor, botão "Cerimônia" em cada potência, janelas de escolha de líder e sucessor), a cena da cerimônia no mapa (clicar no emissário › iniciar o ritual), a aba de títulos do líder, e as ações do menu de debug.
+Blocos da etapa 2 ainda abertos, na ordem sugerida: **H** (questão androide da Forja), **B** (permissões por cargo), **K** (bases por potência); depois D, E, F, I, L, M, N, O. A escolha do próximo bloco é do usuário.
 
-**Modpack (2026-11-14):** +10 mods da lista do usuário (RimExodus Seamless World + Framework, Trenches, Tech Advancing, YART, Door Mat, Clean Research Sort, SeedsPlease Lite Redux no lugar do Lite original que só ia até 1.4, VVE Upgrades, VQE Generator, VFE Medieval 2). 109 mods ativos, mundo novo com janela: 0 erros. Repositório git criado (ver CLAUDE.md › Versionamento).
+## Não commitado
 
-**Tradução PT-BR (2026-11-15):** novo mod `Mods/EcosDaQuedaTraducao` (`ecosdaqueda.traducao`, branch `mod/ecos-da-queda-traducao`), ativo no ModsConfig. Traduzidos os mods de genes: **Alpha Genes** (2.349 textos) e 12 **Vanilla Races Expanded** (Pigskin, Hussar, Starjack, Genie, Waster, Fungoid, Highmate, Phytokin, Saurid, Lycanthrope, Sanguophage, Insector). Teste `tests/traducao.txt` (perfil full): tudo injetado, 0 erros de tradução nesses mods; genes gerados por modelo (aptidões, invocações, transformações) também saem em PT-BR. Depois, usando a coleção de traduções do Workshop (3018573588) só como consulta ("base para revisar"; texto nosso), foram traduzidos também: **VRE Android** (710/869), **VFE Empire** (869/881), **VFE Deserters** (481/515), **VPE Hemosage** (71/75), **Vanilla Vehicles Expanded** (725/725), **Vehicle Framework** (697/699) e **Vanilla Psycasts Expanded** (1.142/1.292). O que falta nesses é de propósito: sinais internos de missão, chaves Keyed que o jogo já traduz e `generalRules` de pesquisa que o VEF preenche por código (não injetáveis). Teste `tests/traducao.txt` (perfil full): 0 problemas de tradução em todos, SEM ERROS no log. Fluxo e regras em TECNICO.md › Tradução. **Falta traduzir:** VQE Ancients (690) e os outros ~50 mods sem PT-BR (lista: rodar `tests/trans-export.txt`). Nomes próprios (penteados, barbas, nomes de facção sáuria) ficaram em inglês de propósito. Conferência visual pendente (editor de xenotipo, abas de genes).
+Tudo desde `f8641a7` (raiz) está sem commit nos três repositórios (`main`, `mod/ecos-da-queda`, `mod/ecos-da-queda-debug`). Só commitar quando o usuário pedir.
 
-**Modpack + documentação de mods (2026-11-15):** +6 mods da lista do usuário (Harvest Organs Post Mortem Continued, VWE Frontier, Custom Ritual Framework, Smart Farming, Show Me Your Tools, Blessed Conception Psychic Ritual), ativos antes dos nossos mods no ModsConfig do jogo e do modpack; smoke test com todos os mods: SEM ERROS. `modpack/update.ps1` ganhou `-FromModpack` e BOM (corrige acentos no mods.md). **Facial Animation e RimExodus Seamless World desativados pelo usuário** (bug a corrigir depois); modpack alinhado ao ModsConfig do jogo. Nova pasta `EcosDaQueda-Dev/mods/` (índice em `mods/README.md`): referência de API gerada de 19 DLLs, 11 guias de framework (VEF, VPE, Vehicle Framework, XML Extensions, Harmony/HugsLib, CE, Hegemony, Custom Base Framework, Custom Ritual Framework, Adaptive Storage, Jaeger/RimExodus), `mecanicas.md` e `conteudo.md`. Achados: o Custom Base Framework assume as bases das nossas potências industriais (planos genéricos modernos) e veículos de combate do VVE podem vir em ataques delas — ver os guias.
+## Como testar
 
-**Xenotipos próprios (2026-11-15):** 20 xenos do usuário (feitos no editor do jogo) viraram `EQ_Xeno_*` no mod: 6 padrões hereditários (Vagante, Vagante Esquelético, Humano Antigo, Graxeiro, Corista, Lote Descontinuado) e 14 elites não hereditários que sempre vêm por cima de um padrão (vanilla `doubleXenotypeChances`). Facções, 13 PawnKinds, o Soro e a ideologia da Hélice só usam os nossos. **Baseliner e xenos de outros mods foram substituídos no mundo todo** (colonos, outras facções, sem facção; exceto androides e sanguófagos) por Vagante 80% / Esquelético 15% / Antigo 5% (patch em `GenerateGenes` + `EQ_WorldXenotypes.xml`). Teste `tests/xenotipos.txt` (full): toda unidade com o xeno certo e padrão por baixo, gêneros fixos respeitados, Soro ok, SEM ERROS. Ver DESIGN.md › Xenotipos próprios. **Pendente:** xeno do líder da Forja (usuário vai criar); erro antigo achado pelo teste (não é dos xenos): `<pawn> tried to drop VWEB_Warbolter at invalid cell` ao gerar pawn com Warbolter quando a ideologia troca a roupa (patch do VEF Weapons em `Notify_ApparelRemoved` tenta largar a arma de um pawn fora do mapa) — investigar depois; conferência visual (ícones são os genéricos do editor).
+- Sempre `-Profile full` (o perfil lean quebra em jogo novo: os `.rid` pedem preceitos de mods que ele não carrega).
+- Regressão inteira em uma chamada: `scripts/regress.ps1` (uma linha por teste). Um teste só: `scripts/run-test.ps1` (imprime resumo; relatório completo em `tests/out/`).
 
-**Compatibilidade com o Combat Extended (2026-11-15):** verificação automática (`tests/ce-compat.txt`, comando `cecheck`) de todas as armas, roupas/armaduras e veículos dos 115 mods: 256 armas de fogo, 271 itens com golpes, 187 roupas e 14 torres de veículo compatíveis; **nenhuma incompatibilidade real, nenhum patch foi necessário**. Os 54 apontados são itens do jogo/DLC que o CE deixa assim de propósito, um def órfão do VFE Empire, a torre de propano do Alpha Biomes (coberta pelo VEFCompat) e 4 peças de pano/utilitário. Vehicle Framework + VVE + VVE Upgrades têm compatibilidade do próprio CE. Detalhes em `mods/frameworks/combat-extended.md`. O relatório de teste agora grava a pilha dos 5 primeiros erros.
+## Pendências técnicas
 
-**Facções menores, fase 1 (2026-11-15):** criadas **Os Fora de Linha** (androides contra a Forja) e **Os Não Catalogados** (aberrações caçadas pelo Silêncio): FactionDefs, 9 PawnKinds, xeno hereditário `EQ_Xeno_NaoCatalogado` (proposto por nós, genes no `xenotipos.json`), nomes de ninhos, relações fixas com inimizade permanente, e reputação que repercute nas potências. Teste `tests/faccoes-menores.txt` (full): as duas nascem com líder e ideologia, relações aplicadas, unidades com o xeno certo, ataques no mapa funcionam, SEM ERROS; regressão `fase2.txt` SEM ERROS. **Pendências:** (1) resolvido: base removida; (2) ícones são emprestados do jogo (posto pirata / culto de Horax); (3) fase 2: Exposição, dados de diagnóstico, missões de sabotagem, expedições de coleta, missões dos ninhos (ver DESIGN.md › Facções menores); (4) conferência visual.
+- Perfil lean do executor quebrado (ampliar ou aposentar).
+- `xenogen` marca os androides dos Fora de Linha como PROBLEMA (`faccoes-menores`, 80) e a regressão conta `problemas=0` como falha: ajustar as duas checagens.
+- Erros de terceiros não resolvidos: Warbolter ao largar arma; `Invalid pawn assigned to Bloodletter otherworldly role` (Vanilla Ideology Expanded, intermitente em `fase3`); causa raiz da falha de `Book.GenerateBook` (hoje só contornada).
+- Lojas ainda vendem roupas comuns genéricas; preços e quantidades do comércio sem balanceamento; equilíbrio de laser/bobina com o CE e do cavaleiro lacrado (320 pontos).
+- Facção rebelde do Hegemony, ícones das facções menores, bug Facial Animation / Seamless World, traduções restantes.
+- Itens "(decidir)" do `PLANO.md`.
 
-**Ideologias do usuário + xenos dos Não Catalogados (2026-11-15):** as 6 facções passam a usar a **ideologia que o usuário montou no editor do jogo** (`.rid`): o mod carrega `Mods/EcosDaQueda/Ideos/<facção>.rid` e copia tudo (memes, preceitos, cargos, rituais, estilos, relíquias, ícone e cor) para a ideologia da facção ao criar o mundo. Fonte em `EcosDaQueda-Dev/ideologias/` (`rid/` + `ideologias.json` com os nomes trocados; gerar com `scripts/ideologias.py`). Nas 4 potências só troquei nomes automáticos/em inglês; para as menores criei nome e história: **O Protocolo Zero** (Fora de Linha) e **A Carne sem Verbete** (Não Catalogados, divindade O Pai-Carne). Os 4 xenos novos do usuário viraram **Brotado, Açoite, Farpado** (linhagens hereditárias) e **Matriz do Ninho** (líder, não hereditário, por cima de uma linhagem); o xeno que eu tinha proposto saiu. **Os Fora de Linha não têm mais assentamento** (patch em `FactionGenerator.NewGeneratedFaction`); depois de 1 dia de jogo continuam ativos. Testes `ideo.txt` e `faccoes-menores.txt` (full): SEM ERROS. **Atenção:** (1) ícone e cor das ideologias agora são os do `.rid` do usuário, não mais os ícones próprios do mod (`EQ_IdeoSymbols`); (2) o arquivo "Templo de harmonia.rid" foi ignorado (parece rascunho do "Os Fora da Lei.rid"); (3) os modelos antigos em `EQ_IdeoTemplates.xml` ficaram só como reserva e para o nome do líder fundador; (4) saves antigos não mudam de ideologia.
+## A conferir pelo usuário (só visual)
 
-**Facções menores, parte 2 (2026-11-15):** criadas **A Feira Andante** (comércio, +60 com o jogador, +35 com as 4 potências) e **O Sindicato do Saque** (saqueadores, inimiga permanente, grupo de ataque fraco para o início). Nomes de assentamento próprios; boa vontade inicial com o jogador via `MinorFactionExtension.playerGoodwill`. Insectoides: mantida a facção `Insect` do jogo com o VFE Insectoids 2 (ver DESIGN.md). Teste `tests/faccoes-menores2.txt` (full): SEM ERROS; `tests/faccoes-lista.txt` lista todas as facções de um mundo novo. **Pendências:** unidades das duas ainda usam os nomes do jogo (aldeão, pirata, andarilho); ideologia delas é sorteada (o usuário pode montar no editor, como fez com as outras); ícones emprestados do jogo.
-
-**Mundo só com as nossas facções + Feira móvel + história dos insetos (2026-11-15):** (1) facções humanas visíveis de terceiros não são mais geradas (`EQWorldFactions.Apply` + `Defs/Factions/EQ_WorldFactions.xml`); o Império saiu depois (ver abaixo), e saiu também a guilda oculta de mercadores do VFE Medieval 2. (2) A Feira Andante virou **assentamento móvel**: `VEF.Planet.MovingBaseDef` nosso com a classe `VFEMedieval.MerchantGuild`, 8 feiras que param 5–30 dias e viajam; estoque trocado por patch para `Base_Outlander_Standard`; sem assentamento fixo. (3) História da facção de insetos ("colmeia sem recall") por tradução injetada no próprio mod. Teste `tests/mundo.txt` (full): só as nossas facções + Império + ocultas, 8 feiras, parte delas mudou de tile em 6 dias, SEM ERROS. **Pendências:** decidir o Império; não testei atacar uma feira nem negociar com caravana (só que ela aceita negociar); visual das feiras no mapa-múndi.
-
-**Império fora do mundo (2026-11-15):** por decisão do usuário, o Império e os Desertores (ocultos) também não são mais gerados. Missões e eventos que citam o Império pelo nome foram desligados (`WorldFactionsDef.disabledQuests`/`disabledIncidents`: introduções e final do Royalty, missões do VFE Empire e do VFE Deserters), porque a introdução do Royalty dava erro sem ele. Teste `tests/mundo.txt` com 15 dias de jogo (full): SEM ERROS. **Observações:** (1) o VFE Empire e o VFE Deserters continuam instalados, mas ficaram quase sem função (títulos, permissões e tramas eram do Império) — avaliar desativar os dois mods; (2) no dia 15 apareceu "Freed Slaves of Concílio da Hélice", facção rebelde visível criada pelo Hegemony com o mesmo FactionDef da Hélice — conferir se o nosso código (reputação, lealdade, `EQUtil.MainFaction`) a confunde com a potência; (3) o número de assentamentos varia bastante entre mundos e ao longo dos dias por causa do Hegemony (o Sindicato do Saque teve 9, 15 e 24 em testes diferentes); conferir o equilíbrio em jogo.
-
-**Próximas ideias:** permissões/poderes por cargo (gastar favor, como as permissões do Império), nível psíquico pelos cargos do Coro, exigências por cargo (roupa, quarto), nomes temáticos na janela do ritual (hoje aparece "cerimônia de outorga"), corrupção do Silêncio, censo genético da Hélice, questão androide da Forja, conversão à distância do Coro, guerras pela API do Hegemony.
-
-## Feito
-
-- [x] Mods da lista baixados via SteamCMD (`Mods/<id>`), ordem de carregamento gerada (`scripts/sortmods.ps1`).
-- [x] Compatibilidade 1.7 da modlist (ver TESTES.md › histórico).
-- [x] Mod `Mods/EcosDaQueda` criado: 4 memes, 4 facções com ideologia fixa, 16 PawnKinds, nomes de assentamentos, disposições do Hegemony.
-- [x] Correção: caminho VPE_Puppeteer → VPE_Empath.
-- [x] Correção: nomes de assentamento ampliados (não testado em mundo novo ainda).
-- [x] Desativados no ModsConfig: **Hearts of RimWorld** (3833698946) e **Rimworld Exploration Mode** (2941608795). Pastas continuam em `Mods/`.
-
-## Pendente / a verificar
-
-- [ ] Mundo novo: conferir na aba Ideologia nome, ícone, cor, divindades, preceitos, cargos e rituais das 4; nome do líder fundador na aba Facções.
-- [ ] Ver se `exactPrecepts` removendo preceitos exigidos por memes gera avisos ou comportamento estranho.
-- Preceitos de livros (VME_Library_Required, VME_BookWriting_Exalted) só entram se **Vanilla Books Expanded** for instalado.
-
-- [ ] Confirmar em mundo novo que os nomes de assentamento não esgotam mais.
-- [ ] Ver em jogo: visual das unidades (robes, xenotipos, mechs na Forja, psycasts no Coro).
-- [ ] Confirmar que mechs numa facção humana (Forja) se comportam bem em raides.
-- [ ] Ajustes pedidos pelo usuário (próxima mensagem dele).
-
-## Fase 2 (C#) — planejado
-
-Ver DESIGN.md › Sistemas planejados: relações fixas, Fama/Infâmia, postos, mecânicas por facção.
-
-## Histórico
-
-| Data | Mudança |
-|---|---|
-| 2026-11-15 | Mundo só com facções nossas (terceiros fora, Império pendente); Feira Andante móvel (MovingBase do VEF); história dos insetos; comando `movingbases` |
-| 2026-11-15 | Facções menores: A Feira Andante e O Sindicato do Saque; comando `factions` |
-| 2026-11-15 | Ideologias das 6 facções vindas dos `.rid` do usuário (`ideoFile`); xenos Brotado/Açoite/Farpado/Matriz do Ninho; Fora de Linha sem assentamento |
-| 2026-11-15 | Facções menores (fase 1): Os Fora de Linha e Os Não Catalogados; reputação de facção menor repercute nas potências; comandos `faction` e `raid` |
-| 2026-11-15 | Xenotipos próprios (20 `EQ_Xeno_*`: padrões hereditários + elites sobre padrão), ligados a facções, PawnKinds, Soro e ideologia; script `xenotipos.py`, comando `xenogen` |
-| 2026-11-14 | Fase 3: cerimônia de submissão com emissário, líder/sucessor, 7 cargos por potência com favor (títulos da Royalty), fontes temáticas de favor; +10 mods; git. Corrigido: Highmate (incapaz de violência) saía em grupos de combate da Hélice |
-| 2026-11-14 | Mod de debug + executor de testes headless; 3 bugs corrigidos via testes |
-| 2026-11-14 | Fase 2 etapa 4: serviços (FactionServiceDef), o Soro (EQ_Soro), retaliação-assinatura (hostileIncidents) |
-| 2026-11-14 | Teste do usuário (save "Test", dia 4,6): jurou lealdade à Hélice pelo Hegemony → mod detectou (memberOf=Hélice, posto 0 Cliente Básico, aliado +75). Estipêndio (10 d) e dízimo (15 d) ainda não venceram — **não verificados em jogo** |
-| 2026-11-14 | Fase 2 etapa 3: postos/lealdade (FactionAllegianceDef, WorldComponent_Allegiance, ChoiceLetter_EQTithe, leitura da fealty do Hegemony por reflexão, painel na aba) |
-| 2026-11-14 | Teste do usuário (save "Test"): reputação ok (Silêncio/Hélice Fama 38,5 = Aceito; Forja Infâmia 77 = Malvisto, hostil). Corrigido: facções proxy do Hegemony (expedições) tratadas como potências (`EQUtil`), e `exactPrecepts` removendo rituais ocultos. Avisos "Faction_28 not deep-saved" eram do CE/VTE, não nossos |
-| 2026-11-14 | Fase 2 etapa 2: efeitos da reputação (ReputationTier com priceGain/giftChance/tributeChance/raidChance, patch de preços no comércio, eventos periódicos, efeitos na aba) |
-| 2026-11-13 | Fase 2 etapa 1: relações fixas (C# + XML), reputação Fama/Infâmia com Harmony + aba Reputação, módulo de integração Hegemony (veto de paz). Remote Control ativado na sessão |
-| 2026-11-11 | Ícones com contorno escuro e traço grosso + cores claras fixas (colorSpectrum único); **confirmado pelo usuário: visíveis no mapa-múndi** |
-| 2026-11-11 | Ideologias fixas (confirmado pelo usuário em mundo novo): C# IdeoTemplateDef/WorldComponent, ícones próprios (make-icons.ps1), cores, memes revisados (Darkness no Silêncio, Trader na Hélice, Supremacia Mecanoide na Forja, Foco Psíquico no Coro), requiredPreceptsOnly |
-| 2026-11-11 | Download dos mods, ajuste 1.7, criação do mod (fase 1), correções de VPE e nomes, desativação de Hearts of RimWorld e Exploration Mode, criação desta pasta e do CLAUDE.md |
+- Início de jogo com o modo desenvolvedor **desligado**: menu de xenos, cenários e narrador; Prepare Carefully.
+- Aba Psicasts do VPE com caminhos licenciados: botão travado com o motivo "licença do Coro (cargo)" e mensagem ao receber o caminho na cerimônia.
+- Aba Reputação (lealdade, líder, favor, sucessor, botão "Cerimônia"), cena da cerimônia no mapa, aba de títulos do líder.
+- Visual das unidades (roupas, armas, xenos, mechs da Forja) e a janela de comércio de cada facção.
+- Aba Ideologia das 8 facções; nomes de assentamento.
+- A fazer pelo usuário: xeno do líder da Forja, arte do retrato do narrador.

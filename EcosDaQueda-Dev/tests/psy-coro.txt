@@ -1,0 +1,26 @@
+# Bloco G: caminhos psíquicos licenciados pelos cargos do Coro (VPE). Rodar com -Profile full.
+# Cerimônia real (cargo 1 → Protetor de graça), depois cargos por comando: trava, destrava, revoga.
+newgame
+timeout 600
+leader set 0
+give Gold 60
+give Silver 800
+ceremony coro
+accept Audi
+ceremony await
+ceremony start
+wait 6h
+psy show
+psy title 3
+psy grant
+psy title 1
+wait 1h
+psy show
+psy title 7
+psy grant
+join none
+wait 1h
+psy show
+psy gen EQ_Coro_Maestro 10
+psy gen EQ_Coro_Tenor 10
+psy gen EQ_Coro_Soprano 10

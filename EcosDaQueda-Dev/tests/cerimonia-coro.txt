@@ -1,0 +1,13 @@
+# Cerimônia de submissão: só o Coro dá nível psíquico; a Forja instala o vínculo mecanoide.
+# Rodar com -Profile full (o nível indevido vinha do Vanilla Psycasts Expanded).
+newgame
+timeout 600
+leader set 0
+give Gold 60
+give Silver 800
+ceremony coro
+accept Audi
+ceremony await
+ceremony start
+wait 6h
+leader show

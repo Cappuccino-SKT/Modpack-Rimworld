@@ -1,0 +1,5 @@
+# Auditoria de uso dos mods pelas nossas facções (lista só os SEM uso; "modusage todos" mostra todos).
+# Rodar com -Profile full.
+newgame EQ_Scenario_Abrigo EQ_Storyteller_Central
+modusage
+modusage todos

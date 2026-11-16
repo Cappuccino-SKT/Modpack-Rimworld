@@ -1,0 +1,11 @@
+# Etapa 2: guarda-roupa e comércio por facção. Rodar com -Profile full.
+newgame EQ_Scenario_Abrigo EQ_Storyteller_Central
+trader
+kit fac:silencio 15
+kit fac:helice 15
+kit fac:forja 15
+kit fac:coro 15
+kit fac:sindicatodosaque 15
+kit fac:feiraandante 15
+movingbases
+wait 1d

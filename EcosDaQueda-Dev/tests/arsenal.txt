@@ -1,0 +1,16 @@
+# Etapa 2, bloco A: arsenal de cada facção (Defs/Arsenal) e munição de reserva do Combat Extended.
+# Rodar com -Profile full.
+newgame EQ_Scenario_Abrigo EQ_Storyteller_Central
+kit fac:silencio 20
+kit fac:helice 20
+kit fac:forja 20
+kit fac:coro 20
+kit fac:foradelinha 20
+kit fac:sindicatodosaque 20
+kit fac:feiraandante 20
+faction sindicatodosaque
+faction feiraandante
+raid sindicatodosaque 300
+wait 3h
+raid sindicatodosaque 1500
+wait 3h

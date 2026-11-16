@@ -96,6 +96,54 @@
         "IdeoRelic|Dedo profundo": "Dedo do Arquivista",
         "IdeoRelic|Portador sanguis": "Chave da Cela Sete"
       }
+    },
+    {
+      "rid": "A Feira Andante", "saida": "FeiraAndante",
+      "name": "A Liquidação Eterna",
+      "adjective": "feirante",
+      "memberName": "feirante",
+      "leaderTitleMale": "Pregoeiro-Mor",
+      "leaderTitleFemale": "Pregoeira-Mor",
+      "description": "Quando as cidades caíram, sobrou um estacionamento cheio, um gerador e um homem com um megafone. Ele anunciou a última promoção do mundo antigo e, por medo do que viria depois, nunca a encerrou. A Feira roda desde então.\n\nA doutrina cabe numa placa: tudo tem preço, todo preço tem desconto, e quem para de rodar começa a dever. Cidade fixa é estoque parado; estoque parado apodrece. Por isso o feirante bebe como quem fecha negócio e fecha negócio como quem bebe, e o motor só desliga para o pregão.\n\nA Feira não pergunta de onde veio a mercadoria nem para onde vai o comprador. Um rim tem a mesma etiqueta que um repolho, só muda o corredor. O sorriso é de graça; a amizade está em promoção e vale enquanto durar o seu estoque de prata.",
+      "preceitos": {
+        "AM_CremateFuneral|Réquiem de hedonism": "Queima de Estoque",
+        "Conversion|Ritual de conversão": "Cadastro de Cliente",
+        "LeaderSpeech|discurso do líder": "Pregão de Abertura",
+        "VME_OrgyPrecept|orgy": "Confraternização de Fim de Feira",
+        "VME_TradingFairPrecept|trading fair": "Grande Feira",
+        "IdeoRole_Leader|Wayfarer gratifying": "Pregoeiro-Mor",
+        "VME_IdeoRole_Merchant|Unscrupulous Broker": "Corretor sem Escrúpulos",
+        "VME_IdeoRole_PartyHost|Party animal": "Mestre de Cerimônias",
+        "IdeoBuilding|Emblema greedy": "Placa de Promoção"
+      }
+    },
+    {
+      "rid": "O Sindicato do Saque", "saida": "SindicatoDoSaque",
+      "name": "O Dissídio Coletivo",
+      "adjective": "sindicalizado",
+      "memberName": "sindicalizado",
+      "leaderTitleMale": "Presidente Vitalício",
+      "leaderTitleFemale": "Presidenta Vitalícia",
+      "description": "No mundo antigo havia patrões, e os patrões tinham a água. Depois da Queda os patrões acabaram, a água não. A categoria se reuniu em assembleia sobre um caminhão-pipa tombado e aprovou, por aclamação e três tiros, a única pauta que importava: o que é dos outros é nosso por direito adquirido.\n\nO Dissídio Coletivo é essa pauta, reajustada todo ano. Saque é negociação coletiva. Refém é cláusula. Sucata é patrimônio da categoria, e quem é de fora dela é, por definição, patrão. A contribuição sindical é cobrada em água, fumo e dedos; o atraso também.\n\nO Presidente é vitalício porque nenhuma chapa de oposição sobreviveu à apuração. A categoria nunca entrou em greve: cruzar os braços é coisa de quem tem o que perder.",
+      "preceitos": {
+        "AM_ScrapRitual|Celebração chapado(a)": "Assembleia da Sucata",
+        "AM_SkyBurial|Réquiem de êxtase": "Baixa na Carteira",
+        "DateRitualConsumable|Festa de scavengers": "Churrasco da Categoria",
+        "Festival|Júbilo fluid": "Dia do Trabalhador Armado",
+        "GladiatorDuel|Luta de domínio": "Eleição de Chapa",
+        "AM_BaptismPrecept|baptism": "Filiação",
+        "Conversion|Ritual de conversão": "Sindicalização Compulsória",
+        "LeaderSpeech|discurso do líder": "Assembleia Geral",
+        "IdeoRole_Leader|Scavenger superior(a)": "Presidente Vitalício",
+        "IdeoRole_Moralist|Gargalhador": "Delegado Sindical",
+        "IdeoRole_PlantSpecialist|Olho das ervas": "Tesoureiro do Fumo",
+        "IdeoRole_ShootingSpecialist|Usuário do disparo": "Piqueteiro",
+        "IdeoBuilding|Fumante forte": "Fumódromo da Sede",
+        "IdeoBuilding|Logo scavenging": "Brasão da Categoria",
+        "IdeoRelic|Arca chapado(a)": "Caixa de Greve",
+        "IdeoRelic|Relíquia aquatic": "Primeiro Galão",
+        "IdeoRelic|Dedo scrap": "Dedo do Último Patrão"
+      }
     }
   ]
 }
