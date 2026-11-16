@@ -11,6 +11,10 @@ namespace EcosDaQueda
         {
             new Harmony("ecosdaqueda.core").PatchAll(typeof(EcosDaQuedaStartup).Assembly);
             EQWorldFactions.Apply();
+            EQGameStart.Apply();
+            EQArsenal.Apply();
+            EQTrade.Apply();
+            EQPsycasts.Apply();
         }
     }
 

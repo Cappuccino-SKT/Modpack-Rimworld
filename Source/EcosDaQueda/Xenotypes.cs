@@ -72,7 +72,19 @@ namespace EcosDaQueda
     {
         public static void Prefix(Pawn pawn, ref XenotypeDef xenotype, PawnGenerationRequest request)
         {
-            if (pawn?.genes == null || xenotype == null || xenotype.defName.StartsWith("EQ_")) return;
+            if (pawn?.genes == null || xenotype == null) return;
+            // Colonos iniciais: só os xenotipos do cenário (o menu da criação já esconde os outros).
+            if (request.Context == PawnGenerationContext.PlayerStarter && EQGameStart.RestrictStarters
+                && request.ForcedCustomXenotype == null && !(Prefs.DevMode && request.ForcedXenotype != null))
+            {
+                if (!EQGameStart.AllowedForStart(xenotype))
+                {
+                    XenotypeDef starter = EQGameStart.RandomStarter();
+                    if (starter != null) xenotype = starter;
+                }
+                return;
+            }
+            if (xenotype.defName.StartsWith("EQ_")) return;
             if (request.ForcedXenotype != null || request.ForcedCustomXenotype != null) return;
             WorldXenotypesDef d = DefDatabase<WorldXenotypesDef>.AllDefsListForReading.FirstOrDefault();
             if (d == null || d.keepXenotypes.Contains(xenotype)) return;

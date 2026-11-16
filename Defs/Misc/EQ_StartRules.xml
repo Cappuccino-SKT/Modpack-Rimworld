@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <!-- Regras do início de jogo. Com o modo desenvolvedor ligado nada é escondido (o editor de xenotipo
+       da tela de criação é a ferramenta com que os xenos do mod são feitos). -->
+  <EcosDaQueda.StartRulesDef>
+    <defName>EQ_StartRules</defName>
+    <!-- Menu de xenotipos da criação (jogo e Prepare Carefully): só os do cenário; sem lista no cenário,
+         os padrões do mundo (EQ_WorldXenotypes.xml). Xenos personalizados e o editor somem. -->
+    <restrictStartingXenotypes>true</restrictStartingXenotypes>
+    <hideOtherScenarios>true</hideOtherScenarios>
+    <hideOtherStorytellers>true</hideOtherStorytellers>
+    <devModeShowsAll>true</devModeShowsAll>
+  </EcosDaQueda.StartRulesDef>
+
+</Defs>

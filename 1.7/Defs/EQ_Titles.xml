@@ -215,6 +215,7 @@
 
   <!-- ===================================================================== CORO — favor: aplausos -->
   <RoyalTitleDef Abstract="True" Name="EQ_TitleCoro" ParentName="EQ_TitleBase">
+    <!-- maxPsylinkLevel: com o Vanilla Psycasts Expanded a 1ª cerimônia já dá 1 nível, e cada cargo seguinte +1 (total 1 a 7). -->
     <tags><li>EQ_Title_Coro</li></tags>
   </RoyalTitleDef>
 
@@ -224,6 +225,7 @@
     <description>Você pode assistir aos concertos. De pé, no fundo, sem aplaudir antes da hora.</description>
     <seniority>100</seniority>
     <favorCost>4</favorCost>
+    <maxPsylinkLevel>0</maxPsylinkLevel>
   </RoyalTitleDef>
   <RoyalTitleDef ParentName="EQ_TitleCoro">
     <defName>EQ_Title_Coro_2</defName>
@@ -231,6 +233,7 @@
     <description>Você canta no coro. Ninguém ouve sua voz individualmente, e é assim que deve ser.</description>
     <seniority>200</seniority>
     <favorCost>6</favorCost>
+    <maxPsylinkLevel>1</maxPsylinkLevel>
   </RoyalTitleDef>
   <RoyalTitleDef ParentName="EQ_TitleCoro">
     <defName>EQ_Title_Coro_3</defName>
@@ -238,6 +241,7 @@
     <description>Você tem um solo. Um. Curto. Não desafine, ou será "reafinado".</description>
     <seniority>300</seniority>
     <favorCost>8</favorCost>
+    <maxPsylinkLevel>2</maxPsylinkLevel>
   </RoyalTitleDef>
   <RoyalTitleDef ParentName="EQ_TitleCoro">
     <defName>EQ_Title_Coro_4</defName>
@@ -245,6 +249,7 @@
     <description>Você se senta na primeira cadeira e afina os outros. Quem desafina olha para você com medo, e está certo.</description>
     <seniority>400</seniority>
     <favorCost>10</favorCost>
+    <maxPsylinkLevel>3</maxPsylinkLevel>
   </RoyalTitleDef>
   <RoyalTitleDef ParentName="EQ_TitleCoro">
     <defName>EQ_Title_Coro_5</defName>
@@ -252,6 +257,7 @@
     <description>Você rege uma ala do Coro. Mil vozes cantam ao seu gesto, e nenhuma ousa perguntar a letra.</description>
     <seniority>500</seniority>
     <favorCost>14</favorCost>
+    <maxPsylinkLevel>4</maxPsylinkLevel>
   </RoyalTitleDef>
   <RoyalTitleDef ParentName="EQ_TitleCoro">
     <defName>EQ_Title_Coro_6</defName>
@@ -260,6 +266,7 @@
     <description>Você escolhe o repertório de uma província inteira e quais crianças têm "ouvido promissor". As famílias agradecem. Elas sabem que devem agradecer.</description>
     <seniority>600</seniority>
     <favorCost>18</favorCost>
+    <maxPsylinkLevel>5</maxPsylinkLevel>
   </RoyalTitleDef>
   <RoyalTitleDef ParentName="EQ_TitleCoro">
     <defName>EQ_Title_Coro_7</defName>
@@ -268,6 +275,7 @@
     <description>O Maestro Supremo chama você pelo nome. Uma vez, em público. Dizem que é a maior honra do Coro, e também o último aviso.</description>
     <seniority>700</seniority>
     <favorCost>24</favorCost>
+    <maxPsylinkLevel>6</maxPsylinkLevel>
   </RoyalTitleDef>
 
 </Defs>

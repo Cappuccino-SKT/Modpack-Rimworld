@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
 
-  <!-- Facções menores: não são potências (sem ideologia fixa, cargos, reputação nem serviços).
+  <!-- Facções menores: não são potências (sem cargos, reputação nem serviços).
        Existem para dar um inimigo próprio a uma potência. Relações em 1.7/Defs/EQ_FactionRelations.xml. -->
 
   <!-- =====================================================================
@@ -106,6 +106,18 @@
     <label>Os Não Catalogados</label>
     <description>Aberrações que escaparam das celas da Ordem do Silêncio Perpétuo, e os filhos que elas tiveram desde então. Vivem em ninhos escondidos, com ghouls como tropa de choque e bestas de carne como animais de guarda.\n\nA Ordem os trata como acervo extraviado e manda expedições de coleta; recusar a catalogação é "infração bibliográfica". Eles respondem defendendo os ninhos com tudo o que têm.\n\nNão são vítimas inocentes: alimentam-se de gente, e os ninhos crescem com prisioneiros.</description>
     <fixedName>Os Não Catalogados</fixedName>
+    <!-- Comércio de tribo: peles, carne, ervas (comerciantes neolíticos do jogo). -->
+    <caravanTraderKinds Inherit="False">
+      <li>Caravan_Neolithic_BulkGoods</li>
+      <li>Caravan_Neolithic_WarMerchant</li>
+      <li>Caravan_Neolithic_ShamanMerchant</li>
+    </caravanTraderKinds>
+    <visitorTraderKinds Inherit="False">
+      <li>Visitor_Neolithic_Standard</li>
+    </visitorTraderKinds>
+    <baseTraderKinds Inherit="False">
+      <li>Base_Neolithic_Standard</li>
+    </baseTraderKinds>
     <pawnSingular>não catalogado</pawnSingular>
     <pawnsPlural>não catalogados</pawnsPlural>
     <leaderTitle>primeiro espécime</leaderTitle>
@@ -218,10 +230,27 @@
 
 São a gente mais simpática das terras devastadas. O cliente tem sempre razão, enquanto tiver prata. Quem não tem prata compra fiado, e o fiado da Feira é famoso: os juros são pagos em anos de serviço, e ninguém leu o contrato até o fim.</description>
     <fixedName>A Feira Andante</fixedName>
+    <!-- A Feira vende de tudo: as caravanas do jogo + a banca própria. -->
+    <caravanTraderKinds Inherit="False">
+      <li>Caravan_Outlander_BulkGoods</li>
+      <li>Caravan_Outlander_CombatSupplier</li>
+      <li>Caravan_Outlander_Exotic</li>
+      <li>EQ_Caravan_Feira</li>
+    </caravanTraderKinds>
+    <visitorTraderKinds Inherit="False">
+      <li>EQ_Visitor_Feira</li>
+    </visitorTraderKinds>
+    <baseTraderKinds Inherit="False">
+      <li>EQ_Base_Feira</li>
+    </baseTraderKinds>
     <pawnSingular>feirante</pawnSingular>
     <pawnsPlural>feirantes</pawnsPlural>
     <leaderTitle>síndico da feira</leaderTitle>
     <leaderTitleFemale>síndica da feira</leaderTitleFemale>
+    <fixedLeaderKinds>
+      <li>EQ_Feira_Pregoeiro</li>
+    </fixedLeaderKinds>
+    <basicMemberKind>EQ_Feira_Feirante</basicMemberKind>
     <categoryTag>EQ_FeiraAndante</categoryTag>
     <techLevel>Industrial</techLevel>
     <factionIconPath>World/WorldObjects/Expanding/Town</factionIconPath>
@@ -239,14 +268,57 @@ São a gente mais simpática das terras devastadas. O cliente tem sempre razão,
     <settlementGenerationWeight>1.3</settlementGenerationWeight>
     <canSiege>false</canSiege>
     <canStageAttacks>false</canStageAttacks>
-    <requiredMemes>
+    <!-- Ideologia fixa "A Liquidação Eterna" (Ideos/FeiraAndante.rid, via EQ_IdeoTemplates.xml) -->
+    <fixedIdeo>true</fixedIdeo>
+    <structureMemeWeights Inherit="False" />
+    <forcedMemes>
+      <li MayRequire="VanillaExpanded.VMemesE">VME_Structure_Bacchanalianism</li>
       <li MayRequire="VanillaExpanded.VMemesE">VME_Trader</li>
-    </requiredMemes>
-    <disallowedMemes>
-      <li MayRequire="Ludeon.RimWorld.Ideology">Raider</li>
-      <li MayRequire="Ludeon.RimWorld.Ideology">Supremacist</li>
-      <li MayRequire="Ludeon.RimWorld.Ideology">Cannibal</li>
-    </disallowedMemes>
+      <li MayRequire="VanillaExpanded.VMemesE">VME_Nomad</li>
+    </forcedMemes>
+    <!-- Unidades próprias (armas de fronteira; ver Defs/Arsenal). -->
+    <pawnGroupMakers Inherit="False">
+      <li>
+        <kindDef>Combat</kindDef>
+        <options>
+          <EQ_Feira_Seguranca>10</EQ_Feira_Seguranca>
+          <EQ_Feira_Feirante>4</EQ_Feira_Feirante>
+          <EQ_Feira_Pregoeiro>0.5</EQ_Feira_Pregoeiro>
+        </options>
+      </li>
+      <li>
+        <kindDef>Peaceful</kindDef>
+        <options>
+          <EQ_Feira_Feirante>10</EQ_Feira_Feirante>
+          <EQ_Feira_Seguranca>5</EQ_Feira_Seguranca>
+          <EQ_Feira_Mascate>2</EQ_Feira_Mascate>
+        </options>
+      </li>
+      <li>
+        <kindDef>Trader</kindDef>
+        <traders>
+          <EQ_Feira_Mascate>1</EQ_Feira_Mascate>
+        </traders>
+        <carriers>
+          <Muffalo>6</Muffalo>
+          <Dromedary>5</Dromedary>
+          <Alpaca>2</Alpaca>
+        </carriers>
+        <guards>
+          <EQ_Feira_Seguranca>10</EQ_Feira_Seguranca>
+          <EQ_Feira_Feirante>4</EQ_Feira_Feirante>
+        </guards>
+      </li>
+      <li>
+        <kindDef>Settlement</kindDef>
+        <options>
+          <EQ_Feira_Seguranca>10</EQ_Feira_Seguranca>
+          <EQ_Feira_Feirante>8</EQ_Feira_Feirante>
+          <EQ_Feira_Mascate>2</EQ_Feira_Mascate>
+          <EQ_Feira_Pregoeiro>1</EQ_Feira_Pregoeiro>
+        </options>
+      </li>
+    </pawnGroupMakers>
     <xenotypeSet Inherit="False">
       <xenotypeChances>
         <EQ_Xeno_Vagante>0.8</EQ_Xeno_Vagante>
@@ -259,7 +331,7 @@ São a gente mais simpática das terras devastadas. O cliente tem sempre razão,
         <playerGoodwill>60</playerGoodwill>
         <!-- Com o VFE Medieval 2, a Feira não tem assentamento fixo: só as feiras móveis abaixo. -->
         <noSettlementsIfMovingBase>true</noSettlementsIfMovingBase>
-        <movingBaseTrader>Base_Outlander_Standard</movingBaseTrader>
+        <movingBaseTrader>EQ_Base_Feira</movingBaseTrader>
       </li>
       <!-- Mapa gerado quando alguém ataca uma feira parada (acampamento de mercadores do VFE Medieval 2). -->
       <li Class="KCSG.CustomGenOption" MayRequire="oskarpotocki.vfe.medieval2">
@@ -291,7 +363,7 @@ São a gente mais simpática das terras devastadas. O cliente tem sempre razão,
 
   <!-- =====================================================================
        O SINDICATO DO SAQUE: saqueadores espalhados pelo mundo; os primeiros ataques da partida.
-       Herda os grupos de combate dos piratas do jogo (andarilhos e catadores nos ataques fracos).
+       Unidades e armas próprias (Defs/PawnKinds/EQ_MinorPawnKinds.xml, Defs/Arsenal).
        ===================================================================== -->
   <FactionDef ParentName="PirateBandBase">
     <defName>EQ_Faction_SindicatoDoSaque</defName>
@@ -307,6 +379,10 @@ Não negociam, não fazem paz e não têm ouvidoria. Em compensação, fazem gre
     <pawnsPlural>sindicalizados</pawnsPlural>
     <leaderTitle>presidente do sindicato</leaderTitle>
     <leaderTitleFemale>presidenta do sindicato</leaderTitleFemale>
+    <fixedLeaderKinds>
+      <li>EQ_Sindicato_Presidente</li>
+    </fixedLeaderKinds>
+    <basicMemberKind>EQ_Sindicato_Filiado</basicMemberKind>
     <categoryTag>EQ_SindicatoDoSaque</categoryTag>
     <techLevel>Industrial</techLevel>
     <factionIconPath>World/WorldObjects/Expanding/PirateOutpost</factionIconPath>
@@ -322,6 +398,15 @@ Não negociam, não fazem paz e não têm ouvidoria. Em compensação, fazem gre
     <listOrderPriority>41</listOrderPriority>
     <settlementGenerationWeight>1.3</settlementGenerationWeight>
     <earliestRaidDays>0</earliestRaidDays>
+    <!-- Ideologia fixa "O Dissídio Coletivo" (Ideos/SindicatoDoSaque.rid, via EQ_IdeoTemplates.xml) -->
+    <fixedIdeo>true</fixedIdeo>
+    <structureMemeWeights Inherit="False" />
+    <requiredMemes Inherit="False" />
+    <forcedMemes>
+      <li MayRequire="Sarg.AlphaMemes">AM_Structure_Scavenger</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">Supremacist</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">HighLife</li>
+    </forcedMemes>
     <xenotypeSet Inherit="False">
       <xenotypeChances>
         <EQ_Xeno_Vagante>0.65</EQ_Xeno_Vagante>
@@ -335,54 +420,41 @@ Não negociam, não fazem paz e não têm ouvidoria. Em compensação, fazem gre
         <kindDef>Combat</kindDef>
         <commonality>100</commonality>
         <options>
-          <Drifter>10</Drifter>
-          <Scavenger>10</Scavenger>
-          <Thrasher>4</Thrasher>
-          <Pirate>8</Pirate>
-          <Grenadier_Destructive>1.5</Grenadier_Destructive>
-          <Mercenary_Gunner>6</Mercenary_Gunner>
-          <Mercenary_Heavy>3</Mercenary_Heavy>
-          <Mercenary_Slasher>3</Mercenary_Slasher>
-          <Mercenary_Sniper>3</Mercenary_Sniper>
-          <PirateBoss>2</PirateBoss>
+          <EQ_Sindicato_Filiado>10</EQ_Sindicato_Filiado>
+          <EQ_Sindicato_Piqueteiro>5</EQ_Sindicato_Piqueteiro>
+          <EQ_Sindicato_Cobrador>8</EQ_Sindicato_Cobrador>
+          <EQ_Sindicato_Delegado>3</EQ_Sindicato_Delegado>
+          <EQ_Sindicato_Presidente>0.5</EQ_Sindicato_Presidente>
         </options>
       </li>
       <li>
-        <!-- Base sindical: só andarilhos e catadores (os primeiros ataques da partida) -->
+        <!-- Base sindical: os primeiros ataques da partida -->
         <kindDef>Combat</kindDef>
         <commonality>60</commonality>
         <maxTotalPoints>700</maxTotalPoints>
         <options>
-          <Drifter>10</Drifter>
-          <Scavenger>6</Scavenger>
-          <Thrasher>2</Thrasher>
+          <EQ_Sindicato_Filiado>10</EQ_Sindicato_Filiado>
+          <EQ_Sindicato_Piqueteiro>4</EQ_Sindicato_Piqueteiro>
+          <EQ_Sindicato_Cobrador>2</EQ_Sindicato_Cobrador>
         </options>
       </li>
       <li>
         <!-- Piquete: só corpo a corpo -->
         <kindDef>Combat</kindDef>
         <commonality>25</commonality>
-        <disallowedStrategies>
-          <li>Siege</li>
-        </disallowedStrategies>
         <options>
-          <Thrasher>10</Thrasher>
-          <Mercenary_Slasher>8</Mercenary_Slasher>
-          <PirateBoss>2</PirateBoss>
+          <EQ_Sindicato_Piqueteiro>10</EQ_Sindicato_Piqueteiro>
+          <EQ_Sindicato_Filiado>3</EQ_Sindicato_Filiado>
         </options>
       </li>
       <li>
         <kindDef>Settlement</kindDef>
         <options>
-          <Thrasher>3</Thrasher>
-          <Scavenger>8</Scavenger>
-          <Pirate>10</Pirate>
-          <Grenadier_Destructive>2</Grenadier_Destructive>
-          <Mercenary_Gunner>8</Mercenary_Gunner>
-          <Mercenary_Heavy>4</Mercenary_Heavy>
-          <Mercenary_Slasher>3</Mercenary_Slasher>
-          <Mercenary_Sniper>4</Mercenary_Sniper>
-          <PirateBoss>3</PirateBoss>
+          <EQ_Sindicato_Filiado>8</EQ_Sindicato_Filiado>
+          <EQ_Sindicato_Piqueteiro>4</EQ_Sindicato_Piqueteiro>
+          <EQ_Sindicato_Cobrador>10</EQ_Sindicato_Cobrador>
+          <EQ_Sindicato_Delegado>4</EQ_Sindicato_Delegado>
+          <EQ_Sindicato_Presidente>1</EQ_Sindicato_Presidente>
         </options>
       </li>
     </pawnGroupMakers>

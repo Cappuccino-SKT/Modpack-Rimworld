@@ -19,21 +19,25 @@
         <EQ_Xeno_Anotado>1</EQ_Xeno_Anotado>
       </xenotypeChances>
     </xenotypeSet>
+    <!-- "Voluntário de pesquisa": de avental de paciente. -->
+    <apparelRequired>
+      <li MayRequire="vanillaquestsexpanded.ancients">VQEA_Apparel_PatientGown</li>
+    </apparelRequired>
   </PawnKindDef>
 
   <PawnKindDef ParentName="MercenaryMidTierBase">
     <defName>EQ_Silencio_Acolito</defName>
+    <apparelMoney>400~1100</apparelMoney>
+    <apparelTags Inherit="False">
+      <li>EQ_Roupa_Comum</li>
+      <li>EQ_Roupa_Silencio</li>
+    </apparelTags>
     <label>acólito pesquisador</label>
     <labelPlural>acólitos pesquisadores</labelPlural>
     <defaultFactionDef>EQ_Faction_Silencio</defaultFactionDef>
     <combatPower>75</combatPower>
     <gearHealthRange>0.8~1.5</gearHealthRange>
     <apparelColor>(70,70,78)</apparelColor>
-    <apparelMoney>600~1400</apparelMoney>
-    <apparelTags>
-      <li>IndustrialBasic</li>
-      <li>IndustrialMilitaryBasic</li>
-    </apparelTags>
     <specificApparelRequirements>
       <li>
         <apparelLayer>Shell</apparelLayer>
@@ -46,11 +50,13 @@
         </alternateTagChoices>
       </li>
     </specificApparelRequirements>
-    <weaponMoney>300~1200</weaponMoney>
-    <weaponTags>
-      <li>NerveSpiker</li>
-      <li MayRequire="VanillaExpanded.VWEBF">VWEB_BioferriteWeapon</li>
-      <li>IndustrialGunAdvanced</li>
+    <!-- Unidade de combate: nunca alguém incapaz de violência (viria desarmado). -->
+    <requiredWorkTags>
+      <li>Violent</li>
+    </requiredWorkTags>
+    <weaponMoney>300~800</weaponMoney>
+    <weaponTags Inherit="False">
+      <li>EQ_Silencio_Basico</li>
     </weaponTags>
     <isGoodPsychicRitualInvoker>true</isGoodPsychicRitualInvoker>
     <initialResistanceRange>14~22</initialResistanceRange>
@@ -61,20 +67,32 @@
         <EQ_Xeno_Escriba>1</EQ_Xeno_Escriba>
       </xenotypeChances>
     </xenotypeSet>
+    <modExtensions>
+      <!-- Munição de reserva com o Combat Extended (as bases MidTier/Elite do jogo não recebem do CE). -->
+      <li Class="CombatExtended.LoadoutPropertiesExtension" MayRequire="CETeam.CombatExtended">
+        <primaryMagazineCount>
+          <min>2</min>
+          <max>4</max>
+        </primaryMagazineCount>
+      </li>
+    </modExtensions>
   </PawnKindDef>
 
   <PawnKindDef ParentName="MercenaryEliteBase">
     <defName>EQ_Silencio_Guardiao</defName>
+    <apparelMoney>2500~4500</apparelMoney>
+    <apparelTags Inherit="False">
+      <li>EQ_Roupa_Comum</li>
+      <li>EQ_Roupa_SilencioElite</li>
+    </apparelTags>
     <label>guardião da contenção</label>
     <labelPlural>guardiões da contenção</labelPlural>
     <defaultFactionDef>EQ_Faction_Silencio</defaultFactionDef>
     <combatPower>140</combatPower>
     <apparelColor>(55,55,62)</apparelColor>
-    <weaponMoney>800~3000</weaponMoney>
+    <weaponMoney>400~3000</weaponMoney>
     <weaponTags Inherit="False">
-      <li MayRequire="VanillaExpanded.VWEBF">VWEB_BioferriteWeapon</li>
-      <li>Flamethrower</li>
-      <li>IndustrialGunAdvanced</li>
+      <li>EQ_Silencio_Elite</li>
     </weaponTags>
     <initialResistanceRange>20~30</initialResistanceRange>
     <!-- Xeno de elite (não hereditário); o padrão por baixo vem do doubleXenotypeChances do xeno. -->
@@ -84,10 +102,25 @@
         <EQ_Xeno_Velado>1</EQ_Xeno_Velado>
       </xenotypeChances>
     </xenotypeSet>
+    <modExtensions>
+      <!-- Munição de reserva com o Combat Extended (as bases MidTier/Elite do jogo não recebem do CE). -->
+      <li Class="CombatExtended.LoadoutPropertiesExtension" MayRequire="CETeam.CombatExtended">
+        <primaryMagazineCount>
+          <min>2</min>
+          <max>4</max>
+        </primaryMagazineCount>
+      </li>
+    </modExtensions>
   </PawnKindDef>
 
   <PawnKindDef ParentName="MercenaryEliteTierBase">
     <defName>EQ_Silencio_Arquivista</defName>
+    <apparelMoney>1500~3500</apparelMoney>
+    <apparelTags Inherit="False">
+      <li>EQ_Roupa_Comum</li>
+      <li>EQ_Roupa_Silencio</li>
+      <li>EQ_Roupa_SilencioElite</li>
+    </apparelTags>
     <label>arquivista-mor</label>
     <labelPlural>arquivistas-mores</labelPlural>
     <defaultFactionDef>EQ_Faction_Silencio</defaultFactionDef>
@@ -110,8 +143,8 @@
     </specificApparelRequirements>
     <weaponMoney>300~1500</weaponMoney>
     <weaponTags Inherit="False">
-      <li>NerveSpiker</li>
-      <li>IndustrialGunAdvanced</li>
+      <li>EQ_Silencio_Elite</li>
+      <li>EQ_Silencio_Basico</li>
     </weaponTags>
     <isGoodPsychicRitualInvoker>true</isGoodPsychicRitualInvoker>
     <initialResistanceRange>30~45</initialResistanceRange>
@@ -130,21 +163,23 @@
 
   <PawnKindDef ParentName="MercenaryMidTierBase">
     <defName>EQ_Helice_Estagiario</defName>
+    <apparelMoney>300~900</apparelMoney>
+    <apparelTags Inherit="False">
+      <li>EQ_Roupa_Comum</li>
+      <li>EQ_Roupa_Helice</li>
+    </apparelTags>
     <label>estagiário genético</label>
     <labelPlural>estagiários genéticos</labelPlural>
     <defaultFactionDef>EQ_Faction_Helice</defaultFactionDef>
     <combatPower>60</combatPower>
     <apparelColor>(225,232,235)</apparelColor>
-    <apparelMoney>500~1200</apparelMoney>
-    <apparelTags>
-      <li>IndustrialBasic</li>
-      <li>IndustrialAdvanced</li>
-      <li>IndustrialMilitaryBasic</li>
-    </apparelTags>
-    <weaponMoney>250~700</weaponMoney>
-    <weaponTags>
-      <li>Gun</li>
-      <li>IndustrialGunAdvanced</li>
+    <!-- Unidade de combate: nunca alguém incapaz de violência (viria desarmado). -->
+    <requiredWorkTags>
+      <li>Violent</li>
+    </requiredWorkTags>
+    <weaponMoney>250~800</weaponMoney>
+    <weaponTags Inherit="False">
+      <li>EQ_Helice_Basico</li>
     </weaponTags>
     <initialResistanceRange>8~14</initialResistanceRange>
     <!-- Xeno de elite (não hereditário); o padrão por baixo vem do doubleXenotypeChances do xeno. -->
@@ -154,26 +189,37 @@
         <EQ_Xeno_ModeloBase>1</EQ_Xeno_ModeloBase>
       </xenotypeChances>
     </xenotypeSet>
+    <modExtensions>
+      <!-- Munição de reserva com o Combat Extended (as bases MidTier/Elite do jogo não recebem do CE). -->
+      <li Class="CombatExtended.LoadoutPropertiesExtension" MayRequire="CETeam.CombatExtended">
+        <primaryMagazineCount>
+          <min>2</min>
+          <max>4</max>
+        </primaryMagazineCount>
+      </li>
+    </modExtensions>
   </PawnKindDef>
 
   <PawnKindDef ParentName="MercenaryMidTierBase">
     <defName>EQ_Helice_Fiscal</defName>
+    <apparelMoney>900~2000</apparelMoney>
+    <apparelTags Inherit="False">
+      <li>EQ_Roupa_Comum</li>
+      <li>EQ_Roupa_Helice</li>
+      <li>EQ_Roupa_HeliceSeguranca</li>
+    </apparelTags>
     <label>fiscal de linhagem</label>
     <labelPlural>fiscais de linhagem</labelPlural>
     <defaultFactionDef>EQ_Faction_Helice</defaultFactionDef>
     <combatPower>90</combatPower>
     <apparelColor>(40,150,150)</apparelColor>
-    <apparelMoney>1200~2500</apparelMoney>
-    <apparelTags>
-      <li>IndustrialAdvanced</li>
-      <li>IndustrialMilitaryBasic</li>
-      <li>IndustrialMilitaryAdvanced</li>
-      <li>BeltDefensePop</li>
-    </apparelTags>
-    <weaponMoney>500~1400</weaponMoney>
-    <weaponTags>
-      <li>IndustrialGunAdvanced</li>
-      <li>GrenadeTox</li>
+    <!-- Unidade de combate: nunca alguém incapaz de violência (viria desarmado). -->
+    <requiredWorkTags>
+      <li>Violent</li>
+    </requiredWorkTags>
+    <weaponMoney>900~3200</weaponMoney>
+    <weaponTags Inherit="False">
+      <li>EQ_Helice_Seguranca</li>
     </weaponTags>
     <initialResistanceRange>12~20</initialResistanceRange>
     <!-- Xeno de elite (não hereditário); o padrão por baixo vem do doubleXenotypeChances do xeno. -->
@@ -183,20 +229,33 @@
         <EQ_Xeno_Compliance>1</EQ_Xeno_Compliance>
       </xenotypeChances>
     </xenotypeSet>
+    <modExtensions>
+      <!-- Munição de reserva com o Combat Extended (as bases MidTier/Elite do jogo não recebem do CE). -->
+      <li Class="CombatExtended.LoadoutPropertiesExtension" MayRequire="CETeam.CombatExtended">
+        <primaryMagazineCount>
+          <min>2</min>
+          <max>4</max>
+        </primaryMagazineCount>
+      </li>
+    </modExtensions>
   </PawnKindDef>
 
   <!-- Sempre de um xenotipo de elite: o "produto premium" do catálogo. -->
   <PawnKindDef ParentName="MercenaryEliteBase">
     <defName>EQ_Helice_Prototipo</defName>
+    <apparelMoney>3000~5500</apparelMoney>
+    <apparelTags Inherit="False">
+      <li>EQ_Roupa_Comum</li>
+      <li>EQ_Roupa_HeliceElite</li>
+    </apparelTags>
     <label>protótipo premium</label>
     <labelPlural>protótipos premium</labelPlural>
     <defaultFactionDef>EQ_Faction_Helice</defaultFactionDef>
     <combatPower>160</combatPower>
     <apparelColor>(40,150,150)</apparelColor>
-    <weaponMoney>800~3000</weaponMoney>
+    <weaponMoney>2500~6000</weaponMoney>
     <weaponTags Inherit="False">
-      <li>IndustrialGunAdvanced</li>
-      <li>BeamGraserGun</li>
+      <li>EQ_Helice_Elite</li>
     </weaponTags>
     <initialResistanceRange>20~30</initialResistanceRange>
     <!-- Xeno de elite (não hereditário); o padrão por baixo vem do doubleXenotypeChances do xeno. -->
@@ -206,10 +265,24 @@
         <EQ_Xeno_Premium>1</EQ_Xeno_Premium>
       </xenotypeChances>
     </xenotypeSet>
+    <modExtensions>
+      <!-- Munição de reserva com o Combat Extended (as bases MidTier/Elite do jogo não recebem do CE). -->
+      <li Class="CombatExtended.LoadoutPropertiesExtension" MayRequire="CETeam.CombatExtended">
+        <primaryMagazineCount>
+          <min>2</min>
+          <max>4</max>
+        </primaryMagazineCount>
+      </li>
+    </modExtensions>
   </PawnKindDef>
 
   <PawnKindDef ParentName="MercenaryEliteTierBase">
     <defName>EQ_Helice_Diretor</defName>
+    <apparelMoney>2500~5000</apparelMoney>
+    <apparelTags Inherit="False">
+      <li>EQ_Roupa_Comum</li>
+      <li>EQ_Roupa_HeliceElite</li>
+    </apparelTags>
     <label>diretor executivo</label>
     <labelPlural>diretores executivos</labelPlural>
     <defaultFactionDef>EQ_Faction_Helice</defaultFactionDef>
@@ -217,9 +290,10 @@
     <combatPower>110</combatPower>
     <minGenerationAge>35</minGenerationAge>
     <apparelColor>(235,235,235)</apparelColor>
-    <weaponMoney>400~1500</weaponMoney>
+    <weaponMoney>1500~4500</weaponMoney>
     <weaponTags Inherit="False">
-      <li>IndustrialGunAdvanced</li>
+      <li>EQ_Helice_Seguranca</li>
+      <li>EQ_Helice_Elite</li>
     </weaponTags>
     <initialResistanceRange>30~45</initialResistanceRange>
     <!-- Xeno de elite (não hereditário); o padrão por baixo vem do doubleXenotypeChances do xeno. -->
@@ -237,44 +311,53 @@
 
   <PawnKindDef ParentName="MercenaryMidTierBase">
     <defName>EQ_Forja_Aprendiz</defName>
+    <apparelMoney>400~1100</apparelMoney>
+    <apparelTags Inherit="False">
+      <li>EQ_Roupa_Comum</li>
+      <li>EQ_Roupa_Forja</li>
+    </apparelTags>
     <label>aprendiz de manutenção</label>
     <labelPlural>aprendizes de manutenção</labelPlural>
     <defaultFactionDef>EQ_Faction_Forja</defaultFactionDef>
     <combatPower>55</combatPower>
     <apparelColor>(150,90,50)</apparelColor>
-    <apparelMoney>400~1100</apparelMoney>
-    <apparelTags>
-      <li>IndustrialBasic</li>
-      <li>IndustrialMilitaryBasic</li>
-    </apparelTags>
-    <weaponMoney>200~700</weaponMoney>
-    <weaponTags>
-      <li MayRequire="VanillaExpanded.VWEMS">MakeshiftGun</li>
-      <li>Gun</li>
+    <!-- Unidade de combate: nunca alguém incapaz de violência (viria desarmado). -->
+    <requiredWorkTags>
+      <li>Violent</li>
+    </requiredWorkTags>
+    <weaponMoney>250~800</weaponMoney>
+    <weaponTags Inherit="False">
+      <li>EQ_Forja_Basico</li>
     </weaponTags>
     <initialResistanceRange>8~14</initialResistanceRange>
+    <modExtensions>
+      <!-- Munição de reserva com o Combat Extended (as bases MidTier/Elite do jogo não recebem do CE). -->
+      <li Class="CombatExtended.LoadoutPropertiesExtension" MayRequire="CETeam.CombatExtended">
+        <primaryMagazineCount>
+          <min>2</min>
+          <max>4</max>
+        </primaryMagazineCount>
+      </li>
+    </modExtensions>
   </PawnKindDef>
 
   <!-- A "armadura de força" da Forja: blindagem espacial completa e armas de energia. -->
   <PawnKindDef ParentName="MercenaryEliteBase">
     <defName>EQ_Forja_Cavaleiro</defName>
+    <apparelMoney>5000~8000</apparelMoney>
+    <apparelTags Inherit="False">
+      <li>EQ_Roupa_Comum</li>
+      <li>EQ_Roupa_ForjaElite</li>
+    </apparelTags>
     <label>cavaleiro da garantia</label>
     <labelPlural>cavaleiros da garantia</labelPlural>
     <defaultFactionDef>EQ_Faction_Forja</defaultFactionDef>
     <combatPower>185</combatPower>
     <apparelColor>(110,110,120)</apparelColor>
-    <apparelMoney>5000~8000</apparelMoney>
-    <apparelTags Inherit="False">
-      <li>IndustrialMilitaryAdvanced</li>
-      <li>SpacerMilitary</li>
-      <li>BeltDefensePop</li>
-    </apparelTags>
     <apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
-    <weaponMoney>1500~4500</weaponMoney>
+    <weaponMoney>700~4500</weaponMoney>
     <weaponTags Inherit="False">
-      <li MayRequire="VanillaExpanded.VWEL">LaserGun</li>
-      <li MayRequire="VanillaExpanded.VWEC">Coilgun</li>
-      <li>IndustrialGunAdvanced</li>
+      <li>EQ_Forja_Elite</li>
     </weaponTags>
     <initialResistanceRange>25~35</initialResistanceRange>
     <!-- Xeno de elite (não hereditário); o padrão por baixo vem do doubleXenotypeChances do xeno. -->
@@ -285,6 +368,57 @@
         <EQ_Xeno_EngenheiroPrimaz>0.15</EQ_Xeno_EngenheiroPrimaz>
       </xenotypeChances>
     </xenotypeSet>
+    <modExtensions>
+      <!-- Munição de reserva com o Combat Extended (as bases MidTier/Elite do jogo não recebem do CE). -->
+      <li Class="CombatExtended.LoadoutPropertiesExtension" MayRequire="CETeam.CombatExtended">
+        <primaryMagazineCount>
+          <min>2</min>
+          <max>4</max>
+        </primaryMagazineCount>
+      </li>
+    </modExtensions>
+  </PawnKindDef>
+
+  <!-- Cavaleiro em armadura-caixão (VFE Pirates): o corpo é lacrado dentro da armadura na fábrica.
+       "Lacre violado perde a garantia." Unidade pesada e rara da Forja. -->
+  <PawnKindDef ParentName="MercenaryEliteBase" MayRequire="OskarPotocki.VFE.Pirates">
+    <defName>EQ_Forja_Lacrado</defName>
+    <label>cavaleiro lacrado</label>
+    <labelPlural>cavaleiros lacrados</labelPlural>
+    <defaultFactionDef>EQ_Faction_Forja</defaultFactionDef>
+    <combatPower>320</combatPower>
+    <maxGenerationAge>55</maxGenerationAge>
+    <apparelColor>(110,110,120)</apparelColor>
+    <apparelMoney>3000~5000</apparelMoney>
+    <apparelTags Inherit="False">
+      <li>WarcasketVeteran</li>
+    </apparelTags>
+    <apparelRequired>
+      <li>VFEP_Warcasket_Marine</li>
+      <li>VFEP_WarcasketShoulders_Marine</li>
+      <li>VFEP_WarcasketHelmet_Marine</li>
+    </apparelRequired>
+    <apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
+    <weaponMoney>1500~3400</weaponMoney>
+    <weaponTags Inherit="False">
+      <li>WarcasketVeteran</li>
+      <li>WarcasketHeavy</li>
+    </weaponTags>
+    <initialResistanceRange>30~40</initialResistanceRange>
+    <useFactionXenotypes>false</useFactionXenotypes>
+    <xenotypeSet Inherit="False">
+      <xenotypeChances>
+        <EQ_Xeno_Cavaleiro>1</EQ_Xeno_Cavaleiro>
+      </xenotypeChances>
+    </xenotypeSet>
+    <modExtensions>
+      <li Class="CombatExtended.LoadoutPropertiesExtension" MayRequire="CETeam.CombatExtended">
+        <primaryMagazineCount>
+          <min>3</min>
+          <max>5</max>
+        </primaryMagazineCount>
+      </li>
+    </modExtensions>
   </PawnKindDef>
 
   <PawnKindDef ParentName="MechanitorBase">
@@ -306,6 +440,11 @@
 
   <PawnKindDef ParentName="MercenaryEliteTierBase">
     <defName>EQ_Forja_Primaz</defName>
+    <apparelMoney>5000~9000</apparelMoney>
+    <apparelTags Inherit="False">
+      <li>EQ_Roupa_Comum</li>
+      <li>EQ_Roupa_ForjaElite</li>
+    </apparelTags>
     <label>engenheiro-primaz</label>
     <labelPlural>engenheiros-primazes</labelPlural>
     <defaultFactionDef>EQ_Faction_Forja</defaultFactionDef>
@@ -313,11 +452,9 @@
     <combatPower>150</combatPower>
     <minGenerationAge>35</minGenerationAge>
     <apparelColor>(90,90,100)</apparelColor>
-    <apparelMoney>4000~7000</apparelMoney>
     <weaponMoney>1000~3500</weaponMoney>
     <weaponTags Inherit="False">
-      <li MayRequire="VanillaExpanded.VWEL">LaserGun</li>
-      <li>IndustrialGunAdvanced</li>
+      <li>EQ_Forja_Elite</li>
     </weaponTags>
     <techHediffsRequired>
       <li>Mechlink</li>
@@ -331,40 +468,65 @@
 
   <PawnKindDef ParentName="MercenaryMidTierBase">
     <defName>EQ_Coro_Corista</defName>
+    <apparelMoney>500~1300</apparelMoney>
+    <apparelTags Inherit="False">
+      <li>EQ_Roupa_Comum</li>
+      <li>EQ_Roupa_Coro</li>
+    </apparelTags>
     <label>corista</label>
     <labelPlural>coristas</labelPlural>
     <defaultFactionDef>EQ_Faction_Coro</defaultFactionDef>
     <combatPower>70</combatPower>
     <apparelColor>(95,45,130)</apparelColor>
-    <apparelMoney>700~1600</apparelMoney>
-    <apparelTags>
-      <li>IndustrialAdvanced</li>
-      <li>IndustrialMilitaryBasic</li>
-      <li>IndustrialMilitaryAdvanced</li>
-    </apparelTags>
-    <weaponMoney>400~1200</weaponMoney>
-    <weaponTags>
-      <li>IndustrialGunAdvanced</li>
+    <!-- Unidade de combate: nunca alguém incapaz de violência (viria desarmado). -->
+    <requiredWorkTags>
+      <li>Violent</li>
+    </requiredWorkTags>
+    <weaponMoney>250~900</weaponMoney>
+    <weaponTags Inherit="False">
+      <li>EQ_Coro_Basico</li>
     </weaponTags>
     <initialResistanceRange>12~20</initialResistanceRange>
+    <modExtensions>
+      <!-- Munição de reserva com o Combat Extended (as bases MidTier/Elite do jogo não recebem do CE). -->
+      <li Class="CombatExtended.LoadoutPropertiesExtension" MayRequire="CETeam.CombatExtended">
+        <primaryMagazineCount>
+          <min>2</min>
+          <max>4</max>
+        </primaryMagazineCount>
+      </li>
+    </modExtensions>
   </PawnKindDef>
 
   <PawnKindDef ParentName="MercenaryEliteBase">
     <defName>EQ_Coro_Tenor</defName>
+    <apparelMoney>4000~7500</apparelMoney>
+    <apparelTags Inherit="False">
+      <li>EQ_Roupa_Comum</li>
+      <li>EQ_Roupa_Coro</li>
+      <li>EQ_Roupa_CoroElite</li>
+    </apparelTags>
     <label>tenor de guerra</label>
     <labelPlural>tenores de guerra</labelPlural>
     <defaultFactionDef>EQ_Faction_Coro</defaultFactionDef>
     <combatPower>200</combatPower>
     <apparelColor>(95,45,130)</apparelColor>
-    <weaponMoney>800~3000</weaponMoney>
+    <weaponMoney>800~3200</weaponMoney>
     <weaponTags Inherit="False">
-      <li>IndustrialGunAdvanced</li>
+      <li>EQ_Coro_Elite</li>
     </weaponTags>
     <disallowedTraitsWithDegree>
       <PsychicSensitivity>-2</PsychicSensitivity>
     </disallowedTraitsWithDegree>
     <initialResistanceRange>25~35</initialResistanceRange>
     <modExtensions>
+      <!-- Munição de reserva com o Combat Extended (as bases MidTier/Elite do jogo não recebem do CE). -->
+      <li Class="CombatExtended.LoadoutPropertiesExtension" MayRequire="CETeam.CombatExtended">
+        <primaryMagazineCount>
+          <min>2</min>
+          <max>4</max>
+        </primaryMagazineCount>
+      </li>
       <li MayRequire="VanillaExpanded.VPsycastsE" Class="VanillaPsycastsExpanded.PawnKindAbilityExtension_Psycasts">
         <implantDef>VPE_PsycastAbilityImplant</implantDef>
         <initialLevel>1</initialLevel>
@@ -386,6 +548,12 @@
 
   <PawnKindDef ParentName="MercenaryEliteBase">
     <defName>EQ_Coro_Soprano</defName>
+    <apparelMoney>1500~4000</apparelMoney>
+    <apparelTags Inherit="False">
+      <li>EQ_Roupa_Comum</li>
+      <li>EQ_Roupa_Coro</li>
+      <li>EQ_Roupa_CoroPsiquico</li>
+    </apparelTags>
     <label>soprano incandescente</label>
     <labelPlural>sopranos incandescentes</labelPlural>
     <defaultFactionDef>EQ_Faction_Coro</defaultFactionDef>
@@ -400,6 +568,13 @@
     </disallowedTraitsWithDegree>
     <initialResistanceRange>25~35</initialResistanceRange>
     <modExtensions>
+      <!-- Munição de reserva com o Combat Extended (as bases MidTier/Elite do jogo não recebem do CE). -->
+      <li Class="CombatExtended.LoadoutPropertiesExtension" MayRequire="CETeam.CombatExtended">
+        <primaryMagazineCount>
+          <min>2</min>
+          <max>4</max>
+        </primaryMagazineCount>
+      </li>
       <li MayRequire="VanillaExpanded.VPsycastsE" Class="VanillaPsycastsExpanded.PawnKindAbilityExtension_Psycasts">
         <implantDef>VPE_PsycastAbilityImplant</implantDef>
         <initialLevel>1</initialLevel>
@@ -421,6 +596,12 @@
 
   <PawnKindDef ParentName="MercenaryEliteTierBase">
     <defName>EQ_Coro_Maestro</defName>
+    <apparelMoney>2500~5000</apparelMoney>
+    <apparelTags Inherit="False">
+      <li>EQ_Roupa_Comum</li>
+      <li>EQ_Roupa_Coro</li>
+      <li>EQ_Roupa_CoroPsiquico</li>
+    </apparelTags>
     <label>maestro supremo</label>
     <labelPlural>maestros supremos</labelPlural>
     <defaultFactionDef>EQ_Faction_Coro</defaultFactionDef>
@@ -445,6 +626,8 @@
         <unlockedPaths>
           <VPE_Empath>2~5|4~12</VPE_Empath>
           <VPE_Archon>1~4|2~10</VPE_Archon>
+          <!-- Elite do Coro: o xeno Sangue Maestro é hemogênico. -->
+          <VPEH_Hemosage MayRequire="VanillaExpanded.VPE.Hemosage">1~5|3~8</VPEH_Hemosage>
         </unlockedPaths>
       </li>
     </modExtensions>
@@ -468,10 +651,30 @@
       <li>Gun</li>
     </weaponTags>
     <initialResistanceRange>40~60</initialResistanceRange>
+    <modExtensions>
+      <!-- Munição de reserva com o Combat Extended (as bases MidTier/Elite do jogo não recebem do CE). -->
+      <li Class="CombatExtended.LoadoutPropertiesExtension" MayRequire="CETeam.CombatExtended">
+        <primaryMagazineCount>
+          <min>2</min>
+          <max>4</max>
+        </primaryMagazineCount>
+      </li>
+    </modExtensions>
   </PawnKindDef>
 
   <PawnKindDef ParentName="EQ_EmissarioBase">
     <defName>EQ_Silencio_Emissario</defName>
+    <apparelMoney>2000~3500</apparelMoney>
+    <apparelTags Inherit="False">
+      <li>EQ_Roupa_Comum</li>
+      <li>EQ_Roupa_Silencio</li>
+      <li>EQ_Roupa_SilencioElite</li>
+    </apparelTags>
+    <weaponMoney>500~2600</weaponMoney>
+    <weaponTags Inherit="False">
+      <li>EQ_Silencio_Basico</li>
+      <li>EQ_Silencio_Elite</li>
+    </weaponTags>
     <label>arguidor silente</label>
     <labelPlural>arguidores silentes</labelPlural>
     <defaultFactionDef>EQ_Faction_Silencio</defaultFactionDef>
@@ -480,6 +683,16 @@
 
   <PawnKindDef ParentName="EQ_EmissarioBase">
     <defName>EQ_Helice_Emissario</defName>
+    <apparelMoney>2000~3500</apparelMoney>
+    <apparelTags Inherit="False">
+      <li>EQ_Roupa_Comum</li>
+      <li>EQ_Roupa_Helice</li>
+      <li>EQ_Roupa_HeliceElite</li>
+    </apparelTags>
+    <weaponMoney>500~2600</weaponMoney>
+    <weaponTags Inherit="False">
+      <li>EQ_Helice_Seguranca</li>
+    </weaponTags>
     <label>representante comercial</label>
     <labelPlural>representantes comerciais</labelPlural>
     <defaultFactionDef>EQ_Faction_Helice</defaultFactionDef>
@@ -488,6 +701,17 @@
 
   <PawnKindDef ParentName="EQ_EmissarioBase">
     <defName>EQ_Forja_Emissario</defName>
+    <apparelMoney>2500~5000</apparelMoney>
+    <apparelTags Inherit="False">
+      <li>EQ_Roupa_Comum</li>
+      <li>EQ_Roupa_Forja</li>
+      <li>EQ_Roupa_ForjaElite</li>
+    </apparelTags>
+    <weaponMoney>500~2600</weaponMoney>
+    <weaponTags Inherit="False">
+      <li>EQ_Forja_Basico</li>
+      <li>EQ_Forja_Elite</li>
+    </weaponTags>
     <label>inspetor de garantia</label>
     <labelPlural>inspetores de garantia</labelPlural>
     <defaultFactionDef>EQ_Faction_Forja</defaultFactionDef>
@@ -496,6 +720,17 @@
 
   <PawnKindDef ParentName="EQ_EmissarioBase">
     <defName>EQ_Coro_Emissario</defName>
+    <apparelMoney>2000~3500</apparelMoney>
+    <apparelTags Inherit="False">
+      <li>EQ_Roupa_Comum</li>
+      <li>EQ_Roupa_Coro</li>
+      <li>EQ_Roupa_CoroPsiquico</li>
+    </apparelTags>
+    <weaponMoney>500~2600</weaponMoney>
+    <weaponTags Inherit="False">
+      <li>EQ_Coro_Basico</li>
+      <li>EQ_Coro_Elite</li>
+    </weaponTags>
     <label>mestre de cerimônias</label>
     <labelPlural>mestres de cerimônias</labelPlural>
     <defaultFactionDef>EQ_Faction_Coro</defaultFactionDef>

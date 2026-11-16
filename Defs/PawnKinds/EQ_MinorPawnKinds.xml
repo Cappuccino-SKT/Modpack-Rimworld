@@ -15,11 +15,24 @@
       <li>IndustrialBasic</li>
       <li>IndustrialMilitaryBasic</li>
     </apparelTags>
-    <weaponMoney>300~800</weaponMoney>
-    <weaponTags>
-      <li>Gun</li>
+    <!-- Unidade de combate: nunca alguém incapaz de violência (viria desarmado). -->
+    <requiredWorkTags>
+      <li>Violent</li>
+    </requiredWorkTags>
+    <weaponMoney>300~900</weaponMoney>
+    <weaponTags Inherit="False">
+      <li>EQ_ForaDeLinha_Basico</li>
     </weaponTags>
     <initialResistanceRange>15~25</initialResistanceRange>
+    <modExtensions>
+      <!-- Munição de reserva com o Combat Extended (as bases MidTier/Elite do jogo não recebem do CE). -->
+      <li Class="CombatExtended.LoadoutPropertiesExtension" MayRequire="CETeam.CombatExtended">
+        <primaryMagazineCount>
+          <min>2</min>
+          <max>4</max>
+        </primaryMagazineCount>
+      </li>
+    </modExtensions>
   </PawnKindDef>
 
   <PawnKindDef ParentName="MercenaryMidTierBase">
@@ -36,12 +49,25 @@
       <li>BeltDefensePop</li>
     </apparelTags>
     <!-- PEM contra os mechs da Forja; explosivos contra as oficinas -->
+    <!-- Unidade de combate: nunca alguém incapaz de violência (viria desarmado). -->
+    <requiredWorkTags>
+      <li>Violent</li>
+    </requiredWorkTags>
     <weaponMoney>300~900</weaponMoney>
     <weaponTags Inherit="False">
       <li>GrenadeEMP</li>
       <li>GrenadeDestructive</li>
     </weaponTags>
     <initialResistanceRange>18~28</initialResistanceRange>
+    <modExtensions>
+      <!-- Munição de reserva com o Combat Extended (as bases MidTier/Elite do jogo não recebem do CE). -->
+      <li Class="CombatExtended.LoadoutPropertiesExtension" MayRequire="CETeam.CombatExtended">
+        <primaryMagazineCount>
+          <min>2</min>
+          <max>4</max>
+        </primaryMagazineCount>
+      </li>
+    </modExtensions>
   </PawnKindDef>
 
   <PawnKindDef ParentName="MercenaryEliteBase">
@@ -53,11 +79,18 @@
     <apparelColor>(60,140,160)</apparelColor>
     <weaponMoney>900~2400</weaponMoney>
     <weaponTags Inherit="False">
-      <li>IndustrialGunAdvanced</li>
-      <li>SniperRifle</li>
-      <li>SpacerGun</li>
+      <li>EQ_ForaDeLinha_Elite</li>
     </weaponTags>
     <initialResistanceRange>25~35</initialResistanceRange>
+    <modExtensions>
+      <!-- Munição de reserva com o Combat Extended (as bases MidTier/Elite do jogo não recebem do CE). -->
+      <li Class="CombatExtended.LoadoutPropertiesExtension" MayRequire="CETeam.CombatExtended">
+        <primaryMagazineCount>
+          <min>2</min>
+          <max>4</max>
+        </primaryMagazineCount>
+      </li>
+    </modExtensions>
   </PawnKindDef>
 
   <PawnKindDef ParentName="MercenaryEliteTierBase">
@@ -67,10 +100,10 @@
     <defaultFactionDef>EQ_Faction_ForaDeLinha</defaultFactionDef>
     <combatPower>170</combatPower>
     <apparelColor>(60,140,160)</apparelColor>
-    <weaponMoney>1500~3200</weaponMoney>
+    <weaponMoney>1200~3200</weaponMoney>
     <weaponTags Inherit="False">
-      <li>SpacerGun</li>
-      <li>IndustrialGunAdvanced</li>
+      <li>EQ_ForaDeLinha_Chefe</li>
+      <li>EQ_ForaDeLinha_Elite</li>
     </weaponTags>
     <factionLeader>true</factionLeader>
     <initialResistanceRange>35~50</initialResistanceRange>
@@ -99,6 +132,15 @@
     </weaponTags>
     <techHediffsChance>0</techHediffsChance>
     <initialResistanceRange>12~20</initialResistanceRange>
+    <modExtensions>
+      <!-- Munição de reserva com o Combat Extended (as bases MidTier/Elite do jogo não recebem do CE). -->
+      <li Class="CombatExtended.LoadoutPropertiesExtension" MayRequire="CETeam.CombatExtended">
+        <primaryMagazineCount>
+          <min>2</min>
+          <max>4</max>
+        </primaryMagazineCount>
+      </li>
+    </modExtensions>
   </PawnKindDef>
 
   <PawnKindDef ParentName="MercenaryMidTierBase">
@@ -122,6 +164,15 @@
     </weaponTags>
     <techHediffsChance>0</techHediffsChance>
     <initialResistanceRange>15~22</initialResistanceRange>
+    <modExtensions>
+      <!-- Munição de reserva com o Combat Extended (as bases MidTier/Elite do jogo não recebem do CE). -->
+      <li Class="CombatExtended.LoadoutPropertiesExtension" MayRequire="CETeam.CombatExtended">
+        <primaryMagazineCount>
+          <min>2</min>
+          <max>4</max>
+        </primaryMagazineCount>
+      </li>
+    </modExtensions>
   </PawnKindDef>
 
   <PawnKindDef ParentName="MercenaryEliteBase">
@@ -145,6 +196,15 @@
     </weaponTags>
     <techHediffsChance>0</techHediffsChance>
     <initialResistanceRange>22~32</initialResistanceRange>
+    <modExtensions>
+      <!-- Munição de reserva com o Combat Extended (as bases MidTier/Elite do jogo não recebem do CE). -->
+      <li Class="CombatExtended.LoadoutPropertiesExtension" MayRequire="CETeam.CombatExtended">
+        <primaryMagazineCount>
+          <min>2</min>
+          <max>4</max>
+        </primaryMagazineCount>
+      </li>
+    </modExtensions>
   </PawnKindDef>
 
   <PawnKindDef ParentName="MercenaryEliteTierBase">
@@ -200,6 +260,264 @@
         <EQ_Xeno_Vagante>0.5</EQ_Xeno_Vagante>
       </xenotypeChances>
     </xenotypeSet>
+  </PawnKindDef>
+
+  <!-- ===================== O SINDICATO DO SAQUE ===================== -->
+
+  <PawnKindDef ParentName="MercenaryMidTierBase">
+    <defName>EQ_Sindicato_Filiado</defName>
+    <apparelMoney>100~350</apparelMoney>
+    <apparelTags Inherit="False">
+      <li>EQ_Roupa_Comum</li>
+      <li>EQ_Roupa_Sindicato</li>
+    </apparelTags>
+    <label>filiado</label>
+    <labelPlural>filiados</labelPlural>
+    <defaultFactionDef>EQ_Faction_SindicatoDoSaque</defaultFactionDef>
+    <combatPower>40</combatPower>
+    <!-- Unidade de combate: nunca alguém incapaz de violência (viria desarmado). -->
+    <requiredWorkTags>
+      <li>Violent</li>
+    </requiredWorkTags>
+    <weaponMoney>40~200</weaponMoney>
+    <weaponTags Inherit="False">
+      <li>EQ_Sindicato_Basico</li>
+      <li>EQ_Sindicato_Corpo</li>
+    </weaponTags>
+    <itemQuality>Poor</itemQuality>
+    <gearHealthRange>0.4~0.9</gearHealthRange>
+    <initialResistanceRange>6~14</initialResistanceRange>
+    <modExtensions>
+      <!-- Munição de reserva com o Combat Extended (as bases MidTier/Elite do jogo não recebem do CE). -->
+      <li Class="CombatExtended.LoadoutPropertiesExtension" MayRequire="CETeam.CombatExtended">
+        <primaryMagazineCount>
+          <min>2</min>
+          <max>4</max>
+        </primaryMagazineCount>
+      </li>
+    </modExtensions>
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="MercenaryMidTierBase">
+    <defName>EQ_Sindicato_Piqueteiro</defName>
+    <apparelMoney>150~500</apparelMoney>
+    <apparelTags Inherit="False">
+      <li>EQ_Roupa_Comum</li>
+      <li>EQ_Roupa_Sindicato</li>
+    </apparelTags>
+    <label>piqueteiro</label>
+    <labelPlural>piqueteiros</labelPlural>
+    <defaultFactionDef>EQ_Faction_SindicatoDoSaque</defaultFactionDef>
+    <combatPower>55</combatPower>
+    <!-- Unidade de combate: nunca alguém incapaz de violência (viria desarmado). -->
+    <requiredWorkTags>
+      <li>Violent</li>
+    </requiredWorkTags>
+    <weaponMoney>60~300</weaponMoney>
+    <weaponTags Inherit="False">
+      <li>EQ_Sindicato_Corpo</li>
+    </weaponTags>
+    <itemQuality>Poor</itemQuality>
+    <gearHealthRange>0.4~0.9</gearHealthRange>
+    <initialResistanceRange>8~16</initialResistanceRange>
+    <modExtensions>
+      <!-- Munição de reserva com o Combat Extended (as bases MidTier/Elite do jogo não recebem do CE). -->
+      <li Class="CombatExtended.LoadoutPropertiesExtension" MayRequire="CETeam.CombatExtended">
+        <primaryMagazineCount>
+          <min>2</min>
+          <max>4</max>
+        </primaryMagazineCount>
+      </li>
+    </modExtensions>
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="MercenaryMidTierBase">
+    <defName>EQ_Sindicato_Cobrador</defName>
+    <apparelMoney>300~900</apparelMoney>
+    <apparelTags Inherit="False">
+      <li>EQ_Roupa_Comum</li>
+      <li>EQ_Roupa_Sindicato</li>
+    </apparelTags>
+    <label>cobrador</label>
+    <labelPlural>cobradores</labelPlural>
+    <defaultFactionDef>EQ_Faction_SindicatoDoSaque</defaultFactionDef>
+    <combatPower>70</combatPower>
+    <!-- Unidade de combate: nunca alguém incapaz de violência (viria desarmado). -->
+    <requiredWorkTags>
+      <li>Violent</li>
+    </requiredWorkTags>
+    <weaponMoney>200~700</weaponMoney>
+    <weaponTags Inherit="False">
+      <li>EQ_Sindicato_Veterano</li>
+    </weaponTags>
+    <initialResistanceRange>10~18</initialResistanceRange>
+    <modExtensions>
+      <!-- Munição de reserva com o Combat Extended (as bases MidTier/Elite do jogo não recebem do CE). -->
+      <li Class="CombatExtended.LoadoutPropertiesExtension" MayRequire="CETeam.CombatExtended">
+        <primaryMagazineCount>
+          <min>2</min>
+          <max>4</max>
+        </primaryMagazineCount>
+      </li>
+    </modExtensions>
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="MercenaryEliteBase">
+    <defName>EQ_Sindicato_Delegado</defName>
+    <apparelMoney>800~2000</apparelMoney>
+    <apparelTags Inherit="False">
+      <li>EQ_Roupa_Comum</li>
+      <li>EQ_Roupa_Sindicato</li>
+      <li>EQ_Roupa_SindicatoChefe</li>
+    </apparelTags>
+    <label>delegado sindical</label>
+    <labelPlural>delegados sindicais</labelPlural>
+    <defaultFactionDef>EQ_Faction_SindicatoDoSaque</defaultFactionDef>
+    <combatPower>115</combatPower>
+    <weaponMoney>500~2000</weaponMoney>
+    <weaponTags Inherit="False">
+      <li>EQ_Sindicato_Veterano</li>
+      <li>EQ_Sindicato_Chefe</li>
+    </weaponTags>
+    <initialResistanceRange>18~28</initialResistanceRange>
+    <modExtensions>
+      <!-- Munição de reserva com o Combat Extended (as bases MidTier/Elite do jogo não recebem do CE). -->
+      <li Class="CombatExtended.LoadoutPropertiesExtension" MayRequire="CETeam.CombatExtended">
+        <primaryMagazineCount>
+          <min>2</min>
+          <max>4</max>
+        </primaryMagazineCount>
+      </li>
+    </modExtensions>
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="MercenaryEliteTierBase">
+    <defName>EQ_Sindicato_Presidente</defName>
+    <apparelMoney>2500~5000</apparelMoney>
+    <apparelTags Inherit="False">
+      <li>EQ_Roupa_Comum</li>
+      <li>EQ_Roupa_SindicatoChefe</li>
+    </apparelTags>
+    <label>presidente do sindicato</label>
+    <labelPlural>presidentes do sindicato</labelPlural>
+    <defaultFactionDef>EQ_Faction_SindicatoDoSaque</defaultFactionDef>
+    <combatPower>150</combatPower>
+    <weaponMoney>900~2600</weaponMoney>
+    <weaponTags Inherit="False">
+      <li>EQ_Sindicato_Chefe</li>
+    </weaponTags>
+    <labelFemale>presidenta do sindicato</labelFemale>
+    <factionLeader>true</factionLeader>
+    <initialResistanceRange>30~45</initialResistanceRange>
+  </PawnKindDef>
+
+  <!-- ===================== A FEIRA ANDANTE ===================== -->
+
+  <PawnKindDef ParentName="MercenaryMidTierBase">
+    <defName>EQ_Feira_Feirante</defName>
+    <apparelMoney>200~700</apparelMoney>
+    <apparelTags Inherit="False">
+      <li>EQ_Roupa_Comum</li>
+      <li>EQ_Roupa_Feira</li>
+    </apparelTags>
+    <label>feirante</label>
+    <labelPlural>feirantes</labelPlural>
+    <defaultFactionDef>EQ_Faction_FeiraAndante</defaultFactionDef>
+    <combatPower>40</combatPower>
+    <weaponMoney>180~450</weaponMoney>
+    <weaponTags Inherit="False">
+      <li>EQ_Feira</li>
+    </weaponTags>
+    <initialResistanceRange>6~14</initialResistanceRange>
+    <modExtensions>
+      <!-- Munição de reserva com o Combat Extended (as bases MidTier/Elite do jogo não recebem do CE). -->
+      <li Class="CombatExtended.LoadoutPropertiesExtension" MayRequire="CETeam.CombatExtended">
+        <primaryMagazineCount>
+          <min>2</min>
+          <max>4</max>
+        </primaryMagazineCount>
+      </li>
+    </modExtensions>
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="MercenaryMidTierBase">
+    <defName>EQ_Feira_Seguranca</defName>
+    <apparelMoney>500~1300</apparelMoney>
+    <apparelTags Inherit="False">
+      <li>EQ_Roupa_Comum</li>
+      <li>EQ_Roupa_Feira</li>
+      <li>EQ_Roupa_FeiraGuarda</li>
+    </apparelTags>
+    <label>segurança da feira</label>
+    <labelPlural>seguranças da feira</labelPlural>
+    <defaultFactionDef>EQ_Faction_FeiraAndante</defaultFactionDef>
+    <combatPower>80</combatPower>
+    <!-- Unidade de combate: nunca alguém incapaz de violência (viria desarmado). -->
+    <requiredWorkTags>
+      <li>Violent</li>
+    </requiredWorkTags>
+    <weaponMoney>300~800</weaponMoney>
+    <weaponTags Inherit="False">
+      <li>EQ_Feira</li>
+    </weaponTags>
+    <initialResistanceRange>12~20</initialResistanceRange>
+    <modExtensions>
+      <!-- Munição de reserva com o Combat Extended (as bases MidTier/Elite do jogo não recebem do CE). -->
+      <li Class="CombatExtended.LoadoutPropertiesExtension" MayRequire="CETeam.CombatExtended">
+        <primaryMagazineCount>
+          <min>2</min>
+          <max>4</max>
+        </primaryMagazineCount>
+      </li>
+    </modExtensions>
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="MercenaryMidTierBase">
+    <defName>EQ_Feira_Mascate</defName>
+    <apparelMoney>400~1000</apparelMoney>
+    <apparelTags Inherit="False">
+      <li>EQ_Roupa_Comum</li>
+      <li>EQ_Roupa_Feira</li>
+    </apparelTags>
+    <label>mascate</label>
+    <labelPlural>mascates</labelPlural>
+    <defaultFactionDef>EQ_Faction_FeiraAndante</defaultFactionDef>
+    <combatPower>45</combatPower>
+    <weaponMoney>180~400</weaponMoney>
+    <weaponTags Inherit="False">
+      <li>EQ_Feira</li>
+    </weaponTags>
+    <trader>true</trader>
+    <initialResistanceRange>8~16</initialResistanceRange>
+    <modExtensions>
+      <!-- Munição de reserva com o Combat Extended (as bases MidTier/Elite do jogo não recebem do CE). -->
+      <li Class="CombatExtended.LoadoutPropertiesExtension" MayRequire="CETeam.CombatExtended">
+        <primaryMagazineCount>
+          <min>2</min>
+          <max>4</max>
+        </primaryMagazineCount>
+      </li>
+    </modExtensions>
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="MercenaryEliteTierBase">
+    <defName>EQ_Feira_Pregoeiro</defName>
+    <apparelMoney>800~2000</apparelMoney>
+    <apparelTags Inherit="False">
+      <li>EQ_Roupa_Comum</li>
+      <li>EQ_Roupa_Feira</li>
+    </apparelTags>
+    <label>pregoeiro-mor</label>
+    <labelPlural>pregoeiros-mores</labelPlural>
+    <defaultFactionDef>EQ_Faction_FeiraAndante</defaultFactionDef>
+    <combatPower>100</combatPower>
+    <weaponMoney>300~900</weaponMoney>
+    <weaponTags Inherit="False">
+      <li>EQ_Feira</li>
+    </weaponTags>
+    <labelFemale>pregoeira-mor</labelFemale>
+    <factionLeader>true</factionLeader>
+    <initialResistanceRange>25~40</initialResistanceRange>
   </PawnKindDef>
 
 </Defs>

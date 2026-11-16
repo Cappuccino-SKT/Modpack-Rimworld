@@ -1,0 +1,537 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <!-- Arsenal de cada facção. A etiqueta (tag) é acrescentada por código às armas listadas (weapons = defNames,
+       fromTags = toda arma com aquela etiqueta); as unidades em Defs/PawnKinds sorteiam só por ela.
+       Arma de mod ausente é ignorada. Conferir: comando de debug "kit <PawnKind|fac:nome>". -->
+
+  <EcosDaQueda.ArsenalDef>
+    <defName>EQ_Arsenal_SilencioBasico</defName>
+    <!-- Ordem do Silêncio, pessoal de campo: armas discretas, de quem finge que é só um pesquisador. -->
+    <tag>EQ_Silencio_Basico</tag>
+    <weapons>
+      <li>Gun_Revolver</li>
+      <li>Gun_PumpShotgun</li>
+      <li>Gun_BoltActionRifle</li>
+      <li>Gun_MachinePistol</li>
+      <li>CE_Gun_SawedOff</li>
+      <li>CE_Gun_TaurusJudge</li>
+      <li>CE_Gun_SWGovernor</li>
+      <li>VWEB_Gun_PiercerRifle</li>
+    </weapons>
+  </EcosDaQueda.ArsenalDef>
+
+  <EcosDaQueda.ArsenalDef>
+    <defName>EQ_Arsenal_SilencioElite</defName>
+    <!-- Ordem do Silêncio, guardiões e arquivistas: bioferrita, fogo e tudo o que veio do Vazio. -->
+    <tag>EQ_Silencio_Elite</tag>
+    <weapons>
+      <li>Gun_HellcatRifle</li>
+      <li>Gun_Incinerator</li>
+      <li>CE_Gun_Flamethrower</li>
+      <li>Gun_NerveSpiker</li>
+      <li>NerveSpiker</li>
+    </weapons>
+    <fromTags>
+      <li>VWEB_BioferriteWeapon</li>
+      <li>NerveSpiker</li>
+    </fromTags>
+  </EcosDaQueda.ArsenalDef>
+
+  <EcosDaQueda.ArsenalDef>
+    <defName>EQ_Arsenal_HeliceBasico</defName>
+    <!-- Concílio da Hélice, estagiários: armas curtas de segurança patrimonial. -->
+    <tag>EQ_Helice_Basico</tag>
+    <weapons>
+      <li>Gun_Autopistol</li>
+      <li>Gun_MachinePistol</li>
+      <li>Gun_HeavySMG</li>
+      <li>CE_Gun_FNFiveSeven</li>
+      <li>CE_Gun_PNinety</li>
+      <li>CE_Gun_KelTecCPThirtyThree</li>
+      <li>CE_Gun_MicroUzi</li>
+      <li>CE_Gun_Uzi</li>
+    </weapons>
+  </EcosDaQueda.ArsenalDef>
+
+  <EcosDaQueda.ArsenalDef>
+    <defName>EQ_Arsenal_HeliceSeguranca</defName>
+    <!-- Concílio da Hélice, fiscais: laser e carga compactos, mais o gás da casa. -->
+    <tag>EQ_Helice_Seguranca</tag>
+    <weapons>
+      <li>VWEL_Gun_LaserPistol</li>
+      <li>VWEL_Gun_LaserSMG</li>
+      <li>CE_Gun_ChargePistol</li>
+      <li>CE_Gun_ChargeSMG</li>
+      <li>Gun_HeavySMG</li>
+      <li>CE_Gun_SigMCX</li>
+      <li>CE_Gun_LaserCarbine</li>
+    </weapons>
+    <fromTags>
+      <li>GrenadeTox</li>
+    </fromTags>
+  </EcosDaQueda.ArsenalDef>
+
+  <EcosDaQueda.ArsenalDef>
+    <defName>EQ_Arsenal_HeliceElite</defName>
+    <!-- Concílio da Hélice, protótipos e diretoria: a linha laser completa e armas de feixe. -->
+    <tag>EQ_Helice_Elite</tag>
+    <weapons>
+      <li>Gun_ChargeRifle</li>
+      <li>Gun_BeamGraser</li>
+      <li>Gun_BeamRepeater</li>
+      <li>CE_Gun_ChargeShotgun</li>
+    </weapons>
+    <fromTags>
+      <li>LaserGun</li>
+    </fromTags>
+  </EcosDaQueda.ArsenalDef>
+
+  <EcosDaQueda.ArsenalDef>
+    <defName>EQ_Arsenal_ForjaBasico</defName>
+    <!-- Irmandade da Forja, aprendizes: armas mecânicas bem feitas, de ferrolho e alavanca. -->
+    <tag>EQ_Forja_Basico</tag>
+    <weapons>
+      <li>Gun_BoltActionRifle</li>
+      <li>Gun_PumpShotgun</li>
+      <li>CE_Gun_M1Garand</li>
+      <li>CE_Gun_SKS</li>
+      <li>CE_Gun_MosinNagant</li>
+      <li>CE_Gun_WinchesterNintyFour</li>
+      <li>CE_Gun_M1903Springfield</li>
+    </weapons>
+    <fromTags>
+      <li>FrontierGunSimple</li>
+      <li>FrontierGunAdvanced</li>
+    </fromTags>
+  </EcosDaQueda.ArsenalDef>
+
+  <EcosDaQueda.ArsenalDef>
+    <defName>EQ_Arsenal_ForjaElite</defName>
+    <!-- Irmandade da Forja, cavaleiros: canhões de bobina e armamento pesado. -->
+    <tag>EQ_Forja_Elite</tag>
+    <weapons>
+      <li>Gun_LMG</li>
+      <li>Gun_Minigun</li>
+      <li>Gun_SniperRifle</li>
+      <li>Gun_ChainShotgun</li>
+      <li>CE_Gun_MSixty</li>
+      <li>CE_Gun_PKM</li>
+      <li>CE_Gun_MTwoFourNine</li>
+      <li>CE_Gun_M82A2Barrett</li>
+      <li>CE_Gun_KordPortable</li>
+    </weapons>
+    <fromTags>
+      <li>Coilgun</li>
+      <li>FrontierCoilguns</li>
+    </fromTags>
+  </EcosDaQueda.ArsenalDef>
+
+  <EcosDaQueda.ArsenalDef>
+    <defName>EQ_Arsenal_CoroBasico</defName>
+    <!-- Coro Ascendente, coristas: armas de cerimônia, revólver e sabre. -->
+    <tag>EQ_Coro_Basico</tag>
+    <weapons>
+      <li>Gun_Revolver</li>
+      <li>VWEFT_Gun_HeavyRevolver</li>
+      <li>VWEFT_Gun_RollingBlockRifle</li>
+      <li>Gun_BoltActionRifle</li>
+      <li>CE_Gun_HenrySideGate</li>
+      <li>CE_Gun_BigBoy</li>
+      <li>CE_Melee_Saber</li>
+      <li>MeleeWeapon_LongSword</li>
+      <li>MeleeWeapon_Gladius</li>
+    </weapons>
+  </EcosDaQueda.ArsenalDef>
+
+  <EcosDaQueda.ArsenalDef>
+    <defName>EQ_Arsenal_CoroElite</defName>
+    <!-- Coro Ascendente, tenores: armas de carga da corte e lâminas nobres. -->
+    <tag>EQ_Coro_Elite</tag>
+    <weapons>
+      <li>Gun_ChargeRifle</li>
+      <li>CE_Gun_ChargeSniperRifle</li>
+      <li>VFEE_Gun_ChargeThumper</li>
+      <li>VEE_Gun_Fletcher</li>
+      <li>VFEE_MeleeWeapon_Toxblade</li>
+      <li>MeleeWeapon_MonoSword</li>
+      <li>MeleeWeapon_PlasmaSword</li>
+    </weapons>
+    <fromTags>
+      <li>VPE_EltexMelee</li>
+    </fromTags>
+  </EcosDaQueda.ArsenalDef>
+
+  <EcosDaQueda.ArsenalDef>
+    <defName>EQ_Arsenal_SindicatoBasico</defName>
+    <!-- Sindicato do Saque, base: armas improvisadas e o que der para atirar. -->
+    <tag>EQ_Sindicato_Basico</tag>
+    <weapons>
+      <li>CE_Gun_SawedOff</li>
+      <li>CE_Gun_FlintlockPistol</li>
+      <li>CE_Gun_FlintlockBlunderbuss</li>
+      <li>Gun_Revolver</li>
+    </weapons>
+    <fromTags>
+      <li>MakeshiftGun</li>
+    </fromTags>
+  </EcosDaQueda.ArsenalDef>
+
+  <EcosDaQueda.ArsenalDef>
+    <defName>EQ_Arsenal_SindicatoCorpo</defName>
+    <!-- Sindicato do Saque, piquete: porrete, facão e coquetel. -->
+    <tag>EQ_Sindicato_Corpo</tag>
+    <weapons>
+      <li>MeleeWeapon_Club</li>
+      <li>MeleeWeapon_Knife</li>
+      <li>MeleeWeapon_Mace</li>
+      <li>CE_Melee_Machete</li>
+      <li>MeleeWeapon_Axe</li>
+    </weapons>
+  </EcosDaQueda.ArsenalDef>
+
+  <EcosDaQueda.ArsenalDef>
+    <defName>EQ_Arsenal_SindicatoVeterano</defName>
+    <!-- Sindicato do Saque, cobradores: armas de guerra velhas e baratas. -->
+    <tag>EQ_Sindicato_Veterano</tag>
+    <weapons>
+      <li>Gun_PumpShotgun</li>
+      <li>Gun_MachinePistol</li>
+      <li>CE_Gun_AKM</li>
+      <li>CE_Gun_AKMSU</li>
+      <li>CE_Gun_AKSSeventyFourU</li>
+      <li>CE_Gun_SKS</li>
+      <li>CE_Gun_RPD</li>
+      <li>CE_Gun_Uzi</li>
+    </weapons>
+    <fromTags>
+      <li>MakeshiftGun</li>
+    </fromTags>
+  </EcosDaQueda.ArsenalDef>
+
+  <EcosDaQueda.ArsenalDef>
+    <defName>EQ_Arsenal_SindicatoChefe</defName>
+    <!-- Sindicato do Saque, diretoria: laser de sucata e o melhor do saque. -->
+    <tag>EQ_Sindicato_Chefe</tag>
+    <weapons>
+      <li>Gun_ChainShotgun</li>
+      <li>Gun_LMG</li>
+      <li>CE_Gun_Deagke</li>
+      <li>CE_Gun_USASTwelve</li>
+    </weapons>
+    <fromTags>
+      <li>SalvagedLaserGun</li>
+    </fromTags>
+  </EcosDaQueda.ArsenalDef>
+
+  <EcosDaQueda.ArsenalDef>
+    <defName>EQ_Arsenal_Feira</defName>
+    <!-- Feira Andante: armas de fronteira, para espantar ladrão sem assustar freguês. -->
+    <tag>EQ_Feira</tag>
+    <weapons>
+      <li>Gun_Revolver</li>
+      <li>Gun_PumpShotgun</li>
+      <li>CE_Gun_WinchesterEightySix</li>
+      <li>CE_Gun_WinchesterNintyFour</li>
+      <li>CE_Gun_HenrySideGate</li>
+      <li>CE_Gun_TaurusJudge</li>
+    </weapons>
+    <fromTags>
+      <li>FrontierGunSimple</li>
+      <li>FrontierGunAdvanced</li>
+    </fromTags>
+  </EcosDaQueda.ArsenalDef>
+
+  <EcosDaQueda.ArsenalDef>
+    <defName>EQ_Arsenal_ForaDeLinhaBasico</defName>
+    <!-- Os Fora de Linha, unidades: armas militares comuns, fáceis de esconder e de repor. -->
+    <tag>EQ_ForaDeLinha_Basico</tag>
+    <weapons>
+      <li>Gun_Autopistol</li>
+      <li>Gun_MachinePistol</li>
+      <li>Gun_AssaultRifle</li>
+      <li>CE_Gun_AKM</li>
+      <li>CE_Gun_FNFAL</li>
+      <li>CE_Gun_MiniFourteen</li>
+    </weapons>
+  </EcosDaQueda.ArsenalDef>
+
+  <EcosDaQueda.ArsenalDef>
+    <defName>EQ_Arsenal_ForaDeLinhaElite</defName>
+    <!-- Os Fora de Linha, agentes: precisão à distância. -->
+    <tag>EQ_ForaDeLinha_Elite</tag>
+    <weapons>
+      <li>Gun_SniperRifle</li>
+      <li>Gun_AssaultRifle</li>
+      <li>CE_Gun_SVD</li>
+      <li>CE_Gun_SRS</li>
+      <li>CE_Gun_TavorSeven</li>
+      <li>CE_Gun_SRTweintyFive</li>
+    </weapons>
+  </EcosDaQueda.ArsenalDef>
+
+  <EcosDaQueda.ArsenalDef>
+    <defName>EQ_Arsenal_ForaDeLinhaChefe</defName>
+    <!-- Os Fora de Linha, Unidade Zero: o que foi tomado da Forja. -->
+    <tag>EQ_ForaDeLinha_Chefe</tag>
+    <weapons>
+      <li>VWE_Gun_GaussRifle</li>
+      <li>VWE_Gun_GaussMagnum</li>
+      <li>Gun_ChargeRifle</li>
+      <li>Gun_SniperRifle</li>
+    </weapons>
+  </EcosDaQueda.ArsenalDef>
+
+  <!-- ===================== Guarda-roupa por facção (etiqueta em apparel.tags) ===================== -->
+
+  <EcosDaQueda.ArsenalDef>
+    <defName>EQ_Guardaroupa_Comum</defName>
+    <!-- Básico de qualquer um: calça, camisa, agasalho. -->
+    <tag>EQ_Roupa_Comum</tag>
+    <apparel>
+      <li>Apparel_Pants</li>
+      <li>Apparel_BasicShirt</li>
+      <li>Apparel_CollarShirt</li>
+      <li>Apparel_Parka</li>
+      <li>Apparel_Tuque</li>
+      <li>CE_Apparel_Backpack</li>
+    </apparel>
+  </EcosDaQueda.ArsenalDef>
+
+  <EcosDaQueda.ArsenalDef>
+    <defName>EQ_Guardaroupa_Silencio</defName>
+    <!-- Ordem do Silêncio: jaleco, manto, capuz e máscara. -->
+    <tag>EQ_Roupa_Silencio</tag>
+    <apparel>
+      <li>Apparel_LabCoat</li>
+      <li>Apparel_Robe</li>
+      <li>Apparel_HatHood</li>
+      <li>Apparel_CultistMask</li>
+      <li>VFEM2_Apparel_PlagueMask</li>
+      <li>Apparel_Jacket</li>
+      <li>Apparel_ClothMask</li>
+      <li>Apparel_FlakVest</li>
+    </apparel>
+  </EcosDaQueda.ArsenalDef>
+
+  <EcosDaQueda.ArsenalDef>
+    <defName>EQ_Guardaroupa_SilencioElite</defName>
+    <!-- Ordem do Silêncio, contenção: armadura de reconhecimento e máscaras de culto. -->
+    <tag>EQ_Roupa_SilencioElite</tag>
+    <apparel>
+      <li>Apparel_ArmorRecon</li>
+      <li>Apparel_ArmorHelmetRecon</li>
+      <li>Apparel_CultistMask</li>
+      <li>Apparel_CeremonialCultistMask</li>
+      <li>Apparel_GasMask</li>
+      <li>Apparel_FlakVest</li>
+      <li>Apparel_FlakPants</li>
+      <li>Apparel_Robe</li>
+      <li>Apparel_HatHood</li>
+      <li>Apparel_DisruptorFlarePack</li>
+    </apparel>
+  </EcosDaQueda.ArsenalDef>
+
+  <EcosDaQueda.ArsenalDef>
+    <defName>EQ_Guardaroupa_Helice</defName>
+    <!-- Concílio da Hélice: uniforme corporativo e jaleco. -->
+    <tag>EQ_Roupa_Helice</tag>
+    <apparel>
+      <li>Apparel_CollarShirt</li>
+      <li>Apparel_Jacket</li>
+      <li>Apparel_LabCoat</li>
+      <li>CE_Armor_Jumpsuit</li>
+      <li>Apparel_AirwireHeadset</li>
+    </apparel>
+  </EcosDaQueda.ArsenalDef>
+
+  <EcosDaQueda.ArsenalDef>
+    <defName>EQ_Guardaroupa_HeliceSeguranca</defName>
+    <!-- Concílio da Hélice, fiscais: colete, máscara de gás e cinto. -->
+    <tag>EQ_Roupa_HeliceSeguranca</tag>
+    <apparel>
+      <li>Apparel_FlakVest</li>
+      <li>Apparel_FlakPants</li>
+      <li>Apparel_AdvancedHelmet</li>
+      <li>Apparel_GasMask</li>
+      <li>CE_Apparel_GasMask</li>
+      <li>CE_Apparel_TacVest</li>
+      <li>CE_Armor_BallisticGoggles</li>
+      <li>Apparel_SmokepopBelt</li>
+      <li>Apparel_PackTox</li>
+    </apparel>
+  </EcosDaQueda.ArsenalDef>
+
+  <EcosDaQueda.ArsenalDef>
+    <defName>EQ_Guardaroupa_HeliceElite</defName>
+    <!-- Concílio da Hélice, diretoria e protótipos: armadura de reconhecimento e traje executivo. -->
+    <tag>EQ_Roupa_HeliceElite</tag>
+    <apparel>
+      <li>Apparel_ArmorRecon</li>
+      <li>Apparel_ArmorHelmetRecon</li>
+      <li>Apparel_ArmorReconPrestige</li>
+      <li>Apparel_ArmorHelmetReconPrestige</li>
+      <li>Apparel_ShirtRuffle</li>
+      <li>Apparel_VestRoyal</li>
+      <li>Apparel_HatTop</li>
+      <li>Apparel_HatLadies</li>
+      <li>Apparel_Corset</li>
+    </apparel>
+  </EcosDaQueda.ArsenalDef>
+
+  <EcosDaQueda.ArsenalDef>
+    <defName>EQ_Guardaroupa_Forja</defName>
+    <!-- Irmandade da Forja, oficina: macacão, capacete e colete. -->
+    <tag>EQ_Roupa_Forja</tag>
+    <apparel>
+      <li>CE_Armor_Jumpsuit</li>
+      <li>Apparel_SimpleHelmet</li>
+      <li>Apparel_FlakVest</li>
+      <li>Apparel_FlakPants</li>
+      <li>Apparel_Bandolier</li>
+      <li>CE_Armor_BallisticGoggles</li>
+      <li>Apparel_Duster</li>
+      <li>CE_Apparel_CompositeVest</li>
+    </apparel>
+  </EcosDaQueda.ArsenalDef>
+
+  <EcosDaQueda.ArsenalDef>
+    <defName>EQ_Guardaroupa_ForjaElite</defName>
+    <!-- Irmandade da Forja, cavaleiros: armadura motorizada. -->
+    <tag>EQ_Roupa_ForjaElite</tag>
+    <apparel>
+      <li>Apparel_PowerArmor</li>
+      <li>Apparel_PowerArmorHelmet</li>
+      <li>Apparel_ArmorMarineGrenadier</li>
+      <li>Apparel_ArmorCataphract</li>
+      <li>Apparel_ArmorHelmetCataphract</li>
+      <li>CE_Apparel_ExoFrame</li>
+      <li>Apparel_ArmorHelmetMechCommander</li>
+      <li>Apparel_FirefoampopPack</li>
+      <li>CE_Apparel_AdvancedNightVision</li>
+    </apparel>
+  </EcosDaQueda.ArsenalDef>
+
+  <EcosDaQueda.ArsenalDef>
+    <defName>EQ_Guardaroupa_Coro</defName>
+    <!-- Coro Ascendente: traje de corte. -->
+    <tag>EQ_Roupa_Coro</tag>
+    <apparel>
+      <li>Apparel_Robe</li>
+      <li>Apparel_Cape</li>
+      <li>Apparel_Beret</li>
+      <li>Apparel_ShirtRuffle</li>
+      <li>Apparel_HatLadies</li>
+      <li>Apparel_HatTop</li>
+      <li>Apparel_Corset</li>
+      <li>Apparel_VestRoyal</li>
+      <li>VFEM2_Apparel_DameDress</li>
+      <li>VFEM2_Apparel_DameHat</li>
+      <li>VFEM2_Apparel_Chaperon</li>
+      <li>VFEM2_Apparel_Tabard</li>
+    </apparel>
+  </EcosDaQueda.ArsenalDef>
+
+  <EcosDaQueda.ArsenalDef>
+    <defName>EQ_Guardaroupa_CoroElite</defName>
+    <!-- Coro Ascendente, tenores: armaduras de prestígio e janízaros. -->
+    <tag>EQ_Roupa_CoroElite</tag>
+    <apparel>
+      <li>Apparel_ArmorMarinePrestige</li>
+      <li>Apparel_ArmorMarineHelmetPrestige</li>
+      <li>Apparel_ArmorCataphractPrestige</li>
+      <li>Apparel_ArmorHelmetCataphractPrestige</li>
+      <li>VPE_Apparel_PlateArmorPrestige</li>
+      <li>VFEE_Apparel_JanissaryCuirass</li>
+      <li>VFEE_Apparel_JanissaryHelmet</li>
+      <li>VPE_Apparel_EltexCape</li>
+      <li>Apparel_EltexSkullcap</li>
+      <li>Apparel_PackBroadshield</li>
+    </apparel>
+  </EcosDaQueda.ArsenalDef>
+
+  <EcosDaQueda.ArsenalDef>
+    <defName>EQ_Guardaroupa_CoroPsiquico</defName>
+    <!-- Coro Ascendente, sopranos e maestro: eltex, coroa e manto. -->
+    <tag>EQ_Roupa_CoroPsiquico</tag>
+    <apparel>
+      <li>Apparel_RobeRoyal</li>
+      <li>VFE_Apparel_StellicRobe</li>
+      <li>Apparel_Crown</li>
+      <li>Apparel_Coronet</li>
+      <li>VPE_Apparel_EltexMask</li>
+      <li>Apparel_Cape</li>
+    </apparel>
+    <apparelFromTags>
+      <li>Psychic</li>
+    </apparelFromTags>
+  </EcosDaQueda.ArsenalDef>
+
+  <EcosDaQueda.ArsenalDef>
+    <defName>EQ_Guardaroupa_Sindicato</defName>
+    <!-- Sindicato do Saque: guarda-pó, chapéu, bandoleira e máscara improvisada. -->
+    <tag>EQ_Roupa_Sindicato</tag>
+    <apparel>
+      <li>Apparel_Duster</li>
+      <li>Apparel_CowboyHat</li>
+      <li>CE_Armor_Sombrero</li>
+      <li>Apparel_Bandolier</li>
+      <li>Apparel_Sash</li>
+      <li>CE_Apparel_ImprovGasMask</li>
+      <li>Apparel_WarMask</li>
+      <li>Apparel_WarVeil</li>
+      <li>Apparel_ClothMask</li>
+      <li>CE_Armor_Poncho</li>
+      <li>CE_Armor_Balaclava</li>
+      <li>Apparel_Jacket</li>
+      <li>Apparel_SimpleHelmet</li>
+      <li>CE_Armor_SoftVest</li>
+    </apparel>
+  </EcosDaQueda.ArsenalDef>
+
+  <EcosDaQueda.ArsenalDef>
+    <defName>EQ_Guardaroupa_SindicatoChefe</defName>
+    <!-- Sindicato do Saque, diretoria: o melhor do saque. -->
+    <tag>EQ_Roupa_SindicatoChefe</tag>
+    <apparel>
+      <li>Apparel_FlakVest</li>
+      <li>Apparel_FlakPants</li>
+      <li>Apparel_FlakJacket</li>
+      <li>CE_Apparel_CompositeVest</li>
+      <li>Apparel_AdvancedHelmet</li>
+      <li>Apparel_GasMask</li>
+      <li>VFEP_Apparel_Privateer</li>
+      <li>CE_Armor_FragSuit</li>
+    </apparel>
+  </EcosDaQueda.ArsenalDef>
+
+  <EcosDaQueda.ArsenalDef>
+    <defName>EQ_Guardaroupa_Feira</defName>
+    <!-- Feira Andante: chapéu, poncho e guarda-pó. -->
+    <tag>EQ_Roupa_Feira</tag>
+    <apparel>
+      <li>Apparel_CowboyHat</li>
+      <li>Apparel_BowlerHat</li>
+      <li>Apparel_Duster</li>
+      <li>CE_Armor_Poncho</li>
+      <li>CE_Armor_Sombrero</li>
+      <li>VFEM2_Apparel_Chaperon</li>
+      <li>Apparel_Jacket</li>
+      <li>Apparel_Bandolier</li>
+      <li>Apparel_Sash</li>
+      <li>Apparel_HatTop</li>
+    </apparel>
+  </EcosDaQueda.ArsenalDef>
+
+  <EcosDaQueda.ArsenalDef>
+    <defName>EQ_Guardaroupa_FeiraGuarda</defName>
+    <!-- Feira Andante, seguranças: colete e capacete. -->
+    <tag>EQ_Roupa_FeiraGuarda</tag>
+    <apparel>
+      <li>Apparel_FlakVest</li>
+      <li>Apparel_FlakJacket</li>
+      <li>Apparel_SimpleHelmet</li>
+    </apparel>
+  </EcosDaQueda.ArsenalDef>
+
+</Defs>

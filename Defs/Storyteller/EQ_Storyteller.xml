@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <!-- Narrador provisório do Ecos da Queda: o ritmo é o da Cassandra (copiado por código, já com o que os
+       mods acrescentaram a ela). O narrador definitivo, que conhece reputação, cargos e potências, é a
+       etapa 6 do PLANO.md. Retrato emprestado do jogo até termos arte própria. -->
+  <StorytellerDef>
+    <defName>EQ_Storyteller_Central</defName>
+    <label>Central de Atendimento</label>
+    <description>"Sua sobrevivência é muito importante para nós."\n\nA Central de Atendimento ao Sobrevivente é a última repartição do mundo antigo ainda em funcionamento. Ninguém sabe onde fica nem quem a programou. Ela distribui as catástrofes por ordem de chegada, em ritmo crescente, com pausas regulamentares para o cliente respirar.\n\nReclamações são registradas e ignoradas com protocolo.</description>
+    <portraitLarge>UI/HeroArt/Storytellers/CassandraClassic</portraitLarge>
+    <portraitTiny>UI/HeroArt/Storytellers/CassandraClassicTiny</portraitTiny>
+    <listOrder>1</listOrder>
+    <modExtensions>
+      <li Class="EcosDaQueda.StorytellerCopyExtension">
+        <copyFrom>Cassandra</copyFrom>
+      </li>
+    </modExtensions>
+  </StorytellerDef>
+
+</Defs>

@@ -1,0 +1,571 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <!-- Cenários do Ecos da Queda. Cada um diz quais xenotipos os colonos iniciais podem ter
+       (EcosDaQueda.ScenarioXenotypesExtension; o peso é a chance no sorteio). Elites não hereditários
+       nunca entram aqui: só se ganha em jogo. Os cenários do jogo e dos outros mods ficam ocultos
+       (Defs/Misc/EQ_StartRules.xml). -->
+
+  <ScenPartDef>
+    <defName>EQ_ScenPart_Reputation</defName>
+    <label>história com uma facção</label>
+    <category>Fixed</category>
+    <scenPartClass>EcosDaQueda.ScenPart_EQReputation</scenPartClass>
+    <summaryPriority>450</summaryPriority>
+  </ScenPartDef>
+
+  <ScenarioDef Name="EQ_ScenarioBase" ParentName="ScenarioBase" Abstract="True" />
+
+  <ScenarioDef ParentName="EQ_ScenarioBase">
+    <defName>EQ_Scenario_Abrigo</defName>
+    <label>Saídos do abrigo</label>
+    <description>O abrigo prometia mil anos de conforto. Entregou alguns séculos, um gerador em pane e um aviso sonoro: "Prezado ocupante, o período de cobertura encerrou. Dirija-se à saída." Vocês três se dirigiram.\n\nLá fora, o mundo que o folheto mostrava não existe mais. O folheto não cobria isso.</description>
+    <modExtensions>
+      <li Class="EcosDaQueda.ScenarioXenotypesExtension">
+        <xenotypeChances>
+          <EQ_Xeno_HumanoAntigo>0.7</EQ_Xeno_HumanoAntigo>
+          <EQ_Xeno_Vagante>0.3</EQ_Xeno_Vagante>
+        </xenotypeChances>
+      </li>
+    </modExtensions>
+    <scenario>
+      <summary>Três ocupantes de um abrigo antigo, bem equipados e sem a menor ideia do que aconteceu lá fora. O início clássico.</summary>
+      <parts>
+        <li Class="ScenPart_ConfigPage_ConfigureStartingPawns">
+          <def>ConfigPage_ConfigureStartingPawns</def>
+          <pawnCount>3</pawnCount>
+          <pawnChoiceCount>8</pawnChoiceCount>
+        </li>
+        <li Class="ScenPart_PlayerPawnsArriveMethod">
+          <def>PlayerPawnsArriveMethod</def>
+          <method>Standing</method>
+          <visible>false</visible>
+        </li>
+        <li Class="ScenPart_ForcedHediff">
+          <def>ForcedHediff</def>
+          <visible>false</visible>
+          <context>PlayerStarter</context>
+          <chance>0.5</chance>
+          <hediff>CryptosleepSickness</hediff>
+          <hideOffMap>true</hideOffMap>
+          <severityRange>1~1</severityRange>
+        </li>
+        <li Class="ScenPart_StartingThing_Defined">
+          <def>StartingThing_Defined</def>
+          <thingDef>Silver</thingDef>
+          <count>800</count>
+        </li>
+        <li Class="ScenPart_StartingThing_Defined">
+          <def>StartingThing_Defined</def>
+          <thingDef>MealSurvivalPack</thingDef>
+          <count>50</count>
+        </li>
+        <li Class="ScenPart_StartingThing_Defined">
+          <def>StartingThing_Defined</def>
+          <thingDef>MedicineIndustrial</thingDef>
+          <count>30</count>
+        </li>
+        <li Class="ScenPart_StartingThing_Defined">
+          <def>StartingThing_Defined</def>
+          <thingDef>ComponentIndustrial</thingDef>
+          <count>30</count>
+        </li>
+        <li Class="ScenPart_StartingThing_Defined">
+          <def>StartingThing_Defined</def>
+          <thingDef>Gun_BoltActionRifle</thingDef>
+        </li>
+        <li Class="ScenPart_StartingThing_Defined" MayRequire="CETeam.CombatExtended">
+          <def>StartingThing_Defined</def>
+          <thingDef>Ammo_303British_FMJ</thingDef>
+          <count>100</count>
+        </li>
+        <li Class="ScenPart_StartingThing_Defined">
+          <def>StartingThing_Defined</def>
+          <thingDef>Gun_Revolver</thingDef>
+        </li>
+        <li Class="ScenPart_StartingThing_Defined" MayRequire="CETeam.CombatExtended">
+          <def>StartingThing_Defined</def>
+          <thingDef>Ammo_44Magnum_FMJ</thingDef>
+          <count>60</count>
+        </li>
+        <li Class="ScenPart_StartingThing_Defined">
+          <def>StartingThing_Defined</def>
+          <thingDef>MeleeWeapon_Knife</thingDef>
+          <stuff>Steel</stuff>
+        </li>
+        <li Class="ScenPart_StartingAnimal">
+          <def>StartingAnimal</def>
+          <count>1</count>
+          <bondToRandomPlayerPawnChance>1.0</bondToRandomPlayerPawnChance>
+        </li>
+        <li Class="ScenPart_ScatterThingsNearPlayerStart">
+          <def>ScatterThingsNearPlayerStart</def>
+          <thingDef>Steel</thingDef>
+          <count>450</count>
+        </li>
+        <li Class="ScenPart_ScatterThingsNearPlayerStart">
+          <def>ScatterThingsNearPlayerStart</def>
+          <thingDef>WoodLog</thingDef>
+          <count>300</count>
+        </li>
+        <li Class="ScenPart_ScatterThingsAnywhere">
+          <def>ScatterThingsAnywhere</def>
+          <thingDef>Steel</thingDef>
+          <count>720</count>
+        </li>
+        <li Class="ScenPart_ScatterThingsAnywhere">
+          <def>ScatterThingsAnywhere</def>
+          <thingDef>MealSurvivalPack</thingDef>
+          <count>7</count>
+        </li>
+        <li Class="ScenPart_GameStartDialog">
+          <def>GameStartDialog</def>
+          <text>A porta do abrigo se fechou atrás de vocês com um chiado definitivo.\n\nO manual do ocupante tinha um capítulo sobre a saída: "Ao deixar as instalações, procure o representante local." Não há representante. Há cinzas, sucata e, ao longe, a fumaça de gente que chegou antes.\n\nQuatro potências disputam o que sobrou do mundo. Todas vão querer alguma coisa de vocês. Nenhuma oferece garantia.</text>
+          <closeSound>GameStartSting</closeSound>
+        </li>
+      </parts>
+    </scenario>
+  </ScenarioDef>
+
+  <ScenarioDef ParentName="EQ_ScenarioBase">
+    <defName>EQ_Scenario_Andarilhos</defName>
+    <label>Andarilhos das cinzas</label>
+    <description>Cinco pessoas, um carrinho de mão e a decisão mais arriscada das terras devastadas: parar de andar. Ninguém aqui conheceu o mundo antigo. Conhecem fome, poeira e o preço de um cantil.</description>
+    <modExtensions>
+      <li Class="EcosDaQueda.ScenarioXenotypesExtension">
+        <xenotypeChances>
+          <EQ_Xeno_Vagante>0.7</EQ_Xeno_Vagante>
+          <EQ_Xeno_VaganteEsqueletico>0.3</EQ_Xeno_VaganteEsqueletico>
+        </xenotypeChances>
+      </li>
+    </modExtensions>
+    <scenario>
+      <summary>Cinco andarilhos pobres e calejados resolvem fincar raiz. Começo difícil, com pouco equipamento.</summary>
+      <parts>
+        <li Class="ScenPart_ConfigPage_ConfigureStartingPawns">
+          <def>ConfigPage_ConfigureStartingPawns</def>
+          <pawnCount>5</pawnCount>
+          <pawnChoiceCount>10</pawnChoiceCount>
+        </li>
+        <li Class="ScenPart_PlayerPawnsArriveMethod">
+          <def>PlayerPawnsArriveMethod</def>
+          <method>Standing</method>
+          <visible>false</visible>
+        </li>
+        <li Class="ScenPart_StartingThing_Defined">
+          <def>StartingThing_Defined</def>
+          <thingDef>Silver</thingDef>
+          <count>200</count>
+        </li>
+        <li Class="ScenPart_StartingThing_Defined">
+          <def>StartingThing_Defined</def>
+          <thingDef>Pemmican</thingDef>
+          <count>300</count>
+        </li>
+        <li Class="ScenPart_StartingThing_Defined">
+          <def>StartingThing_Defined</def>
+          <thingDef>MedicineHerbal</thingDef>
+          <count>20</count>
+        </li>
+        <li Class="ScenPart_StartingThing_Defined">
+          <def>StartingThing_Defined</def>
+          <thingDef>Gun_Revolver</thingDef>
+        </li>
+        <li Class="ScenPart_StartingThing_Defined" MayRequire="CETeam.CombatExtended">
+          <def>StartingThing_Defined</def>
+          <thingDef>Ammo_44Magnum_FMJ</thingDef>
+          <count>60</count>
+        </li>
+        <li Class="ScenPart_StartingThing_Defined">
+          <def>StartingThing_Defined</def>
+          <thingDef>Bow_Short</thingDef>
+        </li>
+        <li Class="ScenPart_StartingThing_Defined">
+          <def>StartingThing_Defined</def>
+          <thingDef>Bow_Short</thingDef>
+        </li>
+        <li Class="ScenPart_StartingThing_Defined" MayRequire="CETeam.CombatExtended">
+          <def>StartingThing_Defined</def>
+          <thingDef>Ammo_Arrow_Stone</thingDef>
+          <count>100</count>
+        </li>
+        <li Class="ScenPart_StartingThing_Defined">
+          <def>StartingThing_Defined</def>
+          <thingDef>MeleeWeapon_Club</thingDef>
+          <stuff>WoodLog</stuff>
+        </li>
+        <li Class="ScenPart_StartingThing_Defined">
+          <def>StartingThing_Defined</def>
+          <thingDef>MeleeWeapon_Knife</thingDef>
+          <stuff>Steel</stuff>
+        </li>
+        <li Class="ScenPart_StartingAnimal">
+          <def>StartingAnimal</def>
+          <count>1</count>
+          <bondToRandomPlayerPawnChance>1.0</bondToRandomPlayerPawnChance>
+        </li>
+        <li Class="ScenPart_ScatterThingsNearPlayerStart">
+          <def>ScatterThingsNearPlayerStart</def>
+          <thingDef>WoodLog</thingDef>
+          <count>300</count>
+        </li>
+        <li Class="ScenPart_ScatterThingsNearPlayerStart">
+          <def>ScatterThingsNearPlayerStart</def>
+          <thingDef>Steel</thingDef>
+          <count>150</count>
+        </li>
+        <li Class="ScenPart_GameStartDialog">
+          <def>GameStartDialog</def>
+          <text>O carrinho de mão quebrou o eixo bem aqui, e vocês resolveram tratar isso como um sinal.\n\nNão têm abrigo, garantia, patrocínio nem padrinho. Têm uns aos outros, o que nas terras devastadas vale mais ou menos um cantil cheio.\n\nO Sindicato do Saque já deve ter anotado o endereço.</text>
+          <closeSound>GameStartSting</closeSound>
+        </li>
+      </parts>
+    </scenario>
+  </ScenarioDef>
+
+  <ScenarioDef ParentName="EQ_ScenarioBase">
+    <defName>EQ_Scenario_DissidentesSilencio</defName>
+    <label>Pesquisa não autorizada</label>
+    <description>Vocês eram assistentes de campo da Ordem do Silêncio até lerem a própria ficha. Na linha "destino do colaborador" havia um número de cela. Saíram de noite, levando o que couber nos bolsos e um caderno que não deviam ter.</description>
+    <modExtensions>
+      <li Class="EcosDaQueda.ScenarioXenotypesExtension">
+        <xenotypeChances>
+          <EQ_Xeno_Vagante>0.6</EQ_Xeno_Vagante>
+          <EQ_Xeno_VaganteEsqueletico>0.4</EQ_Xeno_VaganteEsqueletico>
+        </xenotypeChances>
+      </li>
+    </modExtensions>
+    <scenario>
+      <summary>Quatro ex-colaboradores da Ordem do Silêncio em fuga. A Ordem não esquece nem arquiva: começa malvista por ela.</summary>
+      <parts>
+        <li Class="ScenPart_ConfigPage_ConfigureStartingPawns">
+          <def>ConfigPage_ConfigureStartingPawns</def>
+          <pawnCount>4</pawnCount>
+          <pawnChoiceCount>8</pawnChoiceCount>
+        </li>
+        <li Class="ScenPart_PlayerPawnsArriveMethod">
+          <def>PlayerPawnsArriveMethod</def>
+          <method>Standing</method>
+          <visible>false</visible>
+        </li>
+        <li Class="EcosDaQueda.ScenPart_EQReputation">
+          <def>EQ_ScenPart_Reputation</def>
+          <factionDef>EQ_Faction_Silencio</factionDef>
+          <goodwill>-45</goodwill>
+          <note>Começa malvisto pela Ordem do Silêncio.</note>
+        </li>
+        <li Class="ScenPart_StartingThing_Defined">
+          <def>StartingThing_Defined</def>
+          <thingDef>Silver</thingDef>
+          <count>500</count>
+        </li>
+        <li Class="ScenPart_StartingThing_Defined">
+          <def>StartingThing_Defined</def>
+          <thingDef>MealSurvivalPack</thingDef>
+          <count>30</count>
+        </li>
+        <li Class="ScenPart_StartingThing_Defined">
+          <def>StartingThing_Defined</def>
+          <thingDef>MedicineIndustrial</thingDef>
+          <count>15</count>
+        </li>
+        <li Class="ScenPart_StartingThing_Defined">
+          <def>StartingThing_Defined</def>
+          <thingDef>ComponentIndustrial</thingDef>
+          <count>20</count>
+        </li>
+        <li Class="ScenPart_ScatterThingsNearPlayerStart">
+          <def>ScatterThingsNearPlayerStart</def>
+          <thingDef>Steel</thingDef>
+          <count>350</count>
+        </li>
+        <li Class="ScenPart_ScatterThingsNearPlayerStart">
+          <def>ScatterThingsNearPlayerStart</def>
+          <thingDef>WoodLog</thingDef>
+          <count>250</count>
+        </li>
+        <li Class="ScenPart_StartingThing_Defined">
+          <def>StartingThing_Defined</def>
+          <thingDef>Gun_Autopistol</thingDef>
+        </li>
+        <li Class="ScenPart_StartingThing_Defined" MayRequire="CETeam.CombatExtended">
+          <def>StartingThing_Defined</def>
+          <thingDef>Ammo_45ACP_FMJ</thingDef>
+          <count>80</count>
+        </li>
+        <li Class="ScenPart_StartingThing_Defined">
+          <def>StartingThing_Defined</def>
+          <thingDef>MeleeWeapon_Knife</thingDef>
+          <stuff>Steel</stuff>
+        </li>
+        <li Class="ScenPart_GameStartDialog">
+          <def>GameStartDialog</def>
+          <text>A Ordem do Silêncio registrou a saída de vocês como "extravio de material".\n\nMaterial extraviado é procurado, catalogado de novo e guardado num lugar mais fundo. Convém não estar por perto quando chegarem com a prancheta.</text>
+          <closeSound>GameStartSting</closeSound>
+        </li>
+      </parts>
+    </scenario>
+  </ScenarioDef>
+
+  <ScenarioDef ParentName="EQ_ScenarioBase">
+    <defName>EQ_Scenario_DissidentesHelice</defName>
+    <label>Lote descontinuado</label>
+    <description>O Concílio da Hélice lançou a nova versão e tirou a de vocês do catálogo. Produto fora de linha vai para a reciclagem, diz o contrato. Vocês rasgaram o contrato, o que também é proibido pelo contrato.</description>
+    <modExtensions>
+      <li Class="EcosDaQueda.ScenarioXenotypesExtension">
+        <xenotypeChances>
+          <EQ_Xeno_LoteDescontinuado>1</EQ_Xeno_LoteDescontinuado>
+        </xenotypeChances>
+      </li>
+    </modExtensions>
+    <scenario>
+      <summary>Quatro modelos descontinuados fogem da reciclagem. Começa malvisto pelo Concílio da Hélice.</summary>
+      <parts>
+        <li Class="ScenPart_ConfigPage_ConfigureStartingPawns">
+          <def>ConfigPage_ConfigureStartingPawns</def>
+          <pawnCount>4</pawnCount>
+          <pawnChoiceCount>8</pawnChoiceCount>
+        </li>
+        <li Class="ScenPart_PlayerPawnsArriveMethod">
+          <def>PlayerPawnsArriveMethod</def>
+          <method>Standing</method>
+          <visible>false</visible>
+        </li>
+        <li Class="EcosDaQueda.ScenPart_EQReputation">
+          <def>EQ_ScenPart_Reputation</def>
+          <factionDef>EQ_Faction_Helice</factionDef>
+          <goodwill>-45</goodwill>
+          <note>Começa malvisto pelo Concílio da Hélice.</note>
+        </li>
+        <li Class="ScenPart_StartingThing_Defined">
+          <def>StartingThing_Defined</def>
+          <thingDef>Silver</thingDef>
+          <count>500</count>
+        </li>
+        <li Class="ScenPart_StartingThing_Defined">
+          <def>StartingThing_Defined</def>
+          <thingDef>MealSurvivalPack</thingDef>
+          <count>30</count>
+        </li>
+        <li Class="ScenPart_StartingThing_Defined">
+          <def>StartingThing_Defined</def>
+          <thingDef>MedicineIndustrial</thingDef>
+          <count>15</count>
+        </li>
+        <li Class="ScenPart_StartingThing_Defined">
+          <def>StartingThing_Defined</def>
+          <thingDef>ComponentIndustrial</thingDef>
+          <count>20</count>
+        </li>
+        <li Class="ScenPart_ScatterThingsNearPlayerStart">
+          <def>ScatterThingsNearPlayerStart</def>
+          <thingDef>Steel</thingDef>
+          <count>350</count>
+        </li>
+        <li Class="ScenPart_ScatterThingsNearPlayerStart">
+          <def>ScatterThingsNearPlayerStart</def>
+          <thingDef>WoodLog</thingDef>
+          <count>250</count>
+        </li>
+        <li Class="ScenPart_StartingThing_Defined">
+          <def>StartingThing_Defined</def>
+          <thingDef>Gun_Autopistol</thingDef>
+        </li>
+        <li Class="ScenPart_StartingThing_Defined" MayRequire="CETeam.CombatExtended">
+          <def>StartingThing_Defined</def>
+          <thingDef>Ammo_45ACP_FMJ</thingDef>
+          <count>80</count>
+        </li>
+        <li Class="ScenPart_StartingThing_Defined">
+          <def>StartingThing_Defined</def>
+          <thingDef>MeleeWeapon_Knife</thingDef>
+          <stuff>Steel</stuff>
+        </li>
+        <li Class="ScenPart_GameStartDialog">
+          <def>GameStartDialog</def>
+          <text>O Concílio da Hélice enviou um comunicado aos acionistas: o lote de vocês "apresentou comportamento fora da especificação" e será recolhido sem custo para o cliente.\n\nO cliente não foi consultado. Vocês também não.</text>
+          <closeSound>GameStartSting</closeSound>
+        </li>
+      </parts>
+    </scenario>
+  </ScenarioDef>
+
+  <ScenarioDef ParentName="EQ_ScenarioBase">
+    <defName>EQ_Scenario_DissidentesForja</defName>
+    <label>Garantia vencida</label>
+    <description>Graxeiros da Irmandade da Forja não pedem demissão: são "devolvidos ao estoque". Vocês preferiram sair pela doca de carga, com uma caixa de ferramentas que tecnicamente é patrimônio da Irmandade.</description>
+    <modExtensions>
+      <li Class="EcosDaQueda.ScenarioXenotypesExtension">
+        <xenotypeChances>
+          <EQ_Xeno_Graxeiro>0.7</EQ_Xeno_Graxeiro>
+          <EQ_Xeno_Vagante>0.3</EQ_Xeno_Vagante>
+        </xenotypeChances>
+      </li>
+    </modExtensions>
+    <scenario>
+      <summary>Quatro graxeiros desertam da Irmandade da Forja com as ferramentas. Começa malvisto por ela.</summary>
+      <parts>
+        <li Class="ScenPart_ConfigPage_ConfigureStartingPawns">
+          <def>ConfigPage_ConfigureStartingPawns</def>
+          <pawnCount>4</pawnCount>
+          <pawnChoiceCount>8</pawnChoiceCount>
+        </li>
+        <li Class="ScenPart_PlayerPawnsArriveMethod">
+          <def>PlayerPawnsArriveMethod</def>
+          <method>Standing</method>
+          <visible>false</visible>
+        </li>
+        <li Class="EcosDaQueda.ScenPart_EQReputation">
+          <def>EQ_ScenPart_Reputation</def>
+          <factionDef>EQ_Faction_Forja</factionDef>
+          <goodwill>-45</goodwill>
+          <note>Começa malvisto pela Irmandade da Forja.</note>
+        </li>
+        <li Class="ScenPart_StartingThing_Defined">
+          <def>StartingThing_Defined</def>
+          <thingDef>Silver</thingDef>
+          <count>300</count>
+        </li>
+        <li Class="ScenPart_StartingThing_Defined">
+          <def>StartingThing_Defined</def>
+          <thingDef>MealSurvivalPack</thingDef>
+          <count>30</count>
+        </li>
+        <li Class="ScenPart_StartingThing_Defined">
+          <def>StartingThing_Defined</def>
+          <thingDef>MedicineIndustrial</thingDef>
+          <count>10</count>
+        </li>
+        <li Class="ScenPart_StartingThing_Defined">
+          <def>StartingThing_Defined</def>
+          <thingDef>ComponentIndustrial</thingDef>
+          <count>45</count>
+        </li>
+        <li Class="ScenPart_StartingThing_Defined">
+          <def>StartingThing_Defined</def>
+          <thingDef>Steel</thingDef>
+          <count>300</count>
+        </li>
+        <li Class="ScenPart_StartingThing_Defined">
+          <def>StartingThing_Defined</def>
+          <thingDef>Gun_BoltActionRifle</thingDef>
+        </li>
+        <li Class="ScenPart_StartingThing_Defined" MayRequire="CETeam.CombatExtended">
+          <def>StartingThing_Defined</def>
+          <thingDef>Ammo_303British_FMJ</thingDef>
+          <count>100</count>
+        </li>
+        <li Class="ScenPart_StartingThing_Defined">
+          <def>StartingThing_Defined</def>
+          <thingDef>MeleeWeapon_Knife</thingDef>
+          <stuff>Steel</stuff>
+        </li>
+        <li Class="ScenPart_ScatterThingsNearPlayerStart">
+          <def>ScatterThingsNearPlayerStart</def>
+          <thingDef>Steel</thingDef>
+          <count>500</count>
+        </li>
+        <li Class="ScenPart_ScatterThingsNearPlayerStart">
+          <def>ScatterThingsNearPlayerStart</def>
+          <thingDef>WoodLog</thingDef>
+          <count>200</count>
+        </li>
+        <li Class="ScenPart_GameStartDialog">
+          <def>GameStartDialog</def>
+          <text>A Irmandade da Forja deu baixa em vocês como "peças em uso indevido".\n\nPeça em uso indevido é recolhida, inspecionada e reaproveitada. O inspetor costuma vir armado, e o termo de garantia não cobre o que ele faz.</text>
+          <closeSound>GameStartSting</closeSound>
+        </li>
+      </parts>
+    </scenario>
+  </ScenarioDef>
+
+  <ScenarioDef ParentName="EQ_ScenarioBase">
+    <defName>EQ_Scenario_DissidentesCoro</defName>
+    <label>Desafinados</label>
+    <description>No Coro Ascendente todos cantam a mesma nota. Vocês erraram a nota, de propósito, na frente de todo mundo. Antes que alguém viesse "reafinar" o naipe, já estavam longe.</description>
+    <modExtensions>
+      <li Class="EcosDaQueda.ScenarioXenotypesExtension">
+        <xenotypeChances>
+          <EQ_Xeno_Corista>0.7</EQ_Xeno_Corista>
+          <EQ_Xeno_Vagante>0.3</EQ_Xeno_Vagante>
+        </xenotypeChances>
+      </li>
+    </modExtensions>
+    <scenario>
+      <summary>Quatro coristas abandonam o Coro Ascendente. Começa malvisto por ele.</summary>
+      <parts>
+        <li Class="ScenPart_ConfigPage_ConfigureStartingPawns">
+          <def>ConfigPage_ConfigureStartingPawns</def>
+          <pawnCount>4</pawnCount>
+          <pawnChoiceCount>8</pawnChoiceCount>
+        </li>
+        <li Class="ScenPart_PlayerPawnsArriveMethod">
+          <def>PlayerPawnsArriveMethod</def>
+          <method>Standing</method>
+          <visible>false</visible>
+        </li>
+        <li Class="EcosDaQueda.ScenPart_EQReputation">
+          <def>EQ_ScenPart_Reputation</def>
+          <factionDef>EQ_Faction_Coro</factionDef>
+          <goodwill>-45</goodwill>
+          <note>Começa malvisto pelo Coro Ascendente.</note>
+        </li>
+        <li Class="ScenPart_StartingThing_Defined">
+          <def>StartingThing_Defined</def>
+          <thingDef>Silver</thingDef>
+          <count>400</count>
+        </li>
+        <li Class="ScenPart_StartingThing_Defined">
+          <def>StartingThing_Defined</def>
+          <thingDef>Gold</thingDef>
+          <count>30</count>
+        </li>
+        <li Class="ScenPart_StartingThing_Defined">
+          <def>StartingThing_Defined</def>
+          <thingDef>MealSurvivalPack</thingDef>
+          <count>30</count>
+        </li>
+        <li Class="ScenPart_StartingThing_Defined">
+          <def>StartingThing_Defined</def>
+          <thingDef>MedicineIndustrial</thingDef>
+          <count>15</count>
+        </li>
+        <li Class="ScenPart_StartingThing_Defined">
+          <def>StartingThing_Defined</def>
+          <thingDef>ComponentIndustrial</thingDef>
+          <count>15</count>
+        </li>
+        <li Class="ScenPart_StartingThing_Defined">
+          <def>StartingThing_Defined</def>
+          <thingDef>Gun_Revolver</thingDef>
+        </li>
+        <li Class="ScenPart_StartingThing_Defined" MayRequire="CETeam.CombatExtended">
+          <def>StartingThing_Defined</def>
+          <thingDef>Ammo_44Magnum_FMJ</thingDef>
+          <count>60</count>
+        </li>
+        <li Class="ScenPart_StartingThing_Defined">
+          <def>StartingThing_Defined</def>
+          <thingDef>MeleeWeapon_Knife</thingDef>
+          <stuff>Steel</stuff>
+        </li>
+        <li Class="ScenPart_ScatterThingsNearPlayerStart">
+          <def>ScatterThingsNearPlayerStart</def>
+          <thingDef>Steel</thingDef>
+          <count>350</count>
+        </li>
+        <li Class="ScenPart_ScatterThingsNearPlayerStart">
+          <def>ScatterThingsNearPlayerStart</def>
+          <thingDef>WoodLog</thingDef>
+          <count>250</count>
+        </li>
+        <li Class="ScenPart_GameStartDialog">
+          <def>GameStartDialog</def>
+          <text>O Coro Ascendente não persegue desertores. Dedica a eles uma canção.\n\nÉ uma nota só, sustentada, e quem a ouve costuma voltar andando para o ensaio. Tapem os ouvidos e fiquem longe das estradas da corte.</text>
+          <closeSound>GameStartSting</closeSound>
+        </li>
+      </parts>
+    </scenario>
+  </ScenarioDef>
+
+</Defs>

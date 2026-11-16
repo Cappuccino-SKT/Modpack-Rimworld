@@ -284,6 +284,9 @@
     <hostileIncidentText>A Irmandade da Forja abriu um processo de recall contra a sua colônia.\n\nO equipamento de recolhimento já foi despachado. Ele é automático, armado e não aceita reclamações.</hostileIncidentText>
     <stipendIntervalDays>10</stipendIntervalDays>
     <ceremonyLabel>Rito de Ativação da Garantia</ceremonyLabel>
+    <!-- A Forja não mexe com psíquico: o líder sai da cerimônia com um vínculo mecanoide instalado. -->
+    <ceremonyHediff MayRequire="Ludeon.RimWorld.Biotech">MechlinkImplant</ceremonyHediff>
+    <ceremonyHediffText>O inspetor instalou um vínculo mecanoide em {PAWN_nameDef}. "Cortesia da casa. A remoção não é coberta pela garantia."</ceremonyHediffText>
     <ceremonyText>A Irmandade da Forja enviará um inspetor para ativar a garantia do assentamento. O líder recita o termo de uso de cor, o inspetor carimba, e as peças exigidas são recolhidas "para homologação".</ceremonyText>
     <promotionLabel>Inspeção de Certificação</promotionLabel>
     <promotionText>Os selos de garantia do líder foram conferidos e estão dentro da validade. Um inspetor da Irmandade virá aplicar a certificação do próximo grau, com direito a carimbo novo.</promotionText>
@@ -411,6 +414,10 @@
     <hostileIncidentText>O Coro Ascendente dedicou uma canção à sua colônia. Uma só nota, sustentada, dentro da cabeça de todos.\n\nÉ a opinião deles sobre você, em Si bemol.</hostileIncidentText>
     <stipendIntervalDays>10</stipendIntervalDays>
     <ceremonyLabel>Audição Solene</ceremonyLabel>
+    <!-- Só o Coro dá nível psíquico pelos cargos (maxPsylinkLevel em EQ_Titles.xml).
+         Cada cargo licencia um caminho do VPE (psycastPath): colonos só destravam com o cargo; a cerimônia destrava
+         de graça; perder o cargo revoga. Sem o VPE (ou o Hemosage) o campo é ignorado. -->
+    <grantsPsylink>true</grantsPsylink>
     <ceremonyText>O Coro Ascendente concederá uma audição. Um mestre de cerimônias virá ouvir o líder cantar o juramento, em pé, diante de todos. O ouro paga a taxa de afinação; desafinar não é recomendado.</ceremonyText>
     <promotionLabel>Recital de Ascensão</promotionLabel>
     <promotionText>Os aplausos acumulados pelo líder chegaram aos ouvidos certos. Um mestre de cerimônias virá presidir o recital e anunciar a nova posição no Coro.</promotionText>
@@ -432,12 +439,14 @@
     <ranks>
       <li>
         <title>EQ_Title_Coro_1</title>
+        <psycastPath>VPE_Protector</psycastPath>
         <stipend>
           <Silver>100</Silver>
         </stipend>
       </li>
       <li>
         <title>EQ_Title_Coro_2</title>
+        <psycastPath>VPE_Empath</psycastPath>
         <priceGain>0.03</priceGain>
         <stipend>
           <Silver>150</Silver>
@@ -445,6 +454,7 @@
       </li>
       <li>
         <title>EQ_Title_Coro_3</title>
+        <psycastPath>VPE_Staticlord</psycastPath>
         <priceGain>0.05</priceGain>
         <stipend>
           <Silver>150</Silver>
@@ -453,6 +463,7 @@
       </li>
       <li>
         <title>EQ_Title_Coro_4</title>
+        <psycastPath>VPE_Warlord</psycastPath>
         <priceGain>0.08</priceGain>
         <stipend>
           <Silver>200</Silver>
@@ -461,6 +472,7 @@
       </li>
       <li>
         <title>EQ_Title_Coro_5</title>
+        <psycastPath>VPE_Conflagrator</psycastPath>
         <priceGain>0.10</priceGain>
         <stipend>
           <Gold>20</Gold>
@@ -469,6 +481,7 @@
       </li>
       <li>
         <title>EQ_Title_Coro_6</title>
+        <psycastPath>VPE_Archon</psycastPath>
         <priceGain>0.13</priceGain>
         <stipend>
           <Gold>30</Gold>
@@ -477,6 +490,8 @@
       </li>
       <li>
         <title>EQ_Title_Coro_7</title>
+        <psycastPath>VPEH_Hemosage</psycastPath>
+        <psycastLockedReason>só quem tem hemogênio e o cargo de maestro honorário do Coro Ascendente</psycastLockedReason>
         <priceGain>0.15</priceGain>
         <stipend>
           <Gold>40</Gold>

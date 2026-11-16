@@ -259,4 +259,18 @@
     <exactPrecepts>false</exactPrecepts>
   </EcosDaQueda.IdeoTemplateDef>
 
+  <EcosDaQueda.IdeoTemplateDef>
+    <defName>EQ_IdeoTemplate_FeiraAndante</defName>
+    <faction>EQ_Faction_FeiraAndante</faction>
+    <ideoFile>FeiraAndante</ideoFile>
+    <exactPrecepts>false</exactPrecepts>
+  </EcosDaQueda.IdeoTemplateDef>
+
+  <EcosDaQueda.IdeoTemplateDef>
+    <defName>EQ_IdeoTemplate_SindicatoDoSaque</defName>
+    <faction>EQ_Faction_SindicatoDoSaque</faction>
+    <ideoFile>SindicatoDoSaque</ideoFile>
+    <exactPrecepts>false</exactPrecepts>
+  </EcosDaQueda.IdeoTemplateDef>
+
 </Defs>

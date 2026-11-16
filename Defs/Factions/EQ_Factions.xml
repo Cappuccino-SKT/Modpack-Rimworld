@@ -45,6 +45,17 @@
     <label>Ordem do Silêncio Perpétuo</label>
     <description>Uma ordem acadêmica que estuda o Vazio desde a Queda. Acreditam que algo de fora da realidade apagou o mundo, e que só entendendo-o a humanidade sobreviverá.\n\nSão educados, pacientes e extremamente bem financiados. A bolsa de pesquisa é paga em prisioneiros, e o comitê de ética foi o primeiro objeto de estudo.</description>
     <fixedName>Ordem do Silêncio Perpétuo</fixedName>
+    <!-- Comércio próprio (Defs/Traders): uma caravana de granel do jogo + a caravana, o visitante e a loja da potência. -->
+    <caravanTraderKinds Inherit="False">
+      <li>Caravan_Outlander_BulkGoods</li>
+      <li>EQ_Caravan_Silencio</li>
+    </caravanTraderKinds>
+    <visitorTraderKinds Inherit="False">
+      <li>EQ_Visitor_Silencio</li>
+    </visitorTraderKinds>
+    <baseTraderKinds Inherit="False">
+      <li>EQ_Base_Silencio</li>
+    </baseTraderKinds>
     <pawnSingular>silente</pawnSingular>
     <pawnsPlural>silentes</pawnsPlural>
     <leaderTitle>arquivista-mor</leaderTitle>
@@ -153,6 +164,17 @@
     <label>Concílio da Hélice</label>
     <description>Um conglomerado genético que trata a evolução como linha de produtos. Seus laboratórios vendem xenogermes premium, linhagens licenciadas e "atualizações hereditárias" por assinatura.\n\nSão os vizinhos mais simpáticos do deserto, até você ler o contrato. Humanos sem modificação são classificados como "versão base" e, eventualmente, descontinuados.</description>
     <fixedName>Concílio da Hélice</fixedName>
+    <!-- Comércio próprio (Defs/Traders): uma caravana de granel do jogo + a caravana, o visitante e a loja da potência. -->
+    <caravanTraderKinds Inherit="False">
+      <li>Caravan_Outlander_BulkGoods</li>
+      <li>EQ_Caravan_Helice</li>
+    </caravanTraderKinds>
+    <visitorTraderKinds Inherit="False">
+      <li>EQ_Visitor_Helice</li>
+    </visitorTraderKinds>
+    <baseTraderKinds Inherit="False">
+      <li>EQ_Base_Helice</li>
+    </baseTraderKinds>
     <pawnSingular>associado</pawnSingular>
     <pawnsPlural>associados</pawnsPlural>
     <leaderTitle>diretor executivo</leaderTitle>
@@ -249,6 +271,17 @@
     <label>Irmandade da Forja</label>
     <description>Guardiões autoproclamados da tecnologia perdida. Para eles, a carne falhou na Queda, e só máquinas leais vão reconstruir o mundo. Seus mecanitores comandam exércitos de mechs, e seus cavaleiros vestem blindagens que ninguém mais sabe fabricar.\n\nRecitam manuais como orações e confiscam qualquer tecnologia "para sua própria segurança". Androides livres anulam a garantia e são desmontados à vista.</description>
     <fixedName>Irmandade da Forja</fixedName>
+    <!-- Comércio próprio (Defs/Traders): uma caravana de granel do jogo + a caravana, o visitante e a loja da potência. -->
+    <caravanTraderKinds Inherit="False">
+      <li>Caravan_Outlander_BulkGoods</li>
+      <li>EQ_Caravan_Forja</li>
+    </caravanTraderKinds>
+    <visitorTraderKinds Inherit="False">
+      <li>EQ_Visitor_Forja</li>
+    </visitorTraderKinds>
+    <baseTraderKinds Inherit="False">
+      <li>EQ_Base_Forja</li>
+    </baseTraderKinds>
     <pawnSingular>irmão de ferro</pawnSingular>
     <pawnsPlural>irmãos de ferro</pawnsPlural>
     <leaderTitle>engenheiro-primaz</leaderTitle>
@@ -296,6 +329,7 @@
         <options>
           <EQ_Forja_Aprendiz>8</EQ_Forja_Aprendiz>
           <EQ_Forja_Cavaleiro>5</EQ_Forja_Cavaleiro>
+          <EQ_Forja_Lacrado MayRequire="OskarPotocki.VFE.Pirates">1.5</EQ_Forja_Lacrado>
           <EQ_Forja_Tecnico>3</EQ_Forja_Tecnico>
           <Mech_Militor MayRequire="Ludeon.RimWorld.Biotech">6</Mech_Militor>
           <Mech_Pikeman>3</Mech_Pikeman>
@@ -332,6 +366,7 @@
         <options>
           <EQ_Forja_Aprendiz>10</EQ_Forja_Aprendiz>
           <EQ_Forja_Cavaleiro>5</EQ_Forja_Cavaleiro>
+          <EQ_Forja_Lacrado MayRequire="OskarPotocki.VFE.Pirates">1</EQ_Forja_Lacrado>
           <EQ_Forja_Tecnico>3</EQ_Forja_Tecnico>
           <EQ_Forja_Primaz>1</EQ_Forja_Primaz>
         </options>
@@ -347,6 +382,17 @@
     <label>O Coro Ascendente</label>
     <description>Os herdeiros do Império que travou a guerra da Queda. Acreditam que a mente foi a única arma que nunca falhou, e governam em uníssono psíquico através de seus coros de guerra.\n\nSua etiqueta é rigorosa, suas cerimônias são intermináveis e seus impostos também. Toda comunidade vassala paga o dízimo do Coro, incluindo as crianças mais sensíveis, levadas para "treinamento vocal".</description>
     <fixedName>O Coro Ascendente</fixedName>
+    <!-- Comércio próprio (Defs/Traders): uma caravana de granel do jogo + a caravana, o visitante e a loja da potência. -->
+    <caravanTraderKinds Inherit="False">
+      <li>Caravan_Outlander_BulkGoods</li>
+      <li>EQ_Caravan_Coro</li>
+    </caravanTraderKinds>
+    <visitorTraderKinds Inherit="False">
+      <li>EQ_Visitor_Coro</li>
+    </visitorTraderKinds>
+    <baseTraderKinds Inherit="False">
+      <li>EQ_Base_Coro</li>
+    </baseTraderKinds>
     <pawnSingular>cantor</pawnSingular>
     <pawnsPlural>cantores</pawnsPlural>
     <leaderTitle>maestro supremo</leaderTitle>

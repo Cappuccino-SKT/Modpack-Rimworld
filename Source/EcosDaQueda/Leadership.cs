@@ -1,3 +1,4 @@
+using System.Reflection;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -517,8 +518,9 @@ namespace EcosDaQueda
     [HarmonyPatch(typeof(RitualOutcomeEffectWorker_Bestowing), nameof(RitualOutcomeEffectWorker_Bestowing.Apply))]
     public static class Patch_RitualOutcomeEffectWorker_Bestowing_Apply
     {
-        public static bool Prefix(LordJob_Ritual jobRitual)
+        public static bool Prefix(LordJob_Ritual jobRitual, out FactionAllegianceDef __state)
         {
+            __state = null;
             if (!(jobRitual is LordJob_BestowingCeremony job) || job.bestower == null || job.target == null)
                 return true;
             Faction power = job.bestower.Faction;
@@ -542,7 +544,46 @@ namespace EcosDaQueda
             ThingOwner<Thing> inv = job.bestower.inventory?.innerContainer;
             if (inv != null && !inv.Any(t => t.def == ThingDefOf.PsychicAmplifier))
                 inv.TryAdd(ThingMaker.MakeThing(ThingDefOf.PsychicAmplifier), 1);
+            __state = d;
             return true;
+        }
+
+        /// <summary>Implante da potência (Forja: vínculo mecanoide) no lugar do nível psíquico.</summary>
+        public static void Postfix(LordJob_Ritual jobRitual, FactionAllegianceDef __state)
+        {
+            if (__state?.ceremonyHediff == null || !(jobRitual is LordJob_BestowingCeremony job))
+                return;
+            Pawn target = job.target;
+            if (target?.health == null || target.Dead || target.health.hediffSet.HasHediff(__state.ceremonyHediff))
+                return;
+            if (target.royalty == null || job.bestower?.Faction == null || target.royalty.GetCurrentTitle(job.bestower.Faction) == null)
+                return;
+            target.health.AddHediff(__state.ceremonyHediff, target.health.hediffSet.GetBrain());
+            if (!__state.ceremonyHediffText.NullOrEmpty())
+                Messages.Message(__state.ceremonyHediffText.Formatted(target.Named("PAWN")), target, MessageTypeDefOf.PositiveEvent);
+        }
+    }
+
+    /// <summary>O Vanilla Psycasts Expanded dá 1 nível psíquico em toda cerimônia de outorga, mesmo quando o
+    /// cargo não prevê nenhum. Nos nossos cargos, só a potência com grantsPsylink (Coro) dá.</summary>
+    [HarmonyPatch]
+    public static class Patch_VPE_ApplyTitlePsylink
+    {
+        private static MethodBase target;
+
+        public static bool Prepare()
+        {
+            Type t = AccessTools.TypeByName("VanillaPsycastsExpanded.RitualOutcomeEffectWorker_Bestowing_Apply_Patch");
+            target = t == null ? null : AccessTools.Method(t, "ApplyTitlePsylink");
+            return target != null;
+        }
+
+        public static MethodBase TargetMethod() => target;
+
+        public static bool Prefix(RoyalTitleDef newTitle)
+        {
+            FactionAllegianceDef d = FactionAllegianceDef.ForTitle(newTitle);
+            return d == null || d.grantsPsylink;
         }
     }
 

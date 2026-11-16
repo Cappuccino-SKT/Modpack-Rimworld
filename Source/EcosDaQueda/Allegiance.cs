@@ -17,6 +17,10 @@ namespace EcosDaQueda
         public float priceGain;
         /// <summary>Entregue a cada stipendIntervalDays.</summary>
         public List<ThingDefCountClass> stipend = new List<ThingDefCountClass>();
+        /// <summary>defName de um caminho do Vanilla Psycasts Expanded que este cargo licencia (ver Psycasts.cs).</summary>
+        public string psycastPath;
+        /// <summary>Texto de trava do caminho (opcional; padrão: "licença da potência (cargo)").</summary>
+        public string psycastLockedReason;
     }
 
     public enum TitheOptionType { Silver, Things, Prisoner, Colonist, Refuse }
@@ -77,6 +81,12 @@ namespace EcosDaQueda
         /// <summary>Texto extra do preço (ex.: o que acontece com o líder).</summary>
         public string joinPriceNote;
 
+        /// <summary>Só a potência psíquica (Coro) dá nível psíquico pelos cargos (maxPsylinkLevel dos títulos).</summary>
+        public bool grantsPsylink;
+        /// <summary>Implante que o líder recebe na cerimônia de submissão (Forja: vínculo mecanoide). No cérebro.</summary>
+        public HediffDef ceremonyHediff;
+        public string ceremonyHediffText;
+
         public List<FavorSource> favorSources = new List<FavorSource>();
 
         public string titheLabel;
@@ -98,6 +108,17 @@ namespace EcosDaQueda
 
         public static FactionAllegianceDef For(FactionDef def) =>
             def == null ? null : DefDatabase<FactionAllegianceDef>.AllDefsListForReading.FirstOrDefault(a => a.faction == def);
+
+        /// <summary>A potência dona de um cargo (pela tag do título em royalTitleTags da facção).</summary>
+        public static FactionAllegianceDef ForTitle(RoyalTitleDef title)
+        {
+            if (title == null)
+                return null;
+            foreach (FactionAllegianceDef a in DefDatabase<FactionAllegianceDef>.AllDefsListForReading)
+                if (a.ranks.Any(r => r.title == title))
+                    return a;
+            return null;
+        }
 
         public string FavorLabel => faction?.royalFavorLabel ?? "favor";
 
