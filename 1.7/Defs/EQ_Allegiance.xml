@@ -459,6 +459,7 @@
         <stipend>
           <Silver>150</Silver>
           <Gold>10</Gold>
+          <VFEM2_Wine MayRequire="OskarPotocki.VFE.Medieval2">10</VFEM2_Wine>
         </stipend>
       </li>
       <li>
@@ -468,6 +469,7 @@
         <stipend>
           <Silver>200</Silver>
           <Gold>15</Gold>
+          <VFEM2_Wine MayRequire="OskarPotocki.VFE.Medieval2">15</VFEM2_Wine>
         </stipend>
       </li>
       <li>
@@ -477,6 +479,7 @@
         <stipend>
           <Gold>20</Gold>
           <Jade>10</Jade>
+          <VFEM2_Wine MayRequire="OskarPotocki.VFE.Medieval2">20</VFEM2_Wine>
         </stipend>
       </li>
       <li>
@@ -486,6 +489,7 @@
         <stipend>
           <Gold>30</Gold>
           <Jade>15</Jade>
+          <VFEM2_Wine MayRequire="OskarPotocki.VFE.Medieval2">25</VFEM2_Wine>
         </stipend>
       </li>
       <li>
@@ -496,6 +500,7 @@
         <stipend>
           <Gold>40</Gold>
           <Jade>20</Jade>
+          <VFEM2_Wine MayRequire="OskarPotocki.VFE.Medieval2">30</VFEM2_Wine>
         </stipend>
       </li>
     </ranks>
@@ -520,6 +525,15 @@
         <count>15</count>
         <fame>5</fame>
         <resultText>O ouro foi aceito com um suspiro aristocrático. "Pelo menos brilha."</resultText>
+      </li>
+      <li MayRequire="OskarPotocki.VFE.Medieval2">
+        <label>Pagar em vinho ({COUNT})</label>
+        <type>Things</type>
+        <favor>3</favor>
+        <thingDef>VFEM2_Wine</thingDef>
+        <count>30</count>
+        <fame>6</fame>
+        <resultText>O mestre de cerimônias provou uma taça, fez uma careta e levou tudo. "Safra de pobre. Serve para os coristas."</resultText>
       </li>
       <li>
         <label>Recusar</label>

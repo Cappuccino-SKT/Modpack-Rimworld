@@ -56,6 +56,19 @@
   </ThingDef>
 
   <ThoughtDef>
+    <defName>EQ_Thought_Torneio</defName>
+    <durationDays>4</durationDays>
+    <stackLimit>1</stackLimit>
+    <stages>
+      <li>
+        <label>torneio da corte</label>
+        <description>O Coro transmitiu um torneio em nossa honra, direto na cabeça de todo mundo. Cavaleiros, lanças, um tenor narrando cada queda. Ninguém pediu, mas ninguém conseguiu desviar o olhar.</description>
+        <baseMoodEffect>8</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+  <ThoughtDef>
     <defName>EQ_Thought_Serenata</defName>
     <durationDays>6</durationDays>
     <stackLimit>1</stackLimit>
@@ -182,11 +195,29 @@
   </EcosDaQueda.FactionServiceDef>
 
   <EcosDaQueda.FactionServiceDef>
+    <defName>EQ_Service_Coro_Torneio</defName>
+    <label>patrocinar um torneio de corte</label>
+    <description>A corte realiza um torneio em honra da sua colônia e o transmite em uníssono psíquico. Os colonos ficam de bom humor, o líder ganha aplausos e a sua fama sobe entre os nobres.\n\nO vinho é para os juízes. Juiz sóbrio dá nota baixa.</description>
+    <faction>EQ_Faction_Coro</faction>
+    <order>2</order>
+    <minRank>2</minRank>
+    <cooldownDays>20</cooldownDays>
+    <silver>300</silver>
+    <costThings>
+      <VFEM2_Wine MayRequire="OskarPotocki.VFE.Medieval2">20</VFEM2_Wine>
+    </costThings>
+    <favor>3</favor>
+    <fame>5</fame>
+    <colonistThought>EQ_Thought_Torneio</colonistThought>
+    <resultText>O torneio começou. Um cavaleiro de armadura dourada caiu do cavalo na primeira justa, e o tenor narrador fez disso uma ária de onze minutos.</resultText>
+  </EcosDaQueda.FactionServiceDef>
+
+  <EcosDaQueda.FactionServiceDef>
     <defName>EQ_Service_Coro_CoroDeGuerra</defName>
     <label>convocar o coro de guerra</label>
     <description>O Maestro envia tenores de guerra e sopranos incandescentes para lutar ao seu lado. Eles chegam cantando, e os inimigos geralmente saem gritando.</description>
     <faction>EQ_Faction_Coro</faction>
-    <order>2</order>
+    <order>3</order>
     <minRank>4</minRank>
     <cooldownDays>15</cooldownDays>
     <silver>500</silver>

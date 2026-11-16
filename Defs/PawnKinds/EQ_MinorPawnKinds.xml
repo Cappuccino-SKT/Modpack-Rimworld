@@ -126,9 +126,7 @@
     </apparelTags>
     <weaponMoney>90~250</weaponMoney>
     <weaponTags Inherit="False">
-      <li>NeolithicMeleeBasic</li>
-      <li>NeolithicMeleeDecent</li>
-      <li>NeolithicRangedBasic</li>
+      <li>EQ_NaoCatalogados_Basico</li>
     </weaponTags>
     <techHediffsChance>0</techHediffsChance>
     <initialResistanceRange>12~20</initialResistanceRange>
@@ -158,9 +156,7 @@
     </apparelTags>
     <weaponMoney>200~600</weaponMoney>
     <weaponTags Inherit="False">
-      <li>NeolithicRangedDecent</li>
-      <li>NeolithicRangedHeavy</li>
-      <li>Gun</li>
+      <li>EQ_NaoCatalogados_Olheiro</li>
     </weaponTags>
     <techHediffsChance>0</techHediffsChance>
     <initialResistanceRange>15~22</initialResistanceRange>
@@ -190,9 +186,7 @@
     </apparelTags>
     <weaponMoney>300~900</weaponMoney>
     <weaponTags Inherit="False">
-      <li>NeolithicMeleeAdvanced</li>
-      <li>MedievalMeleeDecent</li>
-      <li>MedievalMeleeAdvanced</li>
+      <li>EQ_NaoCatalogados_Dilacerador</li>
     </weaponTags>
     <techHediffsChance>0</techHediffsChance>
     <initialResistanceRange>22~32</initialResistanceRange>
@@ -221,8 +215,8 @@
     </apparelTags>
     <weaponMoney>600~1500</weaponMoney>
     <weaponTags Inherit="False">
-      <li>MedievalMeleeAdvanced</li>
-      <li>NeolithicMeleeAdvanced</li>
+      <li>EQ_NaoCatalogados_Chefe</li>
+      <li>EQ_NaoCatalogados_Dilacerador</li>
     </weaponTags>
     <techHediffsChance>0</techHediffsChance>
     <factionLeader>true</factionLeader>

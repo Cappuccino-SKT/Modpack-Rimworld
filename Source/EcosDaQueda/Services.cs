@@ -25,6 +25,8 @@ namespace EcosDaQueda
         public int silver;
         public bool requiresHeldEntity;
         public bool requiresPrisoner;
+        /// <summary>Itens cobrados do mapa (além da prata). Item de mod ausente é ignorado.</summary>
+        public List<ThingDefCountClass> costThings = new List<ThingDefCountClass>();
 
         // Efeitos
         public List<ThingDefCountClass> things = new List<ThingDefCountClass>();
@@ -86,6 +88,9 @@ namespace EcosDaQueda
                 return "Sem colônia";
             if (s.silver > 0 && EQItems.CountOnMap(map, ThingDefOf.Silver) < s.silver)
                 return "Falta prata (" + s.silver + ")";
+            foreach (ThingDefCountClass c in s.costThings)
+                if (c.thingDef != null && EQItems.CountOnMap(map, c.thingDef) < c.count)
+                    return "Falta " + c.thingDef.label + " (" + c.count + ")";
             if (s.requiresHeldEntity && HeldEntity(map) == null)
                 return "Nenhuma entidade contida";
             if (s.requiresPrisoner && !map.mapPawns.PrisonersOfColonySpawned.Any())
@@ -93,6 +98,15 @@ namespace EcosDaQueda
             if (s.researchPoints > 0f && Find.ResearchManager.GetProject() == null)
                 return "Nenhuma pesquisa em andamento";
             return null;
+        }
+
+        public static string CostLabel(FactionServiceDef s)
+        {
+            var parts = new List<string>();
+            if (s.silver > 0) parts.Add(s.silver + " de prata");
+            foreach (ThingDefCountClass c in s.costThings)
+                if (c.thingDef != null) parts.Add(c.count + " " + c.thingDef.label);
+            return parts.Count == 0 ? "" : " (" + string.Join(", ", parts) + ")";
         }
 
         public static Pawn HeldEntity(Map map)
@@ -112,6 +126,9 @@ namespace EcosDaQueda
             // Custos
             if (s.silver > 0)
                 EQItems.TakeFromMap(map, ThingDefOf.Silver, s.silver);
+            foreach (ThingDefCountClass c in s.costThings)
+                if (c.thingDef != null)
+                    EQItems.TakeFromMap(map, c.thingDef, c.count);
             if (s.requiresHeldEntity)
             {
                 Pawn entity = HeldEntity(map);
@@ -179,7 +196,7 @@ namespace EcosDaQueda
             foreach (FactionServiceDef s in ServicesOf(alg.memberOf.def))
             {
                 FactionServiceDef service = s;
-                string cost = s.silver > 0 ? " (" + s.silver + " de prata)" : "";
+                string cost = CostLabel(s);
                 string block = svc.BlockReason(s, map);
                 var opt = block == null
                     ? new FloatMenuOption(s.LabelCap + cost, () => svc.Use(service, map))

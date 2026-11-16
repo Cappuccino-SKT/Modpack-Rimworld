@@ -534,4 +534,56 @@
     </apparel>
   </EcosDaQueda.ArsenalDef>
 
+  <EcosDaQueda.ArsenalDef>
+    <defName>EQ_Arsenal_NaoCatalogadosBasico</defName>
+    <!-- Não Catalogados, extraviados: o que dá para arrancar de uma parede e jogar em alguém. -->
+    <tag>EQ_NaoCatalogados_Basico</tag>
+    <weapons>
+      <li>MeleeWeapon_Club</li>
+      <li>MeleeWeapon_Knife</li>
+      <li>MeleeWeapon_Spear</li>
+      <li>Bow_Short</li>
+      <li>VFEM2_ThrowingAxe</li>
+      <li>VFEM2_MeleeWeapon_Flail</li>
+    </weapons>
+  </EcosDaQueda.ArsenalDef>
+
+  <EcosDaQueda.ArsenalDef>
+    <defName>EQ_Arsenal_NaoCatalogadosOlheiro</defName>
+    <!-- Olheiros do escuro: tiro de longe, de onde a luz não chega. Pólvora velha, de ruína. -->
+    <tag>EQ_NaoCatalogados_Olheiro</tag>
+    <weapons>
+      <li>Bow_Recurve</li>
+      <li>Bow_Great</li>
+      <li>VFEM2_Warbow</li>
+      <li>VFEM2_Arbalest</li>
+      <li>VFEM2_Gun_HandCannon</li>
+      <li>VFEM2_Gun_Arquebus</li>
+    </weapons>
+  </EcosDaQueda.ArsenalDef>
+
+  <EcosDaQueda.ArsenalDef>
+    <defName>EQ_Arsenal_NaoCatalogadosDilacerador</defName>
+    <!-- Dilaceradores: peso, gancho e lâmina larga. O que não corta, amassa. -->
+    <tag>EQ_NaoCatalogados_Dilacerador</tag>
+    <weapons>
+      <li>MeleeWeapon_Mace</li>
+      <li>VFEM2_MeleeWeapon_HeavyMace</li>
+      <li>VFEM2_MeleeWeapon_DaneAxe</li>
+      <li>VFEM2_MeleeWeapon_Halberd</li>
+      <li>VFEM2_MeleeWeapon_Pike</li>
+    </weapons>
+  </EcosDaQueda.ArsenalDef>
+
+  <EcosDaQueda.ArsenalDef>
+    <defName>EQ_Arsenal_NaoCatalogadosChefe</defName>
+    <!-- Primeiro espécime: a lâmina maior do ninho, por direito de mordida. -->
+    <tag>EQ_NaoCatalogados_Chefe</tag>
+    <weapons>
+      <li>VFEM2_MeleeWeapon_Claymore</li>
+      <li>VFEM2_MeleeWeapon_DaneAxe</li>
+      <li>VFEM2_MeleeWeapon_Halberd</li>
+    </weapons>
+  </EcosDaQueda.ArsenalDef>
+
 </Defs>
