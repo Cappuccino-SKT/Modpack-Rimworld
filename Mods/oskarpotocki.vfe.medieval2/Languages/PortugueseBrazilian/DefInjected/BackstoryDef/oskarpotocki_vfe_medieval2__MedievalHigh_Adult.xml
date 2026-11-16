@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <!-- EN: [PAWN_nameDef] rose from the ranks of squires to earn [PAWN_possessive] title as a knight through courage and dedication. [PAWN_pronoun] became a master of swordplay and horseback combat, leading troops and protecting the realm with honor. While skilled in warfare, [PAWN_pronoun] considered manual labor beneath [PAWN_objective] and rarely engaged in menial tasks. -->
+  <VFEM_Knight51.description>[PAWN_nameDef] saiu das fileiras dos escudeiros e conquistou o título de cavaleiro com coragem e dedicação. Tornou-se mestre da espada e do combate a cavalo, liderando tropas e protegendo o reino com honra. Embora hábil na guerra, considerava o trabalho braçal indigno e raramente se rebaixava a tarefas servis.</VFEM_Knight51.description>
+  <!-- EN: knight -->
+  <VFEM_Knight51.title>cavaleiro</VFEM_Knight51.title>
+  <!-- EN: knight -->
+  <VFEM_Knight51.titleShort>cavaleiro</VFEM_Knight51.titleShort>
+  <!-- EN: [PAWN_nameDef] built [PAWN_possessive] wealth through savvy trade, traveling across regions to barter exotic goods and secure lucrative deals. [PAWN_pronoun] became highly skilled in negotiation and logistics, ensuring the success of [PAWN_possessive] ventures. Though financially successful, [PAWN_pronoun] relied on others for physical labor and practical skills. -->
+  <VFEM_Merchant52.description>[PAWN_nameDef] fez fortuna com comércio esperto, viajando por várias regiões para trocar mercadorias exóticas e fechar negócios lucrativos. Ficou muito hábil em negociação e logística, garantindo o sucesso dos empreendimentos. Rico, dependia dos outros para o trabalho braçal e as habilidades práticas.</VFEM_Merchant52.description>
+  <!-- EN: merchant -->
+  <VFEM_Merchant52.title>mercador</VFEM_Merchant52.title>
+  <!-- EN: merchant -->
+  <VFEM_Merchant52.titleShort>mercador</VFEM_Merchant52.titleShort>
+  <!-- EN: [PAWN_nameDef] grew up surrounded by wealth and privilege, trained from a young age to govern lands and lead people. [PAWN_pronoun] mastered the art of diplomacy and honed [PAWN_possessive] skills in archery and strategy to prepare for [PAWN_possessive] future responsibilities. However, [PAWN_pronoun] considered manual work beneath [PAWN_objective] and delegated such tasks to servants. -->
+  <VFEM_NobleHeir53.description>[PAWN_nameDef] cresceu cercado de riqueza e privilégio, treinado desde cedo para governar terras e liderar pessoas. Dominou a arte da diplomacia e aprimorou o arco e a estratégia para as responsabilidades futuras. Mas considerava o trabalho manual indigno e deixava esse tipo de tarefa para os criados.</VFEM_NobleHeir53.description>
+  <!-- EN: noble heir -->
+  <VFEM_NobleHeir53.title>herdeiro nobre</VFEM_NobleHeir53.title>
+  <!-- EN: noble -->
+  <VFEM_NobleHeir53.titleShort>nobre</VFEM_NobleHeir53.titleShort>
+  <!-- EN: [PAWN_nameDef] entertained the courts of lords and kings with poetic tales, music, and sharp wit. [PAWN_pronoun] became a master of performance and an expert in reading the social dynamics of the nobility. Though praised for [PAWN_possessive] artistic brilliance, [PAWN_pronoun] avoided manual labor and relied on [PAWN_possessive] charm to navigate life. -->
+  <VFEM_CourtBard54.description>[PAWN_nameDef] entretinha as cortes de senhores e reis com contos poéticos, música e humor afiado. Tornou-se mestre do espetáculo e especialista em ler as dinâmicas sociais da nobreza. Elogiado pelo brilho artístico, fugia do trabalho braçal e vivia de charme.</VFEM_CourtBard54.description>
+  <!-- EN: court bard -->
+  <VFEM_CourtBard54.title>bardo da corte</VFEM_CourtBard54.title>
+  <!-- EN: bard -->
+  <VFEM_CourtBard54.titleShort>bardo</VFEM_CourtBard54.titleShort>
+  <!-- EN: [PAWN_nameDef] managed the estates of a noble, overseeing finances, organizing events, and ensuring the smooth operation of the household. [PAWN_pronoun] excelled in administration and diplomacy, becoming indispensable to the lord [PAWN_pronoun] served. Though proficient in intellectual and social skills, [PAWN_pronoun] saw physical labor as beneath [PAWN_objective]. -->
+  <VFEM_Steward55.description>[PAWN_nameDef] administrava as propriedades de um nobre, cuidando das finanças, organizando eventos e mantendo a casa funcionando sem tropeços. Destacava-se em administração e diplomacia e virou peça indispensável para o senhor a quem servia. Bom nas habilidades intelectuais e sociais, achava o trabalho físico indigno.</VFEM_Steward55.description>
+  <!-- EN: steward -->
+  <VFEM_Steward55.title>intendente</VFEM_Steward55.title>
+  <!-- EN: steward -->
+  <VFEM_Steward55.titleShort>intendente</VFEM_Steward55.titleShort>
+  <!-- EN: [PAWN_nameDef] was entrusted with the management of a noble's castle, ensuring its defenses were maintained and its residents well-cared for. [PAWN_pronoun] became an expert in logistics and leadership, coordinating repairs and overseeing the garrison. While skilled in administration and strategy, [PAWN_pronoun] left manual tasks to the servants. -->
+  <VFEM_Castellan56.description>[PAWN_nameDef] foi encarregado de administrar o castelo de um nobre, mantendo as defesas em ordem e os moradores bem cuidados. Tornou-se especialista em logística e liderança, coordenando reparos e supervisionando a guarnição. Hábil em administração e estratégia, deixava as tarefas manuais para os criados.</VFEM_Castellan56.description>
+  <!-- EN: castellan -->
+  <VFEM_Castellan56.title>castelão</VFEM_Castellan56.title>
+  <!-- EN: castellan -->
+  <VFEM_Castellan56.titleShort>castelão</VFEM_Castellan56.titleShort>
+  <!-- EN: [PAWN_nameDef] crafted fine weapons and armor for knights and nobles, perfecting [PAWN_possessive] trade in the forge. [PAWN_pronoun] developed an unmatched skill in shaping steel into works of art and tools of war. Though a master artisan, [PAWN_pronoun] often neglected other aspects of life, focusing solely on [PAWN_possessive] craft. -->
+  <VFEM_Armorer57.description>[PAWN_nameDef] forjava armas e armaduras finas para cavaleiros e nobres, aperfeiçoando o ofício na forja. Desenvolveu uma habilidade sem igual para transformar aço em obras de arte e instrumentos de guerra. Mestre artesão, muitas vezes descuidava de outros aspectos da vida para se dedicar só ao ofício.</VFEM_Armorer57.description>
+  <!-- EN: armorer -->
+  <VFEM_Armorer57.title>armeiro</VFEM_Armorer57.title>
+  <!-- EN: armorer -->
+  <VFEM_Armorer57.titleShort>armeiro</VFEM_Armorer57.titleShort>
+  <!-- EN: [PAWN_nameDef] traveled between courts, negotiating treaties and mediating disputes between noble houses. [PAWN_pronoun] excelled in persuasion and understanding the intricacies of politics, earning a reputation for tact and wisdom. [PAWN_pronoun] left physical tasks to others, relying on [PAWN_possessive] intellect and charm to succeed. -->
+  <VFEM_Diplomat58.description>[PAWN_nameDef] viajava entre as cortes, negociando tratados e mediando disputas entre casas nobres. Destacava-se na persuasão e nas sutilezas da política, ganhando fama de diplomático e sábio. Deixava as tarefas físicas para os outros e contava com o intelecto e o charme para vencer.</VFEM_Diplomat58.description>
+  <!-- EN: diplomat -->
+  <VFEM_Diplomat58.title>diplomata</VFEM_Diplomat58.title>
+  <!-- EN: diplomat -->
+  <VFEM_Diplomat58.titleShort>diplomata</VFEM_Diplomat58.titleShort>
+  <!-- EN: [PAWN_nameDef] led a prosperous guild, coordinating the efforts of skilled artisans and merchants. [PAWN_pronoun] became a shrewd leader and negotiator, balancing trade and politics to secure the guild's interests. While brilliant in leadership, [PAWN_pronoun] rarely engaged in the craft [PAWN_pronoun] oversaw. -->
+  <VFEM_Guildmaster59.description>[PAWN_nameDef] liderava uma guilda próspera, coordenando o trabalho de artesãos e mercadores habilidosos. Tornou-se um líder e negociador astuto, equilibrando comércio e política para proteger os interesses da guilda. Brilhante na liderança, raramente praticava o ofício que supervisionava.</VFEM_Guildmaster59.description>
+  <!-- EN: guildmaster -->
+  <VFEM_Guildmaster59.title>mestre de guilda</VFEM_Guildmaster59.title>
+  <!-- EN: guildmaster -->
+  <VFEM_Guildmaster59.titleShort>mestre de guilda</VFEM_Guildmaster59.titleShort>
+  <!-- EN: [PAWN_nameDef] served in the noble court, tending to the illnesses and injuries of the ruling family. [PAWN_pronoun] gained expertise in medicine and herbal remedies, becoming a trusted advisor in matters of health. Though valued for [PAWN_possessive] skills, [PAWN_pronoun] had little patience for physical labor. -->
+  <VFEM_CourtPhysician60.description>[PAWN_nameDef] servia na corte nobre, tratando as doenças e ferimentos da família governante. Ganhou experiência em medicina e remédios de ervas e virou conselheiro de confiança nas questões de saúde. Valorizado pelas habilidades, tinha pouca paciência para trabalho físico.</VFEM_CourtPhysician60.description>
+  <!-- EN: court physician -->
+  <VFEM_CourtPhysician60.title>médico da corte</VFEM_CourtPhysician60.title>
+  <!-- EN: physician -->
+  <VFEM_CourtPhysician60.titleShort>médico</VFEM_CourtPhysician60.titleShort>
+  <!-- EN: [PAWN_nameDef] led a company of knights into battle, earning [PAWN_possessive] title through years of skill and strategy. [PAWN_pronoun] excelled at coordinating troops, inspiring loyalty among [PAWN_possessive] men, and devising battle plans. While unmatched in leadership and combat, [PAWN_pronoun] considered manual labor beneath [PAWN_objective]. -->
+  <VFEM_KnightCommander61.description>[PAWN_nameDef] liderava uma companhia de cavaleiros na batalha, título conquistado em anos de habilidade e estratégia. Destacava-se em coordenar tropas, inspirar lealdade nos seus homens e traçar planos de batalha. Sem igual na liderança e no combate, considerava o trabalho braçal indigno.</VFEM_KnightCommander61.description>
+  <!-- EN: knight commander -->
+  <VFEM_KnightCommander61.title>cavaleiro-comandante</VFEM_KnightCommander61.title>
+  <!-- EN: commander -->
+  <VFEM_KnightCommander61.titleShort>comandante</VFEM_KnightCommander61.titleShort>
+  <!-- EN: [PAWN_nameDef] was entrusted with the armory of a great castle, overseeing the maintenance and distribution of weapons and armor. [PAWN_pronoun] became an expert in the design and upkeep of equipment, ensuring the garrison was always ready for battle. Though skilled in [PAWN_possessive] craft, [PAWN_pronoun] left combat to the knights [PAWN_pronoun] served. -->
+  <VFEM_CastellanOfArms62.description>[PAWN_nameDef] foi encarregado do arsenal de um grande castelo, cuidando da manutenção e distribuição de armas e armaduras. Tornou-se especialista no projeto e conservação do equipamento, garantindo que a guarnição estivesse sempre pronta para a batalha. Hábil no ofício, deixava o combate para os cavaleiros a quem servia.</VFEM_CastellanOfArms62.description>
+  <!-- EN: castellan of arms -->
+  <VFEM_CastellanOfArms62.title>mestre do arsenal</VFEM_CastellanOfArms62.title>
+  <!-- EN: armorer -->
+  <VFEM_CastellanOfArms62.titleShort>armeiro</VFEM_CastellanOfArms62.titleShort>
+  <!-- EN: [PAWN_nameDef] wandered the land as a knight errant, seeking to prove [PAWN_possessive] valor through combat and acts of chivalry. [PAWN_pronoun] mastered swordsmanship and gained a reputation for [PAWN_possessive] fearless bravery. While skilled in combat and diplomacy, [PAWN_pronoun] neglected practical skills during [PAWN_possessive] travels. -->
+  <VFEM_KnightErrant63.description>[PAWN_nameDef] percorria a terra como cavaleiro andante, buscando provar seu valor em combates e atos de cavalaria. Dominou a espada e ganhou fama pela bravura destemida. Hábil no combate e na diplomacia, descuidou das habilidades práticas durante as viagens.</VFEM_KnightErrant63.description>
+  <!-- EN: knight errant -->
+  <VFEM_KnightErrant63.title>cavaleiro andante</VFEM_KnightErrant63.title>
+  <!-- EN: errant -->
+  <VFEM_KnightErrant63.titleShort>andante</VFEM_KnightErrant63.titleShort>
+  <!-- EN: [PAWN_nameDef] served as one of the elite guards sworn to protect the king and [PAWN_possessive] family. [PAWN_pronoun] was trained in both melee and ranged combat, becoming highly skilled in personal defense and loyalty. The prestigious position left [PAWN_pronoun] unaccustomed to menial tasks, focusing solely on [PAWN_possessive] duty. -->
+  <VFEM_RoyalGuard64.description>[PAWN_nameDef] serviu como um dos guardas de elite juramentados para proteger o rei e sua família. Foi treinado no combate corpo a corpo e à distância, ficando muito hábil na proteção pessoal e exemplo de lealdade. O posto de prestígio deixou [PAWN_objective] desacostumado a tarefas servis, focado só no dever.</VFEM_RoyalGuard64.description>
+  <!-- EN: royal guard -->
+  <VFEM_RoyalGuard64.title>guarda real</VFEM_RoyalGuard64.title>
+  <!-- EN: guard -->
+  <VFEM_RoyalGuard64.titleShort>guarda</VFEM_RoyalGuard64.titleShort>
+  <!-- EN: [PAWN_nameDef] was a master tactician, advising lords and generals on the best paths to victory. [PAWN_pronoun] excelled at reading the battlefield, coordinating troops, and anticipating enemy moves. Though [PAWN_pronoun] rarely fought directly, [PAWN_pronoun] commanded respect for [PAWN_possessive] brilliant mind and sharp tongue. -->
+  <VFEM_Strategist65.description>[PAWN_nameDef] era um tático brilhante, aconselhando senhores e generais sobre os melhores caminhos para a vitória. Destacava-se em ler o campo de batalha, coordenar tropas e antecipar os movimentos do inimigo. Raramente lutava pessoalmente, mas impunha respeito pela mente brilhante e pela língua afiada.</VFEM_Strategist65.description>
+  <!-- EN: strategist -->
+  <VFEM_Strategist65.title>estrategista</VFEM_Strategist65.title>
+  <!-- EN: strategist -->
+  <VFEM_Strategist65.titleShort>estrategista</VFEM_Strategist65.titleShort>
+  <!-- EN: [PAWN_nameDef] was born as the eldest child of a noble family, destined to inherit the estate and title. [PAWN_pronoun] received the finest education in governance, diplomacy, and warfare. While skilled in leadership and strategy, [PAWN_pronoun] avoided physical labor, seeing it as beneath [PAWN_objective]. -->
+  <VFEM_LordsHeir66.description>[PAWN_nameDef] nasceu como primogênito de uma família nobre, destinado a herdar as terras e o título. Recebeu a melhor educação em governo, diplomacia e guerra. Hábil em liderança e estratégia, fugia do trabalho físico por considerá-lo indigno.</VFEM_LordsHeir66.description>
+  <!-- EN: lord's heir -->
+  <VFEM_LordsHeir66.title>herdeiro do senhor</VFEM_LordsHeir66.title>
+  <!-- EN: heir -->
+  <VFEM_LordsHeir66.titleShort>herdeiro</VFEM_LordsHeir66.titleShort>
+  <!-- EN: [PAWN_nameDef] was granted the title of baron and ruled over a small region in [PAWN_possessive] lord's service. [PAWN_pronoun] managed taxes, enforced laws, and led the local militia when needed. Though [PAWN_pronoun] excelled in leadership, [PAWN_pronoun] saw manual labor as the work of peasants. -->
+  <VFEM_Baron67.description>[PAWN_nameDef] recebeu o título de barão e governava uma pequena região a serviço do seu senhor. Cobrava impostos, fazia cumprir as leis e liderava a milícia local quando preciso. Destacava-se na liderança, mas via o trabalho braçal como coisa de camponês.</VFEM_Baron67.description>
+  <!-- EN: baron -->
+  <VFEM_Baron67.title>barão</VFEM_Baron67.title>
+  <!-- EN: baron -->
+  <VFEM_Baron67.titleShort>barão</VFEM_Baron67.titleShort>
+  <!-- EN: [PAWN_nameDef] was born into one of the most powerful noble families in the land, growing up surrounded by luxury and political intrigue. [PAWN_pronoun] mastered the art of diplomacy and the subtleties of court politics, earning a reputation as a skilled negotiator. While proficient in social and intellectual pursuits, [PAWN_pronoun] relied entirely on servants for physical tasks. -->
+  <VFEM_HighNoble68.description>[PAWN_nameDef] nasceu numa das famílias nobres mais poderosas da terra e cresceu cercado de luxo e intriga política. Dominou a arte da diplomacia e as sutilezas da política da corte, ganhando fama de negociador hábil. Bom nas atividades sociais e intelectuais, dependia inteiramente dos criados para as tarefas físicas.</VFEM_HighNoble68.description>
+  <!-- EN: high noble -->
+  <VFEM_HighNoble68.title>alto nobre</VFEM_HighNoble68.title>
+  <!-- EN: noble -->
+  <VFEM_HighNoble68.titleShort>nobre</VFEM_HighNoble68.titleShort>
+  <!-- EN: [PAWN_nameDef] was sent to foreign courts as a representative of [PAWN_possessive] family, brokering alliances and treaties. [PAWN_pronoun] became skilled in diplomacy and negotiation, earning admiration for [PAWN_possessive] eloquence and charm. However, [PAWN_pronoun] relied on servants for physical labor and rarely engaged in manual tasks. -->
+  <VFEM_NobleDiplomat69.description>[PAWN_nameDef] foi enviado a cortes estrangeiras como representante da família, costurando alianças e tratados. Ficou hábil em diplomacia e negociação, admirado pela eloquência e pelo charme. Mas dependia dos criados para o trabalho físico e quase nunca fazia tarefas manuais.</VFEM_NobleDiplomat69.description>
+  <!-- EN: noble diplomat -->
+  <VFEM_NobleDiplomat69.title>diplomata nobre</VFEM_NobleDiplomat69.title>
+  <!-- EN: diplomat -->
+  <VFEM_NobleDiplomat69.titleShort>diplomata</VFEM_NobleDiplomat69.titleShort>
+  <!-- EN: [PAWN_nameDef] was trained from a young age to serve the king directly as a member of [PAWN_possessive] personal guard. [PAWN_pronoun] became a master of both mounted and melee combat, earning the respect of peers and commanders alike. While [PAWN_pronoun] excelled on the battlefield, [PAWN_pronoun] avoided menial tasks, considering them unworthy of [PAWN_possessive] status. -->
+  <VFEM_RoyalKnight70.description>[PAWN_nameDef] foi treinado desde cedo para servir o rei diretamente como membro da guarda pessoal. Tornou-se mestre do combate montado e corpo a corpo, respeitado por colegas e comandantes. Destacava-se no campo de batalha, mas fugia de tarefas servis, que considerava indignas de sua posição.</VFEM_RoyalKnight70.description>
+  <!-- EN: royal knight -->
+  <VFEM_RoyalKnight70.title>cavaleiro real</VFEM_RoyalKnight70.title>
+  <!-- EN: royal knight -->
+  <VFEM_RoyalKnight70.titleShort>cavaleiro real</VFEM_RoyalKnight70.titleShort>
+  <!-- EN: [PAWN_nameDef] was charged with the defense of a vast and frigid northern realm, managing both its people and its armies. [PAWN_pronoun] excelled in leadership, strategy, and building alliances to keep the lands united under [PAWN_possessive] banner. The harsh conditions forged [PAWN_pronoun] into a hardened and resolute figure. -->
+  <VFEM_WardenOfTheNorth71.description>[PAWN_nameDef] foi encarregado de defender um reino setentrional vasto e gelado, comandando seu povo e seus exércitos. Destacava-se em liderança, estratégia e alianças para manter as terras unidas sob seu estandarte. As condições duras forjaram uma figura endurecida e resoluta.</VFEM_WardenOfTheNorth71.description>
+  <!-- EN: warden of the north -->
+  <VFEM_WardenOfTheNorth71.title>guardião do norte</VFEM_WardenOfTheNorth71.title>
+  <!-- EN: warden -->
+  <VFEM_WardenOfTheNorth71.titleShort>guardião</VFEM_WardenOfTheNorth71.titleShort>
+  <!-- EN: [PAWN_nameDef] served as the spymaster for a great lord, gathering intelligence through a network of informants and spies. [PAWN_pronoun] became an expert in intrigue, manipulation, and uncovering secrets, often wielding information as a weapon. While skilled in subterfuge, [PAWN_pronoun] avoided physical confrontations, preferring to work behind the scenes. -->
+  <VFEM_MasterOfWhispers72.description>[PAWN_nameDef] era o mestre espião de um grande senhor, reunindo informações por uma rede de informantes e espiões. Tornou-se especialista em intriga, manipulação e descoberta de segredos, muitas vezes usando informação como arma. Hábil em subterfúgios, evitava confrontos físicos e preferia agir nos bastidores.</VFEM_MasterOfWhispers72.description>
+  <!-- EN: master of whispers -->
+  <VFEM_MasterOfWhispers72.title>mestre dos sussurros</VFEM_MasterOfWhispers72.title>
+  <!-- EN: spymaster -->
+  <VFEM_MasterOfWhispers72.titleShort>mestre espião</VFEM_MasterOfWhispers72.titleShort>
+  <!-- EN: [PAWN_nameDef] led a band of sworn warriors tasked with guarding the borderlands from threats beyond. [PAWN_pronoun] was skilled in tactics, inspiring loyalty in [PAWN_possessive] men while maintaining discipline in harsh conditions. Though [PAWN_pronoun] excelled in combat and leadership, [PAWN_pronoun] remained isolated from the intrigues of court life. -->
+  <VFEM_CommanderOfTheWatch73.description>[PAWN_nameDef] comandava um bando de guerreiros juramentados encarregados de guardar as fronteiras contra as ameaças do outro lado. Era hábil em tática, inspirando lealdade nos seus homens e mantendo a disciplina em condições duras. Destacava-se no combate e na liderança, mas vivia longe das intrigas da corte.</VFEM_CommanderOfTheWatch73.description>
+  <!-- EN: commander of the watch -->
+  <VFEM_CommanderOfTheWatch73.title>comandante da patrulha</VFEM_CommanderOfTheWatch73.title>
+  <!-- EN: commander -->
+  <VFEM_CommanderOfTheWatch73.titleShort>comandante</VFEM_CommanderOfTheWatch73.titleShort>
+  <!-- EN: [PAWN_nameDef] thrived in the cutthroat world of the royal court, manipulating allies and enemies alike to advance [PAWN_possessive] ambitions. [PAWN_pronoun] became skilled in deception, politics, and reading people’s motives. While [PAWN_pronoun] rarely took to the battlefield, [PAWN_pronoun] wielded words as effectively as others wielded swords. -->
+  <VFEM_CourtSchemer74.description>[PAWN_nameDef] prosperava no mundo implacável da corte real, manipulando aliados e inimigos para avançar nas próprias ambições. Ficou hábil em enganação, política e em ler as intenções das pessoas. Raramente ia ao campo de batalha, mas usava as palavras com a mesma eficácia que outros usavam espadas.</VFEM_CourtSchemer74.description>
+  <!-- EN: court schemer -->
+  <VFEM_CourtSchemer74.title>intrigante da corte</VFEM_CourtSchemer74.title>
+  <!-- EN: schemer -->
+  <VFEM_CourtSchemer74.titleShort>intrigante</VFEM_CourtSchemer74.titleShort>
+  <!-- EN: [PAWN_nameDef] ruled over a warm and fertile region, maintaining order and wealth through agriculture and trade. [PAWN_pronoun] developed strong diplomatic skills to navigate the alliances and rivalries of neighboring houses. Though adept at politics, [PAWN_pronoun] relied on others for matters of warfare and manual labor. -->
+  <VFEM_SouthernLord75.description>[PAWN_nameDef] governava uma região quente e fértil, mantendo a ordem e a riqueza pela agricultura e pelo comércio. Desenvolveu boas habilidades diplomáticas para lidar com as alianças e rivalidades das casas vizinhas. Hábil na política, dependia dos outros para a guerra e o trabalho braçal.</VFEM_SouthernLord75.description>
+  <!-- EN: southern lord -->
+  <VFEM_SouthernLord75.title>senhor do sul</VFEM_SouthernLord75.title>
+  <!-- EN: lord -->
+  <VFEM_SouthernLord75.titleShort>senhor</VFEM_SouthernLord75.titleShort>
+  <!-- EN: [PAWN_nameDef] trained and cared for hunting birds, guiding them to track prey for [PAWN_possessive] lord. [PAWN_pronoun] developed a deep understanding of animal behavior and earned respect for [PAWN_possessive] skill in falconry. While skilled with animals, [PAWN_pronoun] had little experience with tasks unrelated to [PAWN_possessive] craft. -->
+  <VFEM_Falconer76.description>[PAWN_nameDef] treinava e cuidava de aves de caça, guiando-as atrás das presas para o seu senhor. Desenvolveu um bom entendimento do comportamento animal e ganhou respeito pela habilidade na falcoaria. Hábil com animais, tinha pouca experiência com tarefas fora do ofício.</VFEM_Falconer76.description>
+  <!-- EN: falconer -->
+  <VFEM_Falconer76.title>falcoeiro</VFEM_Falconer76.title>
+  <!-- EN: falconer -->
+  <VFEM_Falconer76.titleShort>falcoeiro</VFEM_Falconer76.titleShort>
+  <!-- EN: [PAWN_nameDef] cared for the lord’s hunting dogs, training them for the chase and keeping them healthy. [PAWN_pronoun] became skilled at managing animals and handling their temperaments, earning trust as an expert handler. [PAWN_pronoun] often spent more time with dogs than people, leaving [PAWN_pronoun] socially awkward. -->
+  <VFEM_KennelMaster77.description>[PAWN_nameDef] cuidava dos cães de caça do senhor, treinando-os para a caçada e mantendo-os saudáveis. Ficou hábil em lidar com os animais e seus temperamentos, ganhando confiança como tratador experiente. Passava mais tempo com cães do que com gente, o que deixou [PAWN_objective] socialmente desajeitado.</VFEM_KennelMaster77.description>
+  <!-- EN: kennel master -->
+  <VFEM_KennelMaster77.title>mestre do canil</VFEM_KennelMaster77.title>
+  <!-- EN: kennel master -->
+  <VFEM_KennelMaster77.titleShort>mestre do canil</VFEM_KennelMaster77.titleShort>
+  <!-- EN: [PAWN_nameDef] was known for [PAWN_possessive] ability to tame and train even the wildest of animals. [PAWN_pronoun] was often called upon to handle dangerous beasts, a skill that earned both admiration and fear. Years spent with creatures left [PAWN_pronoun] more at ease with animals than people. -->
+  <VFEM_BeastTamer78.description>[PAWN_nameDef] era conhecido por domar e treinar até os animais mais selvagens. Muitas vezes era chamado para lidar com feras perigosas, habilidade que lhe rendia admiração e medo. Anos entre as criaturas deixaram [PAWN_objective] mais à vontade com bichos do que com pessoas.</VFEM_BeastTamer78.description>
+  <!-- EN: beast tamer -->
+  <VFEM_BeastTamer78.title>domador de feras</VFEM_BeastTamer78.title>
+  <!-- EN: beast tamer -->
+  <VFEM_BeastTamer78.titleShort>domador</VFEM_BeastTamer78.titleShort>
+  <!-- EN: [PAWN_nameDef] spent [PAWN_possessive] days guiding flocks of sheep across pastures, protecting them from predators and ensuring their well-being. [PAWN_pronoun] learned to live off the land and gained a natural affinity for animals. Though adept at caring for livestock, [PAWN_pronoun] lacked interest in pursuits beyond [PAWN_possessive] work. -->
+  <VFEM_Shepherd79.description>[PAWN_nameDef] passava os dias conduzindo rebanhos de ovelhas pelos pastos, protegendo-os dos predadores e cuidando do seu bem-estar. Aprendeu a viver da terra e ganhou uma afinidade natural com os animais. Hábil com o rebanho, não tinha interesse em nada além do trabalho.</VFEM_Shepherd79.description>
+  <!-- EN: shepherd of the flock -->
+  <VFEM_Shepherd79.title>pastor do rebanho</VFEM_Shepherd79.title>
+  <!-- EN: shepherd -->
+  <VFEM_Shepherd79.titleShort>pastor</VFEM_Shepherd79.titleShort>
+  <!-- EN: [PAWN_nameDef] trained war dogs and other beasts to fight alongside soldiers in battle. [PAWN_pronoun] specialized in teaching animals to obey commands even in the chaos of combat. Though skilled in working with animals, [PAWN_pronoun] struggled with the finer points of diplomacy and negotiation. -->
+  <VFEM_WarBeastTrainer80.description>[PAWN_nameDef] treinava cães de guerra e outras feras para lutar ao lado dos soldados. Especializou-se em ensinar os animais a obedecer ordens mesmo no caos do combate. Hábil com animais, tropeçava nos detalhes da diplomacia e da negociação.</VFEM_WarBeastTrainer80.description>
+  <!-- EN: war beast trainer -->
+  <VFEM_WarBeastTrainer80.title>treinador de feras de guerra</VFEM_WarBeastTrainer80.title>
+  <!-- EN: trainer -->
+  <VFEM_WarBeastTrainer80.titleShort>treinador</VFEM_WarBeastTrainer80.titleShort>
+  <!-- EN: [PAWN_nameDef] was once poised to inherit a noble title, but a scandal stripped [PAWN_objective] of [PAWN_possessive] birthright. Cast out from [PAWN_possessive] family, [PAWN_pronoun] became a shadow of [PAWN_possessive] former self, surviving through cunning and scraps of [PAWN_possessive] once-great wealth. Though [PAWN_pronoun] retained the manners of a noble, [PAWN_pronoun] was shunned by high society. -->
+  <VFEM_DisgracedHeir81.description>[PAWN_nameDef] estava prestes a herdar um título nobre, mas um escândalo tirou seu direito de nascença. Expulso da família, virou uma sombra do que era, sobrevivendo de astúcia e dos restos da antiga fortuna. Manteve as maneiras de nobre, mas a alta sociedade virou as costas.</VFEM_DisgracedHeir81.description>
+  <!-- EN: disgraced heir -->
+  <VFEM_DisgracedHeir81.title>herdeiro desonrado</VFEM_DisgracedHeir81.title>
+  <!-- EN: disgraced -->
+  <VFEM_DisgracedHeir81.titleShort>desonrado</VFEM_DisgracedHeir81.titleShort>
+  <!-- EN: [PAWN_nameDef] was banished from [PAWN_possessive] homeland after losing a power struggle within [PAWN_possessive] family. Forced to flee, [PAWN_pronoun] lived in obscurity, using [PAWN_possessive] charm and wit to survive in foreign lands. While [PAWN_pronoun] retained noble airs, [PAWN_pronoun] struggled to regain the privileges of [PAWN_possessive] birth. -->
+  <VFEM_ExiledNoble82.description>[PAWN_nameDef] foi banido da terra natal depois de perder uma disputa de poder dentro da família. Forçado a fugir, viveu no anonimato, usando charme e esperteza para sobreviver em terras estrangeiras. Manteve os ares de nobre, mas nunca conseguiu recuperar os privilégios do berço.</VFEM_ExiledNoble82.description>
+  <!-- EN: exiled noble -->
+  <VFEM_ExiledNoble82.title>nobre exilado</VFEM_ExiledNoble82.title>
+  <!-- EN: exiled -->
+  <VFEM_ExiledNoble82.titleShort>exilado</VFEM_ExiledNoble82.titleShort>
+  <!-- EN: [PAWN_nameDef] squandered [PAWN_possessive] family’s wealth on lavish parties and indulgent pursuits, earning the ire of [PAWN_possessive] peers. Though well-versed in etiquette and manipulation, [PAWN_pronoun] alienated allies and left [PAWN_possessive] family struggling to maintain their status. [PAWN_pronoun] remains charming but untrustworthy. -->
+  <VFEM_DebauchedAristocrat83.description>[PAWN_nameDef] torrou a fortuna da família em festas luxuosas e excessos, atraindo a ira dos pares. Versado em etiqueta e manipulação, afastou os aliados e deixou a família lutando para manter a posição. Continua encantador, mas ninguém deve confiar em [PAWN_objective].</VFEM_DebauchedAristocrat83.description>
+  <!-- EN: debauched aristocrat -->
+  <VFEM_DebauchedAristocrat83.title>aristocrata devasso</VFEM_DebauchedAristocrat83.title>
+  <!-- EN: debauched -->
+  <VFEM_DebauchedAristocrat83.titleShort>devasso</VFEM_DebauchedAristocrat83.titleShort>
+  <!-- EN: [PAWN_nameDef] was born into a family that seized power through treachery, earning the scorn of noble society. [PAWN_pronoun] grew up isolated and mistrusted, forced to rely on guile and intelligence to navigate the court. Though skilled in intrigue, [PAWN_pronoun] lacked the respect and alliances of legitimate noble houses. -->
+  <VFEM_UsurpersKin84.description>[PAWN_nameDef] nasceu numa família que tomou o poder por traição e conquistou o desprezo da sociedade nobre. Cresceu isolado e visto com desconfiança, obrigado a usar astúcia e inteligência para circular na corte. Hábil em intrigas, não tinha o respeito nem as alianças das casas nobres legítimas.</VFEM_UsurpersKin84.description>
+  <!-- EN: usurper's kin -->
+  <VFEM_UsurpersKin84.title>parente do usurpador</VFEM_UsurpersKin84.title>
+  <!-- EN: disgraced kin -->
+  <VFEM_UsurpersKin84.titleShort>parente desonrado</VFEM_UsurpersKin84.titleShort>
+  <!-- EN: [PAWN_nameDef] once swore an oath of loyalty as a knight but broke [PAWN_possessive] vows in pursuit of personal gain. Disgraced and stripped of [PAWN_possessive] title, [PAWN_pronoun] now wanders as a sell-sword, haunted by [PAWN_possessive] dishonor. Though [PAWN_pronoun] retains [PAWN_possessive] combat skills, [PAWN_pronoun] struggles to regain the respect [PAWN_pronoun] once commanded. -->
+  <VFEM_FallenKnight85.description>[PAWN_nameDef] jurou lealdade como cavaleiro, mas quebrou os votos em busca de ganho pessoal. Desonrado e sem título, agora vaga como espada de aluguel, assombrado pela desonra. Ainda sabe lutar, mas não consegue recuperar o respeito que já teve.</VFEM_FallenKnight85.description>
+  <!-- EN: fallen knight -->
+  <VFEM_FallenKnight85.title>cavaleiro caído</VFEM_FallenKnight85.title>
+  <!-- EN: fallen knight -->
+  <VFEM_FallenKnight85.titleShort>caído</VFEM_FallenKnight85.titleShort>
+  <!-- EN: [PAWN_nameDef] ruled over a countryside manor, overseeing the labor of serfs and ensuring the productivity of [PAWN_possessive] lands. [PAWN_pronoun] was skilled in managing people and resources, often mediating disputes and collecting taxes. Though respected locally, [PAWN_pronoun] had little exposure to the broader politics of noble society. -->
+  <VFEM_ManorLord86.description>[PAWN_nameDef] governava um solar no campo, supervisionando o trabalho dos servos e a produtividade das terras. Era hábil em administrar pessoas e recursos, muitas vezes mediando disputas e cobrando impostos. Respeitado na região, conhecia pouco da política mais ampla da nobreza.</VFEM_ManorLord86.description>
+  <!-- EN: manor lord -->
+  <VFEM_ManorLord86.title>senhor do solar</VFEM_ManorLord86.title>
+  <!-- EN: lord -->
+  <VFEM_ManorLord86.titleShort>senhor</VFEM_ManorLord86.titleShort>
+  <!-- EN: [PAWN_nameDef] was granted a small estate in reward for [PAWN_possessive] service in battle. [PAWN_pronoun] balanced managing the land and protecting the local peasants, maintaining [PAWN_possessive] fighting skills while overseeing daily operations. Though a capable warrior and leader, [PAWN_pronoun] lacked the refinement of courtly life. -->
+  <VFEM_LandedKnight87.description>[PAWN_nameDef] recebeu uma pequena propriedade como recompensa pelos serviços em batalha. Dividia-se entre administrar a terra e proteger os camponeses locais, mantendo a forma de combate enquanto cuidava do dia a dia. Guerreiro e líder capaz, faltava o refinamento da vida na corte.</VFEM_LandedKnight87.description>
+  <!-- EN: landed knight -->
+  <VFEM_LandedKnight87.title>cavaleiro proprietário</VFEM_LandedKnight87.title>
+  <!-- EN: knight -->
+  <VFEM_LandedKnight87.titleShort>cavaleiro</VFEM_LandedKnight87.titleShort>
+  <!-- EN: [PAWN_nameDef] was a respected figure in a rural community, resolving disputes and guiding decisions for the benefit of the village. [PAWN_pronoun] developed wisdom through years of leadership and experience, earning the trust of those under [PAWN_possessive] care. While [PAWN_pronoun] excelled in diplomacy, [PAWN_pronoun] left physical tasks to the younger villagers. -->
+  <VFEM_VillageElder88.description>[PAWN_nameDef] era uma figura respeitada numa comunidade rural, resolvendo disputas e orientando as decisões em benefício do vilarejo. Ganhou sabedoria em anos de liderança e experiência e conquistou a confiança dos que estavam sob seus cuidados. Destacava-se na diplomacia e deixava as tarefas físicas para os aldeões mais jovens.</VFEM_VillageElder88.description>
+  <!-- EN: village elder -->
+  <VFEM_VillageElder88.title>ancião do vilarejo</VFEM_VillageElder88.title>
+  <!-- EN: elder -->
+  <VFEM_VillageElder88.titleShort>ancião</VFEM_VillageElder88.titleShort>
+  <!-- EN: [PAWN_nameDef] was responsible for managing the agricultural production of a large estate, ensuring the fields were worked and the harvests collected. [PAWN_pronoun] developed a deep understanding of farming and organization, balancing the needs of the land with the demands of [PAWN_possessive] lord. Though skilled in rural management, [PAWN_pronoun] lacked military and courtly training. -->
+  <VFEM_StewardOfTheFields89.description>[PAWN_nameDef] era responsável pela produção agrícola de uma grande propriedade, garantindo que os campos fossem trabalhados e as colheitas recolhidas. Desenvolveu um bom entendimento de agricultura e organização, equilibrando as necessidades da terra com as exigências do senhor. Hábil na gestão rural, não tinha treino militar nem de corte.</VFEM_StewardOfTheFields89.description>
+  <!-- EN: steward of the fields -->
+  <VFEM_StewardOfTheFields89.title>intendente dos campos</VFEM_StewardOfTheFields89.title>
+  <!-- EN: steward -->
+  <VFEM_StewardOfTheFields89.titleShort>intendente</VFEM_StewardOfTheFields89.titleShort>
+  <!-- EN: [PAWN_nameDef] protected the countryside estates and nearby villages from bandits and wild beasts. [PAWN_pronoun] served as a bridge between the nobility and common folk, maintaining order through diplomacy and strength. Though skilled in combat and negotiation, [PAWN_pronoun] remained rooted in the simplicity of rural life. -->
+  <VFEM_PastoralGuardian90.description>[PAWN_nameDef] protegia as propriedades rurais e os vilarejos vizinhos de bandidos e feras. Servia de ponte entre a nobreza e o povo comum, mantendo a ordem com diplomacia e força. Hábil no combate e na negociação, continuava enraizado na simplicidade da vida no campo.</VFEM_PastoralGuardian90.description>
+  <!-- EN: pastoral guardian -->
+  <VFEM_PastoralGuardian90.title>guardião pastoral</VFEM_PastoralGuardian90.title>
+  <!-- EN: guardian -->
+  <VFEM_PastoralGuardian90.titleShort>guardião</VFEM_PastoralGuardian90.titleShort>
+  <!-- EN: [PAWN_nameDef] presided over a vast forested estate, managing timber, game, and the people who lived beneath the canopy. [PAWN_pronoun] was skilled at balancing resource exploitation with conservation, ensuring the lordship’s wealth for generations. While [PAWN_pronoun] understood the land and its uses, [PAWN_pronoun] rarely participated in court politics. -->
+  <VFEM_BaronOfTheWoodlands91.description>[PAWN_nameDef] governava uma vasta propriedade florestal, administrando a madeira, a caça e as pessoas que viviam sob as copas. Sabia equilibrar a exploração dos recursos com a conservação, garantindo a riqueza do senhorio por gerações. Entendia a terra e seus usos, mas raramente participava da política da corte.</VFEM_BaronOfTheWoodlands91.description>
+  <!-- EN: baron of the woodlands -->
+  <VFEM_BaronOfTheWoodlands91.title>barão das matas</VFEM_BaronOfTheWoodlands91.title>
+  <!-- EN: woodland baron -->
+  <VFEM_BaronOfTheWoodlands91.titleShort>barão das matas</VFEM_BaronOfTheWoodlands91.titleShort>
+  <!-- EN: [PAWN_nameDef] oversaw a remote fortress, serving as the noble family’s representative in the countryside. [PAWN_pronoun] maintained the keep, organized the defense of local villages, and managed disputes among the serfs. [PAWN_pronoun] was skilled in construction and leadership but lacked the sophistication of high court life. -->
+  <VFEM_RuralCastellan92.description>[PAWN_nameDef] comandava uma fortaleza remota, servindo como representante da família nobre no campo. Mantinha a torre, organizava a defesa dos vilarejos e resolvia disputas entre os servos. Era hábil em construção e liderança, mas faltava a sofisticação da alta corte.</VFEM_RuralCastellan92.description>
+  <!-- EN: rural castellan -->
+  <VFEM_RuralCastellan92.title>castelão rural</VFEM_RuralCastellan92.title>
+  <!-- EN: castellan -->
+  <VFEM_RuralCastellan92.titleShort>castelão</VFEM_RuralCastellan92.titleShort>
+  <!-- EN: [PAWN_nameDef] managed vast flocks of sheep and herds of cattle for [PAWN_possessive] noble family, ensuring the animals thrived year-round. [PAWN_pronoun] developed an unmatched understanding of animal care and breeding while overseeing the laborers who worked under [PAWN_objective]. Though well-respected in [PAWN_possessive] rural domain, [PAWN_pronoun] had little experience with urban or military life. -->
+  <VFEM_KeeperOfTheHerds93.description>[PAWN_nameDef] administrava grandes rebanhos de ovelhas e gado para a família nobre, garantindo que os animais prosperassem o ano todo. Desenvolveu um entendimento sem igual de trato e criação de animais enquanto supervisionava os trabalhadores. Muito respeitado no seu domínio rural, tinha pouca experiência com a vida urbana ou militar.</VFEM_KeeperOfTheHerds93.description>
+  <!-- EN: keeper of the herds -->
+  <VFEM_KeeperOfTheHerds93.title>guardião dos rebanhos</VFEM_KeeperOfTheHerds93.title>
+  <!-- EN: herd keeper -->
+  <VFEM_KeeperOfTheHerds93.titleShort>guardião</VFEM_KeeperOfTheHerds93.titleShort>
+  <!-- EN: [PAWN_nameDef] was responsible for patrolling and protecting the rivers flowing through [PAWN_possessive] family’s lands. [PAWN_pronoun] ensured trade and fishing were conducted lawfully, earning respect as a fair and capable overseer. Though [PAWN_pronoun] excelled in maintaining order, [PAWN_pronoun] lacked skills in diplomacy beyond [PAWN_possessive] domain. -->
+  <VFEM_RiverWarden94.description>[PAWN_nameDef] era responsável por patrulhar e proteger os rios que cortavam as terras da família. Garantia que o comércio e a pesca seguissem a lei, ganhando respeito como supervisor justo e capaz. Destacava-se em manter a ordem, mas faltava jeito para a diplomacia fora do seu domínio.</VFEM_RiverWarden94.description>
+  <!-- EN: river warden -->
+  <VFEM_RiverWarden94.title>guardião do rio</VFEM_RiverWarden94.title>
+  <!-- EN: warden -->
+  <VFEM_RiverWarden94.titleShort>guardião</VFEM_RiverWarden94.titleShort>
+  <!-- EN: [PAWN_nameDef] served as a benefactor to a local village, funding improvements to infrastructure and ensuring the well-being of [PAWN_possessive] tenants. [PAWN_pronoun] became skilled at balancing generosity with practicality, ensuring the village prospered without excessive costs. Though respected by the villagers, [PAWN_pronoun] had little experience with warfare or courtly intrigue. -->
+  <VFEM_VillagePatron95.description>[PAWN_nameDef] era benfeitor de um vilarejo, bancando melhorias na infraestrutura e cuidando do bem-estar dos arrendatários. Ficou hábil em equilibrar generosidade e pragmatismo, fazendo o vilarejo prosperar sem gastos excessivos. Respeitado pelos aldeões, tinha pouca experiência com guerra ou intrigas da corte.</VFEM_VillagePatron95.description>
+  <!-- EN: village patron -->
+  <VFEM_VillagePatron95.title>patrono do vilarejo</VFEM_VillagePatron95.title>
+  <!-- EN: patron -->
+  <VFEM_VillagePatron95.titleShort>patrono</VFEM_VillagePatron95.titleShort>
+  <!-- EN: [PAWN_nameDef] served as the spiritual leader of an influential ideology, presiding over rituals and interpreting sacred texts. [PAWN_pronoun] became a master of oratory and philosophy, guiding [PAWN_possessive] followers through times of prosperity and hardship. Though revered for [PAWN_possessive] wisdom, [PAWN_pronoun] rarely engaged in physical labor. -->
+  <VFEM_HighPriest96.description>[PAWN_nameDef] era o líder espiritual de uma ideologia influente, presidindo rituais e interpretando os textos sagrados. Tornou-se mestre da oratória e da filosofia, guiando os seguidores em tempos de prosperidade e de dificuldade. Reverenciado pela sabedoria, raramente fazia trabalho físico.</VFEM_HighPriest96.description>
+  <!-- EN: high priest -->
+  <VFEM_HighPriest96.title>sumo sacerdote</VFEM_HighPriest96.title>
+  <!-- EN: priest -->
+  <VFEM_HighPriest96.titleShort>sacerdote</VFEM_HighPriest96.titleShort>
+  <!-- EN: [PAWN_nameDef] devoted [PAWN_possessive] life to studying the tenets of [PAWN_possessive] ideology, crafting treatises and debating its principles with others. [PAWN_pronoun] became highly respected for [PAWN_possessive] intellect and insight, often advising leaders on spiritual and ethical matters. While brilliant in [PAWN_possessive] field, [PAWN_pronoun] avoided manual or practical work. -->
+  <VFEM_IdeologicalScholar97.description>[PAWN_nameDef] dedicou a vida a estudar os preceitos de sua ideologia, escrevendo tratados e debatendo seus princípios. Ganhou grande respeito pelo intelecto e pela perspicácia, muitas vezes aconselhando líderes em questões espirituais e éticas. Brilhante na sua área, fugia de trabalho manual ou prático.</VFEM_IdeologicalScholar97.description>
+  <!-- EN: ideological scholar -->
+  <VFEM_IdeologicalScholar97.title>estudioso ideológico</VFEM_IdeologicalScholar97.title>
+  <!-- EN: scholar -->
+  <VFEM_IdeologicalScholar97.titleShort>estudioso</VFEM_IdeologicalScholar97.titleShort>
+  <!-- EN: [PAWN_nameDef] was entrusted with safeguarding the sacred artifacts of [PAWN_possessive] ideology, protecting them from harm and ensuring they were used in rituals. [PAWN_pronoun] developed a meticulous attention to detail and a deep reverence for [PAWN_possessive] duties. However, [PAWN_pronoun] lacked skills outside the preservation of relics and ceremonies. -->
+  <VFEM_KeeperOfRelics98.description>[PAWN_nameDef] foi encarregado de guardar os artefatos sagrados de sua ideologia, protegendo-os e garantindo seu uso nos rituais. Desenvolveu uma atenção meticulosa aos detalhes e uma profunda reverência pelos deveres. Mas não tinha habilidades fora da preservação de relíquias e cerimônias.</VFEM_KeeperOfRelics98.description>
+  <!-- EN: keeper of relics -->
+  <VFEM_KeeperOfRelics98.title>guardião das relíquias</VFEM_KeeperOfRelics98.title>
+  <!-- EN: keeper -->
+  <VFEM_KeeperOfRelics98.titleShort>guardião</VFEM_KeeperOfRelics98.titleShort>
+  <!-- EN: [PAWN_nameDef] fought to spread [PAWN_possessive] ideology by force, leading armies in its name. [PAWN_pronoun] was a fearsome warrior and an inspiring leader, rallying others to [PAWN_possessive] cause with [PAWN_possessive] fervor. While skilled in combat and persuasion, [PAWN_pronoun] lacked the patience for intellectual pursuits. -->
+  <VFEM_IdeologicalCrusader99.description>[PAWN_nameDef] lutou para espalhar sua ideologia à força, liderando exércitos em seu nome. Era um guerreiro temível e um líder inspirador, reunindo seguidores para a causa com seu fervor. Hábil no combate e na persuasão, não tinha paciência para atividades intelectuais.</VFEM_IdeologicalCrusader99.description>
+  <!-- EN: ideological crusader -->
+  <VFEM_IdeologicalCrusader99.title>cruzado ideológico</VFEM_IdeologicalCrusader99.title>
+  <!-- EN: crusader -->
+  <VFEM_IdeologicalCrusader99.titleShort>cruzado</VFEM_IdeologicalCrusader99.titleShort>
+  <!-- EN: [PAWN_nameDef] traveled from village to village, delivering sermons and spreading the tenets of [PAWN_possessive] ideology. [PAWN_pronoun] was a charismatic speaker, capable of inspiring devotion or stirring up rebellion. Though skilled at rallying others, [PAWN_pronoun] had little experience with physical labor or practical skills. -->
+  <VFEM_IdeologicalOrator100.description>[PAWN_nameDef] viajava de vilarejo em vilarejo pregando sermões e espalhando os preceitos de sua ideologia. Era um orador carismático, capaz de inspirar devoção ou atiçar uma rebelião. Hábil em reunir seguidores, tinha pouca experiência com trabalho físico ou habilidades práticas.</VFEM_IdeologicalOrator100.description>
+  <!-- EN: ideological orator -->
+  <VFEM_IdeologicalOrator100.title>orador ideológico</VFEM_IdeologicalOrator100.title>
+  <!-- EN: orator -->
+  <VFEM_IdeologicalOrator100.titleShort>orador</VFEM_IdeologicalOrator100.titleShort>
+</LanguageData>

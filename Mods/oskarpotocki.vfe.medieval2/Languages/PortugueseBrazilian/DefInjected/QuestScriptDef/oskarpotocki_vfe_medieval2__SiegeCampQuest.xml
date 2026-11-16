@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <VFEM2_OpportunitySite_SiegeCamp.questDescriptionRules.rulesStrings>
+    <!-- EN: questDescription(asker_factionLeader==True)-&gt;[asker_nameFull], [asker_faction_leaderTitle] of [asker_faction_name], has informed us about a siege camp belonging to [siteFaction_name], set up near your location. They seem to be gathering numbers and will imminently attack your colony at [map_definite].\nIf you choose to attack preemptively, you will only need to face:\n[ListOfEnemies]\n\nIf you wait, they are bound to increase their numbers and will eventually attack you with a much larger force:\n[ListOfPotentialEnemies] -->
+    <li>questDescription(asker_factionLeader==True)-&gt;[asker_nameFull], [asker_faction_leaderTitle] de [asker_faction_name], nos avisou sobre um acampamento de cerco de [siteFaction_name] montado perto daqui. Eles parecem estar juntando gente e vão atacar em breve sua colônia em [map_definite].\nSe você atacar primeiro, só vai precisar enfrentar:\n[ListOfEnemies]\n\nSe esperar, com certeza vão aumentar o número e acabar atacando com uma força bem maior:\n[ListOfPotentialEnemies]</li>
+    <!-- EN: questDescription(askerIsNull==true)-&gt;You have found out that there is a siege camp belonging to [siteFaction_name], set up near your location. They seem to be gathering numbers and will imminently attack your colony at [map_definite].\nIf you choose to attack preemptively, you will only need to face:\n[ListOfEnemies]\n\nIf you wait, they are bound to increase their numbers and will eventually attack you with a much larger force:\n[ListOfPotentialEnemies] -->
+    <li>questDescription(askerIsNull==true)-&gt;Você descobriu que há um acampamento de cerco de [siteFaction_name] montado perto daqui. Eles parecem estar juntando gente e vão atacar em breve sua colônia em [map_definite].\nSe você atacar primeiro, só vai precisar enfrentar:\n[ListOfEnemies]\n\nSe esperar, com certeza vão aumentar o número e acabar atacando com uma força bem maior:\n[ListOfPotentialEnemies]</li>
+  </VFEM2_OpportunitySite_SiegeCamp.questDescriptionRules.rulesStrings>
+  <VFEM2_OpportunitySite_SiegeCamp.questNameRules.rulesStrings>
+    <!-- EN: questName-&gt;[siteFaction_name]'s siege camp -->
+    <li>questName-&gt;Acampamento de cerco de [siteFaction_name]</li>
+  </VFEM2_OpportunitySite_SiegeCamp.questNameRules.rulesStrings>
+  <!-- EN: Quest expired: [resolvedQuestName] -->
+  <VFEM2_OpportunitySite_SiegeCamp.root.nodes.WorldObjectTimeout.node.nodes.Letter.label.slateRef>Missão expirada: [resolvedQuestName]</VFEM2_OpportunitySite_SiegeCamp.root.nodes.WorldObjectTimeout.node.nodes.Letter.label.slateRef>
+  <!-- EN: The siege camp was not defeated in time. The quest [resolvedQuestName] has expired, and the enemy forces are now raiding your colony. -->
+  <VFEM2_OpportunitySite_SiegeCamp.root.nodes.WorldObjectTimeout.node.nodes.Letter.text.slateRef>O acampamento de cerco não foi derrotado a tempo. A missão [resolvedQuestName] expirou, e as forças inimigas estão atacando sua colônia.</VFEM2_OpportunitySite_SiegeCamp.root.nodes.WorldObjectTimeout.node.nodes.Letter.text.slateRef>
+  <!-- EN: Camp defeated -->
+  <VFEM2_OpportunitySite_SiegeCamp.root.nodes.siteAllEnemiesDefeated-1.node.nodes.Letter.label.slateRef>Acampamento derrotado</VFEM2_OpportunitySite_SiegeCamp.root.nodes.siteAllEnemiesDefeated-1.node.nodes.Letter.label.slateRef>
+  <!-- EN: You have successfully defeated the siege camp and the enemy forces! -->
+  <VFEM2_OpportunitySite_SiegeCamp.root.nodes.siteAllEnemiesDefeated-1.node.nodes.Letter.text.slateRef>Você derrotou o acampamento de cerco e as forças inimigas!</VFEM2_OpportunitySite_SiegeCamp.root.nodes.siteAllEnemiesDefeated-1.node.nodes.Letter.text.slateRef>
+</LanguageData>

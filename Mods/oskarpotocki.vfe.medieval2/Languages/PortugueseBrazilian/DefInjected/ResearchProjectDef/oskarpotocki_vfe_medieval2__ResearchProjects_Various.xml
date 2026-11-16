@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <!-- EN: beekeeping -->
+  <VFEM2_Beekeeping.label>apicultura</VFEM2_Beekeeping.label>
+  <!-- EN: Learn how to keep bees to produce honey from nearby plants. Honey can be used in creation of sweetrolls and mead. -->
+  <VFEM2_Beekeeping.description>Aprenda a criar abelhas para produzir mel com as plantas próximas. O mel pode ser usado para fazer pãezinhos doces e hidromel.</VFEM2_Beekeeping.description>
+  <VFEM2_Beekeeping.generalRules.rulesStrings>
+    <!-- EN: subject-&gt;apiculture -->
+    <li>subject-&gt;apicultura</li>
+    <!-- EN: subject_story-&gt;studied the intricate social structures of bees -->
+    <li>subject_story-&gt;estudou as complexas estruturas sociais das abelhas</li>
+    <!-- EN: subject_story-&gt;cultivated vast apiaries, supplying nobles with the finest honey -->
+    <li>subject_story-&gt;cultivou enormes apiários, abastecendo os nobres com o melhor mel</li>
+    <!-- EN: subject_story-&gt;perfected the art of mead-making, becoming a renowned brewer -->
+    <li>subject_story-&gt;aperfeiçoou a arte do hidromel e virou um mestre cervejeiro famoso</li>
+    <!-- EN: subject_gerund-&gt;tending to beehives -->
+    <li>subject_gerund-&gt;cuidar de colmeias</li>
+  </VFEM2_Beekeeping.generalRules.rulesStrings>
+  <!-- EN: wine -->
+  <VFEM2_Wine.label>vinho</VFEM2_Wine.label>
+  <!-- EN: Plant grapes which can then be used to create wine must and eventually, high quality wine. -->
+  <VFEM2_Wine.description>Plante uvas que podem ser usadas para fazer mosto e, depois, vinho de alta qualidade.</VFEM2_Wine.description>
+  <VFEM2_Wine.generalRules.rulesStrings>
+    <!-- EN: subject-&gt;viniculture -->
+    <li>subject-&gt;vinicultura</li>
+    <!-- EN: subject_story-&gt;established a flourishing vineyard on the sun-kissed slopes -->
+    <li>subject_story-&gt;fundou um vinhedo próspero nas encostas ensolaradas</li>
+    <!-- EN: subject_story-&gt;experimented with fermentation techniques, crafting exquisite vintages -->
+    <li>subject_story-&gt;experimentou técnicas de fermentação e criou safras requintadas</li>
+    <!-- EN: subject_story-&gt;became infamous for a revelry-fueled dynasty of wine merchants -->
+    <li>subject_story-&gt;ficou famoso por uma dinastia festeira de mercadores de vinho</li>
+    <!-- EN: subject_gerund-&gt;cultivating grapes and fermenting wine -->
+    <li>subject_gerund-&gt;cultivar uvas e fermentar vinho</li>
+  </VFEM2_Wine.generalRules.rulesStrings>
+  <!-- EN: alchemy -->
+  <VFEM2_Alchemy.label>alquimia</VFEM2_Alchemy.label>
+  <!-- EN: Learn to plant various alchemical ingredients and combining them into different draughts at an alchemy lab. -->
+  <VFEM2_Alchemy.description>Aprenda a plantar vários ingredientes alquímicos e a combiná-los em poções diferentes num laboratório de alquimia.</VFEM2_Alchemy.description>
+  <VFEM2_Alchemy.generalRules.rulesStrings>
+    <!-- EN: subject-&gt;alchemical studies -->
+    <li>subject-&gt;estudos alquímicos</li>
+    <!-- EN: subject_story-&gt;unlocked the mysteries of transmutation and concocted potent elixirs -->
+    <li>subject_story-&gt;desvendou os mistérios da transmutação e preparou elixires potentes</li>
+    <!-- EN: subject_story-&gt;discovered a rare herb, rumored to grant eternal youth -->
+    <li>subject_story-&gt;descobriu uma erva rara que, dizem, dá a juventude eterna</li>
+    <!-- EN: subject_story-&gt;became a feared poisoner, selling deadly brews to the highest bidder -->
+    <li>subject_story-&gt;virou um envenenador temido, vendendo poções mortais a quem pagasse mais</li>
+    <!-- EN: subject_gerund-&gt;brewing alchemical draughts -->
+    <li>subject_gerund-&gt;preparar poções alquímicas</li>
+  </VFEM2_Alchemy.generalRules.rulesStrings>
+  <!-- EN: medieval architecture -->
+  <VFEM2_MedievalArchitecture.label>arquitetura medieval</VFEM2_MedievalArchitecture.label>
+  <!-- EN: Learn to construct various medieval structures, including cloth walls. -->
+  <VFEM2_MedievalArchitecture.description>Aprenda a construir várias estruturas medievais, incluindo paredes de tecido.</VFEM2_MedievalArchitecture.description>
+  <VFEM2_MedievalArchitecture.generalRules.rulesStrings>
+    <!-- EN: subject-&gt;medieval construction -->
+    <li>subject-&gt;construção medieval</li>
+    <!-- EN: subject_story-&gt;oversaw the construction of towering castles and bustling townships -->
+    <li>subject_story-&gt;supervisionou a construção de castelos imponentes e vilas movimentadas</li>
+    <!-- EN: subject_story-&gt;engineered grand cathedrals, marvels of medieval craftsmanship -->
+    <li>subject_story-&gt;projetou grandes catedrais, maravilhas do artesanato medieval</li>
+    <!-- EN: subject_story-&gt;developed secret passages and fortifications for clandestine schemes -->
+    <li>subject_story-&gt;criou passagens secretas e fortificações para planos clandestinos</li>
+    <!-- EN: subject_gerund-&gt;designing medieval structures -->
+    <li>subject_gerund-&gt;projetar estruturas medievais</li>
+  </VFEM2_MedievalArchitecture.generalRules.rulesStrings>
+  <!-- EN: complex workshops -->
+  <VFEM2_ComplexWorkshops.label>oficinas complexas</VFEM2_ComplexWorkshops.label>
+  <!-- EN: Learn to build various tools and devices to enhance the productivity of the workbenches. -->
+  <VFEM2_ComplexWorkshops.description>Aprenda a construir várias ferramentas e dispositivos que aumentam a produtividade das bancadas.</VFEM2_ComplexWorkshops.description>
+  <VFEM2_ComplexWorkshops.generalRules.rulesStrings>
+    <!-- EN: subject-&gt;advanced craftsmanship -->
+    <li>subject-&gt;artesanato avançado</li>
+    <!-- EN: subject_story-&gt;refined blacksmithing techniques, crafting tools of unmatched quality -->
+    <li>subject_story-&gt;refinou as técnicas de ferraria, fazendo ferramentas de qualidade sem igual</li>
+    <!-- EN: subject_story-&gt;introduced mechanical innovations that revolutionized production -->
+    <li>subject_story-&gt;introduziu inovações mecânicas que revolucionaram a produção</li>
+    <!-- EN: subject_story-&gt;formed a powerful guild, controlling the flow of masterwork goods -->
+    <li>subject_story-&gt;formou uma guilda poderosa que controlava o fluxo de obras-primas</li>
+    <!-- EN: subject_gerund-&gt;improving workshop efficiency -->
+    <li>subject_gerund-&gt;melhorar a eficiência das oficinas</li>
+  </VFEM2_ComplexWorkshops.generalRules.rulesStrings>
+  <!-- EN: matchlocks -->
+  <VFEM2_Matchlocks.label>mecha de fogo</VFEM2_Matchlocks.label>
+  <!-- EN: Craft ancient, chempowder operated ranged weapons that utilise the matchlock mechanics, such as arquebuses and hand cannons. -->
+  <VFEM2_Matchlocks.description>Fabrique armas de longo alcance antigas, movidas a pólvora química, que usam o mecanismo de mecha, como arcabuzes e canhões de mão.</VFEM2_Matchlocks.description>
+  <VFEM2_Matchlocks.generalRules.rulesStrings>
+    <!-- EN: subject-&gt;early firearms -->
+    <li>subject-&gt;armas de fogo primitivas</li>
+    <!-- EN: subject_story-&gt;perfected the art of matchlock guns, bringing an age of gunpowder warfare -->
+    <li>subject_story-&gt;aperfeiçoou a arte das armas de mecha, trazendo a era da guerra de pólvora</li>
+    <!-- EN: subject_story-&gt;supplied mercenaries with devastating ranged weaponry -->
+    <li>subject_story-&gt;abasteceu mercenários com armas de longo alcance devastadoras</li>
+    <!-- EN: subject_story-&gt;unleashed fire and thunder on the battlefield, changing warfare forever -->
+    <li>subject_story-&gt;soltou fogo e trovão no campo de batalha, mudando a guerra para sempre</li>
+    <!-- EN: subject_gerund-&gt;crafting matchlock firearms -->
+    <li>subject_gerund-&gt;fabricar armas de mecha</li>
+  </VFEM2_Matchlocks.generalRules.rulesStrings>
+  <!-- EN: heraldry -->
+  <VFEM2_Heraldry.label>heráldica</VFEM2_Heraldry.label>
+  <!-- EN: Adorn the colors of your faction and construct decorative banners and heraldic rugs. -->
+  <VFEM2_Heraldry.description>Ostente as cores da sua facção e construa estandartes decorativos e tapetes heráldicos.</VFEM2_Heraldry.description>
+  <VFEM2_Heraldry.generalRules.rulesStrings>
+    <!-- EN: subject-&gt;heraldic traditions -->
+    <li>subject-&gt;tradições heráldicas</li>
+    <!-- EN: subject_story-&gt;designed banners that struck fear or awe into the hearts of foes -->
+    <li>subject_story-&gt;desenhou estandartes que enchiam de medo ou espanto o coração dos inimigos</li>
+    <!-- EN: subject_story-&gt;crafted family crests, immortalizing legacies in fabric and stone -->
+    <li>subject_story-&gt;criou brasões de família, eternizando legados em tecido e pedra</li>
+    <!-- EN: subject_story-&gt;led the creation of a grand hall adorned with noble insignia -->
+    <li>subject_story-&gt;liderou a criação de um grande salão adornado com insígnias nobres</li>
+    <!-- EN: subject_gerund-&gt;designing heraldic symbols -->
+    <li>subject_gerund-&gt;desenhar símbolos heráldicos</li>
+  </VFEM2_Heraldry.generalRules.rulesStrings>
+</LanguageData>

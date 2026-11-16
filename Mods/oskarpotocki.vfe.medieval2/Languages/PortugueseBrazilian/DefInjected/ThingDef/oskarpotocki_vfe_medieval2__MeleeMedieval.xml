@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <!-- EN: heavy mace -->
+  <VFEM2_MeleeWeapon_HeavyMace.label>maça pesada</VFEM2_MeleeWeapon_HeavyMace.label>
+  <!-- EN: A heavy mace consisting of a shaft and a heavy ball adorned with spikes. Very effective at piercing plate armor, this weapon is often used by more vicious knights and mercenaries. -->
+  <VFEM2_MeleeWeapon_HeavyMace.description>Uma maça pesada com cabo e uma bola pesada cravejada de pontas. Muito eficaz para perfurar armaduras de placas, é a arma preferida dos cavaleiros e mercenários mais cruéis.</VFEM2_MeleeWeapon_HeavyMace.description>
+  <!-- EN: handle -->
+  <VFEM2_MeleeWeapon_HeavyMace.tools.handle.label>cabo</VFEM2_MeleeWeapon_HeavyMace.tools.handle.label>
+  <!-- EN: head -->
+  <VFEM2_MeleeWeapon_HeavyMace.tools.head.label>cabeça</VFEM2_MeleeWeapon_HeavyMace.tools.head.label>
+  <!-- EN: dane axe -->
+  <VFEM2_MeleeWeapon_DaneAxe.label>machado dinamarquês</VFEM2_MeleeWeapon_DaneAxe.label>
+  <!-- EN: A mighty weapon on the battlefield in the right kind of hands. Made to cut through flesh and bones alike. The axe edge extends into what's called horns, ideal for cutting through light armor and flesh alike.\n\nThis weapon has a chance to deal a critical strike, stunning the opponent. -->
+  <VFEM2_MeleeWeapon_DaneAxe.description>Uma arma poderosa no campo de batalha, nas mãos certas. Feita para cortar carne e osso. O gume do machado se prolonga nos chamados chifres, ideais para atravessar armaduras leves e carne.\n\nEsta arma pode dar um golpe crítico que atordoa o adversário.</VFEM2_MeleeWeapon_DaneAxe.description>
+  <!-- EN: shaft -->
+  <VFEM2_MeleeWeapon_DaneAxe.tools.shaft.label>haste</VFEM2_MeleeWeapon_DaneAxe.tools.shaft.label>
+  <!-- EN: head -->
+  <VFEM2_MeleeWeapon_DaneAxe.tools.head.label>cabeça</VFEM2_MeleeWeapon_DaneAxe.tools.head.label>
+  <!-- EN: edge -->
+  <VFEM2_MeleeWeapon_DaneAxe.tools.edge.label>lâmina</VFEM2_MeleeWeapon_DaneAxe.tools.edge.label>
+  <!-- EN: claymore -->
+  <VFEM2_MeleeWeapon_Claymore.label>claymore</VFEM2_MeleeWeapon_Claymore.label>
+  <!-- EN: A brutal, ancient weapon of heavy knights, the claymore can be used cleave through enemies with ease.\n\nThis weapon has a chance to deal a critical strike, stunning the opponent. -->
+  <VFEM2_MeleeWeapon_Claymore.description>Arma antiga e brutal dos cavaleiros pesados, a claymore atravessa os inimigos com facilidade.\n\nEsta arma pode dar um golpe crítico que atordoa o adversário.</VFEM2_MeleeWeapon_Claymore.description>
+  <!-- EN: handle -->
+  <VFEM2_MeleeWeapon_Claymore.tools.handle.label>cabo</VFEM2_MeleeWeapon_Claymore.tools.handle.label>
+  <!-- EN: point -->
+  <VFEM2_MeleeWeapon_Claymore.tools.point.label>ponta</VFEM2_MeleeWeapon_Claymore.tools.point.label>
+  <!-- EN: edge -->
+  <VFEM2_MeleeWeapon_Claymore.tools.edge.label>lâmina</VFEM2_MeleeWeapon_Claymore.tools.edge.label>
+  <!-- EN: halberd -->
+  <VFEM2_MeleeWeapon_Halberd.label>alabarda</VFEM2_MeleeWeapon_Halberd.label>
+  <!-- EN: A long, unwieldy polearm with a sharp edge and a sharp point. The simple, ancient design concentrates cutting power generated from strong overhead swings. The reach of the halberd allows to strike enemies much further away. -->
+  <VFEM2_MeleeWeapon_Halberd.description>Uma arma de haste longa e difícil de manejar, com lâmina e ponta afiadas. O desenho simples e antigo concentra a força de corte dos golpes fortes de cima para baixo. O alcance da alabarda permite atingir inimigos bem mais distantes.</VFEM2_MeleeWeapon_Halberd.description>
+  <!-- EN: shaft -->
+  <VFEM2_MeleeWeapon_Halberd.tools.shaft.label>haste</VFEM2_MeleeWeapon_Halberd.tools.shaft.label>
+  <!-- EN: edge -->
+  <VFEM2_MeleeWeapon_Halberd.tools.edge.label>lâmina</VFEM2_MeleeWeapon_Halberd.tools.edge.label>
+  <!-- EN: point -->
+  <VFEM2_MeleeWeapon_Halberd.tools.point.label>ponta</VFEM2_MeleeWeapon_Halberd.tools.point.label>
+  <!-- EN: heraldic standard -->
+  <VFEM2_MeleeWeapon_Standard.label>estandarte heráldico</VFEM2_MeleeWeapon_Standard.label>
+  <!-- EN: A long wooden pole adorned with a flag bearing the heraldry of its bearer. While it inspires unity and bolsters morale as a rallying point for soldiers, the standard itself is poorly suited for combat, offering little in terms of offense or defense. -->
+  <VFEM2_MeleeWeapon_Standard.description>Um longo mastro de madeira com uma bandeira que traz a heráldica de quem o carrega. Inspira união e levanta o moral como ponto de reunião dos soldados, mas o estandarte em si é ruim para o combate, servindo pouco para atacar ou defender.</VFEM2_MeleeWeapon_Standard.description>
+  <!-- EN: Can’t use Rally: No enemies on the map. -->
+  <VFEM2_MeleeWeapon_Standard.comps.CompRallyAbility.disabledReason>Não dá para reunir as tropas: não há inimigos no mapa.</VFEM2_MeleeWeapon_Standard.comps.CompRallyAbility.disabledReason>
+  <!-- EN: Already using Rally. -->
+  <VFEM2_MeleeWeapon_Standard.comps.CompRallyAbility.disabledReasonAlreadyUsing>Já está reunindo as tropas.</VFEM2_MeleeWeapon_Standard.comps.CompRallyAbility.disabledReasonAlreadyUsing>
+  <!-- EN: Create an aura that rallies everyone nearby, stopping their mental breaks and preventing them from breaking again. The effect lasts 12 hours and remains attached to the standard-bearer for the duration. -->
+  <VFEM2_MeleeWeapon_Standard.comps.CompRallyAbility.gizmoDescription>Cria uma aura que reúne todos por perto, interrompendo colapsos mentais e impedindo novos colapsos. O efeito dura 12 horas e acompanha o porta-estandarte durante todo esse tempo.</VFEM2_MeleeWeapon_Standard.comps.CompRallyAbility.gizmoDescription>
+  <!-- EN: shaft -->
+  <VFEM2_MeleeWeapon_Standard.tools.shaft.label>haste</VFEM2_MeleeWeapon_Standard.tools.shaft.label>
+  <!-- EN: point -->
+  <VFEM2_MeleeWeapon_Standard.tools.point.label>ponta</VFEM2_MeleeWeapon_Standard.tools.point.label>
+  <!-- EN: pike -->
+  <VFEM2_MeleeWeapon_Pike.label>pique</VFEM2_MeleeWeapon_Pike.label>
+  <!-- EN: A long, unwieldy polearm tipped with a sharp point for stabbing opponents. The reach of the pike allows to strike enemies much further away. -->
+  <VFEM2_MeleeWeapon_Pike.description>Uma arma de haste longa e difícil de manejar, com uma ponta afiada para estocar os adversários. O alcance do pique permite atingir inimigos bem mais distantes.</VFEM2_MeleeWeapon_Pike.description>
+  <!-- EN: shaft -->
+  <VFEM2_MeleeWeapon_Pike.tools.shaft.label>haste</VFEM2_MeleeWeapon_Pike.tools.shaft.label>
+  <!-- EN: point -->
+  <VFEM2_MeleeWeapon_Pike.tools.point.label>ponta</VFEM2_MeleeWeapon_Pike.tools.point.label>
+  <!-- EN: shortsword -->
+  <VFEM2_MeleeWeapon_Shortsword.label>espada curta</VFEM2_MeleeWeapon_Shortsword.label>
+  <!-- EN: A versatile and compact blade designed for both thrusting and slashing. Its nimble design makes it effective in close-quarters combat, where quick strikes can overwhelm slower foes. -->
+  <VFEM2_MeleeWeapon_Shortsword.description>Uma lâmina versátil e compacta, feita para estocar e cortar. O desenho ágil a torna eficaz no combate de perto, onde golpes rápidos sobrepujam adversários mais lentos.</VFEM2_MeleeWeapon_Shortsword.description>
+  <!-- EN: handle -->
+  <VFEM2_MeleeWeapon_Shortsword.tools.handle.label>cabo</VFEM2_MeleeWeapon_Shortsword.tools.handle.label>
+  <!-- EN: point -->
+  <VFEM2_MeleeWeapon_Shortsword.tools.point.label>ponta</VFEM2_MeleeWeapon_Shortsword.tools.point.label>
+  <!-- EN: edge -->
+  <VFEM2_MeleeWeapon_Shortsword.tools.edge.label>lâmina</VFEM2_MeleeWeapon_Shortsword.tools.edge.label>
+  <!-- EN: flail -->
+  <VFEM2_MeleeWeapon_Flail.label>mangual</VFEM2_MeleeWeapon_Flail.label>
+  <!-- EN: A refined mace, with a spiked head connected to the handle with a chain, engineered for efficient swinging and deadly impacts. The randomness of the chain movement means that damage may fluctuate greatly. -->
+  <VFEM2_MeleeWeapon_Flail.description>Uma maça refinada, com uma cabeça cravejada presa ao cabo por uma corrente, feita para golpes eficientes e impactos mortais. Como o movimento da corrente é imprevisível, o dano pode variar muito.</VFEM2_MeleeWeapon_Flail.description>
+  <!-- EN: handle -->
+  <VFEM2_MeleeWeapon_Flail.tools.handle.label>cabo</VFEM2_MeleeWeapon_Flail.tools.handle.label>
+  <!-- EN: head -->
+  <VFEM2_MeleeWeapon_Flail.tools.head.label>cabeça</VFEM2_MeleeWeapon_Flail.tools.head.label>
+</LanguageData>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <!-- EN: smithing anvil -->
+  <VFEM2_SmithingAnvil.label>bigorna de ferreiro</VFEM2_SmithingAnvil.label>
+  <!-- EN: A heavy steel anvil used to shape metalwork with greater precision. Increases work speed when placed near a smithy. Items of awful and poor quality crafted on the linked workbench have a chance of being upgraded by one quality level. One workbench can only use one anvil. -->
+  <VFEM2_SmithingAnvil.description>Uma bigorna de aço pesada usada para moldar o metal com mais precisão. Aumenta a velocidade de trabalho quando colocada perto de uma forja. Itens de qualidade horrível e ruim feitos na bancada ligada têm chance de subir um nível de qualidade. Cada bancada só pode usar uma bigorna.</VFEM2_SmithingAnvil.description>
+  <!-- EN: forge bellows -->
+  <VFEM2_ForgeBellows.label>fole de forja</VFEM2_ForgeBellows.label>
+  <!-- EN: A manually operated bellows that boosts airflow to the smithy. Increases work speed when placed near a smithy. Bellows reduce the fuel consumption of the linked workbench by 20%. One workbench can only use one bellows. -->
+  <VFEM2_ForgeBellows.description>Um fole manual que aumenta o fluxo de ar da forja. Aumenta a velocidade de trabalho quando colocado perto de uma forja. O fole reduz em 20% o consumo de combustível da bancada ligada. Cada bancada só pode usar um fole.</VFEM2_ForgeBellows.description>
+  <!-- EN: tailoring loom -->
+  <VFEM2_TailoringLoom.label>tear de alfaiate</VFEM2_TailoringLoom.label>
+  <!-- EN: A small loom for weaving thread. Increases work speed when placed near a tailoring bench. One workbench can only use one tailoring loom. -->
+  <VFEM2_TailoringLoom.description>Um tear pequeno para tecer fios. Aumenta a velocidade de trabalho quando colocado perto de uma mesa de alfaiate. Cada bancada só pode usar um tear.</VFEM2_TailoringLoom.description>
+  <!-- EN: mannequin stand -->
+  <VFEM2_MannequinStand.label>manequim</VFEM2_MannequinStand.label>
+  <!-- EN: A basic mannequin used to measure and shape garments for more refined results. Increases work speed when placed near a tailoring bench. Mannequin stand allows for more precise measurements, reducing the cost of crafting apparel by 10%. One workbench can only use one mannequin. -->
+  <VFEM2_MannequinStand.description>Um manequim simples usado para medir e ajustar roupas com mais refinamento. Aumenta a velocidade de trabalho quando colocado perto de uma mesa de alfaiate. O manequim permite medidas mais precisas, reduzindo em 10% o custo de fazer roupas. Cada bancada só pode usar um manequim.</VFEM2_MannequinStand.description>
+  <!-- EN: chisel rack -->
+  <VFEM2_ChiselRack.label>suporte de cinzéis</VFEM2_ChiselRack.label>
+  <!-- EN: A small rack filled with various chisels. Increases work speed when placed near a stonecutter’s table. One workbench can only use one chisel rack. -->
+  <VFEM2_ChiselRack.description>Um pequeno suporte cheio de cinzéis variados. Aumenta a velocidade de trabalho quando colocado perto de uma mesa de canteiro. Cada bancada só pode usar um suporte de cinzéis.</VFEM2_ChiselRack.description>
+  <!-- EN: stone clamp -->
+  <VFEM2_StoneClamp.label>grampo de pedra</VFEM2_StoneClamp.label>
+  <!-- EN: A simple clamp for holding large stones in place. Increases work speed when placed near a stonecutter’s table. The clamp allows higher productivity, increasing resource yield from all recipes by 10%. One workbench can only use one stone clamp. -->
+  <VFEM2_StoneClamp.description>Um grampo simples para prender pedras grandes no lugar. Aumenta a velocidade de trabalho quando colocado perto de uma mesa de canteiro. O grampo aumenta a produtividade, rendendo 10% mais recursos em todas as receitas. Cada bancada só pode usar um grampo.</VFEM2_StoneClamp.description>
+  <!-- EN: cleaver rack -->
+  <VFEM2_CleaverRack.label>suporte de cutelos</VFEM2_CleaverRack.label>
+  <!-- EN: A sturdy rack holding sharp cleavers and knives. Increases work speed when placed near a butchering table. One workbench can only use one cleaver rack. -->
+  <VFEM2_CleaverRack.description>Um suporte firme com cutelos e facas afiadas. Aumenta a velocidade de trabalho quando colocado perto de uma mesa de açougueiro. Cada bancada só pode usar um suporte de cutelos.</VFEM2_CleaverRack.description>
+  <!-- EN: carving board -->
+  <VFEM2_CarvingBoard.label>tábua de corte</VFEM2_CarvingBoard.label>
+  <!-- EN: A thick, well-worn wooden board that allows for precision cuts. Increases work speed when placed near a butchering table. The sharp blades allow the butcher to extract 10% more meat and leather from any butchered creature. One workbench can only use one carving board. -->
+  <VFEM2_CarvingBoard.description>Uma tábua de madeira grossa e gasta que permite cortes precisos. Aumenta a velocidade de trabalho quando colocada perto de uma mesa de açougueiro. As lâminas afiadas permitem ao açougueiro tirar 10% mais carne e couro de qualquer criatura abatida. Cada bancada só pode usar uma tábua de corte.</VFEM2_CarvingBoard.description>
+  <!-- EN: stone polisher -->
+  <VFEM2_StonePolisher.label>polidor de pedra</VFEM2_StonePolisher.label>
+  <!-- EN: A polishing wheel that ensures sculptures have a smooth and refined finish. Increases work speed when placed near an art bench. Stone sculptures of awful and poor quality crafted on the linked art bench have a high chance of being upgraded by one quality level  One workbench can only use one stone polisher. -->
+  <VFEM2_StonePolisher.description>Uma roda de polimento que deixa as esculturas com acabamento liso e refinado. Aumenta a velocidade de trabalho quando colocada perto de uma mesa de escultor. Esculturas de pedra de qualidade horrível e ruim feitas na mesa ligada têm grande chance de subir um nível de qualidade. Cada bancada só pode usar um polidor.</VFEM2_StonePolisher.description>
+  <!-- EN: art tool stand -->
+  <VFEM2_ArtToolStand.label>suporte de ferramentas de arte</VFEM2_ArtToolStand.label>
+  <!-- EN: A rack with chisels, hammers, and other carving tools. Increases work speed when placed near an art bench. One workbench can only use one tool stand. -->
+  <VFEM2_ArtToolStand.description>Um suporte com cinzéis, martelos e outras ferramentas de entalhe. Aumenta a velocidade de trabalho quando colocado perto de uma mesa de escultor. Cada bancada só pode usar um suporte de ferramentas.</VFEM2_ArtToolStand.description>
+  <!-- EN: notes stack -->
+  <VFEM2_NotesStack.label>pilha de anotações</VFEM2_NotesStack.label>
+  <!-- EN: A small desk stocked with numerous notes and pieces of paper. Increases work speed when placed near a research bench. One workbench can only use one notes stack. -->
+  <VFEM2_NotesStack.description>Uma mesinha cheia de anotações e pedaços de papel. Aumenta a velocidade de trabalho quando colocada perto de uma bancada de pesquisa. Cada bancada só pode usar uma pilha de anotações.</VFEM2_NotesStack.description>
+  <!-- EN: research board -->
+  <VFEM2_ResearchBoard.label>quadro de pesquisa</VFEM2_ResearchBoard.label>
+  <!-- EN: A slate or chalkboard for sketching diagrams and sharing ideas. Increases work speed when placed near a research bench. Up to two research benches can be linked to one chalkboard. -->
+  <VFEM2_ResearchBoard.description>Uma lousa ou quadro-negro para desenhar diagramas e compartilhar ideias. Aumenta a velocidade de trabalho quando colocado perto de uma bancada de pesquisa. Até duas bancadas de pesquisa podem se ligar a um quadro.</VFEM2_ResearchBoard.description>
+  <!-- EN: surgical tools -->
+  <VFEM2_SurgicalTools.label>instrumentos cirúrgicos</VFEM2_SurgicalTools.label>
+  <!-- EN: A small stand holding scalpels, clamps, and bone saws. Increases work speed when placed near a bed of any kind, including sleeping spots and hospital beds. One bed can only use one set of surgical tools. -->
+  <VFEM2_SurgicalTools.description>Um pequeno suporte com bisturis, pinças e serras de osso. Aumenta a velocidade de trabalho quando colocado perto de qualquer tipo de cama, incluindo locais de dormir e camas hospitalares. Cada cama só pode usar um conjunto de instrumentos cirúrgicos.</VFEM2_SurgicalTools.description>
+  <!-- EN: ailment's shelf -->
+  <VFEM2_AilmentsShelf.label>armário de remédios</VFEM2_AilmentsShelf.label>
+  <!-- EN: A small wooden cabinet that can be stocked with herbal remedies, tinctures, and basic medicinal tools. Items stored inside will never deteriorate and don't affect the beauty of their surroundings. -->
+  <VFEM2_AilmentsShelf.description>Um pequeno armário de madeira que pode guardar remédios de ervas, tinturas e instrumentos médicos básicos. Os itens guardados nele nunca se deterioram e não afetam a beleza do ambiente.</VFEM2_AilmentsShelf.description>
+</LanguageData>

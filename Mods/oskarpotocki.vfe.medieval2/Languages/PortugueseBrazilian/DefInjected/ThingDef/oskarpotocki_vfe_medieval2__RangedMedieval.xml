@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <!-- EN: throwing axe -->
+  <VFEM2_ThrowingAxe.label>machado de arremesso</VFEM2_ThrowingAxe.label>
+  <!-- EN: A single-handed axe made for throwing. Light enough to be thrown accurately at medium range, it's also a great melee weapon in the hands of a capable warrior. -->
+  <VFEM2_ThrowingAxe.description>Um machado de uma mão feito para ser arremessado. Leve o bastante para ser lançado com precisão a média distância, também é uma ótima arma corpo a corpo nas mãos de um guerreiro capaz.</VFEM2_ThrowingAxe.description>
+  <!-- EN: handle -->
+  <VFEM2_ThrowingAxe.tools.handle.label>cabo</VFEM2_ThrowingAxe.tools.handle.label>
+  <!-- EN: edge -->
+  <VFEM2_ThrowingAxe.tools.edge.label>lâmina</VFEM2_ThrowingAxe.tools.edge.label>
+  <!-- EN: throwing axe -->
+  <VFEM2_ThrowingAxe.verbs.Verb_ShootCEOneUse.label>machado de arremesso</VFEM2_ThrowingAxe.verbs.Verb_ShootCEOneUse.label>
+  <!-- EN: thrown axe -->
+  <VFEM2V_ThrowingAxe_Thrown.label>machado arremessado</VFEM2V_ThrowingAxe_Thrown.label>
+  <!-- EN: arquebus -->
+  <VFEM2_Gun_Arquebus.label>arcabuz</VFEM2_Gun_Arquebus.label>
+  <!-- EN: An ancient firearm with a smoothbore barrel, the arquebus delivers powerful shots at decent range. The lead balls lose velocity and damage with distance, and are extremely ineffective against armor. Due to the chempowder reaction when firing the arquebus, plumes of blindsmoke are ejected from the barrel. -->
+  <VFEM2_Gun_Arquebus.description>Uma arma de fogo antiga de cano liso, o arcabuz dá tiros potentes a uma distância razoável. As balas de chumbo perdem velocidade e dano com a distância e são muito pouco eficazes contra armadura. Por causa da reação da pólvora química no disparo, o cano solta nuvens de fumaça cegante.</VFEM2_Gun_Arquebus.description>
+  <!-- EN: stock -->
+  <VFEM2_Gun_Arquebus.tools.stock.label>coronha</VFEM2_Gun_Arquebus.tools.stock.label>
+  <!-- EN: barrel -->
+  <VFEM2_Gun_Arquebus.tools.barrel.label>cano</VFEM2_Gun_Arquebus.tools.barrel.label>
+  <!-- EN: muzzle -->
+  <VFEM2_Gun_Arquebus.tools.muzzle.label>boca do cano</VFEM2_Gun_Arquebus.tools.muzzle.label>
+  <!-- EN: arquebus -->
+  <VFEM2_Gun_Arquebus.verbs.Verb_ShootCE.label>arcabuz</VFEM2_Gun_Arquebus.verbs.Verb_ShootCE.label>
+  <!-- EN: arquebus grapeshot -->
+  <VFEM2_Bullet_Arquebus.label>metralha de arcabuz</VFEM2_Bullet_Arquebus.label>
+  <!-- EN: hand cannon -->
+  <VFEM2_Gun_HandCannon.label>canhão de mão</VFEM2_Gun_HandCannon.label>
+  <!-- EN: An ancient crude but deadly firearm, the hand cannon fires a devastating grapeshot over a short distance. The lead balls lose velocity and damage with distance, and are extremely ineffective against armor. Due to the chempowder reaction when firing the arquebus, plumes of blindsmoke are ejected from the barrel. -->
+  <VFEM2_Gun_HandCannon.description>Uma arma de fogo antiga, tosca mas mortal, o canhão de mão dispara uma metralha devastadora a curta distância. As balas de chumbo perdem velocidade e dano com a distância e são muito pouco eficazes contra armadura. Por causa da reação da pólvora química no disparo, o cano solta nuvens de fumaça cegante.</VFEM2_Gun_HandCannon.description>
+  <!-- EN: stock -->
+  <VFEM2_Gun_HandCannon.tools.stock.label>coronha</VFEM2_Gun_HandCannon.tools.stock.label>
+  <!-- EN: barrel -->
+  <VFEM2_Gun_HandCannon.tools.barrel.label>cano</VFEM2_Gun_HandCannon.tools.barrel.label>
+  <!-- EN: muzzle -->
+  <VFEM2_Gun_HandCannon.tools.muzzle.label>boca do cano</VFEM2_Gun_HandCannon.tools.muzzle.label>
+  <!-- EN: hand cannon -->
+  <VFEM2_Gun_HandCannon.verbs.Verb_ShootCE.label>canhão de mão</VFEM2_Gun_HandCannon.verbs.Verb_ShootCE.label>
+  <!-- EN: handcannon grapeshot -->
+  <VFEM2_Bullet_HandCannon.label>metralha de canhão de mão</VFEM2_Bullet_HandCannon.label>
+  <!-- EN: arbalest -->
+  <VFEM2_Arbalest.label>balestra</VFEM2_Arbalest.label>
+  <!-- EN: A powerful crossbow. Fires a heavy bolt over extreme distances, but takes a long time to cock it due to the need to use the cranequin. -->
+  <VFEM2_Arbalest.description>Uma besta poderosa. Dispara um virote pesado a distâncias extremas, mas demora muito para armar, porque é preciso usar a manivela.</VFEM2_Arbalest.description>
+  <!-- EN: arbalest -->
+  <VFEM2_Arbalest.verbs.Verb_ShootCE.label>balestra</VFEM2_Arbalest.verbs.Verb_ShootCE.label>
+  <!-- EN: arbalest bolt -->
+  <VFEM2_Bolt_Arbalest.label>virote de balestra</VFEM2_Bolt_Arbalest.label>
+  <!-- EN: warbow -->
+  <VFEM2_Warbow.label>arco de guerra</VFEM2_Warbow.label>
+  <!-- EN: A powerful, long variant of the greatbow. While it doesn’t excel at hitting nearby enemies, arrows fired from the warbow curve over walls and can be fired without requiring line of sight. -->
+  <VFEM2_Warbow.description>Uma variante longa e poderosa do arco grande. Não é bom contra inimigos próximos, mas as flechas do arco de guerra fazem curva por cima das muralhas e podem ser disparadas sem linha de visão.</VFEM2_Warbow.description>
+  <!-- EN: Direct Shot -->
+  <VFEM2_Warbow.comps.CompUnderBarrel.standardLabel>Tiro direto</VFEM2_Warbow.comps.CompUnderBarrel.standardLabel>
+  <!-- EN: Volley Shot -->
+  <VFEM2_Warbow.comps.CompUnderBarrel.underBarrelLabel>Tiro em saraivada</VFEM2_Warbow.comps.CompUnderBarrel.underBarrelLabel>
+  <!-- EN: warbow -->
+  <VFEM2_Warbow.verbs.Verb_ShootCE.label>arco de guerra</VFEM2_Warbow.verbs.Verb_ShootCE.label>
+  <!-- EN: warbow arrow -->
+  <VFEM2_Arrow_Warbow.label>flecha de arco de guerra</VFEM2_Arrow_Warbow.label>
+  <!-- EN: musket -->
+  <VFEM2_Gun_Musket.label>mosquete</VFEM2_Gun_Musket.label>
+  <!-- EN: A long-barreled, smoothbore firearm, the musket is a weapon of the line infantry. The lead ball loses velocity and damage with distance, and is extremely ineffective against armor. Due to the chempowder reaction when firing the musket, plumes of blindsmoke are ejected from the barrel. -->
+  <VFEM2_Gun_Musket.description>Uma arma de fogo de cano longo e liso, o mosquete é a arma da infantaria de linha. A bala de chumbo perde velocidade e dano com a distância e é muito pouco eficaz contra armadura. Por causa da reação da pólvora química no disparo, o cano solta nuvens de fumaça cegante.</VFEM2_Gun_Musket.description>
+  <!-- EN: stock -->
+  <VFEM2_Gun_Musket.tools.stock.label>coronha</VFEM2_Gun_Musket.tools.stock.label>
+  <!-- EN: barrel -->
+  <VFEM2_Gun_Musket.tools.barrel.label>cano</VFEM2_Gun_Musket.tools.barrel.label>
+  <!-- EN: muzzle -->
+  <VFEM2_Gun_Musket.tools.muzzle.label>boca do cano</VFEM2_Gun_Musket.tools.muzzle.label>
+  <!-- EN: musket -->
+  <VFEM2_Gun_Musket.verbs.Verb_ShootCE.label>mosquete</VFEM2_Gun_Musket.verbs.Verb_ShootCE.label>
+  <!-- EN: musket shot -->
+  <VFEM2_Bullet_Musket.label>tiro de mosquete</VFEM2_Bullet_Musket.label>
+  <!-- EN: flintlock -->
+  <VFEM2_Gun_Flintlock.label>pistola de pederneira</VFEM2_Gun_Flintlock.label>
+  <!-- EN: A simple, heavy pistol utilizing a flintlock mechanism. It fires a powerful shot at close-to-medium range but is slow to reload. The lead ball loses velocity and damage with distance, and is extremely ineffective against armor. Due to the chempowder reaction when firing the flintlock, plumes of blindsmoke are ejected from the barrel. -->
+  <VFEM2_Gun_Flintlock.description>Uma pistola simples e pesada com mecanismo de pederneira. Dá um tiro potente a distância curta e média, mas demora para recarregar. A bala de chumbo perde velocidade e dano com a distância e é muito pouco eficaz contra armadura. Por causa da reação da pólvora química no disparo, o cano solta nuvens de fumaça cegante.</VFEM2_Gun_Flintlock.description>
+  <!-- EN: grip -->
+  <VFEM2_Gun_Flintlock.tools.grip.label>cabo</VFEM2_Gun_Flintlock.tools.grip.label>
+  <!-- EN: muzzle -->
+  <VFEM2_Gun_Flintlock.tools.muzzle.label>boca do cano</VFEM2_Gun_Flintlock.tools.muzzle.label>
+  <!-- EN: flintlock -->
+  <VFEM2_Gun_Flintlock.verbs.Verb_ShootCE.label>pistola de pederneira</VFEM2_Gun_Flintlock.verbs.Verb_ShootCE.label>
+  <!-- EN: flintlock shot -->
+  <VFEM2_Bullet_Flintlock.label>tiro de pederneira</VFEM2_Bullet_Flintlock.label>
+</LanguageData>

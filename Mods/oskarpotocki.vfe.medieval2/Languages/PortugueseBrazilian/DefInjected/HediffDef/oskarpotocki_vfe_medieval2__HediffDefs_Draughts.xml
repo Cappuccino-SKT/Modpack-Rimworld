@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <!-- EN: immunization draught -->
+  <VFEM2_ImmunizationDraught.label>poção de imunização</VFEM2_ImmunizationDraught.label>
+  <!-- EN: A draught is improving this person’s immune system, making them more capable of fighting off diseases and infections at the cost of making them more sleepy. -->
+  <VFEM2_ImmunizationDraught.description>Uma poção está reforçando o sistema imunológico desta pessoa, que combate melhor doenças e infecções, mas fica mais sonolenta.</VFEM2_ImmunizationDraught.description>
+  <!-- EN: fading -->
+  <VFEM2_ImmunizationDraught.stages.fading.label>passando</VFEM2_ImmunizationDraught.stages.fading.label>
+  <!-- EN: potent -->
+  <VFEM2_ImmunizationDraught.stages.potent.label>forte</VFEM2_ImmunizationDraught.stages.potent.label>
+  <!-- EN: healing draught -->
+  <VFEM2_HealingDraught.label>poção de cura</VFEM2_HealingDraught.label>
+  <!-- EN: A draught is improving this person’s natural wound regeneration, making them able to heal from wounds significantly faster than normal. -->
+  <VFEM2_HealingDraught.description>Uma poção está reforçando a regeneração natural desta pessoa, que cura ferimentos bem mais rápido que o normal.</VFEM2_HealingDraught.description>
+  <!-- EN: fading -->
+  <VFEM2_HealingDraught.stages.fading.label>passando</VFEM2_HealingDraught.stages.fading.label>
+  <!-- EN: potent -->
+  <VFEM2_HealingDraught.stages.potent.label>forte</VFEM2_HealingDraught.stages.potent.label>
+  <!-- EN: strength draught -->
+  <VFEM2_StrengthDraught.label>poção de força</VFEM2_StrengthDraught.label>
+  <!-- EN: A draught is improving strength and reflexes of the user, improving their combat capabilities at the cost of increased social fight chance and higher mental break threshold. -->
+  <VFEM2_StrengthDraught.description>Uma poção está aumentando a força e os reflexos de quem a tomou, melhorando o combate, mas aumentando a chance de brigas e o limiar de colapso mental.</VFEM2_StrengthDraught.description>
+  <!-- EN: fading -->
+  <VFEM2_StrengthDraught.stages.fading.label>passando</VFEM2_StrengthDraught.stages.fading.label>
+  <!-- EN: potent -->
+  <VFEM2_StrengthDraught.stages.potent.label>forte</VFEM2_StrengthDraught.stages.potent.label>
+  <!-- EN: efficiency draught -->
+  <VFEM2_EfficiencyDraught.label>poção de eficiência</VFEM2_EfficiencyDraught.label>
+  <!-- EN: A draught is improving global workspeed of the user while also simultaneously slowing down their energy loss at the cost of increased chance of a heart attack. At the end of the potent duration, the user receives a major sleep fall rate increase. -->
+  <VFEM2_EfficiencyDraught.description>Uma poção está aumentando a velocidade de trabalho de quem a tomou e diminuindo o gasto de energia, mas aumenta a chance de infarto. Quando o efeito forte acaba, o sono cai muito mais rápido.</VFEM2_EfficiencyDraught.description>
+  <!-- EN: fading -->
+  <VFEM2_EfficiencyDraught.stages.fading.label>passando</VFEM2_EfficiencyDraught.stages.fading.label>
+  <!-- EN: potent -->
+  <VFEM2_EfficiencyDraught.stages.potent.label>forte</VFEM2_EfficiencyDraught.stages.potent.label>
+  <!-- EN: painkiller draught -->
+  <VFEM2_PainkillerDraught.label>poção analgésica</VFEM2_PainkillerDraught.label>
+  <!-- EN: A draught is stopping the user from feeling pain at the cost of lowering their focus and productivity greatly. -->
+  <VFEM2_PainkillerDraught.description>Uma poção está impedindo quem a tomou de sentir dor, mas reduz muito o foco e a produtividade.</VFEM2_PainkillerDraught.description>
+  <!-- EN: fading -->
+  <VFEM2_PainkillerDraught.stages.fading.label>passando</VFEM2_PainkillerDraught.stages.fading.label>
+  <!-- EN: potent -->
+  <VFEM2_PainkillerDraught.stages.potent.label>forte</VFEM2_PainkillerDraught.stages.potent.label>
+  <!-- EN: torturer draught -->
+  <VFEM2_TorturerDraught.label>poção do torturador</VFEM2_TorturerDraught.label>
+  <!-- EN: A draught is causing severe pain to the user, making them unable to even move. If they are a prisoner, they will rapidly lose their resistance, and if they are a slave, they will be fully suppressed. -->
+  <VFEM2_TorturerDraught.description>Uma poção está causando dor intensa em quem a tomou, que não consegue nem se mexer. Prisioneiros perdem a resistência rapidamente, e escravos ficam totalmente reprimidos.</VFEM2_TorturerDraught.description>
+  <!-- EN: fading -->
+  <VFEM2_TorturerDraught.stages.fading.label>passando</VFEM2_TorturerDraught.stages.fading.label>
+  <!-- EN: potent -->
+  <VFEM2_TorturerDraught.stages.potent.label>forte</VFEM2_TorturerDraught.stages.potent.label>
+  <!-- EN: focus draught -->
+  <VFEM2_FocusDraught.label>poção de foco</VFEM2_FocusDraught.label>
+  <!-- EN: A draught is increasing the capability of the user to learn, allowing them to gain more knowledge, eat faster, rest quicker and gain more psyfocus while potent. The effects are reversed when the draught is fading. -->
+  <VFEM2_FocusDraught.description>Uma poção está aumentando a capacidade de aprendizado de quem a tomou, que ganha mais conhecimento, come mais rápido, descansa mais depressa e ganha mais concentração psíquica enquanto o efeito está forte. Os efeitos se invertem quando a poção está passando.</VFEM2_FocusDraught.description>
+  <!-- EN: fading -->
+  <VFEM2_FocusDraught.stages.fading.label>passando</VFEM2_FocusDraught.stages.fading.label>
+  <!-- EN: potent -->
+  <VFEM2_FocusDraught.stages.potent.label>forte</VFEM2_FocusDraught.stages.potent.label>
+  <!-- EN: fertility draught -->
+  <VFEM2_FertilityDraught.label>poção de fertilidade</VFEM2_FertilityDraught.label>
+  <!-- EN: A draught is artificially increasing the fertility of the user. The slight boost to fertility will allow even infertile people to have a chance to become parents. -->
+  <VFEM2_FertilityDraught.description>Uma poção está aumentando artificialmente a fertilidade de quem a tomou. O pequeno reforço dá até a pessoas inférteis uma chance de ter filhos.</VFEM2_FertilityDraught.description>
+  <!-- EN: fading -->
+  <VFEM2_FertilityDraught.stages.fading.label>passando</VFEM2_FertilityDraught.stages.fading.label>
+  <!-- EN: potent -->
+  <VFEM2_FertilityDraught.stages.potent.label>forte</VFEM2_FertilityDraught.stages.potent.label>
+  <!-- EN: inspiration draught -->
+  <VFEM2_InspirationDraught.label>poção de inspiração</VFEM2_InspirationDraught.label>
+  <!-- EN: A draught is providing the user with mental clarity, allowing them to focus on gaining new knowledge in skills they are passionate about at the cost of diminished combat capabilities. -->
+  <VFEM2_InspirationDraught.description>Uma poção está dando clareza mental a quem a tomou, que se concentra em aprender as habilidades pelas quais tem paixão, mas fica pior em combate.</VFEM2_InspirationDraught.description>
+  <!-- EN: fading -->
+  <VFEM2_InspirationDraught.stages.fading.label>passando</VFEM2_InspirationDraught.stages.fading.label>
+  <!-- EN: potent -->
+  <VFEM2_InspirationDraught.stages.potent.label>forte</VFEM2_InspirationDraught.stages.potent.label>
+  <!-- EN: stoneskin draught -->
+  <VFEM2_StoneskinDraught.label>poção de pele de pedra</VFEM2_StoneskinDraught.label>
+  <!-- EN: A draught is transforming the user's skin into a built-in suit of armor. The whole epidermis thickens and hardens to resist burns, while jointed exterior keratin plates form everywhere they can - including the head and face. While it's very difficult to physically hurt someone under the effects of this draught, the plates and hard skin significantly reduces the user's physical attractiveness. -->
+  <VFEM2_StoneskinDraught.description>Uma poção está transformando a pele de quem a tomou numa armadura embutida. Toda a epiderme engrossa e endurece para resistir a queimaduras, e placas articuladas de queratina se formam onde podem, inclusive na cabeça e no rosto. Sob o efeito da poção é muito difícil ferir alguém fisicamente, mas as placas e a pele dura reduzem bastante a beleza.</VFEM2_StoneskinDraught.description>
+  <!-- EN: fading -->
+  <VFEM2_StoneskinDraught.stages.fading.label>passando</VFEM2_StoneskinDraught.stages.fading.label>
+  <!-- EN: potent -->
+  <VFEM2_StoneskinDraught.stages.potent.label>forte</VFEM2_StoneskinDraught.stages.potent.label>
+  <!-- EN: amnesia draught -->
+  <VFEM2_AmnesiaDraught.label>poção de amnésia</VFEM2_AmnesiaDraught.label>
+  <!-- EN: A draught is causing the user to quickly lose memory, resulting in both negative and positive memories lasting significantly shorter. -->
+  <VFEM2_AmnesiaDraught.description>Uma poção está fazendo quem a tomou perder a memória depressa, e as lembranças boas e ruins duram bem menos.</VFEM2_AmnesiaDraught.description>
+  <!-- EN: fading -->
+  <VFEM2_AmnesiaDraught.stages.fading.label>passando</VFEM2_AmnesiaDraught.stages.fading.label>
+  <!-- EN: potent -->
+  <VFEM2_AmnesiaDraught.stages.potent.label>forte</VFEM2_AmnesiaDraught.stages.potent.label>
+  <!-- EN: coma draught -->
+  <VFEM2_ComaDraught.label>poção do coma</VFEM2_ComaDraught.label>
+  <!-- EN: A draught is putting the user in a chemically induced coma that slows down their metabolism greatly. -->
+  <VFEM2_ComaDraught.description>Uma poção está mantendo quem a tomou num coma induzido quimicamente que desacelera muito o metabolismo.</VFEM2_ComaDraught.description>
+  <!-- EN: fading -->
+  <VFEM2_ComaDraught.stages.fading.label>passando</VFEM2_ComaDraught.stages.fading.label>
+  <!-- EN: potent -->
+  <VFEM2_ComaDraught.stages.potent.label>forte</VFEM2_ComaDraught.stages.potent.label>
+  <!-- EN: poison draught -->
+  <VFEM2_PoisonDraught.label>poção venenosa</VFEM2_PoisonDraught.label>
+  <!-- EN: A draught is shutting down the user, reducing their consciousness into a state of chemically inducing coma that causes organ decay and will inevitably lead to death. -->
+  <VFEM2_PoisonDraught.description>Uma poção está desligando o corpo de quem a tomou, reduzindo a consciência a um coma químico que degenera os órgãos e leva inevitavelmente à morte.</VFEM2_PoisonDraught.description>
+  <!-- EN: potent -->
+  <VFEM2_PoisonDraught.stages.potent.label>forte</VFEM2_PoisonDraught.stages.potent.label>
+  <!-- EN: final -->
+  <VFEM2_PoisonDraught.stages.final.label>final</VFEM2_PoisonDraught.stages.final.label>
+  <!-- EN: poison draught -->
+  <VFEM2_PoisonDraughtDumbHediff.label>poção venenosa</VFEM2_PoisonDraughtDumbHediff.label>
+  <!-- EN: A draught is shutting down the user, reducing their consciousness into a state of chemically inducing coma that causes organ decay and will inevitably lead to death. -->
+  <VFEM2_PoisonDraughtDumbHediff.description>Uma poção está desligando o corpo de quem a tomou, reduzindo a consciência a um coma químico que degenera os órgãos e leva inevitavelmente à morte.</VFEM2_PoisonDraughtDumbHediff.description>
+  <!-- EN: antitox draught -->
+  <VFEM2_AntitoxDraught.label>poção antitóxica</VFEM2_AntitoxDraught.label>
+  <!-- EN: A draught is improving the toxic resistance of the user. -->
+  <VFEM2_AntitoxDraught.description>Uma poção está aumentando a resistência a toxinas de quem a tomou.</VFEM2_AntitoxDraught.description>
+  <!-- EN: fading -->
+  <VFEM2_AntitoxDraught.stages.fading.label>passando</VFEM2_AntitoxDraught.stages.fading.label>
+  <!-- EN: potent -->
+  <VFEM2_AntitoxDraught.stages.potent.label>forte</VFEM2_AntitoxDraught.stages.potent.label>
+</LanguageData>

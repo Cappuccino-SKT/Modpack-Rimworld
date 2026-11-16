@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <!-- EN: hemogen draught -->
+  <VFEM2_HemogenDraught.label>poção de hemogênio</VFEM2_HemogenDraught.label>
+  <!-- EN: A rich, crimson liquid crafted from concentrated hemogen packs. When the user drinks it, it enhances all traits and abilities tied to their hemogenic nature, boosting physical and mental capacities. Additionally, this draught replenishes the user's hemogen supply over time, maintaining their vitality and enhancing their overall function. -->
+  <VFEM2_HemogenDraught.description>Um líquido carmesim e encorpado, feito de bolsas de hemogênio concentradas. Quem o bebe tem reforçadas todas as características e habilidades ligadas à natureza hemogênica, com aumento das capacidades físicas e mentais. A poção também repõe aos poucos o hemogênio, mantendo a vitalidade e o bom funcionamento do corpo.</VFEM2_HemogenDraught.description>
+  <!-- EN: Use {0_label} -->
+  <VFEM2_HemogenDraught.comps.CompUsable.useLabel>Usar {0_label}</VFEM2_HemogenDraught.comps.CompUsable.useLabel>
+  <!-- EN: Ingest {0} -->
+  <VFEM2_HemogenDraught.ingestible.ingestCommandString>Tomar {0}</VFEM2_HemogenDraught.ingestible.ingestCommandString>
+  <!-- EN: Ingesting {0}. -->
+  <VFEM2_HemogenDraught.ingestible.ingestReportString>Tomando {0}.</VFEM2_HemogenDraught.ingestible.ingestReportString>
+</LanguageData>
