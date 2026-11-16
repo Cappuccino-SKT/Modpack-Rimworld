@@ -1,0 +1,171 @@
+## DefInjected/ThingDef/Items_Luxury.xml
+VFEM2_Sweetroll.label	pãozinho doce
+VFEM2_Sweetroll.description	Um doce assado de massa com ovos, regado com uma cobertura grossa e açucarada. Qualquer comerciante que venda isto deveria se preocupar na hora: pãezinhos doces têm um talento especial para serem roubados.
+## DefInjected/ThingDef/Items_Musts.xml
+VFEM2_Must.label	mosto de uva
+VFEM2_Must.description	Vinho não fermentado. Precisa fermentar num barril de vinho antes de virar vinho bebível.
+## DefInjected/ThingDef/Items_Resource_AnimalProduct.xml
+VFEM2_Honey.label	mel cru
+VFEM2_Honey.description	Mel cru, sem processamento, colhido de um apiário. Muito doce e gostoso de comer, além de durar muitíssimo: perfeito para levar em caravanas, fermentar em hidromel ou usar em sobremesas.
+## DefInjected/ThingDef/Items_Resource_RawPlant.xml
+VFEM2_RawGrapes.label	uvas
+VFEM2_RawGrapes.description	Uvas cruas. Gostosas de comer mesmo cruas. As uvas também podem virar mosto, que depois é usado para fazer vinho.
+VFEM2_RafflesiaLeaves.label	pétalas de raflésia
+VFEM2_RafflesiaLeaves.description	Pétalas gigantes da flor raflésia. Têm cheiro de carne podre e muito provavelmente causam intoxicação alimentar se comidas cruas. As civilizações medievais usavam pétalas de raflésia para fazer várias poções.
+VFEM2_AstragalusFlowers.label	flores de astrágalo
+VFEM2_AstragalusFlowers.description	Pequenas flores silvestres perenes que crescem em clima alpino. As civilizações medievais usavam flores de astrágalo para fazer várias poções.
+VFEM2_CliviaPetals.label	pétalas de clívia
+VFEM2_CliviaPetals.description	Pétalas de uma planta incomum de flores altas e bonitas, chamada por alguns de "lírio-do-mato". As civilizações medievais usavam pétalas de clívia para fazer várias poções.
+VFEM2_AlocasiaLeaves.label	folhas de alocásia
+VFEM2_AlocasiaLeaves.description	Folhas enormes de uma planta que é um símbolo conhecido das florestas tropicais. As civilizações medievais usavam folhas de alocásia para fazer várias poções.
+VFEM2_RawGlowstool.label	brilhanco cru
+VFEM2_RawGlowstool.description	Fungo brilhanco cru, colhido dos brilhancos que crescem nas cavernas. As civilizações medievais usavam brilhanco cru para fazer várias poções.
+## DefInjected/ThingDef/Items_Resource_Stuff.xml
+VFEM2_Hardweave.label	tecido duro
+VFEM2_Hardweave.description	Tecido de folha de fumo, o tecido duro, às vezes chamado de lona, tem os fios cruzados por cima e por baixo dos vizinhos, formando uma superfície forte e uniforme. Não isola tão bem quanto o pano comum, mas resiste muito mais a dano.
+VFEM2_Hayweave.label	tecido de feno
+VFEM2_Hayweave.description	Feito de capim de feno trançado, o tecido de feno é um material grosso e áspero, muito usado em tempos de necessidade para fazer itens rudimentares. Isola e dura pouco, sendo um substituto fraco do pano, mas é fácil de conseguir e de produzir.
+## DefInjected/ThingDef/Items_Resource_Stuff_Leather.xml
+VFEM2_HardLeather.label	couro duro
+VFEM2_HardLeather.description	Um material endurecido feito de remendo de couro pelo processo de endurecimento. É bem mais duro e forte que o remendo de couro, mas ainda fica atrás de couros duros de verdade, como o de rinoceronte ou elefante.
+## DefInjected/ThingDef/Items_Unfinished.xml
+VFEM2_UnfinishedApparelNoStuff.label	roupa inacabada
+VFEM2_UnfinishedApparelNoStuff.description	Uma peça de roupa inacabada.
+## DefInjected/ThingDef/MeleeMedieval.xml
+VFEM2_MeleeWeapon_HeavyMace.label	maça pesada
+VFEM2_MeleeWeapon_HeavyMace.description	Uma maça pesada com cabo e uma bola pesada cravejada de pontas. Muito eficaz para perfurar armaduras de placas, é a arma preferida dos cavaleiros e mercenários mais cruéis.
+VFEM2_MeleeWeapon_HeavyMace.tools.handle.label	cabo
+VFEM2_MeleeWeapon_HeavyMace.tools.head.label	cabeça
+VFEM2_MeleeWeapon_DaneAxe.label	machado dinamarquês
+VFEM2_MeleeWeapon_DaneAxe.description	Uma arma poderosa no campo de batalha, nas mãos certas. Feita para cortar carne e osso. O gume do machado se prolonga nos chamados chifres, ideais para atravessar armaduras leves e carne.\n\nEsta arma pode dar um golpe crítico que atordoa o adversário.
+VFEM2_MeleeWeapon_DaneAxe.tools.shaft.label	haste
+VFEM2_MeleeWeapon_DaneAxe.tools.head.label	cabeça
+VFEM2_MeleeWeapon_DaneAxe.tools.edge.label	lâmina
+VFEM2_MeleeWeapon_Claymore.label	claymore
+VFEM2_MeleeWeapon_Claymore.description	Arma antiga e brutal dos cavaleiros pesados, a claymore atravessa os inimigos com facilidade.\n\nEsta arma pode dar um golpe crítico que atordoa o adversário.
+VFEM2_MeleeWeapon_Claymore.tools.handle.label	cabo
+VFEM2_MeleeWeapon_Claymore.tools.point.label	ponta
+VFEM2_MeleeWeapon_Claymore.tools.edge.label	lâmina
+VFEM2_MeleeWeapon_Halberd.label	alabarda
+VFEM2_MeleeWeapon_Halberd.description	Uma arma de haste longa e difícil de manejar, com lâmina e ponta afiadas. O desenho simples e antigo concentra a força de corte dos golpes fortes de cima para baixo. O alcance da alabarda permite atingir inimigos bem mais distantes.
+VFEM2_MeleeWeapon_Halberd.tools.shaft.label	haste
+VFEM2_MeleeWeapon_Halberd.tools.edge.label	lâmina
+VFEM2_MeleeWeapon_Halberd.tools.point.label	ponta
+VFEM2_MeleeWeapon_Standard.label	estandarte heráldico
+VFEM2_MeleeWeapon_Standard.description	Um longo mastro de madeira com uma bandeira que traz a heráldica de quem o carrega. Inspira união e levanta o moral como ponto de reunião dos soldados, mas o estandarte em si é ruim para o combate, servindo pouco para atacar ou defender.
+VFEM2_MeleeWeapon_Standard.comps.CompRallyAbility.disabledReason	Não dá para reunir as tropas: não há inimigos no mapa.
+VFEM2_MeleeWeapon_Standard.comps.CompRallyAbility.disabledReasonAlreadyUsing	Já está reunindo as tropas.
+VFEM2_MeleeWeapon_Standard.comps.CompRallyAbility.gizmoDescription	Cria uma aura que reúne todos por perto, interrompendo colapsos mentais e impedindo novos colapsos. O efeito dura 12 horas e acompanha o porta-estandarte durante todo esse tempo.
+VFEM2_MeleeWeapon_Standard.tools.shaft.label	haste
+VFEM2_MeleeWeapon_Standard.tools.point.label	ponta
+VFEM2_MeleeWeapon_Pike.label	pique
+VFEM2_MeleeWeapon_Pike.description	Uma arma de haste longa e difícil de manejar, com uma ponta afiada para estocar os adversários. O alcance do pique permite atingir inimigos bem mais distantes.
+VFEM2_MeleeWeapon_Pike.tools.shaft.label	haste
+VFEM2_MeleeWeapon_Pike.tools.point.label	ponta
+VFEM2_MeleeWeapon_Shortsword.label	espada curta
+VFEM2_MeleeWeapon_Shortsword.description	Uma lâmina versátil e compacta, feita para estocar e cortar. O desenho ágil a torna eficaz no combate de perto, onde golpes rápidos sobrepujam adversários mais lentos.
+VFEM2_MeleeWeapon_Shortsword.tools.handle.label	cabo
+VFEM2_MeleeWeapon_Shortsword.tools.point.label	ponta
+VFEM2_MeleeWeapon_Shortsword.tools.edge.label	lâmina
+VFEM2_MeleeWeapon_Flail.label	mangual
+VFEM2_MeleeWeapon_Flail.description	Uma maça refinada, com uma cabeça cravejada presa ao cabo por uma corrente, feita para golpes eficientes e impactos mortais. Como o movimento da corrente é imprevisível, o dano pode variar muito.
+VFEM2_MeleeWeapon_Flail.tools.handle.label	cabo
+VFEM2_MeleeWeapon_Flail.tools.head.label	cabeça
+## DefInjected/ThingDef/Plants_Cultivated_Farm.xml
+VFEM2_Plant_Grape.label	videira
+VFEM2_Plant_Grape.description	Uma trepadeira de tamanho médio que dá uvas na colheita: ingrediente essencial para o vinho, e gostosas também cruas. Demora muito para crescer no começo, mas pode ser colhida várias vezes ao longo da vida.
+## DefInjected/ThingDef/RangedMedieval.xml
+VFEM2_ThrowingAxe.label	machado de arremesso
+VFEM2_ThrowingAxe.description	Um machado de uma mão feito para ser arremessado. Leve o bastante para ser lançado com precisão a média distância, também é uma ótima arma corpo a corpo nas mãos de um guerreiro capaz.
+VFEM2_ThrowingAxe.tools.handle.label	cabo
+VFEM2_ThrowingAxe.tools.edge.label	lâmina
+VFEM2_ThrowingAxe.verbs.Verb_ShootCEOneUse.label	machado de arremesso
+VFEM2V_ThrowingAxe_Thrown.label	machado arremessado
+VFEM2_Gun_Arquebus.label	arcabuz
+VFEM2_Gun_Arquebus.description	Uma arma de fogo antiga de cano liso, o arcabuz dá tiros potentes a uma distância razoável. As balas de chumbo perdem velocidade e dano com a distância e são muito pouco eficazes contra armadura. Por causa da reação da pólvora química no disparo, o cano solta nuvens de fumaça cegante.
+VFEM2_Gun_Arquebus.tools.stock.label	coronha
+VFEM2_Gun_Arquebus.tools.barrel.label	cano
+VFEM2_Gun_Arquebus.tools.muzzle.label	boca do cano
+VFEM2_Gun_Arquebus.verbs.Verb_ShootCE.label	arcabuz
+VFEM2_Bullet_Arquebus.label	metralha de arcabuz
+VFEM2_Gun_HandCannon.label	canhão de mão
+VFEM2_Gun_HandCannon.description	Uma arma de fogo antiga, tosca mas mortal, o canhão de mão dispara uma metralha devastadora a curta distância. As balas de chumbo perdem velocidade e dano com a distância e são muito pouco eficazes contra armadura. Por causa da reação da pólvora química no disparo, o cano solta nuvens de fumaça cegante.
+VFEM2_Gun_HandCannon.tools.stock.label	coronha
+VFEM2_Gun_HandCannon.tools.barrel.label	cano
+VFEM2_Gun_HandCannon.tools.muzzle.label	boca do cano
+VFEM2_Gun_HandCannon.verbs.Verb_ShootCE.label	canhão de mão
+VFEM2_Bullet_HandCannon.label	metralha de canhão de mão
+VFEM2_Arbalest.label	balestra
+VFEM2_Arbalest.description	Uma besta poderosa. Dispara um virote pesado a distâncias extremas, mas demora muito para armar, porque é preciso usar a manivela.
+VFEM2_Arbalest.verbs.Verb_ShootCE.label	balestra
+VFEM2_Bolt_Arbalest.label	virote de balestra
+VFEM2_Warbow.label	arco de guerra
+VFEM2_Warbow.description	Uma variante longa e poderosa do arco grande. Não é bom contra inimigos próximos, mas as flechas do arco de guerra fazem curva por cima das muralhas e podem ser disparadas sem linha de visão.
+VFEM2_Warbow.comps.CompUnderBarrel.standardLabel	Tiro direto
+VFEM2_Warbow.comps.CompUnderBarrel.underBarrelLabel	Tiro em saraivada
+VFEM2_Warbow.verbs.Verb_ShootCE.label	arco de guerra
+VFEM2_Arrow_Warbow.label	flecha de arco de guerra
+VFEM2_Gun_Musket.label	mosquete
+VFEM2_Gun_Musket.description	Uma arma de fogo de cano longo e liso, o mosquete é a arma da infantaria de linha. A bala de chumbo perde velocidade e dano com a distância e é muito pouco eficaz contra armadura. Por causa da reação da pólvora química no disparo, o cano solta nuvens de fumaça cegante.
+VFEM2_Gun_Musket.tools.stock.label	coronha
+VFEM2_Gun_Musket.tools.barrel.label	cano
+VFEM2_Gun_Musket.tools.muzzle.label	boca do cano
+VFEM2_Gun_Musket.verbs.Verb_ShootCE.label	mosquete
+VFEM2_Bullet_Musket.label	tiro de mosquete
+VFEM2_Gun_Flintlock.label	pistola de pederneira
+VFEM2_Gun_Flintlock.description	Uma pistola simples e pesada com mecanismo de pederneira. Dá um tiro potente a distância curta e média, mas demora para recarregar. A bala de chumbo perde velocidade e dano com a distância e é muito pouco eficaz contra armadura. Por causa da reação da pólvora química no disparo, o cano solta nuvens de fumaça cegante.
+VFEM2_Gun_Flintlock.tools.grip.label	cabo
+VFEM2_Gun_Flintlock.tools.muzzle.label	boca do cano
+VFEM2_Gun_Flintlock.verbs.Verb_ShootCE.label	pistola de pederneira
+VFEM2_Bullet_Flintlock.label	tiro de pederneira
+## DefInjected/ThingDef/Shields.xml
+VFEM2_Shield_Heater.label	escudo de cavaleiro
+VFEM2_Shield_Heater.description	Um escudo de aço pesado de tamanho médio. Dá bastante proteção contra ataques corpo a corpo e à distância.
+VFEM2_Shield_Round.label	escudo redondo
+VFEM2_Shield_Round.description	Um escudo de madeira preso por uma cinta de metal. Atrás há uma alça de couro e uma empunhadura de metal para manobrá-lo com facilidade com uma mão só durante o combate.
+## DefInjected/ThingStyleDef/ThingStyleDefs_Viking.xml
+VFEM2_Viking_ChessTable.overrideLabel	tabuleiro de hnefatafl
+## DefInjected/ThoughtDef/Alcohol_Mead.xml
+VFEM2_Inebriated.stages.alcohol_warmth.label	calor alcoólico
+VFEM2_Inebriated.stages.alcohol_warmth.description	Eu me sinto um pouco mais relaxado depois da bebida. Isso é bom.
+VFEM2_Inebriated.stages.quite_inebriated.label	um tanto embriagado
+VFEM2_Inebriated.stages.quite_inebriated.description	Estou um pouco tonto! E isso é bem agradável.
+VFEM2_Inebriated.stages.drunk.label	bêbado
+VFEM2_Inebriated.stages.drunk.description	Me sinto tão desinibido e sem medo! Que momento ótimo!
+VFEM2_Inebriated.stages.hammered.label	muito bêbado
+VFEM2_Inebriated.stages.hammered.description	Uhuuu! O que está acontecendo?
+## DefInjected/ThoughtDef/Thoughts_Memory_Eating.xml
+VFEM2_DrankWine_Awful.stages.drank_awful_wine.label	bebeu vinho horrível
+VFEM2_DrankWine_Awful.stages.drank_awful_wine.description	Não acredito que eu bebi isso. O gosto azedo ainda não saiu, e meu estômago está embrulhado. Aquilo era para ser o quê, vinagre?
+VFEM2_DrankWine_Poor.stages.drank_poor_wine.label	bebeu vinho ruim
+VFEM2_DrankWine_Poor.stages.drank_poor_wine.description	Não é o melhor que já tomei. É amargo e mal dá para beber. Serve se não tiver outra coisa, mas já sinto uma dor de cabeça chegando.
+VFEM2_DrankWine_Normal.stages.drank_wine.label	bebeu vinho
+VFEM2_DrankWine_Normal.stages.drank_wine.description	Dá para o gasto. Não empolga os sentidos, mas é suave o bastante para aproveitar.
+VFEM2_DrankWine_Good.stages.drank_good_wine.label	bebeu vinho bom
+VFEM2_DrankWine_Good.stages.drank_good_wine.description	Ah, este vinho é bem agradável. Os sabores combinam bem, e já sinto um barato gostoso chegando.
+VFEM2_DrankWine_Excellent.stages.drank_excellent_wine.label	bebeu vinho excelente
+VFEM2_DrankWine_Excellent.stages.drank_excellent_wine.description	Isso sim é gosto de vinho! Cada gole é uma delícia. Sinto a mente clarear, e tudo parece um pouco mais vivo.
+VFEM2_DrankWine_Masterwork.stages.drank_masterwork_wine.label	bebeu vinho de obra-prima
+VFEM2_DrankWine_Masterwork.stages.drank_masterwork_wine.description	Absolutamente requintado. A profundidade do sabor é extraordinária, e sinto meu corpo relaxar, como se todas as preocupações fossem embora.
+VFEM2_DrankWine_Legendary.stages.drank_legendary_wine.label	bebeu vinho lendário
+VFEM2_DrankWine_Legendary.stages.drank_legendary_wine.description	Nunca provei nada parecido. É como se a própria essência da alegria tivesse sido engarrafada.
+VFEM2_TorturerDraught.stages.twisting_pain.label	dor lancinante
+VFEM2_TorturerDraught.stages.twisting_pain.description	Essa mistura maldita pôs fogo nas minhas entranhas! Dói tudo!
+## DefInjected/ThoughtDef/Thoughts_Memory_Misc.xml
+VFEM2_StingMoodDebuff.stages.Stung_by_bees.label	Picado por abelhas
+VFEM2_StingMoodDebuff.stages.Stung_by_bees.description	Levei uma ferroada, e doeu!
+## DefInjected/ThoughtDef/Thoughts_Misc_Royalty.xml
+VFEM2_ClarityDraught.stages.clarity_buzz.label	zumbido da clareza
+VFEM2_ClarityDraught.stages.clarity_buzz.description	Minha cabeça está a mil. Não consigo parar os pensamentos.
+## DefInjected/TraderKindDef/Factions_MerchantGuild.xml
+VFEM2_MerchantGuildTrader.label	guilda mercante
+## DefInjected/TraderKindDef/TraderKinds_Caravan_Medieval.xml
+VFEM2_Caravan_Medieval_Farmer.label	criador de animais
+VFEM2_Caravan_Medieval_WineMerchant.label	mercador de vinho
+VFEM2_Caravan_Medieval_ArtPatron.label	mecenas das artes
+VFEM2_Caravan_Medieval_Armourer.label	armeiro
+VFEM2_Caravan_Medieval_Weaponsmith.label	forjador de armas
+## DefInjected/TraderKindDef/TraderKinds_Caravan_Viking.xml
+VFEM2_Caravan_Looter.label	comerciante de saque
+## DefInjected/TraderKindDef/TraderKinds_Visitor_Medieval.xml
+VFEM2_Visitor_Medieval_Standard.label	comerciante

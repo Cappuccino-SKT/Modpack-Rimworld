@@ -39,3 +39,8 @@ deftext ResearchProjectDef VREA_AndroidTech
 transerrors vehicle
 transerrors psycast
 transerrors vfe
+# VFE Medieval 2
+deftext ThingDef VFEM2_Wine
+deftext ThingDef VFEM2_Arbalest
+deftext ResearchProjectDef VFEM2_Alchemy
+deftext HediffDef VFEM2_WineAlcoholHigh

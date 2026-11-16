@@ -1,0 +1,89 @@
+## DefInjected/ThingDef/Items_Draughts.xml
+VFEM2_ImmunizationDraught.label	poção de imunização
+VFEM2_ImmunizationDraught.description	Uma bebida cor de âmbar com partículas minúsculas flutuando, que reforça o sistema imunológico de quem a bebe. Ajuda a combater melhor as doenças, mas deixa a pessoa muito mais cansada depois de beber e faz o sono chegar bem mais rápido que o normal. Os efeitos são mais fortes logo depois de beber e vão passando aos poucos nos dias seguintes.
+VFEM2_ImmunizationDraught.comps.CompUsable.useLabel	Usar {0_label}
+VFEM2_ImmunizationDraught.ingestible.ingestCommandString	Tomar {0}
+VFEM2_ImmunizationDraught.ingestible.ingestReportString	Tomando {0}.
+VFEM2_HealingDraught.label	poção de cura
+VFEM2_HealingDraught.description	Um líquido vermelho vivo. Quem o bebe tem a velocidade de cura muito aumentada, acelerando o fechamento das feridas e a reparação dos tecidos. A poção reforça os mecanismos naturais de cura do corpo, deixando a recuperação de ferimentos bem mais rápida.
+VFEM2_HealingDraught.comps.CompUsable.useLabel	Usar {0_label}
+VFEM2_HealingDraught.ingestible.ingestCommandString	Tomar {0}
+VFEM2_HealingDraught.ingestible.ingestReportString	Tomando {0}.
+VFEM2_StrengthDraught.label	poção de força
+VFEM2_StrengthDraught.description	Um líquido vermelho-escuro e encorpado. Quem o bebe ganha muito mais força física, capaz de façanhas que normalmente não conseguiria. Mas a poção também aumenta o limiar de colapso mental, deixando a pessoa mais sujeita ao estresse psicológico. Além disso, a onda de força aumenta a chance de conflitos e de brigas sociais.
+VFEM2_StrengthDraught.comps.CompUsable.useLabel	Usar {0_label}
+VFEM2_StrengthDraught.ingestible.ingestCommandString	Tomar {0}
+VFEM2_StrengthDraught.ingestible.ingestReportString	Tomando {0}.
+VFEM2_EfficiencyDraught.label	poção de eficiência
+VFEM2_EfficiencyDraught.description	Um líquido cinza-ardósia que, quando bebido, aumenta a velocidade geral de trabalho e reduz o gasto de energia, permitindo trabalhar mais rápido e por mais tempo sem cansar. Mas esse salto de produtividade cobra um risco sério: aumenta a chance de infarto pelo esforço do corpo. Quando o efeito diminui, o sono passa a cair muito mais rápido, e a pessoa precisa descansar logo.
+VFEM2_EfficiencyDraught.comps.CompUsable.useLabel	Usar {0_label}
+VFEM2_EfficiencyDraught.ingestible.ingestCommandString	Tomar {0}
+VFEM2_EfficiencyDraught.ingestible.ingestReportString	Tomando {0}.
+VFEM2_PainkillerDraught.label	poção analgésica
+VFEM2_PainkillerDraught.description	Um líquido azul-claro conhecido como poção analgésica. Quem o bebe sente bem menos dor, com alívio de desconfortos e ferimentos. Mas os componentes sedativos também reduzem a produtividade e o foco, dificultando a concentração e o trabalho. Boa para períodos de recuperação, menos indicada quando é preciso esforço mental ou físico.
+VFEM2_PainkillerDraught.comps.CompUsable.useLabel	Usar {0_label}
+VFEM2_PainkillerDraught.ingestible.ingestCommandString	Tomar {0}
+VFEM2_PainkillerDraught.ingestible.ingestReportString	Tomando {0}.
+VFEM2_TorturerDraught.label	poção do torturador
+VFEM2_TorturerDraught.description	Um líquido roxo-escuro e agourento. Quem o bebe sente uma dor intensa, a ponto de não conseguir se mexer. Em prisioneiros, a agonia derruba rapidamente a vontade de resistir, quebrando qualquer barreira mental. Em escravos, a poção esmaga totalmente o espírito, deixando-os completamente submissos. É usada com cautela por causa dos efeitos extremos.
+VFEM2_TorturerDraught.comps.CompUsable.useLabel	Usar {0_label}
+VFEM2_TorturerDraught.ingestible.ingestCommandString	Tomar {0}
+VFEM2_TorturerDraught.ingestible.ingestReportString	Tomando {0}.
+VFEM2_FocusDraught.label	poção de foco
+VFEM2_FocusDraught.description	Um líquido turquesa, fresco e revigorante que, quando bebido, aumenta muito a capacidade de aprendizado, permitindo absorver e reter mais informação depressa. A poção também deixa mais eficientes a alimentação e o descanso, e aumenta o acúmulo de concentração psíquica, melhorando a clareza mental e as habilidades psíquicas. Mas quando o efeito começa a passar, tudo se inverte: aprendizado menor, refeições e descanso mais lentos e menos concentração psíquica.
+VFEM2_FocusDraught.comps.CompUsable.useLabel	Usar {0_label}
+VFEM2_FocusDraught.ingestible.ingestCommandString	Tomar {0}
+VFEM2_FocusDraught.ingestible.ingestReportString	Tomando {0}.
+VFEM2_FertilityDraught.label	poção de fertilidade
+VFEM2_FertilityDraught.description	Um líquido rosa-claro e suave. Quem o bebe tem a fertilidade aumentada artificialmente, e até pessoas inférteis ganham uma chance de conceber. Esse pequeno aumento abre a possibilidade de ter filhos para quem luta contra a infertilidade, reforçando os processos naturais de reprodução.
+VFEM2_FertilityDraught.comps.CompUsable.useLabel	Usar {0_label}
+VFEM2_FertilityDraught.ingestible.ingestCommandString	Tomar {0}
+VFEM2_FertilityDraught.ingestible.ingestReportString	Tomando {0}.
+VFEM2_InspirationDraught.label	poção de inspiração
+VFEM2_InspirationDraught.description	Um líquido dourado e radiante. Quem o bebe ganha clareza mental, com o foco voltado para aprender coisas novas nas áreas pelas quais tem paixão. Mas o preço é uma queda no combate, já que a atenção sai da força física e vai para as atividades intelectuais.
+VFEM2_InspirationDraught.comps.CompUsable.useLabel	Usar {0_label}
+VFEM2_InspirationDraught.ingestible.ingestCommandString	Tomar {0}
+VFEM2_InspirationDraught.ingestible.ingestReportString	Tomando {0}.
+VFEM2_StoneskinDraught.label	poção de pele de pedra
+VFEM2_StoneskinDraught.description	Um líquido cinza-ardósia escuro. Quem o bebe passa por uma transformação drástica da pele, que engrossa e endurece como uma armadura embutida. Toda a epiderme fica resistente a queimaduras, e placas articuladas de queratina se formam pelo corpo, incluindo a cabeça e o rosto. Esse escudo físico torna extremamente difícil ferir quem o bebeu. Mas as placas e a pele endurecida reduzem bastante a beleza, prejudicando as interações sociais.
+VFEM2_StoneskinDraught.comps.CompUsable.useLabel	Usar {0_label}
+VFEM2_StoneskinDraught.ingestible.ingestCommandString	Tomar {0}
+VFEM2_StoneskinDraught.ingestible.ingestReportString	Tomando {0}.
+VFEM2_AmnesiaDraught.label	poção de amnésia
+VFEM2_AmnesiaDraught.description	Um líquido branco, claro como cristal. Quem o bebe perde a memória rapidamente, e as lembranças boas e ruins somem bem mais depressa que o normal. Isso pode aliviar o peso de lembranças dolorosas, mas também reduz a alegria e o aprendizado das boas experiências.
+VFEM2_AmnesiaDraught.comps.CompUsable.useLabel	Usar {0_label}
+VFEM2_AmnesiaDraught.ingestible.ingestCommandString	Tomar {0}
+VFEM2_AmnesiaDraught.ingestible.ingestReportString	Tomando {0}.
+VFEM2_ComaDraught.label	poção do coma
+VFEM2_ComaDraught.description	Um líquido índigo-escuro. Quem o bebe entra num coma controlado quimicamente, com o metabolismo muito desacelerado. Esse estado permite ao corpo poupar energia e pode ajudar na cura em condições controladas.
+VFEM2_ComaDraught.comps.CompUsable.useLabel	Usar {0_label}
+VFEM2_ComaDraught.ingestible.ingestCommandString	Tomar {0}
+VFEM2_ComaDraught.ingestible.ingestReportString	Tomando {0}.
+VFEM2_PoisonDraught.label	poção venenosa
+VFEM2_PoisonDraught.description	Um líquido verde-escuro e agourento. Quando bebido, reduz drasticamente a consciência e provoca um coma químico forçado. Além de incapacitar, inicia uma degeneração rápida dos órgãos. Os efeitos são graves e irreversíveis e levam inevitavelmente à morte.
+VFEM2_PoisonDraught.comps.CompUsable.useLabel	Usar {0_label}
+VFEM2_PoisonDraught.ingestible.ingestCommandString	Tomar {0}
+VFEM2_PoisonDraught.ingestible.ingestReportString	Tomando {0}.
+VFEM2_AntitoxDraught.label	poção antitóxica
+VFEM2_AntitoxDraught.description	Um líquido verde-azulado, claro e vivo. Quem o bebe ganha resistência a toxinas, fortalecendo o corpo contra substâncias nocivas. A poção também remove o acúmulo tóxico que já existe no organismo, purificando o corpo e evitando os efeitos nocivos das toxinas.
+VFEM2_AntitoxDraught.comps.CompUsable.useLabel	Usar {0_label}
+VFEM2_AntitoxDraught.ingestible.ingestCommandString	Tomar {0}
+VFEM2_AntitoxDraught.ingestible.ingestReportString	Tomando {0}.
+## DefInjected/ThingDef/Items_Draughts_Biotech.xml
+VFEM2_HemogenDraught.label	poção de hemogênio
+VFEM2_HemogenDraught.description	Um líquido carmesim e encorpado, feito de bolsas de hemogênio concentradas. Quem o bebe tem reforçadas todas as características e habilidades ligadas à natureza hemogênica, com aumento das capacidades físicas e mentais. A poção também repõe aos poucos o hemogênio, mantendo a vitalidade e o bom funcionamento do corpo.
+VFEM2_HemogenDraught.comps.CompUsable.useLabel	Usar {0_label}
+VFEM2_HemogenDraught.ingestible.ingestCommandString	Tomar {0}
+VFEM2_HemogenDraught.ingestible.ingestReportString	Tomando {0}.
+## DefInjected/ThingDef/Items_Draughts_Insectoids.xml
+VFEM2_RoyalJellyDraught.label	poção de geleia real
+VFEM2_RoyalJellyDraught.description	Um líquido dourado e cintilante. Quem o bebe ganha imunidade muito mais rápido, reforçando as defesas naturais contra doenças e infecções. A poção também aumenta a consciência e a velocidade de movimento, deixando a mente alerta e o corpo ágil. Ao ser bebida, reduz em 5% o progresso das infecções em andamento.
+VFEM2_RoyalJellyDraught.comps.CompUsable.useLabel	Usar {0_label}
+VFEM2_RoyalJellyDraught.ingestible.ingestCommandString	Tomar {0}
+VFEM2_RoyalJellyDraught.ingestible.ingestReportString	Tomando {0}.
+## DefInjected/ThingDef/Items_Draughts_Royalty.xml
+VFEM2_ClarityDraught.label	poção de clareza
+VFEM2_ClarityDraught.description	Um líquido azul-claro com uma leve efervescência. Quem o bebe recupera um pouco da concentração psíquica e ganha sensibilidade psíquica, com pensamento mais claro e atenção redobrada. Mas a atividade mental extra aumenta muito a fome, e a pessoa precisa comer mais vezes. Além disso, o zumbido mental incessante derruba o humor com a enxurrada de pensamentos.
+VFEM2_ClarityDraught.comps.CompUsable.useLabel	Usar {0_label}
+VFEM2_ClarityDraught.ingestible.ingestCommandString	Tomar {0}
+VFEM2_ClarityDraught.ingestible.ingestReportString	Tomando {0}.

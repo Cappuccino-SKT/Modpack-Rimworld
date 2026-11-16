@@ -1,0 +1,97 @@
+## DefInjected/RulePackDef/RulePacks_Art_DescriptionsPhysical.xml
+ArtDescription_Hearth.rulePack.rulesStrings[0]	physical_description_root->A lareira tem gravado [depiction] de [image]. [desc_sentence_group]
+ArtDescription_Hearth.rulePack.rulesStrings[1]	physical_description_root->A lareira traz [depiction] de [image]. [desc_sentence_group]
+ArtDescription_Hearth.rulePack.rulesStrings[2]	physical_description_root->A lareira tem gravado [depiction] de [image]. [desc_sentence_group]
+ArtDescription_Hearth.rulePack.rulesStrings[3]	physical_description_root->Uma gravura nesta lareira [depicts] [image]. [desc_sentence_group]
+## DefInjected/RulePackDef/RulePacks_Namers_Factions.xml
+VFEM2_LeaderTitleMaker_Kingdom.rulePack.rulesStrings[0]	cultureLeaderTitle->[cultureLeaderNoun]
+VFEM2_LeaderTitleMaker_Kingdom.rulePack.rulesStrings[1]	r_leaderTitle(p=1)->[cultureLeaderNoun]
+VFEM2_LeaderTitleMaker_Kingdom.rulePack.rulesStrings[2]	cultureLeaderNoun->rei
+VFEM2_LeaderTitleMaker_Clan.rulePack.rulesStrings[0]	cultureLeaderTitle->[cultureLeaderNoun]
+VFEM2_LeaderTitleMaker_Clan.rulePack.rulesStrings[1]	r_leaderTitle(p=1)->[cultureLeaderNoun]
+VFEM2_LeaderTitleMaker_Clan.rulePack.rulesStrings[2]	cultureLeaderNoun->jarl
+VFEM2_LeaderTitleMaker_MerchantGuild.rulePack.rulesStrings[0]	cultureLeaderTitle->[cultureLeaderNoun]
+VFEM2_LeaderTitleMaker_MerchantGuild.rulePack.rulesStrings[1]	r_leaderTitle(p=1)->[cultureLeaderNoun]
+VFEM2_LeaderTitleMaker_MerchantGuild.rulePack.rulesStrings[2]	cultureLeaderNoun->mestre da guilda
+## DefInjected/ScenPartDef/Scenarios_Classic.xml
+VFEM_PlayerPawnsArriveMethod.label	forma de chegada
+## DefInjected/ScenarioDef/Scenarios_Classic.xml
+VFEM2_NewKingdom.label	Novo Reino
+VFEM2_NewKingdom.description	A opressão gera rebeldia. Por anos, seu vilarejo penou sob o peso de impostos esmagadores e da fome, enquanto os cavaleiros do senhor levavam tudo: grãos, animais, até os últimos restos de dignidade. Quando confiscaram a última reserva de comida, o desespero virou fúria.\n\nArmados só de raiva, vocês marcham sobre o castelo onde o senhor e seus cavaleiros se escondem atrás de muros de pedra. Vocês são fracos, mas o número e a determinação podem virar o jogo. Se vencerem, a riqueza e a segurança do castelo podem ser suas.\n\nMas nem todos acreditam na vitória. Alguns cochicham sobre fugir, escapar antes que o massacre comece. Além dos muros há um mundo incerto, que promete perigo, mas também a chance de uma vida nova. Vocês vão lutar para tomar o castelo ou fugir e abrir o próprio caminho?\nObservação: como você começa perto de um castelo inimigo, este é um cenário difícil.
+VFEM2_NewKingdom.scenario.description	A opressão gera rebeldia. Por anos, seu vilarejo penou sob o peso de impostos esmagadores e da fome, enquanto os cavaleiros do senhor levavam tudo: grãos, animais, até os últimos restos de dignidade. Quando confiscaram a última reserva de comida, o desespero virou fúria.\n\nArmados só de raiva, vocês marcham sobre o castelo onde o senhor e seus cavaleiros se escondem atrás de muros de pedra. Vocês são fracos, mas o número e a determinação podem virar o jogo. Se vencerem, a riqueza e a segurança do castelo podem ser suas.\n\nMas nem todos acreditam na vitória. Alguns cochicham sobre fugir, escapar antes que o massacre comece. Além dos muros há um mundo incerto, que promete perigo, mas também a chance de uma vida nova. Vocês vão lutar para tomar o castelo ou fugir e abrir o próprio caminho?\nObservação: como você começa perto de um castelo inimigo, este é um cenário difícil.
+VFEM2_NewKingdom.scenario.name	Novo Reino
+VFEM2_NewKingdom.scenario.parts.GameStartDialog.text	A opressão gera rebeldia. Por anos, seu vilarejo penou sob o peso de impostos esmagadores e da fome, enquanto os cavaleiros do senhor levavam tudo: grãos, animais, até os últimos restos de dignidade. Quando confiscaram a última reserva de comida, o desespero virou fúria.
+VFEM2_NewKingdom.scenario.summary	Um grupo de camponeses rebelados contra cavaleiros opressores. Uma experiência clássica do VFE - Medieval 2.
+## DefInjected/SitePartDef/SitePart_SiegeCamp.xml
+VFEM2_SiegeCampBase.label	acampamento de cerco
+VFEM2_SiegeCampBase.description	Um acampamento de cerco.
+VFEM2_SiegeCampBase.approachingReportString	Atacando {0}
+VFEM2_SiegeCampBase.approachOrderString	Atacar {0}
+VFEM2_SiegeCampBase.arrivedLetter	Há um acampamento de cerco nesta área.
+## DefInjected/SitePartDef/SitePart_Skirmish.xml
+VFEM_SkirmishSitePart.label	local da escaramuça
+VFEM_SkirmishSitePart.description	Um local de escaramuça.
+VFEM_SkirmishSitePart.approachingReportString	Entrando em {0}
+VFEM_SkirmishSitePart.approachOrderString	Entrar em {0}
+VFEM_SkirmishSitePart.arrivedLetter	Há um local de escaramuça nesta área.
+## DefInjected/StorytellerDef/StorytellerDefs.xml
+VFEM_MaynardMedieval.label	Maynard Medieval
+VFEM_MaynardMedieval.description	Maynard Medieval tece uma história de luta e penúria, em que cada avanço é conquistado com suor, sangue e sacrifício. A marcha do progresso desacelera porque a tradição se agarra com força, exigindo cada vez mais esforço para arrancar o conhecimento das garras do tempo. Os projetos de pesquisa levam mais tempo quanto mais deles você já tiver concluído.
+## DefInjected/StuffCategoryDef/StuffCategories.xml
+VFEM2_StoneChunks.label	pedaços de pedra
+## DefInjected/StyleCategoryDef/StyleCategoryDefs_Norse.xml
+VFEM2_Viking.label	viking
+## DefInjected/TerrainDef/LeatherTerrainTemplateDefs.xml
+VFEM2_Matting_Burned.label	esteira queimada
+VFEM2_Matting_Burned.description	Esteira de couro queimada num incêndio.
+## DefInjected/TerrainDef/LeatherTerrainTemplateDefs_Royalty.xml
+VFEM2_FineMatting_Burned.label	esteira fina queimada
+VFEM2_FineMatting_Burned.description	Esteira de couro luxuosa queimada num incêndio.
+## DefInjected/TerrainDef/Terrain_Floors.xml
+VFEM2_Chemdrench.label	palha encharcada
+VFEM2_Chemdrench.description	Esteira de palha grosseira encharcada de combustível químico. Pega fogo com muita facilidade e o fogo se espalha depressa por todas as áreas ligadas.
+## DefInjected/ThingDef/Alcohol_Mead.xml
+VFEM2_Mead.label	hidromel
+VFEM2_Mead.description	Uma bebida parecida com vinho, feita de mel e água fermentados e envelhecida num barril simples. Doce e refrescante, é conhecida por ser bebida devagar e tem fama de ser especialmente reconfortante. Beber hidromel reduz a sensibilidade psíquica.
+VFEM2_Mead.ingestible.ingestCommandString	Beber {0}
+VFEM2_Mead.ingestible.ingestReportString	Bebendo {0}.
+## DefInjected/ThingDef/Alcohol_Wine.xml
+VFEM2_Wine.label	vinho
+VFEM2_Wine.description	Uma garrafa grande de uma bebida alcoólica forte feita de uvas fermentadas. O consumo excessivo pode levar a blecautes alcoólicos e, com o tempo, ao vício. Beber vinho aumenta a sensibilidade psíquica.
+VFEM2_Wine.ingestible.ingestCommandString	Beber {0}
+VFEM2_Wine.ingestible.ingestReportString	Bebendo {0}.
+## DefInjected/ThingDef/Apparel_Headgear.xml
+VFEM2_Apparel_PlateHelmetHeavy.label	elmo de placas pesado
+VFEM2_Apparel_PlateHelmetHeavy.description	Um elmo medieval volumoso que cobre a cabeça inteira. Protege bastante, mas limita o campo de visão de quem o usa.
+VFEM2_Apparel_JesterHat.label	chapéu de bobo da corte
+VFEM2_Apparel_JesterHat.description	Um chapéu digno de um bobo da corte. Cada metade tem uma cor diferente.
+VFEM2_Apparel_DameHat.label	chapéu de dama
+VFEM2_Apparel_DameHat.description	Um belo chapéu cônico e comprido para uma dama.
+VFEM2_Apparel_KingsCrown.label	coroa do rei
+VFEM2_Apparel_KingsCrown.description	Uma bela coroa de metal. Quem a usa fica muito influente, mas ao mesmo tempo se recusa a fazer qualquer trabalho.
+VFEM2_Apparel_PlagueMask.label	máscara de peste
+VFEM2_Apparel_PlagueMask.description	Uma máscara com um longo "bico" cheio de medicina natural que mantém os infectados à distância.
+VFEM2_Apparel_HeavyLeatherHelmet.label	elmo de couro pesado
+VFEM2_Apparel_HeavyLeatherHelmet.description	Um elmo medieval resistente que cobre a cabeça inteira. Protege muito bem, mas atrapalha bastante a visão, então só é recomendado para a infantaria da linha de frente, principalmente quem luta sem escudo.
+VFEM2_Apparel_LeatherHelmet.label	elmo de couro
+VFEM2_Apparel_LeatherHelmet.description	Um elmo de couro simples feito para não atrapalhar a comunicação durante o combate. Muito usado pela infantaria de escudo da linha de frente para absorver dano.
+VFEM2_Apparel_PaddedHelmet.label	elmo acolchoado
+VFEM2_Apparel_PaddedHelmet.description	Um elmo de couro simples feito para não atrapalhar a comunicação durante o combate. Muito usado pela infantaria de escudo da linha de frente para absorver dano.
+VFEM2_Apparel_Chaperon.label	chaperon
+VFEM2_Apparel_Chaperon.description	Um capuz elegante e versátil com cauda enrolada, preferido por diplomatas e mercadores. Dá um ar de autoridade e melhora sutilmente a negociação.
+VFEM2_Apparel_Cap.label	gorro
+VFEM2_Apparel_Cap.description	Um gorro elegante com pena, usado por arqueiros habilidosos e caçadores da mata. O modelo leve mantém a visão livre e o foco afiado, facilitando tiros precisos.
+## DefInjected/ThingDef/Apparel_TorchPack.xml
+VFEM2_Apparel_TorchBelt.label	cinto de tochas
+VFEM2_Apparel_TorchBelt.description	Um cinto com várias tochas de madeira presas. Elas podem ser acesas e arremessadas para pôr fogo nas coisas. Pode ser reabastecido com madeira.
+VFEM2_Apparel_TorchBelt.comps.CompApparelReloadable.chargeNoun	tocha
+VFEM2_Apparel_TorchBelt.comps.CompApparelReloadable.cooldownGerund	em recarga
+VFEM2_Apparel_TorchBelt.verbs.throw_torch.label	arremessar tocha
+VFEM2_Proj_GrenadeTorch.label	tocha arremessada
+## DefInjected/ThingDef/Apparel_Various.xml
+VFEM2_Apparel_PlateArmorHeavy.label	armadura de placas pesada
+VFEM2_Apparel_PlateArmorHeavy.description	Placas sólidas sobrepostas que cobrem o corpo inteiro, do pescoço aos pés. As placas foram reforçadas e protegem muito mais, ao custo da mobilidade.
+VFEM2_Apparel_JesterOutfit.label	roupa de bobo da corte
+VFEM2_Apparel_JesterOutfit.description	Uma roupa colorida de bobo da corte. Deixa a pessoa mais propensa a conversar, mas é impossível aprender qualquer coisa vestido assim.
+VFEM2_Apparel_DameDress.label	vestido de dama
+VFEM2_Apparel_DameDress.description	Um belo vestido longo para uma dama. Usar uma roupa assim leva inevitavelmente a se acostumar com o luxo, e quem o usa não consegue fazer trabalho braçal.

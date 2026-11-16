@@ -1,0 +1,149 @@
+## DefInjected/PawnKindDef/PawnKinds_Clan.xml
+VFEM2_Clan_Peasant.label	camponês
+VFEM2_Thrall.label	servo do clã
+VFEM2_TorchThrower.label	lançador de tochas
+VFEM2_Bowman.label	arqueiro
+VFEM2_Skirmisher.label	escaramuçador
+VFEM2_Raider.label	saqueador
+VFEM2_Spearman.label	lanceiro
+VFEM2_SiegeRaider.label	saqueador de cerco
+VFEM2_HeavyBowman.label	arqueiro pesado
+VFEM2_Berserker.label	berserker
+VFEM2_Merchant.label	mercador
+VFEM2_Jarl.label	jarl
+## DefInjected/PawnKindDef/PawnKinds_Kingdom.xml
+VFEM2_Peasant.label	camponês
+VFEM2_Militia.label	miliciano
+VFEM2_Archer.label	arqueiro
+VFEM2_Hunter.label	caçador
+VFEM2_Trader.label	comerciante
+VFEM2_Guildmaster.label	mestre da guilda
+VFEM2_HeavyArcher.label	arqueiro pesado
+VFEM2_Crossbowman.label	besteiro
+VFEM2_Halberdier.label	alabardeiro
+VFEM2_ManAtArms.label	homem de armas
+VFEM2_Wallbreaker.label	quebra-muralhas
+VFEM2_Bannerman.label	porta-estandarte
+VFEM2_Knight.label	cavaleiro
+VFEM2_Greatsword.label	montante
+VFEM_SellSword.label	espada de aluguel
+VFEM2_Handgunner.label	arcabuzeiro
+VFEM2_Lord.label	senhor
+## DefInjected/PipeSystem.ProcessDef/ProcessDefs.xml
+VFEM2_HoneyToMead.label	Fermentar mel em hidromel
+VFEM2_HoneyToMead.description	Transforma 75 de mel em 25 de hidromel.
+VFEM2_HoneyToMead.labelOverride	Fermentar 75 de mel em 25 de hidromel
+VFEM2_PatchLeatherToHardleather.label	Ferver remendo de couro em couro duro
+VFEM2_PatchLeatherToHardleather.description	Transforma 100 de remendo de couro em 100 de couro duro.
+VFEM2_PatchLeatherToHardleather.labelOverride	Ferver 100 de remendo de couro em 100 de couro duro
+VFEM2_GrapeToWine.label	Fermentar mosto de uva em vinho
+VFEM2_GrapeToWine.description	Transforma 10 de mosto de uva em 10 de vinho.
+VFEM2_GrapeToWine.labelOverride	Fermentar 10 de mosto de uva em 10 de vinho.
+## DefInjected/QuestScriptDef/SiegeCampQuest.xml
+VFEM2_OpportunitySite_SiegeCamp.questDescriptionRules.rulesStrings[0]	questDescription(asker_factionLeader==True)->[asker_nameFull], [asker_faction_leaderTitle] de [asker_faction_name], nos avisou sobre um acampamento de cerco de [siteFaction_name] montado perto daqui. Eles parecem estar juntando gente e vão atacar em breve sua colônia em [map_definite].\nSe você atacar primeiro, só vai precisar enfrentar:\n[ListOfEnemies]\n\nSe esperar, com certeza vão aumentar o número e acabar atacando com uma força bem maior:\n[ListOfPotentialEnemies]
+VFEM2_OpportunitySite_SiegeCamp.questDescriptionRules.rulesStrings[1]	questDescription(askerIsNull==true)->Você descobriu que há um acampamento de cerco de [siteFaction_name] montado perto daqui. Eles parecem estar juntando gente e vão atacar em breve sua colônia em [map_definite].\nSe você atacar primeiro, só vai precisar enfrentar:\n[ListOfEnemies]\n\nSe esperar, com certeza vão aumentar o número e acabar atacando com uma força bem maior:\n[ListOfPotentialEnemies]
+VFEM2_OpportunitySite_SiegeCamp.questNameRules.rulesStrings[0]	questName->Acampamento de cerco de [siteFaction_name]
+VFEM2_OpportunitySite_SiegeCamp.root.nodes.WorldObjectTimeout.node.nodes.Letter.label.slateRef	Missão expirada: [resolvedQuestName]
+VFEM2_OpportunitySite_SiegeCamp.root.nodes.WorldObjectTimeout.node.nodes.Letter.text.slateRef	O acampamento de cerco não foi derrotado a tempo. A missão [resolvedQuestName] expirou, e as forças inimigas estão atacando sua colônia.
+VFEM2_OpportunitySite_SiegeCamp.root.nodes.siteAllEnemiesDefeated-1.node.nodes.Letter.label.slateRef	Acampamento derrotado
+VFEM2_OpportunitySite_SiegeCamp.root.nodes.siteAllEnemiesDefeated-1.node.nodes.Letter.text.slateRef	Você derrotou o acampamento de cerco e as forças inimigas!
+## DefInjected/QuestScriptDef/Skirmish.xml
+VFEM2_OpportunitySite_Skirmish.questDescriptionRules.rulesStrings[0]	questDescription->[asker_nameFull], [asker_faction_leaderTitle] de [asker_faction_name], pediu nossa ajuda numa escaramuça contra [siteFaction_name].\n\nUma pequena força de [askerFaction_name] está enfrentando um grupo maior de [siteFaction_pawnsPlural]. Os aliados vão atacar assim que chegarmos, mas as chances de vitória sem a nossa ajuda são pequenas.\n\nÉ uma oportunidade de fortalecer os laços com [askerFaction_name]. Mas a força inimiga é grande, e essa batalha não será sem riscos.\n\n\nForças aliadas:\n[FriendlyUnitList]\n\n\nInimigos de [siteFaction_name]:\n[EnemyUnitList]
+VFEM2_OpportunitySite_Skirmish.questNameRules.rulesStrings[0]	questName->[askerFaction_name] pede ajuda
+VFEM2_OpportunitySite_Skirmish.questNameRules.rulesStrings[1]	questName->[skirmish] de [askerFaction_name]
+VFEM2_OpportunitySite_Skirmish.questNameRules.rulesStrings[2]	questName->Ajudar [askerFaction_name] na batalha
+VFEM2_OpportunitySite_Skirmish.questNameRules.rulesStrings[3]	questName->[askerFaction_name] contra [enemy_faction_name]
+VFEM2_OpportunitySite_Skirmish.questNameRules.rulesStrings[4]	questName->A luta de [askerFaction_name]
+VFEM2_OpportunitySite_Skirmish.questNameRules.rulesStrings[5]	questName->Batalha por [askerFaction_name]
+VFEM2_OpportunitySite_Skirmish.questNameRules.rulesStrings[6]	questName->[askerFaction_name] chama às armas
+VFEM2_OpportunitySite_Skirmish.questNameRules.rulesStrings[7]	questName->Defender [askerFaction_name]
+VFEM2_OpportunitySite_Skirmish.questNameRules.rulesStrings[8]	questName->Apoiar [askerFaction_name]
+VFEM2_OpportunitySite_Skirmish.questNameRules.rulesStrings[9]	questName->Escaramuça de [askerFaction_name]
+VFEM2_OpportunitySite_Skirmish.questNameRules.rulesStrings[10]	skirmish->Escaramuça
+VFEM2_OpportunitySite_Skirmish.questNameRules.rulesStrings[11]	skirmish->Batalha
+VFEM2_OpportunitySite_Skirmish.questNameRules.rulesStrings[12]	skirmish->Confronto
+VFEM2_OpportunitySite_Skirmish.questNameRules.rulesStrings[13]	skirmish->Conflito
+VFEM2_OpportunitySite_Skirmish.root.nodes.WorldObjectTimeout.node.nodes.Letter.label.slateRef	Missão expirada: [resolvedQuestName]
+VFEM2_OpportunitySite_Skirmish.root.nodes.WorldObjectTimeout.node.nodes.Letter.text.slateRef	A facção aliada foi derrotada na escaramuça. A missão [resolvedQuestName] expirou.
+VFEM2_OpportunitySite_Skirmish.root.nodes.siteDestroyed.node.nodes.Letter.label.slateRef	Missão fracassada: [resolvedQuestName]
+VFEM2_OpportunitySite_Skirmish.root.nodes.siteDestroyed.node.nodes.Letter.text.slateRef	Depois que vocês saíram do local, a batalha se resolveu sem a sua ajuda. A missão [resolvedQuestName] terminou.
+VFEM2_OpportunitySite_Skirmish.root.nodes.siteAllEnemiesDefeated.node.nodes.GiveRewards.customLetterLabel.slateRef	Pagamento chegou
+VFEM2_OpportunitySite_Skirmish.root.nodes.siteAllEnemiesDefeated.node.nodes.GiveRewards.customLetterText.slateRef	Você derrotou as forças inimigas!\n\nO pagamento de [asker_faction_name] chegou.
+VFEM2_OpportunitySite_Skirmish.root.nodes.siteAllEnemiesDefeated.node.nodes.GiveRewards.nodeIfChosenPawnSignalUsed.label.slateRef	[asker_faction_royalFavorLabel]
+VFEM2_OpportunitySite_Skirmish.root.nodes.siteAllEnemiesDefeated.node.nodes.GiveRewards.nodeIfChosenPawnSignalUsed.text.slateRef	Estes colonos participaram da vitória na missão [resolvedQuestName]. [asker_definite] quer saber quem deve receber [royalFavorReward_amount] de [asker_faction_royalFavorLabel] por este serviço.
+## DefInjected/RecipeDef/Recipes_Food.xml
+VFEM2_Make_Sweetroll.label	fazer pãezinhos doces
+VFEM2_Make_Sweetroll.description	Faça pãezinhos doces com mel e ovos.
+VFEM2_Make_Sweetroll.jobString	Fazendo pãezinhos doces.
+VFEM2_Make_Must.label	fazer mosto de uva
+VFEM2_Make_Must.description	Faça mosto com uvas.
+VFEM2_Make_Must.jobString	Fazendo mosto.
+## DefInjected/RecipeDef/Recipes_Production.xml
+VFEM2_MakeHerbalMedicine.label	fazer medicina natural x3
+VFEM2_MakeHerbalMedicine.description	Faça um pequeno lote de medicina natural com vários ingredientes alquímicos.
+VFEM2_MakeHerbalMedicine.jobString	fazendo medicina natural.
+VFEM2_Make_ChemfuelFromWood.label	fazer combustível químico com madeira
+VFEM2_Make_ChemfuelFromWood.description	Faça um lote de combustível químico extraindo e condensando o gás da madeira das toras.
+VFEM2_Make_ChemfuelFromWood.jobString	Refinando combustível químico a partir de madeira.
+VFEM2_Make_ChemfuelFromOrganics.label	fazer combustível químico com matéria orgânica
+VFEM2_Make_ChemfuelFromOrganics.description	Faça um lote de combustível químico extraindo biocombustível de matéria-prima orgânica.
+VFEM2_Make_ChemfuelFromOrganics.ingredients.0.filter.customSummary	matéria-prima
+VFEM2_Make_ChemfuelFromOrganics.jobString	Refinando combustível químico a partir de matéria orgânica.
+VFEM2_Make_Hardweave.label	tecer tecido duro com folha de fumo
+VFEM2_Make_Hardweave.description	Entrelace fios de folha de fumo para criar uma alternativa resistente ao tecido.
+VFEM2_Make_Hardweave.jobString	Tecendo tecido duro.
+VFEM2_Make_Hayweave.label	tecer tecido de feno
+VFEM2_Make_Hayweave.description	Entrelace fios de feno para criar um tecido quebradiço e inferior chamado tecido de feno.
+VFEM2_Make_Hayweave.jobString	Tecendo tecido de feno.
+## DefInjected/ResearchProjectDef/ResearchProjects_Various.xml
+VFEM2_Beekeeping.label	apicultura
+VFEM2_Beekeeping.description	Aprenda a criar abelhas para produzir mel com as plantas próximas. O mel pode ser usado para fazer pãezinhos doces e hidromel.
+VFEM2_Beekeeping.generalRules.rulesStrings[0]	subject->apicultura
+VFEM2_Beekeeping.generalRules.rulesStrings[1]	subject_story->estudou as complexas estruturas sociais das abelhas
+VFEM2_Beekeeping.generalRules.rulesStrings[2]	subject_story->cultivou enormes apiários, abastecendo os nobres com o melhor mel
+VFEM2_Beekeeping.generalRules.rulesStrings[3]	subject_story->aperfeiçoou a arte do hidromel e virou um mestre cervejeiro famoso
+VFEM2_Beekeeping.generalRules.rulesStrings[4]	subject_gerund->cuidar de colmeias
+VFEM2_Wine.label	vinho
+VFEM2_Wine.description	Plante uvas que podem ser usadas para fazer mosto e, depois, vinho de alta qualidade.
+VFEM2_Wine.generalRules.rulesStrings[0]	subject->vinicultura
+VFEM2_Wine.generalRules.rulesStrings[1]	subject_story->fundou um vinhedo próspero nas encostas ensolaradas
+VFEM2_Wine.generalRules.rulesStrings[2]	subject_story->experimentou técnicas de fermentação e criou safras requintadas
+VFEM2_Wine.generalRules.rulesStrings[3]	subject_story->ficou famoso por uma dinastia festeira de mercadores de vinho
+VFEM2_Wine.generalRules.rulesStrings[4]	subject_gerund->cultivar uvas e fermentar vinho
+VFEM2_Alchemy.label	alquimia
+VFEM2_Alchemy.description	Aprenda a plantar vários ingredientes alquímicos e a combiná-los em poções diferentes num laboratório de alquimia.
+VFEM2_Alchemy.generalRules.rulesStrings[0]	subject->estudos alquímicos
+VFEM2_Alchemy.generalRules.rulesStrings[1]	subject_story->desvendou os mistérios da transmutação e preparou elixires potentes
+VFEM2_Alchemy.generalRules.rulesStrings[2]	subject_story->descobriu uma erva rara que, dizem, dá a juventude eterna
+VFEM2_Alchemy.generalRules.rulesStrings[3]	subject_story->virou um envenenador temido, vendendo poções mortais a quem pagasse mais
+VFEM2_Alchemy.generalRules.rulesStrings[4]	subject_gerund->preparar poções alquímicas
+VFEM2_MedievalArchitecture.label	arquitetura medieval
+VFEM2_MedievalArchitecture.description	Aprenda a construir várias estruturas medievais, incluindo paredes de tecido.
+VFEM2_MedievalArchitecture.generalRules.rulesStrings[0]	subject->construção medieval
+VFEM2_MedievalArchitecture.generalRules.rulesStrings[1]	subject_story->supervisionou a construção de castelos imponentes e vilas movimentadas
+VFEM2_MedievalArchitecture.generalRules.rulesStrings[2]	subject_story->projetou grandes catedrais, maravilhas do artesanato medieval
+VFEM2_MedievalArchitecture.generalRules.rulesStrings[3]	subject_story->criou passagens secretas e fortificações para planos clandestinos
+VFEM2_MedievalArchitecture.generalRules.rulesStrings[4]	subject_gerund->projetar estruturas medievais
+VFEM2_ComplexWorkshops.label	oficinas complexas
+VFEM2_ComplexWorkshops.description	Aprenda a construir várias ferramentas e dispositivos que aumentam a produtividade das bancadas.
+VFEM2_ComplexWorkshops.generalRules.rulesStrings[0]	subject->artesanato avançado
+VFEM2_ComplexWorkshops.generalRules.rulesStrings[1]	subject_story->refinou as técnicas de ferraria, fazendo ferramentas de qualidade sem igual
+VFEM2_ComplexWorkshops.generalRules.rulesStrings[2]	subject_story->introduziu inovações mecânicas que revolucionaram a produção
+VFEM2_ComplexWorkshops.generalRules.rulesStrings[3]	subject_story->formou uma guilda poderosa que controlava o fluxo de obras-primas
+VFEM2_ComplexWorkshops.generalRules.rulesStrings[4]	subject_gerund->melhorar a eficiência das oficinas
+VFEM2_Matchlocks.label	mecha de fogo
+VFEM2_Matchlocks.description	Fabrique armas de longo alcance antigas, movidas a pólvora química, que usam o mecanismo de mecha, como arcabuzes e canhões de mão.
+VFEM2_Matchlocks.generalRules.rulesStrings[0]	subject->armas de fogo primitivas
+VFEM2_Matchlocks.generalRules.rulesStrings[1]	subject_story->aperfeiçoou a arte das armas de mecha, trazendo a era da guerra de pólvora
+VFEM2_Matchlocks.generalRules.rulesStrings[2]	subject_story->abasteceu mercenários com armas de longo alcance devastadoras
+VFEM2_Matchlocks.generalRules.rulesStrings[3]	subject_story->soltou fogo e trovão no campo de batalha, mudando a guerra para sempre
+VFEM2_Matchlocks.generalRules.rulesStrings[4]	subject_gerund->fabricar armas de mecha
+VFEM2_Heraldry.label	heráldica
+VFEM2_Heraldry.description	Ostente as cores da sua facção e construa estandartes decorativos e tapetes heráldicos.
+VFEM2_Heraldry.generalRules.rulesStrings[0]	subject->tradições heráldicas
+VFEM2_Heraldry.generalRules.rulesStrings[1]	subject_story->desenhou estandartes que enchiam de medo ou espanto o coração dos inimigos
+VFEM2_Heraldry.generalRules.rulesStrings[2]	subject_story->criou brasões de família, eternizando legados em tecido e pedra
+VFEM2_Heraldry.generalRules.rulesStrings[3]	subject_story->liderou a criação de um grande salão adornado com insígnias nobres
+VFEM2_Heraldry.generalRules.rulesStrings[4]	subject_gerund->desenhar símbolos heráldicos
+## DefInjected/ResearchTabDef/ResearchTabs.xml
+VanillaExpanded.label	Vanilla Expanded

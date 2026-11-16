@@ -1,0 +1,151 @@
+## DefInjected/BackstoryDef/MedievalCommon_Adult.xml
+VFEM_VillageHunter01.description	[PAWN_nameDef] cresceu num pequeno vilarejo e passava os dias caçando para alimentar a comunidade. Ficou hábil em rastrear e armar armadilhas, mas quase não convivia com os outros e preferia a solidão da floresta. Com o tempo, ganhou fama de provedor confiável, embora suas habilidades sociais nunca tenham se desenvolvido.
+VFEM_VillageHunter01.title	caçador de vilarejo
+VFEM_VillageHunter01.titleShort	caçador
+VFEM_FieldHand02.description	[PAWN_nameDef] trabalhou na lavoura desde cedo, plantando e colhendo sob o olhar atento dos capatazes. Ficou forte de tanto carregar sacos de grãos e aprendeu o básico do cuidado com as plantas. Mas o trabalho exaustivo deixava pouco tempo para qualquer outra coisa, e nunca aprendeu a ler nem escrever.
+VFEM_FieldHand02.title	lavrador
+VFEM_FieldHand02.titleShort	lavrador
+VFEM_Woodcutter03.description	[PAWN_nameDef] passou a vida nas florestas, derrubando árvores para abastecer de madeira o vilarejo. O trabalho era pesado, mas deixou [PAWN_objective] forte e hábil com ferramentas. A solidão da mata combinava com [PAWN_objective], mas nunca aprendeu muito sobre convívio nem sobre as artes mais finas do ofício.
+VFEM_Woodcutter03.title	lenhador
+VFEM_Woodcutter03.titleShort	lenhador
+VFEM_Fisher04.description	[PAWN_nameDef] ganhava a vida pescando nos rios e lagos perto do vilarejo. Aprendeu a fazer redes e armadilhas simples, mas passava a maior parte do tempo sozinho na água. O trabalho repetitivo deixou [PAWN_objective] habilidoso, mas sem interesse por outras tarefas.
+VFEM_Fisher04.title	pescador
+VFEM_Fisher04.titleShort	pescador
+VFEM_StoneHauler05.description	[PAWN_nameDef] trabalhou numa pedreira, carregando blocos pesados até as obras. O trabalho sem fim deu muita força, mas pouca paciência para assuntos intelectuais. A vida dura na pedreira também afiou seu instinto de sobrevivência.
+VFEM_StoneHauler05.title	carregador de pedras
+VFEM_StoneHauler05.titleShort	carregador
+VFEM_Shepherd06.description	[PAWN_nameDef] passava os dias cuidando de ovelhas nas colinas ao redor do vilarejo. Ficou hábil em lidar com o rebanho e defendê-lo dos predadores. A vida tranquila deixou [PAWN_objective] reflexivo, mas despreparado para trabalhos que exigem mais do corpo.
+VFEM_Shepherd06.title	pastor
+VFEM_Shepherd06.titleShort	pastor
+VFEM_Tanner07.description	[PAWN_nameDef] trabalhou num curtume, transformando couro cru em material para roupas e armaduras. O serviço era sujo e desagradável, mas deu olho para detalhes e mãos fortes. Anos de contato com produtos químicos agressivos deixaram sua saúde fraca.
+VFEM_Tanner07.title	curtidor
+VFEM_Tanner07.titleShort	curtidor
+VFEM_CandleMaker08.description	[PAWN_nameDef] passou anos fazendo velas de sebo e cera para iluminar o vilarejo. O ofício exigia paciência e precisão, e nisso se destacava. Mas a natureza repetitiva do trabalho tirou seu interesse por atividades mais criativas.
+VFEM_CandleMaker08.title	fabricante de velas
+VFEM_CandleMaker08.titleShort	veleiro
+VFEM_VillageCook09.description	[PAWN_nameDef] preparava as refeições dos aldeões, usando ingredientes simples para fazer ensopados e pães fartos. Aprimorou o talento diante de incontáveis fogueiras e aprendeu a esticar os mantimentos em tempos de escassez. A cozinha, porém, não deixava tempo para estudos ou artes.
+VFEM_VillageCook09.title	cozinheiro do vilarejo
+VFEM_VillageCook09.titleShort	cozinheiro
+VFEM_Brickmaker10.description	[PAWN_nameDef] moldava e cozia tijolos de barro para as obras do vilarejo. O trabalho pesado fortaleceu seu corpo e deu um bom entendimento das técnicas de construção. Anos perto de fornos quentes, porém, deixaram pouco fôlego para longos dias de trabalho braçal.
+VFEM_Brickmaker10.title	oleiro de tijolos
+VFEM_Brickmaker10.titleShort	oleiro
+VFEM_Weaver11.description	[PAWN_nameDef] trabalhava no tear, transformando fio em tecido para o vilarejo. O serviço delicado exigia foco e destreza, que desenvolveu em anos de prática. Mas a vida sentada ao tear deixou pouca força física.
+VFEM_Weaver11.title	tecelão
+VFEM_Weaver11.titleShort	tecelão
+VFEM_Miller12.description	[PAWN_nameDef] cuidava do moinho do vilarejo, moendo grãos para fazer farinha. O trabalho exigia entender de maquinário e ter mão firme para manter o moinho girando. Anos de pó deixaram crises de tosse e outros achaques.
+VFEM_Miller12.title	moleiro
+VFEM_Miller12.titleShort	moleiro
+VFEM_Gravedigger13.description	[PAWN_nameDef] passava as noites cavando covas e cuidando do cemitério do vilarejo. O trabalho era sombrio e solitário, mas deixou [PAWN_objective] forte e capaz de manejar ferramentas pesadas. A convivência constante com a morte tornou [PAWN_objective] emocionalmente distante dos outros.
+VFEM_Gravedigger13.title	coveiro
+VFEM_Gravedigger13.titleShort	coveiro
+VFEM_Baker14.description	[PAWN_nameDef] acordava cedo todas as manhãs para sovar a massa e assar o pão do vilarejo. Com os anos, pegou o jeito de fazer pães perfeitos e de lidar com um forno quente. Mas a repetição do ofício tirou seu interesse por outros ofícios ou estudos.
+VFEM_Baker14.title	padeiro
+VFEM_Baker14.titleShort	padeiro
+VFEM_Cooper15.description	[PAWN_nameDef] fazia barris e tonéis para o vilarejo, moldando e montando aduelas de madeira com ferramentas simples. O trabalho exigia precisão e paciência, que dominou com os anos. Apesar da perícia, quase nunca saía da oficina para conviver ou cuidar de outros interesses.
+VFEM_Cooper15.title	tanoeiro
+VFEM_Cooper15.titleShort	tanoeiro
+VFEM_Stablehand16.description	[PAWN_nameDef] passava os dias limpando baias e cuidando dos cavalos nos estábulos do vilarejo. Com o tempo, aprendeu muito sobre o trato dos animais e ganhou mão firme para acalmar até as criaturas mais ariscas. O trabalho pesado deixava pouco tempo para os estudos.
+VFEM_Stablehand16.title	cavalariço
+VFEM_Stablehand16.titleShort	cavalariço
+VFEM_Thatcher17.description	[PAWN_nameDef] consertava e construía os telhados de palha do vilarejo. O trabalho exigia habilidade e resistência, já que passava horas se equilibrando nos telhados. Anos de labuta deixaram [PAWN_objective] forte e preciso, mas quase nunca se dedicou a atividades criativas.
+VFEM_Thatcher17.title	telhador de palha
+VFEM_Thatcher17.titleShort	telhador
+VFEM_VillageBrewer18.description	[PAWN_nameDef] fabricava cerveja para o vilarejo, aperfeiçoando receitas passadas de geração em geração. A fermentação ensinou paciência e atenção aos detalhes, já que cada lote exigia cuidado com o tempo e a temperatura. Passava tanto tempo na cervejaria que deixou o treino físico de lado.
+VFEM_VillageBrewer18.title	cervejeiro do vilarejo
+VFEM_VillageBrewer18.titleShort	cervejeiro
+VFEM_RatCatcher19.description	[PAWN_nameDef] ganhava a vida livrando o vilarejo de pragas, armando ratoeiras e caçando ratos com as próprias mãos. O trabalho era perigoso e imundo, mas afiou seus reflexos e ensinou os costumes dos bichos pequenos. Anos em porões escuros deixaram [PAWN_objective] socialmente desajeitado.
+VFEM_RatCatcher19.title	caçador de ratos
+VFEM_RatCatcher19.titleShort	caça-ratos
+VFEM_MudDigger20.description	[PAWN_nameDef] tirava barro das margens dos rios para a cerâmica e as obras do vilarejo. O trabalho exaustivo deu costas fortes e braços grossos, mas pouco interesse por assuntos intelectuais. Quase não falava com ninguém e passava a maior parte dos dias com lama até os joelhos.
+VFEM_MudDigger20.title	cavador de barro
+VFEM_MudDigger20.titleShort	cavador
+VFEM_Footman21.description	[PAWN_nameDef] serviu como soldado de infantaria no exército do senhor local, marchando para a batalha com espada e escudo. As escaramuças brutais ensinaram o valor da resistência e da disciplina. Anos de combate deram habilidade com armas brancas, mas nenhum treino com armas de longo alcance.
+VFEM_Footman21.title	soldado de infantaria
+VFEM_Footman21.titleShort	infante
+VFEM_Archer22.description	[PAWN_nameDef] foi treinado como arqueiro no exército do senhor e passou incontáveis horas praticando a mira. Ficou especialista em disparar flechas com rapidez e precisão, mesmo sob pressão. Mas faltava experiência no corpo a corpo, e muitas vezes dependia dos outros para se proteger.
+VFEM_Archer22.title	arqueiro
+VFEM_Archer22.titleShort	arqueiro
+VFEM_Squire23.description	[PAWN_nameDef] serviu como escudeiro de um cavaleiro local, aprendendo os caminhos da guerra e ajudando o mestre. Ganhou habilidade com armas e armaduras, embora a maior parte do serviço fosse manutenção e carregar suprimentos. A experiência deixou [PAWN_objective] forte e disciplinado, mas com pouco espaço para pensar por conta própria.
+VFEM_Squire23.title	escudeiro
+VFEM_Squire23.titleShort	escudeiro
+VFEM_Watchman24.description	[PAWN_nameDef] guardava as muralhas e os portões do vilarejo, de olho em bandidos e outras ameaças. O posto exigia vigilância e mão firme, que desenvolveu em longas horas de patrulha. Embora tivesse prática com armas de longo alcance, raramente viu uma batalha de verdade.
+VFEM_Watchman24.title	vigia
+VFEM_Watchman24.titleShort	vigia
+VFEM_Spearman25.description	[PAWN_nameDef] foi treinado para segurar a linha de frente com uma lança, usando o alcance para manter os inimigos à distância. Aprendeu a lutar em formação, contando com coordenação e tempo certo para repelir cargas de cavalaria. Anos de combate endureceram [PAWN_objective], mas lhe faltava jeito para ofícios ou tarefas delicadas.
+VFEM_Spearman25.title	lanceiro
+VFEM_Spearman25.titleShort	lanceiro
+VFEM_Pikeman26.description	[PAWN_nameDef] ficava em fileiras cerradas, empunhando um pique longo para conter cargas de cavalaria. O trabalho era extenuante e exigia sintonia com os companheiros para formar uma parede de aço impenetrável. Se destacava no combate em formação, mas tinha dificuldade com tarefas que pediam criatividade individual.
+VFEM_Pikeman26.title	piqueiro
+VFEM_Pikeman26.titleShort	piqueiro
+VFEM_Shieldbearer27.description	[PAWN_nameDef] tinha a tarefa de levar um grande escudo para a batalha, protegendo os companheiros dos projéteis. O posto exigia resistência e disciplina para ficar firme mesmo sob fogo pesado. A função deu pouca chance de praticar combate à distância.
+VFEM_Shieldbearer27.title	porta-escudo
+VFEM_Shieldbearer27.titleShort	porta-escudo
+VFEM_CampFollower28.description	[PAWN_nameDef] viajava com os exércitos, cuidando do acampamento e preparando suprimentos. Ficou hábil em sobrevivência básica e cozinha, garantindo que os soldados estivessem alimentados e prontos para a batalha. Apesar de viver perto do combate, raramente lutou e se concentrou no apoio.
+VFEM_CampFollower28.title	seguidor de acampamento
+VFEM_CampFollower28.titleShort	seguidor
+VFEM_Mercenary29.description	[PAWN_nameDef] vendia a espada a quem pagasse mais, lutando em escaramuças por todo canto. Anos de batalha deixaram [PAWN_objective] calejado e habilidoso no corpo a corpo, mas nunca confiou em ninguém o bastante para criar laços duradouros. Carrega cicatrizes de feridas físicas e emocionais.
+VFEM_Mercenary29.title	mercenário
+VFEM_Mercenary29.titleShort	mercenário
+VFEM_SiegeEngineer30.description	[PAWN_nameDef] trabalhava numa equipe que construía e operava máquinas de cerco nos ataques a castelos. A função exigia engenho e força, pois ajudava a projetar, montar e disparar armas enormes. Embora habilidoso em engenharia, tinha dificuldade no combate corpo a corpo.
+VFEM_SiegeEngineer30.title	engenheiro de cerco
+VFEM_SiegeEngineer30.titleShort	engenheiro
+VFEM_Beggar31.description	[PAWN_nameDef] sobrevivia mendigando nas ruas, dependendo da caridade alheia para comer e ter abrigo. Ficou hábil em ler o humor das pessoas e convencê-las a dar alguma coisa, mas a vida dura deixou [PAWN_objective] fraco e sem prática em trabalho braçal.
+VFEM_Beggar31.title	mendigo
+VFEM_Beggar31.titleShort	mendigo
+VFEM_Poacher32.description	[PAWN_nameDef] caçava ilegalmente nas florestas do senhor, arriscando a vida para alimentar a família. Ficou hábil com o arco e aprendeu a andar pela mata sem fazer barulho, mas sempre viveu com medo de ser pego pelos homens do senhor.
+VFEM_Poacher32.title	caçador ilegal
+VFEM_Poacher32.titleShort	clandestino
+VFEM_Outlaw33.description	[PAWN_nameDef] vivia fora da lei, sobrevivendo de roubo e violência. Ficou hábil em lutar e escapar da captura, mas a sociedade o rejeitava e só contava com a própria esperteza para continuar vivo. A vida de fora da lei deixou [PAWN_objective] calejado e desconfiado.
+VFEM_Outlaw33.title	fora da lei
+VFEM_Outlaw33.titleShort	fora da lei
+VFEM_Scavenger34.description	[PAWN_nameDef] sobrevivia saqueando campos de batalha abandonados e vilarejos em ruínas, juntando tudo que tivesse valor. Ficou bom em achar coisas úteis e evitar perigos, mas essa vida deixou pouca noção de limpeza ou ordem.
+VFEM_Scavenger34.title	catador
+VFEM_Scavenger34.titleShort	catador
+VFEM_Vagabond35.description	[PAWN_nameDef] vagava de vilarejo em vilarejo, pegando bicos e dormindo onde achasse abrigo. Aprendeu a sobreviver com pouco e a se adaptar a situações novas, mas nunca ficou num lugar tempo suficiente para criar laços de verdade.
+VFEM_Vagabond35.title	vagabundo
+VFEM_Vagabond35.titleShort	vagabundo
+VFEM_Herbalist36.description	[PAWN_nameDef] vivia na beira da floresta, colhendo plantas para fazer remédios e pomadas para o vilarejo. Desenvolveu um bom entendimento da natureza e de seus usos, mas costumava se isolar para se dedicar ao ofício. Os aldeões respeitavam seu conhecimento e pediam ajuda nas horas de necessidade.
+VFEM_Herbalist36.title	herbalista
+VFEM_Herbalist36.titleShort	herbalista
+VFEM_Blacksmith37.description	[PAWN_nameDef] trabalhava na forja, transformando metal em ferramentas, armas e armaduras. Conquistou a admiração do vilarejo pela habilidade e confiabilidade. O calor constante e o trabalho pesado deixaram [PAWN_objective] forte e concentrado, embora não muito letrado.
+VFEM_Blacksmith37.title	ferreiro
+VFEM_Blacksmith37.titleShort	ferreiro
+VFEM_Mason38.description	[PAWN_nameDef] era um pedreiro habilidoso, transformando pedra em muralhas sólidas e construções magníficas. Ganhou boa fama pela precisão e criatividade nas obras. Quase nunca ajudava na lavoura ou na caça, dedicando-se só ao ofício.
+VFEM_Mason38.title	pedreiro
+VFEM_Mason38.titleShort	pedreiro
+VFEM_Healer39.description	[PAWN_nameDef] cuidava dos doentes e feridos com seus conhecimentos de medicina e remédios de ervas. Ganhou respeito por salvar vidas, embora muitas vezes tivesse de encarar a dura realidade dos que não conseguia salvar. Os aldeões dependiam de [PAWN_objective] como principal fonte de cuidado.
+VFEM_Healer39.title	curandeiro
+VFEM_Healer39.titleShort	curandeiro
+VFEM_Carpenter40.description	[PAWN_nameDef] fazia móveis, ferramentas e estruturas de madeira para o vilarejo. Ganhava a vida com precisão e habilidade, transformando madeira em peças práticas e bonitas. Embora se destacasse no ofício, tinha pouco tempo para os estudos.
+VFEM_Carpenter40.title	carpinteiro
+VFEM_Carpenter40.titleShort	carpinteiro
+VFEM_KitchenServant41.description	[PAWN_nameDef] trabalhava longas horas nas cozinhas do castelo, preparando a comida dos nobres e de seus convidados. Aprendeu a cozinhar banquetes com recursos limitados, aprimorando o talento culinário. O trabalho era exaustivo, mas tinha orgulho de alimentar os outros.
+VFEM_KitchenServant41.title	criado de cozinha
+VFEM_KitchenServant41.titleShort	ajudante de cozinha
+VFEM_Chamberlain42.description	[PAWN_nameDef] administrava os aposentos do castelo, supervisionando os criados e garantindo que os quartos do senhor estivessem bem cuidados. Ficou hábil em organizar e gerir recursos, mas vivia preso nas intrigas da casa. A função exigia precisão e tato.
+VFEM_Chamberlain42.title	camareiro-mor
+VFEM_Chamberlain42.titleShort	camareiro
+VFEM_Scullion43.description	[PAWN_nameDef] passava os dias lavando louça e esfregando panelas nas cozinhas do castelo. O trabalho era sujo e ingrato, mas deu disciplina e a capacidade de aguentar longas horas de labuta. Raramente falava com alguém de fora da cozinha.
+VFEM_Scullion43.title	lava-pratos
+VFEM_Scullion43.titleShort	lava-pratos
+VFEM_StableServant44.description	[PAWN_nameDef] cuidava dos cavalos do senhor, alimentando, escovando e limpando as baias. Aprendeu muito sobre o trato dos animais e ganhou músculos com o trabalho pesado. O isolamento dos estábulos deixou suas habilidades sociais limitadas.
+VFEM_StableServant44.title	criado de estábulo
+VFEM_StableServant44.titleShort	estribeiro
+VFEM_Butler45.description	[PAWN_nameDef] servia diretamente o senhor e sua família, atendendo às necessidades deles com rapidez e discrição. Ficou hábil em etiqueta e em comandar os criados da casa. A função deu um olho afiado para detalhes, mas pouca paciência para trabalho braçal.
+VFEM_Butler45.title	mordomo
+VFEM_Butler45.titleShort	mordomo
+VFEM_Pickpocket46.description	[PAWN_nameDef] sobrevivia se esgueirando por mercados lotados e surrupiando moedas e bugigangas de aldeões distraídos. Desenvolveu dedos ágeis e faro para oportunidades, mas sempre viveu com medo de ser pego. Anos de pequenos furtos deixaram [PAWN_objective] desconfiado e reservado.
+VFEM_Pickpocket46.title	batedor de carteiras
+VFEM_Pickpocket46.titleShort	batedor
+VFEM_Fence47.description	[PAWN_nameDef] negociava mercadoria roubada, transformando bens ilícitos em moedas sem chamar a atenção das autoridades. Ficou bom em barganhar e avaliar o valor das coisas, mas evitava se envolver diretamente nos roubos. A enganação constante ensinou a ler as intenções das pessoas.
+VFEM_Fence47.title	receptador
+VFEM_Fence47.titleShort	receptador
+VFEM_Bandit48.description	[PAWN_nameDef] percorria o campo com um bando de foras da lei, emboscando viajantes e saqueando vilarejos. Ficou hábil no corpo a corpo e na intimidação, e ganhou fama de bandido perigoso. A vida em fuga endureceu [PAWN_objective] e deixou uma desconfiança permanente dos outros.
+VFEM_Bandit48.title	bandido
+VFEM_Bandit48.titleShort	bandido
+VFEM_Smuggler49.description	[PAWN_nameDef] levava contrabando através das fronteiras, usando trilhas escondidas e subornos para não ser descoberto. Ficou bom em se orientar e negociar sob pressão, embora o risco constante de captura tenha cobrado seu preço dos nervos. A vida de segredos deixou [PAWN_objective] desconfiado de estranhos.
+VFEM_Smuggler49.title	contrabandista
+VFEM_Smuggler49.titleShort	contrabandista
+VFEM_Counterfeiter50.description	[PAWN_nameDef] falsificava moedas e documentos, enganando mercadores e nobres. Ficou hábil em fazer cópias convincentes, embora fugisse de trabalho braçal sempre que podia. O risco constante de ser desmascarado obrigava a mudar de lugar com frequência, sem nunca ficar muito tempo no mesmo canto.
+VFEM_Counterfeiter50.title	falsário
+VFEM_Counterfeiter50.titleShort	falsário

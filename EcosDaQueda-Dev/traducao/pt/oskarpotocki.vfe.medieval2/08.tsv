@@ -1,0 +1,130 @@
+## DefInjected/ThingDef/Apparel_Various.xml
+VFEM2_Apparel_KingsRobes.label	manto do rei
+VFEM2_Apparel_KingsRobes.description	Um manto longo com peitoral dourado, digno de um rei. Extremamente bonito.
+VFEM2_Apparel_HeavyLeatherArmor.label	armadura de couro pesada
+VFEM2_Apparel_HeavyLeatherArmor.description	Um peitoral de couro pesado feito para aquecer e proteger a infantaria pesada em batalhas nas tundras geladas. Infelizmente, essa armadura deixa a pessoa mais lenta e mais vulnerável a ataques corpo a corpo.
+VFEM2_Apparel_LeatherArmor.label	armadura de couro
+VFEM2_Apparel_LeatherArmor.description	Esta armadura é feita com muito mais cuidado e firmeza a partir de couro processado, sacrificando um pouco do isolamento térmico em troca de mais proteção contra dano. Feita para as tropas da linha de frente, quase sempre acompanhada de um escudo.
+VFEM2_Apparel_Tabard.label	tabardo
+VFEM2_Apparel_Tabard.description	Uma sobreveste de tecido sem mangas usada por cima da armadura ou da roupa para exibir a heráldica de quem a veste. Não protege nada, mas ostenta com orgulho as cores e o símbolo da sua lealdade.
+VFEM2_Apparel_PaddedArmor.label	armadura acolchoada
+VFEM2_Apparel_PaddedArmor.description	Uma veste grossa e acolchoada feita para absorver impactos e dar proteção moderada. Muito usada por soldados de infantaria ou por baixo de armaduras mais pesadas.
+VFEM2_Apparel_Mantle.label	murça
+VFEM2_Apparel_Mantle.description	Uma capa leve que cobre os ombros e o pescoço e protege um pouco do tempo.
+## DefInjected/ThingDef/Buildings_Apiary.xml
+VFEM2_Apiary.label	apiário
+VFEM2_Apiary.description	Uma estrutura de madeira em forma de caixa, com prateleiras, treliças e câmaras. Colocado perto de flores, o apiário atrai naturalmente abelhas silvestres, que fazem dele seu novo lar. Com o tempo, as abelhas produzem mel, que pode ser colhido e comido direto ou fermentado depois em hidromel.
+## DefInjected/ThingDef/Buildings_CastleGates.xml
+VFEM2_2x1CastleDoor.label	porta de castelo (média)
+VFEM2_2x1CastleDoor.description	Uma porta incrivelmente resistente feita de blocos de pedra enormes. Muito lenta de construir. Boa escolha para manter os inimigos do lado de fora, ou do lado de dentro. A porta precisa de paredes dos dois lados para funcionar.
+VFEM2_3x1CastleDoor.label	porta de castelo (grande)
+VFEM2_3x1CastleDoor.description	Uma porta incrivelmente resistente feita de blocos de pedra enormes. Muito lenta de construir. Boa escolha para manter os inimigos do lado de fora, ou do lado de dentro. A porta precisa de paredes dos dois lados para funcionar.
+VFEM2_4x1CastleDoor.label	porta de castelo (imponente)
+VFEM2_4x1CastleDoor.description	Uma porta incrivelmente resistente feita de blocos de pedra enormes. Muito lenta de construir. Boa escolha para manter os inimigos do lado de fora, ou do lado de dentro. A porta precisa de paredes dos dois lados para funcionar.
+VFEM2_2x1CastleGate.label	portão de castelo (médio)
+VFEM2_2x1CastleGate.description	Uma porta incrivelmente resistente feita de blocos de pedra enormes, com uma grade levadiça protegendo a passagem. Muito lenta de construir. Boa escolha para manter os inimigos do lado de fora, ou do lado de dentro. A porta precisa de paredes dos dois lados para funcionar. Portões de castelo demoram muito para abrir.
+VFEM2_3x1CastleGate.label	portão de castelo (grande)
+VFEM2_3x1CastleGate.description	Uma porta incrivelmente resistente feita de blocos de pedra enormes, com uma grade levadiça protegendo a passagem. Muito lenta de construir. Boa escolha para manter os inimigos do lado de fora, ou do lado de dentro. A porta precisa de paredes dos dois lados para funcionar. Portões de castelo demoram muito para abrir.
+VFEM2_4x1CastleGate.label	portão de castelo (imponente)
+VFEM2_4x1CastleGate.description	Uma porta incrivelmente resistente feita de blocos de pedra enormes, com uma grade levadiça protegendo a passagem. Muito lenta de construir. Boa escolha para manter os inimigos do lado de fora, ou do lado de dentro. A porta precisa de paredes dos dois lados para funcionar. Portões de castelo demoram muito para abrir.
+## DefInjected/ThingDef/Buildings_Furniture.xml
+VFEM2_FurBed.label	cama de peles
+VFEM2_FurBed.description	Uma cama de estrutura de madeira, recheada de capim seco e coberta de vários couros e peles para isolar melhor nas noites geladas. O calor desta cama combate a hipotermia.
+VFEM2_DoubleFurBed.label	cama de peles dupla
+VFEM2_DoubleFurBed.description	Uma cama para duas pessoas com estrutura de madeira, recheada de capim seco e coberta de vários couros e peles para isolar melhor nas noites geladas. O calor desta cama combate a hipotermia.
+VFEM2_Hearth.label	lareira
+VFEM2_Hearth.description	Um fosso de fogo grande e compacto, capaz de queimar muita madeira de uma vez. Dá bastante calor e luz a salas do trono e salões e serve de ponto de encontro para colonos ociosos.
+VFEM2_StandingBanner.label	estandarte heráldico de pé
+VFEM2_StandingBanner.description	Um estandarte alto de tecido montado numa estrutura de madeira firme, exibindo com orgulho a heráldica da facção.
+VFEM2_AutofillShelf.label	prateleira
+VFEM2_AutofillShelf.description	Uma prateleira de três andares que guarda três vezes mais que o chão vazio. Os itens guardados nela nunca se deterioram e não afetam a beleza do ambiente.\n\nComo o espaço é limitado, prateleiras não guardam pedaços de rocha, construções, plantas nem cadáveres grandes.
+## DefInjected/ThingDef/Buildings_Furniture_Ideology.xml
+VFEM2_HearthDarklight.label	lareira de luz sombria
+VFEM2_HearthDarklight.description	Um fosso de fogo grande e compacto, capaz de queimar muita madeira de uma vez. Dá bastante calor e luz a salas do trono e salões e serve de ponto de encontro para colonos ociosos.
+## DefInjected/ThingDef/Buildings_Joy.xml
+VFEM2_ArcheryTarget.label	alvo de arco e flecha
+VFEM2_ArcheryTarget.description	Um alvo simples de arco e flecha montado num suporte de madeira. É relaxante e permite testar a mira e treinar com o tempo sem arriscar um confronto fatal.
+VFEM2_TrainingDummy.label	boneco de treino
+VFEM2_TrainingDummy.description	Um boneco de treino feito de madeira, terra e plantas secas. Surpreendentemente durável, permite testar a esgrima e treinar com o tempo sem arriscar um confronto fatal.
+## DefInjected/ThingDef/Buildings_LeatherBoilpot.xml
+VFEM2_LeatherBoilpot.label	caldeirão de couro
+VFEM2_LeatherBoilpot.description	Um caldeirão de metal aquecido a lenha, usado para ferver remendo de couro. Consome madeira enquanto trabalha.
+## DefInjected/ThingDef/Buildings_Linkable.xml
+VFEM2_SmithingAnvil.label	bigorna de ferreiro
+VFEM2_SmithingAnvil.description	Uma bigorna de aço pesada usada para moldar o metal com mais precisão. Aumenta a velocidade de trabalho quando colocada perto de uma forja. Itens de qualidade horrível e ruim feitos na bancada ligada têm chance de subir um nível de qualidade. Cada bancada só pode usar uma bigorna.
+VFEM2_ForgeBellows.label	fole de forja
+VFEM2_ForgeBellows.description	Um fole manual que aumenta o fluxo de ar da forja. Aumenta a velocidade de trabalho quando colocado perto de uma forja. O fole reduz em 20% o consumo de combustível da bancada ligada. Cada bancada só pode usar um fole.
+VFEM2_TailoringLoom.label	tear de alfaiate
+VFEM2_TailoringLoom.description	Um tear pequeno para tecer fios. Aumenta a velocidade de trabalho quando colocado perto de uma mesa de alfaiate. Cada bancada só pode usar um tear.
+VFEM2_MannequinStand.label	manequim
+VFEM2_MannequinStand.description	Um manequim simples usado para medir e ajustar roupas com mais refinamento. Aumenta a velocidade de trabalho quando colocado perto de uma mesa de alfaiate. O manequim permite medidas mais precisas, reduzindo em 10% o custo de fazer roupas. Cada bancada só pode usar um manequim.
+VFEM2_ChiselRack.label	suporte de cinzéis
+VFEM2_ChiselRack.description	Um pequeno suporte cheio de cinzéis variados. Aumenta a velocidade de trabalho quando colocado perto de uma mesa de canteiro. Cada bancada só pode usar um suporte de cinzéis.
+VFEM2_StoneClamp.label	grampo de pedra
+VFEM2_StoneClamp.description	Um grampo simples para prender pedras grandes no lugar. Aumenta a velocidade de trabalho quando colocado perto de uma mesa de canteiro. O grampo aumenta a produtividade, rendendo 10% mais recursos em todas as receitas. Cada bancada só pode usar um grampo.
+VFEM2_CleaverRack.label	suporte de cutelos
+VFEM2_CleaverRack.description	Um suporte firme com cutelos e facas afiadas. Aumenta a velocidade de trabalho quando colocado perto de uma mesa de açougueiro. Cada bancada só pode usar um suporte de cutelos.
+VFEM2_CarvingBoard.label	tábua de corte
+VFEM2_CarvingBoard.description	Uma tábua de madeira grossa e gasta que permite cortes precisos. Aumenta a velocidade de trabalho quando colocada perto de uma mesa de açougueiro. As lâminas afiadas permitem ao açougueiro tirar 10% mais carne e couro de qualquer criatura abatida. Cada bancada só pode usar uma tábua de corte.
+VFEM2_StonePolisher.label	polidor de pedra
+VFEM2_StonePolisher.description	Uma roda de polimento que deixa as esculturas com acabamento liso e refinado. Aumenta a velocidade de trabalho quando colocada perto de uma mesa de escultor. Esculturas de pedra de qualidade horrível e ruim feitas na mesa ligada têm grande chance de subir um nível de qualidade. Cada bancada só pode usar um polidor.
+VFEM2_ArtToolStand.label	suporte de ferramentas de arte
+VFEM2_ArtToolStand.description	Um suporte com cinzéis, martelos e outras ferramentas de entalhe. Aumenta a velocidade de trabalho quando colocado perto de uma mesa de escultor. Cada bancada só pode usar um suporte de ferramentas.
+VFEM2_NotesStack.label	pilha de anotações
+VFEM2_NotesStack.description	Uma mesinha cheia de anotações e pedaços de papel. Aumenta a velocidade de trabalho quando colocada perto de uma bancada de pesquisa. Cada bancada só pode usar uma pilha de anotações.
+VFEM2_ResearchBoard.label	quadro de pesquisa
+VFEM2_ResearchBoard.description	Uma lousa ou quadro-negro para desenhar diagramas e compartilhar ideias. Aumenta a velocidade de trabalho quando colocado perto de uma bancada de pesquisa. Até duas bancadas de pesquisa podem se ligar a um quadro.
+VFEM2_SurgicalTools.label	instrumentos cirúrgicos
+VFEM2_SurgicalTools.description	Um pequeno suporte com bisturis, pinças e serras de osso. Aumenta a velocidade de trabalho quando colocado perto de qualquer tipo de cama, incluindo locais de dormir e camas hospitalares. Cada cama só pode usar um conjunto de instrumentos cirúrgicos.
+VFEM2_AilmentsShelf.label	armário de remédios
+VFEM2_AilmentsShelf.description	Um pequeno armário de madeira que pode guardar remédios de ervas, tinturas e instrumentos médicos básicos. Os itens guardados nele nunca se deterioram e não afetam a beleza do ambiente.
+## DefInjected/ThingDef/Buildings_MeadBarrel.xml
+VFEM2_MeadFermentingBarrel.label	barril de fermentação de hidromel
+VFEM2_MeadFermentingBarrel.description	Um barril bem simples, montado com encaixes de malhete. Transforma mel em hidromel.
+## DefInjected/ThingDef/Buildings_Production.xml
+VFEM2_AlchemicalWorkbench.label	laboratório de poções a lenha
+VFEM2_AlchemicalWorkbench.description	Uma estação aquecida a lenha para preparar várias poções alquímicas.
+VFEM2_AlchemicalWorkbench_Electric.label	laboratório de poções elétrico
+VFEM2_AlchemicalWorkbench_Electric.description	Uma estação elétrica para preparar várias poções alquímicas.
+## DefInjected/ThingDef/Buildings_Security_Turrets.xml
+VFEM2_Turret_WallMountedArbalest.label	balestra de muralha
+VFEM2_Turret_WallMountedArbalest.description	Uma balestra pesada fixa, montada numa muralha baixa de castelo que serve de cobertura. A recarga deixa muito a desejar, mas a balestra tem alcance extremamente longo, desde que haja linha de visão até o alvo.
+VFEM2_Bolt_ArbalestTurret.label	virote de balestra
+VFEM2_Gun_ArbalestTurret.label	balestra
+VFEM2_Gun_ArbalestTurret.description	Uma balestra pesada fixa, montada numa muralha baixa de castelo que serve de cobertura. A recarga deixa muito a desejar, mas a balestra tem alcance extremamente longo, desde que haja linha de visão até o alvo.
+VFEM2_Gun_ArbalestTurret.verbs.Verb_ShootCE.label	balestra
+VFEM2_Turret_WallMountedArquebus.label	arcabuz de muralha
+VFEM2_Turret_WallMountedArquebus.description	Um arcabuz fixo, montado numa muralha baixa de castelo que serve de cobertura. Com a estabilidade extra, o arcabuz de muralha atira muito mais longe que o normal. As balas de chumbo perdem velocidade e dano com a distância e são muito pouco eficazes contra armadura. Por causa da reação da pólvora química no disparo, o cano solta nuvens de fumaça cegante.
+VFEM2_Gun_ArquebusTurret.label	arcabuz
+VFEM2_Gun_ArquebusTurret.description	Um arcabuz fixo, montado numa muralha baixa de castelo que serve de cobertura. Com a estabilidade extra, o arcabuz de muralha atira muito mais longe que o normal. As balas de chumbo perdem velocidade e dano com a distância e são muito pouco eficazes contra armadura. Por causa da reação da pólvora química no disparo, o cano solta nuvens de fumaça cegante.
+VFEM2_Gun_ArquebusTurret.verbs.Verb_ShootCE.label	arcabuz
+## DefInjected/ThingDef/Buildings_Structure.xml
+VFEM2_ClothWall.label	parede de tecido
+VFEM2_ClothWall.description	Uma parede intransponível feita de tiras grossas de tecido ou couro sobrepostas e costuradas. Rápida de construir, mas extremamente inflamável. Ao ser desconstruída, devolve todo o tecido usado.
+VFEM2_TimberedWall.label	parede enxaimel
+VFEM2_TimberedWall.description	Uma parede intransponível feita de blocos de pedra e vigas pesadas, bem encaixadas, formando uma estrutura de caixa. Lenta de construir, mas muito mais resistente a dano. Inflamável, mas menos que paredes de madeira comuns. Sustenta telhado.
+VFEM2_Palisade.label	paliçada
+VFEM2_Palisade.description	Uma cerca intransponível feita de estacas de madeira fincadas na vertical. Lenta de construir, mas gasta poucos recursos. Não sustenta telhado.
+VFEM2_CastleWall.label	muralha de castelo
+VFEM2_CastleWall.description	Uma parede intransponível incrivelmente resistente, feita de blocos de pedra enormes. Muito lenta de construir. Sustenta telhado. Se a muralha sofrer dano suficiente, vira uma cobertura transponível na altura do peito; consertada, volta a ser uma parede intransponível.
+VFEM2_DamagedCastleWall.label	muralha de castelo danificada
+VFEM2_DamagedCastleWall.description	Uma parede intransponível incrivelmente resistente, feita de blocos de pedra enormes. Muito lenta de construir. Sustenta telhado. Se a muralha sofrer dano suficiente, vira uma cobertura transponível na altura do peito; consertada, volta a ser uma parede intransponível.
+VFEM2_LowCastleWall.label	muralha de castelo baixa
+VFEM2_LowCastleWall.description	Uma parede na altura do peito incrivelmente resistente, feita de blocos de pedra enormes. Muito lenta de construir. Não sustenta telhado. Se a muralha baixa sofrer dano suficiente, vira uma cobertura bem baixa, mas ainda útil; consertada, volta a ser uma parede na altura do peito.
+VFEM2_DamagedLowCastleWall.label	muralha de castelo baixa danificada
+VFEM2_DamagedLowCastleWall.description	Uma parede na altura do peito incrivelmente resistente, feita de blocos de pedra enormes. Muito lenta de construir. Não sustenta telhado. Se a muralha baixa sofrer dano suficiente, vira uma cobertura bem baixa, mas ainda útil; consertada, volta a ser uma parede na altura do peito.
+## DefInjected/ThingDef/Buildings_WineBarrel.xml
+VFEM2_WineBarrel.label	barril de vinho
+VFEM2_WineBarrel.description	Um barril para fermentar mosto em vinho.
+## DefInjected/ThingDef/Carpets.xml
+VFEM2_HeraldicRugNarrow.label	tapete heráldico (estreito)
+VFEM2_HeraldicRugNarrow.description	Um tapete decorativo estreito com um desenho heráldico marcante, perfeito para exibir lealdade ou orgulho da família em qualquer cômodo.
+VFEM2_HeraldicRugBroad.label	tapete heráldico (largo)
+VFEM2_HeraldicRugBroad.description	Um tapete decorativo grande com um desenho heráldico marcante, perfeito para exibir lealdade ou orgulho da família em qualquer cômodo.
+VFEM2_HeraldicRugGrand.label	tapete heráldico (imponente)
+VFEM2_HeraldicRugGrand.description	Um tapete decorativo enorme com um desenho heráldico marcante, perfeito para exibir lealdade ou orgulho da família em qualquer cômodo.
+## DefInjected/ThingDef/FloorCoverings.xml
+VFEM2_Viking_Slab_Medium.label	laje viking (média)
+VFEM2_Viking_Slab_Medium.description	Um baixo-relevo em pedra com imagens vikings para decorar o piso.
+VFEM2_Viking_Slab_Broad.label	laje viking (larga)
+VFEM2_Viking_Slab_Broad.description	Um baixo-relevo em pedra com imagens vikings para decorar o piso.

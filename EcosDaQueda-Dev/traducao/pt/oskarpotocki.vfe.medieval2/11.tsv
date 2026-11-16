@@ -1,0 +1,142 @@
+## DefInjected/VFEMedieval.CobblestoneWallTemplateDef/CobblestoneWallTemplateDefs.xml
+VFEM2_CobblestoneWall_.label	muro de pedra bruta ({0})
+VFEM2_CobblestoneWall_.description	Uma parede intransponível feita de pedaços grandes de rocha.
+## DefInjected/VFEMedieval.HeraldicPattern/HeraldicDefs.xml
+VFEM2_Barry.label	burelado
+VFEM2_BarryDancetty.label	burelado dentado
+VFEM2_Bordure.label	bordadura
+VFEM2_Cross.label	cruz
+VFEM2_PerBend.label	fendido
+VFEM2_PerChevron.label	em chaveirão
+VFEM2_PerCross.label	esquartelado
+VFEM2_PerFess.label	cortado
+VFEM2_PerPale.label	partido
+VFEM2_PerSaltier.label	esquartelado em aspa
+VFEM2_Plain.label	liso
+## DefInjected/VFEMedieval.HeraldicSymbol/HeraldicDefs.xml
+VFEM2_Anchor.label	âncora
+VFEM2_Bat.label	morcego
+VFEM2_Bow.label	arco
+VFEM2_Bull.label	touro
+VFEM2_BurningSword.label	espada flamejante
+VFEM2_Castle.label	castelo
+VFEM2_Cat.label	gato
+VFEM2_Cave.label	caverna
+VFEM2_Centipede.label	centopeia
+VFEM2_Chicken.label	galinha
+VFEM2_Column.label	coluna
+VFEM2_CrossCharge.label	cruz
+VFEM2_CrossedAxes.label	machados cruzados
+VFEM2_CrossedSwords.label	espadas cruzadas
+VFEM2_Crown.label	coroa
+VFEM2_Dove.label	pomba
+VFEM2_Dragon.label	dragão
+VFEM2_Eagle.label	águia
+VFEM2_Empire.label	império
+VFEM2_Eye.label	olho
+VFEM2_Fangs.label	presas
+VFEM2_Fire.label	fogo
+VFEM2_Fishes.label	peixes
+VFEM2_FleurDeLis.label	flor-de-lis
+VFEM2_Flower.label	flor
+VFEM2_Goat.label	cabra
+VFEM2_Grapes.label	uvas
+VFEM2_HelixienSlug.label	lesma helixiana
+VFEM2_Horse.label	cavalo
+VFEM2_House.label	casa
+VFEM2_Human.label	humano
+VFEM2_InvertedStar.label	estrela invertida
+VFEM2_Kraken.label	kraken
+VFEM2_Lion.label	leão
+VFEM2_Lobster.label	lagosta
+VFEM2_Man.label	homem
+VFEM2_MechanicalSkull.label	caveira mecânica
+VFEM2_Megaspider.label	megaaranha
+VFEM2_PiercedHeart.label	coração trespassado
+VFEM2_PsychicEye.label	olho psíquico
+VFEM2_Radiation.label	radiação
+VFEM2_Scales.label	balança
+VFEM2_Shell.label	concha
+VFEM2_Sheriff.label	xerife
+VFEM2_Shield.label	escudo
+VFEM2_Skull.label	caveira
+VFEM2_Smokeleaf.label	folha de fumo
+VFEM2_Snake.label	serpente
+VFEM2_Stag.label	cervo
+VFEM2_Sun.label	sol
+VFEM2_Swan.label	cisne
+VFEM2_Temple.label	templo
+VFEM2_Tent.label	tenda
+VFEM2_Thrumbo.label	thrumbo
+VFEM2_Tree.label	árvore
+VFEM2_TrinityKnot.label	nó da trindade
+VFEM2_Valknut.label	valknut
+VFEM2_WingedSword.label	espada alada
+VFEM2_Wolf.label	lobo
+VFEM2_Woman.label	mulher
+VFEM2_None.label	sem figura
+## DefInjected/VFEMedieval.LeatherTerrainTemplateDef/LeatherTerrainTemplateDefs.xml
+VFEM2_Matting_.label	esteira ({0})
+VFEM2_Matting_.description	Esteira grosseira feita de pedaços de couro trançados. É rústica, aconchegante e aumenta a beleza do cômodo. Também é bem inflamável, e limpá-la dá muito trabalho.
+## DefInjected/VFEMedieval.LeatherTerrainTemplateDef/LeatherTerrainTemplateDefs_Royalty.xml
+VFEM2_FineMatting_.label	esteira fina ({0})
+VFEM2_FineMatting_.description	Esteira luxuosa, costurada com cuidado a partir de tiras de couro. Linda de ver, mas limpá-la dá muito trabalho.
+## DefInjected/WeaponClassDef/Cultures.xml
+VFEM2_Vikings.label	vikings
+## DefInjected/WeaponClassDef/WeaponClassDefs.xml
+VFEM2_Medieval.label	medieval
+## DefInjected/WorkGiverDef/WorkGivers.xml
+VFEM2_TakeHoneyOutOfApiary.label	tirar mel do apiário
+VFEM2_TakeHoneyOutOfApiary.gerund	tirando mel de
+VFEM2_TakeHoneyOutOfApiary.verb	tirar mel
+VFEM2_TendToTheApiary.label	cuidar do apiário
+VFEM2_TendToTheApiary.gerund	cuidando de
+VFEM2_TendToTheApiary.verb	cuidar do apiário
+VFEM2_DoBillsAlchemyTable.label	preparar poção
+VFEM2_DoBillsAlchemyTable.gerund	preparando poção em
+VFEM2_DoBillsAlchemyTable.verb	preparar poção
+VFEM2_DoBillsAlchemyTable_Electric.label	preparar poção
+VFEM2_DoBillsAlchemyTable_Electric.gerund	preparando poção em
+VFEM2_DoBillsAlchemyTable_Electric.verb	preparar poção
+## DefInjected/WorldObjectDef/Factions_MerchantGuild.xml
+VFEM2_MerchantGuildCaravan.label	guilda mercante
+VFEM2_MerchantGuildCaravan.description	Um grupo de viajantes.
+VFEM2_MerchantGuildCaravan.attackConfirmationMessage	Você está prestes a atacar a Guilda Mercante, o que vai tornar essa facção hostil. Tem certeza de que quer fazer isso?
+VFEM2_DestroyedMerchantGuildCamp.label	acampamento destruído da guilda mercante
+VFEM2_DestroyedMerchantGuildCamp.description	Um acampamento destruído.
+## Keyed/Misc.xml
+VFEM2_NeedTend	O apiário precisa de cuidados
+VFEM2_Resting	O apiário está em repouso porque a temperatura ambiente está abaixo de 10 °C
+VFEM2_Ready	Mel pronto
+VFEM2_NeedFlower	O apiário precisa de mais {0} flores em volta para as abelhas coletarem.
+VFEM2_NeedFlower.One	O apiário precisa de mais {0} flor em volta para as abelhas coletarem.
+VFEM2_NeedFlower.Many	O apiário precisa de mais {0} flores em volta para as abelhas coletarem.
+VFEM2_NeedTIn	O apiário vai precisar de cuidados em {0}
+VFEM2_PlaceWorker	O apiário precisa ficar a três células de distância de qualquer outro apiário
+VFEM2_PlaceWorkerNoRoof	O apiário não pode ser construído sob um telhado
+VFEM2_BelowAnimalSkill	Habilidade com animais baixa demais, precisa de 5
+VFEM2_TendingFailed	O cuidado falhou
+VFEM2_MeadFermentingBarrelNotWorking	Este barril de fermentação de hidromel não está funcionando no momento
+VFEM2_WineBarrelNotWorking	Este barril de vinho não está funcionando no momento
+VFEM2_BoilPotNotWorking	Este caldeirão não está funcionando no momento
+VFEM2_StyleHeraldics	Editar heráldica
+VFEM2_SetPattern	Padrão
+VFEM2_SetSymbol	Símbolo
+VFEM2_EditFactionHeraldry	Editar facção
+VFEM2_EditThingHeraldry	Editar alvo
+VFEM2_ResetToFaction	Restaurar
+VFEM2_StatsReport_Flammability	Parede enxaimel: +50%
+VFEM2_ItemImproved_Anvil	{0} subiu para a qualidade {1} graças à bigorna de ferreiro.
+VFEM2_ItemImproved_Polisher	{0} subiu para a qualidade {1} graças ao polidor de pedra.
+VFEM2_MerchantCaravanSpawnCount	Número de caravanas mercantes (acompanha a população do mundo)
+VFEM2_MerchantCaravanStayPeriod	A Guilda Mercante vai desmontar e partir em: {0}
+VFEM2_BarterWith	Fazer escambo com {0}
+VFEM2_BarterFairness	Justiça da troca
+VFEM2_BarterExplanation	Para fechar negócio com a Guilda Mercante, você precisa oferecer bens suficientes para que a troca fique justa. O valor de cada item varia um pouco para um lado ou para o outro, ao acaso. Quanto maior a habilidade de negociação, mais valem os seus itens.
+VFEM2_CommandBarter	Escambo
+VFEM2_CommandBarterDesc	Fazer escambo com esta guilda mercante.
+VFEM2_LetterLabelFactionBaseDefeated	Acampamento da guilda mercante destruído
+VFEM2_LetterFactionBaseDefeated	O acampamento da guilda mercante foi destruído.
+VFEM2_LetterFactionBaseDefeated_FactionDestroyed	Como este era o último acampamento, {0} foi derrotada.
+VFEM_MaynardMedievalResearchModifier	Por causa do número de pesquisas concluídas, o custo de pesquisa aumentou para: {0}
+VFEM_PillageRaidDesc	Um grupo de vikings de {0} chegou por perto.\nEles vão tentar incendiar sua colônia, roubando o que puderem antes de ir embora.\nPrepare a defesa ou ataque primeiro.

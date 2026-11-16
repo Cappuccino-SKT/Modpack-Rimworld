@@ -1,0 +1,199 @@
+## DefInjected/HediffDef/Alcohol_Mead.xml
+VFEM2_MeadAlcoholHigh.stages.blackout.label	blecaute alcoólico
+## DefInjected/HediffDef/Alcohol_Wine.xml
+VFEM2_WineAlcoholHigh.label	vinho
+VFEM2_WineAlcoholHigh.description	Vinho na corrente sanguínea. Faz as pessoas felizes e mais sensíveis psiquicamente, mas reduz as capacidades.
+VFEM2_WineAlcoholHigh.labelNoun	embriaguez de vinho
+VFEM2_WineAlcoholHigh.stages.warm.label	aquecido
+VFEM2_WineAlcoholHigh.stages.tipsy.label	tonto
+VFEM2_WineAlcoholHigh.stages.drunk.label	bêbado
+VFEM2_WineAlcoholHigh.stages.hammered.label	muito bêbado
+VFEM2_WineAlcoholHigh.stages.blackout.label	blecaute alcoólico
+## DefInjected/HediffDef/HediffDefs_Draughts.xml
+VFEM2_ImmunizationDraught.label	poção de imunização
+VFEM2_ImmunizationDraught.description	Uma poção está reforçando o sistema imunológico desta pessoa, que combate melhor doenças e infecções, mas fica mais sonolenta.
+VFEM2_ImmunizationDraught.stages.fading.label	passando
+VFEM2_ImmunizationDraught.stages.potent.label	forte
+VFEM2_HealingDraught.label	poção de cura
+VFEM2_HealingDraught.description	Uma poção está reforçando a regeneração natural desta pessoa, que cura ferimentos bem mais rápido que o normal.
+VFEM2_HealingDraught.stages.fading.label	passando
+VFEM2_HealingDraught.stages.potent.label	forte
+VFEM2_StrengthDraught.label	poção de força
+VFEM2_StrengthDraught.description	Uma poção está aumentando a força e os reflexos de quem a tomou, melhorando o combate, mas aumentando a chance de brigas e o limiar de colapso mental.
+VFEM2_StrengthDraught.stages.fading.label	passando
+VFEM2_StrengthDraught.stages.potent.label	forte
+VFEM2_EfficiencyDraught.label	poção de eficiência
+VFEM2_EfficiencyDraught.description	Uma poção está aumentando a velocidade de trabalho de quem a tomou e diminuindo o gasto de energia, mas aumenta a chance de infarto. Quando o efeito forte acaba, o sono cai muito mais rápido.
+VFEM2_EfficiencyDraught.stages.fading.label	passando
+VFEM2_EfficiencyDraught.stages.potent.label	forte
+VFEM2_PainkillerDraught.label	poção analgésica
+VFEM2_PainkillerDraught.description	Uma poção está impedindo quem a tomou de sentir dor, mas reduz muito o foco e a produtividade.
+VFEM2_PainkillerDraught.stages.fading.label	passando
+VFEM2_PainkillerDraught.stages.potent.label	forte
+VFEM2_TorturerDraught.label	poção do torturador
+VFEM2_TorturerDraught.description	Uma poção está causando dor intensa em quem a tomou, que não consegue nem se mexer. Prisioneiros perdem a resistência rapidamente, e escravos ficam totalmente reprimidos.
+VFEM2_TorturerDraught.stages.fading.label	passando
+VFEM2_TorturerDraught.stages.potent.label	forte
+VFEM2_FocusDraught.label	poção de foco
+VFEM2_FocusDraught.description	Uma poção está aumentando a capacidade de aprendizado de quem a tomou, que ganha mais conhecimento, come mais rápido, descansa mais depressa e ganha mais concentração psíquica enquanto o efeito está forte. Os efeitos se invertem quando a poção está passando.
+VFEM2_FocusDraught.stages.fading.label	passando
+VFEM2_FocusDraught.stages.potent.label	forte
+VFEM2_FertilityDraught.label	poção de fertilidade
+VFEM2_FertilityDraught.description	Uma poção está aumentando artificialmente a fertilidade de quem a tomou. O pequeno reforço dá até a pessoas inférteis uma chance de ter filhos.
+VFEM2_FertilityDraught.stages.fading.label	passando
+VFEM2_FertilityDraught.stages.potent.label	forte
+VFEM2_InspirationDraught.label	poção de inspiração
+VFEM2_InspirationDraught.description	Uma poção está dando clareza mental a quem a tomou, que se concentra em aprender as habilidades pelas quais tem paixão, mas fica pior em combate.
+VFEM2_InspirationDraught.stages.fading.label	passando
+VFEM2_InspirationDraught.stages.potent.label	forte
+VFEM2_StoneskinDraught.label	poção de pele de pedra
+VFEM2_StoneskinDraught.description	Uma poção está transformando a pele de quem a tomou numa armadura embutida. Toda a epiderme engrossa e endurece para resistir a queimaduras, e placas articuladas de queratina se formam onde podem, inclusive na cabeça e no rosto. Sob o efeito da poção é muito difícil ferir alguém fisicamente, mas as placas e a pele dura reduzem bastante a beleza.
+VFEM2_StoneskinDraught.stages.fading.label	passando
+VFEM2_StoneskinDraught.stages.potent.label	forte
+VFEM2_AmnesiaDraught.label	poção de amnésia
+VFEM2_AmnesiaDraught.description	Uma poção está fazendo quem a tomou perder a memória depressa, e as lembranças boas e ruins duram bem menos.
+VFEM2_AmnesiaDraught.stages.fading.label	passando
+VFEM2_AmnesiaDraught.stages.potent.label	forte
+VFEM2_ComaDraught.label	poção do coma
+VFEM2_ComaDraught.description	Uma poção está mantendo quem a tomou num coma induzido quimicamente que desacelera muito o metabolismo.
+VFEM2_ComaDraught.stages.fading.label	passando
+VFEM2_ComaDraught.stages.potent.label	forte
+VFEM2_PoisonDraught.label	poção venenosa
+VFEM2_PoisonDraught.description	Uma poção está desligando o corpo de quem a tomou, reduzindo a consciência a um coma químico que degenera os órgãos e leva inevitavelmente à morte.
+VFEM2_PoisonDraught.stages.potent.label	forte
+VFEM2_PoisonDraught.stages.final.label	final
+VFEM2_PoisonDraughtDumbHediff.label	poção venenosa
+VFEM2_PoisonDraughtDumbHediff.description	Uma poção está desligando o corpo de quem a tomou, reduzindo a consciência a um coma químico que degenera os órgãos e leva inevitavelmente à morte.
+VFEM2_AntitoxDraught.label	poção antitóxica
+VFEM2_AntitoxDraught.description	Uma poção está aumentando a resistência a toxinas de quem a tomou.
+VFEM2_AntitoxDraught.stages.fading.label	passando
+VFEM2_AntitoxDraught.stages.potent.label	forte
+## DefInjected/HediffDef/HediffDefs_Draughts_Biotech.xml
+VFEM2_HemogenDraught.label	poção de hemogênio
+VFEM2_HemogenDraught.description	Uma poção está melhorando todas as características e habilidades de quem usa hemogênio, além de repor o hemogênio aos poucos.
+VFEM2_HemogenDraught.stages.fading.label	passando
+VFEM2_HemogenDraught.stages.potent.label	forte
+VFEM2_HemogenDraughtDumbHediff.label	poção de hemogênio
+VFEM2_HemogenDraughtDumbHediff.description	Uma poção está melhorando todas as características e habilidades de quem usa hemogênio, além de repor o hemogênio aos poucos.
+## DefInjected/HediffDef/HediffDefs_Draughts_Insectoids.xml
+VFEM2_RoyalJellyDraught.label	poção de geleia real
+VFEM2_RoyalJellyDraught.description	Uma poção está acelerando muito o ganho de imunidade de quem a tomou, além de aumentar a consciência e a velocidade de movimento.
+VFEM2_RoyalJellyDraught.stages.fading.label	passando
+VFEM2_RoyalJellyDraught.stages.potent.label	forte
+## DefInjected/HediffDef/HediffDefs_Draughts_Royalty.xml
+VFEM2_ClarityDraught.label	poção de clareza
+VFEM2_ClarityDraught.description	Uma poção está aumentando a sensibilidade psíquica de quem a tomou, melhorando a meditação.
+VFEM2_ClarityDraught.stages.fading.label	passando
+VFEM2_ClarityDraught.stages.potent.label	forte
+## DefInjected/HediffDef/HediffDefs_Rally.xml
+VFEM_RallyWearerHediff.label	reunir tropas
+VFEM_RallyWearerHediff.description	Aura que reúne todos por perto, interrompendo colapsos mentais e impedindo novos colapsos.
+VFEM_RallyAuraBuffHediff.label	aura de reunião
+VFEM_RallyAuraBuffHediff.description	Aura de reunião que impede colapsos mentais.
+## DefInjected/HediffDef/HediffDefs_Sting.xml
+VFEM2_Sting.label	ferroada
+VFEM2_Sting.description	Uma ferroada de abelha dolorida.
+VFEM2_Sting.comps.HediffComp_GetsPermanent.permanentLabel	cicatriz de ferroada
+VFEM2_Sting.labelNoun	uma ferroada de abelha
+VFEM2_Sting.labelNounPretty	{0} em {1}
+## DefInjected/HediffDef/Hediffs_Global_PlagueMask.xml
+VFEM2_PlagueMask.label	máscara de peste
+VFEM2_PlagueMask.description	A máscara de peste impede quem a usa de pegar a peste.
+## DefInjected/IdeoStoryPatternDef/RulePacks_Ideo_Description.xml
+VFEM2_Structure_Norse_Description.rules.rulesStrings[0]	lesson(priority=-1)->as coisas acontecem
+VFEM2_Structure_Norse_Description.rules.rulesStrings[1]	r_pattern->"[r_asatruLessonIntro] [r_lesson]. [r_lessonReinforcement] [r_asatruLessonReinforcement]"\n\n  - [lessonAttribution]
+VFEM2_Structure_Norse_Description.rules.rulesStrings[2]	lessonAttribution->fragmento [edited] de [saga] encontrado [museum]
+VFEM2_Structure_Norse_Description.rules.rulesStrings[3]	edited->danificado
+VFEM2_Structure_Norse_Description.rules.rulesStrings[4]	edited->mal interpretado
+VFEM2_Structure_Norse_Description.rules.rulesStrings[5]	edited->antigo
+VFEM2_Structure_Norse_Description.rules.rulesStrings[6]	edited->esquecido
+VFEM2_Structure_Norse_Description.rules.rulesStrings[7]	edited->preservado
+VFEM2_Structure_Norse_Description.rules.rulesStrings[8]	saga->uma Edda
+VFEM2_Structure_Norse_Description.rules.rulesStrings[9]	saga->uma inscrição em pedra rúnica
+VFEM2_Structure_Norse_Description.rules.rulesStrings[10]	saga->um verso escáldico
+VFEM2_Structure_Norse_Description.rules.rulesStrings[11]	saga->uma saga antiga
+VFEM2_Structure_Norse_Description.rules.rulesStrings[12]	museum->no arquivo da Estação Yggdrasil
+VFEM2_Structure_Norse_Description.rules.rulesStrings[13]	museum->numa colônia estelar distante chamada Himinbjörg
+VFEM2_Structure_Norse_Description.rules.rulesStrings[14]	museum->no Salão Imperial das Relíquias Antigas
+VFEM2_Structure_Norse_Description.rules.rulesStrings[15]	museum->nas ruínas de Jotunheim Prime
+VFEM2_Structure_Norse_Description.rules.rulesStrings[16]	museum->nos cofres dos Guardiões da Memória
+VFEM2_Structure_Norse_Description.rules.rulesStrings[17]	asatruLessonIntro->Ouçam as palavras de Odin, o Pai de Todos, que sussurra do Poço de Urd:
+VFEM2_Structure_Norse_Description.rules.rulesStrings[18]	asatruLessonIntro->Eis que os versos da Völuspá proclamam a todos que quiserem ouvir:
+VFEM2_Structure_Norse_Description.rules.rulesStrings[19]	asatruLessonIntro->Escutem o martelo de Thor quando ele golpeia, pois ele ensina:
+VFEM2_Structure_Norse_Description.rules.rulesStrings[20]	asatruLessonIntro->Atenção, os corvos Huginn e Muninn voam em círculos e gritam sua verdade:
+VFEM2_Structure_Norse_Description.rules.rulesStrings[21]	asatruLessonIntro->À sombra de Yggdrasil, os deuses se reuniram e declararam:
+VFEM2_Structure_Norse_Description.rules.rulesStrings[22]	asatruLessonIntro->Pela luz da bênção de Baldr, saibam:
+VFEM2_Structure_Norse_Description.rules.rulesStrings[23]	asatruLessonIntro->Nos fiordes dos Nove Mundos, a sabedoria ecoa e diz:
+VFEM2_Structure_Norse_Description.rules.rulesStrings[24]	asatruLessonIntro->As runas gravadas fundo nas pedras de Midgard nos ensinam assim:
+VFEM2_Structure_Norse_Description.rules.rulesStrings[25]	asatruLessonReinforcement->Que seus feitos ecoem nos salões de Valhalla.
+VFEM2_Structure_Norse_Description.rules.rulesStrings[26]	asatruLessonReinforcement->As Nornas tecem seu destino com fios de honra.
+VFEM2_Structure_Norse_Description.rules.rulesStrings[27]	asatruLessonReinforcement->Fique firme, pois os deuses recompensam a coragem e a determinação.
+VFEM2_Structure_Norse_Description.rules.rulesStrings[28]	asatruLessonReinforcement->Salve, pois seus atos inspirarão as canções dos escaldos.
+VFEM2_Structure_Norse_Description.rules.rulesStrings[29]	asatruLessonReinforcement->O martelo de Thor abençoa quem defende a verdade e a força.
+VFEM2_Structure_Norse_Description.rules.rulesStrings[30]	asatruLessonReinforcement->O Pai de Todos vigia quem honra os costumes antigos.
+VFEM2_Structure_Norse_Description.rules.rulesStrings[31]	asatruLessonReinforcement->Que você encontre a vitória nos laços sagrados do parentesco.
+VFEM2_Structure_Norse_Description.rules.rulesStrings[32]	lessonReinforcement->E assim a história seguirá viva.
+## DefInjected/IncidentDef/Incidents.xml
+VFEM_PillageRaid.label	ataque (pilhagem)
+VFEM_PillageRaid.letterLabel	Ataque (pilhagem)
+VFEM_PillageRaid.letterText	Um grupo de saqueadores chegou por perto. Eles vão usar tochas para incendiar sua base. Não estão interessados em lutar: só querem roubar seus bens e queimar suas casas.
+## DefInjected/JobDef/Jobs_Joy.xml
+VFEM2_Play_TrainingDummy.reportString	treinando no boneco.
+VFEM2_Play_Archery.reportString	praticando arco e flecha.
+## DefInjected/JobDef/Jobs_Misc.xml
+VFEM2_TakeHoneyOutOfApiary.reportString	tirando mel de TargetA.
+VFEM2_TendToApiary.reportString	cuidando de TargetA.
+VFEM_IgniteWithTorches.reportString	pondo fogo em TargetA com tochas.
+## DefInjected/MemeDef/Memes_Structures_Basic.xml
+VFEM2_Structure_Norse.label	nórdico
+VFEM2_Structure_Norse.description	Esta ideoligião descende do paganismo germânico, também conhecido como Ásatrú. Seus preceitos podem ser bem diferentes dos de milhares de anos atrás, mas os símbolos são parecidos.
+VFEM2_Structure_Norse.fixedDeityNameTypes.0.type	Pai de Todos e Deus da Sabedoria
+VFEM2_Structure_Norse.fixedDeityNameTypes.1.type	Deus do Trovão e da Força
+VFEM2_Structure_Norse.fixedDeityNameTypes.2.type	Deusa do Casamento e da Profecia
+VFEM2_Structure_Norse.fixedDeityNameTypes.3.type	Deus da Travessura e da Trapaça
+VFEM2_Structure_Norse.fixedDeityNameTypes.4.type	Deus da Beleza e da Luz
+VFEM2_Structure_Norse.fixedDeityNameTypes.5.type	Deus da Guerra e da Justiça
+VFEM2_Structure_Norse.fixedDeityNameTypes.6.type	Deusa do Amor e da Fertilidade
+VFEM2_Structure_Norse.fixedDeityNameTypes.7.type	Deus da Fertilidade e da Paz
+VFEM2_Structure_Norse.fixedDeityNameTypes.8.type	Deus do Mar e da Riqueza
+VFEM2_Structure_Norse.fixedDeityNameTypes.9.type	Deusa do Inverno e da Caça
+VFEM2_Structure_Norse.fixedDeityNameTypes.10.type	Guardião da Bifrost
+VFEM2_Structure_Norse.fixedDeityNameTypes.11.type	Deusa do Submundo
+VFEM2_Structure_Norse.fixedDeityNameTypes.12.type	Lobo do Caos
+VFEM2_Structure_Norse.fixedDeityNameTypes.13.type	Serpente do Mundo
+VFEM2_Structure_Norse.fixedDeityNameTypes.14.type	Deusa da Juventude Eterna
+VFEM2_Structure_Norse.fixedDeityNameTypes.15.type	Deus da Poesia e da Eloquência
+VFEM2_Structure_Norse.fixedDeityNameTypes.16.type	Deusa da Fidelidade
+VFEM2_Structure_Norse.fixedDeityNameTypes.17.type	Deus da Vingança e do Silêncio
+VFEM2_Structure_Norse.fixedDeityNameTypes.18.type	Deus da Desforra
+VFEM2_Structure_Norse.fixedDeityNameTypes.19.type	Deus da Força
+VFEM2_Structure_Norse.fixedDeityNameTypes.20.type	Deus da Coragem
+VFEM2_Structure_Norse.fixedDeityNameTypes.21.type	Gigante de Fogo e Arauto do Ragnarök
+VFEM2_Structure_Norse.fixedDeityNameTypes.22.type	Gigante Primordial
+VFEM2_Structure_Norse.fixedDeityNameTypes.23.type	Guardião da Sabedoria
+VFEM2_Structure_Norse.fixedDeityNameTypes.24.type	Deusa do Mar
+VFEM2_Structure_Norse.fixedDeityNameTypes.25.type	Deus do Oceano
+VFEM2_Structure_Norse.fixedDeityNameTypes.26.type	Dragão das Raízes de Yggdrasil
+VFEM2_Structure_Norse.fixedDeityNameTypes.27.type	Deusa da Feitiçaria
+VFEM2_Structure_Norse.fixedDeityNameTypes.28.type	Deus da Inspiração
+VFEM2_Structure_Norse.generalRules.rulesStrings[0]	memeAdjective->nórdico
+VFEM2_Structure_Norse.generalRules.rulesStrings[1]	memeAdjective->gentio
+VFEM2_Structure_Norse.generalRules.rulesStrings[2]	memeAdjective->pagão
+VFEM2_Structure_Norse.generalRules.rulesStrings[3]	memeAdjective->ancestral
+VFEM2_Structure_Norse.generalRules.rulesStrings[4]	memeAdjective->tradicional
+VFEM2_Structure_Norse.generalRules.rulesStrings[5]	memeAdjective->da fé antiga
+VFEM2_Structure_Norse.generalRules.rulesStrings[6]	memeLeaderNoun->godi
+VFEM2_Structure_Norse.generalRules.rulesStrings[7]	memeLeaderNoun->völva
+VFEM2_Structure_Norse.generalRules.rulesStrings[8]	memeLeaderAdjective->sagrado
+VFEM2_Structure_Norse.generalRules.rulesStrings[9]	memeLeaderAdjective->rúnico
+VFEM2_Structure_Norse.generalRules.rulesStrings[10]	memeMoralist->escaldo
+VFEM2_Structure_Norse.generalRules.rulesStrings[11]	memeMoralist->vidente
+VFEM2_Structure_Norse.generalRules.rulesStrings[12]	memeMoralist->sábio
+VFEM2_Structure_Norse.generalRules.rulesStrings[13]	memeMoralist->sábio ancião
+VFEM2_Structure_Norse.generalRules.rulesStrings[14]	memeMoralist->guardião do saber
+VFEM2_Structure_Norse.generalRules.rulesStrings[15]	memeMoralist->mestre das runas
+VFEM2_Structure_Norse.generalRules.rulesStrings[16]	memeMoralist->guia espiritual
+VFEM2_Structure_Norse.symbolPacks.0.adjective	nórdico
+VFEM2_Structure_Norse.symbolPacks.0.member	viking
+VFEM2_Structure_Norse.symbolPacks.0.theme	vikings
+VFEM2_Structure_Norse.worshipRoomLabel	salão principal
