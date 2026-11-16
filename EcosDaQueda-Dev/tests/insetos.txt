@@ -1,0 +1,14 @@
+# Bloco E: a colmeia sem recall (VFE Insectoids 2). Rodar com -Profile full.
+# Colmeia morta por colono: Fama na Hélice (+2) e favor se o líder for vassalo dela (1 a cada 2). Sem autor: não conta.
+newgame
+timeout 900
+leader set 0
+join helice
+wait 1h
+hive Hive
+hive VFEI2_NuchadusHive
+hive VFEI2_SmallBurrow
+hive nature Hive
+trader EQ_Base_Helice VFEI2_
+trader EQ_Base_Helice Jelly
+trader EQ_Caravan_Helice VFEI2_

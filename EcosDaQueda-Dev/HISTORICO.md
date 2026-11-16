@@ -77,6 +77,8 @@ Ver DESIGN.md › Sistemas planejados: relações fixas, Fama/Infâmia, postos, 
 
 | Data | Mudança |
 |---|---|
+| 2026-11-16 | Tradução PT-BR do VFE Medieval 2 (`traducao/pt/oskarpotocki.vfe.medieval2/01–11.tsv`, 1464/1540: histórias, facções, poções, armas, missões de cerco/escaramuça, heráldica, vinho/hidromel); geradores de nomes ficam em inglês; `tests/traducao.txt` confere vinho, balestra, alquimia |
+| 2026-11-16 | Etapa 2 bloco E: "a colmeia sem recall" (`InsectRecallDef`, `EQ_Insects.xml`, patch em `Thing.Kill`): colmeia/toca de inseto morta pelo jogador = Fama +2 na Hélice e favor 1 a cada 2 (`FavorEventType.InsectHiveDestroyed`); Hélice vende pherocores, quitina e geleia e compra pherocores; comandos `hive` e `trader <kind> <filtro>`, teste `insetos` |
 | 2026-11-16 | Etapa 2 bloco D: arsenais dos Não Catalogados (extraviado, olheiro, dilacerador, primeiro espécime) com armas do VFE Medieval 2; Coro: vinho no estipêndio (cargo 3+) e no dízimo, serviço "torneio de corte" (`costThings`: serviço que cobra itens); comando `count`, teste `medieval` |
 | 2026-11-16 | Etapa 2 bloco K: bases das 4 potências no Custom Base Framework (`1.7/Defs/EQ_Bases.xml`: 4 `SettlementPlanDef` + 9 listas de guarnição, prédios do CBF); comando `base <fac>` (gera o mapa da base, plano, prédios, defensores), teste `bases` |
 | 2026-11-16 | Etapa 2 bloco B: 25 permissões por cargo (`1.7/Defs/EQ_Permits.xml`, gerado por `scripts/permissoes.py`) sobre o sistema de permissões da Royalty; 1 ponto por cargo (`permitPointsAwarded` em `EQ_TitleBase`); comando `permit`, teste `permissoes` |

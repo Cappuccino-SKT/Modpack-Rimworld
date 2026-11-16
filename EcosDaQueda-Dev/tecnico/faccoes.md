@@ -86,3 +86,9 @@
 - `1.7/Defs/EQ_Bases.xml` (tudo com `MayRequire="EvilEyeGuy.CustomBaseFramework"`): `EQ_Plan_Silencio/Helice/Forja/Coro` com `factionTags` = a nossa FactionDef, o que tira a potência dos planos genéricos do CBF. Prédios por etiqueta `CBF_Vanilla_*` (lista de categorias com peças: contar `<categories>` nos `PieceDef` do CBF; `CBF_Vanilla_GiantTurret` só existe com o mod da torre imperial, não usar). Garagem/pátio de veículos com `MayRequire` do VVE.
 - **Defensores** (decompilado de `Defenders.Populate`): com `wealthFactor` > 0 o CBF usa orçamento por riqueza (`GarrisonBudget`); põe primeiro as nossas listas `EQ_Garrison_*` (`PawnListDef`, papéis Guard/Sentry/Civilian) e completa com o grupo `Settlement` da facção. `defenderPoints` só vale fora desse modo. O número varia com a riqueza sorteada.
 - Teste: `Angriffsvorschau.Plan(Settlement)` dá o plano que a base vai usar.
+
+## A colmeia sem recall (insetos)
+
+- `Source/EcosDaQueda/Insects.cs` + `1.7/Defs/EQ_Insects.xml` (`InsectRecallDef`): prefixo em `Thing.Kill` (a `RimWorld.Hive.Kill` chama a base no fim; Building não sobrescreve `Kill`). Conta se for `Hive` (vanilla e as colmeias do VFE Insectoids 2, todas `thingClass` Hive) ou se o nome curto da classe estiver em `extraThingClasses` (`Burrow`, tocas do VFE). Só conta quando `dinfo.Instigator` é do jogador (fogo e colapso não contam).
+- Fama via `WorldComponent_Reputation.Record(Hélice, famePerHive, 0)` (repercute nas outras potências pelas regras normais); favor via `EQFavor.Notify(FavorEventType.InsectHiveDestroyed)` + `favorSources` da Hélice.
+- Comércio: `StockGenerator_MultiDef` com os 5 `VFEI2_Pherocore*` e `StockGenerator_BuySingleDef` para comprá-los, só na loja e na caravana da Hélice.
