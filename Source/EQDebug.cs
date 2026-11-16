@@ -892,6 +892,73 @@ namespace EcosDaQueda.DebugTools
             return sb.ToString();
         }
 
+        /// <summary>Questão androide: android [status] | android fab [awake] (estação de criação real) |
+        /// android spawn | android awaken | android recruit (desperto dos Fora de Linha vira colono).</summary>
+        public static string Android(string action)
+        {
+            if (!EQAndroids.Active) return "VRE Android ausente";
+            AndroidPolicyDef d = AndroidPolicyDef.Current;
+            Map map = Find.CurrentMap ?? Find.AnyPlayerHomeMap;
+            string r = "";
+            switch (action)
+            {
+                case null:
+                case "status":
+                    break;
+                case "fab":
+                case "fabawake":
+                {
+                    ThingDef stDef = DefDatabase<ThingDef>.GetNamed("VREA_AndroidCreationStation");
+                    Thing st = ThingMaker.MakeThing(stDef, stDef.MadeFromStuff ? GenStuff.DefaultStuffFor(stDef) : null);
+                    IntVec3 c = CellFinder.RandomClosewalkCellNear(map.Center, map, 8);
+                    GenSpawn.Spawn(st, c, map);
+                    st.SetFaction(Faction.OfPlayer);
+                    var proj = new CustomXenotype { name = "teste" };
+                    XenotypeDef baseX = DefDatabase<XenotypeDef>.GetNamed(action == "fabawake" ? "VREA_AndroidAwakened" : "VREA_AndroidBasic");
+                    proj.genes.AddRange(baseX.genes);
+                    Traverse.Create(st).Field("curAndroidProject").SetValue(proj);
+                    AccessTools.Method(st.GetType(), "FinishAndroidProject").Invoke(st, null);
+                    Pawn novo = c.GetThingList(map).OfType<Pawn>().FirstOrDefault(p => EQAndroids.IsAndroid(p));
+                    r = "fabricado: " + (novo?.LabelShort ?? "NENHUM") + " desperto=" + (novo != null && EQAndroids.IsAwakenedAndroid(novo))
+                        + " licença=" + EQAndroids.HasLicense(d) + "\n";
+                    st.Destroy();
+                    break;
+                }
+                case "spawn":
+                {
+                    Pawn p = PawnGenerator.GeneratePawn(new PawnGenerationRequest(DefDatabase<PawnKindDef>.GetNamed("VREA_AndroidBasic"), Faction.OfPlayer, forceGenerateNewPawn: true));
+                    GenSpawn.Spawn(p, CellFinder.RandomClosewalkCellNear(map.Center, map, 8), map);
+                    r = "gerado: " + p.LabelShort + " desperto=" + EQAndroids.IsAwakenedAndroid(p) + "\n";
+                    break;
+                }
+                case "awaken":
+                {
+                    Pawn p = map.mapPawns.FreeColonistsSpawned.FirstOrDefault(x => EQAndroids.IsAndroid(x) && !EQAndroids.IsAwakenedAndroid(x));
+                    if (p == null) return "nenhum androide não desperto na colônia";
+                    Gene g = p.genes.GenesListForReading.First(x => x.GetType().Name == "Gene_SyntheticBody");
+                    AccessTools.Method(g.GetType(), "Awaken").Invoke(g, new object[] { (TaggedString)"teste", (TaggedString)"teste" });
+                    r = "despertou: " + p.LabelShort + " desperto=" + EQAndroids.IsAwakenedAndroid(p) + "\n";
+                    break;
+                }
+                case "recruit":
+                {
+                    Faction fdl = EQUtil.MainFaction(DefDatabase<FactionDef>.GetNamed("EQ_Faction_ForaDeLinha"));
+                    Pawn p = PawnGenerator.GeneratePawn(new PawnGenerationRequest(DefDatabase<PawnKindDef>.GetNamed("EQ_ForaDeLinha_Unidade"), fdl, forceGenerateNewPawn: true));
+                    GenSpawn.Spawn(p, CellFinder.RandomClosewalkCellNear(map.Center, map, 8), map);
+                    p.SetFaction(Faction.OfPlayer);
+                    r = "recrutado: " + p.LabelShort + " desperto=" + EQAndroids.IsAwakenedAndroid(p) + "\n";
+                    break;
+                }
+                default:
+                    return "ação desconhecida: " + action;
+            }
+            Faction forja = EQUtil.MainFaction(d.licensor), lib = EQUtil.MainFaction(d.liberator);
+            var rec = WorldComponent_Reputation.Current?.Get(forja);
+            return r + "licença(" + EQAndroids.LicenseTitleLabel(d) + ")=" + EQAndroids.HasLicense(d)
+                + " | Forja: boaVontade=" + forja?.PlayerGoodwill + " fama=" + rec?.fame.ToString("0.#") + " infâmia=" + rec?.infamy.ToString("0.#")
+                + " | ForaDeLinha: boaVontade=" + lib?.PlayerGoodwill;
+        }
+
         /// <summary>Caminhos psíquicos licenciados (VPE). psy [show] | psy title &lt;n&gt; (cargo do Coro no líder; 0 tira) |
         /// psy grant | psy gen &lt;PawnKind&gt; &lt;n&gt;.</summary>
         public static string Psy(string action, string a2, string a3)
@@ -907,11 +974,11 @@ namespace EcosDaQueda.DebugTools
                     break;
                 case "title":
                 {
-                    Faction coro = Find.FactionManager.FirstFactionOfDef(DefDatabase<FactionDef>.GetNamed("EQ_Faction_Coro"));
+                    Faction coro = a3 != null ? FindFaction(a3) : Find.FactionManager.FirstFactionOfDef(DefDatabase<FactionDef>.GetNamed("EQ_Faction_Coro"));
                     FactionAllegianceDef d = FactionAllegianceDef.For(coro.def);
                     int n = int.Parse(a2 ?? "0");
                     l.royalty.SetTitle(coro, n <= 0 ? null : d.ranks[n - 1].title, grantRewards: false, rewardsOnlyForNewestTitle: false, sendLetter: false);
-                    lic = "título do Coro := " + (n <= 0 ? "nenhum" : d.ranks[n - 1].title.defName) + "\n" + lic;
+                    lic = "título de " + coro.Name + " := " + (n <= 0 ? "nenhum" : d.ranks[n - 1].title.defName) + "\n" + lic;
                     break;
                 }
                 case "grant":
