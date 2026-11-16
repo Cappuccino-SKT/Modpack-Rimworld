@@ -15,6 +15,7 @@ namespace EcosDaQueda
             EQArsenal.Apply();
             EQTrade.Apply();
             EQPsycasts.Apply();
+            EQAndroids.Apply();
         }
     }
 

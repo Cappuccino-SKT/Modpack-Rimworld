@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <!-- Questão androide (Source/EcosDaQueda/Androids.cs). Só tem efeito com o VRE Android.
+       Valores de boa vontade: o sistema de reputação converte em Fama/Infâmia (1 para 1) e repercute nas potências. -->
+  <EcosDaQueda.AndroidPolicyDef>
+    <defName>EQ_AndroidPolicy</defName>
+    <licensor>EQ_Faction_Forja</licensor>
+    <!-- 0 = primeiro cargo; 1 = técnico licenciado -->
+    <licenseRank>1</licenseRank>
+    <piracyGoodwill>-8</piracyGoodwill>
+    <piracyText>Androide sem número de série. {FACTION_name} detectou uma unidade fabricada sem licença (exige o cargo de {TITLE}) e abriu um processo por pirataria de firmware.</piracyText>
+    <licensedText>Unidade registrada. {FACTION_name} agradece a preferência e lembra que a garantia não cobre consciência.</licensedText>
+    <awakenedGoodwill>-10</awakenedGoodwill>
+    <liberator>EQ_Faction_ForaDeLinha</liberator>
+    <liberatorGoodwill>10</liberatorGoodwill>
+    <awakenedText>{PAWN_nameDef} está desperto na sua colônia. Para {FACTION_name} isso é um defeito de fábrica com recall pendente; para os Fora de Linha, é um chamado encerrado com sucesso.</awakenedText>
+  </EcosDaQueda.AndroidPolicyDef>
+</Defs>
