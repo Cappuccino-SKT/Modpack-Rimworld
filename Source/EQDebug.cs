@@ -892,6 +892,46 @@ namespace EcosDaQueda.DebugTools
             return sb.ToString();
         }
 
+        /// <summary>Base de uma potência (Custom Base Framework): base &lt;fac&gt; gera o mapa do assentamento mais
+        /// próximo dela, diz o plano usado e conta prédios e defensores; depois descarta o mapa.</summary>
+        public static string Base(Faction f)
+        {
+            if (f == null) return "facção não encontrada";
+            Map home = Find.AnyPlayerHomeMap;
+            Settlement s = Find.WorldObjects.Settlements.Where(x => x.Faction == f && !x.HasMap)
+                .OrderBy(x => home == null ? 0f : Find.WorldGrid.ApproxDistanceInTiles(x.Tile, home.Tile)).FirstOrDefault();
+            if (s == null) return "sem assentamento livre de " + f.Name;
+            var sb = new StringBuilder();
+            Type preview = AccessTools.TypeByName("CustomBaseFramework.Angriffsvorschau");
+            Type start = AccessTools.TypeByName("CustomBaseFramework.CBFStart");
+            if (preview != null)
+            {
+                object p = null;
+                try { p = AccessTools.Method(preview, "Plan", new[] { typeof(Settlement) })?.Invoke(null, new object[] { s }); }
+                catch (Exception ex) { sb.AppendLine("  (prévia falhou: " + (ex.InnerException ?? ex).Message + ")"); }
+                sb.AppendLine("plano previsto: " + ((p as Def)?.defName ?? "nenhum (base do jogo)"));
+            }
+            else sb.AppendLine("CBF ausente");
+            Map map;
+            try { map = GetOrGenerateMapUtility.GetOrGenerateMap(s.Tile, null); }
+            catch (Exception ex) { return sb + "ERRO gerando o mapa: " + (ex.InnerException ?? ex); }
+            if (start != null)
+                sb.AppendLine("plano construído: " + ((AccessTools.Property(start, "Plan")?.GetValue(null) as Def)?.defName ?? "nenhum"));
+            var predios = map.listerThings.AllThings.Where(t => t is Building && t.def.building != null && !t.def.building.isNaturalRock && t.def != ThingDefOf.Wall)
+                .GroupBy(t => t.def.label).OrderByDescending(g => g.Count()).Take(18).Select(g => g.Count() + " " + g.Key);
+            sb.AppendLine("mapa " + map.Size.x + "x" + map.Size.z + " riqueza=" + map.wealthWatcher.WealthTotal.ToString("0")
+                + " paredes=" + map.listerThings.ThingsOfDef(ThingDefOf.Wall).Count + " torres=" + map.listerBuildings.allBuildingsNonColonist.Count(b => b is Building_Turret));
+            sb.AppendLine("prédios: " + string.Join(", ", predios));
+            var gente = map.mapPawns.AllPawnsSpawned.Where(p => p.Faction == f);
+            sb.AppendLine("defensores=" + gente.Count() + ": " + string.Join(", ", gente.GroupBy(p => p.kindDef.defName).OrderByDescending(g => g.Count()).Select(g => g.Count() + "x " + g.Key)));
+            var outros = map.mapPawns.AllPawnsSpawned.Where(p => p.Faction != f && p.RaceProps.Humanlike);
+            if (outros.Any()) sb.AppendLine("outras pessoas: " + string.Join(", ", outros.GroupBy(p => (p.Faction?.def.defName ?? "sem facção") + "/" + p.kindDef.defName).Select(g => g.Count() + "x " + g.Key)));
+            var veic = map.listerThings.AllThings.Count(t => t.GetType().Name.Contains("Vehicle"));
+            sb.Append("veículos=" + veic);
+            Current.Game.DeinitAndRemoveMap(map, false);
+            return sb.ToString();
+        }
+
         /// <summary>Permissões por cargo: permit [list] | permit buy &lt;defName&gt; | permit use &lt;defName&gt; (pelo menu de ajuda real).</summary>
         public static string Permit(string action, string name)
         {

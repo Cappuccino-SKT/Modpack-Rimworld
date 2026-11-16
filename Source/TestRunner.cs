@@ -313,6 +313,7 @@ namespace EcosDaQueda.DebugTools
                 case "start": return EQDebug.StartInfo();
                 case "modusage": return EQDebug.ModUsage(Arg(1));
                 case "xenogen": return EQDebug.XenoGen(Arg(1), int.Parse(Arg(2) ?? "20"));
+                case "base": return EQDebug.Base(Fac(1));
                 case "permit": return EQDebug.Permit(Arg(1), Arg(2));
                 case "android": return EQDebug.Android(Arg(1) == "fab" && Arg(2) == "awake" ? "fabawake" : Arg(1));
                 case "psy": return EQDebug.Psy(Arg(1), Arg(2), Arg(3));
