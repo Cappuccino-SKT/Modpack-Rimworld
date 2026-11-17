@@ -264,6 +264,33 @@
       "description": "Na ficha técnica da Linha Robusta, a fêmea constava como \"unidade de reposição\": menor, mais frágil, fértil e de gestação rápida, para o lote se repor sozinho no chão de fábrica. A Hélice achou a solução elegante.\n\nO Reino do Lodo leu a ficha técnica como escritura e fez dela a sua lei. A bruta tem as presas, a pele verde e a resistência a toxinas da linhagem; na poluição pensa mais rápido e trabalha mais, e não serve para a briga. Ela sabe exatamente o que a ficha técnica diz sobre ela. Também sabe ler, o que os brutos ainda não descobriram."
     },
     {
+      "xtp": "Inseto Rainha",
+      "defName": "EQ_Xeno_InsetoRainha",
+      "label": "rainha da colmeia",
+      "inheritable": true,
+      "combatPowerFactor": 0.8,
+      "descriptionShort": "Fêmea fértil da Colmeia Erguida: pequena, longeva, de corpo de quitina. Põe a próxima geração e manda nas outras.",
+      "description": "Insetoides que evoluíram até ficar de pé, aprender a falar e erguer vilas. A rainha é a fêmea fértil da linhagem: pequena, de quitina leve, longeva e com um metabolismo que nenhum laboratório soube explicar. Não luta nem trabalha na mina; cozinha, negocia, pensa e põe a próxima geração, que sai do peito de quem a carrega.\n\nVive nos túneis, enxerga no escuro e prospera na poluição."
+    },
+    {
+      "xtp": "Inseto Soldado",
+      "defName": "EQ_Xeno_InsetoSoldado",
+      "label": "soldado da colmeia",
+      "inheritable": true,
+      "combatPowerFactor": 1.5,
+      "descriptionShort": "Macho guerreiro da Colmeia Erguida: enorme, de carapaça grossa, garras e veneno. Não atira, não aprende e não para.",
+      "description": "Insetoides que evoluíram até ficar de pé, aprender a falar e erguer vilas. O soldado é o macho de guerra da linhagem: corpo enorme, carapaça grossa, garra pneumática, glândula de veneno e um golpe que racha pedra. Não sente quase dor, não recua e não larga a luta.\n\nTambém não atira, não aprende e não serve para mais nada; envelhece rápido e dorme muito. Cava túneis como ninguém."
+    },
+    {
+      "xtp": "Inseto Trabalhador",
+      "defName": "EQ_Xeno_InsetoTrabalhador",
+      "label": "operário da colmeia",
+      "inheritable": true,
+      "combatPowerFactor": 1.0,
+      "descriptionShort": "Macho operário da Colmeia Erguida: pequeno, resistente, bom de obra, de roça, de bicho e de remendo. Ruim de briga e de conversa.",
+      "description": "Insetoides que evoluíram até ficar de pé, aprender a falar e erguer vilas. O operário é o macho comum da linhagem e quem ergue as vilas: pequeno, de quitina média, digere qualquer coisa, carrega peso e secreta feromônios que acalmam os outros.\n\nÉ bom de obra, de roça, de bicho, de remendo e de mina; ruim de briga, de conversa e de livro. Envelhece rápido. Na poluição, trabalha ainda mais."
+    },
+    {
       "xtp": "Fungobi",
       "defName": "EQ_Xeno_Fungobi",
       "label": "fungobi",

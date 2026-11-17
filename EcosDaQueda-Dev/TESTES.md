@@ -36,6 +36,8 @@
 | `serum <n>` | um colono toma n doses do Soro |
 | `cecheck [armas\|melee\|roupas\|veiculos]` | compatibilidade com o Combat Extended: lista por mod o que não tem verbo CE, ToolCE, Bulk ou projétil CE (roteiro `tests/ce-compat.txt`, perfil full) |
 | `movingbases` | assentamentos móveis (VEF MovingBase): dono, tile, parada/andando, estoque, se aceita negociar |
+| `research <arquivo>` | grava todos os projetos de pesquisa (TSV: mod, nível, aba, custo, pré-requisitos, o que liberam) no arquivo; resumo por nível na saída (roteiro `tests/research.txt`) |
+| `tech status` ; `tech try\|grant\|revoke\|finish\|current <projeto>` ; `tech work [pontos]` | Etapa 3: por ramo (total, concluídos, com acesso, podem começar, abas), projetos livres com pré-requisito travado, sobreposições; testa/libera/revoga acesso; conclui; define a pesquisa atual; simula pesquisa do 1º colono (roteiro `tests/pesquisa.txt`) |
 | `factions` | lista todas as facções do mundo: def, mod de origem, oculta, assentamentos, tecnologia, relação com o jogador |
 | `faction <fac>` ; `raid <fac> [pontos] [bichos]` | descreve qualquer facção (líder, assentamentos, ideologia, relações fixas); força um ataque dela à colônia e conta quem veio e quantos animais têm lorde/dever; `bichos` usa só os grupos de combate com animais |
 | `pawngen <PawnKind>` ou `pawngen fac:<nome> [n]` | gera n pawns (padrão 20) e conta traços (e se o traço forçado veio em todos: `faltou_traco`) e itens do inventário |

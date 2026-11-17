@@ -40,6 +40,8 @@
 - **Ideologia com xeno preferido:** o editor guarda no preceito `PreferredXenotype` o xeno personalizado inteiro (`<customXenotype>`), que não bate com o nosso `XenotypeDef`. O `ideologias.py` troca por `<xenotype>EQ_Xeno_*</xenotype>` usando o mapa `xenotipos` da entrada no `ideologias.json` (nome do xeno no editor → defName); xeno sem mapa é erro.
 - **Reino do Lodo** (medieval): herda de `OutlanderFactionBase` com `techLevel` Medieval; comerciantes do VFE Medieval 2 (`VFEM2_Caravan_Medieval_*`, `VFEM2_Base/Visitor_Medieval_Standard`, com `MayRequire`) e neolíticos de reserva. As bases vêm dos planos medievais genéricos do CBF (ex.: `CBF_Plan_VFEM2_MarketCity`).
 
+- **Colmeia Erguida** (neolítica): ideologia provisória sem `.rid` = `fixedIdeo` + `ideoName` + `forcedMemes` (o jogo sorteia o resto: cargos e preceitos com nomes em inglês). Quando o usuário mandar o `.rid`, ligar em `EQ_IdeoTemplates.xml` e ajustar os `forcedMemes`. Xenos de gênero fixo (rainha fêmea; soldado e operário machos) → PawnKinds com `fixedGender`; a rainha só como líder.
+
 ## PawnKinds
 
 - Traço forçado: `<forcedTraits><li MayRequire="..."><def>VTE_X</def></li></forcedTraits>` (`List<TraitRequirement>`). Inventário extra sem herdar o `skipChance` 0,9 dos mercenários: `<inventoryOptions Inherit="False"><subOptionsTakeAll>` com um `skipChance` por item (bloco L).

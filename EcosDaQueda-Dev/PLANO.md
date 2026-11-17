@@ -60,6 +60,8 @@ Preliminar: o que hoje **não tem ligação** com as nossas facções e sistemas
 | N. Mundo | V Landmarks Expanded | sem ligação | marcos com nome e história nossos |
 | O. Genes | VRE Starjack, Phytokin, Fungoid, Saurid, Lycanthrope | 0 a 2 genes usados | conferir se algum xeno nosso deve usá-los; se não, só como mercadoria do Soro/Hélice |
 
+**Andamento (2026-11-17, bloco O):** feito — conferido: nossos xenos já usam genes do Fungoid (Fungobi, Engenheiro-Primaz), Lycanthrope (Bruto/Bruta, Fungobi, Lote Descontinuado, Engenheiro-Primaz), Saurid (Vagante Esquelético, Lote Descontinuado) e Phytokin (Sangue Maestro); só o Starjack ficou sem uso, e nenhum xeno precisou mudar. O resto vira mercadoria: **Linha Exótica da Hélice**, pacotes de genes montados só com genes desses mods e do VRE Insector (reserva de 71 genes), na loja (2–4 pacotes, 1–2 genes) e na caravana (1–2, 1 gene). Não feito: Soro com genes exóticos, colmeia humanoide com os xenos de inseto do usuário (etapa 5). **Etapa 2 concluída.**
+
 **Andamento (2026-11-17, bloco N):** feito — 10 marcos próprios (`Defs/World/EQ_Landmarks.xml`) com nome sorteado em PT-BR e história na descrição, reaproveitando mutadores do Odyssey e do VEE: cratera da Queda (+ destroços mecanoides), campo da Última Ofensiva (superfície bombardeada), fazenda-modelo da Linha Robusta (berço do Reino do Lodo), poços da Primeira Escuta (Silêncio), cicatriz do Projeto Jardim (Hélice), pátio de recall (Forja), laboratório da colmeia sem recall, plataforma da Evacuação (Império/Coro), guarnição esquecida e refinaria em greve (Sindicato). Saem ~10% dos marcos do mundo. Não feito: tradução dos 59 marcos do VEE (seguem em inglês), marcos como fonte de dados antigos (etapa 3), efeito de jogo por facção. Próximo: O.
 
 **Andamento (2026-11-17, bloco M):** feito — blindado (veículo de combate) montado sem o cargo cavaleiro da garantia da Forja é pirataria (Forja -10); títulos de posse que viram veículo ao usar: Feira vende lata-velha e seminovo (usados: peças a 35–95%, tanque baixo), Forja vende blindado registrado (só com o cargo). Descoberta: o Vehicle Framework deixa desligados na versão oficial os veículos em ataques de NPC e o comércio de veículos, então "caravanas motorizadas" de NPC e blindados nos ataques da Forja ficam impossíveis por enquanto. Não feito: veículos como tecnologia licenciada (etapa 3). Próximos: N, O.
@@ -90,18 +92,21 @@ Ordem sugerida dos blocos: **A → C → B → G → H** (dão identidade às po
 
 ## Etapa 3 — Sistema de tecnologia próprio (grande)
 
-Ideia central: num mundo pós-apocalíptico ninguém "inventa" do zero; **recupera, copia ou recebe licença**. Proposta **(decidir os números e o que fica em cada potência)**:
+Ideia central: num mundo pós-apocalíptico ninguém "inventa" do zero; **recupera, copia ou recebe licença**.
 
-1. **Pesquisa de bancada limitada:** vai sozinha só até um teto (neolítico/medieval e o básico industrial). Daí em diante a pesquisa exige um dos três caminhos abaixo.
-2. **Sucata e engenharia reversa:** desmontar um item numa bancada própria dá progresso no projeto que o fabrica (usa Vanilla Recycling).
-3. **Dados antigos:** discos e manuais achados em abrigos (VQE Ancients), ruínas, marcos e no estoque da Feira; cada um libera ou acelera um projeto.
-4. **Licenças das potências:** cada potência tem um ramo exclusivo, liberado por cargo (favor) e revogado se você sai ou vira inimigo:
-   - **Silêncio:** Anomaly, bioferrite, pesquisa do Vazio.
-   - **Hélice:** genética, xenogermes, próteses avançadas (EPOE), o Soro.
-   - **Forja:** mecanoides, veículos, armaduras-caixão, armas pesadas, androides.
-   - **Coro:** psycasts, eltex, itens nobres.
-   Roubar tecnologia (atacar comboio, engenharia reversa de item licenciado) é possível e dá Infâmia.
-5. Tech Advancing e YART já estão no modpack: conferir se ajudam ou atrapalham (o avanço automático de nível tecnológico pode quebrar o teto).
+**Decidido com o usuário (2026-11-17):**
+- **Teto da bancada: industrial básico.** Neolítico, medieval e o industrial comum (eletricidade, usinagem, microeletrônica, armas de fogo, hidroponia etc.) se pesquisam normalmente. O resto exige um dos caminhos abaixo.
+- **Árvore de pesquisa própria do mod:** abas nossas no lugar das abas soltas de cada mod (Bancada, Velho Mundo, Silêncio, Hélice, Forja, Coro), com posições geradas por script a partir dos pré-requisitos.
+- **Engenharia reversa dá % do projeto** (ex.: 15–30% por item, conforme o valor); vários itens para liberar. Usa Vanilla Recycling.
+- **Licença por cargo ou compra com favor:** o cargo licencia de graça certos projetos (como os psycasts do Coro); quem não tem o cargo pode comprar caro com favor.
+- **Licença perdida vira pirataria:** o projeto continua conhecido; fabricar sem licença dá Infâmia (como drones e androides da Forja).
+- **Classificação proposta dos 279 projetos:** `tecnico/pesquisa-classificacao.md` (gerada por `scripts/research-classify.py`; lista crua por `tests/research.txt` → `tests/out/research.tsv`). Bancada 119, Velho Mundo 21 (sem dono: só sucata/dados), Silêncio 52 (Anomaly, sensores, arquivo), Hélice 35 (genética, EPOE, implantes), Forja 45 (mecanoides, veículos de combate, armaduras, armas de energia, nave), Coro 7 (eltex, itens nobres; os psycasts já são licenciados por cargo). Aprovada pelo usuário em 2026-11-17.
+
+**Blocos:**
+- **3a — Trava e árvore: feito (2026-11-17).** 6 abas próprias (a Anomaly fica na dela), trava fora da bancada com motivo (vanilla e YART), pesquisa atual sem acesso para sozinha. Tech Advancing só mexe no custo; YART e Clean Research Sort refazem o layout e respeitam a trava.
+- **3b — Licenças:** projetos por cargo das 4 potências, compra com favor na aba Reputação, pirataria ao fabricar sem licença. Ver também os projetos com techprints (Royalty: implantes ultra da Hélice etc.): sem o Império no mundo ninguém vende techprints; a licença pode dispensá-los ou as potências podem vendê-los.
+- **3c — Engenharia reversa:** bancada própria; desmontar item dá % do projeto que o fabrica; item licenciado de potência dá Infâmia.
+- **3d — Dados antigos:** discos e manuais em abrigos (VQE Ancients), ruínas, marcos nossos e no estoque da Feira; cada um libera ou acelera um projeto.
 
 ## Etapa 4 — Utilidade para os outros mods (média)
 

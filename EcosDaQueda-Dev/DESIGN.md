@@ -193,6 +193,14 @@ Não são potências: sem ideologia fixa, cargos, Fama/Infâmia própria nem ser
 | Bases | cidades-castelo medievais do Custom Base Framework (planos medievais genéricos por nível tecnológico) |
 | Parte horrível | supremacia masculina e mulheres tratadas como "reposição"; escravidão honrosa; execução obrigatória; saque como sacramento |
 
+**A Colmeia Erguida (2026-11-17, insetoides):** facção menor neolítica (`EQ_Faction_ColmeiaErguida`) com os xenos de inseto do usuário. Insetoides que evoluíram até ficar de pé, aprender a falar e erguer vilas; tecnologia limitada (lança, porrete, arco, quitina). **Provisório:** ideologia sorteada "O Enxame (provisória)" (Animista + Coletivista + Supremacia Insetoide) até o usuário montar a dele; a história, as relações fixas e a parte horrível vêm depois da ideologia.
+
+| | A Colmeia Erguida |
+|---|---|
+| Xenos (hereditários, do usuário) | **rainha** (fêmea fértil, pequena, longeva, metabolismo arcotita; não luta; gestação que sai do peito), **soldado** (macho enorme, carapaça grossa, garra e veneno, péssimo em tudo menos briga e mina), **operário** (macho pequeno e resistente, bom de obra, roça, bicho, remendo e mina) |
+| Unidades | operário (porrete, cajado, faca), soldado (corpo a corpo neolítico), batedor (operário com arco curto), rainha (líder) |
+| Bases | vilas do jogo (sem plano do CBF); nomes de túnel/favo/ninho |
+
 ## Relações desejadas (ainda NÃO implementadas — fase 2)
 
 | | Silêncio | Hélice | Forja | Coro |

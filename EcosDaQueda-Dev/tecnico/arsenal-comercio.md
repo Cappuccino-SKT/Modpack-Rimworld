@@ -16,6 +16,7 @@
 ## Comércio por facção (Trade.cs)
 
 - `TraderStockCopyExtension` (modExtension do TraderKindDef): `copyFrom` (os geradores do outro comerciante são clonados e postos na frente, depois dos patches de todos os mods), `dropWeapons` (tira os geradores que são principalmente de armas; nunca os `SingleDef`, os de compra nem os de etiqueta `CE_*`), `dropTradeTags`. `EQTrade.Dropped` guarda o que saiu (aparece no comando `trader`).
+- `StockGenerator_EQGenepacks` (`Genes.cs`): `fromMods` (packageIds), `genesPerPack`, `countRange`. Faz `Genepack` e chama `Initialize(genes)` (o `PostMake` já sorteia um conjunto qualquer; o `Initialize` troca). Reserva: `canGenerateInGeneSet`, `biostatArc` 0, `selectionWeight` > 0; sem gene repetido ou em conflito.
 - `StockGenerator_EQTags`: `weaponTags`/`apparelTags` + `countRange`; vende armas e roupas do arsenal.
 - Itens que não podem ser vendidos por comerciante (ex.: `Ambrosia`) dão erro se postos num `StockGenerator_SingleDef`.
 - `Books` como categoria inclui `Tome`: excluir (o jogo usa `StockGenerator_Tomes`).

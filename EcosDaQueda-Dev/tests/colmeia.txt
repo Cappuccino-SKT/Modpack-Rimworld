@@ -1,0 +1,14 @@
+﻿# A Colmeia Erguida (insetoides): facção menor neolítica com os xenos de inseto do usuário
+# (rainha, soldado, operário). Ideologia e história provisórias. Rodar com -Profile full.
+newgame
+timeout 1200
+wait 1h
+faction colmeiaerguida
+factions
+xenogen fac:colmeiaerguida 20
+kit fac:colmeiaerguida 20
+raid colmeiaerguida 300
+wait 2h
+raid colmeiaerguida 1500
+wait 2h
+base colmeiaerguida
