@@ -18,7 +18,7 @@ _Só o estado atual e os próximos passos. Manter curto (até ~60 linhas). Detal
 
 ## Não commitado
 
-Bloco 3b: mod (`Licenses.cs`, `Research.cs`, `MainTabWindow_Reputation.cs`, `EQ_Research.xml`), debug (`EQDebug.cs`) e raiz (docs, `tests/licencas.txt`, `regress.ps1`).
+Nada (bloco 3b em 2026-11-17: mod `09e6460`, debug `9179d65`, raiz `6b1612f`), com push feito nas 3 branches.
 
 ## Como testar
 
