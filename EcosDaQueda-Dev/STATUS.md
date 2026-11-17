@@ -18,7 +18,7 @@ _Só o estado atual e os próximos passos. Manter curto (até ~60 linhas). Detal
 
 ## Não commitado
 
-Nada (commits de 2026-11-17: mod `c67f541`, debug `8c072a0`, raiz `99b4b5d` + roteiro). Push ainda não feito.
+Nada (commits de 2026-11-17: mod `c67f541`, debug `8c072a0`, raiz `99b4b5d` + roteiro `ab13e14`), com push feito nas 3 branches.
 
 ## Como testar
 
