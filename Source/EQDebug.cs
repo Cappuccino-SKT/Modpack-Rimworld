@@ -159,7 +159,7 @@ namespace EcosDaQueda.DebugTools
         }
 
         /// <summary>Força um ataque da facção contra a colônia e conta quem veio (tipo e xenotipo).</summary>
-        public static string Raid(Faction f, float points)
+        public static string Raid(Faction f, float points, bool soBichos = false)
         {
             Map map = Map;
             if (!f.HostileTo(Faction.OfPlayer)) SetHostile(f, true);
@@ -170,9 +170,19 @@ namespace EcosDaQueda.DebugTools
             if (points > 0f) parms.points = points;
             parms.raidArrivalMode = PawnsArrivalModeDefOf.EdgeWalkIn;
             parms.raidStrategy = RaidStrategyDefOf.ImmediateAttack;
+            // "raid <fac> <pontos> bichos": só os grupos de combate que levam animais (bloco L), zerando os outros durante o ataque.
+            var salvos = new Dictionary<PawnGroupMaker, float>();
+            if (soBichos)
+            {
+                foreach (PawnGroupMaker g in f.def.pawnGroupMakers.Where(g => g.kindDef == PawnGroupKindDefOf.Combat && !g.options.Any(o => o.kind.RaceProps.Animal)))
+                { salvos[g] = g.commonality; g.commonality = 0f; }
+                if (salvos.Count == f.def.pawnGroupMakers.Count(g => g.kindDef == PawnGroupKindDefOf.Combat))
+                { foreach (var kv in salvos) kv.Key.commonality = kv.Value; return "nenhum grupo de combate com animais em " + f.Name; }
+            }
             bool ok;
             try { ok = IncidentDefOf.RaidEnemy.Worker.TryExecute(parms); }
             catch (Exception ex) { return "EXCEÇÃO " + ex.GetType().Name + ": " + ex.Message; }
+            finally { foreach (var kv in salvos) kv.Key.commonality = kv.Value; }
             var cont = new Dictionary<string, int>();
             foreach (Pawn p in map.mapPawns.AllPawnsSpawned.Where(p => p.Faction == f))
             {
@@ -181,6 +191,57 @@ namespace EcosDaQueda.DebugTools
             }
             var sb = new StringBuilder("ataque de " + f.Name + ": executou=" + ok + " pontos=" + parms.points.ToString("0") + " chegaram=" + (map.mapPawns.AllPawnsSpawned.Count(p => p.Faction == f) - before));
             foreach (var kv in cont.OrderByDescending(kv => kv.Value)) sb.Append("\n  " + kv.Value + "x " + kv.Key);
+            // Bloco L: animais no ataque (bichos de lixão do Sindicato/Reino) e se receberam ordem do lorde.
+            var bichos = map.mapPawns.AllPawnsSpawned.Where(p => p.Faction == f && p.RaceProps.Animal).ToList();
+            sb.Append("\n  animais=" + bichos.Count + " com_lorde=" + bichos.Count(p => Verse.AI.Group.LordUtility.GetLord(p) != null) + " com_dever=" + bichos.Count(p => p.mindState?.duty != null));
+            return sb.ToString();
+        }
+
+        /// <summary>Bloco L: pawngen &lt;PawnKind|fac:facção&gt; [n] gera n unidades e conta traços e itens do inventário.</summary>
+        public static string PawnGen(string arg, int n)
+        {
+            var kinds = new List<PawnKindDef>();
+            if (arg != null && arg.StartsWith("fac:"))
+            {
+                Faction f = FindFaction(arg.Substring(4));
+                if (f == null) return "facção não encontrada: " + arg;
+                kinds.AddRange(DefDatabase<PawnKindDef>.AllDefs.Where(k => k.defaultFactionDef == f.def && k.defName.StartsWith("EQ_")));
+            }
+            else
+            {
+                PawnKindDef k = DefDatabase<PawnKindDef>.GetNamedSilentFail(arg);
+                if (k == null) return "PawnKind não encontrado: " + arg;
+                kinds.Add(k);
+            }
+            var sb = new StringBuilder();
+            int faltou = 0;
+            foreach (PawnKindDef kind in kinds)
+            {
+                Faction fac = kind.defaultFactionDef != null ? Find.FactionManager.FirstFactionOfDef(kind.defaultFactionDef) : null;
+                var tr = new Dictionary<string, int>();
+                var inv = new Dictionary<string, int>();
+                int comForcado = 0, gerados = 0;
+                for (int i = 0; i < n; i++)
+                {
+                    Pawn p;
+                    try { p = PawnGenerator.GeneratePawn(new PawnGenerationRequest(kind, fac, forceGenerateNewPawn: true)); }
+                    catch (Exception ex) { sb.AppendLine("  ERRO gerando " + kind.defName + ": " + ex.Message); continue; }
+                    gerados++;
+                    if (p.story?.traits != null)
+                        foreach (Trait t in p.story.traits.allTraits) tr[t.def.defName] = tr.TryGetValue(t.def.defName) + 1;
+                    if (kind.forcedTraits != null && kind.forcedTraits.All(r => p.story?.traits?.HasTrait(r.def) == true)) comForcado++;
+                    if (p.inventory != null)
+                        foreach (Thing th in p.inventory.innerContainer) inv[th.def.defName] = inv.TryGetValue(th.def.defName) + th.stackCount;
+                    p.Discard();
+                }
+                bool temForcado = kind.forcedTraits != null && kind.forcedTraits.Count > 0;
+                string forc = !temForcado ? "-" : string.Join(",", kind.forcedTraits.Select(r => r.def.defName)) + " em " + comForcado + "/" + gerados;
+                if (temForcado && comForcado < gerados) faltou++;
+                sb.AppendLine(kind.defName + ": traço forçado " + forc);
+                sb.AppendLine("  traços: " + string.Join(", ", tr.OrderByDescending(kv => kv.Value).Take(8).Select(kv => kv.Key + "=" + kv.Value)));
+                sb.AppendLine("  inventário (total em " + gerados + "): " + (inv.Count == 0 ? "(nada)" : string.Join(", ", inv.OrderByDescending(kv => kv.Value).Select(kv => kv.Key + "=" + kv.Value))));
+            }
+            sb.Append("faltou_traco=" + faltou);
             return sb.ToString();
         }
 
@@ -1051,6 +1112,215 @@ namespace EcosDaQueda.DebugTools
 
         /// <summary>Questão androide: android [status] | android fab [awake] (estação de criação real) |
         /// android spawn | android awaken | android recruit (desperto dos Fora de Linha vira colono).</summary>
+        /// <summary>Bloco F: patron &lt;QuestScriptDef&gt; cria uma missão crua daquele tipo, aceita e conclui com sucesso.</summary>
+        public static string Patron(string questName)
+        {
+            QuestScriptDef qd = DefDatabase<QuestScriptDef>.GetNamedSilentFail(questName ?? "");
+            if (qd == null) return "QuestScriptDef não existe: " + questName;
+            QuestPatronDef pd = QuestPatronDef.For(qd);
+            Faction f = pd != null ? EQUtil.MainFaction(pd.faction) : null;
+            var rec = f != null ? WorldComponent_Reputation.Current?.Get(f) : null;
+            float fama = rec?.fame ?? 0f;
+            var alg = WorldComponent_Allegiance.Current;
+            float favor = alg?.leader?.royalty != null && alg.memberOf != null ? alg.leader.royalty.GetFavor(alg.memberOf) : 0f;
+            Quest q = Quest.MakeRaw();
+            q.root = qd;
+            q.name = qd.defName;
+            Find.QuestManager.Add(q);
+            q.Accept(null);
+            q.End(QuestEndOutcome.Success, sendLetter: false, playSound: false);
+            float favorDepois = alg?.leader?.royalty != null && alg.memberOf != null ? alg.leader.royalty.GetFavor(alg.memberOf) : 0f;
+            return qd.defName + " estado=" + q.State + " patrono=" + (pd?.defName ?? "nenhum") + " (" + (f?.Name ?? "-") + ")"
+                + " | Fama " + fama.ToString("0.#") + " -> " + (rec?.fame ?? 0f).ToString("0.#")
+                + " | favor do líder (" + (alg?.memberOf?.Name ?? "sem vassalagem") + ") " + favor + " -> " + favorDepois
+                + " | missões com patrono=" + EQMissions.PatronQuests;
+        }
+
+        /// <summary>Bloco F: drone [ThingDef] põe um item chocador de drone (Drone Factory) no mapa e choca.</summary>
+        // ------------------------------------------------------------ sanidade (bloco I, Insanity)
+
+        public static string Sanity(string action, string arg)
+        {
+            if (!EQSanity.Active) return "Insanity inativo";
+            Map map = Map;
+            var sb = new StringBuilder();
+            switch (action)
+            {
+                case "set":
+                {
+                    float v = float.Parse(arg ?? "1", System.Globalization.CultureInfo.InvariantCulture);
+                    foreach (Pawn p in map.mapPawns.FreeColonistsSpawned)
+                        if (EQSanity.Need(p) != null) EQSanity.Need(p).CurLevel = v;
+                    sb.AppendLine("sanidade de todos := " + v.ToStringPercent());
+                    break;
+                }
+                case "research":
+                {
+                    float days = float.Parse(arg ?? "1", System.Globalization.CultureInfo.InvariantCulture);
+                    Pawn p = EQSanity.BestScholar(map);
+                    if (p == null) return "nenhum colono com sanidade";
+                    ResearchProjectDef proj = Find.ResearchManager.GetProject();
+                    if (proj == null)
+                    {
+                        proj = DefDatabase<ResearchProjectDef>.AllDefsListForReading
+                            .Where(r => !r.IsFinished && r.CanStartNow).OrderByDescending(r => r.baseCost).FirstOrDefault();
+                        if (proj == null) return "nenhuma pesquisa disponível";
+                        Find.ResearchManager.SetCurrentProject(proj);
+                    }
+                    float before = EQSanity.Level(p) ?? 0f;
+                    float speed = p.GetStatValue(StatDefOf.ResearchSpeed);
+                    float progBefore = Find.ResearchManager.GetProgress(proj);
+                    int steps = (int)(days * GenDate.TicksPerDay / 250);
+                    for (int i = 0; i < steps; i++)
+                    {
+                        if (Find.ResearchManager.GetProject() == null) break;
+                        Find.ResearchManager.ResearchPerformed(p.GetStatValue(StatDefOf.ResearchSpeed) * 250f, p);
+                    }
+                    sb.AppendLine("pesquisa simulada: " + p.LabelShort + " " + days + " d em " + proj.defName
+                        + " | velocidade inicial " + speed.ToStringPercent() + " final " + p.GetStatValue(StatDefOf.ResearchSpeed).ToStringPercent()
+                        + " | sanidade " + before.ToString("0.000") + " -> " + (EQSanity.Level(p) ?? 0f).ToString("0.000")
+                        + " | progresso +" + (Find.ResearchManager.GetProgress(proj) - progBefore).ToString("0"));
+                    break;
+                }
+            }
+            FactionAllegianceDef d = EQSanity.ResearchPower;
+            sb.AppendLine("colonos no mapa: " + map.mapPawns.FreeColonistsSpawned.Count + " (todos: " + PawnsFinder.AllMaps_FreeColonists.Count() + ", mortos: " + Find.WorldPawns.AllPawnsDead.Count(x => x.Faction == Faction.OfPlayer) + ")");
+            sb.AppendLine("cobra na pesquisa: " + (d == null ? "não" : d.defName + " dreno/dia=" + d.researchSanityDrainPerDay + " bônus=" + d.researchSpeedPerLostSanity));
+            HediffDef voto = DefDatabase<HediffDef>.GetNamedSilentFail("EQ_Hediff_VotoCaucao");
+            foreach (Pawn p in map.mapPawns.FreeColonistsSpawned)
+            {
+                float? lvl = EQSanity.Level(p);
+                sb.AppendLine("  " + p.LabelShort + ": sanidade=" + (lvl.HasValue ? lvl.Value.ToStringPercent() : "-")
+                    + " perda×" + StatMul(p, "VAEI_SanityLossMultiplier") + " geral×" + StatMul(p, "VAEI_SanityMultiplier")
+                    + " traços=" + string.Join("/", p.story?.traits?.allTraits.Select(tr => tr.def.defName) ?? Enumerable.Empty<string>())
+                    + " intelectual=" + (p.skills?.GetSkill(SkillDefOf.Intellectual)?.Level ?? 0)
+                    + " pesquisa=" + p.GetStatValue(StatDefOf.ResearchSpeed).ToStringPercent()
+                    + " fala=" + (p.health.capacities.CapableOf(PawnCapacityDefOf.Talking) ? "sim" : "NÃO")
+                    + VotoInfo(p, voto));
+            }
+            return sb.ToString().TrimEnd();
+        }
+
+        private static string StatMul(Pawn p, string stat)
+        {
+            StatDef s = DefDatabase<StatDef>.GetNamedSilentFail(stat);
+            return s == null ? "-" : p.GetStatValue(s).ToString("0.##");
+        }
+
+        private static string VotoInfo(Pawn p, HediffDef voto)
+        {
+            Hediff h = voto == null ? null : p.health.hediffSet.GetFirstHediffOfDef(voto);
+            if (h == null) return "";
+            var c = h.TryGetComp<HediffComp_Disappears>();
+            return " [voz em caução" + (c != null ? ", volta em " + c.ticksToDisappear.ToStringTicksToPeriod() : "") + "]";
+        }
+
+        public static string Drone(string defName)
+        {
+            DronePolicyDef d = DronePolicyDef.Current;
+            if (d == null) return "sem DronePolicyDef";
+            ThingDef def = defName != null ? DefDatabase<ThingDef>.GetNamedSilentFail(defName)
+                : DefDatabase<ThingDef>.AllDefs.FirstOrDefault(t => t.comps != null && t.comps.Any(c => c.GetType().Name == "CompProperties_DroneHatcher"));
+            if (def == null) return "chocador de drone não encontrado (Drone Factory ausente?) " + defName;
+            Map map = Find.CurrentMap ?? Find.AnyPlayerHomeMap;
+            Faction forja = EQUtil.MainFaction(d.licensor);
+            int gw = forja?.PlayerGoodwill ?? 0;
+            Thing t = ThingMaker.MakeThing(def, def.MadeFromStuff ? GenStuff.DefaultStuffFor(def) : null);
+            IntVec3 c = CellFinder.RandomClosewalkCellNear(map.Center, map, 8, x => x.Standable(map) && x.GetFirstBuilding(map) == null);
+            GenSpawn.Spawn(t, c, map);
+            ThingComp comp = ((ThingWithComps)t).AllComps.FirstOrDefault(x => x.GetType().Name == "CompDroneHatcher");
+            if (comp == null) return def.defName + ": sem CompDroneHatcher";
+            int antes = map.mapPawns.AllPawnsSpawned.Count(p => p.Faction == Faction.OfPlayer && !p.RaceProps.Humanlike);
+            AccessTools.Method(comp.GetType(), "Hatch").Invoke(comp, null);
+            Pawn novo = map.mapPawns.AllPawnsSpawned.Where(p => p.Faction == Faction.OfPlayer && !p.RaceProps.Humanlike).OrderByDescending(p => p.thingIDNumber).FirstOrDefault();
+            int depois = map.mapPawns.AllPawnsSpawned.Count(p => p.Faction == Faction.OfPlayer && !p.RaceProps.Humanlike);
+            return def.defName + " -> " + (depois > antes ? novo?.def.defName : "NENHUM drone") + " | licença=" + EQAndroids.HasLicense(d.licensor, d.licenseRank)
+                + " | boa vontade Forja " + gw + " -> " + (forja?.PlayerGoodwill ?? 0)
+                + " | pirateados=" + EQMissions.DronesPirated + " registrados=" + EQMissions.DronesLicensed;
+        }
+
+        /// <summary>Bloco N. "landmarks": marcos do mundo (total e os EQ_), validade, quantos no mundo e nomes sorteados.
+        /// PROBLEMA: marco nosso inválido, nome vazio ou com regra não resolvida ("[").</summary>
+        public static string Landmarks()
+        {
+            var sb = new StringBuilder();
+            var todos = Find.World?.landmarks?.landmarks?.Values.ToList() ?? new List<Landmark>();
+            var nossos = DefDatabase<LandmarkDef>.AllDefs.Where(d => d.defName.StartsWith("EQ_")).ToList();
+            int problemas = 0;
+            sb.Append("marcos no mundo=" + todos.Count + " (EQ_=" + todos.Count(l => l.def.defName.StartsWith("EQ_"))
+                + ") | defs de marco=" + DefDatabase<LandmarkDef>.DefCount + " (EQ_=" + nossos.Count + ")\n");
+            foreach (LandmarkDef d in nossos)
+            {
+                bool valido = d.EverValid();
+                var noMundo = todos.Where(l => l.def == d).ToList();
+                var nomes = Enumerable.Range(0, 5).Select(_ => NameGenerator.GenerateName(d.nameMaker, (Predicate<string>)null, false, "r_name")).ToList();
+                bool ruim = !valido || nomes.Any(n => n.NullOrEmpty() || n.Contains("[")) || d.description.NullOrEmpty();
+                if (ruim) problemas++;
+                sb.Append("  " + d.defName + " (" + d.label + ") válido=" + valido + " noMundo=" + noMundo.Count
+                    + (noMundo.Count > 0 ? " ex.: \"" + noMundo[0].name + "\"" : "")
+                    + " | nomes: " + string.Join("; ", nomes) + (ruim ? "  <- PROBLEMA" : "") + "\n");
+            }
+            sb.Append(problemas == 0 ? "  OK" : "  PROBLEMAS: " + problemas);
+            return sb.ToString();
+        }
+
+        /// <summary>Bloco M. "vehicle build &lt;VehicleDef&gt;" monta a planta pronta com um colono; "vehicle title &lt;item&gt;" usa um título de posse.</summary>
+        public static string Vehicle(string action, string defName)
+        {
+            if (!EQVehicles.Active) return "Vehicle Framework ausente";
+            VehiclePolicyDef d = VehiclePolicyDef.Current;
+            Map map = Find.CurrentMap ?? Find.AnyPlayerHomeMap;
+            Faction forja = d == null ? null : EQUtil.MainFaction(d.licensor);
+            int gw = forja?.PlayerGoodwill ?? 0;
+            Pawn worker = map.mapPawns.FreeColonistsSpawned.FirstOrDefault();
+            if (worker == null) return "sem colono";
+            string r;
+            switch (action)
+            {
+                case "build":
+                {
+                    ThingDef vdef = DefDatabase<ThingDef>.GetNamedSilentFail(defName ?? "VVE_Highwayman");
+                    ThingDef bdef = DefDatabase<ThingDef>.AllDefs.FirstOrDefault(x => EQVehicles.VehicleOfBuildDef(x) == vdef);
+                    if (vdef == null || bdef == null) return "planta não encontrada para " + defName;
+                    var frame = (Frame)ThingMaker.MakeThing(bdef.frameDef, bdef.MadeFromStuff ? GenStuff.DefaultStuffFor(bdef) : null);
+                    frame.SetFaction(Faction.OfPlayer);
+                    IntVec3 c = CellFinder.RandomClosewalkCellNear(map.Center, map, 10, x => x.Standable(map) && x.GetFirstBuilding(map) == null);
+                    GenSpawn.Spawn(frame, c, map, Rot4.North);
+                    int antes = map.mapPawns.AllPawnsSpawned.Count(p => p.def == vdef);
+                    frame.CompleteConstruction(worker);
+                    int depois = map.mapPawns.AllPawnsSpawned.Count(p => p.def == vdef);
+                    r = bdef.defName + " -> " + (depois > antes ? vdef.defName + " montado" : "NENHUM veículo") + " | combate=" + EQVehicles.IsCombat(vdef);
+                    break;
+                }
+                case "title":
+                {
+                    ThingDef tdef = DefDatabase<ThingDef>.GetNamedSilentFail(defName ?? "EQ_TituloLataVelha");
+                    if (tdef == null) return "item não existe: " + defName;
+                    Thing t = ThingMaker.MakeThing(tdef);
+                    GenSpawn.Spawn(t, worker.Position, map);
+                    var comp = ((ThingWithComps)t).GetComp<CompUseEffect_VehicleTitle>();
+                    if (comp == null) return tdef.defName + ": sem CompUseEffect_VehicleTitle";
+                    AcceptanceReport ok = comp.CanBeUsedBy(worker);
+                    if (!ok.Accepted)
+                    {
+                        r = tdef.defName + " BLOQUEADO: " + ok.Reason;
+                        t.Destroy();
+                        break;
+                    }
+                    int antes = EQVehicles.Delivered;
+                    comp.DoEffect(worker);
+                    Pawn v = map.mapPawns.AllPawnsSpawned.Where(p => EQVehicles.IsVehicleDef(p.def)).OrderByDescending(p => p.thingIDNumber).FirstOrDefault();
+                    r = tdef.defName + " -> " + (EQVehicles.Delivered > antes && v != null ? EQVehicles.Describe(v) + " fac=" + v.Faction?.Name : "NENHUM veículo");
+                    break;
+                }
+                default:
+                    r = "status";
+                    break;
+            }
+            return r + " | licença=" + (d != null && EQAndroids.HasLicense(d.licensor, d.licenseRank)) + " | boa vontade Forja " + gw + " -> " + (forja?.PlayerGoodwill ?? 0)
+                + " | montados=" + EQVehicles.Built + " pirateados=" + EQVehicles.Pirated + " registrados=" + EQVehicles.Licensed + " entregues=" + EQVehicles.Delivered;
+        }
+
         public static string Android(string action)
         {
             if (!EQAndroids.Active) return "VRE Android ausente";

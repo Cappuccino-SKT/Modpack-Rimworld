@@ -270,7 +270,7 @@ namespace EcosDaQueda.DebugTools
                 case "movingbases": return EQDebug.MovingBases();
                 case "factions": return EQDebug.ListFactions();
                 case "faction": return EQDebug.DescribeFaction(Fac(1));
-                case "raid": return EQDebug.Raid(Fac(1), float.Parse(Arg(2) ?? "0"));
+                case "raid": return EQDebug.Raid(Fac(1), float.Parse(Arg(2) ?? "0"), Arg(3) == "bichos");
                 case "retaliate": return EQDebug.Retaliate(Fac(1));
                 case "gift": return EQDebug.SendGift(Fac(1), false);
                 case "tribute": return EQDebug.SendGift(Fac(1), true);
@@ -313,6 +313,7 @@ namespace EcosDaQueda.DebugTools
                 case "start": return EQDebug.StartInfo();
                 case "modusage": return EQDebug.ModUsage(Arg(1));
                 case "xenogen": return EQDebug.XenoGen(Arg(1), int.Parse(Arg(2) ?? "20"));
+                case "pawngen": return EQDebug.PawnGen(Arg(1), int.Parse(Arg(2) ?? "20"));
                 case "count":
                 {
                     ThingDef cd = DefDatabase<ThingDef>.GetNamedSilentFail(Arg(1) ?? "");
@@ -326,6 +327,11 @@ namespace EcosDaQueda.DebugTools
                 case "hive": return Arg(1) == "nature" ? EQDebug.Hive(Arg(2), true) : EQDebug.Hive(Arg(1), false);
                 case "base": return EQDebug.Base(Fac(1));
                 case "permit": return EQDebug.Permit(Arg(1), Arg(2));
+                case "patron": return EQDebug.Patron(Arg(1));
+                case "drone": return EQDebug.Drone(Arg(1));
+                case "landmarks": return EQDebug.Landmarks();
+                case "vehicle": return EQDebug.Vehicle(Arg(1), Arg(2));
+                case "sanity": return EQDebug.Sanity(Arg(1), Arg(2));
                 case "android": return EQDebug.Android(Arg(1) == "fab" && Arg(2) == "awake" ? "fabawake" : Arg(1));
                 case "psy": return EQDebug.Psy(Arg(1), Arg(2), Arg(3));
                 case "signature": return EQDebug.Signature(Fac(1), Arg(2) == "run");
