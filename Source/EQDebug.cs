@@ -921,6 +921,29 @@ namespace EcosDaQueda.DebugTools
                 + " | favor do líder " + favor + " -> " + favorDepois + " | colmeias destruídas=" + EQInsects.Destroyed;
         }
 
+        /// <summary>Carneação: leather &lt;XenotypeDef&gt; gera um pawn com o xeno, mata, carneia (eficiência 1) e lista o que rendeu.</summary>
+        public static string Leather(string xenoName)
+        {
+            XenotypeDef xeno = DefDatabase<XenotypeDef>.GetNamedSilentFail(xenoName ?? "");
+            if (xeno == null) return "XenotypeDef não existe: " + xenoName;
+            Map map = Find.CurrentMap ?? Find.AnyPlayerHomeMap;
+            Pawn p = PawnGenerator.GeneratePawn(new PawnGenerationRequest(PawnKindDefOf.Villager, null, forceGenerateNewPawn: true,
+                forcedXenotype: xeno));
+            IntVec3 c = CellFinder.RandomClosewalkCellNear(map.Center, map, 12, x => x.Standable(map));
+            GenSpawn.Spawn(p, c, map);
+            string genes = string.Join(",", p.genes.GenesListForReading.Select(g => g.def.defName)
+                .Where(n => n.Contains("Leather") || n.Contains("Pele")));
+            p.Kill(new DamageInfo(DamageDefOf.Blunt, 9999f));
+            Corpse corpo = p.Corpse;
+            if (corpo == null) return xeno.defName + ": sem cadáver";
+            Pawn acougueiro = map.mapPawns.FreeColonistsSpawned.FirstOrDefault();
+            var produtos = corpo.ButcherProducts(acougueiro, 1f).ToList();
+            string lista = string.Join(", ", produtos.GroupBy(t => t.def.defName).Select(g => g.Key + " x" + g.Sum(t => t.stackCount)));
+            foreach (Thing t in produtos) if (!t.Destroyed && !t.Spawned) t.Destroy();
+            corpo.Destroy();
+            return xeno.defName + " [" + genes + "]: " + lista;
+        }
+
         /// <summary>Base de uma potência (Custom Base Framework): base &lt;fac&gt; gera o mapa do assentamento mais
         /// próximo dela, diz o plano usado e conta prédios e defensores; depois descarta o mapa.</summary>
         public static string Base(Faction f)

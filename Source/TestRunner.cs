@@ -322,6 +322,7 @@ namespace EcosDaQueda.DebugTools
                     return cd.defName + ": no mapa " + all.Sum(t => t.stackCount) + ", na área doméstica " + all.Where(t => cm.areaManager.Home[t.Position]).Sum(t => t.stackCount)
                         + " (+ em cápsulas a cair: " + cm.listerThings.ThingsInGroup(ThingRequestGroup.ActiveTransporter).Count + ")";
                 }
+                case "leather": return EQDebug.Leather(Arg(1));
                 case "hive": return Arg(1) == "nature" ? EQDebug.Hive(Arg(2), true) : EQDebug.Hive(Arg(1), false);
                 case "base": return EQDebug.Base(Fac(1));
                 case "permit": return EQDebug.Permit(Arg(1), Arg(2));
