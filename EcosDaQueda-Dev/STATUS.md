@@ -18,7 +18,7 @@ Xenos de inseto do usuário (`Inseto Rainha`, `Inseto Soldado`, `Inseto Trabalha
 
 ## Não commitado
 
-Blocos F, I, L, M e N inteiros. N — mod: `Defs/World/EQ_Landmarks.xml`; debug: `landmarks`; raiz: `tests/marcos.txt`, `tecnico/mundo.md`. M — mod: `Vehicles.cs`, `HarmonyPatches.cs`, `EQ_Vehicles.xml`, `EQ_Traders.xml`; debug: `vehicle`; raiz: `tests/veiculos.txt`, `mods/frameworks/vehicle-framework.md`. L — mod: `EQ_MinorFactions.xml`, `EQ_MinorPawnKinds.xml`, `EQ_PawnKinds.xml`, `EQ_Traders.xml`, `Patches/EQ_Sucata.xml`; debug: `pawngen`, `raid … bichos`; raiz: `tests/sucata.txt`. F — mod: `Missions.cs`, `Androids.cs`, `Allegiance.cs`, `EQ_Missions.xml`, `EQ_Allegiance.xml`, `Patches/EQ_Scenario_Abrigo.xml`; debug: `patron`/`drone`. I — mod: `Sanity.cs`, `Services.cs`, `Allegiance.cs`, `HarmonyPatches.cs`, `EQ_Services.xml`, `EQ_Allegiance.xml`; debug: `sanity`. Raiz: docs, `tests/missoes.txt`, `tests/sanidade.txt`, `tests/sucata.txt`, `tests/veiculos.txt`, `tests/marcos.txt`, `regress.ps1`. Commitar quando o usuário pedir.
+Nada. Blocos F, I, L, M e N commitados em 2026-11-17 (mod `e29bc26`, debug `fbf7b4b`, raiz `098c331`); push ainda não feito.
 
 ## Como testar
 
