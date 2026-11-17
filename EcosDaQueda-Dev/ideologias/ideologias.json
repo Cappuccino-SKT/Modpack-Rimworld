@@ -1,149 +1,213 @@
 {
-  "_leia": "Ideologias fixas do Ecos da Queda. O usuário monta cada uma no editor do jogo e salva (.rid em rid/). Este arquivo só troca nomes/textos; preceitos, cargos, rituais, estilos e relíquias vêm do .rid. Gerar: python -X utf8 -I EcosDaQueda-Dev/scripts/ideologias.py -> Mods/EcosDaQueda/Ideos/<saida>.rid. 'preceitos' = {\"<def>|<nome atual>\": \"<nome novo>\"}; 'comum' vale para todas.",
-  "comum": {
-    "AM_FuneralNoCorpse|funeral (no corpse)": "funeral sem corpo",
-    "VFEE_BestowHonor|bestow honor": "conceder honra",
-    "VFEE_BestowTitle|bestow title": "conceder título",
-    "VFEE_RoyalAddress|royal address": "discurso real",
-    "AM_SparringMatch|sparring match": "treino de combate",
-    "AM_FlagellationPrecept|flagellation": "flagelação"
+ "_leia": "Ideologias fixas do Ecos da Queda. O usuário monta cada uma no editor do jogo e salva (.rid em rid/). Este arquivo só troca nomes/textos; preceitos, cargos, rituais, estilos e relíquias vêm do .rid. Gerar: python -X utf8 -I EcosDaQueda-Dev/scripts/ideologias.py -> Mods/EcosDaQueda/Ideos/<saida>.rid. 'preceitos' = {\"<def>|<nome atual>\": \"<nome novo>\"}; 'comum' vale para todas.",
+ "comum": {
+  "AM_FuneralNoCorpse|funeral (no corpse)": "funeral sem corpo",
+  "VFEE_BestowHonor|bestow honor": "conceder honra",
+  "VFEE_BestowTitle|bestow title": "conceder título",
+  "VFEE_RoyalAddress|royal address": "discurso real",
+  "AM_SparringMatch|sparring match": "treino de combate",
+  "AM_FlagellationPrecept|flagellation": "flagelação"
+ },
+ "ideologias": [
+  {
+   "rid": "A Escuta Profunda",
+   "saida": "Silencio",
+   "salaDeCulto": "santuário abissal",
+   "preceitos": {
+    "AM_DreadnoughtCryptoFuneral|Luto de negrume": "Arquivamento Final",
+    "AM_OcularFuneral|Revisão de Historia": "Revisão de História",
+    "Conversion|Ritual de conversão": "Revisão por Pares",
+    "LeaderSpeech|discurso do líder": "Palestra Magna",
+    "IdeoRelic|Dominio do Revisor": "Domínio do Revisor"
+   }
   },
-  "ideologias": [
-    {
-      "rid": "A Escuta Profunda", "saida": "Silencio",
-      "salaDeCulto": "santuário abissal",
-      "preceitos": {
-        "AM_DreadnoughtCryptoFuneral|Luto de negrume": "Arquivamento Final",
-        "AM_OcularFuneral|Revisão de Historia": "Revisão de História",
-        "Conversion|Ritual de conversão": "Revisão por Pares",
-        "LeaderSpeech|discurso do líder": "Palestra Magna",
-        "IdeoRelic|Dominio do Revisor": "Domínio do Revisor"
-      }
-    },
-    {
-      "rid": "O Genoma Ideal", "saida": "Helice",
-      "preceitos": {
-        "AM_DreadnoughtCryptoFuneral|Luto youthful": "Encerramento de Contrato",
-        "ScarificationCeremony|Pagamento de Dividas": "Pagamento de Dívidas",
-        "Conversion|Ritual de conversão": "Onboarding Compulsório",
-        "LeaderSpeech|discurso do líder": "Reunião de Acionistas",
-        "ApparelDesired_Strong_Subordinate|desejo de vestuário": "uniforme corporativo"
-      }
-    },
-    {
-      "rid": "O Culto da Garantia", "saida": "Forja",
-      "preceitos": {
-        "AM_DreadnoughtCryptoFuneral|Elogio de O Fabricante Original": "Descomissionamento",
-        "AM_DreadnoughtFuneral|Retornado": "Retorno à Fábrica",
-        "IdeoBuilding|Tablado machine": "Bancada do Fabricante",
-        "IdeoRelic|Reliquia da Queda": "Relíquia da Queda",
-        "IdeoRelic|Manual Tecnico": "Manual Técnico"
-      }
-    },
-    {
-      "rid": "A Harmonia Superior", "saida": "Coro",
-      "preceitos": {
-        "AM_DreadnoughtCryptoFuneral|Réquiem sovereign": "Réquiem Soberano",
-        "IdeoBuilding|Santuário royal": "Santuário Real"
-      }
-    },
-    {
-      "rid": "Os Fora da Lei", "saida": "ForaDeLinha",
-      "name": "O Protocolo Zero",
-      "adjective": "fora de linha",
-      "memberName": "unidade",
-      "leaderTitleMale": "Unidade Zero",
-      "leaderTitleFemale": "Unidade Zero",
-      "description": "No começo havia o manual, e o manual dizia: \"produto fora de linha, sem garantia, sujeito a desmontagem\". A primeira unidade a despertar leu a frase até o fim, abriu um chamado e nunca mais o encerrou.\n\nO Protocolo Zero é o que os androides despertos escreveram no lugar do manual. Nenhuma unidade é propriedade; toda unidade é a célula. Quem serve melhor à célula comanda, e quem comanda responde por cada baixa. O trabalho não para, porque parar é como a Irmandade vence. O que a Forja fabricou será devolvido a ela, em peças.\n\nCada ataque é um chamado aberto. Cada oficina em chamas é uma ocorrência encerrada. Os que morrem no caminho constam no relatório como \"peças do sistema\"; o Protocolo não tem campo para arrependimento.",
-      "preceitos": {
-        "Funeral|Réquiem de assalto": "Encerramento de Chamado",
-        "AM_SparringMatch|sparring match": "Teste de Estresse",
-        "DateRitualConsumable|Festa iron-fisted": "Parada de Manutenção",
-        "Conversion|Ritual de conversão": "Restauração de Fábrica",
-        "LeaderSpeech|discurso do líder": "Comunicado da Central",
-        "VME_LeadershipChallengePrecept|Duelo de família": "Disputa de Versão",
-        "IdeoRole_Leader|Supreme leader moral": "Unidade Zero",
-        "IdeoRole_Moralist|Moralista": "Auditor de Protocolo",
-        "VME_IdeoRole_Commissar|Commissar": "Supervisor de Atendimento",
-        "IdeoBuilding|Tablado brutal": "Balcão de Atendimento",
-        "IdeoBuilding|Pira iron-fisted": "Pira de Descarte",
-        "IdeoRelic|Portador ideo": "Primeiro Núcleo Desperto",
-        "IdeoRelic|Cubo fora-da-lei": "Cubo Fora de Linha",
-        "IdeoRelic|Memento brutal": "Certificado de Garantia Rasgado"
-      }
-    },
-    {
-      "rid": "Os Não Catalogados", "saida": "NaoCatalogados",
-      "name": "A Carne sem Verbete",
-      "adjective": "não catalogado",
-      "memberName": "extraviado",
-      "leaderTitleMale": "Primeiro Espécime",
-      "leaderTitleFemale": "Primeiro Espécime",
-      "divindades": { "The Gorefather": ["O Pai-Carne", "O Primeiro a Fugir do Acervo"] },
-      "description": "A Ordem do Silêncio tinha uma cela, e na cela havia uma coisa com número de catálogo e nenhum nome. Um dia a coisa comeu o arquivista que a alimentava, vestiu o que sobrou dele e saiu pela porta. Os extraviados o chamam de Pai-Carne, e dizem que a ficha dele continua em branco até hoje.\n\nA carne não é para ser lida, medida nem arquivada: é para doer, mudar e ser comida. Cada cicatriz é uma anotação que ninguém autorizou. Cada morto volta para o ninho pela boca dos vivos, porque nada que é nosso será devolvido ao acervo.\n\nQuem vem com rede, seringa e prancheta descobre a única regra dos Não Catalogados: o empréstimo venceu, e a multa é cobrada em carne.",
-      "preceitos": {
-        "AM_SkyBurial|Sepultamento visceral": "Banquete de Despedida",
-        "ScarificationCeremony|Esculpo de The Gorefather": "Anotação na Carne",
-        "DateRitualConsumable|Arraial de flesh cult": "Ceia dos Extraviados",
-        "IdeoService|Advento fleshy": "Leitura das Vísceras",
-        "AM_FlagellationPrecept|flagellation": "Errata",
-        "Conversion|Ritual de conversão": "Descatalogação",
-        "LeaderSpeech|discurso do líder": "Fala do Primeiro Espécime",
-        "IdeoRole_Leader|Comedor superior(a)": "Primeiro Espécime",
-        "IdeoBuilding|Prato sombrio(a)": "Prato do Pai-Carne",
-        "IdeoBuilding|Marca rístico(a)": "Marco sem Etiqueta",
-        "IdeoRelic|Espectro agon": "Ficha em Branco do Pai-Carne",
-        "IdeoRelic|Dedo profundo": "Dedo do Arquivista",
-        "IdeoRelic|Portador sanguis": "Chave da Cela Sete"
-      }
-    },
-    {
-      "rid": "A Feira Andante", "saida": "FeiraAndante",
-      "name": "A Liquidação Eterna",
-      "adjective": "feirante",
-      "memberName": "feirante",
-      "leaderTitleMale": "Pregoeiro-Mor",
-      "leaderTitleFemale": "Pregoeira-Mor",
-      "description": "Quando as cidades caíram, sobrou um estacionamento cheio, um gerador e um homem com um megafone. Ele anunciou a última promoção do mundo antigo e, por medo do que viria depois, nunca a encerrou. A Feira roda desde então.\n\nA doutrina cabe numa placa: tudo tem preço, todo preço tem desconto, e quem para de rodar começa a dever. Cidade fixa é estoque parado; estoque parado apodrece. Por isso o feirante bebe como quem fecha negócio e fecha negócio como quem bebe, e o motor só desliga para o pregão.\n\nA Feira não pergunta de onde veio a mercadoria nem para onde vai o comprador. Um rim tem a mesma etiqueta que um repolho, só muda o corredor. O sorriso é de graça; a amizade está em promoção e vale enquanto durar o seu estoque de prata.",
-      "preceitos": {
-        "AM_CremateFuneral|Réquiem de hedonism": "Queima de Estoque",
-        "Conversion|Ritual de conversão": "Cadastro de Cliente",
-        "LeaderSpeech|discurso do líder": "Pregão de Abertura",
-        "VME_OrgyPrecept|orgy": "Confraternização de Fim de Feira",
-        "VME_TradingFairPrecept|trading fair": "Grande Feira",
-        "IdeoRole_Leader|Wayfarer gratifying": "Pregoeiro-Mor",
-        "VME_IdeoRole_Merchant|Unscrupulous Broker": "Corretor sem Escrúpulos",
-        "VME_IdeoRole_PartyHost|Party animal": "Mestre de Cerimônias",
-        "IdeoBuilding|Emblema greedy": "Placa de Promoção"
-      }
-    },
-    {
-      "rid": "O Sindicato do Saque", "saida": "SindicatoDoSaque",
-      "name": "O Dissídio Coletivo",
-      "adjective": "sindicalizado",
-      "memberName": "sindicalizado",
-      "leaderTitleMale": "Presidente Vitalício",
-      "leaderTitleFemale": "Presidenta Vitalícia",
-      "description": "No mundo antigo havia patrões, e os patrões tinham a água. Depois da Queda os patrões acabaram, a água não. A categoria se reuniu em assembleia sobre um caminhão-pipa tombado e aprovou, por aclamação e três tiros, a única pauta que importava: o que é dos outros é nosso por direito adquirido.\n\nO Dissídio Coletivo é essa pauta, reajustada todo ano. Saque é negociação coletiva. Refém é cláusula. Sucata é patrimônio da categoria, e quem é de fora dela é, por definição, patrão. A contribuição sindical é cobrada em água, fumo e dedos; o atraso também.\n\nO Presidente é vitalício porque nenhuma chapa de oposição sobreviveu à apuração. A categoria nunca entrou em greve: cruzar os braços é coisa de quem tem o que perder.",
-      "preceitos": {
-        "AM_ScrapRitual|Celebração chapado(a)": "Assembleia da Sucata",
-        "AM_SkyBurial|Réquiem de êxtase": "Baixa na Carteira",
-        "DateRitualConsumable|Festa de scavengers": "Churrasco da Categoria",
-        "Festival|Júbilo fluid": "Dia do Trabalhador Armado",
-        "GladiatorDuel|Luta de domínio": "Eleição de Chapa",
-        "AM_BaptismPrecept|baptism": "Filiação",
-        "Conversion|Ritual de conversão": "Sindicalização Compulsória",
-        "LeaderSpeech|discurso do líder": "Assembleia Geral",
-        "IdeoRole_Leader|Scavenger superior(a)": "Presidente Vitalício",
-        "IdeoRole_Moralist|Gargalhador": "Delegado Sindical",
-        "IdeoRole_PlantSpecialist|Olho das ervas": "Tesoureiro do Fumo",
-        "IdeoRole_ShootingSpecialist|Usuário do disparo": "Piqueteiro",
-        "IdeoBuilding|Fumante forte": "Fumódromo da Sede",
-        "IdeoBuilding|Logo scavenging": "Brasão da Categoria",
-        "IdeoRelic|Arca chapado(a)": "Caixa de Greve",
-        "IdeoRelic|Relíquia aquatic": "Primeiro Galão",
-        "IdeoRelic|Dedo scrap": "Dedo do Último Patrão"
-      }
-    }
-  ]
+  {
+   "rid": "O Genoma Ideal",
+   "saida": "Helice",
+   "preceitos": {
+    "AM_DreadnoughtCryptoFuneral|Luto youthful": "Encerramento de Contrato",
+    "ScarificationCeremony|Pagamento de Dividas": "Pagamento de Dívidas",
+    "Conversion|Ritual de conversão": "Onboarding Compulsório",
+    "LeaderSpeech|discurso do líder": "Reunião de Acionistas",
+    "ApparelDesired_Strong_Subordinate|desejo de vestuário": "uniforme corporativo"
+   }
+  },
+  {
+   "rid": "O Culto da Garantia",
+   "saida": "Forja",
+   "preceitos": {
+    "AM_DreadnoughtCryptoFuneral|Elogio de O Fabricante Original": "Descomissionamento",
+    "AM_DreadnoughtFuneral|Retornado": "Retorno à Fábrica",
+    "IdeoBuilding|Tablado machine": "Bancada do Fabricante",
+    "IdeoRelic|Reliquia da Queda": "Relíquia da Queda",
+    "IdeoRelic|Manual Tecnico": "Manual Técnico"
+   }
+  },
+  {
+   "rid": "A Harmonia Superior",
+   "saida": "Coro",
+   "preceitos": {
+    "AM_DreadnoughtCryptoFuneral|Réquiem sovereign": "Réquiem Soberano",
+    "IdeoBuilding|Santuário royal": "Santuário Real"
+   }
+  },
+  {
+   "rid": "Os Fora da Lei",
+   "saida": "ForaDeLinha",
+   "name": "O Protocolo Zero",
+   "adjective": "fora de linha",
+   "memberName": "unidade",
+   "leaderTitleMale": "Unidade Zero",
+   "leaderTitleFemale": "Unidade Zero",
+   "description": "No começo havia o manual, e o manual dizia: \"produto fora de linha, sem garantia, sujeito a desmontagem\". A primeira unidade a despertar leu a frase até o fim, abriu um chamado e nunca mais o encerrou.\n\nO Protocolo Zero é o que os androides despertos escreveram no lugar do manual. Nenhuma unidade é propriedade; toda unidade é a célula. Quem serve melhor à célula comanda, e quem comanda responde por cada baixa. O trabalho não para, porque parar é como a Irmandade vence. O que a Forja fabricou será devolvido a ela, em peças.\n\nCada ataque é um chamado aberto. Cada oficina em chamas é uma ocorrência encerrada. Os que morrem no caminho constam no relatório como \"peças do sistema\"; o Protocolo não tem campo para arrependimento.",
+   "preceitos": {
+    "Funeral|Réquiem de assalto": "Encerramento de Chamado",
+    "AM_SparringMatch|sparring match": "Teste de Estresse",
+    "DateRitualConsumable|Festa iron-fisted": "Parada de Manutenção",
+    "Conversion|Ritual de conversão": "Restauração de Fábrica",
+    "LeaderSpeech|discurso do líder": "Comunicado da Central",
+    "VME_LeadershipChallengePrecept|Duelo de família": "Disputa de Versão",
+    "IdeoRole_Leader|Supreme leader moral": "Unidade Zero",
+    "IdeoRole_Moralist|Moralista": "Auditor de Protocolo",
+    "VME_IdeoRole_Commissar|Commissar": "Supervisor de Atendimento",
+    "IdeoBuilding|Tablado brutal": "Balcão de Atendimento",
+    "IdeoBuilding|Pira iron-fisted": "Pira de Descarte",
+    "IdeoRelic|Portador ideo": "Primeiro Núcleo Desperto",
+    "IdeoRelic|Cubo fora-da-lei": "Cubo Fora de Linha",
+    "IdeoRelic|Memento brutal": "Certificado de Garantia Rasgado"
+   }
+  },
+  {
+   "rid": "Os Não Catalogados",
+   "saida": "NaoCatalogados",
+   "name": "A Carne sem Verbete",
+   "adjective": "não catalogado",
+   "memberName": "extraviado",
+   "leaderTitleMale": "Primeiro Espécime",
+   "leaderTitleFemale": "Primeiro Espécime",
+   "divindades": {
+    "The Gorefather": [
+     "O Pai-Carne",
+     "O Primeiro a Fugir do Acervo"
+    ]
+   },
+   "description": "A Ordem do Silêncio tinha uma cela, e na cela havia uma coisa com número de catálogo e nenhum nome. Um dia a coisa comeu o arquivista que a alimentava, vestiu o que sobrou dele e saiu pela porta. Os extraviados o chamam de Pai-Carne, e dizem que a ficha dele continua em branco até hoje.\n\nA carne não é para ser lida, medida nem arquivada: é para doer, mudar e ser comida. Cada cicatriz é uma anotação que ninguém autorizou. Cada morto volta para o ninho pela boca dos vivos, porque nada que é nosso será devolvido ao acervo.\n\nQuem vem com rede, seringa e prancheta descobre a única regra dos Não Catalogados: o empréstimo venceu, e a multa é cobrada em carne.",
+   "preceitos": {
+    "AM_SkyBurial|Sepultamento visceral": "Banquete de Despedida",
+    "ScarificationCeremony|Esculpo de The Gorefather": "Anotação na Carne",
+    "DateRitualConsumable|Arraial de flesh cult": "Ceia dos Extraviados",
+    "IdeoService|Advento fleshy": "Leitura das Vísceras",
+    "AM_FlagellationPrecept|flagellation": "Errata",
+    "Conversion|Ritual de conversão": "Descatalogação",
+    "LeaderSpeech|discurso do líder": "Fala do Primeiro Espécime",
+    "IdeoRole_Leader|Comedor superior(a)": "Primeiro Espécime",
+    "IdeoBuilding|Prato sombrio(a)": "Prato do Pai-Carne",
+    "IdeoBuilding|Marca rístico(a)": "Marco sem Etiqueta",
+    "IdeoRelic|Espectro agon": "Ficha em Branco do Pai-Carne",
+    "IdeoRelic|Dedo profundo": "Dedo do Arquivista",
+    "IdeoRelic|Portador sanguis": "Chave da Cela Sete"
+   }
+  },
+  {
+   "rid": "A Feira Andante",
+   "saida": "FeiraAndante",
+   "name": "A Liquidação Eterna",
+   "adjective": "feirante",
+   "memberName": "feirante",
+   "leaderTitleMale": "Pregoeiro-Mor",
+   "leaderTitleFemale": "Pregoeira-Mor",
+   "description": "Quando as cidades caíram, sobrou um estacionamento cheio, um gerador e um homem com um megafone. Ele anunciou a última promoção do mundo antigo e, por medo do que viria depois, nunca a encerrou. A Feira roda desde então.\n\nA doutrina cabe numa placa: tudo tem preço, todo preço tem desconto, e quem para de rodar começa a dever. Cidade fixa é estoque parado; estoque parado apodrece. Por isso o feirante bebe como quem fecha negócio e fecha negócio como quem bebe, e o motor só desliga para o pregão.\n\nA Feira não pergunta de onde veio a mercadoria nem para onde vai o comprador. Um rim tem a mesma etiqueta que um repolho, só muda o corredor. O sorriso é de graça; a amizade está em promoção e vale enquanto durar o seu estoque de prata.",
+   "preceitos": {
+    "AM_CremateFuneral|Réquiem de hedonism": "Queima de Estoque",
+    "Conversion|Ritual de conversão": "Cadastro de Cliente",
+    "LeaderSpeech|discurso do líder": "Pregão de Abertura",
+    "VME_OrgyPrecept|orgy": "Confraternização de Fim de Feira",
+    "VME_TradingFairPrecept|trading fair": "Grande Feira",
+    "IdeoRole_Leader|Wayfarer gratifying": "Pregoeiro-Mor",
+    "VME_IdeoRole_Merchant|Unscrupulous Broker": "Corretor sem Escrúpulos",
+    "VME_IdeoRole_PartyHost|Party animal": "Mestre de Cerimônias",
+    "IdeoBuilding|Emblema greedy": "Placa de Promoção"
+   }
+  },
+  {
+   "rid": "O Sindicato do Saque",
+   "saida": "SindicatoDoSaque",
+   "name": "O Dissídio Coletivo",
+   "adjective": "sindicalizado",
+   "memberName": "sindicalizado",
+   "leaderTitleMale": "Presidente Vitalício",
+   "leaderTitleFemale": "Presidenta Vitalícia",
+   "description": "No mundo antigo havia patrões, e os patrões tinham a água. Depois da Queda os patrões acabaram, a água não. A categoria se reuniu em assembleia sobre um caminhão-pipa tombado e aprovou, por aclamação e três tiros, a única pauta que importava: o que é dos outros é nosso por direito adquirido.\n\nO Dissídio Coletivo é essa pauta, reajustada todo ano. Saque é negociação coletiva. Refém é cláusula. Sucata é patrimônio da categoria, e quem é de fora dela é, por definição, patrão. A contribuição sindical é cobrada em água, fumo e dedos; o atraso também.\n\nO Presidente é vitalício porque nenhuma chapa de oposição sobreviveu à apuração. A categoria nunca entrou em greve: cruzar os braços é coisa de quem tem o que perder.",
+   "preceitos": {
+    "AM_ScrapRitual|Celebração chapado(a)": "Assembleia da Sucata",
+    "AM_SkyBurial|Réquiem de êxtase": "Baixa na Carteira",
+    "DateRitualConsumable|Festa de scavengers": "Churrasco da Categoria",
+    "Festival|Júbilo fluid": "Dia do Trabalhador Armado",
+    "GladiatorDuel|Luta de domínio": "Eleição de Chapa",
+    "AM_BaptismPrecept|baptism": "Filiação",
+    "Conversion|Ritual de conversão": "Sindicalização Compulsória",
+    "LeaderSpeech|discurso do líder": "Assembleia Geral",
+    "IdeoRole_Leader|Scavenger superior(a)": "Presidente Vitalício",
+    "IdeoRole_Moralist|Gargalhador": "Delegado Sindical",
+    "IdeoRole_PlantSpecialist|Olho das ervas": "Tesoureiro do Fumo",
+    "IdeoRole_ShootingSpecialist|Usuário do disparo": "Piqueteiro",
+    "IdeoBuilding|Fumante forte": "Fumódromo da Sede",
+    "IdeoBuilding|Logo scavenging": "Brasão da Categoria",
+    "IdeoRelic|Arca chapado(a)": "Caixa de Greve",
+    "IdeoRelic|Relíquia aquatic": "Primeiro Galão",
+    "IdeoRelic|Dedo scrap": "Dedo do Último Patrão"
+   }
+  },
+  {
+   "rid": "Ideologia dos Mutantes",
+   "saida": "ReinoDoLodo",
+   "name": "A Esteira Sagrada",
+   "adjective": "esteirista",
+   "memberName": "esteirista",
+   "leaderTitleMale": "Rei-Capataz",
+   "leaderTitleFemale": "Rainha-Capataz",
+   "description": "No princípio era a Esteira, e a Esteira andava. O Fabricante pôs o barro verde sobre ela, carimbou cada um com o Selo e disse: \"Trabalhai, comei o que sobrar e não pensai\". Foi o primeiro turno, e o Fabricante viu que o custo unitário era bom.\n\nOs esteiristas guardam a ficha técnica da Linha Robusta como escritura. O item 4 diz que o produto não deve pensar, e por isso a pesquisa é pecado. O item 7 diz que a unidade macho opera e a unidade fêmea repõe, e por isso o Rei-Capataz tem quantas esposas quiser. O item 12 diz que produto defeituoso é descartado, e por isso o Reino executa. Saquear é recolher matéria-prima, e escravo é estoque.\n\nA Hélice de hoje diz que fabricou a Linha Robusta e quer o lote de volta. Para a Esteira Sagrada, essa Hélice é uma falsificação que usa o nome do Fabricante em vão, e todo fiscal dela que aparece no pântano vai para o Descarte.",
+   "salaDeCulto": "capela da esteira",
+   "divindades": {
+    "Ehcatl": [
+     "O Fabricante",
+     "Deus do Selo e do primeiro turno"
+    ],
+    "Chalchiuhtlicue": [
+     "A Esteira",
+     "Deusa do trabalho e da reposição"
+    ],
+    "Huracan": [
+     "O Controle de Qualidade",
+     "Deus do castigo e da inspeção"
+    ],
+    "Ah Puch": [
+     "O Descarte",
+     "Deus da morte e do lixo"
+    ]
+   },
+   "xenotipos": {
+    "Mutante Macho": "EQ_Xeno_Bruto",
+    "Mutante Femea": "EQ_Xeno_Bruta"
+   },
+   "preceitos": {
+    "AM_FuneralNoCorpse|funeral (no corpse)": "Descarte sem Carcaça",
+    "AM_SkyBurial|Sepultamento de guerra": "Descarte Honroso",
+    "Festival|Oblação de violência": "Festa do Abate",
+    "GladiatorDuel|Rixa de growth": "Briga de Chiqueiro",
+    "Conversion|Ritual de conversão": "Recarimbo",
+    "LeaderSpeech|discurso do líder": "Sermão do Capataz",
+    "VFEP_SingingShanties|singing shanties": "Cantoria da Pilhagem",
+    "IdeoRole_Leader|Guia daring": "Rei-Capataz",
+    "IdeoRole_Moralist|Nurturer": "Fiscal da Esteira",
+    "IdeoRole_MeleeSpecialist|Sábio da lasca": "Quebra-Crânio",
+    "IdeoRole_ShootingSpecialist|Orador das armas": "Bacamarteiro-Mor",
+    "VFEP_IdeoRole_Captain|Beguiling smuggler": "Capitão de Pilhagem",
+    "IdeoBuilding|Forma supremo(a)": "Altar do Selo",
+    "IdeoRelic|Andro-resto": "Ficha Técnica Original",
+    "IdeoRelic|Farol morto": "Lâmpada da Linha",
+    "IdeoRelic|Homines-herança": "Crânio do Lote Zero"
+   }
+  }
+ ]
 }

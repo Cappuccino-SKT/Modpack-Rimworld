@@ -178,6 +178,19 @@ Não são potências: sem ideologia fixa, cargos, Fama/Infâmia própria nem ser
 - Fora de Linha: **Exposição** perante a Forja (como a visibilidade), **dados de diagnóstico** como moeda (como a inteligência), missões de sabotagem (como as tramas), serviços da rede, opção de trair a célula.
 - Não Catalogados: expedições de coleta do Silêncio contra os ninhos, contrato de contenção aceitando Não Catalogados capturados, missões de defesa/resgate pelos Não Catalogados, contra-ataque com evento de entidades.
 
+**O Reino do Lodo (2026-11-16, mutantes):** facção menor medieval (`EQ_Faction_ReinoDoLodo`), xenos e ideologia do usuário.
+
+| | O Reino do Lodo |
+|---|---|
+| Quem são | descendentes da **Linha Robusta, Edição Chão de Fábrica**, mão de obra que a Hélice vendia antes da Queda: comiam lixo tóxico e não pediam aumento. O lote foi descontinuado e esquecido nos pântanos poluídos, onde virou reino |
+| Xenos (hereditários, do usuário) | **bruto** (macho: enorme, verde, presas, ótimo no corpo a corpo, péssimo atirador, poluição dá fúria) e **bruta** (fêmea: menor, fértil, gestação rápida, a poluição a deixa mais esperta; na ficha técnica era "unidade de reposição") |
+| Ideologia (do usuário) | **A Esteira Sagrada**: a ficha técnica do produto lida como escritura. O Fabricante carimbou o barro verde na Esteira; item 4, "o produto não deve pensar" (pesquisa é pecado); item 7, "a unidade macho opera e a unidade fêmea repõe" (supremacia masculina, poligamia do Rei-Capataz); item 12, "produto defeituoso é descartado" (execução obrigatória). Saque é recolher matéria-prima, escravo é estoque. Divindades: o Fabricante, a Esteira, o Controle de Qualidade, o Descarte |
+| Tecnologia | medieval por falta de manual: madeira, ferro, **armas de sucata** (VWE Makeshift) e **armas antigas** (mosquete, pederneira, arcabuz, canhão de mão do VFE Medieval 2) |
+| Unidades | bruto (porrete, maça, mangual), bacamarteiro (fogo antigo e de sucata), arrombador (machado dinamarquês, alabarda, pique; couro pesado e placas), rei-capataz (montante, coroa e manto); bruta é civil e comerciante |
+| Relações | Hélice -100 permanente ("recall de lote": ela quer o lote de volta; para o Reino essa Hélice é falsificação do Fabricante), Coro -60 ("desafinados de nascença"), Silêncio -25 (interesse acadêmico), Forja +10 ("cliente sem garantia"), Feira +30 ("pagam em porco"), Sindicato -70 ("concorrência desleal"); jogador começa em -30 |
+| Bases | cidades-castelo medievais do Custom Base Framework (planos medievais genéricos por nível tecnológico) |
+| Parte horrível | supremacia masculina e mulheres tratadas como "reposição"; escravidão honrosa; execução obrigatória; saque como sacramento |
+
 ## Relações desejadas (ainda NÃO implementadas — fase 2)
 
 | | Silêncio | Hélice | Forja | Coro |

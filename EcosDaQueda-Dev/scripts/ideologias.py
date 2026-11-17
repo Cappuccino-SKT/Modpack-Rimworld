@@ -58,6 +58,18 @@ def main():
             troca = cfg.get("divindades", {}).get(d.findtext("name"))
             if troca:
                 d.find("name").text, d.find("type").text = troca
+        # xeno preferido: o editor guarda o xeno personalizado inteiro; troca pelo nosso XenotypeDef
+        for p in ideo.find("precepts"):
+            cx = p.find("customXenotype")
+            if cx is None:
+                continue
+            troca = cfg.get("xenotipos", {}).get(cx.findtext("name"))
+            if not troca:
+                problemas += 1
+                print(f"  !! {cfg['rid']}: xeno personalizado '{cx.findtext('name')}' sem XenotypeDef em 'xenotipos'")
+                continue
+            p.remove(cx)
+            ET.SubElement(p, "xenotype").text = troca
         # preceitos com nome
         trocas = dict(meta["comum"])
         trocas.update(cfg.get("preceitos", {}))

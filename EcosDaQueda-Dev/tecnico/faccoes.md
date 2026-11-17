@@ -37,6 +37,8 @@
 - **Texto de def de terceiros em PT-BR:** patch de XML em `label`/`description` é sobrescrito pela tradução do jogo; usar `Languages/PortugueseBrazilian/DefInjected/<Tipo>/*.xml` no nosso mod (ex.: `EQ_Insect.xml`). Conferir com `deftext`.
 - Ghoul de facção: PawnKind filho de `MutantBase` com `<mutant>Ghoul</mutant>` e `defaultFactionDef` nosso; bestas de carne (`Fingerspike`, `Toughspike`, `Trispike`) entram direto nas opções do `pawnGroupMaker`.
 - Xeno sem `.xtp`: lista `genes` direto no `xenotipos.json`.
+- **Ideologia com xeno preferido:** o editor guarda no preceito `PreferredXenotype` o xeno personalizado inteiro (`<customXenotype>`), que não bate com o nosso `XenotypeDef`. O `ideologias.py` troca por `<xenotype>EQ_Xeno_*</xenotype>` usando o mapa `xenotipos` da entrada no `ideologias.json` (nome do xeno no editor → defName); xeno sem mapa é erro.
+- **Reino do Lodo** (medieval): herda de `OutlanderFactionBase` com `techLevel` Medieval; comerciantes do VFE Medieval 2 (`VFEM2_Caravan_Medieval_*`, `VFEM2_Base/Visitor_Medieval_Standard`, com `MayRequire`) e neolíticos de reserva. As bases vêm dos planos medievais genéricos do CBF (ex.: `CBF_Plan_VFEM2_MarketCity`).
 
 ## PawnKinds
 

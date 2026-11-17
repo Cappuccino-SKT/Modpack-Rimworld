@@ -244,6 +244,24 @@
       "combatPowerFactor": 2.2,
       "descriptionShort": "A modificação de quem comanda um ninho: carne blindada, um bolsão cinzento fora do mundo, mortos que se levantam e um xenogerme para passar adiante.",
       "description": "Não se nasce matriz. Quando um ninho perde quem o comanda, a matriz antiga reimplanta o próprio xenogerme no escolhido, e o resto do ninho come o que sobrar dela.\n\nA matriz tem a carne blindada, cura rápido, bate como ninguém e carrega os arquitos que o Pai-Carne roubou da cela. Abre um bolsão cinzento fora do mundo para esconder o que é do ninho, faz brotar bulbos de carne e levanta os mortos para lutar outra vez. Fora isso, não sabe fazer nada, e acha que não precisa.\n\nA Ordem do Silêncio daria uma ala inteira do arquivo por uma matriz viva. Já perdeu três expedições tentando."
+    },
+    {
+      "xtp": "Mutante Macho",
+      "defName": "EQ_Xeno_Bruto",
+      "label": "bruto",
+      "inheritable": true,
+      "combatPowerFactor": 1.4,
+      "descriptionShort": "Macho do Reino do Lodo: enorme, verde, de presas, imune a veneno e feliz na poluição. Bate muito, atira mal e não lê.",
+      "description": "Antes da Queda, a Hélice vendia a \"Linha Robusta, Edição Chão de Fábrica\": operários que comiam lixo tóxico, respiravam fumaça e não pediam aumento. O lote foi descontinuado quando o primeiro protótipo aprendeu a palavra \"greve\". Os descendentes ficaram nos pântanos poluídos e fundaram um reino.\n\nO bruto é o macho da linhagem: grande como um armário, pele verde, presas, carne que rende como a de porco e uma tolerância a toxinas que faz dos lamaçais venenosos o seu jardim. Luta muito bem com as mãos, atira muito mal, envelhece rápido e considera ler um sinal de doença."
+    },
+    {
+      "xtp": "Mutante Femea",
+      "defName": "EQ_Xeno_Bruta",
+      "label": "bruta",
+      "inheritable": true,
+      "combatPowerFactor": 1.0,
+      "descriptionShort": "Fêmea do Reino do Lodo: menor, fértil, de gestação rápida e mais esperta na poluição. A Hélice a projetou como \"unidade de reposição\".",
+      "description": "Na ficha técnica da Linha Robusta, a fêmea constava como \"unidade de reposição\": menor, mais frágil, fértil e de gestação rápida, para o lote se repor sozinho no chão de fábrica. A Hélice achou a solução elegante.\n\nO Reino do Lodo leu a ficha técnica como escritura e fez dela a sua lei. A bruta tem as presas, a pele verde e a resistência a toxinas da linhagem; na poluição pensa mais rápido e trabalha mais, e não serve para a briga. Ela sabe exatamente o que a ficha técnica diz sobre ela. Também sabe ler, o que os brutos ainda não descobriram."
     }
   ]
 }

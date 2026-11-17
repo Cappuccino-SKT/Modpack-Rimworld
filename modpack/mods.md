@@ -109,6 +109,7 @@ Gerada por `modpack/update.ps1` a partir de `Mods/` e da ordem de carga em `Mods
 | 109 | Smart Farming | `owlchemist.smartfarming` | [3220129183](https://steamcommunity.com/sharedfiles/filedetails/?id=3220129183) |
 | 110 | Show Me Your Tools | `meathax.showmeyourtools` | [3738350131](https://steamcommunity.com/sharedfiles/filedetails/?id=3738350131) |
 | 111 | Blessed Conception Psychic Ritual | `fghj.ritualsboon` | [3790308888](https://steamcommunity.com/sharedfiles/filedetails/?id=3790308888) |
+| 112 | Character Creator | `astryl.moderncc` | [3762126187](https://steamcommunity.com/sharedfiles/filedetails/?id=3762126187) |
 | desativado | [NL] Facial Animation - WIP | `nals.facialanimation` | [1635901197](https://steamcommunity.com/sharedfiles/filedetails/?id=1635901197) |
 | desativado | Hearts of RimWorld - Grand Strategy Overhaul | `shengchipangxieyaotuke.heartsofrimworld` | [3833698946](https://steamcommunity.com/sharedfiles/filedetails/?id=3833698946) |
 | desativado | RimExodus — Seamless World | `rimexodus.seamlessworld` | [3790423611](https://steamcommunity.com/sharedfiles/filedetails/?id=3790423611) |

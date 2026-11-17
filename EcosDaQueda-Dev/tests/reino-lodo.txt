@@ -1,0 +1,14 @@
+# O Reino do Lodo (mutantes): facção menor medieval com xenos Bruto/Bruta, ideologia "A Esteira Sagrada",
+# armas antigas e de sucata, base medieval do Custom Base Framework. Rodar com -Profile full.
+newgame
+timeout 1200
+wait 1h
+faction reinodolodo
+factions
+xenogen fac:reinodolodo 20
+kit fac:reinodolodo 20
+raid reinodolodo 300
+wait 2h
+raid reinodolodo 1500
+wait 2h
+base reinodolodo
