@@ -26,6 +26,35 @@ namespace EcosDaQueda
         public List<string> mods = new List<string>();
         public List<string> exceptProjects = new List<string>();
         public List<TechLevel> techLevels = new List<TechLevel>();
+
+        // ---- Bloco 3b: licenças (só ramos com faction) ----
+        /// <summary>Cargo mínimo (índice, 0 = primeiro) que licencia cada nível tecnológico. Sem entrada: ver EQLicenses.DefaultRank.</summary>
+        public List<LicenseRankByTech> licenseRanks = new List<LicenseRankByTech>();
+        /// <summary>Exceções por projeto.</summary>
+        public List<LicenseRankOverride> rankOverrides = new List<LicenseRankOverride>();
+        /// <summary>Compra com favor: 1 de favor a cada costPerFavor pontos de pesquisa (mínimo minFavor), mais favorPerRankAbove por cargo acima do atual.</summary>
+        public float costPerFavor = 400f;
+        public int minFavor = 2;
+        public int maxFavor = 24;
+        public int favorPerRankAbove = 2;
+        /// <summary>Projetos cuja pirataria já é tratada noutro sistema (androides, drones, blindados).</summary>
+        public List<string> piracyExempt = new List<string>();
+        public int piracyGoodwill = -4;
+        public float piracyCooldownHours = 24f;
+        /// <summary>{FACTION_name}, {ITEM}, {PROJECT}, {TITLE}.</summary>
+        public string piracyText;
+    }
+
+    public class LicenseRankByTech
+    {
+        public TechLevel techLevel;
+        public int rank;
+    }
+
+    public class LicenseRankOverride
+    {
+        public string project;
+        public int rank;
     }
 
     public static class EQResearch
@@ -63,18 +92,19 @@ namespace EcosDaQueda
                 // Pesquisa da Anomalia (conhecimento) fica na aba própria; o resto vai para a aba do ramo.
                 if (r.knowledgeCategory == null && b.tab != null)
                     r.tab = b.tab;
-                r.description = (r.description ?? "").TrimEnd() + "\n\n" + BranchNote(b);
+                r.description = (r.description ?? "").TrimEnd() + "\n\n" + BranchNote(b, r);
             }
             Layout();
         }
 
-        private static string BranchNote(ResearchBranchDef b)
+        private static string BranchNote(ResearchBranchDef b, ResearchProjectDef r)
         {
             if (b.free)
                 return "Ramo: Bancada (pesquisa livre).";
             if (b.faction == null)
                 return "Ramo: " + b.label + ". Só com sucata desmontada ou dados antigos.";
-            return "Ramo: " + b.label + ". Licença da potência (cargo ou favor), sucata ou dados antigos.";
+            return "Ramo: " + b.label + ". Licença: cargo de " + EQLicenses.RequiredTitleLabel(r) + " " + (b.labelOf ?? b.label)
+                + " (ou compra com favor, sendo membro); sem licença, só por sucata ou dados antigos, e fabricar é pirataria.";
         }
 
         /// <summary>Posição inicial por aba: coluna pelo nível tecnológico e pré-requisitos da mesma aba, ordem pelo baricentro.
@@ -141,7 +171,7 @@ namespace EcosDaQueda
             WorldComponent_EQResearch comp = WorldComponent_EQResearch.Current;
             if (comp == null)
                 return true;
-            return comp.IsGranted(r);
+            return comp.IsGranted(r) || EQLicenses.IsLicensed(r);
         }
 
         /// <summary>Motivo da trava (null = sem trava nossa).</summary>
@@ -152,7 +182,8 @@ namespace EcosDaQueda
             ResearchBranchDef b = Branch(r);
             if (b.faction == null)
                 return "Tecnologia do Velho Mundo: exige sucata ou dados antigos";
-            return "Patente " + (b.labelOf ?? "de " + b.label) + ": exige licença (cargo ou favor), sucata ou dados antigos";
+            return "Patente " + (b.labelOf ?? "de " + b.label) + ": exige o cargo de " + EQLicenses.RequiredTitleLabel(r)
+                + " (membros compram com favor), sucata ou dados antigos";
         }
     }
 
@@ -160,6 +191,10 @@ namespace EcosDaQueda
     public class WorldComponent_EQResearch : WorldComponent
     {
         private HashSet<ResearchProjectDef> granted = new HashSet<ResearchProjectDef>();
+        /// <summary>Licenças compradas com favor (valem enquanto o jogador for membro da potência dona).</summary>
+        private HashSet<ResearchProjectDef> purchased = new HashSet<ResearchProjectDef>();
+        /// <summary>Última pirataria cobrada por potência (defName → tick).</summary>
+        private Dictionary<string, int> lastPiracy = new Dictionary<string, int>();
 
         private static World cachedWorld;
         private static WorldComponent_EQResearch cached;
@@ -191,12 +226,27 @@ namespace EcosDaQueda
 
         public IEnumerable<ResearchProjectDef> Granted => granted;
 
+        public bool IsPurchased(ResearchProjectDef r) => purchased.Contains(r);
+
+        public void Purchase(ResearchProjectDef r) => purchased.Add(r);
+
+        public IEnumerable<ResearchProjectDef> Purchased => purchased;
+
+        public int LastPiracyTick(FactionDef f) => f != null && lastPiracy.TryGetValue(f.defName, out int t) ? t : -999999999;
+
+        public void SetLastPiracy(FactionDef f, int tick) => lastPiracy[f.defName] = tick;
+
         public override void ExposeData()
         {
             base.ExposeData();
             Scribe_Collections.Look(ref granted, "granted", LookMode.Def);
             if (granted == null) granted = new HashSet<ResearchProjectDef>();
             granted.Remove(null);
+            Scribe_Collections.Look(ref purchased, "purchased", LookMode.Def);
+            if (purchased == null) purchased = new HashSet<ResearchProjectDef>();
+            purchased.Remove(null);
+            Scribe_Collections.Look(ref lastPiracy, "lastPiracy", LookMode.Value, LookMode.Value);
+            if (lastPiracy == null) lastPiracy = new Dictionary<string, int>();
         }
     }
 

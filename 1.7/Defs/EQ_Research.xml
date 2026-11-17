@@ -99,6 +99,7 @@
     <tab>EQ_Tab_Silencio</tab>
     <order>2</order>
     <faction>EQ_Faction_Silencio</faction>
+    <piracyText>{ITEM}: cópia não autorizada de {PROJECT}. {FACTION_name} não diz nada, mas anotou no arquivo (a licença exige o cargo de {TITLE}). Eles anotam tudo.</piracyText>
     <mods>
       <li>ludeon.rimworld.anomaly</li>
     </mods>
@@ -125,6 +126,7 @@
     <tab>EQ_Tab_Helice</tab>
     <order>3</order>
     <faction>EQ_Faction_Helice</faction>
+    <piracyText>{ITEM}: uso de {PROJECT} sem licença. {FACTION_name} mandou a cobrança de royalties com juros e uma notificação de violação de patente (a licença exige o cargo de {TITLE}).</piracyText>
     <mods>
       <li>vat.epoeforked</li>
     </mods>
@@ -164,6 +166,13 @@
     <tab>EQ_Tab_Forja</tab>
     <order>4</order>
     <faction>EQ_Faction_Forja</faction>
+    <piracyText>{ITEM}: montado com {PROJECT} sem licença. {FACTION_name} anulou a garantia de tudo o que você tem e abriu um processo por pirataria (a licença exige o cargo de {TITLE}).</piracyText>
+    <!-- Já tratados por outros sistemas: androides (EQ_Androids), drones (EQ_Missions), blindados (EQ_Vehicles). -->
+    <piracyExempt>
+      <li>VREA_AndroidTech</li>
+      <li>VQE_Dronetech</li>
+      <li>VVE_CombatVehicles</li>
+    </piracyExempt>
     <mods>
       <li>oskarpotocki.vfe.pirates</li>
     </mods>
@@ -219,6 +228,7 @@
     <tab>EQ_Tab_Coro</tab>
     <order>5</order>
     <faction>EQ_Faction_Coro</faction>
+    <piracyText>{ITEM}: feito com {PROJECT} sem concessão. {FACTION_name} considera isso uma ofensa à corte; a concessão exige o cargo de {TITLE}.</piracyText>
     <mods>
       <li>oskarpotocki.vfe.empire</li>
     </mods>

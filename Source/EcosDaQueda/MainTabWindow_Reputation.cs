@@ -85,11 +85,13 @@ namespace EcosDaQueda
 
             FactionAllegianceDef d = alg.Def;
             int rank = alg.RankIndex;
-            if (Widgets.ButtonText(new Rect(inner.xMax - 130f, inner.y, 130f, 28f), "Serviços"))
+            if (Widgets.ButtonText(new Rect(inner.xMax - 130f, inner.y, 130f, 22f), "Serviços"))
                 WorldComponent_Services.OpenMenu();
-            if (Widgets.ButtonText(new Rect(inner.xMax - 130f, inner.y + 32f, 130f, 28f), "Sucessor"))
+            if (Widgets.ButtonText(new Rect(inner.xMax - 130f, inner.y + 24f, 130f, 22f), "Licenças"))
+                Find.WindowStack.Add(new Dialog_EQLicenses());
+            if (Widgets.ButtonText(new Rect(inner.xMax - 130f, inner.y + 48f, 130f, 22f), "Sucessor"))
                 Find.WindowStack.Add(new Dialog_EQChooseLeader(forced: false, successorMode: true));
-            Rect third = new Rect(inner.xMax - 130f, inner.y + 64f, 130f, 28f);
+            Rect third = new Rect(inner.xMax - 130f, inner.y + 72f, 130f, 22f);
             if (leader == null)
             {
                 if (Widgets.ButtonText(third, "Escolher líder"))
