@@ -349,4 +349,45 @@
     </rulePack>
   </RulePackDef>
 
+
+  <!-- O Reino do Lodo (facção menor): aldeias de pântano e fortes de lixo -->
+  <RulePackDef>
+    <defName>EQ_NamerSettlement_ReinoDoLodo</defName>
+    <rulePack>
+      <rulesStrings>
+        <li>r_name(p=4)->[place] [suffix]</li>
+        <li>r_name(p=1)->[place] do Lote [roman]</li>
+        <li>place->Chiqueiro</li>
+        <li>place->Forte</li>
+        <li>place->Lamaçal</li>
+        <li>place->Paliçada</li>
+        <li>place->Curral</li>
+        <li>place->Aldeia</li>
+        <li>place->Brejo</li>
+        <li>place->Turno</li>
+        <li>place->Galpão</li>
+        <li>place->Ferro-Velho</li>
+        <li>suffix->do Selo</li>
+        <li>suffix->da Esteira</li>
+        <li>suffix->do Rei-Capataz</li>
+        <li>suffix->da Ficha Técnica</li>
+        <li>suffix->do Descarte</li>
+        <li>suffix->da Lama Boa</li>
+        <li>suffix->do Primeiro Turno</li>
+        <li>suffix->da Engorda</li>
+        <li>suffix->do Cano Torto</li>
+        <li>suffix->da Fumaça</li>
+        <li>suffix->do Controle de Qualidade</li>
+        <li>suffix->Sem Manual</li>
+        <li>roman->I</li>
+        <li>roman->II</li>
+        <li>roman->III</li>
+        <li>roman->IV</li>
+        <li>roman->V</li>
+        <li>roman->VII</li>
+        <li>roman->IX</li>
+        <li>roman->XII</li>
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
 </Defs>

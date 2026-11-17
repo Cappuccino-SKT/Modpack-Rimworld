@@ -115,6 +115,49 @@
         <goodwill>35</goodwill>
         <label>fornecedora da corte</label>
       </li>
+      <!-- O Reino do Lodo: a Hélice quer o lote de volta; o Reino manda os fiscais para o Descarte. -->
+      <li>
+        <a>EQ_Faction_Helice</a>
+        <b>EQ_Faction_ReinoDoLodo</b>
+        <goodwill>-100</goodwill>
+        <label>recall de lote</label>
+        <permanentEnemies>true</permanentEnemies>
+      </li>
+      <!-- Para o Coro, o Reino é feio, desafinado e grita. -->
+      <li>
+        <a>EQ_Faction_Coro</a>
+        <b>EQ_Faction_ReinoDoLodo</b>
+        <goodwill>-60</goodwill>
+        <label>desafinados de nascença</label>
+      </li>
+      <!-- O Silêncio quer uma amostra de cada geração. -->
+      <li>
+        <a>EQ_Faction_Silencio</a>
+        <b>EQ_Faction_ReinoDoLodo</b>
+        <goodwill>-25</goodwill>
+        <label>interesse acadêmico</label>
+      </li>
+      <!-- A Forja vende ferro velho a quem paga e não pergunta pela garantia. -->
+      <li>
+        <a>EQ_Faction_Forja</a>
+        <b>EQ_Faction_ReinoDoLodo</b>
+        <goodwill>10</goodwill>
+        <label>cliente sem garantia</label>
+      </li>
+      <!-- Clientes da Feira: compram tudo que brilha e pagam em porco. -->
+      <li>
+        <a>EQ_Faction_FeiraAndante</a>
+        <b>EQ_Faction_ReinoDoLodo</b>
+        <goodwill>30</goodwill>
+        <label>pagam em porco</label>
+      </li>
+      <!-- Saqueadores contra saqueadores: concorrência desleal. -->
+      <li>
+        <a>EQ_Faction_SindicatoDoSaque</a>
+        <b>EQ_Faction_ReinoDoLodo</b>
+        <goodwill>-70</goodwill>
+        <label>concorrência desleal</label>
+      </li>
     </relations>
   </EcosDaQueda.FactionRelationPresetDef>
 

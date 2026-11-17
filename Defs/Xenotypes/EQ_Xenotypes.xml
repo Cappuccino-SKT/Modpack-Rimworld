@@ -802,4 +802,130 @@ A Ordem do Silêncio daria uma ala inteira do arquivo por uma matriz viva. Já p
     </genes>
   </XenotypeDef>
 
+  <XenotypeDef>
+    <defName>EQ_Xeno_Bruto</defName>
+    <label>bruto</label>
+    <description>Antes da Queda, a Hélice vendia a "Linha Robusta, Edição Chão de Fábrica": operários que comiam lixo tóxico, respiravam fumaça e não pediam aumento. O lote foi descontinuado quando o primeiro protótipo aprendeu a palavra "greve". Os descendentes ficaram nos pântanos poluídos e fundaram um reino.
+
+O bruto é o macho da linhagem: grande como um armário, pele verde, presas, carne que rende como a de porco e uma tolerância a toxinas que faz dos lamaçais venenosos o seu jardim. Luta muito bem com as mãos, atira muito mal, envelhece rápido e considera ler um sinal de doença.</description>
+    <descriptionShort>Macho do Reino do Lodo: enorme, verde, de presas, imune a veneno e feliz na poluição. Bate muito, atira mal e não lê.</descriptionShort>
+    <iconPath>UI/Icons/Xenotypes/Other</iconPath>
+    <inheritable>true</inheritable>
+    <factionlessGenerationWeight>0</factionlessGenerationWeight>
+    <combatPowerFactor>1.4</combatPowerFactor>
+    <genes>
+      <li MayRequire="vanillaracesexpanded.waster">VREW_PollutionRush</li>
+      <li MayRequire="vanillaracesexpanded.waster">VREW_PollutionRage</li>
+      <li MayRequire="vanillaracesexpanded.waster">VREW_PollutionNumbness</li>
+      <li MayRequire="vanillaracesexpanded.waster">VREW_PollutionFertility</li>
+      <li MayRequire="sarg.alphagenes">AG_LargerBodySize</li>
+      <li MayRequire="sarg.alphagenes">AG_Male</li>
+      <li MayRequire="vanillaracesexpanded.pigskin">VRE_PorkFlesh</li>
+      <li MayRequire="sarg.alphagenes">AG_PlainLeather</li>
+      <li>StrongStomach</li>
+      <li MayRequire="sarg.alphagenes">AG_EfficientMandibles</li>
+      <li MayRequire="sarg.alphagenes">AG_SurvivalInstinct_High</li>
+      <li MayRequire="sarg.alphagenes">AG_TableResistance</li>
+      <li>Immunity_Strong</li>
+      <li MayRequire="sarg.alphagenes">AG_Filthy</li>
+      <li MayRequire="vanillaracesexpanded.pigskin">VRE_RapidAging</li>
+      <li MayRequire="vanillaracesexpanded.pigskin">VRE_ExtraMeat</li>
+      <li MayRequire="sarg.alphagenes">AG_ExtraLeather</li>
+      <li MayRequire="sarg.alphagenes">AG_PackMule</li>
+      <li MayRequire="vanillaracesexpanded.pigskin">VRE_Gluttonous</li>
+      <li MayRequire="sarg.alphagenes">AG_ArmourMedium</li>
+      <li>PsychicAbility_Deaf</li>
+      <li MayRequire="vanillaracesexpanded.lycanthrope">VRE_Territorial</li>
+      <li>ToxResist_Total</li>
+      <li>Aggression_Aggressive</li>
+      <li>MeleeDamage_Strong</li>
+      <li MayRequire="sarg.alphagenes">AG_ToughSinews</li>
+      <li>Sleepy</li>
+      <li>Fertile</li>
+      <li>Beauty_Ugly</li>
+      <li>Hair_BaldOnly</li>
+      <li>Jaw_Heavy</li>
+      <li MayRequire="sarg.alphagenes">AG_HeavilyScarred</li>
+      <li>Brow_Heavy</li>
+      <li MayRequire="vanillaracesexpanded.pigskin">VRE_MouthTusks</li>
+      <li>Body_Fat</li>
+      <li>Body_Hulk</li>
+      <li>Skin_Green</li>
+      <li>Skin_PaleYellow</li>
+      <li MayRequire="vanillaracesexpanded.pigskin">VRE_Brave</li>
+      <li>Inbred</li>
+      <li>Instability_Mild</li>
+      <li MayRequire="vanillaracesexpanded.waster">VRE_ToxAbsorption</li>
+      <li>AptitudePoor_Shooting</li>
+      <li>AptitudeStrong_Melee</li>
+      <li>AptitudeStrong_Mining</li>
+      <li>AptitudeTerrible_Cooking</li>
+      <li>AptitudeTerrible_Plants</li>
+      <li>AptitudeStrong_Animals</li>
+      <li>AptitudeTerrible_Crafting</li>
+      <li>AptitudeTerrible_Artistic</li>
+      <li>AptitudeTerrible_Social</li>
+      <li>AptitudeTerrible_Intellectual</li>
+      <li MayRequire="sarg.alphagenes">AG_MiningYield_High</li>
+    </genes>
+  </XenotypeDef>
+
+  <XenotypeDef>
+    <defName>EQ_Xeno_Bruta</defName>
+    <label>bruta</label>
+    <description>Na ficha técnica da Linha Robusta, a fêmea constava como "unidade de reposição": menor, mais frágil, fértil e de gestação rápida, para o lote se repor sozinho no chão de fábrica. A Hélice achou a solução elegante.
+
+O Reino do Lodo leu a ficha técnica como escritura e fez dela a sua lei. A bruta tem as presas, a pele verde e a resistência a toxinas da linhagem; na poluição pensa mais rápido e trabalha mais, e não serve para a briga. Ela sabe exatamente o que a ficha técnica diz sobre ela. Também sabe ler, o que os brutos ainda não descobriram.</description>
+    <descriptionShort>Fêmea do Reino do Lodo: menor, fértil, de gestação rápida e mais esperta na poluição. A Hélice a projetou como "unidade de reposição".</descriptionShort>
+    <iconPath>UI/Icons/Xenotypes/Other</iconPath>
+    <inheritable>true</inheritable>
+    <factionlessGenerationWeight>0</factionlessGenerationWeight>
+    <combatPowerFactor>1.0</combatPowerFactor>
+    <genes>
+      <li MayRequire="vanillaracesexpanded.waster">VREW_PollutionRush</li>
+      <li MayRequire="vanillaracesexpanded.waster">VREW_PollutionCognition</li>
+      <li MayRequire="vanillaracesexpanded.waster">VREW_PollutionProductivity</li>
+      <li MayRequire="vanillaracesexpanded.waster">VREW_PollutionFertility</li>
+      <li MayRequire="sarg.alphagenes">AG_SmallerBodySize</li>
+      <li MayRequire="sarg.alphagenes">AG_Female</li>
+      <li MayRequire="vanillaracesexpanded.pigskin">VRE_PorkFlesh</li>
+      <li MayRequire="sarg.alphagenes">AG_PlainLeather</li>
+      <li>StrongStomach</li>
+      <li MayRequire="sarg.alphagenes">AG_EfficientMandibles</li>
+      <li MayRequire="sarg.alphagenes">AG_SurvivalInstinct_High</li>
+      <li MayRequire="sarg.alphagenes">AG_TableResistance</li>
+      <li>Immunity_Strong</li>
+      <li MayRequire="sarg.alphagenes">AG_Clean</li>
+      <li MayRequire="vanillaracesexpanded.pigskin">VRE_FastAging</li>
+      <li MayRequire="vanillaracesexpanded.pigskin">VRE_ExtraMeat</li>
+      <li MayRequire="sarg.alphagenes">AG_ExtraLeather</li>
+      <li MayRequire="sarg.alphagenes">AG_FrailBack</li>
+      <li MayRequire="vanillaracesexpanded.pigskin">VRE_Gluttonous</li>
+      <li MayRequire="sarg.alphagenes">AG_ArmourMinor</li>
+      <li>PsychicAbility_Dull</li>
+      <li MayRequire="vanillaracesexpanded.lycanthrope">VRE_Territorial</li>
+      <li>ToxicEnvironmentResistance_Total</li>
+      <li>Aggression_Aggressive</li>
+      <li MayRequire="vanillaracesexpanded.highmate">VRE_Libido_VeryHigh</li>
+      <li>Fertile</li>
+      <li MayRequire="sarg.alphagenes">AG_FastGestation</li>
+      <li>Beauty_Ugly</li>
+      <li>Hair_BaldOnly</li>
+      <li>Jaw_Heavy</li>
+      <li>Brow_Heavy</li>
+      <li MayRequire="vanillaracesexpanded.pigskin">VRE_MouthTusks</li>
+      <li>Body_Standard</li>
+      <li>Body_Fat</li>
+      <li>Skin_Green</li>
+      <li>Skin_PaleYellow</li>
+      <li>Inbred</li>
+      <li>Instability_Mild</li>
+      <li MayRequire="vanillaracesexpanded.waster">VRE_ToxAbsorption</li>
+      <li>AptitudeTerrible_Melee</li>
+      <li>AptitudeTerrible_Mining</li>
+      <li>AptitudeTerrible_Animals</li>
+      <li MayRequire="sarg.alphagenes">AG_MiningYield_Low</li>
+    </genes>
+  </XenotypeDef>
+
 </Defs>

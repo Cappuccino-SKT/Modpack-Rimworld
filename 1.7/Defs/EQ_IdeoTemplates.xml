@@ -273,4 +273,11 @@
     <exactPrecepts>false</exactPrecepts>
   </EcosDaQueda.IdeoTemplateDef>
 
+  <EcosDaQueda.IdeoTemplateDef>
+    <defName>EQ_IdeoTemplate_ReinoDoLodo</defName>
+    <faction>EQ_Faction_ReinoDoLodo</faction>
+    <ideoFile>ReinoDoLodo</ideoFile>
+    <exactPrecepts>false</exactPrecepts>
+  </EcosDaQueda.IdeoTemplateDef>
+
 </Defs>

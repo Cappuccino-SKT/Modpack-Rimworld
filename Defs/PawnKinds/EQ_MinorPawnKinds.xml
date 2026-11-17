@@ -514,4 +514,187 @@
     <initialResistanceRange>25~40</initialResistanceRange>
   </PawnKindDef>
 
+
+  <!-- =====================================================================
+       O REINO DO LODO (mutantes). Brutos lutam; brutas são civis e comerciantes.
+       ===================================================================== -->
+  <PawnKindDef ParentName="MercenaryMidTierBase">
+    <defName>EQ_Lodo_Bruto</defName>
+    <label>bruto</label>
+    <labelPlural>brutos</labelPlural>
+    <defaultFactionDef>EQ_Faction_ReinoDoLodo</defaultFactionDef>
+    <combatPower>70</combatPower>
+    <fixedGender>Male</fixedGender>
+    <useFactionXenotypes>false</useFactionXenotypes>
+    <xenotypeSet Inherit="False">
+      <xenotypeChances>
+        <EQ_Xeno_Bruto>1</EQ_Xeno_Bruto>
+      </xenotypeChances>
+    </xenotypeSet>
+    <gearHealthRange>0.4~1</gearHealthRange>
+    <apparelMoney>200~600</apparelMoney>
+    <apparelTags Inherit="False">
+      <li>EQ_Roupa_Lodo</li>
+    </apparelTags>
+    <weaponMoney>200~600</weaponMoney>
+    <weaponTags Inherit="False">
+      <li>EQ_Lodo_Corpo</li>
+    </weaponTags>
+    <techHediffsChance>0</techHediffsChance>
+    <initialResistanceRange>18~30</initialResistanceRange>
+    <requiredWorkTags>
+      <li>Violent</li>
+    </requiredWorkTags>
+    <modExtensions>
+      <li Class="CombatExtended.LoadoutPropertiesExtension" MayRequire="CETeam.CombatExtended">
+        <primaryMagazineCount>
+          <min>2</min>
+          <max>4</max>
+        </primaryMagazineCount>
+      </li>
+    </modExtensions>
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="MercenaryMidTierBase">
+    <defName>EQ_Lodo_Bacamarteiro</defName>
+    <label>bacamarteiro</label>
+    <labelPlural>bacamarteiros</labelPlural>
+    <defaultFactionDef>EQ_Faction_ReinoDoLodo</defaultFactionDef>
+    <combatPower>85</combatPower>
+    <fixedGender>Male</fixedGender>
+    <useFactionXenotypes>false</useFactionXenotypes>
+    <xenotypeSet Inherit="False">
+      <xenotypeChances>
+        <EQ_Xeno_Bruto>1</EQ_Xeno_Bruto>
+      </xenotypeChances>
+    </xenotypeSet>
+    <gearHealthRange>0.4~1</gearHealthRange>
+    <apparelMoney>300~800</apparelMoney>
+    <apparelTags Inherit="False">
+      <li>EQ_Roupa_Lodo</li>
+    </apparelTags>
+    <weaponMoney>300~800</weaponMoney>
+    <weaponTags Inherit="False">
+      <li>EQ_Lodo_Fogo</li>
+    </weaponTags>
+    <techHediffsChance>0</techHediffsChance>
+    <initialResistanceRange>18~30</initialResistanceRange>
+    <requiredWorkTags>
+      <li>Violent</li>
+    </requiredWorkTags>
+    <modExtensions>
+      <li Class="CombatExtended.LoadoutPropertiesExtension" MayRequire="CETeam.CombatExtended">
+        <primaryMagazineCount>
+          <min>2</min>
+          <max>4</max>
+        </primaryMagazineCount>
+      </li>
+    </modExtensions>
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="MercenaryEliteBase">
+    <defName>EQ_Lodo_Arrombador</defName>
+    <label>arrombador</label>
+    <labelPlural>arrombadores</labelPlural>
+    <defaultFactionDef>EQ_Faction_ReinoDoLodo</defaultFactionDef>
+    <combatPower>140</combatPower>
+    <fixedGender>Male</fixedGender>
+    <useFactionXenotypes>false</useFactionXenotypes>
+    <xenotypeSet Inherit="False">
+      <xenotypeChances>
+        <EQ_Xeno_Bruto>1</EQ_Xeno_Bruto>
+      </xenotypeChances>
+    </xenotypeSet>
+    <gearHealthRange>0.4~1</gearHealthRange>
+    <apparelMoney>800~1600</apparelMoney>
+    <apparelTags Inherit="False">
+      <li>EQ_Roupa_Lodo</li>
+      <li>EQ_Roupa_LodoPesada</li>
+    </apparelTags>
+    <weaponMoney>800~1600</weaponMoney>
+    <weaponTags Inherit="False">
+      <li>EQ_Lodo_Pesado</li>
+    </weaponTags>
+    <techHediffsChance>0</techHediffsChance>
+    <initialResistanceRange>18~30</initialResistanceRange>
+    <requiredWorkTags>
+      <li>Violent</li>
+    </requiredWorkTags>
+    <modExtensions>
+      <li Class="CombatExtended.LoadoutPropertiesExtension" MayRequire="CETeam.CombatExtended">
+        <primaryMagazineCount>
+          <min>2</min>
+          <max>4</max>
+        </primaryMagazineCount>
+      </li>
+    </modExtensions>
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="MercenaryEliteTierBase">
+    <defName>EQ_Lodo_Rei</defName>
+    <label>rei-capataz</label>
+    <labelPlural>reis-capatazes</labelPlural>
+    <defaultFactionDef>EQ_Faction_ReinoDoLodo</defaultFactionDef>
+    <combatPower>260</combatPower>
+    <fixedGender>Male</fixedGender>
+    <useFactionXenotypes>false</useFactionXenotypes>
+    <xenotypeSet Inherit="False">
+      <xenotypeChances>
+        <EQ_Xeno_Bruto>1</EQ_Xeno_Bruto>
+      </xenotypeChances>
+    </xenotypeSet>
+    <gearHealthRange>0.4~1</gearHealthRange>
+    <apparelMoney>2000~4000</apparelMoney>
+    <apparelTags Inherit="False">
+      <li>EQ_Roupa_Lodo</li>
+      <li>EQ_Roupa_LodoPesada</li>
+      <li>EQ_Roupa_LodoRei</li>
+    </apparelTags>
+    <weaponMoney>2000~4000</weaponMoney>
+    <weaponTags Inherit="False">
+      <li>EQ_Lodo_Rei</li>
+      <li>EQ_Lodo_Pesado</li>
+    </weaponTags>
+    <techHediffsChance>0</techHediffsChance>
+    <initialResistanceRange>35~50</initialResistanceRange>
+    <factionLeader>true</factionLeader>
+    <requiredWorkTags>
+      <li>Violent</li>
+    </requiredWorkTags>
+    <modExtensions>
+      <li Class="CombatExtended.LoadoutPropertiesExtension" MayRequire="CETeam.CombatExtended">
+        <primaryMagazineCount>
+          <min>2</min>
+          <max>4</max>
+        </primaryMagazineCount>
+      </li>
+    </modExtensions>
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="MercenaryMidTierBase">
+    <defName>EQ_Lodo_Bruta</defName>
+    <label>bruta</label>
+    <labelPlural>brutas</labelPlural>
+    <defaultFactionDef>EQ_Faction_ReinoDoLodo</defaultFactionDef>
+    <combatPower>35</combatPower>
+    <fixedGender>Female</fixedGender>
+    <useFactionXenotypes>false</useFactionXenotypes>
+    <xenotypeSet Inherit="False">
+      <xenotypeChances>
+        <EQ_Xeno_Bruta>1</EQ_Xeno_Bruta>
+      </xenotypeChances>
+    </xenotypeSet>
+    <gearHealthRange>0.4~1</gearHealthRange>
+    <apparelMoney>100~300</apparelMoney>
+    <apparelTags Inherit="False">
+      <li>EQ_Roupa_Lodo</li>
+    </apparelTags>
+    <weaponMoney>100~300</weaponMoney>
+    <weaponTags Inherit="False">
+      <li>EQ_Lodo_Corpo</li>
+    </weaponTags>
+    <techHediffsChance>0</techHediffsChance>
+    <initialResistanceRange>18~30</initialResistanceRange>
+  </PawnKindDef>
+
 </Defs>

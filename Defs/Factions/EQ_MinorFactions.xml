@@ -460,4 +460,137 @@ Não negociam, não fazem paz e não têm ouvidoria. Em compensação, fazem gre
     </pawnGroupMakers>
   </FactionDef>
 
+
+  <!-- =====================================================================
+       O REINO DO LODO: os mutantes. Linha Robusta descontinuada da Hélice que virou reino medieval nos
+       pântanos poluídos. Armas antigas e de sucata. Ideologia fixa "A Esteira Sagrada".
+       ===================================================================== -->
+  <FactionDef ParentName="OutlanderFactionBase">
+    <defName>EQ_Faction_ReinoDoLodo</defName>
+    <label>O Reino do Lodo</label>
+    <description>Antes da Queda, a Hélice vendia a Linha Robusta: operários verdes que comiam lixo tóxico e não pediam aumento. O lote foi descontinuado e esquecido nos pântanos poluídos. Os descendentes leram a ficha técnica do produto como escritura, fundaram um reino e coroaram um Rei-Capataz.\n\nO Reino do Lodo é medieval por falta de manual: madeira, ferro, bacamartes de cano de esgoto e mosquetes desenterrados de museu. Os brutos lutam, as brutas \"repõem\", a pesquisa é pecado e todo forasteiro é matéria-prima até prova em contrário.\n\nA Hélice quer o lote de volta e manda fiscais; o Reino manda os fiscais para o Descarte. Com os outros, o Reino comercia quando não está saqueando, o que também é uma forma de comércio.</description>
+    <fixedName>O Reino do Lodo</fixedName>
+    <factionNameMaker IsNull="True" />
+    <caravanTraderKinds Inherit="False">
+      <li MayRequire="OskarPotocki.VFE.Medieval2">VFEM2_Caravan_Medieval_Farmer</li>
+      <li MayRequire="OskarPotocki.VFE.Medieval2">VFEM2_Caravan_Medieval_Weaponsmith</li>
+      <li MayRequire="OskarPotocki.VFE.Medieval2">VFEM2_Caravan_Looter</li>
+      <li>Caravan_Neolithic_WarMerchant</li>
+    </caravanTraderKinds>
+    <visitorTraderKinds Inherit="False">
+      <li MayRequire="OskarPotocki.VFE.Medieval2">VFEM2_Visitor_Medieval_Standard</li>
+      <li>Visitor_Neolithic_Standard</li>
+    </visitorTraderKinds>
+    <baseTraderKinds Inherit="False">
+      <li MayRequire="OskarPotocki.VFE.Medieval2">VFEM2_Base_Medieval_Standard</li>
+      <li>Base_Neolithic_Standard</li>
+    </baseTraderKinds>
+    <pawnSingular>bruto</pawnSingular>
+    <pawnsPlural>brutos</pawnsPlural>
+    <leaderTitle>rei-capataz</leaderTitle>
+    <leaderTitleFemale>rainha-capataz</leaderTitleFemale>
+    <categoryTag>EQ_ReinoDoLodo</categoryTag>
+    <techLevel>Medieval</techLevel>
+    <factionIconPath>World/WorldObjects/Expanding/Town</factionIconPath>
+    <settlementNameMaker>EQ_NamerSettlement_ReinoDoLodo</settlementNameMaker>
+    <colorSpectrum Inherit="False">
+      <li>(0.45, 0.62, 0.22)</li>
+      <li>(0.45, 0.62, 0.22)</li>
+    </colorSpectrum>
+    <requiredCountAtGameStart>1</requiredCountAtGameStart>
+    <maxConfigurableAtWorldCreation>1</maxConfigurableAtWorldCreation>
+    <startingCountAtWorldCreation>1</startingCountAtWorldCreation>
+    <configurationListOrderPriority>17</configurationListOrderPriority>
+    <listOrderPriority>44</listOrderPriority>
+    <settlementGenerationWeight>1</settlementGenerationWeight>
+    <canSiege>true</canSiege>
+    <canStageAttacks>true</canStageAttacks>
+    <!-- Ideologia fixa "A Esteira Sagrada" (Ideos/ReinoDoLodo.rid, via EQ_IdeoTemplates.xml) -->
+    <fixedIdeo>true</fixedIdeo>
+    <structureMemeWeights Inherit="False" />
+    <requiredMemes Inherit="False" />
+    <forcedMemes>
+      <li MayRequire="Sarg.AlphaMemes">AM_Structure_Mesoamerican</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">MaleSupremacy</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">Supremacist</li>
+    </forcedMemes>
+    <!-- Linhagem dos mutantes: machos (brutos) e fêmeas (brutas), ambos hereditários; gênero fixo pelo gene. -->
+    <xenotypeSet Inherit="False">
+      <xenotypeChances>
+        <EQ_Xeno_Bruto>0.5</EQ_Xeno_Bruto>
+        <EQ_Xeno_Bruta>0.5</EQ_Xeno_Bruta>
+      </xenotypeChances>
+    </xenotypeSet>
+    <fixedLeaderKinds>
+      <li>EQ_Lodo_Rei</li>
+    </fixedLeaderKinds>
+    <basicMemberKind>EQ_Lodo_Bruto</basicMemberKind>
+    <maxPawnCostPerTotalPointsCurve Inherit="False">
+      <points>
+        <li>(0,45)</li>
+        <li>(70,65)</li>
+        <li>(700,150)</li>
+        <li>(1300,250)</li>
+        <li>(100000,10000)</li>
+      </points>
+    </maxPawnCostPerTotalPointsCurve>
+    <pawnGroupMakers Inherit="False">
+      <li>
+        <!-- Leva de saque -->
+        <kindDef>Combat</kindDef>
+        <commonality>100</commonality>
+        <options>
+          <EQ_Lodo_Bruto>10</EQ_Lodo_Bruto>
+          <EQ_Lodo_Bacamarteiro>6</EQ_Lodo_Bacamarteiro>
+          <EQ_Lodo_Arrombador>3</EQ_Lodo_Arrombador>
+          <EQ_Lodo_Rei>0.4</EQ_Lodo_Rei>
+        </options>
+      </li>
+      <li>
+        <!-- Carga de chiqueiro: só corpo a corpo -->
+        <kindDef>Combat</kindDef>
+        <commonality>30</commonality>
+        <options>
+          <EQ_Lodo_Bruto>10</EQ_Lodo_Bruto>
+          <EQ_Lodo_Arrombador>4</EQ_Lodo_Arrombador>
+        </options>
+      </li>
+      <li>
+        <kindDef>Peaceful</kindDef>
+        <options>
+          <EQ_Lodo_Bruto>10</EQ_Lodo_Bruto>
+          <EQ_Lodo_Bruta>6</EQ_Lodo_Bruta>
+        </options>
+      </li>
+      <li>
+        <kindDef>Trader</kindDef>
+        <traders>
+          <EQ_Lodo_Bruta>1</EQ_Lodo_Bruta>
+        </traders>
+        <carriers>
+          <Muffalo>6</Muffalo>
+          <Pig>2</Pig>
+        </carriers>
+        <guards>
+          <EQ_Lodo_Bruto>10</EQ_Lodo_Bruto>
+          <EQ_Lodo_Bacamarteiro>5</EQ_Lodo_Bacamarteiro>
+        </guards>
+      </li>
+      <li>
+        <kindDef>Settlement</kindDef>
+        <options>
+          <EQ_Lodo_Bruto>10</EQ_Lodo_Bruto>
+          <EQ_Lodo_Bacamarteiro>6</EQ_Lodo_Bacamarteiro>
+          <EQ_Lodo_Arrombador>4</EQ_Lodo_Arrombador>
+          <EQ_Lodo_Bruta>6</EQ_Lodo_Bruta>
+        </options>
+      </li>
+    </pawnGroupMakers>
+    <modExtensions>
+      <li Class="EcosDaQueda.MinorFactionExtension">
+        <playerGoodwill>-30</playerGoodwill>
+      </li>
+    </modExtensions>
+  </FactionDef>
+
 </Defs>

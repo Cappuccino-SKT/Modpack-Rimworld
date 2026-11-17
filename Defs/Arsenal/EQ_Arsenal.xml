@@ -586,4 +586,90 @@
     </weapons>
   </EcosDaQueda.ArsenalDef>
 
+
+  <!-- ===================================================================== O REINO DO LODO -->
+  <EcosDaQueda.ArsenalDef>
+    <defName>EQ_Arsenal_LodoCorpo</defName>
+    <!-- Brutos: porrete, maça e mangual. O que não quebra, entorta. -->
+    <tag>EQ_Lodo_Corpo</tag>
+    <weapons>
+      <li>MeleeWeapon_Club</li>
+      <li>MeleeWeapon_Mace</li>
+      <li>MeleeWeapon_Spear</li>
+      <li>VFEM2_MeleeWeapon_Flail</li>
+      <li>VFEM2_MeleeWeapon_HeavyMace</li>
+      <li>VFEM2_ThrowingAxe</li>
+    </weapons>
+  </EcosDaQueda.ArsenalDef>
+  <EcosDaQueda.ArsenalDef>
+    <defName>EQ_Arsenal_LodoFogo</defName>
+    <!-- Bacamarteiros: armas de sucata (cano de esgoto e prego) e armas antigas desenterradas de museu. -->
+    <tag>EQ_Lodo_Fogo</tag>
+    <weapons>
+      <li>VWE_Gun_MakeshiftPistol</li>
+      <li>VWE_Gun_MakeshiftRifle</li>
+      <li>VWE_Gun_MakeshiftShotgun</li>
+      <li>VFEM2_Gun_Musket</li>
+      <li>VFEM2_Gun_Flintlock</li>
+      <li>VFEM2_Gun_Arquebus</li>
+      <li>VFEM2_Gun_HandCannon</li>
+    </weapons>
+  </EcosDaQueda.ArsenalDef>
+  <EcosDaQueda.ArsenalDef>
+    <defName>EQ_Arsenal_LodoPesado</defName>
+    <!-- Arrombadores: lâmina larga e haste comprida; a metralhadora de sucata é para quem o Rei confia. -->
+    <tag>EQ_Lodo_Pesado</tag>
+    <weapons>
+      <li>VFEM2_MeleeWeapon_DaneAxe</li>
+      <li>VFEM2_MeleeWeapon_Halberd</li>
+      <li>VFEM2_MeleeWeapon_Pike</li>
+      <li>VFEM2_MeleeWeapon_HeavyMace</li>
+      <li>VWE_Gun_MakeshiftLMG</li>
+    </weapons>
+  </EcosDaQueda.ArsenalDef>
+  <EcosDaQueda.ArsenalDef>
+    <defName>EQ_Arsenal_LodoRei</defName>
+    <!-- Rei-Capataz: o montante da coroação e o canhão de mão do avô. -->
+    <tag>EQ_Lodo_Rei</tag>
+    <weapons>
+      <li>VFEM2_MeleeWeapon_Claymore</li>
+      <li>VFEM2_Gun_HandCannon</li>
+    </weapons>
+  </EcosDaQueda.ArsenalDef>
+  <EcosDaQueda.ArsenalDef>
+    <defName>EQ_Guardaroupa_Lodo</defName>
+    <!-- Reino do Lodo: couro, acolchoado e trapo. -->
+    <tag>EQ_Roupa_Lodo</tag>
+    <apparel>
+      <li>Apparel_TribalA</li>
+      <li>Apparel_Pants</li>
+      <li>Apparel_BasicShirt</li>
+      <li>VFEM2_Apparel_LeatherArmor</li>
+      <li>VFEM2_Apparel_PaddedArmor</li>
+      <li>VFEM2_Apparel_LeatherHelmet</li>
+      <li>VFEM2_Apparel_PaddedHelmet</li>
+      <li>VFEM2_Apparel_Cap</li>
+    </apparel>
+  </EcosDaQueda.ArsenalDef>
+  <EcosDaQueda.ArsenalDef>
+    <defName>EQ_Guardaroupa_LodoPesada</defName>
+    <!-- Arrombadores: couro pesado e o que sobrou de armadura de placas. -->
+    <tag>EQ_Roupa_LodoPesada</tag>
+    <apparel>
+      <li>VFEM2_Apparel_HeavyLeatherArmor</li>
+      <li>VFEM2_Apparel_HeavyLeatherHelmet</li>
+      <li>VFEM2_Apparel_PlateHelmetHeavy</li>
+      <li>Apparel_PlateArmor</li>
+    </apparel>
+  </EcosDaQueda.ArsenalDef>
+  <EcosDaQueda.ArsenalDef>
+    <defName>EQ_Guardaroupa_LodoRei</defName>
+    <!-- Rei-Capataz: coroa e manto, sobre a armadura. -->
+    <tag>EQ_Roupa_LodoRei</tag>
+    <apparel>
+      <li>VFEM2_Apparel_KingsCrown</li>
+      <li>VFEM2_Apparel_KingsRobes</li>
+      <li>VFEM2_Apparel_PlateArmorHeavy</li>
+    </apparel>
+  </EcosDaQueda.ArsenalDef>
 </Defs>
