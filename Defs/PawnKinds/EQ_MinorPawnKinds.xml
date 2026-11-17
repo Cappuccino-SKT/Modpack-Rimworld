@@ -810,4 +810,123 @@
     <initialResistanceRange>18~30</initialResistanceRange>
   </PawnKindDef>
 
+  <!-- =====================================================================
+       A COLMEIA ERGUIDA (insetoides). Operários e soldados machos; a rainha é a líder.
+       ===================================================================== -->
+  <PawnKindDef ParentName="MercenaryMidTierBase">
+    <defName>EQ_Colmeia_Operario</defName>
+    <label>operário da colmeia</label>
+    <labelPlural>operários da colmeia</labelPlural>
+    <defaultFactionDef>EQ_Faction_ColmeiaErguida</defaultFactionDef>
+    <combatPower>45</combatPower>
+    <fixedGender>Male</fixedGender>
+    <useFactionXenotypes>false</useFactionXenotypes>
+    <xenotypeSet Inherit="False">
+      <xenotypeChances>
+        <EQ_Xeno_InsetoTrabalhador>1</EQ_Xeno_InsetoTrabalhador>
+      </xenotypeChances>
+    </xenotypeSet>
+    <itemQuality>Poor</itemQuality>
+    <gearHealthRange>0.5~1</gearHealthRange>
+    <apparelMoney>0~150</apparelMoney>
+    <apparelTags Inherit="False">
+      <li>Neolithic</li>
+    </apparelTags>
+    <weaponMoney>50~150</weaponMoney>
+    <weaponTags Inherit="False">
+      <li>NeolithicMeleeBasic</li>
+    </weaponTags>
+    <techHediffsChance>0</techHediffsChance>
+    <initialResistanceRange>15~25</initialResistanceRange>
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="MercenaryMidTierBase">
+    <defName>EQ_Colmeia_Soldado</defName>
+    <label>soldado da colmeia</label>
+    <labelPlural>soldados da colmeia</labelPlural>
+    <defaultFactionDef>EQ_Faction_ColmeiaErguida</defaultFactionDef>
+    <combatPower>95</combatPower>
+    <fixedGender>Male</fixedGender>
+    <useFactionXenotypes>false</useFactionXenotypes>
+    <xenotypeSet Inherit="False">
+      <xenotypeChances>
+        <EQ_Xeno_InsetoSoldado>1</EQ_Xeno_InsetoSoldado>
+      </xenotypeChances>
+    </xenotypeSet>
+    <itemQuality>Poor</itemQuality>
+    <gearHealthRange>0.5~1</gearHealthRange>
+    <apparelMoney>0~100</apparelMoney>
+    <apparelTags Inherit="False">
+      <li>Neolithic</li>
+    </apparelTags>
+    <weaponMoney>100~300</weaponMoney>
+    <weaponTags Inherit="False">
+      <li>NeolithicMeleeBasic</li>
+      <li>NeolithicMeleeDecent</li>
+    </weaponTags>
+    <techHediffsChance>0</techHediffsChance>
+    <initialResistanceRange>15~25</initialResistanceRange>
+    <requiredWorkTags>
+      <li>Violent</li>
+    </requiredWorkTags>
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="MercenaryMidTierBase">
+    <defName>EQ_Colmeia_Batedor</defName>
+    <label>batedor da colmeia</label>
+    <labelPlural>batedores da colmeia</labelPlural>
+    <defaultFactionDef>EQ_Faction_ColmeiaErguida</defaultFactionDef>
+    <combatPower>55</combatPower>
+    <fixedGender>Male</fixedGender>
+    <useFactionXenotypes>false</useFactionXenotypes>
+    <xenotypeSet Inherit="False">
+      <xenotypeChances>
+        <EQ_Xeno_InsetoTrabalhador>1</EQ_Xeno_InsetoTrabalhador>
+      </xenotypeChances>
+    </xenotypeSet>
+    <itemQuality>Poor</itemQuality>
+    <gearHealthRange>0.5~1</gearHealthRange>
+    <apparelMoney>0~150</apparelMoney>
+    <apparelTags Inherit="False">
+      <li>Neolithic</li>
+    </apparelTags>
+    <weaponMoney>80~200</weaponMoney>
+    <weaponTags Inherit="False">
+      <li>NeolithicRangedBasic</li>
+    </weaponTags>
+    <techHediffsChance>0</techHediffsChance>
+    <initialResistanceRange>15~25</initialResistanceRange>
+    <requiredWorkTags>
+      <li>Violent</li>
+    </requiredWorkTags>
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="MercenaryMidTierBase">
+    <defName>EQ_Colmeia_Rainha</defName>
+    <label>rainha da colmeia</label>
+    <labelPlural>rainhas da colmeia</labelPlural>
+    <defaultFactionDef>EQ_Faction_ColmeiaErguida</defaultFactionDef>
+    <combatPower>70</combatPower>
+    <fixedGender>Female</fixedGender>
+    <useFactionXenotypes>false</useFactionXenotypes>
+    <xenotypeSet Inherit="False">
+      <xenotypeChances>
+        <EQ_Xeno_InsetoRainha>1</EQ_Xeno_InsetoRainha>
+      </xenotypeChances>
+    </xenotypeSet>
+    <itemQuality>Poor</itemQuality>
+    <gearHealthRange>0.5~1</gearHealthRange>
+    <apparelMoney>100~300</apparelMoney>
+    <apparelTags Inherit="False">
+      <li>Neolithic</li>
+    </apparelTags>
+    <weaponMoney>50~150</weaponMoney>
+    <weaponTags Inherit="False">
+      <li>NeolithicMeleeBasic</li>
+    </weaponTags>
+    <techHediffsChance>0</techHediffsChance>
+    <initialResistanceRange>15~25</initialResistanceRange>
+    <factionLeader>true</factionLeader>
+  </PawnKindDef>
+
 </Defs>

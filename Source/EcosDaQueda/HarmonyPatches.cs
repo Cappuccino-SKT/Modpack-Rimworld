@@ -18,6 +18,7 @@ namespace EcosDaQueda
             EQAndroids.Apply();
             EQVehicles.Apply();
             EQSanity.Apply();
+            EQResearch.Apply();
         }
     }
 

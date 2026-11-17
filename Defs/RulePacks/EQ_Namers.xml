@@ -390,4 +390,38 @@
       </rulesStrings>
     </rulePack>
   </RulePackDef>
+  <!-- A Colmeia Erguida (facção menor): vilas de túnel. PROVISÓRIO até a história ser escrita. -->
+  <RulePackDef>
+    <defName>EQ_NamerSettlement_ColmeiaErguida</defName>
+    <rulePack>
+      <rulesStrings>
+        <li>r_name(p=4)->[place] [suffix]</li>
+        <li>r_name(p=1)->[place] da [n]ª Postura</li>
+        <li>place->Túnel</li>
+        <li>place->Câmara</li>
+        <li>place->Monte</li>
+        <li>place->Favo</li>
+        <li>place->Ninho</li>
+        <li>place->Galeria</li>
+        <li>place->Cupinzeiro</li>
+        <li>place->Toca</li>
+        <li>suffix->da Rainha</li>
+        <li>suffix->da Geleia</li>
+        <li>suffix->da Quitina</li>
+        <li>suffix->Funda</li>
+        <li>suffix->do Barro Doce</li>
+        <li>suffix->das Mil Patas</li>
+        <li>suffix->do Primeiro Passo</li>
+        <li>suffix->de Cima</li>
+        <li>suffix->da Muda</li>
+        <li>suffix->do Enxame</li>
+        <li>n->2</li>
+        <li>n->3</li>
+        <li>n->4</li>
+        <li>n->7</li>
+        <li>n->12</li>
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+
 </Defs>

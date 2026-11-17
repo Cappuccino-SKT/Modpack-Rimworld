@@ -618,4 +618,117 @@ Não negociam, não fazem paz e não têm ouvidoria. Em compensação, fazem gre
     </modExtensions>
   </FactionDef>
 
+  <!-- =====================================================================
+       A COLMEIA ERGUIDA: insetoides que evoluíram até ficar de pé e erguer vilas. Tecnologia neolítica.
+       Xenos do usuário: rainha (fêmea, líder), soldado e operário (machos). Ideologia e história
+       PROVISÓRIAS: o usuário ainda vai montar a ideologia; depois disso, escrever a história e as relações.
+       ===================================================================== -->
+  <FactionDef ParentName="OutlanderFactionBase">
+    <defName>EQ_Faction_ColmeiaErguida</defName>
+    <label>A Colmeia Erguida</label>
+    <description>Insetoides que evoluíram até ficar de pé, aprender a falar e erguer as próprias vilas. Cada vila tem uma rainha, que põe a próxima geração; os operários erguem, plantam e cavam, e os soldados defendem os túneis.\n\nA tecnologia é pouca: lança, porrete, arco e quitina. O resto ainda está por contar.</description>
+    <fixedName>A Colmeia Erguida</fixedName>
+    <factionNameMaker IsNull="True" />
+    <caravanTraderKinds Inherit="False">
+      <li>Caravan_Neolithic_BulkGoods</li>
+      <li>Caravan_Neolithic_WarMerchant</li>
+    </caravanTraderKinds>
+    <visitorTraderKinds Inherit="False">
+      <li>Visitor_Neolithic_Standard</li>
+    </visitorTraderKinds>
+    <baseTraderKinds Inherit="False">
+      <li>Base_Neolithic_Standard</li>
+    </baseTraderKinds>
+    <pawnSingular>insetoide</pawnSingular>
+    <pawnsPlural>insetoides</pawnsPlural>
+    <leaderTitle>rainha</leaderTitle>
+    <leaderTitleFemale>rainha</leaderTitleFemale>
+    <categoryTag>EQ_ColmeiaErguida</categoryTag>
+    <techLevel>Neolithic</techLevel>
+    <factionIconPath>World/WorldObjects/Expanding/Insects</factionIconPath>
+    <settlementTexturePath>World/WorldObjects/TribalSettlement</settlementTexturePath>
+    <settlementNameMaker>EQ_NamerSettlement_ColmeiaErguida</settlementNameMaker>
+    <colorSpectrum Inherit="False">
+      <li>(0.85, 0.72, 0.30)</li>
+      <li>(0.85, 0.72, 0.30)</li>
+    </colorSpectrum>
+    <requiredCountAtGameStart>1</requiredCountAtGameStart>
+    <maxConfigurableAtWorldCreation>1</maxConfigurableAtWorldCreation>
+    <startingCountAtWorldCreation>1</startingCountAtWorldCreation>
+    <configurationListOrderPriority>18</configurationListOrderPriority>
+    <listOrderPriority>44</listOrderPriority>
+    <settlementGenerationWeight>0.7</settlementGenerationWeight>
+    <canSiege>false</canSiege>
+    <canStageAttacks>true</canStageAttacks>
+    <!-- Ideologia PROVISÓRIA (sorteada com estes memes) até o usuário montar a dele (.rid). -->
+    <fixedIdeo>true</fixedIdeo>
+    <ideoName>O Enxame (provisória)</ideoName>
+    <structureMemeWeights Inherit="False" />
+    <requiredMemes Inherit="False" />
+    <forcedMemes>
+      <li MayRequire="Ludeon.RimWorld.Ideology">Structure_Animist</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">Collectivist</li>
+      <li MayRequire="VanillaExpanded.VMemesE">VME_InsectoidSupremacy</li>
+    </forcedMemes>
+    <!-- Membros comuns: operários e soldados (machos). A rainha só como líder. -->
+    <xenotypeSet Inherit="False">
+      <xenotypeChances>
+        <EQ_Xeno_InsetoTrabalhador>0.7</EQ_Xeno_InsetoTrabalhador>
+        <EQ_Xeno_InsetoSoldado>0.3</EQ_Xeno_InsetoSoldado>
+      </xenotypeChances>
+    </xenotypeSet>
+    <fixedLeaderKinds>
+      <li>EQ_Colmeia_Rainha</li>
+    </fixedLeaderKinds>
+    <basicMemberKind>EQ_Colmeia_Operario</basicMemberKind>
+    <maxPawnCostPerTotalPointsCurve Inherit="False">
+      <points>
+        <li>(0,40)</li>
+        <li>(70,60)</li>
+        <li>(700,150)</li>
+        <li>(1300,250)</li>
+        <li>(100000,10000)</li>
+      </points>
+    </maxPawnCostPerTotalPointsCurve>
+    <pawnGroupMakers Inherit="False">
+      <li>
+        <kindDef>Combat</kindDef>
+        <commonality>100</commonality>
+        <options>
+          <EQ_Colmeia_Soldado>10</EQ_Colmeia_Soldado>
+          <EQ_Colmeia_Operario>6</EQ_Colmeia_Operario>
+          <EQ_Colmeia_Batedor>4</EQ_Colmeia_Batedor>
+        </options>
+      </li>
+      <li>
+        <kindDef>Peaceful</kindDef>
+        <options>
+          <EQ_Colmeia_Operario>10</EQ_Colmeia_Operario>
+          <EQ_Colmeia_Soldado>3</EQ_Colmeia_Soldado>
+        </options>
+      </li>
+      <li>
+        <kindDef>Trader</kindDef>
+        <traders>
+          <EQ_Colmeia_Operario>1</EQ_Colmeia_Operario>
+        </traders>
+        <carriers>
+          <Muffalo>6</Muffalo>
+        </carriers>
+        <guards>
+          <EQ_Colmeia_Soldado>10</EQ_Colmeia_Soldado>
+          <EQ_Colmeia_Batedor>4</EQ_Colmeia_Batedor>
+        </guards>
+      </li>
+      <li>
+        <kindDef>Settlement</kindDef>
+        <options>
+          <EQ_Colmeia_Operario>10</EQ_Colmeia_Operario>
+          <EQ_Colmeia_Soldado>8</EQ_Colmeia_Soldado>
+          <EQ_Colmeia_Batedor>3</EQ_Colmeia_Batedor>
+        </options>
+      </li>
+    </pawnGroupMakers>
+  </FactionDef>
+
 </Defs>

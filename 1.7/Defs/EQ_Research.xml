@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <!-- Etapa 3: árvore de pesquisa própria. Cada projeto cai num ramo (EcosDaQueda.ResearchBranchDef):
+       1º projects (lista explícita de qualquer ramo), 2º mods (packageId; exceto exceptProjects), 3º techLevels, senão o ramo "free".
+       O ramo leva o projeto para a aba dele (menos os da Anomaly, que ficam na aba própria) e, fora da bancada, trava a pesquisa
+       até o jogador ter acesso (licença, sucata, dados antigos; bloco 3a: só por debug). Listas geradas por scripts/research-classify.py. -->
+
+  <ResearchTabDef>
+    <defName>EQ_Tab_Bancada</defName>
+    <label>Bancada</label>
+    <generalTitle>Bancada</generalTitle>
+    <generalDescription>O que dá para inventar com ferramenta, paciência e um manual de instruções rasgado: do arco à microeletrônica. Daqui em diante, ninguém inventa nada; recupera, copia ou paga licença.</generalDescription>
+  </ResearchTabDef>
+
+  <ResearchTabDef>
+    <defName>EQ_Tab_VelhoMundo</defName>
+    <label>Velho Mundo</label>
+    <generalTitle>Tecnologia do Velho Mundo</generalTitle>
+    <generalDescription>Coisas que ninguém sabe mais fazer e que nenhuma potência registrou ainda. Só saem de sucata desmontada com cuidado ou de dados antigos achados num abrigo.</generalDescription>
+  </ResearchTabDef>
+
+  <ResearchTabDef>
+    <defName>EQ_Tab_Silencio</defName>
+    <label>Silêncio</label>
+    <generalTitle>Arquivo do Silêncio</generalTitle>
+    <generalDescription>Tudo o que o Silêncio guarda no arquivo: sensores, a escuta, e o que sobrou de pesquisa sobre o Vazio. Licença por cargo ou por favor; o resto é pirataria.</generalDescription>
+  </ResearchTabDef>
+
+  <ResearchTabDef>
+    <defName>EQ_Tab_Helice</defName>
+    <label>Hélice</label>
+    <generalTitle>Patentes da Hélice</generalTitle>
+    <generalDescription>Genética, próteses, implantes e a colmeia. Cada gene tem dono, e o dono cobra royalties até de quem nasceu com ele.</generalDescription>
+  </ResearchTabDef>
+
+  <ResearchTabDef>
+    <defName>EQ_Tab_Forja</defName>
+    <label>Forja</label>
+    <generalTitle>Catálogo da Forja</generalTitle>
+    <generalDescription>Mecanoides, veículos de combate, armaduras, armas de energia e o que mais couber num manual de garantia. Montar sem licença anula a garantia e chama a fiscalização.</generalDescription>
+  </ResearchTabDef>
+
+  <ResearchTabDef>
+    <defName>EQ_Tab_Coro</defName>
+    <label>Coro</label>
+    <generalTitle>Tesouro do Coro</generalTitle>
+    <generalDescription>Eltex, itens nobres e a música da corte. O Coro não vende tecnologia: concede, a quem se curvar.</generalDescription>
+  </ResearchTabDef>
+
+  <EcosDaQueda.ResearchBranchDef>
+    <defName>EQ_Ramo_Bancada</defName>
+    <label>Bancada</label>
+    <labelOf>da Bancada</labelOf>
+    <tab>EQ_Tab_Bancada</tab>
+    <order>0</order>
+    <free>true</free>
+  </EcosDaQueda.ResearchBranchDef>
+
+  <EcosDaQueda.ResearchBranchDef>
+    <defName>EQ_Ramo_VelhoMundo</defName>
+    <label>Velho Mundo</label>
+    <labelOf>do Velho Mundo</labelOf>
+    <tab>EQ_Tab_VelhoMundo</tab>
+    <order>1</order>
+    <techLevels>
+      <li>Spacer</li>
+      <li>Ultra</li>
+    </techLevels>
+    <projects>
+      <li>AdvancedGravtech</li>
+      <li>AsteroidCryoMining</li>
+      <li>CE_AdvancedAmmo</li>
+      <li>CE_AdvancedLaunchers</li>
+      <li>CE_Launchers</li>
+      <li>CE_TurretHeavyWeapons</li>
+      <li>Fabrication</li>
+      <li>FlatscreenTelevision</li>
+      <li>FoamTurret</li>
+      <li>GasOperation</li>
+      <li>MultibarrelWeapons</li>
+      <li>OrbitalTech</li>
+      <li>PrecisionRifling</li>
+      <li>ShieldBelt</li>
+      <li>Shuttles</li>
+      <li>SpacerHygieneRecycling</li>
+      <li>StandardGravtech</li>
+      <li>VFE_AdvancedBatteries</li>
+      <li>VFE_AdvancedPowerSources</li>
+      <li>VFE_Res_AdvancedHydroponics</li>
+      <li>VRecyclingE_ComplexRecycling</li>
+    </projects>
+  </EcosDaQueda.ResearchBranchDef>
+
+  <EcosDaQueda.ResearchBranchDef>
+    <defName>EQ_Ramo_Silencio</defName>
+    <label>Silêncio</label>
+    <labelOf>do Silêncio</labelOf>
+    <tab>EQ_Tab_Silencio</tab>
+    <order>2</order>
+    <faction>EQ_Faction_Silencio</faction>
+    <mods>
+      <li>ludeon.rimworld.anomaly</li>
+    </mods>
+    <projects>
+      <li>AdvancedAutopsy</li>
+      <li>AnimalAutopsy</li>
+      <li>CE_AdvancedNV</li>
+      <li>CE_SimpleNV</li>
+      <li>Cryptosleep</li>
+      <li>GlitterworldAutopsy</li>
+      <li>GroundPenetratingScanner</li>
+      <li>LongRangeMineralScanner</li>
+      <li>MultiAnalyzer</li>
+      <li>SecurityDoor</li>
+      <li>TurretPack</li>
+      <li>VitalsMonitor</li>
+    </projects>
+  </EcosDaQueda.ResearchBranchDef>
+
+  <EcosDaQueda.ResearchBranchDef>
+    <defName>EQ_Ramo_Helice</defName>
+    <label>Hélice</label>
+    <labelOf>da Hélice</labelOf>
+    <tab>EQ_Tab_Helice</tab>
+    <order>3</order>
+    <faction>EQ_Faction_Helice</faction>
+    <mods>
+      <li>vat.epoeforked</li>
+    </mods>
+    <projects>
+      <li>Archogenetics</li>
+      <li>ArtificialMetabolism</li>
+      <li>Bionics</li>
+      <li>Bioregeneration</li>
+      <li>Biosculpting</li>
+      <li>CircadianInfluence</li>
+      <li>Deathrest</li>
+      <li>FertilityProcedures</li>
+      <li>FleshShaping</li>
+      <li>GeneProcessor</li>
+      <li>GrowthVats</li>
+      <li>HealingFactors</li>
+      <li>HygieneBionics</li>
+      <li>MolecularAnalysis</li>
+      <li>NeuralComputation</li>
+      <li>NeuralSupercharger</li>
+      <li>SkinHardening</li>
+      <li>SpecializedLimbs</li>
+      <li>SurrogateOrgans</li>
+      <li>ToxFiltration</li>
+      <li>ToxGas</li>
+      <li>VFEI2_ExoticHivetech</li>
+      <li>VFEI2_StandardHivetech</li>
+      <li>VenomSynthesis</li>
+      <li>Xenogermination</li>
+    </projects>
+  </EcosDaQueda.ResearchBranchDef>
+
+  <EcosDaQueda.ResearchBranchDef>
+    <defName>EQ_Ramo_Forja</defName>
+    <label>Forja</label>
+    <labelOf>da Forja</labelOf>
+    <tab>EQ_Tab_Forja</tab>
+    <order>4</order>
+    <faction>EQ_Faction_Forja</faction>
+    <mods>
+      <li>oskarpotocki.vfe.pirates</li>
+    </mods>
+    <exceptProjects>
+      <li>VFEP_SweatFermentation</li>
+    </exceptProjects>
+    <projects>
+      <li>AdvancedFabrication</li>
+      <li>BeamWeapons</li>
+      <li>CE_ChargeTurret</li>
+      <li>CE_HeavyTurret</li>
+      <li>CataphractArmor</li>
+      <li>ChargedShot</li>
+      <li>CompactWeaponry</li>
+      <li>Gunlink</li>
+      <li>HeavyTurrets</li>
+      <li>HighMechtech</li>
+      <li>HunterDrones</li>
+      <li>PoweredArmor</li>
+      <li>ReconArmor</li>
+      <li>RocketswarmLauncher</li>
+      <li>ShipBasics</li>
+      <li>ShipComputerCore</li>
+      <li>ShipCryptosleep</li>
+      <li>ShipEngine</li>
+      <li>ShipReactor</li>
+      <li>ShipSensorCluster</li>
+      <li>SniperTurret</li>
+      <li>StandardMechtech</li>
+      <li>UltraMechtech</li>
+      <li>VFED_ImperialDefenses</li>
+      <li>VFED_ImperialWarSolutions</li>
+      <li>VFED_RemoteDemolition</li>
+      <li>VFEE_JanissaryGear</li>
+      <li>VFE_Manufacturing</li>
+      <li>VFE_NuclearPower</li>
+      <li>VQE_Dronetech</li>
+      <li>VREA_AndroidTech</li>
+      <li>VREA_NeutroamineLogistics</li>
+      <li>VVE_AerialVehicles</li>
+      <li>VVE_CombatVehicles</li>
+      <li>VVE_ComplexVehicles</li>
+      <li>VWE_LaserWeapons</li>
+      <li>VWE_MassDrivers</li>
+      <li>WastepackAtomizer</li>
+    </projects>
+  </EcosDaQueda.ResearchBranchDef>
+
+  <EcosDaQueda.ResearchBranchDef>
+    <defName>EQ_Ramo_Coro</defName>
+    <label>Coro</label>
+    <labelOf>do Coro</labelOf>
+    <tab>EQ_Tab_Coro</tab>
+    <order>5</order>
+    <faction>EQ_Faction_Coro</faction>
+    <mods>
+      <li>oskarpotocki.vfe.empire</li>
+    </mods>
+    <projects>
+      <li>BrainWiring</li>
+      <li>JumpPack</li>
+      <li>Piano</li>
+      <li>VFEE_NobleDecorations</li>
+      <li>VFEE_PipeOrgans</li>
+      <li>VFEE_StellicThrone</li>
+      <li>VPE_EltexGear</li>
+    </projects>
+  </EcosDaQueda.ResearchBranchDef>
+
+</Defs>
