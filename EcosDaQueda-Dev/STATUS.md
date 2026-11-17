@@ -12,13 +12,13 @@ _Só o estado atual e os próximos passos. Manter curto (até ~60 linhas). Detal
 
 ## Próximo passo
 
-**Etapa 3 (tecnologia própria)**: decisões e classificação aprovadas (`PLANO.md` › Etapa 3; `tecnico/pesquisa-classificacao.md`). **3a feito** (2026-11-17): árvore em 6 abas próprias (Bancada 119, Velho Mundo 21, Silêncio 52, Hélice 35, Forja 45, Coro 7), trava fora da bancada; o acesso hoje **só existe por debug** (`tech grant`), então num jogo real tudo fora da bancada está fechado até o 3b. **Próximo: bloco 3b (licenças por cargo e compra com favor).** Depois 3c (engenharia reversa) e 3d (dados antigos).
+**Etapa 3 (tecnologia própria)**: decisões e classificação aprovadas (`PLANO.md` › Etapa 3; `tecnico/pesquisa-classificacao.md`). **3a feito** (2026-11-17): árvore em 6 abas próprias (Bancada 119, Velho Mundo 21, Silêncio 52, Hélice 35, Forja 45, Coro 7), trava fora da bancada; o acesso hoje **só existe por debug** (`tech grant`), então num jogo real tudo fora da bancada está fechado até o 3b. **Próximo: bloco 3b (licenças por cargo e compra com favor).** Roteiro completo do que falta (~25 blocos): `PLANO.md` › Roteiro.
 
 **A Colmeia Erguida** (2026-11-17): facção menor neolítica com os 3 xenos de inseto do usuário (rainha líder, soldado, operário; + batedor com arco), 12 vilas no mundo, teste `colmeia`. **Provisório:** ideologia sorteada "O Enxame (provisória)" e descrição curta. **Aguardando o usuário montar a ideologia** (`.rid`); depois: ligar em `EQ_IdeoTemplates.xml`, escrever a história (DESIGN, descrições), relações fixas e parte horrível.
 
 ## Não commitado
 
-Bloco O (2026-11-17): mod (`Genes.cs`, `EQ_Traders.xml`), debug (`EQDebug.cs`, comando `trader` com genes) e raiz (docs, `tests/genes.txt`, `regress.ps1`). Colmeia Erguida: mod (xenos, facção, unidades, nomeador) e raiz (`.xtp`, `xenotipos.json`, `tests/colmeia.txt`, docs). Etapa 3 (desenho e 3a): mod (`Research.cs`, `EQ_Research.xml`, `HarmonyPatches.cs`), debug (comandos `research` e `tech`), raiz (`tests/research.txt`, `tests/pesquisa.txt`, `scripts/research-classify.py`, `tecnico/pesquisa-classificacao.md`, `regress.ps1`, docs). Blocos F a N já commitados; push ainda não feito.
+Nada (commits de 2026-11-17: mod `c67f541`, debug `8c072a0`, raiz `99b4b5d` + roteiro). Push ainda não feito.
 
 ## Como testar
 

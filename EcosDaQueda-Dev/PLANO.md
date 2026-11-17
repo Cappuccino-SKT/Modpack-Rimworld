@@ -8,13 +8,60 @@ _Criado em 2026-11-15 a partir da lista do usuário. Cada etapa termina com test
 |---|---|---|---|
 | 0 | Ideologias da Feira e do Sindicato; vassalagem sem nível psíquico indevido | feito | — |
 | 1 | Travas: só os nossos xenos na criação, cenários próprios, narradores de fora ocultos | **feito** | — |
-| 2 | Utilidade para os mods Vanilla Expanded de conteúdo | grande | 1 (auditoria) |
-| 3 | Sistema de tecnologia próprio (sucata, dados antigos, licenças das potências) | grande | 2 (saber o que cada potência "possui") |
+| 2 | Utilidade para os mods Vanilla Expanded de conteúdo | **feito** | 1 (auditoria) |
+| 3 | Sistema de tecnologia próprio (sucata, dados antigos, licenças das potências) | grande (3a feito) | 2 (saber o que cada potência "possui") |
 | 4 | Utilidade para os outros mods | médio | 2, 3 |
 | 5 | Eventos do mundo + missões das facções menores | grande | 2, 3 |
 | 6 | Narrador próprio | médio | 5 (ele agenda os eventos) |
 | 7 | Qualidade de vida no estilo HSK | médio | independente |
 | 8 | Pendências antigas | pequeno | independente |
+| 9 | Polimento, balanceamento e lançamento | médio | todas |
+
+## Roteiro do que falta (revisto em 2026-11-17)
+
+Um bloco por sessão. Estimativa: **~25 blocos**. Ordem recomendada (cada linha é um bloco; ✱ = depende de decisão ou material do usuário):
+
+**Etapa 3 — tecnologia (4 blocos).** Hoje tudo fora da bancada fica fechado num jogo real, então esta etapa vem primeiro.
+1. **3b Licenças:** cada cargo das 4 potências licencia projetos do ramo dela; compra de projeto com favor na aba Reputação (preço por custo/nível); licença perdida = pirataria ao fabricar (Infâmia, como drones/androides); solução para techprints (a potência vende ou a licença dispensa).
+2. **3c Engenharia reversa:** bancada própria (base no Vanilla Recycling); desmontar item dá 15–30% do projeto que o fabrica; item de potência dá Infâmia.
+3. **3d Dados antigos:** discos/manuais em abrigos do VQE Ancients, ruínas, marcos nossos (bloco N) e no estoque da Feira; liberam ou aceleram um projeto do Velho Mundo ou de potência.
+4. **3e Fechamento:** móveis e energia por licença (pendente do bloco K), **dízimo tecnológico** da Forja (entregar tecnologia por mechs/veículos), balanço dos custos, teste de campanha curta.
+
+**Etapa 8 — pendências técnicas (1 bloco, pode vir antes, entre etapas).**
+5. Executor: contar erros de carregamento de Defs no `RESULTADO`, consertar a checagem `problemas=0`/androides, aposentar o perfil lean; bases com vários líderes; intermitentes (ideologia removida, MeatBurst do Alpha Genes, cerimônia da Hélice).
+
+**Etapa 5 — eventos do mundo (7 blocos).**
+6. **5a Eventos por potência:** auditoria da Hélice, inspeção de garantia da Forja, turnê do Coro, chamada de artigos do Silêncio (gatilhos: reputação, cargo, guerras do Hegemony).
+7. **5b Fora de Linha, fase 2:** Exposição perante a Forja, dados de diagnóstico como moeda, sabotagem, serviços da rede, trair a célula; recall do androide desperto.
+8. **5c Não Catalogados, fase 2:** expedições de coleta do Silêncio contra os ninhos, contrato de contenção com Não Catalogados, defesa/resgate, contra-ataque de entidades.
+9. **5d Fungobi:** hordas e cidades destruídas com moradores zumbis.
+10. **5e Facções menores:** greve do Sindicato (trégua), liquidação da Feira, missão de recolhimento de colmeia (Hélice), ataques do Reino do Lodo por "matéria-prima".
+11. **5f Eventos sem dono:** tempestade de cinzas, abrigo que se abre, comboio perdido, recall mecanoide.
+12. **5g Missões dos mods com texto nosso:** quem pede (potência em vez de "qualquer líder"), tradução dos VQE.
+
+**Colmeia Erguida (1 bloco) ✱** — assim que o usuário entregar a ideologia (`.rid`).
+13. Ligar a ideologia, história, relações fixas, parte horrível, descrição.
+
+**Etapa 4 — outros mods (3 blocos).**
+14. **4a Mercados:** órgãos (Harvest Organs) na Feira e na Hélice; sementes (SeedsPlease) como mercadoria e dízimo; água (Dubs) como poder do Sindicato e exigência de cargo do Coro.
+15. **4b Mundo:** Alpha Biomes como zonas da Queda com recurso exclusivo para tecnologia; Trenches e Layered Walls nos cercos; Rimesis ✱ (ligar ao Silêncio como campeões nêmesis ou remover).
+16. **4c Rituais:** Custom Ritual Framework e Blessed Conception com rituais próprios das nossas ideologias.
+
+**Etapa 6 — narrador (2 blocos) ✱** (variações a decidir; retrato precisa de arte).
+17. **6a Narrador principal:** ameaça pela reputação com cada potência, Sindicato no começo, fim de jogo segurado até ter cargo ou tecnologia; maldições do VFE Pirates como dificuldade.
+18. **6b Variações** (clássico, calmo, caótico) e textos.
+
+**Etapa 7 — qualidade de vida estilo HSK (2 blocos) ✱** (escolher o que vale).
+19–20. Preferir mods prontos para 1.7 e CE; o resto por patch nosso.
+
+**Etapa 9 — polimento e lançamento (4–5 blocos).**
+21. **Balanceamento:** preços e quantidades do comércio, laser/bobina no CE, cavaleiro lacrado, custos da pesquisa.
+22. **Identidade visual:** ícones das facções menores e das ideologias, roupas próprias das lojas ✱ (Character Creator; tirar do modpack depois), xeno do líder da Forja ✱.
+23. **Tradução:** ~50 mods sem PT-BR, marcos do VEE, VFE Medieval 2 (resto).
+24. **Campanha de teste:** o usuário joga uma campanha; consertos do que aparecer (inclui a conferência visual acumulada do STATUS).
+25. **Lançamento ✱:** descrição, preview, README, versão; decidir se publica (Steam/GitHub) e como.
+
+**Decisões que dependem do usuário:** ideologia da Colmeia; Rimesis (usar ou remover); variações do narrador e arte do retrato; quais itens de QoL; xeno do líder da Forja; quando tirar o Character Creator; se e onde publicar o mod.
 
 ## Etapa 0 — feito em 2026-11-15
 
