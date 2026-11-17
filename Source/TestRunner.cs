@@ -269,6 +269,8 @@ namespace EcosDaQueda.DebugTools
                 case "peace": return EQDebug.SetHostile(Fac(1), false);
                 case "movingbases": return EQDebug.MovingBases();
                 case "factions": return EQDebug.ListFactions();
+                case "research": return EQDebug.ResearchDump(Arg(1));
+                case "tech": return EQDebug.Tech(Arg(1), Arg(2));
                 case "faction": return EQDebug.DescribeFaction(Fac(1));
                 case "raid": return EQDebug.Raid(Fac(1), float.Parse(Arg(2) ?? "0"), Arg(3) == "bichos");
                 case "retaliate": return EQDebug.Retaliate(Fac(1));

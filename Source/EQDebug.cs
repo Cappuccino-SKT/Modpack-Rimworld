@@ -6,6 +6,7 @@ using System.Text;
 using HarmonyLib;
 using RimWorld;
 using RimWorld.Planet;
+using UnityEngine;
 using Verse;
 
 namespace EcosDaQueda.DebugTools
@@ -115,6 +116,77 @@ namespace EcosDaQueda.DebugTools
         }
 
         /// <summary>Lista todas as facções do mundo: def, mod de origem, oculta, assentamentos, relação com o jogador.</summary>
+        /// <summary>Grava todos os projetos de pesquisa (TSV) num arquivo: mod, nível, aba, custo, pré-requisitos e o que liberam.</summary>
+        public static string ResearchDump(string path)
+        {
+            var sb = new StringBuilder();
+            sb.AppendLine("defName	label	mod	tech	tab	cost	techprints	bench	prereqs	hiddenPrereqs	nUnlocks	unlocks");
+            var all = DefDatabase<ResearchProjectDef>.AllDefsListForReading;
+            foreach (ResearchProjectDef r in all.OrderBy(x => x.techLevel).ThenBy(x => x.modContentPack?.PackageId))
+            {
+                List<Def> un = null;
+                try { un = r.UnlockedDefs; } catch { }
+                sb.AppendLine(string.Join("	", new[] {
+                    r.defName, r.label, r.modContentPack?.PackageId ?? "?", r.techLevel.ToString(), r.tab?.defName ?? "-",
+                    r.baseCost.ToString("0"), r.TechprintCount.ToString(), r.requiredResearchBuilding?.defName ?? "-",
+                    string.Join(",", r.prerequisites?.Select(p => p.defName) ?? Enumerable.Empty<string>()),
+                    string.Join(",", r.hiddenPrerequisites?.Select(p => p.defName) ?? Enumerable.Empty<string>()),
+                    (un?.Count ?? 0).ToString(), string.Join(",", (un ?? new List<Def>()).Take(12).Select(d => d.defName)) }));
+            }
+            System.IO.File.WriteAllText(path, sb.ToString());
+            var byTech = all.GroupBy(x => x.techLevel).Select(g => g.Key + "=" + g.Count());
+            return "pesquisas=" + all.Count + " (" + string.Join(" ", byTech) + ") abas=" + DefDatabase<ResearchTabDef>.AllDefsListForReading.Count + " -> " + path;
+        }
+
+        /// <summary>Etapa 3: árvore e trava de pesquisa. status | try <def> | grant <def> | revoke <def> | finish <def> | current <def> | work [pontos].</summary>
+        public static string Tech(string cmd, string arg)
+        {
+            var sb = new StringBuilder();
+            ResearchProjectDef P() => DefDatabase<ResearchProjectDef>.GetNamed(arg);
+            WorldComponent_EQResearch comp = WorldComponent_EQResearch.Current;
+            switch (cmd)
+            {
+                case "status":
+                {
+                    var all = DefDatabase<ResearchProjectDef>.AllDefsListForReading;
+                    foreach (var g in all.GroupBy(r => EQResearch.Branch(r)).OrderBy(g => g.Key?.order ?? 99))
+                        sb.AppendLine("ramo " + (g.Key?.defName ?? "NENHUM") + ": total=" + g.Count() + " concluídos=" + g.Count(r => r.IsFinished)
+                            + " com_acesso=" + g.Count(r => EQResearch.HasAccess(r)) + " podem_comecar=" + g.Count(r => r.CanStartNow)
+                            + " abas=" + string.Join(",", g.Select(r => r.tab?.defName).Distinct()));
+                    var tabsUsed = new HashSet<ResearchTabDef>(all.Select(r => r.tab));
+                    sb.AppendLine("abas_com_projetos=" + string.Join(",", tabsUsed.Select(t => t.defName)));
+                    var bad = all.Where(r => EQResearch.Branch(r)?.free == true && (r.prerequisites ?? new List<ResearchProjectDef>()).Any(p => EQResearch.Branch(p)?.free != true)).ToList();
+                    sb.AppendLine("bancada_com_prereq_travado=" + bad.Count + (bad.Count > 0 ? " " + string.Join(",", bad.Select(r => r.defName + "<" + string.Join("+", r.prerequisites.Where(p => EQResearch.Branch(p)?.free != true).Select(p => p.defName)) + ">")) : ""));
+                    var overlap = all.GroupBy(r => r.tab).Sum(g => g.GroupBy(r => (Mathf.RoundToInt(r.ResearchViewX * 10), Mathf.RoundToInt(r.ResearchViewY * 10))).Count(x => x.Count() > 1));
+                    sb.AppendLine("sobreposicoes=" + overlap + " liberados=" + (comp?.Granted.Count() ?? -1) + " atual=" + (Find.ResearchManager.GetProject()?.defName ?? "-"));
+                    break;
+                }
+                case "try":
+                {
+                    var p = P();
+                    sb.Append(p.defName + " ramo=" + EQResearch.Branch(p)?.defName + " aba=" + p.tab?.defName + " prereqs_ok=" + p.PrerequisitesCompleted + " acesso=" + EQResearch.HasAccess(p)
+                        + " pode_comecar=" + p.CanStartNow + " motivo=" + (EQResearch.LockReason(p) ?? "-"));
+                    break;
+                }
+                case "grant": comp.Grant(P()); sb.Append("liberado " + arg); break;
+                case "revoke": comp.Revoke(P()); sb.Append("revogado " + arg); break;
+                case "finish": Find.ResearchManager.FinishProject(P(), false, null, false); sb.Append("concluído " + arg); break;
+                case "current": Find.ResearchManager.SetCurrentProject(P()); sb.Append("atual=" + Find.ResearchManager.GetProject()?.defName); break;
+                case "work":
+                {
+                    Pawn pawn = PawnsFinder.AllMaps_FreeColonists.FirstOrDefault();
+                    var before = Find.ResearchManager.GetProject();
+                    float prog = before == null ? 0 : Find.ResearchManager.GetProgress(before);
+                    Find.ResearchManager.ResearchPerformed(float.Parse(arg ?? "100"), pawn);
+                    var after = Find.ResearchManager.GetProject();
+                    sb.Append("antes=" + (before?.defName ?? "-") + " depois=" + (after?.defName ?? "-") + " progresso=" + prog.ToString("0.0") + "->" + (before == null ? 0 : Find.ResearchManager.GetProgress(before)).ToString("0.0"));
+                    break;
+                }
+                default: return "uso: tech status|try|grant|revoke|finish|current|work";
+            }
+            return sb.ToString().TrimEnd();
+        }
+
         public static string ListFactions()
         {
             var sb = new StringBuilder();
@@ -530,6 +602,17 @@ namespace EcosDaQueda.DebugTools
                 if (filtro != null)
                     sb.AppendLine("    com '" + filtro + "': " + string.Join(", ", stock.Where(t => t.def.defName.IndexOf(filtro, StringComparison.OrdinalIgnoreCase) >= 0)
                         .GroupBy(t => t.def.defName).Select(g => g.Key + "×" + g.Sum(t => t.stackCount))));
+                var packs = stock.OfType<Genepack>().Where(p => p.GeneSet != null).ToList();
+                if (packs.Count > 0)
+                {
+                    var exoticos = new HashSet<string>(k.stockGenerators.OfType<EcosDaQueda.StockGenerator_EQGenepacks>().SelectMany(g => g.fromMods));
+                    int nExo = packs.Count(p => p.GeneSet.GenesListForReading.All(g => g.modContentPack != null && exoticos.Contains(g.modContentPack.PackageId.ToLowerInvariant())));
+                    sb.AppendLine("    pacotes de genes: " + packs.Count + " (linha exótica " + nExo + "): " + string.Join(" | ", packs.Select(p =>
+                        string.Join("+", p.GeneSet.GenesListForReading.Select(g => g.defName + "[" + (g.modContentPack?.PackageId ?? "?").Replace("vanillaracesexpanded.", "vre.") + "]")))));
+                    var poolGens = k.stockGenerators.OfType<EcosDaQueda.StockGenerator_EQGenepacks>().ToList();
+                    if (poolGens.Count > 0)
+                        sb.AppendLine("    reserva da linha exótica: " + string.Join(", ", poolGens[0].Pool.GroupBy(g => g.modContentPack.PackageId.Replace("vanillaracesexpanded.", "")).Select(g => g.Key + " " + g.Count())));
+                }
                 if (EcosDaQueda.EQTrade.Dropped.TryGetValue(k, out List<string> dropped)) sb.AppendLine("    tirados da cópia: " + string.Join(", ", dropped));
                 if (stock.Count == 0) problemas++;
                 foreach (Thing t in stock) t.Destroy();
