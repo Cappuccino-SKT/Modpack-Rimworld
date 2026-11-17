@@ -123,6 +123,12 @@
     </apparelTags>
     <label>arquivista-mor</label>
     <labelPlural>arquivistas-mores</labelPlural>
+    <!-- Bloco L (Vanilla Traits Expanded): o arquivista-mor estudou a vida inteira para não dizer nada -->
+    <forcedTraits>
+      <li MayRequire="VanillaExpanded.VanillaTraitsExpanded">
+        <def>VTE_Academian</def>
+      </li>
+    </forcedTraits>
     <defaultFactionDef>EQ_Faction_Silencio</defaultFactionDef>
     <factionLeader>true</factionLeader>
     <combatPower>120</combatPower>
@@ -285,6 +291,12 @@
     </apparelTags>
     <label>diretor executivo</label>
     <labelPlural>diretores executivos</labelPlural>
+    <!-- Bloco L (Vanilla Traits Expanded): o diretor só fala em lucro -->
+    <forcedTraits>
+      <li MayRequire="VanillaExpanded.VanillaTraitsExpanded">
+        <def>VTE_Tycoon</def>
+      </li>
+    </forcedTraits>
     <defaultFactionDef>EQ_Faction_Helice</defaultFactionDef>
     <factionLeader>true</factionLeader>
     <combatPower>110</combatPower>
@@ -447,6 +459,12 @@
     </apparelTags>
     <label>engenheiro-primaz</label>
     <labelPlural>engenheiros-primazes</labelPlural>
+    <!-- Bloco L (Vanilla Traits Expanded): o primaz não tira férias; a Forja não tem a palavra -->
+    <forcedTraits>
+      <li MayRequire="VanillaExpanded.VanillaTraitsExpanded">
+        <def>VTE_Workaholic</def>
+      </li>
+    </forcedTraits>
     <defaultFactionDef>EQ_Faction_Forja</defaultFactionDef>
     <factionLeader>true</factionLeader>
     <combatPower>150</combatPower>
@@ -604,6 +622,12 @@
     </apparelTags>
     <label>maestro supremo</label>
     <labelPlural>maestros supremos</labelPlural>
+    <!-- Bloco L (Vanilla Traits Expanded): o maestro só aceita o melhor (dos outros) -->
+    <forcedTraits>
+      <li MayRequire="VanillaExpanded.VanillaTraitsExpanded">
+        <def>VTE_Snob</def>
+      </li>
+    </forcedTraits>
     <defaultFactionDef>EQ_Faction_Coro</defaultFactionDef>
     <factionLeader>true</factionLeader>
     <combatPower>250</combatPower>

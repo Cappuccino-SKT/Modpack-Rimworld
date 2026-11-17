@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <!-- Etapa 2, bloco M: veículos (Source/EcosDaQueda/Vehicles.cs). Só tem efeito com o Vehicle Framework + VVE.
+       Observação: o Vehicle Framework 1.6 deixa DESLIGADOS na versão oficial os veículos em ataques de NPC
+       (feature "Raiders") e o comércio de veículos (feature "TradeableVehicles"); por isso a Feira e a Forja
+       vendem um "título de posse" (item) que vira o veículo ao ser usado. -->
+
+  <!-- Blindado (veículo da categoria Combat) montado sem o cargo = pirataria. 3 = cavaleiro da garantia. -->
+  <EcosDaQueda.VehiclePolicyDef>
+    <defName>EQ_VehiclePolicy</defName>
+    <licensor>EQ_Faction_Forja</licensor>
+    <licenseRank>3</licenseRank>
+    <piracyGoodwill>-10</piracyGoodwill>
+    <piracyText>Blindado sem placa. {FACTION_name} detectou um {VEHICLE} montado sem licença (exige o cargo de {TITLE}) e abriu um processo por pirataria de chassi. A multa vem por recall; o recall vem armado.</piracyText>
+    <licensedText>{VEHICLE} registrado. {FACTION_name} emitiu a placa, o manual de 900 páginas e a garantia de 90 dias, que não cobre tiros, minas, nem uso em combate.</licensedText>
+  </EcosDaQueda.VehiclePolicyDef>
+
+  <!-- ===================================================================== Títulos de posse -->
+
+  <ThingDef Abstract="True" Name="EQ_VehicleTitleBase" ParentName="ResourceBase">
+    <graphicData>
+      <texPath>Things/Item/Resource/CarParts</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <stackLimit>1</stackLimit>
+    <useHitPoints>true</useHitPoints>
+    <statBases>
+      <MaxHitPoints>60</MaxHitPoints>
+      <Mass>2</Mass>
+      <Flammability>1</Flammability>
+    </statBases>
+    <thingCategories>
+      <li>Items</li>
+    </thingCategories>
+    <tradeability>All</tradeability>
+    <tradeTags>
+      <li>EQ_VehicleTitle</li>
+    </tradeTags>
+  </ThingDef>
+
+  <!-- Feira Andante: "ferro-velho sobre rodas". Usado, peças gastas, tanque quase vazio. -->
+  <ThingDef ParentName="EQ_VehicleTitleBase" MayRequire="OskarPotocki.VanillaVehiclesExpanded">
+    <defName>EQ_TituloLataVelha</defName>
+    <label>título de posse (lata-velha)</label>
+    <description>Um molho de chaves, um papel carimbado três vezes por três cartórios que não existem mais e o endereço de um ferro-velho da Feira Andante. Ao ser usado, um veículo de transporte usado é entregue na hora.\n\nVendido no estado. Sem garantia, sem devolução, sem perguntas sobre o dono anterior, que não vai reclamar.</description>
+    <statBases>
+      <MarketValue>950</MarketValue>
+    </statBases>
+    <comps>
+      <li Class="CompProperties_Usable">
+        <useJob>UseItem</useJob>
+        <useLabel>Buscar o veículo</useLabel>
+        <useDuration>300</useDuration>
+        <showUseGizmo>true</showUseGizmo>
+      </li>
+      <li Class="EcosDaQueda.CompProperties_UseEffectVehicleTitle">
+        <vehicles>
+          <li>VVE_Dirtbike</li>
+          <li>VVE_BangBus</li>
+          <li>VVE_Prowler</li>
+          <li>VVE_Traveller</li>
+          <li>VVE_Charley</li>
+          <li>VVE_Mule</li>
+        </vehicles>
+        <componentHealth>0.35~0.8</componentHealth>
+        <fuel>0.05~0.25</fuel>
+        <successText>{0} buscou {1} no ferro-velho da Feira. Ligou na terceira tentativa. A Feira considera isso "funcionando".</successText>
+      </li>
+      <li Class="CompProperties_UseEffectDestroySelf" />
+    </comps>
+  </ThingDef>
+
+  <ThingDef ParentName="EQ_VehicleTitleBase" MayRequire="OskarPotocki.VanillaVehiclesExpanded">
+    <defName>EQ_TituloSeminovo</defName>
+    <label>título de posse (seminovo)</label>
+    <description>As mesmas chaves, um papel com quatro carimbos e a palavra "seminovo", que na Feira Andante significa "a outra metade é surpresa". Ao ser usado, um veículo de carga usado é entregue na hora.\n\nInclui um tapete de pelúcia de brinde. O tapete não é negociável.</description>
+    <statBases>
+      <MarketValue>2100</MarketValue>
+    </statBases>
+    <comps>
+      <li Class="CompProperties_Usable">
+        <useJob>UseItem</useJob>
+        <useLabel>Buscar o veículo</useLabel>
+        <useDuration>300</useDuration>
+        <showUseGizmo>true</showUseGizmo>
+      </li>
+      <li Class="EcosDaQueda.CompProperties_UseEffectVehicleTitle">
+        <vehicles>
+          <li>VVE_Roadrunner</li>
+          <li>VVE_Snatcher</li>
+          <li>VVE_Wagon</li>
+          <li>VVE_Wisent</li>
+        </vehicles>
+        <componentHealth>0.55~0.95</componentHealth>
+        <fuel>0.15~0.4</fuel>
+        <successText>{0} buscou {1} seminovo na Feira. O hodômetro marca zero. Todos os hodômetros da Feira marcam zero.</successText>
+      </li>
+      <li Class="CompProperties_UseEffectDestroySelf" />
+    </comps>
+  </ThingDef>
+
+  <!-- Forja: blindado registrado, novo e de tanque cheio; só quem tem o cargo da licença pode receber. -->
+  <ThingDef ParentName="EQ_VehicleTitleBase" MayRequire="OskarPotocki.VanillaVehiclesExpanded">
+    <defName>EQ_TituloBlindado</defName>
+    <label>título de blindado registrado</label>
+    <description>Escritura de um veículo de combate da Forja, com número de chassi, placa e manual de 900 páginas. Ao ser usado, o blindado sai da linha de montagem direto para a colônia.\n\nA transferência só é válida para quem tem o cargo da Forja que licencia blindados. Os outros podem guardar o papel como lembrança do que poderiam ter.</description>
+    <statBases>
+      <MarketValue>3800</MarketValue>
+    </statBases>
+    <comps>
+      <li Class="CompProperties_Usable">
+        <useJob>UseItem</useJob>
+        <useLabel>Receber o blindado</useLabel>
+        <useDuration>300</useDuration>
+        <showUseGizmo>true</showUseGizmo>
+      </li>
+      <li Class="EcosDaQueda.CompProperties_UseEffectVehicleTitle">
+        <vehicles>
+          <li>VVE_Highwayman</li>
+          <li>VVE_Scytheman</li>
+          <li>VVE_Roadkill</li>
+          <li>VVE_Bunsen</li>
+          <li>VVE_Bulldog</li>
+          <li>VVE_Tango</li>
+        </vehicles>
+        <requiresLicense>true</requiresLicense>
+        <successText>{0} recebeu {1} registrado. A Forja lembra que a garantia é anulada no primeiro disparo.</successText>
+      </li>
+      <li Class="CompProperties_UseEffectDestroySelf" />
+    </comps>
+  </ThingDef>
+</Defs>

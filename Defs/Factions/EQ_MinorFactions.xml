@@ -447,6 +447,20 @@ Não negociam, não fazem paz e não têm ouvidoria. Em compensação, fazem gre
           <EQ_Sindicato_Filiado>3</EQ_Sindicato_Filiado>
         </options>
       </li>
+      <li MayRequire="VanillaExpanded.VAEWaste">
+        <!-- Bloco L: piquete com bichos de lixão (VAE Waste Animals), criados a resto de saque. -->
+        <kindDef>Combat</kindDef>
+        <commonality>30</commonality>
+        <options>
+          <EQ_Sindicato_Filiado>8</EQ_Sindicato_Filiado>
+          <EQ_Sindicato_Piqueteiro>6</EQ_Sindicato_Piqueteiro>
+          <EQ_Sindicato_Cobrador>3</EQ_Sindicato_Cobrador>
+          <VAEWaste_Wasteboar>3</VAEWaste_Wasteboar>
+          <VAEWaste_Toxafox>3</VAEWaste_Toxafox>
+          <VAEWaste_Toxiguana>2</VAEWaste_Toxiguana>
+          <VAEWaste_Toxlion>0.5</VAEWaste_Toxlion>
+        </options>
+      </li>
       <li>
         <kindDef>Settlement</kindDef>
         <options>
@@ -553,6 +567,17 @@ Não negociam, não fazem paz e não têm ouvidoria. Em compensação, fazem gre
         <options>
           <EQ_Lodo_Bruto>10</EQ_Lodo_Bruto>
           <EQ_Lodo_Arrombador>4</EQ_Lodo_Arrombador>
+        </options>
+      </li>
+      <li MayRequire="VanillaExpanded.VAEWaste">
+        <!-- Bloco L: estouro do chiqueiro real; os porcos do lodo comem o mesmo que os brutos. -->
+        <kindDef>Combat</kindDef>
+        <commonality>25</commonality>
+        <options>
+          <EQ_Lodo_Bruto>10</EQ_Lodo_Bruto>
+          <EQ_Lodo_Arrombador>3</EQ_Lodo_Arrombador>
+          <VAEWaste_Wasteboar>7</VAEWaste_Wasteboar>
+          <VAEWaste_Wasteffalo>1</VAEWaste_Wasteffalo>
         </options>
       </li>
       <li>

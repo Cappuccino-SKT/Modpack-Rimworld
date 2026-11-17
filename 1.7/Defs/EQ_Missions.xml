@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <!-- Etapa 2, bloco F: missões dos Vanilla Quests Expanded com potência patrona (Source/EcosDaQueda/Missions.cs).
+       Missão concluída com sucesso = Fama na patrona; se ela for a potência do líder, favor (favorSources
+       PatronQuestCompleted em EQ_Allegiance.xml). Nomes das missões em texto: os mods são opcionais. -->
+
+  <!-- VQE Ancients: os laboratórios de supersoldados do mundo antigo. O Silêncio (Arquivo) quer os dados. -->
+  <EcosDaQueda.QuestPatronDef>
+    <defName>EQ_Patron_Ancients</defName>
+    <faction>EQ_Faction_Silencio</faction>
+    <fame>3</fame>
+    <quests>
+      <li>VQE_AncientLabComplex</li>
+      <li>VQE_ArchiteControlVault</li>
+      <li>VQE_InhibitorResearchLab</li>
+      <li>VQE_SpliceframeBlacksite</li>
+      <li>VQE_AncientResearchVault</li>
+    </quests>
+    <majorQuests>
+      <li>VQE_ArchiteArraySite</li>
+    </majorQuests>
+    <majorFame>6</majorFame>
+    <messageText>{FACTION_name} registrou a escavação "{QUEST}" no Arquivo. Os dados do programa de supersoldados agora são patrimônio da pesquisa; as cobaias, também.</messageText>
+  </EcosDaQueda.QuestPatronDef>
+
+  <!-- VQE Drone Factory: drones militares abandonados são produto fora de linha da Forja. -->
+  <EcosDaQueda.QuestPatronDef>
+    <defName>EQ_Patron_Drones</defName>
+    <faction>EQ_Faction_Forja</faction>
+    <fame>3</fame>
+    <quests>
+      <li>VQE_DroneScrapyard</li>
+      <li>VQE_DroneStockpile</li>
+    </quests>
+    <majorQuests>
+      <li>VQE_DroneFactory</li>
+    </majorQuests>
+    <majorFame>6</majorFame>
+    <messageText>Recall de drones concluído ("{QUEST}"). {FACTION_name} agradece a colaboração voluntária e lembra que a garantia desses modelos expirou há três séculos.</messageText>
+  </EcosDaQueda.QuestPatronDef>
+
+  <!-- VQE The Generator: o gerador ARC do inventor. A Forja reivindica a patente. -->
+  <EcosDaQueda.QuestPatronDef>
+    <defName>EQ_Patron_Generator</defName>
+    <faction>EQ_Faction_Forja</faction>
+    <fame>2</fame>
+    <quests>
+      <li>VQE_PrototypeARC</li>
+      <li>VQE_AbandonedARC</li>
+      <li>VQE_AncientARC</li>
+      <li>VQE_ArcSite</li>
+      <li>VQE_NuclearArcSite</li>
+      <li>VQE_GeothermalArcSite</li>
+    </quests>
+    <majorQuests>
+      <li>VQE_InventorShelter</li>
+    </majorQuests>
+    <majorFame>6</majorFame>
+    <messageText>{FACTION_name} protocolou "{QUEST}" como recuperação de patente. O reator ARC é propriedade industrial da Forja desde antes de existir.</messageText>
+  </EcosDaQueda.QuestPatronDef>
+
+  <!-- Drones fabricados pela colônia (CompDroneHatcher do Drone Factory): sem o cargo técnico licenciado da Forja,
+       cada drone é pirataria (boa vontade, convertida em Infâmia pelo sistema de reputação). -->
+  <EcosDaQueda.DronePolicyDef>
+    <defName>EQ_DronePolicy</defName>
+    <licensor>EQ_Faction_Forja</licensor>
+    <!-- 0 = primeiro cargo; 1 = técnico licenciado -->
+    <licenseRank>1</licenseRank>
+    <piracyGoodwill>-3</piracyGoodwill>
+    <piracyText>Drone sem número de série. {FACTION_name} detectou firmware clonado (a fabricação exige o cargo de {TITLE}) e acrescentou uma linha ao seu processo por pirataria.</piracyText>
+    <licensedText>Drone registrado. {FACTION_name} ativou a garantia de 90 dias, que não cobre uso, desgaste, nem existência.</licensedText>
+  </EcosDaQueda.DronePolicyDef>
+</Defs>

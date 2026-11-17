@@ -37,6 +37,16 @@ namespace EcosDaQueda
         public float fame;
         public string resultText;
 
+        /// <summary>packageId de um mod exigido; sem ele o serviço some do menu.</summary>
+        public string requiresMod;
+        /// <summary>Insanity: sanidade cobrada do colono com mais Intelectual ({0} no texto = nome, {1} = sanidade final).</summary>
+        public float sanityCost;
+        public string sanityCostText;
+        /// <summary>Insanity: sanidade devolvida ao colono mais abalado (exige alguém abaixo de 95%).</summary>
+        public float sanityRestore;
+        public HediffDef restoreHediff;
+        public string sanityRestoreText;
+
         public override IEnumerable<string> ConfigErrors()
         {
             foreach (string e in base.ConfigErrors()) yield return e;
@@ -63,7 +73,9 @@ namespace EcosDaQueda
         }
 
         public static IEnumerable<FactionServiceDef> ServicesOf(FactionDef faction) =>
-            DefDatabase<FactionServiceDef>.AllDefsListForReading.Where(s => s.faction == faction).OrderBy(s => s.order);
+            DefDatabase<FactionServiceDef>.AllDefsListForReading
+                .Where(s => s.faction == faction && (s.requiresMod.NullOrEmpty() || ModsConfig.IsActive(s.requiresMod)))
+                .OrderBy(s => s.order);
 
         public int CooldownTicksLeft(FactionServiceDef s)
         {
@@ -97,6 +109,10 @@ namespace EcosDaQueda
                 return "Nenhum prisioneiro";
             if (s.researchPoints > 0f && Find.ResearchManager.GetProject() == null)
                 return "Nenhuma pesquisa em andamento";
+            if (!s.requiresMod.NullOrEmpty() && !ModsConfig.IsActive(s.requiresMod))
+                return "Exige o mod " + s.requiresMod;
+            if (s.sanityRestore > 0f && EQSanity.MostShaken(map) == null)
+                return "Ninguém com a sanidade abalada";
             return null;
         }
 
@@ -175,6 +191,25 @@ namespace EcosDaQueda
             {
                 foreach (Pawn p in map.mapPawns.FreeColonistsSpawned)
                     p.needs?.mood?.thoughts?.memories?.TryGainMemory(s.colonistThought);
+            }
+            if (s.sanityCost > 0f)
+            {
+                Pawn scholar = EQSanity.BestScholar(map);
+                if (scholar != null && EQSanity.Gain(scholar, -s.sanityCost, s.label, false) && !s.sanityCostText.NullOrEmpty())
+                    Messages.Message(string.Format(s.sanityCostText, scholar.LabelShort, (EQSanity.Level(scholar) ?? 0f).ToStringPercent()),
+                        scholar, MessageTypeDefOf.NegativeEvent);
+            }
+            if (s.sanityRestore > 0f)
+            {
+                Pawn shaken = EQSanity.MostShaken(map);
+                if (shaken != null && EQSanity.Gain(shaken, s.sanityRestore, s.label, false))
+                {
+                    if (s.restoreHediff != null)
+                        shaken.health.AddHediff(s.restoreHediff);
+                    if (!s.sanityRestoreText.NullOrEmpty())
+                        Messages.Message(string.Format(s.sanityRestoreText, shaken.LabelShort, (EQSanity.Level(shaken) ?? 0f).ToStringPercent()),
+                            shaken, MessageTypeDefOf.PositiveEvent);
+                }
             }
             if (s.fame > 0f)
                 WorldComponent_Reputation.Current?.Record(f, s.fame, 0f);

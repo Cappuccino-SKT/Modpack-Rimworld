@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <!-- Etapa 2, bloco L: com o VAE Waste Animals, as caravanas do Reino do Lodo vêm com búfalos e javalis de lixão
+       no lugar dos muffalos e porcos comuns (os brutos criam o que come o mesmo lixo que eles). -->
+  <Operation Class="PatchOperationFindMod">
+    <mods>
+      <li>Vanilla Animals Expanded — Waste Animals</li>
+    </mods>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/FactionDef[defName="EQ_Faction_ReinoDoLodo"]/pawnGroupMakers/li[kindDef="Trader"]/carriers</xpath>
+      <value>
+        <carriers>
+          <VAEWaste_Wasteffalo>6</VAEWaste_Wasteffalo>
+          <VAEWaste_Wasteboar>2</VAEWaste_Wasteboar>
+        </carriers>
+      </value>
+    </match>
+  </Operation>
+</Patch>

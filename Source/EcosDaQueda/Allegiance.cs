@@ -44,7 +44,7 @@ namespace EcosDaQueda
         public string resultText;
     }
 
-    public enum FavorEventType { ResearchFinished, SerumUsed, XenogermImplanted, TradeSilver, QualityCrafted, RitualFinished, InsectHiveDestroyed }
+    public enum FavorEventType { ResearchFinished, SerumUsed, XenogermImplanted, TradeSilver, QualityCrafted, RitualFinished, InsectHiveDestroyed, PatronQuestCompleted }
 
     /// <summary>Uma forma temática de ganhar favor: a cada "per" ocorrências do evento, o líder ganha "amount".</summary>
     public class FavorSource
@@ -99,6 +99,12 @@ namespace EcosDaQueda
         public int ignoreGoodwill = -15;
 
         public float leaveInfamy = 50f;
+
+        /// <summary>Insanity (bloco I): sanidade perdida por dia inteiro de pesquisa a 100% de velocidade, para membros.</summary>
+        public float researchSanityDrainPerDay;
+        /// <summary>Insanity: bônus de velocidade de pesquisa por sanidade perdida (0,5 = +50% com sanidade 0).</summary>
+        public float researchSpeedPerLostSanity;
+        public string researchSanityLabel = "pesquisa para a potência";
 
         /// <summary>Quando hostil e a reputação pede retaliação: chance de usar um destes incidentes em vez de caçadores.</summary>
         public List<IncidentDef> hostileIncidents = new List<IncidentDef>();

@@ -1,0 +1,485 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <!-- Bloco N: marcos do mundo com nome e história nossos (Odyssey + Vanilla Landmarks Expanded).
+       Cada marco reaproveita mutadores de terreno que já existem (vanilla ou VEE); o nosso é o nome
+       sorteado (RulePack EQ_NamerMarco_*), o rótulo e a história (descrição, que o jogo mostra como
+       dica na aba Terreno do mapa-mundi). Marcos que usam mutador do VEE exigem o VEE. -->
+
+  <!-- ===================== Marcos ===================== -->
+
+  <!-- Cratera da Queda (Silêncio estuda, Forja vende, Hélice registrou) -->
+  <LandmarkDef MayRequire="Ludeon.RimWorld.Odyssey,vanillaexpanded.vexploratione">
+    <defName>EQ_Marco_CrateraDaQueda</defName>
+    <label>cratera da Queda</label>
+    <description>Aqui caiu o que abriu a Queda: a nave-colmeia do enxame, segundo o Império, ou a nave do Império, segundo os sobreviventes do enxame (que não existem, o que encerra o debate). A Ordem do Silêncio já publicou 41 artigos sobre o buraco, todos discordando do anterior. A Irmandade da Forja vende por quilo o que sobrou da nave. O Concílio da Hélice registrou a cratera como marca e cobra licença de quem tira foto.</description>
+    <iconTexturePath>World/Landmarks/VEE_MeteorCrater</iconTexturePath>
+    <atlasSize>(2, 2)</atlasSize>
+    <commonality>1</commonality>
+    <nameMaker>EQ_NamerMarco_Cratera</nameMaker>
+    <category>mountain</category>
+    <mutatorChances>
+      <VEE_MeteorCrater Required="True"/>
+      <VEE_MechanoidShipChunks>1</VEE_MechanoidShipChunks>
+      <MineralRich>0.5</MineralRich>
+      <AnimalLife_Decreased>0.3</AnimalLife_Decreased>
+      <Pollution_Increased MayRequire="Ludeon.RimWorld.Biotech">0.15</Pollution_Increased>
+      <MixedBiome>0.3</MixedBiome>
+    </mutatorChances>
+  </LandmarkDef>
+
+  <!-- Campo da Última Ofensiva (Império x enxame) -->
+  <LandmarkDef MayRequire="Ludeon.RimWorld.Odyssey,vanillaexpanded.vexploratione">
+    <defName>EQ_Marco_UltimaOfensiva</defName>
+    <label>campo da Última Ofensiva</label>
+    <description>O último campo de batalha entre o Império e o enxame mecanoide. O Império venceu a batalha, perdeu a guerra e foi embora; o enxame ficou, mas parou de vir. Como ninguém assinou a rendição, a guerra tecnicamente continua, e os fundadores do Coro Ascendente cobram pedágio pela vista desde então. As crateras ainda estão lá. Os mortos também, mas em pedaços menores.</description>
+    <iconTexturePath>World/Landmarks/Ruins</iconTexturePath>
+    <atlasSize>(2, 2)</atlasSize>
+    <commonality>1</commonality>
+    <nameMaker>EQ_NamerMarco_Ofensiva</nameMaker>
+    <category>structure</category>
+    <drawAboveRoads>true</drawAboveRoads>
+    <mutatorChances>
+      <VEE_BombardedSurface Required="True"/>
+      <VEE_MechanoidShipChunks>0.6</VEE_MechanoidShipChunks>
+      <Junkyard MayRequire="Ludeon.RimWorld.Ideology">0.3</Junkyard>
+      <Stockpile>0.1</Stockpile>
+      <AnimalLife_Decreased>0.3</AnimalLife_Decreased>
+      <Pollution_Increased MayRequire="Ludeon.RimWorld.Biotech">0.2</Pollution_Increased>
+      <AncientUplink>0.1</AncientUplink>
+    </mutatorChances>
+  </LandmarkDef>
+
+  <!-- Fazenda-modelo da Linha Robusta (Hélice; berço do Reino do Lodo) -->
+  <LandmarkDef MayRequire="Ludeon.RimWorld.Odyssey,vanillaexpanded.vexploratione">
+    <defName>EQ_Marco_FazendaModelo</defName>
+    <label>fazenda-modelo da Linha Robusta</label>
+    <description>Campo de testes onde o Concílio da Hélice criava a Linha Robusta, Edição Chão de Fábrica: plantava, colhia, comia lixo tóxico e não pedia aumento. Quando o lote foi descontinuado, ninguém avisou os funcionários, que continuaram trabalhando por três gerações. Os descendentes, hoje o Reino do Lodo, chamam o lugar de berço sagrado. A Hélice o chama de passivo ambiental e nega ter estado aqui.</description>
+    <iconTexturePath>World/Landmarks/VEE_AbandonedFarmland</iconTexturePath>
+    <atlasSize>(2, 2)</atlasSize>
+    <commonality>0.6</commonality>
+    <nameMaker>EQ_NamerMarco_Fazenda</nameMaker>
+    <category>structure</category>
+    <mutatorChances>
+      <VEE_AbandonedFarmland Required="True"/>
+      <Pollution_Increased MayRequire="Ludeon.RimWorld.Biotech">1</Pollution_Increased>
+      <Muddy>0.3</Muddy>
+      <Marshy>0.2</Marshy>
+      <Junkyard MayRequire="Ludeon.RimWorld.Ideology">0.2</Junkyard>
+    </mutatorChances>
+  </LandmarkDef>
+
+  <!-- Poços da Primeira Escuta (Silêncio) -->
+  <LandmarkDef MayRequire="Ludeon.RimWorld.Odyssey,Ludeon.RimWorld.Anomaly,vanillaexpanded.vexploratione">
+    <defName>EQ_Marco_PocoDaEscuta</defName>
+    <label>poços da Primeira Escuta</label>
+    <description>Foi aqui que o primeiro arquivista encostou o ouvido no chão e ouviu algo responder. A Ordem do Silêncio Perpétuo considera o lugar sagrado, restrito e, por isso mesmo, aberto a visitas: a entrada é gratuita, a saída é cobrada em sanidade. A fila de candidatos a "voluntário de pesquisa" começa na beira do primeiro poço e, curiosamente, nunca anda para trás.</description>
+    <iconTexturePath>World/Landmarks/VEE_FleshPits</iconTexturePath>
+    <atlasSize>(2, 2)</atlasSize>
+    <commonality>0.6</commonality>
+    <nameMaker>EQ_NamerMarco_Escuta</nameMaker>
+    <category>mountain</category>
+    <mutatorChances>
+      <VEE_FleshPits MayRequire="Ludeon.RimWorld.Anomaly" Required="True"/>
+      <FoggyMutator>0.4</FoggyMutator>
+      <AnimalLife_Decreased>0.5</AnimalLife_Decreased>
+    </mutatorChances>
+  </LandmarkDef>
+
+  <!-- Cicatriz do Projeto Jardim (Hélice) -->
+  <LandmarkDef MayRequire="Ludeon.RimWorld.Odyssey">
+    <defName>EQ_Marco_ProjetoJardim</defName>
+    <label>cicatriz do Projeto Jardim</label>
+    <description>Terraformação contratada ao Concílio da Hélice e interrompida pela Queda no meio da instalação. O contrato prometia um continente fértil em dez anos, com garantia de satisfação. O cliente morreu há gerações; a Hélice continua mandando a fatura, agora com juros, para os herdeiros de quem quer que more por perto.</description>
+    <iconTexturePath>World/Landmarks/TerraformingScar</iconTexturePath>
+    <atlasSize>(2, 2)</atlasSize>
+    <commonality>0.3</commonality>
+    <nameMaker>EQ_NamerMarco_Jardim</nameMaker>
+    <mutatorChances>
+      <TerraformingScar Required="True"/>
+      <MineralRich>0.3</MineralRich>
+      <Fertile>0.2</Fertile>
+      <Pollution_Increased MayRequire="Ludeon.RimWorld.Biotech">0.3</Pollution_Increased>
+      <SteamGeysers_Increased>0.1</SteamGeysers_Increased>
+    </mutatorChances>
+  </LandmarkDef>
+
+  <!-- Estruturas antigas (mesmos mutadores dos marcos vanilla; missões de estrutura antiga usam o nome) -->
+  <LandmarkDef Name="EQ_MarcoEstruturaBase" Abstract="True">
+    <iconTexturePath>World/Landmarks/AncientLaunchSite</iconTexturePath>
+    <atlasSize>(2, 2)</atlasSize>
+    <commonality>0.3</commonality>
+    <category>structure</category>
+    <drawAboveRoads>true</drawAboveRoads>
+    <mutatorChances>
+      <AnimalLife_Decreased>0.15</AnimalLife_Decreased>
+      <FoggyMutator>0.05</FoggyMutator>
+      <WindyMutator>0.05</WindyMutator>
+      <Pollution_Increased MayRequire="Ludeon.RimWorld.Biotech">0.1</Pollution_Increased>
+    </mutatorChances>
+  </LandmarkDef>
+
+  <!-- Pátio de Recall (Forja) -->
+  <LandmarkDef ParentName="EQ_MarcoEstruturaBase" MayRequire="Ludeon.RimWorld.Odyssey">
+    <defName>EQ_Marco_PatioDeRecall</defName>
+    <label>pátio de recall</label>
+    <description>Depósito para onde a Irmandade da Forja mandava os produtos devolvidos antes da Queda. A fila de atendimento tem duzentos anos e está na senha 3. Os mecanoides na prateleira aguardam "análise técnica"; alguns se cansaram de aguardar. Pelo manual, tudo o que está aqui dentro está fora da garantia, inclusive quem entra.</description>
+    <nameMaker>EQ_NamerMarco_Recall</nameMaker>
+    <mutatorChances>
+      <AncientWarehouse Required="True"/>
+      <Junkyard MayRequire="Ludeon.RimWorld.Ideology">0.5</Junkyard>
+      <VEE_MechanoidShipChunks MayRequire="vanillaexpanded.vexploratione">0.4</VEE_MechanoidShipChunks>
+    </mutatorChances>
+  </LandmarkDef>
+
+  <!-- Laboratório da colmeia sem recall (insetos) -->
+  <LandmarkDef ParentName="EQ_MarcoEstruturaBase" MayRequire="Ludeon.RimWorld.Odyssey">
+    <defName>EQ_Marco_LaboratorioColmeia</defName>
+    <label>laboratório da colmeia sem recall</label>
+    <description>Onde nasceu a colmeia sem recall, criada para devorar mecanoides. Ela devorou também o laboratório, a empresa e o departamento jurídico, nessa ordem. O Concílio da Hélice nega a patente e cobra royalties. A Irmandade da Forja diz que é defeito de outra marca. A Ordem do Silêncio mandou três expedições para catalogar a rainha e recebeu de volta duas, ambas incompletas.</description>
+    <nameMaker>EQ_NamerMarco_Colmeia</nameMaker>
+    <mutatorChances>
+      <AncientInfestedSettlement Required="True"/>
+    </mutatorChances>
+  </LandmarkDef>
+
+  <!-- Plataforma da Evacuação (Império; Coro) -->
+  <LandmarkDef ParentName="EQ_MarcoEstruturaBase" MayRequire="Ludeon.RimWorld.Odyssey">
+    <defName>EQ_Marco_PlataformaEvacuacao</defName>
+    <label>plataforma da Evacuação</label>
+    <description>Daqui partiu a última nave do Império, levando a nobreza, os arquivos e os talheres de prata. A lista de passageiros tinha trezentos nomes. O Coro Ascendente afirma que todos os seus fundadores estavam nela e só perderam o voo por uma questão de etiqueta: ninguém quis embarcar antes do outro. Algumas cápsulas de transporte ainda funcionam; as reservas, não.</description>
+    <nameMaker>EQ_NamerMarco_Evacuacao</nameMaker>
+    <mutatorChances>
+      <AncientLaunchSite Required="True"/>
+    </mutatorChances>
+  </LandmarkDef>
+
+  <!-- Guarnição esquecida (Império) -->
+  <LandmarkDef ParentName="EQ_MarcoEstruturaBase" MayRequire="Ludeon.RimWorld.Odyssey">
+    <defName>EQ_Marco_GuarnicaoEsquecida</defName>
+    <label>guarnição esquecida</label>
+    <description>Posto imperial que nunca recebeu a ordem de retirada. Os soldados morreram em posição de sentido, um de cada vez, conforme o regulamento. As defesas automáticas ainda esperam a senha do dia, que mudou há duzentos anos; a Irmandade da Forja já tentou 4.112 senhas e perdeu 38 aprendizes de manutenção no processo.</description>
+    <nameMaker>EQ_NamerMarco_Guarnicao</nameMaker>
+    <mutatorChances>
+      <AncientGarrison Required="True"/>
+    </mutatorChances>
+  </LandmarkDef>
+
+  <!-- Refinaria em greve (Sindicato do Saque) -->
+  <LandmarkDef ParentName="EQ_MarcoEstruturaBase" MayRequire="Ludeon.RimWorld.Odyssey">
+    <defName>EQ_Marco_RefinariaEmGreve</defName>
+    <label>refinaria em greve</label>
+    <description>Antiga refinaria de combustível químico que o Sindicato do Saque declara em greve há oitenta anos. Ninguém lembra a pauta de reivindicações, ninguém trabalha e todo mundo cobra. Quem tenta tirar combustível daqui é tratado como fura-greve, o que no Sindicato é crime punido com assembleia.</description>
+    <nameMaker>EQ_NamerMarco_Refinaria</nameMaker>
+    <mutatorChances>
+      <AncientChemfuelRefinery Required="True"/>
+      <Pollution_Increased MayRequire="Ludeon.RimWorld.Biotech">0.5</Pollution_Increased>
+    </mutatorChances>
+  </LandmarkDef>
+
+  <!-- ===================== Nomes ===================== -->
+
+  <RulePackDef>
+    <defName>EQ_NamerMarco_Cratera</defName>
+    <rulePack>
+      <rulesStrings>
+        <li>r_name(p=3)->[lugar] [sufixo]</li>
+        <li>r_name->Buraco Oficial da Queda</li>
+        <li>r_name->Cratera Tombada nº [num]</li>
+        <li>lugar->Cratera</li>
+        <li>lugar->Fossa</li>
+        <li>lugar->Buraco</li>
+        <li>lugar->Bacia</li>
+        <li>sufixo->do Primeiro Impacto</li>
+        <li>sufixo->do Último Comunicado</li>
+        <li>sufixo->da Queda</li>
+        <li>sufixo->do Artigo 41</li>
+        <li>sufixo->da Nave Disputada</li>
+        <li>sufixo->da Marca Registrada</li>
+        <li>sufixo->da Versão Oficial</li>
+        <li>sufixo->do Céu Devolvido</li>
+        <li>num->[dig]</li>
+        <li>num->[dig][dig]</li>
+        <li>dig->1</li>
+        <li>dig->2</li>
+        <li>dig->3</li>
+        <li>dig->4</li>
+        <li>dig->5</li>
+        <li>dig->6</li>
+        <li>dig->7</li>
+        <li>dig->8</li>
+        <li>dig->9</li>
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+
+  <RulePackDef>
+    <defName>EQ_NamerMarco_Ofensiva</defName>
+    <rulePack>
+      <rulesStrings>
+        <li>r_name(p=3)->[lugar] [sufixo]</li>
+        <li>r_name->Frente [frente], Setor [dig]</li>
+        <li>lugar->Campo</li>
+        <li>lugar->Planície</li>
+        <li>lugar->Frente</li>
+        <li>lugar->Trincheira</li>
+        <li>lugar->Cemitério a Céu Aberto</li>
+        <li>sufixo->da Última Ofensiva</li>
+        <li>sufixo->da Rendição Não Assinada</li>
+        <li>sufixo->da Vitória Inútil</li>
+        <li>sufixo->do Cessar-Fogo Esquecido</li>
+        <li>sufixo->do Enxame Cansado</li>
+        <li>sufixo->da Retirada Honrosa</li>
+        <li>sufixo->do Pedágio</li>
+        <li>frente->Leste</li>
+        <li>frente->Oeste</li>
+        <li>frente->Imperial</li>
+        <li>frente->Final</li>
+        <li>frente->Esquecida</li>
+        <li>dig->1</li>
+        <li>dig->2</li>
+        <li>dig->3</li>
+        <li>dig->4</li>
+        <li>dig->5</li>
+        <li>dig->6</li>
+        <li>dig->7</li>
+        <li>dig->8</li>
+        <li>dig->9</li>
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+
+  <RulePackDef>
+    <defName>EQ_NamerMarco_Fazenda</defName>
+    <rulePack>
+      <rulesStrings>
+        <li>r_name(p=3)->[lugar] [sufixo]</li>
+        <li>r_name->Lote Experimental [dig][dig]</li>
+        <li>lugar->Fazenda-Modelo</li>
+        <li>lugar->Campo de Testes</li>
+        <li>lugar->Lavoura</li>
+        <li>lugar->Berço</li>
+        <li>lugar->Chiqueiro Sagrado</li>
+        <li>sufixo->da Linha Robusta</li>
+        <li>sufixo->do Chão de Fábrica</li>
+        <li>sufixo->do Lote Descontinuado</li>
+        <li>sufixo->da Colheita Tóxica</li>
+        <li>sufixo->Sem Aumento</li>
+        <li>sufixo->do Passivo Ambiental</li>
+        <li>sufixo->da Primeira Esteira</li>
+        <li>dig->1</li>
+        <li>dig->2</li>
+        <li>dig->3</li>
+        <li>dig->4</li>
+        <li>dig->5</li>
+        <li>dig->6</li>
+        <li>dig->7</li>
+        <li>dig->8</li>
+        <li>dig->9</li>
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+
+  <RulePackDef>
+    <defName>EQ_NamerMarco_Escuta</defName>
+    <rulePack>
+      <rulesStrings>
+        <li>r_name(p=3)->[lugar] [sufixo]</li>
+        <li>r_name->Sala de Leitura Subterrânea [roman]</li>
+        <li>lugar->Poços</li>
+        <li>lugar->Fendas</li>
+        <li>lugar->Gargantas</li>
+        <li>lugar->Ouvidos</li>
+        <li>sufixo->da Primeira Escuta</li>
+        <li>sufixo->do Chão que Responde</li>
+        <li>sufixo->da Resposta</li>
+        <li>sufixo->do Sussurro de Baixo</li>
+        <li>sufixo->da Bibliografia Viva</li>
+        <li>sufixo->do Voluntário</li>
+        <li>sufixo->Sem Volta</li>
+        <li>roman->I</li>
+        <li>roman->II</li>
+        <li>roman->III</li>
+        <li>roman->IV</li>
+        <li>roman->VII</li>
+        <li>dig->1</li>
+        <li>dig->2</li>
+        <li>dig->3</li>
+        <li>dig->4</li>
+        <li>dig->5</li>
+        <li>dig->6</li>
+        <li>dig->7</li>
+        <li>dig->8</li>
+        <li>dig->9</li>
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+
+  <RulePackDef>
+    <defName>EQ_NamerMarco_Jardim</defName>
+    <rulePack>
+      <rulesStrings>
+        <li>r_name(p=3)->[lugar] [sufixo]</li>
+        <li>lugar->Cicatriz</li>
+        <li>lugar->Talho</li>
+        <li>lugar->Canteiro de Obras</li>
+        <li>sufixo->do Projeto Jardim</li>
+        <li>sufixo->da Fatura Eterna</li>
+        <li>sufixo->da Garantia de Satisfação</li>
+        <li>sufixo->do Continente Prometido</li>
+        <li>sufixo->da Instalação Interrompida</li>
+        <li>dig->1</li>
+        <li>dig->2</li>
+        <li>dig->3</li>
+        <li>dig->4</li>
+        <li>dig->5</li>
+        <li>dig->6</li>
+        <li>dig->7</li>
+        <li>dig->8</li>
+        <li>dig->9</li>
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+
+  <RulePackDef>
+    <defName>EQ_NamerMarco_Recall</defName>
+    <rulePack>
+      <rulesStrings>
+        <li>r_name(p=3)->[lugar] [sufixo]</li>
+        <li>r_name->Central de Devoluções [dig][dig]</li>
+        <li>lugar->Pátio de Recall</li>
+        <li>lugar->Depósito de Devoluções</li>
+        <li>lugar->Galpão de Assistência</li>
+        <li>lugar->Almoxarifado</li>
+        <li>sufixo->da Senha 3</li>
+        <li>sufixo->da Fila Eterna</li>
+        <li>sufixo->Fora da Garantia</li>
+        <li>sufixo->da Análise Técnica</li>
+        <li>sufixo->do Protocolo Perdido</li>
+        <li>sufixo->do Último Atendente</li>
+        <li>dig->1</li>
+        <li>dig->2</li>
+        <li>dig->3</li>
+        <li>dig->4</li>
+        <li>dig->5</li>
+        <li>dig->6</li>
+        <li>dig->7</li>
+        <li>dig->8</li>
+        <li>dig->9</li>
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+
+  <RulePackDef>
+    <defName>EQ_NamerMarco_Colmeia</defName>
+    <rulePack>
+      <rulesStrings>
+        <li>r_name(p=3)->[lugar] [sufixo]</li>
+        <li>r_name->Bloco [dig] do Projeto Devorador</li>
+        <li>lugar->Laboratório</li>
+        <li>lugar->Incubadora</li>
+        <li>lugar->Viveiro</li>
+        <li>lugar->Instalação</li>
+        <li>sufixo->Sem Recall</li>
+        <li>sufixo->da Patente Negada</li>
+        <li>sufixo->do Departamento Jurídico</li>
+        <li>sufixo->da Rainha Não Catalogada</li>
+        <li>sufixo->do Defeito de Outra Marca</li>
+        <li>dig->1</li>
+        <li>dig->2</li>
+        <li>dig->3</li>
+        <li>dig->4</li>
+        <li>dig->5</li>
+        <li>dig->6</li>
+        <li>dig->7</li>
+        <li>dig->8</li>
+        <li>dig->9</li>
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+
+  <RulePackDef>
+    <defName>EQ_NamerMarco_Evacuacao</defName>
+    <rulePack>
+      <rulesStrings>
+        <li>r_name(p=3)->[lugar] [sufixo]</li>
+        <li>r_name->Portão de Embarque [dig]</li>
+        <li>lugar->Plataforma</li>
+        <li>lugar->Porto</li>
+        <li>lugar->Rampa</li>
+        <li>lugar->Cais Orbital</li>
+        <li>sufixo->da Evacuação</li>
+        <li>sufixo->do Último Voo</li>
+        <li>sufixo->da Lista de Passageiros</li>
+        <li>sufixo->dos Talheres de Prata</li>
+        <li>sufixo->da Etiqueta Fatal</li>
+        <li>sufixo->do Embarque Cancelado</li>
+        <li>dig->1</li>
+        <li>dig->2</li>
+        <li>dig->3</li>
+        <li>dig->4</li>
+        <li>dig->5</li>
+        <li>dig->6</li>
+        <li>dig->7</li>
+        <li>dig->8</li>
+        <li>dig->9</li>
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+
+  <RulePackDef>
+    <defName>EQ_NamerMarco_Guarnicao</defName>
+    <rulePack>
+      <rulesStrings>
+        <li>r_name(p=3)->[lugar] [sufixo]</li>
+        <li>r_name->Posto Avançado [dig][dig]</li>
+        <li>lugar->Guarnição</li>
+        <li>lugar->Posto</li>
+        <li>lugar->Fortim</li>
+        <li>lugar->Quartel</li>
+        <li>sufixo->da Ordem Que Não Veio</li>
+        <li>sufixo->da Senha Vencida</li>
+        <li>sufixo->em Posição de Sentido</li>
+        <li>sufixo->do Regulamento</li>
+        <li>sufixo->da Última Chamada</li>
+        <li>dig->1</li>
+        <li>dig->2</li>
+        <li>dig->3</li>
+        <li>dig->4</li>
+        <li>dig->5</li>
+        <li>dig->6</li>
+        <li>dig->7</li>
+        <li>dig->8</li>
+        <li>dig->9</li>
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+
+  <RulePackDef>
+    <defName>EQ_NamerMarco_Refinaria</defName>
+    <rulePack>
+      <rulesStrings>
+        <li>r_name(p=3)->[lugar] [sufixo]</li>
+        <li>r_name->Unidade [dig] (em greve)</li>
+        <li>lugar->Refinaria</li>
+        <li>lugar->Destilaria</li>
+        <li>lugar->Usina</li>
+        <li>sufixo->em Greve</li>
+        <li>sufixo->da Pauta Esquecida</li>
+        <li>sufixo->dos Fura-Greves</li>
+        <li>sufixo->da Assembleia Permanente</li>
+        <li>sufixo->do Piquete Eterno</li>
+        <li>dig->1</li>
+        <li>dig->2</li>
+        <li>dig->3</li>
+        <li>dig->4</li>
+        <li>dig->5</li>
+        <li>dig->6</li>
+        <li>dig->7</li>
+        <li>dig->8</li>
+        <li>dig->9</li>
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+
+</Defs>

@@ -105,15 +105,63 @@
   <EcosDaQueda.FactionServiceDef>
     <defName>EQ_Service_Silencio_Arquivo</defName>
     <label>consulta ao Arquivo</label>
-    <description>Os arquivistas pesquisam o tema que sua colônia está estudando e enviam as respostas, adiantando bastante a pesquisa atual.\n\nAs respostas vêm com 90 notas de rodapé e uma cobrança por atraso de um livro que você nunca pegou.</description>
+    <description>Os arquivistas pesquisam o tema que sua colônia está estudando e enviam as respostas, adiantando bastante a pesquisa atual.\n\nAs respostas vêm com 90 notas de rodapé e uma cobrança por atraso de um livro que você nunca pegou. Quem lê as respostas é o colono mais estudado da colônia, e as respostas do Arquivo costumam cobrar em sanidade.</description>
     <faction>EQ_Faction_Silencio</faction>
     <order>2</order>
     <minRank>2</minRank>
     <cooldownDays>12</cooldownDays>
     <silver>400</silver>
     <researchPoints>1500</researchPoints>
+    <!-- Bloco I (Insanity): o colono com mais Intelectual lê as respostas e paga em sanidade. -->
+    <sanityCost>0.15</sanityCost>
+    <sanityCostText>{0} leu as 90 notas de rodapé do Arquivo. Algumas leram {0} de volta. Sanidade: {1}.</sanityCostText>
     <resultText>O Arquivo respondeu. Sua pesquisa avançou, e sua lista de leitura obrigatória também.</resultText>
   </EcosDaQueda.FactionServiceDef>
+
+  <!-- Bloco I (Insanity): devolve sanidade ao colono mais abalado; a Ordem fica com a voz dele como caução. -->
+  <EcosDaQueda.FactionServiceDef>
+    <defName>EQ_Service_Silencio_Retiro</defName>
+    <label>retiro de silêncio</label>
+    <description>A Ordem recebe o colono mais abalado da sua colônia para um retiro de silêncio absoluto. Ele volta bem mais são.
+
+Também volta sem voz por alguns dias: a Ordem guarda a fala do paciente como caução, "para evitar recaídas por conversa". A devolução é automática. A Ordem lembra que a maioria das recaídas começa com "bom dia".</description>
+    <faction>EQ_Faction_Silencio</faction>
+    <order>3</order>
+    <minRank>0</minRank>
+    <cooldownDays>10</cooldownDays>
+    <silver>350</silver>
+    <requiresMod>vanillaexpanded.vanomalyeinsanity</requiresMod>
+    <sanityRestore>0.5</sanityRestore>
+    <restoreHediff>EQ_Hediff_VotoCaucao</restoreHediff>
+    <sanityRestoreText>{0} voltou do retiro da Ordem com a sanidade em {1} e nenhuma palavra a dizer. Literalmente.</sanityRestoreText>
+    <favor>1</favor>
+    <resultText>Retiro concluído. A Ordem agradece a preferência em silêncio.</resultText>
+  </EcosDaQueda.FactionServiceDef>
+
+  <HediffDef>
+    <defName>EQ_Hediff_VotoCaucao</defName>
+    <label>voz em caução</label>
+    <description>A Ordem do Silêncio guarda a voz desta pessoa como caução depois de um retiro. Não consegue falar até a devolução, que é automática e, segundo a Ordem, pontual.</description>
+    <hediffClass>HediffWithComps</hediffClass>
+    <defaultLabelColor>(0.75, 0.75, 0.85)</defaultLabelColor>
+    <isBad>false</isBad>
+    <comps>
+      <li Class="HediffCompProperties_Disappears">
+        <disappearsAfterTicks>300000</disappearsAfterTicks>
+        <showRemainingTime>true</showRemainingTime>
+      </li>
+    </comps>
+    <stages>
+      <li>
+        <capMods>
+          <li>
+            <capacity>Talking</capacity>
+            <setMax>0</setMax>
+          </li>
+        </capMods>
+      </li>
+    </stages>
+  </HediffDef>
 
   <!-- ===================================================================== HÉLICE -->
 

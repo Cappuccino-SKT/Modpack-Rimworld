@@ -267,6 +267,21 @@
     </apparelTags>
     <label>filiado</label>
     <labelPlural>filiados</labelPlural>
+    <!-- Bloco L (Vanilla Recycling Expanded): a "contribuição sindical" recolhida no caminho; cai como saque. -->
+    <inventoryOptions Inherit="False">
+      <subOptionsTakeAll>
+        <li>
+          <skipChance>0.9</skipChance>
+          <thingDef>MedicineIndustrial</thingDef>
+          <countRange>1</countRange>
+        </li>
+        <li MayRequire="VanillaExpanded.Recycling">
+          <skipChance>0.4</skipChance>
+          <thingDef>VRecyclingE_Trash</thingDef>
+          <countRange>1~3</countRange>
+        </li>
+      </subOptionsTakeAll>
+    </inventoryOptions>
     <defaultFactionDef>EQ_Faction_SindicatoDoSaque</defaultFactionDef>
     <combatPower>40</combatPower>
     <!-- Unidade de combate: nunca alguém incapaz de violência (viria desarmado). -->
@@ -301,6 +316,26 @@
     </apparelTags>
     <label>piqueteiro</label>
     <labelPlural>piqueteiros</labelPlural>
+    <!-- Bloco L (Vanilla Recycling Expanded): a "contribuição sindical" recolhida no caminho; cai como saque. -->
+    <inventoryOptions Inherit="False">
+      <subOptionsTakeAll>
+        <li>
+          <skipChance>0.9</skipChance>
+          <thingDef>MedicineIndustrial</thingDef>
+          <countRange>1</countRange>
+        </li>
+        <li MayRequire="VanillaExpanded.Recycling">
+          <skipChance>0.3</skipChance>
+          <thingDef>VRecyclingE_Trash</thingDef>
+          <countRange>1~4</countRange>
+        </li>
+        <li MayRequire="VanillaExpanded.Recycling">
+          <skipChance>0.6</skipChance>
+          <thingDef>VRecyclingE_TrashBrick</thingDef>
+          <countRange>5~15</countRange>
+        </li>
+      </subOptionsTakeAll>
+    </inventoryOptions>
     <defaultFactionDef>EQ_Faction_SindicatoDoSaque</defaultFactionDef>
     <combatPower>55</combatPower>
     <!-- Unidade de combate: nunca alguém incapaz de violência (viria desarmado). -->
@@ -334,6 +369,32 @@
     </apparelTags>
     <label>cobrador</label>
     <labelPlural>cobradores</labelPlural>
+    <!-- Bloco L (Vanilla Traits Expanded): o cobrador leva o que vê; é "taxa de serviço" -->
+    <forcedTraits>
+      <li MayRequire="VanillaExpanded.VanillaTraitsExpanded">
+        <def>VTE_Kleptomaniac</def>
+      </li>
+    </forcedTraits>
+    <!-- Bloco L (Vanilla Recycling Expanded): a "contribuição sindical" recolhida no caminho; cai como saque. -->
+    <inventoryOptions Inherit="False">
+      <subOptionsTakeAll>
+        <li>
+          <skipChance>0.9</skipChance>
+          <thingDef>MedicineIndustrial</thingDef>
+          <countRange>1</countRange>
+        </li>
+        <li MayRequire="VanillaExpanded.Recycling">
+          <skipChance>0.5</skipChance>
+          <thingDef>VRecyclingE_ReactiveChempack</thingDef>
+          <countRange>1~2</countRange>
+        </li>
+        <li MayRequire="VanillaExpanded.Recycling">
+          <skipChance>0.6</skipChance>
+          <thingDef>VRecyclingE_ReclaimedBiopack</thingDef>
+          <countRange>1~2</countRange>
+        </li>
+      </subOptionsTakeAll>
+    </inventoryOptions>
     <defaultFactionDef>EQ_Faction_SindicatoDoSaque</defaultFactionDef>
     <combatPower>70</combatPower>
     <!-- Unidade de combate: nunca alguém incapaz de violência (viria desarmado). -->
@@ -366,6 +427,32 @@
     </apparelTags>
     <label>delegado sindical</label>
     <labelPlural>delegados sindicais</labelPlural>
+    <!-- Bloco L (Vanilla Traits Expanded): o delegado não aceita patrão, só presidente -->
+    <forcedTraits>
+      <li MayRequire="VanillaExpanded.VanillaTraitsExpanded">
+        <def>VTE_Rebel</def>
+      </li>
+    </forcedTraits>
+    <!-- Bloco L (Vanilla Recycling Expanded): a "contribuição sindical" recolhida no caminho; cai como saque. -->
+    <inventoryOptions Inherit="False">
+      <subOptionsTakeAll>
+        <li>
+          <skipChance>0.6</skipChance>
+          <thingDef>MedicineIndustrial</thingDef>
+          <countRange>1</countRange>
+        </li>
+        <li MayRequire="VanillaExpanded.Recycling">
+          <skipChance>0.4</skipChance>
+          <thingDef>VRecyclingE_ReactiveChempack</thingDef>
+          <countRange>1~3</countRange>
+        </li>
+        <li MayRequire="VanillaExpanded.Recycling">
+          <skipChance>0.7</skipChance>
+          <thingDef>VRecyclingE_RadioactiveIsotopack</thingDef>
+          <countRange>1</countRange>
+        </li>
+      </subOptionsTakeAll>
+    </inventoryOptions>
     <defaultFactionDef>EQ_Faction_SindicatoDoSaque</defaultFactionDef>
     <combatPower>115</combatPower>
     <weaponMoney>500~2000</weaponMoney>
@@ -394,6 +481,32 @@
     </apparelTags>
     <label>presidente do sindicato</label>
     <labelPlural>presidentes do sindicato</labelPlural>
+    <!-- Bloco L (Vanilla Traits Expanded): o presidente defende a base, de preferência a dos outros -->
+    <forcedTraits>
+      <li MayRequire="VanillaExpanded.VanillaTraitsExpanded">
+        <def>VTE_Tycoon</def>
+      </li>
+    </forcedTraits>
+    <!-- Bloco L (Vanilla Recycling Expanded): a "contribuição sindical" recolhida no caminho; cai como saque. -->
+    <inventoryOptions Inherit="False">
+      <subOptionsTakeAll>
+        <li>
+          <skipChance>0.5</skipChance>
+          <thingDef>MedicineIndustrial</thingDef>
+          <countRange>1</countRange>
+        </li>
+        <li MayRequire="VanillaExpanded.Recycling">
+          <skipChance>0.3</skipChance>
+          <thingDef>VRecyclingE_StabilizedAlloypack</thingDef>
+          <countRange>1~2</countRange>
+        </li>
+        <li MayRequire="VanillaExpanded.Recycling">
+          <skipChance>0.5</skipChance>
+          <thingDef>VRecyclingE_RadioactiveIsotopack</thingDef>
+          <countRange>1~2</countRange>
+        </li>
+      </subOptionsTakeAll>
+    </inventoryOptions>
     <defaultFactionDef>EQ_Faction_SindicatoDoSaque</defaultFactionDef>
     <combatPower>150</combatPower>
     <weaponMoney>900~2600</weaponMoney>

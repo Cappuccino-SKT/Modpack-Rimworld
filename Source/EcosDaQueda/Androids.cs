@@ -50,21 +50,26 @@ namespace EcosDaQueda
         public static bool IsAwakenedAndroid(Pawn p) => IsAndroid(p) && (bool)mIsAwakened.Invoke(null, new object[] { p });
 
         /// <summary>O líder do jogador tem o cargo que licencia a fabricação?</summary>
-        public static bool HasLicense(AndroidPolicyDef d)
+        public static bool HasLicense(AndroidPolicyDef d) => HasLicense(d.licensor, d.licenseRank);
+
+        /// <summary>Algum colono tem cargo da potência igual ou acima de rank?</summary>
+        public static bool HasLicense(FactionDef licensor, int rank)
         {
-            FactionAllegianceDef alg = FactionAllegianceDef.For(d.licensor);
-            if (alg == null || d.licenseRank < 0 || d.licenseRank >= alg.ranks.Count)
+            FactionAllegianceDef alg = FactionAllegianceDef.For(licensor);
+            if (alg == null || rank < 0 || rank >= alg.ranks.Count)
                 return false;
             foreach (Pawn p in PawnsFinder.AllMapsCaravansAndTravellingTransporters_Alive_FreeColonists)
-                if (p.royalty != null && p.royalty.AllTitlesForReading.Any(t => alg.RankIndexOf(t.def) >= d.licenseRank))
+                if (p.royalty != null && p.royalty.AllTitlesForReading.Any(t => alg.RankIndexOf(t.def) >= rank))
                     return true;
             return false;
         }
 
-        public static string LicenseTitleLabel(AndroidPolicyDef d)
+        public static string LicenseTitleLabel(AndroidPolicyDef d) => LicenseTitleLabel(d.licensor, d.licenseRank);
+
+        public static string LicenseTitleLabel(FactionDef licensor, int rank)
         {
-            FactionAllegianceDef alg = FactionAllegianceDef.For(d.licensor);
-            return alg != null && d.licenseRank >= 0 && d.licenseRank < alg.ranks.Count ? alg.ranks[d.licenseRank].title.label : "?";
+            FactionAllegianceDef alg = FactionAllegianceDef.For(licensor);
+            return alg != null && rank >= 0 && rank < alg.ranks.Count ? alg.ranks[rank].title.label : "?";
         }
 
         private static void Goodwill(FactionDef def, int amount)

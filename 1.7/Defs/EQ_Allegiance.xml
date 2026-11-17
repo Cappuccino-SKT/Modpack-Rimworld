@@ -26,6 +26,10 @@
   <EcosDaQueda.FactionAllegianceDef>
     <defName>EQ_Allegiance_Silencio</defName>
     <faction>EQ_Faction_Silencio</faction>
+    <!-- Bloco I (Insanity): pesquisar para a Ordem cobra sanidade; quem já perdeu pesquisa mais rápido. -->
+    <researchSanityDrainPerDay>0.06</researchSanityDrainPerDay>
+    <researchSpeedPerLostSanity>0.6</researchSpeedPerLostSanity>
+    <researchSanityLabel>Método do Silêncio</researchSanityLabel>
     <hostileIncidents>
       <li>ShamblerSwarm</li>
       <li>FleshbeastAttack</li>
@@ -52,6 +56,11 @@
         <type>ResearchFinished</type>
         <amount>1</amount>
         <label>publicação (pesquisa concluída)</label>
+      </li>
+      <li>
+        <type>PatronQuestCompleted</type>
+        <amount>2</amount>
+        <label>escavação de laboratório antigo para o Arquivo (missão concluída)</label>
       </li>
     </favorSources>
     <ranks>
@@ -317,6 +326,11 @@
         <amount>2</amount>
         <minQuality>Masterwork</minQuality>
         <label>obra-prima fabricada na colônia</label>
+      </li>
+      <li>
+        <type>PatronQuestCompleted</type>
+        <amount>2</amount>
+        <label>recall de drones ou recuperação de patente ARC (missão concluída)</label>
       </li>
     </favorSources>
     <ranks>
