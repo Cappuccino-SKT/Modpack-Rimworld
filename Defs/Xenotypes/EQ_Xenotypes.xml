@@ -928,4 +928,258 @@ O Reino do Lodo leu a ficha técnica como escritura e fez dela a sua lei. A brut
     </genes>
   </XenotypeDef>
 
+  <XenotypeDef>
+    <defName>EQ_Xeno_Fungobi</defName>
+    <label>fungobi</label>
+    <description>O que sobra de uma pessoa quando o micélio termina de se mudar para dentro dela. O Fungobi não dorme, não sente dor, não aprende nada e não para de andar na direção do barulho. Come carniça, vomita bile e cura feridas brotando cogumelo por cima delas. Não se reproduz: espalha-se mordendo, infectando os genes de quem chega perto demais.
+
+Ninguém sabe de onde veio o primeiro Fungobi. O Silêncio diz que foi um esporo de antes da Queda, a Hélice diz que foi um recall mal feito da concorrência e o Coro diz que foi castigo. Todos concordam num ponto: a pele deles vira fio do diabo, e fio do diabo vale ouro. Por isso nenhuma potência tem pressa de acabar com eles.</description>
+    <descriptionShort>Carcaça humana tomada por fungo: lenta, incansável, estéril e com uma pele que vale mais que o dono valia vivo.</descriptionShort>
+    <iconPath>UI/Icons/Xenotypes/Other</iconPath>
+    <inheritable>false</inheritable>
+    <factionlessGenerationWeight>0</factionlessGenerationWeight>
+    <genes>
+      <li MayRequire="vanillaracesexpanded.waster">VREW_PollutionRage</li>
+      <li MayRequire="vanillaracesexpanded.fungoid">VRE_GeneInfector</li>
+      <li MayRequire="vanillaracesexpanded.fungoid">VRE_RotBlood</li>
+      <li MayRequire="sarg.alphagenes">AG_PukeBile</li>
+      <li MayRequire="vanillaracesexpanded.fungoid">VRE_FungalFlesh</li>
+      <li MayRequire="sarg.alphagenes">EQ_Gene_PeleFioDoDiabo</li>
+      <li>StrongStomach</li>
+      <li>RobustDigestion</li>
+      <li MayRequire="sarg.alphagenes">AG_CorpseFeeding</li>
+      <li MayRequire="sarg.alphagenes">AG_EfficientMandibles</li>
+      <li MayRequire="sarg.alphagenes">AG_SurvivalInstinct_High</li>
+      <li>Superclotting</li>
+      <li MayRequire="vanillaracesexpanded.pigskin">VRE_ExtraMeat</li>
+      <li MayRequire="sarg.alphagenes">AG_ExtraLeather</li>
+      <li MayRequire="sarg.alphagenes">AG_Stinky</li>
+      <li MayRequire="sarg.alphagenes">AG_ExtraordinaryLifespan</li>
+      <li MayRequire="vanillaracesexpanded.fungoid">VRE_FungalRegeneration</li>
+      <li MayRequire="vanillaracesexpanded.fungoid">VRE_Telepathy</li>
+      <li>MoveSpeed_Slow</li>
+      <li>ToxResist_Total</li>
+      <li MayRequire="vanillaracesexpanded.fungoid">VRE_FungalArmor</li>
+      <li>Aggression_HyperAggressive</li>
+      <li>Neversleep</li>
+      <li MayRequire="sarg.alphagenes">AG_Painless</li>
+      <li>Sterile</li>
+      <li MayRequire="vanillaracesexpanded.fungoid">VRE_FungalCrest</li>
+      <li MayRequire="vanillaracesexpanded.fungoid">VRE_HairMushroom</li>
+      <li MayRequire="sarg.alphagenes">AG_Skin_Rot</li>
+      <li MayRequire="sarg.alphagenes">AG_FungalSprout</li>
+      <li MayRequire="vanillaracesexpanded.pigskin">VRE_Brave</li>
+      <li MayRequire="vanillaracesexpanded.waster">VRE_ToxAbsorption</li>
+      <li MayRequire="vanillaracesexpanded.fungoid">VRE_ExtremeSkillLoss</li>
+      <li MayRequire="vanillaracesexpanded.fungoid">VRE_NoStudy</li>
+      <li MayRequire="vanillaracesexpanded.lycanthrope">VRE_DodgeDisabled</li>
+      <li>AptitudePoor_Shooting</li>
+      <li>AptitudePoor_Construction</li>
+      <li>AptitudePoor_Mining</li>
+      <li>AptitudePoor_Cooking</li>
+      <li>AptitudePoor_Plants</li>
+      <li>AptitudePoor_Animals</li>
+      <li>AptitudeTerrible_Crafting</li>
+      <li>AptitudeTerrible_Artistic</li>
+      <li>AptitudeTerrible_Medicine</li>
+      <li>AptitudeTerrible_Social</li>
+      <li>AptitudeTerrible_Intellectual</li>
+    </genes>
+  </XenotypeDef>
+
+  <XenotypeDef>
+    <defName>EQ_Xeno_FungobiAtirador</defName>
+    <label>fungobi atirador</label>
+    <description>Uma variante em que o fungo, por algum capricho, preservou a memória muscular do tiro. O resto da pessoa se foi: não constrói, não cozinha, não conversa, mas acerta. Costuma aparecer em ruínas de postos de guarda, ainda de uniforme, ainda vigiando um portão que não existe mais.
+
+Ninguém sabe de onde veio o primeiro Fungobi. O Silêncio diz que foi um esporo de antes da Queda, a Hélice diz que foi um recall mal feito da concorrência e o Coro diz que foi castigo. Todos concordam num ponto: a pele deles vira fio do diabo, e fio do diabo vale ouro. Por isso nenhuma potência tem pressa de acabar com eles.</description>
+    <descriptionShort>Fungobi que ainda lembra de puxar o gatilho. Não lembra de mais nada, mas isso basta.</descriptionShort>
+    <iconPath>UI/Icons/Xenotypes/Other</iconPath>
+    <inheritable>false</inheritable>
+    <factionlessGenerationWeight>0</factionlessGenerationWeight>
+    <genes>
+      <li MayRequire="vanillaracesexpanded.waster">VREW_PollutionRage</li>
+      <li MayRequire="vanillaracesexpanded.fungoid">VRE_GeneInfector</li>
+      <li MayRequire="sarg.alphagenes">AG_GreaterAcidicVomit</li>
+      <li MayRequire="vanillaracesexpanded.fungoid">VRE_RotBlood</li>
+      <li MayRequire="sarg.alphagenes">AG_PukeBile</li>
+      <li MayRequire="vanillaracesexpanded.fungoid">VRE_FungalFlesh</li>
+      <li MayRequire="sarg.alphagenes">EQ_Gene_PeleFioDoDiabo</li>
+      <li>StrongStomach</li>
+      <li>RobustDigestion</li>
+      <li MayRequire="sarg.alphagenes">AG_CorpseFeeding</li>
+      <li MayRequire="sarg.alphagenes">AG_EfficientMandibles</li>
+      <li MayRequire="sarg.alphagenes">AG_SurvivalInstinct_High</li>
+      <li>Superclotting</li>
+      <li MayRequire="vanillaracesexpanded.pigskin">VRE_ExtraMeat</li>
+      <li MayRequire="sarg.alphagenes">AG_ExtraLeather</li>
+      <li MayRequire="sarg.alphagenes">AG_Stinky</li>
+      <li MayRequire="sarg.alphagenes">AG_ExtraordinaryLifespan</li>
+      <li MayRequire="vanillaracesexpanded.fungoid">VRE_FungalRegeneration</li>
+      <li MayRequire="vanillaracesexpanded.fungoid">VRE_Telepathy</li>
+      <li>MoveSpeed_Slow</li>
+      <li>ToxResist_Total</li>
+      <li MayRequire="vanillaracesexpanded.fungoid">VRE_FungalArmor</li>
+      <li>Aggression_HyperAggressive</li>
+      <li>Neversleep</li>
+      <li MayRequire="sarg.alphagenes">AG_Painless</li>
+      <li>Sterile</li>
+      <li MayRequire="vanillaracesexpanded.fungoid">VRE_FungalCrest</li>
+      <li MayRequire="vanillaracesexpanded.fungoid">VRE_HairMushroom</li>
+      <li MayRequire="sarg.alphagenes">AG_Skin_Rot</li>
+      <li MayRequire="sarg.alphagenes">AG_FungalSprout</li>
+      <li MayRequire="vanillaracesexpanded.pigskin">VRE_Brave</li>
+      <li MayRequire="sarg.alphagenes">AG_FungalTentacles</li>
+      <li MayRequire="sarg.alphagenes">AG_FungalClumps</li>
+      <li MayRequire="vanillaracesexpanded.waster">VRE_ToxAbsorption</li>
+      <li MayRequire="vanillaracesexpanded.fungoid">VRE_ExtremeSkillLoss</li>
+      <li MayRequire="vanillaracesexpanded.fungoid">VRE_NoStudy</li>
+      <li MayRequire="vanillaracesexpanded.lycanthrope">VRE_DodgeDisabled</li>
+      <li>AptitudeRemarkable_Shooting</li>
+      <li>AptitudeTerrible_Melee</li>
+      <li>AptitudeTerrible_Construction</li>
+      <li>AptitudeTerrible_Mining</li>
+      <li>AptitudeTerrible_Cooking</li>
+      <li>AptitudeTerrible_Plants</li>
+      <li>AptitudeTerrible_Animals</li>
+      <li>AptitudeTerrible_Crafting</li>
+      <li>AptitudeTerrible_Artistic</li>
+      <li>AptitudeTerrible_Medicine</li>
+      <li>AptitudeTerrible_Social</li>
+      <li>AptitudeTerrible_Intellectual</li>
+    </genes>
+  </XenotypeDef>
+
+  <XenotypeDef>
+    <defName>EQ_Xeno_FungobiAcido</defName>
+    <label>fungobi ácido</label>
+    <description>Um Fungobi cujo fungo fermentou por dentro. Respira névoa tóxica, é imune ao próprio ácido e, quando cai, estoura e espalha o que guardou. Os caçadores aprenderam a matá-lo de longe e a esperar a poça secar antes de colher a pele.
+
+Ninguém sabe de onde veio o primeiro Fungobi. O Silêncio diz que foi um esporo de antes da Queda, a Hélice diz que foi um recall mal feito da concorrência e o Coro diz que foi castigo. Todos concordam num ponto: a pele deles vira fio do diabo, e fio do diabo vale ouro. Por isso nenhuma potência tem pressa de acabar com eles.</description>
+    <descriptionShort>Fungobi inchado de ácido: hálito tóxico e uma última surpresa quando morre.</descriptionShort>
+    <iconPath>UI/Icons/Xenotypes/Other</iconPath>
+    <inheritable>false</inheritable>
+    <factionlessGenerationWeight>0</factionlessGenerationWeight>
+    <genes>
+      <li MayRequire="vanillaracesexpanded.waster">VREW_PollutionRage</li>
+      <li MayRequire="vanillaracesexpanded.fungoid">VRE_GeneInfector</li>
+      <li MayRequire="sarg.alphagenes">AG_AcidicDetonation</li>
+      <li MayRequire="sarg.alphagenes">AG_NoxiousBreath</li>
+      <li MayRequire="vanillaracesexpanded.fungoid">VRE_RotBlood</li>
+      <li MayRequire="sarg.alphagenes">AG_PukeBile</li>
+      <li MayRequire="vanillaracesexpanded.fungoid">VRE_FungalFlesh</li>
+      <li MayRequire="sarg.alphagenes">EQ_Gene_PeleFioDoDiabo</li>
+      <li>StrongStomach</li>
+      <li>RobustDigestion</li>
+      <li MayRequire="sarg.alphagenes">AG_CorpseFeeding</li>
+      <li MayRequire="sarg.alphagenes">AG_EfficientMandibles</li>
+      <li MayRequire="sarg.alphagenes">AG_SurvivalInstinct_High</li>
+      <li>Superclotting</li>
+      <li MayRequire="vanillaracesexpanded.pigskin">VRE_ExtraMeat</li>
+      <li MayRequire="sarg.alphagenes">AG_ExtraLeather</li>
+      <li MayRequire="sarg.alphagenes">AG_Stinky</li>
+      <li MayRequire="sarg.alphagenes">AG_AcidImmunity</li>
+      <li MayRequire="sarg.alphagenes">AG_ExtraordinaryLifespan</li>
+      <li MayRequire="vanillaracesexpanded.fungoid">VRE_Telepathy</li>
+      <li>MoveSpeed_Slow</li>
+      <li>ToxResist_Total</li>
+      <li MayRequire="vanillaracesexpanded.fungoid">VRE_FungalArmor</li>
+      <li>Aggression_HyperAggressive</li>
+      <li>Neversleep</li>
+      <li MayRequire="sarg.alphagenes">AG_Painless</li>
+      <li>Sterile</li>
+      <li MayRequire="vanillaracesexpanded.fungoid">VRE_FungalCrest</li>
+      <li MayRequire="vanillaracesexpanded.fungoid">VRE_HairMushroom</li>
+      <li MayRequire="sarg.alphagenes">AG_Skin_Rot</li>
+      <li MayRequire="sarg.alphagenes">AG_FungalSprout</li>
+      <li MayRequire="vanillaracesexpanded.pigskin">VRE_Brave</li>
+      <li MayRequire="sarg.alphagenes">AG_FungalClumps</li>
+      <li MayRequire="vanillaracesexpanded.waster">VRE_ToxAbsorption</li>
+      <li MayRequire="vanillaracesexpanded.fungoid">VRE_ExtremeSkillLoss</li>
+      <li MayRequire="vanillaracesexpanded.fungoid">VRE_NoStudy</li>
+      <li MayRequire="vanillaracesexpanded.lycanthrope">VRE_DodgeDisabled</li>
+      <li>AptitudePoor_Melee</li>
+      <li>AptitudePoor_Construction</li>
+      <li>AptitudePoor_Mining</li>
+      <li>AptitudePoor_Cooking</li>
+      <li>AptitudePoor_Plants</li>
+      <li>AptitudePoor_Animals</li>
+      <li>AptitudeTerrible_Crafting</li>
+      <li>AptitudeTerrible_Artistic</li>
+      <li>AptitudeTerrible_Medicine</li>
+      <li>AptitudeTerrible_Social</li>
+      <li>AptitudeTerrible_Intellectual</li>
+    </genes>
+  </XenotypeDef>
+
+  <XenotypeDef>
+    <defName>EQ_Xeno_FungobiLider</defName>
+    <label>fungobi alfa</label>
+    <description>Quando um Fungobi dura tempo demais, o fungo engrossa: músculos de micélio, garras, tentáculos e uma pele que chega a brilhar. O corpo é instável e vai se desmanchar sozinho um dia, mas até lá ele puxa os outros como um capataz puxa uma fila. Os caçadores pagam dobrado pela pele dele e triplicado pela coragem de quem for buscá-la.
+
+Ninguém sabe de onde veio o primeiro Fungobi. O Silêncio diz que foi um esporo de antes da Queda, a Hélice diz que foi um recall mal feito da concorrência e o Coro diz que foi castigo. Todos concordam num ponto: a pele deles vira fio do diabo, e fio do diabo vale ouro. Por isso nenhuma potência tem pressa de acabar com eles.</description>
+    <descriptionShort>O Fungobi mais antigo do bando: forte, rápido, cheio de tentáculos e prestes a se desfazer.</descriptionShort>
+    <iconPath>UI/Icons/Xenotypes/Other</iconPath>
+    <inheritable>false</inheritable>
+    <factionlessGenerationWeight>0</factionlessGenerationWeight>
+    <genes>
+      <li MayRequire="vanillaracesexpanded.waster">VREW_PollutionRage</li>
+      <li MayRequire="sarg.alphagenes">AlphaGenes_FungalStrength</li>
+      <li MayRequire="sarg.alphagenes">AlphaGenes_FungalSpeed</li>
+      <li MayRequire="sarg.alphagenes">AG_HeatImmunity</li>
+      <li MayRequire="vanillaracesexpanded.fungoid">VRE_GeneInfector</li>
+      <li MayRequire="vanillaracesexpanded.fungoid">VRE_RotBlood</li>
+      <li MayRequire="sarg.alphagenes">AG_PukeBile</li>
+      <li MayRequire="sarg.alphagenes">AG_MagicMushroomFlesh</li>
+      <li MayRequire="sarg.alphagenes">EQ_Gene_PeleFioDoDiabo</li>
+      <li>StrongStomach</li>
+      <li>RobustDigestion</li>
+      <li MayRequire="sarg.alphagenes">AG_CorpseFeeding</li>
+      <li MayRequire="sarg.alphagenes">AG_EfficientMandibles</li>
+      <li MayRequire="sarg.alphagenes">AG_SurvivalInstinct_High</li>
+      <li>Superclotting</li>
+      <li MayRequire="vanillaracesexpanded.pigskin">VRE_ExtraMeat</li>
+      <li MayRequire="sarg.alphagenes">AG_ExtraLeather</li>
+      <li MayRequire="sarg.alphagenes">AG_Stinky</li>
+      <li MayRequire="sarg.alphagenes">AG_ExtraordinaryLifespan</li>
+      <li MayRequire="vanillaracesexpanded.fungoid">VRE_FungalRegeneration</li>
+      <li MayRequire="sarg.alphagenes">AG_FungalSkin</li>
+      <li MayRequire="vanillaracesexpanded.fungoid">VRE_Telepathy</li>
+      <li>MoveSpeed_Slow</li>
+      <li>ToxResist_Total</li>
+      <li MayRequire="vanillaracesexpanded.fungoid">VRE_FungalArmor</li>
+      <li>Aggression_HyperAggressive</li>
+      <li>MeleeDamage_Strong</li>
+      <li>Neversleep</li>
+      <li MayRequire="sarg.alphagenes">AG_Painless</li>
+      <li>Sterile</li>
+      <li MayRequire="vanillaracesexpanded.fungoid">VRE_Repulsive</li>
+      <li MayRequire="vanillaracesexpanded.fungoid">VRE_FungalCrest</li>
+      <li MayRequire="vanillaracesexpanded.fungoid">VRE_HairMushroom</li>
+      <li MayRequire="sarg.alphagenes">AG_Skin_Rot</li>
+      <li MayRequire="sarg.alphagenes">AG_FungalSprout</li>
+      <li MayRequire="vanillaracesexpanded.pigskin">VRE_Brave</li>
+      <li MayRequire="sarg.alphagenes">AG_FungalTentacles</li>
+      <li MayRequire="sarg.alphagenes">AG_FungalClumps</li>
+      <li MayRequire="sarg.alphagenes">AG_Instability_Lethal</li>
+      <li MayRequire="vanillaracesexpanded.sanguophage">VRE_Talons</li>
+      <li MayRequire="vanillaracesexpanded.waster">VRE_ToxAbsorption</li>
+      <li MayRequire="vanillaracesexpanded.fungoid">VRE_ExtremeSkillLoss</li>
+      <li MayRequire="vanillaracesexpanded.fungoid">VRE_NoStudy</li>
+      <li MayRequire="vanillaracesexpanded.lycanthrope">VRE_DodgeDisabled</li>
+      <li>AptitudeTerrible_Shooting</li>
+      <li MayRequire="vanillaracesexpanded.genie">VRE_AptitudePhenomenal_Melee</li>
+      <li>AptitudeTerrible_Construction</li>
+      <li>AptitudeTerrible_Mining</li>
+      <li>AptitudeTerrible_Cooking</li>
+      <li>AptitudeTerrible_Plants</li>
+      <li>AptitudeTerrible_Animals</li>
+      <li>AptitudeTerrible_Crafting</li>
+      <li>AptitudeTerrible_Artistic</li>
+      <li>AptitudeTerrible_Medicine</li>
+      <li>AptitudeTerrible_Social</li>
+      <li>AptitudeTerrible_Intellectual</li>
+    </genes>
+  </XenotypeDef>
+
 </Defs>

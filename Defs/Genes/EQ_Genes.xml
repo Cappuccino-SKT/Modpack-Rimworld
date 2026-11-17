@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <!-- Couro de fio do diabo: mesmo mecanismo do couro de pano do Alpha Genes (VEF GeneExtension.customLeatherThingDef).
+       Usado pelos Fungobi (zumbis do mundo): caçar zumbi tem que dar lucro. -->
+  <GeneDef ParentName="AG_LeatherTypeBase" MayRequire="sarg.alphagenes">
+    <defName>EQ_Gene_PeleFioDoDiabo</defName>
+    <label>pele de fio do diabo</label>
+    <description>Portadores deste gene rendem fio do diabo quando abatidos. O micélio que tomou a pele tece as mesmas fibras do cogumelo do diabo, só que andando, gemendo e querendo te morder.\n\nNenhuma potência admite ter criado o gene. Todas mantêm uma tabela de preço por carcaça.</description>
+    <iconPath>UI/Icons/Genes/AG_Leather_Cloth</iconPath>
+    <iconColor>(0.70, 0.22, 0.18)</iconColor>
+    <biostatCpx>3</biostatCpx>
+    <biostatMet>-1</biostatMet>
+    <selectionWeight>0</selectionWeight>
+    <displayOrderInCategory>2</displayOrderInCategory>
+    <modExtensions>
+      <li Class="VEF.Genes.GeneExtension">
+        <backgroundPathEndogenes>UI/Icons/Genes/AG_Endogenes</backgroundPathEndogenes>
+        <backgroundPathXenogenes>UI/Icons/Genes/AG_Xenogenes</backgroundPathXenogenes>
+        <customLeatherThingDef>DevilstrandCloth</customLeatherThingDef>
+      </li>
+    </modExtensions>
+  </GeneDef>
+
+</Defs>
