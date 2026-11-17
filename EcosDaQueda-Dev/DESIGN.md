@@ -119,6 +119,8 @@ Não são potências: sem ideologia fixa, cargos, Fama/Infâmia própria nem ser
 
 **Ideologias das menores:** Fora de Linha = O Protocolo Zero; Não Catalogados = A Carne sem Verbete; Feira Andante = **A Liquidação Eterna** (tudo tem preço, quem para de rodar começa a dever; vende órgão como vende repolho); Sindicato do Saque = **O Dissídio Coletivo** (saque é negociação coletiva, contribuição sindical em água, fumo e dedos).
 
+**Sucata e bichos (implementado):** o Sindicato vive do lixão. Os filiados voltam do saque com lixo compactado e tijolos de lixo; cobradores, delegados e o presidente trazem pacotes químicos, isotópicos e de liga do Vanilla Recycling (a "contribuição sindical", que cai como saque). Um em cada sete ataques é um **piquete com bichos**: javalis, toxirraposas, toxiguanas e às vezes um toxileão criados a resto de saque. O Reino do Lodo tem o **estouro do chiqueiro** (javalis e búfalos de lixão, que comem o mesmo que os brutos) e as caravanas dele trazem esses bichos como carga. A Feira compra até lixo. Traços de cargo (Vanilla Traits): cobrador cleptomaníaco ("taxa de serviço"), delegado rebelde (não aceita patrão, só presidente), presidente magnata; arquivista-mor acadêmico, diretor da Hélice magnata, engenheiro-primaz viciado em trabalho, maestro esnobe. Fica para depois: sucata como fonte de tecnologia (etapa 3).
+
 **Insetos (implementado):** a colmeia sem recall é produto da Hélice, que nega a patente. Toda colmeia ou toca de inseto destruída pelo jogador conta como "recall executado": +2 de Fama na Hélice e, se ela for a potência do líder, 1 de favor a cada 2 colmeias. A loja e a caravana da Hélice vendem núcleos de colmeia (pherocores do VFE Insectoids 2, com que se faz colmeia artificial), quitina e geleia de inseto, e compram os núcleos de volta. Fica para depois: missão de recolhimento própria (o VFE Insectoids 2 já tem a missão de oportunidade de atacar colmeia) e genes de inseto do VRE Insector como mercadoria.
 
 **Medieval (implementado):** os Não Catalogados lutam com o que arrancam das ruínas: mangual, maça, machado de arremesso (extraviados), arco de guerra, besta, arcabuz e canhão de mão (olheiros), machado dinamarquês, alabarda, pique (dilaceradores) e montante (primeiro espécime). O Coro é a corte do vinho: estipêndio com vinho a partir de solista, dízimo pagável em vinho e o serviço **torneio de corte** (300 de prata + 20 de vinho → humor da colônia, favor e Fama; "juiz sóbrio dá nota baixa").
@@ -249,10 +251,12 @@ Por cargo: preços com a potência +0/3/5/8/10/13/15%; estipêndio a cada 10 dia
 
 | Potência | Serviço 1 | Serviço 2 |
 |---|---|---|
-| Silêncio | **Contrato de contenção** (posto 1; entrega uma entidade presa em plataforma → 1 fragmento, 40 bioferrite, 300 prata, +20 Fama; recarga 5 d) | **Consulta ao Arquivo** (posto 2; 400 prata → +1500 na pesquisa atual; 12 d) |
+| Silêncio | **Contrato de contenção** (posto 1; entrega uma entidade presa em plataforma → 1 fragmento, 40 bioferrite, 300 prata, +20 Fama; recarga 5 d) | **Consulta ao Arquivo** (posto 2; 400 prata → +1500 na pesquisa atual, e o colono mais estudado perde 15% de sanidade; 12 d) |
 | Hélice | **Encomendar o Soro** (posto 2; 900 prata → 1 Soro; 15 d) | **Check-up premium** (posto 3; 1000 prata → soro mecanita curador; 30 d) |
 | Forja | **Acionar a garantia** (posto 2; 300 prata → reforço militar com mechs; 12 d) | **Kit de peças originais** (posto 3; 800 prata → 3 componentes avançados + 60 plastaço; 20 d) |
 | Coro | **Serenata** (posto 1; 250 prata → +10 de humor para todos por 6 dias; 15 d) | **Coro de guerra** (posto 3; 500 prata → reforço militar com psíquicos; 15 d) |
+
+**Sanidade (Insanity) como moeda do Silêncio:** terceiro serviço, **retiro de silêncio** (posto 1; 350 prata → +50% de sanidade ao colono mais abalado, que fica 5 dias sem voz: "a Ordem guarda a fala como caução"; 10 d). Membros do Silêncio pagam a pesquisa em sanidade (6% por dia de pesquisa a 100% de velocidade) e o "Método do Silêncio" acelera quem já perdeu (até +60% com sanidade 0): a Ordem pesquisa rápido porque enlouquece, e enlouquece porque pesquisa.
 
 **O Soro** (`EQ_Soro`): item de uso único; aplica um xeno do catálogo da Hélice (Modelo Base, Edição Compliance, Protótipo Premium, Edição Executiva) por cima do padrão de quem toma. 25% de chance de "versão alternativa": o Lote Descontinuado, que é hereditário e reescreve a linhagem.
 

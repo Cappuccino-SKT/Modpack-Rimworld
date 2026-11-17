@@ -1,0 +1,18 @@
+# Bloco M: veículos (Vehicle Framework + VVE). Rodar com -Profile full.
+# Blindado (categoria Combat) montado sem o cargo cavaleiro da garantia da Forja = pirataria (Forja -10);
+# transporte não conta; com o cargo = registrado. Títulos de posse: Feira entrega usado (peças gastas, tanque baixo);
+# o blindado da Forja só com o cargo.
+newgame
+timeout 900
+start
+leader set 0
+vehicle status
+vehicle build VVE_Dirtbike
+vehicle build VVE_Highwayman
+vehicle title EQ_TituloLataVelha
+vehicle title EQ_TituloSeminovo
+vehicle title EQ_TituloBlindado
+psy title 4 forja
+vehicle build VVE_Bulldog
+vehicle title EQ_TituloBlindado
+wait 1h

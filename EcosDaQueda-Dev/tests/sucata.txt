@@ -1,0 +1,18 @@
+# Bloco L: sucata e bichos. Rodar com -Profile full.
+# Sindicato: carga de reciclagem no inventário e traços do VTE; líderes das potências com traço próprio.
+# Ataques do Sindicato e do Reino do Lodo com bichos de lixão (VAE Waste Animals); Feira compra lixo.
+newgame
+timeout 900
+pawngen fac:sindicatodosaque 20
+pawngen EQ_Silencio_Arquivista 5
+pawngen EQ_Helice_Diretor 5
+pawngen EQ_Forja_Primaz 5
+pawngen EQ_Coro_Maestro 5
+raid sindicatodosaque 1500
+raid sindicatodosaque 800 bichos
+raid sindicatodosaque 1500 bichos
+raid reinodolodo 1500 bichos
+wait 2h
+raid reinodolodo 300
+trader EQ_Base_Feira Trash
+trader EQ_Caravan_Feira Trash

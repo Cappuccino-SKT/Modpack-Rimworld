@@ -42,6 +42,8 @@
 
 ## PawnKinds
 
+- Traço forçado: `<forcedTraits><li MayRequire="..."><def>VTE_X</def></li></forcedTraits>` (`List<TraitRequirement>`). Inventário extra sem herdar o `skipChance` 0,9 dos mercenários: `<inventoryOptions Inherit="False"><subOptionsTakeAll>` com um `skipChance` por item (bloco L).
+- Animais em grupo de combate de facção humana: o motor aceita (`RaidStrategyWorker.CanUsePawnGenOption` só exige um humano no grupo); vêm com lorde e dever de ataque. A chave de `options` (`PawnGenOption`) **não** lê `MayRequire`: pôr o grupo inteiro em `<li MayRequire="...">` (bloco L: VAE Waste Animals no Sindicato e no Reino do Lodo).
 - Bases vanilla usadas: `MercenaryMidTierBase`, `MercenaryEliteBase`, `MercenaryEliteTierBase`, `UnderthrallBase` (Horaxian, Anomaly), `MechanitorBase` (Biotech).
 - **`ParentName` usa o atributo `Name`, não o defName** (ex.: `MechanitorBase`, não `Mechanitor`).
 - Psíquicos via VPE:
@@ -88,6 +90,19 @@
 - `1.7/Defs/EQ_Bases.xml` (tudo com `MayRequire="EvilEyeGuy.CustomBaseFramework"`): `EQ_Plan_Silencio/Helice/Forja/Coro` com `factionTags` = a nossa FactionDef, o que tira a potência dos planos genéricos do CBF. Prédios por etiqueta `CBF_Vanilla_*` (lista de categorias com peças: contar `<categories>` nos `PieceDef` do CBF; `CBF_Vanilla_GiantTurret` só existe com o mod da torre imperial, não usar). Garagem/pátio de veículos com `MayRequire` do VVE.
 - **Defensores** (decompilado de `Defenders.Populate`): com `wealthFactor` > 0 o CBF usa orçamento por riqueza (`GarrisonBudget`); põe primeiro as nossas listas `EQ_Garrison_*` (`PawnListDef`, papéis Guard/Sentry/Civilian) e completa com o grupo `Settlement` da facção. `defenderPoints` só vale fora desse modo. O número varia com a riqueza sorteada.
 - Teste: `Angriffsvorschau.Plan(Settlement)` dá o plano que a base vai usar.
+
+## Missões com patrono e drones (bloco F)
+
+- `Source/EcosDaQueda/Missions.cs` + `1.7/Defs/EQ_Missions.xml`. `QuestPatronDef`: `faction`, `quests`/`majorQuests` (defNames em texto, os mods são opcionais), `fame`/`majorFame`, `messageText` ({FACTION}, {QUEST}). Prefixo+postfix em `Quest.End`: só conta a passagem de Ongoing para EndedSuccess. Fama por `WorldComponent_Reputation.Record`; favor por `EQFavor.Notify(PatronQuestCompleted)` **só se** a patrona for a potência do líder (o Notify sozinho dispararia para qualquer potência com essa fonte).
+- As missões dos VQE pedem "qualquer líder de facção" (no nosso mundo, uma das nossas) e a Drone Factory usa facção pirata como dona do sítio; não mexemos nisso.
+- `DronePolicyDef`: postfix em `VanillaQuestsExpandedDroneFactory.CompDroneHatcher.Hatch` (sempre gera drone do jogador e destrói o item; o prefixo guarda posição/mapa). Licença = `EQAndroids.HasLicense(licensor, rank)` (mesma regra dos androides). A boa vontade -3 vira -4 pelo sistema de reputação.
+- Início: `Patches/EQ_Scenario_Abrigo.xml` (FindMod pelo nome) põe `VanillaQuestsExpandedAncients.ScenPart_SealedVault` no começo das partes do "Saídos do abrigo" e tira a `ScenPart_PlayerPawnsArriveMethod` (o ScenPart do abrigo já põe colonos e itens iniciais lá dentro e define `PlayerStartSpot`). Com o The Generator, +5 `VQE_GenetronComponent`.
+
+## Veículos (bloco M)
+
+- `Source/EcosDaQueda/Vehicles.cs` + `1.7/Defs/EQ_Vehicles.xml`. Tudo por reflexão (`EQVehicles.Apply`); sem o Vehicle Framework fica inerte.
+- `VehiclePolicyDef` (Forja, `licenseRank` 3 = cavaleiro da garantia, -10): prefixo **com `HarmonyPriority(Priority.First)`** + postfix em `Frame.CompleteConstruction`. O prefixo do VF devolve false e pula os prefixos seguintes; sem a prioridade o nosso não roda. Só conta veículo da categoria `Combat` (flag 4) montado por colono.
+- O VF deixa desligados ataques de NPC com veículos e comércio de veículos (ver `mods/frameworks/vehicle-framework.md`). Por isso: **títulos de posse** (`CompUseEffect_VehicleTitle`: lista de defNames, `componentHealth`, `fuel`, `requiresLicense`) que viram o veículo ao usar (`VehicleSpawner.SpawnVehicleRandomized` + `CellFinderExtended.RandomClosewalkCellNear`; desgaste por `VehicleComponent.SetHealth` e `CompFueledTravel.ConsumeFuel`). Feira: lata-velha (base e caravana) e seminovo (base); Forja: blindado registrado (base, exige o cargo). Defs dos títulos com `MayRequire` do VVE (textura `CarParts` dele).
 
 ## A colmeia sem recall (insetos)
 

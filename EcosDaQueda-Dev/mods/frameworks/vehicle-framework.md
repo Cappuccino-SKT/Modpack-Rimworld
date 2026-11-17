@@ -84,6 +84,8 @@ Texturas: `Graphic_Vehicle` procura `_north`, `_east`, `_south`, `_west` (e diag
 
 ## Veículos em ataques de NPCs (importante para o Ecos)
 
+**Desligado na versão oficial (conferido 2026-11-17, bloco M):** `Vehicles.Config.FeatureFlags` liga as features `Raiders`, `Paratroopers`, `Fishing` e `TradeableVehicles` só nas builds Debug/Unstable, e `Patch_NpcAi.PatchMethods()` está vazio. Ou seja, **NPCs não usam veículos em ataques e traders não vendem veículos** (o `StockGenerator_Vehicles` existe, mas o comércio de veículo não está ligado). O texto abaixo vale só se o framework ligar isso no futuro.
+
 Decompilado de `Vehicles.RaidInjectionHelper.ValidRaiderVehicle`: um veículo entra num ataque de facção se
 
 1. `type` = `Land`; 2. `vehicleCategory` inclui `Combat`; 3. `combatPower` ≤ pontos do ataque; 4. `techLevel` da facção ≥ `techLevel` do veículo; 5. `enabled` inclui `Raiders`; 6. tem `npcProperties` (mesmo vazio); 7. se tiver `raidParams`, a facção e o modo de chegada estão na lista (`factions`, `arrivalModes`).

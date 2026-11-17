@@ -33,6 +33,8 @@
 - **`exactPrecepts` não remove preceitos invisíveis** (`!def.visible`): são rituais internos do jogo (julgamento, execução pública, nascimento, troca de função, discurso do trono, gravinave…). Removê-los gera "A hidden ritual precept was missing, adding: …" ao carregar.
 - Guerras do Hegemony são um registro próprio (`DiplomacyLedger`), separado da hostilidade vanilla; não declaramos guerras pela API (ainda).
 
+- **Sanidade (bloco I, `Sanity.cs`)**: `EQSanity` acha `NeedDef VAEI_Sanity` e, por reflexão, `Need_Sanity.GainSanity(float, string, bool)` (registro, mensagem, loucura ao chegar a 0) e o campo `records`. O `Utils.SanityGainContinuously` do mod **só atualiza o registro**, não o nível: o nosso `GainContinuously` aplica o valor e soma no último registro de mesmo motivo. Pesquisa: **prefix** em `ResearchManager.ResearchPerformed` (o método reescreve o parâmetro `amount` × 0,00825 antes do fim; um postfix lê o valor já reduzido), perda = `researchSanityDrainPerDay × amount / 60000`; `StatPart_EQSanityResearch` posta em `StatDefOf.ResearchSpeed.parts` no startup (só com o mod). Serviços: `sanityCost` (colono com mais Intelectual), `sanityRestore` + `restoreHediff` (colono com menor sanidade abaixo de 95%), `requiresMod` (some do menu sem o mod).
+
 ## Mod de debug — `Mods/EcosDaQuedaDebug` (`ecosdaqueda.debug`)
 
 - `Source/EcosDaQueda.Debug.csproj` → `1.7/Assemblies/EcosDaQueda.Debug.dll` (referencia EcosDaQueda.dll e 0Harmony; compilar por último).

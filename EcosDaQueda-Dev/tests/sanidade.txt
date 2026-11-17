@@ -1,0 +1,25 @@
+# Bloco I: sanidade (Vanilla Anomaly Expanded - Insanity) como custo dos serviços e da pesquisa do Silêncio. Rodar com -Profile full.
+# Sem lealdade: pesquisar não cobra sanidade.
+newgame
+timeout 600
+sanity
+sanity research 1
+leader set 0
+join silencio
+wait 1h
+psy title 1 silencio
+services
+# Retiro bloqueado (todos sãos); com sanidade baixa, devolve +50% e tira a voz.
+service EQ_Service_Silencio_Retiro
+give Silver 2000
+sanity set 0.3
+sanity
+service EQ_Service_Silencio_Retiro
+sanity
+# Pesquisa para a Ordem: com 30% de sanidade, +42% de velocidade e perde sanidade.
+sanity research 1
+# Consulta ao Arquivo (3º cargo): o mais estudado perde 15%.
+psy title 3 silencio
+sanity set 0.8
+service EQ_Service_Silencio_Arquivo
+sanity

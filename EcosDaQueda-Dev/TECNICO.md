@@ -8,9 +8,10 @@ Ler **só o arquivo do assunto da tarefa**. Nota nova vai no arquivo do assunto 
 |---|---|---|
 | `tecnico/codigo.md` | Código C# e mod de debug | C#; Mod de debug; Fase 2 |
 | `tecnico/traducao.md` | Tradução PT-BR | Tradução PT-BR |
-| `tecnico/faccoes.md` | Facções, ideologias, unidades, Hegemony e cerimônia | Ícones e cores próprios; Facções; Ideologias fixas por arquivo; Facções menores; PawnKinds; Hegemony; Cerimônia de outorga e nível psíquico |
+| `tecnico/faccoes.md` | Facções, ideologias, unidades, Hegemony e cerimônia | Ícones e cores próprios; Facções; Ideologias fixas por arquivo; Facções menores; PawnKinds; Hegemony; Cerimônia de outorga e nível psíquico; Missões com patrono e drones (bloco F); Veículos (bloco M) |
 | `tecnico/xenotipos.md` | Xenotipos | Xenotipos próprios; Xenotipos de terceiros disponíveis |
 | `tecnico/inicio.md` | Início de jogo (cenários, xenos, narrador) | Início de jogo |
+| `tecnico/mundo.md` | Mapa-mundi: marcos (bloco N) | Marcos do mundo |
 | `tecnico/arsenal-comercio.md` | Arsenal, guarda-roupa e comércio por facção | Tags de armas úteis; Arsenal por facção; Comércio por facção |
 
 ## Documentação dos mods do modpack

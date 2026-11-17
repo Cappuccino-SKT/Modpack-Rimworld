@@ -1,0 +1,27 @@
+# Bloco F: missões dos VQE (Ancients, Drone Factory, The Generator). Rodar com -Profile full.
+# "Saídos do abrigo" começa dentro do abrigo selado (VQE Ancients), com peças de gerador ARC.
+# Missão concluída: Fama na patrona (Silêncio: Ancients; Forja: drones e ARC) e favor se for a potência do líder.
+# Drone chocado sem o cargo técnico licenciado da Forja = pirataria (Forja -3).
+newgame EQ_Scenario_Abrigo
+timeout 900
+start
+count VQEA_AncientVaultWall
+count VQEA_LockedVaultDoor
+count VQEA_AncientLaboratoryCasket
+count VQE_GenetronComponent
+count Gun_BoltActionRifle
+leader set 0
+patron VQE_AncientLabComplex
+patron VQE_ArchiteArraySite
+patron VQE_DroneScrapyard
+patron VQE_DroneFactory
+patron VQE_InventorShelter
+patron VQE_ArcSite
+join silencio
+wait 1h
+patron VQE_InhibitorResearchLab
+patron VQE_DroneStockpile
+drone
+drone
+psy title 2 forja
+drone
