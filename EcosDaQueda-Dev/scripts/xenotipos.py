@@ -7,6 +7,9 @@ Cada gene ganha MayRequire="<packageId>" do mod que o define (achado varrendo Mo
 Xeno não hereditário com "bases" ganha doubleXenotypeChances: o jogo sorteia o padrão (endogenes)
 e aplica o xeno por cima (xenogenes), como faz com o Sanguófago.
 
+"trocarGenes" (por xeno) troca um gene do .xtp por outro; "genesEQ" (topo) lista genes nossos com o
+packageId que eles exigem (vira MayRequire).
+
 Uso (na raiz do jogo):  python -X utf8 -I EcosDaQueda-Dev/scripts/xenotipos.py [--genes]
   --genes  lista os genes de cada xeno com o rótulo em inglês (para conferir descrições).
 """
@@ -105,6 +108,8 @@ def main():
            "<Defs>"]
     for x in meta["xenotipos"]:
         lista, icon_def = (x["genes"], x.get("icon", "Basic")) if "genes" in x else ler_xtp(x["xtp"])
+        troca = x.get("trocarGenes", {})
+        lista = [troca.get(g, g) for g in lista]
         out.append("")
         out.append("  <XenotypeDef>")
         out.append(f"    <defName>{x['defName']}</defName>")
@@ -125,7 +130,10 @@ def main():
         if listar:
             print(f"## {x['label']} ({x['defName']})")
         for g in lista:
-            pid, label = achar_gene(genes, g)
+            if g in meta.get("genesEQ", {}):
+                pid, label = meta["genesEQ"][g], "(gene do Ecos da Queda)"
+            else:
+                pid, label = achar_gene(genes, g)
             if pid is None:
                 faltando.append(f"{x['defName']}: {g}")
             if listar:

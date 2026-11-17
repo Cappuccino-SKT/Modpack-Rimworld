@@ -262,6 +262,53 @@
       "combatPowerFactor": 1.0,
       "descriptionShort": "Fêmea do Reino do Lodo: menor, fértil, de gestação rápida e mais esperta na poluição. A Hélice a projetou como \"unidade de reposição\".",
       "description": "Na ficha técnica da Linha Robusta, a fêmea constava como \"unidade de reposição\": menor, mais frágil, fértil e de gestação rápida, para o lote se repor sozinho no chão de fábrica. A Hélice achou a solução elegante.\n\nO Reino do Lodo leu a ficha técnica como escritura e fez dela a sua lei. A bruta tem as presas, a pele verde e a resistência a toxinas da linhagem; na poluição pensa mais rápido e trabalha mais, e não serve para a briga. Ela sabe exatamente o que a ficha técnica diz sobre ela. Também sabe ler, o que os brutos ainda não descobriram."
+    },
+    {
+      "xtp": "Fungobi",
+      "defName": "EQ_Xeno_Fungobi",
+      "label": "fungobi",
+      "inheritable": false,
+      "trocarGenes": {
+        "AG_ClothLeather": "EQ_Gene_PeleFioDoDiabo"
+      },
+      "descriptionShort": "Carcaça humana tomada por fungo: lenta, incansável, estéril e com uma pele que vale mais que o dono valia vivo.",
+      "description": "O que sobra de uma pessoa quando o micélio termina de se mudar para dentro dela. O Fungobi não dorme, não sente dor, não aprende nada e não para de andar na direção do barulho. Come carniça, vomita bile e cura feridas brotando cogumelo por cima delas. Não se reproduz: espalha-se mordendo, infectando os genes de quem chega perto demais.\n\nNinguém sabe de onde veio o primeiro Fungobi. O Silêncio diz que foi um esporo de antes da Queda, a Hélice diz que foi um recall mal feito da concorrência e o Coro diz que foi castigo. Todos concordam num ponto: a pele deles vira fio do diabo, e fio do diabo vale ouro. Por isso nenhuma potência tem pressa de acabar com eles."
+    },
+    {
+      "xtp": "Fungobi Atirador",
+      "defName": "EQ_Xeno_FungobiAtirador",
+      "label": "fungobi atirador",
+      "inheritable": false,
+      "trocarGenes": {
+        "AG_ClothLeather": "EQ_Gene_PeleFioDoDiabo"
+      },
+      "descriptionShort": "Fungobi que ainda lembra de puxar o gatilho. Não lembra de mais nada, mas isso basta.",
+      "description": "Uma variante em que o fungo, por algum capricho, preservou a memória muscular do tiro. O resto da pessoa se foi: não constrói, não cozinha, não conversa, mas acerta. Costuma aparecer em ruínas de postos de guarda, ainda de uniforme, ainda vigiando um portão que não existe mais.\n\nNinguém sabe de onde veio o primeiro Fungobi. O Silêncio diz que foi um esporo de antes da Queda, a Hélice diz que foi um recall mal feito da concorrência e o Coro diz que foi castigo. Todos concordam num ponto: a pele deles vira fio do diabo, e fio do diabo vale ouro. Por isso nenhuma potência tem pressa de acabar com eles."
+    },
+    {
+      "xtp": "Fungobi acido",
+      "defName": "EQ_Xeno_FungobiAcido",
+      "label": "fungobi ácido",
+      "inheritable": false,
+      "trocarGenes": {
+        "AG_ClothLeather": "EQ_Gene_PeleFioDoDiabo"
+      },
+      "descriptionShort": "Fungobi inchado de ácido: hálito tóxico e uma última surpresa quando morre.",
+      "description": "Um Fungobi cujo fungo fermentou por dentro. Respira névoa tóxica, é imune ao próprio ácido e, quando cai, estoura e espalha o que guardou. Os caçadores aprenderam a matá-lo de longe e a esperar a poça secar antes de colher a pele.\n\nNinguém sabe de onde veio o primeiro Fungobi. O Silêncio diz que foi um esporo de antes da Queda, a Hélice diz que foi um recall mal feito da concorrência e o Coro diz que foi castigo. Todos concordam num ponto: a pele deles vira fio do diabo, e fio do diabo vale ouro. Por isso nenhuma potência tem pressa de acabar com eles."
+    },
+    {
+      "xtp": "Fungobi Lider",
+      "defName": "EQ_Xeno_FungobiLider",
+      "label": "fungobi alfa",
+      "inheritable": false,
+      "trocarGenes": {
+        "AG_ClothLeather": "EQ_Gene_PeleFioDoDiabo"
+      },
+      "descriptionShort": "O Fungobi mais antigo do bando: forte, rápido, cheio de tentáculos e prestes a se desfazer.",
+      "description": "Quando um Fungobi dura tempo demais, o fungo engrossa: músculos de micélio, garras, tentáculos e uma pele que chega a brilhar. O corpo é instável e vai se desmanchar sozinho um dia, mas até lá ele puxa os outros como um capataz puxa uma fila. Os caçadores pagam dobrado pela pele dele e triplicado pela coragem de quem for buscá-la.\n\nNinguém sabe de onde veio o primeiro Fungobi. O Silêncio diz que foi um esporo de antes da Queda, a Hélice diz que foi um recall mal feito da concorrência e o Coro diz que foi castigo. Todos concordam num ponto: a pele deles vira fio do diabo, e fio do diabo vale ouro. Por isso nenhuma potência tem pressa de acabar com eles."
     }
-  ]
+  ],
+  "genesEQ": {
+    "EQ_Gene_PeleFioDoDiabo": "sarg.alphagenes"
+  }
 }

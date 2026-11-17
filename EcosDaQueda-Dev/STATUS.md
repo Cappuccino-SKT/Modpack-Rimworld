@@ -2,20 +2,23 @@
 
 _Só o estado atual e os próximos passos. Manter curto (até ~60 linhas). Detalhe do que já foi feito: `HISTORICO.md` (buscar, não ler inteiro)._
 
-## Onde estamos (2026-11-16)
+## Onde estamos (2026-11-17)
 
 - **Base pronta e testada:** 4 potências (Silêncio, Hélice, Forja, Coro) e 5 facções menores (Fora de Linha, Não Catalogados, Feira Andante, Sindicato do Saque, **Reino do Lodo**: mutantes medievais, xenos Bruto/Bruta e ideologia "A Esteira Sagrada" do usuário), todas com ideologia do usuário (`.rid`), xenotipos próprios, relações fixas, Fama/Infâmia, cerimônia de submissão, líder e 7 cargos por potência.
 - **Mundo só com as nossas facções** (sem Império/Desertores); Hegemony é a camada de estratégia.
 - **Plano em etapas:** `PLANO.md`. Etapa 1 (travas do início: xenos, cenários, narrador provisório) feita. **Etapa 2 em andamento:** feitos arsenal por facção (A), armadura-caixão da Forja (C), guarda-roupa e comércio por facção, **psycasts do Coro por cargo (G)**, **questão androide (H)**, **permissões por cargo (B)**, **bases por potência (K)**, **medieval (D)** e **insetos (E)**: toda colmeia destruída pelo jogador é um "recall" (Fama na Hélice e favor se o líder for vassalo dela); a Hélice vende núcleos de colmeia (pherocores), quitina e geleia, e compra os núcleos de volta. No D, arsenal próprio dos Não Catalogados com armas do VFE Medieval 2; o Coro recebe vinho no estipêndio, aceita vinho no dízimo e tem o serviço "torneio de corte" (prata + vinho). No K, plano próprio do Custom Base Framework para cada potência (arquivo-bunker, filial da Hélice, forja-fábrica, corte do Coro) com guarnição nossa. No B, 25 permissões da Royalty (6–7 por potência: entregas, trabalhadores, ajuda militar com as nossas unidades, recall orbital da Forja, liteira do Coro), 1 ponto por cargo, uso pago com favor. No H, fabricar sem o cargo técnico licenciado da Forja é pirataria (Infâmia); androide desperto na colônia dá Infâmia na Forja e boa vontade nos Fora de Linha. No G, cada cargo licencia um caminho do VPE (Protetor → … → Arconte → Hemosage); sem o cargo o colono não destrava, a cerimônia dá de graça, perder o cargo revoga.
+- **Fungobi (zumbis do mundo):** 4 xenos do usuário (`EQ_Xeno_Fungobi`, `FungobiAtirador`, `FungobiAcido`, `FungobiLider`), estéreis, sem facção; gene próprio `EQ_Gene_PeleFioDoDiabo` (carneado rende ~94 fio do diabo, no lugar do couro de pano do Alpha Genes). Ainda **não aparecem no jogo**: vão para eventos e cidades destruídas (etapa 5).
 - **Vassalagem:** só o Coro dá nível psíquico; a Forja dá vínculo mecanoide.
 
 ## Próximo passo
 
 Blocos da etapa 2 ainda abertos, na ordem sugerida: F, I, L, M, N, O (etapa 2); depois a etapa 3 (tecnologia licenciada). A escolha do próximo bloco é do usuário.
 
+Perguntar também: o usuário criou 3 xenos de inseto (`Inseto Rainha`, `Inseto Soldado`, `Inseto Trabalhador` em `Xenotypes/` do perfil, 2026-11-16) ainda não copiados para `xenotipos/xtp/`; a que facção ou evento pertencem? (Talvez bloco E/O.)
+
 ## Não commitado
 
-Character Creator no modpack e facção Reino do Lodo (mutantes). Blocos G, H, B, K, D, E e a tradução do VFE Medieval 2 já estão no GitHub.
+Nada: tudo no GitHub (último: Reino do Lodo, Character Creator e Fungobi).
 
 ## Como testar
 
@@ -25,9 +28,8 @@ Character Creator no modpack e facção Reino do Lodo (mutantes). Blocos G, H, B
 ## Pendências técnicas
 
 - Bases: o grupo de assentamento de cada potência tem o líder com peso 1, então bases ricas saem com vários líderes (ex.: 4 engenheiros-primazes); baixar ou tirar o líder do grupo `Settlement`. O número de defensores varia com a riqueza sorteada da base (orçamento do CBF).
-- **Character Creator** (`astryl.ModernCC`, instalado em 2026-11-16): editor completo de personagens, inclusive genes, na criação de colonos e com F12 a qualquer hora. Contorna a trava de xenos da etapa 1 (que cobre a tela do jogo e o Prepare Carefully). Decidir: aceitar como ferramenta do jogador ou travar a aba de genes na criação.
+- **Character Creator** (`astryl.ModernCC`, 2026-11-16) é **temporário**: o usuário o usa para montar as roupas das facções. Tirar do modpack quando ele avisar (contorna a trava de xenos da etapa 1; não travar).
 - Reino do Lodo: as brutas saem sem roupa (orçamento baixo + preceito de nudez feminina obrigatória da ideologia); bases medievais com poucos defensores humanos (orçamento do CBF).
-- Fungobi (4 xenos do usuário em `Xenotypes/`, fúngicos e estéreis): ainda não usados; perguntar a que facção pertencem.
 - Executor: o `RESULTADO` não conta erros de **carregamento de Defs** (ex.: referência cruzada não resolvida); eles só aparecem na lista ERROR/WARN do resumo. Conferir essa lista ou fazer o executor contar.
 - Perfil lean do executor quebrado (ampliar ou aposentar).
 - `xenogen` marca os androides dos Fora de Linha como PROBLEMA (`faccoes-menores`, 80; às vezes 1 aldeão androide em `faccoes-menores2`) e a regressão conta `problemas=0` como falha: ajustar as duas checagens.

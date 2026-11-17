@@ -1,0 +1,10 @@
+# Fungobi (zumbis do mundo): pele de fio do diabo em vez de pano. Rodar com -Profile full (Alpha Genes / VRE Fungoid).
+newgame
+deftext GeneDef EQ_Gene_PeleFioDoDiabo
+deftext XenotypeDef EQ_Xeno_Fungobi
+leather EQ_Xeno_Fungobi
+leather EQ_Xeno_FungobiAtirador
+leather EQ_Xeno_FungobiAcido
+leather EQ_Xeno_FungobiLider
+leather EQ_Xeno_Vagante
+quit

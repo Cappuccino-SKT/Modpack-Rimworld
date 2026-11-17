@@ -17,3 +17,5 @@ As potências usam **só xenotipos nossos** (`EQ_Xeno_*`); os do jogo e dos mods
 Vanilla: Baseliner, Dirtmole, Genie, Hussar, Sanguophage, Neanderthal, Pigskin, Impid, Waster, Yttakin, Highmate, Starjack.
 Alpha Genes: AG_Fleetkind, AG_Helixien, AG_Animusen, AG_Lapis, AG_Wretch, AG_Taukai, AG_Hiveling, AG_MindDevourer, AG_Efreet, AG_Drakonori, AG_Nereid, AG_Forsaken.
 VRE: VRESaurids_Saurid, VREH_Uhlan, VRE_Poluxkin, VRE_Strigoi, VRE_Ekkimian, VRE_Bruxa, VREA_AndroidAwakened, VREA_AndroidBasic, VRE_Lowmate, VRE_Fungoid, VRE_Wolfman, VRE_Lycan, VRE_Boarskin, VRE_Insector, VRE_Ocularkin, AG_Mycormorph, AG_Malachai.
+
+- **Gene próprio e troca de gene:** `xenotipos.json` aceita `trocarGenes` por xeno (troca um gene do `.xtp` por outro) e `genesEQ` no topo (gene nosso → packageId exigido, vira `MayRequire`). Usado nos Fungobi: `AG_ClothLeather` → `EQ_Gene_PeleFioDoDiabo` (`Defs/Genes/EQ_Genes.xml`, filho de `AG_LeatherTypeBase`; a classe da extensão no 1.6+ é `VEF.Genes.GeneExtension`, não `VanillaGenesExpanded.GeneExtension`).

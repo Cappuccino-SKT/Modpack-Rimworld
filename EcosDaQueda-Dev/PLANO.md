@@ -112,6 +112,7 @@ Ideia central: num mundo pós-apocalíptico ninguém "inventa" do zero; **recupe
 
 - Eventos por potência, disparados por reputação, cargo e guerras do Hegemony (ex.: auditoria da Hélice, inspeção de garantia da Forja, turnê do Coro, chamada de artigos do Silêncio).
 - **Fase 2 das facções menores:** Exposição dos Fora de Linha contra a Forja, sabotagem, expedições de coleta do Silêncio nos ninhos, greve do Sindicato (trégua temporária), liquidação da Feira.
+- **Fungobi** (zumbis do mundo, xenos `EQ_Xeno_Fungobi*` prontos, sem facção): hordas em eventos e moradores de cidades destruídas; a pele rende fio do diabo, então caçar zumbi dá lucro.
 - Eventos de mundo sem dono: tempestade de cinzas, abrigo que se abre, comboio perdido, recall mecanoide.
 - Reaproveitar os eventos e missões dos mods (VQE, Anomaly, Insectoids) com texto e gatilho nossos.
 

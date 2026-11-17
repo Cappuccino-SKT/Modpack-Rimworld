@@ -102,6 +102,7 @@ Com o modo desenvolvedor ligado (Opções), o menu de debug ganha a categoria **
 - `newgame [ScenarioDef] [StorytellerDef]`: sem argumentos usa Crashlanded + Cassandra (como antes).
 - `start`: narradores e cenários visíveis/ocultos, cenário e narrador em uso, xenos permitidos, xenos dos colonos, e o menu de xenotipos depois do filtro. Testes `tests/inicio.txt`, `tests/inicio-forja.txt`.
 - `modusage [todos|<packageId>]`: por mod, quantos defs dele as nossas facções usam (unidades, armas e roupas por etiqueta, estoque de comércio, genes, memes, preceitos) e quanto conteúdo ele tem. Teste `tests/modusage.txt`.
+- `leather <XenotypeDef>`: gera um pawn com o xeno, mata, carneia e lista o que rendeu (e os genes de couro). Teste `tests/fungobi.txt`.
 - `tests/reino-lodo.txt`: facção, xenos (`xenogen`), armas (`kit`), ataques de 300 e 1500 pontos e a base medieval (`base`). `tests/ideo.txt` agora inclui o Reino do Lodo.
 - `hive [ThingDef]` ; `hive nature [ThingDef]`: cria a colmeia (padrão `Hive`) e a mata com um colono como autor (ou sem autor, que não deve contar); mostra Fama da Hélice, favor do líder e o total de colmeias destruídas. Teste `tests/insetos.txt`.
 - `trader <TraderKindDef> <filtro>`: além do resumo, lista os itens do estoque cujo defName contém o filtro.
