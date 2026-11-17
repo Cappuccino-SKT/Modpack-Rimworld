@@ -7,7 +7,7 @@
 #   regress.ps1 -Long                (inclui mundo.txt, 15 dias de jogo, ~20 min)
 # Relatórios completos em tests\out\<teste>.txt.full.result.txt.
 param(
-    [string[]]$Tests = @('ideo', 'cerimonia-helice', 'cerimonia-forja', 'cerimonia-coro', 'psy-coro', 'androides', 'permissoes', 'bases', 'medieval', 'insetos', 'missoes', 'sanidade', 'reino-lodo', 'colmeia', 'sucata', 'veiculos', 'marcos', 'genes', 'pesquisa', 'fungobi', 'inicio', 'inicio-forja', 'arsenal', 'arsenal-forja',
+    [string[]]$Tests = @('ideo', 'cerimonia-helice', 'cerimonia-forja', 'cerimonia-coro', 'psy-coro', 'androides', 'permissoes', 'bases', 'medieval', 'insetos', 'missoes', 'sanidade', 'reino-lodo', 'colmeia', 'sucata', 'veiculos', 'marcos', 'genes', 'pesquisa', 'licencas', 'fungobi', 'inicio', 'inicio-forja', 'arsenal', 'arsenal-forja',
                          'comercio', 'faccoes-menores', 'faccoes-menores2', 'xenotipos', 'fase3'),
     [switch]$Build,
     [switch]$Long

@@ -12,13 +12,13 @@ _Só o estado atual e os próximos passos. Manter curto (até ~60 linhas). Detal
 
 ## Próximo passo
 
-**Etapa 3 (tecnologia própria)**: decisões e classificação aprovadas (`PLANO.md` › Etapa 3; `tecnico/pesquisa-classificacao.md`). **3a feito** (2026-11-17): árvore em 6 abas próprias (Bancada 119, Velho Mundo 21, Silêncio 52, Hélice 35, Forja 45, Coro 7), trava fora da bancada; o acesso hoje **só existe por debug** (`tech grant`), então num jogo real tudo fora da bancada está fechado até o 3b. **Próximo: bloco 3b (licenças por cargo e compra com favor).** Roteiro completo do que falta (~25 blocos): `PLANO.md` › Roteiro.
+**Etapa 3 (tecnologia própria)**: decisões e classificação aprovadas (`PLANO.md` › Etapa 3; `tecnico/pesquisa-classificacao.md`). **3a feito**: árvore em 6 abas próprias, trava fora da bancada. **3b feito** (2026-11-17): o cargo licencia os projetos do ramo da potência por nível (medieval 1º cargo, industrial 2º, Anomalia 3º, espacial 4º, ultra 6º); membros compram as licenças de cima com favor (botão "Licenças" na aba Reputação; valem enquanto for membro); a licença abre a pesquisa e dispensa techprints; fabricar ou construir com projeto de potência sem licença é pirataria (boa vontade -4, uma vez por dia por potência). Num jogo real, Velho Mundo e as patentes das potências de que você não é membro seguem fechados até o 3c/3d. **Próximo: bloco 3c (engenharia reversa).** Roteiro completo do que falta: `PLANO.md` › Roteiro.
 
 **A Colmeia Erguida** (2026-11-17): facção menor neolítica com os 3 xenos de inseto do usuário (rainha líder, soldado, operário; + batedor com arco), 12 vilas no mundo, teste `colmeia`. **Provisório:** ideologia sorteada "O Enxame (provisória)" e descrição curta. **Aguardando o usuário montar a ideologia** (`.rid`); depois: ligar em `EQ_IdeoTemplates.xml`, escrever a história (DESIGN, descrições), relações fixas e parte horrível.
 
 ## Não commitado
 
-Nada (commits de 2026-11-17: mod `c67f541`, debug `8c072a0`, raiz `99b4b5d` + roteiro `ab13e14`), com push feito nas 3 branches.
+Bloco 3b: mod (`Licenses.cs`, `Research.cs`, `MainTabWindow_Reputation.cs`, `EQ_Research.xml`), debug (`EQDebug.cs`) e raiz (docs, `tests/licencas.txt`, `regress.ps1`).
 
 ## Como testar
 
@@ -35,6 +35,7 @@ Nada (commits de 2026-11-17: mod `c67f541`, debug `8c072a0`, raiz `99b4b5d` + ro
 - `xenogen` marca os androides dos Fora de Linha como PROBLEMA (`faccoes-menores`, 80; às vezes 1 aldeão androide em `faccoes-menores2`) e a regressão conta `problemas=0` como falha: ajustar as duas checagens.
 - **Intermitente, investigar:** `Faction <potência> contains ideo <ideologia> which was removed!` junto de `Error while notifying ideos of a HistoryEvent` (Alpha Memes, pawn morto de velhice na geração). Apareceu 2 vezes em ~25 rodadas em 2026-11-16 e de novo em `ideo` na regressão de 2026-11-17 (bloco L; repetido, passou) (`insetos` com o Coro, `cerimonia-forja` com a Hélice); repetindo os mesmos testes, some. Não vem da tradução (sem "Bad string pass" no log) nem do nosso código de ideologia (ele só copia o `.rid`, não remove). Em `fase3` reapareceu o intermitente do Vanilla Ideology Expanded (`Invalid pawn assigned to <cargo> role`).
 - **Novo, intermitente (2026-11-17, `faccoes-menores`):** Não Catalogado com gene de explosão de carne do Alpha Genes (`HediffComp_MeatBurst`) morre de velhice na geração (`xenogen`) e tenta soltar um Fingerspike em mapa nulo (5 erros, Vehicle Framework no meio). Não vem do bloco F. Saída: impedir morte na geração ou pular o MeatBurst sem mapa.
+- **Intermitente em `sucata` (2026-11-17, regressão do 3b):** `ran out of path nodes while pathing to Thing_HumanN` (busca de caminho vanilla); repetido, passou. A ideologia removida voltou em `cerimonia-helice` na mesma regressão.
 - **Intermitente em `cerimonia-helice` (2026-11-17, regressão do bloco M):** `JobDriver_BestowingCeremony` lança exceção no initAction do toil 2; repetido, passou. Investigar se voltar.
 - **Intermitente em `arsenal-forja` (2026-11-17):** missão vanilla de pedintes (`QuestPart_BegForItems`/`PawnsArrivalModeWorker_EdgeWalkIn`) sem célula de entrada → "spawn out of bounds"; noutra rodada, `Error in GenStep` (NRE). Nada passa pelo nosso código.
 - Erros de terceiros não resolvidos: Warbolter ao largar arma; `Invalid pawn assigned to Bloodletter otherworldly role` (Vanilla Ideology Expanded, intermitente em `fase3`); causa raiz da falha de `Book.GenerateBook` (hoje só contornada).
@@ -46,6 +47,7 @@ Nada (commits de 2026-11-17: mod `c67f541`, debug `8c072a0`, raiz `99b4b5d` + ro
 
 ## A conferir pelo usuário (só visual)
 
+- Etapa 3b: botão "Licenças" na aba Reputação (4 botões menores à direita), janela de licenças (filtro, "Comprar (N)", estado), motivo da trava na pesquisa ("exige o cargo de …") e a mensagem de pirataria ao fabricar.
 - Etapa 3a: tela de pesquisa (YART) com as 6 abas, posições, motivo da trava ("Patente da Forja: exige licença…") e a linha "Ramo:" na descrição.
 
 - Início de jogo com o modo desenvolvedor **desligado**: menu de xenos, cenários e narrador; Prepare Carefully.
