@@ -182,7 +182,45 @@ namespace EcosDaQueda.DebugTools
                     sb.Append("antes=" + (before?.defName ?? "-") + " depois=" + (after?.defName ?? "-") + " progresso=" + prog.ToString("0.0") + "->" + (before == null ? 0 : Find.ResearchManager.GetProgress(before)).ToString("0.0"));
                     break;
                 }
-                default: return "uso: tech status|try|grant|revoke|finish|current|work";
+                case "license":
+                {
+                    var p = P();
+                    sb.Append(p.defName + " ramo=" + EQResearch.Branch(p)?.defName + " nivel=" + p.techLevel + " cargo_exigido=" + EQLicenses.RequiredRank(p) + "(" + EQLicenses.RequiredTitleLabel(p) + ")"
+                        + " licenca=" + EQLicenses.LicenseSource(p) + " preco=" + EQLicenses.FavorPrice(p) + " compra=" + (EQLicenses.CannotBuyReason(p) ?? "ok")
+                        + " acesso=" + EQResearch.HasAccess(p) + " techprints_ok=" + p.TechprintRequirementMet + " pode_comecar=" + p.CanStartNow);
+                    break;
+                }
+                case "buy":
+                {
+                    var alg = WorldComponent_Allegiance.Current;
+                    int before = alg?.Favor ?? -1;
+                    bool ok = EQLicenses.TryBuy(P(), out string res);
+                    sb.Append("compra=" + ok + " favor=" + before + "->" + (alg?.Favor ?? -1) + " " + res);
+                    break;
+                }
+                case "licenses":
+                {
+                    foreach (var g in EQResearch.BranchOf.Where(kv => kv.Value.faction != null && !kv.Value.free).GroupBy(kv => kv.Value).OrderBy(g => g.Key.order))
+                        sb.AppendLine("ramo " + g.Key.defName + ": total=" + g.Count() + " por_cargo=" + string.Join(",", g.GroupBy(kv => EQLicenses.RequiredRank(kv.Key)).OrderBy(x => x.Key).Select(x => x.Key + ":" + x.Count()))
+                            + " licenciados=" + g.Count(kv => EQLicenses.IsLicensed(kv.Key)) + " comprados=" + g.Count(kv => EQLicenses.LicenseSource(kv.Key) == EQLicenses.Source.Purchased)
+                            + " preco_min=" + g.Min(kv => EQLicenses.FavorPrice(kv.Key)) + " preco_max=" + g.Max(kv => EQLicenses.FavorPrice(kv.Key))
+                            + " techprint_projetos=" + g.Count(kv => kv.Key.TechprintCount > 0) + " techprint_ok=" + g.Count(kv => kv.Key.TechprintCount > 0 && kv.Key.TechprintRequirementMet));
+                    break;
+                }
+                case "craft":
+                {
+                    // Simula o fim de uma conta de produção (recipe) ou de uma construção (ThingDef): mesma rotina dos patches.
+                    var rec = DefDatabase<RecipeDef>.GetNamedSilentFail(arg);
+                    var thing = rec == null ? DefDatabase<ThingDef>.GetNamedSilentFail(arg) : null;
+                    var prereqs = rec != null ? EQLicenses.RecipePrereqs(rec).ToList() : thing?.researchPrerequisites ?? new List<ResearchProjectDef>();
+                    Faction gw = null;
+                    var hit = EQLicenses.OnMade(prereqs, rec?.ProducedThingDef?.label ?? thing?.label ?? arg, GlobalTargetInfo.Invalid);
+                    if (hit != null) gw = EQUtil.MainFaction(hit);
+                    sb.Append("item=" + arg + " prereqs=" + string.Join(",", prereqs.Select(r => r.defName)) + " pirataria=" + (hit?.defName ?? "nao")
+                        + (gw != null ? " boa_vontade=" + gw.PlayerGoodwill : ""));
+                    break;
+                }
+                default: return "uso: tech status|try|grant|revoke|finish|current|work|license|buy|licenses|craft";
             }
             return sb.ToString().TrimEnd();
         }
