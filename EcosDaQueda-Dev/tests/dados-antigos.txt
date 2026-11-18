@@ -1,0 +1,17 @@
+# Bloco 3d: dados antigos (manual técnico e disco do Velho Mundo: libera o projeto, % do custo, teto de 99% sem pré-requisitos, Infâmia por patente, geração perto de marcadores). Rodar com -Profile full.
+newgame
+timeout 900
+tech datapool
+tech data EQ_ManualTecnico
+tech data EQ_DiscoVelhoMundo
+tech try PrecisionRifling
+tech data EQ_ManualTecnico:PrecisionRifling
+tech try PrecisionRifling
+tech data EQ_ManualTecnico:PrecisionRifling
+tech data EQ_ManualTecnico:PrecisionRifling
+tech data EQ_DiscoVelhoMundo:PoweredArmor
+tech finish Electricity
+tech data EQ_ManualTecnico:Electricity
+tech dataspawn VQEA_StorageShelf_Meals:2
+tech dataspawn AncientCryptosleepCasket:1
+tech reverse Apparel_ShieldBelt

@@ -1,0 +1,26 @@
+# Etapa 5a: eventos por potência (auditoria da Hélice, garantia da Forja, turnê do Coro, chamada de artigos do Silêncio). Rodar com -Profile full.
+newgame
+timeout 900
+give Silver 2000
+events
+event EQ_Evento_Coro_Turne
+rep coro add 0 0
+choose Turnê 0
+rep coro add 0 0
+count Silver
+event EQ_Evento_Forja_Garantia
+event EQ_Evento_Helice_Auditoria
+tech current Electricity
+event EQ_Evento_Silencio_Artigos
+choose artigos 2
+rep silencio add 0 0
+give EQ_ManualTecnico 1
+event EQ_Evento_Silencio_Artigos
+choose artigos 0
+count EQ_ManualTecnico
+rep silencio add 0 0
+# ignorar a carta até o prazo = recusa
+event EQ_Evento_Coro_Turne
+wait 3d
+rep coro add 0 0
+events

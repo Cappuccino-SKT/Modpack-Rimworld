@@ -4,6 +4,7 @@ Lista completa de mods e ordem: [`../../modpack/mods.md`](../../modpack/mods.md)
 
 ## Estrutura
 
+- `compat-1.7.md` — quais mods ainda não declaram 1.7 e o que já foi corrigido.
 - `frameworks/` — guias detalhados de frameworks e bibliotecas (como usar no nosso mod).
 - `api/` — referência **gerada** de cada DLL de framework (Defs, DefModExtensions, Comps, PatchOperations, Workers, com campos). Regenerar: descompilar com `scripts/decompile.ps1 -Dll <dll> -Out %TEMP%\decomp\<Nome>` e rodar `python -X utf8 -I scripts/mods-api.py %TEMP%\decomp\<Nome> "<título>" mods/api/<Nome>.md`.
 - Inventário bruto de todos os mods (descrição, DLLs, tipos de Def, patches): `python -X utf8 -I scripts/mods-inventario.py . saida.json` na raiz do jogo.

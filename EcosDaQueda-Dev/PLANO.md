@@ -9,13 +9,14 @@ _Criado em 2026-11-15 a partir da lista do usuário. Cada etapa termina com test
 | 0 | Ideologias da Feira e do Sindicato; vassalagem sem nível psíquico indevido | feito | — |
 | 1 | Travas: só os nossos xenos na criação, cenários próprios, narradores de fora ocultos | **feito** | — |
 | 2 | Utilidade para os mods Vanilla Expanded de conteúdo | **feito** | 1 (auditoria) |
-| 3 | Sistema de tecnologia próprio (sucata, dados antigos, licenças das potências) | grande (3a, 3b feitos) | 2 (saber o que cada potência "possui") |
+| 3 | Sistema de tecnologia próprio (sucata, dados antigos, licenças das potências) | **feito** (3a–3e) | 2 (saber o que cada potência "possui") |
 | 4 | Utilidade para os outros mods | médio | 2, 3 |
 | 5 | Eventos do mundo + missões das facções menores | grande | 2, 3 |
 | 6 | Narrador próprio | médio | 5 (ele agenda os eventos) |
 | 7 | Qualidade de vida no estilo HSK | médio | independente |
 | 8 | Pendências antigas | pequeno | independente |
 | 9 | Polimento, balanceamento e lançamento | médio | todas |
+| 10 | Estratégia, desempenho e mundo fixo (lista do usuário de 2026-11-17) | grande | 3 (fecha a tecnologia); 10a mede antes de mexer |
 
 ## Roteiro do que falta (revisto em 2026-11-17)
 
@@ -24,28 +25,28 @@ Um bloco por sessão. Estimativa: **~25 blocos**. Ordem recomendada (cada linha 
 **Etapa 3 — tecnologia (4 blocos).** Hoje tudo fora da bancada fica fechado num jogo real, então esta etapa vem primeiro.
 1. ~~**3b Licenças**~~ (feito): cada cargo das 4 potências licencia projetos do ramo dela; compra de projeto com favor na aba Reputação (preço por custo/nível); licença perdida = pirataria ao fabricar (Infâmia, como drones/androides); solução para techprints (a potência vende ou a licença dispensa).
 2. ~~**3c Engenharia reversa**~~ (feito): bancada própria (arte do Vanilla Recycling); desmontar item dá 15–30% do projeto que o fabrica; patente de potência sem licença dá Infâmia.
-3. **3d Dados antigos:** discos/manuais em abrigos do VQE Ancients, ruínas, marcos nossos (bloco N) e no estoque da Feira; liberam ou aceleram um projeto do Velho Mundo ou de potência.
-4. **3e Fechamento:** móveis e energia por licença (pendente do bloco K), **dízimo tecnológico** da Forja (entregar tecnologia por mechs/veículos), balanço dos custos, teste de campanha curta.
+3. ~~**3d Dados antigos**~~ (feito): manual técnico e disco do Velho Mundo em abrigos do VQE Ancients, ruínas, marcos nossos e na Feira; liberam o projeto e dão 40–50%.
+4. ~~**3e Fechamento**~~ (feito, 2026-11-18): **dízimo tecnológico** da Forja (1 dado antigo + 4 componentes → mech de trabalho, cargo 2; 2 dados + 1 componente espacial → título de veículo seminovo, cargo 3); auditoria `tech buildaudit`: dos 59 prédios espaciais construíveis, **0 escapam** da trava (todos já pedem projeto de ramo de potência), então móveis e energia não precisaram de patch. Ficam para o jogo do usuário: balanço dos custos e campanha curta ✱.
 
 **Etapa 8 — pendências técnicas (1 bloco, pode vir antes, entre etapas).**
-5. Executor: contar erros de carregamento de Defs no `RESULTADO`, consertar a checagem `problemas=0`/androides, aposentar o perfil lean; bases com vários líderes; intermitentes (ideologia removida, MeatBurst do Alpha Genes, cerimônia da Hélice).
+5. ~~Executor: erros de carregamento no `RESULTADO`, `problemas=0`/androides; bases com vários líderes~~ (feitos em 2026-11-18). Falta: aposentar o perfil lean; intermitentes (ideologia removida, MeatBurst do Alpha Genes, cerimônia da Hélice); a volta ao menu que trava no modo lote.
 
 **Etapa 5 — eventos do mundo (7 blocos).**
-6. **5a Eventos por potência:** auditoria da Hélice, inspeção de garantia da Forja, turnê do Coro, chamada de artigos do Silêncio (gatilhos: reputação, cargo, guerras do Hegemony).
+6. ~~**5a Eventos por potência**~~ (feito, 2026-11-18, `PowerEvents.cs`; falta o gatilho por guerras do Hegemony, que fica para o 10d): auditoria da Hélice, inspeção de garantia da Forja, turnê do Coro, chamada de artigos do Silêncio (gatilhos: reputação, cargo, guerras do Hegemony).
 7. **5b Fora de Linha, fase 2:** Exposição perante a Forja, dados de diagnóstico como moeda, sabotagem, serviços da rede, trair a célula; recall do androide desperto.
 8. **5c Não Catalogados, fase 2:** expedições de coleta do Silêncio contra os ninhos, contrato de contenção com Não Catalogados, defesa/resgate, contra-ataque de entidades.
-9. **5d Fungobi:** hordas e cidades destruídas com moradores zumbis.
+9. ~~**5d Fungobi**~~ (feito, 2026-11-18, `Fungobi.cs`): facção oculta sempre hostil, horda (incidente de ameaça grande, dia 12+) e ruínas de assentamentos destruídos com moradores Fungobi (70%).
 10. **5e Facções menores:** greve do Sindicato (trégua), liquidação da Feira, missão de recolhimento de colmeia (Hélice), ataques do Reino do Lodo por "matéria-prima".
-11. **5f Eventos sem dono:** tempestade de cinzas, abrigo que se abre, comboio perdido, recall mecanoide.
+11. ~~**5f Eventos sem dono**~~ (feito, 2026-11-18, `WorldEvents.cs`): tempestade de cinzas, abrigo que se abre, comboio perdido (o Sindicato às vezes vem buscar), recall mecanoide.
 12. **5g Missões dos mods com texto nosso:** quem pede (potência em vez de "qualquer líder"), tradução dos VQE.
 
 **Colmeia Erguida (1 bloco) ✱** — assim que o usuário entregar a ideologia (`.rid`).
 13. Ligar a ideologia, história, relações fixas, parte horrível, descrição.
 
 **Etapa 4 — outros mods (3 blocos).**
-14. **4a Mercados:** órgãos (Harvest Organs) na Feira e na Hélice; sementes (SeedsPlease) como mercadoria e dízimo; água (Dubs) como poder do Sindicato e exigência de cargo do Coro.
+14. ~~**4a Mercados**~~ (feito, 2026-11-18): órgãos já eram vendidos (Hélice, Feira e outros); sementes na Feira (loja e caravana) e no dízimo do Coro (tipo `Category`). **Água ficou de fora:** a garrafa do Dubs só existe com a sede ligada, e ela está desligada no modpack (decidir ✱ se liga a sede).
 15. **4b Mundo:** Alpha Biomes como zonas da Queda com recurso exclusivo para tecnologia; Trenches e Layered Walls nos cercos; Rimesis ✱ (ligar ao Silêncio como campeões nêmesis ou remover).
-16. **4c Rituais:** Custom Ritual Framework e Blessed Conception com rituais próprios das nossas ideologias.
+16. ~~**4c Rituais**~~ (feito em parte, 2026-11-18, `RitualOutcomes.cs`): 4 resultados anexáveis de ritual, um por potência (fama, favor, boa vontade e itens). Falta: rituais completos próprios das ideologias das potências pelo Custom Ritual Framework (só fazem sentido para quem joga com essas ideologias ✱) e Blessed Conception.
 
 **Etapa 6 — narrador (2 blocos) ✱** (variações a decidir; retrato precisa de arte).
 17. **6a Narrador principal:** ameaça pela reputação com cada potência, Sindicato no começo, fim de jogo segurado até ter cargo ou tecnologia; maldições do VFE Pirates como dificuldade.
@@ -53,6 +54,8 @@ Um bloco por sessão. Estimativa: **~25 blocos**. Ordem recomendada (cada linha 
 
 **Etapa 7 — qualidade de vida estilo HSK (2 blocos) ✱** (escolher o que vale).
 19–20. Preferir mods prontos para 1.7 e CE; o resto por patch nosso.
+
+**Etapa 10 — estratégia, desempenho e mundo fixo (~9 blocos; lista do usuário de 2026-11-17).** Detalhe na seção da Etapa 10. Ordem sugerida: 10a logo depois do 3e; 10b antes da Etapa 5 (os eventos usam o mundo); 10c–10e junto ou logo depois da 5a (guerras); 10f por último, antes da Etapa 9.
 
 **Etapa 9 — polimento e lançamento (4–5 blocos).**
 21. **Balanceamento:** preços e quantidades do comércio, laser/bobina no CE, cavaleiro lacrado, custos da pesquisa.
@@ -153,7 +156,7 @@ Ideia central: num mundo pós-apocalíptico ninguém "inventa" do zero; **recupe
 - **3a — Trava e árvore: feito (2026-11-17).** 6 abas próprias (a Anomaly fica na dela), trava fora da bancada com motivo (vanilla e YART), pesquisa atual sem acesso para sozinha. Tech Advancing só mexe no custo; YART e Clean Research Sort refazem o layout e respeitam a trava.
 - **3b — Licenças: feito (2026-11-17).** Cargo mínimo por nível tecnológico (medieval 1º cargo, industrial 2º, Anomaly 3º, espacial 4º, ultra 6º; exceções no XML); membros compram licenças acima do cargo com favor (botão "Licenças" na aba Reputação; vale enquanto for membro); licença dá acesso e **dispensa techprints**; fabricar/construir com projeto de potência sem licença = pirataria (boa vontade -4, 1×/dia por potência). Não-membros só chegam às patentes por sucata/dados (3c/3d). **(decidir)** potências venderem licença a não-membros (prata + Fama alta)?
 - **3c — Engenharia reversa: feito (2026-11-17).** Pesquisa e bancada próprias (depois da reciclagem básica do VRE); desmontar item ou prédio minificado dá 15–30% do custo do projeto que o fabrica (valor e vida do item; material, comestíveis e itens < 25 de prata não ensinam); prefere o projeto travado; sem os pré-requisitos para em 99% e libera o resto na bancada; patente de potência sem licença dá Infâmia +2. **(decidir)** devolver parte do material ao desmontar?
-- **3d — Dados antigos:** discos e manuais em abrigos (VQE Ancients), ruínas, marcos nossos e no estoque da Feira; cada um libera ou acelera um projeto.
+- **3d — Dados antigos: feito (2026-11-17).** Manual técnico (até industrial, 40%) e disco do Velho Mundo (espacial+, 50%), cada um ligado a um projeto fora da bancada sorteado ao nascer (Velho Mundo mais provável); lido por um colono, libera o projeto e rende a fração (teto de 99% sem pré-requisitos); patente sem licença dá Infâmia. Aparecem em abrigos do VQE Ancients (90%, 1–3), ruínas vanilla fora da colônia (40%, 1–2), nos 10 marcos nossos (60%, 1–2) e na Feira (vende e compra). **(decidir)** dados de patente vendidos pela própria potência? esquemas vanilla liberarem projeto travado?
 
 ## Etapa 4 — Utilidade para os outros mods (média)
 
@@ -209,6 +212,17 @@ O que o HSK faz e ainda não temos **(decidir quais valem)**:
 - textos de pesquisa e de bancada organizados por categoria (ligado à etapa 3).
 
 Caminho: preferir mods prontos compatíveis com 1.7 e CE; o que não existir, fazer por patch no nosso mod.
+
+## Etapa 10 — Estratégia, desempenho e mundo fixo (grande; lista do usuário de 2026-11-17)
+
+Origem: `Desktop/Coisas que o modpack precisa t er.txt`. Regra do projeto: não editar o Hegemony nem o Seamless World; tudo por API pública, Harmony e Defs nossos (módulo `Mods/Hegemony` do Ecos da Queda ou mod novo).
+
+- **10a — Medição (1 bloco, primeiro).** _Ferramenta feita (2026-11-18): `perf start`/`perf report` e `tests/perf.txt`; linha de base em `tecnico/desempenho.md`. Falta medir jogo longo com guerras do Hegemony._ Comando `perf` no executor: ticks por segundo e custo por sistema num jogo longo (perfil full, 15–30 dias), com e sem o Hegemony, e quanto custam os tiques do mundo (expedições, territórios, caravanas). Resultado em `tecnico/desempenho.md`; ele decide o que entra no 10c e no 10d. Ferramenta de apoio: Dubs Performance Analyzer (com janela, pelo usuário).
+- **10b — Mundo fixo com a história (1–2 blocos).** Sempre o mesmo planeta: semente, tamanho, cobertura e relevo fixos; capitais das potências, terras das facções menores e os 10 marcos nossos sempre nas mesmas regiões; variam só detalhes (nomes de líderes, bases menores, alguns marcos). Cenários próprios apontam para esse mundo. Facilita a história, o Hegemony (fronteiras previsíveis) e o Seamless World. **(decidir)** quanto varia entre partidas; mapa desenhado à mão ou semente escolhida.
+- **10c — Mod de desempenho (1–2 blocos).** Mod novo (`mod/ecos-desempenho`, worktree em `Mods/EcosDesempenho`): regras simplificadas conforme o 10a (ex.: limite de pawns do mundo, tiques mais espaçados de sistemas caros, limpeza de corpos e sujeira longe da colônia). Cada mudança com o custo de imersão listado para o usuário aprovar ✱.
+- **10d — Hegemony aperfeiçoado (2–3 blocos).** Otimizar o que o 10a apontar (por Harmony, sem editar o mod); mecânicas novas pela API pública (API 4/5: leitura do estado, agendamento de invasões, forças enviadas): **alocação de tropas** (exércitos e guarnições como objetos do mundo, com custo e manutenção), frentes de guerra entre territórios, papel do jogador como vassalo (enviar tropas, receber pedidos da potência).
+- **10e — Batalhas de trincheira (1–2 blocos).** Quando territórios de duas nações em guerra se encostam, abre-se uma **frente de trincheira**: sítio no mapa-mundi com mapa gerado de trincheiras (mod Trenches) e as duas facções lutando em ondas; o jogador pode apoiar um lado (Fama e favor), ficar de fora ou saquear os mortos; o resultado empurra a fronteira no Hegemony. Usa o 10d (tropas) e a 5a (eventos de guerra).
+- **10f — Seamless World (objetivo final; pesquisa + blocos).** Hoje desativado por bug ✱ (o usuário descreve o bug). Depois do 10a–10c: religar no perfil de teste, medir, listar o que quebra (nossos sistemas de mapa: bases, marcos, dados antigos, cerimônia) e o que é viável; decidir com o usuário.
 
 ## Etapa 8 — Pendências antigas
 

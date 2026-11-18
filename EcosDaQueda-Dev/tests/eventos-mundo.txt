@@ -1,0 +1,18 @@
+# Etapa 5f: eventos sem dono (tempestade de cinzas, abrigo que se abre, comboio perdido, recall mecanoide). Rodar com -Profile full.
+newgame
+timeout 900
+dump
+incident EQ_Incidente_TempestadeCinzas
+incident EQ_Incidente_AbrigoAberto
+dump
+hostile sindicatodosaque
+convoyclaim
+incident EQ_Incidente_ComboioPerdido
+wait 2h
+count Steel
+count ComponentIndustrial
+incident EQ_Incidente_RecallMecanoide
+wait 2h
+letters
+wait 1d
+letters

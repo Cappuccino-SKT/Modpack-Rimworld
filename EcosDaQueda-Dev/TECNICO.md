@@ -13,6 +13,7 @@ Ler **só o arquivo do assunto da tarefa**. Nota nova vai no arquivo do assunto 
 | `tecnico/inicio.md` | Início de jogo (cenários, xenos, narrador) | Início de jogo |
 | `tecnico/mundo.md` | Mapa-mundi: marcos (bloco N) | Marcos do mundo |
 | `tecnico/arsenal-comercio.md` | Arsenal, guarda-roupa e comércio por facção | Tags de armas úteis; Arsenal por facção; Comércio por facção |
+| `tecnico/desempenho.md` | Desempenho (Etapa 10a): comando perf e medições | Ferramenta; Linha de base |
 
 ## Documentação dos mods do modpack
 

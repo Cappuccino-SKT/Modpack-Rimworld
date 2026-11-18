@@ -1,0 +1,10 @@
+# Etapa 10a: medição de desempenho (perfil full). Mede 1 dia logo no início e depois 10 dias seguidos.
+# Resultado detalhado em test-profile/full/perf-*.tsv. Não entra na regressão padrão (é longo).
+newgame
+timeout 2400
+perf start
+wait 1d
+perf report
+perf start
+wait 10d
+perf report

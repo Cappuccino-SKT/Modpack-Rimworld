@@ -1,0 +1,25 @@
+# Bloco 3e: dízimo tecnológico da Forja (dados antigos + componentes -> mech de serviço / título de veículo) e auditoria de prédios espaciais que escapam da trava. Rodar com -Profile full.
+newgame
+timeout 900
+tech buildaudit
+join forja
+wait 1h
+leader set 0
+psy title 2 forja
+wait 1h
+services
+service EQ_Service_Forja_DizimoMech
+give EQ_ManualTecnico 1
+give ComponentIndustrial 4
+service EQ_Service_Forja_DizimoMech
+count EQ_ManualTecnico
+count mechs
+wait 2500
+psy title 3 forja
+wait 1h
+give EQ_DiscoVelhoMundo 2
+give ComponentSpacer 1
+service EQ_Service_Forja_DizimoVeiculo
+wait 2500
+count EQ_TituloSeminovo
+count mechs

@@ -1,0 +1,17 @@
+# Etapa 4a: sementes e água na Feira; dízimo do Coro em sementes; água do Dubs fica de fora (sede desligada). Rodar com -Profile full.
+newgame
+timeout 900
+trader EQ_Base_Feira Seed
+trader EQ_Caravan_Feira Seed
+join coro
+wait 1h
+leader set 0
+psy title 1 coro
+wait 1h
+give Seed_Rice 40
+due tithe
+wait 1h
+letters
+choose Psíquico 3
+count Seed_Rice
+rep coro add 0 0

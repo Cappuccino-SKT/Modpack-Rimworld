@@ -1,0 +1,15 @@
+# Etapa 4c: resultados anexáveis de ritual das potências (fama, favor, itens). Rodar com -Profile full.
+newgame
+timeout 900
+ritualoutcome
+ritualoutcome EQ_Outcome_Forja
+wait 2h
+count ComponentIndustrial
+rep forja add 0 0
+ritualoutcome EQ_Outcome_Coro 0.5
+wait 2h
+count Gold
+rep coro add 0 0
+ritualoutcome EQ_Outcome_Helice
+ritualoutcome EQ_Outcome_Silencio
+rep silencio add 0 0
