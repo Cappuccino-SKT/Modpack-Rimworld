@@ -18,7 +18,7 @@ _Só o estado atual e os próximos passos. Manter curto (até ~60 linhas). Detal
 
 ## Não commitado
 
-Tudo de 2026-11-18 (blocos 3d, 3e, 4a, 4c, 5a, 5d, 5f, 10a-ferramenta, partes da Etapa 8, modo lote dos testes, compat, Etapa 10 no plano) está **sem commit**: mod, debug e raiz. Commit/push só quando o usuário pedir.
+Nada. Tudo de 2026-11-18 commitado e enviado: mod `dea3cea`, debug `015e776`, raiz `ee50e1a`.
 
 ## Próximo passo
 
