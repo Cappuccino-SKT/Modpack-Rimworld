@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <!-- Bloco 3d: dados antigos. Cada item nasce ligado a um projeto fora da bancada (Velho Mundo ou patente de potência;
+       EcosDaQueda.CompUseEffect_AncientData). Lido por um colono: libera o projeto e dá parte da pesquisa; sem os
+       pré-requisitos para em 99%. Patente de potência sem licença dá Infâmia. Aparecem em abrigos do VQE Ancients,
+       ruínas antigas, marcos nossos (bloco N) e na Feira Andante (EcosDaQueda.AncientDataSpawnDef e estoque). -->
+
+  <ThingDef Abstract="True" Name="EQ_DadosAntigosBase" ParentName="ResourceBase">
+    <stackLimit>1</stackLimit>
+    <useHitPoints>true</useHitPoints>
+    <statBases>
+      <MaxHitPoints>50</MaxHitPoints>
+      <Mass>0.5</Mass>
+      <Flammability>1</Flammability>
+    </statBases>
+    <thingCategories>
+      <li>Items</li>
+    </thingCategories>
+    <tradeability>All</tradeability>
+    <tradeTags>
+      <li>EQ_DadosAntigos</li>
+    </tradeTags>
+  </ThingDef>
+
+  <ThingDef ParentName="EQ_DadosAntigosBase">
+    <defName>EQ_ManualTecnico</defName>
+    <label>manual técnico</label>
+    <description>Um manual de manutenção do Velho Mundo, com capa de plástico, 400 páginas de avisos jurídicos e 12 de instruções. Metade das figuras foi comida por traças; a outra metade mostra alguém sorrindo enquanto aperta um parafuso.\n\nLido por um colono capaz de trabalho intelectual, libera o projeto indicado no rótulo (medieval ou industrial) e rende 40% dele. Sem os pré-requisitos, o projeto para em 99%. Se for patente de potência e a colônia não tiver a licença, a dona fica sabendo.</description>
+    <graphicData>
+      <texPath>Things/Item/Book/Schematic/Schematic</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <MarketValue>300</MarketValue>
+    </statBases>
+    <comps>
+      <li Class="CompProperties_Usable">
+        <useJob>UseItem</useJob>
+        <useLabel>Estudar {0_label}</useLabel>
+        <useDuration>1200</useDuration>
+        <showUseGizmo>true</showUseGizmo>
+      </li>
+      <li Class="EcosDaQueda.CompProperties_UseEffectAncientData">
+        <fraction>0.40</fraction>
+        <minTech>Neolithic</minTech>
+        <maxTech>Industrial</maxTech>
+        <oldWorldWeight>3</oldWorldWeight>
+        <lockedWeight>2</lockedWeight>
+        <infamy>2</infamy>
+        <corruptLabel>ilegível</corruptLabel>
+        <knownText>Já sabemos isto (vale prata na Feira)</knownText>
+        <text>{PAWN} estudou {ITEM}: {PROJECT} liberado, +{GAIN} (agora {TOTAL}).</text>
+        <capText>{PROJECT} parou em 99%: faltam os pré-requisitos. O resto se pesquisa na bancada depois deles.</capText>
+        <piracyText>{FACTION} soube que alguém anda lendo o manual de {ITEM} sem licença. Infâmia +{INFAMY}.</piracyText>
+      </li>
+      <li Class="CompProperties_UseEffectDestroySelf" />
+    </comps>
+  </ThingDef>
+
+  <ThingDef ParentName="EQ_DadosAntigosBase" MayRequire="Ludeon.RimWorld.Biotech">
+    <defName>EQ_DiscoVelhoMundo</defName>
+    <label>disco do Velho Mundo</label>
+    <description>Um disco de dados do tamanho de uma unha, gravado antes da Queda, com o carimbo "CONFIDENCIAL" e um adesivo de garantia vencida. Ninguém sabe ler o formato, mas um colono paciente com um leitor improvisado consegue tirar o essencial antes de queimar o disco.\n\nLido por um colono capaz de trabalho intelectual, libera o projeto indicado no rótulo (espacial ou acima) e rende 50% dele. Sem os pré-requisitos, o projeto para em 99%. Se for patente de potência e a colônia não tiver a licença, a dona fica sabendo.</description>
+    <graphicData>
+      <texPath>Things/Item/Resource/SignalChip</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <MarketValue>800</MarketValue>
+    </statBases>
+    <comps>
+      <li Class="CompProperties_Usable">
+        <useJob>UseItem</useJob>
+        <useLabel>Ler {0_label}</useLabel>
+        <useDuration>1800</useDuration>
+        <showUseGizmo>true</showUseGizmo>
+      </li>
+      <li Class="EcosDaQueda.CompProperties_UseEffectAncientData">
+        <fraction>0.50</fraction>
+        <minTech>Spacer</minTech>
+        <maxTech>Archotech</maxTech>
+        <oldWorldWeight>3</oldWorldWeight>
+        <lockedWeight>2</lockedWeight>
+        <infamy>3</infamy>
+        <corruptLabel>corrompido</corruptLabel>
+        <knownText>Já sabemos isto (vale prata na Feira)</knownText>
+        <text>{PAWN} leu {ITEM}: {PROJECT} liberado, +{GAIN} (agora {TOTAL}). O disco queimou no fim, como prometido.</text>
+        <capText>{PROJECT} parou em 99%: faltam os pré-requisitos. O resto se pesquisa na bancada depois deles.</capText>
+        <piracyText>{FACTION} rastreou a leitura de {ITEM}: patente sem licença. Infâmia +{INFAMY}.</piracyText>
+      </li>
+      <li Class="CompProperties_UseEffectDestroySelf" />
+    </comps>
+  </ThingDef>
+
+  <!-- ===================== Onde aparecem ===================== -->
+
+  <!-- Abrigos do VQE Ancients (inclui o início "Saídos do abrigo"): perto das prateleiras e caixas do abrigo. -->
+  <EcosDaQueda.AncientDataSpawnDef>
+    <defName>EQ_Dados_Abrigo</defName>
+    <markerPrefixes>
+      <li>VQEA_StorageShelf</li>
+      <li>VQEA_AncientOrganBox</li>
+      <li>VQEA_ArchiteCapsuleContainment</li>
+      <li>VQEA_AncientGenepackCrate</li>
+    </markerPrefixes>
+    <minMarkers>2</minMarkers>
+    <chance>0.9</chance>
+    <count>1~3</count>
+    <allowPlayerHome>true</allowPlayerHome>
+    <items>
+      <EQ_ManualTecnico>2</EQ_ManualTecnico>
+      <EQ_DiscoVelhoMundo MayRequire="Ludeon.RimWorld.Biotech">1</EQ_DiscoVelhoMundo>
+    </items>
+  </EcosDaQueda.AncientDataSpawnDef>
+
+  <!-- Ruínas antigas vanilla (santuários com criptosono, complexos antigos): fora da colônia. -->
+  <EcosDaQueda.AncientDataSpawnDef>
+    <defName>EQ_Dados_Ruinas</defName>
+    <markers>
+      <li>AncientCryptosleepCasket</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">AncientSecurityCrate</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">AncientHermeticCrate</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">AncientTerminal</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">AncientCommsConsole</li>
+    </markers>
+    <minMarkers>1</minMarkers>
+    <chance>0.4</chance>
+    <count>1~2</count>
+    <items>
+      <EQ_ManualTecnico>2</EQ_ManualTecnico>
+      <EQ_DiscoVelhoMundo MayRequire="Ludeon.RimWorld.Biotech">1</EQ_DiscoVelhoMundo>
+    </items>
+  </EcosDaQueda.AncientDataSpawnDef>
+
+  <!-- Marcos nossos (bloco N): vale também se a colônia se instalar no marco. -->
+  <EcosDaQueda.AncientDataSpawnDef>
+    <defName>EQ_Dados_Marcos</defName>
+    <minMarkers>9999</minMarkers>
+    <landmarks>
+      <li>EQ_Marco_CrateraDaQueda</li>
+      <li>EQ_Marco_UltimaOfensiva</li>
+      <li>EQ_Marco_FazendaModelo</li>
+      <li>EQ_Marco_PocoDaEscuta</li>
+      <li>EQ_Marco_ProjetoJardim</li>
+      <li>EQ_Marco_PatioDeRecall</li>
+      <li>EQ_Marco_LaboratorioColmeia</li>
+      <li>EQ_Marco_PlataformaEvacuacao</li>
+      <li>EQ_Marco_GuarnicaoEsquecida</li>
+      <li>EQ_Marco_RefinariaEmGreve</li>
+    </landmarks>
+    <chance>0.6</chance>
+    <count>1~2</count>
+    <allowPlayerHome>true</allowPlayerHome>
+    <items>
+      <EQ_ManualTecnico>1</EQ_ManualTecnico>
+      <EQ_DiscoVelhoMundo MayRequire="Ludeon.RimWorld.Biotech">1</EQ_DiscoVelhoMundo>
+    </items>
+  </EcosDaQueda.AncientDataSpawnDef>
+
+</Defs>

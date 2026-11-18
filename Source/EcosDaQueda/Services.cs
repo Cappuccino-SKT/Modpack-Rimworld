@@ -27,8 +27,14 @@ namespace EcosDaQueda
         public bool requiresPrisoner;
         /// <summary>Itens cobrados do mapa (além da prata). Item de mod ausente é ignorado.</summary>
         public List<ThingDefCountClass> costThings = new List<ThingDefCountClass>();
+        /// <summary>Itens cobrados por etiqueta de comércio (ex.: EQ_DadosAntigos = qualquer manual ou disco).</summary>
+        public string costTradeTag;
+        public int costTradeTagCount;
+        public string costTradeTagLabel;
 
         // Efeitos
+        /// <summary>Pawns entregues ao jogador por cápsula (ex.: mech de serviço da Forja). Um sorteado por uso.</summary>
+        public List<PawnKindDef> pawnKinds = new List<PawnKindDef>();
         public List<ThingDefCountClass> things = new List<ThingDefCountClass>();
         public bool callAid;
         public float aidPointsFactor = 1f;
@@ -103,6 +109,8 @@ namespace EcosDaQueda
             foreach (ThingDefCountClass c in s.costThings)
                 if (c.thingDef != null && EQItems.CountOnMap(map, c.thingDef) < c.count)
                     return "Falta " + c.thingDef.label + " (" + c.count + ")";
+            if (!s.costTradeTag.NullOrEmpty() && EQItems.CountTagged(map, s.costTradeTag) < s.costTradeTagCount)
+                return "Falta " + (s.costTradeTagLabel ?? s.costTradeTag) + " (" + s.costTradeTagCount + ")";
             if (s.requiresHeldEntity && HeldEntity(map) == null)
                 return "Nenhuma entidade contida";
             if (s.requiresPrisoner && !map.mapPawns.PrisonersOfColonySpawned.Any())
@@ -122,6 +130,8 @@ namespace EcosDaQueda
             if (s.silver > 0) parts.Add(s.silver + " de prata");
             foreach (ThingDefCountClass c in s.costThings)
                 if (c.thingDef != null) parts.Add(c.count + " " + c.thingDef.label);
+            if (!s.costTradeTag.NullOrEmpty() && s.costTradeTagCount > 0)
+                parts.Add(s.costTradeTagCount + " " + (s.costTradeTagLabel ?? s.costTradeTag));
             return parts.Count == 0 ? "" : " (" + string.Join(", ", parts) + ")";
         }
 
@@ -145,6 +155,8 @@ namespace EcosDaQueda
             foreach (ThingDefCountClass c in s.costThings)
                 if (c.thingDef != null)
                     EQItems.TakeFromMap(map, c.thingDef, c.count);
+            if (!s.costTradeTag.NullOrEmpty())
+                EQItems.TakeTagged(map, s.costTradeTag, s.costTradeTagCount);
             if (s.requiresHeldEntity)
             {
                 Pawn entity = HeldEntity(map);
@@ -171,6 +183,15 @@ namespace EcosDaQueda
                 }
                 if (made.Count > 0)
                     DropPodUtility.DropThingsNear(DropCellFinder.TradeDropSpot(map), map, made, faction: f);
+            }
+            if (!s.pawnKinds.NullOrEmpty())
+            {
+                PawnKindDef kind = s.pawnKinds.Where(k => k != null).RandomElementWithFallback();
+                if (kind != null)
+                {
+                    Pawn pawn = PawnGenerator.GeneratePawn(new PawnGenerationRequest(kind, Faction.OfPlayer, forceGenerateNewPawn: true));
+                    DropPodUtility.DropThingsNear(DropCellFinder.TradeDropSpot(map), map, new List<Thing> { pawn }, faction: f);
+                }
             }
             if (s.callAid)
             {

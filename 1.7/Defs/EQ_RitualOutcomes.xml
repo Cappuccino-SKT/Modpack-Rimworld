@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <!-- Etapa 4c: resultados anexáveis de ritual (escolhidos ao criar um ritual da ideologia do jogador). Cada um faz
+       uma potência "ficar sabendo" e recompensar: fama, favor (se for membro), boa vontade e itens por cápsula.
+       Ritual excelente dá tudo; bom dá metade. Worker: EcosDaQueda.RitualAttachableOutcomeEffectWorker_EQPower. -->
+
+  <RitualAttachableOutcomeEffectDef MayRequire="Ludeon.RimWorld.Ideology">
+    <defName>EQ_Outcome_Silencio</defName>
+    <workerClass>EcosDaQueda.RitualAttachableOutcomeEffectWorker_EQPower</workerClass>
+    <label>ata para o Arquivo</label>
+    <effectDesc>um arquivista da Ordem do Silêncio registra o ritual nos Anais (fama e favor com o Silêncio).</effectDesc>
+    <letterInfoText>A {FACTION_name} registrou o ritual nos Anais do Que Não Deve Ser Dito, em letra miúda. Fama +{FAME}.</letterInfoText>
+    <modExtensions>
+      <li Class="EcosDaQueda.EQRitualOutcomeExtension">
+        <faction>EQ_Faction_Silencio</faction>
+        <fame>3</fame>
+        <favor>1</favor>
+        <goodwill>4</goodwill>
+      </li>
+    </modExtensions>
+  </RitualAttachableOutcomeEffectDef>
+
+  <RitualAttachableOutcomeEffectDef MayRequire="Ludeon.RimWorld.Ideology">
+    <defName>EQ_Outcome_Helice</defName>
+    <workerClass>EcosDaQueda.RitualAttachableOutcomeEffectWorker_EQPower</workerClass>
+    <label>patrocínio da Hélice</label>
+    <effectDesc>o Concílio da Hélice patrocina o ritual em troca de exibir a marca (fama com a Hélice e remédios de amostra grátis).</effectDesc>
+    <letterInfoText>O {FACTION_name} mandou remédios de amostra grátis e um contrato de patrocínio de quarenta páginas. Fama +{FAME}.</letterInfoText>
+    <modExtensions>
+      <li Class="EcosDaQueda.EQRitualOutcomeExtension">
+        <faction>EQ_Faction_Helice</faction>
+        <fame>3</fame>
+        <favor>1</favor>
+        <goodwill>4</goodwill>
+        <items>
+          <MedicineIndustrial>3</MedicineIndustrial>
+        </items>
+      </li>
+    </modExtensions>
+  </RitualAttachableOutcomeEffectDef>
+
+  <RitualAttachableOutcomeEffectDef MayRequire="Ludeon.RimWorld.Ideology">
+    <defName>EQ_Outcome_Forja</defName>
+    <workerClass>EcosDaQueda.RitualAttachableOutcomeEffectWorker_EQPower</workerClass>
+    <label>bênção da garantia</label>
+    <effectDesc>a Irmandade da Forja abençoa o ritual e manda peças de reposição "por cortesia" (fama com a Forja e componentes).</effectDesc>
+    <letterInfoText>A {FACTION_name} mandou peças de reposição por cortesia. A nota fiscal chega depois. Fama +{FAME}.</letterInfoText>
+    <modExtensions>
+      <li Class="EcosDaQueda.EQRitualOutcomeExtension">
+        <faction>EQ_Faction_Forja</faction>
+        <fame>3</fame>
+        <favor>1</favor>
+        <goodwill>4</goodwill>
+        <items>
+          <ComponentIndustrial>3</ComponentIndustrial>
+        </items>
+      </li>
+    </modExtensions>
+  </RitualAttachableOutcomeEffectDef>
+
+  <RitualAttachableOutcomeEffectDef MayRequire="Ludeon.RimWorld.Ideology">
+    <defName>EQ_Outcome_Coro</defName>
+    <workerClass>EcosDaQueda.RitualAttachableOutcomeEffectWorker_EQPower</workerClass>
+    <label>harmonia do Coro</label>
+    <effectDesc>o Coro Ascendente aprova a afinação do ritual e manda uma lembrança dourada (fama com o Coro e ouro).</effectDesc>
+    <letterInfoText>{FACTION_name} achou a afinação aceitável, para gente do campo, e mandou um pouco de ouro. Fama +{FAME}.</letterInfoText>
+    <modExtensions>
+      <li Class="EcosDaQueda.EQRitualOutcomeExtension">
+        <faction>EQ_Faction_Coro</faction>
+        <fame>3</fame>
+        <favor>1</favor>
+        <goodwill>4</goodwill>
+        <items>
+          <Gold>8</Gold>
+        </items>
+      </li>
+    </modExtensions>
+  </RitualAttachableOutcomeEffectDef>
+</Defs>

@@ -23,7 +23,7 @@ namespace EcosDaQueda
         public string psycastLockedReason;
     }
 
-    public enum TitheOptionType { Silver, Things, Prisoner, Colonist, Refuse }
+    public enum TitheOptionType { Silver, Things, Prisoner, Colonist, Refuse, Category }
 
     /// <summary>Uma opção da carta de dízimo.</summary>
     public class TitheOption
@@ -31,6 +31,9 @@ namespace EcosDaQueda
         public string label;
         public TitheOptionType type;
         public ThingDef thingDef;
+        /// <summary>Category: qualquer item desta categoria (ex.: sementes do SeedsPlease) conta.</summary>
+        public ThingCategoryDef categoryDef;
+        [MustTranslate] public string categoryLabel;
         /// <summary>Quantidade base; multiplicada conforme o cargo (ver WorldComponent_Allegiance.TitheMultiplier).</summary>
         public int count;
         /// <summary>Colonist: prefere crianças.</summary>
@@ -747,6 +750,8 @@ namespace EcosDaQueda
                     return EQItems.CountOnMap(map, ThingDefOf.Silver) >= count ? null : "Falta prata (" + count + ")";
                 case TitheOptionType.Things:
                     return o.thingDef != null && EQItems.CountOnMap(map, o.thingDef) >= count ? null : "Falta " + o.thingDef?.label + " (" + count + ")";
+                case TitheOptionType.Category:
+                    return o.categoryDef != null && EQItems.CountInCategory(map, o.categoryDef) >= count ? null : "Falta " + (o.categoryLabel ?? o.categoryDef?.label) + " (" + count + ")";
                 case TitheOptionType.Prisoner:
                     pawn = map.mapPawns.PrisonersOfColonySpawned.FirstOrDefault();
                     return pawn != null ? null : "Nenhum prisioneiro";
@@ -781,6 +786,9 @@ namespace EcosDaQueda
                 case TitheOptionType.Things:
                     EQItems.TakeFromMap(map, o.thingDef, count);
                     break;
+                case TitheOptionType.Category:
+                    EQItems.TakeInCategory(map, o.categoryDef, count);
+                    break;
                 case TitheOptionType.Prisoner:
                 case TitheOptionType.Colonist:
                     CanPay(o, count, out Pawn pawn);
@@ -810,6 +818,41 @@ namespace EcosDaQueda
         public static void TakeFromMap(Map map, ThingDef def, int count)
         {
             foreach (Thing t in Available(map, def).ToList())
+            {
+                if (count <= 0) break;
+                int take = Math.Min(count, t.stackCount);
+                count -= take;
+                if (take >= t.stackCount) t.Destroy();
+                else t.SplitOff(take).Destroy();
+            }
+        }
+
+        private static IEnumerable<Thing> AvailableTagged(Map map, string tag) =>
+            map.listerThings.AllThings.Where(t => t.def.tradeTags != null && t.def.tradeTags.Contains(tag) && t.Spawned
+                && !t.IsForbidden(Faction.OfPlayer) && map.areaManager.Home[t.Position]);
+
+        private static IEnumerable<Thing> AvailableInCategory(Map map, ThingCategoryDef cat) =>
+            map.listerThings.AllThings.Where(t => t.def.IsWithinCategory(cat) && t.Spawned && !t.IsForbidden(Faction.OfPlayer) && map.areaManager.Home[t.Position]);
+
+        public static int CountInCategory(Map map, ThingCategoryDef cat) => cat == null ? 0 : AvailableInCategory(map, cat).Sum(t => t.stackCount);
+
+        public static void TakeInCategory(Map map, ThingCategoryDef cat, int count)
+        {
+            foreach (Thing t in AvailableInCategory(map, cat).ToList())
+            {
+                if (count <= 0) break;
+                int take = Math.Min(count, t.stackCount);
+                count -= take;
+                if (take >= t.stackCount) t.Destroy();
+                else t.SplitOff(take).Destroy();
+            }
+        }
+
+        public static int CountTagged(Map map, string tag) => AvailableTagged(map, tag).Sum(t => t.stackCount);
+
+        public static void TakeTagged(Map map, string tag, int count)
+        {
+            foreach (Thing t in AvailableTagged(map, tag).ToList())
             {
                 if (count <= 0) break;
                 int take = Math.Min(count, t.stackCount);

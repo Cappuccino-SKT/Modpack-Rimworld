@@ -123,41 +123,17 @@ namespace EcosDaQueda
             if (r == null)
                 return null;
             ReverseEngineeringExtension s = Settings;
-            ResearchManager rm = Find.ResearchManager;
-            float before = rm.GetProgress(r);
             float amount = Fraction(t) * r.Cost;
-            bool capped = false;
-            if (!r.PrerequisitesCompleted)
-            {
-                // FinishProject concluiria os pré-requisitos de graça: para antes e libera o resto na bancada.
-                float cap = r.Cost * s.capWithoutPrereqs;
-                if (before + amount >= cap)
-                {
-                    amount = Mathf.Max(0f, cap - before);
-                    capped = true;
-                    if (EQResearch.Branch(r) != null && !EQResearch.HasAccess(r))
-                        WorldComponent_EQResearch.Current?.Grant(r);
-                }
-            }
-            rm.AddProgress(r, amount);
+            bool capped = EQResearchGain.AddCapped(r, ref amount, s.capWithoutPrereqs);
+            if (capped && EQResearch.Branch(r) != null && !EQResearch.HasAccess(r))
+                WorldComponent_EQResearch.Current?.Grant(r);
             LookTargets look = map != null && ingredient.Spawned ? new LookTargets(ingredient.Position, map) : LookTargets.Invalid;
             if (!s.text.NullOrEmpty())
                 Messages.Message(s.text.Formatted(t.LabelNoCount.Named("ITEM"), r.LabelCap.Named("PROJECT"),
                     (amount / r.Cost).ToStringPercent().Named("GAIN"), r.ProgressPercent.ToStringPercent().Named("TOTAL")), look, MessageTypeDefOf.PositiveEvent, false);
             if (capped && !s.capText.NullOrEmpty())
                 Messages.Message(s.capText.Formatted(r.LabelCap.Named("PROJECT")), look, MessageTypeDefOf.NeutralEvent, false);
-            ResearchBranchDef b = EQLicenses.OwnedBranch(r);
-            if (b != null && s.infamy > 0f && !EQLicenses.IsLicensed(r))
-            {
-                Faction owner = EQUtil.MainFaction(b.faction);
-                if (owner != null && !owner.defeated && owner != Faction.OfPlayer)
-                {
-                    WorldComponent_Reputation.Current?.Record(owner, 0f, s.infamy);
-                    if (!s.piracyText.NullOrEmpty())
-                        Messages.Message(s.piracyText.Formatted(owner.Named("FACTION"), t.LabelNoCount.Named("ITEM"), s.infamy.ToString("0.#").Named("INFAMY")),
-                            look, MessageTypeDefOf.NegativeEvent, false);
-                }
-            }
+            EQResearchGain.Piracy(r, s.infamy, s.piracyText, t.LabelNoCount, look);
             return r;
         }
     }

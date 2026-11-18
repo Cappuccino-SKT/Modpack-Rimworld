@@ -695,6 +695,12 @@
       </li>
     </modExtensions>
     <stockGenerators>
+      <!-- Bloco 4a: sementes (SeedsPlease). Água do Dubs não: a garrafa só existe com a sede ligada (desligada no modpack). -->
+      <li Class="StockGenerator_Category" MayRequire="Evyatar108.SeedsPleaseLiteRedux">
+        <categoryDef>SeedsCategory</categoryDef>
+        <thingDefCountRange>3~6</thingDefCountRange>
+        <countRange>10~30</countRange>
+      </li>
       <!-- Bloco L (Vanilla Recycling Expanded): a Feira compra até lixo ("tudo tem preço"). -->
       <li Class="StockGenerator_BuySingleDef" MayRequire="VanillaExpanded.Recycling">
         <thingDef>VRecyclingE_Trash</thingDef>
@@ -733,6 +739,15 @@
         <thingDef>EQ_TituloSeminovo</thingDef>
         <countRange>0~1</countRange>
       </li>
+      <!-- Bloco 3d: dados antigos (manual e disco ligados a um projeto). A Feira também compra. -->
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>EQ_ManualTecnico</thingDef>
+        <countRange>1~2</countRange>
+      </li>
+      <li Class="StockGenerator_SingleDef" MayRequire="Ludeon.RimWorld.Biotech">
+        <thingDef>EQ_DiscoVelhoMundo</thingDef>
+        <countRange>0~1</countRange>
+      </li>
       <li Class="StockGenerator_Category">
         <categoryDef>Drugs</categoryDef>
         <thingDefCountRange>2~4</thingDefCountRange>
@@ -754,6 +769,12 @@
     <defName>EQ_Caravan_Feira</defName>
     <label>banca de miudezas</label>
     <stockGenerators>
+      <!-- Bloco 4a: sementes (SeedsPlease). Água do Dubs não: a garrafa só existe com a sede ligada (desligada no modpack). -->
+      <li Class="StockGenerator_Category" MayRequire="Evyatar108.SeedsPleaseLiteRedux">
+        <categoryDef>SeedsCategory</categoryDef>
+        <thingDefCountRange>2~4</thingDefCountRange>
+        <countRange>10~30</countRange>
+      </li>
       <!-- Bloco L (Vanilla Recycling Expanded): a Feira compra até lixo ("tudo tem preço"). -->
       <li Class="StockGenerator_BuySingleDef" MayRequire="VanillaExpanded.Recycling">
         <thingDef>VRecyclingE_Trash</thingDef>
@@ -765,6 +786,15 @@
       <!-- Bloco M: a banca leva o papel; o carro fica no ferro-velho. -->
       <li Class="StockGenerator_SingleDef" MayRequire="OskarPotocki.VanillaVehiclesExpanded">
         <thingDef>EQ_TituloLataVelha</thingDef>
+        <countRange>0~1</countRange>
+      </li>
+      <!-- Bloco 3d: dados antigos (manual e disco ligados a um projeto). A Feira também compra. -->
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>EQ_ManualTecnico</thingDef>
+        <countRange>0~2</countRange>
+      </li>
+      <li Class="StockGenerator_SingleDef" MayRequire="Ludeon.RimWorld.Biotech">
+        <thingDef>EQ_DiscoVelhoMundo</thingDef>
         <countRange>0~1</countRange>
       </li>
       <li Class="StockGenerator_Category" MayRequire="VanillaExpanded.VCookE">

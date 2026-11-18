@@ -555,6 +555,16 @@
         <fame>6</fame>
         <resultText>O mestre de cerimônias provou uma taça, fez uma careta e levou tudo. "Safra de pobre. Serve para os coristas."</resultText>
       </li>
+      <li MayRequire="Evyatar108.SeedsPleaseLiteRedux">
+        <label>Pagar em sementes para as lavouras da corte ({COUNT})</label>
+        <type>Category</type>
+        <categoryDef>SeedsCategory</categoryDef>
+        <categoryLabel>sementes</categoryLabel>
+        <favor>2</favor>
+        <count>40</count>
+        <fame>4</fame>
+        <resultText>O jardineiro-mor contou as sementes uma a uma, cantarolando. "A corte come bem. Os coristas, menos."</resultText>
+      </li>
       <li>
         <label>Recusar</label>
         <type>Refuse</type>

@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <!-- Etapa 5a: eventos por potência (PowerEvents.cs). Carta de escolha por MTB quando a potência não é hostil e a
+       condição vale; no máximo um evento de potência a cada 8 dias. Ignorar até o prazo (3 dias) = última opção.
+       Opção: custo (costSilver, costThings, costTradeTag, handOverPrisoner) e efeito (fame, infamy, goodwill, favor,
+       thought, researchLoss, rewardThings). -->
+
+  <LetterDef ParentName="CustomChoiceLetterBase">
+    <defName>EQ_PowerEventLetter</defName>
+    <letterClass>EcosDaQueda.ChoiceLetter_EQPowerEvent</letterClass>
+  </LetterDef>
+
+  <ThoughtDef>
+    <defName>EQ_Thought_ConcertoCoro</defName>
+    <durationDays>4</durationDays>
+    <stackLimit>1</stackLimit>
+    <stages>
+      <li>
+        <label>ouvi o Coro</label>
+        <description>Não lembro da música. Lembro de ter chorado, e de que era bom chorar. Acho que paguei por isso.</description>
+        <baseMoodEffect>10</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+  <!-- HÉLICE: auditoria de conformidade genética -->
+  <EcosDaQueda.PowerEventDef>
+    <defName>EQ_Evento_Helice_Auditoria</defName>
+    <label>auditoria da Hélice</label>
+    <faction>EQ_Faction_Helice</faction>
+    <condition>PlayerHasXenotypes</condition>
+    <mtbDays>25</mtbDays>
+    <letterLabel>Auditoria de conformidade genética</letterLabel>
+    <letterText>Uma equipe de fiscais do Concílio da Hélice comunica, com a cortesia de quem já sabe a resposta, que alguns dos seus colonos carregam genes que talvez sejam propriedade intelectual registrada.\n\nA auditoria é voluntária. Recusar também é voluntário, e fica anotado no seu histórico de crédito genético.</letterText>
+    <options>
+      <li>
+        <label>Pagar a taxa de conformidade (250 de prata)</label>
+        <costSilver>250</costSilver>
+        <fame>2</fame>
+        <goodwill>5</goodwill>
+        <favor>1</favor>
+        <resultText>Os fiscais carimbam tudo em três vias. Seus colonos agora são oficialmente "uso licenciado".</resultText>
+      </li>
+      <li>
+        <label>Ceder um prisioneiro como amostra de controle</label>
+        <handOverPrisoner>true</handOverPrisoner>
+        <fame>3</fame>
+        <goodwill>8</goodwill>
+        <favor>2</favor>
+        <resultText>O Concílio agradece a amostra. Ela será tratada com todo o respeito devido a um ativo.</resultText>
+      </li>
+      <li>
+        <label>Recusar a auditoria</label>
+        <infamy>3</infamy>
+        <goodwill>-15</goodwill>
+        <resultText>Os fiscais vão embora anotando. A Hélice nunca esquece um gene que não pagou.</resultText>
+      </li>
+    </options>
+  </EcosDaQueda.PowerEventDef>
+
+  <!-- FORJA: inspeção de garantia -->
+  <EcosDaQueda.PowerEventDef>
+    <defName>EQ_Evento_Forja_Garantia</defName>
+    <label>inspeção de garantia da Forja</label>
+    <faction>EQ_Faction_Forja</faction>
+    <condition>PlayerHasMechs</condition>
+    <mtbDays>25</mtbDays>
+    <letterLabel>Inspeção de garantia</letterLabel>
+    <letterText>A Irmandade da Forja detectou, por canais que prefere não explicar, unidades mecânicas operando na sua colônia. Um inspetor de campo pede para conferir os lacres de garantia.\n\nLacre rompido anula a garantia. Garantia anulada é, tecnicamente, pirataria. Pirataria é, tecnicamente, motivo de recall. Recall é, tecnicamente, uma guerra.</letterText>
+    <options>
+      <li>
+        <label>Pagar a revisão oficial (4 componentes)</label>
+        <costThings><ComponentIndustrial>4</ComponentIndustrial></costThings>
+        <fame>2</fame>
+        <goodwill>6</goodwill>
+        <favor>1</favor>
+        <resultText>O inspetor troca três parafusos, cobra os quatro componentes e cola um adesivo novo. A garantia está em dia.</resultText>
+      </li>
+      <li>
+        <label>Pagar a reemissão de lacres (400 de prata)</label>
+        <costSilver>400</costSilver>
+        <fame>1</fame>
+        <goodwill>3</goodwill>
+        <resultText>Lacres novos, mesmo defeito de sempre. Mas agora com selo.</resultText>
+      </li>
+      <li>
+        <label>Mandar o inspetor embora</label>
+        <infamy>3</infamy>
+        <goodwill>-15</goodwill>
+        <resultText>O inspetor sai fotografando os seus mechs. A Forja abriu um processo de garantia contra você.</resultText>
+      </li>
+    </options>
+  </EcosDaQueda.PowerEventDef>
+
+  <!-- CORO: turnê -->
+  <EcosDaQueda.PowerEventDef>
+    <defName>EQ_Evento_Coro_Turne</defName>
+    <label>turnê do Coro</label>
+    <faction>EQ_Faction_Coro</faction>
+    <mtbDays>30</mtbDays>
+    <letterLabel>Turnê do Coro Ascendente</letterLabel>
+    <letterText>O Coro Ascendente está em turnê pela região e oferece à sua colônia o privilégio de patrocinar um concerto.\n\nO privilégio custa. Quem já ouviu diz que não lembra bem da música, só de ter chorado, e de que o Maestro sorria contando a plateia como quem conta gado.</letterText>
+    <options>
+      <li>
+        <label>Patrocinar o concerto (300 de prata)</label>
+        <costSilver>300</costSilver>
+        <thought>EQ_Thought_ConcertoCoro</thought>
+        <fame>2</fame>
+        <goodwill>6</goodwill>
+        <favor>1</favor>
+        <resultText>O concerto termina e ninguém consegue explicar por que se sente melhor. O Coro anota os nomes de quem mais chorou.</resultText>
+      </li>
+      <li>
+        <label>Pagar em cerveja (20 de cerveja)</label>
+        <costThings><Beer>20</Beer></costThings>
+        <thought>EQ_Thought_ConcertoCoro</thought>
+        <fame>1</fame>
+        <goodwill>3</goodwill>
+        <resultText>Os coristas aceitam a cerveja com um sorriso que não chega aos olhos. Cantam assim mesmo.</resultText>
+      </li>
+      <li>
+        <label>Recusar com elegância</label>
+        <infamy>1</infamy>
+        <goodwill>-6</goodwill>
+        <resultText>O Coro segue viagem. Dizem que, no próximo concerto, alguém lembrou o nome da sua colônia em voz alta, e a plateia vaiou.</resultText>
+      </li>
+    </options>
+  </EcosDaQueda.PowerEventDef>
+
+  <!-- SILÊNCIO: chamada de artigos -->
+  <EcosDaQueda.PowerEventDef>
+    <defName>EQ_Evento_Silencio_Artigos</defName>
+    <label>chamada de artigos do Silêncio</label>
+    <faction>EQ_Faction_Silencio</faction>
+    <condition>PlayerResearching</condition>
+    <mtbDays>30</mtbDays>
+    <letterLabel>Chamada de artigos</letterLabel>
+    <letterText>A Ordem do Silêncio Perpétuo abriu chamada de artigos para o seu periódico, os "Anais do Que Não Deve Ser Dito". Os arquivistas notaram que a sua colônia anda pesquisando.\n\nContribuir é uma honra. Não contribuir é, por si só, um tema de pesquisa interessante, que a Ordem terá prazer em estudar de perto.</letterText>
+    <options>
+      <li>
+        <label>Enviar um dado antigo (manual ou disco)</label>
+        <costTradeTag>EQ_DadosAntigos</costTradeTag>
+        <costTradeTagCount>1</costTradeTagCount>
+        <costTradeTagLabel>dado antigo</costTradeTagLabel>
+        <fame>3</fame>
+        <goodwill>8</goodwill>
+        <favor>2</favor>
+        <resultText>O artigo é aceito sem revisão. O dado antigo vai para o Arquivo, de onde nunca mais sairá.</resultText>
+      </li>
+      <li>
+        <label>Enviar um resumo (taxa de submissão, 200 de prata)</label>
+        <costSilver>200</costSilver>
+        <fame>1</fame>
+        <goodwill>3</goodwill>
+        <resultText>O resumo é aceito "para pôster". Ninguém sabe o que isso significa, mas a taxa foi cobrada.</resultText>
+      </li>
+      <li>
+        <label>Ignorar a chamada</label>
+        <infamy>2</infamy>
+        <goodwill>-8</goodwill>
+        <researchLoss>0.25</researchLoss>
+        <resultText>A Ordem resolve fazer a revisão por pares mesmo assim. Alguns dos seus cadernos de pesquisa somem durante a noite.</resultText>
+      </li>
+    </options>
+  </EcosDaQueda.PowerEventDef>
+</Defs>

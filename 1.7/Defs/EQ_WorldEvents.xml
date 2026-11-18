@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <!-- Etapa 5f: eventos sem dono (WorldEvents.cs). Ajustes de cada um em EcosDaQueda.WorldEventExtension. -->
+
+  <!-- TEMPESTADE DE CINZAS: inverno vulcânico curto e mais frequente; as cinzas são da Queda. -->
+  <GameConditionDef>
+    <defName>EQ_TempestadeCinzas</defName>
+    <conditionClass>GameCondition_VolcanicWinter</conditionClass>
+    <label>tempestade de cinzas</label>
+    <description>As cinzas da Queda nunca assentaram de verdade. De tempos em tempos o vento as levanta de novo, escurece o céu, esfria o chão e lembra a todos que o mundo já acabou uma vez.</description>
+    <descriptionFuture>uma nuvem de cinzas da Queda vai cobrir o céu sobre [map_definite] por [gameConditionDuration_duration], esfriando o ar e enfraquecendo as plantações</descriptionFuture>
+    <endMessage>As cinzas voltaram a assentar. Por enquanto.</endMessage>
+    <letterText>O vento trouxe as cinzas da Queda de volta. O céu escureceu ao meio-dia e a temperatura caiu.\n\nAs plantações vão sofrer sem sol. Os mais velhos dizem que já viram pior; os mais novos dizem que os mais velhos sempre dizem isso.</letterText>
+    <letterDef>NegativeEvent</letterDef>
+    <allowUnderground>false</allowUnderground>
+  </GameConditionDef>
+
+  <IncidentDef>
+    <defName>EQ_Incidente_TempestadeCinzas</defName>
+    <label>tempestade de cinzas</label>
+    <category>Misc</category>
+    <targetTags>
+      <li>Map_PlayerHome</li>
+    </targetTags>
+    <workerClass>IncidentWorker_MakeGameCondition</workerClass>
+    <gameCondition>EQ_TempestadeCinzas</gameCondition>
+    <letterLabel>Tempestade de cinzas</letterLabel>
+    <letterDef>ThreatSmall</letterDef>
+    <baseChance>0.4</baseChance>
+    <earliestDay>20</earliestDay>
+    <minRefireDays>45</minRefireDays>
+    <durationDays>3~8</durationDays>
+  </IncidentDef>
+
+  <!-- ABRIGO QUE SE ABRE: moradores de um abrigo saem pela primeira vez e pedem para ficar (trazem um manual). -->
+  <IncidentDef>
+    <defName>EQ_Incidente_AbrigoAberto</defName>
+    <label>abrigo que se abre</label>
+    <category>Misc</category>
+    <targetTags>
+      <li>Map_PlayerHome</li>
+    </targetTags>
+    <workerClass>EcosDaQueda.IncidentWorker_EQVaultOpens</workerClass>
+    <letterLabel>Saídos do abrigo</letterLabel>
+    <letterText>A porta de um abrigo do Velho Mundo, selada desde a Queda, finalmente abriu. {COUNT} morador(es) saiu(íram) piscando para o sol, com o uniforme ainda engomado e um manual técnico debaixo do braço.\n\nEles juram que lá dentro tudo correu muito bem. Ninguém pergunta por que, então, saíram. Agora são da sua colônia, e perguntam onde fica o refeitório.</letterText>
+    <letterDef>PositiveEvent</letterDef>
+    <baseChance>0.25</baseChance>
+    <earliestDay>8</earliestDay>
+    <minRefireDays>40</minRefireDays>
+    <populationEffect>IncreaseMedium</populationEffect>
+    <modExtensions>
+      <li Class="EcosDaQueda.WorldEventExtension">
+        <pawnCount>1~2</pawnCount>
+        <carry>
+          <EQ_ManualTecnico>1</EQ_ManualTecnico>
+        </carry>
+      </li>
+    </modExtensions>
+  </IncidentDef>
+
+  <!-- COMBOIO PERDIDO: carga de um comboio do Sindicato cai perto; às vezes eles vêm buscar. -->
+  <IncidentDef>
+    <defName>EQ_Incidente_ComboioPerdido</defName>
+    <label>comboio perdido</label>
+    <category>Misc</category>
+    <targetTags>
+      <li>Map_PlayerHome</li>
+    </targetTags>
+    <workerClass>EcosDaQueda.IncidentWorker_EQLostConvoy</workerClass>
+    <letterLabel>Comboio perdido</letterLabel>
+    <letterText>Um comboio de carga sumiu na estrada, e o que sobrou dele veio parar perto da sua colônia: caixotes amassados, lacres arrebentados, nenhum dono à vista.\n\nAchado não é roubado. Pelo menos não até alguém aparecer dizendo o contrário.</letterText>
+    <letterDef>PositiveEvent</letterDef>
+    <baseChance>0.5</baseChance>
+    <earliestDay>5</earliestDay>
+    <minRefireDays>20</minRefireDays>
+    <modExtensions>
+      <li Class="EcosDaQueda.WorldEventExtension">
+        <stacks>4~7</stacks>
+        <stackCount>10~40</stackCount>
+        <cargo>
+          <Steel>5</Steel>
+          <ComponentIndustrial>3</ComponentIndustrial>
+          <MedicineIndustrial>2</MedicineIndustrial>
+          <MealSurvivalPack>3</MealSurvivalPack>
+          <Chemfuel>2</Chemfuel>
+          <Silver>3</Silver>
+          <EQ_ManualTecnico>1</EQ_ManualTecnico>
+          <EQ_DiscoVelhoMundo MayRequire="Ludeon.RimWorld.Biotech">0.5</EQ_DiscoVelhoMundo>
+          <EQ_TituloLataVelha MayRequire="OskarPotocki.VanillaVehiclesExpanded">0.4</EQ_TituloLataVelha>
+        </cargo>
+        <claimChance>0.5</claimChance>
+        <claimFaction>EQ_Faction_SindicatoDoSaque</claimFaction>
+        <claimDelayDays>1</claimDelayDays>
+      </li>
+    </modExtensions>
+  </IncidentDef>
+
+  <!-- RECALL MECANOIDE: mechs com o lacre vencido "recolhem" o que acham que é da Forja. -->
+  <IncidentDef>
+    <defName>EQ_Incidente_RecallMecanoide</defName>
+    <label>recall mecanoide</label>
+    <category>ThreatBig</category>
+    <targetTags>
+      <li>Map_PlayerHome</li>
+    </targetTags>
+    <workerClass>EcosDaQueda.IncidentWorker_EQMechRecall</workerClass>
+    <letterLabel>Recall mecanoide</letterLabel>
+    <letterText>Uma unidade de recall da Irmandade da Forja, perdida desde antes da Queda, finalmente encontrou um endereço na sua memória: o seu. Os mechs vêm "recolher produto com defeito". Pela leitura deles, o produto com defeito são vocês.\n\nA Forja, consultada, informa que a garantia dessas unidades venceu há séculos e que não se responsabiliza.</letterText>
+    <letterDef>ThreatBig</letterDef>
+    <baseChance>0.6</baseChance>
+    <earliestDay>25</earliestDay>
+    <minRefireDays>25</minRefireDays>
+    <minThreatPoints>300</minThreatPoints>
+  </IncidentDef>
+</Defs>

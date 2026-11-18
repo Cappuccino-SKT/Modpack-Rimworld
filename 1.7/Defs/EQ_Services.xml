@@ -227,6 +227,59 @@ Também volta sem voz por alguns dias: a Ordem guarda a fala do paciente como ca
     <resultText>O kit chegou lacrado. Romper o lacre fora de uma oficina autorizada anula a garantia. Você rompeu mesmo assim.</resultText>
   </EcosDaQueda.FactionServiceDef>
 
+  <!-- Bloco 3e: dízimo tecnológico. A colônia entrega dados antigos (bloco 3d) e componentes; a Forja "recolhe a
+       tecnologia perdida" e devolve hardware dela. Os dados vão para o arquivo da Irmandade, que cobra licença deles depois. -->
+  <EcosDaQueda.FactionServiceDef>
+    <defName>EQ_Service_Forja_DizimoMech</defName>
+    <label>dízimo tecnológico: mech de serviço</label>
+    <description>Entregue à Irmandade um manual ou disco do Velho Mundo e alguns componentes. Em troca, chega por cápsula um mecanoide de trabalho registrado, com placa e número de série.
+
+A Irmandade chama isso de "recolher tecnologia perdida para a proteção de todos". O manual vira patente dela na semana seguinte.</description>
+    <faction>EQ_Faction_Forja</faction>
+    <order>3</order>
+    <minRank>1</minRank>
+    <cooldownDays>10</cooldownDays>
+    <costTradeTag>EQ_DadosAntigos</costTradeTag>
+    <costTradeTagCount>1</costTradeTagCount>
+    <costTradeTagLabel>dados antigos (manual ou disco)</costTradeTagLabel>
+    <costThings>
+      <ComponentIndustrial>4</ComponentIndustrial>
+    </costThings>
+    <pawnKinds>
+      <li MayRequire="Ludeon.RimWorld.Biotech">Mech_Lifter</li>
+      <li MayRequire="Ludeon.RimWorld.Biotech">Mech_Constructoid</li>
+      <li MayRequire="Ludeon.RimWorld.Biotech">Mech_Agrihand</li>
+      <li MayRequire="Ludeon.RimWorld.Biotech">Mech_Cleansweeper</li>
+    </pawnKinds>
+    <requiresMod>Ludeon.RimWorld.Biotech</requiresMod>
+    <fame>1</fame>
+    <resultText>Dízimo recebido. O mecanoide chegou com o manual de 900 páginas e um adesivo: "propriedade da Irmandade, cedida em comodato".</resultText>
+  </EcosDaQueda.FactionServiceDef>
+
+  <EcosDaQueda.FactionServiceDef>
+    <defName>EQ_Service_Forja_DizimoVeiculo</defName>
+    <label>dízimo tecnológico: veículo</label>
+    <description>Entregue dois manuais ou discos do Velho Mundo e um componente avançado. A Irmandade devolve o título de posse de um veículo de carga seminovo, revisado na oficina dela.
+
+A revisão consiste em trocar o adesivo da Feira pelo adesivo da Forja.</description>
+    <faction>EQ_Faction_Forja</faction>
+    <order>4</order>
+    <minRank>2</minRank>
+    <cooldownDays>15</cooldownDays>
+    <costTradeTag>EQ_DadosAntigos</costTradeTag>
+    <costTradeTagCount>2</costTradeTagCount>
+    <costTradeTagLabel>dados antigos (manual ou disco)</costTradeTagLabel>
+    <costThings>
+      <ComponentSpacer>1</ComponentSpacer>
+    </costThings>
+    <things>
+      <EQ_TituloSeminovo MayRequire="OskarPotocki.VanillaVehiclesExpanded">1</EQ_TituloSeminovo>
+    </things>
+    <requiresMod>OskarPotocki.VanillaVehiclesExpanded</requiresMod>
+    <fame>2</fame>
+    <resultText>Dízimo recebido. O título chegou carimbado pela Forja; o carro é o mesmo da Feira, agora com garantia de 90 dias.</resultText>
+  </EcosDaQueda.FactionServiceDef>
+
   <!-- ===================================================================== CORO -->
 
   <EcosDaQueda.FactionServiceDef>

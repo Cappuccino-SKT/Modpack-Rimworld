@@ -110,7 +110,7 @@
           <EQ_Silencio_Cobaia>6</EQ_Silencio_Cobaia>
           <EQ_Silencio_Acolito>10</EQ_Silencio_Acolito>
           <EQ_Silencio_Guardiao>5</EQ_Silencio_Guardiao>
-          <EQ_Silencio_Arquivista>1</EQ_Silencio_Arquivista>
+          <EQ_Silencio_Arquivista>0.15</EQ_Silencio_Arquivista>   <!-- raro: base rica não sai com vários líderes -->
         </options>
       </li>
       <li>
@@ -127,7 +127,7 @@
         <options>
           <EQ_Silencio_Acolito>10</EQ_Silencio_Acolito>
           <Villager>8</Villager>
-          <EQ_Silencio_Arquivista>1</EQ_Silencio_Arquivista>
+          <EQ_Silencio_Arquivista>0.15</EQ_Silencio_Arquivista>   <!-- raro: base rica não sai com vários líderes -->
         </options>
       </li>
       <li>
@@ -150,7 +150,7 @@
           <EQ_Silencio_Cobaia>4</EQ_Silencio_Cobaia>
           <EQ_Silencio_Acolito>10</EQ_Silencio_Acolito>
           <EQ_Silencio_Guardiao>5</EQ_Silencio_Guardiao>
-          <EQ_Silencio_Arquivista>1</EQ_Silencio_Arquivista>
+          <EQ_Silencio_Arquivista>0.15</EQ_Silencio_Arquivista>   <!-- raro: base rica não sai com vários líderes -->
         </options>
       </li>
     </pawnGroupMakers>
@@ -224,7 +224,7 @@
           <EQ_Helice_Estagiario>10</EQ_Helice_Estagiario>
           <EQ_Helice_Fiscal>8</EQ_Helice_Fiscal>
           <EQ_Helice_Prototipo>5</EQ_Helice_Prototipo>
-          <EQ_Helice_Diretor>1</EQ_Helice_Diretor>
+          <EQ_Helice_Diretor>0.15</EQ_Helice_Diretor>   <!-- raro: base rica não sai com vários líderes -->
         </options>
       </li>
       <li>
@@ -233,7 +233,7 @@
           <Villager>12</Villager>
           <Villager_Child MayRequire="Ludeon.RimWorld.Biotech">6</Villager_Child>
           <EQ_Helice_Estagiario>8</EQ_Helice_Estagiario>
-          <EQ_Helice_Diretor>1</EQ_Helice_Diretor>
+          <EQ_Helice_Diretor>0.15</EQ_Helice_Diretor>   <!-- raro: base rica não sai com vários líderes -->
         </options>
       </li>
       <li>
@@ -257,7 +257,7 @@
           <EQ_Helice_Estagiario>10</EQ_Helice_Estagiario>
           <EQ_Helice_Fiscal>8</EQ_Helice_Fiscal>
           <EQ_Helice_Prototipo>5</EQ_Helice_Prototipo>
-          <EQ_Helice_Diretor>1</EQ_Helice_Diretor>
+          <EQ_Helice_Diretor>0.15</EQ_Helice_Diretor>   <!-- raro: base rica não sai com vários líderes -->
         </options>
       </li>
     </pawnGroupMakers>
@@ -335,7 +335,7 @@
           <Mech_Pikeman>3</Mech_Pikeman>
           <Mech_Lancer>3</Mech_Lancer>
           <Mech_Scyther>3</Mech_Scyther>
-          <EQ_Forja_Primaz>1</EQ_Forja_Primaz>
+          <EQ_Forja_Primaz>0.15</EQ_Forja_Primaz>   <!-- raro: base rica não sai com vários líderes -->
         </options>
       </li>
       <li>
@@ -344,7 +344,7 @@
           <Villager>10</Villager>
           <EQ_Forja_Aprendiz>8</EQ_Forja_Aprendiz>
           <EQ_Forja_Tecnico>2</EQ_Forja_Tecnico>
-          <EQ_Forja_Primaz>1</EQ_Forja_Primaz>
+          <EQ_Forja_Primaz>0.15</EQ_Forja_Primaz>   <!-- raro: base rica não sai com vários líderes -->
         </options>
       </li>
       <li>
@@ -368,7 +368,7 @@
           <EQ_Forja_Cavaleiro>5</EQ_Forja_Cavaleiro>
           <EQ_Forja_Lacrado MayRequire="OskarPotocki.VFE.Pirates">1</EQ_Forja_Lacrado>
           <EQ_Forja_Tecnico>3</EQ_Forja_Tecnico>
-          <EQ_Forja_Primaz>1</EQ_Forja_Primaz>
+          <EQ_Forja_Primaz>0.15</EQ_Forja_Primaz>   <!-- raro: base rica não sai com vários líderes -->
         </options>
       </li>
     </pawnGroupMakers>
@@ -441,7 +441,7 @@
           <EQ_Coro_Corista>10</EQ_Coro_Corista>
           <EQ_Coro_Tenor>4</EQ_Coro_Tenor>
           <EQ_Coro_Soprano>3</EQ_Coro_Soprano>
-          <EQ_Coro_Maestro>1</EQ_Coro_Maestro>
+          <EQ_Coro_Maestro>0.15</EQ_Coro_Maestro>   <!-- raro: base rica não sai com vários líderes -->
         </options>
       </li>
       <li>
@@ -450,7 +450,7 @@
           <Villager>10</Villager>
           <Villager_Child MayRequire="Ludeon.RimWorld.Biotech">5</Villager_Child>
           <EQ_Coro_Corista>8</EQ_Coro_Corista>
-          <EQ_Coro_Maestro>1</EQ_Coro_Maestro>
+          <EQ_Coro_Maestro>0.15</EQ_Coro_Maestro>   <!-- raro: base rica não sai com vários líderes -->
         </options>
       </li>
       <li>
@@ -473,7 +473,7 @@
           <EQ_Coro_Corista>10</EQ_Coro_Corista>
           <EQ_Coro_Tenor>4</EQ_Coro_Tenor>
           <EQ_Coro_Soprano>3</EQ_Coro_Soprano>
-          <EQ_Coro_Maestro>1</EQ_Coro_Maestro>
+          <EQ_Coro_Maestro>0.15</EQ_Coro_Maestro>   <!-- raro: base rica não sai com vários líderes -->
         </options>
       </li>
     </pawnGroupMakers>

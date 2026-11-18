@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <!-- Etapa 5d: Fungobi (zumbis do mundo) — Fungobi.cs. Facção oculta e sempre hostil, sem ataques comuns
+       (raidCommonality 0): vêm pela horda (EQ_Incidente_HordaFungobi) e moram nas ruínas de assentamentos destruídos.
+       Xenos do usuário em Defs/Xenotypes/EQ_Xenotypes.xml; a pele vira fio do diabo (EQ_Gene_PeleFioDoDiabo). -->
+
+  <FactionDef ParentName="FactionBase">
+    <defName>EQ_Faction_Fungobi</defName>
+    <label>Fungobi</label>
+    <description>Não é uma facção: é o que anda depois que o micélio termina a mudança. Os Fungobi não negociam, não fogem e não esquecem para onde ia o barulho.</description>
+    <pawnSingular>fungobi</pawnSingular>
+    <pawnsPlural>fungobi</pawnsPlural>
+    <fixedName>Fungobi</fixedName>
+    <categoryTag>EQ_Fungobi</categoryTag>
+    <requiredCountAtGameStart>1</requiredCountAtGameStart>
+    <maxConfigurableAtWorldCreation>1</maxConfigurableAtWorldCreation>
+    <displayInFactionSelection>false</displayInFactionSelection>
+    <canGenerateQuestSites>false</canGenerateQuestSites>
+    <hidden>true</hidden>
+    <permanentEnemy>true</permanentEnemy>
+    <autoFlee>false</autoFlee>
+    <canStageAttacks>false</canStageAttacks>
+    <rescueesCanJoin>false</rescueesCanJoin>
+    <humanlikeFaction>true</humanlikeFaction>
+    <techLevel>Neolithic</techLevel>
+    <fixedIdeo>true</fixedIdeo>
+    <ideoName>O Micélio</ideoName>
+    <ideoDescription>Não há pregação nem templo: só a certeza, espalhada de boca em boca e de mordida em mordida, de que toda carne um dia vira terreno fértil.</ideoDescription>
+    <hiddenIdeo>true</hiddenIdeo>
+    <factionIconPath>World/WorldObjects/Expanding/Sites/DownedRefugee</factionIconPath>
+    <colorSpectrum>
+      <li>(0.55, 0.62, 0.40)</li>
+    </colorSpectrum>
+    <backstoryFilters>
+      <li>
+        <categories>
+          <li>Outlander</li>
+          <li>Tribal</li>
+        </categories>
+      </li>
+    </backstoryFilters>
+    <raidCommonalityFromPointsCurve>
+      <points>
+        <li>(0, 0)</li>
+      </points>
+    </raidCommonalityFromPointsCurve>
+    <maxPawnCostPerTotalPointsCurve>
+      <points>
+        <li>(0, 60)</li>
+        <li>(500, 130)</li>
+        <li>(10000, 10000)</li>
+      </points>
+    </maxPawnCostPerTotalPointsCurve>
+    <pawnGroupMakers>
+      <li>
+        <kindDef>Combat</kindDef>
+        <commonality>100</commonality>
+        <options>
+          <EQ_Fungobi>10</EQ_Fungobi>
+          <EQ_Fungobi_Atirador>3</EQ_Fungobi_Atirador>
+          <EQ_Fungobi_Acido>3</EQ_Fungobi_Acido>
+          <EQ_Fungobi_Lider>0.5</EQ_Fungobi_Lider>
+        </options>
+      </li>
+    </pawnGroupMakers>
+  </FactionDef>
+
+  <PawnKindDef Abstract="True" Name="EQ_FungobiBase">
+    <race>Human</race>
+    <defaultFactionDef>EQ_Faction_Fungobi</defaultFactionDef>
+    <useFactionXenotypes>false</useFactionXenotypes>
+    <apparelIgnoreSeasons>true</apparelIgnoreSeasons>
+    <apparelIgnorePollution MayRequire="Ludeon.RimWorld.Biotech">true</apparelIgnorePollution>
+    <apparelMoney>0~250</apparelMoney>
+    <apparelTags>
+      <li>IndustrialBasic</li>
+    </apparelTags>
+    <apparelAllowHeadgearChance>0.1</apparelAllowHeadgearChance>
+    <gearHealthRange>0.1~0.4</gearHealthRange>
+    <weaponMoney>0~0</weaponMoney>
+    <isFighter>true</isFighter>
+    <chemicalAddictionChance>0</chemicalAddictionChance>
+    <combatEnhancingDrugsChance>0</combatEnhancingDrugsChance>
+    <invNutrition>0</invNutrition>
+    <canBeSapper>false</canBeSapper>
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="EQ_FungobiBase">
+    <defName>EQ_Fungobi</defName>
+    <label>fungobi</label>
+    <labelPlural>fungobi</labelPlural>
+    <combatPower>45</combatPower>
+    <xenotypeSet>
+      <xenotypeChances>
+        <EQ_Xeno_Fungobi>1</EQ_Xeno_Fungobi>
+      </xenotypeChances>
+    </xenotypeSet>
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="EQ_FungobiBase">
+    <defName>EQ_Fungobi_Atirador</defName>
+    <label>fungobi atirador</label>
+    <labelPlural>fungobi atiradores</labelPlural>
+    <combatPower>65</combatPower>
+    <weaponMoney>100~300</weaponMoney>
+    <weaponTags>
+      <li>SimpleGun</li>
+    </weaponTags>
+    <xenotypeSet>
+      <xenotypeChances>
+        <EQ_Xeno_FungobiAtirador>1</EQ_Xeno_FungobiAtirador>
+      </xenotypeChances>
+    </xenotypeSet>
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="EQ_FungobiBase">
+    <defName>EQ_Fungobi_Acido</defName>
+    <label>fungobi ácido</label>
+    <labelPlural>fungobi ácidos</labelPlural>
+    <combatPower>60</combatPower>
+    <xenotypeSet>
+      <xenotypeChances>
+        <EQ_Xeno_FungobiAcido>1</EQ_Xeno_FungobiAcido>
+      </xenotypeChances>
+    </xenotypeSet>
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="EQ_FungobiBase">
+    <defName>EQ_Fungobi_Lider</defName>
+    <label>fungobi-mãe</label>
+    <labelPlural>fungobi-mães</labelPlural>
+    <combatPower>120</combatPower>
+    <weaponMoney>50~200</weaponMoney>
+    <weaponTags>
+      <li>NeolithicMeleeBasic</li>
+    </weaponTags>
+    <xenotypeSet>
+      <xenotypeChances>
+        <EQ_Xeno_FungobiLider>1</EQ_Xeno_FungobiLider>
+      </xenotypeChances>
+    </xenotypeSet>
+  </PawnKindDef>
+
+  <IncidentDef>
+    <defName>EQ_Incidente_HordaFungobi</defName>
+    <label>horda Fungobi</label>
+    <category>ThreatBig</category>
+    <targetTags>
+      <li>Map_PlayerHome</li>
+    </targetTags>
+    <workerClass>EcosDaQueda.IncidentWorker_EQFungobiHorde</workerClass>
+    <baseChance>0.8</baseChance>
+    <minRefireDays>12</minRefireDays>
+    <earliestDay>12</earliestDay>
+    <minThreatPoints>150</minThreatPoints>
+    <letterLabel>Horda Fungobi</letterLabel>
+    <letterText>O vento trouxe cheiro de cogumelo e carne velha. Uma horda de Fungobi vem andando na direção da colônia, atrás do barulho, como sempre.\n\nEles não fogem e não negociam. Mas a pele de cada um vira fio do diabo, e fio do diabo vale ouro: a Feira chama isso de "colheita".</letterText>
+    <letterDef>ThreatBig</letterDef>
+  </IncidentDef>
+</Defs>
