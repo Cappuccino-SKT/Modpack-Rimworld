@@ -1,0 +1,23 @@
+# Etapa 5e: eventos das facções menores (greve do Sindicato, liquidação da Feira, recolhimento de colmeia, matéria-prima do Reino do Lodo). Rodar com -Profile full.
+newgame
+timeout 900
+give Silver 2000
+hostile sindicatodosaque
+truce sindicatodosaque
+event EQ_Sindicato_Greve
+choose greve 0
+truce sindicatodosaque
+event EQ_Feira_Liquidacao
+choose Liquidação 0
+wait 2h
+count EQ_ManualTecnico
+event EQ_Helice_RecolhimentoColmeia
+retaliation
+hostile colmeiaerguida
+choose colmeia 0
+lastretaliation
+hostile reinodolodo
+give Meat_Pig 80
+event EQ_ReinoLodo_MateriaPrima
+choose matéria-prima 1
+goodwill reinodolodo 0

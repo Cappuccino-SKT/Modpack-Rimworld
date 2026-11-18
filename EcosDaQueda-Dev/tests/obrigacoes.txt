@@ -1,0 +1,29 @@
+# Etapa 11a: obrigações de cargo (faixa de cargo, colono emprestado volta sozinho, 3 faltas = rebaixamento). Rodar com -Profile full.
+newgame
+timeout 900
+join forja
+wait 1h
+leader set 0
+psy title 3 forja
+wait 1h
+obligations
+events
+event EQ_Obrigacao_Forja_Cota
+event EQ_Obrigacao_Forja_Fabrica
+choose fábrica 0
+obligations
+event EQ_Obrigacao_Forja_Fabrica
+choose fábrica 2
+event EQ_Obrigacao_Forja_Fabrica
+choose fábrica 2
+obligations
+event EQ_Obrigacao_Forja_Fabrica
+choose fábrica 2
+obligations
+event EQ_Obrigacao_Forja_Cota
+give Steel 150
+choose cota 1
+obligations return
+wait 1h
+obligations
+dump

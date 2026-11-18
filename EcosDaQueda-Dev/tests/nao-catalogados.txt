@@ -1,0 +1,18 @@
+# Etapa 5c: Não Catalogados fase 2 (expedição de coleta do Silêncio com contra-ataque, contrato de contenção oferecido mesmo hostis). Rodar com -Profile full.
+newgame
+timeout 900
+hostile naocatalogados
+events
+retaliation
+event EQ_Silencio_ExpedicaoColeta
+choose coleta 0
+lastretaliation
+rep silencio add 0 0
+goodwill naocatalogados -80
+give Meat_Human 60
+event EQ_NaoCatalogados_Contencao
+choose contrato 0
+rep silencio add 0 0
+count Meat_Human
+wait 3d
+letters

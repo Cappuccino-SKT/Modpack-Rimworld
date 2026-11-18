@@ -11,6 +11,10 @@ _Só o estado atual e os próximos passos. Manter curto (até ~60 linhas). Detal
 - **Etapa 5f (2026-11-18):** eventos sem dono: tempestade de cinzas, abrigo que se abre (moradores entram com manual), comboio perdido (o Sindicato pode vir buscar), recall mecanoide.
 - **Etapa 4a (2026-11-18):** sementes na Feira e como dízimo do Coro (órgãos já eram vendidos).
 - **Etapa 4c (parte, 2026-11-18):** 4 resultados de ritual escolhíveis, um por potência (fama, favor, itens).
+- **Etapa 11a (2026-11-18):** obrigações de cargo: 2 por potência (cargos 1–2 e 3–4), colono emprestado que volta sozinho, 3 faltas = rebaixamento de um cargo.
+- **Etapa 5b (2026-11-18):** Fora de Linha, fase 2: Exposição perante a Forja, dados de diagnóstico como moeda, ofertas da rede (contrabando, apagar registro, sabotagem) e a proposta da Forja de trair a célula.
+- **Etapa 5c (2026-11-18):** Não Catalogados, fase 2: expedição de coleta do Silêncio (com contra-ataque) e contrato de contenção com a Carne.
+- **Etapa 5e (2026-11-18):** facções menores: greve do Sindicato com trégua real, liquidação da Feira, recolhimento de colmeia da Hélice, matéria-prima do Reino do Lodo.
 - **Etapa 10a (ferramenta):** comando `perf` e linha de base em `tecnico/desempenho.md` (jogo novo ≈ 2400 tiques/s sem desenho; nada pesa ainda).
 - **Etapa 8 (parte):** peso do líder nos grupos das potências 1 → 0,15; executor conta erros de carregamento do nosso mod; correção do VEE (predadores por bioma) em `ThirdPartyFixes.cs`.
 - **Compatibilidade 1.7:** `mods/compat-1.7.md` (91 mods declaram 1.7; 29 só até 1.6, todos carregam e passam nos testes).
@@ -18,11 +22,11 @@ _Só o estado atual e os próximos passos. Manter curto (até ~60 linhas). Detal
 
 ## Não commitado
 
-Nada. Tudo de 2026-11-18 commitado e enviado: mod `dea3cea`, debug `015e776`, raiz `ee50e1a`.
+Nada. Blocos 11a, 5b, 5c e 5e commitados e enviados em 2026-11-18 (commit "Etapas 11a, 5b, 5c e 5e" nas três branches).
 
 ## Próximo passo
 
-Blocos que não dependem do usuário, nesta ordem: **4b sem o Rimesis** (Alpha Biomes, trincheiras nos cercos), resto da Etapa 8 (perfil lean, intermitentes, volta ao menu no lote). Roteiro completo: `PLANO.md` › Roteiro.
+Blocos que não dependem do usuário, na ordem do roteiro: resto da Etapa 8 (perfil lean, intermitentes, volta ao menu no lote) → **5g missões dos mods** (bloco grande: só o VQE Ancients tem ~66 mil caracteres em `traducao/en/vanillaquestsexpanded.ancients.tsv`; faltam exportar Drone Factory e Generator; fluxo em `tecnico/traducao.md`; fazer em sessão nova, em partes) → 4b sem o Rimesis (Alpha Biomes, trincheiras nos cercos) → 11b administrar algo da potência. Roteiro completo: `PLANO.md` › Roteiro.
 
 ## Precisa do usuário (✱)
 
@@ -47,13 +51,8 @@ Blocos que não dependem do usuário, nesta ordem: **4b sem o Rimesis** (Alpha B
 
 ## A conferir pelo usuário (só visual)
 
-- 4c: os 4 resultados na tela de criar/editar ritual da ideologia e a carta do fim do ritual.
+- Blocos de 2026-11-17/18 (cartas, telas e itens novos): 3d manual e disco; 3e dízimo tecnológico; 4c resultados de ritual; 5a eventos de potência; 5b rede e Exposição; 5c expedição e contrato; 5e greve, liquidação, colmeia, matéria-prima; 5d horda e ruínas Fungobi; 5f eventos sem dono; 11a obrigações e rebaixamento. Detalhe de cada um no `HISTORICO.md`.
 - Se um def novo não aparecer no jogo depois de atualizar: apagar o cache do Missile Girl (ver TESTES.md).
-- 5f: as 4 cartas (cinzas: céu escuro; abrigo; comboio com cápsulas; recall).
-- 5d: horda Fungobi (carta, aparência dos 4 tipos, pele virando fio do diabo) e uma ruína de assentamento destruído com moradores.
-- 5a: as 4 cartas de evento (texto, opções desativadas com motivo), lembrança "ouvi o Coro".
-- 3e: serviços "dízimo tecnológico" no menu de serviços da Forja (custo "1 dado antigo"), mech chegando por cápsula, título de veículo.
-- 3d: manual técnico e disco do Velho Mundo (ícone, nome com o projeto, botão de ler, mensagens), itens em abrigos/ruínas/marcos e na Feira.
 - 3c: bancada de engenharia reversa, conta "fazer engenharia reversa" e mensagens. 3b: botão "Licenças" e janela; motivo da trava. 3a: tela de pesquisa com 6 abas.
 - Itens antigos (lista completa no fim do `HISTORICO.md`): início sem modo dev, bases, permissões, serviços, marcos, Colmeia, Linha Exótica, veículos, bichos de lixão, androides, psycasts, "Saídos do abrigo", aba Reputação, unidades e comércio, ideologias.
 - A fazer pelo usuário: xeno do líder da Forja, arte do retrato do narrador.

@@ -1,0 +1,26 @@
+# Etapa 5b: Fora de Linha fase 2 (Exposição perante a Forja, dados de diagnóstico, ofertas da rede, trair a célula). Rodar com -Profile full.
+newgame
+timeout 900
+exposure
+exposure drop
+events
+goodwill foradelinha 30
+give EQ_DadosDiagnostico 10
+give Silver 1000
+event EQ_Rede_Contrabando
+choose contrabando 0
+exposure
+event EQ_Rede_Sabotagem
+choose sabotagem 0
+exposure
+exposure add 20
+event EQ_Rede_ApagarRegistro
+choose registros 0
+exposure
+exposure add 50
+event EQ_Forja_TrairCelula
+choose célula 0
+exposure
+exposure add 100
+exposure add 0
+wait 2h

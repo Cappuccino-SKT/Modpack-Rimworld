@@ -17,6 +17,7 @@ _Criado em 2026-11-15 a partir da lista do usuário. Cada etapa termina com test
 | 8 | Pendências antigas | pequeno | independente |
 | 9 | Polimento, balanceamento e lançamento | médio | todas |
 | 10 | Estratégia, desempenho e mundo fixo (lista do usuário de 2026-11-17) | grande | 3 (fecha a tecnologia); 10a mede antes de mexer |
+| 11 | Cargos com obrigações reais: quanto mais alto o cargo, mais a potência cobra (comandar exército na guerra, administrar coisas da potência) — pedido do usuário de 2026-11-18 | grande | 5a (eventos), 10d (tropas do Hegemony) |
 
 ## Roteiro do que falta (revisto em 2026-11-17)
 
@@ -33,10 +34,10 @@ Um bloco por sessão. Estimativa: **~25 blocos**. Ordem recomendada (cada linha 
 
 **Etapa 5 — eventos do mundo (7 blocos).**
 6. ~~**5a Eventos por potência**~~ (feito, 2026-11-18, `PowerEvents.cs`; falta o gatilho por guerras do Hegemony, que fica para o 10d): auditoria da Hélice, inspeção de garantia da Forja, turnê do Coro, chamada de artigos do Silêncio (gatilhos: reputação, cargo, guerras do Hegemony).
-7. **5b Fora de Linha, fase 2:** Exposição perante a Forja, dados de diagnóstico como moeda, sabotagem, serviços da rede, trair a célula; recall do androide desperto.
-8. **5c Não Catalogados, fase 2:** expedições de coleta do Silêncio contra os ninhos, contrato de contenção com Não Catalogados, defesa/resgate, contra-ataque de entidades.
+7. ~~**5b Fora de Linha, fase 2**~~ (feito, 2026-11-18, `ForaDeLinha.cs`, `EQ_ForaDeLinha.xml`): Exposição perante a Forja (0–100, aviso em 50, reação em 100), dados de diagnóstico (caem de mechs e técnicos da Forja), ofertas da rede (contrabando, apagar registro, sabotagem) e trair a célula (proposta da Forja). Falta: a Forja exigir a entrega do androide desperto (recall) e mercado negro de licenças.
+8. ~~**5c Não Catalogados, fase 2**~~ (feito, 2026-11-18, `EQ_NaoCatalogados.xml`): expedição de coleta do Silêncio (colono emprestado, bioferrita e fragmento; 40% de contra-ataque dos Não Catalogados em 3 dias) e contrato de contenção oferecido pelos Não Catalogados mesmo hostis (tributo em carne ou prisioneiro; o Silêncio cobra Infâmia). Falta: missão de defesa/resgate (fica para a 5g, com as missões).
 9. ~~**5d Fungobi**~~ (feito, 2026-11-18, `Fungobi.cs`): facção oculta sempre hostil, horda (incidente de ameaça grande, dia 12+) e ruínas de assentamentos destruídos com moradores Fungobi (70%).
-10. **5e Facções menores:** greve do Sindicato (trégua), liquidação da Feira, missão de recolhimento de colmeia (Hélice), ataques do Reino do Lodo por "matéria-prima".
+10. ~~**5e Facções menores**~~ (feito, 2026-11-18, `EQ_MinorEvents.xml`): greve do Sindicato (trégua real de 20–30 dias sem ataques dele, mesmo sendo inimigo permanente), liquidação da Feira (lotes fechados), recolhimento de colmeia pela Hélice (contra a Colmeia Erguida, com contra-ataque) e o Reino do Lodo exigindo "matéria-prima" (prisioneiro ou carne; recusar = 70% de ataque).
 11. ~~**5f Eventos sem dono**~~ (feito, 2026-11-18, `WorldEvents.cs`): tempestade de cinzas, abrigo que se abre, comboio perdido (o Sindicato às vezes vem buscar), recall mecanoide.
 12. **5g Missões dos mods com texto nosso:** quem pede (potência em vez de "qualquer líder"), tradução dos VQE.
 
@@ -56,6 +57,8 @@ Um bloco por sessão. Estimativa: **~25 blocos**. Ordem recomendada (cada linha 
 19–20. Preferir mods prontos para 1.7 e CE; o resto por patch nosso.
 
 **Etapa 10 — estratégia, desempenho e mundo fixo (~9 blocos; lista do usuário de 2026-11-17).** Detalhe na seção da Etapa 10. Ordem sugerida: 10a logo depois do 3e; 10b antes da Etapa 5 (os eventos usam o mundo); 10c–10e junto ou logo depois da 5a (guerras); 10f por último, antes da Etapa 9.
+
+**Etapa 11 — cargos com obrigações (~4 blocos; pedido do usuário de 2026-11-18).** Detalhe na seção da Etapa 11. 11a pode vir logo (só usa sistemas prontos); 11c depende do 10d.
 
 **Etapa 9 — polimento e lançamento (4–5 blocos).**
 21. **Balanceamento:** preços e quantidades do comércio, laser/bobina no CE, cavaleiro lacrado, custos da pesquisa.
@@ -220,9 +223,24 @@ Origem: `Desktop/Coisas que o modpack precisa t er.txt`. Regra do projeto: não 
 - **10a — Medição (1 bloco, primeiro).** _Ferramenta feita (2026-11-18): `perf start`/`perf report` e `tests/perf.txt`; linha de base em `tecnico/desempenho.md`. Falta medir jogo longo com guerras do Hegemony._ Comando `perf` no executor: ticks por segundo e custo por sistema num jogo longo (perfil full, 15–30 dias), com e sem o Hegemony, e quanto custam os tiques do mundo (expedições, territórios, caravanas). Resultado em `tecnico/desempenho.md`; ele decide o que entra no 10c e no 10d. Ferramenta de apoio: Dubs Performance Analyzer (com janela, pelo usuário).
 - **10b — Mundo fixo com a história (1–2 blocos).** Sempre o mesmo planeta: semente, tamanho, cobertura e relevo fixos; capitais das potências, terras das facções menores e os 10 marcos nossos sempre nas mesmas regiões; variam só detalhes (nomes de líderes, bases menores, alguns marcos). Cenários próprios apontam para esse mundo. Facilita a história, o Hegemony (fronteiras previsíveis) e o Seamless World. **(decidir)** quanto varia entre partidas; mapa desenhado à mão ou semente escolhida.
 - **10c — Mod de desempenho (1–2 blocos).** Mod novo (`mod/ecos-desempenho`, worktree em `Mods/EcosDesempenho`): regras simplificadas conforme o 10a (ex.: limite de pawns do mundo, tiques mais espaçados de sistemas caros, limpeza de corpos e sujeira longe da colônia). Cada mudança com o custo de imersão listado para o usuário aprovar ✱.
-- **10d — Hegemony aperfeiçoado (2–3 blocos).** Otimizar o que o 10a apontar (por Harmony, sem editar o mod); mecânicas novas pela API pública (API 4/5: leitura do estado, agendamento de invasões, forças enviadas): **alocação de tropas** (exércitos e guarnições como objetos do mundo, com custo e manutenção), frentes de guerra entre territórios, papel do jogador como vassalo (enviar tropas, receber pedidos da potência).
+- **10d — Hegemony aperfeiçoado (2–3 blocos).** Otimizar o que o 10a apontar (por Harmony, sem editar o mod); mecânicas novas pela API pública (API 4/5: leitura do estado, agendamento de invasões, forças enviadas): **alocação de tropas** (exércitos e guarnições como objetos do mundo, com custo e manutenção); cada exército pode ser resolvido de forma abstrata no mapa-mundi ou levado a uma batalha real, simulada ou jogada (decisão do usuário de 2026-11-18; o jogador comanda forças da potência nos cargos altos, Etapa 11), frentes de guerra entre territórios, papel do jogador como vassalo (enviar tropas, receber pedidos da potência).
 - **10e — Batalhas de trincheira (1–2 blocos).** Quando territórios de duas nações em guerra se encostam, abre-se uma **frente de trincheira**: sítio no mapa-mundi com mapa gerado de trincheiras (mod Trenches) e as duas facções lutando em ondas; o jogador pode apoiar um lado (Fama e favor), ficar de fora ou saquear os mortos; o resultado empurra a fronteira no Hegemony. Usa o 10d (tropas) e a 5a (eventos de guerra).
 - **10f — Seamless World (objetivo final; pesquisa + blocos).** Hoje desativado por bug ✱ (o usuário descreve o bug). Depois do 10a–10c: religar no perfil de teste, medir, listar o que quebra (nossos sistemas de mapa: bases, marcos, dados antigos, cerimônia) e o que é viável; decidir com o usuário.
+
+## Etapa 11 — Cargos com obrigações reais (grande; pedido do usuário de 2026-11-18)
+
+Hoje o cargo só dá coisas (permissões, licenças, serviços, caminhos do VPE) e cobra pouco (dízimo). A ideia é o cargo **pesar**: quanto mais alto, mais a potência exige, com prazo, e falhar custa (favor, Fama; no máximo, rebaixamento). Cada obrigação tem a cara da potência, e cumprir bem dá favor e acelera a promoção.
+
+- **Escada de obrigações por nível.** Cargos 1–2: tarefas pequenas (entregas, abrigar um enviado, emprestar um colono por alguns dias). Cargos 3–4: **gerenciar coisas da potência** — um posto avançado/entreposto perto da colônia (Outposts/Hegemony), a cota de produção da Forja, o dízimo de uma região, a fiscalização de piratas de tecnologia. Cargos 5+: **comandar** — liderar um exército da potência numa guerra do Hegemony, defender uma base aliada sitiada, decidir o destino de prisioneiros de guerra, votar/arbitrar disputas internas (sucessão do líder da potência).
+- **Formato.** Cada obrigação é uma carta-missão (reaproveita `PowerEventDef`/missões do bloco F) com prazo, custo de não cumprir e recompensa; o executor ganha comandos para forçar e conferir. Recusar ou falhar várias vezes = rebaixamento de um cargo (perde o que ele licencia). Promoção recusável: a cerimônia de promoção ganha a opção "recusar".
+- **Por potência (rascunho, decidir ✱):** Silêncio — conduzir uma expedição de coleta aos ninhos, guardar uma contenção, "arquivar" (silenciar) uma testemunha; Hélice — gerir uma filial (meta de lucro), cobrar devedores, testar um produto nos próprios colonos; Forja — cota de componentes/mechs, comandar o recall de um assentamento pirata, manter a guarnição de uma fábrica; Coro — organizar o torneio/festival da corte, comandar a guarda numa guerra, escolher quem vai para o "treinamento vocal".
+- **Exército na guerra (cargos altos).** Depende do 10d: tropas como objetos do mundo, alocadas de forma abstrata ou levadas a uma batalha real (simulada ou jogada). O jogador recebe o comando de uma força da potência (tamanho pelo cargo), escolhe alvo/postura no mapa-mundi, paga a manutenção ou perde moral; vitória empurra a fronteira e dá muito favor; derrota pesa no cargo. Pode virar batalha jogável (10e, trincheiras) se o jogador for junto.
+- **Feito (2026-11-18): 11a** — 8 obrigações (2 por potência: cargos 1–2 e 3–4), colono emprestado, faltas e rebaixamento (`PowerEvents.cs`, `EQ_Obligations.xml`).
+- **Blocos:** 11a escada de obrigações simples dos cargos 1–4 com o que já existe (cartas, entregas, serviços, emprestar colono); 11b administrar algo da potência (posto avançado/cota) com estado salvo e relatório periódico; 11c comandar exército (com 10d); 11d rebaixamento, recusa de promoção, textos e balanceamento.
+- **Decidido pelo usuário (2026-11-18):**
+  - **Punição máxima = rebaixamento de cargo** (nunca expulsão por falhar obrigação). Antes disso: perda de favor e Fama.
+  - **O jogador pode recusar a promoção** (fica no cargo atual e nas obrigações dele).
+  - **Exército nos dois modos:** alocar de forma abstrata pelo mundo (mapa-mundi, resolução simulada) **e** usar numa batalha real, simulada ou jogada (o jogador escolhe; ligado ao 10e). Vem junto com a melhoria do sistema de guerra e política (10d).
 
 ## Etapa 8 — Pendências antigas
 

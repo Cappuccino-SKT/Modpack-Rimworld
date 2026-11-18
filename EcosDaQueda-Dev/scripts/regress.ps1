@@ -12,7 +12,7 @@
 # Relatórios completos em tests\out\<teste>.txt.full.result.txt.
 param(
     [string[]]$Tests = @('ideo', 'cerimonia-helice', 'cerimonia-forja', 'cerimonia-coro', 'psy-coro', 'androides', 'permissoes', 'bases', 'medieval', 'insetos', 'missoes', 'sanidade', 'reino-lodo', 'colmeia', 'sucata', 'veiculos', 'marcos', 'genes', 'pesquisa', 'licencas', 'engenharia-reversa', 'dados-antigos', 'fungobi', 'inicio', 'inicio-forja', 'arsenal', 'arsenal-forja',
-                         'comercio', 'faccoes-menores', 'faccoes-menores2', 'xenotipos', 'fase3', 'fechamento-tech', 'eventos-potencias', 'eventos-mundo', 'mercados', 'rituais'),
+                         'comercio', 'faccoes-menores', 'faccoes-menores2', 'xenotipos', 'fase3', 'fechamento-tech', 'eventos-potencias', 'eventos-mundo', 'mercados', 'rituais', 'obrigacoes', 'fora-de-linha', 'nao-catalogados', 'menores-eventos'),
     [switch]$Build,
     [switch]$Long,
     [switch]$Single,
