@@ -220,7 +220,54 @@ namespace EcosDaQueda.DebugTools
                         + (gw != null ? " boa_vontade=" + gw.PlayerGoodwill : ""));
                     break;
                 }
-                default: return "uso: tech status|try|grant|revoke|finish|current|work|license|buy|licenses|craft";
+                case "finishprereqs":
+                {
+                    var p = P();
+                    foreach (var pre in (p.prerequisites ?? new List<ResearchProjectDef>()).Concat(p.hiddenPrerequisites ?? new List<ResearchProjectDef>()))
+                        if (!pre.IsFinished) Find.ResearchManager.FinishProject(pre, false, null, false);
+                    sb.Append(p.defName + " prereqs_ok=" + p.PrerequisitesCompleted);
+                    break;
+                }
+                case "rsources":
+                {
+                    // Bloco 3c: quantos itens ensinam algo, por ramo do projeto.
+                    var src = EQReverse.Sources;
+                    sb.AppendLine("itens=" + src.Count + " projetos=" + src.Values.SelectMany(x => x).Distinct().Count()
+                        + " receita=" + (EQReverse.Recipe?.defName ?? "NENHUMA") + " bancada=" + (DefDatabase<ThingDef>.GetNamedSilentFail("EQ_BancadaEngenhariaReversa")?.defName ?? "NENHUMA")
+                        + " pesquisa_bancada=" + (DefDatabase<ResearchProjectDef>.GetNamedSilentFail("EQ_Pesquisa_EngenhariaReversa") is ResearchProjectDef rb ? rb.defName + "/" + EQResearch.Branch(rb)?.defName + "/" + rb.tab?.defName : "NENHUMA"));
+                    var fora = src.Keys.Where(d => !EQReverse.Recipe.fixedIngredientFilter.Allows(d)).ToList();
+                    sb.AppendLine("fora_do_filtro=" + fora.Count + " categorias=" + string.Join(",", fora.GroupBy(d => d.FirstThingCategory?.defName ?? "-").OrderByDescending(g => g.Count()).Select(g => g.Key + ":" + g.Count() + "(" + g.First().defName + ")")));
+                    foreach (var g in src.SelectMany(kv => kv.Value.Select(r => (kv.Key, r))).GroupBy(x => EQResearch.Branch(x.r)?.defName ?? "NENHUM").OrderBy(g => g.Key))
+                        sb.AppendLine("ramo " + g.Key + ": itens=" + g.Select(x => x.Key).Distinct().Count() + " projetos=" + g.Select(x => x.r).Distinct().Count()
+                            + " ex=" + string.Join(",", g.Select(x => x.Key.defName).Distinct().Take(5)));
+                    break;
+                }
+                case "reverse":
+                {
+                    // tech reverse <ThingDef>[:vida%]: cria o item perto do colono, confere o filtro da receita e desmonta (mesma rotina da bancada).
+                    string[] parts = arg.Split(':');
+                    ThingDef def = DefDatabase<ThingDef>.GetNamed(parts[0]);
+                    Thing t = ThingMaker.MakeThing(def, def.MadeFromStuff ? GenStuff.DefaultStuffFor(def) : null);
+                    if (parts.Length > 1 && t.def.useHitPoints) t.HitPoints = Mathf.Max(1, Mathf.RoundToInt(t.MaxHitPoints * float.Parse(parts[1]) / 100f));
+                    Thing spawned = def.Minifiable ? t.MakeMinified() : t;
+                    Pawn col = PawnsFinder.AllMaps_FreeColonists.FirstOrDefault();
+                    GenPlace.TryPlaceThing(spawned, col.Position, col.Map, ThingPlaceMode.Near);
+                    RecipeDef rec = EQReverse.Recipe;
+                    var proj = EQReverse.PickProject(spawned);
+                    bool allows = rec.fixedIngredientFilter.Allows(spawned) && rec.ingredients[0].filter.Allows(spawned);
+                    float before = proj == null ? 0f : proj.ProgressPercent;
+                    var owner = proj == null ? null : EQLicenses.OwnedBranch(proj);
+                    Faction of = owner == null ? null : EQUtil.MainFaction(owner.faction);
+                    float infBefore = of == null ? 0f : WorldComponent_Reputation.Current.Get(of).infamy;
+                    float frac = EQReverse.Fraction(spawned);
+                    if (allows) rec.Worker.ConsumeIngredient(spawned, rec, col.Map); else spawned.Destroy();
+                    sb.Append("item=" + parts[0] + " valor=" + t.MarketValue.ToString("0") + " fracao=" + frac.ToStringPercent() + " filtro=" + allows + " projeto=" + (proj?.defName ?? "-")
+                        + (proj == null ? "" : " ramo=" + EQResearch.Branch(proj)?.defName + " progresso=" + before.ToStringPercent() + "->" + proj.ProgressPercent.ToStringPercent()
+                            + " concluido=" + proj.IsFinished + " prereqs_ok=" + proj.PrerequisitesCompleted + " acesso=" + EQResearch.HasAccess(proj) + " licenca=" + EQLicenses.IsLicensed(proj))
+                        + (of == null ? "" : " infamia_" + owner.faction.defName + "=" + infBefore.ToString("0.#") + "->" + WorldComponent_Reputation.Current.Get(of).infamy.ToString("0.#")));
+                    break;
+                }
+                default: return "uso: tech status|try|grant|revoke|finish|current|work|license|buy|licenses|craft|rsources|reverse";
             }
             return sb.ToString().TrimEnd();
         }
