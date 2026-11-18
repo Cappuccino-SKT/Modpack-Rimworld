@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Reflection;
@@ -503,6 +503,20 @@ namespace EcosDaQueda.DebugTools
         // ------------------------------------------------------------ lealdade
 
         /// <summary>Força o jogador a ser membro de f (null = ninguém; usa de novo o Hegemony com restore=true).</summary>
+        /// <summary>Lote: desfaz o que um teste deixou em estado estático (lealdade forçada, sorteios forçados),
+        /// senão o teste seguinte herda referências a facções do jogo anterior.</summary>
+        public static void ResetBetweenTests()
+        {
+            if (providerOverridden)
+            {
+                EQAllegiance.PlayerOverlordProvider = originalProvider;
+                providerOverridden = false;
+            }
+            EQPowerEvents.ForceRetaliation = false;
+            IncidentWorker_EQLostConvoy.ForceClaim = false;
+            EQFungobi.ForceRuin = false;
+        }
+
         public static string Join(Faction f, bool restore = false)
         {
             if (!providerOverridden)

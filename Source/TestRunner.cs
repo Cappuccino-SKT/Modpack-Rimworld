@@ -89,6 +89,7 @@ namespace EcosDaQueda.DebugTools
         /// <summary>Lê o roteiro atual e zera o estado do teste (no início e entre os testes do lote).</summary>
         private static void LoadScript()
         {
+            EQDebug.ResetBetweenTests();
             commands.Clear();
             index = 0;
             ticksToRun = 0;
@@ -414,6 +415,11 @@ namespace EcosDaQueda.DebugTools
                 case "base": return EQDebug.Base(Fac(1));
                 case "fungobi": return EQFungobiDebug.Run(Arg(1), Arg(2));
                 case "ritualoutcome": return EQRitualDebug.Run(Arg(1), Arg(2));
+                case "obligations": return EQPowerEventsDebug.Obligations(Arg(1) == "return");
+                case "exposure": return EQPowerEventsDebug.Exposure(Arg(1), Arg(2));
+                case "retaliation": EQPowerEvents.ForceRetaliation = true; return "o próximo contra-ataque sorteado acontece com certeza";
+                case "lastretaliation": return "último contra-ataque agendado: " + (EQPowerEvents.LastRetaliation ?? "nenhum");
+                case "truce": return EQPowerEventsDebug.Truce(Fac(1));
                 case "events": return EQPowerEventsDebug.List();
                 case "event": return EQPowerEventsDebug.Fire(Arg(1));
                 case "perf": return Arg(1) == "report" ? EQPerf.Report(Arg(2)) : EQPerf.Start();
