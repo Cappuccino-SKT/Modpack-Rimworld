@@ -1,0 +1,35 @@
+# Bloco 3c: engenharia reversa (bancada própria, % do projeto, teto sem pré-requisitos, Infâmia por patente). Rodar com -Profile full.
+newgame
+timeout 900
+tech rsources
+tech try EQ_Pesquisa_EngenhariaReversa
+tech reverse Apparel_ShieldBelt
+tech reverse Apparel_ShieldBelt:30
+tech reverse Apparel_ShieldBelt
+tech reverse Apparel_ShieldBelt
+tech reverse Apparel_ShieldBelt
+tech reverse Apparel_ShieldBelt
+tech reverse Apparel_ShieldBelt
+tech try ShieldBelt
+tech reverse Apparel_ShieldBelt
+tech finish Gunsmithing
+tech reverse Gun_SniperRifle
+tech reverse Gun_SniperRifle
+tech reverse Gun_SniperRifle
+tech reverse Gun_SniperRifle
+tech reverse Gun_SniperRifle
+tech reverse Gun_SniperRifle
+tech reverse Gun_SniperRifle
+tech try PrecisionRifling
+tech reverse Gun_SniperRifle
+tech reverse Apparel_PowerArmor
+tech finishprereqs PoweredArmor
+tech reverse Apparel_PowerArmor
+tech reverse Apparel_PowerArmor
+tech try PoweredArmor
+tech reverse Apparel_PowerArmor
+tech reverse FlatscreenTelevision
+tech reverse Uranium
+tech reverse ComponentSpacer
+tech reverse Gun_Revolver
+tech reverse Steel

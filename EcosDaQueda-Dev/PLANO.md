@@ -23,7 +23,7 @@ Um bloco por sessão. Estimativa: **~25 blocos**. Ordem recomendada (cada linha 
 
 **Etapa 3 — tecnologia (4 blocos).** Hoje tudo fora da bancada fica fechado num jogo real, então esta etapa vem primeiro.
 1. ~~**3b Licenças**~~ (feito): cada cargo das 4 potências licencia projetos do ramo dela; compra de projeto com favor na aba Reputação (preço por custo/nível); licença perdida = pirataria ao fabricar (Infâmia, como drones/androides); solução para techprints (a potência vende ou a licença dispensa).
-2. **3c Engenharia reversa:** bancada própria (base no Vanilla Recycling); desmontar item dá 15–30% do projeto que o fabrica; item de potência dá Infâmia.
+2. ~~**3c Engenharia reversa**~~ (feito): bancada própria (arte do Vanilla Recycling); desmontar item dá 15–30% do projeto que o fabrica; patente de potência sem licença dá Infâmia.
 3. **3d Dados antigos:** discos/manuais em abrigos do VQE Ancients, ruínas, marcos nossos (bloco N) e no estoque da Feira; liberam ou aceleram um projeto do Velho Mundo ou de potência.
 4. **3e Fechamento:** móveis e energia por licença (pendente do bloco K), **dízimo tecnológico** da Forja (entregar tecnologia por mechs/veículos), balanço dos custos, teste de campanha curta.
 
@@ -152,7 +152,7 @@ Ideia central: num mundo pós-apocalíptico ninguém "inventa" do zero; **recupe
 **Blocos:**
 - **3a — Trava e árvore: feito (2026-11-17).** 6 abas próprias (a Anomaly fica na dela), trava fora da bancada com motivo (vanilla e YART), pesquisa atual sem acesso para sozinha. Tech Advancing só mexe no custo; YART e Clean Research Sort refazem o layout e respeitam a trava.
 - **3b — Licenças: feito (2026-11-17).** Cargo mínimo por nível tecnológico (medieval 1º cargo, industrial 2º, Anomaly 3º, espacial 4º, ultra 6º; exceções no XML); membros compram licenças acima do cargo com favor (botão "Licenças" na aba Reputação; vale enquanto for membro); licença dá acesso e **dispensa techprints**; fabricar/construir com projeto de potência sem licença = pirataria (boa vontade -4, 1×/dia por potência). Não-membros só chegam às patentes por sucata/dados (3c/3d). **(decidir)** potências venderem licença a não-membros (prata + Fama alta)?
-- **3c — Engenharia reversa:** bancada própria; desmontar item dá % do projeto que o fabrica; item licenciado de potência dá Infâmia.
+- **3c — Engenharia reversa: feito (2026-11-17).** Pesquisa e bancada próprias (depois da reciclagem básica do VRE); desmontar item ou prédio minificado dá 15–30% do custo do projeto que o fabrica (valor e vida do item; material, comestíveis e itens < 25 de prata não ensinam); prefere o projeto travado; sem os pré-requisitos para em 99% e libera o resto na bancada; patente de potência sem licença dá Infâmia +2. **(decidir)** devolver parte do material ao desmontar?
 - **3d — Dados antigos:** discos e manuais em abrigos (VQE Ancients), ruínas, marcos nossos e no estoque da Feira; cada um libera ou acelera um projeto.
 
 ## Etapa 4 — Utilidade para os outros mods (média)

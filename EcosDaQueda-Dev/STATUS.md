@@ -12,13 +12,13 @@ _Só o estado atual e os próximos passos. Manter curto (até ~60 linhas). Detal
 
 ## Próximo passo
 
-**Etapa 3 (tecnologia própria)**: decisões e classificação aprovadas (`PLANO.md` › Etapa 3; `tecnico/pesquisa-classificacao.md`). **3a feito**: árvore em 6 abas próprias, trava fora da bancada. **3b feito** (2026-11-17): o cargo licencia os projetos do ramo da potência por nível (medieval 1º cargo, industrial 2º, Anomalia 3º, espacial 4º, ultra 6º); membros compram as licenças de cima com favor (botão "Licenças" na aba Reputação; valem enquanto for membro); a licença abre a pesquisa e dispensa techprints; fabricar ou construir com projeto de potência sem licença é pirataria (boa vontade -4, uma vez por dia por potência). Num jogo real, Velho Mundo e as patentes das potências de que você não é membro seguem fechados até o 3c/3d. **Próximo: bloco 3c (engenharia reversa).** Roteiro completo do que falta: `PLANO.md` › Roteiro.
+**Etapa 3 (tecnologia própria)**: decisões e classificação aprovadas (`PLANO.md` › Etapa 3; `tecnico/pesquisa-classificacao.md`). **3a feito**: árvore em 6 abas próprias, trava fora da bancada. **3b feito** (2026-11-17): o cargo licencia os projetos do ramo da potência por nível (medieval 1º cargo, industrial 2º, Anomalia 3º, espacial 4º, ultra 6º); membros compram as licenças de cima com favor (botão "Licenças" na aba Reputação; valem enquanto for membro); a licença abre a pesquisa e dispensa techprints; fabricar ou construir com projeto de potência sem licença é pirataria (boa vontade -4, uma vez por dia por potência). **3c feito** (2026-11-17): pesquisa "engenharia reversa" na Bancada (depois da reciclagem básica do VRE) e bancada própria; desmontar item ou prédio minificado dá 15–30% do projeto que o fabrica (valor e vida; material, comida e itens < 25 de prata não ensinam), preferindo o travado; sem os pré-requisitos para em 99% e libera o resto na bancada; patente de potência sem licença dá Infâmia +2. Regressão: 31 testes sem erros (as 6 "falhas" são o falso alarme de `problemas=` do `xenogen`). **Próximo: bloco 3d (dados antigos).** Roteiro completo do que falta: `PLANO.md` › Roteiro.
 
 **A Colmeia Erguida** (2026-11-17): facção menor neolítica com os 3 xenos de inseto do usuário (rainha líder, soldado, operário; + batedor com arco), 12 vilas no mundo, teste `colmeia`. **Provisório:** ideologia sorteada "O Enxame (provisória)" e descrição curta. **Aguardando o usuário montar a ideologia** (`.rid`); depois: ligar em `EQ_IdeoTemplates.xml`, escrever a história (DESIGN, descrições), relações fixas e parte horrível.
 
 ## Não commitado
 
-Nada (bloco 3b em 2026-11-17: mod `09e6460`, debug `9179d65`, raiz `6b1612f`), com push feito nas 3 branches.
+Nada (bloco 3c em 2026-11-17: mod `b40e4c5`, debug `77d645f`, raiz no commit "Etapa 3c"), com push feito nas 3 branches.
 
 ## Como testar
 
@@ -47,6 +47,7 @@ Nada (bloco 3b em 2026-11-17: mod `09e6460`, debug `9179d65`, raiz `6b1612f`), c
 
 ## A conferir pelo usuário (só visual)
 
+- Etapa 3c: bancada de engenharia reversa (arte, menu Produção), conta "fazer engenharia reversa" (filtro de itens: só aparece o que ensina algo) e as mensagens (ganho, parada em 99%, Infâmia).
 - Etapa 3b: botão "Licenças" na aba Reputação (4 botões menores à direita), janela de licenças (filtro, "Comprar (N)", estado), motivo da trava na pesquisa ("exige o cargo de …") e a mensagem de pirataria ao fabricar.
 - Etapa 3a: tela de pesquisa (YART) com as 6 abas, posições, motivo da trava ("Patente da Forja: exige licença…") e a linha "Ramo:" na descrição.
 
