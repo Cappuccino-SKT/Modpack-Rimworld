@@ -23,10 +23,11 @@ Lista completa de mods e ordem: [`../../modpack/mods.md`](../../modpack/mods.md)
 | [frameworks/custom-ritual-framework.md](frameworks/custom-ritual-framework.md) | Custom Ritual Framework: rituais e resultados anexáveis sem C# |
 | [frameworks/adaptive-storage.md](frameworks/adaptive-storage.md) | Adaptive Storage Framework + PatchOperations extras (PostInheritance, Copy…) |
 | [frameworks/bibliotecas-csharp.md](frameworks/bibliotecas-csharp.md) | Jaeger's Utility Framework e RimExodus Framework |
+| [encaixe.md](encaixe.md) | **Uma linha por mod:** papel no modpack, uso hoje no Ecos e proposta |
 | [mecanicas.md](mecanicas.md) | Mods que adicionam mecânicas: o que fazem, ganchos e uso no Ecos |
 | [conteudo.md](conteudo.md) | Mods de itens, visual e interface (descrição curta) |
 
 ## Quando atualizar
 
-- Mod novo no modpack: rodar o inventário, decidir a categoria e acrescentar em `mecanicas.md` ou `conteudo.md`; se for framework, descompilar, gerar `api/` e escrever o guia.
+- Mod novo no modpack: acrescentar a linha em `encaixe.md`; rodar o inventário, decidir a categoria e acrescentar em `mecanicas.md` ou `conteudo.md`; se for framework, descompilar, gerar `api/` e escrever o guia.
 - Update de framework: regenerar o `api/` dele e conferir os exemplos do guia.

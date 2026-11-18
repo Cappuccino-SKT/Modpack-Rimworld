@@ -169,6 +169,18 @@ Ideia central: num mundo pós-apocalíptico ninguém "inventa" do zero; **recupe
 | Custom Ritual Framework, Blessed Conception | rituais das nossas ideologias com resultado próprio |
 | SeedsPlease, Smart Farming | sementes como mercadoria da Feira e item de dízimo |
 | Geological Landforms, World Map Enhanced | sem ação (apoio) |
+| Simple Sidearms | **(proposta, auditoria 2026-11-17)** arma secundária nas PawnKinds de elite |
+| VBE Coffees and Teas, Nutrient Paste | **(proposta)** café/chá no estipêndio de uma potência; pasta nutritiva como ração dos abrigos/Fora de Linha |
+| VFE Pirates (maldições), Deserters (contrabando) | **(proposta)** maldição como pacto do Coro/Silêncio; categoria de contrabando para itens de patente |
+| Tech Advancing | **(proposta)** conferir convivência com as licenças por cargo (3b) |
+| Show Me Your Tools | **(proposta)** ferramenta animada para JobDefs novos nossos |
+| Hospitality (novo) | **(proposta)** hospedar membros de potência dá Fama; recrutar hóspede de potência é aliciamento (Infâmia); líder e cargos não recrutáveis; conferir a trava de xenos |
+| VFE Security (novo) | **(proposta)** classificar as 13 pesquisas `VFES_*` nos ramos (artilharia/railgun/EMP → Forja, cerco medieval → Coro/Não Catalogados); defesas nas bases do CBF e nos cercos; artilharia da Forja em retaliação |
+| Vanilla Weapons Expanded (novo) | **(proposta)** antimaterial e armas de carga no arsenal da Forja; arcos compostos e bestas nos Não Catalogados e na Colmeia |
+| Adaptive Simple/Deep/Primitive Storage (novos) | **(proposta)** depósitos nas plantas de base do CBF |
+| Realistic Rooms Rewritten (novo) | **(proposta)** conferir as exigências de cômodo dos cargos |
+
+Tabela de todos os mods (uso hoje e proposta): `mods/encaixe.md`.
 
 ## Etapa 5 — Eventos do mundo (grande)
 
@@ -176,7 +188,7 @@ Ideia central: num mundo pós-apocalíptico ninguém "inventa" do zero; **recupe
 - **Fase 2 das facções menores:** Exposição dos Fora de Linha contra a Forja, sabotagem, expedições de coleta do Silêncio nos ninhos, greve do Sindicato (trégua temporária), liquidação da Feira.
 - **Fungobi** (zumbis do mundo, xenos `EQ_Xeno_Fungobi*` prontos, sem facção): hordas em eventos e moradores de cidades destruídas; a pele rende fio do diabo, então caçar zumbi dá lucro.
 - Eventos de mundo sem dono: tempestade de cinzas, abrigo que se abre, comboio perdido, recall mecanoide.
-- Reaproveitar os eventos e missões dos mods (VQE, Anomaly, Insectoids) com texto e gatilho nossos.
+- Reaproveitar os eventos e missões dos mods (VQE, Anomaly, Insectoids, **Vanilla Events Expanded**: 28 eventos `VEE_*`) com texto e gatilho nossos. **(proposta)** batalha espacial/queda de nave → destroços da Queda; eventos psíquicos → Coro; viajante traidor → espião do Sindicato; noite longa/era do gelo → tempestade de cinzas.
 
 ## Etapa 6 — Narrador próprio (média)
 

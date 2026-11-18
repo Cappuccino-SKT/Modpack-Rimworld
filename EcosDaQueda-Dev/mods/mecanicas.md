@@ -20,22 +20,34 @@ Piratas com **Warcaskets** (armaduras-tanque, `VFEPirates.WarcasketDef`, montada
 
 ### Vanilla Factions Expanded - Insectoids 2 (`oskarpotocki.vfe.insectoid2`, 3309003431)
 Insetoides como facção com **colmeias** que crescem, ondas (`InsectWaveDef`, `WaveActivityDef`), chefes invocáveis, linhagens (`InsectGenelineDef`), tambores sísmicos para atraí-los, mapa de colmeia (`InsectMapGenDef`). Patcheia a facção `Insect` (assentamentos).
-**Para o Ecos:** Hegemony avisa no log "Initial insect hive is preserved…" — é ruído conhecido dessa combinação. A Hélice (genética) poderia ter interesse em linhagens insetoides.
+**Para o Ecos:** Hegemony avisa no log "Initial insect hive is preserved…" — é ruído conhecido dessa combinação. **Feito (bloco E):** colmeia destruída pelo jogador é um "recall" (Fama na Hélice); a Hélice vende núcleos de colmeia, quitina e geleia.
 
 ### Vanilla Factions Expanded - Medieval 2 (`oskarpotocki.vfe.medieval2`, 3444347874)
 Facções medievais (castelos, vikings, guilda mercante), cercos, tecnologia medieval que não fica obsoleta, heráldica (`HeraldicPattern`, `HeraldicSymbol`), muros de pedra modelados (`CobblestoneWallTemplateDef`), economia (vinho, mel).
-**Para o Ecos:** heráldica gerada é inspiração para os brasões das potências. O CBF já traz assentamentos para as facções do VFE Medieval 2.
+**Para o Ecos:** **feito (bloco D):** arsenal dos Não Catalogados, vinho no estipêndio e dízimo do Coro, serviço "torneio de corte". Heráldica fica como inspiração para brasões.
 
 ### Vanilla Quests Expanded - Ancients / Drone Factory / The Generator (`vanillaquestsexpanded.*`)
 Cadeias de missões longas (via `VEF.Storyteller.QuestChainDef`, ver [vef.md](frameworks/vef.md) §6) com locais KCSG.
 - **Ancients:** cofres subterrâneos, câmaras de mutação arquite (`ArchiteInjectionOutcomeDef`, `InjectionBlacklistDef`), genes novos.
 - **Drone Factory:** drones despertando, ataque a armazéns, final contra fábrica pirata ("The Tinkerer").
 - **Generator:** o gerador ARC que evolui (nuclear, solar, geotérmico).
-**Para o Ecos:** são o modelo de "campanha por potência" (cadeia de missões com pré-requisitos, repetição e pesquisa exigida). A Ancients encaixa na Hélice; a Drone Factory na Forja.
+**Para o Ecos:** são o modelo de "campanha por potência" (cadeia de missões com pré-requisitos, repetição e pesquisa exigida). **Feito (bloco F):** missões dão Fama a uma patrona (Ancients → Silêncio; Drone Factory e The Generator → Forja); drone sem cargo da Forja é pirataria; início "Saídos do abrigo" no abrigo do Ancients.
 
 ### Rimesis (`font.rimesis`, 3767949538)
 Transforma alguns saqueadores em **nêmesis recorrentes** que lembram o que aconteceu (quem os feriu, armas, fugas, capturas) e voltam mais fortes, com foco tático (cerco, flanco, mechs, veículos, Warcasket). "Crônica" com a história. Destruir o último assentamento de uma facção dispara **retaliação escalonada**.
 **Para o Ecos:** a retaliação por destruir assentamento se sobrepõe às nossas retaliações de potência — testar as duas juntas. Nêmesis de uma potência combina com o tom (o "cobrador" da Forja que sempre volta).
+
+### Hospitality (`Orion.Hospitality`, 753498552) — novo (2026-11-17)
+Visitantes de facções amigas ficam hospedados na colônia (camas e área de hóspedes), compram itens e usam a área liberada; o jogador melhora a relação com a facção pelo bom tratamento e pode **recrutar hóspedes pagando**. Só C# (Harmony, HugsLib opcional); nenhum Def próprio, só patches. Declara até 1.6 (carrega a pasta 1.6); no teste `smoke` (perfil full) carregou sem erro. Pede para carregar o mais tarde possível: está logo antes dos nossos mods.
+**Para o Ecos:** facção sem `pawnGroupMaker` de `kindDef` `Peaceful` não manda hóspedes (aviso no log para a facção `Insect`; ruído). **Proposta:** hospedar membros de uma potência dá Fama nela (o Coro valoriza a corte bem servida, a Hélice faz "pesquisa de satisfação"); recrutar hóspede de potência é "aliciamento" e dá Infâmia; a Feira Andante hospedada compra lixo e sucata. Conferir se o recrutamento pago contorna a trava de xenos da etapa 1 e os cargos (líder e cargos não deveriam ser recrutáveis).
+
+### Vanilla Events Expanded (`VanillaExpanded.VEE`, 1938420742) — novo (2026-11-17)
+Versão 2 do mod: refaz e amplia eventos; os eventos "roxos" viram cadeias com aviso de duração. 28 `IncidentDef` (`VEE_*`): batalha espacial, queda de nave/ônibus espacial e cápsulas de carga, chuva de meteoros, terremoto, seca, era do gelo, aquecimento global, noite longa, nevasca (com refugiados), queimada, eventos psíquicos (florada, zumbido, sobrecarga, estímulo, chuva psíquica), grupo de caça, homens selvagens, animais de batalha/caravana, viajante traidor, ataque de visitantes. 8 condições de jogo, plantas psíquicas, `VEE.dll` (1.7). O CE já traz patch (`ModPatches/Vanilla Events Expanded`).
+**Para o Ecos (proposta, etapa 5):** base pronta para os "eventos de mundo sem dono" e os eventos por potência: batalha espacial e queda de nave → destroços da Queda/recall da Forja; eventos psíquicos → Coro; viajante traidor → espião do Sindicato; noite longa/era do gelo → tempestade de cinzas; grupo de caça → caçadores de Fungobi. Trocar texto e gatilho (patch nos `IncidentDef` com `MayRequire="VanillaExpanded.VEE"`), sem reescrever a mecânica. Sem janela, as plantas acusam "Error in ParallelForEach … graphicData" (mesmo ruído do CE sem placa de vídeo).
+
+### Vanilla Furniture Expanded - Security (`VanillaExpanded.VFESecurity`, 1845154007) — novo (2026-11-17)
+Defesas por nível: medieval (catapulta, balista, espetos anticavalaria, armadilha de urso rearmável), industrial (torretas militares, lança-chamas, escopeta, barreira escondida, minas), guerra de trincheira (abrigos, trincheiras, plataformas, arame farpado, complexos de metralhadora/minigun), espacial (torretas de carga, railgun, canhão EMP, repulsor) e artilharia de longo alcance (`VFES_Artillery*`, ataque de artilharia sobre o mapa). 117 ThingDefs, 13 `ResearchProjectDef` (`VFES_*`), `VFESecurity.dll` (1.7). O CE já traz patch.
+**Para o Ecos:** as 13 pesquisas `VFES_*` caem nos ramos da Etapa 3a só pelo nível tecnológico (não há regra para `VanillaExpanded.VFESecurity` em `EQ_Research.xml`). **Proposta:** classificar (artilharia, railgun e EMP → Forja; equipamento de cerco medieval → Coro/Não Catalogados; defesas escondidas → Silêncio); usar as defesas nas plantas de base do CBF (bloco K) e nos cercos (4b), junto com Trenches; artilharia de longo alcance como bombardeio da Forja em retaliação.
 
 ## Sistemas da colônia
 
@@ -45,11 +57,11 @@ Necessidades de **higiene e bexiga**, água encanada, esgoto, aquecimento centra
 
 ### Vanilla Anomaly Expanded - Insanity (`vanillaexpanded.vanomalyeinsanity`, 3342412435)
 Medidor de **sanidade**: estudar entidades drena, combatê-las recupera; sanidade baixa leva a loucura ou "desumanização" (que tem vantagens). Efeitos por faixa em `VAEInsanity.SanityEffectsDef`.
-**Para o Ecos:** encaixe direto na **Ordem do Silêncio Perpétuo** (acadêmicos do Vazio). Serviços/rituais do Silêncio podem mexer em sanidade.
+**Para o Ecos:** encaixe direto na **Ordem do Silêncio Perpétuo** (acadêmicos do Vazio). **Feito (bloco I):** pesquisa do Silêncio paga em sanidade e o serviço "retiro de silêncio".
 
 ### Vanilla Recycling Expanded (`vanillaexpanded.recycling`, 3155781848)
 Dá uso aos pacotes de resíduos tóxicos: estações de reciclagem (PipeSystem `ProcessDef`), bombas de poluição melhores, lixo → tijolos, conversão de terreno (`TerrainConversionsDef`).
-**Para o Ecos:** economia de sucata/reciclagem — tema pós-apocalíptico natural para a Forja.
+**Para o Ecos:** economia de sucata/reciclagem — **feito:** carga do Sindicato (bloco L) e pré-requisito da engenharia reversa (3c).
 
 ### Vanilla Cooking / Brewing / Nutrient Paste / Plants Expanded
 - **Cooking** (`vanillaexpanded.vcooke`): refeições gourmet, condimentos, especialização de cozinheiro (`VSE.Expertise.ExpertiseDef`), queijo/defumação com PipeSystem. **Bakery**: forno e doces decorativos.
@@ -74,7 +86,7 @@ Centenas de próteses e órgãos artificiais por nível tecnológico; opções e
 **Para o Ecos:** implantes de facção (Forja/Hélice) devem seguir a escala de qualidade do EPOE.
 
 ### Vanilla Traits Expanded (`vanillaexpanded.vanillatraitsexpanded`)
-53 traços novos com estados mentais próprios. **Para o Ecos:** traços de líder podem ganhar mapeamento no Hegemony (`FactionDispositionDef` com `trait`).
+53 traços novos com estados mentais próprios. **Para o Ecos:** **feito (bloco L):** traços nos líderes e cargos altos do Sindicato. Proposta: mapear traços de líder no Hegemony (`FactionDispositionDef` com `trait`).
 
 ### Tech Advancing (`ghxx.techadvancing`, 735268789)
 Sobe o **nível tecnológico** da colônia ao cumprir condições e permite mudar custos de pesquisa. **Para o Ecos:** afeta preço de pesquisa por nível; o CBF e os veículos usam o nível tecnológico da facção (não o da colônia).
@@ -87,7 +99,7 @@ Sobe o **nível tecnológico** da colônia ao cumprir condições e permite muda
 
 ### Vanilla Races Expanded (12 mods: Pigskin, Hussar, Starjack, Genie, Waster, Fungoid, Highmate, Phytokin, Saurid, Lycanthrope, Sanguophage, Insector) e Android
 Cada um traz xenótipo(s) com genes e mecânicas próprias: Hussar (aptidão por arma via `WeaponGeneTemplateDef`, `BlackListedWeaponsDef`), Lycanthrope (formas via `MorphGeneTemplateDef`), Sanguophage (habilidades de uso único `SingleUseAbilityDef`, linhagens), Highmate (efeitos de vínculo `HighmateBondEffectDef`), Insector (genes de linhagem `GenelineGeneDef`), Waster (toxicidade), Starjack (vácuo), Android (`AndroidGeneDef` hardware/sub-rotinas, `AndroidGeneTemplateDef`, neutroamina, estação de criação).
-**Para o Ecos:** xenótipos já entram nas facções (Saurid, Lycan, Hussar, Fungoid, Sanguophage, Android). Androides combinam com a Forja ("produto com garantia").
+**Para o Ecos:** genes deles estão nos nossos xenos e na Linha Exótica da Hélice (bloco O; Starjack só na Linha Exótica); androides são a questão androide da Forja/Fora de Linha (bloco H).
 
 ### Blessed Conception Psychic Ritual (`fghj.ritualsboon`, 3790308888) — novo
 Ritual psíquico do Anomaly (`PsychicRitualDef_HoraxsFavor`, papel `PsychicRitualRoleDef_SacredBirthMother`): custa 2 fragmentos de arcotec sombrio, recarga de 13 dias, gera um bebê "abençoado pelo Vazio" (traço com bônus, habilidade de creepjoiner, recusa da morte). Exige pesquisa de rituais psíquicos avançados.
@@ -105,7 +117,7 @@ Ritual psíquico do Anomaly (`PsychicRitualDef_HoraxsFavor`, papel `PsychicRitua
 - **Simple Sidearms** (`petetimessix.simplesidearms`): pawns carregam armas secundárias e trocam conforme a situação; `SidearmWeaponTagMapDef` liga tags. **Para o Ecos:** PawnKinds podem ganhar arma secundária (com CE, via `LoadoutPropertiesExtension.sidearms`).
 - **Layered Wall Destruction Fork** (`lordfelix.layeredwalldestructionfork`, 3832512386): paredes têm estágios de destruição (seteira, brecha, entulho) e podem ser restauradas; perfis em `LayeredDestruction.WallProfileDef`. **Para o Ecos:** paredes novas nossas precisam de perfil para ter estágios.
 - **Trenches** (`oomby.trenches`): trincheiras (terra, madeira, concreto) e abrigos, no menu Segurança.
-- **Geological Landforms** (`m00nl1ght.geologicallandforms`) e **Vanilla Landmarks Expanded** (`vanillaexpanded.vexploratione`): formas de relevo e 59 marcos com **mutadores de tile** (`TileMutatorDef`, `VEF.Maps.TileMutatorExtension`). **Para o Ecos:** marcos "pré-Queda" (ruínas, crateras) seriam `LandmarkDef` + mutadores.
+- **Geological Landforms** (`m00nl1ght.geologicallandforms`) e **Vanilla Landmarks Expanded** (`vanillaexpanded.vexploratione`): formas de relevo e 59 marcos com **mutadores de tile** (`TileMutatorDef`, `VEF.Maps.TileMutatorExtension`). **Para o Ecos:** **feito (bloco N):** 10 marcos próprios da Queda (`EQ_Landmarks.xml`).
 - **Alpha Biomes** (`sarg.alphabiomes`): 12 biomas, estruturas por bioma (`BiomeStructuresDef`), spawns especiais (`SpecialSpawnsDef`).
 
 ## Mundo e viagem
@@ -126,6 +138,9 @@ Ritual psíquico do Anomaly (`PsychicRitualDef_HoraxsFavor`, papel `PsychicRitua
 - **[FSF] Complex Jobs**: divide tipos de trabalho em mais colunas (configurável por XML Extensions). Carrega no fim da lista. **Para o Ecos:** WorkGivers novos nossos precisam de `workType` existente; checar com as colunas divididas.
 - **[FSF] Filth Vanishes With Rain And Time**: sujeira some com chuva/tempo.
 - **Allow Tool**: ferramentas de ordem em massa (permitir/proibir, colher tudo, transportar urgente).
+- **Snap Out!** (`weilbyte.snapout`, 1319782555) — novo: um colono pode tentar acalmar outro em colapso mental (chance pela habilidade social e pela relação). Só C#; declara até 1.6. **Para o Ecos:** apoio; o retiro de silêncio do Silêncio (bloco I) continua sendo o serviço pago.
+- **Animals Logic** (`Oblitus.AnimalsLogic`, 1098354593) — novo: marca animais treinados nas telas de caravana e comércio, alertas médicos de animais, eficiência de transporte e decaimento de treino configuráveis, animais usam o dispensador de pasta; predadores que caçam colonos viram hostis. Só C#, declara 1.7. Incompatível com Hardworking Animals (fora do modpack). **Para o Ecos:** apoio; vale para os bichos de lixão do bloco L.
+- **Realistic Rooms Rewritten** (`Lucifer.RealisticRooms`, 2558042766) — novo: reduz o tamanho que os cômodos precisam para contar como "espaçosos". Só tem pastas 1.3/1.4 (o jogo carrega a 1.4); carregou sem erro. **Para o Ecos:** muda as exigências de quarto e sala do trono dos títulos da Royalty, que os nossos cargos usam; conferir se o balanço ficar fácil.
 
 ## Desativados de propósito (não documentar uso)
 

@@ -16,7 +16,7 @@ Ler **só o arquivo do assunto da tarefa**. Nota nova vai no arquivo do assunto 
 
 ## Documentação dos mods do modpack
 
-Guias de frameworks, mecânicas e conteúdo, mais referência de API gerada das DLLs: `EcosDaQueda-Dev/mods/README.md`. Ferramentas: `scripts/mods-inventario.py` (inventário) e `scripts/mods-api.py` (referência de API a partir do descompilado).
+Guias de frameworks, mecânicas e conteúdo, mais referência de API gerada das DLLs: `EcosDaQueda-Dev/mods/README.md`. Encaixe de cada mod no modpack (uso hoje e proposta, uma linha por mod): `mods/encaixe.md`. Ferramentas: `scripts/mods-inventario.py` (inventário) e `scripts/mods-api.py` (referência de API a partir do descompilado).
 
 ## Ambiente
 
