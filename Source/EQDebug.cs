@@ -267,7 +267,91 @@ namespace EcosDaQueda.DebugTools
                         + (of == null ? "" : " infamia_" + owner.faction.defName + "=" + infBefore.ToString("0.#") + "->" + WorldComponent_Reputation.Current.Get(of).infamy.ToString("0.#")));
                     break;
                 }
-                default: return "uso: tech status|try|grant|revoke|finish|current|work|license|buy|licenses|craft|rsources|reverse";
+                case "buildaudit":
+                {
+                    // Bloco 3e: prédios construíveis de nível espacial ou acima que escapam da trava (sem projeto fora da bancada).
+                    var defs = DefDatabase<ThingDef>.AllDefsListForReading.Where(d => d.category == ThingCategory.Building && d.designationCategory != null && d.BuildableByPlayer).ToList();
+                    var esc = new List<string>();
+                    int spacer = 0;
+                    foreach (ThingDef d in defs)
+                    {
+                        TechLevel tl = d.techLevel != TechLevel.Undefined ? d.techLevel : (d.researchPrerequisites?.Max(r => (TechLevel?)r.techLevel) ?? TechLevel.Undefined);
+                        if (tl < TechLevel.Spacer) continue;
+                        spacer++;
+                        var pre = d.researchPrerequisites ?? new List<ResearchProjectDef>();
+                        if (pre.Any(r => EQResearch.Branch(r) != null && !EQResearch.Branch(r).free)) continue;
+                        esc.Add(d.defName + "	" + d.label + "	" + (d.modContentPack?.PackageId ?? "?") + "	" + tl + "	" + (d.designationCategory?.defName ?? "-") + "	" + string.Join(",", pre.Select(r => r.defName + "/" + EQResearch.Branch(r)?.defName)));
+                    }
+                    string path = arg ?? System.IO.Path.Combine(GenFilePaths.SaveDataFolderPath, "buildaudit.tsv");
+                    System.IO.File.WriteAllLines(path, new[] { "defName	label	mod	tech	categoria	prereqs" }.Concat(esc));
+                    sb.Append("construiveis=" + defs.Count + " espaciais=" + spacer + " escapam=" + esc.Count + " por_mod=" + string.Join(",", esc.GroupBy(x => x.Split('	')[2]).OrderByDescending(g => g.Count()).Select(g => g.Key + ":" + g.Count())) + " -> " + path);
+                    break;
+                }
+                case "datapool":
+                {
+                    // Bloco 3d: quantos projetos cada item de dados antigos pode sortear, por ramo.
+                    foreach (ThingDef d in DefDatabase<ThingDef>.AllDefsListForReading.Where(x => x.GetCompProperties<CompProperties_UseEffectAncientData>() != null))
+                    {
+                        var pr = d.GetCompProperties<CompProperties_UseEffectAncientData>();
+                        var pool = CompUseEffect_AncientData.Pool(pr).ToList();
+                        sb.AppendLine("item " + d.defName + ": fracao=" + pr.fraction + " nivel=" + pr.minTech + "-" + pr.maxTech + " projetos=" + pool.Count
+                            + " ramos=" + string.Join(",", pool.GroupBy(r => EQResearch.Branch(r)?.defName ?? "-").OrderBy(g => g.Key).Select(g => g.Key + ":" + g.Count()))
+                            + " vendido_na_feira=" + DefDatabase<TraderKindDef>.AllDefsListForReading.Where(t => t.defName.Contains("Feira") && t.WillTrade(d)).Count());
+                    }
+                    sb.AppendLine("regras=" + string.Join(",", DefDatabase<AncientDataSpawnDef>.AllDefsListForReading.Select(r => r.defName + "(itens=" + r.items.Count(i => i.thingDef != null) + ",marcadores=" + r.markers.Count + "+" + r.markerPrefixes.Count + ",marcos=" + r.landmarks.Count(l => DefDatabase<LandmarkDef>.GetNamedSilentFail(l) != null) + "/" + r.landmarks.Count + ")")));
+                    break;
+                }
+                case "data":
+                {
+                    // tech data <ThingDef>[:<projeto>]: cria o item perto do colono (projeto sorteado ou forçado) e o colono o usa.
+                    string[] parts = arg.Split(':');
+                    ThingDef def = DefDatabase<ThingDef>.GetNamed(parts[0]);
+                    Thing t = ThingMaker.MakeThing(def);
+                    var c = t.TryGetComp<CompUseEffect_AncientData>();
+                    if (parts.Length > 1) c.project = DefDatabase<ResearchProjectDef>.GetNamed(parts[1]);
+                    Pawn col = PawnsFinder.AllMaps_FreeColonists.FirstOrDefault();
+                    GenPlace.TryPlaceThing(t, col.Position, col.Map, ThingPlaceMode.Near);
+                    var proj = c.project;
+                    sb.Append("item=" + t.LabelCap + " projeto=" + (proj?.defName ?? "-"));
+                    if (proj == null) { t.Destroy(); break; }
+                    float before = proj.ProgressPercent;
+                    bool accBefore = EQResearch.HasAccess(proj);
+                    var owner = EQLicenses.OwnedBranch(proj);
+                    Faction of = owner == null ? null : EQUtil.MainFaction(owner.faction);
+                    float infBefore = of == null ? 0f : WorldComponent_Reputation.Current.Get(of).infamy;
+                    AcceptanceReport ok = c.CanBeUsedBy(col);
+                    if (ok.Accepted)
+                        foreach (CompUseEffect e in ((ThingWithComps)t).GetComps<CompUseEffect>().ToList()) e.DoEffect(col);
+                    sb.Append(" ramo=" + EQResearch.Branch(proj)?.defName + " pode_usar=" + (ok.Accepted ? "sim" : ok.Reason) + " acesso=" + accBefore + "->" + EQResearch.HasAccess(proj)
+                        + " progresso=" + before.ToStringPercent() + "->" + proj.ProgressPercent.ToStringPercent() + " prereqs_ok=" + proj.PrerequisitesCompleted
+                        + " concluido=" + proj.IsFinished + " item_destruido=" + t.Destroyed + " licenca=" + EQLicenses.IsLicensed(proj)
+                        + (of == null ? "" : " infamia_" + owner.faction.defName + "=" + infBefore.ToString("0.#") + "->" + WorldComponent_Reputation.Current.Get(of).infamy.ToString("0.#")));
+                    if (!t.Destroyed) t.Destroy();
+                    break;
+                }
+                case "dataspawn":
+                {
+                    // tech dataspawn <ThingDef marcador>[:n]: põe n marcadores perto do colono e roda a geração de dados antigos neste mapa.
+                    string[] parts = arg.Split(':');
+                    ThingDef def = DefDatabase<ThingDef>.GetNamed(parts[0]);
+                    int n = parts.Length > 1 ? int.Parse(parts[1]) : 2;
+                    Pawn col = PawnsFinder.AllMaps_FreeColonists.FirstOrDefault();
+                    Map map = col.Map;
+                    for (int i = 0; i < n; i++)
+                    {
+                        Thing b = ThingMaker.MakeThing(def, def.MadeFromStuff ? GenStuff.DefaultStuffFor(def) : null);
+                        GenPlace.TryPlaceThing(b, col.Position + new IntVec3(3 + i * 3, 0, 3), map, ThingPlaceMode.Near);
+                    }
+                    int before = map.listerThings.AllThings.Count(x => x.TryGetComp<CompUseEffect_AncientData>() != null);
+                    EQAncientData.LastSpawnReport = "nada";
+                    EQAncientData.ForceSpawn = true;
+                    try { EQAncientData.OnMapGenerated(map); } finally { EQAncientData.ForceSpawn = false; }
+                    var items = map.listerThings.AllThings.Where(x => x.TryGetComp<CompUseEffect_AncientData>() != null).ToList();
+                    sb.Append("marcador=" + parts[0] + "x" + n + " casa=" + map.IsPlayerHome + " regras=" + EQAncientData.LastSpawnReport + " dados=" + before + "->" + items.Count
+                        + " ex=" + string.Join(",", items.Take(4).Select(x => x.LabelNoCount)));
+                    break;
+                }
+                default: return "uso: tech status|try|grant|revoke|finish|current|work|license|buy|licenses|craft|rsources|reverse|datapool|data|dataspawn|buildaudit";
             }
             return sb.ToString().TrimEnd();
         }
@@ -1112,7 +1196,9 @@ namespace EcosDaQueda.DebugTools
                     else if (x.inheritable) chave = x.defName;
                     else chave = x.defName + " sobre " + (b?.defName ?? "NENHUM PADRÃO");
                     chave += " " + p.gender;
-                    if (x == null || !x.defName.StartsWith("EQ_") || (!x.inheritable && b == null)) { problemas++; chave += " <-- PROBLEMA"; }
+                    // Androides do VRE Android (Fora de Linha) são de propósito: não têm xeno nosso nem base.
+                    bool android = x != null && x.defName.StartsWith("VREA_Android");
+                    if (!android && (x == null || !x.defName.StartsWith("EQ_") || (!x.inheritable && b == null))) { problemas++; chave += " <-- PROBLEMA"; }
                     cont[chave] = cont.TryGetValue(chave) + 1;
                     p.Discard();
                 }

@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.IO;
@@ -14,15 +14,21 @@ namespace EcosDaQueda.DebugTools
     /// Executor de testes: ativo só com -eqtest=arquivo. Lê os comandos do arquivo, carrega um save
     /// ou cria um jogo novo, executa tudo, grava o relatório (-eqout=arquivo, ou arquivo.result.txt)
     /// e fecha o jogo. Comandos: ver EcosDaQueda-Dev/TESTES.md.
+    /// Modo lote (-eqbatch=lista): cada linha da lista é "roteiro|relatório"; o jogo carrega os mods uma vez
+    /// e roda os roteiros em sequência, voltando ao menu principal entre eles (o jogo anterior é descartado).
     /// </summary>
     [StaticConstructorOnStartup]
     public static class TestRunner
     {
-        private enum Stage { Menu, Loading, Running, Done }
+        private enum Stage { Menu, Loading, Running, Closing, Done }
 
         public static readonly bool Active;
-        private static readonly string scriptPath;
-        private static readonly string outPath;
+        private static string scriptPath;
+        private static string outPath;
+        /// <summary>Modo lote: (roteiro, relatório) de cada teste e o índice do atual.</summary>
+        private static readonly List<(string script, string output)> batch = new List<(string, string)>();
+        private static int batchIndex;
+        private static readonly Stopwatch batchClock = Stopwatch.StartNew();
         private static readonly List<string> commands = new List<string>();
         private static int index;
         private static Stage stage = Stage.Menu;
@@ -33,33 +39,96 @@ namespace EcosDaQueda.DebugTools
         private static int errorCount;
         private static bool inCommand;
         private static Func<bool> stopWhen;
+        private static int closingErrors;
 
         static TestRunner()
         {
             var harmony = new Harmony("ecosdaqueda.debug");
-            if (!GenCommandLine.TryGetCommandLineArg("eqtest", out scriptPath) || scriptPath.NullOrEmpty())
+            if (GenCommandLine.TryGetCommandLineArg("eqbatch", out string batchFile) && !batchFile.NullOrEmpty())
+            {
+                try
+                {
+                    foreach (string raw in File.ReadAllLines(batchFile))
+                    {
+                        string[] parts = raw.Trim().Split('|');
+                        if (parts.Length == 2 && parts[0].Length > 0)
+                            batch.Add((parts[0].Trim(), parts[1].Trim()));
+                    }
+                }
+                catch (Exception ex)
+                {
+                    Log.Error("[EQ Debug] Falha ao ler a lista do lote: " + ex);
+                    return;
+                }
+                if (batch.Count == 0)
+                    return;
+                scriptPath = batch[0].script;
+                outPath = batch[0].output;
+            }
+            else if (!GenCommandLine.TryGetCommandLineArg("eqtest", out scriptPath) || scriptPath.NullOrEmpty())
                 return;
             try
             {
-                if (!GenCommandLine.TryGetCommandLineArg("eqout", out outPath) || outPath.NullOrEmpty())
+                if (batch.Count == 0 && (!GenCommandLine.TryGetCommandLineArg("eqout", out outPath) || outPath.NullOrEmpty()))
                     outPath = scriptPath + ".result.txt";
-                foreach (string raw in File.ReadAllLines(scriptPath))
-                {
-                    string line = raw.Trim();
-                    if (line.Length > 0 && !line.StartsWith("#"))
-                        commands.Add(line);
-                }
-                File.WriteAllText(outPath, "# teste: " + scriptPath + "\n# início: " + DateTime.Now + "\n");
+                LoadScript();
                 Active = true;
                 EQLeader.SuppressDialogs = true;
                 harmony.Patch(AccessTools.Method(typeof(Root_Entry), nameof(Root_Entry.Update)), postfix: new HarmonyMethod(typeof(TestRunner), nameof(Frame)));
                 harmony.Patch(AccessTools.Method(typeof(Root_Play), nameof(Root_Play.Update)), postfix: new HarmonyMethod(typeof(TestRunner), nameof(Frame)));
                 harmony.Patch(AccessTools.Method(typeof(Log), nameof(Log.Error), new[] { typeof(string) }), postfix: new HarmonyMethod(typeof(TestRunner), nameof(OnLogError)));
-                Write("# " + commands.Count + " comandos; executor ativo");
+                Write("# " + commands.Count + " comandos; executor ativo" + (batch.Count > 0 ? " (lote: teste 1 de " + batch.Count + ")" : ""));
+                ReportLoadErrors();
             }
             catch (Exception ex)
             {
                 Log.Error("[EQ Debug] Falha ao iniciar o executor de testes: " + ex);
+            }
+        }
+
+        /// <summary>Lê o roteiro atual e zera o estado do teste (no início e entre os testes do lote).</summary>
+        private static void LoadScript()
+        {
+            commands.Clear();
+            index = 0;
+            ticksToRun = 0;
+            stopWhen = null;
+            errorCount = 0;
+            inCommand = false;
+            timeoutSeconds = 900f;
+            clock.Restart();
+            foreach (string raw in File.ReadAllLines(scriptPath))
+            {
+                string line = raw.Trim();
+                if (line.Length > 0 && !line.StartsWith("#"))
+                    commands.Add(line);
+            }
+            File.WriteAllText(outPath, "# teste: " + scriptPath + "\n# início: " + DateTime.Now + "\n");
+        }
+
+        /// <summary>
+        /// Erros do carregamento dos Defs (antes do executor existir). Os que citam o nosso mod contam no RESULTADO
+        /// do primeiro teste da abertura; os de terceiros só são listados (há ruído fixo do modpack).
+        /// </summary>
+        private static void ReportLoadErrors()
+        {
+            try
+            {
+                var errs = Log.Messages.Where(m => m.type == LogMessageType.Error && m.text != null).Select(m => m.text.Split('\n')[0]).ToList();
+                bool Ours(string t) => t.Contains("EQ_") || t.IndexOf("ecosdaqueda", StringComparison.OrdinalIgnoreCase) >= 0;
+                var ours = errs.Where(Ours).ToList();
+                Write("# erros ao carregar: " + errs.Count + " (do nosso mod: " + ours.Count + ")");
+                foreach (string t in ours.Take(20))
+                {
+                    errorCount++;
+                    Write("!! ERRO AO CARREGAR (nosso mod): " + (t.Length > 400 ? t.Substring(0, 400) : t));
+                }
+                foreach (var g in errs.Where(t => !Ours(t)).GroupBy(t => t.Length > 160 ? t.Substring(0, 160) : t).Take(10))
+                    Write("#   carregamento (terceiros) x" + g.Count() + ": " + g.Key);
+            }
+            catch (Exception ex)
+            {
+                Write("# (não deu para ler os erros do carregamento: " + ex.Message + ")");
             }
         }
 
@@ -106,7 +175,7 @@ namespace EcosDaQueda.DebugTools
                 return;
             try
             {
-                if (clock.Elapsed.TotalSeconds > timeoutSeconds)
+                if (stage != Stage.Closing && clock.Elapsed.TotalSeconds > timeoutSeconds)
                 {
                     Write("!! TIMEOUT após " + timeoutSeconds + "s no estágio " + stage + ", comando " + index + ": " + (index < commands.Count ? commands[index] : "-"));
                     Finish();
@@ -119,6 +188,15 @@ namespace EcosDaQueda.DebugTools
                         if (!GenScene.InEntryScene || LongEventHandler.ShouldWaitForEvent || framesInStage < 30)
                             return;
                         StartGame();
+                        break;
+                    case Stage.Closing:
+                        // Lote: esperou o jogo anterior ser descartado (menu principal); fecha o relatório e abre o próximo teste.
+                        if (!GenScene.InEntryScene || LongEventHandler.ShouldWaitForEvent || framesInStage < 10)
+                            return;
+                        // Erros ao descartar o jogo contam neste teste: refaz o RESULTADO (vale o último).
+                        if (errorCount > closingErrors)
+                            Write("# RESULTADO: " + errorCount + " ERRO(S) (contando os do fechamento)");
+                        NextInBatch();
                         break;
                     case Stage.Loading:
                         if (Current.ProgramState != ProgramState.Playing || LongEventHandler.ShouldWaitForEvent || Find.AnyPlayerHomeMap == null && Find.CurrentMap == null)
@@ -318,6 +396,12 @@ namespace EcosDaQueda.DebugTools
                 case "pawngen": return EQDebug.PawnGen(Arg(1), int.Parse(Arg(2) ?? "20"));
                 case "count":
                 {
+                    if (Arg(1) == "mechs")
+                    {
+                        Map mm = Find.CurrentMap ?? Find.AnyPlayerHomeMap;
+                        var mechs = mm.mapPawns.AllPawns.Where(x => x.RaceProps.IsMechanoid && x.Faction == Faction.OfPlayer).ToList();
+                        return "mechs do jogador: " + mechs.Count + " " + string.Join(",", mechs.Select(x => x.kindDef.defName));
+                    }
                     ThingDef cd = DefDatabase<ThingDef>.GetNamedSilentFail(Arg(1) ?? "");
                     if (cd == null) return "ThingDef não existe: " + Arg(1);
                     Map cm = Find.CurrentMap ?? Find.AnyPlayerHomeMap;
@@ -328,6 +412,11 @@ namespace EcosDaQueda.DebugTools
                 case "leather": return EQDebug.Leather(Arg(1));
                 case "hive": return Arg(1) == "nature" ? EQDebug.Hive(Arg(2), true) : EQDebug.Hive(Arg(1), false);
                 case "base": return EQDebug.Base(Fac(1));
+                case "fungobi": return EQFungobiDebug.Run(Arg(1), Arg(2));
+                case "ritualoutcome": return EQRitualDebug.Run(Arg(1), Arg(2));
+                case "events": return EQPowerEventsDebug.List();
+                case "event": return EQPowerEventsDebug.Fire(Arg(1));
+                case "perf": return Arg(1) == "report" ? EQPerf.Report(Arg(2)) : EQPerf.Start();
                 case "permit": return EQDebug.Permit(Arg(1), Arg(2));
                 case "patron": return EQDebug.Patron(Arg(1));
                 case "drone": return EQDebug.Drone(Arg(1));
@@ -337,6 +426,7 @@ namespace EcosDaQueda.DebugTools
                 case "android": return EQDebug.Android(Arg(1) == "fab" && Arg(2) == "awake" ? "fabawake" : Arg(1));
                 case "psy": return EQDebug.Psy(Arg(1), Arg(2), Arg(3));
                 case "signature": return EQDebug.Signature(Fac(1), Arg(2) == "run");
+                case "convoyclaim": IncidentWorker_EQLostConvoy.ForceClaim = true; return "o próximo comboio perdido terá dono vindo buscar";
                 case "incident": return EQDebug.FireIncident(Arg(1));
                 case "letters": return EQDebug.Letters();
                 case "choose": return EQDebug.Choose(string.Join(" ", a.Skip(1).Take(a.Length - 2)), int.Parse(a[a.Length - 1]));
@@ -362,11 +452,52 @@ namespace EcosDaQueda.DebugTools
 
         private static void Finish()
         {
-            if (stage == Stage.Done) return;
+            if (stage == Stage.Done || stage == Stage.Closing) return;
+            if (batch.Count > 0 && batchIndex + 1 < batch.Count)
+            {
+                // Lote: descarta o jogo (erros ao fechar contam neste teste) e segue no menu principal.
+                // O rodapé vai antes: se a volta ao menu travar, o relatório já está completo e o vigia do run-test
+                // só mata o jogo e reabre no próximo roteiro, sem contar falha.
+                WriteFooter();
+                closingErrors = errorCount;
+                Write("# encerrando o jogo do teste (lote)");
+                SetStage(Stage.Closing);
+                ticksToRun = 0;
+                stopWhen = null;
+                if (!GenScene.InEntryScene)
+                    GenScene.GoToMainMenu();
+                return;
+            }
             stage = Stage.Done;
+            WriteFooter();
+            if (batch.Count > 0)
+                Log.Message("[EQ Debug] lote concluído: " + batch.Count + " testes em " + batchClock.Elapsed.TotalSeconds.ToString("0") + "s");
+            Root.Shutdown();
+        }
+
+        private static void WriteFooter()
+        {
             Write("# fim: " + DateTime.Now + " | duração " + clock.Elapsed.TotalSeconds.ToString("0") + "s | erros no log: " + errorCount);
             Write("# RESULTADO: " + (errorCount == 0 ? "SEM ERROS" : errorCount + " ERRO(S)"));
-            Root.Shutdown();
+        }
+
+        private static void NextInBatch()
+        {
+            batchIndex++;
+            scriptPath = batch[batchIndex].script;
+            outPath = batch[batchIndex].output;
+            try
+            {
+                LoadScript();
+                Write("# " + commands.Count + " comandos; lote: teste " + (batchIndex + 1) + " de " + batch.Count + " (lote em " + batchClock.Elapsed.TotalSeconds.ToString("0") + "s)");
+                SetStage(Stage.Menu);
+            }
+            catch (Exception ex)
+            {
+                Write("!! EXCEÇÃO ao abrir o teste do lote: " + ex);
+                stage = Stage.Running;
+                Finish();
+            }
         }
     }
 }
