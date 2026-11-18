@@ -1,0 +1,189 @@
+## DefInjected/BodyDef/Bodies_Drones.xml
+VQE_DroneWithSingleWheel.label	drone
+VQE_DroneWithSingleWheel.corePart.parts.wheel.customLabel	roda
+VQE_DroneWithWheels.label	drone
+VQE_DroneWithWheels.corePart.parts.front_left_wheel.customLabel	roda dianteira esquerda
+VQE_DroneWithWheels.corePart.parts.front_right_wheel.customLabel	roda dianteira direita
+VQE_DroneWithWheels.corePart.parts.rear_left_wheel.customLabel	roda traseira esquerda
+VQE_DroneWithWheels.corePart.parts.rear_right_wheel.customLabel	roda traseira direita
+VQE_DroneWithTreads.label	drone
+VQE_DroneWithTreads.corePart.parts.front_left_tread.customLabel	esteira dianteira esquerda
+VQE_DroneWithTreads.corePart.parts.back_left_tread.customLabel	esteira traseira esquerda
+VQE_DroneWithTreads.corePart.parts.front_right_tread.customLabel	esteira dianteira direita
+VQE_DroneWithTreads.corePart.parts.back_right_tread.customLabel	esteira traseira direita
+VQE_DroneFlying.label	drone voador
+VQE_DroneFlying.corePart.parts.main_rotor.customLabel	rotor principal
+VQE_DroneLegless.label	drone aleijado
+VQE_DroneLegless.corePart.parts.broken_spine.customLabel	coluna quebrada
+VQE_DroneWithLegs.label	drone bípede
+VQE_DroneWithLegs.corePart.parts.left_leg.customLabel	perna esquerda
+VQE_DroneWithLegs.corePart.parts.right_leg.customLabel	perna direita
+## DefInjected/BodyPartDef/Bodies_Drones.xml
+VQE_DroneShell.label	casco
+VQE_DroneCoreBodyPart.label	núcleo
+VQE_DroneEye.label	sensor visual
+VQE_DroneShellSection.label	seção do casco
+VQE_DroneShellSectionWithSpike.label	seção do casco com espinho
+VQE_DroneChassis.label	chassi
+VQE_DroneTreads.label	esteira
+VQE_DroneWheel.label	roda
+VQE_DroneBrokenSpine.label	coluna quebrada
+VQE_DroneRotor.label	rotor
+VQE_DroneAntenna.label	antena
+VQE_DroneLeg.label	perna
+## DefInjected/BodyPartGroupDef/BodyPartGroups.xml
+VQE_SpikedShellAttackTool.label	espinho do casco
+VQE_SpikedShellAttackTool.labelShort	espinho
+## DefInjected/DesignationDef/JobDefs.xml
+VQE_ShutdownDrone.label	desligar drone
+VQE_ShutdownDrone.description	Desliga este drone para sempre.
+VQE_ReactivateDrone.label	reativar drone
+VQE_ReactivateDrone.description	Tira este drone do modo de espera.
+## DefInjected/GameConditionDef/QuestScriptDef_DroneStockpile.xml
+VQE_DroneStockpileTransmitter.label	transmissor de drones ativo
+VQE_DroneStockpileTransmitter.description	Um transmissor de drones de longo alcance está ativo e permite que drones antigos ataquem lugares próximos.
+VQE_DroneStockpileTransmitter.endMessage	O transmissor de drones de longo alcance não está mais ativo.
+VQE_DroneStockpileTransmitter.startMessage	O transmissor de drones de longo alcance permite que drones antigos formem grupos de ataque pelo mundo.
+## DefInjected/HediffDef/Hediffs.xml
+VQE_SensorLag.label	atraso de sensor
+VQE_SensorLag.description	Atraso nos sensores, causando penalidades nas capacidades.
+VQE_Overclock.label	sobrecarregado
+VQE_Overclock.description	Desempenho maior à custa da vida útil.
+## DefInjected/HediffDef/Hediffs_Autobroadcaster.xml
+VQE_Broadcaster_WorkMode.label	modo trabalho
+VQE_Broadcaster_WorkMode.description	O autotransmissor está tocando música animada que faz todo mundo trabalhar um pouquinho mais.
+VQE_Broadcaster_WorkMode_Buff.label	modo trabalho
+VQE_Broadcaster_WorkMode_Buff.description	O autotransmissor está tocando música animada que faz todo mundo trabalhar um pouquinho mais.
+VQE_Broadcaster_Relax.label	modo relaxar
+VQE_Broadcaster_Relax.description	O autotransmissor está tocando música tranquila que deixa todo mundo um pouquinho mais relaxado.
+VQE_Broadcaster_Relax_Buff.label	modo relaxar
+VQE_Broadcaster_Relax_Buff.description	O autotransmissor está tocando música tranquila que deixa todo mundo um pouquinho mais relaxado.
+VQE_Broadcaster_Recruitment.label	modo recrutamento
+VQE_Broadcaster_Recruitment.description	O autotransmissor está tocando propaganda voltada aos prisioneiros para baixar a resistência deles.
+VQE_Broadcaster_Recruitment_Buff.label	modo recrutamento
+VQE_Broadcaster_Recruitment_Buff.description	O autotransmissor está tocando propaganda voltada aos prisioneiros para baixar a resistência deles.
+VQE_Broadcaster_Conversion.label	modo conversão
+VQE_Broadcaster_Conversion.description	O autotransmissor está tocando retórica ideológica voltada aos prisioneiros para converter suas crenças.
+VQE_Broadcaster_Conversion_Buff.label	modo conversão
+VQE_Broadcaster_Conversion_Buff.description	O autotransmissor está tocando retórica ideológica voltada aos prisioneiros para converter suas crenças.
+## DefInjected/JobDef/JobDefs.xml
+VQE_RepairDrone.reportString	consertando TargetA.
+VQE_ShutdownDrone.reportString	desligando TargetA.
+VQE_ReactivateDrone.reportString	reativando TargetA.
+VQE_EnterStandby.reportString	entrando em espera.
+VQE_StandOutOfTransmitterRange.reportString	esperando sinal do transmissor.
+VQE_CarryDroneToTransmitter.reportString	levando TargetA ao transmissor.
+## DefInjected/JobDef/Jobs_Misc.xml
+VQE_GotoPatrolDest.reportString	patrulhando.
+VQE_DecryptCore.reportString	descriptografando núcleo de drone.
+## DefInjected/MainButtonDef/MainButton.xml
+VQE_Drones.label	Drones
+VQE_Drones.description	Gerencie os drones da colônia.
+## DefInjected/MentalStateDef/MentalStates.xml
+VQE_DiagnosticLoop.label	laço de diagnóstico
+VQE_DiagnosticLoop.baseInspectLine	Com defeito: laço de diagnóstico
+VQE_ConnectionTimedOut.label	conexão expirada
+VQE_ConnectionTimedOut.baseInspectLine	Com defeito: conexão expirada
+VQE_Indexing.label	indexando
+VQE_Indexing.baseInspectLine	Com defeito: indexando
+VQE_SensorLag.label	atraso de sensor
+VQE_SensorLag.baseInspectLine	Com defeito: atraso de sensor
+VQE_HoardingLoop.label	laço de acumulação
+VQE_HoardingLoop.baseInspectLine	Com defeito: laço de acumulação
+VQE_Overclock.label	sobrecarga
+VQE_Overclock.baseInspectLine	Com defeito: sobrecarga
+VQE_Desync.label	dessincronia
+VQE_Desync.baseInspectLine	Com defeito: dessincronia
+VQE_FluidLeak.label	vazamento de fluido
+VQE_FluidLeak.baseInspectLine	Com defeito: vazamento de fluido
+VQE_Reboot.label	reiniciando
+VQE_Reboot.baseInspectLine	Com defeito: reiniciando
+VQE_Hardcrash.label	pane total
+VQE_Hardcrash.baseInspectLine	Com defeito: pane total
+VQE_Killswitch.label	desligamento de emergência
+VQE_Killswitch.baseInspectLine	Com defeito: desligamento de emergência
+VQE_SelfDecommission.label	autodescomissionamento
+VQE_SelfDecommission.baseInspectLine	Com defeito: autodescomissionamento
+VQE_HardwareFailure.label	falha de hardware
+VQE_HardwareFailure.baseInspectLine	Com defeito: falha de hardware
+## DefInjected/NeedDef/Needs.xml
+VQE_Lifespan.label	vida útil
+VQE_Lifespan.description	A vida útil operacional que resta ao drone. Quando chega a zero, o núcleo do drone é destruído. Obsolescência programada: a única promessa que o fabricante cumpriu.
+## DefInjected/PawnColumnDef/MainButton.xml
+VQE_Lifespan.label	Vida útil
+VQE_LifespanDrainSpeed.label	Desgaste
+VQE_Draft.label	Convocar
+VQE_AutoRepair.label	Autoconserto
+VQE_Standby.label	Espera
+## DefInjected/PawnKindDef/Races_AutobroadcasterDrone.xml
+VQE_AutobroadcasterDrone.label	drone autotransmissor
+VQE_AutobroadcasterDrone.labelPlural	drones autotransmissores
+## DefInjected/PawnKindDef/Races_BattleDrone.xml
+VQE_BattleDrone.label	drone de batalha
+VQE_BattleDrone.labelPlural	drones de batalha
+## DefInjected/PawnKindDef/Races_CleanerDrone.xml
+VQE_CleanerDrone.label	drone de limpeza
+VQE_CleanerDrone.labelPlural	drones de limpeza
+## DefInjected/PawnKindDef/Races_CraftingDrone.xml
+VQE_CraftingDroneKindDef.label	drone de fabricação
+VQE_CraftingDroneKindDef.labelPlural	drones de fabricação
+## DefInjected/PawnKindDef/Races_FarmingDrone.xml
+VQE_FarmingDrone.label	drone agrícola
+VQE_FarmingDrone.labelPlural	drones agrícolas
+## DefInjected/PawnKindDef/Races_FirefighterDrone.xml
+VQE_FirefighterDrone.label	drone bombeiro
+VQE_FirefighterDrone.labelPlural	drones bombeiros
+## DefInjected/PawnKindDef/Races_HaulerDrone.xml
+VQE_HaulerDrone.label	drone carregador
+VQE_HaulerDrone.labelPlural	drones carregadores
+## DefInjected/PawnKindDef/Races_HornetDrone.xml
+VQE_HornetDrone.label	drone vespa
+VQE_HornetDrone.labelPlural	drones vespa
+## DefInjected/PawnKindDef/Races_MinerDrone.xml
+VQE_MinerDrone.label	drone minerador
+VQE_MinerDrone.labelPlural	drones mineradores
+## DefInjected/PawnKindDef/Races_PackDrone.xml
+VQE_PackDrone.label	drone de carga
+VQE_PackDrone.labelPlural	drones de carga
+## DefInjected/PawnKindDef/Races_Protolancer.xml
+VQE_Protolancer.label	protolanceiro
+VQE_Protolancer.labelPlural	protolanceiros
+## DefInjected/PawnKindDef/Races_RaiderDrone.xml
+VQE_RaiderDrone.label	drone saqueador
+VQE_RaiderDrone.labelPlural	drones saqueadores
+## DefInjected/PawnKindDef/Races_ShufflerDrone.xml
+VQE_ShufflerDrone.label	drone arrastado
+VQE_ShufflerDrone.labelPlural	drones arrastados
+VQE_DriverDrone.label	drone motorista
+VQE_DriverDrone.labelPlural	drones motoristas
+VQE_CrawlerDrone.label	drone rastejante
+VQE_CrawlerDrone.labelPlural	drones rastejantes
+## DefInjected/PawnKindDef/Races_StingrayDrone.xml
+VQE_StingrayDrone.label	drone arraia
+VQE_StingrayDrone.labelPlural	drones arraia
+## DefInjected/PawnKindDef/Races_TurretDrone.xml
+VQE_TurretDrone.label	drone torreta
+VQE_TurretDrone.labelPlural	drones torreta
+## DefInjected/PawnRenderTreeDef/PawnRenderTreeDefs.xml
+VQE_PackDrone.root.children.1.debugLabel	Coisa carregada
+## DefInjected/QuestScriptDef/QuestScriptDef_DroneFactory.xml
+VQE_DroneFactory.questDescriptionRules.rulesStrings[0]	questDescription->[asker_nameDef], [asker_faction_leaderTitle] de [asker_faction_name], achou a origem da volta dos drones. Um grupo dedicado de piratas descobriu um nicho de mercado nos drones perdidos e tomou uma fábrica antiga como sede.\n\nO lugar está fabricando drones em grande quantidade e vendendo para outras facções piratas a preço de grife. Enquanto ele estiver de pé, bandos piratas podem comprar esses drones e usá-los nos ataques.\n\n[asker_nameDef] acha que eles mantêm cativo um gênio que fornece as plantas, conhecido só como O Funileiro.\n\nVocê pode libertar o cérebro da operação ou matá-lo para que o conhecimento antigo dele não seja mais explorado. Os piratas não vão sair sem briga, e provavelmente vão continuar produzindo drones enquanto você se aproxima e lutar ao lado deles.\n\nDefensores:\n[ListOfEnemies]
+VQE_DroneFactory.questNameRules.rulesStrings[0]	questName->A fábrica de drones
+## DefInjected/QuestScriptDef/QuestScriptDef_DroneScrapyard.xml
+VQE_DroneScrapyard.questDescriptionRules.rulesStrings[0]	questDescription->[asker_nameDef], [asker_faction_leaderTitle] de [asker_faction_name], mandou as coordenadas de um ninho de drones militares descartados. Feitas para a guerra, essas máquinas agora se juntam entre montes de sucata, tentando cumprir diretrizes que não servem mais para nada. Algumas se arrastam sem rumo; outras soltam gemidos distorcidos ou ensaiam uma cooperação tosca e meio quebrada.\n\n[asker_faction_name] quer mapear o lugar e precisa dos drones hostis desativados. Pagam se garantirmos que a área fique livre dessas ameaças imprevisíveis.\n\nNo centro do ferro-velho há um pedaço de um drone de comando militar, que pode ser vasculhado atrás de informações vitais sobre protótipos de drones patenteados. Com esses dados, a colônia pode fabricar tipos de drone que se julgavam perdidos.\n\nDrones defensores:\n[defendingDrones]
+VQE_DroneScrapyard.questDescriptionRules.rulesStrings[1]	questDescription->[asker_nameDef], [asker_faction_leaderTitle] de [asker_faction_name], transmitiu a localização de um enorme ferro-velho enferrujado, cheio de drones de guerra desativados. Largadas para apodrecer entre montanhas de metal retorcido, essas máquinas tentam protocolos de manutenção inúteis, soldando sucata incompatível no próprio chassi numa tentativa desesperada de continuar funcionando.\n\n[asker_faction_name] quer colher o plastaço raro e os componentes enterrados nos montes, mas as máquinas erráticas e territoriais tornam o resgate impossível. Pagam bem para limpar o terreno.\n\nEnterrada no fundo da pilha central de sucata há uma matriz de memória intacta de um mecanoide de logística destruído. Extrair esse cache de dados dará à colônia informações cruciais sobre tecnologias de armazenamento de energia de alta eficiência.\n\nDrones defensores:\n[defendingDrones]
+VQE_DroneScrapyard.questDescriptionRules.rulesStrings[2]	questDescription->[asker_nameDef], [asker_faction_leaderTitle] de [asker_faction_name], nos apontou um cânion desolado que serve de lixão gigante para unidades mecanizadas obsoletas. Meio enterrados em escória e entulho, esses drones esquecidos tremem e soltam faíscas, tentando sem esperança recarregar em células de energia esgotadas enquanto atacam qualquer coisa que se mexa.\n\n[asker_faction_name] quer montar um novo posto avançado nesse cânion fácil de defender, mas antes precisa eliminar os guardiões de sucata. A recompensa é generosa.\n\nNo topo da maior pilha de lixo há um sensor de mira intacto de um drone atirador desativado. Recuperar esse equipamento impecável permitirá à colônia fazer engenharia reversa de óticas avançadas de longo alcance.\n\nDrones defensores:\n[defendingDrones]
+VQE_DroneScrapyard.questDescriptionRules.rulesStrings[3]	questDescription->[asker_nameDef], [asker_faction_leaderTitle] de [asker_faction_name], compartilhou as coordenadas de um vasto deserto tecnológico, entupido com as carcaças enferrujadas de drones militares. Muitas máquinas religaram por curto-circuito e patrulham sem rumo os morros de sucata, disparando de vez em quando contra entulho que cai.\n\n[asker_faction_name] diz que essas latas-velhas imprevisíveis vivem emboscando suas caravanas de comércio no setor. Oferecem uma recompensa a quem desativar a ameaça de vez.\n\nDebaixo de uma torre de sucata desabada está a caixa-preta selada de um drone de cerco pesado. Abri-la renderá chaves de criptografia sigilosas, avançando muito nosso entendimento da segurança de sinais mecanoides.\n\nDrones defensores:\n[defendingDrones]
+VQE_DroneScrapyard.questDescriptionRules.rulesStrings[4]	questDescription->[asker_nameDef], [asker_faction_leaderTitle] de [asker_faction_name], mandou a localização de um cemitério de drones muito poluído. Séculos de refugo metálico formaram um labirinto de sucata, patrulhado por estruturas de guerra estropiadas que arrastam os membros que faltam pela terra, ainda cumprindo com violência ordens de guarda esquecidas.\n\n[asker_faction_name] está tentando escavar as ruínas antigas enterradas sob a sucata, mas as máquinas agressivas travam o trabalho. Pagam generosamente para limparmos o lugar.\n\nEscondido no coração do lixão há um núcleo de processamento blindado de uma antiga unidade de comando. Com ele, nossos pesquisadores terão as plantas para fabricar chapas mecanoides reforçadas.\n\nDrones defensores:\n[defendingDrones]
+VQE_DroneScrapyard.questDescriptionRules.rulesStrings[5]	questDescription->[asker_nameDef], [asker_faction_leaderTitle] de [asker_faction_name], descobriu um campo denso de refugo mecânico onde milhares de drones descartados foram postos para descansar. Mas um sinal de socorro corrompido acordou alguns deles. Agora essas máquinas quebradas vagam sem rumo pela sucata, os alto-falantes soltando avisos tristes e cheios de estática.\n\n[asker_faction_name] está sofrendo forte interferência nas comunicações por causa dos sinais erráticos dessas máquinas inquietas e precisa que o ferro-velho se cale. Pagam caro pela nossa ajuda.\n\nNo epicentro do ruído eletrônico há um antigo retransmissor de comunicações hiperdenso. Recuperá-lo dará à colônia dados valiosíssimos sobre como otimizar largura de banda automatizada e frequências de controle mecanoide.\n\nDrones defensores:\n[defendingDrones]
+VQE_DroneScrapyard.questNameRules.rulesStrings[0]	questName->Ferro-velho de drones
+## DefInjected/QuestScriptDef/QuestScriptDef_DroneStockpile.xml
+VQE_DroneStockpile.questDescriptionRules.rulesStrings[0]	questDescription->Sua colônia interceptou sinais erráticos de um transmissor de longo alcance aqui perto. A estação parece montada de qualquer jeito, mas as transmissões vão longe e agitam drones errantes que se julgavam adormecidos sob ferros-velhos e ruínas esquecidas.\n\nA fonte foi rastreada até um depósito de robótica abandonado. Quem montou a transmissão conta com os drones de segurança reativados do lugar para defender o transmissor na sua ausência. Unidades antigas vagam pelos corredores seguindo suas rotas de patrulha e atacam com violência qualquer intruso.\n\nSua colônia e a região em volta vão sofrer ondas de ataques das máquinas despertas. Enquanto o transmissor estiver ativo, os ataques de drones hostis vão continuar.\n\nLista de inimigos:\n[ListOfEnemies]
+VQE_DroneStockpile.questNameRules.rulesStrings[0]	questName->Despertar dos drones
+## DefInjected/RecipeDef/Recipes_Drones.xml
+VQE_DisassembleDrone.label	desmontar drone
+VQE_DisassembleDrone.description	Desmonta um drone morto para recuperar todos os recursos gastos em sua construção.
+VQE_DisassembleDrone.jobString	Desmontando drone.
+VQE_AssembleBattleDrone.label	Montar drone de batalha
+VQE_AssembleBattleDrone.description	Fabrica um drone de batalha.
+VQE_AssembleBattleDrone.jobString	Montando drone de batalha.

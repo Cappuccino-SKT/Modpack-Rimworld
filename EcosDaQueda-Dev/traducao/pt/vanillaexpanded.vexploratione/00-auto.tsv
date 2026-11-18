@@ -1,0 +1,95 @@
+## DefInjected/HediffDef/Hediffs_Misc.xml
+VEE_QuicksandHediff.label	atravessando areia movediça
+VEE_QuicksandHediff.description	Andando por areia movediça. Reduz muito a velocidade de movimento.
+## DefInjected/IncidentDef/Incidents_Map_Misc.xml
+VEE_Infestation.letterLabel	Infestação
+## DefInjected/LandmarkDef/Landmarks.xml
+VEE_QuicksandPits.label	poços de areia movediça
+## DefInjected/RulePackDef/RulePacks_Namers_Landmarks.xml
+VEE_NamerLandmark_Mangrove.rulePack.rulesStrings[0]	r_name(p=0.2)->[terrain_word] de [NamePerson]
+VEE_NamerLandmark_Canyons.rulePack.rulesStrings[0]	r_name(p=0.2)->[terrain_word] de [NamePerson]
+VEE_NamerLandmark_JaggedRocks.rulePack.rulesStrings[0]	r_name(p=0.2)->[terrain_word] de [NamePerson]
+VEE_NamerLandmark_CoralReef.rulePack.rulesStrings[0]	r_name(p=0.2)->[terrain_word] de [NamePerson]
+VEE_NamerLandmark_DustBowl.rulePack.rulesStrings[0]	r_name(p=0.2)->[terrain_word] de [NamePerson]
+VEE_NamerLandmark_SulfuricLake.rulePack.rulesStrings[0]	r_name(p=0.2)->[terrain_word] de [NamePerson]
+VEE_NamerLandmark_SulfuricRiver.rulePack.rulesStrings[0]	r_name(p=0.2)->[terrain_word] de [NamePerson]
+VEE_NamerLandmark_BurnedForest.rulePack.rulesStrings[0]	r_name(p=0.2)->[terrain_word] de [NamePerson]
+VEE_NamerLandmark_BloomingFields.rulePack.rulesStrings[0]	r_name(p=0.2)->[terrain_word] de [NamePerson]
+VEE_NamerLandmark_CactusFields.rulePack.rulesStrings[0]	r_name(p=0.2)->[terrain_word] de [NamePerson]
+VEE_NamerLandmark_FloodPlains.rulePack.rulesStrings[0]	r_name(p=0.2)->[terrain_word] de [NamePerson]
+VEE_NamerLandmark_ContaminatedReservoir.rulePack.rulesStrings[0]	r_name(p=0.2)->[terrain_word] de [NamePerson]
+VEE_NamerLandmark_ContaminatedRiver.rulePack.rulesStrings[0]	r_name(p=0.2)->[terrain_word] de [NamePerson]
+VEE_NamerLandmark_ContaminatedCoast.rulePack.rulesStrings[0]	r_name(p=0.2)->[terrain_word] de [NamePerson]
+VEE_NamerLandmark_QuicksandPits.rulePack.rulesStrings[0]	terrain_word(p=4)->poços de areia movediça
+VEE_NamerLandmark_QuicksandPits.rulePack.rulesStrings[1]	terrain_word->areias que engolem
+VEE_NamerLandmark_QuicksandPits.rulePack.rulesStrings[2]	terrain_word->bolsões de terra fofa
+VEE_NamerLandmark_QuicksandPits.rulePack.rulesStrings[3]	terrain_word->chão instável
+VEE_NamerLandmark_AbandonedFarmlands.rulePack.rulesStrings[0]	r_name(p=0.2)->[terrain_word] de [NamePerson]
+VEE_NamerLandmark_DriftwoodShore.rulePack.rulesStrings[0]	r_name(p=0.2)->[terrain_word] de [NamePerson]
+VEE_NamerLandmark_AlluvialFan.rulePack.rulesStrings[0]	r_name(p=0.2)->[terrain_word] de [NamePerson]
+VEE_NamerLandmark_AnimaForest.rulePack.rulesStrings[0]	r_name(p=0.2)->[terrain_word] de [NamePerson]
+VEE_NamerLandmark_AnimaCoast.rulePack.rulesStrings[0]	r_name(p=0.2)->[terrain_word] de [NamePerson]
+VEE_NamerLandmark_CradleOfLife.rulePack.rulesStrings[0]	r_name(p=0.2)->[terrain_word] de [NamePerson]
+## DefInjected/TerrainDef/Terrain_Natural.xml
+VEE_VolcanicSoilRich.tools.dirt.label	terra
+VEE_Salt.label	sal
+VEE_Salt.tools.sand.label	areia
+VEE_SaltySand.tools.sand.label	areia
+VEE_DryRiverBed.tools.sand.label	areia
+VEE_DryRiverBank.tools.sand.label	areia
+VEE_FertileRiverbank.tools.dirt.label	terra
+VEE_IrradiatedSoil.tools.sand.label	areia
+VEE_Quicksand.label	areia movediça
+VEE_RuinedFarmland.tools.gravel.label	cascalho
+VEE_AnimaSoil.tools.dirt.label	terra
+VEE_AnimaSoilRich.tools.dirt.label	terra
+VEE_AnimaCrackedSoil.tools.mud.label	lama
+VEE_AnimaSand.tools.sand.label	areia
+VEE_AnimaSoftSand.tools.sand.label	areia
+VEE_GravelBeach.tools.gravel.label	cascalho
+VEE_RedSand.label	areia vermelha
+VEE_RedSand.tools.sand.label	areia
+VEE_RedSoftSand.tools.sand.label	areia
+VEE_VolcanicSand.tools.sand.label	areia
+VEE_SoftVolcanicSand.tools.sand.label	areia
+VEE_PebbleDunes.tools.gravel.label	cascalho
+VEE_LittoralDuneSand.tools.sand.label	areia
+VEE_TropicalBeachSand.tools.sand.label	areia
+## DefInjected/TerrainDef/Terrain_Temporary.xml
+VEE_TidalFloodwater.tools.water.label	água
+## DefInjected/TerrainDef/Terrain_Waters.xml
+VEE_SulfuricWaterDeep.tools.water.label	água
+VEE_SulfuricWaterDeepMovingChestDeep.tools.water.label	água
+VEE_SulfuricWaterMovingShallow.tools.water.label	água
+VEE_SulfuricWaterFlood.tools.water.label	água
+VEE_SulfuricWaterShallow.tools.water.label	água
+VEE_IrradiatedWaterDeep.tools.water.label	água
+VEE_IrradiatedOceanWaterDeep.tools.water.label	água
+VEE_IrradiatedWaterDeepMovingChestDeep.tools.water.label	água
+VEE_IrradiatedWaterFlood.tools.water.label	água
+VEE_IrradiatedWaterShallow.tools.water.label	água
+VEE_IrradiatedWaterMovingShallow.tools.water.label	água
+VEE_IrradiatedWaterOceanShallow.tools.water.label	água
+VEE_SwampyWaterMovingChestDeep.tools.water.label	água
+VEE_SwampyWaterMovingShallow.tools.water.label	água
+VEE_StagnantRiverWater.tools.water.label	água
+VEE_StagnantRiverWater.tools.mud.label	lama
+VEE_AnimaWaterDeep.tools.water.label	água
+VEE_AnimaWaterOceanDeep.tools.water.label	água
+VEE_AnimaWaterMovingChestDeep.tools.water.label	água
+VEE_AnimaWaterShallow.tools.water.label	água
+VEE_AnimaWaterOceanShallow.tools.water.label	água
+VEE_AnimaWaterMovingShallow.tools.water.label	água
+## DefInjected/ThingDef/Mote_Visual.xml
+VEE_RotstinkMote.label	efeito
+VEE_ToxicMote.label	efeito
+VEE_SmokeMote.label	efeito
+VEE_DeadlifeMote.label	efeito
+## DefInjected/ThoughtDef/Thoughts_Memory_Misc.xml
+VEE_Quicksand.stages.traversing_quicksand.label	atravessando areia movediça
+VEE_Quicksand.stages.traversing_quicksand.description	É como andar no melaço...
+## DefInjected/TileMutatorDef/TileMutators_Landmarks_Natural.xml
+VEE_QuicksandPits.label	poços de areia movediça
+VEE_QuicksandPits.description	Esta região tem poças rasas de areia movediça que atrapalham o movimento.
+VEE_AnimaSoils.description	Esta área tem solo impregnado de energia de anima latente, que influencia sutilmente plantas, animais e mentes.
+VEE_AnimaSoils_Coast.description	Esta área tem solo impregnado de energia de anima latente, que influencia sutilmente plantas, animais e mentes.

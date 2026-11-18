@@ -1,0 +1,143 @@
+## DefInjected/GeneDef/GeneDefs_Archite.xml
+VQEA_SelfRepairingTissue.label	tecido autorreparador
+VQEA_SelfRepairingTissue.description	Portadores deste gene têm tecido regenerativo tecido com arquitas, que reconstrói sem parar as células danificadas e restaura o que foi perdido. Conseguem regenerar órgãos e partes do corpo, mas o processo leva tempo.
+VQEA_Electromagnetized.label	eletromagnetizado
+VQEA_Electromagnetized.description	Portadores deste gene geram um campo eletromagnético interno estável que os torna totalmente imunes a ataques de PEM. Também podem liberar essa carga num forte pulso de PEM, inutilizando eletrônicos e mecanoides por perto.
+VQEA_MatterPhasing.label	defasagem da matéria
+VQEA_MatterPhasing.description	Portadores deste gene podem passar o corpo, por pouco tempo, a um estado semi-intangível e atravessar paredes e obstáculos sólidos. O efeito dura só um instante antes de o corpo voltar a ser sólido.
+## DefInjected/HediffDef/Hediffs_Genes.xml
+VQEA_Woundless.label	sem feridas
+VQEA_Woundless.description	Portadores deste gene curam sangramentos rapidamente. A carne se fecha instantes depois do ferimento, impedindo toda perda de sangue e permitindo lutar com traumas que matariam outros.
+VQEA_PlasteelSkin.label	pele de plastaço
+VQEA_PlasteelSkin.description	Portadores deste gene têm uma armadura dérmica densa e reforçada. A pele resiste a balas, absorve impactos e dispersa o calor, fazendo do corpo inteiro um escudo vivo.
+VQEA_PlasteelClaws.label	garra de plastaço
+VQEA_PlasteelClaws.description	Portadores deste gene desenvolvem garras de liga sintética que cortam armadura e carne. Essas armas naturais estão sempre à mão e golpeiam com eficiência brutal.
+VQEA_PlasteelClaws.comps.HediffComp_VerbGiver.tools.plasteel_claw.label	garra de plastaço
+VQEA_PassiveMeditation.label	meditação passiva
+VQEA_PassiveMeditation.description	Portadores deste gene têm arquitas que canalizam passivamente a energia psíquica do ambiente, repondo a concentração psíquica sem meditar. Essas mentes sempre sintonizadas ficam afiadas, serenas e prontas para conjurar a qualquer hora.
+VQEA_Bulwark.label	baluarte
+VQEA_Bulwark.description	Arquitas nos tecidos do portador reforçam as estruturas celulares e reduzem pela metade o dano recebido. Os receptores de dor são abafados em favor da consciência de combate, e o próprio corpo resiste a traumas que aleijariam um humano comum.
+VQEA_Enormous.label	enorme
+VQEA_Enormous.description	Portadores deste gene são saturados de arquitas reguladoras de crescimento que aumentam muito o tamanho do corpo e a massa muscular. O porte imenso permite façanhas de força bruta, ao custo de velocidade e apetite.
+VQEA_MasterfulIntellectual.label	magistral em intelecto
+VQEA_MasterfulIntellectual.description	Esta pessoa pesquisa no subconsciente, gerando progresso científico mesmo fazendo outras tarefas ou descansando.
+VQEA_NoPain.label	sem sensibilidade à dor
+VQEA_NoPain.description	Esta criatura tem sensibilidade à dor reduzida e demora mais para cair de dor.
+VQEA_InjectionComa.label	coma de injeção
+VQEA_InjectionComa.description	Esta pessoa recebeu uma injeção de arquitas. Elas estão reescrevendo a composição genética, alterando tecidos e a química celular do corpo inteiro. Durante o processo o corpo não funciona com segurança, então a cobaia é mantida em coma profundo.\n\nA duração do coma pode ser encurtada com equipamento de laboratório avançado.
+VQEA_HemocollapseSyndrome.label	síndrome do hemocolapso
+VQEA_HemocollapseSyndrome.description	Doença rara e terminal em que a medula óssea aos poucos deixa de produzir componentes vitais de hemogênio. O corpo enfraquece e os órgãos se esforçam além da conta, até a morte.
+VQEA_HemocollapseSyndrome.stages.latent.label	latente
+VQEA_HemocollapseSyndrome.stages.progressive.label	progressiva
+VQEA_HemocollapseSyndrome.stages.advanced.label	avançada
+VQEA_HemocollapseSyndrome.stages.terminal.label	terminal
+VQEA_Levitation.label	levitação
+VQEA_Levitation.description	Voo limitado que permite a este colono levitar sobre o terreno. Ignora o custo de movimento do terreno ao andar.
+VQEA_Invisibility.label	invisibilidade
+VQEA_Invisibility.description	Esta pessoa usou sugestão psíquica para ficar invisível por pouco tempo.
+VQEA_SelfRepairingTissue.label	tecido autorreparador
+VQEA_SelfRepairingTissue.description	Esta pessoa tem tecido regenerativo tecido com arquitas, que reconstrói sem parar as células danificadas e restaura o que foi perdido. Consegue regenerar órgãos e partes do corpo, mas o processo leva tempo.
+VQEA_Regenerating.label	regenerando
+VQEA_Regenerating.description	Regenerando feridas, novas e antigas.
+VQEA_Regenerating.labelNounPretty	{0} em {1}
+VQEA_MatterPhasing.label	defasagem da matéria
+VQEA_MatterPhasing.description	Esta pessoa ficou intangível e pode atravessar paredes antes de voltar a ser sólida.
+VQEA_SuicideHediff.label	morrendo
+VQEA_SuicideHediff.description	Esta criatura está morrendo.
+## DefInjected/JobDef/Jobs_Joy.xml
+VQEA_Play_AncientFoosballTable.reportString	jogando pebolim.
+## DefInjected/JobDef/Jobs_Misc.xml
+VQEA_CarryToBioBattery.reportString	carregando TargetA para o tanque de biobateria.
+## DefInjected/JoyKindDef/JoyKinds.xml
+VQEA_AnimalRelaxation.label	relaxamento com animais
+## DefInjected/MapGeneratorDef/AncientComplexMapGenerator.xml
+VQEA_AncientComplex.label	complexo ancestral
+## DefInjected/MapGeneratorDef/SealedVaultMapGenerator.xml
+VQEA_SealedVault.label	cofre selado
+## DefInjected/MentalStateDef/MentalStateDefs.xml
+VQEA_MutantBerserk.baseInspectLine	Em fúria
+## DefInjected/PawnKindDef/PawnKinds_Spacer.xml
+VQE_Patient.label	paciente
+## DefInjected/PawnKindDef/Races_Animal_Mutants.xml
+VQEA_Spliceling.label	emendinho
+VQEA_Splicehulk.label	emendão
+VQEA_Splicefiend.label	emendemônio
+VQEA_Splicetoot.label	emendapum
+## DefInjected/QuestScriptDef/Quest_AncientLabComplex.xml
+VQE_AncientLabComplex.questDescriptionRules.rulesStrings[0]	questDescription(asker_factionLeader==True)->[asker_nameDef], [asker_faction_leaderTitle] de [asker_faction_name], interceptou uma transmissão misteriosa. O sinal traz marcas de criptografia de um antigo programa militar de supersoldados e parece vir de um lugar não muito longe da nossa colônia. \n\n[asker_nameDef] acredita que seguir o sinal vai revelar uma instalação escondida. Os batedores acharam um pequeno posto abandonado na superfície, com a entrada de um cofre aberta e descendo fundo na terra.\n\nLá embaixo há um complexo de laboratórios selado. Lá dentro deve haver uma antiga estação de transmissão — interceptar o sinal dela vai nos dizer para onde ele está sendo enviado. \n\nO cofre guarda também algo inestimável: um injetor arcogênico intacto. Esse aparelho raro permite começar a fabricar supersoldados injetando arquitas direto em cobaias humanas — o termo de consentimento fica por nossa conta. O injetor e qualquer outro equipamento que tenha sobrevivido devem ser levados para a colônia. \n\nO laboratório não parece ter defensores ativos, mas armadilhas antigas ainda podem funcionar: cuidado onde pisa.
+VQE_AncientLabComplex.questDescriptionRules.rulesStrings[1]	questDescription(askerIsNull==True)->Interceptamos uma transmissão remota instável pedindo reforços para algum evento desconhecido. Não parece ser para nós, mas o sinal vem de um laboratório que fabricava supersoldados antigos. \n\nO lugar deve abrigar a estação de transmissão da mensagem. É essencial interceptar a transmissão lá mesmo, para descobrir para onde ela vai. \n\nA viagem pode ser perigosa: não sabemos o que há lá. A tecnologia que restou pode ser útil; se sonhamos com supersoldados nossos, vale examinar cada equipamento com calma e levar o que der.
+VQE_AncientLabComplex.questNameRules.rulesStrings[0]	questName->Laboratório de supersoldados
+## DefInjected/QuestScriptDef/Quest_AncientResearchVault.xml
+VQE_AncientResearchVault.questDescriptionRules.rulesStrings[0]	questDescription->O rádio acende com mais um pedido para E352. O satélite automático fala de outro cofre, escondido em algum lugar ao longe. Ele consta como um de muitos numa série de "cofres tomados", onde pacientes supersoldados trancaram as monstruosidades genéticas debaixo da terra. \n\nO resumo anexo diz o seguinte:\n[story]\n\n O satélite quer que você dê conta dos supersoldados e depois reabra a porta do cofre. Ele se recusa a explicar o propósito da missão. A única diretriz é reabrir a seção subterrânea do cofre. Feito isso, você pode ir embora ou saquear a tecnologia antiga do lugar.
+VQE_AncientResearchVault.questDescriptionRules.rulesStrings[1]	story->Os pacientes deste cofre guardam o lado de fora desde que ouviram boatos de que as monstruosidades seriam soltas. Com medo pelos descendentes, fizeram uma revolta para parar a operação inteira. Mataram vários médicos e correram para selar a enorme porta subterrânea. Depois de alguma discussão, um grupo decidiu ficar. Dar a vida para que os captores nunca voltassem a soltar os horrores no mundo foi o jeito que acharam de proteger suas famílias.
+VQE_AncientResearchVault.questDescriptionRules.rulesStrings[2]	story->Este cofre abrigava um culto nascido do cativeiro. Num experimento, um paciente ganhou um poder imenso baseado na manipulação externa do eu interior. Ele resolveu empurrar sua ideologia nos outros pacientes até que todos tivessem uma só intenção: tomar o lugar e guardá-lo como farol do novo líder. Os executivos souberam do boato e o capturaram. Amarrado às máquinas, teve as sinapses entorpecidas enquanto tentavam remover o poder com tratamentos experimentais. Quando o culto rompeu a contenção e invadiu os corredores, vingando-se sem piedade dos captores, ninguém sabia em que estado o líder estava. Depois de fugir do cofre, os membros selaram a porta e ficaram de guarda no templo. Não se sabe se o líder escapou ou se virou ele mesmo uma monstruosidade durante a detenção.
+VQE_AncientResearchVault.questDescriptionRules.rulesStrings[3]	story->Quem cerca este cofre guarda um segredo terrível. Um experimento deu a um paciente o dom notável da telepatia. Os médicos ficaram chocados quando ele revelou detalhes íntimos da vida de cada um. Posto com os outros pacientes, o telepata passou a incomodá-los com a própria precisão, desenterrando casos pessoais e segredos bem guardados. Tudo mudou quando ele encarou por tempo demais um paciente desgrenhado e ouviu algo sombrio demais para aguentar. Os pacientes combinaram matá-lo, mas os executivos intervieram. O telepata aproveitou para ler a planta do cofre na mente de um médico e destrancar a porta. Quando ele e um punhado de pacientes chegaram à superfície, o desgrenhado o chutou escada abaixo de volta para o cofre. Ele e os outros juraram mantê-lo trancado lá para sempre, guardando os segredos enterrados junto com os horrores lá de baixo.
+VQE_AncientResearchVault.questDescriptionRules.rulesStrings[4]	story->Este cofre é guardado por um grupo leal de amigos. Os corredores subterrâneos abrigavam uma paciente talentosa capaz de mudar de forma: virava qualquer coisa quando quisesse. Os médicos traziam tartarugas e coelhos para testá-la e, num processo doloroso de derretimento, ela criava casco e virava, sem tirar nem pôr, uma tartaruga. Com o tempo aquilo ficou insuportável. Ela era querida pelos outros pacientes, que acabaram com pena dela. Numa noite, convenceram a moça a derreter na forma de um médico para armar uma fuga. Disfarçada, levou todos os amigos até a porta do cofre, mas dizem que sem querer soltou uma onda de horrores genéticos fracassados. O grupo escapou; ela ficou para trás. Os amigos agora acampam em cima do cofre, esperando um dia resgatá-la das profundezas. Acham que o único jeito de ela ter sobrevivido é ter assumido a forma de uma das monstruosidades, vagando pelos corredores disfarçada de uma delas.
+VQE_AncientResearchVault.questNameRules.rulesStrings[0]	questName(priority=1)->E352 - [verb] [place] tomado
+VQE_AncientResearchVault.questNameRules.rulesStrings[1]	verb->Proteger
+VQE_AncientResearchVault.questNameRules.rulesStrings[2]	verb->Conter
+VQE_AncientResearchVault.questNameRules.rulesStrings[3]	verb->Reabrir
+VQE_AncientResearchVault.questNameRules.rulesStrings[4]	place->o laboratório
+VQE_AncientResearchVault.questNameRules.rulesStrings[5]	place->o cofre
+VQE_AncientResearchVault.questNameRules.rulesStrings[6]	place->o complexo
+## DefInjected/QuestScriptDef/Quest_ArchiteArraySite.xml
+VQE_ArchiteArraySite.questDescriptionRules.rulesStrings[0]	questDescription(askerIsNull==True)->O rádio acende com mais um pedido para E352. O satélite automático afirma, em tom sinistro, que esta será a sua tarefa mais importante. A voz fala de uma peça de tecnologia crucial: o componente mais lendário do programa de supersoldados, um aparelho chamado matriz de direcionamento arquita. Ele serve para controlar o fluxo imprevisível de vapor arquita, podendo dobrar o rendimento. A voz manda chegar ao cofre e recuperar a tecnologia, sem dizer o porquê.\n\nNosso objetivo é limpar o laboratório e tomar a matriz de direcionamento arquita. Dá para imaginar que o lugar vai estar cheio de forças hostis.
+VQE_ArchiteArraySite.questNameRules.rulesStrings[0]	questName->E352 - Tarefa final
+## DefInjected/QuestScriptDef/Quest_ArchiteControlVault.xml
+VQE_ArchiteControlVault.questDescriptionRules.rulesStrings[0]	questDescription(askerIsNull==True)->Depois de interceptar a estação de transmissão, identificamos outro laboratório antigo que se comunicava com ela. Ele está transmitindo um alerta vermelho, provavelmente uma ameaça ainda maior. Parece que algumas monstruosidades até fugiram da contenção subterrânea e chegaram à superfície.\n\nO lugar deve ter outra estação de transmissão responsável pela mensagem. É essencial interceptar essa transmissão também, lá mesmo, para descobrir para onde ela vai. A tecnologia que ainda funciona pode melhorar a produção de supersoldados. Vale examinar cada equipamento com calma e levar o que der, se quisermos fabricar supersoldados nossos com alguma confiabilidade.
+VQE_ArchiteControlVault.questNameRules.rulesStrings[0]	questName->Cofre de supersoldados interceptado
+## DefInjected/QuestScriptDef/Quest_InhibitorResearchLab.xml
+VQE_InhibitorResearchLab.questDescriptionRules.rulesStrings[0]	questDescription(askerIsNull==True)->Entre os chiados da estática, parece que uma antiga rede confundiu seu rádio com o de um velho agente de reconhecimento depois de ver suas viagens por um satélite automático.\n\nA mensagem chama você secamente de E352 e manda fazer o reconhecimento de outro laboratório de supersoldados. A transmissão parece estar rodando há muito tempo e avisa de uma grande revolta no laboratório: os supersoldados saíram da contenção e agora vagam pelo complexo trancado. Segundo a tarefa, o lugar foi evacuado, mas a revolta nunca foi contida e é provável que alguns tenham escapado.\n\nA transmissão traz também as plantas do lugar, com o seu objetivo de verdade: um aparelho chamado núcleo inibidor de mutagênicos. Era só um protótipo quando o projeto foi abandonado de repente, feito para suprimir mutações genéticas instáveis. É provável que haja outros equipamentos valiosos por lá também. Nosso objetivo é achar o núcleo e desmontá-lo para usar no nosso próprio laboratório.
+VQE_InhibitorResearchLab.questNameRules.rulesStrings[0]	questName->E352 - Pedido de reconhecimento
+## DefInjected/QuestScriptDef/Quest_SpliceframeBlacksite.xml
+VQE_SpliceframeBlacksite.questDescriptionRules.rulesStrings[0]	questDescription(askerIsNull==True)->A transmissão interceptada é um pedido de socorro urgente de outro laboratório secreto, codinome "Base Negra Emendaquadro". Ela avisa que o laboratório inteiro foi comprometido depois de um desastre: um vazamento químico atraiu uma enorme e repentina infestação de insetoides.\n\nA transmissão menciona um aparelho genético útil chamado enlace emendaquadro, capaz de mostrar probabilidades claras nos experimentos genéticos. Nosso objetivo é achar o enlace e desmontá-lo para usar no nosso próprio laboratório. Melhor ir bem preparado para uma grande ameaça insetoide.
+VQE_SpliceframeBlacksite.questNameRules.rulesStrings[0]	questName->Laboratório de supersoldados infestado
+## DefInjected/ScenPartDef/Scenarios_SealedVault.xml
+VQEA_SealedVaultPart.label	começar com cofre selado
+## DefInjected/ScenarioDef/Scenarios_CargoCult.xml
+VQEA_CargoCult.label	Culto à carga
+VQEA_CargoCult.description	Foi um achado de sorte: as coletoras da tribo estavam colhendo frutas quando viram um estranho prédio de metal meio enterrado, as paredes cheias de tubos retorcidos como as veias de um gigante adormecido. Feito por mãos antigas ou moldado pelos próprios deuses? Logo entendemos que só podia ser divino. As oferendas postas no "nexo pneumático" sumiam com um sagrado fuuuup e voltavam depois transformadas em presentes.\n\nObservação: você começa pobre e sem tecnologia, mas o nexo pneumático torna este início mais fácil que o tribal comum.
+VQEA_CargoCult.scenario.description	Foi um achado de sorte: as coletoras da tribo estavam colhendo frutas quando viram um estranho prédio de metal meio enterrado, as paredes cheias de tubos retorcidos como as veias de um gigante adormecido. Feito por mãos antigas ou moldado pelos próprios deuses? Logo entendemos que só podia ser divino. As oferendas postas no "nexo pneumático" sumiam com um sagrado fuuuup e voltavam depois transformadas em presentes.\n\nObservação: você começa pobre e sem tecnologia, mas o nexo pneumático torna este início mais fácil que o tribal comum.
+VQEA_CargoCult.scenario.name	Culto à carga
+VQEA_CargoCult.scenario.parts.VFEC_AddStartingStructure.structureLabel	Um nexo pneumático abandonado
+VQEA_CargoCult.scenario.parts.GameStartDialog.text	Foi um achado de sorte: as coletoras da tribo estavam colhendo frutas quando viram um estranho prédio de metal meio enterrado, as paredes cheias de tubos retorcidos como as veias de um gigante adormecido. Feito por mãos antigas ou moldado pelos próprios deuses? Logo entendemos que só podia ser divino. As oferendas postas no "nexo pneumático" sumiam com um sagrado fuuuup e voltavam depois transformadas em presentes.
+VQEA_CargoCult.scenario.summary	Cinco tribais perdidos tropeçam num nexo pneumático e passam a venerá-lo. Dificuldade moderada a alta.
+## DefInjected/ScenarioDef/Scenarios_SealedVault.xml
+VQE_NewVault.label	Cofre selado
+VQE_NewVault.description	Uma lembrança atravessa sua mente partida enquanto você cambaleia por uma câmara enferrujada. Um experimento, um grupo de médicos com máscaras abstratas e um clarão amarelo-dourado envolvendo o seu corpo. Algo profundamente antinatural pulsa no seu peito: você foi modificado de algum jeito e dormiu por muito, muito tempo. As pernas tremem quando você lembra que lugar é este: uma fortaleza quase impenetrável, feita para manter o resgate do lado de fora e os cativos do lado de dentro. O cofre tem uma seção subterrânea atrás de uma porta selada. Depois de tantos anos, seus captores parecem ter sumido há muito. A constatação fria pesa no peito: que força desconhecida pôs você de volta aqui?
+VQE_NewVault.scenario.description	Uma lembrança atravessa sua mente partida enquanto você cambaleia por uma câmara enferrujada. Um experimento, um grupo de médicos com máscaras abstratas e um clarão amarelo-dourado envolvendo o seu corpo. Algo profundamente antinatural pulsa no seu peito: você foi modificado de algum jeito e dormiu por muito, muito tempo. As pernas tremem quando você lembra que lugar é este: uma fortaleza quase impenetrável, feita para manter o resgate do lado de fora e os cativos do lado de dentro. O cofre tem uma seção subterrânea atrás de uma porta selada. Depois de tantos anos, seus captores parecem ter sumido há muito. A constatação fria pesa no peito: que força desconhecida pôs você de volta aqui?
+VQE_NewVault.scenario.name	Cofre selado
+VQE_NewVault.scenario.parts.GameStartDialog.text	Uma lembrança atravessa sua mente partida enquanto você cambaleia por uma câmara enferrujada. Um experimento, um grupo de médicos com máscaras abstratas e um clarão amarelo-dourado envolvendo o seu corpo. Algo profundamente antinatural pulsa no seu peito: você foi modificado de algum jeito e dormiu por muito, muito tempo. As pernas tremem quando você lembra que lugar é este: uma fortaleza quase impenetrável, feita para manter o resgate do lado de fora e os cativos do lado de dentro. O cofre tem uma seção subterrânea atrás de uma porta selada. Depois de tantos anos, seus captores parecem ter sumido há muito. A constatação fria pesa no peito: que força desconhecida pôs você de volta aqui?
+VQE_NewVault.scenario.summary	Um supersoldado esquecido há muito tempo, ainda de guarda no posto. A experiência clássica do VQE - Ancients.
+## DefInjected/SitePartDef/SiteParts_TheAncientLab.xml
+VQEA_AncientLabComplexSite.label	laboratório de supersoldados abandonado
+VQEA_AncientLabComplexSite.description	Um pequeno complexo de laboratórios subterrâneo.
+VQEA_ArchiteControlVaultSite.label	laboratório de supersoldados perigoso
+VQEA_ArchiteControlVaultSite.description	Um enorme complexo de laboratórios subterrâneo.
+VQEA_SpliceframeBlacksiteSite.label	laboratório de supersoldados infestado
+VQEA_SpliceframeBlacksiteSite.description	Uma base subterrânea secreta que abriga um enlace emendaquadro.
+VQEA_InhibitorResearchLabSite.label	Pedido de reconhecimento
+VQEA_InhibitorResearchLabSite.description	Um centro de pesquisa com um núcleo inibidor de mutagênicos.
+VQEA_ArchiteArraySite.label	complexo da matriz arquita
+VQEA_ArchiteArraySite.description	Um vasto complexo que abriga uma matriz de direcionamento arquita.
+VQEA_AncientResearchVaultSite.label	cofre de pesquisa antigo
+VQEA_AncientResearchVaultSite.description	Um cofre de pesquisa cheio de tecnologias antigas perdidas.
+## DefInjected/StatDef/Stats_Pawns_General.xml
+VQEA_MasterfulCooking.label	culinária magistral
+VQEA_MasterfulCooking.description	Multiplicador da velocidade de cozinhar, ligado ao gene arquita de culinária magistral.
+VQEA_Prowess.label	destreza
+VQEA_Prowess.description	Multiplicador da chance de acerto e de esquiva corpo a corpo, ligado ao gene arquita de destreza. Lembre que o jogo base não mostra a chance de acerto corpo a corpo neste quadro.
+## DefInjected/TerrainDef/Terrain_Floors.xml
+VQED_AncientHospitalFloor.label	piso de hospital antigo
+VQED_AncientHospitalFloor.description	Piso vinílico de um hospital antigo. Ainda dá para ver sangue desbotado nele.
+VQED_AncientReinforcedConcrete.label	concreto armado antigo
+VQED_AncientReinforcedConcrete.description	Piso antigo de concreto armado. Velho e feio.
+VQED_AncientNurseryCarpet.label	carpete de berçário antigo
+VQED_AncientNurseryCarpet.description	Um carpete de berçário antigo e rasgado.
+## DefInjected/ThingCategoryDef/ThingCategories.xml
+VQEA_BuildingsLab.label	laboratório de injeção arquita
+## DefInjected/ThingDef/Abilities.xml
+VQEA_Bullet_HellsphereCannonGun.label	disparo de canhão de esfera infernal
+## DefInjected/ThingDef/Apparel_Various.xml
+VQEA_Apparel_PatientGown.label	camisola de paciente
+VQEA_Apparel_PatientGown.description	Camisola de paciente velha e surrada. Não protege nem aquece, mas facilita um pouquinho os procedimentos médicos em quem a veste.

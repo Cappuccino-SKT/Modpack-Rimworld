@@ -1,0 +1,151 @@
+## DefInjected/QuestScriptDef/Quest1.xml
+VQE_PrototypeARC.questNameRules.rulesStrings[0]	questName->O [prototypeName] [adj]
+VQE_PrototypeARC.questNameRules.rulesStrings[1]	adj->inacabado
+VQE_PrototypeARC.questNameRules.rulesStrings[2]	adj->abandonado
+VQE_PrototypeARC.questNameRules.rulesStrings[3]	adj->experimental
+VQE_PrototypeARC.questNameRules.rulesStrings[4]	adj->antigo
+VQE_PrototypeARC.questNameRules.rulesStrings[5]	adj->esquecido
+VQE_PrototypeARC.questNameRules.rulesStrings[6]	adj->largado
+VQE_PrototypeARC.questNameRules.rulesStrings[7]	adj->fracassado
+VQE_PrototypeARC.questNameRules.rulesStrings[8]	adj->nunca testado
+VQE_PrototypeARC.questNameRules.rulesStrings[9]	adj->misterioso
+VQE_PrototypeARC.questNameRules.rulesStrings[10]	adj->meio pronto
+VQE_PrototypeARC.questNameRules.rulesStrings[11]	adj->incompleto
+VQE_PrototypeARC.questNameRules.rulesStrings[12]	adj->embrionário
+VQE_PrototypeARC.questNameRules.rulesStrings[13]	adj->escondido
+VQE_PrototypeARC.questNameRules.rulesStrings[14]	prototypeName->protótipo
+VQE_PrototypeARC.questNameRules.rulesStrings[15]	prototypeName->experimento
+VQE_PrototypeARC.questNameRules.rulesStrings[16]	prototypeName->desenho
+VQE_PrototypeARC.questNameRules.rulesStrings[17]	prototypeName->projeto
+VQE_PrototypeARC.questNameRules.rulesStrings[18]	prototypeName->núcleo de energia
+VQE_PrototypeARC.questNameRules.rulesStrings[19]	prototypeName->engenho
+VQE_PrototypeARC.questNameRules.rulesStrings[20]	prototypeName->conceito
+VQE_PrototypeARC.questNameRules.rulesStrings[21]	prototypeName->gerador
+VQE_PrototypeARC.questNameRules.rulesStrings[22]	prototypeName->reator
+VQE_PrototypeARC.questNameRules.rulesStrings[23]	prototypeName->aparelho
+VQE_PrototypeARC.questNameRules.rulesStrings[24]	prototypeName->invento
+VQE_PrototypeARC.questNameRules.rulesStrings[25]	prototypeName->artefato
+VQE_PrototypeARC.questNameRules.rulesStrings[26]	prototypeName->campo de testes
+VQE_PrototypeARC.questNameRules.rulesStrings[27]	prototypeName->arcabouço
+## DefInjected/QuestScriptDef/Quest2.xml
+VQE_AbandonedARC.questContentRules.rulesStrings[0]	allObjectsStudiedMessage->Todos os objetos foram estudados. Você reuniu as informações e já pode ir embora.
+VQE_AbandonedARC.questContentRules.rulesStrings[1]	halfOfObjectsDestroyedMessage->Mais da metade dos dados de pesquisa se perdeu.
+VQE_AbandonedARC.questDescriptionRules.rulesStrings[0]	questDescription->Com os dados tirados do antigo local do protótipo, achamos um complexo industrial [adj] onde a construção do [arcName] continuou. Esse enorme complexo já fervilhou de engenheiros e cientistas forçando os limites da tecnologia; hoje está em silêncio, vencido pelo tempo.\n\nO lugar tem [siteDetails], mas agora está [siteThreat].\n\n[studyWarning] [questFailWarning]\n\nConcluir esta expedição [questOutcome]
+VQE_AbandonedARC.questDescriptionRules.rulesStrings[1]	questDescription->Os dados do local do protótipo revelaram as coordenadas de um pátio industrial [adj] onde [inventor_nameFull] e sua equipe continuaram desenvolvendo o [arcName]. O complexo se espalha por uma área enorme, e as estruturas enferrujadas e os muros caindo lembram a glória de antes.\n\nLá dentro há [siteDetails], mas o lugar está [siteThreat], e isso precisa ser resolvido antes de qualquer pesquisa séria.\n\n[studyWarning] [questFailWarning]\n\nResolver esta tarefa [questOutcome]
+VQE_AbandonedARC.questDescriptionRules.rulesStrings[2]	questDescription->Analisando os dados do protótipo, localizamos um canteiro de obras [adj] que foi o passo seguinte do projeto do [arcName]. O lugar, que já foi um farol da ambição industrial, hoje é um cemitério de inovação, com o maquinário apodrecendo a céu aberto.\n\nLá dentro você vai achar [siteDetails], mas o lugar está [siteThreat].\n\n[studyWarning] [questFailWarning]\n\nO seu esforço aqui [questOutcome]
+VQE_AbandonedARC.questDescriptionRules.rulesStrings[3]	questDescription->Os dados do protótipo antigo nos levaram a um complexo industrial [adj] que foi decisivo para o projeto do [arcName]. Já foi um polo próspero de desenvolvimento tecnológico; hoje está em ruínas, e nos corredores só ecoa o vento.\n\nEntre os restos há [siteDetails], mas o complexo agora está [siteThreat].\n\n[studyWarning] [questFailWarning]\n\nCumprir esta missão [questOutcome]
+VQE_AbandonedARC.questDescriptionRules.rulesStrings[4]	adj->esquecido
+VQE_AbandonedARC.questDescriptionRules.rulesStrings[5]	adj->antigo
+VQE_AbandonedARC.questDescriptionRules.rulesStrings[6]	adj->largado
+VQE_AbandonedARC.questDescriptionRules.rulesStrings[7]	adj->enorme
+VQE_AbandonedARC.questDescriptionRules.rulesStrings[8]	adj->decadente
+VQE_AbandonedARC.questDescriptionRules.rulesStrings[9]	adj->tomado pelo mato
+VQE_AbandonedARC.questDescriptionRules.rulesStrings[10]	adj->arruinado
+VQE_AbandonedARC.questDescriptionRules.rulesStrings[11]	adj->fabril
+VQE_AbandonedARC.questDescriptionRules.rulesStrings[12]	adj->abandonado
+VQE_AbandonedARC.questDescriptionRules.rulesStrings[13]	arcName->ARC
+VQE_AbandonedARC.questDescriptionRules.rulesStrings[14]	arcName->gerador
+VQE_AbandonedARC.questDescriptionRules.rulesStrings[15]	arcName->engenho
+VQE_AbandonedARC.questDescriptionRules.rulesStrings[16]	arcName->núcleo
+VQE_AbandonedARC.questDescriptionRules.rulesStrings[17]	arcName->reator
+VQE_AbandonedARC.questDescriptionRules.rulesStrings[18]	arcName->aparelho
+VQE_AbandonedARC.questDescriptionRules.rulesStrings[19]	arcName->artefato
+VQE_AbandonedARC.questDescriptionRules.rulesStrings[20]	siteDetails->maquinário antigo e componentes de gerador inacabados
+VQE_AbandonedARC.questDescriptionRules.rulesStrings[21]	siteDetails->notas de pesquisa cruciais e grandes componentes de gerador
+VQE_AbandonedARC.questDescriptionRules.rulesStrings[22]	siteDetails->plantas valiosas e equipamento industrial
+VQE_AbandonedARC.questDescriptionRules.rulesStrings[23]	siteDetails->dados de pesquisa e maquinário de protótipo
+VQE_AbandonedARC.questDescriptionRules.rulesStrings[24]	siteDetails->equipamento complexo e plantas experimentais de gerador
+VQE_AbandonedARC.questDescriptionRules.rulesStrings[25]	siteDetails->máquinas industriais abandonadas e arquivos de pesquisa
+VQE_AbandonedARC.questDescriptionRules.rulesStrings[26]	siteDetails->notas de pesquisa essenciais e peças únicas de gerador
+VQE_AbandonedARC.questDescriptionRules.rulesStrings[27]	siteThreat->tomado por [Number] [AnimalPlural] caçando gente
+VQE_AbandonedARC.questDescriptionRules.rulesStrings[28]	siteThreat->infestado de [Number] [AnimalPlural] caçando gente
+VQE_AbandonedARC.questDescriptionRules.rulesStrings[29]	siteThreat->habitado por um bando de [AnimalPlural]
+VQE_AbandonedARC.questDescriptionRules.rulesStrings[30]	siteThreat->guardado por [Number] [AnimalPlural] agressivos
+VQE_AbandonedARC.questDescriptionRules.rulesStrings[31]	siteThreat->ocupado por [Number] [AnimalPlural] hostis
+VQE_AbandonedARC.questDescriptionRules.rulesStrings[32]	studyWarning->É preciso examinar a área com cuidado para descobrir informações valiosas.
+VQE_AbandonedARC.questDescriptionRules.rulesStrings[33]	studyWarning->Você precisa estudar com cuidado as máquinas antigas e os componentes de gerador.
+VQE_AbandonedARC.questDescriptionRules.rulesStrings[34]	studyWarning->Para tirar algo dali, será preciso investigar a fundo as notas de pesquisa e as peças de gerador.
+VQE_AbandonedARC.questDescriptionRules.rulesStrings[35]	studyWarning->Uma investigação completa é a chave para recuperar dados úteis do lugar.
+VQE_AbandonedARC.questDescriptionRules.rulesStrings[36]	studyWarning->Os dados daqui podem ser cruciais, então vale todo esforço para estudar a área a fundo.
+VQE_AbandonedARC.questDescriptionRules.rulesStrings[37]	questFailWarning->Se mais da metade das máquinas e notas estudáveis for destruída, a missão fracassa.
+VQE_AbandonedARC.questDescriptionRules.rulesStrings[38]	questFailWarning->Danificar demais o complexo leva ao fracasso.
+VQE_AbandonedARC.questDescriptionRules.rulesStrings[39]	questFailWarning->Destruir material de pesquisa demais faz a missão fracassar.
+VQE_AbandonedARC.questDescriptionRules.rulesStrings[40]	questFailWarning->Se não sobrarem componentes estudáveis suficientes, a missão acaba.
+VQE_AbandonedARC.questDescriptionRules.rulesStrings[41]	questFailWarning->Cuidado com o que faz: a missão depende de preservar o lugar.
+VQE_AbandonedARC.questDescriptionRules.rulesStrings[42]	questOutcome->pode nos levar ao verdadeiro local do ARC.
+VQE_AbandonedARC.questDescriptionRules.rulesStrings[43]	questOutcome->pode revelar o verdadeiro local do ARC.
+VQE_AbandonedARC.questDescriptionRules.rulesStrings[44]	questOutcome->pode nos apontar o projeto final do ARC.
+VQE_AbandonedARC.questDescriptionRules.rulesStrings[45]	questOutcome->deve revelar os próximos passos para achar o ARC antigo.
+VQE_AbandonedARC.questDescriptionRules.rulesStrings[46]	questOutcome->vai nos aproximar dos segredos do ARC.
+VQE_AbandonedARC.questNameRules.rulesStrings[0]	questName->O [constructionName] [adj]
+VQE_AbandonedARC.questNameRules.rulesStrings[1]	adj->enorme
+VQE_AbandonedARC.questNameRules.rulesStrings[2]	adj->abandonado
+VQE_AbandonedARC.questNameRules.rulesStrings[3]	adj->fabril
+VQE_AbandonedARC.questNameRules.rulesStrings[4]	adj->largado
+VQE_AbandonedARC.questNameRules.rulesStrings[5]	adj->antigo
+VQE_AbandonedARC.questNameRules.rulesStrings[6]	adj->esquecido
+VQE_AbandonedARC.questNameRules.rulesStrings[7]	adj->tomado pelo mato
+VQE_AbandonedARC.questNameRules.rulesStrings[8]	adj->incompleto
+VQE_AbandonedARC.questNameRules.rulesStrings[9]	adj->vasto
+VQE_AbandonedARC.questNameRules.rulesStrings[10]	adj->inacabado
+VQE_AbandonedARC.questNameRules.rulesStrings[11]	adj->dilapidado
+VQE_AbandonedARC.questNameRules.rulesStrings[12]	adj->remoto
+VQE_AbandonedARC.questNameRules.rulesStrings[13]	adj->misterioso
+VQE_AbandonedARC.questNameRules.rulesStrings[14]	adj->fracassado
+VQE_AbandonedARC.questNameRules.rulesStrings[15]	adj->outrora próspero
+VQE_AbandonedARC.questNameRules.rulesStrings[16]	constructionName->canteiro de obras
+VQE_AbandonedARC.questNameRules.rulesStrings[17]	constructionName->local de desenvolvimento
+VQE_AbandonedARC.questNameRules.rulesStrings[18]	constructionName->complexo industrial
+VQE_AbandonedARC.questNameRules.rulesStrings[19]	constructionName->galpão
+VQE_AbandonedARC.questNameRules.rulesStrings[20]	constructionName->pátio de energia
+VQE_AbandonedARC.questNameRules.rulesStrings[21]	constructionName->local do gerador
+VQE_AbandonedARC.questNameRules.rulesStrings[22]	constructionName->setor de montagem
+VQE_AbandonedARC.questNameRules.rulesStrings[23]	constructionName->centro de testes
+VQE_AbandonedARC.questNameRules.rulesStrings[24]	constructionName->vilarejo operário
+VQE_AbandonedARC.questNameRules.rulesStrings[25]	constructionName->pátio de protótipos
+VQE_AbandonedARC.questNameRules.rulesStrings[26]	constructionName->polo de engenharia
+VQE_AbandonedARC.questNameRules.rulesStrings[27]	constructionName->complexo de construção
+VQE_AbandonedARC.questNameRules.rulesStrings[28]	constructionName->complexo ARC
+VQE_AbandonedARC.questNameRules.rulesStrings[29]	constructionName->canteiro do projeto de energia
+## DefInjected/QuestScriptDef/Quest3.xml
+VQE_AncientARC.questContentRules.rulesStrings[0]	terminalStudiedMessage->Terminal estudado. Você reuniu as informações e já pode ir embora.
+VQE_AncientARC.questDescriptionRules.rulesStrings[0]	questDescription->Você [discoveryDesc] de uma aldeia [adj] onde foi construído o que talvez seja o protótipo final do [arcName] de [inventor_nameFull]. Os aldeões [villagerBehavior], e o lugar [villageCondition].\n\n[arcDetails] Mas [villagerWarnings]. Se [trigger], os aldeões vão [villagerReaction].\n\n[finalWarning]
+VQE_AncientARC.questDescriptionRules.rulesStrings[1]	discoveryDesc->soube
+VQE_AncientARC.questDescriptionRules.rulesStrings[2]	discoveryDesc->teve notícia
+VQE_AncientARC.questDescriptionRules.rulesStrings[3]	discoveryDesc->achou a localização
+VQE_AncientARC.questDescriptionRules.rulesStrings[4]	adj->esquecida
+VQE_AncientARC.questDescriptionRules.rulesStrings[5]	adj->antiga
+VQE_AncientARC.questDescriptionRules.rulesStrings[6]	adj->escondida
+VQE_AncientARC.questDescriptionRules.rulesStrings[7]	adj->misteriosa
+VQE_AncientARC.questDescriptionRules.rulesStrings[8]	adj->decadente
+VQE_AncientARC.questDescriptionRules.rulesStrings[9]	adj->arruinada
+VQE_AncientARC.questDescriptionRules.rulesStrings[10]	arcName->ARC
+VQE_AncientARC.questDescriptionRules.rulesStrings[11]	arcName->relicário
+VQE_AncientARC.questDescriptionRules.rulesStrings[12]	arcName->artefato
+VQE_AncientARC.questDescriptionRules.rulesStrings[13]	arcName->aparelho
+VQE_AncientARC.questDescriptionRules.rulesStrings[14]	arcName->núcleo
+VQE_AncientARC.questDescriptionRules.rulesStrings[15]	villagerBehavior->veneram o [arcName]
+VQE_AncientARC.questDescriptionRules.rulesStrings[16]	villagerBehavior->adoram o [arcName]
+VQE_AncientARC.questDescriptionRules.rulesStrings[17]	villagerBehavior->protegem o [arcName]
+VQE_AncientARC.questDescriptionRules.rulesStrings[18]	villagerBehavior->reverenciam o [arcName]
+VQE_AncientARC.questDescriptionRules.rulesStrings[19]	villagerBehavior->montam guarda em volta do [arcName]
+VQE_AncientARC.questDescriptionRules.rulesStrings[20]	villageCondition->mostra sinais de uma antiga grandeza tecnológica
+VQE_AncientARC.questDescriptionRules.rulesStrings[21]	villageCondition->está tomado pelo mato e caindo aos pedaços
+VQE_AncientARC.questDescriptionRules.rulesStrings[22]	villageCondition->decaiu para uma simplicidade primitiva
+VQE_AncientARC.questDescriptionRules.rulesStrings[23]	villageCondition->há muito deixou para trás os seus dias de glória
+VQE_AncientARC.questDescriptionRules.rulesStrings[24]	villageCondition->carrega as cicatrizes do tempo e do abandono
+VQE_AncientARC.questDescriptionRules.rulesStrings[25]	arcDetails->Dizem que o [arcName] guarda segredos valiosos para a sua colônia.
+VQE_AncientARC.questDescriptionRules.rulesStrings[26]	arcDetails->Estudar o [arcName] pode liberar um conhecimento vital.
+VQE_AncientARC.questDescriptionRules.rulesStrings[27]	arcDetails->Este [arcName] antigo pode revelar como construir um para você.
+VQE_AncientARC.questDescriptionRules.rulesStrings[28]	villagerWarnings->cuidado para não provocar os aldeões
+VQE_AncientARC.questDescriptionRules.rulesStrings[29]	villagerWarnings->os aldeões não gostam nada de intrusos
+VQE_AncientARC.questDescriptionRules.rulesStrings[30]	villagerWarnings->violar o que é sagrado para eles pode trazer hostilidade
+VQE_AncientARC.questDescriptionRules.rulesStrings[31]	villagerWarnings->a paciência deles com forasteiros pode ser curta
+VQE_AncientARC.questDescriptionRules.rulesStrings[32]	trigger->você ferir alguém, mexer no [arcName] ou abusar da hospitalidade
+VQE_AncientARC.questDescriptionRules.rulesStrings[33]	villagerReaction->ficar hostis e chamar reforços
+VQE_AncientARC.questDescriptionRules.rulesStrings[34]	villagerReaction->atacar com toda a força
+VQE_AncientARC.questDescriptionRules.rulesStrings[35]	villagerReaction->defender o lar a qualquer custo
+VQE_AncientARC.questDescriptionRules.rulesStrings[36]	villagerReaction->revidar com violência
+VQE_AncientARC.questDescriptionRules.rulesStrings[37]	finalWarning->Se a briga começar, reforços podem chegar rápido.
+VQE_AncientARC.questDescriptionRules.rulesStrings[38]	finalWarning->Se houver conflito, espere resistência pesada.
+VQE_AncientARC.questDescriptionRules.rulesStrings[39]	finalWarning->Não agir rápido pode ser um desastre.

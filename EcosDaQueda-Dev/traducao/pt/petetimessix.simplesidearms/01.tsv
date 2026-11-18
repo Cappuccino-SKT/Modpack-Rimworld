@@ -1,0 +1,225 @@
+## DefInjected/ConceptDef/Concepts.xml
+Concept_SimpleSidearmsBasic.label	SS: Armas secundárias
+Concept_SimpleSidearmsBasic.helpText	Simple Sidearms\n\nPara equipar armas como secundárias, clique nelas com o botão direito e escolha a opção Equipar como arma secundária.\n\nPor padrão, os colonos usam o tipo de arma em que têm mais habilidade ou paixão. Quem usa arma de longo alcance também troca para uma arma corpo a corpo quando entra em combate próximo. Esse comportamento pode ser mudado nas configurações do mod.
+Concept_SidearmsDropping.label	SS: Largar armas secundárias
+Concept_SidearmsDropping.helpText	Armas secundárias com fundo cinza estão no inventário de um colono e podem ser usadas. Clique com o botão direito para largar.
+Concept_SidearmsMissing.label	SS: Armas secundárias faltando
+Concept_SidearmsMissing.helpText	Armas secundárias com fundo roxo-escuro estão faltando no equipamento de um colono. Ele vai tentar repô-las na primeira oportunidade, se achar alguma. Clique com o botão direito para esquecer a arma secundária.
+Concept_SimpleSidearmsPreference.label	SS: Preferência de arma
+Concept_SimpleSidearmsPreference.helpText	O uso de armas secundárias pode ser configurado para cada colono. As opções são: \nUsar armas de longo alcance\nUsar armas em que o colono tem paixão ou habilidade \nUsar armas corpo a corpo
+Concept_SimpleSidearmsAdvancedRanged.label	SS: Controles avançados (longo alcance)
+Concept_SimpleSidearmsAdvancedRanged.helpText	Clique com o botão esquerdo numa arma de longo alcance carregada para torná-la a arma de longo alcance padrão. Se a preferência do colono for longo alcance (ou habilidade, num colono melhor com armas de longo alcance), é essa arma que ele empunha fora de combate. Também é usada na caça. \n\nClique de novo numa arma de longo alcance padrão para forçar seu uso, seja qual for o alcance/DPS. \n\nClique com o botão direito para tirar o uso forçado/padrão.
+Concept_SimpleSidearmsAdvancedMelee.label	SS: Controles avançados (corpo a corpo)
+Concept_SimpleSidearmsAdvancedMelee.helpText	Clique com o botão esquerdo numa arma corpo a corpo carregada para torná-la a arma corpo a corpo preferida. O colono sempre usa essa arma quando a preferência é corpo a corpo (ou habilidade, num colono melhor no corpo a corpo) e quando é forçado ao combate próximo. \n\nClique de novo numa arma corpo a corpo preferida para forçar seu uso o tempo todo. \n\nClique com o botão direito para tirar o uso forçado/preferência.
+Concept_SimpleSidearmsAdvancedDrafted.label	SS: Controles avançados (convocado)
+Concept_SimpleSidearmsAdvancedDrafted.helpText	Com o colono convocado, clique com o botão esquerdo numa arma carregada para forçar seu uso até o fim do combate. \n\nA maioria das mudanças no equipamento secundário exige que o personagem não esteja convocado.
+Concept_SimpleSidearmsLosingWeapons.label	SS: Perder armas
+Concept_SimpleSidearmsLosingWeapons.helpText	Dependendo das configurações, o Simple Sidearms pode fazer os colonos derrubarem as armas em várias situações (o padrão é ao serem atacados no corpo a corpo). Não se preocupe: eles pegam as armas de volta depois da luta. \n\nIsso é configurável; veja as configurações do mod para saber mais.
+Concept_CEOverride.label	SS: Patch do CE
+Concept_CEOverride.helpText	O Combat Extended está carregado. O gerenciamento de inventário do Simple Sidearms está desativado.
+## DefInjected/JobDef/Jobs_Misc.xml
+EquipSecondary.reportString	equipando TargetA como arma secundária.
+ReequipSecondary.reportString	reequipando TargetA como arma secundária.
+ReequipSecondaryCombat.reportString	reequipando TargetA como arma secundária.
+## Keyed/English.xml
+SimpleSidearms_ModTitle	Simple Sidearms
+FirstTimeSettingsWarning	Primeira vez usando o Simple Sidearms?\n\nEste ícone indica que as configurações do mod ainda não foram ajustadas. Ele some quando o menu de configurações é aberto pela primeira vez.\n\nClique para ir às configurações agora.
+ActiveTab_title	Abas de configuração
+ToolAutoSwitch_desc	Os personagens devem trocar para ferramentas/armas com bônus de atributo para o trabalho atual?
+ToolAutoSwitch_title	Troca automática de ferramenta
+OptimalMelee_desc	Os personagens devem trocar automaticamente para uma arma corpo a corpo de DPS maior?
+OptimalMelee_title	Usar a melhor arma corpo a corpo
+CQCAutoSwitch_desc	Os personagens devem trocar para a arma secundária corpo a corpo quando atacados no corpo a corpo?
+CQCAutoSwitch_title	Troca automática no corpo a corpo
+CQCFistSwitch_desc	Os personagens devem trocar mesmo quando não estão usando arma?
+CQCFistSwitch_title	Troca automática desarmado
+CQCTargetOnly_desc	Os personagens só devem reagir a ataques do alvo atual?
+CQCTargetOnly_title	Trocar só com ataques do alvo
+DropMode_desc	Em que situações os personagens podem se atrapalhar e derrubar a arma em vez de guardá-la no inventário?
+DropMode_title	Critério para derrubar a arma
+FumbleRecoveryChance_title	Chance de não derrubar a arma
+FumbleRecoveryChance_hint	O eixo vertical é a chance de não derrubar\nO eixo horizontal é a habilidade de corpo a corpo ou de tiro (a que for maior)
+ReEquipOutOfCombat_desc	Depois de derrubar uma arma, reequipá-la automaticamente após o combate, longe do perigo imediato.
+ReEquipOutOfCombat_title	Reequipar armas derrubadas
+ReEquipBest_desc	O reequipar automático procura a melhor arma disponível (em vez da mais próxima)
+ReEquipBest_title	Reequipar a melhor disponível
+ReEquipInCombat_desc	Reequipar armas automaticamente mesmo em combate, quando não estiver lutando.
+ReEquipInCombat_title	Reequipar durante o combate
+SkipDangerousWeapons_desc	Proibir equipar automaticamente armas perigosas (coquetéis molotov, granadas de fragmentação, lança-foguetes etc.)
+SkipDangerousWeapons_title	Ignorar armas perigosas
+SkipEMPWeapons_desc	Proibir equipar automaticamente armas de PEM (de qualquer forma, os personagens só pensam nelas contra mecanoides).
+SkipEMPWeapons_title	Ignorar armas de PEM
+PreserveInventoryInCaravans_desc	Manter as armas secundárias no inventário certo ao voltar de caravanas. (Experimental, feito por XT-0xFF no GitHub)
+PreserveInventoryInCaravans_title	Manter armas secundárias nas caravanas
+HideSidearmsInCaravanDialogs_desc	Esconder armas secundárias nas janelas de caravana, para não vendê-las sem querer. (Experimental, feito por XT-0xFF no GitHub)
+HideSidearmsInCaravanDialogs_title	Esconder armas secundárias nas janelas de caravana
+ShowAlertsMissingSidearm_desc	Mostrar alertas para colonos que lembram de ter armas secundárias que não têm mais e não acham substituta.
+ShowAlertsMissingSidearm_title	Mostrar alertas de arma secundária faltando
+SidearmsPlaySounds_desc	Tocar sons ao trocar de arma.
+SidearmsPlaySounds_title	Tocar sons
+ShowBrainscope_desc	Mostrar um botão de desenvolvedor que revela o estado interno do personagem selecionado.
+ShowBrainscope_title	Mostrar Brainscope
+AllowBlockedWeaponUse_desc	Permitir usar armas normalmente bloqueadas (como armas persona, armas biocodificadas e armas restritas por cargo do Ideology); veja XKCD nº 1172
+AllowBlockedWeaponUse_title	Permitir armas bloqueadas
+LimitCarryInfo_title	Sempre limitado pela capacidade de carga do personagem
+CEOverrideInfo_title	Desativado em favor do sistema do CE.
+LimitModeAmount_title	Modo de limite total de armas secundárias
+LimitModeAmountMelee_title	Modo de limite total de armas secundárias corpo a corpo
+LimitModeAmountRanged_title	Modo de limite total de armas secundárias de longo alcance
+LimitModeAmount_desc	Que restrições valem para todas as armas secundárias.
+LimitModeAmountMelee_desc	Que restrições valem para todas as armas secundárias corpo a corpo.
+LimitModeAmountRanged_desc	Que restrições valem para todas as armas secundárias de longo alcance.
+LimitModeSingle_title	Modo de limite por arma secundária
+LimitModeSingleMelee_title	Modo de limite por arma secundária corpo a corpo
+LimitModeSingleRanged_title	Modo de limite por arma secundária de longo alcance
+LimitModeSingle_desc	Que restrições valem para cada arma secundária.
+LimitModeSingleMelee_desc	Que restrições valem para cada arma secundária corpo a corpo.
+LimitModeSingleRanged_desc	Que restrições valem para cada arma secundária de longo alcance.
+LimitModeAmountTotal_title	Modo de limite total de armas secundárias
+LimitModeAmountTotal_desc	Que restrições valem para todas as armas secundárias.
+MaximumMassAmountAbsolute_desc	Massa total máxima de armas secundárias que um personagem pode carregar.
+MaximumMassAmountAbsolute_title	Massa máx. de armas secundárias
+MaximumMassAmountRelative_desc	Massa total máxima de armas secundárias que um personagem pode carregar, em relação à capacidade de carga.
+MaximumMassAmountRelative_title	Massa máx. de armas secundárias
+MaximumMassSingleAbsolute_desc	Massa máxima de uma única arma secundária que um personagem pode carregar.
+MaximumMassSingleAbsolute_title	Massa máx. por arma secundária
+MaximumMassSingleRelative_desc	Massa máxima de uma única arma secundária que um personagem pode carregar, em relação à capacidade de carga.
+MaximumMassSingleRelative_title	Massa máx. por arma secundária
+MaximumSlots_desc	Quantas armas secundárias um personagem pode carregar.
+MaximumSlots_title	Espaços
+RangedCombatAutoSwitchMaxWarmup_desc	A partir de que ponto o personagem se recusa a interromper o ataque para trocar de arma secundária?
+RangedCombatAutoSwitchMaxWarmup_title	Porcentagem máxima de preparo
+RangedCombatAutoSwitch_desc	Os personagens devem trocar para a arma secundária de longo alcance mais adequada à distância ao atacar de longe?
+RangedCombatAutoSwitch_title	Usar a melhor arma de longo alcance
+SeparateModes_desc	Armas corpo a corpo e de longo alcance devem ter restrições comuns ou separadas?
+SeparateModes_title	Separar corpo a corpo/longo alcance
+SidearmSelection_title	Seleção de armas secundárias
+SingleshotAutoSwitch_desc	Os personagens devem trocar para armas secundárias depois de gastar armas de uso único?
+SingleshotAutoSwitch_title	Troca automática após uso único
+SpeedSelectionBiasMelee_desc	Tendência do personagem a escolher armas com ataque mais rápido.
+SpeedSelectionBiasMelee_title	Peso da velocidade (corpo a corpo)
+SpeedSelectionBiasRanged_desc	Tendência do personagem a escolher armas com preparo mais rápido.
+SpeedSelectionBiasRanged_title	Peso da velocidade (longo alcance)
+WeaponMatch_desc	Estas são as armas que se encaixam nos critérios.
+MaximumMassAmountRelative_hint	A lista supõe a capacidade de carga padrão de 35 kg
+SidearmSpawnChance_desc	A chance de qualquer personagem que surge com uma arma também ter uma arma secundária.
+SidearmSpawnChance_title	Chance de surgir com arma secundária
+SidearmSpawnChanceDropoff_desc	Quanto a chance de surgir com arma secundária cai a cada arma secundária adicional.
+SidearmSpawnChanceDropoff_title	Redução por arma adicional
+SidearmBudgetMultiplier_desc	Quanto dinheiro uma arma secundária pode valer, com base na arma principal padrão.
+SidearmBudgetMultiplier_title	Multiplicador de orçamento da arma secundária
+SidearmBudgetDropoff_desc	Quanto o orçamento cai a cada arma secundária adicional.
+SidearmBudgetDropoff_title	Redução de orçamento por arma adicional
+ColonistDefaultWeaponMode_desc	O modo de preferência de arma padrão para personagens do jogador.
+ColonistDefaultWeaponMode_title	Modo de arma padrão dos colonos
+NPCDefaultWeaponMode_desc	O modo de preferência de arma padrão para personagens não jogáveis.
+NPCDefaultWeaponMode_title	Modo de arma padrão dos NPCs
+PrimaryWeaponMode_option_Ranged	Longo alcance
+PrimaryWeaponMode_option_Melee	Corpo a corpo
+PrimaryWeaponMode_option_BySkill	Por habilidade
+PrimaryWeaponMode_option_ByGenerated	Pela principal
+LimitModeSingle_option_None	Sem limite
+LimitModeSingle_option_RelativeWeight	Massa relativa
+LimitModeSingle_option_AbsoluteWeight	Massa absoluta
+LimitModeSingle_option_Selection	Armas específicas
+LimitModeAmount_option_None	Sem limite
+LimitModeAmount_option_RelativeWeight	Massa relativa
+LimitModeAmount_option_AbsoluteWeight	Massa absoluta
+LimitModeAmount_option_Slots	Espaços
+ActiveTab_option_Folded	<
+ActiveTab_option_Presets	Predefinições
+ActiveTab_option_Automation	Gatilhos
+ActiveTab_option_Allowances	Limites
+ActiveTab_option_Spawning	Surgimento
+ActiveTab_option_Misc	Diversos
+DropMode_option_InDistress	Em apuros
+DropMode_option_InCombat	Em combate
+Fumbled	Deixou cair!
+Fumbled_dev	Deixou cair! ({0})
+PresetExport_label	Copiar a configuração ativa
+PresetCustom_title	Personalizada
+PresetCustom_desc	Configuração personalizada. Escolhida automaticamente ao fazer uma mudança.
+Preset0_desc	Todas as opções desligadas. Boa base para configurações que usam só uma pequena parte do mod.
+Preset1half_title	Leve
+Preset1half_desc	Permite uma única arma leve como secundária.
+Preset1_title	Só equipamento
+Preset1_desc	Permite equipar armas secundárias e mais nada. Na prática, uma extensão prática do inventário.
+Preset2_title	Básica
+Preset2_desc	Uma configuração simples. Os personagens usam algumas armas leves e tentam usá-las nas situações certas.
+Preset3_title	Avançada
+Preset3_desc	Os personagens ficam mais criativos na escolha de armas, mas ainda dentro do que se espera de gente comum tentando sobreviver num planeta perigoso da borda.
+Preset4_title	Exagerada
+Preset4_desc	Traz tudo! Metralhadora giratória? Traz duas! Lanças? Tenho uma coleção inteira na mochila!
+Preset5_title	Modo brigão
+Preset5_desc	Armas secundárias corpo a corpo para todo mundo.
+SidearmPickupFail_NoFreeSpace	Sem espaço livre
+SidearmPickupFail_TooHeavyForSidearmMelee	Pesada demais para arma secundária corpo a corpo
+SidearmPickupFail_TooHeavyForSidearmRanged	Pesada demais para arma secundária de longo alcance
+SidearmPickupFail_TooHeavyForSidearm	Pesada demais para arma secundária
+SidearmPickupFail_SidearmsTooHeavyMelee	Equipamento corpo a corpo pesado demais
+SidearmPickupFail_SidearmsTooHeavyRanged	Equipamento de longo alcance pesado demais
+SidearmPickupFail_SidearmsTooHeavyInTotal	Equipamento pesado demais
+SidearmPickupFail_NotASidearm	Não é arma secundária
+SidearmPickupFail_NotASidearmMelee	Não é arma secundária
+SidearmPickupFail_NotASidearmRanged	Não é arma secundária
+SidearmPickupFail_AllSlotsFull	Espaços cheios
+SidearmPickupFail_MeleeSlotsFull	Espaços corpo a corpo cheios
+SidearmPickupFail_RangedSlotsFull	Espaços de longo alcance cheios
+SidearmPickupFail_NotAToolForPacifist	Não é ferramenta. {0} é incapaz de violência.
+SidearmPickupFail_NotYetBladelinkBonded	Ainda sem vínculo
+SidearmPickupPass	Sem problema
+AsSidearm	 como arma secundária
+AsTool	 como ferramenta
+Preset_option_Custom	Personalizada
+Preset_option_Lite	Leve
+Preset_option_LoadoutOnly	Só equipamento
+Preset_option_Basic	Básica
+Preset_option_Advanced	Avançada
+Preset_option_Excessive	Exagerada
+Preset_option_Brawler	Brigão
+WeaponListKind_option_Both	Ambas
+WeaponListKind_option_Melee	Corpo a corpo
+WeaponListKind_option_Ranged	Longo alcance
+TribalWeapons	Tribais
+NonTribalWeapons	Não tribais
+ConsideredSidearms	Armas secundárias
+NotConsideredSidearms	Não são armas secundárias
+LockedWeaponSwitch	Sem troca automática (longo alcance)
+UnlockedWeaponSwitch	Com troca automática (longo alcance)
+WeaponSwitchAutolockOn	Travar troca automática ao sacar
+WeaponSwitchAutolockOff	Desligado
+DrawSidearm_gizmoTitle	Armas secundárias
+SidearmPreference_Ranged	Usar armas de longo alcance.
+SidearmPreference_Skill	Usar armas conforme a própria habilidade ou paixão.
+SidearmPreference_Melee	Usar armas corpo a corpo.
+DrawSidearm_gizmoTooltipRanged	Clique com o botão esquerdo para tornar {0} a arma de longo alcance padrão.\nClique com o botão direito para largar {0}.
+DrawSidearm_gizmoTooltipMelee	Clique com o botão esquerdo para tornar {0} a arma corpo a corpo preferida.\nClique com o botão direito para largar {0}.
+DrawSidearm_gizmoTooltipRangedDefault	Clique com o botão esquerdo para forçar o uso de {0}.\nClique com o botão direito para {0} deixar de ser a arma de longo alcance padrão.
+DrawSidearm_gizmoTooltipMeleePreferred	Clique com o botão esquerdo para forçar o uso de {0}.\nClique com o botão direito para tirar a preferência corpo a corpo de {0}.
+DrawSidearm_gizmoTooltipForced	Clique com o botão direito para tirar o uso forçado de {0}.
+DrawSidearm_gizmoTooltipWhileDrafted	Clique com o botão esquerdo para forçar o uso de {0} até o fim do combate.
+DrawSidearm_gizmoTooltipForcedWhileDrafted	Clique com o botão direito para tirar o uso forçado de {0}.
+DrawSidearm_gizmoTooltipMemory	Clique com o botão direito para esquecer {0}.
+DrawSidearm_gizmoTooltipMemoryWhileDrafted	Sem interação enquanto convocado.
+DrawSidearm_gizmoTooltipUnarmed	Clique com o botão esquerdo para tornar o combate desarmado a opção corpo a corpo preferida.
+DrawSidearm_gizmoTooltipUnarmedPreferred	Clique com o botão esquerdo para forçar o combate desarmado. \nClique com o botão direito para o combate desarmado deixar de ser a opção corpo a corpo preferida.
+DrawSidearm_gizmoTooltipUnarmedForced	Clique com o botão direito para tirar o uso forçado do combate desarmado.
+DrawSidearm_gizmoTooltipUnarmedWhileDrafted	Clique com o botão esquerdo para forçar o combate desarmado até o fim do combate.
+DrawSidearm_gizmoTooltipUnarmedForcedWhileDrafted	Clique com o botão direito para tirar o uso forçado do combate desarmado.
+DrawSidearm_blocked	Arma inutilizável
+Alert_MissingSidearm_label	Colono sem arma secundária
+Alert_MissingPrimary_label	Colono sem arma principal
+Alert_MissingSidearm_desc	Estes colonos estão sem uma ou mais armas secundárias:\n\n{0}
+Alert_MissingPrimary_desc	Estes colonos estão sem a arma principal:\n\n{0}
+SS_EquipWarning_CannotUseWithShield	Usar {0} vai impedir o uso de {1}.
+SS_EquipWarning_WillUnequipOffhand	Equipar {0} vai desequipar {1} da mão secundária.
+SS_EquipOffandFail_NoPrimary	Não dá para equipar {0} na mão secundária: primeiro é preciso uma arma principal para fazer par.
+SS_EquipOffandFail_PrimaryTwoHanded	Não dá para equipar {0} na mão secundária: {1} é uma arma de duas mãos.
+SS_EquipOffandFail_AlreadyHoldingShield	Não dá para equipar {0} na mão secundária: já está segurando {1}.
+SS_EquipAsOffand	Clique com o botão esquerdo no ícone da mão secundária para equipar {0} nela.
+SS_CanEquipAsOffand	Clique com o botão esquerdo no ícone da mão secundária para equipar {0} nela.
+DropMode_option_Panic	Em apuros
+DropMode_option_PanicOrRange	Em combate
+SidearmsEnableNeolithicExtension_desc	Permitir que tribais usem mais armas como secundárias.
+SidearmsEnableNeolithicExtension_title	Ampliar armas secundárias neolíticas
+SidearmsNeolithicExtension_title	Armas secundárias consideradas neolíticas

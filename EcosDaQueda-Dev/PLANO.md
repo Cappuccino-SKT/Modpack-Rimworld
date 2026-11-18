@@ -30,7 +30,7 @@ Um bloco por sessão. Estimativa: **~25 blocos**. Ordem recomendada (cada linha 
 4. ~~**3e Fechamento**~~ (feito, 2026-11-18): **dízimo tecnológico** da Forja (1 dado antigo + 4 componentes → mech de trabalho, cargo 2; 2 dados + 1 componente espacial → título de veículo seminovo, cargo 3); auditoria `tech buildaudit`: dos 59 prédios espaciais construíveis, **0 escapam** da trava (todos já pedem projeto de ramo de potência), então móveis e energia não precisaram de patch. Ficam para o jogo do usuário: balanço dos custos e campanha curta ✱.
 
 **Etapa 8 — pendências técnicas (1 bloco, pode vir antes, entre etapas).**
-5. ~~Executor: erros de carregamento no `RESULTADO`, `problemas=0`/androides; bases com vários líderes~~ (feitos em 2026-11-18). Falta: aposentar o perfil lean; intermitentes (ideologia removida, MeatBurst do Alpha Genes, cerimônia da Hélice); a volta ao menu que trava no modo lote.
+5. ~~Executor: erros de carregamento no `RESULTADO`, `problemas=0`/androides; bases com vários líderes; perfil lean aposentado; trava da volta ao menu no lote (autosave sem janela); spam do Hegemony no mundo novo; livros de pesquisa; traduções oficiais quebradas (Anomaly, Odyssey)~~ (feitos em 2026-11-18). Sobram intermitentes de terceiros raros (lista no STATUS), tratados quando reaparecerem com o log agora completo.
 
 **Etapa 5 — eventos do mundo (7 blocos).**
 6. ~~**5a Eventos por potência**~~ (feito, 2026-11-18, `PowerEvents.cs`; falta o gatilho por guerras do Hegemony, que fica para o 10d): auditoria da Hélice, inspeção de garantia da Forja, turnê do Coro, chamada de artigos do Silêncio (gatilhos: reputação, cargo, guerras do Hegemony).
@@ -39,14 +39,14 @@ Um bloco por sessão. Estimativa: **~25 blocos**. Ordem recomendada (cada linha 
 9. ~~**5d Fungobi**~~ (feito, 2026-11-18, `Fungobi.cs`): facção oculta sempre hostil, horda (incidente de ameaça grande, dia 12+) e ruínas de assentamentos destruídos com moradores Fungobi (70%).
 10. ~~**5e Facções menores**~~ (feito, 2026-11-18, `EQ_MinorEvents.xml`): greve do Sindicato (trégua real de 20–30 dias sem ataques dele, mesmo sendo inimigo permanente), liquidação da Feira (lotes fechados), recolhimento de colmeia pela Hélice (contra a Colmeia Erguida, com contra-ataque) e o Reino do Lodo exigindo "matéria-prima" (prisioneiro ou carne; recusar = 70% de ataque).
 11. ~~**5f Eventos sem dono**~~ (feito, 2026-11-18, `WorldEvents.cs`): tempestade de cinzas, abrigo que se abre, comboio perdido (o Sindicato às vezes vem buscar), recall mecanoide.
-12. **5g Missões dos mods com texto nosso:** quem pede (potência em vez de "qualquer líder"), tradução dos VQE.
+12. ~~**5g Missões dos mods com texto nosso**~~ (feito, 2026-11-18): tradução dos VQE (sessão própria, `Mods/EcosDaQuedaTraducao`) e quem pede = líder da potência patrona do `EQ_Missions.xml` enquanto ela não for hostil (`QuestAskers.cs`); as versões "sem pedinte" (rádio interceptado) continuam.
 
 **Colmeia Erguida (1 bloco) ✱** — assim que o usuário entregar a ideologia (`.rid`).
 13. Ligar a ideologia, história, relações fixas, parte horrível, descrição.
 
 **Etapa 4 — outros mods (3 blocos).**
 14. ~~**4a Mercados**~~ (feito, 2026-11-18): órgãos já eram vendidos (Hélice, Feira e outros); sementes na Feira (loja e caravana) e no dízimo do Coro (tipo `Category`). **Água ficou de fora:** a garrafa do Dubs só existe com a sede ligada, e ela está desligada no modpack (decidir ✱ se liga a sede).
-15. **4b Mundo:** Alpha Biomes como zonas da Queda com recurso exclusivo para tecnologia; Trenches e Layered Walls nos cercos; Rimesis ✱ (ligar ao Silêncio como campeões nêmesis ou remover).
+15. ~~**4b Mundo**~~ (feito sem o Rimesis, 2026-11-18, `Zones.cs`, `Sieges.cs`): 8 zonas da Queda (recurso exclusivo → 12% de projeto do ramo na bancada de engenharia reversa); trincheiras e arame nos cercos; Layered Walls já age sozinho. Falta: Rimesis ✱. Proposta original: Alpha Biomes como zonas da Queda com recurso exclusivo para tecnologia; Trenches e Layered Walls nos cercos; Rimesis ✱ (ligar ao Silêncio como campeões nêmesis ou remover).
 16. ~~**4c Rituais**~~ (feito em parte, 2026-11-18, `RitualOutcomes.cs`): 4 resultados anexáveis de ritual, um por potência (fama, favor, boa vontade e itens). Falta: rituais completos próprios das ideologias das potências pelo Custom Ritual Framework (só fazem sentido para quem joga com essas ideologias ✱) e Blessed Conception.
 
 **Etapa 6 — narrador (2 blocos) ✱** (variações a decidir; retrato precisa de arte).
@@ -246,7 +246,6 @@ Hoje o cargo só dá coisas (permissões, licenças, serviços, caminhos do VPE)
 
 - Erro do Warbolter ao gerar pawn fora do mapa.
 - Erro intermitente ao largar arma do Combat Extended (`tried to drop CE_Gun_… which it didn't contain`).
-- Perfil lean do executor de testes quebrado pelas ideologias dos `.rid` (ampliar a lista de mods dele).
 - Facção rebelde do Hegemony com o FactionDef da Hélice.
 - Xeno do líder da Forja (usuário vai criar).
 - Ícones próprios das facções menores e das ideologias.

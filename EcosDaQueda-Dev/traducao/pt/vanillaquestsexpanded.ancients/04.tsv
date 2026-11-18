@@ -1,0 +1,134 @@
+## DefInjected/ThingDef/Buildings_Lootables.xml
+VQEA_StorageShelf_Meals.label	prateleira de refeições de sobrevivência
+VQEA_StorageShelf_Meals.description	Uma prateleira bamba com refeições de sobrevivência embaladas. Validade: sim.
+VQEA_StorageShelf_Medicine.label	prateleira de remédios
+VQEA_StorageShelf_Medicine.description	Uma prateleira bamba com remédios.
+VQEA_StorageShelf_Neutroamine.label	prateleira de neutroamina
+VQEA_StorageShelf_Neutroamine.description	Uma prateleira bamba com frascos de neutroamina.
+VQEA_StorageShelf_Gowns.label	prateleira de camisolas de paciente
+VQEA_StorageShelf_Gowns.description	Uma prateleira bamba com pilhas de camisolas de paciente.
+VQEA_AncientOrganBox_Empty.label	caixa de órgãos antiga vazia
+VQEA_AncientOrganBox_Empty.description	Uma caixa vazia com refrigeração embutida, usada para conservar órgãos por longos períodos.
+VQEA_AncientOrganBox.label	caixa de órgãos antiga
+VQEA_AncientOrganBox.description	Uma caixa segura com refrigeração embutida, usada para conservar órgãos por longos períodos. Pode ser invadida para liberar o que ainda houver dentro.
+## DefInjected/ThingDef/Buildings_PneumaticTubes.xml
+VQEA_PneumaticTubeLaunchPort.label	estação de lançamento de tubo pneumático
+VQEA_PneumaticTubeLaunchPort.description	Uma grande estação de transferência da antiga rede de tubos pneumáticos. Mandava cápsulas de suprimento entre cofres distantes, levando comida, ferramentas e material de pesquisa por túneis subterrâneos selados. Ainda dá para carregar e lançar carga, e uma cápsula de retorno pode chegar de outro cofre depois de um tempo.
+VQEA_PneumaticTubes.label	tubos pneumáticos
+VQEA_PneumaticTubes.description	Uma rede de tubos antigos que levava itens pequenos e médios entre os cofres. Algumas cápsulas continuam presas lá dentro.
+VQEA_PneumaticTubes_Long.label	tubos pneumáticos
+VQEA_PneumaticTubes_Long.description	Uma rede de tubos antigos que levava itens pequenos e médios entre os cofres. Algumas cápsulas continuam presas lá dentro.
+VQEA_PneumaticTubes_Triple.label	tubos pneumáticos
+VQEA_PneumaticTubes_Triple.description	Uma rede de tubos antigos que levava itens pequenos e médios entre os cofres. Algumas cápsulas continuam presas lá dentro.
+VQEA_PneumaticTubes_Corner.label	tubos pneumáticos
+VQEA_PneumaticTubes_Corner.description	Uma rede de tubos antigos que levava itens pequenos e médios entre os cofres. Algumas cápsulas continuam presas lá dentro.
+VQEA_PneumaticTubes_Underground.label	tubos pneumáticos subterrâneos
+VQEA_PneumaticTubes_Underground.description	Uma rede de tubos antigos que levava itens pequenos e médios entre os cofres. Algumas cápsulas continuam presas lá dentro.
+VQEA_PneumaticTubes_Wall.label	tubos pneumáticos
+VQEA_PneumaticTubes_Wall.description	Uma rede de tubos antigos que levava itens pequenos e médios entre os cofres. Algumas cápsulas continuam presas lá dentro.
+VQEA_PneumaticTubes_Terminus.label	terminal de tubos pneumáticos vazio
+VQEA_PneumaticTubes_Terminus.description	A rede de tubos pneumáticos tinha uma saída aqui. Está vazia.
+VQEA_PneumaticTubes_Terminus_Closed.label	terminal de tubos pneumáticos fechado
+VQEA_PneumaticTubes_Terminus_Closed.description	A rede de tubos pneumáticos tinha uma saída aqui. Pode ser aberta para pegar o que tem dentro.
+## DefInjected/ThingDef/Buildings_Power.xml
+VQEA_AncientChemfuelGenerator.label	gerador a combustível químico antigo
+VQEA_AncientChemfuelGenerator.description	Um gerador volumoso a combustível químico de uma era passada. Produz muita energia, mas quando engasga precisa levar um "chute" para voltar a funcionar. Tecnologia de ponta.
+VQEA_AncientChemfuelGenerator.comps.CompInteractablePowerPlant.activateDescString	Chuta o gerador para ele funcionar. O chute sorteia quanta energia ele vai produzir. Depois de um tempo, vai precisar de outro chute.
+VQEA_AncientChemfuelGenerator.comps.CompInteractablePowerPlant.activateLabelString	Chutar gerador
+VQEA_AncientChemfuelGenerator.comps.CompInteractablePowerPlant.activatingString	Chutando gerador: {1}s
+VQEA_AncientChemfuelGenerator.comps.CompInteractablePowerPlant.activatingStringPending	Chutando gerador
+VQEA_AncientChemfuelGenerator.comps.CompInteractablePowerPlant.guiLabelString	Escolha quem deve fazer isso
+VQEA_AncientChemfuelGenerator.comps.CompInteractablePowerPlant.jobString	Chutar gerador
+VQEA_AncientBioBattery.label	biobateria antiga
+VQEA_AncientBioBattery.description	Um velho tanque de energia que dissolve uma criatura viva para gerar eletricidade. A potência depende do tamanho corporal da criatura, e a duração, da massa dela. Ninguém pergunta de onde vinha o combustível.
+## DefInjected/ThingDef/Buildings_Production.xml
+VQEA_AncientWorkshop.label	oficina antiga
+VQEA_AncientWorkshop.description	Uma estação de trabalho antiga para montar máquinas como armas e munição, forjar armas e ferramentas não mecânicas ou desmontar mecanoides mortos.
+VqEA_AncientCookingStation.label	estação de cozinha antiga
+VqEA_AncientCookingStation.description	Um fogão elétrico com bancada acoplada para preparar refeições. Também serve para carnear criaturas mortas em pedaços de carne crua.
+VQEA_AncientGreenbed.label	canteiro artificial antigo
+VQEA_AncientGreenbed.description	Um canteiro artificial pequeno, mas muito eficiente, para cultivar plantas. As bombas de nutrientes precisam funcionar sem parar; as plantas morrem se a energia cair.
+## DefInjected/ThingDef/Buildings_QuestStructures.xml
+VQEA_AncientBroadcastingStation.label	estação de transmissão antiga
+VQEA_AncientBroadcastingStation.description	Um velho console de comunicação que transmitia sinais criptografados entre instalações antigas. Pode ser usado para interceptar transmissões e rastrear sua origem.
+VQEA_AncientBroadcastingStation_Off.label	estação de transmissão antiga desativada
+VQEA_AncientBroadcastingStation_Off.description	Um velho console de comunicação que transmitia sinais criptografados entre instalações antigas. Parece que a informação que guardava sumiu há muito tempo.
+## DefInjected/ThingDef/Buildings_Structure.xml
+VQEA_AncientVaultWall.label	parede de cofre antiga
+VQEA_AncientVaultWall.description	Uma parede de cofre intransponível e indestrutível. Sustenta telhado.
+VQEA_AncientVaultDoor.label	porta de cofre antiga
+VQEA_AncientVaultDoor.description	Uma porta muito fortificada, quase indestrutível. Precisa de paredes dos dois lados para funcionar.
+VQEA_LockedAncientVaultDoor.label	porta de cofre antiga trancada
+VQEA_LockedAncientVaultDoor.description	Uma porta muito fortificada e indestrutível. Precisa ser invadida para abrir. Precisa de paredes dos dois lados para funcionar.
+VQEA_LockedAncientVaultDoor.comps.CompJammedAirlock.activateDescString	Escolha um colono para burlar a segurança desta porta
+VQEA_LockedAncientVaultDoor.comps.CompJammedAirlock.activateLabelString	Burlar
+VQEA_LockedAncientVaultDoor.comps.CompJammedAirlock.activatingString	forçando a porta de cofre antiga trancada: {1}s
+VQEA_LockedAncientVaultDoor.comps.CompJammedAirlock.activatingStringPending	forçando a porta de cofre antiga trancada
+VQEA_LockedAncientVaultDoor.comps.CompJammedAirlock.guiLabelString	Escolha quem deve fazer isso
+VQEA_LockedAncientVaultDoor.comps.CompJammedAirlock.jobString	Forçar esta porta de cofre antiga trancada
+VQEA_LockedAncientVaultDoor.comps.CompJammedAirlock.messageCompletedString	{PAWN_nameDef} conseguiu forçar a porta de cofre antiga trancada.
+VQEA_AncientVaultDoor_Large.label	porta de cofre antiga grande
+VQEA_AncientVaultDoor_Large.description	Uma porta grande, muito fortificada, quase indestrutível. Precisa de paredes dos dois lados para funcionar.
+VQEA_LockedAncientVaultDoor_Large.label	porta de cofre antiga grande trancada
+VQEA_LockedAncientVaultDoor_Large.description	Uma porta muito fortificada e indestrutível. Precisa ser invadida para abrir. Precisa de paredes dos dois lados para funcionar.
+VQEA_LockedAncientVaultDoor_Large.comps.CompJammedAirlock.activateDescString	Escolha um colono para burlar a segurança desta porta
+VQEA_LockedAncientVaultDoor_Large.comps.CompJammedAirlock.activateLabelString	Burlar
+VQEA_LockedAncientVaultDoor_Large.comps.CompJammedAirlock.activatingString	forçando a porta de cofre antiga trancada: {1}s
+VQEA_LockedAncientVaultDoor_Large.comps.CompJammedAirlock.activatingStringPending	forçando a porta de cofre antiga trancada
+VQEA_LockedAncientVaultDoor_Large.comps.CompJammedAirlock.guiLabelString	Escolha quem deve fazer isso
+VQEA_LockedAncientVaultDoor_Large.comps.CompJammedAirlock.jobString	Forçar esta porta de cofre antiga trancada
+VQEA_LockedAncientVaultDoor_Large.comps.CompJammedAirlock.messageCompletedString	{PAWN_nameDef} conseguiu forçar a porta de cofre antiga trancada.
+## DefInjected/ThingDef/Buildings_Traps.xml
+VQEA_SplicelingContainment.label	contenção de emendinho
+VQEA_SplicelingContainment.description	Uma cápsula de contenção cheia de líquido turvo. Parece haver um emendinho dormindo lá dentro.
+VQEA_SplicehulkContainment.label	contenção de emendão
+VQEA_SplicehulkContainment.description	Uma cápsula de contenção cheia de líquido turvo. Um emendão enorme ocupa quase o tubo inteiro.
+VQEA_SplicefiendContainment.label	contenção de emendemônio
+VQEA_SplicefiendContainment.description	Uma cápsula de contenção cheia de líquido turvo. O vidro está estourando nas junções por causa do enorme emendemônio lá dentro.
+VQEA_SplicetootsContainment.label	contenção de emendapuns
+VQEA_SplicetootsContainment.description	Uma cápsula de contenção cheia de líquido turvo. Vários emendapuns pequenos boiam lá dentro, inquietos.
+VQEA_AncientEmergencyPurifier.label	purificador de emergência antigo
+VQEA_AncientEmergencyPurifier.description	Um velho purificador automático que solta rajadas de calor extremo para esterilizar áreas contaminadas. Ainda dispara num ciclo cronometrado.
+VQEA_AncientEmergencyPurifier_Off.label	purificador de emergência antigo
+VQEA_AncientEmergencyPurifier_Off.description	Um velho purificador automático que solta rajadas de calor extremo para esterilizar áreas contaminadas. Ainda dispara num ciclo cronometrado.
+## DefInjected/ThingDef/Buildings_VaultEntrances.xml
+VQEA_LockedVaultDoor.label	porta de cofre selada
+VQEA_LockedVaultDoor.description	Uma entrada de cofre selada que leva a um laboratório subterrâneo. A estrutura continua sólida, mas muito pressurizada. Pode ser forçada para dar acesso.
+VQEA_LockedVaultDoor.comps.CompLockedVaultDoor.activateDescString	Escolha alguém para abrir a porta do cofre e dar acesso ao cofre subterrâneo.
+VQEA_LockedVaultDoor.comps.CompLockedVaultDoor.activateLabelString	Abrir porta do cofre
+VQEA_LockedVaultDoor.comps.CompLockedVaultDoor.activatingString	forçando a porta: {1}s
+VQEA_LockedVaultDoor.comps.CompLockedVaultDoor.activatingStringPending	forçando a porta
+VQEA_LockedVaultDoor.comps.CompLockedVaultDoor.guiLabelString	Escolha quem deve fazer isso
+VQEA_LockedVaultDoor.comps.CompLockedVaultDoor.jobString	Forçar esta porta
+VQEA_LockedVaultDoor.comps.CompLockedVaultDoor.messageCompletedString	{PAWN_nameDef} conseguiu forçar a porta.
+VQEA_VaultRamp.label	rampa do cofre
+VQEA_VaultRamp.description	Uma rampa de veículos muito reforçada, com uma escada de pessoal descendo pelo meio. Leva mais fundo, a um cofre antigo selado.
+VQEA_VaultExitRamp.label	rampa de saída do cofre
+VQEA_VaultExitRamp.description	Uma rampa de veículos muito reforçada, com uma escada de pessoal subindo, que leva de volta à superfície.
+## DefInjected/ThingDef/Ethereal_Various.xml
+VQEA_PawnLevitator.label	voando
+## DefInjected/ThingDef/Filth_Various.xml
+VQEA_Filth_DriedBlood.label	sangue seco
+VQEA_Filth_OldDocuments.label	documentos velhos
+## DefInjected/ThingDef/Races_Animal_Mutants.xml
+VQEA_Spliceling.label	emendinho
+VQEA_Spliceling.description	Um mutante torto e malformado que lembra vagamente o que já foi um humano. O rosto esquálido é uma colcha de retalhos de feições que se mexem sem propósito. Move-se de forma errática, como se movido por pontadas súbitas de dor e vontade de violência. A pele fina e esticada parece frágil, mas a imprevisibilidade faz dele um inimigo perigoso.\n\nNão se sabe se ainda resta ali dentro uma consciência humana partida ou se é só um fantoche oco de genes embaralhados.
+VQEA_Spliceling.tools.left_mutated_fist.label	punho mutante esquerdo
+VQEA_Spliceling.tools.left_mutated_fist.labelNoLocation	punho mutante
+VQEA_Spliceling.tools.flesh_club.label	clava de carne
+VQEA_Spliceling.tools.head.label	cabeça
+VQEA_Splicehulk.label	emendão
+VQEA_Splicehulk.description	Um mutante inchado que treme a cada passo sofrido. A pele racha com o próprio peso e escorre um fluido amarelo pelas costuras abertas. Lembra vagamente o que já foi um humano, e os membros de tamanhos desencontrados se debatem desajeitados contra o que estiver perto. De algum jeito, regenera todos os ferimentos a uma velocidade antinatural.\n\nÉ lento e pesadão, mas o volume imenso esmaga obstáculos com facilidade, e sobra pouca esperança para o que estiver no caminho.
+VQEA_Splicehulk.tools.left_swollen_arm.label	braço inchado esquerdo
+VQEA_Splicehulk.tools.left_swollen_arm.labelNoLocation	braço inchado
+VQEA_Splicehulk.tools.right_swollen_arm.label	braço inchado direito
+VQEA_Splicehulk.tools.right_swollen_arm.labelNoLocation	braço inchado
+VQEA_Splicehulk.tools.body_slam.label	pancada de corpo
+VQEA_Splicefiend.label	emendemônio
+VQEA_Splicefiend.description	Um mutante gigantesco, enfurecido e cutucado pela agonia sem fim. As proporções são totalmente distorcidas, com os braços arrastando no chão. O peito estourado está escancarado, cheio de cordões de carne esticados, e as pernas são grossas o bastante para rachar pedra a cada passo.\n\nAo contrário dos parentes lerdos, o emendemônio se move com velocidade e precisão alarmantes, esmagando a presa com investidas violentas e golpes dilacerantes.
+VQEA_Splicefiend.tools.left_massive_fist.label	punho enorme esquerdo
+VQEA_Splicefiend.tools.left_massive_fist.labelNoLocation	punho enorme
+VQEA_Splicefiend.tools.right_massive_fist.label	punho enorme direito
+VQEA_Splicefiend.tools.right_massive_fist.labelNoLocation	punho enorme
+VQEA_Splicetoot.label	emendapum
+VQEA_Splicetoot.description	Um mutante pequeno e inchado que engatinha desajeitado em membros atrofiados, como uma paródia grotesca de uma criancinha. A barriga enorme chacoalha cheia de gás podre, inchando e tremendo a cada movimento brusco. Ao alcançar a vítima, o corpo frágil estoura numa explosão violenta e solta uma nuvem sufocante de gás perigoso. Se já foi uma criança ou se foi moldado para zombar de uma é uma crueldade terrível demais para pensar.

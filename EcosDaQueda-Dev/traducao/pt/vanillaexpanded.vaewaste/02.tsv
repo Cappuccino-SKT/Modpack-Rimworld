@@ -1,0 +1,128 @@
+## DefInjected/DamageDef/DamageDefs.xml
+VAEWaste_FluBite.label	mordida de toxigripe
+VAEWaste_RippingBite.label	mordida dilacerante
+VAEWaste_FluClaws.label	garras de toxigripe
+## DefInjected/HediffDef/Hediffs_Global_Misc.xml
+VAEWaste_Toxflu.label	toxigripe
+VAEWaste_Toxflu.description	A toxigripe é uma doença muito contagiosa e de ataque rápido, com febre, tosse, cansaço e falta de ar. Espalha-se depressa pelo contato com fluidos corporais infectados. Quem pega pode ter crises respiratórias graves e, nos piores casos, morrer. Some quase tão rápido quanto aparece, mas qualquer um que tenha conversado com um doente de toxigripe pode pegá-la.
+VAEWaste_Toxflu.stages.recovering.label	em recuperação
+VAEWaste_LongToxflu.label	toxigripe longa
+VAEWaste_LongToxflu.description	Uma lesão de cicatriz duradoura nas vias aéreas dos pulmões. Não precisa de tratamento.
+VAEWaste_PestigatorUnderwater.label	submerso
+VAEWaste_PestigatorUnderwater.description	Este pestigador está meio submerso, o que o deixa mais rápido e mais protegido.
+## DefInjected/IncidentDef/Incidents_Map_Misc.xml
+VAEWaste_WasteAnimalsWanderIn.label	bichos do lixão chegam
+## DefInjected/JobDef/Jobs_Work.xml
+VAEWaste_AttackTree.reportString	destruindo TargetA.
+VAEWaste_AttackSelf.reportString	arrancando o próprio cérebro.
+VAEWaste_EatWastepack.reportString	comendo TargetA.
+## DefInjected/MVCF.ModDef/MVCF.xml
+VAEWaste_MVCF.label	Vanilla Animals Expanded - Mutated Animals
+VAEWaste_MVCF.description	Adiciona ataques à distância dos animais do Vanilla Animals Expanded - Mutated Animals
+## DefInjected/PawnKindDef/Races_Hydra.xml
+VAEWaste_Hydra.label	hidra
+## DefInjected/PawnKindDef/Races_Megatardi.xml
+VAEWaste_Megatardi.label	megatardígrado
+## DefInjected/PawnKindDef/Races_Pestigator.xml
+VAEWaste_Pestigator.label	pestigador
+## DefInjected/PawnKindDef/Races_Toxafox.xml
+VAEWaste_Toxafox.label	raposa-tóxica
+VAEWaste_Toxafox.labelPlural	raposas-tóxicas
+VAEWaste_Toxafox.lifeStages.toxafox_puppy.label	filhote de raposa-tóxica
+VAEWaste_Toxafox.lifeStages.toxafox_puppy.labelPlural	filhotes de raposa-tóxica
+## DefInjected/PawnKindDef/Races_Toxbear.xml
+VAEWaste_Toxbear.label	urso-tóxico
+## DefInjected/PawnKindDef/Races_Toxiguana.xml
+VAEWaste_Toxiguana.label	toxiguana
+## DefInjected/PawnKindDef/Races_Toxlion.xml
+VAEWaste_Toxlion.label	leão-tóxico
+VAEWaste_Toxlion.lifeStages.toxlion_cub.label	filhote de leão-tóxico
+## DefInjected/PawnKindDef/Races_Toxscorpion.xml
+VAEWaste_Toxscorpion.label	escorpião-tóxico
+## DefInjected/PawnKindDef/Races_Wasteboar.xml
+VAEWaste_Wasteboar.label	javali-do-lixão
+## DefInjected/PawnKindDef/Races_Wastedeer.xml
+VAEWaste_Wastedeer.label	cervo-do-lixão
+VAEWaste_Wastedeer.labelFemale	corça-do-lixão
+VAEWaste_Wastedeer.labelMale	cervo-do-lixão
+VAEWaste_Wastedeer.labelPlural	cervos-do-lixão
+## DefInjected/PawnKindDef/Races_Wasteffalo.xml
+VAEWaste_Wasteffalo.label	búfalo-do-lixão
+VAEWaste_Wasteffalo.lifeStages.wasteffalo_calf.label	bezerro de búfalo-do-lixão
+VAEWaste_Wasteffalo.lifeStages.wasteffalo_calf.labelPlural	bezerros de búfalo-do-lixão
+## DefInjected/ThingDef/Items_Resource_AnimalProduct.xml
+VAEWaste_EggToxiguanaFertilized.label	ovo de toxiguana (fert.)
+VAEWaste_EggToxiguanaFertilized.description	Um ovo fertilizado de toxiguana. Se tudo der certo, vai chocar um filhote de toxiguana. Pode ser comido cru, mas cozido é bem melhor.
+VAEWaste_EggToxiguanaUnfertilized.label	ovo de toxiguana (não fert.)
+VAEWaste_EggToxiguanaUnfertilized.description	Um ovo não fertilizado de toxiguana. Pode ser comido cru, mas cozido é bem melhor.
+VAEWaste_EggHydraFertilized.label	ovo de hidra (fert.)
+VAEWaste_EggHydraFertilized.description	Um ovo fertilizado de hidra. Se tudo der certo, vai chocar um filhote de hidra. Pode ser comido cru, mas cozido é bem melhor.
+VAEWaste_EggHydraUnfertilized.label	ovo de hidra (não fert.)
+VAEWaste_EggHydraUnfertilized.description	Um ovo não fertilizado de hidra. Pode ser comido cru, mas cozido é bem melhor.
+## DefInjected/ThingDef/Items_Resource_Meats.xml
+VAEWaste_ToxicMeat.label	carne tóxica
+VAEWaste_ToxicMeat.description	Carne crua de um animal tóxico.\n\nBorrachuda, gelatinosa e nojenta.
+## DefInjected/ThingDef/Items_Resource_Stuff_Leather.xml
+VAEWaste_ToxicLeather.label	couro do lixão
+VAEWaste_ToxicLeather.description	Um couro pobre, marrom-esverdeado escuro, que descasca fácil. Muito inflamável.
+## DefInjected/ThingDef/Races_Hydra.xml
+VAEWaste_Hydra.label	hidra
+VAEWaste_Hydra.description	A hidra é uma criatura temível, mutada pelo ambiente tóxico numa serpente de três cabeças. Vive sobretudo na água, com duas cabeças submersas enquanto só uma respira. Rápida e cruel nos ataques, tem uma mordida letal que injeta um veneno potente a cada bote. A capacidade de se adaptar aos ambientes mais duros faz dela um predador formidável, que deve ser abordado com cautela. As três cabeças simbolizam sua adaptabilidade e resistência, tornando-a uma força a ser respeitada nos biomas poluídos.
+VAEWaste_Hydra.tools.venomfangs.label	presas venenosas
+## DefInjected/ThingDef/Races_Megatardi.xml
+VAEWaste_Megatardi.label	megatardígrado
+VAEWaste_Megatardi.description	O megatardígrado é uma criatura enorme e curiosa, mutada de suas origens minúsculas de tardígrado num colosso do ermo. Lento e cego, precisa de pouquíssimo sustento e consegue comer até os pacotes de resíduos mais tóxicos. Com seis patas, é uma visão impressionante, e a natureza mansa faz dele um animal de carga popular entre quem se arrisca no mundo poluído. É fácil de domar, mas tem seus perigos: ao morrer, solta uma nuvem de gás tóxico, um risco para quem estiver perto. Mesmo assim, continua valioso para quem encara os desafios do ermo poluído.
+## DefInjected/ThingDef/Races_Pestigator.xml
+VAEWaste_Pestigator.label	pestigador
+VAEWaste_Pestigator.description	O pestigador é um predador enorme e temível que reina nos pântanos poluídos da orla. Com o corpo muito blindado e mandíbulas poderosas, causa dano massivo em qualquer oponente. Lento em terra, é ágil e quase invisível na água, um adversário formidável no seu habitat. Não deve ser subestimado: a mordida rasga a presa com facilidade. A fome insaciável e a agressividade tornam impossível domá-lo, e ele é uma ameaça constante para quem tiver o azar de topar com ele.
+## DefInjected/ThingDef/Races_Toxafox.xml
+VAEWaste_Toxafox.label	raposa-tóxica
+VAEWaste_Toxafox.description	A raposa-tóxica é uma raposa muito inteligente que evoluiu para sobreviver nos ambientes mais duros. Com o faro apurado, desenterra pacotes de resíduos enterrados fundo, o que faz dela uma praga persistente. Sem querer, sua presença gera mais poluição, um grande risco ambiental. Apesar do tamanho, não deve ser subestimada: a esperteza e a adaptabilidade fazem dela uma adversária formidável num mundo já devastado pela toxicidade e pela decadência.
+## DefInjected/ThingDef/Races_Toxbear.xml
+VAEWaste_Toxbear.label	urso-tóxico
+VAEWaste_Toxbear.description	O urso-tóxico é uma criatura monstruosa e mortal nascida de um ambiente poluído. Enorme, esse urso mutante é uma força a ser respeitada. Sem predadores naturais, vaga e caça à vontade, deixando destruição por onde passa. A agressividade vem de um crescimento canceroso em volta da cabeça, que o deixa quase imune a dano.\n\nConforme o tumor pressiona o cérebro, o urso-tóxico fica cada vez mais violento, até ficar completamente raivoso. Pouco depois, os ursos-tóxicos costumam tentar arrancar o próprio cérebro com as garras, numa morte violenta.
+## DefInjected/ThingDef/Races_Toxiguana.xml
+VAEWaste_Toxiguana.label	toxiguana
+VAEWaste_Toxiguana.description	A toxiguana é um lagarto pequeno e bípede, bem adaptado a ambientes muito poluídos. Do tamanho de um cachorro, não deve ser subestimada: tem uma defesa formidável e cospe ácido corrosivo em qualquer predador que a ameace. Ao morrer, uma reação química decompõe o corpo rapidamente e solta uma nuvem de gás tóxico perigosa para qualquer ser vivo. A toxiguana é um exemplo notável de como a vida resiste até nos ambientes mais duros.
+VAEWaste_Toxiguana.tools.left_claws.label	garras esquerdas
+VAEWaste_Toxiguana.tools.right_claws.label	garras direitas
+## DefInjected/ThingDef/Races_Toxlion.xml
+VAEWaste_Toxlion.label	leão-tóxico
+VAEWaste_Toxlion.description	O leão-tóxico é um reflexo triste do que já foi um predador orgulhoso e poderoso. O ambiente tóxico o deixou fraco e esquelético, obrigado a sobreviver comendo lixo. Mesmo assim, continua uma ameaça: mordidas e garras têm grande chance de transmitir a toxigripe, e ele caça em bandos grandes para compensar a falta de força e velocidade.\n\nA toxigripe é uma doença muito contagiosa e de ataque rápido, com febre, tosse, cansaço e falta de ar. Espalha-se depressa pelo contato com fluidos corporais infectados. Quem pega pode ter crises respiratórias graves e, nos piores casos, morrer. Some quase tão rápido quanto aparece, mas qualquer um que tenha conversado com um doente de toxigripe pode pegá-la.
+## DefInjected/ThingDef/Races_Toxscorpion.xml
+VAEWaste_Toxscorpion.label	escorpião-tóxico
+VAEWaste_Toxscorpion.description	O escorpião-tóxico é uma criatura enorme e temível, do tamanho de uma vaca. A carapaça grossa e as pinças poderosas o tornam quase invulnerável, capaz de cortar até metal. Sem ponto fraco definido, é um adversário formidável. Mutado pela exposição a radiação e toxinas, o ferrão injeta um veneno de ação rápida que altera o DNA das vítimas, causando acúmulo tóxico e tumores que precisam ser retirados logo antes de se espalhar. É uma das criaturas mais perigosas do ermo.
+## DefInjected/ThingDef/Races_Wasteboar.xml
+VAEWaste_Wasteboar.label	javali-do-lixão
+VAEWaste_Wasteboar.description	O javali-do-lixão é uma criatura enorme e poderosa, mutada pelo ambiente poluído onde vive. Com quatro olhos e dois pares de presas temíveis, sabe se defender de predadores. Apesar da cara feia, não é agressivo: passa o tempo dando cabeçadas nas árvores para derrubá-las. Parece inofensivo, mas tem consequências devastadoras para o ambiente, o que o torna uma presença indesejada e destrutiva. A perda de recursos e o estrago na paisagem fazem dele um problema a ser levado a sério.
+## DefInjected/ThingDef/Races_Wastedeer.xml
+VAEWaste_Wastedeer.label	cervo-do-lixão
+VAEWaste_Wastedeer.description	O cervo-do-lixão é uma criatura única, adaptada para prosperar nos ambientes mais poluídos. Com duas cabeças, percebe e evita o perigo vindo de qualquer direção. A forma mutante o deixa sobreviver nas condições mais duras, um símbolo de resistência num mundo devastado por toxinas. Apesar da aparência estranha, é gracioso e ágil, e anda com facilidade pelo terreno traiçoeiro do ermo. Não é uma ameaça direta, mas sua presença lembra os perigos de um mundo tomado pela poluição.
+VAEWaste_Wastedeer.tools.left_hoof-0.label	casco esquerdo
+VAEWaste_Wastedeer.tools.left_hoof-1.label	casco esquerdo
+VAEWaste_Wastedeer.tools.right_hoof-0.label	casco direito
+VAEWaste_Wastedeer.tools.right_hoof-1.label	casco direito
+## DefInjected/ThingDef/Races_Wasteffalo.xml
+VAEWaste_Wasteffalo.label	búfalo-do-lixão
+VAEWaste_Wasteffalo.description	Um herbívoro de rebanho grande e mutante, descendente do búfalo e adaptado a ambientes muito tóxicos. Enfurecido é mortal, mas pode ser domado e até servir de animal de carga.\n\nA segunda cabeça mutante o torna bem mais perigoso: com dois pares de olhos e duas mandíbulas gigantes, defende-se de qualquer predador que tente caçá-lo.\n\nPor causa da instabilidade genética, raramente vive o bastante para ser criado em fazenda. A carne também é conhecida por ser muito tóxica.
+VAEWaste_Wasteffalo.tools.left_hoof-0.label	casco esquerdo
+VAEWaste_Wasteffalo.tools.left_hoof-1.label	casco esquerdo
+VAEWaste_Wasteffalo.tools.right_hoof-0.label	casco direito
+VAEWaste_Wasteffalo.tools.right_hoof-1.label	casco direito
+## DefInjected/ThoughtDef/Thoughts_Memory_Eating.xml
+VAEWaste_AteToxicMeatDirect.stages.ate_toxic_meat.label	comeu carne tóxica
+VAEWaste_AteToxicMeatDirect.stages.ate_toxic_meat.description	Comi carne tóxica. Foi, talvez, a coisa mais nojenta que já provei.
+VAEWaste_AteToxicMeatAsIngredient.stages.ate_cooked_toxic_meat.label	comeu carne tóxica cozida
+VAEWaste_AteToxicMeatAsIngredient.stages.ate_cooked_toxic_meat.description	Comi uma refeição feita com carne tóxica. O tempero disfarçou um pouco, mas ainda tinha gosto de veneno.
+## DefInjected/ToolCapacityDef/ToolCapacity.xml
+VAEWaste_FluBite.label	mordida de toxigripe
+VAEWaste_RippingBite.label	mordida dilacerante
+VAEWaste_FluClaws.label	garras de toxigripe
+## Keyed/Misc_Gameplay.xml
+VAEWaste_PestigatorNotTameable	O pestigador se recusa a ser domado!
+VAEWaste_ToxbearNotTameable	O urso-tóxico está enlouquecido demais para ser domado!
+VAEWaste_PestigatorRips	O pestigador arranca {1} de {0} com as mandíbulas enormes!
+VAEWaste_WasteAnimalsWanderInLabel	{0} chegam
+VAEWaste_WasteAnimalsWanderInText	Um grupo de {0} chegou à área.\n\nForam atraídos pela poluição local. A chegada deles pode pôr em risco o ecossistema da região. Limpe a poluição em volta para que os bichos do lixão não voltem.
+VAEW_DisableToxfluSpread	Desligar a transmissão da toxigripe
+VAEW_DisableToxfluSpreadDesc	Como a toxigripe é virulenta demais para muita gente, adicionamos esta opção para desligar a transmissão nas interações sociais. Agora vá se esconder de vergonha.

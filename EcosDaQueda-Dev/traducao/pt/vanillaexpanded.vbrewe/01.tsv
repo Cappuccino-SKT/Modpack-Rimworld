@@ -1,0 +1,223 @@
+## DefInjected/ChemicalDef/Drinks_Coffees.xml
+VBE_Caffeine.label	cafeína
+## DefInjected/ChemicalDef/Items_Smokes.xml
+VBE_Tobacco.label	tabaco
+## DefInjected/HediffDef/Alcohol_Ambrandy.xml
+VBE_AmbrandyInspiration.label	inspiração de ambrandy
+VBE_AmbrandyInspiration.description	Tomou ambrandy. Ambrandy de qualidade magistral ou lendária dá uma inspiração artística, se o colono puder recebê-la.
+VBE_AmbrandyInspiration.labelNoun	uma inspiração de ambrandy
+## DefInjected/HediffDef/Alcohol_Gin.xml
+VBE_GinHigh.label	efeito do gim
+VBE_GinHigh.description	Tomou gim. Aumenta o impacto social.
+VBE_GinHigh.labelNoun	um efeito de gim
+## DefInjected/HediffDef/Alcohol_Tequila.xml
+VBE_TequilaHigh.label	efeito da tequila
+VBE_TequilaHigh.description	Tomou tequila. Quem bebe tequila é conhecido por se sair bem em combates longos.
+VBE_TequilaHigh.labelNoun	um efeito de tequila
+## DefInjected/HediffDef/Alcohol_Vodka.xml
+VBE_VodkaHigh.label	efeito da vodca
+VBE_VodkaHigh.description	Tomou vodca. Dá um bônus de precisão corpo a corpo que cresce com a bebedeira.
+VBE_VodkaHigh.labelNoun	um efeito de vodca
+## DefInjected/HediffDef/Alcohol_Whiskey.xml
+VBE_WhiskeyHigh.label	efeito do uísque
+VBE_WhiskeyHigh.description	Tomou uísque. Aumenta em 15% a velocidade geral de trabalho.
+VBE_WhiskeyHigh.labelNoun	um efeito de uísque
+VBE_DoubleWhiskeyHigh.label	efeito do uísque duplo
+VBE_DoubleWhiskeyHigh.description	Tomou uísque duplo. Aumenta em 20% a velocidade geral de trabalho e em 20% os preços no comércio.
+VBE_DoubleWhiskeyHigh.labelNoun	um efeito de uísque duplo
+## DefInjected/HediffDef/Drinks_Coffees.xml
+VBE_HotCoffeeHigh.label	efeito da cafeína (quente)
+VBE_HotCoffeeHigh.description	A cafeína do café, depois de metabolizada, estimula o sistema nervoso, tira a necessidade de dormir e clareia a mente. Aumenta em 15% a velocidade de aprendizado e reduz em 15% a queda de descanso. Café quente reduz a hipotermia; gelado, a insolação.
+VBE_HotCoffeeHigh.labelNoun	um efeito de cafeína (quente)
+VBE_IcedCoffeeHigh.label	efeito da cafeína (gelado)
+VBE_IcedCoffeeHigh.description	A cafeína do café, depois de metabolizada, estimula o sistema nervoso, tira a necessidade de dormir e clareia a mente. Aumenta em 15% a velocidade de aprendizado e reduz em 15% a queda de descanso. Café quente reduz a hipotermia; gelado, a insolação.
+VBE_IcedCoffeeHigh.labelNoun	efeito de cafeína (gelado)
+VBE_CaffeineTolerance.label	tolerância à cafeína
+VBE_CaffeineTolerance.description	Uma tolerância acumulada à cafeína. Quanto maior, mais cafeína é preciso para o mesmo efeito.
+VBE_CaffeineAddiction.label	vício em cafeína
+VBE_CaffeineAddiction.description	Uma dependência química de cafeína. A presença prolongada de cafeína causou adaptações neurológicas no nível celular, e o cérebro não funciona mais direito sem a droga.\n\nSem doses regulares de cafeína, começam os sintomas de abstinência. Mas uma abstinência prolongada força o cérebro a voltar ao normal, resolvendo o vício.
+## DefInjected/HediffDef/Drinks_EnergyDrink.xml
+VBE_EnergyDrinkHigh.label	efeito de energético
+VBE_EnergyDrinkHigh.description	Energéticos repõem o descanso na hora e aumentam a velocidade de movimento, mas cobram o preço depois, com uma queda.
+VBE_EnergyDrinkHigh.labelNoun	um efeito de energético
+VBE_EnergyDrinkCrash.label	queda do energético
+VBE_EnergyDrinkCrash.description	Um efeito colateral tardio e desagradável de tomar energético.
+VBE_EnergyDrinkCrash.labelNoun	uma queda de energético
+## DefInjected/HediffDef/Hediffs_Global_Misc.xml
+VBE_DrankSoda.label	tomou refrigerante
+VBE_DrankSoda.description	Uma dose de açúcar entra no sangue e dá uma energia passageira. Dá 5% de bônus de manipulação por 5 horas.
+VBE_DrankTea.label	tomou chá
+VBE_DrankTea.description	Os taninos do chá, depois de metabolizados, estimulam o sistema nervoso, tiram a vontade de dormir e reforçam o sistema imunológico. Aumenta em 15% a velocidade de ganho de imunidade e reduz em 10% a queda de descanso por 5 horas.
+VBE_TequilaAsIngredient.label	tomou coquetel de tequila
+VBE_TequilaAsIngredient.description	Este colono tomou um coquetel com tequila entre os ingredientes. Dá 15% de bônus na chance de domar animais.
+VBE_WhiskeyAsIngredient.label	tomou coquetel de uísque
+VBE_WhiskeyAsIngredient.description	Este colono tomou um coquetel com uísque entre os ingredientes. Dá um bônus de precisão de tiro.
+VBE_VodkaAsIngredient.label	tomou coquetel de vodca
+VBE_VodkaAsIngredient.description	Este colono tomou um coquetel com vodca entre os ingredientes. Aumenta em 20% a chance de esquiva.
+VBE_GinAsIngredient.label	tomou coquetel de gim
+VBE_GinAsIngredient.description	Este colono tomou um coquetel com gim entre os ingredientes.
+VBE_AmbrandyAsIngredient.label	tomou coquetel de ambrandy
+VBE_AmbrandyAsIngredient.description	Este colono tomou um coquetel com ambrandy entre os ingredientes.
+VBE_RBMeadAsIngredient.label	tomou coquetel de hidromel
+VBE_RBMeadAsIngredient.description	Este colono tomou um coquetel com hidromel entre os ingredientes.
+VBE_WineAsIngredient.label	tomou coquetel de vinho
+VBE_WineAsIngredient.description	Este colono tomou um coquetel com vinho entre os ingredientes. Seu monstro.
+VBE_ConsumedLuciferiumPowder.label	comeu pó de lucifério (na refeição)
+VBE_ConsumedLuciferiumPowder.description	O pó de lucifério é um pó finíssimo feito de lucifério. Tão diluído, certamente não cura ferimentos, mas revigora bastante quem consome.
+VBE_ConsumedGoStock.label	comeu caldo de suco-turbo (na refeição)
+VBE_ConsumedGoStock.description	O caldo de suco-turbo é um cubo gelatinoso de suco-turbo que pode ser digerido em vez de injetado. Tão diluído, a droga não bloqueia tanta dor, e as vantagens em combate são bem mais sutis.
+VBE_ConsumedWakeupPowder.label	comeu pó de despertar (na refeição)
+VBE_ConsumedWakeupPowder.description	O pó de despertar é o despertar moído em pó, surpreendentemente doce, às vezes usado no lugar do açúcar em sobremesas ou dissolvido no expresso da manhã. Tão diluído, a droga estimula menos. Mesmo sem viciar, o pó de despertar ainda traz um risco (bem pequeno) de ataque cardíaco.
+## DefInjected/HediffDef/Hediffs_Global_Misc_Cider.xml
+VBE_CiderAsIngredient.label	tomou coquetel de sidra
+VBE_CiderAsIngredient.description	Este colono tomou um coquetel com sidra entre os ingredientes. Muitos elogiam a sidra pelas supostas propriedades antioxidantes. Remove um pouco do acúmulo tóxico.
+## DefInjected/HediffDef/Items_Cider.xml
+VBE_CiderHigh.label	efeito da sidra
+VBE_CiderHigh.description	Álcool de sidra no sangue. Deixa as pessoas felizes, mas reduz as capacidades. Não causa vício em álcool. Nunca passa do estágio "aquecido", por mais que se beba.
+VBE_CiderHigh.labelNoun	um efeito de sidra
+## DefInjected/HediffDef/Items_Cocktails.xml
+VBE_ConsumedCocktail.label	tomou coquetel
+VBE_ConsumedCocktail.description	Tomou um bom coquetel. Tem chance de dar uma inspiração aleatória.
+VBE_ConsumedCocktail.labelNoun	um coquetel
+## DefInjected/HediffDef/Items_Smokes.xml
+VBE_TobaccoHigh.label	efeito do tabaco
+VBE_TobaccoHigh.description	Nicotina no sangue. Dá uma sensação leve e difusa de bem-estar.
+VBE_TobaccoHigh.labelNoun	um efeito de tabaco
+VBE_DeluxeTobaccoHigh.label	efeito de tabaco de qualidade
+VBE_DeluxeTobaccoHigh.description	Nicotina no sangue. Dá uma sensação leve e difusa de bem-estar.
+VBE_DeluxeTobaccoHigh.labelNoun	um efeito de tabaco de qualidade
+VBE_TobaccoTolerance.label	tolerância ao tabaco
+VBE_TobaccoTolerance.description	Uma tolerância acumulada ao tabaco. Quanto maior, mais tabaco é preciso para o mesmo efeito.
+VBE_TobaccoAddiction.label	dependência de tabaco
+VBE_TobaccoAddiction.description	Uma dependência química de tabaco. O uso prolongado causou adaptações neurológicas no nível celular, e o cérebro não funciona mais direito sem a droga.\n\nSem doses regulares de tabaco, começam os sintomas de abstinência. Mas uma abstinência prolongada força o cérebro a voltar ao normal, resolvendo o vício.
+## DefInjected/NeedDef/Drinks_Coffees.xml
+VBE_Chemical_Caffeine.label	cafeína
+VBE_Chemical_Caffeine.description	Por causa do vício em cafeína, esta pessoa precisa consumir cafeína regularmente para evitar a abstinência.
+## DefInjected/NeedDef/Items_Smokes.xml
+VBE_Chemical_Tobacco.label	tabaco
+VBE_Chemical_Tobacco.description	Por causa da dependência de tabaco, esta pessoa precisa consumir a droga regularmente para evitar a abstinência.
+## DefInjected/PipeSystem.ProcessDef/ProcessDefs.xml
+VBE_SyrupToSoda.label	Transformar xarope em refrigerante
+VBE_SyrupToSoda.description	Transforma 25 de xarope em 25 de refrigerante.
+VBE_AmbrandyMustToAmbrandy.label	Fermentar mosto de ambrandy em ambrandy
+VBE_AmbrandyMustToAmbrandy.description	Transforma 1 mosto de ambrandy em 3 de ambrandy.
+VBE_AmbrandyMustToAmbrandy.labelOverride	Transformar 1 mosto de ambrandy em 3 de ambrandy.
+VBE_WhiskeyMashToWhiskey.label	Fermentar mosto de uísque em uísque
+VBE_WhiskeyMashToWhiskey.description	Transforma 50 de mosto de uísque em 50 de uísque.
+VBE_WhiskeyToDoubleWhiskey.label	Fermentar uísque em uísque duplo
+VBE_WhiskeyToDoubleWhiskey.description	Transforma 50 de uísque em 50 de uísque duplo.
+VBE_TequilaMustToTequila.label	Fermentar mosto de tequila em tequila
+VBE_TequilaMustToTequila.description	Transforma 25 de mosto de tequila em 25 de tequila.
+VBE_VodkaMashToVodka.label	Fermentar mosto de vodca em vodca
+VBE_VodkaMashToVodka.description	Transforma 25 de mosto de vodca em 25 de vodca.
+VBE_GinMushToGin.label	Fermentar mosto de gim em gim
+VBE_GinMushToGin.description	Transforma 25 de mosto de gim em 25 de gim.
+## DefInjected/RecipeDef/Recipes_Cider.xml
+VBE_MakeUnfermentedCider.label	fazer sidra não fermentada
+VBE_MakeUnfermentedCider.description	Faz sidra não fermentada com fermento numa garrafa hermética. Deixada para desenvolver as bactérias certas, vira uma bebida alcoólica fraca.
+VBE_MakeUnfermentedCider.ingredients.0.filter.customSummary	frutas
+VBE_MakeUnfermentedCider.jobString	Fazendo sidra não fermentada.
+## DefInjected/RecipeDef/Recipes_Cocktails.xml
+VBE_MakeCocktailSimple.label	fazer coquetel simples
+VBE_MakeCocktailSimple.description	Faz um coquetel simples, misturado rápido com dois ingredientes.
+VBE_MakeCocktailSimple.ingredients.0.filter.customSummary	destilados simples
+VBE_MakeCocktailSimple.ingredients.1.filter.customSummary	bebidas sem álcool
+VBE_MakeCocktailSimple.jobString	Fazendo coquetel simples.
+VBE_MakeCocktailFine.label	fazer coquetel bom
+VBE_MakeCocktailFine.description	Faz um coquetel bom, misturado com precisão com vários ingredientes.
+VBE_MakeCocktailFine.ingredients.0.filter.customSummary	destilados simples ou de luxo
+VBE_MakeCocktailFine.ingredients.1.filter.customSummary	bebidas sem álcool
+VBE_MakeCocktailFine.jobString	Fazendo coquetel bom.
+VBE_MakeCocktailLavish.label	fazer coquetel luxuoso
+VBE_MakeCocktailLavish.description	Faz um coquetel luxuoso, misturado com muitos ingredientes, gelado à perfeição antes de ser batido com capricho e servido.
+VBE_MakeCocktailLavish.ingredients.0.filter.customSummary	destilados simples
+VBE_MakeCocktailLavish.ingredients.1.filter.customSummary	destilados de luxo
+VBE_MakeCocktailLavish.ingredients.2.filter.customSummary	bebidas sem álcool
+VBE_MakeCocktailLavish.jobString	Fazendo coquetel luxuoso.
+## DefInjected/RecipeDef/Recipes_Cocktails_Gourmet.xml
+VBE_MakeCocktailGourmet.label	fazer coquetel gourmet
+VBE_MakeCocktailGourmet.description	Faz um coquetel gourmet, em que tudo, da temperatura do copo ao instrumento de mexer e à guarnição, foi calculado com precisão para o máximo de sabor e corpo.
+VBE_MakeCocktailGourmet.ingredients.0.filter.customSummary	destilados simples
+VBE_MakeCocktailGourmet.ingredients.1.filter.customSummary	destilados de luxo
+VBE_MakeCocktailGourmet.ingredients.2.filter.customSummary	bebidas sem álcool
+VBE_MakeCocktailGourmet.ingredients.3.filter.customSummary	condimentos
+VBE_MakeCocktailGourmet.jobString	Fazendo coquetel gourmet.
+## DefInjected/RecipeDef/Recipes_Coffee.xml
+VBE_MakeCoffee.label	fazer café
+VBE_MakeCoffee.description	Faz uma bebida quente e amarga, em geral acompanhada de leite e açúcar. Favorita de estudantes e trabalhadores de escritório pela galáxia, pela alta cafeína e pelo aroma agradável.
+VBE_MakeCoffee.jobString	Fazendo café.
+## DefInjected/RecipeDef/Recipes_Condiments_Drugs.xml
+VBE_MakeLuciferiumPowder.label	fazer pó de lucifério
+VBE_MakeLuciferiumPowder.description	Faz um pó finíssimo de lucifério. Costuma ir na borda dos copos nos bares frequentados pelos ricos e poderosos.
+VBE_MakeLuciferiumPowder.jobString	Fazendo pó de lucifério.
+VBE_MakeGoJuiceStock.label	fazer caldo de suco-turbo
+VBE_MakeGoJuiceStock.description	Faz um cubo gelatinoso de suco-turbo que pode ser digerido em vez de injetado. Vai em qualquer refeição, mas costuma ser derretido em sopas ou usado para engrossar coquetéis.
+VBE_MakeGoJuiceStock.jobString	Fazendo caldo de suco-turbo.
+VBE_MakeWakeUpPowder.label	fazer pó de despertar
+VBE_MakeWakeUpPowder.description	Mói o despertar em pó, surpreendentemente doce, às vezes usado no lugar do açúcar em sobremesas ou dissolvido no expresso da manhã.
+VBE_MakeWakeUpPowder.jobString	Fazendo pó de despertar.
+## DefInjected/RecipeDef/Recipes_EnergyDrinks.xml
+VBE_MakeEnergyDrink.label	fazer energético
+VBE_MakeEnergyDrink.description	Faz uma bebida azeda e gasosa com um toque final amargo. Açúcar com cafeína dá um pique de energia na hora, mas uma queda depois. Retrogosto marcante de radiação.
+VBE_MakeEnergyDrink.jobString	Fazendo energético.
+## DefInjected/RecipeDef/Recipes_Juice.xml
+VBE_MixJuice.label	fazer suco de frutas
+VBE_MixJuice.description	Faz um suco simples com algumas frutas.
+VBE_MixJuice.jobString	Fazendo suco de frutas.
+## DefInjected/RecipeDef/Recipes_Musts.xml
+VBE_MakeSodaSyrup.label	fazer xarope de refrigerante
+VBE_MakeSodaSyrup.description	Faz xarope de refrigerante misturando suco natural de fruta com xarope de milho rico em frutose.
+VBE_MakeSodaSyrup.jobString	Fazendo xarope de refrigerante.
+VBE_AmbrosiaMush.label	fazer polpa de ambrosia
+VBE_AmbrosiaMush.description	Faz ambrosia fatiada e prensada, que pode ser deixada para virar mosto e depois destilada num licor finíssimo.
+VBE_AmbrosiaMush.jobString	Fazendo polpa de ambrosia.
+VBE_MakeTequilaMust.label	fazer mosto de tequila de agave
+VBE_MakeTequilaMust.description	Faz uma mistura rala de seiva de agave espremida com fermento de carne de inseto, pronta para ser cortada e fermentada num barril.
+VBE_MakeTequilaMust.jobString	Fazendo mosto de tequila.
+VBE_MakeWhiskeyMash.label	fazer mosto de uísque
+VBE_MakeWhiskeyMash.description	Faz uma mistura com amido, quase toda líquida, cheia de pedaços de polpa. Pronta para envelhecer.
+VBE_MakeWhiskeyMash.jobString	Fazendo mosto de uísque.
+VBE_MakeVodkaMash.label	fazer mosto de vodca
+VBE_MakeVodkaMash.description	Faz um mosto grosso e cheio de amido de batata crua com fermento, pronto para fermentar.
+VBE_MakeVodkaMash.jobString	Fazendo mosto de vodca.
+VBE_MakeGinMush.label	fazer mosto de gim
+VBE_MakeGinMush.description	Faz uma mistura clara, mas turva, de frutinhas espremidas e grãos variados, pronta para fermentar.
+VBE_MakeGinMush.jobString	Fazendo mosto de gim.
+## DefInjected/RecipeDef/Recipes_Smokes.xml
+VBE_MakeCigarettes.label	fazer cigarros
+VBE_MakeCigarettes.description	Faz um tubinho de papel enrolado, recheado sem apertar com folhas de tabaco.
+VBE_MakeCigarettes.jobString	Fazendo cigarros.
+VBE_MakeCigars.label	fazer charutos
+VBE_MakeCigars.description	Faz uma folha grossa de tabaco seca recheada até a boca com mais folhas de tabaco, com um anel dourado em volta.
+VBE_MakeCigars.jobString	Fazendo charutos.
+## DefInjected/RecipeDef/Recipes_Soda_Bulk.xml
+VBE_MakeSodaSyrupBulk.label	fazer xarope de refrigerante (eficiente)
+VBE_MakeSodaSyrupBulk.description	Faz xarope de refrigerante misturando suco natural de fruta com açúcar. Esta receita é bem mais eficiente.
+VBE_MakeSodaSyrupBulk.jobString	Fazendo xarope de refrigerante.
+## DefInjected/RecipeDef/Recipes_Tea.xml
+VBE_MakeTea.label	fazer chá
+VBE_MakeTea.description	Faz uma bebida agradável e aromática deixando um saquinho de folhas de chá em água fervente.
+VBE_MakeTea.jobString	Fazendo chá.
+## DefInjected/RecipeDef/Recipes_Tequila_Pears.xml
+VBE_MakeTequilaMustFromPears.label	fazer mosto de tequila de figo-da-índia
+VBE_MakeTequilaMustFromPears.description	Faz uma mistura rala de figo-da-índia com fermento de carne de inseto, pronta para ser cortada e fermentada num barril.
+VBE_MakeTequilaMustFromPears.jobString	Fazendo mosto de tequila.
+## DefInjected/RecipeDef/Recipes_Whiskey_From_Wheat.xml
+VBE_MakeWhiskeyMashFromFlour.label	fazer mosto de uísque com farinha
+VBE_MakeWhiskeyMashFromFlour.description	Faz uma mistura com amido, quase toda líquida, cheia de pedaços de polpa. Pronta para envelhecer.
+VBE_MakeWhiskeyMashFromFlour.jobString	Fazendo mosto de uísque.
+## DefInjected/ResearchProjectDef/Research.xml
+VBE_MixologyResearch.label	mixologia
+VBE_MixologyResearch.description	Permite construir máquinas avançadas que usam eletricidade para fermentar com perfeição, engarrafar em escala industrial e misturar coquetéis na bancada do bar.
+VBE_MixologyResearch.generalRules.rulesStrings[0]	subject->a alquimia dos destilados
+VBE_MixologyResearch.generalRules.rulesStrings[1]	subject_story->dominou os antigos segredos da destilação, refinando o ofício para produzir destilados que aquecem a alma e encorajam o coração
+VBE_MixologyResearch.generalRules.rulesStrings[2]	subject_story->elevou a fabricação de bebidas da simples fermentação a uma arte, criando licores de profundidade e caráter sem igual
+VBE_MixologyResearch.generalRules.rulesStrings[3]	subject_story->cultivou um legado de artesania, em que cada gota conta a história de como foi feita
+VBE_MixologyResearch.generalRules.rulesStrings[4]	subject_gerund->destilando a essência da tradição em bebidas de distinção
+VBE_LiquorBrewing.label	destilaria
+VBE_LiquorBrewing.description	Usa técnicas avançadas para destilar e fermentar destilados mais fortes, com efeitos únicos.
+VBE_LiquorBrewing.generalRules.rulesStrings[0]	subject->a sinfonia dos sabores
+VBE_LiquorBrewing.generalRules.rulesStrings[1]	subject_story->dominou a alquimia elétrica da mixologia, unindo ciência e arte para mexer com a alma a cada gole
+VBE_LiquorBrewing.generalRules.rulesStrings[2]	subject_story->inaugurou uma era de sofisticação na bebida, em que o bar vira o palco da dança dos sabores
+VBE_LiquorBrewing.generalRules.rulesStrings[3]	subject_story->projetou máquinas de fermentar e engarrafar com perfeição, fazendo de cada mistura uma obra-prima
+VBE_LiquorBrewing.generalRules.rulesStrings[4]	subject_story->foi pioneiro em coquetéis que não são só bebidas, mas experiências que evocam momentos e lembranças

@@ -1,0 +1,56 @@
+## DefInjected/JobDef/Tr_Jobs.xml
+Tr_EnterShelter.reportString	se abrigando no abrigo.
+Tr_SleepInShelter.reportString	descendo para dormir no abrigo subterrâneo.
+## DefInjected/ResearchProjectDef/Tr_Research.xml
+Tr_TimberedTrenches.label	trincheiras escoradas
+Tr_TimberedTrenches.description	Escore as paredes das trincheiras com tábuas e estacas para que aguentem o fogo inimigo.
+Tr_ConcreteTrenches.label	trincheiras de concreto
+Tr_ConcreteTrenches.description	Faça as paredes das trincheiras em concreto armado, capazes de aguentar quase qualquer bombardeio.
+Tr_ShoredDugouts.label	abrigos escorados
+Tr_ShoredDugouts.description	Armações de madeira e chapas de ferro curvas sustentam câmaras maiores e mais fundas: cada abrigo subterrâneo cabe o dobro de pessoas (4 → 8), e cada abrigo pequeno, uma a mais (2 → 3).
+## DefInjected/ResearchTabDef/Tr_Research.xml
+Tr_ResearchTab.label	Trincheiras
+## DefInjected/TerrainDef/Tr_Floors.xml
+Tr_Duckboards.label	estrado de trincheira
+Tr_Duckboards.description	Ripas de madeira postas no fundo da trincheira para os soldados não afundarem na lama. Só pode ser posto dentro de uma trincheira.
+Tr_TrenchFloor.label	fundo de trincheira
+Tr_TrenchFloor.description	Terra recém-cavada, escura e encharcada. Um pouco mais lenta de andar que o estrado.
+## DefInjected/ThingDef/Tr_Fortifications.xml
+Tr_TrenchDirt.label	trincheira de terra
+Tr_TrenchDirt.description	Uma trincheira simples, cavada a pá. Rápida de fazer, mas as paredes desabam sob artilharia.
+Tr_Trench.label	trincheira escorada
+Tr_Trench.description	Uma trincheira com paredes sustentadas por tábuas e estacas. Aguenta melhor os bombardeios.
+Tr_TrenchConcrete.label	trincheira de concreto
+Tr_TrenchConcrete.description	Uma trincheira com paredes de concreto armado, como as da Linha Hindenburg. Cara e lenta de construir, aguenta quase qualquer bombardeio.
+Tr_TrenchParapet.label	parapeito de trincheira
+Tr_TrenchParapet.description	Um barranco de terra socada preso por uma fôrma de tábuas. Protege muito melhor que sacos de areia, mas leva tempo e madeira.
+Tr_Parados.label	parados
+Tr_Parados.description	O barranco de terra erguido atrás da trincheira com a terra tirada dela. Protege dos estilhaços que caem atrás da linha.
+Tr_BarbedWire.label	arame farpado
+Tr_BarbedWire.description	Fileiras de arame farpado esticado em estacas. Quem tenta atravessar avança quase rastejando, exposto ao fogo da trincheira, e pode cortar as pernas.
+## DefInjected/ThingDef/Tr_Shelters.xml
+Tr_DeepDugout.label	abrigo subterrâneo
+Tr_DeepDugout.description	Uma escada escorada que desce vários metros sob a trincheira até uma câmara cavada na terra. Quem desce fica fora do alcance de granadas e balas, e pode dormir lá quando não tem cama. O que fica guardado aqui (comida, remédio, munição…) está a salvo do bombardeio, e quem está dentro come dele.\n\nPara descer: clique direito com a pessoa, ou o botão "Abrigar-se!". Para subir: o botão do abrigo.
+Tr_SmallShelter.label	abrigo pequeno
+Tr_SmallShelter.description	Um nicho escorado cavado na parede da trincheira, onde cabem duas pessoas agachadas. Nada confortável: a gente se enfia ali durante o bombardeio e depois sai. Barato: cave vários ao longo da linha.\n\nPara descer: clique direito com a pessoa, ou o botão "Abrigar-se!". Para subir: o botão do abrigo.
+## Keyed/Tr_Keyed.xml
+Tr_TakeCover	Abrigar-se!
+Tr_TakeCoverDesc	As pessoas selecionadas correm para o abrigo mais próximo com vaga e descem, fora do alcance de granadas e balas.
+Tr_TakeCoverNoRoom	{0}: nenhum abrigo com vaga ao alcance.
+Tr_ShelterOccupants	No subsolo: {0} / {1}
+Tr_ShelterExit	Todos para cima
+Tr_ShelterExitDesc	Todas as pessoas deste abrigo sobem de volta.
+Tr_ShelterEmpty	Ninguém dentro
+Tr_ShelterEnter	Abrigar-se no abrigo
+Tr_ShelterFull	cheio
+Tr_ShelterStock	Suprimentos: {0}
+Tr_ShelterCollapseLabel	Abrigo desabou
+Tr_ShelterCollapseText	{0} desabou. Parte do que estava guardado se perdeu sob os escombros; as {1} pessoa(s) lá dentro saíram rastejando, feridas.
+Tr_OnlyInTrench	Precisa ser posto dentro de uma trincheira.
+Tr_SettingEnter	Tempo para descer numa trincheira: {0}%
+Tr_SettingEnterDesc	Tempo extra que uma pessoa leva para descer numa trincheira. 100% = padrão, 0% = na hora.
+Tr_SettingExit	Tempo para sair de uma trincheira: {0}%
+Tr_SettingExitDesc	Tempo extra que uma pessoa leva para sair de uma trincheira. 100% = padrão, 0% = na hora.
+Tr_SettingPath	Preferência por ficar na trincheira: {0}
+Tr_SettingPathDesc	O quanto quem já está numa trincheira evita sair dela. 0 = sem preferência, 60 = padrão, 200 = quase nunca sai da rede de trincheiras.
+Tr_SettingReset	Restaurar padrões

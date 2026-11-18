@@ -1,0 +1,167 @@
+## DefInjected/PawnsArrivalModeDef/RaidStrategies_Gauntlet.xml
+VFEP_GauntletDrop.textEnemy	Um grupo de {0} de {1} chegou em naves de assalto e está caindo em cima da sua colônia.
+VFEP_GauntletDrop.textFriendly	Um grupo de {0} amigáveis de {1} chegou em naves de assalto e está caindo em cima da sua colônia. As naves de assalto vão dar fogo de cobertura.
+VFEP_GauntletDrop.textWillArrive	({0_pawnsPluralDef} vão chegar em naves de assalto bem em cima de vocês.)
+## DefInjected/PreceptDef/Precepts_Camaraderie.xml
+VFEP_Camaraderie_Respected.description	Interesses diferentes, um só objetivo: provações, sofrimento e sacrifícios devem ser enfrentados juntos, como tripulação.\n\n<color=#E5E54C>Efeito no jogo:</color>\n - Os colonos ganham +3 de humor depois de socializar com outro colono.
+VFEP_Camaraderie_Exalted.description	À mesa da irmandade jantaremos, a bandeira da camaradagem será erguida, um por todos, todos por um. Juntos, teremos o mundo.\n\n<color=#E5E54C>Efeito no jogo:</color>\n - Os colonos ganham +6 de humor depois de socializar com outro colono.
+## DefInjected/PreceptDef/Precepts_Ritual_SingingShanties.xml
+VFEP_SingingShanties.label	canções do mar
+VFEP_SingingShanties.description	Os colonos se reúnem em volta de uma fogueira e cantam canções do mar para fortalecer a camaradagem.
+## DefInjected/PreceptDef/Precepts_Role_Captain.xml
+VFEP_IdeoRole_Captain.label	capitão
+VFEP_IdeoRole_Captain.description	Em geral escolhido pela ousadia e pelo gênio dominador, o capitão pirata costuma ser admirado pela crueldade e pela destruição que causa.
+## DefInjected/RaidStrategyDef/RaidStrategies_Gauntlet.xml
+VFEP_GauntletStrat.arrivalTextEnemy	As naves de assalto dão fogo de cobertura e precisam ser destruídas já.
+VFEP_GauntletStrat.arrivalTextFriendly	Estão descendo para ajudar vocês agora.
+VFEP_GauntletStrat.letterLabelEnemy	Ataque
+## DefInjected/RecipeDef/Recipes_Surgery_Misc.xml
+VFEP_RemoveWarcasket.label	remover caixão de guerra
+VFEP_RemoveWarcasket.description	Remove um caixão de guerra do corpo.
+VFEP_RemoveWarcasket.jobString	Removendo caixão de guerra.
+## DefInjected/ResearchProjectDef/ResearchProjects_Various.xml
+VFEP_Warcaskets.label	caixões de guerra
+VFEP_Warcaskets.description	Construa fundições de caixão de guerra para fabricar peças básicas e equipar pessoas com caixões de guerra.
+VFEP_Warcaskets.generalRules.rulesStrings[0]	subject->o desenvolvimento da infantaria mecanizada
+VFEP_Warcaskets.generalRules.rulesStrings[1]	subject_story->inaugurou a era dos caixões de guerra, transformando soldados a pé em titãs no campo de batalha
+VFEP_Warcaskets.generalRules.rulesStrings[2]	subject_story->dominou a fabricação de caixões de guerra, fundindo metal e força numa coisa só
+VFEP_Warcaskets.generalRules.rulesStrings[3]	subject_story->abriu uma nova era da guerra, em que a linha entre homem e máquina se apagou
+VFEP_Warcaskets.generalRules.rulesStrings[4]	subject_gerund->desbravando o futuro do combate
+VFEP_AdvancedWarcaskets.label	caixões de guerra avançados
+VFEP_AdvancedWarcaskets.description	Construa variações melhoradas de caixões de guerra, voltadas para velocidade, proteção ou equilíbrio.
+VFEP_AdvancedWarcaskets.generalRules.rulesStrings[0]	subject->a evolução dos caixões de guerra
+VFEP_AdvancedWarcaskets.generalRules.rulesStrings[1]	subject_story->refinou os projetos de caixão de guerra em velocidade, resistência e versatilidade, criando novos padrões na guerra mecanizada
+VFEP_AdvancedWarcaskets.generalRules.rulesStrings[2]	subject_story->criou máquinas de guerra que dançavam no campo de batalha com graça letal
+VFEP_AdvancedWarcaskets.generalRules.rulesStrings[3]	subject_story->equilibrou a trindade de velocidade, proteção e poder de fogo numa sinfonia de destruição
+VFEP_AdvancedWarcaskets.generalRules.rulesStrings[4]	subject_gerund->aprimorando a anatomia da guerra
+VFEP_SpecialisedWarcaskets.label	caixões de guerra especializados
+VFEP_SpecialisedWarcaskets.description	Fabrique caixões de guerra feitos para funções especializadas.
+VFEP_SpecialisedWarcaskets.generalRules.rulesStrings[0]	subject->soluções de combate sob medida
+VFEP_SpecialisedWarcaskets.generalRules.rulesStrings[1]	subject_story->projetou caixões de guerra especializados, de assassinos silenciosos a colossos imparáveis
+VFEP_SpecialisedWarcaskets.generalRules.rulesStrings[2]	subject_story->quebrou o molde da guerra tradicional com unidades feitas para necessidades táticas específicas
+VFEP_SpecialisedWarcaskets.generalRules.rulesStrings[3]	subject_story->levou o programa de caixões de guerra a novos patamares com máquinas de guerra sob encomenda
+VFEP_SpecialisedWarcaskets.generalRules.rulesStrings[4]	subject_gerund->especializando as engrenagens da guerra
+VFEP_SpacerWarcaskets.label	caixões de guerra espaciais
+VFEP_SpacerWarcaskets.description	Fabrique caixões de guerra da era espacial, o auge da tecnologia bélica.
+VFEP_SpacerWarcaskets.generalRules.rulesStrings[0]	subject->o auge da guerra mecanizada
+VFEP_SpacerWarcaskets.generalRules.rulesStrings[1]	subject_story->criou caixões de guerra com tecnologia da era espacial, o ápice da engenharia militar
+VFEP_SpacerWarcaskets.generalRules.rulesStrings[2]	subject_story->uniu a ponta da tecnologia espacial à antiga arte da guerra, criando máquinas de batalha sem igual
+VFEP_SpacerWarcaskets.generalRules.rulesStrings[3]	subject_story->redefiniu o campo de batalha com caixões de guerra que eram lendas em pessoa
+VFEP_SpacerWarcaskets.generalRules.rulesStrings[4]	subject_gerund->alcançando o ápice da evolução do combate
+VFEP_WarcasketRemoval.label	remoção de caixão de guerra
+VFEP_WarcasketRemoval.description	Libera a operação "remover caixão de guerra", que tira a pessoa do caixão de guerra, que perde braços e pernas, e reduz o caixão a escória.
+VFEP_WarcasketRemoval.generalRules.rulesStrings[0]	subject->o preço da guerra
+VFEP_WarcasketRemoval.generalRules.rulesStrings[1]	subject_story->desenvolveu técnicas para resgatar guerreiros do confinamento de metal, uma vitória agridoce sobre a máquina
+VFEP_WarcasketRemoval.generalRules.rulesStrings[2]	subject_story->encarou a dura realidade de extrair o núcleo humano da máquina de guerra, trocando membros pela vida
+VFEP_WarcasketRemoval.generalRules.rulesStrings[3]	subject_story->transformou a promessa do poder mecanizado na dor da perda, cada remoção um lembrete do preço da guerra
+VFEP_WarcasketRemoval.generalRules.rulesStrings[4]	subject_gerund->desfazendo o laço entre carne e aço
+VFEP_WarcasketWeaponry.label	armamento de caixão de guerra
+VFEP_WarcasketWeaponry.description	Construa armas ampliadas feitas para ser montadas em caixões de guerra.
+VFEP_WarcasketWeaponry.generalRules.rulesStrings[0]	subject->a inovação em armamento
+VFEP_WarcasketWeaponry.generalRules.rulesStrings[1]	subject_story->projetou armas devastadoras para caixões de guerra, transformando-os em arsenais ambulantes
+VFEP_WarcasketWeaponry.generalRules.rulesStrings[2]	subject_story->uniu o poder da artilharia à flexibilidade da infantaria
+VFEP_WarcasketWeaponry.generalRules.rulesStrings[3]	subject_story->deu aos caixões de guerra o poder de fogo para dizimar, defender e dominar
+VFEP_WarcasketWeaponry.generalRules.rulesStrings[4]	subject_gerund->armando os gigantes da guerra
+VFEP_SpacerWarcasketWeaponry.label	armamento espacial de caixão de guerra
+VFEP_SpacerWarcasketWeaponry.description	Use novas tecnologias espaciais para criar armas ampliadas feitas para ser montadas em caixões de guerra.
+VFEP_SpacerWarcasketWeaponry.generalRules.rulesStrings[0]	subject->armamento de nível espacial
+VFEP_SpacerWarcasketWeaponry.generalRules.rulesStrings[1]	subject_story->domou os mistérios da tecnologia espacial para criar armas de potência sem rival para caixões de guerra
+VFEP_SpacerWarcasketWeaponry.generalRules.rulesStrings[2]	subject_story->inaugurou uma era em que os caixões de guerra mudavam o rumo das guerras com um único tiro
+VFEP_SpacerWarcasketWeaponry.generalRules.rulesStrings[3]	subject_story->casou a arte da guerra com a ciência das estrelas, criando armas nascidas do cosmo
+VFEP_SpacerWarcasketWeaponry.generalRules.rulesStrings[4]	subject_gerund->empunhando a fúria das estrelas
+VFEP_SweatFermentation.label	fermentação de suor
+VFEP_SweatFermentation.description	Fabrique trajes que juntam destilação de álcool e síntese de pasta nutritiva para produzir rum a partir de dejetos humanos reciclados.
+VFEP_SweatFermentation.generalRules.rulesStrings[0]	subject->engenhosidade bioquímica
+VFEP_SweatFermentation.generalRules.rulesStrings[1]	subject_story->transformou o ciclo dos dejetos em fonte de sustento e espírito, fazendo rum com o suor do trabalho
+VFEP_SweatFermentation.generalRules.rulesStrings[2]	subject_story->borrou a linha entre destilação e desespero, achando inovação no que não é convencional
+VFEP_SweatFermentation.generalRules.rulesStrings[3]	subject_story->criou um ciclo autossustentável de trabalho, dejeto e destilado, alimentando o corpo e o moral
+VFEP_SweatFermentation.generalRules.rulesStrings[4]	subject_gerund->destilando resistência do refugo
+## DefInjected/RitualBehaviorDef/Ritual_Behaviors_SingingShanties.xml
+VFEP_SingingShantiesBehaviour.roles.0.label	puxador
+VFEP_SingingShantiesBehaviour.spectatorGerund	participar
+## DefInjected/RitualOutcomeEffectDef/Ritual_Outcomes_SingingShanties.xml
+VFEP_SingingShantiesOutcome.description	Conforme a qualidade do ritual, os participantes ganham entre {MINMOOD} e {MAXMOOD} de humor por {MOODDAYS} dias. Uma cantoria acima da média dá uma nova missão. Uma de boa qualidade tira de todos os participantes os pensamentos ruins por perder alguém.
+VFEP_SingingShantiesOutcome.comps.0.label	puxador presente
+VFEP_SingingShantiesOutcome.outcomeChances.0.description	As {0} foram um tédio. O capitão não mostrou paixão nenhuma, e a camaradagem simplesmente não apareceu.
+VFEP_SingingShantiesOutcome.outcomeChances.1.label	Fraca
+VFEP_SingingShantiesOutcome.outcomeChances.1.description	As {0} foram fracas. O capitão nos tratou como crianças, louco para ouvir algo que nos animasse.
+VFEP_SingingShantiesOutcome.outcomeChances.2.label	Empolgante
+VFEP_SingingShantiesOutcome.outcomeChances.2.description	As {0} foram muito empolgantes. Raios me partam, que cantoria boa! O capitão nos animou e nos fez sentir uma camaradagem e uma união que só vão nos deixar mais fortes.\n\nAnalisando a letra depois, descobrimos que as palavras antigas são pistas habilmente codificadas de uma possível missão!
+VFEP_SingingShantiesOutcome.outcomeChances.3.description	As {0} foram incríveis! Ainda ouvimos as palavras hipnotizantes do capitão, que nos lembraram da importância da nossa camaradagem. Dá para sentir a tristeza sumindo.\n\nAnalisando a letra depois, descobrimos que as palavras antigas são pistas habilmente codificadas de uma possível missão!
+## DefInjected/RulePackDef/RulePacks_Ideo_Role_Captain.xml
+VFEP_NamerRoleCaptain.rulePack.rulesStrings[0]	r_roleName(p=7)->[secondPart] [firstPart]
+VFEP_NamerRoleCaptain.rulePack.rulesStrings[1]	firstPart->moreno
+VFEP_NamerRoleCaptain.rulePack.rulesStrings[2]	firstPart->boca-suja
+VFEP_NamerRoleCaptain.rulePack.rulesStrings[3]	firstPart->duvidoso
+VFEP_NamerRoleCaptain.rulePack.rulesStrings[4]	firstPart->traiçoeiro
+VFEP_NamerRoleCaptain.rulePack.rulesStrings[5]	firstPart->sem escrúpulos
+VFEP_NamerRoleCaptain.rulePack.rulesStrings[6]	firstPart->ladino
+VFEP_NamerRoleCaptain.rulePack.rulesStrings[7]	firstPart->sedutor
+VFEP_NamerRoleCaptain.rulePack.rulesStrings[8]	firstPart->torto
+VFEP_NamerRoleCaptain.rulePack.rulesStrings[9]	firstPart->encardido
+VFEP_NamerRoleCaptain.rulePack.rulesStrings[10]	firstPart->parrudo
+VFEP_NamerRoleCaptain.rulePack.rulesStrings[11]	firstPart->abatido
+VFEP_NamerRoleCaptain.rulePack.rulesStrings[12]	firstPart->troncudo
+VFEP_NamerRoleCaptain.rulePack.rulesStrings[13]	firstPart->musculoso
+VFEP_NamerRoleCaptain.rulePack.rulesStrings[14]	secondPart(p=4)->bucaneiro
+VFEP_NamerRoleCaptain.rulePack.rulesStrings[15]	secondPart(p=4)->corsário
+VFEP_NamerRoleCaptain.rulePack.rulesStrings[16]	secondPart(p=4)->flibusteiro
+VFEP_NamerRoleCaptain.rulePack.rulesStrings[17]	secondPart(p=4)->pirata
+VFEP_NamerRoleCaptain.rulePack.rulesStrings[18]	secondPart(p=4)->andarilho
+VFEP_NamerRoleCaptain.rulePack.rulesStrings[19]	secondPart(p=4)->patife
+VFEP_NamerRoleCaptain.rulePack.rulesStrings[20]	secondPart(p=4)->contrabandista de bebida
+VFEP_NamerRoleCaptain.rulePack.rulesStrings[21]	secondPart(p=4)->contrabandista
+VFEP_NamerRoleCaptain.rulePack.rulesStrings[22]	secondPart(p=4)->saqueador
+VFEP_NamerRoleCaptain.rulePack.rulesStrings[23]	secondPart(p=4)->velhaco
+VFEP_NamerRoleCaptain.rulePack.rulesStrings[24]	secondPart(p=4)->gatuno
+VFEP_NamerRoleCaptain.rulePack.rulesStrings[25]	secondPart(p=4)->larápio
+## DefInjected/ScenarioDef/Scenario.xml
+VFEP_LowOrbitCrash.label	Queda da órbita baixa
+VFEP_LowOrbitCrash.description	Quando a nave entrou na órbita baixa, algo atingiu o casco com uma força tremenda. Erro de cálculo do núcleo de IA, acidente terrível ou ataque dirigido, você logo percebeu que não importava. Mandou a tripulação para as cápsulas de fuga, mas nem todos saíram do criptosono a tempo. A nave se partiu em vários pedaços enquanto despencava, e só restou apertar o botão de ejeção da cápsula de emergência. Talvez ainda dê para recuperar algo dos destroços.\n\nObservação: como você começa num pouso forçado, sem suprimentos além do que conseguir catar, este é um cenário difícil.
+VFEP_LowOrbitCrash.scenario.description	Quando a nave entrou na órbita baixa, algo atingiu o casco com uma força tremenda. Erro de cálculo do núcleo de IA, acidente terrível ou ataque dirigido, você logo percebeu que não importava. Mandou a tripulação para as cápsulas de fuga, mas nem todos saíram do criptosono a tempo. A nave se partiu em vários pedaços enquanto despencava, e só restou apertar o botão de ejeção da cápsula de emergência. Talvez ainda dê para recuperar algo dos destroços.\n\nObservação: como você começa num pouso forçado, sem suprimentos além do que conseguir catar, este é um cenário difícil.
+VFEP_LowOrbitCrash.scenario.name	Queda da órbita baixa
+VFEP_LowOrbitCrash.scenario.summary	Um grupo de piratas em pouso forçado no meio do nada. A experiência clássica do VFE - Pirates.
+## DefInjected/StatDef/Stats_Abilities.xml
+VFEP_PowerJumpRange.label	alcance do salto propulsado
+VFEP_PowerJumpRange.description	A distância máxima de um salto propulsado.
+VFEP_PowerJumpDetonationRadius.label	raio de detonação do salto propulsado
+VFEP_PowerJumpDetonationRadius.description	O raio da área de detonação.
+VFEP_FlightSpeed.label	velocidade do salto propulsado
+VFEP_FlightSpeed.description	A velocidade de um salto propulsado.
+VFEP_SiegeModeCooldown.label	recarga do modo de cerco
+VFEP_SiegeModeCooldown.description	Quanto tempo leva para poder ativar o modo de cerco de novo.
+VFEP_SiegeModeCooldown.formatString	{0} s
+## DefInjected/StorytellerDef/Storytellers.xml
+VFEP_Casper.label	Casper Amaldiçoado
+VFEP_Casper.description	Casper viaja pelo espaço conhecido há anos. É amaldiçoado, e o melhor jeito de se livrar de uma maldição é dividi-la com os outros. Quanto mais maldições você aceitar, mais ele recompensa.
+## DefInjected/ThingDef/Abilities.xml
+VFEP_Bullet_GrapplingHook.label	gancho de abordagem
+VFEP_ActiveDropPawn.label	pessoa em queda
+## DefInjected/ThingDef/Alcohol_Rum.xml
+VFEP_Rum.label	rum
+VFEP_Rum.description	Uma bebida muito alcoólica feita dos fluidos corporais reciclados de quem usa trajes de rum.\n\nUm jeito engenhoso não só de melhorar o moral, mas de deixar a tripulação operar mais tempo sem reabastecer comida nem descartar dejetos humanos. O rum é bem grosso, como um shake de proteína, e o álcool ajuda a disfarçar o gosto desagradável da tecnologia reaproveitada de dispensador de pasta nutritiva.
+## DefInjected/ThingDef/Apparel_Headgear.xml
+VFEP_WarcasketHelmet_Warcasket.label	elmo de caixão de guerra
+VFEP_WarcasketHelmet_Warcasket.description	Elmo básico de caixão de guerra, com proteção e peso de referência.\n\nUm caixão de guerra de 3ª geração, o primeiro a entrar em produção em massa. O projeto juntou um traje motorizado de astrominerador em escala maior com as primeiras interfaces de membros biônicos. Como os piratas têm um estoque farto de cobaias humanas "voluntárias", eles entraram em uso antes de a armadura motorizada sair da fase de protótipo. O cientista-chefe do projeto teria dito: "não se faz omelete sem quebrar umas normas de segurança".
+VFEP_WarcasketHelmet_Warcasket.shortDescription	Elmo básico de caixão de guerra, com proteção e peso de referência.
+VFEP_WarcasketHelmet_Marine.label	elmo de caixão de guerra de fuzileiro
+VFEP_WarcasketHelmet_Marine.description	Elmo avançado de caixão de guerra, com proteção melhor para um peso parecido.\n\nOs caixões de guerra de 4ª geração começaram a ser desenvolvidos quando a armadura motorizada passou a ser usada em operações militares antipirataria. A armadura de fuzileiro, mais avançada e ajustável, funcionava contra quem não tinha caixões de guerra, mas já estava sendo imitada: engenharia reversa das fontes de energia e das melhorias de blindagem, mais chapas bem mais grossas sustentadas por hidráulica mais forte.
+VFEP_WarcasketHelmet_Marine.shortDescription	Elmo avançado de caixão de guerra, com proteção melhor para um peso parecido.
+VFEP_WarcasketHelmet_Recon.label	elmo de caixão de guerra de reconhecimento
+VFEP_WarcasketHelmet_Recon.description	Elmo avançado de caixão de guerra, com proteção ambiental melhor e menos peso.\n\nOs caixões de guerra de 5ª geração vieram num intervalo bem menor entre gerações e são, em grande parte, pequenas especializações da anterior. O projeto Reconhecimento foi feito para avançar rápido atrás das linhas inimigas e eliminar pessoal importante, como médicos, armeiros, engenheiros e botânicos. Em geral levavam uma faca de caixão de guerra para eliminar guardas armados, e o lema era "ou se mexe, ou morre".
+VFEP_WarcasketHelmet_Recon.shortDescription	Elmo avançado de caixão de guerra, com proteção ambiental melhor e menos peso.
+VFEP_WarcasketHelmet_Cataphract.label	elmo de caixão de guerra catafrata
+VFEP_WarcasketHelmet_Cataphract.description	Elmo avançado de caixão de guerra, com proteção superior e mais peso.\n\nOs caixões de guerra de 5ª geração vieram num intervalo bem menor entre gerações e são, em grande parte, pequenas especializações da anterior. O projeto Catafrata foi feito para prender o máximo possível de recursos inimigos, atraindo o fogo e fazendo fogo de supressão. Os pilotos desses trajes eram especialmente destemidos e preferiam ir com metralhadoras giratórias de caixão de guerra, sempre soltando um "não tenho tempo para sangrar".
+VFEP_WarcasketHelmet_Cataphract.shortDescription	Elmo avançado de caixão de guerra, com proteção superior e mais peso.
+VFEP_WarcasketHelmet_Aerial.label	elmo de caixão de guerra aéreo
+VFEP_WarcasketHelmet_Aerial.description	Elmo especializado de caixão de guerra, com proteção superior para um peso parecido, desenho aerodinâmico e telemetria embarcada para calcular saltos.\n\nOs caixões de guerra de 7ª geração vieram depois de resultados decepcionantes em melhorar ainda mais o desempenho básico; o foco passou a ser criar projetos que, embora intercambiáveis, funcionam melhor como conjunto. Foram também os primeiros a usar plastaço, que aparecia com mais frequência nos saques. Cada peça tem uma função própria que combina com as da mesma série, fazendo deles uma classe à parte de unidades blindadas móveis.\n\nA série Aérea se baseia no projeto Fuzileiro com algumas melhorias em pontos-chave: chapas mais aerodinâmicas e propulsores nos ombros. O objetivo principal era levar o piloto para trás das linhas inimigas, ou bem no meio delas, para prender alvos prioritários, o que lhes rendeu o bordão "a morte vem de cima".
+VFEP_WarcasketHelmet_Aerial.shortDescription	Elmo especializado de caixão de guerra, com proteção superior para um peso parecido, desenho aerodinâmico e telemetria embarcada para calcular saltos.
+VFEP_WarcasketHelmet_Barrage.label	elmo de caixão de guerra de barragem
+VFEP_WarcasketHelmet_Barrage.description	Elmo especializado de caixão de guerra, com proteção sem igual e mais peso, telêmetros embarcados e cilindros pneumáticos.\n\nOs caixões de guerra de 7ª geração vieram depois de resultados decepcionantes em melhorar ainda mais o desempenho básico; o foco passou a ser criar projetos que, embora intercambiáveis, funcionam melhor como conjunto. Foram também os primeiros a usar plastaço, que aparecia com mais frequência nos saques. Cada peça tem uma função própria que combina com as da mesma série, fazendo deles uma classe à parte de unidades blindadas móveis.\n\nA série Barragem acrescenta muito à série Catafrata, com blindagem ainda mais pesada e estabilizadores de plataforma de armas "pegos emprestados por atacado" de naves de guerra. O objetivo era despejar o máximo de poder de fogo ignorando o fogo inimigo, e o bordão era "desvia dessa".
+VFEP_WarcasketHelmet_Barrage.shortDescription	Elmo especializado de caixão de guerra, com proteção sem igual e mais peso, telêmetros embarcados e cilindros pneumáticos.
+VFEP_WarcasketHelmet_Hazard.label	elmo de caixão de guerra de risco
+VFEP_WarcasketHelmet_Hazard.description	Elmo especializado de caixão de guerra, com proteção ambiental sem igual para um peso parecido, filtragem de ponta e amortecedores psíquicos.\n\nOs caixões de guerra de 7ª geração vieram depois de resultados decepcionantes em melhorar ainda mais o desempenho básico; o foco passou a ser criar projetos que, embora intercambiáveis, funcionam melhor como conjunto. Foram também os primeiros a usar plastaço, que aparecia com mais frequência nos saques. Cada peça tem uma função própria que combina com as da mesma série, fazendo deles uma classe à parte de unidades blindadas móveis.\n\nA série Risco foi uma das primeiras da 7ª geração e foi pensada para utilidade. O piloto anda tranquilo por um inferno em chamas e radiação excessiva, seja catando os restos de uma batalha, seja indo sobrecarregar o reator nuclear de uma nave. Ironicamente, o ditado favorito desses pilotos é "adoro o cheiro de napalm, tem cheiro de dinheiro".
+VFEP_WarcasketHelmet_Hazard.shortDescription	Elmo especializado de caixão de guerra, com proteção ambiental sem igual para um peso parecido, filtragem de ponta e amortecedores psíquicos.
+VFEP_WarcasketHelmet_Shock.label	elmo de caixão de guerra de choque
+VFEP_WarcasketHelmet_Shock.description	Elmo especializado de caixão de guerra, com proteção superior para um peso parecido, com sistemas de alerta e previsão que reduzem o tempo de reação.\n\nOs caixões de guerra de 7ª geração vieram depois de resultados decepcionantes em melhorar ainda mais o desempenho básico; o foco passou a ser criar projetos que, embora intercambiáveis, funcionam melhor como conjunto. Foram também os primeiros a usar plastaço, que aparecia com mais frequência nos saques. Cada peça tem uma função própria que combina com as da mesma série, fazendo deles uma classe à parte de unidades blindadas móveis.\n\nA série Choque difere da Aérea porque o objetivo não era saltar para a ação, mas praticamente ser lançada da órbita bem no meio de uma base inimiga. Em geral armados com uma espada larga de caixão de guerra, se destacam no corpo a corpo e ainda se aproveitam do fogo amigo do inimigo. O grito de guerra costuma ser "vocês estão todos presos aqui comigo".
+VFEP_WarcasketHelmet_Shock.shortDescription	Elmo especializado de caixão de guerra, com proteção superior para um peso parecido, com sistemas de alerta e previsão que reduzem o tempo de reação.

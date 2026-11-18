@@ -1,0 +1,175 @@
+## DefInjected/ResearchProjectDef/ResearchProjects_2_Electricity.xml
+VFE_IndustrialGenerators.label	geradores industriais
+VFE_IndustrialGenerators.description	Construa geradores industriais, que guardam bem mais combustível e produzem mais energia.
+VFE_IndustrialGenerators.generalRules.rulesStrings[0]	subject->a era da energia industrial
+VFE_IndustrialGenerators.generalRules.rulesStrings[1]	subject_story->trouxe soluções robustas para a demanda crescente de energia das indústrias nascentes
+VFE_IndustrialGenerators.generalRules.rulesStrings[2]	subject_story->desenvolveu geradores de eficiência e potência sem igual, movendo as máquinas do progresso
+VFE_IndustrialGenerators.generalRules.rulesStrings[3]	subject_story->superou os limites das fontes de energia anteriores, preparando uma era de expansão e invenção
+VFE_IndustrialGenerators.generalRules.rulesStrings[4]	subject_story->pôs durabilidade e confiabilidade em cada unidade, para que as rodas da indústria nunca parem
+VFE_IndustrialGenerators.generalRules.rulesStrings[5]	subject_gerund->alimentando a revolução industrial com geração de energia avançada
+VFE_AdvancedBatteries.label	bateria avançada
+VFE_AdvancedBatteries.description	Construa baterias de tecnologia espacial, que guardam com eficiência grandes quantidades de energia.
+VFE_AdvancedBatteries.generalRules.rulesStrings[0]	subject->os capacitores do amanhã
+VFE_AdvancedBatteries.generalRules.rulesStrings[1]	subject_story->abriu caminho no armazenamento de energia com baterias que guardam a promessa do amanhã
+VFE_AdvancedBatteries.generalRules.rulesStrings[2]	subject_story->criou armazenamento compacto e potente, usando tecnologia espacial para um salto de eficiência
+VFE_AdvancedBatteries.generalRules.rulesStrings[3]	subject_story->foi pioneiro em sistemas que protegem contra oscilações, guardando energia para as horas críticas
+VFE_AdvancedBatteries.generalRules.rulesStrings[4]	subject_story->mudou o jeito como as civilizações guardam energia, tornando a escassez coisa do passado
+VFE_AdvancedBatteries.generalRules.rulesStrings[5]	subject_gerund->guardando o pulso do progresso em baterias avançadas
+VFE_AdvancedPowerSources.label	fontes de energia avançadas
+VFE_AdvancedPowerSources.description	Construa geradores de energia verde de tecnologia espacial, como painéis solares e turbinas eólicas avançados.
+VFE_AdvancedPowerSources.generalRules.rulesStrings[0]	subject->a colheita dos elementos
+VFE_AdvancedPowerSources.generalRules.rulesStrings[1]	subject_story->domou o sol e o vento com eficiência inédita, por meio de painéis solares e turbinas avançados
+VFE_AdvancedPowerSources.generalRules.rulesStrings[2]	subject_story->levou a energia verde a novos patamares, unindo sustentabilidade e alto desempenho
+VFE_AdvancedPowerSources.generalRules.rulesStrings[3]	subject_story->iniciou uma revolução verde na produção de energia, reduzindo a dependência de recursos finitos
+VFE_AdvancedPowerSources.generalRules.rulesStrings[4]	subject_story->integrou tecnologias inteligentes para otimizar a captação e o uso de energia, até nos ambientes mais difíceis
+VFE_AdvancedPowerSources.generalRules.rulesStrings[5]	subject_gerund->liderando o caminho para um futuro sustentável com energia verde
+VFE_NuclearPower.label	energia nuclear
+VFE_NuclearPower.description	O método definitivo de geração de energia: a nuclear é tão suficiente quanto mortal.
+VFE_NuclearPower.generalRules.rulesStrings[0]	subject->a fronteira atômica
+VFE_NuclearPower.generalRules.rulesStrings[1]	subject_story->abriu o coração do átomo, liberando uma torrente de energia capaz de iluminar cidades e mover a indústria
+VFE_NuclearPower.generalRules.rulesStrings[2]	subject_story->equilibrou o potencial imenso com protocolos de segurança rigorosos, para que os riscos não ofuscassem a dádiva nuclear
+VFE_NuclearPower.generalRules.rulesStrings[3]	subject_story->provocou uma virada na geração de energia, em que o zumbido baixo do átomo sustenta a vida agitada das civilizações
+VFE_NuclearPower.generalRules.rulesStrings[4]	subject_story->conduziu uma maravilha da ciência e da engenharia, fazendo da energia nuclear a pedra angular de uma nova era de fartura
+VFE_NuclearPower.generalRules.rulesStrings[5]	subject_gerund->abraçando o núcleo do progresso com a energia nuclear
+VFE_TidalPower.label	energia maremotriz
+VFE_TidalPower.description	Construa geradores de maré sobre a água para produzir muita energia verde e sustentável.
+VFE_TidalPower.generalRules.rulesStrings[0]	subject->o ritmo dos mares
+VFE_TidalPower.generalRules.rulesStrings[1]	subject_story->aproveitou o movimento incessante dos oceanos, transformando as marés numa fonte de energia vasta e sem fim
+VFE_TidalPower.generalRules.rulesStrings[2]	subject_story->inovou com turbinas submersas que dançam com as correntes, gerando energia limpa em harmonia com a natureza
+VFE_TidalPower.generalRules.rulesStrings[3]	subject_story->superou os desafios da geração marinha, protegendo os ecossistemas enquanto usava sua força
+VFE_TidalPower.generalRules.rulesStrings[4]	subject_story->mostrou o potencial do maior recurso renovável do planeta, dando o exemplo na busca pela sustentabilidade
+VFE_TidalPower.generalRules.rulesStrings[5]	subject_gerund->sincronizando o coração da civilização com as marés
+## DefInjected/RoomRoleDef/RoomRoles.xml
+VPE_ReactorRoom.label	Sala do reator
+## DefInjected/ThingDef/Buildings_AdvancedPower.xml
+VFE_AdvancedWindTurbine.label	turbina eólica avançada
+VFE_AdvancedWindTurbine.description	Um gerador eólico avançado de tecnologia espacial. Precisa de um grande espaço livre na frente e atrás para o ar fluir bem.
+VFE_AdvancedSolarGenerator.label	gerador solar avançado
+VFE_AdvancedSolarGenerator.description	Este gerador solar de tecnologia espacial tira bem mais energia da luz do sol. Não funciona no escuro nem com luz artificial.
+VFE_AdvancedWatermillGenerator.label	gerador de roda d'água avançado
+VFE_AdvancedWatermillGenerator.description	Um prédio de tecnologia espacial que produz eletricidade a partir de um rio. A roda precisa ficar na água corrente. Rodas d'água muito próximas atrapalham umas às outras com a turbulência e geram menos.
+VPE_AdvancedGeothermalGenerator.label	gerador geotérmico avançado
+VPE_AdvancedGeothermalGenerator.description	Este gerador avançado de tecnologia espacial produz eletricidade a partir de gêiseres de vapor geotérmico. Precisa ser posto sobre um gêiser de vapor.
+## DefInjected/ThingDef/Buildings_Batteries.xml
+VFE_LargeBattery.label	bateria grande
+VFE_LargeBattery.description	Guarda muita eletricidade para usar depois. Baterias grandes carregadas explodem na chuva ou no fogo.
+VFE_SmallBattery.label	bateria pequena
+VFE_SmallBattery.description	Guarda um pouco de eletricidade para usar depois. Baterias carregadas explodem na chuva ou no fogo.
+VFE_AdvancedBattery.label	bateria avançada
+VFE_AdvancedBattery.description	Guarda eletricidade para usar depois. Graças aos avanços tecnológicos, é bem mais eficiente. Baterias avançadas carregadas são à prova d'água e não explodem na chuva.
+VFE_LargeAdvancedBattery.label	bateria avançada grande
+VFE_LargeAdvancedBattery.description	Guarda muita eletricidade para usar depois. Graças aos avanços tecnológicos, é bem mais eficiente. Baterias avançadas grandes carregadas são à prova d'água e não explodem na chuva.
+## DefInjected/ThingDef/Buildings_Nuclear.xml
+VPE_NuclearGenerator.label	reator nuclear
+VPE_NuclearGenerator.description	Um grande reator nuclear reaproveitado do núcleo de energia de uma nave. Consome urânio para produzir muita energia. Pode ser sobrecarregado, gerando ainda mais energia ao custo de radiação local.\n\nO reator superaquece rápido e precisa ser resfriado o tempo todo.\n\nNão pode ficar ao ar livre.
+## DefInjected/ThingDef/Buildings_Power.xml
+VFE_PortableWoodFiredGenerator.label	gerador portátil a lenha
+VFE_PortableWoodFiredGenerator.description	Produz um pouco de energia queimando lenha. Precisa ser abastecido à mão de tempos em tempos. É leve o bastante para ser carregado por aí.
+VFE_PortableChemfuelPoweredGenerator.label	gerador portátil a combustível químico
+VFE_PortableChemfuelPoweredGenerator.description	Produz um pouco de energia queimando combustível químico. Precisa ser reabastecido à mão de tempos em tempos. É leve o bastante para ser carregado por aí.
+VFE_IndustrialWoodFiredGenerator.label	gerador industrial a lenha
+VFE_IndustrialWoodFiredGenerator.description	Produz muita energia queimando lenha. Precisa ser abastecido à mão de tempos em tempos.
+VFE_IndustrialChemfuelPoweredGenerator.label	gerador industrial a combustível químico
+VFE_IndustrialChemfuelPoweredGenerator.description	Produz muita energia queimando combustível químico. Precisa ser reabastecido à mão de tempos em tempos.
+VFE_TidalGenerator.label	gerador de maré
+VFE_TidalGenerator.description	Produz eletricidade com o movimento de massas de água, sobretudo das marés. Precisa ser posto sobre a água.
+## DefInjected/ThingDef/Buildings_Special.xml
+VFE_SmallVanometricPowerCell.label	célula de energia vanométrica pequena
+VFE_SmallVanometricPowerCell.description	Gera uma quantidade bem pequena de energia grátis, para sempre, sem combustível. Esta tecnologia foi criada por arquotecs e está além até da maioria das sociedades de mundo brilhante. Ninguém sabe exatamente como funciona, mas os estudiosos acham que ela tira energia direto das flutuações da espuma quântica.
+VFE_LargeVanometricPowerCell.label	célula de energia vanométrica grande
+VFE_LargeVanometricPowerCell.description	Gera muita energia grátis, para sempre, sem combustível. Esta tecnologia foi criada por arquotecs e está além até da maioria das sociedades de mundo brilhante. Ninguém sabe exatamente como funciona, mas os estudiosos acham que ela tira energia direto das flutuações da espuma quântica.
+VPE_ArchotechViolenceGenerator.label	gerador de violência arquotecnológico
+VPE_ArchotechViolenceGenerator.description	Este aparelho capta a energia psíquica que sai do corpo dos humanoides em volta e a transforma direto em energia utilizável. Esta tecnologia foi criada por arquotecs e está além até da maioria das sociedades de mundo brilhante.
+## DefInjected/WeatherDef/Weathers.xml
+VPE_RadioactiveFog.label	névoa radioativa
+VPE_RadioactiveFog.description	O derretimento de um reator nuclear soltou uma nuvem de material radioativo. A névoa atrapalha ataques à distância até se dissipar.
+## Keyed/Misc_Gameplay.xml
+VPE_PipesNotConnected	Canos não ligados a gerador ou tanques
+VPE_PipeConnectedRateStored	Excedente/armazenado na rede: {0} ml / {1} ml-d
+VPE_LiquidTankStored	Gás armazenado
+VPE_LiquidTankEfficiency	Eficiência do tanque
+VPE_TankLeakage	Vazamento mínimo do selante
+VPE_NutrientNeeded	Gás necessário
+VPE_LiquidOutput	Gás produzido
+VPE_MustPlaceOnGasGeyser	Este prédio precisa ficar sobre um gêiser de gás helixiano
+VPE_PlugHole	Tapar buraco
+VPE_PlugHoleDesc	Tapa o buraco com terra. ATENÇÃO: isso destrói o gêiser ou o poço. Só faça se ele não servir mais ou se precisar do espaço.
+VPE_CancelPlugHole	Cancelar tapar buraco
+VPE_CancelPlugHoleDesc	Cancela a tarefa de tapar o buraco.
+VPE_MustPlaceAdjacentToPipe	Prédios a gás precisam ficar ao lado dos canos de gás, não em cima
+VPE_DeconstructGasPipes	Desmontar rede de gás
+VPE_DeconstructGasPipesDesc	Desmonta só os canos de gás e os canos de gás subterrâneos
+VPE_DisableGasPathCalculations	Desligar o cálculo de caminhos do gás helixiano (reduz travadas)
+Fluffy.GasNetwork.GasNetworkInspectString	Excedente de gás (armazenado) na rede: {0} ({1})
+Fluffy.GasNetwork.Stored	Gás armazenado: {0}/{1}
+Fluffy.GasNetwork.Production	Gás produzido: {0}
+Fluffy.GasNetwork.Consumption	Gás consumido: {0}
+Fluffy.GasNetwork.GasOff	Gás desligado.
+Fluffy.GasNetwork.NoNetwork	Não ligado à rede de gás.
+Fluffy.GasNetwork.ValveOpen	Válvula aberta.
+Fluffy.GasNetwork.ValveClosed	Válvula fechada.
+Fluffy.GasNetwork.CommandToggleGas.Label	Abrir/fechar gás
+Fluffy.GasNetwork.CommandToggleGas.Desc	Marca o fluxo de gás para ser aberto ou fechado. Um colono virá mexer na válvula em breve.
+Fluffy.GasNetwork.DesiredBuffer	Armazenamento de gás desejado: {0}/{1}
+Fluffy.GasNetwork.BufferOff	Armazenamento de gás desligado.
+Fluffy.GasNetwork.Settings.Wind.WindSpeedUnit	Unidade preferida de velocidade do vento
+Fluffy.GasNetwork.Settings.Wind.Category	Simulação de vento
+VPE_RadiationProduced	Atenção: o reator está produzindo radiação num raio de {0} metros
+VPE_TempInReactorRoom	Temperatura na sala do reator: {0} ºC
+VPE_TempInReactorRoomCritical	Atenção: temperatura na sala do reator: {0} ºC
+VPE_Meltdown	Atenção: derretimento por alta temperatura. Até ser consertado, o reator vai matar toda forma de vida num raio de
+VPE_MeltdownLetterLabel	Derretimento do reator
+VPE_MeltdownLetter	Houve um derretimento parcial do reator por causa da alta temperatura na sala! Até ser consertado, o reator vai ser extremamente nocivo à vida num raio grande.\n\nIgnorar isso pode muito bem ser o fim da sua colônia em poucas horas. Energia limpa, diziam.
+VPE_NoReactorRoom	A sala do reator precisa ser um espaço fechado e com telhado
+VPE_MustPlaceRoofed	Este prédio precisa ficar num lugar fechado e com telhado
+VPE_SoulsTime	Almas armazenadas por:
+VPE_Producing	Produzindo {0} W de eletricidade
+VPE_NotProducing	Nenhuma alma absorvida. Os Deuses-Máquina têm fome de almas humanas.
+VPE_ToggleViolenceGenerator	Ligar/desligar gerador
+VPE_ToggleViolenceGeneratorDesc	Alterna o gerador entre ligado e inativo
+VPE_GeneratorIsOff	O gerador de violência está desligado e inativo agora
+VPE_LightningTime	Energia de raio armazenada por:
+VPE_NotLightningProducing	A eletricidade dos raios acabou. Parece que vai ter de esperar a próxima tempestade.
+VPE_AGasPipe	um cano de gás
+VPE_GasExplosion	Uma falha em {0} causou uma explosão de gás.
+VPE_GasExplosionStartedFire	Uma falha em {0} causou uma explosão de gás que começou um incêndio.
+VPE_GasExplosionLostGas	Todos os {0} l-d de gás dos tanques ligados foram liberados numa explosão violenta.
+VPE_GasExplosionLWasLarge	Essa quantidade grande de gás causou uma explosão considerável.
+VPE_GasExplosionLWasHuge	Essa foi uma explosão gigantesca mesmo. Uau.
+VPE_LetterLabelGasExplosion	Cabum!
+VPE_PondHasFuel	Este poço de combustível químico ainda tem {0} unidades de combustível
+VPE_PondNoFuel	Este poço de combustível químico se esgotou
+VPE_MustPlaceOnChemfuelPond	A bomba de combustível químico precisa ser construída sobre um poço de combustível químico
+VPE_PumpProducing	A bomba vai produzir {0} unidades de combustível químico em {1}
+VPE_NeedsWater	Esta usina precisa ser construída sobre a água
+VPE_NeedsDistance	As usinas de maré precisam ficar a pelo menos 40 quadrados umas das outras
+VPE_GasUpdateNoticeLetterLabel	Atualização do mod Power
+VPE_GasUpdateNoticeLetterText	O mod Vanilla Furniture Expanded: Power recebeu uma atualização muito importante sobre a rede de gás helixiano.\n\nO código original foi feito por mim (Sarg Bjornson) e era bem desleixado, causando muitos bugs e comportamentos inconsistentes. Graças ao incrível Fluffy, todo o código da rede de gás foi reescrito e deve funcionar perfeitamente agora.\n\nOBSERVAÇÃO: como a maioria das classes que controlam a rede de gás mudou, você deve refazer qualquer componente da rede de gás num save existente. Dá para trocar os prédios sem custo entrando no modo de desenvolvedor e ligando o modo Deus. Depois é só desmontar a rede de gás atual (com todos os objetos a gás) e montá-la de novo, de graça.
+VPE_Reset	Restaurar
+VPE_NuclearPlantHeader	Usina nuclear
+VPE_NuclearPlantMultiplier	Multiplicador de geração da usina nuclear
+VPE_NuclearPlantMultiplierTooltip	A energia produzida por uma usina nuclear é multiplicada por este valor.
+VPE_NuclearPlantRadiationMultiplier	Multiplicador do raio de radiação
+VPE_NuclearPlantRadiationMultiplierTooltip	O raio da radiação produzida pela usina nuclear quando o combustível passa de 50% ou durante um derretimento é multiplicado por este valor.
+VPE_DisableNuclearMeltdowns	Desligar derretimentos nucleares
+VPE_DisableNuclearMeltdownsDesc	Ligado, as usinas nucleares nunca derretem, mesmo chegando à temperatura crítica.
+VPE_SolarHeader	Solar avançado
+VPE_AdvSolarOutputMultiplier	Multiplicador de geração solar avançada
+VPE_AdvSolarOutputMultiplierTooltip	A energia produzida por um gerador solar avançado é multiplicada por este valor.
+VPE_SoulHeader	Gerador de violência arquotecnológico
+VPE_SoulMultiplier	Horas de energia por cadáver consumido
+VPE_SoulMultiplierTooltip	Por padrão, cada cadáver consumido pelo reator gera 2 horas de energia. Isso é multiplicado por este fator.
+VPE_TidalHeader	Gerador de maré
+VPE_TidalMultiplier	Multiplicador de geração do gerador de maré
+VPE_TidalMultiplierTooltip	A energia produzida por um gerador de maré é multiplicada por este valor.
+VPE_TidalSeparation	Distância entre geradores de maré
+VPE_TidalSeparationTooltip	Por padrão os geradores de maré precisam de 40 quadrados entre si, mas dá para mudar aqui.
+VPE_WindmillHeader	Turbina eólica avançada
+VPE_AdvWindmillOutputMultiplier	Multiplicador de geração da turbina eólica avançada
+VPE_AdvWindmillOutputMultiplierTooltip	A energia produzida por uma turbina eólica avançada é multiplicada por este valor.
+VPE_WatermillHeader	Gerador de roda d'água avançado
+VPE_AdvWatermillOutputMultiplier	Multiplicador de geração da roda d'água avançada
+VPE_AdvWatermillOutputMultiplierTooltip	A energia produzida por um gerador de roda d'água avançado é multiplicada por este valor.
+VPE_AdvGeoHeader	Gerador geotérmico avançado
+VPE_AdvGeoOutputMultiplier	Multiplicador de geração do geotérmico avançado
+VPE_AdvGeoOutputMultiplierTooltip	A energia produzida por um gerador geotérmico avançado é multiplicada por este valor.

@@ -47,7 +47,7 @@ O mod `Mods/EcosDaQuedaDebug` (packageId `ecosdaqueda.debug`) tem um executor de
 powershell -ExecutionPolicy Bypass -File EcosDaQueda-Dev/scripts/run-test.ps1 -Script EcosDaQueda-Dev/tests/fase2.txt -Build
 ```
 
-- Use sempre `-Profile full` em jogo novo (o perfil lean está quebrado). Regressão inteira: `EcosDaQueda-Dev/scripts/regress.ps1`.
+- O perfil é sempre o `full` (o lean foi aposentado; `-Profile full` é o padrão). Regressão inteira: `EcosDaQueda-Dev/scripts/regress.ps1`.
 - `-Build` compila os 3 projetos C# antes. `-Profile full -Save <nome>` usa todos os mods e um save do usuário. `-Window` mostra a janela.
 - Roteiros em `EcosDaQueda-Dev/tests/*.txt`; relatórios em `EcosDaQueda-Dev/tests/out/`. Comandos: ver `EcosDaQueda-Dev/TESTES.md`.
 - O RimWorld precisa estar fechado. Ao criar um sistema novo, adicione comandos ao `EQDebug.cs`/`TestRunner.cs` e um roteiro de teste.

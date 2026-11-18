@@ -1,0 +1,241 @@
+## DefInjected/RecipeDef/Recipes_Food.xml
+VCE_Make_Kibble_Moss.label	fazer ração com musgo
+VCE_Make_Kibble_Moss.description	Faz ração animal juntando carne crua e musgo. É um pouco mais eficiente que usar feno.
+VCE_Make_Kibble_Moss.jobString	Fazendo ração com musgo.
+## DefInjected/RecipeDef/Recipes_Production.xml
+VCE_Make_ChemfuelFromCanola.label	fazer combustível químico de canola
+VCE_Make_ChemfuelFromCanola.description	Faz um lote de combustível químico extraindo biocombustível das flores de canola.
+VCE_Make_ChemfuelFromCanola.jobString	Refinando combustível químico de canola.
+## DefInjected/RecipeDef/Recipes_VegMilk.xml
+VCE_MilkFromRice.label	extrair leite de arroz
+VCE_MilkFromRice.description	Extrai leite vegetal do arroz. Serve em qualquer receita que peça leite.\n\nO arroz rende muito mal como leite, e se perde muita nutrição no processo.
+VCE_MilkFromRice.jobString	Extraindo leite de arroz.
+VCE_MilkFromAlmonds.label	extrair leite de amêndoas
+VCE_MilkFromAlmonds.description	Extrai leite vegetal das amêndoas. Serve em qualquer receita que peça leite.\n\nLeites vegetais costumam render mal, e se perde muita nutrição no processo.
+VCE_MilkFromAlmonds.jobString	Extraindo leite de amêndoas.
+VCE_MilkFromCoconuts.label	extrair leite de coco
+VCE_MilkFromCoconuts.description	Extrai leite vegetal dos cocos. Serve em qualquer receita que peça leite.\n\nLeites vegetais costumam render mal, e se perde muita nutrição no processo.
+VCE_MilkFromCoconuts.jobString	Extraindo leite de coco.
+VCE_MilkFromOats.label	extrair leite de aveia
+VCE_MilkFromOats.description	Extrai leite vegetal da aveia. Serve em qualquer receita que peça leite.\n\nLeites vegetais costumam render mal, e se perde muita nutrição no processo.
+VCE_MilkFromOats.jobString	Extraindo leite de aveia.
+## DefInjected/ResearchProjectDef/Research_Cooking.xml
+VCE_VegMilkExtraction.label	leite vegetal
+VCE_VegMilkExtraction.description	Permite aos colonos extrair leite de arroz, aveia, amêndoas, cocos e soja.
+## DefInjected/ThingCategoryDef/ThingCategories.xml
+VCE_Flowers.label	flores
+## DefInjected/ThingDef/Buildings_Cooking.xml
+VCE_VegMilkExtractor.label	extrator de leite vegetal
+VCE_VegMilkExtractor.description	Uma pequena estação com uma prensa e uma centrífuga decantadora industrial para separar o extrato vegetal da massa. A força G alta da centrífuga permite extrair leite vegetal de arroz, amêndoas, cocos, aveia e soja.
+## DefInjected/ThingDef/Items_Resource_Flowers.xml
+VCE_RawCanola.label	flores de canola
+VCE_RawCanola.description	Uma variedade de colza de flores amarelo-vivo, cultivada sobretudo pela semente rica em óleo.
+## DefInjected/ThingDef/Items_Resource_RawFruit.xml
+VCE_RawAvocado.label	abacates
+VCE_RawAvocado.description	Uma fruta verde ou quase preta, com um caroço grande no meio. O abacate tem textura cremosa e suave. Hipsters adoram.
+VCE_RawMelon.label	melões
+VCE_RawMelon.description	Uma fruta doce, comestível e carnuda, de bom tamanho. Os melões costumam ser cultivados em regiões quentes.
+VCE_RawPineapple.label	abacaxis
+VCE_RawPineapple.description	Uma fruta tropical doce, de casca dura e coroa de folhas espinhentas. Em inglês, o nome queria dizer "pinha", pela semelhança com uma pinha grande.
+VCE_RawCoconut.label	cocos
+VCE_RawCoconut.description	A fruta comestível do coqueiro. A polpa é rica em gordura e pode ser comida fresca, seca ou virar leite ou óleo de coco. O líquido de dentro, a água de coco, serve de bebida.
+VCE_RawAlmonds.label	amêndoas
+VCE_RawAlmonds.description	Uma drupa oval muitas vezes comida pura, crua ou torrada, mas que também entra em vários pratos. Muitos doces clássicos têm a amêndoa como ingrediente principal.
+VCE_Mangoes.label	mangas
+VCE_Mangoes.description	Uma fruta oval, de cores vivas em tons de vermelho e amarelo. O caroço é grande e achatado, e a polpa em volta é amarela a laranja, suculenta, de sabor doce e picante bem característico.\n\n<color=#E5E54C>Efeito no jogo:</color> mangas não podem ser congeladas, senão se estragam. O jogo não é esperto o bastante para perceber, então tire-as dos freezers.
+## DefInjected/ThingDef/Items_Resource_RawFruit_Vikings.xml
+VCE_RawBlueberries.label	mirtilos
+VCE_RawBlueberries.description	Uma fruta doce e comestível aclamada como "superalimento"; o mirtilo costuma ser comido fresco como sobremesa e vai em vários doces assados.
+## DefInjected/ThingDef/Items_Resource_RawPlant.xml
+VCE_RawCelery.label	salsão
+VCE_RawCelery.description	Um vegetal de talo comprido e fibroso que termina em folhas. As folhas têm sabor forte e são menos usadas, como tempero de sopas e ensopados ou erva seca. O salsão é básico em muitas sopas.
+VCE_RawLettuce.label	alface
+VCE_RawLettuce.description	Uma folha comida fresca, base das saladas verdes. A alface costuma ser rica em vitaminas K e A.
+VCE_RawRadish.label	rabanetes
+VCE_RawRadish.description	Uma raiz comestível muito fácil de cultivar e rápida de colher. Rabanetes são os favoritos de jardineiros iniciantes.
+VCE_RawBuckwheat.label	trigo-sarraceno
+VCE_RawBuckwheat.description	Um pseudocereal cultivado pelas sementes parecidas com grãos. As flores brancas nascem em cachos na ponta e, depois de polinizadas, viram sementes triangulares cobertas por uma casca dura marrom-escura ou cinza.
+VCE_RawPeanut.label	amendoins
+VCE_RawPeanut.description	Sementes alongadas com uma película fina. Parecido no gosto e na nutrição com nozes e amêndoas, mas tecnicamente uma leguminosa.
+VCE_RawSunflower.label	sementes de girassol
+VCE_RawSunflower.description	As sementes do girassol são mais comidas como petisco do que como refeição. Também enfeitam ou entram em várias receitas.
+VCE_RawOkra.label	quiabo
+VCE_RawOkra.description	Vagens verdes comestíveis, famosas pela baba quando cortadas. O quiabo é uma potência de nutrientes valiosos.
+VCE_RawGarlic.label	dentes de alho
+VCE_RawGarlic.description	Uma cultura muito antiga, plantada pelo bulbo que se forma na base das folhas. Muito apreciado na cozinha pelo sabor forte e característico.
+VCE_RawCarrot.label	cenouras
+VCE_RawCarrot.description	Uma raiz, em geral laranja, mas há variedades roxas, pretas, vermelhas, brancas e amarelas. Alimento versátil: picada e cozida, frita ou no vapor, em sopas e ensopados, e até em papinha de bebê e de bicho.
+VCE_RawBrusselsSprouts.label	couves-de-bruxelas
+VCE_RawBrusselsSprouts.description	Um tipo de repolho cultivado pelos brotos comestíveis. Em geral são comidos cozidos, e os brotinhos novos têm sabor mais delicado que os velhos.
+VCE_RawOlives.label	azeitonas
+VCE_RawOlives.description	Uma frutinha preta ou verde em forma de ovo, usada como comida ou para fazer azeite. Recém-colhidas, têm oleuropeína, que as deixa intragáveis. Precisam ser postas em salmoura ou fermentadas antes.
+VCE_RawSweetPotatoes.label	batatas-doces
+VCE_RawSweetPotatoes.description	Raízes tuberosas grandes, cheias de amido e de sabor doce (parecido com abóbora), usadas como legume. A batata-doce é parente distante da batata comum.
+VCE_RawCassava.label	mandiocas
+VCE_RawCassava.description	Uma planta tuberosa comestível também chamada de aipim ou macaxeira. Tem sabor suave, de castanha, e é comida em ensopados ou como acompanhamento. A raiz é versátil: vira farinha, pão, tapioca, goma de passar roupa e até bebida alcoólica.
+VCE_RawBeans.label	vagens
+VCE_RawBeans.description	Frutos novos e verdes de uma variedade de feijão comum. Podem ser cozidos no vapor, fervidos, salteados ou assados, e entram em sopas, ensopados e caçarolas. Também dá para fazer conserva, como pepino.
+VCE_RawBellPeppers.label	pimentões vermelhos
+VCE_RawBellPeppers.description	Também chamados de pimentas doces, os pimentões são tecnicamente solanáceas da família das capsicum, mas são a única pimenta com um gene recessivo que impede a produção de capsaicina no fruto, por isso não ardem.
+VCE_RawYellowBellPeppers.label	pimentões amarelos
+VCE_RawYellowBellPeppers.description	Também chamados de pimentas doces, os pimentões são tecnicamente solanáceas da família das capsicum, mas são a única pimenta com um gene recessivo que impede a produção de capsaicina no fruto, por isso não ardem.
+VCE_RawChickpeas.label	grão-de-bico
+VCE_RawChickpeas.description	Uma das primeiras leguminosas cultivadas. O grão-de-bico é rico em fibra e proteína e é boa fonte de ferro, fósforo e ácido fólico.
+VCE_RawTaro.label	raízes de inhame
+VCE_RawTaro.description	Uma raiz cheia de amido, de casca marrom e polpa branca salpicada de roxo. Cozida, tem gosto levemente doce e textura parecida com a da batata.
+VCE_RawWatercress.label	folhas de agrião
+VCE_RawWatercress.description	Uma hortaliça folhosa verde, rica em vitaminas e minerais, da mesma família da couve e do brócolis.
+VCE_RawLotus.label	sementes de lótus
+VCE_RawLotus.description	As sementes da planta de lótus. Cheias de nutrientes, são ótimas numa dieta saudável, com muita proteína, carboidrato e vitaminas.
+VCE_RawWaterChestnut.label	castanhas-d'água
+VCE_RawWaterChestnut.description	Bulbos pequenos e arredondados de polpa branca e crocante, que podem ser comidos levemente cozidos ou grelhados.
+VCE_RawCucumber.label	pepinos
+VCE_RawCucumber.description	Um vegetal comprido e fino, de casca verde dura e polpa úmida e translúcida. Pode ser comido cru.
+VCE_RawButternutSquash.label	abóboras-pescoço
+VCE_RawButternutSquash.description	Um vegetal de sabor doce, de castanha, parecido com o da abóbora. Tem casca amarelo-palha e polpa laranja carnuda, com as sementes na ponta da flor.
+## DefInjected/ThingDef/Items_Resource_RawPlant_Cooking.xml
+VCE_RawOats.label	aveia
+VCE_RawOats.description	O grão da planta de aveia. Tem muitos usos na comida; o mais comum é ser laminada ou moída em farelo, comido sobretudo como mingau, mas que também vai em vários assados. A aveia também serve para fazer leite vegetal.
+## DefInjected/ThingDef/Items_Resource_RawPlant_Tunneller.xml
+VCE_RawMoss.label	musgo de caverna
+VCE_RawMoss.description	Um musgo rico em nutrientes que alimenta animais de caverna, mas não humanos.
+## DefInjected/ThingDef/Plants_Cultivated_Farm.xml
+VCE_Celery.label	pé de salsão
+VCE_Celery.description	Um vegetal de talo comprido e fibroso que termina em folhas. As folhas têm sabor forte e são menos usadas, como tempero de sopas e ensopados ou erva seca. O salsão é básico em muitas sopas.\n\n<color=#E5E54C>Efeito no jogo:</color> o salsão demora muito para crescer (quase um ano inteiro!). Se ficar vivo esse tempo todo, rende mais que o milho.
+VCE_Pineapple.label	pé de abacaxi
+VCE_Pineapple.description	Uma fruta tropical doce, de casca dura e coroa de folhas espinhentas. Em inglês, o nome queria dizer "pinha", pela semelhança com uma pinha grande.\n\n<color=#E5E54C>Efeito no jogo:</color> o abacaxi demora muito para crescer, mas é muito nutritivo e ocupa menos espaço no estoque.
+VCE_Lettuce.label	pé de alface
+VCE_Lettuce.description	Uma folha comida fresca, base das saladas verdes. A alface costuma ser rica em vitaminas K e A.\n\n<color=#E5E54C>Efeito no jogo:</color> a alface pode ser comida crua como o morango, mas precisa crescer à sombra: ao ar livre, mas sob telhado. Não cresce dentro de casa.
+VCE_BrusselsSprout.label	pé de couve-de-bruxelas
+VCE_BrusselsSprout.description	Um tipo de repolho cultivado pelos brotos comestíveis. Em geral são comidos cozidos, e os brotinhos novos têm sabor mais delicado que os velhos.\n\n<color=#E5E54C>Efeito no jogo:</color> ao contrário de outras plantas, a couve-de-bruxelas adora neve e ganha um bom bônus de crescimento quando neva, DESDE QUE seja estação de cultivo (fora dela não cresce nem pode ser plantada). Não morre de frio.
+VCE_Cassava.label	pé de mandioca
+VCE_Cassava.description	Uma planta tuberosa comestível também chamada de aipim ou macaxeira. Tem sabor suave, de castanha, e é comida em ensopados ou como acompanhamento. A raiz é versátil: vira farinha, pão, tapioca, goma de passar roupa e até bebida alcoólica.\n\n<color=#E5E54C>Efeito no jogo:</color> a mandioca cresce melhor em clima tropical, quente e úmido, por isso ganha um bom bônus de crescimento com neblina.
+VCE_SweetPotato.label	pé de batata-doce
+VCE_SweetPotato.description	Uma planta de raízes tuberosas grandes, cheias de amido e de sabor doce (parecido com abóbora), usadas como legume. A batata-doce é parente distante da batata comum.\n\n<color=#E5E54C>Efeito no jogo:</color> a batata-doce prefere muito solo pedregoso e prospera nele; solo rico até a prejudica. Não tolera geada, cresce melhor a uma média de 24 °C e sofre penalidade abaixo de 20 ºC.
+VCE_Radish.label	pé de rabanete
+VCE_Radish.description	Uma raiz comestível muito fácil de cultivar e rápida de colher. Rabanetes são os favoritos de jardineiros iniciantes.\n\n<color=#E5E54C>Efeito no jogo:</color> este rabanete transgênico cresce muito rápido (menos de 2 dias). É uma boa cultura quando se precisa de pouca comida RÁPIDO, e o trabalho de plantar e colher passa a ser o que mais pesa.
+VCE_Buckwheat.label	pé de trigo-sarraceno
+VCE_Buckwheat.description	Um pseudocereal cultivado pelas sementes parecidas com grãos. As flores brancas nascem em cachos na ponta e, depois de polinizadas, viram sementes triangulares cobertas por uma casca dura marrom-escura ou cinza.\n\n<color=#E5E54C>Efeito no jogo:</color> o trigo-sarraceno resiste muito ao fogo, e esta variedade foi modificada para não pegar fogo de jeito nenhum.
+VCE_Peanut.label	pé de amendoim
+VCE_Peanut.description	Uma planta de sementes alongadas com uma película fina. Parecido no gosto e na nutrição com nozes e amêndoas, mas tecnicamente uma leguminosa.\n\n<color=#E5E54C>Efeito no jogo:</color> este amendoim transgênico é semeado jogando as sementes a esmo na zona de cultivo, por isso em 75% das vezes nascem pés sozinhos nos quadrados vizinhos, reduzindo o trabalho total de plantio. Útil!
+VCE_PeanutSecondary.label	pé de amendoim secundário
+VCE_PeanutSecondary.description	Uma planta de sementes alongadas com uma película fina. Parecido no gosto e na nutrição com nozes e amêndoas, mas tecnicamente uma leguminosa.\n\n<color=#E5E54C>Efeito no jogo:</color> este amendoim transgênico é semeado jogando as sementes a esmo na zona de cultivo, por isso em 75% das vezes nascem pés sozinhos nos quadrados vizinhos, reduzindo o trabalho total de plantio. Útil!
+VCE_Sunflower.label	girassol
+VCE_Sunflower.description	Uma planta grande cultivada pelo óleo e pelas sementes comestíveis. O nome vem do formato da flor, que lembra o sol.\n\n<color=#E5E54C>Efeito no jogo:</color> o girassol cresce 30% mais rápido nas regiões equatoriais. O tamanho da região equatorial depende da temperatura do planeta: abaixo de 15º no Normal, 35º no Quente, 65º no Muito quente e o planeta inteiro no Escaldante. Planetas abaixo do Normal são considerados sem equador.
+VCE_Okra.label	pé de quiabo
+VCE_Okra.description	Uma planta florida da família da malva, valorizada pelas vagens verdes comestíveis, famosas pela baba quando cortadas. O quiabo é uma potência de nutrientes valiosos.\n\n<color=#E5E54C>Efeito no jogo:</color> o quiabo é muito, MUITO resistente a dano. Sofre menos com falta prolongada de luz e regenera qualquer outro dano.
+VCE_Garlic.label	pé de alho
+VCE_Garlic.description	Uma planta de folhas compridas e chatas como capim, formando um talo que sai direto do bulbo, a parte usada como comida e remédio. O bulbo é formado por vários dentes cobertos por uma película fina.\n\n<color=#E5E54C>Efeito no jogo:</color> o alho rende pouquíssimo, mas cresce em quase qualquer terreno e demora uma eternidade para apodrecer, já que alho seco também serve para cozinhar.
+VCE_Carrot.label	pé de cenoura
+VCE_Carrot.description	Uma planta herbácea da família das apiáceas que produz uma raiz principal comestível. Acima da terra cresce uma roseta de folhas finamente recortadas; embaixo, a cenoura e as raízes.\n\n<color=#E5E54C>Efeito no jogo:</color> plantio consorciado: a cenoura cresce mais rápido se houver vagem plantada no mesmo mapa (até 30% mais rápido com 100 pés).
+VCE_Beans.label	pé de vagem
+VCE_Beans.description	Um arbusto herbáceo com longa história de cultivo. Diferente de tantos outros feijões, a vagem é colhida e comida com a casca, antes de os grãos amadurecerem, como a ervilha.\n\n<color=#E5E54C>Efeito no jogo:</color> plantio consorciado: a vagem cresce mais rápido se houver cenoura plantada no mesmo mapa (até 30% mais rápido com 100 pés).
+VCE_Chickpea.label	pé de grão-de-bico
+VCE_Chickpea.description	Uma das primeiras leguminosas cultivadas, muito plantada pelas sementes nutritivas, ricas em fibra e proteína e boa fonte de ferro, fósforo e ácido fólico.\n\n<color=#E5E54C>Efeito no jogo:</color> o grão-de-bico cresce rápido e rende bem, mas ocupa MUITO espaço no estoque (mods que aumentam pilhas podem anular isso, seu trapaceiro sujo, mas a decisão de bagunçar o equilíbrio do jogo é sua).
+VCE_BellPepper.label	pé de pimentão
+VCE_BellPepper.description	Também chamados de pimentas doces, os pimentões são tecnicamente solanáceas da família das capsicum, mas são a única pimenta com um gene recessivo que impede a produção de capsaicina no fruto, por isso não ardem.\n\n<color=#E5E54C>Efeito no jogo:</color> em média, 25% dos pimentões amadurecem amarelos e 75% vermelhos. Os amarelos são mais nutritivos. Plantando muitos, o rendimento médio aumenta.
+VCE_YellowBellPepper.label	pé de pimentão
+VCE_YellowBellPepper.description	Também chamados de pimentas doces, os pimentões são tecnicamente solanáceas da família das capsicum, mas são a única pimenta com um gene recessivo que impede a produção de capsaicina no fruto, por isso não ardem.\n\n<color=#E5E54C>Efeito no jogo:</color> em média, 25% dos pimentões amadurecem amarelos e 75% vermelhos. Os amarelos são mais nutritivos. Plantando muitos, o rendimento médio aumenta.
+VCE_Taro.label	pé de inhame
+VCE_Taro.description	Uma planta tropical cultivada sobretudo pelo bulbo comestível. O inhame é uma das poucas culturas que crescem alagadas, com a base sempre debaixo d'água, graças a espaços de ar no pecíolo que permitem trocas gasosas com o ar.\n\n<color=#E5E54C>Efeito no jogo:</color> só pode ser cultivado em zonas de cultivo aquático, que ignoram a fertilidade, mas demora muito para plantar e colher: na prática, troca trabalho dos colonos por cultivo num espaço que normalmente ficaria sem uso. O inhame é a planta aquática básica.
+VCE_Watercress.label	pé de agrião
+VCE_Watercress.description	O agrião é uma planta perene de crescimento rápido, uma das hortaliças folhosas mais antigas consumidas por humanos. Ele e muitos parentes se destacam pelo sabor picante.\n\n<color=#E5E54C>Efeito no jogo:</color> só pode ser cultivado em zonas de cultivo aquático, que ignoram a fertilidade, mas demora muito para plantar e colher: na prática, troca trabalho dos colonos por cultivo num espaço que normalmente ficaria sem uso. O agrião cresce mais rápido que o inhame, mas ocupa muito espaço e impede plantar nos quadrados vizinhos.
+VCE_Lotus.label	pé de lótus
+VCE_Lotus.description	Às vezes chamado de nenúfar, o lótus é adaptado às várzeas de rios lentos e deltas. Os rizomas têm textura crocante e sabor agridoce, e podem ser fritos, salteados ou recheados com carne ou frutas em conserva.\n\n<color=#E5E54C>Efeito no jogo:</color> só pode ser cultivado em zonas de cultivo aquático, que ignoram a fertilidade, mas demora muito para plantar e colher: na prática, troca trabalho dos colonos por cultivo num espaço que normalmente ficaria sem uso. O lótus demora muito para crescer.
+VCE_WaterChestnut.label	pé de castanha-d'água
+VCE_WaterChestnut.description	Um vegetal aquático que cresce em brejos, debaixo d'água, na lama. Tem folhas verdes tubulares, como talos, e bulbos pequenos e arredondados de polpa branca e crocante, comidos crus, levemente cozidos ou grelhados.\n\n<color=#E5E54C>Efeito no jogo:</color> só pode ser cultivado em zonas de cultivo aquático, que ignoram a fertilidade, mas demora muito para plantar e colher: na prática, troca trabalho dos colonos por cultivo num espaço que normalmente ficaria sem uso. A castanha-d'água cresce 30% mais rápido no calor (37-60 ºC).
+VCE_Melon.label	pé de melão
+VCE_Melon.description	Uma planta de fruta doce, comestível e carnuda, de bom tamanho. Os melões costumam ser cultivados em regiões quentes.\n\n<color=#E5E54C>Efeito no jogo:</color> só pode ser cultivado em zonas de cultivo de areia, que ignoram a fertilidade, mas demora muito para plantar e colher: na prática, troca trabalho dos colonos por cultivo num espaço que normalmente ficaria sem uso. O melão ocupa muito espaço e impede plantar nos quadrados vizinhos, mas a colheita nunca falha.
+VCE_Cucumber.label	pé de pepino
+VCE_Cucumber.description	Uma trepadeira rasteira de folhas grandes, triangulares e ásperas, gavinhas enroladas e flores amarelas. Dá um fruto comprido e fino, de casca verde dura e polpa úmida e translúcida. \n\n<color=#E5E54C>Efeito no jogo:</color> só pode ser cultivado em zonas de cultivo de areia, que ignoram a fertilidade, mas demora muito para plantar e colher: na prática, troca trabalho dos colonos por cultivo num espaço que normalmente ficaria sem uso. O pepino cresce bem rápido e rende pouco, mas em pouco tempo. Pode ser comido cru.
+VCE_ButternutSquash.label	pé de abóbora-pescoço
+VCE_ButternutSquash.description	Uma trepadeira que dá um vegetal de sabor doce, de castanha, parecido com o da abóbora. Tem casca amarelo-palha e polpa laranja carnuda, com as sementes na ponta da flor.\n\n<color=#E5E54C>Efeito no jogo:</color> só pode ser cultivado em zonas de cultivo de areia, que ignoram a fertilidade, mas demora muito para plantar e colher: na prática, troca trabalho dos colonos por cultivo num espaço que normalmente ficaria sem uso. A abóbora-pescoço demora muito para crescer.
+VCE_AloeVera.label	babosa
+VCE_AloeVera.description	Uma erva de folhas suculentas em roseta, cinza a verdes, às vezes com manchas brancas e espinhos rosados nas bordas. Delas sai um gel incolor usado em muitos produtos medicinais.\n\n<color=#E5E54C>Efeito no jogo:</color> só pode ser cultivado em zonas de cultivo de areia, que ignoram a fertilidade, mas demora muito para plantar e colher: na prática, troca trabalho dos colonos por cultivo num espaço que normalmente ficaria sem uso. A babosa é uma fonte de remédio herbal.
+## DefInjected/ThingDef/Plants_Cultivated_Farm_Cereals.xml
+VCE_Barley.label	pé de cevada
+VCE_Barley.description	Um cereal que vai em pães, bebidas, ensopados e outros pratos. Integral, a cevada dá fibra, vitaminas e minerais. Foi modificada geneticamente para virar farinha com um simples toque.\n\n<color=#E5E54C>Efeito no jogo:</color> a cevada é uma "cultura dupla": produz farinha e feno.
+VCE_Sorghum.label	pé de sorgo
+VCE_Sorghum.description	Um cereal resistente à seca, usado como comida, forragem, para bebidas alcoólicas e biocombustível. O grão não tem glúten, tem muito amido resistente e compostos fenólicos mais abundantes e variados que outros cereais.\n\n<color=#E5E54C>Efeito no jogo:</color> o talo do sorgo chega a 2,5 metros e cresce bem junto. Um campo de sorgo serve de cobertura bem eficaz.
+VCE_Rye.label	pé de centeio
+VCE_Rye.description	Uma planta que cresce bem em solos bem mais pobres que os exigidos pela maioria dos cereais, por isso é valiosa onde o solo tem areia ou turfa. Foi modificada geneticamente para virar farinha com um simples toque.\n\n<color=#E5E54C>Efeito no jogo:</color> só pode ser cultivado em zonas de cultivo de areia, que ignoram a fertilidade, mas demora muito para plantar e colher: na prática, troca trabalho dos colonos por cultivo num espaço que normalmente ficaria sem uso. O centeio precisa crescer longe de grandes corpos d'água (água a até 10 quadrados para o crescimento).
+VCE_Oats.label	pé de aveia
+VCE_Oats.description	A aveia, às vezes chamada de aveia comum, é um cereal cultivado pelo grão de mesmo nome. Tem muitos usos na gastronomia e também vira leite vegetal.\n\n<color=#E5E54C>Efeito no jogo:</color> a aveia rende pouco, mas é muito versátil: é uma "cultura dupla", que produz farinha e grãos de aveia, que podem ser usados como vegetal ou virar leite.
+## DefInjected/ThingDef/Plants_Cultivated_Farm_Vikings.xml
+VCE_Blueberry.label	pé de mirtilo
+VCE_Blueberry.description	Um arbusto apreciado pelas frutas doces e comestíveis. Aclamado como "superalimento", o mirtilo costuma ser comido fresco como sobremesa e vai em vários doces assados.\n\n<color=#E5E54C>Efeito no jogo:</color> o mirtilo é polinizado por abelhas: ganha bônus de crescimento se houver um apiário num raio de 6 quadrados. Para não travar o jogo, isso só é calculado uma vez, no plantio; apiários postos depois não fazem efeito. Sem apiário, funciona como um morangueiro mais lento.
+## DefInjected/ThingDef/Plants_Cultivated_Flowers.xml
+VCE_Canola.label	pé de canola
+VCE_Canola.description	Uma variedade de colza de flores amarelo-vivo, cultivada sobretudo pela semente rica em óleo.\n\n<color=#E5E54C>Efeito no jogo:</color> a canola não é comestível, mas vira combustível químico com muita eficiência numa refinaria.
+VCE_Lavender.label	lavanda
+VCE_Lavender.description	Uma planta perfumada de flores roxas, conhecida pelo aroma calmante e pela beleza.
+VCE_FragrantbloomRose.label	rosa perfumada
+VCE_FragrantbloomRose.description	Uma variedade única de rosa cultivada pelo perfume intenso e cativante, perfeita para fazer perfumes e outros produtos aromáticos.
+VCE_Hyacinth.label	jacinto
+VCE_Hyacinth.description	Uma flor vistosa e cheirosa, de perfume fresco e verde que dá profundidade a jardins e perfumes.
+VCE_Jasmine.label	jasmim
+VCE_Jasmine.description	Uma flor vistosa e cheirosa, de perfume fresco e verde que dá profundidade a jardins e perfumes.
+VCE_Lily.label	lírio
+VCE_Lily.description	Uma flor marcante, de perfume rico, doce e às vezes picante, que enche qualquer espaço de elegância.
+VCE_Orchid.label	orquídea
+VCE_Orchid.description	Uma flor delicada e exótica, de perfume doce e sutil que varia conforme a espécie, muito usada em perfumes sofisticados.
+VCE_Plumeria.label	jasmim-manga
+VCE_Plumeria.description	Uma flor tropical de perfume frutado, doce e cremoso, perfeita para um ambiente exuberante e acolhedor.
+VCE_Tulip.label	tulipa
+VCE_Tulip.description	Uma flor linda, de perfume suave, mais famosa pelas cores vivas que pelo cheiro.
+VCE_Vanilla.label	baunilha
+VCE_Vanilla.description	Flores delicadas, branco-creme, de perfume leve e doce. As flores são lindas, mas o que vale mesmo são as favas, de aroma quente e rico. Pusemos baunilha no seu Vanilla Expanded para você expandir a baunilha enquanto baunilha a sua expansão.
+VCE_Violet.label	violeta
+VCE_Violet.description	Uma flor de perfume suave, empoado e doce, muito usada para dar uma nota floral delicada aos perfumes.
+VCE_YlangYlang.label	ylang-ylang
+VCE_YlangYlang.description	Uma flor muito perfumada, doce e rica, valorizada em perfumes exóticos e sensuais.
+## DefInjected/ThingDef/Plants_Cultivated_Tree.xml
+VCE_TreeAvocado.label	abacateiro
+VCE_TreeAvocado.description	Uma árvore sempre-verde de folhas grossas e coriáceas, com flores brancas, marfim a amarelas. O fruto tem um caroço grande no meio e pode ser verde ou quase preto.\n\n<color=#E5E54C>Efeito no jogo:</color> o abacateiro é famoso por demorar muito para amadurecer e dar frutos. Se ficar vivo esse tempo todo, rende mais que as outras frutíferas. E, se instalar o mod de cafés e chás e juntar com o café de especiarias de abóbora, terá a experiência hipster dos sonhos no RimWorld!
+VCE_TreeOlive.label	oliveira
+VCE_TreeOlive.description	Uma árvore subtropical sempre-verde de folhas largas. As folhas, coriáceas e em forma de lança, são verde-escuras em cima e prateadas embaixo, em pares opostos no galho. A madeira resiste ao apodrecimento. Se a copa morre, muitas vezes um novo tronco brota das raízes.\n\n<color=#E5E54C>Efeito no jogo:</color> curiosamente, a oliveira prefere muito solo pedregoso e prospera nele; solo rico até a prejudica. Também vive muito, muito tempo, bem mais que outras frutíferas. Ao contrário de outros frutos de árvore, a azeitona não pode ser comida crua.
+VCE_CoconutPalm.label	coqueiro
+VCE_CoconutPalm.description	Uma palmeira muito cultivada nos trópicos pelo fruto comestível, o coco. Os coqueiros prosperam perto do mar, em áreas baixas, pouco acima da maré alta.\n\n<color=#E5E54C>Efeito no jogo:</color> todas as árvores frutíferas ocupam umas quatro vezes o espaço de uma plantação comum, demoram para crescer e dão frutas que podem ser comidas cruas. Não são destruídas na colheita, mas têm vida limitada e um dia precisam ser replantadas.\n\nCoqueiros só podem ser cultivados em zonas de cultivo de areia, que ignoram a fertilidade, mas demoram muito para plantar e colher: na prática, trocam trabalho dos colonos por cultivo num espaço que normalmente ficaria sem uso.\n\nOs coqueiros ganham bônus de crescimento se houver água do mar num raio de 6 quadrados. O coco pode ser comido como fruta ou virar leite.
+VCE_TreeAlmond.label	amendoeira
+VCE_TreeAlmond.description	Uma árvore caducifólia cultivada pelo fruto, a amêndoa. A amêndoa doce pode ser comida pura ou entrar em sobremesas e doces. As árvores ficam lindíssimas floridas, com flores perfumadas de cinco pétalas, rosa-claro a brancas.\n\n<color=#E5E54C>Efeito no jogo:</color> todas as árvores frutíferas ocupam umas quatro vezes o espaço de uma plantação comum, demoram para crescer e dão frutas que podem ser comidas cruas. Não são destruídas na colheita, mas têm vida limitada e um dia precisam ser replantadas.\n\nAs amendoeiras são lindas, mas precisam de água num raio de 6 quadrados para crescer direito. A amêndoa pode ser comida como fruta ou virar leite.
+VCE_TreeMango.label	mangueira
+VCE_TreeMango.description	Uma árvore tropical sempre-verde que dá frutos ovais de cores vivas em tons de vermelho e amarelo. O caroço é grande e achatado, e a polpa em volta é amarela a laranja, suculenta, de sabor doce e picante bem característico.\n\n<color=#E5E54C>Efeito no jogo:</color> todas as árvores frutíferas ocupam umas quatro vezes o espaço de uma plantação comum, demoram para crescer e dão frutas que podem ser comidas cruas. Não são destruídas na colheita, mas têm vida limitada e um dia precisam ser replantadas.\n\nA mangueira rende muito, mas as mangas não podem ser congeladas, senão se estragam. O jogo não é esperto o bastante para perceber, então tire-as dos freezers.
+## DefInjected/ThingDef/Plants_Cultivated_Tunneller.xml
+VCE_Moss.label	musgo de caverna
+VCE_Moss.description	Um musgo rico em nutrientes que alimenta animais de caverna, mas não humanos. Cresce no cascalho fúngico, mas só no escuro: qualquer luz, inclusive a luz sombria, o mata.
+VCE_Tinctshroom.label	cogumelo-tintura
+VCE_Tinctshroom.description	Um cogumelo transgênico que secreta uma tinta que muda sozinha. Dá para induzir a tinta a cores diferentes e usá-la para tingir roupas. Cresce no cascalho fúngico, mas só no escuro: qualquer luz, inclusive a luz sombria, o mata.
+VCE_Healshroom.label	cogumelo-cura
+VCE_Healshroom.description	Um cogumelo de crescimento lento que rende remédio herbal na colheita. Plantar e colher dão muito trabalho por causa da fragilidade. Cresce no cascalho fúngico, mas só no escuro: qualquer luz, inclusive a luz sombria, o mata.
+## DefInjected/WorkGiverDef/WorkGivers.xml
+VCE_HarvestAquatic.label	colher plantas aquáticas
+VCE_HarvestAquatic.gerund	colhendo aquáticas
+VCE_HarvestAquatic.verb	colher aquáticas
+VCE_SowAquatic.label	plantar plantas aquáticas
+VCE_SowAquatic.gerund	plantando aquáticas
+VCE_SowAquatic.verb	plantar aquáticas
+VCE_HarvestSandy.label	colher plantas de areia
+VCE_HarvestSandy.gerund	colhendo plantas de areia
+VCE_HarvestSandy.verb	colher plantas de areia
+VCE_SowSandy.label	plantar plantas de areia
+VCE_SowSandy.gerund	plantando plantas de areia
+VCE_SowSandy.verb	plantar plantas de areia
+VCE_HarvestFlowerGarden.label	colher flores
+VCE_HarvestFlowerGarden.gerund	colhendo flores
+VCE_HarvestFlowerGarden.verb	colher flores
+VCE_SowFlowerGarden.label	plantar flores
+VCE_SowFlowerGarden.gerund	plantando flores
+VCE_SowFlowerGarden.verb	plantar flores
+## DefInjected/WorkGiverDef/WorkGivers_Cooking.xml
+VCE_DoBillsVegMilkExtractor.label	extrair leites vegetais
+VCE_DoBillsVegMilkExtractor.gerund	extraindo leite vegetal em
+VCE_DoBillsVegMilkExtractor.verb	extrair leite vegetal
+## Keyed/Misc_Gameplay.xml
+VCE_AquaticGrowingZone	Zona de cultivo aquático
+VCE_AquaticGrowingZoneDesc	Cria uma zona onde os colonos vão tentar cultivar plantas aquáticas. Plantas aquáticas ignoram a fertilidade do terreno, mas demoram muito para plantar e colher.\n\nEssas zonas não podem ficar em água do mar (salgada).
+VCE_SandyGrowingZone	Zona de cultivo de areia
+VCE_SandyGrowingZoneDesc	Cria uma zona onde os colonos vão tentar cultivar plantas de terreno arenoso. Plantas de areia ignoram a fertilidade do terreno, mas demoram muito para plantar e colher.
+VCE_FlowerGardenGrowingZone	Zona de jardim de flores
+VCE_FlowerGardenGrowingZoneDesc	Cria uma zona onde os colonos vão tentar cultivar flores decorativas.
+VCE_CarrotsNearby	Cenouras plantadas por perto: {0}/100
+VCE_BeansNearby	Vagens plantadas por perto: {0}/100

@@ -1,0 +1,123 @@
+## DefInjected/AbilityDef/BRangedWarcasket.xml
+VWEB_WarbolterLongBurner.description	Dispara uma rajada de fogo de curto alcance, numa área curta mas larga.
+## DefInjected/FactionDef/Factions_Misc.xml
+VFEP_Junkers.messageDefendersAttacking	{0} de {1} estão atacando seu {2}.
+VFEP_Mercenaries.messageDefendersAttacking	{0} de {1} estão atacando seu {2}.
+VFEP_Mercenaries.pawnSingular	mercenário
+## DefInjected/FactionDef/Factions_Player.xml
+VFEP_PlayerPirate.leaderTitle	líder
+VFEP_PlayerPirate.messageDefendersAttacking	{0} de {1} estão atacando seu {2}.
+VFEP_PlayerPirate.pawnSingular	pirata
+VFEP_PlayerPirate.pawnsPlural	piratas
+## DefInjected/HediffDef/Hediffs_Global_Misc.xml
+VFEP_HypothermicSlowdown.label	lentidão hipotérmica
+VFEP_HypothermicSlowdown.stages.minor-0.label	leve
+VFEP_HypothermicSlowdown.stages.minor-1.label	leve
+VFEP_HypothermicSlowdown.stages.moderate.label	moderada
+VFEP_HypothermicSlowdown.stages.serious.label	sério
+VFEP_HypothermicSlowdown.stages.extreme.label	extrema
+VFEP_KillItself.stages.minor.label	leve
+## DefInjected/JobDef/Jobs_Misc.xml
+VFEP_EquipFromWeaponBox.reportString	equipando TargetA.
+## DefInjected/MemeDef/Memes_Misc.xml
+VFEP_PirateMeme.label	pirata
+VFEP_PirateMeme.symbolPacks.0.adjective	pirata
+## DefInjected/PawnKindDef/PawnKinds_Junkers.xml
+VFEP_Veteran.label	veterano
+VFEP_Veteran_Melee.label	veterano
+VFEP_Pyro.label	piro
+## DefInjected/PawnKindDef/PawnKinds_Mercenaries.xml
+VFEP_Major.label	grave
+## DefInjected/PawnKindDef/PawnKinds_PlayerPirate.xml
+VFEP_PirateColonist.label	pirata
+## DefInjected/PreceptDef/Precepts_Camaraderie.xml
+VFEP_Camaraderie_Respected.label	respeitados
+VFEP_Camaraderie_Exalted.label	exaltados
+## DefInjected/RaidStrategyDef/RaidStrategies_Gauntlet.xml
+VFEP_GauntletStrat.letterLabelFriendly	Aliados
+## DefInjected/RitualBehaviorDef/Ritual_Behaviors_SingingShanties.xml
+VFEP_SingingShantiesBehaviour.spectatorsLabel	Participantes
+## DefInjected/RitualOutcomeEffectDef/Ritual_Outcomes_SingingShanties.xml
+VFEP_SingingShantiesOutcome.comps.1.label	número de participantes
+VFEP_SingingShantiesOutcome.comps.2.label	imponência do cômodo
+VFEP_SingingShantiesOutcome.outcomeChances.0.label	Chata
+VFEP_SingingShantiesOutcome.outcomeChances.3.label	Incrível
+## DefInjected/ScenPartDef/Scenario.xml
+VFEP_PlayerPawnsArriveCrash.label	forma de chegada
+## DefInjected/ThingDef/Abilities.xml
+VFEP_GrapplingPawn.label	voo
+VFEP_PowerJumpPawn.label	voo
+## DefInjected/ThingDef/Alcohol_Rum.xml
+VFEP_Rum.ingestible.ingestCommandString	Beber {0}
+VFEP_Rum.ingestible.ingestReportString	Bebendo {0}.
+VFEP_Rum.tools.neck.label	gargalo
+## DefInjected/ThingDef/Apparel_Various.xml
+VFEP_WarcasketShoulders_Aerial.comps.CompApparelReloadable.chargeNoun	salto
+VFEP_WarcasketShoulders_Aerial.comps.CompApparelReloadable.cooldownGerund	em recarga
+VFEP_WarcasketShoulders_Barrage.comps.CompApparelReloadable.cooldownGerund	em recarga
+VFEP_Warcasket_Shock.comps.CompApparelReloadable.chargeNoun	salto
+VFEP_Warcasket_Shock.comps.CompApparelReloadable.cooldownGerund	em recarga
+VFEP_Warcasket_Controller.comps.CompApparelReloadable.cooldownGerund	em recarga
+VFEP_WarcasketShoulders_Controller.comps.CompApparelReloadable.cooldownGerund	em recarga
+VFEP_SpidermineProjectile.label	projétil
+## DefInjected/ThingDef/BRangedWarcasket.xml
+VWEB_Warbolter.comps.CompUnderBarrel.underBarrelLabel	usar o lança-chamas
+VWEB_Warbolter.tools.barrel.label	cano
+## DefInjected/ThingDef/Buildings_ShipChunks.xml
+VFEP_Filth_Fuel.label	poça de combustível químico
+VFEP_Filth_Fuel.description	Uma poça de combustível químico inflamável.
+## DefInjected/ThingDef/CRangedWarcasket.xml
+VFEP_WarcasketGun_Railgun.tools.barrel.label	cano
+## DefInjected/ThingDef/Etheral_Skyfallers.xml
+VFEP_SideDropPod.label	cápsula de queda (chegando)
+## DefInjected/ThingDef/LRangedWarcasket.xml
+VFEP_WarcasketGun_SalvagedLaserEradicator.tools.barrel.label	cano
+VWEP_Bullet_WarcasketSalvagedLaserEradicator.label	disparo laser instável
+VWEP_Bullet_WarcasketSalvagedLaserEradicator.description	Um feixe laser instável.
+VFEP_WarcasketGun_LaserBlaster.tools.barrel.label	cano
+## DefInjected/ThingDef/MeleeWarcasket.xml
+VFEP_WarcasketMeleeWeapon_CombatKnife.tools.point.label	ponta
+VFEP_WarcasketMeleeWeapon_CombatKnife.tools.edge.label	lâmina
+VFEP_WarcasketMeleeWeapon_Broadsword.tools.point.label	ponta
+VFEP_WarcasketMeleeWeapon_Broadsword.tools.edge.label	lâmina
+VFEP_WarcasketMeleeWeapon_GravityHammer.tools.head.label	cabeça
+VFEP_WarcasketMeleeWeapon_GravityHammer.tools.handle.label	cabo
+VFEP_WarcasketMeleeWeapon_PlasmaSword.tools.point.label	ponta
+VFEP_WarcasketMeleeWeapon_PlasmaSword.tools.blade.label	lâmina
+## DefInjected/ThingDef/Races_Mechanoid.xml
+VFEP_Mech_Wardrone.label	drone de guerra
+VFEP_Mech_Wardrone.tools.turret.label	torreta
+VFEP_Mech_Spidermine.label	mina-aranha
+VFEP_Mech_Spidermine.tools.frame.label	estrutura
+## DefInjected/ThingDef/RangedMechanoid.xml
+VFEPGun_MiniBlaster.tools.barrel.label	cano
+## DefInjected/ThingDef/RangedWarcasket.xml
+VFEP_WarcasketGun_Autorifle.tools.barrel.label	cano
+VFEP_WarcasketGun_UraniumSlugRifle.tools.barrel.label	cano
+VFEP_WarcasketGun_Slugthrower.tools.barrel.label	cano
+VFEP_WarcasketGun_Minigun.tools.barrel.label	cano
+VFEP_WarcasketGun_GrenadeLauncher.tools.barrel.label	cano
+VFEP_WarcasketGun_HeavyFlamer.tools.barrel.label	cano
+VFEP_WarcasketGun_ChargeLance.tools.barrel.label	cano
+VFEP_WarcasketGun_HandheldCannon.tools.barrel.label	cano
+VFEP_WarcasketGun_ChargeBlaster.tools.barrel.label	cano
+## DefInjected/ThoughtDef/Thoughts_Memory_Drinking.xml
+VFEP_RumAsIngredient.stages.Drank_rumbased_cocktail.description	Uma delícia.
+## DefInjected/ToolCapacityDef/Damages.xml
+VFEP_GravityHammerAttack.label	golpe de martelo gravitacional
+## DefInjected/VEF.Abilities.AbilityDef/Abilities.xml
+VFEP_GrapplingHook.label	gancho de abordagem
+VFEP_GrapplingHook.jobReportString	Usando habilidade: {0}
+VFEP_GrapplingHook.verbProperties.label	gancho de abordagem
+VFEP_SiegeMode.jobReportString	Usando habilidade: {0}
+VFEP_PowerJump.jobReportString	Usando habilidade: {0}
+VFEP_BlastOff.jobReportString	Usando habilidade: {0}
+## DefInjected/VEF.Planet.HireableFactionDef/Hireables.xml
+Pirate.label	piratas
+VFEP_Junkers.label	sucateiros
+VFEP_Junkers.description	Uma confederação frouxa de gangues piratas que combinaram brigar sobretudo com quem é de fora, em vez de umas com as outras.\nPiratas não plantam, não constroem e raramente negociam. Movidos por uma cultura de sangue e honra que valoriza a força pessoal e a crueldade, enriquecem atacando e roubando vizinhos mais produtivos.\nOs sucateiros usam a tecnologia dos caixões de guerra e se lacram em tumbas de metal onde atacam, roubam, saqueiam e, inevitavelmente, morrem. Raramente usam armas corpo a corpo e preferem manter distância do inimigo para aproveitar ao máximo o armamento poderoso dos caixões de guerra.
+VFEP_Mercenaries.description	Uma organização paramilitar autorizada e comandada por figurões da política e megacorporações.\nMercenários não plantam, não constroem e raramente negociam. Movidos por uma cultura de sangue e honra que valoriza a força pessoal e a crueldade, enriquecem atacando e roubando vizinhos mais produtivos.\nOs mercenários usam armas e armaduras de tecnologia espacial para eliminar os alvos dos patrões corporativos. Ao contrário de outras facções piratas, dá para conversar e fazer amizade com eles, mas raramente têm muito a oferecer em comércio e pesquisa.
+## Keyed/Misc_Gameplay.xml
+VFEM.MissingMaterials	Materiais faltando: {0}
+## Keyed/UI.xml
+VFEP.Cancel	Cancelar

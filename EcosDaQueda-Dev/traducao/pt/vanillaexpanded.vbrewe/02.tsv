@@ -1,0 +1,231 @@
+## DefInjected/ResearchProjectDef/Research.xml
+VBE_LiquorBrewing.generalRules.rulesStrings[5]	subject_gerund->criando elixires que encantam os sentidos, unindo tradição e inovação na bancada do bar
+## DefInjected/ResearchTabDef/ResearchTabs.xml
+VCE_Brewing.label	Bebidas expandidas
+## DefInjected/ThingCategoryDef/ThingCategories.xml
+VBE_Drinks.label	bebidas
+VBE_DrinksSimpleSpirits.label	destilados simples
+VBE_DrinksLuxurySpirits.label	destilados de luxo
+VBE_DrinksNonAlcoholic.label	bebidas sem álcool
+VBE_Musts.label	mostos e xaropes
+## DefInjected/ThingDef/Alcohol_Ambrandy.xml
+VBE_Ambrandy.label	ambrandy
+VBE_Ambrandy.description	Também chamado de "sol líquido", o ambrandy é um licor fermentado duas vezes e destilado, do mais alto calibre. Aristocratas de mundos brilhantes chegam a mandar milícias particulares inteiras para escoltar uma única garrafa.\n\nAlém de ter um sabor de levar às lágrimas, estudos mostram que, bem envelhecido, este licor estimula a região do cérebro ligada à criatividade e à expressão artística e acalma a que controla as emoções.\n\nAté a garrafa é uma beleza: com o menor raio de luz, aparecem flocos dourados dançando no líquido, como brasas subindo de uma fogueira. Dá para usar o ambrandy em coquetéis, mas os poucos que tiveram o privilégio de bebê-lo dizem que é melhor puro.
+## DefInjected/ThingDef/Alcohol_Gin.xml
+VBE_Gin.label	gim
+VBE_Gin.description	Um destilado suave e incolor, de aroma que lembra pinheiro e notas frutadas sutis. Tem fama de bebida leve e divertida, e de causar a chamada "bebedeira de gim", em que a pessoa sente mais empatia e compreensão.
+VBE_Gin.tools.neck.label	gargalo
+## DefInjected/ThingDef/Alcohol_Tequila.xml
+VBE_Tequila.label	tequila
+VBE_Tequila.description	Um licor fermentado da seiva do agave, favorito de bandoleiros desordeiros e vaqueiros de muffalo. Tem um petisco proteico no fundo da garrafa que dizem dar sorte. Quem bebe se sai bem em combates longos.
+VBE_Tequila.tools.neck.label	gargalo
+## DefInjected/ThingDef/Alcohol_Vodka.xml
+VBE_Vodka.label	vodca
+VBE_Vodka.description	Um álcool transparente e quase sem sabor, feito de batata fermentada. Dá para beber pura, mas é famosa por ser ótima para misturar e por dar uma coragem tola a quem bebe.
+VBE_Vodka.tools.neck.label	gargalo
+## DefInjected/ThingDef/Alcohol_Whiskey.xml
+VBE_Whiskey.label	uísque
+VBE_Whiskey.description	Um licor forte destilado de grãos fermentados. Os sabores do barril de envelhecimento impregnam este destilado mais que os outros, com um gosto amadeirado, quase defumado, bem marcado. O uísque simples é o estereótipo do trabalhador braçal e do pau para toda obra, figuras comuns nos mundos a vapor da galáxia.
+VBE_Whiskey.tools.neck.label	gargalo
+VBE_DoubleWhiskey.label	uísque envelhecido duas vezes
+VBE_DoubleWhiskey.description	O resultado de envelhecer o uísque mais uma vez num segundo barril, novo ou pouco usado. Os sabores ficam mais fortes, e a queimação na garganta, bem menor. O envelhecimento mais longo do uísque fino costuma passar uma imagem de mercantilismo e classe.
+VBE_DoubleWhiskey.tools.neck.label	gargalo
+## DefInjected/ThingDef/Buildings_Production.xml
+VBE_Bar.label	bar
+VBE_Bar.description	Um balcão um tanto enfeitado, cheio de recipientes e aparelhos para fazer bebidas variadas. Uma geladeira, torneiras, mangueiras e gaseificadores deixam quem estiver atrás do balcão preparar bem mais rápido que numa cervejaria rudimentar.
+## DefInjected/ThingDef/Drinks_Coffees.xml
+VBE_HotCoffee.label	café
+VBE_HotCoffee.description	Uma bebida quente e amarga, em geral acompanhada de leite e açúcar. Favorita de estudantes e trabalhadores de escritório pela galáxia, pela alta cafeína e pelo aroma agradável.
+VBE_IceCoffee.label	café gelado
+VBE_IceCoffee.description	Um café gelado. Muita gente prefere café gelado em climas quentes, e dizem que gelar suaviza o amargor e realça notas de castanha. Como o quente, é onipresente entre estudantes e profissionais pela galáxia.
+## DefInjected/ThingDef/Drinks_EnergyDrink.xml
+VBE_EnergyDrink.label	energético
+VBE_EnergyDrink.description	Uma bebida azeda e gasosa com um toque final amargo. Açúcar com cafeína dá um pique de energia na hora, mas uma queda depois. Retrogosto marcante de radiação.
+## DefInjected/ThingDef/Drinks_Juice.xml
+VBE_Juice.label	suco
+VBE_Juice.description	Fruta espremida, ácida e saborosa, de uma fruta só ou de várias, o chamado suco misto. Muitas bebidas usam suco como base. Não é mais nutritivo que a fruta inteira, mas é bem mais fácil de guardar e transportar.
+## DefInjected/ThingDef/Drinks_Soda.xml
+VBE_Soda.label	refrigerante
+VBE_Soda.description	Uma bebida muito doce e meio cítrica, melhor gelada. Não é exatamente nutritiva, mas a dose de açúcar é bem-vinda e as bolhinhas refrescam bastante.
+VBE_Soda.tools.neck.label	gargalo
+## DefInjected/ThingDef/Drinks_Teas.xml
+VBE_Tea.label	chá
+VBE_Tea.description	Uma bebida agradável e aromática, feita deixando um saquinho de folhas de chá em água fervente. O sabor vai do cítrico ao amargo e ao picante. O chá é uma das bebidas favoritas da humanidade desde a antiguidade, e acredita-se que tenha muitas propriedades curativas naturais.
+## DefInjected/ThingDef/Item_Processors.xml
+VBE_SodaFountain.label	máquina de refrigerante
+VBE_SodaFountain.description	Uma unidade completa de fabricação de refrigerante. O xarope é bem misturado com água, gaseificado e bem gelado antes de ir para garrafas esterilizadas.
+VBE_AmbrandyDistillery.label	destilaria de ambrandy
+VBE_AmbrandyDistillery.description	Uma destilaria dourada, de artesania delicadíssima, feita para envelhecer o mosto de ambrosia até ficar bebível.
+VBE_WhiskeyCask.label	tonel de uísque
+VBE_WhiskeyCask.description	Um barril enorme para envelhecer muito uísque de uma vez. O barril absorve parte do líquido durante a fermentação e passa sabores amadeirados à mistura. Luz do sol (ou luz acima de 50%) batendo no barril pode atrasar a fermentação ou até estragar o lote inteiro.
+VBE_TequilaBarrel.label	barril de tequila
+VBE_TequilaBarrel.description	Um pequeno alambique com fermentador, perfeito para ficar atrás do balcão de um saloon quente, mas que não se dá bem na chuva.
+VBE_VodkaDrum.label	tambor de vodca
+VBE_VodkaDrum.description	Um recipiente barato de guardar água, adaptado para ficar hermético e fermentar por pouco tempo.
+VBE_GinStill.label	alambique de gim
+VBE_GinStill.description	Um destilador industrial todo de metal, feito para purificar e fermentar gim até ficar bebível. O corpo metálico permite envelhecer em várias temperaturas e condições.
+## DefInjected/ThingDef/Items_Cider.xml
+VBE_UnfermentedCider.label	sidra não fermentada
+VBE_UnfermentedCider.description	Sidra não fermentada com fermento numa garrafa hermética. Deixada para desenvolver as bactérias certas, vira uma bebida alcoólica fraca.
+VBE_Cider.label	sidra
+VBE_Cider.description	Uma bebida quase sem álcool, feita para refrescar, frutada. Por mais que se tente, não dá para ficar bêbado só de sidra, por isso é popular entre quem já teve vício. Muitos a elogiam pelas supostas propriedades antioxidantes.
+VBE_Cider.tools.neck.label	gargalo
+## DefInjected/ThingDef/Items_Cocktails.xml
+VBE_SimpleCocktail.label	coquetel simples
+VBE_SimpleCocktail.description	Um coquetel simples, misturado rápido com dois ingredientes.
+VBE_FineCocktail.label	coquetel bom
+VBE_FineCocktail.description	Um coquetel bom e elaborado, misturado com precisão com vários ingredientes.
+VBE_LavishCocktail.label	coquetel luxuoso
+VBE_LavishCocktail.description	Uma obra-prima da coquetelaria: misturado com muitos ingredientes, gelado à perfeição e batido com capricho antes de servir.
+VBE_GourmetCocktail.label	coquetel gourmet
+VBE_GourmetCocktail.description	Um verdadeiro milagre da mixologia. Tudo, da temperatura do copo ao instrumento de mexer e à guarnição, foi calculado com precisão para o máximo de sabor e corpo.
+## DefInjected/ThingDef/Items_Condiments_Drugs.xml
+VBE_LuciferiumPowder.label	pó de lucifério
+VBE_LuciferiumPowder.description	Um pó finíssimo feito de lucifério. Costuma ir na borda dos copos nos bares frequentados pelos ricos e poderosos. Dá uma versão bem diluída da droga, sem risco de vício.
+VBE_WakeUpPowder.label	pó de despertar
+VBE_WakeUpPowder.description	O despertar moído em pó, surpreendentemente doce, às vezes usado no lugar do açúcar em sobremesas ou dissolvido no expresso da manhã. Dá uma versão bem diluída da droga, sem risco de vício.
+VBE_GoJuiceStock.label	caldo de suco-turbo
+VBE_GoJuiceStock.description	Um cubo gelatinoso de suco-turbo que pode ser digerido em vez de injetado. Vai em qualquer refeição, mas costuma ser derretido em sopas ou usado para engrossar coquetéis. Dá uma versão bem diluída da droga, sem risco de vício.
+## DefInjected/ThingDef/Items_Musts.xml
+VBE_SodaSyrup.label	xarope de refrigerante
+VBE_SodaSyrup.description	Uma mistura grossa e enjoativa de doce, feita fervendo ácido cítrico com açúcares naturais, em geral de cana ou xarope de milho. Precisa ser cortada com água e gaseificada por um tempo num ambiente fechado antes de beber.
+VBE_AmbrandyMush.label	polpa de ambrosia
+VBE_AmbrandyMush.description	Ambrosia fatiada e prensada, que pode ser deixada para virar mosto e depois destilada num licor finíssimo.
+VBE_AmbrandyMust.label	mosto de ambrandy
+VBE_AmbrandyMust.description	Ambrosia bem madura, liquefeita num suco grosso e deixada criar as bactérias da fermentação. Pronta para ser destilada até ficar bebível.
+VBE_WhiskeyMash.label	mosto de uísque
+VBE_WhiskeyMash.description	Uma mistura com amido, quase toda líquida, cheia de pedaços de polpa. Pronta para envelhecer.
+VBE_TequilaMust.label	mosto de tequila
+VBE_TequilaMust.description	Uma mistura rala de seiva de agave espremida ou figo-da-índia com fermento de carne de inseto, pronta para ser cortada e fermentada num barril.
+VBE_VodkaMash.label	mosto de vodca
+VBE_VodkaMash.description	Um mosto grosso e cheio de amido de batata crua com fermento, pronto para fermentar.
+VBE_GinMush.label	mosto de gim
+VBE_GinMush.description	Uma mistura clara, mas turva, de frutinhas espremidas e grãos variados, pronta para fermentar.
+## DefInjected/ThingDef/Items_Resource_RawPlant.xml
+VBE_RawCoffee.label	grãos de café
+VBE_RawCoffee.description	Os caroços das frutinhas do cafeeiro, os famosos "grãos de café". Torrados, soltam um sabor encorpado e amargo, além da cafeína natural.
+VBE_RawTea.label	folhas de chá
+VBE_RawTea.description	As folhas da planta do chá. Fervidas, viram várias bebidas terrosas e calmantes.
+VBE_RawTobacco.label	folhas de tabaco
+VBE_RawTobacco.description	As folhas da planta do tabaco. Secam fácil e depois podem ser enroladas e fumadas, dando um leve efeito estimulante.
+## DefInjected/ThingDef/Items_Smokes.xml
+VBE_Cigarettes.label	cigarros
+VBE_Cigarettes.description	Um tubinho de papel enrolado, recheado sem apertar com folhas de tabaco. Dá uma euforia breve e estímulo mental, e vicia muito. O cheiro forte costuma desagradar no começo, mas fica bem mais prazeroso conforme o vício cresce. Pode ser feito sem equipamento, num ponto de fabricação.
+VBE_Cigarettes.ingestible.ingestCommandString	Fumar {0}
+VBE_Cigarettes.ingestible.ingestReportString	Fumando {0}.
+VBE_Cigarettes.ingestible.ingestReportStringEat	Consumindo {0}.
+VBE_Cigars.label	charutos
+VBE_Cigars.description	Uma folha grossa de tabaco seca recheada até a boca com mais folhas de tabaco, com um anel dourado em volta. O charuto tem fama histórica de chique e em geral só cabe no bolso de quem anda com a elite dos mundos brilhantes. Muitas vezes leva aroma cítrico ou de baunilha para suavizar o gosto e o cheiro acre.
+VBE_Cigars.ingestible.ingestCommandString	Fumar {0}
+VBE_Cigars.ingestible.ingestReportString	Fumando {0}.
+VBE_Cigars.ingestible.ingestReportStringEat	Consumindo {0}.
+## DefInjected/ThingDef/Plants_Cultivated_Farm.xml
+VBE_Plant_Coffee.label	cafeeiro
+VBE_Plant_Coffee.description	Um arbusto baixo de origem tropical, salpicado de frutinhas avermelhadas quando crescido. Os caroços dessas frutinhas são os famosos "grãos de café", que torrados soltam um sabor encorpado e amargo, além da cafeína natural. Esta espécie foi selecionada para amadurecer bem mais rápido que a antiga.
+VBE_Plant_Tea.label	pé de chá
+VBE_Plant_Tea.description	Um arbusto muito folhoso e fácil de cultivar. Desde os primórdios da humanidade, descobriu-se que suas folhas fervidas viram vários chás terrosos e calmantes. Esta espécie foi selecionada para amadurecer bem mais rápido que a antiga.
+VBE_Plant_Tobacco.label	pé de tabaco
+VBE_Plant_Tobacco.description	Uma planta baixa de folhas largas que prospera em clima quente. As folhas secam fácil e depois podem ser enroladas e fumadas, dando um leve efeito estimulante.
+## DefInjected/ThoughtDef/Drinks_Coffees.xml
+VBE_HotCoffeeHigh.stages.Drank_hot_coffee.label	Tomou café quente
+VBE_HotCoffeeHigh.stages.Drank_hot_coffee.description	Esse café caiu bem.
+VBE_IcedCoffeeHigh.stages.Drank_iced_coffee.label	Tomou café gelado
+VBE_IcedCoffeeHigh.stages.Drank_iced_coffee.description	Esse café caiu bem.
+VBE_CaffeineWithdrawal.stages.caffeine_withdrawal.label	abstinência de cafeína
+VBE_CaffeineWithdrawal.stages.caffeine_withdrawal.description	Estou tão cansado. Tudo irrita, minhas mãos tremem e minha cabeça lateja.
+## DefInjected/ThoughtDef/Drinks_EnergyDrink.xml
+VBE_EnergyDrinkHigh.stages.Drank_energy_drink.label	Tomou energético
+VBE_EnergyDrinkHigh.stages.Drank_energy_drink.description	Parece que me deram asas!
+## DefInjected/ThoughtDef/Items_Smokes.xml
+VBE_TobaccoHigh.stages.Smoked_cigarette.label	Fumou cigarro
+VBE_TobaccoHigh.stages.Smoked_cigarette.description	Esse cigarro era tudo de que eu precisava.
+VBE_DeluxeTobaccoHigh.stages.Smoked_cigar.label	Fumou charuto
+VBE_DeluxeTobaccoHigh.stages.Smoked_cigar.description	Fumar charuto me faz sentir que venci na vida.
+VBE_TobaccoWithdrawal.stages.tobacco_withdrawal.label	abstinência de tabaco
+VBE_TobaccoWithdrawal.stages.tobacco_withdrawal.description	Queria tanto fumar. Daria tudo por um cigarro.
+## DefInjected/ThoughtDef/Thoughts_Memory_Cider.xml
+VBE_CiderAsIngredient.stages.Drank_ciderbased_cocktail.label	Tomou coquetel de sidra
+VBE_CiderAsIngredient.stages.Drank_ciderbased_cocktail.description	Uma delícia.
+## DefInjected/ThoughtDef/Thoughts_Memory_Drinking.xml
+VBE_DrankSoda.stages.Drank_soda.label	Tomou refrigerante
+VBE_DrankSoda.stages.Drank_soda.description	Tomei um refrigerante doce e gasoso, um pequeno luxo.
+VBE_DrankTea.stages.Drank_tea.label	Tomou chá
+VBE_DrankTea.stages.Drank_tea.description	Uma simples xícara de chá ilumina o dia.
+VBE_TequilaAsIngredient.stages.Drank_tequilabased_cocktail.label	Tomou coquetel de tequila
+VBE_TequilaAsIngredient.stages.Drank_tequilabased_cocktail.description	Uma delícia.
+VBE_WhiskeyAsIngredient.stages.Drank_whiskeybased_cocktail.label	Tomou coquetel de uísque
+VBE_WhiskeyAsIngredient.stages.Drank_whiskeybased_cocktail.description	Uma delícia.
+VBE_VodkaAsIngredient.stages.Drank_vodkabased_cocktail.label	Tomou coquetel de vodca
+VBE_VodkaAsIngredient.stages.Drank_vodkabased_cocktail.description	Uma delícia.
+VBE_GinAsIngredient.stages.Drank_ginbased_cocktail.label	Tomou coquetel de gim
+VBE_GinAsIngredient.stages.Drank_ginbased_cocktail.description	Uma delícia.
+VBE_AmbrandyAsIngredient.stages.Drank_ambrandybased_cocktail.label	Tomou coquetel de ambrandy
+VBE_AmbrandyAsIngredient.stages.Drank_ambrandybased_cocktail.description	Uma delícia.
+VBE_RBMeadAsIngredient.stages.Drank_meadbased_cocktail.label	Tomou coquetel de hidromel
+VBE_RBMeadAsIngredient.stages.Drank_meadbased_cocktail.description	Uma delícia.
+VBE_WineAsIngredient.stages.Drank_winebased_cocktail.label	Tomou coquetel de vinho
+VBE_WineAsIngredient.stages.Drank_winebased_cocktail.description	Uma delícia.
+VBE_ConsumedLuciferiumPowder.stages.Consumed_luciferium_powder.label	Comeu pó de lucifério
+VBE_ConsumedLuciferiumPowder.stages.Consumed_luciferium_powder.description	Uma delícia.
+VBE_ConsumedGoStock.stages.Consumed_gojuice_stock.label	Comeu caldo de suco-turbo
+VBE_ConsumedGoStock.stages.Consumed_gojuice_stock.description	Uma delícia.
+VBE_ConsumedWakeupPowder.stages.Consumed_wakeup_powder.label	Comeu pó de despertar
+VBE_ConsumedWakeupPowder.stages.Consumed_wakeup_powder.description	Uma delícia.
+## DefInjected/WorkGiverDef/WorkGivers.xml
+VBE_DoBillsBar.label	preparar bebidas no bar
+VBE_DoBillsBar.gerund	preparando bebidas em
+VBE_DoBillsBar.verb	preparar bebidas
+## Keyed/Misc_Gameplay.xml
+VBE_InsertSyrupDesc	Xarope a pôr
+VBE_StartInsertion	Trazer xarope
+VBE_StartInsertionDesc	Traz um xarope para a máquina de refrigerante para começar o processo
+VBE_CancelBringingSyrup	Cancelar trazer xarope
+VBE_CancelBringingSyrupDesc	Cancela a entrega de xarope à máquina de refrigerante.
+VBE_SyrupFailurePower	O refrigerante estragou por falta de energia na máquina de refrigerante
+VCE_SodaFountainNotWorking	Esta máquina de refrigerante não está funcionando no momento
+VCE_SyrupFailurePowerWarning	A mistura de xarope está estragando rápido por falta de energia na máquina de refrigerante
+VBE_InsertAmbMustDesc	Mosto a pôr
+VBE_StartInsertionAmbMust	Trazer mosto
+VBE_StartInsertionAmbMustDesc	Traz mosto de ambrandy à destilaria de ambrandy para começar a fermentação
+VBE_CancelBringingAmbMust	Cancelar trazer mosto
+VBE_CancelBringingAmbMustDesc	Cancela a entrega de mosto de ambrandy à destilaria.
+VBE_AmbrandyFailurePower	O ambrandy estragou por falta de energia na destilaria de ambrandy
+VBE_RemoveAmbrandy	Tirar ambrandy ({0})
+VBE_RemoveAmbrandyDesc	Tira o ambrandy da destilaria. Ele sai com a qualidade atual ({0})
+VCE_AmbrandyNotWorking	Esta destilaria de ambrandy não está funcionando no momento
+VBE_InsertMustOrWhiskeyDesc	Mosto ou uísque a pôr
+VBE_StartInsertionMustOrWhiskey	Trazer mosto ou uísque
+VBE_StartInsertionMustOrWhiskeyDesc	Traz mosto ao tonel de uísque para começar a fermentação, ou uísque para o segundo envelhecimento
+VBE_CancelBringingMustOrWhiskey	Cancela a entrega de mosto ou uísque ao tonel.
+VCE_WhiskeyCaskNotWorking	Este tonel de uísque não está funcionando no momento
+VBE_InsertTequilaMustDesc	Mosto a pôr
+VBE_StartInsertionTequilaMust	Trazer mosto
+VBE_StartInsertionTequilaMustDesc	Traz mosto de tequila ao barril de tequila para começar a fermentação
+VBE_CancelBringingTequilaMust	Cancelar trazer mosto
+VBE_CancelBringingTequilaMustDesc	Cancela a entrega de mosto de tequila ao barril.
+VCE_TequilaBarrelNotWorking	Este barril de tequila não está funcionando no momento
+VBE_InsertVodkaMustDesc	Mosto a pôr
+VBE_StartInsertionVodkaMust	Trazer mosto
+VBE_StartInsertionVodkaMustDesc	Traz mosto de vodca ao tambor de vodca para começar a fermentação
+VBE_CancelBringingVodkaMust	Cancelar trazer mosto
+VBE_CancelBringingVodkaMustDesc	Cancela a entrega de mosto de vodca ao tambor.
+VCE_VodkaDrumNotWorking	Este tambor de vodca não está funcionando no momento
+VBE_InsertGinMushDesc	Mosto a pôr
+VBE_StartInsertionGinMush	Trazer mosto
+VBE_StartInsertionGinMushDesc	Traz mosto de gim ao alambique de gim para começar a fermentação
+VBE_CancelBringingGinMush	Cancelar trazer mosto
+VBE_CancelBringingGinMushDesc	Cancela a entrega de mosto de gim ao alambique.
+VCE_GinStillNotWorking	Este alambique de gim não está funcionando no momento
+VBE_MushRipening	Polpa amadurecendo
+VBE_MushCurrentlyFrozen	Esta polpa está congelada e não vai virar mosto de ambrandy
+VBE_MushCurrentlyRefrigerated	Esta polpa está refrigerada e vai virar mosto de ambrandy mais devagar (pronta em {0})
+VBE_MushDryingCorrectly	Esta polpa está virando mosto de ambrandy direitinho (pronta em {0})
+VBE_CiderMaturing	Sidra maturando
+VBE_CiderCurrentlyFrozen	Esta sidra não fermentada está congelada e não vai virar sidra
+VBE_CiderCurrentlyRefrigerated	Esta sidra não fermentada está refrigerada e vai virar sidra mais devagar (pronta em {0})
+VBE_CiderMaturingCorrectly	Esta sidra não fermentada está virando sidra direitinho (pronta em {0})
+VBE_UnforbidDroppedFruit	Desproibir frutas caídas
+VBE_NeverDesc	Nunca desproibir automaticamente as frutas caídas
+VBE_HomeArea	Área de casa
+VBE_HomeAreaDesc	Só desproibir as frutas caídas se a árvore estiver na área de casa
+VBE_AlwaysDesc	Sempre desproibir automaticamente as frutas caídas

@@ -1,0 +1,50 @@
+## DefInjected/ResearchProjectDef/ResearchProjects_VFE.xml
+VFE_Res_AdvancedHydroponics.label	ecossistemas artificiais
+VFE_Res_AdvancedHydroponics.description	Aprenda a construir ecossistemas artificiais, terrários altamente avançados que superam em muito a hidroponia.
+VFE_Res_AdvancedHydroponics.generalRules.rulesStrings[0]	subject->biosferas pioneiras
+VFE_Res_AdvancedHydroponics.generalRules.rulesStrings[1]	subject_story->concebeu e criou ambientes autossustentáveis, dominando o equilíbrio entre natureza e tecnologia
+VFE_Res_AdvancedHydroponics.generalRules.rulesStrings[2]	subject_story->inaugurou uma nova era de segurança alimentar, com ecossistemas que desafiam os limites do clima e da geografia
+VFE_Res_AdvancedHydroponics.generalRules.rulesStrings[3]	subject_story->dominou os princípios da harmonia ecológica, unindo hidroponia avançada e terrários biodiversos
+VFE_Res_AdvancedHydroponics.generalRules.rulesStrings[4]	subject_story->permitiu cultivar flora e fauna exóticas numa escala nunca vista
+VFE_Res_AdvancedHydroponics.generalRules.rulesStrings[5]	subject_story->inovou nos ciclos fechados de água e nutrientes, reduzindo desperdício e aumentando a eficiência
+VFE_Res_AdvancedHydroponics.generalRules.rulesStrings[6]	subject_gerund->revolucionando a agricultura com a criação de ecossistemas artificiais
+VFE_Res_Sprinkler.label	irrigadores
+VFE_Res_Sprinkler.description	Monte as plantas de um aparelho que rega as plantações sozinho, acelerando o crescimento.
+VFE_Res_Sprinkler.generalRules.rulesStrings[0]	subject->a evolução da irrigação
+VFE_Res_Sprinkler.generalRules.rulesStrings[1]	subject_story->desenvolveu sistemas automáticos de rega, garantindo a hidratação ideal das plantações em campos enormes
+VFE_Res_Sprinkler.generalRules.rulesStrings[2]	subject_story->transformou a produtividade agrícola com irrigação de precisão, reduzindo o desperdício de água
+VFE_Res_Sprinkler.generalRules.rulesStrings[3]	subject_story->foi pioneiro no uso de irrigadores, um salto em relação aos métodos tradicionais de rega
+VFE_Res_Sprinkler.generalRules.rulesStrings[4]	subject_story->deu aos agricultores o controle da própria essência do crescimento, a água, com o giro de uma válvula
+VFE_Res_Sprinkler.generalRules.rulesStrings[5]	subject_story->trouxe pastos mais verdes e colheitas fartas até a terras antes tidas como estéreis
+VFE_Res_Sprinkler.generalRules.rulesStrings[6]	subject_gerund->simplificando o cultivo com a eficiência dos irrigadores
+VFE_Res_FarmingTechniques.label	técnicas agrícolas
+VFE_Res_FarmingTechniques.description	Desenvolva a base teórica para a agricultura em grande escala, incluindo alimentação centralizada e espantalhos para proteger as plantações.
+VFE_Res_FarmingTechniques.generalRules.rulesStrings[0]	subject->o cultivo da fartura
+VFE_Res_FarmingTechniques.generalRules.rulesStrings[1]	subject_story->redescobriu e refinou métodos antigos para a agricultura moderna em grande escala
+VFE_Res_FarmingTechniques.generalRules.rulesStrings[2]	subject_story->implantou estratégias de alimentação centralizada, otimizando nutrição e rendimento
+VFE_Res_FarmingTechniques.generalRules.rulesStrings[3]	subject_story->criou espantalhos com base num conhecimento profundo da fauna local, protegendo as plantações
+VFE_Res_FarmingTechniques.generalRules.rulesStrings[4]	subject_story->lançou as bases de uma produção de alimentos sustentável e eficiente
+VFE_Res_FarmingTechniques.generalRules.rulesStrings[5]	subject_story->inspirou uma geração de agricultores a adotar abordagens inovadoras
+VFE_Res_FarmingTechniques.generalRules.rulesStrings[6]	subject_gerund->fazendo avançar a arte e a ciência da agricultura com técnicas de ponta
+## DefInjected/ThingDef/Buildings_Growers.xml
+VFE_PlanterBox.label	jardineira
+VFE_PlanterBox.description	Cultiva plantas numa caixa de terra. Não precisa de energia.
+VFE_Ecosystem.label	ecossistema artificial
+VFE_Ecosystem.description	Cultiva plantas rapidamente num ecossistema artificial e selado. Exige muita energia; as plantas morrem se a energia cair.\n\nTem uma lâmpada solar embutida para iluminar as plantas.
+## DefInjected/ThingDef/Buildings_Growers_Tilable.xml
+VFE_PlanterBox_Tilable.label	jardineira modular
+VFE_PlanterBox_Tilable.description	Cultiva plantas numa caixa de terra. Não precisa de energia.\n\nPode ser construída em qualquer formato.
+VFE_Hydroponics_Tilable.label	bacia de hidroponia modular
+VFE_Hydroponics_Tilable.description	Um banho de nutrientes artificial para cultivar plantas. As bombas de nutrientes precisam funcionar sem parar; as plantas morrem se a energia cair.\n\nEsta versão é modular e pode ser montada em qualquer formato.
+VFE_Ecosystem_Tilable.label	ecossistema artificial modular
+VFE_Ecosystem_Tilable.description	Cultiva plantas rapidamente num ecossistema artificial e selado, que pode ser configurado para cultivar até plantas exigentes. Exige muita energia; as plantas morrem se a energia cair. Tem uma lâmpada solar embutida para iluminar as plantas.\n\nEsta versão é modular e pode ser montada em qualquer formato.
+## DefInjected/ThingDef/Buildings_Misc.xml
+VFE_Scarecrow.label	espantalho
+VFE_Scarecrow.description	Uma figura humanoide feita de feno, vestida com roupas velhas, que espanta animais num raio grande. Animais pequenos ficam com medo demais para chegar perto.
+VFE_Sprinkler.label	irrigador
+VFE_Sprinkler.description	Um irrigador que rega a área em volta. Acelera o crescimento das plantas próximas.
+## Keyed/KeyedStrings.xml
+VFEF_CommandMakeCompAreaDesc	Marca automaticamente a área definida em volta deste {0}.
+VFEF_CommandMakeCompAreaLabel	Marcar área de alimentação
+VFEF_ScarecrowGizmo	Assustar animais da colônia
+VFEF_ScarecrowGizmoText	Define se este espantalho também faz os animais da sua colônia fugirem.

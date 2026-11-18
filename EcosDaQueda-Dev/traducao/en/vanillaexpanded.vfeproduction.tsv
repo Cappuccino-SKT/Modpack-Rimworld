@@ -1,0 +1,43 @@
+## DefInjected/ResearchProjectDef/ResearchProjects_Various.xml
+VFE_Manufacturing.label	Manufacturing
+VFE_Manufacturing.description	Build manufacturing benches and efficient work center.
+VFE_Manufacturing.generalRules.rulesStrings[0]	subject->the dawn of industry
+VFE_Manufacturing.generalRules.rulesStrings[1]	subject_story->pioneered the integration of complex machinery for mass production, heralding a new era of efficiency
+VFE_Manufacturing.generalRules.rulesStrings[2]	subject_story->transformed raw materials into marvels of utility, fueling the expansion of civilization
+VFE_Manufacturing.generalRules.rulesStrings[3]	subject_story->devised systems of assembly that became the heartbeat of the community's economic engine
+VFE_Manufacturing.generalRules.rulesStrings[4]	subject_story->cultivated a culture of innovation, where every tool and machine is a step towards the future
+VFE_Manufacturing.generalRules.rulesStrings[5]	subject_story->founded the principles of modern manufacturing, blending craftsmanship with the precision of technology
+VFE_Manufacturing.generalRules.rulesStrings[6]	subject_gerund->carving the path towards a self-sustaining society with the power of industrial manufacturing
+## DefInjected/ThingDef/Buildings_Linkables.xml
+VFE_DrugCabinet.label	drug cabinet
+VFE_DrugCabinet.description	Increases work speed when placed near a drug lab. One workbench links up to two drug cabinets.
+VFE_MachiningCabinet.label	machining cabinet
+VFE_MachiningCabinet.description	Increases work speed when placed near a machining table. One workbench links up to two machining cabinets.
+VFE_SmithyCabinet.label	smithing cabinet
+VFE_SmithyCabinet.description	Increases work speed when placed near a smithy. One workbench links up to two smithy cabinets.
+VFE_KitchenSinkCabinet.label	kitchen sink cabinet
+VFE_KitchenSinkCabinet.description	Increases work speed when placed nearby a cooking stove.
+VFE_TailorCabinet.label	tailor cabinet
+VFE_TailorCabinet.description	Increases work speed when placed near a tailoring table. One workbench links up to two tailor cabinets.
+VFE_FabricationCabinet.label	fabrication cabinet
+VFE_FabricationCabinet.description	Increases work speed when placed near a fabrication bench. One workbench can link up to two fabrication cabinets.
+## DefInjected/ThingDef/Buildings_Manufacturing.xml
+VFE_TableMachiningLarge.label	large machining table
+VFE_TableMachiningLarge.description	A workbench equipped with advanced tools and enough space to produce technological marvels from simpler materials in shorter amounts of time. Consumes power.
+VFE_TableSmithyLarge.label	large electric smithy
+VFE_TableSmithyLarge.description	An electric-powered work center for smithing non-mechanical weapons and tools. Consumes a lot of power.
+VFE_TableStoveLarge.label	large stove
+VFE_TableStoveLarge.description	A large size manufacturing stove as well as multiple ovens to prepare meals and cook significantly faster.
+VFE_TableTailorLarge.label	large tailoring table
+VFE_TableTailorLarge.description	A large size manufacturing workbench with several tools for designers and a sewing machine for rapid tailoring of clothes. Can work without electricity at 33% of normal speed.
+## DefInjected/ThingDef/Buildings_Production.xml
+VFE_ComponentFabricationBench.label	assembly bench
+VFE_ComponentFabricationBench.description	A workbench equipped with advanced tools to produce components.
+VFE_TableButcherElectric.label	electric butcher
+VFE_TableButcherElectric.description	A motorized table with a rotating saw blade for butchering dead creatures quicker into precise slices of raw meat. Consumes a lot of power.
+VFE_TableDrugLabElectric.label	electric drug lab
+VFE_TableDrugLabElectric.description	An advanced work bench equipped with containers, heaters, and measurement devices for producing various drugs with more efficiency. Consumes a lot of power.
+VFE_FueledSmelter.label	fueled smelter
+VFE_FueledSmelter.description	A wood-fueled station for smelting. Extracts usable metal from slag chunks and other mixed metal items.
+VFE_TableStonecutterElectric.label	electric stonecutter's table
+VFE_TableStonecutterElectric.description	An advanced work table with electrical saws and holders for cutting stone chunks into usable blocks in shorter duration of time on an assembly line. Consumes a lot of power.

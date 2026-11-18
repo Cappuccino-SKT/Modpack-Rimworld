@@ -1,0 +1,149 @@
+## DefInjected/AbilityDef/Abilities.xml
+VFEI2_FlameSpew.label	golfada de fogo
+VFEI2_FlameSpew.description	Expele pela boca um fluxo de fluido adesivo e combustível. Ao contato, pode incendiar qualquer alvo ou deixar manchas em chamas nas superfícies. É produzido e guardado numa glândula da garganta, ao lado de uma bolsa com um químico que se inflama sozinho, garantindo a combustão imediata.
+VFEI2_InsectAcidSpit.label	cuspe ácido de inseto
+VFEI2_InsectAcidSpit.description	O insetoide borrifa uma substância ácida e pegajosa das glândulas do pescoço por toda a área do alvo. O ácido gruda nos alvos e os queima.
+VFEI2_InsectAcidSpew.label	golfada ácida de inseto
+VFEI2_InsectAcidSpew.description	O insetoide borrifa uma substância ácida e pegajosa das glândulas do pescoço por toda a área do alvo. O ácido gruda nos alvos e os queima.
+VFEI2_LargeAcidSpew.label	golfada ácida grande
+VFEI2_LargeAcidSpew.description	O insetoide borrifa uma substância ácida e pegajosa das glândulas do pescoço, pela boca, por toda a área do alvo. O ácido causa dano ao longo do tempo.
+VFEI2_ChemfuelSpew.label	golfada de combustível
+VFEI2_ChemfuelSpew.description	Solta pela boca um jato de combustível químico líquido. O líquido cobre qualquer objeto ou pessoa que tocar, sem pegar fogo nem queimar na hora. O combustível é sintetizado e guardado num órgão especial do pescoço.
+VFEI2_ChemfuelSpit.label	cuspe de combustível
+VFEI2_ChemfuelSpit.description	O titã-carrapato vomita uma bola gigante de combustível químico em chamas a uma grande distância.
+VFEI2_InsectGlide_Short.label	planeio curto de inseto
+VFEI2_InsectGlide_Short.description	O insetoide dá um salto com ajuda das asas até um ponto próximo, usando as fortes patas traseiras.
+VFEI2_InsectGlide_Short.verbProperties.label	planeio curto de inseto
+VFEI2_InsectGlide_Medium.label	planeio de inseto
+VFEI2_InsectGlide_Medium.description	O insetoide dá um salto com ajuda das asas até um ponto, usando as fortes patas traseiras.
+VFEI2_InsectGlide_Medium.verbProperties.label	planeio de inseto
+VFEI2_InsectGlide_Far.label	planeio longo de inseto
+VFEI2_InsectGlide_Far.description	O insetoide dá um salto com ajuda das asas até um ponto muito distante, usando as fortes patas traseiras.
+VFEI2_InsectGlide_Far.verbProperties.label	planeio longo de inseto
+VFEI2_WideTunnels.description	O insetoide investe contra o alvo, causando dano considerável a tudo no caminho. Destrói qualquer defesa com facilidade.
+VFEI2_WideTunnels.verbProperties.label	túneis largos
+VFEI2_CreateSmallBurrow.label	criar toca pequena
+VFEI2_CreateSmallBurrow.description	O patriarca emite vibrações que fazem a casta real dos insetos cavar até a superfície, criando uma toca pequena.
+VFEI2_CreateMediumBurrow.label	criar toca
+VFEI2_CreateMediumBurrow.description	O patriarca emite vibrações que fazem a casta real dos insetos cavar até a superfície, criando uma toca média.
+VFEI2_CreateLargeBurrow.label	criar toca grande
+VFEI2_CreateLargeBurrow.description	O patriarca emite vibrações que fazem a casta real dos insetos cavar até a superfície, criando uma toca grande.
+## DefInjected/BodyDef/Bodies_ClawedInsectoid.xml
+VFEI2_ClawedInsectoid.label	insetoide com garras
+## DefInjected/BodyDef/Bodies_Swarmling.xml
+VFEI2_Swarmling.label	enxameiro
+VFEI2_Swarmling.corePart.parts.swarmling-0.customLabel	enxameiro
+VFEI2_Swarmling.corePart.parts.swarmling-1.customLabel	enxameiro
+VFEI2_Swarmling.corePart.parts.swarmling-2.customLabel	enxameiro
+VFEI2_Swarmling.corePart.parts.swarmling-3.customLabel	enxameiro
+VFEI2_Swarmling.corePart.parts.swarmling-4.customLabel	enxameiro
+## DefInjected/BodyPartDef/BodyParts_Insectoids.xml
+VFEI2_Swarmling.label	enxameiro
+## DefInjected/BodyPartGroupDef/BodyPartGroups.xml
+VFEI2_SwarmlingA.label	enxameiro
+VFEI2_SwarmlingB.label	enxameiro
+VFEI2_SwarmlingC.label	enxameiro
+VFEI2_SwarmlingD.label	enxameiro
+## DefInjected/ChemicalDef/RoyalInsectJelly.xml
+VFEI2_RoyalJellyChemical.label	geleia real
+## DefInjected/DamageDef/DamageMisc.xml
+VFEI2_AcidBite.label	mordida ácida
+## DefInjected/DesignationCategoryDef/DesignationCategories.xml
+VFEI2_Insectoids.label	insetoides
+## DefInjected/FactionDef/Factions_Player.xml
+VFEI2_PlayerOutpost.label	Novo esquadrão
+VFEI2_PlayerOutpost.description	Um pequeno esquadrão de mercenários, pronto para o combate.
+VFEI2_PlayerOutpost.pawnsPlural	mercenários
+## DefInjected/HediffDef/Hediffs_Global_Misc.xml
+VFEI2_ArmorDegradation.label	armadura degradada
+VFEI2_ArmorDegradation.description	A armadura deste insetoide rachou e perdeu parte da eficiência.
+VFEI2_TeramantisStun.label	atordoado há pouco
+VFEI2_TeramantisStun.description	Esta criatura foi atordoada há pouco por um ataque surpresa.
+VFEI2_AcidImmunity.description	Os insetoides da linhagem Kemia são imunes a ácido.
+VFEI_WorkerInsectType.label	tipo operário
+VFEI_WorkerInsectType.description	Um tipo de insetoide.
+VFEI_HunterInsectType.label	tipo caçador
+VFEI_HunterInsectType.description	Um tipo de insetoide.
+VFEI_DefenderInsectType.label	tipo defensor
+VFEI_DefenderInsectType.description	Um tipo de insetoide.
+VFEI_ToBeCocooned.label	para encasular
+VFEI_ToBeCocooned.description	Para encasular.
+## DefInjected/HediffDef/Hediffs_Reproduction.xml
+VFEI2_EmpressSpawn.label	cria de imperatriz
+VFEI2_EmpressSpawn.description	Uma cria insetoide em gestação. Começa como um ovinho, absorve nutrientes rápido e cresce, causando cada vez mais dor ao hospedeiro. Logo toma o controle do sistema nervoso, cresce e se espalha pelo corpo até estar pronta para sair pela caixa torácica, matando o hospedeiro. Enquanto cresce, a cria absorve as memórias do hospedeiro, o que torna o insetoide amigável à sua colônia.
+VFEI2_GigamiteSpawn.label	cria de gigácaro
+VFEI2_GigamiteSpawn.description	Uma cria insetoide em gestação. Começa como um ovinho, absorve nutrientes rápido e cresce, causando cada vez mais dor ao hospedeiro. Logo toma o controle do sistema nervoso, cresce e se espalha pelo corpo até estar pronta para sair pela caixa torácica, matando o hospedeiro. Enquanto cresce, a cria absorve as memórias do hospedeiro, o que torna o insetoide amigável à sua colônia.
+VFEI2_SilverfishSpawn.label	cria de traça
+VFEI2_SilverfishSpawn.description	Uma cria insetoide em gestação. Começa como um ovinho, absorve nutrientes rápido e cresce, causando cada vez mais dor ao hospedeiro. Logo toma o controle do sistema nervoso, cresce e se espalha pelo corpo até estar pronta para sair pela caixa torácica, matando o hospedeiro. Enquanto cresce, a cria absorve as memórias do hospedeiro, o que torna o insetoide amigável à sua colônia.
+VFEI2_TitantickSpawn.label	cria de titã-carrapato
+VFEI2_TitantickSpawn.description	Uma cria insetoide em gestação. Começa como um ovinho, absorve nutrientes rápido e cresce, causando cada vez mais dor ao hospedeiro. Logo toma o controle do sistema nervoso, cresce e se espalha pelo corpo até estar pronta para sair pela caixa torácica, matando o hospedeiro. Enquanto cresce, a cria absorve as memórias do hospedeiro, o que torna o insetoide amigável à sua colônia.
+VFEI2_TeramantisSpawn.label	cria de teramântis
+VFEI2_TeramantisSpawn.description	Uma cria insetoide em gestação. Começa como um ovinho, absorve nutrientes rápido e cresce, causando cada vez mais dor ao hospedeiro. Logo toma o controle do sistema nervoso, cresce e se espalha pelo corpo até estar pronta para sair pela caixa torácica, matando o hospedeiro. Enquanto cresce, a cria absorve as memórias do hospedeiro, o que torna o insetoide amigável à sua colônia.
+## DefInjected/HediffDef/RoyalInsectJelly.xml
+VFEI2_RoyalJellyHigh.label	efeito da geleia real
+VFEI2_RoyalJellyHigh.description	Sob efeito da geleia real
+VFEI2_RoyalJellyTolerance.label	tolerância à geleia real
+VFEI2_RoyalJellyTolerance.description	Tolerância à geleia real
+VFEI2_RoyalJellyAddiction.label	vício em geleia real
+VFEI2_RoyalJellyAddiction.description	Uma dependência química de geleia real. O consumo regular causou adaptações imunológicas no nível genético, e o sistema imune não funciona mais direito sem a droga. Toda vez que surge uma infecção, o viciado não consegue vencê-la sem geleia real. Mas uma abstinência prolongada força o sistema imune a voltar ao normal, resolvendo o vício.
+VFEI2_RoyalJellyAddiction.stages.addicted.label	viciado
+## DefInjected/IncidentDef/Incidents.xml
+VFEI_InfestedChunkCrash.label	queda de destroços infestados
+VFEI_InfestedChunkCrash.letterLabel	Queda de destroços infestados
+VFEI_InfestedChunkCrash.letterText	Vários pedaços pequenos de uma nave antiga caíram aqui perto. \n\nParecem infestados por uma massa orgânica. Dá para ouvir um chiado bizarro de insetos dentro do casco. \n\nDestrua-os o quanto antes.
+VFEI_InfestedPartCrash.label	queda de peça infestada
+VFEI_InfestedPartCrash.letterLabel	Queda de peça infestada
+VFEI_InfestedPartCrash.letterText	Uma grande peça de uma nave antiga caiu aqui perto.\n\nParece infestada por uma massa orgânica. Dá para ouvir um chiado bizarro de insetos dentro do casco.\n\nDestrua-a o quanto antes.
+VFEI_InfestedModuleCrash.label	queda de módulo infestado
+VFEI_InfestedModuleCrash.letterLabel	Queda de módulo infestado
+VFEI_InfestedModuleCrash.letterText	Um segmento misterioso de uma nave destruída há muito tempo caiu aqui perto.\n\nParece todo coberto de biomassa e caroços de geleia de inseto. É quase certo que esse destroço velho guarde perigos antigos.\n\nDestrua-o o quanto antes.
+VFEI_RoamingInsectoids.label	insetoides errantes
+VFEI_RoamingInsectoids.letterLabel	Insetoides errantes
+VFEI_RoamingInsectoids.letterText	{0} foi emboscado por insetoides de {2}!
+VFEI_LargeInfestation.label	grande infestação
+VFEI_LargeInfestation.letterLabel	Grande infestação
+VFEI_LargeInfestation.letterText	Um grande enxame de insetos gigantes está cavando na sua direção! Vão romper a superfície em segundos e plantar colmeias e outras formações insetoides.\n\nAs colmeias geram mais insetos e mais colmeias.\n\nSe não quiser que os insetos infestem a área toda, destrua as colmeias. Mas cuidado: os bichos defendem a casa.
+VFEI_BurrowSiege.label	cerco de tocas
+VFEI_BurrowSiege.letterLabel	Cerco de tocas
+VFEI_BurrowSiege.letterText	Um enxame de raros insetos reais está cavando na sua direção! Vão romper a superfície em segundos e abrir tocas que deixam cada vez mais insetos chegarem à superfície. As tocas só podem ser destruídas com explosivos, mas também desabam depois de um tempo.\n\nAs tocas mandam insetoides em intervalos cada vez menores até ficarem instáveis demais.\n\nOs insetos são da linhagem real e bem mais difíceis de matar que os comuns.
+VFEI_HordeWaveRaid.label	ataque em ondas da horda
+## DefInjected/JobDef/Jobs.xml
+VFEI_InsectHunt.reportString	caçando TargetA.
+VFEI_UpgradeHive.reportString	melhorando TargetA.
+## DefInjected/NeedDef/RoyalInsectJelly.xml
+VFEI2_Chemical_RoyalJelly.label	geleia real
+VFEI2_Chemical_RoyalJelly.description	Por causa do vício em geleia real, esta pessoa precisa consumi-la regularmente para evitar a abstinência, que inclui a parada completa do sistema imune.
+## DefInjected/PawnKindDef/Races_AcidSpitter.xml
+VFEI2_Acidspitter.label	cospe-ácido
+## DefInjected/PawnKindDef/Races_Boomtick.xml
+VFEI2_Boomtick.label	carrapato-bomba
+## DefInjected/PawnKindDef/Races_Durapod.xml
+VFEI2_Durapod.label	durápode
+## DefInjected/PawnKindDef/Races_Empress.xml
+VFEI2_Empress.label	imperatriz
+## DefInjected/PawnKindDef/Races_Fuelmite.xml
+VFEI2_Fuelmite.label	ácaro-combustível
+## DefInjected/PawnKindDef/Races_Gigalocust.xml
+VFEI2_Gigalocust.label	gigagafanhoto
+## DefInjected/PawnKindDef/Races_Gigamite.xml
+VFEI2_Gigamite.label	gigácaro
+## DefInjected/PawnKindDef/Races_Hellbeetle.xml
+VFEI2_Hellbeetle.label	besouro-infernal
+## DefInjected/PawnKindDef/Races_Ironclad.xml
+VFEI2_Ironclad.label	encouraçado
+## DefInjected/PawnKindDef/Races_Macrofly.xml
+VFEI2_Macrofly.label	macromosca
+## DefInjected/PawnKindDef/Races_Megapede.xml
+VFEI2_Megapede.label	megápede
+## DefInjected/PawnKindDef/Races_Megathrips.xml
+VFEI2_Megathrips.label	megatripes
+## DefInjected/PawnKindDef/Races_Megawasp.xml
+VFEI2_Megawasp.label	megavespa
+## DefInjected/PawnKindDef/Races_Patriarch.xml
+VFEI2_Patriarch.label	patriarca
+## DefInjected/PawnKindDef/Races_Queen.xml
+VFEI2_Queen.label	princesa insetoide
+## DefInjected/PawnKindDef/Races_RoyalMegascarab.xml
+VFEI2_RoyalMegascarab.label	megaescaravelho real
+## DefInjected/PawnKindDef/Races_RoyalMegaspider.xml
+VFEI2_RoyalMegaspider.label	megaranha real

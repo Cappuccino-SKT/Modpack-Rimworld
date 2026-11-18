@@ -1,0 +1,104 @@
+## DefInjected/PawnKindDef/PawnKinds_Pirate.xml
+Mercenary_Marine.label	fuzileiro mercenário
+Mercenary_Marine.labelPlural	fuzileiros mercenários
+## DefInjected/RecipeDef/Recipes_Production.xml
+Salvage_LaserWeapon.label	recuperar arma laser
+Salvage_LaserWeapon.description	Recupera uma arma laser aleatória a partir de componentes avançados.
+Salvage_LaserWeapon.jobString	Recuperando arma laser.
+## DefInjected/ResearchProjectDef/ResearchProjects_Various.xml
+VWE_LaserWeapons.label	armas laser recuperadas
+VWE_LaserWeapons.description	Aprenda a desmontar componentes avançados e transformá-los em armas laser experimentais e instáveis.
+VWE_LaserWeapons.generalRules.rulesStrings[0]	subject->o farol da inovação
+VWE_LaserWeapons.generalRules.rulesStrings[1]	subject_story->se aventurou no desconhecido desmontando tecnologia avançada para forjar armas laser experimentais
+VWE_LaserWeapons.generalRules.rulesStrings[2]	subject_story->juntou componentes recuperados e pesquisa de ponta, criando armas que ardem com o poder da luz controlada
+VWE_LaserWeapons.generalRules.rulesStrings[3]	subject_gerund->iluminando o caminho da superioridade com o brilho das armas laser recuperadas
+## DefInjected/ThingDef/Items_Resource_Manufactured.xml
+LaserRandom.label	arma laser recuperada
+LaserRandom.description	Um punhado de componentes que, montados, viram uma arma laser recuperada.
+## DefInjected/ThingDef/Items_Unfinished.xml
+UnfinishedSalvagedLaserGun.label	arma laser inacabada
+## DefInjected/ThingDef/VWEL_Abstracts_Laser.xml
+VWELBeamGraphic.label	feixe laser
+## DefInjected/ThingDef/VWEL_Weapons_Melee_Spacer.xml
+VWEL_LaserSword.label	espada laser
+VWEL_LaserSword.description	Um aparelho de ultratecnologia com cabo e lâmina laser retrátil. Arma de cavalheiros.
+VWEL_LaserSword.tools.handle.label	cabo
+VWEL_LaserSword.tools.point.label	ponta
+VWEL_LaserSword.tools.edge.label	gume
+## DefInjected/ThingDef/VWEL_Weapons_Ranged_Laser.xml
+VWEL_Bullet_LaserPistol.label	disparo de pistola laser
+VWEL_Gun_LaserPistol.label	pistola laser
+VWEL_Gun_LaserPistol.description	Uma pistola de ultratecnologia que emite um feixe de luz concentrado, forte o bastante para causar dano considerável.\n\nCom células de bateria avançadas, a arma aquece e aumenta a cadência a cada tiro seguido, enquanto o atirador fica parado.\n\nTotalmente aquecida, pode superaquecer e causar uma pequena explosão de bateria em volta de quem a usa.
+VWEL_Gun_LaserPistol.tools.grip.label	empunhadura
+VWEL_Gun_LaserPistol.tools.muzzle.label	boca
+VWEL_Gun_LaserPistol.verbs.Verb_ShootCE.label	pistola laser
+VWEL_Gun_LaserSMG.label	submetralhadora laser
+VWEL_Gun_LaserSMG.description	Uma submetralhadora de ultratecnologia que emite um feixe de luz concentrado, forte o bastante para causar dano considerável.\n\nCom células de bateria avançadas, a arma aquece e aumenta a cadência a cada tiro seguido, enquanto o atirador fica parado.\n\nTotalmente aquecida, pode superaquecer e causar uma pequena explosão de bateria em volta de quem a usa.
+VWEL_Gun_LaserSMG.tools.stock.label	coronha
+VWEL_Gun_LaserSMG.tools.barrel.label	cano
+VWEL_Gun_LaserSMG.tools.muzzle.label	boca
+VWEL_Gun_LaserSMG.verbs.Verb_ShootCE.label	submetralhadora laser
+VWEL_Gun_LaserRifle.label	fuzil laser
+VWEL_Gun_LaserRifle.description	Um fuzil de ultratecnologia que emite um feixe de luz concentrado, forte o bastante para causar dano considerável a média distância.\n\nCom células de bateria avançadas, a arma aquece e aumenta a cadência a cada tiro seguido, enquanto o atirador fica parado.\n\nTotalmente aquecida, pode superaquecer e causar uma pequena explosão de bateria em volta de quem a usa.
+VWEL_Gun_LaserRifle.tools.stock.label	coronha
+VWEL_Gun_LaserRifle.tools.barrel.label	cano
+VWEL_Gun_LaserRifle.tools.muzzle.label	boca
+VWEL_Gun_LaserRifle.verbs.Verb_ShootCE.label	fuzil laser
+VWEL_Bullet_LaserShotgun.label	disparo laser disperso
+VWEL_Bullet_LaserShotgun.description	Um feixe laser fragmentado.
+VWEL_Gun_LaserShotgun.label	escopeta laser
+VWEL_Gun_LaserShotgun.description	Uma arma de dispersão de ultratecnologia que emite vários feixes de luz, fortes o bastante para causar dano considerável.\n\nCom células de bateria avançadas, a arma aquece e aumenta a cadência a cada tiro seguido, enquanto o atirador fica parado.\n\nTotalmente aquecida, pode superaquecer e causar uma pequena explosão de bateria em volta de quem a usa.
+VWEL_Gun_LaserShotgun.tools.stock.label	coronha
+VWEL_Gun_LaserShotgun.tools.barrel.label	cano
+VWEL_Gun_LaserShotgun.tools.muzzle.label	boca
+VWEL_Gun_LaserShotgun.verbs.Verb_ShootCE.label	escopeta laser
+VWEL_Bullet_LaserSniperRifle.label	disparo laser preciso
+VWEL_Bullet_LaserSniperRifle.description	Um feixe laser focado, de longo alcance.
+VWEL_Gun_LaserSniperRifle.label	fuzil de precisão laser
+VWEL_Gun_LaserSniperRifle.description	Um fuzil de precisão de ultratecnologia que emite um feixe de luz concentrado, forte o bastante para causar dano considerável a longa distância.\n\nCom células de bateria avançadas, a arma aquece e aumenta a cadência a cada tiro seguido, enquanto o atirador fica parado.\n\nTotalmente aquecida, pode superaquecer e causar uma pequena explosão de bateria em volta de quem a usa.
+VWEL_Gun_LaserSniperRifle.tools.stock.label	coronha
+VWEL_Gun_LaserSniperRifle.tools.barrel.label	cano
+VWEL_Gun_LaserSniperRifle.tools.muzzle.label	boca
+VWEL_Gun_LaserSniperRifle.verbs.Verb_ShootCE.label	fuzil de precisão laser
+VWEL_Bullet_LaserMinigun.label	disparo de metralhadora giratória laser
+VWEL_Bullet_LaserMinigun.description	Um feixe laser estreito e focado, saído de uma arma de vários canos.
+VWEL_Gun_LaserMinigun.label	metralhadora giratória laser
+VWEL_Gun_LaserMinigun.description	Um aparelho de ultratecnologia de vários canos que emite um feixe de luz concentrado, forte o bastante para causar dano considerável, num modo de tiro longo e contínuo.\n\nCom células de bateria avançadas, a arma aquece e aumenta a cadência a cada tiro seguido, enquanto o atirador fica parado.\n\nTotalmente aquecida, pode superaquecer e causar uma pequena explosão de bateria em volta de quem a usa.
+VWEL_Gun_LaserMinigun.tools.barrel.label	cano
+VWEL_Gun_LaserMinigun.verbs.Verb_ShootCE.label	metralhadora giratória laser
+VWEL_Bullet_TeslaGun.label	disparo tesla
+VWEL_Bullet_TeslaGun.description	Um raio emitido por um aparelho Tesla.
+VWEL_Gun_TeslaGun.label	arma tesla
+VWEL_Gun_TeslaGun.description	Um aparelho de arco elétrico de ultratecnologia que dispara um raio capaz de inutilizar sistemas eletrônicos e incendiar inimigos.\n\nCom células de bateria avançadas, a arma aquece e aumenta a cadência a cada tiro seguido, enquanto o atirador fica parado.\n\nMuito usada pelos fuzileiros de ultratecnologia nas guerras mecanoides.
+VWEL_Gun_TeslaGun.tools.barrel.label	cano
+VWEL_Gun_TeslaGun.verbs.Verb_ShootCE.label	arma tesla
+VWEL_Bullet_SalvagedLaserPistol.label	disparo instável de pistola laser
+VWEL_Gun_SalvagedLaserPistol.label	pistola laser recuperada
+VWEL_Gun_SalvagedLaserPistol.description	Uma pistola recuperada que emite um feixe de luz instável, forte o bastante para causar dano moderado.\n\nCom células de bateria improvisadas, a arma aquece rápido e aumenta a cadência a cada tiro seguido, enquanto o atirador fica parado.\n\nTotalmente aquecida, pode superaquecer rápido e causar uma pequena explosão de bateria em volta de quem a usa.
+VWEL_Gun_SalvagedLaserPistol.tools.grip.label	empunhadura
+VWEL_Gun_SalvagedLaserPistol.tools.muzzle.label	boca
+VWEL_Gun_SalvagedLaserPistol.verbs.Verb_ShootCE.label	pistola laser recuperada
+VWEL_Bullet_SalvagedLaserRifle.label	disparo laser instável
+VWEL_Bullet_SalvagedLaserRifle.description	Um feixe laser instável.
+VWEL_Gun_SalvagedLaserRifle.label	fuzil laser recuperado
+VWEL_Gun_SalvagedLaserRifle.description	Um fuzil recuperado que emite um feixe de luz instável, forte o bastante para causar dano moderado a média distância.\n\nCom células de bateria improvisadas, a arma aquece rápido e aumenta a cadência a cada tiro seguido, enquanto o atirador fica parado.\n\nTotalmente aquecida, pode superaquecer rápido e causar uma pequena explosão de bateria em volta de quem a usa.
+VWEL_Gun_SalvagedLaserRifle.tools.stock.label	coronha
+VWEL_Gun_SalvagedLaserRifle.tools.barrel.label	cano
+VWEL_Gun_SalvagedLaserRifle.tools.muzzle.label	boca
+VWEL_Gun_SalvagedLaserRifle.verbs.Verb_ShootCE.label	fuzil laser recuperado
+VWEL_Bullet_SalvagedLaserShotgun.label	disparo laser disperso instável
+VWEL_Bullet_SalvagedLaserShotgun.description	Um feixe laser instável e fragmentado.
+VWEL_Gun_SalvagedLaserShotgun.label	escopeta laser recuperada
+VWEL_Gun_SalvagedLaserShotgun.description	Uma arma de dispersão recuperada que emite vários feixes de luz instáveis, fortes o bastante para causar dano moderado.\n\nCom células de bateria improvisadas, a arma aquece rápido e aumenta a cadência a cada tiro seguido, enquanto o atirador fica parado.\n\nTotalmente aquecida, pode superaquecer rápido e causar uma pequena explosão de bateria em volta de quem a usa.
+VWEL_Gun_SalvagedLaserShotgun.tools.stock.label	coronha
+VWEL_Gun_SalvagedLaserShotgun.tools.barrel.label	cano
+VWEL_Gun_SalvagedLaserShotgun.tools.muzzle.label	boca
+VWEL_Gun_SalvagedLaserShotgun.verbs.Verb_ShootCE.label	escopeta laser recuperada
+VWEL_Bullet_SalvagedLaserSniperRifle.label	disparo laser preciso instável
+VWEL_Bullet_SalvagedLaserSniperRifle.description	Um feixe laser instável de longo alcance.
+VWEL_Gun_SalvagedLaserSniperRifle.label	fuzil de precisão laser recuperado
+VWEL_Gun_SalvagedLaserSniperRifle.description	Um fuzil de precisão recuperado que emite um feixe de luz instável, forte o bastante para causar dano moderado a longas distâncias.\n\nCom células de bateria improvisadas, a arma aquece rápido e aumenta a cadência a cada tiro seguido, enquanto o atirador fica parado.\n\nTotalmente aquecida, pode superaquecer rápido e causar uma pequena explosão de bateria em volta de quem a usa.
+VWEL_Gun_SalvagedLaserSniperRifle.tools.stock.label	coronha
+VWEL_Gun_SalvagedLaserSniperRifle.tools.barrel.label	cano
+VWEL_Gun_SalvagedLaserSniperRifle.tools.muzzle.label	boca
+VWEL_Gun_SalvagedLaserSniperRifle.verbs.Verb_ShootCE.label	fuzil de precisão laser recuperado

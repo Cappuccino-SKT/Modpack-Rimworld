@@ -1,0 +1,151 @@
+## DefInjected/QuestScriptDef/Quest7.xml
+VQE_GeothermalArcSite.questDescriptionRules.rulesStrings[0]	questDescription(asker_factionLeader==True)->[asker_nameFull], [asker_faction_leaderTitle] de [asker_faction_name], nos mandou uma mensagem. Um grupo de [siteFaction_pawnsPlural] tomou o local de um ARC geotérmico abandonado. O acampamento está sob o controle de [siteFaction_name].\n\n[asker_nameDef] pede que limpemos a área eliminando todos os inimigos e defesas. Com o lugar seguro, poderemos estudar o ARC geotérmico e recuperar componentes valiosos para o futuro. Além disso, [sitePart0_description].
+VQE_GeothermalArcSite.questDescriptionRules.rulesStrings[1]	questDescription(askerIsNull==true)->Soubemos que o local de um velho ARC geotérmico foi ocupado por [siteFaction_pawnsPlural] de [siteFaction_name]. Os bandidos fortificaram a posição e usam o lugar para controlar a região em volta.\n\nTomar o lugar nos dará acesso para estudar o ARC geotérmico e extrair componentes úteis. O lugar deve estar bem defendido: prepare-se para resistência. Além disso, [sitePart0_description].
+VQE_GeothermalArcSite.questDescriptionRules.rulesStrings[2]	sitePart0_description->o lugar está meio tomado pelo mato, com restos do maquinário original espalhados
+VQE_GeothermalArcSite.questDescriptionRules.rulesStrings[3]	sitePart0_description->os bandidos reforçaram a área com barricadas toscas e postos de guarda
+VQE_GeothermalArcSite.questDescriptionRules.rulesStrings[4]	sitePart0_description->o ARC geotérmico parece muito gasto, mas inteiro o bastante para aproveitar peças
+VQE_GeothermalArcSite.questDescriptionRules.rulesStrings[5]	sitePart0_description->a infraestrutura do complexo ainda está de pé, embora bem desgastada
+VQE_GeothermalArcSite.questDescriptionRules.rulesStrings[6]	sitePart0_description->patrulhas hostis foram avistadas na área, garantindo que ninguém chegue perto sem ser desafiado
+VQE_GeothermalArcSite.questDescriptionRules.rulesStrings[7]	sitePart0_description->os bandidos parecem usar o ARC para alimentar as suas operações
+VQE_GeothermalArcSite.questNameRules.rulesStrings[0]	questName->[siteType] [arcType] [adj]
+VQE_GeothermalArcSite.questNameRules.rulesStrings[1]	adj->tomado
+VQE_GeothermalArcSite.questNameRules.rulesStrings[2]	adj->abandonado
+VQE_GeothermalArcSite.questNameRules.rulesStrings[3]	adj->vigiado
+VQE_GeothermalArcSite.questNameRules.rulesStrings[4]	adj->antigo
+VQE_GeothermalArcSite.questNameRules.rulesStrings[5]	adj->invadido
+VQE_GeothermalArcSite.questNameRules.rulesStrings[6]	adj->ocupado
+VQE_GeothermalArcSite.questNameRules.rulesStrings[7]	adj->disputado
+VQE_GeothermalArcSite.questNameRules.rulesStrings[8]	adj->arruinado
+VQE_GeothermalArcSite.questNameRules.rulesStrings[9]	adj->esquecido
+VQE_GeothermalArcSite.questNameRules.rulesStrings[10]	adj->escondido
+VQE_GeothermalArcSite.questNameRules.rulesStrings[11]	arcType->do ARC geotérmico
+VQE_GeothermalArcSite.questNameRules.rulesStrings[12]	arcType->do gerador ARC
+VQE_GeothermalArcSite.questNameRules.rulesStrings[13]	arcType->do núcleo geotérmico
+VQE_GeothermalArcSite.questNameRules.rulesStrings[14]	arcType->da estação ARC
+VQE_GeothermalArcSite.questNameRules.rulesStrings[15]	arcType->do núcleo de energia
+VQE_GeothermalArcSite.questNameRules.rulesStrings[16]	arcType->da fonte de energia
+VQE_GeothermalArcSite.questNameRules.rulesStrings[17]	arcType->da usina geotérmica
+VQE_GeothermalArcSite.questNameRules.rulesStrings[18]	siteType->Sítio
+VQE_GeothermalArcSite.questNameRules.rulesStrings[19]	siteType->Complexo
+VQE_GeothermalArcSite.questNameRules.rulesStrings[20]	siteType->Posto
+VQE_GeothermalArcSite.questNameRules.rulesStrings[21]	siteType->Conjunto
+VQE_GeothermalArcSite.questNameRules.rulesStrings[22]	siteType->Acampamento
+VQE_GeothermalArcSite.questNameRules.rulesStrings[23]	siteType->Terreno
+VQE_GeothermalArcSite.root.nodes.WorldObjectTimeout.node.nodes.Letter.label.slateRef	Missão expirada: [resolvedQuestName]
+VQE_GeothermalArcSite.root.nodes.WorldObjectTimeout.node.nodes.Letter.text.slateRef	O acampamento de bandidos levantou acampamento e foi embora. A missão [resolvedQuestName] expirou.
+VQE_GeothermalArcSite.root.nodes.siteDestroyed.node.nodes.Letter.label.slateRef	Missão fracassada: [resolvedQuestName]
+VQE_GeothermalArcSite.root.nodes.siteDestroyed.node.nodes.Letter.text.slateRef	Depois de descoberto, o acampamento de bandidos se dispersou. A missão [resolvedQuestName] acabou.
+VQE_GeothermalArcSite.root.nodes.siteAllEnemiesDefeated.node.nodes.IsSet.node.nodes.GiveRewards.customLetterLabel.slateRef	Pagamento chegou
+VQE_GeothermalArcSite.root.nodes.siteAllEnemiesDefeated.node.nodes.IsSet.node.nodes.GiveRewards.customLetterText.slateRef	Você derrotou o acampamento de bandidos!\n\nO pagamento de [asker_faction_name] chegou.
+## DefInjected/RecipeDef/Recipes_Production.xml
+VQE_DisassembleGenetronComponent.label	desmontar componente ARC
+VQE_DisassembleGenetronComponent.description	Desmonta um componente ARC para aproveitar peças avançadas que talvez sirvam.
+VQE_DisassembleGenetronComponent.jobString	desmontando componente ARC.
+## DefInjected/SitePartDef/Quest1Sites.xml
+VQE_Quest1Site.label	protótipo de ARC
+VQE_Quest1Site.description	Um lugar largado com um protótipo de ARC abandonado.
+## DefInjected/SitePartDef/Quest2Sites.xml
+VQE_Quest2Site.label	complexo industrial do ARC
+VQE_Quest2Site.description	Um complexo industrial abandonado com um protótipo de ARC.
+## DefInjected/SitePartDef/Quest3Sites.xml
+VQE_Quest3Site.label	ARC antigo
+VQE_Quest3Site.description	Um canteiro de obras ainda maior, com um protótipo de ARC.
+## DefInjected/SitePartDef/Quest4Sites.xml
+VQE_Quest4Site.label	bunker enterrado
+VQE_Quest4Site.description	Um bunker esquecido que emana um frio sobrenatural.
+## DefInjected/SitePartDef/Quest5Sites.xml
+VQE_Quest5Site.label	sítio ARC
+VQE_Quest5Site.description	O local de um gerador ARC abandonado, onde dá para recuperar componentes ARC.
+## DefInjected/SitePartDef/Quest5Sites_Geothermal.xml
+VQE_Quest5Site_Geothermal.label	sítio de ARC geotérmico
+VQE_Quest5Site_Geothermal.description	O local de um gerador ARC abandonado, com as ruínas de um ARC geotérmico.
+## DefInjected/SitePartDef/Quest5Sites_Nuclear.xml
+VQE_Quest5Site_Nuclear.label	sítio de ARC nuclear
+VQE_Quest5Site_Nuclear.description	O local de um gerador ARC abandonado, com as ruínas de um ARC nuclear.
+## DefInjected/StatDef/Stats_Building_Special.xml
+VQE_GenetronMaintenanceLoss.label	taxa base de perda de manutenção
+VQE_GenetronMaintenanceLoss.description	A taxa base, por dia, com que a manutenção de um ARC cai.
+## DefInjected/ThingDef/Apparel_Various.xml
+VQE_Apparel_Parka.label	parca justa antiga
+VQE_Apparel_Parka.description	Uma parca grossa e antiga para se manter aquecido até nas temperaturas mais frias. De algum jeito parece resistir à deterioração, mas o modo de costurar uma destas se perdeu na história.
+## DefInjected/ThingDef/Buildings_BasicGenetron.xml
+VQE_Genetron_Basic.label	ARC
+VQE_Genetron_Basic.description	A câmara de reator avançada, ARC na sigla em inglês, produz eletricidade a partir de gêiseres de vapor geotérmico. É um gerador avançado que pode ser melhorado para aceitar outros combustíveis, liberando novas habilidades poderosas. Precisa ser posto sobre um gêiser de vapor.
+## DefInjected/ThingDef/Buildings_ChemfuelPowered_Genetrons.xml
+VQE_Genetron_ChemfuelPowered.label	ARC a combustível químico
+VQE_Genetron_ChemfuelPowered.description	A câmara de reator avançada a combustível químico, ARC na sigla em inglês, produz eletricidade com gêiseres de vapor geotérmico e combustível químico queimado num motor gigantesco. O motor exige manutenção regular, e a falta dela pode causar uma pane crítica dos componentes ARC. Projetados originalmente por {InventorFullName}, estes ARCs são raríssimos, mas também versáteis e poderosos. É um gerador avançado que pode ser melhorado para aceitar outros combustíveis, liberando novas habilidades poderosas. Pode entrar em modo de sobrecarga, queimando mais combustível para gerar mais energia. Também pode ser ajustada para gerar ainda mais energia. Precisa ser posto sobre um gêiser de vapor e só pode ser construído e melhorado por colonos que estudaram os antigos geradores ARC.
+VQE_Genetron_ChemfuelBoosted.label	ARC turbinado a combustível químico
+VQE_Genetron_ChemfuelBoosted.description	A câmara de reator avançada turbinada a combustível químico, ARC na sigla em inglês, produz eletricidade com gêiseres de vapor geotérmico e combustível químico queimado num motor gigantesco. O motor exige manutenção regular, e a falta dela pode causar uma pane crítica dos componentes ARC. Projetados originalmente por {InventorFullName}, estes ARCs são raríssimos, mas também versáteis e poderosos. É um gerador avançado que pode ser melhorado para aceitar outros combustíveis, liberando novas habilidades poderosas. Pode entrar em modo de sobrecarga, queimando mais combustível para gerar mais energia. Também pode ser ajustada para gerar ainda mais energia. Uma função de pico de energia permite vaporizar na hora uma grande quantidade de combustível para recarregar as baterias da rede. Precisa ser posto sobre um gêiser de vapor e só pode ser construído e melhorado por colonos que estudaram os antigos geradores ARC.
+VQE_Genetron_ChemfuelCharged.label	ARC carregado a combustível químico
+VQE_Genetron_ChemfuelCharged.description	A câmara de reator avançada carregada a combustível químico, ARC na sigla em inglês, produz eletricidade com gêiseres de vapor geotérmico e combustível químico queimado num motor gigantesco. O motor exige manutenção regular, e a falta dela pode causar uma pane crítica dos componentes ARC. Projetados originalmente por {InventorFullName}, estes ARCs são raríssimos, mas também versáteis e poderosos. É um gerador avançado que pode ser melhorado para aceitar outros combustíveis, liberando novas habilidades poderosas. Pode entrar em modo de sobrecarga, queimando mais combustível para gerar mais energia. Também pode ser afinada para gerar ainda mais energia ou para reduzir a perda de manutenção se o esforço sobre os componentes estiver alto demais. Uma função de pico de energia permite vaporizar na hora uma grande quantidade de combustível para recarregar as baterias da rede. Precisa ser posto sobre um gêiser de vapor e só pode ser construído e melhorado por colonos que estudaram os antigos geradores ARC.
+VQE_Genetron_ChemfuelFortified.label	ARC reforçado a combustível químico
+VQE_Genetron_ChemfuelFortified.description	A câmara de reator avançada reforçada a combustível químico, ARC na sigla em inglês, produz eletricidade com gêiseres de vapor geotérmico e combustível químico queimado num motor gigantesco. O motor exige manutenção regular, e a falta dela pode causar uma pane crítica dos componentes ARC. Projetados originalmente por {InventorFullName}, estes ARCs são raríssimos, mas também versáteis e poderosos. É um gerador avançado que pode ser melhorado para aceitar outros combustíveis, liberando novas habilidades poderosas. Pode entrar em modo de sobrecarga, queimando mais combustível para gerar mais energia. Também pode ser afinada para gerar ainda mais energia ou para reduzir a perda de manutenção se o esforço sobre os componentes estiver alto demais. Uma função de pico de energia permite vaporizar na hora uma grande quantidade de combustível para recarregar as baterias da rede. Dá para calibrar a eficiência do ARC para aumentar de vez a energia gerada por unidade de combustível queimada. Precisa ser posto sobre um gêiser de vapor e só pode ser construído e melhorado por colonos que estudaram os antigos geradores ARC.
+## DefInjected/ThingDef/Buildings_Geothermal_Genetrons.xml
+VQE_Genetron_Geothermal.label	ARC geotérmico
+VQE_Genetron_Geothermal.description	A câmara de reator avançada geotérmica, ARC na sigla em inglês, produz eletricidade a partir de gêiseres de vapor geotérmico. O motor exige manutenção regular, e a falta dela pode causar uma pane crítica dos componentes ARC. Ao contrário dos outros ARCs, porém, esta variante pode ser mantida por qualquer um, mesmo quem não estudou os geradores antigos. Projetados originalmente por {InventorFullName}, estes ARCs são raríssimos, mas também versáteis e poderosos. É um gerador avançado que pode ser melhorado para aceitar outros combustíveis, liberando novas habilidades poderosas. A pressão pode ser ajustada para reduzir a necessidade de manutenção, ao custo de gerar menos energia. Dá para calibrar a eficiência do ARC para aumentar de vez a energia gerada. Precisa ser posto sobre um gêiser de vapor e só pode ser construído e melhorado por colonos que estudaram os antigos geradores ARC.
+VQE_Genetron_SteamPowered.label	ARC a vapor
+VQE_Genetron_SteamPowered.description	A câmara de reator avançada a vapor, ARC na sigla em inglês, produz eletricidade a partir de gêiseres de vapor geotérmico. O motor exige manutenção regular, e a falta dela pode causar uma pane crítica dos componentes ARC. Ao contrário dos outros ARCs, porém, esta variante pode ser mantida por qualquer um, mesmo quem não estudou os geradores antigos. Projetados originalmente por {InventorFullName}, estes ARCs são raríssimos, mas também versáteis e poderosos. É um gerador avançado que pode ser melhorado para aceitar outros combustíveis, liberando novas habilidades poderosas. A pressão pode ser ajustada para reduzir a necessidade de manutenção, ao custo de gerar menos energia. Dá para calibrar a eficiência do ARC para aumentar de vez a energia gerada. A habilidade de impulso de vapor aumenta a geração por um tempo, mas exige um longo resfriamento depois. Precisa ser posto sobre um gêiser de vapor e só pode ser construído e melhorado por colonos que estudaram os antigos geradores ARC.
+VQE_Genetron_ThermalVent.label	ARC de respiro térmico
+VQE_Genetron_ThermalVent.description	A câmara de reator avançada de respiro térmico, ARC na sigla em inglês, produz eletricidade a partir de gêiseres de vapor geotérmico. O motor exige manutenção regular, e a falta dela pode causar uma pane leve que só pede componentes comuns para consertar. Ao contrário dos outros ARCs, porém, esta variante pode ser mantida por qualquer um, mesmo quem não estudou os geradores antigos. Projetados originalmente por {InventorFullName}, estes ARCs são raríssimos, mas também versáteis e poderosos. É um gerador avançado que pode ser melhorado para aceitar outros combustíveis, liberando novas habilidades poderosas. A pressão pode ser ajustada para reduzir a necessidade de manutenção, ao custo de gerar menos energia. Dá para calibrar a eficiência do ARC para aumentar de vez a energia gerada. A habilidade de impulso de vapor aumenta a geração por um tempo, mas exige um longo resfriamento depois. Precisa ser posto sobre um gêiser de vapor e só pode ser construído e melhorado por colonos que estudaram os antigos geradores ARC.
+VQE_Genetron_HeatPowered.label	ARC a calor
+VQE_Genetron_HeatPowered.description	A câmara de reator avançada a calor, ARC na sigla em inglês, produz eletricidade a partir de gêiseres de vapor geotérmico. O motor exige manutenção regular, e a falta dela pode causar uma pane leve que só pede componentes comuns para consertar. Ao contrário dos outros ARCs, porém, esta variante pode ser mantida por qualquer um, mesmo quem não estudou os geradores antigos. Projetados originalmente por {InventorFullName}, estes ARCs são raríssimos, mas também versáteis e poderosos. É um gerador avançado que pode ser melhorado para aceitar outros combustíveis, liberando novas habilidades poderosas. A pressão pode ser ajustada para reduzir a necessidade de manutenção, ao custo de gerar menos energia. Dá para calibrar a eficiência do ARC para aumentar de vez a energia gerada. A habilidade de impulso de vapor aumenta a geração por um tempo, mas exige um longo resfriamento depois. Este gerador continua funcionando mesmo durante uma erupção solar. Também dá para calibrar os componentes internos, reduzindo de vez a necessidade de manutenção do aparelho. Precisa ser posto sobre um gêiser de vapor e só pode ser construído e melhorado por colonos que estudaram os antigos geradores ARC.
+## DefInjected/ThingDef/Buildings_Misc.xml
+VQE_GenetronJunk.label	sucata de ARC
+VQE_GenetronJunk.description	Um pedaço retorcido de um ARC. As peças de valor sumiram, e todo o resto se degradou até virar inútil.
+VQE_AncientARCPart.label	peça de ARC antiga
+VQE_AncientARCPart.description	Um fragmento velho e enferrujado de um ARC. Provavelmente foi abandonado quando a obra parou. Talvez dê para desmontá-lo e tirar alguns componentes ARC valiosos.
+VQE_AncientARCPrototype_One.label	protótipo
+VQE_AncientARCPrototype_One.description	A estrutura enferrujada de um velho gerador de energia, incompleta e mal se aguentando de pé. A maioria das peças sumiu há muito tempo, saqueada ou destruída pelo tempo. O que sobrou é pouco mais que sucata, sem esperança de restauração. Talvez investigar a área ajude a achar a localização de outro protótipo.
+VQE_AncientARCPrototype_Two.label	protótipo
+VQE_AncientARCPrototype_Two.description	Um gerador abandonado. O maquinário está um pouco mais inteiro, mas continua inútil. Painéis quebrados, fios partidos e muita ferrugem mostram que ele nunca foi terminado. Está tomado pelo mato e esquecido, e só tem algumas peças para aproveitar. Talvez investigar a área ajude a achar a localização de outro protótipo.
+VQE_AncientARCPrototype_Two.modExtensions.0.descriptionOverride	Estudar o protótipo inacabado do gerador ARC. A informação que ele guarda pode ajudar a achar o que funciona.
+VQE_AncientARCPrototype_Three.label	protótipo
+VQE_AncientARCPrototype_Three.description	Um gerador quase completo, abandonado antes de chegar a funcionar. A estrutura é mais sólida, mas o interior está destruído: ferrugem, peças faltando e muito mato o tornam inútil. Só alguns materiais ainda dão para aproveitar, mas entre eles há alguns componentes ARC. Talvez investigar a área ajude a achar a localização de outro protótipo.
+VQE_AncientARCPrototype_Three.modExtensions.0.descriptionOverride	Estudar o protótipo inacabado do gerador ARC. A informação que ele guarda pode ajudar a achar o que funciona.
+VQE_AncientConstructionTruck.label	caminhão de obra antigo
+VQE_AncientConstructionTruck.description	O destroço enferrujado e tomado pelo mato de um grande caminhão de obra. Tudo que a ferrugem não comeu foi saqueado há muito tempo. Pelas carcaças de uma grande unidade geradora ainda amarradas na carroceria, provavelmente era usado na construção de um gerador ARC.
+VQE_AncientConstructionCrane.label	guindaste de obra antigo
+VQE_AncientConstructionCrane.description	O destroço enferrujado e tomado pelo mato de um grande guindaste de obra. Tudo que a ferrugem não comeu foi saqueado há muito tempo. Guindastes assim podiam construir os grandes geradores ARC, mas este não serve para mais nada: o maquinário está quebrado.
+VQE_AncientDigger.label	escavadeira antiga
+VQE_AncientDigger.description	O destroço enferrujado e tomado pelo mato de uma grande escavadeira. Tudo que a ferrugem não comeu foi saqueado há muito tempo. Uma escavadeira desse tamanho podia preparar o terreno para a construção de um gerador ARC, mas esta está em péssimo estado.
+VQE_EmptyConstructionPallet.label	palete de obra vazio
+VQE_EmptyConstructionPallet.description	Um palete de obra enferrujado. Está vazio.
+VQE_ConstructionPallet_Boxes.label	palete de obra com caixas
+VQE_ConstructionPallet_Boxes.description	Um palete de obra enferrujado com uma pilha de caixas de aço velhas e enferrujadas. Qualquer coisa de valor foi levada há muito tempo.
+VQE_ConstructionPallet_Scrap.label	palete de obra com sucata
+VQE_ConstructionPallet_Scrap.description	Um palete de obra enferrujado com um grande contêiner de sucata. Dá para revirar e recuperar um pouco de aço.
+VQE_ConstructionPallet_Components.label	palete de obra com componentes
+VQE_ConstructionPallet_Components.description	Um palete de obra enferrujado com um grande contêiner de componentes sucateados. Dá para revirar e recuperar alguns componentes industriais.
+VQE_ConstructionPallet_Chemfuel.label	palete de obra com galões
+VQE_ConstructionPallet_Chemfuel.description	Um palete de obra enferrujado com uma pilha de galões de combustível químico nunca usados. Dá para recuperar um pouco de combustível químico.
+VQE_ConstructionPallet_Wood.label	palete de obra com madeira
+VQE_ConstructionPallet_Wood.description	Um palete de obra enferrujado com uma grande pilha de madeira apodrecendo. Dá para recuperar um pouco da madeira mais seca.
+VQE_AncientResearchTerminal.label	terminal de pesquisa
+VQE_AncientResearchTerminal.description	Um terminal de computador antigo. Dá acesso a notas de pesquisa sobre uma unidade geradora ARC.
+VQE_AncientResearchTerminal.modExtensions.0.descriptionOverride	Estudar os dados deste terminal de pesquisa antigo. Podem trazer informações valiosas sobre o projeto ARC.
+VQE_AncientResearchTerminal_Off.label	terminal de pesquisa antigo
+VQE_AncientResearchTerminal_Off.description	Um terminal de computador antigo. Está sem energia ou simplesmente não funciona.
+VQE_AncientResearchTerminal_Cracked.label	terminal de pesquisa rachado
+VQE_AncientResearchTerminal_Cracked.description	Um terminal de computador antigo. A tela está rachada e qualquer componente de valor foi retirado.
+VQE_AncientResearchFiles.label	arquivos de pesquisa antigos
+VQE_AncientResearchFiles.description	Um velho arquivo de aço enferrujado, com pastas de notas de pesquisa sobre a construção de um gerador ARC.
+VQE_AncientResearchFiles.modExtensions.0.descriptionOverride	Estudar as pastas deste arquivo. Podem trazer informações valiosas sobre o projeto ARC.
+VQE_AncientResearchFiles_Off.label	arquivo de aço antigo
+VQE_AncientResearchFiles_Off.description	Um velho arquivo de aço enferrujado. Está completamente vazio.
+VQE_ExperimentalARCPart.label	peça experimental de ARC
+VQE_ExperimentalARCPart.description	Uma peça de maquinário bizarra, projetada para um grande gerador. Como estava coberta por uma lona, está relativamente inteira. Pode ser estudada para aprender algo sobre a unidade geradora ARC que ajude a decifrar os antigos dados de pesquisa deixados pelo inventor. Talvez dê para desmontá-la e tirar alguns componentes ARC valiosos.
+VQE_ExperimentalARCPart.modExtensions.0.descriptionOverride	Estudar o maquinário da peça experimental de ARC. Pode trazer informações valiosas sobre o projeto ARC.
+VQE_ExperimentalARCPart_Studied.label	peça experimental de ARC estudada
+VQE_ExperimentalARCPart_Studied.description	Uma peça de maquinário bizarra, projetada para um grande gerador. Como você já a estudou, pode desmontá-la para tirar peças.
+VQE_AncientChainlinkFence.label	alambrado antigo
+VQE_AncientChainlinkFence.description	Uma cerca antiga de postes de metal reforçados ligados por tela de arame enferrujada.
+VQE_OvergrownCryptosleepCasket.label	sarcófago de criptosono
+VQE_OvergrownCryptosleepCasket.description	Este sarcófago de criptosono está coberto de espinheiros e parece estar aqui há muito, muito tempo. Quem sabe o que tem dentro?
+VQE_AncientGenetron.label	ARC antigo
+VQE_AncientGenetron.description	Um antigo protótipo de ARC, arruinado pelo tempo e pela falta de manutenção. A maior parte do maquinário crítico foi saqueada há muito, o que impede qualquer restauração, mas desmontá-lo ainda pode render componentes valiosos para construir um ARC novinho. Estas ruínas antigas podem ser estudadas para aprender a construir e manter um ARC.
+VQE_AncientGeothermalGenetron.label	ARC geotérmico antigo
+VQE_AncientGeothermalGenetron.description	Um antigo ARC geotérmico, arruinado pelo tempo e pela falta de manutenção. A maior parte do maquinário crítico foi saqueada há muito, o que impede qualquer restauração, mas desmontá-lo ainda pode render componentes valiosos para construir um ARC novinho. Estas ruínas antigas podem ser estudadas para aprender a construir um ARC geotérmico.
+VQE_NuclearGenetronHusk.label	carcaça de ARC nuclear
+VQE_NuclearGenetronHusk.description	A carcaça arruinada de um ARC nuclear. Falta de manutenção, ou alguma outra crise imprevista, causou uma detonação devastadora que retorceu o metal até deixá-lo imprestável. A carcaça pode ser estudada para aprender a construir e manter um ARC nuclear, e também pode ser desmontada para recuperar alguns recursos.
+VQE_AncientOvergrownGenetron.label	ARC experimental
+VQE_AncientOvergrownGenetron.description	Um ARC misterioso, antigo e tomado pelo mato. Parece mais um protótipo funcional do que um produto acabado, agora todo coberto de espinheiros e sinais de idade. De algum jeito, apesar da idade, continua funcionando e gerando energia suficiente para as redes elétricas por perto. Qualquer mexida vai danificá-lo para sempre, mas talvez dê para tirar alguns componentes ARC dele.

@@ -1,0 +1,174 @@
+## DefInjected/WorkTypeDef/FSF_WorkTypes.xml
+FSFNurse.description	Cuidar dos doentes, levar comida, animá-los e cumprir as tarefas designadas. Enfermeiros cuidam de colonos, prisioneiros e animais.
+FSFNurse.gerundLabel	Cuidando
+FSFNurse.labelShort	Enfermagem
+FSFNurse.pawnLabel	Enfermeiro
+FSFNurse.verb	Cuidar de
+FSFSurgeon.description	Fazer cirurgias em colonos, prisioneiros e animais.
+FSFSurgeon.gerundLabel	Operando
+FSFSurgeon.labelShort	Cirurgia
+FSFSurgeon.pawnLabel	Cirurgião
+FSFSurgeon.verb	Operar
+FSFRearming.description	Rearmar defesas como torretas e armadilhas.
+FSFRearming.gerundLabel	Rearmando
+FSFRearming.labelShort	Rearmar
+FSFRearming.pawnLabel	Rearmador
+FSFRearming.verb	Rearmar
+FSFTraining.description	Domar animais selvagens e treinar animais domesticados.
+FSFTraining.gerundLabel	Treinando
+FSFTraining.labelShort	Treinar
+FSFTraining.pawnLabel	Treinador
+FSFTraining.verb	Treinar
+FSFButcher.description	Fazer ração e carnear.
+FSFButcher.gerundLabel	Carneando
+FSFButcher.labelShort	Carnear
+FSFButcher.pawnLabel	Açougueiro
+FSFButcher.verb	Carnear
+FSFRepair.description	Consertar prédios e objetos danificados ou quebrados.
+FSFRepair.gerundLabel	Consertando
+FSFRepair.labelShort	Consertar
+FSFRepair.pawnLabel	Reparador
+FSFRepair.verb	Consertar
+FSFDeconstruct.description	Desinstalar ou desmontar prédios, objetos, pisos e telhados.
+FSFDeconstruct.gerundLabel	Desmontando
+FSFDeconstruct.labelShort	Desmontar
+FSFDeconstruct.pawnLabel	Desmontador
+FSFDeconstruct.verb	Desmontar
+FSFHarvesting.description	Colher plantas crescidas.
+FSFHarvesting.labelShort	Colher
+FSFHarvesting.pawnLabel	Colhedor
+FSFHarvesting.verb	Colher
+FSFDrilling.description	Usar perfuratrizes profundas para extrair recursos.
+FSFDrilling.gerundLabel	Perfurando
+FSFDrilling.labelShort	Perfurar
+FSFDrilling.pawnLabel	Perfurador
+FSFDrilling.verb	Perfurar
+FSFDrugs.description	Fabricar drogas nas estações de trabalho.
+FSFDrugs.gerundLabel	Drogas
+FSFDrugs.labelShort	Drogas
+FSFDrugs.pawnLabel	Químico
+FSFDrugs.verb	Fabricar em
+FSFMachining.description	Fazer armas e ferramentas a partir de matéria-prima numa mesa de usinagem.
+FSFMachining.gerundLabel	Usinando
+FSFMachining.labelShort	Usinagem
+FSFMachining.pawnLabel	Maquinista
+FSFMachining.verb	Usinar em
+FSFFabrication.description	Fazer armas, armaduras, biônicos e componentes a partir de matéria-prima numa bancada de fabricação.
+FSFFabrication.gerundLabel	Fabricando
+FSFFabrication.labelShort	Fabricação
+FSFFabrication.pawnLabel	Fabricante
+FSFFabrication.verb	Fabricar em
+FSFRefining.description	Refinar materiais numa refinaria.
+FSFRefining.gerundLabel	Refinando
+FSFRefining.labelShort	Refinar
+FSFRefining.pawnLabel	Refinador
+FSFRefining.verb	Refinar
+FSFProduction.description	Fazer trabalho geral de produção de vários bens. Em geral é encher e esvaziar objetos de produção ou fazer tarefas simples.
+FSFProduction.gerundLabel	Produzindo
+FSFProduction.labelShort	Produção
+FSFProduction.pawnLabel	Produtor
+FSFProduction.verb	Produzir
+FSFSmelt.description	Operar fundições para tarefas como derreter escória ou armas.
+FSFSmelt.gerundLabel	Fundindo
+FSFSmelt.labelShort	Fundir
+FSFSmelt.pawnLabel	Fundidor
+FSFSmelt.verb	Fundir
+FSFStoneCut.description	Fazer blocos de pedra a partir de pedaços de rocha.
+FSFStoneCut.gerundLabel	Cortando pedra
+FSFStoneCut.labelShort	Cantaria
+FSFStoneCut.pawnLabel	Canteiro
+FSFStoneCut.verb	Cortar pedra
+FSFTransport.description	Preparar e descarregar cápsulas de transporte, caravanas e veículos.
+FSFTransport.gerundLabel	Transportando
+FSFTransport.pawnLabel	Encarregado de transporte
+FSFCremating.description	Fazer várias tarefas ligadas a cadáveres, como operar o crematório ou a fogueira para queimar roupas, drogas e corpos.
+FSFCremating.gerundLabel	Trabalhando
+FSFCremating.labelShort	Funerária
+FSFCremating.pawnLabel	Agente funerário
+FSFCremating.verb	Trabalhar
+FSFDeliver.description	Levar recursos às obras.
+FSFDeliver.gerundLabel	entregando
+FSFDeliver.pawnLabel	Carregador
+FSFDeliver.verb	Entregando
+FSFHauling.description	Levar as coisas aonde precisam estar.
+FSFHauling.gerundLabel	carregando
+FSFHauling.labelShort	carregar
+FSFHauling.pawnLabel	Carregador
+FSFHauling.verb	Carregar
+FSFScan.description	Fazer trabalhos complexos, como achar recursos debaixo da terra ou pelo mundo.
+FSFScan.gerundLabel	escaneando
+FSFScan.labelShort	Escanear
+FSFScan.pawnLabel	Escaneador
+FSFScan.verb	Escanear em
+## DefInjected/XmlExtensions.SettingsMenuDef/FSF_Complex_Jobs_Settings.xml
+FrozenSnowFoxComplexJobsSettings.label	FrozenSnowFox Complex Jobs
+FrozenSnowFoxComplexJobsSettings.settings.1.cachedText	Para qualquer mudança valer, é preciso reiniciar o jogo.\nSe ligar novos tipos de trabalho no meio de um save, troque os mecanoides existentes para que recebam os novos tipos.
+FrozenSnowFoxComplexJobsSettings.settings.1.text	Para qualquer mudança valer, é preciso reiniciar o jogo.\nSe ligar novos tipos de trabalho no meio de um save, troque os mecanoides existentes para que recebam os novos tipos.
+FrozenSnowFoxComplexJobsSettings.settings.4.cachedText	Opções do Complex Jobs
+FrozenSnowFoxComplexJobsSettings.settings.4.text	Opções do Complex Jobs
+FrozenSnowFoxComplexJobsSettings.settings.6.label	Tarefas de Anomaly no Estudo sombrio
+FrozenSnowFoxComplexJobsSettings.settings.8.cachedText	Move todas as tarefas ligadas ao Anomaly de outros tipos de trabalho para o Estudo sombrio e muda os requisitos do tipo para incluir Social.
+FrozenSnowFoxComplexJobsSettings.settings.8.text	Move todas as tarefas ligadas ao Anomaly de outros tipos de trabalho para o Estudo sombrio e muda os requisitos do tipo para incluir Social.
+FrozenSnowFoxComplexJobsSettings.settings.11.label	Tarefas convocado
+FrozenSnowFoxComplexJobsSettings.settings.13.cachedText	Permite fazer todas as tarefas convocado. Assim não é mais preciso desconvocar e convocar de novo para fazer uma tarefa.\nObs.: algumas tarefas ainda podem não funcionar convocado, e outras podem desconvocar a pessoa à força.
+FrozenSnowFoxComplexJobsSettings.settings.13.text	Permite fazer todas as tarefas convocado. Assim não é mais preciso desconvocar e convocar de novo para fazer uma tarefa.\nObs.: algumas tarefas ainda podem não funcionar convocado, e outras podem desconvocar a pessoa à força.
+FrozenSnowFoxComplexJobsSettings.settings.16.label	Resgate no combate a incêndio
+FrozenSnowFoxComplexJobsSettings.settings.18.cachedText	Adiciona uma cópia da tarefa Resgatar ao Combate a incêndio. Quem está nesse tipo de trabalho resgata primeiro os aliados caídos antes de apagar o fogo.\nObs.: é uma alternativa ao tipo Resgate, mas as duas opções podem ficar ligadas sem problema.
+FrozenSnowFoxComplexJobsSettings.settings.18.text	Adiciona uma cópia da tarefa Resgatar ao Combate a incêndio. Quem está nesse tipo de trabalho resgata primeiro os aliados caídos antes de apagar o fogo.\nObs.: é uma alternativa ao tipo Resgate, mas as duas opções podem ficar ligadas sem problema.
+FrozenSnowFoxComplexJobsSettings.settings.21.label	Cargos da ideologia são capazes
+FrozenSnowFoxComplexJobsSettings.settings.23.cachedText	Remove todos os tipos de trabalho desativados e as restrições de armas de todos os cargos da ideologia.
+FrozenSnowFoxComplexJobsSettings.settings.23.text	Remove todos os tipos de trabalho desativados e as restrições de armas de todos os cargos da ideologia.
+FrozenSnowFoxComplexJobsSettings.settings.26.label	Mecanoides são capazes
+FrozenSnowFoxComplexJobsSettings.settings.28.cachedText	Muda o campo canBeDoneByMechs de todas as tarefas de false para true.\nObs.: algumas tarefas quebram o jogo sem código extra para corrigi-las. Essas ficam de fora, por motivos óbvios.
+FrozenSnowFoxComplexJobsSettings.settings.28.text	Muda o campo canBeDoneByMechs de todas as tarefas de false para true.\nObs.: algumas tarefas quebram o jogo sem código extra para corrigi-las. Essas ficam de fora, por motivos óbvios.
+FrozenSnowFoxComplexJobsSettings.settings.31.label	Escravos são capazes
+FrozenSnowFoxComplexJobsSettings.settings.33.cachedText	Permite que escravos façam todos os tipos de trabalho, menos Carcereiro.
+FrozenSnowFoxComplexJobsSettings.settings.33.text	Permite que escravos façam todos os tipos de trabalho, menos Carcereiro.
+FrozenSnowFoxComplexJobsSettings.settings.36.label	Caixões de guerra são capazes
+FrozenSnowFoxComplexJobsSettings.settings.38.cachedText	Permite que caixões de guerra façam todos os tipos de trabalho.
+FrozenSnowFoxComplexJobsSettings.settings.38.text	Permite que caixões de guerra façam todos os tipos de trabalho.
+FrozenSnowFoxComplexJobsSettings.settings.41.label	Tipo de trabalho Limpar poluição
+FrozenSnowFoxComplexJobsSettings.settings.43.cachedText	Ativa o tipo de trabalho Limpar poluição, que move a tarefa de limpar poluição para um tipo próprio.
+FrozenSnowFoxComplexJobsSettings.settings.43.text	Ativa o tipo de trabalho Limpar poluição, que move a tarefa de limpar poluição para um tipo próprio.
+FrozenSnowFoxComplexJobsSettings.settings.46.label	Tipo de trabalho Tirar neve
+FrozenSnowFoxComplexJobsSettings.settings.48.cachedText	Ativa o tipo de trabalho Tirar neve, que move a tarefa de tirar neve para um tipo próprio.
+FrozenSnowFoxComplexJobsSettings.settings.48.text	Ativa o tipo de trabalho Tirar neve, que move a tarefa de tirar neve para um tipo próprio.
+FrozenSnowFoxComplexJobsSettings.settings.51.label	Tipo de trabalho Converter
+FrozenSnowFoxComplexJobsSettings.settings.53.cachedText	Ativa o tipo de trabalho Converter, que move a tarefa de converter para um tipo próprio.
+FrozenSnowFoxComplexJobsSettings.settings.53.text	Ativa o tipo de trabalho Converter, que move a tarefa de converter para um tipo próprio.
+FrozenSnowFoxComplexJobsSettings.settings.56.label	Tipo de trabalho Invadir sistemas
+FrozenSnowFoxComplexJobsSettings.settings.58.cachedText	Ativa o tipo de trabalho Invadir sistemas, que move todas as tarefas de invasão de sistemas para um tipo próprio.
+FrozenSnowFoxComplexJobsSettings.settings.58.text	Ativa o tipo de trabalho Invadir sistemas, que move todas as tarefas de invasão de sistemas para um tipo próprio.
+FrozenSnowFoxComplexJobsSettings.settings.61.label	Tipo de trabalho Mecanoides
+FrozenSnowFoxComplexJobsSettings.settings.63.cachedText	Ativa o tipo de trabalho Mecanoides, que move todas as tarefas ligadas a mecanoides para um tipo próprio.
+FrozenSnowFoxComplexJobsSettings.settings.63.text	Ativa o tipo de trabalho Mecanoides, que move todas as tarefas ligadas a mecanoides para um tipo próprio.
+FrozenSnowFoxComplexJobsSettings.settings.66.label	Tipo de trabalho Juntar
+FrozenSnowFoxComplexJobsSettings.settings.68.cachedText	Ativa o tipo de trabalho Juntar, que move a tarefa de juntar pilhas do Transporte para um tipo próprio.
+FrozenSnowFoxComplexJobsSettings.settings.68.text	Ativa o tipo de trabalho Juntar, que move a tarefa de juntar pilhas do Transporte para um tipo próprio.
+FrozenSnowFoxComplexJobsSettings.settings.71.label	Tipo de trabalho Pintar
+FrozenSnowFoxComplexJobsSettings.settings.73.cachedText	Ativa o tipo de trabalho Pintar, que move todas as tarefas de pintura para um tipo próprio.
+FrozenSnowFoxComplexJobsSettings.settings.73.text	Ativa o tipo de trabalho Pintar, que move todas as tarefas de pintura para um tipo próprio.
+FrozenSnowFoxComplexJobsSettings.settings.76.label	Tipo de trabalho Cuidar da prisão
+FrozenSnowFoxComplexJobsSettings.settings.78.cachedText	Ativa o tipo de trabalho Cuidar da prisão, que move todas as tarefas de cuidado com prisioneiros para um tipo próprio.
+FrozenSnowFoxComplexJobsSettings.settings.78.text	Ativa o tipo de trabalho Cuidar da prisão, que move todas as tarefas de cuidado com prisioneiros para um tipo próprio.
+FrozenSnowFoxComplexJobsSettings.settings.81.label	Tipo de trabalho Podar
+FrozenSnowFoxComplexJobsSettings.settings.83.cachedText	Ativa o tipo de trabalho Podar, que move todas as tarefas de poda para um tipo próprio.
+FrozenSnowFoxComplexJobsSettings.settings.83.text	Ativa o tipo de trabalho Podar, que move todas as tarefas de poda para um tipo próprio.
+FrozenSnowFoxComplexJobsSettings.settings.86.label	Tipo de trabalho Resgate
+FrozenSnowFoxComplexJobsSettings.settings.88.cachedText	Ativa o tipo de trabalho Resgate, que adiciona tarefas próprias focadas em resgatar aliados caídos.
+FrozenSnowFoxComplexJobsSettings.settings.88.text	Ativa o tipo de trabalho Resgate, que adiciona tarefas próprias focadas em resgatar aliados caídos.
+FrozenSnowFoxComplexJobsSettings.settings.91.label	Tipo de trabalho Autotratamento
+FrozenSnowFoxComplexJobsSettings.settings.93.cachedText	Ativa o tipo de trabalho Autotratamento, que move todas as tarefas de tratar a si mesmo para um tipo próprio. A pessoa ainda precisa ter a opção de autotratamento ligada. Serve para tratar a si mesmo sem fazer trabalho de médico nos outros.
+FrozenSnowFoxComplexJobsSettings.settings.93.text	Ativa o tipo de trabalho Autotratamento, que move todas as tarefas de tratar a si mesmo para um tipo próprio. A pessoa ainda precisa ter a opção de autotratamento ligada. Serve para tratar a si mesmo sem fazer trabalho de médico nos outros.
+FrozenSnowFoxComplexJobsSettings.settings.96.label	Tipo de trabalho Abate
+FrozenSnowFoxComplexJobsSettings.settings.98.cachedText	Ativa o tipo de trabalho Abate, que move todas as tarefas de abate de animais para um tipo próprio.
+FrozenSnowFoxComplexJobsSettings.settings.98.text	Ativa o tipo de trabalho Abate, que move todas as tarefas de abate de animais para um tipo próprio.
+FrozenSnowFoxComplexJobsSettings.settings.101.label	Tipo de trabalho Alisar
+FrozenSnowFoxComplexJobsSettings.settings.103.cachedText	Ativa o tipo de trabalho Alisar, que move todas as tarefas de alisar superfícies para um tipo próprio.
+FrozenSnowFoxComplexJobsSettings.settings.103.text	Ativa o tipo de trabalho Alisar, que move todas as tarefas de alisar superfícies para um tipo próprio.
+FrozenSnowFoxComplexJobsSettings.settings.106.label	Tipo de trabalho Domar
+FrozenSnowFoxComplexJobsSettings.settings.108.cachedText	Ativa o tipo de trabalho Domar, que move todas as tarefas de domar animais para um tipo próprio.
+FrozenSnowFoxComplexJobsSettings.settings.108.text	Ativa o tipo de trabalho Domar, que move todas as tarefas de domar animais para um tipo próprio.
+FrozenSnowFoxComplexJobsSettings.settings.111.label	Tipo de trabalho Ensinar
+FrozenSnowFoxComplexJobsSettings.settings.113.cachedText	Ativa o tipo de trabalho Ensinar, que move a tarefa de ensinar crianças dos Cuidados infantis para um tipo próprio.
+FrozenSnowFoxComplexJobsSettings.settings.113.text	Ativa o tipo de trabalho Ensinar, que move a tarefa de ensinar crianças dos Cuidados infantis para um tipo próprio.

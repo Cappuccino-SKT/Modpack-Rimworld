@@ -1,0 +1,221 @@
+## DefInjected/ThingDef/Items_Food.xml
+AB_SlimeMeal.label	refeição de gosma
+AB_SlimeMeal.description	Estes pedaços de gosma endurecida servem como última alternativa a morrer de fome. Quase incomível e absolutamente nojento.
+## DefInjected/ThingDef/Items_Resource_RawPlant.xml
+AB_PinkRawFungus.label	fungo rosa
+AB_PinkRawFungus.description	Fungo cru. Esta variedade demora mais para apodrecer, o que a torna mais valiosa.
+AB_BlueRawFungus.label	fungo azul
+AB_BlueRawFungus.description	Apesar da aparência esquisita, estes cogumelos são muito gostosos, até crus.
+AB_PurpleRawFungus.label	fungo roxo
+AB_PurpleRawFungus.description	Fungo cru. Estes fungos são mais nutritivos que o normal, mas têm mais chance de causar intoxicação alimentar.
+AB_RawSlime.label	gosma
+AB_RawSlime.description	Gosma crua. Isto é comestível. Mal e mal.
+AB_RawCrystalHorn.label	chifre-cristal
+AB_RawCrystalHorn.description	Chifre-cristal cru. Só em parte orgânico: parte da estrutura é claramente cristalina. Comestível, mas desconfortavelmente crocante.
+AB_RawFrostLeaf.label	folha-gélida
+AB_RawFrostLeaf.description	Estas plantas translúcidas parecem crescer em quase qualquer lugar, até em áreas cobertas de neve. Podem ser secas no fogo e usadas para alimentar herbívoros com eficiência.
+AB_RawTentacularFruit.label	fruto tentacular
+AB_RawTentacularFruit.description	Os nódulos azuis crescem na ponta de cada galho/tentáculo de uma planta tentacular e de vez em quando soltam um chocalhar sinistro.
+AB_RawIashiphus.label	fruto de iashiphus
+AB_RawIashiphus.description	O fruto carnudo e vermelho-vivo de uma planta iashiphus.
+AB_RawBrownBarrelCactus.label	cacto-barril marrom
+AB_RawBrownBarrelCactus.description	Os bulbos cheios de água de um cacto-barril marrom. Bem sem gosto.
+AB_RawSugarFamewort.label	famewort-doce
+AB_RawSugarFamewort.description	Estes bulbos macios são excepcionalmente doces, um condimento ideal para qualquer prato.
+AB_RawBloodBouquet.label	buquê de sangue
+AB_RawBloodBouquet.description	Estes frutos parecem tão duros quanto o tronco da planta de onde são colhidos, e igualmente cobertos de espinhos. A polpa tem gosto de carne encharcada de sangue, e herbívoros se recusam a comê-la.
+AB_BumbledroneFood.label	geleia de zangão-bola
+AB_BumbledroneFood.description	Esta bolota de matéria orgânica é produzida pelos zangões-bola cuidadores, uma casta que nunca sai da parte subterrânea das colmeias. Sustenta os zangões-bola que precisam sair da colmeia por qualquer motivo, como coletar ou caçar.
+AB_GiantSeeds.label	sementes de girassol gigante
+AB_GiantSeeds.description	Sementes de girassol são mais comidas como petisco do que como parte de uma refeição. Também servem de guarnição ou ingrediente em várias receitas. Estas sementes são gigantescas!
+AB_RawRagadast.label	ragadast
+AB_RawRagadast.description	Frutas de ragadast cruas.
+## DefInjected/ThingDef/Items_Resource_Shell.xml
+AB_Bullet_Shell_Tar.label	projétil de piche
+## DefInjected/ThingDef/Items_Resource_Stuff.xml
+AB_AlcyoniteChunk.label	pedaço de alcionita
+AB_AlcyoniteChunk.description	A alcionita é uma variação raríssima da pedra preciosa almandina. Muito forte, corta aço com facilidade, mas é maleável e tem propriedades piezoelétricas interessantes.
+AB_CrystalWood.label	madeira cristalina
+AB_CrystalWood.description	Estes fios cristalinos quebradiços podem ser extraídos de flores de cristal. Não pegam fogo, mas não são nada fortes. Por dentro, são formados por uma rede fina de cristais exóticos, uma estrutura incrivelmente boa em manter a temperatura constante.
+AB_CrystalWood.stuffProps.stuffAdjective	cristalino
+GU_RedWood.label	madeira vermelha
+GU_RedWood.description	Esta madeira avermelhada é estranhamente forte e solta um cheiro adocicado. Menos inflamável que a madeira terrestre, mas bem feia.
+GU_RedWood.stuffProps.stuffAdjective	de madeira vermelha
+AB_MushroomWoodLog.label	talos de cogumelo
+AB_MushroomWoodLog.description	Estes talos de cogumelo endureceram com o tempo até ficarem quase tão firmes quanto uma madeira de baixa qualidade. Muito inflamáveis e pouco resistentes.
+AB_MushroomWoodLog.stuffProps.stuffAdjective	de talo de cogumelo
+AB_CordaxResin.label	resina de cordax
+AB_CordaxResin.description	Pedaços secos de resina de cordax. Uma pasta viscosa de compostos orgânicos, esse líquido parecido com néctar é usado pela planta carnívora cordax-lamentosa para prender insetos. É extremamente grudento e serve como um vedante muito eficiente.
+AB_AsphaltBucket.label	balde de asfalto
+AB_AsphaltBucket.description	O asfalto, ou betume, é um líquido ou semissólido preto, grudento e muito viscoso, feito quase só de petróleo. Está presente na maioria dos petróleos crus e em alguns depósitos naturais, como os poços de piche.\n\nO asfalto pode ser usado para construir estradas asfaltadas, o que aumenta muito o deslocamento em terrenos difíceis.
+AB_Propane.label	propano
+AB_Propane.description	Um combustível versátil. Pode ser convertido em quimicombustível ou usado como combustível em construções específicas a propano, como aquecedores e fogões. Insira aqui uma piada boba e batida sobre gás de cozinha (sim, já ouvi todas, você não é original).
+AB_AncientBone_Stuff.label	osso antigo
+AB_AncientBone_Stuff.description	Um material de construção resistente feito dos restos de criaturas mortas há muito tempo. Mesmo velho e quebradiço, pode ser trabalhado como madeira em estruturas e móveis.
+## DefInjected/ThingDef/Plants_Crags_Polluted.xml
+AB_ToxicGamma.label	gama tóxica
+AB_ToxicGamma.description	Uma enorme planta globular bioluminescente. Pode servir de lâmpada solar natural de luz escura para cultivar plantas comuns, embora o ambiente tóxico onde cresce não seja o melhor para o cultivo. Plantas sensíveis à luz, como stikehr domesticado e cogumelos, devem ficar bem longe dela.\n\nDetalhes da planta: a gama tóxica é uma planta selvagem. Não precisa de luz e produz sozinha 100% de luz escura, o bastante para cultivar outras plantas em volta.\n\nBaseado na arte de Yevheniia Rodina, https://dribbble.com/Rodina
+AB_PollutedStikehr.label	stikehr poluído
+AB_PollutedStikehr.description	Um cogumelo alienígena gigante que brilha na estranha névoa escurecedora. Este stikehr se adaptou a um ambiente muito poluído e dá uma quantidade mirrada de madeira.\n\nDetalhes da planta: o stikehr poluído é uma planta selvagem que só cresce em terreno poluído. Não precisa de luz e produz sozinho 50% de luz escura, o que não basta para cultivar outras plantas em volta. Pode ser colhido para madeira comum.
+## DefInjected/ThingDef/Plants_FeraliskJungle.xml
+AB_RedBugloss.label	buglossa vermelha
+AB_RedBugloss.description	Uma das plantas mais esquisitas da Terra, modificada geneticamente para prosperar em ambientes úmidos e quentes.
+AB_Gomphoeria.label	gonfoéria
+AB_Gomphoeria.description	Uma planta alta fora do comum, com nódulos rosa-vivo. Os nódulos são levemente tóxicos para humanos e soltam um cheiro estranho de fruta podre, por isso ela é considerada totalmente incomível.
+AB_Aaklac.label	aaklac
+AB_Aaklac.description	Uma flor enorme e rara encontrada nas selvas mais fundas. A cor marcante e o cheiro agradável a tornam popular em jardinagem, se for possível tirá-la da selva profunda, claro.\n\nBaseado na arte de Rob Smyth, https://robsmythart.com/projects
+AB_JungleTree.label	árvore da selva profunda
+AB_JungleTree.description	Uma árvore antiga e altíssima, de folhagem densa e raízes grossas e retorcidas; sua copa faz parte do teto quase impenetrável da selva profunda.\n\nBaseado em arte conceitual de plantas para Guild Wars.
+## DefInjected/ThingDef/Plants_FeraliskJungle_Polluted.xml
+AB_JungleTree_Polluted.label	polux da selva profunda
+AB_JungleTree_Polluted.description	Esta árvore polux da selva se adaptou tão perfeitamente ao solo poluído e às toxinas no ar que nem precisa limpar a poluição do ambiente.\n\nDetalhes da planta: as árvores polux da selva profunda são plantas selvagens e precisam de fertilidade mínima de 0,05. Só crescem em terreno poluído. Podem ser colhidas para pequenas quantidades de madeira vermelha. Ideologias amantes de árvores não ligam muito para o corte dessas árvores esquisitas.\n\nBaseado na arte de Corndoggy e Motones, https://www.deviantart.com/motones/art/Xeno-Plants-503932885
+AB_WeepingToxberry.label	toxibaga-chorona
+AB_WeepingToxberry.description	Um arbusto baixo adaptado a toxinas, com bagas tão absurdamente tóxicas que nenhum animal se atreveria a comê-las.\n\nDetalhes da planta: difícil de atravessar, atrasa quem passa por cima. Só cresce em áreas poluídas.\n\nBaseado na arte de Rob Smyth, https://robsmythart.com/projects
+## DefInjected/ThingDef/Plants_ForsakenCrags.xml
+AB_GiantStikehr.label	stikehr gigante
+AB_GiantStikehr.description	Um cogumelo alienígena gigante que brilha na estranha névoa escurecedora. Ao contrário das variedades domesticadas menores, o stikehr gigante cresce em ambientes com luz, desde que protegido pelas névoas dos Abandonados. O talo é tão endurecido que, para todos os efeitos, conta como madeira.\n\nDetalhes da planta: o stikehr gigante é uma planta cultivada que também aparece na natureza e precisa de fertilidade mínima de 0,7. Não precisa de luz e produz sozinho 50% de luz, o que não basta para cultivar outras plantas em volta. Pode ser colhido para madeira comum.\n\nBaseado na arte de Tyson Roberts, https://www.artstation.com/tyson
+AB_GiantSeptimum.label	septimum gigante
+AB_GiantSeptimum.description	Esta planta septimum cresceu até um tamanho enorme, com uma copa florida do tamanho de uma pessoa. Septimuns domesticados são fonte de fibras Ultima, mas este exemplar é velho demais e suas fibras são duras demais para uso prático.\n\nDetalhes da planta: o septimum gigante é uma planta selvagem que não pode ser cultivada e precisa de fertilidade mínima de 0,7. Não precisa de luz.
+AB_GlowingGrass.description	Grama selvagem. Cresce em qualquer lugar com um pouco de luz e solo minimamente fértil.
+AB_WildRadagast.label	ragadast selvagem
+AB_WildRadagast.description	Esta planta alienígena retorcida dá pequenas frutas brilhantes que podem ser colhidas e comidas. As frutas de ragadast servem de base para um meio de cultura que estabiliza plantas gama.\n\nDetalhes da planta: o ragadast selvagem é uma planta selvagem que não pode ser cultivada e precisa de fertilidade mínima de 0,7. Não precisa de luz e produz sozinho 50% de luz, o que não basta para cultivar outras plantas em volta.
+AB_GiantGamma.label	gama gigante
+AB_GiantGamma.description	Como muitas outras plantas do planeta natal dos Abandonados, esta enorme planta globular é bioluminescente. Exemplares menores servem de luz decorativa, mas este exemplar selvagem emite tanta luz que pode ser usado como lâmpada solar natural para cultivar plantas comuns. Plantas sensíveis à luz, como stikehr domesticado e cogumelos, devem ficar bem longe dela.\n\nDetalhes da planta: a gama gigante é uma planta cultivada que também aparece na natureza e precisa de fertilidade mínima de 0,7. Não precisa de luz e produz sozinha 100% de luz, o bastante para cultivar outras plantas em volta.\n\nInspirado numa coleção do iStockPhoto: https://www.istockphoto.com/en/vector/beautiful-fantasy-mushrooms-set-gm665380048-121272853
+## DefInjected/ThingDef/Plants_GallatrossGraveyard.xml
+AB_TangleTea.label	chá-emaranhado
+AB_TangleTea.description	Esta planta estranha parece ser de origem alienígena e não parece própria para consumo humano. O nome popular vem do formato de saquinho de chá das flores e da seiva muito grudenta.\n\nInspirado na arte de Desiree-m. A página no DeviantArt não existe mais :(
+AB_EuphorbiaRimworldia.label	euphorbia rimworldia
+AB_EuphorbiaRimworldia.description	Uma planta do gênero euphorbia, as chamadas eufórbias. Esta se adaptou a climas áridos e guarda muita água nas folhas cobertas de espinhos.
+AB_DeadBowerTree.label	árvore-caramanchão morta
+AB_DeadBowerTree.description	Apesar do nome popular, a árvore-caramanchão morta não está morta de verdade, só é excepcionalmente adaptada a sobreviver no clima árido. A árvore produz folhas enormes a cada poucas décadas. Essas folhas captam energia por fotossíntese, e a energia química fica guardada em pústulas químicas marrons que funcionam como baterias naturais. A árvore então gasta essa energia aos poucos nos anos seguintes e só produz mais folhas quando ela acaba.
+## DefInjected/ThingDef/Plants_GelatinousSuperorganism.xml
+AB_Slimecasia.label	gosmocásia
+AB_Slimecasia.description	Embora à primeira vista pareça uma planta independente, as raízes estão intimamente interligadas com o resto do superorganismo gelatinoso.
+AB_SlimyFern.label	samambaia gosmenta
+AB_SlimyFern.description	Embora à primeira vista pareça uma planta independente, as raízes estão intimamente interligadas com o resto do superorganismo gelatinoso.
+AB_TallSlimyGrass.label	grama alta gosmenta
+AB_TallSlimyGrass.description	Grama alta selvagem. Atrasa quem passa por cima.
+AB_SlimyTree.label	árvore gosmenta
+AB_SlimyTree.description	Esta árvore não parece totalmente sólida. Olhando melhor, não é um ser independente: as raízes se fundem perfeitamente com o chão gelatinoso endurecido.
+AB_LargeSlimyTree.label	árvore gosmenta grande
+AB_LargeSlimyTree.description	Esta árvore não parece totalmente sólida. Olhando melhor, não é um ser independente: as raízes se fundem perfeitamente com o chão gelatinoso endurecido.
+## DefInjected/ThingDef/Plants_Gelatinous_Polluted.xml
+AB_ToxiBulb.label	toxibulbo
+AB_ToxiBulb.description	Este bulbo gosmento parece se alimentar do terreno poluído como um parasita.
+## DefInjected/ThingDef/Plants_Graveyard_Polluted.xml
+AB_EuphorbiaDesiccata.label	euphorbia desiccata
+AB_EuphorbiaDesiccata.description	Uma planta do gênero euphorbia, as chamadas eufórbias. É uma variedade da euphorbia rimworldia adaptada a ambientes poluídos.
+## DefInjected/ThingDef/Plants_IdyllicMeadows.xml
+AB_Flowers.description	Um punhado de flores coloridas.
+AB_GargantuanLithops.label	lithops gigantesco
+AB_GargantuanLithops.description	Lithops é um gênero de suculentas conhecidas como plantas-pedra ou pedras-vivas, pela aparência de pedra que as deixa se misturar às rochas em volta e evitar ser comidas. Este lithops gigantesco foi modificado geneticamente para juntar de fato pequenas quantidades de metal e pedra e incorporá-las à sua estrutura. Quem disse que geneticista não tem senso de humor?\n\nDetalhes da planta: o lithops gigantesco é uma planta selvagem que não pode ser cultivada e precisa de fertilidade mínima de 0,7. Pode ser colhido para aço e um pedaço de pedra.
+AB_GiantFlower.label	hibisco mutante gigante
+AB_GiantFlower.description	Flores gigantes modificadas geneticamente por uma empresa de genética há muito esquecida, usando o genoma de um hibisco. Parecem florir quase sem parar. Os talos não são fortes o bastante para substituir madeira, mas elas são incrivelmente bonitas.\n\nDetalhes da planta: o hibisco mutante gigante é uma planta selvagem que não pode ser cultivada. Muito bonito.\n\nBaseado num tileset da Kokoro Reflections: https://kokororeflections.com/product/kr-flower-forest-tileset-for-rpgs/
+AB_GiantSunflower.label	girassol gigante
+AB_GiantSunflower.description	Flores gigantes modificadas geneticamente por uma empresa de genética há muito esquecida, usando o genoma do girassol comum. Parecem florir quase sem parar. Os talos são muito fortes e duráveis, então podem ser cortados e usados no lugar de madeira, e a flor ainda dá sementes de girassol que animais e colonos podem comer.\n\nDetalhes da planta: o girassol gigante é uma planta cultivada que também aparece na natureza e precisa de fertilidade mínima de 0,7. Pode ser colhido para madeira e sementes de girassol gigante.\n\nBaseado num tileset da Kokoro Reflections: https://kokororeflections.com/product/kr-flower-forest-tileset-for-rpgs/
+AB_GiantTulip.label	tulipas gigantes
+AB_GiantTulip.description	Flores gigantes modificadas geneticamente por uma empresa de genética há muito esquecida, usando o genoma de uma tulipa. Parecem florir quase sem parar. Os talos são muito fortes e duráveis, então podem ser cortados e usados no lugar de madeira.\n\nDetalhes da planta: a tulipa gigante é uma planta cultivada que também aparece na natureza e precisa de fertilidade mínima de 0,7. Pode ser colhida para madeira.\n\nBaseado num tileset da Kokoro Reflections: https://kokororeflections.com/product/kr-flower-forest-tileset-for-rpgs/
+## DefInjected/ThingDef/Plants_Meadows_Polluted.xml
+AB_ToxiGrass.label	toxigrama
+AB_ToxiGrass.description	Melhor não comer isso...
+AB_GiantToxicFlower.label	flor tóxica gigante
+AB_GiantToxicFlower.description	Uma flor gigante que floresce sem parar, num rosa-vivo perigoso. O talo pode ser cortado e usado no lugar de madeira.\n\nDetalhes da planta: flores tóxicas gigantes são plantas selvagens que só crescem em solo poluído. Podem ser colhidas para quantidades mirradas de madeira.
+## DefInjected/ThingDef/Plants_MechanoidIntrusion.xml
+AB_SessileMechanoid.label	árvore mecanoide séssil
+AB_SessileMechanoid.description	Isto já foi uma árvore. Os mecanoides reaproveitaram suas células numa abominação meio árvore, meio mecanoide, com um propósito desconhecido. Talvez dê para tirar um pouco de madeira dela.\n\nInspirado na arte de Desiree-m. A página no DeviantArt não existe mais :(
+AB_HardyGrass.label	grama resistente
+AB_HardyGrass.description	Grama selvagem. Cresce em qualquer lugar com um pouco de luz e solo minimamente fértil.
+## DefInjected/ThingDef/Plants_MiasmicMangrove.xml
+AB_MangroveTree.label	árvore de mangue
+AB_MangroveTree.description	Uma árvore que cresce em água salgada ou salobra. Tem um sistema complexo de filtragem de sal e de raízes para aguentar a imersão em água salgada, e é adaptada ao pouco oxigênio da lama encharcada.\n\nDetalhes da planta: a árvore de mangue é uma planta cultivada que também aparece na natureza e precisa de fertilidade mínima de 1. Pode ser colhida para madeira.
+AB_ParasiticMangrove.label	mangue parasita
+AB_ParasiticMangrove.description	Uma planta esquisita e colorida, adaptada para tirar nutrientes das árvores de mangue. As raízes são cobertas de farpas que furam e se integram às raízes das árvores de mangue, agindo como um parasita. A seiva é levemente venenosa para muitos animais, mas os primatas parecem imunes, e ela pode até ser usada como remédio de ervas rústico.\n\nDetalhes da planta: o mangue parasita é uma planta selvagem que não pode ser cultivada e precisa de fertilidade mínima de 1. Pode ser colhido para remédio de ervas.\n\nBaseado na arte de Tyson Roberts, https://www.artstation.com/tyson
+AB_MangrovePalm.label	palmeira de mangue
+AB_MangrovePalm.description	Uma palmeira adaptada às condições do mangue.\n\nBaseado na arte de Tyson Roberts, https://www.artstation.com/tyson
+## DefInjected/ThingDef/Plants_MycoticJungle.xml
+AB_Glowstool.label	cogumelo-brilho
+AB_Glowstool.description	Um pequeno cogumelo marrom típico de cavernas. Tem cheiro de pano velho e sujo tirado do estômago de um muffalo podre, mas é surpreendentemente gostoso cozido. Esta variante se adaptou à vida ao ar livre, mas dá pouquíssimos chapéus comestíveis na colheita.\n\nDetalhes da planta: o cogumelo-brilho é uma planta cultivada que também aparece na natureza e precisa de fertilidade mínima de 0,95. Pode ser colhido para fungo cru.
+AB_LilacBeacon.label	farol-lilás
+AB_LilacBeacon.description	O farol-lilás é um cogumelo alto de chapéu roxo-vivo. É bem mais nutritivo que outros fungos, mas tem mais risco de pesar no estômago. Esta variante se adaptou à vida ao ar livre, mas dá pouquíssimos chapéus comestíveis na colheita.\n\nDetalhes da planta: o farol-lilás é uma planta cultivada que também aparece na natureza e precisa de fertilidade mínima de 0,95. Pode ser colhido para fungo roxo cru.
+AB_WitchesOyster.label	ostra-das-bruxas
+AB_WitchesOyster.description	Uma pequena colônia ramificada de fungos com aroma forte. A ostra-das-bruxas dá chapéus que demoram bastante para estragar.\n\nDetalhes da planta: a ostra-das-bruxas é uma planta cultivada que também aparece na natureza e precisa de fertilidade mínima de 0,95. Pode ser colhida para fungo rosa cru.\n\nBaseado na arte de Alex Konstad, http://www.alexkonstad.com/
+AB_AgaricusDomeCap.label	agaricus-cúpula
+AB_AgaricusDomeCap.description	Tudo neste fungo grita "sou tóxico, fique longe de mim". Claro que isso não impede uns espertinhos de consumi-lo como droga. O agaricus-cúpula é um fungo psicotrópico e deve ser consumido com extrema cautela, se for.\n\nDetalhes da planta: o agaricus-cúpula é uma planta cultivada que também aparece na natureza e precisa de fertilidade mínima de 0,95. Pode ser colhido para fungo psicotrópico.\n\nBaseado na arte de Alex Konstad, http://www.alexkonstad.com/
+AB_Agarilux.label	agarilux
+AB_Agarilux.description	Um cogumelo roxo enorme. O tamanho e as protuberâncias brilhantes o tornam lindo de ver. Esta variante de agarilux se adaptou à vida ao ar livre, mas dá pouquíssimos chapéus comestíveis na colheita.\n\nDetalhes da planta: o agarilux é uma planta cultivada que também aparece na natureza e precisa de fertilidade mínima de 0,95. Pode ser colhido para fungo roxo cru.
+AB_GiantAgarilux.label	agarilux gigante
+AB_GiantAgarilux.description	Um cogumelo roxo colossal. O tamanho e as protuberâncias brilhantes o tornam lindo de ver. O talo endureceu, ficando firme como uma madeira fraca.\n\nDetalhes da planta: o agarilux gigante é uma planta cultivada que também aparece na natureza e precisa de fertilidade mínima de 0,95. Pode ser colhido para talos de cogumelo.
+AB_ArbuscularMycorrhiza.label	micorriza arbuscular
+AB_ArbuscularMycorrhiza.description	Uma micorriza é uma associação simbiótica entre um fungo e uma planta. Este organismo é muito avançado: os dois simbiontes quase se fundiram numa só criatura, que mantém as estruturas de sustentação da árvore original (o tronco) e os chapéus e o micélio do fungo original. Dá para colher um pouco de madeira do tronco.\n\nDetalhes da planta: a micorriza arbuscular é uma planta cultivada que também aparece na natureza e precisa de fertilidade mínima de 0,95. Pode ser colhida para madeira comum.\n\nBaseado na arte de Aphrodite: https://www.artstation.com/artwork/3ol4AB
+AB_DribblingCap.label	chapéu-babão
+AB_DribblingCap.description	Um enorme cogumelo rosa que baba sem parar uma substância forte, parecida com resina. Essa substância é uma neurotoxina potente que poderia ser extraída e usada como arma.\n\nDetalhes da planta: o chapéu-babão é uma planta cultivada que também aparece na natureza e precisa de fertilidade mínima de 0,95. Pode ser colhido para dardos venenosos poderosos de uso único.\n\nBaseado na arte de Alex Konstad, http://www.alexkonstad.com/
+AB_RecurvedStropharia.label	stropharia recurvada
+AB_RecurvedStropharia.description	Um cogumelo grande e acinzentado. O tamanho e as protuberâncias brilhantes o tornam lindo de ver. O talo endureceu, ficando firme como uma madeira fraca.\n\nDetalhes da planta: a stropharia recurvada é uma planta cultivada que também aparece na natureza e precisa de fertilidade mínima de 0,95. Pode ser colhida para talos de cogumelo.\n\nBaseado na arte de Alex Konstad, http://www.alexkonstad.com/
+AB_SlimyPholiota.label	pholiota gosmenta
+AB_SlimyPholiota.description	Um cogumelo rosa-azulado que secreta uma substância gosmenta que atrai insetos. A substância paralisa os insetos e acaba matando-os, e o fungo os usa como adubo. Por mais estranho que pareça, a gosma dá a este fungo um sabor muito rico, e ele pode ser comido até cru.\n\nDetalhes da planta: a pholiota gosmenta é uma planta cultivada que também aparece na natureza e precisa de fertilidade mínima de 0,95. Pode ser colhida para fungo azul cru.\n\nBaseado na arte de Alex Konstad, http://www.alexkonstad.com/
+AB_GlowingAgarilux.label	agarilux brilhante
+AB_GlowingAgarilux.description	Um cogumelo roxo enorme que brilha no escuro com uma luminescência roxa fraca. O tamanho e as protuberâncias brilhantes o tornam lindo de ver. Esta variante de agarilux se adaptou à vida ao ar livre, mas dá pouquíssimos chapéus comestíveis na colheita.\n\nDetalhes da planta: o agarilux brilhante é uma planta selvagem que não pode ser cultivada e precisa de fertilidade mínima de 0,95. Pode ser colhido para fungo roxo cru.
+AB_Bryolux.label	briolux
+AB_Bryolux.description	Um musgo azul típico de cavernas fundas e escuras. É grudento, com fibras emaranhadas que atrasam quem passa por cima. Esta variante de briolux se adaptou à vida ao ar livre.
+AB_AgariluxPrime.label	Agarilux Primordial
+AB_AgariluxPrime.description	Um exemplar inacreditavelmente grande de agarilux. Esta colônia micônica se adaptou perfeitamente ao ambiente, soltando grandes nuvens de esporos extremamente perigosos que enchem o ar em volta. Os esporos atacam outros fungos e animais de passagem e, depois que eles inevitavelmente sufocam, o Agarilux Primordial estende hifas preênseis para se alimentar dos cadáveres em decomposição.\n\nO Agarilux Primordial pode ser cortado como qualquer outra planta, mas, a menos que quem corta esteja perfeitamente protegido contra os esporos tóxicos, provavelmente será uma missão só de ida. Ou morteiros... acho que morteiros também resolvem.
+## DefInjected/ThingDef/Plants_Mycotic_Polluted.xml
+AB_GiantAgariTox.label	agaritox
+AB_GiantAgariTox.description	Um cogumelo gigante adaptado a crescer em ambientes extremamente poluídos.\n\nDetalhes da planta: o agaritox é uma planta selvagem que só cresce em solo poluído. Pode ser colhido para quantidades mirradas de talos de cogumelo.
+AB_LandCoral.label	fungo-coral-terrestre ametista
+AB_LandCoral.description	Um fungo roxo muito estranho que lembra um coral. Só cresce em solo poluído.
+## DefInjected/ThingDef/Plants_OcularForest.xml
+AB_AlienGrass.label	grama ocular
+AB_AlienGrass.description	Esta grama é muito bizarra, provavelmente nem 100% baseada em carbono. Pouco comestível para criaturas terrestres.
+AB_RedLeaves.label	planta ocular
+AB_RedLeaves.description	Esta grama é muito bizarra, provavelmente nem 100% baseada em carbono. Pouco comestível para criaturas terrestres.
+AB_RedPlantsTall.label	planta ocular
+AB_RedPlantsTall.description	Esta grama é muito bizarra, provavelmente nem 100% baseada em carbono. Pouco comestível para criaturas terrestres.
+AB_AlienTree.label	árvore ocular
+AB_AlienTree.description	Esta árvore estrambótica nem é 100% baseada em carbono e parece ter dificuldade para crescer exposta a um ambiente terrestre. Frutos estranhos parecidos com globos oculares pendem da árvore, mas provavelmente não são comestíveis. A madeira solta um cheiro adocicado forte. Talvez sirva para alguma coisa.\n\nDetalhes da planta: a árvore ocular é uma planta cultivada que também aparece na natureza e precisa de fertilidade mínima de 0,05. Pode ser colhida para madeira vermelha. Ideologias amantes de árvores não ligam muito para o corte dessas árvores esquisitas.
+AB_HalfAlienTree.label	árvore meio transformada em ocular
+AB_HalfAlienTree.description	Uma infecção estranha parece estar transformando este carvalho comum numa árvore ocular. Ele ainda tem tronco e folhas, mas elas estão começando a virar estruturas vermelhas pulsantes que não parecem capazes de sobreviver neste universo. Esta árvore pode render um pouco de madeira de verdade.\n\nDetalhes da planta: a árvore meio transformada em ocular é uma planta selvagem que não pode ser cultivada e precisa de fertilidade mínima de 0,05. Pode ser colhida para madeira comum.
+AB_TentacularPlant.label	aberração tentacular
+AB_TentacularPlant.description	Uma planta estrambótica com nódulos azuis na ponta de cada galho, que de vez em quando soltam um chocalhar sinistro.\n\nDetalhes da planta: a aberração tentacular é uma planta selvagem que não pode ser cultivada e precisa de fertilidade mínima de 0,05. Pode ser colhida para fruto tentacular.\n\nBaseado na arte de Rob Smyth, https://robsmythart.com/projects
+AB_GlobularPlant.label	aberração globular
+AB_GlobularPlant.description	Um orbe rosa doentio sustentado por uma rede de galhos nodosos. Uma seiva avermelhada pinga sem parar da madeira e parece manter os insetos longe.\n\nDetalhes da planta: a aberração globular é uma planta selvagem que não pode ser cultivada e precisa de fertilidade mínima de 0,05. Pode ser colhida para madeira vermelha.\n\nBaseado na arte de Rob Smyth, https://robsmythart.com/projects
+AB_BloodBouquet.label	buquê de sangue
+AB_BloodBouquet.description	Uma planta espinhosa com uma espécie de fruto pendurado no topo. O fruto parece tão duro quanto o próprio tronco, e igualmente coberto de espinhos.\n\nDetalhes da planta: o buquê de sangue é uma planta selvagem que não pode ser cultivada e precisa de fertilidade mínima de 0,05. Pode ser colhido para buquê de sangue cru.
+## DefInjected/ThingDef/Plants_Ocular_Polluted.xml
+AB_EyeGrass.label	grama ocular florida
+AB_EyeGrass.description	Isso são... olhos?
+AB_AlienTree_Polluted.label	árvore ocular mutante
+AB_AlienTree_Polluted.description	Esta árvore ocular foi afetada pela poluição e sofreu mutações estranhas. O preocupante é que ela parece estar prosperando nessas condições.\n\nDetalhes da planta: árvores oculares mutantes são plantas selvagens e precisam de fertilidade mínima de 0,05. Só crescem em terreno poluído. Podem ser colhidas para pequenas quantidades de madeira vermelha. Ideologias amantes de árvores não ligam muito para o corte dessas árvores esquisitas.
+AB_GlobularPlant_Polluted.label	aberração globular poluída
+AB_GlobularPlant_Polluted.description	Esta aberração globular foi afetada pela poluição e sofreu mutações estranhas. O preocupante é que ela parece estar prosperando nessas condições.\n\nDetalhes da planta: aberrações globulares poluídas são plantas selvagens e precisam de fertilidade mínima de 0,05. Só crescem em terreno poluído. Podem ser colhidas para pequenas quantidades de madeira vermelha. Ideologias amantes de árvores não ligam muito para o corte dessas árvores esquisitas.
+## DefInjected/ThingDef/Plants_Odyssey_Cacti.xml
+AB_Plant_AnimaCactus_Small.label	cacto de anima pequeno
+AB_Plant_AnimaCactus_Small.description	Um pequeno cacto tocado pela anima. Vibra de leve com vida psíquica. Pode ser colhido para madeira.
+AB_Plant_AnimaCactus_Medium.label	cacto de anima
+AB_Plant_AnimaCactus_Medium.description	Um cacto tocado pela anima. Vibra de leve com vida psíquica. Pode ser colhido para madeira.
+AB_Plant_AnimaCactus_Grand.label	cacto de anima grande
+AB_Plant_AnimaCactus_Grand.description	Um cacto grande tocado pela anima. Vibra de leve com vida psíquica. Pode ser colhido para madeira.
+AB_Plant_AnimaPalm.label	palmeira de anima
+AB_Plant_AnimaPalm.description	Uma palmeira tocada pela anima. Não tem a potência psíquica de uma verdadeira árvore de anima, mas ainda vibra de leve com vida psíquica.\n\nDetalhes da planta: palmeiras de anima são plantas selvagens que não podem ser cultivadas e precisam de fertilidade mínima de 0,05. Podem ser colhidas para madeira.
+AB_Plant_OcularCactus_Small.label	cacto ocular pequeno
+AB_Plant_OcularCactus_Small.description	Um pequeno cacto ocular. Ele está olhando para você?\n\nDetalhes da planta: cactos oculares são plantas selvagens que não podem ser cultivadas e precisam de fertilidade mínima de 0,05. Podem ser colhidos para madeira vermelha.
+AB_Plant_OcularCactus_Large.label	cacto ocular
+AB_Plant_OcularCactus_Large.description	Um cacto ocular. Ele com certeza está de olho (ou de vários) nos colonos.\n\nDetalhes da planta: cactos oculares são plantas selvagens que não podem ser cultivadas e precisam de fertilidade mínima de 0,05. Podem ser colhidos para madeira vermelha.\n\nBaseado na arte de Ulysse Verhasselt, https://www.artstation.com/artwork/ORkP8
+AB_DesertBouquet.label	buquê do deserto
+AB_DesertBouquet.description	Uma planta espinhosa com uns tentáculos carnudos estranhos brotando do topo. Parece uma variação do buquê de sangue das florestas oculares, mas o fruto é incomível.\n\nDetalhes da planta: o buquê do deserto é uma planta selvagem que não pode ser cultivada e precisa de fertilidade mínima de 0,05.
+## DefInjected/ThingDef/Plants_Odyssey_Clover.xml
+AB_Clovers.label	trevos
+AB_Clovers.description	Uma planta rasteira e resistente, de folhas lobadas características, que se espalha em tapetes verdes e densos pelo chão da floresta.
+AB_Plant_TreeClover.label	árvore-trevo
+AB_Plant_TreeClover.description	Uma árvore altíssima cuja copa larga é feita de folhas enormes em forma de trevo, que lançam uma sombra fresca sobre a floresta. Não dá muita madeira utilizável.
+AB_Plant_TreeLilypad.label	árvore-vitória-régia
+AB_Plant_TreeLilypad.description	Uma árvore peculiar de folhas largas e chatas que lembram vitórias-régias gigantes, formando copas em camadas sobre o chão da floresta.
+## DefInjected/ThingDef/Plants_Odyssey_Desserts.xml
+AB_DessertTree.label	árvore-sobremesa
+AB_DessertTree.description	Uma resposta fácil para a pergunta: "o que você criaria se fosse um geneticista de plantas maluco?". Esta árvore extravagante, de tronco açucarado, crescimentos que parecem cobertura e frutos que lembram doces glaçados, atrai animais e colonos com a promessa de delícias comestíveis.\n\nDetalhes da planta: árvores-sobremesa são plantas selvagens e precisam de fertilidade mínima de 0,7. Podem ser colhidas para madeira e sobremesas finas.
+AB_Plant_SugarcaneGrass.label	canas-de-açúcar
+AB_Plant_SugarcaneGrass.description	Grama selvagem modificada para parecer canas-de-açúcar gigantes.
+AB_ChocolateTree.label	árvore de chocolate
+AB_ChocolateTree.description	Uma combinação esquisita de árvore, cogumelo, chantili, chocolate... granulado... Tá, muito, muito esquisita.\n\nDetalhes da planta: árvores de chocolate são plantas selvagens e precisam de fertilidade mínima de 0,7. Podem ser colhidas para madeira e chocolate.
+AB_Plant_Lollipops.label	pirulitos
+AB_Plant_Lollipops.description	Plantas estranhas modificadas geneticamente para parecer pirulitos gigantes.

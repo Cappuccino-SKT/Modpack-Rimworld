@@ -1,0 +1,97 @@
+## DefInjected/PawnKindDef/Races_RoyalSpelopede.xml
+VFEI2_RoyalSpelopede.label	espelópede real
+## DefInjected/PawnKindDef/Races_Silverfish.xml
+VFEI2_Silverfish.label	traça
+## DefInjected/PawnKindDef/Races_Swarmling.xml
+VFEI2_Swarmling.label	enxameiros
+## DefInjected/PawnKindDef/Races_Tankroach.xml
+VFEI2_Tankroach.label	barata-tanque
+## DefInjected/PawnKindDef/Races_Teramantis.xml
+VFEI2_Teramantis.label	teramântis
+## DefInjected/PawnKindDef/Races_Titantick.xml
+VFEI2_Titantick.label	titã-carrapato
+## DefInjected/PawnKindDef/Races_Venomite.xml
+VFEI2_Venomite.label	ácaro-venenoso
+## DefInjected/PawnsArrivalModeDef/Incidents.xml
+VFEI_InfestedMeteors.textEnemy	Uma chuva de meteoritos está caindo na região. Parecem infestados de colmeias de {1}! Vão atacar na hora.
+## DefInjected/QuestScriptDef/Script_EmergingHive.xml
+VFEI2_OpportunitySite_InsectoidHive.questDescriptionRules.rulesStrings[0]	questDescription->[asker_nameFull], [asker_faction_leaderTitle] de [asker_faction_name], nos mandou uma mensagem. Uma nova colmeia insetoide surgiu numa área próxima. Se não for destruída, logo vai formar uma nova colônia e espalhar a infestação pela região. A colmeia é controlada por [siteFaction_name].\n\n[asker_nameDef] pede que destruamos a colmeia, ou seja, eliminar todos os insetoides e ninhos. [asker_label] diz que [sitePart0_description].
+VFEI2_OpportunitySite_InsectoidHive.questNameRules.rulesStrings[0]	questName->[hive] [insectoid]
+VFEI2_OpportunitySite_InsectoidHive.questNameRules.rulesStrings[1]	questName->[hive] [insectoid]
+VFEI2_OpportunitySite_InsectoidHive.questNameRules.rulesStrings[2]	questName->[asker_nameDef] contra [hive]
+VFEI2_OpportunitySite_InsectoidHive.questNameRules.rulesStrings[3]	hive->Colmeia
+VFEI2_OpportunitySite_InsectoidHive.questNameRules.rulesStrings[4]	hive->Ninho
+VFEI2_OpportunitySite_InsectoidHive.questNameRules.rulesStrings[5]	hive->Colônia
+VFEI2_OpportunitySite_InsectoidHive.questNameRules.rulesStrings[6]	hive->Enxame
+VFEI2_OpportunitySite_InsectoidHive.questNameRules.rulesStrings[7]	insectoid->Insetoide
+VFEI2_OpportunitySite_InsectoidHive.questNameRules.rulesStrings[8]	insectoid->Rastejante
+VFEI2_OpportunitySite_InsectoidHive.questNameRules.rulesStrings[9]	insectoid->de Quitina
+VFEI2_OpportunitySite_InsectoidHive.questNameRules.rulesStrings[10]	insectoid->Selvagem
+VFEI2_OpportunitySite_InsectoidHive.questNameRules.rulesStrings[11]	insectoid->Voraz
+VFEI2_OpportunitySite_InsectoidHive.root.nodes.WorldObjectTimeout.node.nodes.Letter.text.slateRef	A colmeia insetoide formou uma nova colônia. A missão [resolvedQuestName] expirou.
+VFEI2_OpportunitySite_InsectoidHive.root.nodes.siteAllHivesAreDestroyed.node.nodes.GiveRewards.customLetterText.slateRef	Você destruiu a colmeia insetoide!\n\nO pagamento de [asker_faction_name] chegou.
+## DefInjected/RaidStrategyDef/Incidents.xml
+VFEI_InfestedMeteors.arrivalTextEnemy	Estão atacando agora.
+VFEI_InfestedMeteors.letterLabelEnemy	Ataque (meteoros)
+## DefInjected/RecipeDef/Recipes_Surgery_Misc.xml
+VFEI2_AdministerSornePherocore.label	administrar ferronúcleo Sorne
+VFEI2_AdministerSornePherocore.description	Administra ferronúcleo Sorne para transformar esta pessoa numa imperatriz.
+VFEI2_AdministerSornePherocore.jobString	Administrando ferronúcleo Sorne para transformar esta pessoa numa imperatriz.
+VFEI2_AdministerNuchadusPherocore.label	administrar ferronúcleo Nuchadus
+VFEI2_AdministerNuchadusPherocore.description	Administra ferronúcleo Nuchadus para transformar esta pessoa num titã-carrapato.
+VFEI2_AdministerNuchadusPherocore.jobString	Administrando ferronúcleo Nuchadus para transformar esta pessoa num titã-carrapato.
+VFEI2_AdministerChelisPherocore.label	administrar ferronúcleo Chelis
+VFEI2_AdministerChelisPherocore.description	Administra ferronúcleo Chelis para transformar esta pessoa num teramântis.
+VFEI2_AdministerChelisPherocore.jobString	Administrando ferronúcleo Chelis para transformar esta pessoa num teramântis.
+VFEI2_AdministerKemianPherocore.label	administrar ferronúcleo Kemia
+VFEI2_AdministerKemianPherocore.description	Administra ferronúcleo Kemia para transformar esta pessoa num gigácaro.
+VFEI2_AdministerKemianPherocore.jobString	Administrando ferronúcleo Kemia para transformar esta pessoa num gigácaro.
+VFEI2_AdministerXanidesPherocore.label	administrar ferronúcleo Xanides
+VFEI2_AdministerXanidesPherocore.description	Administra ferronúcleo Xanides para transformar esta pessoa numa traça.
+VFEI2_AdministerXanidesPherocore.jobString	Administrando ferronúcleo Xanides para transformar esta pessoa numa traça.
+## DefInjected/ResearchProjectDef/ResearchProjects.xml
+VFEI2_BasicHivetech.label	tecnologia de colmeia básica
+VFEI2_BasicHivetech.description	A tecnologia para a sua colônia criar colmeias de nível básico.
+VFEI2_StandardHivetech.label	tecnologia de colmeia padrão
+VFEI2_StandardHivetech.description	A tecnologia para a sua colônia criar colmeias de nível padrão. Construir vários batedores sísmicos permite invocar chefes insetoides poderosos.
+VFEI2_ExoticHivetech.label	tecnologia de colmeia exótica
+VFEI2_ExoticHivetech.description	A tecnologia para a sua colônia criar colmeias de nível exótico.
+## DefInjected/RulePackDef/RulePacks_DamageEvent.xml
+VFEI2_DamageEvent_Crushing.rulePack.rulesStrings[0]	damage_source->Uma traça [grinding] [crushed]
+VFEI2_DamageEvent_Crushing.rulePack.rulesStrings[1]	destroyed_present(p=3)->arrancando
+VFEI2_DamageEvent_Crushing.rulePack.rulesStrings[2]	grinding->em disparada
+VFEI2_DamageEvent_Crushing.rulePack.rulesStrings[3]	grinding->de passagem
+VFEI2_DamageEvent_Crushing.rulePack.rulesStrings[4]	grinding(p=10)->
+VFEI2_DamageEvent_Crushing.rulePack.rulesStrings[5]	crushed(p=8)->esmagou
+VFEI2_DamageEvent_Crushing.rulePack.rulesStrings[6]	crushed->pulverizou
+VFEI2_DamageEvent_Crushing.rulePack.rulesStrings[7]	crushed->amassou
+## DefInjected/ScenarioDef/Scenario.xml
+VFEI2_MercenarySquad.label	Novo esquadrão
+VFEI2_MercenarySquad.description	Vocês quatro, armados até os dentes, caem sobre um ninho insetoide nascente. Eliminar essa praga de insetos é essencial para garantir a região.
+VFEI2_MercenarySquad.scenario.description	Contratados por um magnata de mundo-cidade sedento por holovídeos emocionantes, a missão era tão perigosa quanto lucrativa. Armado até os dentes, seu esquadrão despenca da órbita em cápsulas infernais experimentais, rumo a uma terra fervilhando de insetoides mortais. A promessa de um belo pagamento compensava o risco, até vocês descobrirem o plano traiçoeiro do magnata de dar o calote.\nEnquanto as cápsulas riscam o céu, a trajetória trava numa colônia de colmeias insetoides meio desenvolvida. Espere resistência feroz, mas, se vencer, a área está cheia de recursos para montar uma base, seja um refúgio temporário ou uma fortaleza duradoura.\nVocês sabem que nem todos vão sobreviver, mas, com o fator surpresa a favor, as chances pendem um pouquinho para o seu lado.\n\nObservação: como você começa dentro de uma megacolmeia insetoide, este é um cenário difícil.\n
+VFEI2_MercenarySquad.scenario.name	Mercenários
+VFEI2_MercenarySquad.scenario.parts.GameStartDialog.text	Contratados por um magnata de mundo-cidade sedento por holovídeos emocionantes, a missão era tão perigosa quanto lucrativa. Armado até os dentes, seu esquadrão despenca da órbita em cápsulas infernais experimentais, rumo a uma terra fervilhando de insetoides mortais. A promessa de um belo pagamento compensava o risco, até vocês descobrirem o plano traiçoeiro do magnata de dar o calote.\n\nEnquanto as cápsulas riscam o céu, a trajetória trava numa colônia de colmeias insetoides meio desenvolvida. Espere resistência feroz, mas, se vencer, a área está cheia de recursos para montar uma base, seja um refúgio temporário ou uma fortaleza duradoura.\n\nVocês sabem que nem todos vão sobreviver, mas, com o fator surpresa a favor, as chances pendem um pouquinho para o seu lado.
+VFEI2_MercenarySquad.scenario.summary	Um grupo de mercenários mergulhando numa ameaça insetoide. A experiência clássica do VFE - Insectoids 2.
+## DefInjected/SitePartDef/Script_EmergingHive.xml
+VFEI_InsectoidHiveRatingOne.label	colmeia insetoide
+VFEI_InsectoidHiveRatingOne.description	Uma colmeia insetoide.
+VFEI_InsectoidHiveRatingTwo.label	colmeia insetoide
+VFEI_InsectoidHiveRatingTwo.description	Uma colmeia insetoide.
+VFEI_InsectoidHiveRatingThree.label	colmeia insetoide
+VFEI_InsectoidHiveRatingThree.description	Uma colmeia insetoide.
+## DefInjected/StorytellerDef/Storytellers.xml
+VFEI_EmpressEvil.label	Imperatriz Malvada
+VFEI_EmpressEvil.description	A Imperatriz Malvada conta uma história de dor, miséria e luta, em que um grupo de colonos corajosos enfrenta chances impossíveis. Eventos bons só aparecem depois de sofrimentos extremos, e tão raramente que você vai comemorar até o menor sinal de paz na tempestade do mal.
+VFEI_HanHordeMode.label	Han Modo-Horda
+VFEI_HanHordeMode.description	Han Modo-Horda serviu várias temporadas em Sorne e não imagina a vida sem um adversário à altura. Por isso, a história dele é a das ondas sem fim de insetoides batendo contra a muralha de uma defesa valente. As ondas seguem um padrão regular de atividade baixa a alta, e cada onda derrotada recompensa você com avanço tecnológico.
+## DefInjected/TerrainAffordanceDef/TerrainAffordances.xml
+VFEI2_Creep.label	gosma ou piso de geleia
+## DefInjected/TerrainDef/Terrain_Floors.xml
+VFEI2_Creep.label	gosma insetoide
+VFEI2_Creep.description	Uma forma única de solo rachado, sem minerais nem nutrientes, criada em volta das áreas infestadas por insetoides. Sustenta estruturas insetoides e atrapalha muito o movimento de quem não é inseto.
+VFEI2_BurnedCreep.label	gosma queimada
+VFEI2_BurnedCreep.description	Gosma insetoide queimada.
+VFEI2_JellyFloor.description	Um piso gelatinoso especial que brota da gosma nas colmeias insetoides. Sustenta estruturas insetoides e atrapalha muito o movimento de quem não é inseto. Pega fogo bem menos que a gosma e é muito mais fácil de limpar.
+VFEI2_BurnedJellyFloor.label	piso de geleia queimado
+VFEI2_BurnedJellyFloor.description	Piso de geleia queimado.
+VFEI2_RoyalJellyFloor.description	Um piso gelatinoso especial de geleia real, criado ao enriquecer pisos de geleia. Sustenta estruturas insetoides e atrapalha muito o movimento de quem não é inseto. Ao contrário da gosma, não pega fogo e não junta sujeira de animais.

@@ -1,0 +1,38 @@
+## DefInjected/ResearchProjectDef/ResearchProjects.xml
+VWE_MakeshiftWeapons.label	armas improvisadas
+VWE_MakeshiftWeapons.description	Monte armas improvisadas bem toscas, pouco confiáveis e que engasgam à toa.
+## DefInjected/ThingDef/RangedIndustrial.xml
+VWE_Gun_MakeshiftPistol.label	pistola improvisada
+VWE_Gun_MakeshiftPistol.description	Uma pistola semiautomática de ação por recuo, improvisada e tosca, de desenho antigo. Tem pouco poder de parada e alcance, e engasga à toa.
+VWE_Gun_MakeshiftPistol.tools.grip.label	empunhadura
+VWE_Gun_MakeshiftPistol.tools.muzzle.label	boca
+VWE_Gun_MakeshiftPistol.verbs.Verb_ShootCE.label	pistola improvisada
+VWE_Bullet_MakeshiftPistol.label	bala de pistola improvisada
+VWE_Gun_MakeshiftSMG.label	submetralhadora improvisada
+VWE_Gun_MakeshiftSMG.description	Uma pequena submetralhadora caseira. Tem alcance curto e engasga muito por causa do desenho tosco e das peças defeituosas. A cadência de tiro costuma compensar a fraqueza.
+VWE_Gun_MakeshiftSMG.tools.stock.label	coronha
+VWE_Gun_MakeshiftSMG.tools.barrel.label	cano
+VWE_Gun_MakeshiftSMG.tools.muzzle.label	boca
+VWE_Gun_MakeshiftSMG.verbs.Verb_ShootCE.label	submetralhadora improvisada
+VWE_Bullet_MakeshiftSMG.label	bala de submetralhadora improvisada
+VWE_Gun_MakeshiftRifle.label	fuzil improvisado
+VWE_Gun_MakeshiftRifle.description	Um fuzil de assalto improvisado de uso geral, operado a gás, com vários componentes reaproveitados montados na caixa de um fuzil de milícia. Tem bom alcance, potência razoável e boa precisão, mas engasga à toa.
+VWE_Gun_MakeshiftRifle.tools.stock.label	coronha
+VWE_Gun_MakeshiftRifle.tools.barrel.label	cano
+VWE_Gun_MakeshiftRifle.tools.muzzle.label	boca
+VWE_Gun_MakeshiftRifle.verbs.Verb_ShootCE.label	fuzil improvisado
+VWE_Bullet_MakeshiftRifle.label	bala de fuzil improvisado
+VWE_Gun_MakeshiftShotgun.label	escopeta improvisada
+VWE_Gun_MakeshiftShotgun.description	Uma escopeta potente de projeto improvisado que solta uma grande rajada de chumbos. Mortal, mas de curto alcance. Por causa dos vários defeitos de projeto, a quantidade de chumbos varia a cada tiro.
+VWE_Gun_MakeshiftShotgun.tools.stock.label	coronha
+VWE_Gun_MakeshiftShotgun.tools.barrel.label	cano
+VWE_Gun_MakeshiftShotgun.tools.muzzle.label	boca
+VWE_Gun_MakeshiftShotgun.verbs.Verb_ShootCE.label	escopeta improvisada
+VWE_Bullet_MakeshiftShotgun.label	chumbo de escopeta improvisada
+VWE_Gun_MakeshiftLMG.label	metralhadora leve improvisada
+VWE_Gun_MakeshiftLMG.description	Uma metralhadora leve improvisada, operada a gás. Difícil de manejar e imprecisa, também engasga muito. As longas rajadas funcionam contra grupos de inimigos, mas a quantidade de tiros é totalmente aleatória.
+VWE_Gun_MakeshiftLMG.tools.stock.label	coronha
+VWE_Gun_MakeshiftLMG.tools.barrel.label	cano
+VWE_Gun_MakeshiftLMG.tools.muzzle.label	boca
+VWE_Gun_MakeshiftLMG.verbs.Verb_ShootCE.label	metralhadora leve improvisada
+VWE_Bullet_MakeshiftLMG.label	bala de metralhadora leve improvisada

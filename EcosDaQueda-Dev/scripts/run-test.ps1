@@ -1,8 +1,7 @@
 ﻿# Roda um teste automático do Ecos da Queda, sem janela e sem tocar nos saves/config do jogador.
 #
 # Uso:
-#   run-test.ps1 -Script ..\tests\smoke.txt                 (perfil "lean": só os mods essenciais, carrega rápido)
-#   run-test.ps1 -Script ..\tests\smoke.txt -Profile full   (todos os mods ativos do jogador)
+#   run-test.ps1 -Script ..\tests\smoke.txt               (todos os mods ativos do jogador; "full" é o único perfil)
 #   run-test.ps1 -Script ..\tests\x.txt -Save Test          (copia o save "Test" do jogador para o perfil de teste)
 #   run-test.ps1 -Script ..\tests\x.txt -Window             (mostra a janela do jogo, para depurar)
 #   run-test.ps1 -Build ...                                 (compila os 3 projetos C# antes)
@@ -16,7 +15,7 @@ param(
     [string]$Script,
     [string[]]$Batch = @(),     # lote: vários roteiros numa só abertura do jogo (relatórios iguais aos do modo normal)
     [int]$Slot = 0,             # > 0: perfil test-profile\<perfil>-<slot> (permite jogos em paralelo)
-    [ValidateSet('lean', 'full')][string]$Profile = 'lean',
+    [ValidateSet('full')][string]$Profile = 'full',   # o perfil "lean" foi aposentado em 2026-11-18 (quebrava com as ideologias)
     [string]$Save,
     [switch]$Window,
     [switch]$Build,
@@ -53,13 +52,6 @@ foreach ($f in 'Prefs.xml', 'KeyPrefs.xml', 'Knowledge.xml') {
 }
 [xml]$cfg = Get-Content (Join-Path $userData 'Config\ModsConfig.xml') -Raw -Encoding UTF8
 $active = $cfg.ModsConfigData.activeMods
-if ($Profile -eq 'lean') {
-    $lean = 'brrainz.harmony', 'ludeon.rimworld', 'ludeon.rimworld.royalty', 'ludeon.rimworld.ideology', 'ludeon.rimworld.biotech',
-            'ludeon.rimworld.anomaly', 'ludeon.rimworld.odyssey', 'oskarpotocki.vanillafactionsexpanded.core', 'jaeger972.utilityframework',
-            'vanillaexpanded.vmemese', 'sarg.alphamemes', 'vanillaexpanded.vpsycastse', 'jaeger972.factionterritories2', 'ecosdaqueda.core'
-    $active.RemoveAll()
-    foreach ($id in $lean) { $li = $cfg.CreateElement('li'); $li.InnerText = $id; [void]$active.AppendChild($li) }
-}
 @($active.SelectNodes('li') | Where-Object { $_.InnerText -eq 'ecosdaqueda.debug' -or $Exclude -contains $_.InnerText }) | ForEach-Object { [void]$active.RemoveChild($_) }
 $li = $cfg.CreateElement('li'); $li.InnerText = 'ecosdaqueda.debug'; [void]$active.AppendChild($li)
 $cfg.Save((Join-Path $profileDir 'Config\ModsConfig.xml'))
@@ -106,19 +98,21 @@ if ($Batch.Count -gt 0) {
         $gameArgs = @("-savedatafolder=$profileDir", "-eqbatch=$batchFile", '-NoCrashDialog', '-logFile', $gameLog)
         if (-not $Window) { $gameArgs += '-Headless' }
         $p = Start-Process $exe -ArgumentList ($gameArgs | ForEach-Object { '"' + $_ + '"' }) -WorkingDirectory $game -PassThru
-        $cur = -1; $curStart = $null; $lastLen = -1; $lastChange = Get-Date; $killed = $false
+        $cur = -1; $curStart = $null; $lastLen = -1; $lastChange = Get-Date; $killed = $false; $doneAt = $null
         while (-not $p.WaitForExit(5000)) {
             # Roteiro atual = último do lote cujo relatório já existe.
             for ($i = $Batch.Count - 1; $i -ge $next; $i--) { if (Test-Path (Get-BatchResult $Batch[$i])) { break } }
             if ($i -lt $next) { $i = $next }
-            if ($i -ne $cur) { $cur = $i; $curStart = Get-Date; $lastLen = -1 }
+            if ($i -ne $cur) { $cur = $i; $curStart = Get-Date; $lastLen = -1; $doneAt = $null }
             $r = Get-BatchResult $Batch[$cur]
             $len = if (Test-Path $r) { (Get-Item $r).Length } else { 0 }
             if ($len -ne $lastLen) { $lastLen = $len; $lastChange = Get-Date }
             $lim = if ((Split-Path $Batch[$cur] -Leaf) -eq 'mundo.txt') { [Math]::Max($TimeoutSec, 2400) } else { $TimeoutSec }
             $why = $null
             $done = (Test-Path $r) -and (Select-String -Path $r -Pattern '^# RESULTADO' -Quiet)
-            if ($done -and ((Get-Date) - $lastChange).TotalSeconds -gt 90) { $why = 'FECHOU' }
+            # Conta do RESULTADO (não da última linha): o vigia interno do executor grava "# vigia" a cada 30 s.
+            if ($done -and -not $doneAt) { $doneAt = Get-Date }
+            if ($done -and ((Get-Date) - $doneAt).TotalSeconds -gt 90) { $why = 'FECHOU' }
             elseif (((Get-Date) - $curStart).TotalSeconds -gt $lim + 120) { $why = "passou de $lim s" }
             elseif ($StallSec -gt 0 -and ((Get-Date) - $lastChange).TotalSeconds -gt $StallSec) { $why = "relatório parado há $StallSec s" }
             if ($why) {

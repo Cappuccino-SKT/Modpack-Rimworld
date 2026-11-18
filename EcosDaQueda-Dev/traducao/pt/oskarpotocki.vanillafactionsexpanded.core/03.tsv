@@ -1,0 +1,231 @@
+## Keyed/ItemProcessorBase.xml
+IP_WrongTemp	O processo desta máquina está sendo interrompido por temperatura inadequada e vai estragar logo
+IP_SpoiledDueToWrongTemp	O produto estragou por temperatura inadequada. Precisa ficar entre {0} e {1} ºC
+IP_TempRangeInThisMachine	O processo atual precisa de temperatura entre {0} e {1} ºC
+IP_TogglePause	Pausar / Retomar
+IP_TogglePauseDesc	Pausa ou retoma o processamento desta máquina
+IP_OverThreshold	 Esperando a saída esvaziar. Limite de saída: {0}
+IP_NoRecipesHere	Nenhuma receita de mod para esta fábrica
+## Keyed/KCSG.xml
+KCSG.SpawnNearCenter	Gerar perto do centro
+KCSG.AllowFoggedPosition	Permitir posição sob névoa
+KCSG.SpawnPartOfEnnemyFaction	Gerar como parte da facção inimiga
+KCSG.Mapcontains	O mapa contém
+KCSG.CantEnter	Não dá para entrar em {0}
+## Keyed/Keys.xml
+VanillaFactionsExpanded.EquipShield	Equipar {0} como escudo
+VanillaFactionsExpanded.EquipWarningShieldUnusable	(inutilizável com {0})
+VanillaFactionsExpanded.EquipWarningShieldUnusableWithWeapon	({0} ficará inutilizável)
+VanillaFactionsExpanded.Protects	Protege
+VanillaFactionsExpanded.Protects_Desc	As partes do corpo que o escudo protege.
+VanillaFactionsExpanded.ScenPart_ForcedFactionRelations	Modificadores de relação com facções
+VanillaFactionsExpanded.NumberRange	{0} a {1}
+VanillaFactionsExpanded.AllFactions	Todas as facções
+VanillaFactionsExpanded.AllFactionsIncludingHidden	Todas as facções, inclusive as ocultas
+VanillaFactionsExpanded.AlwaysHostile	Sempre hostil
+VanillaFactionsExpanded.AffectHiddenFactions	Afetar ocultas
+VanillaFactionsExpanded.StartingGoodwill	Inicial
+VanillaFactionsExpanded.NaturalGoodwill	Natural
+VanillaFactionsExpanded.UsableWithShield	Usável com escudo
+VanillaFactionsExpanded.UsableWithShield_Desc	Se esta arma pode ser usada quando a pessoa também tem um escudo equipado.
+VEF.Weapons.Stat_Thing_MaterialPerCharge	Munição por carga
+VEF.Weapons.Stat_Thing_MaterialPerCharge_Value	{0} {1} por carga (total de {2} cargas)
+VEF.Weapons.Stat_Thing_MaterialPerCharge_Desc	A quantidade de {0} por carga que esta habilidade precisa para recarregar.
+VanillaFactionsExpanded.FactionTitle	Nova facção: {FactionName}
+VanillaFactionsExpanded.ModInfo	Esta facção vem de {ModName} e não está no seu jogo no momento.
+VanillaFactionsExpanded.AnUnknownMod	um mod desconhecido
+VanillaFactionsExpanded.HiddenFactionInfo	É uma facção oculta e não vai aparecer na sua lista de facções.
+VanillaFactionsExpanded.RequiredFactionInfo	{ModName} a marca como obrigatória.
+VanillaFactionsExpanded.NonSpawningFactionInfo	Esta facção está marcada como não gerada e provavelmente é melhor ignorá-la.
+VanillaFactionsExpanded.FactionSelectOption	Escolha como continuar:
+VanillaFactionsExpanded.FactionButtonAdd	Adicionar a facção
+VanillaFactionsExpanded.FactionButtonAddFull	Adicionar a facção com assentamentos
+VanillaFactionsExpanded.FactionButtonSkip	Não fazer nada
+VanillaFactionsExpanded.FactionButtonIgnore	Não perguntar mais sobre esta facção
+VanillaFactionsExpanded.FactionMessageFailed	Não foi possível adicionar a facção.
+VanillaFactionsExpanded.FactionMessageFailedFull	Não foi possível criar a facção com assentamentos.
+VanillaFactionsExpanded.FactionMessageSuccessFull	{FactionName} adicionada com {Amount} assentamentos.
+VanillaFactionsExpanded.FactionMessageSuccess	{FactionName} adicionada.
+VanillaFactionsExpanded.FactionDiscoveryRequired	Está marcada como obrigatória, e você precisa adicioná-la ao jogo.
+VanillaFactionsExpanded.FactionFailedMessage	Não foi possível gerar esta facção. Recomenda-se tentar de novo, mas agora você pode pular. Pular pode causar problemas.
+VanillaFactionsExpanded.FactionRequired	{FACTION} não pode ser desligada{REQUIRED_multiple ? ; você precisa de pelo menos {REQUIRED} facções desse tipo. : .}
+VanillaFactionsExpanded.FactionRecommended	{REQUIRED_multiple ? Recomenda-se ter pelo menos {REQUIRED} facções do tipo {FACTION}, mas agora só há {COUNT}. : Recomenda-se ligar {FACTION}.}
+VanillaFactionsExpanded.FactionSettlementsToSpawn	Assentamentos a gerar (recomendado: {0}): {1}
+VanillaFactionsExpanded.FactionMinDistance	Distância mínima das bases do jogador (recomendado: {0}): {1}
+VanillaFactionsExpanded.FactionButtonSpawn	Gerar
+VanillaFactionsExpanded.FactionButtonCancel	Cancelar
+VSE.ReinforcementsDesc	Vendo as baixas das suas forças, {FACTION_name} resolveu reforçar o grupo de ataque
+VSE.CostGoodwill	custo: {0} de boa vontade
+VWEL_ToggleHotshotLabel	Aquecimento da arma
+VWEL_ToggleHotshotDesc	Tiros dados parado aquecem a arma e aumentam a cadência. O superaquecimento pode causar detonação.
+VFE_DeepDrillNo	A perfuratriz profunda não pode ser usada com {0}.
+VEF.TotalMarketValueRange	Faixa de valor de mercado (base)
+VEF.TotalMarketValueRange_Desc	Faixa de valor de mercado total (mínimo e máximo) dos objetos que podem sair ao abrir esta caixa de saque.
+VEF.TotalMarketValueRange_Quality	Faixa de valor de mercado (pela qualidade)
+VEF.TotalMarketValueRange_Quality_Desc	Faixa de valor de mercado total (mínimo e máximo) dos objetos que podem sair ao abrir esta caixa de saque. A qualidade da caixa multiplicou o valor base por {0}
+VPE_MinifiedFlowerWillDieIn	A flor extraída morre em {time} se não for replantada.
+VPE_ExtractFlower	Extrair flor
+VPE_ExtractFlower_Desc	Extrai esta flor mantendo-a viva, para replantá-la em outro lugar.
+VPE_CancelExtractFlower	Cancelar extração
+VPE_CancelExtractFlower_Desc	Cancela a extração desta flor.
+VPE_ReplantFlower	Replantar
+VPE_ReplantFlower_Desc	A flor está embalada para armazenamento e transporte. Use este comando para replantá-la no novo lugar.
+VPE_RealAge	Idade: {0}
+VPE_FlowerIsBlooming	A flor está desabrochando
+VPE_BeautyByAge	Beleza pela idade: +{0}
+VPE_BeautyByBloming	Beleza pela floração: x{0}
+VPE_BeautyByWeeds	Beleza por causa das ervas daninhas: {0}
+VPE_BeautyByLeafless	Beleza sem folhas: {0}
+VPE_LeaflessBeauty	Beleza sem folhas
+VPE_LeaflessBeauty_Desc	Flores ficam bem feias sem folhas por causa do frio. Não morrem só por isso, mas a beleza sofre muito.
+VPE_MustBeGrown	A planta precisa estar crescida antes de ganhar idade
+VPE_AgeBeautyModifier	Modificador de beleza pela idade
+VPE_AgeBeautyModifier_Desc	A beleza desta planta aumenta neste valor a cada ano em que ela se mantém viva, até no máximo +{0}.
+VPE_BloomBeautyModifier	Modificador de beleza pela floração
+VPE_BloomBeautyModifier_Desc	A beleza desta planta é multiplicada por este valor durante a floração.
+VPE_BloomingPeriod	Período de floração
+VPE_BloomingPeriod_Desc	Esta flor entra em floração neste período, ou no equivalente em dias do ano em verão ou inverno permanente.
+VPE_BloomTemperatureMin	Temperatura mínima de floração
+VPE_BloomTemperatureMin_Desc	A temperatura mínima de que a planta precisa para entrar em floração.\n\n{0}
+VPE_BloomTemperatureMax	Temperatura máxima de floração
+VPE_BloomTemperatureMax_Desc	A temperatura abaixo da qual a planta precisa estar para entrar em floração.\n\n{0}
+VPE_CanBloom	Se a floração parar por causa do frio, a flor pode voltar a florescer se as condições melhorarem.
+VPE_CantBloom	Se a floração parar por causa do frio, a flor só volta a florescer no ano que vem!
+VPE_DeadlyColdTemperature	Temperatura de frio mortal
+VPE_DeadlyColdTemperature_Desc	Abaixo desta temperatura, a planta começa a morrer.
+VPE_TempTooLowForBlooming	Temperatura baixa demais para florescer
+VPE_TempTooHighForBlooming	Temperatura alta demais para florescer
+VPE_RemoveWeeds	Tirar ervas daninhas
+VPE_RemoveWeeds_Desc	Tira as ervas daninhas que estão prejudicando a beleza desta flor.
+VPE_CancelWeedRemoval	Cancelar retirada de ervas daninhas
+VPE_CancelWeedRemoval_Desc	Cancela a retirada das ervas daninhas desta flor.
+VEF_LetterLabelWeeds	Ervas daninhas: {PLANTDEF_labelPlural}
+VEF_LetterWeeds	Ervas daninhas se espalharam pelas suas {PLANTDEF_labelPlural} e por outras flores próximas, prejudicando muito a beleza delas.\n\nVocê pode mandar os colonos tirá-las, mas leva tempo.
+## Keyed/MVCF.xml
+MVCF.Toggle	Alternar {0}
+MVCF.ToggleUsing	Alternar uso automático de {0}
+MVCF.ToggleAuto	Alternar uso automático
+MVCF.Cooldown	Ainda recarregando. Faltam {0}.
+MVCF.Setting	Multi-Verb Combat Framework
+MVCF.Settings.Debug	Modo de desenvolvedor
+MVCF.Settings.LogLevel	Nível de registro:
+MVCF.Settings.LogLevel.Important	Importante
+MVCF.Settings.LogLevel.Info	Informação
+MVCF.Settings.LogLevel.Verbose	Detalhado
+MVCF.Settings.LogLevel.Silly	Exagerado
+MVCF.Settings.LogLevel.Tick	Tique
+MVCF.ToggleAutoReload	Alternar recarga automática quando convocado
+## Keyed/Machines.xml
+VFEMechForceRecharge	Forçar recarga
+VFEMechForceRechargeDesc	Manda a máquina ligada voltar a esta plataforma para recarregar, qualquer que seja o nível da bateria.
+VFEMechAttachTurret	Instalar torreta
+VFEMechAttachTurretDesc	Constrói uma torreta em cima desta plataforma móvel. Um colono precisa entregar recursos iguais ao custo normal de construção dessa torreta.
+VFEMechMachineDied	Máquina destruída
+VFEMechMachineDiedDesc	Uma das suas máquinas foi destruída! Dá para desmontar os restos numa mesa de usinagem. Para construir outra, um colono precisa entregar estas peças na plataforma dela:\n\n{0}
+VFEMechNoResources	Recursos insuficientes
+VFEMechNoTurret	Nenhuma torreta móvel ativa
+VFEMechReconstruct	Necessário para reconstruir a máquina:
+VFEMechTurretResources	Necessário para construir a torreta:
+VFEMechLowerRange	Diminuir alcance
+VFEMechLowerRangeDesc	Diminui quantos quadrados esta máquina percorre.
+VFEMechRaiseRange	Aumentar alcance
+VFEMechRaiseRangeDesc	Aumenta quantos quadrados esta máquina percorre.
+VFEMechStopMachine	Parar máquina
+VFEMechStopMachineDesc	Para esta máquina e a faz voltar à base.
+VFEMechStartMachine	Ligar máquina
+VFEMechStartMachineDesc	Liga esta máquina.
+VFEMechMachineHitObstacle	A máquina bateu num obstáculo!
+VFEMechSetArea	Definir área
+VFEMechSetAreaDesc	Define a área permitida de todas as máquinas ligadas a esta plataforma.
+VFEMRideableMachineTip	Este droide pode ser montado. Numa caravana, as pessoas montam os animais e droides mais rápidos disponíveis, acelerando a caravana inteira.
+VFEM.CaravanMachineRanOutPower	{MACHINE_nameDef} ficou sem energia e foi deixado para trás.
+VFEM.DroneGainsName	O nome do drone agora é {0}.
+## Keyed/Outposts.xml
+Outposts.Settings.Title	VE Framework - Postos avançados
+Outposts.Settings.Multiplier.Production	Multiplicador global de produção: {0}
+Outposts.Settings.Multiplier.Time	Multiplicador global de tempo: {0}
+Outposts.Settings.RaidDifficulty	Multiplicador global de dificuldade dos ataques: {0}
+Outposts.Settings.RaidFrequency	Faixa de frequência dos ataques
+Outposts.Dialog.Create	Criar
+Outposts.Commands.Create.Label	Criar posto avançado
+Outposts.Commands.Create.Desc	Cria um novo posto avançado com esta caravana.
+Outposts.Commands.TakeItems.Label	Pegar itens
+Outposts.Commands.TakeItems.Desc	Pega itens de {0} e os põe na caravana
+Outposts.Commands.GiveItems.Label	Dar itens
+Outposts.Commands.GiveItems.Desc	Pega itens de {0} e os põe no posto avançado
+Outposts.Letters.Lost.Label	Posto avançado perdido
+Outposts.Letters.Lost.Text	Infelizmente, com a morte de todos os moradores, perdemos o posto avançado de {0}.
+Outposts.Letters.BattleWon.Label	Batalha do posto avançado vencida
+Outposts.Letters.BattleWon.Text	Vencemos a batalha por {0}.{1}
+Outposts.Letters.BattleWon.Captured	Conseguimos capturar {0} depois da luta
+Outposts.Letters.BattleWon.Rescued	Conseguimos recuperar o corpo de {0}
+Outposts.Letters.BattleWon.Secured	Tomamos dos atacantes {0} em bens e armas
+Outposts.Letters.Items.Label	Itens de {0}
+Outposts.Letters.Items.Text	Você recebeu estes itens do posto avançado {0}:
+Outposts.Commands.AddPawn.Label	Adicionar pessoa
+Outposts.Commands.AddPawn.Desc	Transfere uma pessoa desta caravana para o posto avançado
+Outposts.Commands.DeliveryColony.Label	Destino das entregas
+Outposts.Commands.DeliveryColony.Desc	Escolhe qual colônia recebe os bens. Agora: {0}
+Outposts.Commands.Pack.Label	Desmontar
+Outposts.Commands.Pack.Desc	Começa a desmontar este posto avançado de volta numa caravana
+Outposts.Commands.StopPack.Label	Parar de desmontar
+Outposts.Commands.StopPack.Desc	Cancela a desmontagem deste posto avançado
+Outposts.Commands.Remove.Label	Retirar pessoa
+Outposts.Commands.Remove.Desc	Tira uma pessoa deste posto avançado numa nova caravana
+Outposts.Command.Remove.Only1	Não dá para retirar: só há 1 morador. Para remover o posto avançado, escolha "Desmontar".
+Outposts.Contains	Tem {0} pessoas
+Outposts.Packing	Desmontando numa caravana. Pronto em {0}
+Outposts.NotSkilledEnough	As pessoas não têm habilidade suficiente: precisa de {0} somando pelo menos {1}
+Outposts.RestingAt	Descansando no posto avançado {0}
+Outposts.WillProduce.0	Vai produzir alguns itens em {0}
+Outposts.WillProduce.1	Vai produzir {0} {1} em {2}
+Outposts.WillProduce.2	Vai produzir {0} {1} e {2} {3} em {4}
+Outposts.WillProduce.N	Vai produzir o seguinte em {0}:\n{1}
+Outposts.CannotBeMade	Não pode ser feito em {0}
+Outposts.NotEnoughPawns	Pessoas insuficientes na caravana, precisa de pelo menos {0}
+Outposts.TotalSkill	{0} somado: {1}
+Outposts.TooClose	Perto demais de um assentamento ou outro posto avançado; precisa de pelo menos 1 região entre eles.
+Outposts.AddedFromTransportPods	Suas cápsulas de transporte chegaram. {0} foi adicionado a {1}.
+Outposts.AddTo	Adicionar ao posto avançado
+Outposts.SendNonPawns	Confirmar o envio de itens ao posto avançado? Eles serão perdidos para sempre.
+Outposts.AlreadyPacking	Já está desmontando
+Outposts.Settings.DeliveryMethod	Modo de entrega
+Outposts.Settings.DeliveryMethod.Teleport	Teleportar os itens para a colônia
+Outposts.Settings.DeliveryMethod.PackAnimal	Mandar um animal de carga com os itens para a colônia
+Outposts.Settings.DeliveryMethod.Store	Guardar os itens no posto avançado
+Outposts.Settings.DeliveryMethod.ForcePods	Sempre mandar cápsulas
+Outposts.Settings.DeliveryMethod.PackOrPods	Cápsulas se houver; senão, animal de carga
+Outposts.Abandoned	Posto avançado abandonado
+Outposts.Abandoned.Desc	{0} foi abandonado por não ter ninguém para tocá-lo. Logo será saqueado e engolido pela natureza, sem deixar rastro.
+Outposts.Take	Pegar
+Outposts.Give	Dar
+Outposts.AllowedBiomes	Precisa estar num destes biomas:
+Outposts.DisallowedBiomes	Não pode estar em nenhum destes biomas:
+Outposts.NumPawns	Precisa de pelo menos {0} pessoas dispostas a entrar no posto avançado
+Outposts.RequiredSkill	{0} somado precisa ser pelo menos {1}
+Outposts.GrowingRequired	Precisa poder cultivar plantas
+Outposts.MustHaveInCaravan	Precisa ter {0} na caravana
+Outposts.NoValidPawns	Ninguém válido para adicionar ao posto avançado
+Outposts.SkillChange	Por causa da mudança de habilidade, {0} não pode mais produzir {1}
+Outposts.Setting.ProductionTime	Tempo de produção
+Outposts.Setting.PackTime	Tempo de desmontagem
+Outposts.Setting.Range	Alcance
+Outposts.Setting.MinimumPawns	Mínimo de pessoas para criar
+Outposts.Settings.Production	Multiplicador de produção
+Outposts.Settings.DoRaids	Ligar ataques a postos avançados?
+## Keyed/PipeSystem.xml
+PipeSystem_Consumption	Consumo de {0}
+PipeSystem_ConsumptionExplained	A quantidade por dia de {0} que este prédio puxa da rede de {1}.
+PipeSystem_IdleConsumption	Consumo ocioso de {0}
+PipeSystem_IdleConsumptionExplained	A quantidade de {0} que este prédio puxa da rede de {1} quando ocioso.
+PipeSystem_Production	Produção de {0}
+PipeSystem_ProductionExplained	A quantidade por dia de {0} que este prédio produz para a rede de {1}.
+PipeSystem_DeconstructLabel	Desmontar canos de {0}
+PipeSystem_DeconstructDesc	Desmonta só os canos da rede de {0}.
+PipeSystem_ResourceOutput	Saída de {0}:
+PipeSystem_ResourceNeeded	{0} necessário:
+PipeSystem_ResourceStored	{0} armazenado:
+PipeSystem_NotConnected	Não ligado a {0}.
+PipeSystem_ExcessStored	{0}: excedente/armazenado na rede: {1} {3}/d / {2} {3}
+PipeSystem_Stored	{0} armazenado na rede:
+PipeSystem_ValveClosed	Válvula fechada.

@@ -1,0 +1,58 @@
+## DefInjected/HediffDef/Hediffs_Global_Misc.xml
+VPE_AteBlisscap.label	chapado de êxtase-chapéu
+VPE_AteBlisscap.description	Esta pessoa comeu êxtase-chapéu, que deixa qualquer um chapadíssimo, mas também sonolentíssimo.
+## DefInjected/RecipeDef/Recipes_Production.xml
+VPE_WeaveClothFromMycothread.label	tecer pano de micofio
+VPE_WeaveClothFromMycothread.description	Tece pano a partir de micofio.
+VPE_WeaveClothFromMycothread.jobString	Fazendo pano de micofio.
+## DefInjected/ThingDef/Items_Resource_RawPlant.xml
+VPE_Bileceps.label	bílicepe cru
+VPE_Bileceps.description	Bílicepe colhido. Pode virar refeição ou ser comido cru.
+VPE_Blisscap.label	êxtase-chapéu cru
+VPE_Blisscap.description	Êxtase-chapéu cru, colhido dos cogumelos de mesmo nome. Comido, deixa qualquer um chapadíssimo, mas também sonolentíssimo.
+## DefInjected/ThingDef/Items_Resource_Stuff.xml
+VPE_Mycothread.label	micofio
+VPE_Mycothread.description	Um tecido comestível parecido com algodão, tirado dos cogumelos de micofio. Macio ao toque e fácil de trabalhar, estraga rápido, tem uma cor estranha e, curiosamente, ainda tem cheiro e gosto de cogumelo.
+## DefInjected/ThingDef/Plants_Cultivated_Farm.xml
+VPE_Plant_Timbercap.label	madeirachapéu
+VPE_Plant_Timbercap.description	Um cogumelo baixo e marrom, de talo duro. Colhido, rende um pouco de uma substância parecida com madeira.
+VPE_Plant_Healtruffle.label	trufa-cura
+VPE_Plant_Healtruffle.description	A trufa-cura cresce devagar usando os nutrientes do gás podre: precisa de gás podre em volta para crescer. A colheita rende remédio herbal. Dá muito trabalho plantar e colher, porque ela é muito delicada. Os colonos a cultivam há muito tempo pelas propriedades medicinais.
+VPE_Plant_Stinker.label	fedorento
+VPE_Plant_Stinker.description	Um cogumelo pequeno e de crescimento rápido que forma grandes manchas. Produz gás podre por um processo químico. Apesar do cheiro horrível, pode ser colhido como fungo comestível. Cresce em qualquer lugar, mas a luz do sol o mata.\n\n<color=#E5E54C>Efeito no jogo:</color> ao contrário de outros cogumelos, o fedorento aguenta luz de até 50%, como a de tochas.
+VPE_Plant_Blisscap.label	êxtase-chapéu
+VPE_Plant_Blisscap.description	Um cogumelo comprido e azul-claro que oferece mais que sustento. Comê-lo induz um estado de felicidade extática, deixando a pessoa muito contente, mas bem sonolenta. Aumenta muito a sensibilidade psíquica de quem o come, e é consumido por comunidades bicho-grilo de vários mundos centrais, que dizem "ver o futuro" com ele.\n\n<color=#E5E54C>Efeito no jogo:</color> ao contrário de outras plantas, o êxtase-chapéu ignora a luz para crescer. A luz do sol não o destrói. Ainda descansa durante a noite.
+VPE_Plant_Lullabloom.label	flor-de-ninar
+VPE_Plant_Lullabloom.description	Um cogumelo especial que solta esporos calmantes, ideal para plantar ao lado da cama. Precisa ser plantado num vaso. A presença dele acalma quem dorme, tornando o sono mais repousante e confortável. As propriedades suaves e sonolentas o tornam um favorito de quem quer uma noite tranquila.\n\n<color=#E5E54C>Efeito no jogo:</color> ao contrário de outras plantas, a flor-de-ninar ignora a luz para crescer. A luz do sol não a destrói. Ainda descansa durante a noite.\n\nAnula o pensamento "sono perturbado".
+VPE_Plant_Bileceps.label	bílicepe
+VPE_Plant_Bileceps.description	O bílicepe é um cogumelo estranho, parecido com coral, que cresce na bile de corpos em decomposição. Apesar da origem nada apetitosa, tem gosto de carne e rende uma colheita rica em proteína. A aparência cancerosa pouco impede os colonos de usá-lo como substituto da carne.\n\n<color=#E5E54C>Efeito no jogo:</color> precisa de bile de cadáver no quadrado para crescer direito. Hora de arranjar uma lesma helixiana!
+VPE_Plant_Glowcap.label	brilhachapéu
+VPE_Plant_Glowcap.description	Um cogumelo azul e pequeno, comum em cavernas. O cheiro é absolutamente repulsivo, mas cozido tem um gosto surpreendentemente bom. Ilumina a área em volta, mas não o bastante para plantações.
+VPE_Plant_Redcap.label	chapéu-vermelho
+VPE_Plant_Redcap.description	Um cogumelo cultivado, de chapéu vermelho lindo e vida curta. É bonito, mas pode precisar ser replantado com frequência.
+VPE_Plant_Zapcap.label	choquechapéu
+VPE_Plant_Zapcap.description	Um cogumelo grande, bulboso e bege, conhecido por produzir um pouco de eletricidade enquanto cresce. Precisa ficar sobre conduítes para a energia ser aproveitada. Num curto-circuito, amplifica a energia liberada e causa muito mais dano.
+VPE_Building_Zapcap.label	choquechapéu
+VPE_Building_Zapcap.description	Um cogumelo grande, bulboso e bege, conhecido por produzir um pouco de eletricidade enquanto cresce. Precisa ficar sobre conduítes para a energia ser aproveitada. Num curto-circuito, amplifica a energia liberada e causa muito mais dano.
+VPE_Plant_Thermoregulus.label	termorregulo
+VPE_Plant_Thermoregulus.description	Um cogumelo grande e raro que precisa ser cultivado em vasos. Maduro, emite calor ou frio conforme a temperatura em volta, sempre tentando deixar o cômodo a 16 °C. \n\n<color=#E5E54C>Efeito no jogo:</color> ao contrário de outros cogumelos, a luz do sol não o destrói.
+VPE_Plant_Foampuffer.label	soltaespuma
+VPE_Plant_Foampuffer.description	Um cogumelo feio e grosso, com chapéu cheirando a esterco de muffalo. Precisa ser cultivado em vasos. Se tocar em fogo depois de maduro, explode e solta um jato de espuma antifogo a curta distância.
+VPE_Plant_MycothreadMushroom.label	cogumelo de micofio
+VPE_Plant_MycothreadMushroom.description	Este cogumelo é cultivado há séculos por colônias mineiras de escavadores, porque produz um tecido grosso e flexível, parecido com algodão, que serve para cordas, roupas e móveis. Demora muitíssimo para crescer e morre com qualquer luz, mas para algumas colônias é o único jeito confiável de conseguir bons tecidos.
+## DefInjected/ThingDef/Plants_Cultivated_Farm_Biotech.xml
+VPE_Plant_Toxpuff.label	toxibufa
+VPE_Plant_Toxpuff.description	Um cogumelo verde, pequeno e oval, comum em áreas muito poluídas. Solta gás tóxico quando alguém pisa nele.
+## DefInjected/ThoughtDef/Thoughts_Memory_Eating.xml
+VPE_AteBlisscap.stages.high_on_blisscap.label	chapado de êxtase-chapéu
+VPE_AteBlisscap.stages.high_on_blisscap.description	Nossa, cara, tô viajando.
+## DefInjected/WorkGiverDef/WorkGivers.xml
+VPE_HarvestMushroom.label	colher cogumelos
+VPE_HarvestMushroom.gerund	colhendo cogumelos
+VPE_HarvestMushroom.verb	colher cogumelos
+VPE_SowMushroom.label	plantar cogumelos
+VPE_SowMushroom.gerund	plantando cogumelos
+VPE_SowMushroom.verb	plantar cogumelos
+## Keyed/Misc_Gameplay.xml
+VPE_MushroomGrowingZone	Zona de cultivo de cogumelos
+VPE_MushroomGrowingZoneDesc	Cria uma zona onde os colonos vão tentar cultivar cogumelos. Lembre que o terreno ainda precisa da fertilidade que o cogumelo exige.

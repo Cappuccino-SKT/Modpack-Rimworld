@@ -1,0 +1,161 @@
+## DefInjected/RulePackDef/RulePacks_Namers_Landmarks.xml
+VEE_NamerLandmark_Sinkholes.rulePack.rulesStrings[2]	terrain_word->ocos subterrâneos
+VEE_NamerLandmark_Sinkholes.rulePack.rulesStrings[3]	terrain_word->baixadas quebradas
+VEE_NamerLandmark_TropicalBeach.rulePack.rulesStrings[0]	terrain_word->praia tropical
+VEE_NamerLandmark_TropicalBeach.rulePack.rulesStrings[1]	terrain_word->orla de palmeiras
+VEE_NamerLandmark_TropicalBeach.rulePack.rulesStrings[2]	terrain_word->faixa costeira quente
+VEE_NamerLandmark_TropicalBeach.rulePack.rulesStrings[3]	terrain_word->litoral ensolarado
+VEE_NamerLandmark_TropicalBeach.rulePack.rulesStrings[4]	terrain_word->costa tropical
+VEE_NamerLandmark_LaurelForest.rulePack.rulesStrings[0]	terrain_word->floresta de louros
+VEE_NamerLandmark_LaurelForest.rulePack.rulesStrings[1]	terrain_word->floresta nebular perene
+VEE_NamerLandmark_LaurelForest.rulePack.rulesStrings[2]	terrain_word->mata de neblina
+VEE_NamerLandmark_LaurelForest.rulePack.rulesStrings[3]	terrain_word->floresta úmida perene
+VEE_NamerLandmark_LaurelForest.rulePack.rulesStrings[4]	terrain_word->mata perene de folhas largas
+VEE_NamerLandmark_Moor.rulePack.rulesStrings[0]	terrain_word->charneca
+VEE_NamerLandmark_Moor.rulePack.rulesStrings[1]	terrain_word->urzal aberto
+VEE_NamerLandmark_Moor.rulePack.rulesStrings[2]	terrain_word->charneca varrida pelo vento
+VEE_NamerLandmark_Moor.rulePack.rulesStrings[3]	terrain_word->planície de urze
+VEE_NamerLandmark_Moor.rulePack.rulesStrings[4]	terrain_word->terras altas de turfa
+VEE_NamerLandmark_LushLavaFields.rulePack.rulesStrings[0]	terrain_word->campos de lava verdejantes
+VEE_NamerLandmark_LushLavaFields.rulePack.rulesStrings[1]	terrain_word->planície de lava coberta de mato
+VEE_NamerLandmark_LushLavaFields.rulePack.rulesStrings[2]	terrain_word->planura vulcânica verde
+VEE_NamerLandmark_LushLavaFields.rulePack.rulesStrings[3]	terrain_word->campos de basalto tomados pelo mato
+VEE_NamerLandmark_LushLavaFields.rulePack.rulesStrings[4]	terrain_word->derrames de lava cheios de vida
+## DefInjected/TerrainDef/Terrain_Natural.xml
+VEE_BurntForestSoil.label	solo de floresta queimada
+VEE_VolcanicAsh.label	regolito de impacto
+VEE_VolcanicSoilRich.label	solo vulcânico rico
+VEE_SaltySand.label	areia salgada
+VEE_DryRiverBed.label	leito de rio seco
+VEE_DryRiverBank.label	margem de rio seco
+VEE_FertileRiverbank.label	margem de rio fértil
+VEE_IrradiatedSoil.label	solo irradiado
+VEE_RuinedFarmland.label	lavoura arruinada
+VEE_AnimaSoil.label	solo anima
+VEE_AnimaSoilRich.label	solo anima encantado
+VEE_AnimaCrackedSoil.label	solo anima rachado
+VEE_AnimaSand.label	areia anima
+VEE_AnimaSoftSand.label	areia anima fofa
+VEE_GravelBeach.label	praia de cascalho
+VEE_Basalt.label	basalto
+VEE_RedSoftSand.label	areia vermelha fofa
+VEE_VolcanicSand.label	areia vulcânica
+VEE_SoftVolcanicSand.label	areia vulcânica fofa
+VEE_PebbleDunes.label	seixos soltos
+VEE_LittoralDuneSand.label	areia de duna litorânea
+VEE_TropicalBeachSand.label	areia de praia tropical
+VEE_MossySoil.label	solo musgoso
+## DefInjected/TerrainDef/Terrain_Temporary.xml
+VEE_TidalFloodwater.label	água de inundação de maré
+## DefInjected/TerrainDef/Terrain_Waters.xml
+VEE_SulfuricWaterDeep.label	água sulfúrica funda
+VEE_SulfuricWaterDeepMovingChestDeep.label	água sulfúrica corrente na altura do peito
+VEE_SulfuricWaterMovingShallow.label	água sulfúrica corrente rasa
+VEE_SulfuricWaterFlood.label	água de enchente sulfúrica rasa
+VEE_SulfuricWaterShallow.label	água sulfúrica rasa
+VEE_IrradiatedWaterDeep.label	água irradiada funda
+VEE_IrradiatedOceanWaterDeep.label	água de oceano irradiada funda
+VEE_IrradiatedWaterDeepMovingChestDeep.label	água irradiada corrente na altura do peito
+VEE_IrradiatedWaterFlood.label	água de enchente irradiada rasa
+VEE_IrradiatedWaterShallow.label	água irradiada rasa
+VEE_IrradiatedWaterMovingShallow.label	água irradiada corrente rasa
+VEE_IrradiatedWaterOceanShallow.label	água de oceano irradiada rasa
+VEE_SwampyWaterMovingChestDeep.label	água de pântano corrente na altura do peito
+VEE_SwampyWaterMovingShallow.label	água de pântano corrente rasa
+VEE_StagnantRiverWater.label	água de rio parada
+VEE_AnimaWaterDeep.label	água anima funda
+VEE_AnimaWaterOceanDeep.label	água de oceano anima funda
+VEE_AnimaWaterMovingChestDeep.label	água anima corrente na altura do peito
+VEE_AnimaWaterShallow.label	água anima rasa
+VEE_AnimaWaterOceanShallow.label	água de oceano anima rasa
+VEE_AnimaWaterMovingShallow.label	água anima corrente rasa
+## DefInjected/ThingDef/Buildings_Ancient.xml
+VEE_RadioactiveBarrel.label	barril radioativo
+VEE_RadioactiveBarrel.description	Um barril enferrujado vazando combustível nuclear descartado. Alguém achou que aqui era um bom lugar para jogá-lo fora.
+## DefInjected/ThingDef/Buildings_Natural_Odyssey.xml
+VEE_RotstinkVent.label	gêiser de podridão
+VEE_RotstinkVent.description	Um gêiser fétido que de tempos em tempos arrota nuvens de miasma de cadáver, sufocando o ar com o fedor da decomposição.
+VEE_ToxicVent.label	gêiser tóxico
+VEE_ToxicVent.description	Uma fenda instável que de tempos em tempos expele um gás verde nocivo, envenenando o ar e adoecendo tudo que o respira.
+VEE_SmokeVent.label	gêiser de fumaça
+VEE_SmokeVent.description	Uma fenda fumegante que de tempos em tempos solta uma fumaça grossa e acre, reduzindo a visibilidade e sufocando os pulmões.
+VEE_DeadlifeVent.label	gêiser de morte-viva
+VEE_DeadlifeVent.description	Um gêiser sinistro que solta uma poeira estranha parecida com cinza, capaz de despertar os mortos sob sua influência.
+VEE_Coral.label	coral
+VEE_Coral.description	Uma colônia colorida e calcificada de minúsculos organismos marinhos, formando estruturas de recife complexas e cheias de vida.
+VEE_SulfurVent.label	fenda de enxofre
+VEE_SulfurVent.description	Uma rachadura natural no chão por onde escapam gases sulfúricos. O gás dessas fendas fede a ovo podre.
+VEE_DryWheat.label	trigo seco
+VEE_DryWheat.description	Um cereal âmbar que leva quase uma estação inteira para amadurecer. Este trigo passou tempo demais na seca e murchou.
+VEE_Sinkhole.label	dolina
+VEE_Sinkhole.description	Um desabamento súbito do chão que forma um buraco fundo e instável, muitas vezes expondo a rocha nua por baixo.
+VEE_DriftwoodChunk.label	tronco à deriva
+VEE_DriftwoodChunk.description	Um pedaço de madeira descorado pelo sol, alisado pelas ondas e pelo tempo, trazido à praia de algum lugar distante e desconhecido.
+VEE_JadeChunk.label	pedaço de jadeíta
+VEE_JadeChunk.description	Um pedaço de jadeíta. Pode ser desconstruído para obter um pouco de jade.
+VEE_ObsidianChunk.label	pedaço de obsidiana
+VEE_ObsidianChunk.description	Um pedaço de obsidiana. Pode ser desconstruído para obter um pouco de obsidiana.
+VEE_Cenote.label	cenote
+VEE_Cenote.description	Uma dolina funda e cheia de água escavada na pedra. A superfície parece calma. Por ser tão fundo, não dá para aterrar.
+VEE_Cenote_Small.label	cenote pequeno
+VEE_Cenote_Small.description	Uma dolina funda e cheia de água escavada na pedra. A superfície parece calma. Por ser tão fundo, não dá para aterrar.
+VEE_InertPitGate.label	portal do abismo
+VEE_InertPitGate.description	Um buraco enorme e ameaçador que conecta a superfície com uma rede escura de cavernas subterrâneas. É possível descer para as cavernas abaixo.
+VEE_InertPitGate.portal.enteredLetterLabel	Covil das bestas carnais
+VEE_InertPitGate.portal.enteredLetterText	Nas profundezas do portal do abismo, você descobriu um enorme sistema de cavernas infestado de bestas carnais.\n\nO sistema de cavernas está obstruído por massas de carne viva que bloqueiam o caminho. Ataque a massa carnal para destruí-la.\n\nTodo o sistema de cavernas parece instável. Se encontrar o que está por trás da massa carnal, talvez consiga derrubar os túneis e fechar o portal do abismo.
+VEE_MineableComponentSpacer.label	maquinário avançado compactado
+VEE_MineableComponentSpacer.description	Eletrônicos antigos avançados, compactados com o tempo. Pode ser minerado para obter componentes avançados úteis.
+VEE_MineableJadeite.label	jadeíta
+VEE_MineableJadeite.description	Um mineral silicato da família dos piroxênios, uma das duas formas de jade.
+VEE_SmoothedJadeite.label	jadeíta polida
+VEE_SmoothedJadeite.description	Um mineral silicato da família dos piroxênios, uma das duas formas de jade.
+VEE_DenseSnow.label	neve sólida
+VEE_DenseSnow.description	Uma camada pesada e compactada de neve que atrapalha o movimento e abafa o som. Pode ser minerada para removê-la.
+## DefInjected/ThingDef/Filth_Various.xml
+VEE_Filth_Seashells.label	conchas
+## DefInjected/ThingDef/Items_Resource_Misc.xml
+VEE_AnimaPearls.label	pérola anima
+VEE_AnimaPearls.description	Uma pérola lisa e lustrosa formada dentro das flores anima, vibrando de leve com ressonância psíquica. Pérolas anima podem ser consumidas para aumentar a sensibilidade psíquica por um tempo.
+## DefInjected/ThingDef/Items_Resource_RawPlant.xml
+VEE_RawDates.label	tâmaras
+VEE_RawDates.description	Tâmaras cruas. Gostosas até cruas. São frutos doces e ricos em nutrientes colhidos de tamareiras. Conservam-se bem em climas quentes e são uma fonte confiável de energia.
+## DefInjected/ThingDef/Plants_Anima.xml
+VEE_Plant_AnimaBell.label	sino anima
+VEE_Plant_AnimaBell.description	Tufos de trepadeiras que rompem o solo e se abrem em flores lindas. Acredita-se que façam parte de grandes raízes coletivas espalhadas fundo sob o terreno, que às vezes rompem a superfície para polinizar. A beleza das flores convence os humanos a não arrancá-las.
+VEE_Plant_MysticCap.label	chapéu místico
+VEE_Plant_MysticCap.description	Um cogumelo pequeno de cores vivas, com chapéu levemente iridescente. Pode ser colhido para fungo cru.
+VEE_Plant_AnimaBush.label	arbusto anima
+VEE_Plant_AnimaBush.description	Um arbusto baixo. Fala, sim, mas só quando você não está por perto.
+VEE_Plant_AnimaRoot.label	raiz anima
+VEE_Plant_AnimaRoot.description	Raízes pálidas e retorcidas com um brilho interno suave, nascidas de solo tocado pela anima. Podem ser colhidas para madeira.
+VEE_Plant_AnimaBrambles.label	espinheiro anima
+VEE_Plant_AnimaBrambles.description	Trepadeiras espinhentas de crescimento rápido, impregnadas de uma leve energia anima. Os espinhos vibram baixinho ao toque.
+VEE_Plant_AnimaHeartBlossom.label	flor-coração anima
+VEE_Plant_AnimaHeartBlossom.description	Uma flor delicada e de brilho suave que nasce perto das árvores anima, ressoando de leve com energia psíquica. Pode ser colhida para obter pérolas anima.
+VEE_Plant_YoungAnimaTree.label	muda anima
+VEE_Plant_YoungAnimaTree.description	Uma pequena árvore tocada pela anima. Não tem a potência psíquica de uma verdadeira árvore anima, mas ainda vibra de leve com vida psíquica.
+VEE_Plant_FakeAnimaTree.label	árvore anima
+VEE_Plant_FakeAnimaTree.description	Uma árvore tocada pela anima. Não tem a potência psíquica de uma verdadeira árvore anima, mas ainda vibra de leve com vida psíquica.
+VEE_Plant_GrandAnimaTree.label	árvore anima grande
+VEE_Plant_GrandAnimaTree.description	Uma grande árvore tocada pela anima. Não tem a potência psíquica de uma verdadeira árvore anima, mas ainda vibra de leve com vida psíquica.
+VEE_Plant_TreeAnima_Ancient.label	árvore anima ancestral
+VEE_Plant_TreeAnima_Ancient.description	Uma árvore enorme e rara, de casca morna e lisa como pele e folhas longas e iridescentes. Impregnadas de microrganismos bioluminescentes, as árvores anima ancestrais desenvolvem uma forma única de simbiose psíquica com as formas de vida em volta.\n\nSe uma pessoa (conjuradora ou não) meditar perto de uma árvore anima ancestral, nasce grama anima em volta da base. Com grama suficiente, é possível fazer um ritual de ligação psíquica com a árvore e aprimorar os poderes psíquicos de uma pessoa. Só os povos tribais conhecem o segredo desse ritual. Conjuradores tribais também conseguem tirar concentração psíquica das árvores anima ancestrais ao meditar para elas.\n\nAs propriedades psíquicas das árvores anima ancestrais enfraquecem se houver estruturas artificiais por perto. Elas se recusam a ser enjauladas ou estudadas e precisam continuar sendo parte da natureza.\n\nA maioria das tribos acredita que as árvores anima ancestrais não são simplesmente árvores, mas as extremidades físicas de um único espírito do mundo.
+VEE_Plant_TreeAnima_Ancient.comps.CompPsylinkable.enoughPlantsLetterLabel	Sobre: ligação com árvore anima ancestral
+VEE_Plant_TreeAnima_Ancient.comps.CompPsylinkable.enoughPlantsLetterText	A árvore anima ancestral agora tem {0} de grama anima em volta. Isso basta para uma pessoa tribal começar seu primeiro ritual de ligação!\n\nO ritual de ligação dá um nível de psínculo e a capacidade de usar poderes psíquicos. Subir para um nível mais alto exige 20 de grama.\n\nA grama anima exigida nos rituais de ligação para aprimorar conjuradores é:\n\n{1}\n\nObs.: só quem tem o tipo de foco natureza pode meditar ou se ligar a árvores anima ancestrais. Dá para ver os tipos de foco de uma pessoa no cartão de informações, pelo botão "i".
+VEE_Plant_TreeAnima_Ancient.comps.CompGiveThoughtToAllMapPawnsOnDestroy.message	A árvore anima ancestral morreu e soltou um grito psíquico perturbador.
+VEE_Plant_AnimaHusk.label	casca anima
+VEE_Plant_AnimaHusk.description	Uma árvore anima murcha, cuja casca endureceu numa carapaça cinza e sem vida sob a poluição implacável. A presença psíquica está abafada e distorcida, mas um eco teimoso de anima ainda se agarra à casca, recusando-se a sumir de vez.
+## DefInjected/ThingDef/Plants_Bushes.xml
+VEE_Plant_Fern.label	samambaia
+VEE_Plant_Fern.description	Uma planta de sombra com frondes largas que se espalha pelo chão úmido das florestas e por terrenos abrigados.
+VEE_Plant_JuniperBush.label	arbusto de zimbro
+VEE_Plant_JuniperBush.description	Um arbusto resistente e baixo, de agulhas aromáticas e bagas densas. Os galhos se torcem e se espalham, aguentando ventos fortes e terreno exposto.
+## DefInjected/ThingDef/Plants_Cacti.xml
+VEE_Plant_BarrelCactus.label	cacto-barril
+VEE_Plant_BarrelCactus.description	Um cacto grande nativo dos ambientes áridos da Terra. Não é árvore, mas dá um pouco de material fibroso que pode ser usado como madeira.
+VEE_Plant_BeavertailCactus.label	cacto rabo-de-castor
+VEE_Plant_BeavertailCactus.description	Um cacto grande nativo dos ambientes áridos da Terra. Não é árvore, mas dá um pouco de material fibroso que pode ser usado como madeira.
+VEE_Plant_HedgehogCactus.label	cacto-ouriço
+VEE_Plant_HedgehogCactus.description	Um cacto grande nativo dos ambientes áridos da Terra. Não é árvore, mas dá um pouco de material fibroso que pode ser usado como madeira.
+VEE_Plant_OrganPipeCactus.label	cacto tubo-de-órgão
+VEE_Plant_OrganPipeCactus.description	Um cacto grande nativo dos ambientes áridos da Terra. Não é árvore, mas dá um pouco de material fibroso que pode ser usado como madeira.

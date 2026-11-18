@@ -1,0 +1,277 @@
+## DefInjected/ThingDef/Buildings_Security_Turrets.xml
+VFEP_Artillery_FieldGun.description	Um canhão operado que dispara todo tipo de projétil. Uma variação do morteiro, com todas as vantagens e desvantagens, mas tem um cone de 90 graus de tiro direto em troca de uma cadência efetiva duas vezes maior.
+VFEP_Turret_Cannon.label	canhão
+VFEP_Turret_Cannon.description	Um canhão medieval portátil montado num giro de 180 graus, que dispara bolas de aço mais ou menos redondas a uma distância considerável. A precisão deixa a desejar, mas é uma melhoria enorme em relação às catapultas, além de atirar bem mais rápido.
+VFEP_Artillery_Cannon.label	canhão
+VFEP_Artillery_Cannon.description	Um canhão operado que dispara todo tipo de projétil. Uma variação do morteiro, com todas as vantagens e desvantagens, mas tem um cone de 90 graus de tiro direto em troca de uma cadência efetiva duas vezes maior.
+VFEP_Artillery_Cannon.verbs.Verb_ShootCE.label	canhão
+VFEP_Bullet_Cannonball.label	bala de canhão
+## DefInjected/ThingDef/Buildings_ShipChunks.xml
+VFEP_ShipChunkDebris.label	destroço de nave
+VFEP_ShipChunkDebris.description	Um pedaço de uma nave de combate, arrancado pelas forças de uma reentrada descontrolada ou por alguma arma. É cheio de chapas de blindagem de camada dupla e sistemas de controle, que podem ser recuperados ao desmontá-lo.
+VFEP_ShipChunkBattery.label	bateria de nave destroçada
+VFEP_ShipChunkBattery.description	Os restos retorcidos de uma bateria de nave, usada para alimentar sistemas de alto consumo por pouco tempo. Era anos-luz à frente da tecnologia de baterias da borda, mas não pode mais ser recarregada; rende uma boa sucata quando a carga acaba.
+VFEP_ShipChunkCryptosleepCasket.label	sarcófago de criptosono de nave destroçada
+VFEP_ShipChunkCryptosleepCasket.description	Um sarcófago de criptosono com energia própria preso nos restos do casco da nave. O ocupante ainda pode ser resgatado do módulo, mas a maior parte do material vale menos que sucata e rende pouco.
+VFEP_ShipChunkVolatileEngine.label	motor instável de nave destroçada
+VFEP_ShipChunkVolatileEngine.description	Motores turbo com energia própria de uma nave de combate, feitos para uso na atmosfera. O sistema de controle e segurança está danificado e as turbinas não puxam ar suficiente para se resfriar. Se não for desmontado direito, a energia acumulada vai despedaçá-lo.
+VFEP_ShipChunkFuelTank.label	tanque de combustível de nave destroçada
+VFEP_ShipChunkFuelTank.description	Um tanque de quimicombustível furado pelo próprio casco da nave. Parte do fluido pode ser recuperada, mas a maioria está cheia de sujeira, vazando e criando risco de incêndio. Alvo perfeito para qualquer piromaníaco que queira ver o mundo pegar fogo.
+VFEP_ShipChunkGauntletTurret.label	torreta Gauntlet de nave destroçada
+VFEP_ShipChunkGauntletTurret.description	Os restos do alojamento do canhão de carga Gauntlet. Com energia externa, mas o depósito de munição está destruído e não tem reposição. Quando a torreta esvaziar o carregador, ainda é uma sucata valiosa que vale a pena recuperar.
+VFEP_ShipChunkReactor.label	reator de nave destroçada
+VFEP_ShipChunkReactor.description	Os restos do reator nuclear de uma nave de combate, de baixa potência e feito para funcionar junto com armazenamento de energia. Surpreendentemente, o reator funciona perfeitamente e não tem dano estrutural, então pode ser usado com segurança em operações em terra.
+VFEP_ShipMedicalCrate.label	caixa médica de nave
+VFEP_ShipMedicalCrate.description	Uma caixa, agora aberta, com suprimentos de primeiros socorros. O palete pode ser desmontado para aço, além de recuperar os suprimentos.
+VFEP_ShipNutrientPasteCrate.label	caixa de pasta nutritiva de nave
+VFEP_ShipNutrientPasteCrate.description	Uma caixa, agora aberta, com rações de emergência. O palete pode ser desmontado para aço, além de recuperar os suprimentos.
+## DefInjected/ThingDef/Buildings_Special.xml
+VFEP_Box_Autorifle.label	fuzil automático de caixão de guerra
+VFEP_Box_Autorifle.description	Uma versão portátil do canhão automático feita para caixões de guerra. Com o cano encurtado, tem menos alcance, penetração e dano que a versão de torreta. Em compensação, é muito capaz no combate a curta distância, o que compensa a leve perda de precisão a distâncias maiores.
+VFEP_Box_UraniumSlugRifle.label	fuzil de urânio de caixão de guerra
+VFEP_Box_UraniumSlugRifle.description	Uma versão portátil do canhão de urânio feita para caixões de guerra. Com o cano encurtado, tem menos penetração, mais recuo e menos dano que a versão de torreta. Em compensação, graças ao operador humano, não tem alcance mínimo e se sai melhor a média distância.
+VFEP_Box_Slugthrower.label	lança-balotes de caixão de guerra
+VFEP_Box_Slugthrower.description	Uma versão ampliada da espingarda de bomba feita para caixões de guerra. Cada cartucho leva 4 balotes maiores que os de uma espingarda comum, o que dá mais alcance, penetração e muito mais dano. Mas o recuo é absurdo, até para o sistema de amortecimento de um caixão de guerra.
+VFEP_Box_Minigun.label	metralhadora giratória de caixão de guerra
+VFEP_Box_Minigun.description	Uma versão ampliada da metralhadora giratória feita para caixões de guerra. Usa munição de calibre maior, mal fabricada em massa por causa da quantidade necessária. Por isso tem cadência e penetração menores, mas quem liga? Ninguém quer estar do lado errado de tanto chumbo.
+VFEP_Box_GrenadeLauncher.label	lança-granadas de caixão de guerra
+VFEP_Box_GrenadeLauncher.description	Uma versão ampliada do lança-granadas feita para caixões de guerra. Melhoria pura: dispara em rajadas de 3 e aproveita o amortecimento de recuo para se recuperar mais rápido e alcançar mais longe. Como todo lançador, porém, erra por uma margem maior que uma granada lançada à mão.
+VFEP_Box_HeavyFlamer.label	lança-chamas pesado de caixão de guerra
+VFEP_Box_HeavyFlamer.description	Uma versão ampliada do lança-chamas pesado feita para caixões de guerra. Graças aos canos duplos e ao dissipador de calor maior, cospe dois jatos de chamas e precisa de menos tempo para não superaquecer.
+VFEP_Box_CombatKnife.label	faca de combate de caixão de guerra
+VFEP_Box_CombatKnife.description	Uma versão ampliada da faca de combate feita para caixões de guerra. Só continua se chamando faca em comparação com o tamanho do caixão de guerra: corta um homem ao meio e é do tamanho de um. A arma preferida dos caixões de guerra mais rápidos, que priorizam alvos isolados e com pouca blindagem.
+VFEP_Box_Broadsword.label	espada larga de caixão de guerra
+VFEP_Box_Broadsword.description	Uma arma corpo a corpo muito peculiar, feita só para caixões de guerra. Junta um peso enorme a uma força de corte sem igual no corpo a corpo. Foi pensada contra outros caixões de guerra, mas funciona igualmente bem contra alvos menores que normalmente seriam considerados blindados.
+VFEP_Box_ChargeLance.label	lança de carga de caixão de guerra
+VFEP_Box_ChargeLance.description	Um terror no campo de batalha, a lança de carga recebeu uma melhoria enorme para uso em caixões de guerra. Uma fonte de energia bem mais potente dá poder de parada superior: dispara vários projéteis maiores a uma distância maior, com mais precisão e penetração.
+VFEP_Box_HandheldCannon.label	canhão de mão de caixão de guerra
+VFEP_Box_HandheldCannon.description	Basicamente um morteiro de alma lisa portátil que dispara explosivos em arco, passando por cima de fortificações inimigas. Feito por quem queria juntar a antiga guerra naval com tecnologia moderna. A precisão é péssima, mas o fabricador embarcado garante fogo de artilharia sem nunca precisar de reabastecimento.
+VFEP_Box_ChargeBlaster.label	disparador de carga de caixão de guerra
+VFEP_Box_ChargeBlaster.description	Basicamente uma metralhadora de carga ampliada para uso em caixões de guerra. Dispara menos projéteis por rajada, mas a munição ganhou cargas explosivas. Feita como arma de apoio que anula completamente a cobertura dos coitados do outro lado.
+VFEP_Box_GravityHammer.label	martelo gravitacional de caixão de guerra
+VFEP_Box_GravityHammer.description	Uma peça monumental de tecnologia antipessoal que só os caixões de guerra superdimensionados conseguem usar direito. Praticamente um bloco de motor preso na ponta do atuador de membro de um mecanoide, com várias placas pneumáticas cobrindo geradores de repulsão em miniatura feitos para controle de multidões. Em bom português: uma pancada da cabeça arremessa o alvo vários metros para trás.
+## DefInjected/ThingDef/CRangedWarcasket.xml
+VFEP_WarcasketGun_Railgun.label	canhão elétrico de caixão de guerra
+VFEP_WarcasketGun_Railgun.description	Uma modificação assustadora da lança gauss com tambor giratório e três canos. O aquecimento é bem longo, porque os canos precisam carregar antes de disparar em série, mas os projéteis são bem maiores, o que significa mais dano e mais alcance. O potencial de dano colateral é imenso, e muitos comandantes proíbem seu uso fora de táticas de guerrilha e ataques solo.
+VFEP_WarcasketGun_Railgun.verbs.Verb_ShootCE.label	canhão elétrico de caixão de guerra
+VFEP_Box_Railgun.label	canhão elétrico de caixão de guerra
+VFEP_Box_Railgun.description	Uma modificação assustadora da lança gauss com tambor giratório e três canos. O aquecimento é bem longo, porque os canos precisam carregar antes de disparar em série, mas os projéteis são bem maiores, o que significa mais dano e mais alcance. O potencial de dano colateral é imenso, e muitos comandantes proíbem seu uso fora de táticas de guerrilha e ataques solo.
+VWE_Bullet_WarcasketRailgun.label	projétil de canhão elétrico
+## DefInjected/ThingDef/Etheral_Skyfallers.xml
+VFEP_Ship_Black.label	nave (chegando)
+VFEP_Ship_Green.label	nave (chegando)
+VFEP_Ship_Orange.label	nave (chegando)
+VFEP_Ship_Red.label	nave (chegando)
+VFEP_IShipChunkDebris.label	destroço de nave (chegando)
+VFEP_IShipChunkBattery.label	bateria de nave destroçada (chegando)
+VFEP_IShipChunkCryptosleepCasket.label	sarcófago de criptosono de nave destroçada (chegando)
+VFEP_IShipChunkVolatileEngine.label	motor instável de nave destroçada (chegando)
+VFEP_IShipChunkFuelTank.label	tanque de combustível de nave destroçada (chegando)
+VFEP_IShipChunkGauntletTurret.label	torreta Gauntlet de nave destroçada (chegando)
+VFEP_IShipChunkReactor.label	reator de nave destroçada (chegando)
+VFEP_IShipMedicalCrate.label	caixa médica de nave (chegando)
+VFEP_IShipNutrientPasteCrate.label	caixa de pasta nutritiva de nave (chegando)
+## DefInjected/ThingDef/LRangedWarcasket.xml
+VFEP_WarcasketGun_SalvagedLaserEradicator.label	erradicador laser recuperado de caixão de guerra
+VFEP_WarcasketGun_SalvagedLaserEradicator.description	Uma peça de tecnologia laser bem complicada, desenvolvida principalmente como arma de cerco para gerar explosões dentro de bunkers reforçados. Para miniaturizar uma arma de posição sem precisar de uma unidade de energia enorme, o laser de ombro dispara em pulsos irregulares com frequência entre kHz e MHz. Os resultados são indiscutíveis, com uma explosão devastadora, mas o alcance efetivo é limitado e o aquecimento é longo para carregar os bancos de capacitores.
+VFEP_WarcasketGun_SalvagedLaserEradicator.verbs.Verb_ShootCE.label	erradicador laser recuperado de caixão de guerra
+VFEP_Box_SalvagedLaserEradicator.label	erradicador laser recuperado de caixão de guerra
+VFEP_Box_SalvagedLaserEradicator.description	Uma peça de tecnologia laser bem complicada, desenvolvida principalmente como arma de cerco para gerar explosões dentro de bunkers reforçados. Para miniaturizar uma arma de posição sem precisar de uma unidade de energia enorme, o laser de ombro dispara em pulsos irregulares com frequência entre kHz e MHz. Os resultados são indiscutíveis, com uma explosão devastadora, mas o alcance efetivo é limitado e o aquecimento é longo para carregar os bancos de capacitores.
+VFEP_WarcasketGun_LaserBlaster.label	disparador laser de caixão de guerra
+VFEP_WarcasketGun_LaserBlaster.description	Uma arma laser ampliada que junta métodos modernos e antigos num pacote compacto. Aproveitando a tolerância maior de peso, o sistema tem um tambor de revólver com células de bateria avançadas no lugar de cartuchos. Assim a arma dispara tiros mais potentes com aquecimento mais lento, o que torna o fogo contínuo mais seguro para o operador.
+VFEP_WarcasketGun_LaserBlaster.verbs.Verb_ShootCE.label	disparador laser de caixão de guerra
+VWEL_Bullet_LaserRifle.label	tiro laser
+VWEL_Bullet_LaserRifle.description	Um feixe de laser concentrado.
+## DefInjected/ThingDef/MeleeWarcasket.xml
+VFEP_WarcasketMeleeWeapon_CombatKnife.label	faca de combate de caixão de guerra
+VFEP_WarcasketMeleeWeapon_CombatKnife.description	Uma versão ampliada da faca de combate feita para caixões de guerra. Só continua se chamando faca em comparação com o tamanho do caixão de guerra: corta um homem ao meio e é do tamanho de um. A arma preferida dos caixões de guerra mais rápidos, que priorizam alvos isolados e com pouca blindagem.
+VFEP_WarcasketMeleeWeapon_Broadsword.label	espada larga de caixão de guerra
+VFEP_WarcasketMeleeWeapon_Broadsword.description	Uma arma corpo a corpo muito peculiar, feita só para caixões de guerra. Junta um peso enorme a uma força de corte sem igual no corpo a corpo. Foi pensada contra outros caixões de guerra, mas funciona igualmente bem contra alvos menores que normalmente seriam considerados blindados.
+VFEP_WarcasketMeleeWeapon_GravityHammer.label	martelo gravitacional de caixão de guerra
+VFEP_WarcasketMeleeWeapon_GravityHammer.description	Uma peça monumental de tecnologia antipessoal que só os caixões de guerra superdimensionados conseguem usar direito. Praticamente um bloco de motor preso na ponta do atuador de membro de um mecanoide, com várias placas pneumáticas cobrindo geradores de repulsão em miniatura feitos para controle de multidões. Em bom português: uma pancada da cabeça arremessa o alvo vários metros para trás.
+VFEP_WarcasketMeleeWeapon_PlasmaSword.label	espada de plasma de caixão de guerra
+VFEP_WarcasketMeleeWeapon_PlasmaSword.description	Uma modificação militar da serra de plasma, adaptada para caixões de guerra com fins antimaterial. A ideia original era que essa espada bastarda se estendesse como um chicote e também tivesse uma forma reta simples, mas problemas para conter o plasma engavetaram a ideia. Em vez disso, os elos servem para mudar o comprimento da espada e facilitar a troca de partes danificadas.
+## DefInjected/ThingDef/Races_Mechanoid.xml
+VFEP_Mech_Wardrone.description	Drone de combate voador semiautônomo, com funções de combate limitadas. Leva uma minitorreta semiautomática leve, por causa da pouca absorção de recuo, e um módulo de autodestruição para evitar captura e se defender de atacantes corpo a corpo.
+VFEP_Mech_Wardrone.comps.CompKillAfterDelay.countdownLabel	Explode em
+VFEP_Mech_Spidermine.description	Drone de combate semiautônomo com navegação própria. Tem um módulo de autodestruição e um sistema de rastreamento; é feito para ser lançado como carga e então caçar alvos inimigos. Se não achar alvo por perto, detona na hora para evitar acidentes futuros.
+## DefInjected/ThingDef/RangedMechanoid.xml
+VFEPGun_MiniBlaster.label	minidisparador
+VFEPGun_MiniBlaster.description	Uma arma automática simples feita para ser montada num drone de guerra.
+VFEPGun_MiniBlaster.verbs.Verb_ShootCE.label	minidisparador
+## DefInjected/ThingDef/RangedWarcasket.xml
+VFEP_WarcasketGun_Autorifle.label	fuzil automático de caixão de guerra
+VFEP_WarcasketGun_Autorifle.description	Uma versão portátil do canhão automático feita para caixões de guerra. Com o cano encurtado, tem menos alcance, penetração e dano que a versão de torreta. Em compensação, é muito capaz no combate a curta distância, o que compensa a leve perda de precisão a distâncias maiores.
+VFEP_WarcasketGun_Autorifle.verbs.Verb_ShootCE.label	fuzil automático de caixão de guerra
+VFEP_Bullet_WarcasketAutorifle.label	bala de fuzil automático de caixão de guerra
+VFEP_WarcasketGun_UraniumSlugRifle.label	fuzil de urânio de caixão de guerra
+VFEP_WarcasketGun_UraniumSlugRifle.description	Uma versão portátil do canhão de urânio feita para caixões de guerra. Com o cano encurtado, tem menos penetração, mais recuo e menos dano que a versão de torreta. Em compensação, graças ao operador humano, não tem alcance mínimo e se sai melhor a média distância.
+VFEP_WarcasketGun_UraniumSlugRifle.verbs.Verb_ShootCE.label	fuzil de urânio de caixão de guerra
+VFEP_Bullet_WarcasketUraniumSlugRifle.label	projétil de urânio
+VFEP_WarcasketGun_Slugthrower.label	lança-balotes de caixão de guerra
+VFEP_WarcasketGun_Slugthrower.description	Uma versão ampliada da espingarda de bomba feita para caixões de guerra. Cada cartucho leva 4 balotes maiores que os de uma espingarda comum, o que dá mais alcance, penetração e muito mais dano. Mas o recuo é absurdo, até para o sistema de amortecimento de um caixão de guerra.
+VFEP_WarcasketGun_Slugthrower.verbs.Verb_ShootCE.label	lança-balotes de caixão de guerra
+VFEP_Bullet_WarcasketSlugthrower.label	disparo de lança-balotes de caixão de guerra
+VFEP_WarcasketGun_Minigun.label	metralhadora giratória de caixão de guerra
+VFEP_WarcasketGun_Minigun.description	Uma versão ampliada da metralhadora giratória feita para caixões de guerra. Usa munição de calibre maior, mal fabricada em massa por causa da quantidade necessária. Por isso tem cadência e penetração menores, mas quem liga? Ninguém quer estar do lado errado de tanto chumbo.
+VFEP_WarcasketGun_Minigun.verbs.Verb_ShootCE.label	metralhadora giratória de caixão de guerra
+VFEP_Bullet_WarcasketMinigun.label	bala de metralhadora giratória de caixão de guerra
+VFEP_WarcasketGun_GrenadeLauncher.label	lança-granadas de caixão de guerra
+VFEP_WarcasketGun_GrenadeLauncher.description	Uma versão ampliada do lança-granadas feita para caixões de guerra. Melhoria pura: dispara em rajadas de 3 e aproveita o amortecimento de recuo para se recuperar mais rápido e alcançar mais longe. Como todo lançador, porém, erra por uma margem maior que uma granada lançada à mão.
+VFEP_WarcasketGun_GrenadeLauncher.verbs.Verb_ShootCE.label	lança-granadas de caixão de guerra
+VFEP_WarcasketGun_HeavyFlamer.label	lança-chamas pesado de caixão de guerra
+VFEP_WarcasketGun_HeavyFlamer.description	Uma versão ampliada do lança-chamas pesado feita para caixões de guerra. Graças aos canos duplos e ao dissipador de calor maior, cospe dois jatos de chamas e precisa de menos tempo para não superaquecer.
+VFEP_WarcasketGun_HeavyFlamer.verbs.Verb_ShootCE.label	lança-chamas pesado de caixão de guerra
+VWE_Bullet_WarcasketHeavyFlamer.label	jato de lança-chamas pesado de caixão de guerra
+VFEP_WarcasketGun_ChargeLance.label	lança de carga de caixão de guerra
+VFEP_WarcasketGun_ChargeLance.description	Um terror no campo de batalha, a lança de carga recebeu uma melhoria enorme para uso em caixões de guerra. Uma fonte de energia bem mais potente dá poder de parada superior: dispara vários projéteis maiores a uma distância maior, com mais precisão e penetração.
+VFEP_WarcasketGun_ChargeLance.verbs.Verb_ShootCE.label	lança de carga de caixão de guerra
+VFEP_Bullet_WarcasketChargeLance.label	disparo de lança de carga de caixão de guerra
+VFEP_WarcasketGun_HandheldCannon.label	canhão de mão de caixão de guerra
+VFEP_WarcasketGun_HandheldCannon.description	Basicamente um morteiro de alma lisa portátil que dispara explosivos em arco, passando por cima de fortificações inimigas. Feito por quem queria juntar a antiga guerra naval com tecnologia moderna. A precisão é péssima, mas o fabricador embarcado garante fogo de artilharia sem nunca precisar de reabastecimento.
+VFEP_WarcasketGun_HandheldCannon.verbs.Verb_ShootMortarCE.label	canhão de mão de caixão de guerra
+VFEP_Bullet_HandheldCannonCannonball.label	bala de canhão
+VFEP_WarcasketGun_ChargeBlaster.label	disparador de carga de caixão de guerra
+VFEP_WarcasketGun_ChargeBlaster.description	Basicamente uma metralhadora de carga ampliada para uso em caixões de guerra. Dispara menos projéteis por rajada, mas a munição ganhou cargas explosivas. Feita como arma de apoio que anula completamente a cobertura dos coitados do outro lado.
+VFEP_WarcasketGun_ChargeBlaster.verbs.Verb_ShootCE.label	disparador de carga de caixão de guerra
+VFEP_Bullet_WarcasketChargeBlaster.label	disparo de disparador de carga de caixão de guerra
+## DefInjected/ThoughtDef/Precepts_Camaraderie.xml
+VFEP_Camaraderie_Respected_CrewDead.stages.lost_a_comrade.label	perdi um camarada
+VFEP_Camaraderie_Respected_CrewDead.stages.lost_a_comrade.description	Perdemos um dos nossos. Que dia triste.
+VFEP_Camaraderie_Respected_Memory.stages.socialized_with_a_comrade.label	conversei com um camarada
+VFEP_Camaraderie_Respected_Memory.stages.socialized_with_a_comrade.description	Passei um tempo com um camarada, e isso fortalece nossos laços.
+VFEP_Camaraderie_Exalted_CrewDead.stages.lost_a_comrade.label	perdi um camarada
+VFEP_Camaraderie_Exalted_CrewDead.stages.lost_a_comrade.description	Perdemos um dos nossos. Preciso buscar força nos outros.
+VFEP_Camaraderie_Exalted_Memory.stages.socialized_with_a_comrade.label	conversei com um camarada
+VFEP_Camaraderie_Exalted_Memory.stages.socialized_with_a_comrade.description	Passei um tempo com um camarada. Ninguém nos segura!
+VFEP_Camaraderie_Exalted_DeadCumulative.stages.been_through_some_tough_times_together-0.label	passamos por maus bocados juntos!
+VFEP_Camaraderie_Exalted_DeadCumulative.stages.been_through_some_tough_times_together-1.label	passamos por maus bocados juntos!
+VFEP_Camaraderie_Exalted_DeadCumulative.stages.been_through_some_tough_times_together-2.label	passamos por maus bocados juntos!
+VFEP_Camaraderie_Exalted_DeadCumulative.stages.been_through_some_tough_times_together-3.label	passamos por maus bocados juntos!
+VFEP_Camaraderie_Exalted_DeadCumulative.stages.been_through_some_tough_times_together-4.label	passamos por maus bocados juntos!
+VFEP_Camaraderie_Exalted_DeadCumulative.stages.been_through_some_tough_times_together-5.label	passamos por maus bocados juntos!
+VFEP_Camaraderie_Exalted_DeadCumulative.stages.been_through_some_tough_times_together-6.label	passamos por maus bocados juntos!
+VFEP_Camaraderie_Exalted_DeadCumulative.stages.been_through_some_tough_times_together-7.label	passamos por maus bocados juntos!
+VFEP_Camaraderie_Exalted_DeadCumulative.stages.been_through_some_tough_times_together-8.label	passamos por maus bocados juntos!
+VFEP_Camaraderie_Exalted_DeadCumulative.stages.been_through_some_tough_times_together-9.label	passamos por maus bocados juntos!
+VFEP_Camaraderie_Exalted_DeadCumulative.stages.been_through_some_tough_times_together-10.label	passamos por maus bocados juntos!
+VFEP_Camaraderie_Exalted_DeadCumulative.stages.been_through_some_tough_times_together-11.label	passamos por maus bocados juntos!
+VFEP_Camaraderie_Exalted_DeadCumulative.stages.been_through_some_tough_times_together-12.label	passamos por maus bocados juntos!
+VFEP_Camaraderie_Exalted_DeadCumulative.stages.been_through_some_tough_times_together-13.label	passamos por maus bocados juntos!
+VFEP_Camaraderie_Exalted_DeadCumulative.stages.been_through_some_tough_times_together-14.label	passamos por maus bocados juntos!
+VFEP_Camaraderie_Exalted_DeadCumulative.stages.been_through_some_tough_times_together-15.label	passamos por maus bocados juntos!
+VFEP_Camaraderie_Exalted_DeadCumulative.stages.been_through_some_tough_times_together-16.label	passamos por maus bocados juntos!
+VFEP_Camaraderie_Exalted_DeadCumulative.stages.been_through_some_tough_times_together-17.label	passamos por maus bocados juntos!
+VFEP_Camaraderie_Exalted_DeadCumulative.stages.been_through_some_tough_times_together-18.label	passamos por maus bocados juntos!
+VFEP_Camaraderie_Exalted_DeadCumulative.stages.been_through_some_tough_times_together-19.label	passamos por maus bocados juntos!
+## DefInjected/ThoughtDef/Thoughts_Memory_Drinking.xml
+VFEP_RumAsIngredient.stages.Drank_rumbased_cocktail.label	bebi um coquetel de rum
+## DefInjected/ThoughtDef/Thoughts_SingingShanties.xml
+VFEP_BoringShanties.stages.boring_singing_shanties.label	cantoria de marujo chata
+VFEP_BoringShanties.stages.boring_singing_shanties.description	O capitão cantou sem paixão nenhuma, e o clima de camaradagem simplesmente não veio.
+VFEP_LameShanties.stages.lame_singing_shanties.label	cantoria de marujo fraca
+VFEP_LameShanties.stages.lame_singing_shanties.description	O capitão nos tratou como crianças, querendo desesperadamente ouvir algo que levantasse o ânimo.
+VFEP_RousingShanties.stages.rousing_singing_shanties.label	cantoria de marujo animada
+VFEP_RousingShanties.stages.rousing_singing_shanties.description	Raios me partam, que cantoria boa! O capitão levantou nosso ânimo e nos fez sentir uma camaradagem e uma união que só vão nos deixar mais fortes.
+VFEP_AmazingShanties.stages.amazing_singing_shanties.label	cantoria de marujo incrível
+VFEP_AmazingShanties.stages.amazing_singing_shanties.description	Ainda ouvimos as palavras hipnotizantes do capitão, que nos lembraram da importância da nossa camaradagem. Dá até para sentir a tristeza sumindo.
+## DefInjected/ThoughtDef/Thoughts_Situation_General.xml
+VFEP_RumSuitThought.stages.sweaty.label	suado
+VFEP_RumSuitThought.stages.sweaty.description	Este traje é quente demais. Estou suando.
+## DefInjected/TraitDef/Traits_Singular.xml
+VFEP_WarcasketTrait.degreeDatas.warcasket.description	{PAWN_nameDef} está sepultado num caixão de guerra. Nenhuma dor tem efeito, e nunca entra em choque nem desmaia de dor. Por causa do volume da armadura e da energia que ela consome, {PAWN_nameDef} não consegue fazer trabalho nenhum.
+VFEP_Shellcasket.degreeDatas.shellcasket.label	casca vazia
+VFEP_Shellcasket.degreeDatas.shellcasket.description	{PAWN_nameDef} foi sepultado num caixão de guerra e depois arrancado dele à força. O dano neural de ser desconectado é tão grave que {PAWN_nameDef} vive em dor constante e agonizante e mal consegue juntar {PAWN_possessive} pensamentos. Só reinstalar {PAWN_nameDef} num caixão de guerra cura os sintomas.
+## DefInjected/VEF.Abilities.AbilityDef/Abilities.xml
+VFEP_GrapplingHook.description	O gancho de abordagem se prende em paredes e rocha sólida e leva o usuário rápido aonde quiser. O lançador não precisa de munição, mas é preciso esperar entre um disparo e outro para enrolar o cabo.
+VFEP_GrapplingHook.modExtensions.0.labelUnloaded	recarregar gancho de abordagem
+VFEP_SiegeMode.label	Modo cerco
+VFEP_SiegeMode.description	Crava-se no chão para ganhar estabilidade e virar uma unidade de artilharia fixa, aumentando muito o alcance de ataque e a eficiência da recarga.
+VFEP_SiegeMode.verbProperties.label	Modo cerco
+VFEP_PowerJump.label	Salto propulsado
+VFEP_PowerJump.description	Usa os propulsores de salto dos ombros para percorrer uma curta distância, causando uma pequena explosão na partida e na chegada.
+VFEP_PowerJump.verbProperties.label	Salto propulsado
+VFEP_BlastOff.label	Decolar
+VFEP_BlastOff.description	Aciona um grande motor de propulsão preso às costas da armadura e escolhe um ponto no mapa-múndi para cair como uma cápsula. Causa uma grande explosão no destino, mas quase certamente deixa você ilhado, sem combustível para a volta.
+VFEP_BlastOff.verbProperties.label	Decolar
+## DefInjected/VEF.Planet.HireableFactionDef/Hireables.xml
+Pirate.description	Uma confederação frouxa de gangues piratas que concordaram em lutar mais contra estranhos do que entre si.\n\nPiratas não semeiam, não constroem e raramente negociam. Movidos por uma cultura de sangue e honra que valoriza força pessoal e crueldade, enriquecem saqueando e roubando vizinhos mais produtivos.\n\nO nível de tecnologia deles depende principalmente de quem conseguiram roubar recentemente. Em geral levam armas de pólvora, mas alguns preferem esfaquear as vítimas de perto.
+## DefInjected/VFEPirates.CurseDef/Curses.xml
+VFEP_CurseOfMind.label	Maldição da Mente
+VFEP_CurseOfMind.description	Todos os efeitos de humor dobram.
+VFEP_CurseOfDarkness.label	Maldição da Escuridão
+VFEP_CurseOfDarkness.description	A escuridão se intensifica. Qualquer célula com 0% de luz fica um breu total.
+VFEP_CurseOfPestilence.label	Maldição da Pestilência
+VFEP_CurseOfPestilence.description	O ganho de imunidade cai pela metade.
+VFEP_CurseOfSteel.label	Maldição do Aço
+VFEP_CurseOfSteel.description	Todo dano no jogo dobra.
+VFEP_CurseOfGreed.label	Maldição da Ganância
+VFEP_CurseOfGreed.description	Todo recurso minerável rende ouro em vez do que renderia normalmente.
+VFEP_CurseOfTheStabbed.label	Maldição dos Esfaqueados
+VFEP_CurseOfTheStabbed.description	A recarga de todos os ataques corpo a corpo cai pela metade.
+VFEP_CurseOfFire.label	Maldição do Fogo
+VFEP_CurseOfFire.description	A chuva não vem mais quando o mapa pega fogo.
+VFEP_CurseOfConfetti.label	Maldição do Confete
+VFEP_CurseOfConfetti.description	Matar alguém solta confete e um som de "Eba!" de aniversário.
+VFEP_CurseOfTheBoomalopes.label	Maldição dos Bumalopes
+VFEP_CurseOfTheBoomalopes.description	Todo animal explode ao morrer.
+VFEP_CurseOfTheBeaten.label	Maldição dos Espancados
+VFEP_CurseOfTheBeaten.description	Não dá para tratar ferimentos sem remédio.
+VFEP_CurseOfTheArmored.label	Maldição dos Blindados
+VFEP_CurseOfTheArmored.description	A penetração das armas cai pela metade.
+VFEP_CurseOfAging.label	Maldição da Velhice
+VFEP_CurseOfAging.description	Todos envelhecem 10 vezes mais rápido.
+VFEP_CurseOfBandana.label	Maldição da Bandana
+VFEP_CurseOfBandana.description	A recarga de todas as armas cai 90%.
+VFEP_CurseOfTheEyePatch.label	Maldição do Tapa-Olho
+VFEP_CurseOfTheEyePatch.description	A precisão à distância cai pela metade.
+VFEP_CurseOfGluttony.label	Maldição da Gula
+VFEP_CurseOfGluttony.description	A fome aumenta duas vezes mais rápido.
+VFEP_CurseOfInfestation.label	Maldição da Infestação
+VFEP_CurseOfInfestation.description	Infestações têm o dobro do tamanho.
+VFEP_CurseOfInstakill.label	Maldição da Morte Instantânea
+VFEP_CurseOfInstakill.description	Quem seria derrubado morre.
+VFEP_CurseOfBlind.label	Maldição da Cegueira
+VFEP_CurseOfBlind.description	Você não vê nenhuma carta quando eventos acontecem. Elas continuam aparecendo na aba Histórico.
+## DefInjected/WorkGiverDef/WorkGivers.xml
+VFEP_DoWelding.label	soldar na fundição de caixão de guerra
+VFEP_DoWelding.gerund	soldando em
+VFEP_DoWelding.verb	soldar em
+## DefInjected/WorldObjectDef/Abilities.xml
+VFEP_TravelingPawn.label	pessoa
+VFEP_TravelingPawn.description	pessoa em voo.
+## Keyed/Misc_Gameplay.xml
+VFEPirates.EntombingWarning	Sepultar um colono num caixão de guerra é uma operação permanente, que não pode ser desfeita sem consequências dolorosas.
+VFEP.Occupied	Ocupado
+VFEP.WarcasketCannotBeRemoved	O caixão de guerra não pode ser removido
+VFEP_NextSpawnedRumIn	Produzindo rum de fluidos corporais em
+VFEP.MessagePawnArrived	{PAWN_nameDef} chegou.
+VFEP.RequiresWarcasket	Requer caixão de guerra
+VFEP.ExplodeIn	Vai explodir em
+## Keyed/UI.xml
+VFEP.ChooseCurses	Escolha suas maldições
+VFEP.ChooseCurses.Desc	Quanto mais maldições você escolher, mais pessoas o narrador vai deixar você ter, e mais raros serão os grandes eventos de ameaça.
+VFEP.DesiredPopMax	População máxima desejada: {0}
+VFEP.DaysBigThreats	Dias entre grandes ameaças: {0}
+VFEP.WarcasketCustom	Personalização do caixão de guerra
+VFEP.WarcasketText	Ao apertar Aceitar, o artesão escolhido vai levar os recursos até a estrutura e começar a\nmontar um caixão de guerra. A velocidade da montagem depende da habilidade de produção do artesão.\nQuando o processo acabar, um caixão de guerra vai sair da plataforma. Cuidado: a pessoa\nna plataforma ainda pode morrer de fome enquanto estiver lá. Dê prioridade à montagem do caixão de guerra\nsobre outras tarefas.
+VFEP.WorkAmount	Quantidade de trabalho:
+VFEP.Crafter	Artesão:
+VFEP.Helmet	Elmo:
+VFEP.Shoulderpads	Ombreiras:
+VFEP.ArmorFrame	Carcaça:
+VFEP.TotalCost	Custo total:
+VFEP.ResourceCost	Custo em recursos:
+VFEP.ResearchText	Pesquise mais tecnologia de caixão de guerra para liberar mais peças de armadura.
+VFEP.NoWarcaskets	Pesquise caixões de guerra para aprender a usar a fundição.
+VFEP.NotEnoughFuel	Quimicombustível insuficiente para o salto propulsado.
+VFEP.SiegeModeOff	Modo cerco desligado
+VFEP.SiegeModeOn	Modo cerco ligado
+VFEPirates.CannotEntomb	Não pode sepultar no caixão de guerra: {0}
+VFEPirates.EntombInWarcasket	Sepultar no caixão de guerra
+VFEP.EntombInIncapableOfViolenceWarning	 (Aviso: {PAWN_nameDef} é incapaz de violência; isso vai deixar {PAWN_objective} inútil.)
+VFEP.ActivateShield	Ativar campo de escudo
+VFEP.ActivateShieldDesc	Clique para ativar o campo de escudo. Fica 10 segundos ativo e depois tem 90 segundos de recarga.
+VFEP.DeployWarDrone	Solta drones pequenos e prontos para o combate da doca nas costas. Os drones podem ser controlados para dar apoio de fogo, mas se autodetonam depois de 60 segundos.
+VFEP.DeploySpidermineDesc	Dispara uma mina-aranha de longo alcance que corre sozinha até o inimigo mais próximo e detona assim que o alcança.
+VFEP.ChildrenCannotUseThis	Crianças não podem usar isto.

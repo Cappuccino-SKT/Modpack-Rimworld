@@ -1,0 +1,175 @@
+## DefInjected/ThingDef/Races_AutobroadcasterDrone.xml
+VQE_AutobroadcasterDrone.label	drone autotransmissor
+VQE_AutobroadcasterDrone.description	Um drone utilitário automático que ajuda a produtividade e o moral da colônia transmitindo sinais de áudio específicos. Alterna entre modos para acelerar o trabalho, melhorar o humor dos colonos ou até baixar a resistência dos prisioneiros no seu raio de alcance. A rádio do Velho Mundo nunca morreu: só ganhou rodas.\n\nDrones têm vida útil limitada e começam a dar defeito perto do fim dela, mas o modo de espera retarda o desgaste dos componentes. Precisam estar ligados a um transmissor de drones energizado para funcionar.
+VQE_AutobroadcasterDrone.tools.shell_spike.label	espinho do casco
+## DefInjected/ThingDef/Races_BattleDrone.xml
+VQE_BattleDrone.label	drone de batalha
+VQE_BattleDrone.description	Um drone de batalha automático. Patrulha uma área sem parar procurando intrusos. Quando acha um, ataca sem trégua com uma pequena pistola curta.\n\nDrones têm vida útil limitada e começam a dar defeito perto do fim dela, mas o modo de espera retarda o desgaste dos componentes. Precisam estar ligados a um transmissor de drones energizado para funcionar.
+VQE_BattleDrone.tools.shell_spike.label	espinho do casco
+## DefInjected/ThingDef/Races_CleanerDrone.xml
+VQE_CleanerDrone.label	drone de limpeza
+VQE_CleanerDrone.description	Um drone utilitário automático. Patrulha uma área sem parar procurando superfícies sujas. Quando acha sujeira, limpa tudo sem trégua com o aparelho de esfregar interno.\n\nDrones têm vida útil limitada e começam a dar defeito perto do fim dela, mas o modo de espera retarda o desgaste dos componentes. Precisam estar ligados a um transmissor de drones energizado para funcionar.
+VQE_CleanerDrone.tools.shell_spike.label	espinho do casco
+## DefInjected/ThingDef/Races_CraftingDrone.xml
+VQE_CraftingDrone.label	drone de fabricação
+VQE_CraftingDrone.description	Um drone automático especializado em fabricação. De tempos em tempos passa por uma operação especial de indexação e depois produz um núcleo de drone que pode ser decodificado para liberar de vez novas plantas de drone.\n\nDrones têm vida útil limitada e começam a dar defeito perto do fim dela, mas o modo de espera retarda o desgaste dos componentes. Ao contrário dos outros drones, os de fabricação não precisam de transmissor.
+VQE_CraftingDrone.tools.shell_spike.label	espinho do casco
+## DefInjected/ThingDef/Races_FarmingDrone.xml
+VQE_FarmingDrone.label	drone agrícola
+VQE_FarmingDrone.description	Um drone utilitário automático feito para a agricultura. Patrulha as zonas de cultivo e consegue tanto colher o que está maduro quanto semear de novo, desde que a planta não exija um nível específico de cultivo.\n\nDrones têm vida útil limitada e começam a dar defeito perto do fim dela, mas o modo de espera retarda o desgaste dos componentes. Precisam estar ligados a um transmissor de drones energizado para funcionar.
+VQE_FarmingDrone.tools.shell_spike.label	espinho do casco
+## DefInjected/ThingDef/Races_FirefighterDrone.xml
+VQE_FirefighterDrone.label	drone bombeiro
+VQE_FirefighterDrone.description	Um drone utilitário automático com sistema de combate a incêndio. Patrulha a área sem parar e apaga sozinho os focos pequenos que encontra. Se o fogo crescer além da sua capacidade, inicia a autodestruição e explode numa forte rajada de espuma antifogo.\n\nDrones têm vida útil limitada e começam a dar defeito perto do fim dela, mas o modo de espera retarda o desgaste dos componentes. Precisam estar ligados a um transmissor de drones energizado para funcionar.
+VQE_FirefighterDrone.tools.shell_spike.label	espinho do casco
+## DefInjected/ThingDef/Races_HaulerDrone.xml
+VQE_HaulerDrone.label	drone carregador
+VQE_HaulerDrone.description	Um drone utilitário automático. Patrulha uma área sem parar procurando itens para levar aos estoques. Quando acha um, leva com toda a dedicação ao local de armazenamento designado.\n\nDrones têm vida útil limitada e começam a dar defeito perto do fim dela, mas o modo de espera retarda o desgaste dos componentes. Precisam estar ligados a um transmissor de drones energizado para funcionar.
+VQE_HaulerDrone.tools.shell_spike.label	espinho do casco
+## DefInjected/ThingDef/Races_HornetDrone.xml
+VQE_HornetDrone.label	drone vespa
+VQE_HornetDrone.description	Um drone militar automático para defesa de curto alcance e apoio em combate. Consegue perfurar o inimigo várias vezes com um ferrão longo e endurecido. Não carrega o paralisante dos drones vespa comuns, mas perfura armadura pesada e causa dano considerável, e a blindagem reforçada aguenta muito castigo.\n\nDrones têm vida útil limitada e começam a dar defeito perto do fim dela, mas o modo de espera retarda o desgaste dos componentes. Precisam estar ligados a um transmissor de drones energizado para funcionar.
+VQE_HornetDrone.tools.stinger.label	ferrão
+## DefInjected/ThingDef/Races_MinerDrone.xml
+VQE_MinerDrone.label	drone minerador
+VQE_MinerDrone.description	Um drone utilitário automático. Patrulha uma área sem parar procurando rocha marcada para minerar. Quando acha, perfura sem trégua com a sua broca grande.\n\nDrones têm vida útil limitada e começam a dar defeito perto do fim dela, mas o modo de espera retarda o desgaste dos componentes. Precisam estar ligados a um transmissor de drones energizado para funcionar.
+VQE_MinerDrone.tools.shell_spike.label	espinho do casco
+## DefInjected/ThingDef/Races_PackDrone.xml
+VQE_PackDrone.label	drone de carga
+VQE_PackDrone.description	Um drone utilitário automático feito sobretudo para transporte pesado e apoio a caravanas. A estrutura grande e a alta capacidade de carga permitem levar recursos a granel numa caravana.\n\nDrones têm vida útil limitada e começam a dar defeito perto do fim dela, mas o modo de espera retarda o desgaste dos componentes. Ao contrário dos outros drones, os de carga não precisam de transmissor.
+VQE_PackDrone.tools.shell_spike.label	espinho do casco
+## DefInjected/ThingDef/Races_Protolancer.xml
+VQE_Protolancer.label	protolanceiro
+VQE_Protolancer.description	Um drone atirador automático feito para combate a média e longa distância. Usa uma poderosa arma de precisão de tiro único, a lança, para eliminar inimigos de longe. A construção leve permite se reposicionar rápido, mas o deixa muito vulnerável a ataques de perto e corpo a corpo.\n\nDrones têm vida útil limitada e começam a dar defeito perto do fim dela, mas o modo de espera retarda o desgaste dos componentes. Ao contrário dos outros drones, os protolanceiros não precisam de transmissor.
+VQE_Protolancer.tools.shell_spike.label	espinho do casco
+## DefInjected/ThingDef/Races_RaiderDrone.xml
+VQE_RaiderDrone.label	drone saqueador
+VQE_RaiderDrone.description	Um drone automático feito para ataques de perto e supressão pesada. Armado com uma metralhadora de alta capacidade, a estrutura lenta e muito blindada o deixa firme no lugar, saturando a área de tiros contínuos e suprimindo posições inimigas.\n\nDrones têm vida útil limitada e começam a dar defeito perto do fim dela, mas o modo de espera retarda o desgaste dos componentes. Ao contrário dos outros drones, os saqueadores não precisam de transmissor.
+VQE_RaiderDrone.tools.shell_spike.label	espinho do casco
+## DefInjected/ThingDef/Races_ShufflerDrone.xml
+VQE_ShufflerDrone.label	drone arrastado
+VQE_ShufflerDrone.description	Um drone sentinela quebrado e descomissionado. Os sensores fritos e os componentes falhando o fazem se arrastar sem rumo. Mesmo nesse estado, ataca qualquer alvo que vê. Quando sofre dano grave, o chassi se parte em dois drones menores que continuam atacando sem trégua.
+VQE_ShufflerDrone.tools.shell_spike.label	espinho do casco
+VQE_DriverDrone.label	drone motorista
+VQE_DriverDrone.description	O chassi inferior de um drone destruído, reduzido à estrutura nua com esteiras. Mesmo muito danificado e arrastando os componentes centrais, continua agressivo e tenta atropelar os alvos.
+VQE_DriverDrone.tools.shell_spike.label	espinho do casco
+VQE_CrawlerDrone.label	drone rastejante
+VQE_CrawlerDrone.description	O chassi superior de um drone destruído, reduzido à estrutura nua. Mesmo muito danificado e arrastando os componentes centrais, continua agressivo e tenta atropelar os alvos.
+VQE_CrawlerDrone.tools.shell_spike.label	espinho do casco
+## DefInjected/ThingDef/Races_StingrayDrone.xml
+VQE_StingrayDrone.label	drone arraia
+VQE_StingrayDrone.description	Um drone automático de assalto pesado montado numa grande plataforma aérea blindada. Leva um poderoso canhão incendiário de curto alcance que dispara uma rajada de gel superaquecido, causando dano de fogo em área. \n\nDrones têm vida útil limitada e começam a dar defeito perto do fim dela, mas o modo de espera retarda o desgaste dos componentes. Ao contrário dos outros drones, os drones arraia não precisam de transmissor.
+VQE_StingrayDrone.tools.stinger.label	ferrão
+## DefInjected/ThingDef/Races_TurretDrone.xml
+VQE_TurretDrone.label	drone torreta
+VQE_TurretDrone.description	Um drone militar automático feito para defesa fixa. Leva uma torreta de cano duplo montada numa plataforma blindada com esteiras. É lento, mas consegue se reposicionar quando precisa.\n\nDrones têm vida útil limitada e começam a dar defeito perto do fim dela, mas o modo de espera retarda o desgaste dos componentes. Precisam estar ligados a um transmissor de drones energizado para funcionar.
+VQE_TurretDrone.tools.shell_spike.label	espinho do casco
+## DefInjected/ThingDef/Weapons_Ranged_Drone.xml
+VQE_Gun_Stubgun.label	pistola curta
+VQE_Gun_Stubgun.description	Uma arma automática compacta de médio alcance, feita para ser montada num drone de batalha.
+VQE_Gun_Stubgun.tools.barrel.label	cano
+VQE_Gun_Stubgun.tools.muzzle.label	boca
+VQE_Gun_Stubgun.verbs.Verb_ShootCE.label	pistola curta
+VQE_Bullet_Stubgun.label	bala de pistola curta
+VQE_Gun_DroneTurret.label	torreta de drone
+VQE_Gun_DroneTurret.description	Uma torreta refinada com estabilização militar, rotinas de mira e carcaça endurecida, feita para ser montada num drone de batalha.
+VQE_Gun_DroneTurret.tools.barrel.label	cano
+VQE_Gun_DroneTurret.tools.muzzle.label	boca
+VQE_Gun_DroneTurret.verbs.Verb_ShootCE.label	torreta de drone
+VQE_Bullet_DroneTurret.label	bala de torreta de drone
+VQE_Gun_Rattlegun.label	matraca
+VQE_Gun_Rattlegun.description	Uma metralhadora leve montada em drone, feita para supressão pesada, mas com pouca precisão.
+VQE_Gun_Rattlegun.tools.barrel.label	cano
+VQE_Gun_Rattlegun.tools.muzzle.label	boca
+VQE_Gun_Rattlegun.verbs.Verb_ShootCE.label	matraca
+VQE_Bullet_Rattlegun.label	bala de matraca
+VQE_Gun_Lance.label	lança
+VQE_Gun_Lance.description	Uma arma de precisão de tiro único baseada num antigo projeto de fuzil de precisão, com alcance e precisão excepcionais, ao custo de um desempenho fraco de perto.
+VQE_Gun_Lance.tools.barrel.label	cano
+VQE_Gun_Lance.tools.muzzle.label	boca
+VQE_Gun_Lance.verbs.Verb_ShootCE.label	lança
+VQE_Bullet_Lance.label	bala de lança
+VQE_Gun_StingrayCannon.label	canhão arraia
+VQE_Gun_StingrayCannon.description	Um canhão incendiário de curto alcance que dispara uma rajada de gel superaquecido, causando dano de fogo em área.
+VQE_Gun_StingrayCannon.tools.barrel.label	cano
+VQE_Gun_StingrayCannon.tools.muzzle.label	boca
+VQE_Gun_StingrayCannon.verbs.Verb_ShootCE.label	canhão arraia
+VQE_Bullet_StingrayCannon.label	projétil de canhão arraia
+## DefInjected/ThoughtDef/ThoughtDefs.xml
+VQE_Broadcaster_Relax_Buff.stages.relaxing_music.label	música relaxante
+VQE_Broadcaster_Relax_Buff.stages.relaxing_music.description	O autotransmissor tocou a minha música favorita!
+## DefInjected/VEF.Storyteller.QuestChainDef/QuestChainDef.xml
+VQE_TheDroneFactory.label	A fábrica de drones
+VQE_TheDroneFactory.description	Esta sequência de missões dá a chance de rastrear uma fábrica de drones controlada por piratas e libertar um drone único. Agradecido, o drone passa a inventar novas plantas de drone, ampliando a capacidade da colônia de construir e trabalhar no automático.
+## DefInjected/WorkGiverDef/JobDefs.xml
+VQE_RepairDrone.label	consertar drones
+VQE_RepairDrone.gerund	consertando
+VQE_RepairDrone.verb	consertar
+VQE_ShutdownDrone.label	desligar drones
+VQE_ShutdownDrone.gerund	desligando
+VQE_ShutdownDrone.verb	desligar
+VQE_ReactivateDrone.label	reativar drones
+VQE_ReactivateDrone.gerund	reativando
+VQE_ReactivateDrone.verb	reativar
+## DefInjected/WorkGiverDef/WorkGivers.xml
+VQE_DoBillsDroneBench.label	fabricar drones
+VQE_DoBillsDroneBench.gerund	fabricando drones em
+VQE_DoBillsDroneBench.verb	fabricar drones em
+VQE_DroneGrowerHarvest.label	colher plantações
+VQE_DroneGrowerHarvest.gerund	colhendo
+VQE_DroneGrowerHarvest.verb	colher
+VQE_DroneGrowerSow.label	semear plantações
+VQE_DroneGrowerSow.gerund	semeando
+VQE_DroneGrowerSow.verb	semear
+## Keyed/Keys.xml
+VQE_BroadcasterMode	Modo {0}
+VQE_BroadcasterModeDesc_Work	O autotransmissor toca música animada que faz todo mundo trabalhar um pouquinho mais.
+VQE_BroadcasterModeDesc_Relax	O autotransmissor toca música tranquila que deixa todo mundo um pouquinho mais relaxado.
+VQE_BroadcasterModeDesc_Recruitment	O autotransmissor toca propaganda voltada aos prisioneiros para baixar a resistência deles.
+VQE_BroadcasterModeDesc_Conversion	O autotransmissor toca retórica ideológica voltada aos prisioneiros para abalar as certezas deles.
+VQE_Shutdown	Desligar
+VQE_ShutdownDesc	Desliga o drone para sempre.
+VQE_Reactivate	Reativar
+VQE_ReactivateDesc	Reativa o drone. Um colono precisa ir até ele e religá-lo.
+VQE_Standby	Espera
+VQE_EnterStandby	Em espera
+VQE_EnterStandbyDesc	Ativa o modo de espera. O drone desliga, reduzindo em 90% a perda de vida útil. Não responde a tarefas nem a dano, e precisa ser reativado antes de voltar à ação.
+VQE_CannotUseConnectionTimedOut	Indisponível com a conexão expirada
+VQE_CannotUseOverclocked	Indisponível em sobrecarga
+VQE_CannotUseDesynchronised	Indisponível em dessincronia
+VQE_CannotUseRebooting	Indisponível enquanto reinicia
+VQE_CannotUseHardwareFailure	Indisponível durante falha de hardware
+VQE_CannotUseIndexing	Indisponível enquanto indexa
+VQE_CannotUseInStandby	Indisponível em espera
+VQE_OutsideTransmitterRange	Fora do alcance do transmissor
+VQE_DroneMalfunction	{DRONE} está com o defeito {1}
+VQE_HardcrashLetter	Pane total: {DRONE}
+VQE_HardcrashLetterDesc	{DRONE} está com o defeito de pane total.\n\nVai tentar limpar a obstrução dos sensores batendo repetidamente em prédios e móveis, e pode destruí-los no processo.\n\nIsso aconteceu porque {DRONE} está chegando ao fim da vida útil.
+VQE_KillswitchLetter	Desligamento de emergência: {DRONE}
+VQE_KillswitchLetterDesc	{DRONE} está com o defeito de desligamento de emergência.\n\nVai atacar qualquer um que chegar perto.\n\nIsso aconteceu porque {DRONE} está chegando ao fim da vida útil.
+VQE_SelfDecommissionLetter	Autodescomissionamento: {DRONE}
+VQE_SelfDecommissionLetterDesc	{DRONE} está com o defeito de autodescomissionamento.\n\nConcluiu que o seu tempo de serviço acabou e vai ignorar todas as ordens enquanto sai da área para se desligar em algum lugar do ermo.\n\nIsso aconteceu porque {DRONE} está chegando ao fim da vida útil.
+VQE_DroneMalfunction_Death	, e depois vai parar de funcionar.
+VQE_IndexingLetter	Indexação: {DRONE}
+VQE_IndexingLetterDesc	{DRONE} está com o defeito de indexação.\n\nVai estudar outro drone, ou um colono se não houver drones, e gravar uma planta especial num núcleo de drone. Quando o defeito passar, um núcleo de drone será produzido. Ele pode ser decodificado para liberar de vez um novo tipo de drone.\n\nIsso aconteceu porque {DRONE} foi programado para ter defeitos de indexação de tempos em tempos.
+VQE_ExtremeMalfunctionRisk	Risco de defeito extremo
+VQE_ExtremeMalfunctionRiskDesc	Alguns drones da colônia estão perto do fim da vida útil. Considere desligá-los de vez, pois correm risco de defeitos extremos.\n\nDrones em risco de defeito extremo:\n\n{0}
+VQE_Malfunction	Defeito
+VQE_DecryptCore	Descriptografar {0} para liberar uma nova receita de drone
+VQE_CoreDecryptedLetter	Drone liberado: {0}
+VQE_CoreDecryptedDesc	Decodificar o núcleo de drone liberou uma nova planta. A partir de agora você pode fabricar este tipo de drone: {0}.\n\n{1}.
+VQE_NoUnlockableRecipes	Não há mais receitas de drone para descriptografar!
+VQE_DroneSpawningIn	A construção de {0} termina em {1}.
+VQE_CarryDroneToTransmitter	Levar {0} ao transmissor mais próximo
+VQE_TransmitterRadius	Raio do transmissor
+VQE_TransmitterRadiusDesc	O raio em volta de um transmissor em que os drones que precisam dele conseguem operar. 15 quadrados por padrão (na verdade 14,9, por causa do jeito que o jogo funciona).
+VQED_Reset	Restaurar
+VQE_LifespanMultiplier	Multiplicador de vida útil dos drones
+VQE_LifespanMultiplierModOptions	Multiplicador de vida útil dos drones nas opções do mod: {0}
+VQE_LifespanMultiplierDesc	Multiplica a vida útil dos drones. Por exemplo, x2 dobra a vida útil de todos. Não muda a vida útil atual dos drones já construídos.
+VQE_ConsumeLifespanOnRepair	Gastar vida útil ao consertar drones
+VQE_ConsumeLifespanOnRepairDesc	Ligado, consertar drones gasta a vida útil deles. Desligue para evitar o desgaste nos consertos.
+VQE_DroneStockpileRaid	Ataque: drones antigos
+VQE_DroneStockpileRaidDesc	Drones de combate do depósito de drones aqui perto chegaram.\n\nEstão atacando agora.\n\nDestrua o depósito de drones para parar os ataques.
+VQE_JumpToDroneTransmitter	Clique para ir ao transmissor de drones
+VQE_DroneWorkspeedStatOffset	Bônus de velocidade de trabalho do drone

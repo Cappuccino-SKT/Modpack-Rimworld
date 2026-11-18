@@ -1,0 +1,89 @@
+## DefInjected/ResearchProjectDef/ResearchProjects.xml
+VWE_MassDrivers.label	mass drivers
+VWE_MassDrivers.description	Assemble weapons which utilize electromagnets to catapult sabots up to hypervelocity, penetrating thick armor and piercing through targets alike. Note that these also require advanced components.
+VWE_MassDrivers.generalRules.rulesStrings[0]	subject->velocity as a weapon
+VWE_MassDrivers.generalRules.rulesStrings[1]	subject_story->mastered the physics of electromagnetic acceleration, creating weapons that launch projectiles at staggering speeds
+VWE_MassDrivers.generalRules.rulesStrings[2]	subject_story->engineered mass drivers capable of breaching the most formidable armor, reshaping the principles of warfare and defense
+VWE_MassDrivers.generalRules.rulesStrings[3]	subject_story->unveiled a new era where kinetic energy defines the cutting edge of military technology
+VWE_MassDrivers.generalRules.rulesStrings[4]	subject_gerund->harnessing the unstoppable force of hypervelocity for unmatched offensive capability
+## DefInjected/ThingDef/Filth_Various.xml
+VWE_Filth_BulletHole.label	bullet hole
+## DefInjected/ThingDef/Projectiles_Odyssey.xml
+VWE_Bullet_GaussRifle_LowPower_Ionized.label	gauss rifle sabot
+VWE_Bullet_GaussRifle_Ionized.label	gauss rifle sabot
+VWE_Bullet_GaussMagnum_LowPower_Ionized.label	gauss revolver sabot
+VWE_Bullet_GaussMagnum_Ionized.label	gauss revolver sabot
+VWE_Bullet_GaussLance_LowPower_Ionized.label	gauss lance sabot
+VWE_Bullet_GaussLance_Ionized.label	gauss lance sabot
+## DefInjected/ThingDef/RangedSpacer.xml
+VWE_Gun_GaussRifle.label	gauss rifle
+VWE_Gun_GaussRifle.description	A powerful mass driver rifle utilizing magnetic acceleration to launch ferromagnetic sabots. The incredible velocity and specialized ammunition allow it to completely negate most forms of conventional armor.
+VWE_Gun_GaussRifle.comps.CompUnderBarrel.standardLabel	switch to standard mode
+VWE_Gun_GaussRifle.comps.CompUnderBarrel.underBarrelLabel	switch to high-power mode
+VWE_Gun_GaussRifle.tools.stock.label	stock
+VWE_Gun_GaussRifle.tools.barrel.label	barrel
+VWE_Gun_GaussRifle.tools.muzzle.label	muzzle
+VWE_Gun_GaussRifle.verbs.Verb_ShootCE.label	gauss rifle
+VWE_Bullet_GaussRifle_LowPower.label	gauss rifle sabot
+VWE_Bullet_GaussRifle.label	gauss rifle sabot
+VWE_Gun_GaussMagnum.label	gauss revolver
+VWE_Gun_GaussMagnum.description	A powerful mass driver pistol utilizing magnetic acceleration to launch ferromagnetic sabots. The incredible velocity and specialized ammunition allow it to completely negate most forms of conventional armor.
+VWE_Gun_GaussMagnum.comps.CompUnderBarrel.standardLabel	switch to standard mode
+VWE_Gun_GaussMagnum.comps.CompUnderBarrel.underBarrelLabel	switch to high-power mode
+VWE_Gun_GaussMagnum.tools.grip.label	grip
+VWE_Gun_GaussMagnum.tools.muzzle.label	muzzle
+VWE_Gun_GaussMagnum.verbs.Verb_ShootCE.label	gauss revolver
+VWE_Bullet_GaussMagnum_LowPower.label	gauss revolver sabot
+VWE_Bullet_GaussMagnum.label	gauss revolver sabot
+VWE_Gun_GaussLance.label	gauss lance
+VWE_Gun_GaussLance.description	A powerful, long range mass driver lance utilizing magnetic acceleration to launch ferromagnetic sabots. The incredible velocity and specialized ammunition allow it to completely negate most forms of conventional armor.
+VWE_Gun_GaussLance.comps.CompUnderBarrel.standardLabel	switch to standard mode
+VWE_Gun_GaussLance.comps.CompUnderBarrel.underBarrelLabel	switch to high-power mode
+VWE_Gun_GaussLance.tools.barrel.label	barrel
+VWE_Gun_GaussLance.verbs.Verb_ShootCE.label	gauss lance
+VWE_Bullet_GaussLance_LowPower.label	gauss lance sabot
+VWE_Bullet_GaussLance.label	gauss lance sabot
+## DefInjected/ThingDef/Weapons_Unique_Odyssey.xml
+VWE_Gun_GaussRifle_Unique.label	unique gauss rifle
+VWE_Gun_GaussRifle_Unique.description	A gauss rifle with customized parts.
+VWE_Gun_GaussRifle_Unique.comps.CompEquippableAbilityReloadable.chargeNoun	charge
+VWE_Gun_GaussRifle_Unique.comps.CompEquippableAbilityReloadable.cooldownGerund	on cooldown
+VWE_Gun_GaussRifle_Unique.comps.CompUnderBarrel.standardLabel	switch to standard mode
+VWE_Gun_GaussRifle_Unique.comps.CompUnderBarrel.underBarrelLabel	switch to high-power mode
+VWE_Gun_GaussRifle_Unique.tools.stock.label	stock
+VWE_Gun_GaussRifle_Unique.tools.barrel.label	barrel
+VWE_Gun_GaussRifle_Unique.tools.muzzle.label	muzzle
+VWE_Gun_GaussRifle_Unique.verbs.Verb_ShootCE.label	unique gauss rifle
+VWE_Gun_GaussMagnum_Unique.label	unique gauss revolver
+VWE_Gun_GaussMagnum_Unique.description	A gauss revolver with customized parts.
+VWE_Gun_GaussMagnum_Unique.comps.CompEquippableAbilityReloadable.chargeNoun	charge
+VWE_Gun_GaussMagnum_Unique.comps.CompEquippableAbilityReloadable.cooldownGerund	on cooldown
+VWE_Gun_GaussMagnum_Unique.comps.CompUnderBarrel.standardLabel	switch to standard mode
+VWE_Gun_GaussMagnum_Unique.comps.CompUnderBarrel.underBarrelLabel	switch to high-power mode
+VWE_Gun_GaussMagnum_Unique.tools.grip.label	grip
+VWE_Gun_GaussMagnum_Unique.tools.muzzle.label	muzzle
+VWE_Gun_GaussMagnum_Unique.verbs.Verb_ShootCE.label	unique gauss revolver
+VWE_Gun_GaussLance_Unique.label	unique gauss lance
+VWE_Gun_GaussLance_Unique.description	A gauss lance with customized parts.
+VWE_Gun_GaussLance_Unique.comps.CompEquippableAbilityReloadable.chargeNoun	charge
+VWE_Gun_GaussLance_Unique.comps.CompEquippableAbilityReloadable.cooldownGerund	on cooldown
+VWE_Gun_GaussLance_Unique.comps.CompUnderBarrel.standardLabel	switch to standard mode
+VWE_Gun_GaussLance_Unique.comps.CompUnderBarrel.underBarrelLabel	switch to high-power mode
+VWE_Gun_GaussLance_Unique.tools.barrel.label	barrel
+VWE_Gun_GaussLance_Unique.verbs.Verb_ShootCE.label	unique gauss lance
+## DefInjected/VEF.OptionalFeatures.ModDef/OptionalFeatures_Odyssey.xml
+VWE_OptionalFeatures.label	Vanilla Weapons Expanded
+VWE_OptionalFeatures.description	VE Framework optional features for Vanilla Weapons Expanded
+## DefInjected/WeaponTraitDef/WeaponTraitDefs_Coilgun.xml
+VWE_InertialCore.label	inertial core
+VWE_InertialCore.description	This weapon maintains absolute kinetic energy during overcharge, vastly increasing armor penetration.
+VWE_BypassRelay.label	bypass relay
+VWE_BypassRelay.description	This weapon features an optimized charging sequence that halves the charging time between bursts.
+VWE_OverdrawnCoils.label	overdrawn coils
+VWE_OverdrawnCoils.description	This weapon draws excessive power from its reserves, taking slightly longer to charge but delivering vastly increased damage.
+VWE_IonizedSabot.label	ionized sabot
+VWE_IonizedSabot.description	This weapon magnetizes its projectiles with volatile energy, increasing damage across all firing modes.
+VWE_Hypercapacitors.label	hypercapacitors
+VWE_Hypercapacitors.description	This weapon is fitted with advanced energy banks that double the possible burst count for all shots, though the resulting rapid-fire sequence no longer guarantees armor penetration.
+VWE_InvertedRailTuning.label	CQC Tuning
+VWE_InvertedRailTuning.description	This weapon is radically tuned to deliver devastating shots at close range.

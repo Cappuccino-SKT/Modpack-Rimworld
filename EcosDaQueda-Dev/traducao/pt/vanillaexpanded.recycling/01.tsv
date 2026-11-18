@@ -1,0 +1,79 @@
+## DefInjected/JobDef/Jobs_Work.xml
+VRecyclingE_HaulToCompactor.reportString	carregando TargetA.
+VRecyclingE_HaulToAlloySplitter.reportString	carregando TargetA.
+## DefInjected/PipeSystem.ProcessDef/ProcessDefs.xml
+VRecyclingE_TrashToBricks.label	Lixo em tijolos de lixo
+VRecyclingE_TrashToBricks.description	Transforma 10 de lixo em 25 tijolos de lixo.
+VRecyclingE_SplitStabilizedAlloypack.label	Separar pacote de liga estabilizado
+VRecyclingE_SplitStabilizedAlloypack.description	Transforma 1 pacote de liga estabilizado em 1 de plastaço, 1 de ouro e 2 de aço.
+## DefInjected/RecipeDef/Recipes_Recycling.xml
+VRecyclingE_Recycle_WastepackIntoChempack.label	reciclar pacotes de resíduos em pacotes químicos reativos
+VRecyclingE_Recycle_WastepackIntoChempack.description	Recicla à mão pacotes de resíduos tóxicos em pacotes químicos reativos, gerando pacotes biológicos recuperados como subproduto.
+VRecyclingE_Recycle_WastepackIntoChempack.jobString	Reciclando pacotes de resíduos em pacotes químicos reativos.
+VRecyclingE_Recycle_ChempackIntoChemfuel.label	reciclar pacotes químicos reativos em combustível químico
+VRecyclingE_Recycle_ChempackIntoChemfuel.description	Separa à mão o combustível químico aproveitável do lixo nos pacotes químicos reativos.
+VRecyclingE_Recycle_ChempackIntoChemfuel.jobString	Reciclando pacotes químicos reativos em combustível químico.
+VRecyclingE_Recycle_WastepackIntoToxpack.label	reciclar pacotes de resíduos em pacotes tóxicos voláteis
+VRecyclingE_Recycle_WastepackIntoToxpack.description	Recicla à mão pacotes de resíduos tóxicos em pacotes tóxicos voláteis, gerando lixo como subproduto.
+VRecyclingE_Recycle_WastepackIntoToxpack.jobString	Reciclando pacotes de resíduos em pacotes tóxicos voláteis.
+VRecyclingE_Recycle_BreakDownToxpack.label	reciclar pacotes tóxicos voláteis em pacotes isotópicos e de liga
+VRecyclingE_Recycle_BreakDownToxpack.description	Recicla à mão pacotes tóxicos voláteis em pacotes de liga estabilizados e pacotes isotópicos radioativos.
+VRecyclingE_Recycle_BreakDownToxpack.jobString	Reciclando pacotes tóxicos voláteis em pacotes isotópicos e de liga.
+VRecyclingE_Recycle_IsotopackIntoUranium.label	reciclar pacotes isotópicos radioativos em urânio
+VRecyclingE_Recycle_IsotopackIntoUranium.description	Separa à mão o urânio aproveitável do lixo nos pacotes isotópicos radioativos.
+VRecyclingE_Recycle_IsotopackIntoUranium.jobString	Reciclando pacotes isotópicos radioativos em urânio.
+## DefInjected/ResearchProjectDef/ResearchProjects.xml
+VRecyclingE_BasicRecycling.label	reciclagem básica
+VRecyclingE_BasicRecycling.description	Descubra a reciclagem básica, que permite transformar pacotes de resíduos em vários recursos diferentes.
+VRecyclingE_ComplexRecycling.label	reciclagem complexa
+VRecyclingE_ComplexRecycling.description	Aprenda a reciclar pacotes isotópicos e de liga em novos recursos e a construir compactadores de lixo para fazer tijolos de lixo.
+## DefInjected/TerrainDef/Terrain_Floors.xml
+VRecyclingE_TrashBrickFloor.label	piso de tijolo de lixo
+VRecyclingE_TrashBrickFloor.description	Um piso tosco feito de tijolos de lixo. Feio, mas barato.
+## DefInjected/ThingCategoryDef/ThingCategories.xml
+VRecyclingE_SpecializedPacks.label	pacotes de reciclagem
+## DefInjected/ThingDef/Buildings_Misc.xml
+VRecyclingE_LargePollutionPump.label	bomba de poluição grande
+VRecyclingE_LargePollutionPump.description	Uma bomba grande que filtra o lençol freático e limpa devagar grandes áreas de terreno poluído. A poluição extraída vira pacotes de resíduos tóxicos que precisam ser levados embora.
+VRecyclingE_PollutionFastPump.label	bomba de poluição rápida
+VRecyclingE_PollutionFastPump.description	Uma bomba de trabalho rápido que filtra o lençol freático e limpa terreno poluído. A poluição extraída vira pacotes de resíduos tóxicos que precisam ser levados embora. Gasta muita eletricidade, mas trabalha muito rápido.
+VRecyclingE_WasteCrate.label	caixa de resíduos
+VRecyclingE_WasteCrate.description	Um contêiner hermético que impede o resíduo tóxico guardado de se dissolver e vazar para o ambiente. Guarda uma quantidade limitada de resíduos. Não impede que o resíduo pegue fogo.
+## DefInjected/ThingDef/Buildings_Production.xml
+VRecyclingE_RecyclingWorkbench.label	bancada de reciclagem
+VRecyclingE_RecyclingWorkbench.description	Uma bancada para reciclar pacotes de resíduos em outros recursos. Trabalha a 50% da velocidade da bancada de reciclagem elétrica.
+VRecyclingE_ElectricRecyclingWorkbench.label	bancada de reciclagem elétrica
+VRecyclingE_ElectricRecyclingWorkbench.description	Uma bancada com separadores automáticos e ferramentas elétricas, usada para reciclar pacotes de resíduos em outros recursos. Funciona sem eletricidade a 50% da velocidade normal.
+VRecyclingE_GarbageCompactor.label	compactador de lixo
+VRecyclingE_GarbageCompactor.description	Um aparelho industrial que prensa o lixo numa prensa hidráulica até virar tijolos de lixo. Não neutraliza o lixo por completo, mas o transforma em material de construção. O processo gasta bastante energia e solta gás tóxico enquanto funciona.
+VRecyclingE_AlloypackSplitter.label	separador de pacotes de liga
+VRecyclingE_AlloypackSplitter.description	Um aparelho de tecnologia espacial que separa pacotes de liga estabilizados em aço, plastaço e compostos de ouro. O processo é demorado e gasta muita energia.\n\nLembre que o prédio precisa de espaço livre atrás para soltar o que produz!
+## DefInjected/ThingDef/Items_Resource_Manufactured.xml
+VRecyclingE_ReclaimedBiopack.label	pacote biológico recuperado
+VRecyclingE_ReclaimedBiopack.description	Um pacote reaproveitado de material biológico rico em nutrientes, recuperado de resíduos tóxicos por processos avançados de reciclagem. A superfície é selada a quente para transporte seguro. Uma pilha de 5 que se decomponha sobre solo comum melhora a fertilidade. Danificado ou queimado, solta um pouco de gás podre nojento.
+VRecyclingE_ReactiveChempack.label	pacote químico reativo
+VRecyclingE_ReactiveChempack.description	Um pacote volátil de químicos muito reativos, subproduto da reciclagem de resíduos tóxicos. A superfície é selada a quente para transporte seguro. É extremamente perigoso e pode causar explosões devastadoras se não for manuseado com cuidado. Danificado ou queimado, pode explodir numa grande bola de fogo.
+VRecyclingE_StabilizedAlloypack.label	pacote de liga estabilizado
+VRecyclingE_StabilizedAlloypack.description	Um amálgama de ligas fortes e leves, sintetizado a partir de resíduos tóxicos por reações químicas complexas. A superfície é selada a quente para transporte seguro. Contém material de alta qualidade para fabricar armas, armaduras e componentes avançados. Danificado ou queimado, solta uma baforada de fumaça não tóxica.
+VRecyclingE_VolatileToxpack.label	pacote tóxico volátil
+VRecyclingE_VolatileToxpack.description	Um pacote instável de resíduo tóxico muito concentrado, subproduto de reciclagens mais complexas. A superfície é selada a quente para transporte seguro. É extremamente perigoso pela instabilidade e pela tendência a soltar muito gás tóxico e poluição. Queimado ou danificado, solta uma nuvem enorme de gás tóxico mortal.
+VRecyclingE_RadioactiveIsotopack.label	pacote isotópico radioativo
+VRecyclingE_RadioactiveIsotopack.description	Um pacote perigoso de isótopos radioativos, resultado da reciclagem de resíduos tóxicos. A superfície é selada a quente para transporte seguro. Emite muita radiação, uma ameaça séria à saúde de colonos e animais. Danificado ou queimado, solta uma rajada de radiação perigosa.
+VRecyclingE_Trash.label	lixo
+VRecyclingE_Trash.description	Um pacote de lixo não tóxico, separado e compactado com cuidado para armazenar com eficiência. A superfície é selada a quente para transporte seguro. O lixo não polui nem se deteriora, então é seguro guardá-lo por muito tempo. Mas, queimado, solta uma quantidade moderada de gás tóxico.
+## DefInjected/ThingDef/Items_Resource_Stuff.xml
+VRecyclingE_TrashBrick.label	tijolo de lixo
+VRecyclingE_TrashBrick.description	Uma pilha de tijolos sólidos feitos prensando lixo não tóxico. A superfície é selada a quente para transporte seguro. É um material de construção durável para paredes e estruturas. Danificado ou queimado, solta uma quantidade moderada de vapores tóxicos. Não se deteriora. Na Queda, há quem chame de "tijolo do futuro".
+VRecyclingE_TrashBrick.stuffProps.stuffAdjective	de tijolo de lixo
+## DefInjected/WorkGiverDef/WorkGivers.xml
+VRecyclingE_HaulToCompactor.label	levar recursos ao compactador de lixo
+VRecyclingE_HaulToAlloySplitter.label	levar recursos ao separador de liga
+VRecyclingE_DoBillsRecyclingBench.label	fazer coisas na bancada de reciclagem
+## Keyed/Misc.xml
+VRecyclingE_NotWorking	Esta máquina não está funcionando no momento
+VRecyclingE_Leaking	Este pacote isotópico está vazando radiação
+VRecyclingE_DurationUntilNextProcess	Tempo até {1} {0_labelPlural} ficarem prontos
+VRecyclingE_ContainedThings	Contém {0}
+VRecyclingE_DissolutionWasteCrate	Protegido (não se dissolve).
+VRecyclingE_AlloySplitterOutputBlocked	As saídas do separador de liga ficariam bloqueadas
+VRecyclingE_AlloySplitterOutOfBounds	As saídas do separador de liga ficariam fora do mapa

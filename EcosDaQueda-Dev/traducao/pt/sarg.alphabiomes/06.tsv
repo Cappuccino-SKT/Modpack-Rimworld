@@ -1,0 +1,298 @@
+## DefInjected/ThoughtDef/Thoughts_Weather.xml
+AB_ForsakenNight.stages.preternatural_darkness.label	escuridão sobrenatural
+AB_ForsakenNight.stages.preternatural_darkness.description	É como se o próprio sol estivesse se afogando em desespero. Odeio isso.
+AB_ForsakenRain.stages.soaking_wet_and_dark.label	encharcado e no escuro
+AB_ForsakenRain.stages.soaking_wet_and_dark.description	Estou encharcado e não enxergo nada.
+AB_ForsakenThunderstorm.stages.preternatural_storm.label	tempestade sobrenatural
+AB_ForsakenThunderstorm.stages.preternatural_storm.description	Está escuro como o vazio, e agora tem raio caindo para todo lado. Estamos condenados.
+AB_RedFogThought.stages.unnatural_weather.label	clima antinatural
+AB_RedFogThought.stages.unnatural_weather.description	Esta névoa tem um gosto esquisito. Tem cara esquisita. Ela PARECE errada, como se não fosse deste mundo.
+AB_VolcanicAshThought.stages.cant_breathe.label	não consigo respirar
+AB_VolcanicAshThought.stages.cant_breathe.description	É TÃO difícil respirar nesta cinza!
+AB_RedFogThoughtPositive.stages.i_love_unnatural_weather.label	amo clima antinatural
+AB_RedFogThoughtPositive.stages.i_love_unnatural_weather.description	Na verdade... eu amo esta névoa. A névoa é minha amiga. Eu beijaria a névoa se pudesse. Obedeça. Consuma. Acaricie uma geleia ocular. Peraí, o quê?
+AB_PetalStorms.stages.petal_storm.label	tempestade de pétalas
+AB_PetalStorms.stages.petal_storm.description	Ah, isso até que é bem bonito.
+## DefInjected/TileMutatorDef/TileMutators_Fauna.xml
+AB_ExplodingAnimals.label	animais explosivos
+AB_ExplodingAnimals.description	Algo nesta área faz todos os animais explodirem violentamente ao morrer.
+## DefInjected/TileMutatorDef/TileMutators_Flora.xml
+AB_AgariluxPrime_Mutator.label	broto de Agarilux Primordial
+AB_AgariluxPrime_Mutator.description	Esta área tem um Agarilux Primordial desgarrado crescendo fora da selva micótica. Ele solta esporos que destroem tudo em volta.
+AB_OcularTransformation.label	transformação ocular
+AB_OcularTransformation.description	Esta área começou a se transformar numa floresta ocular.
+AB_GoldenTrees.label	árvores de cubos dourados
+AB_GoldenTrees.description	Esta área está alcançando a PERFEIÇÃO.
+AB_FleshTrees.label	árvores de carne
+AB_FleshTrees.description	Árvores de carne esquisitas crescem soltas nesta área. Não parecem gostosas.
+AB_DessertTrees.label	árvores-sobremesa
+AB_DessertTrees.description	Árvores-sobremesa esquisitas crescem soltas nesta área. Parecem MUITO gostosas.
+AB_TechnoTrees.label	árvores tecnológicas
+AB_TechnoTrees.description	Um tipo estranho de árvore cresce nesta área. Parecem meio sintéticas.
+AB_LuminescentTrees.label	árvores luminescentes
+AB_LuminescentTrees.description	Árvores luminescentes incomuns crescem nesta área.
+AB_SterileGround.label	solo estéril
+AB_SterileGround.description	Nenhuma planta selvagem cresce aqui além de grama simples, mas a chance de doenças cai 75%.
+## DefInjected/TileMutatorDef/TileMutators_Landmarks_Natural.xml
+AB_TarLakes.label	lagos de piche
+AB_TarLakes.description	Uma poça rasa de uma substância densa parecida com piche. Intransponível, e não dá para construir ponte por cima.
+AB_PropaneLakes.label	lagos de propano
+AB_PropaneLakes.description	Lagos de hidrocarbonetos líquidos que parecem desafiar as leis da física.
+AB_MagmaticQuagmire.label	lamaçal magmático
+AB_MagmaticQuagmire.description	Uma paisagem fervente de rocha derretida e calor escaldante, onde o chão borbulha, racha e queima sob seus pés.
+AB_HealingSprings.label	fontes curativas
+AB_HealingSprings.description	Esta região tem fontes naturais com propriedades curativas.
+AB_SweetForest.label	terreno de chocolate
+AB_SweetForest.description	Um exemplo perfeito do que acontece quando se dá tecnologia de terraformação a sociedades que não estão preparadas para usá-la com responsabilidade.
+AB_SweetFlora.label	flora doce
+AB_SweetFlora.description	A flora desta região foi modificada geneticamente para parecer confeitaria gigante, num nível absurdo.
+AB_SweetRocks.label	montanhas de chocolate
+AB_SweetRocks.description	A pedra desta região é, na verdade, uma forma muito compactada de chocolate.
+AB_SugarChunks.label	pedaços de açúcar
+AB_SugarChunks.description	Esta área tem pequenos torrões de açúcar endurecido.
+AB_AnimaDesertFlora.label	flora do deserto de anima
+AB_AnimaDesertFlora.description	Esta região tem um deserto com cactos de anima esparsos, que ressoam em silêncio com energia psíquica. O ar parece atento, como se a própria terra estivesse ouvindo.
+AB_AnimaSoilsDesert.label	solos do deserto de anima
+AB_AnimaSoilsDesert.description	Esta área tem solo impregnado de energia de anima latente, que influencia sutilmente plantas, animais e mentes.
+AB_JadeiteChunksDesert.label	pedaços de jadeíta do deserto de anima
+AB_JadeiteChunksDesert.description	Esta área desértica tem pequenos depósitos de jadeíta.
+AB_OcularDesertSoil.label	solos do deserto ocular
+AB_OcularDesertSoil.description	Esta área desértica tem solo distorcido por uma estranha influência extradimensional.
+AB_OcularDesertFlora.label	flora do deserto ocular
+AB_OcularDesertFlora.description	Esta região tem um deserto com cactos oculares esparsos.
+AB_RedFog.label	névoa vermelha
+AB_RedFog.description	Uma névoa vermelha nauseante, que reduz a precisão das armas de longo alcance, permeia esta região.
+AB_DryMeadows.label	solos de prado seco
+AB_DryMeadows.description	Esta área de prado é mais seca que o normal, com solo menos fértil e menos chuva.
+AB_DryMeadowsFlora.label	flora de prado seco
+AB_DryMeadowsFlora.description	Esta região tem flora adaptada às condições mais secas do terreno.
+AB_ToxicMeadows.label	solos de prado tóxico
+AB_ToxicMeadows.description	Esta área de prado está cheia de flores tóxicas.
+AB_ToxicMeadowsFlora.label	flora de prado tóxico
+AB_ToxicMeadowsFlora.description	Esta região tem flora adaptada às condições tóxicas do terreno.
+AB_WillowForest.label	floresta de salgueiros
+AB_WillowForest.description	Esta região tem uma infinidade de salgueiros-chorões.
+AB_CloverForest.label	floresta de trevos
+AB_CloverForest.description	Uma floresta viçosa onde trevos gigantes atapetam o chão e árvores altíssimas têm folhas em forma de trevo.
+AB_GinkgoForest.label	floresta de ginkgos
+AB_GinkgoForest.description	Uma floresta tranquila de ginkgos modificados geneticamente, com folhas características em forma de leque que ficam douradas e brilhantes o ano todo.
+AB_MauvebloomFields.label	solos cerúleos
+AB_MauvebloomFields.description	Um solo azulado, com leve cheiro metálico, cobre esta região.
+AB_ReddishWaters.label	água avermelhada
+AB_ReddishWaters.description	As águas daqui estão tingidas de carmim por densas florações de algas vermelhas e microrganismos pigmentados.
+AB_ReddishRains.label	chuvas avermelhadas
+AB_ReddishRains.description	Florações periódicas de algas vermelhas no ar fazem a chuva cair em tons perturbadores de rosa e carmim, como se o próprio céu estivesse sangrando.
+AB_MauvebloomFlora.label	floresta de malvaflor
+AB_MauvebloomFlora.description	A flora local é dominada por malvaflores, cobrindo a paisagem em tons suaves de roxo e rosa.
+AB_GauranlenFlora.label	flora de gauranlen
+AB_GauranlenFlora.description	A flora local é dominada por árvores gauranlen gigantes e grama gau, cobrindo a paisagem em tons de laranja.
+AB_GauranlenSoil.label	solo de gauranlen
+AB_GauranlenSoil.description	Solo coberto por um musgo gauranlen macio atapeta esta região.
+AB_UnshackledDryads.label	dríades libertas
+AB_UnshackledDryads.description	Dríades libertas vão aparecer nesta região.
+AB_UnshackledCompanionDryads.label	dríades companheiras libertas
+AB_UnshackledCompanionDryads.description	Dríades companheiras libertas vão aparecer nesta região.
+AB_WarpedStoneForest.label	floresta de pedra retorcida
+AB_WarpedStoneForest.description	Pináculos gigantes de arenito estão espalhados por esta área. Estas rochas pontudas parecem ter sido retorcidas por uma força desconhecida, ganhando formas antinaturais.
+AB_ObsidianExpanse.label	vastidão de obsidiana
+AB_ObsidianExpanse.description	Grandes trechos de terreno duro de obsidiana cobrem esta área, reduzindo a fertilidade.
+AB_ObsidianSpires.label	pináculos de obsidiana
+AB_ObsidianSpires.description	Pináculos gigantes de obsidiana estão espalhados por esta área.
+AB_CalcifiedSoil.label	solo calcificado
+AB_CalcifiedSoil.description	Esta região é coberta por solo que vira pedra aos poucos com o crescimento calcificante da planta resto calcificado.
+AB_CalcifiedRemnants.label	restos calcificados
+AB_CalcifiedRemnants.description	Plantas meio vivas, meio mortas, que parecem em parte orgânicas e em parte inorgânicas, crescem nesta área. Os tecidos vivos persistem dentro de uma casca de crescimento mineralizado, que vai substituindo caules, folhas e raízes por estruturas parecidas com pedra.
+AB_LivingCrystalBed.label	leito de cristal vivo
+AB_LivingCrystalBed.description	Esta região é coberta por solo tomado aos poucos por pequenos cristais vivos, que brotam da terra como mudas minerais.
+AB_LivingAlcyonite.label	alcionita viva
+AB_LivingAlcyonite.description	Organismos cristalinos que crescem e pulsam com leves sinais de vida, com corpos minerais que mudam e se regeneram o tempo todo. Foram criados por bioengenharia como solução para a mineração de alcionita, mas inevitavelmente se espalharam pela natureza.
+AB_FleshTerrain.label	terreno de carne
+AB_FleshTerrain.description	Grandes trechos do chão desta região foram cobertos por um terreno macio e carnudo, parecido com tecido vivo, que pulsa de leve sob os pés.
+AB_TumorousGrowths.label	crescimentos tumorosos
+AB_TumorousGrowths.description	A flora local é dominada por crescimentos tumorosos irregulares que incham do chão como carne doente e se espalham pela paisagem.
+AB_CerebrospinalFluid.label	líquido cefalorraquidiano
+AB_CerebrospinalFluid.description	Em vez de água, as poças, lagos e rios rasos desta região são de líquido cefalorraquidiano diluído. Dá para construir um sintetizador de neutroamina aqui (procure em "construir estruturas do bioma" no menu Mobília do arquiteto).
+AB_CorruptedIntrusion.label	intrusão corrompida
+AB_CorruptedIntrusion.description	Esta região é coberta por um estranho polímero metálico com um padrão hexagonal degradado.
+AB_CorruptedMechFlora.label	flora mecanoide corrompida
+AB_CorruptedMechFlora.description	Uma arquitecnologia diferente da que está transformando esta região iniciou uma tomada hostil, infectando os mecanoides sésseis daqui com um vírus de mecanitas que os corrompe em criações distorcidas.
+AB_GnawingSands.label	areias roedoras
+AB_GnawingSands.description	Dentes gigantes despontam da areia, com carcaças de treliça de mármore que escondem plantas vivas dentro. Uma criação bizarra de algum geneticista maluco.
+## DefInjected/TileMutatorDef/TileMutators_ManMade.xml
+AB_AncientFreezingVent.label	respiradouro congelante ancestral
+AB_AncientFreezingVent.description	Esta área tem vários respiradouros congelantes enormes. Um mecanismo antigo enterrado fundo na terra às vezes solta grandes quantidades de ar congelante, baixando muito a temperatura.
+AB_AncientGreyPallVent.label	respiradouro de manto cinza
+AB_AncientGreyPallVent.description	Esta área tem vários respiradouros enferrujados e agourentos. Um mecanismo antigo enterrado fundo na terra às vezes solta grandes quantidades de uma fumaça de aspecto doentio que mergulha a área numa escuridão sobrenatural.
+AB_AncientBloodRainVent.label	respiradouro de chuva de sangue
+AB_AncientBloodRainVent.description	Esta área tem vários respiradouros gigantes e corroídos. Um mecanismo antigo enterrado fundo na terra às vezes solta enormes nuvens vermelhas de uma substância vaporizada parecida com sangue, que se juntam numa chuva de sangue nojenta.
+AB_AncientDeathPallVent.label	respiradouro de manto da morte
+AB_AncientDeathPallVent.description	Esta área tem várias grades rúnicas antigas de origem desconhecida. Um mecanismo antigo enterrado fundo na terra às vezes solta nuvens de arquitas microscópicas com energia própria que reanimam cadáveres, criando uma imitação distorcida de vida.
+AB_DerelictBioLab.label	biolaboratório abandonado
+AB_DerelictBioLab.description	Há um biolaboratório abandonado nesta área. Investigá-lo pode atrair companhia indesejada.
+AB_DerelictArchonexus.label	arconexo abandonado
+AB_DerelictArchonexus.description	Há várias estruturas de arconexo abandonadas nesta área.
+AB_DerelictKemeticTemple.label	templo kemético abandonado
+AB_DerelictKemeticTemple.description	Há um templo kemético abandonado nesta área.
+AB_DerelictResort.label	resort abandonado
+AB_DerelictResort.description	Há um resort abandonado nesta área.
+AB_DerelictClusters.label	aglomerados abandonados
+AB_DerelictClusters.description	Esta área está cheia de aglomerados mecanoides abandonados, dos quais dá para aproveitar alguns materiais.
+## DefInjected/TileMutatorDef/TileMutators_MapSize.xml
+AB_WideRegion.label	região larga
+AB_WideRegion.description	Os limites desta região lhe dão um tamanho irregular. O mapa terá 400x100 células.
+AB_NarrowRegion.label	região estreita
+AB_NarrowRegion.description	Os limites desta região lhe dão um tamanho irregular. O mapa terá 100x400 células.
+AB_DiminutiveRegion.label	região diminuta
+AB_DiminutiveRegion.description	Os limites desta região são muito restritivos. O mapa terá 100x100 células.
+## DefInjected/TileMutatorDef/TileMutators_Natural.xml
+AB_MagmaVents.label	respiradouros de magma
+AB_MagmaVents.description	Fendas ardentes na terra que de tempos em tempos expelem jatos de rocha derretida e gás escaldante.
+AB_GiantFossils.label	fósseis gigantes
+AB_GiantFossils.description	Esqueletos gigantescos de feras extintas estão espalhados por esta terra. Como a fossilização nem teve tempo de acontecer na Borda, é um mistério quem pôs esses ossos gigantes aqui.
+AB_GeothermalHotspots.label	pontos quentes geotérmicos
+AB_GeothermalHotspots.description	A alta atividade geotérmica permite construir usinas geotérmicas eficientes (procure em "construir estruturas do bioma" no menu Mobília do arquiteto).
+AB_EdibleAirborneMicrofungi.label	microfungos comestíveis no ar
+AB_EdibleAirborneMicrofungi.description	Esporos microscópicos deste bioma podem ser coletados e usados como ingrediente (procure o coletor em "construir estruturas do bioma" no menu Mobília do arquiteto).
+AB_MoldyEnvironment.label	ambiente mofado
+AB_MoldyEnvironment.description	A presença onipresente de esporos de fungos nesta região torna quase insuportável ficar ao ar livre.
+AB_OversaturatedSoil.label	solo encharcado
+AB_OversaturatedSoil.description	As áreas de solo fértil são ainda mais férteis que o normal.
+AB_PollinationFrenzy.label	frenesi de polinização
+AB_PollinationFrenzy.description	A densidade de plantas é maior aqui por causa da polinização intensa, mas com risco de alergias mais fortes.
+AB_PetalStorms.label	tempestades de pétalas
+AB_PetalStorms.description	Rajadas ocasionais de pétalas de flor que melhoram o humor, mas reduzem a visibilidade.
+AB_DigestiveSurface.label	superfície digestiva
+AB_DigestiveSurface.description	O chão daqui digere os itens largados se ficarem muito tempo.
+AB_SymbioticNutrients.label	nutrientes simbióticos
+AB_SymbioticNutrients.description	Só de estar nesta paisagem, as pessoas precisam de 10% menos nutrientes para se sentir satisfeitas.
+AB_QuiveringSurface.label	superfície trêmula
+AB_QuiveringSurface.description	O próprio chão sob sua colônia treme, pulsa e reage como se estivesse vivo. Andar neste terreno será mais difícil.
+AB_GelatinousMemoryEcho.label	eco de memória gelatinoso
+AB_GelatinousMemoryEcho.description	O superorganismo guarda ecos de eventos passados, armazenados como dados numa rede neural viva. Esses ecos de memória às vezes vazam para a realidade.
+AB_AmbientRadiation.label	radiação ambiente
+AB_AmbientRadiation.description	Níveis baixos de radiação de fundo permeiam a área, afetando sutilmente a saúde e as taxas de mutação.
+AB_ExtremeTemperatureFluctuations.label	variações extremas de temperatura
+AB_ExtremeTemperatureFluctuations.description	Oscilações bruscas entre dias escaldantes e noites congelantes desafiam a sobrevivência e a estabilidade das lavouras.
+AB_MutagenicSprings.label	fontes oculares mutagênicas
+AB_MutagenicSprings.description	Esta região tem fontes oculares esquisitas que causam mutações no corpo de colonos e animais.
+AB_QuicksandPits.label	poços de areia movediça
+AB_QuicksandPits.description	Esta região tem poças rasas de areia movediça que atrapalham o movimento.
+AB_ResidualOverclocking.label	sobrecarga residual
+AB_ResidualOverclocking.description	Esta região ainda zumbe com a energia instável de uma infraestrutura mecanoide esquecida. Dá para construir coletores que sintonizam essas energias (procure em "construir estruturas do bioma" no menu Mobília do arquiteto).
+AB_TarHoles.label	buracos de piche
+AB_TarHoles.description	Esta região tem buracos naturais ligados a um reservatório subterrâneo de piche. De tempos em tempos espirram piche fresco em volta.
+## DefInjected/TileMutatorDef/TileMutators_Weather.xml
+AB_DryClimate.label	clima seco
+AB_DryClimate.description	Chove bem menos aqui.
+## DefInjected/VEF.OptionalFeatures.ModDef/OptionalFeatures.xml
+AB_OptionalFeatures.label	Alpha Biomes
+AB_OptionalFeatures.description	Recursos opcionais do VE Framework para o Alpha Biomes
+## DefInjected/WeatherDef/Weathers.xml
+AB_RedFog.label	névoa vermelha
+AB_RedFog.description	Uma névoa vermelha nauseante que reduz a precisão das armas de longo alcance.
+AB_VolcanicAsh.label	cinza vulcânica
+AB_VolcanicAsh.description	Uma mistura de partículas de rocha, mineral e vidro expelidas por um vulcão em erupção. Cria uma camada atmosférica grossa que reduz a precisão à distância.
+AB_VolcanicAshRain.label	cinza vulcânica com chuva
+AB_VolcanicAshRain.description	Uma mistura de partículas de rocha, mineral e vidro expelidas por um vulcão em erupção, caindo com a chuva. Cria uma camada atmosférica grossa que reduz a precisão à distância.
+AB_ForsakenNight.label	névoa abandonada
+AB_ForsakenNight.description	Uma escuridão sobrenatural que penetra até a alma. Mesmo de "dia" a claridade é muito baixa, então iluminação vai ser absolutamente essencial. As noites vão ser MUITO escuras.
+AB_ForsakenRainyNight.label	chuva abandonada
+AB_ForsakenRainyNight.description	Uma escuridão sobrenatural que penetra até a alma. Uma chuva gelada de água super-resfriada começou a cair do céu escurecido.
+AB_ForsakenThunderstorm.label	tempestade abandonada
+AB_ForsakenThunderstorm.description	Uma escuridão sobrenatural que penetra até a alma. Agora com tempestade seca de raios! Não é ótimo?
+AB_AcidRainWeather.label	chuva ácida
+AB_AcidRainWeather.description	Emissões de gases tóxicos de caldeiras vulcânicas ativas próximas estão caindo como uma perigosa chuva ácida. A chuva ácida prejudica flora e fauna, mata insetos e formas de vida aquáticas e afeta a saúde humana. Também reduz a precisão das armas de longo alcance, apaga o fogo e deixa as pessoas mais lentas.
+AB_PetalStorms.label	tempestade de pétalas
+AB_PetalStorms.description	Uma rajada de pétalas de flor que melhora o humor, mas reduz a visibilidade.
+## DefInjected/WeatherDef/Weathers_Alternate.xml
+AB_ForsakenNight_Alternate.label	névoa abandonada
+AB_ForsakenNight_Alternate.description	Uma escuridão sobrenatural que penetra até a alma. Mesmo de "dia" a claridade é muito baixa, então iluminação vai ser absolutamente essencial. As noites vão ser MUITO escuras.
+AB_ForsakenRainyNight_Alternate.label	chuva abandonada
+AB_ForsakenRainyNight_Alternate.description	Uma escuridão sobrenatural que penetra até a alma. Uma chuva gelada de água super-resfriada começou a cair do céu escurecido.
+AB_ForsakenThunderstorm_Alternate.label	tempestade abandonada
+AB_ForsakenThunderstorm_Alternate.description	Uma escuridão sobrenatural que penetra até a alma. Agora com tempestade seca de raios! Não é ótimo?
+## DefInjected/WeatherDef/Weathers_Odyssey.xml
+AB_ReddishRain.label	chuva avermelhada
+AB_ReddishRain.description	Florações periódicas de algas vermelhas no ar fazem a chuva cair em tons perturbadores de rosa e carmim, como se o próprio céu estivesse sangrando.
+## DefInjected/WorkGiverDef/WorkGivers.xml
+AB_DoBillsCook.label	cozinhar no fogão a propano
+AB_CoreDrill.label	perfurar na sonda de amostragem
+AB_CoreDrill.gerund	perfurando
+AB_CoreDrill.verb	perfurar
+AB_DoBillsMakeWeapons.label	fazer armas
+AB_DoBillsMakeWeapons.gerund	forjando em
+AB_DoBillsMakeWeapons.verb	forjar em
+AB_DoBillsMachiningTable.label	fazer coisas na mesa de usinagem
+AB_DoBillsSmelter.label	fundir itens
+AB_DoBillsSmelter.gerund	refinando em
+AB_DoBillsSmelter.verb	refinar em
+## Keyed/Misc_Gameplay.xml
+AB_UseAgariluxParticles	O Agarilux Primordial produz gás nocivo
+AB_UseAgariluxParticlesDesc	O cogumelo Agarilux Primordial da selva micótica produz uma nuvem de esporos brutalmente nocivos que danificam tudo. Se não gostar dessa mecânica, pode desligá-la nesta opção.
+AB_SpawnBiome	Criar {0} na geração do planeta
+AB_RemoveVanillaBiomes	Remover todos os biomas do jogo base
+AB_RemoveVanillaBiomesDesc	Ativando esta opção, você pode gerar um planeta completamente alienígena, só com biomas de mods.
+AB_RemoveOdysseyBiomes	Remover todos os biomas do Odyssey
+AB_RemoveOdysseyBiomesDesc	Ativando esta opção, você pode remover os biomas do Odyssey.
+AB_BrighterCrags	Penhascos abandonados mais claros
+AB_BrighterCragsDescription	Deixa os penhascos abandonados bem mais claros, para quem tem uma tela que os deixa escuros DEMAIS. A mudança vale na próxima troca de clima do mapa ou ao recarregar o save.
+AB_ShowBuildingsButton	Mostrar o botão "estruturas do bioma" em Mobília
+AB_ShowBuildingsButtonDescription	Por padrão, há um botão "construir estruturas do bioma" no menu Mobília do arquiteto. Ele serve para construir prédios específicos do bioma. Mas você também pode escondê-lo, porque "aaaah, inchaço", e aí não vai vê-lo. Também não vai poder construí-los. É o preço a pagar.\n\nRequer reiniciar o jogo.
+AB_BiomeCommonalities	Frequência dos biomas. Use 0 para impedir que o bioma seja gerado:
+AB_MutatorMultiplier	Frequência das características do mapa (requer mundo novo)
+AB_MutatorMultiplierTooltip	A frequência das características de mapa em mapas sem marco será multiplicada por este número (20 significa que uma característica será 20 vezes mais comum). Requer criar um planeta novo!
+AB_LandmarkMutatorMultiplier	Frequência das características de marco (requer mundo novo)
+AB_LandmarkMutatorMultiplierTooltip	A frequência das características de mapa em mapas com marco será multiplicada por este número (20 significa que uma característica de marco será 20 vezes mais comum). Requer criar um planeta novo!
+AB_SpecificMutatorCommonalities	Frequência específica de cada característica:
+AB_TerrainCannotSupport_Propane	A bomba precisa ser construída sobre chão de propano sólido
+AB_Distance_Propane	As bombas de propano precisam ficar a pelo menos 12 células uma da outra
+AB_OcularForestOnly	Este aparelho só funciona numa floresta ocular
+AB_SpawningNextBumbledrone	Novo zangão-bola em {0}
+AB_AlphaAnimalsNotInstalled	Como o Alpha Animals não está instalado, esta colmeia está inativa
+AB_MustPlaceOnTarPit	A bomba precisa ser construída sobre lama empichada ou um buraco de piche
+AB_WarningLowEfficiency	Bomba em modo de baixa eficiência por falta de buraco de piche
+AB_ConvertToAlcyonite	Converter painel solar
+AB_ConvertToAlcyoniteDesc	Converte este painel solar num painel solar de alcionita, que rende 50% mais com névoa vermelha.
+AB_AlcyoniteSolarPanelsDescription	Neste bioma, você pode converter painéis solares em painéis solares de alcionita, que rendem 50% mais com névoa vermelha.
+AB_AlcyoniteSolarPanels	Melhorar painéis solares
+AB_AlcyoniteSolarPanels_NotBuildable	Para construir estes, faça um painel solar e use o botão "Converter painel solar"
+AB_PropaneValve	Liga e desliga o fluxo de propano.
+AB_PropaneValveDesc	Liga e desliga o fluxo de propano. Um colono virá abrir/fechar a válvula.
+AB_ExtractPropane	Extrair 150 de propano
+AB_ExtractPropaneDesc	Extrai 150 de propano do tanque. Um colono virá fazer a extração.
+AB_Distance_Generic_Fifteen	Esta construção precisa ficar a pelo menos 15 células de outra parecida
+AB_AncientFreezingVentStartUp	Os respiradouros congelantes ancestrais foram ativados, baixando a temperatura.
+AB_AncientFreezingVentShutdown	Os respiradouros congelantes ancestrais estão parando.
+AB_AncientFreezingVentActive	soltando ar congelante.
+AB_AncientGreyPallVentStartUp	Os respiradouros de manto cinza ancestrais foram ativados, soltando uma fumaça de aspecto doentio.
+AB_AncientGreyPallVentShutdown	Os respiradouros de manto cinza ancestrais estão parando.
+AB_AncientGreyPallVentActive	soltando fumaça de aspecto doentio.
+AB_AncientBloodRainVentStartUp	Os respiradouros de chuva de sangue ancestrais foram ativados, soltando um vapor grosso cor de sangue.
+AB_AncientBloodRainVentShutdown	Os respiradouros de chuva de sangue ancestrais estão parando.
+AB_AncientBloodRainVentActive	soltando vapor cor de sangue.
+AB_AncientDeathPallVentStartUp	Os respiradouros de manto da morte ancestrais foram ativados, soltando uma nuvem rançosa de arquitas que reanimam cadáveres.
+AB_AncientDeathPallVentShutdown	Os respiradouros de manto da morte ancestrais estão parando.
+AB_AncientDeathPallVentActive	soltando nuvem de arquitas que reanimam cadáveres.
+AB_SlimeCompressorNotWorking	Este compactador de gosma não está funcionando no momento
+AB_NotReallyAPlant	Isto é só uma poça nojenta de piche fedorento
+AB_MessageWarningTooHighFertility	Precisa de terreno menos fértil.
+AB_BiomeBuildings	construir estruturas do bioma
+AB_BiomeBuildingsDesc	Abre um menu para construir prédios específicos do bioma.
+AM_CurrentBiome	Bioma atual:
+AM_AvailableStructures	Estruturas disponíveis para este bioma:
+AB_ResearchNeeded	Não pode ser construído até a colônia pesquisar {0}
+AB_FeaturesInThisTile	Características desta região:
+AB_AmbientRadiationLabel	Mutação por radiação ambiente em {0}
+AB_AmbientRadiationDesc	Por causa da radiação ambiente deste lugar, {0} recebeu a seguinte mutação: {1}
+AB_ChunkMarbleMine	Perfurar para pedaços de mármore
+AB_ChunkSandstoneMine	Perfurar para pedaços de arenito
+AB_ChunkLimestoneMine	Perfurar para pedaços de calcário
+AB_ChunkGraniteMine	Perfurar para pedaços de granito
+AB_ChunkSlateMine	Perfurar para pedaços de ardósia
+AB_ChooseMineDesc	Escolha o tipo de pedaço a perfurar. Pode ser qualquer tipo de rocha do jogo base, ou aleatório
+AB_DrillingStoneType	Tipo de pedra perfurada:
+AB_DrillingStoneTypeRandom	Tipo de pedra perfurada: aleatório
+AB_ProgressToNextPortion	Progresso até o próximo pedaço
+AB_BiomeMultiplier	Multiplicador de frequência de {0}
+AB_MultiplierTooltip	Este multiplicador afeta a chance de aparecer (frequência) de {0} ao criar um mundo. Lembre que a frequência dos biomas não é linear, então você vai ter que experimentar e ajustar até chegar a uma densidade que sirva. Lembre também que isso pode ser afetado por outros mods que adicionam biomas ou mudam o jeito como o jogo cria o mundo.
+AB_TabImage	Imagem

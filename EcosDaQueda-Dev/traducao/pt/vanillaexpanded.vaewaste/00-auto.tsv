@@ -1,0 +1,94 @@
+## DefInjected/BodyDef/Bodies_Animal_Bipedal_Lizard.xml
+VAEWaste_BipedalLizard.corePart.parts.left_leg.customLabel	perna esquerda
+VAEWaste_BipedalLizard.corePart.parts.right_leg.customLabel	perna direita
+## DefInjected/BodyDef/Bodies_Animal_LargeLizardlike.xml
+VAEWaste_LargeLizardlike.corePart.parts.front_left_leg.customLabel	perna dianteira esquerda
+VAEWaste_LargeLizardlike.corePart.parts.front_right_leg.customLabel	perna dianteira direita
+VAEWaste_LargeLizardlike.corePart.parts.rear_left_leg.customLabel	perna traseira esquerda
+VAEWaste_LargeLizardlike.corePart.parts.rear_right_leg.customLabel	perna traseira direita
+## DefInjected/BodyDef/Bodies_Animal_Megatardi.xml
+VAEWaste_Megatardi.corePart.parts.Pronotum.parts.InsectHead.parts.left_antenna.customLabel	antena esquerda
+VAEWaste_Megatardi.corePart.parts.Pronotum.parts.InsectHead.parts.right_antenna.customLabel	antena direita
+VAEWaste_Megatardi.corePart.parts.front_left_leg.customLabel	perna dianteira esquerda
+VAEWaste_Megatardi.corePart.parts.front_right_leg.customLabel	perna dianteira direita
+VAEWaste_Megatardi.corePart.parts.middle_left_leg.customLabel	perna do meio esquerda
+VAEWaste_Megatardi.corePart.parts.middle_right_leg.customLabel	perna do meio direita
+VAEWaste_Megatardi.corePart.parts.rear_left_leg.customLabel	perna traseira esquerda
+VAEWaste_Megatardi.corePart.parts.rear_right_leg.customLabel	perna traseira direita
+## DefInjected/BodyDef/Bodies_Animal_Quadruped_TwoHeaded.xml
+VAEWaste_Wasteffalo_Body.corePart.parts.front_left_leg.customLabel	perna dianteira esquerda
+VAEWaste_Wasteffalo_Body.corePart.parts.front_right_leg.customLabel	perna dianteira direita
+VAEWaste_Wasteffalo_Body.corePart.parts.rear_left_leg.customLabel	perna traseira esquerda
+VAEWaste_Wasteffalo_Body.corePart.parts.rear_right_leg.customLabel	perna traseira direita
+## DefInjected/BodyDef/Bodies_Animal_Quadruped_TwoTusks.xml
+VAEWaste_Wasteboar.corePart.parts.front_left_leg.customLabel	perna dianteira esquerda
+VAEWaste_Wasteboar.corePart.parts.front_right_leg.customLabel	perna dianteira direita
+VAEWaste_Wasteboar.corePart.parts.rear_left_leg.customLabel	perna traseira esquerda
+VAEWaste_Wasteboar.corePart.parts.rear_right_leg.customLabel	perna traseira direita
+## DefInjected/BodyDef/Bodies_Animal_Scorpionlike.xml
+VAEWaste_ScorpionLike.label	corpo de escorpião
+VAEWaste_ScorpionLike.corePart.parts.Pronotum.parts.InsectHead.parts.left_antenna.customLabel	antena esquerda
+VAEWaste_ScorpionLike.corePart.parts.Pronotum.parts.InsectHead.parts.right_antenna.customLabel	antena direita
+VAEWaste_ScorpionLike.corePart.parts.front_left_leg.customLabel	perna dianteira esquerda
+VAEWaste_ScorpionLike.corePart.parts.front_right_leg.customLabel	perna dianteira direita
+VAEWaste_ScorpionLike.corePart.parts.middle_left_leg.customLabel	perna do meio esquerda
+VAEWaste_ScorpionLike.corePart.parts.middle_right_leg.customLabel	perna do meio direita
+VAEWaste_ScorpionLike.corePart.parts.rear_left_leg.customLabel	perna traseira esquerda
+VAEWaste_ScorpionLike.corePart.parts.rear_right_leg.customLabel	perna traseira direita
+## DefInjected/BodyPartDef/BodyParts_Animal.xml
+VAEWaste_Thorax.label	tórax
+VAEWaste_InsectTail.label	cauda
+VAEWaste_InsectMouth.label	boca
+VAEWaste_InsectSting.label	ferrão
+VAEWaste_LeftPincer.label	pinça esquerda
+VAEWaste_RightPincer.label	pinça direita
+## DefInjected/BodyPartGroupDef/BodyPartGroups.xml
+VAEWaste_Sting.label	ferrão
+VAEWaste_PincerAttackTool.label	pinça
+VAEWaste_Mouth.label	boca
+## DefInjected/DamageDef/DamageDefs.xml
+VAEWaste_AcidBolt.label	cuspe ácido
+VAEWaste_AcidBolt.deathMessage	{0} foi corroído até a morte.
+VAEWaste_Sting.label	ferroada tóxica
+VAEWaste_Sting.deathMessage	{0} morreu de tanta ferroada.
+VAEWaste_FluBite.deathMessage	{0} morreu mordido.
+VAEWaste_RippingBite.deathMessage	{0} morreu mordido.
+VAEWaste_FluClaws.deathMessage	{0} foi cortado até a morte.
+## DefInjected/HediffDef/Hediffs_Global_Misc.xml
+VAEWaste_Toxflu.stages.major.label	grave
+VAEWaste_Toxflu.stages.initial.label	inicial
+## DefInjected/ThingDef/Animal_Projectiles.xml
+VAEWaste_AcidBolt.label	cuspe ácido
+## DefInjected/ThingDef/Races_Hydra.xml
+VAEWaste_Hydra.tools.head.label	cabeça
+## DefInjected/ThingDef/Races_Megatardi.xml
+VAEWaste_Megatardi.tools.mandibles.label	mandíbulas
+VAEWaste_Megatardi.tools.head.label	cabeça
+## DefInjected/ThingDef/Races_Toxafox.xml
+VAEWaste_Toxafox.tools.left_claw.label	garra esquerda
+VAEWaste_Toxafox.tools.right_claw.label	garra direita
+VAEWaste_Toxafox.tools.head.label	cabeça
+## DefInjected/ThingDef/Races_Toxbear.xml
+VAEWaste_Toxbear.tools.left_claw.label	garra esquerda
+VAEWaste_Toxbear.tools.right_claw.label	garra direita
+VAEWaste_Toxbear.tools.head.label	cabeça
+## DefInjected/ThingDef/Races_Toxiguana.xml
+VAEWaste_Toxiguana.tools.head.label	cabeça
+VAEWaste_Toxiguana.verbs.acid_spit.label	cuspe ácido
+## DefInjected/ThingDef/Races_Toxlion.xml
+VAEWaste_Toxlion.tools.left_claw.label	garra esquerda
+VAEWaste_Toxlion.tools.right_claw.label	garra direita
+## DefInjected/ThingDef/Races_Toxscorpion.xml
+VAEWaste_Toxscorpion.tools.left_pincer.label	pinça esquerda
+VAEWaste_Toxscorpion.tools.right_pincer.label	pinça direita
+VAEWaste_Toxscorpion.tools.head.label	cabeça
+## DefInjected/ThingDef/Races_Wasteboar.xml
+VAEWaste_Wasteboar.tools.tusk-0.label	presa
+VAEWaste_Wasteboar.tools.tusk-1.label	presa
+VAEWaste_Wasteboar.tools.head.label	cabeça
+## DefInjected/ThingDef/Races_Wastedeer.xml
+VAEWaste_Wastedeer.tools.head.label	cabeça
+## DefInjected/ThingDef/Races_Wasteffalo.xml
+VAEWaste_Wasteffalo.tools.head.label	cabeça
+## DefInjected/ToolCapacityDef/ToolCapacity.xml
+VAEWaste_Sting.label	ferroada tóxica

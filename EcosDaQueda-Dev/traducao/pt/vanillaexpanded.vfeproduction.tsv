@@ -1,0 +1,43 @@
+## DefInjected/ResearchProjectDef/ResearchProjects_Various.xml
+VFE_Manufacturing.label	manufatura
+VFE_Manufacturing.description	Permite construir bancadas de manufatura e centros de trabalho eficientes.
+VFE_Manufacturing.generalRules.rulesStrings[0]	subject->o alvorecer da indústria
+VFE_Manufacturing.generalRules.rulesStrings[1]	subject_story->foi pioneiro em integrar máquinas complexas à produção em massa, anunciando uma nova era de eficiência
+VFE_Manufacturing.generalRules.rulesStrings[2]	subject_story->transformou matéria-prima em maravilhas utilitárias, impulsionando a expansão da civilização
+VFE_Manufacturing.generalRules.rulesStrings[3]	subject_story->criou linhas de montagem que viraram o coração da economia da comunidade
+VFE_Manufacturing.generalRules.rulesStrings[4]	subject_story->cultivou uma cultura de inovação, em que cada ferramenta e máquina é um passo rumo ao futuro
+VFE_Manufacturing.generalRules.rulesStrings[5]	subject_story->fundou os princípios da manufatura moderna, unindo artesanato e precisão tecnológica
+VFE_Manufacturing.generalRules.rulesStrings[6]	subject_gerund->abrindo caminho para uma sociedade autossuficiente com o poder da manufatura industrial
+## DefInjected/ThingDef/Buildings_Linkables.xml
+VFE_DrugCabinet.label	armário de drogas
+VFE_DrugCabinet.description	Aumenta a velocidade de trabalho quando colocado perto de um laboratório de drogas. Cada bancada se liga a até dois armários de drogas.
+VFE_MachiningCabinet.label	armário de usinagem
+VFE_MachiningCabinet.description	Aumenta a velocidade de trabalho quando colocado perto de uma mesa de usinagem. Cada bancada se liga a até dois armários de usinagem.
+VFE_SmithyCabinet.label	armário de ferraria
+VFE_SmithyCabinet.description	Aumenta a velocidade de trabalho quando colocado perto de uma ferraria. Cada bancada se liga a até dois armários de ferraria.
+VFE_KitchenSinkCabinet.label	gabinete de pia
+VFE_KitchenSinkCabinet.description	Aumenta a velocidade de trabalho quando colocado perto de um fogão.
+VFE_TailorCabinet.label	armário de alfaiataria
+VFE_TailorCabinet.description	Aumenta a velocidade de trabalho quando colocado perto de uma mesa de alfaiataria. Cada bancada se liga a até dois armários de alfaiataria.
+VFE_FabricationCabinet.label	armário de fabricação
+VFE_FabricationCabinet.description	Aumenta a velocidade de trabalho quando colocado perto de uma bancada de fabricação. Cada bancada se liga a até dois armários de fabricação.
+## DefInjected/ThingDef/Buildings_Manufacturing.xml
+VFE_TableMachiningLarge.label	mesa de usinagem grande
+VFE_TableMachiningLarge.description	Uma bancada com ferramentas avançadas e espaço de sobra para produzir maravilhas tecnológicas a partir de materiais simples em menos tempo. Consome energia.
+VFE_TableSmithyLarge.label	ferraria elétrica grande
+VFE_TableSmithyLarge.description	Um centro de trabalho elétrico para forjar armas e ferramentas não mecânicas. Consome muita energia.
+VFE_TableStoveLarge.label	fogão grande
+VFE_TableStoveLarge.description	Um fogão industrial grande, com vários fornos, para preparar refeições bem mais rápido.
+VFE_TableTailorLarge.label	mesa de alfaiataria grande
+VFE_TableTailorLarge.description	Uma bancada industrial grande, com várias ferramentas de estilista e uma máquina de costura para fazer roupas rapidamente. Funciona sem eletricidade a 33% da velocidade normal.
+## DefInjected/ThingDef/Buildings_Production.xml
+VFE_ComponentFabricationBench.label	bancada de montagem
+VFE_ComponentFabricationBench.description	Uma bancada com ferramentas avançadas para produzir componentes.
+VFE_TableButcherElectric.label	açougue elétrico
+VFE_TableButcherElectric.description	Uma mesa motorizada com serra giratória para carnear criaturas mortas mais rápido, em fatias precisas de carne crua. Consome muita energia.
+VFE_TableDrugLabElectric.label	laboratório de drogas elétrico
+VFE_TableDrugLabElectric.description	Uma bancada avançada com recipientes, aquecedores e instrumentos de medição para produzir drogas com mais eficiência. Consome muita energia.
+VFE_FueledSmelter.label	fundição a lenha
+VFE_FueledSmelter.description	Uma estação de fundição a lenha. Extrai metal aproveitável de pedaços de escória e outros itens de metal misturado.
+VFE_TableStonecutterElectric.label	mesa de cantaria elétrica
+VFE_TableStonecutterElectric.description	Uma mesa avançada com serras elétricas e suportes para cortar pedaços de pedra em blocos aproveitáveis mais rápido, numa linha de montagem. Consome muita energia.

@@ -1,0 +1,192 @@
+## DefInjected/AbilityDef/Abilities_Trainables.xml
+VEF_ControlledBlinking.label	piscar controlado
+VEF_ControlledBlinking.description	Substitui o piscar errático da criatura por um salto dirigido até um ponto escolhido dentro do alcance.
+VEF_ControlledDetonation.label	detonação controlada
+VEF_ControlledDetonation.description	Dispara de propósito uma poderosa explosão suicida, sacrificando o animal num ato final que libera todos os compostos voláteis guardados numa explosão devastadora.
+VEF_ControlledInvisibility.label	invisibilidade controlada
+VEF_ControlledInvisibility.description	Envolve o animal num véu de invisibilidade controlada: some de vista sem perder a atenção nem a precisão.
+## DefInjected/ApparelLayerDef/ApparelLayerDefs.xml
+VFEC_OuterShell.label	por cima
+## DefInjected/DamageDef/DamageDefs.xml
+VEF_SecondaryAcidBurn.label	queimadura de ácido
+VEF_PermanentBurn.label	queimadura permanente
+VEF_PermanentBurn.deathMessage	{0} morreu queimado.
+## DefInjected/HediffDef/Hediffs_Global_Misc.xml
+VEF_PermanentBurn.label	queimadura permanente
+VEF_PermanentBurn.description	Uma cicatriz de queimadura permanente que não tem tratamento.
+VEF_PermanentBurn.comps.HediffComp_GetsPermanent.permanentLabel	queimadura permanente
+VEF_PermanentBurn.injuryProps.destroyedLabel	Queimado por completo
+VEF_PermanentBurn.injuryProps.destroyedOutLabel	Queimado por completo
+VEF_PermanentBurn.labelNoun	uma queimadura permanente
+VEF_AcidBuildup.label	queimadura de ácido
+VEF_AcidBuildup.description	Um respingo de ácido que continua causando queimaduras por um bom tempo depois do ataque.
+VEF_AcidBuildup.stages.minor_receiving_burns.label	leve, sofrendo queimaduras
+VEF_AcidBuildup.stages.moderate_receiving_burns.label	moderada, sofrendo queimaduras
+VEF_AcidBuildup.stages.serious_receiving_burns.label	grave, sofrendo queimaduras
+VEF_AcidBurn.label	queimadura de ácido
+VEF_AcidBurn.description	Uma queimadura de ácido.
+VEF_AcidBurn.comps.HediffComp_GetsPermanent.permanentLabel	cicatriz de queimadura de ácido
+VEF_AcidBurn.labelNoun	uma queimadura de ácido
+VEF_LightSustenance.label	nível de luz do sol
+VEF_LightSustenance.description	Esta criatura se alimenta de luz do sol. Luz insuficiente vai matá-la.
+VEF_LightSustenance.stages.adequate_light.label	luz adequada
+VEF_LightSustenance.stages.poor_light_levels.label	pouca luz
+VEF_LightSustenance.stages.very_low_light_levels.label	luz muito fraca
+VEF_LightSustenance.stages.lack_of_sunlight.label	falta de luz do sol
+VEF_LightSustenance.stages.extreme_lack_of_sustenance.label	falta extrema de sustento
+VEF_ToxicBuildup.label	acúmulo tóxico
+VEF_ToxicBuildup.description	Toxinas no sangue. Podem vir de várias fontes, como toxinas do ambiente, mordidas venenosas ou armas envenenadas.\n\nEm doses altas, o acúmulo tóxico é letal. Mesmo em doses baixas, pode causar câncer.\n\nAo contrário do acúmulo tóxico do jogo base, criaturas que morrem com este dano tóxico podem ser comidas.
+VEF_Kamikaze.label	detonação súbita
+VEF_Kamikaze.description	Bum.
+VEF_Kamikaze.stages.initialhidden.label	inicial-oculto
+VEF_Kamikaze.stages.critical.label	crítico
+VEF_ControlledInvisibility.description	Envolto num véu de invisibilidade controlada.
+VEF_StillbornAnimal.label	natimorto
+VEF_StillbornAnimal.description	Este animal morreu por complicações inespecíficas na gestação.
+## DefInjected/IncidentDef/Incidents_Map_Threats.xml
+VSE_Reinforcements.label	reforços
+## DefInjected/JobDef/GeneralAbilityDefs.xml
+VFEA_UseAbilityUninterruptible.reportString	Fazendo algo.
+VFEA_UseAbility.reportString	Fazendo algo.
+VFEA_GotoTargetAndUseAbility.reportString	Fazendo algo.
+## DefInjected/JobDef/Jobs_AnimalBehaviours.xml
+VEF_AnimalResource.reportString	coletando recurso animal de TargetA.
+VEF_DestroyItem.reportString	destruindo um item.
+VEF_LayExplodingEgg.reportString	botando ovo.
+VEF_AutoNutrition.reportString	comendo.
+## DefInjected/JobDef/Jobs_CustomFire.xml
+VEF_BeatCustomFire.reportString	abafando o fogo.
+VEF_ExtinguishCustomFiresNearby.reportString	apagando incêndios por perto.
+VEF_ExtinguishCustomFireSelf.reportString	apagando o fogo do próprio corpo.
+## DefInjected/JobDef/Jobs_Misc.xml
+VFEC_EquipShield.reportString	equipando TargetA.
+VFEC_LeaveMap.reportString	indo embora.
+VEF_CustomizeItem.reportString	personalizando TargetA.
+KCSG_GoToPassage.reportString	entrando em TargetA.
+VEF_UseDoorTeleporter.reportString	usando TargetA para se teleportar até TargetB
+VFE_Loot.reportString	saqueando TargetA.
+VEF_ExtractFlower.reportString	extraindo uma flor.
+VEF_RemoveWeeds.reportString	tirando ervas daninhas.
+VEF_RefuelSecondary.reportString	recarregando TargetA com munição.
+## DefInjected/JobDef/Jobs_PipeSystem.xml
+PS_DrainFromMarkedStorage.reportString	esvaziando TargetA.
+PS_FillStorage.reportString	enchendo TargetA.
+PS_PickUpProcessor.reportString	retirando de TargetA.
+PS_BringToProcessor.reportString	levando TargetB até TargetA.
+## DefInjected/JobDef/Jobs_Reloading.xml
+BetterReload.reportString	recarregando TargetA.
+ReloadFromInventory.reportString	recarregando TargetA.
+Unload.reportString	descarregando TargetA.
+VEF_ReloadWeaponTrait.reportString	recarregando TargetA.
+## DefInjected/KeyBindingDef/Restart.xml
+VFE_Dev_Restart.label	reiniciar o jogo
+## DefInjected/MentalStateDef/MentalStates_Mood.xml
+VEF_XenophobicRage.label	fúria xenofóbica
+VEF_XenophobicRage.baseInspectLine	Estado mental: fúria xenofóbica
+VEF_XenophobicRage.beginLetter	{0} entrou numa fúria xenofóbica.\n\nDecidiu matar {1}.
+VEF_XenophobicRage.recoveryMessage	{0} não está mais em fúria xenofóbica.
+## DefInjected/ScenPartDef/ScenParts_Various.xml
+VFEC_ForcedFactionGoodwill.label	relações forçadas entre facções
+VFEC_PlayerPawnsArriveMethodEdge.label	modo de chegada das pessoas
+VFEC_AddStartingStructure.label	adicionar estrutura personalizada ao mapa inicial
+## DefInjected/SitePartDef/DefaultEnnemyPresence.xml
+KCSG_EnnemiesPresence.label	inimigos presentes
+KCSG_EnnemiesPresence.description	Há inimigos neste lugar.
+## DefInjected/StatCategoryDef/Stats_WeaponsAndApparel.xml
+VFE_EquippedStatFactors.label	Fatores quando equipado
+## DefInjected/StatDef/Stats_Buildings.xml
+VEF_EnergyShieldEnergyMaxBuilding.label	energia máxima do escudo
+VEF_EnergyShieldEnergyMaxBuilding.description	A energia máxima que o escudo pode ter. Mais energia permite absorver mais dano.
+VEF_EnergyShieldEnergyMaxBuilding.formatString	{0}00
+VEF_EnergyShieldRechargeRateBuilding.label	recarga do escudo
+VEF_EnergyShieldRechargeRateBuilding.description	A velocidade com que o escudo recupera energia por segundo, enquanto não estiver rompido.
+VEF_EnergyShieldRechargeRateBuilding.formatString	{0}/s
+VEF_EnergyShieldRadiusBuilding.label	raio do escudo
+VEF_EnergyShieldRadiusBuilding.description	O raio de proteção do escudo de energia.
+VEF_EnergyShieldRadiusBuilding.formatString	{0} c
+VEF_BuildingLearningRateOffset.label	velocidade de aprendizado
+VEF_BuildingLearningRateOffset.description	Multiplica a velocidade com que as crianças aprendem nas aulas com a ajuda disto.
+VEF_BuildingBreakdownFactor.label	fator de quebra
+VEF_BuildingBreakdownFactor.description	Multiplica a frequência com que este prédio quebra.
+VEF_BuildingMaxOverclockFactor.label	fator máximo de sobrecarga
+VEF_BuildingMaxOverclockFactor.description	Multiplica a sobrecarga máxima possível de uma fábrica.
+VEF_FactoryHeatPerSecondFactor.label	fator de calor por segundo
+VEF_FactoryHeatPerSecondFactor.description	Multiplica o calor por segundo produzido por uma fábrica.
+## DefInjected/StatDef/Stats_Pawns.xml
+VEF_VerbRangeFactor.label	fator de alcance da arma
+VEF_VerbRangeFactor.description	O alcance das armas é multiplicado por este valor.
+VEF_VerbRangeFactor.labelForFullStatList	fator de alcance da arma (pessoas)
+VEF_EnergyShieldEnergyMaxOffset.label	Bônus de energia máxima do escudo
+VEF_EnergyShieldEnergyMaxOffset.description	Bônus na energia máxima do escudo que o usuário pode aumentar de vários jeitos.
+VEF_EnergyShieldEnergyMaxFactor.label	Fator de energia máxima do escudo
+VEF_EnergyShieldEnergyMaxFactor.description	Fator da energia máxima do escudo que o usuário pode aumentar de vários jeitos.
+VEF_MeleeAttackDamageFactor.label	fator de dano corpo a corpo
+VEF_MeleeAttackDamageFactor.description	Multiplica o dano dos ataques corpo a corpo.
+VEF_RangeAttackDamageFactor.label	fator de dano à distância
+VEF_RangeAttackDamageFactor.description	Multiplica o dano dos ataques à distância.
+VEF_FoodCapacityMultiplier.label	multiplicador da capacidade de comida
+VEF_FoodCapacityMultiplier.description	Aumenta o tamanho da barra de fome. Não afeta a fome em si
+VEF_GrowthPointMultiplier.label	multiplicador de pontos de crescimento
+VEF_GrowthPointMultiplier.description	Aumenta os pontos de crescimento que as crianças acumulam ao aprender
+VEF_BodySize_Offset.label	bônus de tamanho corporal
+VEF_BodySize_Offset.description	Aumenta o tamanho em relação ao tamanho atual
+VEF_BodySize_Multiplier.label	multiplicador de tamanho corporal
+VEF_BodySize_Multiplier.description	Multiplica o tamanho atual
+VEF_CosmeticBodySize_Offset.label	bônus de tamanho corporal (visual)
+VEF_CosmeticBodySize_Offset.description	Aumenta o tamanho em relação ao tamanho atual
+VEF_CosmeticBodySize_Multiplier.label	multiplicador de tamanho corporal (visual)
+VEF_CosmeticBodySize_Multiplier.description	Multiplica o tamanho atual
+VEF_HeadSize_Cosmetic.label	multiplicador de tamanho da cabeça
+VEF_PawnRenderPosOffset.label	deslocamento do desenho
+VEF_PawnRenderPosOffset.description	Muda a posição em que a pessoa é desenhada no eixo y.
+VEF_MassCarryCapacity.label	Capacidade de carga
+VEF_MassCarryCapacity.description	Massa total que a pessoa consegue carregar em caravanas.
+VEF_MTBLovinFactor.label	Fator de tempo médio entre namoros
+VEF_MTBLovinFactor.description	Fator do tempo médio entre as vezes que esta pessoa procura um namoro.
+VEF_PositiveThoughtDurationFactor.label	fator de duração dos pensamentos positivos
+VEF_PositiveThoughtDurationFactor.description	A duração dos pensamentos positivos é multiplicada por este valor.
+VEF_NeutralThoughtDurationFactor.label	fator de duração dos pensamentos neutros
+VEF_NeutralThoughtDurationFactor.description	A duração dos pensamentos neutros é multiplicada por este valor.
+VEF_NegativeThoughtDurationFactor.label	fator de duração dos pensamentos negativos
+VEF_NegativeThoughtDurationFactor.description	A duração dos pensamentos negativos é multiplicada por este valor.
+VEF_RangedDodgeChance.label	chance de esquiva à distância
+VEF_RangedDodgeChance.description	Chance de desviar de um ataque à distância que acertaria, ou (se negativa) de ser atingido por um ataque à distância que era para outro alvo.
+VEF_HeatstrokeBuildupMultiplier.label	Multiplicador de insolação
+VEF_HeatstrokeBuildupMultiplier.description	Fator da velocidade com que a insolação aumenta.
+VEF_AnimalProductYieldFactor.label	fator de rendimento de produtos animais
+VEF_AnimalProductYieldFactor.description	Multiplica a quantidade de produtos animais especiais que este animal produz.
+VEF_AnimalProductIntervalFactor.label	fator de intervalo de produtos animais
+VEF_AnimalProductIntervalFactor.description	Multiplica o intervalo que este animal precisa para produzir produtos animais especiais.
+VRE_HealthFromGenesScale.label	multiplicador de saúde base
+VRE_HealthFromGenesScale.description	Multiplicador de saúde base deste animal por causa dos genes.
+## DefInjected/StatDef/Stats_WeaponsAndApparel.xml
+VEF_RangedCooldownFactor.label	fator de recarga à distância
+VEF_RangedCooldownFactor.description	O tempo de recarga das armas à distância de quem veste é multiplicado por este valor.
+VEF_EnergyShieldRadiusApparel.label	raio do escudo
+VEF_EnergyShieldRadiusApparel.description	A área coberta quando o escudo de energia está ativo.
+VEF_EnergyShieldRadiusApparel.formatString	{0} c
+VEF_MeleeWeaponRange.label	alcance da arma corpo a corpo
+VEF_MeleeWeaponRange.description	O alcance desta arma corpo a corpo.
+VEF_GaussProjectileDamageModifier.label	modificador de dano perfurante
+VEF_GaussProjectileDamageModifier.description	Quanto o dano muda (em porcentagem do dano base) para cada alvo atingido antes.
+## DefInjected/ThingCategoryDef/ThingCategories.xml
+VFEC_Shields.label	escudos
+## DefInjected/ThingDef/Buildings_Misc.xml
+VEF_OutpostDeliverySpot.label	ponto de entrega dos postos avançados
+VEF_OutpostDeliverySpot.description	Marca um ponto onde os itens dos postos avançados são entregues.
+## DefInjected/ThingDef/ConduitDef.xml
+KCSG_PowerConduit.label	conduíte de energia
+KCSG_PowerConduit.description	Um feixe enterrado de cabos elétricos para levar energia de um lado a outro.
+## DefInjected/ThingDef/Items_Unfinished.xml
+VPEF_MinifiedFlower.label	flor embalada
+## DefInjected/TrainableDef/Trainables.xml
+VEF_ControlledBlinking.label	piscar controlado
+VEF_ControlledBlinking.description	Substitui o piscar errático da criatura por um salto dirigido até um ponto escolhido dentro do alcance.
+VEF_CycleSeverance.label	corte do ciclo
+VEF_CycleSeverance.description	Suprime o ciclo reprodutivo natural, impedindo a liberação de filhotes e anulando por completo a reprodução assexuada da criatura.
+VEF_ControlledDetonation.label	detonação controlada
+VEF_ControlledDetonation.description	O animal pode disparar de propósito uma poderosa explosão suicida, sacrificando-se num ato final que libera todos os compostos voláteis guardados numa explosão devastadora.
+VEF_ControlledInvisibility.label	invisibilidade controlada
+VEF_ControlledInvisibility.description	O animal pode se envolver num véu de invisibilidade controlada: some de vista sem perder a atenção nem a precisão.
+VEF_Beastmastery.label	domínio das feras
+VEF_Beastmastery.description	Treine e sintonize este animal com a sua vontade, ganhando controle direto dos movimentos e ações dele por um forte vínculo de domínio e confiança.

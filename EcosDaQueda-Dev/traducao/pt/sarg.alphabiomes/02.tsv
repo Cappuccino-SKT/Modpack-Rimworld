@@ -1,0 +1,220 @@
+## DefInjected/RulePackDef/RulePacks_Namers_Landmarks.xml
+AB_NamerLandmark_TarLakes.rulePack.rulesStrings[0]	terrain_word(p=4)->lagos de piche
+AB_NamerLandmark_TarLakes.rulePack.rulesStrings[1]	terrain_word->poços de asfalto
+AB_NamerLandmark_TarLakes.rulePack.rulesStrings[2]	terrain_word->poças de betume
+AB_NamerLandmark_TarLakes.rulePack.rulesStrings[3]	terrain_word->charcos de breu
+AB_NamerLandmark_PropaneLakes.rulePack.rulesStrings[0]	terrain_word(p=4)->lagos de propano
+AB_NamerLandmark_PropaneLakes.rulePack.rulesStrings[1]	terrain_word->lagoas de propano
+AB_NamerLandmark_PropaneLakes.rulePack.rulesStrings[2]	terrain_word->poças de propano
+AB_NamerLandmark_PropaneLakes.rulePack.rulesStrings[3]	terrain_word->bacias de propano
+AB_NamerLandmark_MagmaticQuagmire.rulePack.rulesStrings[0]	terrain_word(p=4)->lamaçal magmático
+AB_NamerLandmark_MagmaticQuagmire.rulePack.rulesStrings[1]	terrain_word->sumidouros de magma
+AB_NamerLandmark_MagmaticQuagmire.rulePack.rulesStrings[2]	terrain_word->pirobrejo
+AB_NamerLandmark_MagmaticQuagmire.rulePack.rulesStrings[3]	terrain_word->atoleiro de lava
+AB_NamerLandmark_QuicksandPits.rulePack.rulesStrings[0]	terrain_word(p=4)->poços de areia movediça
+AB_NamerLandmark_QuicksandPits.rulePack.rulesStrings[1]	terrain_word->areias que engolem
+AB_NamerLandmark_QuicksandPits.rulePack.rulesStrings[2]	terrain_word->bolsões de terra fofa
+AB_NamerLandmark_QuicksandPits.rulePack.rulesStrings[3]	terrain_word->chão instável
+AB_NamerLandmark_MutagenicSprings.rulePack.rulesStrings[0]	r_name(p=0.2)->fontes nocivas de [NamePerson]
+AB_NamerLandmark_MutagenicSprings.rulePack.rulesStrings[1]	terrain_word(p=2)->fonte mutagênica
+AB_NamerLandmark_MutagenicSprings.rulePack.rulesStrings[2]	terrain_word(p=2)->fontes oculares
+AB_NamerLandmark_MutagenicSprings.rulePack.rulesStrings[3]	terrain_word->fonte ocular
+AB_NamerLandmark_HealingSprings.rulePack.rulesStrings[0]	r_name(p=0.2)->fontes curativas de [NamePerson]
+AB_NamerLandmark_HealingSprings.rulePack.rulesStrings[1]	terrain_word(p=2)->fonte curativa
+AB_NamerLandmark_HealingSprings.rulePack.rulesStrings[2]	terrain_word(p=2)->fontes curativas
+AB_NamerLandmark_SweetForest.rulePack.rulesStrings[0]	terrain_word(p=2)->floresta doce
+AB_NamerLandmark_SweetForest.rulePack.rulesStrings[1]	terrain_word->prados de creme
+AB_NamerLandmark_SweetForest.rulePack.rulesStrings[2]	terrain_word->planícies de morango
+AB_NamerLandmark_SweetForest.rulePack.rulesStrings[3]	terrain_word->campos de chocolate
+AB_NamerLandmark_SweetForest.rulePack.rulesStrings[4]	terrain_word->pomares de doce
+AB_NamerLandmark_AnimaDesert.rulePack.rulesStrings[0]	r_name(p=0.2)->[terrain_word] de [NamePerson]
+AB_NamerLandmark_AnimaDesert.rulePack.rulesStrings[1]	terrain_word(p=3)->deserto de anima
+AB_NamerLandmark_AnimaDesert.rulePack.rulesStrings[2]	terrain_word(p=2)->areias de anima
+AB_NamerLandmark_OcularDesert.rulePack.rulesStrings[0]	r_name(p=0.2)->[terrain_word] de [NamePerson]
+AB_NamerLandmark_OcularDesert.rulePack.rulesStrings[1]	terrain_word(p=3)->deserto ocular
+AB_NamerLandmark_OcularDesert.rulePack.rulesStrings[2]	terrain_word(p=2)->areias oculares
+AB_NamerLandmark_DryMeadows.rulePack.rulesStrings[0]	r_name->prados secos de [NamePerson]
+AB_NamerLandmark_ToxicMeadows.rulePack.rulesStrings[0]	r_name->prados tóxicos de [NamePerson]
+AB_NamerLandmark_WillowForest.rulePack.rulesStrings[0]	terrain_word(p=4)->floresta de salgueiros
+AB_NamerLandmark_WillowForest.rulePack.rulesStrings[1]	terrain_word->bosque chorão
+AB_NamerLandmark_WillowForest.rulePack.rulesStrings[2]	terrain_word->arvoredo de salgueiros
+AB_NamerLandmark_WillowForest.rulePack.rulesStrings[3]	terrain_word->mata de amentilhos
+AB_NamerLandmark_CloverForest.rulePack.rulesStrings[0]	terrain_word(p=4)->floresta de trevos
+AB_NamerLandmark_CloverForest.rulePack.rulesStrings[1]	terrain_word->mata de trevos
+AB_NamerLandmark_CloverForest.rulePack.rulesStrings[2]	terrain_word->bosque de trevos
+AB_NamerLandmark_CloverForest.rulePack.rulesStrings[3]	terrain_word->matagal de folha verde
+AB_NamerLandmark_GinkgoForest.rulePack.rulesStrings[0]	terrain_word(p=4)->floresta de ginkgos
+AB_NamerLandmark_GinkgoForest.rulePack.rulesStrings[1]	terrain_word->mata de ginkgos
+AB_NamerLandmark_GinkgoForest.rulePack.rulesStrings[2]	terrain_word->bosque de avencas
+AB_NamerLandmark_GinkgoForest.rulePack.rulesStrings[3]	terrain_word->ginkgos dourados
+AB_NamerLandmark_MauvebloomFields.rulePack.rulesStrings[0]	terrain_word(p=4)->campos de malvaflor
+AB_NamerLandmark_MauvebloomFields.rulePack.rulesStrings[1]	terrain_word->prados roxos
+AB_NamerLandmark_MauvebloomFields.rulePack.rulesStrings[2]	terrain_word->planícies malva
+AB_NamerLandmark_MauvebloomFields.rulePack.rulesStrings[3]	terrain_word->terras de flor violeta
+AB_NamerLandmark_GauranlenGrove.rulePack.rulesStrings[0]	terrain_word->bosque de gauranlen
+AB_NamerLandmark_WarpedStoneForest.rulePack.rulesStrings[0]	terrain_word->bosque de pedra retorcida
+AB_NamerLandmark_WarpedStoneForest.rulePack.rulesStrings[1]	terrain_word->vastidão de pilares retorcidos
+AB_NamerLandmark_WarpedStoneForest.rulePack.rulesStrings[2]	terrain_word->campo rochoso retorcido
+AB_NamerLandmark_WarpedStoneForest.rulePack.rulesStrings[3]	terrain_word->monólitos retorcidos e partidos
+AB_NamerLandmark_WarpedStoneForest.rulePack.rulesStrings[4]	terrain_word->matagal de pedra retorcida
+VEE_NamerLandmark_ObsidianExpanse.rulePack.rulesStrings[0]	terrain_word->vastidão de obsidiana
+VEE_NamerLandmark_CalcifiedRemnants.rulePack.rulesStrings[0]	terrain_word->restos calcificados
+AB_NamerLandmark_LivingCrystalBed.rulePack.rulesStrings[0]	terrain_word->jardim de cristal vivo
+AB_NamerLandmark_LivingCrystalBed.rulePack.rulesStrings[1]	terrain_word->campo de cristal pulsante
+AB_NamerLandmark_LivingCrystalBed.rulePack.rulesStrings[2]	terrain_word->leito de cristal de alcionita
+AB_NamerLandmark_LivingCrystalBed.rulePack.rulesStrings[3]	terrain_word->bosque de cristal que respira
+AB_NamerLandmark_LivingCrystalBed.rulePack.rulesStrings[4]	terrain_word->vastidão de cristal vivo
+AB_NamerLandmark_LivingCrystalBed.rulePack.rulesStrings[5]	terrain_word->formação cristalina
+AB_NamerLandmark_LivingCrystalBed.rulePack.rulesStrings[6]	terrain_word->jardim de alcionita
+AB_NamerLandmark_FleshMorass.rulePack.rulesStrings[0]	terrain_word->atoleiro de carne
+AB_NamerLandmark_FleshMorass.rulePack.rulesStrings[1]	terrain_word->brejo carnudo
+AB_NamerLandmark_FleshMorass.rulePack.rulesStrings[2]	terrain_word->lamaçal de carne
+AB_NamerLandmark_FleshMorass.rulePack.rulesStrings[3]	terrain_word->charco de carne
+AB_NamerLandmark_CorruptedIntrusion.rulePack.rulesStrings[0]	terrain_word->intrusão corrompida
+AB_NamerLandmark_GnawingSands.rulePack.rulesStrings[0]	terrain_word->areias roedoras
+## DefInjected/StuffCategoryDef/StuffCategories.xml
+AB_Exotic.label	exótico
+AB_ExoticWooden.label	madeiras exóticas
+AB_ExoticMetals.label	metais exóticos
+## DefInjected/TaleDef/Tales_Incident.xml
+AB_AcidRainTale.label	chuva ácida
+AB_AcidRainTale.rulePack.rulesStrings[0]	tale_noun->chuva ácida caindo sobre [Community] de [PAWN_nameDef]
+AB_AcidRainTale.rulePack.rulesStrings[1]	tale_noun->nuvens de cheiro acre despejando água ácida perto de [Community] de [PAWN_nameDef]
+AB_AcidRainTale.rulePack.rulesStrings[2]	image->um céu agourento, [circumstance_group]
+AB_AcidRainTale.rulePack.rulesStrings[3]	image->o ar com cheiro acre e [circumstance_group]
+AB_AcidRainTale.rulePack.rulesStrings[4]	image->o chão chiando de leve e [circumstance_group]
+AB_AcidRainTale.rulePack.rulesStrings[5]	image->campos de plantas mortas, com as folhas queimadas, [circumstance_group]
+AB_AcidRainTale.rulePack.rulesStrings[6]	image->[Quantity_adjphrase] túmulos [circumstance_group]
+AB_AcidRainTale.rulePack.rulesStrings[7]	circumstance_phrase->sem vida nenhuma à vista
+AB_AcidRainTale.rulePack.rulesStrings[8]	circumstance_phrase->cobertos por uma película de água ácida
+AB_AcidRainTale.rulePack.rulesStrings[9]	circumstance_phrase->dispostos num padrão que lembra ossos corroídos
+AB_AcidRainTale.rulePack.rulesStrings[10]	circumstance_phrase->esperando a chuva ácida parar
+AB_AcidRainTale.rulePack.rulesStrings[11]	desc_sentence->[PAWN_nameDef] jaz no chão, o corpo meio derretido torcido num ângulo estranho.
+AB_AcidRainTale.rulePack.rulesStrings[12]	desc_sentence->[PAWN_nameDef] se esconde perto de [TerrainFeature], olhando para fora com uma expressão [AdjectiveAngsty].
+AB_AcidRainTale.rulePack.rulesStrings[13]	desc_sentence->[PAWN_nameDef] observa em choque, com os olhos parcialmente derretidos.
+AB_AcidRainTale.rulePack.rulesStrings[14]	desc_sentence->[PAWN_nameDef] descansa em silêncio, com uma camada de suor no rosto.
+AB_AcidRainTale.rulePack.rulesStrings[15]	desc_sentence->[Quantity_adjphrase] [Animal]s mortos deitados no chão, com a carne queimada pelo ácido.
+AB_AcidRainTale.rulePack.rulesStrings[16]	desc_sentence->[Quantity_adjphrase] [Animal]s morrendo deitados no chão, com a carne dissolvida pelo ácido.
+AB_AcidRainTale.rulePack.rulesStrings[17]	desc_sentence->[Quantity_adjphrase] [Animal]s andam sem rumo, desorientados pela dor das queimaduras ácidas.
+## DefInjected/TerrainAffordanceDef/TerrainAffordances.xml
+AB_CompactedSand.label	areia fina
+## DefInjected/TerrainDef/TerrainDefs_Royalty.xml
+AB_FinestoneRoseQuartz.label	ladrilho fino de quartzo rosa
+AB_FinestoneRoseQuartz.description	Ladrilhos de pedra primorosos, feitos sem economia, para ostentar status econômico. Demoram para construir.
+AB_FinestoneMudstone.label	ladrilho fino de argilito
+AB_FinestoneMudstone.description	Ladrilhos de pedra primorosos, feitos sem economia, para ostentar status econômico. Demoram para construir.
+AB_FinestoneCragstone.label	ladrilho fino de pedra-penhasco
+AB_FinestoneCragstone.description	Ladrilhos de pedra primorosos, feitos sem economia, para ostentar status econômico. Demoram para construir.
+AB_FinestoneObsidian.label	ladrilho fino de vidro-ônix
+AB_FinestoneObsidian.description	Ladrilhos de pedra primorosos, feitos sem economia, para ostentar status econômico. Demoram para construir.
+## DefInjected/TerrainDef/Terrain_FeraliskInfestedJungle.xml
+AB_DenseMud.label	lama densa
+AB_DenseMud.tools.mud.label	lama
+AB_DenseGrass.label	grama densa
+AB_WebbedMarshyTerrain.label	solo pantanoso coberto de teia
+AB_WebbedMarshyTerrain.tools.mud.label	lama
+## DefInjected/TerrainDef/Terrain_Floors_StoneTileAndWood.xml
+AB_TileRoseQuartz.label	ladrilho de quartzo rosa
+AB_TileRoseQuartz.description	Ladrilhos de pedra cortados e encaixados com cuidado, para um ar de castelo. São bonitos, mas demoram para assentar.
+AB_TileMudstone.label	ladrilho de argilito
+AB_TileMudstone.description	Ladrilhos de pedra cortados e encaixados com cuidado, para um ar de castelo. São bonitos, mas demoram para assentar.
+AB_TileCragstone.label	ladrilho de pedra-penhasco
+AB_TileCragstone.description	Ladrilhos de pedra cortados e encaixados com cuidado, para um ar de castelo. São bonitos, mas demoram para assentar.
+AB_TileObsidian.label	ladrilho de vidro-ônix
+AB_TileObsidian.description	Ladrilhos de pedra cortados e encaixados com cuidado, para um ar de castelo. São bonitos, mas demoram para assentar.
+AB_FlagstoneRoseQuartz.label	laje de quartzo rosa
+AB_FlagstoneRoseQuartz.description	Ladrilhos de pedra de corte grosseiro. Não são bonitos, mas são boas superfícies para estradas e caminhos ao ar livre. Desconstruir lajes não devolve recursos.
+AB_FlagstoneMudstone.label	laje de argilito
+AB_FlagstoneMudstone.description	Ladrilhos de pedra de corte grosseiro. Não são bonitos, mas são boas superfícies para estradas e caminhos ao ar livre. Desconstruir lajes não devolve recursos.
+AB_FlagstoneCragstone.label	laje de pedra-penhasco
+AB_FlagstoneCragstone.description	Ladrilhos de pedra de corte grosseiro. Não são bonitos, mas são boas superfícies para estradas e caminhos ao ar livre. Desconstruir lajes não devolve recursos.
+AB_FlagstoneObsidian.label	laje de vidro-ônix
+AB_FlagstoneObsidian.description	Ladrilhos de pedra de corte grosseiro. Não são bonitos, mas são boas superfícies para estradas e caminhos ao ar livre. Desconstruir lajes não devolve recursos.
+AB_AlienWoodFloors_MushroomStalks.label	tábuas de talo de cogumelo
+AB_AlienWoodFloors_MushroomStalks.description	Um piso pseudo-madeira que usa talos de cogumelo como tábuas.
+AB_AlienWoodFloors_RedWood.label	tábuas de madeira vermelha
+AB_AlienWoodFloors_RedWood.description	Um piso de madeira vermelha feito com a madeira exótica da floresta ocular.
+AB_AlienWoodFloors_CrystalWood.label	tábuas de madeira cristalina
+AB_AlienWoodFloors_CrystalWood.description	Um piso pseudo-madeira que usa o material de árvores cristalinas como tábuas.
+AB_AsphaltFloor.label	estrada de asfalto
+AB_AsphaltFloor.description	Uma superfície dura feita de asfalto.
+## DefInjected/TerrainDef/Terrain_ForsakenCrags.xml
+AB_ForsakenSand.label	areia abandonada
+AB_FineForsakenSand.label	areia abandonada fina
+AB_FineForsakenSand.tools.sand.label	areia
+AB_ForsakenRock.label	rochas abandonadas
+AB_ForsakenRock.tools.gravel.label	cascalho
+AB_DarkMud.label	lama abandonada
+AB_DarkMud.tools.mud.label	lama
+AB_DarkGravel.label	solo pedregoso escuro
+AB_DarkGravel.tools.gravel.label	cascalho
+## DefInjected/TerrainDef/Terrain_GallatrossGraveyard.xml
+AB_CrackedMud.label	lama rachada fértil
+AB_CrackedMud.tools.mud.label	lama
+AB_RichCrackedMud.label	lama rachada fértil e rica
+AB_RichCrackedMud.tools.mud.label	lama
+AB_FineSand.label	areia fina
+AB_FineSand.tools.sand.label	areia
+AB_CompactedSand.label	areia compactada
+AB_CompactedSand.description	Pulverizando argilito com muito esforço e misturando com água, os colonos transformam areia fina numa superfície de areia compactada, capaz de sustentar algumas construções.
+AB_CompactedSand.tools.sand.label	areia
+## DefInjected/TerrainDef/Terrain_GelatinousSuperorganism.xml
+AB_Slime.label	chão de gosma endurecida
+AB_RichSlime.label	chão rico de gosma endurecida
+AB_SlimeGrass.label	grama de gosma
+AB_SlimyMud.label	lama gosmenta
+AB_SlimyMud.tools.slime.label	gosma
+AB_LiquidSlime.label	gosma líquida rasa
+## DefInjected/TerrainDef/Terrain_IdyllicMeadows.xml
+AB_GrassyFlowerySoil.label	solo florido
+AB_FertileGrassyFlowerySoil.label	solo florido fértil
+AB_FertileGrassyFlowerySoil_Oversaturated.label	solo florido encharcado
+## DefInjected/TerrainDef/Terrain_MechanoidIntrusion.xml
+GU_MetalFloor1.label	piso de polímero
+GU_MetalFloor2.label	piso metálico
+GU_MetalFloor3.label	piso metálico sem emendas
+AB_SoilOnCrackedMetal.label	solo sobre metal rachado
+GU_Piping.label	canos metálicos expostos
+## DefInjected/TerrainDef/Terrain_MiasmicMangrove.xml
+AB_FertileMud.label	lama fértil
+AB_FertileMud.tools.mud.label	lama
+AB_FertileMarsh.label	brejo fértil
+AB_FertileMarsh.tools.mud.label	lama
+## DefInjected/TerrainDef/Terrain_Misc_Odyssey.xml
+AB_BrokenPoolTiles.label	azulejos de piscina quebrados
+AB_HealingSpringwater.label	água de fonte curativa
+AB_MutagenicOcularWater.label	água ocular mutagênica
+AB_MutagenicOcularWaterFlood.label	água de enchente rasa
+AB_Quicksand.label	areia movediça
+AB_ChocolateSoil.label	solo de chocolate
+AB_ChocolateSoilRich.label	solo rico de chocolate
+AB_Strawberry.label	morango
+AB_Strawberry.tools.strawberry.label	morango
+AB_Cream.label	chantili
+AB_Cream.tools.whipped_cream.label	chantili
+AB_CandySand.label	areia de biscoito
+AB_CandySand.tools.cookie_sand.label	areia de biscoito
+AB_HardenedChocolate.label	chocolate endurecido
+AB_DryFlowerySoil.label	solo florido seco
+AB_ToxicFlowerySoil.label	solo florido tóxico
+AB_ToxicFertileGrassyFlowerySoil.label	solo florido fértil tóxico
+AB_CeruleanSoil.label	solo cerúleo
+AB_CeruleanSoilRich.label	solo cerúleo rico
+AB_GauranlenSoil.label	solo de gauranlen
+AB_GauranlenSoilRich.label	solo de gauranlen rico
+AB_Calcified.label	solo calcificado
+AB_Calcified.tools.gravel.label	cascalho
+AB_Crystallized.label	solo parcialmente cristalizado
+AB_Crystallized.tools.gravel.label	cascalho
+AB_OdysseyFlesh.label	carne
+AB_OdysseyFlesh.description	Uma camada densa de carne orgânica, solta sobre o chão.
+AB_CorruptedIntrusion.label	intrusão corrompida
+## DefInjected/TerrainDef/Terrain_MycoticJungle.xml
+AB_MycoticSoil.label	solo micótico
+AB_MycoticSoilRich.label	solo micótico rico
+AB_MycoticGrass.label	grama micótica
+## DefInjected/TerrainDef/Terrain_OcularForest.xml
+GU_AlienSand.label	chão avermelhado
+GU_RichAlienSand.label	chão avermelhado rico
+GU_AlienSandFine.label	areia vermelha fina
+GU_RedWaterShallow.label	água vermelha rasa

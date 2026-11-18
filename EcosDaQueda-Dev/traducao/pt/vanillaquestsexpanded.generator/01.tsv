@@ -1,0 +1,170 @@
+## DefInjected/AbilityDef/Abilities.xml
+VQE_CraftAnARCComponent.label	Fabricar um componente ARC
+VQE_CraftAnARCComponent.description	Tenta transformar um componente avançado num componente ARC. A chance é a mesma de virar um componente ARC ou um componente industrial.
+## DefInjected/BackstoryDef/Genetron_Backstories_Shuffled.xml
+VQE_AncientEngineer01.description	[PAWN_nameDef] fez parte de uma equipe que tentava fazer engenharia reversa de antigos componentes ARC. Os mistérios dos projetos intrincados da máquina o fascinavam. Boa parte da tecnologia era incompreensível, mas conseguiu adaptar algumas peças críticas para uso moderno.
+VQE_AncientEngineer01.title	engenheiro de tecnologia antiga
+VQE_AncientEngineer01.titleShort	engenheiro
+VQE_PowerArchitect02.description	[PAWN_nameDef] se especializou em otimizar o fluxo de energia dos sistemas ARC. Calibrando com cuidado as barras de combustível, conseguiu estender muito o tempo de operação do reator. Mesmo sem entender por completo os mecanismos antigos, os ajustes de [PAWN_nameDef] viraram o padrão da indústria.
+VQE_PowerArchitect02.title	arquiteto de energia
+VQE_PowerArchitect02.titleShort	arquiteto
+VQE_ControlSystemsEngineer03.description	[PAWN_nameDef] foi encarregado de modernizar os sistemas de controle dos reatores ARC. Integrou novos protocolos de segurança, mas muitas funções centrais continuaram uma caixa-preta. Mesmo assim, aumentou a eficiência adaptando os algoritmos antigos.
+VQE_ControlSystemsEngineer03.title	engenheiro de sistemas de controle
+VQE_ControlSystemsEngineer03.titleShort	controlador
+VQE_FieldRepairTech04.description	[PAWN_nameDef] passou anos consertando unidades ARC danificadas em colônias remotas. Sem as plantas originais, virou mestre em gambiarras. Era um trabalho perigoso, mas sempre levava alguns componentes ARC de reserva, só por garantia.
+VQE_FieldRepairTech04.title	técnico de reparo de campo
+VQE_FieldRepairTech04.titleShort	técnico
+VQE_SafetyInspector05.description	Como inspetor de segurança, [PAWN_nameDef] viajava entre colônias verificando os reatores ARC. Só podia especular sobre o funcionamento dos sistemas centrais, mas sabia identificar falhas em potencial e sugerir manutenções que estendiam a vida dos reatores. Assinou muitos laudos de "aparentemente seguro".
+VQE_SafetyInspector05.title	inspetor de segurança ARC
+VQE_SafetyInspector05.titleShort	inspetor
+## DefInjected/BackstoryDef/Solid_Rare.xml
+VQE_ChildhoodInventorGenetron.description	Quando criança, [PAWN_nameDef] nunca se contentava com brinquedos ou diversões simples. Gostava mesmo era de desmontar máquinas velhas e sucata do ferro-velho da colônia. Enquanto as outras crianças brincavam, [PAWN_nameDef] estava com os braços enfiados num gerador quebrado ou num drone minerador morto, tentando entender o que o fazia funcionar. Os adultos viam isso como um incômodo, ainda mais quando "pegava emprestado" equipamento essencial para experimentos. Mas quem olhava de perto via uma faísca de gênio.
+VQE_ChildhoodInventorGenetron.title	funileiro curioso
+VQE_ChildhoodInventorGenetron.titleShort	funileiro
+VQE_InventorGenetronAdulthood.description	[PAWN_nameDef] virou lenda entre engenheiros como inventor do ARC, um gerador de energia revolucionário que mudou o destino de colônias inteiras. Movido pelo desejo incansável de acabar com a falta de energia que aleijava a orla, forçou os limites da experimentação segura. Os primeiros protótipos foram apressados e causaram acidentes trágicos que custaram muitas vidas. Essas falhas pesaram muito, mas alimentaram a sua determinação. Depois de inúmeras tentativas, [PAWN_nameDef] finalmente conseguiu, e ficou para a história como herói para uns e maluco imprudente para outros.
+VQE_InventorGenetronAdulthood.title	inventor do ARC
+VQE_InventorGenetronAdulthood.titleShort	inventor
+## DefInjected/GameConditionDef/Quest4.xml
+VQE_UnnaturalColdSnap.label	onda de frio
+VQE_UnnaturalColdSnap.description	Uma onda de frio antinatural está congelando a região.
+## DefInjected/HediffDef/Hediffs_Conditions.xml
+VQE_StudiedAncientGenetron.label	estudou o ARC antigo
+VQE_StudiedAncientGenetron.description	Este colono estudou o ARC antigo. Isso permite construir, melhorar e manter um ARC na colônia.
+VQE_StudiedAncientGeothermalGenetron.label	estudou o ARC geotérmico antigo
+VQE_StudiedAncientGeothermalGenetron.description	Este colono estudou o ARC geotérmico antigo. Isso permite construir, melhorar e manter um ARC geotérmico na colônia.
+VQE_StudiedAncientNuclearGenetron.label	estudou a carcaça de ARC nuclear
+VQE_StudiedAncientNuclearGenetron.description	Este colono estudou uma carcaça de ARC nuclear. Isso permite construir, melhorar e manter um ARC nuclear na colônia.
+VQE_TraitorousInventor.label	inventor traidor
+VQE_TraitorousInventor.description	Inventor traidor. Este efeito não deveria aparecer para o jogador. Se você está vendo isto, vai para o inferno dos trapaceiros, que é cheio de políticos.
+## DefInjected/IssueDef/Precepts_ARCs.xml
+VQE_ARCGenerators.label	geradores ARC
+## DefInjected/IssueDef/Precepts_Technology.xml
+VQE_Technology.label	tecnologia
+## DefInjected/JobDef/Jobs_Work.xml
+VQE_FixCriticallyBrokenDownBuilding.reportString	trocando componentes quebrados em TargetA.
+VQE_MaintainGenetron.reportString	fazendo manutenção em TargetA.
+VQE_StudyGenetron.reportString	estudando TargetA.
+VQE_SabotageGenetron.reportString	sabotando TargetA.
+## DefInjected/MemeDef/Memes_Misc.xml
+VQE_Technophobia.label	tecnofobia
+VQE_Technophobia.description	A humanidade deve rejeitar a tecnologia, que a expõe à discórdia e ao cataclismo.
+VQE_Technophobia.descriptionMaker.rules.rulesStrings[0]	creation(tag=meme_Technophobic)        ->[deity0_name] ensinou a humanidade a sobreviver pela força das mãos e pela pureza da natureza, avisando que as máquinas só trariam a ruína.
+VQE_Technophobia.descriptionMaker.rules.rulesStrings[1]	episode(uses=1,tag=meme_Technophobic)  ->Quando a humanidade se voltou às máquinas, [deity0_name] chorou e soltou tempestades para varrer a mancha da sua arrogância.
+VQE_Technophobia.descriptionMaker.rules.rulesStrings[2]	intro(tag=meme_Technophobic)           ->Os [memberNamePlural] se reuniram à sombra de [place_name], um lugar intocado pelas máquinas, e juraram seguir os caminhos da simplicidade e do equilíbrio.
+VQE_Technophobia.descriptionMaker.rules.rulesStrings[3]	conflict(tag=meme_Technophobic)        ->Um [foeLeader] cruel quis espalhar máquinas pelas terras sagradas dos [memberNamePlural], dando início a uma luta desesperada pela sobrevivência.
+VQE_Technophobia.descriptionMaker.rules.rulesStrings[4]	founderJoin(tag=meme_Technophobic)     ->Um [place_job] chamado [founderName] liderou o ataque contra os [foeSoldiers], armado só com ferramentas da terra e a força dos seus seguidores.
+VQE_Technophobia.descriptionMaker.rules.rulesStrings[5]	victory(tag=meme_Technophobic)         ->[founderName] reuniu os [memberNamePlural] para destruir as fábricas do [foeLeader], limpando a terra das máquinas e restaurando a harmonia.
+VQE_Technophobia.descriptionMaker.rules.rulesStrings[6]	setup(tag=meme_Technophobic)           ->[founderName] viu ruir uma sociedade construída sobre máquinas e jurou impedir que a humanidade repetisse seus erros.
+VQE_Technophobia.descriptionMaker.rules.rulesStrings[7]	story(uses=1,tag=meme_Technophobic)    ->[founderName] reuniu pessoas que pensavam igual e as ensinou a rejeitar a tecnologia e abraçar uma vida autossuficiente, em harmonia com a natureza.
+VQE_Technophobia.descriptionMaker.rules.rulesStrings[8]	lessonIntro(tag=meme_Technophobic)         ->Os anciãos me ensinaram uma verdade que ecoou pelas eras:
+VQE_Technophobia.descriptionMaker.rules.rulesStrings[9]	lesson(tag=meme_Technophobic)              ->depender de máquinas gera fragilidade, e só pela simplicidade podemos resistir
+VQE_Technophobia.descriptionMaker.rules.rulesStrings[10]	lessonReinforcement(tag=meme_Technophobic) ->Vi com meus próprios olhos quando as grandes cidades caíram, impotentes diante da própria soberba.
+VQE_Technophobia.descriptionMaker.rules.rulesStrings[11]	archistBasis(tag=meme_Technophobic)    ->Os arquotecs deram as costas à humanidade, vendo-nos como escravos das nossas máquinas. Só abandonando a tecnologia recuperaremos o seu favor.
+VQE_Technophobia.descriptionMaker.rules.rulesStrings[12]	archistFact(tag=meme_Technophobic)     ->As máquinas embotam o espírito e enfraquecem a mente, afastando a humanidade da iluminação dos arquotecs.
+VQE_Technophobia.descriptionMaker.rules.rulesStrings[13]	archistProphecy(tag=meme_Technophobic) ->[inTheEnd], só quem viver uma vida pura, sem máquinas, será poupado quando os arquotecs purificarem o mundo.
+VQE_Technophobia.descriptionMaker.rules.rulesStrings[14]	animistBasis(tag=meme_Technophobic)    ->Todo ser vivo tem um espírito, e as máquinas sem alma perturbam a harmonia do mundo natural.
+VQE_Technophobia.descriptionMaker.rules.rulesStrings[15]	animistFact(tag=meme_Technophobic)     ->Os espíritos da terra enfraquecem onde as máquinas passam, com o seu poder sugado e corrompido.
+VQE_Technophobia.descriptionMaker.rules.rulesStrings[16]	animistProphecy(tag=meme_Technophobic) ->[itIsSaid] que, quando a última máquina se calar, os espíritos voltarão para curar o mundo.
+VQE_Technophobia.descriptionMaker.rules.rulesStrings[17]	eschatologismFact(tag=meme_Technophobic)->As máquinas são as arautas do apocalipse, e suas criações vão envenenar a terra até sobrar só cinza e ruína.
+VQE_Technophobia.descriptionMaker.rules.rulesStrings[18]	eschatologismProphecy(tag=meme_Technophobic)->[inTheEnd], as máquinas vão se voltar contra os seus criadores, trazendo devastação até restarem só os que evitam a tecnologia.
+VQE_Technophobia.descriptionMaker.rules.rulesStrings[19]	introMemo(tag=meme_Technophobic)->Para: Todos os funcionários\nDe: Departamento de Sustentabilidade\nAssunto: Atualização de política - Uso de tecnologia\n\nCom efeito imediato, todo maquinário não essencial deve ser descontinuado. Lembrem-se: nossos antepassados prosperaram sem esses aparelhos, e nós também podemos. Continuar dependendo de tecnologia enfraquece nossa resiliência e ameaça nossas metas de sustentabilidade a longo prazo. Vamos dar o exemplo e mostrar a força da autossuficiência. O cumprimento será monitorado de perto (por computador).
+VQE_Technophobia.descriptionMaker.rules.rulesStrings[20]	chthonianProphecy(tag=meme_Technophobic)->[itIsSaid] que as máquinas são meras ferramentas das forças sombrias lá de baixo, e cada engrenagem que gira nos aproxima do domínio delas.
+VQE_Technophobia.descriptionMaker.rules.rulesStrings[21]	serketistProphecy(tag=meme_Technophobic)->Os insetos prosperam sem máquinas, uma lição de resistência que a humanidade esqueceu.
+VQE_Technophobia.descriptionMaker.rules.rulesStrings[22]	alienistProphecy(tag=meme_Technophobic)->Foram as máquinas que criaram essas criaturas terríveis; por isso devemos rejeitar a tecnologia como fonte de grande mal.
+VQE_Technophobia.generalRules.rulesStrings[0]	memeAdjective->primitivo
+VQE_Technophobia.generalRules.rulesStrings[1]	memeAdjective->natural
+VQE_Technophobia.generalRules.rulesStrings[2]	memeAdjective->orgânico
+VQE_Technophobia.generalRules.rulesStrings[3]	memeAdjective->tradicional
+VQE_Technophobia.generalRules.rulesStrings[4]	memeAdjective->rústico
+VQE_Technophobia.generalRules.rulesStrings[5]	memeCreed->caminho
+VQE_Technophobia.generalRules.rulesStrings[6]	memeCreed->movimento
+VQE_Technophobia.generalRules.rulesStrings[7]	memeCreed->círculo
+VQE_Technophobia.generalRules.rulesStrings[8]	memeCreed->doutrina
+VQE_Technophobia.generalRules.rulesStrings[9]	memeCreed->fé
+VQE_Technophobia.generalRules.rulesStrings[10]	memeHyphenPrefix->anti
+VQE_Technophobia.generalRules.rulesStrings[11]	memeHyphenPrefix->terra
+VQE_Technophobia.generalRules.rulesStrings[12]	memeHyphenPrefix->pós
+VQE_Technophobia.generalRules.rulesStrings[13]	memeHyphenPrefix->neo
+VQE_Technophobia.generalRules.rulesStrings[14]	memeHyphenPrefix->ferrugem
+VQE_Technophobia.generalRules.rulesStrings[15]	memeConcept->humanidade
+VQE_Technophobia.generalRules.rulesStrings[16]	memeConcept->natureza
+VQE_Technophobia.generalRules.rulesStrings[17]	memeConcept->pureza
+VQE_Technophobia.generalRules.rulesStrings[18]	memeConcept->equilíbrio
+VQE_Technophobia.generalRules.rulesStrings[19]	memeConcept->simplicidade
+VQE_Technophobia.generalRules.rulesStrings[20]	memeLeaderNoun->árbitro
+VQE_Technophobia.generalRules.rulesStrings[21]	memeLeaderNoun->vidente
+VQE_Technophobia.generalRules.rulesStrings[22]	memeLeaderNoun->guardião
+VQE_Technophobia.generalRules.rulesStrings[23]	memeLeaderNoun->sábio
+VQE_Technophobia.generalRules.rulesStrings[24]	memeLeaderNoun->profeta
+VQE_Technophobia.generalRules.rulesStrings[25]	memeLeaderAdjective->natural
+VQE_Technophobia.generalRules.rulesStrings[26]	memeLeaderAdjective->primal
+VQE_Technophobia.generalRules.rulesStrings[27]	memeLeaderAdjective->terreno
+VQE_Technophobia.generalRules.rulesStrings[28]	memeLeaderAdjective->ascético
+VQE_Technophobia.generalRules.rulesStrings[29]	memeLeaderAdjective->puro
+VQE_Technophobia.generalRules.rulesStrings[30]	memeMoralist->vigia
+VQE_Technophobia.generalRules.rulesStrings[31]	memeMoralist->protetor
+VQE_Technophobia.generalRules.rulesStrings[32]	memeMoralist->guardião
+VQE_Technophobia.generalRules.rulesStrings[33]	memeMoralist->preservador
+VQE_Technophobia.generalRules.rulesStrings[34]	memeMoralist->guia
+VQE_Technophobia.symbolPacks.0.adjective	purista
+VQE_Technophobia.symbolPacks.0.ideoName	Purismo
+VQE_Technophobia.symbolPacks.0.member	purista
+VQE_Technophobia.symbolPacks.0.theme	pureza
+VQE_Technophobia.symbolPacks.1.adjective	naturalista
+VQE_Technophobia.symbolPacks.1.ideoName	Naturalismo
+VQE_Technophobia.symbolPacks.1.member	naturalista
+VQE_Technophobia.symbolPacks.1.theme	natureza
+VQE_Technophobia.symbolPacks.2.adjective	tradicionista
+VQE_Technophobia.symbolPacks.2.ideoName	Tradicionismo
+VQE_Technophobia.symbolPacks.2.member	tradicionalista
+VQE_Technophobia.symbolPacks.2.theme	tradição
+VQE_Technophobia.symbolPacks.3.adjective	primitivista
+VQE_Technophobia.symbolPacks.3.ideoName	Primitivismo
+VQE_Technophobia.symbolPacks.3.member	primitivista
+VQE_Technophobia.symbolPacks.3.theme	primitivismo
+VQE_Technophobia.symbolPacks.4.adjective	rejeicionista
+VQE_Technophobia.symbolPacks.4.ideoName	Rejeicionismo
+VQE_Technophobia.symbolPacks.4.member	rejeitador
+VQE_Technophobia.symbolPacks.4.theme	rejeição
+VQE_Technophobia.symbolPacks.5.adjective	sobrevivencialista
+VQE_Technophobia.symbolPacks.5.ideoName	Sobrevivencialismo
+VQE_Technophobia.symbolPacks.5.member	sobrevivencialista
+VQE_Technophobia.symbolPacks.5.theme	sobrevivência
+VQE_Technophobia.symbolPacks.6.adjective	simplista
+VQE_Technophobia.symbolPacks.6.ideoName	Simplicidade
+VQE_Technophobia.symbolPacks.6.member	simplista
+VQE_Technophobia.symbolPacks.6.theme	simplicidade
+## DefInjected/PawnKindDef/Inventor.xml
+VQE_Inventor.label	Inventor
+## DefInjected/PreceptDef/Precepts_ARCs.xml
+VQE_ARCGenerators_Exalted.label	exaltados
+VQE_ARCGenerators_Exalted.description	Os ARCs são a maior conquista da humanidade, símbolo de progresso e sobrevivência. Danificar ou descuidar de um ARC é sacrilégio, e a presença deles inspira esperança e propósito em todos.
+VQE_ARCGenerators_Abhorrent.label	abomináveis
+VQE_ARCGenerators_Abhorrent.description	Os ARCs são abominações perigosas, símbolos da dependência imprudente da humanidade em relação à tecnologia. A existência deles traz inquietação, e usá-los é pedir uma catástrofe.\n\n<color=#E5E54C>Efeitos no jogo:</color>\n - Colapsos de ataque de fúria vão mirar o ARC se ele estiver ao alcance.
+## DefInjected/PreceptDef/Precepts_Technology.xml
+VQE_Technology_Rejected.label	rejeitada
+VQE_Technology_Rejected.description	A tecnologia moderna é uma força corruptora que afasta a humanidade do seu caminho natural. Usá-la é vergonhoso e só leva à ruína e à discórdia.\n\n<color=#E5E54C>Efeitos no jogo:</color>\n - Os colonos se recusam a equipar ou vestir itens de nível tecnológico industrial ou acima.\n - Colapsos de ataque de fúria vão mirar itens e prédios de nível tecnológico industrial ou acima.
+## DefInjected/QuestScriptDef/Quest1.xml
+VQE_PrototypeARC.questContentRules.rulesStrings[0]	terminalStudiedMessage->Terminal estudado. Você reuniu as informações e já pode ir embora.
+VQE_PrototypeARC.questDescriptionRules.rulesStrings[0]	questDescription(asker_factionLeader==True)->[asker_nameDef], [asker_faction_leaderTitle] de [asker_faction_name], nos falou de um canteiro de obras antigo onde [inventor_nameFull] trabalhou num enorme gerador protótipo. O lugar parece abandonado e isolado, cercado pelos restos de um projeto esquecido há muito tempo.\n\n[terminalDetails] Visitar o lugar pode render [potentialRewards]. [journeyDetails] [finalDetails]
+VQE_PrototypeARC.questDescriptionRules.rulesStrings[1]	questDescription(askerIsNull==True)->Descobrimos um canteiro de obras antigo onde [inventor_nameFull] trabalhava num grande gerador protótipo. O lugar fica num ponto remoto, cercado pelas ruínas de um projeto inacabado.\n\n[terminalDetails] Explorar o lugar pode render [potentialRewards]. [journeyDetails] [finalDetails]
+VQE_PrototypeARC.questDescriptionRules.rulesStrings[2]	terminalDetails->Há um terminal ainda funcionando com notas de pesquisa e plantas do trabalho de [inventor_nameFull].
+VQE_PrototypeARC.questDescriptionRules.rulesStrings[3]	terminalDetails->Um terminal ativo guarda registros de dados cruciais e descobertas experimentais sobre a construção de geradores.
+VQE_PrototypeARC.questDescriptionRules.rulesStrings[4]	terminalDetails->Dizem que o lugar tem um terminal com plantas de projeto e avanços na pesquisa de energia.
+VQE_PrototypeARC.questDescriptionRules.rulesStrings[5]	terminalDetails->Sistemas antigos ainda zumbem de leve, dando um vislumbre do ambicioso protótipo de [inventor_nameFull].
+VQE_PrototypeARC.questDescriptionRules.rulesStrings[6]	terminalDetails->Um terminal danificado talvez ainda guarde dados sobre o protótipo do ARC, mas o estado dele é incerto.
+VQE_PrototypeARC.questDescriptionRules.rulesStrings[7]	potentialRewards->componentes raros, dados de pesquisa avançada e recursos valiosos
+VQE_PrototypeARC.questDescriptionRules.rulesStrings[8]	potentialRewards->materiais essenciais, plantas de gerador e conhecimento de tecnologia avançada
+VQE_PrototypeARC.questDescriptionRules.rulesStrings[9]	potentialRewards->conhecimento valioso, materiais de construção únicos e artefatos raros
+VQE_PrototypeARC.questDescriptionRules.rulesStrings[10]	potentialRewards->avanços cruciais de pesquisa e uma fartura de material aproveitável
+VQE_PrototypeARC.questDescriptionRules.rulesStrings[11]	potentialRewards->saque raro e talvez uma pesquisa de energia revolucionária
+VQE_PrototypeARC.questDescriptionRules.rulesStrings[12]	journeyDetails->O lugar é longe e a viagem vai exigir uma preparação cuidadosa.
+VQE_PrototypeARC.questDescriptionRules.rulesStrings[13]	journeyDetails->A longa distância torna a expedição difícil, mas talvez compensadora.
+VQE_PrototypeARC.questDescriptionRules.rulesStrings[14]	journeyDetails->Chegar lá vai custar bastante tempo e recursos.
+VQE_PrototypeARC.questDescriptionRules.rulesStrings[15]	journeyDetails->A viagem até esse lugar remoto pode ser perigosa, mas vale o esforço.
+VQE_PrototypeARC.questDescriptionRules.rulesStrings[16]	journeyDetails->O isolamento sugere poucas ameaças imediatas, mas os suprimentos serão essenciais.
+VQE_PrototypeARC.questDescriptionRules.rulesStrings[17]	finalDetails->Não se esperam perigos, mas a própria viagem é um risco para colonos despreparados.
+VQE_PrototypeARC.questDescriptionRules.rulesStrings[18]	finalDetails->O lugar parece abandonado, mas é bom ter cautela: o isolamento pode esconder surpresas.
+VQE_PrototypeARC.questDescriptionRules.rulesStrings[19]	finalDetails->A área parece desabitada, mas a idade dela pode dificultar a navegação e a sobrevivência.
+VQE_PrototypeARC.questDescriptionRules.rulesStrings[20]	finalDetails->Prepare-se para o pior e torça pelo melhor: oportunidade costuma vir com risco.
+VQE_PrototypeARC.questDescriptionRules.rulesStrings[21]	finalDetails->O isolamento pode dar segurança, mas também deixa pouca margem para erro se algo der errado.

@@ -1,0 +1,1462 @@
+## DefInjected/BiomeDef/Biomes_FeraliskInfestedJungle.xml
+AB_FeraliskInfestedJungle.label	feralisk infested jungle
+AB_FeraliskInfestedJungle.description	An incredibly thick jungle, completely infested with spiders. Infested jungles such as these sometimes start expanding in a planet's biosphere, if the conditions are right. These worlds usually have to be bombarded from orbit with atomic weapons, to avoid the spiders being unwittingly (or worse, on purpose) transported to other inhabited planets.\n\n<color=#d73b33>Biome difficulty: Very hard. This is a VERY hostile biome. Don't start your base here unless you know very well what you are doing. Build a walled compound, leave it as seldom as possible, and USE the spiders in your advantage.</color>
+## DefInjected/BiomeDef/Biomes_ForsakenCrags.xml
+AB_RockyCrags.label	forsaken crags
+AB_RockyCrags.description	This desertic landscape appears to be perpetually covered in an unnatural fog that seeps all light from the sun. In the ancient past it was partly terraformed by a mysterious humanoid alien race simply known as Forsakens. A plethora of nocturnal alien creatures roam the desert, feeding on bioluminescent plants and fungi that are the only available and reliable source of light.\n\n<color=#AE6233>Biome difficulty: Hard. Luminosity in this biome doesn't reach high enough levels to grow plants, so you'll have to use the flora as natural sunlamps, and all ranged weapons will get a huge penalty. Nights are DARK, and most creatures are nocturnal. Those which aren't, won't last long.</color>\n\nNOTE: The latest changes made by Ludeon to the glow grid make this biome much more performant than it was! Enjoy!.
+## DefInjected/BiomeDef/Biomes_GallatrossGraveyard.xml
+AB_GallatrossGraveyard.label	gallatross graveyard
+AB_GallatrossGraveyard.description	These parched mudflats are littered with the ancient bones of colossal Gallatrosses. Apparently the highly intelligent beasts are coming here to die, and to mourn their fallen relatives.\n\n<color=#7C9233>Biome difficulty: Intermediate. Mostly equal to an Arid Shrubland. Don't mess with the Gallatross unless you are very sure you are prepared, though.</color>
+## DefInjected/BiomeDef/Biomes_GelatinousSuperorganism.xml
+AB_GelatinousSuperorganism.label	gelatinous superorganism
+AB_GelatinousSuperorganism.description	A huge mold-like organism has grown in this area, basically destroying the previous existing ecosystem, and replacing it with an alien landscape of its own creation. Its strange biology seems to be compatible with this planet's biosphere.\n\n<color=#5CB033>Biome difficulty: Easy. Expect to find no useable rocky materials to build here, and very little wood, but plenty of food.</color>
+## DefInjected/BiomeDef/Biomes_IdyllicMeadows.xml
+AB_IdyllicMeadows.label	idyllic meadows
+AB_IdyllicMeadows.description	Product of ancient terraforming, these open grasslands were designed to be an utopian paradise: giant flowers provide both construction materials and sustenance, while an abundance of wildlife creates ample ranching and hunting possibilities. There are no extremes in these pristine fields, making them ideal for long term habitation.\n\n<color=#33d733>Biome difficulty: Very easy. This biome is intended to be an even easier version of the temperate forest. Mild temperatures, very few predators, abundance of resources and lack of serious diseases.</color>
+## DefInjected/BiomeDef/Biomes_MechanoidIntrusion.xml
+AB_MechanoidIntrusion.label	mechanoid intrusion
+AB_MechanoidIntrusion.description	A mechanoid hive was dismantling this biome, turning its mass into computronium, and hastily left it abandoned for unknown reasons. Almost no trace of its biological origins has been left untouched, with even the trees turned into mechanical contraptions destined for some nefarious purposes.\n\n<color=#7C9233>Biome difficulty: Intermediate. Animals rarely come to this biome, and thus finding food can be VERY difficult. Soil fertility is atrocious. Metals are incredibly common.</color>
+## DefInjected/BiomeDef/Biomes_MiasmicMangrove.xml
+AB_MiasmicMangrove.label	miasmic mangrove
+AB_MiasmicMangrove.description	Mangrove swamps, also known as mangals, are coastal wetlands found in tropical and subtropical regions. They are characterized by halophytic (salt loving) trees, shrubs and other plants growing in brackish to saline tidal waters. This mangrove swamp is plagued by parasites, tropical diseases and bio-engineered viruses, making it an inhospitable place.\n\n<color=#AE6233>Biome difficulty: Hard, harder than a tropical swamp. Diseases will strike very often, including some exotic ones that will test your skill.</color>
+## DefInjected/BiomeDef/Biomes_MycoticJungle.xml
+AB_MycoticJungle.label	mycotic jungle
+AB_MycoticJungle.description	The Mycotic Jungle is a super dense overgrowth of massive giant mushrooms, covered in a coat of mycelium. Giant mushrooms can be used as a poor substitute for wood, and the smaller ones will provide some sustenance. Beware of the bigger mushrooms, though, as they create a cloud of dangerous spores that can quickly suffocate any organic life.\n\n<color=#5CB033>Biome difficulty: Easy. Rains are VERY common in this biome. There is a plant that produces renewable wood, but most of the flora produces mushroom stalks.</color>
+## DefInjected/BiomeDef/Biomes_OcularForest.xml
+AB_OcularForest.label	ocular forest
+AB_OcularForest.description	This sickly looking forest seems to be completely alien, probably of an extra-dimensional origin. Natural plant life seems to be struggling to grow, and the very ground fights against the neighbouring lands. Strange lifeforms, perhaps not entirely alive, scurry around the sickening vegetation.\n\n<color=#7C9233>Biome difficulty: Intermediate. A strange red fog reduces ranged accuracy almost constantly and reduces colonists' mood. There is a plant that produces renewable wood, but most of the flora produces red wood, a poor substitute.</color>
+## DefInjected/BiomeDef/Biomes_PropaneLakes.xml
+AB_PropaneLakes.label	propane lakes
+AB_PropaneLakes.description	Huge liquid propane lakes fill this desolate frozen landscape. As propane is a compound that doesn't occur naturally, this is probably the remnant of some weird ecological or industrial experiment gone awry.\n\n<color=#AE6233>Biome difficulty: Hard, but not as hard as Sea Ice. Expect extremely cold temperatures, constant snowing, very little and non-renewable wood, and usually no rocks. Surprisingly, some strange flora have adapted to these circumstances, attracting all kinds of unusual animals.</color>
+## DefInjected/BiomeDef/Biomes_PyroclasticConflagration.xml
+AB_PyroclasticConflagration.label	pyroclastic conflagration
+AB_PyroclasticConflagration.description	A desolate expanse of obsidian and solidified lava, with several active calderas bubbling menacingly. A few scraggy trees cling to the mostly unfertile soil.\n\n<color=#d73b33>Biome difficulty: Very hard. A permanent heat wave will raise temperature permanently by 30ºC. Acid rain will fall every few quadrums, which might be a welcome respite from the constant volcanic ash, if it weren't burning your colonists with acid. Ravenous exotic animals will set your stuff on fire. Fire, fire everywhere. You have been warned!</color>
+## DefInjected/BiomeDef/Biomes_TarPits.xml
+AB_TarPits.label	tar pits
+AB_TarPits.description	Sun-baked mud, interspersed with patches of fertile grassy terrain. And, of course, the tar lakes themselves. Tar pits are usually infested with extensive subterranean bumbledrone hives.\n\n<color=#5CB033>Biome difficulty: Easy. This biome is arid, but rich in animal and vegetal life. Wood is not a problem, and neither are foreageable plants. Stone is scarce due to the pits being always a flat terrain. The greatest hazard is the incredibly hard to cross terrain, specially around the pits. Also, beware of aggressive bumbledrones surrounding their hive entrances!</color>
+## DefInjected/ChemicalDef/AB_PsychotropicFungus.xml
+AB_PsychotropicFungus.label	psychotropic fungus
+## DefInjected/DamageDef/Damage_AlphaBiomes.xml
+AB_ParalysingSting.label	paralysing sting
+AB_ParalysingSting.deathMessage	{0} has been bitten to death.
+AB_Tar.label	tar
+AB_Tar.deathMessage	{0} has been killed.
+AB_Gangrene.label	gangrene
+AB_Gangrene.deathMessage	{0} has succumbed to gangrene.
+## DefInjected/GameConditionDef/GameConditions_Misc.xml
+AB_AcidRainCondition.label	acid rain
+AB_AcidRainCondition.description	Toxic gas emissions from nearby volcanically active calderas are precipitating in the form of dangerous acid rain. Acid rain has an adverse impact on flora and fauna, killing insect and aquatic life-forms as well as having impacts on human health.
+AB_AcidRainCondition.descriptionFuture	acid rain will fall all over the area around [map_definite] for [gameConditionDuration_duration], killing outdoor plant and animal life
+AB_AcidRainCondition.endMessage	The worst of the acid rain has passed.
+AB_AcidRainCondition.letterText	Toxic gas emissions from nearby volcanically active calderas are precipitating in the form of dangerous acid rain. Acid rain has an adverse impact on flora and fauna, killing insect and aquatic life-forms as well as having impacts on human health.\n\nColonists and animals that aren't resistant to acid burns should stay inside for the duration of the rain.
+AB_VolcanicHeatWave.label	volcanic heat wave
+AB_VolcanicHeatWave.description	The extreme heat produced by the magma lakes bakes this region. Large plumes of superheated air rise from the lava, heating their surroundings and making them barely inhabitable.
+## DefInjected/GameConditionDef/GameConditions_Odyssey.xml
+AB_GelatinousMemoryEcho.label	gelatinous memory echo
+AB_GelatinousMemoryEcho.description	The superorganism retains echoes of past events, stored like data in a living neural lattice. These memory echoes occasionally (every 2 days) bleed into reality, causing inspirations, mood boosts, penalties... or hallucinations.
+AB_AmbientRadiation.label	ambient radiation
+AB_AmbientRadiation.description	Low levels of background radiation permeate the area, subtly affecting health and mutation rates, and causing gene mutations in random colonists every quadrum or so.
+AB_ExtremeTemperatureFluctuations.label	extreme temperature fluctuations
+AB_ExtremeTemperatureFluctuations.description	Wild swings between scorching days and freezing nights challenge survival and crop stability.
+AB_ExplodingAnimals.label	exploding animals
+AB_ExplodingAnimals.description	Something in this area makes all animals explode violently on death.
+AB_MoldyEnvironment.label	moldy environment
+AB_MoldyEnvironment.description	The ubiquitous presence of fungal spores makes staying outdoors almost unbearable.
+## DefInjected/HediffDef/AB_PsychotropicFungus.xml
+AB_PsychotropicFungusHigh.label	psychotropic fungus high
+AB_PsychotropicFungusHigh.description	Active psychotropic fungus in the bloodstream. They improve consciousness and decrease the need to rest.
+AB_PsychotropicFungusTolerance.label	psychotropic fungus tolerance
+AB_PsychotropicFungusTolerance.description	A built-up tolerance to psychotropic fungus. The more severe this tolerance is, the more psychotropic fungus it takes to get the same effect.
+AB_PsychotropicFungusTolerance.stages.small.label	small
+AB_PsychotropicFungusTolerance.stages.large.label	large
+AB_PsychotropicFungusTolerance.stages.massive.label	massive
+AB_PsychotropicFungusAddiction.label	psychotropic fungus addiction
+AB_PsychotropicFungusAddiction.description	A chemical addiction to psychotropic fungus. Long-term use of psychotropic fungus has caused neurological adaptations at the cellular level, so the brain can no longer function properly without the drug.\n\nWithout regular doses of psychotropic fungus, withdrawal symptoms will begin. However, extended abstinence will force the brain to adapt back to its normal state, resolving the addiction.
+AB_PsychotropicFungusAddiction.stages.withdrawal.label	withdrawal
+## DefInjected/HediffDef/AB_RawRimeNodules.xml
+AB_RawRimeNodulesHigh.label	raw rime nodules high
+AB_RawRimeNodulesHigh.description	Raw rime nodules are filled with a naturally processed propane compound that is mildy euphoric for humans, similar to ethanol. Chemically speaking, this is unlikely, hinting at a non-natural origin for these strange flora.
+## DefInjected/HediffDef/Hediffs_Local_Infections.xml
+AB_SporesAllergy.label	allergy
+AB_SporesAllergy.description	This person has developed a strong allergy to airborne spores and / or plant pollen. This allergy will make breathing difficult, but it will go away (for now) if treated properly.
+AB_SporesAllergy.stages.minor.label	minor
+AB_SporesAllergy.stages.major.label	major
+AB_SporesAllergy.stages.extreme.label	extreme
+AB_SporesAllergy_Heightened.label	heightened allergy
+AB_SporesAllergy_Heightened.description	This person has developed a very strong allergy to airborne spores and / or plant pollen. This allergy will make breathing difficult, but it will go away (for now) if treated properly.
+AB_SporesAllergy_Heightened.stages.minor.label	minor
+AB_SporesAllergy_Heightened.stages.major.label	major
+AB_SporesAllergy_Heightened.stages.extreme.label	extreme
+AB_AnimalSporesAllergy.label	allergy
+AB_AnimalSporesAllergy.description	This animal has developed a strong allergy to airborne spores and / or plant pollen. This allergy will make breathing difficult, but it will go away (for now) if treated properly.
+AB_AnimalSporesAllergy.stages.minor.label	minor
+AB_AnimalSporesAllergy.stages.major.label	major
+AB_AnimalSporesAllergy.stages.extreme.label	extreme
+AB_Paralysis.label	neurotoxin paralysis
+AB_Paralysis.description	A fast acting toxin is coursing through this creature's veins, paralyzing his muscles. It will wear off after a while.
+AB_Paralysis.stages.initial.label	initial
+AB_Paralysis.stages.stunned.label	stunned
+AB_Paralysis.stages.very_stunned.label	very stunned
+AB_Paralysis.stages.paralysed.label	paralysed
+AB_RavagingIntestinalParasites.label	ravaging intestinal parasites
+AB_RavagingIntestinalParasites.description	A ravaging genetically engineered tapeworm has infected this person.\n\n<color=#E5E54C>Gameplay effect:</color> Will increase severity unless treated. It will go away after a total tend quality of 3.
+AB_RavagingIntestinalParasites.stages.minor.label	minor
+AB_RavagingIntestinalParasites.stages.major.label	major
+AB_RavagingIntestinalParasites.stages.extreme.label	extreme
+AB_ViralAbasia.label	viral abasia
+AB_ViralAbasia.description	Most likely artificially created as a bio-weapon, this perverse virus attacks the victim's motor cortex eventually leaving the person immobilized.\n\n<color=#E5E54C>Gameplay effect:</color> Treatable, immunizable disease.
+AB_ViralAbasia.stages.minor-0.label	minor
+AB_ViralAbasia.stages.minor-1.label	minor
+AB_ViralAbasia.stages.major.label	major
+AB_ViralAbasia.stages.extreme.label	extreme
+AB_BacterialGangrene.label	bacterial gangrene
+AB_BacterialGangrene.description	A fast-growing bacterial disease that causes gangrene, with skin progressively blackening and falling off. If treated properly, it will be cured in 3-4 days. Even if treated, the colonist may lose a toe or finger or two.
+AB_BacterialGangrene.stages.minor.label	minor
+AB_BacterialGangrene.stages.major.label	major
+AB_BacterialGangrene.stages.extreme.label	extreme
+AB_Gangrene.label	gangrene
+AB_Gangrene.description	Death of body tissue due to a lack of blood flow or a serious bacterial infection.
+AB_Gangrene.comps.HediffComp_GetsPermanent.permanentLabel	gangrene scar
+AB_Gangrene.injuryProps.destroyedLabel	Lost to gangrene
+AB_Gangrene.labelNounPretty	{0} in the {1}
+## DefInjected/HediffDef/Hediffs_Local_TerrainAttacks.xml
+AB_SlimeInEyes.label	slime
+AB_SlimeInEyes.description	Slime in your eyes blinds you for a while. Also, yuck.
+AB_SlimeInEyes.battleStateLabel	blind
+AB_SlimeInEyes.labelNoun	slime
+## DefInjected/HediffDef/Hediffs_Odyssey.xml
+AB_Exploder.label	chemfuel nodules
+AB_Exploder.description	Nodules of chemfuel will cause this creature to blow up when killed.
+AB_AnimalTentacle.label	animal eldritch flesh tentacle
+AB_AnimalTentacle.description	An installed animal eldritch flesh tentacle. A fleshy, muscled tentacle resembling a partial transformation into a fleshbeast.
+AB_AnimalTentacle.labelNoun	an animal eldritch flesh tentacle
+AB_MalevolentEye.label	malevolent eye
+AB_MalevolentEye.description	A malevolent looking, bloodshot eye is emerging from this wound, blinking and peering wildly around it. Without treatment, it will cause rotting of the local tissue, eventually causing blood poisoning and death. They will however allow the afflicted to see through them.
+AB_MalevolentEye.labelNoun	a malevolent eye
+AB_MalevolentEye.stages.minor.label	minor
+AB_MalevolentEye.stages.major.label	major
+AB_MalevolentEye.stages.extreme-0.label	extreme
+AB_MalevolentEye.stages.extreme-1.label	extreme
+AB_Quicksand.label	traversing quicksand
+AB_Quicksand.description	Moving through quicksand. Greatly reduces movement speed.
+AB_ResonanceSoothe.label	resonance soothe
+AB_ResonanceSoothe.description	The colonist is subconsciously affected by the mechanoid resonance receiver’s low-frequency harmonics. Stress signals in the brain are dampened, enhancing focus and emotional stability.
+AB_ChocolateInEyes.label	chocolate
+AB_ChocolateInEyes.description	Chocolate in the eyes. It impairs vision, but can be cleared in a few moments.
+AB_ChocolateInEyes.battleStateLabel	blind
+AB_ChocolateInEyes.labelNoun	chocolate
+AB_StrawberryInEyes.label	strawberry
+AB_StrawberryInEyes.description	Strawberry ice cream in the eyes. It impairs vision, but can be cleared in a few moments.
+AB_StrawberryInEyes.battleStateLabel	blind
+AB_StrawberryInEyes.labelNoun	strawberry
+AB_CreamInEyes.label	whipped cream
+AB_CreamInEyes.description	Whipped cream in the eyes. It impairs vision, but can be cleared in a few moments.
+AB_CreamInEyes.battleStateLabel	blind
+AB_CreamInEyes.labelNoun	whipped cream
+AB_CandySandInEyes.label	cookie sand
+AB_CandySandInEyes.description	Cookie sand in the eyes. It impairs vision, but can be cleared within a few moments.
+AB_CandySandInEyes.battleStateLabel	blind
+AB_CandySandInEyes.labelNoun	cookie sand
+## DefInjected/IncidentDef/Incidents_Map_Disease.xml
+AB_Disease_SporesAllergy.label	spores allergy
+AB_Disease_SporesAllergy.letterLabel	Disease (spores allergy)
+AB_Disease_SporesAllergy.letterText	{0} of your {1} have gotten sick from {2}.\n\nEnsure you have a medical bed and a doctor. Make sure that they get proper treatment and spend as much time in bed as possible.\n\nThe following {1} have gotten sick
+AB_Disease_AnimalSporesAllergy.label	spores allergy (animals)
+AB_Disease_AnimalSporesAllergy.letterLabel	Animal disease (spores allergy)
+AB_Disease_AnimalSporesAllergy.letterText	{0} of your animals have gotten sick from {2}.\n\nMake sure that they get proper treatment and rest as much as possible.\n\nThe following animals have gotten sick
+AB_Disease_BacterialGangrene.label	bacterial gangrene
+AB_Disease_BacterialGangrene.letterLabel	Disease (bacterial gangrene)
+AB_Disease_BacterialGangrene.letterText	{0} of your {1} have gotten sick from {2}.\n\nEnsure you have a medical bed and a doctor. Make sure that they get proper treatment and spend as much time in bed as possible.\n\nThe following {1} have gotten sick
+AB_Disease_ViralAbasia.label	viral abasia
+AB_Disease_ViralAbasia.letterLabel	Disease (viral abasia)
+AB_Disease_ViralAbasia.letterText	{0} of your {1} have gotten sick from {2}.\n\nEnsure you have a medical bed and a doctor. Make sure that they get proper treatment and spend as much time in bed as possible.\n\nThe following {1} have gotten sick
+AB_Disease_RavagingIntestinalParasites.label	ravaging intestinal parasites
+AB_Disease_RavagingIntestinalParasites.letterLabel	Disease (ravaging intestinal parasites)
+AB_Disease_RavagingIntestinalParasites.letterText	{0} of your {1} have gotten sick from {2}.\n\nEnsure you have a medical bed and a doctor. Make sure that they get proper treatment and spend as much time in bed as possible.\n\nThe following {1} have gotten sick
+## DefInjected/IncidentDef/Incidents_Map_Misc.xml
+AB_AcidRain.label	acid rain
+AB_AcidRain.letterLabel	Acid Rain
+## DefInjected/JobDef/Jobs_Misc.xml
+AB_OperateCoreSampleDrill.reportString	drilling at TargetA.
+## DefInjected/LandmarkDef/Landmarks.xml
+AB_TarLakes.label	tar lakes
+AB_PropaneLakes.label	propane lakes
+AB_MagmaticQuagmire.label	magmatic quagmire
+AB_HealingSprings.label	healing springs
+AB_MutagenicSprings.label	mutagenic ocular springs
+AB_QuicksandPits.label	quicksand pits
+AB_SweetForest.label	sweet forest
+AB_AnimaDesert.label	anima desert
+AB_OcularDesert.label	ocular desert
+AB_DryMeadows.label	dry meadows
+AB_ToxicMeadows.label	toxic meadows
+AB_WillowForest.label	willow forest
+AB_CloverForest.label	clover forest
+AB_GinkgoForest.label	ginkgo forest
+AB_MauvebloomFields.label	mauvebloom fields
+AB_GauranlenGrove.label	gauranlen grove
+AB_WarpedStoneForest.label	warped stone forest
+AB_ObsidianExpanse.label	obsidian expanse
+AB_CalcifiedRemnants.label	calcified remnants
+AB_LivingCrystalBed.label	living crystal bed
+AB_FleshMorass.label	flesh morass
+AB_CorruptedIntrusion.label	corrupted intrusion
+AB_GnawingSands.label	gnawing sands
+## DefInjected/NeedDef/AB_PsychotropicFungus.xml
+Chemical_AB_PsychotropicFungus.label	psychotropic fungus
+Chemical_AB_PsychotropicFungus.description	Because of a psychotropic fungus addiction, this person needs to regularly consume fungi to avoid withdrawal symptoms.
+## DefInjected/PawnKindDef/Races_Animal_Phytokin.xml
+AB_UnshackledCompanionDryad.label	unshackled companion dryad
+## DefInjected/PipeSystem.ProcessDef/ProcessDefs.xml
+AB_SlimeIntoSandstone.label	Compress slime into sandstone blocks
+AB_SlimeIntoSandstone.description	Turns 100 slime meals into 10 sandstone blocks.
+AB_SlimeIntoSandstone.labelOverride	Compress 100 slime meals into 10 sandstone blocks
+## DefInjected/RecipeDef/Recipes_Drying.xml
+AB_FrostleafToHay.label	dry frost leaf into hay
+AB_FrostleafToHay.description	Dry frost leaf into hay.
+AB_FrostleafToHay.jobString	drying frost leaf into hay.
+## DefInjected/RecipeDef/Recipes_Refinery_Propane.xml
+AB_PropaneToChemfuel.label	extract chemfuel from propane
+AB_PropaneToChemfuel.description	Make a batch of chemfuel by extracting it from propane.
+AB_PropaneToChemfuel.jobString	Refining chemfuel from propane.
+## DefInjected/RecipeDef/Various_Stone.xml
+GU_MakeStoneBlocksRoseQuartz.label	make rose quartz blocks
+GU_MakeStoneBlocksRoseQuartz.description	Cuts rose quartz chunks into usable blocks.
+GU_MakeStoneBlocksRoseQuartz.jobString	Cutting stone blocks from chunk.
+AB_MakeStoneBlocksCragstone.label	make cragstone blocks
+AB_MakeStoneBlocksCragstone.description	Cuts cragstone chunks into usable blocks.
+AB_MakeStoneBlocksCragstone.jobString	Cutting stone blocks from chunk.
+AB_MakeStoneBlocksObsidian.label	make onyxglass blocks
+AB_MakeStoneBlocksObsidian.description	Cuts onyxglass chunks into usable blocks.
+AB_MakeStoneBlocksObsidian.jobString	Cutting stone blocks from chunk.
+GU_MakeStoneBlocksMudstone.label	make mudstone blocks
+GU_MakeStoneBlocksMudstone.description	Cuts mudstone chunks into usable blocks.
+GU_MakeStoneBlocksMudstone.jobString	Cutting stone blocks from chunk.
+AB_MakeStoneBlocksSlimeStone.label	turn hardened slime chunks into "food"
+AB_MakeStoneBlocksSlimeStone.description	Cuts slime stone chunks into semi-edible food.
+AB_MakeStoneBlocksSlimeStone.jobString	Cutting stone blocks from chunk.
+## DefInjected/RulePackDef/RulePacks_Damage.xml
+AB_Damage_Tar.rulePack.rulesStrings[0]	damaged_past->tarred
+AB_Damage_Tar.rulePack.rulesStrings[1]	damaged_past->stickied
+AB_Damage_Tar.rulePack.rulesStrings[2]	damaged_past->begrimed
+AB_Damage_Tar.rulePack.rulesStrings[3]	destroyed_past->damaged_past
+## DefInjected/RulePackDef/RulePacks_Namers_Landmarks.xml
+AB_NamerLandmark_TarLakes.rulePack.rulesStrings[0]	terrain_word(p=4)->tar lakes
+AB_NamerLandmark_TarLakes.rulePack.rulesStrings[1]	terrain_word->asphalt pits
+AB_NamerLandmark_TarLakes.rulePack.rulesStrings[2]	terrain_word->bitumen pools
+AB_NamerLandmark_TarLakes.rulePack.rulesStrings[3]	terrain_word->pitch ponds
+AB_NamerLandmark_PropaneLakes.rulePack.rulesStrings[0]	terrain_word(p=4)->propane lakes
+AB_NamerLandmark_PropaneLakes.rulePack.rulesStrings[1]	terrain_word->propane ponds
+AB_NamerLandmark_PropaneLakes.rulePack.rulesStrings[2]	terrain_word->propane pools
+AB_NamerLandmark_PropaneLakes.rulePack.rulesStrings[3]	terrain_word->propane basins
+AB_NamerLandmark_MagmaticQuagmire.rulePack.rulesStrings[0]	terrain_word(p=4)->magmatic quagmire
+AB_NamerLandmark_MagmaticQuagmire.rulePack.rulesStrings[1]	terrain_word->magma sinks
+AB_NamerLandmark_MagmaticQuagmire.rulePack.rulesStrings[2]	terrain_word->pyromarsh
+AB_NamerLandmark_MagmaticQuagmire.rulePack.rulesStrings[3]	terrain_word->lavamire
+AB_NamerLandmark_QuicksandPits.rulePack.rulesStrings[0]	terrain_word(p=4)->quicksand pits
+AB_NamerLandmark_QuicksandPits.rulePack.rulesStrings[1]	terrain_word->sinking sands
+AB_NamerLandmark_QuicksandPits.rulePack.rulesStrings[2]	terrain_word->loose earth pockets
+AB_NamerLandmark_QuicksandPits.rulePack.rulesStrings[3]	terrain_word->unstable ground
+AB_NamerLandmark_MutagenicSprings.rulePack.rulesStrings[0]	r_name(p=0.2)->[NamePerson]'s noxious springs
+AB_NamerLandmark_MutagenicSprings.rulePack.rulesStrings[1]	terrain_word(p=2)->mutagenic spring
+AB_NamerLandmark_MutagenicSprings.rulePack.rulesStrings[2]	terrain_word(p=2)->ocular springs
+AB_NamerLandmark_MutagenicSprings.rulePack.rulesStrings[3]	terrain_word->ocular spring
+AB_NamerLandmark_HealingSprings.rulePack.rulesStrings[0]	r_name(p=0.2)->[NamePerson]'s healing fonts
+AB_NamerLandmark_HealingSprings.rulePack.rulesStrings[1]	terrain_word(p=2)->healing spring
+AB_NamerLandmark_HealingSprings.rulePack.rulesStrings[2]	terrain_word(p=2)->healing springs
+AB_NamerLandmark_SweetForest.rulePack.rulesStrings[0]	terrain_word(p=2)->sweet forest
+AB_NamerLandmark_SweetForest.rulePack.rulesStrings[1]	terrain_word->cream meadows
+AB_NamerLandmark_SweetForest.rulePack.rulesStrings[2]	terrain_word->strawberry plains
+AB_NamerLandmark_SweetForest.rulePack.rulesStrings[3]	terrain_word->chocolate fields
+AB_NamerLandmark_SweetForest.rulePack.rulesStrings[4]	terrain_word->candy orchards
+AB_NamerLandmark_AnimaDesert.rulePack.rulesStrings[0]	r_name(p=0.2)->[NamePerson]'s [terrain_word]
+AB_NamerLandmark_AnimaDesert.rulePack.rulesStrings[1]	terrain_word(p=3)->anima desert
+AB_NamerLandmark_AnimaDesert.rulePack.rulesStrings[2]	terrain_word(p=2)->anima sands
+AB_NamerLandmark_OcularDesert.rulePack.rulesStrings[0]	r_name(p=0.2)->[NamePerson]'s [terrain_word]
+AB_NamerLandmark_OcularDesert.rulePack.rulesStrings[1]	terrain_word(p=3)->ocular desert
+AB_NamerLandmark_OcularDesert.rulePack.rulesStrings[2]	terrain_word(p=2)->ocular sands
+AB_NamerLandmark_DryMeadows.rulePack.rulesStrings[0]	r_name->[NamePerson]'s dry meadows
+AB_NamerLandmark_ToxicMeadows.rulePack.rulesStrings[0]	r_name->[NamePerson]'s toxic meadows
+AB_NamerLandmark_WillowForest.rulePack.rulesStrings[0]	terrain_word(p=4)->willow forest
+AB_NamerLandmark_WillowForest.rulePack.rulesStrings[1]	terrain_word->weeping woods
+AB_NamerLandmark_WillowForest.rulePack.rulesStrings[2]	terrain_word->willow groves
+AB_NamerLandmark_WillowForest.rulePack.rulesStrings[3]	terrain_word->catkin woods
+AB_NamerLandmark_CloverForest.rulePack.rulesStrings[0]	terrain_word(p=4)->clover forest
+AB_NamerLandmark_CloverForest.rulePack.rulesStrings[1]	terrain_word->clover woods
+AB_NamerLandmark_CloverForest.rulePack.rulesStrings[2]	terrain_word->shamrock grove
+AB_NamerLandmark_CloverForest.rulePack.rulesStrings[3]	terrain_word->greenleaf thicket
+AB_NamerLandmark_GinkgoForest.rulePack.rulesStrings[0]	terrain_word(p=4)->ginkgo forest
+AB_NamerLandmark_GinkgoForest.rulePack.rulesStrings[1]	terrain_word->ginkgo woods
+AB_NamerLandmark_GinkgoForest.rulePack.rulesStrings[2]	terrain_word->maidenhair grove
+AB_NamerLandmark_GinkgoForest.rulePack.rulesStrings[3]	terrain_word->golden ginkgoes
+AB_NamerLandmark_MauvebloomFields.rulePack.rulesStrings[0]	terrain_word(p=4)->mauvebloom fields
+AB_NamerLandmark_MauvebloomFields.rulePack.rulesStrings[1]	terrain_word->purple meadows
+AB_NamerLandmark_MauvebloomFields.rulePack.rulesStrings[2]	terrain_word->mauve plains
+AB_NamerLandmark_MauvebloomFields.rulePack.rulesStrings[3]	terrain_word->violet bloomlands
+AB_NamerLandmark_GauranlenGrove.rulePack.rulesStrings[0]	terrain_word->gauranlen grove
+AB_NamerLandmark_WarpedStoneForest.rulePack.rulesStrings[0]	terrain_word->warped stone grove
+AB_NamerLandmark_WarpedStoneForest.rulePack.rulesStrings[1]	terrain_word->warped pillar-strewn expanse
+AB_NamerLandmark_WarpedStoneForest.rulePack.rulesStrings[2]	terrain_word->warped rocky field
+AB_NamerLandmark_WarpedStoneForest.rulePack.rulesStrings[3]	terrain_word->warped shattered monoliths
+AB_NamerLandmark_WarpedStoneForest.rulePack.rulesStrings[4]	terrain_word->warped stone thicket
+VEE_NamerLandmark_ObsidianExpanse.rulePack.rulesStrings[0]	terrain_word->obsidian expanse
+VEE_NamerLandmark_CalcifiedRemnants.rulePack.rulesStrings[0]	terrain_word->calcified remnants
+AB_NamerLandmark_LivingCrystalBed.rulePack.rulesStrings[0]	terrain_word->living crystal garden
+AB_NamerLandmark_LivingCrystalBed.rulePack.rulesStrings[1]	terrain_word->pulsing crystal field
+AB_NamerLandmark_LivingCrystalBed.rulePack.rulesStrings[2]	terrain_word->alcyonite crystal bed
+AB_NamerLandmark_LivingCrystalBed.rulePack.rulesStrings[3]	terrain_word->breathing crystal grove
+AB_NamerLandmark_LivingCrystalBed.rulePack.rulesStrings[4]	terrain_word->living crystal expanse
+AB_NamerLandmark_LivingCrystalBed.rulePack.rulesStrings[5]	terrain_word->crystalline growth
+AB_NamerLandmark_LivingCrystalBed.rulePack.rulesStrings[6]	terrain_word->alcyonite garden
+AB_NamerLandmark_FleshMorass.rulePack.rulesStrings[0]	terrain_word->flesh morass
+AB_NamerLandmark_FleshMorass.rulePack.rulesStrings[1]	terrain_word->fleshy bog
+AB_NamerLandmark_FleshMorass.rulePack.rulesStrings[2]	terrain_word->meat mire
+AB_NamerLandmark_FleshMorass.rulePack.rulesStrings[3]	terrain_word->flesh mire
+AB_NamerLandmark_CorruptedIntrusion.rulePack.rulesStrings[0]	terrain_word->corrupted intrusion
+AB_NamerLandmark_GnawingSands.rulePack.rulesStrings[0]	terrain_word->gnawing sands
+## DefInjected/StuffCategoryDef/StuffCategories.xml
+AB_Exotic.label	exotic
+AB_ExoticWooden.label	exotic woods
+AB_ExoticMetals.label	exotic metals
+## DefInjected/TaleDef/Tales_Incident.xml
+AB_AcidRainTale.label	acid rain
+AB_AcidRainTale.rulePack.rulesStrings[0]	tale_noun->acid rain falling over [PAWN_nameDef]'s [Community]
+AB_AcidRainTale.rulePack.rulesStrings[1]	tale_noun->acrid smelling clouds pouring acid water near [PAWN_nameDef]'s [Community]
+AB_AcidRainTale.rulePack.rulesStrings[2]	image->an ominous sky, [circumstance_group]
+AB_AcidRainTale.rulePack.rulesStrings[3]	image->the air smelling acrid and [circumstance_group]
+AB_AcidRainTale.rulePack.rulesStrings[4]	image->the ground sizzling gently and [circumstance_group]
+AB_AcidRainTale.rulePack.rulesStrings[5]	image->fields of dead plants, their leaves burned, [circumstance_group]
+AB_AcidRainTale.rulePack.rulesStrings[6]	image->[Quantity_adjphrase] graves [circumstance_group]
+AB_AcidRainTale.rulePack.rulesStrings[7]	circumstance_phrase->with no life in sight
+AB_AcidRainTale.rulePack.rulesStrings[8]	circumstance_phrase->covered by a patina of acidic water
+AB_AcidRainTale.rulePack.rulesStrings[9]	circumstance_phrase->arranged in a pattern that suggests corroded bones
+AB_AcidRainTale.rulePack.rulesStrings[10]	circumstance_phrase->waiting for the acidic rain to stop
+AB_AcidRainTale.rulePack.rulesStrings[11]	desc_sentence->[PAWN_nameDef] lies on the ground, [PAWN_possessive] half-melted body twisted at an unusual angle.
+AB_AcidRainTale.rulePack.rulesStrings[12]	desc_sentence->[PAWN_nameDef] hides near a [TerrainFeature], gazing out with a [AdjectiveAngsty] look.
+AB_AcidRainTale.rulePack.rulesStrings[13]	desc_sentence->[PAWN_nameDef] looks on in shock with partially melted eyes.
+AB_AcidRainTale.rulePack.rulesStrings[14]	desc_sentence->[PAWN_nameDef] rests quietly with a layer of sweat upon [PAWN_possessive] face.
+AB_AcidRainTale.rulePack.rulesStrings[15]	desc_sentence->[Quantity_adjphrase] dead [Animal]s lay on the ground, their flesh burned by the acid.
+AB_AcidRainTale.rulePack.rulesStrings[16]	desc_sentence->[Quantity_adjphrase] dying [Animal]s lay on the ground, their flesh dissolved by the acid.
+AB_AcidRainTale.rulePack.rulesStrings[17]	desc_sentence->[Quantity_adjphrase] [Animal]s mill around uncertainly, disoriented by the pain of the acid burns.
+## DefInjected/TerrainAffordanceDef/TerrainAffordances.xml
+AB_TarAffordance.label	tar
+AB_CompactedSand.label	fine sand
+## DefInjected/TerrainDef/TerrainDefs_Royalty.xml
+AB_FinestoneRoseQuartz.label	fine rose quartz tile
+AB_FinestoneRoseQuartz.description	Exquisite stone tiles, made with no compromises, for expressing economic status. Slow to construct.
+AB_FinestoneMudstone.label	fine mudstone tile
+AB_FinestoneMudstone.description	Exquisite stone tiles, made with no compromises, for expressing economic status. Slow to construct.
+AB_FinestoneCragstone.label	fine cragstone tile
+AB_FinestoneCragstone.description	Exquisite stone tiles, made with no compromises, for expressing economic status. Slow to construct.
+AB_FinestoneObsidian.label	fine onyxglass tile
+AB_FinestoneObsidian.description	Exquisite stone tiles, made with no compromises, for expressing economic status. Slow to construct.
+## DefInjected/TerrainDef/Terrain_FeraliskInfestedJungle.xml
+AB_DenseMud.label	dense mud
+AB_DenseMud.tools.mud.label	mud
+AB_DenseGrass.label	dense grass
+AB_WebbedMarshyTerrain.label	webbed marshy soil
+AB_WebbedMarshyTerrain.tools.mud.label	mud
+## DefInjected/TerrainDef/Terrain_Floors_StoneTileAndWood.xml
+AB_TileRoseQuartz.label	rose quartz tile
+AB_TileRoseQuartz.description	Carefully-cut and fit stone tiles for a castle feeling. They are pretty to look at, but they take a long time to lay.
+AB_TileMudstone.label	mudstone tile
+AB_TileMudstone.description	Carefully-cut and fit stone tiles for a castle feeling. They are pretty to look at, but they take a long time to lay.
+AB_TileCragstone.label	cragstone tile
+AB_TileCragstone.description	Carefully-cut and fit stone tiles for a castle feeling. They are pretty to look at, but they take a long time to lay.
+AB_TileObsidian.label	onyxglass tile
+AB_TileObsidian.description	Carefully-cut and fit stone tiles for a castle feeling. They are pretty to look at, but they take a long time to lay.
+AB_FlagstoneRoseQuartz.label	rose quartz flagstone
+AB_FlagstoneRoseQuartz.description	Roughly-cut stone tiles. These are not beautiful, but they make good surfaces for roads and outdoor walkways. Deconstructing flagstone yields no resources.
+AB_FlagstoneMudstone.label	mudstone flagstone
+AB_FlagstoneMudstone.description	Roughly-cut stone tiles. These are not beautiful, but they make good surfaces for roads and outdoor walkways. Deconstructing flagstone yields no resources.
+AB_FlagstoneCragstone.label	cragstone flagstone
+AB_FlagstoneCragstone.description	Roughly-cut stone tiles. These are not beautiful, but they make good surfaces for roads and outdoor walkways. Deconstructing flagstone yields no resources.
+AB_FlagstoneObsidian.label	onyxglass flagstone
+AB_FlagstoneObsidian.description	Roughly-cut stone tiles. These are not beautiful, but they make good surfaces for roads and outdoor walkways. Deconstructing flagstone yields no resources.
+AB_AlienWoodFloors_MushroomStalks.label	mushroom stalk planks
+AB_AlienWoodFloors_MushroomStalks.description	A pseudo-wooden floor using the material from mushroom stalks as planks.
+AB_AlienWoodFloors_RedWood.label	red wood planks
+AB_AlienWoodFloors_RedWood.description	A red wod floor crafted with the exotic wood found in an ocular forest.
+AB_AlienWoodFloors_CrystalWood.label	crystalline wood planks
+AB_AlienWoodFloors_CrystalWood.description	A pseudo-wooden floor using the material from crystalline trees as planks.
+AB_AsphaltFloor.label	asphalt road
+AB_AsphaltFloor.description	A hard surface made of asphalt.
+## DefInjected/TerrainDef/Terrain_ForsakenCrags.xml
+AB_ForsakenSand.label	forsaken sand
+AB_ForsakenSand.tools.dirt.label	dirt
+AB_FineForsakenSand.label	fine forsaken sand
+AB_FineForsakenSand.tools.sand.label	sand
+AB_ForsakenRock.label	forsaken rocks
+AB_ForsakenRock.tools.gravel.label	gravel
+AB_DarkMud.label	forsaken mud
+AB_DarkMud.tools.mud.label	mud
+AB_DarkGravel.label	dark stony soil
+AB_DarkGravel.tools.gravel.label	gravel
+## DefInjected/TerrainDef/Terrain_GallatrossGraveyard.xml
+AB_CrackedMud.label	fertile cracked mud
+AB_CrackedMud.tools.mud.label	mud
+AB_RichCrackedMud.label	fertile rich cracked mud
+AB_RichCrackedMud.tools.mud.label	mud
+AB_FineSand.label	fine sand
+AB_FineSand.tools.sand.label	sand
+AB_CompactedSand.label	compacted sand
+AB_CompactedSand.description	Painstaikingly pulverizing mudstone and mixing it with water allows colonists to turn the fine sand into a compacted sand surface, capable of holding some constructions.
+AB_CompactedSand.tools.sand.label	sand
+## DefInjected/TerrainDef/Terrain_GelatinousSuperorganism.xml
+AB_Slime.label	hardened slime ground
+AB_RichSlime.label	rich hardened slime ground
+AB_SlimeGrass.label	slime grass
+AB_SlimyMud.label	slimy mud
+AB_SlimyMud.tools.slime.label	slime
+AB_LiquidSlime.label	shallow liquid slime
+AB_LiquidSlime.tools.water.label	water
+## DefInjected/TerrainDef/Terrain_IdyllicMeadows.xml
+AB_GrassyFlowerySoil.label	flowery soil
+AB_GrassyFlowerySoil.tools.dirt.label	dirt
+AB_FertileGrassyFlowerySoil.label	fertile flowery soil
+AB_FertileGrassyFlowerySoil.tools.dirt.label	dirt
+AB_FertileGrassyFlowerySoil_Oversaturated.label	oversaturated flowery soil
+AB_FertileGrassyFlowerySoil_Oversaturated.tools.dirt.label	dirt
+## DefInjected/TerrainDef/Terrain_MechanoidIntrusion.xml
+GU_MetalFloor1.label	polymer flooring
+GU_MetalFloor2.label	metallic floor
+GU_MetalFloor3.label	seamless metallic floor
+AB_SoilOnCrackedMetal.label	soil on cracked metal
+GU_Piping.label	uncovered metallic pipes
+## DefInjected/TerrainDef/Terrain_MiasmicMangrove.xml
+AB_FertileMud.label	fertile mud
+AB_FertileMud.tools.mud.label	mud
+AB_FertileMarsh.label	fertile marsh
+AB_FertileMarsh.tools.water.label	water
+AB_FertileMarsh.tools.mud.label	mud
+## DefInjected/TerrainDef/Terrain_Misc_Odyssey.xml
+AB_BrokenPoolTiles.label	broken poolside tiles
+AB_HealingSpringwater.label	healing spring water
+AB_HealingSpringwater.tools.water.label	water
+AB_MutagenicOcularWater.label	mutagenic ocular water
+AB_MutagenicOcularWater.tools.water.label	water
+AB_MutagenicOcularWaterFlood.label	shallow floodwater
+AB_MutagenicOcularWaterFlood.tools.water.label	water
+AB_Quicksand.label	quicksand
+AB_Quicksand.tools.water.label	water
+AB_ChocolateSoil.label	chocolate soil
+AB_ChocolateSoil.tools.chocolate.label	chocolate
+AB_ChocolateSoilRich.label	rich chocolate soil
+AB_ChocolateSoilRich.tools.chocolate.label	chocolate
+AB_Strawberry.label	strawberry
+AB_Strawberry.tools.strawberry.label	strawberry
+AB_Cream.label	whipped cream
+AB_Cream.tools.whipped_cream.label	whipped cream
+AB_CandySand.label	cookie sand
+AB_CandySand.tools.cookie_sand.label	cookie sand
+AB_HardenedChocolate.label	hardened chocolate
+AB_DryFlowerySoil.label	dry flowery soil
+AB_DryFlowerySoil.tools.dirt.label	dirt
+AB_ToxicFlowerySoil.label	toxic flowery soil
+AB_ToxicFlowerySoil.tools.dirt.label	dirt
+AB_ToxicFertileGrassyFlowerySoil.label	toxic fertile flowery soil
+AB_ToxicFertileGrassyFlowerySoil.tools.dirt.label	dirt
+AB_CeruleanSoil.label	cerulean soil
+AB_CeruleanSoil.tools.dirt.label	dirt
+AB_CeruleanSoilRich.label	rich cerulean soil
+AB_CeruleanSoilRich.tools.dirt.label	dirt
+AB_GauranlenSoil.label	gauranlen soil
+AB_GauranlenSoil.tools.dirt.label	dirt
+AB_GauranlenSoilRich.label	rich gauranlen soil
+AB_GauranlenSoilRich.tools.dirt.label	dirt
+AB_Calcified.label	calcified soil
+AB_Calcified.tools.gravel.label	gravel
+AB_Crystallized.label	partially crystallized soil
+AB_Crystallized.tools.gravel.label	gravel
+AB_OdysseyFlesh.label	flesh
+AB_OdysseyFlesh.description	A dense mat of organic flesh that clings loosely to the ground.
+AB_CorruptedIntrusion.label	corrupted intrusion
+## DefInjected/TerrainDef/Terrain_MycoticJungle.xml
+AB_MycoticSoil.label	mycotic soil
+AB_MycoticSoil.tools.dirt.label	dirt
+AB_MycoticSoilRich.label	rich mycotic soil
+AB_MycoticSoilRich.tools.dirt.label	dirt
+AB_MycoticGrass.label	mycotic grass
+## DefInjected/TerrainDef/Terrain_OcularForest.xml
+GU_AlienSand.label	red-tinged ground
+GU_RichAlienSand.label	rich red-tinged ground
+GU_AlienSandFine.label	fine red sand
+GU_RedWaterShallow.label	red shallow water
+GU_RedWaterShallow.tools.water.label	water
+GU_RedWaterDeep.label	red deep water
+GU_RedWaterDeep.tools.water.label	water
+GU_RedWaterMovingChestDeep.label	chest-deep red moving water
+GU_RedWaterMovingChestDeep.tools.water.label	water
+GU_RedWaterMovingShallow.label	shallow red moving water
+GU_RedWaterMovingShallow.tools.water.label	water
+GU_RedWaterOceanShallow.label	shallow red ocean water
+GU_RedWaterOceanShallow.tools.water.label	water
+GU_RedWaterOceanDeep.label	deep red ocean water
+GU_RedWaterOceanDeep.tools.water.label	water
+GU_MossyRed.label	parched sand
+GU_AlienSoftSand.label	soft red sand
+GU_AlienSoftSand.tools.red_sand.label	red sand
+## DefInjected/TerrainDef/Terrain_PropaneLakes.xml
+AB_PackedSnow.label	packed snow
+AB_PackedIce.label	packed ice
+AB_SolidPropane.label	solid propane compounds
+AB_SnowOverRocks.label	snowed rocky terrain
+AB_PropaneLake.label	liquid propane lake
+AB_PropaneLake.tools.water.label	water
+## DefInjected/TerrainDef/Terrain_PyroclasticConflagration.xml
+AB_BlackPebbles.label	black volcanic sand
+AB_Obsidian.label	rough obsidian
+AB_SolidifiedLava.label	solidifying lava
+AB_HardenedGrass.label	hardened grass
+AB_HardenedGrassFertile.label	fertile volcanic soil
+AB_LiquidLava.label	lava lake
+AB_LiquidLava.tools.water.label	water
+AB_VolcanicGravel.label	volcanic stony soil
+AB_VolcanicGravel.tools.gravel.label	gravel
+## DefInjected/TerrainDef/Terrain_TarPits.xml
+AB_AsphaltBridge.label	asphalt bridge
+AB_AsphaltBridge.description	A flat wooden surface on supportive beams which can be built over water. You can build light structures on bridges, but be careful - bridges are fragile. If a bridge falls, buildings on top of it fall as well.
+AB_LushGrass.label	lush grass
+AB_LushGrass.tools.dirt.label	dirt
+AB_GrassySand.label	grassy sand
+AB_GrassySand.tools.sand.label	sand
+AB_ParchedEarth.label	parched mud
+AB_ParchedEarth.tools.mud.label	mud
+AB_TarMud.label	tarred mud
+AB_TarMud.tools.mud.label	mud
+AB_ArtificialTar.label	tar puddles
+AB_Tar.label	tar pit
+AB_Tar.tools.water.label	water
+## DefInjected/TerrainDef/Terrain_Waters_Odyssey.xml
+AB_LiquidCream_Deep.label	deep liquid cream
+AB_LiquidCream_Deep.tools.water.label	water
+AB_LiquidCream_MovingChestDeep.label	chest-deep moving liquid cream
+AB_LiquidCream_MovingChestDeep.tools.water.label	water
+AB_LiquidCream_Shallow.label	shallow liquid cream
+AB_LiquidCream_Shallow.tools.water.label	water
+AB_LiquidCream_MovingShallow.label	shallow moving liquid cream
+AB_LiquidCream_MovingShallow.tools.water.label	water
+AB_LiquidCreamFlood.label	shallow flood liquid cream
+AB_LiquidCreamFlood.tools.water.label	water
+AB_LightRedWaterShallow.label	red-tinged shallow water
+AB_LightRedWaterShallow.tools.water.label	water
+AB_LightRedWaterDeep.label	red-tinged deep water
+AB_LightRedWaterDeep.tools.water.label	water
+AB_LightRedFlood.label	red-tinged flood water
+AB_LightRedFlood.tools.water.label	water
+AB_LightRedWaterMovingChestDeep.label	chest-deep red-tinged moving water
+AB_LightRedWaterMovingChestDeep.tools.water.label	water
+AB_LightRedWaterMovingShallow.label	shallow red-tinged moving water
+AB_LightRedWaterMovingShallow.tools.water.label	water
+AB_LightRedWaterOceanShallow.label	shallow red-tinged ocean water
+AB_LightRedWaterOceanShallow.tools.water.label	water
+AB_LightRedWaterOceanDeep.label	deep red-tinged ocean water
+AB_LightRedWaterOceanDeep.tools.water.label	water
+AB_CerebrospinalFluid_Deep.label	deep cerebrospinal fluid
+AB_CerebrospinalFluid_Deep.tools.water.label	water
+AB_CerebrospinalFluid_MovingChestDeep.label	chest-deep moving cerebrospinal fluid
+AB_CerebrospinalFluid_MovingChestDeep.tools.water.label	water
+AB_CerebrospinalFluid_Shallow.label	shallow cerebrospinal fluid
+AB_CerebrospinalFluid_Shallow.tools.water.label	water
+AB_CerebrospinalFluid_MovingShallow.label	shallow moving cerebrospinal fluid
+AB_CerebrospinalFluid_MovingShallow.tools.water.label	water
+AB_CerebrospinalFluidFlood.label	shallow flood cerebrospinal fluid
+AB_CerebrospinalFluidFlood.tools.water.label	water
+## DefInjected/ThingDef/AB_PsychotropicFungus.xml
+AB_PsychotropicFungus.label	psychotropic Fungus
+AB_PsychotropicFungus.description	These fungi taste funny and produce a potent mood-increasing chemical high. However, if eaten too often, they can generate a mild addiction.
+## DefInjected/ThingDef/AB_RawRimeNodules.xml
+AB_RawRimeNodules.label	raw rime nodules
+AB_RawRimeNodules.description	The sacs of a very strange plant, partly inorganic, that seems to extract propane from the surrounding landscape and store it as an energy source. These sacs can be consumed as a very mild euphoric.
+AB_RawRimeNodules.ingestible.ingestCommandString	Take {0}
+AB_RawRimeNodules.ingestible.ingestReportString	Taking {0}.
+## DefInjected/ThingDef/Buildings_AncientVents_Odyssey.xml
+AB_AncientFreezingVent.label	ancient freezing vent
+AB_AncientFreezingVent.description	A massive duct that drops endlessly into the ground. It will regularly vent freezing cold air from an underground megastructure, dramatically lowering the temperature of the surrounding area.
+AB_AncientGreyPallVent.label	ancient gray pall vent
+AB_AncientGreyPallVent.description	A massive duct that drops endlessly into the ground. It will regularly vent large amounts of sickly looking smoke that will plunge the area into a preternatural darkness.
+AB_AncientBloodRainVent.label	ancient blood rain vent
+AB_AncientBloodRainVent.description	A massive duct that drops endlessly into the ground. It will regularly vent huge red clouds of a vaporized blood-like substance that will coalesce into a disgusting blood rain.
+AB_AncientDeathPallVent.label	ancient death pall vent
+AB_AncientDeathPallVent.description	A massive duct that drops endlessly into the ground. It will regularly vent clouds of microscopic self-powered archites that affect corpses reanimating them to create a twisted imitation of life.
+## DefInjected/ThingDef/Buildings_DerelictArchonexus_Odyssey.xml
+AB_DerelictArchotechTower.label	derelict archotech tower
+AB_DerelictArchotechTower.description	A moderately-sized archotech tower rising from the ground. It seems to be long inert.
+AB_DerelictMajorArchotechStructure.label	derelict major archotech structure
+AB_DerelictMajorArchotechStructure.description	A large archotech structure. The dull green surface is ruiend and covered in vegetation. It seems to be long inert.
+AB_DerelictArchonexusCore.label	derelict archonexus core
+AB_DerelictArchonexusCore.description	The ruined central core of an archonexus. Its broad surfaces are dusty and covered with vegetation. It seems to be long inert.
+## DefInjected/ThingDef/Buildings_DerelictCluster_Odyssey.xml
+AB_Mech_RuinedTurret_Single.label	ruined mech turret base
+AB_Mech_RuinedTurret_Single.description	A ruined mech turret base. Completely broken.
+AB_Mech_RuinedTurret_Full.label	ruined mech turret
+AB_Mech_RuinedTurret_Full.description	A ruined mech turret. Completely broken. No useful components can be scavenged from this old turret.
+AB_Mech_RuinedShield.label	ruined mech shield
+AB_Mech_RuinedShield.description	A spent mech shield generator. Still faintly humming.
+AB_Mech_RuinedMortar_Single.label	ruined mech mortar gun
+AB_Mech_RuinedMortar_Single.description	A ruined mech mortar.
+AB_Mech_RuinedMortar_Full.label	ruined mech mortar
+AB_Mech_RuinedMortar_Full.description	A ruined mech auto-mortar. Completely broken. No useful components can be scavenged from this old mortar.
+AB_Mech_RuinedLargeGunPlatform.label	ruined mech large turret base
+AB_Mech_RuinedLargeGunPlatform.description	A ruined mech large turret base. Whatever this base held, it's long gone.
+AB_Mech_RuinedCell.label	ruined mech power cell
+AB_Mech_RuinedCell.description	A ruined mech power cell. Perhaps a few components can be scavenged from this one.
+AB_Mech_RuinedActivator.label	ruined mech proximity activator
+AB_Mech_RuinedActivator.description	A ruined mech proximity activator. Perhaps a few components can be scavenged from this one.
+AB_Mech_RuinedCapsule.label	ruined mech capsule
+AB_Mech_RuinedCapsule.description	A ruined mech capsule. Thankfully it has been empty for a while.
+AB_Mech_RuinedAssembler.label	ruined mech assembler
+AB_Mech_RuinedAssembler.description	A ruined mech assembler. Thankfully it has been inactive for a while.
+## DefInjected/ThingDef/Buildings_DerelictResort_Odyssey.xml
+AB_DerelictSwimmingPool.label	derelict swimming pool
+AB_DerelictSwimmingPool.description	This was once a relaxing swimming pool, but it is now a fetid, stagnant pool of water.
+AB_DerelictRecliner.label	derelict recliner
+AB_DerelictRecliner.description	A recliner used for relaxation. Rotten and dirty to the point of uselessness.
+AB_DerelictBeachUmbrella.label	derelict beach umbrella
+AB_DerelictBeachUmbrella.description	A beach umbrella so broken that it won't even keep the sun out.
+AB_DirtyBeachBall.label	dirty beach ball
+AB_DirtyBeachBall.description	A half-deflated beach ball that has seen better days.
+AB_DerelictPoolLadder.label	derelict pool ladder
+AB_DerelictPoolLadder.description	This pool ladder has seen better days.
+AB_DirtyPoolFloat.label	dirty pool float
+AB_DirtyPoolFloat.description	A deflated and dirty pool float.
+## DefInjected/ThingDef/Buildings_ForsakenCrags.xml
+AB_ShackledGamma.label	shackled gamma
+AB_ShackledGamma.description	A containment vat designed to preserve and regulate the life of a Gamma plant beyond its natural span. Suspended in nutrient gel and restrained by growth-limiting harnesses, the plant glows with its characteristic brilliance, enough to replace a sun lamp, while its metabolic decay is slowed to a crawl.\n\nRadagast berries are needed to build it to create the nutrient gel that sustains the plant.
+## DefInjected/ThingDef/Buildings_GallatrossGraveyard.xml
+AB_GallatrossBones.label	gallatross bones
+AB_GallatrossBones.description	This ribcage once belonged to a living Gallatross of truly exceptional size. Can be deconstructed to acquire ancient bones.
+AB_AncientGallatrossSkull.label	ancient gallatross skull
+AB_AncientGallatrossSkull.description	This skull belonged to an exceptionally huge Gallatross. Look at the size of this thing! Can be deconstructed to acquire ancient bones.
+AB_AncientBone.label	ancient bone
+AB_AncientBone.description	This fosilized bone might have belonged to an exceptionally large Gallatross. Can be deconstructed to acquire ancient bones.
+AB_AncientBrokenBone.label	ancient shattered bone
+AB_AncientBrokenBone.description	This fosilized bone might have belonged to an exceptionally large Gallatross. Can be deconstructed to acquire ancient bones.
+AB_AncientVerticalBone.label	ancient bones
+AB_AncientVerticalBone.description	These fosilized bones might have belonged to an exceptionally large Gallatross. Can be deconstructed to acquire ancient bones.
+AB_HugeGallatrossSkeleton.label	huge gallatross skeleton
+AB_HugeGallatrossSkeleton.description	These fosilized bones might have belonged to an exceptionally large Gallatross. Can be deconstructed to acquire ancient bones.
+AB_BoneDistillery.label	bone drill
+AB_BoneDistillery.description	A powerful hydraulic drill designed to bore into ancient bone deposits buried deep beneath the ground, breaking them loose for extraction and processing.
+## DefInjected/ThingDef/Buildings_GelatinousSuperorganism.xml
+AB_SlimeCompressor.label	slime compressor
+AB_SlimeCompressor.description	A bulky, churning machine that grinds down organic slime and compresses it under immense pressure, slowly transforming the ooze into dense, usable sandstone.
+## DefInjected/ThingDef/Buildings_MechanoidIntrusion.xml
+AB_AbandonedShipPart.label	long abandoned ship part
+AB_AbandonedShipPart.description	A mysterious crashed piece of a spaceship. This was probably full of mechanoids once, but it seems to have been left abandoned for a while. Perhaps it could be salvaged for raw materials.
+## DefInjected/ThingDef/Buildings_MechanoidIntrusion_Odyssey.xml
+AB_MechanoidReceiver.label	mechanoid resonance receiver
+AB_MechanoidReceiver.description	A wide band receiver designed to intercept lingering mechanoid signal patterns from the environment. It decodes the residual overclocking hum into a low-frequency auditory resonance: barely perceptible, yet strangely calming.
+## DefInjected/ThingDef/Buildings_Misc_Odyssey.xml
+AB_SugarChunk.label	sugar chunk
+AB_SugarChunk.description	A chunk of sugar. It can be deconstructed to acquire some sugar (if you are using VE Cooking).
+AB_WarpedStonePillar.label	warped stone pillar
+AB_WarpedStonePillar.description	A sandstone pillar warped into an unnatural form.
+AB_ObsidianSpire.label	obsidian spire
+AB_ObsidianSpire.description	A large spire made of solid obsidian.
+AB_NeutroamineSynthetizer.label	neutroamine synthetizer
+AB_NeutroamineSynthetizer.description	A specialized synthetizer that extracts neutroamine from the cerebrospinal fluid of vast surface lakes, processing it into a usable form.
+## DefInjected/ThingDef/Buildings_MycoticJungle_Odyssey.xml
+AB_MycoticCollector.label	mycotic collector
+AB_MycoticCollector.description	Collects edible airborne micro-fungi present in this map and extracts them into processed fungi that can be used as a food ingredient.
+## DefInjected/ThingDef/Buildings_OcularForest.xml
+AB_AlcyoniteSolar.label	alcyonite solar generator
+AB_AlcyoniteSolar.description	Uses alcyonite solar cells to extract electricity from the sun. Produces extra electricity if a red fog weather is present. Does not work in the dark or under artificial light.
+AB_AlcyoniteSolar_Advanced.label	advanced alcyonite solar generator
+AB_AlcyoniteSolar_Advanced.description	Uses alcyonite solar cells to extract electricity from the sun. Produces extra electricity if a red fog weather is present. Does not work in the dark or under artificial light.
+AB_OcularGasSpewer.label	ocular gas spewer
+AB_OcularGasSpewer.description	This device needs a small amount of electricity to condense atmospheric gases and spew a large cloud of ocular gas. This gas blocks ranged attacks greatly, working as a constant smokepop belt.
+AB_AlienComplianceCenter.label	ocular compliance center
+AB_AlienComplianceCenter.description	An experimental device that emmanates strange waves making everyone love the truly alien weather.
+## DefInjected/ThingDef/Buildings_Production.xml
+AB_CoreSampleDrill.label	core sample drill
+AB_CoreSampleDrill.description	The core sample drill allows you to acquire standard rock types not usually present in a particular biome. It needs to drill pretty deep to do so, and thus it costs quite a lot to build.
+## DefInjected/ThingDef/Buildings_PropaneLakes.xml
+AB_PropaneStove.label	propane stove
+AB_PropaneStove.description	A propane-fueled stove with an attached countertop for preparing meals.
+AB_PropaneFueledSmithy.label	propane smithy
+AB_PropaneFueledSmithy.description	A propane-fueled station for smithing non-mechanical weapons and tools.
+AB_PropaneSmelter.label	propane smelter
+AB_PropaneSmelter.description	Extracts usable metal from slag chunks and other mixed metal items.
+AB_PropaneTableMachining.label	propane machining table
+AB_PropaneTableMachining.description	A work station for assembling machinery like guns and ammunition, or breaking down dead mechanoids.
+AB_PropaneHeater.label	propane heater
+AB_PropaneHeater.description	A device that burns propane fuel and turns it into heat. The propane heater wastes a lot of fuel when attempting to reach temperatures too different from ambient ones, but it's quite fuel conservative if configured carefully.
+AB_Turret_Propane.label	propane turret
+AB_Turret_Propane.description	A portable flamethrower turret fueled with propane. May explode when damaged. Its dumb AI brain can't be directly controlled, so beware of friendly fire.
+AB_Turret_Propane.comps.CompRefuelable.fuelGizmoLabel	Remaining fuel
+AB_Turret_Propane.comps.CompRefuelable.fuelLabel	Remaining fuel
+AB_Turret_Propane.comps.CompRefuelable.outOfFuelMessage	Needs propane
+AB_Turret_Propane_Gun.label	propane turret gun
+AB_Turret_Propane_Gun.description	A propane flamethrower made to be mounted on a turret.
+AB_Turret_Propane_Gun.verbs.Verb_Shoot.label	propane turret gun
+AB_Turret_Propane_Bullet.label	flamethrower shot
+## DefInjected/ThingDef/Buildings_PyroclasticConflagration_Odyssey.xml
+AB_MagmaVent.label	magma vent
+AB_MagmaVent.description	A fiery fissure in the earth that intermittently erupts with jets of molten rock and searing gas.
+AB_MagmaThermalPlant.label	magma-thermal generator
+AB_MagmaThermalPlant.description	Produces electricity from hyperheated geothermal steam geysers in a magma rich zone. Must be placed on a steam geyser.
+## DefInjected/ThingDef/Buildings_Structure.xml
+AB_ExoticDoor.label	exotic door
+AB_ExoticDoor.description	A door built using exotic materials. Simple doors must be manually opened, which slows people down. The amount of slowdown depends on what the door is made of, though exotic doors open and close slightly faster than regular counterparts, at the cost of increased building costs.
+AB_ExoticAutoDoor.label	exotic autodoor
+AB_ExoticAutoDoor.description	An autodoor built using exotic materials. Powered operation allows people to move through the door without slowing down. Requires more materials than normal autodoors but also less power to work.
+AB_ExoticWall.label	exotic wall
+AB_ExoticWall.description	An impassable wall built using exotic materials. Slightly stronger than regular walls.
+AB_BoneWall.label	giant bones
+AB_BoneWall.description	An impassable block made of fosilized, solid bone. Whatever creature this bone belonged to is long gone.
+AB_ExoticColumn.label	exotic column
+AB_ExoticColumn.description	A column built using exotic materials. Does not block sight or movement and looks quite nice.
+## DefInjected/ThingDef/Buildings_Structure_Odyssey.xml
+AB_RustedWall.label	rusted wall
+AB_RustedWall.description	An impassable wall. Capable of holding up a roof.
+AB_MineableChocolate.label	chocolate
+AB_MineableChocolate.description	Chunks of compacted chocolate.
+AB_SmoothedChocolate.label	smoothed chocolate
+AB_SmoothedChocolate.description	Chunks of smoothed compacted chocolate. Is this revolting? Well, yes, yes it is.
+## DefInjected/ThingDef/Buildings_TarPits.xml
+AB_TarPump.label	tar pump
+AB_TarPump.description	Extracts tar from a natural tar hole and transforms the tar into chemfuel.
+AB_TrapIED_Tar.label	IED Tar trap
+AB_TrapIED_Tar.description	A pair of tar shells connected to a trigger which detonates on touch or bullet impact. Since it is hidden in the surrounding terrain, it cannot be placed adjacent to other traps. Animals can sense these when calm. Creates a puddle of tar that is very difficult to move across. It is also very difficult to remove, and tends to also remove other floors because it sticks to them and ruins them. All things considered, I wouldn't detonate one of this in my kitchen.
+AB_TarHole.label	tar hole
+AB_TarHole.description	A natural hole in the mud connecting to an underground tar reservoir. This will periodically spray fresh tar in the vicinity.
+AB_BumbledroneHive.label	bumbledrone hive
+AB_BumbledroneHive.description	A huge mound of hardened organic matter that communicates with an extensive underground hive. Bumbledrones will periodically exit this hive to gather food for the bumbledrone colony. Bumbledrones surrounding a hive are particularly aggressive, so it's best to give them some space.
+## DefInjected/ThingDef/Filth_Various.xml
+AB_SlagRubble.label	scattered slag
+AB_Filth_Tar.label	tar puddle
+AB_Filth_Tar.description	A puddle of flammable tar.
+AB_Filth_Propane.label	propane puddle
+AB_Filth_Propane.description	A puddle of flammable propane.
+## DefInjected/ThingDef/Gas_Various.xml
+AB_MycoticSpores.label	virulent mycotic spores
+AB_OcularGas.label	ocular gas
+## DefInjected/ThingDef/Items_Food.xml
+AB_SlimeMeal.label	slime meal
+AB_SlimeMeal.description	These hardened chunks of slime can be used as a last chance alternative to starvation. Barely edible, and absolutely disgusting.
+## DefInjected/ThingDef/Items_Resource_RawPlant.xml
+AB_PinkRawFungus.label	pink fungus
+AB_PinkRawFungus.description	Raw fungus. This variety lasts a longer time without rotting, making it more valuable.
+AB_BlueRawFungus.label	blue fungus
+AB_BlueRawFungus.description	Even though these mushrooms look weird, they are very nice to eat, even when raw.
+AB_PurpleRawFungus.label	purple fungus
+AB_PurpleRawFungus.description	Raw fungus. These particular fungi are more nutritive than usual, but there is a greater chance for them to cause food poisoning.
+AB_RawSlime.label	slime
+AB_RawSlime.description	Raw slime. This thing is edible. Barely.
+AB_RawCrystalHorn.label	crystal horn
+AB_RawCrystalHorn.description	Raw Crystal Horn. Only partially organic: part of its structure is clearly crystalline. Edible, but uncomfortably crunchy.
+AB_RawFrostLeaf.label	frost leaf
+AB_RawFrostLeaf.description	These translucent plants seem to be able to grow almost anywhere, even in some snow covered areas. They can be dried in a fire and used to feed herbivore animals efficiently.
+AB_RawTentacularFruit.label	tentacular fruit
+AB_RawTentacularFruit.description	The blue nodules grow at the end of each branch / tentacle of a tentacular plant, and they produce an eerie rattling sound from time to time.
+AB_RawIashiphus.label	iashiphus fruit
+AB_RawIashiphus.description	The fleshy bright red fruit of an iashiphus plant.
+AB_RawBrownBarrelCactus.label	brown barrel cactus
+AB_RawBrownBarrelCactus.description	The water-filled bulbs of a brown barrel cactus. Quite tasteless.
+AB_RawSugarFamewort.label	sugar famewort
+AB_RawSugarFamewort.description	These soft bulbs are exceptionally sweet, an ideal condiment for any dish.
+AB_RawBloodBouquet.label	blood bouquet
+AB_RawBloodBouquet.description	These fruit seem to be as hard as the trunk of the plant they are harvested from, and equally covered in spines. The inner flesh of the fruit tastes like blood-drenched meat, and herbivore animals will refuse to consume it.
+AB_BumbledroneFood.label	bumbledrone jelly
+AB_BumbledroneFood.description	This blob of organic matter is produced by bumbledrone caretakers, a caste of bumbledrones that never leaves the subterranean part of the hives. It provides sustenance for bumbledrones who need to leave the hive for any reason, such as foraging or hunting.
+AB_GiantSeeds.label	giant sunflower seeds
+AB_GiantSeeds.description	The seeds of the sunflower plant are more commonly eaten as a snack than as part of a meal. They can also be used as garnishes or ingredients in various recipes. These seeds are gigantic!
+AB_RawRagadast.label	ragadast
+AB_RawRagadast.description	Raw ragadast berries.
+## DefInjected/ThingDef/Items_Resource_Shell.xml
+AB_Bullet_Shell_Tar.label	tar shell
+## DefInjected/ThingDef/Items_Resource_Stuff.xml
+AB_AlcyoniteChunk.label	alcyonite chunk
+AB_AlcyoniteChunk.description	Alcyonite is a very rare variation of the almandite gemstone. Really strong, able to easily cut steel, yet malleable and with interesting piezoelectric capabilities.
+AB_CrystalWood.label	crystalline wood
+AB_CrystalWood.description	These brittle crystalline strands can be extracted from crystal flowers. Not flammable, but not strong at all. Internally, the are formed by a fine lattice of exotic crystals, creating a structure that is incredibly good at maintaining a constant temperature.
+AB_CrystalWood.stuffProps.stuffAdjective	crystalline
+GU_RedWood.label	red wood
+GU_RedWood.description	This red tinged wood is oddly strong, and a sweet scent emanates from it. Less flammable than terrestrial wood, but quite ugly.
+GU_RedWood.stuffProps.stuffAdjective	red wooden
+AB_MushroomWoodLog.label	mushroom stalks
+AB_MushroomWoodLog.description	These mushroom stalks have been hardened by age until they are almost as firm as a low quality wood. Very flammable, and not very resistant.
+AB_MushroomWoodLog.stuffProps.stuffAdjective	mushroom stalk
+AB_CordaxResin.label	cordax resin
+AB_CordaxResin.description	Dried chunks of cordax resin. A viscous slurry of organic compounds, this nectar-like liquid is used by the carnivorous Keening Cordax plant to trap insects. It is extremely sticky and can be used as a very efficient sealant.
+AB_AsphaltBucket.label	asphalt bucket
+AB_AsphaltBucket.description	Asphalt, or bitumen, is a sticky, black and highly viscous liquid or semi-solid, composed almost entirely of petroleum. It is present in most crude petroleums and in some natural deposits, such as tar pits.\n\nAsphalt can be used to build tarmac roads, greatly increasing movement in difficult terrains.
+AB_Propane.label	propane
+AB_Propane.description	A versatile fuel. Can be converted into chemfuel, or used as fuel for propane specific buildings, such as heaters or stoves. Insert inane and trite King of the Hill joke here (yes, I have heard them all, you are not original).
+AB_AncientBone_Stuff.label	ancient bone
+AB_AncientBone_Stuff.description	A sturdy building material made from the remains of long-dead creatures. Though aged and brittle, it can be worked much like wood into structures and furnishings.
+## DefInjected/ThingDef/Mote_Visual.xml
+AB_TarMote.label	Mote
+AB_MagmaMote.label	Mote
+## DefInjected/ThingDef/Plants_Crags_Polluted.xml
+AB_ToxicGamma.label	toxic gamma
+AB_ToxicGamma.description	A huge bioluminescent globular plant. Can be used as a natural darklight sunlamp to grow regular plants, though the toxic environment it grows at might not be the best for cultivation. Note that light-sensitive plants such as domesticated Stikehr and mushrooms should be kept far away from them.\n\nPlant details: Toxic Gamma is a wild plant. It needs no light, and produces 100% darklight on its own, which is enough to grow other plants around it.\n\nBased on artwork by Yevheniia Rodina, https://dribbble.com/Rodina
+AB_PollutedStikehr.label	polluted stikehr
+AB_PollutedStikehr.description	A giant alien mushroom that glows in the strange darkening mist. This stikehr has adapted to a very polluted environment, and produces a meager amount of wood. \n\nPlant details: Polluted Stikehr is a wild plant that can only grow in polluted terrains. It needs no light, and produces 50% darklight on its own, not enough to grow other plants around it. Can be harvested for normal wood.
+## DefInjected/ThingDef/Plants_FeraliskJungle.xml
+AB_RedBugloss.label	red bugloss
+AB_RedBugloss.description	One of the weirdest plants from Earth, genetically modified to thrive in wet, warm environments.
+AB_Gomphoeria.label	gomphoeria
+AB_Gomphoeria.description	An unusually tall plant with bright, pink nodules. Its nodules are slightly toxic for humans, and it produces a strange, rotten fruit smell, so it is considered absolutely inedible.
+AB_Aaklac.label	aaklac
+AB_Aaklac.description	A rare, huge flower which can be found in the deepest jungles. Its quite striking colour and nice smell makes it popular in gardening, if it can be extracted from the deep jungle, of course.\n\nBased on artwork by Rob Smyth, https://robsmythart.com/projects
+AB_JungleTree.label	deep jungle tree
+AB_JungleTree.description	A towering, ancient tree with dense foliage and thick, twisting roots—its canopy forms part of the near-impenetrable roof of the deep jungle.\n\nBased on concept art for plants for Guild Wars.
+## DefInjected/ThingDef/Plants_FeraliskJungle_Polluted.xml
+AB_JungleTree_Polluted.label	deep jungle polux
+AB_JungleTree_Polluted.description	This jungle polux tree has adapted so perfectly to polluted soil and airborne toxins that it doesn't even need to remove pollution from its environment.\n\nPlant details: Deep jungle polux trees are a wild plant, and they need minimum terrain fertility of 0.05. Can only grow in polluted terrains. Can be harvested for small amounts of Red Wood. Tree lover ideologies don't much care about chopping down these weird trees.\n\nBased on art by Corndoggy and Motones, https://www.deviantart.com/motones/art/Xeno-Plants-503932885
+AB_WeepingToxberry.label	weeping toxberry
+AB_WeepingToxberry.description	A short toxin-adapted shrub with berries so unbelievably toxic that no animal would ever dare consume them.\n\nPlant details:Difficult to move through, it slows down anyone moving over it. It can only grow in polluted areas.\n\nBased on artwork by Rob Smyth, https://robsmythart.com/projects
+## DefInjected/ThingDef/Plants_ForsakenCrags.xml
+AB_GiantStikehr.label	giant stikehr
+AB_GiantStikehr.description	A giant alien mushroom that glows in the strange darkening mist. Contrary to the smaller domesticated strands, the giant Stikehr can grow in light environments, as long as it is protected by the Forsaken mists. Its stalk is so hardened that it can be considered wood for all intents and purposes. \n\nPlant details: Giant Stikehr is a cultivated plant that also appears in the wild, and it needs minimum terrain fertility of 0.7. It needs no light, and produces 50% light on its own, not enough to grow other plants around it. Can be harvested for normal wood.\n\nBased on art by Tyson Roberts, https://www.artstation.com/tyson
+AB_GiantSeptimum.label	giant septimum
+AB_GiantSeptimum.description	This Septimum plant has grown to an enormous size, with a flowering top as large as a person. Domesticated septimum plants are used as a source of Ultima fibers, but this exemplar is way too old and its fibers are too hard to be used in a practical way.\n\nPlant details: Giant Septimum is a wild plant that cannot be cultivated, and it needs minimum terrain fertility of 0.7. It needs no light.
+AB_GlowingGrass.label	grass
+AB_GlowingGrass.description	Wild grass. Grows anywhere there is a little light and minimally fertile ground.
+AB_WildRadagast.label	wild ragadast
+AB_WildRadagast.description	This twisting alien plant grows small glowing berries that can be harvested and consumed. Radagast berries can be used as a base for a growth medium to stabilize gamma plants.\n\nPlant details: Wild Ragadast is a wild plant that cannot be cultivated, and it needs minimum terrain fertility of 0.7. It needs no light, and produces 50% light on its own, not enough to grow other plants around it.
+AB_GiantGamma.label	giant gamma
+AB_GiantGamma.description	Like many other flora from the Forsakens native planet, this huge globular plant is bioluminescent. Smaller specimens can be used as a decorative light source, whereas this wild exemplar emits so much light that it can be used as a natural sunlamp to grow regular plants. Note that light-sensitive plants such as domesticated Stikehr and mushrooms should be kept far away from them.\n\nPlant details: Giant Gamma is a cultivated plant that also appears in the wild, and it needs minimum terrain fertility of 0.7. It needs no light, and produces 100% light on its own, which is enough to grow other plants around it.\n\nInspired by an iStockPhoto collection: https://www.istockphoto.com/en/vector/beautiful-fantasy-mushrooms-set-gm665380048-121272853
+## DefInjected/ThingDef/Plants_GallatrossGraveyard.xml
+AB_TangleTea.label	tangle tea
+AB_TangleTea.description	This strange plant seems to be of alien origins. It doesn't seem to be fit for human consumption. Its common name alludes to the tea-bag shape of its flowers, and the fact that its sap is a very sticky substance.\n\nInspired by art by Desiree-m. Deviantart page no longer exists :(
+AB_EuphorbiaRimworldia.label	euphorbia rimworldia
+AB_EuphorbiaRimworldia.description	A plant of the euphorbia genus, commonly called spurges. This plant has adapted to arid climates and stores a lot of water inside their spine-covered leaves.
+AB_DeadBowerTree.label	dead bower tree
+AB_DeadBowerTree.description	Despite its common name, the dead bower tree is not truly dead, just exceptionally adapted to survival in arid weather. The tree produces huge leaves every few decades. These leaves harness energy via photosynthesis, and this chemical energy is stored in brown coloured chemical postules that act as natural batteries. The tree then uses that energy slowly over the following years, only producing more leaves when it is depleted.
+## DefInjected/ThingDef/Plants_GelatinousSuperorganism.xml
+AB_Slimecasia.label	slimecasia
+AB_Slimecasia.description	Although at first sight this seems to be an independent plant, its roots are intricately interconnected with the rest of the gelatinous superorganism.
+AB_SlimyFern.label	slimy fern
+AB_SlimyFern.description	Although at first sight this seems to be an independent plant, its roots are intricately interconnected with the rest of the gelatinous superorganism.
+AB_TallSlimyGrass.label	tall slimy grass
+AB_TallSlimyGrass.description	Wild tall grass. Slows down anyone moving over it.
+AB_SlimyTree.label	slimy tree
+AB_SlimyTree.description	This tree doesn't seem to be entirely solid. Upon further examination, it isn't an independent entity, its roots fusing seamlessly with the hardened gelatinous ground.
+AB_LargeSlimyTree.label	large slimy tree
+AB_LargeSlimyTree.description	This tree doesn't seem to be entirely solid. Upon further examination, it isn't an independent entity, its roots fusing seamlessly with the hardened gelatinous ground.
+## DefInjected/ThingDef/Plants_Gelatinous_Polluted.xml
+AB_ToxiBulb.label	toxibulb
+AB_ToxiBulb.description	This slimy bulb seems to be feeding on the polluted terrain like a parasite.
+## DefInjected/ThingDef/Plants_Graveyard_Polluted.xml
+AB_EuphorbiaDesiccata.label	euphorbia desiccata
+AB_EuphorbiaDesiccata.description	A plant of the euphorbia genus, commonly called spurges. This plant is a variety of the Euphorbia Rimworldia plant that has adapted to polluted environments.
+## DefInjected/ThingDef/Plants_IdyllicMeadows.xml
+AB_Flowers.label	flowers
+AB_Flowers.description	A bunch of colourful flowers.
+AB_GargantuanLithops.label	gargantuan lithops
+AB_GargantuanLithops.description	Lithops is a genus of succulent plants often known as pebble plants or living stones, due to their stone-like appearance that allows them to avoid being eaten by blending in with surrounding rocks. This gigantic lithops has been genetically modified to actually gather small amounts of metals and stone and incorporate them into its structure. Who said geneticists lack a sense of humour?\n\nPlant details: Gargantuan lithops is a wild plant that cannot be cultivated, and it needs minimum terrain fertility of 0.7. Can be harvested for steel and a stone chunk.
+AB_GiantFlower.label	giant mutant hibiscus
+AB_GiantFlower.description	Giant flowers genetically modified by a long-forgotten genetics company using the genome of a hibiscus plant. These seem to be blooming almost continuously. Their stalks are not strong enough to be used as a wood substitute, but they are incredibly pretty.\n\nPlant details: Giant mutant hibiscus is a wild plant that cannot be cultivated. Very beautiful.\n\nBased on a tileset from Kokoro Reflections: https://kokororeflections.com/product/kr-flower-forest-tileset-for-rpgs/
+AB_GiantSunflower.label	giant sunflower
+AB_GiantSunflower.description	Giant flowers genetically modified by a long-forgotten genetics company using the genome of the common sunflower plant. These seem to be blooming almost continuously. Their stalks are very strong and durable, so they can be cut and used as a wood substitute, while the flower itself also produces sunflower seeds that can be consumed by both animals and colonists.\n\nPlant details: Giant sunflower is a cultivated plant that also appears in the wild, and it needs minimum terrain fertility of 0.7. Can be harvested for wood and giant sunflower seeds.\n\nBased on a tileset from Kokoro Reflections: https://kokororeflections.com/product/kr-flower-forest-tileset-for-rpgs/
+AB_GiantTulip.label	giant tulips
+AB_GiantTulip.description	Giant flowers genetically modified by a long-forgotten genetics company using the genome of a tulip plant. These seem to be blooming almost continuously. Their stalks are very strong and durable, so they can be cut and used as a wood substitute.\n\nPlant details: Giant tulip is a cultivated plant that also appears in the wild, and it needs minimum terrain fertility of 0.7. Can be harvested for wood.\n\nBased on a tileset from Kokoro Reflections: https://kokororeflections.com/product/kr-flower-forest-tileset-for-rpgs/
+## DefInjected/ThingDef/Plants_Meadows_Polluted.xml
+AB_ToxiGrass.label	toxi grass
+AB_ToxiGrass.description	Better not eat this...
+AB_GiantToxicFlower.label	giant toxic flower
+AB_GiantToxicFlower.description	A continously blooming giant flower with a dangerous, bright pink colour. Its stalk can be cut and used as a wood substitute.\n\nPlant details: Giant toxic flowers are wild plants that only grow in polluted ground. Can be harvested for meager amounts of wood.
+## DefInjected/ThingDef/Plants_MechanoidIntrusion.xml
+AB_SessileMechanoid.label	sessile mechanoid tree
+AB_SessileMechanoid.description	This thing was once a tree. Mechanoids repurposed its cells into a half-tree, half-mechanoid abomination, serving an unknown purpose. Perhaps a bit of wood could be extracted from it.\n\nInspired by art by Desiree-m. Deviantart page no longer exists :(
+AB_HardyGrass.label	hardy grass
+AB_HardyGrass.description	Wild grass. Grows anywhere there is a little light and minimally fertile ground.
+## DefInjected/ThingDef/Plants_MiasmicMangrove.xml
+AB_MangroveTree.label	mangrove tree
+AB_MangroveTree.description	A tree that grows in saline or brackish water. They contain a complex salt filtration system and a complex root system to cope with saltwater immersion, and they are adapted to the low-oxygen conditions of waterlogged mud.\n\nPlant details: Mangrove trees are a cultivated plant that also appears in the wild, and it needs minimum terrain fertility of 1. Can be harvested for wood.
+AB_ParasiticMangrove.label	parasitic mangrove
+AB_ParasiticMangrove.description	A weird, colourful plant adapted to extract nutrients from mangrove trees. Its own roots are covered in barbs capable of puncturing and integrating into the root systems of mangrove trees, acting as a parasitic organism. Its sap is slightly poisonous to many animals, but primates seem to be unaffected by it, and it can be used in fact as a crude herbal medicine.\n\nPlant details: Parasitic mangrove is a wild plant that cannot be cultivated, and it needs minimum terrain fertility of 1. Can be harvested for herbal medicine.\n\nBased on art by Tyson Roberts, https://www.artstation.com/tyson
+AB_MangrovePalm.label	mangrove palm
+AB_MangrovePalm.description	A palm tree adapted to the mangrove conditions.\n\nBased on art by Tyson Roberts, https://www.artstation.com/tyson
+## DefInjected/ThingDef/Plants_MycoticJungle.xml
+AB_Glowstool.label	glowstool
+AB_Glowstool.description	A small brown mushroom typically found in caves. It smells like an old, dirty rag pulled from the stomach of a rotting muffalo - but it tastes surprisingly good when cooked. This glowstool variant has adapted to outside life, but produces very few edible caps when harvested.\n\nPlant details: Glowstool is a cultivated plant that also appears in the wild, and it needs minimum terrain fertility of 0.95. Can be harvested for raw fungus.
+AB_LilacBeacon.label	lilac beacon
+AB_LilacBeacon.description	The lilac beacon is a tall mushroom with a bright purple cap. It is much more nutritive than other fungi, but it has a greater risk of being hard on the stomach. This variant has adapted to outside life, but produces very few edible caps when harvested.\n\nPlant details: Lilac beacon is a cultivated plant that also appears in the wild, and it needs minimum terrain fertility of 0.95. Can be harvested for purple raw fungus.
+AB_WitchesOyster.label	witches' oyster
+AB_WitchesOyster.description	A small, ramified fungal colony with a pungent aroma. A witches' oyster produces caps that take quite a long time to deteriorate.\n\nPlant details: Witches' Oyster is a cultivated plant that also appears in the wild, and it needs minimum terrain fertility of 0.95. Can be harvested for pink raw fungus.\n\nBased on art by Alex Konstad, http://www.alexkonstad.com/
+AB_AgaricusDomeCap.label	agaricus domecap
+AB_AgaricusDomeCap.description	Everything about this fungus screams "I'm toxic, stay away from me". Of course this doesn't stop some enterprising individuals from consuming it as a drug. The agaricus domecap is a psychotropic fungus, and should be consumed with extreme precaution, if at all.\n\nPlant details: Agaricus domecap is a cultivated plant that also appears in the wild, and it needs minimum terrain fertility of 0.95. Can be harvested for psychotropic fungus.\n\nBased on art by Alex Konstad, http://www.alexkonstad.com/
+AB_Agarilux.label	agarilux
+AB_Agarilux.description	An enormous purple mushroom. Its size and glowing protrusions make this fungus beautiful to look at. This agarilux variant has adapted to outside life, but produces very few edible caps when harvested.\n\nPlant details: Agarilux is a cultivated plant that also appears in the wild, and it needs minimum terrain fertility of 0.95. Can be harvested for purple raw fungus.
+AB_GiantAgarilux.label	giant agarilux
+AB_GiantAgarilux.description	A colossal purple mushroom. Its size and glowing protrusions make this fungus beautiful to look at. Its stalk has been hardened, giving it a firmness similar to a weak wood.\n\nPlant details: Giant Agarilux is a cultivated plant that also appears in the wild, and it needs minimum terrain fertility of 0.95. Can be harvested for mushroom stalks.
+AB_ArbuscularMycorrhiza.label	arbuscular mycorrhiza
+AB_ArbuscularMycorrhiza.description	A mycorrhiza is a symbiotic association between a fungus and a plant. This particular organism is highly advanced, and the two symbionts have almost fused into a single creature that keeps the supporting structures of the original tree (the trunk) and the caps and mycelium of the original fungus. A small quantity of wood can be harvested from its trunk.\n\nPlant details: Arbuscular mycorrhiza is a cultivated plant that also appears in the wild, and it needs minimum terrain fertility of 0.95. Can be harvested for normal wood.\n\nBased on art by Aphrodite: https://www.artstation.com/artwork/3ol4AB
+AB_DribblingCap.label	dribbling cap
+AB_DribblingCap.description	A huge pink mushroom, constantly dribbling a pungent, resin-like substance. This substance is a potent neurotoxin that could potentially be extracted and used as a weapon.\n\nPlant details: Dribbling cap is a cultivated plant that also appears in the wild, and it needs minimum terrain fertility of 0.95. Can be harvested for powerful single use poison darts.\n\nBased on art by Alex Konstad, http://www.alexkonstad.com/
+AB_RecurvedStropharia.label	recurved stropharia
+AB_RecurvedStropharia.description	A big greyish mushroom. Its size and glowing protrusions make this fungus beautiful to look at. Its stalk has been hardened, giving it a firmness similar to a weak wood.\n\nPlant details: Recurved stropharia is a cultivated plant that also appears in the wild, and it needs minimum terrain fertility of 0.95. Can be harvested for mushroom stalks.\n\nBased on art by Alex Konstad, http://www.alexkonstad.com/
+AB_SlimyPholiota.label	slimy pholiota
+AB_SlimyPholiota.description	A blueish-pink mushroom, secreting a slimy substance that attracts insects. This substance paralyzes the insects, and eventually kills them, being used by the fungus as fertilizer. Strangely enough, the slimy substance gives this fungus a very rich taste, and it can even be consumed raw.\n\nPlant details: Slimy pholiota is a cultivated plant that also appears in the wild, and it needs minimum terrain fertility of 0.95. Can be harvested for blue raw fungus.\n\nBased on art by Alex Konstad, http://www.alexkonstad.com/
+AB_GlowingAgarilux.label	glowing agarilux
+AB_GlowingAgarilux.description	An enormous purple mushroom, glowing in darkness with a faint purple luminiscence. Its size and glowing protrusions make this fungus beautiful to look at. This agarilux variant has adapted to outside life, but produces very few edible caps when harvested.\n\nPlant details: Glowing agarilux is a wild plant that cannot be cultivated, and it needs minimum terrain fertility of 0.95. Can be harvested for raw purple fungus.
+AB_Bryolux.label	bryolux
+AB_Bryolux.description	A blue moss typically found in deep, dark caves. It is sticky, with tangled fibers, which slows anyone walking over it. This bryolux variant has adapted to outside life.
+AB_AgariluxPrime.label	Agarilux Prime
+AB_AgariluxPrime.description	An unbelievably large exemplar of Agarilux. This myconic colony has adapted perfectly to its environment, releasing large clouds of extremely dangerous spores that fill the air surrounding it. These spores attack both other fungi and roaming animals, and after they inevitably suffocate, the Agarilux Prime extends prehensile hyphae to feed on their rotting corpses.\n\nThe Agarilux Prime can be cut just like any other plant, but unless the person doing the cutting is perfectly protected against the toxic spores, it will probably prove to be a one-way mission. Or mortars... I guess mortars will work too.
+## DefInjected/ThingDef/Plants_Mycotic_Polluted.xml
+AB_GiantAgariTox.label	agaritox
+AB_GiantAgariTox.description	A giant mushroom that has adapted to growing in extremely polluted environments.\n\nPlant details: Agaritox is a wild plant that can only grow in poilluted soil. Can be harvested for meager amounts of mushroom stalks.
+AB_LandCoral.label	amethyst land coral fungus
+AB_LandCoral.description	A very strange purple coloured fungus that resembles a coral. Grows only in polluted soil.
+## DefInjected/ThingDef/Plants_OcularForest.xml
+AB_AlienGrass.label	ocular grass
+AB_AlienGrass.description	This grass is very bizarre, probably not even 100% carbon based. Not very edible for terrestrial creatures.
+AB_RedLeaves.label	ocular plant
+AB_RedLeaves.description	This grass is very bizarre, probably not even 100% carbon based. Not very edible for terrestrial creatures.
+AB_RedPlantsTall.label	ocular plant
+AB_RedPlantsTall.description	This grass is very bizarre, probably not even 100% carbon based. Not very edible for terrestrial creatures.
+AB_AlienTree.label	ocular tree
+AB_AlienTree.description	This outlandish tree is not even 100% carbon based, and it seems to be struggling to grow from exposure to a terrestrial environment. Strange fruits resembling eyeballs hang from the tree, but they are probably not edible. Its wood releases a powerful, sweet scent. Perhaps it can be somehow useful.\n\nPlant details: Ocular Trees are a cultivated plant that also appears in the wild, and it needs minimum terrain fertility of 0.05. Can be harvested for Red Wood. Tree lover ideologies don't much care about chopping down these weird trees.
+AB_HalfAlienTree.label	half transformed ocular tree
+AB_HalfAlienTree.description	A strange infection seems to be transforming this regular oak into an ocular tree. It still retains its trunk and its leaves, though they are beginning to transform into pulsating red structures that don't seem to be able to survive in this universe. This tree might be useful to harvest a small amount of real wood.\n\nPlant details: Half transformed ocular trees are a wild plant that cannot be cultivated, and it needs minimum terrain fertility of 0.05. Can be harvested for normal wood.
+AB_TentacularPlant.label	tentacular aberration
+AB_TentacularPlant.description	An outlandish plant with blue nodules at the end of each branch that produce an eerie rattling sound from time to time.\n\nPlant details: Tentacular aberrations are a wild plant that cannot be cultivated, and it needs minimum terrain fertility of 0.05. Can be harvested for tentacular fruit.\n\nBased on artwork by Rob Smyth, https://robsmythart.com/projects
+AB_GlobularPlant.label	globular aberration
+AB_GlobularPlant.description	A sickly pink orb supported by a network of gnarled branches. A reddish sap constantly drips from its wood, and seems to keep insects at bay.\n\nPlant details: Globular aberrations are a wild plant that cannot be cultivated, and it needs minimum terrain fertility of 0.05. Can be harvested for red wood.\n\nBased on artwork by Rob Smyth, https://robsmythart.com/projects
+AB_BloodBouquet.label	blood bouquet
+AB_BloodBouquet.description	A spiny plant with some kind of fruit hanging from its top. The fruit seems to be as hard as the trunk itself, and equally covered in spines.\n\nPlant details: Blood bouquet is a wild plant that cannot be cultivated, and it needs minimum terrain fertility of 0.05. Can be harvested for raw blood bouquet.
+## DefInjected/ThingDef/Plants_Ocular_Polluted.xml
+AB_EyeGrass.label	flowering ocular grass
+AB_EyeGrass.description	Are those... eyes?
+AB_AlienTree_Polluted.label	mutated ocular tree
+AB_AlienTree_Polluted.description	This ocular tree has been affected by pollution and mutated in strange ways. Concerningly, it seems to actually be flourishing in these conditions.\n\nPlant details: Mutated ocular trees are a wild plant, and they need minimum terrain fertility of 0.05. Can only grow in polluted terrains. Can be harvested for small amounts of Red Wood. Tree lover ideologies don't much care about chopping down these weird trees.
+AB_GlobularPlant_Polluted.label	polluted globular aberration
+AB_GlobularPlant_Polluted.description	This globular aberration has been affected by pollution and mutated in strange ways. Concerningly, it seems to actually be flourishing in these conditions.\n\nPlant details: Polluted globular aberrations are a wild plant, and they need minimum terrain fertility of 0.05. Can only grow in polluted terrains. Can be harvested for small amounts of Red Wood. Tree lover ideologies don't much care about chopping down these weird trees.
+## DefInjected/ThingDef/Plants_Odyssey_Cacti.xml
+AB_Plant_AnimaCactus_Small.label	small anima cactus
+AB_Plant_AnimaCactus_Small.description	A small anima-touched cactus. Hums faintly with psychic life. They can be harvested for wood.
+AB_Plant_AnimaCactus_Medium.label	anima cactus
+AB_Plant_AnimaCactus_Medium.description	An anima-touched cactus. Hums faintly with psychic life. They can be harvested for wood.
+AB_Plant_AnimaCactus_Grand.label	grand anima cactus
+AB_Plant_AnimaCactus_Grand.description	A large anima-touched cactus. Hums faintly with psychic life. They can be harvested for wood.
+AB_Plant_AnimaPalm.label	anima palm
+AB_Plant_AnimaPalm.description	An anima-touched palm. It lacks the psychic potency of a true anima tree, but still hums faintly with psychic life.\n\nPlant details: Anima palms are wild plants that cannot be cultivated, and they need minimum terrain fertility of 0.05. They can be harvested for wood.
+AB_Plant_OcularCactus_Small.label	small ocular cactus
+AB_Plant_OcularCactus_Small.description	A small ocular cactus. Is it looking at you?\n\nPlant details: Ocular cacti are wild plants that cannot be cultivated, and they need minimum terrain fertility of 0.05. Can be harvested for red wood.
+AB_Plant_OcularCactus_Large.label	ocular cactus
+AB_Plant_OcularCactus_Large.description	An ocular cactus. It is definitely keeping an eye (or several) on the colonists.\n\nPlant details: Ocular cacti are wild plants that cannot be cultivated, and they need minimum terrain fertility of 0.05. Can be harvested for red wood.\n\nBased on artwork by Ulysse Verhasselt, https://www.artstation.com/artwork/ORkP8
+AB_DesertBouquet.label	desert bouquet
+AB_DesertBouquet.description	A spiny plant with some unusual fleshy tentacles sprouting from the top. Seems to be a variation of the blood bouquet found in ocular forests, but the fruit is inedible.\n\nPlant details: Desert bouquet is a wild plant that cannot be cultivated, and it needs minimum terrain fertility of 0.05.
+## DefInjected/ThingDef/Plants_Odyssey_Clover.xml
+AB_Clovers.label	clovers
+AB_Clovers.description	A hardy, low-growing plant with distinctive lobed leaves that spreads into dense, verdant carpets across the forest floor.
+AB_Plant_TreeClover.label	clover tree
+AB_Plant_TreeClover.description	A towering tree whose broad canopy is formed from oversized clover-shaped leaves, casting cool shade over the forest below. It doesn't yield much usable wood.
+AB_Plant_TreeLilypad.label	lilypad tree
+AB_Plant_TreeLilypad.description	A peculiar tree with broad, flat leaves resembling giant lilypads, forming layered canopies above the forest floor.
+## DefInjected/ThingDef/Plants_Odyssey_Desserts.xml
+AB_DessertTree.label	dessert tree
+AB_DessertTree.description	An easy answer to the question: "what would you create if you were an insane plant geneticist?". This whimsical tree with a sugary trunk, frosting-like growths, and fruit that resembles glazed confections lures animals and colonists alike with the promise of edible delights.\n\nPlant details: Dessert trees are wild plants, and they need minimum terrain fertility of 0.7. Can be harvested for wood and fine desserts.
+AB_Plant_SugarcaneGrass.label	sugarcanes
+AB_Plant_SugarcaneGrass.description	Wild grass modified to look like giant sugarcanes.
+AB_ChocolateTree.label	chocolate tree
+AB_ChocolateTree.description	A weird combination of a tree, a mushroom, whipped cream, chocolate... sprinkles... Ok, very, very weird.\n\nPlant details: Chocolate trees are wild plants, and they need minimum terrain fertility of 0.7. Can be harvested for wood and chocolate.
+AB_Plant_Lollipops.label	lollipops
+AB_Plant_Lollipops.description	Strange plants genetically modified to look like giant lollipops.
+## DefInjected/ThingDef/Plants_Odyssey_Flesh.xml
+AB_FleshTree.label	flesh tree
+AB_FleshTree.description	A grotesque growth of pulsing, veiny tissue stretched over a warped wooden frame. Its "bark" oozes with coagulated sap that smells faintly of blood.\n\nPlant details: Flesh trees are wild plants, and they need minimum terrain fertility of 0.7. Can be harvested for wood and twisted flesh.\n\nInspired by art by Prajwal K Kumar https://www.artstation.com/prajwalkkumar
+AB_FleshyTumor.label	fleshy tumor
+AB_FleshyTumor.description	An irregular tumorous growth that swells from the ground like diseased flesh, spreading across the landscape.\n\nPlant details: fleshy tumors are wild plants, and they need minimum terrain fertility of 0.7. Can be harvested for twisted flesh.\n\nInspired by No Man's Sky.
+AB_FleshTentacle.label	flesh tentacle
+AB_FleshTentacle.description	A fleshy tendril that erupts from the ground, twisting and writhing as though part of some unseen organism.\n\nPlant details: flesh tentacles are wild plants, and they need minimum terrain fertility of 0.7. Can be harvested for twisted flesh.
+AB_TentacleGrass.label	flesh tentacle grass
+AB_TentacleGrass.description	Looks dangerous.
+## DefInjected/ThingDef/Plants_Odyssey_Gauranlen.xml
+AB_GauGrass.label	gau grass
+AB_GauGrass.description	Orange tinted grass that moves silently in the wind.
+AB_GauMoss.label	lesser gauranlen moss
+AB_GauMoss.description	Symbiotic moss that grows in Gauranlen groves.
+AB_Plant_GauBush.label	gau bush
+AB_Plant_GauBush.description	A short orange-tinted shrub. Does not typically talk without alcohol being involved.
+AB_Plant_GauBrambles.label	gau brambles
+AB_Plant_GauBrambles.description	Tangled, thorny, woody shoots covered with orange leaves. Brambles grow in clusters, and slow down anyone moving over them.
+AB_Plant_GiantGauTree.label	giant gauranlen tree
+AB_Plant_GiantGauTree.description	An enormous relative of the Gauranlen tree. Though it shares the same distinctive appearance and faint psychic resonance, it no longer produces dryads. Some believe these giants are ancient Gauranlens whose inner queens have long since fallen dormant, while others claim they are the timeless homes of powerful nature spirits.
+## DefInjected/ThingDef/Plants_Odyssey_Mauve.xml
+AB_BloodGrass.label	blood grass
+AB_BloodGrass.description	Looks dangerous.
+AB_Plant_MauveBush.label	mauve bush
+AB_Plant_MauveBush.description	A short mauve shrub. Does not typically talk without alcohol being involved.
+AB_Plant_MauveBrambles.label	mauve brambles
+AB_Plant_MauveBrambles.description	Tangled, thorny, woody shoots covered with mauve leaves. Brambles grow in clusters, and slow down anyone moving over them.
+AB_Plant_MauvebloomTree.label	weeping mauvebloom
+AB_Plant_MauvebloomTree.description	A graceful tree with dense mauve foliage that constantly exudes thick, syrupy droplets.\n\nBased on artwork by Splix04, https://splix04.itch.io
+## DefInjected/ThingDef/Plants_Odyssey_Meadows.xml
+AB_ToxiGrass_Odyssey.label	toxi grass
+AB_ToxiGrass_Odyssey.description	Better not eat this...
+AB_ToxicFlowers.label	toxic flowers
+AB_ToxicFlowers.description	A bunch of poisonous looking flowers.
+AB_DryFlowers.label	dry flowers
+AB_DryFlowers.description	A bunch of dry terrain flowers.
+AB_DryFern.label	dry fern
+AB_DryFern.description	A fern adapted to a dry climate.\n\nPlant details: Dry fern is a wild plant that cannot be cultivated.
+AB_ToxicBush.label	toxic bush
+AB_ToxicBush.description	A poisonous looking bush adapted to toxic environments.\n\nPlant details: Toxic bush is a wild plant that cannot be cultivated.\n\nBased on artwork by Splix04, https://splix04.itch.io
+AB_GiantTrumpetglory.label	giant trumpetglories
+AB_GiantTrumpetglory.description	A cluster of large, trumpet-shaped blossoms reminiscent of morning glories. These giant flowers were genetically modified by a long-forgotten genetics company. These seem to be blooming almost continuously. Their stalks are not strong enough to be used as a wood substitute, but they are incredibly pretty.\n\nPlant details: Giant trumpetglory is a wild plant that cannot be cultivated. Very beautiful.
+AB_GiantPaleRose.label	giant pale roses
+AB_GiantPaleRose.description	Giant flowers genetically modified by a long-forgotten genetics company using the genome of a rose. These seem to be blooming almost continuously. Their stalks are very strong and durable, so they can be cut and used as a wood substitute.\n\nPlant details: Giant pale rose is a wild plant that cannot be cultivated. Can be harvested for wood.
+AB_GiantToxicFlower_Odyssey.label	giant toxic flower
+AB_GiantToxicFlower_Odyssey.description	A continously blooming giant flower with a dangerous, bright pink colour. Its stalk can be cut and used as a wood substitute.\n\nPlant details: Giant toxic flowers are wild plants that cannot be cultivated. Can be harvested for meager amounts of wood.
+AB_GiantToxicHornbloom.label	giant toxic hornbloom
+AB_GiantToxicHornbloom.description	A continously blooming giant flower. Its stalk can be cut and used as a wood substitute.\n\nPlant details: Giant toxic hornbloom are wild plants that cannot be cultivated. Can be harvested for meager amounts of wood.
+## DefInjected/ThingDef/Plants_Odyssey_Misc.xml
+AB_GoldenCubeTree.label	golden cube tree
+AB_GoldenCubeTree.description	These rare trees grow giant, shimmering golden cubes in place of fruit. Their trunks are smooth and warm, radiating a gentle comfort. When the wind rustles their leaves, the cubes chime softly, like distant laughter. Though they offer no practical boon beyond wood and gold, standing beneath one feels inexplicably reassuring.\n\nPlant details: Golden cube trees are wild plants, and they need minimum terrain fertility of 0.7. Can be harvested for wood and gold.\n\nBased on art by Sofia da Silva https://fisilva.artstation.com/projects/bkaDn
+AB_TechnoTree.label	techno tree
+AB_TechnoTree.description	A bizarre fusion of bark and circuitry, this half-synthetic tree hums with low energy pulses. It grows like a plant, but responds like a machine. Small amounts of circuitry can be extracted from them, making industrial-grade components a renewable resource in this region.\n\nPlant details: Techno trees are wild plants, and they need minimum terrain fertility of 0.7. Can be harvested for wood and components.\n\nInspired by art by Prajwal K Kumar https://www.artstation.com/prajwalkkumar
+AB_LuminescentTree.label	luminescent tree
+AB_LuminescentTree.description	A tree-like giant bramble that supports a huge globe of glowing sap that casts a soft, colorful light in the dark. Its branches cradle the orb like a lantern, and the liquid inside gently swirls with bioluminescent energy.\n\nPlant details: Luminescent trees are wild plants, and they need minimum terrain fertility of 0.7. Can be harvested for wood.\n\nInspired by art by Prajwal K Kumar https://www.artstation.com/prajwalkkumar
+AB_Plant_TreeWillow.label	weeping willow tree
+AB_Plant_TreeWillow.description	A graceful tree with long, sweeping branches draped in slender leaves that sway with the slightest breeze. It doesn't yield much usable wood.
+AB_Plant_GinkgoTree.label	ginkgo tree
+AB_Plant_GinkgoTree.description	A hardy tree with unique fan-shaped leaves, renowned for its resilience and spectacular golden foliage.
+AB_CalcifiedRemnant.label	calcified remnant
+AB_CalcifiedRemnant.description	Half-alive, half-dead, this plant seems to be partly organic and partly inorganic. Its living tissues persist within a greenish shell of mineralized growth, slowly replacing stems, leaves, and roots with stone-like structures. Yet beneath the calcified exterior, faint signs of life remain.\n\nPlant details: Calcified remnants are wild plants, and they need minimum terrain fertility of 0.7. Can be harvested for minute amounts of wood and random stone chunks.\n\nInspired by No Man's Sky.
+AB_LivingAlcyonite.label	living alcyonite
+AB_LivingAlcyonite.description	This crystalline organism grows and pulses with faint signs of life, its mineral body constantly shifting and regenerating. They were originally created as a bioengineered solution to alcyonite mining, but inevitably spread into the wild.\n\nPlant details: Living alcyonite are wild "plants", and they need minimum terrain fertility of 0.7. Can be harvested for alcyonite chunks.\n\nInspired by No Man's Sky.
+AB_MechCorruption.label	mechanoid corruption
+AB_MechCorruption.description	A different archotech from the one transforming this region has initiated a hostile takeover, infusing the sessile mechanoids here with a mechanite virus that corrupts them into twisted creations.\n\nPlant details: Mechanoid corruptions are wild plants, and they need minimum terrain fertility of 0.1. Can be harvested for minute amounts of wood.\n\nInspired by No Man's Sky.
+AB_MechNode.label	corrupted mech node
+AB_MechNode.description	A different archotech from the one transforming this region has initiated a hostile takeover, infusing the sessile mechanoids here with a mechanite virus that corrupts them into twisted creations.\n\nPlant details: Corrupted mech nodes are wild plants, and they need minimum terrain fertility of 0.1. Can be harvested for minute amounts of wood.\n\nInspired by No Man's Sky.
+AB_Tooth.label	giant false tooth
+AB_Tooth.description	These otherworldly plants grow within hollow marble lattices shaped like enormous teeth, using the casing for support and protection as their roots spread beneath the sands. A bizarre creation of an insane geneticist, their name and origins long lost to the centuries.\n\nPlant details: Giant false teeth are wild plants, and they need minimum terrain fertility of 0.1. Can be harvested for marble blocks and a bit of ancient bone.
+## DefInjected/ThingDef/Plants_PropaneLakes.xml
+AB_CrystalHorn.label	crystal horn
+AB_CrystalHorn.description	This strange flower seems to be only partially organic. Part of its structure is clearly crystalline, and it appears to be unaffected, or even bolstered, by the extremely cold climate. It might even be edible.\n\nPlant details: Crystal horn is a wild plant that cannot be cultivated, and it needs minimum terrain fertility of 0.25. It grows in low temperatures (above -65ºC, below 10ºC) and needs no light. Can be harvested for raw crystal horn.
+AB_FrostLeaf.label	frost leaf
+AB_FrostLeaf.description	These translucent plants seem to be able to grow almost anywhere, even in some snow covered areas. They can be dried in a fire and used to feed herbivore animals efficiently. \n\nPlant details: Frost leaf is a wild plant that cannot be cultivated, and it needs minimum terrain fertility of 0. It grows in low temperatures (above -65ºC, below 10ºC) and needs no light. Can be harvested for raw frost leaf.\n\nInspired by art by Desiree-m. Deviantart page no longer exists :(
+AB_RimeNodules.label	rime nodules
+AB_RimeNodules.description	A very strange plant, partly inorganic, that seems to extract propane from the surrounding landscape and store it as an energy source in rime-bound chemical sacs. These sacs can be consumed as a very mild euphoric.\n\nPlant details: Rime nodules is a wild plant that cannot be cultivated, and it needs minimum terrain fertility of 0. It grows in low temperatures (above -65ºC, below 10ºC) and needs no light. Can be harvested for raw rime nodules.
+AB_CrystalFlower.label	crystal flower
+AB_CrystalFlower.description	A tall, translucent flower that seems to be partially inorganic.\n\nPlant details: Crystal flowers are a wild plant that cannot be cultivated, and it needs minimum terrain fertility of 0.25. It grows in low temperatures (above -65ºC, below 10ºC) and needs no light. Can be harvested for crystalline wood.
+AB_FlashFrozenTree.label	flash frozen tree
+AB_FlashFrozenTree.description	This tree, which probably started growing in a rare period of summer heat, has been frozen in place by the extreme temperatures, its leaves crystallized by the toxic propane compounds. A small amount of wood can be extracted from it, but it is likely that more of them won't appear as time passes.\n\nPlant details: Flash frozen trees appear in the wild but they don't regrow, ever. They need minimum terrain fertility of 0. Can be harvested for normal wood.
+## DefInjected/ThingDef/Plants_PyroclasticConflagration.xml
+AB_BrownBarrelCactus.label	brown barrel cactus
+AB_BrownBarrelCactus.description	The brown barrel cactus, Ferocactus Brunetus, is an extremophile plant that thrives in low-water and poor sunlight conditions. Its strange brown colour is derived from an almost complete lack of chlorophyll. Instead, the plant extracts much of its sustenance from mineral deposits.\n\nPlant details: brown barrel cactus is a wild plant that cannot be cultivated, and it needs minimum terrain fertility of 0.05. It needs no light. It is non-flammable. Can be harvested for raw brown barrel cactus, edible but almost tasteless.\n\nInspired by art by Desiree-m. Deviantart page no longer exists :(
+AB_TinkleGrass.label	tinkle grass
+AB_TinkleGrass.description	Wild grass. Grows anywhere there is a little light and minimally fertile ground.
+AB_FirevineTree.label	firevine tree
+AB_FirevineTree.description	Firevine trees are pyrophitic plants that are able to survive wildfires due to a clever layer of thermal insulation provided by their fire retardant bark. They can be directly burned without sustaining damage to their vital tissues. In fact, their seeds require fire to sprout, so they are only found in fire-prone areas, such as active volcanic zones.\n\nPlant details: Firevine trees are a cultivated plant that also appear in the wild, and they need minimum terrain fertility of 0.05. They are non-flammable. Can be harvested for normal wood.
+## DefInjected/ThingDef/Plants_TarPits.xml
+AB_GreenRockFern.label	green rock fern
+AB_GreenRockFern.description	A wild tall fern. Slows down anyone moving over it.
+AB_Iashiphus.label	iashiphus
+AB_Iashiphus.description	This vivid green plant seem to be related to cacti. Though it's fleshy bark is not edible, it produces flowers than can be consumed by humans.\n\nPlant details: Iashiphus is a wild plant that cannot be cultivated, and it needs minimum terrain fertility of 0.7. Can be harvested for raw iashiphus fruit.
+AB_SugarFamewort.label	sugar famewort
+AB_SugarFamewort.description	The sugar famewort grows in areas with a high concentration of pollinating insects. It generates a sweet nectar that attracts these insects, and they disperse its pollen when they feed on it.\n\nPlant details: Sugar Famewort is a wild plant that cannot be cultivated, and it needs minimum terrain fertility of 0.7. Can be harvested for raw sugar famewort.
+AB_RavenNettle.label	raven nettle
+AB_RavenNettle.description	Tangled, thorny, woody shoots covered with leaves. Raven nettle grows in clusters, and slows down anyone moving over it.
+AB_FanPalm.label	fan palm
+AB_FanPalm.description	This exuberant palm grows in areas with a rich soil surrounding the tar pits.\n\nPlant details: Fan palms are a cultivated plant that also appear in the wild, and it needs minimum terrain fertility of 0.85. Can be harvested for normal wood.
+AB_KeeningCordax.label	keening cordax
+AB_KeeningCordax.description	The keening cordax is a carnivore plant so called for the high-pitched sound that it makes during the day. Its huge openings are filled with a smelly, sticky substance that attracts all kinds of small insects. These insects get stuck to this organic glue, and inevitably perish, serving as food for the plant.\n\nThis sticky substance, known as cordax resin, can be used as a very efficient sealant.\n\nPlant details: Keening cordax is a wild plant that cannot be cultivated, and it needs minimum terrain fertility of 0.7. Can be harvested for cordax resin.
+AB_TarPuddle.label	tar puddle
+AB_TarPuddle.description	This is a puddle of fresh tar. No animal would eat this, right?
+## DefInjected/ThingDef/PropaneNet.xml
+AB_PropanePipe.label	propane pipe
+AB_PropanePipe.description	Steel pipes designed to transport pressurized liquid propane.
+AB_PropanePipe_Underground.label	subterranean propane pipe
+AB_PropanePipe_Underground.description	Subterranean steel pipes designed to transport pressurized liquid propane.
+AB_Propane_Valve.label	propane valve
+AB_Propane_Valve.description	Switches propane flow on/off.
+AB_PropaneStorage.label	propane storage tank
+AB_PropaneStorage.description	An industrial liquid storage tank meant for storing pressurized propane delivered via propane pipe network. Tanks can be designated to be siphoned for usable propane as needed. If damaged even lightly the escaping fumes will very swiftly create a gaseous fireball, the size of the resulting explosion will depend on the amount stored within.
+AB_PropaneTap.label	propane tap
+AB_PropaneTap.description	A hopper-like storage basin meant to hold dispensed propane from storage tanks periodically for use later.
+AB_PropaneDrain.label	propane drain
+AB_PropaneDrain.description	A hopper-like storage basin meant to input propane into the network, filling up connected storage tanks.
+AB_PropanePump.label	propane pump
+AB_PropanePump.description	Extracts propane from a liquid propane lake and refines it into usable fuel.
+## DefInjected/ThingDef/Races_Animal_Phytokin.xml
+AB_UnshackledCompanionDryad.label	unshackled companion dryad
+AB_UnshackledCompanionDryad.description	A dryad caste specialized in general protection and utility. Companion dryads are strong, fierce and loyal. They can clean, haul, fight and carry packs in caravans.\n\nIn general, dryads are mammal-like creatures that have a symbiotic relationship with the Gauranlen tree. They reproduce together with their tree, which contains a hidden dryad queen. Dryads can morph into various specialized castes.
+AB_UnshackledCompanionDryad.tools.0.label	left claw
+AB_UnshackledCompanionDryad.tools.1.label	right claw
+AB_UnshackledCompanionDryad.tools.3.label	head
+## DefInjected/ThingDef/RangedIndustrialGrenades.xml
+AB_WeaponPoisonDart.label	dribbling cap poison dart
+AB_WeaponPoisonDart.description	This small poison dart has been filled with the pungent resin flowing from a dribbling cap fungus. It is an extremely potent neurotoxin, causing immediate paralysis, and eventually, death.
+AB_WeaponPoisonDartProjectile.label	poison dart
+## DefInjected/ThingDef/Various_Stone.xml
+GU_RoseQuartz.label	rose quartz
+GU_RoseQuartz.description	A hard, pinkish looking mineral deposit.
+GU_SmoothedQuartz.label	smoothed quartz
+GU_SmoothedQuartz.description	A hard, pinkish looking mineral deposit. The layers have been polished to a flat, smooth surface.
+GU_ChunkRoseQuartz.label	rose quartz chunk
+GU_ChunkRoseQuartz.description	A chunk of rock. It's possible to cut usable stone blocks from it.
+GU_BlocksRoseQuartz.label	rose quartz blocks
+GU_BlocksRoseQuartz.description	Blocks of solid rose quartz.
+GU_BlocksRoseQuartz.stuffProps.stuffAdjective	rose quartz
+AB_Cragstone.label	cragstone
+AB_Cragstone.description	A dark-hued, homogeneous metamorphic rock. These rocks seem to be attracting the darkness surrounding them.
+AB_SmoothedCragstone.label	smoothed cragstone
+AB_SmoothedCragstone.description	A dark-hued, homogeneous metamorphic rock. These rocks seem to be attracting the darkness surrounding them.
+AB_ChunkCragstone.label	cragstone chunk
+AB_ChunkCragstone.description	A chunk of rock. It's possible to cut usable stone blocks from it.
+AB_BlocksCragstone.label	cragstone blocks
+AB_BlocksCragstone.description	Blocks of solid cragstone.
+AB_BlocksCragstone.stuffProps.stuffAdjective	cragstone
+AB_Obsidianstone.label	onyxglass
+AB_Obsidianstone.description	Onyxglass is a rare volcanic glass formed when lava cools rapidly with trace impurities, giving it a deep luster and layered appearance. Like obsidian, it is hard, brittle, and amorphous, fracturing into exceptionally sharp edges.
+AB_SmoothedObsidian.label	smoothed onyxglass
+AB_SmoothedObsidian.description	Onyxglass is a rare volcanic glass formed when lava cools rapidly with trace impurities, giving it a deep luster and layered appearance. Like obsidian, it is hard, brittle, and amorphous, fracturing into exceptionally sharp edges.
+AB_ChunkObsidian.label	onyxglass chunk
+AB_ChunkObsidian.description	A chunk of rock. It's possible to cut usable stone blocks from it.
+AB_BlocksObsidian.label	onyxglass blocks
+AB_BlocksObsidian.description	Blocks of solid onyxglass.
+AB_BlocksObsidian.stuffProps.stuffAdjective	obsidian
+AB_Mudstone.label	mudstone
+AB_Mudstone.description	Mudstone, a type of mudrock, is a fine-grained sedimentary rock whose original constituents were clays or muds. Mudstone looks like hardened clay and, depending upon the circumstances under which it was formed, it may show cracks or fissures, like a sun-baked clay deposit.
+AB_SmoothedMudstone.label	smoothed mudstone
+AB_SmoothedMudstone.description	Mudstone, a type of mudrock, is a fine-grained sedimentary rock whose original constituents were clays or muds. Mudstone looks like hardened clay and, depending upon the circumstances under which it was formed, it may show cracks or fissures, like a sun-baked clay deposit.
+AB_ChunkMudstone.label	mudstone chunk
+AB_ChunkMudstone.description	A chunk of rock. It's possible to cut usable stone blocks from it.
+AB_BlocksMudstone.label	mudstone blocks
+AB_BlocksMudstone.description	Blocks of solid mudstone.
+AB_BlocksMudstone.stuffProps.stuffAdjective	mudstone
+AB_SlimeStone.label	hardened slime
+AB_SlimeStone.description	This is a hardened slime deposit. Not very useful... This "rock" produces chunks, but they can't be turned into blocks like other types of rock.
+AB_SmoothedSlimeStone.label	smoothed slime
+AB_SmoothedSlimeStone.description	This is a hardened slime deposit. Not very useful... This "rock" produces chunks, but they can't be turned into blocks like other types of rock.
+AB_ChunkSlimeStone.label	hardened slime chunk
+AB_ChunkSlimeStone.description	This is a hardened slime chunk. Not very useful... Maybe it can be deconstructed into little pieces of hardened slime, and then... eaten. Yuck.
+GU_AncientMetals.label	ancient metal
+GU_AncientMetals.description	These ancient metal walls have been here for a while. They can be mined to acquire steel chunks.
+AB_SmoothedAncientMetals.label	smoothed ancient metal
+AB_SmoothedAncientMetals.description	These ancient metal walls have been here for a while. They can be mined to acquire steel chunks.
+## DefInjected/ThoughtDef/AB_PsychotropicFungus.xml
+AB_PsychotropicFungusHigh.stages.ate_some_weird_mushrooms.label	ate some weird mushrooms
+AB_PsychotropicFungusHigh.stages.ate_some_weird_mushrooms.description	I ate a bunch of weird mushrooms and now I'm high as a kite
+AB_PsychotropicFungusWithdrawal.stages.psychotropic_fungus_withdrawal.label	psychotropic fungus withdrawal
+AB_PsychotropicFungusWithdrawal.stages.psychotropic_fungus_withdrawal.description	My hands are shaking. It's as if the world has lost all colours.
+## DefInjected/ThoughtDef/AB_RawRimeNodules.xml
+AB_RawRimeNodulesHigh.stages.rime_freshness.label	rime freshness
+AB_RawRimeNodulesHigh.stages.rime_freshness.description	Those rime nodules I consumed make me feel refreshed and calm.
+## DefInjected/ThoughtDef/Thoughts_Odyssey.xml
+AB_GelatinousEchoes_Good.stages.gelatinous_echoes.label	gelatinous echoes
+AB_GelatinousEchoes_Good.stages.gelatinous_echoes.description	I feel connected to something ancient.
+AB_GelatinousEchoes_Bad.stages.ominous_gelatinous_echoes.label	ominous gelatinous echoes
+AB_GelatinousEchoes_Bad.stages.ominous_gelatinous_echoes.description	I feel connected to something ancient, it's terrifying.
+AB_HealingSpringwaterThought.stages.healing_spring.label	healing spring
+AB_HealingSpringwaterThought.stages.healing_spring.description	The healing properties of the water rejuvenated me.
+AB_MutagenicOcularWater.stages.mutagenic_water.label	mutagenic water
+AB_MutagenicOcularWater.stages.mutagenic_water.description	I can feel myself changing...
+AB_Quicksand.stages.traversing_quicksand.label	traversing quicksand
+AB_Quicksand.stages.traversing_quicksand.description	It's like moving through molasses...
+AB_MoldyEnvironment.stages.moldy_environment.label	moldy environment
+AB_MoldyEnvironment.stages.moldy_environment.description	This place reeks of mold and decay, I can't stay outdoors for long!
+## DefInjected/ThoughtDef/Thoughts_Weather.xml
+AB_ForsakenNight.stages.preternatural_darkness.label	preternatural darkness
+AB_ForsakenNight.stages.preternatural_darkness.description	It is as if the sun itself was being drowned in despair. I hate it.
+AB_ForsakenRain.stages.soaking_wet_and_dark.label	soaking wet and dark
+AB_ForsakenRain.stages.soaking_wet_and_dark.description	I'm soaking wet, and I can't see anything.
+AB_ForsakenThunderstorm.stages.preternatural_storm.label	preternatural storm
+AB_ForsakenThunderstorm.stages.preternatural_storm.description	It is dark as the void, and now lightning is falling everywhere. We are doomed.
+AB_RedFogThought.stages.unnatural_weather.label	unnatural weather
+AB_RedFogThought.stages.unnatural_weather.description	This fog tastes weird. It looks weird. It FEELS wrong, as if it wasn't of this world.
+AB_VolcanicAshThought.stages.cant_breathe.label	can't breathe
+AB_VolcanicAshThought.stages.cant_breathe.description	It is SO hard to breathe through this ash!
+AB_RedFogThoughtPositive.stages.i_love_unnatural_weather.label	i love unnatural weather
+AB_RedFogThoughtPositive.stages.i_love_unnatural_weather.description	Actually... I love this fog. This fog is my friend. I would kiss the fog if I could. Obey. Consume. Caress an ocular jelly. Wait, what?
+AB_PetalStorms.stages.petal_storm.label	petal storm
+AB_PetalStorms.stages.petal_storm.description	Oh, this is actually pretty nice.
+## DefInjected/TileMutatorDef/TileMutators_Fauna.xml
+AB_ExplodingAnimals.label	exploding animals
+AB_ExplodingAnimals.description	Something in this area makes all animals explode violently on death.
+## DefInjected/TileMutatorDef/TileMutators_Flora.xml
+AB_AgariluxPrime_Mutator.label	agarilux prime sprout
+AB_AgariluxPrime_Mutator.description	This area contains a wayward Agarilux Prime growing outside the Mycotic Jungle. It will release spores that destroy everything surrounding it.
+AB_OcularTransformation.label	ocular transformation
+AB_OcularTransformation.description	This area has begun to transform into an ocular forest.
+AB_GoldenTrees.label	golden cube trees
+AB_GoldenTrees.description	This area is achieving PERFECTION.
+AB_FleshTrees.label	flesh trees
+AB_FleshTrees.description	Weird flesh trees grow wild in this area. They don't look tasty.
+AB_DessertTrees.label	dessert trees
+AB_DessertTrees.description	Weird dessert trees grow wild in this area. They look VERY tasty.
+AB_TechnoTrees.label	technological trees
+AB_TechnoTrees.description	A strange kind of trees grows in this area. They appear to be half synthetic.
+AB_LuminescentTrees.label	luminescent trees
+AB_LuminescentTrees.description	Unusual luminescent trees grow in this area.
+AB_SterileGround.label	sterile ground
+AB_SterileGround.description	No wild plants grow here besides simple grass, but disease chance is lowered by 75%.
+## DefInjected/TileMutatorDef/TileMutators_Landmarks_Natural.xml
+AB_TarLakes.label	tar lakes
+AB_TarLakes.description	A shallow pool of a dense tar-like substance. Impassable, and can't be bridged over.
+AB_PropaneLakes.label	propane lakes
+AB_PropaneLakes.description	Lakes of liquid hydrocarbons that seem to defy the laws of physics.
+AB_MagmaticQuagmire.label	magmatic quagmire
+AB_MagmaticQuagmire.description	A seething landscape of molten rock and blistering heat—where the ground bubbles, cracks, and burns beneath your feet.
+AB_HealingSprings.label	healing springs
+AB_HealingSprings.description	This region contains natural springs imbued with curative properties.
+AB_SweetForest.label	chocolate terrain
+AB_SweetForest.description	A perfect example of the consequences of providing terraforming technology to societies that are not prepared to handle them responsibly.
+AB_SweetFlora.label	sweet flora
+AB_SweetFlora.description	The flora in this region has been genetically modified to resemble giant confectionery, to an absurd degree.
+AB_SweetRocks.label	chocolate mountains
+AB_SweetRocks.description	The stone found in this region is instead a highly compacted form of chocolate.
+AB_SugarChunks.label	sugar chunks
+AB_SugarChunks.description	This area contains small clumps of hardened sugar.
+AB_AnimaDesertFlora.label	anima desert flora
+AB_AnimaDesertFlora.description	This region contains a desert with sparse anima cacti, quietly resonating with psychic energy. The air feels attentive, as if the land itself is listening.
+AB_AnimaSoilsDesert.label	anima desert soils
+AB_AnimaSoilsDesert.description	This area contains soil infused with latent anima energy, subtly influencing plants, animals, and minds.
+AB_JadeiteChunksDesert.label	anima desert jadeite chunks
+AB_JadeiteChunksDesert.description	This desertic area contains small deposits of jadeite.
+AB_OcularDesertSoil.label	ocular desert soils
+AB_OcularDesertSoil.description	This desertic area contains soil twisted by a strange extradimensional influence.
+AB_OcularDesertFlora.label	ocular desert flora
+AB_OcularDesertFlora.description	This region contains a desert with sparse ocular cacti.
+AB_RedFog.label	red fog
+AB_RedFog.description	A sickening red fog that reduces the accuracy of ranged weapons permeates this region.
+AB_DryMeadows.label	dry meadows soils
+AB_DryMeadows.description	This meadows area is drier than usual, with less fertile soil and less precipitation.
+AB_DryMeadowsFlora.label	dry meadows flora
+AB_DryMeadowsFlora.description	This region contains flora adapted to the drier conditions of the terrain.
+AB_ToxicMeadows.label	toxic meadows soils
+AB_ToxicMeadows.description	This meadows area is filled with toxic flowers.
+AB_ToxicMeadowsFlora.label	toxic meadows flora
+AB_ToxicMeadowsFlora.description	This region contains flora adapted to the toxic conditions of the terrain.
+AB_WillowForest.label	willow forest
+AB_WillowForest.description	This region contains a multitude of weeping willows.
+AB_CloverForest.label	clover forest
+AB_CloverForest.description	A lush forest where giant clovers carpet the ground and towering trees bear clover-shaped leaves.
+AB_GinkgoForest.label	ginkgo forest
+AB_GinkgoForest.description	A tranquil forest of genetically modified ginkgo trees with distinctive fan-shaped leaves that stay brilliant gold all year.
+AB_MauvebloomFields.label	cerulean soils
+AB_MauvebloomFields.description	A faintly metallic-smelling, blueish-tinted soil covers this region.
+AB_ReddishWaters.label	reddish water
+AB_ReddishWaters.description	The waters here are stained a deep crimson by dense blooms of red algae and pigmented microorganisms.
+AB_ReddishRains.label	reddish rains
+AB_ReddishRains.description	Periodic blooms of airborne red algae cause rain to fall in unsettling shades of pink and crimson, as though the skies themselves were bleeding.
+AB_MauvebloomFlora.label	mauvebloom forest
+AB_MauvebloomFlora.description	The local flora is dominated by mauveblooms, covering the landscape in shades of soft purple and pink.
+AB_GauranlenFlora.label	gauranlen flora
+AB_GauranlenFlora.description	The local flora is dominated by giant gauranlen trees and gau grass, covering the landscape in shades of orange.
+AB_GauranlenSoil.label	gauranlen soil
+AB_GauranlenSoil.description	Soil covered by a soft gauranlen moss carpets this region.
+AB_UnshackledDryads.label	unshackled dryads
+AB_UnshackledDryads.description	Unshackled dryads will spawn in this region.
+AB_UnshackledCompanionDryads.label	unshackled companion dryads
+AB_UnshackledCompanionDryads.description	Unshackled companion dryads will spawn in this region.
+AB_WarpedStoneForest.label	warped stone forest
+AB_WarpedStoneForest.description	Giant spires of sandstone are scattered around this area. These jagged rocks seem to have been warped by an unknown force, acquiring unnatural shapes.
+AB_ObsidianExpanse.label	obsidian expanse
+AB_ObsidianExpanse.description	Large patches of hard obsidian terrain cover this area, reducing the fertility.
+AB_ObsidianSpires.label	obsidian spires
+AB_ObsidianSpires.description	Giant spires of obsidian are scattered around this area.
+AB_CalcifiedSoil.label	calcified soil
+AB_CalcifiedSoil.description	This region is covered by soil slowly turned to stone by the calcifying growth of the remnants plant.
+AB_CalcifiedRemnants.label	calcified remnants
+AB_CalcifiedRemnants.description	Half-alive, half-dead plants that seem to be partly organic and partly inorganic grow in this area. Their living tissues persist within a shell of mineralized growth, slowly replacing stems, leaves, and roots with stone-like structures.
+AB_LivingCrystalBed.label	living crystal bed
+AB_LivingCrystalBed.description	This region is covered by soil that has been slowly overtaken by tiny living crystals, their growths emerging from the earth like mineral sprouts.
+AB_LivingAlcyonite.label	living alcyonite
+AB_LivingAlcyonite.description	Crystalline organisms that grow and pulse with faint signs of life, their mineral bodies constantly shifting and regenerating. They were originally created as a bioengineered solution to alcyonite mining, but inevitably spread into the wild.
+AB_FleshTerrain.label	flesh terrain
+AB_FleshTerrain.description	Large sections of the ground in this region have been covered by soft, fleshy terrain resembling living tissue, pulsing faintly beneath the feet.
+AB_TumorousGrowths.label	tumorous growths
+AB_TumorousGrowths.description	The local flora is dominated by irregular tumorous growths that swell from the ground like diseased flesh, spreading across the landscape.
+AB_CerebrospinalFluid.label	cerebrospinal fluid
+AB_CerebrospinalFluid.description	Instead of water, shallow pools, lakes and rivers in this region are composed of diluted cerebrospinal fluid. Neutroamine synthetizer can be built here (find it under "build biome structures" in the Furniture Architect menu).
+AB_CorruptedIntrusion.label	corrupted intrusion
+AB_CorruptedIntrusion.description	This region is covered by a strange metal polymer with a degraded hexagonal motif.
+AB_CorruptedMechFlora.label	corrupted mechanoid flora
+AB_CorruptedMechFlora.description	A different archotech from the one transforming this region has initiated a hostile takeover, infusing the sessile mechanoids here with a mechanite virus that corrupts them into twisted creations.
+AB_GnawingSands.label	gnawing sands
+AB_GnawingSands.description	Giant teeth jut from the sands, their marble lattice casings concealing living plants within. A bizarre creation of an insane geneticist.
+## DefInjected/TileMutatorDef/TileMutators_ManMade.xml
+AB_AncientFreezingVent.label	ancient freezing vent
+AB_AncientFreezingVent.description	This area has a number of massive freezing vents. An ancient mechanism buried deep beneath the earth will occasionally vent large amounts of freezing cold air, lowering temperatures greatly.
+AB_AncientGreyPallVent.label	gray pall vent
+AB_AncientGreyPallVent.description	This area has a number of rusted, foreboding vents. An ancient mechanism buried deep beneath the earth will occasionally vent large amounts of sickly looking smoke that will plunge the area into a preternatural darkness.
+AB_AncientBloodRainVent.label	blood rain vent
+AB_AncientBloodRainVent.description	This area has a number of gigantic corroded vents. An ancient mechanism buried deep beneath the earth will occasionally vent huge red clouds of a vaporized blood-like substance that will coalesce into a disgusting blood rain.
+AB_AncientDeathPallVent.label	death pall vent
+AB_AncientDeathPallVent.description	This area has a number of ancient runic grates of unknown origin. An ancient mechanism buried deep beneath the earth will occasionally vent clouds of microscopic self-powered archites that affect corpses reanimating them to create a twisted imitation of life.
+AB_DerelictBioLab.label	derelict biolab
+AB_DerelictBioLab.description	A derelict biolab is present in this area. Investigating it might attract unwanted company.
+AB_DerelictArchonexus.label	derelict archonexus
+AB_DerelictArchonexus.description	A bunch of derelict archonexus structures are present in this area.
+AB_DerelictKemeticTemple.label	derelict kemetic temple
+AB_DerelictKemeticTemple.description	A derelict kemetic temple is present in this area.
+AB_DerelictResort.label	derelict resort
+AB_DerelictResort.description	A derelict resort is present in this area.
+AB_DerelictClusters.label	derelict clusters
+AB_DerelictClusters.description	This area is littered with derelict mechanoid clusters, from which some materials could be scavenged.
+## DefInjected/TileMutatorDef/TileMutators_MapSize.xml
+AB_WideRegion.label	wide region
+AB_WideRegion.description	The limits of this region make it have an irregular size. Map will be set to 400x100 tiles.
+AB_NarrowRegion.label	narrow region
+AB_NarrowRegion.description	The limits of this region make it have an irregular size. Map will be set to 100x400 tiles.
+AB_DiminutiveRegion.label	diminutive region
+AB_DiminutiveRegion.description	The limits of this region are very restrictive. Map will be set to 100x100 tiles.
+## DefInjected/TileMutatorDef/TileMutators_Natural.xml
+AB_MagmaVents.label	magma vents
+AB_MagmaVents.description	Fiery fissures in the earth that intermittently erupt with jets of molten rock and searing gas.
+AB_GiantFossils.label	giant fossils
+AB_GiantFossils.description	Gigantic skeletons of long-gone beasts litter this land. Considering fossilization hasn't had time to actually occur on the Rim, it's a mystery who put these giant bones here.
+AB_GeothermalHotspots.label	geothermal hotspots
+AB_GeothermalHotspots.description	High geothermal activity allows construction of efficient geothermal plants (find them under "build biome structures" in the Furniture Architect menu).
+AB_EdibleAirborneMicrofungi.label	edible airborne micro-fungi
+AB_EdibleAirborneMicrofungi.description	Microscopic spores present in this biome can be collected and used as edible ingredients (find the collector under "build biome structures" in the Furniture Architect menu).
+AB_MoldyEnvironment.label	moldy environment
+AB_MoldyEnvironment.description	The ubiquitous presence of fungal spores in this region makes staying outdoors almost unbearable.
+AB_OversaturatedSoil.label	oversaturated soil
+AB_OversaturatedSoil.description	Fertile ground areas are even more fertile than usual.
+AB_PollinationFrenzy.label	pollination frenzy
+AB_PollinationFrenzy.description	Plant density is increased here due to heavy pollination, but at the risk of causing tougher allergies.
+AB_PetalStorms.label	petal storms
+AB_PetalStorms.description	Occasional flurries of flower petals that improve mood but reduce visibility.
+AB_DigestiveSurface.label	digestive surface
+AB_DigestiveSurface.description	The ground here will digest dropped items if left too long.
+AB_SymbioticNutrients.label	symbiotic nutrients
+AB_SymbioticNutrients.description	Simply being around this landscape makes people require 10% less nutrients to feel full.
+AB_QuiveringSurface.label	quivering surface
+AB_QuiveringSurface.description	The very ground beneath your colony trembles, pulses, and reacts as if it was alive. Movement will be harder in this terrain.
+AB_GelatinousMemoryEcho.label	gelatinous memory echo
+AB_GelatinousMemoryEcho.description	The superorganism retains echoes of past events, stored like data in a living neural lattice. These memory echoes occasionally bleed into reality.
+AB_AmbientRadiation.label	ambient radiation
+AB_AmbientRadiation.description	Low levels of background radiation permeate the area, subtly affecting health and mutation rates.
+AB_ExtremeTemperatureFluctuations.label	extreme temperature fluctuations
+AB_ExtremeTemperatureFluctuations.description	Wild swings between scorching days and freezing nights challenge survival and crop stability.
+AB_MutagenicSprings.label	mutagenic ocular springs
+AB_MutagenicSprings.description	This region contains weird ocular springs that mutate the body of both colonists and animals.
+AB_QuicksandPits.label	quicksand pits
+AB_QuicksandPits.description	This region contains pools of shallow quicksand that impede movement.
+AB_ResidualOverclocking.label	residual overclocking
+AB_ResidualOverclocking.description	This region still hums with the unstable energy of forgotten mechanoid infrastructure. Collectors can be built to tune into these energies (find them under "build biome structures" in the Furniture Architect menu).
+AB_TarHoles.label	tar holes
+AB_TarHoles.description	This regions contains natural holes connecting to an underground tar reservoir. They will periodically spray fresh tar in the vicinity.
+## DefInjected/TileMutatorDef/TileMutators_Weather.xml
+AB_DryClimate.label	dry climate
+AB_DryClimate.description	Precipitation is much less common here.
+## DefInjected/VEF.OptionalFeatures.ModDef/OptionalFeatures.xml
+AB_OptionalFeatures.label	Alpha Biomes
+AB_OptionalFeatures.description	VE Framework optional features for Alpha Biomes
+## DefInjected/WeatherDef/Weathers.xml
+AB_RedFog.label	red fog
+AB_RedFog.description	A sickening red fog that reduces the accuracy of ranged weapons.
+AB_VolcanicAsh.label	volcanic ash
+AB_VolcanicAsh.description	A mixture of rock, mineral, and glass particles expelled from a volcano during a volcanic eruption. This creates a thick atmospheric layer that reduces ranged accuracy.
+AB_VolcanicAshRain.label	volcanic ash with rain
+AB_VolcanicAshRain.description	A mixture of rock, mineral, and glass particles expelled from a volcano during a volcanic eruption, precipitating with rain. This creates a thick atmospheric layer that reduces ranged accuracy.
+AB_ForsakenNight.label	forsaken fog
+AB_ForsakenNight.description	A preternatural darkness that seeps into your very soul. Even during the "day" brightness will be very low, so lighting is going to be absolutely essential. Nights are going to be REALLY dark.
+AB_ForsakenRainyNight.label	forsaken rain
+AB_ForsakenRainyNight.description	A preternatural darkness that seeps into your very soul. A freezing rain of supercooled water has started to drop from the darkened sky.
+AB_ForsakenThunderstorm.label	forsaken thunderstorm
+AB_ForsakenThunderstorm.description	A preternatural darkness that seeps into your very soul. Now with a dry thunderstorm! Isn't it great?
+AB_AcidRainWeather.label	acid rain
+AB_AcidRainWeather.description	Toxic gas emissions from nearby volcanically active calderas are precipitating in the form of dangerous acid rain. Acid rain has an adverse impact on flora and fauna, killing insect and aquatic life-forms as well as having impacts on human health. Acid rain reduces the accuracy of ranged weapons, extinguishes fire, and slows people down.
+AB_PetalStorms.label	petal storm
+AB_PetalStorms.description	A flurry of flower petals that improves mood but reduces visibility.
+## DefInjected/WeatherDef/Weathers_Alternate.xml
+AB_ForsakenNight_Alternate.label	forsaken fog
+AB_ForsakenNight_Alternate.description	A preternatural darkness that seeps into your very soul. Even during the "day" brightness will be very low, so lighting is going to be absolutely essential. Nights are going to be REALLY dark.
+AB_ForsakenRainyNight_Alternate.label	forsaken rain
+AB_ForsakenRainyNight_Alternate.description	A preternatural darkness that seeps into your very soul. A freezing rain of supercooled water has started to drop from the darkened sky.
+AB_ForsakenThunderstorm_Alternate.label	forsaken thunderstorm
+AB_ForsakenThunderstorm_Alternate.description	A preternatural darkness that seeps into your very soul. Now with a dry thunderstorm! Isn't it great?
+## DefInjected/WeatherDef/Weathers_Odyssey.xml
+AB_ReddishRain.label	reddish rain
+AB_ReddishRain.description	Periodic blooms of airborne red algae cause rain to fall in unsettling shades of pink and crimson, as though the skies themselves were bleeding.
+## DefInjected/WorkGiverDef/WorkGivers.xml
+AB_DoBillsCook.label	cook meals at propane stove
+AB_DoBillsCook.gerund	cooking at
+AB_DoBillsCook.verb	cook
+AB_CoreDrill.label	drill at core sample drill
+AB_CoreDrill.gerund	drilling
+AB_CoreDrill.verb	drill
+AB_DoBillsMakeWeapons.label	make weapons
+AB_DoBillsMakeWeapons.gerund	smithing at
+AB_DoBillsMakeWeapons.verb	smith at
+AB_DoBillsMachiningTable.label	make things at machining table
+AB_DoBillsMachiningTable.gerund	working at
+AB_DoBillsMachiningTable.verb	work at
+AB_DoBillsSmelter.label	smelt items
+AB_DoBillsSmelter.gerund	refining at
+AB_DoBillsSmelter.verb	refine at
+## Keyed/Misc_Gameplay.xml
+AB_UseAgariluxParticles	Agarilux Prime produces harmful gas
+AB_UseAgariluxParticlesDesc	The Agarilux Prime mushroom in the Mycotic Jungle produces a cloud of brutally harmful spores that will damage anything. If you dislike this mechanic you can toggle it with this option.
+AB_SpawnBiome	Create {0} on planet generation
+AB_RemoveVanillaBiomes	Remove all vanilla biomes
+AB_RemoveVanillaBiomesDesc	By enabling this option you can generate a completely alien planet, using only modded biomes.
+AB_RemoveOdysseyBiomes	Remove all Odyssey biomes
+AB_RemoveOdysseyBiomesDesc	By enabling this option you can remove the Odyssey biomes.
+AB_BrighterCrags	Brighter Forsaken Crags
+AB_BrighterCragsDescription	Makes the Forsaken Crags quite brighter, for those with a PC screen that makes the Crags WAY too dark. This change takes effect on the next weather change on the map, or on savegame reload.
+AB_ShowBuildingsButton	Show "biome structures" button in Furniture
+AB_ShowBuildingsButtonDescription	By default, there will be a "build biome structures" button in the Furniture architect menu. You can use this to build biome specific buildings. But you can also hide it, because reeeee bloat, and then you won't see it. You also won't be able to build them. That's the price to pay.\n\nRequires game reload.
+AB_BiomeCommonalities	Biome commonalities. Set to 0 to disable the biome from generating:
+AB_MutatorMultiplier	Map feature commonality (requires new world)
+AB_MutatorMultiplierTooltip	The commonality of map features in a non-landmark map will be multiplied by this number (20 means a given map feature will be 20 times as common). Requires making a new planet!
+AB_LandmarkMutatorMultiplier	Landmark feature commonality (requires new world)
+AB_LandmarkMutatorMultiplierTooltip	The commonality of map features in landmark maps will be multiplied by this number (20 means a given landmark feature will be 20 times as common). Requires making a new planet!
+AB_SpecificMutatorCommonalities	Specific mutator commonalities:
+AB_TerrainCannotSupport_Propane	The pump needs to be built on a solid propane ground
+AB_Distance_Propane	Porpane pumps need to be at least 12 tiles apart
+AB_OcularForestOnly	This device will only work in an ocular forest
+AB_SpawningNextBumbledrone	Spawning a new Bumbledrone in {0}
+AB_AlphaAnimalsNotInstalled	Since Alpha Animals is not installed, this hive is inactive
+AB_MustPlaceOnTarPit	The pump must be built on top of tarred mud or a tar hole
+AB_WarningLowEfficiency	Pump acting in low efficiency mode due to absence of Tar Hole
+AB_ConvertToAlcyonite	Convert solar panel
+AB_ConvertToAlcyoniteDesc	Convert this solar panel to an Alcyonite solar panel that performs 50% better under the red fog weather.
+AB_AlcyoniteSolarPanelsDescription	In this biome. you can convert solar panels to Alcyonite solar panels that perform 50% better under the red fog weather.
+AB_AlcyoniteSolarPanels	Upgrade solar panels
+AB_AlcyoniteSolarPanels_NotBuildable	To build these, make a solar panel and use the "Convert solar panel" button
+AB_PropaneValve	Switches propane flow on/off.
+AB_PropaneValveDesc	Switches propane flow on/off. A colonist will come open/close the valve.
+AB_ExtractPropane	Extract 150 propane
+AB_ExtractPropaneDesc	Extract 150 propane from the tank. A colonist will come to extract it.
+AB_Distance_Generic_Fifteen	This building needs to be at least 15 tiles apart from a similar building
+AB_AncientFreezingVentStartUp	The ancient freezing vents have become active, lowering temperatures.
+AB_AncientFreezingVentShutdown	The ancient freezing vents are stopping.
+AB_AncientFreezingVentActive	venting freezing air.
+AB_AncientGreyPallVentStartUp	The ancient gray pall vents have become active, spewing a sickly looking smoke.
+AB_AncientGreyPallVentShutdown	The ancient gray pall vents are stopping.
+AB_AncientGreyPallVentActive	venting sickly looking smoke.
+AB_AncientBloodRainVentStartUp	The ancient blood rain vents have become active, spewing a thick blood-red vapor.
+AB_AncientBloodRainVentShutdown	The ancient blood rain vents are stopping.
+AB_AncientBloodRainVentActive	venting blood-red vapor.
+AB_AncientDeathPallVentStartUp	The ancient death pall vents have become active, spewing a rancid cloud of corpse reanimating archites.
+AB_AncientDeathPallVentShutdown	The ancient death pall vents are stopping.
+AB_AncientDeathPallVentActive	venting cloud of corpse reanimating archites.
+AB_SlimeCompressorNotWorking	This slime compressor is not working at the moment
+AB_NotReallyAPlant	This is just a disgusting puddle of smelly tar
+AB_MessageWarningTooHighFertility	Need less fertile terrain.
+AB_BiomeBuildings	build biome structures
+AB_BiomeBuildingsDesc	Open a menu to build biome-specific buildings.
+AM_CurrentBiome	Current biome: 
+AM_AvailableStructures	Available structures for this biome:
+AM_None	None
+AB_ResearchNeeded	Can't be built until {0} has been researched by the colony
+AB_FeaturesInThisTile	Features in this tile:
+AB_AmbientRadiationLabel	Ambient radiation mutation for {0}
+AB_AmbientRadiationDesc	Due to the ambient radiation in this place, {0} has received the following mutation: {1}
+AB_ChunkMarbleMine	Drill for Marble Chunks
+AB_ChunkSandstoneMine	Drill for Sandstone Chunks
+AB_ChunkLimestoneMine	Drill for Limestone Chunks
+AB_ChunkGraniteMine	Drill for Granite Chunks
+AB_ChunkSlateMine	Drill for Slate Chunks
+AB_ChunkRandomMine	Drill for Random Chunks
+AB_ChooseMine	Choose chunk type to drill
+AB_ChooseMineDesc	Choose chunk type to drill. You can choose any of the base game rock types, or random
+AB_DrillingStoneType	Drilling stone type: 
+AB_DrillingStoneTypeRandom	Drilling stone type: Random
+AB_ProgressToNextPortion	Progress to next chunk
+AB_BiomeMultiplier	{0} commonality multiplier
+AB_MultiplierTooltip	This multiplier will affect the spawn changes (commonality) of the {0} when creating a world. Bear in mind that commonalities in biomes are not linear, so you will have to experiment and tweak until you get a biome density that suits your needs. Bear in mind too that this could be affected by other mods that either add new biomes or modify the way the game creates a world.
+AB_Reset	Reset {0}
+AB_Reset_Plain	Reset
+AB_TabImage	Image

@@ -1,0 +1,13 @@
+# Bloco 5g (parte de jogo): nas missões dos VQE com patrona, quem pede é o líder da potência patrona (Silêncio: Ancients; Forja: drones e ARC); patrona hostil = sorteio original. Rodar com -Profile full.
+newgame
+timeout 900
+peace EQ_Faction_Silencio
+peace EQ_Faction_Forja
+asker VQE_AncientLabComplex 8
+asker VQE_DroneScrapyard 6
+asker VQE_DroneFactory 4
+asker VQE_ArcSite 8
+asker VQE_PrototypeARC 6
+hostile EQ_Faction_Forja
+asker VQE_DroneScrapyard 6
+asker VQE_ArcSite 6

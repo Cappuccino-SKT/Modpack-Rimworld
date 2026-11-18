@@ -1,0 +1,67 @@
+## DefInjected/HediffDef/Alcohol_Gin.xml
+VBE_GinHigh.stages.warm.label	aquecido
+VBE_GinHigh.stages.tipsy.label	tonto
+VBE_GinHigh.stages.drunk.label	bêbado
+VBE_GinHigh.stages.hammered.label	muito bêbado
+VBE_GinHigh.stages.blackout.label	blecaute alcoólico
+## DefInjected/HediffDef/Alcohol_Tequila.xml
+VBE_TequilaHigh.stages.warm.label	aquecido
+VBE_TequilaHigh.stages.tipsy.label	tonto
+VBE_TequilaHigh.stages.drunk.label	bêbado
+VBE_TequilaHigh.stages.hammered.label	muito bêbado
+VBE_TequilaHigh.stages.blackout.label	blecaute alcoólico
+## DefInjected/HediffDef/Alcohol_Vodka.xml
+VBE_VodkaHigh.stages.warm.label	aquecido
+VBE_VodkaHigh.stages.tipsy.label	tonto
+VBE_VodkaHigh.stages.drunk.label	bêbado
+VBE_VodkaHigh.stages.hammered.label	muito bêbado
+VBE_VodkaHigh.stages.blackout.label	blecaute alcoólico
+## DefInjected/HediffDef/Drinks_Coffees.xml
+VBE_CaffeineTolerance.stages.small.label	pequena
+VBE_CaffeineTolerance.stages.large.label	grande
+VBE_CaffeineTolerance.stages.massive.label	enorme
+VBE_CaffeineAddiction.stages.withdrawal.label	abstinência
+## DefInjected/HediffDef/Items_Cider.xml
+VBE_CiderHigh.stages.warm.label	aquecido
+## DefInjected/HediffDef/Items_Smokes.xml
+VBE_TobaccoTolerance.stages.small.label	pequena
+VBE_TobaccoTolerance.stages.large.label	grande
+VBE_TobaccoTolerance.stages.massive.label	enorme
+VBE_TobaccoAddiction.stages.withdrawal.label	abstinência
+## DefInjected/ThingDef/Alcohol_Ambrandy.xml
+VBE_Ambrandy.ingestible.ingestCommandString	Beber {0}
+VBE_Ambrandy.ingestible.ingestReportString	Bebendo {0}.
+## DefInjected/ThingDef/Alcohol_Gin.xml
+VBE_Gin.ingestible.ingestCommandString	Beber {0}
+VBE_Gin.ingestible.ingestReportString	Bebendo {0}.
+## DefInjected/ThingDef/Alcohol_Tequila.xml
+VBE_Tequila.ingestible.ingestCommandString	Beber {0}
+VBE_Tequila.ingestible.ingestReportString	Bebendo {0}.
+## DefInjected/ThingDef/Alcohol_Vodka.xml
+VBE_Vodka.ingestible.ingestCommandString	Beber {0}
+VBE_Vodka.ingestible.ingestReportString	Bebendo {0}.
+## DefInjected/ThingDef/Alcohol_Whiskey.xml
+VBE_Whiskey.ingestible.ingestCommandString	Beber {0}
+VBE_Whiskey.ingestible.ingestReportString	Bebendo {0}.
+VBE_DoubleWhiskey.ingestible.ingestCommandString	Beber {0}
+VBE_DoubleWhiskey.ingestible.ingestReportString	Bebendo {0}.
+## DefInjected/ThingDef/Drinks_Coffees.xml
+VBE_HotCoffee.ingestible.ingestCommandString	Beber {0}
+VBE_HotCoffee.ingestible.ingestReportString	Bebendo {0}.
+VBE_IceCoffee.ingestible.ingestCommandString	Beber {0}
+VBE_IceCoffee.ingestible.ingestReportString	Bebendo {0}.
+## DefInjected/ThingDef/Drinks_EnergyDrink.xml
+VBE_EnergyDrink.ingestible.ingestCommandString	Beber {0}
+VBE_EnergyDrink.ingestible.ingestReportString	Bebendo {0}.
+## DefInjected/ThingDef/Drinks_Soda.xml
+VBE_Soda.ingestible.ingestCommandString	Beber {0}
+VBE_Soda.ingestible.ingestReportString	Bebendo {0}.
+## DefInjected/ThingDef/Drinks_Teas.xml
+VBE_Tea.ingestible.ingestCommandString	Beber {0}
+VBE_Tea.ingestible.ingestReportString	Bebendo {0}.
+## DefInjected/ThingDef/Items_Cider.xml
+VBE_Cider.ingestible.ingestCommandString	Beber {0}
+VBE_Cider.ingestible.ingestReportString	Bebendo {0}.
+## Keyed/Misc_Gameplay.xml
+VBE_Never	Nunca
+VBE_Always	Sempre

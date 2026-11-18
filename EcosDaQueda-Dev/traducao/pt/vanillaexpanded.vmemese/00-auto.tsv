@@ -1,0 +1,315 @@
+## DefInjected/HediffDef/Hediffs_Misc.xml
+VME_Naked.label	nu
+VME_Naked.description	Esta pessoa está nua.
+## DefInjected/HistoryEventDef/Precepts_Sweets.xml
+VME_AteSimpleDessert.label	comeu sobremesa simples
+VME_AteFineDessert.label	comeu sobremesa boa
+VME_AteLavishDessert.label	comeu sobremesa luxuosa
+VME_AteGourmetDessert.label	comeu sobremesa gourmet
+## DefInjected/IssueDef/Precepts_Aurora.xml
+VME_Aurora.label	aurora
+## DefInjected/IssueDef/Precepts_Fire.xml
+VME_Fire.label	fogo
+## DefInjected/IssueDef/Precepts_InsectJelly.xml
+VME_InsectJelly.label	geleia de inseto
+## DefInjected/IssueDef/Precepts_Insectoids.xml
+VME_Insectoids.label	insetoides
+## DefInjected/IssueDef/Precepts_Leader.xml
+VME_Leader.label	líder
+## DefInjected/IssueDef/Precepts_Power.xml
+VME_Power.label	energizar
+## DefInjected/IssueDef/Precepts_Royalty.xml
+VME_Royalty.label	realeza
+## DefInjected/IssueDef/Precepts_Trading.xml
+VME_Trading.label	negociando
+## DefInjected/MemeDef/Memes_Misc.xml
+VME_ViolentConversion.symbolPacks.1.member	cruzado
+VME_GodEmperor.generalRules.rulesStrings[6]	memeMoralist->vidente
+VME_GodEmperor.symbolPacks.0.adjective	divino
+VME_GodEmperor.symbolPacks.0.member	serviçal
+VME_HardcoreIndustrialism.symbolPacks.0.member	trabalhador
+VME_Fleshcrafters.generalRules.rulesStrings[2]	memeAdjective->orgânico
+VME_CraftCulture.symbolPacks.3.member	funileiro
+VME_Progressive.label	progressiva
+VME_Aristocratic.symbolPacks.0.adjective	nobre
+VME_Aristocratic.symbolPacks.0.member	súdito
+VME_Aristocratic.symbolPacks.1.member	súdito
+VME_Scrapper.label	ferro-velho
+VME_Scrapper.symbolPacks.0.member	catador
+VME_Scrapper.symbolPacks.1.adjective	ferro-velho
+VME_Scrapper.symbolPacks.1.member	ferro-velho
+VME_Scrapper.symbolPacks.2.member	catador
+VME_Trader.label	comerciante
+VME_Trader.symbolPacks.0.adjective	negociando
+VME_Trader.symbolPacks.0.ideoName	Comerciante
+VME_Trader.symbolPacks.0.member	comerciante
+VME_Trader.symbolPacks.0.theme	negociando
+VME_Trader.symbolPacks.2.theme	riqueza
+VME_Elders.symbolPacks.0.member	ancião
+VME_Egalitarian.generalRules.rulesStrings[2]	memeAdjective->livre
+VME_Light.label	luz
+VME_Light.symbolPacks.0.adjective	luz
+VME_Light.symbolPacks.0.theme	luz
+VME_Nomad.generalRules.rulesStrings[2]	memeAdjective->viajante
+VME_Nomad.generalRules.rulesStrings[3]	memeAdjective->errante
+VME_Nomad.generalRules.rulesStrings[6]	memeConcept->viagem
+VME_BloodCourt.symbolPacks.0.member	lutador
+VME_InsectoidSupremacy.symbolPacks.0.theme	insetoides
+VME_Emancipation.generalRules.rulesStrings[2]	memeAdjective->livre
+VME_Nationalist.generalRules.rulesStrings[14]	memeLeaderAdjective->insensível
+VME_Healthcare.symbolPacks.0.member	médica
+VFEA_Isolationist.generalRules.rulesStrings[14]	memeLeaderNoun->comandante
+VFEA_Isolationist.symbolPacks.0.adjective	isolado
+## DefInjected/MemeDef/Memes_Misc_Royalty.xml
+VME_PsychicFocus.generalRules.rulesStrings[7]	memeLeaderNoun->vidente
+VME_PsychicFocus.symbolPacks.0.adjective	psíquico
+VME_PsychicFocus.symbolPacks.0.member	psíquico
+VME_Royal.symbolPacks.0.adjective	nobre
+VME_Royal.symbolPacks.0.theme	realeza
+## DefInjected/MemeDef/Memes_Structures_Basic.xml
+VME_Structure_Serketist.worshipRoomLabel	colmeia
+VME_Structure_ChthonianCult.symbolPacks.0.adjective	sobrenatural
+VME_Structure_ChthonianCult.symbolPacks.0.theme	sobrenatural
+VME_Structure_Authoritarianism.generalRules.rulesStrings[14]	memeLeaderAdjective->insensível
+VME_Structure_CultOfPersonality.symbolPacks.0.member	súdito
+VME_Structure_Pantheism.worshipRoomLabel	salão principal
+VME_Structure_Omnism.worshipRoomLabel	templo
+VME_Structure_Shintaoism.generalRules.rulesStrings[1]	memeAdjective->natural
+VME_Structure_Corporate.generalRules.rulesStrings[7]	memeLeaderNoun->chefe
+VME_Structure_Corporate.generalRules.rulesStrings[9]	memeLeaderAdjective->implacável
+## DefInjected/PreceptDef/Precepts_Anonymity.xml
+VME_Anonymity_Required.label	obrigatória
+## DefInjected/PreceptDef/Precepts_Aurora.xml
+VME_Aurora_Despised.label	desprezados
+## DefInjected/PreceptDef/Precepts_AutomationEfficiency.xml
+VME_AutomationEfficiency_Increased.label	aumentada
+## DefInjected/PreceptDef/Precepts_AutonomousWeapons.xml
+VME_AutonomousWeapons_Exalted.label	exaltados
+## DefInjected/PreceptDef/Precepts_BookReading.xml
+VME_BookReadingSpeed_Increased.label	aumentada
+## DefInjected/PreceptDef/Precepts_CraftingQuality.xml
+VME_CraftingQuality_Increased.label	aumentada
+## DefInjected/PreceptDef/Precepts_DumbLabor.xml
+VME_DumbLabor_Exalted.label	exaltados
+VME_DumbLabor_Horrible.label	horrível
+## DefInjected/PreceptDef/Precepts_Eclipse.xml
+VME_Eclipse_Despised.label	desprezados
+## DefInjected/PreceptDef/Precepts_Elders.xml
+VME_Elders_Despised.label	desprezados
+VME_Elders_Respected.label	respeitados
+VME_Elders_Holy.label	sagrado
+## DefInjected/PreceptDef/Precepts_Expectations.xml
+VME_Expectations_High.label	alta
+## DefInjected/PreceptDef/Precepts_Farming.xml
+VME_FarmingYield_High.label	alta
+## DefInjected/PreceptDef/Precepts_Fire.xml
+VME_Fire_Despised.label	desprezados
+## DefInjected/PreceptDef/Precepts_Firefighting.xml
+VME_Firefighting_Abhorrent.label	abomináveis
+## DefInjected/PreceptDef/Precepts_Hospital.xml
+VME_Hospital_Required.label	obrigatória
+## DefInjected/PreceptDef/Precepts_Illness.xml
+VME_Illness_Exalted.label	exaltados
+## DefInjected/PreceptDef/Precepts_InsectJelly.xml
+VME_InsectJellyEaten_Despised.label	desprezados
+## DefInjected/PreceptDef/Precepts_InsectMeat.xml
+VME_InsectMeatEating_Sacrilegious.label	abomináveis
+## DefInjected/PreceptDef/Precepts_Insectoids.xml
+VME_Insectoids_Exalted.label	exaltados
+VME_Insectoids_Despised.label	desprezados
+## DefInjected/PreceptDef/Precepts_JunkDeconstructionYield.xml
+VME_JunkDeconstructionYield_High.label	alta
+## DefInjected/PreceptDef/Precepts_KillingWithFire.xml
+VME_KillingWithFire_Abhorrent.label	abomináveis
+## DefInjected/PreceptDef/Precepts_LeatherApparel.xml
+VME_LeatherApparel_Abhorrent.label	abomináveis
+## DefInjected/PreceptDef/Precepts_Lighting.xml
+VME_DarknessCombat_Despised.label	desprezados
+## DefInjected/PreceptDef/Precepts_Mechanoids.xml
+VME_Mechanoids_Exalted.label	exaltados
+VME_Mechanoids_Despised.label	desprezados
+## DefInjected/PreceptDef/Precepts_PermanentBases.xml
+VME_PermanentBases_Despised.label	desprezados
+## DefInjected/PreceptDef/Precepts_PermitCooldown.xml
+VME_PermitCooldown_Increased.label	aumentada
+## DefInjected/PreceptDef/Precepts_Power.xml
+VME_Power_Exalted.label	exaltados
+## DefInjected/PreceptDef/Precepts_Raiders.xml
+VME_Raiding_Abhorrent.label	abomináveis
+## DefInjected/PreceptDef/Precepts_Recruiting.xml
+VFEA_Recruiting_Forbidden.label	proibida
+VFEA_BeingRecruited_Forbidden.label	proibida
+## DefInjected/PreceptDef/Precepts_Role_Merchant.xml
+VME_IdeoRole_Merchant.label	mercador
+## DefInjected/PreceptDef/Precepts_Royalty.xml
+VME_Royalty_Exalted.label	exaltados
+VME_Royalty_Respected.label	respeitados
+## DefInjected/PreceptDef/Precepts_SkilledLabor.xml
+VME_SkilledLabor_Slow.label	lento
+## DefInjected/PreceptDef/Precepts_Slavery.xml
+VME_Slavery_Forbidden.label	proibida
+## DefInjected/PreceptDef/Precepts_TaintedApparel.xml
+VME_TaintedApparel_Abhorrent.label	abomináveis
+## DefInjected/PreceptDef/Precepts_TatteredApparel.xml
+VME_TatteredApparel_Abhorrent.label	abomináveis
+## DefInjected/PreceptDef/Precepts_TendQuality.xml
+VME_TendQuality_Increased.label	aumentada
+## DefInjected/PreceptDef/Precepts_Trading.xml
+VME_Trading_Required.label	obrigatória
+## DefInjected/PreceptDef/Precepts_Travel.xml
+VME_Travel_Despised.label	desprezados
+## DefInjected/PreceptDef/Precepts_Violence.xml
+VME_Violence_Abhorrent.label	abomináveis
+## DefInjected/PreceptDef/Precepts_Woodcutting.xml
+VME_WoodcuttingYield_High.label	alta
+## DefInjected/RitualBehaviorDef/Ritual_Behaviors_Bonfire.xml
+VME_BonfireBehaviour.spectatorGerund	participar
+VME_BonfireBehaviour.spectatorsLabel	Participantes
+## DefInjected/RitualBehaviorDef/Ritual_Behaviors_CeremonialSuicide.xml
+VME_CeremonialSuicideRitualBehaviour.spectatorGerund	participar
+VME_CeremonialSuicideRitualBehaviour.spectatorsLabel	Participantes
+## DefInjected/RitualBehaviorDef/Ritual_Behaviors_DivineTheStars.xml
+VME_DivineStarsRitualBehaviour.spectatorGerund	participar
+VME_DivineStarsRitualBehaviour.spectatorsLabel	Participantes
+## DefInjected/RitualBehaviorDef/Ritual_Behaviors_Incantation.xml
+VME_IncantationBehavior.roles.0.label	orador
+VME_IncantationBehavior.spectatorGerund	participar
+VME_IncantationBehavior.spectatorsLabel	Participantes
+## DefInjected/RitualBehaviorDef/Ritual_Behaviors_InsectoidHymn.xml
+VME_InsectoidHymnRitualBehaviour.roles.0.label	puxador
+VME_InsectoidHymnRitualBehaviour.spectatorGerund	participar
+VME_InsectoidHymnRitualBehaviour.spectatorsLabel	Participantes
+## DefInjected/RitualBehaviorDef/Ritual_Behaviors_LeaderConversion.xml
+VME_LeaderConversionBehavior.roles.0.label	orador
+## DefInjected/RitualBehaviorDef/Ritual_Behaviors_LeadershipChallenge.xml
+VME_LeadershipChallengeRitualBehaviour.roles.0.label	orador
+VME_LeadershipChallengeRitualBehaviour.spectatorGerund	participar
+## DefInjected/RitualBehaviorDef/Ritual_Behaviors_Orgy.xml
+VME_OrgyRitualBehaviour.spectatorGerund	participar
+VME_OrgyRitualBehaviour.spectatorsLabel	Participantes
+## DefInjected/RitualBehaviorDef/Ritual_Behaviors_PlagueFestival.xml
+VME_PlagueFestivalRitualBehaviour.spectatorGerund	participar
+VME_PlagueFestivalRitualBehaviour.spectatorsLabel	Participantes
+## DefInjected/RitualBehaviorDef/Ritual_Behaviors_SlaveEmancipation.xml
+VME_SlaveEmancipationBehavior.roles.0.label	orador
+VME_SlaveEmancipationBehavior.spectatorGerund	participar
+VME_SlaveEmancipationBehavior.spectatorsLabel	Participantes
+## DefInjected/RitualBehaviorDef/Ritual_Behaviors_TradingFair.xml
+VME_TradingFairRitualBehaviour.spectatorGerund	participar
+VME_TradingFairRitualBehaviour.spectatorsLabel	Participantes
+## DefInjected/RitualOutcomeEffectDef/Ritual_Outcomes_Bonfire.xml
+VME_BonfireOutcome.comps.0.label	impacto social de {PAWN_labelShort}
+VME_BonfireOutcome.comps.0.labelAbstract	impacto social do orador
+VME_BonfireOutcome.comps.1.label	número de participantes
+VME_BonfireOutcome.outcomeChances.0.label	Terrível
+VME_BonfireOutcome.outcomeChances.2.label	Boa
+## DefInjected/RitualOutcomeEffectDef/Ritual_Outcomes_CeremonialSuicide.xml
+VME_CeremonialSuicideRitualOutcome.comps.0.label	impacto social de {PAWN_labelShort}
+VME_CeremonialSuicideRitualOutcome.comps.0.labelAbstract	impacto social do orador
+VME_CeremonialSuicideRitualOutcome.comps.1.label	imponência do cômodo
+VME_CeremonialSuicideRitualOutcome.comps.2.label	número de participantes
+VME_CeremonialSuicideRitualOutcome.outcomeChances.0.label	Terrível
+VME_CeremonialSuicideRitualOutcome.outcomeChances.1.label	Chata
+## DefInjected/RitualOutcomeEffectDef/Ritual_Outcomes_DivineTheStars.xml
+VME_DivineStarsRitualOutcome.comps.0.label	impacto social de {PAWN_labelShort}
+VME_DivineStarsRitualOutcome.comps.0.labelAbstract	impacto social do orador
+VME_DivineStarsRitualOutcome.comps.1.label	número de participantes
+## DefInjected/RitualOutcomeEffectDef/Ritual_Outcomes_Incantation.xml
+VME_IncantationOutcome.comps.0.label	imponência do cômodo
+VME_IncantationOutcome.comps.1.label	número de participantes
+VME_IncantationOutcome.comps.2.label	impacto social de {PAWN_labelShort}
+VME_IncantationOutcome.comps.2.labelAbstract	impacto social do orador
+## DefInjected/RitualOutcomeEffectDef/Ritual_Outcomes_InsectoidHymn.xml
+VME_InsectoidHymnRitualOutcome.description	Conforme a qualidade do ritual, os participantes ganham entre {MINMOOD} e {MAXMOOD} de humor por {MOODDAYS} dias.
+VME_InsectoidHymnRitualOutcome.comps.0.label	puxador presente
+VME_InsectoidHymnRitualOutcome.comps.1.label	número de participantes
+VME_InsectoidHymnRitualOutcome.comps.2.label	imponência do cômodo
+VME_InsectoidHymnRitualOutcome.outcomeChances.1.label	Constrangedora
+VME_InsectoidHymnRitualOutcome.outcomeChances.2.label	Empolgante
+## DefInjected/RitualOutcomeEffectDef/Ritual_Outcomes_LeaderConversion.xml
+VME_LeaderConversionOutcome.comps.0.label	imponência do cômodo
+VME_LeaderConversionOutcome.comps.1.label	número de participantes
+VME_LeaderConversionOutcome.comps.2.label	impacto social de {PAWN_labelShort}
+VME_LeaderConversionOutcome.comps.2.labelAbstract	impacto social do orador
+VME_LeaderConversionOutcome.outcomeChances.0.label	Terrível
+## DefInjected/RitualOutcomeEffectDef/Ritual_Outcomes_LeadershipChallenge.xml
+VME_LeadershipChallengeRitualOutcome.description	Conforme a qualidade do ritual, os participantes ganham entre {MINMOOD} e {MAXMOOD} de humor por {MOODDAYS} dias.
+VME_LeadershipChallengeRitualOutcome.comps.1.label	imponência do cômodo
+VME_LeadershipChallengeRitualOutcome.comps.2.label	impacto social de {PAWN_labelShort}
+VME_LeadershipChallengeRitualOutcome.comps.3.label	número de participantes
+VME_LeadershipChallengeRitualOutcome.outcomeChances.0.label	Terrível
+VME_LeadershipChallengeRitualOutcome.outcomeChances.1.label	Chata
+VME_LeadershipChallengeRitualOutcome.outcomeChances.2.label	Boa
+## DefInjected/RitualOutcomeEffectDef/Ritual_Outcomes_Orgy.xml
+VME_OrgyRitualOutcome.comps.1.label	imponência do cômodo
+VME_OrgyRitualOutcome.comps.2.label	impacto social de {PAWN_labelShort}
+VME_OrgyRitualOutcome.comps.3.label	número de participantes
+VME_OrgyRitualOutcome.outcomeChances.1.label	Constrangedora
+## DefInjected/RitualOutcomeEffectDef/Ritual_Outcomes_PlagueFestival.xml
+VME_PlagueFestivalRitualOutcome.comps.3.label	número de participantes
+VME_PlagueFestivalRitualOutcome.outcomeChances.0.label	Terrível
+VME_PlagueFestivalRitualOutcome.outcomeChances.1.label	Chata
+## DefInjected/RitualOutcomeEffectDef/Ritual_Outcomes_SlaveEmancipation.xml
+VME_SlaveEmancipationOutcome.description	Conforme a qualidade do ritual, os participantes ganham entre {MINMOOD} e {MAXMOOD} de humor por {MOODDAYS} dias.
+VME_SlaveEmancipationOutcome.comps.0.label	imponência do cômodo
+VME_SlaveEmancipationOutcome.comps.1.label	número de participantes
+VME_SlaveEmancipationOutcome.comps.2.label	impacto social de {PAWN_labelShort}
+VME_SlaveEmancipationOutcome.comps.2.labelAbstract	impacto social do orador
+VME_SlaveEmancipationOutcome.outcomeChances.4.label	Incrível
+## DefInjected/RitualOutcomeEffectDef/Ritual_Outcomes_TradingFair.xml
+VME_TradingFairRitualOutcome.comps.1.label	número de participantes
+## DefInjected/RitualOutcomeEffectDef/Ritual_Outcomes_ViolentConversion.xml
+VME_ViolentConversionRitualOutcome.comps.0.label	número de participantes
+VME_ViolentConversionRitualOutcome.comps.1.label	impacto social de {PAWN_labelShort}
+VME_ViolentConversionRitualOutcome.comps.1.labelAbstract	impacto social do orador
+VME_ViolentConversionRitualOutcome.outcomeChances.0.label	Constrangedora
+## DefInjected/RitualOutcomeEffectDef/Ritual_Outcomes_WickerManBurning.xml
+VME_WickerManBurningOutcome.comps.0.label	número de participantes
+VME_WickerManBurningOutcome.comps.1.label	impacto social de {PAWN_labelShort}
+VME_WickerManBurningOutcome.comps.1.labelAbstract	impacto social do orador
+VME_WickerManBurningOutcome.outcomeChances.0.label	Terrível
+VME_WickerManBurningOutcome.outcomeChances.2.label	Boa
+## DefInjected/StyleCategoryDef/StyleCategoryDefs.xml
+VME_Eldritch.label	sobrenatural
+## DefInjected/ThingDef/Ritual_VisualEffects_Styles.xml
+VME_EldritchRune.label	efeito
+VME_SwderptikaMote.label	efeito
+VME_PentagramsMote.label	efeito
+VME_CrystalBall.label	efeito
+VME_GreekColumn.label	efeito
+VME_Statue.label	efeito
+VME_HugeStar.label	efeito
+VME_PantheistSymbol.label	efeito
+VME_OmnistSymbol.label	efeito
+VME_Atom.label	efeito
+VME_Yoga.label	efeito
+## DefInjected/ThingDef/Ritual_VisualEffects_TradingFair.xml
+VME_Mote_TradingStandard.label	efeito
+## DefInjected/ThingDef/WorkCommand_Hediffs.xml
+VME_Mote_WorkCommand.label	efeito
+VME_Mote_WorkCommandLinkLine.label	efeito
+## DefInjected/ThoughtDef/Precepts_Elders.xml
+VME_Elders_Despised.stages.elder.label	ancião
+VME_Elders_Respected.stages.elder.label	ancião
+VME_Elders_Holy.stages.elder.label	ancião
+## DefInjected/ThoughtDef/Precepts_Illness.xml
+VME_Illness_Exalted.stages.sick.label	doente
+VME_Illness_Preferred.stages.sick.label	doente
+## DefInjected/ThoughtDef/Precepts_Royalty.xml
+VME_Royalty_Respected.stages.royalty.label	realeza
+VME_Royalty_Disliked.stages.royalty.label	realeza
+## DefInjected/ThoughtDef/Precepts_Scars.xml
+VME_Scars_Honorable.stages.heavily_scarred.label	muito cicatrizado
+VME_Scars_Disgusting.stages.heavily_scarred.label	muito cicatrizado
+## DefInjected/ThoughtDef/Thoughts_Orgy.xml
+VME_GotSomeLovin.stages.got_some_lovin.label	recebeu amor
+VME_GotSomeLovin.stages.got_some_lovin.description	Nada como rolar entre os lençóis para melhorar o humor.
+## DefInjected/ThoughtDef/Thoughts_Situation_Needs_VanillaCookingExpanded.xml
+VME_NeedSweets.stages.full.label	cheio
+## DefInjected/TraitDef/Traits_Singular.xml
+VME_Elder.degreeDatas.elder.label	ancião
+## DefInjected/WorkGiverDef/WorkGivers_Misc.xml
+VME_MaintainInsectNest.gerund	fazendo manutenção em
+VME_MaintainInsectNest.verb	fazer manutenção em
+## Keyed/Misc.xml
+VME_Reset	Restaurar

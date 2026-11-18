@@ -1,0 +1,137 @@
+## DefInjected/DamageDef/Damage_AlphaBiomes.xml
+AB_ParalysingSting.deathMessage	{0} morreu mordido.
+AB_Tar.label	piche
+AB_Tar.deathMessage	{0} foi morto.
+## DefInjected/HediffDef/AB_PsychotropicFungus.xml
+AB_PsychotropicFungusTolerance.stages.small.label	pequena
+AB_PsychotropicFungusTolerance.stages.large.label	grande
+AB_PsychotropicFungusTolerance.stages.massive.label	enorme
+AB_PsychotropicFungusAddiction.stages.withdrawal.label	abstinência
+## DefInjected/HediffDef/Hediffs_Local_Infections.xml
+AB_SporesAllergy.stages.minor.label	leve
+AB_SporesAllergy.stages.major.label	grave
+AB_SporesAllergy.stages.extreme.label	extrema
+AB_SporesAllergy_Heightened.stages.minor.label	leve
+AB_SporesAllergy_Heightened.stages.major.label	grave
+AB_SporesAllergy_Heightened.stages.extreme.label	extrema
+AB_AnimalSporesAllergy.stages.minor.label	leve
+AB_AnimalSporesAllergy.stages.major.label	grave
+AB_AnimalSporesAllergy.stages.extreme.label	extrema
+AB_Paralysis.stages.initial.label	inicial
+AB_Paralysis.stages.paralysed.label	paralisado
+AB_RavagingIntestinalParasites.stages.minor.label	leve
+AB_RavagingIntestinalParasites.stages.major.label	grave
+AB_RavagingIntestinalParasites.stages.extreme.label	extrema
+AB_ViralAbasia.stages.minor-0.label	leve
+AB_ViralAbasia.stages.minor-1.label	leve
+AB_ViralAbasia.stages.major.label	grave
+AB_ViralAbasia.stages.extreme.label	extrema
+AB_BacterialGangrene.stages.minor.label	leve
+AB_BacterialGangrene.stages.major.label	grave
+AB_BacterialGangrene.stages.extreme.label	extrema
+AB_Gangrene.labelNounPretty	{0} em {1}
+## DefInjected/HediffDef/Hediffs_Local_TerrainAttacks.xml
+AB_SlimeInEyes.battleStateLabel	cego
+## DefInjected/HediffDef/Hediffs_Odyssey.xml
+AB_Exploder.label	nódulos de combustível químico
+AB_MalevolentEye.stages.minor.label	leve
+AB_MalevolentEye.stages.major.label	grave
+AB_MalevolentEye.stages.extreme-0.label	extrema
+AB_MalevolentEye.stages.extreme-1.label	extrema
+AB_ChocolateInEyes.label	chocolate
+AB_ChocolateInEyes.battleStateLabel	cego
+AB_ChocolateInEyes.labelNoun	chocolate
+AB_StrawberryInEyes.battleStateLabel	cego
+AB_CreamInEyes.battleStateLabel	cego
+AB_CandySandInEyes.battleStateLabel	cego
+## DefInjected/RulePackDef/RulePacks_Damage.xml
+AB_Damage_Tar.rulePack.rulesStrings[3]	destroyed_past->damaged_past
+## DefInjected/TerrainAffordanceDef/TerrainAffordances.xml
+AB_TarAffordance.label	piche
+## DefInjected/TerrainDef/Terrain_ForsakenCrags.xml
+AB_ForsakenSand.tools.dirt.label	terra
+## DefInjected/TerrainDef/Terrain_GelatinousSuperorganism.xml
+AB_LiquidSlime.tools.water.label	água
+## DefInjected/TerrainDef/Terrain_IdyllicMeadows.xml
+AB_GrassyFlowerySoil.tools.dirt.label	terra
+AB_FertileGrassyFlowerySoil.tools.dirt.label	terra
+AB_FertileGrassyFlowerySoil_Oversaturated.tools.dirt.label	terra
+## DefInjected/TerrainDef/Terrain_MiasmicMangrove.xml
+AB_FertileMarsh.tools.water.label	água
+## DefInjected/TerrainDef/Terrain_Misc_Odyssey.xml
+AB_HealingSpringwater.tools.water.label	água
+AB_MutagenicOcularWater.tools.water.label	água
+AB_MutagenicOcularWaterFlood.tools.water.label	água
+AB_Quicksand.tools.water.label	água
+AB_ChocolateSoil.tools.chocolate.label	chocolate
+AB_ChocolateSoilRich.tools.chocolate.label	chocolate
+AB_DryFlowerySoil.tools.dirt.label	terra
+AB_ToxicFlowerySoil.tools.dirt.label	terra
+AB_ToxicFertileGrassyFlowerySoil.tools.dirt.label	terra
+AB_CeruleanSoil.tools.dirt.label	terra
+AB_CeruleanSoilRich.tools.dirt.label	terra
+AB_GauranlenSoil.tools.dirt.label	terra
+AB_GauranlenSoilRich.tools.dirt.label	terra
+## DefInjected/TerrainDef/Terrain_MycoticJungle.xml
+AB_MycoticSoil.tools.dirt.label	terra
+AB_MycoticSoilRich.tools.dirt.label	terra
+## DefInjected/TerrainDef/Terrain_OcularForest.xml
+GU_RedWaterShallow.tools.water.label	água
+GU_RedWaterDeep.tools.water.label	água
+GU_RedWaterMovingChestDeep.tools.water.label	água
+GU_RedWaterMovingShallow.tools.water.label	água
+GU_RedWaterOceanShallow.tools.water.label	água
+GU_RedWaterOceanDeep.tools.water.label	água
+## DefInjected/TerrainDef/Terrain_PropaneLakes.xml
+AB_PropaneLake.tools.water.label	água
+## DefInjected/TerrainDef/Terrain_PyroclasticConflagration.xml
+AB_LiquidLava.tools.water.label	água
+## DefInjected/TerrainDef/Terrain_TarPits.xml
+AB_LushGrass.tools.dirt.label	terra
+AB_Tar.tools.water.label	água
+## DefInjected/TerrainDef/Terrain_Waters_Odyssey.xml
+AB_LiquidCream_Deep.tools.water.label	água
+AB_LiquidCream_MovingChestDeep.tools.water.label	água
+AB_LiquidCream_Shallow.tools.water.label	água
+AB_LiquidCream_MovingShallow.tools.water.label	água
+AB_LiquidCreamFlood.tools.water.label	água
+AB_LightRedWaterShallow.tools.water.label	água
+AB_LightRedWaterDeep.tools.water.label	água
+AB_LightRedFlood.tools.water.label	água
+AB_LightRedWaterMovingChestDeep.tools.water.label	água
+AB_LightRedWaterMovingShallow.tools.water.label	água
+AB_LightRedWaterOceanShallow.tools.water.label	água
+AB_LightRedWaterOceanDeep.tools.water.label	água
+AB_CerebrospinalFluid_Deep.tools.water.label	água
+AB_CerebrospinalFluid_MovingChestDeep.tools.water.label	água
+AB_CerebrospinalFluid_Shallow.tools.water.label	água
+AB_CerebrospinalFluid_MovingShallow.tools.water.label	água
+AB_CerebrospinalFluidFlood.tools.water.label	água
+## DefInjected/ThingDef/AB_RawRimeNodules.xml
+AB_RawRimeNodules.ingestible.ingestCommandString	Tomar {0}
+AB_RawRimeNodules.ingestible.ingestReportString	Tomando {0}.
+## DefInjected/ThingDef/Buildings_Structure_Odyssey.xml
+AB_RustedWall.description	Uma parede intransponível. Pode sustentar um teto.
+AB_MineableChocolate.label	chocolate
+## DefInjected/ThingDef/Mote_Visual.xml
+AB_TarMote.label	efeito
+AB_MagmaMote.label	efeito
+## DefInjected/ThingDef/Plants_ForsakenCrags.xml
+AB_GlowingGrass.label	grama
+## DefInjected/ThingDef/Plants_IdyllicMeadows.xml
+AB_Flowers.label	flores
+## DefInjected/ThingDef/Races_Animal_Phytokin.xml
+AB_UnshackledCompanionDryad.tools.0.label	garra esquerda
+AB_UnshackledCompanionDryad.tools.1.label	garra direita
+AB_UnshackledCompanionDryad.tools.3.label	cabeça
+## DefInjected/WorkGiverDef/WorkGivers.xml
+AB_DoBillsCook.gerund	cozinhando em
+AB_DoBillsCook.verb	cozinheiro
+AB_DoBillsMachiningTable.gerund	trabalhando na
+AB_DoBillsMachiningTable.verb	trabalhar na
+## Keyed/Misc_Gameplay.xml
+AM_None	Nenhum
+AB_ChunkRandomMine	Perfurar atrás de pedaços aleatórios
+AB_ChooseMine	Escolher tipo de pedaço a perfurar
+AB_Reset	Redefinir {0}
+AB_Reset_Plain	Restaurar

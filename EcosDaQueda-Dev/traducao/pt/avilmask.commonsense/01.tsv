@@ -1,0 +1,87 @@
+## DefInjected/JobDef/Jobs_Misc.xml
+UnloadMarkedItems.reportString	descarregando o inventário.
+SocialRelaxCommonSense.reportString	relaxando em grupo.
+## DefInjected/RoomRoleDef/RoomRoles.xml
+CooledStoreroom.label	câmara fria
+## Keyed/strings.xml
+fulfill_outdoors_head	Necessidade de ar livre
+fulfill_outdoors_label	Incentivar as pessoas a suprir a necessidade de ar livre buscando recreação ao ar livre
+fulfill_outdoors_note	OBS.: não ponha as mesmas fontes de recreação dentro e fora de casa, para evitar indecisão.
+clean_head	Tarefas oportunistas
+clean_before_working_label	Incentivar as pessoas a limpar o cômodo antes de operar uma estação nele
+clean_before_working_note	OBS.: não espere que quem não sabe limpar comece a limpar de repente.
+bill_job_pathing_label	Calcular o caminho exato até o prédio nas tarefas de pedido
+bill_job_pathing_note	Ajuda a evitar desvios absurdos quando precisam buscar recursos antes, mas pode pesar no processador
+clean_after_tending_label	Incentivar as pessoas a limpar o cômodo depois de tratar um paciente
+clean_after_tending_note	OBS.: não espere que quem não sabe limpar comece a limpar de repente.
+meal_stacking_head	Empilhamento de refeições
+meal_stacking_label	Evitar misturar refeições com pensamentos ruins ao empilhar
+meal_stacking_note	Assim ninguém mistura refeição nojenta com refeição normal
+dont_count_odd_label	Contar carne estranha (ex.: de inseto) como normal, permitindo empilhar com refeições normais
+dont_count_odd_note	Carne de inseto nem é tão ruim assim...
+gen_ingredients_head	Geração de refeições
+gen_ingredients_label	Pôr ingredientes aleatórios nas refeições geradas ao acaso
+gen_ingredients_note	Ex.: presentes do narrador, vendidas por comerciantes, saqueadas de cadáveres. Só usa ingredientes neutros para o humor. Com esta opção, o jogo nunca mais será o mesmo
+add_to_que_label	Pôr a tarefa anterior na fila
+add_to_que_note	Assim ninguém muda de ideia depois de uma tarefa oportunista, mas às vezes confunde se a tarefa já tinha sido pega
+hauling_over_bills_label	Incentivar as pessoas a levar os ingredientes de um pedido para um estoque
+hauling_over_bills_note	Ao trabalhar num pedido, preferem levar os ingredientes para um estoque em vez de pegar só a fração que a receita pede
+fulfill_needs_head	Satisfação de necessidades
+drugs_use_potential_mood_label	Levar em conta o humor potencial nas políticas de drogas
+drugs_use_potential_mood_note	Ninguém usa drogas se o humor "potencial" passar do limite, evitando o excesso para atingir um humor definido.
+miscellaneous_head	Diversos
+extended_recipe_label	Receitas mostram a lista completa de ingredientes
+extended_recipe_note	Em vez de só "ingredientes", vago
+advanced_head	Comportamentos avançados
+advanced_inbetween_cleaning_label	Limpar os cômodos entre buscar ingredientes e fabricar
+advanced_inbetween_cleaning_note	O comportamento básico só limparia antes de buscar
+advanced_haul_all_ings_label	Incentivar as pessoas a pegar todos os ingredientes antes de levá-los ao local de fabricação
+advanced_haul_all_ings_note	Põem todos os ingredientes necessários no inventário antes de entregá-los no local de fabricação
+prefer_spoiling_ingredients_label	Incentivar as pessoas a usar primeiro ingredientes e materiais perto de estragar.
+prefer_spoiling_ingredients_note	ATENÇÃO: com esta opção ligada, muitos itens para escolher podem causar travadas.
+UnloadThing	Descarregar
+UnloadThingCancel	Cancelar descarga
+manual_unload_label	Mostrar um botão no inventário do colono para marcar itens a levar ao estoque
+manual_unload_note	Se não houver estoque para onde levar, o colono larga o item perto dele
+put_back_to_inv_label	Guardar de volta no inventário quando interrompido
+put_back_to_inv_note	Quem está segurando um item do inventário o guarda de volta se a ação for interrompida
+pick_proper_amount_label	Parar de pegar mais doces do que consegue comer
+pick_proper_amount_note	Chega de chocolate largado por aí
+fun_police_label	Incentivar as pessoas a suprir necessidades secundárias no horário de recreação ou se acordarem cedo
+fun_police_note	Só vão completar a recreação quando ela cair abaixo de 80%, preferem guardar uma refeição extra no inventário e suprem todas as necessidades de higiene (se o mod do Dubs estiver presente)
+numbers_head	Números ajustáveis (0 = sem limite)
+op_clean_number_label	Limite de sujeira para limpar antes da tarefa
+adv_clean_number_label	Limite de sujeira para limpar antes do pedido
+doc_clean_number_label	Limite de sujeira para limpar depois de tratar
+skip_snow_clean_label	Desincentivar tirar neve das áreas enquanto neva ou chove
+skip_snow_clean_note	Na chuva, só por garantia, caso o tempo vire
+prefer_spoiling_meals_label	Incentivar as pessoas a comer primeiro refeições perto de estragar
+prefer_spoiling_meals_note	ATENÇÃO: com esta opção ligada, muitos itens para escolher podem causar travadas.
+allow_feeding_with_plants_label	Permitir e incentivar alimentar os animais com feno.
+allow_feeding_with_plants_note	 Os animais também passam a preferir comida que não serve para humanos.
+give_sick_joy_drugs_label	Incentivar as pessoas a dar drogas sociais permitidas ou comidas de recreação aos doentes
+give_sick_joy_drugs_note	Para que conversar se dá para dar uma barra de chocolate?
+social_relax_economy_label	Mudar o uso de drogas no relaxamento em grupo para não "desperdiçar recreação"
+social_relax_economy_note	Normalmente sentam por uma ou duas horas antes de consumir a droga, desperdiçando o efeito
+advanced_cleaning_ingest_label	Incentivar as pessoas a limpar antes de comer à mesa ou relaxar em grupo
+advanced_cleaning_ingest_note	Limpam em volta da mesa onde pretendem sentar
+mood_regen_label	O humor tende devagar a 50% durante o sono, se possível
+mood_regen_note	Deixe a pessoa "dormir sobre o assunto" e tudo se ajeita
+safe_wander_label	Incentivar as pessoas a evitar mau tempo quando andam à toa
+safe_wander_note	Parem de passear na precipitação tóxica, seus idiotas
+polite_wander_label	Incentivar visitantes amigáveis a não entrar em quartos, celas e alojamentos de prisão quando andam à toa
+polite_wander_note	Isso é indecente, ou até perigoso, não acha?
+ingest_any_drugs_label	Permitir tomar qualquer droga do inventário
+ingest_any_drugs_note	Se dá para ingerir, deve dar para comer sem largar no chão
+DoCleanCompToggleLabel	Limpar em volta desta bancada
+DoCleanCompToggleDescActive	As pessoas vão limpar em volta desta bancada
+DoCleanCompToggleDescInactive	As pessoas NÃO vão limpar em volta desta bancada
+advanced_inbetween_cleaning_gizmo_label	Mostrar um botão para escolher quais bancadas precisam de limpeza
+advanced_inbetween_cleaning_gizmo_note	Dá para desligar a limpeza em volta de algumas bancadas
+meditation_economy_label	Meditar só o necessário
+meditation_economy_note	Fora do horário de meditação, param de meditar quando a concentração psíquica está cheia e a meditação não é uma boa fonte de recreação (cheia ou entediante)
+advanced_respect_capacity_label	-- não passar da capacidade do inventário
+advanced_respect_capacity_note	Por imersão ou sei lá o quê
+optimal_patching_label	Patch otimizado
+optimal_patching_note	Desligada, todas as opções valem na hora em que são alteradas, mas ficam sempre no código e podem pesar no desempenho mesmo desligadas. Ligada, mudar as opções exige reiniciar o jogo, mas os patches das opções desligadas não são aplicados, sem impacto extra no desempenho.
+optimal_patching_attention_label	ATENÇÃO: o patch otimizado só vale depois de reiniciar o jogo!

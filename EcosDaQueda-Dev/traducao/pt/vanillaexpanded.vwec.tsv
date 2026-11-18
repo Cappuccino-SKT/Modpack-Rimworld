@@ -1,0 +1,89 @@
+## DefInjected/ResearchProjectDef/ResearchProjects.xml
+VWE_MassDrivers.label	aceleradores de massa
+VWE_MassDrivers.description	Monte armas que usam eletroímãs para lançar sabots a hipervelocidade, furando blindagem grossa e atravessando alvos. Também exigem componentes avançados.
+VWE_MassDrivers.generalRules.rulesStrings[0]	subject->a velocidade como arma
+VWE_MassDrivers.generalRules.rulesStrings[1]	subject_story->dominou a física da aceleração eletromagnética, criando armas que lançam projéteis a velocidades assombrosas
+VWE_MassDrivers.generalRules.rulesStrings[2]	subject_story->projetou aceleradores de massa capazes de furar a blindagem mais temível, mudando os princípios da guerra e da defesa
+VWE_MassDrivers.generalRules.rulesStrings[3]	subject_story->inaugurou uma era em que a energia cinética define a ponta da tecnologia militar
+VWE_MassDrivers.generalRules.rulesStrings[4]	subject_gerund->domando a força imparável da hipervelocidade para um poder ofensivo sem igual
+## DefInjected/ThingDef/Filth_Various.xml
+VWE_Filth_BulletHole.label	buraco de bala
+## DefInjected/ThingDef/Projectiles_Odyssey.xml
+VWE_Bullet_GaussRifle_LowPower_Ionized.label	sabot de fuzil gauss
+VWE_Bullet_GaussRifle_Ionized.label	sabot de fuzil gauss
+VWE_Bullet_GaussMagnum_LowPower_Ionized.label	sabot de revólver gauss
+VWE_Bullet_GaussMagnum_Ionized.label	sabot de revólver gauss
+VWE_Bullet_GaussLance_LowPower_Ionized.label	sabot de lança gauss
+VWE_Bullet_GaussLance_Ionized.label	sabot de lança gauss
+## DefInjected/ThingDef/RangedSpacer.xml
+VWE_Gun_GaussRifle.label	fuzil gauss
+VWE_Gun_GaussRifle.description	Um poderoso fuzil acelerador de massa que usa aceleração magnética para lançar sabots ferromagnéticos. A velocidade incrível e a munição especial anulam por completo a maioria das blindagens convencionais.
+VWE_Gun_GaussRifle.comps.CompUnderBarrel.standardLabel	usar o modo padrão
+VWE_Gun_GaussRifle.comps.CompUnderBarrel.underBarrelLabel	usar o modo de alta potência
+VWE_Gun_GaussRifle.tools.stock.label	coronha
+VWE_Gun_GaussRifle.tools.barrel.label	cano
+VWE_Gun_GaussRifle.tools.muzzle.label	boca
+VWE_Gun_GaussRifle.verbs.Verb_ShootCE.label	fuzil gauss
+VWE_Bullet_GaussRifle_LowPower.label	sabot de fuzil gauss
+VWE_Bullet_GaussRifle.label	sabot de fuzil gauss
+VWE_Gun_GaussMagnum.label	revólver gauss
+VWE_Gun_GaussMagnum.description	Uma poderosa pistola aceleradora de massa que usa aceleração magnética para lançar sabots ferromagnéticos. A velocidade incrível e a munição especial anulam por completo a maioria das blindagens convencionais.
+VWE_Gun_GaussMagnum.comps.CompUnderBarrel.standardLabel	usar o modo padrão
+VWE_Gun_GaussMagnum.comps.CompUnderBarrel.underBarrelLabel	usar o modo de alta potência
+VWE_Gun_GaussMagnum.tools.grip.label	empunhadura
+VWE_Gun_GaussMagnum.tools.muzzle.label	boca
+VWE_Gun_GaussMagnum.verbs.Verb_ShootCE.label	revólver gauss
+VWE_Bullet_GaussMagnum_LowPower.label	sabot de revólver gauss
+VWE_Bullet_GaussMagnum.label	sabot de revólver gauss
+VWE_Gun_GaussLance.label	lança gauss
+VWE_Gun_GaussLance.description	Uma poderosa lança aceleradora de massa de longo alcance, que usa aceleração magnética para lançar sabots ferromagnéticos. A velocidade incrível e a munição especial anulam por completo a maioria das blindagens convencionais.
+VWE_Gun_GaussLance.comps.CompUnderBarrel.standardLabel	usar o modo padrão
+VWE_Gun_GaussLance.comps.CompUnderBarrel.underBarrelLabel	usar o modo de alta potência
+VWE_Gun_GaussLance.tools.barrel.label	cano
+VWE_Gun_GaussLance.verbs.Verb_ShootCE.label	lança gauss
+VWE_Bullet_GaussLance_LowPower.label	sabot de lança gauss
+VWE_Bullet_GaussLance.label	sabot de lança gauss
+## DefInjected/ThingDef/Weapons_Unique_Odyssey.xml
+VWE_Gun_GaussRifle_Unique.label	fuzil gauss único
+VWE_Gun_GaussRifle_Unique.description	Um fuzil gauss com peças personalizadas.
+VWE_Gun_GaussRifle_Unique.comps.CompEquippableAbilityReloadable.chargeNoun	carga
+VWE_Gun_GaussRifle_Unique.comps.CompEquippableAbilityReloadable.cooldownGerund	recarregando
+VWE_Gun_GaussRifle_Unique.comps.CompUnderBarrel.standardLabel	usar o modo padrão
+VWE_Gun_GaussRifle_Unique.comps.CompUnderBarrel.underBarrelLabel	usar o modo de alta potência
+VWE_Gun_GaussRifle_Unique.tools.stock.label	coronha
+VWE_Gun_GaussRifle_Unique.tools.barrel.label	cano
+VWE_Gun_GaussRifle_Unique.tools.muzzle.label	boca
+VWE_Gun_GaussRifle_Unique.verbs.Verb_ShootCE.label	fuzil gauss único
+VWE_Gun_GaussMagnum_Unique.label	revólver gauss único
+VWE_Gun_GaussMagnum_Unique.description	Um revólver gauss com peças personalizadas.
+VWE_Gun_GaussMagnum_Unique.comps.CompEquippableAbilityReloadable.chargeNoun	carga
+VWE_Gun_GaussMagnum_Unique.comps.CompEquippableAbilityReloadable.cooldownGerund	recarregando
+VWE_Gun_GaussMagnum_Unique.comps.CompUnderBarrel.standardLabel	usar o modo padrão
+VWE_Gun_GaussMagnum_Unique.comps.CompUnderBarrel.underBarrelLabel	usar o modo de alta potência
+VWE_Gun_GaussMagnum_Unique.tools.grip.label	empunhadura
+VWE_Gun_GaussMagnum_Unique.tools.muzzle.label	boca
+VWE_Gun_GaussMagnum_Unique.verbs.Verb_ShootCE.label	revólver gauss único
+VWE_Gun_GaussLance_Unique.label	lança gauss única
+VWE_Gun_GaussLance_Unique.description	Uma lança gauss com peças personalizadas.
+VWE_Gun_GaussLance_Unique.comps.CompEquippableAbilityReloadable.chargeNoun	carga
+VWE_Gun_GaussLance_Unique.comps.CompEquippableAbilityReloadable.cooldownGerund	recarregando
+VWE_Gun_GaussLance_Unique.comps.CompUnderBarrel.standardLabel	usar o modo padrão
+VWE_Gun_GaussLance_Unique.comps.CompUnderBarrel.underBarrelLabel	usar o modo de alta potência
+VWE_Gun_GaussLance_Unique.tools.barrel.label	cano
+VWE_Gun_GaussLance_Unique.verbs.Verb_ShootCE.label	lança gauss única
+## DefInjected/VEF.OptionalFeatures.ModDef/OptionalFeatures_Odyssey.xml
+VWE_OptionalFeatures.label	Vanilla Weapons Expanded
+VWE_OptionalFeatures.description	Recursos opcionais do VE Framework para o Vanilla Weapons Expanded
+## DefInjected/WeaponTraitDef/WeaponTraitDefs_Coilgun.xml
+VWE_InertialCore.label	núcleo inercial
+VWE_InertialCore.description	Esta arma mantém a energia cinética total durante a sobrecarga, aumentando muito a penetração de armadura.
+VWE_BypassRelay.label	relé de desvio
+VWE_BypassRelay.description	Esta arma tem uma sequência de carga otimizada que corta pela metade o tempo de carga entre rajadas.
+VWE_OverdrawnCoils.label	bobinas sobrecarregadas
+VWE_OverdrawnCoils.description	Esta arma puxa energia demais das reservas: demora um pouco mais para carregar, mas causa muito mais dano.
+VWE_IonizedSabot.label	sabot ionizado
+VWE_IonizedSabot.description	Esta arma magnetiza os projéteis com energia volátil, aumentando o dano em todos os modos de tiro.
+VWE_Hypercapacitors.label	hipercapacitores
+VWE_Hypercapacitors.description	Esta arma tem bancos de energia avançados que dobram a rajada possível de todos os tiros, mas a sequência rápida resultante não garante mais a penetração de armadura.
+VWE_InvertedRailTuning.label	ajuste para combate próximo
+VWE_InvertedRailTuning.description	Esta arma foi radicalmente ajustada para dar tiros devastadores à queima-roupa.

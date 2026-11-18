@@ -1,0 +1,66 @@
+## DefInjected/HediffDef/Hediffs_Global_Misc.xml
+VCE_ConsumedConfection.label	consumed confection
+VCE_ConsumedConfection.description	This colonist has recently consumed a confection. Eating another one before 3 days will have no mood nullification effects.
+## DefInjected/PipeSystem.ProcessDef/ProcessDefs.xml
+VCE_BakeSimpleConfection.label	Bake simple confections
+VCE_BakeSimpleConfection.description	Turns cake batter into 4 simple confections.
+VCE_BakeSimpleConfection.labelOverride	Turn cake batter into 4 simple confections.
+VCE_BakeFineConfection.label	Bake fine confections
+VCE_BakeFineConfection.description	Turns cake batter and 20 milk into 4 fine confections.
+VCE_BakeFineConfection.labelOverride	Turn cake batter and 20 milk into 4 fine confections.
+VCE_BakeLavishConfection.label	Bake lavish confections
+VCE_BakeLavishConfection.description	Turns cake batter, 40 vegetables and 20 milk into 4 lavish confections.
+VCE_BakeLavishConfection.labelOverride	Turn cake batter, 40 vegetables and 20 milk into 4 lavish confections.
+VCE_BakeGourmetConfection.label	Bake gourmet confection
+VCE_BakeGourmetConfection.description	Turns gourmet cake batter, 40 vegetables and 20 milk into 1 gourmet confection.
+VCE_BakeGourmetConfection.labelOverride	Turn gourmet cake batter, 40 vegetables and 20 milk into 1 gourmet confection.
+## DefInjected/RecipeDef/Recipes_CakeBatters.xml
+VCE_CookCakeBatter.label	mix cake batter
+VCE_CookCakeBatter.description	Mix some cake butter to act as a base for a baked confection.
+VCE_CookCakeBatter.jobString	Mixing cake batter.
+VCE_CookGourmetCakeBatter.label	mix gourmet cake batter
+VCE_CookGourmetCakeBatter.description	Mix some gourmet cake butter to act as a base for a baked confection.
+VCE_CookGourmetCakeBatter.jobString	Mixing gourmet cake batter.
+## DefInjected/ResearchProjectDef/Research.xml
+VCE_DecorativeBaking.label	decorative baking
+VCE_DecorativeBaking.description	Unlocks techniques for creative baking, enabling colonists to craft decorated cakes, cupcakes, and cookies with colorful designs and sweet flair.
+VCE_DecorativeBaking.generalRules.rulesStrings[0]	subject->decorative baking
+VCE_DecorativeBaking.generalRules.rulesStrings[1]	subject_story->perfected the art of transforming simple sweets into colorful creations
+VCE_DecorativeBaking.generalRules.rulesStrings[2]	subject_story->trained in the delicate craft of fondant, frosting, and sugarwork
+VCE_DecorativeBaking.generalRules.rulesStrings[3]	subject_story->founded a renowned bakery, delighting children and patrons with whimsical confections
+VCE_DecorativeBaking.generalRules.rulesStrings[4]	subject_gerund->designing intricate cakes and decorated pastries
+## DefInjected/ThingCategoryDef/ThingCategories.xml
+VCE_CakeBatters.label	cake batters
+## DefInjected/ThingDef/Buildings.xml
+VCE_BakeryOven_Fueled.label	fueled bakery oven
+VCE_BakeryOven_Fueled.description	A wood-fueled oven designed for baking cookies, pastries, and cakes. Its steady heat ensures even cooking and sweet results, though it requires a constant supply of fuel.
+VCE_BakeryOven_Electric.label	electric bakery oven
+VCE_BakeryOven_Electric.description	An electric oven designed for baking cookies, pastries, and cakes with reliable, consistent heat distribution for perfect results every time.
+## DefInjected/ThingDef/Items_Confections.xml
+VCE_NormalCakeBatter.label	cake batter
+VCE_NormalCakeBatter.description	Some cake batter. Used to bake into confections, and inedible on its own.
+VCE_GourmetCakeBatter.label	gourmet cake batter
+VCE_GourmetCakeBatter.description	Some gourmet cake batter. Used to bake into confections, and inedible on its own.
+VCE_SimpleConfection.label	simple confection
+VCE_SimpleConfection.description	A giant sweet cookie, lightly decorated. Quick to make, simple to enjoy.
+VCE_FineConfection.label	fine confection
+VCE_FineConfection.description	Colourful donuts topped with swirls of frosting and sprinkles. A cheerful treat for any occasion.
+VCE_LavishConfection.label	lavish confection
+VCE_LavishConfection.description	An assortment of intricately decorated cookies, each iced with bright colors and detailed patterns. More artwork than food, but still delicious.
+VCE_GourmetConfection.label	gourmet confection
+VCE_GourmetConfection.description	A plate of lavishly decorated cupcakes, each topped with elaborate frosting and sweet embellishments. A true showcase of creative baking.
+## Keyed/Keys.xml
+VCE_OvenFailurePower	The confections have spoiled due to a lack of fuel or power in the bakery oven
+VCE_OvenFailurePowerWarning	The confections are spoiling fast due to a lack of fuel or power in the bakery oven
+VCE_BakeryOvenNotWorking	This bakery oven is not working at the moment
+VCE_Reset	Reset
+VCE_SimpleMealMood	Max negative memory removed by simple confections
+VCE_SimpleMealMoodDesc	Ingesting a simple confection will remove a negative memory up to this severity. -3 by default. 0 will disable the mechanic for that meal.
+VCE_FineMealMood	Max negative memory removed by fine confections
+VCE_FineMealMoodDesc	Ingesting a fine confection will remove a negative memory up to this severity. -5 by default. 0 will disable the mechanic for that meal.
+VCE_LavishMealMood	Max negative memory removed by lavish confections
+VCE_LavishMealMoodDesc	Ingesting a lavish confection will remove a negative memory up to this severity. -10 by default. 0 will disable the mechanic for that meal.
+VCE_GourmetMealMood	Max negative memory removed by gourmet confections
+VCE_GourmetMealMoodDesc	Ingesting a gourmet confection will remove a negative memory up to this severity. -15 by default. 0 will disable the mechanic for that meal.
+VCE_TicksForEffect	Period before the "consumed confection" effect wanes
+VCE_TicksForEffectDesc	By default, consuming a confection gives a 3 day period where consuming other confections doesn't make them nullify any negative memories.

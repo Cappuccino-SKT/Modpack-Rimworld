@@ -1,0 +1,18 @@
+## DefInjected/HediffDef/Hediffs_Global_Misc.xml
+Minor_CryptoSickness.label	enjoo de criptosono (leve)
+Minor_CryptoSickness.description	enjoo de criptosono leve
+## DefInjected/ThingDef/Buildings_Beds.xml
+Bed_OperatingTable.label	mesa de cirurgia
+Bed_OperatingTable.description	Uma mesa tosca, cheia de instrumentos que supostamente facilitam a cirurgia; a limpeza é questionável. Melhora um pouco os resultados médicos em relação a camas comuns.
+Bed_CryptoBed.label	suspensor de criptosono
+Bed_CryptoBed.description	Um leito médico que usa criptosono parcial para retardar a piora dos ferimentos e ajudar o corpo a sarar, com os mesmos efeitos colaterais do criptosono, só que mais leves.
+## DefInjected/ThingDef/Buildings_Facilities.xml
+Facility_VitalsCentre.label	central de sinais vitais
+Facility_VitalsCentre.description	Uma grande central para monitorar os sinais vitais de vários pacientes ao mesmo tempo. Perto de uma cama hospitalar ou mesa de cirurgia, aumenta a qualidade do tratamento, a chance de sucesso cirúrgico e a velocidade de ganho de imunidade. Só funciona com camas hospitalares e mesas de cirurgia; camas comuns não se beneficiam.
+Facility_IVDrip.label	suporte de soro
+Facility_IVDrip.description	Um suporte de soro intravenoso para repor rapidamente os líquidos do paciente, ajudando o sistema imunológico e a recuperação da perda de sangue quando colocado encostado numa cama hospitalar ou mesa de cirurgia. Só funciona com camas hospitalares e mesas de cirurgia; camas comuns não se beneficiam. Mais de um suporte na mesma cama não tem efeito.
+Facility_ResearchCounter.label	bancada de pesquisa esterilizada
+Facility_ResearchCounter.description	Uma superfície esterilizada na altura da cintura para pesquisas delicadas. Dá um pequeno bônus às bancadas de pesquisa próximas e ajuda a manter a área limpa. Acumula até 20 vezes.
+## DefInjected/ThingDef/Buildings_Structure.xml
+VFEM_Wall_Sterile.label	parede estéril
+VFEM_Wall_Sterile.description	Uma parede intransponível. Sustenta telhado. Tem propriedades especiais de limpeza para criar um ambiente estéril.

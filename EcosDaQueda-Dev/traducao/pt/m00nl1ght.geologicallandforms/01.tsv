@@ -1,0 +1,249 @@
+## DefInjected/TileMutatorDef/TileMutators.xml
+GL_Archipelago.label	arquipélago
+GL_Atoll.label	atol
+GL_Badlands.label	ermos
+GL_Caldera.label	caldeira
+GL_Canyon.label	cânion
+GL_CaveEntrance.label	entrada de caverna
+GL_Cirque.label	circo glacial
+GL_Cliff.label	penhasco
+GL_CliffAndCoast.label	costa com penhasco
+GL_CliffCorner.label	penhasco (canto)
+GL_Coast.label	costa
+GL_CoastalIsland.label	ilha costeira
+GL_CoastCorner.label	costa (canto)
+GL_Cove.label	enseada
+GL_CoveWithIsland.label	enseada com ilha
+GL_Crater.label	cratera
+GL_DesertPlateau.label	planalto desértico
+GL_DryLake.label	lago seco
+GL_Fjord.label	fiorde
+GL_Glacier.label	geleira
+GL_Gorge.label	desfiladeiro
+GL_IceOasis.label	oásis gelado
+GL_Island.label	ilha
+GL_Lake.label	lago
+GL_LakeWithIsland.label	lago com ilha
+GL_Landbridge.label	istmo
+GL_LoneMountain.label	montanha solitária
+GL_Oasis.label	oásis
+GL_Peninsula.label	península
+GL_Rift.label	fenda
+GL_River.label	rio
+GL_RiverConfluence.label	confluência de rios
+GL_RiverDelta.label	delta de rio
+GL_RiverIsland.label	ilha fluvial
+GL_RiverSource.label	nascente de rio
+GL_RiverTerrain.label	terreno fluvial
+GL_SecludedCove.label	enseada isolada
+GL_SecludedValley.label	vale isolado
+GL_Sinkhole.label	dolina
+GL_Skerry.label	recife rochoso
+GL_SurfaceCave.label	caverna rasa
+GL_SwampHill.label	morro no pântano
+GL_Tombolo.label	tômbolo
+GL_Valley.label	vale
+## Keyed/EditorUI.xml
+GeologicalLandforms.Editor.Open.Tooltip	Escolher o relevo a editar
+GeologicalLandforms.Editor.Reset.Long	Voltar este relevo ao padrão
+GeologicalLandforms.Editor.Reset.Tooltip	Voltar a configuração deste relevo ao padrão
+GeologicalLandforms.Editor.Copy.Long	Criar uma cópia deste relevo
+GeologicalLandforms.Editor.Copy.Tooltip	Criar um relevo personalizado novo (usando o selecionado como modelo)
+GeologicalLandforms.Editor.Delete.Long	Apagar este relevo personalizado
+GeologicalLandforms.Editor.Delete.Tooltip	Apagar o relevo personalizado selecionado
+GeologicalLandforms.Editor.Tools	Ferramentas
+GeologicalLandforms.Editor.Tools.ForModDevs	Para quem faz mods
+GeologicalLandforms.Editor.SaveInMod	Salvar mudanças no mod "{0}"
+GeologicalLandforms.Editor.SaveInMod.Success	Mudanças aplicadas ao arquivo "{0}"
+GeologicalLandforms.Editor.SaveInMod.NoChanges	No momento não há mudanças novas para aplicar.
+GeologicalLandforms.Editor.SaveInMod.Error	Falha ao aplicar as mudanças ao arquivo "{0}"
+GeologicalLandforms.Editor.ConfirmReset	Tem certeza de que quer voltar a configuração do relevo selecionado ao padrão?
+GeologicalLandforms.Editor.ConfirmDelete	Tem certeza de que quer apagar o relevo personalizado selecionado? Ele vai sumir para sempre!
+GeologicalLandforms.Editor.ConfirmSaveInMod	Este relevo vem do mod "{0}". Por padrão, as mudanças que você fizer nele são salvas na sua pasta de configuração pessoal, e o arquivo original na pasta do mod fica intocado. A vantagem é que suas mudanças não são sobrescritas quando o mod atualiza, por exemplo pela Steam.\n\nMas, se você desenvolve o "{0}", provavelmente quer aplicar as mudanças ao arquivo original na pasta do mod, para poder versioná-lo no Git ou publicá-lo numa atualização. Aplicar as mudanças ao arquivo original na pasta do mod agora?
+GeologicalLandforms.Settings.Landform.Id	Id
+GeologicalLandforms.Settings.Landform.DisplayName	Nome exibido
+GeologicalLandforms.Settings.Landform.DisplayNameHasDirection	Mostrar direção
+GeologicalLandforms.Settings.Landform.Topology	Topologia
+GeologicalLandforms.Settings.Landform.AllowedBiomes	Bioma
+GeologicalLandforms.Settings.Landform.AllowedBiomes.Some	({0} biomas selecionados)
+GeologicalLandforms.Settings.Landform.WorldObjectNearby	Objeto do mundo por perto
+GeologicalLandforms.Settings.Landform.WorldObjectNearby.Some	({0} objetos do mundo)
+GeologicalLandforms.Settings.Landform.AllowedRiverTypes	Forma do rio
+GeologicalLandforms.Settings.Landform.AllowedRiverTypes.Some	({0} formas selecionadas)
+GeologicalLandforms.Settings.Landform.Commonness	Frequência
+GeologicalLandforms.Settings.Landform.HillinessRequirement	Relevo acidentado
+GeologicalLandforms.Settings.Landform.RoadRequirement	Estrada
+GeologicalLandforms.Settings.Landform.RiverRequirement	Rio
+GeologicalLandforms.Settings.Landform.RiverOrRoadRequirement	Rio ou estrada
+GeologicalLandforms.Settings.Landform.ElevationRequirement	Altitude
+GeologicalLandforms.Settings.Landform.AvgTemperatureRequirement	Temperatura média
+GeologicalLandforms.Settings.Landform.RainfallRequirement	Chuva
+GeologicalLandforms.Settings.Landform.SwampinessRequirement	Pantanosidade
+GeologicalLandforms.Settings.Landform.BiomeTransitionsRequirement	Biomas vizinhos
+GeologicalLandforms.Settings.Landform.TopologyValueRequirement	Valor de topologia
+GeologicalLandforms.Settings.Landform.DepthInCaveSystemRequirement	Profundidade no sistema de cavernas
+GeologicalLandforms.Settings.Landform.AddRequirement	Adicionar requisito
+GeologicalLandforms.Settings.Landform.AllowSettlements	Permitir povoados de outras facções
+GeologicalLandforms.Settings.Landform.AllowSites	Permitir locais de missão
+GeologicalLandforms.Settings.Landform.CaveChance	Chance de caverna
+GeologicalLandforms.Settings.Landform.AllowCaves	Permitir cavernas
+GeologicalLandforms.Settings.Landform.RequireCaves	Exigir cavernas
+GeologicalLandforms.Settings.Landform.Priority	Prioridade
+GeologicalLandforms.Settings.Landform.LayerId	Camada
+GeologicalLandforms.Settings.Landform.WorldTileGraphic.AtlasSize	Tamanho do atlas
+GeologicalLandforms.Settings.Landform.WorldTileGraphic.TexPath	Caminho da textura
+GeologicalLandforms.Settings.Landform.WorldTileGraphic.DrawMode	Modo de desenho
+GeologicalLandforms.Settings.Landform.WorldTileGraphic.DrawMode.HexRandom	Hex (aleatório)
+GeologicalLandforms.Settings.Landform.WorldTileGraphic.DrawMode.HexAdjacency	Hex (adjacência)
+GeologicalLandforms.Settings.Landform.WorldTileGraphic.DrawMode.HexAdjacencyCaves	Hex (adjacência de cavernas)
+GeologicalLandforms.Settings.Landform.WorldTileGraphic.DrawMode.QuadRandom	Quad (aleatório)
+GeologicalLandforms.Settings.Landform.WorldTileGraphic.DrawMode.QuadStatic	Quad (fixo)
+GeologicalLandforms.Settings.Landform.Topology.Any	Qualquer
+GeologicalLandforms.Settings.Landform.Topology.Inland	Interior
+GeologicalLandforms.Settings.Landform.Topology.CoastOneSide	Costa num lado
+GeologicalLandforms.Settings.Landform.Topology.CoastTwoSides	Costa em dois lados vizinhos
+GeologicalLandforms.Settings.Landform.Topology.CoastLandbridge	Costa em dois lados opostos
+GeologicalLandforms.Settings.Landform.Topology.CoastThreeSides	Costa em três lados
+GeologicalLandforms.Settings.Landform.Topology.CoastAllSides	Costa em todos os lados
+GeologicalLandforms.Settings.Landform.Topology.CliffOneSide	Penhasco num lado
+GeologicalLandforms.Settings.Landform.Topology.CliffTwoSides	Penhasco em dois lados vizinhos
+GeologicalLandforms.Settings.Landform.Topology.CliffValley	Penhasco em dois lados opostos
+GeologicalLandforms.Settings.Landform.Topology.CliffThreeSides	Penhasco em três lados
+GeologicalLandforms.Settings.Landform.Topology.CliffAllSides	Penhasco em todos os lados
+GeologicalLandforms.Settings.Landform.Topology.CliffAndCoast	Penhasco e costa
+GeologicalLandforms.Settings.Landform.Topology.CaveEntrance	Entrada de sistema de cavernas
+GeologicalLandforms.Settings.Landform.Topology.CaveTunnel	Túnel de sistema de cavernas
+GeologicalLandforms.Settings.Landform.Topology.Ocean	Oceano
+## Keyed/GLFCore.xml
+GeologicalLandforms.LandformManager.LandformUpgrade	Há versões novas de alguns relevos que você modificou. Quer usar as versões novas ou manter as modificadas antigas?\n\nRelevos afetados:
+GeologicalLandforms.LandformManager.LandformUpgradeYes	Trocar pelos dados novos
+GeologicalLandforms.LandformManager.LandformUpgradeNo	Manter os dados antigos
+GeologicalLandforms.WorldMap.Landform	Relevo
+GeologicalLandforms.WorldMap.BorderingBiomes	Biomas vizinhos
+GeologicalLandforms.WorldMap.SelectLandform	Escolher relevo
+GeologicalLandforms.WorldParams.Mountains	Montanhas
+GeologicalLandforms.WorldParams.CaveSystems	Sistemas de cavernas
+GeologicalLandforms.Landform.Corner	(canto)
+GeologicalLandforms.Integration.PrepareLanding.Title	Geological Landforms
+GeologicalLandforms.Integration.MapDesigner.RiverCardOverride	Substituir rios e costas pelos do Geological Landforms
+## Keyed/Keys.xml
+GeologicalLandforms.Settings.Tab.Landforms	Características do mapa
+GeologicalLandforms.Settings.Tab.BiomeConfig	Configuração de biomas
+GeologicalLandforms.Settings.Tab.BiomeVariants	Variantes de bioma
+GeologicalLandforms.Settings.MaxLandformSearchRadius	Raio máximo de busca de relevo no mapa-múndi
+GeologicalLandforms.Settings.AnimalDensityFactorForSecludedAreas	Quantidade de animais em áreas isoladas (ilha, fiorde etc.)
+GeologicalLandforms.Settings.EnableCellFinderOptimization	Ativar otimizações de busca de células
+GeologicalLandforms.Settings.ShowTileMutatorContentSourceLabel	Mostrar a origem das características do mapa
+GeologicalLandforms.Settings.EnableLandformScaling	Ajustar relevos ao tamanho do mapa
+GeologicalLandforms.Settings.EnableExperimentalLandforms	Ativar relevos experimentais
+GeologicalLandforms.Settings.EnableGodMode	Ativar modo deus (permite pôr relevos à mão)
+GeologicalLandforms.Settings.OpenEditor	Abrir editor de relevos
+GeologicalLandforms.Settings.ResetAll	Voltar tudo ao padrão
+GeologicalLandforms.Settings.OpenDataDir	Abrir pasta de relevos personalizados
+GeologicalLandforms.Settings.ConfirmResetAll	Tem certeza de que quer zerar todas as configurações deste mod, inclusive as de relevo? Isso também apaga sem volta TODOS os relevos personalizados que você criou!
+GeologicalLandforms.Settings.Landforms.Custom	personalizado
+GeologicalLandforms.Settings.Landforms.Experimental	experimental
+GeologicalLandforms.Settings.Landforms.DefinedInMod	do mod {0}
+GeologicalLandforms.Settings.Landforms.ZeroCommonness	configurado errado, com frequência 0
+GeologicalLandforms.Settings.Landforms.ReplacesVanillaCliff	substitui o penhasco do jogo base
+GeologicalLandforms.Settings.Landforms.ReplacesVanillaCoast	substitui a costa do jogo base
+GeologicalLandforms.Settings.Landforms.ReplacesVanillaRiver	substitui o rio do jogo base
+GeologicalLandforms.Settings.Landforms.ReplacesMutator	substitui a característica de mapa "{0}" ({1})
+GeologicalLandforms.Settings.Landforms.MadeObsoleteByMutator	obsoleto por causa da característica de mapa "{0}" de {1}
+GeologicalLandforms.Settings.BiomeConfig.Header	Escolha para cada bioma se relevos (LF) e características multibioma (MB) podem aparecer nele:
+GeologicalLandforms.Settings.BiomeConfig.ExcludedByAuthor	pré-configurado pelo autor
+GeologicalLandforms.Settings.Landforms.Subheader.GeologicalLandforms	Geological Landforms
+GeologicalLandforms.Settings.Landforms.ExclusionToLandform	Obs.: o relevo "{0}" (que você acabou de ativar) conflita com a característica de mapa "{1}" ({2}); por isso essa característica foi desativada automaticamente.
+GeologicalLandforms.Settings.Landforms.ExclusionToMutator	Obs.: a característica de mapa "{1}" ({2}), que você acabou de ativar, conflita com o relevo "{0}"; por isso o relevo "{0}" foi desativado automaticamente.
+GeologicalLandforms.Settings.Debug.ShowWorldTileDebugInfo	Mostrar informações avançadas de depuração
+GeologicalLandforms.Settings.Debug.UnidirectionalBiomeTransitions	Usar algoritmo unidirecional de transição de biomas (experimental)
+GeologicalLandforms.Settings.Debug.DisableBiomeTransitionPostProcessing	Desativar o pós-processamento de transição de biomas
+GeologicalLandforms.Settings.Debug.BiomeGridEnabledForCurrentMap	Grade de biomas ativa (no mapa atual)
+GeologicalLandforms.Settings.Debug.IgnoreWorldTileReqInGodMode	Ignorar requisitos da região (inseguro)
+GeologicalLandforms.Settings.Debug.ReplaceStoneOnCurrentMap	Trocar toda a pedra do mapa atual
+GeologicalLandforms.Settings.Debug.SetTerrainInArea	Definir terreno na área
+GeologicalLandforms.Settings.Debug.RefreshWorldTileData	Atualizar todas as regiões do mundo
+GeologicalLandforms.Settings.Debug.RefreshWorldTileDataForced	Atualizar todas as regiões do mundo (forçado)
+GeologicalLandforms.Settings.Debug.BiomeGridEntriesHeader	Entradas da grade de biomas
+GeologicalLandforms.Settings.Debug.WholeMapDesiredPlants	Capacidade total do ecossistema de plantas
+GeologicalLandforms.Settings.Debug.OpenGroundFactor	Fator de terreno aberto
+GeologicalLandforms.Settings.Debug.AnimalDensityFactor	Fator de densidade de animais
+GeologicalLandforms.Settings.Debug.DevQuickTestOverrideEnabled	Substituir a geração de mapa do teste rápido
+GeologicalLandforms.Settings.Debug.DevQuickTestOverrideLandform	Relevo do teste rápido
+GeologicalLandforms.Settings.Debug.DevQuickTestOverrideBiome	Bioma do teste rápido
+GeologicalLandforms.Settings.Debug.DevQuickTestOverrideMapSize	Tamanho do mapa do teste rápido
+GeologicalLandforms.Settings.Debug.BiomeGridEntryAdd	Adicionar entrada
+GeologicalLandforms.Settings.Debug.BiomeGridEntryRemove	Remover entrada
+GeologicalLandforms.Settings.Debug.BiomeGridEntryExportToAreas	Exportar todas as entradas para áreas do mapa
+GeologicalLandforms.Settings.Debug.BiomeGridEntrySetBase	Definir bioma base
+GeologicalLandforms.Settings.Debug.BiomeGridEntryInfo	Mostrar detalhes
+GeologicalLandforms.Settings.Debug.BiomeGridEntryAddVariant	Adicionar variante
+GeologicalLandforms.Settings.Debug.BiomeGridEntryRemoveVariant	Remover variante
+GeologicalLandforms.Settings.Debug.BiomeGridEntrySetFromArea	Definir células pela área do mapa
+GeologicalLandforms.Settings.Debug.BiomeGridEntryRegenerateAll	Regerar a partir da região
+GeologicalLandforms.Settings.Debug.BiomeGridDetails.PotentialPlants	Frequência de plantas
+GeologicalLandforms.Settings.Debug.BiomeGridDetails.PotentialAnimals	Frequência de animais
+GeologicalLandforms.WorldMap.Topology	Topologia
+GeologicalLandforms.WorldMap.TopologyDirection	Direção da topologia
+GeologicalLandforms.WorldMap.Swampiness	Pantanosidade
+GeologicalLandforms.WorldMap.RiverWidth	Largura do rio
+GeologicalLandforms.WorldMap.RiverAngle	Ângulo do rio
+GeologicalLandforms.WorldMap.MainRoadMultiplier	Multiplicador da estrada principal
+GeologicalLandforms.WorldMap.MainRoadAngle	Ângulo da estrada principal
+GeologicalLandforms.WorldMap.DepthInCaveSystem	Profundidade no sistema de cavernas
+GeologicalLandforms.WorldMap.FeatureLabelBiomeTransition	transição de bioma
+GeologicalLandforms.WorldMap.FeatureDescriptionBiomeTransition	Biomas das regiões vizinhas cobrem partes desta região.
+GeologicalLandforms.WorldMap.FeatureDescriptionLandform	Um relevo adicionado pelo mod {0}.
+GeologicalLandforms.WorldMap.FindLandform	Procurar característica de mapa por perto
+GeologicalLandforms.WorldMap.FindLandformPrefix	(Relevo)
+GeologicalLandforms.WorldMap.FindLandformAny	(Relevo) Qualquer
+GeologicalLandforms.WorldMap.FindLandformAnyPOI	(Relevo) Qualquer (ponto de interesse)
+GeologicalLandforms.WorldMap.FindLandformSuccess	Característica de mapa {0} encontrada a {1} regiões
+GeologicalLandforms.WorldMap.FindLandformFail	Nenhuma característica de mapa {0} num raio de {1} regiões (a distância máxima pode ser mudada nas configurações do mod)
+GeologicalLandforms.WorldMap.SetLandform	Forçar relevo (modo deus)
+GeologicalLandforms.WorldMap.SetLandformAuto	Automático
+## Keyed/LandformNames.xml
+GeologicalLandforms.Landform.Coast	costa
+GeologicalLandforms.Landform.CoastCorner	costa
+GeologicalLandforms.Landform.Cove	enseada
+GeologicalLandforms.Landform.CoveWithIsland	enseada com ilha
+GeologicalLandforms.Landform.Peninsula	península
+GeologicalLandforms.Landform.Landbridge	istmo
+GeologicalLandforms.Landform.Tombolo	tômbolo
+GeologicalLandforms.Landform.CoastalIsland	ilha costeira
+GeologicalLandforms.Landform.Island	ilha
+GeologicalLandforms.Landform.Atoll	atol
+GeologicalLandforms.Landform.Archipelago	arquipélago
+GeologicalLandforms.Landform.Lake	lago
+GeologicalLandforms.Landform.LakeWithIsland	lago com ilha
+GeologicalLandforms.Landform.DryLake	lago seco
+GeologicalLandforms.Landform.Cliff	penhasco
+GeologicalLandforms.Landform.CliffCorner	penhasco
+GeologicalLandforms.Landform.CliffAndCoast	costa com penhasco
+GeologicalLandforms.Landform.Cirque	circo glacial
+GeologicalLandforms.Landform.Valley	vale
+GeologicalLandforms.Landform.Canyon	cânion
+GeologicalLandforms.Landform.LoneMountain	montanha solitária
+GeologicalLandforms.Landform.Caldera	caldeira
+GeologicalLandforms.Landform.Rift	fenda
+GeologicalLandforms.Landform.Crater	cratera
+GeologicalLandforms.Landform.Oasis	oásis
+GeologicalLandforms.Landform.SwampHill	morro no pântano
+GeologicalLandforms.Landform.IceOasis	oásis gelado
+GeologicalLandforms.Landform.Badlands	ermos
+GeologicalLandforms.Landform.DesertPlateau	planalto desértico
+GeologicalLandforms.Landform.Skerry	recife rochoso
+GeologicalLandforms.Landform.Fjord	fiorde
+GeologicalLandforms.Landform.SecludedCove	enseada isolada
+GeologicalLandforms.Landform.SurfaceCave	caverna rasa
+GeologicalLandforms.Landform.CaveEntrance	entrada de caverna
+GeologicalLandforms.Landform.Sinkhole	dolina
+GeologicalLandforms.Landform.SecludedValley	vale isolado
+GeologicalLandforms.Landform.River	rio
+GeologicalLandforms.Landform.RiverTerrain	terreno fluvial
+GeologicalLandforms.Landform.RiverConfluence	confluência de rios
+GeologicalLandforms.Landform.RiverSource	nascente de rio
+GeologicalLandforms.Landform.RiverIsland	ilha fluvial
+GeologicalLandforms.Landform.RiverDelta	delta de rio
+GeologicalLandforms.Landform.Gorge	desfiladeiro
+GeologicalLandforms.Landform.Glacier	geleira

@@ -1,0 +1,144 @@
+## DefInjected/DamageDef/DamageDefs.xml
+VEF_SecondaryAcidBurn.deathMessage	{0} foi corroído até a morte.
+## DefInjected/HediffDef/Hediffs_Global_Misc.xml
+VEF_PermanentBurn.labelNounPretty	{0} em {1}
+VEF_AcidBurn.labelNounPretty	{0} em {1}
+VEF_ToxicBuildup.stages.initial-0.label	inicial
+VEF_ToxicBuildup.stages.initial-1.label	inicial
+VEF_ToxicBuildup.stages.minor.label	leve
+VEF_ToxicBuildup.stages.moderate.label	moderada
+VEF_ToxicBuildup.stages.serious.label	sério
+VEF_ToxicBuildup.stages.extreme.label	extrema
+VEF_ControlledInvisibility.label	invisibilidade
+## DefInjected/JobDef/GeneralAbilityDefs.xml
+VFEA_StandAndFaceTarget.reportString	parado.
+## DefInjected/JobDef/Jobs_AnimalBehaviours.xml
+VEF_IngestWeird.reportString	consumindo TargetA.
+VEF_FleeAndCowerShort.reportString	fugindo.
+## DefInjected/JobDef/Jobs_Misc.xml
+VFE_StudyBuilding.reportString	estudando TargetA.
+## DefInjected/PawnRenderTreeDef/PawnRenderTreeDefs.xml
+VEF_GraphicByTerrainRenderTree.root.children.0.children.3.debugLabel	Coisa carregada
+VEF_GraphicByStyleRenderTree.root.children.0.children.3.debugLabel	Coisa carregada
+## DefInjected/RulePackDef/RulePacks_Book_Defaults.xml
+VEF_Description_Schematic_Defaults.rulePack.rulesStrings[0]	subject->o caminho da inovação
+VEF_Description_Schematic_Defaults.rulePack.rulesStrings[1]	subject_story->revelou verdades simples por trás de fenômenos complexos
+VEF_Description_Schematic_Defaults.rulePack.rulesStrings[2]	subject_story->simplificou o complicado para abrir caminho a aplicações práticas
+VEF_Description_Schematic_Defaults.rulePack.rulesStrings[3]	subject_story->usou princípios básicos para alcançar feitos notáveis
+VEF_Description_Schematic_Defaults.rulePack.rulesStrings[4]	subject_gerund->simplificando a essência da descoberta
+VEF_Description_Schematic_Defaults.rulePack.rulesStrings[5]	subject->os tijolos do progresso
+VEF_Description_Schematic_Defaults.rulePack.rulesStrings[6]	subject_story->preparou o terreno para saltos monumentais
+VEF_Description_Schematic_Defaults.rulePack.rulesStrings[7]	subject_story->ligou os pontos entre disciplinas para revelar novas ideias
+VEF_Description_Schematic_Defaults.rulePack.rulesStrings[8]	subject_story->criou a base sobre a qual se erguem as inovações futuras
+VEF_Description_Schematic_Defaults.rulePack.rulesStrings[9]	subject_gerund->assentando as pedras fundamentais do avanço
+VEF_Description_Schematic_Defaults.rulePack.rulesStrings[10]	subject->as sementes do amanhã
+VEF_Description_Schematic_Defaults.rulePack.rulesStrings[11]	subject_story->plantou ideias que cresceriam em soluções transformadoras
+VEF_Description_Schematic_Defaults.rulePack.rulesStrings[12]	subject_story->cultivou um jardim de conhecimento, cheio de potencial
+VEF_Description_Schematic_Defaults.rulePack.rulesStrings[13]	subject_story->cuidou das raízes da mudança com zelo e visão
+VEF_Description_Schematic_Defaults.rulePack.rulesStrings[14]	subject_gerund->semeando o futuro com as descobertas de hoje
+VEF_Description_Schematic_Defaults.rulePack.rulesStrings[15]	subject->a onda da curiosidade
+VEF_Description_Schematic_Defaults.rulePack.rulesStrings[16]	subject_story->lançou ondas de investigação que ecoaram pelo tempo
+VEF_Description_Schematic_Defaults.rulePack.rulesStrings[17]	subject_story->jogou pedrinhas de inovação no lago do conhecimento
+VEF_Description_Schematic_Defaults.rulePack.rulesStrings[18]	subject_story->viu uma pergunta puxar outra, alargando o círculo do saber
+VEF_Description_Schematic_Defaults.rulePack.rulesStrings[19]	subject_gerund->atirando pedras para criar ondas de progresso
+VEF_Description_Schematic_Defaults.rulePack.rulesStrings[20]	subject->a alquimia do progresso
+VEF_Description_Schematic_Defaults.rulePack.rulesStrings[21]	subject_story->uniu disciplinas distantes para abrir novos reinos de possibilidade
+VEF_Description_Schematic_Defaults.rulePack.rulesStrings[22]	subject_story->transformou o impossível em inevitável por pura engenhosidade
+VEF_Description_Schematic_Defaults.rulePack.rulesStrings[23]	subject_story->criou soluções que mudaram a ideia do que é possível
+VEF_Description_Schematic_Defaults.rulePack.rulesStrings[24]	subject_gerund->misturando ciência e magia no tecido da realidade
+VEF_Description_Schematic_Defaults.rulePack.rulesStrings[25]	subject->a tapeçaria da descoberta
+VEF_Description_Schematic_Defaults.rulePack.rulesStrings[26]	subject_story->teceu fios de conhecimento dos quatro cantos do mundo
+VEF_Description_Schematic_Defaults.rulePack.rulesStrings[27]	subject_story->revelou padrões no caos, traçando rotas para inovações inéditas
+VEF_Description_Schematic_Defaults.rulePack.rulesStrings[28]	subject_story->bordou os anais da história com descobertas felizes e acidentais
+VEF_Description_Schematic_Defaults.rulePack.rulesStrings[29]	subject_gerund->tecendo o futuro no tear do presente
+VEF_Description_Schematic_Defaults.rulePack.rulesStrings[30]	subject->o cadinho da criação
+VEF_Description_Schematic_Defaults.rulePack.rulesStrings[31]	subject_story->fundiu elementos brutos nos tijolos do amanhã
+VEF_Description_Schematic_Defaults.rulePack.rulesStrings[32]	subject_story->temperou o fogo da criatividade para forjar tecnologias inéditas
+VEF_Description_Schematic_Defaults.rulePack.rulesStrings[33]	subject_story->matou a sede de conhecimento com o elixir da invenção
+VEF_Description_Schematic_Defaults.rulePack.rulesStrings[34]	subject_gerund->moldando a matéria-prima de hoje nos artefatos do futuro
+VEF_Description_Schematic_Defaults.rulePack.rulesStrings[35]	subject->o farol do saber
+VEF_Description_Schematic_Defaults.rulePack.rulesStrings[36]	subject_story->iluminou os cantos escuros da ignorância, guiando o caminho
+VEF_Description_Schematic_Defaults.rulePack.rulesStrings[37]	subject_story->jogou luz sobre o desconhecido, tornando visível o invisível às mentes curiosas
+VEF_Description_Schematic_Defaults.rulePack.rulesStrings[38]	subject_story->acendeu a chama da curiosidade, despertando uma busca mundial pelo saber
+VEF_Description_Schematic_Defaults.rulePack.rulesStrings[39]	subject_gerund->acendendo as tochas do progresso e do conhecimento
+VEF_Description_Schematic_Defaults.rulePack.rulesStrings[40]	subject->a fronteira do conhecimento
+VEF_Description_Schematic_Defaults.rulePack.rulesStrings[41]	subject_story->cruzou novos horizontes em busca do saber
+VEF_Description_Schematic_Defaults.rulePack.rulesStrings[42]	subject_story->desafiou o consenso com teorias revolucionárias
+VEF_Description_Schematic_Defaults.rulePack.rulesStrings[43]	subject_story->uniu a sabedoria antiga à tecnologia moderna em soluções inovadoras
+VEF_Description_Schematic_Defaults.rulePack.rulesStrings[44]	subject_gerund->empurrando os limites da ciência e da arte
+VEF_Description_Schematic_Defaults.rulePack.rulesStrings[45]	subject->a essência da inovação
+VEF_Description_Schematic_Defaults.rulePack.rulesStrings[46]	subject_story->transformou materiais do dia a dia em ferramentas extraordinárias
+VEF_Description_Schematic_Defaults.rulePack.rulesStrings[47]	subject_story->abriu caminho às próximas gerações com práticas sustentáveis
+VEF_Description_Schematic_Defaults.rulePack.rulesStrings[48]	subject_story->usou o poder da natureza para alimentar novos avanços
+VEF_Description_Schematic_Defaults.rulePack.rulesStrings[49]	subject_gerund->cultivando um ecossistema de criatividade e progresso
+VEF_Description_Schematic_Defaults.rulePack.rulesStrings[50]	subject->os arquitetos do amanhã
+VEF_Description_Schematic_Defaults.rulePack.rulesStrings[51]	subject_story->ergueu as bases de uma utopia em que a tecnologia serve a todos
+VEF_Description_Schematic_Defaults.rulePack.rulesStrings[52]	subject_story->imaginou um futuro de harmonia entre tecnologia e natureza
+VEF_Description_Schematic_Defaults.rulePack.rulesStrings[53]	subject_story->criou ferramentas que permitem à humanidade chegar ao seu potencial máximo
+VEF_Description_Schematic_Defaults.rulePack.rulesStrings[54]	subject_gerund->assentando as pedras fundamentais das paisagens futuras
+VEF_Description_Schematic_Defaults.rulePack.rulesStrings[55]	subject->saltos exploratórios
+VEF_Description_Schematic_Defaults.rulePack.rulesStrings[56]	subject_story->avançou com ousadia por territórios inexplorados do saber
+VEF_Description_Schematic_Defaults.rulePack.rulesStrings[57]	subject_story->construiu uma ponte entre o conhecido e o desconhecido
+VEF_Description_Schematic_Defaults.rulePack.rulesStrings[58]	subject_story->foi aonde a curiosidade ousou levar
+VEF_Description_Schematic_Defaults.rulePack.rulesStrings[59]	subject_gerund->embarcando em jornadas de descoberta
+VEF_Description_Schematic_Defaults.rulePack.rulesStrings[60]	subject->a essência da engenhosidade
+VEF_Description_Schematic_Defaults.rulePack.rulesStrings[61]	subject_story->transformou desafios em oportunidades de crescimento
+VEF_Description_Schematic_Defaults.rulePack.rulesStrings[62]	subject_story->usou o pensamento criativo para vencer obstáculos tradicionais
+VEF_Description_Schematic_Defaults.rulePack.rulesStrings[63]	subject_story->criou soluções elegantes misturando arte e ciência
+VEF_Description_Schematic_Defaults.rulePack.rulesStrings[64]	subject_gerund->liberando potencial pela inovação
+VEF_Description_Schematic_Defaults.rulePack.rulesStrings[65]	subject->a colheita do saber
+VEF_Description_Schematic_Defaults.rulePack.rulesStrings[66]	subject_story->juntou ideias como quem colhe os campos na safra
+VEF_Description_Schematic_Defaults.rulePack.rulesStrings[67]	subject_story->cultivou uma fartura de entendimento a partir das sementes da investigação
+VEF_Description_Schematic_Defaults.rulePack.rulesStrings[68]	subject_story->dividiu com o mundo os frutos da pesquisa
+VEF_Description_Schematic_Defaults.rulePack.rulesStrings[69]	subject_gerund->colhendo as recompensas de uma curiosidade incansável
+VEF_Description_Schematic_Defaults.rulePack.rulesStrings[70]	subject->o quebra-cabeça do progresso
+VEF_Description_Schematic_Defaults.rulePack.rulesStrings[71]	subject_story->juntou as peças do mistério para revelar o quadro geral
+VEF_Description_Schematic_Defaults.rulePack.rulesStrings[72]	subject_story->uniu teoria e prática para resolver enigmas antigos
+VEF_Description_Schematic_Defaults.rulePack.rulesStrings[73]	subject_story->descobriu ligações ocultas que abriram novas possibilidades
+VEF_Description_Schematic_Defaults.rulePack.rulesStrings[74]	subject_gerund->montando as peças do avanço
+## DefInjected/StatDef/Stats_Pawns.xml
+VEF_MassCarryCapacity.formatString	{0} kg
+VEF_MassCarryCapacity.formatStringUnfinalized	{0} kg
+## DefInjected/ThingDef/CustomFire.xml
+VEF_BaseCustomSparkSpark.label	faísca
+## DefInjected/ThingDef/GeneralAbilityDefs.xml
+VFEA_AbilityFlyer.label	voo
+VFEA_AbilityFlyer_Charge.label	voo
+## DefInjected/ThingDef/Motes.xml
+VEF_FlintlockSmoke.label	efeito
+KCSG_LongMote_DustPuff.label	efeito
+Mote_Smoketrail.label	efeito
+Mote_FTSmoketrail.label	efeito
+Mote_GreenSmoketrail.label	efeito
+## DefInjected/WorkGiverDef/WorkGivers_Misc.xml
+VFE_StudyBuilding.gerund	estudando
+VFE_StudyBuilding.verb	estudar
+VEF_RefuelSecondary.gerund	abastecendo
+VEF_RefuelSecondary.verb	abastecer
+VEF_ExtractFlower.gerund	extraindo
+VEF_ExtractFlower.verb	extrair
+## Keyed/Abilities.xml
+VFEA.AbilityStatsPower	Energia
+## Keyed/AnimalBehaviours.xml
+VEF_AsexualHatched	{0} se reproduziu de forma assexuada.
+## Keyed/AnimalGenes.xml
+VRE_LifespanFactor	Vida útil
+## Keyed/KCSG.xml
+KCSG.Add	Adicionar
+KCSG.Remove	Remover
+KCSG.Enter	Entrar em {0}
+## Keyed/Keys.xml
+VSE.Reinforcements	Reforços
+VEF.TeleportTo	Teleportar para {0}
+## Keyed/MVCF.xml
+MVCF.Settings.LogLevel.None	Nenhum
+## Keyed/Settings.xml
+VEF_GeneralTitle	Geral
+## Keyed/Stats.xml
+VFECore.Advanced	avançada
+## Keyed/UI.xml
+VEF.DoorLockDefault	Padrão
+## Keyed/VanillaGenesExpanded.xml
+VGE_StatsReport_AnyLightSensitivity	sensibilidade à luz
+VGE_EggLaidLabel	{0} botou um ovo!
+VGE_EggHatchedLabel	{0} eclodiu!

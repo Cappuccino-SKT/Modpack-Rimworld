@@ -1,0 +1,170 @@
+## DefInjected/GameConditionDef/GameConditions_Odyssey.xml
+VEE_ColossalFauna.label	fauna colossal
+VEE_ColossalFauna.description	Toda a fauna desta área é bem maior que o normal.
+VEE_Microfauna.label	microfauna
+VEE_Microfauna.description	Toda a fauna desta área é bem menor que o normal.
+VEE_NoWind.label	sem vento
+VEE_NoWind.description	Quase não venta nesta área.
+VEE_RagingWind.label	ventos furiosos
+VEE_RagingWind.description	Os ventos são extraordinariamente mais fortes nesta área.
+VEE_GeomagneticStorm.label	tempestade geomagnética
+VEE_GeomagneticStorm.description	Um evento geomagnético intenso cobre a região e desliga completamente todos os aparelhos elétricos.
+VEE_SkygazingSpot.label	ponto de observar o céu
+VEE_SkygazingSpot.description	Um fenômeno atmosférico sereno incentiva os colonos a passar mais tempo olhando o céu. Aumenta a chance de observar o céu e a recreação que isso dá.
+VEE_RottenStench.label	fedor podre
+VEE_RottenStench.description	Vapores acres saem do chão e cobrem a área com um cheiro horrível que queima os pulmões e azeda o humor.
+VEE_FertileRainsGameCondition.label	chuva fértil
+VEE_FertileRainsGameCondition.description	Uma chuva extraordinariamente rica em nutrientes está caindo na região, acelerando o crescimento das plantas enquanto durar.
+VEE_FertileRainsGameCondition.endMessage	A chuva fértil está acabando.
+VEE_TidalFlooding.label	inundação de maré
+VEE_TidalFlooding.description	Nesta planície costeira extremamente plana, as marés avançam muito terra adentro e cobrem regularmente grandes faixas de terra.
+## DefInjected/HediffDef/Hediffs_Misc.xml
+VEE_ColossalFauna.label	animal colossal
+VEE_ColossalFauna.description	Este animal é maior que o normal.
+VEE_Microfauna.label	microfauna
+VEE_Microfauna.description	Este animal é menor que o normal.
+VEE_RottenStench.label	fedor podre
+VEE_RottenStench.description	Vapores acres saem do chão e cobrem a área com um cheiro horrível que queima os pulmões e azeda o humor.
+VEE_DustStorm.label	afetado por tempestade de poeira
+VEE_DustStorm.description	Uma tempestade de poeira está tornando a visão praticamente impossível nesta região.
+VEE_AnimaPearlsHediff.label	aumento de sensibilidade psíquica
+VEE_AnimaPearlsHediff.description	Comer pérolas de anima deu um pequeno aumento de sensibilidade psíquica.
+## DefInjected/IncidentDef/Incidents_Map_Misc.xml
+VEE_Alphabeavers.label	alfacastores
+VEE_MigratoryHerds.label	migração de manada
+VEE_MigratoryHerds.letterLabel	Migração animal: {0}
+VEE_MigratoryHerds.letterText	Um grupo de {0} está passando pela área.\n\nEles não atacam a menos que sejam provocados.
+VEE_Infestation.label	infestação
+VEE_Infestation.letterText	Insetos gigantes estão cavando túneis em sua direção! Eles vão romper o chão em segundos e plantar colmeias.\n\nAs colmeias vão gerar mais insetos e mais colmeias.\n\nSe não quiser que os insetos infestem a área toda, destrua as colmeias. Mas cuidado: os bichos vão defender a casa.
+VEE_TornadoAlley.label	tornado
+VEE_FertileRains.label	chuvas férteis
+VEE_FertileRains.letterLabel	Chuvas férteis
+VEE_FertileRains.letterText	Uma chuva extraordinariamente rica em nutrientes está caindo na região, acelerando o crescimento das plantas enquanto durar.
+VEE_Aurora.label	aurora
+VEE_Aurora.letterLabel	Aurora
+VEE_TidalFloodingIncident.label	inundação de maré
+## DefInjected/LandmarkDef/Landmarks.xml
+VEE_MeteorCrater.label	cratera de meteoro
+VEE_ResurgentCaldera.label	caldeira ressurgente
+VEE_CraterLake.label	lago de cratera
+VEE_ToxicCrater.label	lago de cratera tóxico
+VEE_Volcano.label	vulcão
+VEE_CalmBasin.label	bacia calma
+VEE_LoneIsland.label	ilha solitária
+VEE_DetachedIceberg.label	iceberg à deriva
+VEE_IceAndFire.label	gelo e fogo
+VEE_LoneIslandWithLake.label	ilha com lago central
+VEE_LoneIslandWithMountain.label	ilha ressurgente
+VEE_CoralReef.label	recife de coral
+VEE_SaltPlains.label	planícies de sal
+VEE_RockRidge.label	crista rochosa
+VEE_JaggedRocks.label	rochas pontiagudas
+VEE_SerpentineCanyons.label	cânions serpenteantes
+VEE_DryRiver.label	rio seco
+VEE_Mangrove.label	manguezal
+VEE_DustBowl.label	bacia de poeira
+VEE_SulfuricLake.label	lago sulfúrico
+VEE_SulfuricRiver.label	rio sulfúrico
+VEE_BurnedForest.label	floresta queimada
+VEE_BloomingFields.label	campos floridos
+VEE_CactusFields.label	campos de cactos
+VEE_FloodPlains.label	várzeas
+VEE_ContaminatedReservoir.label	reservatório contaminado
+VEE_ContaminatedRiver.label	rio contaminado
+VEE_ContaminatedCoast.label	costa contaminada
+VEE_AbandonedFarmland.label	lavouras abandonadas
+VEE_DriftwoodShore.label	praia de troncos
+VEE_AlluvialFan.label	leque aluvial
+VEE_RelictDelta.label	delta fóssil
+VEE_StagnantRivulet.label	riacho parado
+VEE_AnimaForest.label	floresta de anima
+VEE_AnimaCoast.label	costa de anima
+VEE_CradleOfLife.label	berço da vida
+VEE_WindBlownPlateau.label	planalto varrido pelo vento
+VEE_StoneForest.label	floresta de pedra
+VEE_GravelBeach.label	praia de cascalho
+VEE_AuburnForest.label	floresta acobreada
+VEE_Cenotes.label	cenotes
+VEE_BasaltCape.label	cabo de basalto
+VEE_RedDesert.label	deserto de areia vermelha
+VEE_VolcanicSandDesert.label	deserto de areia vulcânica
+VEE_PermafrostBasin.label	bacia de permafrost
+VEE_QuicksandDunes.label	dunas de areia movediça
+VEE_PebbleDunes.label	dunas de seixos
+VEE_LittoralDunes.label	dunas litorâneas
+VEE_RisingWaters.label	águas subindo
+VEE_FleshPits.label	poços de carne
+VEE_TemperateGrasslands.label	campos temperados
+VEE_IceSpires.label	pináculos de gelo
+VEE_GlacialMoraine.label	morena glacial
+VEE_Sinkholes.label	dolinas
+VEE_TropicalBeach.label	praia tropical
+VEE_LaurelForest.label	floresta de louros
+VEE_Moor.label	charneca
+VEE_LushLavaFields.label	campos de lava verdejantes
+## DefInjected/RulePackDef/RulePacks_Namers_Landmarks.xml
+VEE_NamerLandmark_ImpactCrater.rulePack.rulesStrings[0]	terrain_word(p=3)->cratera de impacto
+VEE_NamerLandmark_ImpactCrater.rulePack.rulesStrings[1]	terrain_word->cratera de meteoro
+VEE_NamerLandmark_ImpactCrater.rulePack.rulesStrings[2]	terrain_word->bacia de impacto
+VEE_NamerLandmark_ResurgentCaldera.rulePack.rulesStrings[0]	terrain_word(p=3)->caldeira ressurgente
+VEE_NamerLandmark_ResurgentCaldera.rulePack.rulesStrings[1]	terrain_word->caldeira soerguida
+VEE_NamerLandmark_ResurgentCaldera.rulePack.rulesStrings[2]	terrain_word->caldeira de domo central
+VEE_NamerLandmark_CraterLake.rulePack.rulesStrings[0]	terrain_word(p=3)->lago de cratera
+VEE_NamerLandmark_CraterLake.rulePack.rulesStrings[1]	terrain_word->lago de caldeira
+VEE_NamerLandmark_CraterLake.rulePack.rulesStrings[2]	terrain_word->lago de impacto
+VEE_NamerLandmark_ToxicCraterLake.rulePack.rulesStrings[0]	terrain_word(p=3)->lago de cratera tóxico
+VEE_NamerLandmark_ToxicCraterLake.rulePack.rulesStrings[1]	terrain_word->caldeira envenenada
+VEE_NamerLandmark_ToxicCraterLake.rulePack.rulesStrings[2]	terrain_word->bacia tóxica
+VEE_NamerLandmark_Volcano.rulePack.rulesStrings[0]	terrain_word(p=3)->vulcão
+VEE_NamerLandmark_Volcano.rulePack.rulesStrings[1]	terrain_word->caldeira de lava
+VEE_NamerLandmark_Volcano.rulePack.rulesStrings[2]	terrain_word->cratera derretida
+VEE_NamerLandmark_CalmBasin.rulePack.rulesStrings[0]	terrain_word(p=3)->bacia calma
+VEE_NamerLandmark_CalmBasin.rulePack.rulesStrings[1]	terrain_word->bacia silenciosa
+VEE_NamerLandmark_CalmBasin.rulePack.rulesStrings[2]	terrain_word->vale sem vento
+VEE_NamerLandmark_LoneIsland.rulePack.rulesStrings[0]	terrain_word(p=3)->ilha solitária
+VEE_NamerLandmark_LoneIsland.rulePack.rulesStrings[1]	terrain_word->ilhota isolada
+VEE_NamerLandmark_LoneIsland.rulePack.rulesStrings[2]	terrain_word->ilha apartada
+VEE_NamerLandmark_LoneIsland.rulePack.rulesStrings[3]	terrain_word->ilhota solitária
+VEE_NamerLandmark_DetachedIceberg.rulePack.rulesStrings[0]	terrain_word->iceberg à deriva
+VEE_NamerLandmark_DetachedIceberg.rulePack.rulesStrings[1]	terrain_word->banquisa
+VEE_NamerLandmark_DetachedIceberg.rulePack.rulesStrings[2]	terrain_word->gelo flutuante
+VEE_NamerLandmark_IceAndFireIsland.rulePack.rulesStrings[0]	terrain_word(p=3)->ilha de gelo e fogo
+VEE_NamerLandmark_IceAndFireIsland.rulePack.rulesStrings[1]	terrain_word->caldeira congelada
+VEE_NamerLandmark_IceAndFireIsland.rulePack.rulesStrings[2]	terrain_word->ilha de fogo glacial
+VEE_NamerLandmark_IceAndFireIsland.rulePack.rulesStrings[3]	terrain_word->ilha do vulcão polar
+VEE_NamerLandmark_CentralLakeIsland.rulePack.rulesStrings[0]	terrain_word(p=3)->ilha de lago
+VEE_NamerLandmark_CentralLakeIsland.rulePack.rulesStrings[1]	terrain_word->ilha das águas
+VEE_NamerLandmark_CentralLakeIsland.rulePack.rulesStrings[2]	terrain_word->ilha de lago anelar
+VEE_NamerLandmark_CentralLakeIsland.rulePack.rulesStrings[3]	terrain_word->ilha de lago interior
+VEE_NamerLandmark_ResurgentIsland.rulePack.rulesStrings[0]	terrain_word(p=3)->ilha ressurgente
+VEE_NamerLandmark_ResurgentIsland.rulePack.rulesStrings[1]	terrain_word->ilha soerguida
+VEE_NamerLandmark_ResurgentIsland.rulePack.rulesStrings[2]	terrain_word->ilha de pico central
+VEE_NamerLandmark_ResurgentIsland.rulePack.rulesStrings[3]	terrain_word->ilha emergente
+VEE_NamerLandmark_SaltPlains.rulePack.rulesStrings[0]	terrain_word->planície de sal
+VEE_NamerLandmark_SaltPlains.rulePack.rulesStrings[1]	terrain_word->oceano ressecado
+VEE_NamerLandmark_SaltPlains.rulePack.rulesStrings[2]	terrain_word->planície de evaporação
+VEE_NamerLandmark_SaltPlains.rulePack.rulesStrings[3]	terrain_word->salinas
+VEE_NamerLandmark_SaltPlains.rulePack.rulesStrings[4]	terrain_word->ermos brancos
+VEE_NamerLandmark_Ridges.rulePack.rulesStrings[0]	terrain_word(p=4)->crista
+VEE_NamerLandmark_Ridges.rulePack.rulesStrings[1]	terrain_word->cumeada
+VEE_NamerLandmark_Ridges.rulePack.rulesStrings[2]	terrain_word->espinhaço
+VEE_NamerLandmark_DryRiver.rulePack.rulesStrings[0]	terrain_word->rio seco
+VEE_NamerLandmark_DryRiver.rulePack.rulesStrings[1]	terrain_word->rio de areia
+VEE_NamerLandmark_DryRiver.rulePack.rulesStrings[2]	terrain_word->rio estéril
+VEE_NamerLandmark_Mangrove.rulePack.rulesStrings[1]	terrain_word(p=2)->manguezal
+VEE_NamerLandmark_Mangrove.rulePack.rulesStrings[2]	terrain_word->floresta de maré
+VEE_NamerLandmark_Mangrove.rulePack.rulesStrings[3]	terrain_word->mangue
+VEE_NamerLandmark_Mangrove.rulePack.rulesStrings[4]	terrain_word->pântano salobro
+VEE_NamerLandmark_Mangrove.rulePack.rulesStrings[5]	terrain_word->matagal salgado
+VEE_NamerLandmark_Mangrove.rulePack.rulesStrings[6]	terrain_word->floresta de água salgada
+VEE_NamerLandmark_Canyons.rulePack.rulesStrings[1]	terrain_word(p=2)->cânions
+VEE_NamerLandmark_JaggedRocks.rulePack.rulesStrings[1]	terrain_word(p=2)->rochas pontiagudas
+VEE_NamerLandmark_JaggedRocks.rulePack.rulesStrings[2]	terrain_word->cristas pontiagudas
+VEE_NamerLandmark_CoralReef.rulePack.rulesStrings[1]	terrain_word(p=2)->recife de coral
+VEE_NamerLandmark_CoralReef.rulePack.rulesStrings[2]	terrain_word->baixio de coral
+VEE_NamerLandmark_CoralReef.rulePack.rulesStrings[3]	terrain_word->formação de recife
+VEE_NamerLandmark_CoralReef.rulePack.rulesStrings[4]	terrain_word->barreira de coral
+VEE_NamerLandmark_CoralReef.rulePack.rulesStrings[5]	terrain_word->recife de franja
+VEE_NamerLandmark_DustBowl.rulePack.rulesStrings[1]	terrain_word(p=2)->bacia de poeira
+VEE_NamerLandmark_DustBowl.rulePack.rulesStrings[2]	terrain_word->depressão
+VEE_NamerLandmark_DustBowl.rulePack.rulesStrings[3]	terrain_word->vastidão devastada

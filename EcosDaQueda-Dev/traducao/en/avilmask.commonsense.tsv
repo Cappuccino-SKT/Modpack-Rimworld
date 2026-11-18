@@ -1,0 +1,93 @@
+## DefInjected/JobDef/Jobs_Misc.xml
+UnloadMarkedItems.reportString	unloading inventory.
+SocialRelaxCommonSense.reportString	relaxing socially.
+## DefInjected/RecipeDef/Recipes_Meals.xml
+avCSDummyRecipeForNutrientPaste.label	dummy_label
+avCSDummyRecipeForNutrientPaste.description	dummy_desc
+avCSDummyRecipeForNutrientPaste.jobString	dummy_jobString
+## DefInjected/RoomRoleDef/RoomRoles.xml
+CooledStoreroom.label	fridge room
+## Keyed/strings.xml
+fulfill_outdoors_head	Need of Outdoors
+fulfill_outdoors_label	Pawns are encouraged to fulfill their need of outdoors by seeking recreation outdoors
+fulfill_outdoors_note	NOTE: Don't place the same joy giving sources both indoors and outdoors, to avoid indecisiveness.
+clean_head	Opportunistic jobs
+clean_before_working_label	Pawns are encouraged to clean the room before operating a station in it
+clean_before_working_note	NOTE: Don't expect pawns who cannot clean to suddenly begin cleaning.
+bill_job_pathing_label	Calculate accurate path to the building for bill jobs
+bill_job_pathing_note	It'll help to avoid making unreasonable hooks around when your pawns need to bring resources first, but it may be costly on CPU
+clean_after_tending_label	Pawns are encouraged to clean the room after tending to a patient
+clean_after_tending_note	NOTE: Don't expect pawns who cannot clean to suddenly begin cleaning.
+meal_stacking_head	Meal stacking
+meal_stacking_label	Pawns avoid mixing negative thoughts when stacking meals
+meal_stacking_note	That way pawns will never mix disgusting meals with normal ones
+dont_count_odd_label	Count odd meat (ex.: insect) as normal, allowing to stack it with normal meals
+dont_count_odd_note	Insect meat isn't so bad...
+gen_ingredients_head	Meal generation
+gen_ingredients_label	Add random ingredients to randomly generated meals
+gen_ingredients_note	Ex.: gifted by story teller, sold by a trader, looted from corpse. Only mood neutral components are used. With this option on, the game will never be the same
+add_to_que_label	Add former task to queue
+add_to_que_note	That way pawns will not change their mind after performing an opportunistic task, but sometimes it can cause confusion if a job was already taken
+hauling_over_bills_label	Pawns are encouraged to haul ingredients for a bill to a stockpile
+hauling_over_bills_note	When working on a bill, pawns will prefer hauling ingredients to a stockpile, instead of taking a small fraction, required for a recipe
+fulfill_needs_head	Fulfillment of needs
+drugs_use_potential_mood_label	Pawns are encouraged to take account of potential mood in drug policies
+drugs_use_potential_mood_note	Pawns will not use drugs if "potential" mood is above a limit, preventing overuse of drugs to achieve a set mood level.
+miscellaneous_head	Miscellaneous
+extended_recipe_label	Recipes display complete list of ingredients
+extended_recipe_note	Instead of just vague "ingredients"
+advanced_head	Advanced behaviors
+advanced_inbetween_cleaning_label	Pawns will clean rooms in between hauling ingredients and crafting
+advanced_inbetween_cleaning_note	Basic behavior would let them clean only before hauling
+advanced_haul_all_ings_label	Pawns are encouraged to pick up all ingredients before hauling them to the crafting place
+advanced_haul_all_ings_note	Pawns will take all necessary ingredients to their hauling inventory before delivering them to the crafting place
+prefer_spoiling_ingredients_label	Pawns are encouraged to use ingredients and materials that are closer to spoiling.
+prefer_spoiling_ingredients_note	WARNING: A large amount of items to choose from may cause lag when this option is enabled.
+UnloadThing	Unload
+UnloadThingCancel	Cancel unload
+manual_unload_label	Enable a button in colonist's inventory to mark items for hauling to stockpile
+manual_unload_note	If there are no stockpiles to haul to, the colonist will drop the item near him
+put_back_to_inv_label	Pawns will put items back in their inventory when interrupted
+put_back_to_inv_note	When pawns are holding an inventory item in their hands, they'll put them back if action was interrupted
+pick_proper_amount_label	Pawns will stop taking more sweets than they can eat
+pick_proper_amount_note	No more chocolate lying around
+Category	Category
+fun_police_label	Pawns are encouraged to fulfill secondary needs during joy assignment, or if woken early
+fun_police_note	Pawns will try to top off their joy need only after it goes below 80%, they'll prefer to pick up a spare meal to their inventory, and fulfill all their hygiene needs (if dubs mod is present)
+numbers_head	Tweakable numbers (0 = Unlimited)
+op_clean_number_label	Filth limit for pre-task cleaning
+adv_clean_number_label	Filth limit for pre-bill cleaning
+doc_clean_number_label	Filth limit for post-tending cleaning
+skip_snow_clean_label	Pawns are discouraged from clearing snow from areas when it's snowing or raining
+skip_snow_clean_note	When raining just in case if it's a tricky weather
+prefer_spoiling_meals_label	Pawns are encouraged to eat meals that are closer to spoiling
+prefer_spoiling_meals_note	WARNING: A large amount of items to choose from may cause lag when this option is enabled.
+allow_feeding_with_plants_label	Allow and encourage pawns to feed animals with hay.
+allow_feeding_with_plants_note	 Animals will also be encouraged to prefer non-human food.
+give_sick_joy_drugs_label	Pawns are encouraged to give allowed social drugs or joy-giving food to sick pawns
+give_sick_joy_drugs_note	Why talk if you can give them a chocolate bar?
+social_relax_economy_label	Change how pawns use drugs when relaxing socially to prevent them from "wasting joy"
+social_relax_economy_note	Normally pawns sit down for a hour or two before actually consuming the drug, wasting the effect
+advanced_cleaning_ingest_label	Pawns are encouraged to clean before eating at a table or relaxing socially
+advanced_cleaning_ingest_note	Pawns will clean around the table where they're planning to sit
+mood_regen_label	Pawn's mood slowly moves towards 50% while they're asleep if possible
+mood_regen_note	Just let pawns "sleep on it" and they should be fine
+safe_wander_label	Pawns are encouraged to avoid bad weather when wandering aimlessly
+safe_wander_note	Just stop walking out into the toxic fallout, you idiots
+pathing_head	Pathing
+polite_wander_label	Any friendly pawns are encouraged to avoid wandering into bedrooms, prison cells and prison barracks
+polite_wander_note	This is just indecent or even dangerous, isn't it?
+ingest_any_drugs_label	Allow to take any drugs from inventory
+ingest_any_drugs_note	If it's ingestible, it should be possible to eat it without dropping on the ground
+DoCleanCompToggleLabel	Clean around this bench
+DoCleanCompToggleDescActive	Pawns will clean around this bench
+DoCleanCompToggleDescInactive	Pawns will NOT clean around this bench
+advanced_inbetween_cleaning_gizmo_label	Show a toggle to be able switch which benches need cleaning
+advanced_inbetween_cleaning_gizmo_note	It will be possible to disable cleaning around some benches
+meditation_economy_label	Pawns will meditate only as much as they need
+meditation_economy_note	Unless under meditation assignment, pawns will stop meditating if their psyfocus is full and they don't see meditation as a good source of joy (i. e. full or bored of it)
+advanced_respect_capacity_label	-- pawns will not exceed inventory capacity
+advanced_respect_capacity_note	For immersion reasons or whatever
+optimal_patching_label	Optimal Patching
+optimal_patching_note	When this option is off, all options activate immediately after toggling them, at the cost of always being in the code, possibly affecting performance even if they're toggled off. When option is on, options will require you to restart the game when changed, but patches needed for these options won't happen, removing extra performance impact when game launches with these options toggled off
+optimal_patching_attention_label	ATTENTION: Optimal patching doesn't properly apply without restarting the game!

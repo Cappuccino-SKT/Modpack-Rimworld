@@ -1,0 +1,249 @@
+## DefInjected/HediffDef/Hediffs_Local_Misc.xml
+VTE_SlowWorkSpeed.label	slow work
+VTE_SlowWorkSpeed.description	slow work
+VTE_SlowWorkSpeed.labelNoun	slow work
+VTE_SlowWorkSpeed.stages.inactive.label	inactive
+VTE_SlowWorkSpeed.stages.active.label	active
+VTE_RestSlowFallFactor.label	Insomnia
+VTE_RestSlowFallFactor.description	Pronounced mental or physical unrest causes insomnia, insomnia means one can often feel sluggish or exhausted and find themselves hardly ever capable of sleep.
+VTE_RestSlowFallFactor.labelNoun	Insomnia
+VTE_SlowerBleedingRate.label	hyper-coagulant
+VTE_SlowerBleedingRate.description	Higher red blood-cell count means hyper-coagulation occurs, causing wounds to bleed much less profusely.
+VTE_SlowerBleedingRate.labelNoun	hyper-coagulation
+VTE_HigherBleedingRate.label	hemophilic
+VTE_HigherBleedingRate.description	Hemophilia is the inability for blood to clot properly, causing wounds to bleed much more profusely.
+VTE_HigherBleedingRate.labelNoun	hemophilia
+## DefInjected/JobDef/Jobs_Misc.xml
+VTE_StealItems.reportString	stealing items from TargetA
+## DefInjected/MentalStateDef/MentalStates_Mood.xml
+VTE_TechnophobeTantrum.label	technophobe tantrum
+VTE_TechnophobeTantrum.baseInspectLine	Mental state: technophobe tantrum
+VTE_TechnophobeTantrum.beginLetter	{0} has flown into a technophobe tantrum.\n\n[PAWN_pronoun] is going to vent [PAWN_possessive] anger on technology.
+VTE_TechnophobeTantrum.recoveryMessage	{0} is no longer in a technophobe tantrum.
+VTE_PanicFreezing.label	panicking
+VTE_PanicFreezing.baseInspectLine	Mental state: panicking
+VTE_PanicFreezing.beginLetter	{0} is freezing in panic.
+VTE_PanicFreezing.beginLetterLabel	panic attack
+VTE_PanicFreezing.recoveryMessage	{0} is no longer suffering a panic attack.
+VTE_Kleptomaniac.label	kleptomaniac
+VTE_Kleptomaniac.baseInspectLine	Mental state: Kleptomaniac
+VTE_Kleptomaniac.beginLetter	{0} is stealing items from visitors.
+VTE_Kleptomaniac.beginLetterLabel	Kleptomaniac
+VTE_Kleptomaniac.recoveryMessage	{0} is no longer stealing items from visitors.
+## DefInjected/ThoughtDef/Thoughts_Memory_Animals.xml
+VTE_BondedAnimalDiedHater.stages.bonded_animal_died.label	bonded animal {0} died
+VTE_BondedAnimalDiedHater.stages.bonded_animal_died.description	Such a gross, annoying animal. I'm glad it's gone.
+VTE_BondedAnimalLostHater.stages.bonded_animal_lost.label	bonded animal {0} lost
+VTE_BondedAnimalLostHater.stages.bonded_animal_lost.description	Such a gross, annoying animal. I'm glad it's gone.
+VTE_BondedAnimalBanishedHater.stages.bonded_animal_banished.label	bonded animal {0} banished
+VTE_BondedAnimalBanishedHater.stages.bonded_animal_banished.description	My bonded animal was banished. Good.
+VTE_NuzzledHater.stages.nuzzled.label	nuzzled
+VTE_NuzzledHater.stages.nuzzled.description	A disgusting animal nuzzled me.
+VTE_KilledMyBondedAnimalHater.stages.killed_my_bonded_animal.label	killed my bonded animal
+VTE_SoldMyBondedAnimalHater.stages.bonded_animal_given_away.label	bonded animal given away.
+VTE_SoldMyBondedAnimalHater.stages.bonded_animal_given_away.description	My nasty bonded animal was given away, about time.
+VTE_SoldMyBondedAnimalHater.stages.bonded_animal_given_away.labelSocial	gave away my bonded animal.
+VTE_SoldMyBondedAnimalMoodHater.stages.bonded_animal_given_away.label	bonded animal given away
+VTE_SoldMyBondedAnimalMoodHater.stages.bonded_animal_given_away.description	My nasty bonded animal was given away, about time.
+VTE_SoldMyBondedAnimalMoodHater.stages.bonded_animal_given_away.labelSocial	gave away my bonded animal
+VTE_KilledColonyAnimalHater.stages.killed_colony_animal.label	killed colony animal
+VTE_BondedAnimalMasterHater.stages.s_master.label	{0}'s master
+VTE_BondedAnimalMasterHater.stages.s_master.description	Being around that nasty thing makes me hate life itself.
+VTE_BondedAnimalMasterHater.stages.master_of.label	master of {0}
+VTE_BondedAnimalMasterHater.stages.master_of.description	Being around that nasty thing makes me hate life itself.
+VTE_NotBondedAnimalMasterHater.stages.not_s_master.label	not {0}'s master
+VTE_NotBondedAnimalMasterHater.stages.not_s_master.description	That thing may like me, but I certainly don't like it back--I'm glad somebody else took it.
+VTE_NotBondedAnimalMasterHater.stages.not_master_of.label	not master of {0}
+VTE_NotBondedAnimalMasterHater.stages.not_master_of.description	That thing may like me, but I certainly don't like it back--I'm glad somebody else took it.
+## DefInjected/ThoughtDef/Thoughts_Memory_Misc.xml
+VTE_CreatedLowQualityItem.stages.Created_low_quality_item.label	Created low quality item
+VTE_CreatedLowQualityItem.stages.Created_low_quality_item.description	I crafted junk. I feel like I can't do anything right.
+VTE_CouldNotFinishItem.stages.ould_not_finish_item.label	Сould not finish item
+VTE_CouldNotFinishItem.stages.ould_not_finish_item.description	I couldn't finish my project, it just wasn't coming along correctly.
+VTE_PassionateCleaningWork.stages.Passionately_cleaning.label	Passionately cleaning
+VTE_PassionateCleaningWork.stages.Passionately_cleaning.description	I really enjoy organizing and cleaning up the place.
+VTE_MyRivalsAreAlive.stages.My_rivals_are_alive.label	My rivals are alive
+VTE_MyRivalsAreAlive.stages.My_rivals_are_alive.description	I hate them. Why should they deserve to live?
+VTE_MechanoidIsKilled.stages.Mechanoid_died.label	Mechanoid died
+VTE_MechanoidIsKilled.stages.Mechanoid_died.description	Those evil machines don't deserve to function.
+VTE_ObservedManyBlood.stages.observed_much_blood.label	observed much blood
+VTE_ObservedManyBlood.stages.observed_much_blood.description	I saw so much blood and bits, just remembering it makes me gag.
+VTE_WatchedTelevisor.stages.Watched_television_recently.label	Watched television recently
+VTE_WatchedTelevisor.stages.Watched_television_recently.description	I got to laze around and catch up on my shows.
+VTE_NoDedicatedLaboratory.stages.No_dedicated_laboratory.label	No dedicated laboratory
+VTE_NoDedicatedLaboratory.stages.No_dedicated_laboratory.description	I have nowhere to study in peace. How annoying.
+VTE_AnimalsInColony.stages.No_animals_in_the_colony.label	No animals in the colony
+VTE_AnimalsInColony.stages.No_animals_in_the_colony.description	We don't have a single animal.
+VTE_AnimalsInColony.stages.Hardly_any_animals_in_the_colony-0.label	Hardly any animals in the colony
+VTE_AnimalsInColony.stages.Hardly_any_animals_in_the_colony-0.description	We have hardly any animals in the colony, this sucks.
+VTE_AnimalsInColony.stages.Hardly_any_animals_in_the_colony-1.label	Hardly any animals in the colony
+VTE_AnimalsInColony.stages.Hardly_any_animals_in_the_colony-1.description	We have hardly any animals in the colony, it's something I guess.
+VTE_AnimalsInColony.stages.Hardly_any_animals_in_the_colony-2.label	Hardly any animals in the colony
+VTE_AnimalsInColony.stages.Hardly_any_animals_in_the_colony-2.description	We have hardly any animals in the colony, it's something I guess.
+VTE_AnimalsInColony.stages.A_few_animals_in_the_colony-0.label	A few animals in the colony
+VTE_AnimalsInColony.stages.A_few_animals_in_the_colony-0.description	We have a few animals in the colony, that's nice.
+VTE_AnimalsInColony.stages.A_few_animals_in_the_colony-1.label	A few animals in the colony
+VTE_AnimalsInColony.stages.A_few_animals_in_the_colony-1.description	We have a few animals in the colony, that's nice.
+VTE_AnimalsInColony.stages.Some_animals_in_the_colony-0.label	Some animals in the colony
+VTE_AnimalsInColony.stages.Some_animals_in_the_colony-0.description	We've got a decent amount of animals now, we're getting there.
+VTE_AnimalsInColony.stages.Some_animals_in_the_colony-1.label	Some animals in the colony
+VTE_AnimalsInColony.stages.Some_animals_in_the_colony-1.description	We've got a decent amount of animals now, we're getting there.
+VTE_AnimalsInColony.stages.Some_animals_in_the_colony-2.label	Some animals in the colony
+VTE_AnimalsInColony.stages.Some_animals_in_the_colony-2.description	We've got a decent amount of animals now, we're getting there.
+VTE_AnimalsInColony.stages.Some_animals_in_the_colony-3.label	Some animals in the colony
+VTE_AnimalsInColony.stages.Some_animals_in_the_colony-3.description	We've got a decent amount of animals now, we're getting there.
+VTE_AnimalsInColony.stages.Lots_of_animals_in_the_colony-0.label	Lots of animals in the colony
+VTE_AnimalsInColony.stages.Lots_of_animals_in_the_colony-0.description	We've got a lot of animals around the colony now, they're wonderful.
+VTE_AnimalsInColony.stages.Lots_of_animals_in_the_colony-1.label	Lots of animals in the colony
+VTE_AnimalsInColony.stages.Lots_of_animals_in_the_colony-1.description	We've got a lot of animals around the colony now, they're wonderful.
+VTE_AnimalsInColony.stages.Lots_of_animals_in_the_colony-2.label	Lots of animals in the colony
+VTE_AnimalsInColony.stages.Lots_of_animals_in_the_colony-2.description	We've got a lot of animals around the colony now, they're wonderful.
+VTE_AnimalsInColony.stages.A_ton_of_animals_in_the_colony-0.label	A ton of animals in the colony
+VTE_AnimalsInColony.stages.A_ton_of_animals_in_the_colony-0.description	We've got so many animals now! It makes me so happy to see them all.
+VTE_AnimalsInColony.stages.A_ton_of_animals_in_the_colony-1.label	A ton of animals in the colony
+VTE_AnimalsInColony.stages.A_ton_of_animals_in_the_colony-1.description	We've got so many animals now! It makes me so happy to see them all.
+VTE_AnimalsInColony.stages.A_ton_of_animals_in_the_colony-2.label	A ton of animals in the colony
+VTE_AnimalsInColony.stages.A_ton_of_animals_in_the_colony-2.description	We've got so many animals now! It makes me so happy to see them all.
+VTE_ChildOfSea.stages.Ocean_lover.label	Ocean lover
+VTE_ChildOfSea.stages.Ocean_lover.description	I really like being around the ocean and rivers, water is beautiful.
+VTE_ChildOfMountain.stages.Mountain_lover.label	Mountain lover
+VTE_ChildOfMountain.stages.Mountain_lover.description	I really like being around the mountains, they take my breath away.
+VTE_HaventHarvestedOrgansForLongTime.stages.Hasnt_harvested_organs.label	Hasn't harvested organs
+VTE_HaventHarvestedOrgansForLongTime.stages.Hasnt_harvested_organs.description	I'm growing impatient, I need more subjects.
+VTE_HarvestedOrgans.stages.Harvested_organs.label	Harvested organs
+VTE_HarvestedOrgans.stages.Harvested_organs.description	The operation went just as expected, my collection has grown.
+VTE_HaventExitedColonyForLongTime.stages.Has_not_left_colony.label	Has not left colony
+VTE_HaventExitedColonyForLongTime.stages.Has_not_left_colony.description	I haven't left home in a while, I'd really like to travel for a change.
+VTE_SoakingWetChildOfTheSea.stages.soaking_wet.label	soaking wet
+VTE_SoakingWetChildOfTheSea.stages.soaking_wet.description	I'm soaking wet. Love it.
+VTE_EnvironmentDark.stages.darkness.label	darkness
+VTE_EnvironmentDark.stages.darkness.description	I've been in the dark for a while. I like it.
+VTE_Dunce.stages.Dunce.label	Dunce
+VTE_Dunce.stages.Dunce.description	I don't understand why everybody is so upset all the time.
+## DefInjected/TraitDef/Traits_Singular.xml
+VTE_AbsentMinded.degreeDatas.absentminded.label	absent-minded
+VTE_AbsentMinded.degreeDatas.absentminded.description	{PAWN_nameDef} tends to let {PAWN_possessive} mind drift, even in the middle of work. {PAWN_pronoun} may sometimes stop tasks at random.
+VTE_Eccentric.degreeDatas.eccentric.label	eccentric
+VTE_Eccentric.degreeDatas.eccentric.description	{PAWN_nameDef} has a screw loose, but it comes with a sharper scientific mind.
+VTE_Perfectionist.degreeDatas.perfectionist.label	perfectionist
+VTE_Perfectionist.degreeDatas.perfectionist.description	{PAWN_nameDef} strives for perfection in {PAWN_possessive} work. {PAWN_pronoun} produces higher-quality products, but works more slowly. Failing to meet {PAWN_possessive} standards causes unhappiness, and on rare occasions {PAWN_pronoun} may abandon a project mid-way.
+VTE_Coward.degreeDatas.coward.label	coward
+VTE_Coward.degreeDatas.coward.description	{PAWN_nameDef}'s instincts lean heavily toward cowardice. In danger, {PAWN_pronoun} will often hide or run before standing to fight.
+VTE_Brave.degreeDatas.brave.label	brave
+VTE_Brave.degreeDatas.brave.description	{PAWN_nameDef} has stronger mental and physical fortitude than most. {PAWN_pronoun} can endure pain more readily, and is slower to break under harsh conditions.
+VTE_Clumsy.degreeDatas.clumsy.label	clumsy
+VTE_Clumsy.degreeDatas.clumsy.description	Minor bruises and scrapes plague {PAWN_nameDef}, usually from tripping or falling due to poor coordination.
+VTE_HeatInclined.degreeDatas.heat_inclined.label	heat inclined
+VTE_HeatInclined.degreeDatas.heat_inclined.description	{PAWN_nameDef} enjoys the heat of a dry summer day. {PAWN_pronoun} doesn't mind working up a sweat or sleeping in warmth.
+VTE_ColdInclined.degreeDatas.cold_inclined.label	cold inclined
+VTE_ColdInclined.degreeDatas.cold_inclined.description	{PAWN_nameDef} enjoys the chill of a brisk winter night. {PAWN_pronoun} doesn't mind shivering or sleeping in the cold.
+VTE_HeavySleeper.degreeDatas.heavy_sleeper.label	heavy sleeper
+VTE_HeavySleeper.degreeDatas.heavy_sleeper.description	A bomb could go off beside {PAWN_nameDef} while {PAWN_pronoun} sleeps, and {PAWN_pronoun} would keep right on sleeping. {PAWN_pronoun} can't be bothered to work or defend the colony mid-nap.
+VTE_Neat.degreeDatas.neat.label	neat
+VTE_Neat.degreeDatas.neat.description	{PAWN_nameDef} is naturally hygienic and organized. {PAWN_pronoun} doesn't track dirt or scatter trash, and enjoys cleaning.
+VTE_Slob.degreeDatas.slob.label	slob
+VTE_Slob.degreeDatas.slob.description	{PAWN_nameDef} is naturally sloppy, leaving trash and dirt scattered around. At least {PAWN_pronoun} isn't much bothered by messy surroundings.
+VTE_Workaholic.degreeDatas.workaholic.label	workaholic
+VTE_Workaholic.degreeDatas.workaholic.description	{PAWN_nameDef} struggles to take breaks or rest mid-job. {PAWN_pronoun} will keep working, even at the expense of {PAWN_possessive} health or sleep.
+VTE_IronStomach.degreeDatas.iron_stomach.label	iron stomach
+VTE_IronStomach.degreeDatas.iron_stomach.description	{PAWN_nameDef} has never known nausea. Food poisoning and vomiting are foreign to {PAWN_objective}.
+VTE_AnimalLover.degreeDatas.animal_lover.label	animal lover
+VTE_AnimalLover.degreeDatas.animal_lover.description	{PAWN_nameDef} can't stand cruelty toward animals. {PAWN_pronoun} feels happier when nuzzled or acting as master to a tamed animal, but is more deeply upset when losing one. {PAWN_pronoun} also refuses to butcher animals.
+VTE_AnimalHater.degreeDatas.animal_hater.label	animal hater
+VTE_AnimalHater.degreeDatas.animal_hater.description	{PAWN_nameDef} believes in human superiority over animals. {PAWN_pronoun} dislikes bonding or being nuzzled, but feels satisfaction when animals die or are sold.
+VTE_BigBoned.degreeDatas.bigboned.label	big-boned
+VTE_BigBoned.degreeDatas.bigboned.description	Whether from bulk or awkward posture, {PAWN_nameDef} has broken a few chairs in {PAWN_possessive} time, and is likely to break more.
+VTE_Rebel.degreeDatas.rebel.label	rebel
+VTE_Rebel.degreeDatas.rebel.description	{PAWN_nameDef} only plays by {PAWN_possessive} own rules. When forced, {PAWN_pronoun} will drag {PAWN_possessive} feet and work more slowly.
+VTE_Submissive.degreeDatas.submissive.label	submissive
+VTE_Submissive.degreeDatas.submissive.description	{PAWN_nameDef} needs clear direction on when and how to act. {PAWN_pronoun} works at normal speed only when ordered, and otherwise slows down.
+VTE_Vengeful.degreeDatas.vengeful.label	vengeful
+VTE_Vengeful.degreeDatas.vengeful.description	{PAWN_nameDef} is fueled by spite. {PAWN_pronoun} can’t stand sharing the colony with rivals, and feels happier when one of them dies.
+VTE_Technophobe.degreeDatas.technophobe.label	technophobe
+VTE_Technophobe.degreeDatas.technophobe.description	Whether from trauma or fear of change, {PAWN_nameDef} rejects modernity. {PAWN_pronoun} may lash out at machines, refuses to research, and feels satisfaction from destroying mechanoids.
+VTE_FunLoving.degreeDatas.funloving.label	fun-loving
+VTE_FunLoving.degreeDatas.funloving.description	{PAWN_nameDef} lives for a good time. {PAWN_pronoun} remembers parties fondly, and the joy lasts far longer than it does for most.
+VTE_Dunce.degreeDatas.dunce.label	dunce
+VTE_Dunce.degreeDatas.dunce.description	{PAWN_nameDef} has limited mental capacity. {PAWN_pronoun} learns slowly and struggles with conversation, but tends to be naturally happy.
+VTE_MartialArtist.degreeDatas.martial_artist.label	martial artist
+VTE_MartialArtist.degreeDatas.martial_artist.description	{PAWN_nameDef} has trained in melee combat and learned a special move to disarm opponents.
+VTE_Snob.degreeDatas.snob.label	snob
+VTE_Snob.degreeDatas.snob.description	{PAWN_nameDef} believes they belong in high society, and loves nothing more than critiquing art and brushing elbows with royalty.
+VTE_Squeamish.degreeDatas.squeamish.label	squeamish
+VTE_Squeamish.degreeDatas.squeamish.description	{PAWN_nameDef} gets a sour stomach around blood or corpses. Vomiting is just part of life for {PAWN_objective}.
+VTE_Anxious.degreeDatas.anxious.label	anxious
+VTE_Anxious.degreeDatas.anxious.description	{PAWN_nameDef} is naturally anxious, especially in social situations. {PAWN_pronoun} avoids gatherings and sometimes retreats to {PAWN_possessive} room to cope.
+VTE_Insatiable.degreeDatas.insatiable.label	insatiable
+VTE_Insatiable.degreeDatas.insatiable.description	No amount of lovin’ is ever enough for {PAWN_nameDef}. {PAWN_pronoun} tends to move between partners and seeks intimacy often.
+VTE_Prude.degreeDatas.prude.label	prude
+VTE_Prude.degreeDatas.prude.description	{PAWN_nameDef} gives {PAWN_possessive} body only to a spouse and would never initiate divorce. {PAWN_pronoun} also dislikes nudity more than most.
+VTE_CouchPotato.degreeDatas.couch_potato.label	couch potato
+VTE_CouchPotato.degreeDatas.couch_potato.description	An armchair and a screen are all {PAWN_nameDef} needs to be happy. {PAWN_pronoun} never tires of watching television, and always feels good after.
+VTE_CatPerson.degreeDatas.cat_person.label	cat person
+VTE_CatPerson.degreeDatas.cat_person.description	{PAWN_nameDef} enjoys the company of cats and gravitates toward bonding with them, but dislikes dogs.
+VTE_DogPerson.degreeDatas.dog_person.label	dog person
+VTE_DogPerson.degreeDatas.dog_person.description	{PAWN_nameDef} enjoys the company of dogs and gravitates toward bonding with them, but dislikes cats.
+VTE_Prodigy.degreeDatas.prodigy.label	prodigy
+VTE_Prodigy.degreeDatas.prodigy.description	{PAWN_nameDef} has a sharp, logical mind. {PAWN_pronoun} researches faster than most, and {PAWN_possessive} rational outlook makes {PAWN_objective} less prone to mental breaks.
+VTE_Menagerist.degreeDatas.menagerist.label	menagerist
+VTE_Menagerist.degreeDatas.menagerist.description	{PAWN_nameDef} believes animals are essential to life and society. {PAWN_pronoun} feels happier with more of them around, and is especially skilled at taming and training.
+VTE_ChildOfSea.degreeDatas.Ocean_lover.label	Ocean lover
+VTE_ChildOfSea.degreeDatas.Ocean_lover.description	The sea calls to {PAWN_nameDef}. {PAWN_pronoun} feels happier when near the ocean or a deep river.
+VTE_ChildOfMountain.degreeDatas.Mountain_lover.label	Mountain lover
+VTE_ChildOfMountain.degreeDatas.Mountain_lover.description	The mountains call to {PAWN_nameDef}. {PAWN_pronoun} feels happier when near a large mountain.
+VTE_MadSurgeon.degreeDatas.mad_surgeon.label	mad surgeon
+VTE_MadSurgeon.degreeDatas.mad_surgeon.description	{PAWN_nameDef} hides a twisted obsession. {PAWN_pronoun} treats organ harvesting as a dark experiment and takes pleasure in it. Harvesting makes {PAWN_objective} happy, but going too long without fuels growing unrest.
+VTE_DrunkenMaster.degreeDatas.drunken_master.label	drunken master
+VTE_DrunkenMaster.degreeDatas.drunken_master.description	{PAWN_nameDef} fights best when drunk. {PAWN_pronoun} grows more dangerous in melee the more intoxicated {PAWN_pronoun} becomes.
+VTE_Kleptomaniac.degreeDatas.kleptomaniac.label	kleptomaniac
+VTE_Kleptomaniac.degreeDatas.kleptomaniac.description	{PAWN_nameDef} is compelled to steal, even from guests and allies, risking angering others.
+VTE_Stoner.degreeDatas.stoner.label	stoner
+VTE_Stoner.degreeDatas.stoner.description	Smokeleaf is a way of life for {PAWN_nameDef}. {PAWN_pronoun} adores it and would rather die than give it up.
+VTE_Lush.degreeDatas.lush.label	lush
+VTE_Lush.degreeDatas.lush.description	Alcohol is a way of life for {PAWN_nameDef}. {PAWN_pronoun} adores drinking and would rather die than give it up.
+VTE_Wanderlust.degreeDatas.wanderlust.label	wanderlust
+VTE_Wanderlust.degreeDatas.wanderlust.description	{PAWN_nameDef} loves to travel and feels happiest on the move. {PAWN_pronoun} grows restless when staying too long in one place, but moves quickly and forages well while caravanning.
+VTE_Insomniac.degreeDatas.insomniac.label	insomniac
+VTE_Insomniac.degreeDatas.insomniac.description	{PAWN_nameDef} is never fully asleep or awake. {PAWN_pronoun} lurches along in a slow, shambler-like state, and only sleeps once every few days.
+VTE_WorldWeary.degreeDatas.world_weary.label	world weary
+VTE_WorldWeary.degreeDatas.world_weary.description	{PAWN_nameDef} has grown tired of the world. {PAWN_pronoun} struggles with bleak thoughts, making {PAWN_possessive} personality difficult to befriend.
+VTE_Desensitized.degreeDatas.desensitized.label	desensitized
+VTE_Desensitized.degreeDatas.desensitized.description	{PAWN_nameDef} is hardened by old emotional trauma. {PAWN_pronoun} feels nothing from death or loss, whether animal, colonist, family, or prisoner.
+VTE_RefinedPalate.degreeDatas.refined_palate.label	refined palate
+VTE_RefinedPalate.degreeDatas.refined_palate.description	Only the finest meals satisfy {PAWN_nameDef}. {PAWN_pronoun} feels indifferent toward ordinary food, but savors lavish meals and gains greater joy from them.
+VTE_Academian.degreeDatas.academian.label	academian
+VTE_Academian.degreeDatas.academian.description	Through scholastic pursuit, {PAWN_nameDef} has become well-read. {PAWN_pronoun} excels in science and medicine, and tends patients with greater skill.
+VTE_Groundbreaker.degreeDatas.groundbreaker.label	groundbreaker
+VTE_Groundbreaker.degreeDatas.groundbreaker.description	{PAWN_nameDef} believes infrastructure is everything. {PAWN_pronoun} is a natural builder and stoneworker, constructing and mining with greater speed and efficiency.
+VTE_Gastronomist.degreeDatas.gastronomist.label	gastronomist
+VTE_Gastronomist.degreeDatas.gastronomist.description	To {PAWN_nameDef}, food is art. {PAWN_pronoun} creates beautiful, delicious meals that are almost always safe to eat.
+VTE_Ecologist.degreeDatas.ecologist.label	ecologist
+VTE_Ecologist.degreeDatas.ecologist.description	Flora and fauna are vital to {PAWN_nameDef}. {PAWN_pronoun} uses every part of plants and animals, and appreciates nature’s gifts.
+VTE_Tycoon.degreeDatas.tycoon.label	tycoon
+VTE_Tycoon.degreeDatas.tycoon.description	{PAWN_nameDef} has an eye for silver and a silver tongue to match. {PAWN_pronoun} values {PAWN_possessive} own goods highly, and convinces others to do the same.
+VTE_ThickSkinned.degreeDatas.thick_skinned.label	thick skinned
+VTE_ThickSkinned.degreeDatas.thick_skinned.description	{PAWN_nameDef} is strangely hypercoagulating and will bleed much more slowly than most.
+VTE_ThinSkinned.degreeDatas.thin_skinned.label	thin skinned
+VTE_ThinSkinned.degreeDatas.thin_skinned.description	{PAWN_nameDef} is strangely hemophilic and tends to bleed much more profusely than others.
+VTE_Schizoid.degreeDatas.schizoid.label	schizoid
+VTE_Schizoid.degreeDatas.schizoid.description	{PAWN_nameDef} bottles up {PAWN_possessive} feelings for long stretches of time. When the pressure grows too great, {PAWN_pronoun} may suddenly break down.
+## Keyed/Keys.xml
+VTE.HasDestroyedItem	{PAWN_nameDef} has destroyed the item {PAWN_pronon} just crafted due to the item not being of sufficient quality
+VTE.GotBruise	{PAWN_nameDef} got a bruise due to being clumsy
+VTE.CantBeWokenUpHeavySleeper	{PAWN_nameDef} is too heavy of a sleeper to be drafted.
+VTE.DecisesInterruptCurrentCostructionJob	{PAWN_nameDef} has given up on {0} for now due to being a perfectionist
+VTE.CavaranSpeedIsDoubledWanderlusts	Wanderlust pawns will traverse to foreign locations at an increased speed
+VTE.KleptomaniacStealsItemFrom	{PAWN_nameDef} has stolen a possession not belonging to their faction, this may damage relations between affiliated factions
+VTE.KleptomaniacFailedToStealItemFrom	{PAWN_nameDef} was caught trying to steal another factions possessions, this may damage relations between affiliated factions
+VTE.PawnBreaksChairs	{PAWN_nameDef} has damaged {0} due to their weight or strange posture
+VTE.PawnStoleItem	{PAWN_nameDef} stole {0} from {VICTIM_nameDef}
+VTE.PawnFailedToStealItem	{PAWN_nameDef} failed to steal {0} from {VICTIM_nameDef}. This has angered the {VICTIM_nameDef} faction
+VTE.PawnCowardlyFlees	{PAWN_nameDef} runs away from combat due to being a coward
+VTE.PawnCowardlyExitMapHostile	{PAWN_nameDef} runs away from combat due to being a coward
+VTE.PawnCowardlyExitMapAlly	{PAWN_nameDef} runs away from combat due to being a coward
+VTE.PawnCowardlyExitMapNeutral	{PAWN_nameDef} runs away from combat due to being a coward
+VTE.PawnStopsForcedJob	{PAWN_nameDef} has defied or forgotten their orders and stopped working for the time being
+VTE.VictimDropsEquipmentMartialArtist	{PAWN_nameDef} has disarmed {VICTIM_nameDef} in melee combat
+VTE.AnimalLoverRefusesToButcher	{PAWN_nameDef} is an animal lover
+VTE.LushNeverRecovers	A lush person never recovers
+VTE.StonerNeverRecovers	A stoner never recovers

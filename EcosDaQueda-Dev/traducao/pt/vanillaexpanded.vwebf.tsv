@@ -1,0 +1,42 @@
+## DefInjected/AbilityDef/RangedIndustrial.xml
+VWEB_FlarestrikeFlare.label	sinalizador fulgor
+VWEB_FlarestrikeFlare.description	Gasta uma carga pressurizada de bioferrita para criar uma explosão de chamas.
+VWEB_FirestormBlazer.label	lança-chamas tempestade de fogo
+VWEB_FirestormBlazer.description	Dispara uma rajada de fogo de curto alcance, numa área curta mas larga.
+VWEB_CycloneRapidBurst.label	rajada rápida ciclone
+VWEB_CycloneRapidBurst.description	Dispara uma saraivada rápida de tiros usando o motor acelerado por bioferrita.
+## DefInjected/ThingDef/RangedIndustrial.xml
+VWEB_Gun_FlarestrikeRifle.label	fuzil fulgor
+VWEB_Gun_FlarestrikeRifle.description	Um fuzil de batalha semiautomático versátil, com bom alcance, potência razoável e ótima precisão.\n\nVem com um lança-sinalizador disruptor movido a bioferrita sob o cano. No impacto, o sinalizador queima uma cápsula de bioferrita, criando um clarão forte e uma perturbação psíquica local. O lança-sinalizador pode ser usado quatro vezes antes de o fuzil precisar ser recarregado com bioferrita.
+VWEB_Gun_FlarestrikeRifle.comps.CompUnderBarrel.standardLabel	usar o fuzil
+VWEB_Gun_FlarestrikeRifle.comps.CompUnderBarrel.underBarrelLabel	usar o lança-sinalizador
+VWEB_Gun_FlarestrikeRifle.tools.stock.label	coronha
+VWEB_Gun_FlarestrikeRifle.tools.barrel.label	cano
+VWEB_Gun_FlarestrikeRifle.tools.muzzle.label	boca
+VWEB_Gun_FlarestrikeRifle.verbs.Verb_ShootCE.label	fuzil fulgor
+VWEB_Bullet_FlarestrikeRifle.label	bala de fuzil fulgor
+VWEB_Gun_FirestormShotgun.label	escopeta tempestade de fogo
+VWEB_Gun_FirestormShotgun.description	Uma escopeta forte de curto alcance que dispara um leque fechado de chumbos. Mortal, mas só de perto.\n\nTambém vem com um minilança-chamas movido a bioferrita, que solta uma rajada de fogo de curto alcance a partir de cargas pressurizadas de bioferrita. O minilança-chamas pode ser usado quatro vezes antes de reabastecer.
+VWEB_Gun_FirestormShotgun.comps.CompUnderBarrel.standardLabel	usar a escopeta
+VWEB_Gun_FirestormShotgun.comps.CompUnderBarrel.underBarrelLabel	usar o lança-chamas
+VWEB_Gun_FirestormShotgun.tools.stock.label	coronha
+VWEB_Gun_FirestormShotgun.tools.barrel.label	cano
+VWEB_Gun_FirestormShotgun.tools.muzzle.label	boca
+VWEB_Gun_FirestormShotgun.verbs.Verb_ShootCE.label	escopeta tempestade de fogo
+VWEB_Bullet_FirestormShotgun.label	disparo de escopeta tempestade de fogo
+VWEB_Gun_CycloneMinigun.label	metralhadora giratória ciclone
+VWEB_Gun_CycloneMinigun.description	Uma metralhadora de vários canos, difícil de manejar. Quando os canos pegam velocidade, dispara muito rápido. A maioria das armas automáticas usa a energia da pólvora; esta usa um motor elétrico para passar os cartuchos pela arma em alta velocidade. \n\nVem com um motor de sobrecarga separado que usa bioferrita para acelerar muito a cadência. A sobrecarga pode ser usada duas vezes antes de a arma precisar ser recarregada com bioferrita.
+VWEB_Gun_CycloneMinigun.comps.CompUnderBarrel.standardLabel	usar o tiro normal
+VWEB_Gun_CycloneMinigun.comps.CompUnderBarrel.underBarrelLabel	usar o motor ciclone
+VWEB_Gun_CycloneMinigun.tools.stock.label	coronha
+VWEB_Gun_CycloneMinigun.tools.barrel.label	cano
+VWEB_Gun_CycloneMinigun.tools.muzzle.label	boca
+VWEB_Gun_CycloneMinigun.verbs.Verb_ShootCE.label	metralhadora giratória ciclone
+VWEB_Bullet_CycloneMinigun.label	bala de metralhadora giratória ciclone
+VWEB_Gun_PiercerRifle.label	fuzil perfurador
+VWEB_Gun_PiercerRifle.description	Um fuzil de ferrolho versátil, mas de modelo antigo. Tem longo alcance e cadência baixa. Dificilmente leva animais a se vingarem, por isso é a arma preferida para caça. \n\nVem com uma baioneta de bioferrita delicada, mas afiadíssima, que causa bastante dano cortante em combate corpo a corpo se o inimigo chegar perto demais.
+VWEB_Gun_PiercerRifle.tools.stock.label	coronha
+VWEB_Gun_PiercerRifle.tools.barrel.label	cano
+VWEB_Gun_PiercerRifle.tools.bayonet.label	baioneta
+VWEB_Gun_PiercerRifle.verbs.Verb_ShootCE.label	fuzil perfurador
+VWEB_Bullet_PiercerRifle.label	bala de fuzil perfurador

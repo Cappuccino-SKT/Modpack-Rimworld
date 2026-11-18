@@ -1,0 +1,544 @@
+## DefInjected/BodyDef/Bodies_Drones.xml
+VQE_DroneWithSingleWheel.label	drone
+VQE_DroneWithSingleWheel.corePart.parts.wheel.customLabel	wheel
+VQE_DroneWithWheels.label	drone
+VQE_DroneWithWheels.corePart.parts.front_left_wheel.customLabel	front left wheel
+VQE_DroneWithWheels.corePart.parts.front_right_wheel.customLabel	front right wheel
+VQE_DroneWithWheels.corePart.parts.rear_left_wheel.customLabel	rear left wheel
+VQE_DroneWithWheels.corePart.parts.rear_right_wheel.customLabel	rear right wheel
+VQE_DroneWithTreads.label	drone
+VQE_DroneWithTreads.corePart.parts.front_left_tread.customLabel	front left tread
+VQE_DroneWithTreads.corePart.parts.back_left_tread.customLabel	back left tread
+VQE_DroneWithTreads.corePart.parts.front_right_tread.customLabel	front right tread
+VQE_DroneWithTreads.corePart.parts.back_right_tread.customLabel	back right tread
+VQE_DroneFlying.label	flying drone
+VQE_DroneFlying.corePart.parts.main_rotor.customLabel	main rotor
+VQE_DroneLegless.label	crippled drone
+VQE_DroneLegless.corePart.parts.broken_spine.customLabel	broken spine
+VQE_DroneWithLegs.label	bipedal drone
+VQE_DroneWithLegs.corePart.parts.left_leg.customLabel	left leg
+VQE_DroneWithLegs.corePart.parts.right_leg.customLabel	right leg
+## DefInjected/BodyPartDef/Bodies_Drones.xml
+VQE_DroneShell.label	shell
+VQE_DroneCoreBodyPart.label	core
+VQE_DroneEye.label	visual sensor
+VQE_DroneShellSection.label	shell section
+VQE_DroneShellSectionWithSpike.label	spiked shell section
+VQE_DroneChassis.label	chassis
+VQE_DroneTreads.label	tread
+VQE_DroneWheel.label	wheel
+VQE_DroneBrokenSpine.label	broken spine
+VQE_DroneRotor.label	rotor
+VQE_DroneAntenna.label	antenna
+VQE_DroneLeg.label	leg
+## DefInjected/BodyPartGroupDef/BodyPartGroups.xml
+VQE_SpikedShellAttackTool.label	shell spike
+VQE_SpikedShellAttackTool.labelShort	spike
+## DefInjected/DesignationDef/JobDefs.xml
+VQE_ShutdownDrone.label	shutdown drone
+VQE_ShutdownDrone.description	Shut down this drone permanently.
+VQE_ReactivateDrone.label	reactivate drone
+VQE_ReactivateDrone.description	Reactivate this drone from standby.
+## DefInjected/GameConditionDef/QuestScriptDef_DroneStockpile.xml
+VQE_DroneStockpileTransmitter.label	drone transmitter active
+VQE_DroneStockpileTransmitter.description	Long range drone transmitter is active, which allows ancient drones to raid nearby locations.
+VQE_DroneStockpileTransmitter.endMessage	Long range drone transmitter is no longer active.
+VQE_DroneStockpileTransmitter.startMessage	Long range drone transmitter allows ancient drones to form raiding groups across the world.
+## DefInjected/HediffDef/Hediffs.xml
+VQE_SensorLag.label	sensor lag
+VQE_SensorLag.description	Sensor lag causing capacity penalties.
+VQE_Overclock.label	overclocked
+VQE_Overclock.description	Performance increased at the cost of lifespan.
+## DefInjected/HediffDef/Hediffs_Autobroadcaster.xml
+VQE_Broadcaster_WorkMode.label	work mode
+VQE_Broadcaster_WorkMode.description	Autobroadcaster is playing energetic music that makes everyone work a little bit harder.
+VQE_Broadcaster_WorkMode_Buff.label	work mode
+VQE_Broadcaster_WorkMode_Buff.description	Autobroadcaster is playing energetic music that makes everyone work a little bit harder.
+VQE_Broadcaster_Relax.label	relax mode
+VQE_Broadcaster_Relax.description	Autobroadcaster is playing soothing music that makes everyone a little bit more relaxed.
+VQE_Broadcaster_Relax_Buff.label	relax mode
+VQE_Broadcaster_Relax_Buff.description	Autobroadcaster is playing soothing music that makes everyone a little bit more relaxed.
+VQE_Broadcaster_Recruitment.label	recruitment mode
+VQE_Broadcaster_Recruitment.description	Autobroadcaster is playing propaganda messages aimed at prisoners with the purpose of lowering their resistance.
+VQE_Broadcaster_Recruitment_Buff.label	recruitment mode
+VQE_Broadcaster_Recruitment_Buff.description	Autobroadcaster is playing propaganda messages aimed at prisoners with the purpose of lowering their resistance.
+VQE_Broadcaster_Conversion.label	conversion mode
+VQE_Broadcaster_Conversion.description	Autobroadcaster is playing ideological rhetoric aimed at prisoners with the purpose of converting their beliefs.
+VQE_Broadcaster_Conversion_Buff.label	conversion mode
+VQE_Broadcaster_Conversion_Buff.description	Autobroadcaster is playing ideological rhetoric aimed at prisoners with the purpose of converting their beliefs.
+## DefInjected/JobDef/JobDefs.xml
+VQE_RepairDrone.reportString	repairing TargetA.
+VQE_ShutdownDrone.reportString	shutting down TargetA.
+VQE_ReactivateDrone.reportString	reactivating TargetA.
+VQE_EnterStandby.reportString	entering stand-by.
+VQE_StandOutOfTransmitterRange.reportString	waiting for transmitter signal.
+VQE_CarryDroneToTransmitter.reportString	carrying TargetA to transmitter.
+## DefInjected/JobDef/Jobs_Misc.xml
+VQE_GotoPatrolDest.reportString	patrolling.
+VQE_DecryptCore.reportString	decrypting drone core.
+## DefInjected/MainButtonDef/MainButton.xml
+VQE_Drones.label	Drones
+VQE_Drones.description	Manage your colony's drones.
+## DefInjected/MentalStateDef/MentalStates.xml
+VQE_DiagnosticLoop.label	diagnostic loop
+VQE_DiagnosticLoop.baseInspectLine	Malfunctioning: Diagnostic loop
+VQE_ConnectionTimedOut.label	connection timed out
+VQE_ConnectionTimedOut.baseInspectLine	Malfunctioning: Connection timed out
+VQE_Indexing.label	indexing
+VQE_Indexing.baseInspectLine	Malfunctioning: Indexing
+VQE_SensorLag.label	sensor lag
+VQE_SensorLag.baseInspectLine	Malfunctioning: Sensor lag
+VQE_HoardingLoop.label	hoarding loop
+VQE_HoardingLoop.baseInspectLine	Malfunctioning: Hoarding loop
+VQE_Overclock.label	overclock
+VQE_Overclock.baseInspectLine	Malfunctioning: Overclock
+VQE_Desync.label	desync
+VQE_Desync.baseInspectLine	Malfunctioning: Desync
+VQE_FluidLeak.label	fluid leak
+VQE_FluidLeak.baseInspectLine	Malfunctioning: Fluid leak
+VQE_Reboot.label	rebooting
+VQE_Reboot.baseInspectLine	Malfunctioning: Rebooting
+VQE_Hardcrash.label	hardcrash
+VQE_Hardcrash.baseInspectLine	Malfunctioning: Hardcrash
+VQE_Killswitch.label	killswitch
+VQE_Killswitch.baseInspectLine	Malfunctioning: Killswitch
+VQE_SelfDecommission.label	self-decommission
+VQE_SelfDecommission.baseInspectLine	Malfunctioning: Self-decommission
+VQE_HardwareFailure.label	hardware failure
+VQE_HardwareFailure.baseInspectLine	Malfunctioning: Hardware failure
+## DefInjected/NeedDef/Needs.xml
+VQE_Lifespan.label	lifespan
+VQE_Lifespan.description	The remaining operational lifespan of the drone. When this reaches zero, the drone's core will be destroyed.
+## DefInjected/PawnColumnDef/MainButton.xml
+VQE_Lifespan.label	Lifespan
+VQE_LifespanDrainSpeed.label	Drain speed
+VQE_Draft.label	Draft
+VQE_AutoRepair.label	Auto repair
+VQE_Standby.label	Standby
+## DefInjected/PawnKindDef/Races_AutobroadcasterDrone.xml
+VQE_AutobroadcasterDrone.label	autobroadcaster drone
+VQE_AutobroadcasterDrone.labelPlural	autobroadcaster drones
+## DefInjected/PawnKindDef/Races_BattleDrone.xml
+VQE_BattleDrone.label	battle drone
+VQE_BattleDrone.labelPlural	battle drones
+## DefInjected/PawnKindDef/Races_CleanerDrone.xml
+VQE_CleanerDrone.label	cleaner drone
+VQE_CleanerDrone.labelPlural	cleaner drones
+## DefInjected/PawnKindDef/Races_CraftingDrone.xml
+VQE_CraftingDroneKindDef.label	crafting drone
+VQE_CraftingDroneKindDef.labelPlural	crafting drones
+## DefInjected/PawnKindDef/Races_FarmingDrone.xml
+VQE_FarmingDrone.label	farming drone
+VQE_FarmingDrone.labelPlural	farming drones
+## DefInjected/PawnKindDef/Races_FirefighterDrone.xml
+VQE_FirefighterDrone.label	firefighter drone
+VQE_FirefighterDrone.labelPlural	firefighter drones
+## DefInjected/PawnKindDef/Races_HaulerDrone.xml
+VQE_HaulerDrone.label	hauler drone
+VQE_HaulerDrone.labelPlural	hauler drones
+## DefInjected/PawnKindDef/Races_HornetDrone.xml
+VQE_HornetDrone.label	hornet drone
+VQE_HornetDrone.labelPlural	hornet drones
+## DefInjected/PawnKindDef/Races_MinerDrone.xml
+VQE_MinerDrone.label	miner drone
+VQE_MinerDrone.labelPlural	miner drones
+## DefInjected/PawnKindDef/Races_PackDrone.xml
+VQE_PackDrone.label	pack drone
+VQE_PackDrone.labelPlural	pack drones
+## DefInjected/PawnKindDef/Races_Protolancer.xml
+VQE_Protolancer.label	protolancer
+VQE_Protolancer.labelPlural	protolancers
+## DefInjected/PawnKindDef/Races_RaiderDrone.xml
+VQE_RaiderDrone.label	raider drone
+VQE_RaiderDrone.labelPlural	raider drones
+## DefInjected/PawnKindDef/Races_ShufflerDrone.xml
+VQE_ShufflerDrone.label	shuffler drone
+VQE_ShufflerDrone.labelPlural	shuffler drones
+VQE_DriverDrone.label	driver drone
+VQE_DriverDrone.labelPlural	driver drones
+VQE_CrawlerDrone.label	crawler drone
+VQE_CrawlerDrone.labelPlural	crawler drones
+## DefInjected/PawnKindDef/Races_StingrayDrone.xml
+VQE_StingrayDrone.label	stingray drone
+VQE_StingrayDrone.labelPlural	stingray drones
+## DefInjected/PawnKindDef/Races_TurretDrone.xml
+VQE_TurretDrone.label	turret drone
+VQE_TurretDrone.labelPlural	turret drones
+## DefInjected/PawnRenderTreeDef/PawnRenderTreeDefs.xml
+VQE_PackDrone.root.children.1.debugLabel	Carried thing
+## DefInjected/QuestScriptDef/QuestScriptDef_DroneFactory.xml
+VQE_DroneFactory.questDescriptionRules.rulesStrings[0]	questDescription->[asker_nameDef], [asker_faction_leaderTitle] of [asker_faction_name], has tracked down the source of the drone resurgences. A dedicated group of pirates have been using the stray drones as a play for a novelty market, and have appropriated an ancient factory as their headquarters.\n\nThe site is manufacturing large amounts of drones, and is selling them to other pirate factions at premium prices. Until this site is taken out, pirate raiding parties might purchase these drones and use them in their attacks.\n\n[asker_nameDef] suggests they have a genius in captivity supplying them with their blueprints, known only as The Tinkerer.\n\nYou can free their captive mastermind from his captivity, or kill him to prevent his ancient knowledge from being exploited further. The pirates won't go out without a fight, and will likely continue to produce drones during the approach and defend alongside them.\n\nDefenders:\n[ListOfEnemies]
+VQE_DroneFactory.questNameRules.rulesStrings[0]	questName->The Drone Factory
+## DefInjected/QuestScriptDef/QuestScriptDef_DroneScrapyard.xml
+VQE_DroneScrapyard.questDescriptionRules.rulesStrings[0]	questDescription->[asker_nameDef], [asker_faction_leaderTitle] of [asker_faction_name], has sent the coordinates of a den of discarded military drones. Once built for war, these machines now gather among heaps of scrap, struggling to fulfill directives that no longer serve any purpose. Some drag themselves forward aimlessly, while others are observed to emit distorted whines or engage in crude, half-functional cooperation.\n\n[asker_faction_name] plans to chart the site, and needs the hostile drones deactivated. They will reward us for making sure the area is clear of the unpredictable threats.\n\nAt the center of the scrapyard lies a fragmented chunk of a military command drone, which can be scavenged for vital intelligence on proprietary drone prototypes. This data can be used by the colony to manufacture drone types once thought lost to time.\n\nDefending drones:\n[defendingDrones]
+VQE_DroneScrapyard.questDescriptionRules.rulesStrings[1]	questDescription->[asker_nameDef], [asker_faction_leaderTitle] of [asker_faction_name], has transmitted the location of a vast, rusted scrapyard filled with decommissioned war drones. Left to rot among mountains of jagged metal, these machines attempt futile maintenance protocols, welding incompatible scrap to their own chassis in a desperate bid to remain functional.\n\n[asker_faction_name] seeks to harvest the rare plasteel and components buried in the heaps, but the erratic, territorial machines make salvage operations impossible. They will pay us well to clear the junk-strewn field.\n\nBuried deep within the central scrap pile is an uncorrupted memory matrix from a destroyed logistics mech. Extracting this data cache will grant the colony crucial insights into high-efficiency power storage technologies.\n\nDefending drones:\n[defendingDrones]
+VQE_DroneScrapyard.questDescriptionRules.rulesStrings[2]	questDescription->[asker_nameDef], [asker_faction_leaderTitle] of [asker_faction_name], has pointed us toward a desolate canyon serving as a massive dumping ground for obsolete mechanized units. Half-buried in slag and debris, these forgotten drones twitch and spark, hopelessly trying to recharge from depleted power cells while lashing out at any movement.\n\n[asker_faction_name] intends to establish a new forward outpost in this highly defensible canyon, but they need the unpredictable scrap-guardians eliminated first. A handsome reward is offered for securing the area.\n\nResting atop the largest pile of refuse is an intact targeting sensor from a decommissioned sniper drone. Salvaging this pristine hardware will allow the colony to reverse-engineer advanced long-range optical arrays.\n\nDefending drones:\n[defendingDrones]
+VQE_DroneScrapyard.questDescriptionRules.rulesStrings[3]	questDescription->[asker_nameDef], [asker_faction_leaderTitle] of [asker_faction_name], has shared coordinates for a sprawling technological wasteland, choked with the rusted husks of military drones. Many of the machines have reactivated due to short circuits, aimlessly patrolling the junk hills and occasionally discharging their weapons at falling debris.\n\n[asker_faction_name] claims these unpredictable junkers keep ambushing their merchant caravans passing through the sector. They have offered a bounty to anyone willing to permanently deactivate the threat.\n\nBeneath a collapsed tower of scrap metal lies a heavy siege drone's sealed black box. Breaking it open will yield classified encryption keys, significantly advancing our understanding of mechanoid signal security.\n\nDefending drones:\n[defendingDrones]
+VQE_DroneScrapyard.questDescriptionRules.rulesStrings[4]	questDescription->[asker_nameDef], [asker_faction_leaderTitle] of [asker_faction_name], has sent the location of a heavily polluted drone graveyard. Centuries of accumulated metallic refuse have created a maze of junk, patrolled by mangled warframes that drag their missing limbs through the dirt, still violently executing forgotten guard directives.\n\n[asker_faction_name] is attempting an archaeological excavation of the ancient ruins buried beneath the scrap, but the aggressive machines are halting progress. They will compensate us generously for purging the site.\n\nHidden in the heart of the dumping ground is a heavily armored processing core from an old command unit. Securing this core will provide our researchers with the schematics necessary to manufacture reinforced mechanoid plating.\n\nDefending drones:\n[defendingDrones]
+VQE_DroneScrapyard.questDescriptionRules.rulesStrings[5]	questDescription->[asker_nameDef], [asker_faction_leaderTitle] of [asker_faction_name], has uncovered a dense field of mechanical refuse, where thousands of discarded drones have been laid to rest. However, a corrupted distress beacon has awakened a handful of them. Now, these broken machines shamble aimlessly through the scrap, their audio sensors emitting sorrowful, static-laced warning chimes.\n\n[asker_faction_name] is experiencing severe communications jamming due to the erratic signals broadcast by the restless machines, and needs the scrapyard silenced. They are willing to pay a premium for our help.\n\nAt the epicenter of the electronic noise is an ancient, hyper-dense communications relay. Scavenging this part will provide the colony with invaluable data on optimizing automated bandwidth and mechanoid control frequencies.\n\nDefending drones:\n[defendingDrones]
+VQE_DroneScrapyard.questNameRules.rulesStrings[0]	questName->Drone scrapyard
+## DefInjected/QuestScriptDef/QuestScriptDef_DroneStockpile.xml
+VQE_DroneStockpile.questDescriptionRules.rulesStrings[0]	questDescription->Your colony has intercepted erratic signals originating from a nearby long-range transmitter. The station appears crudely assembled, yet its broadcasts carry deep into the surrounding area stirring activity among vagrant drones long thought dormant beneath scrapyards and forgotten ruins.\n\nThe source of the transmissions has been traced to an abandoned robotics warehouse. Whoever established the transmission is relying on the facility's reactivated security drones to defend the transmitter in their absence. Ancient units now wander the warehouse halls following their patrol patterns, violently lashing out at any intrusion.\n\nYour settlement and the surrounding area will now experience waves of raids from the awakened machines. As long as the transmitter remains active, hostile drone assaults against your colony will continue.\n\nList of enemies:\n[ListOfEnemies]
+VQE_DroneStockpile.questNameRules.rulesStrings[0]	questName->Drone emergence
+## DefInjected/RecipeDef/Recipes_Drones.xml
+VQE_DisassembleDrone.label	disassemble drone
+VQE_DisassembleDrone.description	Disassemble a dead drone to reclaim all resources spent to construct it.
+VQE_DisassembleDrone.jobString	Disassembling drone.
+VQE_AssembleBattleDrone.label	Assemble battle drone
+VQE_AssembleBattleDrone.description	Make a battle drone.
+VQE_AssembleBattleDrone.jobString	Assembling battle drone.
+VQE_AssembleCleanerDrone.label	Assemble cleaner drone
+VQE_AssembleCleanerDrone.description	Make a cleaner drone.
+VQE_AssembleCleanerDrone.jobString	Assembling cleaner drone.
+VQE_AssembleHaulerDrone.label	Assemble hauler drone
+VQE_AssembleHaulerDrone.description	Make a hauler drone.
+VQE_AssembleHaulerDrone.jobString	Assembling hauler drone.
+VQE_AssembleMinerDrone.label	Assemble miner drone
+VQE_AssembleMinerDrone.description	Make a miner drone.
+VQE_AssembleMinerDrone.jobString	Assembling miner drone.
+VQE_AssembleAutobroadcasterDrone.label	Assemble autobroadcaster drone
+VQE_AssembleAutobroadcasterDrone.description	Make an autobroadcaster drone.
+VQE_AssembleAutobroadcasterDrone.jobString	Assembling autobroadcaster drone.
+VQE_AssembleTurretDrone.label	Assemble turret drone
+VQE_AssembleTurretDrone.description	Make a turret drone.
+VQE_AssembleTurretDrone.jobString	Assembling turret drone.
+VQE_AssembleRaiderDrone.label	Assemble raider drone
+VQE_AssembleRaiderDrone.description	Make a raider drone.
+VQE_AssembleRaiderDrone.jobString	Assembling raider drone.
+VQE_AssembleProtolancer.label	Assemble protolancer
+VQE_AssembleProtolancer.description	Make a protolancer.
+VQE_AssembleProtolancer.jobString	Assembling protolancer.
+VQE_AssembleFarmingDrone.label	Assemble farming drone
+VQE_AssembleFarmingDrone.description	Make a farming drone.
+VQE_AssembleFarmingDrone.jobString	Assembling farming drone.
+VQE_AssembleFirefighterDrone.label	Assemble firefighter drone
+VQE_AssembleFirefighterDrone.description	Make a firefighter drone.
+VQE_AssembleFirefighterDrone.jobString	Assembling firefighter drone.
+VQE_AssembleHornetDrone.label	Assemble hornet drone
+VQE_AssembleHornetDrone.description	Make a hornet drone.
+VQE_AssembleHornetDrone.jobString	Assembling hornet drone.
+VQE_AssembleStingrayDrone.label	Assemble stingray drone
+VQE_AssembleStingrayDrone.description	Make a stingray drone.
+VQE_AssembleStingrayDrone.jobString	Assembling stingray drone.
+VQE_AssemblePackDrone.label	Assemble pack drone
+VQE_AssemblePackDrone.description	Make a pack drone.
+VQE_AssemblePackDrone.jobString	Assembling pack drone.
+## DefInjected/ResearchProjectDef/ResearchProjects_Various.xml
+VQE_Dronetech.label	dronetech
+VQE_Dronetech.description	Unlocks the ability to construct specialized work drones and the necessary infrastructure to keep them operational.
+VQE_Dronetech.generalRules.rulesStrings[0]	subject->autonomous drone networks
+VQE_Dronetech.generalRules.rulesStrings[1]	subject_story->pioneered the first fully synchronized drones
+VQE_Dronetech.generalRules.rulesStrings[2]	subject_story->transformed scattered machines into a unified automated grid
+VQE_Dronetech.generalRules.rulesStrings[3]	subject_story->saw beyond isolated units to the elegance of coordinated autonomy
+VQE_Dronetech.generalRules.rulesStrings[4]	subject_gerund->orchestrating fleets into seamless operational harmony
+## DefInjected/RulePackDef/RulePacks_Namers_CraftingDrone.xml
+VQE_CraftingDroneNamer.rulePack.rulesStrings[0]	r_name->[namefile]
+## DefInjected/SitePartDef/QuestScriptDef_DroneFactory.xml
+VQE_DroneFactory.label	drone factory
+VQE_DroneFactory.description	A heavily fortified pirate drone factory.
+## DefInjected/SitePartDef/QuestScriptDef_DroneScrapyard.xml
+VQE_DroneScrapyard.label	drone scrapyard
+VQE_DroneScrapyard.description	An old drone scrapyard filled with unstable machinery and ruined drones.
+## DefInjected/SitePartDef/QuestScriptDef_DroneStockpile.xml
+VQE_DroneStockpile.label	drone transmitter
+VQE_DroneStockpile.description	Long range drone transmitter is active in this area.
+## DefInjected/StatDef/Stats.xml
+VQE_LifespanYears.label	lifespan (years)
+VQE_LifespanYears.description	The operational lifespan of the drone in years.
+VQE_LifespanDrainSpeed.label	lifespan drain speed
+VQE_LifespanDrainSpeed.description	Multiplies how quickly the drone's lifespan drains. Higher values mean faster drain.
+## DefInjected/ThingCategoryDef/ThingCategories.xml
+VQE_CorpsesDrone.label	drone corpses
+## DefInjected/ThingDef/Buildings_Decorative.xml
+VQED_DroneShell.label	drone shell
+VQED_DroneShell.description	A shell from a smashed drone. It has been deteriorating for quite a while and the useful components have disintegrated.
+VQED_DroneChunk.label	drone chunk
+VQED_DroneChunk.description	A large, heavily damaged section of a colossal drone's frame. It appears to have been violently torn from the main unit, perhaps by a powerful explosion or extreme internal malfunction. Though the plating is warped, it still contains useful resources which you can acquire by deconstructing it.
+VQE_CompactedDroneScrap.label	compacted drone scrap
+VQE_CompactedDroneScrap.description	A dense cube of heavily pressed and salvaged drone components and scrap metal. The compaction process has fused the materials into a block that is difficult to break down, but still holds valuable metal.
+VQED_DestroyedColossusChassis.label	destroyed colossus chassis
+VQED_DestroyedColossusChassis.description	The destroyed chassis of what was once a colossal drone. Its bulk suggests immense power, though it is now little more than a hulking scrap metal. All internal components and valuable parts were scavenged long ago, leaving only the stripped, heavily armored shell.
+VQED_DestroyedColossusDifferential.label	destroyed colossus differential
+VQED_DestroyedColossusDifferential.description	The massive, ruined differential gear assembly from a colossal drone. The intricate mechanical structure is twisted and rusted, with only the heavy, non-recyclable metal remaining.
+VQED_DestroyedColossusLeg.label	destroyed colossus leg
+VQED_DestroyedColossusLeg.description	The mangled remains of one of a colossal drone's massive leg assemblies. Only the bulky, non-recyclable metal is left.
+VQED_DefunctAerialDrone.label	defunct aerial drone
+VQED_DefunctAerialDrone.description	The heavily damaged remains of an early aerial drone. Its casing is scarred and its small propellers are twisted, suggesting a violent crash. This model predates the advanced spacer-tech aerodrones, relying on bulkier, more primitive internal components. What little remains of its payload systems are defunct.
+VQED_DisabledAutotank.label	disabled autotank
+VQED_DisabledAutotank.description	The hulk of a medium-sized, autonomous armored tank. Heavy service panels have been crudely removed, leaving gaping holes where complex targeting and drive systems once sat. Though completely gutted and disabled, its sheer armored bulk and combat profile still look menacing.
+VQED_JunkyardSkidloader.label	junkyard skidloader
+VQED_JunkyardSkidloader.description	This large, rusted skidloader. Any machinery that held any value was removed long ago.
+VQED_JunkyardDigger.label	junkyard digger
+VQED_JunkyardDigger.description	A huge, rusted digger. Its massive arm and shovel are seized with rust, likely caused by decades of disuse after all salvageable parts were stripped.
+VQED_DisabledAerialDrone.label	disabled aerial drone
+VQED_DisabledAerialDrone.description	An immaculate, industrial-tech aerial drone, resting inertly docked to a charging bay. Undamaged but entirely non-functional due to critical components simply missing, the sensors are dark, and flight vanes are locked. It can still be deconstructed to yield whatever components are left.
+VQED_DisabledColossusDrone.label	disabled colossus drone
+VQED_DisabledColossusDrone.description	The immense frame of a colossal industrial drone, resting inertly. Some vital access panels are open and empty, with key internal components and drive systems skillfully removed. It can still be deconstructed to yield whatever components are left.
+VQED_DroneResourcePallet.label	drone resource pallet
+VQED_DroneResourcePallet.description	Palletized drone construction resources, including steel chassis plates, wiring harnesses, electronic components, and micro-actuators, prepared for transport. Can be deconstructed to yield valuable components.
+VQED_DormantBattleDrone.label	dormant battle drone
+VQED_DormantBattleDrone.description	An automated battle drone. It continuously patrols an area, looking for intruders. Once an intruder is found, it will relentlessly attack with a small stubgun.\n\nThis drone seems to be in a dormant state.
+VQED_DormantRaiderDrone.label	dormant raider drone
+VQED_DormantRaiderDrone.description	An automated drone designed for close-quarters raiding and heavy suppression. Equipped with a high-capacity rattlegun, its slow, heavily armored frame allows it to stand its ground and saturate an area with continuous fire, suppressing enemy positions.\n\nThis drone seems to be in a dormant state.
+VQED_DormantHornetDrone.label	dormant hornet drone
+VQED_DormantHornetDrone.description	An automated military drone for close-range defense and combat support. The drone is capable of piercing an enemy repeatedly with a long, hardened stinger. While it doesn’t carry the same paralytic as wasp drones, it’s capable of piercing heavy armor and dealing significant damage, while its heavy-duty armor plating allows it to withstand a lot of damage.\n\nThis drone seems to be in a dormant state.
+VQED_UnfinishedDronePallet.label	unfinished drone pallet
+VQED_UnfinishedDronePallet.description	An assortment of partially constructed drone components stacked neatly on a transport pallet. These modules are not yet finished drones, but they contain valuable raw materials that can be salvaged.
+VQED_FactoryMachinery.label	factory machinery
+VQED_FactoryMachinery.description	A dense, complex block of industrial equipment, likely used in the mass production or assembly of drone components. Its original function is unclear, but it hums with mechanical energy.
+VQED_LongConveyorBelt.label	long conveyor belt
+VQED_LongConveyorBelt.description	A section of a mechanical transport system, designed to move materials and components across a factory floor without obstructing foot traffic.
+VQED_ConveyorBelt.label	conveyor belt
+VQED_ConveyorBelt.description	A short section of a mechanical transport system, designed to move materials and components across a factory floor without obstructing foot traffic.
+VQED_FactoryRoboarm.label	factory roboarm
+VQED_FactoryRoboarm.description	An industrial robotic arm, used for high-precision manipulation on a drone factory's conveyor belt.
+## DefInjected/ThingDef/Buildings_Misc.xml
+VQE_DroneTransmitter.label	drone transmitter
+VQE_DroneTransmitter.description	A small antenna mast that establishes a local drone network, enabling nearby drones to operate within its transmission radius.
+VQE_DroneStandby.label	drone (standby)
+## DefInjected/ThingDef/Buildings_Production.xml
+VQE_DroneTinkeringBench.label	drone tinkering bench
+VQE_DroneTinkeringBench.description	A workbench equipped with advanced machinery and tools for construction of various kinds of drones and drone-related equipment, as well as for disassembling spent drone husks back into primary resources.
+## DefInjected/ThingDef/Buildings_QuestStructures.xml
+VQE_SalvageableDroneWreck.label	salvageable drone wreck
+VQE_SalvageableDroneWreck.description	A massive, battered section of a military drone with extreme combat damage. Though exposed wiring is visible, the valuable drone core remains sealed inside, likely intact and salvageable. If you could extract the drone core, you could decrypt it to unlock a new drone schematic. The drone's incendiary ammunition stash is intact but unstable, and will likely detonate after you do some damage.
+VQE_DroneStorageTerminal.label	drone storage terminal
+VQE_DroneStorageTerminal.description	A drone storage computer terminal. It can be hacked to disable nearby dormant drones permanently.
+VQE_DroneStorageTerminal.comps.CompHackable.notHackedInspectString	Hack to disable nearby dormant drones permanently.
+VQE_LongRangeDroneTransmitter.label	long range drone transmitter
+VQE_LongRangeDroneTransmitter.description	A bulky, multi-band antenna array designed to broadcast a drone control signal over an exceptional range. The unit is currently operating, providing operational bandwidth to all nearby drones. It can be temporarily hacked to overload its internal safeguards, rendering it inert and allowing access to its valuable core.
+VQE_LongRangeDroneTransmitter.comps.CompHackable.hackedInspectString	Disabled
+VQE_LongRangeDroneTransmitter.comps.CompHackable.hackedMessage	{HACKER_labelShort} has finished hacking the long range drone transmitter.
+VQE_LongRangeDroneTransmitter.comps.CompHackable.notHackedInspectString	Hack to disable the drone transmitter.
+VQE_AutomatedDroneAssembler.label	automated drone assembler
+VQE_AutomatedDroneAssembler.description	A massive, heavily armored production line dedicated to the relentless, automated assembly of drones. Complex mechanical arms work in a continuous cycle, feeding components, welding seams, and running diagnostic checks. It will continue to churn out hostile drone units until destroyed.
+VQE_TinkererHoldingPlatform.label	tinkerer holding platform
+VQE_TinkererHoldingPlatform.description	A specialized docking and recharge platform used for high-value, non-combat drone like the Tinkerer. Its durable construction is designed to secure and protect the drone. The platform can be destroyed to recover its resources, or it can be hacked to override its security protocols and release the Tinkerer, which will be reprogrammed to immediately join your colony.
+VQE_TinkererHoldingPlatform.comps.CompHackable.hackedInspectString	Released
+VQE_TinkererHoldingPlatform.comps.CompHackable.hackedMessage	{HACKER_labelShort} has finished hacking and released the tinkerer.
+VQE_TinkererHoldingPlatform.comps.CompHackable.notHackedInspectString	Hack to release the tinkerer.
+## DefInjected/ThingDef/Buildings_Traps.xml
+VQED_DormantBattleDrone_Active.label	dormant battle drone
+VQED_DormantBattleDrone_Active.description	An automated battle drone. It continuously patrols an area, looking for intruders. Once an intruder is found, it will relentlessly attack with a small stubgun.\n\nThis drone seems to be in a dormant state.
+VQED_DormantRaiderDrone_Active.label	dormant raider drone
+VQED_DormantRaiderDrone_Active.description	An automated drone designed for close-quarters raiding and heavy suppression. Equipped with a high-capacity rattlegun, its slow, heavily armored frame allows it to stand its ground and saturate an area with continuous fire, suppressing enemy positions.\n\nThis drone seems to be in a dormant state.
+VQED_DormantHornetDrone_Active.label	dormant hornet drone
+VQED_DormantHornetDrone_Active.description	An automated military drone for close-range defense and combat support. The drone is capable of piercing an enemy repeatedly with a long, hardened stinger. While it doesn’t carry the same paralytic as wasp drones, it’s capable of piercing heavy armor and dealing significant damage, while its heavy-duty armor plating allows it to withstand a lot of damage.\n\nThis drone seems to be in a dormant state.
+VQE_ImmobilizedTurret.label	immobilized turret
+VQE_ImmobilizedTurret.description	A broken down mobile turret. The old targeting mechanism still works.
+VQE_ImmobilizedTurret_Bullet.label	mini-turret bullet
+VQE_ImmobilizedTurret_Gun.label	immobilized turret
+VQE_ImmobilizedTurret_Gun.description	A broken down mobile turret. The old targeting mechanism still works.
+VQE_ImmobilizedTurret_Gun.verbs.Verb_ShootCE.label	immobilized turret
+## DefInjected/ThingDef/Filth.xml
+VQE_MachiningFluid.label	machining fluid smear
+VQE_MachiningFluid.description	A smear of flammable machining fluid.
+## DefInjected/ThingDef/Items_Exotic.xml
+VQE_DroneCore.label	drone core
+VQE_DroneCore.description	A dense, self-contained fusion of computation and power storage, designed to serve as the central processing unit for a drone. It houses the drone's core logic, operational parameters, and a hidden library of factory-loaded schematics.\n\nDecrypting the core's data logs at a research bench can unlock schematics for a new type of drone, allowing its construction.
+## DefInjected/ThingDef/Items_Unfinished.xml
+VQE_UnfinishedDrone.label	unfinished drone
+VQE_UnfinishedDrone.description	An unfinished drone.
+VQE_UnfinishedDroneSpawner_BattleDrone.label	battle drone
+VQE_UnfinishedDroneSpawner_BattleDrone.description	An unfinished drone. This will deploy into a drone.
+VQE_UnfinishedDroneSpawner_CleanerDrone.label	cleaner drone
+VQE_UnfinishedDroneSpawner_CleanerDrone.description	An unfinished drone. This will deploy into a drone.
+VQE_UnfinishedDroneSpawner_HaulerDrone.label	hauler drone
+VQE_UnfinishedDroneSpawner_HaulerDrone.description	An unfinished drone. This will deploy into a drone.
+VQE_UnfinishedDroneSpawner_MinerDrone.label	miner drone
+VQE_UnfinishedDroneSpawner_MinerDrone.description	An unfinished drone. This will deploy into a drone.
+VQE_UnfinishedDroneSpawner_AutobroadcasterDrone.label	autobroadcaster drone
+VQE_UnfinishedDroneSpawner_AutobroadcasterDrone.description	An unfinished drone. This will deploy into a drone.
+VQE_UnfinishedDroneSpawner_TurretDrone.label	turret drone
+VQE_UnfinishedDroneSpawner_TurretDrone.description	An unfinished drone. This will deploy into a drone.
+VQE_UnfinishedDroneSpawner_RaiderDrone.label	raider drone
+VQE_UnfinishedDroneSpawner_RaiderDrone.description	An unfinished drone. This will deploy into a drone.
+VQE_UnfinishedDroneSpawner_Protolancer.label	protolancer drone
+VQE_UnfinishedDroneSpawner_Protolancer.description	An unfinished drone. This will deploy into a drone.
+VQE_UnfinishedDroneSpawner_FarmingDrone.label	farming drone
+VQE_UnfinishedDroneSpawner_FarmingDrone.description	An unfinished drone. This will deploy into a drone.
+VQE_UnfinishedDroneSpawner_FirefighterDrone.label	firefighter drone
+VQE_UnfinishedDroneSpawner_FirefighterDrone.description	An unfinished drone. This will deploy into a drone.
+VQE_UnfinishedDroneSpawner_HornetDrone.label	hornet drone
+VQE_UnfinishedDroneSpawner_HornetDrone.description	An unfinished drone. This will deploy into a drone.
+VQE_UnfinishedDroneSpawner_StingrayDrone.label	stingray drone
+VQE_UnfinishedDroneSpawner_StingrayDrone.description	An unfinished drone. This will deploy into a drone.
+VQE_UnfinishedDroneSpawner_PackDrone.label	pack drone
+VQE_UnfinishedDroneSpawner_PackDrone.description	An unfinished drone. This will deploy into a drone.
+## DefInjected/ThingDef/Motes.xml
+VQE_Ability_Mote.label	Mote
+## DefInjected/ThingDef/Races_AutobroadcasterDrone.xml
+VQE_AutobroadcasterDrone.label	autobroadcaster drone
+VQE_AutobroadcasterDrone.description	An automated utility drone designed to support colony productivity and morale by broadcasting specific audio signals. It can switch between different modes to boost work speed, improve colonist mood, or even lower prisoner resistance within its effective radius.\n\nDrones have a limited lifespan and will begin malfunctioning as they near end-of-life, but can use standby mode to slow component degradation. They require connection to a powered drone transmitter to function.
+VQE_AutobroadcasterDrone.tools.shell_spike.label	shell spike
+## DefInjected/ThingDef/Races_BattleDrone.xml
+VQE_BattleDrone.label	battle drone
+VQE_BattleDrone.description	An automated battle drone. It continuously patrols an area, looking for intruders. Once an intruder is found, it will relentlessly attack with a small stubgun.\n\nDrones have a limited lifespan and will begin malfunctioning as they near end-of-life, but can use standby mode to slow component degradation. They require connection to a powered drone transmitter to function.
+VQE_BattleDrone.tools.shell_spike.label	shell spike
+## DefInjected/ThingDef/Races_CleanerDrone.xml
+VQE_CleanerDrone.label	cleaner drone
+VQE_CleanerDrone.description	An automated utility drone. It continuously patrols an area, looking for dirty surfaces. Once filth is found, it will relentlessly clean the area with its internal scrubbing apparatus.\n\nDrones have a limited lifespan and will begin malfunctioning as they near end-of-life, but can use standby mode to slow component degradation. They require connection to a powered drone transmitter to function.
+VQE_CleanerDrone.tools.shell_spike.label	shell spike
+## DefInjected/ThingDef/Races_CraftingDrone.xml
+VQE_CraftingDrone.label	crafting drone
+VQE_CraftingDrone.description	An automated drone specialized in crafting. It periodically undergoes a special indexing operation, after which it produces a drone core that can be decoded to permanently unlock new drone schematics.\n\nDrones have a limited lifespan and will begin malfunctioning as they near end-of-life, but can use standby mode to slow component degradation. Unlike other drones, crafting drones don’t require connection to drone transmitters.
+VQE_CraftingDrone.tools.shell_spike.label	shell spike
+## DefInjected/ThingDef/Races_FarmingDrone.xml
+VQE_FarmingDrone.label	farming drone
+VQE_FarmingDrone.description	An automated utility drone designed for agriculture. It patrols growing zones, capable of both harvesting mature crops and sowing new ones, provided the plants do not require a specific growing skill to plant.\n\nDrones have a limited lifespan and will begin malfunctioning as they near end-of-life, but can use standby mode to slow component degradation. They require connection to a powered drone transmitter to function.
+VQE_FarmingDrone.tools.shell_spike.label	shell spike
+## DefInjected/ThingDef/Races_FirefighterDrone.xml
+VQE_FirefighterDrone.label	firefighter drone
+VQE_FirefighterDrone.description	An automated utility drone equipped with fire suppression systems. It continuously patrols the area, automatically extinguishing small fires it encounters. If a fire escalates beyond its capability, the drone initiates a self-destruct sequence, detonating in a powerful burst of firefoam.\n\nDrones have a limited lifespan and will begin malfunctioning as they near end-of-life, but can use standby mode to slow component degradation. They require connection to a powered drone transmitter to function.
+VQE_FirefighterDrone.tools.shell_spike.label	shell spike
+## DefInjected/ThingDef/Races_HaulerDrone.xml
+VQE_HaulerDrone.label	hauler drone
+VQE_HaulerDrone.description	An automated utility drone. It continuously patrols an area, looking for items that need to be hauled to stockpiles. Once an item is found, it will diligently transport it to the designated storage location.\n\nDrones have a limited lifespan and will begin malfunctioning as they near end-of-life, but can use standby mode to slow component degradation. They require connection to a powered drone transmitter to function.
+VQE_HaulerDrone.tools.shell_spike.label	shell spike
+## DefInjected/ThingDef/Races_HornetDrone.xml
+VQE_HornetDrone.label	hornet drone
+VQE_HornetDrone.description	An automated military drone for close-range defense and combat support. The drone is capable of piercing an enemy repeatedly with a long, hardened stinger. While it doesn’t carry the same paralytic as wasp drones, it’s capable of piercing heavy armor and dealing significant damage, while its heavy-duty armor plating allows it to withstand a lot of damage.\n\nDrones have a limited lifespan and will begin malfunctioning as they near end-of-life, but can use standby mode to slow component degradation. They require connection to a powered drone transmitter to function.
+VQE_HornetDrone.tools.stinger.label	stinger
+## DefInjected/ThingDef/Races_MinerDrone.xml
+VQE_MinerDrone.label	miner drone
+VQE_MinerDrone.description	An automated utility drone. It continuously patrols an area, looking for designated rock to mine. Once rock is found, it will relentlessly drill into it with its large drill.\n\nDrones have a limited lifespan and will begin malfunctioning as they near end-of-life, but can use standby mode to slow component degradation. They require connection to a powered drone transmitter to function.
+VQE_MinerDrone.tools.shell_spike.label	shell spike
+## DefInjected/ThingDef/Races_PackDrone.xml
+VQE_PackDrone.label	pack drone
+VQE_PackDrone.description	An automated utility drone designed primarily for heavy hauling and caravan support. Its large frame and high carrying capacity allow it to transport bulk resources in a caravan.\n\nDrones have a limited lifespan and will begin malfunctioning as they near end-of-life, but can use standby mode to slow component degradation. Unlike other drones, pack drones don’t require connection to drone transmitters.
+VQE_PackDrone.tools.shell_spike.label	shell spike
+## DefInjected/ThingDef/Races_Protolancer.xml
+VQE_Protolancer.label	protolancer
+VQE_Protolancer.description	An automated sniper drone purpose-built for medium and long-range engagement. It utilizes a powerful, single-shot lance sniper weapon to dispose of enemies from afar. Its lightweight construction allows for quick repositioning but makes it highly vulnerable to close-range attacks and melee combat.\n\nDrones have a limited lifespan and will begin malfunctioning as they near end-of-life, but can use standby mode to slow component degradation. Unlike other drones, protolancers don’t require connection to drone transmitters.
+VQE_Protolancer.tools.shell_spike.label	shell spike
+## DefInjected/ThingDef/Races_RaiderDrone.xml
+VQE_RaiderDrone.label	raider drone
+VQE_RaiderDrone.description	An automated drone designed for close-quarters raiding and heavy suppression. Equipped with a high-capacity rattlegun, its slow, heavily armored frame allows it to stand its ground and saturate an area with continuous fire, suppressing enemy positions.\n\nDrones have a limited lifespan and will begin malfunctioning as they near end-of-life, but can use standby mode to slow component degradation. Unlike other drones, raider drones don’t require connection to drone transmitters.
+VQE_RaiderDrone.tools.shell_spike.label	shell spike
+## DefInjected/ThingDef/Races_ShufflerDrone.xml
+VQE_ShufflerDrone.label	shuffler drone
+VQE_ShufflerDrone.description	A broken, decommissioned sentry drone. Its fried sensors and failing components cause it to shuffle aimlessly. Despite its derelict state, it will attack any tagrets it sees. Upon taking severe damage, its chassis splits into two smaller, relentless attacking drone units.
+VQE_ShufflerDrone.tools.shell_spike.label	shell spike
+VQE_DriverDrone.label	driver drone
+VQE_DriverDrone.description	The lower chassis of a destroyed drone, reduced to its bare, treaded frame. Despite being severely damaged and dragging its core components, it remains aggressive and attempts to ram targets.
+VQE_DriverDrone.tools.shell_spike.label	shell spike
+VQE_CrawlerDrone.label	crawler drone
+VQE_CrawlerDrone.description	The upper chassis of a destroyed drone, reduced to its bare, treaded frame. Despite being severely damaged and dragging its core components, it remains aggressive and attempts to ram targets.
+VQE_CrawlerDrone.tools.shell_spike.label	shell spike
+## DefInjected/ThingDef/Races_StingrayDrone.xml
+VQE_StingrayDrone.label	stingray drone
+VQE_StingrayDrone.description	An automated heavy assault drone built on a large, armored aerial platform. It is equipped with a powerful, short-range incendiary cannon that fires a blast of superheated gel, causing area-of-effect flame damage. \n\nDrones have a limited lifespan and will begin malfunctioning as they near end-of-life, but can use standby mode to slow component degradation. Unlike other drones, stingray drones don’t require connection to drone transmitters.
+VQE_StingrayDrone.tools.stinger.label	stinger
+## DefInjected/ThingDef/Races_TurretDrone.xml
+VQE_TurretDrone.label	turret drone
+VQE_TurretDrone.description	An automated military drone designed for static defense. It is equipped with a twin-barrel turret mounted on a heavily armored, treaded platform. Though slow, it can reposition itself when needed.\n\nDrones have a limited lifespan and will begin malfunctioning as they near end-of-life, but can use standby mode to slow component degradation. They require connection to a powered drone transmitter to function.
+VQE_TurretDrone.tools.shell_spike.label	shell spike
+## DefInjected/ThingDef/Weapons_Ranged_Drone.xml
+VQE_Gun_Stubgun.label	stubgun
+VQE_Gun_Stubgun.description	A compact medium range automatic gun designed to be mounted on a battle drone.
+VQE_Gun_Stubgun.tools.barrel.label	barrel
+VQE_Gun_Stubgun.tools.muzzle.label	muzzle
+VQE_Gun_Stubgun.verbs.Verb_ShootCE.label	stubgun
+VQE_Bullet_Stubgun.label	stubgun bullet
+VQE_Gun_DroneTurret.label	drone turret
+VQE_Gun_DroneTurret.description	A refined turret with military-grade stabilization, targeting routines, and hardened casing designed to be mounted on a battle drone.
+VQE_Gun_DroneTurret.tools.barrel.label	barrel
+VQE_Gun_DroneTurret.tools.muzzle.label	muzzle
+VQE_Gun_DroneTurret.verbs.Verb_ShootCE.label	drone turret
+VQE_Bullet_DroneTurret.label	drone turret bullet
+VQE_Gun_Rattlegun.label	rattlegun
+VQE_Gun_Rattlegun.description	A drone-mounted light machine gun, designed for heavy suppression but with low accuracy.
+VQE_Gun_Rattlegun.tools.barrel.label	barrel
+VQE_Gun_Rattlegun.tools.muzzle.label	muzzle
+VQE_Gun_Rattlegun.verbs.Verb_ShootCE.label	rattlegun
+VQE_Bullet_Rattlegun.label	rattlegun bullet
+VQE_Gun_Lance.label	lance
+VQE_Gun_Lance.description	A single-shot sniper weapon based on an ancient precision rifle design, featuring exceptional range and accuracy at the cost of poor close-range performance.
+VQE_Gun_Lance.tools.barrel.label	barrel
+VQE_Gun_Lance.tools.muzzle.label	muzzle
+VQE_Gun_Lance.verbs.Verb_ShootCE.label	lance
+VQE_Bullet_Lance.label	lance bullet
+VQE_Gun_StingrayCannon.label	stingray cannon
+VQE_Gun_StingrayCannon.description	A single-shot sniper weapon based on an ancient precision rifle design, featuring exceptional range and accuracy at the cost of poor close-range performance.
+VQE_Gun_StingrayCannon.tools.barrel.label	barrel
+VQE_Gun_StingrayCannon.tools.muzzle.label	muzzle
+VQE_Gun_StingrayCannon.verbs.Verb_ShootCE.label	stingray cannon
+VQE_Bullet_StingrayCannon.label	stingray cannon projectile
+## DefInjected/ThoughtDef/ThoughtDefs.xml
+VQE_Broadcaster_Relax_Buff.stages.relaxing_music.label	relaxing music
+VQE_Broadcaster_Relax_Buff.stages.relaxing_music.description	Autobroadcaster plays my favourite jam!
+## DefInjected/VEF.Storyteller.QuestChainDef/QuestChainDef.xml
+VQE_TheDroneFactory.label	The Drone Factory
+VQE_TheDroneFactory.description	This quest chain offers an opportunity to track down a pirate-controlled drone factory, leading to the liberation of a unique drone. This drone, in gratitude, will begin to invent new drone schematics, expanding your colony's capacity for automated construction and utility.
+## DefInjected/WorkGiverDef/JobDefs.xml
+VQE_RepairDrone.label	repair drones
+VQE_RepairDrone.gerund	repairing
+VQE_RepairDrone.verb	repair
+VQE_ShutdownDrone.label	shutdown drones
+VQE_ShutdownDrone.gerund	shutting down
+VQE_ShutdownDrone.verb	shutdown
+VQE_ReactivateDrone.label	reactivate drones
+VQE_ReactivateDrone.gerund	reactivating
+VQE_ReactivateDrone.verb	reactivate
+## DefInjected/WorkGiverDef/WorkGivers.xml
+VQE_DoBillsDroneBench.label	fabricate drones
+VQE_DoBillsDroneBench.gerund	fabricating drones at
+VQE_DoBillsDroneBench.verb	fabricate drones at
+VQE_DroneGrowerHarvest.label	harvest crops
+VQE_DroneGrowerHarvest.gerund	harvesting
+VQE_DroneGrowerHarvest.verb	harvest
+VQE_DroneGrowerSow.label	sow crops
+VQE_DroneGrowerSow.gerund	sowing
+VQE_DroneGrowerSow.verb	sow
+## Keyed/Keys.xml
+VQE_BroadcasterMode	{0} mode
+VQE_BroadcasterModeDesc_Work	Autobroadcaster plays energetic music that makes everyone work a little bit harder.
+VQE_BroadcasterModeDesc_Relax	Autobroadcaster plays soothing music that makes everyone a little bit more relaxed.
+VQE_BroadcasterModeDesc_Recruitment	Autobroadcaster plays propaganda messages aimed at prisoners with the purpose of lowering their resistance.
+VQE_BroadcasterModeDesc_Conversion	Autobroadcaster plays ideological rhetoric aimed at prisoners with the purpose of lowering their certainty.
+VQE_Shutdown	Shut down
+VQE_ShutdownDesc	Shut down the drone permanently.
+VQE_Reactivate	Reactivate
+VQE_ReactivateDesc	Reactivate the drone. A colonist will need to approach the drone and flick it back on.
+VQE_Standby	Standby
+VQE_EnterStandby	Stand-by
+VQE_EnterStandbyDesc	Initiate the stand-by mode. The drone will turn off, reducing the lifespan loss by 90%. It will not respond to any tasks or damage, and will need to be reactivated before it can engage again.
+VQE_CannotUseConnectionTimedOut	Cannot use while connection timed out
+VQE_CannotUseOverclocked	Cannot use while overclocked
+VQE_CannotUseDesynchronised	Cannot use while desynchronised
+VQE_CannotUseRebooting	Cannot use while rebooting
+VQE_CannotUseHardwareFailure	Cannot use during hardware failure
+VQE_CannotUseIndexing	Cannot use while indexing
+VQE_CannotUseInStandby	Cannot use while in standby
+VQE_OutsideTransmitterRange	Outside transmitter range
+VQE_DroneMalfunction	{DRONE} is undergoing {1} malfunction
+VQE_HardcrashLetter	Hardcrash: {DRONE}
+VQE_HardcrashLetterDesc	{DRONE} is undergoing the hardcrash malfunction.\n\nIt will try to clear sensor obstruction by repeatedly crashing into buildings and furniture, potentially destroying them in the process.\n\nThis has occurred because {DRONE} is reaching the end of its lifespan.
+VQE_KillswitchLetter	Killswitch: {DRONE}
+VQE_KillswitchLetterDesc	{DRONE} is undergoing the killswitch malfunction.\n\nIt will attack anyone that gets close to it.\n\nThis has occurred because {DRONE} is reaching the end of its lifespan.
+VQE_SelfDecommissionLetter	Self-decommission: {DRONE}
+VQE_SelfDecommissionLetterDesc	{DRONE} is undergoing the self-decommission malfunction.\n\nIt has determined that its service life has ended and will ignore all commands as it leaves the local area to shut down somewhere in the wild.\n\nThis has occurred because {DRONE} is reaching the end of its lifespan.
+VQE_DroneMalfunction_Death	, after which it will cease to work.
+VQE_IndexingLetter	Indexing: {DRONE}
+VQE_IndexingLetterDesc	{DRONE} is undergoing the indexing malfunction.\n\nIt will study another drone, or another colonist if drones are not present, and will code a special schematic onto a drone core. After the malfunction passes, a drone core will be produced. It can be decoded to permanently unlock a new drone type.\n\nThis has occurred because {DRONE} is programmed to undergo indexing malfunctions from time to time.
+VQE_ExtremeMalfunctionRisk	Extreme malfunction risk
+VQE_ExtremeMalfunctionRiskDesc	Some drones in your colony are close to the end of their lifespan. Consider shutting them down permanently, as they are at risk of extreme malfunctions.\n\nDrones at risk of extreme malfunction:\n\n{0}
+VQE_Malfunction	Malfunction
+VQE_DecryptCore	Decrypt {0} to unlock a new drone recipe
+VQE_CoreDecryptedLetter	Drone unlocked: {0}
+VQE_CoreDecryptedDesc	Decoding the drone core unlocked a new drone schematic. From now on, you can craft the following drone type: {0}.\n\n{1}.
+VQE_NoUnlockableRecipes	There are no more drone recipes left to decrypt!
+VQE_DroneSpawningIn	{0} construction completes in {1}.
+VQE_CarryDroneToTransmitter	Carry {0} to nearest transmitter
+VQE_TransmitterRadius	Transmitter radius
+VQE_TransmitterRadiusDesc	The radius around a transmitter in which drones that need it will be able to operate. 15 tiles by default (actually 14.9 due to the way the game works).
+VQED_Reset	Reset
+VQE_LifespanMultiplier	Drone lifespan multiplier
+VQE_LifespanMultiplierModOptions	Drone lifespan multiplier in mod settings: {0}
+VQE_LifespanMultiplierDesc	A multiplier on the lifespan of drones. For example, a value of x2 will double the lifespan of all drones. Bear in mind this will not change the current lifespan of already built drones.
+VQE_ConsumeLifespanOnRepair	Consume lifespan when repairing drones
+VQE_ConsumeLifespanOnRepairDesc	When enabled, repairing drones will consume their lifespan. Disable to prevent lifespan drain during repairs.
+VQE_DroneStockpileRaid	Raid: Ancient drones
+VQE_DroneStockpileRaidDesc	Combat drones from the nearby drone stockpile have arrived nearby.\n\nThey are attacking immediately.\n\nDestroy the drone stockpile to stop the drones from attacking you.
+VQE_JumpToDroneTransmitter	Click to jump to the drone transmitter
+VQE_DroneWorkspeedStatOffset	Drone work speed offset

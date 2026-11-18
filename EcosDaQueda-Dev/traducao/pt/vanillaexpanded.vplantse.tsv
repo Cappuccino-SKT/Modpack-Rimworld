@@ -1,0 +1,102 @@
+## DefInjected/TerrainDef/Terrain_Floors.xml
+VCE_TilledSoil.label	terra arada
+VCE_TilledSoil.description	Arar é preparar o solo revolvendo-o mecanicamente, o que aumenta a fertilidade. Só dá para arar solo comum (não solo rico). Quando uma planta é colhida em terra arada, o chão volta a ser solo comum e precisa ser arado de novo à mão.
+VCE_TilledSoil.modExtensions.0.constructionSkillRequirement.reportStringOverride	arando a terra.
+VCE_TilledSoil.tools.dirt.label	terra
+## DefInjected/ThingCategoryDef/ThingCategories.xml
+VCE_Fruit.label	frutas cruas
+## DefInjected/ThingDef/Items_Resource_RawFruit.xml
+VCE_RawApple.label	maçãs
+VCE_RawApple.description	Maçãs vermelhas e brilhantes. Desde os primórdios da humanidade servem de lanche, ingrediente de sobremesa e matéria-prima de sidra.
+VCE_RawPeach.label	pêssegos
+VCE_RawPeach.description	Uma fruta suculenta e comestível chamada pêssego ou nectarina. Um pêssego maduro tem aroma perfumado e é delicioso comido na hora, direto da mão.
+VCE_RawCherry.label	cerejas
+VCE_RawCherry.description	Cerejas doces, pequeninas, de um vermelho arroxeado. Precisam de uma curta estação de geada, por isso logo viraram as favoritas das culturas ocidentais do norte.
+VCE_RawPlum.label	ameixas
+VCE_RawPlum.description	Uma fruta roxa de casca lisa. Muitas culturas secam ameixas para conservá-las por muito tempo. Em vez de apodrecer, passados os 15 dias as ameixas secam e viram ameixas-pretas, que contam como comida conservada.
+VCE_RawPrunes.label	ameixas-pretas
+VCE_RawPrunes.description	Ameixas secas. Demoram muitíssimo para estragar.
+VCE_RawPear.label	peras
+VCE_RawPear.description	Peras verdes e crocantes. Parecidas com maçãs à primeira vista, são um pouco mais fibrosas e menos doces.
+VCE_RawPricklyPear.label	figos-da-índia
+VCE_RawPricklyPear.description	Frutas comestíveis cor-de-rosa, parecidas com melão, usadas historicamente pelos povos do deserto tanto como lanche quanto como remédio.
+VCE_Bearberry.label	uvas-de-urso
+VCE_Bearberry.description	Pequenas frutinhas cor-de-rosa chamadas uvas-de-urso. Cruas, são ácidas e sem graça, mas cozidas revelam uma doçura natural e ficam bem mais gostosas.
+VCE_RawBanana.label	bananas
+VCE_RawBanana.description	Frutas amarelas e compridas, fáceis de descascar, com polpa muito doce e quase mole. São as favoritas de humanos e outros primatas nos trópicos há milênios.
+VCE_RawOrange.label	laranjas
+VCE_RawOrange.description	Redondas e cheias de poros, as laranjas são famosas por serem chatas de descascar e cheias de bagaço, mas estão entre as frutas mais suculentas, com sabor vivo e final azedinho.
+## DefInjected/ThingDef/Items_Resource_RawPlant.xml
+VCE_RawOnion.label	cebolas
+VCE_RawOnion.description	Um bulbo comestível de gosto e cheiro fortes e saborosos, com quase tantas variedades quanto usos na cozinha.
+VCE_RawPumpkin.label	abóboras
+VCE_RawPumpkin.description	Tecnicamente uma baga gigante, a abóbora é famosa por ser facílima de plantar e colher.
+VCE_RawPepper.label	pimentas
+VCE_RawPepper.description	Vagens pequenas, ardidas e vermelhas, muito usadas em molhos, conservas e pós. O sabor em si é suave, mas a capsaicina faz os humanos as acharem estranhamente viciantes, ainda que dolorosas em grande quantidade. Os animais evitam a planta por completo.
+VCE_RawPeas.label	ervilhas
+VCE_RawPeas.description	Sementes verdes e redondas, bem guardadas numa vagem carnuda. Secas do jeito certo, as ervilhas podem durar muito tempo.
+VCE_RawEggplant.label	berinjelas
+VCE_RawEggplant.description	Uma fruta roxa e bojuda da família das solanáceas. Raramente é acompanhamento: em geral é o prato principal.
+VCE_RawCabbage.label	repolhos
+VCE_RawCabbage.description	Uma hortaliça folhosa e verde, bem resistente, muitas vezes picada e depois fermentada ou cozida.
+VCE_RawBeets.label	beterrabas
+VCE_RawBeets.description	Uma hortaliça muito cultivada para humanos e para o gado, notavelmente nutritiva e usada historicamente para fazer tinturas.
+VCE_RawTomatoes.label	tomates
+VCE_RawTomatoes.description	Frutas vermelhas, brilhantes e suculentas presas ao pé, usadas como legume. Cozidos por muito tempo, soltam açúcares naturais e perdem a acidez.
+## DefInjected/ThingDef/Plants_Cultivated_Farm.xml
+VCE_Grass.label	Grama
+VCE_Grass.description	Grama cultivada. Cresce em qualquer lugar com um pouco de luz e um mínimo de fertilidade.\n\n<color=#E5E54C>Efeito no jogo:</color> a grama alimenta o gado, como o capim-feno. Não sofre com a praga, mas não pode ser colhida e armazenada como o feno.
+VCE_TallGrass.label	capim alto
+VCE_TallGrass.description	Capim alto cultivado. Cresce em qualquer lugar com um pouco de luz e um mínimo de fertilidade. Atrasa quem passa por ele.\n\n<color=#E5E54C>Efeito no jogo:</color> o capim alimenta o gado, como o capim-feno. Não sofre com a praga, mas não pode ser colhido e armazenado como o feno.
+VCE_Agave.label	agave
+VCE_Agave.description	Uma planta do deserto de folhas grandes, com flores e talos comestíveis.
+VCE_Onion.label	pé de cebola
+VCE_Onion.description	Um bulbo comestível de gosto e cheiro fortes e saborosos, com quase tantas variedades quanto usos na cozinha.\n\n<color=#E5E54C>Efeito no jogo:</color> a cebola não sofre com a praga.
+VCE_Pumpkin.label	pé de abóbora
+VCE_Pumpkin.description	Tecnicamente uma baga gigante, a abóbora é famosa por ser facílima de plantar e colher. Mas tanta robustez traz peso e volume: pesada demais para bacias de hidroponia.\n\n<color=#E5E54C>Efeito no jogo:</color> a colheita de abóbora sempre dá certo, qualquer que seja a habilidade de cultivo do colono.
+VCE_Pepper.label	pé de pimenta
+VCE_Pepper.description	Vagens pequenas, ardidas e vermelhas, muito usadas em molhos, conservas e pós. O sabor em si é suave, mas a capsaicina faz os humanos as acharem estranhamente viciantes, ainda que dolorosas em grande quantidade. Os animais evitam comê-las por completo.\n\n<color=#E5E54C>Efeito no jogo:</color> os animais não comem o pé de pimenta, que tem nutrição efetiva zero. Mas comem normalmente as pimentas colhidas.
+VCE_Peas.label	pé de ervilha
+VCE_Peas.description	Sementes verdes e redondas, bem guardadas numa vagem carnuda. O pé de ervilha bebe muita água e se dá muito bem com chuva. Secas do jeito certo, as ervilhas podem durar muito tempo.\n\n<color=#E5E54C>Efeito no jogo:</color> em geral menos eficiente que milho, arroz ou batata, a ervilha ganha um enorme bônus de 50% no crescimento quando chove.
+VCE_Eggplant.label	berinjela
+VCE_Eggplant.description	Uma fruta roxa e bojuda da família das solanáceas. Raramente é acompanhamento: em geral é o prato principal. Prospera no calor.\n\n<color=#E5E54C>Efeito no jogo:</color> a berinjela cresce 30% mais rápido entre 37 e 60 ºC.
+VCE_Cabbage.label	pé de repolho
+VCE_Cabbage.description	Uma hortaliça folhosa e verde, bem resistente, muitas vezes picada e depois fermentada ou cozida. Esta variedade parece muito resistente a toxinas no ar e à radiação. \n\n<color=#E5E54C>Efeito no jogo:</color> o repolho não é afetado pela precipitação tóxica e, ao contrário de outras plantas, não morre com ela.
+VCE_Beet.label	pé de beterraba
+VCE_Beet.description	Uma hortaliça muito cultivada para humanos e para o gado, notavelmente nutritiva e usada historicamente para fazer tinturas.\n\n<color=#E5E54C>Efeito no jogo:</color> a beterraba exige solo rico, mas é bem resistente e continua crescendo a 10% da velocidade no inverno. Ainda precisa ser plantada na estação de cultivo.
+VCE_Tomato.label	tomateiro
+VCE_Tomato.description	Frutas vermelhas, brilhantes e suculentas presas ao pé, usadas como legume. Cozidos por muito tempo, soltam açúcares naturais e perdem a acidez. Os tomates saem fácil do pé sem arrancar a planta.\n\n<color=#E5E54C>Efeito no jogo:</color> o tomateiro não é destruído na colheita, como as árvores frutíferas.
+## DefInjected/ThingDef/Plants_Cultivated_Trees.xml
+VCE_AppleTree.label	macieira
+VCE_AppleTree.description	Uma árvore de maçãs vermelhas e brilhantes. Há inúmeras variedades; esta prefere verões quentes e invernos amenos. Desde os primórdios da humanidade, as maçãs servem de lanche, ingrediente de sobremesa e matéria-prima de sidra.\n\n<color=#E5E54C>Efeito no jogo:</color> todas as árvores frutíferas ocupam umas quatro vezes o espaço de uma plantação comum, demoram para crescer e dão frutas que podem ser comidas cruas. Não são destruídas na colheita, mas têm vida limitada e um dia precisam ser replantadas.
+VCE_PeachTree.label	pessegueiro
+VCE_PeachTree.description	Uma árvore caducifólia de frutas de caroço aveludadas, os pêssegos. Costuma pedir sol pleno e calor. Antigas culturas orientais a cultivavam em pomares inteiros, notando que resistia à seca. \n\n<color=#E5E54C>Efeito no jogo:</color> todas as árvores frutíferas ocupam umas quatro vezes o espaço de uma plantação comum, demoram para crescer e dão frutas que podem ser comidas cruas. Não são destruídas na colheita, mas têm vida limitada e um dia precisam ser replantadas.
+VCE_CherryTree.label	cerejeira
+VCE_CherryTree.description	Uma árvore de cerejas doces, pequeninas, de um vermelho arroxeado. Precisa de uma curta estação de geada, por isso as frutas logo viraram as favoritas das civilizações ocidentais do norte. Esta espécie é linda, salpicada de flores cor-de-rosa que desabrocham por completo a cada inverno.\n\n<color=#E5E54C>Efeito no jogo:</color> todas as árvores frutíferas ocupam umas quatro vezes o espaço de uma plantação comum, demoram para crescer e dão frutas que podem ser comidas cruas. Não são destruídas na colheita, mas têm vida limitada e um dia precisam ser replantadas.\n\nAs cerejeiras têm o dobro da beleza das outras árvores frutíferas.
+VCE_PlumTree.label	ameixeira
+VCE_PlumTree.description	Uma árvore copada de frutas roxas de casca lisa. As ameixas são bem azedinhas e viram geleias, doces e sidras. Muitas culturas também as secam para conservá-las por muito tempo.\n\n<color=#E5E54C>Efeito no jogo:</color> todas as árvores frutíferas ocupam umas quatro vezes o espaço de uma plantação comum, demoram para crescer e dão frutas que podem ser comidas cruas. Não são destruídas na colheita, mas têm vida limitada e um dia precisam ser replantadas.\n\nAs ameixas podem ser comidas cruas ou secas como ameixas-pretas.
+VCE_PearTree.label	pereira
+VCE_PearTree.description	Uma árvore robusta de peras verdes e crocantes. Precisa de muita água e clima fresco, e se dá bem na sombra. Parecidas com maçãs à primeira vista, as peras são um pouco mais fibrosas e menos doces.\n\n<color=#E5E54C>Efeito no jogo:</color> todas as árvores frutíferas ocupam umas quatro vezes o espaço de uma plantação comum, demoram para crescer e dão frutas que podem ser comidas cruas. Não são destruídas na colheita, mas têm vida limitada e um dia precisam ser replantadas.\n\nAs pereiras podem ser cultivadas em ambientes fechados e não bloqueiam turbinas eólicas.
+VCE_Opuntia.label	palma
+VCE_Opuntia.description	Mais conhecido como cacto do figo-da-índia, é generoso até em desertos quentes e secos. As raquetes desse cacto alto e espinhento dão frutas comestíveis cor-de-rosa, parecidas com melão, usadas historicamente pelos povos do deserto como lanche e remédio.\n\n<color=#E5E54C>Efeito no jogo:</color> todas as árvores frutíferas ocupam umas quatro vezes o espaço de uma plantação comum, demoram para crescer e dão frutas que podem ser comidas cruas. Não são destruídas na colheita, mas têm vida limitada e um dia precisam ser replantadas.\n\nA palma pode ser plantada bem junta, pois não impede plantar ao lado dela.
+VCE_BearBerryBush.label	arbusto de uva-de-urso
+VCE_BearBerryBush.description	Um arbusto rasteiro salpicado de frutinhas cor-de-rosa, que prospera em solo pobre e até arenoso. Cruas, as uvas-de-urso são ácidas e sem graça, mas cozidas revelam uma doçura natural e ficam bem mais gostosas.\n\n<color=#E5E54C>Efeito no jogo:</color> todas as árvores frutíferas ocupam umas quatro vezes o espaço de uma plantação comum, demoram para crescer e dão frutas que podem ser comidas cruas. Não são destruídas na colheita, mas têm vida limitada e um dia precisam ser replantadas.\n\nO arbusto de uva-de-urso pode ser cultivado em vasos e não bloqueia turbinas eólicas.
+VCE_BananaTree.label	bananeira
+VCE_BananaTree.description	Uma planta tropical alta, de folhas largas, enfeitada com um cacho de frutas amarelas e compridas: as bananas. Fáceis de descascar, têm polpa muito doce e quase mole, e são as favoritas de humanos e outros primatas nos trópicos há milênios.\n\n<color=#E5E54C>Efeito no jogo:</color> todas as árvores frutíferas ocupam umas quatro vezes o espaço de uma plantação comum, demoram para crescer e dão frutas que podem ser comidas cruas. Não são destruídas na colheita, mas têm vida limitada e um dia precisam ser replantadas.\n\nA banana é fácil de colher, porque dá para cortar uma penca inteira de uma vez, então a colheita leva bem menos tempo que a das outras árvores.
+VCE_OrangeTree.label	laranjeira
+VCE_OrangeTree.description	Uma árvore copada e semitropical salpicada de frutas laranja, bem adaptada a ambientes úmidos e solo encharcado. Redondas e cheias de poros, as laranjas são famosas por serem chatas de descascar e cheias de bagaço, mas estão entre as frutas mais suculentas, com sabor vivo e final azedinho.\n\n<color=#E5E54C>Efeito no jogo:</color> todas as árvores frutíferas ocupam umas quatro vezes o espaço de uma plantação comum, demoram para crescer e dão frutas que podem ser comidas cruas. Não são destruídas na colheita, mas têm vida limitada e um dia precisam ser replantadas.\n\nAs laranjeiras ganham 1% de crescimento para cada quadrado de rio num raio de 3 quadrados.
+## DefInjected/WorkGiverDef/WorkGivers_Tilling.xml
+VPE_TillSoilWorkDeliverBp.label	arar a terra
+VPE_TillSoilWorkDeliverBp.gerund	arando
+VPE_TillSoilWorkDeliverBp.verb	arar
+VPE_TillSoilWorkBuild.label	arar a terra
+VPE_TillSoilWorkBuild.gerund	arando
+VPE_TillSoilWorkBuild.verb	arar
+VPE_TillSoilWorkDeliverFr.label	arar a terra
+VPE_TillSoilWorkDeliverFr.gerund	arando
+VPE_TillSoilWorkDeliverFr.verb	arar
+## Keyed/Misc_Gameplay.xml
+VCE_PlumsDrying	Ameixas secando
+VCE_PlumsCurrentlyFrozen	Estas ameixas estão congeladas e não vão secar
+VCE_PlumsCurrentlyRefrigerated	Estas ameixas estão refrigeradas e vão secar mais devagar (secam em {0})
+VCE_PlumsDryingCorrectly	Estas ameixas estão secando direito (secam em {0})

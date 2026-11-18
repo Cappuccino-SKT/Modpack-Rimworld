@@ -1,0 +1,221 @@
+## DefInjected/TrainableDef/Trainables.xml
+VEF_ControlledCorpseDecay.label	decomposição controlada
+VEF_ControlledCorpseDecay.description	Ensina o animal a controlar a habilidade de decompor cadáveres.
+VEF_DiggingDiscipline.label	disciplina de escavação
+VEF_DiggingDiscipline.description	Ensina o animal a controlar a habilidade de cavar o terreno.
+VEF_FumeRegulation.label	controle de gases
+VEF_FumeRegulation.description	Ensina o animal a controlar a habilidade de produzir gás.
+## DefInjected/VEF.OptionalFeatures.OptionalFeaturesDef/OptionalFeaturesDefs.xml
+VFE_IdeoFloatMenuPlus.description	Este recurso opcional amplia os menus da tela de criação de ideologia, com busca e barras de rolagem. Usado pelo VE Memes e pelo Alpha Memes.
+VFE_WeaponTraitDefMechanics.description	Este recurso opcional adiciona uma extensão de Def aos WeaponTraitDefs para permitir novos comportamentos únicos de armas.
+VFE_TileMutatorMechanics.description	Este recurso opcional adiciona uma extensão de Def, TileMutatorExtension, para novas mecânicas de mutadores de região do Odyssey.
+VFE_AnimalGenesMechanics.description	Este recurso opcional adiciona todos os patches necessários para o sistema de genes animais funcionar.
+## DefInjected/WorkGiverDef/WorkGivers_AnimalBehaviours.xml
+VEF_AnimalResource.label	coletar recurso animal
+VEF_AnimalResource.gerund	coletando recurso animal de
+VEF_AnimalResource.verb	coletar recurso animal de
+VEF_DestroyItems.label	destruir itens
+VEF_DestroyItems.gerund	destruindo itens
+VEF_DestroyItems.verb	destruir itens
+## DefInjected/WorkGiverDef/WorkGivers_ConstructionSkill.xml
+VEF_Art_ConstructFinishFrames.label	construir estruturas posicionadas
+VEF_Art_ConstructFinishFrames.gerund	trabalhando em
+VEF_Art_ConstructFinishFrames.verb	trabalhar em
+VEF_Art_ConstructDeliverResourcesToFrames.label	levar recursos às estruturas
+VEF_Art_ConstructDeliverResourcesToFrames.gerund	trabalhando em
+VEF_Art_ConstructDeliverResourcesToFrames.verb	trabalhar em
+VEF_Art_ConstructDeliverResourcesToBlueprints.label	levar recursos às plantas
+VEF_Art_ConstructDeliverResourcesToBlueprints.gerund	trabalhando em
+VEF_Art_ConstructDeliverResourcesToBlueprints.verb	trabalhar em
+## DefInjected/WorkGiverDef/WorkGivers_CustomFire.xml
+VEF_FightCustomFire.label	combater incêndios
+VEF_FightCustomFire.gerund	apagando
+VEF_FightCustomFire.verb	apagar
+## DefInjected/WorkGiverDef/WorkGivers_Misc.xml
+VFE_Loot.label	saquear objetos
+VFE_Loot.gerund	saqueando
+VFE_Loot.verb	saquear
+VFE_StudyBuilding.label	estudar um prédio
+VEF_RefuelSecondary.label	recarregar munição
+VEF_ExtractFlower.label	extrair flor
+VEF_RemoveWeeds.label	tirar ervas daninhas
+VEF_RemoveWeeds.gerund	tirando ervas daninhas
+VEF_RemoveWeeds.verb	tirar ervas daninhas
+## DefInjected/WorkGiverDef/WorkGivers_PipeSystem.xml
+PS_DrainOutOfStorage.label	esvaziar armazenamento
+PS_DrainOutOfStorage.gerund	esvaziando armazenamento
+PS_DrainOutOfStorage.verb	esvaziar armazenamento
+PS_FillStorage.label	encher armazenamento
+PS_FillStorage.gerund	enchendo armazenamento
+PS_FillStorage.verb	encher armazenamento
+PS_PickUpProcessor.label	retirar o produto do processador
+PS_PickUpProcessor.gerund	retirando o produto de
+PS_PickUpProcessor.verb	retirar o produto de
+PS_BringToProcessor.label	levar ingrediente ao processador
+PS_BringToProcessor.gerund	levando ingredientes para
+PS_BringToProcessor.verb	levar ingredientes para
+## DefInjected/WorldObjectDef/WorldObject.xml
+KCSG_UndergroundRoom.label	sala subterrânea
+KCSG_UndergroundRoom.description	Uma sala subterrânea.
+## Keyed/Abilities.xml
+VFEA.AbilityDisableReasonCooldown	{0} está recarregando por {1}
+VFEA.AbilityDisableReasonGeneral	{0} não cumpre os requisitos
+VFEA.AbilityStatsDuration	Duração
+VFEA.TargetMustBeHostile	O alvo precisa ser hostil
+VFEA.MinRadius	Raio mínimo
+VFEA.RClickToAuto	Clique direito para ligar o uso automático.
+VFEA.RClickToNoAuto	Clique direito para desligar o uso automático.
+VEF_DisableCorpseDecaying	Desligar decomposição de cadáveres
+VEF_DisableCorpseDecayingDesc	Desliga a habilidade constante deste animal de decompor cadáveres.
+VEF_EnableCorpseDecaying	Ligar decomposição de cadáveres
+VEF_EnableCorpseDecayingDesc	Liga a habilidade constante deste animal de decompor cadáveres.
+VEF_DisableDigging	Desligar cavar atrás de comida
+VEF_DisableDiggingDesc	Desliga a habilidade deste animal de cavar o terreno atrás de comida.
+VEF_EnableDigging	Ligar cavar atrás de comida
+VEF_EnableDiggingDesc	Liga a habilidade deste animal de cavar o terreno atrás de comida.
+VEF_DisableGas	Desligar produção de gás
+VEF_DisableGasDesc	Desliga a habilidade deste animal de produzir gás.
+VEF_EnableGas	Ligar produção de gás
+VEF_EnableGasDesc	Liga a habilidade deste animal de produzir gás.
+## Keyed/AnimalBehaviours.xml
+NocturnalAnimals.BodyClock	Relógio biológico
+NocturnalAnimals.BodyClock_Description	Define quando o animal dorme e quando fica acordado.\n\nAnimais diurnos dormem à noite e ficam acordados de dia; os noturnos dormem de dia e ficam acordados à noite. Os crepusculares são ativos sobretudo ao entardecer.
+NocturnalAnimals.BodyClock_Diurnal	Diurno
+NocturnalAnimals.BodyClock_Nocturnal	Noturno
+NocturnalAnimals.BodyClock_Crepuscular	Crepuscular
+VEF_AsexualCloning	{0} se clonou.
+VEF_AsexualHatchedEgg	{0} esporulou.
+VEF_NotTameable	Esta criatura não pode ser domada
+VEF_TimeToMetamorphosis	Tempo até a metamorfose: {0}
+VEF_WarningEggExplodes	Atenção: este ovo explode ao chocar!
+VEF_TimeToDie	O animal expira em: {0}
+VEF_DisableAnimal	Desligar {0}
+VEF_StomachContents	{0} criaturas engolidas inteiras.
+VEF_DigestionTime	Será digerido em {0}
+VEF_TerrainsNeedsDiggable	O terreno precisa poder ser cavado para isso
+VEF_WhileCaravaning	Em caravana, produz {0} {1} a cada:
+VEF_AnimalProductYieldFactorDetails	A produção base de produtos animais especiais deste animal é {0} {1}. Ajustada pelo fator de rendimento de produtos animais, fica {2} {1}.
+VEF_AnimalProductYieldFactorDetails_Random	A produção base de produtos animais especiais deste animal é {0} de uma seleção de itens aleatórios ou que dependem do terreno. Ajustada pelo fator de rendimento de produtos animais, fica {1} unidades.
+VEF_AnimalProductIntervalFactorDetails	O intervalo base de produtos animais especiais deste animal é de {0} dias. Ajustado pelo fator de intervalo de produtos animais, fica {1} dias. O valor mínimo é 1 dia.
+VCE_AffectsAllAnimalMods	Estas opções de comportamento animal afetam todos os mods de animais que usam o código do Vanilla Expanded Framework
+VCE_CorpseDecayingEffectOption	Permitir mecânicas de decomposição de cadáveres (por exemplo, o efeito da lesma helixiana)
+VCE_DigWhenHungryOption	Permitir cavar quando com fome (por exemplo, ácaros-de-gelo cavando cadáveres)
+VCE_DigPeriodicallyOption	Permitir que animais cavem atrás de coisas periodicamente
+VCE_AnimalParticlesOption	Permitir partículas de animais (gás e sujeira)
+VCE_AsexualReproductionOption	Permitir reprodução assexuada
+VFE_AsexualReproductionDisabled	Reprodução assexuada desligada nas opções do mod
+VCE_BlinkMechanicsOption	Permitir mecânicas de "salto" (por exemplo, cães-de-salto)
+VCE_BuildPeriodicallyOption	Permitir que animais construam coisas (por exemplo, castores fazendo represas)
+VCE_ChargeBatteriesOption	Permitir que animais recarreguem baterias próximas ou reabasteçam
+VCE_ExplodingEggsOption	Permitir ovos de animais que explodem (como os de dragão)
+VCE_HoveringOption	Permitir animais "flutuantes", que ignoram o custo de movimento do terreno e andam sobre a água
+VCE_GraphicChangingOption	Permitir animais que mudam de aparência (por exemplo, o iaque-camaleão)
+VCE_EffecterOption	Permitir que animais causem efeitos de saúde, estados mentais ou pensamentos
+VCE_RegenerationOption	Permitir regeneração de saúde (ativa e passiva)
+VCE_ResurrectionOption	Permitir que animais ressuscitem sozinhos (por exemplo, a coruja-gato-fênix)
+VCE_UntameableOption	Permitir que alguns animais não possam ser domados
+VEF_AnimalsSearch	Buscar:
+VEF_BillRequiresMass	Exige {0} kg de massa total
+## Keyed/AnimalGenes.xml
+VRE_TabAnimalGenes	Genes
+VRE_AnimalGenes	Genes animais
+VRE_FamilyTag	Família de genes
+VRE_AnimalGenesFeratypeDesc	Os genes ligados a este feratipo.
+VRE_Feratype	Feratipo
+VRE_AnimalGenesDesc	Genes presentes neste animal
+VRE_StatsReport_Genes	Genes animais relevantes
+VRE_MoreInfoInInfoScreen	Há mais informações na tela de informações deste feratipo.
+VRE_AnimalIllness	Tempo médio entre doenças do animal
+VRE_AnimalTantrum	Tempo médio entre ataques de fúria do animal
+VRE_Trainability	Treinabilidade definida como
+VRE_Stability	Estabilidade
+VRE_StabilityDesc	A estabilidade representa a complexidade do código genético do animal e afeta a previsibilidade da herança dos genes.\n\nEstabilidade alta garante que os filhotes herdem em geral a média dos genes dos pais; estabilidade baixa aumenta a chance de os filhotes se afastarem das características dos pais rumo à média natural.
+VRE_Days	dias
+VRE_LifespanFactorDesc	Fator de expectativa de vida deste animal segundo a estabilidade genética
+VRE_FeratypeFamily	família de feratipos
+VRE_FeratypeFamilyDesc	Este feratipo pertence à família de feratipos {0}:\n\n{1}
+VRE_AllowedPartners	Parceiros permitidos
+VRE_AllowedPartnersDesc	Uma lista de todos os feratipos da família {0} com que este animal pode ter filhotes.
+VRE_NotPregnant	Este animal não está prenhe
+VRE_StillbornLabel	{0} natimorto
+VRE_StillbornDesc	Seu {0}, {1}, deu à luz um filhote natimorto.
+VRE_SpecializedGene	Gene especializado
+VRE_SpecializedGeneDesc	Este gene só passa para filhotes cujo feratipo tem um gene desta família.
+VRE_PreventSlaughter	Impedir abate
+VRE_PreventSlaughterDesc	Impede que este animal seja abatido pela marcação de abate e pelo abate automático.
+## Keyed/Contraband.xml
+VEF.Factions.Contraband_Booze_GiftWarning	Presentear {ILLEGALTHING_label} é contra a lei de {FACTION_name}. Isso pode, ou não, afetar suas relações com eles no futuro
+VEF.Factions.Contraband_Booze_GiftIllegalWarning	Presentear {ILLEGALTHING_label} a {ILLEGALFACTION_name} é contra a lei de {FACTION_name}. Isso pode, ou não, afetar suas relações com eles no futuro
+VEF.Factions.Contraband_Booze_SellWarning	Vender {ILLEGALTHING_label} é contra a lei de {FACTION_name}. Isso pode, ou não, afetar suas relações com eles no futuro
+VEF.Factions.Contraband_Booze_SellIllegalWarning	Vender {ILLEGALTHING_label} a {ILLEGALFACTION_name} é contra a lei de {FACTION_name}. Isso pode, ou não, afetar suas relações com eles no futuro
+VEF.Factions.Contraband_Booze_LetterLabel	{FACTION_name} irritada
+VEF.Factions.Contraband_Booze_LetterDescGift	{FACTION_name} ficou sabendo que você anda presenteando {ILLEGALTHING_label} pelas costas. Eles consideram isso ilegal, e suas relações pioraram
+VEF.Factions.Contraband_Booze_LetterDescSold	{FACTION_name} ficou sabendo que você anda vendendo {ILLEGALTHING_label} pelas costas. Eles consideram isso ilegal, e suas relações pioraram
+VEF.Factions.Contraband_Booze_LetterDescIllegalGift	{FACTION_name} ficou sabendo que você anda presenteando {ILLEGALTHING_label} a {ILLEGALFACTION_name} pelas costas. Eles consideram isso ilegal, e suas relações pioraram
+VEF.Factions.Contraband_Booze_LetterDescIllegalSold	{FACTION_name} ficou sabendo que você anda vendendo {ILLEGALTHING_label} a {ILLEGALFACTION_name} pelas costas. Eles consideram isso ilegal, e suas relações pioraram
+VEF.Factions.Contraband_Booze_RelationInfo	A boa vontade com {FACTION_name} agora é {1}. (Mudou {2})
+VEF.Factions.FactionDef_Description_Contraband	Detalhes de comércio
+VEF.Factions.FactionDef_Description_Positives	Boa vontade positiva ao negociar {0}
+VEF.Factions.FactionDef_Description_Negatives	Boa vontade negativa ao negociar {0}
+## Keyed/HeavyWeapons.xml
+VWE.CannotEquipHeavy	A arma exige armadura motorizada
+## Keyed/ItemProcessorBase.xml
+IP_InsertFirstItemDesc	Pôr
+IP_InsertSecondItemDesc	Pôr
+IP_InsertThirdItemDesc	Pôr
+IP_InsertFourthItemDesc	Pôr
+IP_InsertVariable	Pôr {0}
+IP_Output	Produzir {0}
+IP_OutputVariable	Produzir {0} a partir de {1}
+IP_OutputDesc	O processador vai produzir {0}. Precisa ser abastecido com {1}
+IP_InsertVariableSecond	Pôr {0} na 2ª entrada
+IP_InsertVariableThird	Pôr {0} na 3ª entrada
+IP_CantFindThing	Nenhum item desse tipo ({0}) neste mapa
+IP_BringIngredients	Trazer ingredientes
+IP_BringIngredientsDesc	Traz os ingredientes para começar o processo
+IP_CancelIngredients	Cancelar trazer ingredientes
+IP_CancelIngredientsDesc	Cancela a entrega de ingredientes a este prédio
+IP_NoIngredientFound	Nenhum ingrediente no mapa
+IP_ChooseIngredient	Escolher ingrediente
+IP_ChooseOutput	Escolher produto
+IP_ChooseIngredientSecond	Escolher segundo ingrediente
+IP_ChooseIngredientThird	Escolher terceiro ingrediente
+IP_ChooseIngredientFourth	Escolher quarto ingrediente
+IP_IngredientImproperlyDefined	Um dos ingredientes foi definido errado para o processador de itens; fale com o autor do mod
+IP_NoPowerDestroysWarning	{0} precisa de energia para começar a funcionar
+IP_NoFuelDestroysWarning	{0} precisa de combustível para começar a funcionar
+IP_LightDestroysWarning	{0} precisa de luz adequada para começar a funcionar
+IP_RainDestroysWarning	{0} precisa que não esteja chovendo para começar a funcionar
+IP_TemperatureDestroysWarning	{0} precisa de uma temperatura adequada ({1} - {2}) para começar a funcionar
+IP_NoPowerDestroysInitialWarning	O produto está estragando por falta de energia no processador de itens
+IP_NoPowerDestroysMessage	O produto estragou por falta de energia no processador de itens
+IP_GenericProductFinished	Um produto ficou pronto e está esperando ser retirado
+IP_IsEmpty	{0} está vazio
+IP_FilledWith	{0} está cheio de {1}
+IP_FilledWithSecond	A 2ª entrada de {0} está cheia de {1}
+IP_FilledWithThird	A 3ª entrada de {0} está cheia de {1}
+IP_FilledWithFourth	A 4ª entrada de {0} está cheia de {1}
+IP_IngredientPercentage	 (cheio a {0} de {1})
+IP_ProcessorWorking	{0} está funcionando:
+IP_ProcessorPaused	{0} está pausado:
+IP_ProcessingInProgress	{0} está processando {1}. {2} fica pronto com qualidade {3} em {4}
+IP_ProcessingInProgressNoQuality	{0} está processando {1}. {2} fica pronto em {3}
+IP_RemoveProduct	Retirar {0} ({1})
+IP_RemoveProductDesc	Retira {0} de {1}. O produto sai com a qualidade atual ({2})
+IP_ResetSemiautomatic	Reiniciar receitas
+IP_ResetSemiautomaticDesc	Reinicia o prédio depois que o produto atual ficar pronto, para escolher outro ingrediente
+IP_NoCombination	Nenhuma combinação para esses ingredientes
+IP_SetAutoQuality	Define a qualidade de retirada do produto. Quando o produto atingir essa qualidade, um colono vai retirá-lo sozinho e levá-lo a um estoque, se houver. Sem definir, os produtos são retirados à mão ou na qualidade lendária.
+IP_ChooseQualityAuto	Escolher qualidade automática
+IP_QualityAutoIs	Qualidade automática: {0}
+IP_QualityAutoNot	Desligar qualidade automática
+IP_QualityAutoEstablished	Qualidade automática: o produto será retirado na qualidade {0}
+IP_ToggleAuto	Abastecimento automático
+IP_ToggleAutoDesc	Ligado, o prédio pega ingredientes sozinho dos funis vizinhos e volta a funcionar sozinho quando o produto é retirado. Desligado, os colonos levam os ingredientes e é preciso ativá-lo à mão depois de reabastecido
+IP_ResetFullAuto	Reiniciar máquina
+IP_ResetFullAutoDesc	Reinicia a máquina por completo e a para. Atenção: destrói o processo e os itens de entrada
+IP_ProductWaiting	Esperando retirada
+IP_OutsideLightRange	O processo desta máquina está sendo interrompido por falta de luz adequada e vai estragar logo
+IP_SpoiledDueToLight	O produto desta máquina estragou por falta de luz adequada
+IP_ItRains	O processo desta máquina está sendo interrompido pelo mau tempo e vai estragar logo
+IP_SpoiledDueToRain	O produto desta máquina estragou por causa do mau tempo

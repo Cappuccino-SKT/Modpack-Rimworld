@@ -76,13 +76,13 @@ Auditado em 2026-11-17, com os 11 mods novos do mesmo dia (contagem de `MayRequi
 | Vanilla Factions Expanded - Medieval 2 | medieval | arsenal dos Não Catalogados, vinho do Coro, torneio (D) | — |
 | Combat Extended (+ Armors, Armory, Guns) | combate | munição e loadouts nas PawnKinds e cenários | — |
 | Custom Base Framework | bases de NPC | plano de base por potência (K) | — |
-| Alpha Biomes | biomas | — | zonas da Queda com recurso exclusivo (4b) |
+| Alpha Biomes | biomas | 8 zonas da Queda: recurso exclusivo analisado na bancada de engenharia reversa (`EQ_Zones.xml`, 4b) | Intrusão Mecanoide, Selva Ferálisca, Prados e Mangue sem recurso exclusivo |
 | Alpha Genes | genes | genes e xenos (222 referências) | — |
 | [FSF] Complex Jobs | apoio | — | — |
 | Missile Girl - Performance Mod | apoio | — | — |
 | Rimesis | nêmesis | — | ligar ao Silêncio ou remover (4b, decidir) |
-| Layered Wall Destruction Fork | combate | — | paredes nossas com perfil; cercos (4b) |
-| Trenches | combate | — | trincheiras nas bases e cercos (4b) |
+| Layered Wall Destruction Fork | combate | — (age sozinho em paredes de qualquer cerco/base) | perfil só se criarmos paredes próprias |
+| Trenches | combate | trincheiras e arame nos cercos das potências e do Reino do Lodo (`EQ_Sieges.xml`, 4b) | trincheiras nas bases (CBF) e frentes de trincheira (10e) |
 | Tech Advancing | progressão | — | conferir convivência com as licenças por cargo (3b) |
 | Yet Another Research Tree (YART) | interface de pesquisa | 6 abas próprias de pesquisa (3a) | — |
 | Clean Research Sort | apoio | — | — |

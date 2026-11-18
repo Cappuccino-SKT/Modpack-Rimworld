@@ -1,0 +1,220 @@
+## DefInjected/TerrainDef/Terrain_OcularForest.xml
+GU_RedWaterDeep.label	água vermelha funda
+GU_RedWaterMovingChestDeep.label	água vermelha corrente na altura do peito
+GU_RedWaterMovingShallow.label	água vermelha corrente rasa
+GU_RedWaterOceanShallow.label	água de oceano vermelha rasa
+GU_RedWaterOceanDeep.label	água de oceano vermelha funda
+GU_MossyRed.label	areia ressecada
+GU_AlienSoftSand.label	areia vermelha fofa
+GU_AlienSoftSand.tools.red_sand.label	areia vermelha
+## DefInjected/TerrainDef/Terrain_PropaneLakes.xml
+AB_PackedSnow.label	neve compactada
+AB_PackedIce.label	gelo compactado
+AB_SolidPropane.label	compostos de propano sólido
+AB_SnowOverRocks.label	terreno rochoso nevado
+AB_PropaneLake.label	lago de propano líquido
+## DefInjected/TerrainDef/Terrain_PyroclasticConflagration.xml
+AB_BlackPebbles.label	areia vulcânica preta
+AB_Obsidian.label	obsidiana bruta
+AB_SolidifiedLava.label	lava solidificando
+AB_HardenedGrass.label	grama endurecida
+AB_HardenedGrassFertile.label	solo vulcânico fértil
+AB_LiquidLava.label	lago de lava
+AB_VolcanicGravel.label	solo pedregoso vulcânico
+AB_VolcanicGravel.tools.gravel.label	cascalho
+## DefInjected/TerrainDef/Terrain_TarPits.xml
+AB_AsphaltBridge.label	ponte de asfalto
+AB_AsphaltBridge.description	Uma superfície plana de madeira sobre vigas de apoio que pode ser construída sobre a água. Dá para construir estruturas leves em pontes, mas cuidado: pontes são frágeis. Se uma ponte cair, as construções em cima dela caem junto.
+AB_LushGrass.label	grama viçosa
+AB_GrassySand.label	areia com grama
+AB_GrassySand.tools.sand.label	areia
+AB_ParchedEarth.label	lama ressecada
+AB_ParchedEarth.tools.mud.label	lama
+AB_TarMud.label	lama empichada
+AB_TarMud.tools.mud.label	lama
+AB_ArtificialTar.label	poças de piche
+AB_Tar.label	poço de piche
+## DefInjected/TerrainDef/Terrain_Waters_Odyssey.xml
+AB_LiquidCream_Deep.label	creme líquido fundo
+AB_LiquidCream_MovingChestDeep.label	creme líquido corrente na altura do peito
+AB_LiquidCream_Shallow.label	creme líquido raso
+AB_LiquidCream_MovingShallow.label	creme líquido corrente raso
+AB_LiquidCreamFlood.label	enchente rasa de creme líquido
+AB_LightRedWaterShallow.label	água avermelhada rasa
+AB_LightRedWaterDeep.label	água avermelhada funda
+AB_LightRedFlood.label	água de enchente avermelhada
+AB_LightRedWaterMovingChestDeep.label	água avermelhada corrente na altura do peito
+AB_LightRedWaterMovingShallow.label	água avermelhada corrente rasa
+AB_LightRedWaterOceanShallow.label	água de oceano avermelhada rasa
+AB_LightRedWaterOceanDeep.label	água de oceano avermelhada funda
+AB_CerebrospinalFluid_Deep.label	líquido cefalorraquidiano fundo
+AB_CerebrospinalFluid_MovingChestDeep.label	líquido cefalorraquidiano corrente na altura do peito
+AB_CerebrospinalFluid_Shallow.label	líquido cefalorraquidiano raso
+AB_CerebrospinalFluid_MovingShallow.label	líquido cefalorraquidiano corrente raso
+AB_CerebrospinalFluidFlood.label	enchente rasa de líquido cefalorraquidiano
+## DefInjected/ThingDef/AB_PsychotropicFungus.xml
+AB_PsychotropicFungus.label	fungo psicotrópico
+AB_PsychotropicFungus.description	Estes fungos têm um gosto esquisito e dão um barato químico potente que melhora o humor. Mas, se comidos com muita frequência, podem causar um vício leve.
+## DefInjected/ThingDef/AB_RawRimeNodules.xml
+AB_RawRimeNodules.label	nódulos de geada crus
+AB_RawRimeNodules.description	As bolsas de uma planta muito estranha, em parte inorgânica, que parece extrair propano da paisagem em volta e guardá-lo como fonte de energia. As bolsas podem ser consumidas como um euforizante bem leve.
+## DefInjected/ThingDef/Buildings_AncientVents_Odyssey.xml
+AB_AncientFreezingVent.label	respiradouro congelante ancestral
+AB_AncientFreezingVent.description	Um duto enorme que desce sem fim pela terra. Solta regularmente ar congelante de uma megaestrutura subterrânea, baixando muito a temperatura dos arredores.
+AB_AncientGreyPallVent.label	respiradouro de manto cinza ancestral
+AB_AncientGreyPallVent.description	Um duto enorme que desce sem fim pela terra. Solta regularmente grandes quantidades de uma fumaça de aspecto doentio que mergulha a área numa escuridão sobrenatural.
+AB_AncientBloodRainVent.label	respiradouro de chuva de sangue ancestral
+AB_AncientBloodRainVent.description	Um duto enorme que desce sem fim pela terra. Solta regularmente enormes nuvens vermelhas de uma substância vaporizada parecida com sangue, que se juntam numa chuva de sangue nojenta.
+AB_AncientDeathPallVent.label	respiradouro de manto da morte ancestral
+AB_AncientDeathPallVent.description	Um duto enorme que desce sem fim pela terra. Solta regularmente nuvens de arquitas microscópicas com energia própria que reanimam cadáveres, criando uma imitação distorcida de vida.
+## DefInjected/ThingDef/Buildings_DerelictArchonexus_Odyssey.xml
+AB_DerelictArchotechTower.label	torre arcotecnológica abandonada
+AB_DerelictArchotechTower.description	Uma torre arcotecnológica de tamanho médio saindo do chão. Parece inerte há muito tempo.
+AB_DerelictMajorArchotechStructure.label	grande estrutura arcotecnológica abandonada
+AB_DerelictMajorArchotechStructure.description	Uma grande estrutura arcotecnológica. A superfície verde e opaca está arruinada e coberta de vegetação. Parece inerte há muito tempo.
+AB_DerelictArchonexusCore.label	núcleo de arconexo abandonado
+AB_DerelictArchonexusCore.description	O núcleo central arruinado de um arconexo. As superfícies largas estão empoeiradas e cobertas de vegetação. Parece inerte há muito tempo.
+## DefInjected/ThingDef/Buildings_DerelictCluster_Odyssey.xml
+AB_Mech_RuinedTurret_Single.label	base de torreta mecanoide arruinada
+AB_Mech_RuinedTurret_Single.description	Uma base de torreta mecanoide arruinada. Completamente quebrada.
+AB_Mech_RuinedTurret_Full.label	torreta mecanoide arruinada
+AB_Mech_RuinedTurret_Full.description	Uma torreta mecanoide arruinada. Completamente quebrada. Não dá para aproveitar nenhum componente útil desta torreta velha.
+AB_Mech_RuinedShield.label	escudo mecanoide arruinado
+AB_Mech_RuinedShield.description	Um gerador de escudo mecanoide esgotado. Ainda zumbe baixinho.
+AB_Mech_RuinedMortar_Single.label	canhão de morteiro mecanoide arruinado
+AB_Mech_RuinedMortar_Single.description	Um morteiro mecanoide arruinado.
+AB_Mech_RuinedMortar_Full.label	morteiro mecanoide arruinado
+AB_Mech_RuinedMortar_Full.description	Um automorteiro mecanoide arruinado. Completamente quebrado. Não dá para aproveitar nenhum componente útil deste morteiro velho.
+AB_Mech_RuinedLargeGunPlatform.label	base de torreta grande mecanoide arruinada
+AB_Mech_RuinedLargeGunPlatform.description	Uma base de torreta grande mecanoide arruinada. O que quer que ela sustentava sumiu há muito tempo.
+AB_Mech_RuinedCell.label	célula de energia mecanoide arruinada
+AB_Mech_RuinedCell.description	Uma célula de energia mecanoide arruinada. Talvez dê para aproveitar alguns componentes dela.
+AB_Mech_RuinedActivator.label	ativador de proximidade mecanoide arruinado
+AB_Mech_RuinedActivator.description	Um ativador de proximidade mecanoide arruinado. Talvez dê para aproveitar alguns componentes dele.
+AB_Mech_RuinedCapsule.label	cápsula mecanoide arruinada
+AB_Mech_RuinedCapsule.description	Uma cápsula mecanoide arruinada. Ainda bem que está vazia há um tempo.
+AB_Mech_RuinedAssembler.label	montador mecanoide arruinado
+AB_Mech_RuinedAssembler.description	Um montador mecanoide arruinado. Ainda bem que está inativo há um tempo.
+## DefInjected/ThingDef/Buildings_DerelictResort_Odyssey.xml
+AB_DerelictSwimmingPool.label	piscina abandonada
+AB_DerelictSwimmingPool.description	Já foi uma piscina relaxante; agora é um poço de água parada e fétida.
+AB_DerelictRecliner.label	espreguiçadeira abandonada
+AB_DerelictRecliner.description	Uma espreguiçadeira para relaxar. Podre e suja a ponto de não servir para nada.
+AB_DerelictBeachUmbrella.label	guarda-sol abandonado
+AB_DerelictBeachUmbrella.description	Um guarda-sol tão quebrado que nem segura o sol.
+AB_DirtyBeachBall.label	bola de praia suja
+AB_DirtyBeachBall.description	Uma bola de praia meio murcha que já viu dias melhores.
+AB_DerelictPoolLadder.label	escada de piscina abandonada
+AB_DerelictPoolLadder.description	Esta escada de piscina já viu dias melhores.
+AB_DirtyPoolFloat.label	boia de piscina suja
+AB_DirtyPoolFloat.description	Uma boia de piscina murcha e suja.
+## DefInjected/ThingDef/Buildings_ForsakenCrags.xml
+AB_ShackledGamma.label	gama acorrentada
+AB_ShackledGamma.description	Um tanque de contenção feito para preservar e regular a vida de uma planta gama além do tempo natural. Suspensa em gel nutritivo e presa por arreios que limitam o crescimento, a planta brilha com seu esplendor típico, o bastante para substituir uma lâmpada solar, enquanto sua decadência metabólica fica lentíssima.\n\nPara construí-la são necessárias frutas de ragadast, que viram o gel nutritivo que sustenta a planta.
+## DefInjected/ThingDef/Buildings_GallatrossGraveyard.xml
+AB_GallatrossBones.label	ossos de galatross
+AB_GallatrossBones.description	Esta caixa torácica já pertenceu a um galatross vivo de tamanho realmente excepcional. Pode ser desconstruída para obter ossos antigos.
+AB_AncientGallatrossSkull.label	crânio de galatross antigo
+AB_AncientGallatrossSkull.description	Este crânio pertenceu a um galatross excepcionalmente enorme. Olha o tamanho disso! Pode ser desconstruído para obter ossos antigos.
+AB_AncientBone.label	osso antigo
+AB_AncientBone.description	Este osso fossilizado pode ter pertencido a um galatross excepcionalmente grande. Pode ser desconstruído para obter ossos antigos.
+AB_AncientBrokenBone.label	osso antigo partido
+AB_AncientBrokenBone.description	Este osso fossilizado pode ter pertencido a um galatross excepcionalmente grande. Pode ser desconstruído para obter ossos antigos.
+AB_AncientVerticalBone.label	ossos antigos
+AB_AncientVerticalBone.description	Estes ossos fossilizados podem ter pertencido a um galatross excepcionalmente grande. Podem ser desconstruídos para obter ossos antigos.
+AB_HugeGallatrossSkeleton.label	esqueleto enorme de galatross
+AB_HugeGallatrossSkeleton.description	Estes ossos fossilizados podem ter pertencido a um galatross excepcionalmente grande. Podem ser desconstruídos para obter ossos antigos.
+AB_BoneDistillery.label	perfuratriz de ossos
+AB_BoneDistillery.description	Uma perfuratriz hidráulica potente, feita para furar depósitos de ossos antigos enterrados fundo no chão e soltá-los para extração e processamento.
+## DefInjected/ThingDef/Buildings_GelatinousSuperorganism.xml
+AB_SlimeCompressor.label	compactador de gosma
+AB_SlimeCompressor.description	Uma máquina volumosa e barulhenta que mói gosma orgânica e a compacta sob pressão imensa, transformando aos poucos o lodo em arenito denso e utilizável.
+## DefInjected/ThingDef/Buildings_MechanoidIntrusion.xml
+AB_AbandonedShipPart.label	peça de nave abandonada há muito tempo
+AB_AbandonedShipPart.description	Uma peça misteriosa de nave espacial que caiu aqui. Provavelmente já esteve cheia de mecanoides, mas parece abandonada há um tempo. Talvez dê para desmontá-la e aproveitar a matéria-prima.
+## DefInjected/ThingDef/Buildings_MechanoidIntrusion_Odyssey.xml
+AB_MechanoidReceiver.label	receptor de ressonância mecanoide
+AB_MechanoidReceiver.description	Um receptor de banda larga feito para captar padrões de sinal mecanoide que ainda pairam no ambiente. Ele decodifica o zumbido residual de sobrecarga numa ressonância sonora de baixa frequência: quase imperceptível, mas estranhamente calmante.
+## DefInjected/ThingDef/Buildings_Misc_Odyssey.xml
+AB_SugarChunk.label	pedaço de açúcar
+AB_SugarChunk.description	Um pedaço de açúcar. Pode ser desconstruído para obter um pouco de açúcar (se você usar o VE Cooking).
+AB_WarpedStonePillar.label	pilar de pedra retorcida
+AB_WarpedStonePillar.description	Um pilar de arenito retorcido numa forma antinatural.
+AB_ObsidianSpire.label	pináculo de obsidiana
+AB_ObsidianSpire.description	Um grande pináculo de obsidiana maciça.
+AB_NeutroamineSynthetizer.label	sintetizador de neutroamina
+AB_NeutroamineSynthetizer.description	Um sintetizador especializado que extrai neutroamina do líquido cefalorraquidiano de grandes lagos de superfície e o processa numa forma utilizável.
+## DefInjected/ThingDef/Buildings_MycoticJungle_Odyssey.xml
+AB_MycoticCollector.label	coletor micótico
+AB_MycoticCollector.description	Coleta microfungos comestíveis que flutuam no ar deste mapa e os transforma em fungos processados, que podem ser usados como ingrediente.
+## DefInjected/ThingDef/Buildings_OcularForest.xml
+AB_AlcyoniteSolar.label	gerador solar de alcionita
+AB_AlcyoniteSolar.description	Usa células solares de alcionita para tirar eletricidade do sol. Produz eletricidade extra quando há névoa vermelha. Não funciona no escuro nem sob luz artificial.
+AB_AlcyoniteSolar_Advanced.label	gerador solar de alcionita avançado
+AB_AlcyoniteSolar_Advanced.description	Usa células solares de alcionita para tirar eletricidade do sol. Produz eletricidade extra quando há névoa vermelha. Não funciona no escuro nem sob luz artificial.
+AB_OcularGasSpewer.label	expelidor de gás ocular
+AB_OcularGasSpewer.description	Este aparelho usa um pouco de eletricidade para condensar gases atmosféricos e expelir uma grande nuvem de gás ocular. O gás bloqueia muito os ataques à distância, funcionando como um cinto de fumaça permanente.
+AB_AlienComplianceCenter.label	centro de conformidade ocular
+AB_AlienComplianceCenter.description	Um aparelho experimental que emite ondas estranhas que fazem todo mundo amar o clima verdadeiramente alienígena.
+## DefInjected/ThingDef/Buildings_Production.xml
+AB_CoreSampleDrill.label	sonda de amostragem
+AB_CoreSampleDrill.description	A sonda de amostragem permite obter tipos de rocha comuns que normalmente não existem num certo bioma. Ela precisa perfurar bem fundo para isso, por isso é bem cara de construir.
+## DefInjected/ThingDef/Buildings_PropaneLakes.xml
+AB_PropaneStove.label	fogão a propano
+AB_PropaneStove.description	Um fogão a propano com bancada para preparar refeições.
+AB_PropaneFueledSmithy.label	forja a propano
+AB_PropaneFueledSmithy.description	Uma estação a propano para forjar armas e ferramentas não mecânicas.
+AB_PropaneSmelter.label	fundição a propano
+AB_PropaneSmelter.description	Extrai metal utilizável de pedaços de escória e outros itens de metal misturado.
+AB_PropaneTableMachining.label	mesa de usinagem a propano
+AB_PropaneTableMachining.description	Uma estação de trabalho para montar máquinas como armas e munição, ou desmontar mecanoides mortos.
+AB_PropaneHeater.label	aquecedor a propano
+AB_PropaneHeater.description	Um aparelho que queima propano e o transforma em calor. Desperdiça muito combustível ao tentar chegar a temperaturas muito diferentes da ambiente, mas economiza bastante se for bem configurado.
+AB_Turret_Propane.label	torreta a propano
+AB_Turret_Propane.description	Uma torreta lança-chamas portátil movida a propano. Pode explodir quando danificada. Seu cérebro de IA burro não pode ser controlado diretamente, então cuidado com fogo amigo.
+AB_Turret_Propane.comps.CompRefuelable.fuelGizmoLabel	Combustível restante
+AB_Turret_Propane.comps.CompRefuelable.fuelLabel	Combustível restante
+AB_Turret_Propane.comps.CompRefuelable.outOfFuelMessage	Precisa de propano
+AB_Turret_Propane_Gun.label	arma de torreta a propano
+AB_Turret_Propane_Gun.description	Um lança-chamas a propano feito para ser montado numa torreta.
+AB_Turret_Propane_Gun.verbs.Verb_Shoot.label	arma de torreta a propano
+AB_Turret_Propane_Bullet.label	jato de lança-chamas
+## DefInjected/ThingDef/Buildings_PyroclasticConflagration_Odyssey.xml
+AB_MagmaVent.label	respiradouro de magma
+AB_MagmaVent.description	Uma fenda ardente na terra que de tempos em tempos expele jatos de rocha derretida e gás escaldante.
+AB_MagmaThermalPlant.label	gerador magmatérmico
+AB_MagmaThermalPlant.description	Gera eletricidade a partir de gêiseres de vapor geotérmico superaquecido numa zona rica em magma. Precisa ficar sobre um gêiser de vapor.
+## DefInjected/ThingDef/Buildings_Structure.xml
+AB_ExoticDoor.label	porta exótica
+AB_ExoticDoor.description	Uma porta feita com materiais exóticos. Portas simples precisam ser abertas à mão, o que atrasa as pessoas. O atraso depende do material, mas portas exóticas abrem e fecham um pouco mais rápido que as comuns, ao custo de uma construção mais cara.
+AB_ExoticAutoDoor.label	autoporta exótica
+AB_ExoticAutoDoor.description	Uma autoporta feita com materiais exóticos. O funcionamento elétrico deixa as pessoas passarem sem perder velocidade. Pede mais material que autoportas comuns, mas gasta menos energia.
+AB_ExoticWall.label	parede exótica
+AB_ExoticWall.description	Uma parede intransponível feita com materiais exóticos. Um pouco mais forte que as paredes comuns.
+AB_BoneWall.label	ossos gigantes
+AB_BoneWall.description	Um bloco intransponível de osso maciço fossilizado. A criatura dona deste osso se foi há muito tempo.
+AB_ExoticColumn.label	coluna exótica
+AB_ExoticColumn.description	Uma coluna feita com materiais exóticos. Não bloqueia a visão nem a passagem e é bem bonita.
+## DefInjected/ThingDef/Buildings_Structure_Odyssey.xml
+AB_RustedWall.label	parede enferrujada
+AB_MineableChocolate.description	Pedaços de chocolate compactado.
+AB_SmoothedChocolate.label	chocolate polido
+AB_SmoothedChocolate.description	Pedaços de chocolate compactado e polido. Isto é nojento? Bem, sim, é sim.
+## DefInjected/ThingDef/Buildings_TarPits.xml
+AB_TarPump.label	bomba de piche
+AB_TarPump.description	Extrai piche de um buraco de piche natural e o transforma em quimicombustível.
+AB_TrapIED_Tar.label	armadilha explosiva de piche
+AB_TrapIED_Tar.description	Um par de projéteis de piche ligados a um gatilho que detona ao toque ou com impacto de bala. Como fica escondida no terreno, não pode ser posta ao lado de outras armadilhas. Animais calmos conseguem percebê-la. Cria uma poça de piche muito difícil de atravessar. Também é muito difícil de remover e costuma estragar outros pisos, porque gruda neles. Pensando bem, eu não detonaria uma dessas na minha cozinha.
+AB_TarHole.label	buraco de piche
+AB_TarHole.description	Um buraco natural na lama ligado a um reservatório subterrâneo de piche. De tempos em tempos espirra piche fresco em volta.
+AB_BumbledroneHive.label	colmeia de zangões-bola
+AB_BumbledroneHive.description	Um monte enorme de matéria orgânica endurecida ligado a uma extensa colmeia subterrânea. De tempos em tempos, zangões-bola saem dela para buscar comida para a colônia. Os zangões-bola em volta de uma colmeia são especialmente agressivos, então é melhor manter distância.
+## DefInjected/ThingDef/Filth_Various.xml
+AB_SlagRubble.label	escória espalhada
+AB_Filth_Tar.label	poça de piche
+AB_Filth_Tar.description	Uma poça de piche inflamável.
+AB_Filth_Propane.label	poça de propano
+AB_Filth_Propane.description	Uma poça de propano inflamável.
+## DefInjected/ThingDef/Gas_Various.xml
+AB_MycoticSpores.label	esporos micóticos virulentos
+AB_OcularGas.label	gás ocular

@@ -1,0 +1,169 @@
+## DefInjected/AbilityDef/Abilities_Captain.xml
+VFEP_FiringFrenzy.label	frenesi de tiro
+VFEP_FiringFrenzy.description	Inspira todos por perto a atirar mais rápido e aguentar mais dor. O efeito fica preso em quem usa por 24 horas.
+## DefInjected/AbilityDef/BRangedWarcasket.xml
+VWEB_WarbolterLongBurner.label	queimador longo do lança-raios
+## DefInjected/BodyDef/Bodies_Mechanoid.xml
+VFEP_Wardrone.label	drone de guerra
+VFEP_Wardrone.corePart.parts.VFEP_MechanicalJoint.parts.VFEP_Turret.parts.left_sight_sensor.customLabel	sensor visual esquerdo
+VFEP_Wardrone.corePart.parts.VFEP_MechanicalJoint.parts.VFEP_Turret.parts.right_sight_sensor.customLabel	sensor visual direito
+VFEP_Wardrone.corePart.parts.VFEP_MechanicalJoint.parts.VFEP_Turret.parts.left_hearing_sensor.customLabel	sensor auditivo esquerdo
+VFEP_Wardrone.corePart.parts.VFEP_MechanicalJoint.parts.VFEP_Turret.parts.right_hearing_sensor.customLabel	sensor auditivo direito
+VFEP_Wardrone.corePart.parts.left_propeller.customLabel	hélice esquerda
+VFEP_Wardrone.corePart.parts.right_propeller.customLabel	hélice direita
+VFEP_Spidermine.label	mina-aranha
+VFEP_Spidermine.corePart.parts.VFEP_MechanicalJoint.parts.VFEP_Frame.parts.left_sight_sensor.customLabel	sensor visual esquerdo
+VFEP_Spidermine.corePart.parts.VFEP_MechanicalJoint.parts.VFEP_Frame.parts.right_sight_sensor.customLabel	sensor visual direito
+VFEP_Spidermine.corePart.parts.VFEP_MechanicalJoint.parts.VFEP_Frame.parts.left_hearing_sensor.customLabel	sensor auditivo esquerdo
+VFEP_Spidermine.corePart.parts.VFEP_MechanicalJoint.parts.VFEP_Frame.parts.right_hearing_sensor.customLabel	sensor auditivo direito
+VFEP_Spidermine.corePart.parts.left_propeller.customLabel	hélice esquerda
+VFEP_Spidermine.corePart.parts.right_propeller.customLabel	hélice direita
+## DefInjected/BodyPartDef/BodyParts_Mechanoid.xml
+VFEP_MechanicalJoint.label	junta
+VFEP_Turret.label	torreta
+VFEP_Propeller.label	hélice
+VFEP_TurretBase.label	base da torreta
+VFEP_Base.label	base
+VFEP_Frame.label	estrutura
+VFEP_MechanicalLeg.label	perna mecânica
+## DefInjected/CultureDef/Cultures.xml
+VFEP_Khanate.label	canato
+VFEP_Khanate.description	Uma categoria ampla que descreve os estilos e costumes de muitos grupos piratas.
+## DefInjected/DamageDef/Damages.xml
+VFEP_GravityHammerAttack.label	golpe de martelo gravitacional
+VFEP_GravityHammerAttack.deathMessage	{0} morreu esmagado.
+## DefInjected/DesignatorDropdownGroupDef/DesignatorDropdownGroupDef.xml
+VFEP_WarcasketWeapon.label	armas de caixão de guerra
+## DefInjected/FactionDef/Factions_Misc.xml
+VFEP_Junkers.label	sucateiros
+VFEP_Junkers.description	Uma confederação frouxa de gangues piratas que combinaram brigar sobretudo com quem é de fora, em vez de umas com as outras.\nPiratas não plantam, não constroem e raramente negociam. Movidos por uma cultura de sangue e honra que valoriza a força pessoal e a crueldade, enriquecem atacando e roubando vizinhos mais produtivos.\nOs sucateiros usam a tecnologia dos caixões de guerra e se lacram em tumbas de metal onde atacam, roubam, saqueiam e, inevitavelmente, morrem. Raramente usam armas corpo a corpo e preferem manter distância do inimigo para aproveitar ao máximo o armamento poderoso dos caixões de guerra.
+VFEP_Junkers.leaderTitle	cã
+VFEP_Junkers.pawnSingular	sucateiro
+VFEP_Junkers.pawnsPlural	sucateiros
+VFEP_Mercenaries.description	Uma organização paramilitar autorizada e comandada por figurões da política e megacorporações.\nMercenários não plantam, não constroem e raramente negociam. Movidos por uma cultura de sangue e honra que valoriza a força pessoal e a crueldade, enriquecem atacando e roubando vizinhos mais produtivos.\nOs mercenários usam armas e armaduras de tecnologia espacial para eliminar os alvos dos patrões corporativos. Ao contrário de outras facções piratas, dá para conversar e fazer amizade com eles, mas raramente têm muito a oferecer em comércio e pesquisa.
+VFEP_Mercenaries.leaderTitle	general
+## DefInjected/FactionDef/Factions_Player.xml
+VFEP_PlayerPirate.label	Nova enseada
+VFEP_PlayerPirate.description	Uma pequena enseada pirata.
+## DefInjected/HediffDef/Abilities.xml
+VFEP_SiegeMode.label	modo de cerco
+VFEP_SiegeMode.description	modo de cerco.
+VFEP_SiegeMode.labelNoun	modo de cerco
+## DefInjected/HediffDef/Hediffs_Casts_Captain.xml
+VFEP_FiringFrenzy.label	frenesi de tiro
+VFEP_FiringFrenzy.description	Esta pessoa está usando uma habilidade especial para inspirar todos por perto. Todos no raio de efeito ganham 50% menos tempo de mira e 50% mais limite de choque de dor.
+VFEP_FiringFrenzyBuff.label	frenesi de tiro
+VFEP_FiringFrenzyBuff.description	Alguém por perto está usando o frenesi de tiro, inspirando esta pessoa a atirar mais rápido e aguentar mais dor física.
+## DefInjected/HediffDef/Hediffs_Global_Misc.xml
+VFEP_RumAsIngredient.label	tomou coquetel de rum
+VFEP_RumAsIngredient.description	Este colono tomou um coquetel com rum entre os ingredientes. Reduz em 15% a velocidade da fome.
+VFEP_HypothermicSlowdown.description	Temperatura corporal perigosamente baixa. Sem reaquecer, a lentidão hipotérmica piora e termina em morte. A recuperação é rápida depois que a vítima se aquece.
+VFEP_KillItself.label	matar a si mesmo
+## DefInjected/HistoryEventDef/Precepts_Camaraderie.xml
+VFEP_CrewmanDied.label	tripulante morreu
+## DefInjected/InteractionDef/Interactions_Speech_Shanties.xml
+VFEP_Speech_Shanties.label	cantando canções do mar
+VFEP_Speech_Shanties.logRulesInitiator.rulesStrings[0]	r_logentry->[INITIATOR_nameDef] [spokeof] [speechtopic].
+VFEP_Speech_Shanties.logRulesInitiator.rulesStrings[1]	speechtopic->procurar [Vegetable] para evitar o escorbuto
+VFEP_Speech_Shanties.logRulesInitiator.rulesStrings[2]	speechtopic->como ser [AdjectiveFriendly] enquanto se saqueia o inimigo
+VFEP_Speech_Shanties.logRulesInitiator.rulesStrings[3]	speechtopic->usar [AnimalBadass] como fonte de proteína
+VFEP_Speech_Shanties.logRulesInitiator.rulesStrings[4]	speechtopic->como [Game] ensina a agir como tripulação
+VFEP_Speech_Shanties.logRulesInitiator.rulesStrings[5]	speechtopic->usar [Weapon] num ataque
+VFEP_Speech_Shanties.logRulesInitiator.rulesStrings[6]	speechtopic->saquear passando por [TerrainFeature] e [TerrainFeature]
+VFEP_Speech_Shanties.logRulesInitiator.rulesStrings[7]	speechtopic->como numa tripulação todos são [PersonFamily] e [PersonFamily]
+VFEP_Speech_Shanties.logRulesInitiator.rulesStrings[8]	speechtopic->a falta que [PersonJob] faz numa tripulação
+VFEP_Speech_Shanties.logRulesInitiator.rulesStrings[9]	speechtopic->enfrentar [PersonBadass]
+VFEP_Speech_Shanties.logRulesInitiator.rulesStrings[10]	speechtopic->vencer [Enemy] ficando unidos
+VFEP_Speech_Shanties.logRulesInitiator.rulesStrings[11]	speechtopic->apreciar [Gore] no combate
+VFEP_Speech_Shanties.logRulesInitiator.rulesStrings[12]	speechtopic->o sentido da camaradagem
+VFEP_Speech_Shanties.logRulesInitiator.rulesStrings[13]	speechtopic->o companheirismo da tripulação
+VFEP_Speech_Shanties.logRulesInitiator.rulesStrings[14]	speechtopic->como ser [AdjectiveBadass] sem ser [AdjectiveBadass]
+VFEP_Speech_Shanties.logRulesInitiator.rulesStrings[15]	speechtopic->como a tripulação é [AdjectiveBadass]
+VFEP_Speech_Shanties.logRulesInitiator.rulesStrings[16]	speechtopic->[TerrainFeature] [AdjectiveNatural]
+VFEP_Speech_Shanties.logRulesInitiator.rulesStrings[17]	speechtopic->o potencial [AdjectiveLarge] da tripulação
+VFEP_Speech_Shanties.logRulesInitiator.rulesStrings[18]	speechtopic->a [PersonalCharacteristic] de cada tripulante
+VFEP_Speech_Shanties.logRulesInitiator.rulesStrings[19]	speechtopic->a terrível [PersonalCharacteristic] dos inimigos da tripulação
+VFEP_Speech_Shanties.logRulesInitiator.rulesStrings[20]	speechtopic(p=0.25)->ficar unidos como grupo
+VFEP_Speech_Shanties.logRulesInitiator.rulesStrings[21]	speechtopic(p=0.25)->o caminho adiante na tragédia, unidos como tripulação
+VFEP_Speech_Shanties.logRulesInitiator.rulesStrings[22]	speechtopic(p=0.25)->a tripulação e sua importância
+VFEP_Speech_Shanties.logRulesInitiator.rulesStrings[23]	speechtopic(p=0.25)->a sobrevivência do mais forte
+VFEP_Speech_Shanties.logRulesInitiator.rulesStrings[24]	speechtopic(p=0.25)->o triunfo pelo sofrimento dividido
+VFEP_Speech_Shanties.logRulesInitiator.rulesStrings[25]	speechtopic(p=0.25)->a morte dos inimigos como motivação
+VFEP_Speech_Shanties.logRulesInitiator.rulesStrings[26]	speechtopic(p=0.25)->mãos e corações fortes trabalhando juntos
+VFEP_Speech_Shanties.logRulesInitiator.rulesStrings[27]	speechtopic(p=0.25)->o direito de sobreviver e vencer os mais fracos
+## DefInjected/IssueDef/Precepts_Camaraderie.xml
+VFEP_Camaraderie.label	camaradagem
+## DefInjected/JobDef/Jobs_Misc.xml
+VFEP_GoToFoundry.reportString	indo até TargetA.
+VFEP_EntombIn.reportString	selado em TargetA.
+VFEP_DoWelding.reportString	Soldando TargetB em TargetA.
+VFEP_GotoAndExplode.reportString	se movendo.
+## DefInjected/MVCF.ModDef/Apparel_Various.xml
+VFEP.label	VFE Pirates
+VFEP.description	VFE Pirates
+## DefInjected/MemeDef/Memes_Misc.xml
+VFEP_PirateMeme.description	O forte deve tomar do fraco, pois é seu direito, mas a camaradagem e o código vêm acima de tudo.
+VFEP_PirateMeme.descriptionMaker.rules.rulesStrings[0]	creation(tag=meme_Pirate)        ->[deity0_name] nos mostrou que os [memberNamePlural] devem ficar unidos como tripulação para impor a sua vontade aos mais fracos.
+VFEP_PirateMeme.descriptionMaker.rules.rulesStrings[1]	episode(uses=1,tag=meme_Pirate)  ->[deity0_name] gritou a todos os [memberNamePlural]: "No serviço honesto há comida rala, salário baixo e trabalho pesado; na pirataria, fartura e saciedade, prazer e sossego, liberdade e poder. Tomem."
+VFEP_PirateMeme.descriptionMaker.rules.rulesStrings[2]	intro(tag=meme_Pirate)           ->Em [place_name], [place_summary], os [memberNamePlural] criaram um porto seguro onde o saque podia ser contado para a glória de [deity0_name].
+VFEP_PirateMeme.descriptionMaker.rules.rulesStrings[3]	conflict(tag=meme_Pirate)           ->Um [foeLeader] covarde olhou para isso com desprezo, pois queria todas as riquezas para si.
+VFEP_PirateMeme.descriptionMaker.rules.rulesStrings[4]	founderJoin(tag=meme_Pirate)        ->O seguidor mais fiel de [deity0_name], o capitão [founderName], capturou o [foeLeader] num ataque ousado.
+VFEP_PirateMeme.descriptionMaker.rules.rulesStrings[5]	victory(tag=meme_Pirate)            ->Os companheiros de [founderName] prenderam o [foeLeader], executado dias depois para a glória de [deity0_name].
+VFEP_PirateMeme.descriptionMaker.rules.rulesStrings[6]	setup(tag=meme_Pirate)           ->[founderName] foi o maior dos capitães, um líder de verdade. Milhares de piratas se uniram sob a sua bandeira aterradora.
+VFEP_PirateMeme.descriptionMaker.rules.rulesStrings[7]	story(uses=1,tag=meme_Pirate)    ->[founderName] nos fez entender que provações, sofrimento e sacrifícios devem ser enfrentados juntos, como tripulação. Aprendemos a valorizar o companheirismo e a camaradagem, e a nos respeitar.
+VFEP_PirateMeme.descriptionMaker.rules.rulesStrings[8]	lessonIntro(tag=meme_Pirate)         ->Falei com o maior pirata que já existiu, uma lenda entre os homens. Ele me mostrou que
+VFEP_PirateMeme.descriptionMaker.rules.rulesStrings[9]	lesson(tag=meme_Pirate)              ->provações, sofrimento e sacrifícios devem ser enfrentados juntos, como tripulação
+VFEP_PirateMeme.descriptionMaker.rules.rulesStrings[10]	lessonReinforcement(tag=meme_Pirate) ->Ele me ensinou a valorizar o companheirismo e a camaradagem, e o mérito de respeitar uns aos outros.
+VFEP_PirateMeme.descriptionMaker.rules.rulesStrings[11]	archistBasis(tag=meme_Pirate)    ->Os arquotecs não respeitam quem não sabe se defender: enfrentaremos os mais fracos como tripulação.
+VFEP_PirateMeme.descriptionMaker.rules.rulesStrings[12]	archistFact(tag=meme_Pirate)     ->Provaremos aos arquotecs que o companheirismo e a camaradagem são os valores que nos mantêm fortes.
+VFEP_PirateMeme.descriptionMaker.rules.rulesStrings[13]	archistProphecy(tag=meme_Pirate) ->Só ficando de pé, orgulhosos e unidos, seremos dignos da transcendência.
+VFEP_PirateMeme.descriptionMaker.rules.rulesStrings[14]	animistBasis(tag=meme_Pirate)    ->Os espíritos não respeitam quem não sabe se defender: enfrentaremos os mais fracos como tripulação.
+VFEP_PirateMeme.descriptionMaker.rules.rulesStrings[15]	animistFact(tag=meme_Pirate)     ->Provaremos aos espíritos que o companheirismo e a camaradagem são os valores que nos mantêm fortes.
+VFEP_PirateMeme.descriptionMaker.rules.rulesStrings[16]	animistProphecy(tag=meme_Pirate) ->[itIsSaid] que só ficando de pé, orgulhosos e unidos, faremos os espíritos nos ouvirem de verdade.
+VFEP_PirateMeme.descriptionMaker.rules.rulesStrings[17]	serketistProphecy(tag=meme_Pirate)->[itIsSaid] que provaremos que o companheirismo e a camaradagem são os valores que nos mantêm fortes.
+VFEP_PirateMeme.descriptionMaker.rules.rulesStrings[18]	chthonianProphecy(tag=meme_Pirate)->Essas entidades sobrenaturais querem nos destruir, mas ficaremos unidos contra elas. Nada abala a nossa camaradagem, nem elas.
+VFEP_PirateMeme.descriptionMaker.rules.rulesStrings[19]	esotericismProphecy(tag=meme_Pirate)->Esse conhecimento oculto exige uma vontade unida. Ficaremos juntos como tripulação, e a camaradagem nos deixará abraçar esses segredos arcanos com facilidade.
+VFEP_PirateMeme.descriptionMaker.rules.rulesStrings[20]	eschatologismFact(tag=meme_Pirate)->Vamos pilhar e saquear os mais fracos, pois o mundo que criaram precisa ser destruído, e só a nossa tripulação merece o que conquistaram.
+VFEP_PirateMeme.descriptionMaker.rules.rulesStrings[21]	introMemo(tag=meme_Pirate)->Como membro do nosso Departamento de Recuperação e Reintegração de Posse, lembramos que qualquer recurso encontrado neste planeta é propriedade da Empresa, e por isso qualquer facção hostil que tente se apossar dos nossos ativos deve ser eliminada com EXTREMO rigor. Não vamos deixar que outros peguem o que é nosso por direito.
+VFEP_PirateMeme.descriptionMaker.rules.rulesStrings[22]	alienistProphecy(tag=meme_Pirate)->Essas criaturas desgarradas são nossas para fazermos o que quisermos.
+VFEP_PirateMeme.generalRules.rulesStrings[0]	memeAdjective->bucaneiro
+VFEP_PirateMeme.generalRules.rulesStrings[1]	memeAdjective->criminoso
+VFEP_PirateMeme.generalRules.rulesStrings[2]	memeAdjective->saqueador
+VFEP_PirateMeme.generalRules.rulesStrings[3]	memeAdjective->pilhador
+VFEP_PirateMeme.generalRules.rulesStrings[4]	memeAdjective->amotinado
+VFEP_PirateMeme.generalRules.rulesStrings[5]	memeAdjective->pirata
+VFEP_PirateMeme.generalRules.rulesStrings[6]	memeConcept->camaradagem
+VFEP_PirateMeme.generalRules.rulesStrings[7]	memeConcept->pirataria
+VFEP_PirateMeme.generalRules.rulesStrings[8]	memeLeaderNoun->mestre
+VFEP_PirateMeme.generalRules.rulesStrings[9]	memeLeaderNoun->comandante
+VFEP_PirateMeme.generalRules.rulesStrings[10]	memeLeaderNoun->chefe
+VFEP_PirateMeme.generalRules.rulesStrings[11]	memeLeaderAdjective->galante
+VFEP_PirateMeme.generalRules.rulesStrings[12]	memeLeaderAdjective->draconiano
+VFEP_PirateMeme.generalRules.rulesStrings[13]	memeLeaderAdjective->insensível
+VFEP_PirateMeme.generalRules.rulesStrings[14]	memeLeaderAdjective->corajoso
+VFEP_PirateMeme.generalRules.rulesStrings[15]	memeLeaderAdjective->implacável
+VFEP_PirateMeme.generalRules.rulesStrings[16]	memeLeaderAdjective->ousado
+VFEP_PirateMeme.generalRules.rulesStrings[17]	memeMoralist->capelão
+VFEP_PirateMeme.generalRules.rulesStrings[18]	memeMoralist->imediato
+VFEP_PirateMeme.generalRules.rulesStrings[19]	memeMoralist->primeiro-oficial
+VFEP_PirateMeme.symbolPacks.0.ideoName	Pirataria
+VFEP_PirateMeme.symbolPacks.0.member	tripulante
+VFEP_PirateMeme.symbolPacks.0.theme	pirataria
+## DefInjected/PawnKindDef/PawnKinds_Junkers.xml
+VFEP_Scrapper.label	ferro-velho
+VFEP_Footsoldier.label	soldado a pé
+VFEP_HeavyWeaponsPlatform.label	plataforma de armas pesadas
+VFEP_Hussar.label	hussardo
+VFEP_Artillery.label	artilharia
+## DefInjected/PawnKindDef/PawnKinds_Mercenaries.xml
+VFEP_Private.label	soldado raso
+VFEP_Corporal.label	cabo
+VFEP_Sergeant.label	sargento
+VFEP_SergeantMajor.label	sargento-mor
+VFEP_Lieutenant.label	tenente
+VFEP_Captain.label	capitão
+VFEP_General.label	general
+VFEP_General_Melee.label	general
+## DefInjected/PawnKindDef/Races_Mechanoid.xml
+VFEP_Mech_Wardrone.label	drone de guerra
+VFEP_Mech_Spidermine.label	mina-aranha

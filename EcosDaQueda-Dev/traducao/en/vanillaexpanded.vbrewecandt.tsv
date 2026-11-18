@@ -1,0 +1,350 @@
+## DefInjected/HediffDef/Drinks_BlackTea.xml
+VBE_DrankBlackTea.label	drank breakfast tea
+VBE_DrankBlackTea.description	Tannins naturally found in tea once metabolised increases the stimuli in ones nervous system, suppressing ones urge to sleep, as well as boosting ones immune system. Increases immunity gain speed by 20% and provides 15% reduction in rest fall rate for 5 hours.
+## DefInjected/HediffDef/Drinks_DalgonaCoffee.xml
+VBE_DalgonaCoffeeHigh.label	dalgona coffee high
+VBE_DalgonaCoffeeHigh.description	Caffeine naturally found in coffee once metabolised increases the stimuli in one's nervous system, suppressing ones urge to sleep, as well as clearing ones mind. Increases learning speed by a 15% amount and 15% reduction in rest fall rate. Cold coffee reduces heatstroke. Dalgona coffee provides a 10% research speed bonus.
+VBE_DalgonaCoffeeHigh.labelNoun	a dalgona coffee high
+## DefInjected/HediffDef/Drinks_EarlGreyTea.xml
+VBE_DrankEarlGreyTea.label	drank earl grey tea
+VBE_DrankEarlGreyTea.description	Tannins naturally found in tea once metabolised increases the stimuli in ones nervous system, suppressing ones urge to sleep, as well as boosting ones immune system. Increases immunity gain speed by 15% and provides 10% reduction in rest fall rate for 5 hours. Earl grey tea provides a 10% research speed bonus.
+## DefInjected/HediffDef/Drinks_EspressoRomano.xml
+VBE_LemonCoffeeHigh.label	lemon coffee high
+VBE_LemonCoffeeHigh.description	Caffeine naturally found in coffee once metabolised increases the stimuli in one's nervous system, suppressing ones urge to sleep, as well as clearing ones mind. Increases learning speed by a 15% amount and 15% reduction in rest fall rate. Hot coffee reduces hypothermia. Lemon coffee acts as a remedy against Gut Worms, increasing tending quality with each coffee drank.
+VBE_LemonCoffeeHigh.labelNoun	a lemon coffee high
+## DefInjected/HediffDef/Drinks_IrishCoffee.xml
+VBE_IrishCoffeeHigh.label	irish coffee high
+VBE_IrishCoffeeHigh.description	Caffeine naturally found in coffee once metabolised increases the stimuli in one's nervous system, suppressing ones urge to sleep, as well as clearing ones mind. Increases learning speed by a 16% amount and 16% reduction in rest fall rate. Increases global work speed by 16%. Hot coffee reduces hypothermia.
+VBE_IrishCoffeeHigh.labelNoun	an irish coffee high
+## DefInjected/HediffDef/Drinks_KombuchaTea.xml
+VBE_DrankKombuchaTea.label	drank kombucha tea
+VBE_DrankKombuchaTea.description	Tannins naturally found in tea once metabolised increases the stimuli in ones nervous system, suppressing ones urge to sleep, as well as boosting ones immune system. Increases immunity gain speed by 15% and provides 10% reduction in rest fall rate for 5 hours. Kombucha tea reduces the effects of Diabetes if present. Kombucha acts as a home remedy against the flu, reducing its severity by 5%.
+## DefInjected/HediffDef/Drinks_LatteCoffee.xml
+VBE_LatteCoffeeHigh.label	latte coffee high
+VBE_LatteCoffeeHigh.description	Caffeine naturally found in coffee once metabolised increases the stimuli in one's nervous system, suppressing ones urge to sleep, as well as clearing ones mind. Increases learning speed by a 18% amount and 18% reduction in rest fall rate. Latte coffee reduces hypothermia.
+VBE_LatteCoffeeHigh.labelNoun	a latte coffee high
+## DefInjected/HediffDef/Drinks_LemonTea.xml
+VBE_DrankLemonTea.label	drank lemon tea
+VBE_DrankLemonTea.description	Tannins naturally found in tea once metabolised increases the stimuli in ones nervous system, suppressing ones urge to sleep, as well as boosting ones immune system. Increases immunity gain speed by 15% and provides 10% reduction in rest fall rate for 5 hours. Lemon tea acts as a remedy against Gut Worms, increasing tending quality with each coffee drank.
+## DefInjected/HediffDef/Drinks_MasalaChai.xml
+VBE_DrankMasalaChai.label	drank masala chai
+VBE_DrankMasalaChai.description	Tannins naturally found in tea once metabolised increases the stimuli in ones nervous system, suppressing ones urge to sleep, as well as boosting ones immune system. Increases immunity gain speed by 15% and provides 10% reduction in rest fall rate for 5 hours. Masala chai acts as a home remedy against wound infections, reducing the severity of a random infection by 5%.
+## DefInjected/HediffDef/Drinks_MintCoffee.xml
+VBE_MintCoffeeHigh.label	mint coffee high
+VBE_MintCoffeeHigh.description	Caffeine naturally found in coffee once metabolised increases the stimuli in one's nervous system, suppressing ones urge to sleep, as well as clearing ones mind. Increases learning speed by a 15% amount and 15% reduction in rest fall rate. Hot coffee reduces hypothermia. Mint coffee provides fresh breath, increasing social impact by 10%.
+VBE_MintCoffeeHigh.labelNoun	a mint coffee high
+## DefInjected/HediffDef/Drinks_MintTea.xml
+VBE_DrankMintTea.label	drank mint tea
+VBE_DrankMintTea.description	Tannins naturally found in tea once metabolised increases the stimuli in ones nervous system, suppressing ones urge to sleep, as well as boosting ones immune system. Increases immunity gain speed by 15% and provides 10% reduction in rest fall rate for 5 hours. Mint tea provides fresh breath, increasing social impact by 10%.
+## DefInjected/HediffDef/Drinks_NoonChai.xml
+VBE_DrankNoonChai.label	drank noon chai
+VBE_DrankNoonChai.description	Tannins naturally found in tea once metabolised increases the stimuli in ones nervous system, suppressing ones urge to sleep, as well as boosting ones immune system. Increases immunity gain speed by 15% and provides 10% reduction in rest fall rate for 5 hours. Used for treating muscle parasites.
+## DefInjected/HediffDef/Drinks_Yuenyeung.xml
+VBE_YuenYeungHigh.label	yuenyeung high
+VBE_YuenYeungHigh.description	Caffeine naturally found in coffee once metabolised increases the stimuli in ones nervous system, suppressing ones urge to sleep, as well as clearing ones mind. Increases learning speed by a 15% amount and 13% reduction in rest fall rate. The tea in it increases immunity gain speed by 15%. Cold coffee reduces heatstroke.
+VBE_YuenYeungHigh.labelNoun	a coffee high
+## DefInjected/HediffDef/Items_Condiments_Mint.xml
+VCE_ConsumedMintLeaves.label	consumed mint (from meal)
+VCE_ConsumedMintLeaves.description	Consumed some fresh mint leaves. The fresh breath increases social impact by 10%.
+## DefInjected/RecipeDef/Recipes_Coffee.xml
+VBE_MakeCoffeeFast.label	make espresso coffee
+VBE_MakeCoffeeFast.description	Make a warm, bitter beverage usually complemented with milk and sugar. A favorite among students and office workers across the galaxy due to high caffeine content and pleasing aroma. Brewing coffee in a espresso machine is generally much faster.
+VBE_MakeCoffeeFast.jobString	Making coffee.
+VBE_ReheatCoffee.label	reheat iced coffee
+VBE_ReheatCoffee.description	This espresso machine has a small built-in grill to reheat iced coffee.
+VBE_ReheatCoffee.jobString	Reheating iced coffee.
+VBE_BrewLatteCoffee.label	brew latte coffee
+VBE_BrewLatteCoffee.description	Brew a potent espresso mixed with fresh milk to help ease bitterness before pouring and serving. Lattes have a reputation of being particularly meant for “sophisticated” individuals.
+VBE_BrewLatteCoffee.jobString	Brewing latte coffee.
+VBE_BrewMochaCoffee.label	brew mocha coffee
+VBE_BrewMochaCoffee.description	Brew a coffee mixed with sweet and luxurious chocolate. Those of snobbish persuasion would argue mocha is more of a dessert than an actual coffee drink.
+VBE_BrewMochaCoffee.jobString	Brewing mocha coffee.
+VBE_BrewIrishCoffee.label	brew irish coffee
+VBE_BrewIrishCoffee.description	Brew a drink made with whiskey and coffee blended thoroughly before forming a head and being topped with a spoonful of whipped cream. Perfect for those who just got out of bed and are already wanting to go back to it.
+VBE_BrewIrishCoffee.jobString	Brewing irish coffee.
+VBE_BrewCannibalCoffee.label	brew cannibal coffee
+VBE_BrewCannibalCoffee.description	Brew a drink... for a very particular... refined coffee drinker.
+VBE_BrewCannibalCoffee.jobString	Brewing cannibal coffee.
+## DefInjected/RecipeDef/Recipes_CoffeePlants.xml
+VBE_BrewLemonCoffee.label	brew espresso romano
+VBE_BrewLemonCoffee.description	Brew an already acidic coffee garnished with a wedge of more acidic lemon, meant to be juiced into the coffee before quickly consumed while hot. An acquired taste to be sure but lauded by those who do prefer it.
+VBE_BrewLemonCoffee.jobString	Brewing espresso romano.
+## DefInjected/RecipeDef/Recipes_Coffee_Cooking.xml
+VBE_BrewMintCoffee.label	brew mint coffee
+VBE_BrewMintCoffee.description	Brew a bitter espresso mixed with cream or milk, then further mixed with mint oil and garnished. Cool and velvety coffee gives way to an even cooler, soothing aftertaste, not to mention great smelling breath.
+VBE_BrewMintCoffee.jobString	Brewing mint coffee.
+VBE_BrewDalgonaCoffee.label	brew dalgona coffee
+VBE_BrewDalgonaCoffee.description	Brew a trendy, newer drink in the world of coffee rumored to originate from far off steamworlds. Coffee granules are rapidly mixed with sugar to form a thick, luxuriously sweet foam. Afterwards the foam is dispersed over deeply chilled milk before drinking.
+VBE_BrewDalgonaCoffee.jobString	Brewing dalgona coffee.
+## DefInjected/RecipeDef/Recipes_Lemonade.xml
+VBE_MixLemonade.label	mix lemonade
+VBE_MixLemonade.description	Squeeze a few lemons, mix the juice with water and add some sugar.
+VBE_MixLemonade.jobString	Mixing lemonade.
+## DefInjected/RecipeDef/Recipes_Tea.xml
+VBE_MakeTeaFast.label	make fast tea
+VBE_MakeTeaFast.description	Make a pleasing, aromatic beverage prepared by steeping a bag of tea leaves in boiling water. Brewing tea in this specially prepared espresso machine is generally much faster.
+VBE_MakeTeaFast.jobString	Making fast tea.
+VBE_MakeBlackTea.label	make breakfast tea
+VBE_MakeBlackTea.description	Make a particularly bitter tea softened with creamy milk. A proper morning brew that wakes one up and helps cure minor ailments.
+VBE_MakeBlackTea.jobString	Making breakfast tea.
+VBE_MakeYuenYeung.label	make yuenyeung
+VBE_MakeYuenYeung.description	Make a mixture of coffee and tea. Tea and coffee drinkers respectively set their differences aside while concocting this unholy amalgamation. Whether it’s served hot or cold it’s equally confusing to the imbiber.
+VBE_MakeYuenYeung.jobString	Making yuenyeung.
+VBE_MakeKombucha.label	make kombucha tea
+VBE_MakeKombucha.description	Make a sugary tea left out to ferment, after fermenting the end product is a sweet and sour, sometimes even naturally fizzy drink known as kombucha. Praised for health benefits, though some remain skeptical.
+VBE_MakeKombucha.jobString	Making kombucha tea.
+## DefInjected/RecipeDef/Recipes_TeaPlants.xml
+VBE_MakeLemonTea.label	make lemon tea
+VBE_MakeLemonTea.description	Make a dark tea cut with water, chilled and garnished with a wedge of bright lemon.
+VBE_MakeLemonTea.jobString	Making lemon tea.
+VBE_MakeEarlGreyTea.label	make earl grey tea
+VBE_MakeEarlGreyTea.description	Make a very strong and semi-sweet fruity tea. Floral notes dance around one's pallet at even the most dull scent. People who finish the drink feel strangely urged to colonize.
+VBE_MakeEarlGreyTea.jobString	Making earl grey tea.
+## DefInjected/RecipeDef/Recipes_Tea_Cooking.xml
+VBE_MakeGreenTea.label	make green tea
+VBE_MakeGreenTea.description	Make a light, citrusy green tea spiked with sugar to create a buttery, almost nutty flavor.
+VBE_MakeGreenTea.jobString	Making green tea.
+VBE_MakeMintTea.label	make mint tea
+VBE_MakeMintTea.description	Make black tea leaves mixed with mint leaves and deeply steeped, then garnished with additional mint leaves. Leaves your breath surprisingly fresh.
+VBE_MakeMintTea.jobString	Making mint tea.
+VBE_MakeMasalaChai.label	make masala chai
+VBE_MakeMasalaChai.description	Make a musty, warm, almost woody tea crafted by simple leaves and complex spices. Alleged to be good against high cholesterol.
+VBE_MakeMasalaChai.jobString	Making masala chai.
+VBE_MakeNoonChai.label	make noon chai
+VBE_MakeNoonChai.description	Make an ancient Kashmiri tea mixing tea leaves, a pinch of salt and baking soda, which results in an striking pink beverage that is famous for being not only delicious but also healthy for the body. Very efficient for treating those with a high blood pressure.
+VBE_MakeNoonChai.jobString	Making noon chai.
+## DefInjected/ResearchProjectDef/Research.xml
+VBE_EspressoMachine.label	espresso machine
+VBE_EspressoMachine.description	A more sophisticated method of brewing coffees and teas by using pressurized water.
+VBE_EspressoMachine.generalRules.rulesStrings[0]	subject->innovation's path
+VBE_EspressoMachine.generalRules.rulesStrings[1]	subject_story->unveiled simple truths behind complex phenomena
+VBE_EspressoMachine.generalRules.rulesStrings[2]	subject_story->simplified the intricate to make way for practical applications
+VBE_EspressoMachine.generalRules.rulesStrings[3]	subject_story->harnessed basic principles to achieve remarkable feats
+VBE_EspressoMachine.generalRules.rulesStrings[4]	subject_gerund->streamlining the essence of discovery
+VBE_EspressoMachine.generalRules.rulesStrings[5]	subject->building blocks of progress
+VBE_EspressoMachine.generalRules.rulesStrings[6]	subject_story->laid the groundwork for monumental leaps forward
+VBE_EspressoMachine.generalRules.rulesStrings[7]	subject_story->connected dots across disciplines to reveal new insights
+VBE_EspressoMachine.generalRules.rulesStrings[8]	subject_story->crafted the foundation upon which future innovations stand
+VBE_EspressoMachine.generalRules.rulesStrings[9]	subject_gerund->laying down the keystones of advancement
+VBE_EspressoMachine.generalRules.rulesStrings[10]	subject->seeds of tomorrow
+VBE_EspressoMachine.generalRules.rulesStrings[11]	subject_story->planted ideas that would grow into transformative solutions
+VBE_EspressoMachine.generalRules.rulesStrings[12]	subject_story->cultivated a garden of knowledge, ripe with potential
+VBE_EspressoMachine.generalRules.rulesStrings[13]	subject_story->nurtured the roots of change with care and foresight
+VBE_EspressoMachine.generalRules.rulesStrings[14]	subject_gerund->sowing the future with today’s discoveries
+VBE_EspressoMachine.generalRules.rulesStrings[15]	subject->the ripple of curiosity
+VBE_EspressoMachine.generalRules.rulesStrings[16]	subject_story->set forth waves of inquiry that echoed through time
+VBE_EspressoMachine.generalRules.rulesStrings[17]	subject_story->dropped pebbles of innovation into the pond of knowledge
+VBE_EspressoMachine.generalRules.rulesStrings[18]	subject_story->watched as one question led to another, expanding the circle of understanding
+VBE_EspressoMachine.generalRules.rulesStrings[19]	subject_gerund->casting stones to create waves of progress
+VBE_EspressoMachine.generalRules.rulesStrings[20]	subject->the alchemy of progress
+VBE_EspressoMachine.generalRules.rulesStrings[21]	subject_story->merged disparate disciplines to unlock new realms of possibility
+VBE_EspressoMachine.generalRules.rulesStrings[22]	subject_story->turned the impossible into the inevitable through sheer ingenuity
+VBE_EspressoMachine.generalRules.rulesStrings[23]	subject_story->crafted solutions that reshaped the understanding of what's achievable
+VBE_EspressoMachine.generalRules.rulesStrings[24]	subject_gerund->blending science and magic into the fabric of reality
+VBE_EspressoMachine.generalRules.rulesStrings[25]	subject->the tapestry of discovery
+VBE_EspressoMachine.generalRules.rulesStrings[26]	subject_story->wove together threads of knowledge from the four corners of the world
+VBE_EspressoMachine.generalRules.rulesStrings[27]	subject_story->revealed patterns in the chaos, charting paths to untold innovations
+VBE_EspressoMachine.generalRules.rulesStrings[28]	subject_story->embroidered the annals of history with tales of serendipitous breakthroughs
+VBE_EspressoMachine.generalRules.rulesStrings[29]	subject_gerund->weaving the future from the loom of the present
+VBE_EspressoMachine.generalRules.rulesStrings[30]	subject->the crucible of creation
+VBE_EspressoMachine.generalRules.rulesStrings[31]	subject_story->fused raw elements into the building blocks of tomorrow
+VBE_EspressoMachine.generalRules.rulesStrings[32]	subject_story->tempered the fires of creativity to forge unprecedented technologies
+VBE_EspressoMachine.generalRules.rulesStrings[33]	subject_story->quenched the thirst for knowledge with the elixir of invention
+VBE_EspressoMachine.generalRules.rulesStrings[34]	subject_gerund->molding the raw materials of today into the artifacts of the future
+VBE_EspressoMachine.generalRules.rulesStrings[35]	subject->the beacon of enlightenment
+VBE_EspressoMachine.generalRules.rulesStrings[36]	subject_story->illuminated the dark corners of ignorance, guiding the way forward
+VBE_EspressoMachine.generalRules.rulesStrings[37]	subject_story->cast light on the unknown, making the unseen visible to curious minds
+VBE_EspressoMachine.generalRules.rulesStrings[38]	subject_story->ignited the flames of curiosity, kindling a worldwide pursuit of understanding
+VBE_EspressoMachine.generalRules.rulesStrings[39]	subject_gerund->lighting the torches of progress and knowledge
+VBE_EspressoMachine.generalRules.rulesStrings[40]	subject->the frontier of knowledge
+VBE_EspressoMachine.generalRules.rulesStrings[41]	subject_story->crossed new horizons in the pursuit of understanding
+VBE_EspressoMachine.generalRules.rulesStrings[42]	subject_story->challenged the status quo with groundbreaking theories
+VBE_EspressoMachine.generalRules.rulesStrings[43]	subject_story->merged ancient wisdom with modern technology for innovative solutions
+VBE_EspressoMachine.generalRules.rulesStrings[44]	subject_gerund->pushing the boundaries of science and art
+VBE_EspressoMachine.generalRules.rulesStrings[45]	subject->the essence of innovation
+VBE_EspressoMachine.generalRules.rulesStrings[46]	subject_story->transformed everyday materials into extraordinary tools
+VBE_EspressoMachine.generalRules.rulesStrings[47]	subject_story->paved the way for future generations with sustainable practices
+VBE_EspressoMachine.generalRules.rulesStrings[48]	subject_story->harnessed the power of nature to fuel new advancements
+VBE_EspressoMachine.generalRules.rulesStrings[49]	subject_gerund->fostering an ecosystem of creativity and progress
+VBE_EspressoMachine.generalRules.rulesStrings[50]	subject->the architects of tomorrow
+VBE_EspressoMachine.generalRules.rulesStrings[51]	subject_story->built the foundations for a utopia where technology serves all
+VBE_EspressoMachine.generalRules.rulesStrings[52]	subject_story->envisioned a future where harmony between technology and nature thrives
+VBE_EspressoMachine.generalRules.rulesStrings[53]	subject_story->crafted tools that empower humanity to reach its fullest potential
+VBE_EspressoMachine.generalRules.rulesStrings[54]	subject_gerund->laying the keystones for future landscapes
+VBE_EspressoMachine.generalRules.rulesStrings[55]	subject->exploratory leaps
+VBE_EspressoMachine.generalRules.rulesStrings[56]	subject_story->stepped boldly into uncharted territories of knowledge
+VBE_EspressoMachine.generalRules.rulesStrings[57]	subject_story->bridged the gap between the known and the unknown
+VBE_EspressoMachine.generalRules.rulesStrings[58]	subject_story->ventured where curiosity dared to lead
+VBE_EspressoMachine.generalRules.rulesStrings[59]	subject_gerund->embarking on journeys of discovery
+VBE_EspressoMachine.generalRules.rulesStrings[60]	subject->the essence of ingenuity
+VBE_EspressoMachine.generalRules.rulesStrings[61]	subject_story->transformed challenges into opportunities for growth
+VBE_EspressoMachine.generalRules.rulesStrings[62]	subject_story->applied creative thinking to overcome traditional obstacles
+VBE_EspressoMachine.generalRules.rulesStrings[63]	subject_story->crafted elegant solutions with a blend of art and science
+VBE_EspressoMachine.generalRules.rulesStrings[64]	subject_gerund->unlocking potential through innovation
+VBE_EspressoMachine.generalRules.rulesStrings[65]	subject->knowledge’s harvest
+VBE_EspressoMachine.generalRules.rulesStrings[66]	subject_story->gathered insights as one reaps the fields at harvest
+VBE_EspressoMachine.generalRules.rulesStrings[67]	subject_story->cultivated a bounty of understanding from the seeds of inquiry
+VBE_EspressoMachine.generalRules.rulesStrings[68]	subject_story->shared the fruits of research with the world
+VBE_EspressoMachine.generalRules.rulesStrings[69]	subject_gerund->reaping the rewards of relentless curiosity
+VBE_EspressoMachine.generalRules.rulesStrings[70]	subject->the puzzle of progress
+VBE_EspressoMachine.generalRules.rulesStrings[71]	subject_story->assembled the pieces of mystery to reveal the big picture
+VBE_EspressoMachine.generalRules.rulesStrings[72]	subject_story->matched theory with practice to solve longstanding puzzles
+VBE_EspressoMachine.generalRules.rulesStrings[73]	subject_story->uncovered hidden connections that unlocked new possibilities
+VBE_EspressoMachine.generalRules.rulesStrings[74]	subject_gerund->piecing together the elements of advancement
+## DefInjected/ThingDef/Buildings.xml
+VBE_EspressoMachineBuilding.label	espresso machine
+VBE_EspressoMachineBuilding.description	An espresso machine brews coffee by forcing pressurized water near boiling point through a "puck" of ground coffee and a filter in order to produce a thick, concentrated coffee called espresso. This particular machine also has the possibility of brewing tea using a separate system.
+## DefInjected/ThingDef/Drinks_BlackTea.xml
+VBE_BlackTea.label	breakfast tea
+VBE_BlackTea.description	A particularly bitter tea softened with creamy milk. A proper morning brew that wakes one up and helps cure minor ailments.\n\n<color=#E5E54C>Gameplay effect:</color>\n - This was called "black tea" until the British tea police under the command of Samuel Streamer intervened.
+VBE_BlackTea.ingestible.ingestCommandString	Drink {0}
+VBE_BlackTea.ingestible.ingestReportString	Drinking {0}.
+## DefInjected/ThingDef/Drinks_CannibalCoffee.xml
+VBE_CannibalCoffee.label	cannibal coffee
+VBE_CannibalCoffee.description	For a very particular… refined coffee drinker.
+VBE_CannibalCoffee.ingestible.ingestCommandString	Drink {0}
+VBE_CannibalCoffee.ingestible.ingestReportString	Drinking {0}.
+## DefInjected/ThingDef/Drinks_DalgonaCoffee.xml
+VBE_DalgonaCoffee.label	dalgona coffee
+VBE_DalgonaCoffee.description	A trendy, newer drink in the world of coffee rumored to originate from far off steamworlds. Coffee granules are rapidly mixed with sugar to form a thick, luxuriously sweet foam. Afterwards the foam is dispersed over deeply chilled milk before drinking. Arguably the perfect drink to sip on while studying or reading.
+VBE_DalgonaCoffee.ingestible.ingestCommandString	Drink {0}
+VBE_DalgonaCoffee.ingestible.ingestReportString	Drinking {0}.
+## DefInjected/ThingDef/Drinks_EarlGreyTea.xml
+VBE_EarlGreyTea.label	earl grey tea
+VBE_EarlGreyTea.description	A very strong and semi-sweet fruity tea. Floral notes dance around one's pallet at even the most dull scent. People who finish the drink feel strangely urged to colonize.
+VBE_EarlGreyTea.ingestible.ingestCommandString	Drink {0}
+VBE_EarlGreyTea.ingestible.ingestReportString	Drinking {0}.
+## DefInjected/ThingDef/Drinks_EspressoRomano.xml
+VBE_LemonCoffee.label	espresso romano
+VBE_LemonCoffee.description	A particularly strange combination. Already acidic coffee garnished with a wedge of more acidic lemon, meant to be juiced into the coffee before quickly consumed while hot. An acquired taste to be sure but lauded by those who do prefer it. Specially indicated to combat intestinal parasites.
+VBE_LemonCoffee.ingestible.ingestCommandString	Drink {0}
+VBE_LemonCoffee.ingestible.ingestReportString	Drinking {0}.
+## DefInjected/ThingDef/Drinks_GreenTea.xml
+VBE_GreenTea.label	green tea
+VBE_GreenTea.description	A light, citrusy green tea spiked with sugar to create a buttery, almost nutty flavor.
+VBE_GreenTea.ingestible.ingestCommandString	Drink {0}
+VBE_GreenTea.ingestible.ingestReportString	Drinking {0}.
+## DefInjected/ThingDef/Drinks_IrishCoffee.xml
+VBE_IrishCoffee.label	irish coffee
+VBE_IrishCoffee.description	Whiskey and coffee blended thoroughly before forming a head and being topped with a spoonful of whipped cream. Perfect for those who just got out of bed and are already wanting to go back to it.
+VBE_IrishCoffee.ingestible.ingestCommandString	Drink {0}
+VBE_IrishCoffee.ingestible.ingestReportString	Drinking {0}.
+## DefInjected/ThingDef/Drinks_KombuchaTea.xml
+VBE_Kombucha.label	kombucha tea
+VBE_Kombucha.description	A sugary tea left out to ferment, after fermenting the end product is a sweet and sour, sometimes even naturally fizzy drink known as kombucha. Praised for health benefits, though some remain skeptical. Kombucha acts as a home remedy against the flu, reducing its severity by 5%.
+VBE_Kombucha.ingestible.ingestCommandString	Drink {0}
+VBE_Kombucha.ingestible.ingestReportString	Drinking {0}.
+## DefInjected/ThingDef/Drinks_LatteCoffee.xml
+VBE_LatteCoffee.label	latte coffee
+VBE_LatteCoffee.description	Potent espresso mixed with fresh milk to help ease bitterness before pouring and serving. Lattes have a reputation of being particularly meant for “sophisticated” individuals.
+VBE_LatteCoffee.ingestible.ingestCommandString	Drink {0}
+VBE_LatteCoffee.ingestible.ingestReportString	Drinking {0}.
+## DefInjected/ThingDef/Drinks_LemonTea.xml
+VBE_LemonTea.label	lemon tea
+VBE_LemonTea.description	A dark tea cut with water, chilled and garnished with a wedge of bright lemon.
+VBE_LemonTea.ingestible.ingestCommandString	Drink {0}
+VBE_LemonTea.ingestible.ingestReportString	Drinking {0}.
+## DefInjected/ThingDef/Drinks_Lemonade.xml
+VBE_Lemonade.label	lemonade
+VBE_Lemonade.description	A sweet beverage mixed together with lemon juice, sugar, and water.
+VBE_Lemonade.ingestible.ingestCommandString	Drink {0}
+VBE_Lemonade.ingestible.ingestReportString	Drinking {0}.
+VBE_Lemonade.tools.neck.label	neck
+## DefInjected/ThingDef/Drinks_MasalaChai.xml
+VBE_MasalaChai.label	masala chai
+VBE_MasalaChai.description	A musty, warm, almost woody tea crafted by simple leaves and complex spices. Masala chai acts as a home remedy against wound infections, reducing the severity of a random infection by 5%.
+VBE_MasalaChai.ingestible.ingestCommandString	Drink {0}
+VBE_MasalaChai.ingestible.ingestReportString	Drinking {0}.
+## DefInjected/ThingDef/Drinks_MintCoffee.xml
+VBE_MintCoffee.label	mint coffee
+VBE_MintCoffee.description	Bitter espresso mixed with cream or milk, then further mixed with mint oil and garnished. Cool and velvety coffee gives way to an even cooler, soothing aftertaste, not to mention great smelling breath.
+VBE_MintCoffee.ingestible.ingestCommandString	Drink {0}
+VBE_MintCoffee.ingestible.ingestReportString	Drinking {0}.
+## DefInjected/ThingDef/Drinks_MintTea.xml
+VBE_MintTea.label	mint tea
+VBE_MintTea.description	Black tea leaves mixed with mint leaves and deeply steeped, then garnished with additional mint leaves. Leaves your breath surprisingly fresh.
+VBE_MintTea.ingestible.ingestCommandString	Drink {0}
+VBE_MintTea.ingestible.ingestReportString	Drinking {0}.
+## DefInjected/ThingDef/Drinks_MochaCoffee.xml
+VBE_MochaCoffee.label	mocha coffee
+VBE_MochaCoffee.description	Coffee mixed with sweet and luxurious chocolate, very fun to drink. Those of snobbish persuasion would argue mocha is more of a dessert than an actual coffee drink.
+VBE_MochaCoffee.ingestible.ingestCommandString	Drink {0}
+VBE_MochaCoffee.ingestible.ingestReportString	Drinking {0}.
+## DefInjected/ThingDef/Drinks_NoonChai.xml
+VBE_NoonChai.label	noon chai
+VBE_NoonChai.description	An ancient Kashmiri tea mixing tea leaves, a pinch of salt and baking soda, which results in an striking pink beverage that is famous for being not only delicious but also healthy for the body. Used for treating muscle parasites.
+VBE_NoonChai.ingestible.ingestCommandString	Drink {0}
+VBE_NoonChai.ingestible.ingestReportString	Drinking {0}.
+## DefInjected/ThingDef/Drinks_PumpkinCoffee.xml
+VBE_PumpkinCoffee.label	pumpkin spice coffee
+VBE_PumpkinCoffee.description	Cheap, mass produced generic coffee seeped in an array of spices, oddly excluding any actual pumpkin. Thousands of years ago, this type of coffee was stereotypically consumed by red-haired hipsters with man buns.
+VBE_PumpkinCoffee.ingestible.ingestCommandString	Drink {0}
+VBE_PumpkinCoffee.ingestible.ingestReportString	Drinking {0}.
+## DefInjected/ThingDef/Drinks_Yuenyeung.xml
+VBE_Yuenyeung.label	yuenyeung
+VBE_Yuenyeung.description	A mixture of coffee and tea. Tea and coffee drinkers respectively set their differences aside while concocting this unholy amalgamation. It is usually served cold, but whether it’s served hot or cold it’s equally confusing to the imbiber.
+VBE_Yuenyeung.ingestible.ingestCommandString	Drink {0}
+VBE_Yuenyeung.ingestible.ingestReportString	Drinking {0}.
+## DefInjected/ThingDef/Items_Condiments_Mint.xml
+VBE_MintLeaves.label	mint leaves
+VBE_MintLeaves.description	Mint leaves are infamous for their cooling effect on one's mouth, as well as ease of seeping into an array of teas or delicately garnishing a dish. Mint leaves rot quite fast.
+## DefInjected/ThingDef/Items_Resource_RawFruit_Lemons.xml
+VCE_RawLemon.label	lemons
+VCE_RawLemon.description	An acid and sour tasting fruit. The juice, zest, and pulp are often used in cooking, often on fish and other meat for better taste. Lemon is also used to flavour drinks, such as lemonade, or mixed with tea and coffee.
+## DefInjected/ThingDef/Plants_Cultivated_Farm_Mint.xml
+VBE_MintPlant.label	mint plant
+VBE_MintPlant.description	A plant sprouting into an array of mint leaves. Mint leaves are infamous for their cooling effect on one's mouth, as well as ease of seeping into an array of teas or delicately garnishing a dish. Flourishes indoors and in plant pots, while being pleasant to look at.
+## DefInjected/ThingDef/Plants_Cultivated_Trees_Lemons.xml
+VBE_LemonTree.label	lemon tree
+VBE_LemonTree.description	A tall tree native to both deserts and tropics alike. Bright, sour lemons grow profusely on this tree, some lemons may even mature early and fall to the ground before the primary harvest is ready.
+## DefInjected/ThoughtDef/Drinks_BlackTea.xml
+VBE_DrankBlackTea.stages.an_inspiring_cup.label	an inspiring cup
+VBE_DrankBlackTea.stages.an_inspiring_cup.description	A delightfully intense cup of breakfast tea really brightens the day.
+## DefInjected/ThoughtDef/Drinks_DalgonaCoffee.xml
+VBE_DalgonaCoffeeHigh.stages.Sugary_awakening.label	Sugary awakening
+VBE_DalgonaCoffeeHigh.stages.Sugary_awakening.description	That dalgona coffee hit the spot, now let’s get some work done.
+## DefInjected/ThoughtDef/Drinks_EarlGreyTea.xml
+VBE_DrankEarlGreyTea.stages.Tea_Earl_Grey_Hot.label	Tea. Earl Grey. Hot
+VBE_DrankEarlGreyTea.stages.Tea_Earl_Grey_Hot.description	Make it so.
+## DefInjected/ThoughtDef/Drinks_EspressoRomano.xml
+VBE_LemonCoffeeHigh.stages.Lemony_awakening.label	Lemony awakening
+VBE_LemonCoffeeHigh.stages.Lemony_awakening.description	That lemon coffee hit the spot, now let’s get some work done.
+## DefInjected/ThoughtDef/Drinks_IrishCoffee.xml
+VBE_IrishCoffeeHigh.stages.Live_now_sleep_later.label	Live now, sleep later
+VBE_IrishCoffeeHigh.stages.Live_now_sleep_later.description	That coffee hit the spot, now let’s get some work done.
+## DefInjected/ThoughtDef/Drinks_KombuchaTea.xml
+VBE_DrankKombuchaTea.stages.A_Healthy_sip.label	A Healthy sip!
+VBE_DrankKombuchaTea.stages.A_Healthy_sip.description	A tasty cup of kombucha tea a day keeps the doctor away.
+## DefInjected/ThoughtDef/Drinks_LatteCoffee.xml
+VBE_LatteCoffeeHigh.stages.Tall_Dark_and_Refined.label	Tall, Dark and Refined
+VBE_LatteCoffeeHigh.stages.Tall_Dark_and_Refined.description	That latte coffee hit the spot, now let’s get some work done.
+## DefInjected/ThoughtDef/Drinks_LemonTea.xml
+VBE_DrankLemonTea.stages.A_Healthy_cup.label	A Healthy cup!
+VBE_DrankLemonTea.stages.A_Healthy_cup.description	A tasty cup of lemon tea a day keeps the doctor away.
+## DefInjected/ThoughtDef/Drinks_MasalaChai.xml
+VBE_DrankMasalaChai.stages.Fancied_a_zesty_cuppa.label	Fancied a zesty cuppa
+VBE_DrankMasalaChai.stages.Fancied_a_zesty_cuppa.description	A delightfully complex cup of spicy masala chai really brightens the day.
+## DefInjected/ThoughtDef/Drinks_MintCoffee.xml
+VBE_MintCoffeeHigh.stages.Fresh_awakening.label	Fresh awakening
+VBE_MintCoffeeHigh.stages.Fresh_awakening.description	That mint coffee hit the spot, now let’s get some work done.
+## DefInjected/ThoughtDef/Drinks_MintTea.xml
+VBE_DrankMintTea.stages.Refreshing_tea.label	Refreshing tea
+VBE_DrankMintTea.stages.Refreshing_tea.description	A delightfully fresh cup of mint tea really brightens the day.
+## DefInjected/ThoughtDef/Drinks_NoonChai.xml
+VBE_DrankNoonChai.stages.Fancied_a_salty_cuppa.label	Fancied a salty cuppa
+VBE_DrankNoonChai.stages.Fancied_a_salty_cuppa.description	A delightful cup of noon chai really brightens the day.
+## DefInjected/ThoughtDef/Drinks_Yuenyeung.xml
+VBE_YuenYeungHigh.stages.A_very_original_taste.label	A very original taste
+VBE_YuenYeungHigh.stages.A_very_original_taste.description	Like coffee... also, like tea.
+## DefInjected/ThoughtDef/Items_Condiments_Mint.xml
+VCE_ConsumedMintLeaves.stages.consumed_mint.label	consumed mint
+VCE_ConsumedMintLeaves.stages.consumed_mint.description	Fresh breath!
+## DefInjected/ThoughtDef/Thoughts_Memory_Drinking.xml
+VBE_DrankLemonadeThought.stages.Refreshing_tang.label	Refreshing tang
+VBE_DrankLemonadeThought.stages.Refreshing_tang.description	I drank a bottle of lemonade. It's not much but it makes me feel nice.
+## DefInjected/WorkGiverDef/WorkGivers.xml
+VBE_DoBillsEspressoMachine.label	brew at espresso machine
+VBE_DoBillsEspressoMachine.gerund	brew at
+VBE_DoBillsEspressoMachine.verb	brew
+## Keyed/Misc_Gameplay.xml
+VCE_CondimentEffectsMint	Consuming meals that include this condiment increases social impact by 10%.

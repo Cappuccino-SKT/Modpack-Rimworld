@@ -1,0 +1,964 @@
+## DefInjected/GameConditionDef/GameConditions_Odyssey.xml
+VEE_ColossalFauna.label	colossal fauna
+VEE_ColossalFauna.description	All fauna in this area is much larger than usual.
+VEE_Microfauna.label	microfauna
+VEE_Microfauna.description	All fauna in this area is much smaller than usual.
+VEE_NoWind.label	no wind
+VEE_NoWind.description	Winds are almost completely absent in this area.
+VEE_RagingWind.label	raging winds
+VEE_RagingWind.description	Winds are extraordinarily stronger in this area.
+VEE_GeomagneticStorm.label	geomagnetic storm
+VEE_GeomagneticStorm.description	An intense geomagnetic event blankets the region, completely disabling all electrical devices.
+VEE_SkygazingSpot.label	skygazing spot
+VEE_SkygazingSpot.description	A serene atmospheric phenomenon encourages colonists to spend more time gazing at the sky. Increases the chance of skygazing and boosts the joy it provides.
+VEE_RottenStench.label	rotten stench
+VEE_RottenStench.description	Acrid vapors seep from the ground, blanketing the area in a foul smell that burns the lungs and sours the mood.
+VEE_FertileRainsGameCondition.label	fertile rain
+VEE_FertileRainsGameCondition.description	Unusually nutrient-rich rainfall is sweeping across the region, boosting plant growth for its duration.
+VEE_FertileRainsGameCondition.endMessage	The fertile rain is ending.
+VEE_TidalFlooding.label	tidal flooding
+VEE_TidalFlooding.description	In this extremely flat coastal plain the tides push far inland, regularly submerging large stretches of land.
+## DefInjected/HediffDef/Hediffs_Misc.xml
+VEE_ColossalFauna.label	colossal animal
+VEE_ColossalFauna.description	This animal is larger than usual.
+VEE_Microfauna.label	microfauna
+VEE_Microfauna.description	This animal is smaller than usual.
+VEE_RottenStench.label	rotten stench
+VEE_RottenStench.description	Acrid vapors seep from the ground, blanketing the area in a foul smell that burns the lungs and sours the mood.
+VEE_DustStorm.label	affected by dust storm
+VEE_DustStorm.description	A dust storm is making vision practically impossible in this region.
+VEE_QuicksandHediff.label	traversing quicksand
+VEE_QuicksandHediff.description	Moving through quicksand. Greatly reduces movement speed.
+VEE_AnimaPearlsHediff.label	psychic sensitivity boost
+VEE_AnimaPearlsHediff.description	Eating some anima pearls has provided a small psychic sensitivity boost.
+## DefInjected/IncidentDef/Incidents_Map_Misc.xml
+VEE_Alphabeavers.label	alphabeavers
+VEE_MigratoryHerds.label	herd migration
+VEE_MigratoryHerds.letterLabel	Animal migration: {0}
+VEE_MigratoryHerds.letterText	A group of {0} is passing through the area.\n\nThey won't attack unless provoked.
+VEE_Infestation.label	infestation
+VEE_Infestation.letterLabel	Infestation
+VEE_Infestation.letterText	Giant insects are tunneling towards you! They will break through in a few seconds and plant hives.\n\nThe hives will spawn more insects and more hives.\n\nIf you don't want the insects to infest the whole area, destroy the hives. But beware - the bugs will defend their home.
+VEE_TornadoAlley.label	tornado
+VEE_FertileRains.label	fertile rains
+VEE_FertileRains.letterLabel	Fertile Rains
+VEE_FertileRains.letterText	Unusually nutrient-rich rainfall is sweeping across the region, boosting plant growth for its duration.
+VEE_Aurora.label	aurora
+VEE_Aurora.letterLabel	Aurora
+VEE_TidalFloodingIncident.label	tidal flooding
+## DefInjected/LandmarkDef/Landmarks.xml
+VEE_MeteorCrater.label	meteor crater
+VEE_ResurgentCaldera.label	resurgent caldera
+VEE_CraterLake.label	crater lake
+VEE_ToxicCrater.label	toxic crater lake
+VEE_Volcano.label	volcano
+VEE_CalmBasin.label	calm basin
+VEE_LoneIsland.label	lone island
+VEE_DetachedIceberg.label	detached iceberg
+VEE_IceAndFire.label	ice and fire
+VEE_LoneIslandWithLake.label	central lake island
+VEE_LoneIslandWithMountain.label	resurgent island
+VEE_CoralReef.label	coral reef
+VEE_SaltPlains.label	salt plains
+VEE_RockRidge.label	rock ridge
+VEE_JaggedRocks.label	jagged rocks
+VEE_SerpentineCanyons.label	serpentine canyons
+VEE_DryRiver.label	dry river
+VEE_Mangrove.label	mangrove
+VEE_DustBowl.label	dust bowl
+VEE_SulfuricLake.label	sulfuric lake
+VEE_SulfuricRiver.label	sulfuric river
+VEE_BurnedForest.label	burned forest
+VEE_BloomingFields.label	blooming fields
+VEE_CactusFields.label	cactus fields
+VEE_FloodPlains.label	flood plains
+VEE_ContaminatedReservoir.label	contaminated reservoir
+VEE_ContaminatedRiver.label	contaminated river
+VEE_ContaminatedCoast.label	contaminated coast
+VEE_QuicksandPits.label	quicksand pits
+VEE_AbandonedFarmland.label	abandoned farmlands
+VEE_DriftwoodShore.label	driftwood shore
+VEE_AlluvialFan.label	alluvial fan
+VEE_RelictDelta.label	relict delta
+VEE_StagnantRivulet.label	stagnant rivulet
+VEE_AnimaForest.label	anima forest
+VEE_AnimaCoast.label	anima coast
+VEE_CradleOfLife.label	cradle of life
+VEE_WindBlownPlateau.label	wind-blown plateau
+VEE_StoneForest.label	stone forest
+VEE_GravelBeach.label	gravel beach
+VEE_AuburnForest.label	auburn forest
+VEE_Cenotes.label	cenotes
+VEE_BasaltCape.label	basalt cape
+VEE_RedDesert.label	red sand desert
+VEE_VolcanicSandDesert.label	volcanic sand desert
+VEE_PermafrostBasin.label	permafrost basin
+VEE_QuicksandDunes.label	quicksand dunes
+VEE_PebbleDunes.label	pebble dunes
+VEE_LittoralDunes.label	littoral dunes
+VEE_RisingWaters.label	rising waters
+VEE_FleshPits.label	flesh pits
+VEE_TemperateGrasslands.label	temperate grasslands
+VEE_IceSpires.label	ice spires
+VEE_GlacialMoraine.label	glacial moraine
+VEE_Sinkholes.label	sinkholes
+VEE_TropicalBeach.label	tropical beach
+VEE_LaurelForest.label	laurel forest
+VEE_Moor.label	moor
+VEE_LushLavaFields.label	lush lava fields
+## DefInjected/RulePackDef/RulePacks_Namers_Landmarks.xml
+VEE_NamerLandmark_ImpactCrater.rulePack.rulesStrings[0]	terrain_word(p=3)->impact crater
+VEE_NamerLandmark_ImpactCrater.rulePack.rulesStrings[1]	terrain_word->meteor crater
+VEE_NamerLandmark_ImpactCrater.rulePack.rulesStrings[2]	terrain_word->impact basin
+VEE_NamerLandmark_ResurgentCaldera.rulePack.rulesStrings[0]	terrain_word(p=3)->resurgent caldera
+VEE_NamerLandmark_ResurgentCaldera.rulePack.rulesStrings[1]	terrain_word->uplifted caldera
+VEE_NamerLandmark_ResurgentCaldera.rulePack.rulesStrings[2]	terrain_word->central dome caldera
+VEE_NamerLandmark_CraterLake.rulePack.rulesStrings[0]	terrain_word(p=3)->crater lake
+VEE_NamerLandmark_CraterLake.rulePack.rulesStrings[1]	terrain_word->caldera lake
+VEE_NamerLandmark_CraterLake.rulePack.rulesStrings[2]	terrain_word->impact lake
+VEE_NamerLandmark_ToxicCraterLake.rulePack.rulesStrings[0]	terrain_word(p=3)->toxic crater lake
+VEE_NamerLandmark_ToxicCraterLake.rulePack.rulesStrings[1]	terrain_word->poisoned caldera
+VEE_NamerLandmark_ToxicCraterLake.rulePack.rulesStrings[2]	terrain_word->toxic basin
+VEE_NamerLandmark_Volcano.rulePack.rulesStrings[0]	terrain_word(p=3)->volcano
+VEE_NamerLandmark_Volcano.rulePack.rulesStrings[1]	terrain_word->lava caldera
+VEE_NamerLandmark_Volcano.rulePack.rulesStrings[2]	terrain_word->molten crater
+VEE_NamerLandmark_CalmBasin.rulePack.rulesStrings[0]	terrain_word(p=3)->calm basin
+VEE_NamerLandmark_CalmBasin.rulePack.rulesStrings[1]	terrain_word->silent basin
+VEE_NamerLandmark_CalmBasin.rulePack.rulesStrings[2]	terrain_word->windless hollow
+VEE_NamerLandmark_LoneIsland.rulePack.rulesStrings[0]	terrain_word(p=3)->lone island
+VEE_NamerLandmark_LoneIsland.rulePack.rulesStrings[1]	terrain_word->isolated isle
+VEE_NamerLandmark_LoneIsland.rulePack.rulesStrings[2]	terrain_word->detached island
+VEE_NamerLandmark_LoneIsland.rulePack.rulesStrings[3]	terrain_word->solitary isle
+VEE_NamerLandmark_DetachedIceberg.rulePack.rulesStrings[0]	terrain_word->drift iceberg
+VEE_NamerLandmark_DetachedIceberg.rulePack.rulesStrings[1]	terrain_word->pack ice mass
+VEE_NamerLandmark_DetachedIceberg.rulePack.rulesStrings[2]	terrain_word->floating ice
+VEE_NamerLandmark_IceAndFireIsland.rulePack.rulesStrings[0]	terrain_word(p=3)->ice and fire island
+VEE_NamerLandmark_IceAndFireIsland.rulePack.rulesStrings[1]	terrain_word->frozen caldera
+VEE_NamerLandmark_IceAndFireIsland.rulePack.rulesStrings[2]	terrain_word->glacial fire isle
+VEE_NamerLandmark_IceAndFireIsland.rulePack.rulesStrings[3]	terrain_word->polar volcano isle
+VEE_NamerLandmark_CentralLakeIsland.rulePack.rulesStrings[0]	terrain_word(p=3)->lake island
+VEE_NamerLandmark_CentralLakeIsland.rulePack.rulesStrings[1]	terrain_word->isle of waters
+VEE_NamerLandmark_CentralLakeIsland.rulePack.rulesStrings[2]	terrain_word->ringed lake isle
+VEE_NamerLandmark_CentralLakeIsland.rulePack.rulesStrings[3]	terrain_word->inland lake island
+VEE_NamerLandmark_ResurgentIsland.rulePack.rulesStrings[0]	terrain_word(p=3)->resurgent island
+VEE_NamerLandmark_ResurgentIsland.rulePack.rulesStrings[1]	terrain_word->uplifted island
+VEE_NamerLandmark_ResurgentIsland.rulePack.rulesStrings[2]	terrain_word->central peak isle
+VEE_NamerLandmark_ResurgentIsland.rulePack.rulesStrings[3]	terrain_word->emergent island
+VEE_NamerLandmark_SaltPlains.rulePack.rulesStrings[0]	terrain_word->salt plain
+VEE_NamerLandmark_SaltPlains.rulePack.rulesStrings[1]	terrain_word->desiccated ocean
+VEE_NamerLandmark_SaltPlains.rulePack.rulesStrings[2]	terrain_word->evaporation plain
+VEE_NamerLandmark_SaltPlains.rulePack.rulesStrings[3]	terrain_word->saline flats
+VEE_NamerLandmark_SaltPlains.rulePack.rulesStrings[4]	terrain_word->white barrens
+VEE_NamerLandmark_Ridges.rulePack.rulesStrings[0]	terrain_word(p=4)->ridge
+VEE_NamerLandmark_Ridges.rulePack.rulesStrings[1]	terrain_word->crest
+VEE_NamerLandmark_Ridges.rulePack.rulesStrings[2]	terrain_word->spine
+VEE_NamerLandmark_DryRiver.rulePack.rulesStrings[0]	terrain_word->dry river
+VEE_NamerLandmark_DryRiver.rulePack.rulesStrings[1]	terrain_word->sand river
+VEE_NamerLandmark_DryRiver.rulePack.rulesStrings[2]	terrain_word->barren river
+VEE_NamerLandmark_Mangrove.rulePack.rulesStrings[0]	r_name(p=0.2)->[NamePerson]'s [terrain_word]
+VEE_NamerLandmark_Mangrove.rulePack.rulesStrings[1]	terrain_word(p=2)->mangrove
+VEE_NamerLandmark_Mangrove.rulePack.rulesStrings[2]	terrain_word->tidal forest
+VEE_NamerLandmark_Mangrove.rulePack.rulesStrings[3]	terrain_word->mangal
+VEE_NamerLandmark_Mangrove.rulePack.rulesStrings[4]	terrain_word->brackish swamp
+VEE_NamerLandmark_Mangrove.rulePack.rulesStrings[5]	terrain_word->saltmire thicket
+VEE_NamerLandmark_Mangrove.rulePack.rulesStrings[6]	terrain_word->saltwater forest
+VEE_NamerLandmark_Canyons.rulePack.rulesStrings[0]	r_name(p=0.2)->[NamePerson]'s [terrain_word]
+VEE_NamerLandmark_Canyons.rulePack.rulesStrings[1]	terrain_word(p=2)->canyons
+VEE_NamerLandmark_JaggedRocks.rulePack.rulesStrings[0]	r_name(p=0.2)->[NamePerson]'s [terrain_word]
+VEE_NamerLandmark_JaggedRocks.rulePack.rulesStrings[1]	terrain_word(p=2)->jagged rocks
+VEE_NamerLandmark_JaggedRocks.rulePack.rulesStrings[2]	terrain_word->jagged ridges
+VEE_NamerLandmark_CoralReef.rulePack.rulesStrings[0]	r_name(p=0.2)->[NamePerson]'s [terrain_word]
+VEE_NamerLandmark_CoralReef.rulePack.rulesStrings[1]	terrain_word(p=2)->coral reef
+VEE_NamerLandmark_CoralReef.rulePack.rulesStrings[2]	terrain_word->coral shoal
+VEE_NamerLandmark_CoralReef.rulePack.rulesStrings[3]	terrain_word->reef formation
+VEE_NamerLandmark_CoralReef.rulePack.rulesStrings[4]	terrain_word->barrier reef
+VEE_NamerLandmark_CoralReef.rulePack.rulesStrings[5]	terrain_word->fringing reef
+VEE_NamerLandmark_DustBowl.rulePack.rulesStrings[0]	r_name(p=0.2)->[NamePerson]'s [terrain_word]
+VEE_NamerLandmark_DustBowl.rulePack.rulesStrings[1]	terrain_word(p=2)->dust bowl
+VEE_NamerLandmark_DustBowl.rulePack.rulesStrings[2]	terrain_word->depression
+VEE_NamerLandmark_DustBowl.rulePack.rulesStrings[3]	terrain_word->blasted expanse
+VEE_NamerLandmark_DustBowl.rulePack.rulesStrings[4]	terrain_word->parched barrens
+VEE_NamerLandmark_DustBowl.rulePack.rulesStrings[5]	terrain_word->scorched dustplain
+VEE_NamerLandmark_SulfuricLake.rulePack.rulesStrings[0]	r_name(p=0.2)->[NamePerson]'s [terrain_word]
+VEE_NamerLandmark_SulfuricLake.rulePack.rulesStrings[1]	terrain_word(p=2)->sulfuric lake
+VEE_NamerLandmark_SulfuricLake.rulePack.rulesStrings[2]	terrain_word->acidic basin
+VEE_NamerLandmark_SulfuricLake.rulePack.rulesStrings[3]	terrain_word->sulfur spring
+VEE_NamerLandmark_SulfuricLake.rulePack.rulesStrings[4]	terrain_word->stinging waters
+VEE_NamerLandmark_SulfuricLake.rulePack.rulesStrings[5]	terrain_word->stinkpool
+VEE_NamerLandmark_SulfuricLake.rulePack.rulesStrings[6]	terrain_word->yellowmire
+VEE_NamerLandmark_SulfuricRiver.rulePack.rulesStrings[0]	r_name(p=0.2)->[NamePerson]'s [terrain_word]
+VEE_NamerLandmark_SulfuricRiver.rulePack.rulesStrings[1]	terrain_word(p=2)->sulfuric river
+VEE_NamerLandmark_SulfuricRiver.rulePack.rulesStrings[2]	terrain_word->acidic stream
+VEE_NamerLandmark_SulfuricRiver.rulePack.rulesStrings[3]	terrain_word->sulfur flow
+VEE_NamerLandmark_SulfuricRiver.rulePack.rulesStrings[4]	terrain_word->stinging waters
+VEE_NamerLandmark_SulfuricRiver.rulePack.rulesStrings[5]	terrain_word->reeking river
+VEE_NamerLandmark_SulfuricRiver.rulePack.rulesStrings[6]	terrain_word->yellow run
+VEE_NamerLandmark_BurnedForest.rulePack.rulesStrings[0]	r_name(p=0.2)->[NamePerson]'s [terrain_word]
+VEE_NamerLandmark_BurnedForest.rulePack.rulesStrings[1]	terrain_word(p=2)->burned forest
+VEE_NamerLandmark_BurnedForest.rulePack.rulesStrings[2]	terrain_word->charred forest
+VEE_NamerLandmark_BurnedForest.rulePack.rulesStrings[3]	terrain_word->burnt woodland
+VEE_NamerLandmark_BurnedForest.rulePack.rulesStrings[4]	terrain_word->scorched grove
+VEE_NamerLandmark_BloomingFields.rulePack.rulesStrings[0]	r_name(p=0.2)->[NamePerson]'s [terrain_word]
+VEE_NamerLandmark_BloomingFields.rulePack.rulesStrings[1]	terrain_word(p=2)->wildflower meadow
+VEE_NamerLandmark_BloomingFields.rulePack.rulesStrings[2]	terrain_word->blooming field
+VEE_NamerLandmark_BloomingFields.rulePack.rulesStrings[3]	terrain_word->floral plain
+VEE_NamerLandmark_BloomingFields.rulePack.rulesStrings[4]	terrain_word->petal-covered grasslands
+VEE_NamerLandmark_CactusFields.rulePack.rulesStrings[0]	r_name(p=0.2)->[NamePerson]'s [terrain_word]
+VEE_NamerLandmark_CactusFields.rulePack.rulesStrings[1]	terrain_word(p=2)->cactus field
+VEE_NamerLandmark_CactusFields.rulePack.rulesStrings[2]	terrain_word->xerophile garden
+VEE_NamerLandmark_CactusFields.rulePack.rulesStrings[3]	terrain_word->cactus plain
+VEE_NamerLandmark_CactusFields.rulePack.rulesStrings[4]	terrain_word->spinebrush flats
+VEE_NamerLandmark_CactusFields.rulePack.rulesStrings[5]	terrain_word->thorned lowlands
+VEE_NamerLandmark_CactusFields.rulePack.rulesStrings[6]	terrain_word->prickled desert
+VEE_NamerLandmark_FloodPlains.rulePack.rulesStrings[0]	r_name(p=0.2)->[NamePerson]'s [terrain_word]
+VEE_NamerLandmark_FloodPlains.rulePack.rulesStrings[1]	terrain_word(p=2)->flood plain
+VEE_NamerLandmark_FloodPlains.rulePack.rulesStrings[2]	terrain_word->river floodlands
+VEE_NamerLandmark_FloodPlains.rulePack.rulesStrings[3]	terrain_word->alluvial plain
+VEE_NamerLandmark_FloodPlains.rulePack.rulesStrings[4]	terrain_word->seasonal floodplain
+VEE_NamerLandmark_FloodPlains.rulePack.rulesStrings[5]	terrain_word->silt-rich lowlands
+VEE_NamerLandmark_ContaminatedReservoir.rulePack.rulesStrings[0]	r_name(p=0.2)->[NamePerson]'s [terrain_word]
+VEE_NamerLandmark_ContaminatedReservoir.rulePack.rulesStrings[1]	terrain_word(p=2)->contaminated reservoir
+VEE_NamerLandmark_ContaminatedReservoir.rulePack.rulesStrings[2]	terrain_word->irradiated lake
+VEE_NamerLandmark_ContaminatedReservoir.rulePack.rulesStrings[3]	terrain_word->radioactive waters
+VEE_NamerLandmark_ContaminatedReservoir.rulePack.rulesStrings[4]	terrain_word->glowwater basin
+VEE_NamerLandmark_ContaminatedReservoir.rulePack.rulesStrings[5]	terrain_word->radioactive lakebed
+VEE_NamerLandmark_ContaminatedRiver.rulePack.rulesStrings[0]	r_name(p=0.2)->[NamePerson]'s [terrain_word]
+VEE_NamerLandmark_ContaminatedRiver.rulePack.rulesStrings[1]	terrain_word(p=2)->contaminated river
+VEE_NamerLandmark_ContaminatedRiver.rulePack.rulesStrings[2]	terrain_word->irradiated river
+VEE_NamerLandmark_ContaminatedRiver.rulePack.rulesStrings[3]	terrain_word->radioactive waters
+VEE_NamerLandmark_ContaminatedRiver.rulePack.rulesStrings[4]	terrain_word->glowwater stream
+VEE_NamerLandmark_ContaminatedRiver.rulePack.rulesStrings[5]	terrain_word->radioactive riverbed
+VEE_NamerLandmark_ContaminatedCoast.rulePack.rulesStrings[0]	r_name(p=0.2)->[NamePerson]'s [terrain_word]
+VEE_NamerLandmark_ContaminatedCoast.rulePack.rulesStrings[1]	terrain_word(p=2)->contaminated coast
+VEE_NamerLandmark_ContaminatedCoast.rulePack.rulesStrings[2]	terrain_word->irradiated shoreline
+VEE_NamerLandmark_ContaminatedCoast.rulePack.rulesStrings[3]	terrain_word->radioactive shallows
+VEE_NamerLandmark_ContaminatedCoast.rulePack.rulesStrings[4]	terrain_word->glowwater coast
+VEE_NamerLandmark_ContaminatedCoast.rulePack.rulesStrings[5]	terrain_word->radioactive beachfront
+VEE_NamerLandmark_QuicksandPits.rulePack.rulesStrings[0]	terrain_word(p=4)->quicksand pits
+VEE_NamerLandmark_QuicksandPits.rulePack.rulesStrings[1]	terrain_word->sinking sands
+VEE_NamerLandmark_QuicksandPits.rulePack.rulesStrings[2]	terrain_word->loose earth pockets
+VEE_NamerLandmark_QuicksandPits.rulePack.rulesStrings[3]	terrain_word->unstable ground
+VEE_NamerLandmark_AbandonedFarmlands.rulePack.rulesStrings[0]	r_name(p=0.2)->[NamePerson]'s [terrain_word]
+VEE_NamerLandmark_AbandonedFarmlands.rulePack.rulesStrings[1]	terrain_word(p=2)->abandoned farmlands
+VEE_NamerLandmark_AbandonedFarmlands.rulePack.rulesStrings[2]	terrain_word->forgotten fields
+VEE_NamerLandmark_AbandonedFarmlands.rulePack.rulesStrings[3]	terrain_word->derelict croplands
+VEE_NamerLandmark_AbandonedFarmlands.rulePack.rulesStrings[4]	terrain_word->overgrown farms
+VEE_NamerLandmark_AbandonedFarmlands.rulePack.rulesStrings[5]	terrain_word->fallow plains
+VEE_NamerLandmark_DriftwoodShore.rulePack.rulesStrings[0]	r_name(p=0.2)->[NamePerson]'s [terrain_word]
+VEE_NamerLandmark_DriftwoodShore.rulePack.rulesStrings[1]	terrain_word(p=2)->driftwood shore
+VEE_NamerLandmark_DriftwoodShore.rulePack.rulesStrings[2]	terrain_word->driftwood coast
+VEE_NamerLandmark_DriftwoodShore.rulePack.rulesStrings[3]	terrain_word->wreckwood beach
+VEE_NamerLandmark_DriftwoodShore.rulePack.rulesStrings[4]	terrain_word->tidal woodline
+VEE_NamerLandmark_DriftwoodShore.rulePack.rulesStrings[5]	terrain_word->bleached timber shore
+VEE_NamerLandmark_AlluvialFan.rulePack.rulesStrings[0]	r_name(p=0.2)->[NamePerson]'s [terrain_word]
+VEE_NamerLandmark_AlluvialFan.rulePack.rulesStrings[1]	terrain_word(p=2)->alluvial fan
+VEE_NamerLandmark_AlluvialFan.rulePack.rulesStrings[2]	terrain_word->sediment fan
+VEE_NamerLandmark_AlluvialFan.rulePack.rulesStrings[3]	terrain_word->river spillplain
+VEE_NamerLandmark_AlluvialFan.rulePack.rulesStrings[4]	terrain_word->depositional flats
+VEE_NamerLandmark_RelictDelta.rulePack.rulesStrings[0]	terrain_word(p=2)->relict delta
+VEE_NamerLandmark_RelictDelta.rulePack.rulesStrings[1]	terrain_word->abandoned delta
+VEE_NamerLandmark_RelictDelta.rulePack.rulesStrings[2]	terrain_word->desiccated delta
+VEE_NamerLandmark_RelictDelta.rulePack.rulesStrings[3]	terrain_word->silt delta
+VEE_NamerLandmark_RelictDelta.rulePack.rulesStrings[4]	terrain_word->braided flats
+VEE_NamerLandmark_StagnantRivulet.rulePack.rulesStrings[0]	terrain_word(p=2)->stagnant rivulet
+VEE_NamerLandmark_StagnantRivulet.rulePack.rulesStrings[1]	terrain_word->stilled stream
+VEE_NamerLandmark_StagnantRivulet.rulePack.rulesStrings[2]	terrain_word->sluggish rivulet
+VEE_NamerLandmark_StagnantRivulet.rulePack.rulesStrings[3]	terrain_word->standing channel
+VEE_NamerLandmark_StagnantRivulet.rulePack.rulesStrings[4]	terrain_word->silted creek
+VEE_NamerLandmark_AnimaForest.rulePack.rulesStrings[0]	r_name(p=0.2)->[NamePerson]'s [terrain_word]
+VEE_NamerLandmark_AnimaForest.rulePack.rulesStrings[1]	terrain_word(p=3)->anima forest
+VEE_NamerLandmark_AnimaForest.rulePack.rulesStrings[2]	terrain_word(p=2)->anima woods
+VEE_NamerLandmark_AnimaForest.rulePack.rulesStrings[3]	terrain_word->psychoactive forest
+VEE_NamerLandmark_AnimaForest.rulePack.rulesStrings[4]	terrain_word->glowleaf grove
+VEE_NamerLandmark_AnimaForest.rulePack.rulesStrings[5]	terrain_word->whispering anima trees
+VEE_NamerLandmark_AnimaForest.rulePack.rulesStrings[6]	terrain_word->lucent woodland
+VEE_NamerLandmark_AnimaCoast.rulePack.rulesStrings[0]	r_name(p=0.2)->[NamePerson]'s [terrain_word]
+VEE_NamerLandmark_AnimaCoast.rulePack.rulesStrings[1]	terrain_word(p=3)->anima coast
+VEE_NamerLandmark_AnimaCoast.rulePack.rulesStrings[2]	terrain_word->anima shoreline
+VEE_NamerLandmark_AnimaCoast.rulePack.rulesStrings[3]	terrain_word->spirit-touched coast
+VEE_NamerLandmark_AnimaCoast.rulePack.rulesStrings[4]	terrain_word->anima forest shore
+VEE_NamerLandmark_AnimaCoast.rulePack.rulesStrings[5]	terrain_word->glowing coastal grove
+VEE_NamerLandmark_CradleOfLife.rulePack.rulesStrings[0]	r_name(p=0.2)->[NamePerson]'s [terrain_word]
+VEE_NamerLandmark_CradleOfLife.rulePack.rulesStrings[1]	terrain_word(p=3)->cradle of life
+VEE_NamerLandmark_CradleOfLife.rulePack.rulesStrings[2]	terrain_word(p=2)->life basin
+VEE_NamerLandmark_CradleOfLife.rulePack.rulesStrings[3]	terrain_word->verdant cradle
+VEE_NamerLandmark_CradleOfLife.rulePack.rulesStrings[4]	terrain_word->genesis hollow
+VEE_NamerLandmark_CradleOfLife.rulePack.rulesStrings[5]	terrain_word->primeval basin
+VEE_NamerLandmark_WindBlownPlateau.rulePack.rulesStrings[0]	terrain_word->wind-blown plateau
+VEE_NamerLandmark_WindBlownPlateau.rulePack.rulesStrings[1]	terrain_word->windswept mesa
+VEE_NamerLandmark_WindBlownPlateau.rulePack.rulesStrings[2]	terrain_word->exposed rise
+VEE_NamerLandmark_WindBlownPlateau.rulePack.rulesStrings[3]	terrain_word->gusted tableland
+VEE_NamerLandmark_WindBlownPlateau.rulePack.rulesStrings[4]	terrain_word->barren butte
+VEE_NamerLandmark_StoneForest.rulePack.rulesStrings[0]	terrain_word->jagged stone grove
+VEE_NamerLandmark_StoneForest.rulePack.rulesStrings[1]	terrain_word->pillar-strewn expanse
+VEE_NamerLandmark_StoneForest.rulePack.rulesStrings[2]	terrain_word->rocky spire field
+VEE_NamerLandmark_StoneForest.rulePack.rulesStrings[3]	terrain_word->shattered monoliths
+VEE_NamerLandmark_StoneForest.rulePack.rulesStrings[4]	terrain_word->craggy stone thicket
+VEE_NamerLandmark_GravelBeach.rulePack.rulesStrings[0]	terrain_word->gravel shore
+VEE_NamerLandmark_GravelBeach.rulePack.rulesStrings[1]	terrain_word->shingle coast
+VEE_NamerLandmark_GravelBeach.rulePack.rulesStrings[2]	terrain_word->stone-littered beach
+VEE_NamerLandmark_GravelBeach.rulePack.rulesStrings[3]	terrain_word->pebble strand
+VEE_NamerLandmark_GravelBeach.rulePack.rulesStrings[4]	terrain_word->rocky shoreline
+VEE_NamerLandmark_AuburnForest.rulePack.rulesStrings[0]	terrain_word->auburn woods
+VEE_NamerLandmark_AuburnForest.rulePack.rulesStrings[1]	terrain_word->auburn forest
+VEE_NamerLandmark_AuburnForest.rulePack.rulesStrings[2]	terrain_word->auburn grove
+VEE_NamerLandmark_AuburnForest.rulePack.rulesStrings[3]	terrain_word->auburn woodland
+VEE_NamerLandmark_AuburnForest.rulePack.rulesStrings[4]	terrain_word->auburn thicket
+VEE_NamerLandmark_Cenotes.rulePack.rulesStrings[0]	terrain_word->cenote field
+VEE_NamerLandmark_Cenotes.rulePack.rulesStrings[1]	terrain_word->cenote lakes
+VEE_NamerLandmark_Cenotes.rulePack.rulesStrings[2]	terrain_word->collapsed limestone pools
+VEE_NamerLandmark_Cenotes.rulePack.rulesStrings[3]	terrain_word->water-filled cenotes
+VEE_NamerLandmark_Cenotes.rulePack.rulesStrings[4]	terrain_word->karst hollows
+VEE_NamerLandmark_BasaltCape.rulePack.rulesStrings[0]	terrain_word->basalt cape
+VEE_NamerLandmark_BasaltCape.rulePack.rulesStrings[1]	terrain_word->basalt headland
+VEE_NamerLandmark_BasaltCape.rulePack.rulesStrings[2]	terrain_word->black stone promontory
+VEE_NamerLandmark_BasaltCape.rulePack.rulesStrings[3]	terrain_word->volcanic headland
+VEE_NamerLandmark_BasaltCape.rulePack.rulesStrings[4]	terrain_word->basalt cliffs
+VEE_NamerLandmark_RedSandDesert.rulePack.rulesStrings[0]	terrain_word->red sand desert
+VEE_NamerLandmark_RedSandDesert.rulePack.rulesStrings[1]	terrain_word->crimson desert
+VEE_NamerLandmark_RedSandDesert.rulePack.rulesStrings[2]	terrain_word->rust-colored desert
+VEE_NamerLandmark_RedSandDesert.rulePack.rulesStrings[3]	terrain_word->iron-rich desert
+VEE_NamerLandmark_VolcanicSandDesert.rulePack.rulesStrings[0]	terrain_word->volcanic sand desert
+VEE_NamerLandmark_VolcanicSandDesert.rulePack.rulesStrings[1]	terrain_word->black sand wastes
+VEE_NamerLandmark_VolcanicSandDesert.rulePack.rulesStrings[2]	terrain_word->black desert
+VEE_NamerLandmark_VolcanicSandDesert.rulePack.rulesStrings[3]	terrain_word->obsidian sands
+VEE_NamerLandmark_PermafrostBasin.rulePack.rulesStrings[0]	terrain_word->permafrost basin
+VEE_NamerLandmark_PermafrostBasin.rulePack.rulesStrings[1]	terrain_word->frozen lowland
+VEE_NamerLandmark_PermafrostBasin.rulePack.rulesStrings[2]	terrain_word->ice-locked tundra
+VEE_NamerLandmark_PermafrostBasin.rulePack.rulesStrings[3]	terrain_word->frostbound basin
+VEE_NamerLandmark_PermafrostBasin.rulePack.rulesStrings[4]	terrain_word->perennial frost tundra
+VEE_NamerLandmark_QuicksandDunes.rulePack.rulesStrings[0]	terrain_word(p=4)->quicksand dunes
+VEE_NamerLandmark_QuicksandDunes.rulePack.rulesStrings[1]	terrain_word->sinking dunes
+VEE_NamerLandmark_QuicksandDunes.rulePack.rulesStrings[2]	terrain_word->loose earth dunes
+VEE_NamerLandmark_QuicksandDunes.rulePack.rulesStrings[3]	terrain_word->unstable dunes
+VEE_NamerLandmark_PebbleDunes.rulePack.rulesStrings[0]	terrain_word->pebble dunes
+VEE_NamerLandmark_PebbleDunes.rulePack.rulesStrings[1]	terrain_word->shingle dunes
+VEE_NamerLandmark_PebbleDunes.rulePack.rulesStrings[2]	terrain_word->gravel drifts
+VEE_NamerLandmark_PebbleDunes.rulePack.rulesStrings[3]	terrain_word->stone-swept ridges
+VEE_NamerLandmark_PebbleDunes.rulePack.rulesStrings[4]	terrain_word->rolling pebble fields
+VEE_NamerLandmark_LittoralDunes.rulePack.rulesStrings[0]	terrain_word->littoral dunes
+VEE_NamerLandmark_LittoralDunes.rulePack.rulesStrings[1]	terrain_word->coastal sand dunes
+VEE_NamerLandmark_LittoralDunes.rulePack.rulesStrings[2]	terrain_word->shoreline dune fields
+VEE_NamerLandmark_LittoralDunes.rulePack.rulesStrings[3]	terrain_word->wind-sculpted coast
+VEE_NamerLandmark_LittoralDunes.rulePack.rulesStrings[4]	terrain_word->beach dune ridges
+VEE_NamerLandmark_RisingWaters.rulePack.rulesStrings[0]	terrain_word->rising waters
+VEE_NamerLandmark_RisingWaters.rulePack.rulesStrings[1]	terrain_word->tidal flats
+VEE_NamerLandmark_RisingWaters.rulePack.rulesStrings[2]	terrain_word->flooded lowlands
+VEE_NamerLandmark_RisingWaters.rulePack.rulesStrings[3]	terrain_word->tidal floodplain
+VEE_NamerLandmark_RisingWaters.rulePack.rulesStrings[4]	terrain_word->inundated coast
+VEE_NamerLandmark_FleshPits.rulePack.rulesStrings[0]	terrain_word->flesh pits
+VEE_NamerLandmark_FleshPits.rulePack.rulesStrings[1]	terrain_word->anomalous caverns
+VEE_NamerLandmark_FleshPits.rulePack.rulesStrings[2]	terrain_word->flesh pit expanse
+VEE_NamerLandmark_TemperateGrasslands.rulePack.rulesStrings[0]	terrain_word->temperate grasslands
+VEE_NamerLandmark_TemperateGrasslands.rulePack.rulesStrings[1]	terrain_word->open plains
+VEE_NamerLandmark_TemperateGrasslands.rulePack.rulesStrings[2]	terrain_word->rolling grasslands
+VEE_NamerLandmark_TemperateGrasslands.rulePack.rulesStrings[3]	terrain_word->wind-swept prairie
+VEE_NamerLandmark_TemperateGrasslands.rulePack.rulesStrings[4]	terrain_word->broad meadowlands
+VEE_NamerLandmark_IceSpires.rulePack.rulesStrings[0]	terrain_word->ice spires
+VEE_NamerLandmark_IceSpires.rulePack.rulesStrings[1]	terrain_word->frozen spire field
+VEE_NamerLandmark_IceSpires.rulePack.rulesStrings[2]	terrain_word->glacial pinnacles
+VEE_NamerLandmark_IceSpires.rulePack.rulesStrings[3]	terrain_word->ice needle plains
+VEE_NamerLandmark_IceSpires.rulePack.rulesStrings[4]	terrain_word->frosted towers
+VEE_NamerLandmark_GlacialMoraine.rulePack.rulesStrings[0]	terrain_word->glacial moraine
+VEE_NamerLandmark_GlacialMoraine.rulePack.rulesStrings[1]	terrain_word->ice-pushed ridge
+VEE_NamerLandmark_GlacialMoraine.rulePack.rulesStrings[2]	terrain_word->stone-strewn moraine
+VEE_NamerLandmark_GlacialMoraine.rulePack.rulesStrings[3]	terrain_word->frozen debris fields
+VEE_NamerLandmark_GlacialMoraine.rulePack.rulesStrings[4]	terrain_word->glacial rubble ridges
+VEE_NamerLandmark_Sinkholes.rulePack.rulesStrings[0]	terrain_word->sinkholes
+VEE_NamerLandmark_Sinkholes.rulePack.rulesStrings[1]	terrain_word->collapsed ground
+VEE_NamerLandmark_Sinkholes.rulePack.rulesStrings[2]	terrain_word->subsurface hollows
+VEE_NamerLandmark_Sinkholes.rulePack.rulesStrings[3]	terrain_word->broken lowlands
+VEE_NamerLandmark_TropicalBeach.rulePack.rulesStrings[0]	terrain_word->tropical beach
+VEE_NamerLandmark_TropicalBeach.rulePack.rulesStrings[1]	terrain_word->palm-lined shore
+VEE_NamerLandmark_TropicalBeach.rulePack.rulesStrings[2]	terrain_word->warm coastal strand
+VEE_NamerLandmark_TropicalBeach.rulePack.rulesStrings[3]	terrain_word->sunlit shoreline
+VEE_NamerLandmark_TropicalBeach.rulePack.rulesStrings[4]	terrain_word->tropical seaboard
+VEE_NamerLandmark_LaurelForest.rulePack.rulesStrings[0]	terrain_word->laurel forest
+VEE_NamerLandmark_LaurelForest.rulePack.rulesStrings[1]	terrain_word->evergreen cloud forest
+VEE_NamerLandmark_LaurelForest.rulePack.rulesStrings[2]	terrain_word->mist-laden woodland
+VEE_NamerLandmark_LaurelForest.rulePack.rulesStrings[3]	terrain_word->humid evergreen forest
+VEE_NamerLandmark_LaurelForest.rulePack.rulesStrings[4]	terrain_word->broadleaf evergreen woods
+VEE_NamerLandmark_Moor.rulePack.rulesStrings[0]	terrain_word->moor
+VEE_NamerLandmark_Moor.rulePack.rulesStrings[1]	terrain_word->open heath
+VEE_NamerLandmark_Moor.rulePack.rulesStrings[2]	terrain_word->windswept moorland
+VEE_NamerLandmark_Moor.rulePack.rulesStrings[3]	terrain_word->heather plain
+VEE_NamerLandmark_Moor.rulePack.rulesStrings[4]	terrain_word->peaty uplands
+VEE_NamerLandmark_LushLavaFields.rulePack.rulesStrings[0]	terrain_word->lush lava fields
+VEE_NamerLandmark_LushLavaFields.rulePack.rulesStrings[1]	terrain_word->vegetated lava plain
+VEE_NamerLandmark_LushLavaFields.rulePack.rulesStrings[2]	terrain_word->green volcanic flats
+VEE_NamerLandmark_LushLavaFields.rulePack.rulesStrings[3]	terrain_word->overgrown basalt fields
+VEE_NamerLandmark_LushLavaFields.rulePack.rulesStrings[4]	terrain_word->life-bound lava flows
+## DefInjected/TerrainDef/Terrain_Natural.xml
+VEE_BurntForestSoil.label	burnt forest soil
+VEE_VolcanicAsh.label	impact regolith
+VEE_VolcanicSoilRich.label	rich volcanic soil
+VEE_VolcanicSoilRich.tools.dirt.label	dirt
+VEE_Salt.label	salt
+VEE_Salt.tools.sand.label	sand
+VEE_SaltySand.label	salty sand
+VEE_SaltySand.tools.sand.label	sand
+VEE_DryRiverBed.label	dry river bed
+VEE_DryRiverBed.tools.sand.label	sand
+VEE_DryRiverBank.label	dry river bank
+VEE_DryRiverBank.tools.sand.label	sand
+VEE_FertileRiverbank.label	fertile riverbank
+VEE_FertileRiverbank.tools.dirt.label	dirt
+VEE_IrradiatedSoil.label	irradiated soil
+VEE_IrradiatedSoil.tools.sand.label	sand
+VEE_Quicksand.label	quicksand
+VEE_RuinedFarmland.label	ruined farmland
+VEE_RuinedFarmland.tools.gravel.label	gravel
+VEE_AnimaSoil.label	anima soil
+VEE_AnimaSoil.tools.dirt.label	dirt
+VEE_AnimaSoilRich.label	enchanted anima soil
+VEE_AnimaSoilRich.tools.dirt.label	dirt
+VEE_AnimaCrackedSoil.label	cracked anima soil
+VEE_AnimaCrackedSoil.tools.mud.label	mud
+VEE_AnimaSand.label	anima sand
+VEE_AnimaSand.tools.sand.label	sand
+VEE_AnimaSoftSand.label	soft anima sand
+VEE_AnimaSoftSand.tools.sand.label	sand
+VEE_GravelBeach.label	gravel beach
+VEE_GravelBeach.tools.gravel.label	gravel
+VEE_Basalt.label	basalt
+VEE_RedSand.label	red sand
+VEE_RedSand.tools.sand.label	sand
+VEE_RedSoftSand.label	red soft sand
+VEE_RedSoftSand.tools.sand.label	sand
+VEE_VolcanicSand.label	volcanic sand
+VEE_VolcanicSand.tools.sand.label	sand
+VEE_SoftVolcanicSand.label	volcanic soft sand
+VEE_SoftVolcanicSand.tools.sand.label	sand
+VEE_PebbleDunes.label	loose pebbles
+VEE_PebbleDunes.tools.gravel.label	gravel
+VEE_LittoralDuneSand.label	littoral dune sand
+VEE_LittoralDuneSand.tools.sand.label	sand
+VEE_TropicalBeachSand.label	tropical beach sand
+VEE_TropicalBeachSand.tools.sand.label	sand
+VEE_MossySoil.label	mossy soil
+## DefInjected/TerrainDef/Terrain_Temporary.xml
+VEE_TidalFloodwater.label	tidal floodwater
+VEE_TidalFloodwater.tools.water.label	water
+## DefInjected/TerrainDef/Terrain_Waters.xml
+VEE_SulfuricWaterDeep.label	sulfuric deep water
+VEE_SulfuricWaterDeep.tools.water.label	water
+VEE_SulfuricWaterDeepMovingChestDeep.label	sulfuric chest-deep moving water
+VEE_SulfuricWaterDeepMovingChestDeep.tools.water.label	water
+VEE_SulfuricWaterMovingShallow.label	sulfuric shallow moving water
+VEE_SulfuricWaterMovingShallow.tools.water.label	water
+VEE_SulfuricWaterFlood.label	sulfuric shallow floodwater
+VEE_SulfuricWaterFlood.tools.water.label	water
+VEE_SulfuricWaterShallow.label	sulfuric shallow water
+VEE_SulfuricWaterShallow.tools.water.label	water
+VEE_IrradiatedWaterDeep.label	irradiated deep water
+VEE_IrradiatedWaterDeep.tools.water.label	water
+VEE_IrradiatedOceanWaterDeep.label	irradiated deep ocean water
+VEE_IrradiatedOceanWaterDeep.tools.water.label	water
+VEE_IrradiatedWaterDeepMovingChestDeep.label	irradiated chest-deep moving water
+VEE_IrradiatedWaterDeepMovingChestDeep.tools.water.label	water
+VEE_IrradiatedWaterFlood.label	irradiated shallow floodwater
+VEE_IrradiatedWaterFlood.tools.water.label	water
+VEE_IrradiatedWaterShallow.label	irradiated shallow water
+VEE_IrradiatedWaterShallow.tools.water.label	water
+VEE_IrradiatedWaterMovingShallow.label	irradiated shallow moving water
+VEE_IrradiatedWaterMovingShallow.tools.water.label	water
+VEE_IrradiatedWaterOceanShallow.label	irradiated shallow ocean water
+VEE_IrradiatedWaterOceanShallow.tools.water.label	water
+VEE_SwampyWaterMovingChestDeep.label	chest-deep swampy moving water
+VEE_SwampyWaterMovingChestDeep.tools.water.label	water
+VEE_SwampyWaterMovingShallow.label	shallow swampy moving water
+VEE_SwampyWaterMovingShallow.tools.water.label	water
+VEE_StagnantRiverWater.label	stagnant river water
+VEE_StagnantRiverWater.tools.water.label	water
+VEE_StagnantRiverWater.tools.mud.label	mud
+VEE_AnimaWaterDeep.label	deep anima water
+VEE_AnimaWaterDeep.tools.water.label	water
+VEE_AnimaWaterOceanDeep.label	deep anima ocean water
+VEE_AnimaWaterOceanDeep.tools.water.label	water
+VEE_AnimaWaterMovingChestDeep.label	chest-deep moving anima water
+VEE_AnimaWaterMovingChestDeep.tools.water.label	water
+VEE_AnimaWaterShallow.label	shallow anima water
+VEE_AnimaWaterShallow.tools.water.label	water
+VEE_AnimaWaterOceanShallow.label	shallow ocean anima water
+VEE_AnimaWaterOceanShallow.tools.water.label	water
+VEE_AnimaWaterMovingShallow.label	shallow moving anima water
+VEE_AnimaWaterMovingShallow.tools.water.label	water
+## DefInjected/ThingDef/Buildings_Ancient.xml
+VEE_RadioactiveBarrel.label	radioactive barrel
+VEE_RadioactiveBarrel.description	A rusted barrel leaking discarded nuclear fuel.
+## DefInjected/ThingDef/Buildings_Natural_Odyssey.xml
+VEE_RotstinkVent.label	rotstink geyser
+VEE_RotstinkVent.description	A foul geyser that intermittently belches clouds of corpse-born miasma, choking the air with the stench of decay.
+VEE_ToxicVent.label	toxic geyser
+VEE_ToxicVent.description	A volatile fissure that periodically spews noxious green gas, poisoning the air and sickening anything that breathes it.
+VEE_SmokeVent.label	smoke geyser
+VEE_SmokeVent.description	A smoldering fissure that intermittently exhales thick, acrid smoke, reducing visibility and choking the lungs.
+VEE_DeadlifeVent.label	deadlife geyser
+VEE_DeadlifeVent.description	A sinister geyser that exhales eerie, ash-like dust, capable of reawakening the dead under its influence.
+VEE_Coral.label	coral
+VEE_Coral.description	A colorful, calcified colony of tiny marine organisms, forming intricate reef structures teeming with life.
+VEE_SulfurVent.label	sulfur fissure
+VEE_SulfurVent.description	A naturally-occurring break in the ground from which sulfuric gases escape. The gas produced on these fissures stinks of rotten eggs.
+VEE_DryWheat.label	dry wheat
+VEE_DryWheat.description	An amber cereal plant that takes almost an entire growing season to come to fruition. This wheat has been subjected to drought conditions for too long and has wilted away.
+VEE_Sinkhole.label	sinkhole
+VEE_Sinkhole.description	A sudden collapse in the ground forming a deep, unstable pit, often exposing bare rock beneath the surface.
+VEE_DriftwoodChunk.label	driftwood
+VEE_DriftwoodChunk.description	A sun-bleached fragment of wood, smoothed by waves and time, carried ashore from some distant and unknown origin.
+VEE_JadeChunk.label	jadeite chunk
+VEE_JadeChunk.description	A chunk of jadeite. It can be deconstructed to acquire some jade.
+VEE_ObsidianChunk.label	obsidian chunk
+VEE_ObsidianChunk.description	A chunk of obsidian. It can be deconstructed to acquire some obsidian.
+VEE_Cenote.label	cenote
+VEE_Cenote.description	A deep, water filled sinkhole carved into the stone. The surface appears calm. Due to its depth, it can't be filled.
+VEE_Cenote_Small.label	small cenote
+VEE_Cenote_Small.description	A deep, water filled sinkhole carved into the stone. The surface appears calm. Due to its depth, it can't be filled.
+VEE_InertPitGate.label	pit gate
+VEE_InertPitGate.description	A massive, foreboding hole that connects the surface with a dark network of underground caves. It is possible to climb down into the caverns below.
+VEE_InertPitGate.portal.enteredLetterLabel	Fleshbeast lair
+VEE_InertPitGate.portal.enteredLetterText	In the depths of the pit gate, you have discovered a massive cavern system infested with fleshbeasts.\n\nThe cavern system is clogged with masses of living flesh that block your progress. Attack the fleshmass to destroy it.\n\nThe entire cavern system seems unstable. If you find what lies behind the fleshmass, you may be able to collapse the tunnels and close the pit gate.
+VEE_MineableComponentSpacer.label	advanced compacted machinery
+VEE_MineableComponentSpacer.description	Advanced ancient electronics, compacted over time. Can be mined for useful advanced components.
+VEE_MineableJadeite.label	jadeite
+VEE_MineableJadeite.description	A silicate mineral in the pyroxene family that is one of the two forms of jade.
+VEE_SmoothedJadeite.label	smoothed jadeite
+VEE_SmoothedJadeite.description	A silicate mineral in the pyroxene family that is one of the two forms of jade.
+VEE_DenseSnow.label	solid snow
+VEE_DenseSnow.description	A heavy, compacted layer of snow that resists movement and muffles sound. Can be mined to remove it.
+## DefInjected/ThingDef/Filth_Various.xml
+VEE_Filth_Seashells.label	seashells
+## DefInjected/ThingDef/Items_Resource_Misc.xml
+VEE_AnimaPearls.label	anima pearl
+VEE_AnimaPearls.description	A smooth, lustrous pearl formed within anima blossoms, faintly humming with psychic resonance. Anima pearls can be consumed to increase psychic sensitivity for some time.
+## DefInjected/ThingDef/Items_Resource_RawPlant.xml
+VEE_RawDates.label	dates
+VEE_RawDates.description	Raw dates. Nice to eat, even when raw. They are sweet, nutrient-rich fruit harvested from date palms. They keep well in warm climates and provide a reliable source of energy.
+## DefInjected/ThingDef/Mote_Visual.xml
+VEE_RotstinkMote.label	Mote
+VEE_ToxicMote.label	Mote
+VEE_SmokeMote.label	Mote
+VEE_DeadlifeMote.label	Mote
+## DefInjected/ThingDef/Plants_Anima.xml
+VEE_Plant_AnimaBell.label	anima bell
+VEE_Plant_AnimaBell.description	Clumps of vines that burst through the soil to bloom into beautiful flowers. Believed to be part of great collective roots that spread deep under the terrain which occasionally breach the surface to pollinate. The attractive qualities of the flowers encourage humans not to remove them.
+VEE_Plant_MysticCap.label	mystic cap
+VEE_Plant_MysticCap.description	A small, vividly colored mushroom with a faintly iridescent cap. Can be harvested for raw fungus.
+VEE_Plant_AnimaBush.label	anima bush
+VEE_Plant_AnimaBush.description	A short shrub. Does talk, but only when you're not around.
+VEE_Plant_AnimaRoot.label	anima root
+VEE_Plant_AnimaRoot.description	Pale, twisting roots shot through with a soft inner glow, drawn from anima-touched soil. Can be harvested for wood.
+VEE_Plant_AnimaBrambles.label	anima brambles
+VEE_Plant_AnimaBrambles.description	Thorny, fast-growing vines infused with faint anima energy. Their barbs are humming softly to the touch.
+VEE_Plant_AnimaHeartBlossom.label	anima heart blossom
+VEE_Plant_AnimaHeartBlossom.description	A delicate, softly glowing flower that blooms near anima trees, resonating faintly with psychic energy. Can be harvested to acquire anima pearls.
+VEE_Plant_YoungAnimaTree.label	anima sapling
+VEE_Plant_YoungAnimaTree.description	A small anima-touched tree. It lacks the psychic potency of a true anima tree, but still hums faintly with psychic life.
+VEE_Plant_FakeAnimaTree.label	anima tree
+VEE_Plant_FakeAnimaTree.description	An anima-touched tree. It lacks the psychic potency of a true anima tree, but still hums faintly with psychic life.
+VEE_Plant_GrandAnimaTree.label	grand anima tree
+VEE_Plant_GrandAnimaTree.description	A grand anima-touched tree. It lacks the psychic potency of a true anima tree, but still hums faintly with psychic life.
+VEE_Plant_TreeAnima_Ancient.label	ancient anima tree
+VEE_Plant_TreeAnima_Ancient.description	A huge rare tree with warm, skin-smooth bark and long iridescent leaves. Infused with bioluminescent micro-organisms, ancient anima trees develop a unique form of psychic symbiosis with surrounding lifeforms.\n\nIf a person (psycaster or not) meditates near an ancient anima tree, it will grow anima grass around its base. Once enough grass is grown, it becomes possible to carry out a psychic linking ritual with the tree and upgrade a person's psychic powers. Only tribal peoples know the secret of this ritual. Tribal psycasters are also able to draw psyfocus from ancient anima trees while meditating to them.\n\nAncient anima trees' psychic properties are weakened if artificial structures are placed nearby. They refuse to be caged or studied, and must remain part of nature.\n\nMost tribes believe that ancient anima trees are not simply trees, but are rather the physical extremities of a single world spirit.
+VEE_Plant_TreeAnima_Ancient.comps.CompPsylinkable.enoughPlantsLetterLabel	About: Ancient anima tree linking
+VEE_Plant_TreeAnima_Ancient.comps.CompPsylinkable.enoughPlantsLetterText	The ancient anima tree now has {0} anima grass around it. This is enough for a tribal person to begin their first linking ritual!\n\nThe linking ritual gives a level of psylink and the ability to use psychic powers. Upgrading to a higher level requires 20 grass.\n\nThe anima grass requirements for linking rituals to upgrade psycasters are:\n\n{1}\n\nNote: Only those with the nature focus type can meditate to or link with ancient anima trees. You can see a person's focus types by looking at their info card with the 'i' button.
+VEE_Plant_TreeAnima_Ancient.comps.CompGiveThoughtToAllMapPawnsOnDestroy.message	The ancient anima tree has died and emitted a disturbing psychic scream.
+VEE_Plant_AnimaHusk.label	anima husk
+VEE_Plant_AnimaHusk.description	A withered anima tree whose bark has hardened into a gray, lifeless shell under relentless pollution. Its psychic presence is muted and distorted, yet a stubborn echo of anima still clings to the husk, refusing to fully fade.
+## DefInjected/ThingDef/Plants_Bushes.xml
+VEE_Plant_Fern.label	fern
+VEE_Plant_Fern.description	A shade-loving plant with broad fronds that spreads across damp forest floors and sheltered ground.
+VEE_Plant_JuniperBush.label	juniper bush
+VEE_Plant_JuniperBush.description	A hardy, low-growing bush with aromatic needles and dense berries. Its branches twist and spread, enduring harsh winds and exposed conditions.
+## DefInjected/ThingDef/Plants_Cacti.xml
+VEE_Plant_BarrelCactus.label	barrel cactus
+VEE_Plant_BarrelCactus.description	A large cactus native to arid Earth environments. Though it is not a tree, it yields a small amount of fibrous material that can be used like wood.
+VEE_Plant_BeavertailCactus.label	beavertail cactus
+VEE_Plant_BeavertailCactus.description	A large cactus native to arid Earth environments. Though it is not a tree, it yields a small amount of fibrous material that can be used like wood.
+VEE_Plant_HedgehogCactus.label	hedgehog cactus
+VEE_Plant_HedgehogCactus.description	A large cactus native to arid Earth environments. Though it is not a tree, it yields a small amount of fibrous material that can be used like wood.
+VEE_Plant_OrganPipeCactus.label	organ pipe cactus
+VEE_Plant_OrganPipeCactus.description	A large cactus native to arid Earth environments. Though it is not a tree, it yields a small amount of fibrous material that can be used like wood.
+VEE_Plant_ChollaCactus.label	cholla cactus
+VEE_Plant_ChollaCactus.description	A large cactus native to arid Earth environments. Though it is not a tree, it yields a small amount of fibrous material that can be used like wood.
+VEE_Plant_HoodiaCactus.label	hoodia cactus
+VEE_Plant_HoodiaCactus.description	A large cactus native to arid Earth environments. Though it is not a tree, it yields a small amount of fibrous material that can be used like wood.
+## DefInjected/ThingDef/Plants_DaylightMushrooms.xml
+VEE_DayBoomshroom.label	light-resistant boomshroom
+VEE_DayBoomshroom.description	These mushrooms produce volatile chemicals as a defensive measure. They can be harvested for chemfuel. However, this must be done with extreme caution, as the mushrooms can explode if they're destroyed.\n\nGlitterworld researchers have used genetic material from boomshrooms to bioengineer a number of chemfuel-producing animals.
+VEE_DayPsilocap.label	light-resistant psilocap
+VEE_DayPsilocap.description	A fungus that gives off hallucinogenic spores. Standing next to them is enough to produce mild hallucinations. Psilocaps can be harvested and ingested to produce a vivid sensory experience that increases the user's mood.
+VEE_DayWillowgill.label	light-resistant willowgill
+VEE_DayWillowgill.description	A tall spindly slow-growing mushroom with gills that droop like a willow tree.
+## DefInjected/ThingDef/Plants_Flowers.xml
+VEE_ButtercupFlower.label	buttercup
+VEE_ButtercupFlower.description	A beautiful wild flower.
+VEE_ForgetMeNot.label	forget-me-not
+VEE_ForgetMeNot.description	A beautiful wild flower.
+VEE_Knapweed.label	knapweed
+VEE_Knapweed.description	A robust, weedy, wild plant.
+VEE_Loosestrife.label	loosestrife
+VEE_Loosestrife.description	A beautiful herbaceous perennial wild plant.
+VEE_Heather.label	heather
+VEE_Heather.description	A low, flowering shrub with dense clusters of tiny blooms. It carpets the landscape with muted colors and weathers wind and exposure with ease.
+VEE_Gorse.label	gorse
+VEE_Gorse.description	A spiny, evergreen shrub covered in bright yellow flowers. Its thick, tangled branches provide shelter while resisting wind and harsh conditions.
+## DefInjected/ThingDef/Plants_Trees.xml
+VEE_Plant_TreeOak_Auburn.label	auburn oak tree
+VEE_Plant_TreeOak_Auburn.description	A hardwood tree. Oaks take a long time to grow, but their wood is so strong that 'oak' is used as a metaphor for strength across many cultures.
+VEE_Plant_TreePoplar_Auburn.label	auburn poplar tree
+VEE_Plant_TreePoplar_Auburn.description	A softwood tree that grows very fast. Unfortunately, its wood is weak and so it yields less useful material than hardwood trees.
+VEE_Plant_TreeBirch_Auburn.label	auburn birch tree
+VEE_Plant_TreeBirch_Auburn.description	A temperate-biome tree known for its thin, white, paper-like bark.
+VEE_Plant_TreeMaple_Auburn.label	auburn maple tree
+VEE_Plant_TreeMaple_Auburn.description	A common medium-sized tree, easily identifiable by its distinct three-pointed leaf.
+VEE_Plant_ScrewPine.label	screw pine
+VEE_Plant_ScrewPine.description	A hardy coastal tree with spiraled leaves and exposed roots, adapted to wind, salt, and shifting sand.
+VEE_Plant_ScrewPine_ChoppedStump.label	chopped stump
+VEE_Plant_ScrewPine_ChoppedStump.description	A stump left behind after a screw pine has been felled. The stump can be extracted but yields very little usable wood. Left outdoors, the stump will deteriorate in time.
+VEE_Plant_ScrewPine_SmashedStump.label	smashed stump
+VEE_Plant_ScrewPine_SmashedStump.description	The remnants of a screw pine destroyed by damage. It's ugly. The stump can be extracted but yields very little usable wood. Left outdoors, the stump will deteriorate in time.
+VEE_Plant_DatePalm.label	date palm
+VEE_Plant_DatePalm.description	A tall palm thriving along warm coasts, bearing clusters of sweet, energy-rich fruit. Its deep roots and flexible trunk help it withstand salt spray and coastal winds.
+VEE_Plant_Laurel.label	laurel tree
+VEE_Plant_Laurel.description	An evergreen broadleaf tree with dense foliage and aromatic leaves, well adapted to mild, humid climates.
+VEE_Plant_LaurelTree_ChoppedStump.label	chopped stump
+VEE_Plant_LaurelTree_ChoppedStump.description	A stump left behind after a laurel tree has been felled. The stump can be extracted but yields very little usable wood. Left outdoors, the stump will deteriorate in time.
+VEE_Plant_LaurelTree_SmashedStump.label	smashed stump
+VEE_Plant_LaurelTree_SmashedStump.description	The remnants of a laurel tree destroyed by damage. It's ugly. The stump can be extracted but yields very little usable wood. Left outdoors, the stump will deteriorate in time.
+VEE_Plant_GnarledPine.label	gnarled pine tree
+VEE_Plant_GnarledPine.description	A twisted, weathered pine shaped by wind and poor soil. Its gnarled branches and sparse needles give it a rugged, enduring appearance.
+VEE_Plant_Firewood.label	firewood tree
+VEE_Plant_Firewood.description	A hardy tree adapted to grow on volcanic ground. It is among the first plants to colonize cooled lava, helping life return to the black stone.
+VEE_Plant_Firewood_ChoppedStump.label	chopped stump
+VEE_Plant_Firewood_ChoppedStump.description	A stump left behind after a firewood tree has been felled. The stump can be extracted but yields very little usable wood. Left outdoors, the stump will deteriorate in time.
+VEE_Plant_Firewood_SmashedStump.label	smashed stump
+VEE_Plant_Firewood_SmashedStump.description	The remnants of a firewood tree destroyed by damage. It's ugly. The stump can be extracted but yields very little usable wood. Left outdoors, the stump will deteriorate in time.
+## DefInjected/ThingDef/Plants_Water.xml
+VEE_Mangrove.label	mangrove
+VEE_Mangrove.description	A salt-tolerant tree adapted to life in brackish wetlands. Its tangled roots anchor it in shifting mud and provide shelter for aquatic life.
+VEE_Mangrove_ChoppedStump.label	mangrove chopped stump
+VEE_Mangrove_ChoppedStump.description	A stump left behind after a mangrove tree has been felled. The stump can be extracted but yields very little usable wood. Left outdoors, the stump will deteriorate in time.
+VEE_Mangrove_SmashedStump.label	mangrove smashed stump
+VEE_Mangrove_SmashedStump.description	The remnants of a mangrove tree destroyed by damage. It's ugly. The stump can be extracted but yields very little usable wood. Left outdoors, the stump will deteriorate in time.
+## DefInjected/ThoughtDef/Thoughts_Memory_Misc.xml
+VEE_SulfuricWater.stages.sulfuric_water.label	sulfuric water
+VEE_SulfuricWater.stages.sulfuric_water.description	The rotten egg smell of this rancid water in unbearable.
+VEE_RottenStench.stages.rotten_stench.label	rotten stench
+VEE_RottenStench.stages.rotten_stench.description	The whole region stinks.
+VEE_IrradiatedWater.stages.irradiated_water.label	irradiated water
+VEE_IrradiatedWater.stages.irradiated_water.description	I can feel my cells screaming in pain.
+VEE_DustStorm.stages.dust_storm.label	dust storm
+VEE_DustStorm.stages.dust_storm.description	This dust gets everywhere!
+VEE_Quicksand.stages.traversing_quicksand.label	traversing quicksand
+VEE_Quicksand.stages.traversing_quicksand.description	It's like moving through molasses...
+## DefInjected/TileMutatorDef/TileMutators_Animals.xml
+VEE_AbundantPredators.label	abundant predators
+VEE_AbundantPredators.description	Animals considered predators appear in greater numbers here.
+VEE_ReducedPredators.label	reduced predators
+VEE_ReducedPredators.description	Animals considered predators appear in lesser numbers here.
+VEE_AbundantPrey.label	abundant prey
+VEE_AbundantPrey.description	Animals considered prey appear in greater numbers here.
+VEE_ReducedPrey.label	reduced prey
+VEE_ReducedPrey.description	Animals considered prey appear in lesser numbers here.
+VEE_NaturalAerie.label	natural aerie
+VEE_NaturalAerie.description	Flying animals appear in greater numbers here.
+VEE_MarineSanctuary.label	marine sanctuary
+VEE_MarineSanctuary.description	Coastal animals appear in greater numbers here.
+VEE_RodentPlagues.label	rodent plagues
+VEE_RodentPlagues.description	This area is infested with rats.
+VEE_VenomousEcosystem.label	venomous ecosystem
+VEE_VenomousEcosystem.description	Venomous animals appear in greater numbers here.
+VEE_ColossalFauna.label	colossal fauna
+VEE_ColossalFauna.description	All fauna in this area is much larger than usual.
+VEE_Microfauna.label	microfauna
+VEE_Microfauna.description	All fauna in this area is much smaller than usual.
+VEE_Alphabeavers.label	alphabeavers
+VEE_Alphabeavers.description	Alphabeavers have been spotted in this region.
+VEE_MigratoryHerds.label	migratory herds
+VEE_MigratoryHerds.description	Groups of herd animals will periodically cross this region.
+VEE_FeralKinship.label	feral kinship
+VEE_FeralKinship.description	All animals in this region have a decreased wildness.
+VEE_DistressedWildlife.label	distressed wildlife
+VEE_DistressedWildlife.description	All animals in this region have increased wildness.
+VEE_AggressiveHerds.label	aggressive herds
+VEE_AggressiveHerds.description	Animals in this region have increased manhunter on damage chances.
+VEE_DomesticatedEscapees.label	domesticated escapees
+VEE_DomesticatedEscapees.description	Farm animals like chickens, pigs, and cows will appear in the wild in small herds, remnants of lost settlements or farms.
+VEE_NobleSteeds.label	noble steeds
+VEE_NobleSteeds.description	Horses and Donkeys will appear in this area.
+VEE_WanderingCompanions.label	wandering companions
+VEE_WanderingCompanions.description	Animals are more used to humans in this region, making it easier for colonists to bond with them.
+VEE_WastelandFauna.label	wasteland fauna
+VEE_WastelandFauna.description	Wasteland animals appear in greater numbers here.
+VEE_IncreasedInfestations.label	increased infestations
+VEE_IncreasedInfestations.description	Insectoid infestations are more common in this region.
+VEE_Megafauna.label	abundant megafauna
+VEE_Megafauna.description	This region has an abundance of megafauna, brought back to life by genetic engineering.
+## DefInjected/TileMutatorDef/TileMutators_Biological.xml
+VEE_NoDiseases.label	no diseases
+VEE_NoDiseases.description	Diseases very rarely strike in this region, making them almost a nonexistent threat.
+VEE_ReducedDiseases.label	reduced diseases
+VEE_ReducedDiseases.description	Diseases are 25% less common in this region.
+VEE_IncreasedDiseases.label	increased diseases
+VEE_IncreasedDiseases.description	Diseases are 25% more common in this region.
+## DefInjected/TileMutatorDef/TileMutators_Geological.xml
+VEE_SteamGeysers_Decreased.label	no geothermal activity
+VEE_SteamGeysers_Decreased.description	Steam geysers are absent from this area.
+VEE_RotstinkVents.label	rotstink geysers
+VEE_RotstinkVents.description	Foul geysers that intermittently belch clouds of corpse-born miasma, choking the air with the stench of decay.
+VEE_ToxicVents.label	toxic geysers
+VEE_ToxicVents.description	Volatile fissures that periodically spew noxious green gas, poisoning the air and sickening anything that breathes it.
+VEE_SmokeVents.label	smoke geysers
+VEE_SmokeVents.description	Smoldering fissures that intermittently exhale thick, acrid smoke, reducing visibility and choking the lungs.
+VEE_DeadlifeVents.label	deadlife geysers
+VEE_DeadlifeVents.description	Sinister geysers that exhale eerie, ash-like dust—capable of reawakening the dead under its haunting influence.
+VEE_MineralDevoid.label	mineral devoid
+VEE_Fertility_Reduced.label	decreased soil fertility
+VEE_Fertility_Reduced.description	This area contains no fertile soils.
+VEE_VolcanicRichSoil.label	rich volcanic soil
+VEE_VolcanicRichSoil.description	This area has patches of volcanic soil that have higher than average fertility.
+VEE_DeepOreRich.label	deep ore rich
+VEE_DeepOreRich.description	This area is rich in deep ores, increasing the yield of deep drills by 25%.
+VEE_DeepOrePoor.label	deep ore poor
+VEE_DeepOrePoor.description	This area is poor in deep ores, decreasing the yield of deep drills by 25%.
+VEE_DeepOreDevoid.label	no deep ores
+VEE_DeepOreDevoid.description	This area is so poor in deep ores that they are almost non-existant.
+VEE_HardToTraverse.label	hard to traverse
+VEE_HardToTraverse.description	Certain geographical features in this region make it harder to traverse.
+VEE_EasyToTraverse.label	easy to traverse
+VEE_EasyToTraverse.description	Certain geographical features in this region make it easier to traverse.
+VEE_EltexDeposits.label	eltex deposits
+VEE_EltexDeposits.description	This area has deposits of psychically active eltex.
+VEE_Sinkholes.label	sinkholes
+VEE_Sinkholes.description	This region contains several collapses in the ground forming deep, unstable pits, often exposing bare rock beneath the surface.
+VEE_StrongerTides.label	stronger tides
+VEE_StrongerTides.description	Tides in this region are particularly strong, increasing output of tidal generators by 40%.
+VEE_LargeRiverBanks.label	large river banks
+VEE_LargeRiverBanks.description	The river present in this region has larger banks.
+VEE_MineableComponentSpacer.label	advanced component deposits
+VEE_MineableComponentSpacer.description	This area has deposits of advanced ancient machinery, which can be mined for advanced components.
+VEE_DeepSnow.label	solid snow
+VEE_DeepSnow.description	This region is covered in heavy, compacted layers of snow that resist movement and muffle sound.
+## DefInjected/TileMutatorDef/TileMutators_Landmarks_ManMade.xml
+VEE_AbandonedFarmland.label	abandoned farmland
+VEE_AbandonedFarmland.description	This region contains ancient farms that were abandoned long ago due to the presence of droughts.
+## DefInjected/TileMutatorDef/TileMutators_Landmarks_Natural.xml
+VEE_MeteorCrater.label	meteor crater
+VEE_MeteorCrater.description	A vast impact site with jagged rocky edges and a debris-littered basin.
+VEE_ResurgentCaldera.label	resurgent caldera
+VEE_ResurgentCaldera.description	Ancient volcanic collapse zone with steep crater walls, a central rocky dome, and echoes of past eruptions.
+VEE_CraterLake.label	crater lake
+VEE_CraterLake.description	A vast ring of rocky walls encircles a serene, deep-blue lake.
+VEE_ToxicCrater.label	toxic crater
+VEE_ToxicCrater.description	A blasted ring of stone surrounds a stagnant, foul-smelling pool. The water glows faintly...
+VEE_Volcano.label	volcano
+VEE_Volcano.description	Charred stone ridges form the rim of an ancient caldera, its heart glowing with molten fury.
+VEE_CalmBasin.label	calm basin
+VEE_CalmBasin.description	A wide, shallow crater filled with fine, undisturbed sand. Shielded from the wind by its sloped rim, the basin remains eerily still.
+VEE_LoneIsland.label	detached coastal island
+VEE_LoneIsland.description	A large island separated from the shore.
+VEE_DetachedIceberg.label	detached iceberg
+VEE_DetachedIceberg.description	A floating mass of ice, detached from the larger ice sheet and quite distant from the shore.
+VEE_IceAndFire.label	ice and fire
+VEE_IceAndFire.description	A floating mass of ice, with an active lava lake inside. It doesn't get more metal than this.
+VEE_LoneIslandWithLake.label	central lake island
+VEE_LoneIslandWithLake.description	A large island separated from the shore with a freshwater lake inside it.
+VEE_LoneIslandWithMountain.label	resurgent island
+VEE_LoneIslandWithMountain.description	A large island separated from the shore with a tall peak in its center.
+VEE_CoralReef.label	coral reef
+VEE_CoralReef.description	A large atoll separated from the shore with a ring of corals growing around it.
+VEE_SaltPlains.label	salt plains
+VEE_SaltPlains.description	The dried surface of an inland ocean. Sterile and hard to traverse.
+VEE_RockRidge.label	rock ridge
+VEE_RockRidge.description	A rock ridge separating this region in two.
+VEE_JaggedRocks.label	jagged rocks
+VEE_JaggedRocks.description	Thin rock ridges criss cross this region.
+VEE_DryRiver.label	dry river
+VEE_DryRiver.description	A section of this river that has dried up, presumably due to absence of precipitation up-river.
+VEE_MangroveTerrain.label	coastal wetland
+VEE_MangroveTerrain.description	Large interconnected backish water pools dominate the area.
+VEE_SerpentineCanyons.label	serpentine canyons
+VEE_SerpentineCanyons.description	Geological movement has caused several deep fissures in this mountain.
+VEE_DustBowl.label	dust bowl
+VEE_DustBowl.description	A sun-scorched wasteland choked with dust and dry winds. Vegetation is nearly gone, and relentless sandstorms make survival harsh and unforgiving.
+VEE_SulfuricLake.label	sulfuric lake
+VEE_SulfuricLake.description	A stagnant volcanic lake with a strong, foul sulfuric odor. While the water is very mildly toxic, the surrounding soil is rich in nutrients, supporting hardy, sulfur-tolerant plant life.
+VEE_SulfuricRiver.label	sulfuric river
+VEE_SulfuricRiver.description	A foul-smelling river carrying acidic, sulfur-laden waters, its banks scorched and inhospitable to most forms of life.
+VEE_BurnedForest.label	burned forest
+VEE_BurnedForest.description	A forested area that has been recently affected by a severe wildfire.
+VEE_FloodPlains.label	flood plains
+VEE_FloodPlains.description	A low-lying stretch of land shaped by seasonal flooding, where nutrient-rich waters periodically spill over the banks and retreat, leaving fertile soil in their wake.
+VEE_ContaminatedReservoir.label	contaminated reservoir
+VEE_ContaminatedReservoir.description	A stagnant body of water saturated with lingering radiation, its depths unsafe for drinking or fishing and its shores hostile to life.
+VEE_ContaminatedRiver.label	contaminated river
+VEE_ContaminatedRiver.description	A flowing waterway tainted by lingering radiation, spreading contamination downstream and rendering its waters unsafe for use.
+VEE_ContaminatedCoast.label	contaminated coast
+VEE_ContaminatedCoast.description	A stretch of shoreline where irradiated waters lap against the land, poisoning the shallows and disrupting all nearby life.
+VEE_QuicksandPits.label	quicksand pits
+VEE_QuicksandPits.description	This region contains pools of shallow quicksand that impede movement.
+VEE_DriftwoodShore.label	driftwood
+VEE_DriftwoodShore.description	A stretch of coastline littered with bleached logs and broken timber, deposited by tides and storms from distant shores.
+VEE_AlluvialFan.label	aluvial fan
+VEE_AlluvialFan.description	A broad, fan-shaped spread of rich sediment deposited where flowing water from a river slows and disperses across the land.
+VEE_RelictDelta.label	relict delta
+VEE_RelictDelta.description	A fan of dried channels and silt deposits, shaped by a river that once split and flowed here long ago.
+VEE_StagnantRivulet.label	stagnant rivulet
+VEE_StagnantRivulet.description	A slow-moving river where water barely flows, its course clogged with silt and shallow pools.
+VEE_AnimaSoils.label	anima soils
+VEE_AnimaSoils.description	This area contains soil infused with latent anima energy, subtly influencing plants, animals, and minds.
+VEE_AnimaSoils_Coast.label	anima soils
+VEE_AnimaSoils_Coast.description	This area contains soil infused with latent anima energy, subtly influencing plants, animals, and minds.
+VEE_JadeChunks.label	jadeite chunks
+VEE_JadeChunks.description	This area contains small deposits of jadeite.
+VEE_AnimaFlora.label	anima flora
+VEE_AnimaFlora.description	This region contains a dense forest with anima trees and lesser anima growths, quietly resonating with psychic energy. The air feels attentive, as if the land itself is listening.
+VEE_AnimaFauna.label	anima fauna
+VEE_AnimaFauna.description	The placid environment of the anima forest attracts some anima-touched animals.
+VEE_JadeiteMountains.label	jadeite mountains
+VEE_JadeiteMountains.description	The stone found in this region is a jade rich mineral.
+VEE_StoneForest.label	stone forest
+VEE_StoneForest.description	A strange expanse of towering stone spires and jagged rock formations, rising like gigantic, petrified trees from the ground.
+VEE_GravelBeach.label	gravel beach
+VEE_GravelBeach.description	A harsh shoreline of loose gravel and rounded stones, where waves grind rock against rock.
+VEE_Cenotes.label	cenotes
+VEE_Cenotes.description	A scattered network of deep, water-filled sinkholes formed by collapsed stone.
+VEE_BasaltCape.label	basalt cape
+VEE_BasaltCape.description	A jutting headland of dark basalt, fractured into sharp columns by ancient lava flows. Rich in volcanic rocks.
+VEE_ObsidianChunks.label	obsidian chunks
+VEE_ObsidianChunks.description	This area contains small chunks of obsidian.
+VEE_RedDesert.label	red desert
+VEE_RedDesert.description	A vast desert of iron-rich sand, stained red by the slow grinding of ancient stone.
+VEE_RedDesertPlants.label	red desert cacti
+VEE_RedDesertPlants.description	This region contains some cacti adapted to the red sands.
+VEE_VolcanicSandDesert.label	volcanic sand desert
+VEE_VolcanicSandDesert.description	A barren desert of black volcanic sand, born from long-dead eruptions.
+VEE_VolcanicSandDesertFlora.label	volcanic sand flora
+VEE_VolcanicSandDesertFlora.description	This region contains some cacti adapted to the volcanic sands, and an absence of grass.
+VEE_PermafrostBasin.label	permafrost basin
+VEE_PermafrostBasin.description	A shallow basin where the ground remains permanently frozen beneath a thin surface thaw.
+VEE_QuicksandDunes.label	quicksand dunes
+VEE_QuicksandDunes.description	A barren expanse of sand and shallow quicksand that impedes movement. This area is extremely inhospitable.
+VEE_PebbleDunes.label	pebble dunes
+VEE_PebbleDunes.description	Low dunes of rounded pebbles shaped by constant wind and shifting ground.
+VEE_LittoralDunes.label	littoral dunes
+VEE_LittoralDunes.description	A band of fertile, wind-shaped dunes running along the shoreline, built from sand pulled inland from the sea.
+VEE_RisingWaters.label	rising waters
+VEE_RisingWaters.description	An extremely flat coastal plain where the tides push far inland. Large stretches of land are regularly submerged.
+VEE_FleshPits.label	flesh pits
+VEE_FleshPits.description	A scattered network of anomalous cave entrances, leading to a subterranean realm of pulsating flesh and grotesque abominations.
+VEE_IceSpires.label	ice spires
+VEE_IceSpires.description	Tall, narrow columns of ice rise from the frozen ground, shaped by wind and extreme cold.
+VEE_GlacialMoraine.label	glacial moraine
+VEE_GlacialMoraine.description	Long ridges of rock and sediment left behind by retreating ice. The ground is uneven and unstable, full of ponds of melted glacial water.
+VEE_TropicalBeach.label	tropical beach
+VEE_TropicalBeach.description	A warm coastal region shaped by steady tides and seasonal storms. Sandy beaches and shallow waters support dense vegetation along the shoreline.
+VEE_TropicalBeachFlora.label	tropical beach flora
+VEE_TropicalBeachFlora.description	This region is rich in palm trees, including cocoa trees, screw pines and date palms.
+VEE_Mossy.label	mossy
+VEE_Mossy.description	This area contains large patches of mossy soil.
+VEE_LaurelForest.label	laurel forest
+VEE_LaurelForest.description	A dense evergreen forest thriving in mild temperatures and constant humidity. Broad-leaved trees trap moisture from passing clouds, keeping the ground shaded and damp year-round.
+VEE_Moor.label	moor
+VEE_Moor.description	An open, windswept landscape of low shrubs and grasses growing over waterlogged soil. The ground is peaty and uneven, shaped by constant exposure and poor drainage.
+VEE_MoorFlora.label	moor plants
+VEE_MoorFlora.description	This region is rich in low, hardy shrubs and grasses mingled with twisted, gnarled pines, all adapted to acidic, waterlogged soil and constant wind.
+VEE_LushLavaFields.label	lush lava fields
+VEE_LushLavaFields.description	Ancient lava flows broken by cracks and cooled rock now support dense vegetation. Heat lingers beneath the surface, creating a strange landscape where living growth spreads across black stone.
+VEE_FirewoodTrees.label	firewood trees
+VEE_FirewoodTrees.description	This region is rich in firewood trees, adapted to fertile volcanic terrain.
+## DefInjected/TileMutatorDef/TileMutators_ManMade.xml
+VEE_BombardedSurface.label	bombarded surface
+VEE_BombardedSurface.description	This region was subject to orbital or artillery bombardment in a past long gone, and the craters from that bombardment are still present.
+VEE_MechanoidShipChunks.label	mechanoid chunks
+VEE_MechanoidShipChunks.description	Chunks of a crashed mechanoid ship are found around this region.
+## DefInjected/TileMutatorDef/TileMutators_MapSize.xml
+VEE_LargerRegion.label	larger region
+VEE_LargerRegion.description	This region is 30% larger than usual.
+VEE_SmallerRegion.label	smaller region
+VEE_SmallerRegion.description	This region is 30% smaller than usual.
+## DefInjected/TileMutatorDef/TileMutators_Plants.xml
+VEE_PlantLife_Overgrown.label	overgrown
+VEE_PlantLife_Overgrown.description	Plant life is extremely more abundant here.
+VEE_PlantLife_Decimated.label	decimated
+VEE_PlantLife_Decimated.description	Plant life is extremely scarce here.
+VEE_WildRice.label	wild rice
+VEE_WildRice.description	This area can grow a large number of wild {0}.
+VEE_WildWheat.label	wild wheat
+VEE_WildWheat.description	This area can grow a large number of wild {0}.
+VEE_WildCereals.label	wild cereals
+VEE_WildCereals.description	This area can grow a large number of wild cereals.
+VEE_NoTrees.label	lack of trees
+VEE_NoTrees.description	Trees of any kind do not grow here naturally.
+VEE_PoisonousFlora.label	poisonous flora
+VEE_PoisonousFlora.description	Harvesting any flora in this area will cause toxic buildup. Crops planted by colonists won't be affected.
+VEE_MangroveTrees.label	mangrove trees
+VEE_MangroveTrees.description	This area is filled with large amounts of mangrove trees whose roots can thrive in brackish water.
+VEE_WildFruitTrees.label	wild fruit trees
+VEE_WildFruitTrees.description	This area can grow a large number of wild {0}.
+VEE_Blooming_Buttercup.label	blooming buttercups
+VEE_Blooming_Buttercup.description	This area can grow a large number of colorful wild buttercups.
+VEE_Blooming_ForgetMeNot.label	blooming forget-me-nots
+VEE_Blooming_ForgetMeNot.description	This area can grow a large number of colorful wild forget-me-nots.
+VEE_Blooming_Knapweed.label	blooming knapweed
+VEE_Blooming_Knapweed.description	This area can grow a large number of colorful wild knapweed.
+VEE_Blooming_Loosestrife.label	blooming loosestrife
+VEE_Blooming_Loosestrife.description	This area can grow a large number of colorful wild loosestrife.
+VEE_Cactus_Barrel.label	barrel cacti
+VEE_Cactus_Barrel.description	This area can grow a large number of wild barrel cacti.
+VEE_Cactus_Beavertail.label	beavertail cacti
+VEE_Cactus_Beavertail.description	This area can grow a large number of wild beavertail cacti.
+VEE_Cactus_Hedgehog.label	hedgehog cacti
+VEE_Cactus_Hedgehog.description	This area can grow a large number of wild hedgehog cacti.
+VEE_Cactus_OrganPipe.label	organ pipe cacti
+VEE_Cactus_OrganPipe.description	This area can grow a large number of wild organ pipe cacti.
+VEE_AuburnTree_Oaks.label	auburn oaks
+VEE_AuburnTree_Oaks.description	In this forested area many trees remain locked in shades of red and gold, as if autumn never fully passes.
+VEE_AuburnTree_Poplars.label	auburn poplars
+VEE_AuburnTree_Poplars.description	In this forested area many trees remain locked in shades of red and gold, as if autumn never fully passes.
+VEE_AuburnTree_Maples.label	auburn maples
+VEE_AuburnTree_Maples.description	In this forested area many trees remain locked in shades of red and gold, as if autumn never fully passes.
+VEE_AuburnTree_Birches.label	auburn birches
+VEE_AuburnTree_Birches.description	In this forested area many trees remain locked in shades of red and gold, as if autumn never fully passes.
+VEE_Mycelium.label	mycelium
+VEE_Mycelium.description	A variety of light-resistant mushrooms similar to the ones growing in glowforests are common in this area.
+VEE_PlentifulGrass.label	plentiful grass
+VEE_PlentifulGrass.description	Grass is very common in this region.
+## DefInjected/TileMutatorDef/TileMutators_Weather.xml
+VEE_NoWind.label	no wind
+VEE_NoWind.description	Winds are virtually absent in this region.
+VEE_RagingWind.label	raging winds
+VEE_RagingWind.description	Winds are extraordinarily stronger in this area.
+VEE_GeomagneticStorm.label	geomagnetic storm
+VEE_GeomagneticStorm.description	An intense geomagnetic event blankets the region, completely disabling all electrical devices.
+VEE_SkygazingSpot.label	skygazing spot
+VEE_SkygazingSpot.description	A serene atmospheric phenomenon encourages colonists to spend more time gazing at the sky. Increases the chance of skygazing and boosts the joy it provides.
+VEE_TornadoAlley.label	tornado alley
+VEE_TornadoAlley.description	Frequent and intense tornadoes sweep through this region, threatening the colony.
+VEE_Sandstorms.label	sandstorms
+VEE_Sandstorms.description	Sandstorms are much more frequent in this area.
+VEE_RottenStench.label	rotten stench
+VEE_RottenStench.description	Acrid vapors seep from the ground, blanketing the area in a foul smell that burns the lungs and sours the mood.
+VEE_FertileRains.label	fertile rains
+VEE_FertileRains.description	This region is subject to unusually nutrient-rich rainfall, boosting plant growth for its duration.
+VEE_DustStorms.label	dust storms
+VEE_DustStorms.description	Dust storms that impede vision are much stronger in this area.
+VEE_MoreSolarPower.label	increased solar exposure
+VEE_MoreSolarPower.description	Insolation is stronger in this area, increasing the output of solar power by 25%.
+VEE_LessSolarPower.label	reduced solar exposure
+VEE_LessSolarPower.description	Insolation is weaker in this area, reducing the output of solar power by 25%.
+VEE_FrequentAuroras.label	frequent auroras
+VEE_FrequentAuroras.description	Auroras happen much more often in this region.
+## DefInjected/VEF.OptionalFeatures.ModDef/OptionalFeatures.xml
+VEE_OptionalFeatures.label	Vanilla Landmarks Expanded
+VEE_OptionalFeatures.description	VE Framework optional features for Vanilla Landmarks Expanded
+## DefInjected/WeatherDef/Weathers.xml
+VEE_FertileRains.label	fertile rain
+VEE_FertileRains.description	Unusually nutrient-rich rainfall is sweeping across the region, boosting plant growth for its duration.
+VEE_DustStorm.label	dust storm
+VEE_DustStorm.description	A choking wall of wind-driven dust sweeps across the land, reducing visibility, slowing movement, and scouring anything left exposed.
+## Keyed/Misc_Gameplay.xml
+VEE_MineralDevoid	devoid of {MINERAL_label}
+VEE_MineralDevoidDescription	This area has a complete lack of {MINERAL_label} deposits. Other resource ores are however twice as common.
+VEE_LetterLabelTornado	Tornado touching down!
+VEE_LetterTornado	A dangerous and highly destructive tornado has formed and is descending upon the colony! There is no way to get rid of the tornado, so buckle down and prepare to ride it out!

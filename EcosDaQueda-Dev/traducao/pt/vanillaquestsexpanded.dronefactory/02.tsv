@@ -1,0 +1,177 @@
+## DefInjected/RecipeDef/Recipes_Drones.xml
+VQE_AssembleCleanerDrone.label	Montar drone de limpeza
+VQE_AssembleCleanerDrone.description	Fabrica um drone de limpeza.
+VQE_AssembleCleanerDrone.jobString	Montando drone de limpeza.
+VQE_AssembleHaulerDrone.label	Montar drone carregador
+VQE_AssembleHaulerDrone.description	Fabrica um drone carregador.
+VQE_AssembleHaulerDrone.jobString	Montando drone carregador.
+VQE_AssembleMinerDrone.label	Montar drone minerador
+VQE_AssembleMinerDrone.description	Fabrica um drone minerador.
+VQE_AssembleMinerDrone.jobString	Montando drone minerador.
+VQE_AssembleAutobroadcasterDrone.label	Montar drone autotransmissor
+VQE_AssembleAutobroadcasterDrone.description	Fabrica um drone autotransmissor.
+VQE_AssembleAutobroadcasterDrone.jobString	Montando drone autotransmissor.
+VQE_AssembleTurretDrone.label	Montar drone torreta
+VQE_AssembleTurretDrone.description	Fabrica um drone torreta.
+VQE_AssembleTurretDrone.jobString	Montando drone torreta.
+VQE_AssembleRaiderDrone.label	Montar drone saqueador
+VQE_AssembleRaiderDrone.description	Fabrica um drone saqueador.
+VQE_AssembleRaiderDrone.jobString	Montando drone saqueador.
+VQE_AssembleProtolancer.label	Montar protolanceiro
+VQE_AssembleProtolancer.description	Fabrica um protolanceiro.
+VQE_AssembleProtolancer.jobString	Montando protolanceiro.
+VQE_AssembleFarmingDrone.label	Montar drone agrícola
+VQE_AssembleFarmingDrone.description	Fabrica um drone agrícola.
+VQE_AssembleFarmingDrone.jobString	Montando drone agrícola.
+VQE_AssembleFirefighterDrone.label	Montar drone bombeiro
+VQE_AssembleFirefighterDrone.description	Fabrica um drone bombeiro.
+VQE_AssembleFirefighterDrone.jobString	Montando drone bombeiro.
+VQE_AssembleHornetDrone.label	Montar drone vespa
+VQE_AssembleHornetDrone.description	Fabrica um drone vespa.
+VQE_AssembleHornetDrone.jobString	Montando drone vespa.
+VQE_AssembleStingrayDrone.label	Montar drone arraia
+VQE_AssembleStingrayDrone.description	Fabrica um drone arraia.
+VQE_AssembleStingrayDrone.jobString	Montando drone arraia.
+VQE_AssemblePackDrone.label	Montar drone de carga
+VQE_AssemblePackDrone.description	Fabrica um drone de carga.
+VQE_AssemblePackDrone.jobString	Montando drone de carga.
+## DefInjected/ResearchProjectDef/ResearchProjects_Various.xml
+VQE_Dronetech.label	tecnologia de drones
+VQE_Dronetech.description	Permite construir drones de trabalho especializados e a infraestrutura necessária para mantê-los funcionando.
+VQE_Dronetech.generalRules.rulesStrings[0]	subject->redes autônomas de drones
+VQE_Dronetech.generalRules.rulesStrings[1]	subject_story->criou os primeiros drones totalmente sincronizados
+VQE_Dronetech.generalRules.rulesStrings[2]	subject_story->transformou máquinas dispersas numa só rede automatizada
+VQE_Dronetech.generalRules.rulesStrings[3]	subject_story->viu além das unidades isoladas a elegância da autonomia coordenada
+VQE_Dronetech.generalRules.rulesStrings[4]	subject_gerund->orquestrando frotas numa harmonia operacional perfeita
+## DefInjected/SitePartDef/QuestScriptDef_DroneFactory.xml
+VQE_DroneFactory.label	fábrica de drones
+VQE_DroneFactory.description	Uma fábrica de drones pirata muito fortificada.
+## DefInjected/SitePartDef/QuestScriptDef_DroneScrapyard.xml
+VQE_DroneScrapyard.label	ferro-velho de drones
+VQE_DroneScrapyard.description	Um velho ferro-velho de drones cheio de máquinas instáveis e drones arruinados.
+## DefInjected/SitePartDef/QuestScriptDef_DroneStockpile.xml
+VQE_DroneStockpile.label	transmissor de drones
+VQE_DroneStockpile.description	Um transmissor de drones de longo alcance está ativo nesta área.
+## DefInjected/StatDef/Stats.xml
+VQE_LifespanYears.label	vida útil (anos)
+VQE_LifespanYears.description	A vida útil operacional do drone, em anos.
+VQE_LifespanDrainSpeed.label	velocidade de desgaste
+VQE_LifespanDrainSpeed.description	Multiplica a velocidade com que a vida útil do drone se esgota. Valores maiores, desgaste mais rápido.
+## DefInjected/ThingCategoryDef/ThingCategories.xml
+VQE_CorpsesDrone.label	carcaças de drone
+## DefInjected/ThingDef/Buildings_Decorative.xml
+VQED_DroneShell.label	casco de drone
+VQED_DroneShell.description	O casco de um drone esmagado. Está se deteriorando há bastante tempo, e os componentes úteis se desfizeram.
+VQED_DroneChunk.label	pedaço de drone
+VQED_DroneChunk.description	Uma grande seção, muito danificada, da estrutura de um drone colossal. Parece ter sido arrancada com violência da unidade principal, talvez por uma explosão forte ou uma pane interna extrema. As chapas estão empenadas, mas ainda há recursos úteis que dá para obter desmontando-a.
+VQE_CompactedDroneScrap.label	sucata de drone compactada
+VQE_CompactedDroneScrap.description	Um cubo denso de componentes de drone e sucata metálica bem prensados. A compactação fundiu o material num bloco difícil de desmontar, mas que ainda guarda metal valioso.
+VQED_DestroyedColossusChassis.label	chassi de colosso destruído
+VQED_DestroyedColossusChassis.description	O chassi destruído do que já foi um drone colossal. O tamanho sugere um poder imenso, mas hoje é pouco mais que um monte de sucata. Todos os componentes internos e peças de valor foram saqueados há muito tempo, sobrando só o casco blindado e depenado.
+VQED_DestroyedColossusDifferential.label	diferencial de colosso destruído
+VQED_DestroyedColossusDifferential.description	O enorme conjunto de engrenagens diferenciais, arruinado, de um drone colossal. A estrutura mecânica complexa está torta e enferrujada, e só sobrou o metal pesado e não reciclável.
+VQED_DestroyedColossusLeg.label	perna de colosso destruída
+VQED_DestroyedColossusLeg.description	Os restos estropiados de uma das enormes pernas de um drone colossal. Só sobrou o metal volumoso e não reciclável.
+VQED_DefunctAerialDrone.label	drone aéreo inativo
+VQED_DefunctAerialDrone.description	Os restos muito danificados de um drone aéreo antigo. A carcaça está marcada e as hélices pequenas, tortas, sinal de uma queda violenta. Este modelo é anterior aos aerodrones avançados de tecnologia espacial e usava componentes internos mais volumosos e primitivos. O pouco que resta dos sistemas de carga não funciona.
+VQED_DisabledAutotank.label	autotanque desativado
+VQED_DisabledAutotank.description	A carcaça de um tanque blindado autônomo de porte médio. Os pesados painéis de serviço foram arrancados de qualquer jeito, deixando buracos onde ficavam os sistemas de mira e tração. Mesmo totalmente depenado e desativado, o volume blindado e o perfil de combate ainda impõem respeito.
+VQED_JunkyardSkidloader.label	minicarregadeira de ferro-velho
+VQED_JunkyardSkidloader.description	Uma minicarregadeira grande e enferrujada. Qualquer peça que valesse algo foi tirada há muito tempo.
+VQED_JunkyardDigger.label	escavadeira de ferro-velho
+VQED_JunkyardDigger.description	Uma escavadeira enorme e enferrujada. O braço e a pá estão travados de ferrugem, provavelmente por décadas parada depois que todas as peças aproveitáveis foram retiradas.
+VQED_DisabledAerialDrone.label	drone aéreo desativado
+VQED_DisabledAerialDrone.description	Um drone aéreo industrial impecável, parado e acoplado a uma baia de recarga. Intacto, mas totalmente inútil porque faltam componentes críticos: os sensores estão apagados e as aletas de voo, travadas. Ainda dá para desmontá-lo e aproveitar o que restou.
+VQED_DisabledColossusDrone.label	drone colosso desativado
+VQED_DisabledColossusDrone.description	A estrutura imensa de um drone industrial colossal, parada. Alguns painéis de acesso vitais estão abertos e vazios, com componentes internos e sistemas de tração retirados com habilidade. Ainda dá para desmontá-lo e aproveitar o que restou.
+VQED_DroneResourcePallet.label	palete de recursos de drone
+VQED_DroneResourcePallet.description	Recursos de construção de drones em palete, prontos para transporte: chapas de chassi de aço, chicotes de fiação, componentes eletrônicos e microatuadores. Pode ser desmontado para render componentes valiosos.
+VQED_DormantBattleDrone.label	drone de batalha adormecido
+VQED_DormantBattleDrone.description	Um drone de batalha automático. Patrulha uma área sem parar procurando intrusos. Quando acha um, ataca sem trégua com uma pequena pistola curta.\n\nEste drone parece estar adormecido.
+VQED_DormantRaiderDrone.label	drone saqueador adormecido
+VQED_DormantRaiderDrone.description	Um drone automático feito para ataques de perto e supressão pesada. Armado com uma metralhadora de alta capacidade, a estrutura lenta e muito blindada o deixa firme no lugar, saturando a área de tiros contínuos e suprimindo posições inimigas.\n\nEste drone parece estar adormecido.
+VQED_DormantHornetDrone.label	drone vespa adormecido
+VQED_DormantHornetDrone.description	Um drone militar automático para defesa de curto alcance e apoio em combate. Consegue perfurar o inimigo várias vezes com um ferrão longo e endurecido. Não carrega o paralisante dos drones vespa comuns, mas perfura armadura pesada e causa dano considerável, e a blindagem reforçada aguenta muito castigo.\n\nEste drone parece estar adormecido.
+VQED_UnfinishedDronePallet.label	palete de drones inacabados
+VQED_UnfinishedDronePallet.description	Um sortimento de componentes de drone semiprontos, bem empilhados num palete de transporte. Esses módulos ainda não são drones, mas contêm matéria-prima valiosa que dá para recuperar.
+VQED_FactoryMachinery.label	maquinário de fábrica
+VQED_FactoryMachinery.description	Um bloco denso e complexo de equipamento industrial, provavelmente usado na produção em massa ou montagem de componentes de drone. A função original não é clara, mas ele zumbe com energia mecânica.
+VQED_LongConveyorBelt.label	esteira transportadora longa
+VQED_LongConveyorBelt.description	Uma seção de um sistema de transporte mecânico, feita para levar materiais e componentes pelo chão da fábrica sem atrapalhar a passagem.
+VQED_ConveyorBelt.label	esteira transportadora
+VQED_ConveyorBelt.description	Uma seção curta de um sistema de transporte mecânico, feita para levar materiais e componentes pelo chão da fábrica sem atrapalhar a passagem.
+VQED_FactoryRoboarm.label	braço robótico de fábrica
+VQED_FactoryRoboarm.description	Um braço robótico industrial para manipulação de alta precisão na esteira de uma fábrica de drones.
+## DefInjected/ThingDef/Buildings_Misc.xml
+VQE_DroneTransmitter.label	transmissor de drones
+VQE_DroneTransmitter.description	Um pequeno mastro de antena que cria uma rede local de drones, permitindo que os drones próximos operem dentro do raio de transmissão.
+VQE_DroneStandby.label	drone (em espera)
+## DefInjected/ThingDef/Buildings_Production.xml
+VQE_DroneTinkeringBench.label	bancada de funilaria de drones
+VQE_DroneTinkeringBench.description	Uma bancada com maquinário e ferramentas avançadas para construir vários tipos de drone e equipamentos ligados a drones, e para desmontar carcaças de drones gastos de volta em recursos básicos.
+## DefInjected/ThingDef/Buildings_QuestStructures.xml
+VQE_SalvageableDroneWreck.label	destroço de drone recuperável
+VQE_SalvageableDroneWreck.description	Uma seção enorme e surrada de um drone militar, com danos extremos de combate. Há fiação exposta, mas o valioso núcleo do drone continua selado lá dentro, provavelmente intacto e recuperável. Extraindo o núcleo, dá para descriptografá-lo e liberar uma nova planta de drone. O estoque de munição incendiária do drone está intacto, mas instável, e deve detonar depois de algum dano.
+VQE_DroneStorageTerminal.label	terminal de armazenamento de drones
+VQE_DroneStorageTerminal.description	Um terminal de computador de armazenamento de drones. Pode ser invadido para desativar de vez os drones adormecidos por perto.
+VQE_DroneStorageTerminal.comps.CompHackable.notHackedInspectString	Invada para desativar de vez os drones adormecidos por perto.
+VQE_LongRangeDroneTransmitter.label	transmissor de drones de longo alcance
+VQE_LongRangeDroneTransmitter.description	Um conjunto volumoso de antenas multibanda feito para transmitir um sinal de controle de drones a uma distância excepcional. A unidade está funcionando e dá largura de banda a todos os drones por perto. Pode ser invadida para sobrecarregar as proteções internas, deixando-a inerte e dando acesso ao valioso núcleo.
+VQE_LongRangeDroneTransmitter.comps.CompHackable.hackedInspectString	Desativado
+VQE_LongRangeDroneTransmitter.comps.CompHackable.hackedMessage	{HACKER_labelShort} terminou de invadir o transmissor de drones de longo alcance.
+VQE_LongRangeDroneTransmitter.comps.CompHackable.notHackedInspectString	Invada para desativar o transmissor de drones.
+VQE_AutomatedDroneAssembler.label	montadora automática de drones
+VQE_AutomatedDroneAssembler.description	Uma enorme linha de produção blindada dedicada à montagem automática e incansável de drones. Braços mecânicos complexos trabalham num ciclo contínuo, alimentando componentes, soldando junções e rodando diagnósticos. Vai continuar cuspindo drones hostis até ser destruída.
+VQE_TinkererHoldingPlatform.label	plataforma de contenção do Funileiro
+VQE_TinkererHoldingPlatform.description	Uma plataforma especial de acoplamento e recarga para drones valiosos que não combatem, como o Funileiro. A construção resistente foi feita para prender e proteger o drone. A plataforma pode ser destruída para recuperar os recursos, ou invadida para burlar os protocolos de segurança e soltar o Funileiro, que será reprogramado para se juntar à sua colônia na hora.
+VQE_TinkererHoldingPlatform.comps.CompHackable.hackedInspectString	Solto
+VQE_TinkererHoldingPlatform.comps.CompHackable.hackedMessage	{HACKER_labelShort} terminou a invasão e soltou o Funileiro.
+VQE_TinkererHoldingPlatform.comps.CompHackable.notHackedInspectString	Invada para soltar o Funileiro.
+## DefInjected/ThingDef/Buildings_Traps.xml
+VQED_DormantBattleDrone_Active.label	drone de batalha adormecido
+VQED_DormantBattleDrone_Active.description	Um drone de batalha automático. Patrulha uma área sem parar procurando intrusos. Quando acha um, ataca sem trégua com uma pequena pistola curta.\n\nEste drone parece estar adormecido.
+VQED_DormantRaiderDrone_Active.label	drone saqueador adormecido
+VQED_DormantRaiderDrone_Active.description	Um drone automático feito para ataques de perto e supressão pesada. Armado com uma metralhadora de alta capacidade, a estrutura lenta e muito blindada o deixa firme no lugar, saturando a área de tiros contínuos e suprimindo posições inimigas.\n\nEste drone parece estar adormecido.
+VQED_DormantHornetDrone_Active.label	drone vespa adormecido
+VQED_DormantHornetDrone_Active.description	Um drone militar automático para defesa de curto alcance e apoio em combate. Consegue perfurar o inimigo várias vezes com um ferrão longo e endurecido. Não carrega o paralisante dos drones vespa comuns, mas perfura armadura pesada e causa dano considerável, e a blindagem reforçada aguenta muito castigo.\n\nEste drone parece estar adormecido.
+VQE_ImmobilizedTurret.label	torreta imobilizada
+VQE_ImmobilizedTurret.description	Uma torreta móvel quebrada. O velho mecanismo de mira ainda funciona.
+VQE_ImmobilizedTurret_Bullet.label	bala de minitorreta
+VQE_ImmobilizedTurret_Gun.label	torreta imobilizada
+VQE_ImmobilizedTurret_Gun.description	Uma torreta móvel quebrada. O velho mecanismo de mira ainda funciona.
+VQE_ImmobilizedTurret_Gun.verbs.Verb_ShootCE.label	torreta imobilizada
+## DefInjected/ThingDef/Filth.xml
+VQE_MachiningFluid.label	mancha de fluido de usinagem
+VQE_MachiningFluid.description	Uma mancha de fluido de usinagem inflamável.
+## DefInjected/ThingDef/Items_Exotic.xml
+VQE_DroneCore.label	núcleo de drone
+VQE_DroneCore.description	Uma fusão densa e autônoma de computação e armazenamento de energia, feita para ser a unidade central de processamento de um drone. Guarda a lógica do drone, os parâmetros de operação e uma biblioteca escondida de plantas carregadas de fábrica.\n\nDescriptografar os registros do núcleo numa bancada de pesquisa pode liberar a planta de um novo tipo de drone e permitir construí-lo.
+## DefInjected/ThingDef/Items_Unfinished.xml
+VQE_UnfinishedDrone.label	drone inacabado
+VQE_UnfinishedDrone.description	Um drone inacabado.
+VQE_UnfinishedDroneSpawner_BattleDrone.label	drone de batalha
+VQE_UnfinishedDroneSpawner_BattleDrone.description	Um drone inacabado. Vai se montar num drone.
+VQE_UnfinishedDroneSpawner_CleanerDrone.label	drone de limpeza
+VQE_UnfinishedDroneSpawner_CleanerDrone.description	Um drone inacabado. Vai se montar num drone.
+VQE_UnfinishedDroneSpawner_HaulerDrone.label	drone carregador
+VQE_UnfinishedDroneSpawner_HaulerDrone.description	Um drone inacabado. Vai se montar num drone.
+VQE_UnfinishedDroneSpawner_MinerDrone.label	drone minerador
+VQE_UnfinishedDroneSpawner_MinerDrone.description	Um drone inacabado. Vai se montar num drone.
+VQE_UnfinishedDroneSpawner_AutobroadcasterDrone.label	drone autotransmissor
+VQE_UnfinishedDroneSpawner_AutobroadcasterDrone.description	Um drone inacabado. Vai se montar num drone.
+VQE_UnfinishedDroneSpawner_TurretDrone.label	drone torreta
+VQE_UnfinishedDroneSpawner_TurretDrone.description	Um drone inacabado. Vai se montar num drone.
+VQE_UnfinishedDroneSpawner_RaiderDrone.label	drone saqueador
+VQE_UnfinishedDroneSpawner_RaiderDrone.description	Um drone inacabado. Vai se montar num drone.
+VQE_UnfinishedDroneSpawner_Protolancer.label	drone protolanceiro
+VQE_UnfinishedDroneSpawner_Protolancer.description	Um drone inacabado. Vai se montar num drone.
+VQE_UnfinishedDroneSpawner_FarmingDrone.label	drone agrícola
+VQE_UnfinishedDroneSpawner_FarmingDrone.description	Um drone inacabado. Vai se montar num drone.
+VQE_UnfinishedDroneSpawner_FirefighterDrone.label	drone bombeiro
+VQE_UnfinishedDroneSpawner_FirefighterDrone.description	Um drone inacabado. Vai se montar num drone.
+VQE_UnfinishedDroneSpawner_HornetDrone.label	drone vespa
+VQE_UnfinishedDroneSpawner_HornetDrone.description	Um drone inacabado. Vai se montar num drone.
+VQE_UnfinishedDroneSpawner_StingrayDrone.label	drone arraia
+VQE_UnfinishedDroneSpawner_StingrayDrone.description	Um drone inacabado. Vai se montar num drone.
+VQE_UnfinishedDroneSpawner_PackDrone.label	drone de carga
+VQE_UnfinishedDroneSpawner_PackDrone.description	Um drone inacabado. Vai se montar num drone.

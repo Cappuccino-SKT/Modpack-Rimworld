@@ -1,0 +1,66 @@
+## DefInjected/HediffDef/Hediffs_Global_Misc.xml
+VCE_ConsumedConfection.label	comeu doce
+VCE_ConsumedConfection.description	Este colono comeu um doce há pouco. Comer outro antes de 3 dias não anula lembranças ruins.
+## DefInjected/PipeSystem.ProcessDef/ProcessDefs.xml
+VCE_BakeSimpleConfection.label	Assar doces simples
+VCE_BakeSimpleConfection.description	Transforma massa de bolo em 4 doces simples.
+VCE_BakeSimpleConfection.labelOverride	Transformar massa de bolo em 4 doces simples.
+VCE_BakeFineConfection.label	Assar doces finos
+VCE_BakeFineConfection.description	Transforma massa de bolo e 20 de leite em 4 doces finos.
+VCE_BakeFineConfection.labelOverride	Transformar massa de bolo e 20 de leite em 4 doces finos.
+VCE_BakeLavishConfection.label	Assar doces luxuosos
+VCE_BakeLavishConfection.description	Transforma massa de bolo, 40 de vegetais e 20 de leite em 4 doces luxuosos.
+VCE_BakeLavishConfection.labelOverride	Transformar massa de bolo, 40 de vegetais e 20 de leite em 4 doces luxuosos.
+VCE_BakeGourmetConfection.label	Assar doce gourmet
+VCE_BakeGourmetConfection.description	Transforma massa de bolo gourmet, 40 de vegetais e 20 de leite em 1 doce gourmet.
+VCE_BakeGourmetConfection.labelOverride	Transformar massa de bolo gourmet, 40 de vegetais e 20 de leite em 1 doce gourmet.
+## DefInjected/RecipeDef/Recipes_CakeBatters.xml
+VCE_CookCakeBatter.label	misturar massa de bolo
+VCE_CookCakeBatter.description	Mistura massa de bolo para servir de base a um doce assado.
+VCE_CookCakeBatter.jobString	Misturando massa de bolo.
+VCE_CookGourmetCakeBatter.label	misturar massa de bolo gourmet
+VCE_CookGourmetCakeBatter.description	Mistura massa de bolo gourmet para servir de base a um doce assado.
+VCE_CookGourmetCakeBatter.jobString	Misturando massa de bolo gourmet.
+## DefInjected/ResearchProjectDef/Research.xml
+VCE_DecorativeBaking.label	confeitaria decorativa
+VCE_DecorativeBaking.description	Libera técnicas de confeitaria criativa: os colonos passam a fazer bolos, cupcakes e biscoitos decorados com desenhos coloridos e muito açúcar.
+VCE_DecorativeBaking.generalRules.rulesStrings[0]	subject->confeitaria decorativa
+VCE_DecorativeBaking.generalRules.rulesStrings[1]	subject_story->aperfeiçoou a arte de transformar doces simples em criações coloridas
+VCE_DecorativeBaking.generalRules.rulesStrings[2]	subject_story->se formou no delicado ofício da pasta americana, da cobertura e do açúcar
+VCE_DecorativeBaking.generalRules.rulesStrings[3]	subject_story->fundou uma confeitaria famosa, encantando crianças e clientes com doces caprichosos
+VCE_DecorativeBaking.generalRules.rulesStrings[4]	subject_gerund->criando bolos complexos e doces decorados
+## DefInjected/ThingCategoryDef/ThingCategories.xml
+VCE_CakeBatters.label	massas de bolo
+## DefInjected/ThingDef/Buildings.xml
+VCE_BakeryOven_Fueled.label	forno de confeitaria a lenha
+VCE_BakeryOven_Fueled.description	Um forno a lenha feito para assar biscoitos, doces e bolos. O calor constante garante cozimento por igual e resultados doces, mas exige lenha o tempo todo.
+VCE_BakeryOven_Electric.label	forno de confeitaria elétrico
+VCE_BakeryOven_Electric.description	Um forno elétrico feito para assar biscoitos, doces e bolos, com distribuição de calor confiável e constante para resultados perfeitos toda vez.
+## DefInjected/ThingDef/Items_Confections.xml
+VCE_NormalCakeBatter.label	massa de bolo
+VCE_NormalCakeBatter.description	Um pouco de massa de bolo. Serve para assar doces; sozinha, não é comestível.
+VCE_GourmetCakeBatter.label	massa de bolo gourmet
+VCE_GourmetCakeBatter.description	Um pouco de massa de bolo gourmet. Serve para assar doces; sozinha, não é comestível.
+VCE_SimpleConfection.label	doce simples
+VCE_SimpleConfection.description	Um biscoitão doce, levemente decorado. Rápido de fazer, simples de gostar.
+VCE_FineConfection.label	doce fino
+VCE_FineConfection.description	Rosquinhas coloridas com espirais de cobertura e confeitos. Uma alegria para qualquer ocasião.
+VCE_LavishConfection.label	doce luxuoso
+VCE_LavishConfection.description	Um sortimento de biscoitos com decoração caprichada, cobertos de cores vivas e desenhos detalhados. Mais obra de arte que comida, mas ainda delicioso.
+VCE_GourmetConfection.label	doce gourmet
+VCE_GourmetConfection.description	Um prato de cupcakes ricamente decorados, cada um com cobertura elaborada e enfeites doces. Uma verdadeira vitrine da confeitaria criativa.
+## Keyed/Keys.xml
+VCE_OvenFailurePower	Os doces estragaram por falta de lenha ou energia no forno de confeitaria
+VCE_OvenFailurePowerWarning	Os doces estão estragando rápido por falta de lenha ou energia no forno de confeitaria
+VCE_BakeryOvenNotWorking	Este forno de confeitaria não está funcionando no momento
+VCE_Reset	Restaurar
+VCE_SimpleMealMood	Lembrança ruim máxima removida por doces simples
+VCE_SimpleMealMoodDesc	Comer um doce simples remove uma lembrança ruim até esta gravidade. -3 por padrão. 0 desliga a mecânica para esse doce.
+VCE_FineMealMood	Lembrança ruim máxima removida por doces finos
+VCE_FineMealMoodDesc	Comer um doce fino remove uma lembrança ruim até esta gravidade. -5 por padrão. 0 desliga a mecânica para esse doce.
+VCE_LavishMealMood	Lembrança ruim máxima removida por doces luxuosos
+VCE_LavishMealMoodDesc	Comer um doce luxuoso remove uma lembrança ruim até esta gravidade. -10 por padrão. 0 desliga a mecânica para esse doce.
+VCE_GourmetMealMood	Lembrança ruim máxima removida por doces gourmet
+VCE_GourmetMealMoodDesc	Comer um doce gourmet remove uma lembrança ruim até esta gravidade. -15 por padrão. 0 desliga a mecânica para esse doce.
+VCE_TicksForEffect	Prazo até passar o efeito "comeu doce"
+VCE_TicksForEffectDesc	Por padrão, comer um doce abre um prazo de 3 dias em que outros doces não anulam lembranças ruins.

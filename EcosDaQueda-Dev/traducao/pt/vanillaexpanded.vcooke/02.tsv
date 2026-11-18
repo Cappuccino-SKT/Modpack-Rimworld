@@ -1,0 +1,200 @@
+## DefInjected/RecipeDef/Recipes_Soups.xml
+VCE_CookSoupSimple.label	preparar sopa simples
+VCE_CookSoupSimple.description	Prepara uma sopa simples crua, rápida, com poucos ingredientes.
+VCE_CookSoupSimple.jobString	Preparando sopa simples.
+VCE_CookSoupFine.label	preparar sopa boa
+VCE_CookSoupFine.description	Prepara uma sopa boa crua, montada com cuidado com vários ingredientes.
+VCE_CookSoupFine.jobString	Preparando sopa boa.
+VCE_CookSoupLavish.label	preparar sopa luxuosa
+VCE_CookSoupLavish.description	Prepara uma sopa luxuosa crua. Uma obra-prima da arte culinária, que alimenta o corpo, a mente e a alma.
+VCE_CookSoupLavish.jobString	Preparando sopa luxuosa.
+VCE_CookSoupGourmet.label	preparar sopa gourmet
+VCE_CookSoupGourmet.description	Prepara uma sopa gourmet crua. Uma obra de arte culinária, de preparo e apresentação refinados e até elaborados, esteticamente equilibrada, ainda que em pouca quantidade.\n\nEsta receita não aceita ingredientes misturados e demora muito.
+VCE_CookSoupGourmet.jobString	Preparando sopa gourmet.
+## DefInjected/ResearchProjectDef/Research.xml
+VCE_CondimentsResearch.label	condimentos
+VCE_CondimentsResearch.description	Condimento é uma especiaria, molho ou preparo que se põe na comida, durante ou depois do cozimento, para dar um sabor específico, realçar o sabor ou complementar o prato. Todos os condimentos são feitos na mesa de condimentos.
+VCE_CondimentsResearch.generalRules.rulesStrings[0]	subject->sabores de distinção
+VCE_CondimentsResearch.generalRules.rulesStrings[1]	subject_story->desvendou os segredos de realçar o sabor criando condimentos variados
+VCE_CondimentsResearch.generalRules.rulesStrings[2]	subject_story->foi pioneiro no uso de ervas, especiarias e molhos para transformar refeições simples em experiências culinárias
+VCE_CondimentsResearch.generalRules.rulesStrings[3]	subject_story->cultivou uma rica cultura do paladar, incentivando a experimentação e a inovação culinária
+VCE_CondimentsResearch.generalRules.rulesStrings[4]	subject_gerund->elevando a arte do sabor com o domínio dos condimentos
+VCE_SoupCooking.label	sopas
+VCE_SoupCooking.description	Sopa é uma comida sobretudo líquida, em geral servida morna ou quente, feita juntando carne ou vegetais com caldo ou água. As sopas quentes cozinham ingredientes sólidos no líquido até extrair os sabores. Esta pesquisa também libera a panela elétrica, necessária para fazer sopas.
+VCE_SoupCooking.generalRules.rulesStrings[0]	subject->a essência do sustento
+VCE_SoupCooking.generalRules.rulesStrings[1]	subject_story->dominou o equilíbrio delicado dos ingredientes para criar sopas que confortam e curam
+VCE_SoupCooking.generalRules.rulesStrings[2]	subject_story->introduziu a panela elétrica, revolucionando o preparo de sopas com eficiência e precisão
+VCE_SoupCooking.generalRules.rulesStrings[3]	subject_story->ampliou o repertório culinário, explorando a profundidade de sabor possível na forma líquida
+VCE_SoupCooking.generalRules.rulesStrings[4]	subject_gerund->criando a alma da culinária em cada panela de sopa
+VCE_Grilling.label	grelhados
+VCE_Grilling.description	Grelhar é cozinhar com calor seco aplicado na superfície da comida, em geral por cima, por baixo ou pelo lado. Costuma envolver muito calor direto e é usado para cozinhar carnes e vegetais rápido. Esta pesquisa libera a grelha.
+VCE_Grilling.generalRules.rulesStrings[0]	subject->a arte primal do fogo
+VCE_Grilling.generalRules.rulesStrings[1]	subject_story->abraçou a ligação primal entre fogo e comida, aperfeiçoando a técnica do grelhado
+VCE_Grilling.generalRules.rulesStrings[2]	subject_story->transformou o ato de cozinhar numa celebração de sabor, textura e aroma
+VCE_Grilling.generalRules.rulesStrings[3]	subject_story->inovou com grelhas que realçam as qualidades naturais de carnes e vegetais
+VCE_Grilling.generalRules.rulesStrings[4]	subject_gerund->selando a perfeição em cada refeição com o domínio da grelha
+VCE_DeepFrying.label	frituras
+VCE_DeepFrying.description	A fritura por imersão é um método em que a comida é mergulhada em gordura quente, em geral óleo, ao contrário da pouca gordura da frigideira comum. Esta pesquisa libera a fritadeira.
+VCE_DeepFrying.generalRules.rulesStrings[0]	subject->a crocância dourada
+VCE_DeepFrying.generalRules.rulesStrings[1]	subject_story->descobriu o efeito transformador da fritura por imersão, envolvendo a comida numa casca dourada e crocante
+VCE_DeepFrying.generalRules.rulesStrings[2]	subject_story->projetou a fritadeira, uma maravilha da tecnologia culinária, para resultados perfeitos e constantes
+VCE_DeepFrying.generalRules.rulesStrings[3]	subject_story->elevou o simples ato de fritar a um ofício culinário celebrado em várias culturas
+VCE_DeepFrying.generalRules.rulesStrings[4]	subject_gerund->mergulhando nas profundezas do sabor com a magia da fritura
+VCE_Canning.label	enlatamento
+VCE_Canning.description	Enlatar é conservar a comida processando-a e selando-a num recipiente hermético (potes de vidro e latas de aço ou estanho). Dá validade de vários anos. Um enlatado liofilizado, como lentilha seca, pode durar até 30 anos comestível. Esta pesquisa libera a enlatadora.
+VCE_Canning.generalRules.rulesStrings[0]	subject->os cofres do sabor
+VCE_Canning.generalRules.rulesStrings[1]	subject_story->revolucionou a conservação de alimentos com o enlatamento, estendendo a fartura da colheita
+VCE_Canning.generalRules.rulesStrings[2]	subject_story->dominou a ciência de lacrar frescor e sabor, garantindo comida o ano inteiro
+VCE_Canning.generalRules.rulesStrings[3]	subject_story->introduziu a enlatadora, a chave do armazenamento prolongado de comida
+VCE_Canning.generalRules.rulesStrings[4]	subject_gerund->conservando a essência das estações em cada pote e lata
+VCE_CheeseMaking.label	queijaria
+VCE_CheeseMaking.description	A queijaria é o ofício de fazer queijo. Como muitos processos de conservação, preserva o valor nutricional e econômico do leite de forma concentrada, e permite fazer queijos de sabores e consistências variados. Esta pesquisa libera a prensa de queijo.
+VCE_CheeseMaking.generalRules.rulesStrings[0]	subject->a alquimia do leite
+VCE_CheeseMaking.generalRules.rulesStrings[1]	subject_story->transformou a origem humilde do leite na rica complexidade do queijo
+VCE_CheeseMaking.generalRules.rulesStrings[2]	subject_story->criou uma variedade de queijos, cada um um testemunho do ofício e da cultura queijeira
+VCE_CheeseMaking.generalRules.rulesStrings[3]	subject_story->projetou a prensa de queijo, espremendo novas tradições e sabores de uma prática antiga
+VCE_CheeseMaking.generalRules.rulesStrings[4]	subject_gerund->criando culturas e sabores na arte de fazer queijo
+## DefInjected/ResearchTabDef/ResearchTabs.xml
+VCE_Cooking.label	Culinária expandida
+## DefInjected/StatDef/Stats.xml
+VCE_FoodImprovementChance.label	chance de melhorar a comida
+VCE_FoodImprovementChance.description	A chance de este colono transformar uma refeição feita num tipo melhor (simples em boa, boa em luxuosa). Vale para forneadas, grelhados e refeições do jogo base.
+VCEF_FoodCondimentChance.label	chance de condimento
+VCEF_FoodCondimentChance.description	A chance de este colono pôr um condimento aleatório em qualquer refeição feita (menos nanitas ressuscitadoras).
+## DefInjected/ThingCategoryDef/ThingCategories.xml
+VCE_Condiments.label	condimentos
+VCE_Cheese.label	queijo
+VCE_UncookedSoups.label	sopas cruas
+## DefInjected/ThingDef/Buildings.xml
+VCE_ElectricPot.label	panela elétrica
+VCE_ElectricPot.description	Uma panela elétrica, também chamada de panela térmica, é um pequeno aparelho para ferver água e mantê-la numa temperatura constante. Em geral serve para cozinhar sopa em fogo baixo por bastante tempo, deixando os sabores dos ingredientes se aprofundarem e misturarem aos poucos.\n\nSopa numa panela elétrica sem energia estraga muito rápido. Cuidado com as erupções solares!
+VCE_Grill.label	grelha
+VCE_Grill.description	Uma grelha cozinha a comida com calor vindo de baixo. Esta é a lenha e precisa de madeira como combustível.
+VCE_DeepFrier.label	fritadeira
+VCE_DeepFrier.description	Uma fritadeira é um aparelho de cozinha para fritura por imersão, que cozinha mergulhando a comida em óleo bem quente, em geral entre 175 °C e 190 °C.
+VCE_CanningMachine.label	enlatadora
+VCE_CanningMachine.description	Uma enlatadora é um aparelho para guardar comida conservada em latas de metal. Cada enlatamento gasta um pouco de aço.
+VCE_CondimentPrepTable.label	mesa de condimentos
+VCE_CondimentPrepTable.description	Uma mesa de trabalho para cortar, fatiar e preparar os condimentos usados em receitas gourmet.
+VCE_CheesePress.label	prensa de queijo
+VCE_CheesePress.description	Uma prensa de queijo tira o soro da coalhada. A prensagem define a dureza, a textura e o formato do bloco ou da roda de queijo. Esta prensa também serve de câmara de maturação: quanto mais tempo o queijo matura, melhor a qualidade.
+## DefInjected/ThingDef/Items_Bakes.xml
+VCE_SimpleBake.label	forneada simples
+VCE_SimpleBake.description	Uma forneada simples, feita rápido com poucos ingredientes e farinha.
+VCE_FineBake.label	forneada boa
+VCE_FineBake.description	Uma forneada elaborada, montada com cuidado com farinha e vários ingredientes.
+VCE_LavishBake.label	forneada luxuosa
+VCE_LavishBake.description	Uma obra-prima da arte culinária, que alimenta o corpo, a mente e a alma.
+VCE_GourmetBake.label	forneada gourmet
+VCE_GourmetBake.description	Uma obra de arte culinária, de preparo e apresentação refinados e até elaborados, esteticamente equilibrada, ainda que em pouca quantidade.
+## DefInjected/ThingDef/Items_CannedFood.xml
+VCE_CannedMeat.label	carne enlatada
+VCE_CannedMeat.description	Carne selada a vácuo numa lata de aço, com validade praticamente infinita. Dá para comer fria direto da lata, mas alimenta bem mais misturada numa refeição e aquecida.\n\nOs enlatados servem para conservar a comida e usá-la depois como ingrediente, não como refeição pronta.
+VCE_CannedProduce.label	vegetais enlatados
+VCE_CannedProduce.description	Vegetais selados a vácuo numa lata de aço, com validade praticamente infinita. Dá para comer frios direto da lata, mas alimentam bem mais misturados numa refeição e aquecidos.\n\nOs enlatados servem para conservar a comida e usá-la depois como ingrediente, não como refeição pronta.
+VCE_CannedFruit.label	frutas enlatadas
+VCE_CannedFruit.description	Frutas cozidas e conservadas num recipiente hermético e resistente. Comida conservada dura indefinidamente sem refrigeração.\n\nAs frutas, ao contrário dos vegetais, são exigidas especificamente para fazer sobremesas.\n\nOs enlatados servem para conservar a comida e usá-la depois como ingrediente, não como refeição pronta.
+VCE_CannedAP.label	ovos enlatados
+VCE_CannedAP.description	Ovos cozidos selados a vácuo numa lata de aço, com validade praticamente infinita. Dá para comer frios direto da lata, mas alimentam bem mais misturados numa refeição e aquecidos.\n\nOs enlatados servem para conservar a comida e usá-la depois como ingrediente, não como refeição pronta.
+VCE_CannedFish.label	peixe enlatado
+VCE_CannedFish.description	Peixe selado a vácuo numa lata de aço, com validade praticamente infinita. Dá para comer frio direto da lata, mas alimenta bem mais misturado numa refeição e aquecido.\n\nOs enlatados servem para conservar a comida e usá-la depois como ingrediente, não como refeição pronta.
+## DefInjected/ThingDef/Items_Cheese.xml
+VCE_Cheese.label	queijo
+VCE_Cheese.description	Queijo é um laticínio feito do leite, produzido numa grande variedade de sabores, texturas e formas pela coagulação da caseína, a proteína do leite. É valorizado por ser fácil de levar, durar muito e ter muita gordura, proteína, cálcio e fósforo. É mais compacto e dura mais que o leite.\n\n<color=#E5E54C>Mecânica no jogo:</color> o efeito no humor de comer queijo depende da qualidade, de -7 a +15.
+## DefInjected/ThingDef/Items_Condiments.xml
+VCE_AgaveNectar.label	néctar de agave
+VCE_AgaveNectar.description	Um néctar ralo e meio doce, conhecido pelas propriedades curativas e anti-inflamatórias. É mais saudável que o açúcar, mas a frutose alta pode fazer mal se consumida sempre.
+VCE_RawSugar.label	açúcar
+VCE_RawSugar.description	Açúcar de cana cristal simples, que dá uma doçura muito desejada. O corpo transforma açúcar em energia com facilidade, o que pode dar um bom pique.
+VCE_RawSpices.label	especiarias
+VCE_RawSpices.description	Várias especiarias aromáticas e fortes, que dão notas marcantes na língua e um pouco de ânimo.
+VCE_Salt.label	sal
+VCE_Salt.description	O sal-gema, como o sal comum, realça o sabor dos outros ingredientes com que é cozido.
+VCE_Mayo.label	maionese
+VCE_Mayo.description	Uma emulsão grossa de ovo, óleo e ervas. A maionese faz mal à beça, mas dá um sabor gostoso e tem muitas calorias.
+VCE_InsectJellyPreserves.label	compota de geleia de inseto
+VCE_InsectJellyPreserves.description	Geleia de inseto cortada com adoçante e depois selada em compota. Muito rica e doce, e surpreendentemente saudável.
+VCE_SmokeleafButter.label	manteiga de folha de fumo
+VCE_SmokeleafButter.description	Uma substância gordurosa e grossa, feita batendo o leite até virar um creme espesso, misturado com óleo de folha de fumo e deixado firmar. Muito pouco saudável, e bate bem mais forte que um baseado.
+VCE_ChocolateSyrup.label	calda de chocolate
+VCE_ChocolateSyrup.description	Uma mistura de cacau, água e açúcar que forma uma calda agridoce, perfeita para cobrir sobremesas. Ainda não faz bem, mas não é tão ruim quanto açúcar puro.
+VCE_DigestibleResurrectorNanites.label	nanitas ressuscitadoras digeríveis
+VCE_DigestibleResurrectorNanites.description	Uma mistura de altíssima tecnologia de mundo brilhante, perigosa de beber pura pelo gosto amargo e por um leve caso de hemorragia intraventricular. Mas, cozida direito na comida, esses efeitos somem sem explicação. Quem estiver com ela no organismo ao morrer é revivido na hora, como por milagre.
+## DefInjected/ThingDef/Items_Condiments_VEPlants.xml
+VCE_Ketchup.label	ketchup
+VCE_Ketchup.description	Um molho grosso de tomate apurado, salgado e azedinho ao mesmo tempo, com final doce. Perfeito para carnes ou frituras.
+VCE_HotSauce.label	molho picante
+VCE_HotSauce.description	Um molho forte e picante, feito batendo e apurando pimentas e outras especiarias. Os mais fortes doem no começo, mas depois anestesiam a dor e esquentam o corpo.
+## DefInjected/ThingDef/Items_DeepFried.xml
+VCE_DeepFriedBigMeat.label	carne frita
+VCE_DeepFriedBigMeat.description	Carne amaciada, cortada em filés e passada numa massa grossa antes de ser mergulhada em óleo quente e frita. O resultado é uma comida crocante, nada saudável, mas gostosa: não sustenta tanto quanto uma refeição, mas dá muito prazer. Fritar a carne assim também reduz a validade, a menos que congelada.
+VCE_DeepFriedVegetables.label	vegetais fritos
+VCE_DeepFriedVegetables.description	Vegetais em tirinhas, secos e mergulhados em óleo quente até dourar. Por mais crocantes e gostosos que sejam, não sustentam tanto quanto uma refeição normal, nem são tão saudáveis. Fritar assim também reduz a validade, a menos que congelados.
+VCE_DeepFriedFish.label	peixe frito
+VCE_DeepFriedFish.description	Peixe amaciado, cortado em filés e passado numa massa grossa antes de ser mergulhado em óleo quente e frito. O resultado é uma comida crocante, nada saudável, mas gostosa: não sustenta tanto quanto uma refeição, mas dá muito prazer. Fritar assim também reduz a validade, a menos que congelado.
+## DefInjected/ThingDef/Items_Desserts.xml
+VCE_SimpleDessert.label	sobremesa simples
+VCE_SimpleDessert.description	Uma sobremesa simples, feita rápido com algumas frutas e outros ingredientes.
+VCE_FineDessert.label	sobremesa boa
+VCE_FineDessert.description	Uma sobremesa elaborada, montada com cuidado com vários ingredientes.
+VCE_LavishDessert.label	sobremesa luxuosa
+VCE_LavishDessert.description	Uma obra-prima da arte culinária, que alimenta o corpo, a mente e a alma.
+VCE_GourmetDessert.label	sobremesa gourmet
+VCE_GourmetDessert.description	Uma obra de arte culinária, de preparo e apresentação refinados e até elaborados, esteticamente equilibrada, ainda que em pouca quantidade.
+## DefInjected/ThingDef/Items_Food.xml
+VCE_MealGourmet.label	refeição gourmet
+VCE_MealGourmet.description	Uma obra de arte culinária, de preparo e apresentação refinados e até elaborados.
+## DefInjected/ThingDef/Items_Grills.xml
+VCE_SimpleGrill.label	grelhado simples
+VCE_SimpleGrill.description	Uma carne grelhada simples, feita com poucos ingredientes. Os grelhados sustentam muito e deixam a pessoa sem fome por bastante tempo. Congelar acaba com esse efeito.
+VCE_RuinedSimpleGrill.label	grelhado simples estragado
+VCE_RuinedSimpleGrill.description	Uma carne grelhada simples, feita com poucos ingredientes. Este grelhado foi congelado: ainda dá para comer, mas sustenta bem menos e não dá o bônus "bem alimentado".
+VCE_FineGrill.label	grelhado bom
+VCE_FineGrill.description	Uma carne grelhada elaborada, montada com cuidado com vários ingredientes. Os grelhados sustentam muito e deixam a pessoa sem fome por bastante tempo. Congelar acaba com esse efeito.
+VCE_RuinedFineGrill.label	grelhado bom estragado
+VCE_RuinedFineGrill.description	Uma carne grelhada elaborada, montada com cuidado com vários ingredientes. Este grelhado foi congelado: ainda dá para comer, mas sustenta bem menos e não dá o bônus "bem alimentado".
+VCE_LavishGrill.label	grelhado luxuoso
+VCE_LavishGrill.description	Uma obra-prima da arte culinária, que alimenta o corpo, a mente e a alma. Os grelhados sustentam muito e deixam a pessoa sem fome por bastante tempo. Congelar acaba com esse efeito.
+VCE_RuinedLavishGrill.label	grelhado luxuoso estragado
+VCE_RuinedLavishGrill.description	Uma obra-prima da arte culinária, que alimenta o corpo, a mente e a alma. Este grelhado foi congelado: ainda dá para comer, mas sustenta bem menos e não dá o bônus "bem alimentado".
+VCE_GourmetGrill.label	grelhado gourmet
+VCE_GourmetGrill.description	Uma obra de arte culinária, de preparo e apresentação refinados e até elaborados, esteticamente equilibrada, ainda que em pouca quantidade. Os grelhados sustentam muito e deixam a pessoa sem fome por bastante tempo. Congelar acaba com esse efeito.
+VCE_RuinedGourmetGrill.label	grelhado gourmet estragado
+VCE_RuinedGourmetGrill.description	Uma obra de arte culinária, de preparo e apresentação refinados e até elaborados, esteticamente equilibrada, ainda que em pouca quantidade. Este grelhado foi congelado: ainda dá para comer, mas sustenta bem menos e não dá o bônus "bem alimentado".
+## DefInjected/ThingDef/Items_RawPlant.xml
+VCE_Flour.label	farinha
+VCE_Flour.description	Farinha de trigo, usada para assar. Guardada em lugar seco, demora muitíssimo para estragar. Vem de um trigo modificado geneticamente para virar farinha com um simples toque.
+## DefInjected/ThingDef/Items_Soups.xml
+VCE_UncookedSoupSimple.label	sopa simples crua
+VCE_UncookedSoupSimple.description	Uma sopa simples crua. Precisa ser cozida numa panela elétrica para ficar comestível.
+VCE_CookedSoupSimple.label	sopa simples
+VCE_CookedSoupSimple.description	Uma sopa simples cozida devagar com poucos ingredientes.
+VCE_UncookedSoupFine.label	sopa boa crua
+VCE_UncookedSoupFine.description	Uma sopa boa crua. Precisa ser cozida numa panela elétrica para ficar comestível.
+VCE_CookedSoupFine.label	sopa boa
+VCE_CookedSoupFine.description	Uma sopa elaborada, montada com cuidado com vários ingredientes.
+VCE_UncookedSoupLavish.label	sopa luxuosa crua
+VCE_UncookedSoupLavish.description	Uma sopa luxuosa crua. Precisa ser cozida numa panela elétrica para ficar comestível.
+VCE_CookedSoupLavish.label	sopa luxuosa
+VCE_CookedSoupLavish.description	Uma obra-prima da arte culinária, que alimenta o corpo, a mente e a alma.
+VCE_UncookedSoupGourmet.label	sopa gourmet crua
+VCE_UncookedSoupGourmet.description	Uma sopa gourmet crua. Precisa ser cozida numa panela elétrica para ficar comestível.
+VCE_CookedSoupGourmet.label	sopa gourmet
+VCE_CookedSoupGourmet.description	Uma obra de arte culinária, de preparo e apresentação refinados e até elaborados, esteticamente equilibrada, ainda que em pouca quantidade.
+## DefInjected/ThingDef/Plants_Cultivated_Farm.xml
+VCE_Sugarcane.label	pé de cana-de-açúcar
+VCE_Sugarcane.description	Um capim tropical alto e grosso, de talos com nós. Não é lá muito nutritivo puro, mas esta cana transgênica vira açúcar com facilidade e entra em várias criações culinárias, sobretudo sobremesas.
+VCE_Allspice.label	pé de pimenta-da-jamaica
+VCE_Allspice.description	Uma trepadeira folhosa e anômala, com frutinhas verdes intragáveis. Moídas no preparo, liberam um sabor complexo e apimentado, perfeito para temperar pratos.
+VCE_Wheat.label	pé de trigo
+VCE_Wheat.description	Um cereal âmbar que leva quase uma estação de cultivo inteira para dar fruto. Frágil e demorado, este trigo foi modificado geneticamente para virar farinha com um simples toque.
+## DefInjected/ThoughtDef/Thoughts_Condiments_VEPlants.xml
+VCE_ConsumedKetchup.stages.consumed_ketchup.label	comeu ketchup
+VCE_ConsumedKetchup.stages.consumed_ketchup.description	Uma delícia grudenta.
+VCE_ConsumedHotSauce.stages.hurts_so_good.label	dói tão gostoso
+VCE_ConsumedHotSauce.stages.hurts_so_good.description	Odeio esse molho superpicante! Por favor, quero mais.
+## DefInjected/ThoughtDef/Thoughts_Memory_Eating.xml
+VCE_ConsumedSugar.stages.consumed_sugar.label	comeu açúcar
+VCE_ConsumedSugar.stages.consumed_sugar.description	Açúcar não é amor. Mas às vezes parece.
+VCE_ConsumedChocolateSyrup.stages.consumed_chocolate_syrup.label	comeu calda de chocolate
+VCE_ConsumedChocolateSyrup.stages.consumed_chocolate_syrup.description	Chocolate é amor.

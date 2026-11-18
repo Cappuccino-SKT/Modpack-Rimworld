@@ -1,0 +1,165 @@
+## DefInjected/HediffDef/Hediffs_Condiments_VEPlants.xml
+VCE_ConsumedHotSauce.label	comeu molho picante (na refeição)
+VCE_ConsumedHotSauce.description	Comeu um molho forte e picante, feito batendo e apurando pimentas e outras especiarias. Os molhos mais fortes doem no começo, mas depois anestesiam a dor e esquentam o corpo. Aumenta em 15% a resistência à dor e em 10 ºC a resistência ao frio por 12 horas.
+## DefInjected/HediffDef/Hediffs_Global_Misc.xml
+VCE_ConsumedMayo.label	comeu maionese (na refeição)
+VCE_ConsumedMayo.description	A maionese é uma emulsão grossa de ovo, óleo e ervas. Faz mal à beça, mas dá um sabor gostoso e tem muitas calorias. Reduz em 15% a velocidade da fome por 12 horas.
+VCE_ConsumedAgave.label	comeu néctar de agave (na refeição)
+VCE_ConsumedAgave.description	O néctar de agave é um néctar ralo e meio doce, conhecido pelas propriedades curativas e anti-inflamatórias. Aumenta em 15% a velocidade de ganho de imunidade por 12 horas.
+VCE_ConsumedSpices.label	comeu especiarias (na refeição)
+VCE_ConsumedSpices.description	Comeu várias especiarias aromáticas e fortes. Aumenta em 5% a manipulação por 12 horas.
+VCE_WellFed.label	bem alimentado (por refeição grelhada)
+VCE_WellFed.description	Comi uma carne grelhada deliciosa e que sustenta. Reduz em 35% a velocidade da fome por 12 horas.
+VCE_WellFedSimple.label	bem alimentado (por refeição grelhada)
+VCE_WellFedSimple.description	Comi uma carne grelhada deliciosa e que sustenta. Reduz em 35% a velocidade da fome por 12 horas.
+VCE_WellFedFine.label	bem alimentado (por refeição grelhada)
+VCE_WellFedFine.description	Comi uma carne grelhada deliciosa e que sustenta. Reduz em 35% a velocidade da fome por 12 horas.
+VCE_WellFedLavish.label	bem alimentado (por refeição grelhada)
+VCE_WellFedLavish.description	Comi uma carne grelhada deliciosa e que sustenta. Reduz em 35% a velocidade da fome por 12 horas.
+VCE_WellFedGourmet.label	bem alimentado (por refeição grelhada)
+VCE_WellFedGourmet.description	Comi uma carne grelhada deliciosa e que sustenta. Reduz em 35% a velocidade da fome por 12 horas.
+VCE_ConsumedDigestibleResurrectorNanites.label	comeu nanitas ressuscitadoras (na refeição)
+VCE_ConsumedDigestibleResurrectorNanites.description	As nanitas ressuscitadoras vão ressuscitar esta pessoa enquanto estiverem ativas. O efeito dura 12 horas.
+VCE_SugarRush.label	comeu açúcar (na refeição)
+VCE_SugarRush.description	O corpo transforma açúcar em energia com facilidade, o que pode dar um bom pique. Aumenta em 15% o movimento por 12 horas.
+VCE_AteGourmetMeal.label	comeu comida gourmet (na refeição)
+VCE_AteGourmetMeal.description	Este colono comeu uma comida incrível.
+## DefInjected/JoyKindDef/JoyKinds.xml
+VCE_Confectionery.label	comer sobremesa
+## DefInjected/PipeSystem.ProcessDef/ProcessDefs.xml
+VCE_MilkIntoCheese.label	Leite em queijo
+VCE_MilkIntoCheese.description	Transforma 50 de leite em 25 de queijo.
+VCE_MilkIntoCheese.labelOverride	Transformar 50 de leite em 25 de queijo.
+VCE_JellyIntoCheese.label	Geleia de inseto em queijo
+VCE_JellyIntoCheese.description	Transforma 50 de geleia de inseto em 25 de queijo.
+VCE_JellyIntoCheese.labelOverride	Transformar 50 de geleia de inseto em 25 de queijo.
+VCE_SimpleSoupRecipe.label	Cozinhar sopa simples
+VCE_SimpleSoupRecipe.description	Transforma uma sopa simples crua em 10 sopas simples cozidas.
+VCE_FineSoupRecipe.label	Cozinhar sopa boa
+VCE_FineSoupRecipe.description	Transforma uma sopa boa crua em 10 sopas boas cozidas.
+VCE_LavishSoupRecipe.label	Cozinhar sopa luxuosa
+VCE_LavishSoupRecipe.description	Transforma uma sopa luxuosa crua em 10 sopas luxuosas cozidas.
+VCE_GourmetSoupRecipe.label	Cozinhar sopa gourmet
+VCE_GourmetSoupRecipe.description	Transforma uma sopa gourmet crua em 10 sopas gourmet cozidas.
+## DefInjected/RecipeDef/Recipes_Bakes.xml
+VCE_CookBakeSimple.label	assar forneada simples x2
+VCE_CookBakeSimple.description	Assa duas forneadas simples, feitas rápido com farinha.
+VCE_CookBakeSimple.jobString	Assando forneada simples x2.
+VCE_CookBakeSimpleBulk.label	assar forneada simples x8
+VCE_CookBakeSimpleBulk.description	Assa 8 forneadas simples, feitas rápido com farinha.
+VCE_CookBakeSimpleBulk.jobString	Assando forneada simples x8.
+VCE_CookBakeFine.label	assar forneada boa x2
+VCE_CookBakeFine.description	Assa duas forneadas elaboradas, montadas com cuidado com farinha e vários ingredientes.
+VCE_CookBakeFine.jobString	Assando forneada boa x2.
+VCE_CookBakeFineBulk.label	assar forneada boa x8
+VCE_CookBakeFineBulk.description	Assa 8 forneadas elaboradas, montadas com cuidado com farinha e vários ingredientes.
+VCE_CookBakeFineBulk.jobString	Assando forneada boa x8.
+VCE_CookBakeLavish.label	assar forneada luxuosa x2
+VCE_CookBakeLavish.description	Assa duas obras-primas da arte culinária, que alimentam o corpo, a mente e a alma.
+VCE_CookBakeLavish.jobString	Assando forneada luxuosa x2.
+VCE_CookBakeLavishBulk.label	assar forneada luxuosa x8
+VCE_CookBakeLavishBulk.description	Assa 8 obras-primas da arte culinária, que alimentam o corpo, a mente e a alma.
+VCE_CookBakeLavishBulk.jobString	Assando forneada luxuosa x8.
+VCE_CookBakeGourmet.label	assar forneada gourmet x2
+VCE_CookBakeGourmet.description	Assa duas obras de arte culinária, de preparo e apresentação refinados e até elaborados, esteticamente equilibradas, ainda que em pouca quantidade.\n\nEsta receita não aceita ingredientes misturados.
+VCE_CookBakeGourmet.jobString	Assando forneada gourmet x2.
+## DefInjected/RecipeDef/Recipes_Canning.xml
+VCE_CanMeats.label	enlatar carnes x20
+VCE_CanMeats.description	Guarda pedaços de carne em segurança numa lata de aço. Enlatar estende a validade da comida quase indefinidamente.
+VCE_CanMeats.jobString	Enlatando carnes.
+VCE_CanProduce.label	enlatar vegetais x20
+VCE_CanProduce.description	Guarda vegetais em segurança numa lata de aço. Enlatar estende a validade da comida quase indefinidamente.
+VCE_CanProduce.jobString	Enlatando vegetais.
+VCE_CanFruit.label	enlatar frutas x20
+VCE_CanFruit.description	Guarda frutas em segurança numa lata de aço. Enlatar estende a validade da comida quase indefinidamente.\n\nFrutas em conserva servem para fazer sobremesas.
+VCE_CanFruit.jobString	Enlatando frutas.
+VCE_CanEggs.label	enlatar ovos x20
+VCE_CanEggs.description	Guarda ovos cozidos em segurança numa lata de aço. Enlatar estende a validade da comida quase indefinidamente.
+VCE_CanEggs.jobString	Enlatando ovos.
+## DefInjected/RecipeDef/Recipes_Condiments.xml
+VCE_ChopCondiments.label	misturar condimentos na ração
+VCE_ChopCondiments.description	Mistura um lote de condimentos diferentes numa massa orgânica quase intragável que serve para alimentar animais. Ainda melhor que ração de supermercado.
+VCE_ChopCondiments.jobString	Misturando condimentos na ração.
+VCE_MakeSalt.label	fazer sal
+VCE_MakeSalt.description	Mói e processa pedra natural para extrair o sal comestível de dentro dos pedaços de rocha.\n\nUsa a habilidade de Culinária.
+VCE_MakeSalt.jobString	Fazendo sal.
+VCE_MakeSaltfromBlocks.label	fazer sal (blocos)
+VCE_MakeSaltfromBlocks.description	Mói e processa pedra natural para extrair o sal comestível de dentro dos blocos de pedra.\n\nUsa a habilidade de Culinária.
+VCE_MakeSaltfromBlocks.jobString	Fazendo sal com blocos.
+VCE_AgaveNectar.label	fazer néctar de agave
+VCE_AgaveNectar.description	Faz néctar de agave a partir do agave. O néctar de agave é ralo e meio doce, conhecido pelas propriedades curativas e anti-inflamatórias.
+VCE_AgaveNectar.jobString	Fazendo néctar de agave.
+VCE_InsectJellyPreserves.label	fazer compota de geleia de inseto
+VCE_InsectJellyPreserves.description	Faz compota de geleia de inseto. Muito rica e doce, e surpreendentemente saudável.
+VCE_InsectJellyPreserves.jobString	Fazendo compota de geleia de inseto.
+VCE_Mayo.label	fazer maionese
+VCE_Mayo.description	Faz maionese com ovos. Uma emulsão grossa de ovo, óleo e ervas. Faz mal à beça, mas dá um sabor gostoso e tem muitas calorias.
+VCE_Mayo.jobString	Fazendo maionese.
+VCE_SmokeleafButter.label	fazer manteiga de folha de fumo
+VCE_SmokeleafButter.description	Faz manteiga de folha de fumo com folha de fumo e leite. Uma substância gordurosa e grossa, feita batendo o leite até virar um creme espesso, misturado com óleo de folha de fumo e deixado firmar. Muito pouco saudável, e bate bem mais forte que um baseado.
+VCE_SmokeleafButter.jobString	Fazendo manteiga de folha de fumo.
+VCE_ChocolateSyrup.label	fazer calda de chocolate
+VCE_ChocolateSyrup.description	Faz calda de chocolate com chocolate transgênico. Ainda não faz bem, mas não é tão ruim quanto açúcar puro.
+VCE_ChocolateSyrup.jobString	Fazendo calda de chocolate.
+## DefInjected/RecipeDef/Recipes_Condiments_VEPlants.xml
+VCE_Ketchup.label	fazer ketchup
+VCE_Ketchup.description	Faz ketchup com tomates. Um molho grosso de tomate apurado, salgado e azedinho ao mesmo tempo, com final doce. Perfeito para carnes ou frituras.
+VCE_Ketchup.jobString	Fazendo ketchup.
+VCE_HotSauce.label	fazer molho picante
+VCE_HotSauce.description	Faz molho picante com pimentas. Um molho forte e picante, feito batendo e apurando pimentas e outras especiarias. Os mais fortes doem no começo, mas depois anestesiam a dor e esquentam o corpo.
+VCE_HotSauce.jobString	Fazendo molho picante.
+## DefInjected/RecipeDef/Recipes_Desserts.xml
+VCE_CookDessertSimple.label	fazer sobremesa simples
+VCE_CookDessertSimple.description	Faz uma sobremesa simples, rápida, com algumas frutas e outros ingredientes.
+VCE_CookDessertSimple.jobString	Fazendo sobremesa simples.
+VCE_CookDessertSimpleBulk.label	fazer sobremesa simples x4
+VCE_CookDessertSimpleBulk.description	Faz 4 sobremesas simples, rápidas, com algumas frutas e outros ingredientes.
+VCE_CookDessertSimpleBulk.jobString	Fazendo sobremesa simples x4.
+VCE_CookDessertFine.label	fazer sobremesa boa
+VCE_CookDessertFine.description	Faz uma sobremesa elaborada, montada com cuidado com vários ingredientes.\n\nComo o chocolate tem 0,10 de nutrição por unidade, parte dele se perde nesta receita. Considere usar a versão em lote (x4) para evitar desperdício.
+VCE_CookDessertFine.jobString	Fazendo sobremesa boa.
+VCE_CookDessertFineBulk.label	fazer sobremesa boa x4
+VCE_CookDessertFineBulk.description	Faz 4 sobremesas elaboradas, montadas com cuidado com vários ingredientes.
+VCE_CookDessertFineBulk.jobString	Fazendo sobremesa boa x4.
+VCE_CookDessertLavish.label	fazer sobremesa luxuosa
+VCE_CookDessertLavish.description	Faz uma obra-prima da arte culinária, uma sobremesa que alimenta o corpo, a mente e a alma.\n\nComo o chocolate tem 0,10 de nutrição por unidade, parte dele se perde nesta receita. Considere usar a versão em lote (x4) para evitar desperdício.
+VCE_CookDessertLavish.jobString	Fazendo sobremesa luxuosa.
+VCE_CookDessertLavishBulk.label	fazer sobremesa luxuosa x4
+VCE_CookDessertLavishBulk.description	Faz 4 obras-primas da arte culinária, sobremesas que alimentam o corpo, a mente e a alma.
+VCE_CookDessertLavishBulk.jobString	Fazendo sobremesa luxuosa x4.
+VCE_CookDessertGourmet.label	fazer sobremesa gourmet
+VCE_CookDessertGourmet.description	Faz uma obra de arte culinária, de preparo e apresentação refinados e até elaborados, uma sobremesa esteticamente equilibrada, ainda que em pouca quantidade.
+VCE_CookDessertGourmet.jobString	Fazendo sobremesa gourmet.
+## DefInjected/RecipeDef/Recipes_Frying.xml
+VCE_DeepFryMeats.label	fritar carnes x20
+VCE_DeepFryMeats.description	Frita pedaços grandes de carne em imersão. Fritura é muito gostosa, mas não faz bem à saúde.
+VCE_DeepFryMeats.jobString	Fritando carnes.
+VCE_DeepFryVegetables.label	fritar vegetais x20
+VCE_DeepFryVegetables.description	Frita vegetais em imersão. Fritura é muito gostosa, mas não faz bem à saúde.
+VCE_DeepFryVegetables.jobString	Fritando vegetais.
+## DefInjected/RecipeDef/Recipes_Grills.xml
+VCE_CookGrillSimple.label	fazer grelhado simples
+VCE_CookGrillSimple.description	Faz dois grelhados simples, rápidos, com alguns ingredientes de carne.
+VCE_CookGrillSimple.jobString	Fazendo grelhado simples.
+VCE_CookGrillSimpleBulk.label	fazer grelhado simples x4
+VCE_CookGrillSimpleBulk.description	Faz 4 grelhados simples, rápidos, com alguns ingredientes de carne.
+VCE_CookGrillSimpleBulk.jobString	Fazendo grelhado simples x4.
+VCE_CookGrillFine.label	fazer grelhado bom
+VCE_CookGrillFine.description	Faz um grelhado elaborado, montado com cuidado com vários ingredientes.
+VCE_CookGrillFine.jobString	Fazendo grelhado bom.
+VCE_CookGrillFineBulk.label	fazer grelhado bom x4
+VCE_CookGrillFineBulk.description	Faz 4 grelhados elaborados, montados com cuidado com vários ingredientes.
+VCE_CookGrillFineBulk.jobString	Fazendo grelhado bom x4.
+VCE_CookGrillLavish.label	fazer grelhado luxuoso
+VCE_CookGrillLavish.description	Faz uma obra-prima da arte culinária, um grelhado que alimenta o corpo, a mente e a alma.
+VCE_CookGrillLavish.jobString	Fazendo grelhado luxuoso.
+VCE_CookGrillLavishhBulk.label	fazer grelhado luxuoso x4
+VCE_CookGrillLavishhBulk.description	Faz 4 obras-primas da arte culinária, grelhados que alimentam o corpo, a mente e a alma.
+VCE_CookGrillLavishhBulk.jobString	Fazendo grelhado luxuoso x4.
+VCE_CookGrillGourmet.label	fazer grelhado gourmet
+VCE_CookGrillGourmet.description	Faz uma obra de arte culinária, de preparo e apresentação refinados e até elaborados, um grelhado esteticamente equilibrado, ainda que em pouca quantidade.
+VCE_CookGrillGourmet.jobString	Fazendo grelhado gourmet.
+## DefInjected/RecipeDef/Recipes_Meals.xml
+VCE_CookMealGourmet.label	fazer refeição gourmet
+VCE_CookMealGourmet.description	Faz uma obra de arte culinária, de preparo e apresentação refinados e até elaborados, uma refeição esteticamente equilibrada, ainda que em pouca quantidade.
+VCE_CookMealGourmet.jobString	Fazendo refeição gourmet.

@@ -1,0 +1,161 @@
+## DefInjected/QuestScriptDef/Quest3.xml
+VQE_AncientARC.questDescriptionRules.rulesStrings[40]	finalWarning->Se provocar, prepare-se para uma resposta esmagadora.
+VQE_AncientARC.questNameRules.rulesStrings[0]	questName->O [arcName] [adj]
+VQE_AncientARC.questNameRules.rulesStrings[1]	adj->esquecido
+VQE_AncientARC.questNameRules.rulesStrings[2]	adj->antigo
+VQE_AncientARC.questNameRules.rulesStrings[3]	adj->misterioso
+VQE_AncientARC.questNameRules.rulesStrings[4]	adj->sagrado
+VQE_AncientARC.questNameRules.rulesStrings[5]	adj->escondido
+VQE_AncientARC.questNameRules.rulesStrings[6]	adj->desamparado
+VQE_AncientARC.questNameRules.rulesStrings[7]	adj->tribal
+VQE_AncientARC.questNameRules.rulesStrings[8]	adj->perdido
+VQE_AncientARC.questNameRules.rulesStrings[9]	adj->tomado pelo mato
+VQE_AncientARC.questNameRules.rulesStrings[10]	arcName(p=4)->ARC
+VQE_AncientARC.questNameRules.rulesStrings[11]	arcName->monumento
+VQE_AncientARC.questNameRules.rulesStrings[12]	arcName->engenho
+VQE_AncientARC.questNameRules.rulesStrings[13]	arcName->relicário
+VQE_AncientARC.questNameRules.rulesStrings[14]	arcName->gerador
+VQE_AncientARC.questNameRules.rulesStrings[15]	arcName->núcleo
+VQE_AncientARC.questNameRules.rulesStrings[16]	arcName->artefato
+VQE_AncientARC.questNameRules.rulesStrings[17]	arcName->aparelho
+VQE_AncientARC.questNameRules.rulesStrings[18]	arcName->manancial
+## DefInjected/QuestScriptDef/Quest4.xml
+VQE_InventorShelter.questDescriptionRules.rulesStrings[0]	questDescription->[dataDiscovery] revelaram a localização de um [structureType] subterrâneo [adj] onde [inventor_nameFull] descansa em criptosono. A viagem vai ser penosa: a região foi atingida por [coldSnapDesc] e as temperaturas caíram a níveis antinaturais. \n\nLá dentro, [turretDefense] ainda guardam o interior, alimentadas por um [arcName] antigo. O ARC não pode ser estudado, mas pode ser desmontado para obter [arcComponents]. A tarefa principal, porém, é chegar ao sarcófago e soltar o inventor. Prepare-se bem para o frio extremo ou vai arriscar [hypothermiaDanger].
+VQE_InventorShelter.questDescriptionRules.rulesStrings[1]	questDescription->Os dados recuperados apontam um bunker [adj] enterrado fundo, sob uma região atingida por [coldSnapDesc]. É ali que [inventor_nameFull], a mente lendária por trás do projeto ARC, jaz selado em criptosono. \n\nAs temperaturas estão caindo a níveis perigosos, com risco imediato de [hypothermiaDanger] na aproximação. Lá dentro, [turretDefense] continuam ativas, alimentadas por um [arcName] tomado pelo mato. O ARC pode ser desmontado para obter [arcComponents], mas o prêmio de verdade é libertar o inventor e levá-lo para a sua colônia.
+VQE_InventorShelter.questDescriptionRules.rulesStrings[2]	questDescription->Achamos a localização de um [structureType] [adj] onde [inventor_nameFull] foi conservado num sarcófago de criptosono. Os arredores estão amaldiçoados por [coldSnapDesc], que derrubou as temperaturas a extremos mortais. \n\nO próprio abrigo tem [turretDefense], alimentadas por um [arcName] tomado pelo mato. O ARC não pode ser estudado, mas pode ser desmontado para obter [arcComponents]. Prepare-se para o congelamento e a hipotermia na tentativa de resgatar o inventor lendário.
+VQE_InventorShelter.questDescriptionRules.rulesStrings[3]	dataDiscovery->Plantas antigas
+VQE_InventorShelter.questDescriptionRules.rulesStrings[4]	dataDiscovery->Transmissões decodificadas
+VQE_InventorShelter.questDescriptionRules.rulesStrings[5]	dataDiscovery->Coordenadas recuperadas
+VQE_InventorShelter.questDescriptionRules.rulesStrings[6]	dataDiscovery->Registros de dados arquivados
+VQE_InventorShelter.questDescriptionRules.rulesStrings[7]	adj->esquecido
+VQE_InventorShelter.questDescriptionRules.rulesStrings[8]	adj->antigo
+VQE_InventorShelter.questDescriptionRules.rulesStrings[9]	adj->escondido
+VQE_InventorShelter.questDescriptionRules.rulesStrings[10]	adj->selado
+VQE_InventorShelter.questDescriptionRules.rulesStrings[11]	adj->abandonado
+VQE_InventorShelter.questDescriptionRules.rulesStrings[12]	adj->tomado pelo mato
+VQE_InventorShelter.questDescriptionRules.rulesStrings[13]	adj->misterioso
+VQE_InventorShelter.questDescriptionRules.rulesStrings[14]	adj->remoto
+VQE_InventorShelter.questDescriptionRules.rulesStrings[15]	structureType->bunker
+VQE_InventorShelter.questDescriptionRules.rulesStrings[16]	structureType->cofre
+VQE_InventorShelter.questDescriptionRules.rulesStrings[17]	structureType->santuário
+VQE_InventorShelter.questDescriptionRules.rulesStrings[18]	structureType->recinto
+VQE_InventorShelter.questDescriptionRules.rulesStrings[19]	structureType->jazigo
+VQE_InventorShelter.questDescriptionRules.rulesStrings[20]	structureType->complexo
+VQE_InventorShelter.questDescriptionRules.rulesStrings[21]	coldSnapDesc->uma onda de frio antinatural
+VQE_InventorShelter.questDescriptionRules.rulesStrings[22]	coldSnapDesc->uma anomalia congelante bizarra
+VQE_InventorShelter.questDescriptionRules.rulesStrings[23]	coldSnapDesc->uma frente fria inexplicável
+VQE_InventorShelter.questDescriptionRules.rulesStrings[24]	coldSnapDesc->uma geada profunda e misteriosa
+VQE_InventorShelter.questDescriptionRules.rulesStrings[25]	coldSnapDesc->uma queda brusca e extrema de temperatura
+VQE_InventorShelter.questDescriptionRules.rulesStrings[26]	coldSnapDesc->uma anomalia de geada mortal
+VQE_InventorShelter.questDescriptionRules.rulesStrings[27]	turretDefense->torretas inativas que de vez em quando voltam à vida aos trancos
+VQE_InventorShelter.questDescriptionRules.rulesStrings[28]	turretDefense->um punhado de torretas de segurança envelhecidas
+VQE_InventorShelter.questDescriptionRules.rulesStrings[29]	turretDefense->torretas automáticas velhas, mas ainda letais,
+VQE_InventorShelter.questDescriptionRules.rulesStrings[30]	turretDefense->defesas que funcionam de vez em quando
+VQE_InventorShelter.questDescriptionRules.rulesStrings[31]	turretDefense->algumas torretas caindo aos pedaços, mas operacionais,
+VQE_InventorShelter.questDescriptionRules.rulesStrings[32]	arcComponents->componentes ARC raros
+VQE_InventorShelter.questDescriptionRules.rulesStrings[33]	arcComponents->sucata tecnológica valiosa
+VQE_InventorShelter.questDescriptionRules.rulesStrings[34]	arcComponents->peças essenciais de ARC
+VQE_InventorShelter.questDescriptionRules.rulesStrings[35]	arcComponents->fragmentos de gerador avançado
+VQE_InventorShelter.questDescriptionRules.rulesStrings[36]	hypothermiaDanger->queimaduras de frio e hipotermia
+VQE_InventorShelter.questDescriptionRules.rulesStrings[37]	hypothermiaDanger->hipotermia fulminante
+VQE_InventorShelter.questDescriptionRules.rulesStrings[38]	hypothermiaDanger->exposição ao frio com risco de vida
+VQE_InventorShelter.questDescriptionRules.rulesStrings[39]	hypothermiaDanger->lesões por congelamento e exaustão
+VQE_InventorShelter.questDescriptionRules.rulesStrings[40]	hypothermiaDanger->queimaduras de frio graves ou a morte
+VQE_InventorShelter.questDescriptionRules.rulesStrings[41]	arcName->gerador ARC
+VQE_InventorShelter.questNameRules.rulesStrings[0]	questName->O [structureType] [adj] de [Inventor_LastName]
+VQE_InventorShelter.questNameRules.rulesStrings[1]	adj->esquecido
+VQE_InventorShelter.questNameRules.rulesStrings[2]	adj->antigo
+VQE_InventorShelter.questNameRules.rulesStrings[3]	adj->escondido
+VQE_InventorShelter.questNameRules.rulesStrings[4]	adj->abandonado
+VQE_InventorShelter.questNameRules.rulesStrings[5]	adj->selado
+VQE_InventorShelter.questNameRules.rulesStrings[6]	adj->misterioso
+VQE_InventorShelter.questNameRules.rulesStrings[7]	adj->remoto
+VQE_InventorShelter.questNameRules.rulesStrings[8]	adj->perdido
+VQE_InventorShelter.questNameRules.rulesStrings[9]	adj->secreto
+VQE_InventorShelter.questNameRules.rulesStrings[10]	adj->desamparado
+VQE_InventorShelter.questNameRules.rulesStrings[11]	structureType->bunker
+VQE_InventorShelter.questNameRules.rulesStrings[12]	structureType->cofre
+VQE_InventorShelter.questNameRules.rulesStrings[13]	structureType->jazigo
+VQE_InventorShelter.questNameRules.rulesStrings[14]	structureType->túmulo
+VQE_InventorShelter.questNameRules.rulesStrings[15]	structureType->recinto
+VQE_InventorShelter.questNameRules.rulesStrings[16]	structureType->santuário
+VQE_InventorShelter.questNameRules.rulesStrings[17]	structureType->complexo
+VQE_InventorShelter.questNameRules.rulesStrings[18]	structureType->abrigo
+## DefInjected/QuestScriptDef/Quest5.xml
+VQE_ArcSite.questDescriptionRules.rulesStrings[0]	questDescription(asker_factionLeader==True)->[asker_nameFull], [asker_faction_leaderTitle] de [asker_faction_name], nos mandou uma mensagem. Um grupo de [siteFaction_pawnsPlural] ocupou o local de um gerador ARC abandonado. O acampamento está sob o controle de [siteFaction_name].\n\n[asker_nameDef] pede que limpemos a área eliminando todos os inimigos e defesas. Com o lugar seguro, teremos a chance de estudar o gerador ARC e recuperar componentes ARC valiosos. [asker_label] diz também que [sitePart0_description].
+VQE_ArcSite.questDescriptionRules.rulesStrings[1]	questDescription(askerIsNull==true)->Soubemos que o local de um velho gerador ARC foi tomado por [siteFaction_pawnsPlural] de [siteFaction_name]. Os bandidos fortificaram a posição e usam o lugar como esconderijo.\n\nTomar o lugar nos permitirá examinar o gerador atrás de dados de pesquisa e componentes ARC aproveitáveis. Prepare-se para resistência: o lugar deve estar bem guardado. Além disso, [sitePart0_description].
+VQE_ArcSite.questDescriptionRules.rulesStrings[2]	sitePart0_description->o lugar está meio tomado pelo mato, com muitas das estruturas originais caindo de velhas
+VQE_ArcSite.questDescriptionRules.rulesStrings[3]	sitePart0_description->os bandidos fortificaram o lugar com defesas improvisadas e armadilhas
+VQE_ArcSite.questDescriptionRules.rulesStrings[4]	sitePart0_description->o gerador ARC está visivelmente danificado, mas ainda tem sucata valiosa
+VQE_ArcSite.questDescriptionRules.rulesStrings[5]	sitePart0_description->o lugar parece uma mistura de ruínas antigas com acampamentos de bandidos montados às pressas
+VQE_ArcSite.questDescriptionRules.rulesStrings[6]	sitePart0_description->patrulhas hostis foram vistas guardando o perímetro
+VQE_ArcSite.questDescriptionRules.rulesStrings[7]	sitePart0_description->os bandidos estão usando o gerador para alimentar as suas operações toscas
+VQE_ArcSite.questNameRules.rulesStrings[0]	questName->[arcName] [adj]
+VQE_ArcSite.questNameRules.rulesStrings[1]	adj->abandonado
+VQE_ArcSite.questNameRules.rulesStrings[2]	adj->largado
+VQE_ArcSite.questNameRules.rulesStrings[3]	adj->desamparado
+VQE_ArcSite.questNameRules.rulesStrings[4]	adj->arruinado
+VQE_ArcSite.questNameRules.rulesStrings[5]	adj->remoto
+VQE_ArcSite.questNameRules.rulesStrings[6]	adj->desolado
+VQE_ArcSite.questNameRules.rulesStrings[7]	adj->esquecido
+VQE_ArcSite.questNameRules.rulesStrings[8]	adj->escondido
+VQE_ArcSite.questNameRules.rulesStrings[9]	adj->dominado por bandidos
+VQE_ArcSite.questNameRules.rulesStrings[10]	adj->inimigo
+VQE_ArcSite.questNameRules.rulesStrings[11]	adj->virado esconderijo
+VQE_ArcSite.questNameRules.rulesStrings[12]	adj->invadido
+VQE_ArcSite.questNameRules.rulesStrings[13]	adj->perigoso
+VQE_ArcSite.questNameRules.rulesStrings[14]	arcName->Local de gerador ARC
+VQE_ArcSite.questNameRules.rulesStrings[15]	arcName->Complexo de energia
+VQE_ArcSite.questNameRules.rulesStrings[16]	arcName->Posto gerador
+VQE_ArcSite.questNameRules.rulesStrings[17]	arcName->Núcleo industrial
+VQE_ArcSite.questNameRules.rulesStrings[18]	arcName->Relicário de energia
+VQE_ArcSite.questNameRules.rulesStrings[19]	arcName->Polo de energia
+VQE_ArcSite.questNameRules.rulesStrings[20]	arcName->Sítio ARC
+VQE_ArcSite.questNameRules.rulesStrings[21]	arcName->Gerador protótipo
+VQE_ArcSite.root.nodes.WorldObjectTimeout.node.nodes.Letter.label.slateRef	Missão expirada: [resolvedQuestName]
+VQE_ArcSite.root.nodes.WorldObjectTimeout.node.nodes.Letter.text.slateRef	O acampamento de bandidos levantou acampamento e foi embora. A missão [resolvedQuestName] expirou.
+VQE_ArcSite.root.nodes.siteDestroyed.node.nodes.Letter.label.slateRef	Missão fracassada: [resolvedQuestName]
+VQE_ArcSite.root.nodes.siteDestroyed.node.nodes.Letter.text.slateRef	Depois de descoberto, o acampamento de bandidos se dispersou. A missão [resolvedQuestName] acabou.
+VQE_ArcSite.root.nodes.siteAllEnemiesDefeated.node.nodes.IsSet.node.nodes.GiveRewards.customLetterLabel.slateRef	Pagamento chegou
+VQE_ArcSite.root.nodes.siteAllEnemiesDefeated.node.nodes.IsSet.node.nodes.GiveRewards.customLetterText.slateRef	Você derrotou o acampamento de bandidos!\n\nO pagamento de [asker_faction_name] chegou.
+## DefInjected/QuestScriptDef/Quest6.xml
+VQE_NuclearArcSite.questDescriptionRules.rulesStrings[0]	questDescription(asker_factionLeader==True)->[asker_nameFull], [asker_faction_leaderTitle] de [asker_faction_name], nos mandou uma mensagem. Um grupo de [siteFaction_pawnsPlural] tomou o local de uma carcaça de ARC nuclear abandonada. O acampamento está sob o controle de [siteFaction_name].\n\n[asker_nameDef] pede que limpemos a área eliminando todos os inimigos e defesas. Com o lugar seguro, teremos a chance de estudar a carcaça de ARC nuclear e recuperar componentes ARC valiosos. [asker_label] menciona também que [sitePart0_description]. [sitePart1_description]
+VQE_NuclearArcSite.questDescriptionRules.rulesStrings[1]	questDescription(askerIsNull==true)->Soubemos que o local de uma carcaça de ARC nuclear abandonada foi tomado por [siteFaction_pawnsPlural] de [siteFaction_name]. Os bandidos fortificaram a posição e usam o lugar como esconderijo.\n\nTomar o lugar nos permitirá examinar a carcaça de ARC nuclear atrás de dados de pesquisa e componentes ARC aproveitáveis. Prepare-se para resistência: os bandidos devem ter montado defesas consideráveis. Além disso, [sitePart0_description]. [sitePart1_description]
+VQE_NuclearArcSite.questDescriptionRules.rulesStrings[2]	sitePart0_description->a carcaça de ARC nuclear está cercada de mato, e boa parte da estrutura mostra sinais de decadência
+VQE_NuclearArcSite.questDescriptionRules.rulesStrings[3]	sitePart0_description->os bandidos fortificaram bastante a área com barreiras improvisadas e armadilhas
+VQE_NuclearArcSite.questDescriptionRules.rulesStrings[4]	sitePart0_description->a carcaça parece em parte intacta, com promessa de sucata valiosa
+VQE_NuclearArcSite.questDescriptionRules.rulesStrings[5]	sitePart0_description->o lugar é uma mistura de ruínas industriais antigas com acampamentos de bandidos caindo aos pedaços
+VQE_NuclearArcSite.questDescriptionRules.rulesStrings[6]	sitePart0_description->patrulhas hostis foram avistadas guardando o perímetro
+VQE_NuclearArcSite.questDescriptionRules.rulesStrings[7]	sitePart0_description->os bandidos estão usando a carcaça do ARC para alimentar suas máquinas e armas toscas
+VQE_NuclearArcSite.questDescriptionRules.rulesStrings[8]	sitePart1_description->A área inteira está coberta de precipitação tóxica, e ficar muito tempo sem o equipamento certo é perigoso.
+VQE_NuclearArcSite.questDescriptionRules.rulesStrings[9]	sitePart1_description->Uma camada grossa de precipitação tóxica paira sobre o lugar, mais um perigo para quem tentar chegar perto.
+VQE_NuclearArcSite.questDescriptionRules.rulesStrings[10]	sitePart1_description->A precipitação tóxica do velho reator da carcaça envenenou a área, um perigo ambiental considerável.
+VQE_NuclearArcSite.questDescriptionRules.rulesStrings[11]	sitePart1_description->O lugar está coberto de precipitação tóxica, e sobreviver sem equipamento de proteção é dificílimo.
+VQE_NuclearArcSite.questDescriptionRules.rulesStrings[12]	sitePart1_description->Precipitação perigosa encobre a área, lembrança sombria do passado nuclear instável do ARC. Energia limpa e barata, diziam os folhetos.
+VQE_NuclearArcSite.questNameRules.rulesStrings[0]	questName->[nuclearArcName] [adj]
+VQE_NuclearArcSite.questNameRules.rulesStrings[1]	adj->abandonado
+VQE_NuclearArcSite.questNameRules.rulesStrings[2]	adj->arruinado
+VQE_NuclearArcSite.questNameRules.rulesStrings[3]	adj->ocupado por bandidos
+VQE_NuclearArcSite.questNameRules.rulesStrings[4]	adj->esquecido
+VQE_NuclearArcSite.questNameRules.rulesStrings[5]	adj->largado
+VQE_NuclearArcSite.questNameRules.rulesStrings[6]	adj->antigo
+VQE_NuclearArcSite.questNameRules.rulesStrings[7]	adj->invadido
+VQE_NuclearArcSite.questNameRules.rulesStrings[8]	adj->profanado
+VQE_NuclearArcSite.questNameRules.rulesStrings[9]	adj->perigoso
+VQE_NuclearArcSite.questNameRules.rulesStrings[10]	adj->escondido
+VQE_NuclearArcSite.questNameRules.rulesStrings[11]	nuclearArcName->Sítio de ARC nuclear
+VQE_NuclearArcSite.questNameRules.rulesStrings[12]	nuclearArcName->Casco de ARC
+VQE_NuclearArcSite.questNameRules.rulesStrings[13]	nuclearArcName->Resto de reator
+VQE_NuclearArcSite.questNameRules.rulesStrings[14]	nuclearArcName->Escombro de ARC
+VQE_NuclearArcSite.questNameRules.rulesStrings[15]	nuclearArcName->Relicário gerador
+VQE_NuclearArcSite.questNameRules.rulesStrings[16]	nuclearArcName->Núcleo de reator
+VQE_NuclearArcSite.questNameRules.rulesStrings[17]	nuclearArcName->Casco de energia
+VQE_NuclearArcSite.questNameRules.rulesStrings[18]	nuclearArcName->Cofre de energia
+VQE_NuclearArcSite.questNameRules.rulesStrings[19]	nuclearArcName->Reator renegado
+VQE_NuclearArcSite.questNameRules.rulesStrings[20]	nuclearArcName->Sítio gerador
+VQE_NuclearArcSite.root.nodes.WorldObjectTimeout.node.nodes.Letter.label.slateRef	Missão expirada: [resolvedQuestName]
+VQE_NuclearArcSite.root.nodes.WorldObjectTimeout.node.nodes.Letter.text.slateRef	O acampamento de bandidos levantou acampamento e foi embora. A missão [resolvedQuestName] expirou.
+VQE_NuclearArcSite.root.nodes.siteDestroyed.node.nodes.Letter.label.slateRef	Missão fracassada: [resolvedQuestName]
+VQE_NuclearArcSite.root.nodes.siteDestroyed.node.nodes.Letter.text.slateRef	Depois de descoberto, o acampamento de bandidos se dispersou. A missão [resolvedQuestName] acabou.
+VQE_NuclearArcSite.root.nodes.siteAllEnemiesDefeated.node.nodes.IsSet.node.nodes.GiveRewards.customLetterLabel.slateRef	Pagamento chegou
+VQE_NuclearArcSite.root.nodes.siteAllEnemiesDefeated.node.nodes.IsSet.node.nodes.GiveRewards.customLetterText.slateRef	Você derrotou o acampamento de bandidos!\n\nO pagamento de [asker_faction_name] chegou.

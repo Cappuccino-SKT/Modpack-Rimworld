@@ -1,0 +1,178 @@
+## DefInjected/WorkTypeDef/FSF_WorkTypes.xml
+FSFNurse.description	Care for the sick, bring them food, cheer them up, and perform assigned duties. Nurses will care for colonists, prisoners and animals.
+FSFNurse.gerundLabel	Nursing
+FSFNurse.labelShort	Nurse
+FSFNurse.pawnLabel	Nurse
+FSFNurse.verb	Care for
+FSFSurgeon.description	Perform surgeries on colonists, prisoners and animals.
+FSFSurgeon.gerundLabel	Operating
+FSFSurgeon.labelShort	Surgeon
+FSFSurgeon.pawnLabel	Surgeon
+FSFSurgeon.verb	Operate on
+FSFRearming.description	Rearm defenses such as turrets and traps.
+FSFRearming.gerundLabel	Rearming
+FSFRearming.labelShort	Rearm
+FSFRearming.pawnLabel	Rearmer
+FSFRearming.verb	Rearm
+FSFTraining.description	Tame wild animals and train domesticated animals.
+FSFTraining.gerundLabel	Training
+FSFTraining.labelShort	Train
+FSFTraining.pawnLabel	Trainer
+FSFTraining.verb	Train
+FSFButcher.description	Create kibble and butcher meat.
+FSFButcher.gerundLabel	Butchering
+FSFButcher.labelShort	Butcher
+FSFButcher.pawnLabel	Butcherer
+FSFButcher.verb	Butcher
+FSFRepair.description	Repair damaged or broken-down buildings and objects.
+FSFRepair.gerundLabel	Repairing
+FSFRepair.labelShort	Repair
+FSFRepair.pawnLabel	Repairer
+FSFRepair.verb	Repair
+FSFDeconstruct.description	Uninstall or deconstruct buildings, objects, floors and roofs.
+FSFDeconstruct.gerundLabel	Deconstructing
+FSFDeconstruct.labelShort	Deconstruct
+FSFDeconstruct.pawnLabel	Deconstructor
+FSFDeconstruct.verb	Deconstruct
+FSFHarvesting.description	Harvest grown plants.
+FSFHarvesting.gerundLabel	harvesting
+FSFHarvesting.labelShort	Harvest
+FSFHarvesting.pawnLabel	Harvester
+FSFHarvesting.verb	Harvest
+FSFDrilling.description	Use deep drills to drill for resources.
+FSFDrilling.gerundLabel	Drilling
+FSFDrilling.labelShort	Drill
+FSFDrilling.pawnLabel	Driller
+FSFDrilling.verb	Drill
+FSFDrugs.description	Craft drugs at work stations.
+FSFDrugs.gerundLabel	Drugs
+FSFDrugs.labelShort	Drugs
+FSFDrugs.pawnLabel	Chemist
+FSFDrugs.verb	Craft at
+FSFMachining.description	Create weapons and tools from raw materials at a machining table.
+FSFMachining.gerundLabel	Machining
+FSFMachining.labelShort	Machining
+FSFMachining.pawnLabel	Machinist
+FSFMachining.verb	Machine at
+FSFFabrication.description	Create weapons, armour, bionics and components from raw materials at a fabrication bench.
+FSFFabrication.gerundLabel	Fabricating
+FSFFabrication.labelShort	Fabricate
+FSFFabrication.pawnLabel	Fabricator
+FSFFabrication.verb	Fabricate at
+FSFRefining.description	Refine materials at a refinery.
+FSFRefining.gerundLabel	Refining
+FSFRefining.labelShort	Refine
+FSFRefining.pawnLabel	Refiner
+FSFRefining.verb	Refine
+FSFProduction.description	Perform general production work producing various goods.  This typically involves filling and emptying production objects or performing simple tasks.
+FSFProduction.gerundLabel	Producing
+FSFProduction.labelShort	Production
+FSFProduction.pawnLabel	Producer
+FSFProduction.verb	Produce
+FSFSmelt.description	Operate smelters to perform tasks such as melting down slag or weapons.
+FSFSmelt.gerundLabel	Smelting
+FSFSmelt.labelShort	Smelt
+FSFSmelt.pawnLabel	Smelter
+FSFSmelt.verb	Smelt
+FSFStoneCut.description	Create blocks of stone from rock chunks.
+FSFStoneCut.gerundLabel	Stonecutting
+FSFStoneCut.labelShort	Stone Cut
+FSFStoneCut.pawnLabel	Stonecutter
+FSFStoneCut.verb	Stone Cut
+FSFTransport.description	Prepare and unload transport pods, caravans and vehicles.
+FSFTransport.gerundLabel	Transporting
+FSFTransport.labelShort	Transport
+FSFTransport.pawnLabel	Transport Handler
+FSFTransport.verb	Transport
+FSFCremating.description	Perform various tasks relating to dead bodies. Such as operating the crematorium or campfire to burn apparel, drugs and bodies.
+FSFCremating.gerundLabel	Working
+FSFCremating.labelShort	Mortuary
+FSFCremating.pawnLabel	Mortuary Worker
+FSFCremating.verb	Work
+FSFDeliver.description	Deliver resources to construction projects.
+FSFDeliver.gerundLabel	delivering
+FSFDeliver.labelShort	Deliver
+FSFDeliver.pawnLabel	Hauler
+FSFDeliver.verb	Delivering
+FSFHauling.description	Carry things to where they need to be.
+FSFHauling.gerundLabel	hauling
+FSFHauling.labelShort	haul
+FSFHauling.pawnLabel	Hauler
+FSFHauling.verb	Haul
+FSFScan.description	Perform complex work to achieve goals such as finding resources below the ground or in the world.
+FSFScan.gerundLabel	scanning
+FSFScan.labelShort	Scan
+FSFScan.pawnLabel	Scanner
+FSFScan.verb	Scan at
+## DefInjected/XmlExtensions.SettingsMenuDef/FSF_Complex_Jobs_Settings.xml
+FrozenSnowFoxComplexJobsSettings.label	FrozenSnowFox Complex Jobs
+FrozenSnowFoxComplexJobsSettings.settings.1.cachedText	For any changed settings to take effect the game must be restarted.\nIf you enable new Worktypes midsave you must replace your existing mechanoids for them to get the new Worktypes.
+FrozenSnowFoxComplexJobsSettings.settings.1.text	For any changed settings to take effect the game must be restarted.\nIf you enable new Worktypes midsave you must replace your existing mechanoids for them to get the new Worktypes.
+FrozenSnowFoxComplexJobsSettings.settings.4.cachedText	Complex Jobs Settings
+FrozenSnowFoxComplexJobsSettings.settings.4.text	Complex Jobs Settings
+FrozenSnowFoxComplexJobsSettings.settings.6.label	Anomaly Tasks In Dark Study
+FrozenSnowFoxComplexJobsSettings.settings.8.cachedText	Moves all the Anomaly related tasks from other worktypes into Dark Study and changes the worktype requirements to include Social.
+FrozenSnowFoxComplexJobsSettings.settings.8.text	Moves all the Anomaly related tasks from other worktypes into Dark Study and changes the worktype requirements to include Social.
+FrozenSnowFoxComplexJobsSettings.settings.11.label	Drafted Work Tasks
+FrozenSnowFoxComplexJobsSettings.settings.13.cachedText	Changes all work tasks so they can be done while drafted.  Making it so you no longer need to undraft and redraft pawns to perform a task.\nNote: A few tasks may still not be usable while being drafted and some tasks may forcibly undraft a pawn to perform them.
+FrozenSnowFoxComplexJobsSettings.settings.13.text	Changes all work tasks so they can be done while drafted.  Making it so you no longer need to undraft and redraft pawns to perform a task.\nNote: A few tasks may still not be usable while being drafted and some tasks may forcibly undraft a pawn to perform them.
+FrozenSnowFoxComplexJobsSettings.settings.16.label	Rescue In Firefighting
+FrozenSnowFoxComplexJobsSettings.settings.18.cachedText	Adds a duplicated task of Rescue to Firefighting.  This will cause people on the firefighting worktype to first rescue downed allies before attempting to fight fires.\nNote: Although this is intended to be an alternative to the Rescue worktype both options can be enabled without issue.
+FrozenSnowFoxComplexJobsSettings.settings.18.text	Adds a duplicated task of Rescue to Firefighting.  This will cause people on the firefighting worktype to first rescue downed allies before attempting to fight fires.\nNote: Although this is intended to be an alternative to the Rescue worktype both options can be enabled without issue.
+FrozenSnowFoxComplexJobsSettings.settings.21.label	Ideoligion Roles Are Capable
+FrozenSnowFoxComplexJobsSettings.settings.23.cachedText	Removes all the disabled worktypes and weapon restrictions from all ideoligion roles.
+FrozenSnowFoxComplexJobsSettings.settings.23.text	Removes all the disabled worktypes and weapon restrictions from all ideoligion roles.
+FrozenSnowFoxComplexJobsSettings.settings.26.label	Mechanoids Are Capable
+FrozenSnowFoxComplexJobsSettings.settings.28.cachedText	Changes the canBeDoneByMechs field on all work type tasks from false to true.\nNote: Some tasks break the game without code to further patch the task.  These tasks are not included for obvious reasons.
+FrozenSnowFoxComplexJobsSettings.settings.28.text	Changes the canBeDoneByMechs field on all work type tasks from false to true.\nNote: Some tasks break the game without code to further patch the task.  These tasks are not included for obvious reasons.
+FrozenSnowFoxComplexJobsSettings.settings.31.label	Slaves Are Capable
+FrozenSnowFoxComplexJobsSettings.settings.33.cachedText	Allows Slaves to do all Worktypes except for Warden.
+FrozenSnowFoxComplexJobsSettings.settings.33.text	Allows Slaves to do all Worktypes except for Warden.
+FrozenSnowFoxComplexJobsSettings.settings.36.label	Warcaskets Are Capable
+FrozenSnowFoxComplexJobsSettings.settings.38.cachedText	Allows Warcaskets to do all Worktypes.
+FrozenSnowFoxComplexJobsSettings.settings.38.text	Allows Warcaskets to do all Worktypes.
+FrozenSnowFoxComplexJobsSettings.settings.41.label	Clear Pollution Worktype
+FrozenSnowFoxComplexJobsSettings.settings.43.cachedText	Enables the Clear Pollution Worktype which moves the Clear Pollution task to its own Worktype.
+FrozenSnowFoxComplexJobsSettings.settings.43.text	Enables the Clear Pollution Worktype which moves the Clear Pollution task to its own Worktype.
+FrozenSnowFoxComplexJobsSettings.settings.46.label	Clear Snow Worktype
+FrozenSnowFoxComplexJobsSettings.settings.48.cachedText	Enables the Clear Snow Worktype which moves the Clear Snow task to its own Worktype.
+FrozenSnowFoxComplexJobsSettings.settings.48.text	Enables the Clear Snow Worktype which moves the Clear Snow task to its own Worktype.
+FrozenSnowFoxComplexJobsSettings.settings.51.label	Convert Worktype
+FrozenSnowFoxComplexJobsSettings.settings.53.cachedText	Enables the Convert Worktype which moves the Convert task to its own Worktype.
+FrozenSnowFoxComplexJobsSettings.settings.53.text	Enables the Convert Worktype which moves the Convert task to its own Worktype.
+FrozenSnowFoxComplexJobsSettings.settings.56.label	Hack Worktype
+FrozenSnowFoxComplexJobsSettings.settings.58.cachedText	Enables the Hack Worktype which moves all Hack related tasks to their own Worktype.
+FrozenSnowFoxComplexJobsSettings.settings.58.text	Enables the Hack Worktype which moves all Hack related tasks to their own Worktype.
+FrozenSnowFoxComplexJobsSettings.settings.61.label	Mechanoids Worktype
+FrozenSnowFoxComplexJobsSettings.settings.63.cachedText	Enables the Mechanoids Worktype which moves all Mechanoid related tasks to their own Worktype.
+FrozenSnowFoxComplexJobsSettings.settings.63.text	Enables the Mechanoids Worktype which moves all Mechanoid related tasks to their own Worktype.
+FrozenSnowFoxComplexJobsSettings.settings.66.label	Merge Worktype
+FrozenSnowFoxComplexJobsSettings.settings.68.cachedText	Enables the Merge Worktype which moves the Merge task from Hauling to its own Worktype.
+FrozenSnowFoxComplexJobsSettings.settings.68.text	Enables the Merge Worktype which moves the Merge task from Hauling to its own Worktype.
+FrozenSnowFoxComplexJobsSettings.settings.71.label	Paint Worktype
+FrozenSnowFoxComplexJobsSettings.settings.73.cachedText	Enables the Paint Worktype which moves all Paint related tasks to its own Worktype.
+FrozenSnowFoxComplexJobsSettings.settings.73.text	Enables the Paint Worktype which moves all Paint related tasks to its own Worktype.
+FrozenSnowFoxComplexJobsSettings.settings.76.label	Prison Care Worktype
+FrozenSnowFoxComplexJobsSettings.settings.78.cachedText	Enables the Prison Care Worktype which moves all Prison Care related tasks to its own Worktype.
+FrozenSnowFoxComplexJobsSettings.settings.78.text	Enables the Prison Care Worktype which moves all Prison Care related tasks to its own Worktype.
+FrozenSnowFoxComplexJobsSettings.settings.81.label	Pruning Worktype
+FrozenSnowFoxComplexJobsSettings.settings.83.cachedText	Enables the Pruning Worktype which moves all Pruning related tasks to its own Worktype.
+FrozenSnowFoxComplexJobsSettings.settings.83.text	Enables the Pruning Worktype which moves all Pruning related tasks to its own Worktype.
+FrozenSnowFoxComplexJobsSettings.settings.86.label	Rescue Worktype
+FrozenSnowFoxComplexJobsSettings.settings.88.cachedText	Enables the Rescue Worktype which adds its own unique tasks focused on rescuing downed allies.
+FrozenSnowFoxComplexJobsSettings.settings.88.text	Enables the Rescue Worktype which adds its own unique tasks focused on rescuing downed allies.
+FrozenSnowFoxComplexJobsSettings.settings.91.label	Self Tend Worktype
+FrozenSnowFoxComplexJobsSettings.settings.93.cachedText	Enables the Self Tend Worktype which moves all self tending related tasks to its own Worktype.  For pawns to Self Tend they must still have the Self Tend option enabled.  This worktype is intended to allow pawns to Self Tend without doing Doctoring work on others.
+FrozenSnowFoxComplexJobsSettings.settings.93.text	Enables the Self Tend Worktype which moves all self tending related tasks to its own Worktype.  For pawns to Self Tend they must still have the Self Tend option enabled.  This worktype is intended to allow pawns to Self Tend without doing Doctoring work on others.
+FrozenSnowFoxComplexJobsSettings.settings.96.label	Slaughter Worktype
+FrozenSnowFoxComplexJobsSettings.settings.98.cachedText	Enables the Slaughter Worktype which moves all animal slaughtering related tasks to its own Worktype.
+FrozenSnowFoxComplexJobsSettings.settings.98.text	Enables the Slaughter Worktype which moves all animal slaughtering related tasks to its own Worktype.
+FrozenSnowFoxComplexJobsSettings.settings.101.label	Smoothing Worktype
+FrozenSnowFoxComplexJobsSettings.settings.103.cachedText	Enables the Smoothing Worktype which moves all smoothing surfaces related tasks to its own Worktype.
+FrozenSnowFoxComplexJobsSettings.settings.103.text	Enables the Smoothing Worktype which moves all smoothing surfaces related tasks to its own Worktype.
+FrozenSnowFoxComplexJobsSettings.settings.106.label	Taming Worktype
+FrozenSnowFoxComplexJobsSettings.settings.108.cachedText	Enables the Taming Worktype which moves all animal taming related tasks to its own Worktype.
+FrozenSnowFoxComplexJobsSettings.settings.108.text	Enables the Taming Worktype which moves all animal taming related tasks to its own Worktype.
+FrozenSnowFoxComplexJobsSettings.settings.111.label	Teach Worktype
+FrozenSnowFoxComplexJobsSettings.settings.113.cachedText	Enables the Teach Worktype which moves the Teach Children task from Childcare to its own Worktype.
+FrozenSnowFoxComplexJobsSettings.settings.113.text	Enables the Teach Worktype which moves the Teach Children task from Childcare to its own Worktype.

@@ -1,0 +1,235 @@
+## DefInjected/JobDef/Jobs_Work.xml
+VRecyclingE_HaulToCompactor.reportString	hauling TargetA.
+VRecyclingE_HaulToAlloySplitter.reportString	hauling TargetA.
+## DefInjected/PipeSystem.ProcessDef/ProcessDefs.xml
+VRecyclingE_TrashToBricks.label	Trash to trashbricks
+VRecyclingE_TrashToBricks.description	Turns 10 trash into 25 trashbricks.
+VRecyclingE_SplitStabilizedAlloypack.label	Split stabilized alloypack
+VRecyclingE_SplitStabilizedAlloypack.description	Turns 1 stabilized alloypack into 1 Plasteel, 1 Gold and 2 Steel.
+## DefInjected/RecipeDef/Recipes_Recycling.xml
+VRecyclingE_Recycle_WastepackIntoChempack.label	recycle wastepacks into reactive chempacks
+VRecyclingE_Recycle_WastepackIntoChempack.description	Use manual labor to recycle toxic wastepacks into reactive chempacks, creating reclaimed biopacks as a byproduct.
+VRecyclingE_Recycle_WastepackIntoChempack.jobString	Recycling wastepacks into reactive chempacks.
+VRecyclingE_Recycle_ChempackIntoChemfuel.label	recycle reactive chempacks into chemfuel
+VRecyclingE_Recycle_ChempackIntoChemfuel.description	Use manual labor to separate viable chemfuel from trash in reactive chempacks.
+VRecyclingE_Recycle_ChempackIntoChemfuel.jobString	Recycling reactive chempacks into chemfuel.
+VRecyclingE_Recycle_WastepackIntoToxpack.label	recycle wastepacks into volatile toxpacks
+VRecyclingE_Recycle_WastepackIntoToxpack.description	Use manual labor to recycle toxic wastepacks into volatile toxpacks, creating trash as a byproduct.
+VRecyclingE_Recycle_WastepackIntoToxpack.jobString	Recycling wastepacks into volatile toxpacks.
+VRecyclingE_Recycle_BreakDownToxpack.label	recycle volatile toxpacks into isotopacks and alloypacks
+VRecyclingE_Recycle_BreakDownToxpack.description	Use manual labor to recycle volatile toxpacks into stabilized alloypacks and radioactive isotopacks.
+VRecyclingE_Recycle_BreakDownToxpack.jobString	Recycling volatile toxpacks into isotopacks and alloypacks.
+VRecyclingE_Recycle_IsotopackIntoUranium.label	recycle radioactive isotopacks into uranium
+VRecyclingE_Recycle_IsotopackIntoUranium.description	Use manual labor to separate viable uranium from trash in radioactive isotopacks.
+VRecyclingE_Recycle_IsotopackIntoUranium.jobString	Recycling radioactive isotopacks into uranium.
+## DefInjected/ResearchProjectDef/ResearchProjects.xml
+VRecyclingE_BasicRecycling.label	basic recycling
+VRecyclingE_BasicRecycling.description	Discover basic recycling, giving you the ability to recycle wastepacks into a variety of different resources.
+VRecyclingE_BasicRecycling.generalRules.rulesStrings[0]	subject->innovation's path
+VRecyclingE_BasicRecycling.generalRules.rulesStrings[1]	subject_story->unveiled simple truths behind complex phenomena
+VRecyclingE_BasicRecycling.generalRules.rulesStrings[2]	subject_story->simplified the intricate to make way for practical applications
+VRecyclingE_BasicRecycling.generalRules.rulesStrings[3]	subject_story->harnessed basic principles to achieve remarkable feats
+VRecyclingE_BasicRecycling.generalRules.rulesStrings[4]	subject_gerund->streamlining the essence of discovery
+VRecyclingE_BasicRecycling.generalRules.rulesStrings[5]	subject->building blocks of progress
+VRecyclingE_BasicRecycling.generalRules.rulesStrings[6]	subject_story->laid the groundwork for monumental leaps forward
+VRecyclingE_BasicRecycling.generalRules.rulesStrings[7]	subject_story->connected dots across disciplines to reveal new insights
+VRecyclingE_BasicRecycling.generalRules.rulesStrings[8]	subject_story->crafted the foundation upon which future innovations stand
+VRecyclingE_BasicRecycling.generalRules.rulesStrings[9]	subject_gerund->laying down the keystones of advancement
+VRecyclingE_BasicRecycling.generalRules.rulesStrings[10]	subject->seeds of tomorrow
+VRecyclingE_BasicRecycling.generalRules.rulesStrings[11]	subject_story->planted ideas that would grow into transformative solutions
+VRecyclingE_BasicRecycling.generalRules.rulesStrings[12]	subject_story->cultivated a garden of knowledge, ripe with potential
+VRecyclingE_BasicRecycling.generalRules.rulesStrings[13]	subject_story->nurtured the roots of change with care and foresight
+VRecyclingE_BasicRecycling.generalRules.rulesStrings[14]	subject_gerund->sowing the future with today’s discoveries
+VRecyclingE_BasicRecycling.generalRules.rulesStrings[15]	subject->the ripple of curiosity
+VRecyclingE_BasicRecycling.generalRules.rulesStrings[16]	subject_story->set forth waves of inquiry that echoed through time
+VRecyclingE_BasicRecycling.generalRules.rulesStrings[17]	subject_story->dropped pebbles of innovation into the pond of knowledge
+VRecyclingE_BasicRecycling.generalRules.rulesStrings[18]	subject_story->watched as one question led to another, expanding the circle of understanding
+VRecyclingE_BasicRecycling.generalRules.rulesStrings[19]	subject_gerund->casting stones to create waves of progress
+VRecyclingE_BasicRecycling.generalRules.rulesStrings[20]	subject->the alchemy of progress
+VRecyclingE_BasicRecycling.generalRules.rulesStrings[21]	subject_story->merged disparate disciplines to unlock new realms of possibility
+VRecyclingE_BasicRecycling.generalRules.rulesStrings[22]	subject_story->turned the impossible into the inevitable through sheer ingenuity
+VRecyclingE_BasicRecycling.generalRules.rulesStrings[23]	subject_story->crafted solutions that reshaped the understanding of what's achievable
+VRecyclingE_BasicRecycling.generalRules.rulesStrings[24]	subject_gerund->blending science and magic into the fabric of reality
+VRecyclingE_BasicRecycling.generalRules.rulesStrings[25]	subject->the tapestry of discovery
+VRecyclingE_BasicRecycling.generalRules.rulesStrings[26]	subject_story->wove together threads of knowledge from the four corners of the world
+VRecyclingE_BasicRecycling.generalRules.rulesStrings[27]	subject_story->revealed patterns in the chaos, charting paths to untold innovations
+VRecyclingE_BasicRecycling.generalRules.rulesStrings[28]	subject_story->embroidered the annals of history with tales of serendipitous breakthroughs
+VRecyclingE_BasicRecycling.generalRules.rulesStrings[29]	subject_gerund->weaving the future from the loom of the present
+VRecyclingE_BasicRecycling.generalRules.rulesStrings[30]	subject->the crucible of creation
+VRecyclingE_BasicRecycling.generalRules.rulesStrings[31]	subject_story->fused raw elements into the building blocks of tomorrow
+VRecyclingE_BasicRecycling.generalRules.rulesStrings[32]	subject_story->tempered the fires of creativity to forge unprecedented technologies
+VRecyclingE_BasicRecycling.generalRules.rulesStrings[33]	subject_story->quenched the thirst for knowledge with the elixir of invention
+VRecyclingE_BasicRecycling.generalRules.rulesStrings[34]	subject_gerund->molding the raw materials of today into the artifacts of the future
+VRecyclingE_BasicRecycling.generalRules.rulesStrings[35]	subject->the beacon of enlightenment
+VRecyclingE_BasicRecycling.generalRules.rulesStrings[36]	subject_story->illuminated the dark corners of ignorance, guiding the way forward
+VRecyclingE_BasicRecycling.generalRules.rulesStrings[37]	subject_story->cast light on the unknown, making the unseen visible to curious minds
+VRecyclingE_BasicRecycling.generalRules.rulesStrings[38]	subject_story->ignited the flames of curiosity, kindling a worldwide pursuit of understanding
+VRecyclingE_BasicRecycling.generalRules.rulesStrings[39]	subject_gerund->lighting the torches of progress and knowledge
+VRecyclingE_BasicRecycling.generalRules.rulesStrings[40]	subject->the frontier of knowledge
+VRecyclingE_BasicRecycling.generalRules.rulesStrings[41]	subject_story->crossed new horizons in the pursuit of understanding
+VRecyclingE_BasicRecycling.generalRules.rulesStrings[42]	subject_story->challenged the status quo with groundbreaking theories
+VRecyclingE_BasicRecycling.generalRules.rulesStrings[43]	subject_story->merged ancient wisdom with modern technology for innovative solutions
+VRecyclingE_BasicRecycling.generalRules.rulesStrings[44]	subject_gerund->pushing the boundaries of science and art
+VRecyclingE_BasicRecycling.generalRules.rulesStrings[45]	subject->the essence of innovation
+VRecyclingE_BasicRecycling.generalRules.rulesStrings[46]	subject_story->transformed everyday materials into extraordinary tools
+VRecyclingE_BasicRecycling.generalRules.rulesStrings[47]	subject_story->paved the way for future generations with sustainable practices
+VRecyclingE_BasicRecycling.generalRules.rulesStrings[48]	subject_story->harnessed the power of nature to fuel new advancements
+VRecyclingE_BasicRecycling.generalRules.rulesStrings[49]	subject_gerund->fostering an ecosystem of creativity and progress
+VRecyclingE_BasicRecycling.generalRules.rulesStrings[50]	subject->the architects of tomorrow
+VRecyclingE_BasicRecycling.generalRules.rulesStrings[51]	subject_story->built the foundations for a utopia where technology serves all
+VRecyclingE_BasicRecycling.generalRules.rulesStrings[52]	subject_story->envisioned a future where harmony between technology and nature thrives
+VRecyclingE_BasicRecycling.generalRules.rulesStrings[53]	subject_story->crafted tools that empower humanity to reach its fullest potential
+VRecyclingE_BasicRecycling.generalRules.rulesStrings[54]	subject_gerund->laying the keystones for future landscapes
+VRecyclingE_BasicRecycling.generalRules.rulesStrings[55]	subject->exploratory leaps
+VRecyclingE_BasicRecycling.generalRules.rulesStrings[56]	subject_story->stepped boldly into uncharted territories of knowledge
+VRecyclingE_BasicRecycling.generalRules.rulesStrings[57]	subject_story->bridged the gap between the known and the unknown
+VRecyclingE_BasicRecycling.generalRules.rulesStrings[58]	subject_story->ventured where curiosity dared to lead
+VRecyclingE_BasicRecycling.generalRules.rulesStrings[59]	subject_gerund->embarking on journeys of discovery
+VRecyclingE_BasicRecycling.generalRules.rulesStrings[60]	subject->the essence of ingenuity
+VRecyclingE_BasicRecycling.generalRules.rulesStrings[61]	subject_story->transformed challenges into opportunities for growth
+VRecyclingE_BasicRecycling.generalRules.rulesStrings[62]	subject_story->applied creative thinking to overcome traditional obstacles
+VRecyclingE_BasicRecycling.generalRules.rulesStrings[63]	subject_story->crafted elegant solutions with a blend of art and science
+VRecyclingE_BasicRecycling.generalRules.rulesStrings[64]	subject_gerund->unlocking potential through innovation
+VRecyclingE_BasicRecycling.generalRules.rulesStrings[65]	subject->knowledge’s harvest
+VRecyclingE_BasicRecycling.generalRules.rulesStrings[66]	subject_story->gathered insights as one reaps the fields at harvest
+VRecyclingE_BasicRecycling.generalRules.rulesStrings[67]	subject_story->cultivated a bounty of understanding from the seeds of inquiry
+VRecyclingE_BasicRecycling.generalRules.rulesStrings[68]	subject_story->shared the fruits of research with the world
+VRecyclingE_BasicRecycling.generalRules.rulesStrings[69]	subject_gerund->reaping the rewards of relentless curiosity
+VRecyclingE_BasicRecycling.generalRules.rulesStrings[70]	subject->the puzzle of progress
+VRecyclingE_BasicRecycling.generalRules.rulesStrings[71]	subject_story->assembled the pieces of mystery to reveal the big picture
+VRecyclingE_BasicRecycling.generalRules.rulesStrings[72]	subject_story->matched theory with practice to solve longstanding puzzles
+VRecyclingE_BasicRecycling.generalRules.rulesStrings[73]	subject_story->uncovered hidden connections that unlocked new possibilities
+VRecyclingE_BasicRecycling.generalRules.rulesStrings[74]	subject_gerund->piecing together the elements of advancement
+VRecyclingE_ComplexRecycling.label	complex recycling
+VRecyclingE_ComplexRecycling.description	Learn to recycle isotopacks and alloypacks into new resources and build garbage compactors to craft trashbricks.
+VRecyclingE_ComplexRecycling.generalRules.rulesStrings[0]	subject->innovation's path
+VRecyclingE_ComplexRecycling.generalRules.rulesStrings[1]	subject_story->unveiled simple truths behind complex phenomena
+VRecyclingE_ComplexRecycling.generalRules.rulesStrings[2]	subject_story->simplified the intricate to make way for practical applications
+VRecyclingE_ComplexRecycling.generalRules.rulesStrings[3]	subject_story->harnessed basic principles to achieve remarkable feats
+VRecyclingE_ComplexRecycling.generalRules.rulesStrings[4]	subject_gerund->streamlining the essence of discovery
+VRecyclingE_ComplexRecycling.generalRules.rulesStrings[5]	subject->building blocks of progress
+VRecyclingE_ComplexRecycling.generalRules.rulesStrings[6]	subject_story->laid the groundwork for monumental leaps forward
+VRecyclingE_ComplexRecycling.generalRules.rulesStrings[7]	subject_story->connected dots across disciplines to reveal new insights
+VRecyclingE_ComplexRecycling.generalRules.rulesStrings[8]	subject_story->crafted the foundation upon which future innovations stand
+VRecyclingE_ComplexRecycling.generalRules.rulesStrings[9]	subject_gerund->laying down the keystones of advancement
+VRecyclingE_ComplexRecycling.generalRules.rulesStrings[10]	subject->seeds of tomorrow
+VRecyclingE_ComplexRecycling.generalRules.rulesStrings[11]	subject_story->planted ideas that would grow into transformative solutions
+VRecyclingE_ComplexRecycling.generalRules.rulesStrings[12]	subject_story->cultivated a garden of knowledge, ripe with potential
+VRecyclingE_ComplexRecycling.generalRules.rulesStrings[13]	subject_story->nurtured the roots of change with care and foresight
+VRecyclingE_ComplexRecycling.generalRules.rulesStrings[14]	subject_gerund->sowing the future with today’s discoveries
+VRecyclingE_ComplexRecycling.generalRules.rulesStrings[15]	subject->the ripple of curiosity
+VRecyclingE_ComplexRecycling.generalRules.rulesStrings[16]	subject_story->set forth waves of inquiry that echoed through time
+VRecyclingE_ComplexRecycling.generalRules.rulesStrings[17]	subject_story->dropped pebbles of innovation into the pond of knowledge
+VRecyclingE_ComplexRecycling.generalRules.rulesStrings[18]	subject_story->watched as one question led to another, expanding the circle of understanding
+VRecyclingE_ComplexRecycling.generalRules.rulesStrings[19]	subject_gerund->casting stones to create waves of progress
+VRecyclingE_ComplexRecycling.generalRules.rulesStrings[20]	subject->the alchemy of progress
+VRecyclingE_ComplexRecycling.generalRules.rulesStrings[21]	subject_story->merged disparate disciplines to unlock new realms of possibility
+VRecyclingE_ComplexRecycling.generalRules.rulesStrings[22]	subject_story->turned the impossible into the inevitable through sheer ingenuity
+VRecyclingE_ComplexRecycling.generalRules.rulesStrings[23]	subject_story->crafted solutions that reshaped the understanding of what's achievable
+VRecyclingE_ComplexRecycling.generalRules.rulesStrings[24]	subject_gerund->blending science and magic into the fabric of reality
+VRecyclingE_ComplexRecycling.generalRules.rulesStrings[25]	subject->the tapestry of discovery
+VRecyclingE_ComplexRecycling.generalRules.rulesStrings[26]	subject_story->wove together threads of knowledge from the four corners of the world
+VRecyclingE_ComplexRecycling.generalRules.rulesStrings[27]	subject_story->revealed patterns in the chaos, charting paths to untold innovations
+VRecyclingE_ComplexRecycling.generalRules.rulesStrings[28]	subject_story->embroidered the annals of history with tales of serendipitous breakthroughs
+VRecyclingE_ComplexRecycling.generalRules.rulesStrings[29]	subject_gerund->weaving the future from the loom of the present
+VRecyclingE_ComplexRecycling.generalRules.rulesStrings[30]	subject->the crucible of creation
+VRecyclingE_ComplexRecycling.generalRules.rulesStrings[31]	subject_story->fused raw elements into the building blocks of tomorrow
+VRecyclingE_ComplexRecycling.generalRules.rulesStrings[32]	subject_story->tempered the fires of creativity to forge unprecedented technologies
+VRecyclingE_ComplexRecycling.generalRules.rulesStrings[33]	subject_story->quenched the thirst for knowledge with the elixir of invention
+VRecyclingE_ComplexRecycling.generalRules.rulesStrings[34]	subject_gerund->molding the raw materials of today into the artifacts of the future
+VRecyclingE_ComplexRecycling.generalRules.rulesStrings[35]	subject->the beacon of enlightenment
+VRecyclingE_ComplexRecycling.generalRules.rulesStrings[36]	subject_story->illuminated the dark corners of ignorance, guiding the way forward
+VRecyclingE_ComplexRecycling.generalRules.rulesStrings[37]	subject_story->cast light on the unknown, making the unseen visible to curious minds
+VRecyclingE_ComplexRecycling.generalRules.rulesStrings[38]	subject_story->ignited the flames of curiosity, kindling a worldwide pursuit of understanding
+VRecyclingE_ComplexRecycling.generalRules.rulesStrings[39]	subject_gerund->lighting the torches of progress and knowledge
+VRecyclingE_ComplexRecycling.generalRules.rulesStrings[40]	subject->the frontier of knowledge
+VRecyclingE_ComplexRecycling.generalRules.rulesStrings[41]	subject_story->crossed new horizons in the pursuit of understanding
+VRecyclingE_ComplexRecycling.generalRules.rulesStrings[42]	subject_story->challenged the status quo with groundbreaking theories
+VRecyclingE_ComplexRecycling.generalRules.rulesStrings[43]	subject_story->merged ancient wisdom with modern technology for innovative solutions
+VRecyclingE_ComplexRecycling.generalRules.rulesStrings[44]	subject_gerund->pushing the boundaries of science and art
+VRecyclingE_ComplexRecycling.generalRules.rulesStrings[45]	subject->the essence of innovation
+VRecyclingE_ComplexRecycling.generalRules.rulesStrings[46]	subject_story->transformed everyday materials into extraordinary tools
+VRecyclingE_ComplexRecycling.generalRules.rulesStrings[47]	subject_story->paved the way for future generations with sustainable practices
+VRecyclingE_ComplexRecycling.generalRules.rulesStrings[48]	subject_story->harnessed the power of nature to fuel new advancements
+VRecyclingE_ComplexRecycling.generalRules.rulesStrings[49]	subject_gerund->fostering an ecosystem of creativity and progress
+VRecyclingE_ComplexRecycling.generalRules.rulesStrings[50]	subject->the architects of tomorrow
+VRecyclingE_ComplexRecycling.generalRules.rulesStrings[51]	subject_story->built the foundations for a utopia where technology serves all
+VRecyclingE_ComplexRecycling.generalRules.rulesStrings[52]	subject_story->envisioned a future where harmony between technology and nature thrives
+VRecyclingE_ComplexRecycling.generalRules.rulesStrings[53]	subject_story->crafted tools that empower humanity to reach its fullest potential
+VRecyclingE_ComplexRecycling.generalRules.rulesStrings[54]	subject_gerund->laying the keystones for future landscapes
+VRecyclingE_ComplexRecycling.generalRules.rulesStrings[55]	subject->exploratory leaps
+VRecyclingE_ComplexRecycling.generalRules.rulesStrings[56]	subject_story->stepped boldly into uncharted territories of knowledge
+VRecyclingE_ComplexRecycling.generalRules.rulesStrings[57]	subject_story->bridged the gap between the known and the unknown
+VRecyclingE_ComplexRecycling.generalRules.rulesStrings[58]	subject_story->ventured where curiosity dared to lead
+VRecyclingE_ComplexRecycling.generalRules.rulesStrings[59]	subject_gerund->embarking on journeys of discovery
+VRecyclingE_ComplexRecycling.generalRules.rulesStrings[60]	subject->the essence of ingenuity
+VRecyclingE_ComplexRecycling.generalRules.rulesStrings[61]	subject_story->transformed challenges into opportunities for growth
+VRecyclingE_ComplexRecycling.generalRules.rulesStrings[62]	subject_story->applied creative thinking to overcome traditional obstacles
+VRecyclingE_ComplexRecycling.generalRules.rulesStrings[63]	subject_story->crafted elegant solutions with a blend of art and science
+VRecyclingE_ComplexRecycling.generalRules.rulesStrings[64]	subject_gerund->unlocking potential through innovation
+VRecyclingE_ComplexRecycling.generalRules.rulesStrings[65]	subject->knowledge’s harvest
+VRecyclingE_ComplexRecycling.generalRules.rulesStrings[66]	subject_story->gathered insights as one reaps the fields at harvest
+VRecyclingE_ComplexRecycling.generalRules.rulesStrings[67]	subject_story->cultivated a bounty of understanding from the seeds of inquiry
+VRecyclingE_ComplexRecycling.generalRules.rulesStrings[68]	subject_story->shared the fruits of research with the world
+VRecyclingE_ComplexRecycling.generalRules.rulesStrings[69]	subject_gerund->reaping the rewards of relentless curiosity
+VRecyclingE_ComplexRecycling.generalRules.rulesStrings[70]	subject->the puzzle of progress
+VRecyclingE_ComplexRecycling.generalRules.rulesStrings[71]	subject_story->assembled the pieces of mystery to reveal the big picture
+VRecyclingE_ComplexRecycling.generalRules.rulesStrings[72]	subject_story->matched theory with practice to solve longstanding puzzles
+VRecyclingE_ComplexRecycling.generalRules.rulesStrings[73]	subject_story->uncovered hidden connections that unlocked new possibilities
+VRecyclingE_ComplexRecycling.generalRules.rulesStrings[74]	subject_gerund->piecing together the elements of advancement
+## DefInjected/TerrainDef/Terrain_Floors.xml
+VRecyclingE_TrashBrickFloor.label	trashbrick floor
+VRecyclingE_TrashBrickFloor.description	A rough floor made with trashbricks. Not pretty, but cheap to make.
+## DefInjected/ThingCategoryDef/ThingCategories.xml
+VRecyclingE_SpecializedPacks.label	recycling packs
+## DefInjected/ThingDef/Buildings_Misc.xml
+VRecyclingE_LargePollutionPump.label	large pollution pump
+VRecyclingE_LargePollutionPump.description	A large, groundwater-filtering pump which slowly cleans large swathes of polluted terrain. The extracted pollution is formed into toxic wastepacks which must be hauled away.
+VRecyclingE_PollutionFastPump.label	pollution fastpump
+VRecyclingE_PollutionFastPump.description	A rapidly-working, groundwater-filtering pump which cleans polluted terrain. The extracted pollution is formed into toxic wastepacks which must be hauled away. It requires a large amount of electricity to work, but it works extremely quickly.
+VRecyclingE_WasteCrate.label	waste crate
+VRecyclingE_WasteCrate.description	A hermetically sealed container that prevents toxic waste stored inside from dissolving and leaking into the environment. Can only hold a limited amount of waste. Does nothing to prevent the waste from burning.
+## DefInjected/ThingDef/Buildings_Production.xml
+VRecyclingE_RecyclingWorkbench.label	recycling bench
+VRecyclingE_RecyclingWorkbench.description	A workbench for recycling wastepacks into other resources. Works at 50% of the speed of an electric recycling workbench.
+VRecyclingE_ElectricRecyclingWorkbench.label	electric-powered recycling bench
+VRecyclingE_ElectricRecyclingWorkbench.description	A workbench with automated sorters and electric tools, used in recycling wastepacks into other resources. Can work without electricity at 50% of normal speed.
+VRecyclingE_GarbageCompactor.label	garbage compactor
+VRecyclingE_GarbageCompactor.description	An industrial-tech device that condenses trash using hydraulic press into trashbricks. While it does not neutralize the trash completely, it allows for a creation of a construction resource out of it. The process requires considerable amounts of power and emits tox gas during operation.
+VRecyclingE_AlloypackSplitter.label	alloypack splitter
+VRecyclingE_AlloypackSplitter.description	A spacertech device that separates stabilized alloypacks into steel, plasteel and gold compounds. This process takes a long time and requires a lot of power.\n\nConsider that the building will need free space behind it to produce its output!
+## DefInjected/ThingDef/Items_Resource_Manufactured.xml
+VRecyclingE_ReclaimedBiopack.label	reclaimed biopack
+VRecyclingE_ReclaimedBiopack.description	A repurposed package of nutrient-rich bio-material, recovered from toxic waste through advanced recycling processes. The surface is heat-sealed for safe transport. Reclaimed Biopacks improve soil fertility if a stack of 5 of them deteriorate on standard soil. If damaged or burned, they emit a small amount of disgusting rot stink.
+VRecyclingE_ReactiveChempack.label	reactive chempack
+VRecyclingE_ReactiveChempack.description	A volatile package of highly reactive chemicals, generated as a byproduct of recycling toxic waste. The surface is heat-sealed for safe transport. Reactive Chempacks are extremely dangerous and can cause devastating explosions if not handled carefully. If damaged or burned, they may explode in a big fireball.
+VRecyclingE_StabilizedAlloypack.label	stabilized alloypack
+VRecyclingE_StabilizedAlloypack.description	An amalgamation of strong and lightweight alloys, synthesized from toxic waste through complex chemical reactions. The surface is heat-sealed for safe transport. Stabilized Alloypacks contain high-quality material for crafting advanced weapons, armor, and components. If damaged or burned, they release a small puff of non-toxic smoke.
+VRecyclingE_VolatileToxpack.label	volatile toxpack
+VRecyclingE_VolatileToxpack.description	An unstable package of highly concentrated toxic waste, created as a byproduct in more complex recycling projects. The surface is heat-sealed for safe transport. Volatile toxpacks are extremely dangerous due to their instability and propensity to emit large amounts of tox gas and pollution. If burned or damaged, they release a massive cloud of deadly tox gas.
+VRecyclingE_RadioactiveIsotopack.label	radioactive isotopack
+VRecyclingE_RadioactiveIsotopack.description	A hazardous package of radioactive isotopes, resulting from the recycling of toxic waste. The surface is heat-sealed for safe transport. Radioactive Isotopacks emit high levels of radiation, posing a serious threat to the health of colonists and animals. If damaged or burned, they release a burst of dangerous radiation.
+VRecyclingE_Trash.label	trash
+VRecyclingE_Trash.description	A package of non-toxic rubbish, carefully sorted and compacted for efficient storage. The surface is heat-sealed for safe transport. Trash poses no risk of pollution or deterioration, making it safe for long-term storage. However, if burned, trash will release a moderate amount of tox gas as a byproduct of combustion.
+## DefInjected/ThingDef/Items_Resource_Stuff.xml
+VRecyclingE_TrashBrick.label	trashbrick
+VRecyclingE_TrashBrick.description	A stack of solid bricks, created by compressing non-toxic trash into a brick form. The surface is heat-sealed for safe transport. Trashbricks are a durable building material for constructing walls and structures. If damaged or burned, they will release a moderate amount of toxic fumes. Trashbricks do not deteriorate.
+VRecyclingE_TrashBrick.stuffProps.stuffAdjective	trashbrick
+## DefInjected/WorkGiverDef/WorkGivers.xml
+VRecyclingE_HaulToCompactor.label	haul resources to trash compactor
+VRecyclingE_HaulToCompactor.gerund	hauling to
+VRecyclingE_HaulToCompactor.verb	haul to
+VRecyclingE_HaulToAlloySplitter.label	haul resources to alloy splitter
+VRecyclingE_HaulToAlloySplitter.gerund	hauling to
+VRecyclingE_HaulToAlloySplitter.verb	haul to
+VRecyclingE_DoBillsRecyclingBench.label	make things at recycling bench
+VRecyclingE_DoBillsRecyclingBench.gerund	working at
+VRecyclingE_DoBillsRecyclingBench.verb	work
+## Keyed/Misc.xml
+VRecyclingE_NotWorking	This machine is not working at the moment
+VRecyclingE_Leaking	This reactive isotopack is leaking radiation
+VRecyclingE_DurationUntilNextProcess	Time until {1} {0_labelPlural} are ready
+VRecyclingE_ContainedThings	Contained {0}
+VRecyclingE_DissolutionWasteCrate	Protected (won't dissolve).
+VRecyclingE_AlloySplitterOutputBlocked	Output slots of the alloy splitter would be blocked
+VRecyclingE_AlloySplitterOutOfBounds	Output slots of the alloy splitter would be out of map bounds

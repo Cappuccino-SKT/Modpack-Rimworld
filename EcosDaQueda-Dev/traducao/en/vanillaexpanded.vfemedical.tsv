@@ -1,0 +1,18 @@
+## DefInjected/HediffDef/Hediffs_Global_Misc.xml
+Minor_CryptoSickness.label	cryptosleep sickness (minor)
+Minor_CryptoSickness.description	minor cryptosleep sickness
+## DefInjected/ThingDef/Buildings_Beds.xml
+Bed_OperatingTable.label	operating table
+Bed_OperatingTable.description	A crude table cluttered with instruments that supposedly make surgery easier, the cleanliness of the table is questionable though. Slightly improves medical outcomes over normal beds.
+Bed_CryptoBed.label	cryptosleep suspender
+Bed_CryptoBed.description	A medical that uses partial cryptosleep to slow down the degredation of wounds and help the body heal, although with the same side effects of cryptosleep, albeit at a lesser severity.
+## DefInjected/ThingDef/Buildings_Facilities.xml
+Facility_VitalsCentre.label	vitals centre
+Facility_VitalsCentre.description	A large centre for monitoring the vitals of several patients at once, increasing medical tend quality, surgery success chance and immunity gain speed when placed in the vicinity of a hospital bed or surgical table. Only works for hospital beds or surgical tables - normal beds will not benefit.
+Facility_IVDrip.label	intravenous drip stand
+Facility_IVDrip.description	An intravenous drip stand for quickly delivering lost fluids to a patient, helping the immune system and blood loss recovery when placed directly adjacent to a hospital bed or surgical table. Only works for hospital beds or surgical tables - normal beds will not benefit. Attaching more than one stand to the same bed will have no effect.
+Facility_ResearchCounter.label	research counter
+Facility_ResearchCounter.description	A waist high sterilised surface for performing sensitive research on. Gives a small boost to nearby research benches as well as helping to keep the area clean. Stacks up to 20 times.
+## DefInjected/ThingDef/Buildings_Structure.xml
+VFEM_Wall_Sterile.label	sterile wall
+VFEM_Wall_Sterile.description	An impassable wall. Capable of holding up a roof. Fitted with special cleanliness-enhancing properties to create a sterile environment.

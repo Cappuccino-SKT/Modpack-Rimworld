@@ -1,0 +1,120 @@
+## DefInjected/HediffDef/Hediffs_Local_Misc.xml
+VTE_SlowWorkSpeed.label	trabalho lento
+VTE_SlowWorkSpeed.description	trabalho lento
+VTE_SlowWorkSpeed.labelNoun	trabalho lento
+VTE_SlowWorkSpeed.stages.active.label	ativo
+VTE_RestSlowFallFactor.label	Insônia
+VTE_RestSlowFallFactor.description	Uma inquietação mental ou física acentuada causa insônia: a pessoa se sente lenta ou exausta com frequência e quase nunca consegue dormir.
+VTE_RestSlowFallFactor.labelNoun	Insônia
+VTE_SlowerBleedingRate.label	hipercoagulante
+VTE_SlowerBleedingRate.description	Mais glóbulos vermelhos causam hipercoagulação, e os ferimentos sangram bem menos.
+VTE_SlowerBleedingRate.labelNoun	hipercoagulação
+VTE_HigherBleedingRate.label	hemofílico
+VTE_HigherBleedingRate.description	Hemofilia é a incapacidade do sangue de coagular direito, o que faz os ferimentos sangrarem muito mais.
+VTE_HigherBleedingRate.labelNoun	hemofilia
+## DefInjected/JobDef/Jobs_Misc.xml
+VTE_StealItems.reportString	roubando itens de TargetA
+## DefInjected/MentalStateDef/MentalStates_Mood.xml
+VTE_TechnophobeTantrum.label	ataque de fúria tecnofóbico
+VTE_TechnophobeTantrum.baseInspectLine	Estado mental: ataque de fúria tecnofóbico
+VTE_TechnophobeTantrum.beginLetter	{0} teve um ataque de fúria tecnofóbico.\n\nVai descontar a raiva na tecnologia.
+VTE_TechnophobeTantrum.recoveryMessage	{0} não está mais num ataque de fúria tecnofóbico.
+VTE_PanicFreezing.label	em pânico
+VTE_PanicFreezing.baseInspectLine	Estado mental: em pânico
+VTE_PanicFreezing.beginLetter	{0} travou de pânico.
+VTE_PanicFreezing.beginLetterLabel	ataque de pânico
+VTE_PanicFreezing.recoveryMessage	{0} não está mais tendo um ataque de pânico.
+VTE_Kleptomaniac.label	cleptomaníaco
+VTE_Kleptomaniac.baseInspectLine	Estado mental: cleptomaníaco
+VTE_Kleptomaniac.beginLetter	{0} está roubando itens dos visitantes.
+VTE_Kleptomaniac.beginLetterLabel	Cleptomaníaco
+VTE_Kleptomaniac.recoveryMessage	{0} parou de roubar itens dos visitantes.
+## DefInjected/ThoughtDef/Thoughts_Memory_Animals.xml
+VTE_BondedAnimalDiedHater.stages.bonded_animal_died.label	animal vinculado {0} morreu
+VTE_BondedAnimalDiedHater.stages.bonded_animal_died.description	Que bicho nojento e irritante. Ainda bem que se foi.
+VTE_BondedAnimalLostHater.stages.bonded_animal_lost.label	animal vinculado {0} perdido
+VTE_BondedAnimalLostHater.stages.bonded_animal_lost.description	Que bicho nojento e irritante. Ainda bem que se foi.
+VTE_BondedAnimalBanishedHater.stages.bonded_animal_banished.label	animal vinculado {0} banido
+VTE_BondedAnimalBanishedHater.stages.bonded_animal_banished.description	Meu animal vinculado foi banido. Ótimo.
+VTE_NuzzledHater.stages.nuzzled.label	focinhado
+VTE_NuzzledHater.stages.nuzzled.description	Um animal nojento esfregou o focinho em mim.
+VTE_KilledMyBondedAnimalHater.stages.killed_my_bonded_animal.label	matou meu animal vinculado
+VTE_SoldMyBondedAnimalHater.stages.bonded_animal_given_away.label	animal vinculado dado embora.
+VTE_SoldMyBondedAnimalHater.stages.bonded_animal_given_away.description	Deram embora aquele bicho nojento vinculado a mim. Já era hora.
+VTE_SoldMyBondedAnimalHater.stages.bonded_animal_given_away.labelSocial	deu embora meu animal vinculado.
+VTE_SoldMyBondedAnimalMoodHater.stages.bonded_animal_given_away.label	animal vinculado dado embora
+VTE_SoldMyBondedAnimalMoodHater.stages.bonded_animal_given_away.description	Deram embora aquele bicho nojento vinculado a mim. Já era hora.
+VTE_SoldMyBondedAnimalMoodHater.stages.bonded_animal_given_away.labelSocial	deu embora meu animal vinculado
+VTE_KilledColonyAnimalHater.stages.killed_colony_animal.label	matou animal da colônia
+VTE_BondedAnimalMasterHater.stages.s_master.label	dono de {0}
+VTE_BondedAnimalMasterHater.stages.s_master.description	Ficar perto daquela coisa nojenta me faz odiar a própria vida.
+VTE_BondedAnimalMasterHater.stages.master_of.label	dono de {0}
+VTE_BondedAnimalMasterHater.stages.master_of.description	Ficar perto daquela coisa nojenta me faz odiar a própria vida.
+VTE_NotBondedAnimalMasterHater.stages.not_s_master.label	não é dono de {0}
+VTE_NotBondedAnimalMasterHater.stages.not_s_master.description	Aquela coisa pode gostar de mim, mas eu é que não gosto dela. Ainda bem que outro ficou com ela.
+VTE_NotBondedAnimalMasterHater.stages.not_master_of.label	não é dono de {0}
+VTE_NotBondedAnimalMasterHater.stages.not_master_of.description	Aquela coisa pode gostar de mim, mas eu é que não gosto dela. Ainda bem que outro ficou com ela.
+## DefInjected/ThoughtDef/Thoughts_Memory_Misc.xml
+VTE_CreatedLowQualityItem.stages.Created_low_quality_item.label	Fez item de baixa qualidade
+VTE_CreatedLowQualityItem.stages.Created_low_quality_item.description	Fiz uma porcaria. Sinto que não faço nada direito.
+VTE_CouldNotFinishItem.stages.ould_not_finish_item.label	Não conseguiu terminar o item
+VTE_CouldNotFinishItem.stages.ould_not_finish_item.description	Não consegui terminar meu projeto, simplesmente não estava saindo direito.
+VTE_PassionateCleaningWork.stages.Passionately_cleaning.label	Limpando com paixão
+VTE_PassionateCleaningWork.stages.Passionately_cleaning.description	Adoro organizar e arrumar o lugar.
+VTE_MyRivalsAreAlive.stages.My_rivals_are_alive.label	Meus rivais estão vivos
+VTE_MyRivalsAreAlive.stages.My_rivals_are_alive.description	Odeio eles. Por que mereceriam viver?
+VTE_MechanoidIsKilled.stages.Mechanoid_died.label	Mecanoide morreu
+VTE_MechanoidIsKilled.stages.Mechanoid_died.description	Essas máquinas malignas não merecem funcionar.
+VTE_ObservedManyBlood.stages.observed_much_blood.label	viu muito sangue
+VTE_ObservedManyBlood.stages.observed_much_blood.description	Vi tanto sangue e pedaço que só de lembrar me dá ânsia.
+VTE_WatchedTelevisor.stages.Watched_television_recently.label	Viu televisão há pouco
+VTE_WatchedTelevisor.stages.Watched_television_recently.description	Consegui ficar à toa e pôr meus programas em dia.
+VTE_NoDedicatedLaboratory.stages.No_dedicated_laboratory.label	Sem laboratório próprio
+VTE_NoDedicatedLaboratory.stages.No_dedicated_laboratory.description	Não tenho onde estudar em paz. Que irritante.
+VTE_AnimalsInColony.stages.No_animals_in_the_colony.label	Nenhum animal na colônia
+VTE_AnimalsInColony.stages.No_animals_in_the_colony.description	Não temos um único animal.
+VTE_AnimalsInColony.stages.Hardly_any_animals_in_the_colony-0.label	Quase nenhum animal na colônia
+VTE_AnimalsInColony.stages.Hardly_any_animals_in_the_colony-0.description	Quase não temos animais na colônia, que droga.
+VTE_AnimalsInColony.stages.Hardly_any_animals_in_the_colony-1.label	Quase nenhum animal na colônia
+VTE_AnimalsInColony.stages.Hardly_any_animals_in_the_colony-1.description	Quase não temos animais na colônia, mas já é alguma coisa.
+VTE_AnimalsInColony.stages.Hardly_any_animals_in_the_colony-2.label	Quase nenhum animal na colônia
+VTE_AnimalsInColony.stages.Hardly_any_animals_in_the_colony-2.description	Quase não temos animais na colônia, mas já é alguma coisa.
+VTE_AnimalsInColony.stages.A_few_animals_in_the_colony-0.label	Alguns animais na colônia
+VTE_AnimalsInColony.stages.A_few_animals_in_the_colony-0.description	Temos alguns animais na colônia, que bom.
+VTE_AnimalsInColony.stages.A_few_animals_in_the_colony-1.label	Alguns animais na colônia
+VTE_AnimalsInColony.stages.A_few_animals_in_the_colony-1.description	Temos alguns animais na colônia, que bom.
+VTE_AnimalsInColony.stages.Some_animals_in_the_colony-0.label	Bastante animais na colônia
+VTE_AnimalsInColony.stages.Some_animals_in_the_colony-0.description	Já temos uma boa quantidade de animais, estamos chegando lá.
+VTE_AnimalsInColony.stages.Some_animals_in_the_colony-1.label	Bastante animais na colônia
+VTE_AnimalsInColony.stages.Some_animals_in_the_colony-1.description	Já temos uma boa quantidade de animais, estamos chegando lá.
+VTE_AnimalsInColony.stages.Some_animals_in_the_colony-2.label	Bastante animais na colônia
+VTE_AnimalsInColony.stages.Some_animals_in_the_colony-2.description	Já temos uma boa quantidade de animais, estamos chegando lá.
+VTE_AnimalsInColony.stages.Some_animals_in_the_colony-3.label	Bastante animais na colônia
+VTE_AnimalsInColony.stages.Some_animals_in_the_colony-3.description	Já temos uma boa quantidade de animais, estamos chegando lá.
+VTE_AnimalsInColony.stages.Lots_of_animals_in_the_colony-0.label	Muitos animais na colônia
+VTE_AnimalsInColony.stages.Lots_of_animals_in_the_colony-0.description	Temos muitos animais pela colônia agora, são maravilhosos.
+VTE_AnimalsInColony.stages.Lots_of_animals_in_the_colony-1.label	Muitos animais na colônia
+VTE_AnimalsInColony.stages.Lots_of_animals_in_the_colony-1.description	Temos muitos animais pela colônia agora, são maravilhosos.
+VTE_AnimalsInColony.stages.Lots_of_animals_in_the_colony-2.label	Muitos animais na colônia
+VTE_AnimalsInColony.stages.Lots_of_animals_in_the_colony-2.description	Temos muitos animais pela colônia agora, são maravilhosos.
+VTE_AnimalsInColony.stages.A_ton_of_animals_in_the_colony-0.label	Uma montoeira de animais na colônia
+VTE_AnimalsInColony.stages.A_ton_of_animals_in_the_colony-0.description	Temos tantos animais agora! Fico tão feliz de ver todos eles.
+VTE_AnimalsInColony.stages.A_ton_of_animals_in_the_colony-1.label	Uma montoeira de animais na colônia
+VTE_AnimalsInColony.stages.A_ton_of_animals_in_the_colony-1.description	Temos tantos animais agora! Fico tão feliz de ver todos eles.
+VTE_AnimalsInColony.stages.A_ton_of_animals_in_the_colony-2.label	Uma montoeira de animais na colônia
+VTE_AnimalsInColony.stages.A_ton_of_animals_in_the_colony-2.description	Temos tantos animais agora! Fico tão feliz de ver todos eles.
+VTE_ChildOfSea.stages.Ocean_lover.label	Amante do mar
+VTE_ChildOfSea.stages.Ocean_lover.description	Adoro ficar perto do mar e dos rios, a água é linda.
+VTE_ChildOfMountain.stages.Mountain_lover.label	Amante das montanhas
+VTE_ChildOfMountain.stages.Mountain_lover.description	Adoro ficar perto das montanhas, elas me tiram o fôlego.
+VTE_HaventHarvestedOrgansForLongTime.stages.Hasnt_harvested_organs.label	Não extraiu órgãos
+VTE_HaventHarvestedOrgansForLongTime.stages.Hasnt_harvested_organs.description	Estou ficando impaciente, preciso de mais cobaias.
+VTE_HarvestedOrgans.stages.Harvested_organs.label	Extraiu órgãos
+VTE_HarvestedOrgans.stages.Harvested_organs.description	A operação saiu como esperado, minha coleção cresceu.
+VTE_HaventExitedColonyForLongTime.stages.Has_not_left_colony.label	Não saiu da colônia
+VTE_HaventExitedColonyForLongTime.stages.Has_not_left_colony.description	Faz tempo que não saio de casa, queria muito viajar um pouco.
+VTE_SoakingWetChildOfTheSea.stages.soaking_wet.label	encharcado
+VTE_SoakingWetChildOfTheSea.stages.soaking_wet.description	Estou encharcado. Adoro.
+VTE_EnvironmentDark.stages.darkness.description	Estou no escuro faz um tempo. Gosto disso.
+VTE_Dunce.stages.Dunce.label	Tapado
+VTE_Dunce.stages.Dunce.description	Não entendo por que todo mundo vive tão chateado.

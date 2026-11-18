@@ -1,0 +1,185 @@
+## DefInjected/AllowTool.ThingDesignatorDef/Designators.xml
+AllowDesignator.label	Permitir seleção
+AllowDesignator.description	Desproíbe todos os itens da área selecionada.\nClique e arraste sobre uma área para usar.
+ForbidDesignator.label	Proibir seleção
+ForbidDesignator.description	Proíbe todos os itens da área selecionada.\nClique e arraste sobre uma área para usar.
+AllowAllDesignator.label	Permitir tudo
+AllowAllDesignator.description	Desproíbe todos os itens proibidos do mapa.\nClique para ativar.\n<b>Segure Ctrl/Option</b> para incluir prédios.\n<b>Segure Shift</b> para incluir esqueletos e cadáveres não frescos.
+SelectSimilarDesignator.label	Selecionar parecidos
+SelectSimilarDesignator.description	Seleciona só coisas parecidas com as já selecionadas.\n<b>Segure Shift</b> para pegar mais coisas.\n<b>Segure Alt</b> para ignorar os limites de seleção.
+HaulUrgentlyDesignator.label	Carregar com urgência
+HaulUrgentlyDesignator.description	Marca coisas para serem carregadas o quanto antes. Os colonos adiam outros trabalhos até terminar o transporte.\nConfigurável na aba Trabalho.\n<b>Segure Shift</b> para interromper o trabalho atual dos colonos.
+FinishOffDesignator.label	Dar o golpe final
+FinishOffDesignator.description	Mata de forma rápida e indolor criaturas caídas.\n<b>Segure Shift</b> para incluir colonos e aliados.
+HarvestFullyGrownDesignator.label	Colher maduros
+HarvestFullyGrownDesignator.description	Manda colher ou cortar plantações e árvores crescidas o bastante para render o máximo de recursos.\n<b>Segure Shift</b> para incluir só plantas.\n<b>Segure Ctrl/Option</b> para incluir só árvores.
+StripMineDesignator.label	Mineração em faixas
+StripMineDesignator.description	Marca ordens de mineração em grade para aumentar a chance de achar minérios escondidos.\n<b>Segure Shift</b> para mostrar a janela de opções ou marcar com as opções atuais.
+## DefInjected/JobDef/AllowToolJobs.xml
+FinishOffPawn.reportString	Dando o golpe final na criatura
+## DefInjected/KeyBindingCategoryDef/KeyBindingCategories.xml
+AllowTool.label	Allow Tool
+AllowTool.description	Atalhos das ferramentas do mod Allow Tool.
+## DefInjected/KeyBindingDef/KeyBindings.xml
+DesignatorAllow.label	Ferramenta: permitir
+DesignatorForbid.label	Ferramenta: proibir
+DesignatorAllowAll.label	Ferramenta: permitir tudo
+DesignatorSelectSimilar.label	Ferramenta: selecionar parecidos
+DesignatorHaulUrgently.label	Ferramenta: carregar com urgência
+DesignatorFinishOff.label	Ferramenta: dar o golpe final
+DesignatorHarvestFullyGrown.label	Ferramenta: colher maduros
+DesignatorStripMine.label	Ferramenta: mineração em faixas
+ToolContextMenuAction.label	Ferramenta atual: ação do menu de contexto
+## DefInjected/ThingDef/AllowToolMotes.xml
+MoteWeaponGlint.label	brilho de arma
+## DefInjected/WorkGiverDef/AllowToolWorkGivers.xml
+HaulUrgently.label	carregar coisas com urgência
+HaulUrgently.gerund	carregando com urgência
+HaulUrgently.verb	carregar com urgência
+FinishOff.label	dar o golpe final na criatura
+FinishOff.gerund	dando o golpe final
+FinishOff.verb	dar o golpe final
+## DefInjected/WorkTypeDef/AllowToolWorkTypes.xml
+HaulingUrgent.description	Transporte de alta prioridade. Funciona como o comum, mas só para coisas marcadas à mão. Use <b>Arquiteto > Ordens > Carregar com urgência</b> para marcar o que carregar.\nAdicionado pelo mod Allow Tool. Pode ser desligado em Opções > Configurações dos mods.
+HaulingUrgent.gerundLabel	Carregando com urgência
+HaulingUrgent.labelShort	Carregar+
+HaulingUrgent.pawnLabel	Carregador urgente
+HaulingUrgent.verb	Carregar com urgência
+FinishingOff.description	Mata de forma rápida e indolor criaturas caídas.\nAdicionado pelo mod Allow Tool. Pode ser desligado em Opções > Configurações dos mods.
+FinishingOff.gerundLabel	Dando o golpe final
+FinishingOff.labelShort	Golpe final
+FinishingOff.pawnLabel	Executor
+FinishingOff.verb	Dar o golpe final
+## Keyed/AllowToolEnglish.xml
+Allow_area_success	{0} itens permitidos.
+Allow_area_failure	Nenhum item proibido encontrado.
+Forbid_area_success	{0} itens proibidos.
+Forbid_area_failure	Nenhum item que possa ser proibido encontrado.
+Allow_all_success	{0} coisas permitidas no mapa.
+Allow_all_failure	Nenhuma coisa proibida encontrada.
+Mass_Select_success	{0} {1} selecionados no mapa.
+setting_showTool_label	Mostrar ferramenta: {0}
+setting_showTool_desc	Ligado, esta ferramenta aparece no menu Arquiteto.
+setting_globalHotkeys_label	Usar atalhos globais
+setting_globalHotkeys_desc	Ligado, as ferramentas podem ser escolhidas de qualquer lugar apertando a tecla definida.\nVeja Opções > Configuração do teclado para mudar as teclas.
+setting_selectionLimit_label	Limite de seleção
+setting_selectionLimit_desc	Limita quantas coisas a ferramenta "Selecionar parecidos" pode selecionar de uma vez. Um valor alto demais pode travar o jogo durante a seleção.
+setting_contextWatermark_label	Marca d'água do menu de contexto
+setting_contextWatermark_desc	Ligado, mostra uma marca d'água do Allow Tool nos menus de contexto das ferramentas.
+setting_contextOverlay_label	Ícone de clique direito nas ferramentas
+setting_contextOverlay_desc	Ligado, mostra um pequeno ícone nas ferramentas que têm menu de contexto.
+setting_extendedContextHotkey_label	Atalho "Ação de contexto" estendido
+setting_extendedContextHotkey_desc	Sem ferramenta escolhida, o atalho "Ação de contexto" ativa a ação de contexto da primeira ferramenta visível quando há itens selecionados.
+setting_reverseDesignatorPick_label	Pegar a ferramenta a partir dos itens selecionados
+setting_reverseDesignatorPick_desc	Segurar Shift e clicar numa ferramenta com itens selecionados pega a ferramenta em vez de aplicá-la nos itens.
+setting_finishOffUnforbids_label	"Dar o golpe final" desproíbe o que cai
+setting_finishOffUnforbids_desc	Ligado, os corpos e itens que caem ao dar o golpe final ficam permitidos para transporte automaticamente.
+setting_providerPrefix	Ligar: {0}
+setting_provider_desc	Ligado, adiciona à ferramenta um menu de clique direito que permite afetar o mapa inteiro.
+setting_showToggles_btn	▼ Mostrar opções ▼
+setting_showToolToggles_label	Ligar ou desligar ferramentas
+setting_showProviderToggles_label	Ligar ou desligar menus de contexto
+setting_showReverseToggles_label	Ferramentas nas coisas selecionadas
+setting_reverseDesignator_desc	Ligado, mostra esta ferramenta quando há coisas compatíveis selecionadas.
+setting_haulUrgentlyWorktype_label	Mostrar o trabalho "Carregar+"
+setting_haulUrgentlyWorktype_desc	Ligado, mostra na aba Trabalho o tipo de trabalho da ferramenta "Carregar com urgência".\nÉ preciso reiniciar o jogo para valer.
+setting_finishOffWorktype_label	Mostrar o trabalho "Golpe final"
+setting_finishOffWorktype_desc	Ligado, mostra na aba Trabalho o tipo de trabalho da ferramenta "Dar o golpe final".\nÉ preciso reiniciar o jogo para valer.
+setting_finishOffSkill_label	Habilidade exigida para "Dar o golpe final"
+setting_finishOffSkill_desc	A ferramenta "Dar o golpe final" exige alguém com habilidade corpo a corpo alta o bastante.
+setting_replaceIcons_label	Trocar ícones de Proibir/Permitir
+setting_replaceIcons_desc	Troca os ícones das ferramentas Proibir e Permitir por outros mais claros.
+setting_partyHunt_label	Ferramenta de caça convocada
+setting_partyHunt_desc	Ligado, mostra o botão "Caça convocada" para colonos convocados.
+setting_partyHuntFinish_label	Dar o golpe final em animais caídos
+setting_partyHuntDesignated_label	Só animais marcados para caça
+setting_partyHuntUnforbid_label	Desproibir a presa
+setting_storageSpaceAlert_label	Alerta de espaço de armazenamento
+setting_storageSpaceAlert_desc	Avisa com um alerta quando há coisas marcadas para carregar com urgência, mas nenhum lugar para guardá-las.
+SelectSimilar_cursor_needConstraint	Clique para escolher algo
+SelectSimilar_cursor_nowSelecting	Arraste para selecionar só: {0}
+SelectSimilar_cursor_limit	Limite de seleção atingido
+SelectSimilar_numMoreTypes	(mais {0})
+Haul_urgently_success	{0} itens serão carregados com urgência.
+Haul_urgently_failure	Nenhum item precisando ser carregado.
+Harvest_fully_grown_success	{0} plantas maduras marcadas para colheita.
+Harvest_fully_grown_failure	Nenhuma planta ou árvore madura nova encontrada.
+StripMine_win_horizontalSpacing	Espaçamento horizontal
+StripMine_win_verticalSpacing	Espaçamento vertical
+StripMine_win_showWindow	Mostrar esta janela
+StripMine_win_showWindow_tip	Desligue para usar estas opções automaticamente na próxima vez.\nSegure Shift para mostrar esta janela de novo.
+StripMine_win_variableOffset	Deslocamento variável da grade
+StripMine_win_variableOffset_tip	Ligado, a grade parte do ponto inicial da seleção. Desligado, as linhas da grade passam sempre pelas mesmas células, seja onde for que a seleção começou.
+StripMine_cursor_autoApply	Aplicar na hora
+Alert_noStorage_label	Sem espaço de armazenamento
+Alert_noStorage_desc	Coisas marcadas para carregar com urgência não têm onde ser guardadas:\n{0}\n\nCancele a marcação ou libere espaço de armazenamento.\nPode ser desligado em Opções > Configurações dos mods.
+Finish_off_skillRequired	Exige um colono com habilidade corpo a corpo {0} ou mais.
+Finish_off_pawnSkillRequired	exige corpo a corpo {0}
+Finish_off_success	{0} alvos marcados.
+Finish_off_failure	Nenhuma criatura caída válida encontrada.
+Finish_off_floatMenu	Dar o golpe final em {0}
+Finish_off_floatMenu_reason_friendly	amigável, segure Shift
+Designator_context_similar	Selecionar coisas parecidas no mapa
+Designator_context_similar_succ	{0} coisas parecidas selecionadas no mapa.
+Designator_context_similar_part	{0} coisas parecidas mais próximas selecionadas, de {1} no mapa.
+Designator_context_similar_fail	Selecione algo para selecionar coisas parecidas.
+Designator_context_similar_visible	Selecionar coisas parecidas na área visível
+Designator_context_similar_visible_succ	{0} coisas parecidas visíveis selecionadas.
+Designator_context_similar_visible_part	{0} coisas parecidas visíveis mais próximas selecionadas, de {1}.
+Designator_context_similar_home	Selecionar coisas parecidas na área de casa
+Designator_context_similar_home_succ	{0} coisas parecidas selecionadas na área de casa.
+Designator_context_similar_home_part	{0} coisas parecidas mais próximas selecionadas, de {1} na área de casa.
+Designator_context_urgent	Carregar todos os itens com urgência
+Designator_context_urgent_visible	Carregar itens visíveis com urgência
+Designator_context_urgent_all	Carregar todos os itens do mapa com urgência
+Designator_context_urgent_succ	{0} itens marcados para carregar com urgência.
+Designator_context_urgent_visible_succ	{0} itens visíveis marcados para carregar com urgência.
+Designator_context_urgent_fail	Nenhum item novo para carregar.
+Designator_context_strip	Despir todos os inimigos
+Designator_context_strip_succ	{0} corpos marcados para despir.
+Designator_context_strip_fail	Nenhum corpo para despir.
+Designator_context_harvest	Colher todas as plantas
+Designator_context_harvest_home	Colher plantas na área de casa
+Designator_context_harvest_succ	{0} plantas marcadas para colheita.
+Designator_context_harvest_fail	Nenhuma planta nova para colher.
+Designator_context_haul	Carregar tudo
+Designator_context_haul_succ	{0} coisas novas marcadas para carregar.
+Designator_context_haul_fail	Nenhuma coisa nova para carregar.
+Designator_context_chop	Cortar toda a madeira
+Designator_context_chop_home	Cortar toda a madeira na área de casa
+Designator_context_chop_succ	{0} árvores novas marcadas para cortar.
+Designator_context_chop_fail	Nenhuma árvore nova para cortar na área.
+Designator_context_hunt	Caçar todos os animais
+Designator_context_hunt_succ	{0} animais novos marcados para caça.
+Designator_context_hunt_fail	Nenhum animal novo para caçar na área agora.
+Designator_context_mine	Minerar minérios ligados
+Designator_context_mine_succ	{0} quadrados de minério a mais marcados para mineração.
+Designator_context_mine_fail	Marque um ou mais quadrados de minério para mineração para usar este comando.
+Designator_context_mine_selectStripMine	Escolher a ferramenta "Mineração em faixas"
+Designator_context_cancel_build	Cancelar todas as plantas de construção
+Designator_context_cancel_build_succ	{0} plantas de construção removidas.
+Designator_context_cancel_build_fail	Nenhuma planta para remover.
+Designator_context_cancel_desig	Cancelar todas as ordens do mapa
+Designator_context_cancel_desig_msg	{0} ordens removidas de coisas e {1} do terreno.
+Designator_context_cancel_selected	Cancelar todas deste tipo
+Designator_context_cancel_selected_succ	{0} ordens canceladas em {1} itens.
+Designator_context_cancel_selected_fail	Selecione algo com uma ordem para cancelar todas as ordens desse tipo.
+Designator_context_finish	Dar o golpe final em todas as criaturas caídas
+Designator_context_finish_succ	{0} criaturas vão levar o golpe final.
+Designator_context_finish_allies	{0} criaturas vão levar o golpe final, incluindo amigáveis.
+Designator_context_finish_fail	Nenhum alvo caído válido encontrado.
+Designator_context_cut	Cortar todas as plantas com praga
+Designator_context_cut_succ	{0} plantas com praga marcadas para cortar.
+Designator_context_cut_fail	Nenhuma planta nova com praga para cortar.
+Designator_context_harvest_fullgrown	Colher plantas maduras no mapa
+Designator_context_harvest_home_fullgrown	Colher plantas maduras na área de casa
+Designator_context_harvest_fullgrown_succ	{0} plantas maduras marcadas para colheita.
+Designator_context_harvest_fullgrown_fail	Nenhuma planta madura nova para colher.
+Designator_context_allow_visible	Permitir todas as coisas visíveis
+Designator_context_allow_visible_succ	{0} coisas visíveis permitidas.
+Designator_context_allow_visible_fail	Nenhuma coisa proibida visível para permitir.
+Designator_context_forbid_visible	Proibir todas as coisas visíveis
+Designator_context_forbid_visible_succ	{0} coisas visíveis foram proibidas.
+Designator_context_forbid_visible_fail	Nenhuma coisa permitida visível para proibir.
+PartyHuntToggle_label	Caça convocada
+PartyHuntToggle_desc	Ligado, colonos convocados atiram sozinhos em animais selvagens passivos. Clique direito para mudar as opções.\nAdicionado pelo mod Allow Tool.

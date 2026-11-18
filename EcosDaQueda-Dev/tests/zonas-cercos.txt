@@ -1,0 +1,22 @@
+# Bloco 4b: zonas da Queda (recurso exclusivo do Alpha Biomes analisado na bancada de engenharia reversa rende % de projeto do ramo) e trincheiras nos cercos. Rodar com -Profile full.
+newgame
+timeout 900
+zone list
+zone Ossario
+zone Ossario
+zone Superorganismo
+zone FlorestaOcular
+zone LagosPropano
+zone Conflagracao
+siege EQ_Faction_Forja place
+siege EQ_Faction_Coro place
+siege EQ_Faction_Helice place
+siege EQ_Faction_Silencio place
+siege EQ_Faction_ReinoDoLodo place
+siege EQ_Faction_SindicatoDoSaque place
+siege EQ_Faction_Forja real
+siege EQ_Faction_Forja count
+wait 6000
+siege EQ_Faction_Forja count
+wait 12000
+siege EQ_Faction_Forja count

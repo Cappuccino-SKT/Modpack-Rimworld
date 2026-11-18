@@ -1,0 +1,163 @@
+## DefInjected/AbilityDef/Abilities.xml
+VFEI2_WideTunnels.label	investida demolidora
+## DefInjected/BodyDef/Bodies_ClawedInsectoid.xml
+VFEI2_ClawedInsectoid.corePart.parts.left_elytra.customLabel	élitro esquerdo
+VFEI2_ClawedInsectoid.corePart.parts.right_elytra.customLabel	élitro direito
+VFEI2_ClawedInsectoid.corePart.parts.Pronotum.parts.InsectHead.parts.left_eye.customLabel	olho esquerdo
+VFEI2_ClawedInsectoid.corePart.parts.Pronotum.parts.InsectHead.parts.right_eye.customLabel	olho direito
+VFEI2_ClawedInsectoid.corePart.parts.Pronotum.parts.InsectHead.parts.left_antenna.customLabel	antena esquerda
+VFEI2_ClawedInsectoid.corePart.parts.Pronotum.parts.InsectHead.parts.right_antenna.customLabel	antena direita
+VFEI2_ClawedInsectoid.corePart.parts.front_left_leg.customLabel	perna dianteira esquerda
+VFEI2_ClawedInsectoid.corePart.parts.front_right_leg.customLabel	perna dianteira direita
+VFEI2_ClawedInsectoid.corePart.parts.middle_left_leg.customLabel	perna do meio esquerda
+VFEI2_ClawedInsectoid.corePart.parts.middle_right_leg.customLabel	perna do meio direita
+VFEI2_ClawedInsectoid.corePart.parts.rear_left_leg.customLabel	perna traseira esquerda
+VFEI2_ClawedInsectoid.corePart.parts.rear_right_leg.customLabel	perna traseira direita
+## DefInjected/BodyPartDef/BodyParts_Insectoids.xml
+VFEI2_LeftClaw.label	garra esquerda
+VFEI2_RightClaw.label	garra direita
+## DefInjected/BodyPartGroupDef/BodyPartGroups.xml
+VFEI2_ClawAttackTool.label	garras
+## DefInjected/DamageDef/DamageMisc.xml
+VFEI2_ToxicSting.label	ferroada tóxica
+VFEI2_ToxicSting.deathMessage	{0} morreu de tanta ferroada.
+VFEI2_AcidBite.deathMessage	{0} morreu mordido.
+VFEI2_TeramantisStun.label	corte
+VFEI2_TeramantisStun.deathMessage	{0} foi cortado até a morte.
+VFEI2_AcidSpit.label	cuspe ácido
+VFEI2_AcidSpit.deathMessage	{0} foi corroído até a morte.
+## DefInjected/FactionDef/Factions_Player.xml
+VFEI2_PlayerOutpost.leaderTitle	líder
+VFEI2_PlayerOutpost.messageDefendersAttacking	{0} de {1} estão atacando seu {2}.
+VFEI2_PlayerOutpost.pawnSingular	mercenário
+## DefInjected/HediffDef/Hediffs_Global_Misc.xml
+VFEI2_ToxicBuildup.label	acúmulo tóxico
+VFEI2_ToxicBuildup.description	Toxinas no sangue. Podem vir de várias fontes, como toxinas do ambiente, mordidas venenosas ou armas envenenadas.\n\nEm doses altas, o acúmulo tóxico é letal. Mesmo em doses baixas, pode causar câncer.\n\nAo contrário do acúmulo tóxico do jogo base, criaturas que morrem com este dano tóxico podem ser comidas.
+VFEI2_ToxicBuildup.stages.initial-0.label	inicial
+VFEI2_ToxicBuildup.stages.initial-1.label	inicial
+VFEI2_ToxicBuildup.stages.minor.label	leve
+VFEI2_ToxicBuildup.stages.moderate.label	moderada
+VFEI2_ToxicBuildup.stages.serious.label	sério
+VFEI2_ToxicBuildup.stages.extreme.label	extrema
+VFEI2_AcidImmunity.label	imunidade a ácido
+## DefInjected/HediffDef/Hediffs_Reproduction.xml
+VFEI2_EmpressSpawn.stages.egg.label	ovo
+VFEI2_EmpressSpawn.stages.larva.label	larva
+VFEI2_EmpressSpawn.stages.pupa.label	pupa
+VFEI2_EmpressSpawn.stages.juvenile.label	juvenil
+VFEI2_GigamiteSpawn.stages.egg.label	ovo
+VFEI2_GigamiteSpawn.stages.larva.label	larva
+VFEI2_GigamiteSpawn.stages.pupa.label	pupa
+VFEI2_GigamiteSpawn.stages.juvenile.label	juvenil
+VFEI2_SilverfishSpawn.stages.egg.label	ovo
+VFEI2_SilverfishSpawn.stages.larva.label	larva
+VFEI2_SilverfishSpawn.stages.pupa.label	pupa
+VFEI2_SilverfishSpawn.stages.juvenile.label	juvenil
+VFEI2_TitantickSpawn.stages.egg.label	ovo
+VFEI2_TitantickSpawn.stages.larva.label	larva
+VFEI2_TitantickSpawn.stages.pupa.label	pupa
+VFEI2_TitantickSpawn.stages.juvenile.label	juvenil
+VFEI2_TeramantisSpawn.stages.egg.label	ovo
+VFEI2_TeramantisSpawn.stages.larva.label	larva
+VFEI2_TeramantisSpawn.stages.pupa.label	pupa
+VFEI2_TeramantisSpawn.stages.juvenile.label	juvenil
+## DefInjected/HediffDef/RoyalInsectJelly.xml
+VFEI2_RoyalJellyTolerance.stages.small.label	pequena
+VFEI2_RoyalJellyTolerance.stages.large.label	grande
+VFEI2_RoyalJellyTolerance.stages.massive.label	enorme
+VFEI2_RoyalJellyAddiction.stages.withdrawal.label	abstinência
+## DefInjected/PawnKindDef/PawnKinds_Player.xml
+VFE_Mercenary.label	mercenário
+## DefInjected/PawnRenderTreeDef/PawnRenderTreeDefs.xml
+VFEI2_Unarmored.root.children.0.children.3.debugLabel	Coisa carregada
+VFEI2_Swarmling.root.children.1.debugLabel	Coisa carregada
+## DefInjected/QuestScriptDef/Script_EmergingHive.xml
+VFEI2_OpportunitySite_InsectoidHive.root.nodes.WorldObjectTimeout.node.nodes.Letter.label.slateRef	Missão expirada: [resolvedQuestName]
+VFEI2_OpportunitySite_InsectoidHive.root.nodes.siteAllHivesAreDestroyed.node.nodes.GiveRewards.customLetterLabel.slateRef	Pagamento chegou
+VFEI2_OpportunitySite_InsectoidHive.root.nodes.siteAllHivesAreDestroyed.node.nodes.GiveRewards.nodeIfChosenPawnSignalUsed.label.slateRef	[asker_faction_royalFavorLabel]
+VFEI2_OpportunitySite_InsectoidHive.root.nodes.siteAllHivesAreDestroyed.node.nodes.GiveRewards.nodeIfChosenPawnSignalUsed.text.slateRef	Estes colonos participaram da vitória na missão [resolvedQuestName]. [asker_definite] quer saber quem deve receber [royalFavorReward_amount] de [asker_faction_royalFavorLabel] por este serviço.
+## DefInjected/ResearchProjectDef/ResearchProjects.xml
+## DefInjected/TerrainAffordanceDef/TerrainAffordances.xml
+VFEI2_JellyFloor.label	piso de geleia
+## DefInjected/TerrainDef/Terrain_Floors.xml
+VFEI2_JellyFloor.label	piso de geleia
+VFEI2_RoyalJellyFloor.label	piso de geleia real
+## DefInjected/ThingDef/Buildings_Burrows.xml
+VFEI2_SmallBurrowSpawner.label	túnel
+VFEI2_MediumBurrowSpawner.label	túnel
+VFEI2_LargeBurrowSpawner.label	túnel
+## DefInjected/ThingDef/Buildings_Insectoid.xml
+VFEI2_InfestedShipPart.label	peça de nave infestada
+VFEI2_LargeTunnelHiveSpawner.label	túnel
+## DefInjected/ThingDef/Effecter_Misc.xml
+VFEI_Mote_CocoonDestroyedMist.label	efeito
+VFEI_Mote_CocoonDestroyedFlyingSlime.label	efeito
+VFEI_Mote_CocoonDestroyedFlyingPiece.label	efeito
+## DefInjected/ThingDef/Ethereal_Various.xml
+VFEI2_Tunneler.label	voo
+VFEI2_PawnFlyer_Stun.label	voo
+## DefInjected/ThingDef/Projectiles.xml
+VFEI2_Proj_Acid.label	ácido
+## DefInjected/ThingDef/Races_AcidSpitter.xml
+VFEI2_Acidspitter.tools.mandibles.label	mandíbulas
+VFEI2_Acidspitter.tools.head.label	cabeça
+## DefInjected/ThingDef/Races_Boomtick.xml
+VFEI2_Boomtick.tools.mandibles.label	mandíbulas
+VFEI2_Boomtick.tools.head.label	cabeça
+## DefInjected/ThingDef/Races_Durapod.xml
+VFEI2_Durapod.tools.head.label	cabeça
+## DefInjected/ThingDef/Races_Empress.xml
+VFEI2_Empress.tools.head.label	cabeça
+## DefInjected/ThingDef/Races_Fuelmite.xml
+VFEI2_Fuelmite.tools.head.label	cabeça
+## DefInjected/ThingDef/Races_Gigalocust.xml
+VFEI2_Gigalocust.tools.head.label	cabeça
+## DefInjected/ThingDef/Races_Gigamite.xml
+VFEI2_Gigamite.tools.head.label	cabeça
+## DefInjected/ThingDef/Races_Hellbeetle.xml
+VFEI2_Hellbeetle.tools.head.label	cabeça
+## DefInjected/ThingDef/Races_Ironclad.xml
+VFEI2_Ironclad.tools.head.label	cabeça
+## DefInjected/ThingDef/Races_Macrofly.xml
+VFEI2_Macrofly.tools.head.label	cabeça
+## DefInjected/ThingDef/Races_Megapede.xml
+VFEI2_Megapede.tools.mandibles.label	mandíbulas
+VFEI2_Megapede.tools.head.label	cabeça
+## DefInjected/ThingDef/Races_Megathrips.xml
+VFEI2_Megathrips.tools.head.label	cabeça
+## DefInjected/ThingDef/Races_Megawasp.xml
+VFEI2_Megawasp.tools.head.label	cabeça
+## DefInjected/ThingDef/Races_Patriarch.xml
+VFEI2_Patriarch.tools.head.label	cabeça
+## DefInjected/ThingDef/Races_Queen.xml
+VFEI2_Queen.tools.head.label	cabeça
+## DefInjected/ThingDef/Races_RoyalMegascarab.xml
+VFEI2_RoyalMegascarab.tools.head.label	cabeça
+## DefInjected/ThingDef/Races_RoyalMegaspider.xml
+VFEI2_RoyalMegaspider.tools.mandibles.label	mandíbulas
+VFEI2_RoyalMegaspider.tools.head.label	cabeça
+## DefInjected/ThingDef/Races_RoyalSpelopede.xml
+VFEI2_RoyalSpelopede.tools.head.label	cabeça
+## DefInjected/ThingDef/Races_Silverfish.xml
+VFEI2_Silverfish.tools.right_claw-0.label	garra direita
+VFEI2_Silverfish.tools.right_claw-1.label	garra direita
+VFEI2_Silverfish.tools.left_claw-0.label	garra esquerda
+VFEI2_Silverfish.tools.left_claw-1.label	garra esquerda
+VFEI2_Silverfish.tools.head.label	cabeça
+## DefInjected/ThingDef/Races_Swarmling.xml
+VFEI2_Swarmling.tools.mouth.label	boca
+## DefInjected/ThingDef/Races_Tankroach.xml
+VFEI2_Tankroach.tools.mandibles.label	mandíbulas
+VFEI2_Tankroach.tools.head.label	cabeça
+## DefInjected/ThingDef/Races_Teramantis.xml
+VFEI2_Teramantis.tools.right_claw-0.label	garra direita
+VFEI2_Teramantis.tools.right_claw-1.label	garra direita
+VFEI2_Teramantis.tools.left_claw-0.label	garra esquerda
+VFEI2_Teramantis.tools.left_claw-1.label	garra esquerda
+VFEI2_Teramantis.tools.head.label	cabeça
+## DefInjected/ThingDef/Races_Titantick.xml
+VFEI2_Titantick.tools.head.label	cabeça
+## DefInjected/ThingDef/Races_Venomite.xml
+VFEI2_Venomite.tools.head.label	cabeça
+## DefInjected/ToolCapacityDef/ToolCapacity.xml
+VFEI2_ToxicSting.label	ferroada tóxica

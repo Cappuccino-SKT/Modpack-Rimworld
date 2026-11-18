@@ -1,0 +1,178 @@
+## DefInjected/AbilityDef/Abilities.xml
+VQEA_Levitation.label	levitação
+VQEA_Levitation.description	Usa um delicado campo psíquico para levitar até o local escolhido.
+VQEA_Levitation.verbProperties.label	levitação
+VQEA_Invisibility.label	invisibilidade
+VQEA_Invisibility.description	Usa sugestão psíquica para ficar invisível por pouco tempo.
+VQEA_InfernoSpew.label	golfada infernal
+VQEA_InfernoSpew.description	Expele pela boca um jato denso de bile pegajosa e inflamável. Ao contato, pode incendiar os alvos e deixar poças em chamas no chão. A bile é produzida e guardada numa glândula especial do pescoço, ao lado de uma câmara com um composto hipergólico que faz a ignição.
+VQEA_HellsphereBlast.label	rajada de esfera infernal
+VQEA_HellsphereBlast.description	Dispara pelos olhos um feixe concentrado de energia destrutiva, idêntico ao do canhão de esfera infernal. Depois de um instante, os portais de salto microscópicos dos olhos liberam um pulso escaldante capaz de derreter concreto e incinerar tudo na área.
+VQEA_EMPPulse.label	pulso eletromagnético
+VQEA_EMPPulse.description	Libera um forte pulso eletromagnético que danifica todos os eletrônicos no raio. Ao ar livre, raios podem cair em volta de quem o usa.
+VQEA_MatterPhasing.label	defasagem da matéria
+VQEA_MatterPhasing.description	O colono fica intangível por um instante e atravessa paredes antes de voltar a ser sólido.
+## DefInjected/BackstoryDef/Patient_Adult.xml
+VQE_ArchiteVolunteer1.description	[PAWN_nameDef] se alistou num programa militar secreto que prometia glória e força. Os experimentos deixaram [PAWN_objective] mais resistente que a maioria, mas os tratamentos estragaram a coordenação fina e o equilíbrio.
+VQE_ArchiteVolunteer1.title	voluntário arquita
+VQE_ArchiteVolunteer1.titleShort	voluntário
+VQE_TrialSubject2.description	[PAWN_nameDef] assinou a renúncia dos próprios direitos em troca de uma vaga numa unidade experimental. Injeções e treinos sem fim deram resistência, mas a observação constante e o confinamento deixaram [PAWN_objective] ansioso e retraído.
+VQE_TrialSubject2.title	cobaia de ensaio
+VQE_TrialSubject2.titleShort	cobaia
+VQE_GeneFighter3.description	Escolhido para um experimento militar, [PAWN_nameDef] passou por alterações genéticas forçadas para criar soldados mais fortes. O projeto deu vantagem em combate, mas os testes constantes deixaram pouco tempo para estudo ou ofícios civis.
+VQE_GeneFighter3.title	lutador genético
+VQE_GeneFighter3.titleShort	lutador
+VQE_MilitaryExperiment4.description	[PAWN_nameDef] se ofereceu para experimentos sigilosos, achando que era o seu dever. Saiu com reflexos melhores e músculos mais fortes — e, de brinde, dor crônica e pavio curto.
+VQE_MilitaryExperiment4.title	experimento militar
+VQE_MilitaryExperiment4.titleShort	experimento
+VQE_EnhancedSoldier5.description	[PAWN_nameDef] fez parte de um programa militar para criar supersoldados com injeções de arquitas. Os procedimentos o endureceram para o combate, mas as modificações constantes apagaram a noção de si e deixaram [PAWN_objective] alheio à vida comum.
+VQE_EnhancedSoldier5.title	soldado aprimorado
+VQE_EnhancedSoldier5.titleShort	soldado
+VQE_BoneReforged6.description	[PAWN_nameDef] passou por um ensaio brutal em que cada osso do corpo foi quebrado, trocado e refeito com enxertos reforçados. Ficou quase inquebrável, mas a agonia constante marcou a mente para sempre.
+VQE_BoneReforged6.title	ossos reforjados
+VQE_BoneReforged6.titleShort	reforjado
+VQE_SkinGrafted7.description	[PAWN_nameDef] teve a pele arrancada e regenerada com enxertos várias vezes, para testar soros de cura rápida. Os experimentos deram resistência a ferimentos, mas embotaram o tato e cobriram o corpo de cicatrizes.
+VQE_SkinGrafted7.title	pele enxertada
+VQE_SkinGrafted7.titleShort	enxertado
+VQE_BrainProbed8.description	[PAWN_nameDef] fez parte de um programa horrendo em que nós de arquitas eram perfurados direto no cérebro. Os procedimentos aguçaram reflexos e memória, mas apagões frequentes e visões assombrosas ainda perseguem [PAWN_objective].
+VQE_BrainProbed8.title	cérebro sondado
+VQE_BrainProbed8.titleShort	sondado
+VQE_MuscleStitched9.description	[PAWN_nameDef] aguentou ciclos sem fim de remoção e regeneração forçada de músculos, recosturados cada vez mais densos. O resultado foi uma força imensa, mas o corpo ficou grotescamente desigual e dói o tempo todo.
+VQE_MuscleStitched9.title	músculos costurados
+VQE_MuscleStitched9.titleShort	costurado
+VQE_EyeReplaced10.description	[PAWN_nameDef] teve os dois olhos removidos e trocados por implantes experimentais instáveis, feitos para seguir alvos no escuro. A mira melhorou, mas ficou sensível à luz e para sempre dependente de estranhas sobreposições visuais.
+VQE_EyeReplaced10.title	olhos trocados
+VQE_EyeReplaced10.titleShort	aumentado
+VQE_StressTest11.description	[PAWN_nameDef] ficou semanas confinado em condições controladas, sem dormir e sobrecarregado de estímulos, para medir a resistência. Os testes acabaram com os nervos: ficou agitado, mas estranhamente resistente ao estresse.
+VQE_StressTest11.title	cobaia de teste de estresse
+VQE_StressTest11.titleShort	cobaia
+VQE_ToxicExposure12.description	[PAWN_nameDef] foi trancado em câmaras cheias de vapores tóxicos num programa militar de resistência. A experiência marcou os pulmões e queimou a pele, mas aprendeu a seguir em frente apesar da doença e da dor.
+VQE_ToxicExposure12.title	exposição tóxica
+VQE_ToxicExposure12.titleShort	exposto
+VQE_PainTolerance13.description	[PAWN_nameDef] aguentou procedimentos sem fim feitos para testar o limite da tolerância humana à dor. A agonia o endureceu, mas nunca recuperou de verdade a confiança nos outros.
+VQE_PainTolerance13.title	ensaio de tolerância à dor
+VQE_PainTolerance13.titleShort	ensaiado
+VQE_IsolationChamber14.description	[PAWN_nameDef] passou meses sozinho numa cela silenciosa e sem luz enquanto pesquisadores estudavam a privação sensorial. A provação deixou [PAWN_objective] distante e retraído, mas estranhamente concentrado quando trabalha só.
+VQE_IsolationChamber14.title	câmara de isolamento
+VQE_IsolationChamber14.titleShort	isolado
+VQE_CombatDrills15.description	[PAWN_nameDef] foi forçado a treinos de combate punitivos que testavam o ponto de ruptura de soldados sob fogo. O regime brutal afiou os instintos, mas deixou lesões que não saram e uma desconfiança profunda de qualquer autoridade.
+VQE_CombatDrills15.title	cobaia de treino de combate
+VQE_CombatDrills15.titleShort	treinado
+VQE_DeceptionStudy16.description	[PAWN_nameDef] entrou num programa que premiava a mentira e punia a honestidade. Com o tempo aprendeu a ler as pessoas, mas passou a ter dificuldade em criar laços verdadeiros.
+VQE_DeceptionStudy16.title	estudo de engano
+VQE_DeceptionStudy16.titleShort	enganador
+VQE_GroupConflict17.description	[PAWN_nameDef] era trancado em salas com outras cobaias enquanto os pesquisadores manipulavam os recursos para forçar brigas. A luta constante afiou o instinto de sobrevivência, mas confiar em alguém ficou impossível.
+VQE_GroupConflict17.title	cobaia de conflito
+VQE_GroupConflict17.titleShort	conflituoso
+VQE_ObedienceTrial18.description	[PAWN_nameDef] passou anos num programa que testava o limite da obediência à autoridade. Seguir ordens virou segunda natureza, mas nunca aprendeu a decidir nada sozinho.
+VQE_ObedienceTrial18.title	ensaio de obediência
+VQE_ObedienceTrial18.titleShort	obediente
+VQE_IsolationTest19.description	[PAWN_nameDef] foi posto em situações sociais falsas em que aliados sumiam ou traíam de repente. As regras sempre mudando deixaram [PAWN_objective] paranoico, mas atento a detalhes que os outros não veem.
+VQE_IsolationTest19.title	teste de isolamento
+VQE_IsolationTest19.titleShort	isolado
+VQE_LossExperiment20.description	[PAWN_nameDef] era levado a criar laços com outras cobaias só para vê-las serem levadas embora, de novo e de novo. O luto deixou cicatrizes, mas também uma resistência incomum ao desespero.
+VQE_LossExperiment20.title	experimento de perda
+VQE_LossExperiment20.titleShort	enlutado
+VQE_BetrayalStudy21.description	[PAWN_nameDef] participou de experimentos em que cobaias viravam companheiras próximas e depois eram induzidas a se trair para sobreviver. A crueldade destruiu a capacidade de confiar, mas afiou o faro para o perigo.
+VQE_BetrayalStudy21.title	estudo de traição
+VQE_BetrayalStudy21.titleShort	traído
+VQE_FalseFamily22.description	[PAWN_nameDef] foi posto em lares simulados com estranhos fingindo ser parentes, que depois sumiam sem explicação. O ciclo se repetiu até parar de criar laços de vez, sobrevivendo num distanciamento frio.
+VQE_FalseFamily22.title	família falsa
+VQE_FalseFamily22.titleShort	órfão
+VQE_StarvationTrial23.description	[PAWN_nameDef] passou por experimentos em que a comida era negada e as rações, desiguais de propósito, obrigando as cobaias a implorar ou brigar por migalhas. A fome marcou fundo a mente: ficou inquieto e desconfiado de qualquer generosidade.
+VQE_StarvationTrial23.title	ensaio de fome
+VQE_StarvationTrial23.titleShort	faminto
+VQE_CompassionPunished24.description	[PAWN_nameDef] viveu ensaios em que bondade era punida e crueldade, premiada. Aprendeu a esconder a compaixão atrás de uma obediência fria, mas o instinto de cuidar nunca foi embora de vez.
+VQE_CompassionPunished24.title	compaixão punida
+VQE_CompassionPunished24.titleShort	endurecido
+VQE_SilenceStudy25.description	[PAWN_nameDef] foi criado em silêncio forçado, punido por falar ou até por fazer barulho. O isolamento deixou [PAWN_objective] quase mudo em grupo, mas com uma concentração assombrosa quando trabalha só.
+VQE_SilenceStudy25.title	estudo do silêncio
+VQE_SilenceStudy25.titleShort	silencioso
+## DefInjected/BackstoryDef/Solid_Rare.xml
+VQE_KidnappedChild.description	[PAWN_nameDef] foi sequestrado ainda criança e criado em cativeiro. Sem escola, sobreviveu aprendendo a escutar, obedecer e ler o humor de quem o prendia. Ficou desconfiado dos outros e sem preparo na maioria dos ofícios, mas incomumente sensível às intenções das pessoas.
+VQE_KidnappedChild.title	criança sequestrada
+VQE_KidnappedChild.titleShort	sequestrado
+VQE_IdealPatient.description	[PAWN_nameDef] foi escolhido para inúmeros procedimentos experimentais com arquitas. Por motivos desconhecidos, nunca rejeitou um implante, o que fez de [PAWN_objective] a cobaia perfeita para experimentos genéticos radicais. Os tratamentos deixaram o corpo frágil, mas acostumado à dor e incomumente tolerante a privações. Infelizmente, um deles causou uma doença terminal que avança devagar.
+VQE_IdealPatient.title	paciente ideal
+VQE_IdealPatient.titleShort	paciente
+## DefInjected/BiomeDef/AncientComplexMapGenerator.xml
+VQEA_AncientComplex.label	complexo ancestral
+VQEA_AncientComplex.description	Este complexo ancestral está cheio das máquinas de experimentos esquecidos.
+## DefInjected/DamageDef/DamageMisc.xml
+VQEA_SuicideAttack.label	ataque suicida
+VQEA_SuicideAttack.deathMessage	{0} morreu mordido.
+VQEA_Scalpel.label	corte de bisturi
+VQEA_Scalpel.deathMessage	{0} morreu retalhado.
+## DefInjected/FactionDef/Scenarios_SealedVault.xml
+VQE_NewVaultPlayerFaction.label	Novo cofre
+VQE_NewVaultPlayerFaction.description	Um cofre antigo e secreto que esconde um passado misterioso.
+VQE_NewVaultPlayerFaction.leaderTitle	líder
+VQE_NewVaultPlayerFaction.messageDefendersAttacking	{0} de {1} estão atacando seu {2}.
+VQE_NewVaultPlayerFaction.pawnSingular	colono
+VQE_NewVaultPlayerFaction.pawnsPlural	colonos
+## DefInjected/GameConditionDef/AncientComplexMapGenerator.xml
+VQEA_AncientComplex.label	complexo ancestral
+VQEA_AncientComplex.description	Aqui é escuro e úmido.
+## DefInjected/GeneCategoryDef/GeneCategoryDefs.xml
+VQEA_ArchiteAptitudes.label	aptidões arquitas
+## DefInjected/GeneDef/GeneDefs_Archite.xml
+VQEA_Herculean.label	hercúleo
+VQEA_Herculean.description	Portadores deste gene têm uma força sobre-humana imensa: golpeiam com força devastadora e carregam cargas enormes com facilidade. Seus golpes quebram ossos, e impactos nunca os desequilibram.
+VQEA_Prowess.label	destreza
+VQEA_Prowess.description	Portadores deste gene são mestres do combate corpo a corpo. Precisão e reflexos os tornam quase impossíveis de acertar de perto, e seus golpes acertam com perfeição.
+VQEA_BlurRunner.label	corredor borrado
+VQEA_BlurRunner.description	Portadores deste gene se movem a uma velocidade ofuscante, o que os torna difíceis de acertar à distância. Reflexos e controle cinético aprimorados os deixam cruzar o campo de batalha como um borrão.
+VQEA_Woundless.label	sem feridas
+VQEA_Woundless.description	Portadores deste gene curam sangramentos rapidamente. A carne se fecha instantes depois do ferimento, impedindo toda perda de sangue e permitindo lutar com traumas que matariam outros.
+VQEA_Marksman.label	atirador de elite
+VQEA_Marksman.description	Portadores deste gene têm precisão sobre-humana à distância. Seus tiros são mais rápidos, mais certeiros e mais letais, uma vantagem clara em qualquer tiroteio.
+VQEA_PerfectVision.label	visão perfeita
+VQEA_PerfectVision.description	Portadores deste gene enxergam com nitidez sobrenatural a qualquer distância e na escuridão total. Pouca luz ou longo alcance não os afetam, e a percepção melhora muito o combate à distância.
+VQEA_PlasteelSkin.label	pele de plastaço
+VQEA_PlasteelSkin.description	Portadores deste gene têm uma armadura dérmica densa e reforçada. A pele resiste a balas, absorve impactos e dispersa o calor, fazendo do corpo inteiro um escudo vivo.
+VQEA_PlasteelClaws.label	garras de plastaço
+VQEA_PlasteelClaws.description	Portadores deste gene desenvolvem garras de liga sintética que cortam armadura e carne. Essas armas naturais estão sempre à mão e golpeiam com eficiência brutal.
+VQEA_Genius.label	gênio
+VQEA_Genius.description	Portadores deste gene aprendem a uma velocidade fenomenal e não esquecem nada. Não perdem habilidade com o tempo e interagem com tecnologia numa velocidade incomparável, concluindo invasões de sistema na hora.
+VQEA_Levitation.label	levitação
+VQEA_Levitation.description	Portadores deste gene se erguem com um campo psíquico controlado. Flutuam por cima de obstáculos e terreno sem se ferir, imunes a dano durante o trajeto e sem sofrer com terreno difícil.
+VQEA_Serene.label	sereno
+VQEA_Serene.description	Portadores deste gene têm arquitas nas vias neurais que suprimem medo, raiva e estresse. Por isso são totalmente inabaláveis: incapazes de colapsos mentais, brigas sociais ou de resistir à prisão.
+VQEA_PassiveMeditation.label	meditação passiva
+VQEA_PassiveMeditation.description	Portadores deste gene têm arquitas que canalizam passivamente a energia psíquica do ambiente, repondo a concentração psíquica sem meditar. Essas mentes sempre sintonizadas ficam afiadas, serenas e prontas para conjurar a qualquer hora.
+VQEA_Bulwark.label	baluarte
+VQEA_Bulwark.description	Arquitas nos tecidos do portador reforçam as estruturas celulares e reduzem pela metade o dano recebido. Os receptores de dor são abafados em favor da consciência de combate, e o próprio corpo resiste a traumas que aleijariam um humano comum.
+VQEA_Enormous.label	enorme
+VQEA_Enormous.description	Portadores deste gene são saturados de arquitas reguladoras de crescimento que aumentam muito o tamanho do corpo e a massa muscular. O porte imenso permite façanhas de força bruta, ao custo de velocidade e apetite.
+VQEA_SubstanceImpervious.label	imune a substâncias
+VQEA_SubstanceImpervious.description	Arquitas desintoxicantes especializadas patrulham o sangue do portador, neutralizando na hora compostos viciantes e impedindo overdoses. Nenhuma droga, por mais potente, compromete o organismo.
+VQEA_MasterfulAnimals.label	magistral em animais
+VQEA_MasterfulAnimals.description	A aptidão do portador em Animais aumenta em 16. Aptidão funciona como um bônus no nível da habilidade. Além disso, Animais ganha dois níveis de paixão. Arquitas no sistema límbico e no córtex motor permitem essa empatia e coordenação aprimoradas, criando uma forma única de recreação, o relaxamento com animais, enquanto cuida deles.
+VQEA_MasterfulArtistic.label	magistral em arte
+VQEA_MasterfulArtistic.description	A aptidão do portador em Artístico aumenta em 16. Aptidão funciona como um bônus no nível da habilidade. Além disso, Artístico ganha dois níveis de paixão. Trabalha com paixão intensa e, ao criar uma obra-prima, parte do material usado é milagrosamente recuperada. Isso é obra de arquitas que otimizam a memória muscular e o raciocínio visoespacial, reciclando material com eficiência notável.
+VQEA_MasterfulConstruction.label	magistral em construção
+VQEA_MasterfulConstruction.description	A aptidão do portador em Construção aumenta em 16. Aptidão funciona como um bônus no nível da habilidade. Além disso, Construção ganha dois níveis de paixão. De vez em quando supera as expectativas e devolve parte do material usado na obra, de tão eficiente.
+VQEA_MasterfulCooking.label	magistral em culinária
+VQEA_MasterfulCooking.description	A aptidão do portador em Culinária aumenta em 16. Aptidão funciona como um bônus no nível da habilidade. Além disso, Culinária ganha dois níveis de paixão. Arquitas nanoscópicas no córtex sensorial afinam o paladar e o controle motor, dobrando a velocidade de cozinhar.
+VQEA_MasterfulCrafting.label	magistral em fabricação
+VQEA_MasterfulCrafting.description	A aptidão do portador em Fabricação aumenta em 16. Aptidão funciona como um bônus no nível da habilidade. Além disso, Fabricação ganha dois níveis de paixão. Arquitas guiam a coordenação fina e as decisões do portador, garantindo desempenho máximo na fabricação.
+VQEA_MasterfulMedical.label	magistral em medicina
+VQEA_MasterfulMedical.description	A aptidão do portador em Medicina aumenta em 16. Aptidão funciona como um bônus no nível da habilidade. Além disso, Medicina ganha dois níveis de paixão. Arquitas melhoram a decisão e a precisão nas cirurgias e poupam remédio durante o tratamento.
+VQEA_MasterfulMelee.label	magistral em corpo a corpo
+VQEA_MasterfulMelee.description	A aptidão do portador em Corpo a corpo aumenta em 16. Aptidão funciona como um bônus no nível da habilidade. Além disso, Corpo a corpo ganha dois níveis de paixão. Por instinto mira o coração ou o cérebro, despachando inimigos com eficiência aterradora. Arquitas sincronizam a memória muscular e a mira visual para priorizar órgãos letais em combate.
+VQEA_MasterfulMining.label	magistral em mineração
+VQEA_MasterfulMining.description	A aptidão do portador em Mineração aumenta em 16. Aptidão funciona como um bônus no nível da habilidade. Além disso, Mineração ganha dois níveis de paixão. Arquitas ampliam a percepção dos veios minerais e o controle da ferramenta, aumentando o rendimento e removendo o teto normal de rendimento da mineração.
+VQEA_MasterfulPlants.label	magistral em plantas
+VQEA_MasterfulPlants.description	A aptidão do portador em Plantas aumenta em 16. Aptidão funciona como um bônus no nível da habilidade. Além disso, Plantas ganha dois níveis de paixão. A perícia remove os limites normais de colheita, permitindo uma produção agrícola extraordinária.
+VQEA_MasterfulIntellectual.label	magistral em intelecto
+VQEA_MasterfulIntellectual.description	A aptidão do portador em Intelectual aumenta em 16. Aptidão funciona como um bônus no nível da habilidade. Além disso, Intelectual ganha dois níveis de paixão. Pesquisa no subconsciente, gerando progresso científico mesmo fazendo outras tarefas ou descansando. Arquitas tecidas na rede neural aceleram a memória, a síntese e a intuição, e as descobertas surgem sem estudo ativo.
+VQEA_MasterfulShooting.label	magistral em tiro
+VQEA_MasterfulShooting.description	A aptidão do portador em Tiro aumenta em 16. Aptidão funciona como um bônus no nível da habilidade. Além disso, Tiro ganha dois níveis de paixão. Cada tiro vai no lugar certo: se houver uma cabeça, ela será atingida. Arquitas alteram o rastreio visual e a previsão balística, travando em alvos cranianos com consistência aterradora.
+VQEA_MasterfulSocial.label	magistral em social
+VQEA_MasterfulSocial.description	A aptidão do portador em Social aumenta em 16. Aptidão funciona como um bônus no nível da habilidade. Além disso, Social ganha dois níveis de paixão. Consegue recrutar até as pessoas mais inabaláveis e exerce enorme influência ideológica.
+VQEA_InfernoSpew.label	golfada infernal
+VQEA_InfernoSpew.description	Portadores deste gene soltam um jato superaquecido de bile incendiária, cobrindo inimigos e terreno de líquido em chamas. A habilidade transforma qualquer campo de batalha numa armadilha de fogo.
+VQEA_HellsphereBlast.label	rajada de esfera infernal
+VQEA_HellsphereBlast.description	Portadores deste gene disparam pelos olhos um feixe devastador de energia que vaporiza tudo no caminho. Imita o poder de fogo de um canhão de esfera infernal, condensado num corpo humanoide.
+VQEA_Invisibility.label	invisibilidade
+VQEA_Invisibility.description	Portadores deste gene curvam a luz e a assinatura térmica em volta do corpo com nanitas arquitas especializadas e somem de vista. O efeito dura pouco, mas pode ser usado de novo quase em seguida.
