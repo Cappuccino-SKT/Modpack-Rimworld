@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <!-- Bloco 4b: zonas da Queda. Os biomas do Alpha Biomes são regiões marcadas pela guerra; o recurso exclusivo de cada um,
+       analisado na bancada de engenharia reversa, rende parte de um projeto do ramo ligado à zona (EcosDaQueda.EQZones). -->
+
+  <RecipeDef Name="EQ_AmostraZonaBase" Abstract="True">
+    <workerClass>EcosDaQueda.RecipeWorker_EQZoneSample</workerClass>
+    <jobString>Analisando amostra da zona.</jobString>
+    <workAmount>1800</workAmount>
+    <workSpeedStat>ResearchSpeed</workSpeedStat>
+    <workSkill>Intellectual</workSkill>
+    <workSkillLearnFactor>0.3</workSkillLearnFactor>
+    <effectWorking>Smith</effectWorking>
+    <soundWorking>Recipe_Smith</soundWorking>
+    <recipeUsers>
+      <li>EQ_BancadaEngenhariaReversa</li>
+    </recipeUsers>
+  </RecipeDef>
+
+  <RecipeDef ParentName="EQ_AmostraZonaBase" MayRequire="sarg.alphabiomes,VanillaExpanded.Recycling">
+    <defName>EQ_AmostraZona_Ossario</defName>
+    <label>analisar osso antigo (Ossário dos Gallatross)</label>
+    <description>Zona da Queda: Ossário dos Gallatross. Os ossos de bichos grandes demais para terem existido. O Silêncio cataloga cada um em triplicata, e às vezes eles respondem ao catálogo.\n\nConsome 40 de osso antigo e rende 12% (até 600 pontos) de um projeto do Silêncio: o projeto atual, se for desse ramo, senão o mais adiantado. Sem os pré-requisitos, para em 99%. Patente de potência sem licença dá Infâmia com a dona.</description>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>AB_AncientBone_Stuff</li>
+          </thingDefs>
+        </filter>
+        <count>40</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>AB_AncientBone_Stuff</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <modExtensions>
+      <li Class="EcosDaQueda.ZoneSampleExtension">
+        <biome>AB_GallatrossGraveyard</biome>
+        <branch>EQ_Ramo_Silencio</branch>
+        <fraction>0.12</fraction>
+        <maxPoints>600</maxPoints>
+        <infamy>1</infamy>
+        <text>{PAWN} analisou {ITEM} (Ossário dos Gallatross): {PROJECT} +{GAIN} (agora {TOTAL}).</text>
+        <nothingText>A amostra não ensinou nada: não há projeto do Silêncio a avançar.</nothingText>
+        <piracyText>{FACTION} soube que alguém estudou {ITEM} para chegar à patente dela. Infâmia +{INFAMY}.</piracyText>
+      </li>
+    </modExtensions>
+  </RecipeDef>
+
+  <RecipeDef ParentName="EQ_AmostraZonaBase" MayRequire="sarg.alphabiomes,VanillaExpanded.Recycling">
+    <defName>EQ_AmostraZona_Superorganismo</defName>
+    <label>analisar gosma (Superorganismo Gelatinoso)</label>
+    <description>Zona da Queda: Superorganismo Gelatinoso. Um bioma inteiro que é, tecnicamente, um único bicho. A Hélice tem três patentes pendentes sobre ele e um processo por plágio contra ele.\n\nConsome 60 de gosma e rende 12% (até 600 pontos) de um projeto da Hélice: o projeto atual, se for desse ramo, senão o mais adiantado. Sem os pré-requisitos, para em 99%. Patente de potência sem licença dá Infâmia com a dona.</description>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>AB_RawSlime</li>
+          </thingDefs>
+        </filter>
+        <count>60</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>AB_RawSlime</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <modExtensions>
+      <li Class="EcosDaQueda.ZoneSampleExtension">
+        <biome>AB_GelatinousSuperorganism</biome>
+        <branch>EQ_Ramo_Helice</branch>
+        <fraction>0.12</fraction>
+        <maxPoints>600</maxPoints>
+        <infamy>1</infamy>
+        <text>{PAWN} analisou {ITEM} (Superorganismo Gelatinoso): {PROJECT} +{GAIN} (agora {TOTAL}).</text>
+        <nothingText>A amostra não ensinou nada: não há projeto da Hélice a avançar.</nothingText>
+        <piracyText>{FACTION} soube que alguém estudou {ITEM} para chegar à patente dela. Infâmia +{INFAMY}.</piracyText>
+      </li>
+    </modExtensions>
+  </RecipeDef>
+
+  <RecipeDef ParentName="EQ_AmostraZonaBase" MayRequire="sarg.alphabiomes,VanillaExpanded.Recycling">
+    <defName>EQ_AmostraZona_FlorestaOcular</defName>
+    <label>analisar alcionita (Floresta Ocular)</label>
+    <description>Zona da Queda: Floresta Ocular. Uma floresta que olha de volta. O Coro jura que a alcionita afina a voz psíquica; os coristas que a lamberam não voltaram a falar, só a cantar.\n\nConsome 10 de alcionita e rende 12% (até 600 pontos) de um projeto do Coro: o projeto atual, se for desse ramo, senão o mais adiantado. Sem os pré-requisitos, para em 99%. Patente de potência sem licença dá Infâmia com a dona.</description>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>AB_AlcyoniteChunk</li>
+          </thingDefs>
+        </filter>
+        <count>10</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>AB_AlcyoniteChunk</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <modExtensions>
+      <li Class="EcosDaQueda.ZoneSampleExtension">
+        <biome>AB_OcularForest</biome>
+        <branch>EQ_Ramo_Coro</branch>
+        <fraction>0.12</fraction>
+        <maxPoints>600</maxPoints>
+        <infamy>1</infamy>
+        <text>{PAWN} analisou {ITEM} (Floresta Ocular): {PROJECT} +{GAIN} (agora {TOTAL}).</text>
+        <nothingText>A amostra não ensinou nada: não há projeto do Coro a avançar.</nothingText>
+        <piracyText>{FACTION} soube que alguém estudou {ITEM} para chegar à patente dela. Infâmia +{INFAMY}.</piracyText>
+      </li>
+    </modExtensions>
+  </RecipeDef>
+
+  <RecipeDef ParentName="EQ_AmostraZonaBase" MayRequire="sarg.alphabiomes,VanillaExpanded.Recycling">
+    <defName>EQ_AmostraZona_SelvaMicotica</defName>
+    <label>analisar fungo psicotrópico (Selva Micótica)</label>
+    <description>Zona da Queda: Selva Micótica. Fungos que sonham alto. O Silêncio estuda o que eles escutam do outro lado; ninguém lá pergunta o que o outro lado escuta deles.\n\nConsome 20 de fungo psicotrópico e rende 12% (até 600 pontos) de um projeto do Silêncio: o projeto atual, se for desse ramo, senão o mais adiantado. Sem os pré-requisitos, para em 99%. Patente de potência sem licença dá Infâmia com a dona.</description>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>AB_PsychotropicFungus</li>
+          </thingDefs>
+        </filter>
+        <count>20</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>AB_PsychotropicFungus</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <modExtensions>
+      <li Class="EcosDaQueda.ZoneSampleExtension">
+        <biome>AB_MycoticJungle</biome>
+        <branch>EQ_Ramo_Silencio</branch>
+        <fraction>0.12</fraction>
+        <maxPoints>600</maxPoints>
+        <infamy>1</infamy>
+        <text>{PAWN} analisou {ITEM} (Selva Micótica): {PROJECT} +{GAIN} (agora {TOTAL}).</text>
+        <nothingText>A amostra não ensinou nada: não há projeto do Silêncio a avançar.</nothingText>
+        <piracyText>{FACTION} soube que alguém estudou {ITEM} para chegar à patente dela. Infâmia +{INFAMY}.</piracyText>
+      </li>
+    </modExtensions>
+  </RecipeDef>
+
+  <RecipeDef ParentName="EQ_AmostraZonaBase" MayRequire="sarg.alphabiomes,VanillaExpanded.Recycling">
+    <defName>EQ_AmostraZona_Pedreiras</defName>
+    <label>analisar ragadast (Pedreiras Abandonadas)</label>
+    <description>Zona da Queda: Pedreiras Abandonadas. Rocha, vento e uma planta teimosa que sobrevive a tudo. A Hélice quer o gene da teimosia para a próxima linha de produto.\n\nConsome 30 de ragadast e rende 12% (até 600 pontos) de um projeto da Hélice: o projeto atual, se for desse ramo, senão o mais adiantado. Sem os pré-requisitos, para em 99%. Patente de potência sem licença dá Infâmia com a dona.</description>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>AB_RawRagadast</li>
+          </thingDefs>
+        </filter>
+        <count>30</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>AB_RawRagadast</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <modExtensions>
+      <li Class="EcosDaQueda.ZoneSampleExtension">
+        <biome>AB_RockyCrags</biome>
+        <branch>EQ_Ramo_Helice</branch>
+        <fraction>0.12</fraction>
+        <maxPoints>600</maxPoints>
+        <infamy>1</infamy>
+        <text>{PAWN} analisou {ITEM} (Pedreiras Abandonadas): {PROJECT} +{GAIN} (agora {TOTAL}).</text>
+        <nothingText>A amostra não ensinou nada: não há projeto da Hélice a avançar.</nothingText>
+        <piracyText>{FACTION} soube que alguém estudou {ITEM} para chegar à patente dela. Infâmia +{INFAMY}.</piracyText>
+      </li>
+    </modExtensions>
+  </RecipeDef>
+
+  <RecipeDef ParentName="EQ_AmostraZonaBase" MayRequire="sarg.alphabiomes,VanillaExpanded.Recycling">
+    <defName>EQ_AmostraZona_LagosPropano</defName>
+    <label>analisar madeira cristalina (Lagos de Propano)</label>
+    <description>Zona da Queda: Lagos de Propano. Lagos que deviam explodir e não explodem. As árvores congeladas guardam a estrutura de algum reator do Velho Mundo que vazou aqui e cristalizou tudo.\n\nConsome 50 de madeira cristalina e rende 12% (até 600 pontos) de um projeto do Velho Mundo: o projeto atual, se for desse ramo, senão o mais adiantado. Sem os pré-requisitos, para em 99%. Patente de potência sem licença dá Infâmia com a dona.</description>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>AB_CrystalWood</li>
+          </thingDefs>
+        </filter>
+        <count>50</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>AB_CrystalWood</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <modExtensions>
+      <li Class="EcosDaQueda.ZoneSampleExtension">
+        <biome>AB_PropaneLakes</biome>
+        <branch>EQ_Ramo_VelhoMundo</branch>
+        <fraction>0.12</fraction>
+        <maxPoints>600</maxPoints>
+        <infamy>1</infamy>
+        <text>{PAWN} analisou {ITEM} (Lagos de Propano): {PROJECT} +{GAIN} (agora {TOTAL}).</text>
+        <nothingText>A amostra não ensinou nada: não há projeto do Velho Mundo a avançar.</nothingText>
+        <piracyText>{FACTION} soube que alguém estudou {ITEM} para chegar à patente dela. Infâmia +{INFAMY}.</piracyText>
+      </li>
+    </modExtensions>
+  </RecipeDef>
+
+  <RecipeDef ParentName="EQ_AmostraZonaBase" MayRequire="sarg.alphabiomes,VanillaExpanded.Recycling">
+    <defName>EQ_AmostraZona_PocosPiche</defName>
+    <label>analisar resina de cordax (Poços de Piche)</label>
+    <description>Zona da Queda: Poços de Piche. Petróleo velho que ainda borbulha. A resina de cordax tem os mesmos polímeros dos manuais do Velho Mundo, e ler a resina é mais fácil que ler os manuais.\n\nConsome 8 de resina de cordax e rende 12% (até 600 pontos) de um projeto do Velho Mundo: o projeto atual, se for desse ramo, senão o mais adiantado. Sem os pré-requisitos, para em 99%. Patente de potência sem licença dá Infâmia com a dona.</description>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>AB_CordaxResin</li>
+          </thingDefs>
+        </filter>
+        <count>8</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>AB_CordaxResin</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <modExtensions>
+      <li Class="EcosDaQueda.ZoneSampleExtension">
+        <biome>AB_TarPits</biome>
+        <branch>EQ_Ramo_VelhoMundo</branch>
+        <fraction>0.12</fraction>
+        <maxPoints>600</maxPoints>
+        <infamy>1</infamy>
+        <text>{PAWN} analisou {ITEM} (Poços de Piche): {PROJECT} +{GAIN} (agora {TOTAL}).</text>
+        <nothingText>A amostra não ensinou nada: não há projeto do Velho Mundo a avançar.</nothingText>
+        <piracyText>{FACTION} soube que alguém estudou {ITEM} para chegar à patente dela. Infâmia +{INFAMY}.</piracyText>
+      </li>
+    </modExtensions>
+  </RecipeDef>
+
+  <RecipeDef ParentName="EQ_AmostraZonaBase" MayRequire="sarg.alphabiomes,VanillaExpanded.Recycling">
+    <defName>EQ_AmostraZona_Conflagracao</defName>
+    <label>analisar pedaço de vidro de ônix (Conflagração Piroclástica)</label>
+    <description>Zona da Queda: Conflagração Piroclástica. Uma região que nunca parou de queimar desde a Queda. A Forja polia o vidro de ônix daqui para lentes de laser, até alguém perguntar quem pagava a garantia.\n\nConsome 4 de pedaço de vidro de ônix e rende 12% (até 600 pontos) de um projeto da Forja: o projeto atual, se for desse ramo, senão o mais adiantado. Sem os pré-requisitos, para em 99%. Patente de potência sem licença dá Infâmia com a dona.</description>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>AB_ChunkObsidian</li>
+          </thingDefs>
+        </filter>
+        <count>4</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>AB_ChunkObsidian</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <modExtensions>
+      <li Class="EcosDaQueda.ZoneSampleExtension">
+        <biome>AB_PyroclasticConflagration</biome>
+        <branch>EQ_Ramo_Forja</branch>
+        <fraction>0.12</fraction>
+        <maxPoints>600</maxPoints>
+        <infamy>1</infamy>
+        <text>{PAWN} analisou {ITEM} (Conflagração Piroclástica): {PROJECT} +{GAIN} (agora {TOTAL}).</text>
+        <nothingText>A amostra não ensinou nada: não há projeto da Forja a avançar.</nothingText>
+        <piracyText>{FACTION} soube que alguém estudou {ITEM} para chegar à patente dela. Infâmia +{INFAMY}.</piracyText>
+      </li>
+    </modExtensions>
+  </RecipeDef>
+
+</Defs>

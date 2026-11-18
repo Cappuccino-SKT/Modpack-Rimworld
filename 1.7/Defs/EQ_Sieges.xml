@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <!-- Bloco 4b: trincheiras do mod Trenches nos cercos (EcosDaQueda.EQSieges). Além dos sacos de areia e da artilharia,
+       a facção cava linhas de trincheira entre o acampamento e a colônia; o material vem nas cápsulas do cerco. -->
+
+  <EcosDaQueda.SiegeTrenchDef MayRequire="oomby.trenches">
+    <defName>EQ_Cerco_Forja</defName>
+    <label>cerco da Forja</label>
+    <description>Trincheira de concreto em duas linhas e arame farpado com passagens. Obra com nota fiscal e prazo de garantia.</description>
+    <factions>
+      <li>EQ_Faction_Forja</li>
+    </factions>
+    <trench>Tr_TrenchConcrete</trench>
+    <lines>2~2</lines>
+    <length>6~9</length>
+    <distance>5~6</distance>
+    <wire>Tr_BarbedWire</wire>
+    <wireStuff>Steel</wireStuff>
+    <wireChance>0.8</wireChance>
+  </EcosDaQueda.SiegeTrenchDef>
+
+  <EcosDaQueda.SiegeTrenchDef MayRequire="oomby.trenches">
+    <defName>EQ_Cerco_Coro</defName>
+    <label>cerco do Coro</label>
+    <description>Trincheira escorada com madeira, cavada pelos coristas mais desafinados.</description>
+    <factions>
+      <li>EQ_Faction_Coro</li>
+    </factions>
+    <trench>Tr_Trench</trench>
+    <lines>1~2</lines>
+    <length>5~8</length>
+  </EcosDaQueda.SiegeTrenchDef>
+
+  <EcosDaQueda.SiegeTrenchDef MayRequire="oomby.trenches">
+    <defName>EQ_Cerco_Helice</defName>
+    <label>cerco da Hélice</label>
+    <description>Trincheira escorada e arame farpado: cerca de propriedade intelectual, em versão física.</description>
+    <factions>
+      <li>EQ_Faction_Helice</li>
+    </factions>
+    <trench>Tr_Trench</trench>
+    <lines>1~1</lines>
+    <length>6~9</length>
+    <wire>Tr_BarbedWire</wire>
+    <wireStuff>Steel</wireStuff>
+    <wireChance>0.5</wireChance>
+  </EcosDaQueda.SiegeTrenchDef>
+
+  <EcosDaQueda.SiegeTrenchDef MayRequire="oomby.trenches">
+    <defName>EQ_Cerco_Terra</defName>
+    <label>cerco com trincheira de terra</label>
+    <description>Trincheira de terra cavada às pressas pelos voluntários de pesquisa (Silêncio) ou pelos brutos do Reino do Lodo.</description>
+    <factions>
+      <li>EQ_Faction_Silencio</li>
+      <li>EQ_Faction_ReinoDoLodo</li>
+    </factions>
+    <trench>Tr_TrenchDirt</trench>
+    <lines>1~2</lines>
+    <length>5~8</length>
+  </EcosDaQueda.SiegeTrenchDef>
+
+</Defs>

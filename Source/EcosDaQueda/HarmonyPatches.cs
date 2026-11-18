@@ -1,4 +1,4 @@
-using HarmonyLib;
+﻿using HarmonyLib;
 using RimWorld;
 using Verse;
 
@@ -19,6 +19,7 @@ namespace EcosDaQueda
             EQVehicles.Apply();
             EQSanity.Apply();
             EQResearch.Apply();
+            EQThirdPartyFixes.CleanBadRules();
         }
     }
 

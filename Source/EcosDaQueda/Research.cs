@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Reflection;
@@ -61,6 +61,8 @@ namespace EcosDaQueda
     {
         public static readonly Dictionary<ResearchProjectDef, ResearchBranchDef> BranchOf = new Dictionary<ResearchProjectDef, ResearchBranchDef>();
         public static ResearchBranchDef FreeBranch;
+        /// <summary>Aba de cada projeto antes de irmos para as abas dos ramos (livros de pesquisa sorteiam por ela).</summary>
+        public static readonly Dictionary<ResearchProjectDef, ResearchTabDef> OriginalTab = new Dictionary<ResearchProjectDef, ResearchTabDef>();
 
         private static readonly AccessTools.FieldRef<ResearchProjectDef, float> fX = AccessTools.FieldRefAccess<ResearchProjectDef, float>("x");
         private static readonly AccessTools.FieldRef<ResearchProjectDef, float> fY = AccessTools.FieldRefAccess<ResearchProjectDef, float>("y");
@@ -91,7 +93,11 @@ namespace EcosDaQueda
                 BranchOf[r] = b;
                 // Pesquisa da Anomalia (conhecimento) fica na aba própria; o resto vai para a aba do ramo.
                 if (r.knowledgeCategory == null && b.tab != null)
+                {
+                    if (r.tab != null && r.tab != b.tab)
+                        OriginalTab[r] = r.tab;
                     r.tab = b.tab;
+                }
                 r.description = (r.description ?? "").TrimEnd() + "\n\n" + BranchNote(b, r);
             }
             Layout();
@@ -356,6 +362,32 @@ namespace EcosDaQueda
             string reason = EQResearch.LockReason(def);
             if (reason != null && !outReasons.Contains(reason))
                 outReasons.Add(reason);
+        }
+    }
+
+    /// <summary>
+    /// Livros de pesquisa (texto escolar, tratado, e os da Anomaly) sorteiam projetos pelas abas vanilla ("Principais",
+    /// "Próteses"...), mas a árvore nossa tirou todos de lá: livro gerado em loot, comerciante ou recompensa ficava sem
+    /// projeto ("Research book had no valid projects") e às vezes quebrava o texto do livro. Durante a checagem do livro,
+    /// o projeto volta para a aba original. O livro continua dando progresso no projeto, como um dado antigo.
+    /// </summary>
+    [HarmonyPatch(typeof(ReadingOutcomeDoerGainResearch), "IsValid")]
+    public static class Patch_ReadingOutcomeDoerGainResearch_IsValid
+    {
+        public static void Prefix(ResearchProjectDef project, out ResearchTabDef __state)
+        {
+            __state = null;
+            if (project != null && EQResearch.OriginalTab.TryGetValue(project, out ResearchTabDef orig))
+            {
+                __state = project.tab;
+                project.tab = orig;
+            }
+        }
+
+        public static void Finalizer(ResearchProjectDef project, ResearchTabDef __state)
+        {
+            if (__state != null)
+                project.tab = __state;
         }
     }
 }
