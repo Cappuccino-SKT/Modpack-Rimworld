@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <!-- Bloco 3c: engenharia reversa. Bancada própria (arte da bancada de reciclagem do Vanilla Recycling Expanded).
+       Desmontar um item ou prédio minificado dá 15–30% do custo do projeto que o fabrica (EcosDaQueda.EQReverse);
+       patente de potência sem licença dá Infâmia. Sem os pré-requisitos, o projeto para em 99% e fica liberado na bancada. -->
+
+  <ResearchProjectDef MayRequire="VanillaExpanded.Recycling">
+    <defName>EQ_Pesquisa_EngenhariaReversa</defName>
+    <label>engenharia reversa</label>
+    <description>Ninguém sabe mais fabricar quase nada, mas todo mundo sabe quebrar. Abrir um aparelho do Velho Mundo (ou de uma potência) com cuidado, anotar o que tem dentro e torcer para não ser uma bomba.\n\nDestrava a bancada de engenharia reversa: desmontar itens dá parte da pesquisa do projeto que os fabrica, inclusive os travados.</description>
+    <baseCost>600</baseCost>
+    <techLevel>Industrial</techLevel>
+    <prerequisites>
+      <li>VRecyclingE_BasicRecycling</li>
+    </prerequisites>
+  </ResearchProjectDef>
+
+  <SpecialThingFilterDef>
+    <defName>EQ_NadaAAprender</defName>
+    <label>nada a aprender</label>
+    <description>Itens cujo projeto já está concluído (ou que não ensinam nada).</description>
+    <parentCategory>Root</parentCategory>
+    <allowedByDefault>false</allowedByDefault>
+    <configurable>false</configurable>
+    <workerClass>EcosDaQueda.SpecialThingFilterWorker_EQNothingToLearn</workerClass>
+  </SpecialThingFilterDef>
+
+  <RecipeDef>
+    <defName>EQ_EngenhariaReversa</defName>
+    <label>fazer engenharia reversa</label>
+    <description>Desmonta um item ou prédio minificado para entender como é feito. Rende de 15% a 30% do projeto que o fabrica, conforme o valor e o estado da peça; o item se perde. Patente de potência sem licença dá Infâmia com a dona.</description>
+    <jobString>Desmontando para entender.</jobString>
+    <workerClass>EcosDaQueda.RecipeWorker_EQReverseEngineering</workerClass>
+    <workAmount>2000</workAmount>
+    <workSpeedStat>ResearchSpeed</workSpeedStat>
+    <workSkill>Intellectual</workSkill>
+    <workSkillLearnFactor>0.3</workSkillLearnFactor>
+    <effectWorking>Smith</effectWorking>
+    <soundWorking>Recipe_Smith</soundWorking>
+    <ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>Weapons</li>
+            <li>Apparel</li>
+            <li>Items</li>
+            <li>Buildings</li>
+            <li>Manufactured</li>
+            <li>BodyParts</li>
+          </categories>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <categories>
+        <li>Weapons</li>
+        <li>Apparel</li>
+        <li>Items</li>
+        <li>Buildings</li>
+        <li>Manufactured</li>
+        <li>BodyParts</li>
+      </categories>
+      <disallowedSpecialFilters>
+        <li>EQ_NadaAAprender</li>
+      </disallowedSpecialFilters>
+    </fixedIngredientFilter>
+    <modExtensions>
+      <li Class="EcosDaQueda.ReverseEngineeringExtension">
+        <minFraction>0.15</minFraction>
+        <maxFraction>0.30</maxFraction>
+        <valueForMax>1500</valueForMax>
+        <minHitPointsFactor>0.5</minHitPointsFactor>
+        <capWithoutPrereqs>0.99</capWithoutPrereqs>
+        <minMarketValue>25</minMarketValue>
+        <infamy>2</infamy>
+        <text>Engenharia reversa: {ITEM} rendeu {GAIN} de {PROJECT} (agora {TOTAL}).</text>
+        <capText>{PROJECT} parou em 99%: faltam os pré-requisitos. O resto se pesquisa na bancada depois deles.</capText>
+        <piracyText>{FACTION} soube que alguém abriu {ITEM} para copiar a patente. Infâmia +{INFAMY}.</piracyText>
+      </li>
+    </modExtensions>
+  </RecipeDef>
+
+  <ThingDef ParentName="BenchBase" MayRequire="VanillaExpanded.Recycling">
+    <defName>EQ_BancadaEngenhariaReversa</defName>
+    <label>bancada de engenharia reversa</label>
+    <description>Uma bancada de reciclagem com lupa, chave de fenda e um caderno de anotações. Desmonta itens e prédios minificados para recuperar parte da pesquisa do projeto que os fabrica, inclusive tecnologia do Velho Mundo e patentes das potências. As potências chamam isso de pirataria; o Velho Mundo não reclama.</description>
+    <thingClass>Building_WorkTable</thingClass>
+    <graphicData>
+      <texPath>Things/Building/TableRecyclingHand/TableRecyclingHand</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(3.5,1.5)</drawSize>
+      <damageData>
+        <cornerTL>Damage/Corner</cornerTL>
+        <cornerTR>Damage/Corner</cornerTR>
+        <cornerBL>Damage/Corner</cornerBL>
+        <cornerBR>Damage/Corner</cornerBR>
+      </damageData>
+    </graphicData>
+    <castEdgeShadows>true</castEdgeShadows>
+    <staticSunShadowHeight>0.20</staticSunShadowHeight>
+    <costList>
+      <Steel>120</Steel>
+      <ComponentIndustrial>2</ComponentIndustrial>
+    </costList>
+    <altitudeLayer>Building</altitudeLayer>
+    <fillPercent>0.5</fillPercent>
+    <useHitPoints>True</useHitPoints>
+    <statBases>
+      <WorkToBuild>2500</WorkToBuild>
+      <MaxHitPoints>180</MaxHitPoints>
+      <Flammability>1.0</Flammability>
+      <Mass>25</Mass>
+      <Cleanliness>-2</Cleanliness>
+    </statBases>
+    <size>(3,1)</size>
+    <designationCategory>Production</designationCategory>
+    <passability>PassThroughOnly</passability>
+    <pathCost>50</pathCost>
+    <hasInteractionCell>True</hasInteractionCell>
+    <interactionCellOffset>(1,0,-1)</interactionCellOffset>
+    <surfaceType>Item</surfaceType>
+    <constructionSkillPrerequisite>4</constructionSkillPrerequisite>
+    <recipes>
+      <li>EQ_EngenhariaReversa</li>
+    </recipes>
+    <minifiedDef>MinifiedThing</minifiedDef>
+    <inspectorTabs>
+      <li>ITab_Bills</li>
+    </inspectorTabs>
+    <comps>
+      <li Class="CompProperties_AffectedByFacilities">
+        <linkableFacilities>
+          <li>ToolCabinet</li>
+        </linkableFacilities>
+      </li>
+    </comps>
+    <building>
+      <spawnedConceptLearnOpportunity>BillsTab</spawnedConceptLearnOpportunity>
+    </building>
+    <constructEffect>ConstructMetal</constructEffect>
+    <researchPrerequisites>
+      <li>EQ_Pesquisa_EngenhariaReversa</li>
+    </researchPrerequisites>
+    <placeWorkers>
+      <li>PlaceWorker_ShowFacilitiesConnections</li>
+      <li>PlaceWorker_PreventInteractionSpotOverlap</li>
+    </placeWorkers>
+  </ThingDef>
+
+</Defs>
