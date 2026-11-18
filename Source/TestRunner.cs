@@ -37,6 +37,7 @@ namespace EcosDaQueda.DebugTools
         private static readonly Stopwatch clock = Stopwatch.StartNew();
         private static float timeoutSeconds = 900f;
         private static int errorCount;
+        public static int ErrorCount => errorCount;
         private static bool inCommand;
         private static Func<bool> stopWhen;
         private static int closingErrors;
@@ -77,7 +78,9 @@ namespace EcosDaQueda.DebugTools
                 harmony.Patch(AccessTools.Method(typeof(Root_Entry), nameof(Root_Entry.Update)), postfix: new HarmonyMethod(typeof(TestRunner), nameof(Frame)));
                 harmony.Patch(AccessTools.Method(typeof(Root_Play), nameof(Root_Play.Update)), postfix: new HarmonyMethod(typeof(TestRunner), nameof(Frame)));
                 harmony.Patch(AccessTools.Method(typeof(Log), nameof(Log.Error), new[] { typeof(string) }), postfix: new HarmonyMethod(typeof(TestRunner), nameof(OnLogError)));
+                harmony.Patch(AccessTools.Method(typeof(Autosaver), nameof(Autosaver.AutosaverTick)), prefix: new HarmonyMethod(typeof(TestRunner), nameof(NoAutosave)));
                 Write("# " + commands.Count + " comandos; executor ativo" + (batch.Count > 0 ? " (lote: teste 1 de " + batch.Count + ")" : ""));
+                StartWatchdog();
                 ReportLoadErrors();
             }
             catch (Exception ex)
@@ -183,6 +186,9 @@ namespace EcosDaQueda.DebugTools
                     return;
                 }
                 framesInStage++;
+                totalFrames++;
+                if (stage == Stage.Closing && framesInStage > 300)
+                    ReleaseUndisplayedLongEvent();
                 switch (stage)
                 {
                     case Stage.Menu:
@@ -227,6 +233,74 @@ namespace EcosDaQueda.DebugTools
         {
             stage = s;
             framesInStage = 0;
+            stageClock.Restart();
+            framesAtStage = totalFrames;
+            // Cada teste do lote (e cada volta ao menu) começa com o contador do log zerado: sem isso o jogo para de
+            // registrar no Player.log depois de 10.000 mensagens e uma trava mais adiante não deixa rastro.
+            if (s == Stage.Menu || s == Stage.Closing)
+                Log.ResetMessageCount();
+        }
+
+        private static readonly System.Reflection.FieldInfo currentEventField = AccessTools.Field(typeof(LongEventHandler), "currentEvent");
+
+        /// <summary>
+        /// Sem janela (-Headless) não há OnGUI, e um evento longo síncrono com texto ("Salvando automaticamente", por
+        /// exemplo) espera ser desenhado uma vez (alreadyDisplayed) antes de rodar: ficava parado para sempre, e tudo que
+        /// vem atrás na fila também (era a trava da volta ao menu do modo lote, sempre depois de um autosave). O autosave
+        /// já fica desligado no executor (NoAutosave); isto é a reserva, só na volta ao menu e depois de 300 quadros
+        /// parado. Não usar fora disso: com o evento "exibido", ExecuteWhenFinished passa a esperar o fim do evento, e a
+        /// geração de mapas do jogo sem janela depende do comportamento antigo (o teste "bases" quebra).
+        /// </summary>
+        private static void ReleaseUndisplayedLongEvent()
+        {
+            object cur = currentEventField?.GetValue(null);
+            if (cur != null)
+                Traverse.Create(cur).Field("alreadyDisplayed").SetValue(true);
+        }
+
+        private static readonly Stopwatch stageClock = Stopwatch.StartNew();
+        private static long totalFrames, framesAtStage;
+        private static System.Threading.Thread watchdog;
+
+        /// <summary>
+        /// Vigia em outra thread: se o executor fica parado no menu ou na volta ao menu (estágios sem comando), grava a
+        /// cada 30 s no relatório quantos quadros rodaram e o evento longo atual. Serve para achar onde a volta ao menu
+        /// do modo lote trava (o run-test só vê o relatório parar). Só lê; nada aqui mexe no jogo.
+        /// </summary>
+        /// <summary>O executor não faz autosave (gasta tempo e, sem janela, o evento dele trava a fila: ver acima).</summary>
+        public static bool NoAutosave() => !Active;
+
+        private static void StartWatchdog()
+        {
+            if (watchdog != null) return;
+            watchdog = new System.Threading.Thread(() =>
+            {
+                int lastMark = 0;
+                Stage lastStage = Stage.Done;
+                while (stage != Stage.Done)
+                {
+                    System.Threading.Thread.Sleep(5000);
+                    try
+                    {
+                        Stage st = stage;
+                        if (st != lastStage) { lastStage = st; lastMark = 0; }
+                        if (st != Stage.Closing && st != Stage.Menu) continue;
+                        int secs = (int)stageClock.Elapsed.TotalSeconds;
+                        if (secs < 30 || secs / 30 == lastMark) continue;
+                        lastMark = secs / 30;
+                        string ev = "-";
+                        object cur = AccessTools.Field(typeof(LongEventHandler), "currentEvent")?.GetValue(null);
+                        if (cur != null)
+                            ev = (Traverse.Create(cur).Field("eventText").GetValue<string>() ?? "") + " / " + (Traverse.Create(cur).Field("eventTextKey").GetValue<string>() ?? "");
+                        string msg = "# vigia: estágio " + st + " há " + secs + "s; quadros no estágio " + (totalFrames - framesAtStage)
+                            + "; ProgramState " + Current.ProgramState + "; evento longo: " + ev + "; fila: " + LongEventHandler.AnyEventNowOrWaiting;
+                        Write(msg);
+                        Log.Message("[EQ Debug] " + msg);
+                    }
+                    catch (Exception ex) { Write("# vigia: falhou: " + ex.GetType().Name + ": " + ex.Message); }
+                }
+            }) { IsBackground = true, Name = "EQ test watchdog" };
+            watchdog.Start();
         }
 
         /// <summary>Igual a Root_Play.SetupForQuickTestPlay, mas aceita "newgame [ScenarioDef] [StorytellerDef]".</summary>
@@ -427,6 +501,9 @@ namespace EcosDaQueda.DebugTools
                 case "patron": return EQDebug.Patron(Arg(1));
                 case "drone": return EQDebug.Drone(Arg(1));
                 case "landmarks": return EQDebug.Landmarks();
+                case "zone": return EQWorldDebug.Zone(Arg(1));
+                case "siege": return EQWorldDebug.Siege(Fac(1), Arg(2));
+                case "asker": return EQWorldDebug.Asker(Arg(1), int.Parse(Arg(2) ?? "6"));
                 case "vehicle": return EQDebug.Vehicle(Arg(1), Arg(2));
                 case "sanity": return EQDebug.Sanity(Arg(1), Arg(2));
                 case "android": return EQDebug.Android(Arg(1) == "fab" && Arg(2) == "awake" ? "fabawake" : Arg(1));
@@ -435,6 +512,7 @@ namespace EcosDaQueda.DebugTools
                 case "convoyclaim": IncidentWorker_EQLostConvoy.ForceClaim = true; return "o próximo comboio perdido terá dono vindo buscar";
                 case "incident": return EQDebug.FireIncident(Arg(1));
                 case "letters": return EQDebug.Letters();
+                case "books": return EQDebug.Books(Arg(1));
                 case "choose": return EQDebug.Choose(string.Join(" ", a.Skip(1).Take(a.Length - 2)), int.Parse(a[a.Length - 1]));
                 case "save":
                     GameDataSaveLoader.SaveGame(Arg(1) ?? "EQTest");
@@ -467,6 +545,7 @@ namespace EcosDaQueda.DebugTools
                 WriteFooter();
                 closingErrors = errorCount;
                 Write("# encerrando o jogo do teste (lote)");
+                Log.Message("[EQ Debug] lote: voltando ao menu depois do teste " + (batchIndex + 1) + " (" + Path.GetFileName(scriptPath) + ")");
                 SetStage(Stage.Closing);
                 ticksToRun = 0;
                 stopWhen = null;

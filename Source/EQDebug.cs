@@ -1744,6 +1744,57 @@ namespace EcosDaQueda.DebugTools
 
         // ------------------------------------------------------------ cartas
 
+        private static bool HasRuleFiles(RulePackDef d)
+        {
+            object pack = HarmonyLib.AccessTools.Field(typeof(RulePackDef), "rulePack").GetValue(d);
+            return pack != null && HarmonyLib.AccessTools.Field(pack.GetType(), "rulesFiles").GetValue(pack) is List<string> f && f.Count > 0;
+        }
+
+        /// <summary>books [n]: gera n livros de cada tipo que dá pesquisa e conta os que saíram com projeto (Etapa 8).</summary>
+        public static string Books(string arg)
+        {
+            int n = arg.NullOrEmpty() ? 10 : int.Parse(arg);
+            var sb = new System.Text.StringBuilder();
+            int total = 0, empty = 0;
+            var field = HarmonyLib.AccessTools.Field(typeof(ReadingOutcomeDoerGainResearch), "values");
+            foreach (ThingDef def in DefDatabase<ThingDef>.AllDefsListForReading.Where(d => d.HasComp(typeof(CompBook))))
+            {
+                var tabs = new HashSet<string>();
+                int defEmpty = 0, made = 0;
+                for (int i = 0; i < n; i++)
+                {
+                    int errBefore = TestRunner.ErrorCount;
+                    Book book = BookUtility.MakeBook(def, ArtGenerationContext.Outsider) as Book;
+                    if (TestRunner.ErrorCount > errBefore) sb.AppendLine("  erro ao gerar " + def.defName + ": " + book?.BookComp?.Doers?.Select(d => d.GetType().Name + (d is ReadingOutcomeDoerGainResearch g ? "[" + string.Join(",", ((Dictionary<ResearchProjectDef, float>)field.GetValue(g)).Keys.Select(k => k.defName)) + "]" : "")).ToCommaList());
+                    if (book == null) continue;
+                    var doers = book.BookComp.Doers.OfType<ReadingOutcomeDoerGainResearch>().ToList();
+                    if (doers.Count == 0) { book.Destroy(); break; }
+                    made++;
+                    foreach (var d in doers)
+                    {
+                        var vals = (Dictionary<ResearchProjectDef, float>)field.GetValue(d);
+                        if (vals.Count == 0) defEmpty++;
+                        foreach (ResearchProjectDef r in vals.Keys) tabs.Add(r.tab?.defName ?? "-");
+                    }
+                    book.Destroy();
+                }
+                if (made == 0) continue;
+                total += made; empty += defEmpty;
+                sb.AppendLine("  " + def.defName + ": " + made + " livros, sem projeto " + defEmpty + "; abas atuais: " + string.Join(", ", tabs.OrderBy(x => x)));
+            }
+            var bad = DefDatabase<ResearchProjectDef>.AllDefsListForReading
+                .Where(r => r.generalRules != null && r.generalRules.Rules.Any(rule => rule == null || rule.keyword.NullOrEmpty()))
+                .Select(r => r.defName + " (" + (r.modContentPack?.PackageId ?? "?") + ")").ToList();
+            var badPacks = DefDatabase<RulePackDef>.AllDefsListForReading
+                .Where(d => !HasRuleFiles(d) && d.RulesImmediate != null && d.RulesImmediate.Any(rule => rule == null || rule.keyword.NullOrEmpty()))
+                .Select(d => d.defName + " (" + (d.modContentPack?.PackageId ?? "?") + ") " + string.Join(" / ", d.RulesImmediate.Where(rule => rule == null || rule.keyword.NullOrEmpty()).Take(3).Select(rule => rule == null ? "null" : rule.GetType().Name + ":" + rule.ToString()))).ToList();
+            sb.AppendLine("  RulePackDefs com regra sem palavra-chave: " + badPacks.Count + (badPacks.Count > 0 ? ": " + string.Join(", ", badPacks.Take(30)) + "  PROBLEMA" : ""));
+            sb.AppendLine("  regras da tradução consertadas na carga: " + EQThirdPartyFixes.Repaired + "; removidas: " + EQThirdPartyFixes.Removed.Count + (EQThirdPartyFixes.Removed.Count > 0 ? ": " + string.Join(" | ", EQThirdPartyFixes.Removed.Take(12)) : ""));
+            sb.AppendLine("  projetos com regra de texto sem palavra-chave: " + bad.Count + (bad.Count > 0 ? ": " + string.Join(", ", bad.Take(30)) + "  PROBLEMA" : ""));
+            sb.Append("  livros de pesquisa: " + total + ", sem projeto: " + empty + (empty > 0 ? "  PROBLEMA" : ""));
+            return sb.ToString();
+        }
+
         public static string Letters()
         {
             var sb = new StringBuilder();
