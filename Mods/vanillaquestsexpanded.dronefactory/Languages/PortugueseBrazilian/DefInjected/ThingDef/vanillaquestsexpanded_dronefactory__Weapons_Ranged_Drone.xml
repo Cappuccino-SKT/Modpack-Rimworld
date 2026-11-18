@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <!-- EN: stubgun -->
+  <VQE_Gun_Stubgun.label>pistola curta</VQE_Gun_Stubgun.label>
+  <!-- EN: A compact medium range automatic gun designed to be mounted on a battle drone. -->
+  <VQE_Gun_Stubgun.description>Uma arma automática compacta de médio alcance, feita para ser montada num drone de batalha.</VQE_Gun_Stubgun.description>
+  <!-- EN: barrel -->
+  <VQE_Gun_Stubgun.tools.barrel.label>cano</VQE_Gun_Stubgun.tools.barrel.label>
+  <!-- EN: muzzle -->
+  <VQE_Gun_Stubgun.tools.muzzle.label>boca</VQE_Gun_Stubgun.tools.muzzle.label>
+  <!-- EN: stubgun -->
+  <VQE_Gun_Stubgun.verbs.Verb_ShootCE.label>pistola curta</VQE_Gun_Stubgun.verbs.Verb_ShootCE.label>
+  <!-- EN: stubgun bullet -->
+  <VQE_Bullet_Stubgun.label>bala de pistola curta</VQE_Bullet_Stubgun.label>
+  <!-- EN: drone turret -->
+  <VQE_Gun_DroneTurret.label>torreta de drone</VQE_Gun_DroneTurret.label>
+  <!-- EN: A refined turret with military-grade stabilization, targeting routines, and hardened casing designed to be mounted on a battle drone. -->
+  <VQE_Gun_DroneTurret.description>Uma torreta refinada com estabilização militar, rotinas de mira e carcaça endurecida, feita para ser montada num drone de batalha.</VQE_Gun_DroneTurret.description>
+  <!-- EN: barrel -->
+  <VQE_Gun_DroneTurret.tools.barrel.label>cano</VQE_Gun_DroneTurret.tools.barrel.label>
+  <!-- EN: muzzle -->
+  <VQE_Gun_DroneTurret.tools.muzzle.label>boca</VQE_Gun_DroneTurret.tools.muzzle.label>
+  <!-- EN: drone turret -->
+  <VQE_Gun_DroneTurret.verbs.Verb_ShootCE.label>torreta de drone</VQE_Gun_DroneTurret.verbs.Verb_ShootCE.label>
+  <!-- EN: drone turret bullet -->
+  <VQE_Bullet_DroneTurret.label>bala de torreta de drone</VQE_Bullet_DroneTurret.label>
+  <!-- EN: rattlegun -->
+  <VQE_Gun_Rattlegun.label>matraca</VQE_Gun_Rattlegun.label>
+  <!-- EN: A drone-mounted light machine gun, designed for heavy suppression but with low accuracy. -->
+  <VQE_Gun_Rattlegun.description>Uma metralhadora leve montada em drone, feita para supressão pesada, mas com pouca precisão.</VQE_Gun_Rattlegun.description>
+  <!-- EN: barrel -->
+  <VQE_Gun_Rattlegun.tools.barrel.label>cano</VQE_Gun_Rattlegun.tools.barrel.label>
+  <!-- EN: muzzle -->
+  <VQE_Gun_Rattlegun.tools.muzzle.label>boca</VQE_Gun_Rattlegun.tools.muzzle.label>
+  <!-- EN: rattlegun -->
+  <VQE_Gun_Rattlegun.verbs.Verb_ShootCE.label>matraca</VQE_Gun_Rattlegun.verbs.Verb_ShootCE.label>
+  <!-- EN: rattlegun bullet -->
+  <VQE_Bullet_Rattlegun.label>bala de matraca</VQE_Bullet_Rattlegun.label>
+  <!-- EN: lance -->
+  <VQE_Gun_Lance.label>lança</VQE_Gun_Lance.label>
+  <!-- EN: A single-shot sniper weapon based on an ancient precision rifle design, featuring exceptional range and accuracy at the cost of poor close-range performance. -->
+  <VQE_Gun_Lance.description>Uma arma de precisão de tiro único baseada num antigo projeto de fuzil de precisão, com alcance e precisão excepcionais, ao custo de um desempenho fraco de perto.</VQE_Gun_Lance.description>
+  <!-- EN: barrel -->
+  <VQE_Gun_Lance.tools.barrel.label>cano</VQE_Gun_Lance.tools.barrel.label>
+  <!-- EN: muzzle -->
+  <VQE_Gun_Lance.tools.muzzle.label>boca</VQE_Gun_Lance.tools.muzzle.label>
+  <!-- EN: lance -->
+  <VQE_Gun_Lance.verbs.Verb_ShootCE.label>lança</VQE_Gun_Lance.verbs.Verb_ShootCE.label>
+  <!-- EN: lance bullet -->
+  <VQE_Bullet_Lance.label>bala de lança</VQE_Bullet_Lance.label>
+  <!-- EN: stingray cannon -->
+  <VQE_Gun_StingrayCannon.label>canhão arraia</VQE_Gun_StingrayCannon.label>
+  <!-- EN: A single-shot sniper weapon based on an ancient precision rifle design, featuring exceptional range and accuracy at the cost of poor close-range performance. -->
+  <VQE_Gun_StingrayCannon.description>Um canhão incendiário de curto alcance que dispara uma rajada de gel superaquecido, causando dano de fogo em área.</VQE_Gun_StingrayCannon.description>
+  <!-- EN: barrel -->
+  <VQE_Gun_StingrayCannon.tools.barrel.label>cano</VQE_Gun_StingrayCannon.tools.barrel.label>
+  <!-- EN: muzzle -->
+  <VQE_Gun_StingrayCannon.tools.muzzle.label>boca</VQE_Gun_StingrayCannon.tools.muzzle.label>
+  <!-- EN: stingray cannon -->
+  <VQE_Gun_StingrayCannon.verbs.Verb_ShootCE.label>canhão arraia</VQE_Gun_StingrayCannon.verbs.Verb_ShootCE.label>
+  <!-- EN: stingray cannon projectile -->
+  <VQE_Bullet_StingrayCannon.label>projétil de canhão arraia</VQE_Bullet_StingrayCannon.label>
+</LanguageData>

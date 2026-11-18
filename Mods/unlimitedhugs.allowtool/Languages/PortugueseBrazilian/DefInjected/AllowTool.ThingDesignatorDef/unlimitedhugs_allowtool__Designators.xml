@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <!-- EN: Allow selection -->
+  <AllowDesignator.label>Permitir seleção</AllowDesignator.label>
+  <!-- EN: Unforbid all items in the selected area.\nClick and drag over an area to use. -->
+  <AllowDesignator.description>Desproíbe todos os itens da área selecionada.\nClique e arraste sobre uma área para usar.</AllowDesignator.description>
+  <!-- EN: Forbid selection -->
+  <ForbidDesignator.label>Proibir seleção</ForbidDesignator.label>
+  <!-- EN: Forbid all items in the selected area.\nClick and drag over an area to use. -->
+  <ForbidDesignator.description>Proíbe todos os itens da área selecionada.\nClique e arraste sobre uma área para usar.</ForbidDesignator.description>
+  <!-- EN: Allow everything -->
+  <AllowAllDesignator.label>Permitir tudo</AllowAllDesignator.label>
+  <!-- EN: Unforbids all forbidden items on the map.\nClick to activate.\n&lt;b&gt;Hold Ctrl/Option&lt;/b&gt; to include buildings.\n&lt;b&gt;Hold Shift&lt;/b&gt; to include skeletons and non-fresh corpses. -->
+  <AllowAllDesignator.description>Desproíbe todos os itens proibidos do mapa.\nClique para ativar.\n&lt;b&gt;Segure Ctrl/Option&lt;/b&gt; para incluir prédios.\n&lt;b&gt;Segure Shift&lt;/b&gt; para incluir esqueletos e cadáveres não frescos.</AllowAllDesignator.description>
+  <!-- EN: Select similar -->
+  <SelectSimilarDesignator.label>Selecionar parecidos</SelectSimilarDesignator.label>
+  <!-- EN: Selects only things similar to those already selected.\n&lt;b&gt;Hold Shift&lt;/b&gt; to pick additional things.\n&lt;b&gt;Hold Alt&lt;/b&gt; to ignore selection limits. -->
+  <SelectSimilarDesignator.description>Seleciona só coisas parecidas com as já selecionadas.\n&lt;b&gt;Segure Shift&lt;/b&gt; para pegar mais coisas.\n&lt;b&gt;Segure Alt&lt;/b&gt; para ignorar os limites de seleção.</SelectSimilarDesignator.description>
+  <!-- EN: Haul urgently -->
+  <HaulUrgentlyDesignator.label>Carregar com urgência</HaulUrgentlyDesignator.label>
+  <!-- EN: Mark things to be hauled as soon as possible. Colonists will delay other work until hauling is complete.\nConfigurable in the Work tab.\n&lt;b&gt;Hold Shift&lt;/b&gt; to interrupt current colonist work. -->
+  <HaulUrgentlyDesignator.description>Marca coisas para serem carregadas o quanto antes. Os colonos adiam outros trabalhos até terminar o transporte.\nConfigurável na aba Trabalho.\n&lt;b&gt;Segure Shift&lt;/b&gt; para interromper o trabalho atual dos colonos.</HaulUrgentlyDesignator.description>
+  <!-- EN: Finish off -->
+  <FinishOffDesignator.label>Dar o golpe final</FinishOffDesignator.label>
+  <!-- EN: Quickly and painlessly kill downed creatures.\n&lt;b&gt;Hold Shift&lt;/b&gt; to include colonists and allies. -->
+  <FinishOffDesignator.description>Mata de forma rápida e indolor criaturas caídas.\n&lt;b&gt;Segure Shift&lt;/b&gt; para incluir colonos e aliados.</FinishOffDesignator.description>
+  <!-- EN: Harvest fully grown -->
+  <HarvestFullyGrownDesignator.label>Colher maduros</HarvestFullyGrownDesignator.label>
+  <!-- EN: Orders the harvesting or chopping crops and trees that are sufficiently grown to yield their maximum amount of resources when gathered.\n&lt;b&gt;Hold Shift&lt;/b&gt; to include only plants.\n&lt;b&gt;Hold Ctrl/Option&lt;/b&gt; to include only trees. -->
+  <HarvestFullyGrownDesignator.description>Manda colher ou cortar plantações e árvores crescidas o bastante para render o máximo de recursos.\n&lt;b&gt;Segure Shift&lt;/b&gt; para incluir só plantas.\n&lt;b&gt;Segure Ctrl/Option&lt;/b&gt; para incluir só árvores.</HarvestFullyGrownDesignator.description>
+  <!-- EN: Strip mine -->
+  <StripMineDesignator.label>Mineração em faixas</StripMineDesignator.label>
+  <!-- EN: Lays out mine orders in a grid to maximize the chance to find hidden ores.\n&lt;b&gt;Hold Shift&lt;/b&gt; to show settings window or designate using current settings. -->
+  <StripMineDesignator.description>Marca ordens de mineração em grade para aumentar a chance de achar minérios escondidos.\n&lt;b&gt;Segure Shift&lt;/b&gt; para mostrar a janela de opções ou marcar com as opções atuais.</StripMineDesignator.description>
+</LanguageData>

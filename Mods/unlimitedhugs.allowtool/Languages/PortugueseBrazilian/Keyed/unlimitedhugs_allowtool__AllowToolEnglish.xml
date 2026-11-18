@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <!-- EN: Allowed {0} items. -->
+  <Allow_area_success>{0} itens permitidos.</Allow_area_success>
+  <!-- EN: No forbidden items found. -->
+  <Allow_area_failure>Nenhum item proibido encontrado.</Allow_area_failure>
+  <!-- EN: Forbidden {0} items. -->
+  <Forbid_area_success>{0} itens proibidos.</Forbid_area_success>
+  <!-- EN: No forbiddable items found. -->
+  <Forbid_area_failure>Nenhum item que possa ser proibido encontrado.</Forbid_area_failure>
+  <!-- EN: Allowed {0} things across the map. -->
+  <Allow_all_success>{0} coisas permitidas no mapa.</Allow_all_success>
+  <!-- EN: No forbidden things found. -->
+  <Allow_all_failure>Nenhuma coisa proibida encontrada.</Allow_all_failure>
+  <!-- EN: Selected {0} {1} across the map. -->
+  <Mass_Select_success>{0} {1} selecionados no mapa.</Mass_Select_success>
+  <!-- EN: Show tool: {0} -->
+  <setting_showTool_label>Mostrar ferramenta: {0}</setting_showTool_label>
+  <!-- EN: When enabled, this designator tool will appear in the Architect menu. -->
+  <setting_showTool_desc>Ligado, esta ferramenta aparece no menu Arquiteto.</setting_showTool_desc>
+  <!-- EN: Use global hotkeys -->
+  <setting_globalHotkeys_label>Usar atalhos globais</setting_globalHotkeys_label>
+  <!-- EN: When enabled, tools can be selected from anywhere by pressing the assigned key.\nSee Options &gt; Keyboard Configuration to customize the keys. -->
+  <setting_globalHotkeys_desc>Ligado, as ferramentas podem ser escolhidas de qualquer lugar apertando a tecla definida.\nVeja Opções &gt; Configuração do teclado para mudar as teclas.</setting_globalHotkeys_desc>
+  <!-- EN: Thing selection limit -->
+  <setting_selectionLimit_label>Limite de seleção</setting_selectionLimit_label>
+  <!-- EN: Limits the number of things that can be selected simultaneously by the "Select similar" tool. Setting this too high may lag out the game while selecting things. -->
+  <setting_selectionLimit_desc>Limita quantas coisas a ferramenta "Selecionar parecidos" pode selecionar de uma vez. Um valor alto demais pode travar o jogo durante a seleção.</setting_selectionLimit_desc>
+  <!-- EN: Context menu watermark -->
+  <setting_contextWatermark_label>Marca d'água do menu de contexto</setting_contextWatermark_label>
+  <!-- EN: Displays an Allow Tool watermark in tool context menus when enabled. -->
+  <setting_contextWatermark_desc>Ligado, mostra uma marca d'água do Allow Tool nos menus de contexto das ferramentas.</setting_contextWatermark_desc>
+  <!-- EN: Right click icon on tools -->
+  <setting_contextOverlay_label>Ícone de clique direito nas ferramentas</setting_contextOverlay_label>
+  <!-- EN: When enabled, displays a small icon on designator tools that have a context menu. -->
+  <setting_contextOverlay_desc>Ligado, mostra um pequeno ícone nas ferramentas que têm menu de contexto.</setting_contextOverlay_desc>
+  <!-- EN: Extended "Context action" hotkey -->
+  <setting_extendedContextHotkey_label>Atalho "Ação de contexto" estendido</setting_extendedContextHotkey_label>
+  <!-- EN: When no tool is selected, the "Context action" hotkey will activate the context action on the first visible tool when items are selected. -->
+  <setting_extendedContextHotkey_desc>Sem ferramenta escolhida, o atalho "Ação de contexto" ativa a ação de contexto da primeira ferramenta visível quando há itens selecionados.</setting_extendedContextHotkey_desc>
+  <!-- EN: Pick tool from selected items -->
+  <setting_reverseDesignatorPick_label>Pegar a ferramenta a partir dos itens selecionados</setting_reverseDesignatorPick_label>
+  <!-- EN: Holding the Shift key and clicking on a tool while having items selected will pick that tool up instead of activating it on the items. -->
+  <setting_reverseDesignatorPick_desc>Segurar Shift e clicar numa ferramenta com itens selecionados pega a ferramenta em vez de aplicá-la nos itens.</setting_reverseDesignatorPick_desc>
+  <!-- EN: "Finish off" unforbids drops -->
+  <setting_finishOffUnforbids_label>"Dar o golpe final" desproíbe o que cai</setting_finishOffUnforbids_label>
+  <!-- EN: When enabled, bodies and items dropped when finishing off creatures will be automatically allowed for hauling. -->
+  <setting_finishOffUnforbids_desc>Ligado, os corpos e itens que caem ao dar o golpe final ficam permitidos para transporte automaticamente.</setting_finishOffUnforbids_desc>
+  <!-- EN: Enable: {0} -->
+  <setting_providerPrefix>Ligar: {0}</setting_providerPrefix>
+  <!-- EN: When enabled, adds a right-click menu to the tool that allows it to affect the entire map. -->
+  <setting_provider_desc>Ligado, adiciona à ferramenta um menu de clique direito que permite afetar o mapa inteiro.</setting_provider_desc>
+  <!-- EN: ▼ Show settings ▼ -->
+  <setting_showToggles_btn>▼ Mostrar opções ▼</setting_showToggles_btn>
+  <!-- EN: Enable or disable tools -->
+  <setting_showToolToggles_label>Ligar ou desligar ferramentas</setting_showToolToggles_label>
+  <!-- EN: Enable or disable context menus -->
+  <setting_showProviderToggles_label>Ligar ou desligar menus de contexto</setting_showProviderToggles_label>
+  <!-- EN: Tools on selected things -->
+  <setting_showReverseToggles_label>Ferramentas nas coisas selecionadas</setting_showReverseToggles_label>
+  <!-- EN: When enabled, shows this tool when supported things are selected. -->
+  <setting_reverseDesignator_desc>Ligado, mostra esta ferramenta quando há coisas compatíveis selecionadas.</setting_reverseDesignator_desc>
+  <!-- EN: Show "Haul+" work type -->
+  <setting_haulUrgentlyWorktype_label>Mostrar o trabalho "Carregar+"</setting_haulUrgentlyWorktype_label>
+  <!-- EN: When enabled, shows the work type for the "Haul urgently" tool in the Work tab.\nThe game must be restarted for this setting to take effect. -->
+  <setting_haulUrgentlyWorktype_desc>Ligado, mostra na aba Trabalho o tipo de trabalho da ferramenta "Carregar com urgência".\nÉ preciso reiniciar o jogo para valer.</setting_haulUrgentlyWorktype_desc>
+  <!-- EN: Show "Finish off" work type -->
+  <setting_finishOffWorktype_label>Mostrar o trabalho "Golpe final"</setting_finishOffWorktype_label>
+  <!-- EN: When enabled, shows the work type for the "Finish off" tool in the Work tab.\nThe game must be restarted for this setting to take effect. -->
+  <setting_finishOffWorktype_desc>Ligado, mostra na aba Trabalho o tipo de trabalho da ferramenta "Dar o golpe final".\nÉ preciso reiniciar o jogo para valer.</setting_finishOffWorktype_desc>
+  <!-- EN: "Finish off" skill requirement -->
+  <setting_finishOffSkill_label>Habilidade exigida para "Dar o golpe final"</setting_finishOffSkill_label>
+  <!-- EN: The "Finish off" tool will require a pawn with a sufficiently high melee skill to use. -->
+  <setting_finishOffSkill_desc>A ferramenta "Dar o golpe final" exige alguém com habilidade corpo a corpo alta o bastante.</setting_finishOffSkill_desc>
+  <!-- EN: Replace Forbid/Allow icons -->
+  <setting_replaceIcons_label>Trocar ícones de Proibir/Permitir</setting_replaceIcons_label>
+  <!-- EN: Replace the icons for the Forbid and Allow tools with clearer ones. -->
+  <setting_replaceIcons_desc>Troca os ícones das ferramentas Proibir e Permitir por outros mais claros.</setting_replaceIcons_desc>
+  <!-- EN: Drafted hunting tool -->
+  <setting_partyHunt_label>Ferramenta de caça convocada</setting_partyHunt_label>
+  <!-- EN: When enabled, shows the "Drafted hunt" button for drafted colonists. -->
+  <setting_partyHunt_desc>Ligado, mostra o botão "Caça convocada" para colonos convocados.</setting_partyHunt_desc>
+  <!-- EN: Finish off downed animals -->
+  <setting_partyHuntFinish_label>Dar o golpe final em animais caídos</setting_partyHuntFinish_label>
+  <!-- EN: Hunt-designated animals only -->
+  <setting_partyHuntDesignated_label>Só animais marcados para caça</setting_partyHuntDesignated_label>
+  <!-- EN: Unforbid prey -->
+  <setting_partyHuntUnforbid_label>Desproibir a presa</setting_partyHuntUnforbid_label>
+  <!-- EN: Storage space alert -->
+  <setting_storageSpaceAlert_label>Alerta de espaço de armazenamento</setting_storageSpaceAlert_label>
+  <!-- EN: You will be notified with an alert message when there are things marked to be hauled urgently, but no place to store them. -->
+  <setting_storageSpaceAlert_desc>Avisa com um alerta quando há coisas marcadas para carregar com urgência, mas nenhum lugar para guardá-las.</setting_storageSpaceAlert_desc>
+  <!-- EN: Click to pick something -->
+  <SelectSimilar_cursor_needConstraint>Clique para escolher algo</SelectSimilar_cursor_needConstraint>
+  <!-- EN: Drag to select only: {0} -->
+  <SelectSimilar_cursor_nowSelecting>Arraste para selecionar só: {0}</SelectSimilar_cursor_nowSelecting>
+  <!-- EN: Selection limit reached -->
+  <SelectSimilar_cursor_limit>Limite de seleção atingido</SelectSimilar_cursor_limit>
+  <!-- EN: ({0} more) -->
+  <SelectSimilar_numMoreTypes>(mais {0})</SelectSimilar_numMoreTypes>
+  <!-- EN: {0} items will be hauled urgently. -->
+  <Haul_urgently_success>{0} itens serão carregados com urgência.</Haul_urgently_success>
+  <!-- EN: Found no items that require hauling. -->
+  <Haul_urgently_failure>Nenhum item precisando ser carregado.</Haul_urgently_failure>
+  <!-- EN: {0} fully grown plants marked for harvesting. -->
+  <Harvest_fully_grown_success>{0} plantas maduras marcadas para colheita.</Harvest_fully_grown_success>
+  <!-- EN: No new fully grown plants or trees found. -->
+  <Harvest_fully_grown_failure>Nenhuma planta ou árvore madura nova encontrada.</Harvest_fully_grown_failure>
+  <!-- EN: Horizontal spacing -->
+  <StripMine_win_horizontalSpacing>Espaçamento horizontal</StripMine_win_horizontalSpacing>
+  <!-- EN: Vertical spacing -->
+  <StripMine_win_verticalSpacing>Espaçamento vertical</StripMine_win_verticalSpacing>
+  <!-- EN: Show this window -->
+  <StripMine_win_showWindow>Mostrar esta janela</StripMine_win_showWindow>
+  <!-- EN: Disable to automatically use these settings next time.\nHold Shift to show this window again. -->
+  <StripMine_win_showWindow_tip>Desligue para usar estas opções automaticamente na próxima vez.\nSegure Shift para mostrar esta janela de novo.</StripMine_win_showWindow_tip>
+  <!-- EN: Variable grid offset -->
+  <StripMine_win_variableOffset>Deslocamento variável da grade</StripMine_win_variableOffset>
+  <!-- EN: When enabled, the grid will extend from the starting point of the selection. Otherwise, grid lines will always pass through the same cells, regardless of where the selection started. -->
+  <StripMine_win_variableOffset_tip>Ligado, a grade parte do ponto inicial da seleção. Desligado, as linhas da grade passam sempre pelas mesmas células, seja onde for que a seleção começou.</StripMine_win_variableOffset_tip>
+  <!-- EN: Apply immediately -->
+  <StripMine_cursor_autoApply>Aplicar na hora</StripMine_cursor_autoApply>
+  <!-- EN: No storage space -->
+  <Alert_noStorage_label>Sem espaço de armazenamento</Alert_noStorage_label>
+  <!-- EN: Things marked for urgent hauling have no place to be stored:\n{0}\n\nCancel the designation or free some storage space.\nCan be disabled in Options &gt; Mod Settings. -->
+  <Alert_noStorage_desc>Coisas marcadas para carregar com urgência não têm onde ser guardadas:\n{0}\n\nCancele a marcação ou libere espaço de armazenamento.\nPode ser desligado em Opções &gt; Configurações dos mods.</Alert_noStorage_desc>
+  <!-- EN: Requires a colonist with a melee skill of {0} or higher to use. -->
+  <Finish_off_skillRequired>Exige um colono com habilidade corpo a corpo {0} ou mais.</Finish_off_skillRequired>
+  <!-- EN: melee skill {0} required -->
+  <Finish_off_pawnSkillRequired>exige corpo a corpo {0}</Finish_off_pawnSkillRequired>
+  <!-- EN: {0} targets have been marked. -->
+  <Finish_off_success>{0} alvos marcados.</Finish_off_success>
+  <!-- EN: No valid downed creatures found. -->
+  <Finish_off_failure>Nenhuma criatura caída válida encontrada.</Finish_off_failure>
+  <!-- EN: Finish off {0} -->
+  <Finish_off_floatMenu>Dar o golpe final em {0}</Finish_off_floatMenu>
+  <!-- EN: friendly, hold Shift -->
+  <Finish_off_floatMenu_reason_friendly>amigável, segure Shift</Finish_off_floatMenu_reason_friendly>
+  <!-- EN: Select similar things on map -->
+  <Designator_context_similar>Selecionar coisas parecidas no mapa</Designator_context_similar>
+  <!-- EN: Selected {0} similar things on the map. -->
+  <Designator_context_similar_succ>{0} coisas parecidas selecionadas no mapa.</Designator_context_similar_succ>
+  <!-- EN: Selected {0} closest similar things out of {1} on the map. -->
+  <Designator_context_similar_part>{0} coisas parecidas mais próximas selecionadas, de {1} no mapa.</Designator_context_similar_part>
+  <!-- EN: Something must be selected to select similar things. -->
+  <Designator_context_similar_fail>Selecione algo para selecionar coisas parecidas.</Designator_context_similar_fail>
+  <!-- EN: Select similar things in visible area -->
+  <Designator_context_similar_visible>Selecionar coisas parecidas na área visível</Designator_context_similar_visible>
+  <!-- EN: Selected {0} visible similar things. -->
+  <Designator_context_similar_visible_succ>{0} coisas parecidas visíveis selecionadas.</Designator_context_similar_visible_succ>
+  <!-- EN: Selected {0} closest visible similar things out of {1}. -->
+  <Designator_context_similar_visible_part>{0} coisas parecidas visíveis mais próximas selecionadas, de {1}.</Designator_context_similar_visible_part>
+  <!-- EN: Select similar things in home area -->
+  <Designator_context_similar_home>Selecionar coisas parecidas na área de casa</Designator_context_similar_home>
+  <!-- EN: Selected {0} similar things in home area. -->
+  <Designator_context_similar_home_succ>{0} coisas parecidas selecionadas na área de casa.</Designator_context_similar_home_succ>
+  <!-- EN: Selected {0} closest similar things out of {1} in home area. -->
+  <Designator_context_similar_home_part>{0} coisas parecidas mais próximas selecionadas, de {1} na área de casa.</Designator_context_similar_home_part>
+  <!-- EN: Haul all items urgently -->
+  <Designator_context_urgent>Carregar todos os itens com urgência</Designator_context_urgent>
+  <!-- EN: Haul visible items urgently -->
+  <Designator_context_urgent_visible>Carregar itens visíveis com urgência</Designator_context_urgent_visible>
+  <!-- EN: Haul all map items urgently -->
+  <Designator_context_urgent_all>Carregar todos os itens do mapa com urgência</Designator_context_urgent_all>
+  <!-- EN: {0} items marked for urgent hauling. -->
+  <Designator_context_urgent_succ>{0} itens marcados para carregar com urgência.</Designator_context_urgent_succ>
+  <!-- EN: {0} visible items marked for urgent hauling. -->
+  <Designator_context_urgent_visible_succ>{0} itens visíveis marcados para carregar com urgência.</Designator_context_urgent_visible_succ>
+  <!-- EN: Found no new items to haul. -->
+  <Designator_context_urgent_fail>Nenhum item novo para carregar.</Designator_context_urgent_fail>
+  <!-- EN: Strip all enemies -->
+  <Designator_context_strip>Despir todos os inimigos</Designator_context_strip>
+  <!-- EN: {0} bodies designated for stripping. -->
+  <Designator_context_strip_succ>{0} corpos marcados para despir.</Designator_context_strip_succ>
+  <!-- EN: Found no bodies to strip. -->
+  <Designator_context_strip_fail>Nenhum corpo para despir.</Designator_context_strip_fail>
+  <!-- EN: Harvest all plants -->
+  <Designator_context_harvest>Colher todas as plantas</Designator_context_harvest>
+  <!-- EN: Harvest plants in home area -->
+  <Designator_context_harvest_home>Colher plantas na área de casa</Designator_context_harvest_home>
+  <!-- EN: {0} plants designated for harvesting. -->
+  <Designator_context_harvest_succ>{0} plantas marcadas para colheita.</Designator_context_harvest_succ>
+  <!-- EN: Found no new plants to harvest. -->
+  <Designator_context_harvest_fail>Nenhuma planta nova para colher.</Designator_context_harvest_fail>
+  <!-- EN: Haul everything -->
+  <Designator_context_haul>Carregar tudo</Designator_context_haul>
+  <!-- EN: Designated {0} new things to haul. -->
+  <Designator_context_haul_succ>{0} coisas novas marcadas para carregar.</Designator_context_haul_succ>
+  <!-- EN: Found no new things to haul. -->
+  <Designator_context_haul_fail>Nenhuma coisa nova para carregar.</Designator_context_haul_fail>
+  <!-- EN: Chop all wood -->
+  <Designator_context_chop>Cortar toda a madeira</Designator_context_chop>
+  <!-- EN: Chop all wood in home area -->
+  <Designator_context_chop_home>Cortar toda a madeira na área de casa</Designator_context_chop_home>
+  <!-- EN: Designated {0} new trees to chop. -->
+  <Designator_context_chop_succ>{0} árvores novas marcadas para cortar.</Designator_context_chop_succ>
+  <!-- EN: No new harvestable trees found in the area. -->
+  <Designator_context_chop_fail>Nenhuma árvore nova para cortar na área.</Designator_context_chop_fail>
+  <!-- EN: Hunt all animals -->
+  <Designator_context_hunt>Caçar todos os animais</Designator_context_hunt>
+  <!-- EN: Designated {0} new animals to hunt. -->
+  <Designator_context_hunt_succ>{0} animais novos marcados para caça.</Designator_context_hunt_succ>
+  <!-- EN: No new huntable animals are in the area right now. -->
+  <Designator_context_hunt_fail>Nenhum animal novo para caçar na área agora.</Designator_context_hunt_fail>
+  <!-- EN: Mine connected ores -->
+  <Designator_context_mine>Minerar minérios ligados</Designator_context_mine>
+  <!-- EN: Designated {0} additional ore tiles to mine. -->
+  <Designator_context_mine_succ>{0} quadrados de minério a mais marcados para mineração.</Designator_context_mine_succ>
+  <!-- EN: Designate one or more ore tiles for mining to use this command. -->
+  <Designator_context_mine_fail>Marque um ou mais quadrados de minério para mineração para usar este comando.</Designator_context_mine_fail>
+  <!-- EN: Select "Strip mine" tool -->
+  <Designator_context_mine_selectStripMine>Escolher a ferramenta "Mineração em faixas"</Designator_context_mine_selectStripMine>
+  <!-- EN: Cancel all building blueprints -->
+  <Designator_context_cancel_build>Cancelar todas as plantas de construção</Designator_context_cancel_build>
+  <!-- EN: {0} building blueprints were removed. -->
+  <Designator_context_cancel_build_succ>{0} plantas de construção removidas.</Designator_context_cancel_build_succ>
+  <!-- EN: Found no blueprints to remove. -->
+  <Designator_context_cancel_build_fail>Nenhuma planta para remover.</Designator_context_cancel_build_fail>
+  <!-- EN: Cancel all orders on map -->
+  <Designator_context_cancel_desig>Cancelar todas as ordens do mapa</Designator_context_cancel_desig>
+  <!-- EN: Cleared {0} orders from things and {1} from terrain. -->
+  <Designator_context_cancel_desig_msg>{0} ordens removidas de coisas e {1} do terreno.</Designator_context_cancel_desig_msg>
+  <!-- EN: Cancel all of this type -->
+  <Designator_context_cancel_selected>Cancelar todas deste tipo</Designator_context_cancel_selected>
+  <!-- EN: Canceled {0} orders on {1} items. -->
+  <Designator_context_cancel_selected_succ>{0} ordens canceladas em {1} itens.</Designator_context_cancel_selected_succ>
+  <!-- EN: Select something with an order to cancel all orders of that type. -->
+  <Designator_context_cancel_selected_fail>Selecione algo com uma ordem para cancelar todas as ordens desse tipo.</Designator_context_cancel_selected_fail>
+  <!-- EN: Finish off all downed creatures -->
+  <Designator_context_finish>Dar o golpe final em todas as criaturas caídas</Designator_context_finish>
+  <!-- EN: {0} creatures will be finished off. -->
+  <Designator_context_finish_succ>{0} criaturas vão levar o golpe final.</Designator_context_finish_succ>
+  <!-- EN: {0} creatures will be finished off, including friendlies. -->
+  <Designator_context_finish_allies>{0} criaturas vão levar o golpe final, incluindo amigáveis.</Designator_context_finish_allies>
+  <!-- EN: No valid downed targets have been found. -->
+  <Designator_context_finish_fail>Nenhum alvo caído válido encontrado.</Designator_context_finish_fail>
+  <!-- EN: Cut all blighted plants -->
+  <Designator_context_cut>Cortar todas as plantas com praga</Designator_context_cut>
+  <!-- EN: Designated {0} blighted plants to cut. -->
+  <Designator_context_cut_succ>{0} plantas com praga marcadas para cortar.</Designator_context_cut_succ>
+  <!-- EN: Found no new blighted plants to cut. -->
+  <Designator_context_cut_fail>Nenhuma planta nova com praga para cortar.</Designator_context_cut_fail>
+  <!-- EN: Harvest fully grown plants on map -->
+  <Designator_context_harvest_fullgrown>Colher plantas maduras no mapa</Designator_context_harvest_fullgrown>
+  <!-- EN: Harvest fully grown plants in home area  -->
+  <Designator_context_harvest_home_fullgrown>Colher plantas maduras na área de casa</Designator_context_harvest_home_fullgrown>
+  <!-- EN: {0} fully grown plants designated for harvesting. -->
+  <Designator_context_harvest_fullgrown_succ>{0} plantas maduras marcadas para colheita.</Designator_context_harvest_fullgrown_succ>
+  <!-- EN: Found no new fully grown plants to harvest. -->
+  <Designator_context_harvest_fullgrown_fail>Nenhuma planta madura nova para colher.</Designator_context_harvest_fullgrown_fail>
+  <!-- EN: Allow all visible things -->
+  <Designator_context_allow_visible>Permitir todas as coisas visíveis</Designator_context_allow_visible>
+  <!-- EN: Allowed {0} visible things. -->
+  <Designator_context_allow_visible_succ>{0} coisas visíveis permitidas.</Designator_context_allow_visible_succ>
+  <!-- EN: Found no visible forbidden things to allow. -->
+  <Designator_context_allow_visible_fail>Nenhuma coisa proibida visível para permitir.</Designator_context_allow_visible_fail>
+  <!-- EN: Forbid all visible things -->
+  <Designator_context_forbid_visible>Proibir todas as coisas visíveis</Designator_context_forbid_visible>
+  <!-- EN: {0} visible things have been forbidden. -->
+  <Designator_context_forbid_visible_succ>{0} coisas visíveis foram proibidas.</Designator_context_forbid_visible_succ>
+  <!-- EN: Found no visible allowed things to forbid. -->
+  <Designator_context_forbid_visible_fail>Nenhuma coisa permitida visível para proibir.</Designator_context_forbid_visible_fail>
+  <!-- EN: Drafted hunt -->
+  <PartyHuntToggle_label>Caça convocada</PartyHuntToggle_label>
+  <!-- EN: When enabled, drafted colonists will automatically fire on passive wild animals. Right-click to change settings.\nAdded by the Allow Tool mod. -->
+  <PartyHuntToggle_desc>Ligado, colonos convocados atiram sozinhos em animais selvagens passivos. Clique direito para mudar as opções.\nAdicionado pelo mod Allow Tool.</PartyHuntToggle_desc>
+</LanguageData>

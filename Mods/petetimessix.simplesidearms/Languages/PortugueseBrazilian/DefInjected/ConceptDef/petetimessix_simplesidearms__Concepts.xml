@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <!-- EN: SS: Sidearms -->
+  <Concept_SimpleSidearmsBasic.label>SS: Armas secundárias</Concept_SimpleSidearmsBasic.label>
+  <!-- EN: Simple Sidearms\n\nIn order to equip weapons as sidearms, rightclick them and select the Equip as sidearm option.\n\nBy default, colonists will use whichever weapon type they are best skilled with or passionate about. Ranged weapon users will also switch to a melee weapon when engaged in close combat. This behaviour can be altered in the mod settings. -->
+  <Concept_SimpleSidearmsBasic.helpText>Simple Sidearms\n\nPara equipar armas como secundárias, clique nelas com o botão direito e escolha a opção Equipar como arma secundária.\n\nPor padrão, os colonos usam o tipo de arma em que têm mais habilidade ou paixão. Quem usa arma de longo alcance também troca para uma arma corpo a corpo quando entra em combate próximo. Esse comportamento pode ser mudado nas configurações do mod.</Concept_SimpleSidearmsBasic.helpText>
+  <!-- EN: SS: Dropping sidearms -->
+  <Concept_SidearmsDropping.label>SS: Largar armas secundárias</Concept_SidearmsDropping.label>
+  <!-- EN: Sidearms with a gray background are currently in a colonists inventory and eligible for use. Right click to drop. -->
+  <Concept_SidearmsDropping.helpText>Armas secundárias com fundo cinza estão no inventário de um colono e podem ser usadas. Clique com o botão direito para largar.</Concept_SidearmsDropping.helpText>
+  <!-- EN: SS: Missing sidearms -->
+  <Concept_SidearmsMissing.label>SS: Armas secundárias faltando</Concept_SidearmsMissing.label>
+  <!-- EN: Sidearms with a dark purple background are currently missing from a colonists loadout. They will attempt to replace them at earliest opportunity, assuming any can be found. Right click to forget about the sidearm. -->
+  <Concept_SidearmsMissing.helpText>Armas secundárias com fundo roxo-escuro estão faltando no equipamento de um colono. Ele vai tentar repô-las na primeira oportunidade, se achar alguma. Clique com o botão direito para esquecer a arma secundária.</Concept_SidearmsMissing.helpText>
+  <!-- EN: SS: Weapon preference -->
+  <Concept_SimpleSidearmsPreference.label>SS: Preferência de arma</Concept_SimpleSidearmsPreference.label>
+  <!-- EN: Colonists can have sidearm use configured on an individual basis. The options are: \nUse ranged weapons\nUse weapons colonist is passionate about or skilled with \nUse melee weapons -->
+  <Concept_SimpleSidearmsPreference.helpText>O uso de armas secundárias pode ser configurado para cada colono. As opções são: \nUsar armas de longo alcance\nUsar armas em que o colono tem paixão ou habilidade \nUsar armas corpo a corpo</Concept_SimpleSidearmsPreference.helpText>
+  <!-- EN: SS: Advanced controls (ranged) -->
+  <Concept_SimpleSidearmsAdvancedRanged.label>SS: Controles avançados (longo alcance)</Concept_SimpleSidearmsAdvancedRanged.label>
+  <!-- EN: Left click a carried ranged weapon to set it as the default ranged weapon. If the colonist weapon preference is set to ranged (or skill on a colonist more skilled with ranged weapons), this weapon will be what the colonist equips when not in active combat. It will also be used while hunting. \n\nClick a default ranged weapon again to force its use regardless of range/DPS. \n\nRight click to remove forced use/default status. -->
+  <Concept_SimpleSidearmsAdvancedRanged.helpText>Clique com o botão esquerdo numa arma de longo alcance carregada para torná-la a arma de longo alcance padrão. Se a preferência do colono for longo alcance (ou habilidade, num colono melhor com armas de longo alcance), é essa arma que ele empunha fora de combate. Também é usada na caça. \n\nClique de novo numa arma de longo alcance padrão para forçar seu uso, seja qual for o alcance/DPS. \n\nClique com o botão direito para tirar o uso forçado/padrão.</Concept_SimpleSidearmsAdvancedRanged.helpText>
+  <!-- EN: SS: Advanced controls (melee) -->
+  <Concept_SimpleSidearmsAdvancedMelee.label>SS: Controles avançados (corpo a corpo)</Concept_SimpleSidearmsAdvancedMelee.label>
+  <!-- EN: Left click a carried melee weapon to set it as the preferred ranged weapon. The colonist will always use this weapon when weapon preference is set to melee (or skill on a colonist more skilled with melee weapons) and when forced into close combat. \n\nClick a preferred melee weapon again to force its use at all times. \n\nRight click to remove forced use/preference. -->
+  <Concept_SimpleSidearmsAdvancedMelee.helpText>Clique com o botão esquerdo numa arma corpo a corpo carregada para torná-la a arma corpo a corpo preferida. O colono sempre usa essa arma quando a preferência é corpo a corpo (ou habilidade, num colono melhor no corpo a corpo) e quando é forçado ao combate próximo. \n\nClique de novo numa arma corpo a corpo preferida para forçar seu uso o tempo todo. \n\nClique com o botão direito para tirar o uso forçado/preferência.</Concept_SimpleSidearmsAdvancedMelee.helpText>
+  <!-- EN: SS: Advanced controls (drafted) -->
+  <Concept_SimpleSidearmsAdvancedDrafted.label>SS: Controles avançados (convocado)</Concept_SimpleSidearmsAdvancedDrafted.label>
+  <!-- EN: Left click a carried weapon while drafted to force its use until end of combat. \n\nNote that most changes to sidearm loadout require the pawn to not be drafted. -->
+  <Concept_SimpleSidearmsAdvancedDrafted.helpText>Com o colono convocado, clique com o botão esquerdo numa arma carregada para forçar seu uso até o fim do combate. \n\nA maioria das mudanças no equipamento secundário exige que o personagem não esteja convocado.</Concept_SimpleSidearmsAdvancedDrafted.helpText>
+  <!-- EN: SS: Losing weapons -->
+  <Concept_SimpleSidearmsLosingWeapons.label>SS: Perder armas</Concept_SimpleSidearmsLosingWeapons.label>
+  <!-- EN: Depending on the settings, Simple Sidearms can cause colonists to drop their weapons in a variety of situations (default is attacks in melee). Don't worry - your colonists will retrieve their weapons after the fight. \n\nThis is a customizable feature - take a look in the mod settings dialog to learn more. -->
+  <Concept_SimpleSidearmsLosingWeapons.helpText>Dependendo das configurações, o Simple Sidearms pode fazer os colonos derrubarem as armas em várias situações (o padrão é ao serem atacados no corpo a corpo). Não se preocupe: eles pegam as armas de volta depois da luta. \n\nIsso é configurável; veja as configurações do mod para saber mais.</Concept_SimpleSidearmsLosingWeapons.helpText>
+  <!-- EN: SS: CE patch -->
+  <Concept_CEOverride.label>SS: Patch do CE</Concept_CEOverride.label>
+  <!-- EN: Combat Extended is loaded. SimpleSidearms inventory management functionality is disabled. -->
+  <Concept_CEOverride.helpText>O Combat Extended está carregado. O gerenciamento de inventário do Simple Sidearms está desativado.</Concept_CEOverride.helpText>
+</LanguageData>

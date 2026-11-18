@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <!-- EN: {0} consumption -->
+  <PipeSystem_Consumption>Consumo de {0}</PipeSystem_Consumption>
+  <!-- EN: The amount per day of {0} this building will draw from the {1} grid. -->
+  <PipeSystem_ConsumptionExplained>A quantidade por dia de {0} que este prédio puxa da rede de {1}.</PipeSystem_ConsumptionExplained>
+  <!-- EN: {0} idle consumption -->
+  <PipeSystem_IdleConsumption>Consumo ocioso de {0}</PipeSystem_IdleConsumption>
+  <!-- EN: The amount of {0} this building will draw from the {1} grid when idle. -->
+  <PipeSystem_IdleConsumptionExplained>A quantidade de {0} que este prédio puxa da rede de {1} quando ocioso.</PipeSystem_IdleConsumptionExplained>
+  <!-- EN: {0} production -->
+  <PipeSystem_Production>Produção de {0}</PipeSystem_Production>
+  <!-- EN: The amount per day of {0} this building will produce for the {1} grid. -->
+  <PipeSystem_ProductionExplained>A quantidade por dia de {0} que este prédio produz para a rede de {1}.</PipeSystem_ProductionExplained>
+  <!-- EN: Deconstruct {0} pipes -->
+  <PipeSystem_DeconstructLabel>Desmontar canos de {0}</PipeSystem_DeconstructLabel>
+  <!-- EN: Only deconstruct pipes part of the {0} network. -->
+  <PipeSystem_DeconstructDesc>Desmonta só os canos da rede de {0}.</PipeSystem_DeconstructDesc>
+  <!-- EN: {0} output: -->
+  <PipeSystem_ResourceOutput>Saída de {0}:</PipeSystem_ResourceOutput>
+  <!-- EN: {0} needed: -->
+  <PipeSystem_ResourceNeeded>{0} necessário:</PipeSystem_ResourceNeeded>
+  <!-- EN: {0} stored: -->
+  <PipeSystem_ResourceStored>{0} armazenado:</PipeSystem_ResourceStored>
+  <!-- EN: Not connected to {0}. -->
+  <PipeSystem_NotConnected>Não ligado a {0}.</PipeSystem_NotConnected>
+  <!-- EN: {0} net excess/stored in network: {1} {3}/d / {2} {3} -->
+  <PipeSystem_ExcessStored>{0}: excedente/armazenado na rede: {1} {3}/d / {2} {3}</PipeSystem_ExcessStored>
+  <!-- EN: {0} stored in network: -->
+  <PipeSystem_Stored>{0} armazenado na rede:</PipeSystem_Stored>
+  <!-- EN: Valve closed. -->
+  <PipeSystem_ValveClosed>Válvula fechada.</PipeSystem_ValveClosed>
+  <!-- EN: Valve opened. -->
+  <PipeSystem_ValveOpened>Válvula aberta.</PipeSystem_ValveOpened>
+  <!-- EN: Augment output maximum stack size by 1. -->
+  <PipeSystem_AugmentStackDesc>Aumenta em 1 a pilha máxima de saída.</PipeSystem_AugmentStackDesc>
+  <!-- EN: Augment output maximum stack size by 10. -->
+  <PipeSystem_AugmentStackDescB>Aumenta em 10 a pilha máxima de saída.</PipeSystem_AugmentStackDescB>
+  <!-- EN: Decrease output maximum stack size by 1. -->
+  <PipeSystem_DecreaseStackDesc>Diminui em 1 a pilha máxima de saída.</PipeSystem_DecreaseStackDesc>
+  <!-- EN: Decrease output maximum stack size by 10. -->
+  <PipeSystem_DecreaseStackDescB>Diminui em 10 a pilha máxima de saída.</PipeSystem_DecreaseStackDescB>
+  <!-- EN: Maximum amount stored here: {0} -->
+  <PipeSystem_AmountOut>Quantidade máxima guardada aqui: {0}</PipeSystem_AmountOut>
+  <!-- EN: Buffer: {0} -->
+  <PipeSystem_ProcessorBuffer>Reserva: {0}</PipeSystem_ProcessorBuffer>
+  <!-- EN: Producing {0} {1}. Cycle progress: {2}. -->
+  <PipeSystem_Producing>Produzindo {0} {1}. Progresso do ciclo: {2}.</PipeSystem_Producing>
+  <!-- EN: Produce {0} {1} from {2} {3}. -->
+  <PipeSystem_Produce>Produz {0} {1} a partir de {2} {3}.</PipeSystem_Produce>
+  <!-- EN: Choose result -->
+  <PipeSystem_ChooseResult>Escolher resultado</PipeSystem_ChooseResult>
+  <!-- EN: Choose processor result. -->
+  <PipeSystem_ChooseResultDesc>Escolhe o resultado do processador.</PipeSystem_ChooseResultDesc>
+  <!-- EN: Produce {0} {1} using: -->
+  <PipeSystem_ProduceLabel>Produzir {0} {1} usando:</PipeSystem_ProduceLabel>
+  <!-- EN: Transfer storage content -->
+  <PipeSystem_TransferContent>Transferir conteúdo</PipeSystem_TransferContent>
+  <!-- EN: Transfer storage content to other available storages. -->
+  <PipeSystem_TransferContentDesc>Transfere o conteúdo para outros armazenamentos disponíveis.</PipeSystem_TransferContentDesc>
+  <!-- EN: Transfering content to other available storages... -->
+  <PipeSystem_MarkedToTransferContent>Transferindo o conteúdo para outros armazenamentos disponíveis...</PipeSystem_MarkedToTransferContent>
+  <!-- EN: No thing to refill {0} -->
+  <PipeSystem_NothingToRefill>Nada para reabastecer {0}</PipeSystem_NothingToRefill>
+  <!-- EN: Allow manual refill -->
+  <PipeSystem_AllowManualRefill>Permitir reabastecer à mão</PipeSystem_AllowManualRefill>
+  <!-- EN: Allow pawns to directly refill storage -->
+  <PipeSystem_AllowManualRefillDesc>Permite que as pessoas reabasteçam o armazenamento diretamente</PipeSystem_AllowManualRefillDesc>
+  <!-- EN: Can't extract: Tanks are full -->
+  <PipeSystem_CantExtract>Não dá para extrair: os tanques estão cheios</PipeSystem_CantExtract>
+  <!-- EN: {0} can only be placed on the {1} deposit. Use ground-penetrating scanner to find the deposits. -->
+  <PipeSystem_CantPlaceHere>{0} só pode ser posto sobre a jazida de {1}. Use o escâner de solo para achar as jazidas.</PipeSystem_CantPlaceHere>
+  <!-- EN: Amount left in deposit: {0}. -->
+  <PipeSystem_ResourceLeft>Quantidade restante na jazida: {0}.</PipeSystem_ResourceLeft>
+  <!-- EN: No storage connected -->
+  <PipeSystem_NoStorageInNet>Nenhum armazenamento ligado</PipeSystem_NoStorageInNet>
+  <!-- EN: The following networks are not connected to any storage building, but need one: -->
+  <PipeSystem_NoStorageInNetDesc>Estas redes não estão ligadas a nenhum prédio de armazenamento, mas precisam de um:</PipeSystem_NoStorageInNetDesc>
+  <!-- EN: {0} content rotted away due to a lack of power. -->
+  <PipeSystem_StorageContentRotted>O conteúdo de {0} apodreceu por falta de energia.</PipeSystem_StorageContentRotted>
+  <!-- EN: Content will rot in {0} due to a lack of power. -->
+  <PipeSystem_ContentWillRot>O conteúdo vai apodrecer em {0} por falta de energia.</PipeSystem_ContentWillRot>
+  <!-- EN: Nothing to pick-up -->
+  <PipeSystem_NothingToPickUp>Nada para retirar</PipeSystem_NothingToPickUp>
+  <!-- EN: Make {0} -->
+  <PipeSystem_MakeProcess>Fazer {0}</PipeSystem_MakeProcess>
+  <!-- EN: {0} to net -->
+  <PipeSystem_OutputToNet>{0} para a rede</PipeSystem_OutputToNet>
+  <!-- EN: or {0} net -->
+  <PipeSystem_OrNet>ou rede de {0}</PipeSystem_OrNet>
+  <!-- EN: {0} from net -->
+  <PipeSystem_XFromNet>{0} da rede</PipeSystem_XFromNet>
+  <!-- EN: Processes -->
+  <PipeSystem_Processes>Processos</PipeSystem_Processes>
+  <!-- EN: Add process -->
+  <PipeSystem_AddProcess>Adicionar processo</PipeSystem_AddProcess>
+  <!-- EN: Cancel current process -->
+  <PipeSystem_CancelCurrentProcess>Cancelar processo atual</PipeSystem_CancelCurrentProcess>
+  <!-- EN: Can output on ground -->
+  <PipeSystem_OutputOnGround>Pode soltar no chão</PipeSystem_OutputOnGround>
+  <!-- EN: No current process -->
+  <PipeSystem_NoProcess>Nenhum processo em andamento</PipeSystem_NoProcess>
+  <!-- EN: No process available -->
+  <PipeSystem_NoProcessAvailable>Nenhum processo disponível</PipeSystem_NoProcessAvailable>
+  <!-- EN: Product -->
+  <PipeSystem_Product>Produto</PipeSystem_Product>
+  <!-- EN: Missing inputs: {0} -->
+  <PipeSystem_MissingInputIngredients>Faltam entradas: {0}</PipeSystem_MissingInputIngredients>
+  <!-- EN: Copy processes -->
+  <PipeSystem_CopyProcesses>Copiar processos</PipeSystem_CopyProcesses>
+  <!-- EN: Paste processes -->
+  <PipeSystem_PasteProcesses>Colar processos</PipeSystem_PasteProcesses>
+  <!-- EN: Paste all processes -->
+  <PipeSystem_PasteAllRecipes>Colar todos os processos</PipeSystem_PasteAllRecipes>
+  <!-- EN: Paste all copied processes into this processor. You can select multiple and the processes will be pasted to all of them. -->
+  <PipeSystem_PasteAllRecipes_Desc>Cola todos os processos copiados neste processador. Dá para selecionar vários e colar em todos de uma vez.</PipeSystem_PasteAllRecipes_Desc>
+  <!-- EN: Extract at current quality -->
+  <PipeSystem_ExtractAtCurrentQuality>Retirar na qualidade atual</PipeSystem_ExtractAtCurrentQuality>
+  <!-- EN: Extract the product at the current quality. -->
+  <PipeSystem_ExtractAtCurrentQuality_Desc>Retira o produto na qualidade atual.</PipeSystem_ExtractAtCurrentQuality_Desc>
+  <!-- EN: Select the quality at which this process will stop -->
+  <PipeSystem_QualitySelector>Escolha a qualidade em que este processo para</PipeSystem_QualitySelector>
+  <!-- EN: Process needs to advance at least until the Awful quality time, which is {0} -->
+  <PipeSystem_ProcessNeedsAwfulAtLeast>O processo precisa avançar pelo menos até a qualidade Horrível, que leva {0}</PipeSystem_ProcessNeedsAwfulAtLeast>
+  <!-- EN: Current quality: {0} -->
+  <PipeSystem_CurrentQuality>Qualidade atual: {0}</PipeSystem_CurrentQuality>
+  <!-- EN: Process hasn't reached Awful quality yet -->
+  <PipeSystem_CurrentNotReachedAwful>O processo ainda não chegou à qualidade Horrível</PipeSystem_CurrentNotReachedAwful>
+  <!-- EN: Extracting product at current quality -->
+  <PipeSystem_ExtractingAtCurrent>Retirando o produto na qualidade atual</PipeSystem_ExtractingAtCurrent>
+  <!-- EN: Output factory hopper absent or not accepting item due to storage configuration. -->
+  <PipeSystem_OutputFactoryHopperIncorrect>Funil de saída da fábrica ausente ou recusando o item pela configuração de armazenamento.</PipeSystem_OutputFactoryHopperIncorrect>
+  <!-- EN: Output factory hopper too full (max {0} units) -->
+  <PipeSystem_OutputFactoryHopperFull>Funil de saída da fábrica cheio demais (máx. {0} unidades)</PipeSystem_OutputFactoryHopperFull>
+  <!-- EN: This processor is not situated in a room that counts as a {0}, and will receive a {1} penalty to its work speed. This will be recalculated once a process has started. -->
+  <PipeSystem_NotInRoomExplanation>Este processador não está num cômodo que conte como {0} e vai sofrer uma penalidade de {1} na velocidade de trabalho. Isso é recalculado quando um processo começa.</PipeSystem_NotInRoomExplanation>
+  <!-- EN: work speed -->
+  <PipeSystem_WorkSpeed>velocidade de trabalho</PipeSystem_WorkSpeed>
+  <!-- EN: Can’t breed fish due to gill rot -->
+  <PipeSystem_InterruptedByGillRot>Não dá para criar peixes por causa da podridão das guelras</PipeSystem_InterruptedByGillRot>
+</LanguageData>

@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <!-- EN: pirate -->
+  <VFEP_PirateMeme.label>pirata</VFEP_PirateMeme.label>
+  <!-- EN: Strong should take from the weak, for that is our right, but camaraderie and code should be elevated above all. -->
+  <VFEP_PirateMeme.description>O forte deve tomar do fraco, pois é seu direito, mas a camaradagem e o código vêm acima de tudo.</VFEP_PirateMeme.description>
+  <VFEP_PirateMeme.descriptionMaker.rules.rulesStrings>
+    <!-- EN: creation(tag=meme_Pirate)        -&gt;[deity0_name] showed us that the [memberNamePlural] must stand together as a crew to impose [deity0_possessive] will upon those who are weaker. -->
+    <li>creation(tag=meme_Pirate)        -&gt;[deity0_name] nos mostrou que os [memberNamePlural] devem ficar unidos como tripulação para impor a sua vontade aos mais fracos.</li>
+    <!-- EN: episode(uses=1,tag=meme_Pirate)  -&gt;[deity0_name] shouted to all the [memberNamePlural], "In an honest service there is thin commons, low wages, and hard labor; in piracy, plenty and satiety, pleasure and ease, liberty and power. Seize it." -->
+    <li>episode(uses=1,tag=meme_Pirate)  -&gt;[deity0_name] gritou a todos os [memberNamePlural]: "No serviço honesto há comida rala, salário baixo e trabalho pesado; na pirataria, fartura e saciedade, prazer e sossego, liberdade e poder. Tomem."</li>
+    <!-- EN: intro(tag=meme_Pirate)           -&gt;On the [place_summary] [place_name], the [memberNamePlural] had created a safe haven, where their plunder could be counted for the glory of [deity0_name]. -->
+    <li>intro(tag=meme_Pirate)           -&gt;Em [place_name], [place_summary], os [memberNamePlural] criaram um porto seguro onde o saque podia ser contado para a glória de [deity0_name].</li>
+    <!-- EN: conflict(tag=meme_Pirate)           -&gt;A coward [foeLeader] looked at this with scorn, for [foeLeader_pronoun] desired all the riches for [foeLeader_objective]self. -->
+    <li>conflict(tag=meme_Pirate)           -&gt;Um [foeLeader] covarde olhou para isso com desprezo, pois queria todas as riquezas para si.</li>
+    <!-- EN: founderJoin(tag=meme_Pirate)        -&gt;[deity0_name]'s truest follower, captain [founderName], captured the [foeLeader] in a daring raid. -->
+    <li>founderJoin(tag=meme_Pirate)        -&gt;O seguidor mais fiel de [deity0_name], o capitão [founderName], capturou o [foeLeader] num ataque ousado.</li>
+    <!-- EN: victory(tag=meme_Pirate)            -&gt;[founderName]'s crewmates incarcerated the [foeLeader], who was executed a few days later for [deity0_name]'s glory. -->
+    <li>victory(tag=meme_Pirate)            -&gt;Os companheiros de [founderName] prenderam o [foeLeader], executado dias depois para a glória de [deity0_name].</li>
+    <!-- EN: setup(tag=meme_Pirate)           -&gt;[founderName] was the greatest captain, a true leader. Thousands of pirates united under [founder_possessive] terrifying banner. -->
+    <li>setup(tag=meme_Pirate)           -&gt;[founderName] foi o maior dos capitães, um líder de verdade. Milhares de piratas se uniram sob a sua bandeira aterradora.</li>
+    <!-- EN: story(uses=1,tag=meme_Pirate)    -&gt;[founderName] made us understand that hardships, suffering and sacrifices must be faced together, as a crew. We learned to value the comradeship and camaraderie, and respect each other. -->
+    <li>story(uses=1,tag=meme_Pirate)    -&gt;[founderName] nos fez entender que provações, sofrimento e sacrifícios devem ser enfrentados juntos, como tripulação. Aprendemos a valorizar o companheirismo e a camaradagem, e a nos respeitar.</li>
+    <!-- EN: lessonIntro(tag=meme_Pirate)         -&gt;I talked to the greatest pirate to ever live, a legend amongst men. He showed me that -->
+    <li>lessonIntro(tag=meme_Pirate)         -&gt;Falei com o maior pirata que já existiu, uma lenda entre os homens. Ele me mostrou que</li>
+    <!-- EN: lesson(tag=meme_Pirate)              -&gt;hardships, suffering and sacrifices must be faced together, as a crew -->
+    <li>lesson(tag=meme_Pirate)              -&gt;provações, sofrimento e sacrifícios devem ser enfrentados juntos, como tripulação</li>
+    <!-- EN: lessonReinforcement(tag=meme_Pirate) -&gt;He taught me to value the comradeship and camaraderie, and the merits of respecting each other. -->
+    <li>lessonReinforcement(tag=meme_Pirate) -&gt;Ele me ensinou a valorizar o companheirismo e a camaradagem, e o mérito de respeitar uns aos outros.</li>
+    <!-- EN: archistBasis(tag=meme_Pirate)    -&gt;Archotechs do not respect those who can't defend themselves: we will face those weaker than ourselves as a crew. -->
+    <li>archistBasis(tag=meme_Pirate)    -&gt;Os arquotecs não respeitam quem não sabe se defender: enfrentaremos os mais fracos como tripulação.</li>
+    <!-- EN: archistFact(tag=meme_Pirate)     -&gt;We will prove to the archotechs that comradeship and camaraderie are the values that keep us strong. -->
+    <li>archistFact(tag=meme_Pirate)     -&gt;Provaremos aos arquotecs que o companheirismo e a camaradagem são os valores que nos mantêm fortes.</li>
+    <!-- EN: archistProphecy(tag=meme_Pirate) -&gt;Only by standing proud together can we become worthy of transcendence. -->
+    <li>archistProphecy(tag=meme_Pirate) -&gt;Só ficando de pé, orgulhosos e unidos, seremos dignos da transcendência.</li>
+    <!-- EN: animistBasis(tag=meme_Pirate)    -&gt;The spirits do not respect those who can't defend themselves: we will face those weaker than ourselves as a crew. -->
+    <li>animistBasis(tag=meme_Pirate)    -&gt;Os espíritos não respeitam quem não sabe se defender: enfrentaremos os mais fracos como tripulação.</li>
+    <!-- EN: animistFact(tag=meme_Pirate)     -&gt;We will prove to the spirits that comradeship and camaraderie are the values that keep us strong. -->
+    <li>animistFact(tag=meme_Pirate)     -&gt;Provaremos aos espíritos que o companheirismo e a camaradagem são os valores que nos mantêm fortes.</li>
+    <!-- EN: animistProphecy(tag=meme_Pirate) -&gt;[itIsSaid] only by standing proud together can we make the spirits truly listen to us. -->
+    <li>animistProphecy(tag=meme_Pirate) -&gt;[itIsSaid] que só ficando de pé, orgulhosos e unidos, faremos os espíritos nos ouvirem de verdade.</li>
+    <!-- EN: serketistProphecy(tag=meme_Pirate)-&gt;[itIsSaid] we will prove that comradeship and camaraderie are the values that keep us strong. -->
+    <li>serketistProphecy(tag=meme_Pirate)-&gt;[itIsSaid] que provaremos que o companheirismo e a camaradagem são os valores que nos mantêm fortes.</li>
+    <!-- EN: chthonianProphecy(tag=meme_Pirate)-&gt;These eldritch entities would seek to destroy us, but we will stand together against them. Our camaraderie can't be shaken by anything, not even them. -->
+    <li>chthonianProphecy(tag=meme_Pirate)-&gt;Essas entidades sobrenaturais querem nos destruir, mas ficaremos unidos contra elas. Nada abala a nossa camaradagem, nem elas.</li>
+    <!-- EN: esotericismProphecy(tag=meme_Pirate)-&gt;Such occult knowledge requires an unified will. We will stand together as a crew, our camaraderie allowing us to embrace these arcane secrets with ease. -->
+    <li>esotericismProphecy(tag=meme_Pirate)-&gt;Esse conhecimento oculto exige uma vontade unida. Ficaremos juntos como tripulação, e a camaradagem nos deixará abraçar esses segredos arcanos com facilidade.</li>
+    <!-- EN: eschatologismFact(tag=meme_Pirate)-&gt;We will plunder and pillage those weaker than ourselves, for the world they have created must be destroyed, and only our crew deserves their achievements. -->
+    <li>eschatologismFact(tag=meme_Pirate)-&gt;Vamos pilhar e saquear os mais fracos, pois o mundo que criaram precisa ser destruído, e só a nossa tripulação merece o que conquistaram.</li>
+    <!-- EN: introMemo(tag=meme_Pirate)-&gt;As a member of our Reclamation and Repossession Office, let us remind you that any resources found on this planet are the property of the Company, and as such any hostile factions trying to take possession of our assets must be terminated with EXTREME prejudice. We will not allow others to take what is rightfully ours. -->
+    <li>introMemo(tag=meme_Pirate)-&gt;Como membro do nosso Departamento de Recuperação e Reintegração de Posse, lembramos que qualquer recurso encontrado neste planeta é propriedade da Empresa, e por isso qualquer facção hostil que tente se apossar dos nossos ativos deve ser eliminada com EXTREMO rigor. Não vamos deixar que outros peguem o que é nosso por direito.</li>
+    <!-- EN: alienistProphecy(tag=meme_Pirate)-&gt;These wayward creatures are ours to do as we please. -->
+    <li>alienistProphecy(tag=meme_Pirate)-&gt;Essas criaturas desgarradas são nossas para fazermos o que quisermos.</li>
+  </VFEP_PirateMeme.descriptionMaker.rules.rulesStrings>
+  <VFEP_PirateMeme.generalRules.rulesStrings>
+    <!-- EN: memeAdjective-&gt;buccaneering -->
+    <li>memeAdjective-&gt;bucaneiro</li>
+    <!-- EN: memeAdjective-&gt;criminal -->
+    <li>memeAdjective-&gt;criminoso</li>
+    <!-- EN: memeAdjective-&gt;pillaging -->
+    <li>memeAdjective-&gt;saqueador</li>
+    <!-- EN: memeAdjective-&gt;plundering -->
+    <li>memeAdjective-&gt;pilhador</li>
+    <!-- EN: memeAdjective-&gt;mutinous -->
+    <li>memeAdjective-&gt;amotinado</li>
+    <!-- EN: memeAdjective-&gt;piratical -->
+    <li>memeAdjective-&gt;pirata</li>
+    <!-- EN: memeConcept-&gt;camaraderie -->
+    <li>memeConcept-&gt;camaradagem</li>
+    <!-- EN: memeConcept-&gt;piracy -->
+    <li>memeConcept-&gt;pirataria</li>
+    <!-- EN: memeLeaderNoun-&gt;skipper -->
+    <li>memeLeaderNoun-&gt;mestre</li>
+    <!-- EN: memeLeaderNoun-&gt;commander -->
+    <li>memeLeaderNoun-&gt;comandante</li>
+    <!-- EN: memeLeaderNoun-&gt;boss -->
+    <li>memeLeaderNoun-&gt;chefe</li>
+    <!-- EN: memeLeaderAdjective-&gt;gallant -->
+    <li>memeLeaderAdjective-&gt;galante</li>
+    <!-- EN: memeLeaderAdjective-&gt;draconian -->
+    <li>memeLeaderAdjective-&gt;draconiano</li>
+    <!-- EN: memeLeaderAdjective-&gt;callous -->
+    <li>memeLeaderAdjective-&gt;insensível</li>
+    <!-- EN: memeLeaderAdjective-&gt;brave -->
+    <li>memeLeaderAdjective-&gt;corajoso</li>
+    <!-- EN: memeLeaderAdjective-&gt;ruthless -->
+    <li>memeLeaderAdjective-&gt;implacável</li>
+    <!-- EN: memeLeaderAdjective-&gt;daring -->
+    <li>memeLeaderAdjective-&gt;ousado</li>
+    <!-- EN: memeMoralist-&gt;chaplain -->
+    <li>memeMoralist-&gt;capelão</li>
+    <!-- EN: memeMoralist-&gt;first mate -->
+    <li>memeMoralist-&gt;imediato</li>
+    <!-- EN: memeMoralist-&gt;first officer -->
+    <li>memeMoralist-&gt;primeiro-oficial</li>
+  </VFEP_PirateMeme.generalRules.rulesStrings>
+  <!-- EN: pirate -->
+  <VFEP_PirateMeme.symbolPacks.0.adjective>pirata</VFEP_PirateMeme.symbolPacks.0.adjective>
+  <!-- EN: Piracy -->
+  <VFEP_PirateMeme.symbolPacks.0.ideoName>Pirataria</VFEP_PirateMeme.symbolPacks.0.ideoName>
+  <!-- EN: crewmember -->
+  <VFEP_PirateMeme.symbolPacks.0.member>tripulante</VFEP_PirateMeme.symbolPacks.0.member>
+  <!-- EN: piracy -->
+  <VFEP_PirateMeme.symbolPacks.0.theme>pirataria</VFEP_PirateMeme.symbolPacks.0.theme>
+</LanguageData>

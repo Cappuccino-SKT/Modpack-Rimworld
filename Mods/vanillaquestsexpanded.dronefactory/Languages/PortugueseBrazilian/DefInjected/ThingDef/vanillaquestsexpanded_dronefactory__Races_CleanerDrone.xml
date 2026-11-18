@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <!-- EN: cleaner drone -->
+  <VQE_CleanerDrone.label>drone de limpeza</VQE_CleanerDrone.label>
+  <!-- EN: An automated utility drone. It continuously patrols an area, looking for dirty surfaces. Once filth is found, it will relentlessly clean the area with its internal scrubbing apparatus.\n\nDrones have a limited lifespan and will begin malfunctioning as they near end-of-life, but can use standby mode to slow component degradation. They require connection to a powered drone transmitter to function. -->
+  <VQE_CleanerDrone.description>Um drone utilitário automático. Patrulha uma área sem parar procurando superfícies sujas. Quando acha sujeira, limpa tudo sem trégua com o aparelho de esfregar interno.\n\nDrones têm vida útil limitada e começam a dar defeito perto do fim dela, mas o modo de espera retarda o desgaste dos componentes. Precisam estar ligados a um transmissor de drones energizado para funcionar.</VQE_CleanerDrone.description>
+  <!-- EN: shell spike -->
+  <VQE_CleanerDrone.tools.shell_spike.label>espinho do casco</VQE_CleanerDrone.tools.shell_spike.label>
+</LanguageData>

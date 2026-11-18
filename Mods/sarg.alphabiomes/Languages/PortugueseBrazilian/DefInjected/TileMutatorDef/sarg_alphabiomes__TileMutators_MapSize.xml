@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <!-- EN: wide region -->
+  <AB_WideRegion.label>região larga</AB_WideRegion.label>
+  <!-- EN: The limits of this region make it have an irregular size. Map will be set to 400x100 tiles. -->
+  <AB_WideRegion.description>Os limites desta região lhe dão um tamanho irregular. O mapa terá 400x100 células.</AB_WideRegion.description>
+  <!-- EN: narrow region -->
+  <AB_NarrowRegion.label>região estreita</AB_NarrowRegion.label>
+  <!-- EN: The limits of this region make it have an irregular size. Map will be set to 100x400 tiles. -->
+  <AB_NarrowRegion.description>Os limites desta região lhe dão um tamanho irregular. O mapa terá 100x400 células.</AB_NarrowRegion.description>
+  <!-- EN: diminutive region -->
+  <AB_DiminutiveRegion.label>região diminuta</AB_DiminutiveRegion.label>
+  <!-- EN: The limits of this region are very restrictive. Map will be set to 100x100 tiles. -->
+  <AB_DiminutiveRegion.description>Os limites desta região são muito restritivos. O mapa terá 100x100 células.</AB_DiminutiveRegion.description>
+</LanguageData>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <!-- EN: allergy -->
+  <AB_SporesAllergy.label>alergia</AB_SporesAllergy.label>
+  <!-- EN: This person has developed a strong allergy to airborne spores and / or plant pollen. This allergy will make breathing difficult, but it will go away (for now) if treated properly. -->
+  <AB_SporesAllergy.description>Esta pessoa desenvolveu uma alergia forte a esporos e/ou pólen no ar. A alergia dificulta a respiração, mas some (por enquanto) se tratada direito.</AB_SporesAllergy.description>
+  <!-- EN: minor -->
+  <AB_SporesAllergy.stages.minor.label>leve</AB_SporesAllergy.stages.minor.label>
+  <!-- EN: major -->
+  <AB_SporesAllergy.stages.major.label>grave</AB_SporesAllergy.stages.major.label>
+  <!-- EN: extreme -->
+  <AB_SporesAllergy.stages.extreme.label>extrema</AB_SporesAllergy.stages.extreme.label>
+  <!-- EN: heightened allergy -->
+  <AB_SporesAllergy_Heightened.label>alergia intensa</AB_SporesAllergy_Heightened.label>
+  <!-- EN: This person has developed a very strong allergy to airborne spores and / or plant pollen. This allergy will make breathing difficult, but it will go away (for now) if treated properly. -->
+  <AB_SporesAllergy_Heightened.description>Esta pessoa desenvolveu uma alergia muito forte a esporos e/ou pólen no ar. A alergia dificulta a respiração, mas some (por enquanto) se tratada direito.</AB_SporesAllergy_Heightened.description>
+  <!-- EN: minor -->
+  <AB_SporesAllergy_Heightened.stages.minor.label>leve</AB_SporesAllergy_Heightened.stages.minor.label>
+  <!-- EN: major -->
+  <AB_SporesAllergy_Heightened.stages.major.label>grave</AB_SporesAllergy_Heightened.stages.major.label>
+  <!-- EN: extreme -->
+  <AB_SporesAllergy_Heightened.stages.extreme.label>extrema</AB_SporesAllergy_Heightened.stages.extreme.label>
+  <!-- EN: allergy -->
+  <AB_AnimalSporesAllergy.label>alergia</AB_AnimalSporesAllergy.label>
+  <!-- EN: This animal has developed a strong allergy to airborne spores and / or plant pollen. This allergy will make breathing difficult, but it will go away (for now) if treated properly. -->
+  <AB_AnimalSporesAllergy.description>Este animal desenvolveu uma alergia forte a esporos e/ou pólen no ar. A alergia dificulta a respiração, mas some (por enquanto) se tratada direito.</AB_AnimalSporesAllergy.description>
+  <!-- EN: minor -->
+  <AB_AnimalSporesAllergy.stages.minor.label>leve</AB_AnimalSporesAllergy.stages.minor.label>
+  <!-- EN: major -->
+  <AB_AnimalSporesAllergy.stages.major.label>grave</AB_AnimalSporesAllergy.stages.major.label>
+  <!-- EN: extreme -->
+  <AB_AnimalSporesAllergy.stages.extreme.label>extrema</AB_AnimalSporesAllergy.stages.extreme.label>
+  <!-- EN: neurotoxin paralysis -->
+  <AB_Paralysis.label>paralisia por neurotoxina</AB_Paralysis.label>
+  <!-- EN: A fast acting toxin is coursing through this creature's veins, paralyzing his muscles. It will wear off after a while. -->
+  <AB_Paralysis.description>Uma toxina de ação rápida corre nas veias desta criatura, paralisando os músculos. O efeito passa depois de um tempo.</AB_Paralysis.description>
+  <!-- EN: initial -->
+  <AB_Paralysis.stages.initial.label>inicial</AB_Paralysis.stages.initial.label>
+  <!-- EN: stunned -->
+  <AB_Paralysis.stages.stunned.label>atordoado</AB_Paralysis.stages.stunned.label>
+  <!-- EN: very stunned -->
+  <AB_Paralysis.stages.very_stunned.label>muito atordoado</AB_Paralysis.stages.very_stunned.label>
+  <!-- EN: paralysed -->
+  <AB_Paralysis.stages.paralysed.label>paralisado</AB_Paralysis.stages.paralysed.label>
+  <!-- EN: ravaging intestinal parasites -->
+  <AB_RavagingIntestinalParasites.label>parasitas intestinais devastadores</AB_RavagingIntestinalParasites.label>
+  <!-- EN: A ravaging genetically engineered tapeworm has infected this person.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt; Will increase severity unless treated. It will go away after a total tend quality of 3. -->
+  <AB_RavagingIntestinalParasites.description>Uma tênia devastadora, modificada geneticamente, infectou esta pessoa.\n\n&lt;color=#E5E54C&gt;Efeito no jogo:&lt;/color&gt; a gravidade aumenta se não for tratada. Some depois de uma qualidade de tratamento total de 3.</AB_RavagingIntestinalParasites.description>
+  <!-- EN: minor -->
+  <AB_RavagingIntestinalParasites.stages.minor.label>leve</AB_RavagingIntestinalParasites.stages.minor.label>
+  <!-- EN: major -->
+  <AB_RavagingIntestinalParasites.stages.major.label>grave</AB_RavagingIntestinalParasites.stages.major.label>
+  <!-- EN: extreme -->
+  <AB_RavagingIntestinalParasites.stages.extreme.label>extrema</AB_RavagingIntestinalParasites.stages.extreme.label>
+  <!-- EN: viral abasia -->
+  <AB_ViralAbasia.label>abasia viral</AB_ViralAbasia.label>
+  <!-- EN: Most likely artificially created as a bio-weapon, this perverse virus attacks the victim's motor cortex eventually leaving the person immobilized.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt; Treatable, immunizable disease. -->
+  <AB_ViralAbasia.description>Provavelmente criado como arma biológica, este vírus perverso ataca o córtex motor da vítima e acaba deixando a pessoa imóvel.\n\n&lt;color=#E5E54C&gt;Efeito no jogo:&lt;/color&gt; doença tratável e imunizável.</AB_ViralAbasia.description>
+  <!-- EN: minor -->
+  <AB_ViralAbasia.stages.minor-0.label>leve</AB_ViralAbasia.stages.minor-0.label>
+  <!-- EN: minor -->
+  <AB_ViralAbasia.stages.minor-1.label>leve</AB_ViralAbasia.stages.minor-1.label>
+  <!-- EN: major -->
+  <AB_ViralAbasia.stages.major.label>grave</AB_ViralAbasia.stages.major.label>
+  <!-- EN: extreme -->
+  <AB_ViralAbasia.stages.extreme.label>extrema</AB_ViralAbasia.stages.extreme.label>
+  <!-- EN: bacterial gangrene -->
+  <AB_BacterialGangrene.label>gangrena bacteriana</AB_BacterialGangrene.label>
+  <!-- EN: A fast-growing bacterial disease that causes gangrene, with skin progressively blackening and falling off. If treated properly, it will be cured in 3-4 days. Even if treated, the colonist may lose a toe or finger or two. -->
+  <AB_BacterialGangrene.description>Uma doença bacteriana de avanço rápido que causa gangrena: a pele vai escurecendo e caindo. Se tratada direito, é curada em 3 a 4 dias. Mesmo com tratamento, o colono pode perder um ou dois dedos.</AB_BacterialGangrene.description>
+  <!-- EN: minor -->
+  <AB_BacterialGangrene.stages.minor.label>leve</AB_BacterialGangrene.stages.minor.label>
+  <!-- EN: major -->
+  <AB_BacterialGangrene.stages.major.label>grave</AB_BacterialGangrene.stages.major.label>
+  <!-- EN: extreme -->
+  <AB_BacterialGangrene.stages.extreme.label>extrema</AB_BacterialGangrene.stages.extreme.label>
+  <!-- EN: gangrene -->
+  <AB_Gangrene.label>gangrena</AB_Gangrene.label>
+  <!-- EN: Death of body tissue due to a lack of blood flow or a serious bacterial infection. -->
+  <AB_Gangrene.description>Morte de tecido do corpo por falta de fluxo sanguíneo ou por uma infecção bacteriana grave.</AB_Gangrene.description>
+  <!-- EN: gangrene scar -->
+  <AB_Gangrene.comps.HediffComp_GetsPermanent.permanentLabel>cicatriz de gangrena</AB_Gangrene.comps.HediffComp_GetsPermanent.permanentLabel>
+  <!-- EN: Lost to gangrene -->
+  <AB_Gangrene.injuryProps.destroyedLabel>Perdido para a gangrena</AB_Gangrene.injuryProps.destroyedLabel>
+  <!-- EN: {0} in the {1} -->
+  <AB_Gangrene.labelNounPretty>{0} em {1}</AB_Gangrene.labelNounPretty>
+</LanguageData>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <!-- EN: portable wood-fired generator -->
+  <VFE_PortableWoodFiredGenerator.label>gerador portátil a lenha</VFE_PortableWoodFiredGenerator.label>
+  <!-- EN: Produces a small amount of power by consuming wood. Must be periodically loaded with wood fuel by hand. This generator is light enough to be carried around. -->
+  <VFE_PortableWoodFiredGenerator.description>Produz um pouco de energia queimando lenha. Precisa ser abastecido à mão de tempos em tempos. É leve o bastante para ser carregado por aí.</VFE_PortableWoodFiredGenerator.description>
+  <!-- EN: portable chemfuel powered generator -->
+  <VFE_PortableChemfuelPoweredGenerator.label>gerador portátil a combustível químico</VFE_PortableChemfuelPoweredGenerator.label>
+  <!-- EN: Produces a small amount of power by consuming chemfuel. Must be periodically refueled by hand. This generator is light enough to be carried around. -->
+  <VFE_PortableChemfuelPoweredGenerator.description>Produz um pouco de energia queimando combustível químico. Precisa ser reabastecido à mão de tempos em tempos. É leve o bastante para ser carregado por aí.</VFE_PortableChemfuelPoweredGenerator.description>
+  <!-- EN: industrial wood-fired generator -->
+  <VFE_IndustrialWoodFiredGenerator.label>gerador industrial a lenha</VFE_IndustrialWoodFiredGenerator.label>
+  <!-- EN: Produces a large amount of power by consuming wood. Must be periodically loaded with wood fuel by hand. -->
+  <VFE_IndustrialWoodFiredGenerator.description>Produz muita energia queimando lenha. Precisa ser abastecido à mão de tempos em tempos.</VFE_IndustrialWoodFiredGenerator.description>
+  <!-- EN: industrial chemfuel powered generator -->
+  <VFE_IndustrialChemfuelPoweredGenerator.label>gerador industrial a combustível químico</VFE_IndustrialChemfuelPoweredGenerator.label>
+  <!-- EN: Produces a large amount of power by consuming chemfuel. Must be periodically refueled by hand. -->
+  <VFE_IndustrialChemfuelPoweredGenerator.description>Produz muita energia queimando combustível químico. Precisa ser reabastecido à mão de tempos em tempos.</VFE_IndustrialChemfuelPoweredGenerator.description>
+  <!-- EN: tidal generator -->
+  <VFE_TidalGenerator.label>gerador de maré</VFE_TidalGenerator.label>
+  <!-- EN: Produces electricity from moving masses of water, particularly tides. Must be placed on water. -->
+  <VFE_TidalGenerator.description>Produz eletricidade com o movimento de massas de água, sobretudo das marés. Precisa ser posto sobre a água.</VFE_TidalGenerator.description>
+</LanguageData>

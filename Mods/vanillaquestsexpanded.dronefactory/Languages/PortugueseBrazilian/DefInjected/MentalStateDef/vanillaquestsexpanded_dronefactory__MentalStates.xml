@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <!-- EN: diagnostic loop -->
+  <VQE_DiagnosticLoop.label>laço de diagnóstico</VQE_DiagnosticLoop.label>
+  <!-- EN: Malfunctioning: Diagnostic loop -->
+  <VQE_DiagnosticLoop.baseInspectLine>Com defeito: laço de diagnóstico</VQE_DiagnosticLoop.baseInspectLine>
+  <!-- EN: connection timed out -->
+  <VQE_ConnectionTimedOut.label>conexão expirada</VQE_ConnectionTimedOut.label>
+  <!-- EN: Malfunctioning: Connection timed out -->
+  <VQE_ConnectionTimedOut.baseInspectLine>Com defeito: conexão expirada</VQE_ConnectionTimedOut.baseInspectLine>
+  <!-- EN: indexing -->
+  <VQE_Indexing.label>indexando</VQE_Indexing.label>
+  <!-- EN: Malfunctioning: Indexing -->
+  <VQE_Indexing.baseInspectLine>Com defeito: indexando</VQE_Indexing.baseInspectLine>
+  <!-- EN: sensor lag -->
+  <VQE_SensorLag.label>atraso de sensor</VQE_SensorLag.label>
+  <!-- EN: Malfunctioning: Sensor lag -->
+  <VQE_SensorLag.baseInspectLine>Com defeito: atraso de sensor</VQE_SensorLag.baseInspectLine>
+  <!-- EN: hoarding loop -->
+  <VQE_HoardingLoop.label>laço de acumulação</VQE_HoardingLoop.label>
+  <!-- EN: Malfunctioning: Hoarding loop -->
+  <VQE_HoardingLoop.baseInspectLine>Com defeito: laço de acumulação</VQE_HoardingLoop.baseInspectLine>
+  <!-- EN: overclock -->
+  <VQE_Overclock.label>sobrecarga</VQE_Overclock.label>
+  <!-- EN: Malfunctioning: Overclock -->
+  <VQE_Overclock.baseInspectLine>Com defeito: sobrecarga</VQE_Overclock.baseInspectLine>
+  <!-- EN: desync -->
+  <VQE_Desync.label>dessincronia</VQE_Desync.label>
+  <!-- EN: Malfunctioning: Desync -->
+  <VQE_Desync.baseInspectLine>Com defeito: dessincronia</VQE_Desync.baseInspectLine>
+  <!-- EN: fluid leak -->
+  <VQE_FluidLeak.label>vazamento de fluido</VQE_FluidLeak.label>
+  <!-- EN: Malfunctioning: Fluid leak -->
+  <VQE_FluidLeak.baseInspectLine>Com defeito: vazamento de fluido</VQE_FluidLeak.baseInspectLine>
+  <!-- EN: rebooting -->
+  <VQE_Reboot.label>reiniciando</VQE_Reboot.label>
+  <!-- EN: Malfunctioning: Rebooting -->
+  <VQE_Reboot.baseInspectLine>Com defeito: reiniciando</VQE_Reboot.baseInspectLine>
+  <!-- EN: hardcrash -->
+  <VQE_Hardcrash.label>pane total</VQE_Hardcrash.label>
+  <!-- EN: Malfunctioning: Hardcrash -->
+  <VQE_Hardcrash.baseInspectLine>Com defeito: pane total</VQE_Hardcrash.baseInspectLine>
+  <!-- EN: killswitch -->
+  <VQE_Killswitch.label>desligamento de emergência</VQE_Killswitch.label>
+  <!-- EN: Malfunctioning: Killswitch -->
+  <VQE_Killswitch.baseInspectLine>Com defeito: desligamento de emergência</VQE_Killswitch.baseInspectLine>
+  <!-- EN: self-decommission -->
+  <VQE_SelfDecommission.label>autodescomissionamento</VQE_SelfDecommission.label>
+  <!-- EN: Malfunctioning: Self-decommission -->
+  <VQE_SelfDecommission.baseInspectLine>Com defeito: autodescomissionamento</VQE_SelfDecommission.baseInspectLine>
+  <!-- EN: hardware failure -->
+  <VQE_HardwareFailure.label>falha de hardware</VQE_HardwareFailure.label>
+  <!-- EN: Malfunctioning: Hardware failure -->
+  <VQE_HardwareFailure.baseInspectLine>Com defeito: falha de hardware</VQE_HardwareFailure.baseInspectLine>
+</LanguageData>

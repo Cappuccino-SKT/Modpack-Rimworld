@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <VQE_DroneFactory.questDescriptionRules.rulesStrings>
+    <!-- EN: questDescription-&gt;[asker_nameDef], [asker_faction_leaderTitle] of [asker_faction_name], has tracked down the source of the drone resurgences. A dedicated group of pirates have been using the stray drones as a play for a novelty market, and have appropriated an ancient factory as their headquarters.\n\nThe site is manufacturing large amounts of drones, and is selling them to other pirate factions at premium prices. Until this site is taken out, pirate raiding parties might purchase these drones and use them in their attacks.\n\n[asker_nameDef] suggests they have a genius in captivity supplying them with their blueprints, known only as The Tinkerer.\n\nYou can free their captive mastermind from his captivity, or kill him to prevent his ancient knowledge from being exploited further. The pirates won't go out without a fight, and will likely continue to produce drones during the approach and defend alongside them.\n\nDefenders:\n[ListOfEnemies] -->
+    <li>questDescription-&gt;[asker_nameDef], [asker_faction_leaderTitle] de [asker_faction_name], achou a origem da volta dos drones. Um grupo dedicado de piratas descobriu um nicho de mercado nos drones perdidos e tomou uma fábrica antiga como sede.\n\nO lugar está fabricando drones em grande quantidade e vendendo para outras facções piratas a preço de grife. Enquanto ele estiver de pé, bandos piratas podem comprar esses drones e usá-los nos ataques.\n\n[asker_nameDef] acha que eles mantêm cativo um gênio que fornece as plantas, conhecido só como O Funileiro.\n\nVocê pode libertar o cérebro da operação ou matá-lo para que o conhecimento antigo dele não seja mais explorado. Os piratas não vão sair sem briga, e provavelmente vão continuar produzindo drones enquanto você se aproxima e lutar ao lado deles.\n\nDefensores:\n[ListOfEnemies]</li>
+  </VQE_DroneFactory.questDescriptionRules.rulesStrings>
+  <VQE_DroneFactory.questNameRules.rulesStrings>
+    <!-- EN: questName-&gt;The Drone Factory -->
+    <li>questName-&gt;A fábrica de drones</li>
+  </VQE_DroneFactory.questNameRules.rulesStrings>
+</LanguageData>

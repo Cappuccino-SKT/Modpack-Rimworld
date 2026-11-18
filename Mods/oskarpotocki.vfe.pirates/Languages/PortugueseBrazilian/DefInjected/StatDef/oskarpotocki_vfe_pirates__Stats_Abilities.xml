@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <!-- EN: power jump range -->
+  <VFEP_PowerJumpRange.label>alcance do salto propulsado</VFEP_PowerJumpRange.label>
+  <!-- EN: The maximum distance of a power jump. -->
+  <VFEP_PowerJumpRange.description>A distância máxima de um salto propulsado.</VFEP_PowerJumpRange.description>
+  <!-- EN: power jump detonation radius -->
+  <VFEP_PowerJumpDetonationRadius.label>raio de detonação do salto propulsado</VFEP_PowerJumpDetonationRadius.label>
+  <!-- EN: The radius of the area of detonation. -->
+  <VFEP_PowerJumpDetonationRadius.description>O raio da área de detonação.</VFEP_PowerJumpDetonationRadius.description>
+  <!-- EN: power jump flight speed -->
+  <VFEP_FlightSpeed.label>velocidade do salto propulsado</VFEP_FlightSpeed.label>
+  <!-- EN: The speed of a power jump. -->
+  <VFEP_FlightSpeed.description>A velocidade de um salto propulsado.</VFEP_FlightSpeed.description>
+  <!-- EN: siege mode cooldown -->
+  <VFEP_SiegeModeCooldown.label>recarga do modo de cerco</VFEP_SiegeModeCooldown.label>
+  <!-- EN: How long it takes to activate siege mode again. -->
+  <VFEP_SiegeModeCooldown.description>Quanto tempo leva para poder ativar o modo de cerco de novo.</VFEP_SiegeModeCooldown.description>
+  <!-- EN: {0} s -->
+  <VFEP_SiegeModeCooldown.formatString>{0} s</VFEP_SiegeModeCooldown.formatString>
+</LanguageData>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <!-- EN: no geothermal activity -->
+  <VEE_SteamGeysers_Decreased.label>sem atividade geotérmica</VEE_SteamGeysers_Decreased.label>
+  <!-- EN: Steam geysers are absent from this area. -->
+  <VEE_SteamGeysers_Decreased.description>Não há gêiseres de vapor nesta área.</VEE_SteamGeysers_Decreased.description>
+  <!-- EN: rotstink geysers -->
+  <VEE_RotstinkVents.label>gêiseres de podridão</VEE_RotstinkVents.label>
+  <!-- EN: Foul geysers that intermittently belch clouds of corpse-born miasma, choking the air with the stench of decay. -->
+  <VEE_RotstinkVents.description>Gêiseres fétidos que de tempos em tempos arrotam nuvens de miasma de cadáver, sufocando o ar com o fedor da decomposição.</VEE_RotstinkVents.description>
+  <!-- EN: toxic geysers -->
+  <VEE_ToxicVents.label>gêiseres tóxicos</VEE_ToxicVents.label>
+  <!-- EN: Volatile fissures that periodically spew noxious green gas, poisoning the air and sickening anything that breathes it. -->
+  <VEE_ToxicVents.description>Fendas instáveis que de tempos em tempos expelem um gás verde nocivo, envenenando o ar e adoecendo tudo que o respira.</VEE_ToxicVents.description>
+  <!-- EN: smoke geysers -->
+  <VEE_SmokeVents.label>gêiseres de fumaça</VEE_SmokeVents.label>
+  <!-- EN: Smoldering fissures that intermittently exhale thick, acrid smoke, reducing visibility and choking the lungs. -->
+  <VEE_SmokeVents.description>Fendas fumegantes que de tempos em tempos soltam uma fumaça grossa e acre, reduzindo a visibilidade e sufocando os pulmões.</VEE_SmokeVents.description>
+  <!-- EN: deadlife geysers -->
+  <VEE_DeadlifeVents.label>gêiseres de morte-viva</VEE_DeadlifeVents.label>
+  <!-- EN: Sinister geysers that exhale eerie, ash-like dust—capable of reawakening the dead under its haunting influence. -->
+  <VEE_DeadlifeVents.description>Gêiseres sinistros que soltam uma poeira estranha parecida com cinza, capaz de despertar os mortos sob sua influência assombrosa.</VEE_DeadlifeVents.description>
+  <!-- EN: mineral devoid -->
+  <VEE_MineralDevoid.label>sem minerais</VEE_MineralDevoid.label>
+  <!-- EN: decreased soil fertility -->
+  <VEE_Fertility_Reduced.label>solo menos fértil</VEE_Fertility_Reduced.label>
+  <!-- EN: This area contains no fertile soils. -->
+  <VEE_Fertility_Reduced.description>Esta área não tem solo fértil.</VEE_Fertility_Reduced.description>
+  <!-- EN: rich volcanic soil -->
+  <VEE_VolcanicRichSoil.label>solo vulcânico rico</VEE_VolcanicRichSoil.label>
+  <!-- EN: This area has patches of volcanic soil that have higher than average fertility. -->
+  <VEE_VolcanicRichSoil.description>Esta área tem manchas de solo vulcânico mais fértil que a média.</VEE_VolcanicRichSoil.description>
+  <!-- EN: deep ore rich -->
+  <VEE_DeepOreRich.label>rico em minério profundo</VEE_DeepOreRich.label>
+  <!-- EN: This area is rich in deep ores, increasing the yield of deep drills by 25%. -->
+  <VEE_DeepOreRich.description>Esta área é rica em minério profundo, o que aumenta em 25% o rendimento das perfuratrizes profundas.</VEE_DeepOreRich.description>
+  <!-- EN: deep ore poor -->
+  <VEE_DeepOrePoor.label>pobre em minério profundo</VEE_DeepOrePoor.label>
+  <!-- EN: This area is poor in deep ores, decreasing the yield of deep drills by 25%. -->
+  <VEE_DeepOrePoor.description>Esta área é pobre em minério profundo, o que reduz em 25% o rendimento das perfuratrizes profundas.</VEE_DeepOrePoor.description>
+  <!-- EN: no deep ores -->
+  <VEE_DeepOreDevoid.label>sem minério profundo</VEE_DeepOreDevoid.label>
+  <!-- EN: This area is so poor in deep ores that they are almost non-existant. -->
+  <VEE_DeepOreDevoid.description>Esta área é tão pobre em minério profundo que ele quase não existe.</VEE_DeepOreDevoid.description>
+  <!-- EN: hard to traverse -->
+  <VEE_HardToTraverse.label>difícil de atravessar</VEE_HardToTraverse.label>
+  <!-- EN: Certain geographical features in this region make it harder to traverse. -->
+  <VEE_HardToTraverse.description>Certas características geográficas desta região dificultam a travessia.</VEE_HardToTraverse.description>
+  <!-- EN: easy to traverse -->
+  <VEE_EasyToTraverse.label>fácil de atravessar</VEE_EasyToTraverse.label>
+  <!-- EN: Certain geographical features in this region make it easier to traverse. -->
+  <VEE_EasyToTraverse.description>Certas características geográficas desta região facilitam a travessia.</VEE_EasyToTraverse.description>
+  <!-- EN: eltex deposits -->
+  <VEE_EltexDeposits.label>depósitos de eltex</VEE_EltexDeposits.label>
+  <!-- EN: This area has deposits of psychically active eltex. -->
+  <VEE_EltexDeposits.description>Esta área tem depósitos de eltex psiquicamente ativo.</VEE_EltexDeposits.description>
+  <!-- EN: sinkholes -->
+  <VEE_Sinkholes.label>dolinas</VEE_Sinkholes.label>
+  <!-- EN: This region contains several collapses in the ground forming deep, unstable pits, often exposing bare rock beneath the surface. -->
+  <VEE_Sinkholes.description>Esta região tem vários desabamentos do chão que formam buracos fundos e instáveis, muitas vezes expondo a rocha nua por baixo.</VEE_Sinkholes.description>
+  <!-- EN: stronger tides -->
+  <VEE_StrongerTides.label>marés mais fortes</VEE_StrongerTides.label>
+  <!-- EN: Tides in this region are particularly strong, increasing output of tidal generators by 40%. -->
+  <VEE_StrongerTides.description>As marés desta região são especialmente fortes, aumentando em 40% a produção dos geradores de maré.</VEE_StrongerTides.description>
+  <!-- EN: large river banks -->
+  <VEE_LargeRiverBanks.label>margens largas</VEE_LargeRiverBanks.label>
+  <!-- EN: The river present in this region has larger banks. -->
+  <VEE_LargeRiverBanks.description>O rio desta região tem margens mais largas.</VEE_LargeRiverBanks.description>
+  <!-- EN: advanced component deposits -->
+  <VEE_MineableComponentSpacer.label>depósitos de componentes avançados</VEE_MineableComponentSpacer.label>
+  <!-- EN: This area has deposits of advanced ancient machinery, which can be mined for advanced components. -->
+  <VEE_MineableComponentSpacer.description>Esta área tem depósitos de maquinário antigo avançado, que podem ser minerados para obter componentes avançados.</VEE_MineableComponentSpacer.description>
+  <!-- EN: solid snow -->
+  <VEE_DeepSnow.label>neve sólida</VEE_DeepSnow.label>
+  <!-- EN: This region is covered in heavy, compacted layers of snow that resist movement and muffle sound. -->
+  <VEE_DeepSnow.description>Esta região é coberta por camadas pesadas e compactadas de neve que atrapalham o movimento e abafam o som.</VEE_DeepSnow.description>
+</LanguageData>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <!-- EN: Drill for {0} -->
+  <VFE_ChunkToMine>Perfurar atrás de {0}</VFE_ChunkToMine>
+  <!-- EN: Drill for Random Chunks -->
+  <VFE_ChunkRandomMine>Perfurar atrás de pedaços aleatórios</VFE_ChunkRandomMine>
+  <!-- EN: Choose chunk type to drill -->
+  <VFE_ChooseMine>Escolher tipo de pedaço a perfurar</VFE_ChooseMine>
+  <!-- EN: Choose chunk type to drill. You can choose any of the map's rock types, or random -->
+  <VFE_ChooseMineDesc>Escolhe o tipo de pedaço a perfurar. Dá para escolher qualquer rocha do mapa, ou aleatório</VFE_ChooseMineDesc>
+  <!-- EN: Random chunk -->
+  <VFE_RandomRock>Pedaço aleatório</VFE_RandomRock>
+  <!-- EN: Select machine output -->
+  <VFE_PleaseSelectOutput>Escolha o produto da máquina</VFE_PleaseSelectOutput>
+  <!-- EN: This building must be placed on water -->
+  <VFE_NeedsWater>Este prédio precisa ser posto sobre a água</VFE_NeedsWater>
+  <!-- EN: This building must be placed on sand -->
+  <VFE_NeedsSand>Este prédio precisa ser posto sobre a areia</VFE_NeedsSand>
+  <!-- EN: Random Graphic -->
+  <VFE_ChangeGraphic>Visual aleatório</VFE_ChangeGraphic>
+  <!-- EN: Change Graphic of this building randomly between those available -->
+  <VFE_ChangeGraphicDesc>Troca o visual deste prédio ao acaso entre os disponíveis</VFE_ChangeGraphicDesc>
+  <!-- EN: Choose Graphic -->
+  <VFE_ChooseGraphic>Escolher visual</VFE_ChooseGraphic>
+  <!-- EN: Choose Graphic of this building via a menu with all available options -->
+  <VFE_ChooseGraphicDesc>Escolhe o visual deste prédio num menu com todas as opções</VFE_ChooseGraphicDesc>
+  <!-- EN: This building doesn't have extra random graphics to choose from. Some modder added the comp class to the building without alternative graphics, which is weird -->
+  <VFE_NoGraphics>Este prédio não tem visuais extras para escolher. Algum modder pôs o componente no prédio sem visuais alternativos, o que é estranho</VFE_NoGraphics>
+  <!-- EN: Hide the "Random Graphic" and "Choose Graphic" buttons -->
+  <VFE_HideRandomizeButton>Esconder os botões "Visual aleatório" e "Escolher visual"</VFE_HideRandomizeButton>
+  <!-- EN: Make random graphics buildings NOT start randomized -->
+  <VFE_RandomBuildingsDontStartRandom>Prédios de visual aleatório NÃO começam sorteados</VFE_RandomBuildingsDontStartRandom>
+  <!-- EN: Switch light color -->
+  <VFE.SwitchLightColor>Trocar cor da luz</VFE.SwitchLightColor>
+  <!-- EN: Change current light colour. -->
+  <VFE.SwitchLightColorDesc>Muda a cor atual da luz.</VFE.SwitchLightColorDesc>
+  <!-- EN: Change color to {0} -->
+  <VFE.ChangeColorTo>Mudar a cor para {0}</VFE.ChangeColorTo>
+  <!-- EN: Power is off. Impossible to switch color. -->
+  <VFE.ColorSwitchPowerOff>Sem energia. Não dá para trocar a cor.</VFE.ColorSwitchPowerOff>
+</LanguageData>

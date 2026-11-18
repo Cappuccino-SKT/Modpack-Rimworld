@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <!-- EN: permanent burn -->
+  <VEF_PermanentBurn.label>queimadura permanente</VEF_PermanentBurn.label>
+  <!-- EN: A permanent burn scar that cannot be treated. -->
+  <VEF_PermanentBurn.description>Uma cicatriz de queimadura permanente que não tem tratamento.</VEF_PermanentBurn.description>
+  <!-- EN: permanent burn -->
+  <VEF_PermanentBurn.comps.HediffComp_GetsPermanent.permanentLabel>queimadura permanente</VEF_PermanentBurn.comps.HediffComp_GetsPermanent.permanentLabel>
+  <!-- EN: Burned off -->
+  <VEF_PermanentBurn.injuryProps.destroyedLabel>Queimado por completo</VEF_PermanentBurn.injuryProps.destroyedLabel>
+  <!-- EN: Burned out -->
+  <VEF_PermanentBurn.injuryProps.destroyedOutLabel>Queimado por completo</VEF_PermanentBurn.injuryProps.destroyedOutLabel>
+  <!-- EN: a permanent burn -->
+  <VEF_PermanentBurn.labelNoun>uma queimadura permanente</VEF_PermanentBurn.labelNoun>
+  <!-- EN: {0} in the {1} -->
+  <VEF_PermanentBurn.labelNounPretty>{0} em {1}</VEF_PermanentBurn.labelNounPretty>
+  <!-- EN: acid burn -->
+  <VEF_AcidBuildup.label>queimadura de ácido</VEF_AcidBuildup.label>
+  <!-- EN: A splash of acid that continues to cause burn wounds for quite some time after the initial attack. -->
+  <VEF_AcidBuildup.description>Um respingo de ácido que continua causando queimaduras por um bom tempo depois do ataque.</VEF_AcidBuildup.description>
+  <!-- EN: minor, receiving burns -->
+  <VEF_AcidBuildup.stages.minor_receiving_burns.label>leve, sofrendo queimaduras</VEF_AcidBuildup.stages.minor_receiving_burns.label>
+  <!-- EN: moderate, receiving burns -->
+  <VEF_AcidBuildup.stages.moderate_receiving_burns.label>moderada, sofrendo queimaduras</VEF_AcidBuildup.stages.moderate_receiving_burns.label>
+  <!-- EN: serious, receiving burns -->
+  <VEF_AcidBuildup.stages.serious_receiving_burns.label>grave, sofrendo queimaduras</VEF_AcidBuildup.stages.serious_receiving_burns.label>
+  <!-- EN: acid burn -->
+  <VEF_AcidBurn.label>queimadura de ácido</VEF_AcidBurn.label>
+  <!-- EN: An acid burn. -->
+  <VEF_AcidBurn.description>Uma queimadura de ácido.</VEF_AcidBurn.description>
+  <!-- EN: acid burn scar -->
+  <VEF_AcidBurn.comps.HediffComp_GetsPermanent.permanentLabel>cicatriz de queimadura de ácido</VEF_AcidBurn.comps.HediffComp_GetsPermanent.permanentLabel>
+  <!-- EN: an acid burn -->
+  <VEF_AcidBurn.labelNoun>uma queimadura de ácido</VEF_AcidBurn.labelNoun>
+  <!-- EN: {0} in the {1} -->
+  <VEF_AcidBurn.labelNounPretty>{0} em {1}</VEF_AcidBurn.labelNounPretty>
+  <!-- EN: level of sunlight -->
+  <VEF_LightSustenance.label>nível de luz do sol</VEF_LightSustenance.label>
+  <!-- EN: This creature feeds on sunlight. Inadequate levels of light will kill it. -->
+  <VEF_LightSustenance.description>Esta criatura se alimenta de luz do sol. Luz insuficiente vai matá-la.</VEF_LightSustenance.description>
+  <!-- EN: adequate light -->
+  <VEF_LightSustenance.stages.adequate_light.label>luz adequada</VEF_LightSustenance.stages.adequate_light.label>
+  <!-- EN: poor light levels -->
+  <VEF_LightSustenance.stages.poor_light_levels.label>pouca luz</VEF_LightSustenance.stages.poor_light_levels.label>
+  <!-- EN: very low light levels -->
+  <VEF_LightSustenance.stages.very_low_light_levels.label>luz muito fraca</VEF_LightSustenance.stages.very_low_light_levels.label>
+  <!-- EN: lack of sunlight -->
+  <VEF_LightSustenance.stages.lack_of_sunlight.label>falta de luz do sol</VEF_LightSustenance.stages.lack_of_sunlight.label>
+  <!-- EN: extreme lack of sustenance -->
+  <VEF_LightSustenance.stages.extreme_lack_of_sustenance.label>falta extrema de sustento</VEF_LightSustenance.stages.extreme_lack_of_sustenance.label>
+  <!-- EN: toxic buildup -->
+  <VEF_ToxicBuildup.label>acúmulo tóxico</VEF_ToxicBuildup.label>
+  <!-- EN: Toxins in the bloodstream. This can come from various sources, including environmental toxins, venomous bites, or poisoned weapons.\n\nAt high doses, toxic buildup is lethal. Even at low doses, it can generate cancers.\n\nContrary to base game toxic buildup, creatures who die with this toxic damage can be eaten. -->
+  <VEF_ToxicBuildup.description>Toxinas no sangue. Podem vir de várias fontes, como toxinas do ambiente, mordidas venenosas ou armas envenenadas.\n\nEm doses altas, o acúmulo tóxico é letal. Mesmo em doses baixas, pode causar câncer.\n\nAo contrário do acúmulo tóxico do jogo base, criaturas que morrem com este dano tóxico podem ser comidas.</VEF_ToxicBuildup.description>
+  <!-- EN: initial -->
+  <VEF_ToxicBuildup.stages.initial-0.label>inicial</VEF_ToxicBuildup.stages.initial-0.label>
+  <!-- EN: initial -->
+  <VEF_ToxicBuildup.stages.initial-1.label>inicial</VEF_ToxicBuildup.stages.initial-1.label>
+  <!-- EN: minor -->
+  <VEF_ToxicBuildup.stages.minor.label>leve</VEF_ToxicBuildup.stages.minor.label>
+  <!-- EN: moderate -->
+  <VEF_ToxicBuildup.stages.moderate.label>moderada</VEF_ToxicBuildup.stages.moderate.label>
+  <!-- EN: serious -->
+  <VEF_ToxicBuildup.stages.serious.label>sério</VEF_ToxicBuildup.stages.serious.label>
+  <!-- EN: extreme -->
+  <VEF_ToxicBuildup.stages.extreme.label>extrema</VEF_ToxicBuildup.stages.extreme.label>
+  <!-- EN: sudden detonation -->
+  <VEF_Kamikaze.label>detonação súbita</VEF_Kamikaze.label>
+  <!-- EN: Boom. -->
+  <VEF_Kamikaze.description>Bum.</VEF_Kamikaze.description>
+  <!-- EN: initial-hidden -->
+  <VEF_Kamikaze.stages.initialhidden.label>inicial-oculto</VEF_Kamikaze.stages.initialhidden.label>
+  <!-- EN: critical -->
+  <VEF_Kamikaze.stages.critical.label>crítico</VEF_Kamikaze.stages.critical.label>
+  <!-- EN: invisibility -->
+  <VEF_ControlledInvisibility.label>invisibilidade</VEF_ControlledInvisibility.label>
+  <!-- EN: Shrouded in a veil of controlled invisibility. -->
+  <VEF_ControlledInvisibility.description>Envolto num véu de invisibilidade controlada.</VEF_ControlledInvisibility.description>
+  <!-- EN: stillborn animal -->
+  <VEF_StillbornAnimal.label>natimorto</VEF_StillbornAnimal.label>
+  <!-- EN: This animal died due to non-specific complications during pregnancy. -->
+  <VEF_StillbornAnimal.description>Este animal morreu por complicações inespecíficas na gestação.</VEF_StillbornAnimal.description>
+</LanguageData>

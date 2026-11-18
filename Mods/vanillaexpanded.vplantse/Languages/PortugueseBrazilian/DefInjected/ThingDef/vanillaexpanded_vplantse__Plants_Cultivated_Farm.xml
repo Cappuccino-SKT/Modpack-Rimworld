@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <!-- EN: Grass -->
+  <VCE_Grass.label>Grama</VCE_Grass.label>
+  <!-- EN: Cultivated grass. Grows anywhere there is a little light and minimally fertile ground.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt; Grass can be used to feed cattle, similar to haygrass. It isn't affected by blight, but can't be harvested and stored as hay can. -->
+  <VCE_Grass.description>Grama cultivada. Cresce em qualquer lugar com um pouco de luz e um mínimo de fertilidade.\n\n&lt;color=#E5E54C&gt;Efeito no jogo:&lt;/color&gt; a grama alimenta o gado, como o capim-feno. Não sofre com a praga, mas não pode ser colhida e armazenada como o feno.</VCE_Grass.description>
+  <!-- EN: tall grass -->
+  <VCE_TallGrass.label>capim alto</VCE_TallGrass.label>
+  <!-- EN: Cultivated tall grass. Grows anywhere there is a little light and minimally fertile ground. Slows down anyone moving over it.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt; Grass can be used to feed cattle, similar to haygrass. It isn't affected by blight, but can't be harvested and stored as hay can. -->
+  <VCE_TallGrass.description>Capim alto cultivado. Cresce em qualquer lugar com um pouco de luz e um mínimo de fertilidade. Atrasa quem passa por ele.\n\n&lt;color=#E5E54C&gt;Efeito no jogo:&lt;/color&gt; o capim alimenta o gado, como o capim-feno. Não sofre com a praga, mas não pode ser colhido e armazenado como o feno.</VCE_TallGrass.description>
+  <!-- EN: agave -->
+  <VCE_Agave.label>agave</VCE_Agave.label>
+  <!-- EN: A large-leafed desert plant with edible flowers and stalks. -->
+  <VCE_Agave.description>Uma planta do deserto de folhas grandes, com flores e talos comestíveis.</VCE_Agave.description>
+  <!-- EN: onion plant -->
+  <VCE_Onion.label>pé de cebola</VCE_Onion.label>
+  <!-- EN: An edible bulb of pungent, savory taste and smell with almost as many varieties as cooking applications.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt; Onion isn't affected by blight. -->
+  <VCE_Onion.description>Um bulbo comestível de gosto e cheiro fortes e saborosos, com quase tantas variedades quanto usos na cozinha.\n\n&lt;color=#E5E54C&gt;Efeito no jogo:&lt;/color&gt; a cebola não sofre com a praga.</VCE_Onion.description>
+  <!-- EN: pumpkin plant -->
+  <VCE_Pumpkin.label>pé de abóbora</VCE_Pumpkin.label>
+  <!-- EN: Technically a giant berry, pumpkins are renowned for being trivial to both sow and harvest. However, their durability means added weight and mass - Too cumbersome for hydroponics basins.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt; Pumpkin harvests will always succeed, independently of the colonist's plants skill. -->
+  <VCE_Pumpkin.description>Tecnicamente uma baga gigante, a abóbora é famosa por ser facílima de plantar e colher. Mas tanta robustez traz peso e volume: pesada demais para bacias de hidroponia.\n\n&lt;color=#E5E54C&gt;Efeito no jogo:&lt;/color&gt; a colheita de abóbora sempre dá certo, qualquer que seja a habilidade de cultivo do colono.</VCE_Pumpkin.description>
+  <!-- EN: pepper plant -->
+  <VCE_Pepper.label>pé de pimenta</VCE_Pepper.label>
+  <!-- EN: Tiny, spicy, crimson pods often used in sauces, relishes, or powders. While the flavor itself is mild the capsaicin contained inside means humans find them oddly addicting, if painful when consumed in mass. Animals are known to avoid eating them entirely.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt; Animals won't eat the pepper plant, having an effective nutrition of zero. Note however that they will eat the harvested produce normally. -->
+  <VCE_Pepper.description>Vagens pequenas, ardidas e vermelhas, muito usadas em molhos, conservas e pós. O sabor em si é suave, mas a capsaicina faz os humanos as acharem estranhamente viciantes, ainda que dolorosas em grande quantidade. Os animais evitam comê-las por completo.\n\n&lt;color=#E5E54C&gt;Efeito no jogo:&lt;/color&gt; os animais não comem o pé de pimenta, que tem nutrição efetiva zero. Mas comem normalmente as pimentas colhidas.</VCE_Pepper.description>
+  <!-- EN: pea plant -->
+  <VCE_Peas.label>pé de ervilha</VCE_Peas.label>
+  <!-- EN: Spherical green seeds tucked safely away in a fleshy pod. Pea plants are known to be quite thirsty, and will benefit greatly from rainfall. Peas are also notable for having potentially long shelf-lives when dried properly.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt; Normally less efficient than corn, rice or potatoes, peas will however receive a huge 50% growth boost if it is raining. -->
+  <VCE_Peas.description>Sementes verdes e redondas, bem guardadas numa vagem carnuda. O pé de ervilha bebe muita água e se dá muito bem com chuva. Secas do jeito certo, as ervilhas podem durar muito tempo.\n\n&lt;color=#E5E54C&gt;Efeito no jogo:&lt;/color&gt; em geral menos eficiente que milho, arroz ou batata, a ervilha ganha um enorme bônus de 50% no crescimento quando chove.</VCE_Peas.description>
+  <!-- EN: eggplant -->
+  <VCE_Eggplant.label>berinjela</VCE_Eggplant.label>
+  <!-- EN: A bulbous purple fruit of the nightshade family. Eggplant is rarely served as a side, generally filling the role of the main component of the dish. Flourishes in warm weather.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt; Eggplants will grow 30% faster if temperature is between 37 and 60 ºC. -->
+  <VCE_Eggplant.description>Uma fruta roxa e bojuda da família das solanáceas. Raramente é acompanhamento: em geral é o prato principal. Prospera no calor.\n\n&lt;color=#E5E54C&gt;Efeito no jogo:&lt;/color&gt; a berinjela cresce 30% mais rápido entre 37 e 60 ºC.</VCE_Eggplant.description>
+  <!-- EN: cabbage plant -->
+  <VCE_Cabbage.label>pé de repolho</VCE_Cabbage.label>
+  <!-- EN: A somewhat hardy, leafy green vegetable, often chopped and then fermented or stewed. This particular strain seems highly resistant to airborne toxin and radiation. \n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt; Cabbages are unaffected by toxic fallout and, contrary to other plants, won't die from it. -->
+  <VCE_Cabbage.description>Uma hortaliça folhosa e verde, bem resistente, muitas vezes picada e depois fermentada ou cozida. Esta variedade parece muito resistente a toxinas no ar e à radiação. \n\n&lt;color=#E5E54C&gt;Efeito no jogo:&lt;/color&gt; o repolho não é afetado pela precipitação tóxica e, ao contrário de outras plantas, não morre com ela.</VCE_Cabbage.description>
+  <!-- EN: beet plant -->
+  <VCE_Beet.label>pé de beterraba</VCE_Beet.label>
+  <!-- EN: An herb-like vegetable widely cultivated for humans and livestock alike, notably nutritious and historically used in dye making.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt; While beets do require rich soil they are quite hearty, and will continue to grow at 10% speed through winter. They need to be planted during growing season, though. -->
+  <VCE_Beet.description>Uma hortaliça muito cultivada para humanos e para o gado, notavelmente nutritiva e usada historicamente para fazer tinturas.\n\n&lt;color=#E5E54C&gt;Efeito no jogo:&lt;/color&gt; a beterraba exige solo rico, mas é bem resistente e continua crescendo a 10% da velocidade no inverno. Ainda precisa ser plantada na estação de cultivo.</VCE_Beet.description>
+  <!-- EN: tomato plant -->
+  <VCE_Tomato.label>tomateiro</VCE_Tomato.label>
+  <!-- EN: A series of juicy, glossy red fruits attached by vine, used commonly as a vegetable. Strong stewing releases natural sugars and mellows out acids contained within. Tomatoes are easily removed from the vine without having to uproot the plant.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt; Tomatoes won't be destroyed on harvest, similar to fruit trees. -->
+  <VCE_Tomato.description>Frutas vermelhas, brilhantes e suculentas presas ao pé, usadas como legume. Cozidos por muito tempo, soltam açúcares naturais e perdem a acidez. Os tomates saem fácil do pé sem arrancar a planta.\n\n&lt;color=#E5E54C&gt;Efeito no jogo:&lt;/color&gt; o tomateiro não é destruído na colheita, como as árvores frutíferas.</VCE_Tomato.description>
+</LanguageData>

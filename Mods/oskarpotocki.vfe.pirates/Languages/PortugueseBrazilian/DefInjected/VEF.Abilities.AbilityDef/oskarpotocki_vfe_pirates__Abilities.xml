@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <!-- EN: grappling hook -->
+  <VFEP_GrapplingHook.label>gancho de abordagem</VFEP_GrapplingHook.label>
+  <!-- EN: Grappling hook connects to walls and solid rock and allows the users to quickly move to the desired location. The launcher does not require ammunition, but time needs to be reserved between shots to wind it up again. -->
+  <VFEP_GrapplingHook.description>O gancho de abordagem se prende em paredes e rocha sólida e leva o usuário rápido aonde quiser. O lançador não precisa de munição, mas é preciso esperar entre um disparo e outro para enrolar o cabo.</VFEP_GrapplingHook.description>
+  <!-- EN: Using ability: {0} -->
+  <VFEP_GrapplingHook.jobReportString>Usando habilidade: {0}</VFEP_GrapplingHook.jobReportString>
+  <!-- EN: reload grappling hook -->
+  <VFEP_GrapplingHook.modExtensions.0.labelUnloaded>recarregar gancho de abordagem</VFEP_GrapplingHook.modExtensions.0.labelUnloaded>
+  <!-- EN: grappling hook -->
+  <VFEP_GrapplingHook.verbProperties.label>gancho de abordagem</VFEP_GrapplingHook.verbProperties.label>
+  <!-- EN: Siege Mode -->
+  <VFEP_SiegeMode.label>Modo cerco</VFEP_SiegeMode.label>
+  <!-- EN: Drill yourself into the ground in order to gain more stability and turn yourself into a stationary artillery unit, increasing the attack range and reload efficiency drastically. -->
+  <VFEP_SiegeMode.description>Crava-se no chão para ganhar estabilidade e virar uma unidade de artilharia fixa, aumentando muito o alcance de ataque e a eficiência da recarga.</VFEP_SiegeMode.description>
+  <!-- EN: Using ability: {0} -->
+  <VFEP_SiegeMode.jobReportString>Usando habilidade: {0}</VFEP_SiegeMode.jobReportString>
+  <!-- EN: Siege Mode -->
+  <VFEP_SiegeMode.verbProperties.label>Modo cerco</VFEP_SiegeMode.verbProperties.label>
+  <!-- EN: Power jump -->
+  <VFEP_PowerJump.label>Salto propulsado</VFEP_PowerJump.label>
+  <!-- EN: Use shoulder-mounted jump packs to travel a short distance and create a small explosion at both start and end of the flight. -->
+  <VFEP_PowerJump.description>Usa os propulsores de salto dos ombros para percorrer uma curta distância, causando uma pequena explosão na partida e na chegada.</VFEP_PowerJump.description>
+  <!-- EN: Using ability: {0} -->
+  <VFEP_PowerJump.jobReportString>Usando habilidade: {0}</VFEP_PowerJump.jobReportString>
+  <!-- EN: Power jump -->
+  <VFEP_PowerJump.verbProperties.label>Salto propulsado</VFEP_PowerJump.verbProperties.label>
+  <!-- EN: Blast off -->
+  <VFEP_BlastOff.label>Decolar</VFEP_BlastOff.label>
+  <!-- EN: Fire a large propulsion engine strapped to the back of your armor and designate a location on the world map to drop pod into. This will create a large explosion at the destination, but will most likely leave you stranded without fuel for the trip back. -->
+  <VFEP_BlastOff.description>Aciona um grande motor de propulsão preso às costas da armadura e escolhe um ponto no mapa-múndi para cair como uma cápsula. Causa uma grande explosão no destino, mas quase certamente deixa você ilhado, sem combustível para a volta.</VFEP_BlastOff.description>
+  <!-- EN: Using ability: {0} -->
+  <VFEP_BlastOff.jobReportString>Usando habilidade: {0}</VFEP_BlastOff.jobReportString>
+  <!-- EN: Blast off -->
+  <VFEP_BlastOff.verbProperties.label>Decolar</VFEP_BlastOff.verbProperties.label>
+</LanguageData>

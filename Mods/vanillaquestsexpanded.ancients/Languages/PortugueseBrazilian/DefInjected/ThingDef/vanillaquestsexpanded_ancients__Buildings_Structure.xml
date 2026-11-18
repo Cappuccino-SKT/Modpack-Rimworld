@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <!-- EN: ancient vault wall -->
+  <VQEA_AncientVaultWall.label>parede de cofre antiga</VQEA_AncientVaultWall.label>
+  <!-- EN: An impassable, indestructible vault wall. Capable of holding up a roof. -->
+  <VQEA_AncientVaultWall.description>Uma parede de cofre intransponível e indestrutível. Sustenta telhado.</VQEA_AncientVaultWall.description>
+  <!-- EN: ancient vault door -->
+  <VQEA_AncientVaultDoor.label>porta de cofre antiga</VQEA_AncientVaultDoor.label>
+  <!-- EN: A heavily fortified, nearly indestructible door. The door requires walls on either side to function. -->
+  <VQEA_AncientVaultDoor.description>Uma porta muito fortificada, quase indestrutível. Precisa de paredes dos dois lados para funcionar.</VQEA_AncientVaultDoor.description>
+  <!-- EN: locked ancient vault door -->
+  <VQEA_LockedAncientVaultDoor.label>porta de cofre antiga trancada</VQEA_LockedAncientVaultDoor.label>
+  <!-- EN: A heavily fortified, indestructible door. It needs to be hacked in order to open it. The door requires walls on either side to function. -->
+  <VQEA_LockedAncientVaultDoor.description>Uma porta muito fortificada e indestrutível. Precisa ser invadida para abrir. Precisa de paredes dos dois lados para funcionar.</VQEA_LockedAncientVaultDoor.description>
+  <!-- EN: Select a colonist to override the security on this -->
+  <VQEA_LockedAncientVaultDoor.comps.CompJammedAirlock.activateDescString>Escolha um colono para burlar a segurança desta porta</VQEA_LockedAncientVaultDoor.comps.CompJammedAirlock.activateDescString>
+  <!-- EN: Override -->
+  <VQEA_LockedAncientVaultDoor.comps.CompJammedAirlock.activateLabelString>Burlar</VQEA_LockedAncientVaultDoor.comps.CompJammedAirlock.activateLabelString>
+  <!-- EN: forcing locked ancient vault door open: {1}s -->
+  <VQEA_LockedAncientVaultDoor.comps.CompJammedAirlock.activatingString>forçando a porta de cofre antiga trancada: {1}s</VQEA_LockedAncientVaultDoor.comps.CompJammedAirlock.activatingString>
+  <!-- EN: forcing locked ancient vault door open -->
+  <VQEA_LockedAncientVaultDoor.comps.CompJammedAirlock.activatingStringPending>forçando a porta de cofre antiga trancada</VQEA_LockedAncientVaultDoor.comps.CompJammedAirlock.activatingStringPending>
+  <!-- EN: Choose who should do this -->
+  <VQEA_LockedAncientVaultDoor.comps.CompJammedAirlock.guiLabelString>Escolha quem deve fazer isso</VQEA_LockedAncientVaultDoor.comps.CompJammedAirlock.guiLabelString>
+  <!-- EN: Force this locked ancient vault door open -->
+  <VQEA_LockedAncientVaultDoor.comps.CompJammedAirlock.jobString>Forçar esta porta de cofre antiga trancada</VQEA_LockedAncientVaultDoor.comps.CompJammedAirlock.jobString>
+  <!-- EN: {PAWN_nameDef} has successfully forced the locked ancient vault door open. -->
+  <VQEA_LockedAncientVaultDoor.comps.CompJammedAirlock.messageCompletedString>{PAWN_nameDef} conseguiu forçar a porta de cofre antiga trancada.</VQEA_LockedAncientVaultDoor.comps.CompJammedAirlock.messageCompletedString>
+  <!-- EN: ancient large vault door -->
+  <VQEA_AncientVaultDoor_Large.label>porta de cofre antiga grande</VQEA_AncientVaultDoor_Large.label>
+  <!-- EN: A large, heavily fortified, nearly indestructible door. The door requires walls on either side to function. -->
+  <VQEA_AncientVaultDoor_Large.description>Uma porta grande, muito fortificada, quase indestrutível. Precisa de paredes dos dois lados para funcionar.</VQEA_AncientVaultDoor_Large.description>
+  <!-- EN: locked ancient large vault door -->
+  <VQEA_LockedAncientVaultDoor_Large.label>porta de cofre antiga grande trancada</VQEA_LockedAncientVaultDoor_Large.label>
+  <!-- EN: A heavily fortified, indestructible door. It needs to be hacked in order to open it. The door requires walls on either side to function. -->
+  <VQEA_LockedAncientVaultDoor_Large.description>Uma porta muito fortificada e indestrutível. Precisa ser invadida para abrir. Precisa de paredes dos dois lados para funcionar.</VQEA_LockedAncientVaultDoor_Large.description>
+  <!-- EN: Select a colonist to override the security on this -->
+  <VQEA_LockedAncientVaultDoor_Large.comps.CompJammedAirlock.activateDescString>Escolha um colono para burlar a segurança desta porta</VQEA_LockedAncientVaultDoor_Large.comps.CompJammedAirlock.activateDescString>
+  <!-- EN: Override -->
+  <VQEA_LockedAncientVaultDoor_Large.comps.CompJammedAirlock.activateLabelString>Burlar</VQEA_LockedAncientVaultDoor_Large.comps.CompJammedAirlock.activateLabelString>
+  <!-- EN: forcing locked ancient vault door open: {1}s -->
+  <VQEA_LockedAncientVaultDoor_Large.comps.CompJammedAirlock.activatingString>forçando a porta de cofre antiga trancada: {1}s</VQEA_LockedAncientVaultDoor_Large.comps.CompJammedAirlock.activatingString>
+  <!-- EN: forcing locked ancient vault door open -->
+  <VQEA_LockedAncientVaultDoor_Large.comps.CompJammedAirlock.activatingStringPending>forçando a porta de cofre antiga trancada</VQEA_LockedAncientVaultDoor_Large.comps.CompJammedAirlock.activatingStringPending>
+  <!-- EN: Choose who should do this -->
+  <VQEA_LockedAncientVaultDoor_Large.comps.CompJammedAirlock.guiLabelString>Escolha quem deve fazer isso</VQEA_LockedAncientVaultDoor_Large.comps.CompJammedAirlock.guiLabelString>
+  <!-- EN: Force this locked ancient vault door open -->
+  <VQEA_LockedAncientVaultDoor_Large.comps.CompJammedAirlock.jobString>Forçar esta porta de cofre antiga trancada</VQEA_LockedAncientVaultDoor_Large.comps.CompJammedAirlock.jobString>
+  <!-- EN: {PAWN_nameDef} has successfully forced the locked ancient vault door open. -->
+  <VQEA_LockedAncientVaultDoor_Large.comps.CompJammedAirlock.messageCompletedString>{PAWN_nameDef} conseguiu forçar a porta de cofre antiga trancada.</VQEA_LockedAncientVaultDoor_Large.comps.CompJammedAirlock.messageCompletedString>
+</LanguageData>

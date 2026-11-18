@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <!-- EN: install wood-fired ARC core -->
+  <VQE_InstallWoodFiredGenetron>instalar núcleo ARC a lenha</VQE_InstallWoodFiredGenetron>
+  <!-- EN: Install wood-fueled furnaces that greatly improve the power output of the ARC core, but will change the generator to require wood to operate. -->
+  <VQE_InstallWoodFiredGenetronDesc>Instala fornalhas a lenha que aumentam muito a geração do núcleo ARC, mas o gerador passa a precisar de lenha para funcionar.</VQE_InstallWoodFiredGenetronDesc>
+  <!-- EN: \n\nARC needs to operate uninterrupted for {0} (time at the moment: {1}) -->
+  <VQE_InstallWoodFiredGenetronDescExpanded>\n\nO ARC precisa funcionar sem interrupção por {0} (tempo atual: {1})</VQE_InstallWoodFiredGenetronDescExpanded>
+  <!-- EN: install automated stoker -->
+  <VQE_InstallWoodFueledGenetron>instalar alimentador automático</VQE_InstallWoodFueledGenetron>
+  <!-- EN: Install an automated system for feeding the fuel, keeping the furnace at optimal output with less frequent fueling. -->
+  <VQE_InstallWoodFueledGenetronDesc>Instala um sistema automático de alimentação de combustível que mantém a fornalha no rendimento ideal com reabastecimentos menos frequentes.</VQE_InstallWoodFueledGenetronDesc>
+  <!-- EN: \n\nARC needs to burn {0} fuel (fuel burned at the moment: {1}) -->
+  <VQE_InstallWoodFueledGenetronDescExpanded>\n\nO ARC precisa queimar {0} de combustível (queimado até agora: {1})</VQE_InstallWoodFueledGenetronDescExpanded>
+  <!-- EN: install energy circulators -->
+  <VQE_InstallWoodPoweredGenetron>instalar circuladores de energia</VQE_InstallWoodPoweredGenetron>
+  <!-- EN: Install energy circulators that redirect excess heat back into the ARC core, amplifying power output with only a slight rise in fuel consumption. -->
+  <VQE_InstallWoodPoweredGenetronDesc>Instala circuladores de energia que devolvem o calor excedente ao núcleo do ARC, aumentando a geração com só um pequeno aumento no consumo de combustível.</VQE_InstallWoodPoweredGenetronDesc>
+  <!-- EN: \n\nARC needs to burn {0} fuel (fuel burned at the moment: {1}) -->
+  <VQE_InstallWoodPoweredGenetronDescExpanded>\n\nO ARC precisa queimar {0} de combustível (queimado até agora: {1})</VQE_InstallWoodPoweredGenetronDescExpanded>
+  <!-- EN: install adjustable burn cylinders -->
+  <VQE_InstallWoodBlastingGenetron>instalar cilindros de queima ajustáveis</VQE_InstallWoodBlastingGenetron>
+  <!-- EN: Install large, adjustable internal cylinders that allow altering the burn rate of the core, adjusting the power generated to fit the needs of the colony. -->
+  <VQE_InstallWoodBlastingGenetronDesc>Instala grandes cilindros internos ajustáveis que permitem mudar a taxa de queima do núcleo, adequando a energia gerada às necessidades da colônia.</VQE_InstallWoodBlastingGenetronDesc>
+  <!-- EN: \n\nARC needs to operate uninterrupted for {0} (time at the moment: {1}) -->
+  <VQE_InstallWoodBlastingGenetronDescExpanded>\n\nO ARC precisa funcionar sem interrupção por {0} (tempo atual: {1})</VQE_InstallWoodBlastingGenetronDescExpanded>
+  <!-- EN: install chemfuel-powered ARC core -->
+  <VQE_InstallChemfuelPoweredGenetron>instalar núcleo ARC a combustível químico</VQE_InstallChemfuelPoweredGenetron>
+  <!-- EN: Install a set of chemfuel-operated engines that power up the ARC core, providing large quantities of energy by burning chemfuel. The engines will need regular maintenance, and if they break down, will require ARC components to be replaced. -->
+  <VQE_InstallChemfuelPoweredGenetronDesc>Instala um conjunto de motores a combustível químico que alimentam o núcleo do ARC, gerando muita energia ao queimar combustível químico. Os motores precisam de manutenção regular e, se quebrarem, exigem componentes ARC para a troca.</VQE_InstallChemfuelPoweredGenetronDesc>
+  <!-- EN: \n\nARC needs to operate at 200% using ARC tuning uninterrupted for {0} days. (time at the moment: {1}) -->
+  <VQE_InstallChemfuelPoweredGenetronDescExpanded>\n\nO ARC precisa funcionar a 200% no ajuste do ARC sem interrupção por {0} dias. (tempo atual: {1})</VQE_InstallChemfuelPoweredGenetronDescExpanded>
+  <!-- EN: \n\nRequires Biofuel refining research to be completed. -->
+  <VQE_InstallChemfuelPoweredGenetronDescNoResearch>\n\nExige a pesquisa de refinação de biocombustível.</VQE_InstallChemfuelPoweredGenetronDescNoResearch>
+  <!-- EN: install hyperburn chamber -->
+  <VQE_InstallChemfuelBoostedGenetron>instalar câmara de hiperqueima</VQE_InstallChemfuelBoostedGenetron>
+  <!-- EN: Install a hyperburn chamber to superheat the combustion process and extract maximum energy from each unit of fuel. -->
+  <VQE_InstallChemfuelBoostedGenetronDesc>Instala uma câmara de hiperqueima que superaquece a combustão e tira o máximo de energia de cada unidade de combustível.</VQE_InstallChemfuelBoostedGenetronDesc>
+  <!-- EN: \n\nARC overdrive needs to be active for {0} days. (time at the moment: {1}) -->
+  <VQE_InstallChemfuelBoostedGenetronDescExpanded>\n\nA sobrecarga do ARC precisa ficar ativa por {0} dias. (tempo atual: {1})</VQE_InstallChemfuelBoostedGenetronDescExpanded>
+  <!-- EN: install adaptive fuel modulator -->
+  <VQE_InstallChemfuelChargedGenetron>instalar modulador de combustível adaptativo</VQE_InstallChemfuelChargedGenetron>
+  <!-- EN: Install an adaptive fuel modulator to adjust fuel flow dynamically, matching power demands and optimizing fuel usage. This ensures extended runtime and peak efficiency without sacrificing energy output. -->
+  <VQE_InstallChemfuelChargedGenetronDesc>Instala um modulador de combustível adaptativo que ajusta o fluxo de combustível conforme a demanda de energia, otimizando o consumo. Garante mais tempo de funcionamento e eficiência máxima sem perder geração.</VQE_InstallChemfuelChargedGenetronDesc>
+  <!-- EN: \n\nPower surge needs to be activated {0} times. (activations at the moment: {1}) -->
+  <VQE_InstallChemfuelChargedGenetronDescExpanded>\n\nO pico de energia precisa ser ativado {0} vezes. (ativações até agora: {1})</VQE_InstallChemfuelChargedGenetronDescExpanded>
+  <!-- EN: install ignition stabilizer -->
+  <VQE_InstallChemfuelFortifiedGenetron>instalar estabilizador de ignição</VQE_InstallChemfuelFortifiedGenetron>
+  <!-- EN: Install an ignition stabilizer gizmo to ensure consistent and steady combustion, maintaining optimal power output and reducing fluctuations in fuel consumption. This upgrade enhances the generator's reliability and fuel efficiency. The stabilizer can be calibrated to permanently improve the power output. -->
+  <VQE_InstallChemfuelFortifiedGenetronDesc>Instala um estabilizador de ignição que garante uma combustão constante e firme, mantendo a geração ideal e reduzindo as oscilações no consumo de combustível. A melhoria aumenta a confiabilidade e a eficiência do gerador. O estabilizador pode ser calibrado para aumentar de vez a geração.</VQE_InstallChemfuelFortifiedGenetronDesc>
+  <!-- EN: \n\nARC needs to burn {0} fuel (fuel burned at the moment: {1}) -->
+  <VQE_InstallChemfuelFortifiedGenetronDescExpanded>\n\nO ARC precisa queimar {0} de combustível (queimado até agora: {1})</VQE_InstallChemfuelFortifiedGenetronDescExpanded>
+  <!-- EN: install geothermal ARC core -->
+  <VQE_InstallGeothermalGenetron>instalar núcleo ARC geotérmico</VQE_InstallGeothermalGenetron>
+  <!-- EN: Exchange the ARC core to utilise exclusively the steam energy produced by the geothermal vent. Doing so will decrease the power output significantly, but will also remove any fuel need completely. Geothermal ARC core will require regular maintenance, but can be maintained by everyone and not just the ARC specialists. -->
+  <VQE_InstallGeothermalGenetronDesc>Troca o núcleo do ARC para usar só a energia do vapor do respiradouro geotérmico. A geração cai bastante, mas a necessidade de combustível some por completo. O núcleo ARC geotérmico exige manutenção regular, mas qualquer um pode fazê-la, não só os especialistas em ARC.</VQE_InstallGeothermalGenetronDesc>
+  <!-- EN: \n\nRequires Geothermal power research to be completed. -->
+  <VQE_InstallGeothermalGenetronDescNoResearch>\n\nExige a pesquisa de energia geotérmica.</VQE_InstallGeothermalGenetronDescNoResearch>
+  <!-- EN: \n\nA colonist needs to study an ancient geothermal ARC somewhere in the world. -->
+  <VQE_InstallGeothermalGenetronDescNoStudied>\n\nUm colono precisa estudar um ARC geotérmico antigo em algum lugar do mundo.</VQE_InstallGeothermalGenetronDescNoStudied>
+  <!-- EN: install vent booster -->
+  <VQE_InstallSteamPoweredGenetron>instalar impulsionador de respiradouro</VQE_InstallSteamPoweredGenetron>
+  <!-- EN: Install a thermal vent booster to enhance steam flow from geothermal vents, boosting the ARC’s power output during peak energy demands. This upgrade ensures higher efficiency and performance when needed most. -->
+  <VQE_InstallSteamPoweredGenetronDesc>Instala um impulsionador de respiradouro térmico que aumenta o fluxo de vapor dos respiradouros geotérmicos, elevando a geração do ARC nos picos de demanda. A melhoria garante mais eficiência e desempenho quando mais se precisa.</VQE_InstallSteamPoweredGenetronDesc>
+  <!-- EN: \n\nARC needs to operate uninterrupted for {0} (time at the moment: {1}) -->
+  <VQE_InstallSteamPoweredGenetronDescExpanded>\n\nO ARC precisa funcionar sem interrupção por {0} (tempo atual: {1})</VQE_InstallSteamPoweredGenetronDescExpanded>
+  <!-- EN: install pressure surge protectors -->
+  <VQE_InstallThermalVentGenetron>instalar protetores contra picos de pressão</VQE_InstallThermalVentGenetron>
+  <!-- EN: Install a set of pressure surge protectors that will prevent the ARC from ever reaching a critical breaking point, while also increasing the power output. -->
+  <VQE_InstallThermalVentGenetronDesc>Instala um conjunto de protetores contra picos de pressão que impedem o ARC de chegar ao ponto crítico de ruptura e ainda aumentam a geração.</VQE_InstallThermalVentGenetronDesc>
+  <!-- EN: \n\nSteam boost needs to be activated {0} times. (activations at the moment: {1}) -->
+  <VQE_InstallThermalVentGenetronDescExpanded>\n\nO impulso de vapor precisa ser ativado {0} vezes. (ativações até agora: {1})</VQE_InstallThermalVentGenetronDescExpanded>
+  <!-- EN: install flow regulators -->
+  <VQE_InstallHeatPoweredGenetron>instalar reguladores de fluxo</VQE_InstallHeatPoweredGenetron>
+  <!-- EN: Install a number of internal steam flow regulators that balance steam intake to ensure consistent performance, reducing wear and tear on the generator's components. Flow regulators allow the generator to operate even during a solar flare. -->
+  <VQE_InstallHeatPoweredGenetronDesc>Instala vários reguladores internos de fluxo de vapor que equilibram a entrada de vapor para um desempenho constante, reduzindo o desgaste dos componentes do gerador. Os reguladores permitem que o gerador funcione mesmo durante uma erupção solar.</VQE_InstallHeatPoweredGenetronDesc>
+  <!-- EN: \n\nARC needs to operate uninterrupted for {0} (time at the moment: {1}) -->
+  <VQE_InstallHeatPoweredGenetronDescExpanded>\n\nO ARC precisa funcionar sem interrupção por {0} (tempo atual: {1})</VQE_InstallHeatPoweredGenetronDescExpanded>
+  <!-- EN: install uranium-powered ARC core -->
+  <VQE_InstallUraniumPoweredGenetron>instalar núcleo ARC a urânio</VQE_InstallUraniumPoweredGenetron>
+  <!-- EN: Install a large nuclear reactor in place of the old ARC core, utilising uranium to generate huge amounts of energy. The ARC will no longer be able to operate without fuel, and will shut down if it ever runs out of uranium. Maintenance and uranium supply will become essential in preventing devastating consequences. -->
+  <VQE_InstallUraniumPoweredGenetronDesc>Instala um grande reator nuclear no lugar do antigo núcleo do ARC, usando urânio para gerar quantidades enormes de energia. O ARC não poderá mais funcionar sem combustível e vai desligar se o urânio acabar. Manutenção e abastecimento de urânio passam a ser essenciais para evitar consequências devastadoras.</VQE_InstallUraniumPoweredGenetronDesc>
+  <!-- EN: \n\nRequires Starship reactor research to be completed. -->
+  <VQE_InstallUraniumPoweredGenetronDescNoResearch>\n\nExige a pesquisa de reator estelar.</VQE_InstallUraniumPoweredGenetronDescNoResearch>
+  <!-- EN: \n\nA colonist needs to study a nuclear ARC husk somewhere in the world. -->
+  <VQE_InstallUraniumPoweredGenetronDescNoStudied>\n\nUm colono precisa estudar uma carcaça de ARC nuclear em algum lugar do mundo.</VQE_InstallUraniumPoweredGenetronDescNoStudied>
+  <!-- EN: install uranium enrichment chamber -->
+  <VQE_InstallNuclearGenetron>instalar câmara de enriquecimento de urânio</VQE_InstallNuclearGenetron>
+  <!-- EN: Install a chamber that allows you to slow down the decay rate of uranium, allowing it to generate power for a longer time. -->
+  <VQE_InstallNuclearGenetronDesc>Instala uma câmara que retarda o decaimento do urânio, fazendo-o gerar energia por mais tempo.</VQE_InstallNuclearGenetronDesc>
+  <!-- EN: \n\nUranium-powered ARC needs to be restarted. To do that, it needs to burn all uranium and shut down due to lack of fuel. -->
+  <VQE_InstallNuclearGenetronDescExpanded>\n\nO ARC a urânio precisa ser reiniciado. Para isso, precisa queimar todo o urânio e desligar por falta de combustível.</VQE_InstallNuclearGenetronDescExpanded>
+  <!-- EN: install radiation shielding -->
+  <VQE_InstallIsotopicGenetron>instalar blindagem contra radiação</VQE_InstallIsotopicGenetron>
+  <!-- EN: Install advanced shielding to reduce radiation exposure in nearby areas, making it safer for colonists when the reactor operates in unsafe mode. -->
+  <VQE_InstallIsotopicGenetronDesc>Instala uma blindagem avançada que reduz a exposição à radiação nas áreas próximas, deixando tudo mais seguro para os colonos quando o reator opera no modo perigoso.</VQE_InstallIsotopicGenetronDesc>
+  <!-- EN: \n\nARC needs to burn {0} uranium (uranium burned at the moment: {1}) -->
+  <VQE_InstallIsotopicGenetronDescExpanded>\n\nO ARC precisa queimar {0} de urânio (queimado até agora: {1})</VQE_InstallIsotopicGenetronDescExpanded>
+  <!-- EN: install emergency shut-off systems -->
+  <VQE_InstallAtomicGenetron>instalar sistemas de desligamento de emergência</VQE_InstallAtomicGenetron>
+  <!-- EN: Install a system that instantly shuts down the reactor in dangerous situations, avoiding catastrophic failures and giving time for repairs. Additional safety mechanisms also allow anyone to maintain the atomic ARC, not just those who studied the ancient variants. -->
+  <VQE_InstallAtomicGenetronDesc>Instala um sistema que desliga o reator na hora em situações perigosas, evitando falhas catastróficas e dando tempo para consertos. Mecanismos extras de segurança também permitem que qualquer um faça a manutenção do ARC atômico, não só quem estudou as variantes antigas.</VQE_InstallAtomicGenetronDesc>
+  <!-- EN: \n\nARC needs to operate uninterrupted in hazard mode for {0} (time at the moment: {1}) -->
+  <VQE_InstallAtomicGenetronDescExpanded>\n\nO ARC precisa funcionar sem interrupção no modo perigoso por {0} (tempo atual: {1})</VQE_InstallAtomicGenetronDescExpanded>
+  <!-- EN: Downgrade to {0} -->
+  <VQE_DowngradeGenetron>Rebaixar para {0}</VQE_DowngradeGenetron>
+  <!-- EN: Downgrade the ARC to an earlier stage of construction. -->
+  <VQE_DowngradeGenetronDesc>Rebaixa o ARC para uma etapa anterior de construção.</VQE_DowngradeGenetronDesc>
+  <!-- EN: Warning, this will downgrade the ARC to {0}. All materials used to upgrade it to the current stage will be lost. Are you sure you want to proceed? -->
+  <VQE_DowngradeGenetronDialog>Atenção: isto vai rebaixar o ARC para {0}. Todo o material usado para melhorá-lo até a etapa atual será perdido. Tem certeza de que quer continuar?</VQE_DowngradeGenetronDialog>
+  <!-- EN: It's not possible to downgrade the ARC during a meltdown. -->
+  <VQE_DowngradeGenetronMeltdown>Não dá para rebaixar o ARC durante um derretimento.</VQE_DowngradeGenetronMeltdown>
+  <!-- EN: ARC overdrive -->
+  <VQE_GenetronOverdrive>Sobrecarga do ARC</VQE_GenetronOverdrive>
+  <!-- EN: Put the ARC in a temporary {0} overdrive mode. It will rapidly burn through fuel, generating significantly more energy. If at any point during the overdrive the fuel runs out, the generator will break down and require refurbishing with ARC components. -->
+  <VQE_GenetronOverdriveDesc>Põe o ARC num modo de sobrecarga temporário de {0}. Ele queima combustível rapidamente e gera bem mais energia. Se o combustível acabar durante a sobrecarga, o gerador quebra e precisa ser restaurado com componentes ARC.</VQE_GenetronOverdriveDesc>
+  <!-- EN: \n\nOverdrive has a {0} cooldown. It will be ready again in {1} -->
+  <VQE_GenetronOverdriveDescExtended>\n\nA sobrecarga tem um tempo de recarga de {0}. Estará pronta de novo em {1}</VQE_GenetronOverdriveDescExtended>
+  <!-- EN: ARC tuning -->
+  <VQE_GenetronTuning>Ajuste do ARC</VQE_GenetronTuning>
+  <!-- EN: Alter the fuel consumption to increase or decrease the power generated by the ARC. -->
+  <VQE_GenetronTuningDesc>Muda o consumo de combustível para aumentar ou diminuir a energia gerada pelo ARC.</VQE_GenetronTuningDesc>
+  <!-- EN: set ARC output to: {0}% -->
+  <VQE_GenetronTuningSet>definir geração do ARC em: {0}%</VQE_GenetronTuningSet>
+  <!-- EN: Projected power output: {0} Wd -->
+  <VQE_GenetronTuningProjected>Geração prevista: {0} Wd</VQE_GenetronTuningProjected>
+  <!-- EN: Projected fuel burn rate: {0} per day -->
+  <VQE_FuelConsumptionProjected>Consumo de combustível previsto: {0} por dia</VQE_FuelConsumptionProjected>
+  <!-- EN: ARC fine-tuning -->
+  <VQE_GenetronFineTuning>Ajuste fino do ARC</VQE_GenetronFineTuning>
+  <!-- EN: Alter the fuel consumption to increase or decrease the power generated by the ARC, and adjust generator maintenance wear to boost the power output. -->
+  <VQE_GenetronFineTuningDesc>Muda o consumo de combustível para aumentar ou diminuir a energia gerada pelo ARC, e ajusta o desgaste de manutenção do gerador para aumentar a geração.</VQE_GenetronFineTuningDesc>
+  <!-- EN: set ARC wear to: {0}% -->
+  <VQE_SetGenetronWear>definir desgaste do ARC em: {0}%</VQE_SetGenetronWear>
+  <!-- EN: power surge -->
+  <VQE_PowerSurge>pico de energia</VQE_PowerSurge>
+  <!-- EN: Instantly vaporize half of the remaining fuel in the ARC to create a surge of power, refilling the batteries at the cost of a significant 25% maintenance reduction of the ARC. Power surge will temporarily disable nearby electronics. -->
+  <VQE_PowerSurgeDesc>Vaporiza na hora metade do combustível restante no ARC para criar um pico de energia, recarregando as baterias ao custo de uma redução considerável de 25% na manutenção do ARC. O pico desativa temporariamente os eletrônicos por perto.</VQE_PowerSurgeDesc>
+  <!-- EN: \n\nPower Surge has a {0} cooldown. It will be ready again in {1} -->
+  <VQE_PowerSurgeDescExtended>\n\nO pico de energia tem um tempo de recarga de {0}. Estará pronto de novo em {1}</VQE_PowerSurgeDescExtended>
+  <!-- EN: Power surge cannot be activated: ARC maintenance is too low (below 30%). -->
+  <VQE_PowerSurgeDescNoMaintenance>Não dá para ativar o pico de energia: a manutenção do ARC está baixa demais (abaixo de 30%).</VQE_PowerSurgeDescNoMaintenance>
+  <!-- EN: calibrate efficiency -->
+  <VQE_CalibrateEfficiency>calibrar eficiência</VQE_CalibrateEfficiency>
+  <!-- EN: Set the ARC into a low-power mode to calibrate its efficiency. While the fuel consumption will not change in the low-power mode, upon completion of the calibration, the power output will permanently increase by 1%. -->
+  <VQE_CalibrateEfficiencyDesc>Põe o ARC num modo de baixa potência para calibrar a eficiência. O consumo de combustível não muda nesse modo, mas, ao fim da calibragem, a geração aumenta de vez em 1%.</VQE_CalibrateEfficiencyDesc>
+  <!-- EN: \n\nThe efficiency calibration has a {0} cooldown. It will be ready again in {1} -->
+  <VQE_CalibrateEfficiencyDescExtended>\n\nA calibragem de eficiência tem um tempo de recarga de {0}. Estará pronta de novo em {1}</VQE_CalibrateEfficiencyDescExtended>
+  <!-- EN: pressure tuning -->
+  <VQE_GenetronSteamTuning>ajuste de pressão</VQE_GenetronSteamTuning>
+  <!-- EN: Alter the pressure of the ARC, affecting the wear and tear of components and the power output. -->
+  <VQE_GenetronSteamTuningDesc>Muda a pressão do ARC, afetando o desgaste dos componentes e a geração.</VQE_GenetronSteamTuningDesc>
+  <!-- EN: ARC pressure -->
+  <VQE_GenetronPressureLabel>Pressão do ARC</VQE_GenetronPressureLabel>
+  <!-- EN: set maintenance loss per day to: {0}% -->
+  <VQE_GenetronSteamTuningMaintenance>definir perda de manutenção por dia em: {0}%</VQE_GenetronSteamTuningMaintenance>
+  <!-- EN: steam boost -->
+  <VQE_SteamBoost>impulso de vapor</VQE_SteamBoost>
+  <!-- EN: Temporarily enhance the steam flow by activating internal steam pumps, increasing the power output of the ARC for 5 days. The vent boosters will need to cool down for a period of time, preventing them from being used again until the temperature is optimal again. -->
+  <VQE_SteamBoostDesc>Reforça temporariamente o fluxo de vapor ligando bombas de vapor internas, aumentando a geração do ARC por 5 dias. Os impulsionadores do respiradouro precisam esfriar por um tempo e não podem ser usados de novo até a temperatura voltar ao ideal.</VQE_SteamBoostDesc>
+  <!-- EN: \n\nSteam boost has a {0} cooldown. It will be ready again in {1} -->
+  <VQE_SteamBoostDescExtended>\n\nO impulso de vapor tem um tempo de recarga de {0}. Estará pronto de novo em {1}</VQE_SteamBoostDescExtended>
+  <!-- EN: calibrate components -->
+  <VQE_CalibrateComponents>calibrar componentes</VQE_CalibrateComponents>
+  <!-- EN: Force a soft breakdown of the ARC, requiring parts of the core to be refurbished, in order to upgrade the internal workings of the core and improve the longevity of the components by 10%. -->
+  <VQE_CalibrateComponentsDesc>Força uma pane leve no ARC, exigindo a restauração de partes do núcleo, para melhorar o funcionamento interno e aumentar em 10% a durabilidade dos componentes.</VQE_CalibrateComponentsDesc>
+  <!-- EN: \n\nCalibrate components has a {0} cooldown. It will be ready again in {1} -->
+  <VQE_CalibrateComponentsDescExtended>\n\nCalibrar componentes tem um tempo de recarga de {0}. Estará pronto de novo em {1}</VQE_CalibrateComponentsDescExtended>
+  <!-- EN: restart ARC -->
+  <VQE_RestartGenetron>reiniciar ARC</VQE_RestartGenetron>
+  <!-- EN: Jumpstart the nuclear ARC that has shut down due to lack of uranium. This restart can only be done if the ARC is filled with at least {0} uranium. -->
+  <VQE_RestartGenetronDesc>Dá partida no ARC nuclear que desligou por falta de urânio. Só dá para reiniciar se o ARC tiver pelo menos {0} de urânio.</VQE_RestartGenetronDesc>
+  <!-- EN: \n\nThere isn't enough uranium in this reactor to restart it. -->
+  <VQE_RestartGenetronDescExtended>\n\nNão há urânio suficiente neste reator para reiniciá-lo.</VQE_RestartGenetronDescExtended>
+  <!-- EN: \n\nGenetron is running normally at the moment and doesn't require a restart. -->
+  <VQE_RestartGenetronDescNotNeeded>\n\nO ARC está funcionando normalmente e não precisa ser reiniciado.</VQE_RestartGenetronDescNotNeeded>
+  <!-- EN: calibrate fuel rods -->
+  <VQE_CalibrateFuelRods>calibrar barras de combustível</VQE_CalibrateFuelRods>
+  <!-- EN: Temporarily shut down the reactor to calibrate the fuel consumption, allowing each unit of uranium to provide power for a longer time. Each calibration of fuel rods will reduce the fuel consumption rate by 10% of the remaining value. -->
+  <VQE_CalibrateFuelRodsDesc>Desliga o reator por um tempo para calibrar o consumo de combustível, fazendo cada unidade de urânio gerar energia por mais tempo. Cada calibragem reduz a taxa de consumo em 10% do valor restante.</VQE_CalibrateFuelRodsDesc>
+  <!-- EN: \n\nCalibrate fuel rods has a {0} cooldown. It will be ready again in {1} -->
+  <VQE_CalibrateFuelRodsDescExtended>\n\nCalibrar barras de combustível tem um tempo de recarga de {0}. Estará pronto de novo em {1}</VQE_CalibrateFuelRodsDescExtended>
+  <!-- EN: safe mode -->
+  <VQE_SafeMode>modo seguro</VQE_SafeMode>
+  <!-- EN: The ARC operates in safe mode. Burning uranium affects the maintenance of the ARC core, but no radiation is leaking from it. Activating this ability will change the ARC to operate in hazard mode. -->
+  <VQE_SafeModeDesc>O ARC está no modo seguro. Queimar urânio afeta a manutenção do núcleo, mas nenhuma radiação vaza. Ativar esta habilidade passa o ARC para o modo perigoso.</VQE_SafeModeDesc>
+  <!-- EN: hazard mode -->
+  <VQE_HazardMode>modo perigoso</VQE_HazardMode>
+  <!-- EN: The ARC operates in hazard mode. Burning uranium emits an unhealthy amount of radiation in radius, generating toxic buildup to everyone caught in it without toxic-resistant gear. The radius depends on the amount of uranium in the ARC. Maintenance of the ARC does not decrease. Activating this ability will change the ARC to operate in safe mode. -->
+  <VQE_HazardModeDesc>O ARC está no modo perigoso. Queimar urânio emite uma quantidade nada saudável de radiação no raio, acumulando toxinas em todo mundo pego nele sem equipamento resistente a toxinas. O raio depende da quantidade de urânio no ARC. A manutenção do ARC não cai. Ativar esta habilidade passa o ARC para o modo seguro.</VQE_HazardModeDesc>
+  <!-- EN: Operating in safe mode. -->
+  <VQE_SafeModeInfo>Funcionando no modo seguro.</VQE_SafeModeInfo>
+  <!-- EN: Operating in hazard mode. -->
+  <VQE_HazardModeInfo>Funcionando no modo perigoso.</VQE_HazardModeInfo>
+  <!-- EN: emergency shut-down -->
+  <VQE_EmergencyShutDown>desligamento de emergência</VQE_EmergencyShutDown>
+  <!-- EN: Shut down the ARC. It will stop burning uranium, thus stopping the maintenance loss. It will also stop generating power until restart procedures are initiated. -->
+  <VQE_EmergencyShutDownDesc>Desliga o ARC. Ele para de queimar urânio e, com isso, para de perder manutenção. Também para de gerar energia até que os procedimentos de reinício sejam iniciados.</VQE_EmergencyShutDownDesc>
+  <!-- EN: \n\nReactor is off now. -->
+  <VQE_EmergencyShutDownDescExtended>\n\nO reator está desligado.</VQE_EmergencyShutDownDescExtended>
+  <!-- EN: ARC maintenance low -->
+  <VQE_Alert_LowMaintenance>Manutenção do ARC baixa</VQE_Alert_LowMaintenance>
+  <!-- EN: ARC requires maintenance. If no maintenance is performed, the ARC will critically break down. -->
+  <VQE_Alert_LowMaintenance_Desc>O ARC precisa de manutenção. Se ninguém fizer, o ARC vai entrar em pane crítica.</VQE_Alert_LowMaintenance_Desc>
+  <!-- EN: ARC maintenance critical -->
+  <VQE_Alert_CriticalMaintenance>Manutenção do ARC crítica</VQE_Alert_CriticalMaintenance>
+  <!-- EN: ARC requires urgent maintenance. If no maintenance is performed, the ARC will critically break down. -->
+  <VQE_Alert_CriticalMaintenance_Desc>O ARC precisa de manutenção urgente. Se ninguém fizer, o ARC vai entrar em pane crítica.</VQE_Alert_CriticalMaintenance_Desc>
+  <!-- EN: ARC low on uranium -->
+  <VQE_Alert_LowUranium>ARC com pouco urânio</VQE_Alert_LowUranium>
+  <!-- EN: ARC is about to run out of uranium. When it does, it will become disabled until the restart procedures are initiated. -->
+  <VQE_Alert_LowUranium_Desc>O urânio do ARC está quase acabando. Quando acabar, ele fica desativado até que os procedimentos de reinício sejam iniciados.</VQE_Alert_LowUranium_Desc>
+  <!-- EN: {0} did not study an ancient ARC. -->
+  <VQE_NeedsStudy>{0} não estudou um ARC antigo.</VQE_NeedsStudy>
+  <!-- EN: {0} did not study an ancient geothermal ARC. -->
+  <VQE_NeedsStudyGeothermal>{0} não estudou um ARC geotérmico antigo.</VQE_NeedsStudyGeothermal>
+  <!-- EN: {0} did not study a nuclear ARC husk. -->
+  <VQE_NeedsStudyNuclear>{0} não estudou uma carcaça de ARC nuclear.</VQE_NeedsStudyNuclear>
+  <!-- EN: This colonist can't repair critical breakdowns, as they did not study an ancient ARC -->
+  <VQE_NeedsStudyGeneric>Este colono não consegue consertar panes críticas porque não estudou um ARC antigo</VQE_NeedsStudyGeneric>
+  <!-- EN: Reactor overdrive -->
+  <VQE_Overdrive>Sobrecarga do reator</VQE_Overdrive>
+  <!-- EN: Critical breakdown -->
+  <VQE_CriticalBreakdown>Pane crítica</VQE_CriticalBreakdown>
+  <!-- EN: ARC maintenance: {0} -->
+  <VQE_CurrentMaintenance>Manutenção do ARC: {0}</VQE_CurrentMaintenance>
+  <!-- EN: Low power mode. Remaining time: {0}. -->
+  <VQE_LowPowerMode>Modo de baixa potência. Tempo restante: {0}.</VQE_LowPowerMode>
+  <!-- EN: Shut down for calibrations. Remaining time: {0}. -->
+  <VQE_ShutDownForCalibrations>Desligado para calibragem. Tempo restante: {0}.</VQE_ShutDownForCalibrations>
+  <!-- EN: Current fuel burn rate: {0} per day -->
+  <VQE_FuelRateAtTheMoment>Consumo de combustível atual: {0} por dia</VQE_FuelRateAtTheMoment>
+  <!-- EN: Reactor shut down -->
+  <VQE_ReactorShutdown>Reator desligado</VQE_ReactorShutdown>
+  <!-- EN: Set target uranium level -->
+  <VQE_SetTargetUraniumLevel>Definir nível de urânio desejado</VQE_SetTargetUraniumLevel>
+  <!-- EN: Set target uranium level to {0} -->
+  <VQE_SetTargetUraniumLevelTo>Definir nível de urânio desejado em {0}</VQE_SetTargetUraniumLevelTo>
+  <!-- EN: Set desired uranium level in the ARC. Colonists will try to fill the ARC up to that level. -->
+  <VQE_SetTargetUraniumLevelDesc>Define o nível de urânio desejado no ARC. Os colonos vão tentar encher o ARC até esse nível.</VQE_SetTargetUraniumLevelDesc>
+  <!-- EN: Power output: {0}W -->
+  <VQE_NuclearPowerOutput>Geração: {0}W</VQE_NuclearPowerOutput>
+  <!-- EN: Fuel consumption per day: {0} -->
+  <VQE_NuclearFuelConsumption>Consumo de combustível por dia: {0}</VQE_NuclearFuelConsumption>
+  <!-- EN: ARC maintenance\nARC needs to be maintained by colonists. If maintenance reaches 0%, ARC will break down. -->
+  <VQE_GenetronMaintenanceTooltip>Manutenção do ARC\nO ARC precisa de manutenção dos colonos. Se a manutenção chegar a 0%, o ARC quebra.</VQE_GenetronMaintenanceTooltip>
+  <!-- EN: Traitor {PAWN_nameDef}! -->
+  <VQE_TraitorLabel>Traidor: {PAWN_nameDef}!</VQE_TraitorLabel>
+  <!-- EN: {PAWN_nameDef}, known for creating the ARC, has turned against the colony. {PAWN_pronoun} admits that they plan to sabotage the ARC, believing the colony’s reliance on a single source of power is a fatal mistake.\n\n{PAWN_nameDef} argues that trusting one machine with everyone’s survival is a path to disaster. Unable to change minds through reason, {PAWN_pronoun} chose to act instead.\n\nYou can choose to capture {PAWN_objective}, kill them or banish them. However, preventing the sabotage is the top priority. Do not let {PAWN_nameDef} get to the ARC. -->
+  <VQE_TraitorLetter>{PAWN_nameDef}, conhecido por criar o ARC, se voltou contra a colônia. Admite que planeja sabotar o ARC, por achar que depender de uma única fonte de energia é um erro fatal.\n\n{PAWN_nameDef} argumenta que confiar a sobrevivência de todos a uma só máquina é o caminho para o desastre. Sem conseguir convencer ninguém pela razão, resolveu agir.\n\nVocê pode capturar, matar ou banir essa pessoa. Mas impedir a sabotagem é a prioridade. Não deixe {PAWN_nameDef} chegar ao ARC.</VQE_TraitorLetter>
+  <!-- EN: ARC Maintenance in map -->
+  <VQE_MaintenanceImpact>Manutenção do ARC no mapa</VQE_MaintenanceImpact>
+  <!-- EN: Will not equip: Ideology prohibits -->
+  <VQE_NoTechnology>Não vai equipar: a ideologia proíbe</VQE_NoTechnology>
+  <!-- EN: This ability needs to target an advanced component. -->
+  <VQE_AbilityNeedsComponent>Esta habilidade precisa mirar um componente avançado.</VQE_AbilityNeedsComponent>
+  <!-- EN: Study {0} -->
+  <VQE_StudyAncientGenetron>Estudar {0}</VQE_StudyAncientGenetron>
+  <!-- EN: Study the {0} to find out how to construct an operational one in your colony. -->
+  <VQE_StudyAncientGenetronDesc>Estuda {0} para descobrir como construir um que funcione na sua colônia.</VQE_StudyAncientGenetronDesc>
+  <!-- EN: \n\nThis {0} has already been studied or is in the process of being studied. -->
+  <VQE_StudyAncientGenetronDescExtended>\n\nEste {0} já foi estudado ou está sendo estudado.</VQE_StudyAncientGenetronDescExtended>
+  <!-- EN: You've stayed in the village too long. The people of {FACTION_name} are attacking! -->
+  <VQE_FactionBecameHostileTimed>Você ficou tempo demais na aldeia. O povo de {FACTION_name} está atacando!</VQE_FactionBecameHostileTimed>
+  <!-- EN: {0}'s {1} -->
+  <VQE_ThingWithInventorName>{1} de {0}</VQE_ThingWithInventorName>
+  <!-- EN: {0} has thoroughly studied the {1} -->
+  <VQE_HasStudied>{0} estudou a fundo {1}</VQE_HasStudied>
+  <!-- EN: {0} has already studied this structure -->
+  <VQE_PawnAlreadyStudied>{0} já estudou esta estrutura</VQE_PawnAlreadyStudied>
+  <!-- EN: Traitor schism ({0}) -->
+  <VQE_TraitorSchism>Cisma do traidor ({0})</VQE_TraitorSchism>
+  <!-- EN: The creator of the ARC has turned out to be a traitor: {0} has been spreading their beliefs, convincing others to embrace an ideology that rejects technology. They have formed a new ideology: {1}. They argue that dependence on the ARC is reckless and will doom the colony. Their growing following now views the ARC as a threat, and whispers of sabotage have begun to surface. Left unchecked, this movement could escalate into conflict, putting your colony’s survival at risk.\n\nFollowing colonists have adopted {1}: {2}\n\nFollowers of {1} will refuse to do research. They will be unhappy if equipped with industrial-tech level or higher apparel and weapons, and will target technological items in their tantrums. Their priority will be destroying the ARC generator, and they will dislike anyone who holds the knowledge how to construct one of them.\n\nYou can consider exiling these colonists, or converting them back to their previous ideology. -->
+  <VQE_TraitorSchismDesc>O criador do ARC se revelou um traidor: {0} anda espalhando suas crenças e convencendo outros a abraçar uma ideologia que rejeita a tecnologia. Formou uma nova ideologia: {1}. Diz que depender do ARC é imprudente e vai condenar a colônia. Seus seguidores, cada vez mais numerosos, veem o ARC como ameaça, e já se cochicha sobre sabotagem. Se nada for feito, o movimento pode virar conflito e pôr em risco a sobrevivência da colônia.\n\nOs seguintes colonos adotaram {1}: {2}\n\nOs seguidores de {1} se recusam a pesquisar. Ficam infelizes se equipados com roupas e armas de nível tecnológico industrial ou acima, e miram itens tecnológicos nos seus ataques de fúria. A prioridade deles é destruir o gerador ARC, e não gostam de ninguém que saiba construir um.\n\nVocê pode exilar esses colonos ou convertê-los de volta à ideologia anterior.</VQE_TraitorSchismDesc>
+  <!-- EN: The {PAWN_title} named {PAWN_nameDef} has emerged from a cryptosleep casket and is joining the colony.\n\n{PAWN_nameFull}, the brilliant mind behind the creation of the ARC generator, brings a wealth of knowledge and experience. Across this planet, {PAWN_nameDef} tirelessly developed countless ARC prototypes, though many succumbed to neglect or external catastrophes. Despite these setbacks, {PAWN_nameDef} possesses unparalleled expertise in constructing, repairing, maintaining, and upgrading all known ARC generator types, including the advanced nuclear and geothermal variants. Moreover, {PAWN_nameDef} can attempt to salvage critical ARC components from advanced components, a skill that could prove invaluable in building or enhancing your colony’s own ARC generator. -->
+  <VQE_InventorJoinsDesc>{PAWN_nameDef}, {PAWN_title}, saiu de um sarcófago de criptosono e está se juntando à colônia.\n\n{PAWN_nameFull}, a mente brilhante por trás do gerador ARC, traz uma bagagem enorme de conhecimento e experiência. Por todo este planeta, {PAWN_nameDef} desenvolveu sem descanso inúmeros protótipos de ARC, embora muitos tenham sucumbido ao abandono ou a catástrofes externas. Apesar dos reveses, {PAWN_nameDef} tem uma perícia sem igual para construir, consertar, manter e melhorar todos os tipos conhecidos de gerador ARC, inclusive as variantes avançadas nuclear e geotérmica. Além disso, {PAWN_nameDef} pode tentar tirar componentes ARC críticos de componentes avançados, um talento que pode ser inestimável para construir ou melhorar o gerador ARC da colônia.</VQE_InventorJoinsDesc>
+  <!-- EN: Disable the need of a steam vent to build an ARC -->
+  <VQEG_DisableNeedForSteamVent>Dispensar o gêiser de vapor para construir um ARC</VQEG_DisableNeedForSteamVent>
+  <!-- EN: By default, you will need a steam vent present in the map to build your ARC. With this mod option active, you can build them anywhere. Useful for gravships, for example. -->
+  <VQEG_DisableNeedForSteamVentTooltip>Por padrão, é preciso haver um gêiser de vapor no mapa para construir o ARC. Com esta opção ligada, dá para construí-lo em qualquer lugar. Útil para gravinaves, por exemplo.</VQEG_DisableNeedForSteamVentTooltip>
+  <!-- EN: ARC upgrade timer multiplier (lower means faster) -->
+  <VQEG_ARCTimersMultiplier>Multiplicador dos prazos de melhoria do ARC (menor = mais rápido)</VQEG_ARCTimersMultiplier>
+  <!-- EN: When upgrading the ARC, there are a series of time periods the player needs to respect before being allowed to do the upgrades (eg "the ARC needs to run for X days in this mode before being upgraded"). This setting will apply a multiplier to those periods. Bear in mind a lower number means things will go faster. A higher number will mean the ARC will take longer. -->
+  <VQEG_ARCTimersMultiplierTooltip>Ao melhorar o ARC, há uma série de prazos que o jogador precisa cumprir antes de poder fazer as melhorias (ex.: "o ARC precisa funcionar X dias neste modo antes de ser melhorado"). Esta opção aplica um multiplicador a esses prazos. Lembre: número menor deixa tudo mais rápido; número maior faz o ARC demorar mais.</VQEG_ARCTimersMultiplierTooltip>
+  <!-- EN: ARC upgrade fuel multiplier (lower means less fuel needed) -->
+  <VQEG_ARCFuelMultiplier>Multiplicador de combustível das melhorias do ARC (menor = menos combustível)</VQEG_ARCFuelMultiplier>
+  <!-- EN: When upgrading the ARC, there are some times when the player needs to burn a given amount of fuel before being allowed to do the upgrades (eg "the ARC needs to burn X wood before being upgraded"). This setting will apply a multiplier to those amount. Bear in mind a lower number means less fuel is needed. A higher number will mean more fuel. -->
+  <VQEG_ARCFuelMultiplierTooltip>Ao melhorar o ARC, às vezes o jogador precisa queimar certa quantidade de combustível antes de poder fazer as melhorias (ex.: "o ARC precisa queimar X de lenha antes de ser melhorado"). Esta opção aplica um multiplicador a essas quantidades. Lembre: número menor exige menos combustível; número maior, mais.</VQEG_ARCFuelMultiplierTooltip>
+  <!-- EN: ARC power output multiplier -->
+  <VQEG_ARCOutputMultiplier>Multiplicador de geração do ARC</VQEG_ARCOutputMultiplier>
+  <!-- EN: This will scale the amount of power produced by the ARC reactors. -->
+  <VQEG_ARCOutputMultiplierTooltip>Ajusta a quantidade de energia produzida pelos reatores ARC.</VQEG_ARCOutputMultiplierTooltip>
+  <!-- EN: Reset -->
+  <VQEG_Reset>Restaurar</VQEG_Reset>
+</LanguageData>

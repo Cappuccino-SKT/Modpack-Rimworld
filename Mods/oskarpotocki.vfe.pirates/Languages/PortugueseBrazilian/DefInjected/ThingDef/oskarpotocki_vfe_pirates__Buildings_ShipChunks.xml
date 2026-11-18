@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <!-- EN: ship chunk debris -->
+  <VFEP_ShipChunkDebris.label>destroço de nave</VFEP_ShipChunkDebris.label>
+  <!-- EN: A chunk of a combat-grade spacecraft. It seems to have been torn off either by uncontrolled re-entry forces or some kind of weapon. It is densely packed with double-layer armor plating and control systems, which can be acquired by deconstructing it. -->
+  <VFEP_ShipChunkDebris.description>Um pedaço de uma nave de combate, arrancado pelas forças de uma reentrada descontrolada ou por alguma arma. É cheio de chapas de blindagem de camada dupla e sistemas de controle, que podem ser recuperados ao desmontá-lo.</VFEP_ShipChunkDebris.description>
+  <!-- EN: ship chunk battery -->
+  <VFEP_ShipChunkBattery.label>bateria de nave destroçada</VFEP_ShipChunkBattery.label>
+  <!-- EN: The mangled remains of ship-borne battery, used to power systems with high power draw for short periods. It was leaps and bounds about Rimworld battery technology but it can no longer be recharged and yields decent salvage once it’s stored charge has run out. -->
+  <VFEP_ShipChunkBattery.description>Os restos retorcidos de uma bateria de nave, usada para alimentar sistemas de alto consumo por pouco tempo. Era anos-luz à frente da tecnologia de baterias da borda, mas não pode mais ser recarregada; rende uma boa sucata quando a carga acaba.</VFEP_ShipChunkBattery.description>
+  <!-- EN: ship chunk cryptosleep casket -->
+  <VFEP_ShipChunkCryptosleepCasket.label>sarcófago de criptosono de nave destroçada</VFEP_ShipChunkCryptosleepCasket.label>
+  <!-- EN: A self-powered cryptosleep casket caught in the remains of their ship’s hull. The occupant can still be recovered from the module, but most of the material is worth less than scrap metal and offers little salvage. -->
+  <VFEP_ShipChunkCryptosleepCasket.description>Um sarcófago de criptosono com energia própria preso nos restos do casco da nave. O ocupante ainda pode ser resgatado do módulo, mas a maior parte do material vale menos que sucata e rende pouco.</VFEP_ShipChunkCryptosleepCasket.description>
+  <!-- EN: ship chunk volatile engine -->
+  <VFEP_ShipChunkVolatileEngine.label>motor instável de nave destroçada</VFEP_ShipChunkVolatileEngine.label>
+  <!-- EN: Self-powered turbo engines for a combat-grade spacecraft, designed for atmospheric use. The control and safety system are damaged and the turbines are unable to take in enough air to cool itself. If not properly dismantled, the accumulating energy will tear itself apart. -->
+  <VFEP_ShipChunkVolatileEngine.description>Motores turbo com energia própria de uma nave de combate, feitos para uso na atmosfera. O sistema de controle e segurança está danificado e as turbinas não puxam ar suficiente para se resfriar. Se não for desmontado direito, a energia acumulada vai despedaçá-lo.</VFEP_ShipChunkVolatileEngine.description>
+  <!-- EN: chemfuel puddle -->
+  <VFEP_Filth_Fuel.label>poça de combustível químico</VFEP_Filth_Fuel.label>
+  <!-- EN: A puddle of flammable chemfuel. -->
+  <VFEP_Filth_Fuel.description>Uma poça de combustível químico inflamável.</VFEP_Filth_Fuel.description>
+  <!-- EN: ship chunk fuel tank -->
+  <VFEP_ShipChunkFuelTank.label>tanque de combustível de nave destroçada</VFEP_ShipChunkFuelTank.label>
+  <!-- EN: A tank of Chemfuel, punctured by the hull of its ship’s hull. Some of the fluid can be recovered while the majority is filled with grime, leaking out and creating a fire hazard. A prime target for any pyromaniac wanting to watch the world burn. -->
+  <VFEP_ShipChunkFuelTank.description>Um tanque de quimicombustível furado pelo próprio casco da nave. Parte do fluido pode ser recuperada, mas a maioria está cheia de sujeira, vazando e criando risco de incêndio. Alvo perfeito para qualquer piromaníaco que queira ver o mundo pegar fogo.</VFEP_ShipChunkFuelTank.description>
+  <!-- EN: ship chunk gauntlet turret -->
+  <VFEP_ShipChunkGauntletTurret.label>torreta Gauntlet de nave destroçada</VFEP_ShipChunkGauntletTurret.label>
+  <!-- EN: The remains of the housing for the Gauntlet charge cannon. Powered externally, the ammunition storage is wrecked and cannot be replaced. Once the turret empties its magazine, it is still valuable salvage worth recovery. -->
+  <VFEP_ShipChunkGauntletTurret.description>Os restos do alojamento do canhão de carga Gauntlet. Com energia externa, mas o depósito de munição está destruído e não tem reposição. Quando a torreta esvaziar o carregador, ainda é uma sucata valiosa que vale a pena recuperar.</VFEP_ShipChunkGauntletTurret.description>
+  <!-- EN: ship chunk reactor -->
+  <VFEP_ShipChunkReactor.label>reator de nave destroçada</VFEP_ShipChunkReactor.label>
+  <!-- EN: The remains of a combat-grade spacecraft’s nuclear reactor, low-yield and designed to operate alongside energy storage. Surprisingly, the reactor is fully functional with no structural damage, so it can be safely used for ground operations. -->
+  <VFEP_ShipChunkReactor.description>Os restos do reator nuclear de uma nave de combate, de baixa potência e feito para funcionar junto com armazenamento de energia. Surpreendentemente, o reator funciona perfeitamente e não tem dano estrutural, então pode ser usado com segurança em operações em terra.</VFEP_ShipChunkReactor.description>
+  <!-- EN: ship medical crate -->
+  <VFEP_ShipMedicalCrate.label>caixa médica de nave</VFEP_ShipMedicalCrate.label>
+  <!-- EN: A now-unsealed crate containing first-aid supplies. The pallet can be dismantled for steel along with recovering the supplies. -->
+  <VFEP_ShipMedicalCrate.description>Uma caixa, agora aberta, com suprimentos de primeiros socorros. O palete pode ser desmontado para aço, além de recuperar os suprimentos.</VFEP_ShipMedicalCrate.description>
+  <!-- EN: ship nutrient paste crate -->
+  <VFEP_ShipNutrientPasteCrate.label>caixa de pasta nutritiva de nave</VFEP_ShipNutrientPasteCrate.label>
+  <!-- EN: A now-unsealed crate containing emergency food rations. The pallet can be dismantled for steel along with recovering the supplies. -->
+  <VFEP_ShipNutrientPasteCrate.description>Uma caixa, agora aberta, com rações de emergência. O palete pode ser desmontado para aço, além de recuperar os suprimentos.</VFEP_ShipNutrientPasteCrate.description>
+</LanguageData>

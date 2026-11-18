@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <VQE_AncientARC.questContentRules.rulesStrings>
+    <!-- EN: terminalStudiedMessage-&gt;Terminal studied. You've collected the information and can now leave. -->
+    <li>terminalStudiedMessage-&gt;Terminal estudado. Você reuniu as informações e já pode ir embora.</li>
+  </VQE_AncientARC.questContentRules.rulesStrings>
+  <VQE_AncientARC.questDescriptionRules.rulesStrings>
+    <!-- EN: questDescription-&gt;You have [discoveryDesc] of a [adj] village where the potentially final prototype of [inventor_nameFull]'s [arcName] has been built. The villagers [villagerBehavior], and the site [villageCondition].\n\n[arcDetails] However, [villagerWarnings]. If [trigger], the villagers will [villagerReaction].\n\n[finalWarning] -->
+    <li>questDescription-&gt;Você [discoveryDesc] de uma aldeia [adj] onde foi construído o que talvez seja o protótipo final do [arcName] de [inventor_nameFull]. Os aldeões [villagerBehavior], e o lugar [villageCondition].\n\n[arcDetails] Mas [villagerWarnings]. Se [trigger], os aldeões vão [villagerReaction].\n\n[finalWarning]</li>
+    <!-- EN: discoveryDesc-&gt;learned -->
+    <li>discoveryDesc-&gt;soube</li>
+    <!-- EN: discoveryDesc-&gt;discovered -->
+    <li>discoveryDesc-&gt;teve notícia</li>
+    <!-- EN: discoveryDesc-&gt;found the location -->
+    <li>discoveryDesc-&gt;achou a localização</li>
+    <!-- EN: adj-&gt;forgotten -->
+    <li>adj-&gt;esquecida</li>
+    <!-- EN: adj-&gt;ancient -->
+    <li>adj-&gt;antiga</li>
+    <!-- EN: adj-&gt;hidden -->
+    <li>adj-&gt;escondida</li>
+    <!-- EN: adj-&gt;mysterious -->
+    <li>adj-&gt;misteriosa</li>
+    <!-- EN: adj-&gt;decayed -->
+    <li>adj-&gt;decadente</li>
+    <!-- EN: adj-&gt;ruined -->
+    <li>adj-&gt;arruinada</li>
+    <!-- EN: arcName-&gt;ARC -->
+    <li>arcName-&gt;ARC</li>
+    <!-- EN: arcName-&gt;relic -->
+    <li>arcName-&gt;relicário</li>
+    <!-- EN: arcName-&gt;artifact -->
+    <li>arcName-&gt;artefato</li>
+    <!-- EN: arcName-&gt;device -->
+    <li>arcName-&gt;aparelho</li>
+    <!-- EN: arcName-&gt;core -->
+    <li>arcName-&gt;núcleo</li>
+    <!-- EN: villagerBehavior-&gt;venerate the [arcName] -->
+    <li>villagerBehavior-&gt;veneram o [arcName]</li>
+    <!-- EN: villagerBehavior-&gt;worship the [arcName] -->
+    <li>villagerBehavior-&gt;adoram o [arcName]</li>
+    <!-- EN: villagerBehavior-&gt;protect the [arcName] -->
+    <li>villagerBehavior-&gt;protegem o [arcName]</li>
+    <!-- EN: villagerBehavior-&gt;revere the [arcName] -->
+    <li>villagerBehavior-&gt;reverenciam o [arcName]</li>
+    <!-- EN: villagerBehavior-&gt;guard the [arcName] -->
+    <li>villagerBehavior-&gt;montam guarda em volta do [arcName]</li>
+    <!-- EN: villageCondition-&gt;shows signs of past technological greatness -->
+    <li>villageCondition-&gt;mostra sinais de uma antiga grandeza tecnológica</li>
+    <!-- EN: villageCondition-&gt;is overgrown and crumbling -->
+    <li>villageCondition-&gt;está tomado pelo mato e caindo aos pedaços</li>
+    <!-- EN: villageCondition-&gt;has decayed into primitive simplicity -->
+    <li>villageCondition-&gt;decaiu para uma simplicidade primitiva</li>
+    <!-- EN: villageCondition-&gt;has long since fallen from its peak -->
+    <li>villageCondition-&gt;há muito deixou para trás os seus dias de glória</li>
+    <!-- EN: villageCondition-&gt;bears the scars of time and neglect -->
+    <li>villageCondition-&gt;carrega as cicatrizes do tempo e do abandono</li>
+    <!-- EN: arcDetails-&gt;The [arcName] is said to hold valuable secrets for your colony. -->
+    <li>arcDetails-&gt;Dizem que o [arcName] guarda segredos valiosos para a sua colônia.</li>
+    <!-- EN: arcDetails-&gt;Studying the [arcName] could unlock vital knowledge. -->
+    <li>arcDetails-&gt;Estudar o [arcName] pode liberar um conhecimento vital.</li>
+    <!-- EN: arcDetails-&gt;This ancient [arcName] may reveal the means to build one yourself. -->
+    <li>arcDetails-&gt;Este [arcName] antigo pode revelar como construir um para você.</li>
+    <!-- EN: villagerWarnings-&gt;be careful not to provoke the villagers -->
+    <li>villagerWarnings-&gt;cuidado para não provocar os aldeões</li>
+    <!-- EN: villagerWarnings-&gt;the villagers will not take kindly to trespassers -->
+    <li>villagerWarnings-&gt;os aldeões não gostam nada de intrusos</li>
+    <!-- EN: villagerWarnings-&gt;violating their sanctity may result in hostility -->
+    <li>villagerWarnings-&gt;violar o que é sagrado para eles pode trazer hostilidade</li>
+    <!-- EN: villagerWarnings-&gt;their patience may be thin with outsiders -->
+    <li>villagerWarnings-&gt;a paciência deles com forasteiros pode ser curta</li>
+    <!-- EN: trigger-&gt;you harm anyone, interact with the [arcName] or overstay your welcome -->
+    <li>trigger-&gt;você ferir alguém, mexer no [arcName] ou abusar da hospitalidade</li>
+    <!-- EN: villagerReaction-&gt;turn hostile and call for reinforcements -->
+    <li>villagerReaction-&gt;ficar hostis e chamar reforços</li>
+    <!-- EN: villagerReaction-&gt;attack with all their might -->
+    <li>villagerReaction-&gt;atacar com toda a força</li>
+    <!-- EN: villagerReaction-&gt;defend their home at all costs -->
+    <li>villagerReaction-&gt;defender o lar a qualquer custo</li>
+    <!-- EN: villagerReaction-&gt;lash out in violent retaliation -->
+    <li>villagerReaction-&gt;revidar com violência</li>
+    <!-- EN: finalWarning-&gt;If hostilities break out, reinforcements may arrive quickly. -->
+    <li>finalWarning-&gt;Se a briga começar, reforços podem chegar rápido.</li>
+    <!-- EN: finalWarning-&gt;If conflict arises, expect heavy resistance. -->
+    <li>finalWarning-&gt;Se houver conflito, espere resistência pesada.</li>
+    <!-- EN: finalWarning-&gt;Failure to act swiftly could spell disaster. -->
+    <li>finalWarning-&gt;Não agir rápido pode ser um desastre.</li>
+    <!-- EN: finalWarning-&gt;Prepare for an overwhelming response if provoked. -->
+    <li>finalWarning-&gt;Se provocar, prepare-se para uma resposta esmagadora.</li>
+  </VQE_AncientARC.questDescriptionRules.rulesStrings>
+  <VQE_AncientARC.questNameRules.rulesStrings>
+    <!-- EN: questName-&gt;The [adj] [arcName] -->
+    <li>questName-&gt;O [arcName] [adj]</li>
+    <!-- EN: adj-&gt;forgotten -->
+    <li>adj-&gt;esquecido</li>
+    <!-- EN: adj-&gt;ancient -->
+    <li>adj-&gt;antigo</li>
+    <!-- EN: adj-&gt;mysterious -->
+    <li>adj-&gt;misterioso</li>
+    <!-- EN: adj-&gt;sacred -->
+    <li>adj-&gt;sagrado</li>
+    <!-- EN: adj-&gt;hidden -->
+    <li>adj-&gt;escondido</li>
+    <!-- EN: adj-&gt;forsaken -->
+    <li>adj-&gt;desamparado</li>
+    <!-- EN: adj-&gt;tribal -->
+    <li>adj-&gt;tribal</li>
+    <!-- EN: adj-&gt;lost -->
+    <li>adj-&gt;perdido</li>
+    <!-- EN: adj-&gt;overgrown -->
+    <li>adj-&gt;tomado pelo mato</li>
+    <!-- EN: arcName(p=4)-&gt;ARC -->
+    <li>arcName(p=4)-&gt;ARC</li>
+    <!-- EN: arcName-&gt;structure -->
+    <li>arcName-&gt;monumento</li>
+    <!-- EN: arcName-&gt;machine -->
+    <li>arcName-&gt;engenho</li>
+    <!-- EN: arcName-&gt;relic -->
+    <li>arcName-&gt;relicário</li>
+    <!-- EN: arcName-&gt;generator -->
+    <li>arcName-&gt;gerador</li>
+    <!-- EN: arcName-&gt;core -->
+    <li>arcName-&gt;núcleo</li>
+    <!-- EN: arcName-&gt;artifact -->
+    <li>arcName-&gt;artefato</li>
+    <!-- EN: arcName-&gt;device -->
+    <li>arcName-&gt;aparelho</li>
+    <!-- EN: arcName-&gt;source -->
+    <li>arcName-&gt;manancial</li>
+  </VQE_AncientARC.questNameRules.rulesStrings>
+</LanguageData>

@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <!-- EN: ARC junk -->
+  <VQE_GenetronJunk.label>sucata de ARC</VQE_GenetronJunk.label>
+  <!-- EN: A twisted chunk of an ARC. Valuable parts are missing, and everything else is degraded to uselessness. -->
+  <VQE_GenetronJunk.description>Um pedaço retorcido de um ARC. As peças de valor sumiram, e todo o resto se degradou até virar inútil.</VQE_GenetronJunk.description>
+  <!-- EN: ancient ARC part -->
+  <VQE_AncientARCPart.label>peça de ARC antiga</VQE_AncientARCPart.label>
+  <!-- EN: An old, rusted fragment of an ARC. It was probably abandoned when the construction project was halted. It might be possible to disassemble it to obtain some valuable ARC components. -->
+  <VQE_AncientARCPart.description>Um fragmento velho e enferrujado de um ARC. Provavelmente foi abandonado quando a obra parou. Talvez dê para desmontá-lo e tirar alguns componentes ARC valiosos.</VQE_AncientARCPart.description>
+  <!-- EN: prototype -->
+  <VQE_AncientARCPrototype_One.label>protótipo</VQE_AncientARCPrototype_One.label>
+  <!-- EN: A rusted frame of an old power generator, incomplete and barely holding together. Most of its parts are long gone, scavenged or destroyed by time. What’s left is little more than scrap, with no hope of restoration. Perhaps investigating the area could allow you to find the location of another prototype. -->
+  <VQE_AncientARCPrototype_One.description>A estrutura enferrujada de um velho gerador de energia, incompleta e mal se aguentando de pé. A maioria das peças sumiu há muito tempo, saqueada ou destruída pelo tempo. O que sobrou é pouco mais que sucata, sem esperança de restauração. Talvez investigar a área ajude a achar a localização de outro protótipo.</VQE_AncientARCPrototype_One.description>
+  <!-- EN: prototype -->
+  <VQE_AncientARCPrototype_Two.label>protótipo</VQE_AncientARCPrototype_Two.label>
+  <!-- EN: An abandoned generator. Its machinery slightly more intact but still useless. Broken panels, snapped wires, and heavy rust show it was never finished. It’s overgrown and forgotten, offering only a few parts to salvage. Perhaps investigating the area could allow you to find the location of another prototype. -->
+  <VQE_AncientARCPrototype_Two.description>Um gerador abandonado. O maquinário está um pouco mais inteiro, mas continua inútil. Painéis quebrados, fios partidos e muita ferrugem mostram que ele nunca foi terminado. Está tomado pelo mato e esquecido, e só tem algumas peças para aproveitar. Talvez investigar a área ajude a achar a localização de outro protótipo.</VQE_AncientARCPrototype_Two.description>
+  <!-- EN: Study the unfinished prototype of the ARC generator. The information it holds can help you locate the operational one. -->
+  <VQE_AncientARCPrototype_Two.modExtensions.0.descriptionOverride>Estudar o protótipo inacabado do gerador ARC. A informação que ele guarda pode ajudar a achar o que funciona.</VQE_AncientARCPrototype_Two.modExtensions.0.descriptionOverride>
+  <!-- EN: prototype -->
+  <VQE_AncientARCPrototype_Three.label>protótipo</VQE_AncientARCPrototype_Three.label>
+  <!-- EN: An almost-complete generator, abandoned before it could ever work. The structure is more solid, but its insides are wrecked—rust, missing pieces, and heavy overgrowth make it useless. Only a few materials can still be salvaged, but among them it is possible to find some ARC components. Perhaps investigating the area could allow you to find the location of another prototype. -->
+  <VQE_AncientARCPrototype_Three.description>Um gerador quase completo, abandonado antes de chegar a funcionar. A estrutura é mais sólida, mas o interior está destruído: ferrugem, peças faltando e muito mato o tornam inútil. Só alguns materiais ainda dão para aproveitar, mas entre eles há alguns componentes ARC. Talvez investigar a área ajude a achar a localização de outro protótipo.</VQE_AncientARCPrototype_Three.description>
+  <!-- EN: Study the unfinished prototype of the ARC generator. The information it holds can help you locate the operational one. -->
+  <VQE_AncientARCPrototype_Three.modExtensions.0.descriptionOverride>Estudar o protótipo inacabado do gerador ARC. A informação que ele guarda pode ajudar a achar o que funciona.</VQE_AncientARCPrototype_Three.modExtensions.0.descriptionOverride>
+  <!-- EN: ancient construction truck -->
+  <VQE_AncientConstructionTruck.label>caminhão de obra antigo</VQE_AncientConstructionTruck.label>
+  <!-- EN: A rusted, overgrown wreck of a large construction truck. Everything that isn't rusted away was looted long ago. It was most likely used in construction of an ARC generator, judging by the still present shells of a large generator unit strapped on the back. -->
+  <VQE_AncientConstructionTruck.description>O destroço enferrujado e tomado pelo mato de um grande caminhão de obra. Tudo que a ferrugem não comeu foi saqueado há muito tempo. Pelas carcaças de uma grande unidade geradora ainda amarradas na carroceria, provavelmente era usado na construção de um gerador ARC.</VQE_AncientConstructionTruck.description>
+  <!-- EN: ancient construction crane -->
+  <VQE_AncientConstructionCrane.label>guindaste de obra antigo</VQE_AncientConstructionCrane.label>
+  <!-- EN: A rusted, overgrown wreck of a large construction crane. Everything that isn't rusted away was looted long ago. Cranes like that could have been used to construct the large ARC generators, but this wreck can no longer be utilised for anything due to broken down machinery. -->
+  <VQE_AncientConstructionCrane.description>O destroço enferrujado e tomado pelo mato de um grande guindaste de obra. Tudo que a ferrugem não comeu foi saqueado há muito tempo. Guindastes assim podiam construir os grandes geradores ARC, mas este não serve para mais nada: o maquinário está quebrado.</VQE_AncientConstructionCrane.description>
+  <!-- EN: ancient digger -->
+  <VQE_AncientDigger.label>escavadeira antiga</VQE_AncientDigger.label>
+  <!-- EN: A rusted, overgrown wreck of a large digger. Everything that isn't rusted away was looted long ago. A digger of that size could’ve been used to prepare the area for the construction of an ARC generator, but this one is in a very bad state. -->
+  <VQE_AncientDigger.description>O destroço enferrujado e tomado pelo mato de uma grande escavadeira. Tudo que a ferrugem não comeu foi saqueado há muito tempo. Uma escavadeira desse tamanho podia preparar o terreno para a construção de um gerador ARC, mas esta está em péssimo estado.</VQE_AncientDigger.description>
+  <!-- EN: empty construction pallet -->
+  <VQE_EmptyConstructionPallet.label>palete de obra vazio</VQE_EmptyConstructionPallet.label>
+  <!-- EN: A rusted construction pallet. It’s empty. -->
+  <VQE_EmptyConstructionPallet.description>Um palete de obra enferrujado. Está vazio.</VQE_EmptyConstructionPallet.description>
+  <!-- EN: construction pallet with boxes -->
+  <VQE_ConstructionPallet_Boxes.label>palete de obra com caixas</VQE_ConstructionPallet_Boxes.label>
+  <!-- EN: A rusted construction pallet with a stack of old, rusted steel boxes. Anything of value has been removed a long time ago. -->
+  <VQE_ConstructionPallet_Boxes.description>Um palete de obra enferrujado com uma pilha de caixas de aço velhas e enferrujadas. Qualquer coisa de valor foi levada há muito tempo.</VQE_ConstructionPallet_Boxes.description>
+  <!-- EN: construction pallet with scrap -->
+  <VQE_ConstructionPallet_Scrap.label>palete de obra com sucata</VQE_ConstructionPallet_Scrap.label>
+  <!-- EN: A rusted construction pallet with a large container of scrap on it. Can be rummaged through to recover some steel. -->
+  <VQE_ConstructionPallet_Scrap.description>Um palete de obra enferrujado com um grande contêiner de sucata. Dá para revirar e recuperar um pouco de aço.</VQE_ConstructionPallet_Scrap.description>
+  <!-- EN: construction pallet with components -->
+  <VQE_ConstructionPallet_Components.label>palete de obra com componentes</VQE_ConstructionPallet_Components.label>
+  <!-- EN: A rusted construction pallet with a large container of scrapped components on it. Can be rummaged through to recover some industrial components. -->
+  <VQE_ConstructionPallet_Components.description>Um palete de obra enferrujado com um grande contêiner de componentes sucateados. Dá para revirar e recuperar alguns componentes industriais.</VQE_ConstructionPallet_Components.description>
+  <!-- EN: construction pallet with jerrycans -->
+  <VQE_ConstructionPallet_Chemfuel.label>palete de obra com galões</VQE_ConstructionPallet_Chemfuel.label>
+  <!-- EN: A rusted construction pallet with a stack of unused chemfuel jerrycans. Can be salvaged through to recover some chemfuel. -->
+  <VQE_ConstructionPallet_Chemfuel.description>Um palete de obra enferrujado com uma pilha de galões de combustível químico nunca usados. Dá para recuperar um pouco de combustível químico.</VQE_ConstructionPallet_Chemfuel.description>
+  <!-- EN: construction pallet with wood -->
+  <VQE_ConstructionPallet_Wood.label>palete de obra com madeira</VQE_ConstructionPallet_Wood.label>
+  <!-- EN: A rusted construction pallet with a large stack of rotting wood. It is possible to recover some drier wood from it. -->
+  <VQE_ConstructionPallet_Wood.description>Um palete de obra enferrujado com uma grande pilha de madeira apodrecendo. Dá para recuperar um pouco da madeira mais seca.</VQE_ConstructionPallet_Wood.description>
+  <!-- EN: research terminal -->
+  <VQE_AncientResearchTerminal.label>terminal de pesquisa</VQE_AncientResearchTerminal.label>
+  <!-- EN: An ancient computer terminal. It can be used to access research notes related to an ARC generator unit. -->
+  <VQE_AncientResearchTerminal.description>Um terminal de computador antigo. Dá acesso a notas de pesquisa sobre uma unidade geradora ARC.</VQE_AncientResearchTerminal.description>
+  <!-- EN: Study the data on this ancient research terminal. It may provide valuable information about the ARC project. -->
+  <VQE_AncientResearchTerminal.modExtensions.0.descriptionOverride>Estudar os dados deste terminal de pesquisa antigo. Podem trazer informações valiosas sobre o projeto ARC.</VQE_AncientResearchTerminal.modExtensions.0.descriptionOverride>
+  <!-- EN: ancient research terminal -->
+  <VQE_AncientResearchTerminal_Off.label>terminal de pesquisa antigo</VQE_AncientResearchTerminal_Off.label>
+  <!-- EN: An ancient computer terminal. It’s disconnected from power, or simply not working. -->
+  <VQE_AncientResearchTerminal_Off.description>Um terminal de computador antigo. Está sem energia ou simplesmente não funciona.</VQE_AncientResearchTerminal_Off.description>
+  <!-- EN: cracked research terminal -->
+  <VQE_AncientResearchTerminal_Cracked.label>terminal de pesquisa rachado</VQE_AncientResearchTerminal_Cracked.label>
+  <!-- EN: An ancient computer terminal. The screen is cracked and any components of value have been removed. -->
+  <VQE_AncientResearchTerminal_Cracked.description>Um terminal de computador antigo. A tela está rachada e qualquer componente de valor foi retirado.</VQE_AncientResearchTerminal_Cracked.description>
+  <!-- EN: ancient research files -->
+  <VQE_AncientResearchFiles.label>arquivos de pesquisa antigos</VQE_AncientResearchFiles.label>
+  <!-- EN: An ancient, rusted filing cabinet containing folders with research notes regarding the construction of an ARC generator. -->
+  <VQE_AncientResearchFiles.description>Um velho arquivo de aço enferrujado, com pastas de notas de pesquisa sobre a construção de um gerador ARC.</VQE_AncientResearchFiles.description>
+  <!-- EN: Study the files inside this filing cabinet. They may provide valuable information about the ARC project. -->
+  <VQE_AncientResearchFiles.modExtensions.0.descriptionOverride>Estudar as pastas deste arquivo. Podem trazer informações valiosas sobre o projeto ARC.</VQE_AncientResearchFiles.modExtensions.0.descriptionOverride>
+  <!-- EN: ancient filing cabinet -->
+  <VQE_AncientResearchFiles_Off.label>arquivo de aço antigo</VQE_AncientResearchFiles_Off.label>
+  <!-- EN: An ancient, rusted filing cabinet. It’s completely empty. -->
+  <VQE_AncientResearchFiles_Off.description>Um velho arquivo de aço enferrujado. Está completamente vazio.</VQE_AncientResearchFiles_Off.description>
+  <!-- EN: experimental ARC part -->
+  <VQE_ExperimentalARCPart.label>peça experimental de ARC</VQE_ExperimentalARCPart.label>
+  <!-- EN: A bizarre piece of machinery that was designed for a large generator. Since it was covered with a tarp, it’s relatively intact. It can be studied to gain some knowledge about the ARC generator unit that may help decipher the ancient research data left by the inventor. It might be possible to disassemble it to obtain some valuable ARC components. -->
+  <VQE_ExperimentalARCPart.description>Uma peça de maquinário bizarra, projetada para um grande gerador. Como estava coberta por uma lona, está relativamente inteira. Pode ser estudada para aprender algo sobre a unidade geradora ARC que ajude a decifrar os antigos dados de pesquisa deixados pelo inventor. Talvez dê para desmontá-la e tirar alguns componentes ARC valiosos.</VQE_ExperimentalARCPart.description>
+  <!-- EN:  Study the machinery in the experimental ARC part. It may provide valuable information about the ARC project. -->
+  <VQE_ExperimentalARCPart.modExtensions.0.descriptionOverride>Estudar o maquinário da peça experimental de ARC. Pode trazer informações valiosas sobre o projeto ARC.</VQE_ExperimentalARCPart.modExtensions.0.descriptionOverride>
+  <!-- EN: studied experimental ARC part -->
+  <VQE_ExperimentalARCPart_Studied.label>peça experimental de ARC estudada</VQE_ExperimentalARCPart_Studied.label>
+  <!-- EN: A bizarre piece of machinery that was designed for a large generator. As you have already studied it, it can be disassembled for parts. -->
+  <VQE_ExperimentalARCPart_Studied.description>Uma peça de maquinário bizarra, projetada para um grande gerador. Como você já a estudou, pode desmontá-la para tirar peças.</VQE_ExperimentalARCPart_Studied.description>
+  <!-- EN: ancient chainlink fence -->
+  <VQE_AncientChainlinkFence.label>alambrado antigo</VQE_AncientChainlinkFence.label>
+  <!-- EN: An ancient fence made of reinforced metal posts connected by rusted chainlink. -->
+  <VQE_AncientChainlinkFence.description>Uma cerca antiga de postes de metal reforçados ligados por tela de arame enferrujada.</VQE_AncientChainlinkFence.description>
+  <!-- EN: cryptosleep casket -->
+  <VQE_OvergrownCryptosleepCasket.label>sarcófago de criptosono</VQE_OvergrownCryptosleepCasket.label>
+  <!-- EN: This cryptosleep casket is overgrown with brambles and looks like it has been here for a very long time. Who knows what it might contain? -->
+  <VQE_OvergrownCryptosleepCasket.description>Este sarcófago de criptosono está coberto de espinheiros e parece estar aqui há muito, muito tempo. Quem sabe o que tem dentro?</VQE_OvergrownCryptosleepCasket.description>
+  <!-- EN: ancient ARC -->
+  <VQE_AncientGenetron.label>ARC antigo</VQE_AncientGenetron.label>
+  <!-- EN: An ancient prototype of an ARC, ruined by time and lack of maintenance. Most of the critical machinery has been looted long ago, thwarting any restatoration attempts, however deconstructing it may still yield valuable components, useful in constructing a brand new ARC. This ancient ruin can be studied to learn how to construct and maintain an ARC. -->
+  <VQE_AncientGenetron.description>Um antigo protótipo de ARC, arruinado pelo tempo e pela falta de manutenção. A maior parte do maquinário crítico foi saqueada há muito, o que impede qualquer restauração, mas desmontá-lo ainda pode render componentes valiosos para construir um ARC novinho. Estas ruínas antigas podem ser estudadas para aprender a construir e manter um ARC.</VQE_AncientGenetron.description>
+  <!-- EN: ancient geothermal ARC -->
+  <VQE_AncientGeothermalGenetron.label>ARC geotérmico antigo</VQE_AncientGeothermalGenetron.label>
+  <!-- EN: An ancient geothermal ARC, ruined by time and lack of maintenance. Most of the critical machinery has been looted long ago, thwarting any restatoration attempts, however deconstructing it may still yield valuable components, useful in constructing a brand new ARC. This ancient ruin can be studied to learn how to construct a geothermal ARC. -->
+  <VQE_AncientGeothermalGenetron.description>Um antigo ARC geotérmico, arruinado pelo tempo e pela falta de manutenção. A maior parte do maquinário crítico foi saqueada há muito, o que impede qualquer restauração, mas desmontá-lo ainda pode render componentes valiosos para construir um ARC novinho. Estas ruínas antigas podem ser estudadas para aprender a construir um ARC geotérmico.</VQE_AncientGeothermalGenetron.description>
+  <!-- EN: nuclear ARC husk -->
+  <VQE_NuclearGenetronHusk.label>carcaça de ARC nuclear</VQE_NuclearGenetronHusk.label>
+  <!-- EN: A ruined husk of a nuclear ARC. Lack of maintenance or other unforeseen crisis has resulted in a devastating detonation that has twisted the metal into something quite unusable. This husk can be studied to learn how to construct and maintain a nuclear ARC, but can also be deconstructed to yield some resources back. -->
+  <VQE_NuclearGenetronHusk.description>A carcaça arruinada de um ARC nuclear. Falta de manutenção, ou alguma outra crise imprevista, causou uma detonação devastadora que retorceu o metal até deixá-lo imprestável. A carcaça pode ser estudada para aprender a construir e manter um ARC nuclear, e também pode ser desmontada para recuperar alguns recursos.</VQE_NuclearGenetronHusk.description>
+  <!-- EN: experimental ARC -->
+  <VQE_AncientOvergrownGenetron.label>ARC experimental</VQE_AncientOvergrownGenetron.label>
+  <!-- EN: A mysterious, ancient, overgrown ARC. It seems to look more like a working prototype than a finished product, now fully covered in brambles and signs of aging. Somehow, despite its age, it’s still operating, generating sufficient power for nearby electrical networks. Any tampering with it is bound to irreversibly damage it, but it may be possible to extract some ARC components from it. -->
+  <VQE_AncientOvergrownGenetron.description>Um ARC misterioso, antigo e tomado pelo mato. Parece mais um protótipo funcional do que um produto acabado, agora todo coberto de espinheiros e sinais de idade. De algum jeito, apesar da idade, continua funcionando e gerando energia suficiente para as redes elétricas por perto. Qualquer mexida vai danificá-lo para sempre, mas talvez dê para tirar alguns componentes ARC dele.</VQE_AncientOvergrownGenetron.description>
+</LanguageData>

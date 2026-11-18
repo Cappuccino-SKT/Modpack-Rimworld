@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <AB_NamerLandmark_TarLakes.rulePack.rulesStrings>
+    <!-- EN: terrain_word(p=4)-&gt;tar lakes -->
+    <li>terrain_word(p=4)-&gt;lagos de piche</li>
+    <!-- EN: terrain_word-&gt;asphalt pits -->
+    <li>terrain_word-&gt;poços de asfalto</li>
+    <!-- EN: terrain_word-&gt;bitumen pools -->
+    <li>terrain_word-&gt;poças de betume</li>
+    <!-- EN: terrain_word-&gt;pitch ponds -->
+    <li>terrain_word-&gt;charcos de breu</li>
+  </AB_NamerLandmark_TarLakes.rulePack.rulesStrings>
+  <AB_NamerLandmark_PropaneLakes.rulePack.rulesStrings>
+    <!-- EN: terrain_word(p=4)-&gt;propane lakes -->
+    <li>terrain_word(p=4)-&gt;lagos de propano</li>
+    <!-- EN: terrain_word-&gt;propane ponds -->
+    <li>terrain_word-&gt;lagoas de propano</li>
+    <!-- EN: terrain_word-&gt;propane pools -->
+    <li>terrain_word-&gt;poças de propano</li>
+    <!-- EN: terrain_word-&gt;propane basins -->
+    <li>terrain_word-&gt;bacias de propano</li>
+  </AB_NamerLandmark_PropaneLakes.rulePack.rulesStrings>
+  <AB_NamerLandmark_MagmaticQuagmire.rulePack.rulesStrings>
+    <!-- EN: terrain_word(p=4)-&gt;magmatic quagmire -->
+    <li>terrain_word(p=4)-&gt;lamaçal magmático</li>
+    <!-- EN: terrain_word-&gt;magma sinks -->
+    <li>terrain_word-&gt;sumidouros de magma</li>
+    <!-- EN: terrain_word-&gt;pyromarsh -->
+    <li>terrain_word-&gt;pirobrejo</li>
+    <!-- EN: terrain_word-&gt;lavamire -->
+    <li>terrain_word-&gt;atoleiro de lava</li>
+  </AB_NamerLandmark_MagmaticQuagmire.rulePack.rulesStrings>
+  <AB_NamerLandmark_QuicksandPits.rulePack.rulesStrings>
+    <!-- EN: terrain_word(p=4)-&gt;quicksand pits -->
+    <li>terrain_word(p=4)-&gt;poços de areia movediça</li>
+    <!-- EN: terrain_word-&gt;sinking sands -->
+    <li>terrain_word-&gt;areias que engolem</li>
+    <!-- EN: terrain_word-&gt;loose earth pockets -->
+    <li>terrain_word-&gt;bolsões de terra fofa</li>
+    <!-- EN: terrain_word-&gt;unstable ground -->
+    <li>terrain_word-&gt;chão instável</li>
+  </AB_NamerLandmark_QuicksandPits.rulePack.rulesStrings>
+  <AB_NamerLandmark_MutagenicSprings.rulePack.rulesStrings>
+    <!-- EN: r_name(p=0.2)-&gt;[NamePerson]'s noxious springs -->
+    <li>r_name(p=0.2)-&gt;fontes nocivas de [NamePerson]</li>
+    <!-- EN: terrain_word(p=2)-&gt;mutagenic spring -->
+    <li>terrain_word(p=2)-&gt;fonte mutagênica</li>
+    <!-- EN: terrain_word(p=2)-&gt;ocular springs -->
+    <li>terrain_word(p=2)-&gt;fontes oculares</li>
+    <!-- EN: terrain_word-&gt;ocular spring -->
+    <li>terrain_word-&gt;fonte ocular</li>
+  </AB_NamerLandmark_MutagenicSprings.rulePack.rulesStrings>
+  <AB_NamerLandmark_HealingSprings.rulePack.rulesStrings>
+    <!-- EN: r_name(p=0.2)-&gt;[NamePerson]'s healing fonts -->
+    <li>r_name(p=0.2)-&gt;fontes curativas de [NamePerson]</li>
+    <!-- EN: terrain_word(p=2)-&gt;healing spring -->
+    <li>terrain_word(p=2)-&gt;fonte curativa</li>
+    <!-- EN: terrain_word(p=2)-&gt;healing springs -->
+    <li>terrain_word(p=2)-&gt;fontes curativas</li>
+  </AB_NamerLandmark_HealingSprings.rulePack.rulesStrings>
+  <AB_NamerLandmark_SweetForest.rulePack.rulesStrings>
+    <!-- EN: terrain_word(p=2)-&gt;sweet forest -->
+    <li>terrain_word(p=2)-&gt;floresta doce</li>
+    <!-- EN: terrain_word-&gt;cream meadows -->
+    <li>terrain_word-&gt;prados de creme</li>
+    <!-- EN: terrain_word-&gt;strawberry plains -->
+    <li>terrain_word-&gt;planícies de morango</li>
+    <!-- EN: terrain_word-&gt;chocolate fields -->
+    <li>terrain_word-&gt;campos de chocolate</li>
+    <!-- EN: terrain_word-&gt;candy orchards -->
+    <li>terrain_word-&gt;pomares de doce</li>
+  </AB_NamerLandmark_SweetForest.rulePack.rulesStrings>
+  <AB_NamerLandmark_AnimaDesert.rulePack.rulesStrings>
+    <!-- EN: r_name(p=0.2)-&gt;[NamePerson]'s [terrain_word] -->
+    <li>r_name(p=0.2)-&gt;[terrain_word] de [NamePerson]</li>
+    <!-- EN: terrain_word(p=3)-&gt;anima desert -->
+    <li>terrain_word(p=3)-&gt;deserto de anima</li>
+    <!-- EN: terrain_word(p=2)-&gt;anima sands -->
+    <li>terrain_word(p=2)-&gt;areias de anima</li>
+  </AB_NamerLandmark_AnimaDesert.rulePack.rulesStrings>
+  <AB_NamerLandmark_OcularDesert.rulePack.rulesStrings>
+    <!-- EN: r_name(p=0.2)-&gt;[NamePerson]'s [terrain_word] -->
+    <li>r_name(p=0.2)-&gt;[terrain_word] de [NamePerson]</li>
+    <!-- EN: terrain_word(p=3)-&gt;ocular desert -->
+    <li>terrain_word(p=3)-&gt;deserto ocular</li>
+    <!-- EN: terrain_word(p=2)-&gt;ocular sands -->
+    <li>terrain_word(p=2)-&gt;areias oculares</li>
+  </AB_NamerLandmark_OcularDesert.rulePack.rulesStrings>
+  <AB_NamerLandmark_DryMeadows.rulePack.rulesStrings>
+    <!-- EN: r_name-&gt;[NamePerson]'s dry meadows -->
+    <li>r_name-&gt;prados secos de [NamePerson]</li>
+  </AB_NamerLandmark_DryMeadows.rulePack.rulesStrings>
+  <AB_NamerLandmark_ToxicMeadows.rulePack.rulesStrings>
+    <!-- EN: r_name-&gt;[NamePerson]'s toxic meadows -->
+    <li>r_name-&gt;prados tóxicos de [NamePerson]</li>
+  </AB_NamerLandmark_ToxicMeadows.rulePack.rulesStrings>
+  <AB_NamerLandmark_WillowForest.rulePack.rulesStrings>
+    <!-- EN: terrain_word(p=4)-&gt;willow forest -->
+    <li>terrain_word(p=4)-&gt;floresta de salgueiros</li>
+    <!-- EN: terrain_word-&gt;weeping woods -->
+    <li>terrain_word-&gt;bosque chorão</li>
+    <!-- EN: terrain_word-&gt;willow groves -->
+    <li>terrain_word-&gt;arvoredo de salgueiros</li>
+    <!-- EN: terrain_word-&gt;catkin woods -->
+    <li>terrain_word-&gt;mata de amentilhos</li>
+  </AB_NamerLandmark_WillowForest.rulePack.rulesStrings>
+  <AB_NamerLandmark_CloverForest.rulePack.rulesStrings>
+    <!-- EN: terrain_word(p=4)-&gt;clover forest -->
+    <li>terrain_word(p=4)-&gt;floresta de trevos</li>
+    <!-- EN: terrain_word-&gt;clover woods -->
+    <li>terrain_word-&gt;mata de trevos</li>
+    <!-- EN: terrain_word-&gt;shamrock grove -->
+    <li>terrain_word-&gt;bosque de trevos</li>
+    <!-- EN: terrain_word-&gt;greenleaf thicket -->
+    <li>terrain_word-&gt;matagal de folha verde</li>
+  </AB_NamerLandmark_CloverForest.rulePack.rulesStrings>
+  <AB_NamerLandmark_GinkgoForest.rulePack.rulesStrings>
+    <!-- EN: terrain_word(p=4)-&gt;ginkgo forest -->
+    <li>terrain_word(p=4)-&gt;floresta de ginkgos</li>
+    <!-- EN: terrain_word-&gt;ginkgo woods -->
+    <li>terrain_word-&gt;mata de ginkgos</li>
+    <!-- EN: terrain_word-&gt;maidenhair grove -->
+    <li>terrain_word-&gt;bosque de avencas</li>
+    <!-- EN: terrain_word-&gt;golden ginkgoes -->
+    <li>terrain_word-&gt;ginkgos dourados</li>
+  </AB_NamerLandmark_GinkgoForest.rulePack.rulesStrings>
+  <AB_NamerLandmark_MauvebloomFields.rulePack.rulesStrings>
+    <!-- EN: terrain_word(p=4)-&gt;mauvebloom fields -->
+    <li>terrain_word(p=4)-&gt;campos de malvaflor</li>
+    <!-- EN: terrain_word-&gt;purple meadows -->
+    <li>terrain_word-&gt;prados roxos</li>
+    <!-- EN: terrain_word-&gt;mauve plains -->
+    <li>terrain_word-&gt;planícies malva</li>
+    <!-- EN: terrain_word-&gt;violet bloomlands -->
+    <li>terrain_word-&gt;terras de flor violeta</li>
+  </AB_NamerLandmark_MauvebloomFields.rulePack.rulesStrings>
+  <AB_NamerLandmark_GauranlenGrove.rulePack.rulesStrings>
+    <!-- EN: terrain_word-&gt;gauranlen grove -->
+    <li>terrain_word-&gt;bosque de gauranlen</li>
+  </AB_NamerLandmark_GauranlenGrove.rulePack.rulesStrings>
+  <AB_NamerLandmark_WarpedStoneForest.rulePack.rulesStrings>
+    <!-- EN: terrain_word-&gt;warped stone grove -->
+    <li>terrain_word-&gt;bosque de pedra retorcida</li>
+    <!-- EN: terrain_word-&gt;warped pillar-strewn expanse -->
+    <li>terrain_word-&gt;vastidão de pilares retorcidos</li>
+    <!-- EN: terrain_word-&gt;warped rocky field -->
+    <li>terrain_word-&gt;campo rochoso retorcido</li>
+    <!-- EN: terrain_word-&gt;warped shattered monoliths -->
+    <li>terrain_word-&gt;monólitos retorcidos e partidos</li>
+    <!-- EN: terrain_word-&gt;warped stone thicket -->
+    <li>terrain_word-&gt;matagal de pedra retorcida</li>
+  </AB_NamerLandmark_WarpedStoneForest.rulePack.rulesStrings>
+  <VEE_NamerLandmark_ObsidianExpanse.rulePack.rulesStrings>
+    <!-- EN: terrain_word-&gt;obsidian expanse -->
+    <li>terrain_word-&gt;vastidão de obsidiana</li>
+  </VEE_NamerLandmark_ObsidianExpanse.rulePack.rulesStrings>
+  <VEE_NamerLandmark_CalcifiedRemnants.rulePack.rulesStrings>
+    <!-- EN: terrain_word-&gt;calcified remnants -->
+    <li>terrain_word-&gt;restos calcificados</li>
+  </VEE_NamerLandmark_CalcifiedRemnants.rulePack.rulesStrings>
+  <AB_NamerLandmark_LivingCrystalBed.rulePack.rulesStrings>
+    <!-- EN: terrain_word-&gt;living crystal garden -->
+    <li>terrain_word-&gt;jardim de cristal vivo</li>
+    <!-- EN: terrain_word-&gt;pulsing crystal field -->
+    <li>terrain_word-&gt;campo de cristal pulsante</li>
+    <!-- EN: terrain_word-&gt;alcyonite crystal bed -->
+    <li>terrain_word-&gt;leito de cristal de alcionita</li>
+    <!-- EN: terrain_word-&gt;breathing crystal grove -->
+    <li>terrain_word-&gt;bosque de cristal que respira</li>
+    <!-- EN: terrain_word-&gt;living crystal expanse -->
+    <li>terrain_word-&gt;vastidão de cristal vivo</li>
+    <!-- EN: terrain_word-&gt;crystalline growth -->
+    <li>terrain_word-&gt;formação cristalina</li>
+    <!-- EN: terrain_word-&gt;alcyonite garden -->
+    <li>terrain_word-&gt;jardim de alcionita</li>
+  </AB_NamerLandmark_LivingCrystalBed.rulePack.rulesStrings>
+  <AB_NamerLandmark_FleshMorass.rulePack.rulesStrings>
+    <!-- EN: terrain_word-&gt;flesh morass -->
+    <li>terrain_word-&gt;atoleiro de carne</li>
+    <!-- EN: terrain_word-&gt;fleshy bog -->
+    <li>terrain_word-&gt;brejo carnudo</li>
+    <!-- EN: terrain_word-&gt;meat mire -->
+    <li>terrain_word-&gt;lamaçal de carne</li>
+    <!-- EN: terrain_word-&gt;flesh mire -->
+    <li>terrain_word-&gt;charco de carne</li>
+  </AB_NamerLandmark_FleshMorass.rulePack.rulesStrings>
+  <AB_NamerLandmark_CorruptedIntrusion.rulePack.rulesStrings>
+    <!-- EN: terrain_word-&gt;corrupted intrusion -->
+    <li>terrain_word-&gt;intrusão corrompida</li>
+  </AB_NamerLandmark_CorruptedIntrusion.rulePack.rulesStrings>
+  <AB_NamerLandmark_GnawingSands.rulePack.rulesStrings>
+    <!-- EN: terrain_word-&gt;gnawing sands -->
+    <li>terrain_word-&gt;areias roedoras</li>
+  </AB_NamerLandmark_GnawingSands.rulePack.rulesStrings>
+</LanguageData>

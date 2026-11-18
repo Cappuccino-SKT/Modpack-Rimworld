@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <!-- EN: {PAWN_nameDef} got a bruise due to being clumsy -->
+  <VTE.GotBruise>{PAWN_nameDef} se machucou por ser desastrado</VTE.GotBruise>
+  <!-- EN: {PAWN_nameDef} is too heavy of a sleeper to be drafted. -->
+  <VTE.CantBeWokenUpHeavySleeper>{PAWN_nameDef} tem o sono pesado demais para ser convocado.</VTE.CantBeWokenUpHeavySleeper>
+  <!-- EN: {PAWN_nameDef} has given up on {0} for now due to being a perfectionist -->
+  <VTE.DecisesInterruptCurrentCostructionJob>{PAWN_nameDef} desistiu de {0} por enquanto, por ser perfeccionista</VTE.DecisesInterruptCurrentCostructionJob>
+  <!-- EN: Wanderlust pawns will traverse to foreign locations at an increased speed -->
+  <VTE.CavaranSpeedIsDoubledWanderlusts>Andarilhos viajam a lugares distantes mais rápido</VTE.CavaranSpeedIsDoubledWanderlusts>
+  <!-- EN: {PAWN_nameDef} has stolen a possession not belonging to their faction, this may damage relations between affiliated factions -->
+  <VTE.KleptomaniacStealsItemFrom>{PAWN_nameDef} roubou algo que não pertence à própria facção; isso pode estragar as relações entre as facções envolvidas</VTE.KleptomaniacStealsItemFrom>
+  <!-- EN: {PAWN_nameDef} was caught trying to steal another factions possessions, this may damage relations between affiliated factions -->
+  <VTE.KleptomaniacFailedToStealItemFrom>{PAWN_nameDef} foi pego tentando roubar os pertences de outra facção; isso pode estragar as relações entre as facções envolvidas</VTE.KleptomaniacFailedToStealItemFrom>
+  <!-- EN: {PAWN_nameDef} has damaged {0} due to their weight or strange posture -->
+  <VTE.PawnBreaksChairs>{PAWN_nameDef} danificou {0} por causa do peso ou da postura esquisita</VTE.PawnBreaksChairs>
+  <!-- EN: {PAWN_nameDef} stole {0} from {VICTIM_nameDef} -->
+  <VTE.PawnStoleItem>{PAWN_nameDef} roubou {0} de {VICTIM_nameDef}</VTE.PawnStoleItem>
+  <!-- EN: {PAWN_nameDef} failed to steal {0} from {VICTIM_nameDef}. This has angered the {VICTIM_nameDef} faction -->
+  <VTE.PawnFailedToStealItem>{PAWN_nameDef} não conseguiu roubar {0} de {VICTIM_nameDef}. Isso irritou a facção de {VICTIM_nameDef}</VTE.PawnFailedToStealItem>
+  <!-- EN: {PAWN_nameDef} runs away from combat due to being a coward -->
+  <VTE.PawnCowardlyFlees>{PAWN_nameDef} fugiu do combate por covardia</VTE.PawnCowardlyFlees>
+  <!-- EN: {PAWN_nameDef} runs away from combat due to being a coward -->
+  <VTE.PawnCowardlyExitMapHostile>{PAWN_nameDef} fugiu do combate por covardia</VTE.PawnCowardlyExitMapHostile>
+  <!-- EN: {PAWN_nameDef} runs away from combat due to being a coward -->
+  <VTE.PawnCowardlyExitMapAlly>{PAWN_nameDef} fugiu do combate por covardia</VTE.PawnCowardlyExitMapAlly>
+  <!-- EN: {PAWN_nameDef} runs away from combat due to being a coward -->
+  <VTE.PawnCowardlyExitMapNeutral>{PAWN_nameDef} fugiu do combate por covardia</VTE.PawnCowardlyExitMapNeutral>
+  <!-- EN: {PAWN_nameDef} has defied or forgotten their orders and stopped working for the time being -->
+  <VTE.PawnStopsForcedJob>{PAWN_nameDef} desafiou ou esqueceu as ordens e parou de trabalhar por enquanto</VTE.PawnStopsForcedJob>
+  <!-- EN: {PAWN_nameDef} has disarmed {VICTIM_nameDef} in melee combat -->
+  <VTE.VictimDropsEquipmentMartialArtist>{PAWN_nameDef} desarmou {VICTIM_nameDef} no corpo a corpo</VTE.VictimDropsEquipmentMartialArtist>
+  <!-- EN: {PAWN_nameDef} is an animal lover -->
+  <VTE.AnimalLoverRefusesToButcher>{PAWN_nameDef} é amante dos animais</VTE.AnimalLoverRefusesToButcher>
+  <!-- EN: A lush person never recovers -->
+  <VTE.LushNeverRecovers>Pinguço nunca se recupera</VTE.LushNeverRecovers>
+  <!-- EN: A stoner never recovers -->
+  <VTE.StonerNeverRecovers>Maconheiro nunca se recupera</VTE.StonerNeverRecovers>
+</LanguageData>

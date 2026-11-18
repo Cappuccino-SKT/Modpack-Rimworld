@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <!-- EN: inertial core -->
+  <VWE_InertialCore.label>núcleo inercial</VWE_InertialCore.label>
+  <!-- EN: This weapon maintains absolute kinetic energy during overcharge, vastly increasing armor penetration. -->
+  <VWE_InertialCore.description>Esta arma mantém a energia cinética total durante a sobrecarga, aumentando muito a penetração de armadura.</VWE_InertialCore.description>
+  <!-- EN: bypass relay -->
+  <VWE_BypassRelay.label>relé de desvio</VWE_BypassRelay.label>
+  <!-- EN: This weapon features an optimized charging sequence that halves the charging time between bursts. -->
+  <VWE_BypassRelay.description>Esta arma tem uma sequência de carga otimizada que corta pela metade o tempo de carga entre rajadas.</VWE_BypassRelay.description>
+  <!-- EN: overdrawn coils -->
+  <VWE_OverdrawnCoils.label>bobinas sobrecarregadas</VWE_OverdrawnCoils.label>
+  <!-- EN: This weapon draws excessive power from its reserves, taking slightly longer to charge but delivering vastly increased damage. -->
+  <VWE_OverdrawnCoils.description>Esta arma puxa energia demais das reservas: demora um pouco mais para carregar, mas causa muito mais dano.</VWE_OverdrawnCoils.description>
+  <!-- EN: ionized sabot -->
+  <VWE_IonizedSabot.label>sabot ionizado</VWE_IonizedSabot.label>
+  <!-- EN: This weapon magnetizes its projectiles with volatile energy, increasing damage across all firing modes. -->
+  <VWE_IonizedSabot.description>Esta arma magnetiza os projéteis com energia volátil, aumentando o dano em todos os modos de tiro.</VWE_IonizedSabot.description>
+  <!-- EN: hypercapacitors -->
+  <VWE_Hypercapacitors.label>hipercapacitores</VWE_Hypercapacitors.label>
+  <!-- EN: This weapon is fitted with advanced energy banks that double the possible burst count for all shots, though the resulting rapid-fire sequence no longer guarantees armor penetration. -->
+  <VWE_Hypercapacitors.description>Esta arma tem bancos de energia avançados que dobram a rajada possível de todos os tiros, mas a sequência rápida resultante não garante mais a penetração de armadura.</VWE_Hypercapacitors.description>
+  <!-- EN: CQC Tuning -->
+  <VWE_InvertedRailTuning.label>ajuste para combate próximo</VWE_InvertedRailTuning.label>
+  <!-- EN: This weapon is radically tuned to deliver devastating shots at close range. -->
+  <VWE_InvertedRailTuning.description>Esta arma foi radicalmente ajustada para dar tiros devastadores à queima-roupa.</VWE_InvertedRailTuning.description>
+</LanguageData>

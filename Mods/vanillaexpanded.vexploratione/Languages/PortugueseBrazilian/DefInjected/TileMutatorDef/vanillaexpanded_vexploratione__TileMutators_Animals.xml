@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <!-- EN: abundant predators -->
+  <VEE_AbundantPredators.label>predadores abundantes</VEE_AbundantPredators.label>
+  <!-- EN: Animals considered predators appear in greater numbers here. -->
+  <VEE_AbundantPredators.description>Animais considerados predadores aparecem em maior número aqui.</VEE_AbundantPredators.description>
+  <!-- EN: reduced predators -->
+  <VEE_ReducedPredators.label>poucos predadores</VEE_ReducedPredators.label>
+  <!-- EN: Animals considered predators appear in lesser numbers here. -->
+  <VEE_ReducedPredators.description>Animais considerados predadores aparecem em menor número aqui.</VEE_ReducedPredators.description>
+  <!-- EN: abundant prey -->
+  <VEE_AbundantPrey.label>presas abundantes</VEE_AbundantPrey.label>
+  <!-- EN: Animals considered prey appear in greater numbers here. -->
+  <VEE_AbundantPrey.description>Animais considerados presas aparecem em maior número aqui.</VEE_AbundantPrey.description>
+  <!-- EN: reduced prey -->
+  <VEE_ReducedPrey.label>poucas presas</VEE_ReducedPrey.label>
+  <!-- EN: Animals considered prey appear in lesser numbers here. -->
+  <VEE_ReducedPrey.description>Animais considerados presas aparecem em menor número aqui.</VEE_ReducedPrey.description>
+  <!-- EN: natural aerie -->
+  <VEE_NaturalAerie.label>ninhal natural</VEE_NaturalAerie.label>
+  <!-- EN: Flying animals appear in greater numbers here. -->
+  <VEE_NaturalAerie.description>Animais voadores aparecem em maior número aqui.</VEE_NaturalAerie.description>
+  <!-- EN: marine sanctuary -->
+  <VEE_MarineSanctuary.label>santuário marinho</VEE_MarineSanctuary.label>
+  <!-- EN: Coastal animals appear in greater numbers here. -->
+  <VEE_MarineSanctuary.description>Animais costeiros aparecem em maior número aqui.</VEE_MarineSanctuary.description>
+  <!-- EN: rodent plagues -->
+  <VEE_RodentPlagues.label>pragas de roedores</VEE_RodentPlagues.label>
+  <!-- EN: This area is infested with rats. -->
+  <VEE_RodentPlagues.description>Esta área está infestada de ratos.</VEE_RodentPlagues.description>
+  <!-- EN: venomous ecosystem -->
+  <VEE_VenomousEcosystem.label>ecossistema venenoso</VEE_VenomousEcosystem.label>
+  <!-- EN: Venomous animals appear in greater numbers here. -->
+  <VEE_VenomousEcosystem.description>Animais venenosos aparecem em maior número aqui.</VEE_VenomousEcosystem.description>
+  <!-- EN: colossal fauna -->
+  <VEE_ColossalFauna.label>fauna colossal</VEE_ColossalFauna.label>
+  <!-- EN: All fauna in this area is much larger than usual. -->
+  <VEE_ColossalFauna.description>Toda a fauna desta área é bem maior que o normal.</VEE_ColossalFauna.description>
+  <!-- EN: microfauna -->
+  <VEE_Microfauna.label>microfauna</VEE_Microfauna.label>
+  <!-- EN: All fauna in this area is much smaller than usual. -->
+  <VEE_Microfauna.description>Toda a fauna desta área é bem menor que o normal.</VEE_Microfauna.description>
+  <!-- EN: alphabeavers -->
+  <VEE_Alphabeavers.label>alfacastores</VEE_Alphabeavers.label>
+  <!-- EN: Alphabeavers have been spotted in this region. -->
+  <VEE_Alphabeavers.description>Alfacastores foram avistados nesta região.</VEE_Alphabeavers.description>
+  <!-- EN: migratory herds -->
+  <VEE_MigratoryHerds.label>manadas migratórias</VEE_MigratoryHerds.label>
+  <!-- EN: Groups of herd animals will periodically cross this region. -->
+  <VEE_MigratoryHerds.description>Grupos de animais de manada atravessam esta região de tempos em tempos.</VEE_MigratoryHerds.description>
+  <!-- EN: feral kinship -->
+  <VEE_FeralKinship.label>parentesco selvagem</VEE_FeralKinship.label>
+  <!-- EN: All animals in this region have a decreased wildness. -->
+  <VEE_FeralKinship.description>Todos os animais desta região são menos selvagens.</VEE_FeralKinship.description>
+  <!-- EN: distressed wildlife -->
+  <VEE_DistressedWildlife.label>fauna estressada</VEE_DistressedWildlife.label>
+  <!-- EN: All animals in this region have increased wildness. -->
+  <VEE_DistressedWildlife.description>Todos os animais desta região são mais selvagens.</VEE_DistressedWildlife.description>
+  <!-- EN: aggressive herds -->
+  <VEE_AggressiveHerds.label>manadas agressivas</VEE_AggressiveHerds.label>
+  <!-- EN: Animals in this region have increased manhunter on damage chances. -->
+  <VEE_AggressiveHerds.description>Os animais desta região têm mais chance de enfurecer quando feridos.</VEE_AggressiveHerds.description>
+  <!-- EN: domesticated escapees -->
+  <VEE_DomesticatedEscapees.label>fugitivos domésticos</VEE_DomesticatedEscapees.label>
+  <!-- EN: Farm animals like chickens, pigs, and cows will appear in the wild in small herds, remnants of lost settlements or farms. -->
+  <VEE_DomesticatedEscapees.description>Animais de fazenda como galinhas, porcos e vacas aparecem soltos em pequenas manadas, restos de povoados ou fazendas perdidas.</VEE_DomesticatedEscapees.description>
+  <!-- EN: noble steeds -->
+  <VEE_NobleSteeds.label>corcéis nobres</VEE_NobleSteeds.label>
+  <!-- EN: Horses and Donkeys will appear in this area. -->
+  <VEE_NobleSteeds.description>Cavalos e burros vão aparecer nesta área.</VEE_NobleSteeds.description>
+  <!-- EN: wandering companions -->
+  <VEE_WanderingCompanions.label>companheiros errantes</VEE_WanderingCompanions.label>
+  <!-- EN: Animals are more used to humans in this region, making it easier for colonists to bond with them. -->
+  <VEE_WanderingCompanions.description>Os animais desta região estão mais acostumados com humanos, o que facilita para os colonos criarem vínculo com eles.</VEE_WanderingCompanions.description>
+  <!-- EN: wasteland fauna -->
+  <VEE_WastelandFauna.label>fauna do lixão</VEE_WastelandFauna.label>
+  <!-- EN: Wasteland animals appear in greater numbers here. -->
+  <VEE_WastelandFauna.description>Animais do lixão aparecem em maior número aqui.</VEE_WastelandFauna.description>
+  <!-- EN: increased infestations -->
+  <VEE_IncreasedInfestations.label>mais infestações</VEE_IncreasedInfestations.label>
+  <!-- EN: Insectoid infestations are more common in this region. -->
+  <VEE_IncreasedInfestations.description>Infestações de insetoides são mais comuns nesta região.</VEE_IncreasedInfestations.description>
+  <!-- EN: abundant megafauna -->
+  <VEE_Megafauna.label>megafauna abundante</VEE_Megafauna.label>
+  <!-- EN: This region has an abundance of megafauna, brought back to life by genetic engineering. -->
+  <VEE_Megafauna.description>Esta região tem megafauna em abundância, trazida de volta à vida por engenharia genética.</VEE_Megafauna.description>
+</LanguageData>

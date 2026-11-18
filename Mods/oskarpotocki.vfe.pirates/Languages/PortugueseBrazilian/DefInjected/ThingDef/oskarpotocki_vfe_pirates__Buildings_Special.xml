@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <!-- EN: warcasket autorifle -->
+  <VFEP_Box_Autorifle.label>fuzil automático de caixão de guerra</VFEP_Box_Autorifle.label>
+  <!-- EN: A portable version of the Autocannon designed for use by a warcasket. Due to a shortened barrel it has a lower range, less penetration and damage compared to the turreted version. However, it is very capable in close quarters combat which makes up for the slight accuracy loss at greater ranges. -->
+  <VFEP_Box_Autorifle.description>Uma versão portátil do canhão automático feita para caixões de guerra. Com o cano encurtado, tem menos alcance, penetração e dano que a versão de torreta. Em compensação, é muito capaz no combate a curta distância, o que compensa a leve perda de precisão a distâncias maiores.</VFEP_Box_Autorifle.description>
+  <!-- EN: warcasket uranium slug rifle -->
+  <VFEP_Box_UraniumSlugRifle.label>fuzil de urânio de caixão de guerra</VFEP_Box_UraniumSlugRifle.label>
+  <!-- EN: A portable version of the uranium slug cannon designed for use by a warcasket. Due to a shortened barrel it has less penetration, worse recoil and damage compared to the turreted version. However, it lacks the minimum range requirement thanks to a human operator and has better mid-range performance. -->
+  <VFEP_Box_UraniumSlugRifle.description>Uma versão portátil do canhão de urânio feita para caixões de guerra. Com o cano encurtado, tem menos penetração, mais recuo e menos dano que a versão de torreta. Em compensação, graças ao operador humano, não tem alcance mínimo e se sai melhor a média distância.</VFEP_Box_UraniumSlugRifle.description>
+  <!-- EN: warcasket slugthrower -->
+  <VFEP_Box_Slugthrower.label>lança-balotes de caixão de guerra</VFEP_Box_Slugthrower.label>
+  <!-- EN: An upscaled version of the pump shotgun designed for use by a warcasket. Each cartridge fired contains 4 pellets larger than slugs from a regular-sized shotgun, giving it better range, armor penetration and much better damage. The recoil is insane though, even for a warcasket’s recoil damping system. -->
+  <VFEP_Box_Slugthrower.description>Uma versão ampliada da espingarda de bomba feita para caixões de guerra. Cada cartucho leva 4 balotes maiores que os de uma espingarda comum, o que dá mais alcance, penetração e muito mais dano. Mas o recuo é absurdo, até para o sistema de amortecimento de um caixão de guerra.</VFEP_Box_Slugthrower.description>
+  <!-- EN: warcasket minigun -->
+  <VFEP_Box_Minigun.label>metralhadora giratória de caixão de guerra</VFEP_Box_Minigun.label>
+  <!-- EN: An upscaled version of the minigun designed for use by a warcasket. It uses larger caliber rounds which are poorly made en masse due to how many rounds need to be manufactured. Thus, it has a slower rate of fire and armor penetration, but who cares because no one wants to be on the receiving end of this amount of dakka. -->
+  <VFEP_Box_Minigun.description>Uma versão ampliada da metralhadora giratória feita para caixões de guerra. Usa munição de calibre maior, mal fabricada em massa por causa da quantidade necessária. Por isso tem cadência e penetração menores, mas quem liga? Ninguém quer estar do lado errado de tanto chumbo.</VFEP_Box_Minigun.description>
+  <!-- EN: warcasket grenade launcher -->
+  <VFEP_Box_GrenadeLauncher.label>lança-granadas de caixão de guerra</VFEP_Box_GrenadeLauncher.label>
+  <!-- EN: An upscaled version of the grenade launcher designed for use by a warcasket. A straight upgrade, it fires in bursts of 3 and benefits from recoil damping for faster recovery and better range. Like all launchers though, it has a worse miss radius compared to a hand-thrown grenade. -->
+  <VFEP_Box_GrenadeLauncher.description>Uma versão ampliada do lança-granadas feita para caixões de guerra. Melhoria pura: dispara em rajadas de 3 e aproveita o amortecimento de recuo para se recuperar mais rápido e alcançar mais longe. Como todo lançador, porém, erra por uma margem maior que uma granada lançada à mão.</VFEP_Box_GrenadeLauncher.description>
+  <!-- EN: warcasket heavy flamer -->
+  <VFEP_Box_HeavyFlamer.label>lança-chamas pesado de caixão de guerra</VFEP_Box_HeavyFlamer.label>
+  <!-- EN: An upscaled version of the heavy flamer designed for use by a warcasket. Thanks to the twin barrels and larger heat sink, it can spit out two jets of flames while also needing less time to prevent overheating. -->
+  <VFEP_Box_HeavyFlamer.description>Uma versão ampliada do lança-chamas pesado feita para caixões de guerra. Graças aos canos duplos e ao dissipador de calor maior, cospe dois jatos de chamas e precisa de menos tempo para não superaquecer.</VFEP_Box_HeavyFlamer.description>
+  <!-- EN: warcasket combat knife -->
+  <VFEP_Box_CombatKnife.label>faca de combate de caixão de guerra</VFEP_Box_CombatKnife.label>
+  <!-- EN: An upscaled version of the combat knife designed for use by a warcasket. It is only still called a knife due to size comparison to a warcasket, but it is capable of cleaving a man in half and is just as large. The preferred weapon for the faster moving warcaskets that prioritize lightly armored, isolated targets. -->
+  <VFEP_Box_CombatKnife.description>Uma versão ampliada da faca de combate feita para caixões de guerra. Só continua se chamando faca em comparação com o tamanho do caixão de guerra: corta um homem ao meio e é do tamanho de um. A arma preferida dos caixões de guerra mais rápidos, que priorizam alvos isolados e com pouca blindagem.</VFEP_Box_CombatKnife.description>
+  <!-- EN: warcasket broadsword -->
+  <VFEP_Box_Broadsword.label>espada larga de caixão de guerra</VFEP_Box_Broadsword.label>
+  <!-- EN: A very unique melee weapon exclusively made for warcaskets. It combines massive weight and a cutting force that gives it no equal in melee combat. While it was intended for use against other warcaskets, it works just as well against smaller targets that would normally be considered armored. -->
+  <VFEP_Box_Broadsword.description>Uma arma corpo a corpo muito peculiar, feita só para caixões de guerra. Junta um peso enorme a uma força de corte sem igual no corpo a corpo. Foi pensada contra outros caixões de guerra, mas funciona igualmente bem contra alvos menores que normalmente seriam considerados blindados.</VFEP_Box_Broadsword.description>
+  <!-- EN: warcasket charge lance -->
+  <VFEP_Box_ChargeLance.label>lança de carga de caixão de guerra</VFEP_Box_ChargeLance.label>
+  <!-- EN: A terror on the battlefield, the charge lance received a massive upgrade for warcasket use. A considerably more powerful energy source gives it superior stopping power, able to fire multiple larger projectiles at a greater range with improved accuracy and penetration. -->
+  <VFEP_Box_ChargeLance.description>Um terror no campo de batalha, a lança de carga recebeu uma melhoria enorme para uso em caixões de guerra. Uma fonte de energia bem mais potente dá poder de parada superior: dispara vários projéteis maiores a uma distância maior, com mais precisão e penetração.</VFEP_Box_ChargeLance.description>
+  <!-- EN: warcasket handheld cannon -->
+  <VFEP_Box_HandheldCannon.label>canhão de mão de caixão de guerra</VFEP_Box_HandheldCannon.label>
+  <!-- EN: Essentially a handheld smoothbore mortar that fires explosives in an arc, able to bypass enemy fortifications. Made by those who wanted to combine ancient naval warfare with modern technology. The accuracy is abysmal but the onboard fabricator ensures that artillery fire can be provided without ever needing a resupply. -->
+  <VFEP_Box_HandheldCannon.description>Basicamente um morteiro de alma lisa portátil que dispara explosivos em arco, passando por cima de fortificações inimigas. Feito por quem queria juntar a antiga guerra naval com tecnologia moderna. A precisão é péssima, mas o fabricador embarcado garante fogo de artilharia sem nunca precisar de reabastecimento.</VFEP_Box_HandheldCannon.description>
+  <!-- EN: warcasket charge blaster -->
+  <VFEP_Box_ChargeBlaster.label>disparador de carga de caixão de guerra</VFEP_Box_ChargeBlaster.label>
+  <!-- EN: Essentially an upscaled charge minigun designed to be used by a warcasket. While firing fewer projectiles in each burst, the ammunition has been improved with explosive payloads. Designed as a support weapon that completely invalidates cover for the unlucky bastards on the receiving end. -->
+  <VFEP_Box_ChargeBlaster.description>Basicamente uma metralhadora de carga ampliada para uso em caixões de guerra. Dispara menos projéteis por rajada, mas a munição ganhou cargas explosivas. Feita como arma de apoio que anula completamente a cobertura dos coitados do outro lado.</VFEP_Box_ChargeBlaster.description>
+  <!-- EN: warcasket gravity hammer -->
+  <VFEP_Box_GravityHammer.label>martelo gravitacional de caixão de guerra</VFEP_Box_GravityHammer.label>
+  <!-- EN: A monumental piece of anti-personnel technology that can only be properly utilized by the oversized warcaskets. Practically an engine block fitted to the end of a mech’s limb actuator, equipped with multiple pneumatic plates covering miniature repulsor generators designed for riot control. In layman’s terms, a strike from the head will launch the target backwards by several meters. -->
+  <VFEP_Box_GravityHammer.description>Uma peça monumental de tecnologia antipessoal que só os caixões de guerra superdimensionados conseguem usar direito. Praticamente um bloco de motor preso na ponta do atuador de membro de um mecanoide, com várias placas pneumáticas cobrindo geradores de repulsão em miniatura feitos para controle de multidões. Em bom português: uma pancada da cabeça arremessa o alvo vários metros para trás.</VFEP_Box_GravityHammer.description>
+</LanguageData>

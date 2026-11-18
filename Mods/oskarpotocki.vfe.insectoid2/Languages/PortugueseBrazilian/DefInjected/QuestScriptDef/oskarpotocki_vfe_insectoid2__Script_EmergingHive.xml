@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <VFEI2_OpportunitySite_InsectoidHive.questDescriptionRules.rulesStrings>
+    <!-- EN: questDescription-&gt;[asker_nameFull], [asker_faction_leaderTitle] of [asker_faction_name], has sent us a message. A new insectoid hive has emerged in a nearby area. If not destroyed, it will soon form a new colony, spreading infestation in the region. The hive is controlled by [siteFaction_name].\n\n[asker_nameDef] is asking us to destroy the hive, which means eliminating all insectoids and nests. [asker_label] says that [sitePart0_description]. -->
+    <li>questDescription-&gt;[asker_nameFull], [asker_faction_leaderTitle] de [asker_faction_name], nos mandou uma mensagem. Uma nova colmeia insetoide surgiu numa área próxima. Se não for destruída, logo vai formar uma nova colônia e espalhar a infestação pela região. A colmeia é controlada por [siteFaction_name].\n\n[asker_nameDef] pede que destruamos a colmeia, ou seja, eliminar todos os insetoides e ninhos. [asker_label] diz que [sitePart0_description].</li>
+  </VFEI2_OpportunitySite_InsectoidHive.questDescriptionRules.rulesStrings>
+  <VFEI2_OpportunitySite_InsectoidHive.questNameRules.rulesStrings>
+    <!-- EN: questName-&gt;The [insectoid] [hive] -->
+    <li>questName-&gt;[hive] [insectoid]</li>
+    <!-- EN: questName-&gt;[insectoid] [hive] -->
+    <li>questName-&gt;[hive] [insectoid]</li>
+    <!-- EN: questName-&gt;[asker_nameDef] and the [hive] -->
+    <li>questName-&gt;[asker_nameDef] contra [hive]</li>
+    <!-- EN: hive-&gt;Hive -->
+    <li>hive-&gt;Colmeia</li>
+    <!-- EN: hive-&gt;Nest -->
+    <li>hive-&gt;Ninho</li>
+    <!-- EN: hive-&gt;Colony -->
+    <li>hive-&gt;Colônia</li>
+    <!-- EN: hive-&gt;Swarm -->
+    <li>hive-&gt;Enxame</li>
+    <!-- EN: insectoid-&gt;Insectoid -->
+    <li>insectoid-&gt;Insetoide</li>
+    <!-- EN: insectoid-&gt;Creeping -->
+    <li>insectoid-&gt;Rastejante</li>
+    <!-- EN: insectoid-&gt;Chitinous -->
+    <li>insectoid-&gt;de Quitina</li>
+    <!-- EN: insectoid-&gt;Feral -->
+    <li>insectoid-&gt;Selvagem</li>
+    <!-- EN: insectoid-&gt;Voracious -->
+    <li>insectoid-&gt;Voraz</li>
+  </VFEI2_OpportunitySite_InsectoidHive.questNameRules.rulesStrings>
+  <!-- EN: Quest expired: [resolvedQuestName] -->
+  <VFEI2_OpportunitySite_InsectoidHive.root.nodes.WorldObjectTimeout.node.nodes.Letter.label.slateRef>Missão expirada: [resolvedQuestName]</VFEI2_OpportunitySite_InsectoidHive.root.nodes.WorldObjectTimeout.node.nodes.Letter.label.slateRef>
+  <!-- EN: The insectoid hive has established a new colony. The quest [resolvedQuestName] has expired. -->
+  <VFEI2_OpportunitySite_InsectoidHive.root.nodes.WorldObjectTimeout.node.nodes.Letter.text.slateRef>A colmeia insetoide formou uma nova colônia. A missão [resolvedQuestName] expirou.</VFEI2_OpportunitySite_InsectoidHive.root.nodes.WorldObjectTimeout.node.nodes.Letter.text.slateRef>
+  <!-- EN: Payment arrived -->
+  <VFEI2_OpportunitySite_InsectoidHive.root.nodes.siteAllHivesAreDestroyed.node.nodes.GiveRewards.customLetterLabel.slateRef>Pagamento chegou</VFEI2_OpportunitySite_InsectoidHive.root.nodes.siteAllHivesAreDestroyed.node.nodes.GiveRewards.customLetterLabel.slateRef>
+  <!-- EN: You have destroyed the insectoid hive!\n\nThe payment from [asker_faction_name] has arrived. -->
+  <VFEI2_OpportunitySite_InsectoidHive.root.nodes.siteAllHivesAreDestroyed.node.nodes.GiveRewards.customLetterText.slateRef>Você destruiu a colmeia insetoide!\n\nO pagamento de [asker_faction_name] chegou.</VFEI2_OpportunitySite_InsectoidHive.root.nodes.siteAllHivesAreDestroyed.node.nodes.GiveRewards.customLetterText.slateRef>
+  <!-- EN: [asker_faction_royalFavorLabel] -->
+  <VFEI2_OpportunitySite_InsectoidHive.root.nodes.siteAllHivesAreDestroyed.node.nodes.GiveRewards.nodeIfChosenPawnSignalUsed.label.slateRef>[asker_faction_royalFavorLabel]</VFEI2_OpportunitySite_InsectoidHive.root.nodes.siteAllHivesAreDestroyed.node.nodes.GiveRewards.nodeIfChosenPawnSignalUsed.label.slateRef>
+  <!-- EN: These colonists participated in the victory for the quest [resolvedQuestName]. [asker_definite] wants to know who should receive the [royalFavorReward_amount] [asker_faction_royalFavorLabel] for this service. -->
+  <VFEI2_OpportunitySite_InsectoidHive.root.nodes.siteAllHivesAreDestroyed.node.nodes.GiveRewards.nodeIfChosenPawnSignalUsed.text.slateRef>Estes colonos participaram da vitória na missão [resolvedQuestName]. [asker_definite] quer saber quem deve receber [royalFavorReward_amount] de [asker_faction_royalFavorLabel] por este serviço.</VFEI2_OpportunitySite_InsectoidHive.root.nodes.siteAllHivesAreDestroyed.node.nodes.GiveRewards.nodeIfChosenPawnSignalUsed.text.slateRef>
+</LanguageData>

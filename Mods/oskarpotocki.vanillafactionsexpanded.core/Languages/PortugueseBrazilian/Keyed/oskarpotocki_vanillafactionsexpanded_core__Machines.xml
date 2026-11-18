@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <!-- EN: Force Recharge -->
+  <VFEMechForceRecharge>Forçar recarga</VFEMechForceRecharge>
+  <!-- EN: Order the associated machine to return to this platform for charging, regardless of its current battery level. -->
+  <VFEMechForceRechargeDesc>Manda a máquina ligada voltar a esta plataforma para recarregar, qualquer que seja o nível da bateria.</VFEMechForceRechargeDesc>
+  <!-- EN: Attach Turret -->
+  <VFEMechAttachTurret>Instalar torreta</VFEMechAttachTurret>
+  <!-- EN: Construct a turret atop this mobile platform. This will require a colonist to deliver resources equal to that turret's normal construction cost. -->
+  <VFEMechAttachTurretDesc>Constrói uma torreta em cima desta plataforma móvel. Um colono precisa entregar recursos iguais ao custo normal de construção dessa torreta.</VFEMechAttachTurretDesc>
+  <!-- EN: Machine destroyed -->
+  <VFEMechMachineDied>Máquina destruída</VFEMechMachineDied>
+  <!-- EN: One of your machines has been destroyed! You can dismantle its remains at a machining table. In order to construct a replacement, one of your colonists will need to deliver the following parts to its platform:\n\n{0} -->
+  <VFEMechMachineDiedDesc>Uma das suas máquinas foi destruída! Dá para desmontar os restos numa mesa de usinagem. Para construir outra, um colono precisa entregar estas peças na plataforma dela:\n\n{0}</VFEMechMachineDiedDesc>
+  <!-- EN: Not enough resources -->
+  <VFEMechNoResources>Recursos insuficientes</VFEMechNoResources>
+  <!-- EN: No active mobile turret -->
+  <VFEMechNoTurret>Nenhuma torreta móvel ativa</VFEMechNoTurret>
+  <!-- EN: Needed to rebuild machine: -->
+  <VFEMechReconstruct>Necessário para reconstruir a máquina:</VFEMechReconstruct>
+  <!-- EN: Needed to construct turret: -->
+  <VFEMechTurretResources>Necessário para construir a torreta:</VFEMechTurretResources>
+  <!-- EN: Reduce range -->
+  <VFEMechLowerRange>Diminuir alcance</VFEMechLowerRange>
+  <!-- EN: Reduce the number of tiles this machine will travel. -->
+  <VFEMechLowerRangeDesc>Diminui quantos quadrados esta máquina percorre.</VFEMechLowerRangeDesc>
+  <!-- EN: Increase range -->
+  <VFEMechRaiseRange>Aumentar alcance</VFEMechRaiseRange>
+  <!-- EN: Increase the number of tiles this machine will travel. -->
+  <VFEMechRaiseRangeDesc>Aumenta quantos quadrados esta máquina percorre.</VFEMechRaiseRangeDesc>
+  <!-- EN: Stop machine -->
+  <VFEMechStopMachine>Parar máquina</VFEMechStopMachine>
+  <!-- EN: Stop this machine's progress and force it to return to base. -->
+  <VFEMechStopMachineDesc>Para esta máquina e a faz voltar à base.</VFEMechStopMachineDesc>
+  <!-- EN: Start machine -->
+  <VFEMechStartMachine>Ligar máquina</VFEMechStartMachine>
+  <!-- EN: Start this machine. -->
+  <VFEMechStartMachineDesc>Liga esta máquina.</VFEMechStartMachineDesc>
+  <!-- EN: Machine has run into an obstacle! -->
+  <VFEMechMachineHitObstacle>A máquina bateu num obstáculo!</VFEMechMachineHitObstacle>
+  <!-- EN: Set area -->
+  <VFEMechSetArea>Definir área</VFEMechSetArea>
+  <!-- EN: Set the allowed area for all of this platform's associated machines. -->
+  <VFEMechSetAreaDesc>Define a área permitida de todas as máquinas ligadas a esta plataforma.</VFEMechSetAreaDesc>
+  <!-- EN: This droid is rideable. People in a caravan will ride the fastest available animals/droids, improving the speed of the caravan as a whole. -->
+  <VFEMRideableMachineTip>Este droide pode ser montado. Numa caravana, as pessoas montam os animais e droides mais rápidos disponíveis, acelerando a caravana inteira.</VFEMRideableMachineTip>
+  <!-- EN: {MACHINE_nameDef} ran out of power, and was left behind. -->
+  <VFEM.CaravanMachineRanOutPower>{MACHINE_nameDef} ficou sem energia e foi deixado para trás.</VFEM.CaravanMachineRanOutPower>
+  <!-- EN: The drone's name is now {0}. -->
+  <VFEM.DroneGainsName>O nome do drone agora é {0}.</VFEM.DroneGainsName>
+</LanguageData>

@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <VQE_InventorShelter.questDescriptionRules.rulesStrings>
+    <!-- EN: questDescription-&gt;[dataDiscovery] revealed the location of a [adj] underground [structureType] where [inventor_nameFull] rests in cryptosleep. The journey will be grueling, as the site is afflicted by a[coldSnapDesc], bringing the region into unnaturally low temperatures. \n\nInside the bunker, a few [turretDefense] still guard the interior, powered by an ancient [arcName]. The ARC cannot be studied but can be deconstructed for [arcComponents]. Your primary task, however, is to reach the casket and release the inventor. Prepare carefully for the extreme cold or risk severe [hypothermiaDanger]. -->
+    <li>questDescription-&gt;[dataDiscovery] revelaram a localização de um [structureType] subterrâneo [adj] onde [inventor_nameFull] descansa em criptosono. A viagem vai ser penosa: a região foi atingida por [coldSnapDesc] e as temperaturas caíram a níveis antinaturais. \n\nLá dentro, [turretDefense] ainda guardam o interior, alimentadas por um [arcName] antigo. O ARC não pode ser estudado, mas pode ser desmontado para obter [arcComponents]. A tarefa principal, porém, é chegar ao sarcófago e soltar o inventor. Prepare-se bem para o frio extremo ou vai arriscar [hypothermiaDanger].</li>
+    <!-- EN: questDescription-&gt;Recovered data points us to a [adj] bunker buried deep beneath a region suffering from a[coldSnapDesc]. It is here that [inventor_nameFull], the legendary mind behind the ARC project, lies sealed in cryptosleep. \n\nThe area’s temperatures are falling to dangerous lows, creating an immediate risk of [hypothermiaDanger] during your approach. Inside, [turretDefense] remain active, powered by an overgrown [arcName]. The ARC can be deconstructed for [arcComponents], but the real prize is freeing the inventor and bringing them back to your colony. -->
+    <li>questDescription-&gt;Os dados recuperados apontam um bunker [adj] enterrado fundo, sob uma região atingida por [coldSnapDesc]. É ali que [inventor_nameFull], a mente lendária por trás do projeto ARC, jaz selado em criptosono. \n\nAs temperaturas estão caindo a níveis perigosos, com risco imediato de [hypothermiaDanger] na aproximação. Lá dentro, [turretDefense] continuam ativas, alimentadas por um [arcName] tomado pelo mato. O ARC pode ser desmontado para obter [arcComponents], mas o prêmio de verdade é libertar o inventor e levá-lo para a sua colônia.</li>
+    <!-- EN: questDescription-&gt;We’ve identified the location of a [adj] [structureType] where [inventor_nameFull] has been preserved in a cryptosleep casket. The area surrounding the site is cursed with a[coldSnapDesc], plummeting temperatures to deadly extremes. \n\nThe bunker itself houses a few [turretDefense], powered by an overgrown [arcName]. While the ARC cannot be studied, it can be salvaged for [arcComponents]. Be ready for freezing conditions and hypothermia as you attempt to retrieve the legendary inventor. -->
+    <li>questDescription-&gt;Achamos a localização de um [structureType] [adj] onde [inventor_nameFull] foi conservado num sarcófago de criptosono. Os arredores estão amaldiçoados por [coldSnapDesc], que derrubou as temperaturas a extremos mortais. \n\nO próprio abrigo tem [turretDefense], alimentadas por um [arcName] tomado pelo mato. O ARC não pode ser estudado, mas pode ser desmontado para obter [arcComponents]. Prepare-se para o congelamento e a hipotermia na tentativa de resgatar o inventor lendário.</li>
+    <!-- EN: dataDiscovery-&gt;Ancient schematics -->
+    <li>dataDiscovery-&gt;Plantas antigas</li>
+    <!-- EN: dataDiscovery-&gt;Decoded transmissions -->
+    <li>dataDiscovery-&gt;Transmissões decodificadas</li>
+    <!-- EN: dataDiscovery-&gt;Recovered coordinates -->
+    <li>dataDiscovery-&gt;Coordenadas recuperadas</li>
+    <!-- EN: dataDiscovery-&gt;Archived data logs -->
+    <li>dataDiscovery-&gt;Registros de dados arquivados</li>
+    <!-- EN: adj-&gt;forgotten -->
+    <li>adj-&gt;esquecido</li>
+    <!-- EN: adj-&gt;ancient -->
+    <li>adj-&gt;antigo</li>
+    <!-- EN: adj-&gt;hidden -->
+    <li>adj-&gt;escondido</li>
+    <!-- EN: adj-&gt;sealed -->
+    <li>adj-&gt;selado</li>
+    <!-- EN: adj-&gt;abandoned -->
+    <li>adj-&gt;abandonado</li>
+    <!-- EN: adj-&gt;overgrown -->
+    <li>adj-&gt;tomado pelo mato</li>
+    <!-- EN: adj-&gt;mysterious -->
+    <li>adj-&gt;misterioso</li>
+    <!-- EN: adj-&gt;remote -->
+    <li>adj-&gt;remoto</li>
+    <!-- EN: structureType-&gt;bunker -->
+    <li>structureType-&gt;bunker</li>
+    <!-- EN: structureType-&gt;vault -->
+    <li>structureType-&gt;cofre</li>
+    <!-- EN: structureType-&gt;sanctuary -->
+    <li>structureType-&gt;santuário</li>
+    <!-- EN: structureType-&gt;chamber -->
+    <li>structureType-&gt;recinto</li>
+    <!-- EN: structureType-&gt;crypt -->
+    <li>structureType-&gt;jazigo</li>
+    <!-- EN: structureType-&gt;facility -->
+    <li>structureType-&gt;complexo</li>
+    <!-- EN: coldSnapDesc-&gt;n unnatural coldsnap -->
+    <li>coldSnapDesc-&gt;uma onda de frio antinatural</li>
+    <!-- EN: coldSnapDesc-&gt; bizarre freezing anomaly -->
+    <li>coldSnapDesc-&gt;uma anomalia congelante bizarra</li>
+    <!-- EN: coldSnapDesc-&gt;n unexplainable cold front -->
+    <li>coldSnapDesc-&gt;uma frente fria inexplicável</li>
+    <!-- EN: coldSnapDesc-&gt; mysterious deep freeze -->
+    <li>coldSnapDesc-&gt;uma geada profunda e misteriosa</li>
+    <!-- EN: coldSnapDesc-&gt; sudden extreme temperature drop -->
+    <li>coldSnapDesc-&gt;uma queda brusca e extrema de temperatura</li>
+    <!-- EN: coldSnapDesc-&gt; deadly frost anomaly -->
+    <li>coldSnapDesc-&gt;uma anomalia de geada mortal</li>
+    <!-- EN: turretDefense-&gt;inactive turrets that occasionally sputter to life -->
+    <li>turretDefense-&gt;torretas inativas que de vez em quando voltam à vida aos trancos</li>
+    <!-- EN: turretDefense-&gt;a handful of aging security turrets -->
+    <li>turretDefense-&gt;um punhado de torretas de segurança envelhecidas</li>
+    <!-- EN: turretDefense-&gt;old but still lethal automated turrets -->
+    <li>turretDefense-&gt;torretas automáticas velhas, mas ainda letais,</li>
+    <!-- EN: turretDefense-&gt;sporadically functional defense systems -->
+    <li>turretDefense-&gt;defesas que funcionam de vez em quando</li>
+    <!-- EN: turretDefense-&gt;a few crumbling yet operational turrets -->
+    <li>turretDefense-&gt;algumas torretas caindo aos pedaços, mas operacionais,</li>
+    <!-- EN: arcComponents-&gt;rare ARC components -->
+    <li>arcComponents-&gt;componentes ARC raros</li>
+    <!-- EN: arcComponents-&gt;valuable technological salvage -->
+    <li>arcComponents-&gt;sucata tecnológica valiosa</li>
+    <!-- EN: arcComponents-&gt;essential ARC salvage parts -->
+    <li>arcComponents-&gt;peças essenciais de ARC</li>
+    <!-- EN: arcComponents-&gt;advanced generator fragments -->
+    <li>arcComponents-&gt;fragmentos de gerador avançado</li>
+    <!-- EN: hypothermiaDanger-&gt;frostbite and hypothermia -->
+    <li>hypothermiaDanger-&gt;queimaduras de frio e hipotermia</li>
+    <!-- EN: hypothermiaDanger-&gt;rapid onset hypothermia -->
+    <li>hypothermiaDanger-&gt;hipotermia fulminante</li>
+    <!-- EN: hypothermiaDanger-&gt;life-threatening cold exposure -->
+    <li>hypothermiaDanger-&gt;exposição ao frio com risco de vida</li>
+    <!-- EN: hypothermiaDanger-&gt;freezing injuries and exhaustion -->
+    <li>hypothermiaDanger-&gt;lesões por congelamento e exaustão</li>
+    <!-- EN: hypothermiaDanger-&gt;severe frostbite or death -->
+    <li>hypothermiaDanger-&gt;queimaduras de frio graves ou a morte</li>
+    <!-- EN: arcName-&gt;ARC generator -->
+    <li>arcName-&gt;gerador ARC</li>
+  </VQE_InventorShelter.questDescriptionRules.rulesStrings>
+  <VQE_InventorShelter.questNameRules.rulesStrings>
+    <!-- EN: questName-&gt;[Inventor_LastName]’s [adj] [structureType] -->
+    <li>questName-&gt;O [structureType] [adj] de [Inventor_LastName]</li>
+    <!-- EN: adj-&gt;forgotten -->
+    <li>adj-&gt;esquecido</li>
+    <!-- EN: adj-&gt;ancient -->
+    <li>adj-&gt;antigo</li>
+    <!-- EN: adj-&gt;hidden -->
+    <li>adj-&gt;escondido</li>
+    <!-- EN: adj-&gt;abandoned -->
+    <li>adj-&gt;abandonado</li>
+    <!-- EN: adj-&gt;sealed -->
+    <li>adj-&gt;selado</li>
+    <!-- EN: adj-&gt;mysterious -->
+    <li>adj-&gt;misterioso</li>
+    <!-- EN: adj-&gt;remote -->
+    <li>adj-&gt;remoto</li>
+    <!-- EN: adj-&gt;lost -->
+    <li>adj-&gt;perdido</li>
+    <!-- EN: adj-&gt;secret -->
+    <li>adj-&gt;secreto</li>
+    <!-- EN: adj-&gt;forsaken -->
+    <li>adj-&gt;desamparado</li>
+    <!-- EN: structureType-&gt;bunker -->
+    <li>structureType-&gt;bunker</li>
+    <!-- EN: structureType-&gt;vault -->
+    <li>structureType-&gt;cofre</li>
+    <!-- EN: structureType-&gt;crypt -->
+    <li>structureType-&gt;jazigo</li>
+    <!-- EN: structureType-&gt;tomb -->
+    <li>structureType-&gt;túmulo</li>
+    <!-- EN: structureType-&gt;chamber -->
+    <li>structureType-&gt;recinto</li>
+    <!-- EN: structureType-&gt;sanctuary -->
+    <li>structureType-&gt;santuário</li>
+    <!-- EN: structureType-&gt;facility -->
+    <li>structureType-&gt;complexo</li>
+    <!-- EN: structureType-&gt;shelter -->
+    <li>structureType-&gt;abrigo</li>
+  </VQE_InventorShelter.questNameRules.rulesStrings>
+</LanguageData>

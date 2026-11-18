@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <!-- EN: recycling bench -->
+  <VRecyclingE_RecyclingWorkbench.label>bancada de reciclagem</VRecyclingE_RecyclingWorkbench.label>
+  <!-- EN: A workbench for recycling wastepacks into other resources. Works at 50% of the speed of an electric recycling workbench. -->
+  <VRecyclingE_RecyclingWorkbench.description>Uma bancada para reciclar pacotes de resíduos em outros recursos. Trabalha a 50% da velocidade da bancada de reciclagem elétrica.</VRecyclingE_RecyclingWorkbench.description>
+  <!-- EN: electric-powered recycling bench -->
+  <VRecyclingE_ElectricRecyclingWorkbench.label>bancada de reciclagem elétrica</VRecyclingE_ElectricRecyclingWorkbench.label>
+  <!-- EN: A workbench with automated sorters and electric tools, used in recycling wastepacks into other resources. Can work without electricity at 50% of normal speed. -->
+  <VRecyclingE_ElectricRecyclingWorkbench.description>Uma bancada com separadores automáticos e ferramentas elétricas, usada para reciclar pacotes de resíduos em outros recursos. Funciona sem eletricidade a 50% da velocidade normal.</VRecyclingE_ElectricRecyclingWorkbench.description>
+  <!-- EN: garbage compactor -->
+  <VRecyclingE_GarbageCompactor.label>compactador de lixo</VRecyclingE_GarbageCompactor.label>
+  <!-- EN: An industrial-tech device that condenses trash using hydraulic press into trashbricks. While it does not neutralize the trash completely, it allows for a creation of a construction resource out of it. The process requires considerable amounts of power and emits tox gas during operation. -->
+  <VRecyclingE_GarbageCompactor.description>Um aparelho industrial que prensa o lixo numa prensa hidráulica até virar tijolos de lixo. Não neutraliza o lixo por completo, mas o transforma em material de construção. O processo gasta bastante energia e solta gás tóxico enquanto funciona.</VRecyclingE_GarbageCompactor.description>
+  <!-- EN: alloypack splitter -->
+  <VRecyclingE_AlloypackSplitter.label>separador de pacotes de liga</VRecyclingE_AlloypackSplitter.label>
+  <!-- EN: A spacertech device that separates stabilized alloypacks into steel, plasteel and gold compounds. This process takes a long time and requires a lot of power.\n\nConsider that the building will need free space behind it to produce its output! -->
+  <VRecyclingE_AlloypackSplitter.description>Um aparelho de tecnologia espacial que separa pacotes de liga estabilizados em aço, plastaço e compostos de ouro. O processo é demorado e gasta muita energia.\n\nLembre que o prédio precisa de espaço livre atrás para soltar o que produz!</VRecyclingE_AlloypackSplitter.description>
+</LanguageData>

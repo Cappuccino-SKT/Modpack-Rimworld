@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <!-- EN: propane stove -->
+  <AB_PropaneStove.label>fogão a propano</AB_PropaneStove.label>
+  <!-- EN: A propane-fueled stove with an attached countertop for preparing meals. -->
+  <AB_PropaneStove.description>Um fogão a propano com bancada para preparar refeições.</AB_PropaneStove.description>
+  <!-- EN: propane smithy -->
+  <AB_PropaneFueledSmithy.label>forja a propano</AB_PropaneFueledSmithy.label>
+  <!-- EN: A propane-fueled station for smithing non-mechanical weapons and tools. -->
+  <AB_PropaneFueledSmithy.description>Uma estação a propano para forjar armas e ferramentas não mecânicas.</AB_PropaneFueledSmithy.description>
+  <!-- EN: propane smelter -->
+  <AB_PropaneSmelter.label>fundição a propano</AB_PropaneSmelter.label>
+  <!-- EN: Extracts usable metal from slag chunks and other mixed metal items. -->
+  <AB_PropaneSmelter.description>Extrai metal utilizável de pedaços de escória e outros itens de metal misturado.</AB_PropaneSmelter.description>
+  <!-- EN: propane machining table -->
+  <AB_PropaneTableMachining.label>mesa de usinagem a propano</AB_PropaneTableMachining.label>
+  <!-- EN: A work station for assembling machinery like guns and ammunition, or breaking down dead mechanoids. -->
+  <AB_PropaneTableMachining.description>Uma estação de trabalho para montar máquinas como armas e munição, ou desmontar mecanoides mortos.</AB_PropaneTableMachining.description>
+  <!-- EN: propane heater -->
+  <AB_PropaneHeater.label>aquecedor a propano</AB_PropaneHeater.label>
+  <!-- EN: A device that burns propane fuel and turns it into heat. The propane heater wastes a lot of fuel when attempting to reach temperatures too different from ambient ones, but it's quite fuel conservative if configured carefully. -->
+  <AB_PropaneHeater.description>Um aparelho que queima propano e o transforma em calor. Desperdiça muito combustível ao tentar chegar a temperaturas muito diferentes da ambiente, mas economiza bastante se for bem configurado.</AB_PropaneHeater.description>
+  <!-- EN: propane turret -->
+  <AB_Turret_Propane.label>torreta a propano</AB_Turret_Propane.label>
+  <!-- EN: A portable flamethrower turret fueled with propane. May explode when damaged. Its dumb AI brain can't be directly controlled, so beware of friendly fire. -->
+  <AB_Turret_Propane.description>Uma torreta lança-chamas portátil movida a propano. Pode explodir quando danificada. Seu cérebro de IA burro não pode ser controlado diretamente, então cuidado com fogo amigo.</AB_Turret_Propane.description>
+  <!-- EN: Remaining fuel -->
+  <AB_Turret_Propane.comps.CompRefuelable.fuelGizmoLabel>Combustível restante</AB_Turret_Propane.comps.CompRefuelable.fuelGizmoLabel>
+  <!-- EN: Remaining fuel -->
+  <AB_Turret_Propane.comps.CompRefuelable.fuelLabel>Combustível restante</AB_Turret_Propane.comps.CompRefuelable.fuelLabel>
+  <!-- EN: Needs propane -->
+  <AB_Turret_Propane.comps.CompRefuelable.outOfFuelMessage>Precisa de propano</AB_Turret_Propane.comps.CompRefuelable.outOfFuelMessage>
+  <!-- EN: propane turret gun -->
+  <AB_Turret_Propane_Gun.label>arma de torreta a propano</AB_Turret_Propane_Gun.label>
+  <!-- EN: A propane flamethrower made to be mounted on a turret. -->
+  <AB_Turret_Propane_Gun.description>Um lança-chamas a propano feito para ser montado numa torreta.</AB_Turret_Propane_Gun.description>
+  <!-- EN: propane turret gun -->
+  <AB_Turret_Propane_Gun.verbs.Verb_Shoot.label>arma de torreta a propano</AB_Turret_Propane_Gun.verbs.Verb_Shoot.label>
+  <!-- EN: flamethrower shot -->
+  <AB_Turret_Propane_Bullet.label>jato de lança-chamas</AB_Turret_Propane_Bullet.label>
+</LanguageData>

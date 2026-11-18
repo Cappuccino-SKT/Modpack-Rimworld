@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <!-- EN: tobacco high -->
+  <VBE_TobaccoHigh.label>efeito do tabaco</VBE_TobaccoHigh.label>
+  <!-- EN: Nicotine in the bloodstream. Generates a soft feeling of fuzzy well-being. -->
+  <VBE_TobaccoHigh.description>Nicotina no sangue. Dá uma sensação leve e difusa de bem-estar.</VBE_TobaccoHigh.description>
+  <!-- EN: a tobacco high -->
+  <VBE_TobaccoHigh.labelNoun>um efeito de tabaco</VBE_TobaccoHigh.labelNoun>
+  <!-- EN: high-quality tobacco high -->
+  <VBE_DeluxeTobaccoHigh.label>efeito de tabaco de qualidade</VBE_DeluxeTobaccoHigh.label>
+  <!-- EN: Nicotine in the bloodstream. Generates a soft feeling of fuzzy well-being. -->
+  <VBE_DeluxeTobaccoHigh.description>Nicotina no sangue. Dá uma sensação leve e difusa de bem-estar.</VBE_DeluxeTobaccoHigh.description>
+  <!-- EN: a high-quality tobacco high -->
+  <VBE_DeluxeTobaccoHigh.labelNoun>um efeito de tabaco de qualidade</VBE_DeluxeTobaccoHigh.labelNoun>
+  <!-- EN: tobacco tolerance -->
+  <VBE_TobaccoTolerance.label>tolerância ao tabaco</VBE_TobaccoTolerance.label>
+  <!-- EN: A built-up tolerance to tobacco. The more severe this tolerance is, the more tobacco it takes to get the same effect. -->
+  <VBE_TobaccoTolerance.description>Uma tolerância acumulada ao tabaco. Quanto maior, mais tabaco é preciso para o mesmo efeito.</VBE_TobaccoTolerance.description>
+  <!-- EN: small -->
+  <VBE_TobaccoTolerance.stages.small.label>pequena</VBE_TobaccoTolerance.stages.small.label>
+  <!-- EN: large -->
+  <VBE_TobaccoTolerance.stages.large.label>grande</VBE_TobaccoTolerance.stages.large.label>
+  <!-- EN: massive -->
+  <VBE_TobaccoTolerance.stages.massive.label>enorme</VBE_TobaccoTolerance.stages.massive.label>
+  <!-- EN: tobacco dependence -->
+  <VBE_TobaccoAddiction.label>dependência de tabaco</VBE_TobaccoAddiction.label>
+  <!-- EN: A chemical addiction to tobacco. Long-term use of tobacco has caused neurological adaptations at the cellular level, so the brain can no longer function properly without the drug.\n\nWithout regular doses of tobacco, withdrawal symptoms will begin. However, extended abstinence will force the brain to adapt back to its normal state, resolving the addiction. -->
+  <VBE_TobaccoAddiction.description>Uma dependência química de tabaco. O uso prolongado causou adaptações neurológicas no nível celular, e o cérebro não funciona mais direito sem a droga.\n\nSem doses regulares de tabaco, começam os sintomas de abstinência. Mas uma abstinência prolongada força o cérebro a voltar ao normal, resolvendo o vício.</VBE_TobaccoAddiction.description>
+  <!-- EN: withdrawal -->
+  <VBE_TobaccoAddiction.stages.withdrawal.label>abstinência</VBE_TobaccoAddiction.stages.withdrawal.label>
+</LanguageData>

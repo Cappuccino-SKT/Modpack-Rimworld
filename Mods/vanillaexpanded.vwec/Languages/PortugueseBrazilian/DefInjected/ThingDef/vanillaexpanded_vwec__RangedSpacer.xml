@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <!-- EN: gauss rifle -->
+  <VWE_Gun_GaussRifle.label>fuzil gauss</VWE_Gun_GaussRifle.label>
+  <!-- EN: A powerful mass driver rifle utilizing magnetic acceleration to launch ferromagnetic sabots. The incredible velocity and specialized ammunition allow it to completely negate most forms of conventional armor. -->
+  <VWE_Gun_GaussRifle.description>Um poderoso fuzil acelerador de massa que usa aceleração magnética para lançar sabots ferromagnéticos. A velocidade incrível e a munição especial anulam por completo a maioria das blindagens convencionais.</VWE_Gun_GaussRifle.description>
+  <!-- EN: switch to standard mode -->
+  <VWE_Gun_GaussRifle.comps.CompUnderBarrel.standardLabel>usar o modo padrão</VWE_Gun_GaussRifle.comps.CompUnderBarrel.standardLabel>
+  <!-- EN: switch to high-power mode -->
+  <VWE_Gun_GaussRifle.comps.CompUnderBarrel.underBarrelLabel>usar o modo de alta potência</VWE_Gun_GaussRifle.comps.CompUnderBarrel.underBarrelLabel>
+  <!-- EN: stock -->
+  <VWE_Gun_GaussRifle.tools.stock.label>coronha</VWE_Gun_GaussRifle.tools.stock.label>
+  <!-- EN: barrel -->
+  <VWE_Gun_GaussRifle.tools.barrel.label>cano</VWE_Gun_GaussRifle.tools.barrel.label>
+  <!-- EN: muzzle -->
+  <VWE_Gun_GaussRifle.tools.muzzle.label>boca</VWE_Gun_GaussRifle.tools.muzzle.label>
+  <!-- EN: gauss rifle -->
+  <VWE_Gun_GaussRifle.verbs.Verb_ShootCE.label>fuzil gauss</VWE_Gun_GaussRifle.verbs.Verb_ShootCE.label>
+  <!-- EN: gauss rifle sabot -->
+  <VWE_Bullet_GaussRifle_LowPower.label>sabot de fuzil gauss</VWE_Bullet_GaussRifle_LowPower.label>
+  <!-- EN: gauss rifle sabot -->
+  <VWE_Bullet_GaussRifle.label>sabot de fuzil gauss</VWE_Bullet_GaussRifle.label>
+  <!-- EN: gauss revolver -->
+  <VWE_Gun_GaussMagnum.label>revólver gauss</VWE_Gun_GaussMagnum.label>
+  <!-- EN: A powerful mass driver pistol utilizing magnetic acceleration to launch ferromagnetic sabots. The incredible velocity and specialized ammunition allow it to completely negate most forms of conventional armor. -->
+  <VWE_Gun_GaussMagnum.description>Uma poderosa pistola aceleradora de massa que usa aceleração magnética para lançar sabots ferromagnéticos. A velocidade incrível e a munição especial anulam por completo a maioria das blindagens convencionais.</VWE_Gun_GaussMagnum.description>
+  <!-- EN: switch to standard mode -->
+  <VWE_Gun_GaussMagnum.comps.CompUnderBarrel.standardLabel>usar o modo padrão</VWE_Gun_GaussMagnum.comps.CompUnderBarrel.standardLabel>
+  <!-- EN: switch to high-power mode -->
+  <VWE_Gun_GaussMagnum.comps.CompUnderBarrel.underBarrelLabel>usar o modo de alta potência</VWE_Gun_GaussMagnum.comps.CompUnderBarrel.underBarrelLabel>
+  <!-- EN: grip -->
+  <VWE_Gun_GaussMagnum.tools.grip.label>empunhadura</VWE_Gun_GaussMagnum.tools.grip.label>
+  <!-- EN: muzzle -->
+  <VWE_Gun_GaussMagnum.tools.muzzle.label>boca</VWE_Gun_GaussMagnum.tools.muzzle.label>
+  <!-- EN: gauss revolver -->
+  <VWE_Gun_GaussMagnum.verbs.Verb_ShootCE.label>revólver gauss</VWE_Gun_GaussMagnum.verbs.Verb_ShootCE.label>
+  <!-- EN: gauss revolver sabot -->
+  <VWE_Bullet_GaussMagnum_LowPower.label>sabot de revólver gauss</VWE_Bullet_GaussMagnum_LowPower.label>
+  <!-- EN: gauss revolver sabot -->
+  <VWE_Bullet_GaussMagnum.label>sabot de revólver gauss</VWE_Bullet_GaussMagnum.label>
+  <!-- EN: gauss lance -->
+  <VWE_Gun_GaussLance.label>lança gauss</VWE_Gun_GaussLance.label>
+  <!-- EN: A powerful, long range mass driver lance utilizing magnetic acceleration to launch ferromagnetic sabots. The incredible velocity and specialized ammunition allow it to completely negate most forms of conventional armor. -->
+  <VWE_Gun_GaussLance.description>Uma poderosa lança aceleradora de massa de longo alcance, que usa aceleração magnética para lançar sabots ferromagnéticos. A velocidade incrível e a munição especial anulam por completo a maioria das blindagens convencionais.</VWE_Gun_GaussLance.description>
+  <!-- EN: switch to standard mode -->
+  <VWE_Gun_GaussLance.comps.CompUnderBarrel.standardLabel>usar o modo padrão</VWE_Gun_GaussLance.comps.CompUnderBarrel.standardLabel>
+  <!-- EN: switch to high-power mode -->
+  <VWE_Gun_GaussLance.comps.CompUnderBarrel.underBarrelLabel>usar o modo de alta potência</VWE_Gun_GaussLance.comps.CompUnderBarrel.underBarrelLabel>
+  <!-- EN: barrel -->
+  <VWE_Gun_GaussLance.tools.barrel.label>cano</VWE_Gun_GaussLance.tools.barrel.label>
+  <!-- EN: gauss lance -->
+  <VWE_Gun_GaussLance.verbs.Verb_ShootCE.label>lança gauss</VWE_Gun_GaussLance.verbs.Verb_ShootCE.label>
+  <!-- EN: gauss lance sabot -->
+  <VWE_Bullet_GaussLance_LowPower.label>sabot de lança gauss</VWE_Bullet_GaussLance_LowPower.label>
+  <!-- EN: gauss lance sabot -->
+  <VWE_Bullet_GaussLance.label>sabot de lança gauss</VWE_Bullet_GaussLance.label>
+</LanguageData>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <!-- EN: wardrone -->
+  <VFEP_Mech_Wardrone.label>drone de guerra</VFEP_Mech_Wardrone.label>
+  <!-- EN: Semi-autonomous flying combat drone with limited combat functionality. Equipped with a lightweight semi-automatic miniturret due to limited recoil absorption and an onboard self-destruction module to both prevent enemy capture and defense against melee attackers. -->
+  <VFEP_Mech_Wardrone.description>Drone de combate voador semiautônomo, com funções de combate limitadas. Leva uma minitorreta semiautomática leve, por causa da pouca absorção de recuo, e um módulo de autodestruição para evitar captura e se defender de atacantes corpo a corpo.</VFEP_Mech_Wardrone.description>
+  <!-- EN: Explodes in -->
+  <VFEP_Mech_Wardrone.comps.CompKillAfterDelay.countdownLabel>Explode em</VFEP_Mech_Wardrone.comps.CompKillAfterDelay.countdownLabel>
+  <!-- EN: turret -->
+  <VFEP_Mech_Wardrone.tools.turret.label>torreta</VFEP_Mech_Wardrone.tools.turret.label>
+  <!-- EN: spidermine -->
+  <VFEP_Mech_Spidermine.label>mina-aranha</VFEP_Mech_Spidermine.label>
+  <!-- EN: Semi-autonomous combat drone with onboard pathfinding capability. Equipped with a self-destruction module and tracking system, designed to be launched as a payload and then seek out enemy targets. If no nearby targets can be acquired, it will immediately detonate in order to prevent future accidents. -->
+  <VFEP_Mech_Spidermine.description>Drone de combate semiautônomo com navegação própria. Tem um módulo de autodestruição e um sistema de rastreamento; é feito para ser lançado como carga e então caçar alvos inimigos. Se não achar alvo por perto, detona na hora para evitar acidentes futuros.</VFEP_Mech_Spidermine.description>
+  <!-- EN: frame -->
+  <VFEP_Mech_Spidermine.tools.frame.label>estrutura</VFEP_Mech_Spidermine.tools.frame.label>
+</LanguageData>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <!-- EN: drank rum based cocktail -->
+  <VFEP_RumAsIngredient.label>tomou coquetel de rum</VFEP_RumAsIngredient.label>
+  <!-- EN: This colonist drank a cocktail that had rum as one of its ingredients. Reduces hunger rate by 15%. -->
+  <VFEP_RumAsIngredient.description>Este colono tomou um coquetel com rum entre os ingredientes. Reduz em 15% a velocidade da fome.</VFEP_RumAsIngredient.description>
+  <!-- EN: hypothermic slowdown -->
+  <VFEP_HypothermicSlowdown.label>lentidão hipotérmica</VFEP_HypothermicSlowdown.label>
+  <!-- EN: Dangerously low core body temperature. Unless re-warmed, hypothermic slowdown gets worse and ends in death. Recovery is quick once the victim is re-warmed. -->
+  <VFEP_HypothermicSlowdown.description>Temperatura corporal perigosamente baixa. Sem reaquecer, a lentidão hipotérmica piora e termina em morte. A recuperação é rápida depois que a vítima se aquece.</VFEP_HypothermicSlowdown.description>
+  <!-- EN: minor -->
+  <VFEP_HypothermicSlowdown.stages.minor-0.label>leve</VFEP_HypothermicSlowdown.stages.minor-0.label>
+  <!-- EN: minor -->
+  <VFEP_HypothermicSlowdown.stages.minor-1.label>leve</VFEP_HypothermicSlowdown.stages.minor-1.label>
+  <!-- EN: moderate -->
+  <VFEP_HypothermicSlowdown.stages.moderate.label>moderada</VFEP_HypothermicSlowdown.stages.moderate.label>
+  <!-- EN: serious -->
+  <VFEP_HypothermicSlowdown.stages.serious.label>sério</VFEP_HypothermicSlowdown.stages.serious.label>
+  <!-- EN: extreme -->
+  <VFEP_HypothermicSlowdown.stages.extreme.label>extrema</VFEP_HypothermicSlowdown.stages.extreme.label>
+  <!-- EN: kill itself -->
+  <VFEP_KillItself.label>matar a si mesmo</VFEP_KillItself.label>
+  <!-- EN: . -->
+  <VFEP_KillItself.description>.</VFEP_KillItself.description>
+  <!-- EN: minor -->
+  <VFEP_KillItself.stages.minor.label>leve</VFEP_KillItself.stages.minor.label>
+</LanguageData>

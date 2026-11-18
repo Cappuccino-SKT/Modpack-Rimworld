@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <!-- EN: acid rain -->
+  <AB_AcidRainTale.label>chuva ácida</AB_AcidRainTale.label>
+  <AB_AcidRainTale.rulePack.rulesStrings>
+    <!-- EN: tale_noun-&gt;acid rain falling over [PAWN_nameDef]'s [Community] -->
+    <li>tale_noun-&gt;chuva ácida caindo sobre [Community] de [PAWN_nameDef]</li>
+    <!-- EN: tale_noun-&gt;acrid smelling clouds pouring acid water near [PAWN_nameDef]'s [Community] -->
+    <li>tale_noun-&gt;nuvens de cheiro acre despejando água ácida perto de [Community] de [PAWN_nameDef]</li>
+    <!-- EN: image-&gt;an ominous sky, [circumstance_group] -->
+    <li>image-&gt;um céu agourento, [circumstance_group]</li>
+    <!-- EN: image-&gt;the air smelling acrid and [circumstance_group] -->
+    <li>image-&gt;o ar com cheiro acre e [circumstance_group]</li>
+    <!-- EN: image-&gt;the ground sizzling gently and [circumstance_group] -->
+    <li>image-&gt;o chão chiando de leve e [circumstance_group]</li>
+    <!-- EN: image-&gt;fields of dead plants, their leaves burned, [circumstance_group] -->
+    <li>image-&gt;campos de plantas mortas, com as folhas queimadas, [circumstance_group]</li>
+    <!-- EN: image-&gt;[Quantity_adjphrase] graves [circumstance_group] -->
+    <li>image-&gt;[Quantity_adjphrase] túmulos [circumstance_group]</li>
+    <!-- EN: circumstance_phrase-&gt;with no life in sight -->
+    <li>circumstance_phrase-&gt;sem vida nenhuma à vista</li>
+    <!-- EN: circumstance_phrase-&gt;covered by a patina of acidic water -->
+    <li>circumstance_phrase-&gt;cobertos por uma película de água ácida</li>
+    <!-- EN: circumstance_phrase-&gt;arranged in a pattern that suggests corroded bones -->
+    <li>circumstance_phrase-&gt;dispostos num padrão que lembra ossos corroídos</li>
+    <!-- EN: circumstance_phrase-&gt;waiting for the acidic rain to stop -->
+    <li>circumstance_phrase-&gt;esperando a chuva ácida parar</li>
+    <!-- EN: desc_sentence-&gt;[PAWN_nameDef] lies on the ground, [PAWN_possessive] half-melted body twisted at an unusual angle. -->
+    <li>desc_sentence-&gt;[PAWN_nameDef] jaz no chão, o corpo meio derretido torcido num ângulo estranho.</li>
+    <!-- EN: desc_sentence-&gt;[PAWN_nameDef] hides near a [TerrainFeature], gazing out with a [AdjectiveAngsty] look. -->
+    <li>desc_sentence-&gt;[PAWN_nameDef] se esconde perto de [TerrainFeature], olhando para fora com uma expressão [AdjectiveAngsty].</li>
+    <!-- EN: desc_sentence-&gt;[PAWN_nameDef] looks on in shock with partially melted eyes. -->
+    <li>desc_sentence-&gt;[PAWN_nameDef] observa em choque, com os olhos parcialmente derretidos.</li>
+    <!-- EN: desc_sentence-&gt;[PAWN_nameDef] rests quietly with a layer of sweat upon [PAWN_possessive] face. -->
+    <li>desc_sentence-&gt;[PAWN_nameDef] descansa em silêncio, com uma camada de suor no rosto.</li>
+    <!-- EN: desc_sentence-&gt;[Quantity_adjphrase] dead [Animal]s lay on the ground, their flesh burned by the acid. -->
+    <li>desc_sentence-&gt;[Quantity_adjphrase] [Animal]s mortos deitados no chão, com a carne queimada pelo ácido.</li>
+    <!-- EN: desc_sentence-&gt;[Quantity_adjphrase] dying [Animal]s lay on the ground, their flesh dissolved by the acid. -->
+    <li>desc_sentence-&gt;[Quantity_adjphrase] [Animal]s morrendo deitados no chão, com a carne dissolvida pelo ácido.</li>
+    <!-- EN: desc_sentence-&gt;[Quantity_adjphrase] [Animal]s mill around uncertainly, disoriented by the pain of the acid burns. -->
+    <li>desc_sentence-&gt;[Quantity_adjphrase] [Animal]s andam sem rumo, desorientados pela dor das queimaduras ácidas.</li>
+  </AB_AcidRainTale.rulePack.rulesStrings>
+</LanguageData>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <!-- EN: ancient chemfuel generator -->
+  <VQEA_AncientChemfuelGenerator.label>gerador a combustível químico antigo</VQEA_AncientChemfuelGenerator.label>
+  <!-- EN: A bulky chemfuel-powered generator from a bygone era. It produces large amounts of power but needs to be manually “kicked” back into operation when it stalls. -->
+  <VQEA_AncientChemfuelGenerator.description>Um gerador volumoso a combustível químico de uma era passada. Produz muita energia, mas quando engasga precisa levar um "chute" para voltar a funcionar. Tecnologia de ponta.</VQEA_AncientChemfuelGenerator.description>
+  <!-- EN: Kick the generator to make it work. Kicking it randomizes the amount of power it will produce. After some time, it will need to be kicked again. -->
+  <VQEA_AncientChemfuelGenerator.comps.CompInteractablePowerPlant.activateDescString>Chuta o gerador para ele funcionar. O chute sorteia quanta energia ele vai produzir. Depois de um tempo, vai precisar de outro chute.</VQEA_AncientChemfuelGenerator.comps.CompInteractablePowerPlant.activateDescString>
+  <!-- EN: Kick generator -->
+  <VQEA_AncientChemfuelGenerator.comps.CompInteractablePowerPlant.activateLabelString>Chutar gerador</VQEA_AncientChemfuelGenerator.comps.CompInteractablePowerPlant.activateLabelString>
+  <!-- EN: Kicking generator: {1}s -->
+  <VQEA_AncientChemfuelGenerator.comps.CompInteractablePowerPlant.activatingString>Chutando gerador: {1}s</VQEA_AncientChemfuelGenerator.comps.CompInteractablePowerPlant.activatingString>
+  <!-- EN: Kicking generator -->
+  <VQEA_AncientChemfuelGenerator.comps.CompInteractablePowerPlant.activatingStringPending>Chutando gerador</VQEA_AncientChemfuelGenerator.comps.CompInteractablePowerPlant.activatingStringPending>
+  <!-- EN: Choose who should do this -->
+  <VQEA_AncientChemfuelGenerator.comps.CompInteractablePowerPlant.guiLabelString>Escolha quem deve fazer isso</VQEA_AncientChemfuelGenerator.comps.CompInteractablePowerPlant.guiLabelString>
+  <!-- EN: Kick generator -->
+  <VQEA_AncientChemfuelGenerator.comps.CompInteractablePowerPlant.jobString>Chutar gerador</VQEA_AncientChemfuelGenerator.comps.CompInteractablePowerPlant.jobString>
+  <!-- EN: ancient biobattery -->
+  <VQEA_AncientBioBattery.label>biobateria antiga</VQEA_AncientBioBattery.label>
+  <!-- EN: An old power vat that dissolves a living creature inside it to generate electricity. The power output varies based on the bodysize of the creature, and the duration depends on the creature’s mass. -->
+  <VQEA_AncientBioBattery.description>Um velho tanque de energia que dissolve uma criatura viva para gerar eletricidade. A potência depende do tamanho corporal da criatura, e a duração, da massa dela. Ninguém pergunta de onde vinha o combustível.</VQEA_AncientBioBattery.description>
+</LanguageData>

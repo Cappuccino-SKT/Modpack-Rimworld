@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <!-- EN: Genes -->
+  <VRE_TabAnimalGenes>Genes</VRE_TabAnimalGenes>
+  <!-- EN: Animal genes -->
+  <VRE_AnimalGenes>Genes animais</VRE_AnimalGenes>
+  <!-- EN: Gene family -->
+  <VRE_FamilyTag>Família de genes</VRE_FamilyTag>
+  <!-- EN: The genes associated with this feratype. -->
+  <VRE_AnimalGenesFeratypeDesc>Os genes ligados a este feratipo.</VRE_AnimalGenesFeratypeDesc>
+  <!-- EN: Feratype -->
+  <VRE_Feratype>Feratipo</VRE_Feratype>
+  <!-- EN: Genes present in this animal -->
+  <VRE_AnimalGenesDesc>Genes presentes neste animal</VRE_AnimalGenesDesc>
+  <!-- EN: Relevant animal genes -->
+  <VRE_StatsReport_Genes>Genes animais relevantes</VRE_StatsReport_Genes>
+  <!-- EN: More information is available on this feratype's information screen. -->
+  <VRE_MoreInfoInInfoScreen>Há mais informações na tela de informações deste feratipo.</VRE_MoreInfoInInfoScreen>
+  <!-- EN: Animal illness MTB -->
+  <VRE_AnimalIllness>Tempo médio entre doenças do animal</VRE_AnimalIllness>
+  <!-- EN: Animal tantrum MTB -->
+  <VRE_AnimalTantrum>Tempo médio entre ataques de fúria do animal</VRE_AnimalTantrum>
+  <!-- EN: Trainability set to -->
+  <VRE_Trainability>Treinabilidade definida como</VRE_Trainability>
+  <!-- EN: Stability -->
+  <VRE_Stability>Estabilidade</VRE_Stability>
+  <!-- EN: Stability represents the complexity of an animal's genetic code and affecting predictability of gene inheritance.\n\nHigh stability ensures offspring typically inherit the average of their parents' genes, whereas low stability increases the likelihood that offspring will deviate from parental traits towards the natural median. -->
+  <VRE_StabilityDesc>A estabilidade representa a complexidade do código genético do animal e afeta a previsibilidade da herança dos genes.\n\nEstabilidade alta garante que os filhotes herdem em geral a média dos genes dos pais; estabilidade baixa aumenta a chance de os filhotes se afastarem das características dos pais rumo à média natural.</VRE_StabilityDesc>
+  <!-- EN: days -->
+  <VRE_Days>dias</VRE_Days>
+  <!-- EN: Lifespan -->
+  <VRE_LifespanFactor>Vida útil</VRE_LifespanFactor>
+  <!-- EN: Lifespan factor of this animal according to its genetic stability -->
+  <VRE_LifespanFactorDesc>Fator de expectativa de vida deste animal segundo a estabilidade genética</VRE_LifespanFactorDesc>
+  <!-- EN: feratype family -->
+  <VRE_FeratypeFamily>família de feratipos</VRE_FeratypeFamily>
+  <!-- EN: This feratype belongs to the {0} feratype family:\n\n{1} -->
+  <VRE_FeratypeFamilyDesc>Este feratipo pertence à família de feratipos {0}:\n\n{1}</VRE_FeratypeFamilyDesc>
+  <!-- EN: Allowed partners -->
+  <VRE_AllowedPartners>Parceiros permitidos</VRE_AllowedPartners>
+  <!-- EN: A list of all feratypes belonging to the {0} feratype family that this animal can make offspring with. -->
+  <VRE_AllowedPartnersDesc>Uma lista de todos os feratipos da família {0} com que este animal pode ter filhotes.</VRE_AllowedPartnersDesc>
+  <!-- EN: This animal is not pregnant -->
+  <VRE_NotPregnant>Este animal não está prenhe</VRE_NotPregnant>
+  <!-- EN: Stillborn {0} -->
+  <VRE_StillbornLabel>{0} natimorto</VRE_StillbornLabel>
+  <!-- EN: Your {0}, {1} gave birth to a stillborn offspring. -->
+  <VRE_StillbornDesc>Seu {0}, {1}, deu à luz um filhote natimorto.</VRE_StillbornDesc>
+  <!-- EN: Specialized gene -->
+  <VRE_SpecializedGene>Gene especializado</VRE_SpecializedGene>
+  <!-- EN: This gene is only inherited by offspring whose feratype contains a gene from this family. -->
+  <VRE_SpecializedGeneDesc>Este gene só passa para filhotes cujo feratipo tem um gene desta família.</VRE_SpecializedGeneDesc>
+  <!-- EN: Prevent slaughter -->
+  <VRE_PreventSlaughter>Impedir abate</VRE_PreventSlaughter>
+  <!-- EN: Prevent this animal from being slaughtered by the slaughter designation and the auto-slaughter system. -->
+  <VRE_PreventSlaughterDesc>Impede que este animal seja abatido pela marcação de abate e pelo abate automático.</VRE_PreventSlaughterDesc>
+</LanguageData>

@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <!-- EN: General -->
+  <GeologicalLandforms.Settings.Tab.General>Geral</GeologicalLandforms.Settings.Tab.General>
+  <!-- EN: Map Features -->
+  <GeologicalLandforms.Settings.Tab.Landforms>Características do mapa</GeologicalLandforms.Settings.Tab.Landforms>
+  <!-- EN: Biome Config -->
+  <GeologicalLandforms.Settings.Tab.BiomeConfig>Configuração de biomas</GeologicalLandforms.Settings.Tab.BiomeConfig>
+  <!-- EN: Biome Variants -->
+  <GeologicalLandforms.Settings.Tab.BiomeVariants>Variantes de bioma</GeologicalLandforms.Settings.Tab.BiomeVariants>
+  <!-- EN: Debug -->
+  <GeologicalLandforms.Settings.Tab.Debug>Depuração</GeologicalLandforms.Settings.Tab.Debug>
+  <!-- EN: Max landform search radius on world map -->
+  <GeologicalLandforms.Settings.MaxLandformSearchRadius>Raio máximo de busca de relevo no mapa-múndi</GeologicalLandforms.Settings.MaxLandformSearchRadius>
+  <!-- EN: Animal amount in secluded areas (Island, Fjord, etc.) -->
+  <GeologicalLandforms.Settings.AnimalDensityFactorForSecludedAreas>Quantidade de animais em áreas isoladas (ilha, fiorde etc.)</GeologicalLandforms.Settings.AnimalDensityFactorForSecludedAreas>
+  <!-- EN: Enable cell finder optimizations -->
+  <GeologicalLandforms.Settings.EnableCellFinderOptimization>Ativar otimizações de busca de células</GeologicalLandforms.Settings.EnableCellFinderOptimization>
+  <!-- EN: Show content source labels for map features -->
+  <GeologicalLandforms.Settings.ShowTileMutatorContentSourceLabel>Mostrar a origem das características do mapa</GeologicalLandforms.Settings.ShowTileMutatorContentSourceLabel>
+  <!-- EN: Scale landforms with map size -->
+  <GeologicalLandforms.Settings.EnableLandformScaling>Ajustar relevos ao tamanho do mapa</GeologicalLandforms.Settings.EnableLandformScaling>
+  <!-- EN: Enable experimental landforms -->
+  <GeologicalLandforms.Settings.EnableExperimentalLandforms>Ativar relevos experimentais</GeologicalLandforms.Settings.EnableExperimentalLandforms>
+  <!-- EN: Enable god mode (allows placing landforms manually) -->
+  <GeologicalLandforms.Settings.EnableGodMode>Ativar modo deus (permite pôr relevos à mão)</GeologicalLandforms.Settings.EnableGodMode>
+  <!-- EN: Open landform editor -->
+  <GeologicalLandforms.Settings.OpenEditor>Abrir editor de relevos</GeologicalLandforms.Settings.OpenEditor>
+  <!-- EN: Reset everything to default -->
+  <GeologicalLandforms.Settings.ResetAll>Voltar tudo ao padrão</GeologicalLandforms.Settings.ResetAll>
+  <!-- EN: Open custom landform data directory -->
+  <GeologicalLandforms.Settings.OpenDataDir>Abrir pasta de relevos personalizados</GeologicalLandforms.Settings.OpenDataDir>
+  <!-- EN: Are you sure you want to fully reset the settings for this mod, including all landform configs? This will also unrecoverably delete ALL custom landforms you created! -->
+  <GeologicalLandforms.Settings.ConfirmResetAll>Tem certeza de que quer zerar todas as configurações deste mod, inclusive as de relevo? Isso também apaga sem volta TODOS os relevos personalizados que você criou!</GeologicalLandforms.Settings.ConfirmResetAll>
+  <!-- EN: custom -->
+  <GeologicalLandforms.Settings.Landforms.Custom>personalizado</GeologicalLandforms.Settings.Landforms.Custom>
+  <!-- EN: experimental -->
+  <GeologicalLandforms.Settings.Landforms.Experimental>experimental</GeologicalLandforms.Settings.Landforms.Experimental>
+  <!-- EN: provided by mod {0} -->
+  <GeologicalLandforms.Settings.Landforms.DefinedInMod>do mod {0}</GeologicalLandforms.Settings.Landforms.DefinedInMod>
+  <!-- EN: misconfigured with 0 commonness -->
+  <GeologicalLandforms.Settings.Landforms.ZeroCommonness>configurado errado, com frequência 0</GeologicalLandforms.Settings.Landforms.ZeroCommonness>
+  <!-- EN: replaces vanilla cliff -->
+  <GeologicalLandforms.Settings.Landforms.ReplacesVanillaCliff>substitui o penhasco do jogo base</GeologicalLandforms.Settings.Landforms.ReplacesVanillaCliff>
+  <!-- EN: replaces vanilla coast -->
+  <GeologicalLandforms.Settings.Landforms.ReplacesVanillaCoast>substitui a costa do jogo base</GeologicalLandforms.Settings.Landforms.ReplacesVanillaCoast>
+  <!-- EN: replaces vanilla river -->
+  <GeologicalLandforms.Settings.Landforms.ReplacesVanillaRiver>substitui o rio do jogo base</GeologicalLandforms.Settings.Landforms.ReplacesVanillaRiver>
+  <!-- EN: replaces the {1} "{0}" map feature -->
+  <GeologicalLandforms.Settings.Landforms.ReplacesMutator>substitui a característica de mapa "{0}" ({1})</GeologicalLandforms.Settings.Landforms.ReplacesMutator>
+  <!-- EN: obsolete due to the "{0}" map feature from {1} -->
+  <GeologicalLandforms.Settings.Landforms.MadeObsoleteByMutator>obsoleto por causa da característica de mapa "{0}" de {1}</GeologicalLandforms.Settings.Landforms.MadeObsoleteByMutator>
+  <!-- EN: Configure for each biome whether landforms (LF) and multi-biome features (MB) can appear there: -->
+  <GeologicalLandforms.Settings.BiomeConfig.Header>Escolha para cada bioma se relevos (LF) e características multibioma (MB) podem aparecer nele:</GeologicalLandforms.Settings.BiomeConfig.Header>
+  <!-- EN: preconfigured by author -->
+  <GeologicalLandforms.Settings.BiomeConfig.ExcludedByAuthor>pré-configurado pelo autor</GeologicalLandforms.Settings.BiomeConfig.ExcludedByAuthor>
+  <!-- EN: Geological Landforms -->
+  <GeologicalLandforms.Settings.Landforms.Subheader.GeologicalLandforms>Geological Landforms</GeologicalLandforms.Settings.Landforms.Subheader.GeologicalLandforms>
+  <!-- EN: Note: The "{0}" landform (which you have just enabled) conflicts with the {2} map feature "{1}" - therefore this {2} map feature has been automatically set to disabled. -->
+  <GeologicalLandforms.Settings.Landforms.ExclusionToLandform>Obs.: o relevo "{0}" (que você acabou de ativar) conflita com a característica de mapa "{1}" ({2}); por isso essa característica foi desativada automaticamente.</GeologicalLandforms.Settings.Landforms.ExclusionToLandform>
+  <!-- EN: Note: The {2} map feature "{1}" (which you have just enabled) conflicts with the "{0}" landform - therefore the "{0}" landform has been automatically set to disabled. -->
+  <GeologicalLandforms.Settings.Landforms.ExclusionToMutator>Obs.: a característica de mapa "{1}" ({2}), que você acabou de ativar, conflita com o relevo "{0}"; por isso o relevo "{0}" foi desativado automaticamente.</GeologicalLandforms.Settings.Landforms.ExclusionToMutator>
+  <!-- EN: Show advanced debug info -->
+  <GeologicalLandforms.Settings.Debug.ShowWorldTileDebugInfo>Mostrar informações avançadas de depuração</GeologicalLandforms.Settings.Debug.ShowWorldTileDebugInfo>
+  <!-- EN: Use unidirectional biome transition algorithm (experimental) -->
+  <GeologicalLandforms.Settings.Debug.UnidirectionalBiomeTransitions>Usar algoritmo unidirecional de transição de biomas (experimental)</GeologicalLandforms.Settings.Debug.UnidirectionalBiomeTransitions>
+  <!-- EN: Disable biome transition post-processing -->
+  <GeologicalLandforms.Settings.Debug.DisableBiomeTransitionPostProcessing>Desativar o pós-processamento de transição de biomas</GeologicalLandforms.Settings.Debug.DisableBiomeTransitionPostProcessing>
+  <!-- EN: Biome grid enabled (on current map) -->
+  <GeologicalLandforms.Settings.Debug.BiomeGridEnabledForCurrentMap>Grade de biomas ativa (no mapa atual)</GeologicalLandforms.Settings.Debug.BiomeGridEnabledForCurrentMap>
+  <!-- EN: Ignore world tile requirements (unsafe) -->
+  <GeologicalLandforms.Settings.Debug.IgnoreWorldTileReqInGodMode>Ignorar requisitos da região (inseguro)</GeologicalLandforms.Settings.Debug.IgnoreWorldTileReqInGodMode>
+  <!-- EN: Replace all stone on current map -->
+  <GeologicalLandforms.Settings.Debug.ReplaceStoneOnCurrentMap>Trocar toda a pedra do mapa atual</GeologicalLandforms.Settings.Debug.ReplaceStoneOnCurrentMap>
+  <!-- EN: Set terrain in area -->
+  <GeologicalLandforms.Settings.Debug.SetTerrainInArea>Definir terreno na área</GeologicalLandforms.Settings.Debug.SetTerrainInArea>
+  <!-- EN: Refresh all world tiles -->
+  <GeologicalLandforms.Settings.Debug.RefreshWorldTileData>Atualizar todas as regiões do mundo</GeologicalLandforms.Settings.Debug.RefreshWorldTileData>
+  <!-- EN: Refresh all world tiles (forced) -->
+  <GeologicalLandforms.Settings.Debug.RefreshWorldTileDataForced>Atualizar todas as regiões do mundo (forçado)</GeologicalLandforms.Settings.Debug.RefreshWorldTileDataForced>
+  <!-- EN: Biome grid entries -->
+  <GeologicalLandforms.Settings.Debug.BiomeGridEntriesHeader>Entradas da grade de biomas</GeologicalLandforms.Settings.Debug.BiomeGridEntriesHeader>
+  <!-- EN: Total capacity of plant ecosystem -->
+  <GeologicalLandforms.Settings.Debug.WholeMapDesiredPlants>Capacidade total do ecossistema de plantas</GeologicalLandforms.Settings.Debug.WholeMapDesiredPlants>
+  <!-- EN: Open ground factor -->
+  <GeologicalLandforms.Settings.Debug.OpenGroundFactor>Fator de terreno aberto</GeologicalLandforms.Settings.Debug.OpenGroundFactor>
+  <!-- EN: Animal density factor -->
+  <GeologicalLandforms.Settings.Debug.AnimalDensityFactor>Fator de densidade de animais</GeologicalLandforms.Settings.Debug.AnimalDensityFactor>
+  <!-- EN: Override dev quick test map generation -->
+  <GeologicalLandforms.Settings.Debug.DevQuickTestOverrideEnabled>Substituir a geração de mapa do teste rápido</GeologicalLandforms.Settings.Debug.DevQuickTestOverrideEnabled>
+  <!-- EN: Dev quick test landform -->
+  <GeologicalLandforms.Settings.Debug.DevQuickTestOverrideLandform>Relevo do teste rápido</GeologicalLandforms.Settings.Debug.DevQuickTestOverrideLandform>
+  <!-- EN: Dev quick test biome -->
+  <GeologicalLandforms.Settings.Debug.DevQuickTestOverrideBiome>Bioma do teste rápido</GeologicalLandforms.Settings.Debug.DevQuickTestOverrideBiome>
+  <!-- EN: Dev quick test map size -->
+  <GeologicalLandforms.Settings.Debug.DevQuickTestOverrideMapSize>Tamanho do mapa do teste rápido</GeologicalLandforms.Settings.Debug.DevQuickTestOverrideMapSize>
+  <!-- EN: Add entry -->
+  <GeologicalLandforms.Settings.Debug.BiomeGridEntryAdd>Adicionar entrada</GeologicalLandforms.Settings.Debug.BiomeGridEntryAdd>
+  <!-- EN: Remove entry -->
+  <GeologicalLandforms.Settings.Debug.BiomeGridEntryRemove>Remover entrada</GeologicalLandforms.Settings.Debug.BiomeGridEntryRemove>
+  <!-- EN: Export all entries to Map Areas -->
+  <GeologicalLandforms.Settings.Debug.BiomeGridEntryExportToAreas>Exportar todas as entradas para áreas do mapa</GeologicalLandforms.Settings.Debug.BiomeGridEntryExportToAreas>
+  <!-- EN: Set base biome -->
+  <GeologicalLandforms.Settings.Debug.BiomeGridEntrySetBase>Definir bioma base</GeologicalLandforms.Settings.Debug.BiomeGridEntrySetBase>
+  <!-- EN: Show details -->
+  <GeologicalLandforms.Settings.Debug.BiomeGridEntryInfo>Mostrar detalhes</GeologicalLandforms.Settings.Debug.BiomeGridEntryInfo>
+  <!-- EN: Add variant -->
+  <GeologicalLandforms.Settings.Debug.BiomeGridEntryAddVariant>Adicionar variante</GeologicalLandforms.Settings.Debug.BiomeGridEntryAddVariant>
+  <!-- EN: Remove variant -->
+  <GeologicalLandforms.Settings.Debug.BiomeGridEntryRemoveVariant>Remover variante</GeologicalLandforms.Settings.Debug.BiomeGridEntryRemoveVariant>
+  <!-- EN: Set cells from Map Area -->
+  <GeologicalLandforms.Settings.Debug.BiomeGridEntrySetFromArea>Definir células pela área do mapa</GeologicalLandforms.Settings.Debug.BiomeGridEntrySetFromArea>
+  <!-- EN: Regenerate from world tile -->
+  <GeologicalLandforms.Settings.Debug.BiomeGridEntryRegenerateAll>Regerar a partir da região</GeologicalLandforms.Settings.Debug.BiomeGridEntryRegenerateAll>
+  <!-- EN: Plant commonalities -->
+  <GeologicalLandforms.Settings.Debug.BiomeGridDetails.PotentialPlants>Frequência de plantas</GeologicalLandforms.Settings.Debug.BiomeGridDetails.PotentialPlants>
+  <!-- EN: Animal commonalities -->
+  <GeologicalLandforms.Settings.Debug.BiomeGridDetails.PotentialAnimals>Frequência de animais</GeologicalLandforms.Settings.Debug.BiomeGridDetails.PotentialAnimals>
+  <!-- EN: Topology -->
+  <GeologicalLandforms.WorldMap.Topology>Topologia</GeologicalLandforms.WorldMap.Topology>
+  <!-- EN: Topology direction -->
+  <GeologicalLandforms.WorldMap.TopologyDirection>Direção da topologia</GeologicalLandforms.WorldMap.TopologyDirection>
+  <!-- EN: Swampiness -->
+  <GeologicalLandforms.WorldMap.Swampiness>Pantanosidade</GeologicalLandforms.WorldMap.Swampiness>
+  <!-- EN: River width -->
+  <GeologicalLandforms.WorldMap.RiverWidth>Largura do rio</GeologicalLandforms.WorldMap.RiverWidth>
+  <!-- EN: River angle -->
+  <GeologicalLandforms.WorldMap.RiverAngle>Ângulo do rio</GeologicalLandforms.WorldMap.RiverAngle>
+  <!-- EN: Main road multiplier -->
+  <GeologicalLandforms.WorldMap.MainRoadMultiplier>Multiplicador da estrada principal</GeologicalLandforms.WorldMap.MainRoadMultiplier>
+  <!-- EN: Main road angle -->
+  <GeologicalLandforms.WorldMap.MainRoadAngle>Ângulo da estrada principal</GeologicalLandforms.WorldMap.MainRoadAngle>
+  <!-- EN: Depth in cave system -->
+  <GeologicalLandforms.WorldMap.DepthInCaveSystem>Profundidade no sistema de cavernas</GeologicalLandforms.WorldMap.DepthInCaveSystem>
+  <!-- EN: biome transition -->
+  <GeologicalLandforms.WorldMap.FeatureLabelBiomeTransition>transição de bioma</GeologicalLandforms.WorldMap.FeatureLabelBiomeTransition>
+  <!-- EN: Biomes from adjacent tiles cover some parts of this world tile. -->
+  <GeologicalLandforms.WorldMap.FeatureDescriptionBiomeTransition>Biomas das regiões vizinhas cobrem partes desta região.</GeologicalLandforms.WorldMap.FeatureDescriptionBiomeTransition>
+  <!-- EN: A landform added by the {0} mod. -->
+  <GeologicalLandforms.WorldMap.FeatureDescriptionLandform>Um relevo adicionado pelo mod {0}.</GeologicalLandforms.WorldMap.FeatureDescriptionLandform>
+  <!-- EN: Search for map feature nearby -->
+  <GeologicalLandforms.WorldMap.FindLandform>Procurar característica de mapa por perto</GeologicalLandforms.WorldMap.FindLandform>
+  <!-- EN: (Landform) -->
+  <GeologicalLandforms.WorldMap.FindLandformPrefix>(Relevo)</GeologicalLandforms.WorldMap.FindLandformPrefix>
+  <!-- EN: (Landform) Any -->
+  <GeologicalLandforms.WorldMap.FindLandformAny>(Relevo) Qualquer</GeologicalLandforms.WorldMap.FindLandformAny>
+  <!-- EN: (Landform) Any (POI) -->
+  <GeologicalLandforms.WorldMap.FindLandformAnyPOI>(Relevo) Qualquer (ponto de interesse)</GeologicalLandforms.WorldMap.FindLandformAnyPOI>
+  <!-- EN: Found {0} map feature {1} tiles away -->
+  <GeologicalLandforms.WorldMap.FindLandformSuccess>Característica de mapa {0} encontrada a {1} regiões</GeologicalLandforms.WorldMap.FindLandformSuccess>
+  <!-- EN: Could not find any {0} map feature within {1} tiles (max distance can be changed in mod settings) -->
+  <GeologicalLandforms.WorldMap.FindLandformFail>Nenhuma característica de mapa {0} num raio de {1} regiões (a distância máxima pode ser mudada nas configurações do mod)</GeologicalLandforms.WorldMap.FindLandformFail>
+  <!-- EN: Set landform override (god mode) -->
+  <GeologicalLandforms.WorldMap.SetLandform>Forçar relevo (modo deus)</GeologicalLandforms.WorldMap.SetLandform>
+  <!-- EN: Auto -->
+  <GeologicalLandforms.WorldMap.SetLandformAuto>Automático</GeologicalLandforms.WorldMap.SetLandformAuto>
+</LanguageData>

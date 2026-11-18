@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <!-- EN: chemfuel nodules -->
+  <AB_Exploder.label>nódulos de combustível químico</AB_Exploder.label>
+  <!-- EN: Nodules of chemfuel will cause this creature to blow up when killed. -->
+  <AB_Exploder.description>Nódulos de quimicombustível fazem esta criatura explodir quando morta.</AB_Exploder.description>
+  <!-- EN: animal eldritch flesh tentacle -->
+  <AB_AnimalTentacle.label>tentáculo de carne macabra animal</AB_AnimalTentacle.label>
+  <!-- EN: An installed animal eldritch flesh tentacle. A fleshy, muscled tentacle resembling a partial transformation into a fleshbeast. -->
+  <AB_AnimalTentacle.description>Um tentáculo de carne macabra animal instalado. Um tentáculo carnudo e musculoso, parecido com uma transformação parcial em besta carnal.</AB_AnimalTentacle.description>
+  <!-- EN: an animal eldritch flesh tentacle -->
+  <AB_AnimalTentacle.labelNoun>um tentáculo de carne macabra animal</AB_AnimalTentacle.labelNoun>
+  <!-- EN: malevolent eye -->
+  <AB_MalevolentEye.label>olho malévolo</AB_MalevolentEye.label>
+  <!-- EN: A malevolent looking, bloodshot eye is emerging from this wound, blinking and peering wildly around it. Without treatment, it will cause rotting of the local tissue, eventually causing blood poisoning and death. They will however allow the afflicted to see through them. -->
+  <AB_MalevolentEye.description>Um olho malévolo e injetado de sangue está brotando desta ferida, piscando e espiando em volta descontroladamente. Sem tratamento, apodrece o tecido local e acaba causando infecção do sangue e morte. Mas permite que o afetado enxergue através dele.</AB_MalevolentEye.description>
+  <!-- EN: a malevolent eye -->
+  <AB_MalevolentEye.labelNoun>um olho malévolo</AB_MalevolentEye.labelNoun>
+  <!-- EN: minor -->
+  <AB_MalevolentEye.stages.minor.label>leve</AB_MalevolentEye.stages.minor.label>
+  <!-- EN: major -->
+  <AB_MalevolentEye.stages.major.label>grave</AB_MalevolentEye.stages.major.label>
+  <!-- EN: extreme -->
+  <AB_MalevolentEye.stages.extreme-0.label>extrema</AB_MalevolentEye.stages.extreme-0.label>
+  <!-- EN: extreme -->
+  <AB_MalevolentEye.stages.extreme-1.label>extrema</AB_MalevolentEye.stages.extreme-1.label>
+  <!-- EN: traversing quicksand -->
+  <AB_Quicksand.label>atravessando areia movediça</AB_Quicksand.label>
+  <!-- EN: Moving through quicksand. Greatly reduces movement speed. -->
+  <AB_Quicksand.description>Andando por areia movediça. Reduz muito a velocidade de movimento.</AB_Quicksand.description>
+  <!-- EN: resonance soothe -->
+  <AB_ResonanceSoothe.label>alívio por ressonância</AB_ResonanceSoothe.label>
+  <!-- EN: The colonist is subconsciously affected by the mechanoid resonance receiver’s low-frequency harmonics. Stress signals in the brain are dampened, enhancing focus and emotional stability. -->
+  <AB_ResonanceSoothe.description>O colono é afetado subconscientemente pelas harmônicas de baixa frequência do receptor de ressonância mecanoide. Os sinais de estresse no cérebro são atenuados, melhorando o foco e a estabilidade emocional.</AB_ResonanceSoothe.description>
+  <!-- EN: chocolate -->
+  <AB_ChocolateInEyes.label>chocolate</AB_ChocolateInEyes.label>
+  <!-- EN: Chocolate in the eyes. It impairs vision, but can be cleared in a few moments. -->
+  <AB_ChocolateInEyes.description>Chocolate nos olhos. Atrapalha a visão, mas sai em instantes.</AB_ChocolateInEyes.description>
+  <!-- EN: blind -->
+  <AB_ChocolateInEyes.battleStateLabel>cego</AB_ChocolateInEyes.battleStateLabel>
+  <!-- EN: chocolate -->
+  <AB_ChocolateInEyes.labelNoun>chocolate</AB_ChocolateInEyes.labelNoun>
+  <!-- EN: strawberry -->
+  <AB_StrawberryInEyes.label>morango</AB_StrawberryInEyes.label>
+  <!-- EN: Strawberry ice cream in the eyes. It impairs vision, but can be cleared in a few moments. -->
+  <AB_StrawberryInEyes.description>Sorvete de morango nos olhos. Atrapalha a visão, mas sai em instantes.</AB_StrawberryInEyes.description>
+  <!-- EN: blind -->
+  <AB_StrawberryInEyes.battleStateLabel>cego</AB_StrawberryInEyes.battleStateLabel>
+  <!-- EN: strawberry -->
+  <AB_StrawberryInEyes.labelNoun>morango</AB_StrawberryInEyes.labelNoun>
+  <!-- EN: whipped cream -->
+  <AB_CreamInEyes.label>chantili</AB_CreamInEyes.label>
+  <!-- EN: Whipped cream in the eyes. It impairs vision, but can be cleared in a few moments. -->
+  <AB_CreamInEyes.description>Chantili nos olhos. Atrapalha a visão, mas sai em instantes.</AB_CreamInEyes.description>
+  <!-- EN: blind -->
+  <AB_CreamInEyes.battleStateLabel>cego</AB_CreamInEyes.battleStateLabel>
+  <!-- EN: whipped cream -->
+  <AB_CreamInEyes.labelNoun>chantili</AB_CreamInEyes.labelNoun>
+  <!-- EN: cookie sand -->
+  <AB_CandySandInEyes.label>areia de biscoito</AB_CandySandInEyes.label>
+  <!-- EN: Cookie sand in the eyes. It impairs vision, but can be cleared within a few moments. -->
+  <AB_CandySandInEyes.description>Areia de biscoito nos olhos. Atrapalha a visão, mas sai em instantes.</AB_CandySandInEyes.description>
+  <!-- EN: blind -->
+  <AB_CandySandInEyes.battleStateLabel>cego</AB_CandySandInEyes.battleStateLabel>
+  <!-- EN: cookie sand -->
+  <AB_CandySandInEyes.labelNoun>areia de biscoito</AB_CandySandInEyes.labelNoun>
+</LanguageData>

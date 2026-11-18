@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <VQE_PrototypeARC.questContentRules.rulesStrings>
+    <!-- EN: terminalStudiedMessage-&gt;Terminal studied. You've collected the information and can now leave. -->
+    <li>terminalStudiedMessage-&gt;Terminal estudado. Você reuniu as informações e já pode ir embora.</li>
+  </VQE_PrototypeARC.questContentRules.rulesStrings>
+  <VQE_PrototypeARC.questDescriptionRules.rulesStrings>
+    <!-- EN: questDescription(asker_factionLeader==True)-&gt;[asker_nameDef], [asker_faction_leaderTitle] of [asker_faction_name], has informed us of an ancient construction site where [inventor_nameFull] once worked on a massive prototype generator. The site appears abandoned and isolated, surrounded by the remnants of a long-forgotten project.\n\n[terminalDetails] Visiting this site may provide [potentialRewards]. [journeyDetails] [finalDetails] -->
+    <li>questDescription(asker_factionLeader==True)-&gt;[asker_nameDef], [asker_faction_leaderTitle] de [asker_faction_name], nos falou de um canteiro de obras antigo onde [inventor_nameFull] trabalhou num enorme gerador protótipo. O lugar parece abandonado e isolado, cercado pelos restos de um projeto esquecido há muito tempo.\n\n[terminalDetails] Visitar o lugar pode render [potentialRewards]. [journeyDetails] [finalDetails]</li>
+    <!-- EN: questDescription(askerIsNull==True)-&gt;We have discovered an ancient construction site where [inventor_nameFull] was working on a large prototype generator. The site lies in a remote location, surrounded by the ruins of an unfinished project.\n\n[terminalDetails] Exploring the site may yield [potentialRewards]. [journeyDetails] [finalDetails] -->
+    <li>questDescription(askerIsNull==True)-&gt;Descobrimos um canteiro de obras antigo onde [inventor_nameFull] trabalhava num grande gerador protótipo. O lugar fica num ponto remoto, cercado pelas ruínas de um projeto inacabado.\n\n[terminalDetails] Explorar o lugar pode render [potentialRewards]. [journeyDetails] [finalDetails]</li>
+    <!-- EN: terminalDetails-&gt;There is a still-operational terminal containing research notes and schematics of [inventor_nameFull]'s work. -->
+    <li>terminalDetails-&gt;Há um terminal ainda funcionando com notas de pesquisa e plantas do trabalho de [inventor_nameFull].</li>
+    <!-- EN: terminalDetails-&gt;An active terminal holds critical data logs and experimental insights into generator construction. -->
+    <li>terminalDetails-&gt;Um terminal ativo guarda registros de dados cruciais e descobertas experimentais sobre a construção de geradores.</li>
+    <!-- EN: terminalDetails-&gt;The site contains a terminal rumored to have design blueprints and energy research breakthroughs. -->
+    <li>terminalDetails-&gt;Dizem que o lugar tem um terminal com plantas de projeto e avanços na pesquisa de energia.</li>
+    <!-- EN: terminalDetails-&gt;Ancient systems still hum faintly, offering a glimpse into [inventor_nameFull]'s ambitious prototype. -->
+    <li>terminalDetails-&gt;Sistemas antigos ainda zumbem de leve, dando um vislumbre do ambicioso protótipo de [inventor_nameFull].</li>
+    <!-- EN: terminalDetails-&gt;A damaged terminal may still hold data on the ARC prototype, but its condition is uncertain. -->
+    <li>terminalDetails-&gt;Um terminal danificado talvez ainda guarde dados sobre o protótipo do ARC, mas o estado dele é incerto.</li>
+    <!-- EN: potentialRewards-&gt;rare components, advanced research data, and valuable resources -->
+    <li>potentialRewards-&gt;componentes raros, dados de pesquisa avançada e recursos valiosos</li>
+    <!-- EN: potentialRewards-&gt;essential materials, generator schematics, and advanced technology insights -->
+    <li>potentialRewards-&gt;materiais essenciais, plantas de gerador e conhecimento de tecnologia avançada</li>
+    <!-- EN: potentialRewards-&gt;valuable knowledge, unique building materials, and rare artifacts -->
+    <li>potentialRewards-&gt;conhecimento valioso, materiais de construção únicos e artefatos raros</li>
+    <!-- EN: potentialRewards-&gt;critical research breakthroughs and a bounty of salvageable materials -->
+    <li>potentialRewards-&gt;avanços cruciais de pesquisa e uma fartura de material aproveitável</li>
+    <!-- EN: potentialRewards-&gt;rare loot and potentially groundbreaking energy research -->
+    <li>potentialRewards-&gt;saque raro e talvez uma pesquisa de energia revolucionária</li>
+    <!-- EN: journeyDetails-&gt;The location is far away and will require careful preparation for the trip. -->
+    <li>journeyDetails-&gt;O lugar é longe e a viagem vai exigir uma preparação cuidadosa.</li>
+    <!-- EN: journeyDetails-&gt;The long distance to the site makes the expedition challenging but potentially rewarding. -->
+    <li>journeyDetails-&gt;A longa distância torna a expedição difícil, mas talvez compensadora.</li>
+    <!-- EN: journeyDetails-&gt;Traveling to the site will demand significant time and resources. -->
+    <li>journeyDetails-&gt;Chegar lá vai custar bastante tempo e recursos.</li>
+    <!-- EN: journeyDetails-&gt;The journey to this remote site may be dangerous but worth the effort. -->
+    <li>journeyDetails-&gt;A viagem até esse lugar remoto pode ser perigosa, mas vale o esforço.</li>
+    <!-- EN: journeyDetails-&gt;Its remote location suggests few immediate threats, but supplies will be key. -->
+    <li>journeyDetails-&gt;O isolamento sugere poucas ameaças imediatas, mas os suprimentos serão essenciais.</li>
+    <!-- EN: finalDetails-&gt;While no dangers are expected, the journey itself poses risks to unprepared colonists. -->
+    <li>finalDetails-&gt;Não se esperam perigos, mas a própria viagem é um risco para colonos despreparados.</li>
+    <!-- EN: finalDetails-&gt;The site seems derelict, but caution is advised—its isolation may hide unexpected challenges. -->
+    <li>finalDetails-&gt;O lugar parece abandonado, mas é bom ter cautela: o isolamento pode esconder surpresas.</li>
+    <!-- EN: finalDetails-&gt;The area appears uninhabited, but its age may make navigation and survival difficult. -->
+    <li>finalDetails-&gt;A área parece desabitada, mas a idade dela pode dificultar a navegação e a sobrevivência.</li>
+    <!-- EN: finalDetails-&gt;Prepare for the worst while hoping for the best—opportunity often comes with risk. -->
+    <li>finalDetails-&gt;Prepare-se para o pior e torça pelo melhor: oportunidade costuma vir com risco.</li>
+    <!-- EN: finalDetails-&gt;The isolation may provide safety, but also leaves little room for error if trouble arises. -->
+    <li>finalDetails-&gt;O isolamento pode dar segurança, mas também deixa pouca margem para erro se algo der errado.</li>
+  </VQE_PrototypeARC.questDescriptionRules.rulesStrings>
+  <VQE_PrototypeARC.questNameRules.rulesStrings>
+    <!-- EN: questName-&gt;The [adj] [prototypeName] -->
+    <li>questName-&gt;O [prototypeName] [adj]</li>
+    <!-- EN: adj-&gt;unfinished -->
+    <li>adj-&gt;inacabado</li>
+    <!-- EN: adj-&gt;abandoned -->
+    <li>adj-&gt;abandonado</li>
+    <!-- EN: adj-&gt;experimental -->
+    <li>adj-&gt;experimental</li>
+    <!-- EN: adj-&gt;ancient -->
+    <li>adj-&gt;antigo</li>
+    <!-- EN: adj-&gt;forgotten -->
+    <li>adj-&gt;esquecido</li>
+    <!-- EN: adj-&gt;derelict -->
+    <li>adj-&gt;largado</li>
+    <!-- EN: adj-&gt;failed -->
+    <li>adj-&gt;fracassado</li>
+    <!-- EN: adj-&gt;unproven -->
+    <li>adj-&gt;nunca testado</li>
+    <!-- EN: adj-&gt;mysterious -->
+    <li>adj-&gt;misterioso</li>
+    <!-- EN: adj-&gt;partially completed -->
+    <li>adj-&gt;meio pronto</li>
+    <!-- EN: adj-&gt;incomplete -->
+    <li>adj-&gt;incompleto</li>
+    <!-- EN: adj-&gt;early-stage -->
+    <li>adj-&gt;embrionário</li>
+    <!-- EN: adj-&gt;hidden -->
+    <li>adj-&gt;escondido</li>
+    <!-- EN: prototypeName-&gt;prototype -->
+    <li>prototypeName-&gt;protótipo</li>
+    <!-- EN: prototypeName-&gt;experiment -->
+    <li>prototypeName-&gt;experimento</li>
+    <!-- EN: prototypeName-&gt;design -->
+    <li>prototypeName-&gt;desenho</li>
+    <!-- EN: prototypeName-&gt;project -->
+    <li>prototypeName-&gt;projeto</li>
+    <!-- EN: prototypeName-&gt;power core -->
+    <li>prototypeName-&gt;núcleo de energia</li>
+    <!-- EN: prototypeName-&gt;machine -->
+    <li>prototypeName-&gt;engenho</li>
+    <!-- EN: prototypeName-&gt;concept -->
+    <li>prototypeName-&gt;conceito</li>
+    <!-- EN: prototypeName-&gt;generator -->
+    <li>prototypeName-&gt;gerador</li>
+    <!-- EN: prototypeName-&gt;energy source -->
+    <li>prototypeName-&gt;reator</li>
+    <!-- EN: prototypeName-&gt;device -->
+    <li>prototypeName-&gt;aparelho</li>
+    <!-- EN: prototypeName-&gt;creation -->
+    <li>prototypeName-&gt;invento</li>
+    <!-- EN: prototypeName-&gt;artifact -->
+    <li>prototypeName-&gt;artefato</li>
+    <!-- EN: prototypeName-&gt;test site -->
+    <li>prototypeName-&gt;campo de testes</li>
+    <!-- EN: prototypeName-&gt;framework -->
+    <li>prototypeName-&gt;arcabouço</li>
+  </VQE_PrototypeARC.questNameRules.rulesStrings>
+</LanguageData>

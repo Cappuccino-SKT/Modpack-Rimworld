@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <!-- EN: FrozenSnowFox Complex Jobs -->
+  <FrozenSnowFoxComplexJobsSettings.label>FrozenSnowFox Complex Jobs</FrozenSnowFoxComplexJobsSettings.label>
+  <!-- EN: For any changed settings to take effect the game must be restarted.\nIf you enable new Worktypes midsave you must replace your existing mechanoids for them to get the new Worktypes. -->
+  <FrozenSnowFoxComplexJobsSettings.settings.1.cachedText>Para qualquer mudança valer, é preciso reiniciar o jogo.\nSe ligar novos tipos de trabalho no meio de um save, troque os mecanoides existentes para que recebam os novos tipos.</FrozenSnowFoxComplexJobsSettings.settings.1.cachedText>
+  <!-- EN: For any changed settings to take effect the game must be restarted.\nIf you enable new Worktypes midsave you must replace your existing mechanoids for them to get the new Worktypes. -->
+  <FrozenSnowFoxComplexJobsSettings.settings.1.text>Para qualquer mudança valer, é preciso reiniciar o jogo.\nSe ligar novos tipos de trabalho no meio de um save, troque os mecanoides existentes para que recebam os novos tipos.</FrozenSnowFoxComplexJobsSettings.settings.1.text>
+  <!-- EN: Complex Jobs Settings -->
+  <FrozenSnowFoxComplexJobsSettings.settings.4.cachedText>Opções do Complex Jobs</FrozenSnowFoxComplexJobsSettings.settings.4.cachedText>
+  <!-- EN: Complex Jobs Settings -->
+  <FrozenSnowFoxComplexJobsSettings.settings.4.text>Opções do Complex Jobs</FrozenSnowFoxComplexJobsSettings.settings.4.text>
+  <!-- EN: Anomaly Tasks In Dark Study -->
+  <FrozenSnowFoxComplexJobsSettings.settings.6.label>Tarefas de Anomaly no Estudo sombrio</FrozenSnowFoxComplexJobsSettings.settings.6.label>
+  <!-- EN: Moves all the Anomaly related tasks from other worktypes into Dark Study and changes the worktype requirements to include Social. -->
+  <FrozenSnowFoxComplexJobsSettings.settings.8.cachedText>Move todas as tarefas ligadas ao Anomaly de outros tipos de trabalho para o Estudo sombrio e muda os requisitos do tipo para incluir Social.</FrozenSnowFoxComplexJobsSettings.settings.8.cachedText>
+  <!-- EN: Moves all the Anomaly related tasks from other worktypes into Dark Study and changes the worktype requirements to include Social. -->
+  <FrozenSnowFoxComplexJobsSettings.settings.8.text>Move todas as tarefas ligadas ao Anomaly de outros tipos de trabalho para o Estudo sombrio e muda os requisitos do tipo para incluir Social.</FrozenSnowFoxComplexJobsSettings.settings.8.text>
+  <!-- EN: Drafted Work Tasks -->
+  <FrozenSnowFoxComplexJobsSettings.settings.11.label>Tarefas convocado</FrozenSnowFoxComplexJobsSettings.settings.11.label>
+  <!-- EN: Changes all work tasks so they can be done while drafted.  Making it so you no longer need to undraft and redraft pawns to perform a task.\nNote: A few tasks may still not be usable while being drafted and some tasks may forcibly undraft a pawn to perform them. -->
+  <FrozenSnowFoxComplexJobsSettings.settings.13.cachedText>Permite fazer todas as tarefas convocado. Assim não é mais preciso desconvocar e convocar de novo para fazer uma tarefa.\nObs.: algumas tarefas ainda podem não funcionar convocado, e outras podem desconvocar a pessoa à força.</FrozenSnowFoxComplexJobsSettings.settings.13.cachedText>
+  <!-- EN: Changes all work tasks so they can be done while drafted.  Making it so you no longer need to undraft and redraft pawns to perform a task.\nNote: A few tasks may still not be usable while being drafted and some tasks may forcibly undraft a pawn to perform them. -->
+  <FrozenSnowFoxComplexJobsSettings.settings.13.text>Permite fazer todas as tarefas convocado. Assim não é mais preciso desconvocar e convocar de novo para fazer uma tarefa.\nObs.: algumas tarefas ainda podem não funcionar convocado, e outras podem desconvocar a pessoa à força.</FrozenSnowFoxComplexJobsSettings.settings.13.text>
+  <!-- EN: Rescue In Firefighting -->
+  <FrozenSnowFoxComplexJobsSettings.settings.16.label>Resgate no combate a incêndio</FrozenSnowFoxComplexJobsSettings.settings.16.label>
+  <!-- EN: Adds a duplicated task of Rescue to Firefighting.  This will cause people on the firefighting worktype to first rescue downed allies before attempting to fight fires.\nNote: Although this is intended to be an alternative to the Rescue worktype both options can be enabled without issue. -->
+  <FrozenSnowFoxComplexJobsSettings.settings.18.cachedText>Adiciona uma cópia da tarefa Resgatar ao Combate a incêndio. Quem está nesse tipo de trabalho resgata primeiro os aliados caídos antes de apagar o fogo.\nObs.: é uma alternativa ao tipo Resgate, mas as duas opções podem ficar ligadas sem problema.</FrozenSnowFoxComplexJobsSettings.settings.18.cachedText>
+  <!-- EN: Adds a duplicated task of Rescue to Firefighting.  This will cause people on the firefighting worktype to first rescue downed allies before attempting to fight fires.\nNote: Although this is intended to be an alternative to the Rescue worktype both options can be enabled without issue. -->
+  <FrozenSnowFoxComplexJobsSettings.settings.18.text>Adiciona uma cópia da tarefa Resgatar ao Combate a incêndio. Quem está nesse tipo de trabalho resgata primeiro os aliados caídos antes de apagar o fogo.\nObs.: é uma alternativa ao tipo Resgate, mas as duas opções podem ficar ligadas sem problema.</FrozenSnowFoxComplexJobsSettings.settings.18.text>
+  <!-- EN: Ideoligion Roles Are Capable -->
+  <FrozenSnowFoxComplexJobsSettings.settings.21.label>Cargos da ideologia são capazes</FrozenSnowFoxComplexJobsSettings.settings.21.label>
+  <!-- EN: Removes all the disabled worktypes and weapon restrictions from all ideoligion roles. -->
+  <FrozenSnowFoxComplexJobsSettings.settings.23.cachedText>Remove todos os tipos de trabalho desativados e as restrições de armas de todos os cargos da ideologia.</FrozenSnowFoxComplexJobsSettings.settings.23.cachedText>
+  <!-- EN: Removes all the disabled worktypes and weapon restrictions from all ideoligion roles. -->
+  <FrozenSnowFoxComplexJobsSettings.settings.23.text>Remove todos os tipos de trabalho desativados e as restrições de armas de todos os cargos da ideologia.</FrozenSnowFoxComplexJobsSettings.settings.23.text>
+  <!-- EN: Mechanoids Are Capable -->
+  <FrozenSnowFoxComplexJobsSettings.settings.26.label>Mecanoides são capazes</FrozenSnowFoxComplexJobsSettings.settings.26.label>
+  <!-- EN: Changes the canBeDoneByMechs field on all work type tasks from false to true.\nNote: Some tasks break the game without code to further patch the task.  These tasks are not included for obvious reasons. -->
+  <FrozenSnowFoxComplexJobsSettings.settings.28.cachedText>Muda o campo canBeDoneByMechs de todas as tarefas de false para true.\nObs.: algumas tarefas quebram o jogo sem código extra para corrigi-las. Essas ficam de fora, por motivos óbvios.</FrozenSnowFoxComplexJobsSettings.settings.28.cachedText>
+  <!-- EN: Changes the canBeDoneByMechs field on all work type tasks from false to true.\nNote: Some tasks break the game without code to further patch the task.  These tasks are not included for obvious reasons. -->
+  <FrozenSnowFoxComplexJobsSettings.settings.28.text>Muda o campo canBeDoneByMechs de todas as tarefas de false para true.\nObs.: algumas tarefas quebram o jogo sem código extra para corrigi-las. Essas ficam de fora, por motivos óbvios.</FrozenSnowFoxComplexJobsSettings.settings.28.text>
+  <!-- EN: Slaves Are Capable -->
+  <FrozenSnowFoxComplexJobsSettings.settings.31.label>Escravos são capazes</FrozenSnowFoxComplexJobsSettings.settings.31.label>
+  <!-- EN: Allows Slaves to do all Worktypes except for Warden. -->
+  <FrozenSnowFoxComplexJobsSettings.settings.33.cachedText>Permite que escravos façam todos os tipos de trabalho, menos Carcereiro.</FrozenSnowFoxComplexJobsSettings.settings.33.cachedText>
+  <!-- EN: Allows Slaves to do all Worktypes except for Warden. -->
+  <FrozenSnowFoxComplexJobsSettings.settings.33.text>Permite que escravos façam todos os tipos de trabalho, menos Carcereiro.</FrozenSnowFoxComplexJobsSettings.settings.33.text>
+  <!-- EN: Warcaskets Are Capable -->
+  <FrozenSnowFoxComplexJobsSettings.settings.36.label>Caixões de guerra são capazes</FrozenSnowFoxComplexJobsSettings.settings.36.label>
+  <!-- EN: Allows Warcaskets to do all Worktypes. -->
+  <FrozenSnowFoxComplexJobsSettings.settings.38.cachedText>Permite que caixões de guerra façam todos os tipos de trabalho.</FrozenSnowFoxComplexJobsSettings.settings.38.cachedText>
+  <!-- EN: Allows Warcaskets to do all Worktypes. -->
+  <FrozenSnowFoxComplexJobsSettings.settings.38.text>Permite que caixões de guerra façam todos os tipos de trabalho.</FrozenSnowFoxComplexJobsSettings.settings.38.text>
+  <!-- EN: Clear Pollution Worktype -->
+  <FrozenSnowFoxComplexJobsSettings.settings.41.label>Tipo de trabalho Limpar poluição</FrozenSnowFoxComplexJobsSettings.settings.41.label>
+  <!-- EN: Enables the Clear Pollution Worktype which moves the Clear Pollution task to its own Worktype. -->
+  <FrozenSnowFoxComplexJobsSettings.settings.43.cachedText>Ativa o tipo de trabalho Limpar poluição, que move a tarefa de limpar poluição para um tipo próprio.</FrozenSnowFoxComplexJobsSettings.settings.43.cachedText>
+  <!-- EN: Enables the Clear Pollution Worktype which moves the Clear Pollution task to its own Worktype. -->
+  <FrozenSnowFoxComplexJobsSettings.settings.43.text>Ativa o tipo de trabalho Limpar poluição, que move a tarefa de limpar poluição para um tipo próprio.</FrozenSnowFoxComplexJobsSettings.settings.43.text>
+  <!-- EN: Clear Snow Worktype -->
+  <FrozenSnowFoxComplexJobsSettings.settings.46.label>Tipo de trabalho Tirar neve</FrozenSnowFoxComplexJobsSettings.settings.46.label>
+  <!-- EN: Enables the Clear Snow Worktype which moves the Clear Snow task to its own Worktype. -->
+  <FrozenSnowFoxComplexJobsSettings.settings.48.cachedText>Ativa o tipo de trabalho Tirar neve, que move a tarefa de tirar neve para um tipo próprio.</FrozenSnowFoxComplexJobsSettings.settings.48.cachedText>
+  <!-- EN: Enables the Clear Snow Worktype which moves the Clear Snow task to its own Worktype. -->
+  <FrozenSnowFoxComplexJobsSettings.settings.48.text>Ativa o tipo de trabalho Tirar neve, que move a tarefa de tirar neve para um tipo próprio.</FrozenSnowFoxComplexJobsSettings.settings.48.text>
+  <!-- EN: Convert Worktype -->
+  <FrozenSnowFoxComplexJobsSettings.settings.51.label>Tipo de trabalho Converter</FrozenSnowFoxComplexJobsSettings.settings.51.label>
+  <!-- EN: Enables the Convert Worktype which moves the Convert task to its own Worktype. -->
+  <FrozenSnowFoxComplexJobsSettings.settings.53.cachedText>Ativa o tipo de trabalho Converter, que move a tarefa de converter para um tipo próprio.</FrozenSnowFoxComplexJobsSettings.settings.53.cachedText>
+  <!-- EN: Enables the Convert Worktype which moves the Convert task to its own Worktype. -->
+  <FrozenSnowFoxComplexJobsSettings.settings.53.text>Ativa o tipo de trabalho Converter, que move a tarefa de converter para um tipo próprio.</FrozenSnowFoxComplexJobsSettings.settings.53.text>
+  <!-- EN: Hack Worktype -->
+  <FrozenSnowFoxComplexJobsSettings.settings.56.label>Tipo de trabalho Invadir sistemas</FrozenSnowFoxComplexJobsSettings.settings.56.label>
+  <!-- EN: Enables the Hack Worktype which moves all Hack related tasks to their own Worktype. -->
+  <FrozenSnowFoxComplexJobsSettings.settings.58.cachedText>Ativa o tipo de trabalho Invadir sistemas, que move todas as tarefas de invasão de sistemas para um tipo próprio.</FrozenSnowFoxComplexJobsSettings.settings.58.cachedText>
+  <!-- EN: Enables the Hack Worktype which moves all Hack related tasks to their own Worktype. -->
+  <FrozenSnowFoxComplexJobsSettings.settings.58.text>Ativa o tipo de trabalho Invadir sistemas, que move todas as tarefas de invasão de sistemas para um tipo próprio.</FrozenSnowFoxComplexJobsSettings.settings.58.text>
+  <!-- EN: Mechanoids Worktype -->
+  <FrozenSnowFoxComplexJobsSettings.settings.61.label>Tipo de trabalho Mecanoides</FrozenSnowFoxComplexJobsSettings.settings.61.label>
+  <!-- EN: Enables the Mechanoids Worktype which moves all Mechanoid related tasks to their own Worktype. -->
+  <FrozenSnowFoxComplexJobsSettings.settings.63.cachedText>Ativa o tipo de trabalho Mecanoides, que move todas as tarefas ligadas a mecanoides para um tipo próprio.</FrozenSnowFoxComplexJobsSettings.settings.63.cachedText>
+  <!-- EN: Enables the Mechanoids Worktype which moves all Mechanoid related tasks to their own Worktype. -->
+  <FrozenSnowFoxComplexJobsSettings.settings.63.text>Ativa o tipo de trabalho Mecanoides, que move todas as tarefas ligadas a mecanoides para um tipo próprio.</FrozenSnowFoxComplexJobsSettings.settings.63.text>
+  <!-- EN: Merge Worktype -->
+  <FrozenSnowFoxComplexJobsSettings.settings.66.label>Tipo de trabalho Juntar</FrozenSnowFoxComplexJobsSettings.settings.66.label>
+  <!-- EN: Enables the Merge Worktype which moves the Merge task from Hauling to its own Worktype. -->
+  <FrozenSnowFoxComplexJobsSettings.settings.68.cachedText>Ativa o tipo de trabalho Juntar, que move a tarefa de juntar pilhas do Transporte para um tipo próprio.</FrozenSnowFoxComplexJobsSettings.settings.68.cachedText>
+  <!-- EN: Enables the Merge Worktype which moves the Merge task from Hauling to its own Worktype. -->
+  <FrozenSnowFoxComplexJobsSettings.settings.68.text>Ativa o tipo de trabalho Juntar, que move a tarefa de juntar pilhas do Transporte para um tipo próprio.</FrozenSnowFoxComplexJobsSettings.settings.68.text>
+  <!-- EN: Paint Worktype -->
+  <FrozenSnowFoxComplexJobsSettings.settings.71.label>Tipo de trabalho Pintar</FrozenSnowFoxComplexJobsSettings.settings.71.label>
+  <!-- EN: Enables the Paint Worktype which moves all Paint related tasks to its own Worktype. -->
+  <FrozenSnowFoxComplexJobsSettings.settings.73.cachedText>Ativa o tipo de trabalho Pintar, que move todas as tarefas de pintura para um tipo próprio.</FrozenSnowFoxComplexJobsSettings.settings.73.cachedText>
+  <!-- EN: Enables the Paint Worktype which moves all Paint related tasks to its own Worktype. -->
+  <FrozenSnowFoxComplexJobsSettings.settings.73.text>Ativa o tipo de trabalho Pintar, que move todas as tarefas de pintura para um tipo próprio.</FrozenSnowFoxComplexJobsSettings.settings.73.text>
+  <!-- EN: Prison Care Worktype -->
+  <FrozenSnowFoxComplexJobsSettings.settings.76.label>Tipo de trabalho Cuidar da prisão</FrozenSnowFoxComplexJobsSettings.settings.76.label>
+  <!-- EN: Enables the Prison Care Worktype which moves all Prison Care related tasks to its own Worktype. -->
+  <FrozenSnowFoxComplexJobsSettings.settings.78.cachedText>Ativa o tipo de trabalho Cuidar da prisão, que move todas as tarefas de cuidado com prisioneiros para um tipo próprio.</FrozenSnowFoxComplexJobsSettings.settings.78.cachedText>
+  <!-- EN: Enables the Prison Care Worktype which moves all Prison Care related tasks to its own Worktype. -->
+  <FrozenSnowFoxComplexJobsSettings.settings.78.text>Ativa o tipo de trabalho Cuidar da prisão, que move todas as tarefas de cuidado com prisioneiros para um tipo próprio.</FrozenSnowFoxComplexJobsSettings.settings.78.text>
+  <!-- EN: Pruning Worktype -->
+  <FrozenSnowFoxComplexJobsSettings.settings.81.label>Tipo de trabalho Podar</FrozenSnowFoxComplexJobsSettings.settings.81.label>
+  <!-- EN: Enables the Pruning Worktype which moves all Pruning related tasks to its own Worktype. -->
+  <FrozenSnowFoxComplexJobsSettings.settings.83.cachedText>Ativa o tipo de trabalho Podar, que move todas as tarefas de poda para um tipo próprio.</FrozenSnowFoxComplexJobsSettings.settings.83.cachedText>
+  <!-- EN: Enables the Pruning Worktype which moves all Pruning related tasks to its own Worktype. -->
+  <FrozenSnowFoxComplexJobsSettings.settings.83.text>Ativa o tipo de trabalho Podar, que move todas as tarefas de poda para um tipo próprio.</FrozenSnowFoxComplexJobsSettings.settings.83.text>
+  <!-- EN: Rescue Worktype -->
+  <FrozenSnowFoxComplexJobsSettings.settings.86.label>Tipo de trabalho Resgate</FrozenSnowFoxComplexJobsSettings.settings.86.label>
+  <!-- EN: Enables the Rescue Worktype which adds its own unique tasks focused on rescuing downed allies. -->
+  <FrozenSnowFoxComplexJobsSettings.settings.88.cachedText>Ativa o tipo de trabalho Resgate, que adiciona tarefas próprias focadas em resgatar aliados caídos.</FrozenSnowFoxComplexJobsSettings.settings.88.cachedText>
+  <!-- EN: Enables the Rescue Worktype which adds its own unique tasks focused on rescuing downed allies. -->
+  <FrozenSnowFoxComplexJobsSettings.settings.88.text>Ativa o tipo de trabalho Resgate, que adiciona tarefas próprias focadas em resgatar aliados caídos.</FrozenSnowFoxComplexJobsSettings.settings.88.text>
+  <!-- EN: Self Tend Worktype -->
+  <FrozenSnowFoxComplexJobsSettings.settings.91.label>Tipo de trabalho Autotratamento</FrozenSnowFoxComplexJobsSettings.settings.91.label>
+  <!-- EN: Enables the Self Tend Worktype which moves all self tending related tasks to its own Worktype.  For pawns to Self Tend they must still have the Self Tend option enabled.  This worktype is intended to allow pawns to Self Tend without doing Doctoring work on others. -->
+  <FrozenSnowFoxComplexJobsSettings.settings.93.cachedText>Ativa o tipo de trabalho Autotratamento, que move todas as tarefas de tratar a si mesmo para um tipo próprio. A pessoa ainda precisa ter a opção de autotratamento ligada. Serve para tratar a si mesmo sem fazer trabalho de médico nos outros.</FrozenSnowFoxComplexJobsSettings.settings.93.cachedText>
+  <!-- EN: Enables the Self Tend Worktype which moves all self tending related tasks to its own Worktype.  For pawns to Self Tend they must still have the Self Tend option enabled.  This worktype is intended to allow pawns to Self Tend without doing Doctoring work on others. -->
+  <FrozenSnowFoxComplexJobsSettings.settings.93.text>Ativa o tipo de trabalho Autotratamento, que move todas as tarefas de tratar a si mesmo para um tipo próprio. A pessoa ainda precisa ter a opção de autotratamento ligada. Serve para tratar a si mesmo sem fazer trabalho de médico nos outros.</FrozenSnowFoxComplexJobsSettings.settings.93.text>
+  <!-- EN: Slaughter Worktype -->
+  <FrozenSnowFoxComplexJobsSettings.settings.96.label>Tipo de trabalho Abate</FrozenSnowFoxComplexJobsSettings.settings.96.label>
+  <!-- EN: Enables the Slaughter Worktype which moves all animal slaughtering related tasks to its own Worktype. -->
+  <FrozenSnowFoxComplexJobsSettings.settings.98.cachedText>Ativa o tipo de trabalho Abate, que move todas as tarefas de abate de animais para um tipo próprio.</FrozenSnowFoxComplexJobsSettings.settings.98.cachedText>
+  <!-- EN: Enables the Slaughter Worktype which moves all animal slaughtering related tasks to its own Worktype. -->
+  <FrozenSnowFoxComplexJobsSettings.settings.98.text>Ativa o tipo de trabalho Abate, que move todas as tarefas de abate de animais para um tipo próprio.</FrozenSnowFoxComplexJobsSettings.settings.98.text>
+  <!-- EN: Smoothing Worktype -->
+  <FrozenSnowFoxComplexJobsSettings.settings.101.label>Tipo de trabalho Alisar</FrozenSnowFoxComplexJobsSettings.settings.101.label>
+  <!-- EN: Enables the Smoothing Worktype which moves all smoothing surfaces related tasks to its own Worktype. -->
+  <FrozenSnowFoxComplexJobsSettings.settings.103.cachedText>Ativa o tipo de trabalho Alisar, que move todas as tarefas de alisar superfícies para um tipo próprio.</FrozenSnowFoxComplexJobsSettings.settings.103.cachedText>
+  <!-- EN: Enables the Smoothing Worktype which moves all smoothing surfaces related tasks to its own Worktype. -->
+  <FrozenSnowFoxComplexJobsSettings.settings.103.text>Ativa o tipo de trabalho Alisar, que move todas as tarefas de alisar superfícies para um tipo próprio.</FrozenSnowFoxComplexJobsSettings.settings.103.text>
+  <!-- EN: Taming Worktype -->
+  <FrozenSnowFoxComplexJobsSettings.settings.106.label>Tipo de trabalho Domar</FrozenSnowFoxComplexJobsSettings.settings.106.label>
+  <!-- EN: Enables the Taming Worktype which moves all animal taming related tasks to its own Worktype. -->
+  <FrozenSnowFoxComplexJobsSettings.settings.108.cachedText>Ativa o tipo de trabalho Domar, que move todas as tarefas de domar animais para um tipo próprio.</FrozenSnowFoxComplexJobsSettings.settings.108.cachedText>
+  <!-- EN: Enables the Taming Worktype which moves all animal taming related tasks to its own Worktype. -->
+  <FrozenSnowFoxComplexJobsSettings.settings.108.text>Ativa o tipo de trabalho Domar, que move todas as tarefas de domar animais para um tipo próprio.</FrozenSnowFoxComplexJobsSettings.settings.108.text>
+  <!-- EN: Teach Worktype -->
+  <FrozenSnowFoxComplexJobsSettings.settings.111.label>Tipo de trabalho Ensinar</FrozenSnowFoxComplexJobsSettings.settings.111.label>
+  <!-- EN: Enables the Teach Worktype which moves the Teach Children task from Childcare to its own Worktype. -->
+  <FrozenSnowFoxComplexJobsSettings.settings.113.cachedText>Ativa o tipo de trabalho Ensinar, que move a tarefa de ensinar crianças dos Cuidados infantis para um tipo próprio.</FrozenSnowFoxComplexJobsSettings.settings.113.cachedText>
+  <!-- EN: Enables the Teach Worktype which moves the Teach Children task from Childcare to its own Worktype. -->
+  <FrozenSnowFoxComplexJobsSettings.settings.113.text>Ativa o tipo de trabalho Ensinar, que move a tarefa de ensinar crianças dos Cuidados infantis para um tipo próprio.</FrozenSnowFoxComplexJobsSettings.settings.113.text>
+</LanguageData>

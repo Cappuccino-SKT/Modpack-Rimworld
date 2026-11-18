@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <!-- EN: technophobe tantrum -->
+  <VTE_TechnophobeTantrum.label>ataque de fúria tecnofóbico</VTE_TechnophobeTantrum.label>
+  <!-- EN: Mental state: technophobe tantrum -->
+  <VTE_TechnophobeTantrum.baseInspectLine>Estado mental: ataque de fúria tecnofóbico</VTE_TechnophobeTantrum.baseInspectLine>
+  <!-- EN: {0} has flown into a technophobe tantrum.\n\n[PAWN_pronoun] is going to vent [PAWN_possessive] anger on technology. -->
+  <VTE_TechnophobeTantrum.beginLetter>{0} teve um ataque de fúria tecnofóbico.\n\nVai descontar a raiva na tecnologia.</VTE_TechnophobeTantrum.beginLetter>
+  <!-- EN: {0} is no longer in a technophobe tantrum. -->
+  <VTE_TechnophobeTantrum.recoveryMessage>{0} não está mais num ataque de fúria tecnofóbico.</VTE_TechnophobeTantrum.recoveryMessage>
+  <!-- EN: panicking -->
+  <VTE_PanicFreezing.label>em pânico</VTE_PanicFreezing.label>
+  <!-- EN: Mental state: panicking -->
+  <VTE_PanicFreezing.baseInspectLine>Estado mental: em pânico</VTE_PanicFreezing.baseInspectLine>
+  <!-- EN: {0} is freezing in panic. -->
+  <VTE_PanicFreezing.beginLetter>{0} travou de pânico.</VTE_PanicFreezing.beginLetter>
+  <!-- EN: panic attack -->
+  <VTE_PanicFreezing.beginLetterLabel>ataque de pânico</VTE_PanicFreezing.beginLetterLabel>
+  <!-- EN: {0} is no longer suffering a panic attack. -->
+  <VTE_PanicFreezing.recoveryMessage>{0} não está mais tendo um ataque de pânico.</VTE_PanicFreezing.recoveryMessage>
+  <!-- EN: kleptomaniac -->
+  <VTE_Kleptomaniac.label>cleptomaníaco</VTE_Kleptomaniac.label>
+  <!-- EN: Mental state: Kleptomaniac -->
+  <VTE_Kleptomaniac.baseInspectLine>Estado mental: cleptomaníaco</VTE_Kleptomaniac.baseInspectLine>
+  <!-- EN: {0} is stealing items from visitors. -->
+  <VTE_Kleptomaniac.beginLetter>{0} está roubando itens dos visitantes.</VTE_Kleptomaniac.beginLetter>
+  <!-- EN: Kleptomaniac -->
+  <VTE_Kleptomaniac.beginLetterLabel>Cleptomaníaco</VTE_Kleptomaniac.beginLetterLabel>
+  <!-- EN: {0} is no longer stealing items from visitors. -->
+  <VTE_Kleptomaniac.recoveryMessage>{0} parou de roubar itens dos visitantes.</VTE_Kleptomaniac.recoveryMessage>
+</LanguageData>

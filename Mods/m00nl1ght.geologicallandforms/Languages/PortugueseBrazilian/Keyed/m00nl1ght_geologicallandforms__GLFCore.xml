@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <!-- EN: There are new versions available for some landforms that you previously modified. Would you like to use the new versions, or keep the old modified ones?\n\nAffected landforms: -->
+  <GeologicalLandforms.LandformManager.LandformUpgrade>Há versões novas de alguns relevos que você modificou. Quer usar as versões novas ou manter as modificadas antigas?\n\nRelevos afetados:</GeologicalLandforms.LandformManager.LandformUpgrade>
+  <!-- EN: Replace with new data -->
+  <GeologicalLandforms.LandformManager.LandformUpgradeYes>Trocar pelos dados novos</GeologicalLandforms.LandformManager.LandformUpgradeYes>
+  <!-- EN: Keep old data -->
+  <GeologicalLandforms.LandformManager.LandformUpgradeNo>Manter os dados antigos</GeologicalLandforms.LandformManager.LandformUpgradeNo>
+  <!-- EN: Landform -->
+  <GeologicalLandforms.WorldMap.Landform>Relevo</GeologicalLandforms.WorldMap.Landform>
+  <!-- EN: Bordering biomes -->
+  <GeologicalLandforms.WorldMap.BorderingBiomes>Biomas vizinhos</GeologicalLandforms.WorldMap.BorderingBiomes>
+  <!-- EN: Select landform -->
+  <GeologicalLandforms.WorldMap.SelectLandform>Escolher relevo</GeologicalLandforms.WorldMap.SelectLandform>
+  <!-- EN: Mountains -->
+  <GeologicalLandforms.WorldParams.Mountains>Montanhas</GeologicalLandforms.WorldParams.Mountains>
+  <!-- EN: Cave systems -->
+  <GeologicalLandforms.WorldParams.CaveSystems>Sistemas de cavernas</GeologicalLandforms.WorldParams.CaveSystems>
+  <!-- EN: (corner) -->
+  <GeologicalLandforms.Landform.Corner>(canto)</GeologicalLandforms.Landform.Corner>
+  <!-- EN: Geological Landforms -->
+  <GeologicalLandforms.Integration.PrepareLanding.Title>Geological Landforms</GeologicalLandforms.Integration.PrepareLanding.Title>
+  <!-- EN: Override rivers and coasts from Geological Landforms -->
+  <GeologicalLandforms.Integration.MapDesigner.RiverCardOverride>Substituir rios e costas pelos do Geological Landforms</GeologicalLandforms.Integration.MapDesigner.RiverCardOverride>
+</LanguageData>

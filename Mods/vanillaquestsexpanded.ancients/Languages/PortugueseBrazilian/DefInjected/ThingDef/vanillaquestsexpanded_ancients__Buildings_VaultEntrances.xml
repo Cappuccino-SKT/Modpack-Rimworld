@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <!-- EN: sealed vault door -->
+  <VQEA_LockedVaultDoor.label>porta de cofre selada</VQEA_LockedVaultDoor.label>
+  <!-- EN: A sealed vault entrance leading to an underground laboratory. Still structurally sound, but heavily pressurized. Can be forced open to allow access. -->
+  <VQEA_LockedVaultDoor.description>Uma entrada de cofre selada que leva a um laboratório subterrâneo. A estrutura continua sólida, mas muito pressurizada. Pode ser forçada para dar acesso.</VQEA_LockedVaultDoor.description>
+  <!-- EN: Choose someone to unseal the vault door, allowing access to the underground vault. -->
+  <VQEA_LockedVaultDoor.comps.CompLockedVaultDoor.activateDescString>Escolha alguém para abrir a porta do cofre e dar acesso ao cofre subterrâneo.</VQEA_LockedVaultDoor.comps.CompLockedVaultDoor.activateDescString>
+  <!-- EN: Unseal vault door -->
+  <VQEA_LockedVaultDoor.comps.CompLockedVaultDoor.activateLabelString>Abrir porta do cofre</VQEA_LockedVaultDoor.comps.CompLockedVaultDoor.activateLabelString>
+  <!-- EN: forcing door open: {1}s -->
+  <VQEA_LockedVaultDoor.comps.CompLockedVaultDoor.activatingString>forçando a porta: {1}s</VQEA_LockedVaultDoor.comps.CompLockedVaultDoor.activatingString>
+  <!-- EN: forcing door open -->
+  <VQEA_LockedVaultDoor.comps.CompLockedVaultDoor.activatingStringPending>forçando a porta</VQEA_LockedVaultDoor.comps.CompLockedVaultDoor.activatingStringPending>
+  <!-- EN: Choose who should do this -->
+  <VQEA_LockedVaultDoor.comps.CompLockedVaultDoor.guiLabelString>Escolha quem deve fazer isso</VQEA_LockedVaultDoor.comps.CompLockedVaultDoor.guiLabelString>
+  <!-- EN: Force this door open -->
+  <VQEA_LockedVaultDoor.comps.CompLockedVaultDoor.jobString>Forçar esta porta</VQEA_LockedVaultDoor.comps.CompLockedVaultDoor.jobString>
+  <!-- EN: {PAWN_nameDef} has successfully forced the door open. -->
+  <VQEA_LockedVaultDoor.comps.CompLockedVaultDoor.messageCompletedString>{PAWN_nameDef} conseguiu forçar a porta.</VQEA_LockedVaultDoor.comps.CompLockedVaultDoor.messageCompletedString>
+  <!-- EN: vault ramp -->
+  <VQEA_VaultRamp.label>rampa do cofre</VQEA_VaultRamp.label>
+  <!-- EN: A heavily reinforced vehicle ramp with personnel access stairway going down the middle. Leads deeper underground, into a sealed ancient vault. -->
+  <VQEA_VaultRamp.description>Uma rampa de veículos muito reforçada, com uma escada de pessoal descendo pelo meio. Leva mais fundo, a um cofre antigo selado.</VQEA_VaultRamp.description>
+  <!-- EN: vault exit ramp -->
+  <VQEA_VaultExitRamp.label>rampa de saída do cofre</VQEA_VaultExitRamp.label>
+  <!-- EN: A heavily reinforced vehicle ramp with personnel access stairway going up, allowing ascending back to the surface. -->
+  <VQEA_VaultExitRamp.description>Uma rampa de veículos muito reforçada, com uma escada de pessoal subindo, que leva de volta à superfície.</VQEA_VaultExitRamp.description>
+</LanguageData>

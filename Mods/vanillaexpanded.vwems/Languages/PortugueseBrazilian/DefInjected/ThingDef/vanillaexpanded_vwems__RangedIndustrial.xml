@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <!-- EN: makeshift pistol -->
+  <VWE_Gun_MakeshiftPistol.label>pistola improvisada</VWE_Gun_MakeshiftPistol.label>
+  <!-- EN: An improvised, rough, ancient-design pattern blowback-operated self-loading pistol. It lacks stopping power and range and is prone to jamming. -->
+  <VWE_Gun_MakeshiftPistol.description>Uma pistola semiautomática de ação por recuo, improvisada e tosca, de desenho antigo. Tem pouco poder de parada e alcance, e engasga à toa.</VWE_Gun_MakeshiftPistol.description>
+  <!-- EN: grip -->
+  <VWE_Gun_MakeshiftPistol.tools.grip.label>empunhadura</VWE_Gun_MakeshiftPistol.tools.grip.label>
+  <!-- EN: muzzle -->
+  <VWE_Gun_MakeshiftPistol.tools.muzzle.label>boca</VWE_Gun_MakeshiftPistol.tools.muzzle.label>
+  <!-- EN: makeshift pistol -->
+  <VWE_Gun_MakeshiftPistol.verbs.Verb_ShootCE.label>pistola improvisada</VWE_Gun_MakeshiftPistol.verbs.Verb_ShootCE.label>
+  <!-- EN: makeshift pistol bullet -->
+  <VWE_Bullet_MakeshiftPistol.label>bala de pistola improvisada</VWE_Bullet_MakeshiftPistol.label>
+  <!-- EN: makeshift SMG -->
+  <VWE_Gun_MakeshiftSMG.label>submetralhadora improvisada</VWE_Gun_MakeshiftSMG.label>
+  <!-- EN: A small, home-made micro-submachine gun. It's short range and very prone to jamming due to the rough design and faulty elements. Its rate of fire tends to make up for its weakness. -->
+  <VWE_Gun_MakeshiftSMG.description>Uma pequena submetralhadora caseira. Tem alcance curto e engasga muito por causa do desenho tosco e das peças defeituosas. A cadência de tiro costuma compensar a fraqueza.</VWE_Gun_MakeshiftSMG.description>
+  <!-- EN: stock -->
+  <VWE_Gun_MakeshiftSMG.tools.stock.label>coronha</VWE_Gun_MakeshiftSMG.tools.stock.label>
+  <!-- EN: barrel -->
+  <VWE_Gun_MakeshiftSMG.tools.barrel.label>cano</VWE_Gun_MakeshiftSMG.tools.barrel.label>
+  <!-- EN: muzzle -->
+  <VWE_Gun_MakeshiftSMG.tools.muzzle.label>boca</VWE_Gun_MakeshiftSMG.tools.muzzle.label>
+  <!-- EN: makeshift SMG -->
+  <VWE_Gun_MakeshiftSMG.verbs.Verb_ShootCE.label>submetralhadora improvisada</VWE_Gun_MakeshiftSMG.verbs.Verb_ShootCE.label>
+  <!-- EN: makeshift SMG bullet -->
+  <VWE_Bullet_MakeshiftSMG.label>bala de submetralhadora improvisada</VWE_Bullet_MakeshiftSMG.label>
+  <!-- EN: makeshift rifle -->
+  <VWE_Gun_MakeshiftRifle.label>fuzil improvisado</VWE_Gun_MakeshiftRifle.label>
+  <!-- EN: A general-purpose gas-operated improvised assault rifle, utilising various salvaged components mounted on a militia rifle receiver. It has good range, decent power, and good accuracy, but is prone to jamming. -->
+  <VWE_Gun_MakeshiftRifle.description>Um fuzil de assalto improvisado de uso geral, operado a gás, com vários componentes reaproveitados montados na caixa de um fuzil de milícia. Tem bom alcance, potência razoável e boa precisão, mas engasga à toa.</VWE_Gun_MakeshiftRifle.description>
+  <!-- EN: stock -->
+  <VWE_Gun_MakeshiftRifle.tools.stock.label>coronha</VWE_Gun_MakeshiftRifle.tools.stock.label>
+  <!-- EN: barrel -->
+  <VWE_Gun_MakeshiftRifle.tools.barrel.label>cano</VWE_Gun_MakeshiftRifle.tools.barrel.label>
+  <!-- EN: muzzle -->
+  <VWE_Gun_MakeshiftRifle.tools.muzzle.label>boca</VWE_Gun_MakeshiftRifle.tools.muzzle.label>
+  <!-- EN: makeshift rifle -->
+  <VWE_Gun_MakeshiftRifle.verbs.Verb_ShootCE.label>fuzil improvisado</VWE_Gun_MakeshiftRifle.verbs.Verb_ShootCE.label>
+  <!-- EN: makeshift rifle bullet -->
+  <VWE_Bullet_MakeshiftRifle.label>bala de fuzil improvisado</VWE_Bullet_MakeshiftRifle.label>
+  <!-- EN: makeshift shotgun -->
+  <VWE_Gun_MakeshiftShotgun.label>escopeta improvisada</VWE_Gun_MakeshiftShotgun.label>
+  <!-- EN: An improvised design powerful shotgun that emits a large barrage of pellets. Deadly, but short range. Due to numerous faults in design, the amount of pellets fired varies shot by shot. -->
+  <VWE_Gun_MakeshiftShotgun.description>Uma escopeta potente de projeto improvisado que solta uma grande rajada de chumbos. Mortal, mas de curto alcance. Por causa dos vários defeitos de projeto, a quantidade de chumbos varia a cada tiro.</VWE_Gun_MakeshiftShotgun.description>
+  <!-- EN: stock -->
+  <VWE_Gun_MakeshiftShotgun.tools.stock.label>coronha</VWE_Gun_MakeshiftShotgun.tools.stock.label>
+  <!-- EN: barrel -->
+  <VWE_Gun_MakeshiftShotgun.tools.barrel.label>cano</VWE_Gun_MakeshiftShotgun.tools.barrel.label>
+  <!-- EN: muzzle -->
+  <VWE_Gun_MakeshiftShotgun.tools.muzzle.label>boca</VWE_Gun_MakeshiftShotgun.tools.muzzle.label>
+  <!-- EN: makeshift shotgun -->
+  <VWE_Gun_MakeshiftShotgun.verbs.Verb_ShootCE.label>escopeta improvisada</VWE_Gun_MakeshiftShotgun.verbs.Verb_ShootCE.label>
+  <!-- EN: makeshift shotgun pellet -->
+  <VWE_Bullet_MakeshiftShotgun.label>chumbo de escopeta improvisada</VWE_Bullet_MakeshiftShotgun.label>
+  <!-- EN: makeshift LMG -->
+  <VWE_Gun_MakeshiftLMG.label>metralhadora leve improvisada</VWE_Gun_MakeshiftLMG.label>
+  <!-- EN: An improvised, gas-operated light machine gun. Unwieldy and inaccurate, it is also very prone to jamming. Its long bursts of fire are effective against groups of enemies, but their shot counts are completely random. -->
+  <VWE_Gun_MakeshiftLMG.description>Uma metralhadora leve improvisada, operada a gás. Difícil de manejar e imprecisa, também engasga muito. As longas rajadas funcionam contra grupos de inimigos, mas a quantidade de tiros é totalmente aleatória.</VWE_Gun_MakeshiftLMG.description>
+  <!-- EN: stock -->
+  <VWE_Gun_MakeshiftLMG.tools.stock.label>coronha</VWE_Gun_MakeshiftLMG.tools.stock.label>
+  <!-- EN: barrel -->
+  <VWE_Gun_MakeshiftLMG.tools.barrel.label>cano</VWE_Gun_MakeshiftLMG.tools.barrel.label>
+  <!-- EN: muzzle -->
+  <VWE_Gun_MakeshiftLMG.tools.muzzle.label>boca</VWE_Gun_MakeshiftLMG.tools.muzzle.label>
+  <!-- EN: makeshift LMG -->
+  <VWE_Gun_MakeshiftLMG.verbs.Verb_ShootCE.label>metralhadora leve improvisada</VWE_Gun_MakeshiftLMG.verbs.Verb_ShootCE.label>
+  <!-- EN: makeshift LMG bullet -->
+  <VWE_Bullet_MakeshiftLMG.label>bala de metralhadora leve improvisada</VWE_Bullet_MakeshiftLMG.label>
+</LanguageData>

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <!-- EN: weapon range factor -->
+  <VEF_VerbRangeFactor.label>fator de alcance da arma</VEF_VerbRangeFactor.label>
+  <!-- EN: The range on weapons is multiplied by this value. -->
+  <VEF_VerbRangeFactor.description>O alcance das armas é multiplicado por este valor.</VEF_VerbRangeFactor.description>
+  <!-- EN: weapon range factor (people) -->
+  <VEF_VerbRangeFactor.labelForFullStatList>fator de alcance da arma (pessoas)</VEF_VerbRangeFactor.labelForFullStatList>
+  <!-- EN: Shield max energy offset -->
+  <VEF_EnergyShieldEnergyMaxOffset.label>Bônus de energia máxima do escudo</VEF_EnergyShieldEnergyMaxOffset.label>
+  <!-- EN: Offset of the maximum shield energy that the user can boost through various means. -->
+  <VEF_EnergyShieldEnergyMaxOffset.description>Bônus na energia máxima do escudo que o usuário pode aumentar de vários jeitos.</VEF_EnergyShieldEnergyMaxOffset.description>
+  <!-- EN: Shield max energy factor -->
+  <VEF_EnergyShieldEnergyMaxFactor.label>Fator de energia máxima do escudo</VEF_EnergyShieldEnergyMaxFactor.label>
+  <!-- EN: Factor of the maximum shield energy that the user can boost through various means. -->
+  <VEF_EnergyShieldEnergyMaxFactor.description>Fator da energia máxima do escudo que o usuário pode aumentar de vários jeitos.</VEF_EnergyShieldEnergyMaxFactor.description>
+  <!-- EN: melee attack damage factor -->
+  <VEF_MeleeAttackDamageFactor.label>fator de dano corpo a corpo</VEF_MeleeAttackDamageFactor.label>
+  <!-- EN: A multiplier on melee attack damage. -->
+  <VEF_MeleeAttackDamageFactor.description>Multiplica o dano dos ataques corpo a corpo.</VEF_MeleeAttackDamageFactor.description>
+  <!-- EN: range attack damage factor -->
+  <VEF_RangeAttackDamageFactor.label>fator de dano à distância</VEF_RangeAttackDamageFactor.label>
+  <!-- EN: A multiplier on range attack damage. -->
+  <VEF_RangeAttackDamageFactor.description>Multiplica o dano dos ataques à distância.</VEF_RangeAttackDamageFactor.description>
+  <!-- EN: body food capacity multiplier -->
+  <VEF_FoodCapacityMultiplier.label>multiplicador da capacidade de comida</VEF_FoodCapacityMultiplier.label>
+  <!-- EN: Increases the size of the pawn's hunger bar. This does not affect hunger -->
+  <VEF_FoodCapacityMultiplier.description>Aumenta o tamanho da barra de fome. Não afeta a fome em si</VEF_FoodCapacityMultiplier.description>
+  <!-- EN: growth point multiplier -->
+  <VEF_GrowthPointMultiplier.label>multiplicador de pontos de crescimento</VEF_GrowthPointMultiplier.label>
+  <!-- EN: Increases the amount of growth points accumulated by children when learning -->
+  <VEF_GrowthPointMultiplier.description>Aumenta os pontos de crescimento que as crianças acumulam ao aprender</VEF_GrowthPointMultiplier.description>
+  <!-- EN: body size offset -->
+  <VEF_BodySize_Offset.label>bônus de tamanho corporal</VEF_BodySize_Offset.label>
+  <!-- EN: Increases the size of the pawn relative to their current size -->
+  <VEF_BodySize_Offset.description>Aumenta o tamanho em relação ao tamanho atual</VEF_BodySize_Offset.description>
+  <!-- EN: body size multiplier -->
+  <VEF_BodySize_Multiplier.label>multiplicador de tamanho corporal</VEF_BodySize_Multiplier.label>
+  <!-- EN: Increases the size of the pawn by a multiple of their current size -->
+  <VEF_BodySize_Multiplier.description>Multiplica o tamanho atual</VEF_BodySize_Multiplier.description>
+  <!-- EN: cosmetic body size offset -->
+  <VEF_CosmeticBodySize_Offset.label>bônus de tamanho corporal (visual)</VEF_CosmeticBodySize_Offset.label>
+  <!-- EN: Increases the size of the pawn relative to their current size -->
+  <VEF_CosmeticBodySize_Offset.description>Aumenta o tamanho em relação ao tamanho atual</VEF_CosmeticBodySize_Offset.description>
+  <!-- EN: cosmetic body size multiplier -->
+  <VEF_CosmeticBodySize_Multiplier.label>multiplicador de tamanho corporal (visual)</VEF_CosmeticBodySize_Multiplier.label>
+  <!-- EN: Increases the size of the pawn by a multiple of their current size -->
+  <VEF_CosmeticBodySize_Multiplier.description>Multiplica o tamanho atual</VEF_CosmeticBodySize_Multiplier.description>
+  <!-- EN: head size multiplier -->
+  <VEF_HeadSize_Cosmetic.label>multiplicador de tamanho da cabeça</VEF_HeadSize_Cosmetic.label>
+  <!-- EN: pawn render offset -->
+  <VEF_PawnRenderPosOffset.label>deslocamento do desenho</VEF_PawnRenderPosOffset.label>
+  <!-- EN: Modifies the pawn's rendered position in y-axis. -->
+  <VEF_PawnRenderPosOffset.description>Muda a posição em que a pessoa é desenhada no eixo y.</VEF_PawnRenderPosOffset.description>
+  <!-- EN: Mass carry capacity -->
+  <VEF_MassCarryCapacity.label>Capacidade de carga</VEF_MassCarryCapacity.label>
+  <!-- EN: Total mass carrying capacity of the pawn in caravans. -->
+  <VEF_MassCarryCapacity.description>Massa total que a pessoa consegue carregar em caravanas.</VEF_MassCarryCapacity.description>
+  <!-- EN: {0} kg -->
+  <VEF_MassCarryCapacity.formatString>{0} kg</VEF_MassCarryCapacity.formatString>
+  <!-- EN: {0} kg -->
+  <VEF_MassCarryCapacity.formatStringUnfinalized>{0} kg</VEF_MassCarryCapacity.formatStringUnfinalized>
+  <!-- EN: MTB Lovin Factor -->
+  <VEF_MTBLovinFactor.label>Fator de tempo médio entre namoros</VEF_MTBLovinFactor.label>
+  <!-- EN: A factor of the mean time between (MTB) this person looking for some lovin'. -->
+  <VEF_MTBLovinFactor.description>Fator do tempo médio entre as vezes que esta pessoa procura um namoro.</VEF_MTBLovinFactor.description>
+  <!-- EN: thought duration factor - positive -->
+  <VEF_PositiveThoughtDurationFactor.label>fator de duração dos pensamentos positivos</VEF_PositiveThoughtDurationFactor.label>
+  <!-- EN: The duration of positive thoughts is multiplied by this value. -->
+  <VEF_PositiveThoughtDurationFactor.description>A duração dos pensamentos positivos é multiplicada por este valor.</VEF_PositiveThoughtDurationFactor.description>
+  <!-- EN: thought duration factor - neutral -->
+  <VEF_NeutralThoughtDurationFactor.label>fator de duração dos pensamentos neutros</VEF_NeutralThoughtDurationFactor.label>
+  <!-- EN: The duration of neutral thoughts is multiplied by this value. -->
+  <VEF_NeutralThoughtDurationFactor.description>A duração dos pensamentos neutros é multiplicada por este valor.</VEF_NeutralThoughtDurationFactor.description>
+  <!-- EN: thought duration factor - negative -->
+  <VEF_NegativeThoughtDurationFactor.label>fator de duração dos pensamentos negativos</VEF_NegativeThoughtDurationFactor.label>
+  <!-- EN: The duration of negative thoughts is multiplied by this value. -->
+  <VEF_NegativeThoughtDurationFactor.description>A duração dos pensamentos negativos é multiplicada por este valor.</VEF_NegativeThoughtDurationFactor.description>
+  <!-- EN: ranged dodge chance -->
+  <VEF_RangedDodgeChance.label>chance de esquiva à distância</VEF_RangedDodgeChance.label>
+  <!-- EN: Chance to dodge a ranged attack that would've otherwise hit, or (if negative) get hit by a ranged attack that was meant for a different target. -->
+  <VEF_RangedDodgeChance.description>Chance de desviar de um ataque à distância que acertaria, ou (se negativa) de ser atingido por um ataque à distância que era para outro alvo.</VEF_RangedDodgeChance.description>
+  <!-- EN: Heatstroke buildup multiplier -->
+  <VEF_HeatstrokeBuildupMultiplier.label>Multiplicador de insolação</VEF_HeatstrokeBuildupMultiplier.label>
+  <!-- EN: A factor on how fast heatstroke will be gained. -->
+  <VEF_HeatstrokeBuildupMultiplier.description>Fator da velocidade com que a insolação aumenta.</VEF_HeatstrokeBuildupMultiplier.description>
+  <!-- EN: animal product yield factor -->
+  <VEF_AnimalProductYieldFactor.label>fator de rendimento de produtos animais</VEF_AnimalProductYieldFactor.label>
+  <!-- EN: A multiplier on the amount of special animal products produced by this animal. -->
+  <VEF_AnimalProductYieldFactor.description>Multiplica a quantidade de produtos animais especiais que este animal produz.</VEF_AnimalProductYieldFactor.description>
+  <!-- EN: animal product interval factor -->
+  <VEF_AnimalProductIntervalFactor.label>fator de intervalo de produtos animais</VEF_AnimalProductIntervalFactor.label>
+  <!-- EN: A multiplier on the interval of time needed for this animal to produce special animal products. -->
+  <VEF_AnimalProductIntervalFactor.description>Multiplica o intervalo que este animal precisa para produzir produtos animais especiais.</VEF_AnimalProductIntervalFactor.description>
+  <!-- EN: base health multiplier -->
+  <VRE_HealthFromGenesScale.label>multiplicador de saúde base</VRE_HealthFromGenesScale.label>
+  <!-- EN: Base health multiplier of this animal due to its genes. -->
+  <VRE_HealthFromGenesScale.description>Multiplicador de saúde base deste animal por causa dos genes.</VRE_HealthFromGenesScale.description>
+</LanguageData>

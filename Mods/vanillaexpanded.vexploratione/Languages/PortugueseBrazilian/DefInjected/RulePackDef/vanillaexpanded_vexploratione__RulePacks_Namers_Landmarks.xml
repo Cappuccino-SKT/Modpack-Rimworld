@@ -1,0 +1,683 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <VEE_NamerLandmark_ImpactCrater.rulePack.rulesStrings>
+    <!-- EN: terrain_word(p=3)-&gt;impact crater -->
+    <li>terrain_word(p=3)-&gt;cratera de impacto</li>
+    <!-- EN: terrain_word-&gt;meteor crater -->
+    <li>terrain_word-&gt;cratera de meteoro</li>
+    <!-- EN: terrain_word-&gt;impact basin -->
+    <li>terrain_word-&gt;bacia de impacto</li>
+  </VEE_NamerLandmark_ImpactCrater.rulePack.rulesStrings>
+  <VEE_NamerLandmark_ResurgentCaldera.rulePack.rulesStrings>
+    <!-- EN: terrain_word(p=3)-&gt;resurgent caldera -->
+    <li>terrain_word(p=3)-&gt;caldeira ressurgente</li>
+    <!-- EN: terrain_word-&gt;uplifted caldera -->
+    <li>terrain_word-&gt;caldeira soerguida</li>
+    <!-- EN: terrain_word-&gt;central dome caldera -->
+    <li>terrain_word-&gt;caldeira de domo central</li>
+  </VEE_NamerLandmark_ResurgentCaldera.rulePack.rulesStrings>
+  <VEE_NamerLandmark_CraterLake.rulePack.rulesStrings>
+    <!-- EN: terrain_word(p=3)-&gt;crater lake -->
+    <li>terrain_word(p=3)-&gt;lago de cratera</li>
+    <!-- EN: terrain_word-&gt;caldera lake -->
+    <li>terrain_word-&gt;lago de caldeira</li>
+    <!-- EN: terrain_word-&gt;impact lake -->
+    <li>terrain_word-&gt;lago de impacto</li>
+  </VEE_NamerLandmark_CraterLake.rulePack.rulesStrings>
+  <VEE_NamerLandmark_ToxicCraterLake.rulePack.rulesStrings>
+    <!-- EN: terrain_word(p=3)-&gt;toxic crater lake -->
+    <li>terrain_word(p=3)-&gt;lago de cratera tóxico</li>
+    <!-- EN: terrain_word-&gt;poisoned caldera -->
+    <li>terrain_word-&gt;caldeira envenenada</li>
+    <!-- EN: terrain_word-&gt;toxic basin -->
+    <li>terrain_word-&gt;bacia tóxica</li>
+  </VEE_NamerLandmark_ToxicCraterLake.rulePack.rulesStrings>
+  <VEE_NamerLandmark_Volcano.rulePack.rulesStrings>
+    <!-- EN: terrain_word(p=3)-&gt;volcano -->
+    <li>terrain_word(p=3)-&gt;vulcão</li>
+    <!-- EN: terrain_word-&gt;lava caldera -->
+    <li>terrain_word-&gt;caldeira de lava</li>
+    <!-- EN: terrain_word-&gt;molten crater -->
+    <li>terrain_word-&gt;cratera derretida</li>
+  </VEE_NamerLandmark_Volcano.rulePack.rulesStrings>
+  <VEE_NamerLandmark_CalmBasin.rulePack.rulesStrings>
+    <!-- EN: terrain_word(p=3)-&gt;calm basin -->
+    <li>terrain_word(p=3)-&gt;bacia calma</li>
+    <!-- EN: terrain_word-&gt;silent basin -->
+    <li>terrain_word-&gt;bacia silenciosa</li>
+    <!-- EN: terrain_word-&gt;windless hollow -->
+    <li>terrain_word-&gt;vale sem vento</li>
+  </VEE_NamerLandmark_CalmBasin.rulePack.rulesStrings>
+  <VEE_NamerLandmark_LoneIsland.rulePack.rulesStrings>
+    <!-- EN: terrain_word(p=3)-&gt;lone island -->
+    <li>terrain_word(p=3)-&gt;ilha solitária</li>
+    <!-- EN: terrain_word-&gt;isolated isle -->
+    <li>terrain_word-&gt;ilhota isolada</li>
+    <!-- EN: terrain_word-&gt;detached island -->
+    <li>terrain_word-&gt;ilha apartada</li>
+    <!-- EN: terrain_word-&gt;solitary isle -->
+    <li>terrain_word-&gt;ilhota solitária</li>
+  </VEE_NamerLandmark_LoneIsland.rulePack.rulesStrings>
+  <VEE_NamerLandmark_DetachedIceberg.rulePack.rulesStrings>
+    <!-- EN: terrain_word-&gt;drift iceberg -->
+    <li>terrain_word-&gt;iceberg à deriva</li>
+    <!-- EN: terrain_word-&gt;pack ice mass -->
+    <li>terrain_word-&gt;banquisa</li>
+    <!-- EN: terrain_word-&gt;floating ice -->
+    <li>terrain_word-&gt;gelo flutuante</li>
+  </VEE_NamerLandmark_DetachedIceberg.rulePack.rulesStrings>
+  <VEE_NamerLandmark_IceAndFireIsland.rulePack.rulesStrings>
+    <!-- EN: terrain_word(p=3)-&gt;ice and fire island -->
+    <li>terrain_word(p=3)-&gt;ilha de gelo e fogo</li>
+    <!-- EN: terrain_word-&gt;frozen caldera -->
+    <li>terrain_word-&gt;caldeira congelada</li>
+    <!-- EN: terrain_word-&gt;glacial fire isle -->
+    <li>terrain_word-&gt;ilha de fogo glacial</li>
+    <!-- EN: terrain_word-&gt;polar volcano isle -->
+    <li>terrain_word-&gt;ilha do vulcão polar</li>
+  </VEE_NamerLandmark_IceAndFireIsland.rulePack.rulesStrings>
+  <VEE_NamerLandmark_CentralLakeIsland.rulePack.rulesStrings>
+    <!-- EN: terrain_word(p=3)-&gt;lake island -->
+    <li>terrain_word(p=3)-&gt;ilha de lago</li>
+    <!-- EN: terrain_word-&gt;isle of waters -->
+    <li>terrain_word-&gt;ilha das águas</li>
+    <!-- EN: terrain_word-&gt;ringed lake isle -->
+    <li>terrain_word-&gt;ilha de lago anelar</li>
+    <!-- EN: terrain_word-&gt;inland lake island -->
+    <li>terrain_word-&gt;ilha de lago interior</li>
+  </VEE_NamerLandmark_CentralLakeIsland.rulePack.rulesStrings>
+  <VEE_NamerLandmark_ResurgentIsland.rulePack.rulesStrings>
+    <!-- EN: terrain_word(p=3)-&gt;resurgent island -->
+    <li>terrain_word(p=3)-&gt;ilha ressurgente</li>
+    <!-- EN: terrain_word-&gt;uplifted island -->
+    <li>terrain_word-&gt;ilha soerguida</li>
+    <!-- EN: terrain_word-&gt;central peak isle -->
+    <li>terrain_word-&gt;ilha de pico central</li>
+    <!-- EN: terrain_word-&gt;emergent island -->
+    <li>terrain_word-&gt;ilha emergente</li>
+  </VEE_NamerLandmark_ResurgentIsland.rulePack.rulesStrings>
+  <VEE_NamerLandmark_SaltPlains.rulePack.rulesStrings>
+    <!-- EN: terrain_word-&gt;salt plain -->
+    <li>terrain_word-&gt;planície de sal</li>
+    <!-- EN: terrain_word-&gt;desiccated ocean -->
+    <li>terrain_word-&gt;oceano ressecado</li>
+    <!-- EN: terrain_word-&gt;evaporation plain -->
+    <li>terrain_word-&gt;planície de evaporação</li>
+    <!-- EN: terrain_word-&gt;saline flats -->
+    <li>terrain_word-&gt;salinas</li>
+    <!-- EN: terrain_word-&gt;white barrens -->
+    <li>terrain_word-&gt;ermos brancos</li>
+  </VEE_NamerLandmark_SaltPlains.rulePack.rulesStrings>
+  <VEE_NamerLandmark_Ridges.rulePack.rulesStrings>
+    <!-- EN: terrain_word(p=4)-&gt;ridge -->
+    <li>terrain_word(p=4)-&gt;crista</li>
+    <!-- EN: terrain_word-&gt;crest -->
+    <li>terrain_word-&gt;cumeada</li>
+    <!-- EN: terrain_word-&gt;spine -->
+    <li>terrain_word-&gt;espinhaço</li>
+  </VEE_NamerLandmark_Ridges.rulePack.rulesStrings>
+  <VEE_NamerLandmark_DryRiver.rulePack.rulesStrings>
+    <!-- EN: terrain_word-&gt;dry river -->
+    <li>terrain_word-&gt;rio seco</li>
+    <!-- EN: terrain_word-&gt;sand river -->
+    <li>terrain_word-&gt;rio de areia</li>
+    <!-- EN: terrain_word-&gt;barren river -->
+    <li>terrain_word-&gt;rio estéril</li>
+  </VEE_NamerLandmark_DryRiver.rulePack.rulesStrings>
+  <VEE_NamerLandmark_Mangrove.rulePack.rulesStrings>
+    <!-- EN: r_name(p=0.2)-&gt;[NamePerson]'s [terrain_word] -->
+    <li>r_name(p=0.2)-&gt;[terrain_word] de [NamePerson]</li>
+    <!-- EN: terrain_word(p=2)-&gt;mangrove -->
+    <li>terrain_word(p=2)-&gt;manguezal</li>
+    <!-- EN: terrain_word-&gt;tidal forest -->
+    <li>terrain_word-&gt;floresta de maré</li>
+    <!-- EN: terrain_word-&gt;mangal -->
+    <li>terrain_word-&gt;mangue</li>
+    <!-- EN: terrain_word-&gt;brackish swamp -->
+    <li>terrain_word-&gt;pântano salobro</li>
+    <!-- EN: terrain_word-&gt;saltmire thicket -->
+    <li>terrain_word-&gt;matagal salgado</li>
+    <!-- EN: terrain_word-&gt;saltwater forest -->
+    <li>terrain_word-&gt;floresta de água salgada</li>
+  </VEE_NamerLandmark_Mangrove.rulePack.rulesStrings>
+  <VEE_NamerLandmark_Canyons.rulePack.rulesStrings>
+    <!-- EN: r_name(p=0.2)-&gt;[NamePerson]'s [terrain_word] -->
+    <li>r_name(p=0.2)-&gt;[terrain_word] de [NamePerson]</li>
+    <!-- EN: terrain_word(p=2)-&gt;canyons -->
+    <li>terrain_word(p=2)-&gt;cânions</li>
+  </VEE_NamerLandmark_Canyons.rulePack.rulesStrings>
+  <VEE_NamerLandmark_JaggedRocks.rulePack.rulesStrings>
+    <!-- EN: r_name(p=0.2)-&gt;[NamePerson]'s [terrain_word] -->
+    <li>r_name(p=0.2)-&gt;[terrain_word] de [NamePerson]</li>
+    <!-- EN: terrain_word(p=2)-&gt;jagged rocks -->
+    <li>terrain_word(p=2)-&gt;rochas pontiagudas</li>
+    <!-- EN: terrain_word-&gt;jagged ridges -->
+    <li>terrain_word-&gt;cristas pontiagudas</li>
+  </VEE_NamerLandmark_JaggedRocks.rulePack.rulesStrings>
+  <VEE_NamerLandmark_CoralReef.rulePack.rulesStrings>
+    <!-- EN: r_name(p=0.2)-&gt;[NamePerson]'s [terrain_word] -->
+    <li>r_name(p=0.2)-&gt;[terrain_word] de [NamePerson]</li>
+    <!-- EN: terrain_word(p=2)-&gt;coral reef -->
+    <li>terrain_word(p=2)-&gt;recife de coral</li>
+    <!-- EN: terrain_word-&gt;coral shoal -->
+    <li>terrain_word-&gt;baixio de coral</li>
+    <!-- EN: terrain_word-&gt;reef formation -->
+    <li>terrain_word-&gt;formação de recife</li>
+    <!-- EN: terrain_word-&gt;barrier reef -->
+    <li>terrain_word-&gt;barreira de coral</li>
+    <!-- EN: terrain_word-&gt;fringing reef -->
+    <li>terrain_word-&gt;recife de franja</li>
+  </VEE_NamerLandmark_CoralReef.rulePack.rulesStrings>
+  <VEE_NamerLandmark_DustBowl.rulePack.rulesStrings>
+    <!-- EN: r_name(p=0.2)-&gt;[NamePerson]'s [terrain_word] -->
+    <li>r_name(p=0.2)-&gt;[terrain_word] de [NamePerson]</li>
+    <!-- EN: terrain_word(p=2)-&gt;dust bowl -->
+    <li>terrain_word(p=2)-&gt;bacia de poeira</li>
+    <!-- EN: terrain_word-&gt;depression -->
+    <li>terrain_word-&gt;depressão</li>
+    <!-- EN: terrain_word-&gt;blasted expanse -->
+    <li>terrain_word-&gt;vastidão devastada</li>
+    <!-- EN: terrain_word-&gt;parched barrens -->
+    <li>terrain_word-&gt;ermos ressecados</li>
+    <!-- EN: terrain_word-&gt;scorched dustplain -->
+    <li>terrain_word-&gt;planície de poeira escaldada</li>
+  </VEE_NamerLandmark_DustBowl.rulePack.rulesStrings>
+  <VEE_NamerLandmark_SulfuricLake.rulePack.rulesStrings>
+    <!-- EN: r_name(p=0.2)-&gt;[NamePerson]'s [terrain_word] -->
+    <li>r_name(p=0.2)-&gt;[terrain_word] de [NamePerson]</li>
+    <!-- EN: terrain_word(p=2)-&gt;sulfuric lake -->
+    <li>terrain_word(p=2)-&gt;lago sulfúrico</li>
+    <!-- EN: terrain_word-&gt;acidic basin -->
+    <li>terrain_word-&gt;bacia ácida</li>
+    <!-- EN: terrain_word-&gt;sulfur spring -->
+    <li>terrain_word-&gt;fonte de enxofre</li>
+    <!-- EN: terrain_word-&gt;stinging waters -->
+    <li>terrain_word-&gt;águas que ardem</li>
+    <!-- EN: terrain_word-&gt;stinkpool -->
+    <li>terrain_word-&gt;poça fedida</li>
+    <!-- EN: terrain_word-&gt;yellowmire -->
+    <li>terrain_word-&gt;brejo amarelo</li>
+  </VEE_NamerLandmark_SulfuricLake.rulePack.rulesStrings>
+  <VEE_NamerLandmark_SulfuricRiver.rulePack.rulesStrings>
+    <!-- EN: r_name(p=0.2)-&gt;[NamePerson]'s [terrain_word] -->
+    <li>r_name(p=0.2)-&gt;[terrain_word] de [NamePerson]</li>
+    <!-- EN: terrain_word(p=2)-&gt;sulfuric river -->
+    <li>terrain_word(p=2)-&gt;rio sulfúrico</li>
+    <!-- EN: terrain_word-&gt;acidic stream -->
+    <li>terrain_word-&gt;córrego ácido</li>
+    <!-- EN: terrain_word-&gt;sulfur flow -->
+    <li>terrain_word-&gt;correnteza de enxofre</li>
+    <!-- EN: terrain_word-&gt;stinging waters -->
+    <li>terrain_word-&gt;águas que ardem</li>
+    <!-- EN: terrain_word-&gt;reeking river -->
+    <li>terrain_word-&gt;rio fedorento</li>
+    <!-- EN: terrain_word-&gt;yellow run -->
+    <li>terrain_word-&gt;corrente amarela</li>
+  </VEE_NamerLandmark_SulfuricRiver.rulePack.rulesStrings>
+  <VEE_NamerLandmark_BurnedForest.rulePack.rulesStrings>
+    <!-- EN: r_name(p=0.2)-&gt;[NamePerson]'s [terrain_word] -->
+    <li>r_name(p=0.2)-&gt;[terrain_word] de [NamePerson]</li>
+    <!-- EN: terrain_word(p=2)-&gt;burned forest -->
+    <li>terrain_word(p=2)-&gt;floresta queimada</li>
+    <!-- EN: terrain_word-&gt;charred forest -->
+    <li>terrain_word-&gt;floresta carbonizada</li>
+    <!-- EN: terrain_word-&gt;burnt woodland -->
+    <li>terrain_word-&gt;mata queimada</li>
+    <!-- EN: terrain_word-&gt;scorched grove -->
+    <li>terrain_word-&gt;bosque chamuscado</li>
+  </VEE_NamerLandmark_BurnedForest.rulePack.rulesStrings>
+  <VEE_NamerLandmark_BloomingFields.rulePack.rulesStrings>
+    <!-- EN: r_name(p=0.2)-&gt;[NamePerson]'s [terrain_word] -->
+    <li>r_name(p=0.2)-&gt;[terrain_word] de [NamePerson]</li>
+    <!-- EN: terrain_word(p=2)-&gt;wildflower meadow -->
+    <li>terrain_word(p=2)-&gt;prado de flores silvestres</li>
+    <!-- EN: terrain_word-&gt;blooming field -->
+    <li>terrain_word-&gt;campo florido</li>
+    <!-- EN: terrain_word-&gt;floral plain -->
+    <li>terrain_word-&gt;planície florida</li>
+    <!-- EN: terrain_word-&gt;petal-covered grasslands -->
+    <li>terrain_word-&gt;campos cobertos de pétalas</li>
+  </VEE_NamerLandmark_BloomingFields.rulePack.rulesStrings>
+  <VEE_NamerLandmark_CactusFields.rulePack.rulesStrings>
+    <!-- EN: r_name(p=0.2)-&gt;[NamePerson]'s [terrain_word] -->
+    <li>r_name(p=0.2)-&gt;[terrain_word] de [NamePerson]</li>
+    <!-- EN: terrain_word(p=2)-&gt;cactus field -->
+    <li>terrain_word(p=2)-&gt;campo de cactos</li>
+    <!-- EN: terrain_word-&gt;xerophile garden -->
+    <li>terrain_word-&gt;jardim xerófilo</li>
+    <!-- EN: terrain_word-&gt;cactus plain -->
+    <li>terrain_word-&gt;planície de cactos</li>
+    <!-- EN: terrain_word-&gt;spinebrush flats -->
+    <li>terrain_word-&gt;chapada de espinheiros</li>
+    <!-- EN: terrain_word-&gt;thorned lowlands -->
+    <li>terrain_word-&gt;baixada espinhenta</li>
+    <!-- EN: terrain_word-&gt;prickled desert -->
+    <li>terrain_word-&gt;deserto espinhoso</li>
+  </VEE_NamerLandmark_CactusFields.rulePack.rulesStrings>
+  <VEE_NamerLandmark_FloodPlains.rulePack.rulesStrings>
+    <!-- EN: r_name(p=0.2)-&gt;[NamePerson]'s [terrain_word] -->
+    <li>r_name(p=0.2)-&gt;[terrain_word] de [NamePerson]</li>
+    <!-- EN: terrain_word(p=2)-&gt;flood plain -->
+    <li>terrain_word(p=2)-&gt;várzea</li>
+    <!-- EN: terrain_word-&gt;river floodlands -->
+    <li>terrain_word-&gt;terras alagáveis do rio</li>
+    <!-- EN: terrain_word-&gt;alluvial plain -->
+    <li>terrain_word-&gt;planície aluvial</li>
+    <!-- EN: terrain_word-&gt;seasonal floodplain -->
+    <li>terrain_word-&gt;várzea sazonal</li>
+    <!-- EN: terrain_word-&gt;silt-rich lowlands -->
+    <li>terrain_word-&gt;baixada de lodo</li>
+  </VEE_NamerLandmark_FloodPlains.rulePack.rulesStrings>
+  <VEE_NamerLandmark_ContaminatedReservoir.rulePack.rulesStrings>
+    <!-- EN: r_name(p=0.2)-&gt;[NamePerson]'s [terrain_word] -->
+    <li>r_name(p=0.2)-&gt;[terrain_word] de [NamePerson]</li>
+    <!-- EN: terrain_word(p=2)-&gt;contaminated reservoir -->
+    <li>terrain_word(p=2)-&gt;reservatório contaminado</li>
+    <!-- EN: terrain_word-&gt;irradiated lake -->
+    <li>terrain_word-&gt;lago irradiado</li>
+    <!-- EN: terrain_word-&gt;radioactive waters -->
+    <li>terrain_word-&gt;águas radioativas</li>
+    <!-- EN: terrain_word-&gt;glowwater basin -->
+    <li>terrain_word-&gt;bacia de água brilhante</li>
+    <!-- EN: terrain_word-&gt;radioactive lakebed -->
+    <li>terrain_word-&gt;leito de lago radioativo</li>
+  </VEE_NamerLandmark_ContaminatedReservoir.rulePack.rulesStrings>
+  <VEE_NamerLandmark_ContaminatedRiver.rulePack.rulesStrings>
+    <!-- EN: r_name(p=0.2)-&gt;[NamePerson]'s [terrain_word] -->
+    <li>r_name(p=0.2)-&gt;[terrain_word] de [NamePerson]</li>
+    <!-- EN: terrain_word(p=2)-&gt;contaminated river -->
+    <li>terrain_word(p=2)-&gt;rio contaminado</li>
+    <!-- EN: terrain_word-&gt;irradiated river -->
+    <li>terrain_word-&gt;rio irradiado</li>
+    <!-- EN: terrain_word-&gt;radioactive waters -->
+    <li>terrain_word-&gt;águas radioativas</li>
+    <!-- EN: terrain_word-&gt;glowwater stream -->
+    <li>terrain_word-&gt;córrego de água brilhante</li>
+    <!-- EN: terrain_word-&gt;radioactive riverbed -->
+    <li>terrain_word-&gt;leito de rio radioativo</li>
+  </VEE_NamerLandmark_ContaminatedRiver.rulePack.rulesStrings>
+  <VEE_NamerLandmark_ContaminatedCoast.rulePack.rulesStrings>
+    <!-- EN: r_name(p=0.2)-&gt;[NamePerson]'s [terrain_word] -->
+    <li>r_name(p=0.2)-&gt;[terrain_word] de [NamePerson]</li>
+    <!-- EN: terrain_word(p=2)-&gt;contaminated coast -->
+    <li>terrain_word(p=2)-&gt;costa contaminada</li>
+    <!-- EN: terrain_word-&gt;irradiated shoreline -->
+    <li>terrain_word-&gt;litoral irradiado</li>
+    <!-- EN: terrain_word-&gt;radioactive shallows -->
+    <li>terrain_word-&gt;baixios radioativos</li>
+    <!-- EN: terrain_word-&gt;glowwater coast -->
+    <li>terrain_word-&gt;costa de água brilhante</li>
+    <!-- EN: terrain_word-&gt;radioactive beachfront -->
+    <li>terrain_word-&gt;orla radioativa</li>
+  </VEE_NamerLandmark_ContaminatedCoast.rulePack.rulesStrings>
+  <VEE_NamerLandmark_QuicksandPits.rulePack.rulesStrings>
+    <!-- EN: terrain_word(p=4)-&gt;quicksand pits -->
+    <li>terrain_word(p=4)-&gt;poços de areia movediça</li>
+    <!-- EN: terrain_word-&gt;sinking sands -->
+    <li>terrain_word-&gt;areias que engolem</li>
+    <!-- EN: terrain_word-&gt;loose earth pockets -->
+    <li>terrain_word-&gt;bolsões de terra fofa</li>
+    <!-- EN: terrain_word-&gt;unstable ground -->
+    <li>terrain_word-&gt;chão instável</li>
+  </VEE_NamerLandmark_QuicksandPits.rulePack.rulesStrings>
+  <VEE_NamerLandmark_AbandonedFarmlands.rulePack.rulesStrings>
+    <!-- EN: r_name(p=0.2)-&gt;[NamePerson]'s [terrain_word] -->
+    <li>r_name(p=0.2)-&gt;[terrain_word] de [NamePerson]</li>
+    <!-- EN: terrain_word(p=2)-&gt;abandoned farmlands -->
+    <li>terrain_word(p=2)-&gt;lavouras abandonadas</li>
+    <!-- EN: terrain_word-&gt;forgotten fields -->
+    <li>terrain_word-&gt;campos esquecidos</li>
+    <!-- EN: terrain_word-&gt;derelict croplands -->
+    <li>terrain_word-&gt;plantações largadas</li>
+    <!-- EN: terrain_word-&gt;overgrown farms -->
+    <li>terrain_word-&gt;fazendas tomadas pelo mato</li>
+    <!-- EN: terrain_word-&gt;fallow plains -->
+    <li>terrain_word-&gt;planícies em pousio</li>
+  </VEE_NamerLandmark_AbandonedFarmlands.rulePack.rulesStrings>
+  <VEE_NamerLandmark_DriftwoodShore.rulePack.rulesStrings>
+    <!-- EN: r_name(p=0.2)-&gt;[NamePerson]'s [terrain_word] -->
+    <li>r_name(p=0.2)-&gt;[terrain_word] de [NamePerson]</li>
+    <!-- EN: terrain_word(p=2)-&gt;driftwood shore -->
+    <li>terrain_word(p=2)-&gt;praia de troncos</li>
+    <!-- EN: terrain_word-&gt;driftwood coast -->
+    <li>terrain_word-&gt;costa de troncos</li>
+    <!-- EN: terrain_word-&gt;wreckwood beach -->
+    <li>terrain_word-&gt;praia de destroços de madeira</li>
+    <!-- EN: terrain_word-&gt;tidal woodline -->
+    <li>terrain_word-&gt;linha de madeira da maré</li>
+    <!-- EN: terrain_word-&gt;bleached timber shore -->
+    <li>terrain_word-&gt;praia de madeira descorada</li>
+  </VEE_NamerLandmark_DriftwoodShore.rulePack.rulesStrings>
+  <VEE_NamerLandmark_AlluvialFan.rulePack.rulesStrings>
+    <!-- EN: r_name(p=0.2)-&gt;[NamePerson]'s [terrain_word] -->
+    <li>r_name(p=0.2)-&gt;[terrain_word] de [NamePerson]</li>
+    <!-- EN: terrain_word(p=2)-&gt;alluvial fan -->
+    <li>terrain_word(p=2)-&gt;leque aluvial</li>
+    <!-- EN: terrain_word-&gt;sediment fan -->
+    <li>terrain_word-&gt;leque de sedimentos</li>
+    <!-- EN: terrain_word-&gt;river spillplain -->
+    <li>terrain_word-&gt;planície de transbordo</li>
+    <!-- EN: terrain_word-&gt;depositional flats -->
+    <li>terrain_word-&gt;planura de depósito</li>
+  </VEE_NamerLandmark_AlluvialFan.rulePack.rulesStrings>
+  <VEE_NamerLandmark_RelictDelta.rulePack.rulesStrings>
+    <!-- EN: terrain_word(p=2)-&gt;relict delta -->
+    <li>terrain_word(p=2)-&gt;delta fóssil</li>
+    <!-- EN: terrain_word-&gt;abandoned delta -->
+    <li>terrain_word-&gt;delta abandonado</li>
+    <!-- EN: terrain_word-&gt;desiccated delta -->
+    <li>terrain_word-&gt;delta ressecado</li>
+    <!-- EN: terrain_word-&gt;silt delta -->
+    <li>terrain_word-&gt;delta de lodo</li>
+    <!-- EN: terrain_word-&gt;braided flats -->
+    <li>terrain_word-&gt;planura entrelaçada</li>
+  </VEE_NamerLandmark_RelictDelta.rulePack.rulesStrings>
+  <VEE_NamerLandmark_StagnantRivulet.rulePack.rulesStrings>
+    <!-- EN: terrain_word(p=2)-&gt;stagnant rivulet -->
+    <li>terrain_word(p=2)-&gt;riacho parado</li>
+    <!-- EN: terrain_word-&gt;stilled stream -->
+    <li>terrain_word-&gt;córrego imóvel</li>
+    <!-- EN: terrain_word-&gt;sluggish rivulet -->
+    <li>terrain_word-&gt;riacho preguiçoso</li>
+    <!-- EN: terrain_word-&gt;standing channel -->
+    <li>terrain_word-&gt;canal de água parada</li>
+    <!-- EN: terrain_word-&gt;silted creek -->
+    <li>terrain_word-&gt;arroio assoreado</li>
+  </VEE_NamerLandmark_StagnantRivulet.rulePack.rulesStrings>
+  <VEE_NamerLandmark_AnimaForest.rulePack.rulesStrings>
+    <!-- EN: r_name(p=0.2)-&gt;[NamePerson]'s [terrain_word] -->
+    <li>r_name(p=0.2)-&gt;[terrain_word] de [NamePerson]</li>
+    <!-- EN: terrain_word(p=3)-&gt;anima forest -->
+    <li>terrain_word(p=3)-&gt;floresta de anima</li>
+    <!-- EN: terrain_word(p=2)-&gt;anima woods -->
+    <li>terrain_word(p=2)-&gt;mata de anima</li>
+    <!-- EN: terrain_word-&gt;psychoactive forest -->
+    <li>terrain_word-&gt;floresta psicoativa</li>
+    <!-- EN: terrain_word-&gt;glowleaf grove -->
+    <li>terrain_word-&gt;bosque de folhas brilhantes</li>
+    <!-- EN: terrain_word-&gt;whispering anima trees -->
+    <li>terrain_word-&gt;árvores de anima sussurrantes</li>
+    <!-- EN: terrain_word-&gt;lucent woodland -->
+    <li>terrain_word-&gt;mata luzente</li>
+  </VEE_NamerLandmark_AnimaForest.rulePack.rulesStrings>
+  <VEE_NamerLandmark_AnimaCoast.rulePack.rulesStrings>
+    <!-- EN: r_name(p=0.2)-&gt;[NamePerson]'s [terrain_word] -->
+    <li>r_name(p=0.2)-&gt;[terrain_word] de [NamePerson]</li>
+    <!-- EN: terrain_word(p=3)-&gt;anima coast -->
+    <li>terrain_word(p=3)-&gt;costa de anima</li>
+    <!-- EN: terrain_word-&gt;anima shoreline -->
+    <li>terrain_word-&gt;litoral de anima</li>
+    <!-- EN: terrain_word-&gt;spirit-touched coast -->
+    <li>terrain_word-&gt;costa tocada pelos espíritos</li>
+    <!-- EN: terrain_word-&gt;anima forest shore -->
+    <li>terrain_word-&gt;praia da floresta de anima</li>
+    <!-- EN: terrain_word-&gt;glowing coastal grove -->
+    <li>terrain_word-&gt;bosque costeiro brilhante</li>
+  </VEE_NamerLandmark_AnimaCoast.rulePack.rulesStrings>
+  <VEE_NamerLandmark_CradleOfLife.rulePack.rulesStrings>
+    <!-- EN: r_name(p=0.2)-&gt;[NamePerson]'s [terrain_word] -->
+    <li>r_name(p=0.2)-&gt;[terrain_word] de [NamePerson]</li>
+    <!-- EN: terrain_word(p=3)-&gt;cradle of life -->
+    <li>terrain_word(p=3)-&gt;berço da vida</li>
+    <!-- EN: terrain_word(p=2)-&gt;life basin -->
+    <li>terrain_word(p=2)-&gt;bacia da vida</li>
+    <!-- EN: terrain_word-&gt;verdant cradle -->
+    <li>terrain_word-&gt;berço verdejante</li>
+    <!-- EN: terrain_word-&gt;genesis hollow -->
+    <li>terrain_word-&gt;vale da gênese</li>
+    <!-- EN: terrain_word-&gt;primeval basin -->
+    <li>terrain_word-&gt;bacia primordial</li>
+  </VEE_NamerLandmark_CradleOfLife.rulePack.rulesStrings>
+  <VEE_NamerLandmark_WindBlownPlateau.rulePack.rulesStrings>
+    <!-- EN: terrain_word-&gt;wind-blown plateau -->
+    <li>terrain_word-&gt;planalto varrido pelo vento</li>
+    <!-- EN: terrain_word-&gt;windswept mesa -->
+    <li>terrain_word-&gt;mesa açoitada pelo vento</li>
+    <!-- EN: terrain_word-&gt;exposed rise -->
+    <li>terrain_word-&gt;elevação exposta</li>
+    <!-- EN: terrain_word-&gt;gusted tableland -->
+    <li>terrain_word-&gt;chapada de rajadas</li>
+    <!-- EN: terrain_word-&gt;barren butte -->
+    <li>terrain_word-&gt;morro estéril</li>
+  </VEE_NamerLandmark_WindBlownPlateau.rulePack.rulesStrings>
+  <VEE_NamerLandmark_StoneForest.rulePack.rulesStrings>
+    <!-- EN: terrain_word-&gt;jagged stone grove -->
+    <li>terrain_word-&gt;bosque de pedras pontudas</li>
+    <!-- EN: terrain_word-&gt;pillar-strewn expanse -->
+    <li>terrain_word-&gt;vastidão de pilares</li>
+    <!-- EN: terrain_word-&gt;rocky spire field -->
+    <li>terrain_word-&gt;campo de agulhas rochosas</li>
+    <!-- EN: terrain_word-&gt;shattered monoliths -->
+    <li>terrain_word-&gt;monólitos partidos</li>
+    <!-- EN: terrain_word-&gt;craggy stone thicket -->
+    <li>terrain_word-&gt;matagal de pedra escarpada</li>
+  </VEE_NamerLandmark_StoneForest.rulePack.rulesStrings>
+  <VEE_NamerLandmark_GravelBeach.rulePack.rulesStrings>
+    <!-- EN: terrain_word-&gt;gravel shore -->
+    <li>terrain_word-&gt;praia de cascalho</li>
+    <!-- EN: terrain_word-&gt;shingle coast -->
+    <li>terrain_word-&gt;costa de seixos</li>
+    <!-- EN: terrain_word-&gt;stone-littered beach -->
+    <li>terrain_word-&gt;praia cheia de pedras</li>
+    <!-- EN: terrain_word-&gt;pebble strand -->
+    <li>terrain_word-&gt;orla de seixos</li>
+    <!-- EN: terrain_word-&gt;rocky shoreline -->
+    <li>terrain_word-&gt;litoral rochoso</li>
+  </VEE_NamerLandmark_GravelBeach.rulePack.rulesStrings>
+  <VEE_NamerLandmark_AuburnForest.rulePack.rulesStrings>
+    <!-- EN: terrain_word-&gt;auburn woods -->
+    <li>terrain_word-&gt;mata acobreada</li>
+    <!-- EN: terrain_word-&gt;auburn forest -->
+    <li>terrain_word-&gt;floresta acobreada</li>
+    <!-- EN: terrain_word-&gt;auburn grove -->
+    <li>terrain_word-&gt;bosque acobreado</li>
+    <!-- EN: terrain_word-&gt;auburn woodland -->
+    <li>terrain_word-&gt;arvoredo acobreado</li>
+    <!-- EN: terrain_word-&gt;auburn thicket -->
+    <li>terrain_word-&gt;matagal acobreado</li>
+  </VEE_NamerLandmark_AuburnForest.rulePack.rulesStrings>
+  <VEE_NamerLandmark_Cenotes.rulePack.rulesStrings>
+    <!-- EN: terrain_word-&gt;cenote field -->
+    <li>terrain_word-&gt;campo de cenotes</li>
+    <!-- EN: terrain_word-&gt;cenote lakes -->
+    <li>terrain_word-&gt;lagos de cenote</li>
+    <!-- EN: terrain_word-&gt;collapsed limestone pools -->
+    <li>terrain_word-&gt;poços de calcário desabado</li>
+    <!-- EN: terrain_word-&gt;water-filled cenotes -->
+    <li>terrain_word-&gt;cenotes cheios de água</li>
+    <!-- EN: terrain_word-&gt;karst hollows -->
+    <li>terrain_word-&gt;depressões cársticas</li>
+  </VEE_NamerLandmark_Cenotes.rulePack.rulesStrings>
+  <VEE_NamerLandmark_BasaltCape.rulePack.rulesStrings>
+    <!-- EN: terrain_word-&gt;basalt cape -->
+    <li>terrain_word-&gt;cabo de basalto</li>
+    <!-- EN: terrain_word-&gt;basalt headland -->
+    <li>terrain_word-&gt;promontório de basalto</li>
+    <!-- EN: terrain_word-&gt;black stone promontory -->
+    <li>terrain_word-&gt;promontório de pedra negra</li>
+    <!-- EN: terrain_word-&gt;volcanic headland -->
+    <li>terrain_word-&gt;cabo vulcânico</li>
+    <!-- EN: terrain_word-&gt;basalt cliffs -->
+    <li>terrain_word-&gt;falésias de basalto</li>
+  </VEE_NamerLandmark_BasaltCape.rulePack.rulesStrings>
+  <VEE_NamerLandmark_RedSandDesert.rulePack.rulesStrings>
+    <!-- EN: terrain_word-&gt;red sand desert -->
+    <li>terrain_word-&gt;deserto de areia vermelha</li>
+    <!-- EN: terrain_word-&gt;crimson desert -->
+    <li>terrain_word-&gt;deserto carmim</li>
+    <!-- EN: terrain_word-&gt;rust-colored desert -->
+    <li>terrain_word-&gt;deserto cor de ferrugem</li>
+    <!-- EN: terrain_word-&gt;iron-rich desert -->
+    <li>terrain_word-&gt;deserto rico em ferro</li>
+  </VEE_NamerLandmark_RedSandDesert.rulePack.rulesStrings>
+  <VEE_NamerLandmark_VolcanicSandDesert.rulePack.rulesStrings>
+    <!-- EN: terrain_word-&gt;volcanic sand desert -->
+    <li>terrain_word-&gt;deserto de areia vulcânica</li>
+    <!-- EN: terrain_word-&gt;black sand wastes -->
+    <li>terrain_word-&gt;ermos de areia preta</li>
+    <!-- EN: terrain_word-&gt;black desert -->
+    <li>terrain_word-&gt;deserto negro</li>
+    <!-- EN: terrain_word-&gt;obsidian sands -->
+    <li>terrain_word-&gt;areias de obsidiana</li>
+  </VEE_NamerLandmark_VolcanicSandDesert.rulePack.rulesStrings>
+  <VEE_NamerLandmark_PermafrostBasin.rulePack.rulesStrings>
+    <!-- EN: terrain_word-&gt;permafrost basin -->
+    <li>terrain_word-&gt;bacia de permafrost</li>
+    <!-- EN: terrain_word-&gt;frozen lowland -->
+    <li>terrain_word-&gt;baixada congelada</li>
+    <!-- EN: terrain_word-&gt;ice-locked tundra -->
+    <li>terrain_word-&gt;tundra presa no gelo</li>
+    <!-- EN: terrain_word-&gt;frostbound basin -->
+    <li>terrain_word-&gt;bacia de geada</li>
+    <!-- EN: terrain_word-&gt;perennial frost tundra -->
+    <li>terrain_word-&gt;tundra de geada perene</li>
+  </VEE_NamerLandmark_PermafrostBasin.rulePack.rulesStrings>
+  <VEE_NamerLandmark_QuicksandDunes.rulePack.rulesStrings>
+    <!-- EN: terrain_word(p=4)-&gt;quicksand dunes -->
+    <li>terrain_word(p=4)-&gt;dunas de areia movediça</li>
+    <!-- EN: terrain_word-&gt;sinking dunes -->
+    <li>terrain_word-&gt;dunas que engolem</li>
+    <!-- EN: terrain_word-&gt;loose earth dunes -->
+    <li>terrain_word-&gt;dunas de terra fofa</li>
+    <!-- EN: terrain_word-&gt;unstable dunes -->
+    <li>terrain_word-&gt;dunas instáveis</li>
+  </VEE_NamerLandmark_QuicksandDunes.rulePack.rulesStrings>
+  <VEE_NamerLandmark_PebbleDunes.rulePack.rulesStrings>
+    <!-- EN: terrain_word-&gt;pebble dunes -->
+    <li>terrain_word-&gt;dunas de seixos</li>
+    <!-- EN: terrain_word-&gt;shingle dunes -->
+    <li>terrain_word-&gt;dunas de pedregulho</li>
+    <!-- EN: terrain_word-&gt;gravel drifts -->
+    <li>terrain_word-&gt;montes de cascalho</li>
+    <!-- EN: terrain_word-&gt;stone-swept ridges -->
+    <li>terrain_word-&gt;cristas varridas de pedra</li>
+    <!-- EN: terrain_word-&gt;rolling pebble fields -->
+    <li>terrain_word-&gt;campos ondulados de seixos</li>
+  </VEE_NamerLandmark_PebbleDunes.rulePack.rulesStrings>
+  <VEE_NamerLandmark_LittoralDunes.rulePack.rulesStrings>
+    <!-- EN: terrain_word-&gt;littoral dunes -->
+    <li>terrain_word-&gt;dunas litorâneas</li>
+    <!-- EN: terrain_word-&gt;coastal sand dunes -->
+    <li>terrain_word-&gt;dunas costeiras</li>
+    <!-- EN: terrain_word-&gt;shoreline dune fields -->
+    <li>terrain_word-&gt;campos de dunas da orla</li>
+    <!-- EN: terrain_word-&gt;wind-sculpted coast -->
+    <li>terrain_word-&gt;costa esculpida pelo vento</li>
+    <!-- EN: terrain_word-&gt;beach dune ridges -->
+    <li>terrain_word-&gt;cristas de dunas da praia</li>
+  </VEE_NamerLandmark_LittoralDunes.rulePack.rulesStrings>
+  <VEE_NamerLandmark_RisingWaters.rulePack.rulesStrings>
+    <!-- EN: terrain_word-&gt;rising waters -->
+    <li>terrain_word-&gt;águas subindo</li>
+    <!-- EN: terrain_word-&gt;tidal flats -->
+    <li>terrain_word-&gt;planícies de maré</li>
+    <!-- EN: terrain_word-&gt;flooded lowlands -->
+    <li>terrain_word-&gt;baixadas alagadas</li>
+    <!-- EN: terrain_word-&gt;tidal floodplain -->
+    <li>terrain_word-&gt;várzea de maré</li>
+    <!-- EN: terrain_word-&gt;inundated coast -->
+    <li>terrain_word-&gt;costa inundada</li>
+  </VEE_NamerLandmark_RisingWaters.rulePack.rulesStrings>
+  <VEE_NamerLandmark_FleshPits.rulePack.rulesStrings>
+    <!-- EN: terrain_word-&gt;flesh pits -->
+    <li>terrain_word-&gt;poços de carne</li>
+    <!-- EN: terrain_word-&gt;anomalous caverns -->
+    <li>terrain_word-&gt;cavernas anômalas</li>
+    <!-- EN: terrain_word-&gt;flesh pit expanse -->
+    <li>terrain_word-&gt;vastidão de poços de carne</li>
+  </VEE_NamerLandmark_FleshPits.rulePack.rulesStrings>
+  <VEE_NamerLandmark_TemperateGrasslands.rulePack.rulesStrings>
+    <!-- EN: terrain_word-&gt;temperate grasslands -->
+    <li>terrain_word-&gt;campos temperados</li>
+    <!-- EN: terrain_word-&gt;open plains -->
+    <li>terrain_word-&gt;planícies abertas</li>
+    <!-- EN: terrain_word-&gt;rolling grasslands -->
+    <li>terrain_word-&gt;campos ondulados</li>
+    <!-- EN: terrain_word-&gt;wind-swept prairie -->
+    <li>terrain_word-&gt;pradaria varrida pelo vento</li>
+    <!-- EN: terrain_word-&gt;broad meadowlands -->
+    <li>terrain_word-&gt;prados amplos</li>
+  </VEE_NamerLandmark_TemperateGrasslands.rulePack.rulesStrings>
+  <VEE_NamerLandmark_IceSpires.rulePack.rulesStrings>
+    <!-- EN: terrain_word-&gt;ice spires -->
+    <li>terrain_word-&gt;pináculos de gelo</li>
+    <!-- EN: terrain_word-&gt;frozen spire field -->
+    <li>terrain_word-&gt;campo de agulhas congeladas</li>
+    <!-- EN: terrain_word-&gt;glacial pinnacles -->
+    <li>terrain_word-&gt;pináculos glaciais</li>
+    <!-- EN: terrain_word-&gt;ice needle plains -->
+    <li>terrain_word-&gt;planícies de agulhas de gelo</li>
+    <!-- EN: terrain_word-&gt;frosted towers -->
+    <li>terrain_word-&gt;torres geladas</li>
+  </VEE_NamerLandmark_IceSpires.rulePack.rulesStrings>
+  <VEE_NamerLandmark_GlacialMoraine.rulePack.rulesStrings>
+    <!-- EN: terrain_word-&gt;glacial moraine -->
+    <li>terrain_word-&gt;morena glacial</li>
+    <!-- EN: terrain_word-&gt;ice-pushed ridge -->
+    <li>terrain_word-&gt;crista empurrada pelo gelo</li>
+    <!-- EN: terrain_word-&gt;stone-strewn moraine -->
+    <li>terrain_word-&gt;morena pedregosa</li>
+    <!-- EN: terrain_word-&gt;frozen debris fields -->
+    <li>terrain_word-&gt;campos de detritos congelados</li>
+    <!-- EN: terrain_word-&gt;glacial rubble ridges -->
+    <li>terrain_word-&gt;cristas de entulho glacial</li>
+  </VEE_NamerLandmark_GlacialMoraine.rulePack.rulesStrings>
+  <VEE_NamerLandmark_Sinkholes.rulePack.rulesStrings>
+    <!-- EN: terrain_word-&gt;sinkholes -->
+    <li>terrain_word-&gt;dolinas</li>
+    <!-- EN: terrain_word-&gt;collapsed ground -->
+    <li>terrain_word-&gt;chão desabado</li>
+    <!-- EN: terrain_word-&gt;subsurface hollows -->
+    <li>terrain_word-&gt;ocos subterrâneos</li>
+    <!-- EN: terrain_word-&gt;broken lowlands -->
+    <li>terrain_word-&gt;baixadas quebradas</li>
+  </VEE_NamerLandmark_Sinkholes.rulePack.rulesStrings>
+  <VEE_NamerLandmark_TropicalBeach.rulePack.rulesStrings>
+    <!-- EN: terrain_word-&gt;tropical beach -->
+    <li>terrain_word-&gt;praia tropical</li>
+    <!-- EN: terrain_word-&gt;palm-lined shore -->
+    <li>terrain_word-&gt;orla de palmeiras</li>
+    <!-- EN: terrain_word-&gt;warm coastal strand -->
+    <li>terrain_word-&gt;faixa costeira quente</li>
+    <!-- EN: terrain_word-&gt;sunlit shoreline -->
+    <li>terrain_word-&gt;litoral ensolarado</li>
+    <!-- EN: terrain_word-&gt;tropical seaboard -->
+    <li>terrain_word-&gt;costa tropical</li>
+  </VEE_NamerLandmark_TropicalBeach.rulePack.rulesStrings>
+  <VEE_NamerLandmark_LaurelForest.rulePack.rulesStrings>
+    <!-- EN: terrain_word-&gt;laurel forest -->
+    <li>terrain_word-&gt;floresta de louros</li>
+    <!-- EN: terrain_word-&gt;evergreen cloud forest -->
+    <li>terrain_word-&gt;floresta nebular perene</li>
+    <!-- EN: terrain_word-&gt;mist-laden woodland -->
+    <li>terrain_word-&gt;mata de neblina</li>
+    <!-- EN: terrain_word-&gt;humid evergreen forest -->
+    <li>terrain_word-&gt;floresta úmida perene</li>
+    <!-- EN: terrain_word-&gt;broadleaf evergreen woods -->
+    <li>terrain_word-&gt;mata perene de folhas largas</li>
+  </VEE_NamerLandmark_LaurelForest.rulePack.rulesStrings>
+  <VEE_NamerLandmark_Moor.rulePack.rulesStrings>
+    <!-- EN: terrain_word-&gt;moor -->
+    <li>terrain_word-&gt;charneca</li>
+    <!-- EN: terrain_word-&gt;open heath -->
+    <li>terrain_word-&gt;urzal aberto</li>
+    <!-- EN: terrain_word-&gt;windswept moorland -->
+    <li>terrain_word-&gt;charneca varrida pelo vento</li>
+    <!-- EN: terrain_word-&gt;heather plain -->
+    <li>terrain_word-&gt;planície de urze</li>
+    <!-- EN: terrain_word-&gt;peaty uplands -->
+    <li>terrain_word-&gt;terras altas de turfa</li>
+  </VEE_NamerLandmark_Moor.rulePack.rulesStrings>
+  <VEE_NamerLandmark_LushLavaFields.rulePack.rulesStrings>
+    <!-- EN: terrain_word-&gt;lush lava fields -->
+    <li>terrain_word-&gt;campos de lava verdejantes</li>
+    <!-- EN: terrain_word-&gt;vegetated lava plain -->
+    <li>terrain_word-&gt;planície de lava coberta de mato</li>
+    <!-- EN: terrain_word-&gt;green volcanic flats -->
+    <li>terrain_word-&gt;planura vulcânica verde</li>
+    <!-- EN: terrain_word-&gt;overgrown basalt fields -->
+    <li>terrain_word-&gt;campos de basalto tomados pelo mato</li>
+    <!-- EN: terrain_word-&gt;life-bound lava flows -->
+    <li>terrain_word-&gt;derrames de lava cheios de vida</li>
+  </VEE_NamerLandmark_LushLavaFields.rulePack.rulesStrings>
+</LanguageData>

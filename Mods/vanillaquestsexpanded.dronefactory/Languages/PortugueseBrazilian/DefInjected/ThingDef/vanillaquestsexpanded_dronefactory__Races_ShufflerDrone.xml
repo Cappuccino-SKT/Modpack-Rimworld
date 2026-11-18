@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <!-- EN: shuffler drone -->
+  <VQE_ShufflerDrone.label>drone arrastado</VQE_ShufflerDrone.label>
+  <!-- EN: A broken, decommissioned sentry drone. Its fried sensors and failing components cause it to shuffle aimlessly. Despite its derelict state, it will attack any tagrets it sees. Upon taking severe damage, its chassis splits into two smaller, relentless attacking drone units. -->
+  <VQE_ShufflerDrone.description>Um drone sentinela quebrado e descomissionado. Os sensores fritos e os componentes falhando o fazem se arrastar sem rumo. Mesmo nesse estado, ataca qualquer alvo que vê. Quando sofre dano grave, o chassi se parte em dois drones menores que continuam atacando sem trégua.</VQE_ShufflerDrone.description>
+  <!-- EN: shell spike -->
+  <VQE_ShufflerDrone.tools.shell_spike.label>espinho do casco</VQE_ShufflerDrone.tools.shell_spike.label>
+  <!-- EN: driver drone -->
+  <VQE_DriverDrone.label>drone motorista</VQE_DriverDrone.label>
+  <!-- EN: The lower chassis of a destroyed drone, reduced to its bare, treaded frame. Despite being severely damaged and dragging its core components, it remains aggressive and attempts to ram targets. -->
+  <VQE_DriverDrone.description>O chassi inferior de um drone destruído, reduzido à estrutura nua com esteiras. Mesmo muito danificado e arrastando os componentes centrais, continua agressivo e tenta atropelar os alvos.</VQE_DriverDrone.description>
+  <!-- EN: shell spike -->
+  <VQE_DriverDrone.tools.shell_spike.label>espinho do casco</VQE_DriverDrone.tools.shell_spike.label>
+  <!-- EN: crawler drone -->
+  <VQE_CrawlerDrone.label>drone rastejante</VQE_CrawlerDrone.label>
+  <!-- EN: The upper chassis of a destroyed drone, reduced to its bare, treaded frame. Despite being severely damaged and dragging its core components, it remains aggressive and attempts to ram targets. -->
+  <VQE_CrawlerDrone.description>O chassi superior de um drone destruído, reduzido à estrutura nua. Mesmo muito danificado e arrastando os componentes centrais, continua agressivo e tenta atropelar os alvos.</VQE_CrawlerDrone.description>
+  <!-- EN: shell spike -->
+  <VQE_CrawlerDrone.tools.shell_spike.label>espinho do casco</VQE_CrawlerDrone.tools.shell_spike.label>
+</LanguageData>

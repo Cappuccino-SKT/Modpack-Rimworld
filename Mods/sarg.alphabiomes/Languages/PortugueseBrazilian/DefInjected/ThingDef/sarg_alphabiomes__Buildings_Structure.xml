@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <!-- EN: exotic door -->
+  <AB_ExoticDoor.label>porta exótica</AB_ExoticDoor.label>
+  <!-- EN: A door built using exotic materials. Simple doors must be manually opened, which slows people down. The amount of slowdown depends on what the door is made of, though exotic doors open and close slightly faster than regular counterparts, at the cost of increased building costs. -->
+  <AB_ExoticDoor.description>Uma porta feita com materiais exóticos. Portas simples precisam ser abertas à mão, o que atrasa as pessoas. O atraso depende do material, mas portas exóticas abrem e fecham um pouco mais rápido que as comuns, ao custo de uma construção mais cara.</AB_ExoticDoor.description>
+  <!-- EN: exotic autodoor -->
+  <AB_ExoticAutoDoor.label>autoporta exótica</AB_ExoticAutoDoor.label>
+  <!-- EN: An autodoor built using exotic materials. Powered operation allows people to move through the door without slowing down. Requires more materials than normal autodoors but also less power to work. -->
+  <AB_ExoticAutoDoor.description>Uma autoporta feita com materiais exóticos. O funcionamento elétrico deixa as pessoas passarem sem perder velocidade. Pede mais material que autoportas comuns, mas gasta menos energia.</AB_ExoticAutoDoor.description>
+  <!-- EN: exotic wall -->
+  <AB_ExoticWall.label>parede exótica</AB_ExoticWall.label>
+  <!-- EN: An impassable wall built using exotic materials. Slightly stronger than regular walls. -->
+  <AB_ExoticWall.description>Uma parede intransponível feita com materiais exóticos. Um pouco mais forte que as paredes comuns.</AB_ExoticWall.description>
+  <!-- EN: giant bones -->
+  <AB_BoneWall.label>ossos gigantes</AB_BoneWall.label>
+  <!-- EN: An impassable block made of fosilized, solid bone. Whatever creature this bone belonged to is long gone. -->
+  <AB_BoneWall.description>Um bloco intransponível de osso maciço fossilizado. A criatura dona deste osso se foi há muito tempo.</AB_BoneWall.description>
+  <!-- EN: exotic column -->
+  <AB_ExoticColumn.label>coluna exótica</AB_ExoticColumn.label>
+  <!-- EN: A column built using exotic materials. Does not block sight or movement and looks quite nice. -->
+  <AB_ExoticColumn.description>Uma coluna feita com materiais exóticos. Não bloqueia a visão nem a passagem e é bem bonita.</AB_ExoticColumn.description>
+</LanguageData>

@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <!-- EN: {0} mode -->
+  <VQE_BroadcasterMode>Modo {0}</VQE_BroadcasterMode>
+  <!-- EN: Autobroadcaster plays energetic music that makes everyone work a little bit harder. -->
+  <VQE_BroadcasterModeDesc_Work>O autotransmissor toca música animada que faz todo mundo trabalhar um pouquinho mais.</VQE_BroadcasterModeDesc_Work>
+  <!-- EN: Autobroadcaster plays soothing music that makes everyone a little bit more relaxed. -->
+  <VQE_BroadcasterModeDesc_Relax>O autotransmissor toca música tranquila que deixa todo mundo um pouquinho mais relaxado.</VQE_BroadcasterModeDesc_Relax>
+  <!-- EN: Autobroadcaster plays propaganda messages aimed at prisoners with the purpose of lowering their resistance. -->
+  <VQE_BroadcasterModeDesc_Recruitment>O autotransmissor toca propaganda voltada aos prisioneiros para baixar a resistência deles.</VQE_BroadcasterModeDesc_Recruitment>
+  <!-- EN: Autobroadcaster plays ideological rhetoric aimed at prisoners with the purpose of lowering their certainty. -->
+  <VQE_BroadcasterModeDesc_Conversion>O autotransmissor toca retórica ideológica voltada aos prisioneiros para abalar as certezas deles.</VQE_BroadcasterModeDesc_Conversion>
+  <!-- EN: Shut down -->
+  <VQE_Shutdown>Desligar</VQE_Shutdown>
+  <!-- EN: Shut down the drone permanently. -->
+  <VQE_ShutdownDesc>Desliga o drone para sempre.</VQE_ShutdownDesc>
+  <!-- EN: Reactivate -->
+  <VQE_Reactivate>Reativar</VQE_Reactivate>
+  <!-- EN: Reactivate the drone. A colonist will need to approach the drone and flick it back on. -->
+  <VQE_ReactivateDesc>Reativa o drone. Um colono precisa ir até ele e religá-lo.</VQE_ReactivateDesc>
+  <!-- EN: Standby -->
+  <VQE_Standby>Espera</VQE_Standby>
+  <!-- EN: Stand-by -->
+  <VQE_EnterStandby>Em espera</VQE_EnterStandby>
+  <!-- EN: Initiate the stand-by mode. The drone will turn off, reducing the lifespan loss by 90%. It will not respond to any tasks or damage, and will need to be reactivated before it can engage again. -->
+  <VQE_EnterStandbyDesc>Ativa o modo de espera. O drone desliga, reduzindo em 90% a perda de vida útil. Não responde a tarefas nem a dano, e precisa ser reativado antes de voltar à ação.</VQE_EnterStandbyDesc>
+  <!-- EN: Cannot use while connection timed out -->
+  <VQE_CannotUseConnectionTimedOut>Indisponível com a conexão expirada</VQE_CannotUseConnectionTimedOut>
+  <!-- EN: Cannot use while overclocked -->
+  <VQE_CannotUseOverclocked>Indisponível em sobrecarga</VQE_CannotUseOverclocked>
+  <!-- EN: Cannot use while desynchronised -->
+  <VQE_CannotUseDesynchronised>Indisponível em dessincronia</VQE_CannotUseDesynchronised>
+  <!-- EN: Cannot use while rebooting -->
+  <VQE_CannotUseRebooting>Indisponível enquanto reinicia</VQE_CannotUseRebooting>
+  <!-- EN: Cannot use during hardware failure -->
+  <VQE_CannotUseHardwareFailure>Indisponível durante falha de hardware</VQE_CannotUseHardwareFailure>
+  <!-- EN: Cannot use while indexing -->
+  <VQE_CannotUseIndexing>Indisponível enquanto indexa</VQE_CannotUseIndexing>
+  <!-- EN: Cannot use while in standby -->
+  <VQE_CannotUseInStandby>Indisponível em espera</VQE_CannotUseInStandby>
+  <!-- EN: Outside transmitter range -->
+  <VQE_OutsideTransmitterRange>Fora do alcance do transmissor</VQE_OutsideTransmitterRange>
+  <!-- EN: {DRONE} is undergoing {1} malfunction -->
+  <VQE_DroneMalfunction>{DRONE} está com o defeito {1}</VQE_DroneMalfunction>
+  <!-- EN: Hardcrash: {DRONE} -->
+  <VQE_HardcrashLetter>Pane total: {DRONE}</VQE_HardcrashLetter>
+  <!-- EN: {DRONE} is undergoing the hardcrash malfunction.\n\nIt will try to clear sensor obstruction by repeatedly crashing into buildings and furniture, potentially destroying them in the process.\n\nThis has occurred because {DRONE} is reaching the end of its lifespan. -->
+  <VQE_HardcrashLetterDesc>{DRONE} está com o defeito de pane total.\n\nVai tentar limpar a obstrução dos sensores batendo repetidamente em prédios e móveis, e pode destruí-los no processo.\n\nIsso aconteceu porque {DRONE} está chegando ao fim da vida útil.</VQE_HardcrashLetterDesc>
+  <!-- EN: Killswitch: {DRONE} -->
+  <VQE_KillswitchLetter>Desligamento de emergência: {DRONE}</VQE_KillswitchLetter>
+  <!-- EN: {DRONE} is undergoing the killswitch malfunction.\n\nIt will attack anyone that gets close to it.\n\nThis has occurred because {DRONE} is reaching the end of its lifespan. -->
+  <VQE_KillswitchLetterDesc>{DRONE} está com o defeito de desligamento de emergência.\n\nVai atacar qualquer um que chegar perto.\n\nIsso aconteceu porque {DRONE} está chegando ao fim da vida útil.</VQE_KillswitchLetterDesc>
+  <!-- EN: Self-decommission: {DRONE} -->
+  <VQE_SelfDecommissionLetter>Autodescomissionamento: {DRONE}</VQE_SelfDecommissionLetter>
+  <!-- EN: {DRONE} is undergoing the self-decommission malfunction.\n\nIt has determined that its service life has ended and will ignore all commands as it leaves the local area to shut down somewhere in the wild.\n\nThis has occurred because {DRONE} is reaching the end of its lifespan. -->
+  <VQE_SelfDecommissionLetterDesc>{DRONE} está com o defeito de autodescomissionamento.\n\nConcluiu que o seu tempo de serviço acabou e vai ignorar todas as ordens enquanto sai da área para se desligar em algum lugar do ermo.\n\nIsso aconteceu porque {DRONE} está chegando ao fim da vida útil.</VQE_SelfDecommissionLetterDesc>
+  <!-- EN: , after which it will cease to work. -->
+  <VQE_DroneMalfunction_Death>, e depois vai parar de funcionar.</VQE_DroneMalfunction_Death>
+  <!-- EN: Indexing: {DRONE} -->
+  <VQE_IndexingLetter>Indexação: {DRONE}</VQE_IndexingLetter>
+  <!-- EN: {DRONE} is undergoing the indexing malfunction.\n\nIt will study another drone, or another colonist if drones are not present, and will code a special schematic onto a drone core. After the malfunction passes, a drone core will be produced. It can be decoded to permanently unlock a new drone type.\n\nThis has occurred because {DRONE} is programmed to undergo indexing malfunctions from time to time. -->
+  <VQE_IndexingLetterDesc>{DRONE} está com o defeito de indexação.\n\nVai estudar outro drone, ou um colono se não houver drones, e gravar uma planta especial num núcleo de drone. Quando o defeito passar, um núcleo de drone será produzido. Ele pode ser decodificado para liberar de vez um novo tipo de drone.\n\nIsso aconteceu porque {DRONE} foi programado para ter defeitos de indexação de tempos em tempos.</VQE_IndexingLetterDesc>
+  <!-- EN: Extreme malfunction risk -->
+  <VQE_ExtremeMalfunctionRisk>Risco de defeito extremo</VQE_ExtremeMalfunctionRisk>
+  <!-- EN: Some drones in your colony are close to the end of their lifespan. Consider shutting them down permanently, as they are at risk of extreme malfunctions.\n\nDrones at risk of extreme malfunction:\n\n{0} -->
+  <VQE_ExtremeMalfunctionRiskDesc>Alguns drones da colônia estão perto do fim da vida útil. Considere desligá-los de vez, pois correm risco de defeitos extremos.\n\nDrones em risco de defeito extremo:\n\n{0}</VQE_ExtremeMalfunctionRiskDesc>
+  <!-- EN: Malfunction -->
+  <VQE_Malfunction>Defeito</VQE_Malfunction>
+  <!-- EN: Decrypt {0} to unlock a new drone recipe -->
+  <VQE_DecryptCore>Descriptografar {0} para liberar uma nova receita de drone</VQE_DecryptCore>
+  <!-- EN: Drone unlocked: {0} -->
+  <VQE_CoreDecryptedLetter>Drone liberado: {0}</VQE_CoreDecryptedLetter>
+  <!-- EN: Decoding the drone core unlocked a new drone schematic. From now on, you can craft the following drone type: {0}.\n\n{1}. -->
+  <VQE_CoreDecryptedDesc>Decodificar o núcleo de drone liberou uma nova planta. A partir de agora você pode fabricar este tipo de drone: {0}.\n\n{1}.</VQE_CoreDecryptedDesc>
+  <!-- EN: There are no more drone recipes left to decrypt! -->
+  <VQE_NoUnlockableRecipes>Não há mais receitas de drone para descriptografar!</VQE_NoUnlockableRecipes>
+  <!-- EN: {0} construction completes in {1}. -->
+  <VQE_DroneSpawningIn>A construção de {0} termina em {1}.</VQE_DroneSpawningIn>
+  <!-- EN: Carry {0} to nearest transmitter -->
+  <VQE_CarryDroneToTransmitter>Levar {0} ao transmissor mais próximo</VQE_CarryDroneToTransmitter>
+  <!-- EN: Transmitter radius -->
+  <VQE_TransmitterRadius>Raio do transmissor</VQE_TransmitterRadius>
+  <!-- EN: The radius around a transmitter in which drones that need it will be able to operate. 15 tiles by default (actually 14.9 due to the way the game works). -->
+  <VQE_TransmitterRadiusDesc>O raio em volta de um transmissor em que os drones que precisam dele conseguem operar. 15 quadrados por padrão (na verdade 14,9, por causa do jeito que o jogo funciona).</VQE_TransmitterRadiusDesc>
+  <!-- EN: Reset -->
+  <VQED_Reset>Restaurar</VQED_Reset>
+  <!-- EN: Drone lifespan multiplier -->
+  <VQE_LifespanMultiplier>Multiplicador de vida útil dos drones</VQE_LifespanMultiplier>
+  <!-- EN: Drone lifespan multiplier in mod settings: {0} -->
+  <VQE_LifespanMultiplierModOptions>Multiplicador de vida útil dos drones nas opções do mod: {0}</VQE_LifespanMultiplierModOptions>
+  <!-- EN: A multiplier on the lifespan of drones. For example, a value of x2 will double the lifespan of all drones. Bear in mind this will not change the current lifespan of already built drones. -->
+  <VQE_LifespanMultiplierDesc>Multiplica a vida útil dos drones. Por exemplo, x2 dobra a vida útil de todos. Não muda a vida útil atual dos drones já construídos.</VQE_LifespanMultiplierDesc>
+  <!-- EN: Consume lifespan when repairing drones -->
+  <VQE_ConsumeLifespanOnRepair>Gastar vida útil ao consertar drones</VQE_ConsumeLifespanOnRepair>
+  <!-- EN: When enabled, repairing drones will consume their lifespan. Disable to prevent lifespan drain during repairs. -->
+  <VQE_ConsumeLifespanOnRepairDesc>Ligado, consertar drones gasta a vida útil deles. Desligue para evitar o desgaste nos consertos.</VQE_ConsumeLifespanOnRepairDesc>
+  <!-- EN: Raid: Ancient drones -->
+  <VQE_DroneStockpileRaid>Ataque: drones antigos</VQE_DroneStockpileRaid>
+  <!-- EN: Combat drones from the nearby drone stockpile have arrived nearby.\n\nThey are attacking immediately.\n\nDestroy the drone stockpile to stop the drones from attacking you. -->
+  <VQE_DroneStockpileRaidDesc>Drones de combate do depósito de drones aqui perto chegaram.\n\nEstão atacando agora.\n\nDestrua o depósito de drones para parar os ataques.</VQE_DroneStockpileRaidDesc>
+  <!-- EN: Click to jump to the drone transmitter -->
+  <VQE_JumpToDroneTransmitter>Clique para ir ao transmissor de drones</VQE_JumpToDroneTransmitter>
+  <!-- EN: Drone work speed offset -->
+  <VQE_DroneWorkspeedStatOffset>Bônus de velocidade de trabalho do drone</VQE_DroneWorkspeedStatOffset>
+</LanguageData>

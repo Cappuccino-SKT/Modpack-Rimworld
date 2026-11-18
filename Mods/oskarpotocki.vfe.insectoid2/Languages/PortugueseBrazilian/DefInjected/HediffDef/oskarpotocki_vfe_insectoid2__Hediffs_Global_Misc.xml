@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <!-- EN: toxic buildup -->
+  <VFEI2_ToxicBuildup.label>acúmulo tóxico</VFEI2_ToxicBuildup.label>
+  <!-- EN: Toxins in the bloodstream. This can come from various sources, including environmental toxins, venomous bites, or poisoned weapons.\n\nAt high doses, toxic buildup is lethal. Even at low doses, it can generate cancers.\n\nContrary to base game toxic buildup, creatures who die with this toxic damage can be eaten. -->
+  <VFEI2_ToxicBuildup.description>Toxinas no sangue. Podem vir de várias fontes, como toxinas do ambiente, mordidas venenosas ou armas envenenadas.\n\nEm doses altas, o acúmulo tóxico é letal. Mesmo em doses baixas, pode causar câncer.\n\nAo contrário do acúmulo tóxico do jogo base, criaturas que morrem com este dano tóxico podem ser comidas.</VFEI2_ToxicBuildup.description>
+  <!-- EN: initial -->
+  <VFEI2_ToxicBuildup.stages.initial-0.label>inicial</VFEI2_ToxicBuildup.stages.initial-0.label>
+  <!-- EN: initial -->
+  <VFEI2_ToxicBuildup.stages.initial-1.label>inicial</VFEI2_ToxicBuildup.stages.initial-1.label>
+  <!-- EN: minor -->
+  <VFEI2_ToxicBuildup.stages.minor.label>leve</VFEI2_ToxicBuildup.stages.minor.label>
+  <!-- EN: moderate -->
+  <VFEI2_ToxicBuildup.stages.moderate.label>moderada</VFEI2_ToxicBuildup.stages.moderate.label>
+  <!-- EN: serious -->
+  <VFEI2_ToxicBuildup.stages.serious.label>sério</VFEI2_ToxicBuildup.stages.serious.label>
+  <!-- EN: extreme -->
+  <VFEI2_ToxicBuildup.stages.extreme.label>extrema</VFEI2_ToxicBuildup.stages.extreme.label>
+  <!-- EN: armor degradation -->
+  <VFEI2_ArmorDegradation.label>armadura degradada</VFEI2_ArmorDegradation.label>
+  <!-- EN: The armor of this insectoid has been cracked and lost part of its efficiency. -->
+  <VFEI2_ArmorDegradation.description>A armadura deste insetoide rachou e perdeu parte da eficiência.</VFEI2_ArmorDegradation.description>
+  <!-- EN: recently stunned -->
+  <VFEI2_TeramantisStun.label>atordoado há pouco</VFEI2_TeramantisStun.label>
+  <!-- EN: This creature has recently been stunned from a surprise attack. -->
+  <VFEI2_TeramantisStun.description>Esta criatura foi atordoada há pouco por um ataque surpresa.</VFEI2_TeramantisStun.description>
+  <!-- EN: acid immunity -->
+  <VFEI2_AcidImmunity.label>imunidade a ácido</VFEI2_AcidImmunity.label>
+  <!-- EN: Insectoids from the Kemia geneline are immune to acid. -->
+  <VFEI2_AcidImmunity.description>Os insetoides da linhagem Kemia são imunes a ácido.</VFEI2_AcidImmunity.description>
+  <!-- EN: worker type -->
+  <VFEI_WorkerInsectType.label>tipo operário</VFEI_WorkerInsectType.label>
+  <!-- EN: An insectoid type. -->
+  <VFEI_WorkerInsectType.description>Um tipo de insetoide.</VFEI_WorkerInsectType.description>
+  <!-- EN: hunter type -->
+  <VFEI_HunterInsectType.label>tipo caçador</VFEI_HunterInsectType.label>
+  <!-- EN: An insectoid type. -->
+  <VFEI_HunterInsectType.description>Um tipo de insetoide.</VFEI_HunterInsectType.description>
+  <!-- EN: defender type -->
+  <VFEI_DefenderInsectType.label>tipo defensor</VFEI_DefenderInsectType.label>
+  <!-- EN: An insectoid type. -->
+  <VFEI_DefenderInsectType.description>Um tipo de insetoide.</VFEI_DefenderInsectType.description>
+  <!-- EN: to be cocooned -->
+  <VFEI_ToBeCocooned.label>para encasular</VFEI_ToBeCocooned.label>
+  <!-- EN: To be cocooned. -->
+  <VFEI_ToBeCocooned.description>Para encasular.</VFEI_ToBeCocooned.description>
+</LanguageData>

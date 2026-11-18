@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <!-- EN: Body clock -->
+  <NocturnalAnimals.BodyClock>Relógio biológico</NocturnalAnimals.BodyClock>
+  <!-- EN: Determines when the animal sleeps and when it is awake.\n\nDiurnal animals sleep during the night and are awake during the day, while nocturnal animals sleep during the day and are awake during the night. Crepuscular animals are mainly active during dusk. -->
+  <NocturnalAnimals.BodyClock_Description>Define quando o animal dorme e quando fica acordado.\n\nAnimais diurnos dormem à noite e ficam acordados de dia; os noturnos dormem de dia e ficam acordados à noite. Os crepusculares são ativos sobretudo ao entardecer.</NocturnalAnimals.BodyClock_Description>
+  <!-- EN: Diurnal -->
+  <NocturnalAnimals.BodyClock_Diurnal>Diurno</NocturnalAnimals.BodyClock_Diurnal>
+  <!-- EN: Nocturnal -->
+  <NocturnalAnimals.BodyClock_Nocturnal>Noturno</NocturnalAnimals.BodyClock_Nocturnal>
+  <!-- EN: Crepuscular -->
+  <NocturnalAnimals.BodyClock_Crepuscular>Crepuscular</NocturnalAnimals.BodyClock_Crepuscular>
+  <!-- EN: {0} has reproduced asexually. -->
+  <VEF_AsexualHatched>{0} se reproduziu de forma assexuada.</VEF_AsexualHatched>
+  <!-- EN: {0} has cloned itself. -->
+  <VEF_AsexualCloning>{0} se clonou.</VEF_AsexualCloning>
+  <!-- EN: {0} has sporulated. -->
+  <VEF_AsexualHatchedEgg>{0} esporulou.</VEF_AsexualHatchedEgg>
+  <!-- EN: This creature is untameable -->
+  <VEF_NotTameable>Esta criatura não pode ser domada</VEF_NotTameable>
+  <!-- EN: Time to metamorphosis: {0} -->
+  <VEF_TimeToMetamorphosis>Tempo até a metamorfose: {0}</VEF_TimeToMetamorphosis>
+  <!-- EN: Warning, this egg explodes when hatching! -->
+  <VEF_WarningEggExplodes>Atenção: este ovo explode ao chocar!</VEF_WarningEggExplodes>
+  <!-- EN: Animal expires in: {0} -->
+  <VEF_TimeToDie>O animal expira em: {0}</VEF_TimeToDie>
+  <!-- EN: Disable {0} -->
+  <VEF_DisableAnimal>Desligar {0}</VEF_DisableAnimal>
+  <!-- EN: {0} creatures swallowed whole.  -->
+  <VEF_StomachContents>{0} criaturas engolidas inteiras.</VEF_StomachContents>
+  <!-- EN: Will be consumed in {0} -->
+  <VEF_DigestionTime>Será digerido em {0}</VEF_DigestionTime>
+  <!-- EN: The terrain needs to be diggable to do this -->
+  <VEF_TerrainsNeedsDiggable>O terreno precisa poder ser cavado para isso</VEF_TerrainsNeedsDiggable>
+  <!-- EN: While caravaning, produces {0} {1} every:  -->
+  <VEF_WhileCaravaning>Em caravana, produz {0} {1} a cada:</VEF_WhileCaravaning>
+  <!-- EN: Base special animal products production for this animal is {0} {1}. Adjusted by its animal product yield factor this will result in {2} {1} instead. -->
+  <VEF_AnimalProductYieldFactorDetails>A produção base de produtos animais especiais deste animal é {0} {1}. Ajustada pelo fator de rendimento de produtos animais, fica {2} {1}.</VEF_AnimalProductYieldFactorDetails>
+  <!-- EN: Base special animal products production for this animal is {0} of a selection of randomized or terrain dependent items. Adjusted by its animal product yield factor this will result in {1} units instead. -->
+  <VEF_AnimalProductYieldFactorDetails_Random>A produção base de produtos animais especiais deste animal é {0} de uma seleção de itens aleatórios ou que dependem do terreno. Ajustada pelo fator de rendimento de produtos animais, fica {1} unidades.</VEF_AnimalProductYieldFactorDetails_Random>
+  <!-- EN: Base special animal products interval for this animal is {0} days. Adjusted by its animal products interval factor this will result in {1} days instead. This value is capped at a minimum of 1 day. -->
+  <VEF_AnimalProductIntervalFactorDetails>O intervalo base de produtos animais especiais deste animal é de {0} dias. Ajustado pelo fator de intervalo de produtos animais, fica {1} dias. O valor mínimo é 1 dia.</VEF_AnimalProductIntervalFactorDetails>
+  <!-- EN: These animal behaviours options will affect all animal mods that share code from the Vanilla Expanded Framework -->
+  <VCE_AffectsAllAnimalMods>Estas opções de comportamento animal afetam todos os mods de animais que usam o código do Vanilla Expanded Framework</VCE_AffectsAllAnimalMods>
+  <!-- EN: Allow corpse decaying mechanics (for example, Helixien slug's effect) -->
+  <VCE_CorpseDecayingEffectOption>Permitir mecânicas de decomposição de cadáveres (por exemplo, o efeito da lesma helixiana)</VCE_CorpseDecayingEffectOption>
+  <!-- EN: Allow digging when hungry mechanics (for example, Frostmites digging corpses) -->
+  <VCE_DigWhenHungryOption>Permitir cavar quando com fome (por exemplo, ácaros-de-gelo cavando cadáveres)</VCE_DigWhenHungryOption>
+  <!-- EN: Allows animals digging for things periodically -->
+  <VCE_DigPeriodicallyOption>Permitir que animais cavem atrás de coisas periodicamente</VCE_DigPeriodicallyOption>
+  <!-- EN: Allow animal particles (gas and filth) -->
+  <VCE_AnimalParticlesOption>Permitir partículas de animais (gás e sujeira)</VCE_AnimalParticlesOption>
+  <!-- EN: Allow asexual reproduction -->
+  <VCE_AsexualReproductionOption>Permitir reprodução assexuada</VCE_AsexualReproductionOption>
+  <!-- EN: Asexual reproduction disabled via mod options -->
+  <VFE_AsexualReproductionDisabled>Reprodução assexuada desligada nas opções do mod</VFE_AsexualReproductionDisabled>
+  <!-- EN: Allow "blink" mechanics (for example, Skiphounds) -->
+  <VCE_BlinkMechanicsOption>Permitir mecânicas de "salto" (por exemplo, cães-de-salto)</VCE_BlinkMechanicsOption>
+  <!-- EN: Allow animals building things (for example, beavers building dams) -->
+  <VCE_BuildPeriodicallyOption>Permitir que animais construam coisas (por exemplo, castores fazendo represas)</VCE_BuildPeriodicallyOption>
+  <!-- EN: Allow animals recharging nearby batteries or refueling -->
+  <VCE_ChargeBatteriesOption>Permitir que animais recarreguem baterias próximas ou reabasteçam</VCE_ChargeBatteriesOption>
+  <!-- EN: Allow animals' eggs that explode (such as dragons') -->
+  <VCE_ExplodingEggsOption>Permitir ovos de animais que explodem (como os de dragão)</VCE_ExplodingEggsOption>
+  <!-- EN: Allow animals "hovering", ignoring terrain movement costs and waterstriding -->
+  <VCE_HoveringOption>Permitir animais "flutuantes", que ignoram o custo de movimento do terreno e andam sobre a água</VCE_HoveringOption>
+  <!-- EN: Allow animals changing graphics (for example, Chameleon Yak) -->
+  <VCE_GraphicChangingOption>Permitir animais que mudam de aparência (por exemplo, o iaque-camaleão)</VCE_GraphicChangingOption>
+  <!-- EN: Allows animals causing hediffs, mental states or thoughts -->
+  <VCE_EffecterOption>Permitir que animais causem efeitos de saúde, estados mentais ou pensamentos</VCE_EffecterOption>
+  <!-- EN: Allow health regeneration (active and passive) -->
+  <VCE_RegenerationOption>Permitir regeneração de saúde (ativa e passiva)</VCE_RegenerationOption>
+  <!-- EN: Allow animals to auto-resurrect (for example Phoenix Owlcat) -->
+  <VCE_ResurrectionOption>Permitir que animais ressuscitem sozinhos (por exemplo, a coruja-gato-fênix)</VCE_ResurrectionOption>
+  <!-- EN: Allow some animals to be untameable -->
+  <VCE_UntameableOption>Permitir que alguns animais não possam ser domados</VCE_UntameableOption>
+  <!-- EN: Search: -->
+  <VEF_AnimalsSearch>Buscar:</VEF_AnimalsSearch>
+  <!-- EN: Requires {0} Kg total mass -->
+  <VEF_BillRequiresMass>Exige {0} kg de massa total</VEF_BillRequiresMass>
+</LanguageData>

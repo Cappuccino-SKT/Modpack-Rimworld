@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <VQE_AbandonedARC.questContentRules.rulesStrings>
+    <!-- EN: allObjectsStudiedMessage-&gt;All objects are studied. You've collected the information and can now leave. -->
+    <li>allObjectsStudiedMessage-&gt;Todos os objetos foram estudados. Você reuniu as informações e já pode ir embora.</li>
+    <!-- EN: halfOfObjectsDestroyedMessage-&gt;More than half of the research data has been lost. -->
+    <li>halfOfObjectsDestroyedMessage-&gt;Mais da metade dos dados de pesquisa se perdeu.</li>
+  </VQE_AbandonedARC.questContentRules.rulesStrings>
+  <VQE_AbandonedARC.questDescriptionRules.rulesStrings>
+    <!-- EN: questDescription-&gt;According to the data extracted on the old prototype site, we managed to find the location of an [adj] industrial complex where construction of the [arcName] continued. This sprawling facility was once bustling with engineers and scientists pushing the boundaries of technology, but now it stands in silence, overtaken by the passage of time.\n\nThe site contains [siteDetails], but it is now [siteThreat].\n\n[studyWarning] [questFailWarning]\n\nSuccessfully completing this expedition [questOutcome]. -->
+    <li>questDescription-&gt;Com os dados tirados do antigo local do protótipo, achamos um complexo industrial [adj] onde a construção do [arcName] continuou. Esse enorme complexo já fervilhou de engenheiros e cientistas forçando os limites da tecnologia; hoje está em silêncio, vencido pelo tempo.\n\nO lugar tem [siteDetails], mas agora está [siteThreat].\n\n[studyWarning] [questFailWarning]\n\nConcluir esta expedição [questOutcome]</li>
+    <!-- EN: questDescription-&gt;Data from the prototype site revealed the coordinates of an [adj] industrial yard, where the [arcName] was further developed by [inventor_nameFull] and their team. The facility stretches across a vast expanse, its rusting frames and crumbling walls hinting at its former glory.\n\nWithin the complex are [siteDetails], but [siteThreat] must be dealt with before any meaningful research can be done.\n\n[studyWarning] [questFailWarning]\n\nResolving this task [questOutcome]. -->
+    <li>questDescription-&gt;Os dados do local do protótipo revelaram as coordenadas de um pátio industrial [adj] onde [inventor_nameFull] e sua equipe continuaram desenvolvendo o [arcName]. O complexo se espalha por uma área enorme, e as estruturas enferrujadas e os muros caindo lembram a glória de antes.\n\nLá dentro há [siteDetails], mas o lugar está [siteThreat], e isso precisa ser resolvido antes de qualquer pesquisa séria.\n\n[studyWarning] [questFailWarning]\n\nResolver esta tarefa [questOutcome]</li>
+    <!-- EN: questDescription-&gt;Analyzing the prototype’s data, we’ve pinpointed the location of an [adj] construction yard that served as the next step in the [arcName] project. This site, once a beacon of industrial ambition, is now a graveyard of innovation, its machinery left to decay under the open sky.\n\nInside, you’ll find [siteDetails], but it is [siteThreat].\n\n[studyWarning] [questFailWarning]\n\nYour efforts here [questOutcome]. -->
+    <li>questDescription-&gt;Analisando os dados do protótipo, localizamos um canteiro de obras [adj] que foi o passo seguinte do projeto do [arcName]. O lugar, que já foi um farol da ambição industrial, hoje é um cemitério de inovação, com o maquinário apodrecendo a céu aberto.\n\nLá dentro você vai achar [siteDetails], mas o lugar está [siteThreat].\n\n[studyWarning] [questFailWarning]\n\nO seu esforço aqui [questOutcome]</li>
+    <!-- EN: questDescription-&gt;The data retrieved from the old prototype has led us to an [adj] industrial complex that was pivotal in advancing the [arcName] project. Once a thriving hub of technological development, the facility now lies in ruin, its halls echoing only with the wind.\n\nAmong the remnants are [siteDetails], though the complex has become [siteThreat].\n\n[studyWarning] [questFailWarning]\n\nCompleting this mission [questOutcome]. -->
+    <li>questDescription-&gt;Os dados do protótipo antigo nos levaram a um complexo industrial [adj] que foi decisivo para o projeto do [arcName]. Já foi um polo próspero de desenvolvimento tecnológico; hoje está em ruínas, e nos corredores só ecoa o vento.\n\nEntre os restos há [siteDetails], mas o complexo agora está [siteThreat].\n\n[studyWarning] [questFailWarning]\n\nCumprir esta missão [questOutcome]</li>
+    <!-- EN: adj-&gt;forgotten -->
+    <li>adj-&gt;esquecido</li>
+    <!-- EN: adj-&gt;ancient -->
+    <li>adj-&gt;antigo</li>
+    <!-- EN: adj-&gt;derelict -->
+    <li>adj-&gt;largado</li>
+    <!-- EN: adj-&gt;sprawling -->
+    <li>adj-&gt;enorme</li>
+    <!-- EN: adj-&gt;decayed -->
+    <li>adj-&gt;decadente</li>
+    <!-- EN: adj-&gt;overgrown -->
+    <li>adj-&gt;tomado pelo mato</li>
+    <!-- EN: adj-&gt;ruined -->
+    <li>adj-&gt;arruinado</li>
+    <!-- EN: adj-&gt;industrial -->
+    <li>adj-&gt;fabril</li>
+    <!-- EN: adj-&gt;abandoned -->
+    <li>adj-&gt;abandonado</li>
+    <!-- EN: arcName-&gt;ARC -->
+    <li>arcName-&gt;ARC</li>
+    <!-- EN: arcName-&gt;generator -->
+    <li>arcName-&gt;gerador</li>
+    <!-- EN: arcName-&gt;machine -->
+    <li>arcName-&gt;engenho</li>
+    <!-- EN: arcName-&gt;core -->
+    <li>arcName-&gt;núcleo</li>
+    <!-- EN: arcName-&gt;power source -->
+    <li>arcName-&gt;reator</li>
+    <!-- EN: arcName-&gt;device -->
+    <li>arcName-&gt;aparelho</li>
+    <!-- EN: arcName-&gt;artifact -->
+    <li>arcName-&gt;artefato</li>
+    <!-- EN: siteDetails-&gt;ancient machinery and unfinished generator components -->
+    <li>siteDetails-&gt;maquinário antigo e componentes de gerador inacabados</li>
+    <!-- EN: siteDetails-&gt;critical research notes and large generator components -->
+    <li>siteDetails-&gt;notas de pesquisa cruciais e grandes componentes de gerador</li>
+    <!-- EN: siteDetails-&gt;valuable schematics and industrial equipment -->
+    <li>siteDetails-&gt;plantas valiosas e equipamento industrial</li>
+    <!-- EN: siteDetails-&gt;research data and prototype machinery -->
+    <li>siteDetails-&gt;dados de pesquisa e maquinário de protótipo</li>
+    <!-- EN: siteDetails-&gt;complex equipment and experimental generator blueprints -->
+    <li>siteDetails-&gt;equipamento complexo e plantas experimentais de gerador</li>
+    <!-- EN: siteDetails-&gt;abandoned industrial machines and research archives -->
+    <li>siteDetails-&gt;máquinas industriais abandonadas e arquivos de pesquisa</li>
+    <!-- EN: siteDetails-&gt;essential research notes and unique generator pieces -->
+    <li>siteDetails-&gt;notas de pesquisa essenciais e peças únicas de gerador</li>
+    <!-- EN: siteThreat-&gt;home to [Number] manhunting [AnimalPlural] -->
+    <li>siteThreat-&gt;tomado por [Number] [AnimalPlural] caçando gente</li>
+    <!-- EN: siteThreat-&gt;overrun with [Number] manhunting [AnimalPlural] -->
+    <li>siteThreat-&gt;infestado de [Number] [AnimalPlural] caçando gente</li>
+    <!-- EN: siteThreat-&gt;inhabited by a pack of [AnimalPlural] -->
+    <li>siteThreat-&gt;habitado por um bando de [AnimalPlural]</li>
+    <!-- EN: siteThreat-&gt;guarded by [Number] aggressive [AnimalPlural] -->
+    <li>siteThreat-&gt;guardado por [Number] [AnimalPlural] agressivos</li>
+    <!-- EN: siteThreat-&gt;occupied by [Number] hostile [AnimalPlural] -->
+    <li>siteThreat-&gt;ocupado por [Number] [AnimalPlural] hostis</li>
+    <!-- EN: studyWarning-&gt;Careful examination of the area is required to uncover valuable information. -->
+    <li>studyWarning-&gt;É preciso examinar a área com cuidado para descobrir informações valiosas.</li>
+    <!-- EN: studyWarning-&gt;You must study the ancient machines and generator components carefully. -->
+    <li>studyWarning-&gt;Você precisa estudar com cuidado as máquinas antigas e os componentes de gerador.</li>
+    <!-- EN: studyWarning-&gt;To gain insights, you'll need to investigate the research notes and generator parts thoroughly. -->
+    <li>studyWarning-&gt;Para tirar algo dali, será preciso investigar a fundo as notas de pesquisa e as peças de gerador.</li>
+    <!-- EN: studyWarning-&gt;Thorough investigation is key to retrieving useful data from the site. -->
+    <li>studyWarning-&gt;Uma investigação completa é a chave para recuperar dados úteis do lugar.</li>
+    <!-- EN: studyWarning-&gt;The data here could be critical, so every effort must be made to study the area thoroughly. -->
+    <li>studyWarning-&gt;Os dados daqui podem ser cruciais, então vale todo esforço para estudar a área a fundo.</li>
+    <!-- EN: questFailWarning-&gt;If more than half of the studiable machines and notes are destroyed, the mission will fail. -->
+    <li>questFailWarning-&gt;Se mais da metade das máquinas e notas estudáveis for destruída, a missão fracassa.</li>
+    <!-- EN: questFailWarning-&gt;Too much damage to the complex will result in failure. -->
+    <li>questFailWarning-&gt;Danificar demais o complexo leva ao fracasso.</li>
+    <!-- EN: questFailWarning-&gt;Destroying too many research materials will cause the mission to fail. -->
+    <li>questFailWarning-&gt;Destruir material de pesquisa demais faz a missão fracassar.</li>
+    <!-- EN: questFailWarning-&gt;Failure to preserve enough studiable components will end the mission. -->
+    <li>questFailWarning-&gt;Se não sobrarem componentes estudáveis suficientes, a missão acaba.</li>
+    <!-- EN: questFailWarning-&gt;Be mindful of your actions; the mission hinges on preserving the site's integrity. -->
+    <li>questFailWarning-&gt;Cuidado com o que faz: a missão depende de preservar o lugar.</li>
+    <!-- EN: questOutcome-&gt;could lead us to the actual ARC location. -->
+    <li>questOutcome-&gt;pode nos levar ao verdadeiro local do ARC.</li>
+    <!-- EN: questOutcome-&gt;may uncover the true ARC site. -->
+    <li>questOutcome-&gt;pode revelar o verdadeiro local do ARC.</li>
+    <!-- EN: questOutcome-&gt;might point us to the final ARC project. -->
+    <li>questOutcome-&gt;pode nos apontar o projeto final do ARC.</li>
+    <!-- EN: questOutcome-&gt;should reveal the next steps to find the ancient ARC. -->
+    <li>questOutcome-&gt;deve revelar os próximos passos para achar o ARC antigo.</li>
+    <!-- EN: questOutcome-&gt;will bring us closer to uncovering the secrets of the ARC. -->
+    <li>questOutcome-&gt;vai nos aproximar dos segredos do ARC.</li>
+  </VQE_AbandonedARC.questDescriptionRules.rulesStrings>
+  <VQE_AbandonedARC.questNameRules.rulesStrings>
+    <!-- EN: questName-&gt;The [adj] [constructionName] -->
+    <li>questName-&gt;O [constructionName] [adj]</li>
+    <!-- EN: adj-&gt;sprawling -->
+    <li>adj-&gt;enorme</li>
+    <!-- EN: adj-&gt;abandoned -->
+    <li>adj-&gt;abandonado</li>
+    <!-- EN: adj-&gt;industrial -->
+    <li>adj-&gt;fabril</li>
+    <!-- EN: adj-&gt;derelict -->
+    <li>adj-&gt;largado</li>
+    <!-- EN: adj-&gt;ancient -->
+    <li>adj-&gt;antigo</li>
+    <!-- EN: adj-&gt;forgotten -->
+    <li>adj-&gt;esquecido</li>
+    <!-- EN: adj-&gt;overgrown -->
+    <li>adj-&gt;tomado pelo mato</li>
+    <!-- EN: adj-&gt;incomplete -->
+    <li>adj-&gt;incompleto</li>
+    <!-- EN: adj-&gt;vast -->
+    <li>adj-&gt;vasto</li>
+    <!-- EN: adj-&gt;unfinished -->
+    <li>adj-&gt;inacabado</li>
+    <!-- EN: adj-&gt;dilapidated -->
+    <li>adj-&gt;dilapidado</li>
+    <!-- EN: adj-&gt;remote -->
+    <li>adj-&gt;remoto</li>
+    <!-- EN: adj-&gt;mysterious -->
+    <li>adj-&gt;misterioso</li>
+    <!-- EN: adj-&gt;failed -->
+    <li>adj-&gt;fracassado</li>
+    <!-- EN: adj-&gt;once-thriving -->
+    <li>adj-&gt;outrora próspero</li>
+    <!-- EN: constructionName-&gt;construction yard -->
+    <li>constructionName-&gt;canteiro de obras</li>
+    <!-- EN: constructionName-&gt;development site -->
+    <li>constructionName-&gt;local de desenvolvimento</li>
+    <!-- EN: constructionName-&gt;industrial complex -->
+    <li>constructionName-&gt;complexo industrial</li>
+    <!-- EN: constructionName-&gt;workshop -->
+    <li>constructionName-&gt;galpão</li>
+    <!-- EN: constructionName-&gt;power yard -->
+    <li>constructionName-&gt;pátio de energia</li>
+    <!-- EN: constructionName-&gt;generator site -->
+    <li>constructionName-&gt;local do gerador</li>
+    <!-- EN: constructionName-&gt;assembly area -->
+    <li>constructionName-&gt;setor de montagem</li>
+    <!-- EN: constructionName-&gt;test facility -->
+    <li>constructionName-&gt;centro de testes</li>
+    <!-- EN: constructionName-&gt;work village -->
+    <li>constructionName-&gt;vilarejo operário</li>
+    <!-- EN: constructionName-&gt;prototype yard -->
+    <li>constructionName-&gt;pátio de protótipos</li>
+    <!-- EN: constructionName-&gt;engineering hub -->
+    <li>constructionName-&gt;polo de engenharia</li>
+    <!-- EN: constructionName-&gt;construction facility -->
+    <li>constructionName-&gt;complexo de construção</li>
+    <!-- EN: constructionName-&gt;ARC facility -->
+    <li>constructionName-&gt;complexo ARC</li>
+    <!-- EN: constructionName-&gt;energy project site -->
+    <li>constructionName-&gt;canteiro do projeto de energia</li>
+  </VQE_AbandonedARC.questNameRules.rulesStrings>
+</LanguageData>

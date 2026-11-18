@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <!-- EN: woundless -->
+  <VQEA_Woundless.label>sem feridas</VQEA_Woundless.label>
+  <!-- EN: Carriers of this gene rapidly heal from bleeding wounds. Their flesh seals itself moments after injury, preventing blood loss entirely and allowing them to fight through trauma that would kill others. -->
+  <VQEA_Woundless.description>Portadores deste gene curam sangramentos rapidamente. A carne se fecha instantes depois do ferimento, impedindo toda perda de sangue e permitindo lutar com traumas que matariam outros.</VQEA_Woundless.description>
+  <!-- EN: plasteel skin -->
+  <VQEA_PlasteelSkin.label>pele de plastaço</VQEA_PlasteelSkin.label>
+  <!-- EN: Carriers of this gene possess dense, reinforced dermal armor. Their skin resists bullets, absorbs blunt force, and disperses heat, turning their entire body into a living shield. -->
+  <VQEA_PlasteelSkin.description>Portadores deste gene têm uma armadura dérmica densa e reforçada. A pele resiste a balas, absorve impactos e dispersa o calor, fazendo do corpo inteiro um escudo vivo.</VQEA_PlasteelSkin.description>
+  <!-- EN: plasteel claw -->
+  <VQEA_PlasteelClaws.label>garra de plastaço</VQEA_PlasteelClaws.label>
+  <!-- EN: Carriers of this gene grow synthetic alloy claws capable of slicing through armor and flesh. These natural weapons are always equipped and strike with brutal efficiency. -->
+  <VQEA_PlasteelClaws.description>Portadores deste gene desenvolvem garras de liga sintética que cortam armadura e carne. Essas armas naturais estão sempre à mão e golpeiam com eficiência brutal.</VQEA_PlasteelClaws.description>
+  <!-- EN: plasteel claw -->
+  <VQEA_PlasteelClaws.comps.HediffComp_VerbGiver.tools.plasteel_claw.label>garra de plastaço</VQEA_PlasteelClaws.comps.HediffComp_VerbGiver.tools.plasteel_claw.label>
+  <!-- EN: passive meditation -->
+  <VQEA_PassiveMeditation.label>meditação passiva</VQEA_PassiveMeditation.label>
+  <!-- EN: Carriers of this gene possess archites that passively channel ambient psychic energy, replenishing psyfocus without meditation. These ever-attuned minds remain sharp, composed, and ready to cast at all times. -->
+  <VQEA_PassiveMeditation.description>Portadores deste gene têm arquitas que canalizam passivamente a energia psíquica do ambiente, repondo a concentração psíquica sem meditar. Essas mentes sempre sintonizadas ficam afiadas, serenas e prontas para conjurar a qualquer hora.</VQEA_PassiveMeditation.description>
+  <!-- EN: bulwark -->
+  <VQEA_Bulwark.label>baluarte</VQEA_Bulwark.label>
+  <!-- EN: Archites within the carrier’s tissues reinforce cellular structures, reducing incoming damage by half. Pain receptors are dampened in favor of combat awareness, and the body itself resists trauma that would cripple an ordinary human. -->
+  <VQEA_Bulwark.description>Arquitas nos tecidos do portador reforçam as estruturas celulares e reduzem pela metade o dano recebido. Os receptores de dor são abafados em favor da consciência de combate, e o próprio corpo resiste a traumas que aleijariam um humano comum.</VQEA_Bulwark.description>
+  <!-- EN: enormous -->
+  <VQEA_Enormous.label>enorme</VQEA_Enormous.label>
+  <!-- EN: Carriers of this gene are saturated with growth-regulating archites that massively increase body size and muscle mass. Their immense frame allows for feats of brute strength, at the cost of speed and appetite. -->
+  <VQEA_Enormous.description>Portadores deste gene são saturados de arquitas reguladoras de crescimento que aumentam muito o tamanho do corpo e a massa muscular. O porte imenso permite façanhas de força bruta, ao custo de velocidade e apetite.</VQEA_Enormous.description>
+  <!-- EN: masterful intellectual -->
+  <VQEA_MasterfulIntellectual.label>magistral em intelecto</VQEA_MasterfulIntellectual.label>
+  <!-- EN: This person will conduct research subconsciously, constantly generating scientific progress even while performing other tasks or resting. -->
+  <VQEA_MasterfulIntellectual.description>Esta pessoa pesquisa no subconsciente, gerando progresso científico mesmo fazendo outras tarefas ou descansando.</VQEA_MasterfulIntellectual.description>
+  <!-- EN: no pain sensitivity -->
+  <VQEA_NoPain.label>sem sensibilidade à dor</VQEA_NoPain.label>
+  <!-- EN: This creature has a reduced pain sensitivity, and it takes longer to be downed due to pain. -->
+  <VQEA_NoPain.description>Esta criatura tem sensibilidade à dor reduzida e demora mais para cair de dor.</VQEA_NoPain.description>
+  <!-- EN: injection coma -->
+  <VQEA_InjectionComa.label>coma de injeção</VQEA_InjectionComa.label>
+  <!-- EN: This person has undergone an archite injection. The injected archites are actively rewriting their genetic composition, altering tissues and cellular chemistry throughout the body. During this process, the body cannot safely function, so the subject is held in a deep coma.\n\nThe duration of this coma can be shortened with advanced lab equipment. -->
+  <VQEA_InjectionComa.description>Esta pessoa recebeu uma injeção de arquitas. Elas estão reescrevendo a composição genética, alterando tecidos e a química celular do corpo inteiro. Durante o processo o corpo não funciona com segurança, então a cobaia é mantida em coma profundo.\n\nA duração do coma pode ser encurtada com equipamento de laboratório avançado.</VQEA_InjectionComa.description>
+  <!-- EN: hemocollapse syndrome -->
+  <VQEA_HemocollapseSyndrome.label>síndrome do hemocolapso</VQEA_HemocollapseSyndrome.label>
+  <!-- EN: A rare and terminal disorder where the bone marrow gradually fails to produce vital hemogen components. The body weakens and the organs strain, eventually leading to death. -->
+  <VQEA_HemocollapseSyndrome.description>Doença rara e terminal em que a medula óssea aos poucos deixa de produzir componentes vitais de hemogênio. O corpo enfraquece e os órgãos se esforçam além da conta, até a morte.</VQEA_HemocollapseSyndrome.description>
+  <!-- EN: latent -->
+  <VQEA_HemocollapseSyndrome.stages.latent.label>latente</VQEA_HemocollapseSyndrome.stages.latent.label>
+  <!-- EN: progressive -->
+  <VQEA_HemocollapseSyndrome.stages.progressive.label>progressiva</VQEA_HemocollapseSyndrome.stages.progressive.label>
+  <!-- EN: advanced -->
+  <VQEA_HemocollapseSyndrome.stages.advanced.label>avançada</VQEA_HemocollapseSyndrome.stages.advanced.label>
+  <!-- EN: terminal -->
+  <VQEA_HemocollapseSyndrome.stages.terminal.label>terminal</VQEA_HemocollapseSyndrome.stages.terminal.label>
+  <!-- EN: levitation -->
+  <VQEA_Levitation.label>levitação</VQEA_Levitation.label>
+  <!-- EN: Limited flight that allows this colonist to levitate over terrain. They will ignore terrain movement costs when moving. -->
+  <VQEA_Levitation.description>Voo limitado que permite a este colono levitar sobre o terreno. Ignora o custo de movimento do terreno ao andar.</VQEA_Levitation.description>
+  <!-- EN: invisibility -->
+  <VQEA_Invisibility.label>invisibilidade</VQEA_Invisibility.label>
+  <!-- EN: This person has used psychic suggestion to turn themselves invisible for a short duration. -->
+  <VQEA_Invisibility.description>Esta pessoa usou sugestão psíquica para ficar invisível por pouco tempo.</VQEA_Invisibility.description>
+  <!-- EN: self-repairing tissue -->
+  <VQEA_SelfRepairingTissue.label>tecido autorreparador</VQEA_SelfRepairingTissue.label>
+  <!-- EN: This person possesses archite-woven regenerative tissue that continuously rebuilds damaged cells and restores lost structure. They are capable of regrowing missing organs and body parts, but the process takes time. -->
+  <VQEA_SelfRepairingTissue.description>Esta pessoa tem tecido regenerativo tecido com arquitas, que reconstrói sem parar as células danificadas e restaura o que foi perdido. Consegue regenerar órgãos e partes do corpo, mas o processo leva tempo.</VQEA_SelfRepairingTissue.description>
+  <!-- EN: regenerating -->
+  <VQEA_Regenerating.label>regenerando</VQEA_Regenerating.label>
+  <!-- EN: Regenerating wounds, new and old. -->
+  <VQEA_Regenerating.description>Regenerando feridas, novas e antigas.</VQEA_Regenerating.description>
+  <!-- EN: {0} in the {1} -->
+  <VQEA_Regenerating.labelNounPretty>{0} em {1}</VQEA_Regenerating.labelNounPretty>
+  <!-- EN: matter phasing -->
+  <VQEA_MatterPhasing.label>defasagem da matéria</VQEA_MatterPhasing.label>
+  <!-- EN: This person has shifted into an intangible state, letting them pass through walls before becoming solid again. -->
+  <VQEA_MatterPhasing.description>Esta pessoa ficou intangível e pode atravessar paredes antes de voltar a ser sólida.</VQEA_MatterPhasing.description>
+  <!-- EN: dying -->
+  <VQEA_SuicideHediff.label>morrendo</VQEA_SuicideHediff.label>
+  <!-- EN: This creature is dying. -->
+  <VQEA_SuicideHediff.description>Esta criatura está morrendo.</VQEA_SuicideHediff.description>
+</LanguageData>

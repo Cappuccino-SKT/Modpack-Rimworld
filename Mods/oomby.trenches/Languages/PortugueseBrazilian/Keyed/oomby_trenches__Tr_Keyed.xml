@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <!-- EN: Take cover! -->
+  <Tr_TakeCover>Abrigar-se!</Tr_TakeCover>
+  <!-- EN: The selected pawns run to the nearest shelter with room and go down, out of reach of shells and bullets. -->
+  <Tr_TakeCoverDesc>As pessoas selecionadas correm para o abrigo mais próximo com vaga e descem, fora do alcance de granadas e balas.</Tr_TakeCoverDesc>
+  <!-- EN: {0}: no shelter with room within reach. -->
+  <Tr_TakeCoverNoRoom>{0}: nenhum abrigo com vaga ao alcance.</Tr_TakeCoverNoRoom>
+  <!-- EN: Underground: {0} / {1} -->
+  <Tr_ShelterOccupants>No subsolo: {0} / {1}</Tr_ShelterOccupants>
+  <!-- EN: Everyone up -->
+  <Tr_ShelterExit>Todos para cima</Tr_ShelterExit>
+  <!-- EN: All the pawns in this shelter climb back up. -->
+  <Tr_ShelterExitDesc>Todas as pessoas deste abrigo sobem de volta.</Tr_ShelterExitDesc>
+  <!-- EN: Nobody inside -->
+  <Tr_ShelterEmpty>Ninguém dentro</Tr_ShelterEmpty>
+  <!-- EN: Take cover in the shelter -->
+  <Tr_ShelterEnter>Abrigar-se no abrigo</Tr_ShelterEnter>
+  <!-- EN: full -->
+  <Tr_ShelterFull>cheio</Tr_ShelterFull>
+  <!-- EN: Supplies: {0} -->
+  <Tr_ShelterStock>Suprimentos: {0}</Tr_ShelterStock>
+  <!-- EN: Shelter collapsed -->
+  <Tr_ShelterCollapseLabel>Abrigo desabou</Tr_ShelterCollapseLabel>
+  <!-- EN: {0} has caved in. Part of what was stored there is lost under the rubble; the {1} pawn(s) inside crawled out, injured. -->
+  <Tr_ShelterCollapseText>{0} desabou. Parte do que estava guardado se perdeu sob os escombros; as {1} pessoa(s) lá dentro saíram rastejando, feridas.</Tr_ShelterCollapseText>
+  <!-- EN: Must be laid inside a trench. -->
+  <Tr_OnlyInTrench>Precisa ser posto dentro de uma trincheira.</Tr_OnlyInTrench>
+  <!-- EN: Time to climb down into a trench: {0}% -->
+  <Tr_SettingEnter>Tempo para descer numa trincheira: {0}%</Tr_SettingEnter>
+  <!-- EN: Extra time a pawn needs to get down into a trench. 100% = default, 0% = instant. -->
+  <Tr_SettingEnterDesc>Tempo extra que uma pessoa leva para descer numa trincheira. 100% = padrão, 0% = na hora.</Tr_SettingEnterDesc>
+  <!-- EN: Time to climb out of a trench: {0}% -->
+  <Tr_SettingExit>Tempo para sair de uma trincheira: {0}%</Tr_SettingExit>
+  <!-- EN: Extra time a pawn needs to climb out of a trench. 100% = default, 0% = instant. -->
+  <Tr_SettingExitDesc>Tempo extra que uma pessoa leva para sair de uma trincheira. 100% = padrão, 0% = na hora.</Tr_SettingExitDesc>
+  <!-- EN: Preference for staying in the trench: {0} -->
+  <Tr_SettingPath>Preferência por ficar na trincheira: {0}</Tr_SettingPath>
+  <!-- EN: How strongly pawns already in a trench avoid leaving it. 0 = no preference, 60 = default, 200 = they almost never leave the trench network. -->
+  <Tr_SettingPathDesc>O quanto quem já está numa trincheira evita sair dela. 0 = sem preferência, 60 = padrão, 200 = quase nunca sai da rede de trincheiras.</Tr_SettingPathDesc>
+  <!-- EN: Reset to defaults -->
+  <Tr_SettingReset>Restaurar padrões</Tr_SettingReset>
+</LanguageData>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <!-- EN: shield max energy -->
+  <VEF_EnergyShieldEnergyMaxBuilding.label>energia máxima do escudo</VEF_EnergyShieldEnergyMaxBuilding.label>
+  <!-- EN: The maximum energy the shield can have. More energy allows the shield to absorb more damage. -->
+  <VEF_EnergyShieldEnergyMaxBuilding.description>A energia máxima que o escudo pode ter. Mais energia permite absorver mais dano.</VEF_EnergyShieldEnergyMaxBuilding.description>
+  <!-- EN: {0}00 -->
+  <VEF_EnergyShieldEnergyMaxBuilding.formatString>{0}00</VEF_EnergyShieldEnergyMaxBuilding.formatString>
+  <!-- EN: shield recharge rate -->
+  <VEF_EnergyShieldRechargeRateBuilding.label>recarga do escudo</VEF_EnergyShieldRechargeRateBuilding.label>
+  <!-- EN: The rate at which the shield recharges energy per second, as long as it is not broken. -->
+  <VEF_EnergyShieldRechargeRateBuilding.description>A velocidade com que o escudo recupera energia por segundo, enquanto não estiver rompido.</VEF_EnergyShieldRechargeRateBuilding.description>
+  <!-- EN: {0}/s -->
+  <VEF_EnergyShieldRechargeRateBuilding.formatString>{0}/s</VEF_EnergyShieldRechargeRateBuilding.formatString>
+  <!-- EN: shield radius -->
+  <VEF_EnergyShieldRadiusBuilding.label>raio do escudo</VEF_EnergyShieldRadiusBuilding.label>
+  <!-- EN: The radius of the energy shield protection. -->
+  <VEF_EnergyShieldRadiusBuilding.description>O raio de proteção do escudo de energia.</VEF_EnergyShieldRadiusBuilding.description>
+  <!-- EN: {0} c -->
+  <VEF_EnergyShieldRadiusBuilding.formatString>{0} c</VEF_EnergyShieldRadiusBuilding.formatString>
+  <!-- EN: learning rate -->
+  <VEF_BuildingLearningRateOffset.label>velocidade de aprendizado</VEF_BuildingLearningRateOffset.label>
+  <!-- EN: A multiplier on how quickly children learn during lessons which are assisted by this. -->
+  <VEF_BuildingLearningRateOffset.description>Multiplica a velocidade com que as crianças aprendem nas aulas com a ajuda disto.</VEF_BuildingLearningRateOffset.description>
+  <!-- EN: breakdown factor -->
+  <VEF_BuildingBreakdownFactor.label>fator de quebra</VEF_BuildingBreakdownFactor.label>
+  <!-- EN: A multiplier on how often this building breaks down. -->
+  <VEF_BuildingBreakdownFactor.description>Multiplica a frequência com que este prédio quebra.</VEF_BuildingBreakdownFactor.description>
+  <!-- EN: maximum overclock factor -->
+  <VEF_BuildingMaxOverclockFactor.label>fator máximo de sobrecarga</VEF_BuildingMaxOverclockFactor.label>
+  <!-- EN: A multiplier on the maximum possible overclock of a factory. -->
+  <VEF_BuildingMaxOverclockFactor.description>Multiplica a sobrecarga máxima possível de uma fábrica.</VEF_BuildingMaxOverclockFactor.description>
+  <!-- EN: heat per second factor -->
+  <VEF_FactoryHeatPerSecondFactor.label>fator de calor por segundo</VEF_FactoryHeatPerSecondFactor.label>
+  <!-- EN: A multiplier on the heat per second produced by a factory. -->
+  <VEF_FactoryHeatPerSecondFactor.description>Multiplica o calor por segundo produzido por uma fábrica.</VEF_FactoryHeatPerSecondFactor.description>
+</LanguageData>

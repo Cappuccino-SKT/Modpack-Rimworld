@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <!-- EN: Agarilux Prime produces harmful gas -->
+  <AB_UseAgariluxParticles>O Agarilux Primordial produz gás nocivo</AB_UseAgariluxParticles>
+  <!-- EN: The Agarilux Prime mushroom in the Mycotic Jungle produces a cloud of brutally harmful spores that will damage anything. If you dislike this mechanic you can toggle it with this option. -->
+  <AB_UseAgariluxParticlesDesc>O cogumelo Agarilux Primordial da selva micótica produz uma nuvem de esporos brutalmente nocivos que danificam tudo. Se não gostar dessa mecânica, pode desligá-la nesta opção.</AB_UseAgariluxParticlesDesc>
+  <!-- EN: Create {0} on planet generation -->
+  <AB_SpawnBiome>Criar {0} na geração do planeta</AB_SpawnBiome>
+  <!-- EN: Remove all vanilla biomes -->
+  <AB_RemoveVanillaBiomes>Remover todos os biomas do jogo base</AB_RemoveVanillaBiomes>
+  <!-- EN: By enabling this option you can generate a completely alien planet, using only modded biomes. -->
+  <AB_RemoveVanillaBiomesDesc>Ativando esta opção, você pode gerar um planeta completamente alienígena, só com biomas de mods.</AB_RemoveVanillaBiomesDesc>
+  <!-- EN: Remove all Odyssey biomes -->
+  <AB_RemoveOdysseyBiomes>Remover todos os biomas do Odyssey</AB_RemoveOdysseyBiomes>
+  <!-- EN: By enabling this option you can remove the Odyssey biomes. -->
+  <AB_RemoveOdysseyBiomesDesc>Ativando esta opção, você pode remover os biomas do Odyssey.</AB_RemoveOdysseyBiomesDesc>
+  <!-- EN: Brighter Forsaken Crags -->
+  <AB_BrighterCrags>Penhascos abandonados mais claros</AB_BrighterCrags>
+  <!-- EN: Makes the Forsaken Crags quite brighter, for those with a PC screen that makes the Crags WAY too dark. This change takes effect on the next weather change on the map, or on savegame reload. -->
+  <AB_BrighterCragsDescription>Deixa os penhascos abandonados bem mais claros, para quem tem uma tela que os deixa escuros DEMAIS. A mudança vale na próxima troca de clima do mapa ou ao recarregar o save.</AB_BrighterCragsDescription>
+  <!-- EN: Show "biome structures" button in Furniture -->
+  <AB_ShowBuildingsButton>Mostrar o botão "estruturas do bioma" em Mobília</AB_ShowBuildingsButton>
+  <!-- EN: By default, there will be a "build biome structures" button in the Furniture architect menu. You can use this to build biome specific buildings. But you can also hide it, because reeeee bloat, and then you won't see it. You also won't be able to build them. That's the price to pay.\n\nRequires game reload. -->
+  <AB_ShowBuildingsButtonDescription>Por padrão, há um botão "construir estruturas do bioma" no menu Mobília do arquiteto. Ele serve para construir prédios específicos do bioma. Mas você também pode escondê-lo, porque "aaaah, inchaço", e aí não vai vê-lo. Também não vai poder construí-los. É o preço a pagar.\n\nRequer reiniciar o jogo.</AB_ShowBuildingsButtonDescription>
+  <!-- EN: Biome commonalities. Set to 0 to disable the biome from generating: -->
+  <AB_BiomeCommonalities>Frequência dos biomas. Use 0 para impedir que o bioma seja gerado:</AB_BiomeCommonalities>
+  <!-- EN: Map feature commonality (requires new world) -->
+  <AB_MutatorMultiplier>Frequência das características do mapa (requer mundo novo)</AB_MutatorMultiplier>
+  <!-- EN: The commonality of map features in a non-landmark map will be multiplied by this number (20 means a given map feature will be 20 times as common). Requires making a new planet! -->
+  <AB_MutatorMultiplierTooltip>A frequência das características de mapa em mapas sem marco será multiplicada por este número (20 significa que uma característica será 20 vezes mais comum). Requer criar um planeta novo!</AB_MutatorMultiplierTooltip>
+  <!-- EN: Landmark feature commonality (requires new world) -->
+  <AB_LandmarkMutatorMultiplier>Frequência das características de marco (requer mundo novo)</AB_LandmarkMutatorMultiplier>
+  <!-- EN: The commonality of map features in landmark maps will be multiplied by this number (20 means a given landmark feature will be 20 times as common). Requires making a new planet! -->
+  <AB_LandmarkMutatorMultiplierTooltip>A frequência das características de mapa em mapas com marco será multiplicada por este número (20 significa que uma característica de marco será 20 vezes mais comum). Requer criar um planeta novo!</AB_LandmarkMutatorMultiplierTooltip>
+  <!-- EN: Specific mutator commonalities: -->
+  <AB_SpecificMutatorCommonalities>Frequência específica de cada característica:</AB_SpecificMutatorCommonalities>
+  <!-- EN: The pump needs to be built on a solid propane ground -->
+  <AB_TerrainCannotSupport_Propane>A bomba precisa ser construída sobre chão de propano sólido</AB_TerrainCannotSupport_Propane>
+  <!-- EN: Porpane pumps need to be at least 12 tiles apart -->
+  <AB_Distance_Propane>As bombas de propano precisam ficar a pelo menos 12 células uma da outra</AB_Distance_Propane>
+  <!-- EN: This device will only work in an ocular forest -->
+  <AB_OcularForestOnly>Este aparelho só funciona numa floresta ocular</AB_OcularForestOnly>
+  <!-- EN: Spawning a new Bumbledrone in {0} -->
+  <AB_SpawningNextBumbledrone>Novo zangão-bola em {0}</AB_SpawningNextBumbledrone>
+  <!-- EN: Since Alpha Animals is not installed, this hive is inactive -->
+  <AB_AlphaAnimalsNotInstalled>Como o Alpha Animals não está instalado, esta colmeia está inativa</AB_AlphaAnimalsNotInstalled>
+  <!-- EN: The pump must be built on top of tarred mud or a tar hole -->
+  <AB_MustPlaceOnTarPit>A bomba precisa ser construída sobre lama empichada ou um buraco de piche</AB_MustPlaceOnTarPit>
+  <!-- EN: Pump acting in low efficiency mode due to absence of Tar Hole -->
+  <AB_WarningLowEfficiency>Bomba em modo de baixa eficiência por falta de buraco de piche</AB_WarningLowEfficiency>
+  <!-- EN: Convert solar panel -->
+  <AB_ConvertToAlcyonite>Converter painel solar</AB_ConvertToAlcyonite>
+  <!-- EN: Convert this solar panel to an Alcyonite solar panel that performs 50% better under the red fog weather. -->
+  <AB_ConvertToAlcyoniteDesc>Converte este painel solar num painel solar de alcionita, que rende 50% mais com névoa vermelha.</AB_ConvertToAlcyoniteDesc>
+  <!-- EN: In this biome. you can convert solar panels to Alcyonite solar panels that perform 50% better under the red fog weather. -->
+  <AB_AlcyoniteSolarPanelsDescription>Neste bioma, você pode converter painéis solares em painéis solares de alcionita, que rendem 50% mais com névoa vermelha.</AB_AlcyoniteSolarPanelsDescription>
+  <!-- EN: Upgrade solar panels -->
+  <AB_AlcyoniteSolarPanels>Melhorar painéis solares</AB_AlcyoniteSolarPanels>
+  <!-- EN: To build these, make a solar panel and use the "Convert solar panel" button -->
+  <AB_AlcyoniteSolarPanels_NotBuildable>Para construir estes, faça um painel solar e use o botão "Converter painel solar"</AB_AlcyoniteSolarPanels_NotBuildable>
+  <!-- EN: Switches propane flow on/off. -->
+  <AB_PropaneValve>Liga e desliga o fluxo de propano.</AB_PropaneValve>
+  <!-- EN: Switches propane flow on/off. A colonist will come open/close the valve. -->
+  <AB_PropaneValveDesc>Liga e desliga o fluxo de propano. Um colono virá abrir/fechar a válvula.</AB_PropaneValveDesc>
+  <!-- EN: Extract 150 propane -->
+  <AB_ExtractPropane>Extrair 150 de propano</AB_ExtractPropane>
+  <!-- EN: Extract 150 propane from the tank. A colonist will come to extract it. -->
+  <AB_ExtractPropaneDesc>Extrai 150 de propano do tanque. Um colono virá fazer a extração.</AB_ExtractPropaneDesc>
+  <!-- EN: This building needs to be at least 15 tiles apart from a similar building -->
+  <AB_Distance_Generic_Fifteen>Esta construção precisa ficar a pelo menos 15 células de outra parecida</AB_Distance_Generic_Fifteen>
+  <!-- EN: The ancient freezing vents have become active, lowering temperatures. -->
+  <AB_AncientFreezingVentStartUp>Os respiradouros congelantes ancestrais foram ativados, baixando a temperatura.</AB_AncientFreezingVentStartUp>
+  <!-- EN: The ancient freezing vents are stopping. -->
+  <AB_AncientFreezingVentShutdown>Os respiradouros congelantes ancestrais estão parando.</AB_AncientFreezingVentShutdown>
+  <!-- EN: venting freezing air. -->
+  <AB_AncientFreezingVentActive>soltando ar congelante.</AB_AncientFreezingVentActive>
+  <!-- EN: The ancient gray pall vents have become active, spewing a sickly looking smoke. -->
+  <AB_AncientGreyPallVentStartUp>Os respiradouros de manto cinza ancestrais foram ativados, soltando uma fumaça de aspecto doentio.</AB_AncientGreyPallVentStartUp>
+  <!-- EN: The ancient gray pall vents are stopping. -->
+  <AB_AncientGreyPallVentShutdown>Os respiradouros de manto cinza ancestrais estão parando.</AB_AncientGreyPallVentShutdown>
+  <!-- EN: venting sickly looking smoke. -->
+  <AB_AncientGreyPallVentActive>soltando fumaça de aspecto doentio.</AB_AncientGreyPallVentActive>
+  <!-- EN: The ancient blood rain vents have become active, spewing a thick blood-red vapor. -->
+  <AB_AncientBloodRainVentStartUp>Os respiradouros de chuva de sangue ancestrais foram ativados, soltando um vapor grosso cor de sangue.</AB_AncientBloodRainVentStartUp>
+  <!-- EN: The ancient blood rain vents are stopping. -->
+  <AB_AncientBloodRainVentShutdown>Os respiradouros de chuva de sangue ancestrais estão parando.</AB_AncientBloodRainVentShutdown>
+  <!-- EN: venting blood-red vapor. -->
+  <AB_AncientBloodRainVentActive>soltando vapor cor de sangue.</AB_AncientBloodRainVentActive>
+  <!-- EN: The ancient death pall vents have become active, spewing a rancid cloud of corpse reanimating archites. -->
+  <AB_AncientDeathPallVentStartUp>Os respiradouros de manto da morte ancestrais foram ativados, soltando uma nuvem rançosa de arquitas que reanimam cadáveres.</AB_AncientDeathPallVentStartUp>
+  <!-- EN: The ancient death pall vents are stopping. -->
+  <AB_AncientDeathPallVentShutdown>Os respiradouros de manto da morte ancestrais estão parando.</AB_AncientDeathPallVentShutdown>
+  <!-- EN: venting cloud of corpse reanimating archites. -->
+  <AB_AncientDeathPallVentActive>soltando nuvem de arquitas que reanimam cadáveres.</AB_AncientDeathPallVentActive>
+  <!-- EN: This slime compressor is not working at the moment -->
+  <AB_SlimeCompressorNotWorking>Este compactador de gosma não está funcionando no momento</AB_SlimeCompressorNotWorking>
+  <!-- EN: This is just a disgusting puddle of smelly tar -->
+  <AB_NotReallyAPlant>Isto é só uma poça nojenta de piche fedorento</AB_NotReallyAPlant>
+  <!-- EN: Need less fertile terrain. -->
+  <AB_MessageWarningTooHighFertility>Precisa de terreno menos fértil.</AB_MessageWarningTooHighFertility>
+  <!-- EN: build biome structures -->
+  <AB_BiomeBuildings>construir estruturas do bioma</AB_BiomeBuildings>
+  <!-- EN: Open a menu to build biome-specific buildings. -->
+  <AB_BiomeBuildingsDesc>Abre um menu para construir prédios específicos do bioma.</AB_BiomeBuildingsDesc>
+  <!-- EN: Current biome:  -->
+  <AM_CurrentBiome>Bioma atual:</AM_CurrentBiome>
+  <!-- EN: Available structures for this biome: -->
+  <AM_AvailableStructures>Estruturas disponíveis para este bioma:</AM_AvailableStructures>
+  <!-- EN: None -->
+  <AM_None>Nenhum</AM_None>
+  <!-- EN: Can't be built until {0} has been researched by the colony -->
+  <AB_ResearchNeeded>Não pode ser construído até a colônia pesquisar {0}</AB_ResearchNeeded>
+  <!-- EN: Features in this tile: -->
+  <AB_FeaturesInThisTile>Características desta região:</AB_FeaturesInThisTile>
+  <!-- EN: Ambient radiation mutation for {0} -->
+  <AB_AmbientRadiationLabel>Mutação por radiação ambiente em {0}</AB_AmbientRadiationLabel>
+  <!-- EN: Due to the ambient radiation in this place, {0} has received the following mutation: {1} -->
+  <AB_AmbientRadiationDesc>Por causa da radiação ambiente deste lugar, {0} recebeu a seguinte mutação: {1}</AB_AmbientRadiationDesc>
+  <!-- EN: Drill for Marble Chunks -->
+  <AB_ChunkMarbleMine>Perfurar para pedaços de mármore</AB_ChunkMarbleMine>
+  <!-- EN: Drill for Sandstone Chunks -->
+  <AB_ChunkSandstoneMine>Perfurar para pedaços de arenito</AB_ChunkSandstoneMine>
+  <!-- EN: Drill for Limestone Chunks -->
+  <AB_ChunkLimestoneMine>Perfurar para pedaços de calcário</AB_ChunkLimestoneMine>
+  <!-- EN: Drill for Granite Chunks -->
+  <AB_ChunkGraniteMine>Perfurar para pedaços de granito</AB_ChunkGraniteMine>
+  <!-- EN: Drill for Slate Chunks -->
+  <AB_ChunkSlateMine>Perfurar para pedaços de ardósia</AB_ChunkSlateMine>
+  <!-- EN: Drill for Random Chunks -->
+  <AB_ChunkRandomMine>Perfurar atrás de pedaços aleatórios</AB_ChunkRandomMine>
+  <!-- EN: Choose chunk type to drill -->
+  <AB_ChooseMine>Escolher tipo de pedaço a perfurar</AB_ChooseMine>
+  <!-- EN: Choose chunk type to drill. You can choose any of the base game rock types, or random -->
+  <AB_ChooseMineDesc>Escolha o tipo de pedaço a perfurar. Pode ser qualquer tipo de rocha do jogo base, ou aleatório</AB_ChooseMineDesc>
+  <!-- EN: Drilling stone type:  -->
+  <AB_DrillingStoneType>Tipo de pedra perfurada:</AB_DrillingStoneType>
+  <!-- EN: Drilling stone type: Random -->
+  <AB_DrillingStoneTypeRandom>Tipo de pedra perfurada: aleatório</AB_DrillingStoneTypeRandom>
+  <!-- EN: Progress to next chunk -->
+  <AB_ProgressToNextPortion>Progresso até o próximo pedaço</AB_ProgressToNextPortion>
+  <!-- EN: {0} commonality multiplier -->
+  <AB_BiomeMultiplier>Multiplicador de frequência de {0}</AB_BiomeMultiplier>
+  <!-- EN: This multiplier will affect the spawn changes (commonality) of the {0} when creating a world. Bear in mind that commonalities in biomes are not linear, so you will have to experiment and tweak until you get a biome density that suits your needs. Bear in mind too that this could be affected by other mods that either add new biomes or modify the way the game creates a world. -->
+  <AB_MultiplierTooltip>Este multiplicador afeta a chance de aparecer (frequência) de {0} ao criar um mundo. Lembre que a frequência dos biomas não é linear, então você vai ter que experimentar e ajustar até chegar a uma densidade que sirva. Lembre também que isso pode ser afetado por outros mods que adicionam biomas ou mudam o jeito como o jogo cria o mundo.</AB_MultiplierTooltip>
+  <!-- EN: Reset {0} -->
+  <AB_Reset>Redefinir {0}</AB_Reset>
+  <!-- EN: Reset -->
+  <AB_Reset_Plain>Restaurar</AB_Reset_Plain>
+  <!-- EN: Image -->
+  <AB_TabImage>Imagem</AB_TabImage>
+</LanguageData>

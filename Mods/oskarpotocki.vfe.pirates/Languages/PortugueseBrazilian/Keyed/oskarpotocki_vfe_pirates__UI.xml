@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <!-- EN: Select Your Curses -->
+  <VFEP.ChooseCurses>Escolha suas maldições</VFEP.ChooseCurses>
+  <!-- EN: The more curses you select, the more pawns your storyteller will allow you to have, and the rarer big threat events will be. -->
+  <VFEP.ChooseCurses.Desc>Quanto mais maldições você escolher, mais pessoas o narrador vai deixar você ter, e mais raros serão os grandes eventos de ameaça.</VFEP.ChooseCurses.Desc>
+  <!-- EN: Desired population max: {0} -->
+  <VFEP.DesiredPopMax>População máxima desejada: {0}</VFEP.DesiredPopMax>
+  <!-- EN: Days between Big Threats: {0} -->
+  <VFEP.DaysBigThreats>Dias entre grandes ameaças: {0}</VFEP.DaysBigThreats>
+  <!-- EN: Warcasket Customization -->
+  <VFEP.WarcasketCustom>Personalização do caixão de guerra</VFEP.WarcasketCustom>
+  <!-- EN: When you press Accept, a crafter you’ve chosen will bring the resources onto the frame and begin\nassembling a warcasket. The speed of the assembly depends on the crafting skill of your crafter.\nOnce the process is completed, a warcasket will leave the platform. Be careful, as the pawn\non the platform can still die of hunger when on the platform - you should prioritize the warcasket\nassembly over other tasks. -->
+  <VFEP.WarcasketText>Ao apertar Aceitar, o artesão escolhido vai levar os recursos até a estrutura e começar a\nmontar um caixão de guerra. A velocidade da montagem depende da habilidade de produção do artesão.\nQuando o processo acabar, um caixão de guerra vai sair da plataforma. Cuidado: a pessoa\nna plataforma ainda pode morrer de fome enquanto estiver lá. Dê prioridade à montagem do caixão de guerra\nsobre outras tarefas.</VFEP.WarcasketText>
+  <!-- EN: Work Amount: -->
+  <VFEP.WorkAmount>Quantidade de trabalho:</VFEP.WorkAmount>
+  <!-- EN: Crafter: -->
+  <VFEP.Crafter>Artesão:</VFEP.Crafter>
+  <!-- EN: Helmet: -->
+  <VFEP.Helmet>Elmo:</VFEP.Helmet>
+  <!-- EN: Shoulderpads: -->
+  <VFEP.Shoulderpads>Ombreiras:</VFEP.Shoulderpads>
+  <!-- EN: Armor frame: -->
+  <VFEP.ArmorFrame>Carcaça:</VFEP.ArmorFrame>
+  <!-- EN: Total Cost: -->
+  <VFEP.TotalCost>Custo total:</VFEP.TotalCost>
+  <!-- EN: Resource Cost: -->
+  <VFEP.ResourceCost>Custo em recursos:</VFEP.ResourceCost>
+  <!-- EN: Research more warcasket technology to unlock more armor pieces. -->
+  <VFEP.ResearchText>Pesquise mais tecnologia de caixão de guerra para liberar mais peças de armadura.</VFEP.ResearchText>
+  <!-- EN: Research warcaskets to learn how to use the foundry. -->
+  <VFEP.NoWarcaskets>Pesquise caixões de guerra para aprender a usar a fundição.</VFEP.NoWarcaskets>
+  <!-- EN: Not enough chemfuel for power jump. -->
+  <VFEP.NotEnoughFuel>Quimicombustível insuficiente para o salto propulsado.</VFEP.NotEnoughFuel>
+  <!-- EN: Siege mode off -->
+  <VFEP.SiegeModeOff>Modo cerco desligado</VFEP.SiegeModeOff>
+  <!-- EN: Siege mode on -->
+  <VFEP.SiegeModeOn>Modo cerco ligado</VFEP.SiegeModeOn>
+  <!-- EN: Cannot entomb in warcasket: {0} -->
+  <VFEPirates.CannotEntomb>Não pode sepultar no caixão de guerra: {0}</VFEPirates.CannotEntomb>
+  <!-- EN: Entomb in warcasket -->
+  <VFEPirates.EntombInWarcasket>Sepultar no caixão de guerra</VFEPirates.EntombInWarcasket>
+  <!-- EN:  (Warning: {PAWN_nameDef} is not capable of violence, it will make {PAWN_objective} useless.) -->
+  <VFEP.EntombInIncapableOfViolenceWarning> (Aviso: {PAWN_nameDef} é incapaz de violência; isso vai deixar {PAWN_objective} inútil.)</VFEP.EntombInIncapableOfViolenceWarning>
+  <!-- EN: Activate shield field -->
+  <VFEP.ActivateShield>Ativar campo de escudo</VFEP.ActivateShield>
+  <!-- EN: Click to activate the shield field. It has 10 seconds of active mode and then 90 seconds cooldown. -->
+  <VFEP.ActivateShieldDesc>Clique para ativar o campo de escudo. Fica 10 segundos ativo e depois tem 90 segundos de recarga.</VFEP.ActivateShieldDesc>
+  <!-- EN: Deploy small, combat-ready drones from the docking port in the back. These drones can be controlled to provide firing support, but will self-detonate after 60 seconds. -->
+  <VFEP.DeployWarDrone>Solta drones pequenos e prontos para o combate da doca nas costas. Os drones podem ser controlados para dar apoio de fogo, mas se autodetonam depois de 60 segundos.</VFEP.DeployWarDrone>
+  <!-- EN: Fire a long range spidermine that will automatically run towards the nearest enemy, detonating as soon as it reaches them. -->
+  <VFEP.DeploySpidermineDesc>Dispara uma mina-aranha de longo alcance que corre sozinha até o inimigo mais próximo e detona assim que o alcança.</VFEP.DeploySpidermineDesc>
+  <!-- EN: Cancel -->
+  <VFEP.Cancel>Cancelar</VFEP.Cancel>
+  <!-- EN: Children cannot use this. -->
+  <VFEP.ChildrenCannotUseThis>Crianças não podem usar isto.</VFEP.ChildrenCannotUseThis>
+</LanguageData>

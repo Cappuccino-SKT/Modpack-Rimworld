@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <!-- EN: propane pipe -->
+  <AB_PropanePipe.label>cano de propano</AB_PropanePipe.label>
+  <!-- EN: Steel pipes designed to transport pressurized liquid propane. -->
+  <AB_PropanePipe.description>Canos de aço feitos para transportar propano líquido pressurizado.</AB_PropanePipe.description>
+  <!-- EN: subterranean propane pipe -->
+  <AB_PropanePipe_Underground.label>cano de propano subterrâneo</AB_PropanePipe_Underground.label>
+  <!-- EN: Subterranean steel pipes designed to transport pressurized liquid propane. -->
+  <AB_PropanePipe_Underground.description>Canos de aço subterrâneos feitos para transportar propano líquido pressurizado.</AB_PropanePipe_Underground.description>
+  <!-- EN: propane valve -->
+  <AB_Propane_Valve.label>válvula de propano</AB_Propane_Valve.label>
+  <!-- EN: Switches propane flow on/off. -->
+  <AB_Propane_Valve.description>Liga e desliga o fluxo de propano.</AB_Propane_Valve.description>
+  <!-- EN: propane storage tank -->
+  <AB_PropaneStorage.label>tanque de propano</AB_PropaneStorage.label>
+  <!-- EN: An industrial liquid storage tank meant for storing pressurized propane delivered via propane pipe network. Tanks can be designated to be siphoned for usable propane as needed. If damaged even lightly the escaping fumes will very swiftly create a gaseous fireball, the size of the resulting explosion will depend on the amount stored within. -->
+  <AB_PropaneStorage.description>Um tanque industrial para guardar o propano pressurizado que chega pela rede de canos. Os tanques podem ser marcados para liberar propano utilizável quando preciso. Se danificado, mesmo de leve, os vapores que escapam criam muito rápido uma bola de fogo, e o tamanho da explosão depende da quantidade guardada.</AB_PropaneStorage.description>
+  <!-- EN: propane tap -->
+  <AB_PropaneTap.label>torneira de propano</AB_PropaneTap.label>
+  <!-- EN: A hopper-like storage basin meant to hold dispensed propane from storage tanks periodically for use later. -->
+  <AB_PropaneTap.description>Uma bacia tipo funil que recebe de tempos em tempos o propano liberado pelos tanques, para uso posterior.</AB_PropaneTap.description>
+  <!-- EN: propane drain -->
+  <AB_PropaneDrain.label>entrada de propano</AB_PropaneDrain.label>
+  <!-- EN: A hopper-like storage basin meant to input propane into the network, filling up connected storage tanks. -->
+  <AB_PropaneDrain.description>Uma bacia tipo funil para colocar propano na rede, enchendo os tanques conectados.</AB_PropaneDrain.description>
+  <!-- EN: propane pump -->
+  <AB_PropanePump.label>bomba de propano</AB_PropanePump.label>
+  <!-- EN: Extracts propane from a liquid propane lake and refines it into usable fuel. -->
+  <AB_PropanePump.description>Extrai propano de um lago de propano líquido e o refina em combustível utilizável.</AB_PropanePump.description>
+</LanguageData>

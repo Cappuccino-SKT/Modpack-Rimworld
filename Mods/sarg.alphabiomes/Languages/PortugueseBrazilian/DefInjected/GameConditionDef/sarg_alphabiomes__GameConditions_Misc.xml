@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <!-- EN: acid rain -->
+  <AB_AcidRainCondition.label>chuva ácida</AB_AcidRainCondition.label>
+  <!-- EN: Toxic gas emissions from nearby volcanically active calderas are precipitating in the form of dangerous acid rain. Acid rain has an adverse impact on flora and fauna, killing insect and aquatic life-forms as well as having impacts on human health. -->
+  <AB_AcidRainCondition.description>Emissões de gases tóxicos de caldeiras vulcânicas ativas próximas estão caindo como uma perigosa chuva ácida. A chuva ácida prejudica flora e fauna, mata insetos e formas de vida aquáticas e afeta a saúde humana.</AB_AcidRainCondition.description>
+  <!-- EN: acid rain will fall all over the area around [map_definite] for [gameConditionDuration_duration], killing outdoor plant and animal life -->
+  <AB_AcidRainCondition.descriptionFuture>chuva ácida vai cair em toda a área em volta de [map_definite] por [gameConditionDuration_duration], matando plantas e animais ao ar livre</AB_AcidRainCondition.descriptionFuture>
+  <!-- EN: The worst of the acid rain has passed. -->
+  <AB_AcidRainCondition.endMessage>O pior da chuva ácida já passou.</AB_AcidRainCondition.endMessage>
+  <!-- EN: Toxic gas emissions from nearby volcanically active calderas are precipitating in the form of dangerous acid rain. Acid rain has an adverse impact on flora and fauna, killing insect and aquatic life-forms as well as having impacts on human health.\n\nColonists and animals that aren't resistant to acid burns should stay inside for the duration of the rain. -->
+  <AB_AcidRainCondition.letterText>Emissões de gases tóxicos de caldeiras vulcânicas ativas próximas estão caindo como uma perigosa chuva ácida. A chuva ácida prejudica flora e fauna, mata insetos e formas de vida aquáticas e afeta a saúde humana.\n\nColonos e animais que não resistem a queimaduras ácidas devem ficar dentro de casa enquanto durar a chuva.</AB_AcidRainCondition.letterText>
+  <!-- EN: volcanic heat wave -->
+  <AB_VolcanicHeatWave.label>onda de calor vulcânica</AB_VolcanicHeatWave.label>
+  <!-- EN: The extreme heat produced by the magma lakes bakes this region. Large plumes of superheated air rise from the lava, heating their surroundings and making them barely inhabitable. -->
+  <AB_VolcanicHeatWave.description>O calor extremo dos lagos de magma assa esta região. Grandes colunas de ar superaquecido sobem da lava, esquentando os arredores e deixando-os quase inabitáveis.</AB_VolcanicHeatWave.description>
+</LanguageData>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <!-- EN: The confections have spoiled due to a lack of fuel or power in the bakery oven -->
+  <VCE_OvenFailurePower>Os doces estragaram por falta de lenha ou energia no forno de confeitaria</VCE_OvenFailurePower>
+  <!-- EN: The confections are spoiling fast due to a lack of fuel or power in the bakery oven -->
+  <VCE_OvenFailurePowerWarning>Os doces estão estragando rápido por falta de lenha ou energia no forno de confeitaria</VCE_OvenFailurePowerWarning>
+  <!-- EN: This bakery oven is not working at the moment -->
+  <VCE_BakeryOvenNotWorking>Este forno de confeitaria não está funcionando no momento</VCE_BakeryOvenNotWorking>
+  <!-- EN: Reset -->
+  <VCE_Reset>Restaurar</VCE_Reset>
+  <!-- EN: Max negative memory removed by simple confections -->
+  <VCE_SimpleMealMood>Lembrança ruim máxima removida por doces simples</VCE_SimpleMealMood>
+  <!-- EN: Ingesting a simple confection will remove a negative memory up to this severity. -3 by default. 0 will disable the mechanic for that meal. -->
+  <VCE_SimpleMealMoodDesc>Comer um doce simples remove uma lembrança ruim até esta gravidade. -3 por padrão. 0 desliga a mecânica para esse doce.</VCE_SimpleMealMoodDesc>
+  <!-- EN: Max negative memory removed by fine confections -->
+  <VCE_FineMealMood>Lembrança ruim máxima removida por doces finos</VCE_FineMealMood>
+  <!-- EN: Ingesting a fine confection will remove a negative memory up to this severity. -5 by default. 0 will disable the mechanic for that meal. -->
+  <VCE_FineMealMoodDesc>Comer um doce fino remove uma lembrança ruim até esta gravidade. -5 por padrão. 0 desliga a mecânica para esse doce.</VCE_FineMealMoodDesc>
+  <!-- EN: Max negative memory removed by lavish confections -->
+  <VCE_LavishMealMood>Lembrança ruim máxima removida por doces luxuosos</VCE_LavishMealMood>
+  <!-- EN: Ingesting a lavish confection will remove a negative memory up to this severity. -10 by default. 0 will disable the mechanic for that meal. -->
+  <VCE_LavishMealMoodDesc>Comer um doce luxuoso remove uma lembrança ruim até esta gravidade. -10 por padrão. 0 desliga a mecânica para esse doce.</VCE_LavishMealMoodDesc>
+  <!-- EN: Max negative memory removed by gourmet confections -->
+  <VCE_GourmetMealMood>Lembrança ruim máxima removida por doces gourmet</VCE_GourmetMealMood>
+  <!-- EN: Ingesting a gourmet confection will remove a negative memory up to this severity. -15 by default. 0 will disable the mechanic for that meal. -->
+  <VCE_GourmetMealMoodDesc>Comer um doce gourmet remove uma lembrança ruim até esta gravidade. -15 por padrão. 0 desliga a mecânica para esse doce.</VCE_GourmetMealMoodDesc>
+  <!-- EN: Period before the "consumed confection" effect wanes -->
+  <VCE_TicksForEffect>Prazo até passar o efeito "comeu doce"</VCE_TicksForEffect>
+  <!-- EN: By default, consuming a confection gives a 3 day period where consuming other confections doesn't make them nullify any negative memories. -->
+  <VCE_TicksForEffectDesc>Por padrão, comer um doce abre um prazo de 3 dias em que outros doces não anulam lembranças ruins.</VCE_TicksForEffectDesc>
+</LanguageData>

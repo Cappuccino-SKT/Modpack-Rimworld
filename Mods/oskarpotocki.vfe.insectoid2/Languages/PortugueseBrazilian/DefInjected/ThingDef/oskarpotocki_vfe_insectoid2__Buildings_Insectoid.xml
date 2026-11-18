@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <!-- EN: hive wall -->
+  <VFEI_HiveWall.label>parede de colmeia</VFEI_HiveWall.label>
+  <!-- EN: An impassable wall made from insectoid goop. Capable of holding up a roof. -->
+  <VFEI_HiveWall.description>Uma parede intransponível feita de gosma insetoide. Sustenta telhado.</VFEI_HiveWall.description>
+  <!-- EN: insect jelly wall -->
+  <VFEI2_InsectJellyWall.label>parede de geleia de inseto</VFEI2_InsectJellyWall.label>
+  <!-- EN: An impassable wall made from insect jelly, constructed by the worker caste of an insectoid geneline. Capable of holding up a roof. -->
+  <VFEI2_InsectJellyWall.description>Uma parede intransponível de geleia de inseto, construída pela casta operária de uma linhagem insetoide. Sustenta telhado.</VFEI2_InsectJellyWall.description>
+  <!-- EN: royal jelly wall -->
+  <VFEI2_RoyalJellyWall.label>parede de geleia real</VFEI2_RoyalJellyWall.label>
+  <!-- EN: An impassable, hard wall made from royal jelly, constructed by the worker caste of an insectoid geneline. Capable of holding up a roof. -->
+  <VFEI2_RoyalJellyWall.description>Uma parede dura e intransponível de geleia real, construída pela casta operária de uma linhagem insetoide. Sustenta telhado.</VFEI2_RoyalJellyWall.description>
+  <!-- EN: hivestone wall -->
+  <VFEI_HivestoneWall.label>parede de pedra-colmeia</VFEI_HivestoneWall.label>
+  <!-- EN: An impassable rock wall reinforced with thick and solidified insect goop. Much stronger than standard rock wall, but flammable. Capable of holding up a roof. -->
+  <VFEI_HivestoneWall.description>Uma parede de rocha intransponível, reforçada com gosma de inseto grossa e endurecida. Bem mais forte que a parede de rocha comum, mas inflamável. Sustenta telhado.</VFEI_HivestoneWall.description>
+  <!-- EN: large glow pod -->
+  <VFEI2_LargeGlowPod.label>casulo brilhante grande</VFEI2_LargeGlowPod.label>
+  <!-- EN: A large bioluminescent pod produced by giant insects. Glows under its own light and does not perish with time. Needs to be constructed on the creep. -->
+  <VFEI2_LargeGlowPod.description>Um grande casulo bioluminescente produzido por insetos gigantes. Brilha com luz própria e não morre com o tempo. Precisa ser construído sobre a gosma.</VFEI2_LargeGlowPod.description>
+  <!-- EN: glow pod formation -->
+  <VFEI2_GlowPodFormation.label>formação de casulos brilhantes</VFEI2_GlowPodFormation.label>
+  <!-- EN: A large cluster of bioluminescent pods produced by giant insects. Glows under its own light and does not perish with time. Needs to be constructed on the creep. -->
+  <VFEI2_GlowPodFormation.description>Um grande aglomerado de casulos bioluminescentes produzidos por insetos gigantes. Brilha com luz própria e não morre com o tempo. Precisa ser construído sobre a gosma.</VFEI2_GlowPodFormation.description>
+  <!-- EN: glow pod spire -->
+  <VFEI2_GlowPodSpire.label>torre de casulos brilhantes</VFEI2_GlowPodSpire.label>
+  <!-- EN: An incredibly tall spire of bioluminescent pods produced by giant insects. Lights an area brightly enough to grow crops and does not perish with time. Needs to be constructed on the creep. -->
+  <VFEI2_GlowPodSpire.description>Uma torre altíssima de casulos bioluminescentes produzidos por insetos gigantes. Ilumina a área o bastante para cultivar e não morre com o tempo. Precisa ser construída sobre a gosma.</VFEI2_GlowPodSpire.description>
+  <!-- EN: staticpod -->
+  <VFEI2_StaticPod.label>casulo estático</VFEI2_StaticPod.label>
+  <!-- EN: A medium-sized hive structure capable of generating small amounts of electricity, produced by giant insects. Needs to be constructed on the creep and connected via conduits to batteries. -->
+  <VFEI2_StaticPod.description>Uma estrutura de colmeia média, produzida por insetos gigantes, que gera um pouco de eletricidade. Precisa ser construída sobre a gosma e ligada a baterias por conduítes.</VFEI2_StaticPod.description>
+  <!-- EN: foampod -->
+  <VFEI2_FoamPod.label>casulo de espuma</VFEI2_FoamPod.label>
+  <!-- EN: An organic, firefoam pod produced by giant insects. When it senses fire, the pod pops and sprays a fire-retardant foam in a circular field around itself. Can also be triggered manually. After some time has passed, it dies. -->
+  <VFEI2_FoamPod.description>Um casulo orgânico de espuma antifogo produzido por insetos gigantes. Quando sente fogo, estoura e borrifa espuma antichamas num círculo em volta. Também pode ser acionado à mão. Depois de um tempo, morre.</VFEI2_FoamPod.description>
+  <!-- EN: tendril farm -->
+  <VFEI2_TendrilFarm.label>fazenda de musgo-gavinha</VFEI2_TendrilFarm.label>
+  <!-- EN: A pillar that slowly grows clusters of insectoid tendrilmoss. Needs to be constructed on the creep. While tendrilmoss generally acts as good and strong cover, it can be harvested and eaten. -->
+  <VFEI2_TendrilFarm.description>Um pilar que cultiva devagar tufos de musgo-gavinha insetoide. Precisa ser construído sobre a gosma. O musgo-gavinha costuma servir de cobertura boa e forte, mas também pode ser colhido e comido.</VFEI2_TendrilFarm.description>
+  <!-- EN: creeper -->
+  <VFEI2_Creeper.label>gosmeiro</VFEI2_Creeper.label>
+  <!-- EN: A hive-like structure created by giant insects. It continuously extracts minerals and nutrition from the ground around it, feeding the hive and creating creep in surrounding area that greatly hinders the movement of anything that’s not an insectoid. If all area around a creeper is turned into creep, it will begin expunging insect jelly in regular intervals. -->
+  <VFEI2_Creeper.description>Uma estrutura parecida com colmeia, criada por insetos gigantes. Extrai sem parar minerais e nutrientes do chão em volta, alimentando a colmeia e criando gosma ao redor, que atrapalha muito o movimento de quem não é insetoide. Quando toda a área em volta vira gosma, passa a expelir geleia de inseto em intervalos regulares.</VFEI2_Creeper.description>
+  <!-- EN: jelly farm -->
+  <VFEI2_JellyFarm.label>fazenda de geleia</VFEI2_JellyFarm.label>
+  <!-- EN: A deep organic bioreactor constantly generating insect jelly from nearby minerals and nutrition, produced by giant insects. Needs to be constructed on the creep. -->
+  <VFEI2_JellyFarm.description>Um biorreator orgânico profundo, produzido por insetos gigantes, que gera geleia de inseto sem parar com os minerais e nutrientes em volta. Precisa ser construído sobre a gosma.</VFEI2_JellyFarm.description>
+  <!-- EN: infested ship chunk -->
+  <VFEI2_InfestedShipChunk.label>destroço de nave infestado</VFEI2_InfestedShipChunk.label>
+  <!-- EN: A chunk of a spacecraft covered in biomass and insect jelly. Bizarre insect chittering can be heard within the hull. Can be deconstructed to yield useful steel and components. If left alone, it is impossible to tell when the insects will emerge from within. -->
+  <VFEI2_InfestedShipChunk.description>Um pedaço de nave coberto de biomassa e geleia de inseto. Dá para ouvir um chiado bizarro de insetos dentro do casco. Pode ser desmontado para render aço e componentes úteis. Se ficar quieto, não dá para saber quando os insetos vão sair.</VFEI2_InfestedShipChunk.description>
+  <!-- EN: infested ship part -->
+  <VFEI2_InfestedShipPart.label>peça de nave infestada</VFEI2_InfestedShipPart.label>
+  <!-- EN: An ancient ship part, torn off of a craft of unknown origin. It might be thousands of years old.\n\nThis one seems to be covered in biomass and insect jelly. Bizarre insect chittering can be heard within the hull. If left alone, it is impossible to tell when the insects will emerge from within.\n\nA mysterious crashed piece of a spaceship. It may contain exotic materials, computers, even AI personas. This kind of technology can be dangerous. -->
+  <VFEI2_InfestedShipPart.description>Uma peça de nave antiga, arrancada de uma embarcação de origem desconhecida. Pode ter milhares de anos.\n\nEsta parece coberta de biomassa e geleia de inseto. Dá para ouvir um chiado bizarro de insetos dentro do casco. Se ficar quieta, não dá para saber quando os insetos vão sair.\n\nUm misterioso pedaço de nave caído. Pode conter materiais exóticos, computadores e até personas de IA. Esse tipo de tecnologia pode ser perigoso.</VFEI2_InfestedShipPart.description>
+  <!-- EN: infested ship module -->
+  <VFEI2_InfestedShipModule.label>módulo de nave infestado</VFEI2_InfestedShipModule.label>
+  <!-- EN: A mysterious segment of a long destroyed spaceship. It may contain exotic materials, computers, even AI personas. It seems to be completely covered in biomass and lumps of insectoid jelly. It is fairly certain that this old wreckage may contain great dangers. Bizarre insect chittering can be heard within the hull. If left alone, it is impossible to tell when the insects will emerge from within. -->
+  <VFEI2_InfestedShipModule.description>Um segmento misterioso de uma nave destruída há muito tempo. Pode conter materiais exóticos, computadores e até personas de IA. Parece todo coberto de biomassa e caroços de geleia insetoide. É quase certo que esse destroço velho guarde grandes perigos. Dá para ouvir um chiado bizarro de insetos dentro do casco. Se ficar quieto, não dá para saber quando os insetos vão sair.</VFEI2_InfestedShipModule.description>
+  <!-- EN: infested meteor (incoming) -->
+  <VFEI_InfestedMeteorIncoming.label>meteoro infestado (chegando)</VFEI_InfestedMeteorIncoming.label>
+  <!-- EN: kemian hive -->
+  <VFEI2_KemianHive.label>colmeia kemia</VFEI2_KemianHive.label>
+  <!-- EN: A hive of giant insects of the Kemian geneline. If activated, it will spawn additional insects and hives over time, as well as valuable insect jelly. -->
+  <VFEI2_KemianHive.description>Uma colmeia de insetos gigantes da linhagem Kemia. Ativada, gera mais insetos e colmeias com o tempo, além de valiosa geleia de inseto.</VFEI2_KemianHive.description>
+  <!-- EN: chelis hive -->
+  <VFEI2_ChelisHive.label>colmeia chelis</VFEI2_ChelisHive.label>
+  <!-- EN: A hive of giant insects of the Chelis geneline. If activated, it will spawn additional insects and hives over time, as well as valuable insect jelly. -->
+  <VFEI2_ChelisHive.description>Uma colmeia de insetos gigantes da linhagem Chelis. Ativada, gera mais insetos e colmeias com o tempo, além de valiosa geleia de inseto.</VFEI2_ChelisHive.description>
+  <!-- EN: xanides hive -->
+  <VFEI2_XanidesHive.label>colmeia xanides</VFEI2_XanidesHive.label>
+  <!-- EN: A hive of giant insects of the Xanides geneline. If activated, it will spawn additional insects and hives over time, as well as valuable insect jelly. -->
+  <VFEI2_XanidesHive.description>Uma colmeia de insetos gigantes da linhagem Xanides. Ativada, gera mais insetos e colmeias com o tempo, além de valiosa geleia de inseto.</VFEI2_XanidesHive.description>
+  <!-- EN: nuchadus hive -->
+  <VFEI2_NuchadusHive.label>colmeia nuchadus</VFEI2_NuchadusHive.label>
+  <!-- EN: A hive of giant insects of the Nuchadus geneline. If activated, it will spawn additional insects and hives over time, as well as valuable insect jelly. May explode if damaged. -->
+  <VFEI2_NuchadusHive.description>Uma colmeia de insetos gigantes da linhagem Nuchadus. Ativada, gera mais insetos e colmeias com o tempo, além de valiosa geleia de inseto. Pode explodir se danificada.</VFEI2_NuchadusHive.description>
+  <!-- EN: insectoid cocoon -->
+  <VFEI2_InsectoidCocoon.label>casulo insetoide</VFEI2_InsectoidCocoon.label>
+  <!-- EN: These jelly cocoons keep swarmlings safe from fire, extreme temperatures, and other threats while they undergo a metamorphosis process. After some time has passed, the cocoon will burst, releasing a fully grown insectoid. -->
+  <VFEI2_InsectoidCocoon.description>Estes casulos de geleia protegem os enxameiros do fogo, de temperaturas extremas e de outras ameaças durante a metamorfose. Depois de um tempo, o casulo estoura e solta um insetoide adulto.</VFEI2_InsectoidCocoon.description>
+  <!-- EN: insectoid cocoon -->
+  <VFEI2_InsectoidCocoonHive.label>casulo insetoide</VFEI2_InsectoidCocoonHive.label>
+  <!-- EN: These jelly cocoons keep swarmlings safe from fire, extreme temperatures, and other threats while they undergo a metamorphosis process. After some time has passed, the cocoon will burst, releasing a fully grown insectoid. -->
+  <VFEI2_InsectoidCocoonHive.description>Estes casulos de geleia protegem os enxameiros do fogo, de temperaturas extremas e de outras ameaças durante a metamorfose. Depois de um tempo, o casulo estoura e solta um insetoide adulto.</VFEI2_InsectoidCocoonHive.description>
+  <!-- EN: artificial basic hive -->
+  <VFEI2_ArtificialBasicHive.label>colmeia artificial básica</VFEI2_ArtificialBasicHive.label>
+  <!-- EN: An artificially constructed hive of giant insects. It is capable of spawning the most basic insectoids over time, as well as small amounts of valuable insect jelly. It requires no maintenance, but will still affect the maintenance of nearby hives. -->
+  <VFEI2_ArtificialBasicHive.description>Uma colmeia de insetos gigantes construída artificialmente. Gera com o tempo os insetoides mais básicos e um pouco de valiosa geleia de inseto. Não precisa de manutenção, mas ainda afeta a manutenção das colmeias próximas.</VFEI2_ArtificialBasicHive.description>
+  <!-- EN: artificial sorne hive -->
+  <VFEI2_ArtificialSorneHive.label>colmeia artificial sorne</VFEI2_ArtificialSorneHive.label>
+  <!-- EN: An artificially constructed hive of giant insects. It is capable of spawning various Sorne geneline insectoids over time, as well as some amount of insect jelly. It requires regular maintenance, and constructing too many hives near each other will increase the maintenance required. -->
+  <VFEI2_ArtificialSorneHive.description>Uma colmeia de insetos gigantes construída artificialmente. Gera com o tempo vários insetoides da linhagem Sorne e um pouco de geleia de inseto. Precisa de manutenção regular, e construir colmeias demais perto umas das outras aumenta a manutenção necessária.</VFEI2_ArtificialSorneHive.description>
+  <!-- EN: artificial nuchadus hive -->
+  <VFEI2_ArtificialNuchadusHive.label>colmeia artificial nuchadus</VFEI2_ArtificialNuchadusHive.label>
+  <!-- EN: An artificially constructed hive of giant insects. It is capable of spawning various Nuchadus geneline insectoids over time, as well as some amount of insect jelly. It requires regular maintenance, and constructing too many hives near each other will increase the maintenance required. -->
+  <VFEI2_ArtificialNuchadusHive.description>Uma colmeia de insetos gigantes construída artificialmente. Gera com o tempo vários insetoides da linhagem Nuchadus e um pouco de geleia de inseto. Precisa de manutenção regular, e construir colmeias demais perto umas das outras aumenta a manutenção necessária.</VFEI2_ArtificialNuchadusHive.description>
+  <!-- EN: artificial chelis hive -->
+  <VFEI2_ArtificialChelisHive.label>colmeia artificial chelis</VFEI2_ArtificialChelisHive.label>
+  <!-- EN: An artificially constructed hive of giant insects. It is capable of spawning various Chelis geneline insectoids over time, as well as some amount of insect jelly. It requires regular maintenance, and constructing too many hives near each other will increase the maintenance required. -->
+  <VFEI2_ArtificialChelisHive.description>Uma colmeia de insetos gigantes construída artificialmente. Gera com o tempo vários insetoides da linhagem Chelis e um pouco de geleia de inseto. Precisa de manutenção regular, e construir colmeias demais perto umas das outras aumenta a manutenção necessária.</VFEI2_ArtificialChelisHive.description>
+  <!-- EN: artificial kemian hive -->
+  <VFEI2_ArtificialKemianHive.label>colmeia artificial kemia</VFEI2_ArtificialKemianHive.label>
+  <!-- EN: An artificially constructed hive of giant insects. It is capable of spawning various Kemian geneline insectoids over time, as well as some amount of insect jelly. It requires regular maintenance, and constructing too many hives near each other will increase the maintenance required. -->
+  <VFEI2_ArtificialKemianHive.description>Uma colmeia de insetos gigantes construída artificialmente. Gera com o tempo vários insetoides da linhagem Kemia e um pouco de geleia de inseto. Precisa de manutenção regular, e construir colmeias demais perto umas das outras aumenta a manutenção necessária.</VFEI2_ArtificialKemianHive.description>
+  <!-- EN: artificial xanides hive -->
+  <VFEI2_ArtificialXanidesHive.label>colmeia artificial xanides</VFEI2_ArtificialXanidesHive.label>
+  <!-- EN: An artificially constructed hive of giant insects. It is capable of spawning various Xanides geneline insectoids over time, as well as some amount of insect jelly. It requires regular maintenance, and constructing too many hives near each other will increase the maintenance required. -->
+  <VFEI2_ArtificialXanidesHive.description>Uma colmeia de insetos gigantes construída artificialmente. Gera com o tempo vários insetoides da linhagem Xanides e um pouco de geleia de inseto. Precisa de manutenção regular, e construir colmeias demais perto umas das outras aumenta a manutenção necessária.</VFEI2_ArtificialXanidesHive.description>
+  <!-- EN: heat pod -->
+  <VFEI2_HeatPod.label>casulo de calor</VFEI2_HeatPod.label>
+  <!-- EN: A bioluminescent pod produced by giant insects. Glows under its own light for a long time, then dies. -->
+  <VFEI2_HeatPod.description>Um casulo bioluminescente produzido por insetos gigantes. Brilha com luz própria por bastante tempo e depois morre.</VFEI2_HeatPod.description>
+  <!-- EN: deep heater -->
+  <VFEI2_DeepHeater.label>aquecedor profundo</VFEI2_DeepHeater.label>
+  <!-- EN: A deep canal that connects to some underground steam caverns, dug up by giant insects. Sprays out superheated steam at random, similar to steam geysers. -->
+  <VFEI2_DeepHeater.description>Um canal fundo, cavado por insetos gigantes, que dá em cavernas subterrâneas de vapor. Solta vapor superaquecido ao acaso, como os gêiseres.</VFEI2_DeepHeater.description>
+  <!-- EN: jelly morpher -->
+  <VFEI2_JellyMorpher.label>transformador de geleia</VFEI2_JellyMorpher.label>
+  <!-- EN: An exotic, pulsating bioformation that forces attached insect jelly to undergo a chemical process that changes it into royal jelly. Produced by giant insects. Needs to be constructed on the creep and requires refueling with insect jelly in order to produce the royal variant. -->
+  <VFEI2_JellyMorpher.description>Uma bioformação exótica e pulsante que força a geleia de inseto ligada a ela a passar por um processo químico que a transforma em geleia real. Produzida por insetos gigantes. Precisa ser construída sobre a gosma e reabastecida com geleia de inseto para produzir a variante real.</VFEI2_JellyMorpher.description>
+  <!-- EN: tunnel -->
+  <VFEI2_LargeTunnelHiveSpawner.label>túnel</VFEI2_LargeTunnelHiveSpawner.label>
+  <!-- EN: hellpod -->
+  <VFEI_HellpodActiveDropPod.label>cápsula infernal</VFEI_HellpodActiveDropPod.label>
+  <!-- EN: hellpod (incoming) -->
+  <VFEI_HellpodIncoming.label>cápsula infernal (chegando)</VFEI_HellpodIncoming.label>
+  <!-- EN: petroglypher -->
+  <VFEI2_Petroglypher.label>petroglifador</VFEI2_Petroglypher.label>
+  <!-- EN: A hive-like structure created by giant insects. It continuously reinforces nearby rock formations with thick, resin-like insect goop, creating hivestone walls in the process. It will only turn natural rock walls into hivestone and will have no effect on any other wall types. If all walls around a petroglypher are turned into hivestone, it will begin expunging  chitin in regular intervals. -->
+  <VFEI2_Petroglypher.description>Uma estrutura parecida com colmeia, criada por insetos gigantes. Reforça sem parar as formações de rocha próximas com uma gosma de inseto grossa, como resina, transformando-as em paredes de pedra-colmeia. Só transforma paredes de rocha natural; não afeta outros tipos de parede. Quando todas as paredes em volta viram pedra-colmeia, passa a expelir quitina em intervalos regulares.</VFEI2_Petroglypher.description>
+  <!-- EN: hivenode -->
+  <VFEI2_Hivenode.label>nó da colmeia</VFEI2_Hivenode.label>
+  <!-- EN: A large, exotic goop spire created by giant insects. Hivenodes lie in the center of the hive, nourishing nearby insectoid structures with required sustenance and warmth, removing any maintenance need. When destroyed, it may explode in a large, fiery explosion. -->
+  <VFEI2_Hivenode.description>Uma grande torre exótica de gosma criada por insetos gigantes. Os nós ficam no centro da colmeia e nutrem as estruturas insetoides próximas com o sustento e o calor necessários, eliminando qualquer necessidade de manutenção. Destruído, pode estourar numa grande explosão de fogo.</VFEI2_Hivenode.description>
+  <!-- EN: thornpod -->
+  <VFEI2_Thornpod.label>casulo de espinhos</VFEI2_Thornpod.label>
+  <!-- EN: A volatile pod covered in sharp chitin thorns, produced by giant insects. If any target gets close to it, the pod expunges the thorns, after which it will take some time to grow them back. -->
+  <VFEI2_Thornpod.description>Um casulo volátil coberto de espinhos afiados de quitina, produzido por insetos gigantes. Se algum alvo chega perto, ele dispara os espinhos e leva um tempo para fazê-los crescer de novo.</VFEI2_Thornpod.description>
+  <!-- EN: thorn -->
+  <VFEI2_Bullet_Thorn.label>espinho</VFEI2_Bullet_Thorn.label>
+  <!-- EN: vilelobber -->
+  <VFEI2_Vilelobber.label>lança-gosma</VFEI2_Vilelobber.label>
+  <!-- EN: A small mound serving as the entrance to an expansive deephive cluster below ground, topped by the emergence of a vilelobber insectoid. This creature is adept at spitting large, corrosive acid blobs over considerable distances, provided it is regularly fed with insect jelly. If starved, the mound will gradually deteriorate. Once completely deteriorated, the vilelobber will retreat back into the deephive tunnels. -->
+  <VFEI2_Vilelobber.description>Um montinho que serve de entrada para um vasto aglomerado de colmeias profundas no subsolo, com um insetoide lança-gosma saindo pelo topo. A criatura cospe grandes bolas de ácido corrosivo a distâncias consideráveis, desde que seja alimentada regularmente com geleia de inseto. Sem comida, o montinho se deteriora aos poucos; deteriorado por completo, a criatura volta para os túneis da colmeia profunda.</VFEI2_Vilelobber.description>
+  <!-- EN: Insect jelly -->
+  <VFEI2_Vilelobber.comps.CompRefuelable.fuelGizmoLabel>Geleia de inseto</VFEI2_Vilelobber.comps.CompRefuelable.fuelGizmoLabel>
+  <!-- EN: Insect jelly -->
+  <VFEI2_Vilelobber.comps.CompRefuelable.fuelLabel>Geleia de inseto</VFEI2_Vilelobber.comps.CompRefuelable.fuelLabel>
+  <!-- EN: vilelobber -->
+  <VFEI2_Vilelobber_Gun.label>lança-gosma</VFEI2_Vilelobber_Gun.label>
+  <!-- EN: A small mound serving as the entrance to an expansive deephive cluster below ground, topped by the emergence of a vilelobber insectoid. This creature is adept at spitting large, corrosive acid blobs over considerable distances, provided it is regularly fed with insect jelly. If starved, the mound will gradually deteriorate. Once completely deteriorated, the vilelobber will retreat back into the deephive tunnels. -->
+  <VFEI2_Vilelobber_Gun.description>Um montinho que serve de entrada para um vasto aglomerado de colmeias profundas no subsolo, com um insetoide lança-gosma saindo pelo topo. A criatura cospe grandes bolas de ácido corrosivo a distâncias consideráveis, desde que seja alimentada regularmente com geleia de inseto. Sem comida, o montinho se deteriora aos poucos; deteriorado por completo, a criatura volta para os túneis da colmeia profunda.</VFEI2_Vilelobber_Gun.description>
+  <!-- EN: vilelobber -->
+  <VFEI2_Vilelobber_Gun.verbs.Verb_Shoot.label>lança-gosma</VFEI2_Vilelobber_Gun.verbs.Verb_Shoot.label>
+  <!-- EN: vilelobber projectile -->
+  <VFEI2_Vilelobber_Projectile.label>projétil de lança-gosma</VFEI2_Vilelobber_Projectile.label>
+  <!-- EN: thornworm -->
+  <VFEI2_Thornworm.label>verme-espinho</VFEI2_Thornworm.label>
+  <!-- EN: A small mound serving as the entrance to an expansive deephive cluster below ground, topped by the emergence of a thornworm insectoid. This creature is capable of ejecting rapidly-growing chitin thorns at enemies nearby, provided it is regularly fed with insect jelly. If starved, the mound will gradually deteriorate. Once completely deteriorated, the thornworm will retreat back into the deephive tunnels. -->
+  <VFEI2_Thornworm.description>Um montinho que serve de entrada para um vasto aglomerado de colmeias profundas no subsolo, com um insetoide verme-espinho saindo pelo topo. A criatura dispara espinhos de quitina de crescimento rápido nos inimigos por perto, desde que seja alimentada regularmente com geleia de inseto. Sem comida, o montinho se deteriora aos poucos; deteriorado por completo, a criatura volta para os túneis da colmeia profunda.</VFEI2_Thornworm.description>
+  <!-- EN: Insect jelly -->
+  <VFEI2_Thornworm.comps.CompRefuelable.fuelGizmoLabel>Geleia de inseto</VFEI2_Thornworm.comps.CompRefuelable.fuelGizmoLabel>
+  <!-- EN: Insect jelly -->
+  <VFEI2_Thornworm.comps.CompRefuelable.fuelLabel>Geleia de inseto</VFEI2_Thornworm.comps.CompRefuelable.fuelLabel>
+  <!-- EN: thornworm -->
+  <VFEI2_Thornworm_Gun.label>verme-espinho</VFEI2_Thornworm_Gun.label>
+  <!-- EN: A small mound serving as the entrance to an expansive deephive cluster below ground, topped by the emergence of a thornworm insectoid. This creature is capable of ejecting rapidly-growing chitin thorns at enemies nearby, provided it is regularly fed with insect jelly. If starved, the mound will gradually deteriorate. Once completely deteriorated, the thornworm will retreat back into the deephive tunnels. -->
+  <VFEI2_Thornworm_Gun.description>Um montinho que serve de entrada para um vasto aglomerado de colmeias profundas no subsolo, com um insetoide verme-espinho saindo pelo topo. A criatura dispara espinhos de quitina de crescimento rápido nos inimigos por perto, desde que seja alimentada regularmente com geleia de inseto. Sem comida, o montinho se deteriora aos poucos; deteriorado por completo, a criatura volta para os túneis da colmeia profunda.</VFEI2_Thornworm_Gun.description>
+  <!-- EN: thornworm -->
+  <VFEI2_Thornworm_Gun.verbs.Verb_ShootCE.label>verme-espinho</VFEI2_Thornworm_Gun.verbs.Verb_ShootCE.label>
+  <!-- EN: thornspitter -->
+  <VFEI2_Thornspitter.label>cospe-espinho</VFEI2_Thornspitter.label>
+  <!-- EN: A tiny mound serving as the entrance to an expansive deephive cluster below ground, topped by the emergence of a thornspitter insectoid. This creature is capable of ejecting inaccurate chitin thorns at enemies close-by, provided it is regularly fed with insect jelly. If starved, the mound will gradually deteriorate. Once completely deteriorated, the thornworm will retreat back into the deephive tunnels. -->
+  <VFEI2_Thornspitter.description>Um montinho minúsculo que serve de entrada para um vasto aglomerado de colmeias profundas no subsolo, com um insetoide cospe-espinho saindo pelo topo. A criatura dispara espinhos de quitina imprecisos nos inimigos bem próximos, desde que seja alimentada regularmente com geleia de inseto. Sem comida, o montinho se deteriora aos poucos; deteriorado por completo, a criatura volta para os túneis da colmeia profunda.</VFEI2_Thornspitter.description>
+  <!-- EN: Insect jelly -->
+  <VFEI2_Thornspitter.comps.CompRefuelable.fuelGizmoLabel>Geleia de inseto</VFEI2_Thornspitter.comps.CompRefuelable.fuelGizmoLabel>
+  <!-- EN: Insect jelly -->
+  <VFEI2_Thornspitter.comps.CompRefuelable.fuelLabel>Geleia de inseto</VFEI2_Thornspitter.comps.CompRefuelable.fuelLabel>
+  <!-- EN: thornspitter -->
+  <VFEI2_Thornspitter_Gun.label>cospe-espinho</VFEI2_Thornspitter_Gun.label>
+  <!-- EN: A tiny mound serving as the entrance to an expansive deephive cluster below ground, topped by the emergence of a thornspitter insectoid. This creature is capable of ejecting inaccurate chitin thorns at enemies close-by, provided it is regularly fed with insect jelly. If starved, the mound will gradually deteriorate. Once completely deteriorated, the thornworm will retreat back into the deephive tunnels. -->
+  <VFEI2_Thornspitter_Gun.description>Um montinho minúsculo que serve de entrada para um vasto aglomerado de colmeias profundas no subsolo, com um insetoide cospe-espinho saindo pelo topo. A criatura dispara espinhos de quitina imprecisos nos inimigos bem próximos, desde que seja alimentada regularmente com geleia de inseto. Sem comida, o montinho se deteriora aos poucos; deteriorado por completo, a criatura volta para os túneis da colmeia profunda.</VFEI2_Thornspitter_Gun.description>
+  <!-- EN: thornspitter -->
+  <VFEI2_Thornspitter_Gun.verbs.Verb_ShootCE.label>cospe-espinho</VFEI2_Thornspitter_Gun.verbs.Verb_ShootCE.label>
+  <!-- EN: hive door -->
+  <VFEI2_HiveDoor.label>porta de colmeia</VFEI2_HiveDoor.label>
+  <!-- EN: A passable insect door made from insectoid goop. Capable of holding up a roof. -->
+  <VFEI2_HiveDoor.description>Uma porta insetoide de gosma, que dá passagem. Sustenta telhado.</VFEI2_HiveDoor.description>
+  <!-- EN: jellyspreader -->
+  <VFEI2_Jellyspreader.label>espalhador de geleia</VFEI2_Jellyspreader.label>
+  <!-- EN: A hive-like formation of insectoid jelly that slowly pumps that jelly into the creep around it, nourishing it and creating a soft jelly terrain in a large radius. Jelly terrain created this way can support insectoid structures and in many ways behaves similar to creep, except it’s easier to clean and slows down non-insectoid movement even more. It needs to be fueled with insect jelly, otherwise it will stop transforming creep around itself. -->
+  <VFEI2_Jellyspreader.description>Uma formação de geleia insetoide parecida com colmeia que bombeia devagar essa geleia na gosma em volta, nutrindo-a e criando um terreno macio de geleia num raio grande. O terreno de geleia assim criado sustenta estruturas insetoides e se comporta em muitos aspectos como a gosma, mas é mais fácil de limpar e atrasa ainda mais quem não é insetoide. Precisa ser abastecido com geleia de inseto; senão, para de transformar a gosma em volta.</VFEI2_Jellyspreader.description>
+  <!-- EN: Insect jelly -->
+  <VFEI2_Jellyspreader.comps.CompRefuelable.fuelGizmoLabel>Geleia de inseto</VFEI2_Jellyspreader.comps.CompRefuelable.fuelGizmoLabel>
+  <!-- EN: Insect jelly -->
+  <VFEI2_Jellyspreader.comps.CompRefuelable.fuelLabel>Geleia de inseto</VFEI2_Jellyspreader.comps.CompRefuelable.fuelLabel>
+  <!-- EN: royal jellyspreader -->
+  <VFEI2_RoyalJellyspreader.label>espalhador de geleia real</VFEI2_RoyalJellyspreader.label>
+  <!-- EN: A hive-like formation of royal insectoid jelly that enriches nearby insectoid jellyfloors with the royal molecules. Royal jelly terrain created this way can support insectoid structures and in many ways behaves similar to creep, except it’s much easier to clean, cannot burn and slows down non-insectoid movement even more. It needs to be fueled with royal insect jelly, otherwise it will stop enriching jellyfloors around it. -->
+  <VFEI2_RoyalJellyspreader.description>Uma formação de geleia insetoide real parecida com colmeia que enriquece os pisos de geleia próximos com moléculas reais. O terreno de geleia real assim criado sustenta estruturas insetoides e se comporta em muitos aspectos como a gosma, mas é bem mais fácil de limpar, não pega fogo e atrasa ainda mais quem não é insetoide. Precisa ser abastecido com geleia real; senão, para de enriquecer os pisos de geleia em volta.</VFEI2_RoyalJellyspreader.description>
+  <!-- EN: Royal insect jelly -->
+  <VFEI2_RoyalJellyspreader.comps.CompRefuelable.fuelGizmoLabel>Geleia real</VFEI2_RoyalJellyspreader.comps.CompRefuelable.fuelGizmoLabel>
+  <!-- EN: Royal insect jelly -->
+  <VFEI2_RoyalJellyspreader.comps.CompRefuelable.fuelLabel>Geleia real</VFEI2_RoyalJellyspreader.comps.CompRefuelable.fuelLabel>
+</LanguageData>

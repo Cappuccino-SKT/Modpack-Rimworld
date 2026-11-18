@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <!-- EN: nutrient paste grinder -->
+  <VNPE_NutrientPasteGrinder.label>moedor de pasta nutritiva</VNPE_NutrientPasteGrinder.label>
+  <!-- EN: A machine that synthesizes edible nutrient paste from organic feedstocks placed in adjacent hoppers. It consumes less ingredients and time than any other meal production method - but nobody likes eating nutrient paste. Accepts raw food, but not rough plant matter like hay. It does not actually dispense the nutrient paste, but it allows it to be pumped into vats and dispensers in the network. -->
+  <VNPE_NutrientPasteGrinder.description>Uma máquina que sintetiza pasta nutritiva comestível a partir dos insumos orgânicos postos nos funis vizinhos. Gasta menos ingredientes e tempo que qualquer outro jeito de fazer refeições, mas ninguém gosta de comer pasta nutritiva. Aceita comida crua, mas não matéria vegetal grosseira como feno. Não serve a pasta: só permite bombeá-la para os tonéis e dispensadores da rede.</VNPE_NutrientPasteGrinder.description>
+  <!-- EN: nutrient paste tap -->
+  <VNPE_NutrientPasteTap.label>torneira de pasta nutritiva</VNPE_NutrientPasteTap.label>
+  <!-- EN: A hopper-like storage basin meant to hold dispensed nutrient paste meal from the vats. Can be used by colonists and prisoners. Nutrient paste meal dispensed and ready for pick-up can deteriorate. -->
+  <VNPE_NutrientPasteTap.description>Uma bacia parecida com um funil para guardar as refeições de pasta nutritiva vindas dos tonéis. Pode ser usada por colonos e prisioneiros. A pasta servida e esperando ser retirada pode estragar.</VNPE_NutrientPasteTap.description>
+  <!-- EN: nutrient paste feeder -->
+  <VNPE_NutrientPasteFeeder.label>bico de pasta nutritiva</VNPE_NutrientPasteFeeder.label>
+  <!-- EN: A small pipe output that allows colonists and citizens to pick up nutrient paste. -->
+  <VNPE_NutrientPasteFeeder.description>Uma pequena saída de cano onde colonos e cidadãos pegam pasta nutritiva.</VNPE_NutrientPasteFeeder.description>
+  <!-- EN: nutrient paste dripper -->
+  <VNPE_NutrientPasteDripper.label>gotejador de pasta nutritiva</VNPE_NutrientPasteDripper.label>
+  <!-- EN: A bedside device that feeds a person lying in bed whenever they are hungry, provided that nutrient paste dripper is connected to a nutrient paste vat. It must be placed directly adjacent to and facing the head of the bed. Placing more than one nutrient paste dripper near the same bed has no effect. -->
+  <VNPE_NutrientPasteDripper.description>Um aparelho de cabeceira que alimenta quem está deitado sempre que sente fome, desde que esteja ligado a um tonel de pasta nutritiva. Precisa ficar encostado na cabeceira da cama, virado para ela. Mais de um gotejador na mesma cama não tem efeito.</VNPE_NutrientPasteDripper.description>
+</LanguageData>

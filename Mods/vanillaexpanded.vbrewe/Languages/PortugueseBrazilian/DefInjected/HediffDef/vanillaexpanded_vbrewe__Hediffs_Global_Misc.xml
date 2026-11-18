@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <!-- EN: drank soda -->
+  <VBE_DrankSoda.label>tomou refrigerante</VBE_DrankSoda.label>
+  <!-- EN: A burst of sugar enters the bloodstream, providing some short-lived energy. Provides a 5% manipulation buff for 5 hours. -->
+  <VBE_DrankSoda.description>Uma dose de açúcar entra no sangue e dá uma energia passageira. Dá 5% de bônus de manipulação por 5 horas.</VBE_DrankSoda.description>
+  <!-- EN: drank tea -->
+  <VBE_DrankTea.label>tomou chá</VBE_DrankTea.label>
+  <!-- EN: Tannins naturally found in tea once metabolised increase the stimuli in ones nervous system, suppressing ones urge to sleep, as well as boosting ones immune system. Increases immunity gain speed by 15% and provides 10% reduction in rest fall rate for 5 hours. -->
+  <VBE_DrankTea.description>Os taninos do chá, depois de metabolizados, estimulam o sistema nervoso, tiram a vontade de dormir e reforçam o sistema imunológico. Aumenta em 15% a velocidade de ganho de imunidade e reduz em 10% a queda de descanso por 5 horas.</VBE_DrankTea.description>
+  <!-- EN: drank tequila based cocktail -->
+  <VBE_TequilaAsIngredient.label>tomou coquetel de tequila</VBE_TequilaAsIngredient.label>
+  <!-- EN: This colonist drank a cocktail that had tequila as one of its ingredients. Provides an animal tame chance bonus of 15%. -->
+  <VBE_TequilaAsIngredient.description>Este colono tomou um coquetel com tequila entre os ingredientes. Dá 15% de bônus na chance de domar animais.</VBE_TequilaAsIngredient.description>
+  <!-- EN: drank whiskey based cocktail -->
+  <VBE_WhiskeyAsIngredient.label>tomou coquetel de uísque</VBE_WhiskeyAsIngredient.label>
+  <!-- EN: This colonist drank a cocktail that had whiskey as one of its ingredients. Provides a shooting accuracy bonus. -->
+  <VBE_WhiskeyAsIngredient.description>Este colono tomou um coquetel com uísque entre os ingredientes. Dá um bônus de precisão de tiro.</VBE_WhiskeyAsIngredient.description>
+  <!-- EN: drank vodka based cocktail -->
+  <VBE_VodkaAsIngredient.label>tomou coquetel de vodca</VBE_VodkaAsIngredient.label>
+  <!-- EN: This colonist drank a cocktail that had vodka as one of its ingredients. Increases dodge chance by 20%. -->
+  <VBE_VodkaAsIngredient.description>Este colono tomou um coquetel com vodca entre os ingredientes. Aumenta em 20% a chance de esquiva.</VBE_VodkaAsIngredient.description>
+  <!-- EN: drank gin based cocktail -->
+  <VBE_GinAsIngredient.label>tomou coquetel de gim</VBE_GinAsIngredient.label>
+  <!-- EN: This colonist drank a cocktail that had gin as one of its ingredients. -->
+  <VBE_GinAsIngredient.description>Este colono tomou um coquetel com gim entre os ingredientes.</VBE_GinAsIngredient.description>
+  <!-- EN: drank ambrandy based cocktail -->
+  <VBE_AmbrandyAsIngredient.label>tomou coquetel de ambrandy</VBE_AmbrandyAsIngredient.label>
+  <!-- EN: This colonist drank a cocktail that had ambrandy as one of its ingredients. -->
+  <VBE_AmbrandyAsIngredient.description>Este colono tomou um coquetel com ambrandy entre os ingredientes.</VBE_AmbrandyAsIngredient.description>
+  <!-- EN: drank mead based cocktail -->
+  <VBE_RBMeadAsIngredient.label>tomou coquetel de hidromel</VBE_RBMeadAsIngredient.label>
+  <!-- EN: This colonist drank a cocktail that had mead as one of its ingredients. -->
+  <VBE_RBMeadAsIngredient.description>Este colono tomou um coquetel com hidromel entre os ingredientes.</VBE_RBMeadAsIngredient.description>
+  <!-- EN: drank wine based cocktail -->
+  <VBE_WineAsIngredient.label>tomou coquetel de vinho</VBE_WineAsIngredient.label>
+  <!-- EN: This colonist drank a cocktail that had wine as one of its ingredients. You monster. -->
+  <VBE_WineAsIngredient.description>Este colono tomou um coquetel com vinho entre os ingredientes. Seu monstro.</VBE_WineAsIngredient.description>
+  <!-- EN: consumed luciferium powder (from meal) -->
+  <VBE_ConsumedLuciferiumPowder.label>comeu pó de lucifério (na refeição)</VBE_ConsumedLuciferiumPowder.label>
+  <!-- EN: Luciferium powder is a very finely blended powder made from luciferium. So diluted, the drug won't certainly heal any wounds, but it will reinvigorate its consumer considerably. -->
+  <VBE_ConsumedLuciferiumPowder.description>O pó de lucifério é um pó finíssimo feito de lucifério. Tão diluído, certamente não cura ferimentos, mas revigora bastante quem consome.</VBE_ConsumedLuciferiumPowder.description>
+  <!-- EN: consumed go-juice stock (from meal) -->
+  <VBE_ConsumedGoStock.label>comeu caldo de suco-turbo (na refeição)</VBE_ConsumedGoStock.label>
+  <!-- EN: Go-juice stock is a gelatinized cube of Go-Juice, able to be digested rather than injected. So diluted, the drug won't block so much pain, and combat advantages will be much more subtle. -->
+  <VBE_ConsumedGoStock.description>O caldo de suco-turbo é um cubo gelatinoso de suco-turbo que pode ser digerido em vez de injetado. Tão diluído, a droga não bloqueia tanta dor, e as vantagens em combate são bem mais sutis.</VBE_ConsumedGoStock.description>
+  <!-- EN: consumed wake-up powder (from meal) -->
+  <VBE_ConsumedWakeupPowder.label>comeu pó de despertar (na refeição)</VBE_ConsumedWakeupPowder.label>
+  <!-- EN: Wake-up powder is a crushed and powdered form of wake-up, surprisingly sweet and sometimes used as a replacement for sugar in desserts or dissolved into a morning espresso. So diluted, the drug won't be as stimulating. Note that, while not addictive, wake-up powder still carries risk (albeit very small) of a heart attack. -->
+  <VBE_ConsumedWakeupPowder.description>O pó de despertar é o despertar moído em pó, surpreendentemente doce, às vezes usado no lugar do açúcar em sobremesas ou dissolvido no expresso da manhã. Tão diluído, a droga estimula menos. Mesmo sem viciar, o pó de despertar ainda traz um risco (bem pequeno) de ataque cardíaco.</VBE_ConsumedWakeupPowder.description>
+</LanguageData>

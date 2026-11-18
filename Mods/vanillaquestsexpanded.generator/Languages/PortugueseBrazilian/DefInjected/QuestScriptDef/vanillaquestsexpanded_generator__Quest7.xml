@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <VQE_GeothermalArcSite.questDescriptionRules.rulesStrings>
+    <!-- EN: questDescription(asker_factionLeader==True)-&gt;[asker_nameFull], [asker_faction_leaderTitle] of [asker_faction_name], has sent us a message. A group of [siteFaction_pawnsPlural] has taken control of an abandoned geothermal ARC site. The camp is under the control of [siteFaction_name].\n\n[asker_nameDef] is requesting that we clear out the area by eliminating all enemies and defenses. Securing the site will allow us to study the geothermal ARC and recover valuable components for future use. Additionally, [sitePart0_description]. -->
+    <li>questDescription(asker_factionLeader==True)-&gt;[asker_nameFull], [asker_faction_leaderTitle] de [asker_faction_name], nos mandou uma mensagem. Um grupo de [siteFaction_pawnsPlural] tomou o local de um ARC geotérmico abandonado. O acampamento está sob o controle de [siteFaction_name].\n\n[asker_nameDef] pede que limpemos a área eliminando todos os inimigos e defesas. Com o lugar seguro, poderemos estudar o ARC geotérmico e recuperar componentes valiosos para o futuro. Além disso, [sitePart0_description].</li>
+    <!-- EN: questDescription(askerIsNull==true)-&gt;We have received information that an old geothermal ARC site has been occupied by [siteFaction_pawnsPlural] from [siteFaction_name]. The bandits have fortified their position and are using the site to control the surrounding area.\n\nSecuring the site will give us access to study the geothermal ARC and extract useful components. The site is likely well-defended, so prepare for resistance. Additionally, [sitePart0_description]. -->
+    <li>questDescription(askerIsNull==true)-&gt;Soubemos que o local de um velho ARC geotérmico foi ocupado por [siteFaction_pawnsPlural] de [siteFaction_name]. Os bandidos fortificaram a posição e usam o lugar para controlar a região em volta.\n\nTomar o lugar nos dará acesso para estudar o ARC geotérmico e extrair componentes úteis. O lugar deve estar bem defendido: prepare-se para resistência. Além disso, [sitePart0_description].</li>
+    <!-- EN: sitePart0_description-&gt;the site is partially overgrown, with remnants of its original machinery scattered around -->
+    <li>sitePart0_description-&gt;o lugar está meio tomado pelo mato, com restos do maquinário original espalhados</li>
+    <!-- EN: sitePart0_description-&gt;the bandits have reinforced the area with crude barricades and guard posts -->
+    <li>sitePart0_description-&gt;os bandidos reforçaram a área com barricadas toscas e postos de guarda</li>
+    <!-- EN: sitePart0_description-&gt;the geothermal ARC appears heavily worn but intact enough to salvage parts -->
+    <li>sitePart0_description-&gt;o ARC geotérmico parece muito gasto, mas inteiro o bastante para aproveitar peças</li>
+    <!-- EN: sitePart0_description-&gt;the facility's infrastructure is still standing, though it shows signs of significant wear -->
+    <li>sitePart0_description-&gt;a infraestrutura do complexo ainda está de pé, embora bem desgastada</li>
+    <!-- EN: sitePart0_description-&gt;hostile patrols have been spotted in the area, ensuring no one approaches unchallenged -->
+    <li>sitePart0_description-&gt;patrulhas hostis foram avistadas na área, garantindo que ninguém chegue perto sem ser desafiado</li>
+    <!-- EN: sitePart0_description-&gt;the bandits seem to be utilizing the ARC to power their operations -->
+    <li>sitePart0_description-&gt;os bandidos parecem usar o ARC para alimentar as suas operações</li>
+  </VQE_GeothermalArcSite.questDescriptionRules.rulesStrings>
+  <VQE_GeothermalArcSite.questNameRules.rulesStrings>
+    <!-- EN: questName-&gt;[adj] [arcType] [siteType] -->
+    <li>questName-&gt;[siteType] [arcType] [adj]</li>
+    <!-- EN: adj-&gt;seized -->
+    <li>adj-&gt;tomado</li>
+    <!-- EN: adj-&gt;abandoned -->
+    <li>adj-&gt;abandonado</li>
+    <!-- EN: adj-&gt;guarded -->
+    <li>adj-&gt;vigiado</li>
+    <!-- EN: adj-&gt;ancient -->
+    <li>adj-&gt;antigo</li>
+    <!-- EN: adj-&gt;overrun -->
+    <li>adj-&gt;invadido</li>
+    <!-- EN: adj-&gt;occupied -->
+    <li>adj-&gt;ocupado</li>
+    <!-- EN: adj-&gt;contested -->
+    <li>adj-&gt;disputado</li>
+    <!-- EN: adj-&gt;ruined -->
+    <li>adj-&gt;arruinado</li>
+    <!-- EN: adj-&gt;forgotten -->
+    <li>adj-&gt;esquecido</li>
+    <!-- EN: adj-&gt;hidden -->
+    <li>adj-&gt;escondido</li>
+    <!-- EN: arcType-&gt;geothermal ARC -->
+    <li>arcType-&gt;do ARC geotérmico</li>
+    <!-- EN: arcType-&gt;ARC generator -->
+    <li>arcType-&gt;do gerador ARC</li>
+    <!-- EN: arcType-&gt;geothermal core -->
+    <li>arcType-&gt;do núcleo geotérmico</li>
+    <!-- EN: arcType-&gt;ARC station -->
+    <li>arcType-&gt;da estação ARC</li>
+    <!-- EN: arcType-&gt;energy core -->
+    <li>arcType-&gt;do núcleo de energia</li>
+    <!-- EN: arcType-&gt;power source -->
+    <li>arcType-&gt;da fonte de energia</li>
+    <!-- EN: arcType-&gt;geothermal plant -->
+    <li>arcType-&gt;da usina geotérmica</li>
+    <!-- EN: siteType-&gt;site -->
+    <li>siteType-&gt;Sítio</li>
+    <!-- EN: siteType-&gt;facility -->
+    <li>siteType-&gt;Complexo</li>
+    <!-- EN: siteType-&gt;outpost -->
+    <li>siteType-&gt;Posto</li>
+    <!-- EN: siteType-&gt;complex -->
+    <li>siteType-&gt;Conjunto</li>
+    <!-- EN: siteType-&gt;camp -->
+    <li>siteType-&gt;Acampamento</li>
+    <!-- EN: siteType-&gt;station -->
+    <li>siteType-&gt;Terreno</li>
+  </VQE_GeothermalArcSite.questNameRules.rulesStrings>
+  <!-- EN: Quest expired: [resolvedQuestName] -->
+  <VQE_GeothermalArcSite.root.nodes.WorldObjectTimeout.node.nodes.Letter.label.slateRef>Missão expirada: [resolvedQuestName]</VQE_GeothermalArcSite.root.nodes.WorldObjectTimeout.node.nodes.Letter.label.slateRef>
+  <!-- EN: The bandit camp has packed up and moved on. The quest [resolvedQuestName] has expired. -->
+  <VQE_GeothermalArcSite.root.nodes.WorldObjectTimeout.node.nodes.Letter.text.slateRef>O acampamento de bandidos levantou acampamento e foi embora. A missão [resolvedQuestName] expirou.</VQE_GeothermalArcSite.root.nodes.WorldObjectTimeout.node.nodes.Letter.text.slateRef>
+  <!-- EN: Quest failed: [resolvedQuestName] -->
+  <VQE_GeothermalArcSite.root.nodes.siteDestroyed.node.nodes.Letter.label.slateRef>Missão fracassada: [resolvedQuestName]</VQE_GeothermalArcSite.root.nodes.siteDestroyed.node.nodes.Letter.label.slateRef>
+  <!-- EN: After being discovered, the bandit camp has dispersed. The quest [resolvedQuestName] has ended. -->
+  <VQE_GeothermalArcSite.root.nodes.siteDestroyed.node.nodes.Letter.text.slateRef>Depois de descoberto, o acampamento de bandidos se dispersou. A missão [resolvedQuestName] acabou.</VQE_GeothermalArcSite.root.nodes.siteDestroyed.node.nodes.Letter.text.slateRef>
+  <!-- EN: Payment arrived -->
+  <VQE_GeothermalArcSite.root.nodes.siteAllEnemiesDefeated.node.nodes.IsSet.node.nodes.GiveRewards.customLetterLabel.slateRef>Pagamento chegou</VQE_GeothermalArcSite.root.nodes.siteAllEnemiesDefeated.node.nodes.IsSet.node.nodes.GiveRewards.customLetterLabel.slateRef>
+  <!-- EN: You have defeated the bandit camp!\n\nThe payment from [asker_faction_name] has arrived. -->
+  <VQE_GeothermalArcSite.root.nodes.siteAllEnemiesDefeated.node.nodes.IsSet.node.nodes.GiveRewards.customLetterText.slateRef>Você derrotou o acampamento de bandidos!\n\nO pagamento de [asker_faction_name] chegou.</VQE_GeothermalArcSite.root.nodes.siteAllEnemiesDefeated.node.nodes.IsSet.node.nodes.GiveRewards.customLetterText.slateRef>
+</LanguageData>
