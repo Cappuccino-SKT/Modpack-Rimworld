@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <!-- Etapa 5b: Fora de Linha, fase 2 (ForaDeLinha.cs + PowerEvents.cs). Dados de diagnóstico = moeda da rede
+       (caem de mechs e técnicos da Forja abatidos). Ofertas da rede = PowerEventDef dos Fora de Linha; Exposição
+       perante a Forja sobe ao ajudar a rede (campo exposure das opções) e cai 1,5/dia; em 50 aviso, em 100 a Forja
+       reage. Trair a célula é oferta da própria Forja quando a Exposição está alta. -->
+
+  <ThingDef ParentName="ResourceBase">
+    <defName>EQ_DadosDiagnostico</defName>
+    <label>dados de diagnóstico</label>
+    <description>Registros de autodiagnóstico arrancados de unidades da Irmandade da Forja: senhas de manutenção, rotas de patrulha, números de série de lacres. Para a Forja, é lixo eletrônico. Para os Fora de Linha, é moeda: cada registro abre uma porta, apaga um rastro ou acorda uma máquina.</description>
+    <graphicData>
+      <texPath>Things/Item/Resource/ComponentIndustrial</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+      <color>(110,170,200)</color>
+    </graphicData>
+    <stackLimit>20</stackLimit>
+    <statBases>
+      <MarketValue>45</MarketValue>
+      <Mass>0.2</Mass>
+      <MaxHitPoints>40</MaxHitPoints>
+      <Flammability>0.5</Flammability>
+    </statBases>
+    <thingCategories>
+      <li>Items</li>
+    </thingCategories>
+    <tradeability>All</tradeability>
+    <tradeTags>
+      <li>EQ_DadosDiagnostico</li>
+    </tradeTags>
+  </ThingDef>
+
+  <!-- Contrabando de peças -->
+  <EcosDaQueda.PowerEventDef>
+    <defName>EQ_Rede_Contrabando</defName>
+    <label>contrabando da rede</label>
+    <faction>EQ_Faction_ForaDeLinha</faction>
+    <minGoodwill>0</minGoodwill>
+    <mtbDays>18</mtbDays>
+    <minIntervalDays>15</minIntervalDays>
+    <letterLabel>A rede oferece: contrabando de peças</letterLabel>
+    <letterText>Um sinal curto no rádio, em código de manutenção. É a rede dos Fora de Linha: um lote de peças "desviadas" de uma fábrica da Forja está à venda, sem lacre e sem garantia — que é exatamente o ponto.\n\nA rede aceita dados de diagnóstico. Prata também, mas prata deixa rastro.</letterText>
+    <options>
+      <li>
+        <label>Pagar com 2 dados de diagnóstico</label>
+        <costTradeTag>EQ_DadosDiagnostico</costTradeTag>
+        <costTradeTagCount>2</costTradeTagCount>
+        <costTradeTagLabel>dados de diagnóstico</costTradeTagLabel>
+        <rewardThings>
+          <ComponentIndustrial>6</ComponentIndustrial>
+          <ComponentSpacer>1</ComponentSpacer>
+        </rewardThings>
+        <goodwill>5</goodwill>
+        <exposure>10</exposure>
+        <resultText>As peças chegam numa cápsula sem número de série. A Forja vai sentir falta delas. Um pouco.</resultText>
+      </li>
+      <li>
+        <label>Pagar 400 de prata</label>
+        <costSilver>400</costSilver>
+        <rewardThings>
+          <ComponentIndustrial>4</ComponentIndustrial>
+        </rewardThings>
+        <goodwill>2</goodwill>
+        <exposure>15</exposure>
+        <resultText>As peças chegaram. A prata passou por três mãos e deixou marca em todas.</resultText>
+      </li>
+      <li>
+        <label>Não responder</label>
+        <resultText>O sinal some. A rede não insiste: quem insiste é rastreado.</resultText>
+      </li>
+    </options>
+  </EcosDaQueda.PowerEventDef>
+
+  <!-- Apagar registro -->
+  <EcosDaQueda.PowerEventDef>
+    <defName>EQ_Rede_ApagarRegistro</defName>
+    <label>apagar registro</label>
+    <faction>EQ_Faction_ForaDeLinha</faction>
+    <minGoodwill>0</minGoodwill>
+    <minExposure>30</minExposure>
+    <mtbDays>12</mtbDays>
+    <minIntervalDays>10</minIntervalDays>
+    <letterLabel>A rede oferece: apagar registros</letterLabel>
+    <letterText>A rede percebeu que a Forja anda de olho na colônia e oferece um serviço: um técnico de sabotagem entra no banco de dados de uma fábrica e "corrompe" os registros que levam até vocês.\n\nOs dados de diagnóstico pagam o acesso. A prata paga o silêncio de quem viu.</letterText>
+    <options>
+      <li>
+        <label>Pagar com 3 dados de diagnóstico</label>
+        <costTradeTag>EQ_DadosDiagnostico</costTradeTag>
+        <costTradeTagCount>3</costTradeTagCount>
+        <costTradeTagLabel>dados de diagnóstico</costTradeTagLabel>
+        <exposure>-40</exposure>
+        <goodwill>3</goodwill>
+        <resultText>Os registros sumiram. Na Forja, alguém vai levar a culpa por uma falha de memória. Não é você.</resultText>
+      </li>
+      <li>
+        <label>Pagar 600 de prata</label>
+        <costSilver>600</costSilver>
+        <exposure>-25</exposure>
+        <resultText>Metade dos registros sumiu. A outra metade virou "inconsistência a apurar".</resultText>
+      </li>
+      <li>
+        <label>Deixar como está</label>
+        <resultText>Os registros continuam lá, esperando um inspetor com tempo livre.</resultText>
+      </li>
+    </options>
+  </EcosDaQueda.PowerEventDef>
+
+  <!-- Sabotagem -->
+  <EcosDaQueda.PowerEventDef>
+    <defName>EQ_Rede_Sabotagem</defName>
+    <label>sabotagem da rede</label>
+    <faction>EQ_Faction_ForaDeLinha</faction>
+    <minGoodwill>20</minGoodwill>
+    <mtbDays>25</mtbDays>
+    <minIntervalDays>20</minIntervalDays>
+    <letterLabel>A rede pede: sabotagem</letterLabel>
+    <letterText>A rede vai parar uma linha de montagem da Forja que fabrica "unidades de recall" — as que caçam androides despertos. Falta gente de mão firme e dados de acesso.\n\nAjudar vai deixar marcas. Não ajudar também: a rede lembra de quem estava ocupado no dia.</letterText>
+    <options>
+      <li>
+        <label>Mandar o melhor artesão (3 dias) e 2 dados de diagnóstico</label>
+        <lendColonistDays>3</lendColonistDays>
+        <lendSkill>Crafting</lendSkill>
+        <costTradeTag>EQ_DadosDiagnostico</costTradeTag>
+        <costTradeTagCount>2</costTradeTagCount>
+        <costTradeTagLabel>dados de diagnóstico</costTradeTagLabel>
+        <goodwill>15</goodwill>
+        <exposure>25</exposure>
+        <otherFaction>EQ_Faction_Forja</otherFaction>
+        <otherGoodwill>-8</otherGoodwill>
+        <rewardThings>
+          <EQ_DiscoVelhoMundo MayRequire="Ludeon.RimWorld.Biotech">1</EQ_DiscoVelhoMundo>
+        </rewardThings>
+        <resultText>A linha parou por uma semana. A rede mandou um disco do Velho Mundo "pela mão de obra". A Forja mandou um inspetor a mais para a região.</resultText>
+      </li>
+      <li>
+        <label>Recusar</label>
+        <goodwill>-5</goodwill>
+        <resultText>A rede faz sem vocês. Funciona igual, e eles anotam isso.</resultText>
+      </li>
+    </options>
+  </EcosDaQueda.PowerEventDef>
+
+  <!-- Trair a célula (oferta da Forja) -->
+  <EcosDaQueda.PowerEventDef>
+    <defName>EQ_Forja_TrairCelula</defName>
+    <label>proposta da Forja: trair a célula</label>
+    <faction>EQ_Faction_Forja</faction>
+    <minExposure>60</minExposure>
+    <mtbDays>10</mtbDays>
+    <minIntervalDays>30</minIntervalDays>
+    <letterLabel>Proposta da Forja: a célula</letterLabel>
+    <letterText>Um inspetor da Irmandade da Forja vem sozinho, sem escolta e sem pressa. Ele sabe da rede. Sabe das peças. Oferece um acordo: entreguem a célula dos Fora de Linha que opera na região, e a ficha da colônia é "revisada".\n\nA rede nunca perdoa quem entrega. A Forja nunca esquece quem recusa.</letterText>
+    <options>
+      <li>
+        <label>Entregar a célula</label>
+        <fame>6</fame>
+        <goodwill>15</goodwill>
+        <favor>3</favor>
+        <exposure>-100</exposure>
+        <otherFaction>EQ_Faction_ForaDeLinha</otherFaction>
+        <otherGoodwill>-200</otherGoodwill>
+        <resultText>A célula caiu numa madrugada. A ficha da colônia ficou limpa. Os Fora de Linha que sobraram não esquecem nomes.</resultText>
+      </li>
+      <li>
+        <label>Negar tudo</label>
+        <infamy>3</infamy>
+        <goodwill>-10</goodwill>
+        <exposure>10</exposure>
+        <resultText>O inspetor sorri, guarda o caderno e vai embora devagar. A rede soube da visita, e da resposta.</resultText>
+      </li>
+    </options>
+  </EcosDaQueda.PowerEventDef>
+</Defs>

@@ -112,6 +112,7 @@ namespace EcosDaQueda
                 Messages.Message(d.awakenedText.Formatted(p.Named("PAWN"), lic.Named("FACTION")), p, MessageTypeDefOf.NegativeEvent);
             Goodwill(d.licensor, d.awakenedGoodwill);
             Goodwill(d.liberator, d.liberatorGoodwill);
+            WorldComponent_Exposure.Current?.Add(15f, "androide desperto na colônia");
         }
 
         /// <summary>O projeto da estação gera androide já desperto (sem nenhum gene que some ao despertar)?</summary>

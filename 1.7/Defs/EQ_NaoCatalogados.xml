@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <!-- Etapa 5c: Não Catalogados, fase 2 (PowerEvents.cs). Expedição de coleta do Silêncio contra os ninhos (com
+       chance de contra-ataque dos Não Catalogados: retaliation*), contrato de contenção oferecido pelos próprios
+       Não Catalogados (vem mesmo com eles hostis: allowHostile) e o Silêncio cobrando quem negocia com a Carne. -->
+
+  <!-- Expedição de coleta (Silêncio) -->
+  <EcosDaQueda.PowerEventDef>
+    <defName>EQ_Silencio_ExpedicaoColeta</defName>
+    <label>expedição de coleta do Silêncio</label>
+    <faction>EQ_Faction_Silencio</faction>
+    <mtbDays>22</mtbDays>
+    <minIntervalDays>20</minIntervalDays>
+    <letterLabel>Expedição de coleta</letterLabel>
+    <letterText>A Ordem do Silêncio Perpétuo vai mandar uma expedição de coleta a um ninho dos Não Catalogados: amostras de carne que não deveria se mexer, para o Arquivo. Falta alguém que saiba lutar de perto e não grite.\n\nOs Não Catalogados não costumam deixar a colheita sem resposta. A Ordem chama isso de "dados de campo".</letterText>
+    <options>
+      <li>
+        <label>Mandar o melhor lutador (4 dias)</label>
+        <lendColonistDays>4</lendColonistDays>
+        <lendSkill>Melee</lendSkill>
+        <fame>3</fame>
+        <favor>2</favor>
+        <goodwill>6</goodwill>
+        <otherFaction>EQ_Faction_NaoCatalogados</otherFaction>
+        <otherGoodwill>-15</otherGoodwill>
+        <rewardThings>
+          <Bioferrite MayRequire="Ludeon.RimWorld.Anomaly">20</Bioferrite>
+          <Shard MayRequire="Ludeon.RimWorld.Anomaly">1</Shard>
+        </rewardThings>
+        <retaliationFaction>EQ_Faction_NaoCatalogados</retaliationFaction>
+        <retaliationChance>0.4</retaliationChance>
+        <retaliationDelayDays>3</retaliationDelayDays>
+        <resultText>A expedição partiu ao amanhecer. A Ordem mandou a parte da colônia na coleta, embrulhada em lona e sem etiqueta.</resultText>
+      </li>
+      <li>
+        <label>Financiar a expedição (300 de prata)</label>
+        <costSilver>300</costSilver>
+        <fame>1</fame>
+        <goodwill>3</goodwill>
+        <otherFaction>EQ_Faction_NaoCatalogados</otherFaction>
+        <otherGoodwill>-5</otherGoodwill>
+        <resultText>A prata comprou lanternas, correntes e um contrato de silêncio para os carregadores.</resultText>
+      </li>
+      <li>
+        <label>Não se meter</label>
+        <resultText>A Ordem vai sem vocês e volta com menos gente do que foi. Não comenta.</resultText>
+      </li>
+    </options>
+  </EcosDaQueda.PowerEventDef>
+
+  <!-- Contrato de contenção (Não Catalogados) -->
+  <EcosDaQueda.PowerEventDef>
+    <defName>EQ_NaoCatalogados_Contencao</defName>
+    <label>contrato de contenção</label>
+    <faction>EQ_Faction_NaoCatalogados</faction>
+    <allowHostile>true</allowHostile>
+    <mtbDays>25</mtbDays>
+    <minIntervalDays>25</minIntervalDays>
+    <letterLabel>Os Não Catalogados propõem um contrato</letterLabel>
+    <letterText>Um mensageiro dos Não Catalogados aparece na borda do mapa, devagar, mostrando as mãos — as que ainda são mãos. Propõe um "contrato de contenção": a Carne fica longe da colônia, e a colônia paga o tributo.\n\nO Silêncio chama isso de traição da espécie. Os Não Catalogados chamam de boa vizinhança.</letterText>
+    <options>
+      <li>
+        <label>Pagar o tributo (60 de carne humana)</label>
+        <costThings><Meat_Human>60</Meat_Human></costThings>
+        <goodwill>30</goodwill>
+        <otherFaction>EQ_Faction_Silencio</otherFaction>
+        <otherGoodwill>-6</otherGoodwill>
+        <otherInfamy>2</otherInfamy>
+        <resultText>O mensageiro leva o tributo sem pressa e sem talheres. Por algum tempo, a Carne passa longe.</resultText>
+      </li>
+      <li>
+        <label>Entregar um prisioneiro</label>
+        <handOverPrisoner>true</handOverPrisoner>
+        <goodwill>40</goodwill>
+        <otherFaction>EQ_Faction_Silencio</otherFaction>
+        <otherGoodwill>-10</otherGoodwill>
+        <otherInfamy>3</otherInfamy>
+        <resultText>O prisioneiro vai com o mensageiro. Ele não volta, mas um pedaço do grito dele volta com o vento, às vezes.</resultText>
+      </li>
+      <li>
+        <label>Expulsar o mensageiro</label>
+        <goodwill>-10</goodwill>
+        <otherFaction>EQ_Faction_Silencio</otherFaction>
+        <otherFame>2</otherFame>
+        <resultText>O mensageiro recua para a escuridão. O Silêncio, de algum jeito, ficou sabendo, e aprovou.</resultText>
+      </li>
+    </options>
+  </EcosDaQueda.PowerEventDef>
+</Defs>

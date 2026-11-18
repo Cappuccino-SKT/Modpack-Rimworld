@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <!-- Etapa 5e: eventos das facções menores (PowerEvents.cs; truceDays = a facção não é sorteada para ataques, até inimigo permanente como o Sindicato): greve do Sindicato (trégua), liquidação da Feira,
+       recolhimento de colmeia pela Hélice e o Reino do Lodo exigindo "matéria-prima". -->
+
+  <!-- SINDICATO: greve geral / trégua -->
+  <EcosDaQueda.PowerEventDef>
+    <defName>EQ_Sindicato_Greve</defName>
+    <label>greve do Sindicato</label>
+    <faction>EQ_Faction_SindicatoDoSaque</faction>
+    <allowHostile>true</allowHostile>
+    <mtbDays>30</mtbDays>
+    <minIntervalDays>30</minIntervalDays>
+    <letterLabel>O Sindicato entra em greve</letterLabel>
+    <letterText>O Sindicato do Saque decretou greve geral: nada de saque esta estação, a não ser contra quem "não contribuiu para o fundo de greve". Um delegado veio pessoalmente explicar, com um porrete e uma planilha.\n\nContribuir compra uma trégua (o Sindicato não ataca a colônia enquanto ela durar). Não contribuir coloca a colônia no topo da planilha.</letterText>
+    <options>
+      <li>
+        <label>Contribuir para o fundo de greve (350 de prata)</label>
+        <costSilver>350</costSilver>
+        <goodwill>45</goodwill>
+        <truceDays>30</truceDays>
+        <resultText>O delegado conta a prata duas vezes e assina um recibo. "Solidariedade, companheiro." A trégua vale enquanto o fundo durar.</resultText>
+      </li>
+      <li>
+        <label>Contribuir com comida (40 refeições de sobrevivência)</label>
+        <costThings><MealSurvivalPack>40</MealSurvivalPack></costThings>
+        <goodwill>35</goodwill>
+        <truceDays>20</truceDays>
+        <resultText>O piquete come bem esta semana. O Sindicato agradece, à moda dele: passando longe.</resultText>
+      </li>
+      <li>
+        <label>Furar a greve</label>
+        <goodwill>-15</goodwill>
+        <retaliationFaction>EQ_Faction_SindicatoDoSaque</retaliationFaction>
+        <retaliationChance>0.6</retaliationChance>
+        <retaliationDelayDays>1</retaliationDelayDays>
+        <resultText>O delegado anota o nome da colônia em vermelho. "Fura-greve." No Sindicato, isso é sentença.</resultText>
+      </li>
+    </options>
+  </EcosDaQueda.PowerEventDef>
+
+  <!-- FEIRA: liquidação -->
+  <EcosDaQueda.PowerEventDef>
+    <defName>EQ_Feira_Liquidacao</defName>
+    <label>liquidação da Feira</label>
+    <faction>EQ_Faction_FeiraAndante</faction>
+    <mtbDays>20</mtbDays>
+    <minIntervalDays>20</minIntervalDays>
+    <letterLabel>Liquidação da Feira Andante</letterLabel>
+    <letterText>A Feira Andante anuncia LIQUIDAÇÃO TOTAL: tudo tem que sair, porque a caravana precisa rodar, e quem para de rodar começa a dever. Os lotes vêm fechados — o que tem dentro é surpresa, e a surpresa já está precificada.\n\nO lote grande tem até um manual técnico, dizem. Dizem muita coisa na Feira.</letterText>
+    <options>
+      <li>
+        <label>Comprar o lote grande (500 de prata)</label>
+        <costSilver>500</costSilver>
+        <goodwill>6</goodwill>
+        <rewardThings>
+          <ComponentIndustrial>5</ComponentIndustrial>
+          <MedicineIndustrial>5</MedicineIndustrial>
+          <Steel>120</Steel>
+          <EQ_ManualTecnico>1</EQ_ManualTecnico>
+        </rewardThings>
+        <resultText>O lote chegou. Tinha mesmo um manual técnico. Também tinha uma meia, sem par, embalada a vácuo.</resultText>
+      </li>
+      <li>
+        <label>Comprar o lote pequeno (200 de prata)</label>
+        <costSilver>200</costSilver>
+        <goodwill>3</goodwill>
+        <rewardThings>
+          <ComponentIndustrial>2</ComponentIndustrial>
+          <Steel>60</Steel>
+        </rewardThings>
+        <resultText>O lote pequeno é pequeno. A Feira não mente; só não conta tudo.</resultText>
+      </li>
+      <li>
+        <label>Não comprar nada</label>
+        <resultText>A Feira passa reto, gritando os preços para a próxima colônia.</resultText>
+      </li>
+    </options>
+  </EcosDaQueda.PowerEventDef>
+
+  <!-- HÉLICE: recolhimento de colmeia -->
+  <EcosDaQueda.PowerEventDef>
+    <defName>EQ_Helice_RecolhimentoColmeia</defName>
+    <label>recolhimento de colmeia</label>
+    <faction>EQ_Faction_Helice</faction>
+    <mtbDays>25</mtbDays>
+    <minIntervalDays>25</minIntervalDays>
+    <letterLabel>Recall de produto: colmeia</letterLabel>
+    <letterText>O Concílio da Hélice anuncia o recall de uma "linha de insetos de serviço" que saiu do controle e virou a Colmeia Erguida. A Hélice paga quem ajudar a recolher o produto — recolher, no caso, significa queimar o ninho e trazer a geleia.\n\nA Colmeia não vai gostar. A Hélice não liga: não é cliente.</letterText>
+    <options>
+      <li>
+        <label>Mandar o melhor atirador para o recolhimento (4 dias)</label>
+        <lendColonistDays>4</lendColonistDays>
+        <lendSkill>Shooting</lendSkill>
+        <fame>3</fame>
+        <favor>2</favor>
+        <goodwill>6</goodwill>
+        <otherFaction>EQ_Faction_ColmeiaErguida</otherFaction>
+        <otherGoodwill>-20</otherGoodwill>
+        <rewardThings>
+          <InsectJelly>40</InsectJelly>
+          <Silver>200</Silver>
+        </rewardThings>
+        <retaliationFaction>EQ_Faction_ColmeiaErguida</retaliationFaction>
+        <retaliationChance>0.35</retaliationChance>
+        <retaliationDelayDays>3</retaliationDelayDays>
+        <resultText>O recolhimento foi "um sucesso", segundo o relatório. O relatório não menciona o cheiro.</resultText>
+      </li>
+      <li>
+        <label>Recusar o recall</label>
+        <goodwill>-4</goodwill>
+        <resultText>A Hélice anota que a colônia "não demonstrou engajamento com a marca".</resultText>
+      </li>
+    </options>
+  </EcosDaQueda.PowerEventDef>
+
+  <!-- REINO DO LODO: matéria-prima -->
+  <EcosDaQueda.PowerEventDef>
+    <defName>EQ_ReinoLodo_MateriaPrima</defName>
+    <label>Reino do Lodo exige matéria-prima</label>
+    <faction>EQ_Faction_ReinoDoLodo</faction>
+    <allowHostile>true</allowHostile>
+    <mtbDays>28</mtbDays>
+    <minIntervalDays>28</minIntervalDays>
+    <letterLabel>O Reino do Lodo exige matéria-prima</letterLabel>
+    <letterText>Um arauto do Reino do Lodo, enlameado até os dentes, lê a proclamação: a Esteira Sagrada precisa de "matéria-prima" para os novos brutos do reino. Matéria-prima, no Reino, anda com duas pernas.\n\nEntregar um prisioneiro compra a paz por uma estação. Recusar compra uma visita.</letterText>
+    <options>
+      <li>
+        <label>Entregar um prisioneiro como matéria-prima</label>
+        <handOverPrisoner>true</handOverPrisoner>
+        <goodwill>35</goodwill>
+        <otherFaction>EQ_Faction_Coro</otherFaction>
+        <otherInfamy>1</otherInfamy>
+        <resultText>O arauto leva o prisioneiro cantando um hino sobre esteiras. O Coro, que ouviu falar, faz uma careta aristocrática.</resultText>
+      </li>
+      <li>
+        <label>Pagar em carne de porco (80)</label>
+        <costThings><Meat_Pig>80</Meat_Pig></costThings>
+        <goodwill>20</goodwill>
+        <resultText>"Matéria-prima de segunda", resmunga o arauto, arrastando os sacos. Serve por agora.</resultText>
+      </li>
+      <li>
+        <label>Expulsar o arauto</label>
+        <goodwill>-10</goodwill>
+        <retaliationFaction>EQ_Faction_ReinoDoLodo</retaliationFaction>
+        <retaliationChance>0.7</retaliationChance>
+        <retaliationDelayDays>1.5</retaliationDelayDays>
+        <resultText>O arauto vai embora devagar, contando os colonos com o dedo. A Esteira vai mandar buscar.</resultText>
+      </li>
+    </options>
+  </EcosDaQueda.PowerEventDef>
+</Defs>

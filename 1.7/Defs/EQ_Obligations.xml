@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <!-- Etapa 11a: obrigações de cargo (PowerEvents.cs, obligation=true). Só para membros, na faixa de cargo
+       minRank..maxRank (0 = 1º cargo). Cadência própria (uma obrigação a cada 6+ dias). A última opção é a recusa
+       e conta uma falta (strike); 3 faltas com a potência = rebaixamento de um cargo (punição máxima; no 1º cargo
+       vira advertência). Ignorar até o prazo = recusa. Colono emprestado (lendColonistDays) sai do mapa e volta sozinho;
+       nunca vai o líder nem o último colono. -->
+
+  <!-- ===================================================================== SILÊNCIO -->
+  <EcosDaQueda.PowerEventDef>
+    <defName>EQ_Obrigacao_Silencio_Plantao</defName>
+    <label>plantão no Arquivo</label>
+    <faction>EQ_Faction_Silencio</faction>
+    <obligation>true</obligation>
+    <minRank>0</minRank>
+    <maxRank>1</maxRank>
+    <mtbDays>8</mtbDays>
+    <minIntervalDays>12</minIntervalDays>
+    <letterLabel>Obrigação: plantão no Arquivo</letterLabel>
+    <letterText>A Ordem do Silêncio Perpétuo lembra que todo membro deve horas de plantão no Arquivo: catalogar, transcrever e, principalmente, não perguntar o que está transcrevendo.\n\nMande alguém estudado por cinco dias, ou pague um substituto. Recusar fica registrado. Em silêncio, mas fica.</letterText>
+    <options>
+      <li>
+        <label>Mandar o colono mais estudado (5 dias)</label>
+        <lendColonistDays>5</lendColonistDays>
+        <lendSkill>Intellectual</lendSkill>
+        <favor>2</favor>
+        <fame>2</fame>
+        <resultText>O colono partiu com um caderno em branco. Voltará com o caderno em branco e uma expressão diferente.</resultText>
+      </li>
+      <li>
+        <label>Pagar um substituto (300 de prata)</label>
+        <costSilver>300</costSilver>
+        <favor>1</favor>
+        <resultText>O substituto é um acólito que já não lembra o próprio nome. Serve.</resultText>
+      </li>
+      <li>
+        <label>Recusar o plantão</label>
+        <strike>true</strike>
+        <favorLoss>2</favorLoss>
+        <resultText>O arquivista anota a recusa num livro que ninguém lê, exceto quando importa.</resultText>
+      </li>
+    </options>
+  </EcosDaQueda.PowerEventDef>
+
+  <EcosDaQueda.PowerEventDef>
+    <defName>EQ_Obrigacao_Silencio_Contencao</defName>
+    <label>guarda da contenção</label>
+    <faction>EQ_Faction_Silencio</faction>
+    <obligation>true</obligation>
+    <minRank>2</minRank>
+    <maxRank>3</maxRank>
+    <mtbDays>8</mtbDays>
+    <minIntervalDays>12</minIntervalDays>
+    <letterLabel>Obrigação: guarda da contenção</letterLabel>
+    <letterText>Uma das celas de contenção da Ordem está "inquieta". Membros do seu escalão respondem pela vigília: alguém que saiba atirar, por sete dias, sem fazer perguntas sobre os arranhões do lado de dentro.\n\nOu contribua com material para o Arquivo, que também acalma a cela. Ninguém explica como.</letterText>
+    <options>
+      <li>
+        <label>Mandar o melhor atirador (7 dias)</label>
+        <lendColonistDays>7</lendColonistDays>
+        <lendSkill>Shooting</lendSkill>
+        <favor>4</favor>
+        <fame>4</fame>
+        <resultText>O atirador partiu para a vigília. A Ordem promete devolvê-lo inteiro, "na medida do possível".</resultText>
+      </li>
+      <li>
+        <label>Enviar dois dados antigos para o Arquivo</label>
+        <costTradeTag>EQ_DadosAntigos</costTradeTag>
+        <costTradeTagCount>2</costTradeTagCount>
+        <costTradeTagLabel>dado antigo</costTradeTagLabel>
+        <favor>3</favor>
+        <fame>2</fame>
+        <resultText>Os dados foram lidos em voz baixa diante da cela. A cela ficou quieta. Quieta demais.</resultText>
+      </li>
+      <li>
+        <label>Recusar a vigília</label>
+        <strike>true</strike>
+        <favorLoss>4</favorLoss>
+        <resultText>Outro membro foi no seu lugar. Ele não voltou, e a Ordem anotou de quem era o turno.</resultText>
+      </li>
+    </options>
+  </EcosDaQueda.PowerEventDef>
+
+  <!-- ===================================================================== HÉLICE -->
+  <EcosDaQueda.PowerEventDef>
+    <defName>EQ_Obrigacao_Helice_Meta</defName>
+    <label>meta trimestral</label>
+    <faction>EQ_Faction_Helice</faction>
+    <obligation>true</obligation>
+    <minRank>0</minRank>
+    <maxRank>1</maxRank>
+    <mtbDays>8</mtbDays>
+    <minIntervalDays>12</minIntervalDays>
+    <letterLabel>Obrigação: meta trimestral</letterLabel>
+    <letterText>O Concílio da Hélice informa que a sua "unidade de negócios" ficou abaixo da meta trimestral. Associados do seu nível cobrem a diferença em prata ou em produto.\n\nNão bater a meta não é crime. É só uma métrica. As métricas decidem quem continua associado.</letterText>
+    <options>
+      <li>
+        <label>Cobrir a meta em prata (400)</label>
+        <costSilver>400</costSilver>
+        <favor>2</favor>
+        <fame>2</fame>
+        <resultText>Meta batida. O Concílio manda parabéns e uma meta nova, 15% maior.</resultText>
+      </li>
+      <li>
+        <label>Cobrir em remédio (8 remédios industriais)</label>
+        <costThings><MedicineIndustrial>8</MedicineIndustrial></costThings>
+        <favor>2</favor>
+        <resultText>Os remédios voltarão às suas prateleiras, com a marca da Hélice e o triplo do preço.</resultText>
+      </li>
+      <li>
+        <label>Não bater a meta</label>
+        <strike>true</strike>
+        <favorLoss>2</favorLoss>
+        <resultText>Seu nome desceu no painel de desempenho. Na Hélice, o painel é a lei.</resultText>
+      </li>
+    </options>
+  </EcosDaQueda.PowerEventDef>
+
+  <EcosDaQueda.PowerEventDef>
+    <defName>EQ_Obrigacao_Helice_Teste</defName>
+    <label>teste de produto</label>
+    <faction>EQ_Faction_Helice</faction>
+    <obligation>true</obligation>
+    <minRank>2</minRank>
+    <maxRank>3</maxRank>
+    <mtbDays>8</mtbDays>
+    <minIntervalDays>12</minIntervalDays>
+    <letterLabel>Obrigação: teste de produto</letterLabel>
+    <letterText>A Hélice vai lançar uma linha nova e precisa de "voluntários de confiança" para a fase de testes. Associados do seu escalão fornecem os voluntários. É um privilégio. Os termos de consentimento já foram assinados por você, no item 47 do seu contrato.\n\nUm colono por quatro dias, ou um prisioneiro de forma permanente.</letterText>
+    <options>
+      <li>
+        <label>Ceder um colono para o teste (4 dias)</label>
+        <lendColonistDays>4</lendColonistDays>
+        <favor>4</favor>
+        <fame>3</fame>
+        <resultText>O voluntário foi levado para a clínica. Ele não lembra de ter se voluntariado, mas o contrato lembra.</resultText>
+      </li>
+      <li>
+        <label>Ceder um prisioneiro (permanente)</label>
+        <handOverPrisoner>true</handOverPrisoner>
+        <favor>3</favor>
+        <fame>2</fame>
+        <resultText>O prisioneiro agora é um "ativo de pesquisa". Melhor do que era antes, segundo a Hélice.</resultText>
+      </li>
+      <li>
+        <label>Recusar o teste</label>
+        <strike>true</strike>
+        <favorLoss>4</favorLoss>
+        <resultText>A fase de testes atrasou. O atraso foi lançado na sua conta, com juros.</resultText>
+      </li>
+    </options>
+  </EcosDaQueda.PowerEventDef>
+
+  <!-- ===================================================================== FORJA -->
+  <EcosDaQueda.PowerEventDef>
+    <defName>EQ_Obrigacao_Forja_Cota</defName>
+    <label>cota de produção</label>
+    <faction>EQ_Faction_Forja</faction>
+    <obligation>true</obligation>
+    <minRank>0</minRank>
+    <maxRank>1</maxRank>
+    <mtbDays>8</mtbDays>
+    <minIntervalDays>12</minIntervalDays>
+    <letterLabel>Obrigação: cota de produção</letterLabel>
+    <letterText>A Irmandade da Forja fecha o ciclo de produção e cobra a cota de cada oficina associada. A sua é pequena, e por isso mesmo a Irmandade espera que seja entregue sem choro.\n\nComponentes, ou aço se não tiver jeito.</letterText>
+    <options>
+      <li>
+        <label>Entregar 6 componentes</label>
+        <costThings><ComponentIndustrial>6</ComponentIndustrial></costThings>
+        <favor>2</favor>
+        <fame>2</fame>
+        <resultText>Cota entregue. O inspetor carimba o formulário com uma força desnecessária.</resultText>
+      </li>
+      <li>
+        <label>Entregar 150 de aço</label>
+        <costThings><Steel>150</Steel></costThings>
+        <favor>1</favor>
+        <resultText>"Aço não é componente", diz o inspetor, aceitando o aço assim mesmo.</resultText>
+      </li>
+      <li>
+        <label>Não entregar a cota</label>
+        <strike>true</strike>
+        <favorLoss>2</favorLoss>
+        <resultText>Sua oficina foi marcada como "em não conformidade". Na Forja, isso é quase um palavrão.</resultText>
+      </li>
+    </options>
+  </EcosDaQueda.PowerEventDef>
+
+  <EcosDaQueda.PowerEventDef>
+    <defName>EQ_Obrigacao_Forja_Fabrica</defName>
+    <label>plantão na fábrica</label>
+    <faction>EQ_Faction_Forja</faction>
+    <obligation>true</obligation>
+    <minRank>2</minRank>
+    <maxRank>3</maxRank>
+    <mtbDays>8</mtbDays>
+    <minIntervalDays>12</minIntervalDays>
+    <letterLabel>Obrigação: plantão na fábrica</letterLabel>
+    <letterText>Uma linha de montagem da Irmandade parou, e membros do seu escalão respondem pela manutenção: o melhor artesão da colônia, por seis dias, na fábrica.\n\nOu mande componentes avançados para a Irmandade comprar o conserto de outra oficina. Sai mais caro, como tudo na Forja.</letterText>
+    <options>
+      <li>
+        <label>Mandar o melhor artesão (6 dias)</label>
+        <lendColonistDays>6</lendColonistDays>
+        <lendSkill>Crafting</lendSkill>
+        <favor>4</favor>
+        <fame>4</fame>
+        <resultText>O artesão foi para a fábrica. A linha volta a andar, e ele volta com um juramento de garantia tatuado.</resultText>
+      </li>
+      <li>
+        <label>Mandar 2 componentes avançados</label>
+        <costThings><ComponentSpacer>2</ComponentSpacer></costThings>
+        <favor>3</favor>
+        <fame>2</fame>
+        <resultText>A Irmandade terceirizou o conserto com os seus componentes. Ficou caro e ficou torto.</resultText>
+      </li>
+      <li>
+        <label>Ignorar a fábrica parada</label>
+        <strike>true</strike>
+        <favorLoss>4</favorLoss>
+        <resultText>A linha ficou parada uma semana. A Forja calculou o prejuízo e anotou ao lado do seu nome.</resultText>
+      </li>
+    </options>
+  </EcosDaQueda.PowerEventDef>
+
+  <!-- ===================================================================== CORO -->
+  <EcosDaQueda.PowerEventDef>
+    <defName>EQ_Obrigacao_Coro_Ensaio</defName>
+    <label>ensaio obrigatório</label>
+    <faction>EQ_Faction_Coro</faction>
+    <obligation>true</obligation>
+    <minRank>0</minRank>
+    <maxRank>1</maxRank>
+    <mtbDays>8</mtbDays>
+    <minIntervalDays>12</minIntervalDays>
+    <letterLabel>Obrigação: ensaio obrigatório</letterLabel>
+    <letterText>O Coro Ascendente convoca os membros novos para o ensaio da estação. Alguém da sua colônia com boa lábia deve comparecer por três dias para aprender a cantar no tom da corte.\n\nQuem não pode ir, paga a ausência em ouro. O Coro entende. O Coro sempre entende, e cobra por isso.</letterText>
+    <options>
+      <li>
+        <label>Mandar o colono mais sociável (3 dias)</label>
+        <lendColonistDays>3</lendColonistDays>
+        <lendSkill>Social</lendSkill>
+        <favor>2</favor>
+        <fame>2</fame>
+        <resultText>O colono foi ao ensaio. Voltará cantarolando uma melodia que ninguém mais consegue tirar da cabeça.</resultText>
+      </li>
+      <li>
+        <label>Pagar a ausência (15 de ouro)</label>
+        <costThings><Gold>15</Gold></costThings>
+        <favor>1</favor>
+        <resultText>O ouro chegou antes da desculpa. O Coro aceitou os dois, nessa ordem.</resultText>
+      </li>
+      <li>
+        <label>Faltar ao ensaio</label>
+        <strike>true</strike>
+        <favorLoss>2</favorLoss>
+        <resultText>O regente notou a cadeira vazia. O regente nota tudo.</resultText>
+      </li>
+    </options>
+  </EcosDaQueda.PowerEventDef>
+
+  <EcosDaQueda.PowerEventDef>
+    <defName>EQ_Obrigacao_Coro_Escolta</defName>
+    <label>escolta da corte</label>
+    <faction>EQ_Faction_Coro</faction>
+    <obligation>true</obligation>
+    <minRank>2</minRank>
+    <maxRank>3</maxRank>
+    <mtbDays>8</mtbDays>
+    <minIntervalDays>12</minIntervalDays>
+    <letterLabel>Obrigação: escolta da corte</letterLabel>
+    <letterText>A corte do Coro vai viajar, e membros do seu escalão fornecem a escolta: o melhor combatente corpo a corpo da colônia, por seis dias, ao lado da liteira do Maestro.\n\nOu financie a escolta de outro. O Coro aceita prata, mas prefere vassalos que sangrem por ele.</letterText>
+    <options>
+      <li>
+        <label>Mandar o melhor lutador (6 dias)</label>
+        <lendColonistDays>6</lendColonistDays>
+        <lendSkill>Melee</lendSkill>
+        <favor>4</favor>
+        <fame>4</fame>
+        <resultText>O lutador marchou ao lado da liteira. O Maestro sorriu para ele uma vez, e ele vai falar disso pelo resto da vida.</resultText>
+      </li>
+      <li>
+        <label>Financiar outra escolta (500 de prata)</label>
+        <costSilver>500</costSilver>
+        <favor>2</favor>
+        <fame>1</fame>
+        <resultText>A escolta foi paga. A corte achou o gesto "prático", o que no Coro não é elogio.</resultText>
+      </li>
+      <li>
+        <label>Negar a escolta</label>
+        <strike>true</strike>
+        <favorLoss>4</favorLoss>
+        <resultText>A liteira passou pela sua região sem escolta e sem parar. O silêncio da corte é uma nota musical.</resultText>
+      </li>
+    </options>
+  </EcosDaQueda.PowerEventDef>
+</Defs>
