@@ -67,6 +67,14 @@ namespace EcosDaQueda
             return DefDatabase<FixedWorldDef>.AllDefsListForReading.FirstOrDefault(d => d.presetName == preset);
         }
 
+        /// <summary>O Def do mundo fixo desta partida, também depois de carregar um save (marcado pela fronteira, F2).</summary>
+        public static FixedWorldDef ActiveDefAnyway()
+        {
+            FixedWorldDef d = ActiveDef();
+            if (d != null) return d;
+            return WorldComponent_EQFrontier.Current?.active == true ? DefDatabase<FixedWorldDef>.AllDefsListForReading.FirstOrDefault() : null;
+        }
+
         public static bool CanHoldSettlement(PlanetTile t, World world)
         {
             if (!t.Valid) return false;
@@ -113,6 +121,9 @@ namespace EcosDaQueda
                     world.worldObjects.Remove(s);
                     removed++;
                 }
+                // F2: a fronteira que cresce só vale no mundo fixo; as capitais têm teto maior.
+                var frontier = world.GetComponent<WorldComponent_EQFrontier>();
+                if (frontier != null) { frontier.active = true; frontier.capitals.Clear(); frontier.growth.Clear(); }
                 var taken = world.worldObjects.Settlements.Where(s => s.Tile.Layer == layer && CanHoldSettlementIgnoringSelf(s.Tile, world)).Select(s => s.Tile).ToList();
                 int placed = 0, failed = 0;
                 foreach (FixedSettlement fs in def.settlements)
@@ -126,6 +137,7 @@ namespace EcosDaQueda
                     settlement.Tile = t;
                     settlement.Name = fs.name;
                     world.worldObjects.Add(settlement);
+                    if (fs.capital) frontier?.capitals.Add(settlement.ID);
                     taken.Add(t);
                     placed++;
                     Placed.Add(fs.name + "@" + t.tileId);

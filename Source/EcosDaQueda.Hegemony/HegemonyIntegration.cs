@@ -114,6 +114,12 @@ namespace EcosDaQueda.HegemonyCompat
                 return l;
             };
             EQTerritory.ProsperityProvider = s => HegemonyApi.TryGetSettlementState(s, out SettlementState st) && st != null ? st.prosperity : -1f;
+            // Fronteiras vivas, F2: o multiplicador de decaimento de cada cidade passa pela nossa regra (Frontier.cs).
+            MethodInfo decay = AccessTools.Method(AccessTools.TypeByName("FactionTerritories2.TerritorySolver"), "SettlementDecay");
+            if (decay != null)
+                new Harmony("ecosdaqueda.hegemony.frontier").Patch(decay, postfix: new HarmonyMethod(typeof(HegemonyIntegration), nameof(SettlementDecayPostfix)));
+            else
+                Log.Warning("[Ecos da Queda] Não achei TerritorySolver.SettlementDecay no Hegemony; a fronteira que cresce (F2) fica desligada.");
             EQForces.ConquestHandler = (settlement, attacker, id) =>
             {
                 if (!HegemonyApi.IsAvailable) return "Hegemony indisponível";
@@ -177,6 +183,16 @@ namespace EcosDaQueda.HegemonyCompat
             foreach (HegemonyWar w in HegemonyApi.GetWars())
                 if (w?.First != null && w.Second != null)
                     yield return new System.Collections.Generic.KeyValuePair<Faction, Faction>(w.First, w.Second);
+        }
+
+        /// <summary>F2: raio permitido da cidade (cresce com o tempo até o teto). Em construção/rebelde fica o do Hegemony.</summary>
+        public static void SettlementDecayPostfix(SettlementState state, ref float __result)
+        {
+            if (state?.settlement == null || state.UnderConstruction || state.rebelling) return;
+            WorldComponent_EQFrontier c = WorldComponent_EQFrontier.Current;
+            if (c == null) return;
+            try { __result = c.DecayFor(state.settlement, state.prosperity, __result); }
+            catch (Exception ex) { Log.ErrorOnce("[Ecos da Queda] Fronteira (F2): " + ex, 0x4E51F2); }
         }
 
         /// <summary>O jogador só vira vassalo de uma potência pela cerimônia de submissão.</summary>

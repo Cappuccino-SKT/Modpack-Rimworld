@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <!--
+    Fronteiras vivas, F2 (MUNDO.md): no mundo fixo, o território do Hegemony nasce pequeno e cresce.
+    Raio permitido de cada cidade: começa em startRadius e cresce 1 tile a cada daysPerTilePoor (prosperidade
+    ≤ poorProsperity) a daysPerTileRich (≥ richProsperity) dias. Teto: o raio natural do Hegemony (pela prosperidade)
+    × capMultiplier da facção × capitalCapMultiplier na capital. As distâncias são as do Hegemony: deserto, morro e
+    montanha custam mais que planície (por isso Las Vegas, cercada de montanhas, tem teto maior).
+    Cidade que chega ao teto faz a facção fundar outra a newCityDistance tiles (até + newCitySlack), na própria terra
+    ou em terra de ninguém, a newCityMinSpacing de qualquer assentamento; uma por newCityCooldownDays por facção, até
+    maxCitiesPower (potências) ou maxCitiesMinor (as outras facções do mundo fixo). Valores propostos (✱ usuário ajusta).
+  -->
+  <EcosDaQueda.FrontierDef>
+    <defName>EQ_Fronteira</defName>
+    <label>fronteira que cresce</label>
+    <onlyFixedWorld>true</onlyFixedWorld>
+    <startRadius>1.5</startRadius>
+    <daysPerTilePoor>5</daysPerTilePoor>
+    <daysPerTileRich>3</daysPerTileRich>
+    <poorProsperity>10000</poorProsperity>
+    <richProsperity>50000</richProsperity>
+    <capitalCapMultiplier>1.3</capitalCapMultiplier>
+    <newCityDistance>6</newCityDistance>
+    <newCitySlack>3</newCitySlack>
+    <newCityMinSpacing>4</newCityMinSpacing>
+    <newCityCooldownDays>20</newCityCooldownDays>
+    <maxCitiesPower>6</maxCitiesPower>
+    <maxCitiesMinor>2</maxCitiesMinor>
+    <factions>
+      <!-- Deserto e montanhas em volta de Las Vegas: as estradas são do Sindicato. -->
+      <li><faction>EQ_Faction_SindicatoDoSaque</faction><capMultiplier>2</capMultiplier></li>
+      <!-- Bunkers nas Rochosas: montanha custa caro na conta do Hegemony. -->
+      <li><faction>EQ_Faction_Silencio</faction><capMultiplier>1.4</capMultiplier></li>
+      <!-- Criaturas escondidas na mata: não fundam cidades. -->
+      <li><faction>EQ_Faction_NaoCatalogados</faction><noNewCities>true</noNewCities></li>
+    </factions>
+  </EcosDaQueda.FrontierDef>
+</Defs>
