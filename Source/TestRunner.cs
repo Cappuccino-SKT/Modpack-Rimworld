@@ -308,7 +308,21 @@ namespace EcosDaQueda.DebugTools
         /// <summary>Igual a Root_Play.SetupForQuickTestPlay, mas aceita "newgame [ScenarioDef] [StorytellerDef]".</summary>
         private static void SetupNewGame(string args)
         {
-            string[] a = (args ?? "").Split(new[] { ' ' }, StringSplitOptions.RemoveEmptyEntries);
+            string[] all = (args ?? "").Split(new[] { ' ' }, StringSplitOptions.RemoveEmptyEntries);
+            // Opções chave=valor (mundo fixo, MUNDO.md): cov=0.25 seed=SOL3 preset=Nome_Com_Sublinhado (sublinhado vira espaço)
+            float coverage = 0.3f;
+            string seed = GenText.RandomSeedString();
+            string presetName = null;
+            foreach (string kv in all.Where(x => x.Contains("=")))
+            {
+                string k = kv.Substring(0, kv.IndexOf('=')), v = kv.Substring(kv.IndexOf('=') + 1);
+                if (k == "cov") coverage = float.Parse(v, System.Globalization.CultureInfo.InvariantCulture);
+                else if (k == "seed") seed = v;
+                else if (k == "preset") presetName = v.Replace('_', ' ');
+            }
+            string[] a = all.Where(x => !x.Contains("=")).ToArray();
+            var wbName = GenTypes.GetTypeInAnyAssembly("Worldbuilder.World_ExposeData_Patch")?.GetProperty("WorldPresetName", System.Reflection.BindingFlags.Static | System.Reflection.BindingFlags.Public | System.Reflection.BindingFlags.NonPublic);
+            if (wbName != null && wbName.CanWrite) wbName.SetValue(null, presetName);
             ScenarioDef scen = a.Length > 0 ? DefDatabase<ScenarioDef>.GetNamed(a[0]) : ScenarioDefOf.Crashlanded;
             StorytellerDef teller = a.Length > 1 ? DefDatabase<StorytellerDef>.GetNamed(a[1]) : StorytellerDefOf.Cassandra;
             Current.ProgramState = ProgramState.Entry;
@@ -318,7 +332,7 @@ namespace EcosDaQueda.DebugTools
             Current.Game.Scenario = scen.scenario;
             Find.Scenario.PreConfigure();
             Current.Game.storyteller = new Storyteller(teller, DifficultyDefOf.Rough);
-            Current.Game.World = WorldGenerator.GenerateWorld(0.3f, GenText.RandomSeedString(), OverallRainfall.Normal, OverallTemperature.Normal, OverallPopulation.Normal, LandmarkDensity.Normal);
+            Current.Game.World = WorldGenerator.GenerateWorld(coverage, seed, OverallRainfall.Normal, OverallTemperature.Normal, OverallPopulation.Normal, LandmarkDensity.Normal);
             Find.GameInitData.ChooseRandomStartingTile();
             Find.GameInitData.mapSize = 250;
             Find.Scenario.PostIdeoChosen();
@@ -425,6 +439,16 @@ namespace EcosDaQueda.DebugTools
                 case "movingbases": return EQDebug.MovingBases();
                 case "factions": return EQDebug.ListFactions();
                 case "research": return EQDebug.ResearchDump(Arg(1));
+                case "biomes": return EQMundoDebug.Biomes(Arg(1));
+                case "worldinfo": return EQMundoDebug.Info();
+                case "territory": return EQMundoDebug.Territory();
+                case "worlddump": return EQWorldConverter.Dump(Arg(1));
+                case "worldgrid": return EQWorldConverter.GridDump(Arg(1));
+                case "worldpaint": return EQWorldConverter.Paint(Arg(1));
+                case "worldrivers": return EQWorldConverter.Rivers(Arg(1) ?? "EcosDaQueda");
+                case "worldpreview": return EQWorldConverter.PreviewNow(Arg(1));
+                case "worldsave": return EQWorldConverter.SavePreset(Arg(1));
+                case "worldconvert": return EQWorldConverter.Convert(Arg(1), float.Parse(Arg(2), System.Globalization.CultureInfo.InvariantCulture), float.Parse(Arg(3), System.Globalization.CultureInfo.InvariantCulture), float.Parse(Arg(4), System.Globalization.CultureInfo.InvariantCulture), Arg(5));
                 case "tech": return EQDebug.Tech(Arg(1), Arg(2));
                 case "faction": return EQDebug.DescribeFaction(Fac(1));
                 case "raid": return EQDebug.Raid(Fac(1), float.Parse(Arg(2) ?? "0"), Arg(3) == "bichos");
@@ -509,6 +533,8 @@ namespace EcosDaQueda.DebugTools
                 case "lastretaliation": return "último contra-ataque agendado: " + (EQPowerEvents.LastRetaliation ?? "nenhum");
                 case "truce": return EQPowerEventsDebug.Truce(Fac(1));
                 case "forces": return EQForcesDebug.Run(a);
+                case "investigate": return EQStructuresDebug.Run(a);
+                case "narrator": return EQNarratorDebug.Run(a);
                 case "events": return EQPowerEventsDebug.List();
                 case "event": return EQPowerEventsDebug.Fire(Arg(1));
                 case "perf": return Arg(1) == "report" ? EQPerf.Report(Arg(2)) : EQPerf.Start();

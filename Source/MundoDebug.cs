@@ -1,0 +1,77 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using RimWorld;
+using RimWorld.Planet;
+using Verse;
+
+namespace EcosDaQueda.DebugTools
+{
+    /// <summary>Mundo fixo (10b/M1): "biomes [arquivo]" lista todos os biomas e quantos tiles cada um tem no mundo atual;
+    /// "worldinfo" resume a grade e o Worldbuilder.</summary>
+    public static class EQMundoDebug
+    {
+        public static string Biomes(string path)
+        {
+            var count = new Dictionary<BiomeDef, int>();
+            var grid = Find.WorldGrid;
+            if (grid != null)
+                for (int i = 0; i < grid.TilesCount; i++)
+                {
+                    BiomeDef b = grid[i]?.PrimaryBiome;
+                    if (b != null) count[b] = count.TryGetValue(b, out int c) ? c + 1 : 1;
+                }
+            var sb = new StringBuilder("defName\tlabel\tmod\timplemented\tcanBuildBase\tcanAutoChoose\tinVacuum\ttiles\n");
+            var all = DefDatabase<BiomeDef>.AllDefsListForReading.OrderBy(b => b.modContentPack?.PackageId).ThenBy(b => b.defName).ToList();
+            foreach (BiomeDef b in all)
+            {
+                bool vac = false;
+                try { vac = (bool)(typeof(BiomeDef).GetField("inVacuum")?.GetValue(b) ?? false); } catch { }
+                sb.AppendLine(string.Join("\t", b.defName, b.label, b.modContentPack?.PackageId ?? "?", b.implemented, b.canBuildBase, b.canAutoChoose, vac,
+                    count.TryGetValue(b, out int n) ? n : 0));
+            }
+            if (!path.NullOrEmpty()) System.IO.File.WriteAllText(path, sb.ToString());
+            var usable = all.Where(b => b.implemented && b.canBuildBase).ToList();
+            return "biomas=" + all.Count + " implementados_habitáveis=" + usable.Count + " no_mundo=" + count.Count
+                   + " faltando_no_mundo=" + usable.Count(b => !count.ContainsKey(b))
+                   + " por_mod=[" + string.Join(", ", all.GroupBy(b => b.modContentPack?.PackageId ?? "?").Select(g => g.Key + "=" + g.Count())) + "]"
+                   + (path.NullOrEmpty() ? "" : " arquivo=" + path);
+        }
+
+        /// <summary>F1: território do Hegemony por facção (tiles, cidades, distância máxima até a cidade, raio natural pela prosperidade).</summary>
+        public static string Territory()
+        {
+            if (EQTerritory.ClaimsProvider == null) return "sem Hegemony";
+            var rep = EQTerritory.Report();
+            return "facções=" + rep.Count + " tiles_total=" + rep.Sum(r => r.tiles) + "\n" + string.Join("\n", rep.Take(14).Select(r =>
+                "  " + (r.faction.def.defName.Replace("EQ_Faction_", "")) + ": tiles=" + r.tiles + " cidades=" + r.settlements
+                + " dist_max=" + r.maxDist.ToString("0.0") + " tiles/cidade=" + (r.settlements > 0 ? (r.tiles / (float)r.settlements).ToString("0") : "-")
+                + " [" + string.Join("; ", r.cities) + "]"));
+        }
+
+        public static string Info()
+        {
+            var w = Find.World;
+            if (w == null) return "sem mundo";
+            string wb = "não";
+            Type mgr = GenTypes.GetTypeInAnyAssembly("Worldbuilder.WorldPresetManager");
+            if (mgr != null)
+            {
+                int presets = -1;
+                string names = "";
+                try
+                {
+                    var m = mgr.GetMethod("GetAllPresets", System.Reflection.BindingFlags.Static | System.Reflection.BindingFlags.Public | System.Reflection.BindingFlags.NonPublic);
+                    var list = (m?.Invoke(null, new object[] { false, true }) as System.Collections.IEnumerable)?.Cast<object>().ToList();
+                    presets = list?.Count ?? -1;
+                    names = string.Join("; ", (list ?? new List<object>()).Select(p => p.GetType().GetField("name")?.GetValue(p) as string));
+                }
+                catch (Exception ex) { names = "erro: " + ex.GetType().Name + " " + ex.Message; }
+                wb = "sim, presets=" + presets + " [" + names + "]";
+            }
+            return "tiles=" + Find.WorldGrid.TilesCount + " cobertura=" + w.info.planetCoverage + " semente=" + w.info.seedString
+                   + " assentamentos=" + Find.WorldObjects.Settlements.Count + " worldbuilder=" + wb;
+        }
+    }
+}

@@ -228,6 +228,49 @@ namespace EcosDaQueda.DebugTools
                         + (f.result != null ? " resultado=" + f.result : "");
                     break;
                 }
+                // Etapa 10d (resto): tensão, conselho de guerra, frentes de fronteira
+                case "tension":
+                {
+                    // forces tension [a b [valor]] : mostra todas; ou define (cruza limiares como no dia)
+                    if (Arg(2) != null)
+                    {
+                        Faction x = Fac(2), y = Fac(3);
+                        float before = EQWarDiplomacy.Get(x, y);
+                        if (Arg(4) != null)
+                        {
+                            float v = float.Parse(Arg(4), CultureInfo.InvariantCulture);
+                            comp.tension[EQWarDiplomacy.Key(x, y)] = v;
+                            extra = "tensão " + before.ToString("0") + " → " + v + " " + EQWarDiplomacy.Thresholds(comp, x, y, before, v);
+                        }
+                    }
+                    extra += " tensões=[" + string.Join(", ", EQWarDiplomacy.PowerPairs().Select(p => p.Key.def.defName.Replace("EQ_Faction_", "") + "×" + p.Value.def.defName.Replace("EQ_Faction_", "")
+                        + "=" + EQWarDiplomacy.Get(p.Key, p.Value).ToString("0") + "(+" + EQWarDiplomacy.Growth(p.Key, p.Value).ToString("0.0", CultureInfo.InvariantCulture) + "/d)")) + "]";
+                    break;
+                }
+                case "tensionday":
+                {
+                    int n = int.TryParse(Arg(2), out int v) ? v : 1;
+                    for (int i = 0; i < n; i++) EQWarDiplomacy.Daily(comp);
+                    extra = n + " dia(s): " + EQWarDiplomacy.LastDaily;
+                    break;
+                }
+                case "council":
+                {
+                    var l = Find.LetterStack.LettersListForReading.OfType<ChoiceLetter_EQTension>().FirstOrDefault(x => !x.resolved);
+                    if (l == null) { extra = "sem conselho de guerra (último: " + EQWarDiplomacy.LastConsult + ")"; break; }
+                    l.Choose(Arg(2) != "calm");
+                    Find.LetterStack.RemoveLetter(l);
+                    extra = "conselho: " + ChoiceLetter_EQTension.LastResult;
+                    break;
+                }
+                case "border":
+                {
+                    if (Arg(2) == null) { extra = EQWarDiplomacy.BorderFronts(comp, true) ?? "nenhuma guerra com frente possível"; break; }
+                    Faction x = Fac(2), y = Fac(3);
+                    var tile = EQWarDiplomacy.FindBorderTile(x, y, out string how);
+                    extra = "tile=" + tile + " (" + how + ") | " + (EQWarDiplomacy.BorderFronts(comp, true, x, y) ?? "sem frente (não estão em guerra?)");
+                    break;
+                }
                 case "unpaid":
                 {
                     var army = Commanded(comp);
