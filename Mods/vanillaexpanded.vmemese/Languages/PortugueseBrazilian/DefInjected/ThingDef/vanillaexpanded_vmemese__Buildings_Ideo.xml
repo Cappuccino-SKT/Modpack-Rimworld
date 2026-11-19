@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <!-- EN: wicker man -->
+  <VME_WickerMan.label>homem de vime</VME_WickerMan.label>
+  <!-- EN: A large humanoid figure made out of dry brush, thatch, and wood scraps. Prisoners have to be physically restrained to the figurine then burned alive as part of a trial or ritual. -->
+  <VME_WickerMan.description>Uma grande figura humanoide feita de mato seco, palha e restos de madeira. Prisioneiros precisam ser amarrados à figura e queimados vivos como parte de um julgamento ou ritual.</VME_WickerMan.description>
+  <!-- EN: bonfire -->
+  <VME_Bonfire.label>fogueira</VME_Bonfire.label>
+  <!-- EN: An incredibly large and bright-burning bonfire made out of a carefully organized pile of logs on a stone base. Used heavily during flame-based rituals and can only be placed outdoors. -->
+  <VME_Bonfire.description>Uma fogueira enorme e muito brilhante, feita de uma pilha de toras bem arrumada sobre uma base de pedra. Muito usada em rituais de fogo; só pode ser posta ao ar livre.</VME_Bonfire.description>
+  <!-- EN: bonfire -->
+  <VME_BonfireAfterRitual.label>fogueira</VME_BonfireAfterRitual.label>
+  <!-- EN: An incredibly large and bright-burning bonfire made out of a carefully organized pile of logs on a stone base. Used heavily during flame-based rituals and can only be placed outdoors. Will last for at least two quadrums and provide beauty nearby, as well as count for the Fire: Desired precept. -->
+  <VME_BonfireAfterRitual.description>Uma fogueira enorme e muito brilhante, feita de uma pilha de toras bem arrumada sobre uma base de pedra. Muito usada em rituais de fogo; só pode ser posta ao ar livre. Dura pelo menos dois quadrimestres, dá beleza nas redondezas e conta para o preceito Fogo: desejado.</VME_BonfireAfterRitual.description>
+  <!-- EN: mechanoid effigy -->
+  <VME_MechanoidEffigy.label>efígie mecanoide</VME_MechanoidEffigy.label>
+  <!-- EN: A structure assembled from scrapped mechanoid parts. Emits an IFF programming signal capable of confusing ancient mechanoid receptors. Should two exist per colonist enough signal noise will soft reset ancient mechanoid programming, causing an immediate retreat. This will only work on raiding mechanoids, clusters and "boss" mechanoids won't be affected. -->
+  <VME_MechanoidEffigy.description>Uma estrutura montada com peças de mecanoides sucateados. Emite um sinal de identificação amigo-inimigo capaz de confundir os receptores dos mecanoides antigos. Com duas por colono, o ruído do sinal reinicia a programação dos mecanoides antigos, fazendo-os recuar na hora. Só funciona em ataques de mecanoides; aglomerados e mecanoides "chefes" não são afetados.</VME_MechanoidEffigy.description>
+  <!-- EN: ominous obelisk -->
+  <VME_Obelisk.label>obelisco agourento</VME_Obelisk.label>
+  <!-- EN: An ominous-looking obelisk of pure chiseled stone. It seems to radiate an aura of hopelessness and despair.\n\nThe Corruption need of any colonist in an obelisk's radius of effect won't decrease. -->
+  <VME_Obelisk.description>Um obelisco agourento de pedra pura esculpida. Parece irradiar uma aura de desesperança e desespero.\n\nA necessidade de corrupção dos colonos no raio de efeito do obelisco não diminui.</VME_Obelisk.description>
+  <!-- EN: insect nest -->
+  <VME_InsectNest.label>ninho de insetos</VME_InsectNest.label>
+  <!-- EN: A large, swollen hive that seems to be seeping high amounts of bubbling insectoid jelly but not incubating any insectoids themselves.\n\nThe nest will need maintenance by a colonist with the insectoid herder role. If maintenance reaches 0%, the nest will be destroyed.\n\nInsect nest maintenance is a Handling job that gets auto-queued if the hive's maintenance is lower than 50%.. -->
+  <VME_InsectNest.description>Uma colmeia grande e inchada que parece verter muita geleia insetoide borbulhante, mas não choca nenhum insetoide.\n\nO ninho precisa da manutenção de um colono com o cargo de pastor de insetoides. Se a manutenção chegar a 0%, o ninho é destruído.\n\nA manutenção do ninho é um trabalho de manejo de animais, posto na fila automaticamente quando a manutenção cai abaixo de 50%.</VME_InsectNest.description>
+</LanguageData>

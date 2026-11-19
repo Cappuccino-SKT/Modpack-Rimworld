@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <!-- EN: Violent conversion has a 50% chance of either completely converting the participant to your ideoligion or just being executed. Depending on ritual quality, participants will get between {MINMOOD} and {MAXMOOD} mood for {MOODDAYS} days. -->
+  <VME_ViolentConversionRitualOutcome.description>A conversão violenta tem 50% de chance de converter o participante por completo à sua ideologia ou de simplesmente executá-lo. Conforme a qualidade do ritual, os participantes recebem entre {MINMOOD} e {MAXMOOD} de humor por {MOODDAYS} dias.</VME_ViolentConversionRitualOutcome.description>
+  <!-- EN: participant count -->
+  <VME_ViolentConversionRitualOutcome.comps.0.label>número de participantes</VME_ViolentConversionRitualOutcome.comps.0.label>
+  <!-- EN: {PAWN_labelShort}'s social impact -->
+  <VME_ViolentConversionRitualOutcome.comps.1.label>impacto social de {PAWN_labelShort}</VME_ViolentConversionRitualOutcome.comps.1.label>
+  <!-- EN: speaker's social impact -->
+  <VME_ViolentConversionRitualOutcome.comps.1.labelAbstract>impacto social do orador</VME_ViolentConversionRitualOutcome.comps.1.labelAbstract>
+  <!-- EN: started at altar or ideogram -->
+  <VME_ViolentConversionRitualOutcome.comps.2.label>começou em altar or ideograma</VME_ViolentConversionRitualOutcome.comps.2.label>
+  <!-- EN: an altar or an ideogram -->
+  <VME_ViolentConversionRitualOutcome.comps.2.expectedThingLabelTip>um altar ou um ideograma</VME_ViolentConversionRitualOutcome.comps.2.expectedThingLabelTip>
+  <!-- EN: Awkward -->
+  <VME_ViolentConversionRitualOutcome.outcomeChances.0.label>Constrangedora</VME_ViolentConversionRitualOutcome.outcomeChances.0.label>
+  <!-- EN: The {0} was awkward. The speech dragged on and it was a fruitless back-and-forth argument. The words were vague and unconvincing. -->
+  <VME_ViolentConversionRitualOutcome.outcomeChances.0.description>O(a) {0} foi constrangedor(a). O discurso se arrastou e virou um bate-boca inútil. As palavras foram vagas e nada convincentes.</VME_ViolentConversionRitualOutcome.outcomeChances.0.description>
+  <!-- EN: Satisfying -->
+  <VME_ViolentConversionRitualOutcome.outcomeChances.1.label>Satisfatório</VME_ViolentConversionRitualOutcome.outcomeChances.1.label>
+  <!-- EN: The {0} was satisfying. The speech was stirring and enjoyable to listen to. -->
+  <VME_ViolentConversionRitualOutcome.outcomeChances.1.description>O(a) {0} foi satisfatório(a). O discurso foi emocionante e agradável de ouvir.</VME_ViolentConversionRitualOutcome.outcomeChances.1.description>
+  <!-- EN: Spectacular -->
+  <VME_ViolentConversionRitualOutcome.outcomeChances.2.label>Espetacular</VME_ViolentConversionRitualOutcome.outcomeChances.2.label>
+  <!-- EN: The {0} was spectacular! Surely our beliefs will prevail over any others! -->
+  <VME_ViolentConversionRitualOutcome.outcomeChances.2.description>O(a) {0} foi espetacular! Com certeza nossas crenças prevalecerão sobre quaisquer outras!</VME_ViolentConversionRitualOutcome.outcomeChances.2.description>
+</LanguageData>

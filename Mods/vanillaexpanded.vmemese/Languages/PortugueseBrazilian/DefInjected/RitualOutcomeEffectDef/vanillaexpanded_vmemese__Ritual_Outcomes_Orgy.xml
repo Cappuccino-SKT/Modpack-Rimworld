@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <!-- EN: Every participant will get a "got some lovin'" memory, but the negative effects of a bad quality orgy will be much more severe than usual. Depending on ritual quality, participants will get between {MINMOOD} and {MAXMOOD} mood for {MOODDAYS} days.\nNote that all participants must be consenting adults. If the moral guide is not an adult the ritual will appear as blocked. -->
+  <VME_OrgyRitualOutcome.description>Todo participante recebe a memória "recebeu um carinho", mas os efeitos negativos de uma orgia ruim são bem mais severos que o normal. Conforme a qualidade do ritual, os participantes recebem entre {MINMOOD} e {MAXMOOD} de humor por {MOODDAYS} dias.\nTodos os participantes precisam ser adultos que consentem. Se o guia moral não for adulto, o ritual aparece bloqueado.</VME_OrgyRitualOutcome.description>
+  <!-- EN: orgy organizer present -->
+  <VME_OrgyRitualOutcome.comps.0.label>organizador da orgia presente</VME_OrgyRitualOutcome.comps.0.label>
+  <!-- EN: room impressiveness -->
+  <VME_OrgyRitualOutcome.comps.1.label>imponência do cômodo</VME_OrgyRitualOutcome.comps.1.label>
+  <!-- EN: {PAWN_labelShort}'s social impact -->
+  <VME_OrgyRitualOutcome.comps.2.label>impacto social de {PAWN_labelShort}</VME_OrgyRitualOutcome.comps.2.label>
+  <!-- EN: organizer's social impact -->
+  <VME_OrgyRitualOutcome.comps.2.labelAbstract>impacto social do organizador</VME_OrgyRitualOutcome.comps.2.labelAbstract>
+  <!-- EN: participant count -->
+  <VME_OrgyRitualOutcome.comps.3.label>número de participantes</VME_OrgyRitualOutcome.comps.3.label>
+  <!-- EN: Grotesque -->
+  <VME_OrgyRitualOutcome.outcomeChances.0.label>Grotesca</VME_OrgyRitualOutcome.outcomeChances.0.label>
+  <!-- EN: The {0} was grotesque! When you think of an orgy, you tend to imagine attractive people. This was... the entire opposite. The mental images will take a while to go away. -->
+  <VME_OrgyRitualOutcome.outcomeChances.0.description>O(a) {0} foi grotesco(a)! Quando se pensa numa orgia, a gente imagina gente atraente. Isso foi... o exato oposto. As imagens mentais vão demorar a ir embora.</VME_OrgyRitualOutcome.outcomeChances.0.description>
+  <!-- EN: Awkward -->
+  <VME_OrgyRitualOutcome.outcomeChances.1.label>Constrangedora</VME_OrgyRitualOutcome.outcomeChances.1.label>
+  <!-- EN: The {0} was awkward. Everyone sat around not knowing exactly what to do, naked bodies laying everywhere. Quite disappointing. -->
+  <VME_OrgyRitualOutcome.outcomeChances.1.description>O(a) {0} foi constrangedor(a). Todo mundo ficou sentado sem saber direito o que fazer, com corpos nus jogados por toda parte. Bem decepcionante.</VME_OrgyRitualOutcome.outcomeChances.1.description>
+  <!-- EN: Sexy -->
+  <VME_OrgyRitualOutcome.outcomeChances.2.label>Sensual</VME_OrgyRitualOutcome.outcomeChances.2.label>
+  <!-- EN: The {0} was very sexy. We gave ourselves to each other in a communal expression of our deepest passions. -->
+  <VME_OrgyRitualOutcome.outcomeChances.2.description>O(a) {0} foi muito sensual. Entregamo-nos uns aos outros numa expressão coletiva das nossas paixões mais profundas.</VME_OrgyRitualOutcome.outcomeChances.2.description>
+  <!-- EN: Exhilarating -->
+  <VME_OrgyRitualOutcome.outcomeChances.3.label>Arrebatadora</VME_OrgyRitualOutcome.outcomeChances.3.label>
+  <!-- EN: The {0} was exhilarating! We all donned our high-society masquerade masks and uncovered our bodies. A barrage of ecstasy unlike no other made our bodies tremble with barely concealed excitement. -->
+  <VME_OrgyRitualOutcome.outcomeChances.3.description>O(a) {0} foi arrebatador(a)! Todos pusemos máscaras de baile de gala e despimos o corpo. Uma enxurrada de êxtase sem igual fez nossos corpos tremerem de excitação mal disfarçada.</VME_OrgyRitualOutcome.outcomeChances.3.description>
+</LanguageData>

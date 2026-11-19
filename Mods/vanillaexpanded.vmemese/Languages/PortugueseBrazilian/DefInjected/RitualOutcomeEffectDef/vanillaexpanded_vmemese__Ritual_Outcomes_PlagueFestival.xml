@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <!-- EN: Depending on ritual quality, participants will get between {MINMOOD} and {MAXMOOD} mood for {MOODDAYS} days. If the ritual is boring or better, it will reward all participants with the Plague. -->
+  <VME_PlagueFestivalRitualOutcome.description>Conforme a qualidade do ritual, os participantes recebem entre {MINMOOD} e {MAXMOOD} de humor por {MOODDAYS} dias. Se o ritual for chato ou melhor, todos os participantes ganham a peste de recompensa.</VME_PlagueFestivalRitualOutcome.description>
+  <!-- EN: moral guide present -->
+  <VME_PlagueFestivalRitualOutcome.comps.2.label>guia moral presente</VME_PlagueFestivalRitualOutcome.comps.2.label>
+  <!-- EN: participant count -->
+  <VME_PlagueFestivalRitualOutcome.comps.3.label>número de participantes</VME_PlagueFestivalRitualOutcome.comps.3.label>
+  <!-- EN: started at altar -->
+  <VME_PlagueFestivalRitualOutcome.comps.4.label>começou em altar</VME_PlagueFestivalRitualOutcome.comps.4.label>
+  <!-- EN: an altar -->
+  <VME_PlagueFestivalRitualOutcome.comps.4.expectedThingLabelTip>um altar</VME_PlagueFestivalRitualOutcome.comps.4.expectedThingLabelTip>
+  <!-- EN: Terrible -->
+  <VME_PlagueFestivalRitualOutcome.outcomeChances.0.label>Terrível</VME_PlagueFestivalRitualOutcome.outcomeChances.0.label>
+  <!-- EN: The {0} was terrible! The speech was stuttering and incoherent, and the killing technique was botched. The corpse laid there, inert, and no holy miasma was liberated from it. What a waste of time! -->
+  <VME_PlagueFestivalRitualOutcome.outcomeChances.0.description>O(a) {0} foi terrível! O discurso foi gaguejado e incoerente, e a técnica de abate foi um fiasco. O cadáver ficou ali, inerte, e nenhum miasma sagrado saiu dele. Que perda de tempo!</VME_PlagueFestivalRitualOutcome.outcomeChances.0.description>
+  <!-- EN: Boring -->
+  <VME_PlagueFestivalRitualOutcome.outcomeChances.1.label>Chata</VME_PlagueFestivalRitualOutcome.outcomeChances.1.label>
+  <!-- EN: The {0} was boring. The speech was repetitive and the killing technique was noticeably flawed. However the blessed plague is now among us. -->
+  <VME_PlagueFestivalRitualOutcome.outcomeChances.1.description>O(a) {0} foi chato(a). O discurso foi repetitivo e a técnica de abate teve falhas visíveis. Mas a peste abençoada agora está entre nós.</VME_PlagueFestivalRitualOutcome.outcomeChances.1.description>
+  <!-- EN: Satisfying -->
+  <VME_PlagueFestivalRitualOutcome.outcomeChances.2.label>Satisfatório</VME_PlagueFestivalRitualOutcome.outcomeChances.2.label>
+  <!-- EN: The {0} was satisfying. The speech felt meaningful, and a holy miasma was liberated from the corpse, bathing us all in a sacred plague wind. -->
+  <VME_PlagueFestivalRitualOutcome.outcomeChances.2.description>O(a) {0} foi satisfatório(a). O discurso pareceu significativo, e um miasma sagrado saiu do cadáver, banhando a todos num vento sagrado de peste.</VME_PlagueFestivalRitualOutcome.outcomeChances.2.description>
+  <!-- EN: Spectacular -->
+  <VME_PlagueFestivalRitualOutcome.outcomeChances.3.label>Espetacular</VME_PlagueFestivalRitualOutcome.outcomeChances.3.label>
+  <!-- EN: The {0} was spectacular! The speech brought everyone to the edge of a frenzy and a sacred plague wind wafted from the animal's corpse, blessing us. -->
+  <VME_PlagueFestivalRitualOutcome.outcomeChances.3.description>O(a) {0} foi espetacular! O discurso levou todos à beira do frenesi, e um vento sagrado de peste soprou do cadáver do animal, nos abençoando.</VME_PlagueFestivalRitualOutcome.outcomeChances.3.description>
+</LanguageData>

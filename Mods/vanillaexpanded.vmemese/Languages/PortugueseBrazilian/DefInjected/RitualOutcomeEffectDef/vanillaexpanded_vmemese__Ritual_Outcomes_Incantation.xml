@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <!-- EN: If the incantation ritual goes well (positive outcome) it will increase the corruption need of all participants by 20%, as well as provide a mood bonus. -->
+  <VME_IncantationOutcome.description>Se o ritual de encantamento correr bem (resultado positivo), ele aumenta em 20% a necessidade de corrupção de todos os participantes, além de dar um bônus de humor.</VME_IncantationOutcome.description>
+  <!-- EN: room impressiveness -->
+  <VME_IncantationOutcome.comps.0.label>imponência do cômodo</VME_IncantationOutcome.comps.0.label>
+  <!-- EN: participant count -->
+  <VME_IncantationOutcome.comps.1.label>número de participantes</VME_IncantationOutcome.comps.1.label>
+  <!-- EN: {PAWN_labelShort}'s social impact -->
+  <VME_IncantationOutcome.comps.2.label>impacto social de {PAWN_labelShort}</VME_IncantationOutcome.comps.2.label>
+  <!-- EN: speaker's social impact -->
+  <VME_IncantationOutcome.comps.2.labelAbstract>impacto social do orador</VME_IncantationOutcome.comps.2.labelAbstract>
+  <!-- EN: Squamous -->
+  <VME_IncantationOutcome.outcomeChances.0.label>Escamoso</VME_IncantationOutcome.outcomeChances.0.label>
+  <!-- EN: The {0} was abnormal! An indescribably hideous gibbering! We'd even describe it as squamous, but we don't even know what that is! An unutterable word! -->
+  <VME_IncantationOutcome.outcomeChances.0.description>O(a) {0} foi anormal! Uma algaravia indescritivelmente hedionda! Diríamos até escamosa, mas nem sabemos o que isso é! Uma palavra impronunciável!</VME_IncantationOutcome.outcomeChances.0.description>
+  <!-- EN: Accursed -->
+  <VME_IncantationOutcome.outcomeChances.1.label>Maldito</VME_IncantationOutcome.outcomeChances.1.label>
+  <!-- EN: The {0} was suitably accursed. A litany of dark morbidities expressed in crime, perversion, and insanity. -->
+  <VME_IncantationOutcome.outcomeChances.1.description>O(a) {0} foi devidamente maldito(a). Uma ladainha de morbidezes sombrias expressas em crime, perversão e insanidade.</VME_IncantationOutcome.outcomeChances.1.description>
+  <!-- EN: Blasphemous -->
+  <VME_IncantationOutcome.outcomeChances.2.label>Blasfemo</VME_IncantationOutcome.outcomeChances.2.label>
+  <!-- EN: The {0} was blasphemous. A promise of hidden and fathomless worlds of strange life which pulsate in the gulfs beyond the stars and press hideously upon our own globe in unholy dimensions which only the dead and the moonstruck can glimpse. -->
+  <VME_IncantationOutcome.outcomeChances.2.description>O(a) {0} foi blasfemo(a). Uma promessa de mundos ocultos e insondáveis de vida estranha que pulsam nos abismos além das estrelas e pressionam de forma hedionda o nosso globo em dimensões profanas que só os mortos e os lunáticos conseguem vislumbrar.</VME_IncantationOutcome.outcomeChances.2.description>
+  <!-- EN: Loathsome -->
+  <VME_IncantationOutcome.outcomeChances.3.label>Repugnante</VME_IncantationOutcome.outcomeChances.3.label>
+  <!-- EN: The {0} was loathsome! We live on a placid island of ignorance in the midst of black seas of infinity, and it was not meant that we should voyage far. -->
+  <VME_IncantationOutcome.outcomeChances.3.description>O(a) {0} foi repugnante! Vivemos numa plácida ilha de ignorância em meio a mares negros de infinito, e não era para viajarmos longe.</VME_IncantationOutcome.outcomeChances.3.description>
+</LanguageData>

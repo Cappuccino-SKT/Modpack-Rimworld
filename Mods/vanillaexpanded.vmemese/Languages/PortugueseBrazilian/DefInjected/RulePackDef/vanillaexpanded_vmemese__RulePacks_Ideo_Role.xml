@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <VME_NamerSecondTriumvir.rulePack.rulesStrings>
+    <!-- EN: r_roleName-&gt;second triumvir -->
+    <li>r_roleName-&gt;segundo triúnviro</li>
+  </VME_NamerSecondTriumvir.rulePack.rulesStrings>
+  <VME_NamerThirdTriumvir.rulePack.rulesStrings>
+    <!-- EN: r_roleName-&gt;third triumvir -->
+    <li>r_roleName-&gt;terceiro triúnviro</li>
+  </VME_NamerThirdTriumvir.rulePack.rulesStrings>
+  <VME_RoleFireKeeper.rulePack.rulesStrings>
+    <!-- EN: r_roleName(p=7)-&gt;[firstPart][secondPart] -->
+    <li>r_roleName(p=7)-&gt;[secondPart] [firstPart]</li>
+    <!-- EN: r_roleName-&gt;firekeeper -->
+    <li>r_roleName-&gt;guardião do fogo</li>
+    <!-- EN: r_roleName-&gt;flamekeeper -->
+    <li>r_roleName-&gt;guardião da chama</li>
+    <!-- EN: firstPart-&gt;flame -->
+    <li>firstPart-&gt;da chama</li>
+    <!-- EN: firstPart-&gt;ash -->
+    <li>firstPart-&gt;das cinzas</li>
+    <!-- EN: firstPart-&gt;fire -->
+    <li>firstPart-&gt;do fogo</li>
+    <!-- EN: firstPart-&gt;warmth -->
+    <li>firstPart-&gt;do calor</li>
+    <!-- EN: firstPart-&gt;bright -->
+    <li>firstPart-&gt;do brilho</li>
+    <!-- EN: firstPart-&gt;light -->
+    <li>firstPart-&gt;da luz</li>
+    <!-- EN: firstPart-&gt;kiln -->
+    <li>firstPart-&gt;do forno</li>
+    <!-- EN: firstPart-&gt;forge -->
+    <li>firstPart-&gt;da forja</li>
+    <!-- EN: secondPart(p=4)-&gt;touched -->
+    <li>secondPart(p=4)-&gt;ungido</li>
+    <!-- EN: secondPart(p=4)-&gt;warden -->
+    <li>secondPart(p=4)-&gt;vigia</li>
+    <!-- EN: secondPart(p=4)-&gt;herald -->
+    <li>secondPart(p=4)-&gt;arauto</li>
+    <!-- EN: secondPart(p=4)-&gt;protector -->
+    <li>secondPart(p=4)-&gt;protetor</li>
+    <!-- EN: secondPart(p=4)-&gt;defender -->
+    <li>secondPart(p=4)-&gt;defensor</li>
+    <!-- EN: secondPart(p=4)-&gt;seeker -->
+    <li>secondPart(p=4)-&gt;buscador</li>
+    <!-- EN: secondPart(p=4)-&gt;whisperer -->
+    <li>secondPart(p=4)-&gt;sussurrador</li>
+    <!-- EN: secondPart(p=4)-&gt;keeper -->
+    <li>secondPart(p=4)-&gt;guardião</li>
+  </VME_RoleFireKeeper.rulePack.rulesStrings>
+  <VME_Mechacker.rulePack.rulesStrings>
+    <!-- EN: r_roleName(p=7)-&gt;[firstPart][secondPart] -->
+    <li>r_roleName(p=7)-&gt;[secondPart] [firstPart]</li>
+    <!-- EN: r_roleName-&gt;Mechacker -->
+    <li>r_roleName-&gt;Mecahacker</li>
+    <!-- EN: firstPart-&gt;Engine  -->
+    <li>firstPart-&gt;dos Motores</li>
+    <!-- EN: firstPart-&gt;Mechanoid  -->
+    <li>firstPart-&gt;Mecanoide</li>
+    <!-- EN: firstPart-&gt;Bionic  -->
+    <li>firstPart-&gt;Biônico</li>
+    <!-- EN: firstPart-&gt;Technological  -->
+    <li>firstPart-&gt;Tecnológico</li>
+    <!-- EN: firstPart-&gt;Electronic  -->
+    <li>firstPart-&gt;Eletrônico</li>
+    <!-- EN: firstPart-&gt;Artificial  -->
+    <li>firstPart-&gt;Artificial</li>
+    <!-- EN: firstPart-&gt;Scientific  -->
+    <li>firstPart-&gt;Científico</li>
+    <!-- EN: firstPart-&gt;Brilliant  -->
+    <li>firstPart-&gt;Brilhante</li>
+    <!-- EN: secondPart(p=4)-&gt;Engineseer -->
+    <li>secondPart(p=4)-&gt;Vidente das Máquinas</li>
+    <!-- EN: secondPart(p=4)-&gt;Artificer -->
+    <li>secondPart(p=4)-&gt;Artífice</li>
+    <!-- EN: secondPart(p=4)-&gt;Machinist -->
+    <li>secondPart(p=4)-&gt;Maquinista</li>
+    <!-- EN: secondPart(p=4)-&gt;Soothesayer -->
+    <li>secondPart(p=4)-&gt;Adivinho</li>
+    <!-- EN: secondPart(p=4)-&gt;Designer -->
+    <li>secondPart(p=4)-&gt;Projetista</li>
+    <!-- EN: secondPart(p=4)-&gt;Hackmaster -->
+    <li>secondPart(p=4)-&gt;Mestre Hacker</li>
+    <!-- EN: secondPart(p=4)-&gt;Mastermind -->
+    <li>secondPart(p=4)-&gt;Mentor</li>
+    <!-- EN: secondPart(p=4)-&gt;Inventor -->
+    <li>secondPart(p=4)-&gt;Inventor</li>
+  </VME_Mechacker.rulePack.rulesStrings>
+  <VME_PartyHost.rulePack.rulesStrings>
+    <!-- EN: r_roleName(p=7)-&gt;[firstPart][secondPart] -->
+    <li>r_roleName(p=7)-&gt;[secondPart] [firstPart]</li>
+    <!-- EN: r_roleName-&gt;party host -->
+    <li>r_roleName-&gt;anfitrião de festas</li>
+    <!-- EN: r_roleName-&gt;party animal -->
+    <li>r_roleName-&gt;animal de festa</li>
+    <!-- EN: firstPart-&gt;exciting  -->
+    <li>firstPart-&gt;empolgante</li>
+    <!-- EN: firstPart-&gt;comedic  -->
+    <li>firstPart-&gt;cômico</li>
+    <!-- EN: firstPart-&gt;esteemed  -->
+    <li>firstPart-&gt;estimado</li>
+    <!-- EN: firstPart-&gt;hilarious  -->
+    <li>firstPart-&gt;hilário</li>
+    <!-- EN: firstPart-&gt;crazed  -->
+    <li>firstPart-&gt;doidão</li>
+    <!-- EN: firstPart-&gt;wild  -->
+    <li>firstPart-&gt;selvagem</li>
+    <!-- EN: firstPart-&gt;jubilant  -->
+    <li>firstPart-&gt;jubiloso</li>
+    <!-- EN: firstPart-&gt;joyous  -->
+    <li>firstPart-&gt;alegre</li>
+    <!-- EN: secondPart(p=4)-&gt;genius -->
+    <li>secondPart(p=4)-&gt;gênio</li>
+    <!-- EN: secondPart(p=4)-&gt;entertainer -->
+    <li>secondPart(p=4)-&gt;animador</li>
+    <!-- EN: secondPart(p=4)-&gt;host -->
+    <li>secondPart(p=4)-&gt;anfitrião</li>
+    <!-- EN: secondPart(p=4)-&gt;jester -->
+    <li>secondPart(p=4)-&gt;bobo da corte</li>
+    <!-- EN: secondPart(p=4)-&gt;joker -->
+    <li>secondPart(p=4)-&gt;piadista</li>
+    <!-- EN: secondPart(p=4)-&gt;animal -->
+    <li>secondPart(p=4)-&gt;animal</li>
+    <!-- EN: secondPart(p=4)-&gt;performer -->
+    <li>secondPart(p=4)-&gt;artista</li>
+    <!-- EN: secondPart(p=4)-&gt;comedian -->
+    <li>secondPart(p=4)-&gt;comediante</li>
+  </VME_PartyHost.rulePack.rulesStrings>
+  <VME_InsectoidHerder.rulePack.rulesStrings>
+    <!-- EN: r_roleName(p=7)-&gt;[firstPart][secondPart] -->
+    <li>r_roleName(p=7)-&gt;[secondPart] [firstPart]</li>
+    <!-- EN: r_roleName-&gt;Insectoid Herder -->
+    <li>r_roleName-&gt;Pastor de Insetoides</li>
+    <!-- EN: firstPart-&gt;Spider  -->
+    <li>firstPart-&gt;das Aranhas</li>
+    <!-- EN: firstPart-&gt;Maggot  -->
+    <li>firstPart-&gt;dos Vermes</li>
+    <!-- EN: firstPart-&gt;Scarab  -->
+    <li>firstPart-&gt;dos Escaravelhos</li>
+    <!-- EN: firstPart-&gt;Cricket  -->
+    <li>firstPart-&gt;dos Grilos</li>
+    <!-- EN: firstPart-&gt;Tick  -->
+    <li>firstPart-&gt;dos Carrapatos</li>
+    <!-- EN: firstPart-&gt;Larva  -->
+    <li>firstPart-&gt;das Larvas</li>
+    <!-- EN: firstPart-&gt;Beetle  -->
+    <li>firstPart-&gt;dos Besouros</li>
+    <!-- EN: firstPart-&gt;Locust  -->
+    <li>firstPart-&gt;dos Gafanhotos</li>
+    <!-- EN: secondPart(p=4)-&gt;Harvester -->
+    <li>secondPart(p=4)-&gt;Colhedor</li>
+    <!-- EN: secondPart(p=4)-&gt;Handler -->
+    <li>secondPart(p=4)-&gt;Tratador</li>
+    <!-- EN: secondPart(p=4)-&gt;Brood-sibling -->
+    <li>secondPart(p=4)-&gt;Irmão de Ninhada</li>
+    <!-- EN: secondPart(p=4)-&gt;Devotee -->
+    <li>secondPart(p=4)-&gt;Devoto</li>
+    <!-- EN: secondPart(p=4)-&gt;Hive-Psyker -->
+    <li>secondPart(p=4)-&gt;Psíquico da Colmeia</li>
+    <!-- EN: secondPart(p=4)-&gt;Hive-Commander -->
+    <li>secondPart(p=4)-&gt;Comandante da Colmeia</li>
+    <!-- EN: secondPart(p=4)-&gt;Hive-brood -->
+    <li>secondPart(p=4)-&gt;Cria da Colmeia</li>
+    <!-- EN: secondPart(p=4)-&gt;Hive-slave -->
+    <li>secondPart(p=4)-&gt;Escravo da Colmeia</li>
+  </VME_InsectoidHerder.rulePack.rulesStrings>
+  <VME_Trader.rulePack.rulesStrings>
+    <!-- EN: r_roleName(p=7)-&gt;[firstPart][secondPart] -->
+    <li>r_roleName(p=7)-&gt;[secondPart] [firstPart]</li>
+    <!-- EN: r_roleName-&gt;Trader -->
+    <li>r_roleName-&gt;Comerciante</li>
+    <!-- EN: firstPart-&gt;Bountiful  -->
+    <li>firstPart-&gt;Generoso</li>
+    <!-- EN: firstPart-&gt;Itinerant  -->
+    <li>firstPart-&gt;Itinerante</li>
+    <!-- EN: firstPart-&gt;Unscrupulous  -->
+    <li>firstPart-&gt;Inescrupuloso</li>
+    <!-- EN: firstPart-&gt;Respectable  -->
+    <li>firstPart-&gt;Respeitável</li>
+    <!-- EN: firstPart-&gt;Affluent  -->
+    <li>firstPart-&gt;Abastado</li>
+    <!-- EN: firstPart-&gt;Prosperous  -->
+    <li>firstPart-&gt;Próspero</li>
+    <!-- EN: firstPart-&gt;Opulent  -->
+    <li>firstPart-&gt;Opulento</li>
+    <!-- EN: firstPart-&gt;Rich  -->
+    <li>firstPart-&gt;Rico</li>
+    <!-- EN: secondPart(p=4)-&gt;Merchant -->
+    <li>secondPart(p=4)-&gt;Mercador</li>
+    <!-- EN: secondPart(p=4)-&gt;Operator -->
+    <li>secondPart(p=4)-&gt;Operador</li>
+    <!-- EN: secondPart(p=4)-&gt;Seller -->
+    <li>secondPart(p=4)-&gt;Vendedor</li>
+    <!-- EN: secondPart(p=4)-&gt;Shopkeeper -->
+    <li>secondPart(p=4)-&gt;Lojista</li>
+    <!-- EN: secondPart(p=4)-&gt;Vendor -->
+    <li>secondPart(p=4)-&gt;Ambulante</li>
+    <!-- EN: secondPart(p=4)-&gt;Broker -->
+    <li>secondPart(p=4)-&gt;Corretor</li>
+    <!-- EN: secondPart(p=4)-&gt;Wholesaler -->
+    <li>secondPart(p=4)-&gt;Atacadista</li>
+    <!-- EN: secondPart(p=4)-&gt;Salesperson -->
+    <li>secondPart(p=4)-&gt;Representante</li>
+  </VME_Trader.rulePack.rulesStrings>
+  <VME_Patissier.rulePack.rulesStrings>
+    <!-- EN: r_roleName(p=7)-&gt;[firstPart][secondPart] -->
+    <li>r_roleName(p=7)-&gt;[secondPart] [firstPart]</li>
+    <!-- EN: r_roleName-&gt;Patissier -->
+    <li>r_roleName-&gt;Pâtissier</li>
+    <!-- EN: firstPart-&gt;Deft-handed  -->
+    <li>firstPart-&gt;Habilidoso</li>
+    <!-- EN: firstPart-&gt;Accomplished  -->
+    <li>firstPart-&gt;Consagrado</li>
+    <!-- EN: firstPart-&gt;Talented  -->
+    <li>firstPart-&gt;Talentoso</li>
+    <!-- EN: firstPart-&gt;Exquisite  -->
+    <li>firstPart-&gt;Primoroso</li>
+    <!-- EN: firstPart-&gt;Seasoned  -->
+    <li>firstPart-&gt;Experiente</li>
+    <!-- EN: firstPart-&gt;Masterful  -->
+    <li>firstPart-&gt;Magistral</li>
+    <!-- EN: secondPart(p=4)-&gt;Culinarian -->
+    <li>secondPart(p=4)-&gt;Culinarista</li>
+    <!-- EN: secondPart(p=4)-&gt;Epicurian -->
+    <li>secondPart(p=4)-&gt;Epicurista</li>
+    <!-- EN: secondPart(p=4)-&gt;Baker -->
+    <li>secondPart(p=4)-&gt;Padeiro</li>
+    <!-- EN: secondPart(p=4)-&gt;Patissier -->
+    <li>secondPart(p=4)-&gt;Pâtissier</li>
+    <!-- EN: secondPart(p=4)-&gt;Banqueter -->
+    <li>secondPart(p=4)-&gt;Banqueteiro</li>
+    <!-- EN: secondPart(p=4)-&gt;Glacier -->
+    <li>secondPart(p=4)-&gt;Sorveteiro</li>
+    <!-- EN: secondPart(p=4)-&gt;Confectioner -->
+    <li>secondPart(p=4)-&gt;Confeiteiro</li>
+  </VME_Patissier.rulePack.rulesStrings>
+  <VME_Commissar.rulePack.rulesStrings>
+    <!-- EN: r_roleName-&gt;Commissar -->
+    <li>r_roleName-&gt;Comissário</li>
+  </VME_Commissar.rulePack.rulesStrings>
+  <VME_Fleshcrafter.rulePack.rulesStrings>
+    <!-- EN: r_roleName-&gt;Fleshcrafter -->
+    <li>r_roleName-&gt;Carnemoldador</li>
+  </VME_Fleshcrafter.rulePack.rulesStrings>
+  <VME_Nurse.rulePack.rulesStrings>
+    <!-- EN: r_roleName-&gt;Nurse -->
+    <li>r_roleName-&gt;Enfermeiro</li>
+  </VME_Nurse.rulePack.rulesStrings>
+  <VME_Majordomo.rulePack.rulesStrings>
+    <!-- EN: r_roleName-&gt;Majordomo -->
+    <li>r_roleName-&gt;Mordomo-mor</li>
+  </VME_Majordomo.rulePack.rulesStrings>
+</LanguageData>

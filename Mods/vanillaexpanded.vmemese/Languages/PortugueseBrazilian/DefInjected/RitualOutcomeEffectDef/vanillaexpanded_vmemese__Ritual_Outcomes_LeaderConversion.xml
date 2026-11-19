@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <!-- EN: If it goes well, target's ideoligion certainty will be reduced or they will convert. If it goes badly, they will gain certainty in their old beliefs. -->
+  <VME_LeaderConversionOutcome.description>Se tudo ocorrer bem, a certeza da ideologia do alvo será reduzida ou eles se converterão. Se der errado, eles ganharão certeza em suas antigas crenças.</VME_LeaderConversionOutcome.description>
+  <!-- EN: room impressiveness -->
+  <VME_LeaderConversionOutcome.comps.0.label>imponência do cômodo</VME_LeaderConversionOutcome.comps.0.label>
+  <!-- EN: participant count -->
+  <VME_LeaderConversionOutcome.comps.1.label>número de participantes</VME_LeaderConversionOutcome.comps.1.label>
+  <!-- EN: {PAWN_labelShort}'s social impact -->
+  <VME_LeaderConversionOutcome.comps.2.label>impacto social de {PAWN_labelShort}</VME_LeaderConversionOutcome.comps.2.label>
+  <!-- EN: speaker's social impact -->
+  <VME_LeaderConversionOutcome.comps.2.labelAbstract>impacto social do orador</VME_LeaderConversionOutcome.comps.2.labelAbstract>
+  <!-- EN: {PAWN_labelShort}'s expectations -->
+  <VME_LeaderConversionOutcome.comps.3.label>Expectativas de {PAWN_labelShort}</VME_LeaderConversionOutcome.comps.3.label>
+  <!-- EN: convertee's expectations -->
+  <VME_LeaderConversionOutcome.comps.3.labelAbstract>expectativas do conversor</VME_LeaderConversionOutcome.comps.3.labelAbstract>
+  <!-- EN: Terrible -->
+  <VME_LeaderConversionOutcome.outcomeChances.0.label>Terrível</VME_LeaderConversionOutcome.outcomeChances.0.label>
+  <!-- EN: The {0} was terrible! From the first word, it was a fruitless back-and-forth argument. It dragged on for a cringe-inducingly long time. -->
+  <VME_LeaderConversionOutcome.outcomeChances.0.description>O {0} foi terrível! Desde a primeira palavra, foi uma discussão infrutífera de vaivém. Isso se arrastou por um tempo assustadoramente longo.</VME_LeaderConversionOutcome.outcomeChances.0.description>
+  <!-- EN: Ineffective -->
+  <VME_LeaderConversionOutcome.outcomeChances.1.label>Ineficaz</VME_LeaderConversionOutcome.outcomeChances.1.label>
+  <!-- EN: The {0} was ineffective. Most of the arguments were unclear, and the convertee countered those that made sense. -->
+  <VME_LeaderConversionOutcome.outcomeChances.1.description>O {0} foi ineficaz. A maioria dos argumentos não era clara e o conversor convertido rebateu aqueles que faziam sentido.</VME_LeaderConversionOutcome.outcomeChances.1.description>
+  <!-- EN: Effective -->
+  <VME_LeaderConversionOutcome.outcomeChances.2.label>Eficaz</VME_LeaderConversionOutcome.outcomeChances.2.label>
+  <!-- EN: The {0} was effective. The speech not only delivered solid arguments and visibly swayed the convertee's thoughts, but kept the crowd entertained as well. -->
+  <VME_LeaderConversionOutcome.outcomeChances.2.description>O {0} foi eficaz. O discurso não apenas apresentou argumentos sólidos e visivelmente influenciou os pensamentos do converte, mas também manteve a multidão entretida.</VME_LeaderConversionOutcome.outcomeChances.2.description>
+  <!-- EN: Masterful -->
+  <VME_LeaderConversionOutcome.outcomeChances.3.label>Magistral</VME_LeaderConversionOutcome.outcomeChances.3.label>
+  <!-- EN: The {0} was masterful! Old beliefs seemed to dissolve effortlessly and inevitably, and our true knowledge was accepted. -->
+  <VME_LeaderConversionOutcome.outcomeChances.3.description>O {0} foi magistral! Velhas crenças pareciam se dissolver sem esforço e inevitavelmente, e nosso verdadeiro conhecimento foi aceito.</VME_LeaderConversionOutcome.outcomeChances.3.description>
+</LanguageData>

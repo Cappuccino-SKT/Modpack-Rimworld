@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <!-- EN: Depending on ritual quality, participants will get between {MINMOOD} and {MAXMOOD} mood for {MOODDAYS} days. -->
+  <VME_LeadershipChallengeRitualOutcome.description>Conforme a qualidade do ritual, os participantes ganham entre {MINMOOD} e {MAXMOOD} de humor por {MOODDAYS} dias.</VME_LeadershipChallengeRitualOutcome.description>
+  <!-- EN: challenge organizer present -->
+  <VME_LeadershipChallengeRitualOutcome.comps.0.label>organizador do desafio presente</VME_LeadershipChallengeRitualOutcome.comps.0.label>
+  <!-- EN: room impressiveness -->
+  <VME_LeadershipChallengeRitualOutcome.comps.1.label>imponência do cômodo</VME_LeadershipChallengeRitualOutcome.comps.1.label>
+  <!-- EN: {PAWN_labelShort}'s social impact -->
+  <VME_LeadershipChallengeRitualOutcome.comps.2.label>impacto social de {PAWN_labelShort}</VME_LeadershipChallengeRitualOutcome.comps.2.label>
+  <!-- EN: organizer's social impact -->
+  <VME_LeadershipChallengeRitualOutcome.comps.2.labelAbstract>impacto social do organizador</VME_LeadershipChallengeRitualOutcome.comps.2.labelAbstract>
+  <!-- EN: participant count -->
+  <VME_LeadershipChallengeRitualOutcome.comps.3.label>número de participantes</VME_LeadershipChallengeRitualOutcome.comps.3.label>
+  <!-- EN: Terrible -->
+  <VME_LeadershipChallengeRitualOutcome.outcomeChances.0.label>Terrível</VME_LeadershipChallengeRitualOutcome.outcomeChances.0.label>
+  <!-- EN: The leadership challenge was terrible! The fighters bumbled around, ineptly avoiding each other in a extended display of cowardice and weakness. Watching it just made people sad. -->
+  <VME_LeadershipChallengeRitualOutcome.outcomeChances.0.description>O desafio pela liderança foi terrível! Os lutadores ficaram se atrapalhando, desviando um do outro sem jeito numa longa demonstração de covardia e fraqueza. Assistir só deixou todo mundo triste.</VME_LeadershipChallengeRitualOutcome.outcomeChances.0.description>
+  <!-- EN: Boring -->
+  <VME_LeadershipChallengeRitualOutcome.outcomeChances.1.label>Chata</VME_LeadershipChallengeRitualOutcome.outcomeChances.1.label>
+  <!-- EN: The leadership challenge was boring. The fighters wouldn't commit, so there were no exciting moments. At least our leader is the strongest. -->
+  <VME_LeadershipChallengeRitualOutcome.outcomeChances.1.description>O desafio pela liderança foi chato. Os lutadores não se entregaram, então não houve momentos empolgantes. Pelo menos nosso líder é o mais forte.</VME_LeadershipChallengeRitualOutcome.outcomeChances.1.description>
+  <!-- EN: Good -->
+  <VME_LeadershipChallengeRitualOutcome.outcomeChances.2.label>Boa</VME_LeadershipChallengeRitualOutcome.outcomeChances.2.label>
+  <!-- EN: The leadership challenge was good. The fighters went for blood and showed real heart. We now know that our leader is the strongest. -->
+  <VME_LeadershipChallengeRitualOutcome.outcomeChances.2.description>O desafio pela liderança foi bom. Os lutadores foram para o sangue e mostraram garra. Agora sabemos que nosso líder é o mais forte.</VME_LeadershipChallengeRitualOutcome.outcomeChances.2.description>
+  <!-- EN: Unforgettable -->
+  <VME_LeadershipChallengeRitualOutcome.outcomeChances.3.label>Inesquecível</VME_LeadershipChallengeRitualOutcome.outcomeChances.3.label>
+  <!-- EN: The leadership challenge was unforgettable! Both fighters gave all they had, and we know that our leader is now the strongest among us! -->
+  <VME_LeadershipChallengeRitualOutcome.outcomeChances.3.description>O desafio pela liderança foi inesquecível! Os dois lutadores deram tudo de si, e sabemos que nosso líder agora é o mais forte entre nós!</VME_LeadershipChallengeRitualOutcome.outcomeChances.3.description>
+</LanguageData>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <!-- EN: Depending on ritual quality, participants will get between {MINMOOD} and {MAXMOOD} mood for {MOODDAYS} days. -->
+  <VME_SlaveEmancipationOutcome.description>Conforme a qualidade do ritual, os participantes ganham entre {MINMOOD} e {MAXMOOD} de humor por {MOODDAYS} dias.</VME_SlaveEmancipationOutcome.description>
+  <!-- EN: room impressiveness -->
+  <VME_SlaveEmancipationOutcome.comps.0.label>imponência do cômodo</VME_SlaveEmancipationOutcome.comps.0.label>
+  <!-- EN: participant count -->
+  <VME_SlaveEmancipationOutcome.comps.1.label>número de participantes</VME_SlaveEmancipationOutcome.comps.1.label>
+  <!-- EN: {PAWN_labelShort}'s social impact -->
+  <VME_SlaveEmancipationOutcome.comps.2.label>impacto social de {PAWN_labelShort}</VME_SlaveEmancipationOutcome.comps.2.label>
+  <!-- EN: speaker's social impact -->
+  <VME_SlaveEmancipationOutcome.comps.2.labelAbstract>impacto social do orador</VME_SlaveEmancipationOutcome.comps.2.labelAbstract>
+  <!-- EN: Demagogic -->
+  <VME_SlaveEmancipationOutcome.outcomeChances.0.label>Demagógica</VME_SlaveEmancipationOutcome.outcomeChances.0.label>
+  <!-- EN: The {0} was horribly demagogic! We ended up looking as the evil guys here... With such a display, it's unlikely anyone will freely want to join the colony. -->
+  <VME_SlaveEmancipationOutcome.outcomeChances.0.description>O(a) {0} foi horrivelmente demagógico(a)! Acabamos parecendo os vilões da história... Com uma apresentação dessas, é improvável que alguém queira se juntar à colônia de livre vontade.</VME_SlaveEmancipationOutcome.outcomeChances.0.description>
+  <!-- EN: Freethinking -->
+  <VME_SlaveEmancipationOutcome.outcomeChances.1.label>Livre-pensadora</VME_SlaveEmancipationOutcome.outcomeChances.1.label>
+  <!-- EN: The {0} was a nice display of freethinking. Our leader's speech was clear and succint, explaining all the evils of slavery in a concise way. Participating slaves have a 25% chance of joining the colony. -->
+  <VME_SlaveEmancipationOutcome.outcomeChances.1.description>O(a) {0} foi uma bela demonstração de livre pensamento. O discurso do nosso líder foi claro e sucinto, explicando de forma concisa todos os males da escravidão. Os escravos participantes têm 25% de chance de se juntar à colônia.</VME_SlaveEmancipationOutcome.outcomeChances.1.description>
+  <!-- EN: Unshackling -->
+  <VME_SlaveEmancipationOutcome.outcomeChances.2.label>Libertadora</VME_SlaveEmancipationOutcome.outcomeChances.2.label>
+  <!-- EN: The {0} was unshackling. Our leader's speech was very inspiring, detailing all the evils caused by slavery and the immense advantages of a free society. Participating slaves have a 50% chance of joining the colony. -->
+  <VME_SlaveEmancipationOutcome.outcomeChances.2.description>O(a) {0} quebrou grilhões. O discurso do nosso líder foi muito inspirador, detalhando todos os males da escravidão e as imensas vantagens de uma sociedade livre. Os escravos participantes têm 50% de chance de se juntar à colônia.</VME_SlaveEmancipationOutcome.outcomeChances.2.description>
+  <!-- EN: Liberating -->
+  <VME_SlaveEmancipationOutcome.outcomeChances.3.label>Redentora</VME_SlaveEmancipationOutcome.outcomeChances.3.label>
+  <!-- EN: The {0} was liberating! Our leader's speech was a masterclass in extolling the virtues of a free society, liberated for the shackles of slavery. Participating slaves have a 75% chance of joining the colony. -->
+  <VME_SlaveEmancipationOutcome.outcomeChances.3.description>O(a) {0} foi redentor(a)! O discurso do nosso líder foi uma aula magna sobre as virtudes de uma sociedade livre, liberta dos grilhões da escravidão. Os escravos participantes têm 75% de chance de se juntar à colônia.</VME_SlaveEmancipationOutcome.outcomeChances.3.description>
+  <!-- EN: Amazing -->
+  <VME_SlaveEmancipationOutcome.outcomeChances.4.label>Incrível</VME_SlaveEmancipationOutcome.outcomeChances.4.label>
+  <!-- EN: The {0} was amazing! Legends will be told about our leader's speech, and how those words will resonate in the future, elevating the cause of emancipation. Participating slaves have a 100% chance of joining the colony. -->
+  <VME_SlaveEmancipationOutcome.outcomeChances.4.description>O(a) {0} foi incrível! Contarão lendas sobre o discurso do nosso líder e sobre como essas palavras ecoarão no futuro, elevando a causa da emancipação. Os escravos participantes têm 100% de chance de se juntar à colônia.</VME_SlaveEmancipationOutcome.outcomeChances.4.description>
+</LanguageData>

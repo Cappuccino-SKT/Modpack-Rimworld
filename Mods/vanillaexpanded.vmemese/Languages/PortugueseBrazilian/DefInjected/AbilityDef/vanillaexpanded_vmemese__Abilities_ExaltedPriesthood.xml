@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <!-- EN: conversion ritual (leader) -->
+  <VME_LeaderConversionRitual.label>ritual de conversão (líder)</VME_LeaderConversionRitual.label>
+  <!-- EN: Try to persuade someone to adopt your beliefs. If it goes well, they will lose some certainty in their ideoligion and may convert. If it backfires, they will gain certainty in their old beliefs.\n\nTo start this ritual at a specific place, select a ritual spot or matching altar/ideogram. -->
+  <VME_LeaderConversionRitual.description>Tente persuadir alguém a adotar suas crenças. Se der certo, eles perderão alguma certeza em sua ideologia e poderão se converter. Se o tiro sair pela culatra, eles ganharão a certeza de suas antigas crenças.\n\nPara iniciar este ritual em um lugar específico, selecione um ponto de ritual ou altar/ideograma correspondente.</VME_LeaderConversionRitual.description>
+  <!-- EN: convert (leader) -->
+  <VME_LeaderConvert.label>converter (líder)</VME_LeaderConvert.label>
+  <!-- EN: Attempt to convert someone to the speaker's ideoligion. This will reduce the target's certainty in their own beliefs. The certainty reduction depends on the speaker's negotiation ability. -->
+  <VME_LeaderConvert.description>Tente converter alguém à ideologia do locutor. Isso reduzirá a certeza do alvo em suas próprias crenças. A redução da certeza depende da habilidade de negociação do locutor.</VME_LeaderConvert.description>
+  <!-- EN: {INITIATOR_labelShort} failed to convert {RECIPIENT_labelShort}. {RECIPIENT_labelShort} was upset by the attempt, but {RECIPIENT_possessive} certainty fell from {CERTAINTYBEFORE} to {CERTAINTYAFTER}. -->
+  <VME_LeaderConvert.comps.CompAbilityEffect_Convert.failMessage>{INITIATOR_labelShort} falhou ao converter {RECIPIENT_labelShort}. {RECIPIENT_labelShort} ficou chateado(a) com a tentativa, mas sua certeza caiu de {CERTAINTYBEFORE} para {CERTAINTYAFTER}.</VME_LeaderConvert.comps.CompAbilityEffect_Convert.failMessage>
+  <!-- EN: {INITIATOR_labelShort} has converted {RECIPIENT_labelShort} to {IDEO}. -->
+  <VME_LeaderConvert.comps.CompAbilityEffect_Convert.successMessage>{INITIATOR_labelShort} converteu {RECIPIENT_labelShort} para {IDEO}.</VME_LeaderConvert.comps.CompAbilityEffect_Convert.successMessage>
+  <!-- EN: preach health (leader) -->
+  <VME_LeaderPreachHealth.label>pregar saúde (líder)</VME_LeaderPreachHealth.label>
+  <!-- EN: Preach moral strength to a sick or wounded person through the concepts of your ideology. This will improve their rate of wound healing and immunity gain. -->
+  <VME_LeaderPreachHealth.description>Pregue força moral a uma pessoa doente ou ferida por meio dos conceitos de sua ideologia. Isso melhorará a taxa de cicatrização de feridas e o ganho de imunidade.</VME_LeaderPreachHealth.description>
+  <!-- EN: reassure (leader) -->
+  <VME_LeaderReassure.label>reassegurar (líder)</VME_LeaderReassure.label>
+  <!-- EN: Increase someone's certainty in their own beliefs. The regained certainty is based on the speaker's negotiation ability. -->
+  <VME_LeaderReassure.description>Aumente a certeza de alguém em suas próprias crenças. A certeza recuperada é baseada na habilidade de negociação do locutor.</VME_LeaderReassure.description>
+  <!-- EN: {INITIATOR_labelShort} has reassured {RECIPIENT_labelShort}, increasing {RECIPIENT_possessive} certainty in {IDEO} from {BEFORECERTAINTY} to {AFTERCERTAINTY}. -->
+  <VME_LeaderReassure.comps.CompAbilityEffect_Reassure.successMessage>{INITIATOR_labelShort} reassegurou {RECIPIENT_labelShort}, aumentando sua certeza em {IDEO} de {BEFORECERTAINTY} para {AFTERCERTAINTY}.</VME_LeaderReassure.comps.CompAbilityEffect_Reassure.successMessage>
+  <!-- EN: Counsel (leader) -->
+  <VME_LeaderCounsel.label>aconselhar (líder)</VME_LeaderCounsel.label>
+  <!-- EN: Offer counsel to a person to cancel the effect of a sad memory. The chance of success depends on the speaker's social skills and their relationship with the listener. -->
+  <VME_LeaderCounsel.description>Ofereça conselho a uma pessoa para cancelar o efeito de uma memória triste. A chance de sucesso depende das habilidades sociais do locutor e de seu relacionamento com o ouvinte.</VME_LeaderCounsel.description>
+  <!-- EN: {INITIATOR_labelShort} botched the attempt to counsel {RECIPIENT_labelShort}. {RECIPIENT_labelShort} has become upset. -->
+  <VME_LeaderCounsel.comps.CompAbilityEffect_Counsel.failMessage>{INITIATOR_labelShort} fracassou na tentativa de aconselhar {RECIPIENT_labelShort}. {RECIPIENT_labelShort} ficou chateado(a).</VME_LeaderCounsel.comps.CompAbilityEffect_Counsel.failMessage>
+  <!-- EN: {INITIATOR_labelShort} successfully counselled {RECIPIENT_labelShort}, canceling the mood impact of {2}. -->
+  <VME_LeaderCounsel.comps.CompAbilityEffect_Counsel.successMessage>{INITIATOR_labelShort} aconselhou com sucesso {RECIPIENT_labelShort}, cancelando o impacto do humor de {2}.</VME_LeaderCounsel.comps.CompAbilityEffect_Counsel.successMessage>
+  <!-- EN: {INITIATOR_labelShort} successfully counselled {RECIPIENT_labelShort}, increasing {RECIPIENT_possessive} mood by {MOODBONUS}. -->
+  <VME_LeaderCounsel.comps.CompAbilityEffect_Counsel.successMessageNoNegativeThought>{INITIATOR_labelShort} aconselhou com sucesso {RECIPIENT_labelShort}, aumentando seu humor em {MOODBONUS}.</VME_LeaderCounsel.comps.CompAbilityEffect_Counsel.successMessageNoNegativeThought>
+</LanguageData>

@@ -1,0 +1,595 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <VME_SerketistDescription.rules.rulesStrings>
+    <!-- EN: serketistBasis   -&gt;There is no higher lifeform than the Hive Queens. Their nourishing jelly is like ambrosia, and the entire world should be remade in their image. -->
+    <li>serketistBasis   -&gt;Não há forma de vida superior às Rainhas da Colmeia. Sua geleia nutritiva é como ambrosia, e o mundo inteiro deveria ser refeito à imagem delas.</li>
+    <!-- EN: serketistBasis   -&gt;In its hubris, humanity accidentally stumbled upon the creation of the perfect lifeform: Insectoids. -->
+    <li>serketistBasis   -&gt;Em sua soberba, a humanidade tropeçou sem querer na criação da forma de vida perfeita: os insetoides.</li>
+    <!-- EN: serketistBasis   -&gt;The runaway creation of some forgotten ancient geneticist, Insectoids have evolved to become the perfect lifeform. -->
+    <li>serketistBasis   -&gt;Criação fora de controle de algum geneticista antigo e esquecido, os insetoides evoluíram até se tornar a forma de vida perfeita.</li>
+    <!-- EN: serketistBasis   -&gt;Threatened by the Mechanoid menace, mankind engineered the perfect lifeform: Insectoids. -->
+    <li>serketistBasis   -&gt;Ameaçada pelos mecanoides, a humanidade projetou a forma de vida perfeita: os insetoides.</li>
+    <!-- EN: serketistBasis   -&gt;Led by the sacred Hive Queens, Insectoids are the perfect lifeform in the galaxy. -->
+    <li>serketistBasis   -&gt;Guiados pelas sagradas Rainhas da Colmeia, os insetoides são a forma de vida perfeita da galáxia.</li>
+    <!-- EN: serketistFact    -&gt;They are the pinnacle of evolution. [InsectAdjective]. [InsectAdjective2]. [InsectAdjective3]. Everyone should strive to become like them. -->
+    <li>serketistFact    -&gt;Eles são o auge da evolução. [InsectAdjective]. [InsectAdjective2]. [InsectAdjective3]. Todos deveriam se esforçar para ser como eles.</li>
+    <!-- EN: serketistProphecy-&gt;[itIsSaid] we will learn from them, becoming like a tidal wave that will wash over our enemies. -->
+    <li>serketistProphecy-&gt;[itIsSaid] aprenderemos com eles e seremos como um maremoto que varrerá nossos inimigos.</li>
+    <!-- EN: itIsSaid-&gt;Perhaps, with time, -->
+    <li>itIsSaid-&gt;Talvez, com o tempo,</li>
+    <!-- EN: itIsSaid-&gt;It is written in our destiny that -->
+    <li>itIsSaid-&gt;Está escrito em nosso destino que</li>
+    <!-- EN: itIsSaid-&gt;Either through technology or more arcane means -->
+    <li>itIsSaid-&gt;Seja pela tecnologia ou por meios mais arcanos,</li>
+    <!-- EN: itIsSaid-&gt;We will revere their ways, their collective intelligence and -->
+    <li>itIsSaid-&gt;Reverenciaremos seus modos, sua inteligência coletiva, e</li>
+    <!-- EN: itIsSaid-&gt;By revering the Will of the Hive Queen -->
+    <li>itIsSaid-&gt;Reverenciando a Vontade da Rainha da Colmeia,</li>
+    <!-- EN: InsectAdjective-&gt;Adaptive -->
+    <li>InsectAdjective-&gt;Adaptáveis</li>
+    <!-- EN: InsectAdjective-&gt;Ravenous -->
+    <li>InsectAdjective-&gt;Vorazes</li>
+    <!-- EN: InsectAdjective-&gt;Overpowering -->
+    <li>InsectAdjective-&gt;Avassaladores</li>
+    <!-- EN: InsectAdjective2-&gt;Versatile -->
+    <li>InsectAdjective2-&gt;Versáteis</li>
+    <!-- EN: InsectAdjective2-&gt;Uncompromising -->
+    <li>InsectAdjective2-&gt;Implacáveis</li>
+    <!-- EN: InsectAdjective2-&gt;Destructive -->
+    <li>InsectAdjective2-&gt;Destrutivos</li>
+    <!-- EN: InsectAdjective3-&gt;Complex -->
+    <li>InsectAdjective3-&gt;Complexos</li>
+    <!-- EN: InsectAdjective3-&gt;Indestructible -->
+    <li>InsectAdjective3-&gt;Indestrutíveis</li>
+    <!-- EN: InsectAdjective3-&gt;Resistant -->
+    <li>InsectAdjective3-&gt;Resistentes</li>
+  </VME_SerketistDescription.rules.rulesStrings>
+  <VME_ChthonianDescription.rules.rulesStrings>
+    <!-- EN: chthonianBasis   -&gt;There are vast entities in this world that defy any explanation. Concepts far more ancient than mere Gods. -->
+    <li>chthonianBasis   -&gt;Há entidades vastas neste mundo que desafiam qualquer explicação. Conceitos muito mais antigos que meros deuses.</li>
+    <!-- EN: chthonianBasis   -&gt;Beyond the Veil, a whole new universe of insanity-inducing Old Gods awaits. -->
+    <li>chthonianBasis   -&gt;Além do Véu, um universo inteiro de Deuses Antigos que levam à loucura nos espera.</li>
+    <!-- EN: chthonianBasis   -&gt;Gods are not the ultimate predator in the Universe, for there are ancient entities far more powerful. Entities that should be respected... and feared. -->
+    <li>chthonianBasis   -&gt;Os deuses não são o predador supremo do Universo, pois há entidades antigas muito mais poderosas. Entidades que devem ser respeitadas... e temidas.</li>
+    <!-- EN: chthonianBasis   -&gt;In the unknown vastness of space, there are insane entities that could remake the whole Universe with a simple wayward thought. -->
+    <li>chthonianBasis   -&gt;Na vastidão desconhecida do espaço, há entidades insanas que poderiam refazer o Universo inteiro com um simples pensamento à toa.</li>
+    <!-- EN: chthonianFact    -&gt;We are like insects to these entities. Not even worthy of their attention. As insignificant to them as an ant would be to us. -->
+    <li>chthonianFact    -&gt;Somos como insetos para essas entidades. Nem dignos da atenção delas. Tão insignificantes para elas quanto uma formiga para nós.</li>
+    <!-- EN: chthonianFact    -&gt;They do not care about humanity. We are nothing to them. Not even a footnote. -->
+    <li>chthonianFact    -&gt;Elas não se importam com a humanidade. Não somos nada para elas. Nem uma nota de rodapé.</li>
+    <!-- EN: chthonianFact    -&gt;Though powerful, they are uncaring. So far beyond our intelligence that we are not even sapient in their eyes. -->
+    <li>chthonianFact    -&gt;Embora poderosas, são indiferentes. Estão tão além da nossa inteligência que, aos olhos delas, nem somos sencientes.</li>
+    <!-- EN: chthonianFact    -&gt;From their point of view, we don't even exist. The same way you don't think about the microbes in the surface of the chair you are sitting on. -->
+    <li>chthonianFact    -&gt;Do ponto de vista delas, nem existimos. Do mesmo jeito que você não pensa nos micróbios na superfície da cadeira em que está sentado.</li>
+    <!-- EN: chthonianProphecy-&gt;[weMustBe] careful, for it wouldn't be wise to attract their attention, as they could destroy us in an instant. -->
+    <li>chthonianProphecy-&gt;[weMustBe] cuidadosos, pois não seria sábio atrair a atenção delas: poderiam nos destruir num instante.</li>
+    <!-- EN: chthonianProphecy-&gt;[byWorshipping] them, perhaps we can avoid their gaze. -->
+    <li>chthonianProphecy-&gt;[byWorshipping], talvez consigamos fugir do olhar delas.</li>
+    <!-- EN: chthonianProphecy-&gt;Don't be fooled: they don't deserve our devotion. But perhaps by showing a false façade of piety we can avoid their attention long enough. -->
+    <li>chthonianProphecy-&gt;Não se engane: elas não merecem nossa devoção. Mas talvez, mostrando uma falsa fachada de piedade, consigamos fugir da atenção delas por tempo suficiente.</li>
+    <!-- EN: chthonianProphecy-&gt;Even so, a lot can be learned from them. Eldritch knowledge awaits those brave -or foolish- enough to peek into the screaming visage of madness. -->
+    <li>chthonianProphecy-&gt;Mesmo assim, há muito a aprender com elas. Um conhecimento sobrenatural aguarda quem for corajoso (ou tolo) o bastante para espiar o rosto berrante da loucura.</li>
+    <!-- EN: weMustBe-&gt;We must be -->
+    <li>weMustBe-&gt;Precisamos ser</li>
+    <!-- EN: weMustBe-&gt;It is imperative that we are -->
+    <li>weMustBe-&gt;É imperativo que sejamos</li>
+    <!-- EN: weMustBe-&gt;We'd better be -->
+    <li>weMustBe-&gt;É melhor sermos</li>
+    <!-- EN: byWorshipping-&gt;By worshipping -->
+    <li>byWorshipping-&gt;Adorando-as</li>
+    <!-- EN: byWorshipping-&gt;We hope if we worshop -->
+    <li>byWorshipping-&gt;Esperamos que, se as adorarmos,</li>
+  </VME_ChthonianDescription.rules.rulesStrings>
+  <VME_EsotericismDescription.rules.rulesStrings>
+    <!-- EN: esotericismBasis   -&gt;Beyond the grasp of common science, there is an unsurpassed wealth of secret knowledge. -->
+    <li>esotericismBasis   -&gt;Além do alcance da ciência comum, há uma riqueza insuperável de conhecimento secreto.</li>
+    <!-- EN: esotericismBasis   -&gt;Hidden to the prying eyes of scientists and philosophers, an occult world of hidden knowledge awaits. -->
+    <li>esotericismBasis   -&gt;Escondido dos olhos curiosos de cientistas e filósofos, um mundo oculto de conhecimento secreto nos espera.</li>
+    <!-- EN: esotericismBasis   -&gt;Science can only bring you so far. Beyond the veil of reality there is a trove of secret knowledge, waiting to be uncovered. -->
+    <li>esotericismBasis   -&gt;A ciência só leva até certo ponto. Além do véu da realidade há um tesouro de conhecimento secreto esperando para ser descoberto.</li>
+    <!-- EN: esotericismBasis   -&gt;The Universe is too vast to be limited to the constraints of pure math and physics. Beyond such human limitations there is a vast treasure of secret knowledge that can be accessed by those willing to do so at any cost necessary. -->
+    <li>esotericismBasis   -&gt;O Universo é vasto demais para caber nas amarras da matemática e da física. Além dessas limitações humanas há um vasto tesouro de conhecimento secreto, acessível a quem estiver disposto a pagar qualquer preço.</li>
+    <!-- EN: esotericismFact    -&gt;Only a select few have the mental strength to acquire such insights. -->
+    <li>esotericismFact    -&gt;Só uns poucos escolhidos têm força mental para alcançar essas revelações.</li>
+    <!-- EN: esotericismFact    -&gt;These occult insights are not for everyone. Only a small group of sages can explore and observe them. The Chosen Ones. -->
+    <li>esotericismFact    -&gt;Essas revelações ocultas não são para todos. Só um pequeno grupo de sábios pode explorá-las e observá-las. Os Escolhidos.</li>
+    <!-- EN: esotericismFact    -&gt;Such insights would probably be too much for the common folk. Only those with great mental fortitude can peer into the occult... and keep their minds intact. -->
+    <li>esotericismFact    -&gt;Essas revelações provavelmente seriam demais para o povo comum. Só quem tem grande fortaleza mental pode espiar o oculto... e manter a mente inteira.</li>
+    <!-- EN: esotericismProphecy-&gt;Perhaps by delving into such knowledge we can even trascend our mortal existence. -->
+    <li>esotericismProphecy-&gt;Talvez, mergulhando nesse conhecimento, possamos até transcender nossa existência mortal.</li>
+    <!-- EN: esotericismProphecy-&gt;Given enough time, we will crack the most guarded secrets, and finally understand our place in this Universe. -->
+    <li>esotericismProphecy-&gt;Com tempo suficiente, desvendaremos os segredos mais bem guardados e enfim entenderemos nosso lugar no Universo.</li>
+    <!-- EN: esotericismProphecy-&gt;The alchemists of antiquity might not have been so foolish in their search for gold, but we are much more ambitious: we will apply the transmundane to our very souls and become more than human. -->
+    <li>esotericismProphecy-&gt;Os alquimistas da antiguidade talvez não fossem tão tolos em sua busca pelo ouro, mas somos bem mais ambiciosos: aplicaremos o transmundano às nossas próprias almas e seremos mais que humanos.</li>
+    <!-- EN: esotericismProphecy-&gt;With such knowledge, we will have a clear advantage over the rest of this planet's inhabitants, and our domination will be all but secured. -->
+    <li>esotericismProphecy-&gt;Com esse conhecimento, teremos clara vantagem sobre os demais habitantes deste planeta, e nosso domínio estará praticamente garantido.</li>
+  </VME_EsotericismDescription.rules.rulesStrings>
+  <VME_HedonistDescription.rules.rulesStrings>
+    <!-- EN: lesson(priority=-1)-&gt;stuff happens -->
+    <li>lesson(priority=-1)-&gt;coisas acontecem</li>
+    <!-- EN: r_pattern-&gt;"[r_lessonIntro] [r_lessonMain]. [r_lessonReinforcement]"\n\n  - [lessonAttribution] -->
+    <li>r_pattern-&gt;"[r_lessonIntro] [r_lessonMain]. [r_lessonReinforcement]"\n\n  - [lessonAttribution]</li>
+    <!-- EN: lessonAttribution-&gt;[founder_nameFull] -->
+    <li>lessonAttribution-&gt;[founder_nameFull]</li>
+    <!-- EN: lessonAttribution(p=2)-&gt;&lt;i&gt;[attributionSource_titleCase]&lt;/i&gt; by [founder_nameFull] -->
+    <li>lessonAttribution(p=2)-&gt;&lt;i&gt;[attributionSource_titleCase]&lt;/i&gt;, de [founder_nameFull]</li>
+    <!-- EN: lessonAttribution-&gt;[founder_nameFull]'s letter to [believer_nameFull] -->
+    <li>lessonAttribution-&gt;Carta de [founder_nameFull] para [believer_nameFull]</li>
+    <!-- EN: lessonAttribution-&gt;[founder_nameFull], on [founder_possessive] deathbed -->
+    <li>lessonAttribution-&gt;[founder_nameFull], no leito de morte</li>
+    <!-- EN: lessonAttribution-&gt;[founder_nameFull], just before execution -->
+    <li>lessonAttribution-&gt;[founder_nameFull], pouco antes da execução</li>
+    <!-- EN: lessonAttribution-&gt;[founder_nameFull], [speech] on the [TerrainFeature] -->
+    <li>lessonAttribution-&gt;[founder_nameFull], [speech] no(a) [TerrainFeature]</li>
+    <!-- EN: lessonAttribution-&gt;[founder_nameFull], [speech] in the [Community] -->
+    <li>lessonAttribution-&gt;[founder_nameFull], [speech] no(a) [Community]</li>
+    <!-- EN: attributionSource-&gt;[memeConcept] -->
+    <li>attributionSource-&gt;[memeConcept]</li>
+    <!-- EN: attributionSource-&gt;[memeAdjective] [memeConcept] -->
+    <li>attributionSource-&gt;[memeConcept] [memeAdjective]</li>
+    <!-- EN: attributionSource-&gt;A [memeAdjective] Life -->
+    <li>attributionSource-&gt;Uma vida [memeAdjective]</li>
+    <!-- EN: attributionSource-&gt;Reflections by a [attributionJob] -->
+    <li>attributionSource-&gt;Reflexões de um(a) [attributionJob]</li>
+    <!-- EN: attributionSource-&gt;Journal of a [attributionJob] -->
+    <li>attributionSource-&gt;Diário de um(a) [attributionJob]</li>
+    <!-- EN: attributionSource-&gt;Thoughts of a [attributionJob] -->
+    <li>attributionSource-&gt;Pensamentos de um(a) [attributionJob]</li>
+    <!-- EN: attributionSource-&gt;Life of a [attributionJob] -->
+    <li>attributionSource-&gt;Vida de um(a) [attributionJob]</li>
+    <!-- EN: attributionJob-&gt;[memeAdjective] [place_job] -->
+    <li>attributionJob-&gt;[place_job] [memeAdjective]</li>
+    <!-- EN: attributionJob-&gt;[place_job] -->
+    <li>attributionJob-&gt;[place_job]</li>
+    <!-- EN: speech-&gt;Speech -->
+    <li>speech-&gt;discurso</li>
+    <!-- EN: speech-&gt;Address -->
+    <li>speech-&gt;pronunciamento</li>
+    <!-- EN: lessonIntro-&gt;After so many sleepless nights of careful deliberation, I came to a simple conclussion: -->
+    <li>lessonIntro-&gt;Depois de tantas noites sem dormir, refletindo com cuidado, cheguei a uma conclusão simples:</li>
+    <!-- EN: lessonIntro-&gt;What is a fundamental truth of human existence? -->
+    <li>lessonIntro-&gt;Qual é uma verdade fundamental da existência humana?</li>
+    <!-- EN: lessonIntro-&gt;I have suffered a lot in this life. But this suffering has taught me a simple principle: -->
+    <li>lessonIntro-&gt;Sofri muito nesta vida. Mas esse sofrimento me ensinou um princípio simples:</li>
+    <!-- EN: lessonIntro-&gt;Growing in squalor on the [place_summary] [place_name], I learned a sincere axiom: -->
+    <li>lessonIntro-&gt;Crescendo na miséria em [place_summary] [place_name], aprendi um axioma sincero:</li>
+    <!-- EN: lessonIntro-&gt;Internalize this lesson, for it will serve you well: -->
+    <li>lessonIntro-&gt;Guarde esta lição, pois ela vai lhe servir bem:</li>
+    <!-- EN: lessonIntro-&gt;Are you feeling lost? Perhaps you haven't yet figured out this very simple concept: -->
+    <li>lessonIntro-&gt;Está se sentindo perdido? Talvez ainda não tenha entendido este conceito tão simples:</li>
+    <!-- EN: lessonIntro-&gt;They tried to tempt me with a life of rich, dull productivity, but they couldn't fool me: -->
+    <li>lessonIntro-&gt;Tentaram me seduzir com uma vida de produtividade rica e chata, mas não me enganaram:</li>
+    <!-- EN: lessonMain-&gt;pleasure, the satisfaction of bodily desires, is the highest good and proper aim of human life. Whether through religion or philosophy our entire lives should be focused on enjoying ourselves as much as possible -->
+    <li>lessonMain-&gt;o prazer, a satisfação dos desejos do corpo, é o bem maior e o objetivo próprio da vida humana. Pela religião ou pela filosofia, a vida inteira deve girar em torno de aproveitar o máximo possível</li>
+    <!-- EN: lessonMain-&gt;I finally figured out the only reason to be alive is to enjoy it -->
+    <li>lessonMain-&gt;enfim entendi que o único motivo para estar vivo é aproveitar</li>
+    <!-- EN: lessonMain-&gt;the only way to get rid of temptation is to yield to it -->
+    <li>lessonMain-&gt;o único jeito de se livrar da tentação é ceder a ela</li>
+    <!-- EN: lessonMain-&gt;salvation is for the feeble. I don't want salvation, I want life, all of life, the miserable as well as the superb -->
+    <li>lessonMain-&gt;a salvação é para os fracos. Não quero salvação, quero vida, a vida inteira, a miserável e a esplêndida</li>
+    <!-- EN: lessonMain-&gt;pleasure is not a need, but an incentive -->
+    <li>lessonMain-&gt;o prazer não é uma necessidade, é um incentivo</li>
+    <!-- EN: lessonMain-&gt;the most responsible way of life right now is to enjoy ourselves while we can -->
+    <li>lessonMain-&gt;o jeito mais responsável de viver agora é aproveitar enquanto dá</li>
+    <!-- EN: lessonMain-&gt;you can live to be a hundred if you give up all the things that make you want to live to be a hundred -->
+    <li>lessonMain-&gt;dá para viver até os cem anos se você abrir mão de tudo o que faz você querer viver até os cem</li>
+    <!-- EN: lessonReinforcement-&gt;No one can argue with that. -->
+    <li>lessonReinforcement-&gt;Ninguém pode discordar disso.</li>
+    <!-- EN: lessonReinforcement-&gt;Only fools think otherwise. -->
+    <li>lessonReinforcement-&gt;Só os tolos pensam diferente.</li>
+    <!-- EN: lessonReinforcement-&gt;And as we now know, that was soon to become evident to everyone. -->
+    <li>lessonReinforcement-&gt;E, como agora sabemos, logo isso ficaria evidente para todos.</li>
+    <!-- EN: lessonReinforcement-&gt;Everything that has happened since has reinforced that fact. -->
+    <li>lessonReinforcement-&gt;Tudo o que aconteceu desde então reforçou esse fato.</li>
+    <!-- EN: lessonReinforcement-&gt;It is as if that is etched directly into my mind. -->
+    <li>lessonReinforcement-&gt;É como se isso estivesse gravado direto na minha mente.</li>
+    <!-- EN: lessonReinforcement-&gt;It is something I'll never forget. -->
+    <li>lessonReinforcement-&gt;É algo que nunca vou esquecer.</li>
+  </VME_HedonistDescription.rules.rulesStrings>
+  <VME_EschatologismDescription.rules.rulesStrings>
+    <!-- EN: eschatologismBasis   -&gt;This world is tainted, impure, and it must be purged. We shall bring the end of days and a new Universe will be reborn from the ashes of the current one. -->
+    <li>eschatologismBasis   -&gt;Este mundo está manchado, impuro, e precisa ser purgado. Traremos o fim dos tempos, e um novo Universo renascerá das cinzas deste.</li>
+    <!-- EN: eschatologismBasis   -&gt;There is nothing of value in this world anymore. Vast post-human intelligences scheming in the dark. Vicious genetically engineered creations rampaging across the land. Greedy, stupid, ambitious humans preying on the weak. It must all be destroyed. -->
+    <li>eschatologismBasis   -&gt;Não há mais nada de valor neste mundo. Vastas inteligências pós-humanas tramando no escuro. Criações genéticas cruéis devastando a terra. Humanos gananciosos, burros e ambiciosos explorando os fracos. Tudo isso precisa ser destruído.</li>
+    <!-- EN: eschatologismBasis   -&gt;This world needs to be purged. Too long have we left it go unchecked. Human stupidity running rampant and ruining everything. -->
+    <li>eschatologismBasis   -&gt;Este mundo precisa ser purgado. Por tempo demais o deixamos sem controle. A burrice humana corre solta e estraga tudo.</li>
+    <!-- EN: eschatologismBasis   -&gt;It is an inescapable fact: the only way forward is to start over and begin anew. This world must be destroyed. -->
+    <li>eschatologismBasis   -&gt;É um fato inescapável: o único caminho é começar tudo de novo. Este mundo precisa ser destruído.</li>
+    <!-- EN: eschatologismBasis   -&gt;There is no longer room for compromise. This world is tainted, impure. It must be destroyed. -->
+    <li>eschatologismBasis   -&gt;Não há mais espaço para acordos. Este mundo está manchado, impuro. Precisa ser destruído.</li>
+    <!-- EN: eschatologismFact    -&gt;Either through atomic fire or another means, we must bring the Apocalypse. -->
+    <li>eschatologismFact    -&gt;Pelo fogo atômico ou por outro meio, precisamos trazer o Apocalipse.</li>
+    <!-- EN: eschatologismFact    -&gt;The Great Battle at the End of Everything is coming, and we will be prepared. -->
+    <li>eschatologismFact    -&gt;A Grande Batalha do Fim de Tudo está chegando, e estaremos preparados.</li>
+    <!-- EN: eschatologismFact    -&gt;No one must be left alive to rebuild, for the seeds of corruption lie deep within each and any of us. -->
+    <li>eschatologismFact    -&gt;Ninguém pode ficar vivo para reconstruir, pois as sementes da corrupção estão no fundo de cada um de nós.</li>
+    <!-- EN: eschatologismFact    -&gt;Nothing but charred remains should be left. -->
+    <li>eschatologismFact    -&gt;Nada além de restos carbonizados deve sobrar.</li>
+    <!-- EN: eschatologismFact    -&gt;Once everything has been destroyed. We, the Chosen, shall recreate the world to our liking. -->
+    <li>eschatologismFact    -&gt;Quando tudo tiver sido destruído, nós, os Escolhidos, recriaremos o mundo do nosso jeito.</li>
+    <!-- EN: eschatologismProphecy-&gt;We will be triumphant. -->
+    <li>eschatologismProphecy-&gt;Triunfaremos.</li>
+    <!-- EN: eschatologismProphecy-&gt;No one shall be ready for our wrath. -->
+    <li>eschatologismProphecy-&gt;Ninguém estará pronto para a nossa ira.</li>
+    <!-- EN: eschatologismProphecy-&gt;When we finally strike, all shall fall before us. -->
+    <li>eschatologismProphecy-&gt;Quando enfim atacarmos, todos cairão diante de nós.</li>
+    <!-- EN: eschatologismProphecy-&gt;The days of this world are counted. -->
+    <li>eschatologismProphecy-&gt;Os dias deste mundo estão contados.</li>
+  </VME_EschatologismDescription.rules.rulesStrings>
+  <VME_AuthoritarianDescription.rules.rulesStrings>
+    <!-- EN: lesson(priority=-1)-&gt;stuff happens -->
+    <li>lesson(priority=-1)-&gt;coisas acontecem</li>
+    <!-- EN: r_pattern-&gt;"[r_lessonIntro] [r_lessonMain]. [r_lessonReinforcement]"\n\n  - [lessonAttribution] -->
+    <li>r_pattern-&gt;"[r_lessonIntro] [r_lessonMain]. [r_lessonReinforcement]"\n\n  - [lessonAttribution]</li>
+    <!-- EN: lessonAttribution-&gt;[founder_nameFull], on a [speechadjective] [speech] on the [TerrainFeature] -->
+    <li>lessonAttribution-&gt;[founder_nameFull], num [speech] [speechadjective] no(a) [TerrainFeature]</li>
+    <!-- EN: lessonAttribution-&gt;[founder_nameFull], [speechadjective] [speech] in the [Community] -->
+    <li>lessonAttribution-&gt;[founder_nameFull], [speech] [speechadjective] no(a) [Community]</li>
+    <!-- EN: speechadjective-&gt;rousing -->
+    <li>speechadjective-&gt;inflamado</li>
+    <!-- EN: speechadjective-&gt;public -->
+    <li>speechadjective-&gt;público</li>
+    <!-- EN: speechadjective-&gt;multitudinous -->
+    <li>speechadjective-&gt;multitudinário</li>
+    <!-- EN: speechadjective-&gt;political -->
+    <li>speechadjective-&gt;político</li>
+    <!-- EN: speechadjective-&gt;passionate -->
+    <li>speechadjective-&gt;apaixonado</li>
+    <!-- EN: speechadjective-&gt;fiery -->
+    <li>speechadjective-&gt;ardente</li>
+    <!-- EN: speech-&gt;Speech -->
+    <li>speech-&gt;discurso</li>
+    <!-- EN: speech-&gt;Address -->
+    <li>speech-&gt;pronunciamento</li>
+    <!-- EN: speech-&gt;Disquisition -->
+    <li>speech-&gt;sermão</li>
+    <!-- EN: speech-&gt;Declamation -->
+    <li>speech-&gt;brado</li>
+    <!-- EN: lessonIntro-&gt;The entire struggle for survival is a conquest of the means of existence. -->
+    <li>lessonIntro-&gt;Toda a luta pela sobrevivência é uma conquista dos meios de existência.</li>
+    <!-- EN: lessonIntro-&gt;I also extend noble respects to the revolutionary martyrs, both sung and unsung, who sacrificed their precious lives in the sacred war for achieving the reunification and independence of our people. -->
+    <li>lessonIntro-&gt;Presto também nobres homenagens aos mártires revolucionários, lembrados e esquecidos, que sacrificaram suas vidas preciosas na guerra sagrada pela reunificação e independência do nosso povo.</li>
+    <!-- EN: lessonIntro-&gt;We cannot think of our people today without remembering the sweats and blood shed by the generation of the victors in the war, the great spirit they demonstrated and the ennobling sacrifice of the warriors. -->
+    <li>lessonIntro-&gt;Não podemos pensar no nosso povo hoje sem lembrar do suor e do sangue derramados pela geração dos vencedores da guerra, do grande espírito que mostraram e do sacrifício enobrecedor dos guerreiros.</li>
+    <!-- EN: lessonIntro-&gt;There is only one order. It is categorical and obligatory for every one. It already wings over and enflames hearts from [place_name] to corners of this world: Conquer! -->
+    <li>lessonIntro-&gt;Há uma só ordem. Ela é categórica e obrigatória para todos. Ela já voa e inflama corações de [place_name] até os cantos deste mundo: Conquistem!</li>
+    <!-- EN: lessonIntro-&gt;Nothing is possible unless one will commands, a will which has to be obeyed by others, beginning at the top and ending only at the very bottom. -->
+    <li>lessonIntro-&gt;Nada é possível sem que uma vontade comande, uma vontade a ser obedecida pelos outros, começando no topo e terminando só lá embaixo.</li>
+    <!-- EN: lessonIntro-&gt;My fellow-countrymen, man does not exist on theories and phrases, on declarations or on systems of political philosophy; he lives on what he can gain from the soil by his own labor. -->
+    <li>lessonIntro-&gt;Meus compatriotas, o homem não vive de teorias e frases, de declarações ou sistemas de filosofia política; vive do que consegue tirar do solo com o próprio trabalho.</li>
+    <!-- EN: lessonIntro-&gt;Our victory was the victory of the ennobling patriotism and mass heroism of our citizens, the victory of justice and progress over injustice and reaction, the future of mankind over our enemies. -->
+    <li>lessonIntro-&gt;Nossa vitória foi a vitória do patriotismo enobrecedor e do heroísmo em massa dos nossos cidadãos, a vitória da justiça e do progresso sobre a injustiça e a reação, do futuro da humanidade sobre nossos inimigos.</li>
+    <!-- EN: lessonMain-&gt;To those who can hear me, I say - do not despair -->
+    <li>lessonMain-&gt;A quem puder me ouvir, eu digo: não se desesperem</li>
+    <!-- EN: lessonMain-&gt;No one will be astonished if now, when this phase may be considered overcome, we throw off whatever and whoever would like to deflect us from marching toward fulfillment of our movement -->
+    <li>lessonMain-&gt;Ninguém vai se espantar se agora, com esta fase já superada, nos livrarmos de tudo e de todos que quiserem nos desviar da marcha rumo à realização do nosso movimento</li>
+    <!-- EN: lessonMain-&gt;We are actors in a new era in which we can have no truck with the mentality of the past -->
+    <li>lessonMain-&gt;Somos atores de uma nova era, em que não há lugar para a mentalidade do passado</li>
+    <!-- EN: lessonMain-&gt;Youth marched conscious of its historic responsibility toward a goal sensed but not clearly defined -->
+    <li>lessonMain-&gt;A juventude marchou consciente de sua responsabilidade histórica rumo a um objetivo pressentido, mas não claramente definido</li>
+    <!-- EN: lessonMain-&gt;In these days our generations are not merely faced with territorial and political problems, but also with supreme issues of the existence of our faith, our civilization and our culture, which are now at stake once more -->
+    <li>lessonMain-&gt;Hoje nossas gerações não enfrentam só problemas territoriais e políticos, mas também questões supremas da existência da nossa fé, da nossa civilização e da nossa cultura, que estão mais uma vez em jogo</li>
+    <!-- EN: lessonMain-&gt;Certain people wished to be in our ranks in order to create among us a controlling body or a new minority group. That could not be permitted -->
+    <li>lessonMain-&gt;Certas pessoas quiseram entrar em nossas fileiras para criar entre nós um órgão de controle ou um novo grupo minoritário. Isso não podia ser permitido</li>
+    <!-- EN: lessonReinforcement-&gt;Together, we will march towards the dawn of a new era. -->
+    <li>lessonReinforcement-&gt;Juntos, marcharemos rumo ao alvorecer de uma nova era.</li>
+    <!-- EN: lessonReinforcement-&gt;Our future is bright, and we will persevere. -->
+    <li>lessonReinforcement-&gt;Nosso futuro é brilhante, e perseveraremos.</li>
+    <!-- EN: lessonReinforcement-&gt;Whatever projects there may exist now, the historic destiny of our era will be settled. -->
+    <li>lessonReinforcement-&gt;Sejam quais forem os projetos que existam agora, o destino histórico da nossa era será decidido.</li>
+    <!-- EN: lessonReinforcement-&gt;For this reason, because we know that ours is the truth, and because we have labored for it endlessly, we look upon events with serenity. -->
+    <li>lessonReinforcement-&gt;Por isso, porque sabemos que a verdade é nossa e porque trabalhamos por ela sem descanso, olhamos os acontecimentos com serenidade.</li>
+    <!-- EN: lessonReinforcement-&gt;We have called you together to carry our work to completion, for it is heralded by continuous triumphs. -->
+    <li>lessonReinforcement-&gt;Nós os convocamos para levar nossa obra até o fim, pois ela é anunciada por triunfos contínuos.</li>
+    <!-- EN: lessonReinforcement-&gt;It is not enough to set our goal. It must be pursued with constancy and sacrifice. -->
+    <li>lessonReinforcement-&gt;Não basta definir nosso objetivo. É preciso persegui-lo com constância e sacrifício.</li>
+  </VME_AuthoritarianDescription.rules.rulesStrings>
+  <VME_CultOfPersonalityDescription.rules.rulesStrings>
+    <!-- EN: story(priority=-999)-&gt; -->
+    <li>story(priority=-999)-&gt;</li>
+    <!-- EN: setup-&gt;There is no order without a firm hand directing things. This was clear to [founderName], our first [leaderTitle]. -->
+    <li>setup-&gt;Não há ordem sem uma mão firme conduzindo as coisas. Isso estava claro para [founderName], nosso(a) primeiro(a) [leaderTitle].</li>
+    <!-- EN: setup-&gt;We are the Chosen of [founder_possessive] Divine Will. The sons and daughters of [founderName] [honorific], our first [leaderTitle]. -->
+    <li>setup-&gt;Somos os Escolhidos da Vontade Divina de [founderName], [honorific]. Os filhos e filhas de nosso(a) primeiro(a) [leaderTitle].</li>
+    <!-- EN: setup-&gt;It is told that the first [leaderTitle] of our people, [founderName] [honorific] was forged by the Universe from the clay of creation itself. -->
+    <li>setup-&gt;Conta-se que o(a) primeiro(a) [leaderTitle] do nosso povo, [founderName], [honorific], foi forjado(a) pelo Universo do próprio barro da criação.</li>
+    <!-- EN: setup-&gt;From the terrible chaos embraced by our ancients arose [founderName], our first [leaderTitle]. -->
+    <li>setup-&gt;Do terrível caos abraçado por nossos antigos surgiu [founderName], nosso(a) primeiro(a) [leaderTitle].</li>
+    <!-- EN: setup-&gt;From humble and unremarkable origins, [founderName], our first [leaderTitle], raised above [founder_possessive] station, imposing [founder_possessive] unwavering will. -->
+    <li>setup-&gt;De origens humildes e comuns, [founderName], nosso(a) primeiro(a) [leaderTitle], ergueu-se acima de sua posição e impôs sua vontade inabalável.</li>
+    <!-- EN: honorific-&gt;The Magnificent -->
+    <li>honorific-&gt;o(a) Magnífico(a)</li>
+    <!-- EN: honorific-&gt;The Great -->
+    <li>honorific-&gt;o(a) Grande</li>
+    <!-- EN: honorific-&gt;The Saint -->
+    <li>honorific-&gt;o(a) Santo(a)</li>
+    <!-- EN: honorific-&gt;The Awe-Inspiring -->
+    <li>honorific-&gt;o(a) Assombroso(a)</li>
+    <!-- EN: honorific-&gt;The Conqueror -->
+    <li>honorific-&gt;o(a) Conquistador(a)</li>
+    <!-- EN: honorific-&gt;The Resplendent -->
+    <li>honorific-&gt;o(a) Resplandecente</li>
+    <!-- EN: story(uses=1,priority=-10)-&gt;The [memberNamePlural] swore eternal loyalty to [founderName] and [founder_possessive] descendants, forever bound in devoted servitude. -->
+    <li>story(uses=1,priority=-10)-&gt;Os [memberNamePlural] juraram lealdade eterna a [founderName] e a seus descendentes, presos para sempre numa servidão devota.</li>
+    <!-- EN: story(uses=1,priority=-10)-&gt;[founderName] inspired many to lead a life of righteousness, and thus received our unnending devotion. -->
+    <li>story(uses=1,priority=-10)-&gt;[founderName] inspirou muitos a levar uma vida de retidão e assim recebeu nossa devoção sem fim.</li>
+    <!-- EN: story(uses=1,priority=-10)-&gt;With an army of [founder_possessive] followers at [founder_possessive] command, the line of [founderName] has lasted till the present, represented by our beloved leader. -->
+    <li>story(uses=1,priority=-10)-&gt;Com um exército de seguidores sob seu comando, a linhagem de [founderName] durou até hoje, representada por nosso amado líder.</li>
+    <!-- EN: story(uses=1,priority=-10)-&gt;Our beloved leader, the latest successor of [founderName], will bring us to prosperity, allowing all of us to live a [memeAdjective] life. -->
+    <li>story(uses=1,priority=-10)-&gt;Nosso amado líder, o mais recente sucessor de [founderName], nos levará à prosperidade e deixará todos nós viverem uma vida [memeAdjective].</li>
+  </VME_CultOfPersonalityDescription.rules.rulesStrings>
+  <VME_PantheismDescription.rules.rulesStrings>
+    <!-- EN: episode(priority=-1)-&gt; -->
+    <li>episode(priority=-1)-&gt;</li>
+    <!-- EN: creation-&gt;[deity0_name] is in all things. We are all made from stardust, and we are a part of divinity as much as any [Animal] might be. -->
+    <li>creation-&gt;[deity0_name] está em todas as coisas. Somos todos feitos de poeira estelar e somos tão parte da divindade quanto qualquer [Animal].</li>
+    <!-- EN: creation-&gt;Everything is part of an all-encompassing, immanent God, [deity0_name]. All forms of reality may then be considered either modes of that Being, or identical with it. -->
+    <li>creation-&gt;Tudo é parte de um Deus imanente que tudo abarca, [deity0_name]. Toda forma de realidade pode então ser vista como um modo desse Ser, ou idêntica a ele.</li>
+    <!-- EN: creation-&gt;The Universe, in the sense of the totality of all existence, and God are identical. Divinity is all around us, forming [deity0_name]. -->
+    <li>creation-&gt;O Universo, no sentido da totalidade de tudo o que existe, e Deus são idênticos. A divindade está em toda parte à nossa volta, formando [deity0_name].</li>
+    <!-- EN: creation-&gt;There was a neverending void. In that void, [deity0_name] was formed, thus beginning the reckoning of time. -->
+    <li>creation-&gt;Havia um vazio sem fim. Nesse vazio formou-se [deity0_name], e assim começou a contagem do tempo.</li>
+    <!-- EN: episode(uses=1)-&gt;Only through carefully studying [deity0_name] can we truly understand the nature of reality. -->
+    <li>episode(uses=1)-&gt;Só estudando [deity0_name] com cuidado podemos entender de verdade a natureza da realidade.</li>
+    <!-- EN: episode(uses=1)-&gt;We must recognize this immanent divinity in everything around us, and respect all creations inside [deity0_name] as sacred. -->
+    <li>episode(uses=1)-&gt;Precisamos reconhecer essa divindade imanente em tudo à nossa volta e respeitar como sagradas todas as criações dentro de [deity0_name].</li>
+    <!-- EN: episode(uses=1)-&gt;If we want to truly understand the nature of [deity0_name] we must engage in quiet and respectful contemplation of everything on it. -->
+    <li>episode(uses=1)-&gt;Se quisermos entender de verdade a natureza de [deity0_name], precisamos contemplar em silêncio e com respeito tudo o que há nele(a).</li>
+    <!-- EN: episode(uses=1)-&gt;Controlling [deity0_name] would be a natural consequence of our own intrinsic divinity. -->
+    <li>episode(uses=1)-&gt;Controlar [deity0_name] seria uma consequência natural da nossa própria divindade intrínseca.</li>
+  </VME_PantheismDescription.rules.rulesStrings>
+  <VME_OmnismDescription.rules.rulesStrings>
+    <!-- EN: episode(priority=-1)-&gt; -->
+    <li>episode(priority=-1)-&gt;</li>
+    <!-- EN: creation-&gt;It is limiting beyond words to bind oneself to any particular god or belief. The combined gifts of all supreme beings, philosophers and forces is what should truly be appreciated. -->
+    <li>creation-&gt;Prender-se a um deus ou crença específica é limitante além das palavras. O que se deve apreciar de verdade são as dádivas somadas de todos os seres supremos, filósofos e forças.</li>
+    <!-- EN: creation-&gt;All religions and ideologies point to the whole truth, that a single transcendent purpose unites all things. -->
+    <li>creation-&gt;Todas as religiões e ideologias apontam para a verdade inteira: um só propósito transcendente une todas as coisas.</li>
+    <!-- EN: creation-&gt;It seems that the teachings of the ancient [religion] and [religion2] scholars had a lot of truth to teach us. -->
+    <li>creation-&gt;Parece que os ensinamentos dos antigos estudiosos [religion] e [religion2] tinham muita verdade para nos ensinar.</li>
+    <!-- EN: creation-&gt;Truth can be found in all religions and ideologies, as they are all part of the greater human experience. Whether it is the teachings of the [religion] texts or the philosophies of the ancient [religion2] scholars, we can learn about the universe by opening our minds to this truth. -->
+    <li>creation-&gt;Há verdade em todas as religiões e ideologias, pois todas fazem parte da grande experiência humana. Sejam os ensinamentos dos textos [religion] ou as filosofias dos antigos estudiosos [religion2], podemos aprender sobre o universo abrindo a mente para essa verdade.</li>
+    <!-- EN: creation-&gt;Human beings are inquisitive creatures, and as such we have invented some incredible concepts: either [religion] teachings or [religion2] tennets hold a portion of the complete truth, and as such all beliefs are intrinsically true and useful. -->
+    <li>creation-&gt;Os seres humanos são criaturas curiosas e, por isso, inventamos conceitos incríveis: tanto os ensinamentos [religion] quanto os princípios [religion2] guardam uma parte da verdade completa, e por isso todas as crenças são intrinsecamente verdadeiras e úteis.</li>
+    <!-- EN: creation-&gt;All religions and ideologies are legitimate. A single transcendent purpose unites all things and people, and you can reach this universal purpose by any means, either by the study of the ancient [religion] texts or by following the [religion2] dogma. -->
+    <li>creation-&gt;Todas as religiões e ideologias são legítimas. Um só propósito transcendente une todas as coisas e pessoas, e dá para chegar a esse propósito universal por qualquer caminho, seja estudando os antigos textos [religion], seja seguindo os dogmas [religion2].</li>
+    <!-- EN: episode(uses=1)-&gt;Only through carefully studying all beliefs can we truly understand the nature of reality. -->
+    <li>episode(uses=1)-&gt;Só estudando com cuidado todas as crenças podemos entender de verdade a natureza da realidade.</li>
+    <!-- EN: episode(uses=1)-&gt;We must recognize that all religions contain varying elements of a common truth, and respect all beliefs accordingly. -->
+    <li>episode(uses=1)-&gt;Precisamos reconhecer que todas as religiões contêm elementos variados de uma verdade comum, e respeitar todas as crenças por isso.</li>
+    <!-- EN: religion-&gt;Christian -->
+    <li>religion-&gt;cristãos</li>
+    <!-- EN: religion-&gt;Buddhist -->
+    <li>religion-&gt;budistas</li>
+    <!-- EN: religion-&gt;Muslim -->
+    <li>religion-&gt;muçulmanos</li>
+    <!-- EN: religion-&gt;Jewish -->
+    <li>religion-&gt;judeus</li>
+    <!-- EN: religion-&gt;Taoist -->
+    <li>religion-&gt;taoistas</li>
+    <!-- EN: religion-&gt;Confucianist -->
+    <li>religion-&gt;confucionistas</li>
+    <!-- EN: religion-&gt;Zoroastrian -->
+    <li>religion-&gt;zoroastristas</li>
+    <!-- EN: religion2-&gt;Capitalist -->
+    <li>religion2-&gt;capitalistas</li>
+    <!-- EN: religion2-&gt;Communist -->
+    <li>religion2-&gt;comunistas</li>
+    <!-- EN: religion2-&gt;Authoritarian -->
+    <li>religion2-&gt;autoritários</li>
+    <!-- EN: religion2-&gt;Freethinking -->
+    <li>religion2-&gt;livres-pensadores</li>
+    <!-- EN: religion2-&gt;Freemason -->
+    <li>religion2-&gt;maçônicos</li>
+    <!-- EN: religion2-&gt;Ecologist -->
+    <li>religion2-&gt;ecologistas</li>
+    <!-- EN: religion2-&gt;Anarchist -->
+    <li>religion2-&gt;anarquistas</li>
+    <!-- EN: religion2-&gt;Libertarian -->
+    <li>religion2-&gt;libertários</li>
+    <!-- EN: religion2-&gt;Utopian -->
+    <li>religion2-&gt;utópicos</li>
+  </VME_OmnismDescription.rules.rulesStrings>
+  <VME_AgnosticismDescription.rules.rulesStrings>
+    <!-- EN: story(priority=-999)-&gt; -->
+    <li>story(priority=-999)-&gt;</li>
+    <!-- EN: setup-&gt;[founderName] made us see that the existence of God, of the divine and the supernatural, is unknown and unknowable. -->
+    <li>setup-&gt;[founderName] nos fez ver que a existência de Deus, do divino e do sobrenatural é desconhecida e impossível de conhecer.</li>
+    <!-- EN: setup-&gt;[founderName] was the first to realize that we didn't need Gods to explain the Universe. -->
+    <li>setup-&gt;[founderName] foi o(a) primeiro(a) a perceber que não precisávamos de deuses para explicar o Universo.</li>
+    <!-- EN: setup-&gt;Struck by the non-spiritual nature of the world, [founderName] studied history and philosophy and discovered the new truth that guides us. -->
+    <li>setup-&gt;Impressionado(a) com a natureza nada espiritual do mundo, [founderName] estudou história e filosofia e descobriu a nova verdade que nos guia.</li>
+    <!-- EN: setup-&gt;During an ancient ritual, [founderName] began to question the validity of [founder_possessive] former beliefs. Why put your whole life in service of an unknowable God? -->
+    <li>setup-&gt;Durante um ritual antigo, [founderName] começou a questionar suas antigas crenças. Por que pôr a vida inteira a serviço de um Deus impossível de conhecer?</li>
+    <!-- EN: setup-&gt;[founderName]'s tough life had made [founder_objective] reject [founder_possessive] faith. Gods are unknowable and should have no bearing on a person's day to day. -->
+    <li>setup-&gt;A vida dura de [founderName] fez [founder_objective] rejeitar sua fé. Os deuses são impossíveis de conhecer e não deviam pesar no dia a dia de ninguém.</li>
+    <!-- EN: story(uses=1,priority=-10)-&gt;The [memberNamePlural] would still be worshipping ancient spirits without [founderName]'s teachings, and thus [founder_pronoun] will always be remembered amongst our people as: [honorific]. -->
+    <li>story(uses=1,priority=-10)-&gt;Os [memberNamePlural] ainda estariam adorando espíritos antigos sem os ensinamentos de [founderName], e por isso [founder_pronoun] será sempre lembrado(a) entre nosso povo como [honorific].</li>
+    <!-- EN: story(uses=1,priority=-10)-&gt;[founderName]'s speech at a [ritualName] inspired many to lead a [memeAdjective] life, free of the shackles of magical thinking. Thus [founder_pronoun] will always be remembered amongst our people as: [honorific]. -->
+    <li>story(uses=1,priority=-10)-&gt;O discurso de [founderName] num(a) [ritualName] inspirou muitos a viver uma vida [memeAdjective], livre das amarras do pensamento mágico. Por isso [founder_pronoun] será sempre lembrado(a) entre nosso povo como [honorific].</li>
+    <!-- EN: story(uses=1,priority=-10)-&gt;[founderName] will always be remembered amongst our people as [honorific]: The one that forever banished magical thinking from our minds. -->
+    <li>story(uses=1,priority=-10)-&gt;[founderName] será sempre lembrado(a) entre nosso povo como [honorific]: aquele(a) que baniu para sempre o pensamento mágico das nossas mentes.</li>
+    <!-- EN: honorific-&gt;The Godkiller -->
+    <li>honorific-&gt;o(a) Matador(a) de Deuses</li>
+    <!-- EN: honorific-&gt;The Atheist -->
+    <li>honorific-&gt;o(a) Ateu(Ateia)</li>
+    <!-- EN: honorific-&gt;The Agnostic -->
+    <li>honorific-&gt;o(a) Agnóstico(a)</li>
+    <!-- EN: honorific-&gt;The Disenter -->
+    <li>honorific-&gt;o(a) Dissidente</li>
+    <!-- EN: honorific-&gt;The Light in the Dark -->
+    <li>honorific-&gt;a Luz na Escuridão</li>
+    <!-- EN: honorific-&gt;The Unbeliever -->
+    <li>honorific-&gt;o(a) Descrente</li>
+    <!-- EN: honorific-&gt;The Heretic -->
+    <li>honorific-&gt;o(a) Herege</li>
+  </VME_AgnosticismDescription.rules.rulesStrings>
+  <VME_SecularSpiritualityDescription.rules.rulesStrings>
+    <!-- EN: lesson(priority=-1)-&gt;stuff happens -->
+    <li>lesson(priority=-1)-&gt;coisas acontecem</li>
+    <!-- EN: r_pattern-&gt;"[r_lessonIntro] [r_lesson]. [r_lessonReinforcement]"\n\n  - [lessonAttribution] -->
+    <li>r_pattern-&gt;"[r_lessonIntro] [r_lesson]. [r_lessonReinforcement]"\n\n  - [lessonAttribution]</li>
+    <!-- EN: lessonAttribution-&gt;[founder_nameFull] -->
+    <li>lessonAttribution-&gt;[founder_nameFull]</li>
+    <!-- EN: lessonAttribution-&gt;[founder_nameFull]'s letter to [believer_nameFull] -->
+    <li>lessonAttribution-&gt;Carta de [founder_nameFull] para [believer_nameFull]</li>
+    <!-- EN: lessonAttribution-&gt;[founder_nameFull], on [founder_possessive] mindfulness dissertation -->
+    <li>lessonAttribution-&gt;[founder_nameFull], em sua dissertação sobre atenção plena</li>
+    <!-- EN: lessonAttribution-&gt;[founder_nameFull], [speech] on the [TerrainFeature] -->
+    <li>lessonAttribution-&gt;[founder_nameFull], [speech] no(a) [TerrainFeature]</li>
+    <!-- EN: lessonAttribution-&gt;[founder_nameFull], [speech] in the [Community] -->
+    <li>lessonAttribution-&gt;[founder_nameFull], [speech] no(a) [Community]</li>
+    <!-- EN: speech-&gt;Meditation Speech -->
+    <li>speech-&gt;Discurso de Meditação</li>
+    <!-- EN: speech-&gt;Know-Yourself Address -->
+    <li>speech-&gt;Palestra Conheça-a-Si-Mesmo</li>
+    <!-- EN: lessonIntro-&gt;I always repeat, "letting go is the hardest asana": -->
+    <li>lessonIntro-&gt;Eu sempre repito: "desapegar é o ásana mais difícil":</li>
+    <!-- EN: lessonIntro-&gt;It took me long years of intense meditation to understand that -->
+    <li>lessonIntro-&gt;Levei longos anos de meditação intensa para entender que</li>
+    <!-- EN: lessonIntro-&gt;We must not be like the [foeLeader], who don't know themselves. Observing them did teach me one thing: -->
+    <li>lessonIntro-&gt;Não podemos ser como o(a) [foeLeader], que não conhece a si mesmo(a). Observá-lo(a) me ensinou uma coisa:</li>
+    <!-- EN: lessonIntro-&gt;By teaching Yoga on the [place_summary] [place_name], I realized that -->
+    <li>lessonIntro-&gt;Ensinando ioga em [place_summary] [place_name], percebi que</li>
+    <!-- EN: lessonIntro-&gt;Find your center and set intentions for the day as you begin to focus on your breath – body connection. You will then realize that -->
+    <li>lessonIntro-&gt;Encontre seu centro e defina intenções para o dia enquanto se concentra na conexão entre respiração e corpo. Você então vai perceber que</li>
+    <!-- EN: lessonIntro-&gt;You must start with a series of breath to movement flows, energizing and invigorating the body and the mind. And you will finally know that -->
+    <li>lessonIntro-&gt;Comece com uma série de fluxos de respiração e movimento, energizando e revigorando corpo e mente. E você enfim vai saber que</li>
+    <!-- EN: lessonIntro-&gt;A flower does not think of competing to the flower next to it. It just blooms. One thing will become increasingly clear then: that -->
+    <li>lessonIntro-&gt;Uma flor não pensa em competir com a flor ao lado. Ela só floresce. Então uma coisa vai ficar cada vez mais clara:</li>
+    <!-- EN: lessonIntro-&gt;You will begin the journey of the self, through the self, to the self. Then you'll see that -->
+    <li>lessonIntro-&gt;Você vai começar a jornada do eu, pelo eu, até o eu. Então vai ver que</li>
+    <!-- EN: lessonIntro-&gt;You cannot always control what goes on outside. But you can always control what goes on inside. Once that is achieved you will see that -->
+    <li>lessonIntro-&gt;Nem sempre você controla o que acontece lá fora. Mas sempre pode controlar o que acontece por dentro. Quando conseguir isso, vai ver que</li>
+    <!-- EN: lessonIntro-&gt;The longest journey of any person is the journey inward. This journey shows you that -->
+    <li>lessonIntro-&gt;A jornada mais longa de qualquer pessoa é a jornada para dentro. Ela mostra que</li>
+    <!-- EN: lessonIntro-&gt;Truth lies in pursuing a spiritual philosophy without adherence to a religion, personal growth and inner peace of an individual are more important than a relationship with the divine, and thus -->
+    <li>lessonIntro-&gt;A verdade está em seguir uma filosofia espiritual sem aderir a uma religião; o crescimento pessoal e a paz interior valem mais que uma relação com o divino, e portanto</li>
+    <!-- EN: lessonReinforcement-&gt;Just breathe. -->
+    <li>lessonReinforcement-&gt;Só respire.</li>
+    <!-- EN: lessonReinforcement-&gt;Be where you are, not where you think you should be. -->
+    <li>lessonReinforcement-&gt;Esteja onde você está, não onde acha que deveria estar.</li>
+    <!-- EN: lessonReinforcement-&gt;The pose begins when you want to leave it. -->
+    <li>lessonReinforcement-&gt;A postura começa quando você quer sair dela.</li>
+    <!-- EN: lessonReinforcement-&gt;Inhale the future, exhale the past. -->
+    <li>lessonReinforcement-&gt;Inspire o futuro, expire o passado.</li>
+    <!-- EN: lessonReinforcement-&gt;It's not about being good at something. It's about being good to yourself. -->
+    <li>lessonReinforcement-&gt;Não se trata de ser bom em algo. Trata-se de ser bom consigo mesmo.</li>
+  </VME_SecularSpiritualityDescription.rules.rulesStrings>
+  <VME_TaoismDescription.rules.rulesStrings>
+    <!-- EN: episode(priority=-1)-&gt; -->
+    <li>episode(priority=-1)-&gt;</li>
+    <!-- EN: r_pattern-&gt;"[r_creation] [r_episode] [r_episode]."\n\n  - Lao Tzu, Tao Te Ching -->
+    <li>r_pattern-&gt;"[r_creation] [r_episode] [r_episode]."\n\n  - Lao Tsé, Tao Te Ching</li>
+    <!-- EN: creation-&gt;By living in harmony with the Tao, one can achieve perfection and become one with the unplanned rhythms of the universe. -->
+    <li>creation-&gt;Vivendo em harmonia com o Tao, pode-se alcançar a perfeição e tornar-se um com os ritmos espontâneos do universo.</li>
+    <!-- EN: creation-&gt;Being deeply loved by someone gives you strength, while loving someone deeply gives you courage. -->
+    <li>creation-&gt;Ser profundamente amado por alguém lhe dá força, e amar alguém profundamente lhe dá coragem.</li>
+    <!-- EN: creation-&gt;Simplicity, patience, compassion. These three are the greatest treasures. -->
+    <li>creation-&gt;Simplicidade, paciência, compaixão. Esses três são os maiores tesouros.</li>
+    <!-- EN: creation-&gt;The journey of a thousand miles begins with a single step. -->
+    <li>creation-&gt;A jornada de mil milhas começa com um único passo.</li>
+    <!-- EN: creation-&gt;Life is a series of natural and spontaneous changes. Don't resist them; that only creates sorrow. Let reality be reality. Let things flow naturally forward in whatever way they like. -->
+    <li>creation-&gt;A vida é uma série de mudanças naturais e espontâneas. Não resista a elas; isso só cria tristeza. Deixe a realidade ser realidade. Deixe as coisas fluírem naturalmente do jeito que quiserem.</li>
+    <!-- EN: episode(uses=1)-&gt;When you are content to be simply yourself and don't compare or compete, everyone will respect you. -->
+    <li>episode(uses=1)-&gt;Quando você se contenta em ser simplesmente você mesmo e não compara nem compete, todos o respeitarão.</li>
+    <!-- EN: episode(uses=1)-&gt;The truth is not always beautiful, nor beautiful words the truth. -->
+    <li>episode(uses=1)-&gt;A verdade nem sempre é bela, nem as belas palavras são a verdade.</li>
+    <!-- EN: episode(uses=1)-&gt;Because one believes in oneself, one doesn't try to convince others. Because one is content with oneself, one doesn't need others' approval. Because one accepts oneself, the whole world accepts him or her. -->
+    <li>episode(uses=1)-&gt;Quem acredita em si não tenta convencer os outros. Quem está contente consigo não precisa da aprovação alheia. Quem aceita a si mesmo é aceito pelo mundo inteiro.</li>
+    <!-- EN: episode(uses=1)-&gt;Care about what other people think and you will always be their prisoner. -->
+    <li>episode(uses=1)-&gt;Importe-se com o que os outros pensam e você será sempre prisioneiro deles.</li>
+  </VME_TaoismDescription.rules.rulesStrings>
+  <VME_CorporateDescription.rules.rulesStrings>
+    <!-- EN: episodeCorporate(priority=-1)-&gt; -->
+    <li>episodeCorporate(priority=-1)-&gt;</li>
+    <!-- EN: r_pattern-&gt;"To: All Employees\n\nFrom: Upper Management\n\nSubject: [subject]\n\n[r_introMemo] [r_episodeCorporate] [r_episodeCorporate]" -->
+    <li>r_pattern-&gt;"Para: Todos os colaboradores\n\nDe: Alta Gerência\n\nAssunto: [subject]\n\n[r_introMemo] [r_episodeCorporate] [r_episodeCorporate]"</li>
+    <!-- EN: introMemo-&gt;Coworkers, it has come to my attention that many in the office have been spending time doing unapproved activities. -->
+    <li>introMemo-&gt;Colegas, chegou ao meu conhecimento que muitos no escritório têm gastado tempo em atividades não aprovadas.</li>
+    <!-- EN: introMemo-&gt;This is to remind the division that, starting today, we are now filing all Testing Procedure Specification (TPS) reports with new cover sheets. -->
+    <li>introMemo-&gt;Este é um lembrete à divisão de que, a partir de hoje, todos os relatórios de Especificação de Procedimento de Teste (EPT) serão entregues com as novas folhas de rosto.</li>
+    <!-- EN: introMemo-&gt;In our efforts to make your orientation a pleasant one, we have implemented an employee self-service system to assist you in completing the new hire process, including benefits enrollment. -->
+    <li>introMemo-&gt;No esforço de tornar sua integração agradável, implantamos um sistema de autoatendimento para ajudar você a concluir o processo de admissão, incluindo a adesão aos benefícios.</li>
+    <!-- EN: introMemo-&gt;As you know, tomorrow afternoon we’ll be meeting to discuss the status of all of our current projects. -->
+    <li>introMemo-&gt;Como sabem, amanhã à tarde nos reuniremos para discutir o andamento de todos os projetos atuais.</li>
+    <!-- EN: introMemo-&gt;For tomorrow’s 3 p.m. staff meeting in the conference room, please bring 5 copies of the aforementioned materials. -->
+    <li>introMemo-&gt;Para a reunião de equipe de amanhã às 15h na sala de conferências, tragam 5 cópias do material supracitado.</li>
+    <!-- EN: introMemo-&gt;Due to your excellent performance in the last year —especially your work in the Northwest Region!— we would like to feature you as one of our spotlight employees. -->
+    <li>introMemo-&gt;Pelo seu excelente desempenho no último ano (em especial seu trabalho na Regional Noroeste!), gostaríamos de destacar você como um dos colaboradores em evidência.</li>
+    <!-- EN: introMemo-&gt;Do you know the #1 thing that matters most to our customers? Money, of course. -->
+    <li>introMemo-&gt;Sabe qual é a coisa nº 1 que mais importa para os nossos clientes? Dinheiro, é claro.</li>
+    <!-- EN: introMemo-&gt;Are you using the 3 most useful collaboration tools?. We'd really appreciate it if you get those synergies flowing. -->
+    <li>introMemo-&gt;Você está usando as 3 ferramentas de colaboração mais úteis? Agradeceríamos muito se fizesse essas sinergias fluírem.</li>
+    <!-- EN: introMemo-&gt;Good morning. There are some exciting changes coming to our department that I wish to alert you to. -->
+    <li>introMemo-&gt;Bom dia. Há mudanças empolgantes chegando ao nosso departamento sobre as quais quero alertar vocês.</li>
+    <!-- EN: introMemo-&gt;I am very pleased that you have accepted our offer and are joining our team. -->
+    <li>introMemo-&gt;Fico muito satisfeito por você ter aceitado nossa proposta e estar entrando para o nosso time.</li>
+    <!-- EN: introMemo-&gt;We are very happy to have you as a part of our team. The staff here is looking forward to helping you fill the management void we have had for some time. -->
+    <li>introMemo-&gt;Estamos muito felizes em ter você no nosso time. A equipe está ansiosa para ajudar você a preencher o vazio de gestão que temos há algum tempo.</li>
+    <!-- EN: episodeCorporate(uses=1)-&gt;This memo is a reminder to use your work hours for work. -->
+    <li>episodeCorporate(uses=1)-&gt;Este memorando é um lembrete para usar o horário de trabalho para trabalhar.</li>
+    <!-- EN: episodeCorporate(uses=1)-&gt;Of course, we don't want you to view our organization as a place of drudgery and draconian rules. We encourage a fun and competitive environment. -->
+    <li>episodeCorporate(uses=1)-&gt;Claro que não queremos que vejam nossa organização como um lugar de labuta e regras draconianas. Incentivamos um ambiente divertido e competitivo.</li>
+    <!-- EN: episodeCorporate(uses=1)-&gt;Though this change may initially seem like a headache and an extra step, it is necessary to ensure the proper functioning of our company. -->
+    <li>episodeCorporate(uses=1)-&gt;Embora esta mudança possa parecer, de início, uma dor de cabeça e uma etapa a mais, ela é necessária para o bom funcionamento da empresa.</li>
+    <!-- EN: episodeCorporate(uses=1)-&gt;Please be sure to follow this new procedure. -->
+    <li>episodeCorporate(uses=1)-&gt;Por favor, sigam este novo procedimento.</li>
+    <!-- EN: episodeCorporate(uses=1)-&gt;I think I don't need to remind you all that we are a team, no, a family. And families stick together, no matter the challenge. -->
+    <li>episodeCorporate(uses=1)-&gt;Acho que não preciso lembrar a todos que somos um time, não, uma família. E família fica unida, seja qual for o desafio.</li>
+    <!-- EN: episodeCorporate(uses=1)-&gt;This critical issue will be discussed in an all-hands meeting, ASAP. -->
+    <li>episodeCorporate(uses=1)-&gt;Esta questão crítica será discutida numa reunião geral, o quanto antes.</li>
+    <!-- EN: episodeCorporate(uses=1)-&gt;It is prioritary that we start thinking outside the box. And let's all sing from the same hymn sheet. -->
+    <li>episodeCorporate(uses=1)-&gt;É prioritário começarmos a pensar fora da caixa. E vamos todos remar na mesma direção.</li>
+    <!-- EN: episodeCorporate(uses=1)-&gt;Let's take it to the next level, people. -->
+    <li>episodeCorporate(uses=1)-&gt;Vamos elevar isso ao próximo nível, pessoal.</li>
+    <!-- EN: episodeCorporate(uses=1)-&gt;Our executive management has decided that some restructuring of our department is in order so that our transition through this merger can be as seamless as possible. You'll receive more info shortly. -->
+    <li>episodeCorporate(uses=1)-&gt;A diretoria executiva decidiu que é preciso reestruturar nosso departamento para que a transição nesta fusão seja a mais tranquila possível. Em breve vocês receberão mais informações.</li>
+    <!-- EN: episodeCorporate(uses=1)-&gt;We are scheduling a staff meeting for tomorrow from 12 pm to 1 pm where we will outline the steps of this important transition; lunch will be provided. -->
+    <li>episodeCorporate(uses=1)-&gt;Marcamos uma reunião de equipe para amanhã, das 12h às 13h, para apresentar as etapas desta importante transição; o almoço será por nossa conta.</li>
+    <!-- EN: episodeCorporate(uses=1)-&gt;Your experience and vision will be a great asset to this group, and I know that the team is looking forward to working with you. -->
+    <li>episodeCorporate(uses=1)-&gt;Sua experiência e visão serão um grande ativo para o grupo, e sei que a equipe está ansiosa para trabalhar com você.</li>
+    <!-- EN: subject-&gt;Inappropriate use of time on Google Doodle games -->
+    <li>subject-&gt;Uso inadequado do tempo com joguinhos do navegador</li>
+    <!-- EN: subject-&gt;Please reload ink on the printer once it runs out -->
+    <li>subject-&gt;Por favor, troquem a tinta da impressora quando acabar</li>
+    <!-- EN: subject-&gt;Fall Clothes Line Promotion -->
+    <li>subject-&gt;Promoção da Linha de Roupas de Outono</li>
+    <!-- EN: subject-&gt;Don't invite Steve to the meeting. He'll dress like a ghost -->
+    <li>subject-&gt;Não chamem o Estêvão para a reunião. Ele vai vestido de fantasma</li>
+    <!-- EN: subject-&gt;Warning: Unattended items in your desks may be stolen. The Company is not responsible for your belongings -->
+    <li>subject-&gt;Aviso: itens deixados nas mesas podem ser furtados. A Empresa não se responsabiliza por seus pertences</li>
+    <!-- EN: subject-&gt;Office Memo to All Employees -->
+    <li>subject-&gt;Memorando a todos os colaboradores</li>
+    <!-- EN: subject-&gt;Restroom Use Policy -->
+    <li>subject-&gt;Política de uso dos banheiros</li>
+    <!-- EN: subject-&gt;Company's Position On "Streaking" -->
+    <li>subject-&gt;Posição da Empresa sobre correr pelado</li>
+    <!-- EN: subject-&gt;Customer Satisfaction -->
+    <li>subject-&gt;Satisfação do cliente</li>
+    <!-- EN: subject-&gt;Boss's Rules -->
+    <li>subject-&gt;Regras do chefe</li>
+    <!-- EN: subject-&gt;Prospective Employee Assessment -->
+    <li>subject-&gt;Avaliação de candidatos</li>
+    <!-- EN: subject-&gt;Re: Request For A Raise -->
+    <li>subject-&gt;Re: Pedido de aumento</li>
+    <!-- EN: subject-&gt;Re: that is my last email! -->
+    <li>subject-&gt;Re: esse é meu último e-mail!</li>
+    <!-- EN: subject-&gt;Your Company's Early Retirement Program -->
+    <li>subject-&gt;Programa de aposentadoria antecipada da sua empresa</li>
+    <!-- EN: subject-&gt;PARKING VIOLATION -->
+    <li>subject-&gt;INFRAÇÃO DE ESTACIONAMENTO</li>
+    <!-- EN: subject-&gt;Forwarded for Your Consideration -->
+    <li>subject-&gt;Encaminhado para sua apreciação</li>
+    <!-- EN: subject-&gt;For your Information (FYI) -->
+    <li>subject-&gt;Para seu conhecimento (PSC)</li>
+    <!-- EN: subject-&gt;Give Us the Benefit of Your Present Thinking -->
+    <li>subject-&gt;Compartilhe conosco sua visão atual</li>
+    <!-- EN: subject-&gt;Under Consideration -->
+    <li>subject-&gt;Em análise</li>
+    <!-- EN: subject-&gt;The milestones have almost been reached -->
+    <li>subject-&gt;As metas estão quase batidas</li>
+    <!-- EN: subject-&gt;Clarification -->
+    <li>subject-&gt;Esclarecimento</li>
+  </VME_CorporateDescription.rules.rulesStrings>
+</LanguageData>
