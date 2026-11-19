@@ -1,7 +1,9 @@
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using HarmonyLib;
 using RimWorld;
+using UnityEngine;
 using Verse;
 
 namespace EcosDaQueda
@@ -19,6 +21,9 @@ namespace EcosDaQueda
         public bool replace = true;
         public ResearchBranchDef branch;
         public bool keepTab = true;
+        /// <summary>Com o SeedsPlease: cada planta desbloqueada ganha uma receita de semente que exige este projeto
+        /// (extrair da colheita, ou propagar a partir de uma semente quando a colheita não dá semente).</summary>
+        public bool seeds = true;
     }
 
     public static class EQResearchUnlocks
@@ -44,7 +49,12 @@ namespace EcosDaQueda
                 }
                 n++;
             }
-            if (n > 0) ClearCaches();
+            if (n > 0)
+            {
+                ClearCaches();
+                // depois de todos os construtores estáticos: o SeedsPlease cria as sementes no dele
+                LongEventHandler.ExecuteWhenFinished(EQSeedRecipes.Apply);
+            }
         }
 
         public static void ClearCaches()
@@ -119,5 +129,89 @@ namespace EcosDaQueda
         }
 
         private static bool RecipeRequires(RecipeDef r, ResearchProjectDef p) => r.researchPrerequisite == p || r.researchPrerequisites?.Contains(p) == true;
+    }
+
+    /// <summary>
+    /// Receitas de semente por planta (SeedsPlease Lite Redux, dependência opcional: sem ele nada acontece).
+    /// O SeedsPlease extrai todas as sementes numa receita só ("ExtractSeeds"); aqui cada planta das árvores do editor
+    /// ganha "extrair sementes de X" (a colheita sai da receita geral) ou, se a colheita não dá semente (madeira,
+    /// farinha, produto dividido entre plantas), "propagar semente de X" (1 semente vira 2). As duas exigem o projeto.
+    /// </summary>
+    public static class EQSeedRecipes
+    {
+        public const int PropagateYield = 2;
+        public static readonly List<RecipeDef> Created = new List<RecipeDef>();
+
+        public static bool IsSeed(ThingDef t) => t?.modExtensions?.Any(e => e.GetType().Name == "Seed") == true;
+
+        public static void Apply()
+        {
+            RecipeDef gen = DefDatabase<RecipeDef>.GetNamedSilentFail("ExtractSeeds");
+            if (gen == null || gen.recipeUsers.NullOrEmpty()) return;
+            var taken = (Dictionary<Type, HashSet<ushort>>)AccessTools.Field(typeof(ShortHashGiver), "takenHashesPerDeftype").GetValue(null);
+            if (!taken.TryGetValue(typeof(RecipeDef), out HashSet<ushort> hashes)) taken[typeof(RecipeDef)] = hashes = new HashSet<ushort>();
+            var giveHash = AccessTools.Method(typeof(ShortHashGiver), "GiveShortHash");
+            int extractCount = Mathf.Max(1, (int)(gen.ingredients?.FirstOrDefault()?.GetBaseCount() ?? 8));
+            var seen = new HashSet<ThingDef>();
+            foreach (ResearchProjectDef proj in DefDatabase<ResearchProjectDef>.AllDefsListForReading)
+            {
+                ResearchEditorExt ext = proj.GetModExtension<ResearchEditorExt>();
+                if (ext == null || !ext.seeds) continue;
+                foreach (string name in ext.unlocks)
+                {
+                    ThingDef plant = DefDatabase<ThingDef>.GetNamedSilentFail(name);
+                    ThingDef seed = plant?.blueprintDef;
+                    if (plant?.plant == null || !IsSeed(seed) || !seen.Add(seed)) continue;
+                    ThingDef produce = plant.plant.harvestedThingDef;
+                    ThingDefCountClass bp = produce?.butcherProducts?.FirstOrDefault();
+                    RecipeDef r;
+                    if (bp != null && bp.thingDef == seed)
+                    {
+                        r = Make("EQ_ExtrairSemente_" + plant.defName, "extrair sementes de " + produce.label,
+                            "Extrai sementes de " + plant.label + " de " + produce.label + ".", gen, produce, extractCount, seed, bp.count,
+                            gen.workAmount, gen.workSkill, proj);
+                        gen.fixedIngredientFilter?.SetAllow(produce, false);
+                        gen.defaultIngredientFilter?.SetAllow(produce, false);
+                        foreach (IngredientCount ic in gen.ingredients) ic.filter?.SetAllow(produce, false);
+                    }
+                    else
+                        r = Make("EQ_PropagarSemente_" + plant.defName, "propagar " + seed.label,
+                            "Multiplica uma semente de " + plant.label + " em mudas e estacas: 1 vira " + PropagateYield + ".", gen, seed, 1,
+                            seed, PropagateYield, 1200f, SkillDefOf.Plants, proj);
+                    giveHash.Invoke(null, new object[] { r, typeof(RecipeDef), hashes });
+                    DefDatabase<RecipeDef>.Add(r);
+                    Created.Add(r);
+                }
+            }
+            var cache = AccessTools.Field(typeof(ThingDef), "allRecipesCached");
+            foreach (ThingDef u in gen.recipeUsers) cache.SetValue(u, null);
+            EQResearchUnlocks.ClearCaches();
+        }
+
+        private static RecipeDef Make(string defName, string label, string desc, RecipeDef gen, ThingDef ingredient, int count,
+            ThingDef seed, int yield, float work, SkillDef skill, ResearchProjectDef proj)
+        {
+            var r = new RecipeDef
+            {
+                defName = defName, label = label, description = desc, jobString = gen.jobString,
+                workAmount = work, workSpeedStat = gen.workSpeedStat, workSkill = skill,
+                effectWorking = gen.effectWorking, soundWorking = gen.soundWorking,
+                recipeUsers = new List<ThingDef>(gen.recipeUsers),
+                products = new List<ThingDefCountClass> { new ThingDefCountClass(seed, yield) },
+                researchPrerequisites = new List<ResearchProjectDef> { proj },
+                modContentPack = proj.modContentPack,
+                fixedIngredientFilter = new ThingFilter(),
+            };
+            var ic = new IngredientCount();
+            ic.SetBaseCount(count);
+            ic.filter.SetAllow(ingredient, true);
+            r.ingredients = new List<IngredientCount> { ic };
+            r.fixedIngredientFilter.SetAllow(ingredient, true);
+            r.ResolveReferences();
+            r.fixedIngredientFilter.SetAllow(ingredient, true);
+            ic.filter.SetAllow(ingredient, true);
+            r.defaultIngredientFilter?.SetAllow(ingredient, true);
+            return r;
+        }
     }
 }

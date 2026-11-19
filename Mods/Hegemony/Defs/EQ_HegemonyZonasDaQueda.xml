@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <!-- F3: perfis do Hegemony (BiomeEffectDef) para as zonas da Queda (biomas do Alpha Biomes pintados no mundo fixo, MUNDO.md M2b).
+       Valem para a cidade no tile (Hegemony) e para o rendimento por tile do território (EQ_RendimentoTerritorio). Sem o Alpha Biomes, ficam sem uso. -->
+  <FactionTerritories2.BiomeEffectDef>
+    <defName>EQ_Bioma_RockyCrags</defName>
+    <label>ambiente de penhascos rochosos</label>
+    <description>Penhascos onde o Velho Mundo jogava turistas e entulho. Pedra de sobra, comida de menos; a defesa agradece.</description>
+    <biome>AB_RockyCrags</biome>
+    <food>-0.3</food>
+    <stone>0.4</stone>
+    <metal>0.15</metal>
+    <defence>0.25</defence>
+    <construction>0.1</construction>
+    <upkeep>0.05</upkeep>
+  </FactionTerritories2.BiomeEffectDef>
+  <FactionTerritories2.BiomeEffectDef>
+    <defName>EQ_Bioma_TarPits</defName>
+    <label>ambiente de poços de piche</label>
+    <description>Piche quente que borbulha desde antes da Queda. Combustível e material para quem aguenta o cheiro; ninguém aguenta.</description>
+    <biome>AB_TarPits</biome>
+    <food>-0.35</food>
+    <materials>0.2</materials>
+    <metal>0.1</metal>
+    <prosperity>0.1</prosperity>
+    <happiness>-3</happiness>
+    <unsafeWater>true</unsafeWater>
+  </FactionTerritories2.BiomeEffectDef>
+  <FactionTerritories2.BiomeEffectDef>
+    <defName>EQ_Bioma_OcularForest</defName>
+    <label>ambiente de floresta ocular</label>
+    <description>Árvores com olhos que acompanham quem passa. Madeira boa, sono ruim.</description>
+    <biome>AB_OcularForest</biome>
+    <food>0.05</food>
+    <wood>0.25</wood>
+    <research>0.1</research>
+    <happiness>-4</happiness>
+    <forest>true</forest>
+  </FactionTerritories2.BiomeEffectDef>
+  <FactionTerritories2.BiomeEffectDef>
+    <defName>EQ_Bioma_GallatrossGraveyard</defName>
+    <label>ambiente de cemitério de galatross</label>
+    <description>Ossadas de bichos grandes demais para terem existido. Sucata orgânica, cálcio e muita superstição.</description>
+    <biome>AB_GallatrossGraveyard</biome>
+    <food>-0.2</food>
+    <materials>0.15</materials>
+    <components>0.05</components>
+    <research>0.1</research>
+    <happiness>-2</happiness>
+  </FactionTerritories2.BiomeEffectDef>
+  <FactionTerritories2.BiomeEffectDef>
+    <defName>EQ_Bioma_MechanoidIntrusion</defName>
+    <label>ambiente de intrusão mecanoide</label>
+    <description>O chão é peça de máquina. As peças às vezes andam. Componentes para quem não se importa com o resto.</description>
+    <biome>AB_MechanoidIntrusion</biome>
+    <food>-0.4</food>
+    <metal>0.3</metal>
+    <components>0.15</components>
+    <defence>-0.1</defence>
+    <upkeep>0.1</upkeep>
+    <happiness>-3</happiness>
+  </FactionTerritories2.BiomeEffectDef>
+  <FactionTerritories2.BiomeEffectDef>
+    <defName>EQ_Bioma_PyroclasticConflagration</defName>
+    <label>ambiente de conflagração piroclástica</label>
+    <description>A caldeira que o folheto chamava de parque nacional. Metal e cinza; plantar aqui é ato de fé.</description>
+    <biome>AB_PyroclasticConflagration</biome>
+    <food>-0.5</food>
+    <stone>0.3</stone>
+    <metal>0.25</metal>
+    <upkeep>0.15</upkeep>
+    <happiness>-5</happiness>
+    <unsafeWater>true</unsafeWater>
+  </FactionTerritories2.BiomeEffectDef>
+  <FactionTerritories2.BiomeEffectDef>
+    <defName>EQ_Bioma_PropaneLakes</defName>
+    <label>ambiente de lagos de propano</label>
+    <description>Lagos que pegam fogo quando alguém espirra. Energia barata, seguro caro.</description>
+    <biome>AB_PropaneLakes</biome>
+    <food>-0.4</food>
+    <materials>0.1</materials>
+    <prosperity>0.15</prosperity>
+    <upkeep>0.1</upkeep>
+    <happiness>-2</happiness>
+    <unsafeWater>true</unsafeWater>
+  </FactionTerritories2.BiomeEffectDef>
+  <FactionTerritories2.BiomeEffectDef>
+    <defName>EQ_Bioma_IdyllicMeadows</defName>
+    <label>ambiente de prados idílicos</label>
+    <description>Prados bonitos demais para serem honestos. Comida farta e um contentamento que ninguém consegue explicar.</description>
+    <biome>AB_IdyllicMeadows</biome>
+    <food>0.35</food>
+    <prosperity>0.05</prosperity>
+    <happiness>6</happiness>
+  </FactionTerritories2.BiomeEffectDef>
+  <FactionTerritories2.BiomeEffectDef>
+    <defName>EQ_Bioma_FeraliskInfestedJungle</defName>
+    <label>ambiente de selva de feraliscos</label>
+    <description>Selva fechada com feraliscos que não leram o tratado de paz. Comida abundante, enterros também.</description>
+    <biome>AB_FeraliskInfestedJungle</biome>
+    <food>0.25</food>
+    <wood>0.2</wood>
+    <defence>0.1</defence>
+    <upkeep>0.1</upkeep>
+    <happiness>-4</happiness>
+    <forest>true</forest>
+  </FactionTerritories2.BiomeEffectDef>
+  <FactionTerritories2.BiomeEffectDef>
+    <defName>EQ_Bioma_MycoticJungle</defName>
+    <label>ambiente de selva micótica</label>
+    <description>Fungo em tudo, inclusive nos moradores. Comida não falta; o gosto é outra conversa.</description>
+    <biome>AB_MycoticJungle</biome>
+    <food>0.3</food>
+    <wood>0.1</wood>
+    <research>0.05</research>
+    <happiness>-2</happiness>
+    <forest>true</forest>
+  </FactionTerritories2.BiomeEffectDef>
+  <FactionTerritories2.BiomeEffectDef>
+    <defName>EQ_Bioma_GelatinousSuperorganism</defName>
+    <label>ambiente de superorganismo gelatinoso</label>
+    <description>Um único ser gelatinoso do tamanho de um estado, que tolera inquilinos. Por enquanto.</description>
+    <biome>AB_GelatinousSuperorganism</biome>
+    <food>0.15</food>
+    <materials>0.05</materials>
+    <growth>0.1</growth>
+    <happiness>-5</happiness>
+    <unsafeWater>true</unsafeWater>
+  </FactionTerritories2.BiomeEffectDef>
+  <FactionTerritories2.BiomeEffectDef>
+    <defName>EQ_Bioma_MiasmicMangrove</defName>
+    <label>ambiente de manguezal miasmático</label>
+    <description>Manguezal de ar pesado e água que ninguém bebe duas vezes. Peixe estranho, madeira úmida.</description>
+    <biome>AB_MiasmicMangrove</biome>
+    <food>0.1</food>
+    <wood>0.15</wood>
+    <upkeep>0.1</upkeep>
+    <happiness>-3</happiness>
+    <unsafeWater>true</unsafeWater>
+  </FactionTerritories2.BiomeEffectDef>
+</Defs>

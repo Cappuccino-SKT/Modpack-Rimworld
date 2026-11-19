@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <!--
+    Fronteiras vivas, F3 (MUNDO.md): cada tile do território rende por dia para a cidade mais próxima da facção dona
+    (só no mundo fixo). Calibrado em 2026-11-19 contra o crescimento natural de um dia: ~+30% de prosperidade, ~+30% de comida e ~+10% de materiais numa cidade com 60 tiles. Base por tile × (1 + campo do perfil de bioma do Hegemony × profileWeight). Os perfis vêm dos
+    BiomeEffectDef do Hegemony (biomas do jogo) e dos nossos (zonas da Queda, Mods/Hegemony/Defs/EQ_HegemonyZonasDaQueda.xml).
+    Morro/montanha dão pedra/metal; rio dá comida; estrada dá prosperidade. Contam até maxTilesPerSettlement por cidade.
+    Os marcos e sítios do território o Hegemony já entrega sozinho à cidade (LandmarkHoldings).
+  -->
+  <EcosDaQueda.TerritoryYieldDef>
+    <defName>EQ_RendimentoTerritorio</defName>
+    <label>rendimento do território</label>
+    <onlyFixedWorld>true</onlyFixedWorld>
+    <food>0.6</food>
+    <materials>2</materials>
+    <prosperity>5</prosperity>
+    <profileWeight>2</profileWeight>
+    <components>0.05</components>
+    <hillsStone>0.5</hillsStone>
+    <mountainsMetal>0.5</mountainsMetal>
+    <riverFood>0.5</riverFood>
+    <roadProsperity>3</roadProsperity>
+    <maxTilesPerSettlement>60</maxTilesPerSettlement>
+  </EcosDaQueda.TerritoryYieldDef>
+</Defs>

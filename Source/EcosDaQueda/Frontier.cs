@@ -86,8 +86,11 @@ namespace EcosDaQueda
 
         public override void WorldComponentTick()
         {
+            int t = Find.TickManager.TicksGame % GenDate.TicksPerDay;
+            // F3: rendimento diário do território (TerritoryYield.cs; liga sozinho no mundo fixo).
+            if (t == 1300) EQTerritoryYield.ApplyDaily();
             if (!Enabled) return;
-            if (Find.TickManager.TicksGame % GenDate.TicksPerDay == 1234) AdvanceDays(1f);
+            if (t == 1234) AdvanceDays(1f);
         }
 
         public bool Enabled

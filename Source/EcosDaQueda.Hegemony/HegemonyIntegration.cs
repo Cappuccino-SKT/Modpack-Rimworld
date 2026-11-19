@@ -114,6 +114,7 @@ namespace EcosDaQueda.HegemonyCompat
                 return l;
             };
             EQTerritory.ProsperityProvider = s => HegemonyApi.TryGetSettlementState(s, out SettlementState st) && st != null ? st.prosperity : -1f;
+            RegisterTerritoryYield();
             // Fronteiras vivas, F2: o multiplicador de decaimento de cada cidade passa pela nossa regra (Frontier.cs).
             MethodInfo decay = AccessTools.Method(AccessTools.TypeByName("FactionTerritories2.TerritorySolver"), "SettlementDecay");
             if (decay != null)
@@ -183,6 +184,46 @@ namespace EcosDaQueda.HegemonyCompat
             foreach (HegemonyWar w in HegemonyApi.GetWars())
                 if (w?.First != null && w.Second != null)
                     yield return new System.Collections.Generic.KeyValuePair<Faction, Faction>(w.First, w.Second);
+        }
+
+        // ---------- F3: rendimento do território ----------
+        private static MethodInfo foodChange, materialsAdd;
+        private static Type foodKindType;
+
+        /// <summary>Perfil de bioma (BiomeEffectDef é público) e entrega nos estoques por tipo (FoodStocks.Change e
+        /// Materials.Add são internos: reflexão, como os outros métodos do Hegemony usados aqui).</summary>
+        private static void RegisterTerritoryYield()
+        {
+            var profiles = new System.Collections.Generic.Dictionary<string, float[]>();
+            foreach (BiomeEffectDef b in DefDatabase<BiomeEffectDef>.AllDefsListForReading)
+                if (!string.IsNullOrEmpty(b.biome))
+                    profiles[b.biome] = new[] { b.food + b.vegetables, b.wood + b.materials, b.stone + b.materials, b.metal + b.materials, b.components, b.prosperity, b.happiness };
+            EQTerritoryYield.BiomeProfileProvider = biome => biome != null && profiles.TryGetValue(biome.defName, out float[] p) ? p : null;
+
+            foodChange = AccessTools.Method("FactionTerritories2.FoodStocks:Change");
+            materialsAdd = AccessTools.Method("FactionTerritories2.Materials:Add", new[] { typeof(SettlementState), typeof(MaterialKind), typeof(double) });
+            foodKindType = AccessTools.TypeByName("FactionTerritories2.SettlementFoodKind");
+            if (foodChange == null || materialsAdd == null || foodKindType == null)
+            {
+                Log.Warning("[Ecos da Queda] Não achei FoodStocks.Change/Materials.Add no Hegemony; o rendimento do território (F3) fica desligado.");
+                return;
+            }
+            object vegetables = Enum.Parse(foodKindType, "Vegetables");
+            EQTerritoryYield.Applier = (settlement, y) =>
+            {
+                if (!HegemonyApi.TryGetSettlementState(settlement, out SettlementState st) || st == null || st.UnderConstruction) return;
+                if (y.food > 0f) foodChange.Invoke(null, new object[] { st, vegetables, (double)y.food });
+                if (y.wood > 0f) materialsAdd.Invoke(null, new object[] { st, MaterialKind.Wood, (double)y.wood });
+                if (y.stone > 0f) materialsAdd.Invoke(null, new object[] { st, MaterialKind.Stone, (double)y.stone });
+                if (y.metal > 0f) materialsAdd.Invoke(null, new object[] { st, MaterialKind.Metal, (double)y.metal });
+                if (y.components > 0f) materialsAdd.Invoke(null, new object[] { st, MaterialKind.IndustrialComponents, (double)y.components });
+                if (y.prosperity > 0f) st.prosperity += y.prosperity;
+                if (y.happiness != 0f) st.happiness = Math.Max(0f, Math.Min(100f, st.happiness + y.happiness));
+            };
+            EQTerritoryYield.StockReport = settlement =>
+                HegemonyApi.TryGetSettlementState(settlement, out SettlementState st) && st != null
+                    ? "comida=" + st.food.ToString("0") + " materiais=" + st.materials.ToString("0") + " prosp=" + st.prosperity.ToString("0") + " fel=" + st.happiness.ToString("0")
+                    : "-";
         }
 
         /// <summary>F2: raio permitido da cidade (cresce com o tempo até o teto). Em construção/rebelde fica o do Hegemony.</summary>

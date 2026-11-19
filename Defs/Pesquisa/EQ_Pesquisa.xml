@@ -2,4 +2,646 @@
 <!-- GERADO por EcosDaQueda-Dev/kits/kits.py (página Pesquisa do editor). Não editar à mão: mude em kits/pesquisa/*.json. -->
 <Defs>
 
+  <ResearchTabDef>
+    <defName>EQ_RTab_Cultivo</defName>
+    <label>Cultivo</label>
+    <generalTitle>Cultivo</generalTitle>
+    <generalDescription>Cultivos separados em Alimentícia (frutífera, vegetal, fúngica), Souvenir e Recurso (tecido, madeira, medicamento, drogas, outros), do nível I ao IV. Arroz, batata, milho e feno continuam livres, sem pesquisa.</generalDescription>
+  </ResearchTabDef>
+
+  <!-- Alimentícia &gt; Frutífera &gt; nível I -->
+  <ResearchProjectDef>
+    <defName>EQ_R_Cultivo_Frutifera_1</defName>
+    <label>Frutífera I: Pomar de quintal</label>
+    <description>Árvores e arbustos de fruta que crescem rápido e não pedem muito. A fome também não pede.</description>
+    <baseCost>300</baseCost>
+    <techLevel>Neolithic</techLevel>
+    <tab>EQ_RTab_Cultivo</tab>
+    <researchViewX>0</researchViewX>
+    <researchViewY>0</researchViewY>
+    <prerequisites><li>EQ_R_Cultivo_Madeira_1</li></prerequisites>
+    <modExtensions>
+      <li Class="EcosDaQueda.ResearchEditorExt">
+        <unlocks><li>VEE_Plant_DatePalm</li><li>VCE_PearTree</li><li>VCE_Opuntia</li><li>VCE_BearBerryBush</li></unlocks>
+        <branch>EQ_Ramo_Bancada</branch>
+      </li>
+    </modExtensions>
+  </ResearchProjectDef>
+
+  <!-- Alimentícia &gt; Frutífera &gt; nível II -->
+  <ResearchProjectDef>
+    <defName>EQ_R_Cultivo_Frutifera_2</defName>
+    <label>Frutífera II: Pomar clássico</label>
+    <description>As frutíferas que o Velho Mundo vendia em embalagem plástica. Levam um mês para dar fruta, mas dão muita.</description>
+    <baseCost>700</baseCost>
+    <techLevel>Medieval</techLevel>
+    <tab>EQ_RTab_Cultivo</tab>
+    <researchViewX>2</researchViewX>
+    <researchViewY>0</researchViewY>
+    <prerequisites><li>EQ_R_Cultivo_Frutifera_1</li></prerequisites>
+    <modExtensions>
+      <li Class="EcosDaQueda.ResearchEditorExt">
+        <unlocks><li>VCE_AppleTree</li><li>VCE_BananaTree</li><li>VCE_CherryTree</li><li>VCE_OrangeTree</li><li>VCE_PeachTree</li><li>VCE_PlumTree</li><li>VBE_LemonTree</li><li>VCE_TreeMango</li><li>VCE_TreeOlive</li><li>VCE_TreeAlmond</li><li>VFEM2_Plant_Grape</li></unlocks>
+        <branch>EQ_Ramo_Bancada</branch>
+      </li>
+    </modExtensions>
+  </ResearchProjectDef>
+
+  <!-- Alimentícia &gt; Frutífera &gt; nível III -->
+  <ResearchProjectDef>
+    <defName>EQ_R_Cultivo_Frutifera_3</defName>
+    <label>Frutífera III: Frutas de luxo</label>
+    <description>Cacau, coco e abacate: solo certo, mão experiente e paciência de quem ainda acredita em sobremesa.</description>
+    <baseCost>1500</baseCost>
+    <techLevel>Industrial</techLevel>
+    <tab>EQ_RTab_Cultivo</tab>
+    <researchViewX>4</researchViewX>
+    <researchViewY>0</researchViewY>
+    <prerequisites><li>EQ_R_Cultivo_Frutifera_2</li></prerequisites>
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <modExtensions>
+      <li Class="EcosDaQueda.ResearchEditorExt">
+        <unlocks><li>VCE_CoconutPalm</li><li>VCE_TreeAvocado</li><li>Plant_TreeCocoa</li><li>VCE_ChocolateBush</li></unlocks>
+        <branch>EQ_Ramo_Bancada</branch>
+      </li>
+    </modExtensions>
+  </ResearchProjectDef>
+
+  <!-- Alimentícia &gt; Frutífera &gt; nível IV -->
+  <ResearchProjectDef>
+    <defName>EQ_R_Cultivo_Frutifera_4</defName>
+    <label>Frutífera IV: Árvores que escorrem</label>
+    <description>Xenoflora que produz gosma comestível. Ninguém pergunta de onde vem o gosto.</description>
+    <baseCost>3000</baseCost>
+    <techLevel>Spacer</techLevel>
+    <tab>EQ_RTab_Cultivo</tab>
+    <researchViewX>6</researchViewX>
+    <researchViewY>0</researchViewY>
+    <prerequisites><li>EQ_R_Cultivo_Frutifera_3</li></prerequisites>
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <modExtensions>
+      <li Class="EcosDaQueda.ResearchEditorExt">
+        <unlocks><li>AB_SlimyTree</li><li>AB_LargeSlimyTree</li></unlocks>
+        <branch>EQ_Ramo_Bancada</branch>
+      </li>
+    </modExtensions>
+  </ResearchProjectDef>
+
+  <!-- Alimentícia &gt; Vegetal &gt; nível I -->
+  <ResearchProjectDef>
+    <defName>EQ_R_Cultivo_Vegetal_1</defName>
+    <label>Vegetal I: Horta de sobrevivência</label>
+    <description>Raízes, folhas e grãos que qualquer um planta e quase nada mata.</description>
+    <baseCost>300</baseCost>
+    <techLevel>Neolithic</techLevel>
+    <tab>EQ_RTab_Cultivo</tab>
+    <researchViewX>0</researchViewX>
+    <researchViewY>1</researchViewY>
+    <modExtensions>
+      <li Class="EcosDaQueda.ResearchEditorExt">
+        <unlocks><li>VCE_Carrot</li><li>VCE_Cabbage</li><li>VCE_Onion</li><li>VCE_Beans</li><li>VCE_Peas</li><li>VCE_Lettuce</li><li>VCE_Cassava</li><li>VCE_SweetPotato</li><li>VCE_Pumpkin</li><li>VCE_Garlic</li><li>VCE_Agave</li><li>VCE_Buckwheat</li><li>VCE_Oats</li><li>VCE_Sunflower</li><li>VCE_Peanut</li><li>VCE_Chickpea</li></unlocks>
+        <branch>EQ_Ramo_Bancada</branch>
+      </li>
+    </modExtensions>
+  </ResearchProjectDef>
+
+  <!-- Alimentícia &gt; Vegetal &gt; nível II -->
+  <ResearchProjectDef>
+    <defName>EQ_R_Cultivo_Vegetal_2</defName>
+    <label>Vegetal II: Horta temperada</label>
+    <description>Frutas de canteiro, grãos para farinha e temperos. Comida que alguém gostaria de comer.</description>
+    <baseCost>700</baseCost>
+    <techLevel>Medieval</techLevel>
+    <tab>EQ_RTab_Cultivo</tab>
+    <researchViewX>2</researchViewX>
+    <researchViewY>1</researchViewY>
+    <prerequisites><li>EQ_R_Cultivo_Vegetal_1</li></prerequisites>
+    <modExtensions>
+      <li Class="EcosDaQueda.ResearchEditorExt">
+        <unlocks><li>Plant_Strawberry</li><li>VCE_Blueberry</li><li>VCE_Tomato</li><li>VCE_Eggplant</li><li>VCE_BellPepper</li><li>VCE_Pepper</li><li>VCE_Okra</li><li>VCE_BrusselsSprout</li><li>VCE_Radish</li><li>VCE_Beet</li><li>VCE_Celery</li><li>VCE_Pineapple</li><li>VCE_Wheat</li><li>VCE_Barley</li><li>VCE_Sorghum</li><li>VBE_MintPlant</li><li>VCE_Allspice</li><li>VCE_Sugarcane</li></unlocks>
+        <branch>EQ_Ramo_Bancada</branch>
+      </li>
+    </modExtensions>
+  </ResearchProjectDef>
+
+  <!-- Alimentícia &gt; Vegetal &gt; nível III -->
+  <ResearchProjectDef>
+    <defName>EQ_R_Cultivo_Vegetal_3</defName>
+    <label>Vegetal III: Solo difícil</label>
+    <description>Areia, alagado e caverna: lavouras para os lugares onde a horta comum desiste.</description>
+    <baseCost>1500</baseCost>
+    <techLevel>Industrial</techLevel>
+    <tab>EQ_RTab_Cultivo</tab>
+    <researchViewX>4</researchViewX>
+    <researchViewY>1</researchViewY>
+    <prerequisites><li>EQ_R_Cultivo_Vegetal_2</li></prerequisites>
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <modExtensions>
+      <li Class="EcosDaQueda.ResearchEditorExt">
+        <unlocks><li>VCE_Rye</li><li>VCE_Melon</li><li>VCE_Cucumber</li><li>VCE_ButternutSquash</li><li>VCE_Lotus</li><li>VCE_Taro</li><li>VCE_WaterChestnut</li><li>VCE_Watercress</li><li>VCE_Moss</li></unlocks>
+        <branch>EQ_Ramo_Bancada</branch>
+      </li>
+    </modExtensions>
+  </ResearchProjectDef>
+
+  <!-- Alimentícia &gt; Vegetal &gt; nível IV -->
+  <ResearchProjectDef>
+    <defName>EQ_R_Cultivo_Vegetal_4</defName>
+    <label>Vegetal IV: Lavoura do colapso</label>
+    <description>Batata que gosta de veneno e plantas que dão carne. O progresso não perguntou se você queria.</description>
+    <baseCost>3000</baseCost>
+    <techLevel>Spacer</techLevel>
+    <tab>EQ_RTab_Cultivo</tab>
+    <researchViewX>6</researchViewX>
+    <researchViewY>1</researchViewY>
+    <prerequisites><li>EQ_R_Cultivo_Vegetal_3</li></prerequisites>
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <modExtensions>
+      <li Class="EcosDaQueda.ResearchEditorExt">
+        <unlocks><li>Plant_Toxipotato</li><li>AB_FleshTentacle</li><li>AB_FleshyTumor</li></unlocks>
+        <branch>EQ_Ramo_Bancada</branch>
+      </li>
+    </modExtensions>
+  </ResearchProjectDef>
+
+  <!-- Alimentícia &gt; Fúngica &gt; nível I -->
+  <ResearchProjectDef>
+    <defName>EQ_R_Cultivo_Fungica_1</defName>
+    <label>Fúngica I: Fungos de porão</label>
+    <description>Cogumelos que crescem no escuro, rápido e sem reclamar. Igual aos colonos.</description>
+    <baseCost>300</baseCost>
+    <techLevel>Neolithic</techLevel>
+    <tab>EQ_RTab_Cultivo</tab>
+    <researchViewX>0</researchViewX>
+    <researchViewY>2</researchViewY>
+    <prerequisites><li>EQ_R_Cultivo_Vegetal_1</li></prerequisites>
+    <modExtensions>
+      <li Class="EcosDaQueda.ResearchEditorExt">
+        <unlocks><li>Plant_Nutrifungus</li><li>VPE_Plant_Stinker</li></unlocks>
+        <branch>EQ_Ramo_Bancada</branch>
+      </li>
+    </modExtensions>
+  </ResearchProjectDef>
+
+  <!-- Alimentícia &gt; Fúngica &gt; nível II -->
+  <ResearchProjectDef>
+    <defName>EQ_R_Cultivo_Fungica_2</defName>
+    <label>Fúngica II: Fungos de caverna</label>
+    <description>Cogumelos que pedem caverna, perícia ou estômago forte.</description>
+    <baseCost>700</baseCost>
+    <techLevel>Medieval</techLevel>
+    <tab>EQ_RTab_Cultivo</tab>
+    <researchViewX>2</researchViewX>
+    <researchViewY>2</researchViewY>
+    <prerequisites><li>EQ_R_Cultivo_Fungica_1</li></prerequisites>
+    <modExtensions>
+      <li Class="EcosDaQueda.ResearchEditorExt">
+        <unlocks><li>Glowstool</li><li>VPE_Plant_Glowcap</li><li>VPE_Plant_Bileceps</li><li>VEE_Plant_MysticCap</li></unlocks>
+        <branch>EQ_Ramo_Bancada</branch>
+      </li>
+    </modExtensions>
+  </ResearchProjectDef>
+
+  <!-- Alimentícia &gt; Fúngica &gt; nível III -->
+  <ResearchProjectDef>
+    <defName>EQ_R_Cultivo_Fungica_3</defName>
+    <label>Fúngica III: Fungos alienígenas</label>
+    <description>Esporos de outros biomas. Comestíveis, na maioria das vezes.</description>
+    <baseCost>1500</baseCost>
+    <techLevel>Industrial</techLevel>
+    <tab>EQ_RTab_Cultivo</tab>
+    <researchViewX>4</researchViewX>
+    <researchViewY>2</researchViewY>
+    <prerequisites><li>EQ_R_Cultivo_Fungica_2</li></prerequisites>
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <modExtensions>
+      <li Class="EcosDaQueda.ResearchEditorExt">
+        <unlocks><li>AB_Glowstool</li><li>AB_Agarilux</li><li>AB_LilacBeacon</li><li>AB_WitchesOyster</li><li>AB_SlimyPholiota</li></unlocks>
+        <branch>EQ_Ramo_Bancada</branch>
+      </li>
+    </modExtensions>
+  </ResearchProjectDef>
+
+  <!-- Souvenir &gt; Souvenir &gt; nível I -->
+  <ResearchProjectDef>
+    <defName>EQ_R_Cultivo_Souvenir_1</defName>
+    <label>Souvenir I: Jardim selvagem</label>
+    <description>Grama e flores do mato. Ninguém come, mas alguém sorri.</description>
+    <baseCost>150</baseCost>
+    <techLevel>Neolithic</techLevel>
+    <tab>EQ_RTab_Cultivo</tab>
+    <researchViewX>0</researchViewX>
+    <researchViewY>3.5</researchViewY>
+    <modExtensions>
+      <li Class="EcosDaQueda.ResearchEditorExt">
+        <unlocks><li>Plant_Grass</li><li>VCE_Grass</li><li>VCE_TallGrass</li><li>Plant_Dandelion</li><li>Plant_Daylily</li><li>Plant_Rose</li><li>VEE_ButtercupFlower</li><li>VEE_ForgetMeNot</li></unlocks>
+        <branch>EQ_Ramo_Bancada</branch>
+      </li>
+    </modExtensions>
+  </ResearchProjectDef>
+
+  <!-- Souvenir &gt; Souvenir &gt; nível II -->
+  <ResearchProjectDef>
+    <defName>EQ_R_Cultivo_Souvenir_2</defName>
+    <label>Souvenir II: Canteiro de flores</label>
+    <description>Flores de canteiro e de jardim, para quem já tem tempo de enfeitar o fim do mundo.</description>
+    <baseCost>350</baseCost>
+    <techLevel>Medieval</techLevel>
+    <tab>EQ_RTab_Cultivo</tab>
+    <researchViewX>2</researchViewX>
+    <researchViewY>3.5</researchViewY>
+    <prerequisites><li>EQ_R_Cultivo_Souvenir_1</li></prerequisites>
+    <modExtensions>
+      <li Class="EcosDaQueda.ResearchEditorExt">
+        <unlocks><li>VEE_Plant_Bluebell</li><li>VEE_Plant_Gardenia</li><li>VEE_Plant_Gentian</li><li>VEE_Plant_Petunia</li><li>VCE_FragrantbloomRose</li><li>VCE_Hyacinth</li><li>VCE_Jasmine</li><li>VCE_Lavender</li><li>VCE_Lily</li><li>VCE_Orchid</li><li>VCE_Plumeria</li><li>VCE_Tulip</li><li>VCE_Vanilla</li><li>VCE_Violet</li><li>VCE_YlangYlang</li></unlocks>
+        <branch>EQ_Ramo_Bancada</branch>
+      </li>
+    </modExtensions>
+  </ResearchProjectDef>
+
+  <!-- Souvenir &gt; Souvenir &gt; nível III -->
+  <ResearchProjectDef>
+    <defName>EQ_R_Cultivo_Souvenir_3</defName>
+    <label>Souvenir III: Ornamentais raras</label>
+    <description>Bonsai, cogumelo vermelho e a flor que faz dormir. Status em vaso.</description>
+    <baseCost>750</baseCost>
+    <techLevel>Industrial</techLevel>
+    <tab>EQ_RTab_Cultivo</tab>
+    <researchViewX>4</researchViewX>
+    <researchViewY>3.5</researchViewY>
+    <prerequisites><li>EQ_R_Cultivo_Souvenir_2</li></prerequisites>
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <modExtensions>
+      <li Class="EcosDaQueda.ResearchEditorExt">
+        <unlocks><li>Plant_TreeBonsai</li><li>VPE_Plant_Redcap</li><li>VPE_Plant_Lullabloom</li></unlocks>
+        <branch>EQ_Ramo_Bancada</branch>
+      </li>
+    </modExtensions>
+  </ResearchProjectDef>
+
+  <!-- Souvenir &gt; Souvenir &gt; nível IV -->
+  <ResearchProjectDef>
+    <defName>EQ_R_Cultivo_Souvenir_4</defName>
+    <label>Souvenir IV: Xenoflores</label>
+    <description>Gama: flores de outro mundo que brilham. Lindas, inúteis e caríssimas.</description>
+    <baseCost>1500</baseCost>
+    <techLevel>Spacer</techLevel>
+    <tab>EQ_RTab_Cultivo</tab>
+    <researchViewX>6</researchViewX>
+    <researchViewY>3.5</researchViewY>
+    <prerequisites><li>EQ_R_Cultivo_Souvenir_3</li></prerequisites>
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <modExtensions>
+      <li Class="EcosDaQueda.ResearchEditorExt">
+        <unlocks><li>AG_Gamma</li><li>AG_DarkGamma</li><li>AB_GiantGamma</li></unlocks>
+        <branch>EQ_Ramo_Bancada</branch>
+      </li>
+    </modExtensions>
+  </ResearchProjectDef>
+
+  <!-- Recurso &gt; Tecido &gt; nível I -->
+  <ResearchProjectDef>
+    <defName>EQ_R_Cultivo_Tecido_1</defName>
+    <label>Tecido I: Algodão</label>
+    <description>Fibra simples para roupa simples.</description>
+    <baseCost>300</baseCost>
+    <techLevel>Neolithic</techLevel>
+    <tab>EQ_RTab_Cultivo</tab>
+    <researchViewX>0</researchViewX>
+    <researchViewY>5</researchViewY>
+    <modExtensions>
+      <li Class="EcosDaQueda.ResearchEditorExt">
+        <unlocks><li>Plant_Cotton</li></unlocks>
+        <branch>EQ_Ramo_Bancada</branch>
+      </li>
+    </modExtensions>
+  </ResearchProjectDef>
+
+  <!-- Recurso &gt; Tecido &gt; nível II -->
+  <ResearchProjectDef>
+    <defName>EQ_R_Cultivo_Tecido_2</defName>
+    <label>Tecido II: Micofio</label>
+    <description>Fio de cogumelo de caverna. Esquenta e cheira a porão.</description>
+    <baseCost>700</baseCost>
+    <techLevel>Medieval</techLevel>
+    <tab>EQ_RTab_Cultivo</tab>
+    <researchViewX>2</researchViewX>
+    <researchViewY>5</researchViewY>
+    <prerequisites><li>EQ_R_Cultivo_Tecido_1</li><li>EQ_R_Cultivo_Fungica_1</li></prerequisites>
+    <modExtensions>
+      <li Class="EcosDaQueda.ResearchEditorExt">
+        <unlocks><li>VPE_Plant_MycothreadMushroom</li></unlocks>
+        <branch>EQ_Ramo_Bancada</branch>
+      </li>
+    </modExtensions>
+  </ResearchProjectDef>
+
+  <!-- Recurso &gt; Tecido &gt; nível III -->
+  <ResearchProjectDef>
+    <defName>EQ_R_Cultivo_Tecido_3</defName>
+    <label>Tecido III: Fio do diabo</label>
+    <description>Fungo que vira o tecido mais resistente que se planta. O nome é merecido.</description>
+    <baseCost>1500</baseCost>
+    <techLevel>Industrial</techLevel>
+    <tab>EQ_RTab_Cultivo</tab>
+    <researchViewX>4</researchViewX>
+    <researchViewY>5</researchViewY>
+    <prerequisites><li>EQ_R_Cultivo_Tecido_2</li></prerequisites>
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <modExtensions>
+      <li Class="EcosDaQueda.ResearchEditorExt">
+        <unlocks><li>Plant_Devilstrand</li></unlocks>
+        <branch>EQ_Ramo_Bancada</branch>
+      </li>
+    </modExtensions>
+  </ResearchProjectDef>
+
+  <!-- Recurso &gt; Tecido &gt; nível IV -->
+  <ResearchProjectDef>
+    <defName>EQ_R_Cultivo_Tecido_4</defName>
+    <label>Tecido IV: Septimum</label>
+    <description>Planta que dá Ultima, tecido de luxo de outro mundo.</description>
+    <baseCost>3000</baseCost>
+    <techLevel>Spacer</techLevel>
+    <tab>EQ_RTab_Cultivo</tab>
+    <researchViewX>6</researchViewX>
+    <researchViewY>5</researchViewY>
+    <prerequisites><li>EQ_R_Cultivo_Tecido_3</li></prerequisites>
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <modExtensions>
+      <li Class="EcosDaQueda.ResearchEditorExt">
+        <unlocks><li>AG_Septimum</li></unlocks>
+        <branch>EQ_Ramo_Bancada</branch>
+      </li>
+    </modExtensions>
+  </ResearchProjectDef>
+
+  <!-- Recurso &gt; Madeira &gt; nível I -->
+  <ResearchProjectDef>
+    <defName>EQ_R_Cultivo_Madeira_1</defName>
+    <label>Madeira I: Silvicultura básica</label>
+    <description>Árvores e cactos comuns que crescem rápido. Lenha para o primeiro inverno.</description>
+    <baseCost>300</baseCost>
+    <techLevel>Neolithic</techLevel>
+    <tab>EQ_RTab_Cultivo</tab>
+    <researchViewX>0</researchViewX>
+    <researchViewY>6</researchViewY>
+    <modExtensions>
+      <li Class="EcosDaQueda.ResearchEditorExt">
+        <unlocks><li>Plant_TreeBamboo</li><li>Plant_TreePoplar</li><li>Plant_TreePine</li><li>Plant_TreeBirch</li><li>Plant_TreeWillow</li><li>Plant_TreePalm</li><li>Plant_TreeCecropia</li><li>Plant_SaguaroCactus</li><li>VEE_Plant_BarrelCactus</li><li>VEE_Plant_BeavertailCactus</li><li>VEE_Plant_ChollaCactus</li><li>VEE_Plant_HedgehogCactus</li><li>VEE_Plant_HoodiaCactus</li><li>VEE_Plant_OrganPipeCactus</li><li>VEE_Mangrove</li><li>VEE_Plant_ScrewPine</li></unlocks>
+        <branch>EQ_Ramo_Bancada</branch>
+      </li>
+    </modExtensions>
+  </ResearchProjectDef>
+
+  <!-- Recurso &gt; Madeira &gt; nível II -->
+  <ResearchProjectDef>
+    <defName>EQ_R_Cultivo_Madeira_2</defName>
+    <label>Madeira II: Madeiras nobres</label>
+    <description>Árvores lentas e grandes. Quem planta não costuma estar vivo para cortar.</description>
+    <baseCost>700</baseCost>
+    <techLevel>Medieval</techLevel>
+    <tab>EQ_RTab_Cultivo</tab>
+    <researchViewX>2</researchViewX>
+    <researchViewY>6</researchViewY>
+    <prerequisites><li>EQ_R_Cultivo_Madeira_1</li></prerequisites>
+    <modExtensions>
+      <li Class="EcosDaQueda.ResearchEditorExt">
+        <unlocks><li>Plant_TreeOak</li><li>Plant_TreeMaple</li><li>Plant_TreeCypress</li><li>Plant_TreeTeak</li><li>Plant_TreeDrago</li><li>VEE_Plant_TreeBirch_Auburn</li><li>VEE_Plant_TreeMaple_Auburn</li><li>VEE_Plant_TreeOak_Auburn</li><li>VEE_Plant_TreePoplar_Auburn</li><li>VEE_Plant_Laurel</li><li>VEE_Plant_GnarledPine</li><li>VEE_Plant_Firewood</li></unlocks>
+        <branch>EQ_Ramo_Bancada</branch>
+      </li>
+    </modExtensions>
+  </ResearchProjectDef>
+
+  <!-- Recurso &gt; Madeira &gt; nível III -->
+  <ResearchProjectDef>
+    <defName>EQ_R_Cultivo_Madeira_3</defName>
+    <label>Madeira III: Madeiras resistentes</label>
+    <description>Madeira de caverna, de hidroponia, de terra poluída e de biomas exóticos.</description>
+    <baseCost>1500</baseCost>
+    <techLevel>Industrial</techLevel>
+    <tab>EQ_RTab_Cultivo</tab>
+    <researchViewX>4</researchViewX>
+    <researchViewY>6</researchViewY>
+    <prerequisites><li>EQ_R_Cultivo_Madeira_2</li></prerequisites>
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <modExtensions>
+      <li Class="EcosDaQueda.ResearchEditorExt">
+        <unlocks><li>Plant_Timbershroom</li><li>VPE_Plant_Timbercap</li><li>Plant_Fibercorn</li><li>Plant_TreeGrayPine</li><li>Plant_PebbleCactus</li><li>Plant_RatPalm</li><li>Plant_Witchwood</li><li>Plant_TreeSnagroot</li><li>AB_FanPalm</li><li>AB_MangrovePalm</li><li>AB_MangroveTree</li><li>AB_JungleTree</li><li>AB_JungleTree_Polluted</li><li>AB_Plant_GinkgoTree</li><li>AB_Plant_TreeWillow</li><li>AB_Plant_TreeClover</li><li>AB_Plant_TreeLilypad</li><li>AB_EuphorbiaDesiccata</li><li>AB_GiantAgariTox</li><li>AB_GiantAgarilux</li><li>AB_RecurvedStropharia</li><li>AB_ArbuscularMycorrhiza</li><li>AB_GiantStikehr</li><li>AB_PollutedStikehr</li></unlocks>
+        <branch>EQ_Ramo_Bancada</branch>
+      </li>
+    </modExtensions>
+  </ResearchProjectDef>
+
+  <!-- Recurso &gt; Madeira &gt; nível IV -->
+  <ResearchProjectDef>
+    <defName>EQ_R_Cultivo_Madeira_4</defName>
+    <label>Madeira IV: Xenoflorestas</label>
+    <description>Árvores de anima, de carne, de máquina e de outro mundo. A madeira é madeira; o resto é melhor não olhar.</description>
+    <baseCost>3000</baseCost>
+    <techLevel>Spacer</techLevel>
+    <tab>EQ_RTab_Cultivo</tab>
+    <researchViewX>6</researchViewX>
+    <researchViewY>6</researchViewY>
+    <prerequisites><li>EQ_R_Cultivo_Madeira_3</li></prerequisites>
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <modExtensions>
+      <li Class="EcosDaQueda.ResearchEditorExt">
+        <unlocks><li>VEE_Plant_FakeAnimaTree</li><li>VEE_Plant_YoungAnimaTree</li><li>VEE_Plant_AnimaHusk</li><li>AB_Plant_AnimaCactus_Small</li><li>AB_Plant_AnimaCactus_Medium</li><li>AB_Plant_AnimaCactus_Grand</li><li>AB_Plant_AnimaPalm</li><li>AB_Plant_GiantGauTree</li><li>AB_Plant_MauvebloomTree</li><li>AB_LuminescentTree</li><li>AB_TechnoTree</li><li>AB_MechCorruption</li><li>AB_MechNode</li><li>AB_SessileMechanoid</li><li>AB_FleshTree</li><li>AB_AlienTree</li><li>AB_AlienTree_Polluted</li><li>AB_GlobularPlant_Polluted</li><li>AB_Plant_OcularCactus_Small</li><li>AB_Plant_OcularCactus_Large</li><li>AB_GoldenCubeTree</li><li>AB_DessertTree</li><li>AB_ChocolateTree</li><li>AB_DeadBowerTree</li><li>AB_CalcifiedRemnant</li><li>AB_FirevineTree</li><li>AB_GiantSunflower</li><li>AB_GiantTulip</li><li>AB_GiantPaleRose</li><li>AB_GiantSeptimum</li><li>AB_GiantToxicFlower</li><li>AB_GiantToxicFlower_Odyssey</li><li>AB_GiantToxicHornbloom</li><li>AB_ToxiBulb</li><li>AB_ToxicGamma</li></unlocks>
+        <branch>EQ_Ramo_Bancada</branch>
+      </li>
+    </modExtensions>
+  </ResearchProjectDef>
+
+  <!-- Recurso &gt; Medicamento &gt; nível I -->
+  <ResearchProjectDef>
+    <defName>EQ_R_Cultivo_Medicamento_1</defName>
+    <label>Medicamento I: Ervas de cura</label>
+    <description>Raiz da cura e as folhas, pétalas e flores que viram poção e remédio caseiro. Funciona, às vezes.</description>
+    <baseCost>300</baseCost>
+    <techLevel>Neolithic</techLevel>
+    <tab>EQ_RTab_Cultivo</tab>
+    <researchViewX>0</researchViewX>
+    <researchViewY>7</researchViewY>
+    <modExtensions>
+      <li Class="EcosDaQueda.ResearchEditorExt">
+        <unlocks><li>Plant_Healroot</li><li>Plant_Alocasia</li><li>Plant_Astragalus</li><li>Plant_Clivia</li><li>Plant_Rafflesia</li></unlocks>
+        <branch>EQ_Ramo_Bancada</branch>
+      </li>
+    </modExtensions>
+  </ResearchProjectDef>
+
+  <!-- Recurso &gt; Medicamento &gt; nível II -->
+  <ResearchProjectDef>
+    <defName>EQ_R_Cultivo_Medicamento_2</defName>
+    <label>Medicamento II: Trufa-cura</label>
+    <description>Fungo de caverna que já sai da terra como remédio.</description>
+    <baseCost>700</baseCost>
+    <techLevel>Medieval</techLevel>
+    <tab>EQ_RTab_Cultivo</tab>
+    <researchViewX>2</researchViewX>
+    <researchViewY>7</researchViewY>
+    <prerequisites><li>EQ_R_Cultivo_Medicamento_1</li></prerequisites>
+    <modExtensions>
+      <li Class="EcosDaQueda.ResearchEditorExt">
+        <unlocks><li>VPE_Plant_Healtruffle</li></unlocks>
+        <branch>EQ_Ramo_Bancada</branch>
+      </li>
+    </modExtensions>
+  </ResearchProjectDef>
+
+  <!-- Recurso &gt; Medicamento &gt; nível III -->
+  <ResearchProjectDef>
+    <defName>EQ_R_Cultivo_Medicamento_3</defName>
+    <label>Medicamento III: Farmácia que brota</label>
+    <description>Babosa e cogumelo-cura: remédio de verdade, para quem tem areia, caverna e mão firme.</description>
+    <baseCost>1500</baseCost>
+    <techLevel>Industrial</techLevel>
+    <tab>EQ_RTab_Cultivo</tab>
+    <researchViewX>4</researchViewX>
+    <researchViewY>7</researchViewY>
+    <prerequisites><li>EQ_R_Cultivo_Medicamento_2</li></prerequisites>
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <modExtensions>
+      <li Class="EcosDaQueda.ResearchEditorExt">
+        <unlocks><li>VCE_Healshroom</li><li>VCE_AloeVera</li></unlocks>
+        <branch>EQ_Ramo_Bancada</branch>
+      </li>
+    </modExtensions>
+  </ResearchProjectDef>
+
+  <!-- Recurso &gt; Drogas &gt; nível I -->
+  <ResearchProjectDef>
+    <defName>EQ_R_Cultivo_Drogas_1</defName>
+    <label>Drogas I: Vícios de quintal</label>
+    <description>Lúpulo, folha de fumo e chá. O primeiro passo de toda economia.</description>
+    <baseCost>300</baseCost>
+    <techLevel>Neolithic</techLevel>
+    <tab>EQ_RTab_Cultivo</tab>
+    <researchViewX>0</researchViewX>
+    <researchViewY>8</researchViewY>
+    <modExtensions>
+      <li Class="EcosDaQueda.ResearchEditorExt">
+        <unlocks><li>Plant_Hops</li><li>Plant_Smokeleaf</li><li>VBE_Plant_Tea</li></unlocks>
+        <branch>EQ_Ramo_Bancada</branch>
+      </li>
+    </modExtensions>
+  </ResearchProjectDef>
+
+  <!-- Recurso &gt; Drogas &gt; nível II -->
+  <ResearchProjectDef>
+    <defName>EQ_R_Cultivo_Drogas_2</defName>
+    <label>Drogas II: Lavoura de exportação</label>
+    <description>Café, tabaco e psicoide. Rende mais que comida, e todo mundo sabe disso.</description>
+    <baseCost>700</baseCost>
+    <techLevel>Medieval</techLevel>
+    <tab>EQ_RTab_Cultivo</tab>
+    <researchViewX>2</researchViewX>
+    <researchViewY>8</researchViewY>
+    <prerequisites><li>EQ_R_Cultivo_Drogas_1</li></prerequisites>
+    <modExtensions>
+      <li Class="EcosDaQueda.ResearchEditorExt">
+        <unlocks><li>VBE_Plant_Coffee</li><li>VBE_Plant_Tobacco</li><li>Plant_Psychoid</li></unlocks>
+        <branch>EQ_Ramo_Bancada</branch>
+      </li>
+    </modExtensions>
+  </ResearchProjectDef>
+
+  <!-- Recurso &gt; Drogas &gt; nível III -->
+  <ResearchProjectDef>
+    <defName>EQ_R_Cultivo_Drogas_3</defName>
+    <label>Drogas III: Fungos da alegria</label>
+    <description>Cogumelos que mudam o humor e, de vez em quando, o resto.</description>
+    <baseCost>1500</baseCost>
+    <techLevel>Industrial</techLevel>
+    <tab>EQ_RTab_Cultivo</tab>
+    <researchViewX>4</researchViewX>
+    <researchViewY>8</researchViewY>
+    <prerequisites><li>EQ_R_Cultivo_Drogas_2</li></prerequisites>
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <modExtensions>
+      <li Class="EcosDaQueda.ResearchEditorExt">
+        <unlocks><li>VPE_Plant_Blisscap</li><li>AB_AgaricusDomeCap</li></unlocks>
+        <branch>EQ_Ramo_Bancada</branch>
+      </li>
+    </modExtensions>
+  </ResearchProjectDef>
+
+  <!-- Recurso &gt; Outros &gt; nível I -->
+  <ResearchProjectDef>
+    <defName>EQ_R_Cultivo_Outros_1</defName>
+    <label>Outros I: Tinturas</label>
+    <description>Tintória: cor para um mundo cinza.</description>
+    <baseCost>300</baseCost>
+    <techLevel>Neolithic</techLevel>
+    <tab>EQ_RTab_Cultivo</tab>
+    <researchViewX>0</researchViewX>
+    <researchViewY>9</researchViewY>
+    <modExtensions>
+      <li Class="EcosDaQueda.ResearchEditorExt">
+        <unlocks><li>Plant_Tinctoria</li></unlocks>
+        <branch>EQ_Ramo_Bancada</branch>
+      </li>
+    </modExtensions>
+  </ResearchProjectDef>
+
+  <!-- Recurso &gt; Outros &gt; nível II -->
+  <ResearchProjectDef>
+    <defName>EQ_R_Cultivo_Outros_2</defName>
+    <label>Outros II: Óleo e corante</label>
+    <description>Canola para óleo e cogumelo-tintura para quem não tem sol.</description>
+    <baseCost>700</baseCost>
+    <techLevel>Medieval</techLevel>
+    <tab>EQ_RTab_Cultivo</tab>
+    <researchViewX>2</researchViewX>
+    <researchViewY>9</researchViewY>
+    <prerequisites><li>EQ_R_Cultivo_Outros_1</li></prerequisites>
+    <modExtensions>
+      <li Class="EcosDaQueda.ResearchEditorExt">
+        <unlocks><li>VCE_Canola</li><li>VCE_Tinctshroom</li></unlocks>
+        <branch>EQ_Ramo_Bancada</branch>
+      </li>
+    </modExtensions>
+  </ResearchProjectDef>
+
+  <!-- Recurso &gt; Outros &gt; nível III -->
+  <ResearchProjectDef>
+    <defName>EQ_R_Cultivo_Outros_3</defName>
+    <label>Outros III: Plantas utilitárias</label>
+    <description>Cogumelo que apaga fogo, solta gás, dá choque ou esquenta, dardo venenoso e bulbo de combustível.</description>
+    <baseCost>1500</baseCost>
+    <techLevel>Industrial</techLevel>
+    <tab>EQ_RTab_Cultivo</tab>
+    <researchViewX>4</researchViewX>
+    <researchViewY>9</researchViewY>
+    <prerequisites><li>EQ_R_Cultivo_Outros_2</li></prerequisites>
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <modExtensions>
+      <li Class="EcosDaQueda.ResearchEditorExt">
+        <unlocks><li>PlantBlazebulb</li><li>VPE_Plant_Foampuffer</li><li>VPE_Plant_Toxpuff</li><li>VPE_Plant_Zapcap</li><li>VPE_Plant_Thermoregulus</li><li>AB_DribblingCap</li></unlocks>
+        <branch>EQ_Ramo_Bancada</branch>
+      </li>
+    </modExtensions>
+  </ResearchProjectDef>
+
+  <!-- Recurso &gt; Outros &gt; nível IV -->
+  <ResearchProjectDef>
+    <defName>EQ_R_Cultivo_Outros_4</defName>
+    <label>Outros IV: Minerais vivos</label>
+    <description>Plantas que dão resina, metal e pedra. A geologia desistiu de ser lenta.</description>
+    <baseCost>3000</baseCost>
+    <techLevel>Spacer</techLevel>
+    <tab>EQ_RTab_Cultivo</tab>
+    <researchViewX>6</researchViewX>
+    <researchViewY>9</researchViewY>
+    <prerequisites><li>EQ_R_Cultivo_Outros_3</li></prerequisites>
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <modExtensions>
+      <li Class="EcosDaQueda.ResearchEditorExt">
+        <unlocks><li>AB_KeeningCordax</li><li>AB_LivingAlcyonite</li><li>AB_Tooth</li></unlocks>
+        <branch>EQ_Ramo_Bancada</branch>
+      </li>
+    </modExtensions>
+  </ResearchProjectDef>
+
 </Defs>
