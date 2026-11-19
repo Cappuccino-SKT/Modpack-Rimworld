@@ -57,6 +57,12 @@ namespace EcosDaQueda.DebugTools
             return c == null ? "sem componente" : c.Report();
         }
 
+        /// <summary>F3: rendimento do território por facção e cidade (o que um dia entrega) e o estoque da cidade.</summary>
+        public static string Yield() => EQTerritoryYield.Report();
+
+        /// <summary>F3: entrega um dia de rendimento agora.</summary>
+        public static string YieldNow() => "cidades com rendimento=" + EQTerritoryYield.ApplyDaily();
+
         /// <summary>F2: avança o crescimento n dias (um passo por dia, com as cidades novas), sem passar o tempo do jogo.</summary>
         public static string FrontierSkip(int days)
         {

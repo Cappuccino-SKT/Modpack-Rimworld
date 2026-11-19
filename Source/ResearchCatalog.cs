@@ -89,7 +89,7 @@ namespace EcosDaQueda.DebugTools
                 {
                     if (t.plant != null && t.plant.Sowable)
                         rows.Add(Row(t, "plant", t.graphicData?.texPath, t.uiIconPath, t.graphicData?.graphicClass?.Name, t.graphicData?.color ?? UnityEngine.Color.white,
-                            "Planta", t.plant.sowResearchPrerequisites ?? new List<ResearchProjectDef>(), t.techLevel, null));
+                            "Planta", t.plant.sowResearchPrerequisites ?? new List<ResearchProjectDef>(), t.techLevel, null, PlantInfo(t)));
                     else if (t.designationCategory != null)
                         rows.Add(Row(t, "building", t.graphicData?.texPath, t.uiIconPath, t.graphicData?.graphicClass?.Name, t.graphicData?.color ?? UnityEngine.Color.white,
                             t.designationCategory.LabelCap.ToString(), t.researchPrerequisites ?? new List<ResearchProjectDef>(), t.techLevel, null));
@@ -121,6 +121,39 @@ namespace EcosDaQueda.DebugTools
             sb.Append(PL("factionTags", tags)).Append("\n}");
         }
 
+        /// <summary>Dados de cultivo de uma planta semeável (para classificar no editor de pesquisa).</summary>
+        private static string PlantInfo(ThingDef t)
+        {
+            PlantProperties pp = t.plant;
+            ThingDef h = pp.harvestedThingDef;
+            var o = new List<string>
+            {
+                P("harvest", h?.defName ?? ""), P("harvestLabel", h?.LabelCap.ToString() ?? ""), P("yield", pp.harvestYield),
+                P("days", pp.growDays), P("tree", pp.IsTree ? 1 : 0), P("purpose", pp.purpose.ToString()),
+                P("fert", pp.fertilityMin), P("skill", pp.sowMinSkill), P("glow", pp.growMinGlow), P("cave", pp.cavePlant ? 1 : 0),
+                PL("sowTags", pp.sowTags ?? new List<string>()), P("value", h?.BaseMarketValue ?? 0f),
+            };
+            if (h != null)
+            {
+                o.Add(PL("hcats", (h.thingCategories ?? new List<ThingCategoryDef>()).Select(c => c.defName)));
+                o.Add(PL("stuff", (h.stuffProps?.categories ?? new List<StuffCategoryDef>()).Select(c => c.defName)));
+                o.Add(P("food", h.ingestible != null ? h.ingestible.foodType.ToString() : ""));
+                o.Add(P("pref", h.ingestible != null ? h.ingestible.preferability.ToString() : ""));
+                o.Add(P("drug", h.IsDrug ? 1 : 0));
+                o.Add(P("medicine", h.IsMedicine ? 1 : 0));
+                ThingDefCountClass bp = h.butcherProducts?.FirstOrDefault();
+                if (bp != null && bp.thingDef == t.blueprintDef) o.Add(P("seedYield", bp.count));
+                o.Add(P("ingestible", h.IsIngestible ? 1 : 0));
+            }
+            // semente do SeedsPlease (a planta só fica disponível com a semente no mapa: blueprintDef = semente)
+            if (t.blueprintDef != null && t.blueprintDef.modExtensions?.Any(e => e.GetType().Name == "Seed") == true)
+            {
+                o.Add(P("seed", t.blueprintDef.defName));
+                o.Add(P("seedLabel", t.blueprintDef.LabelCap.ToString()));
+            }
+            return "\"plant\":{" + string.Join(",", o) + "}";
+        }
+
         /// <summary>Comando "pesquisa": confere as pesquisas do editor carregadas (cada desbloqueio exige o projeto, aba e ramo)
         /// e aplica um projeto de teste criado só na memória a uma construção, planta, piso, item e cirurgia vanilla.</summary>
         public static string Test()
@@ -136,6 +169,38 @@ namespace EcosDaQueda.DebugTools
                 sb.AppendLine("  " + r.defName + " [" + r.LabelCap + "] aba " + r.tab?.defName + ", ramo " + EQResearch.Branch(r)?.defName
                     + ", pos " + r.ResearchViewX + "/" + r.ResearchViewY + ", pré: " + string.Join(",", (r.prerequisites ?? new List<ResearchProjectDef>()).Select(p => p.defName))
                     + " | desbloqueia " + ext.unlocks.Count + (falta.Count > 0 ? " | NÃO APLICADO: " + string.Join(", ", falta) : ""));
+            }
+            // sementes (SeedsPlease): cada planta com semente tem receita própria que exige o projeto e aparece na tela
+            RecipeDef gen = DefDatabase<RecipeDef>.GetNamedSilentFail("ExtractSeeds");
+            if (gen != null)
+            {
+                int ext = 0, prop = 0, semFalha = 0;
+                foreach (ResearchProjectDef r in DefDatabase<ResearchProjectDef>.AllDefsListForReading)
+                {
+                    ResearchEditorExt x = r.GetModExtension<ResearchEditorExt>();
+                    if (x == null || !x.seeds) continue;
+                    foreach (string u in x.unlocks)
+                    {
+                        ThingDef plant = DefDatabase<ThingDef>.GetNamedSilentFail(u);
+                        ThingDef seed = plant?.blueprintDef;
+                        if (plant?.plant == null || !EQSeedRecipes.IsSeed(seed)) continue;
+                        RecipeDef re = DefDatabase<RecipeDef>.GetNamedSilentFail("EQ_ExtrairSemente_" + u);
+                        RecipeDef rp = DefDatabase<RecipeDef>.GetNamedSilentFail("EQ_PropagarSemente_" + u);
+                        RecipeDef rec = re ?? rp;
+                        string erro = null;
+                        if (rec == null) erro = "sem receita";
+                        else if (rec.researchPrerequisites?.Contains(r) != true) erro = "receita não exige " + r.defName;
+                        else if (!r.UnlockedDefs.Contains(seed)) erro = "semente não aparece na tela da pesquisa";
+                        else if (rec.AllRecipeUsers.Count() == 0) erro = "receita sem bancada";
+                        else if (re != null && gen.fixedIngredientFilter.Allows(plant.plant.harvestedThingDef)) erro = "colheita ainda na receita geral";
+                        if (erro != null) { semFalha++; problemas++; sb.AppendLine("  semente " + u + ": " + erro); }
+                        else if (re != null) ext++; else prop++;
+                    }
+                }
+                sb.AppendLine("  sementes: " + ext + " por extração, " + prop + " por propagação, " + semFalha + " com problema; receitas criadas " + EQSeedRecipes.Created.Count);
+                RecipeDef amostra = EQSeedRecipes.Created.FirstOrDefault();
+                if (amostra != null) sb.AppendLine("  ex.: " + amostra.defName + " [" + amostra.label + "] " + amostra.ingredients[0].Summary + " -> "
+                    + amostra.products[0].Label + " em " + string.Join(",", amostra.AllRecipeUsers.Select(t => t.defName)));
             }
             var proj = new ResearchProjectDef { defName = "EQ_R_TesteMemoria", label = "teste", baseCost = 100, techLevel = TechLevel.Industrial };
             var e = new ResearchEditorExt { unlocks = new List<string> { "Bed", "MealSimple", "Plant_Rice", "WoodPlankFloor", "Anesthetize", "EQ_NaoExiste" } };

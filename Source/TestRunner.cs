@@ -462,6 +462,8 @@ namespace EcosDaQueda.DebugTools
                 case "worldinfo": return EQMundoDebug.Info();
                 case "territory": return EQMundoDebug.Territory();
                 case "frontier": return EQMundoDebug.Frontier();
+                case "yield": return EQMundoDebug.Yield();
+                case "yieldnow": return EQMundoDebug.YieldNow();
                 case "frontierskip": return EQMundoDebug.FrontierSkip(int.Parse(Arg(1)));
                 case "worldfixed": return EQMundoDebug.Fixed();
                 case "worlddump": return EQWorldConverter.Dump(Arg(1));
