@@ -50,7 +50,7 @@ powershell -ExecutionPolicy Bypass -File EcosDaQueda-Dev/scripts/run-test.ps1 -S
 - O perfil é sempre o `full` (o lean foi aposentado; `-Profile full` é o padrão). Regressão inteira: `EcosDaQueda-Dev/scripts/regress.ps1`.
 - `-Build` compila os 3 projetos C# antes. `-Profile full -Save <nome>` usa todos os mods e um save do usuário. `-Window` mostra a janela.
 - Roteiros em `EcosDaQueda-Dev/tests/*.txt`; relatórios em `EcosDaQueda-Dev/tests/out/`. Comandos: ver `EcosDaQueda-Dev/TESTES.md`.
-- O RimWorld precisa estar fechado. Ao criar um sistema novo, adicione comandos ao `EQDebug.cs`/`TestRunner.cs` e um roteiro de teste.
+- O jogo normal do usuário pode ficar aberto (ex.: Character Creator): o teste usa perfil próprio e só recusa se outro teste usa o mesmo perfil (`-Slot n` para outro). Ao criar um sistema novo, adicione comandos ao `EQDebug.cs`/`TestRunner.cs` e um roteiro de teste.
 - O mesmo mod põe ações no menu de debug do jogo (modo desenvolvedor), categoria "Ecos da Queda".
 
 ## Testes (resumo)

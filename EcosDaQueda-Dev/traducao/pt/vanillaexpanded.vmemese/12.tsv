@@ -1,0 +1,302 @@
+## DefInjected/PreceptDef/Precepts_LeatherApparel.xml
+VME_LeatherApparel_Abhorrent.description	Matar um animal para usar sua pele como roupa é cruel e desumano.
+VME_LeatherApparel_Disliked.label	malvisto
+VME_LeatherApparel_Disliked.description	Usar couro animal é algo a evitar.
+## DefInjected/PreceptDef/Precepts_Lighting.xml
+VME_Darklight_NormalPreferred.label	normal preferida
+VME_Darklight_NormalPreferred.description	A luz negra é uma imitação barata e antinatural da luz verdadeira e deve ser evitada.
+VME_DarknessCombat_Despised.description	Além de ser difícil lutar no escuro, nenhum sangue deve ser derramado na escuridão.
+## DefInjected/PreceptDef/Precepts_MeatEating.xml
+VME_MeatEating_Abhorrent_Strict.label	abominável (rigoroso)
+VME_MeatEating_Abhorrent_Strict.description	Comer carne de qualquer tipo é profundamente maligno. Consumir qualquer produto animal é imoral.
+## DefInjected/PreceptDef/Precepts_Mechanoids.xml
+VME_Mechanoids_Exalted.description	Destruir um mecanoide é um ato tolo e sem visão.
+VME_Mechanoids_Despised.description	Os mecanoides são uma abominação, uma lembrança da soberba humana.
+## DefInjected/PreceptDef/Precepts_Meditation.xml
+VME_Meditation_Exquisite.label	primorosa
+VME_Meditation_Exquisite.description	Ouça, sinta, pense… Além da meditação, entre em transe e se entregue à sua própria alma e às almas à sua volta.
+## DefInjected/PreceptDef/Precepts_Mood.xml
+VME_Mood_DictatedByStars.label	ditado pelas estrelas
+VME_Mood_DictatedByStars.description	As estrelas nos guiarão.\n\n<color=#E5E54C>Efeito no jogo:</color>\n - Depois de cada ritual de adivinhar as estrelas, eclipse solar ou aurora, o humor muda aleatoriamente entre -30 e +30.
+VME_Mood_Shared.label	compartilhado
+VME_Mood_Shared.description	A empatia é uma qualidade que todos devemos buscar. Carregamos os fardos uns dos outros, e também as alegrias.\n\n<color=#E5E54C>Efeito no jogo:</color>\n - Se o humor médio da colônia for feliz, os colonos recebem um pensamento positivo, e vice-versa.
+VME_Mood_LowExpectations.label	desanimado
+VME_Mood_LowExpectations.description	Estamos presos num planeta perdido e esquecido da Orla. Dificilmente as coisas podem piorar.
+VME_Mood_Normal.description	Tudo bem, obrigado.
+VME_Mood_HighExpectations.label	animado
+VME_Mood_HighExpectations.description	O mundo inteiro é nosso para explorar e aproveitar.
+## DefInjected/PreceptDef/Precepts_OrganUse.xml
+VME_OrganUse_PostMortem.label	post mortem
+VME_OrganUse_PostMortem.description	Órgãos nunca devem ser desperdiçados.\n\n<color=#E5E54C>Efeito no jogo:</color>\n - Com o cargo de carnemoldador, a colônia pode retalhar corpos humanoides frescos para obter órgãos carnemoldados.
+## DefInjected/PreceptDef/Precepts_Pain.xml
+VME_Pain_DontCare.description	A dor está só na sua cabeça; dá para aguentar.
+## DefInjected/PreceptDef/Precepts_PermanentBases.xml
+VME_PermanentBases_Despised.description	Nosso lar é só temporário; é importante continuar em movimento.\n\n<color=#E5E54C>Atributos:</color>\n - Rendimento agrícola: -10%.\n - Rendimento da coleta: +40%.\n\n<color=#E5E54C>Efeito no jogo:</color>\n - Este preceito só funciona com o sistema de mundo do jogo base. Veículos, por exemplo, não interagem com ele. Usar outros mods, como o Caravan Adventure, para sair do mapa também não funciona. É preciso usar os sistemas do jogo base.
+VME_PermanentBases_Desired.description	Nosso lar deve ter muitos cômodos e instalações, e nunca devemos abandoná-lo.\n\n<color=#E5E54C>Efeito no jogo:</color>\n - Os colonos ganham penalidades ou bônus de humor conforme a quantidade de construções no mapa. "Construção" é uma estrutura completamente fechada com pelo menos 25 células.
+## DefInjected/PreceptDef/Precepts_PermitCooldown.xml
+VME_PermitCooldown_Lowered.label	reduzida
+VME_PermitCooldown_Lowered.description	A realeza exige ação rápida; por isso a recarga das permissões diminui, permitindo responder mais depressa aos caprichos sempre mutáveis dos desejos nobres.
+VME_PermitCooldown_Increased.description	A paciência é uma virtude, e agora uma necessidade, pois a recarga das permissões dobra. O tempo se arrasta enquanto a corte espera a próxima invocação do privilégio real.
+## DefInjected/PreceptDef/Precepts_PermitHonorCost.xml
+VME_PermitHonorCost_Halved.label	pela metade
+VME_PermitHonorCost_Halved.description	Os honrados têm o privilégio de chamar os aliados com mais frequência; seus pedidos de ajuda são atendidos com um aceno e metade do custo, aliviando o fardo da liderança.
+VME_PermitHonorCost_Doubled.label	dobrado
+VME_PermitHonorCost_Doubled.description	Cada pedido de ajuda cobra um preço pesado, o dobro da honra de sempre. Esse é o preço da urgência, um custo a pagar só na necessidade mais extrema.
+## DefInjected/PreceptDef/Precepts_Power.xml
+VME_Power_Exalted.description	O poder deve sempre ser buscado.
+VME_Power_Desired.description	Buscar o poder é um desejo compreensível.
+VME_Power_Preferred.description	É preferível estar numa posição de poder.
+## DefInjected/PreceptDef/Precepts_Proselytizing.xml
+VME_Proselytizing_Forceful.description	As pessoas devem ser forçadas a seguir nossas crenças.
+VME_Proselytizing_Never.label	nunca
+VME_Proselytizing_Never.description	Nunca devemos tentar converter os outros.\n\n<color=#E5E54C>Efeito no jogo:</color>\n - Desativa os rituais de conversão e a habilidade converter do moralista.
+## DefInjected/PreceptDef/Precepts_PsychicSensitivity.xml
+VME_PsychicSensitivity_Lowered.label	reduzida
+VME_PsychicSensitivity_Lowered.description	Feche a mente a todo pensamento que não seja seu. Que sua mente seja uma verdadeira fortaleza de constituição mental inabalável.
+VME_PsychicSensitivity_Heightened.label	aumentada
+VME_PsychicSensitivity_Heightened.description	Estenda a mente até abarcar o mundo inteiro. Que sua mente seja uma arma ágil de retribuição psíquica.
+## DefInjected/PreceptDef/Precepts_PsyfocusGain.xml
+VME_PsyfocusGain_Doubled.label	dobrado
+VME_PsyfocusGain_Doubled.description	Induzindo o transe em si mesmo e alcançando a erudição, você se livra das amarras do físico e descobre que manipular o mundo é tão trivial quanto respirar.
+## DefInjected/PreceptDef/Precepts_Raiders.xml
+VME_Raiding_Honorable.description	Força e honra podem ser conquistadas atacando outros assentamentos.
+VME_Raiding_Abhorrent.description	É vergonhoso atacar ou tomar algo de quem é mais fraco que você.\n\n<color=#E5E54C>Efeito no jogo:</color>\n - Qualquer ataque ativa este preceito. Até os de foco defensivo, como contra causadores de problemas. Sim, é duro.
+## DefInjected/PreceptDef/Precepts_Ranching.xml
+VME_Ranching_Disliked.label	malvista
+VME_Ranching_Disliked.description	Manter animais presos para consumir sua carne e seus recursos é profundamente imoral e deve ser evitado a todo custo. Cultivar nossas próprias frutas e legumes é bem mais nobre.
+VME_Ranching_Nomadic.description	Um nômade não é nada sem sua montaria fiel. Criar laços com os animais de carga faz com que viajar por este mundo nunca seja solitário.
+## DefInjected/PreceptDef/Precepts_Recreation.xml
+VME_Recreation_Loved.description	A recreação deve ser aproveitada ao máximo.\n\n<color=#E5E54C>Atributos:</color>\n - Os colonos ganham recreação 50% mais rápido usando qualquer estrutura de recreação.\n - Aumenta em 50% o bônus de humor dos colonos depois de uma festa.
+VME_Recreation_Normal.description	A recreação é uma parte importante da vida.
+VME_Recreation_Disapproved.description	A recreação é perda de tempo.\n\n<color=#E5E54C>Atributos:</color>\n - Os colonos recebem -5 de humor por meio dia depois de uma atividade de recreação.
+## DefInjected/PreceptDef/Precepts_Recruiting.xml
+VFEA_Recruiting_Forbidden.description	É errado aceitar qualquer forasteiro em nossas fileiras.
+VFEA_BeingRecruited_Forbidden.description	Nunca devemos nos deixar recrutar por outra facção.
+## DefInjected/PreceptDef/Precepts_Ritual_Bonfire.xml
+VME_BonfirePrecept.label	fogueira
+VME_BonfirePrecept.description	Uma enorme fogueira ritual.
+## DefInjected/PreceptDef/Precepts_Ritual_CeremonialSuicide.xml
+VME_CeremonialSuicidePrecept.label	suicídio cerimonial
+VME_CeremonialSuicidePrecept.description	Um suicídio cerimonial.
+## DefInjected/PreceptDef/Precepts_Ritual_DivineTheStars.xml
+VME_DivineStarsPrecept.label	adivinhar as estrelas
+VME_DivineStarsPrecept.description	Um ritual de adivinhação.
+## DefInjected/PreceptDef/Precepts_Ritual_Incantation.xml
+VME_IncantationPrecept.label	encantamento
+VME_IncantationPrecept.description	Um encantamento. Um cântico sombrio para aplacar as entidades sobrenaturais que desafiam todas as leis naturais.
+## DefInjected/PreceptDef/Precepts_Ritual_InsectoidHymn.xml
+VME_InsectoidHymnPrecept.label	hino insetoide
+VME_InsectoidHymnPrecept.description	Um hino insetoide. O ritual zera a recarga da habilidade "construir ninho" do pastor de insetoides. Se o ritual tiver o melhor resultado possível, os insetoides que estiverem atacando a colônia fogem. Menos a Colmeia Negra, que quer seu sangue.
+## DefInjected/PreceptDef/Precepts_Ritual_LeaderConversion.xml
+VME_LeaderConversion.label	ritual de conversão (líder)
+VME_LeaderConversion.description	O líder tenta persuadir alguém a aderir à sua ideologia.
+## DefInjected/PreceptDef/Precepts_Ritual_LeadershipChallenge.xml
+VME_LeadershipChallengePrecept.label	desafio pela liderança
+VME_LeadershipChallengePrecept.description	Um desafio pela liderança.
+## DefInjected/PreceptDef/Precepts_Ritual_Orgy.xml
+VME_OrgyPrecept.label	orgia
+VME_OrgyPrecept.description	Uma orgia. Os participantes ignoram qualquer preferência sexual enquanto o evento durar.
+## DefInjected/PreceptDef/Precepts_Ritual_PlagueFestival.xml
+VME_PlagueFestivalPrecept.label	festival da peste
+VME_PlagueFestivalPrecept.description	Um festival da peste.
+## DefInjected/PreceptDef/Precepts_Ritual_SlaveEmancipation.xml
+VME_SlaveEmancipationPrecept.label	emancipação de escravos
+VME_SlaveEmancipationPrecept.description	Livre-se dos grilhões e, se nos achar adequados, seja bem-vindo à nossa comunidade como parente e amigo. Se achar que o novo lar não serve para você, desejamos uma despedida calorosa, ainda que melancólica.
+## DefInjected/PreceptDef/Precepts_Ritual_TradingFair.xml
+VME_TradingFairPrecept.label	feira comercial
+VME_TradingFairPrecept.description	Uma feira comercial.
+## DefInjected/PreceptDef/Precepts_Ritual_ViolentConversion.xml
+VME_ViolentConversionPrecept.label	conversão violenta
+VME_ViolentConversionPrecept.description	Os infiéis devem aderir à nossa causa, ou terão o crânio afundado por mil martelos.
+## DefInjected/PreceptDef/Precepts_Ritual_WickerManBurning.xml
+VME_WickerManBurningPrecept.label	queima do homem de vime
+VME_WickerManBurningPrecept.description	Uma queima do homem de vime.
+## DefInjected/PreceptDef/Precepts_Role_Commissar.xml
+VME_IdeoRole_Commissar.description	Um tático militar corajoso e implacável, especialista em liderar pelo medo e pelas ameaças. Pode executar personagens insubordinados para motivar os demais.
+## DefInjected/PreceptDef/Precepts_Role_FireKeeper.xml
+VME_IdeoRole_FireKeeper.description	Guardião da chama sagrada, cuja função principal é cuidar de piras, fogueiras e fornos. Respeitado por unanimidade pelos discípulos, não hesita em apagar fogos, e os seguidores respeitam essa decisão. Todo guardião do fogo tem a habilidade de atiçar fontes de fogo e causar uma explosão.
+## DefInjected/PreceptDef/Precepts_Role_Fleshcrafter.xml
+VME_IdeoRole_Fleshcrafter.description	Um verdadeiro especialista em anatomia, capaz de extrair órgãos de cadáveres recentes. Por causa de danos e decomposição, só de um a três órgãos são colhidos ao acaso, e o resto do corpo vira carne.
+## DefInjected/PreceptDef/Precepts_Role_InsectoidHerder.xml
+VME_IdeoRole_InsectoidHerder.label	pastor de insetoides
+VME_IdeoRole_InsectoidHerder.description	Um talentoso domador de insetoides. Por estudo ou talento natural, esses líderes entendem e controlam na hora as criaturas insetoides, mas, por um laço sagrado, não podem fazer nenhum outro tipo de trabalho. Pastores de insetoides podem erguer colmeias insetoides com um ritual curto.
+## DefInjected/PreceptDef/Precepts_Role_Majordomo.xml
+VME_IdeoRole_Majordomo.label	mordomo-mor
+VME_IdeoRole_Majordomo.description	Especialista em gestão, o mordomo-mor é o administrador da nobreza e o supervisor das propriedades. Tem autoridade para organizar, gerir e garantir o funcionamento perfeito de cada aspecto da vida aristocrática, mas não pode ter títulos. Tem a habilidade de inspirar todos à sua volta a se esforçarem mais, ao custo de reduzir muito a recreação deles.\n\n<color=#E5E54C>Efeito no jogo:</color>\n - Ganha recreação com qualquer trabalho.
+## DefInjected/PreceptDef/Precepts_Role_Mechacker.xml
+VME_IdeoRole_Mechacker.description	Um engenheiro brilhante capaz de montar efígies mecanoides. Ao contrário dos colegas preguiçosos, os mecahackers topam qualquer tipo de trabalho. Todo mecahacker tem a habilidade de sobrecarregar e detonar torretas ou mecanoides hostis, causando uma explosão.
+## DefInjected/PreceptDef/Precepts_Role_Merchant.xml
+VME_IdeoRole_Merchant.description	Um comerciante acolhedor e carismático, embora meio impiedoso, especialista em abrir rotas mercantis com outras colônias. Pode sinalizar para que uma caravana comercial de uma facção amiga aleatória faça um desvio direto até a colônia a cada 5 dias. Também ganha um pequeno bônus nos preços de comércio, só no carisma.
+## DefInjected/PreceptDef/Precepts_Role_Nurse.xml
+VME_IdeoRole_Nurse.description	Um profissional de saúde dedicado, capaz de tratar ferimentos com precisão cirúrgica. Tem a habilidade única de se hiperconcentrar nos pacientes em momentos de trauma em massa, suprimindo por um tempo as necessidades de descanso, recreação e fome.
+## DefInjected/PreceptDef/Precepts_Role_PartyHost.xml
+VME_IdeoRole_PartyHost.label	anfitrião de festas
+VME_IdeoRole_PartyHost.description	Um baderneiro jovial incapaz de entender que nem toda hora é hora de festa. O anfitrião pode dar uma festa incrível a qualquer momento. Mas precisa de cerca do dobro do tempo de recreação de uma pessoa normal para ficar feliz no dia a dia.
+## DefInjected/PreceptDef/Precepts_Role_Patissier.xml
+VME_IdeoRole_Patissier.label	pâtissier
+VME_IdeoRole_Patissier.description	Um talentoso e epicurista fornecedor de tudo o que é doce. Transforma com destreza qualquer refeição numa sobremesa irresistível. Cozinha com rapidez notável, seja qual for a refeição.\n\n<color=#E5E54C>Atributos:</color>\n - O pâtissier recebe +20% de velocidade de cozinha.
+## DefInjected/PreceptDef/Precepts_Role_Republic.xml
+VME_IdeoRole_LeaderSecond.label	segundo triúnviro
+VME_IdeoRole_LeaderThird.label	terceiro triúnviro
+## DefInjected/PreceptDef/Precepts_Royalty.xml
+VME_Royalty_Exalted.description	Quem se cobre com as vestes da realeza ascende além dos meros mortais. Cada degrau na escada da nobreza traz mais veneração do povo, de um aceno respeitoso a um pajem até a reverência assombrada a um arquistelar.
+VME_Royalty_Respected.description	Cada coroa e cada título é símbolo de fardos carregados pelo bem de todos. Seja qual for a posição, um título rende o mesmo respeito, um reconhecimento do lugar elevado de quem o porta na nossa ordem.
+VME_Royalty_Disliked.label	malvista
+VME_Royalty_Disliked.description	Títulos e coroas, relíquias de uma era passada, provocam mais raiva que admiração. Quem ostenta a nobreza recebe desdém na mesma medida.
+VME_Royalty_Hated.label	odiada
+VME_Royalty_Hated.description	Os títulos reais são correntes que prendem a liberdade, e cada título é um grilhão mais maldito que o anterior. De pajem a arquistelar, o desdém cresce com o peso da coroa; pesada é a cabeça que a usa.
+## DefInjected/PreceptDef/Precepts_Scars.xml
+VME_Scars_Honorable.description	Ter cicatrizes e seguir em frente é um ato simplesmente incrível.
+VME_Scars_Disgusting.description	Um corpo marcado de cicatrizes é nojento.
+## DefInjected/PreceptDef/Precepts_SkilledLabor.xml
+VME_SkilledLabor_Slow.description	O trabalho qualificado é minucioso e demorado; é melhor focar em outra coisa.
+VME_SkilledLabor_Relaxed.description	O trabalho qualificado deve ser feito com cuidado e tempo.
+## DefInjected/PreceptDef/Precepts_SlaveTrading.xml
+VME_SlaveTrading_OnlyBuying.label	só compra
+VME_SlaveTrading_OnlyBuying.description	Escravos só devem ser comprados, não vendidos.
+VME_SlaveTrading_OnlyBuying.comps.2.description	Alguém comprou um escravo
+## DefInjected/PreceptDef/Precepts_Slavery.xml
+VME_Slavery_Forbidden.description	A escravidão é uma prática proibida, e os escravos merecem nosso respeito. O único motivo para comprar um escravo é libertá-lo na hora.
+VME_Slavery_Forbidden.comps.0.description	Qualquer escravo na colônia (até ser emancipado)
+## DefInjected/PreceptDef/Precepts_SocialInteractions.xml
+VME_SocialInteractions_Disallowed.label	proibidas
+VME_SocialInteractions_Disallowed.description	Socializar deve ser proibido; abrir mão disso traz maior entendimento.
+## DefInjected/PreceptDef/Precepts_Sweets.xml
+VME_Sweets_Craved.label	desejados
+VME_Sweets_Craved.description	Sobremesas e guloseimas não devem ser negadas; doces devem ser comidos pelo menos a cada dois dias.\n\n<color=#E5E54C>Efeito no jogo:</color>\n - Lembre que este preceito exige uma expectativa mínima. É preciso expectativa moderada ou maior para a necessidade "sobremesas" aparecer.\n\n - Sobremesas que aumentam a necessidade: chocolate (15%), sobremesa simples (30%), sobremesa fina (40%), sobremesa luxuosa (50%), sobremesa gourmet (75%)
+VME_Sweets_Impartial.label	indiferentes
+VME_Sweets_Impartial.description	Doces nem são tão bons assim; dá para viver sem eles fácil.
+## DefInjected/PreceptDef/Precepts_TaintedApparel.xml
+VME_TaintedApparel_DontCare.description	Não há nada de errado em usar roupas contaminadas.
+VME_TaintedApparel_Disapproved.description	Usar roupas contaminadas é nojento.
+VME_TaintedApparel_Abhorrent.description	Usar roupas contaminadas é uma prática horrível.
+## DefInjected/PreceptDef/Precepts_TatteredApparel.xml
+VME_TatteredApparel_DontCare.description	Não há nada de errado em usar roupas esfarrapadas.
+VME_TatteredApparel_Disapproved.description	Usar roupas esfarrapadas é uma prática de mendigo.
+VME_TatteredApparel_Abhorrent.description	Usar roupas esfarrapadas é uma prática de mendigo terrível.
+## DefInjected/PreceptDef/Precepts_TendQuality.xml
+VME_TendQuality_Increased.description	Tratar ferimentos deve ser levado a sério.
+## DefInjected/PreceptDef/Precepts_TitleInheritance.xml
+VME_TitleInheritance_Inherited.label	herdados
+VME_TitleInheritance_Inherited.description	A nobreza corre no sangue, e os títulos passam dos que caem aos seus parentes. A morte de um dos pais eleva o primogênito, que herda o manto da liderança.
+## DefInjected/PreceptDef/Precepts_Trading.xml
+VME_Trading_Required.description	É importante comerciar e obter riqueza.
+## DefInjected/PreceptDef/Precepts_TradingPrice.xml
+VME_TradingPrice_Improved.label	melhorado
+VME_TradingPrice_Improved.description	É importante comerciar e conseguir os melhores negócios possíveis.
+## DefInjected/PreceptDef/Precepts_Travel.xml
+VME_Travel_Desired.description	É importante viajar pelo planeta e nunca ficar muito tempo em lugar nenhum.
+VME_Travel_Despised.description	Cada momento longe de casa é tempo perdido; viajar não tem sentido.
+## DefInjected/PreceptDef/Precepts_Violence.xml
+VME_Violence_Honorable.description	Cometer atos de violência é honroso.\n\n<color=#E5E54C>Efeito no jogo:</color>\n - Os colonos recebem humor positivo se forem obrigados a atacar alvos humanoides não hostis.
+VME_Violence_Acceptable.description	A violência é só um fato da vida.
+VME_Violence_Disapproved.description	Atacar uma pessoa inofensiva é imoral. \n\n<color=#E5E54C>Efeito no jogo:</color>\n - Os colonos recebem humor negativo se forem obrigados a atacar alvos humanoides não hostis.
+VME_Violence_Abhorrent.description	Recorrer à força letal é bárbaro e nojento, e nunca deve ser permitido. \n\n<color=#E5E54C>Efeito no jogo:</color>\n - Os colonos recebem humor bem negativo se forem obrigados a atacar alvos humanoides não hostis.\n - O único colapso mental permitido é a andança psicótica.\n - Todos os colonos convocados são dispensados se um inimigo atacante começar a fugir.
+## DefInjected/PreceptDef/Precepts_Woodcutting.xml
+VME_WoodcuttingYield_High.description	O corte de madeira é tão importante que o fazemos com muita atenção e respeito, e por isso obtemos mais recursos.\n\n<color=#E5E54C>Atributos:</color>\n - Rendimento do corte de madeira: +10%.
+## DefInjected/PrisonerInteractionModeDef/PrisonerInteractionModeDefs.xml
+VFEA_Interrogate.description	Os carcereiros usarão vários métodos para arrancar do prisioneiro informações sobre locais de interesse próximos.
+## DefInjected/RecipeDef/Hediffs_BodyParts_Natural.xml
+VME_InstallFleshcraftedArm.label	instalar braço carnemoldado
+VME_InstallFleshcraftedArm.description	Instala um braço carnemoldado. Pode ser instalado com segurança em colonos que seguem uma ideologia de carnemoldagem, mas causa infecções por rejeição nos demais.
+VME_InstallFleshcraftedArm.jobString	Instalando braço carnemoldado.
+VME_InstallFleshcraftedHand.label	instalar mão carnemoldada
+VME_InstallFleshcraftedHand.description	Instala uma mão carnemoldada. Pode ser instalada com segurança em colonos que seguem uma ideologia de carnemoldagem, mas causa infecções por rejeição nos demais.
+VME_InstallFleshcraftedHand.jobString	Instalando mão carnemoldada.
+VME_InstallFleshcraftedFinger.label	instalar dedo carnemoldado
+VME_InstallFleshcraftedFinger.description	Instala um dedo carnemoldado. Pode ser instalado com segurança em colonos que seguem uma ideologia de carnemoldagem, mas causa infecções por rejeição nos demais.
+VME_InstallFleshcraftedFinger.jobString	Instalando dedo carnemoldado.
+VME_InstallFleshcraftedToe.label	instalar dedo do pé carnemoldado
+VME_InstallFleshcraftedToe.description	Instala um dedo do pé carnemoldado. Pode ser instalado com segurança em colonos que seguem uma ideologia de carnemoldagem, mas causa infecções por rejeição nos demais.
+VME_InstallFleshcraftedToe.jobString	Instalando dedo do pé carnemoldado.
+VME_InstallFleshcraftedFoot.label	instalar pé carnemoldado
+VME_InstallFleshcraftedFoot.description	Instala um pé carnemoldado. Pode ser instalado com segurança em colonos que seguem uma ideologia de carnemoldagem, mas causa infecções por rejeição nos demais.
+VME_InstallFleshcraftedFoot.jobString	Instalando pé carnemoldado.
+VME_InstallFleshcraftedLeg.label	instalar perna carnemoldada
+VME_InstallFleshcraftedLeg.description	Instala uma perna carnemoldada. Pode ser instalada com segurança em colonos que seguem uma ideologia de carnemoldagem, mas causa infecções por rejeição nos demais.
+VME_InstallFleshcraftedLeg.jobString	Instalando perna carnemoldada.
+VME_InstallFleshcraftedHeart.label	instalar coração carnemoldado
+VME_InstallFleshcraftedHeart.description	Instala um coração carnemoldado. Pode ser instalado com segurança em colonos que seguem uma ideologia de carnemoldagem, mas causa infecções por rejeição nos demais.
+VME_InstallFleshcraftedHeart.jobString	Instalando coração carnemoldado.
+VME_InstallFleshcraftedLung.label	instalar pulmão carnemoldado
+VME_InstallFleshcraftedLung.description	Instala um pulmão carnemoldado. Pode ser instalado com segurança em colonos que seguem uma ideologia de carnemoldagem, mas causa infecções por rejeição nos demais.
+VME_InstallFleshcraftedLung.jobString	Instalando pulmão carnemoldado.
+VME_InstallFleshcraftedKidney.label	instalar rim carnemoldado
+VME_InstallFleshcraftedKidney.description	Instala um rim carnemoldado. Pode ser instalado com segurança em colonos que seguem uma ideologia de carnemoldagem, mas causa infecções por rejeição nos demais.
+VME_InstallFleshcraftedKidney.jobString	Instalando rim carnemoldado.
+VME_InstallFleshcraftedLiver.label	instalar fígado carnemoldado
+VME_InstallFleshcraftedLiver.description	Instala um fígado carnemoldado. Pode ser instalado com segurança em colonos que seguem uma ideologia de carnemoldagem, mas causa infecções por rejeição nos demais.
+VME_InstallFleshcraftedLiver.jobString	Instalando fígado carnemoldado.
+VME_InstallFleshcraftedEye.label	instalar olho carnemoldado
+VME_InstallFleshcraftedEye.description	Instala um olho carnemoldado. Pode ser instalado com segurança em colonos que seguem uma ideologia de carnemoldagem, mas causa infecções por rejeição nos demais.
+VME_InstallFleshcraftedEye.jobString	Instalando olho carnemoldado.
+VME_InstallFleshcraftedEar.label	instalar orelha carnemoldada
+VME_InstallFleshcraftedEar.description	Instala uma orelha carnemoldada. Pode ser instalada com segurança em colonos que seguem uma ideologia de carnemoldagem, mas causa infecções por rejeição nos demais.
+VME_InstallFleshcraftedEar.jobString	Instalando orelha carnemoldada.
+VME_InstallFleshcraftedNose.label	instalar nariz carnemoldado
+VME_InstallFleshcraftedNose.description	Instala um nariz carnemoldado. Pode ser instalado com segurança em colonos que seguem uma ideologia de carnemoldagem, mas causa infecções por rejeição nos demais.
+VME_InstallFleshcraftedNose.jobString	Instalando nariz carnemoldado.
+VME_InstallFleshcraftedJaw.label	instalar mandíbula carnemoldada
+VME_InstallFleshcraftedJaw.description	Instala uma mandíbula carnemoldada. Pode ser instalada com segurança em colonos que seguem uma ideologia de carnemoldagem, mas causa infecções por rejeição nos demais.
+VME_InstallFleshcraftedJaw.jobString	Instalando mandíbula carnemoldada.
+VME_InstallFleshcraftedStomach.label	instalar estômago carnemoldado
+VME_InstallFleshcraftedStomach.description	Instala um estômago carnemoldado. Pode ser instalado com segurança em colonos que seguem uma ideologia de carnemoldagem, mas causa infecções por rejeição nos demais.
+VME_InstallFleshcraftedStomach.jobString	Instalando estômago carnemoldado.
+VME_InstallFleshcraftedTongue.label	instalar língua carnemoldada
+VME_InstallFleshcraftedTongue.description	Instala uma língua carnemoldada. Pode ser instalada com segurança em colonos que seguem uma ideologia de carnemoldagem, mas causa infecções por rejeição nos demais.
+VME_InstallFleshcraftedTongue.jobString	Instalando língua carnemoldada.
+VME_InstallFleshcraftedSpine.label	instalar coluna carnemoldada
+VME_InstallFleshcraftedSpine.description	Instala uma coluna carnemoldada. Pode ser instalada com segurança em colonos que seguem uma ideologia de carnemoldagem, mas causa infecções por rejeição nos demais.
+VME_InstallFleshcraftedSpine.jobString	Instalando coluna carnemoldada.
+## DefInjected/RitualBehaviorDef/Ritual_Behaviors_Bonfire.xml
+VME_BonfireBehaviour.roles.0.label	guardião do fogo
+## DefInjected/RitualBehaviorDef/Ritual_Behaviors_CeremonialSuicide.xml
+VME_CeremonialSuicideRitualBehaviour.roles.0.label	colono suicida
+## DefInjected/RitualBehaviorDef/Ritual_Behaviors_DivineTheStars.xml
+VME_DivineStarsRitualBehaviour.roles.0.label	astrólogo
+## DefInjected/RitualBehaviorDef/Ritual_Behaviors_LeadershipChallenge.xml
+VME_LeadershipChallengeRitualBehaviour.roles.1.missingDesc	o líder atual
+VME_LeadershipChallengeRitualBehaviour.roles.2.label	duelista 2
+VME_LeadershipChallengeRitualBehaviour.roles.2.missingDesc	um colono com a maior habilidade corpo a corpo
+## DefInjected/RitualBehaviorDef/Ritual_Behaviors_Orgy.xml
+VME_OrgyRitualBehaviour.roles.0.label	organizador da orgia
+VME_OrgyRitualBehaviour.spectatorFilter.description	Os participantes devem ser adultos que consentem.
+## DefInjected/RitualBehaviorDef/Ritual_Behaviors_SlaveEmancipation.xml
+VME_SlaveEmancipationBehavior.roles.1.label	escravos
+VME_SlaveEmancipationBehavior.roles.1.categoryLabel	escravos
+VME_SlaveEmancipationBehavior.roles.1.missingDesc	escravos
+## DefInjected/RitualBehaviorDef/Ritual_Behaviors_TradingFair.xml
+VME_TradingFairRitualBehaviour.roles.0.label	organizador da feira
+## DefInjected/RitualBehaviorDef/Ritual_Behaviors_ViolentConversion.xml
+VME_ViolentConversionRitualBehaviour.spectatorFilter.description	Os espectadores precisam estar dispostos a assistir à conversão violenta.
+## DefInjected/RitualBehaviorDef/Ritual_Behaviors_WickerManBurning.xml
+VME_WickerManBurningBehaviour.spectatorFilter.description	Os espectadores precisam estar dispostos a assistir à queima do homem de vime.
+## DefInjected/RitualOutcomeEffectDef/Ritual_Outcomes_Bonfire.xml
+VME_BonfireOutcome.description	Conforme a qualidade do ritual, os participantes recebem um reforço de recreação que dura de 4 horas a 3 dias e eleva a barra de recreação. Também recebem entre {MINMOOD} e {MAXMOOD} de humor por {MOODDAYS} dias.\n\nA fogueira ritual fica acesa por pelo menos dois quadrimestres, dando bônus de beleza nas redondezas e contando no número de fogos para o preceito Fogo: desejado.
+VME_BonfireOutcome.outcomeChances.0.description	O(a) {0} foi terrível! Umas chaminhas patéticas ficaram por ali e se apagaram cedo demais (sem efeito de recreação).
+VME_BonfireOutcome.outcomeChances.1.description	O(a) {0} foi sem graça. Esperávamos uma conflagração maravilhosa e ganhamos uma fogueira de acampamento grandona. Pelo menos foi meio divertido.\n\nA recreação de todos os participantes fica elevada por 4 horas.
+VME_BonfireOutcome.outcomeChances.2.description	O(a) {0} foi bom(boa). As chamas subiram e crepitaram majestosas sobre o assentamento e animaram bastante a todos.\n\nA recreação de todos os participantes fica elevada por 1 dia.
+VME_BonfireOutcome.outcomeChances.3.label	Gloriosa
+VME_BonfireOutcome.outcomeChances.3.description	O(a) {0} foi glorioso(a)! Foi superdivertido, e nos conectamos de verdade uns com os outros com a experiência compartilhada.\n\nA recreação de todos os participantes fica elevada por 3 dias.
+## DefInjected/RitualOutcomeEffectDef/Ritual_Outcomes_CeremonialSuicide.xml
+VME_CeremonialSuicideRitualOutcome.description	Conforme a qualidade do ritual, os participantes recebem entre {MINMOOD} e {MAXMOOD} de humor por {MOODDAYS} dias. Todos os participantes precisam estar saudáveis para comparecer.
+VME_CeremonialSuicideRitualOutcome.outcomeChances.0.description	O(a) {0} foi terrível! A lâmina entrou de lado, e havia sangue e entranhas por toda parte. Nojento!
+VME_CeremonialSuicideRitualOutcome.outcomeChances.1.description	O(a) {0} foi chato(a). O discurso pareceu forçado. Pelo menos restauramos a honra da colônia.
+VME_CeremonialSuicideRitualOutcome.outcomeChances.2.description	O(a) {0} restaurou a honra da colônia. A sombra da derrota não nubla mais nossas mentes.
+VME_CeremonialSuicideRitualOutcome.outcomeChances.3.description	O(a) {0} foi inesquecível! Todos vão lembrar da coragem, do autocontrole e da firmeza. A honra da colônia agora está imaculada.
+## DefInjected/RitualOutcomeEffectDef/Ritual_Outcomes_DivineTheStars.xml
+VME_DivineStarsRitualOutcome.description	Os participantes recebem resultados totalmente aleatórios, sem relação com a qualidade do ritual.
+VME_DivineStarsRitualOutcome.outcomeChances.0.label	Insondável
+VME_DivineStarsRitualOutcome.outcomeChances.0.description	Nosso destino foi revelado pelas estrelas.
+VME_DivineStarsRitualOutcome.outcomeChances.1.label	Insondável
+VME_DivineStarsRitualOutcome.outcomeChances.1.description	Nosso destino foi revelado pelas estrelas.
+## DefInjected/RitualOutcomeEffectDef/Ritual_Outcomes_Incantation.xml
+VME_IncantationOutcome.description	Se o ritual de encantamento correr bem (resultado positivo), ele aumenta em 20% a necessidade de corrupção de todos os participantes, além de dar um bônus de humor.
+VME_IncantationOutcome.outcomeChances.0.label	Escamoso
+VME_IncantationOutcome.outcomeChances.0.description	O(a) {0} foi anormal! Uma algaravia indescritivelmente hedionda! Diríamos até escamosa, mas nem sabemos o que isso é! Uma palavra impronunciável!
+VME_IncantationOutcome.outcomeChances.1.label	Maldito
+VME_IncantationOutcome.outcomeChances.1.description	O(a) {0} foi devidamente maldito(a). Uma ladainha de morbidezes sombrias expressas em crime, perversão e insanidade.
+VME_IncantationOutcome.outcomeChances.2.label	Blasfemo
+VME_IncantationOutcome.outcomeChances.2.description	O(a) {0} foi blasfemo(a). Uma promessa de mundos ocultos e insondáveis de vida estranha que pulsam nos abismos além das estrelas e pressionam de forma hedionda o nosso globo em dimensões profanas que só os mortos e os lunáticos conseguem vislumbrar.
+VME_IncantationOutcome.outcomeChances.3.label	Repugnante
+VME_IncantationOutcome.outcomeChances.3.description	O(a) {0} foi repugnante! Vivemos numa plácida ilha de ignorância em meio a mares negros de infinito, e não era para viajarmos longe.

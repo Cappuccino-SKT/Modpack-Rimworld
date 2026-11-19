@@ -33,19 +33,18 @@ if ($Batch.Count -eq 0 -and -not $Script) { throw 'Informe -Script ou -Batch.' }
 if ($Script) { $Script = (Resolve-Path $Script).Path }
 $Batch = @($Batch | ForEach-Object { $_ -split "," } | Where-Object { $_ } | ForEach-Object { (Resolve-Path $_.Trim()).Path })
 
-if ($Slot -eq 0 -and (Get-Process RimWorld -ErrorAction SilentlyContinue)) { throw 'O RimWorld já está aberto. Feche antes de rodar um teste.' }
 
-if ($Build) {
-    foreach ($proj in 'Mods\EcosDaQueda\Source\EcosDaQueda', 'Mods\EcosDaQueda\Source\EcosDaQueda.Hegemony', 'Mods\EcosDaQuedaDebug\Source') {
-        $out = dotnet build (Join-Path $game $proj) -c Release 2>&1
-        if ($LASTEXITCODE -ne 0) { $out | Select-String 'error' | Select-Object -First 15; throw "Falha ao compilar $proj" }
-    }
-    'build ok'
-}
+if ($Build) { & (Join-Path $PSScriptRoot 'build-mods.ps1') }
 
 # ---- perfil isolado
 $profileDir = Join-Path $dev "test-profile\$Profile$(if ($Slot -gt 0) { "-$Slot" })"
 New-Item -ItemType Directory -Force (Join-Path $profileDir 'Config'), (Join-Path $profileDir 'Saves') | Out-Null
+# Só bloqueia se outro TESTE usa este mesmo perfil. O jogo normal do usuário (perfil dele, ex.: montando roupas no
+# Character Creator) pode ficar aberto: os dois não dividem saves nem config, só o Player.log (o Waylith ignora -logFile).
+$running = @(Get-CimInstance Win32_Process -Filter "Name='RimWorld.exe'" -ErrorAction SilentlyContinue)
+if ($running | Where-Object { $_.CommandLine -and $_.CommandLine.Contains("-savedatafolder=$profileDir`"") }) { throw "Já há um teste rodando no perfil $profileDir. Espere ele acabar ou use -Slot n." }
+$userGameOpen = [bool]($running | Where-Object { -not $_.CommandLine -or $_.CommandLine -notmatch 'test-profile' })
+if ($userGameOpen) { '== RimWorld do usuário aberto: o teste roda ao lado (resumo do Player.log pode trazer linhas do jogo dele)' }
 foreach ($f in 'Prefs.xml', 'KeyPrefs.xml', 'Knowledge.xml') {
     $src = Join-Path $userData "Config\$f"
     if (Test-Path $src) { Copy-Item $src (Join-Path $profileDir 'Config') -Force }
@@ -168,7 +167,7 @@ elseif (Test-Path $result) {
 $log = Get-ChildItem $profileDir -Recurse -Filter Player.log -ErrorAction SilentlyContinue | Sort-Object LastWriteTime -Descending | Select-Object -First 1
 if (-not $log) { $log = Get-Item (Join-Path $userData 'Logs\Player.log') -ErrorAction SilentlyContinue }
 if ($log) {
-    "== log: $($log.FullName)"
+    "== log: $($log.FullName)$(if ($userGameOpen) { ' (dividido com o jogo do usuário)' })"
     $noise = 'Knowledge data was missing key|GAGARIN|\[Vulkan\]|NativeAllocation|hideFlags|Translation data for language|Could not find player faction|trailing whitespace|AsyncGPUReadback failed|Error in ParallelForEach|Bad string pass when reading rule'
     Get-Content $log.FullName -Encoding UTF8 | Where-Object { $_ -match '^\d{4}-\d\d-\d\d .* (ERROR|WARN) ' -and $_ -notmatch $noise } |
         ForEach-Object { $_.Substring(24).Substring(0, [Math]::Min(260, $_.Length - 24)) } |

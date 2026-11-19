@@ -1,0 +1,281 @@
+## DefInjected/MemeDef/Memes_Structures_Basic.xml
+VME_Structure_CultOfPersonality.symbolPacks.0.theme	culto à personalidade
+VME_Structure_CultOfPersonality.worshipRoomLabel	câmara do altíssimo
+VME_Structure_Pantheism.label	panteísmo
+VME_Structure_Pantheism.description	O Universo é Deus. Não há Deus além da soma da substância, das forças e das leis que se manifestam no universo existente.
+VME_Structure_Pantheism.generalRules.rulesStrings[0]	memeAdjective->imanente
+VME_Structure_Pantheism.generalRules.rulesStrings[1]	memeAdjective->divino(a)
+VME_Structure_Pantheism.generalRules.rulesStrings[2]	memeAdjective->onipresente
+VME_Structure_Pantheism.generalRules.rulesStrings[3]	memeAdjective->transcendente
+VME_Structure_Pantheism.generalRules.rulesStrings[4]	memeAdjective->infinito(a)
+VME_Structure_Pantheism.generalRules.rulesStrings[5]	memeAdjective->iluminado(a)
+VME_Structure_Pantheism.generalRules.rulesStrings[6]	memeLeaderNoun->guru
+VME_Structure_Pantheism.generalRules.rulesStrings[7]	memeLeaderNoun->líder
+VME_Structure_Pantheism.generalRules.rulesStrings[8]	memeLeaderNoun->príncipe
+VME_Structure_Pantheism.generalRules.rulesStrings[9]	memeLeaderAdjective->calmo(a)
+VME_Structure_Pantheism.generalRules.rulesStrings[10]	memeLeaderAdjective->meditativo(a)
+VME_Structure_Pantheism.generalRules.rulesStrings[12]	memeMoralist->filósofo
+VME_Structure_Pantheism.generalRules.rulesStrings[13]	memeMoralist->pensador
+VME_Structure_Pantheism.generalRules.rulesStrings[14]	memeMoralist->espiritualista
+VME_Structure_Pantheism.symbolPacks.0.adjective	panteísta
+VME_Structure_Pantheism.symbolPacks.0.member	panteísta
+VME_Structure_Pantheism.symbolPacks.0.theme	panteísmo
+VME_Structure_Omnism.label	omnismo
+VME_Structure_Omnism.description	Todos os credos e crenças têm verdades e invenções; uma mente sã escuta com atenção e senso crítico o que os dogmas dizem e também o que preferem calar.
+VME_Structure_Omnism.generalRules.rulesStrings[0]	memeAdjective->universal
+VME_Structure_Omnism.generalRules.rulesStrings[1]	memeAdjective->reformado(a)
+VME_Structure_Omnism.generalRules.rulesStrings[2]	memeAdjective->abrangente
+VME_Structure_Omnism.generalRules.rulesStrings[3]	memeAdjective->ubíquo(a)
+VME_Structure_Omnism.generalRules.rulesStrings[4]	memeAdjective->inclusivo(a)
+VME_Structure_Omnism.generalRules.rulesStrings[5]	memeLeaderNoun->onideísta
+VME_Structure_Omnism.generalRules.rulesStrings[6]	memeLeaderNoun->transcendente
+VME_Structure_Omnism.generalRules.rulesStrings[8]	memeLeaderAdjective->inclusivo(a)
+VME_Structure_Omnism.generalRules.rulesStrings[10]	memeMoralist->pregador
+VME_Structure_Omnism.symbolPacks.0.adjective	omnista
+VME_Structure_Omnism.symbolPacks.0.member	crente
+VME_Structure_Omnism.symbolPacks.0.theme	omnismo
+VME_Structure_Agnosticism.label	agnosticismo
+VME_Structure_Agnosticism.description	A teoria de que algum deus ou força todo-poderosa nos vigia ou guia até nas trivialidades é tola ou incompreensível para meros humanos, e o mesmo vale para a ideia de que tudo veio do nada. É melhor ignorar esses dogmas e respeitar a liberdade de quem encontra alívio nessas crenças.
+VME_Structure_Agnosticism.generalRules.rulesStrings[0]	memeAdjective->descrente
+VME_Structure_Agnosticism.generalRules.rulesStrings[1]	memeAdjective->ímpio(a)
+VME_Structure_Agnosticism.generalRules.rulesStrings[2]	memeAdjective->irreligioso(a)
+VME_Structure_Agnosticism.generalRules.rulesStrings[3]	memeAdjective->não religioso(a)
+VME_Structure_Agnosticism.generalRules.rulesStrings[4]	memeAdjective->incrédulo(a)
+VME_Structure_Agnosticism.generalRules.rulesStrings[5]	memeAdjective->secular
+VME_Structure_Agnosticism.generalRules.rulesStrings[6]	memeLeaderNoun->líder
+VME_Structure_Agnosticism.generalRules.rulesStrings[7]	memeLeaderNoun->livre-pensador
+VME_Structure_Agnosticism.generalRules.rulesStrings[8]	memeLeaderAdjective->secular
+VME_Structure_Agnosticism.generalRules.rulesStrings[9]	memeLeaderAdjective->mundano(a)
+VME_Structure_Agnosticism.generalRules.rulesStrings[10]	memeLeaderAdjective->profano(a)
+VME_Structure_Agnosticism.generalRules.rulesStrings[11]	memeMoralist->conselheiro
+VME_Structure_Agnosticism.generalRules.rulesStrings[12]	memeMoralist->eticista
+VME_Structure_Agnosticism.generalRules.rulesStrings[13]	memeMoralist->moralista
+VME_Structure_Agnosticism.generalRules.rulesStrings[14]	memeMoralist->filósofo
+VME_Structure_Agnosticism.generalRules.rulesStrings[15]	memeMoralist->pensador
+VME_Structure_Agnosticism.generalRules.rulesStrings[16]	memeMoralist->acadêmico
+VME_Structure_Agnosticism.generalRules.rulesStrings[17]	memeMoralist->sofista
+VME_Structure_Agnosticism.symbolPacks.0.adjective	agnóstico
+VME_Structure_Agnosticism.symbolPacks.0.member	agnóstico
+VME_Structure_Agnosticism.symbolPacks.0.theme	agnosticismo
+VME_Structure_Agnosticism.worshipRoomLabel	salão do simpósio
+VME_Structure_SecularSpirituality.label	espiritualidade secular
+VME_Structure_SecularSpirituality.description	Pôr a fé em rituais, orações ou poderes do além só atrasa o crescimento pessoal. Iluminação, felicidade e propósito podem ser encontrados dentro de si, por qualquer caminho que pareça certo.
+VME_Structure_SecularSpirituality.generalRules.rulesStrings[0]	memeAdjective->psíquico(a)
+VME_Structure_SecularSpirituality.generalRules.rulesStrings[1]	memeAdjective->intangível
+VME_Structure_SecularSpirituality.generalRules.rulesStrings[2]	memeAdjective->etéreo(a)
+VME_Structure_SecularSpirituality.generalRules.rulesStrings[3]	memeAdjective->transcendente
+VME_Structure_SecularSpirituality.generalRules.rulesStrings[4]	memeLeaderNoun->místico
+VME_Structure_SecularSpirituality.generalRules.rulesStrings[5]	memeLeaderNoun->visionário
+VME_Structure_SecularSpirituality.generalRules.rulesStrings[6]	memeLeaderAdjective->sobrenatural
+VME_Structure_SecularSpirituality.generalRules.rulesStrings[8]	memeLeaderAdjective->extraterreno(a)
+VME_Structure_SecularSpirituality.generalRules.rulesStrings[9]	memeMoralist->iogue
+VME_Structure_SecularSpirituality.generalRules.rulesStrings[10]	memeMoralist->terapeuta
+VME_Structure_SecularSpirituality.generalRules.rulesStrings[11]	memeMoralist->professor de meditação
+VME_Structure_SecularSpirituality.symbolPacks.0.adjective	secular
+VME_Structure_SecularSpirituality.symbolPacks.0.member	pessoa espiritualizada
+VME_Structure_SecularSpirituality.symbolPacks.0.theme	espiritualidade secular
+VME_Structure_SecularSpirituality.worshipRoomLabel	sala de meditação
+VME_Structure_Shintaoism.label	origem shintaoísta
+VME_Structure_Shintaoism.description	Esta ideologia descende do antigo xintoísmo e do taoismo. Seus preceitos podem ser muito diferentes dos de milhares de anos atrás, mas seus símbolos são parecidos.
+VME_Structure_Shintaoism.generalRules.rulesStrings[0]	memeAdjective->equilibrado(a)
+VME_Structure_Shintaoism.generalRules.rulesStrings[2]	memeAdjective->compassivo(a)
+VME_Structure_Shintaoism.generalRules.rulesStrings[3]	memeAdjective->frugal
+VME_Structure_Shintaoism.generalRules.rulesStrings[4]	memeAdjective->humilde
+VME_Structure_Shintaoism.generalRules.rulesStrings[5]	memeLeaderNoun->taoshih
+VME_Structure_Shintaoism.generalRules.rulesStrings[6]	memeLeaderNoun->mestre do Tao
+VME_Structure_Shintaoism.generalRules.rulesStrings[8]	memeLeaderAdjective->sereno(a)
+VME_Structure_Shintaoism.generalRules.rulesStrings[9]	memeMoralist->sacerdote shintaoísta
+VME_Structure_Shintaoism.symbolPacks.0.adjective	shintaoísta
+VME_Structure_Shintaoism.symbolPacks.0.member	iniciado
+VME_Structure_Shintaoism.symbolPacks.0.theme	shintao
+VME_Structure_Shintaoism.worshipRoomLabel	dàoguàn
+VME_Structure_Corporate.label	origem corporativa
+VME_Structure_Corporate.description	Nenhum deus ou rei deve ser adorado, só o homem e seu desejo insaciável de riqueza. Colônias devem ser administradas como empresas.
+VME_Structure_Corporate.generalRules.rulesStrings[0]	memeAdjective->privado(a)
+VME_Structure_Corporate.generalRules.rulesStrings[1]	memeAdjective->rentável
+VME_Structure_Corporate.generalRules.rulesStrings[2]	memeAdjective->exploratório(a)
+VME_Structure_Corporate.generalRules.rulesStrings[3]	memeAdjective->profissional
+VME_Structure_Corporate.generalRules.rulesStrings[4]	memeAdjective->comercial
+VME_Structure_Corporate.generalRules.rulesStrings[5]	memeAdjective->lucrativo(a)
+VME_Structure_Corporate.generalRules.rulesStrings[6]	memeLeaderNoun->CEO
+VME_Structure_Corporate.generalRules.rulesStrings[8]	memeLeaderNoun->superintendente
+VME_Structure_Corporate.generalRules.rulesStrings[10]	memeLeaderAdjective->talentoso(a)
+VME_Structure_Corporate.generalRules.rulesStrings[11]	memeLeaderAdjective->empreendedor(a)
+VME_Structure_Corporate.generalRules.rulesStrings[12]	memeMoralist->administrador
+VME_Structure_Corporate.generalRules.rulesStrings[13]	memeMoralist->executivo
+VME_Structure_Corporate.generalRules.rulesStrings[14]	memeMoralist->gerente
+VME_Structure_Corporate.symbolPacks.0.adjective	corporativo
+VME_Structure_Corporate.symbolPacks.0.member	colaborador
+VME_Structure_Corporate.symbolPacks.0.theme	corporação
+VME_Structure_Corporate.worshipRoomLabel	escritório
+## DefInjected/MemeDef/Memes_VanillaCookingExpanded.xml
+VME_SweetTeeth.label	formiguinhas
+VME_SweetTeeth.description	Toda refeição deve ter sobremesa; é importante se mimar.\n\n<color=#E5E54C>Efeito no jogo:</color>\n - Libera a "necessidade de sobremesas", que deixa os colonos mais felizes se comerem sobremesas e chocolate com frequência (exige expectativa moderada ou maior)\n - Libera o plantio do arbusto de cacau, uma planta que produz cacau com mais eficiência que a árvore e pode ser cultivada em ambiente fechado e em hidroponia\n - A colônia começa com 15 de chocolate
+VME_SweetTeeth.descriptionMaker.rules.rulesStrings[0]	creation(tag=meme_SweetTeeth)        ->[deity0_name] falou a todos os seus seguidores: "Quem come deste bolo, que é minha carne, permanece em mim, e eu nele."
+VME_SweetTeeth.descriptionMaker.rules.rulesStrings[1]	episode(uses=1,tag=meme_SweetTeeth)  ->[deity0_name] disse a todos os [memberNamePlural]: "Olhem o mundo como se fosse um gigantesco bolo de aniversário. Peguem um pedaço, mas não peguem demais."
+VME_SweetTeeth.descriptionMaker.rules.rulesStrings[2]	intro(tag=meme_SweetTeeth)           ->Os [memberNamePlural] construíram um(a) grande [altarName] em [place_summary] [place_name] e o encheram de doces açucarados para servir aos peregrinos que o visitassem.
+VME_SweetTeeth.descriptionMaker.rules.rulesStrings[3]	conflict(tag=meme_SweetTeeth)        ->Um(a) [foeLeader] severo(a), querendo negar a vontade de [deity0_name], mandou seus [foeSoldiers] se livrarem de todas as sobremesas deliciosas, pois estava numa dieta rígida.
+VME_SweetTeeth.descriptionMaker.rules.rulesStrings[4]	founderJoin(tag=meme_SweetTeeth)     ->[deity0_name] abençoou um(a) [place_job] chamado(a) [founderName] com seu apetite e criatividade sem fim, e [founder_pronoun] criou as maiores obras de confeitaria que alguém já tinha visto.
+VME_SweetTeeth.descriptionMaker.rules.rulesStrings[5]	victory(tag=meme_SweetTeeth)         ->[founderName] serviu suas criações aos [foeSoldiers], e eles ficaram encantados. Até o(a) [foeLeader] se convenceu de sua qualidade sublime e proclamou a sabedoria da vontade de [deity0_name].
+VME_SweetTeeth.descriptionMaker.rules.rulesStrings[6]	setup(tag=meme_SweetTeeth)           ->Nosso(a) fundador(a), [founderName], foi confeiteiro(a), criador(a) das maiores obras de confeitaria que alguém já tinha visto.
+VME_SweetTeeth.descriptionMaker.rules.rulesStrings[7]	story(uses=1,tag=meme_SweetTeeth)    ->[founderName] acreditava que sua arte não era só uma forma de alimentar as pessoas, mas algo mais profundo, capaz de unir e reconciliar até os maiores inimigos.
+VME_SweetTeeth.descriptionMaker.rules.rulesStrings[8]	lessonIntro(tag=meme_SweetTeeth)         ->Trabalho como confeiteiro há muitos e muitos anos, e aprendi que
+VME_SweetTeeth.descriptionMaker.rules.rulesStrings[9]	lesson(tag=meme_SweetTeeth)              ->nada neste mundo é melhor que bolo, a não ser mais bolo
+VME_SweetTeeth.descriptionMaker.rules.rulesStrings[10]	lessonReinforcement(tag=meme_SweetTeeth) ->Obsessão nem começa a descrever meu amor por bolo. Brigo até com criancinha se precisar.
+VME_SweetTeeth.descriptionMaker.rules.rulesStrings[11]	archistBasis(tag=meme_SweetTeeth)    ->Os arquotécnicos nos abençoaram com apetites refinados para que pudéssemos aproveitar os sabores mais doces da vida.
+VME_SweetTeeth.descriptionMaker.rules.rulesStrings[12]	archistFact(tag=meme_SweetTeeth)     ->Os arquotécnicos não querem que passemos a vida sem nos divertir e sem agradar o paladar.
+VME_SweetTeeth.descriptionMaker.rules.rulesStrings[13]	archistProphecy(tag=meme_SweetTeeth) ->[inTheEnd], os arquotécnicos nos mostrarão que a transcendência sem se permitir alguns dos prazeres mais simples é um objetivo vazio.
+VME_SweetTeeth.descriptionMaker.rules.rulesStrings[14]	animistFact(tag=meme_SweetTeeth)     ->Os espíritos querem que exploremos os sentidos e aproveitemos os sabores mais doces da vida. Não querem que passemos a vida sem nos divertir e sem agradar o paladar.
+VME_SweetTeeth.descriptionMaker.rules.rulesStrings[15]	serketistProphecy(tag=meme_SweetTeeth)->[itIsSaid] aprenderemos a incorporar a sabedoria deles às nossas receitas. A geleia de inseto é uma ambrosia com um dos sabores mais doces da natureza.
+VME_SweetTeeth.descriptionMaker.rules.rulesStrings[16]	chthonianProphecy(tag=meme_SweetTeeth)->Não há escapatória nem alívio. É melhor nos empanturrarmos de doces deliciosos e aproveitar nossas vidas breves e sórdidas.
+VME_SweetTeeth.descriptionMaker.rules.rulesStrings[17]	esotericismProphecy(tag=meme_SweetTeeth)->Talvez escondida entre todos os arcanos esteja uma receita maravilhosa de uma iguaria de confeitaria de explodir a mente. Sonhar não custa.
+VME_SweetTeeth.descriptionMaker.rules.rulesStrings[18]	eschatologismFact(tag=meme_SweetTeeth)->Cobriremos tudo num mar de sangue e... bolo. Isso, bolo.
+VME_SweetTeeth.descriptionMaker.rules.rulesStrings[19]	introMemo(tag=meme_SweetTeeth)->Como sabem, a empresa tem a política de comemorar o aniversário dos colegas com no mínimo 4 doces por pessoa. Tivemos de regulamentar isso porque ALGUÉM estava abusando e comendo mais que a sua parte. Você sabe quem você é, e devia ter vergonha.
+VME_SweetTeeth.generalRules.rulesStrings[0]	memeAdjective->doce
+VME_SweetTeeth.generalRules.rulesStrings[1]	memeAdjective->açucarado(a)
+VME_SweetTeeth.generalRules.rulesStrings[2]	memeAdjective->meloso(a)
+VME_SweetTeeth.generalRules.rulesStrings[3]	memeAdjective->cristalizado(a)
+VME_SweetTeeth.generalRules.rulesStrings[4]	memeAdjective->guloso(a)
+VME_SweetTeeth.generalRules.rulesStrings[5]	memeHyphenPrefix->doce
+VME_SweetTeeth.generalRules.rulesStrings[6]	memeConcept->sobremesas
+VME_SweetTeeth.generalRules.rulesStrings[7]	memeLeaderNoun->confeiteiro
+VME_SweetTeeth.symbolPacks.0.adjective	guloso
+VME_SweetTeeth.symbolPacks.0.ideoName	Formiguinhas
+VME_SweetTeeth.symbolPacks.0.member	amante de sobremesas
+VME_SweetTeeth.symbolPacks.0.theme	sobremesas
+## DefInjected/NeedDef/Needs.xml
+VME_Anonymity.label	anonimato
+VME_Anonymity.description	O anonimato reflete o quanto a pessoa sente que sua identidade e personalidade estão protegidas. Um personagem com essa crença fica mais feliz quando ele está alto e infeliz quando está perto de acabar. O anonimato sobe devagar com o tempo, e qualquer interação social ou rosto à mostra o diminui.
+VME_Corruption.label	corrupção
+VME_Corruption.description	A corrupção reflete o desejo da pessoa de ceder às vontades sombrias, sobrenaturais e talvez até violentas enterradas dentro dela; um personagem levemente corrompido não pode perder certeza ideológica. A corrupção diminui devagar todo dia, mas pode ser pausada por obeliscos próximos e aumentada por rituais de encantamento. Ao chegar a 100 de corrupção, o personagem começa na hora a ter um colapso mental, e ao chegar a 0 é facilmente convencido a adotar qualquer outra ideologia.
+## DefInjected/NeedDef/Needs_VanillaCookingExpanded.xml
+VME_Desserts.label	sobremesas
+VME_Desserts.description	A necessidade de sobremesas representa a vontade de se empanturrar de deliciosas e pecaminosas obras de confeitaria.
+## DefInjected/PreceptDef/Precepts_Alcohol.xml
+VME_Alcohol_Demanded.label	exigido
+VME_Alcohol_Demanded.description	A embriaguez é central para uma boa vida.
+VME_Alcohol_Desired.description	Beber é simplesmente divertido, desde que sem excessos.
+VME_Alcohol_MildAbstinence.label	abstinência leve
+VME_Alcohol_MildAbstinence.description	O álcool é aceitável em pequenas doses, mas é melhor ficar longe dele o máximo possível.
+## DefInjected/PreceptDef/Precepts_Anonymity.xml
+VME_Anonymity_Required.description	Com o verdadeiro anonimato podemos alcançar grandes coisas.
+## DefInjected/PreceptDef/Precepts_Apostasy.xml
+VME_Apostasy_Accepted.label	aceita
+VME_Apostasy_Accepted.description	Não devemos nos sentir presos à nossa ideologia atual.
+Apostasy_Despicable.label	desprezível
+Apostasy_Despicable.description	Ser coagido ou manipulado a seguir outra crença é um ato desprezível.
+## DefInjected/PreceptDef/Precepts_Aurora.xml
+VME_Aurora_Amazing.label	incrível
+VME_Aurora_Amazing.description	As auroras são um fenômeno belo e divino.
+VME_Aurora_Despised.description	Aquelas luzes ofuscantes no céu noturno nos dão dores de cabeça horríveis.
+## DefInjected/PreceptDef/Precepts_AutomationEfficiency.xml
+VME_AutomationEfficiency_Increased.description	Devemos abraçar a automação; trabalhar à mão é primitivo.\n\n<color=#E5E54C>Atributos:</color>\n - Velocidade em bancadas elétricas: x150%.
+VME_AutomationEfficiency_Decreased.label	reduzida
+VME_AutomationEfficiency_Decreased.description	A automação é desprezível. Trabalhar à mão é o verdadeiro artesanato.\n\n<color=#E5E54C>Atributos:</color>\n - Velocidade em bancadas elétricas: x50%.
+## DefInjected/PreceptDef/Precepts_AutonomousWeapons.xml
+VME_AutonomousWeapons_Accepted.label	aceitas
+VME_AutonomousWeapons_Accepted.description	Defesas automatizadas são um bom jeito de defender nossa colônia.
+VME_AutonomousWeapons_Accepted.comps.0.description	Torreta automática na colônia
+VME_AutonomousWeapons_Exalted.description	Defesas automatizadas são a chave para defender direito o que é nosso.
+VME_AutonomousWeapons_Exalted.comps.0.description	Torreta automática na colônia
+## DefInjected/PreceptDef/Precepts_BodyMod.xml
+VME_BodyMod_OnlyBiological.label	só biológico
+VME_BodyMod_OnlyBiological.description	Carne só deve ser substituída por carne; trocar o corpo por máquina é proibido.\n\n<color=#E5E54C>Efeito no jogo:</color>\n - Inclui membros carnemoldados, membros naturais, membros mutantes da Anomaly, implantes do Vanilla Genetics Expanded e implantes "oculares" do Alpha Animals.
+## DefInjected/PreceptDef/Precepts_BookQuality.xml
+VME_BookQuality_Desired.description	Nada nos deixaria mais felizes que conseguir livros lendários para a colônia.
+## DefInjected/PreceptDef/Precepts_BookReading.xml
+VME_BookReadingSpeed_Increased.description	Os livros são uma janela aberta para um mundo cheio de maravilhas; leremos rápido qualquer texto que encontrarmos.
+VME_BookReadingSpeed_Decreased.label	reduzida
+VME_BookReadingSpeed_Decreased.description	Ler não é algo que se faz com pressa. É importante passar muito tempo em cada página, absorvendo todos os detalhes.
+## DefInjected/PreceptDef/Precepts_Corruption.xml
+VME_Corruption_Essential.description	É importante abraçar os dons do nosso deus sombrio.
+## DefInjected/PreceptDef/Precepts_CraftingQuality.xml
+VME_CraftingQuality_Increased.description	Temos orgulho do nosso trabalho e não pegamos atalhos para chegar à perfeição.\n\n<color=#E5E54C>Efeito no jogo:</color>\n - Aumenta em 1 a qualidade dos itens feitos numa bancada, até lendário.
+VME_CraftingQuality_Decreased.label	reduzida
+VME_CraftingQuality_Decreased.description	Não ligamos para trabalho artesanal. Por que criar algo se dá para comprar ou roubar dos outros?\n\n<color=#E5E54C>Efeito no jogo:</color>\n - Reduz em 1 a qualidade dos itens feitos numa bancada, até horrível.
+## DefInjected/PreceptDef/Precepts_CraftingSpeed.xml
+VME_CraftingSpeed_Slower.label	mais lenta
+VME_CraftingSpeed_Slower.description	Um mestre artesão nunca deve se apressar, senão a qualidade do produto sofre.
+VME_CraftingSpeed_SlowerForManual.label	mais lenta no manual
+VME_CraftingSpeed_SlowerForManual.description	Não devemos desperdiçar nossas vidas preciosas em trabalho manual sem sentido.\n\n<color=#E5E54C>Atributos:</color>\n - Velocidade em bancadas não elétricas: x75%.
+VME_CraftingSpeed_FasterForManual.label	mais rápida no manual
+VME_CraftingSpeed_FasterForManual.description	O trabalho manual é nossa especialidade e gostamos de fazê-lo.\n\n<color=#E5E54C>Atributos:</color>\n - Velocidade em bancadas não elétricas: x125%.
+## DefInjected/PreceptDef/Precepts_Death.xml
+VME_Death_DontCare.description	A morte é inevitável; é melhor não lamentar as vidas perdidas.\n\n<color=#E5E54C>Efeito no jogo:</color>\n - Os colonos não recebem efeitos de humor por perder outros colonos.
+VME_Death_Normal.description	A morte é inevitável, um fato incrivelmente triste da vida.
+VME_Death_Troubling.label	perturbadora
+VME_Death_Troubling.description	A morte é inevitável, mas preferimos não pensar nela e ser lembrados dela o mínimo possível.
+## DefInjected/PreceptDef/Precepts_Defeat.xml
+VME_Defeat_Dishonorable.label	desonrosa
+VME_Defeat_Dishonorable.description	Sofrer um revés no campo de batalha é um insulto ao corpo, à mente e ao espírito.\n\n<color=#E5E54C>Efeito no jogo:</color>\n - Um colono derrubado em combate por um inimigo humanoide duas vezes em menos de 30 dias passa a exigir um ritual de suicídio cerimonial para limpar sua desonra. Mecanoides e animais não contam.
+## DefInjected/PreceptDef/Precepts_DumbLabor.xml
+VME_DumbLabor_Exalted.description	Um dia de trabalho duro limpando ou carregando deve ser respeitado.
+VME_DumbLabor_Liked.label	apreciado
+VME_DumbLabor_Liked.description	Trabalho duro faz bem ao corpo e à mente.
+VME_DumbLabor_Indifferent.label	indiferente
+VME_DumbLabor_Indifferent.description	Tarefas braçais são necessárias. E é só isso.
+VME_DumbLabor_Disliked.label	malvisto
+VME_DumbLabor_Disliked.description	Preferimos não limpar nem carregar, pois é exaustivo demais, mas é necessário.
+VME_DumbLabor_Horrible.description	Não devemos sofrer a desonra do trabalho braçal.\n\n<color=#E5E54C>Efeito no jogo:</color>\n - Os cargos de líder e moralista ficam incapazes de trabalho braçal.
+## DefInjected/PreceptDef/Precepts_Eclipse.xml
+VME_Eclipse_Despised.description	Eclipses dão medo; certamente são sinal de coisas piores por vir.
+## DefInjected/PreceptDef/Precepts_Elders.xml
+VME_Elders_Despised.description	O que é isto, um asilo?
+VME_Elders_Respected.description	Nossos anciãos devem ser respeitados.
+VME_Elders_Holy.description	Nossos anciãos devem ser respeitados e reverenciados, e jamais esperaremos deles trabalho pesado.\n\n<color=#E5E54C>Efeito no jogo:</color>\n - Colonos com mais de 65 anos não fazem trabalho braçal.
+## DefInjected/PreceptDef/Precepts_Expectations.xml
+VME_Expectations_High.description	É importante viver bem nos mundos da Orla e relaxar de vez em quando.\n\n<color=#E5E54C>Efeito no jogo:</color>\n - Expectativas aumentam 1 nível para todos na colônia, exceto elite e suprema, que não mudam por equilíbrio.
+VME_Expectations_Low.description	Os mundos da Orla são inóspitos. Não devemos esperar vidas confortáveis.\n\n<color=#E5E54C>Efeito no jogo:</color>\n - Expectativas diminuem 1 nível para todos na colônia, exceto elite e suprema, que não mudam por equilíbrio.
+## DefInjected/PreceptDef/Precepts_Farming.xml
+VME_FarmingYield_High.description	A lavoura é tão importante que a fazemos com muita atenção e respeito, e por isso colhemos mais.\n\n<color=#E5E54C>Atributos:</color>\n - Rendimento agrícola: +10%.
+## DefInjected/PreceptDef/Precepts_Fire.xml
+VME_Fire_Desired.description	As chamas são uma visão incrível.\n\n<color=#E5E54C>Efeito no jogo:</color>\n - Os colonos ganham bônus de humor conforme o número de fogos ativos no mapa. Fogueiras, tochas, outras fontes de fogo do jogo base e fogueiras de pedra do Vanilla Furniture Expanded - Core também contam.
+VME_Fire_Despised.description	Nada é tão perigoso quanto um incêndio fora de controle. Incêndios devem ser evitados a qualquer custo.\n\n<color=#E5E54C>Efeito no jogo:</color>\n - Os colonos ganham humor negativo conforme o número de fogos ativos no mapa. Fogueiras, tochas, outras fontes de fogo do jogo base e fogueiras de pedra do Vanilla Furniture Expanded - Core também contam.
+## DefInjected/PreceptDef/Precepts_Firefighting.xml
+VME_Firefighting_Abhorrent.description	Apagar uma chama viva é um ato nojento.
+VME_Firefighting_Preferred.description	Nada é mais empolgante que apagar um incêndio perigoso.
+## DefInjected/PreceptDef/Precepts_FungusEating.xml
+VME_FungusEating_DontCare.description	Fungo combina com lasanha.
+## DefInjected/PreceptDef/Precepts_Hospital.xml
+VME_Hospital_Required.description	Um hospital limpo é essencial para a saúde de longo prazo de qualquer comunidade.\n\n<color=#E5E54C>Efeito no jogo:</color>\n - Os colonos ganham penalidades ou bônus de humor conforme o tamanho das salas de hospital do mapa. Só contam hospitais com impressividade "decente" ou maior. Os hospitais também precisam estar limpos, senão os colonos reclamam!
+## DefInjected/PreceptDef/Precepts_Illness.xml
+VME_Illness_Exalted.description	Estar doente é ser abençoado.
+VME_Illness_Preferred.description	Ficar doente é uma desculpa para deitar e trabalhar menos.
+VME_Illness_Indifferent.label	indiferente
+VME_Illness_Indifferent.description	A doença é só mais um fato da vida.
+## DefInjected/PreceptDef/Precepts_Immunity.xml
+VME_Immunity_Enhanced.description	Peste, sofrimento, dor: tudo isso pode ser superado.
+## DefInjected/PreceptDef/Precepts_InsectJelly.xml
+VME_InsectJellyEaten_Despised.description	Geleia de inseto é nojenta.
+VME_InsectJellyEaten_Neutral_Classic.description	Geleia de inseto é macia, rica e nutritiva.
+VME_InsectJellyEaten_Loved_Classic.description	Geleia de inseto é ambrosia divina, um presente de criaturas perfeitas.
+## DefInjected/PreceptDef/Precepts_InsectMeat.xml
+VME_InsectMeatEating_Sacrilegious.description	Comer carne de inseto é vil e nojento.
+VME_InsectMeatEating_DontCare.description	Carne de inseto é só mais um tipo de carne.
+## DefInjected/PreceptDef/Precepts_Insectoids.xml
+VME_Insectoids_Exalted.description	Os insetos não são nossos inimigos, só incompreendidos.
+VME_Insectoids_Despised.description	Os insetos são nossos inimigos, uma praga que merece ser exterminada.
+## DefInjected/PreceptDef/Precepts_Junk.xml
+VME_Junk_Beautiful.description	É maravilhoso viver cercado pelo que os outros jogaram fora.\n\n<color=#E5E54C>Efeito no jogo:</color>\n - Estruturas de sucata antiga podem ser desinstaladas e recolocadas quando quiser.\n - Os colonos ganham penalidades ou bônus de humor conforme a quantidade de estruturas de sucata antiga num raio de 20 células. O efeito é verificado mais ou menos a cada 5 horas.
+VME_Junk_Preferred.description	A sucata antiga nos lembra as provações dos nossos antepassados, sujeitos à luta eterna da humanidade entre as estrelas. Podemos aprender muito estudando essa tecnologia descartada.\n\n<color=#E5E54C>Efeito no jogo:</color>\n - Estruturas de sucata antiga podem ser desinstaladas e recolocadas quando quiser.\n - Os colonos ganham penalidades ou bônus moderados de humor conforme a quantidade de estruturas de sucata antiga num raio de 20 células. O efeito é verificado mais ou menos a cada 5 horas.
+## DefInjected/PreceptDef/Precepts_JunkDeconstructionYield.xml
+VME_JunkDeconstructionYield_High.description	Jogar fora o que poderia ser reaproveitado é puro desperdício; tudo pode ter outro uso.\n\n<color=#E5E54C>Efeito no jogo:</color>\n - Desconstruir uma estrutura devolve 100% dos materiais originais. Vale também ao destruir uma estrutura (se ela deixar recursos ao ser destruída) e ao falhar na construção.
+## DefInjected/PreceptDef/Precepts_KillingWithFire.xml
+VME_KillingWithFire_Preferred.description	Os inimigos devem morrer queimados.
+VME_KillingWithFire_Abhorrent.description	Ver uma pessoa morrer queimada é horrível.
+## DefInjected/PreceptDef/Precepts_Leader.xml
+VME_Leader_Godlike.label	divino
+VME_Leader_Godlike.description	Nosso líder deve ser exaltado como um deus.\n\n<color=#E5E54C>Efeito no jogo:</color>\n - A opinião sobre o líder depende da certeza da pessoa em sua ideologia.
+VME_Leader_BestCrafter.label	melhor artesão
+VME_Leader_BestCrafter.description	Nosso artesão mais habilidoso é nosso líder.\n\n<color=#E5E54C>Efeito no jogo:</color>\n - O cargo de líder passa periodicamente, à força, para o artesão de nível mais alto da colônia (só funciona se a ideologia for a principal).
+VME_Leader_BestFighter.label	melhor lutador
+VME_Leader_BestFighter.description	Nosso lutador mais talentoso será nosso líder.
+VME_Leader_Three.label	três
+VME_Leader_Three.description	Devemos confiar nas mãos de poucos, e não nas mãos de um só.\n\n<color=#E5E54C>Efeito no jogo:</color>\n - Até três pessoas podem ser nomeadas líderes.
+VME_Leader_Moralist.label	moralista
+VME_Leader_Moralist.description	Nosso líder também é um guia moral.\n\n<color=#E5E54C>Efeito no jogo:</color>\n - O líder da colônia também pode usar as habilidades do moralista.
+## DefInjected/PreceptDef/Precepts_Leader_Royalty.xml
+VME_Leader_BestPsycaster.label	melhor conjurador
+VME_Leader_BestPsycaster.description	Só seremos liderados por quem provar ser o conjurador mais poderoso entre nós.\n\n<color=#E5E54C>Efeito no jogo:</color>\n - O cargo de líder passa periodicamente, à força, para o conjurador de nível mais alto da colônia (só funciona se a ideologia for a principal). O cargo vai para o último personagem que atingiu o maior nível de psínculo da colônia, mesmo que o líder atual tenha o mesmo nível.
+VME_Leader_HighestTitle.label	maior título
+VME_Leader_HighestTitle.description	A posição na corte imperial é a característica mais importante que um líder pode ter.\n\n<color=#E5E54C>Efeito no jogo:</color>\n - O cargo de líder passa periodicamente, à força, para quem tiver o maior título imperial da colônia (só funciona se a ideologia for a principal). O cargo vai para o último personagem que atingiu o maior título da colônia, mesmo que o líder atual tenha o mesmo nível.

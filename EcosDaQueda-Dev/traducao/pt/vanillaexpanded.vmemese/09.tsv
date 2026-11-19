@@ -1,0 +1,172 @@
+## DefInjected/MemeDef/Memes_Misc.xml
+VME_PartyLife.generalRules.rulesStrings[7]	memeMoralist->farrista
+VME_PartyLife.symbolPacks.0.adjective	festeiro
+VME_PartyLife.symbolPacks.0.ideoName	Vida de Festa
+VME_PartyLife.symbolPacks.0.member	celebrante
+VME_PartyLife.symbolPacks.0.theme	festa
+VME_Anonymity.label	anonimato
+VME_Anonymity.description	É melhor não conhecer os seus e ficar à distância.\n\n<color=#E5E54C>Efeito no jogo:</color>\n - O anonimato afeta muito as interações com prisioneiros e escravos: carcereiros com o meme anonimato ficam com raiva quando precisam interagir com prisioneiros. Escravos com o meme anonimato não podem ser reprimidos pelos carcereiros, pois ignoram a interação social. Resumindo: não use uma ideologia com este meme se pretende ter muitos prisioneiros ou escravos!
+VME_Anonymity.descriptionMaker.rules.rulesStrings[0]	creation(tag=meme_Anonymity)        ->[deity0_name] não falou com seus seguidores; só os olhou com severidade. Eles entenderam a necessidade de silêncio completo.
+VME_Anonymity.descriptionMaker.rules.rulesStrings[1]	episode(uses=1,tag=meme_Anonymity)  ->O silêncio total de [deity0_name] foi interpretado como um presságio, e desde então ficamos em silêncio.
+VME_Anonymity.descriptionMaker.rules.rulesStrings[2]	intro(tag=meme_Anonymity)           ->Em [place_summary] [place_name], os [memberNamePlural] construíram em completo silêncio um templo gigante, um testemunho mudo da vontade de [deity0_name].
+VME_Anonymity.descriptionMaker.rules.rulesStrings[3]	conflict(tag=meme_Anonymity)        ->Um(a) [foeLeader] maligno(a) desprezava esse silêncio e queria mergulhar o mundo numa cacofonia multitudinária. Queria derrubar o templo e vê-lo queimar.
+VME_Anonymity.descriptionMaker.rules.rulesStrings[4]	founderJoin(tag=meme_Anonymity)     ->[founderName], o(a) Silencioso(a), não aceitou essa heresia e cravou uma lâmina envenenada no coração do(a) [foeLeader] na calada da noite.
+VME_Anonymity.descriptionMaker.rules.rulesStrings[5]	victory(tag=meme_Anonymity)         ->[founderName] não quis nenhuma honraria por seus atos, pois só queria ser deixado(a) em paz.
+VME_Anonymity.descriptionMaker.rules.rulesStrings[6]	setup(tag=meme_Anonymity)           ->Não sabemos bem quem [founderName] foi de fato. Talvez nem tenha existido, e só guardamos uma vaga lembrança de uma espécie de mitologia. De todo modo, atribui-se a essa figura a ideia de que uma vida solitária de contemplação e isolamento é um fim em si mesma.
+VME_Anonymity.descriptionMaker.rules.rulesStrings[7]	story(uses=1,tag=meme_Anonymity)    ->O anonimato é um escudo contra a tirania da maioria.
+VME_Anonymity.descriptionMaker.rules.rulesStrings[8]	lessonIntro(tag=meme_Anonymity)         ->Deixe-me pôr estas palavras no papel, pois transmiti-las em voz alta é repulsivo:
+VME_Anonymity.descriptionMaker.rules.rulesStrings[9]	lesson(tag=meme_Anonymity)              ->você nunca dá valor ao anonimato até não tê-lo mais
+VME_Anonymity.descriptionMaker.rules.rulesStrings[10]	lessonReinforcement(tag=meme_Anonymity) ->Querer ser desconhecido, não possuído pelo que os outros sabem de você. Isso é liberdade.
+VME_Anonymity.descriptionMaker.rules.rulesStrings[11]	archistBasis(tag=meme_Anonymity)    ->Os arquotécnicos são desconhecidos e impossíveis de conhecer, protegidos pela máscara suprema: a transcendência.
+VME_Anonymity.descriptionMaker.rules.rulesStrings[12]	archistFact(tag=meme_Anonymity)     ->Os arquotécnicos perguntam: "Qual é o propósito da civilização senão conceder o maior dos presentes, o anonimato?"
+VME_Anonymity.descriptionMaker.rules.rulesStrings[13]	archistProphecy(tag=meme_Anonymity) ->[inTheEnd], só quem passar a vida no anonimato poderá transcender.
+VME_Anonymity.descriptionMaker.rules.rulesStrings[14]	animistBasis(tag=meme_Anonymity)    ->Os espíritos não ligam para nossas identidades sem sentido e preferem que fiquemos anônimos.
+VME_Anonymity.descriptionMaker.rules.rulesStrings[15]	animistFact(tag=meme_Anonymity)     ->Eles nos mostram que uma vida solitária de contemplação e isolamento é um fim em si mesma.
+VME_Anonymity.descriptionMaker.rules.rulesStrings[16]	animistProphecy(tag=meme_Anonymity) ->[itIsSaid] só quem passar a vida em solidão e silêncio pode comungar de verdade com os espíritos.
+VME_Anonymity.descriptionMaker.rules.rulesStrings[17]	serketistProphecy(tag=meme_Anonymity)->[itIsSaid] sumiremos no anonimato como incontáveis formigas, parte de um todo, mas insignificantes sozinhas.
+VME_Anonymity.descriptionMaker.rules.rulesStrings[18]	chthonianProphecy(tag=meme_Anonymity)->É loucura erguer a voz em desafio a essas entidades; por isso ficaremos em silêncio, isolados, para não atrair sua atenção indesejada.
+VME_Anonymity.descriptionMaker.rules.rulesStrings[19]	esotericismProphecy(tag=meme_Anonymity)->Esse conhecimento oculto só pode ser descoberto com meditação cuidadosa. E talvez descubramos que uma vida solitária de contemplação e isolamento é um fim em si mesma.
+VME_Anonymity.descriptionMaker.rules.rulesStrings[20]	eschatologismFact(tag=meme_Anonymity)->O mundo vai queimar, e seremos os portadores sem rosto e anônimos da sua queda.
+VME_Anonymity.descriptionMaker.rules.rulesStrings[21]	introMemo(tag=meme_Anonymity)->Ultimamente tivemos vários casos de gente usando "Responder a todos" nos e-mails da empresa. Lembro que isso é desnecessário e causa confusão.
+VME_Anonymity.descriptionMaker.rules.rulesStrings[22]	alienistProphecy(tag=meme_Anonymity)->Os animais não ligam para humanos. Podemos ser nós mesmos com eles, pois não julgam tanto quanto os humanos.
+VME_Anonymity.generalRules.rulesStrings[0]	memeCreed->anonimato
+VME_Anonymity.generalRules.rulesStrings[1]	memeAdjective->anônimo(a)
+VME_Anonymity.generalRules.rulesStrings[2]	memeAdjective->misterioso(a)
+VME_Anonymity.generalRules.rulesStrings[3]	memeAdjective->sem nome
+VME_Anonymity.generalRules.rulesStrings[4]	memeAdjective->discreto(a)
+VME_Anonymity.generalRules.rulesStrings[5]	memeConcept->privacidade
+VME_Anonymity.generalRules.rulesStrings[6]	memeConcept->anonimato
+VME_Anonymity.generalRules.rulesStrings[7]	memeLeaderNoun->anônimo
+VME_Anonymity.symbolPacks.0.adjective	anônimo
+VME_Anonymity.symbolPacks.0.ideoName	Anonimato
+VME_Anonymity.symbolPacks.0.member	anônimo
+VME_Anonymity.symbolPacks.0.theme	anonimato
+VME_Emancipation.label	emancipação
+VME_Emancipation.description	Ninguém deve ser escravizado, e todos os escravos devem ser libertados.
+VME_Emancipation.descriptionMaker.rules.rulesStrings[0]	creation(tag=meme_Emancipation)        ->[deity0_name] nos mostrou que a escravidão é uma aberração e deve ser detida a qualquer custo.
+VME_Emancipation.descriptionMaker.rules.rulesStrings[1]	episode(uses=1,tag=meme_Emancipation)  ->[deity0_name] disse a todos os [memberNamePlural]: "Quem nega a liberdade aos outros não a merece para si."
+VME_Emancipation.descriptionMaker.rules.rulesStrings[2]	intro(tag=meme_Emancipation)           ->Em [place_summary] [place_name], começou uma tradição no(a) [altarRoomLabel] de [deity0_name]: escravos eram libertados e ganhavam uma nova chance na vida.
+VME_Emancipation.descriptionMaker.rules.rulesStrings[3]	conflict(tag=meme_Emancipation)           ->Um(a) [foeLeader] intolerante olhou para isso com desprezo, pois era um(a) escravagista que via seus lucros ameaçados.
+VME_Emancipation.descriptionMaker.rules.rulesStrings[4]	founderJoin(tag=meme_Emancipation)        ->O(a) seguidor(a) mais fiel de [deity0_name], [founderName], postou-se diante do(a) [place_powerCenter] e fez um longo e apaixonado discurso sobre a emancipação e os males da escravidão.
+VME_Emancipation.descriptionMaker.rules.rulesStrings[5]	victory(tag=meme_Emancipation)            ->Mesmo que o(a) [foeLeader] não tenha se convencido, todos os outros aplaudiram as palavras de [founderName], que desde então passou a ser visto(a) como porta-voz de [deity0_name].
+VME_Emancipation.descriptionMaker.rules.rulesStrings[6]	setup(tag=meme_Emancipation)           ->[founderName] nasceu num mundo urbano opressor onde a escravidão era comum. Cresceu vendo outros seres humanos usados como propriedade, e isso lhe dava um nojo profundo.
+VME_Emancipation.descriptionMaker.rules.rulesStrings[7]	story(uses=1,tag=meme_Emancipation)    ->[founderName] decidiu abolir a escravidão em seu planeta natal, e com o sucesso sua filosofia se espalhou pelas estrelas.
+VME_Emancipation.descriptionMaker.rules.rulesStrings[8]	lessonIntro(tag=meme_Emancipation)         ->A escravidão é roubo: roubo de uma vida, roubo do trabalho, roubo de qualquer bem ou fruto, roubo até dos filhos que um escravo possa ter tido. É muito importante que você entenda que
+VME_Emancipation.descriptionMaker.rules.rulesStrings[9]	lesson(tag=meme_Emancipation)              ->a natureza não fez ninguém escravo
+VME_Emancipation.descriptionMaker.rules.rulesStrings[10]	lessonReinforcement(tag=meme_Emancipation) ->Subjugar o outro é subjugar a si mesmo.
+VME_Emancipation.descriptionMaker.rules.rulesStrings[11]	archistBasis(tag=meme_Emancipation)    ->Os arquotécnicos são o auge do desenvolvimento ético. Seres tão sábios e tão avançados que alcançaram a perfeição no pensamento.
+VME_Emancipation.descriptionMaker.rules.rulesStrings[12]	archistFact(tag=meme_Emancipation)     ->Para um arquotécnico, a escravidão é um pecado abominável. Tratar outro humano como objeto.
+VME_Emancipation.descriptionMaker.rules.rulesStrings[13]	archistProphecy(tag=meme_Emancipation) ->Só abolindo a escravidão e combatendo-a onde quer que a vejamos poderemos ser dignos da transcendência.
+VME_Emancipation.descriptionMaker.rules.rulesStrings[14]	animistBasis(tag=meme_Emancipation)    ->O próprio conceito de escravidão, de possuir outro ser humano como se fosse um objeto, é incompreensível para os espíritos.
+VME_Emancipation.descriptionMaker.rules.rulesStrings[15]	animistFact(tag=meme_Emancipation)     ->Para os espíritos, a escravidão não é só pecaminosa e errada, mas algo a ser combatido ativamente de todas as formas possíveis.
+VME_Emancipation.descriptionMaker.rules.rulesStrings[16]	animistProphecy(tag=meme_Emancipation) ->[itIsSaid] só abolindo a escravidão e combatendo-a onde quer que a vejamos faremos os espíritos nos ouvirem de verdade.
+VME_Emancipation.descriptionMaker.rules.rulesStrings[17]	serketistProphecy(tag=meme_Emancipation)->[itIsSaid] formaremos uma sociedade em que nenhum humano possui outro como se fosse um mero objeto. Acolhedora e tolerante, como todos os insetos.
+VME_Emancipation.descriptionMaker.rules.rulesStrings[18]	chthonianProphecy(tag=meme_Emancipation)->Essas entidades sobrenaturais adorariam escravizar a raça humana para cumprir suas ordens.
+VME_Emancipation.descriptionMaker.rules.rulesStrings[19]	esotericismProphecy(tag=meme_Emancipation)->Esse conhecimento oculto exigirá uma mente sem grilhões. Enquanto a mente estiver escravizada, o corpo nunca será livre.
+VME_Emancipation.descriptionMaker.rules.rulesStrings[20]	eschatologismFact(tag=meme_Emancipation)->Só trabalhando juntos podemos trazer o fim do mundo. Libertaremos cada escravo acorrentado e o recrutaremos para a nossa causa.
+VME_Emancipation.descriptionMaker.rules.rulesStrings[21]	introMemo(tag=meme_Emancipation)->Todos sabemos que algumas outras corporações da Orla praticam "exploração pseudoilícita de capital humano"; por isso é política da empresa libertar esses "colaboradores compulsórios" o quanto antes e lhes oferecer um estágio conosco.
+VME_Emancipation.descriptionMaker.rules.rulesStrings[22]	alienistProphecy(tag=meme_Emancipation)->Essas criaturas desgarradas encarnam o conceito de liberdade que defendemos, e faríamos bem em aprender com elas.
+VME_Emancipation.generalRules.rulesStrings[0]	memeAdjective->emancipador(a)
+VME_Emancipation.generalRules.rulesStrings[1]	memeAdjective->libertador(a)
+VME_Emancipation.generalRules.rulesStrings[3]	memeAdjective->independente
+VME_Emancipation.generalRules.rulesStrings[4]	memeLeaderNoun->emancipador
+VME_Emancipation.generalRules.rulesStrings[5]	memeCreed->emancipação
+VME_Emancipation.generalRules.rulesStrings[6]	memeHyphenPrefix->livre
+VME_Emancipation.symbolPacks.0.adjective	emancipador
+VME_Emancipation.symbolPacks.0.ideoName	Emancipação
+VME_Emancipation.symbolPacks.0.member	libertador
+VME_Emancipation.symbolPacks.0.theme	emancipação
+VME_Nationalist.label	nacionalista
+VME_Nationalist.description	Nosso povo tem forte senso de patriotismo; temos o dever de corrigir os dissidentes e fazer justiça.
+VME_Nationalist.descriptionMaker.rules.rulesStrings[0]	creation(tag=meme_Nationalist)        ->[deity0_name] nos mostrou que as democracias plutocráticas e reacionárias bloquearam a marcha e muitas vezes conspiraram contra a existência dos [memberNamePlural].
+VME_Nationalist.descriptionMaker.rules.rulesStrings[1]	episode(uses=1,tag=meme_Nationalist)  ->[deity0_name] bradou a todos os [memberNamePlural]: "Soa para nós a hora marcada pelo destino. Chegou a hora da decisão irrevogável."
+VME_Nationalist.descriptionMaker.rules.rulesStrings[2]	intro(tag=meme_Nationalist)           ->Em [place_summary] [place_name], enormes estátuas monolíticas saudavam e exaltavam a glória de [deity0_name].
+VME_Nationalist.descriptionMaker.rules.rulesStrings[3]	conflict(tag=meme_Nationalist)           ->Um(a) [foeLeader] covarde olhou para isso com desprezo, pois era um(a) revolucionário(a) que não acreditava em ordem, justiça e honra.
+VME_Nationalist.descriptionMaker.rules.rulesStrings[4]	founderJoin(tag=meme_Nationalist)        ->O(a) seguidor(a) mais fiel de [deity0_name], [founderName], um(a) verdadeiro(a) patriota, postou-se diante do(a) [place_powerCenter] e fez um longo e inflamado discurso sobre como o(a) [foeLeader] era o inimigo número um, o mais poderoso, contra quem os [memberNamePlural] lutavam e contra quem deviam continuar a luta até a última gota de sangue.
+VME_Nationalist.descriptionMaker.rules.rulesStrings[5]	victory(tag=meme_Nationalist)            ->Encorajadas pelas palavras de [founderName], suas tropas prenderam o(a) [foeLeader], que foi executado(a) dias depois para a glória de [deity0_name].
+VME_Nationalist.descriptionMaker.rules.rulesStrings[6]	setup(tag=meme_Nationalist)           ->[founderName] foi um(a) herói(heroína) do povo, um(a) verdadeiro(a) patriota. Todos estavam unidos sob sua bandeira.
+VME_Nationalist.descriptionMaker.rules.rulesStrings[7]	story(uses=1,tag=meme_Nationalist)    ->[founderName] nos fez entender que as dificuldades, os sofrimentos e os sacrifícios enfrentados com coragem e dignidade exemplares têm seu dia de recompensa quando todas as forças inimigas são esmagadas nos campos de batalha pelo heroísmo dos nossos soldados.
+VME_Nationalist.descriptionMaker.rules.rulesStrings[8]	lessonIntro(tag=meme_Nationalist)         ->Por meio de vocês quero falar ao nosso povo, ao povo autêntico, verdadeiro e grande, que luta com a coragem dos leões nas frentes de terra, mar e ar. É muito importante que vocês entendam que
+VME_Nationalist.descriptionMaker.rules.rulesStrings[9]	lesson(tag=meme_Nationalist)              ->eles não podem de jeito nenhum ser confundidos ou contaminados pela minoria de indivíduos antissociais e reclamões conhecidos, que resmungam por seus confortos suspensos
+VME_Nationalist.descriptionMaker.rules.rulesStrings[10]	lessonReinforcement(tag=meme_Nationalist) ->Somos um grande povo. Merecemos a vitória e a teremos.
+VME_Nationalist.descriptionMaker.rules.rulesStrings[11]	archistBasis(tag=meme_Nationalist)    ->Os arquotécnicos não respeitam quem não sabe se defender: erguemo-nos como uma só ordem unificada, sob uma só bandeira, e nenhum inimigo pode abalar o ideal que representamos.
+VME_Nationalist.descriptionMaker.rules.rulesStrings[12]	archistFact(tag=meme_Nationalist)     ->Nossa nação se erguerá triunfante sobre as demais, provando aos arquotécnicos que somos Um só povo, Uma só voz.
+VME_Nationalist.descriptionMaker.rules.rulesStrings[13]	archistProphecy(tag=meme_Nationalist) ->Só nos mantendo orgulhosos como os únicos seguidores verdadeiros dos nossos ideais poderemos ser dignos da transcendência.
+VME_Nationalist.descriptionMaker.rules.rulesStrings[14]	animistBasis(tag=meme_Nationalist)    ->Os espíritos entendem a necessidade de uma vontade unificada. A preservação dos nossos valores eternos, cuja supressão significaria instabilidade e caos.
+VME_Nationalist.descriptionMaker.rules.rulesStrings[15]	animistFact(tag=meme_Nationalist)     ->Para os espíritos, está claro que nossa juventude se preparou para a luta e gerou o espírito da nossa cruzada, tirado das nossas mais sólidas tradições de valores espirituais e fundido com os anseios sociais do nosso tempo.
+VME_Nationalist.descriptionMaker.rules.rulesStrings[16]	animistProphecy(tag=meme_Nationalist) ->[itIsSaid] só nos mantendo orgulhosos como os únicos seguidores verdadeiros dos nossos ideais faremos os espíritos nos ouvirem de verdade.
+VME_Nationalist.descriptionMaker.rules.rulesStrings[17]	serketistProphecy(tag=meme_Nationalist)->[itIsSaid] seremos de verdade Um só povo, com uma vontade unificada, orgulhosos como os únicos seguidores verdadeiros dos nossos ideais.
+VME_Nationalist.descriptionMaker.rules.rulesStrings[18]	chthonianProphecy(tag=meme_Nationalist)->Essas entidades sobrenaturais tentariam nos destruir, mas lhes falta visão para entender que as enfrentaremos com orgulho, como os únicos seguidores verdadeiros dos nossos ideais.
+VME_Nationalist.descriptionMaker.rules.rulesStrings[19]	esotericismProphecy(tag=meme_Nationalist)->Esse conhecimento oculto exige uma vontade unificada e de ferro. Nos manteremos orgulhosos como os únicos seguidores verdadeiros dos nossos ideais.
+VME_Nationalist.descriptionMaker.rules.rulesStrings[20]	eschatologismFact(tag=meme_Nationalist)->Só nossa nação é forte o bastante para fazer o que precisa ser feito. Nos manteremos orgulhosos como os únicos seguidores verdadeiros dos nossos ideais, até o fim.
+VME_Nationalist.descriptionMaker.rules.rulesStrings[21]	introMemo(tag=meme_Nationalist)->Lembramos que ter mais de um emprego é expressamente proibido pelo contrato que você assinou. Se achar que algum colega está fazendo isso, denuncie o quanto antes para que as medidas disciplinares cabíveis sejam aplicadas.
+VME_Nationalist.descriptionMaker.rules.rulesStrings[22]	alienistProphecy(tag=meme_Nationalist)->Essas criaturas desgarradas são nossas, para fazermos o que quisermos.
+VME_Nationalist.generalRules.rulesStrings[0]	memeAdjective->firme
+VME_Nationalist.generalRules.rulesStrings[1]	memeAdjective->oligárquico(a)
+VME_Nationalist.generalRules.rulesStrings[2]	memeAdjective->absoluto(a)
+VME_Nationalist.generalRules.rulesStrings[3]	memeAdjective->intransigente
+VME_Nationalist.generalRules.rulesStrings[4]	memeAdjective->repressivo(a)
+VME_Nationalist.generalRules.rulesStrings[5]	memeAdjective->de mão de ferro
+VME_Nationalist.generalRules.rulesStrings[6]	memeAdjective->populista
+VME_Nationalist.generalRules.rulesStrings[7]	memeLeaderNoun->líder supremo
+VME_Nationalist.generalRules.rulesStrings[8]	memeLeaderNoun->caudilho
+VME_Nationalist.generalRules.rulesStrings[9]	memeLeaderNoun->presidente do partido
+VME_Nationalist.generalRules.rulesStrings[10]	memeLeaderNoun->duce
+VME_Nationalist.generalRules.rulesStrings[11]	memeLeaderNoun->presidente vitalício
+VME_Nationalist.generalRules.rulesStrings[12]	memeLeaderAdjective->severo(a)
+VME_Nationalist.generalRules.rulesStrings[13]	memeLeaderAdjective->patriota
+VME_Nationalist.generalRules.rulesStrings[15]	memeLeaderAdjective->duro(a)
+VME_Nationalist.generalRules.rulesStrings[16]	memeLeaderAdjective->implacável
+VME_Nationalist.generalRules.rulesStrings[17]	memeLeaderAdjective->inexorável
+VME_Nationalist.generalRules.rulesStrings[18]	memeMoralist->propagandista
+VME_Nationalist.generalRules.rulesStrings[19]	memeMoralist->defensor do regime
+VME_Nationalist.generalRules.rulesStrings[20]	memeMoralist->militante
+VME_Nationalist.generalRules.rulesStrings[21]	memeConcept->nacionalismo
+VME_Nationalist.symbolPacks.0.adjective	nacionalista
+VME_Nationalist.symbolPacks.0.ideoName	Nacionalismo
+VME_Nationalist.symbolPacks.0.member	patriota
+VME_Nationalist.symbolPacks.0.theme	nacionalismo
+VME_Healthcare.label	saúde pública
+VME_Healthcare.description	O bem-estar do corpo e da mente é algo que nosso povo leva muito a sério.
+VME_Healthcare.descriptionMaker.rules.rulesStrings[0]	creation(tag=meme_Healthcare)        ->[deity0_name] falou aos seus seguidores: "Deem às pessoas o que elas precisam: comida, remédio, ar limpo, água pura, árvores e grama. Não perguntem quem merece. Todo ser humano merece."
+VME_Healthcare.descriptionMaker.rules.rulesStrings[1]	episode(uses=1,tag=meme_Healthcare)  ->Como [deity0_name] ordenou, sempre cuidamos uns dos outros e juntamos nossos recursos para que ninguém precise sofrer sozinho.
+VME_Healthcare.descriptionMaker.rules.rulesStrings[2]	intro(tag=meme_Healthcare)           ->Em [place_summary] [place_name], os [memberNamePlural] construíram um hospital gigantesco, onde os doentes e enfermos eram cuidados.
+VME_Healthcare.descriptionMaker.rules.rulesStrings[3]	conflict(tag=meme_Healthcare)        ->Um(a) maligno(a) vendedor(a) de planos de saúde, vendo seus lucros evaporarem por causa da saúde pública, quis sabotar o hospital a qualquer custo.
+VME_Healthcare.descriptionMaker.rules.rulesStrings[4]	founderJoin(tag=meme_Healthcare)     ->Nosso(a) fundador(a), [founderName], disse-lhe com firmeza: "É difícil falar em meio-termo para algo que é um direito fundamental."
+VME_Healthcare.descriptionMaker.rules.rulesStrings[5]	victory(tag=meme_Healthcare)         ->No fim, todos se convenceram dos argumentos do(a) fundador(a), e os [memberNamePlural] acreditarão para sempre na saúde universal.
+VME_Healthcare.descriptionMaker.rules.rulesStrings[6]	setup(tag=meme_Healthcare)           ->[founderName] era um(a) cirurgião(ã) consagrado(a) num dos mundos reluzentes, mas perdeu o movimento das mãos num acidente de trânsito. Foi assim que virou Mago Supremo e... espera, universo errado...
+VME_Healthcare.descriptionMaker.rules.rulesStrings[7]	story(uses=1,tag=meme_Healthcare)    ->[founderName] defendia que a saúde é seu selo de garantia. Parece bem inútil gastar a saúde sem parar para ganhar dinheiro que depois vamos gastar para recuperar a saúde.
+VME_Healthcare.descriptionMaker.rules.rulesStrings[8]	lessonIntro(tag=meme_Healthcare)         ->O médico mais velho da nossa colônia me ensinou a história da saúde, como curar quem não tem meios de se curar é a base de uma sociedade livre. Ele estava me levando a entender que
+VME_Healthcare.descriptionMaker.rules.rulesStrings[9]	lesson(tag=meme_Healthcare)              ->toda jornada da sua vida começa com uma mente sã e um corpo são
+VME_Healthcare.descriptionMaker.rules.rulesStrings[10]	lessonReinforcement(tag=meme_Healthcare) ->Talvez você não dê valor à boa saúde quando a tem, mas com certeza vai lamentar a falta dela, porque saúde é felicidade.
+VME_Healthcare.descriptionMaker.rules.rulesStrings[11]	archistBasis(tag=meme_Healthcare)    ->Os arquotécnicos são sábios além da conta. Os valores de compaixão e empatia são importantes para eles.
+VME_Healthcare.descriptionMaker.rules.rulesStrings[12]	archistFact(tag=meme_Healthcare)     ->Uma sociedade que não cuida dos necessitados é uma zombaria cruel da civilização. Como os arquotécnicos nos julgariam se não curássemos quem precisa?
+VME_Healthcare.descriptionMaker.rules.rulesStrings[13]	archistProphecy(tag=meme_Healthcare) ->[inTheEnd], os arquotécnicos só deixarão os mais compassivos de nós transcender.
+VME_Healthcare.descriptionMaker.rules.rulesStrings[14]	animistBasis(tag=meme_Healthcare)    ->Os espíritos valorizam a compaixão e a empatia acima de tudo.
+VME_Healthcare.descriptionMaker.rules.rulesStrings[15]	animistFact(tag=meme_Healthcare)     ->A alma é a mesma em todas as criaturas vivas, então faz sentido não fazer distinção ao curar os outros.
+VME_Healthcare.descriptionMaker.rules.rulesStrings[16]	animistProphecy(tag=meme_Healthcare) ->[itIsSaid] que só quem consegue cuidar de verdade de qualquer necessitado poderá comungar com os espíritos.
+VME_Healthcare.descriptionMaker.rules.rulesStrings[17]	serketistProphecy(tag=meme_Healthcare)->[itIsSaid] cuidaremos uns dos outros como os insetos fazem. Unidos em propósito, vontade e compaixão mútua.
+VME_Healthcare.descriptionMaker.rules.rulesStrings[18]	chthonianProphecy(tag=meme_Healthcare)->Essas entidades sobrenaturais adorariam nos ver brigando entre nós, nos despedaçando. Mostraremos a elas que compaixão e empatia são os únicos objetivos que valem a pena.
+VME_Healthcare.descriptionMaker.rules.rulesStrings[19]	esotericismProphecy(tag=meme_Healthcare)->Esse conhecimento oculto exigirá uma mente pura para ser compreendido. Pela compaixão e empatia com os outros, alcançaremos um estado de espírito que nos deixará ver o cosmos como ele realmente é.
+VME_Healthcare.descriptionMaker.rules.rulesStrings[20]	eschatologismFact(tag=meme_Healthcare)->Vamos zelar e apoiar uns aos outros, pois somos um bastião de pureza neste mundo obsceno, e por comparação veremos sua iniquidade e por que seus habitantes cruéis precisam ser purgados.
+VME_Healthcare.descriptionMaker.rules.rulesStrings[21]	introMemo(tag=meme_Healthcare)->Lembro que a empresa oferece benefícios de saúde abrangentes como parte do contrato de trabalho. Fiquem à vontade para ver os detalhes na intranet e mandar dúvidas ao departamento de recursos humanos.
+VME_Healthcare.descriptionMaker.rules.rulesStrings[22]	alienistProphecy(tag=meme_Healthcare)->Essas criaturas desgarradas são seres pobres e inocentes. Devemos cuidar delas e mostrar compaixão e empatia.
+VME_Healthcare.generalRules.rulesStrings[0]	memeAdjective->saudável
+VME_Healthcare.generalRules.rulesStrings[1]	memeAdjective->médico(a)
+VME_Healthcare.generalRules.rulesStrings[2]	memeAdjective->preventivo(a)
+VME_Healthcare.generalRules.rulesStrings[3]	memeCreed->saúde
+VME_Healthcare.generalRules.rulesStrings[4]	memeCreed->bem-estar
+VME_Healthcare.generalRules.rulesStrings[5]	memeHyphenPrefix->fit
+VME_Healthcare.generalRules.rulesStrings[6]	memeConcept->hospitais
+VME_Healthcare.generalRules.rulesStrings[7]	memeLeaderNoun->cirurgião
+VME_Healthcare.generalRules.rulesStrings[8]	memeMoralist->médico
+VME_Healthcare.symbolPacks.0.ideoName	Saúde Pública
+VME_Healthcare.symbolPacks.0.theme	saúde
+VFEA_Isolationist.label	isolacionista
+VFEA_Isolationist.description	Confiança é um recurso escasso; todos que nosso povo encontra são inimigos.
+VFEA_Isolationist.descriptionMaker.rules.rulesStrings[0]	creation(tag=meme_Isolationist)        ->O povo de [place_summary] [place_name] brigava sem fim entre si, e [deity0_name] se cansou da discórdia e ungiu os [memberNamePlural] como os únicos governantes legítimos de todo ser vivo.
+VFEA_Isolationist.descriptionMaker.rules.rulesStrings[1]	episode(uses=1,tag=meme_Isolationist)  ->Os fiéis combateram os descrentes, e [deity0_name] disse: "Combatam-nos em toda parte, pois são seus inimigos, e a paz com eles nunca foi uma opção."
+VFEA_Isolationist.descriptionMaker.rules.rulesStrings[2]	intro(tag=meme_Isolationist)           ->O povo de [place_summary] [place_name] adorava [deity0_name], que viu que eram feitos para [memeConcept] e decretou que seriam a única facção digna da ascensão.
+VFEA_Isolationist.descriptionMaker.rules.rulesStrings[3]	conflict(tag=meme_Isolationist)        ->Um(a) [foeLeader] aprovou uma lei que proibia os [memberNamePlural] de subir às classes dominantes de [place_name]. Assim, os [memberNamePlural] começaram a conspirar e a criar alianças ocultas e secretas.
+VFEA_Isolationist.descriptionMaker.rules.rulesStrings[4]	founderJoin(tag=meme_Isolationist)     ->Um(a) guerreiro(a) chamado(a) [founderName] usou [place_massWeapon] para destruir um(a) [place_community]. [deity0_name] viu a crueldade de [founderName] e lhe ordenou levar uma vida de isolamento e segredo.
+VFEA_Isolationist.descriptionMaker.rules.rulesStrings[5]	victory(tag=meme_Isolationist)         ->[founderName] destruiu a capital de [place_name] com [place_massWeapon], matando o(a) [foeLeader]. Não assumiu o lugar de governante de [place_name]; em vez disso, [founderName] se escondeu.

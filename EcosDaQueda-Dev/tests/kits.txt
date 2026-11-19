@@ -1,0 +1,7 @@
+# Kits fixos do editor (EcosDaQueda-Dev/kits): a coleção EQ_Kit_Teste (Defs do mod de debug) é ligada a uma unidade só durante o teste e
+# cada pawn gerado precisa sair com as peças da variação sorteada.
+newgame EQ_Scenario_Abrigo EQ_Storyteller_Central
+kittest EQ_Kit_Teste EQ_Forja_Tecnico 16
+kit EQ_Forja_Tecnico 6
+# Elenco do editor (aba Unidades): EQ_Elenco_Teste põe EQ_U_Teste_Recruta nos ataques e guardas da Forja; a unidade sai com o kit.
+roster EQ_Faction_Forja EQ_Elenco_Teste

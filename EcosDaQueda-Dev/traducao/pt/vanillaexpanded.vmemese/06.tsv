@@ -1,0 +1,165 @@
+## DefInjected/MemeDef/Memes_Misc.xml
+VME_Trader.descriptionMaker.rules.rulesStrings[8]	lessonIntro(tag=meme_Trader)         ->O comerciante mais velho da minha caravana me ensinou a história da riqueza, como a humanidade sempre buscou aumentar sua prosperidade. Ele estava me levando a entender que
+VME_Trader.descriptionMaker.rules.rulesStrings[9]	lesson(tag=meme_Trader)              ->a verdadeira medida e o verdadeiro poder de um homem estão no lucro
+VME_Trader.descriptionMaker.rules.rulesStrings[10]	lessonReinforcement(tag=meme_Trader) ->Um homem pobre é um homem indefeso, e a Orla não é lugar para fracotes.
+VME_Trader.descriptionMaker.rules.rulesStrings[11]	archistBasis(tag=meme_Trader)    ->Imagine um mundo entrando na transcendência. Você acha mesmo que as massas de mendigos pobres, imundos e malcheirosos têm algum lugar nesse processo?
+VME_Trader.descriptionMaker.rules.rulesStrings[12]	archistFact(tag=meme_Trader)     ->Os arquotécnicos não podem elevar todos, e é lógico que escolherão os mais prósperos e capazes de nós.
+VME_Trader.descriptionMaker.rules.rulesStrings[13]	archistProphecy(tag=meme_Trader) ->[inTheEnd], só quem puder comprar seu caminho até a transcendência será escolhido.
+VME_Trader.descriptionMaker.rules.rulesStrings[14]	animistBasis(tag=meme_Trader)    ->Assim como há espíritos da natureza e das máquinas, há espíritos que governam os conceitos abstratos que guiam o futuro da humanidade.
+VME_Trader.descriptionMaker.rules.rulesStrings[15]	animistFact(tag=meme_Trader)     ->Entre os espíritos, o espírito da riqueza tem poder sem igual, pois controla a esfera da prosperidade, do poder.
+VME_Trader.descriptionMaker.rules.rulesStrings[16]	animistProphecy(tag=meme_Trader) ->[itIsSaid] só quem acumula uma riqueza incrível consegue de verdade aplacar os espíritos.
+VME_Trader.descriptionMaker.rules.rulesStrings[17]	serketistProphecy(tag=meme_Trader)->[itIsSaid] como as formigas guardam comida para o longo inverno, acumularemos riquezas além de toda imaginação e, com elas, uma prosperidade incrível.
+VME_Trader.descriptionMaker.rules.rulesStrings[18]	chthonianProphecy(tag=meme_Trader)->Só os verdadeiramente prósperos podem esperar escapar do olhar dessas entidades sobrenaturais. Acumularemos riquezas além de toda imaginação e, com sorte, compraremos com elas nossa saída da insanidade delas.
+VME_Trader.descriptionMaker.rules.rulesStrings[19]	esotericismProphecy(tag=meme_Trader)->Esse conhecimento oculto vai sair caro. Acumularemos riquezas além de toda imaginação e, com sorte, compraremos com elas todos os segredos que ainda estão escondidos.
+VME_Trader.descriptionMaker.rules.rulesStrings[20]	eschatologismFact(tag=meme_Trader)->Acumularemos riquezas além de toda imaginação e, com sorte, compraremos com elas as armas do juízo final que trarão o fim dos tempos.
+VME_Trader.descriptionMaker.rules.rulesStrings[21]	introMemo(tag=meme_Trader)->Quanto aos incentivos aos colaboradores, lembrem que isto não é caridade. Como diz o ditado: "é a riqueza que move o mundo, e o lucro que o governa".
+VME_Trader.descriptionMaker.rules.rulesStrings[22]	alienistProphecy(tag=meme_Trader)->Essas criações desgarradas, nascidas da criatividade humana, representam uma riqueza potencial sem limites que faríamos bem em explorar.
+VME_Trader.generalRules.rulesStrings[0]	memeAdjective->mercantil
+VME_Trader.generalRules.rulesStrings[1]	memeAdjective->rico(a)
+VME_Trader.generalRules.rulesStrings[2]	memeAdjective->lucrativo(a)
+VME_Trader.generalRules.rulesStrings[3]	memeAdjective->ganancioso(a)
+VME_Trader.generalRules.rulesStrings[4]	memeAdjective->materialista
+VME_Trader.generalRules.rulesStrings[5]	memeHyphenPrefix->comércio
+VME_Trader.generalRules.rulesStrings[6]	memeConcept->comércio
+VME_Trader.generalRules.rulesStrings[7]	memeLeaderNoun->comerciante
+VME_Trader.generalRules.rulesStrings[8]	memeLeaderNoun->mercador
+VME_Trader.symbolPacks.1.adjective	econômico
+VME_Trader.symbolPacks.1.ideoName	Economia
+VME_Trader.symbolPacks.1.member	economista
+VME_Trader.symbolPacks.1.theme	economia
+VME_Trader.symbolPacks.2.adjective	abastado
+VME_Trader.symbolPacks.2.ideoName	Riqueza
+VME_Trader.symbolPacks.2.member	investidor
+VME_Elders.label	anciãos
+VME_Elders.description	Os idosos devem ser respeitados, e devemos levar em conta sua sabedoria.
+VME_Elders.descriptionMaker.rules.rulesStrings[0]	creation(tag=meme_Elders)        ->[deity0_name] falou aos seus seguidores: "Respeitem e obedeçam seus anciãos, pois a sabedoria só vem da experiência."
+VME_Elders.descriptionMaker.rules.rulesStrings[1]	episode(uses=1,tag=meme_Elders)  ->Seguindo os ensinamentos de [deity0_name], honramos nossos anciãos, pondo as necessidades deles acima das dos outros.
+VME_Elders.descriptionMaker.rules.rulesStrings[2]	intro(tag=meme_Elders)           ->Em [place_summary] [place_name], os [memberNamePlural] construíram um gigantesco lar de idosos, para que os anciãos passassem ali seus últimos anos.
+VME_Elders.descriptionMaker.rules.rulesStrings[3]	conflict(tag=meme_Elders)        ->Um(a) jovem [foeLeader], com inveja da sabedoria dos seguidores de [deity0_name], tentou espalhar uma praga mortal que só atingia os idosos.
+VME_Elders.descriptionMaker.rules.rulesStrings[4]	founderJoin(tag=meme_Elders)     ->[founderName], um(a) grande cientista, desenvolveu uma cura em tempo recorde, salvando muitas vidas.
+VME_Elders.descriptionMaker.rules.rulesStrings[5]	victory(tag=meme_Elders)         ->O(a) [foeLeader] foi preso(a), e sua história servirá para sempre de alerta contra quem tenta negar a sabedoria dos nossos anciãos.
+VME_Elders.descriptionMaker.rules.rulesStrings[6]	setup(tag=meme_Elders)           ->[founderName] era cientista social num dos mundos reluzentes. Defendia que a sabedoria se acumula com a experiência, e que só quem viveu muito pode ser considerado sábio de verdade.
+VME_Elders.descriptionMaker.rules.rulesStrings[7]	story(uses=1,tag=meme_Elders)    ->Assim [founderName] criou uma grande escola de pensamento, em que a sabedoria dos anciãos é sempre respeitada e ouvida.
+VME_Elders.descriptionMaker.rules.rulesStrings[8]	lessonIntro(tag=meme_Elders)         ->O homem mais velho da nossa comunidade me ensinou a história da civilização, como os jovens sempre se jogaram de forma imprudente em conflitos sem pesar todas as alternativas. Ele estava me levando a entender que
+VME_Elders.descriptionMaker.rules.rulesStrings[9]	lesson(tag=meme_Elders)              ->a idade traz experiência, e a experiência traz sabedoria
+VME_Elders.descriptionMaker.rules.rulesStrings[10]	lessonReinforcement(tag=meme_Elders) ->Sem sabedoria, toda decisão é crua e selvagem, e tende a ter consequências indesejadas.
+VME_Elders.descriptionMaker.rules.rulesStrings[11]	archistBasis(tag=meme_Elders)    ->Os arquotécnicos são seres supremos, que existem além de conceitos como idade e tempo.
+VME_Elders.descriptionMaker.rules.rulesStrings[12]	archistFact(tag=meme_Elders)     ->Girando num vórtice de tempo infinito, sua sabedoria cresce muito além do que é possível a um mero humano.
+VME_Elders.descriptionMaker.rules.rulesStrings[13]	archistProphecy(tag=meme_Elders) ->[inTheEnd], os arquotécnicos só deixarão os mais sábios de nós transcender, por isso devemos honrar nossos anciãos, que serão os arautos da nossa ascensão.
+VME_Elders.descriptionMaker.rules.rulesStrings[14]	animistBasis(tag=meme_Elders)    ->Os espíritos valorizam a sabedoria acima de tudo, pois só quem é verdadeiramente sábio consegue se comunicar direito com eles.
+VME_Elders.descriptionMaker.rules.rulesStrings[15]	animistFact(tag=meme_Elders)     ->Nossos anciãos, em sua sabedoria infinita, serão um canal para o mundo dos espíritos.
+VME_Elders.descriptionMaker.rules.rulesStrings[16]	animistProphecy(tag=meme_Elders) ->[itIsSaid] o mais sábio dos nossos anciãos um dia comungará plenamente com os espíritos e se tornará um com eles.
+VME_Elders.descriptionMaker.rules.rulesStrings[17]	serketistProphecy(tag=meme_Elders)->[itIsSaid] nos tornaremos tão eternos quanto a maior das colônias de formigas. Velhos e sábios além da conta.
+VME_Elders.descriptionMaker.rules.rulesStrings[18]	chthonianProphecy(tag=meme_Elders)->Talvez devamos acumular sabedoria, pois as entidades sobrenaturais são velhas e sábias além de toda imaginação.
+VME_Elders.descriptionMaker.rules.rulesStrings[19]	esotericismProphecy(tag=meme_Elders)->Esse conhecimento oculto só se adquire com tempo e estudo. Só os mais velhos entre nós serão sábios o bastante para atravessar a barreira entre a realidade e os reinos além.
+VME_Elders.descriptionMaker.rules.rulesStrings[20]	eschatologismFact(tag=meme_Elders)->Honraremos nossos anciãos, pois são eles que trabalham há mais tempo para trazer o fim dos tempos.
+VME_Elders.descriptionMaker.rules.rulesStrings[21]	introMemo(tag=meme_Elders)->Me escutem: está na hora de aposentar a aposentadoria. A aposentadoria só causa uma grave falta de profissionais talentosos, gente que traz experiência e sabedoria à nossa empresa há décadas. Por que estamos deixando essas pessoas irem embora? É um absurdo!
+VME_Elders.descriptionMaker.rules.rulesStrings[22]	alienistProphecy(tag=meme_Elders)->Essas criações desgarradas, nascidas da criatividade humana, guardam um tesouro de sabedoria antiga, uma janela para as técnicas esquecidas dos nossos ancestrais.
+VME_Elders.generalRules.rulesStrings[0]	memeAdjective->idoso(a)
+VME_Elders.generalRules.rulesStrings[1]	memeAdjective->ancestral
+VME_Elders.generalRules.rulesStrings[2]	memeAdjective->velho(a)
+VME_Elders.generalRules.rulesStrings[3]	memeAdjective->sábio(a)
+VME_Elders.generalRules.rulesStrings[4]	memeConcept->idade
+VME_Elders.generalRules.rulesStrings[5]	memeAdjective->geriátrico(a)
+VME_Elders.generalRules.rulesStrings[6]	memeHyphenPrefix->velho
+VME_Elders.symbolPacks.0.adjective	ancião
+VME_Elders.symbolPacks.0.ideoName	Anciania
+VME_Elders.symbolPacks.0.theme	anciãos
+VME_Vegan.label	vegano
+VME_Vegan.description	Comer plantas é o certo; criar animais para comer não é.
+VME_Vegan.descriptionMaker.rules.rulesStrings[0]	creation(tag=meme_Vegan)        ->[deity0_name] falou aos seus seguidores: "Evitem a carne, pois ela é pecaminosa e impura."
+VME_Vegan.descriptionMaker.rules.rulesStrings[1]	episode(uses=1,tag=meme_Vegan)  ->Como [deity0_name] ordenou, proibimos comer carne. Nossos corpos não serão túmulo de outras criaturas.
+VME_Vegan.descriptionMaker.rules.rulesStrings[2]	intro(tag=meme_Vegan)           ->Em [place_summary] [place_name], os [memberNamePlural] construíram uma fazenda gigantesca, onde se cultivava todo tipo de fruta suculenta e legume carnudo.
+VME_Vegan.descriptionMaker.rules.rulesStrings[3]	conflict(tag=meme_Vegan)        ->Um(a) maligno(a) fazendeiro(a) industrial, vendo seus lucros evaporarem porque a maioria dos [memberNamePlural] evitava carne, quis sabotar a fazenda a qualquer custo.
+VME_Vegan.descriptionMaker.rules.rulesStrings[4]	founderJoin(tag=meme_Vegan)     ->Nosso(a) fundador(a), [founderName], disse-lhe com firmeza: "Você conseguiria olhar um animal nos olhos e dizer: 'Meu apetite é mais importante que o seu sofrimento'?"
+VME_Vegan.descriptionMaker.rules.rulesStrings[5]	victory(tag=meme_Vegan)         ->No fim, todos se convenceram dos argumentos do(a) fundador(a), e os [memberNamePlural] respeitarão para sempre o mundo natural à nossa volta.
+VME_Vegan.descriptionMaker.rules.rulesStrings[6]	setup(tag=meme_Vegan)           ->[founderName] era ecologista num dos mundos reluzentes, à beira do colapso climático. Descobriu que muitos planetas que dependiam muito do consumo de carne para alimentar a população acabaram sucumbindo ao desastre ecológico. A carne simplesmente não era eficiente o bastante para alimentar uma população grande.
+VME_Vegan.descriptionMaker.rules.rulesStrings[7]	story(uses=1,tag=meme_Vegan)    ->Buscando um caminho melhor, [founderName] virou vegano(a) e abandonou a carne para sempre. O resto da sociedade, porém, estava apegado demais aos velhos costumes, e [founderName] e seus seguidores tiveram de fugir do planeta condenado, em busca de um novo lar entre as estrelas.
+VME_Vegan.descriptionMaker.rules.rulesStrings[8]	lessonIntro(tag=meme_Vegan)         ->O ecologista mais velho da minha caravana me ensinou a história do veganismo, como muitas sociedades desabam por insistirem em consumir carne. Ele estava me levando a entender que
+VME_Vegan.descriptionMaker.rules.rulesStrings[9]	lesson(tag=meme_Vegan)              ->virar vegano é a mudança mais importante e direta que podemos fazer agora mesmo para salvar um planeta e suas espécies
+VME_Vegan.descriptionMaker.rules.rulesStrings[10]	lessonReinforcement(tag=meme_Vegan) ->Toda vida merece respeito, dignidade e compaixão. Toda vida.
+VME_Vegan.descriptionMaker.rules.rulesStrings[11]	archistBasis(tag=meme_Vegan)    ->Os arquotécnicos são sábios além da conta. Você acha que eles aprovariam a crueldade com os outros? Os humanos vitimaram tanto os animais que eles nem são vistos como vítimas. Nem são vistos. Não são nada; não contam; não importam.
+VME_Vegan.descriptionMaker.rules.rulesStrings[12]	archistFact(tag=meme_Vegan)     ->Não há diferença fundamental entre homem e animal na capacidade de sentir prazer e dor, felicidade e miséria. E, para um arquotécnico, somos todos iguais.
+VME_Vegan.descriptionMaker.rules.rulesStrings[13]	archistProphecy(tag=meme_Vegan) ->[inTheEnd], a não violência leva à ética mais elevada, que é o objetivo de toda evolução. Enquanto não pararmos de ferir os outros seres vivos, continuaremos selvagens.
+VME_Vegan.descriptionMaker.rules.rulesStrings[14]	animistBasis(tag=meme_Vegan)    ->Até amar um animal, parte da alma continua adormecida, escondida do mundo espiritual.
+VME_Vegan.descriptionMaker.rules.rulesStrings[15]	animistFact(tag=meme_Vegan)     ->A alma é a mesma em todas as criaturas vivas, embora o corpo de cada uma seja diferente.
+VME_Vegan.descriptionMaker.rules.rulesStrings[16]	animistProphecy(tag=meme_Vegan) ->[itIsSaid] que a comida vegana é comida para a alma na sua forma mais pura. Sua alma é sua intenção. Se sua intenção é pura, você é puro.
+VME_Vegan.descriptionMaker.rules.rulesStrings[17]	serketistProphecy(tag=meme_Vegan)->[itIsSaid] entenderemos que nossa dieta sagrada é, na verdade, um presente das mais santas das criaturas.
+VME_Vegan.descriptionMaker.rules.rulesStrings[18]	chthonianProphecy(tag=meme_Vegan)->Essas entidades sobrenaturais devorariam nossa carne e a arrancariam dos ossos, banqueteando-se com nossas entranhas. Não somos melhores que elas?
+VME_Vegan.descriptionMaker.rules.rulesStrings[19]	esotericismProphecy(tag=meme_Vegan)->Esse conhecimento oculto exigirá uma mente pura para ser compreendido. Uma mente pura que entende que seus desejos não lhe dão o direito de aumentar o sofrimento alheio.
+VME_Vegan.descriptionMaker.rules.rulesStrings[20]	eschatologismFact(tag=meme_Vegan)->Evitaremos devorar carne corrupta, podre e nauseante, pois ela é o símbolo de por que este mundo e seus habitantes cruéis precisam ser purgados.
+VME_Vegan.descriptionMaker.rules.rulesStrings[21]	introMemo(tag=meme_Vegan)->A partir de agora, só ofereceremos opções veganas no nosso serviço de bufê. Resumindo: a carne está cara demais, e precisamos enxugar as despesas para continuar competitivos.
+VME_Vegan.descriptionMaker.rules.rulesStrings[22]	alienistProphecy(tag=meme_Vegan)->Essas criaturas desgarradas são seres pobres e inocentes. Seria um grave erro maltratá-las de qualquer forma.
+VME_Vegan.generalRules.rulesStrings[0]	memeAdjective->vegano(a)
+VME_Vegan.generalRules.rulesStrings[1]	memeAdjective->vegetariano(a)
+VME_Vegan.generalRules.rulesStrings[2]	memeAdjective->ético(a)
+VME_Vegan.generalRules.rulesStrings[3]	memeAdjective->natureba
+VME_Vegan.generalRules.rulesStrings[4]	memeCreed->veganismo
+VME_Vegan.generalRules.rulesStrings[5]	memeHyphenPrefix->bio
+VME_Vegan.generalRules.rulesStrings[6]	memeConcept->direitos animais
+VME_Vegan.symbolPacks.0.adjective	vegano
+VME_Vegan.symbolPacks.0.ideoName	Veganismo
+VME_Vegan.symbolPacks.0.member	vegano
+VME_Vegan.symbolPacks.0.theme	veganismo
+VME_Vegan.symbolPacks.1.ideoName	Vegetarianismo
+VME_Vegan.symbolPacks.1.theme	vegetarianismo
+VME_Egalitarian.label	igualitário
+VME_Egalitarian.description	Nosso povo e os outros merecem igualdade e respeito.
+VME_Egalitarian.descriptionMaker.rules.rulesStrings[0]	creation(tag=meme_Egalitarian)        ->[deity0_name] nos mostrou que o caminho para a verdadeira sabedoria está na tolerância e na igualdade.
+VME_Egalitarian.descriptionMaker.rules.rulesStrings[1]	episode(uses=1,tag=meme_Egalitarian)  ->[deity0_name] disse a todos os [memberNamePlural]: "Todos vocês foram criados à minha imagem, e todos são iguais aos meus olhos."
+VME_Egalitarian.descriptionMaker.rules.rulesStrings[2]	intro(tag=meme_Egalitarian)           ->Em [place_summary] [place_name], começou uma tradição no(a) [altarRoomLabel] de [deity0_name]: as pessoas aceitavam as crenças dos vizinhos e se deleitavam em compartilhar perspectivas diferentes.
+VME_Egalitarian.descriptionMaker.rules.rulesStrings[3]	conflict(tag=meme_Egalitarian)           ->Um(a) [foeLeader] intolerante olhou para isso com desprezo, pois não tolerava nenhuma crença diferente da sua.
+VME_Egalitarian.descriptionMaker.rules.rulesStrings[4]	founderJoin(tag=meme_Egalitarian)        ->O(a) seguidor(a) mais fiel de [deity0_name], [founderName], postou-se diante do(a) [place_powerCenter] e fez um longo e apaixonado discurso sobre a necessidade de respeito e tolerância.
+VME_Egalitarian.descriptionMaker.rules.rulesStrings[5]	victory(tag=meme_Egalitarian)            ->Mesmo que o(a) [foeLeader] não tenha se convencido, todos os outros aplaudiram as palavras de [founderName], que desde então passou a ser visto(a) como porta-voz de [deity0_name].
+VME_Egalitarian.descriptionMaker.rules.rulesStrings[6]	setup(tag=meme_Egalitarian)           ->Desde cedo, [founderName] foi perseguido(a) e preso(a). Suas ideias eram tão radicalmente diferentes que nunca se encaixava em lugar nenhum. Podia ter reagido a esse desprezo com mais ódio, mas decidiu abraçar o oposto.
+VME_Egalitarian.descriptionMaker.rules.rulesStrings[7]	story(uses=1,tag=meme_Egalitarian)    ->As ideias de tolerância e igualdade de [founderName] tocaram fundo algumas pessoas, e nasceu uma nova escola de pensamento: a luz não conhece intolerância, o vento não conhece discriminação, a chuva não conhece esnobismo, a lavoura não conhece segregação.
+VME_Egalitarian.descriptionMaker.rules.rulesStrings[8]	lessonIntro(tag=meme_Egalitarian)         ->Intolerância, ódio, assédio, perversão e discriminação jamais devem ser vistos como direitos humanos. Levou muito tempo para entendermos que
+VME_Egalitarian.descriptionMaker.rules.rulesStrings[9]	lesson(tag=meme_Egalitarian)              ->um humano sem forte senso de justiça não é humano; um humano sem forte senso de aceitação não é humano; um humano sem forte senso de igualdade não é humano
+VME_Egalitarian.descriptionMaker.rules.rulesStrings[10]	lessonReinforcement(tag=meme_Egalitarian) ->Ser humano é agir como humano, e agir como humano é enfrentar toda forma de desumanidade.
+VME_Egalitarian.descriptionMaker.rules.rulesStrings[11]	archistBasis(tag=meme_Egalitarian)    ->Os arquotécnicos são o auge do desenvolvimento ético. Seres tão sábios e tão avançados que alcançaram a perfeição no pensamento.
+VME_Egalitarian.descriptionMaker.rules.rulesStrings[12]	archistFact(tag=meme_Egalitarian)     ->Para um arquotécnico, não deve haver diferença entre dois seres humanos. Somos todos iguais aos olhos deles.
+VME_Egalitarian.descriptionMaker.rules.rulesStrings[13]	archistProphecy(tag=meme_Egalitarian) ->Só esquecendo nossas diferenças e focando no que nos torna humanos poderemos ser dignos da transcendência.
+VME_Egalitarian.descriptionMaker.rules.rulesStrings[14]	animistBasis(tag=meme_Egalitarian)    ->Assim como os espíritos são só uma sombra para nós, permeando os cantos ocultos por trás da realidade, também somos ocultos para eles.
+VME_Egalitarian.descriptionMaker.rules.rulesStrings[15]	animistFact(tag=meme_Egalitarian)     ->Para os espíritos, somos uma impressão borrada no plano etéreo. As diferenças que nos parecem tão marcantes não são tão visíveis para eles.
+VME_Egalitarian.descriptionMaker.rules.rulesStrings[16]	animistProphecy(tag=meme_Egalitarian) ->[itIsSaid] só esquecendo nossas diferenças e focando no que nos torna humanos faremos os espíritos nos ouvirem de verdade.
+VME_Egalitarian.descriptionMaker.rules.rulesStrings[17]	serketistProphecy(tag=meme_Egalitarian)->[itIsSaid] formaremos uma sociedade em que nossas diferenças não importam. Acolhedora e tolerante, como todos os insetos.
+VME_Egalitarian.descriptionMaker.rules.rulesStrings[18]	chthonianProphecy(tag=meme_Egalitarian)->Diante de tamanha depravação cósmica, nossas brigas e diferenças são irrelevantes. A morte não se importa com o credo de quem ela leva.
+VME_Egalitarian.descriptionMaker.rules.rulesStrings[19]	esotericismProphecy(tag=meme_Egalitarian)->Esse conhecimento oculto exigirá uma mente aberta. Precisaremos acolher todo tipo de credo e crença entre nós.
+VME_Egalitarian.descriptionMaker.rules.rulesStrings[20]	eschatologismFact(tag=meme_Egalitarian)->Uma mente estreita não conseguirá trazer o fim dos tempos. Precisaremos expandir a mente se quisermos dar conta do serviço.
+VME_Egalitarian.descriptionMaker.rules.rulesStrings[21]	introMemo(tag=meme_Egalitarian)->Na próxima semana entram em vigor as novas políticas inter-religiosas, para que todos os colaboradores possam expressar suas crenças em paz. O departamento de Recursos Humanos cuidará das reservas e horários das missas inter-religiosas programadas.
+VME_Egalitarian.descriptionMaker.rules.rulesStrings[22]	alienistProphecy(tag=meme_Egalitarian)->Essas criaturas desgarradas são motivo de discórdia entre muita gente. Devem ser protegidas ou destruídas? Faríamos bem em ouvir todos os pontos de vista antes de decidir.
+VME_Egalitarian.generalRules.rulesStrings[0]	memeAdjective->igualitário(a)
+VME_Egalitarian.generalRules.rulesStrings[1]	memeAdjective->igual
+VME_Egalitarian.generalRules.rulesStrings[3]	memeAdjective->justo(a)
+VME_Egalitarian.generalRules.rulesStrings[4]	memeLeaderNoun->par
+VME_Egalitarian.generalRules.rulesStrings[5]	memeCreed->igualdade
+VME_Egalitarian.generalRules.rulesStrings[6]	memeHyphenPrefix->livre
+VME_Egalitarian.generalRules.rulesStrings[7]	memeConcept->igualdade
+VME_Egalitarian.symbolPacks.0.adjective	igualitário
+VME_Egalitarian.symbolPacks.0.ideoName	Igualitarismo
+VME_Egalitarian.symbolPacks.0.member	igualitário
+VME_Egalitarian.symbolPacks.0.theme	igualdade
+VME_Pacifist.label	pacifista
+VME_Pacifist.description	A violência deve ser desencorajada; o pacifismo é o caminho certo.
+VME_Pacifist.descriptionMaker.rules.rulesStrings[0]	creation(tag=meme_Pacifist)        ->[deity0_name] viu a violência no coração humano e recuou de nojo.
+VME_Pacifist.descriptionMaker.rules.rulesStrings[1]	episode(uses=1,tag=meme_Pacifist)  ->Falando aos fiéis, [deity0_name] disse: "Há muitas causas pelas quais vale a pena morrer, mas com certeza nenhuma pela qual valha a pena matar."
+VME_Pacifist.descriptionMaker.rules.rulesStrings[2]	intro(tag=meme_Pacifist)           ->[place_summary] [place_name] sempre foi tomado(a) por conflitos. Os [memberNamePlural] conheciam bem a guerra e a violência, e isso entristecia profundamente [deity0_name].
+VME_Pacifist.descriptionMaker.rules.rulesStrings[3]	conflict(tag=meme_Pacifist)        ->[deity0_name] viu as maquinações constantes de um(a) terrível [foeLeader], um(a) belicista que vivia atiçando as chamas da guerra.
+VME_Pacifist.descriptionMaker.rules.rulesStrings[4]	founderJoin(tag=meme_Pacifist)     ->Numa demonstração de inspiração divina, [deity0_name] encheu o(a) [foeLeader] com os pensamentos e as vivências de todos que ele(a) havia mutilado e matado, e na hora ele(a) mudou de coração. Dali em diante, o(a) [foeLeader] adotou um novo nome como porta-voz de [deity0_name]: [founderName], o(a) Pacificador(a).
+VME_Pacifist.descriptionMaker.rules.rulesStrings[5]	victory(tag=meme_Pacifist)         ->[founderName] nos fez entender que ninguém está além da redenção e que a sabedoria eterna está em responder ao ódio com o não ódio.
+VME_Pacifist.descriptionMaker.rules.rulesStrings[6]	setup(tag=meme_Pacifist)           ->[founderName] foi um(a) senhor(a) da guerra. Centenas de milhares caíram diante de seus exércitos. Depois de anos de luta, um dia se olhou no espelho e só viu o sangue de todas as suas vítimas, e ali mesmo decidiu pregar a causa do pacifismo total. Sua história de redenção ecoaria pelos séculos.
+VME_Pacifist.descriptionMaker.rules.rulesStrings[7]	story(uses=1,tag=meme_Pacifist)    ->[founderName] entendeu melhor que ninguém que nada vai acabar com a guerra a não ser que o próprio povo se recuse a ir à guerra.
+VME_Pacifist.descriptionMaker.rules.rulesStrings[8]	lessonIntro(tag=meme_Pacifist)         ->Aulas militares faziam parte do nosso currículo escolar, mas nosso professor era o que ele chamava de pacifista militante. Tentava nos incutir que
+VME_Pacifist.descriptionMaker.rules.rulesStrings[9]	lesson(tag=meme_Pacifist)              ->nada vai acabar com a guerra a não ser que o próprio povo se recuse a ir à guerra
+VME_Pacifist.descriptionMaker.rules.rulesStrings[10]	lessonReinforcement(tag=meme_Pacifist) ->Nunca faça nada contra a consciência, mesmo que o Estado exija.
+VME_Pacifist.descriptionMaker.rules.rulesStrings[11]	archistBasis(tag=meme_Pacifist)    ->Consegue imaginar como os arquotécnicos veem algo tão primitivo quanto a guerra?
+VME_Pacifist.descriptionMaker.rules.rulesStrings[12]	archistFact(tag=meme_Pacifist)     ->A guerra é um desperdício por natureza. Dedicar recursos a nos matarmos só esgota esses recursos, que poderiam ter sido usados para melhorar a vida de todos os envolvidos. Para um arquotécnico, esse esbanjamento sem sentido é abominável.
+VME_Pacifist.descriptionMaker.rules.rulesStrings[13]	archistProphecy(tag=meme_Pacifist) ->[inTheEnd], só quem conseguir resistir aos seus impulsos violentos mais básicos estará pronto para transcender.
+VME_Pacifist.descriptionMaker.rules.rulesStrings[14]	animistBasis(tag=meme_Pacifist)    ->O espírito da guerra é imensamente poderoso, alimentado por milhares de anos de expansão humana violenta pelas estrelas. Mas não é um espírito de amor, nem tem simpatia pela humanidade que o alimenta com sofrimento.
+VME_Pacifist.descriptionMaker.rules.rulesStrings[15]	animistFact(tag=meme_Pacifist)     ->Alimentar o espírito da guerra com discórdia é insensato e um desperdício. Devemos cultivar e alimentar um espírito de paz, de concórdia.
+VME_Pacifist.descriptionMaker.rules.rulesStrings[16]	animistProphecy(tag=meme_Pacifist) ->[itIsSaid] só quem conseguir resistir aos seus impulsos violentos mais básicos estará pronto para comungar com os espíritos.
+VME_Pacifist.descriptionMaker.rules.rulesStrings[17]	serketistProphecy(tag=meme_Pacifist)->[itIsSaid] entenderemos que os insetos não são violentos por natureza e não matam por esporte como os humanos. Devemos nos esforçar para ser mais como eles.
+VME_Pacifist.descriptionMaker.rules.rulesStrings[18]	chthonianProphecy(tag=meme_Pacifist)->A violência não será a chave para superar essas entidades antigas, pois não se combate terror com terror. Só rejeitando a violência que nasce da insanidade cósmica delas podemos esperar nos salvar de verdade.
+VME_Pacifist.descriptionMaker.rules.rulesStrings[19]	esotericismProphecy(tag=meme_Pacifist)->O conhecimento oculto é sutil e não se obtém à força. Afiaremos a mente sem violência para descobrir as verdades escondidas do Universo.
+VME_Pacifist.descriptionMaker.rules.rulesStrings[20]	eschatologismFact(tag=meme_Pacifist)->Por mais que o mundo mereça queimar, não somos assassinos. Se virarmos assassinos, em que somos melhores que este Universo amaldiçoado? Não, o Apocalipse precisa vir sem derramamento de sangue, de forma limpa. É o único jeito.
+VME_Pacifist.descriptionMaker.rules.rulesStrings[21]	introMemo(tag=meme_Pacifist)->Informamos que os dois colaboradores (que não serão nomeados, conforme as cláusulas de privacidade da empresa) que causaram uma briga violenta ontem tiveram seus contratos rescindidos e não fazem mais parte do quadro. Esse tipo de violência no ambiente de trabalho é abominável e NÃO ficará impune.

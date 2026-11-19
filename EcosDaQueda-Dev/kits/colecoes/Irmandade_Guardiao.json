@@ -1,0 +1,93 @@
+{
+ "id": "Irmandade_Guardiao",
+ "label": "Irmandade Guardiao",
+ "faction": "EQ_Faction_Forja",
+ "pawnKinds": [],
+ "chance": 1,
+ "variations": [
+  {
+   "name": "Gauss",
+   "weight": 1,
+   "apparel": [
+    {
+     "def": "VFEP_Warcasket_Guardian",
+     "quality": "Masterwork"
+    },
+    {
+     "def": "VFEP_WarcasketHelmet_Guardian",
+     "quality": "Masterwork"
+    },
+    {
+     "def": "VFEP_WarcasketShoulders_Guardian",
+     "quality": "Masterwork"
+    },
+    {
+     "def": "VFEP_Warcasket_Bodysuit",
+     "quality": "Masterwork"
+    }
+   ],
+   "weapons": [
+    {
+     "def": "VFEP_WarcasketGun_Railgun",
+     "quality": "Masterwork"
+    },
+    {
+     "def": "VFEP_WarcasketMeleeWeapon_CombatKnife",
+     "quality": "Masterwork"
+    }
+   ],
+   "inventory": [
+    {
+     "def": "Ammo_8mmRailgun_Sabot",
+     "count": 90
+    },
+    {
+     "def": "MealSurvivalPack",
+     "count": 2
+    },
+    {
+     "def": "MedicineIndustrial",
+     "count": 2
+    }
+   ]
+  },
+  {
+   "name": "Plasma",
+   "weight": 1,
+   "apparel": [
+    {
+     "def": "VFEP_Warcasket_Guardian",
+     "quality": "Masterwork"
+    },
+    {
+     "def": "VFEP_WarcasketHelmet_Guardian",
+     "quality": "Masterwork"
+    },
+    {
+     "def": "VFEP_WarcasketShoulders_Guardian",
+     "quality": "Masterwork"
+    },
+    {
+     "def": "VFEP_Warcasket_Bodysuit",
+     "quality": "Masterwork"
+    }
+   ],
+   "weapons": [
+    {
+     "def": "VFEP_WarcasketMeleeWeapon_PlasmaSword",
+     "quality": "Masterwork"
+    }
+   ],
+   "inventory": [
+    {
+     "def": "MealSurvivalPack",
+     "count": 2
+    },
+    {
+     "def": "MedicineIndustrial",
+     "count": 2
+    }
+   ]
+  }
+ ]
+}

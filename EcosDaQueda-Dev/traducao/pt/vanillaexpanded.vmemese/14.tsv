@@ -1,0 +1,117 @@
+## DefInjected/TerrainDef/Terrain_Floors.xml
+VME_CorporateFineTileSandstone.description	Ladrilhos finos de pedra em estilo corporativo, para exibir status econômico. Demora para construir.
+VME_CorporateFineTileGranite.label	ladrilho fino corporativo de granito
+VME_CorporateFineTileGranite.description	Ladrilhos finos de pedra em estilo corporativo, para exibir status econômico. Demora para construir.
+VME_CorporateFineTileLimestone.label	ladrilho fino corporativo de calcário
+VME_CorporateFineTileLimestone.description	Ladrilhos finos de pedra em estilo corporativo, para exibir status econômico. Demora para construir.
+VME_CorporateFineTileSlate.label	ladrilho fino corporativo de ardósia
+VME_CorporateFineTileSlate.description	Ladrilhos finos de pedra em estilo corporativo, para exibir status econômico. Demora para construir.
+VME_CorporateFineTileMarble.label	ladrilho fino corporativo de mármore
+VME_CorporateFineTileMarble.description	Ladrilhos finos de pedra em estilo corporativo, para exibir status econômico. Demora para construir.
+VME_ShintaoFineTileSandstone.label	ladrilho fino shintao de arenito
+VME_ShintaoFineTileSandstone.description	Ladrilhos finos de pedra em estilo shintao, para exibir status econômico. Demora para construir.
+VME_ShintaoFineTileGranite.label	ladrilho fino shintao de granito
+VME_ShintaoFineTileGranite.description	Ladrilhos finos de pedra em estilo shintao, para exibir status econômico. Demora para construir.
+VME_ShintaoFineTileLimestone.label	ladrilho fino shintao de calcário
+VME_ShintaoFineTileLimestone.description	Ladrilhos finos de pedra em estilo shintao, para exibir status econômico. Demora para construir.
+VME_ShintaoFineTileSlate.label	ladrilho fino shintao de ardósia
+VME_ShintaoFineTileSlate.description	Ladrilhos finos de pedra em estilo shintao, para exibir status econômico. Demora para construir.
+VME_ShintaoFineTileMarble.label	ladrilho fino shintao de mármore
+VME_ShintaoFineTileMarble.description	Ladrilhos finos de pedra em estilo shintao, para exibir status econômico. Demora para construir.
+VME_ShintaoCarpetRed.label	carpete shintao vermelho
+VME_ShintaoCarpetRed.description	Carpete felpudo num lindo tom rosado.
+VME_ShintaoCarpetGreen.label	carpete shintao verde
+VME_ShintaoCarpetGreen.description	Carpete verde com cara de natureza. Tons terrosos, cara.
+VME_ShintaoCarpetBlue.label	carpete shintao azul
+VME_ShintaoCarpetBlue.description	Carpete felpudo que abraça os dedos, num azul fresco.
+VME_ShintaoCarpetCream.label	carpete shintao creme
+VME_ShintaoCarpetCream.description	Carpete convidativo cor de creme.
+VME_ShintaoCarpetDark.label	carpete shintao escuro
+VME_ShintaoCarpetDark.description	Carpete cinza-escuro de aparência profissional.
+VME_ShintaoCarpetFineBurgundy.label	carpete fino shintao bordô
+VME_ShintaoCarpetFineBurgundy.description	Carpete bordô clássico, para aquele visual rico clássico.
+VME_ShintaoCarpetFineIndigo.label	carpete fino shintao índigo
+VME_ShintaoCarpetFineIndigo.description	Carpete índigo macio e sedoso, para um toque extra de pompa.
+VME_ShintaoCarpetFineWhite.label	carpete fino shintao branco
+VME_ShintaoCarpetFineWhite.description	Carpete branco sublime, cintilando com padrões sutis.
+## DefInjected/ThingDef/Buildings_Ancient_Outdoors.xml
+VME_AncientStove.description	Um fogão antigo. Amassado e enferrujado, não serve para mais nada.\n\nComo veio parar aqui, é difícil dizer.
+VME_AncientToilet.description	Um vaso sanitário antigo. Quebrado há muito tempo, não serve para mais nada.\n\nComo veio parar aqui, é difícil dizer.
+VME_AncientAPC.description	Os restos de um antigo blindado de transporte de tropas destruído por alguma arma pesada. Todos os componentes úteis foram saqueados ou se deterioraram há muito tempo.
+VME_AncientLargeRustedEngineBlock.description	Um grande bloco de motor antigo de algum veículo gigante ou gerador. Está enferrujado de ponta a ponta, e todos os componentes úteis sumiram. Nenhum conserto salva isso.
+VME_AncientContainer.description	Um grande contêiner de algum antigo veículo de carga. Foi saqueado há muito tempo e se deteriorou até não servir para nada.
+VME_AncientMechanoidShell.label	destroços mecanoides antigos
+VME_AncientMechanoidShell.description	Os restos de um mecanoide destroçado. Todos os componentes e materiais úteis estão estragados ou sumiram.
+VME_AncientSpaceJunk.label	lixo espacial antigo
+VME_AncientSpaceJunk.description	Pedaços antigos de lixo espacial que caíram da órbita. Talvez uma relíquia de alguma antiga batalha espacial.
+## DefInjected/ThingDef/Buildings_Ideo.xml
+VME_WickerMan.label	homem de vime
+VME_WickerMan.description	Uma grande figura humanoide feita de mato seco, palha e restos de madeira. Prisioneiros precisam ser amarrados à figura e queimados vivos como parte de um julgamento ou ritual.
+VME_Bonfire.label	fogueira
+VME_Bonfire.description	Uma fogueira enorme e muito brilhante, feita de uma pilha de toras bem arrumada sobre uma base de pedra. Muito usada em rituais de fogo; só pode ser posta ao ar livre.
+VME_BonfireAfterRitual.label	fogueira
+VME_BonfireAfterRitual.description	Uma fogueira enorme e muito brilhante, feita de uma pilha de toras bem arrumada sobre uma base de pedra. Muito usada em rituais de fogo; só pode ser posta ao ar livre. Dura pelo menos dois quadrimestres, dá beleza nas redondezas e conta para o preceito Fogo: desejado.
+VME_MechanoidEffigy.label	efígie mecanoide
+VME_MechanoidEffigy.description	Uma estrutura montada com peças de mecanoides sucateados. Emite um sinal de identificação amigo-inimigo capaz de confundir os receptores dos mecanoides antigos. Com duas por colono, o ruído do sinal reinicia a programação dos mecanoides antigos, fazendo-os recuar na hora. Só funciona em ataques de mecanoides; aglomerados e mecanoides "chefes" não são afetados.
+VME_Obelisk.label	obelisco agourento
+VME_Obelisk.description	Um obelisco agourento de pedra pura esculpida. Parece irradiar uma aura de desesperança e desespero.\n\nA necessidade de corrupção dos colonos no raio de efeito do obelisco não diminui.
+VME_InsectNest.label	ninho de insetos
+VME_InsectNest.description	Uma colmeia grande e inchada que parece verter muita geleia insetoide borbulhante, mas não choca nenhum insetoide.\n\nO ninho precisa da manutenção de um colono com o cargo de pastor de insetoides. Se a manutenção chegar a 0%, o ninho é destruído.\n\nA manutenção do ninho é um trabalho de manejo de animais, posto na fila automaticamente quando a manutenção cai abaixo de 50%.
+## DefInjected/ThingDef/FloorCoverings.xml
+VME_TaoistSlab_Medium.label	laje shintao (média)
+VME_TaoistSlab_Medium.description	Um baixo-relevo de pedra com imagens shintao para decorar o piso.
+VME_TaoistSlab_Broad.label	laje shintao (larga)
+VME_TaoistSlab_Broad.description	Um baixo-relevo de pedra com imagens shintao para decorar o piso.
+VME_EsotericismSlab_Medium.label	laje esotérica (média)
+VME_EsotericismSlab_Medium.description	Um baixo-relevo de pedra com imagens esotéricas para decorar o piso.
+VME_EsotericismSlab_Broad.label	laje esotérica (larga)
+VME_EsotericismSlab_Broad.description	Um baixo-relevo de pedra com imagens esotéricas para decorar o piso.
+VME_EldritchSlab_Medium.label	laje sobrenatural (média)
+VME_EldritchSlab_Medium.description	Um baixo-relevo de pedra com imagens sobrenaturais para decorar o piso.
+VME_EldritchSlab_Broad.label	laje sobrenatural (larga)
+VME_EldritchSlab_Broad.description	Um baixo-relevo de pedra com imagens sobrenaturais para decorar o piso.
+VME_SerketistSlab_Medium.label	laje serketista (média)
+VME_SerketistSlab_Medium.description	Um baixo-relevo de pedra com imagens serketistas para decorar o piso.
+VME_SerketistSlab_Broad.label	laje serketista (larga)
+VME_SerketistSlab_Broad.description	Um baixo-relevo de pedra com imagens serketistas para decorar o piso.
+## DefInjected/ThingDef/Hediffs_BodyParts_Natural.xml
+VME_FleshcraftedArm.label	braço carnemoldado
+VME_FleshcraftedArm.description	Um braço humano biológico, carnemoldado a partir de um cadáver. Pode ser instalado com segurança em colonos que seguem uma ideologia de carnemoldagem, mas causa infecções por rejeição nos demais.
+VME_FleshcraftedHand.label	mão carnemoldada
+VME_FleshcraftedHand.description	Uma mão humana biológica, carnemoldada a partir de um cadáver. Pode ser instalada com segurança em colonos que seguem uma ideologia de carnemoldagem, mas causa infecções por rejeição nos demais.
+VME_FleshcraftedFinger.label	dedo carnemoldado
+VME_FleshcraftedFinger.description	Um dedo humano biológico, carnemoldado a partir de um cadáver. Pode ser instalado com segurança em colonos que seguem uma ideologia de carnemoldagem, mas causa infecções por rejeição nos demais.
+VME_FleshcraftedToe.label	dedo do pé carnemoldado
+VME_FleshcraftedToe.description	Um dedo do pé humano biológico, carnemoldado a partir de um cadáver. Pode ser instalado com segurança em colonos que seguem uma ideologia de carnemoldagem, mas causa infecções por rejeição nos demais.
+VME_FleshcraftedFoot.label	pé carnemoldado
+VME_FleshcraftedFoot.description	Um pé humano biológico, carnemoldado a partir de um cadáver. Pode ser instalado com segurança em colonos que seguem uma ideologia de carnemoldagem, mas causa infecções por rejeição nos demais.
+VME_FleshcraftedLeg.label	perna carnemoldada
+VME_FleshcraftedLeg.description	Uma perna humana biológica, carnemoldada a partir de um cadáver. Pode ser instalada com segurança em colonos que seguem uma ideologia de carnemoldagem, mas causa infecções por rejeição nos demais.
+VME_FleshcraftedHeart.label	coração carnemoldado
+VME_FleshcraftedHeart.description	Um coração humano biológico, carnemoldado a partir de um cadáver. Pode ser instalado com segurança em colonos que seguem uma ideologia de carnemoldagem, mas causa infecções por rejeição nos demais.
+VME_FleshcraftedLung.label	pulmão carnemoldado
+VME_FleshcraftedLung.description	Um pulmão humano biológico, carnemoldado a partir de um cadáver. Pode ser instalado com segurança em colonos que seguem uma ideologia de carnemoldagem, mas causa infecções por rejeição nos demais.
+VME_FleshcraftedKidney.label	rim carnemoldado
+VME_FleshcraftedKidney.description	Um rim humano biológico, carnemoldado a partir de um cadáver. Pode ser instalado com segurança em colonos que seguem uma ideologia de carnemoldagem, mas causa infecções por rejeição nos demais.
+VME_FleshcraftedLiver.label	fígado carnemoldado
+VME_FleshcraftedLiver.description	Um fígado humano biológico, carnemoldado a partir de um cadáver. Pode ser instalado com segurança em colonos que seguem uma ideologia de carnemoldagem, mas causa infecções por rejeição nos demais.
+VME_FleshcraftedEye.label	olho carnemoldado
+VME_FleshcraftedEye.description	Um olho humano biológico, carnemoldado a partir de um cadáver. Pode ser instalado com segurança em colonos que seguem uma ideologia de carnemoldagem, mas causa infecções por rejeição nos demais.
+VME_FleshcraftedEar.label	orelha carnemoldada
+VME_FleshcraftedEar.description	Uma orelha humana biológica, carnemoldada a partir de um cadáver. Pode ser instalada com segurança em colonos que seguem uma ideologia de carnemoldagem, mas causa infecções por rejeição nos demais.
+VME_FleshcraftedNose.label	nariz carnemoldado
+VME_FleshcraftedNose.description	Um nariz humano biológico, carnemoldado a partir de um cadáver. Pode ser instalado com segurança em colonos que seguem uma ideologia de carnemoldagem, mas causa infecções por rejeição nos demais.
+VME_FleshcraftedJaw.label	mandíbula carnemoldada
+VME_FleshcraftedJaw.description	Uma mandíbula humana biológica, carnemoldada a partir de um cadáver. Pode ser instalada com segurança em colonos que seguem uma ideologia de carnemoldagem, mas causa infecções por rejeição nos demais.
+VME_FleshcraftedStomach.label	estômago carnemoldado
+VME_FleshcraftedStomach.description	Um estômago humano biológico, carnemoldado a partir de um cadáver. Pode ser instalado com segurança em colonos que seguem uma ideologia de carnemoldagem, mas causa infecções por rejeição nos demais.
+VME_FleshcraftedTongue.label	língua carnemoldada
+VME_FleshcraftedTongue.description	Uma língua humana biológica, carnemoldada a partir de um cadáver. Pode ser instalada com segurança em colonos que seguem uma ideologia de carnemoldagem, mas causa infecções por rejeição nos demais.
+VME_FleshcraftedSpine.label	coluna carnemoldada
+VME_FleshcraftedSpine.description	Uma coluna humana biológica, carnemoldada a partir de um cadáver. Pode ser instalada com segurança em colonos que seguem uma ideologia de carnemoldagem, mas causa infecções por rejeição nos demais.
+## DefInjected/ThingDef/Plants_ChocolateBush.xml
+VCE_ChocolateBush.label	arbusto de cacau
+VCE_ChocolateBush.description	Um arbusto baixo que produz chocolate, geneticamente modificado para adoçar o próprio produto e poder ser plantado em quase qualquer recipiente.
+## DefInjected/ThingStyleDef/ThingStyleDefs.xml
+VME_Corporate_Club.overrideLabel	cassetete
+VME_Corporate_Mace.overrideLabel	cassetete retrátil

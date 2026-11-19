@@ -1,0 +1,291 @@
+## DefInjected/AbilityDef/Abilities_Commissar.xml
+VME_EnforceCompliance.label	impor obediência
+VME_EnforceCompliance.description	Executa um colono. Todo colono que compartilha a ideologia do comissário recebe um bônus de humor.
+## DefInjected/AbilityDef/Abilities_ExaltedPriesthood.xml
+VME_LeaderConversionRitual.label	ritual de conversão (líder)
+VME_LeaderConvert.label	converter (líder)
+VME_LeaderPreachHealth.label	pregar saúde (líder)
+VME_LeaderReassure.label	reassegurar (líder)
+VME_LeaderCounsel.label	aconselhar (líder)
+## DefInjected/AbilityDef/Abilities_FlameKeeper.xml
+VME_StrengthenFlame.label	fortalecer chama
+VME_StrengthenFlame.description	Uma habilidade que atiça fontes de fogo e causa uma explosão. Só funciona em incêndios, não em estruturas de fogo construídas.
+## DefInjected/AbilityDef/Abilities_Fleshcrafter.xml
+VME_HarvestBodyParts.label	colher partes do corpo
+VME_HarvestBodyParts.description	Colhe uma parte do corpo carnemoldada de um cadáver.
+## DefInjected/AbilityDef/Abilities_InsectoidHerder.xml
+VME_TameInsectoid.label	domar insetoide
+VME_TameInsectoid.description	Mira numa criatura insetoide e a doma na hora.
+VME_ConstructANest.label	construir ninho
+VME_ConstructANest.description	Constrói um ninho insetoide que produz geleia de inseto. É preciso realizar um hino insetoide bem-sucedido para reduzir a recarga desta habilidade.
+## DefInjected/AbilityDef/Abilities_Majordomo.xml
+VME_WorkCommand.label	ordem de trabalho
+VME_WorkCommand.description	Manda todos em volta trabalharem mais e com mais cuidado, aumentando a velocidade de trabalho geral e o gasto de recreação. O efeito fica no conjurador por 24 horas.
+## DefInjected/AbilityDef/Abilities_Mechacker.xml
+VME_EnableSelfDestruct.label	ativar autodestruição
+VME_EnableSelfDestruct.description	Uma habilidade para mandar uma torreta ou mecanoide se autodestruir. O mecahacker pode mirar em qualquer torreta, até inimiga, e em qualquer mecanoide.
+## DefInjected/AbilityDef/Abilities_Nurse.xml
+VME_MedicalEmergency.label	emergência médica
+VME_MedicalEmergency.description	Impede que o descanso, a recreação e a fome do enfermeiro caiam por 12 horas. Nesse tempo, o enfermeiro só faz direito trabalhos de medicina.
+## DefInjected/AbilityDef/Abilities_PartyHost.xml
+VME_ThrowParty.label	dar uma festa
+VME_ThrowParty.description	Dá uma festa.
+## DefInjected/AbilityDef/Abilities_Patissier.xml
+VME_MakeADessert.label	fazer sobremesa
+VME_MakeADessert.description	Mira numa refeição para transformá-la em sobremesa.
+## DefInjected/AbilityDef/Abilities_Trader.xml
+VME_CallTradeCaravan.label	chamar caravana comercial
+VME_CallTradeCaravan.description	Convoca uma caravana comercial.
+## DefInjected/DesignatorDropdownGroupDef/Terrain_Floors.xml
+VME_Floor_CorporateFineStoneTiles.label	ladrilhos finos corporativos de pedra
+VME_Floor_ShintaoFineStoneTiles.label	ladrilhos finos shintao de pedra
+VME_Floor_ShintaoCarpet.label	carpetes shintao
+VME_Floor_ShintaoCarpetFine.label	carpetes finos shintao
+## DefInjected/DutyDef/Duties_Gatherings.xml
+VME_NakedPartyDance.label	festa de dança nua
+VME_Wander.label	ajudando na feira comercial
+## DefInjected/HediffDef/Hediffs_BodyParts_Natural.xml
+VME_FleshcraftedArmHediff.label	braço carnemoldado
+VME_FleshcraftedArmHediff.description	Um braço carnemoldado instalado.
+VME_FleshcraftedArmHediff.labelNoun	um braço carnemoldado
+VME_FleshcraftedHandHediff.label	mão carnemoldada
+VME_FleshcraftedHandHediff.description	Uma mão carnemoldada instalada.
+VME_FleshcraftedHandHediff.labelNoun	uma mão carnemoldada
+VME_FleshcraftedFingerHediff.label	dedo carnemoldado
+VME_FleshcraftedFingerHediff.description	Um dedo carnemoldado instalado.
+VME_FleshcraftedFingerHediff.labelNoun	um dedo carnemoldado
+VME_FleshcraftedToeHediff.label	dedo do pé carnemoldado
+VME_FleshcraftedToeHediff.description	Um dedo do pé carnemoldado instalado.
+VME_FleshcraftedToeHediff.labelNoun	um dedo do pé carnemoldado
+VME_FleshcraftedFootHediff.label	pé carnemoldado
+VME_FleshcraftedFootHediff.description	Um pé carnemoldado instalado.
+VME_FleshcraftedFootHediff.labelNoun	um pé carnemoldado
+VME_FleshcraftedLegHediff.label	perna carnemoldada
+VME_FleshcraftedLegHediff.description	Uma perna carnemoldada instalada.
+VME_FleshcraftedLegHediff.labelNoun	uma perna carnemoldada
+VME_FleshcraftedHeartHediff.label	coração carnemoldado
+VME_FleshcraftedHeartHediff.description	Um coração carnemoldado instalado.
+VME_FleshcraftedHeartHediff.labelNoun	um coração carnemoldado
+VME_FleshcraftedLungHediff.label	pulmão carnemoldado
+VME_FleshcraftedLungHediff.description	Um pulmão carnemoldado instalado.
+VME_FleshcraftedLungHediff.labelNoun	um pulmão carnemoldado
+VME_FleshcraftedKidneyHediff.label	rim carnemoldado
+VME_FleshcraftedKidneyHediff.description	Um rim carnemoldado instalado.
+VME_FleshcraftedKidneyHediff.labelNoun	um rim carnemoldado
+VME_FleshcraftedLiverHediff.label	fígado carnemoldado
+VME_FleshcraftedLiverHediff.description	Um fígado carnemoldado instalado.
+VME_FleshcraftedLiverHediff.labelNoun	um fígado carnemoldado
+VME_FleshcraftedEyeHediff.label	olho carnemoldado
+VME_FleshcraftedEyeHediff.description	Um olho carnemoldado instalado.
+VME_FleshcraftedEyeHediff.labelNoun	um olho carnemoldado
+VME_FleshcraftedEarHediff.label	orelha carnemoldada
+VME_FleshcraftedEarHediff.description	Uma orelha carnemoldada instalada.
+VME_FleshcraftedEarHediff.labelNoun	uma orelha carnemoldada
+VME_FleshcraftedNoseHediff.label	nariz carnemoldado
+VME_FleshcraftedNoseHediff.description	Um nariz carnemoldado instalado.
+VME_FleshcraftedNoseHediff.labelNoun	um nariz carnemoldado
+VME_FleshcraftedJawHediff.label	mandíbula carnemoldada
+VME_FleshcraftedJawHediff.description	Uma mandíbula carnemoldada instalada.
+VME_FleshcraftedJawHediff.labelNoun	uma mandíbula carnemoldada
+VME_FleshcraftedStomachHediff.label	estômago carnemoldado
+VME_FleshcraftedStomachHediff.description	Um estômago carnemoldado instalado.
+VME_FleshcraftedStomachHediff.labelNoun	um estômago carnemoldado
+VME_FleshcraftedTongueHediff.label	língua carnemoldada
+VME_FleshcraftedTongueHediff.description	Uma língua carnemoldada instalada.
+VME_FleshcraftedTongueHediff.labelNoun	uma língua carnemoldada
+VME_FleshcraftedSpineHediff.label	coluna carnemoldada
+VME_FleshcraftedSpineHediff.description	Uma coluna carnemoldada instalada.
+VME_FleshcraftedSpineHediff.labelNoun	uma coluna carnemoldada
+## DefInjected/HediffDef/Hediffs_Misc.xml
+VME_MedicalEmergencyHediff.label	emergência médica
+VME_MedicalEmergencyHediff.description	Impede que o descanso, a recreação e a fome do enfermeiro caiam por 12 horas. Nesse tempo, o enfermeiro só faz direito trabalhos de medicina.
+## DefInjected/HediffDef/WorkCommand_Hediffs.xml
+VME_WorkCommand.label	ordem de trabalho
+VME_WorkCommand.description	Manda todos em volta trabalharem mais e com mais cuidado, aumentando a velocidade de trabalho geral e o gasto de recreação. O efeito fica no conjurador por 24 horas.
+VME_WorkCommandBuff.label	ordem de trabalho
+VME_WorkCommandBuff.description	A velocidade de trabalho desta pessoa está maior por estar perto de alguém usando a habilidade ordem de trabalho.
+## DefInjected/HistoryEventDef/Precepts_BodyMod.xml
+VME_InstalledNonNaturalProsthetic.label	instalou prótese não natural
+## DefInjected/HistoryEventDef/Precepts_Defeat.xml
+VME_Defeat.label	derrota
+VME_SecondDefeat.label	derrota
+## DefInjected/HistoryEventDef/Precepts_DumbLabor.xml
+VME_DumbLabor.label	trabalho braçal
+## DefInjected/HistoryEventDef/Precepts_InsectJelly.xml
+VME_AteInsectJelly.label	comeu geleia de inseto
+## DefInjected/HistoryEventDef/Precepts_Insectoids.xml
+VME_InsectoidKilled.label	insetoide morto
+## DefInjected/HistoryEventDef/Precepts_KillingWithFire.xml
+VME_KillingWithFire.label	matar com fogo
+## DefInjected/HistoryEventDef/Precepts_MeatEating.xml
+VME_AteAnimalProducts.label	comeu produtos animais
+## DefInjected/HistoryEventDef/Precepts_Mechanoids.xml
+VME_MechanoidDestroyed.label	mecanoide destruído
+## DefInjected/HistoryEventDef/Precepts_Proselytizing.xml
+VME_ConvertAPrisoner.label	converter um prisioneiro
+## DefInjected/HistoryEventDef/Precepts_Ranching.xml
+VME_AttackedAnimal.label	atacou animal
+## DefInjected/HistoryEventDef/Precepts_Recreation.xml
+VME_HavingFun.label	divertir-se
+## DefInjected/HistoryEventDef/Precepts_Recruiting.xml
+VFEA_Interrogation.label	interrogatório
+## DefInjected/HistoryEventDef/Precepts_SlaveTrading.xml
+VME_BoughtSlave.label	comprou escravo
+## DefInjected/HistoryEventDef/Precepts_Sweets.xml
+VME_AteChocolateSweetTeeth.label	comeu chocolate
+## DefInjected/HistoryEventDef/Precepts_Violence.xml
+VME_AttackedInnocent.label	atacou inocentes
+## DefInjected/IdeoPresetDef/IdeoPresetDefs.xml
+VME_Human_Hive.label	colmeia humana
+VME_Human_Hive.description	Como um relógio, as vidas dos nossos irmãos de fé estão sempre entrelaçadas. O que faz um de nós sofrer faz todos sofrerem, e o que eleva um de nós eleva todos. Juntos, somos um só e somos fortes.
+VME_Egalitarian_Republic.label	república igualitária
+VME_Egalitarian_Republic.description	Democracia, liberdade e igualdade. É simplesmente revoltante que alguém trate isso como privilégios revogáveis e não como direitos básicos. Os credos, as culturas e o caráter das pessoas merecem respeito e representação.
+VME_Exalted_Gerontocracy.label	gerontocracia exaltada
+VME_Exalted_Gerontocracy.description	Nosso clero celestial nos guiará bem; a idade é mais que acumular sabedoria ou rugas. A cada ano que passa, nossos anciãos ficam mais perto de deus.\n\n<color=#E5E54C>Estrutura recomendada:</color>\n - Qualquer monoteísta.
+VME_Factory_Drones.label	operários de fábrica
+VME_Factory_Drones.description	Trabalho e cooperação geram força. Vamos suar e sangrar juntos, como comunidade, para chegar a um padrão de vida aceitável para todos.
+VME_Corporate_Overlords.label	suseranos corporativos
+VME_Corporate_Overlords.description	Seja sob um conselho diretor ou sob nosso CEO esperto, encaramos a verdade: é o dinheiro que faz o Rimworld girar. Automatizando tudo o que der e mantendo a equipe enxuta, maximizamos o retorno quadrimestre após quadrimestre.
+VME_GodKing_Radicals.label	radicais do deus-rei
+VME_GodKing_Radicals.description	O punho de aço do nosso rei ou rainha jamais deve ser questionado; nada lhe faltará. Se quem se opõe a nós não dobrar o joelho, daremos as pernas deles aos cães.
+VME_Cosmic_Cultists.label	cultistas cósmicos
+VME_Cosmic_Cultists.description	As estrelas cantam para nós, e respondemos à altura. Que seu brilho eterno ilumine os fios do nosso destino, que repousam tão cansados num fuso dos mais caprichosos. Banhe-se no luar sagrado e deixe as obras astrais dos arquitetos do destino guiarem você.
+VME_Flame_Seers.label	videntes da chama
+VME_Flame_Seers.description	No princípio havia a chama; da chama veio o calor, e do calor veio a vida. Benditos somos nós, arrebatados pela incandescência bruta do sol lá em cima.
+VME_Dwarven_Artificers.label	artífices anões
+VME_Dwarven_Artificers.description	Nenhum dia é mais bem gasto que um dia numa forja quente. Com nossos martelos, faremos ecoar o rugido da chama e o tinido do aço pelos salões da montanha. Se trabalharmos bastante, nossos Pais da Forja nos darão fungo de sobra para a ceia, para alimentarmos o corpo como alimentamos os fornos.
+VME_Nordic_Matriarchy.label	matriarcado nórdico
+VME_Nordic_Matriarchy.description	É entre a nevasca e o quebrar das ondas que levamos nosso povo para a outra vida. Tenha uma morte honrosa ou responda à nossa donzela-escudeira.
+VME_Steamworld_Neerdowells.label	malandros do mundo a vapor
+VME_Steamworld_Neerdowells.description	Do saloon ao estábulo, somos muffaloeiros honestos e vivemos por uma regra simples: "quem leva vida ruim não colhe coisa boa". Claro que nem todo mundo parece muito convencido... Só não deixem o braço da lei alcançar vocês, ouviram?
+VME_Medieval_Monarchists.label	monarquistas medievais
+VME_Medieval_Monarchists.description	Nossos pais e avós seguiram a visão e a orientação do nosso rei, longo seja seu reinado, e não faremos diferente. Se outro reino preferir apelar ao arco e à lâmina, não hesitaremos em torná-los nossos servos.
+VME_Pleasure_Extremists.label	extremistas do prazer
+VME_Pleasure_Extremists.description	Nunca nossos músculos doerão nem nossos corações incharão de tristeza. Devemos abraçar todos os prazeres; até desejos carnais proibidos, como carne de luxo ou luxúria ousada, devem ser explorados.
+VME_Eastern_Revivalists.label	revivalistas orientais
+VME_Eastern_Revivalists.description	Nascemos sem pecado e devemos fazer o possível para seguir o caminho das muitas virtudes. Respeite a sabedoria do vento e de quem viveu muitos verões para senti-lo no rosto. Acima de tudo, mantenha a lâmina por perto e a destreza afiada, caso aqueles que você chamava de irmãos se voltem contra você.
+VME_Primitivistic_Nomads.label	nômades primitivistas
+VME_Primitivistic_Nomads.description	Há eras nosso povo vaga por este mundo com pouco mais que montaria e sela, tomando as estradas menos percorridas só com as estrelas por guia. Dos invernos gelados às copas fervilhantes das selvas, buscamos as mesmas respostas que nossos ancestrais buscaram.
+VME_Pestilent_Doomsayers.label	profetas pestilentos do fim
+VME_Pestilent_Doomsayers.description	O corpo é um recipiente para experimentos e mutações. Quem levar a própria carne ao limite com dedicação será recompensado pelo deus da peste com a mais alegre despedida deste mundo condenado.
+VME_Insectoid_Psykers.label	psíquicos insetoides
+VME_Insectoid_Psykers.description	Os insetos, que quase todos veem como pragas, são na verdade a sociedade mais sincronizada e organizada da natureza; só os completamente cegos os veriam abaixo de nós. Mal começamos a desvendar os objetivos sem limites da Rainha Insetoide e de suas colmeias. Devemos imitá-los para entender melhor seus modos.
+VME_Mechanoid_Technocrat.label	tecnocratas mecanoides
+VME_Mechanoid_Technocrat.description	Achar que uma criatura de vigor infinito, livre do fardo do pensamento livre, existe para servir a humanidade é mais que tolice. Mal começamos a desvendar os objetivos sem limites da consciência das máquinas. Devemos imitá-las para aplacar melhor sua hostilidade.
+VME_Ecological_Fascists.label	fascistas ecológicos
+VME_Ecological_Fascists.description	Não poupe ninguém que ouse poluir ou manchar o solo da mãe natureza com sua existência patética. Que nossos corpos frágeis se desfaçam para nutrir as árvores que se erguem sobre nós. Respeite o planeta em que pisamos ou pereça por ordem do nosso Vidente das Sementes.
+## DefInjected/IdeoPresetDef/IdeoPresetDefs_AlphaMemes.xml
+VME_Astrological_Corruptors.label	corruptores astrológicos
+VME_Astrological_Corruptors.description	As estrelas chamam, e nós obedecemos. Seremos os portadores sem rosto de um novo despertar, pois espiamos o desconhecido e sua vastidão nos encheu de assombro.
+VME_Inhuman_Ravagers.label	devastadores inumanos
+VME_Inhuman_Ravagers.description	Os confins sombrios do Universo escondiam a Carne Faminta, uma conversão transdimensional que revela a verdadeira realidade da vida. Levaremos à força sua dádiva a toda a galáxia, apagando os exemplos obsoletos das formas de vida anteriores, falhas e incompletas como são.
+## DefInjected/IdeoStoryPatternDef/RulePacks_Ideo_Description.xml
+VME_SerketistDescription.rules.rulesStrings[0]	serketistBasis   ->Não há forma de vida superior às Rainhas da Colmeia. Sua geleia nutritiva é como ambrosia, e o mundo inteiro deveria ser refeito à imagem delas.
+VME_SerketistDescription.rules.rulesStrings[1]	serketistBasis   ->Em sua soberba, a humanidade tropeçou sem querer na criação da forma de vida perfeita: os insetoides.
+VME_SerketistDescription.rules.rulesStrings[2]	serketistBasis   ->Criação fora de controle de algum geneticista antigo e esquecido, os insetoides evoluíram até se tornar a forma de vida perfeita.
+VME_SerketistDescription.rules.rulesStrings[3]	serketistBasis   ->Ameaçada pelos mecanoides, a humanidade projetou a forma de vida perfeita: os insetoides.
+VME_SerketistDescription.rules.rulesStrings[4]	serketistBasis   ->Guiados pelas sagradas Rainhas da Colmeia, os insetoides são a forma de vida perfeita da galáxia.
+VME_SerketistDescription.rules.rulesStrings[5]	serketistFact    ->Eles são o auge da evolução. [InsectAdjective]. [InsectAdjective2]. [InsectAdjective3]. Todos deveriam se esforçar para ser como eles.
+VME_SerketistDescription.rules.rulesStrings[6]	serketistProphecy->[itIsSaid] aprenderemos com eles e seremos como um maremoto que varrerá nossos inimigos.
+VME_SerketistDescription.rules.rulesStrings[7]	itIsSaid->Talvez, com o tempo,
+VME_SerketistDescription.rules.rulesStrings[8]	itIsSaid->Está escrito em nosso destino que
+VME_SerketistDescription.rules.rulesStrings[9]	itIsSaid->Seja pela tecnologia ou por meios mais arcanos,
+VME_SerketistDescription.rules.rulesStrings[10]	itIsSaid->Reverenciaremos seus modos, sua inteligência coletiva, e
+VME_SerketistDescription.rules.rulesStrings[11]	itIsSaid->Reverenciando a Vontade da Rainha da Colmeia,
+VME_SerketistDescription.rules.rulesStrings[12]	InsectAdjective->Adaptáveis
+VME_SerketistDescription.rules.rulesStrings[13]	InsectAdjective->Vorazes
+VME_SerketistDescription.rules.rulesStrings[14]	InsectAdjective->Avassaladores
+VME_SerketistDescription.rules.rulesStrings[15]	InsectAdjective2->Versáteis
+VME_SerketistDescription.rules.rulesStrings[16]	InsectAdjective2->Implacáveis
+VME_SerketistDescription.rules.rulesStrings[17]	InsectAdjective2->Destrutivos
+VME_SerketistDescription.rules.rulesStrings[18]	InsectAdjective3->Complexos
+VME_SerketistDescription.rules.rulesStrings[19]	InsectAdjective3->Indestrutíveis
+VME_SerketistDescription.rules.rulesStrings[20]	InsectAdjective3->Resistentes
+VME_ChthonianDescription.rules.rulesStrings[0]	chthonianBasis   ->Há entidades vastas neste mundo que desafiam qualquer explicação. Conceitos muito mais antigos que meros deuses.
+VME_ChthonianDescription.rules.rulesStrings[1]	chthonianBasis   ->Além do Véu, um universo inteiro de Deuses Antigos que levam à loucura nos espera.
+VME_ChthonianDescription.rules.rulesStrings[2]	chthonianBasis   ->Os deuses não são o predador supremo do Universo, pois há entidades antigas muito mais poderosas. Entidades que devem ser respeitadas... e temidas.
+VME_ChthonianDescription.rules.rulesStrings[3]	chthonianBasis   ->Na vastidão desconhecida do espaço, há entidades insanas que poderiam refazer o Universo inteiro com um simples pensamento à toa.
+VME_ChthonianDescription.rules.rulesStrings[4]	chthonianFact    ->Somos como insetos para essas entidades. Nem dignos da atenção delas. Tão insignificantes para elas quanto uma formiga para nós.
+VME_ChthonianDescription.rules.rulesStrings[5]	chthonianFact    ->Elas não se importam com a humanidade. Não somos nada para elas. Nem uma nota de rodapé.
+VME_ChthonianDescription.rules.rulesStrings[6]	chthonianFact    ->Embora poderosas, são indiferentes. Estão tão além da nossa inteligência que, aos olhos delas, nem somos sencientes.
+VME_ChthonianDescription.rules.rulesStrings[7]	chthonianFact    ->Do ponto de vista delas, nem existimos. Do mesmo jeito que você não pensa nos micróbios na superfície da cadeira em que está sentado.
+VME_ChthonianDescription.rules.rulesStrings[8]	chthonianProphecy->[weMustBe] cuidadosos, pois não seria sábio atrair a atenção delas: poderiam nos destruir num instante.
+VME_ChthonianDescription.rules.rulesStrings[9]	chthonianProphecy->[byWorshipping], talvez consigamos fugir do olhar delas.
+VME_ChthonianDescription.rules.rulesStrings[10]	chthonianProphecy->Não se engane: elas não merecem nossa devoção. Mas talvez, mostrando uma falsa fachada de piedade, consigamos fugir da atenção delas por tempo suficiente.
+VME_ChthonianDescription.rules.rulesStrings[11]	chthonianProphecy->Mesmo assim, há muito a aprender com elas. Um conhecimento sobrenatural aguarda quem for corajoso (ou tolo) o bastante para espiar o rosto berrante da loucura.
+VME_ChthonianDescription.rules.rulesStrings[12]	weMustBe->Precisamos ser
+VME_ChthonianDescription.rules.rulesStrings[13]	weMustBe->É imperativo que sejamos
+VME_ChthonianDescription.rules.rulesStrings[14]	weMustBe->É melhor sermos
+VME_ChthonianDescription.rules.rulesStrings[15]	byWorshipping->Adorando-as
+VME_ChthonianDescription.rules.rulesStrings[16]	byWorshipping->Esperamos que, se as adorarmos,
+VME_EsotericismDescription.rules.rulesStrings[0]	esotericismBasis   ->Além do alcance da ciência comum, há uma riqueza insuperável de conhecimento secreto.
+VME_EsotericismDescription.rules.rulesStrings[1]	esotericismBasis   ->Escondido dos olhos curiosos de cientistas e filósofos, um mundo oculto de conhecimento secreto nos espera.
+VME_EsotericismDescription.rules.rulesStrings[2]	esotericismBasis   ->A ciência só leva até certo ponto. Além do véu da realidade há um tesouro de conhecimento secreto esperando para ser descoberto.
+VME_EsotericismDescription.rules.rulesStrings[3]	esotericismBasis   ->O Universo é vasto demais para caber nas amarras da matemática e da física. Além dessas limitações humanas há um vasto tesouro de conhecimento secreto, acessível a quem estiver disposto a pagar qualquer preço.
+VME_EsotericismDescription.rules.rulesStrings[4]	esotericismFact    ->Só uns poucos escolhidos têm força mental para alcançar essas revelações.
+VME_EsotericismDescription.rules.rulesStrings[5]	esotericismFact    ->Essas revelações ocultas não são para todos. Só um pequeno grupo de sábios pode explorá-las e observá-las. Os Escolhidos.
+VME_EsotericismDescription.rules.rulesStrings[6]	esotericismFact    ->Essas revelações provavelmente seriam demais para o povo comum. Só quem tem grande fortaleza mental pode espiar o oculto... e manter a mente inteira.
+VME_EsotericismDescription.rules.rulesStrings[7]	esotericismProphecy->Talvez, mergulhando nesse conhecimento, possamos até transcender nossa existência mortal.
+VME_EsotericismDescription.rules.rulesStrings[8]	esotericismProphecy->Com tempo suficiente, desvendaremos os segredos mais bem guardados e enfim entenderemos nosso lugar no Universo.
+VME_EsotericismDescription.rules.rulesStrings[9]	esotericismProphecy->Os alquimistas da antiguidade talvez não fossem tão tolos em sua busca pelo ouro, mas somos bem mais ambiciosos: aplicaremos o transmundano às nossas próprias almas e seremos mais que humanos.
+VME_EsotericismDescription.rules.rulesStrings[10]	esotericismProphecy->Com esse conhecimento, teremos clara vantagem sobre os demais habitantes deste planeta, e nosso domínio estará praticamente garantido.
+VME_HedonistDescription.rules.rulesStrings[0]	lesson(priority=-1)->coisas acontecem
+VME_HedonistDescription.rules.rulesStrings[1]	r_pattern->"[r_lessonIntro] [r_lessonMain]. [r_lessonReinforcement]"\n\n  - [lessonAttribution]
+VME_HedonistDescription.rules.rulesStrings[2]	lessonAttribution->[founder_nameFull]
+VME_HedonistDescription.rules.rulesStrings[3]	lessonAttribution(p=2)-><i>[attributionSource_titleCase]</i>, de [founder_nameFull]
+VME_HedonistDescription.rules.rulesStrings[4]	lessonAttribution->Carta de [founder_nameFull] para [believer_nameFull]
+VME_HedonistDescription.rules.rulesStrings[5]	lessonAttribution->[founder_nameFull], no leito de morte
+VME_HedonistDescription.rules.rulesStrings[6]	lessonAttribution->[founder_nameFull], pouco antes da execução
+VME_HedonistDescription.rules.rulesStrings[7]	lessonAttribution->[founder_nameFull], [speech] no(a) [TerrainFeature]
+VME_HedonistDescription.rules.rulesStrings[8]	lessonAttribution->[founder_nameFull], [speech] no(a) [Community]
+VME_HedonistDescription.rules.rulesStrings[9]	attributionSource->[memeConcept]
+VME_HedonistDescription.rules.rulesStrings[10]	attributionSource->[memeConcept] [memeAdjective]
+VME_HedonistDescription.rules.rulesStrings[11]	attributionSource->Uma vida [memeAdjective]
+VME_HedonistDescription.rules.rulesStrings[12]	attributionSource->Reflexões de um(a) [attributionJob]
+VME_HedonistDescription.rules.rulesStrings[13]	attributionSource->Diário de um(a) [attributionJob]
+VME_HedonistDescription.rules.rulesStrings[14]	attributionSource->Pensamentos de um(a) [attributionJob]
+VME_HedonistDescription.rules.rulesStrings[15]	attributionSource->Vida de um(a) [attributionJob]
+VME_HedonistDescription.rules.rulesStrings[16]	attributionJob->[place_job] [memeAdjective]
+VME_HedonistDescription.rules.rulesStrings[17]	attributionJob->[place_job]
+VME_HedonistDescription.rules.rulesStrings[18]	speech->discurso
+VME_HedonistDescription.rules.rulesStrings[19]	speech->pronunciamento
+VME_HedonistDescription.rules.rulesStrings[20]	lessonIntro->Depois de tantas noites sem dormir, refletindo com cuidado, cheguei a uma conclusão simples:
+VME_HedonistDescription.rules.rulesStrings[21]	lessonIntro->Qual é uma verdade fundamental da existência humana?
+VME_HedonistDescription.rules.rulesStrings[22]	lessonIntro->Sofri muito nesta vida. Mas esse sofrimento me ensinou um princípio simples:
+VME_HedonistDescription.rules.rulesStrings[23]	lessonIntro->Crescendo na miséria em [place_summary] [place_name], aprendi um axioma sincero:
+VME_HedonistDescription.rules.rulesStrings[24]	lessonIntro->Guarde esta lição, pois ela vai lhe servir bem:
+VME_HedonistDescription.rules.rulesStrings[25]	lessonIntro->Está se sentindo perdido? Talvez ainda não tenha entendido este conceito tão simples:
+VME_HedonistDescription.rules.rulesStrings[26]	lessonIntro->Tentaram me seduzir com uma vida de produtividade rica e chata, mas não me enganaram:
+VME_HedonistDescription.rules.rulesStrings[27]	lessonMain->o prazer, a satisfação dos desejos do corpo, é o bem maior e o objetivo próprio da vida humana. Pela religião ou pela filosofia, a vida inteira deve girar em torno de aproveitar o máximo possível
+VME_HedonistDescription.rules.rulesStrings[28]	lessonMain->enfim entendi que o único motivo para estar vivo é aproveitar
+VME_HedonistDescription.rules.rulesStrings[29]	lessonMain->o único jeito de se livrar da tentação é ceder a ela
+VME_HedonistDescription.rules.rulesStrings[30]	lessonMain->a salvação é para os fracos. Não quero salvação, quero vida, a vida inteira, a miserável e a esplêndida
+VME_HedonistDescription.rules.rulesStrings[31]	lessonMain->o prazer não é uma necessidade, é um incentivo
+VME_HedonistDescription.rules.rulesStrings[32]	lessonMain->o jeito mais responsável de viver agora é aproveitar enquanto dá
+VME_HedonistDescription.rules.rulesStrings[33]	lessonMain->dá para viver até os cem anos se você abrir mão de tudo o que faz você querer viver até os cem
+VME_HedonistDescription.rules.rulesStrings[34]	lessonReinforcement->Ninguém pode discordar disso.
+VME_HedonistDescription.rules.rulesStrings[35]	lessonReinforcement->Só os tolos pensam diferente.
+VME_HedonistDescription.rules.rulesStrings[36]	lessonReinforcement->E, como agora sabemos, logo isso ficaria evidente para todos.
+VME_HedonistDescription.rules.rulesStrings[37]	lessonReinforcement->Tudo o que aconteceu desde então reforçou esse fato.
+VME_HedonistDescription.rules.rulesStrings[38]	lessonReinforcement->É como se isso estivesse gravado direto na minha mente.
+VME_HedonistDescription.rules.rulesStrings[39]	lessonReinforcement->É algo que nunca vou esquecer.
+VME_EschatologismDescription.rules.rulesStrings[0]	eschatologismBasis   ->Este mundo está manchado, impuro, e precisa ser purgado. Traremos o fim dos tempos, e um novo Universo renascerá das cinzas deste.
+VME_EschatologismDescription.rules.rulesStrings[1]	eschatologismBasis   ->Não há mais nada de valor neste mundo. Vastas inteligências pós-humanas tramando no escuro. Criações genéticas cruéis devastando a terra. Humanos gananciosos, burros e ambiciosos explorando os fracos. Tudo isso precisa ser destruído.
+VME_EschatologismDescription.rules.rulesStrings[2]	eschatologismBasis   ->Este mundo precisa ser purgado. Por tempo demais o deixamos sem controle. A burrice humana corre solta e estraga tudo.
+VME_EschatologismDescription.rules.rulesStrings[3]	eschatologismBasis   ->É um fato inescapável: o único caminho é começar tudo de novo. Este mundo precisa ser destruído.
+VME_EschatologismDescription.rules.rulesStrings[4]	eschatologismBasis   ->Não há mais espaço para acordos. Este mundo está manchado, impuro. Precisa ser destruído.
+VME_EschatologismDescription.rules.rulesStrings[5]	eschatologismFact    ->Pelo fogo atômico ou por outro meio, precisamos trazer o Apocalipse.
+VME_EschatologismDescription.rules.rulesStrings[6]	eschatologismFact    ->A Grande Batalha do Fim de Tudo está chegando, e estaremos preparados.
+VME_EschatologismDescription.rules.rulesStrings[7]	eschatologismFact    ->Ninguém pode ficar vivo para reconstruir, pois as sementes da corrupção estão no fundo de cada um de nós.
+VME_EschatologismDescription.rules.rulesStrings[8]	eschatologismFact    ->Nada além de restos carbonizados deve sobrar.
+VME_EschatologismDescription.rules.rulesStrings[9]	eschatologismFact    ->Quando tudo tiver sido destruído, nós, os Escolhidos, recriaremos o mundo do nosso jeito.
+VME_EschatologismDescription.rules.rulesStrings[10]	eschatologismProphecy->Triunfaremos.
+VME_EschatologismDescription.rules.rulesStrings[11]	eschatologismProphecy->Ninguém estará pronto para a nossa ira.
+VME_EschatologismDescription.rules.rulesStrings[12]	eschatologismProphecy->Quando enfim atacarmos, todos cairão diante de nós.
+VME_EschatologismDescription.rules.rulesStrings[13]	eschatologismProphecy->Os dias deste mundo estão contados.
+VME_AuthoritarianDescription.rules.rulesStrings[0]	lesson(priority=-1)->coisas acontecem
+VME_AuthoritarianDescription.rules.rulesStrings[1]	r_pattern->"[r_lessonIntro] [r_lessonMain]. [r_lessonReinforcement]"\n\n  - [lessonAttribution]
+VME_AuthoritarianDescription.rules.rulesStrings[2]	lessonAttribution->[founder_nameFull], num [speech] [speechadjective] no(a) [TerrainFeature]
+VME_AuthoritarianDescription.rules.rulesStrings[3]	lessonAttribution->[founder_nameFull], [speech] [speechadjective] no(a) [Community]
+VME_AuthoritarianDescription.rules.rulesStrings[4]	speechadjective->inflamado
+VME_AuthoritarianDescription.rules.rulesStrings[5]	speechadjective->público

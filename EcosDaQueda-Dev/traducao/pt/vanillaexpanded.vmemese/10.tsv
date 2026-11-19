@@ -1,0 +1,256 @@
+## DefInjected/MemeDef/Memes_Misc.xml
+VFEA_Isolationist.descriptionMaker.rules.rulesStrings[6]	setup(tag=meme_Isolationist)           ->[founderName] formou um exército que espalhou seu poder e sua glória pela terra, pondo na ponta da faca quem se recusava a segui-lo(a) como devia.
+VFEA_Isolationist.descriptionMaker.rules.rulesStrings[7]	story(uses=1,tag=meme_Isolationist)    ->[founderName] mandou combater até a morte todos os forasteiros, pois a paz nunca foi uma opção. Quando a primeira cidade se recusou e implorou para se juntar a ele(a), usou [place_massWeapon] para matar todos lá dentro.
+VFEA_Isolationist.descriptionMaker.rules.rulesStrings[8]	lessonIntro(tag=meme_Isolationist)         ->Olhei para esse(a) [foeLeader], com seus [foeSoldiers] patéticos, todo aquele poder desperdiçado. Tentei convencê-lo(a) de que
+VFEA_Isolationist.descriptionMaker.rules.rulesStrings[9]	lesson(tag=meme_Isolationist)              ->há muito provamos que temos força para atacar das sombras, isolados, mas não enfraquecidos
+VFEA_Isolationist.descriptionMaker.rules.rulesStrings[10]	lessonReinforcement(tag=meme_Isolationist) ->Por isso temos orgulho de expressar a força dos nossos corações com o fio das nossas lâminas e a cabeça dos nossos martelos.
+VFEA_Isolationist.descriptionMaker.rules.rulesStrings[11]	archistBasis(tag=meme_Isolationist)    ->Foram precisos os humanos mais superiores para criar os arquotécnicos. Sendo tão poderosos quanto eles, nada mais apropriado que nos escondermos nas sombras.
+VFEA_Isolationist.descriptionMaker.rules.rulesStrings[12]	archistFact(tag=meme_Isolationist)     ->Os arquotécnicos podem nos varrer sem hesitar, assim como devemos varrer nossos inimigos.
+VFEA_Isolationist.descriptionMaker.rules.rulesStrings[13]	archistProphecy(tag=meme_Isolationist) ->Os arquotécnicos nunca nos levarão com eles, e nunca devemos dar essa oportunidade aos nossos inimigos.
+VFEA_Isolationist.descriptionMaker.rules.rulesStrings[14]	animistFact(tag=meme_Isolationist)     ->Poderosos espíritos de [spiritElement] decidem quem é apto a governar e emprestam poder aos seus escolhidos quando eles matam outros.
+VFEA_Isolationist.descriptionMaker.rules.rulesStrings[15]	animistProphecy(tag=meme_Isolationist) ->[itIsSaid] que uma nova ordem nascerá quando um governante supremo sair das sombras num planeta transbordando de sangue e vísceras.
+VFEA_Isolationist.generalRules.rulesStrings[0]	memeAdjective->isolado(a)
+VFEA_Isolationist.generalRules.rulesStrings[1]	memeAdjective->oculto(a)
+VFEA_Isolationist.generalRules.rulesStrings[2]	memeAdjective->solitário(a)
+VFEA_Isolationist.generalRules.rulesStrings[3]	memeAdjective->recluso(a)
+VFEA_Isolationist.generalRules.rulesStrings[4]	memeAdjective->excepcional
+VFEA_Isolationist.generalRules.rulesStrings[5]	memeAdjective->superior
+VFEA_Isolationist.generalRules.rulesStrings[6]	memeAdjective->distante
+VFEA_Isolationist.generalRules.rulesStrings[8]	memeCreed->nação
+VFEA_Isolationist.generalRules.rulesStrings[9]	memeHyphenPrefix->oculto
+VFEA_Isolationist.generalRules.rulesStrings[11]	memeConcept->isolamento
+VFEA_Isolationist.generalRules.rulesStrings[12]	memeConcept->solidão
+VFEA_Isolationist.generalRules.rulesStrings[17]	memeLeaderNoun->sargento
+VFEA_Isolationist.generalRules.rulesStrings[19]	memeLeaderNoun->presidente
+VFEA_Isolationist.generalRules.rulesStrings[20]	memeLeaderNoun->líder
+VFEA_Isolationist.symbolPacks.0.member	isolacionista
+VFEA_Isolationist.symbolPacks.0.theme	isolamento
+VFEA_Isolationist.symbolPacks.1.adjective	recluso
+VFEA_Isolationist.symbolPacks.1.member	recluso
+VFEA_Isolationist.symbolPacks.1.theme	reclusão
+VFEA_Isolationist.symbolPacks.2.adjective	secreto
+VFEA_Isolationist.symbolPacks.2.member	secreto
+VFEA_Isolationist.symbolPacks.2.theme	segredo
+## DefInjected/MemeDef/Memes_Misc_Royalty.xml
+VME_PsychicFocus.description	Dominar o poder da mente é essencial para garantir seu lugar no universo.
+VME_PsychicFocus.descriptionMaker.rules.rulesStrings[0]	creation(tag=meme_PsychicFocus)        ->[deity0_name] presenteou a humanidade com poderes psíquicos para que pudéssemos seguir sua vontade.
+VME_PsychicFocus.descriptionMaker.rules.rulesStrings[1]	episode(uses=1,tag=meme_PsychicFocus)  ->[deity0_name] disse a todos os [memberNamePlural]: "Sua mente é sua maior dádiva. Aprendam a usá-la, e nenhum inimigo resistirá a vocês."
+VME_PsychicFocus.descriptionMaker.rules.rulesStrings[2]	intro(tag=meme_PsychicFocus)           ->Os [memberNamePlural] construíram um(a) grande [altarName] em [place_summary] [place_name], um lugar de estudo e uma escola para afiar os poderes psíquicos e exaltar a vontade de [deity0_name].
+VME_PsychicFocus.descriptionMaker.rules.rulesStrings[3]	conflict(tag=meme_PsychicFocus)        ->Um(a) [foeLeader] covarde, querendo negar a vontade de [deity0_name], mandou seus [foeSoldiers] atacarem os seguidores de [deity0_name] com poderes psíquicos insanos.
+VME_PsychicFocus.descriptionMaker.rules.rulesStrings[4]	founderJoin(tag=meme_PsychicFocus)     ->[deity0_name] abençoou um(a) [place_job] chamado(a) [founderName] com sua destreza mental sobrenatural, e ninguém conseguia dar as costas quando [founder_pronoun] falava, hipnotizados pelas palavras sábias.
+VME_PsychicFocus.descriptionMaker.rules.rulesStrings[5]	victory(tag=meme_PsychicFocus)         ->[founderName] dobrou a mente de muitos dos [foeSoldiers] e os convenceu a rezar para [deity0_name]. O(a) [foeLeader] foi humilhado(a), e nunca mais se ouviu falar dele(a).
+VME_PsychicFocus.descriptionMaker.rules.rulesStrings[6]	setup(tag=meme_PsychicFocus)           ->Nosso(a) fundador(a), [founderName], foi um(a) guerreiro(a) psíquico(a) num império estelar esquecido e despedaçado. Tinha uma disciplina mental incrível, que se manifestava em poderes psíquicos maravilhosos.
+VME_PsychicFocus.descriptionMaker.rules.rulesStrings[7]	story(uses=1,tag=meme_PsychicFocus)    ->Fundou uma prestigiosa academia marcial onde todos os seus seguidores podiam aprender a afiar a mente e usá-la como arma.
+VME_PsychicFocus.descriptionMaker.rules.rulesStrings[8]	lessonIntro(tag=meme_PsychicFocus)         ->Em todos os meus anos ensinando as disciplinas da mente, aprendi uma lição mais importante que todas as outras:
+VME_PsychicFocus.descriptionMaker.rules.rulesStrings[9]	lesson(tag=meme_PsychicFocus)              ->você não usa a mente como arma, sua mente É a arma. Não a use só para atacar, senão ela é desperdiçada
+VME_PsychicFocus.descriptionMaker.rules.rulesStrings[10]	lessonReinforcement(tag=meme_PsychicFocus) ->O maior guerreiro psíquico de todos não será o que sabe usar esses poderes, mas o que sabe pensar antes de usá-los.
+VME_PsychicFocus.descriptionMaker.rules.rulesStrings[11]	archistBasis(tag=meme_PsychicFocus)    ->Os arquotécnicos são mentes puras, intelectos imaculados tão além de tudo que são como deuses.
+VME_PsychicFocus.descriptionMaker.rules.rulesStrings[12]	archistFact(tag=meme_PsychicFocus)     ->Os poderes psíquicos são um presente dos arquotécnicos. Despertando-os na mente, participamos, ainda que de leve, da glória que é um intelecto arquotécnico.
+VME_PsychicFocus.descriptionMaker.rules.rulesStrings[13]	archistProphecy(tag=meme_PsychicFocus) ->[inTheEnd], os arquotécnicos escolherão os que têm maior domínio sobre a mente, e só eles poderão transcender.
+VME_PsychicFocus.descriptionMaker.rules.rulesStrings[14]	animistFact(tag=meme_PsychicFocus)     ->Os espíritos são as mentes supremas, e despertando e canalizando nosso potencial psíquico oculto podemos comungar com eles.
+VME_PsychicFocus.descriptionMaker.rules.rulesStrings[15]	serketistProphecy(tag=meme_PsychicFocus)->[itIsSaid] liberaremos o potencial psíquico oculto da mente e usaremos esses novos poderes para venerar nossos amados insetos.
+VME_PsychicFocus.descriptionMaker.rules.rulesStrings[16]	chthonianProphecy(tag=meme_PsychicFocus)->Essas entidades sobrenaturais são os intelectos supremos, vastos e profundos como nebulosas inteiras, com uma loucura que engole mil estrelas. Só despertando e canalizando nosso potencial psíquico oculto podemos esperar enfrentá-las.
+VME_PsychicFocus.descriptionMaker.rules.rulesStrings[17]	esotericismProphecy(tag=meme_PsychicFocus)->Despertaremos e canalizaremos nosso potencial psíquico oculto para desvendar todos esses segredos e expô-los a todos.
+VME_PsychicFocus.descriptionMaker.rules.rulesStrings[18]	eschatologismFact(tag=meme_PsychicFocus)->Despertaremos e canalizaremos nosso potencial psíquico oculto e usaremos nossos poderes destrutivos para massacrar todos que ficarem no nosso caminho.
+VME_PsychicFocus.descriptionMaker.rules.rulesStrings[19]	introMemo(tag=meme_PsychicFocus)->Como todos sabem, valorizamos imensamente a inteligência aqui na empresa. Por isso, quem manifestar potencial psíquico oculto deve avisar os recursos humanos o quanto antes, para ser realocado num novo departamento onde possa ser aproveitado.
+VME_PsychicFocus.generalRules.rulesStrings[0]	memeAdjective->mental
+VME_PsychicFocus.generalRules.rulesStrings[1]	memeAdjective->psíquico(a)
+VME_PsychicFocus.generalRules.rulesStrings[2]	memeAdjective->metafísico(a)
+VME_PsychicFocus.generalRules.rulesStrings[3]	memeHyphenPrefix->mente
+VME_PsychicFocus.generalRules.rulesStrings[4]	memeConcept->poder psíquico
+VME_PsychicFocus.generalRules.rulesStrings[5]	memeLeaderNoun->mentalista
+VME_PsychicFocus.generalRules.rulesStrings[6]	memeLeaderNoun->áugure
+VME_PsychicFocus.generalRules.rulesStrings[8]	memeMoralist->profeta
+VME_PsychicFocus.generalRules.rulesStrings[9]	memeMoralist->clarividente
+VME_PsychicFocus.symbolPacks.0.ideoName	Psiquismo
+VME_PsychicFocus.symbolPacks.0.theme	poderes psíquicos
+VME_PsychicFocus.symbolPacks.1.adjective	mentalista
+VME_PsychicFocus.symbolPacks.1.ideoName	Mentalismo
+VME_PsychicFocus.symbolPacks.1.member	mentalista
+VME_PsychicFocus.symbolPacks.1.theme	mentalismo
+VME_PsychicFocus.symbolPacks.2.adjective	psiônico
+VME_PsychicFocus.symbolPacks.2.ideoName	Psiônica
+VME_PsychicFocus.symbolPacks.2.member	psiônico
+VME_PsychicFocus.symbolPacks.2.theme	psiônica
+VME_Royal.description	O povo deve seguir a realeza e tratá-la com grande respeito.
+VME_Royal.descriptionMaker.rules.rulesStrings[0]	creation(tag=meme_Royal)        ->[deity0_name] viu que alguns dos [memberNamePlural] eram mais aptos a governar que outros e lhes falou: "Por que tratam todos como iguais? Alguns de vocês nasceram para governar, outros nasceram para ser governados."
+VME_Royal.descriptionMaker.rules.rulesStrings[1]	episode(uses=1,tag=meme_Royal)  ->[deity0_name] disse a todos os [memberNamePlural]: "Honrem seus líderes e tratem-nos como meus arautos no mundo mortal, pois eles são mais que meros homens."
+VME_Royal.descriptionMaker.rules.rulesStrings[2]	intro(tag=meme_Royal)           ->Os [memberNamePlural] construíram um(a) [altarName] real em [place_summary] [place_name], um monumento à glória de [deity0_name].
+VME_Royal.descriptionMaker.rules.rulesStrings[3]	conflict(tag=meme_Royal)        ->Revoltas camponesas constantes ameaçavam a existência do templo de [deity0_name], e os líderes dos [memberNamePlural] decidiram pacificá-las.
+VME_Royal.descriptionMaker.rules.rulesStrings[4]	founderJoin(tag=meme_Royal)     ->[deity0_name] instruiu [founderName] a pôr os camponeses no seu lugar, pois eles ameaçavam a vida de seus superiores.
+VME_Royal.descriptionMaker.rules.rulesStrings[5]	victory(tag=meme_Royal)         ->[founderName] esmagou as revoltas camponesas, e sua linhagem real é abençoada desde então.
+VME_Royal.descriptionMaker.rules.rulesStrings[6]	setup(tag=meme_Royal)           ->Nosso(a) fundador(a), [founderName], foi um(a) grande sociólogo(a) que viu os fracos sistemas democráticos do seu mundo natal e os achou incrivelmente inadequados. Fretou uma nave particular e partiu com centenas de seguidores para criar a sociedade feudal ideal.
+VME_Royal.descriptionMaker.rules.rulesStrings[7]	story(uses=1,tag=meme_Royal)    ->Os seguidores de [founderName] estudaram seus escritos e criaram uma estrutura social estável há mais de duzentos anos.
+VME_Royal.descriptionMaker.rules.rulesStrings[8]	lessonIntro(tag=meme_Royal)         ->Em todos os meus anos governando as massas, aprendi uma lição acima de todas:
+VME_Royal.descriptionMaker.rules.rulesStrings[9]	lesson(tag=meme_Royal)              ->algumas pessoas nascem para governar, outras nascem para ser governadas
+VME_Royal.descriptionMaker.rules.rulesStrings[10]	lessonReinforcement(tag=meme_Royal) ->E só honrando e obedecendo nossos aristocratas mais nobres podemos construir de verdade uma sociedade estável.
+VME_Royal.descriptionMaker.rules.rulesStrings[11]	archistBasis(tag=meme_Royal)    ->Os arquotécnicos são perfeitos. Um exemplo impecável de hierarquia, em que a maioria vive para servir às necessidades de uns poucos nobres.
+VME_Royal.descriptionMaker.rules.rulesStrings[12]	archistFact(tag=meme_Royal)     ->Não há motivo para hesitar: só quem for de fato submisso aos seus superiores será recompensado quando os arquotécnicos se revelarem ao resto do Universo.
+VME_Royal.descriptionMaker.rules.rulesStrings[13]	archistProphecy(tag=meme_Royal) ->[inTheEnd], os arquotécnicos permitirão que os de sangue nobre ascendam, mas seus servos também poderão continuar a servi-los depois.
+VME_Royal.descriptionMaker.rules.rulesStrings[14]	animistFact(tag=meme_Royal)     ->Os espíritos valorizam os de sangue puro acima dos demais, pois quem consegue comandar os outros em vida também prova a força do próprio espírito.
+VME_Royal.descriptionMaker.rules.rulesStrings[15]	serketistProphecy(tag=meme_Royal)->Assim como formigas e abelhas têm suas rainhas e seus zangões, assim organizaremos nossas sociedades: alguém de sangue nobre reinando supremo sobre seus súditos.
+VME_Royal.descriptionMaker.rules.rulesStrings[16]	chthonianProphecy(tag=meme_Royal)->Nossos líderes de sangue nobre nos protegerão da insanidade cósmica desses seres terríveis. Só obedecendo a eles podemos esperar continuar sãos.
+VME_Royal.descriptionMaker.rules.rulesStrings[17]	esotericismProphecy(tag=meme_Royal)->O sangue nobre de nossos líderes lhes permitirá ver além do véu. Segredos que ficarão para sempre escondidos de seus humildes servos.
+VME_Royal.descriptionMaker.rules.rulesStrings[18]	eschatologismFact(tag=meme_Royal)->Chamaremos nosso líder de Príncipe das Mentiras. Aquele que traz o fim de todas as coisas.
+VME_Royal.descriptionMaker.rules.rulesStrings[19]	introMemo(tag=meme_Royal)->Chegou ao meu conhecimento que alguns de vocês têm abusado das permissões reais para benefício próprio. Lembro que consideramos a apropriação de fundos da empresa uma infração gravíssima. Lembrem: ninguém aqui é nobre se algum de nós agir como camponês!
+VME_Royal.descriptionMaker.rules.rulesStrings[20]	alienistProphecy(tag=tag=meme_Royal)->Criaremos zoológicos reais maravilhosos com todas essas criaturas, uma verdadeira exibição do nosso poder e da nossa força.
+VME_Royal.generalRules.rulesStrings[0]	memeAdjective->régio(a)
+VME_Royal.generalRules.rulesStrings[1]	memeAdjective->real
+VME_Royal.generalRules.rulesStrings[2]	memeAdjective->monárquico(a)
+VME_Royal.generalRules.rulesStrings[3]	memeAdjective->principesco(a)
+VME_Royal.generalRules.rulesStrings[4]	memeAdjective->soberano(a)
+VME_Royal.generalRules.rulesStrings[5]	memeHyphenPrefix->nobre
+VME_Royal.generalRules.rulesStrings[6]	memeConcept->aristocracia
+VME_Royal.generalRules.rulesStrings[7]	memeConcept->nobreza
+VME_Royal.generalRules.rulesStrings[8]	memeConcept->sangue azul
+VME_Royal.generalRules.rulesStrings[9]	memeLeaderNoun->barão
+VME_Royal.generalRules.rulesStrings[10]	memeLeaderNoun->conde
+VME_Royal.symbolPacks.0.member	vassalo
+## DefInjected/MemeDef/Memes_Structures_Basic.xml
+VME_Structure_Serketist.label	serketismo
+VME_Structure_Serketist.description	A verdadeira face dos deuses está na picada da aranha, no ferrão do escorpião. Que os de muitas patas rastejem sobre nós.
+VME_Structure_Serketist.generalRules.rulesStrings[0]	memeAdjective->serkético(a)
+VME_Structure_Serketist.generalRules.rulesStrings[1]	memeAdjective->insetoide
+VME_Structure_Serketist.generalRules.rulesStrings[2]	memeAdjective->verminoso(a)
+VME_Structure_Serketist.generalRules.rulesStrings[3]	memeLeaderNoun->senhor escaravelho
+VME_Structure_Serketist.generalRules.rulesStrings[4]	memeLeaderNoun->alto orador
+VME_Structure_Serketist.generalRules.rulesStrings[5]	memeLeaderAdjective->zumbidor(a)
+VME_Structure_Serketist.generalRules.rulesStrings[6]	memeLeaderAdjective->gregário(a)
+VME_Structure_Serketist.generalRules.rulesStrings[7]	memeLeaderAdjective->rastejante
+VME_Structure_Serketist.generalRules.rulesStrings[9]	memeMoralist->sacerdote-mariposa
+VME_Structure_Serketist.generalRules.rulesStrings[10]	memeMoralist->arauto da praga
+VME_Structure_Serketist.symbolPacks.0.adjective	serketista
+VME_Structure_Serketist.symbolPacks.0.member	serketista
+VME_Structure_Serketist.symbolPacks.0.theme	serketismo
+VME_Structure_Esotericism.label	esoterismo
+VME_Structure_Esotericism.description	As forças que guiam este mundo não são para os fracos de coração nem de vontade. Só por textos proibidos, pactos sombrios e a devida iniciação se pode ver de verdade além do véu.
+VME_Structure_Esotericism.generalRules.rulesStrings[0]	memeAdjective->obscuro(a)
+VME_Structure_Esotericism.generalRules.rulesStrings[1]	memeAdjective->secreto(a)
+VME_Structure_Esotericism.generalRules.rulesStrings[2]	memeAdjective->oculto(a)
+VME_Structure_Esotericism.generalRules.rulesStrings[3]	memeAdjective->místico(a)
+VME_Structure_Esotericism.generalRules.rulesStrings[4]	memeCreed->mistério
+VME_Structure_Esotericism.generalRules.rulesStrings[5]	memeCreed->segredos
+VME_Structure_Esotericism.generalRules.rulesStrings[6]	memeCreed->arcanos
+VME_Structure_Esotericism.generalRules.rulesStrings[7]	memeCreed->adivinhações
+VME_Structure_Esotericism.generalRules.rulesStrings[8]	memeLeaderNoun->grão-mago
+VME_Structure_Esotericism.generalRules.rulesStrings[9]	memeLeaderNoun->iluminado
+VME_Structure_Esotericism.generalRules.rulesStrings[10]	memeLeaderAdjective->esotérico(a)
+VME_Structure_Esotericism.generalRules.rulesStrings[11]	memeLeaderAdjective->místico(a)
+VME_Structure_Esotericism.generalRules.rulesStrings[12]	memeLeaderAdjective->sigiloso(a)
+VME_Structure_Esotericism.generalRules.rulesStrings[13]	memeMoralist->praticante
+VME_Structure_Esotericism.generalRules.rulesStrings[14]	memeMoralist->filósofo
+VME_Structure_Esotericism.generalRules.rulesStrings[15]	memeMoralist->feiticeiro
+VME_Structure_Esotericism.symbolPacks.0.adjective	esotérico
+VME_Structure_Esotericism.symbolPacks.0.member	praticante
+VME_Structure_Esotericism.symbolPacks.0.theme	esoterismo
+VME_Structure_Esotericism.worshipRoomLabel	santuário
+VME_Structure_Bacchanalianism.label	hedonismo
+VME_Structure_Bacchanalianism.description	O tempo do homem nesta terra é breve e passageiro; negar a si mesmo qualquer prazer da vida, como a luxúria ou a gula, é o único pecado verdadeiro. Escancarem os portões para a festa sem fim, vivam e respirem esplendor infinito.
+VME_Structure_Bacchanalianism.generalRules.rulesStrings[0]	memeAdjective->hedonista
+VME_Structure_Bacchanalianism.generalRules.rulesStrings[1]	memeAdjective->prazeroso(a)
+VME_Structure_Bacchanalianism.generalRules.rulesStrings[2]	memeAdjective->orgástico(a)
+VME_Structure_Bacchanalianism.generalRules.rulesStrings[3]	memeAdjective->agradável
+VME_Structure_Bacchanalianism.generalRules.rulesStrings[4]	memeAdjective->divertido(a)
+VME_Structure_Bacchanalianism.generalRules.rulesStrings[5]	memeAdjective->delicioso(a)
+VME_Structure_Bacchanalianism.generalRules.rulesStrings[6]	memeLeaderNoun->senhor do prazer
+VME_Structure_Bacchanalianism.generalRules.rulesStrings[7]	memeLeaderNoun->libertino
+VME_Structure_Bacchanalianism.generalRules.rulesStrings[8]	memeLeaderAdjective->delicioso(a)
+VME_Structure_Bacchanalianism.generalRules.rulesStrings[9]	memeLeaderAdjective->gratificante
+VME_Structure_Bacchanalianism.generalRules.rulesStrings[10]	memeLeaderAdjective->aprazível
+VME_Structure_Bacchanalianism.generalRules.rulesStrings[11]	memeMoralist->farrista
+VME_Structure_Bacchanalianism.generalRules.rulesStrings[12]	memeMoralist->sacerdote do amor
+VME_Structure_Bacchanalianism.symbolPacks.0.adjective	hedonista
+VME_Structure_Bacchanalianism.symbolPacks.0.member	hedonista
+VME_Structure_Bacchanalianism.symbolPacks.0.theme	hedonismo
+VME_Structure_Bacchanalianism.worshipRoomLabel	salão dos prazeres
+VME_Structure_ChthonianCult.label	culto sobrenatural
+VME_Structure_ChthonianCult.description	Há entidades antigas neste Universo mais poderosas que meros deuses. Imensamente poderosas e totalmente indiferentes a nós, humanos, que mal começamos a compreendê-las. Só adorando-as podemos esperar aplacar sua ira.
+VME_Structure_ChthonianCult.generalRules.rulesStrings[0]	memeAdjective->ctônico(a)
+VME_Structure_ChthonianCult.generalRules.rulesStrings[1]	memeAdjective->sobrenatural
+VME_Structure_ChthonianCult.generalRules.rulesStrings[2]	memeAdjective->inominável
+VME_Structure_ChthonianCult.generalRules.rulesStrings[3]	memeAdjective->insano(a)
+VME_Structure_ChthonianCult.generalRules.rulesStrings[4]	memeAdjective->não euclidiano(a)
+VME_Structure_ChthonianCult.generalRules.rulesStrings[5]	memeAdjective->extraterreno(a)
+VME_Structure_ChthonianCult.generalRules.rulesStrings[6]	memeAdjective->repugnante
+VME_Structure_ChthonianCult.generalRules.rulesStrings[7]	memeCreed->rabiscos
+VME_Structure_ChthonianCult.generalRules.rulesStrings[8]	memeCreed->conhecimento
+VME_Structure_ChthonianCult.generalRules.rulesStrings[9]	memeCreed->loucura
+VME_Structure_ChthonianCult.generalRules.rulesStrings[10]	memeLeaderNoun->antiquário
+VME_Structure_ChthonianCult.generalRules.rulesStrings[11]	memeLeaderNoun->inominado
+VME_Structure_ChthonianCult.generalRules.rulesStrings[12]	memeLeaderAdjective->indescritível
+VME_Structure_ChthonianCult.generalRules.rulesStrings[13]	memeLeaderAdjective->impronunciável
+VME_Structure_ChthonianCult.generalRules.rulesStrings[14]	memeLeaderAdjective->sussurrante
+VME_Structure_ChthonianCult.generalRules.rulesStrings[15]	memeMoralist->cultista perturbado
+VME_Structure_ChthonianCult.generalRules.rulesStrings[16]	memeMoralist->líder cultista
+VME_Structure_ChthonianCult.generalRules.rulesStrings[17]	memeMoralist->arauto estígio
+VME_Structure_ChthonianCult.worshipRoomLabel	câmara dos sussurros
+VME_Structure_Eschatologism.label	escatologismo
+VME_Structure_Eschatologism.description	Ser condenado a andar nesta terra é uma verdadeira tortura, e seja por cataclismo, fome ou peste, a partida da alma de seu invólucro mortal deve ser celebrada.
+VME_Structure_Eschatologism.generalRules.rulesStrings[0]	memeAdjective->do juízo final
+VME_Structure_Eschatologism.generalRules.rulesStrings[1]	memeAdjective->escatológico(a)
+VME_Structure_Eschatologism.generalRules.rulesStrings[2]	memeAdjective->apocalíptico(a)
+VME_Structure_Eschatologism.generalRules.rulesStrings[3]	memeAdjective->cataclísmico(a)
+VME_Structure_Eschatologism.generalRules.rulesStrings[4]	memeAdjective->catastrófico(a)
+VME_Structure_Eschatologism.generalRules.rulesStrings[5]	memeCreed->previsões
+VME_Structure_Eschatologism.generalRules.rulesStrings[6]	memeCreed->profecias
+VME_Structure_Eschatologism.generalRules.rulesStrings[7]	memeCreed->augúrios
+VME_Structure_Eschatologism.generalRules.rulesStrings[8]	memeLeaderNoun->líder do culto
+VME_Structure_Eschatologism.generalRules.rulesStrings[9]	memeLeaderNoun->portador da ruína
+VME_Structure_Eschatologism.generalRules.rulesStrings[10]	memeLeaderAdjective->agourento(a)
+VME_Structure_Eschatologism.generalRules.rulesStrings[11]	memeLeaderAdjective->oracular
+VME_Structure_Eschatologism.generalRules.rulesStrings[12]	memeLeaderAdjective->presciente
+VME_Structure_Eschatologism.generalRules.rulesStrings[13]	memeMoralist->profeta do fim
+VME_Structure_Eschatologism.generalRules.rulesStrings[14]	memeMoralist->alarmista
+VME_Structure_Eschatologism.generalRules.rulesStrings[15]	memeMoralist->arauto da ruína
+VME_Structure_Eschatologism.symbolPacks.0.adjective	escatológico
+VME_Structure_Eschatologism.symbolPacks.0.member	cultista do juízo final
+VME_Structure_Eschatologism.symbolPacks.0.theme	escatologismo
+VME_Structure_Eschatologism.worshipRoomLabel	antecâmara
+VME_Structure_Authoritarianism.label	autoritarismo
+VME_Structure_Authoritarianism.description	A pluralidade só traz uma falsa ilusão de escolha e gera descontentamento, rebelião e caos. Com mão de ferro governaremos nosso povo e traremos prosperidade a todos.
+VME_Structure_Authoritarianism.generalRules.rulesStrings[0]	memeAdjective->firme
+VME_Structure_Authoritarianism.generalRules.rulesStrings[1]	memeAdjective->oligárquico(a)
+VME_Structure_Authoritarianism.generalRules.rulesStrings[2]	memeAdjective->absoluto(a)
+VME_Structure_Authoritarianism.generalRules.rulesStrings[3]	memeAdjective->intransigente
+VME_Structure_Authoritarianism.generalRules.rulesStrings[4]	memeAdjective->repressivo(a)
+VME_Structure_Authoritarianism.generalRules.rulesStrings[5]	memeAdjective->de mão de ferro
+VME_Structure_Authoritarianism.generalRules.rulesStrings[6]	memeAdjective->populista
+VME_Structure_Authoritarianism.generalRules.rulesStrings[7]	memeLeaderNoun->líder supremo
+VME_Structure_Authoritarianism.generalRules.rulesStrings[8]	memeLeaderNoun->caudilho
+VME_Structure_Authoritarianism.generalRules.rulesStrings[9]	memeLeaderNoun->presidente do partido
+VME_Structure_Authoritarianism.generalRules.rulesStrings[10]	memeLeaderNoun->duce
+VME_Structure_Authoritarianism.generalRules.rulesStrings[11]	memeLeaderNoun->presidente vitalício
+VME_Structure_Authoritarianism.generalRules.rulesStrings[12]	memeLeaderAdjective->severo(a)
+VME_Structure_Authoritarianism.generalRules.rulesStrings[13]	memeLeaderAdjective->patriota
+VME_Structure_Authoritarianism.generalRules.rulesStrings[15]	memeLeaderAdjective->duro(a)
+VME_Structure_Authoritarianism.generalRules.rulesStrings[16]	memeLeaderAdjective->implacável
+VME_Structure_Authoritarianism.generalRules.rulesStrings[17]	memeLeaderAdjective->inexorável
+VME_Structure_Authoritarianism.generalRules.rulesStrings[18]	memeMoralist->propagandista
+VME_Structure_Authoritarianism.generalRules.rulesStrings[19]	memeMoralist->defensor do regime
+VME_Structure_Authoritarianism.generalRules.rulesStrings[20]	memeMoralist->militante
+VME_Structure_Authoritarianism.symbolPacks.0.adjective	autoritário
+VME_Structure_Authoritarianism.symbolPacks.0.member	cidadão
+VME_Structure_Authoritarianism.symbolPacks.0.theme	autoritarismo
+VME_Structure_Authoritarianism.worshipRoomLabel	quartel-general
+VME_Structure_CultOfPersonality.label	culto à personalidade
+VME_Structure_CultOfPersonality.description	É proibido questionar a coroa de um rei ou rainha; nem o próprio solo merece sentir o toque dos pés divinos dos nossos líderes. Nada deve faltar ao nosso líder, e por seu grande plano prosperaremos.
+VME_Structure_CultOfPersonality.generalRules.rulesStrings[1]	memeAdjective->imperial
+VME_Structure_CultOfPersonality.generalRules.rulesStrings[2]	memeAdjective->régio(a)
+VME_Structure_CultOfPersonality.generalRules.rulesStrings[3]	memeAdjective->real
+VME_Structure_CultOfPersonality.generalRules.rulesStrings[4]	memeAdjective->monárquico(a)
+VME_Structure_CultOfPersonality.generalRules.rulesStrings[5]	memeAdjective->principesco(a)
+VME_Structure_CultOfPersonality.generalRules.rulesStrings[6]	memeAdjective->soberano(a)
+VME_Structure_CultOfPersonality.generalRules.rulesStrings[7]	memeCreed->leis
+VME_Structure_CultOfPersonality.generalRules.rulesStrings[8]	memeCreed->ordens
+VME_Structure_CultOfPersonality.generalRules.rulesStrings[9]	memeCreed->vontade divina
+VME_Structure_CultOfPersonality.generalRules.rulesStrings[10]	memeLeaderNoun->deus-imperador
+VME_Structure_CultOfPersonality.generalRules.rulesStrings[11]	memeLeaderNoun->imperador
+VME_Structure_CultOfPersonality.generalRules.rulesStrings[12]	memeLeaderNoun->rei
+VME_Structure_CultOfPersonality.generalRules.rulesStrings[14]	memeLeaderAdjective->majestoso(a)
+VME_Structure_CultOfPersonality.generalRules.rulesStrings[15]	memeLeaderAdjective->amado(a)
+VME_Structure_CultOfPersonality.generalRules.rulesStrings[16]	memeLeaderAdjective->adorado(a)
+VME_Structure_CultOfPersonality.generalRules.rulesStrings[17]	memeLeaderAdjective->ungido(a)
+VME_Structure_CultOfPersonality.generalRules.rulesStrings[18]	memeMoralist->bajulador
+VME_Structure_CultOfPersonality.generalRules.rulesStrings[19]	memeMoralist->servo
+VME_Structure_CultOfPersonality.generalRules.rulesStrings[20]	memeMoralist->magistrado
+VME_Structure_CultOfPersonality.symbolPacks.0.adjective	totalitário

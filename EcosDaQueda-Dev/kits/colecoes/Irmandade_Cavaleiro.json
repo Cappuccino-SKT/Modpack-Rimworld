@@ -1,0 +1,113 @@
+{
+ "id": "Irmandade_Cavaleiro",
+ "label": "Irmandade Cavaleiro",
+ "faction": "EQ_Faction_Forja",
+ "pawnKinds": [
+  "EQ_U_Forja_Cavaleiro"
+ ],
+ "chance": 1,
+ "variations": [
+  {
+   "name": "Linha",
+   "weight": 1,
+   "apparel": [
+    {
+     "def": "VFEP_Warcasket_Warcasket"
+    },
+    {
+     "def": "VFEP_WarcasketHelmet_Warcasket"
+    },
+    {
+     "def": "VFEP_WarcasketShoulders_Warcasket"
+    },
+    {
+     "def": "VFEP_Warcasket_Bodysuit"
+    }
+   ],
+   "weapons": [
+    {
+     "def": "VFEP_WarcasketGun_Autorifle"
+    },
+    {
+     "def": "VFEP_WarcasketMeleeWeapon_CombatKnife"
+    }
+   ],
+   "inventory": [
+    {
+     "def": "Ammo_20x82mmMauser_HE",
+     "count": 120
+    },
+    {
+     "def": "MealSurvivalPack",
+     "count": 2
+    }
+   ]
+  },
+  {
+   "name": "Chamas",
+   "weight": 1,
+   "apparel": [
+    {
+     "def": "VFEP_Warcasket_Warcasket"
+    },
+    {
+     "def": "VFEP_WarcasketHelmet_Warcasket"
+    },
+    {
+     "def": "VFEP_WarcasketShoulders_Warcasket"
+    },
+    {
+     "def": "VFEP_Warcasket_Bodysuit"
+    }
+   ],
+   "weapons": [
+    {
+     "def": "VFEP_WarcasketGun_HeavyFlamer"
+    },
+    {
+     "def": "VFEP_WarcasketMeleeWeapon_CombatKnife"
+    }
+   ],
+   "inventory": [
+    {
+     "def": "MealSurvivalPack",
+     "count": 2
+    },
+    {
+     "def": "Ammo_Flamethrower_Napalm",
+     "count": 800
+    }
+   ]
+  },
+  {
+   "name": "Cavaleiro",
+   "weight": 1,
+   "apparel": [
+    {
+     "def": "VFEP_Warcasket_Warcasket"
+    },
+    {
+     "def": "VFEP_WarcasketHelmet_Warcasket"
+    },
+    {
+     "def": "VFEP_WarcasketShoulders_Warcasket"
+    },
+    {
+     "def": "VFEP_Warcasket_Bodysuit"
+    }
+   ],
+   "weapons": [
+    {
+     "def": "VFEP_WarcasketMeleeWeapon_Broadsword",
+     "quality": "Good"
+    }
+   ],
+   "inventory": [
+    {
+     "def": "MealSurvivalPack",
+     "count": 2
+    }
+   ]
+  }
+ ]
+}

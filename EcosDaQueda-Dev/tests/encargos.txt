@@ -1,0 +1,37 @@
+# Etapa 11b: encargos (oferta, metas por período, relatório cumprido/parcial/descumprido, renúncia, recusa, rebaixamento). Rodar com -Profile full.
+newgame
+timeout 900
+join forja
+wait 1h
+leader set 0
+psy title 3 forja
+wait 1h
+encargo
+encargo offer
+choose Encargo: 0
+encargo
+# período 1: tudo cumprido (3 itens bons + entregas)
+encargo progress QualityCrafted 3 Good
+encargo progress QualityCrafted 2 Normal
+give ComponentIndustrial 8
+give Steel 150
+encargo report
+choose Relatório 0
+encargo
+# período 2: vence sozinho sem nada feito = descumprido (falta 1)
+encargo skip 15
+wait 1h
+encargo
+# período 3: só as entregas = parcial (2 de 3 metas), sem falta
+give ComponentIndustrial 8
+give Steel 150
+encargo report
+# renúncia = falta 2
+choose Relatório 1
+encargo
+# nova oferta recusada = falta 3 = rebaixamento para o cargo 2
+encargo offer
+choose Encargo: 1
+encargo
+encargo offer
+dump

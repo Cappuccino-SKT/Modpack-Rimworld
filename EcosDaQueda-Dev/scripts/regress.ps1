@@ -11,8 +11,8 @@
 # teste sem relatório nenhum roda de novo sozinho no fim.
 # Relatórios completos em tests\out\<teste>.txt.full.result.txt.
 param(
-    [string[]]$Tests = @('ideo', 'cerimonia-helice', 'cerimonia-forja', 'cerimonia-coro', 'psy-coro', 'androides', 'permissoes', 'bases', 'medieval', 'insetos', 'missoes', 'sanidade', 'reino-lodo', 'colmeia', 'sucata', 'veiculos', 'marcos', 'genes', 'pesquisa', 'licencas', 'engenharia-reversa', 'dados-antigos', 'zonas-cercos', 'pedintes', 'livros', 'fungobi', 'inicio', 'inicio-forja', 'arsenal', 'arsenal-forja',
-                         'comercio', 'faccoes-menores', 'faccoes-menores2', 'xenotipos', 'fase3', 'fechamento-tech', 'eventos-potencias', 'eventos-mundo', 'mercados', 'rituais', 'obrigacoes', 'fora-de-linha', 'nao-catalogados', 'menores-eventos'),
+    [string[]]$Tests = @('ideo', 'cerimonia-helice', 'cerimonia-forja', 'cerimonia-coro', 'psy-coro', 'androides', 'permissoes', 'bases', 'medieval', 'insetos', 'missoes', 'sanidade', 'reino-lodo', 'colmeia', 'sucata', 'veiculos', 'marcos', 'genes', 'pesquisa', 'licencas', 'engenharia-reversa', 'dados-antigos', 'zonas-cercos', 'pedintes', 'livros', 'fungobi', 'inicio', 'inicio-forja', 'arsenal', 'arsenal-forja', 'kits',
+                         'comercio', 'faccoes-menores', 'faccoes-menores2', 'xenotipos', 'fase3', 'fechamento-tech', 'eventos-potencias', 'eventos-mundo', 'mercados', 'rituais', 'obrigacoes', 'encargos', 'promocao', 'tropas', 'comando', 'frente', 'frente-hegemony', 'fora-de-linha', 'nao-catalogados', 'menores-eventos'),
     [switch]$Build,
     [switch]$Long,
     [switch]$Single,
@@ -23,14 +23,7 @@ $dev = Split-Path $PSScriptRoot -Parent
 $run = Join-Path $PSScriptRoot 'run-test.ps1'
 if ($Long) { $Tests += 'mundo' }
 $total = [Diagnostics.Stopwatch]::StartNew()
-if ($Build) {
-    $game = Split-Path $dev -Parent
-    foreach ($proj in 'Mods\EcosDaQueda\Source\EcosDaQueda', 'Mods\EcosDaQueda\Source\EcosDaQueda.Hegemony', 'Mods\EcosDaQuedaDebug\Source') {
-        $out = dotnet build (Join-Path $game $proj) -c Release 2>&1
-        if ($LASTEXITCODE -ne 0) { $out | Select-String 'error' | Select-Object -First 15; throw "Falha ao compilar $proj" }
-    }
-    'build ok'
-}
+if ($Build) { & (Join-Path $PSScriptRoot 'build-mods.ps1') }
 
 function Get-ResultPath($t) { Join-Path $dev "tests\out\$t.txt.full.result.txt" }
 function Get-Timeout($t) { if ($t -eq 'mundo') { 2400 } else { 900 } }

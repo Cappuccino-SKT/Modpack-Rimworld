@@ -1,0 +1,164 @@
+## DefInjected/MemeDef/Memes_Misc.xml
+VME_Pacifist.descriptionMaker.rules.rulesStrings[22]	alienistProphecy(tag=meme_Pacifist)->Essas criaturas desgarradas são seres inocentes. Não somos assassinos, e talvez seja melhor deixá-las em paz.
+VME_Pacifist.generalRules.rulesStrings[0]	memeAdjective->pacifista
+VME_Pacifist.generalRules.rulesStrings[1]	memeAdjective->pacífico(a)
+VME_Pacifist.generalRules.rulesStrings[2]	memeAdjective->conciliador(a)
+VME_Pacifist.generalRules.rulesStrings[3]	memeLeaderNoun->pacificador
+VME_Pacifist.generalRules.rulesStrings[4]	memeConcept->paz
+VME_Pacifist.symbolPacks.0.adjective	pacifista
+VME_Pacifist.symbolPacks.0.ideoName	Pacifismo
+VME_Pacifist.symbolPacks.0.member	pacifista
+VME_Pacifist.symbolPacks.0.theme	pacifismo
+VME_FireWorship.label	culto ao fogo
+VME_FireWorship.description	A chama deve ser reverenciada.
+VME_FireWorship.descriptionMaker.rules.rulesStrings[0]	creation(tag=meme_FireWorship)        ->[deity0_name] encheu seus seguidores com uma chama sagrada: "O herói e o covarde sentem exatamente o mesmo medo; só que o herói enfrenta o medo e o transforma em fogo."
+VME_FireWorship.descriptionMaker.rules.rulesStrings[1]	episode(uses=1,tag=meme_FireWorship)  ->Seguindo os ensinamentos de [deity0_name], entendemos que o que o fogo não destrói, ele endurece.
+VME_FireWorship.descriptionMaker.rules.rulesStrings[2]	intro(tag=meme_FireWorship)           ->Em [place_summary] [place_name], os [memberNamePlural] construíram uma fogueira enorme, dedicada a [deity0_name].
+VME_FireWorship.descriptionMaker.rules.rulesStrings[3]	conflict(tag=meme_FireWorship)        ->Um(a) [foeLeader] invejoso(a) viu a fogueira no horizonte e quis apagar seu fogo.
+VME_FireWorship.descriptionMaker.rules.rulesStrings[4]	founderJoin(tag=meme_FireWorship)     ->Correndo grande perigo, [founderName], acólito(a) de [deity0_name], se infiltrou à noite no acampamento dos soldados do(a) [foeLeader] e incendiou as barracas.
+VME_FireWorship.descriptionMaker.rules.rulesStrings[5]	victory(tag=meme_FireWorship)         ->Os [memberNamePlural] nunca esquecerão os gritos de agonia dos soldados em chamas. Seus cadáveres carbonizados foram jogados na fogueira, um aviso a todos que ousassem desafiar de novo a Vontade de [deity0_name].
+VME_FireWorship.descriptionMaker.rules.rulesStrings[6]	setup(tag=meme_FireWorship)           ->[founderName] passou a juventude presa(o) por supostos crimes. Incendiário(a), era como o(a) chamavam. O que não conseguiam ver é que era, na verdade, um(a) visionário(a), um(a) profeta. Via os padrões escondidos dentro de todas as chamas.
+VME_FireWorship.descriptionMaker.rules.rulesStrings[7]	story(uses=1,tag=meme_FireWorship)    ->Uma pequena faísca pode começar um grande incêndio, e a filosofia de [founderName] virou uma escola de pensamento dominante que se espalhou pelas estrelas.
+VME_FireWorship.descriptionMaker.rules.rulesStrings[8]	lessonIntro(tag=meme_FireWorship)         ->Eu os encontrei entre as cinzas: restos enegrecidos e carbonizados, desfigurados a ponto de não serem reconhecidos. Foi triste, mas eu os tinha avisado de que
+VME_FireWorship.descriptionMaker.rules.rulesStrings[9]	lesson(tag=meme_FireWorship)              ->o fogo nunca é um senhor gentil
+VME_FireWorship.descriptionMaker.rules.rulesStrings[10]	lessonReinforcement(tag=meme_FireWorship) ->As lições mais profundas saem das águas mais fundas e dos fogos mais quentes.
+VME_FireWorship.descriptionMaker.rules.rulesStrings[11]	archistBasis(tag=meme_FireWorship)    ->Os arquotécnicos são sábios, puros. Manifestam-se a nós no mais palpável de todos os mistérios visíveis: o fogo.
+VME_FireWorship.descriptionMaker.rules.rulesStrings[12]	archistFact(tag=meme_FireWorship)     ->Dizem que um mundo entrando na transcendência é engolido por incêndios do tamanho de continentes. Um fogo místico que não consome, mas reúne as almas para que possam ascender.
+VME_FireWorship.descriptionMaker.rules.rulesStrings[13]	archistProphecy(tag=meme_FireWorship) ->[inTheEnd], só quem for digno do fogo sagrado poderá evoluir além do seu eu humano.
+VME_FireWorship.descriptionMaker.rules.rulesStrings[14]	animistBasis(tag=meme_FireWorship)    ->Não há espírito mais forte que o espírito do fogo. Todos os outros espíritos lhe são submissos.
+VME_FireWorship.descriptionMaker.rules.rulesStrings[15]	animistFact(tag=meme_FireWorship)     ->As chamas trêmulas nos dão um vislumbre do mundo dos espíritos, pois representam a transmutação da madeira em cinzas.
+VME_FireWorship.descriptionMaker.rules.rulesStrings[16]	animistProphecy(tag=meme_FireWorship) ->[itIsSaid] só quem venera o fogo conseguirá aplacar os espíritos.
+VME_FireWorship.descriptionMaker.rules.rulesStrings[17]	serketistProphecy(tag=meme_FireWorship)->[itIsSaid] seremos como o besouro-de-fogo, atraídos pelas chamas como a fonte de toda a vida.
+VME_FireWorship.descriptionMaker.rules.rulesStrings[18]	chthonianProphecy(tag=meme_FireWorship)->Dominando e controlando o fogo sagrado, talvez consigamos escapar dessas monstruosidades cósmicas, e quem sabe reduzi-las a cinzas se decidirem acabar conosco.
+VME_FireWorship.descriptionMaker.rules.rulesStrings[19]	esotericismProphecy(tag=meme_FireWorship)->Estudar a chama sagrada trará revelações preciosas sobre a natureza do Universo, pois o fogo é a expressão suprema e mais pura da entropia.
+VME_FireWorship.descriptionMaker.rules.rulesStrings[20]	eschatologismFact(tag=meme_FireWorship)->Vamos assistir a tudo queimar.
+VME_FireWorship.descriptionMaker.rules.rulesStrings[21]	introMemo(tag=meme_FireWorship)->Lembro a todos que o simulado de evacuação de incêndio desta semana foi marcado uma hora antes do normal. Levamos a segurança muito a sério aqui: o fogo pode ser sagrado, mas colaborador queimado prejudica o lucro.
+VME_FireWorship.descriptionMaker.rules.rulesStrings[22]	alienistProphecy(tag=meme_FireWorship)->Todas essas criaturas desgarradas, criações esquecidas da humanidade, servirão de lenha para as chamas.
+VME_FireWorship.generalRules.rulesStrings[0]	memeAdjective->ardente
+VME_FireWorship.generalRules.rulesStrings[1]	memeAdjective->ígneo(a)
+VME_FireWorship.generalRules.rulesStrings[2]	memeAdjective->flamejante
+VME_FireWorship.generalRules.rulesStrings[3]	memeAdjective->em chamas
+VME_FireWorship.generalRules.rulesStrings[4]	memeAdjective->fumegante
+VME_FireWorship.generalRules.rulesStrings[5]	memeHyphenPrefix->piro
+VME_FireWorship.generalRules.rulesStrings[6]	memeLeaderNoun->acendedor
+VME_FireWorship.generalRules.rulesStrings[7]	memeLeaderNoun->tocheiro
+VME_FireWorship.generalRules.rulesStrings[8]	memeLeaderNoun->grande incendiário
+VME_FireWorship.generalRules.rulesStrings[9]	memeConcept->fogo
+VME_FireWorship.symbolPacks.0.adjective	pirólatra
+VME_FireWorship.symbolPacks.0.ideoName	Pirolatria
+VME_FireWorship.symbolPacks.0.member	adorador do fogo
+VME_FireWorship.symbolPacks.0.theme	culto ao fogo
+VME_Bushido.label	bushido
+VME_Bushido.description	Há honra no combate e nas demonstrações de coragem.
+VME_Bushido.descriptionMaker.rules.rulesStrings[0]	creation(tag=meme_Bushido)        ->[deity0_name] falou aos seus seguidores: "Ajam com o coração do guerreiro."
+VME_Bushido.descriptionMaker.rules.rulesStrings[1]	episode(uses=1,tag=meme_Bushido)  ->Os ensinamentos de [deity0_name] aos seus seguidores davam ênfase à honra, à coragem e à habilidade: "Todos os homens erram, mas um bom homem cede quando sabe que seu caminho está errado e repara o mal."
+VME_Bushido.descriptionMaker.rules.rulesStrings[2]	intro(tag=meme_Bushido)           ->Em [place_summary] [place_name], os [memberNamePlural] construíram um dōjō gigantesco, um salão sagrado onde se ensinavam os caminhos de [deity0_name].
+VME_Bushido.descriptionMaker.rules.rulesStrings[3]	conflict(tag=meme_Bushido)        ->Achando-o um desperdício, os magistrados quiseram demolir o dōjō e usar o terreno para fins mais mundanos. Consideravam os caminhos de [deity0_name] obsoletos.
+VME_Bushido.descriptionMaker.rules.rulesStrings[4]	founderJoin(tag=meme_Bushido)     ->[founderName], estudioso(a) e mestre das artes marciais, reuniu seus seguidores e pediu que mostrassem aos magistrados os caminhos de [deity0_name], pregando a verdade pelo exemplo. Mostrariam que só vale a pena viver uma vida de honra, coragem e habilidade.
+VME_Bushido.descriptionMaker.rules.rulesStrings[5]	victory(tag=meme_Bushido)         ->Os magistrados se renderam à incrível demonstração de virtude, e seus corações mudaram. [founderName] ganhou grande fama, e seus ensinamentos se espalharam pelas estrelas.
+VME_Bushido.descriptionMaker.rules.rulesStrings[6]	setup(tag=meme_Bushido)           ->[founderName] era um(a) artista marcial renomado(a) num dos mundos reluzentes. Defendia que só vale a pena viver uma vida de honra, coragem e habilidade. Quem acerta o coração toda manhã e toda noite ganha liberdade no Caminho. Sua vida inteira será sem culpa, e ele terá êxito em sua vocação.
+VME_Bushido.descriptionMaker.rules.rulesStrings[7]	story(uses=1,tag=meme_Bushido)    ->Em busca da paz interior, [founderName] reuniu seus seguidores e fretou uma nave para viajar até a Orla.
+VME_Bushido.descriptionMaker.rules.rulesStrings[8]	lessonIntro(tag=meme_Bushido)         ->É assim que aprendemos uma única verdade: "deve-se viver fiel ao único propósito do momento presente". A coisa mais importante que aprendi é que
+VME_Bushido.descriptionMaker.rules.rulesStrings[9]	lesson(tag=meme_Bushido)              ->só vale a pena viver uma vida de honra, coragem e habilidade
+VME_Bushido.descriptionMaker.rules.rulesStrings[10]	lessonReinforcement(tag=meme_Bushido) ->O melhor lutador nunca está com raiva.
+VME_Bushido.descriptionMaker.rules.rulesStrings[11]	archistBasis(tag=meme_Bushido)    ->Os arquotécnicos são seres ascendidos, livres dos instintos básicos que atormentam a humanidade.
+VME_Bushido.descriptionMaker.rules.rulesStrings[12]	archistFact(tag=meme_Bushido)     ->Como seres éticos supremos, os arquotécnicos nos mostram que só vale a pena viver uma vida de honra, coragem e habilidade.
+VME_Bushido.descriptionMaker.rules.rulesStrings[13]	archistProphecy(tag=meme_Bushido) ->[inTheEnd], só os guerreiros de coração puro poderão transcender.
+VME_Bushido.descriptionMaker.rules.rulesStrings[14]	animistBasis(tag=meme_Bushido)    ->Há muitos espíritos da Guerra, mas o maior de todos é o espírito da honra.
+VME_Bushido.descriptionMaker.rules.rulesStrings[15]	animistFact(tag=meme_Bushido)     ->O maior dos espíritos nos ensina que só vale a pena viver uma vida de honra, coragem e habilidade.
+VME_Bushido.descriptionMaker.rules.rulesStrings[16]	animistProphecy(tag=meme_Bushido) ->[itIsSaid] só os guerreiros de coração puro conseguem de verdade aplacar os espíritos.
+VME_Bushido.descriptionMaker.rules.rulesStrings[17]	serketistProphecy(tag=meme_Bushido)->[itIsSaid] entenderemos que os insetos nos ensinam que só vale a pena viver uma vida de honra, coragem e habilidade.
+VME_Bushido.descriptionMaker.rules.rulesStrings[18]	chthonianProphecy(tag=meme_Bushido)->Elas são a personificação da iniquidade. Malignas e imorais por natureza. São um espelho sombrio que nos mostra que só vale a pena viver uma vida de honra, coragem e habilidade.
+VME_Bushido.descriptionMaker.rules.rulesStrings[19]	esotericismProphecy(tag=meme_Bushido)->Esse conhecimento oculto não se obtém por meios desonrosos, pois só vale a pena viver uma vida de honra, coragem e habilidade.
+VME_Bushido.descriptionMaker.rules.rulesStrings[20]	eschatologismFact(tag=meme_Bushido)->Até o último instante nos manteremos puros, pois só vale a pena viver uma vida de honra, coragem e habilidade.
+VME_Bushido.descriptionMaker.rules.rulesStrings[21]	introMemo(tag=meme_Bushido)->Lembrem do nosso lema! "Só vale a pena viver uma vida de honra, coragem e habilidade". Incentivamos imprimi-lo em adesivos para decorar suas salas.
+VME_Bushido.descriptionMaker.rules.rulesStrings[22]	alienistProphecy(tag=meme_Bushido)->Essas criaturas desgarradas, criações esquecidas e descartadas da soberba humana, nos lembram que só vale a pena viver uma vida de honra, coragem e habilidade.
+VME_Bushido.generalRules.rulesStrings[0]	memeAdjective->honrado(a)
+VME_Bushido.generalRules.rulesStrings[1]	memeAdjective->corajoso(a)
+VME_Bushido.generalRules.rulesStrings[2]	memeAdjective->hábil
+VME_Bushido.generalRules.rulesStrings[4]	memeLeaderNoun->daimiô
+VME_Bushido.generalRules.rulesStrings[5]	memeConcept->coragem
+VME_Bushido.symbolPacks.0.adjective	bushido
+VME_Bushido.symbolPacks.0.ideoName	Bushido
+VME_Bushido.symbolPacks.0.member	samurai
+VME_Bushido.symbolPacks.0.theme	bushido
+VME_Light.description	Devemos ser guiados pela luz; a luz negra é algo perverso.
+VME_Light.descriptionMaker.rules.rulesStrings[0]	creation(tag=meme_Light)        ->No princípio, [deity0_name] criou o céu e a terra. E disse: "Haja luz". E houve luz.
+VME_Light.descriptionMaker.rules.rulesStrings[1]	episode(uses=1,tag=meme_Light)  ->[deity0_name] viu que a luz era boa, e separou a luz das trevas. E chamou a luz de Dia, e às trevas chamou Noite.
+VME_Light.descriptionMaker.rules.rulesStrings[2]	intro(tag=meme_Light)           ->E [deity0_name] disse: "Haja luzeiros no firmamento do céu para separar o dia da noite; e sirvam de sinais, de estações, de dias e de anos". Os [memberNamePlural] ergueram um templo para celebrar as palavras de [deity0_name].
+VME_Light.descriptionMaker.rules.rulesStrings[3]	conflict(tag=meme_Light)        ->Um(a) [foeLeader] invejoso(a) olhou para essas maravilhas e quis mergulhar o Universo na escuridão.
+VME_Light.descriptionMaker.rules.rulesStrings[4]	founderJoin(tag=meme_Light)     ->[founderName], o(a) maior profeta de [deity0_name], pediu ajuda, e [deity0_name] fez dois grandes luzeiros: o maior para governar o dia e o menor para governar a noite; e fez também as estrelas. E [deity0_name] os pôs no firmamento do céu para iluminar o mundo.
+VME_Light.descriptionMaker.rules.rulesStrings[5]	victory(tag=meme_Light)         ->O(a) [foeLeader] foi humilhado(a) e fugiu aterrorizado(a), pois a luz do sol era mais forte que sua vontade.
+VME_Light.descriptionMaker.rules.rulesStrings[6]	setup(tag=meme_Light)           ->[founderName] era agente humanitário(a) num mundo esquecido da Orla. Viu a pobreza e a miséria das tribos regredidas e entendeu que só a pureza de coração e de pensamento pode superar os desafios da humanidade.
+VME_Light.descriptionMaker.rules.rulesStrings[7]	story(uses=1,tag=meme_Light)    ->[founderName] criou a maior ONG já conhecida, e voluntários se espalharam pelas estrelas para compartilhar sua mensagem de concórdia e paz.
+VME_Light.descriptionMaker.rules.rulesStrings[8]	lessonIntro(tag=meme_Light)         ->O voluntariado está no centro do que é ser humano. Ninguém passou pela vida sem a ajuda de alguém. Quero que você entenda que
+VME_Light.descriptionMaker.rules.rulesStrings[9]	lesson(tag=meme_Light)              ->o melhor jeito de se encontrar é se perder a serviço dos outros
+VME_Light.descriptionMaker.rules.rulesStrings[10]	lessonReinforcement(tag=meme_Light) ->É isso que significa dissipar a escuridão.
+VME_Light.descriptionMaker.rules.rulesStrings[11]	archistBasis(tag=meme_Light)    ->Os arquotécnicos, desde o início, percebiam o universo com sentidos além do físico. A clareza do seu pensamento banha o Universo de luz.
+VME_Light.descriptionMaker.rules.rulesStrings[12]	archistFact(tag=meme_Light)     ->Ao nublar nossos sentidos com escuridão, só nos impedimos de entender o universo como os arquotécnicos o entendem.
+VME_Light.descriptionMaker.rules.rulesStrings[13]	archistProphecy(tag=meme_Light) ->[inTheEnd], baniremos a escuridão para sempre e liberaremos a sabedoria dos arquotécnicos para toda a humanidade.
+VME_Light.descriptionMaker.rules.rulesStrings[14]	animistBasis(tag=meme_Light)    ->O mundo dos espíritos é coberto de escuridão, o que os impede de interagir diretamente com o mundo material.
+VME_Light.descriptionMaker.rules.rulesStrings[15]	animistFact(tag=meme_Light)     ->Precisamos banir a escuridão do reino espiritual e banhá-lo de luz, para que os espíritos possam nos ver de verdade como somos.
+VME_Light.descriptionMaker.rules.rulesStrings[16]	animistProphecy(tag=meme_Light) ->[itIsSaid] só quem consegue olhar sem cegueira para o reino espiritual pode se comunicar de verdade com os espíritos.
+VME_Light.descriptionMaker.rules.rulesStrings[17]	serketistProphecy(tag=meme_Light)->[itIsSaid] encararemos sem piscar, com olhos multifacetados, um Universo de puro brilho, livres da escuridão que nos prende às nossas frágeis carcaças de mamífero.
+VME_Light.descriptionMaker.rules.rulesStrings[18]	chthonianProphecy(tag=meme_Light)->Essas entidades sobrenaturais se deleitam na escuridão. Uma escuridão senciente e tenebrosa de vórtices negros em espiral que penetra no seu ser. Por isso abraçaremos a luz, para banir para sempre o vazio de loucura delas.
+VME_Light.descriptionMaker.rules.rulesStrings[19]	esotericismProphecy(tag=meme_Light)->Esse conhecimento oculto está na escuridão. Por isso abraçaremos a luz, para expor os segredos que tramam se esconder de nós.
+VME_Light.descriptionMaker.rules.rulesStrings[20]	eschatologismFact(tag=meme_Light)->Uma luz ofuscante anunciará o fim dos tempos, banhando o mundo num brilho mortal e aniquilador.
+VME_Light.descriptionMaker.rules.rulesStrings[21]	introMemo(tag=meme_Light)->Como programado, as novas luminárias de neon azul serão instaladas em todas as salas a partir da próxima terça. São lâmpadas econômicas, ótimas para o meio ambiente!
+VME_Light.descriptionMaker.rules.rulesStrings[22]	alienistProphecy(tag=meme_Light)->Essas criaturas desgarradas se afastaram demais da luz e vagam na escuridão.
+VME_Light.generalRules.rulesStrings[0]	memeAdjective->luminoso(a)
+VME_Light.generalRules.rulesStrings[1]	memeAdjective->radiante
+VME_Light.generalRules.rulesStrings[2]	memeHyphenPrefix->luz
+VME_Light.generalRules.rulesStrings[3]	memeHyphenPrefix->clari
+VME_Light.generalRules.rulesStrings[4]	memeConcept->luz
+VME_Light.generalRules.rulesStrings[5]	memeLeaderNoun->forjado na luz
+VME_Light.generalRules.rulesStrings[6]	memeLeaderNoun->paladino
+VME_Light.generalRules.rulesStrings[7]	memeLeaderAdjective->luminoso(a)
+VME_Light.generalRules.rulesStrings[8]	memeMoralist->iluminador
+VME_Light.symbolPacks.0.ideoName	Luz
+VME_Light.symbolPacks.0.member	portador da luz
+VME_Nomad.description	Viajar é importante para nossa gente; não é sábio ficar parado.
+VME_Nomad.descriptionMaker.rules.rulesStrings[0]	creation(tag=meme_Nomad)        ->[deity0_name] escreveu seus mandamentos em sete tábuas de barro. O terceiro mandamento dizia: "Nômade serei a vida toda, apaixonado por lugares distantes e inexplorados."
+VME_Nomad.descriptionMaker.rules.rulesStrings[1]	episode(uses=1,tag=meme_Nomad)  ->Seguindo os preceitos de [deity0_name], evitamos construir cidades e passamos a vida em movimento, livres das amarras do sedentarismo.
+VME_Nomad.descriptionMaker.rules.rulesStrings[2]	intro(tag=meme_Nomad)           ->Os [memberNamePlural] estavam inquietos, pois [deity0_name] tinha ordenado que não construíssem cidades nem se fixassem, e estavam cansados de vagar vivendo do que a terra dava.
+VME_Nomad.descriptionMaker.rules.rulesStrings[3]	conflict(tag=meme_Nomad)        ->Um dos anciãos quis desafiar os mandamentos de [deity0_name], seduzido pelas promessas de campos férteis e muralhas altas para nos defender dos inimigos.
+VME_Nomad.descriptionMaker.rules.rulesStrings[4]	founderJoin(tag=meme_Nomad)     ->[founderName], o(a) Grande Khan, se cansou da insolência dos anciãos e mandou enforcar todos. Dali em diante, os [memberNamePlural] seriam os nômades mais hábeis da terra, nunca ficando muito tempo no mesmo lugar.
+VME_Nomad.descriptionMaker.rules.rulesStrings[5]	victory(tag=meme_Nomad)         ->Foi assim que nos apaixonamos pela vontade de viajar e percorremos o mundo inteiro sem criar raízes.
+VME_Nomad.descriptionMaker.rules.rulesStrings[6]	setup(tag=meme_Nomad)           ->[founderName] era um(a) sobrevivencialista habilidoso(a), cansado(a) das multidões sufocantes das cidades enormes. Ansiava pela volta de tempos simples, de comunidades menores, em que as pessoas eram livres para vagar pelo campo sem se preocupar em se fixar.
+VME_Nomad.descriptionMaker.rules.rulesStrings[7]	story(uses=1,tag=meme_Nomad)    ->Em busca da emoção da aventura, [founderName] reuniu um pequeno grupo de seguidores e fretou uma nave para viajar até a Orla. Infelizmente, morreu alguns anos depois na natureza selvagem, pois a Orla é muito mais selvagem do que podia imaginar, mas seus descendentes mantiveram o modo de vida nômade.
+VME_Nomad.descriptionMaker.rules.rulesStrings[8]	lessonIntro(tag=meme_Nomad)         ->Você já foi a uma cidade lotada? Até as maiores cidades humanas são fossas de doença, violência e corrupção. Está mais do que claro que
+VME_Nomad.descriptionMaker.rules.rulesStrings[9]	lesson(tag=meme_Nomad)              ->a verdadeira natureza humana é viver em comunidades pequenas e nômades
+VME_Nomad.descriptionMaker.rules.rulesStrings[10]	lessonReinforcement(tag=meme_Nomad) ->É obsceno se fixar num lugar e se multiplicar como praga.
+VME_Nomad.descriptionMaker.rules.rulesStrings[11]	archistBasis(tag=meme_Nomad)    ->As cidades são obscenas para os arquotécnicos. Depois da transcendência, não há por que ocupar fisicamente espaços tão enormes, afogando a natureza numa cacofonia de metal torturado e tijolos.
+VME_Nomad.descriptionMaker.rules.rulesStrings[12]	archistFact(tag=meme_Nomad)     ->Os arquotécnicos nos ensinam que o jeito certo de viver é formar comunidades pequenas e nômades, que respeitem seu ambiente.
+VME_Nomad.descriptionMaker.rules.rulesStrings[13]	archistProphecy(tag=meme_Nomad) ->[inTheEnd], quem passar a vida inteira enfurnado numa cidade não transcenderá, enquanto quem for movido pela vontade de viajar se juntará aos arquotécnicos.
+VME_Nomad.descriptionMaker.rules.rulesStrings[14]	animistBasis(tag=meme_Nomad)    ->Os espíritos governam tudo, dos conceitos mais abstratos aos mais concretos. Em especial, cada lugar tem seu próprio espírito, e por isso fincar uma cidade agitada, barulhenta e suja num lugar faz mal ao espírito daquele lugar.
+VME_Nomad.descriptionMaker.rules.rulesStrings[15]	animistFact(tag=meme_Nomad)     ->O espírito da vontade de viajar é poderoso e inspira paixão pela liberdade, pela exploração: nunca se sabe o que a estrada vai trazer.
+VME_Nomad.descriptionMaker.rules.rulesStrings[16]	animistProphecy(tag=meme_Nomad) ->[itIsSaid] só quem consegue viver sem raízes e vagar livre consegue de verdade aplacar os espíritos.
+VME_Nomad.descriptionMaker.rules.rulesStrings[17]	serketistProphecy(tag=meme_Nomad)->[itIsSaid] viveremos livres, como insetos vagando pela terra inteira em busca do que a estrada trouxer.
+VME_Nomad.descriptionMaker.rules.rulesStrings[18]	chthonianProphecy(tag=meme_Nomad)->Ficar num só lugar atrairá a ira dessas entidades sobrenaturais. É melhor estar sempre em fuga e nunca, nunca olhar para trás, pois horrores cósmicos nos esperam.
+VME_Nomad.descriptionMaker.rules.rulesStrings[19]	esotericismProphecy(tag=meme_Nomad)->Esse conhecimento oculto será dificílimo de achar, e precisamos vagar livres, vasculhando cada canto do mundo.
+VME_Nomad.descriptionMaker.rules.rulesStrings[20]	eschatologismFact(tag=meme_Nomad)->Vasculharemos cada canto do mundo, sem descanso, sem diminuir o passo, até trazer o fim dos tempos.
+VME_Nomad.descriptionMaker.rules.rulesStrings[21]	introMemo(tag=meme_Nomad)->Em nome da dedicação, da flexibilidade e da determinação, decidimos implantar uma nova política de "escritórios móveis" que aumentará muito nossa produtividade. Obrigado por confiar na nossa capacidade de achar novos jeitos de oferecer os melhores produtos e serviços aos clientes, sempre cuidando dos nossos colaboradores.
+VME_Nomad.descriptionMaker.rules.rulesStrings[22]	alienistProphecy(tag=meme_Nomad)->Essas criaturas desgarradas podem ser nossas companheiras de estrada, sempre em busca de um lugar onde se encaixem.
+VME_Nomad.generalRules.rulesStrings[0]	memeAdjective->nômade
+VME_Nomad.generalRules.rulesStrings[1]	memeAdjective->itinerante
+VME_Nomad.generalRules.rulesStrings[4]	memeHyphenPrefix->andarilho
+VME_Nomad.generalRules.rulesStrings[5]	memeConcept->andança
+VME_Nomad.generalRules.rulesStrings[7]	memeLeaderNoun->viajante
+VME_Nomad.generalRules.rulesStrings[8]	memeLeaderNoun->andarilho
+VME_Nomad.symbolPacks.0.ideoName	Nomadismo
+VME_Nomad.symbolPacks.0.theme	nomadismo
+VME_BloodCourt.label	corte de sangue
+VME_BloodCourt.description	O combate é uma prática honrosa e brutal.
+VME_BloodCourt.descriptionMaker.rules.rulesStrings[0]	creation(tag=meme_BloodCourt)        ->[deity0_name] tinha matado a maioria dos outros deuses, e seus seguidores se encolhiam de medo: "A força vem de uma vontade indomável. Só quem se provar em combate sangrento será digno do meu respeito."
+VME_BloodCourt.descriptionMaker.rules.rulesStrings[1]	episode(uses=1,tag=meme_BloodCourt)  ->Seguindo os ensinamentos de [deity0_name], aprendemos a lição mais importante: "Não espere oportunidades extraordinárias. Agarre as ocasiões comuns e torne-as grandes. Homens fracos esperam oportunidades; homens fortes as criam."
+VME_BloodCourt.descriptionMaker.rules.rulesStrings[2]	intro(tag=meme_BloodCourt)           ->Os [memberNamePlural] eram famosos por sua arena de gladiadores, dedicada a [deity0_name]. Ali se travavam lutas sangrentas até a morte para decidir quem seria o próximo líder.
+VME_BloodCourt.descriptionMaker.rules.rulesStrings[3]	conflict(tag=meme_BloodCourt)        ->[founderName] foi desafiado(a) para um duelo. Uma ocasião festiva em que a comunidade inteira deixava as diferenças de lado. O vencedor seria o próximo líder e nos guiaria à grandeza.
+VME_BloodCourt.descriptionMaker.rules.rulesStrings[4]	founderJoin(tag=meme_BloodCourt)     ->[founderName], porém, sabia que o oponente ia trapacear, pois [deity0_name] tinha sussurrado a verdade em seus sonhos.
+VME_BloodCourt.descriptionMaker.rules.rulesStrings[5]	victory(tag=meme_BloodCourt)         ->Embora o combate fora da arena fosse proibido entre adultos da comunidade, [deity0_name] permitiu que [founderName] decapitasse o oponente durante o sono, uma humilhação completa e uma desonra para a família dele, consolidando assim o governo de [founderName].
+VME_BloodCourt.descriptionMaker.rules.rulesStrings[6]	setup(tag=meme_BloodCourt)           ->[founderName] era um(a) senhor(a) da guerra implacável, sempre em luta contra os restos de um império estelar caído. Entendia que o conflito e a discórdia guiam uma civilização. O comodismo traz a estagnação.
+VME_BloodCourt.descriptionMaker.rules.rulesStrings[7]	story(uses=1,tag=meme_BloodCourt)    ->Ensinou-nos que um homem forte e bem-sucedido não é vítima do ambiente. Ele cria condições favoráveis. Sua força e energia próprias obrigam as coisas a sair como ele deseja.
+VME_BloodCourt.descriptionMaker.rules.rulesStrings[8]	lessonIntro(tag=meme_BloodCourt)         ->Foi duríssimo crescer naquele lugar, e nem todos sobrevivemos. Mesmo assim, os que pereceram na luta deixaram claro que
+VME_BloodCourt.descriptionMaker.rules.rulesStrings[9]	lesson(tag=meme_BloodCourt)              ->as dificuldades existem para despertar, não para desanimar. O espírito humano cresce forte no conflito
+VME_BloodCourt.descriptionMaker.rules.rulesStrings[10]	lessonReinforcement(tag=meme_BloodCourt) ->Você tem poder sobre sua mente, não sobre os acontecimentos lá fora. Perceba isso e encontrará força.

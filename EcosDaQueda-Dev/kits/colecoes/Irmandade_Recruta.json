@@ -1,0 +1,117 @@
+{
+ "id": "Irmandade_Recruta",
+ "label": "Irmandade Recruta",
+ "faction": "EQ_Faction_Forja",
+ "pawnKinds": [
+  "EQ_U_Forja_Recruta"
+ ],
+ "chance": 1,
+ "variations": [
+  {
+   "name": "Principal",
+   "weight": 1,
+   "apparel": [
+    {
+     "def": "CE_Apparel_Backpack",
+     "quality": "Poor"
+    },
+    {
+     "def": "CE_Armor_Gambeson",
+     "quality": "Poor"
+    },
+    {
+     "def": "Apparel_Broadwrap",
+     "quality": "Poor"
+    },
+    {
+     "def": "VFEM2_Apparel_Mantle",
+     "quality": "Poor"
+    }
+   ],
+   "weapons": [
+    {
+     "def": "Gun_BoltActionRifle",
+     "quality": "Poor"
+    },
+    {
+     "def": "VWE_MeleeWeapon_Shovel",
+     "quality": "Poor"
+    },
+    {
+     "def": "VWEFT_Gun_FrontierPistol",
+     "quality": "Poor"
+    }
+   ],
+   "inventory": [
+    {
+     "def": "Ammo_303British_FMJ",
+     "count": 40
+    },
+    {
+     "def": "Ammo_763x25mmMauser_HP",
+     "count": 20
+    },
+    {
+     "def": "MealSurvivalPack",
+     "count": 2
+    }
+   ]
+  },
+  {
+   "name": "Toxico",
+   "weight": 1,
+   "apparel": [
+    {
+     "def": "CE_Apparel_Backpack",
+     "quality": "Poor"
+    },
+    {
+     "def": "CE_Armor_Gambeson",
+     "quality": "Poor"
+    },
+    {
+     "def": "Apparel_Broadwrap",
+     "quality": "Poor"
+    },
+    {
+     "def": "VFEM2_Apparel_Mantle",
+     "quality": "Poor"
+    },
+    {
+     "def": "CE_Apparel_ImprovGasMask",
+     "quality": "Poor"
+    }
+   ],
+   "weapons": [
+    {
+     "def": "Gun_BoltActionRifle",
+     "quality": "Poor"
+    },
+    {
+     "def": "VWE_MeleeWeapon_Shovel",
+     "quality": "Poor"
+    },
+    {
+     "def": "Weapon_GrenadeTox"
+    },
+    {
+     "def": "VWEFT_Gun_FrontierPistol"
+    }
+   ],
+   "inventory": [
+    {
+     "def": "Ammo_303British_FMJ",
+     "count": 40
+    },
+    {
+     "def": "Ammo_763x25mmMauser_HP",
+     "count": 20
+    },
+    {
+     "def": "MealSurvivalPack",
+     "count": 2
+    }
+   ]
+  }
+ ]
+}

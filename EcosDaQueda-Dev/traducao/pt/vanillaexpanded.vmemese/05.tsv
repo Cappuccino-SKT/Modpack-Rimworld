@@ -1,0 +1,171 @@
+## DefInjected/MemeDef/Memes_Misc.xml
+VME_Progressive.symbolPacks.0.ideoName	Automação
+VME_Progressive.symbolPacks.0.member	engenheiro de automação
+VME_Progressive.symbolPacks.0.theme	automação
+VME_Aristocratic.label	aristocrático
+VME_Aristocratic.description	Reis e rainhas são o verdadeiro caminho para a prosperidade; a mente do homem comum não serve para liderar.
+VME_Aristocratic.descriptionMaker.rules.rulesStrings[0]	creation(tag=meme_Aristocratic)        ->[deity0_name] viu que alguns dos [memberNamePlural] eram mais aptos a governar que outros e lhes falou: "Por que tratam todos como iguais? Alguns de vocês nasceram para governar, outros nasceram para ser governados."
+VME_Aristocratic.descriptionMaker.rules.rulesStrings[1]	episode(uses=1,tag=meme_Aristocratic)  ->[deity0_name] disse a todos os [memberNamePlural]: "Honrem seus líderes e tratem-nos como meus arautos no mundo mortal, pois eles são mais que meros homens."
+VME_Aristocratic.descriptionMaker.rules.rulesStrings[2]	intro(tag=meme_Aristocratic)           ->Os [memberNamePlural] construíram um(a) [altarName] real em [place_summary] [place_name], um monumento à glória de [deity0_name].
+VME_Aristocratic.descriptionMaker.rules.rulesStrings[3]	conflict(tag=meme_Aristocratic)        ->Revoltas camponesas constantes ameaçavam a existência do templo de [deity0_name], e os líderes dos [memberNamePlural] decidiram pacificá-las.
+VME_Aristocratic.descriptionMaker.rules.rulesStrings[4]	founderJoin(tag=meme_Aristocratic)     ->[deity0_name] instruiu [founderName] a pôr os camponeses no seu lugar, pois eles ameaçavam a vida de seus superiores.
+VME_Aristocratic.descriptionMaker.rules.rulesStrings[5]	victory(tag=meme_Aristocratic)         ->[founderName] esmagou as revoltas camponesas, e sua linhagem real é abençoada desde então.
+VME_Aristocratic.descriptionMaker.rules.rulesStrings[6]	setup(tag=meme_Aristocratic)           ->Nosso(a) fundador(a), [founderName], foi um(a) grande sociólogo(a) que viu os fracos sistemas democráticos do seu mundo natal e os achou incrivelmente inadequados. Fretou uma nave particular e partiu com centenas de seguidores para criar a sociedade feudal ideal.
+VME_Aristocratic.descriptionMaker.rules.rulesStrings[7]	story(uses=1,tag=meme_Aristocratic)    ->Os seguidores de [founderName] estudaram seus escritos e criaram uma estrutura social estável há mais de duzentos anos.
+VME_Aristocratic.descriptionMaker.rules.rulesStrings[8]	lessonIntro(tag=meme_Aristocratic)         ->Em todos os meus anos governando as massas, aprendi uma lição acima de todas:
+VME_Aristocratic.descriptionMaker.rules.rulesStrings[9]	lesson(tag=meme_Aristocratic)              ->algumas pessoas nascem para governar, outras nascem para ser governadas
+VME_Aristocratic.descriptionMaker.rules.rulesStrings[10]	lessonReinforcement(tag=meme_Aristocratic) ->E só honrando e obedecendo nossos aristocratas mais nobres podemos construir de verdade uma sociedade estável.
+VME_Aristocratic.descriptionMaker.rules.rulesStrings[11]	archistBasis(tag=meme_Aristocratic)    ->Os arquotécnicos são perfeitos. Um exemplo impecável de hierarquia, em que a maioria vive para servir às necessidades de uns poucos nobres.
+VME_Aristocratic.descriptionMaker.rules.rulesStrings[12]	archistFact(tag=meme_Aristocratic)     ->Não há motivo para hesitar: só quem for de fato submisso aos seus superiores será recompensado quando os arquotécnicos se revelarem ao resto do Universo.
+VME_Aristocratic.descriptionMaker.rules.rulesStrings[13]	archistProphecy(tag=meme_Aristocratic) ->[inTheEnd], os arquotécnicos permitirão que os de sangue nobre ascendam, mas seus servos também poderão continuar a servi-los depois.
+VME_Aristocratic.descriptionMaker.rules.rulesStrings[14]	animistFact(tag=meme_Aristocratic)     ->Os espíritos valorizam os de sangue puro acima dos demais, pois quem consegue comandar os outros em vida também prova a força do próprio espírito.
+VME_Aristocratic.descriptionMaker.rules.rulesStrings[15]	serketistProphecy(tag=meme_Aristocratic)->Assim como formigas e abelhas têm suas rainhas e seus zangões, assim organizaremos nossas sociedades: alguém de sangue nobre reinando supremo sobre seus súditos.
+VME_Aristocratic.descriptionMaker.rules.rulesStrings[16]	chthonianProphecy(tag=meme_Aristocratic)->Nossos líderes de sangue nobre nos protegerão da insanidade cósmica desses seres terríveis. Só obedecendo a eles podemos esperar continuar sãos.
+VME_Aristocratic.descriptionMaker.rules.rulesStrings[17]	esotericismProphecy(tag=meme_Aristocratic)->O sangue nobre de nossos líderes lhes permitirá ver além do véu. Segredos que ficarão para sempre escondidos de seus humildes servos.
+VME_Aristocratic.descriptionMaker.rules.rulesStrings[18]	eschatologismFact(tag=meme_Aristocratic)->Chamaremos nosso líder de Príncipe das Mentiras. Aquele que traz o fim de todas as coisas.
+VME_Aristocratic.descriptionMaker.rules.rulesStrings[19]	introMemo(tag=meme_Aristocratic)->Lembrem que quem tem sangue nobre tem prioridade nas férias. Sim, entendo que alguns de vocês gostariam de tirar férias em julho, que talvez tenham dois filhos e seja difícil achar creche nesse mês, mas a falta de linhagem aristocrática significa que vocês terão de se adaptar à situação atual.
+VME_Aristocratic.descriptionMaker.rules.rulesStrings[20]	alienistProphecy(tag=tag=meme_Aristocratic)->Criaremos zoológicos reais maravilhosos com todas essas criaturas, uma verdadeira exibição do nosso poder e da nossa força.
+VME_Aristocratic.generalRules.rulesStrings[0]	memeAdjective->régio(a)
+VME_Aristocratic.generalRules.rulesStrings[1]	memeAdjective->real
+VME_Aristocratic.generalRules.rulesStrings[2]	memeAdjective->monárquico(a)
+VME_Aristocratic.generalRules.rulesStrings[3]	memeAdjective->principesco(a)
+VME_Aristocratic.generalRules.rulesStrings[4]	memeAdjective->soberano(a)
+VME_Aristocratic.generalRules.rulesStrings[5]	memeHyphenPrefix->nobre
+VME_Aristocratic.generalRules.rulesStrings[6]	memeConcept->aristocracia
+VME_Aristocratic.generalRules.rulesStrings[7]	memeConcept->nobreza
+VME_Aristocratic.generalRules.rulesStrings[8]	memeConcept->sangue azul
+VME_Aristocratic.generalRules.rulesStrings[9]	memeLeaderNoun->barão
+VME_Aristocratic.generalRules.rulesStrings[10]	memeLeaderNoun->conde
+VME_Aristocratic.symbolPacks.0.ideoName	Nobreza
+VME_Aristocratic.symbolPacks.0.theme	nobreza
+VME_Aristocratic.symbolPacks.1.adjective	aristocrático
+VME_Aristocratic.symbolPacks.1.ideoName	Aristocracia
+VME_Aristocratic.symbolPacks.1.theme	aristocracia
+VME_Republic.label	república
+VME_Republic.description	Ninguém deve liderar sozinho; a liderança deve ser dividida entre uns poucos escolhidos.
+VME_Republic.descriptionMaker.rules.rulesStrings[0]	creation(tag=meme_Republic)        ->[deity0_name] viu que alguns dos [memberNamePlural] eram mais aptos a governar que outros e lhes falou: "O governo de vocês será dividido entre três líderes, e eles os levarão a uma glória inimaginável."
+VME_Republic.descriptionMaker.rules.rulesStrings[1]	episode(uses=1,tag=meme_Republic)  ->[deity0_name] disse a todos os [memberNamePlural]: "Entendam que a dignidade da república vem em primeiro lugar e vale mais que a vida."
+VME_Republic.descriptionMaker.rules.rulesStrings[2]	intro(tag=meme_Republic)           ->Os [memberNamePlural] construíram um enorme senado em [place_summary] [place_name], um testemunho da glória de [deity0_name].
+VME_Republic.descriptionMaker.rules.rulesStrings[3]	conflict(tag=meme_Republic)        ->Um(a) [foeLeader] poderoso(a) se aproveitou da fragilidade do antigo Império dos [memberNamePlural] e usou sua corrupção enraizada para desmontá-lo por dentro.
+VME_Republic.descriptionMaker.rules.rulesStrings[4]	founderJoin(tag=meme_Republic)     ->[deity0_name] instruiu [founderName] a procurar outros dois triúnviros, e assim nasceu a Primeira República dos [memberNamePlural].
+VME_Republic.descriptionMaker.rules.rulesStrings[5]	victory(tag=meme_Republic)         ->Assim unidos, derrotaram o(a) [foeLeader], e os [memberNamePlural] desfrutam da prosperidade do sistema republicano desde então.
+VME_Republic.descriptionMaker.rules.rulesStrings[6]	setup(tag=meme_Republic)           ->Nosso(a) fundador(a), [founderName], foi um(a) grande político(a) que viu a corrupção dos governos do seu mundo natal e os achou incrivelmente inadequados. Fundou ali a Primeira República dos [memberNamePlural], uma instituição que se mantém triunfante há centenas de anos.
+VME_Republic.descriptionMaker.rules.rulesStrings[7]	story(uses=1,tag=meme_Republic)    ->Os seguidores de [founderName] estudaram seus escritos e criaram uma estrutura social que sempre trouxe estabilidade a todos nós.
+VME_Republic.descriptionMaker.rules.rulesStrings[8]	lessonIntro(tag=meme_Republic)         ->Em todos os nossos anos governando as massas, nós três aprendemos uma lição acima de todas:
+VME_Republic.descriptionMaker.rules.rulesStrings[9]	lesson(tag=meme_Republic)              ->não se pode esperar que um único líder seja incorruptível, pois somos meros homens, com nossas tentações e falhas
+VME_Republic.descriptionMaker.rules.rulesStrings[10]	lessonReinforcement(tag=meme_Republic) ->Como triúnviros, é nosso dever solene cuidar uns dos outros e vigiar uns aos outros, sem deixar nenhum de nós cair em tentação e corrupção.
+VME_Republic.descriptionMaker.rules.rulesStrings[11]	archistBasis(tag=meme_Republic)    ->Acredita-se que três arquotécnicos supremos levam um mundo à transcendência.
+VME_Republic.descriptionMaker.rules.rulesStrings[12]	archistFact(tag=meme_Republic)     ->Pela vontade incompreensível desses três, todos os seguidores humanos podem transcender. Devemos imitar isso em nossas sociedades, pois o número três parece ter um significado especial.
+VME_Republic.descriptionMaker.rules.rulesStrings[13]	archistProphecy(tag=meme_Republic) ->[inTheEnd], nossos três triúnviros se tornarão arquotécnicos, e o ciclo sem fim da ascensão continuará.
+VME_Republic.descriptionMaker.rules.rulesStrings[14]	animistFact(tag=meme_Republic)     ->O número três é sagrado para os espíritos. Moldamos nossa sociedade no triunvirato republicano para aplacá-los e honrá-los.
+VME_Republic.descriptionMaker.rules.rulesStrings[15]	serketistProphecy(tag=meme_Republic)->Três grandes líderes governarão nossa sociedade: o Besouro, a Aranha e a Formiga. Esse triunvirato nos guiará nos momentos de maior necessidade.
+VME_Republic.descriptionMaker.rules.rulesStrings[16]	chthonianProphecy(tag=meme_Republic)->Histórias obscuras falam do Triunvirato das Profundezas Abissais, um grupo especialmente cruel de entidades sobrenaturais decidido a subjugar nossas mentes mortais. Criaremos nosso próprio triunvirato para nos proteger deles.
+VME_Republic.descriptionMaker.rules.rulesStrings[17]	esotericismProphecy(tag=meme_Republic)->Dizem que os antigos gregos da Terra consideravam o três o número perfeito, o número da harmonia, da sabedoria e do entendimento. O número do divino.
+VME_Republic.descriptionMaker.rules.rulesStrings[18]	eschatologismFact(tag=meme_Republic)->Guiados por três arautos do fim dos tempos, inauguraremos uma nova era de trevas.
+VME_Republic.descriptionMaker.rules.rulesStrings[19]	introMemo(tag=meme_Republic)->Sabemos que alguns colaboradores novos estão confusos com nossa estrutura corporativa um tanto heterodoxa de três alas... É simples: consideramos nossa empresa uma forma pós-moderna de governo, baseada em eficiência e robustez econômica.
+VME_Republic.descriptionMaker.rules.rulesStrings[20]	alienistProphecy(tag=meme_Republic)->Nossos três triúnviros decidirão o destino de todas essas criações humanas desgarradas, pois confiamos em sua sabedoria nesses assuntos.
+VME_Republic.generalRules.rulesStrings[0]	memeAdjective->republicano(a)
+VME_Republic.generalRules.rulesStrings[1]	memeAdjective->triunviral
+VME_Republic.generalRules.rulesStrings[2]	memeConcept->república
+VME_Republic.generalRules.rulesStrings[3]	memeConcept->triunvirato
+VME_Republic.generalRules.rulesStrings[4]	memeLeaderNoun->triúnviro
+VME_Republic.generalRules.rulesStrings[5]	memeLeaderNoun->senador
+VME_Republic.symbolPacks.0.adjective	republicano
+VME_Republic.symbolPacks.0.ideoName	República
+VME_Republic.symbolPacks.0.member	cidadão
+VME_Republic.symbolPacks.0.theme	república
+VME_Republic.symbolPacks.1.adjective	triunviral
+VME_Republic.symbolPacks.1.ideoName	Triunvirato
+VME_Republic.symbolPacks.1.member	cidadão
+VME_Republic.symbolPacks.1.theme	triunvirato
+VME_ExaltedPriesthood.label	sacerdócio exaltado
+VME_ExaltedPriesthood.description	Nosso líder também deve ser nosso profeta, e é importante honrá-lo.
+VME_ExaltedPriesthood.descriptionMaker.rules.rulesStrings[0]	creation(tag=meme_ExaltedPriesthood)        ->[deity0_name] unificou nossa fé ao nomear nosso(a) querido(a) fundador(a), [founderName], chefe de sua igreja.
+VME_ExaltedPriesthood.descriptionMaker.rules.rulesStrings[1]	episode(uses=1,tag=meme_ExaltedPriesthood)  ->[deity0_name] disse a todos os [memberNamePlural]: "[founderName] será meu administrador, para que possa tanto pregar a sã doutrina quanto refutar quem a contradiz."
+VME_ExaltedPriesthood.descriptionMaker.rules.rulesStrings[2]	intro(tag=meme_ExaltedPriesthood)           ->Os [memberNamePlural] construíram um(a) grande [altarName] em [place_summary] [place_name], para que qualquer um pudesse se juntar a [founderName] para exaltar as virtudes de [deity0_name].
+VME_ExaltedPriesthood.descriptionMaker.rules.rulesStrings[3]	conflict(tag=meme_ExaltedPriesthood)        ->Um(a) [foeLeader] covarde, querendo negar a santidade de [founderName], tentou destruir o(a) [altarName] com uma tocha.
+VME_ExaltedPriesthood.descriptionMaker.rules.rulesStrings[4]	founderJoin(tag=meme_ExaltedPriesthood)     ->Rezando para [deity0_name], [founderName] lançou das mãos um enorme raio de pura luz, fulminando o(a) [foeLeader] num instante.
+VME_ExaltedPriesthood.descriptionMaker.rules.rulesStrings[5]	victory(tag=meme_ExaltedPriesthood)         ->Todos os [foeSoldiers] caíram de joelhos na hora, humilhados pela demonstração de poder de [founderName], e imploraram para ser aceitos em nossa fé.
+VME_ExaltedPriesthood.descriptionMaker.rules.rulesStrings[6]	setup(tag=meme_ExaltedPriesthood)           ->Nosso(a) fundador(a), [founderName], foi um(a) grande teólogo(a). Seus estudos dos incontáveis deuses da humanidade o(a) levaram à conclusão de que a religião não era bem a verdade, mas que uma vida sem fé também seria completamente sem sentido.
+VME_ExaltedPriesthood.descriptionMaker.rules.rulesStrings[7]	story(uses=1,tag=meme_ExaltedPriesthood)    ->Como seguidores do(a) fundador(a), continuaremos o estudo da teologia e tentaremos discernir os segredos mais profundos do Cosmos.
+VME_ExaltedPriesthood.descriptionMaker.rules.rulesStrings[8]	lessonIntro(tag=meme_ExaltedPriesthood)         ->Em todos os meus anos estudando religião, aprendi uma lição acima de todas:
+VME_ExaltedPriesthood.descriptionMaker.rules.rulesStrings[9]	lesson(tag=meme_ExaltedPriesthood)              ->precisamos de sacerdotes para guiar o espírito humano, mesmo que no fim não existam deuses
+VME_ExaltedPriesthood.descriptionMaker.rules.rulesStrings[10]	lessonReinforcement(tag=meme_ExaltedPriesthood) ->Afinal, mesmo sem acreditar no transcendental, está claro que não entendemos o quadro todo.
+VME_ExaltedPriesthood.descriptionMaker.rules.rulesStrings[11]	archistBasis(tag=meme_ExaltedPriesthood)    ->Os arquotécnicos valorizam acima de tudo uma liderança forte. Um grupo desunido é fraco.
+VME_ExaltedPriesthood.descriptionMaker.rules.rulesStrings[12]	archistFact(tag=meme_ExaltedPriesthood)     ->Nosso querido líder, o mais alto de todos os sacerdotes, será o canal pelo qual nos comunicaremos com os arquotécnicos e imploraremos por nossa Transcendência.
+VME_ExaltedPriesthood.descriptionMaker.rules.rulesStrings[13]	archistProphecy(tag=meme_ExaltedPriesthood) ->[inTheEnd], os arquotécnicos revelarão sua sabedoria final ao nosso líder, portador do(a) [relic0_name], e estaremos reverentes ao seu lado nesse momento final.
+VME_ExaltedPriesthood.descriptionMaker.rules.rulesStrings[14]	animistFact(tag=meme_ExaltedPriesthood)     ->Nosso querido líder, o mais alto entre os sacerdotes, é a Voz dos Espíritos. Só por meio dele os espíritos farão seus desejos conhecidos entre os verdadeiros fiéis.
+VME_ExaltedPriesthood.descriptionMaker.rules.rulesStrings[15]	serketistProphecy(tag=meme_ExaltedPriesthood)->[itIsSaid] o mais alto entre os sacerdotes transcenderá a casca mortal e se tornará um com os insetos.
+VME_ExaltedPriesthood.descriptionMaker.rules.rulesStrings[16]	chthonianProphecy(tag=meme_ExaltedPriesthood)->O Papa Sombrio, o mais alto entre os sacerdotes, nos protegerá da insanidade de além das estrelas, como um farol psíquico de esperança banhado na escuridão do vazio.
+VME_ExaltedPriesthood.descriptionMaker.rules.rulesStrings[17]	esotericismProphecy(tag=meme_ExaltedPriesthood)->O Papa Sombrio, o mais alto entre os sacerdotes, se aventurará num mundo de sussurros ásperos e promessas meio esquecidas. Só ele pode discernir o maior de todos os mistérios.
+VME_ExaltedPriesthood.descriptionMaker.rules.rulesStrings[18]	eschatologismFact(tag=meme_ExaltedPriesthood)->O Papa Sombrio, o mais alto entre os sacerdotes, inaugurará o fim dos tempos. O arauto da destruição deste mundo.
+VME_ExaltedPriesthood.descriptionMaker.rules.rulesStrings[19]	introMemo(tag=meme_ExaltedPriesthood)->Se olharem o calendário, com certeza notaram que o aniversário do nosso Querido Líder e CEO é daqui a duas semanas. Claro que é opcional, mas em nome do espírito de equipe espero que cada um de vocês procure um presente de pelo menos dois salários. É o mínimo que podemos fazer!
+VME_ExaltedPriesthood.descriptionMaker.rules.rulesStrings[20]	alienistProphecy(tag=meme_ExaltedPriesthood)->Nosso querido líder, o mais alto entre os sacerdotes, decidirá o destino de todas essas criações humanas desgarradas, pois confiamos em sua sabedoria nesses assuntos.
+VME_ExaltedPriesthood.generalRules.rulesStrings[0]	memeAdjective->exaltado(a)
+VME_ExaltedPriesthood.generalRules.rulesStrings[1]	memeAdjective->teocrático(a)
+VME_ExaltedPriesthood.generalRules.rulesStrings[2]	memeAdjective->santo(a)
+VME_ExaltedPriesthood.generalRules.rulesStrings[3]	memeHyphenPrefix->santo
+VME_ExaltedPriesthood.generalRules.rulesStrings[4]	memeConcept->papado
+VME_ExaltedPriesthood.generalRules.rulesStrings[5]	memeLeaderNoun->papa
+VME_ExaltedPriesthood.generalRules.rulesStrings[6]	memeMoralist->cardeal
+VME_ExaltedPriesthood.generalRules.rulesStrings[7]	memeMoralist->arcebispo
+VME_ExaltedPriesthood.symbolPacks.0.adjective	papal
+VME_ExaltedPriesthood.symbolPacks.0.ideoName	Papado
+VME_ExaltedPriesthood.symbolPacks.0.member	seguidor
+VME_ExaltedPriesthood.symbolPacks.0.theme	papado
+VME_ExaltedPriesthood.symbolPacks.1.adjective	teocrático
+VME_ExaltedPriesthood.symbolPacks.1.ideoName	Teocracia
+VME_ExaltedPriesthood.symbolPacks.1.member	seguidor
+VME_ExaltedPriesthood.symbolPacks.1.theme	teocracia
+VME_Scrapper.description	Materiais não devem ser desperdiçados; é importante desmontar e garimpar com cuidado.
+VME_Scrapper.descriptionMaker.rules.rulesStrings[0]	creation(tag=meme_Scrapper)        ->[deity0_name] nos ensinou a nunca desperdiçar nada: "Esbanjar é um grande pecado, pois criei o mundo à minha imagem, e ao deixar as coisas sem uso vocês também me insultam."
+VME_Scrapper.descriptionMaker.rules.rulesStrings[1]	episode(uses=1,tag=meme_Scrapper)  ->Seguindo os ensinamentos de [deity0_name], aprendemos a reutilizar e reciclar as coisas para aproveitá-las melhor.
+VME_Scrapper.descriptionMaker.rules.rulesStrings[2]	intro(tag=meme_Scrapper)           ->Em [place_summary] [place_name], os [memberNamePlural] encontraram as palavras de [deity0_name]: instruções técnicas para desmontar e reaproveitar as poderosas máquinas dos nossos ancestrais.
+VME_Scrapper.descriptionMaker.rules.rulesStrings[3]	conflict(tag=meme_Scrapper)        ->Um(a) [foeLeader] invejoso(a) viu o progresso dos [memberNamePlural] e quis destruir nossas máquinas reaproveitadas.
+VME_Scrapper.descriptionMaker.rules.rulesStrings[4]	founderJoin(tag=meme_Scrapper)     ->[founderName], conhecido(a) como o Grande Sucateiro, montou uma arma improvisada, o(a) [relic0_name], e conseguiu deter o(a) [foeLeader] antes que fosse tarde.
+VME_Scrapper.descriptionMaker.rules.rulesStrings[5]	victory(tag=meme_Scrapper)         ->Vendo a engenhosidade de [founderName], seus seguidores o(a) nomearam mestre e aprenderam com [founderName_objective] os segredos de garimpar tecnologia antiga.
+VME_Scrapper.descriptionMaker.rules.rulesStrings[6]	setup(tag=meme_Scrapper)           ->[founderName] era engenheiro(a) num dos mundos reluzentes. Percebeu que as naves de exploração de longo alcance mandadas à Orla sempre falavam de tecnologia antiga espalhada pelos incontáveis mundos. Será que essa tecnologia antiga podia ser estudada, passar por engenharia reversa e ser reaproveitada?
+VME_Scrapper.descriptionMaker.rules.rulesStrings[7]	story(uses=1,tag=meme_Scrapper)    ->[founderName] reuniu uma equipe de exploradores interestelares e decidiu ver com os próprios olhos o que dava para fazer com essa misteriosa tecnologia esquecida. Infelizmente, não sobreviveu à viagem perigosa.
+VME_Scrapper.descriptionMaker.rules.rulesStrings[8]	lessonIntro(tag=meme_Scrapper)         ->O sucateiro mais velho da minha divisão me ensinou a história da tecnologia antiga, como todos os incontáveis mundos da Orla estão cheios de tecnologia antiga descartada. Ele estava me levando a entender que
+VME_Scrapper.descriptionMaker.rules.rulesStrings[9]	lesson(tag=meme_Scrapper)              ->a humanidade existe há muito tempo, e é absurdo não reaproveitar a tecnologia descartada dos nossos ancestrais
+VME_Scrapper.descriptionMaker.rules.rulesStrings[10]	lessonReinforcement(tag=meme_Scrapper) ->Talvez a tecnologia antiga seja sucata, ou talvez seja a chave da nossa sobrevivência.
+VME_Scrapper.descriptionMaker.rules.rulesStrings[11]	archistBasis(tag=meme_Scrapper)    ->É fato que os arquotécnicos foram originalmente criação humana; criamos o próximo passo no desenvolvimento da consciência.
+VME_Scrapper.descriptionMaker.rules.rulesStrings[12]	archistFact(tag=meme_Scrapper)     ->A tecnologia antiga descartada pelos nossos ancestrais pode ser só sucata esquecida. Mas e se não for? E se esse lixo for, na verdade, algo essencial para a nossa Transcendência?
+VME_Scrapper.descriptionMaker.rules.rulesStrings[13]	archistProphecy(tag=meme_Scrapper) ->[inTheEnd], não deixaremos nem um grama de tecnologia antiga se perder. Garimparemos cada peça de tecnologia jogada por aí e, com sorte, descobriremos seus segredos.
+VME_Scrapper.descriptionMaker.rules.rulesStrings[14]	animistBasis(tag=meme_Scrapper)    ->Os destroços antigos encontrados pelo mundo são relíquias dos Antigos.
+VME_Scrapper.descriptionMaker.rules.rulesStrings[15]	animistFact(tag=meme_Scrapper)     ->Os espíritos nos guiarão para recuperar toda a tecnologia antiga que nossos ancestrais descartaram.
+VME_Scrapper.descriptionMaker.rules.rulesStrings[16]	animistFact(tag=meme_Scrapper)     ->Quando tivermos recuperado e reaproveitado a tecnologia dos nossos antepassados, seus espíritos enfim terão paz.
+VME_Scrapper.descriptionMaker.rules.rulesStrings[17]	animistProphecy(tag=meme_Scrapper) ->[itIsSaid] um dia seremos tão inteligentes quanto os Antigos, e suas máquinas descartadas não terão segredos para nós.
+VME_Scrapper.descriptionMaker.rules.rulesStrings[18]	serketistProphecy(tag=meme_Scrapper)->[itIsSaid] aprenderemos que garimpar a tecnologia antiga espalhada pela paisagem é tão sagrado quanto os cupins usando a terra para construir seus ninhos.
+VME_Scrapper.descriptionMaker.rules.rulesStrings[19]	chthonianProphecy(tag=meme_Scrapper)->A Orla está coberta de cadáveres tecnológicos de quem não conseguiu aplacar essas entidades inumanas: só reaproveitando essa tecnologia antiga podemos esperar resistir ao ataque delas onde tantos outros falharam.
+VME_Scrapper.descriptionMaker.rules.rulesStrings[20]	esotericismProphecy(tag=meme_Scrapper)->A Orla está coberta de restos tecnológicos de quem veio muito antes de nós. Estudaremos e reaproveitaremos esses fragmentos do passado e aprenderemos todos os seus segredos.
+VME_Scrapper.descriptionMaker.rules.rulesStrings[21]	eschatologismFact(tag=meme_Scrapper)->A Orla está coberta de cadáveres tecnológicos dos que caíram antes, e usaremos a própria tecnologia esquecida deles para trazer o fim dos tempos.
+VME_Scrapper.descriptionMaker.rules.rulesStrings[22]	introMemo(tag=meme_Scrapper)->Na leitura recomendada desta semana, indico: "Repensar, reduzir, reutilizar, reciclar: como ser uma empresa moderna sustentável". Leiam quando puderem, e discutiremos os detalhes na reunião de amanhã.
+VME_Scrapper.descriptionMaker.rules.rulesStrings[23]	alienistProphecy(tag=meme_Scrapper)->Talvez todas essas criações humanas desgarradas possam ser reaproveitadas de algum jeito, já que não passam de peças vivas de tecnologia antiga.
+VME_Scrapper.generalRules.rulesStrings[0]	memeAdjective->sucateiro(a)
+VME_Scrapper.generalRules.rulesStrings[1]	memeAdjective->garimpeiro(a)
+VME_Scrapper.generalRules.rulesStrings[2]	memeAdjective->catador(a)
+VME_Scrapper.generalRules.rulesStrings[3]	memeHyphenPrefix->sucata
+VME_Scrapper.generalRules.rulesStrings[4]	memeHyphenPrefix->ferro-velho
+VME_Scrapper.generalRules.rulesStrings[5]	memeConcept->sucata
+VME_Scrapper.generalRules.rulesStrings[6]	memeLeaderNoun->garimpeiro
+VME_Scrapper.generalRules.rulesStrings[7]	memeLeaderNoun->sucateiro
+VME_Scrapper.generalRules.rulesStrings[8]	memeLeaderNoun->catador
+VME_Scrapper.generalRules.rulesStrings[9]	memeMoralist->rato de ferro-velho
+VME_Scrapper.symbolPacks.0.adjective	garimpeiro
+VME_Scrapper.symbolPacks.0.ideoName	Garimpo
+VME_Scrapper.symbolPacks.0.theme	garimpo
+VME_Scrapper.symbolPacks.1.ideoName	Sucatismo
+VME_Scrapper.symbolPacks.1.theme	sucata
+VME_Scrapper.symbolPacks.2.adjective	catador
+VME_Scrapper.symbolPacks.2.ideoName	Catação
+VME_Scrapper.symbolPacks.2.theme	catação
+VME_Trader.description	Riqueza traz poder; gerar lucro é uma parte importante da vida.
+VME_Trader.descriptionMaker.rules.rulesStrings[0]	creation(tag=meme_Trader)        ->[deity0_name] falou aos seus seguidores: "A pobreza é o maior pecado. Acumular riqueza é a verdadeira medida da humanidade."
+VME_Trader.descriptionMaker.rules.rulesStrings[1]	episode(uses=1,tag=meme_Trader)  ->Seguindo os ensinamentos de [deity0_name], lutamos para nos tornar a facção mais rica de todas. Os poetas cantarão a prosperidade e a opulência muito depois de partirmos.
+VME_Trader.descriptionMaker.rules.rulesStrings[2]	intro(tag=meme_Trader)           ->Em [place_summary] [place_name], os [memberNamePlural] construíram um cofre gigantesco para guardar todas as riquezas consagradas a [deity0_name].
+VME_Trader.descriptionMaker.rules.rulesStrings[3]	conflict(tag=meme_Trader)        ->Um(a) [foeLeader] invejoso(a) queria todas essas riquezas para si e tentou roubar nossa fortuna suada.
+VME_Trader.descriptionMaker.rules.rulesStrings[4]	founderJoin(tag=meme_Trader)     ->[founderName], conhecido(a) como o Grande Mercador, comprou uma poderosa bomba de nêutrons dos comerciantes de uma nação aliada e a usou contra os soldados do(a) [foeLeader].
+VME_Trader.descriptionMaker.rules.rulesStrings[5]	victory(tag=meme_Trader)         ->A arma terrível dizimou suas fileiras, derretendo a carne dos ossos, mas deixou o cofre intacto, pois tinha sido construído sem poupar despesas e preparado para resistir até à fúria do fogo atômico.
+VME_Trader.descriptionMaker.rules.rulesStrings[6]	setup(tag=meme_Trader)           ->[founderName] era economista num dos mundos reluzentes. Olhou para a aparente prosperidade à sua volta e só viu decadência. A estagnação de uma falsa economia pós-escassez que esqueceu o que faz a vida valer a pena.
+VME_Trader.descriptionMaker.rules.rulesStrings[7]	story(uses=1,tag=meme_Trader)    ->Buscando a emoção de fazer a própria fortuna, [founderName] reuniu uma equipe de mercadores e fretou uma nave para viajar até a Orla. Infelizmente, não sobreviveu à viagem perigosa.

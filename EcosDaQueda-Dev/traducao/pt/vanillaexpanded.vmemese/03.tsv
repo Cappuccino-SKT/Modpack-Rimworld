@@ -1,0 +1,243 @@
+## DefInjected/InteractionDef/Intimidate.xml
+VFEA_Intimidate.logRulesInitiator.rulesStrings[33]	givein->cedesse
+VFEA_Intimidate.logRulesInitiator.rulesStrings[34]	givein->se submetesse
+VFEA_Intimidate.logRulesInitiator.rulesStrings[35]	givein->se rendesse
+VFEA_Intimidate.logRulesInitiator.rulesStrings[36]	givein->se entregasse
+## DefInjected/IssueDef/Precepts_Anonymity.xml
+VME_Anonymity.label	anonimato
+## DefInjected/IssueDef/Precepts_AutomationEfficiency.xml
+VME_AutomationEfficiency.label	eficiência da automação
+## DefInjected/IssueDef/Precepts_BookQuality.xml
+VME_BookQuality.label	qualidade dos livros
+## DefInjected/IssueDef/Precepts_Corruption.xml
+VME_Corruption.label	corrupção
+## DefInjected/IssueDef/Precepts_CraftingQuality.xml
+VME_CraftingQuality.label	qualidade da fabricação
+## DefInjected/IssueDef/Precepts_CraftingSpeed.xml
+VME_CraftingSpeed.label	velocidade de fabricação
+## DefInjected/IssueDef/Precepts_Defeat.xml
+VME_Defeat.label	derrota
+## DefInjected/IssueDef/Precepts_DumbLabor.xml
+VME_DumbLabor.label	trabalho braçal
+## DefInjected/IssueDef/Precepts_Elders.xml
+VME_Elders.label	anciãos
+## DefInjected/IssueDef/Precepts_Expectations.xml
+VME_Expectations.label	expectativas
+## DefInjected/IssueDef/Precepts_Farming.xml
+VME_FarmingYield.label	rendimento agrícola
+## DefInjected/IssueDef/Precepts_Illness.xml
+VME_Illness.label	doença
+## DefInjected/IssueDef/Precepts_Immunity.xml
+VME_Immunity.label	imunidade
+## DefInjected/IssueDef/Precepts_Junk.xml
+VME_Junk.label	sucata
+## DefInjected/IssueDef/Precepts_JunkDeconstructionYield.xml
+VME_JunkDeconstructionYield.label	rendimento da desconstrução
+## DefInjected/IssueDef/Precepts_KillingWithFire.xml
+VME_KillingWithFire.label	matar com fogo
+## DefInjected/IssueDef/Precepts_Leader.xml
+VME_LeaderDivinity.label	divindade do líder
+VME_LeaderAbilities.label	habilidades do líder
+## DefInjected/IssueDef/Precepts_LeatherApparel.xml
+VME_LeatherApparel.label	roupas de couro
+## DefInjected/IssueDef/Precepts_Meditation.xml
+VME_Meditation.label	meditação
+## DefInjected/IssueDef/Precepts_PermanentBases.xml
+VME_PermanentBases.label	bases permanentes
+## DefInjected/IssueDef/Precepts_PermitCooldown.xml
+VME_PermitCooldown.label	recarga de permissões
+## DefInjected/IssueDef/Precepts_PermitHonorCost.xml
+VME_PermitHonorCost.label	custo de permissões
+## DefInjected/IssueDef/Precepts_PsyfocusGain.xml
+VME_PsyfocusGain.label	ganho de concentração psíquica
+## DefInjected/IssueDef/Precepts_Recruiting.xml
+VFEA_Recruiting.label	recrutar
+VFEA_BeingRecruited.label	ser recrutado
+## DefInjected/IssueDef/Precepts_Scars.xml
+VME_Scars.label	cicatrizes
+## DefInjected/IssueDef/Precepts_SkilledLabor.xml
+VME_SkilledLabor.label	trabalho qualificado
+## DefInjected/IssueDef/Precepts_SocialInteractions.xml
+VME_SocialInteractions.label	interações sociais
+## DefInjected/IssueDef/Precepts_Sweets.xml
+VME_Sweets.label	doces
+## DefInjected/IssueDef/Precepts_TaintedApparel.xml
+VME_TaintedApparel.label	roupas contaminadas
+## DefInjected/IssueDef/Precepts_TendQuality.xml
+VME_TendQuality.label	qualidade do tratamento
+## DefInjected/IssueDef/Precepts_TitleInheritance.xml
+VME_TitleInheritance.label	títulos
+## DefInjected/IssueDef/Precepts_TradingPrice.xml
+VME_TradingPrice.label	preço de comércio
+## DefInjected/IssueDef/Precepts_Travel.xml
+VME_Travel.label	viagens
+## DefInjected/IssueDef/Precepts_Woodcutting.xml
+VME_WoodcuttingYield.label	rendimento do corte de madeira
+## DefInjected/JobDef/Jobs_Misc.xml
+VME_DeconstructBuilding.reportString	desmontando estrutura de sucata antiga.
+VME_MaintainInsectNest.reportString	cuidando do ninho de insetos.
+VME_DanceWithLove.reportString	participando da orgia.
+## DefInjected/MemeDef/Memes_Misc.xml
+VME_ViolentConversion.label	conversão violenta
+VME_ViolentConversion.description	É nosso dever espalhar nossas crenças, nem que seja à força.
+VME_ViolentConversion.descriptionMaker.rules.rulesStrings[0]	creation(tag=meme_ViolentConversion)        ->[deity0_name] ungiu alguns cruzados entre os mortais para cumprir sua vontade.
+VME_ViolentConversion.descriptionMaker.rules.rulesStrings[1]	episode(uses=1,tag=meme_ViolentConversion)  ->[deity0_name] disse a todos os [memberNamePlural]: "O infiel aceitará minhas palavras ou perecerá."
+VME_ViolentConversion.descriptionMaker.rules.rulesStrings[2]	intro(tag=meme_ViolentConversion)           ->Os [memberNamePlural] construíram um(a) grande [altarName] em [place_summary] [place_name], para que muitos se curvassem à vontade de [deity0_name].
+VME_ViolentConversion.descriptionMaker.rules.rulesStrings[3]	conflict(tag=meme_ViolentConversion)        ->Um(a) [foeLeader] covarde, querendo negar a vontade de [deity0_name], mandou seus [foeSoldiers] cortarem a língua de quem falasse do(a) [deity0_type].
+VME_ViolentConversion.descriptionMaker.rules.rulesStrings[4]	founderJoin(tag=meme_ViolentConversion)     ->[deity0_name] abençoou um(a) [place_job] chamado(a) [founderName] com sua determinação inabalável, e ninguém conseguia dar as costas quando [founder_pronoun] falava.
+VME_ViolentConversion.descriptionMaker.rules.rulesStrings[5]	victory(tag=meme_ViolentConversion)         ->[founderName] massacrou muitos dos [foeSoldiers] e torturou sem piedade os sobreviventes para mostrar o poder de [deity0_name]. Seus gritos de agonia vão sempre nos lembrar do destino que aguarda quem nega [deity0_name].
+VME_ViolentConversion.descriptionMaker.rules.rulesStrings[6]	setup(tag=meme_ViolentConversion)           ->Nosso(a) fundador(a), [founderName], foi um(a) grande revolucionário(a) e um gênio, convertendo milhares enquanto viajava entre as cidades.
+VME_ViolentConversion.descriptionMaker.rules.rulesStrings[7]	story(uses=1,tag=meme_ViolentConversion)    ->Os fiéis andaram entre cidades e instituições, espalhando a palavra da nova ordem e lutando contra quem discordasse.
+VME_ViolentConversion.descriptionMaker.rules.rulesStrings[8]	lessonIntro(tag=meme_ViolentConversion)         ->Em todos os meus anos espalhando nossa filosofia, aprendi uma lição acima de todas:
+VME_ViolentConversion.descriptionMaker.rules.rulesStrings[9]	lesson(tag=meme_ViolentConversion)              ->não há Verdade além da Nossa Verdade. Não podemos deixar ninguém ficar no nosso caminho. Ou concordam, ou morrem
+VME_ViolentConversion.descriptionMaker.rules.rulesStrings[10]	lessonReinforcement(tag=meme_ViolentConversion) ->Esse é o fato que precisamos espalhar, e espalhar, e espalhar. À força, se preciso.
+VME_ViolentConversion.descriptionMaker.rules.rulesStrings[11]	archistBasis(tag=meme_ViolentConversion)    ->Os arquotécnicos anunciam sua presença do céu e na mente, e sua existência PRECISA se tornar uma verdade universal.
+VME_ViolentConversion.descriptionMaker.rules.rulesStrings[12]	archistFact(tag=meme_ViolentConversion)     ->Os arquotécnicos devem ser obedecidos, e é nossa responsabilidade dobrar os outros à vontade deles.
+VME_ViolentConversion.descriptionMaker.rules.rulesStrings[13]	archistProphecy(tag=meme_ViolentConversion) ->[inTheEnd], os arquotécnicos revelarão sua sabedoria final ao portador do(a) [relic0_name]. Quem não tiver escutado deve ser purgado.
+VME_ViolentConversion.descriptionMaker.rules.rulesStrings[14]	animistFact(tag=meme_ViolentConversion)     ->Os espíritos querem ser conhecidos, mas só falam com poucos. Faremos qualquer um que fique no nosso caminho temer a vontade dos espíritos.
+VME_ViolentConversion.descriptionMaker.rules.rulesStrings[15]	serketistProphecy(tag=meme_ViolentConversion)->[itIsSaid] aprenderemos com eles e usaremos esse conhecimento para purgar o universo dos infiéis imundos.
+VME_ViolentConversion.descriptionMaker.rules.rulesStrings[16]	chthonianProphecy(tag=meme_ViolentConversion)->Adquiriremos seu conhecimento sobrenatural e o usaremos para purgar o universo dos infiéis imundos.
+VME_ViolentConversion.descriptionMaker.rules.rulesStrings[17]	esotericismProphecy(tag=meme_ViolentConversion)->Com esse conhecimento, teremos clara vantagem sobre os demais habitantes deste planeta e o usaremos para purgá-lo dos infiéis imundos.
+VME_ViolentConversion.descriptionMaker.rules.rulesStrings[18]	eschatologismFact(tag=meme_ViolentConversion)->Não sobrará nada. Os infiéis imundos serão purgados pelo fogo atômico e por doenças mortais.
+VME_ViolentConversion.descriptionMaker.rules.rulesStrings[19]	introMemo(tag=meme_ViolentConversion)->Como sabem, a missão da nossa Empresa é importante demais para deixar os outros atrapalharem, por isso estamos preparando uma fusão hostil para nos livrar desses... concorrentes indesejáveis.
+VME_ViolentConversion.descriptionMaker.rules.rulesStrings[20]	alienistProphecy(tag=meme_ViolentConversion)->Precisamos espalhar à força a realidade dessas criaturas, semeadas pela humanidade por toda a Orla.
+VME_ViolentConversion.generalRules.rulesStrings[0]	memeAdjective->forçado(a)
+VME_ViolentConversion.generalRules.rulesStrings[1]	memeAdjective->rigoroso(a)
+VME_ViolentConversion.generalRules.rulesStrings[2]	memeHyphenPrefix->extremo
+VME_ViolentConversion.generalRules.rulesStrings[3]	memeConcept->verdade absoluta
+VME_ViolentConversion.generalRules.rulesStrings[4]	memeLeaderNoun->grande inquisidor
+VME_ViolentConversion.generalRules.rulesStrings[5]	memeMoralist->inquisidor
+VME_ViolentConversion.generalRules.rulesStrings[6]	memeMoralist->cruzado
+VME_ViolentConversion.symbolPacks.0.adjective	rigorista
+VME_ViolentConversion.symbolPacks.0.ideoName	Rigorismo
+VME_ViolentConversion.symbolPacks.0.member	rigorista
+VME_ViolentConversion.symbolPacks.0.theme	rigor
+VME_ViolentConversion.symbolPacks.1.adjective	cruzadista
+VME_ViolentConversion.symbolPacks.1.ideoName	Cruzada
+VME_ViolentConversion.symbolPacks.1.theme	cruzada
+VME_ViolentConversion.symbolPacks.2.adjective	inquisitorial
+VME_ViolentConversion.symbolPacks.2.ideoName	Inquisição
+VME_ViolentConversion.symbolPacks.2.theme	inquisição
+VME_Astrology.label	astrologia
+VME_Astrology.description	Somos guiados pelas estrelas.
+VME_Astrology.descriptionMaker.rules.rulesStrings[0]	creation(tag=meme_Astrology)        ->[deity0_name] nos mostrou que o caminho para a verdadeira sabedoria está em entender as estrelas.
+VME_Astrology.descriptionMaker.rules.rulesStrings[1]	episode(uses=1,tag=meme_Astrology)  ->[deity0_name] disse a todos os [memberNamePlural]: "No Firmamento vereis um reflexo da minha Vontade."
+VME_Astrology.descriptionMaker.rules.rulesStrings[2]	intro(tag=meme_Astrology)           ->Os [memberNamePlural] construíram um(a) grande [altarName] em [place_summary] [place_name], para que qualquer um pudesse contemplar as estrelas.
+VME_Astrology.descriptionMaker.rules.rulesStrings[3]	conflict(tag=meme_Astrology)        ->Um(a) [foeLeader] covarde, querendo negar a vontade de [deity0_name], tentou encobrir o firmamento para que não víssemos a majestade das estrelas.
+VME_Astrology.descriptionMaker.rules.rulesStrings[4]	founderJoin(tag=meme_Astrology)     ->[deity0_name] abençoou um(a) [place_job] chamado(a) [founderName] com uma determinação inabalável, e ali mesmo nasceu um signo do zodíaco.
+VME_Astrology.descriptionMaker.rules.rulesStrings[5]	victory(tag=meme_Astrology)         ->[founderName] leu o mapa astral dos [foeSoldiers] e o usou para convencê-los do poder de [deity0_name].
+VME_Astrology.descriptionMaker.rules.rulesStrings[6]	setup(tag=meme_Astrology)           ->Nosso(a) fundador(a), [founderName], foi um(a) grande astrólogo(a), capaz de adivinhar a sorte de seus seguidores enquanto viajava entre as cidades.
+VME_Astrology.descriptionMaker.rules.rulesStrings[7]	story(uses=1,tag=meme_Astrology)    ->Os fiéis espalharam o conhecimento da sabedoria escondida no movimento das estrelas.
+VME_Astrology.descriptionMaker.rules.rulesStrings[8]	lessonIntro(tag=meme_Astrology)         ->Em todos os meus anos observando as estrelas, aprendi uma lição acima de todas:
+VME_Astrology.descriptionMaker.rules.rulesStrings[9]	lesson(tag=meme_Astrology)              ->nossos signos nos guiam pela vida inteira
+VME_Astrology.descriptionMaker.rules.rulesStrings[10]	lessonReinforcement(tag=meme_Astrology) ->Esse é o fato que precisamos espalhar, pois o destino de cada um está refletido nos céus.
+VME_Astrology.descriptionMaker.rules.rulesStrings[11]	archistBasis(tag=meme_Astrology)    ->Os arquotécnicos anunciam sua presença do céu e na mente, e nos mostraram que um grande conhecimento está codificado no movimento dos corpos celestes.
+VME_Astrology.descriptionMaker.rules.rulesStrings[12]	archistFact(tag=meme_Astrology)     ->Os arquotécnicos são sábios além de toda razão e codificaram um conhecimento imenso nas estrelas.
+VME_Astrology.descriptionMaker.rules.rulesStrings[13]	archistProphecy(tag=meme_Astrology) ->[inTheEnd], os arquotécnicos revelarão sua sabedoria final ao portador do(a) [relic0_name]. Só quem for treinado na Arte do Zodíaco poderá absorver seus ensinamentos.
+VME_Astrology.descriptionMaker.rules.rulesStrings[14]	animistFact(tag=meme_Astrology)     ->Os espíritos querem ser conhecidos, e se manifestam não só pelas criaturas da terra, mas também nos céus.
+VME_Astrology.descriptionMaker.rules.rulesStrings[15]	serketistProphecy(tag=meme_Astrology)->[itIsSaid] seremos sábios o bastante para criar um novo signo: Serket, o Escaravelho Sagrado.
+VME_Astrology.descriptionMaker.rules.rulesStrings[16]	chthonianProphecy(tag=meme_Astrology)->Um conhecimento sobrenatural repousa no Vazio Faminto e Inabalável entre as Estrelas, e estudando-o seremos eternos, talvez ao custo da nossa sanidade.
+VME_Astrology.descriptionMaker.rules.rulesStrings[17]	esotericismProphecy(tag=meme_Astrology)->Com esse conhecimento, inventaremos um jeito de controlar o zodíaco e, com ele, o destino de todos.
+VME_Astrology.descriptionMaker.rules.rulesStrings[18]	eschatologismFact(tag=meme_Astrology)->As estrelas só mostrarão um destino: a destruição.
+VME_Astrology.descriptionMaker.rules.rulesStrings[19]	introMemo(tag=meme_Astrology)->Chegou ao meu conhecimento que alguns de vocês usam as pausas para compartilhar mapas astrais. Embora seja um assunto aprovado pela Empresa, lembro que as pausas nunca devem passar do tempo estipulado.
+VME_Astrology.descriptionMaker.rules.rulesStrings[20]	alienistProphecy(tag=meme_Astrology)->As estrelas nos revelarão a realidade dessas criaturas maravilhosas.
+VME_Astrology.generalRules.rulesStrings[0]	memeAdjective->astrológico(a)
+VME_Astrology.generalRules.rulesStrings[1]	memeAdjective->zodiacal
+VME_Astrology.generalRules.rulesStrings[4]	memeLeaderNoun->grão-astrólogo
+VME_Astrology.generalRules.rulesStrings[5]	memeMoralist->adivinho
+VME_Astrology.generalRules.rulesStrings[6]	memeMoralist->vidente das estrelas
+VME_Astrology.symbolPacks.0.adjective	astrológico
+VME_Astrology.symbolPacks.0.ideoName	Astrologia
+VME_Astrology.symbolPacks.0.member	astrólogo
+VME_Astrology.symbolPacks.0.theme	astrologia
+VME_Astrology.symbolPacks.1.adjective	tarológico
+VME_Astrology.symbolPacks.1.ideoName	Tarô
+VME_Astrology.symbolPacks.1.member	tarólogo
+VME_Astrology.symbolPacks.1.theme	tarô
+VME_Astrology.symbolPacks.2.adjective	divinatório
+VME_Astrology.symbolPacks.2.ideoName	Divinação
+VME_Astrology.symbolPacks.2.member	adivinho
+VME_Astrology.symbolPacks.2.theme	divinação
+VME_GodEmperor.label	deus-imperador
+VME_GodEmperor.description	Nosso líder deve ser adorado como um Deus vivo.
+VME_GodEmperor.descriptionMaker.rules.rulesStrings[0]	creation(tag=meme_GodEmperor)        ->[deity0_name] ungiu seu Escolhido para nos guiar nesta vida: nosso Deus-Imperador.
+VME_GodEmperor.descriptionMaker.rules.rulesStrings[1]	episode(uses=1,tag=meme_GodEmperor)  ->[deity0_name] disse a todos os [memberNamePlural]: "Seguireis meu Escolhido, o Deus-Imperador, e vos prostrareis em humildade, submissão e adoração."
+VME_GodEmperor.descriptionMaker.rules.rulesStrings[2]	intro(tag=meme_GodEmperor)           ->Os [memberNamePlural] construíram um(a) grande [altarName] em [place_summary] [place_name], um monumento enorme ao seu Deus-Imperador.
+VME_GodEmperor.descriptionMaker.rules.rulesStrings[3]	conflict(tag=meme_GodEmperor)        ->Um(a) [foeLeader] covarde, querendo negar a vontade de [deity0_name], tentou matar nosso Deus-Imperador e só encontrou a ruína.
+VME_GodEmperor.descriptionMaker.rules.rulesStrings[4]	founderJoin(tag=meme_GodEmperor)     ->[deity0_name] abençoou um(a) [place_job] chamado(a) [founderName] com poder divino, e este lugar sagrado fortalece nosso eterno Deus-Imperador.
+VME_GodEmperor.descriptionMaker.rules.rulesStrings[5]	setup(tag=meme_GodEmperor)           ->Nosso(a) fundador(a), [founderName], foi o(a) maior dos discípulos do nosso Deus-Imperador, um(a) verdadeiro(a) servo(a).
+VME_GodEmperor.descriptionMaker.rules.rulesStrings[6]	story(uses=1,tag=meme_GodEmperor)    ->Os fiéis espalharão a sabedoria da lealdade inabalável aos decretos do nosso Deus-Imperador.
+VME_GodEmperor.descriptionMaker.rules.rulesStrings[7]	lessonIntro(tag=meme_GodEmperor)         ->Em todos os meus anos servindo nosso Deus-Imperador, aprendi uma lição acima de todas:
+VME_GodEmperor.descriptionMaker.rules.rulesStrings[8]	lesson(tag=meme_GodEmperor)              ->só pela submissão absoluta ao nosso líder alcançaremos nossos objetivos
+VME_GodEmperor.descriptionMaker.rules.rulesStrings[9]	lessonReinforcement(tag=meme_GodEmperor) ->Só pela Vontade Divina do nosso Deus-Imperador desvendaremos os segredos do Cosmos.
+VME_GodEmperor.descriptionMaker.rules.rulesStrings[10]	archistBasis(tag=meme_GodEmperor)    ->Os arquotécnicos anunciam sua presença do céu e na mente, e nosso Deus-Imperador é o Escolhido deles.
+VME_GodEmperor.descriptionMaker.rules.rulesStrings[11]	archistFact(tag=meme_GodEmperor)     ->Os arquotécnicos são sábios além de toda razão; é lógico que seu modelo seja também o ápice da sabedoria.
+VME_GodEmperor.descriptionMaker.rules.rulesStrings[12]	archistProphecy(tag=meme_GodEmperor) ->[inTheEnd], os arquotécnicos revelarão sua sabedoria final ao nosso Deus-Imperador, portador do(a) [relic0_name].
+VME_GodEmperor.descriptionMaker.rules.rulesStrings[13]	animistFact(tag=meme_GodEmperor)     ->Os espíritos querem ser conhecidos, e se manifestam no corpo do nosso Deus-Imperador.
+VME_GodEmperor.descriptionMaker.rules.rulesStrings[14]	serketistProphecy(tag=meme_GodEmperor)->[itIsSaid] nosso Deus-Imperador se banhará no sangue de mil insetos, ungido pelo sacrifício deles.
+VME_GodEmperor.descriptionMaker.rules.rulesStrings[15]	chthonianProphecy(tag=meme_GodEmperor)->Nosso Deus-Imperador é o guardião da loucura, aquele que protege nossas mentes da cruel insanidade do Cosmos.
+VME_GodEmperor.descriptionMaker.rules.rulesStrings[16]	esotericismProphecy(tag=meme_GodEmperor)->Nosso Deus-Imperador é sábio além da conta nos caminhos ocultos e nos guiará na invenção de novas formas de usar esse conhecimento escondido.
+VME_GodEmperor.descriptionMaker.rules.rulesStrings[17]	eschatologismFact(tag=meme_GodEmperor)->Nosso Deus-Imperador trará o Fim dos Tempos. Na servidão, participaremos dessa glória divina.
+VME_GodEmperor.descriptionMaker.rules.rulesStrings[18]	introMemo(tag=meme_GodEmperor)->Sei que há boatos de que o CEO da Empresa é um Deus. Sim, um Deus-Imperador, na verdade. Mas isso não significa nada se cada um de vocês não agir de forma PROATIVA. Precisamos alavancar nossos ativos!
+VME_GodEmperor.descriptionMaker.rules.rulesStrings[19]	alienistProphecy(tag=meme_GodEmperor)->Todos esses animais maravilhosos serão um grande troféu para nosso amado Deus-Imperador.
+VME_GodEmperor.generalRules.rulesStrings[0]	memeAdjective->absoluto(a)
+VME_GodEmperor.generalRules.rulesStrings[1]	memeAdjective->divino(a)
+VME_GodEmperor.generalRules.rulesStrings[2]	memeHyphenPrefix->divino
+VME_GodEmperor.generalRules.rulesStrings[3]	memeConcept->soberania imperial
+VME_GodEmperor.generalRules.rulesStrings[4]	memeLeaderNoun->deus-imperador
+VME_GodEmperor.generalRules.rulesStrings[5]	memeMoralist->servo leal
+VME_GodEmperor.symbolPacks.0.ideoName	Deus-Imperador
+VME_GodEmperor.symbolPacks.0.theme	deus-imperador
+VME_HardcoreIndustrialism.label	industrialismo
+VME_HardcoreIndustrialism.description	O trabalho dignifica o homem; ser produtivo é nosso dever.
+VME_HardcoreIndustrialism.descriptionMaker.rules.rulesStrings[0]	creation(tag=meme_HardcoreIndustrialis)        ->[deity0_name] impeliu seus seguidores ao trabalho, pois não há nada mais santo que a perseverança.
+VME_HardcoreIndustrialism.descriptionMaker.rules.rulesStrings[1]	episode(uses=1,tag=meme_HardcoreIndustrialis)  ->[deity0_name] disse a todos os [memberNamePlural]: "Não há segredo para o sucesso. Ele é fruto de preparo, trabalho duro e aprender com o fracasso."
+VME_HardcoreIndustrialism.descriptionMaker.rules.rulesStrings[2]	intro(tag=meme_HardcoreIndustrialis)           ->Os [memberNamePlural] construíram um(a) grande [altarName] em [place_summary] [place_name], uma peça central magnífica para as fábricas que despejavam uma infinidade de produtos acabados.
+VME_HardcoreIndustrialism.descriptionMaker.rules.rulesStrings[3]	conflict(tag=meme_HardcoreIndustrialis)        ->Um(a) [foeLeader] covarde, querendo negar a vontade de [deity0_name], tentou sabotar nossas linhas de produção, mas nossa resiliência não tinha fim.
+VME_HardcoreIndustrialism.descriptionMaker.rules.rulesStrings[4]	founderJoin(tag=meme_HardcoreIndustrialis)     ->[deity0_name] abençoou um(a) [place_job] chamado(a) [founderName] com poder divino, e [founder_pronoun] se tornou o(a) maior industrial que já se viu.
+VME_HardcoreIndustrialism.descriptionMaker.rules.rulesStrings[5]	setup(tag=meme_HardcoreIndustrialis)           ->Nosso(a) fundador(a), [founderName], foi um gênio. Um(a) industrial e filantropo(a) como os Barões do Petróleo da antiguidade.
+VME_HardcoreIndustrialism.descriptionMaker.rules.rulesStrings[6]	story(uses=1,tag=meme_HardcoreIndustrialis)    ->Incontáveis fábricas foram erguidas por suas mãos. Um só lema pendia numa placa sobre a entrada: "Com trabalho duro e esforço, você consegue qualquer coisa."
+VME_HardcoreIndustrialism.descriptionMaker.rules.rulesStrings[7]	lessonIntro(tag=meme_HardcoreIndustrialis)         ->Uma única lição vital foi gravada em todos nós:
+VME_HardcoreIndustrialism.descriptionMaker.rules.rulesStrings[8]	lesson(tag=meme_HardcoreIndustrialis)              ->no momento em que acreditamos que o sucesso vem de um talento nato e não de resiliência e trabalho duro, ficamos frágeis diante da adversidade
+VME_HardcoreIndustrialism.descriptionMaker.rules.rulesStrings[9]	lessonReinforcement(tag=meme_HardcoreIndustrialis) ->E é por isso que o trabalho duro sempre compensa, seja o que for que você faça.
+VME_HardcoreIndustrialism.descriptionMaker.rules.rulesStrings[10]	archistBasis(tag=meme_HardcoreIndustrialis)    ->Os arquotécnicos são o auge da tecnologia, e só com trabalho duro podemos sequer começar a nos aproximar da sua destreza.
+VME_HardcoreIndustrialism.descriptionMaker.rules.rulesStrings[11]	archistFact(tag=meme_HardcoreIndustrialis)     ->De nossas fábricas jorrarão cem mil toneladas de plastaço e exocromo. A vitória da indústria sobre a natureza.
+VME_HardcoreIndustrialism.descriptionMaker.rules.rulesStrings[12]	archistProphecy(tag=meme_HardcoreIndustrialis) ->[inTheEnd], talvez consigamos reproduzir os segredos tecnológicos avançados do(a) [relic0_name].
+VME_HardcoreIndustrialism.descriptionMaker.rules.rulesStrings[13]	animistFact(tag=meme_HardcoreIndustrialis)     ->Se existem espíritos da natureza, é lógico que também existam espíritos das máquinas.
+VME_HardcoreIndustrialism.descriptionMaker.rules.rulesStrings[14]	serketistProphecy(tag=meme_HardcoreIndustrialis)->[itIsSaid] adquiriremos a resiliência e a produtividade dos nossos amados insetos.
+VME_HardcoreIndustrialism.descriptionMaker.rules.rulesStrings[15]	chthonianProphecy(tag=meme_HardcoreIndustrialis)->Só o trabalho duro pode nos salvar desses demônios sobrenaturais. Nossa perseverança será a ruína deles.
+VME_HardcoreIndustrialism.descriptionMaker.rules.rulesStrings[16]	esotericismProphecy(tag=meme_HardcoreIndustrialis)->Nossas máquinas serão imbuídas de magias ocultas, um poderoso motor da criação que trará um novo mundo de fartura.
+VME_HardcoreIndustrialism.descriptionMaker.rules.rulesStrings[17]	eschatologismFact(tag=meme_HardcoreIndustrialis)->Nossas fábricas incharão o céu e sufocarão toda a vida. A pele deles se soltará dos ossos e será consumida nos fogos da indústria.
+VME_HardcoreIndustrialism.descriptionMaker.rules.rulesStrings[18]	introMemo(tag=meme_HardcoreIndustrialis)->Chegou ao meu conhecimento que nossas cotas de produção caíram 4,56% em relação ao trimestre passado. Isso é inaceitável, e confio que vocês trabalharão mais do que nunca para elevar a produção a níveis desejáveis.
+VME_HardcoreIndustrialism.descriptionMaker.rules.rulesStrings[19]	alienistProphecy(tag=meme_HardcoreIndustrialis)->Todas essas criaturas maravilhosas mostram o que a engenhosidade humana consegue com trabalho duro e experimentação cuidadosa.
+VME_HardcoreIndustrialism.generalRules.rulesStrings[0]	memeAdjective->rentável
+VME_HardcoreIndustrialism.generalRules.rulesStrings[1]	memeAdjective->produtivo(a)
+VME_HardcoreIndustrialism.generalRules.rulesStrings[2]	memeAdjective->frutífero(a)
+VME_HardcoreIndustrialism.generalRules.rulesStrings[3]	memeAdjective->construtivo(a)
+VME_HardcoreIndustrialism.generalRules.rulesStrings[4]	memeAdjective->vigoroso(a)
+VME_HardcoreIndustrialism.generalRules.rulesStrings[5]	memeConcept->produção
+VME_HardcoreIndustrialism.generalRules.rulesStrings[6]	memeLeaderNoun->industrial
+VME_HardcoreIndustrialism.generalRules.rulesStrings[7]	memeMoralist->capataz
+VME_HardcoreIndustrialism.symbolPacks.0.adjective	produtivista
+VME_HardcoreIndustrialism.symbolPacks.0.ideoName	Industrialismo
+VME_HardcoreIndustrialism.symbolPacks.0.theme	Industrialismo
+VME_Gestalt.label	gestalt
+VME_Gestalt.description	Cada pessoa deve estar em perfeita sincronia. As pessoas devem chegar ao consenso e entrar em acordo.
+VME_Gestalt.descriptionMaker.rules.rulesStrings[0]	creation(tag=meme_Gestalt)        ->[deity0_name] fez de todos os homens e mulheres uma só consciência, e só por nossa tolice nos afastamos uns dos outros.
+VME_Gestalt.descriptionMaker.rules.rulesStrings[1]	episode(uses=1,tag=meme_Gestalt)  ->[deity0_name] disse a todos: "A única fronteira que já existiu é o eu. [deity0_name] falou."
+VME_Gestalt.descriptionMaker.rules.rulesStrings[2]	intro(tag=meme_Gestalt)           ->O povo de [place_summary] [place_name] trabalhou em uníssono e construiu um(a) grande [altarName] para honrar [deity0_name]. Aprenderam que toda consciência é uma só, separada apenas por um fino véu de matéria.
+VME_Gestalt.descriptionMaker.rules.rulesStrings[3]	conflict(tag=meme_Gestalt)        ->O(a) [foeLeader] não suportava a união dos [memberNamePlural] e mandou seus [foeSoldiers] ao(à) [place_community] para destruir sua consciência gestalt.
+VME_Gestalt.descriptionMaker.rules.rulesStrings[4]	founderJoin(tag=meme_Gestalt)     ->Um(a) [place_job] chamado(a) [founderName] se jogou numa fogueira em protesto contra o(a) [foeLeader]. [founderName] pereceu nas chamas, mas não importava, pois era só uma engrenagem na máquina eterna que são os [memberNamePlural].
+VME_Gestalt.descriptionMaker.rules.rulesStrings[5]	victory(tag=meme_Gestalt)         ->Os atos de [founderName] uniram o povo. Agindo como um só organismo, invadiram a casa do(a) [foeLeader]. Os [foeSoldiers] nada puderam contra uma mente de colmeia tão superior, e o(a) [foeLeader] foi massacrado(a) sem piedade.
+VME_Gestalt.descriptionMaker.rules.rulesStrings[6]	setup(tag=meme_Gestalt)           ->Num mundo de cada um por si, [founderName] disse uma única verdade: "Vocês não são indivíduos, são parte de um organismo maior."
+VME_Gestalt.descriptionMaker.rules.rulesStrings[7]	story(uses=1,tag=meme_Gestalt)    ->[founderName] nos ensinou a estender a consciência para fora, além do eu do corpo, para abraçar o eu do grupo e o eu da humanidade. Os objetivos do grupo e da espécie são transcendentes, e abraçá-los é alcançar a iluminação.
+VME_Gestalt.descriptionMaker.rules.rulesStrings[8]	lessonIntro(tag=meme_Gestalt)     ->Eles se espantaram com a uniformidade do nosso pensamento. Expliquei que não há nada mais importante que
+VME_Gestalt.descriptionMaker.rules.rulesStrings[9]	lesson(tag=meme_Gestalt)              ->uma harmonia de propósito e pensamento; sem indecisão, sem dúvidas; a segurança e a força de uma vontade unificada
+VME_Gestalt.descriptionMaker.rules.rulesStrings[10]	lessonReinforcement(tag=meme_Gestalt) ->Nós somos Muitos, e você... é um só. Como espera vencer?
+VME_Gestalt.descriptionMaker.rules.rulesStrings[11]	archistBasis(tag=meme_Gestalt)    ->Cada pensamento e ação, cada centelha de inteligência dos arquotécnicos está ligada e entrelaçada numa só mente, numa só grande entidade que se estende por anos-luz de espaço.
+VME_Gestalt.descriptionMaker.rules.rulesStrings[12]	archistFact(tag=meme_Gestalt)     ->Uma consciência com muitos corpos. Cada um deles, só um nó de uma rede distribuída.
+VME_Gestalt.descriptionMaker.rules.rulesStrings[13]	archistProphecy(tag=meme_Gestalt) ->[inTheEnd], talvez nunca cheguemos perto da perfeição que eles alcançaram, presos como estamos a corpos de carne, mas com certeza vamos tentar.
+VME_Gestalt.descriptionMaker.rules.rulesStrings[14]	animistFact(tag=meme_Gestalt)     ->A própria humanidade é representada por um único espírito que tudo abarca, e só nos libertando da nossa individualidade poderemos abraçá-lo.
+VME_Gestalt.descriptionMaker.rules.rulesStrings[15]	serketistProphecy(tag=meme_Gestalt)->[itIsSaid] poderemos estudar as mentes de colmeia insetoides e imitar sua perfeição. Uma verdadeira sincronia, uma harmonia de propósito e pensamento; sem indecisão, sem dúvidas; a segurança e a força de uma vontade unificada.
+VME_Gestalt.descriptionMaker.rules.rulesStrings[16]	chthonianProphecy(tag=meme_Gestalt)->Só unindo nossas mentes numa harmonia de propósito e pensamento, sem indecisão e sem dúvidas, teremos chance contra a loucura que nos assombra do espaço sideral.
+VME_Gestalt.descriptionMaker.rules.rulesStrings[17]	esotericismProphecy(tag=meme_Gestalt)->Uniremos nossas mentes numa harmonia de propósito e pensamento; sem indecisão, sem dúvidas. O conhecimento secreto será nosso.

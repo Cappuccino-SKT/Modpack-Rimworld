@@ -1,0 +1,32 @@
+# Etapa 10e, 2º bloco: frentes nas invasões do próprio Hegemony (evento simulado) e escolha de lado (Fama/Infâmia/favor).
+newgame
+timeout 900
+forces hegfrontchance 1
+join forja
+wait 1h
+# invasão da Forja contra o Coro: abre a frente ao lado do alvo
+forces invasion forja coro 25
+letters
+forces front
+# toma o partido da patrona: Coro fica hostil ao jogador
+forces front side attacker
+forces front side defender
+forces front visit
+wait 4h
+forces front kill defender
+forces front check
+forces front
+wait 1h
+forces front
+# segunda invasão (Hélice × Silêncio), ninguém vai: fecha quando a invasão acaba
+forces invasion helice silencio 30
+forces front
+forces invasion resolve defender
+wait 1h
+forces front
+# filtros: invasão sem lado nosso e frentes demais
+forces invasion helice silencio 30
+forces invasion coro helice 20
+forces invasion silencio forja 20
+forces log
+dump

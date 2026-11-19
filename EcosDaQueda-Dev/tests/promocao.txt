@@ -1,0 +1,34 @@
+# Etapa 11d: recusar promoção (sem cerimônia de promoção enquanto recusada; aceitar de novo traz a cerimônia;
+# recusar com cerimônia aberta encerra a missão) e falta apagada por encargo cumprido. Rodar com -Profile full.
+newgame
+timeout 900
+join forja
+wait 1h
+leader set 0
+psy title 1 forja
+wait 1h
+promo
+# recusada: favor suficiente, mas nenhuma cerimônia de promoção
+promo refuse
+favor 8
+wait 2h
+promo
+# aceita de novo: a cerimônia vem na hora
+promo accept
+wait 1h
+promo
+# recusar com a cerimônia aberta encerra a missão
+promo refuse
+promo
+# falta apagada: recusa de oferta de encargo (falta 1), depois período cumprido apaga
+psy title 3 forja
+wait 1h
+encargo offer
+choose Encargo: 1
+encargo offer
+choose Encargo: 0
+encargo progress QualityCrafted 3 Good
+give ComponentIndustrial 20
+give Steel 300
+encargo report
+encargo

@@ -1,0 +1,135 @@
+{
+ "id": "Irmandade_Gauss",
+ "label": "Irmandade Gauss",
+ "faction": "EQ_Faction_Forja",
+ "pawnKinds": [],
+ "chance": 1,
+ "variations": [
+  {
+   "name": "Fuzileiro",
+   "weight": 1,
+   "apparel": [
+    {
+     "def": "CE_Armor_FragSuit",
+     "stuff": "DevilstrandCloth",
+     "quality": "Excellent"
+    },
+    {
+     "def": "CE_Apparel_Backpack",
+     "quality": "Excellent",
+     "stuff": "DevilstrandCloth"
+    },
+    {
+     "def": "CE_Apparel_CompositeArmor",
+     "quality": "Excellent"
+    },
+    {
+     "def": "VFEE_Apparel_JanissaryHelmet",
+     "quality": "Excellent"
+    }
+   ],
+   "weapons": [
+    {
+     "def": "VWE_Gun_GaussRifle",
+     "quality": "Excellent"
+    },
+    {
+     "def": "CE_Gun_FNFiveSeven",
+     "quality": "Excellent"
+    },
+    {
+     "def": "VWE_MeleeWeapon_CombatKnife",
+     "quality": "Excellent"
+    }
+   ],
+   "inventory": [
+    {
+     "def": "MealSurvivalPack",
+     "count": 2
+    },
+    {
+     "def": "MedicineIndustrial",
+     "count": 2
+    },
+    {
+     "def": "Ammo_6mmRailgun_Sabot",
+     "count": 200
+    },
+    {
+     "def": "Ammo_FN57x28mm_HP",
+     "count": 20
+    }
+   ]
+  },
+  {
+   "name": "Trincheiro",
+   "weight": 1,
+   "apparel": [
+    {
+     "def": "CE_Armor_FragSuit",
+     "stuff": "DevilstrandCloth",
+     "quality": "Excellent"
+    },
+    {
+     "def": "CE_Apparel_Backpack",
+     "quality": "Excellent",
+     "stuff": "DevilstrandCloth"
+    },
+    {
+     "def": "CE_Apparel_TacVest",
+     "quality": "Excellent",
+     "stuff": "DevilstrandCloth"
+    },
+    {
+     "def": "CE_Apparel_CompositeVest",
+     "quality": "Excellent"
+    },
+    {
+     "def": "Apparel_AdvancedHelmet",
+     "quality": "Excellent"
+    },
+    {
+     "def": "Apparel_Broadwrap",
+     "stuff": "DevilstrandCloth",
+     "quality": "Excellent"
+    },
+    {
+     "def": "CE_Apparel_GasMask",
+     "quality": "Excellent"
+    }
+   ],
+   "weapons": [
+    {
+     "def": "VWEFT_Gun_GaussRepeater",
+     "quality": "Excellent"
+    },
+    {
+     "def": "CE_Gun_FNFiveSeven",
+     "quality": "Excellent"
+    },
+    {
+     "def": "VWE_MeleeWeapon_CombatKnife",
+     "quality": "Excellent"
+    }
+   ],
+   "inventory": [
+    {
+     "def": "MealSurvivalPack",
+     "count": 2
+    },
+    {
+     "def": "MedicineIndustrial",
+     "count": 2
+    },
+    {
+     "def": "Ammo_6mmRailgun_Sabot",
+     "count": 60
+    },
+    {
+     "def": "Ammo_FN57x28mm_HP",
+     "count": 20
+    }
+   ]
+  }
+ ]
+}

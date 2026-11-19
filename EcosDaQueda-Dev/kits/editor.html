@@ -1,0 +1,682 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Editor de Kits</title>
+<style>
+:root {
+  --bg: #15171a; --panel: #1d2024; --panel2: #24282d; --line: #343a41; --text: #dfe3e6; --dim: #8b949c;
+  --accent: #c8a55a; --accent2: #7fb3c9; --bad: #d26a5c; --ok: #7ab87a; --sel: #2f3a44;
+}
+* { box-sizing: border-box; }
+html, body { margin: 0; height: 100%; background: var(--bg); color: var(--text); font: 13px/1.35 "Segoe UI", system-ui, sans-serif; }
+button, input, select { font: inherit; color: inherit; }
+button { background: var(--panel2); border: 1px solid var(--line); border-radius: 4px; padding: 4px 10px; cursor: pointer; }
+button:hover { border-color: var(--accent); }
+button.primary { background: #5a4a26; border-color: var(--accent); }
+button.danger:hover { border-color: var(--bad); color: var(--bad); }
+button.small { padding: 1px 6px; font-size: 12px; }
+input, select { background: #121417; border: 1px solid var(--line); border-radius: 3px; padding: 3px 5px; }
+input[type=number] { width: 58px; }
+input[type=color] { padding: 0; width: 26px; height: 22px; border: 1px solid var(--line); }
+.app.units { grid-template-columns: 230px 1fr 0; }
+.app.units section.cat { display: none; }
+.mode button.sel { border-color: var(--accent); color: var(--accent); }
+.unit { background: var(--panel); border: 1px solid var(--line); border-radius: 6px; padding: 10px; margin-bottom: 10px; }
+.unit.draft { border-style: dashed; opacity: .85; }
+.unit textarea { width: 100%; min-height: 38px; background: #121417; color: var(--text); border: 1px solid var(--line); border-radius: 3px; font: inherit; }
+.grp { display: grid; grid-template-columns: repeat(5, auto); gap: 4px 10px; }
+.old { font-size: 12px; border-collapse: collapse; margin: 4px 0 12px; }
+.old td, .old th { border: 1px solid var(--line); padding: 2px 8px; text-align: left; }
+.old th { color: var(--dim); font-weight: normal; }
+.kitThumbs { display: flex; gap: 2px; }
+.kitThumbs img { max-height: 30px; max-width: 30px; }
+.app { display: grid; grid-template-columns: 230px 1fr 420px; grid-template-rows: 42px 1fr; height: 100vh; }
+header { grid-column: 1 / -1; display: flex; align-items: center; gap: 12px; padding: 0 12px; background: var(--panel); border-bottom: 1px solid var(--line); }
+header h1 { font-size: 15px; margin: 0; color: var(--accent); letter-spacing: .5px; }
+header .sp { flex: 1; }
+#saveState { color: var(--dim); font-size: 12px; }
+aside, main, section.cat { overflow: auto; }
+aside { background: var(--panel); border-right: 1px solid var(--line); padding: 8px; }
+aside h3 { font-size: 11px; text-transform: uppercase; color: var(--dim); margin: 12px 4px 4px; letter-spacing: .6px; }
+.colItem { padding: 5px 8px; border-radius: 4px; cursor: pointer; display: flex; justify-content: space-between; gap: 6px; }
+.colItem:hover { background: var(--panel2); }
+.colItem.sel { background: var(--sel); color: #fff; }
+.colItem .n { color: var(--dim); font-size: 11px; }
+main { padding: 12px 16px 40px; }
+.empty { color: var(--dim); padding: 40px; text-align: center; }
+.row { display: flex; gap: 10px; align-items: center; flex-wrap: wrap; margin-bottom: 8px; }
+.row label { color: var(--dim); font-size: 12px; display: flex; gap: 5px; align-items: center; }
+.chips { display: flex; gap: 4px; flex-wrap: wrap; }
+.chip { background: var(--panel2); border: 1px solid var(--line); border-radius: 10px; padding: 1px 8px; font-size: 12px; }
+.chip b { cursor: pointer; color: var(--dim); margin-left: 4px; }
+.vars { display: flex; gap: 8px; flex-wrap: wrap; margin: 12px 0; }
+.varTab { width: 108px; border: 1px solid var(--line); border-radius: 6px; background: var(--panel); cursor: pointer; padding: 4px; text-align: center; }
+.varTab.sel { border-color: var(--accent); background: var(--sel); }
+.varTab .thumb { height: 72px; display: flex; align-items: center; justify-content: center; }
+.varTab .thumb img { max-height: 72px; max-width: 96px; image-rendering: auto; }
+.varTab .nm { font-size: 12px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.varTab .w { font-size: 11px; color: var(--dim); }
+.varTab.add { display: flex; align-items: center; justify-content: center; color: var(--dim); font-size: 12px; min-height: 104px; }
+.varHead { display: flex; gap: 14px; align-items: flex-start; background: var(--panel); border: 1px solid var(--line); border-radius: 6px; padding: 10px; }
+.varHead .portrait { width: 110px; height: 110px; background: #101214; border-radius: 4px; display: flex; align-items: center; justify-content: center; }
+.varHead .portrait img { max-width: 110px; max-height: 110px; }
+h2 { font-size: 13px; color: var(--accent); margin: 16px 0 6px; text-transform: uppercase; letter-spacing: .6px; display: flex; gap: 8px; align-items: baseline; }
+h2 small { color: var(--dim); text-transform: none; letter-spacing: 0; font-weight: normal; }
+.items { display: grid; grid-template-columns: repeat(auto-fill, minmax(270px, 1fr)); gap: 6px; }
+.it { display: grid; grid-template-columns: 56px 1fr; gap: 8px; background: var(--panel); border: 1px solid var(--line); border-radius: 6px; padding: 6px; position: relative; }
+.it.conflict { border-color: var(--bad); }
+.it .ic { width: 56px; height: 56px; background: #101214; border-radius: 4px; display: flex; align-items: center; justify-content: center; }
+.it .ic img { max-width: 52px; max-height: 52px; }
+.it .lb { font-weight: 600; padding-right: 18px; }
+.it .meta { color: var(--dim); font-size: 11px; }
+.it .ctl { display: flex; gap: 4px; flex-wrap: wrap; margin-top: 4px; align-items: center; }
+.it .ctl select { max-width: 120px; }
+.it .x { position: absolute; top: 3px; right: 5px; cursor: pointer; color: var(--dim); }
+.it .x:hover { color: var(--bad); }
+.warn { color: var(--bad); font-size: 12px; margin: 4px 0; }
+.cover { margin-top: 6px; border-collapse: collapse; font-size: 11px; }
+.cover td, .cover th { border: 1px solid var(--line); padding: 2px 6px; text-align: left; }
+.cover th { color: var(--dim); font-weight: normal; }
+section.cat { background: var(--panel); border-left: 1px solid var(--line); display: flex; flex-direction: column; }
+.catTop { padding: 8px; border-bottom: 1px solid var(--line); display: flex; flex-direction: column; gap: 6px; position: sticky; top: 0; background: var(--panel); z-index: 2; }
+.tabs { display: flex; gap: 4px; }
+.tabs button.sel { border-color: var(--accent); color: var(--accent); }
+.catGrid { display: grid; grid-template-columns: repeat(auto-fill, minmax(92px, 1fr)); gap: 4px; padding: 8px; }
+.ci { background: var(--panel2); border: 1px solid transparent; border-radius: 4px; padding: 4px; cursor: pointer; text-align: center; }
+.ci:hover { border-color: var(--accent); }
+.ci .ic { height: 56px; display: flex; align-items: center; justify-content: center; }
+.ci .ic img { max-width: 56px; max-height: 56px; }
+.ci .nm { font-size: 11px; line-height: 1.2; height: 2.4em; overflow: hidden; }
+.ci .md { font-size: 10px; color: var(--dim); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.catInfo { color: var(--dim); font-size: 11px; padding: 0 8px; }
+.ammo { display: flex; flex-wrap: wrap; gap: 3px; align-items: center; margin-top: 3px; }
+.am { display: inline-flex; align-items: center; gap: 2px; font-size: 11px; background: #121417; border: 1px solid var(--line); border-radius: 9px; padding: 0 6px 0 2px; cursor: pointer; }
+.am img { max-width: 16px; max-height: 16px; }
+.am:hover { border-color: var(--accent); }
+.am.on { border-color: var(--ok); color: var(--ok); }
+#toast { position: fixed; bottom: 16px; left: 50%; transform: translateX(-50%); background: #2a2416; border: 1px solid var(--accent); border-radius: 6px; padding: 8px 14px; z-index: 60; display: none; }
+#tip { position: fixed; pointer-events: none; background: #0d0f11; border: 1px solid var(--line); border-radius: 4px; padding: 8px; max-width: 320px; font-size: 12px; display: none; z-index: 50; }
+#tip b { color: var(--accent); }
+.modal { position: fixed; inset: 0; background: rgba(0,0,0,.6); display: flex; align-items: center; justify-content: center; z-index: 40; }
+.modal .box { background: var(--panel); border: 1px solid var(--line); border-radius: 8px; padding: 14px; max-width: 900px; max-height: 85vh; overflow: auto; width: 90vw; }
+.mceGrid { display: grid; grid-template-columns: repeat(auto-fill, minmax(130px, 1fr)); gap: 8px; }
+.mce { border: 1px solid var(--line); border-radius: 6px; padding: 6px; text-align: center; cursor: pointer; }
+.mce:hover { border-color: var(--accent); }
+.mce.sel { border-color: var(--ok); background: #22301f; }
+.mce img { max-width: 110px; max-height: 110px; }
+pre { white-space: pre-wrap; background: #101214; padding: 8px; border-radius: 4px; }
+</style>
+</head>
+<body>
+<div class="app" id="app">
+  <header>
+    <h1>EDITOR DE KITS · Ecos da Queda</h1>
+    <span class="mode"><button id="mKits" class="sel">Kits</button> <button id="mUnits">Unidades</button></span>
+    <span id="saveState"></span>
+    <span class="sp"></span>
+    <a href="/pesquisa" style="color:var(--accent2)">Árvore de pesquisa →</a>
+    <button id="btnBuild" class="primary" title="Gera os Defs do editor: kits, unidades e árvores de pesquisa">Gerar Defs do mod</button>
+  </header>
+  <aside>
+    <button id="btnNewCol" style="width:100%">+ Nova coleção</button>
+    <div id="colList"></div>
+  </aside>
+  <main id="main"><div class="empty">Carregando…</div></main>
+  <section class="cat">
+    <div class="catTop">
+      <div class="tabs" id="catTabs"></div>
+      <input id="catSearch" placeholder="Buscar (nome ou defName)…">
+      <div class="row" style="margin:0">
+        <select id="catMod"><option value="">Todos os mods</option></select>
+        <select id="catLayer"><option value="">Toda camada</option></select>
+        <select id="catTech"><option value="">Todo nível</option></select>
+      </div>
+    </div>
+    <div class="catInfo" id="catInfo"></div>
+    <div class="catGrid" id="catGrid"></div>
+  </section>
+</div>
+<div id="tip"></div>
+
+<script>
+'use strict';
+const QUALITIES = [['Awful','Horrível'],['Poor','Ruim'],['Normal','Normal'],['Good','Boa'],['Excellent','Excelente'],['Masterwork','Obra-prima'],['Legendary','Lendária']];
+const TECH = {Neolithic:'Neolítico', Medieval:'Medieval', Industrial:'Industrial', Spacer:'Espacial', Ultra:'Ultra', Archotech:'Arcotech', Animal:'Animal', Undefined:'—'};
+const SECTIONS = [['apparel','Roupas'],['weapons','Armas'],['inventory','Inventário']];
+let CAT = null, ITEMS = {}, STUFF = {}, KINDS = [], FACTIONS = [], XENOS = {};
+let cols = [], mceNames = [], UNITS = [], mode = 'kits', curFac = null;
+let curCol = null, curVar = 0, catTab = 'apparel';
+const $ = s => document.querySelector(s);
+const el = (tag, attrs = {}, ...kids) => {
+  const e = document.createElement(tag);
+  for (const [k, v] of Object.entries(attrs)) {
+    if (k === 'class') e.className = v; else if (k.startsWith('on')) e.addEventListener(k.slice(2), v);
+    else if (k === 'html') e.innerHTML = v; else if (v !== undefined && v !== null && v !== false) e.setAttribute(k, v === true ? '' : v);
+  }
+  for (const c of kids.flat()) if (c !== null && c !== undefined && c !== false) e.append(c.nodeType ? c : document.createTextNode(c));
+  return e;
+};
+
+// ------------------------------------------------------------ ícones pintados (cor do material / cor escolhida)
+const tintCache = new Map(), imgCache = new Map();
+function loadImg(src) {
+  if (!imgCache.has(src)) imgCache.set(src, new Promise(res => { const i = new Image(); i.onload = () => res(i); i.onerror = () => res(null); i.src = src; }));
+  return imgCache.get(src);
+}
+function tintFor(def, stuff, color) {
+  const it = ITEMS[def];
+  if (!it) return null;
+  if (color) return color;
+  if (it.stuffCats) { const s = STUFF[stuff || it.defaultStuff]; if (s) return s.color; }
+  return it.color && it.color.toUpperCase() !== '#FFFFFF' ? it.color : null;
+}
+function iconImg(def, stuff, color) {
+  const img = el('img', {alt: '', loading: 'lazy'});
+  const tint = tintFor(def, stuff, color);
+  const src = '/icons/' + encodeURIComponent(def) + '.png';
+  if (!tint) { img.src = src; img.onerror = () => { img.replaceWith(el('span', {class: 'meta'}, '?')); }; return img; }
+  const key = def + '|' + tint;
+  if (tintCache.has(key)) { img.src = tintCache.get(key); return img; }
+  loadImg(src).then(i => {
+    if (!i) { img.replaceWith(el('span', {class: 'meta'}, '?')); return; }
+    const c = document.createElement('canvas'); c.width = i.width; c.height = i.height;
+    const g = c.getContext('2d');
+    g.drawImage(i, 0, 0);
+    g.globalCompositeOperation = 'multiply'; g.fillStyle = tint; g.fillRect(0, 0, c.width, c.height);
+    g.globalCompositeOperation = 'destination-in'; g.drawImage(i, 0, 0);
+    const url = c.toDataURL(); tintCache.set(key, url); img.src = url;
+  });
+  return img;
+}
+
+// ------------------------------------------------------------ dica
+const tip = $('#tip');
+function showTip(e, def) {
+  const it = ITEMS[def]; if (!it) return;
+  const lines = [`<b>${esc(it.label)}</b> <span style="color:var(--dim)">${esc(def)}</span>`,
+    `${esc(it.mod)} · ${TECH[it.tech] || it.tech} · $${it.value}`];
+  if (it.layers) lines.push('Camadas: ' + it.layers.join(', ') + '<br>Cobre: ' + it.parts.join(', '));
+  if (it.ammo) lines.push('Munição' + (it.mag ? ' (carregador ' + it.mag + ')' : '') + ': ' + it.ammo.map(a => esc(shortAmmo(a))).join(', '));
+  if (def.startsWith('Ammo_')) { const u = usersOf(def); if (u.length) lines.push('Usada por ' + u.length + ' arma(s): ' + esc(u.slice(0, 8).map(w => w.label).join(', ')) + (u.length > 8 ? '…' : '')); }
+  const v = curCol?.variations?.[curVar];
+  if (it.kind === 'apparel' && v) { const out = v.apparel.filter(a => apparelClash(a.def, def)); if (out.length) lines.push('<span style="color:var(--bad)">Substitui: ' + esc(out.map(a => ITEMS[a.def]?.label).join(', ')) + '</span>'); }
+  if (it.stuffCats) lines.push('Materiais: ' + it.stuffCats.join(', '));
+  if (it.desc) lines.push('<span style="color:var(--dim)">' + esc(it.desc) + '</span>');
+  tip.innerHTML = lines.join('<br>'); tip.style.display = 'block'; moveTip(e);
+}
+function moveTip(e) {
+  const x = Math.min(e.clientX + 14, innerWidth - 340), y = Math.min(e.clientY + 14, innerHeight - tip.offsetHeight - 8);
+  tip.style.left = x + 'px'; tip.style.top = y + 'px';
+}
+const hideTip = () => tip.style.display = 'none';
+const esc = s => String(s ?? '').replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+
+// ------------------------------------------------------------ salvar (automático)
+let saveTimer = null;
+function dirty() {
+  $('#saveState').textContent = 'alterado…';
+  clearTimeout(saveTimer);
+  const col = curCol, oldId = col._file || col.id;
+  saveTimer = setTimeout(async () => {
+    const body = JSON.stringify(col, (k, v) => k.startsWith('_') ? undefined : v);
+    const r = await fetch('/api/colecao/' + encodeURIComponent(oldId), {method: 'PUT', body});
+    const j = await r.json();
+    if (j.error) { $('#saveState').textContent = 'ERRO: ' + j.error; return; }
+    col._file = col.id;
+    $('#saveState').textContent = 'salvo ' + new Date().toLocaleTimeString();
+  }, 500);
+}
+
+// ------------------------------------------------------------ lista de coleções
+function renderCols() {
+  const box = $('#colList'); box.innerHTML = '';
+  const groups = {};
+  for (const c of cols) {
+    const f = FACTIONS.find(x => x.def === c.faction);
+    (groups[f ? f.label : 'Sem facção'] ||= []).push(c);
+  }
+  for (const g of Object.keys(groups).sort()) {
+    box.append(el('h3', {}, g));
+    for (const c of groups[g].sort((a, b) => a.id.localeCompare(b.id)))
+      box.append(el('div', {class: 'colItem' + (c === curCol ? ' sel' : ''), onclick: () => { curCol = c; curVar = 0; renderAll(); }},
+        el('span', {}, c.label || c.id), el('span', {class: 'n'}, String((c.variations || []).length))));
+  }
+}
+
+function newCol() {
+  let id = prompt('Nome da coleção (letras, números e _), ex.: soldado_nivel_1');
+  if (!id) return;
+  id = id.trim().replace(/\s+/g, '_');
+  if (!/^[A-Za-z0-9_]+$/.test(id)) return alert('Use só letras sem acento, números e _.');
+  if (cols.some(c => c.id === id)) return alert('Já existe.');
+  const c = {id, label: id.replace(/_/g, ' '), faction: '', pawnKinds: [], chance: 1, variations: [blankVar('Variação 1')]};
+  cols.push(c); curCol = c; curVar = 0; dirty(); renderAll();
+}
+const blankVar = name => ({name, weight: 1, apparel: [], weapons: [], inventory: []});
+
+// ------------------------------------------------------------ editor da coleção
+function renderMain() {
+  const m = $('#main'); m.innerHTML = '';
+  if (!CAT) { m.append(el('div', {class: 'empty', html: 'Falta o catálogo. Rode <code>python kits/kits.py catalog</code>.'})); return; }
+  if (!curCol) { m.append(el('div', {class: 'empty'}, 'Escolha ou crie uma coleção à esquerda.')); return; }
+  const c = curCol;
+  // cabeçalho da coleção
+  const facSel = el('select', {onchange: e => { c.faction = e.target.value; dirty(); renderAll(); }},
+    el('option', {value: ''}, '— facção —'), FACTIONS.map(f => el('option', {value: f.def, selected: f.def === c.faction}, f.label)));
+  const kindSel = el('select', {onchange: e => { if (e.target.value && !c.pawnKinds.includes(e.target.value)) { c.pawnKinds.push(e.target.value); dirty(); renderMain(); } }},
+    el('option', {value: ''}, '+ ligar à unidade…'),
+    allKinds().filter(k => !c.faction || k.faction === c.faction).map(k => el('option', {value: k.def}, `${k.label} (${k.def})`)));
+  m.append(
+    el('div', {class: 'row'},
+      el('label', {}, 'Coleção', el('input', {value: c.id, size: 22, onchange: e => {
+        const v = e.target.value.trim().replace(/\s+/g, '_');
+        if (!/^[A-Za-z0-9_]+$/.test(v) || cols.some(x => x !== c && x.id === v)) { alert('Nome inválido ou repetido.'); e.target.value = c.id; return; }
+        c._file = c._file || c.id; c.id = v; dirty(); renderCols(); }})),
+      el('label', {}, 'Nome', el('input', {value: c.label || '', size: 26, oninput: e => { c.label = e.target.value; dirty(); renderCols(); }})),
+      el('label', {}, 'Facção', facSel),
+      el('label', {title: 'Chance de a unidade usar esta coleção (o resto usa o sorteio normal do arsenal)'}, 'Chance %',
+        el('input', {type: 'number', min: 0, max: 100, value: Math.round((c.chance ?? 1) * 100), onchange: e => { c.chance = Math.max(0, Math.min(100, +e.target.value)) / 100; dirty(); }})),
+      el('button', {class: 'danger small', onclick: async () => {
+        if (!confirm('Apagar a coleção "' + c.id + '"?')) return;
+        await fetch('/api/colecao/' + encodeURIComponent(c._file || c.id), {method: 'DELETE'});
+        cols = cols.filter(x => x !== c); curCol = null; renderAll(); }}, 'Apagar coleção')),
+    el('div', {class: 'row'}, el('label', {}, 'Unidades que usam:'),
+      el('div', {class: 'chips'}, c.pawnKinds.map(k => {
+        const kd = allKinds().find(x => x.def === k);
+        return el('span', {class: 'chip', title: k}, kd ? kd.label : k + ' (?)', el('b', {onclick: () => { c.pawnKinds = c.pawnKinds.filter(x => x !== k); dirty(); renderMain(); }}, '×'));
+      })), kindSel));
+  // abas das variações
+  const tot = (c.variations || []).reduce((s, v) => s + (+v.weight || 0), 0) || 1;
+  const vars = el('div', {class: 'vars'});
+  c.variations.forEach((v, i) => {
+    const thumb = el('div', {class: 'thumb'});
+    if (v.source && v.source.startsWith('MCEPawns/')) thumb.append(el('img', {src: '/mce/' + encodeURIComponent(v.source.slice(9)) + '.png'}));
+    else { const f = v.apparel.find(a => ITEMS[a.def]?.layers?.some(l => /Shell|Middle/.test(l))) || v.apparel[0] || v.weapons[0]; if (f) thumb.append(iconImg(f.def, f.stuff, f.color)); }
+    vars.append(el('div', {class: 'varTab' + (i === curVar ? ' sel' : ''), onclick: () => { curVar = i; renderMain(); }},
+      thumb, el('div', {class: 'nm'}, v.name || '(sem nome)'), el('div', {class: 'w'}, Math.round((+v.weight || 0) / tot * 100) + '% das vezes')));
+  });
+  vars.append(el('div', {class: 'varTab add', onclick: () => { c.variations.push(blankVar('Variação ' + (c.variations.length + 1))); curVar = c.variations.length - 1; dirty(); renderMain(); }}, '+ variação vazia'));
+  vars.append(el('div', {class: 'varTab add', onclick: openImport}, '⇩ importar do Character Creator'));
+  m.append(el('h2', {}, 'Variações', el('small', {}, 'cada pawn da unidade sai com uma delas, sorteada pelo peso')), vars);
+  const v = c.variations[curVar];
+  if (!v) return;
+  renderVar(m, c, v);
+}
+
+function renderVar(m, c, v) {
+  const portrait = el('div', {class: 'portrait'});
+  if (v.source && v.source.startsWith('MCEPawns/')) portrait.append(el('img', {src: '/mce/' + encodeURIComponent(v.source.slice(9)) + '.png'}));
+  else portrait.append(el('span', {class: 'meta'}, 'sem retrato'));
+  m.append(el('div', {class: 'varHead'}, portrait,
+    el('div', {style: 'flex:1'},
+      el('div', {class: 'row'},
+        el('label', {}, 'Variação', el('input', {value: v.name || '', size: 24, oninput: e => { v.name = e.target.value; dirty(); }, onchange: () => renderMain()})),
+        el('label', {title: 'Peso no sorteio (relativo às outras variações)'}, 'Peso', el('input', {type: 'number', min: 0, step: 0.5, value: v.weight ?? 1, onchange: e => { v.weight = Math.max(0, +e.target.value); dirty(); renderMain(); }}))),
+      el('div', {class: 'row'},
+        el('button', {class: 'small', onclick: () => { const cp = JSON.parse(JSON.stringify(v)); cp.name = (v.name || '') + ' (cópia)'; c.variations.splice(curVar + 1, 0, cp); curVar++; dirty(); renderMain(); }}, 'Duplicar'),
+        el('button', {class: 'small', disabled: curVar === 0, onclick: () => { c.variations.splice(curVar - 1, 0, c.variations.splice(curVar, 1)[0]); curVar--; dirty(); renderMain(); }}, '◀'),
+        el('button', {class: 'small', disabled: curVar === c.variations.length - 1, onclick: () => { c.variations.splice(curVar + 1, 0, c.variations.splice(curVar, 1)[0]); curVar++; dirty(); renderMain(); }}, '▶'),
+        el('button', {class: 'small danger', onclick: () => { if (!confirm('Apagar a variação "' + v.name + '"?')) return; c.variations.splice(curVar, 1); curVar = Math.max(0, curVar - 1); dirty(); renderMain(); }}, 'Apagar variação')),
+      v.source ? el('div', {class: 'meta'}, 'Importada de ' + v.source + (v.xenotype ? ' · xeno do boneco: ' + (XENOS[v.xenotype] || v.xenotype) + ' (só referência; o xeno vem da unidade)' : '')) : null,
+      el('div', {class: 'meta'}, 'Clique num item do catálogo (à direita) para pôr nesta variação. Valor total: $' +
+        Math.round([...v.apparel, ...v.weapons, ...v.inventory].reduce((s, it) => s + (ITEMS[it.def]?.value || 0) * (it.count || 1), 0))))));
+  const conflicts = findConflicts(v.apparel);
+  for (const [key, title] of SECTIONS) {
+    const list = v[key] ||= [];
+    const hint = key === 'weapons' ? 'a primeira é a principal; as outras vão no inventário como reserva' : key === 'inventory' ? 'munição, comida, remédio…' : 'roupas que ocupam a mesma camada e parte do corpo não podem ir juntas';
+    m.append(el('h2', {}, title, el('small', {}, `${list.length} · ${hint}`)));
+    if (key === 'weapons')
+      for (const w of list) {
+        const d = ITEMS[w.def];
+        if (d?.ammo && !v.inventory.some(i => d.ammo.includes(i.def)))
+          m.append(el('div', {class: 'warn'}, '⚠ ' + d.label + ' sem munição no inventário: clique numa munição do cartão da arma para pôr.'));
+      }
+    const grid = el('div', {class: 'items'});
+    list.forEach((it, idx) => grid.append(itemCard(v, key, it, idx, conflicts.has(idx) && key === 'apparel')));
+    if (!list.length) grid.append(el('div', {class: 'meta'}, '(vazio)'));
+    m.append(grid);
+    if (key === 'apparel' && v.apparel.length) {
+      if (conflicts.size) m.append(el('div', {class: 'warn'}, '⚠ Peças em vermelho disputam a mesma camada e parte do corpo: no jogo só uma fica.'));
+      m.append(coverTable(v.apparel));
+    }
+  }
+}
+
+function ammoRow(v, key, it, d) {
+  if (key === 'weapons' && d?.ammo) {
+    return el('div', {class: 'ammo'}, el('span', {class: 'meta'}, 'Munição' + (d.mag ? ' (carregador ' + d.mag + ')' : '') + ':'),
+      d.ammo.map(a => {
+        const has = v.inventory.find(x => x.def === a);
+        return el('span', {class: 'am' + (has ? ' on' : ''), title: (ITEMS[a]?.label || a) + (has ? ' — no inventário: ' + has.count : ' — clique para pôr ' + ammoCount(d) + ' no inventário'),
+          onclick: () => { if (has) has.count += ammoCount(d); else v.inventory.push({def: a, count: ammoCount(d)}); dirty(); renderMain(); },
+          onmouseenter: e => showTip(e, a), onmousemove: moveTip, onmouseleave: hideTip},
+          ITEMS[a] ? iconImg(a) : null, shortAmmo(a) + (has ? ' ×' + has.count : ''));
+      }));
+  }
+  if (key === 'inventory' && it.def.startsWith('Ammo_')) {
+    const mine = v.weapons.filter(w => ITEMS[w.def]?.ammo?.includes(it.def)).map(w => ITEMS[w.def].label);
+    return mine.length ? el('div', {class: 'meta'}, 'para: ' + mine.join(', '))
+      : el('div', {class: 'warn', style: 'margin:0'}, '⚠ nenhuma arma desta variação usa esta munição');
+  }
+  return null;
+}
+function itemCard(v, key, it, idx, conflict) {
+  const d = ITEMS[it.def];
+  const ctl = el('div', {class: 'ctl'});
+  if (d?.stuffCats) {
+    const opts = Object.values(STUFF).filter(s => s.cats.some(c => d.stuffCats.includes(c))).sort((a, b) => a.label.localeCompare(b.label));
+    ctl.append(el('select', {title: 'Material', onchange: e => { it.stuff = e.target.value || undefined; dirty(); renderMain(); }},
+      el('option', {value: ''}, 'padrão (' + (STUFF[d.defaultStuff]?.label || '—') + ')'),
+      opts.map(s => el('option', {value: s.def, selected: s.def === it.stuff}, s.label))));
+  }
+  if (key !== 'inventory' || d?.kind !== 'item')
+    ctl.append(el('select', {title: 'Qualidade', onchange: e => { it.quality = e.target.value; dirty(); }},
+      QUALITIES.map(([q, l]) => el('option', {value: q, selected: (it.quality || 'Normal') === q}, l))));
+  if (key === 'apparel') {
+    const has = !!it.color;
+    ctl.append(el('input', {type: 'color', title: 'Cor da peça (desmarcar = cor do material)', value: it.color || tintFor(it.def, it.stuff) || '#ffffff',
+      onchange: e => { it.color = e.target.value; dirty(); renderMain(); }}));
+    if (has) ctl.append(el('button', {class: 'small', title: 'Voltar para a cor do material', onclick: () => { delete it.color; dirty(); renderMain(); }}, '↺'));
+  }
+  if (key === 'inventory')
+    ctl.append(el('label', {class: 'meta', title: 'Quantidade'}, '×', el('input', {type: 'number', min: 1, value: it.count || 1, onchange: e => { it.count = Math.max(1, +e.target.value | 0); dirty(); }})));
+  ctl.append(el('label', {class: 'meta', title: 'Chance de esta peça vir (100 = sempre)'}, '%',
+    el('input', {type: 'number', min: 0, max: 100, value: Math.round((it.chance ?? 1) * 100), onchange: e => {
+      const p = Math.max(0, Math.min(100, +e.target.value)); if (p >= 100) delete it.chance; else it.chance = p / 100; dirty(); }})));
+  const ic = el('div', {class: 'ic', onmouseenter: e => showTip(e, it.def), onmousemove: moveTip, onmouseleave: hideTip}, iconImg(it.def, it.stuff, it.color));
+  return el('div', {class: 'it' + (conflict ? ' conflict' : '')}, ic,
+    el('div', {},
+      el('div', {class: 'lb'}, d ? d.label : it.def),
+      el('div', {class: 'meta'}, d ? `${d.mod}${d.layers ? ' · ' + d.layers.join('/') : ''}` : '⚠ não existe no catálogo: ' + it.def),
+      it.style ? el('div', {class: 'meta'}, 'estilo: ' + it.style) : null,
+      ammoRow(v, key, it, d),
+      ctl),
+    el('span', {class: 'x', title: 'Tirar', onclick: () => { v[key].splice(idx, 1); dirty(); renderMain(); }}, '✕'));
+}
+
+// Duas roupas não vão juntas se dividem uma camada e ocupam alguma parte do corpo em comum (regra do jogo:
+// "hits" = partes que a peça ocupa de fato no corpo humano, exportadas no catálogo).
+function apparelClash(da, db) {
+  const a = ITEMS[da], b = ITEMS[db];
+  if (!a?.layers || !b?.layers || !a.layers.some(l => b.layers.includes(l))) return false;
+  const ha = a.hits || a.parts, hb = b.hits || b.parts;
+  return ha.some(p => hb.includes(p));
+}
+function findConflicts(apparel) {
+  const bad = new Set();
+  for (let i = 0; i < apparel.length; i++) for (let j = i + 1; j < apparel.length; j++)
+    if (apparelClash(apparel[i].def, apparel[j].def)) { bad.add(i); bad.add(j); }
+  return bad;
+}
+let toastTimer = null;
+function toast(msg) {
+  let t = $('#toast');
+  if (!t) { t = el('div', {id: 'toast'}); document.body.append(t); }
+  t.textContent = msg; t.style.display = 'block';
+  clearTimeout(toastTimer); toastTimer = setTimeout(() => t.style.display = 'none', 3500);
+}
+// munição: arma -> munições aceitas (catálogo) e munição -> armas que a usam
+const ammoCount = d => Math.max(d?.mag ? d.mag * 4 : 30, 20);
+function usersOf(ammoDef) { return CAT.items.filter(i => i.ammo?.includes(ammoDef)); }
+function shortAmmo(def) { const l = ITEMS[def]?.label || def; const m = l.match(/\(([^)]+)\)\s*$/); return m ? m[1] : l; }
+
+function coverTable(apparel) {
+  const layers = [...new Set(apparel.flatMap(a => ITEMS[a.def]?.layers || []))];
+  const t = el('table', {class: 'cover'}, el('tr', {}, el('th', {}, 'Camada'), el('th', {}, 'Peças')));
+  for (const l of layers) t.append(el('tr', {}, el('td', {}, l), el('td', {}, apparel.filter(a => ITEMS[a.def]?.layers?.includes(l)).map(a => ITEMS[a.def].label).join(', '))));
+  return t;
+}
+
+// ------------------------------------------------------------ catálogo
+const CAT_TABS = [['apparel', 'Roupas', i => i.kind === 'apparel'], ['weapons', 'Armas', i => i.kind === 'ranged' || i.kind === 'melee'], ['inventory', 'Itens', i => i.kind === 'item']];
+function renderCatTabs() {
+  const box = $('#catTabs'); box.innerHTML = '';
+  for (const [k, l] of CAT_TABS) box.append(el('button', {class: k === catTab ? 'sel' : '', onclick: () => { catTab = k; renderCatTabs(); fillCatFilters(); renderCat(); }}, l));
+}
+function fillCatFilters() {
+  const f = CAT_TABS.find(t => t[0] === catTab)[2];
+  const list = CAT.items.filter(f);
+  const mods = [...new Set(list.map(i => i.mod))].sort();
+  const cur = $('#catMod').value;
+  $('#catMod').innerHTML = '<option value="">Todos os mods (' + list.length + ')</option>' + mods.map(m => `<option ${m === cur ? 'selected' : ''}>${esc(m)}</option>`).join('');
+  const layers = [...new Set(list.flatMap(i => i.layers || []))].sort();
+  $('#catLayer').style.display = catTab === 'apparel' ? '' : 'none';
+  $('#catLayer').innerHTML = '<option value="">Toda camada</option>' + layers.map(l => `<option>${esc(l)}</option>`).join('');
+  const techs = [...new Set(list.map(i => i.tech))];
+  $('#catTech').innerHTML = '<option value="">Todo nível</option>' + techs.map(t => `<option value="${t}">${TECH[t] || t}</option>`).join('');
+}
+let catTimer = null;
+function renderCat() {
+  const f = CAT_TABS.find(t => t[0] === catTab)[2];
+  const q = $('#catSearch').value.trim().toLowerCase(), mod = $('#catMod').value, layer = $('#catLayer').value, tech = $('#catTech').value;
+  let list = CAT.items.filter(i => f(i) && (!mod || i.mod === mod) && (!layer || i.layers?.includes(layer)) && (!tech || i.tech === tech)
+    && (!q || i.label.toLowerCase().includes(q) || i.def.toLowerCase().includes(q)));
+  list.sort((a, b) => a.label.localeCompare(b.label));
+  const total = list.length; list = list.slice(0, 400);
+  $('#catInfo').textContent = total + ' itens' + (total > 400 ? ' (mostrando 400; filtre para ver o resto)' : '') + (curCol ? '' : ' · escolha uma coleção para adicionar');
+  const g = $('#catGrid'); g.innerHTML = '';
+  for (const i of list)
+    g.append(el('div', {class: 'ci', onclick: () => addItem(i), onmouseenter: e => showTip(e, i.def), onmousemove: moveTip, onmouseleave: hideTip},
+      el('div', {class: 'ic'}, iconImg(i.def)), el('div', {class: 'nm'}, i.label), el('div', {class: 'md'}, i.mod)));
+}
+function addItem(i) {
+  const v = curCol?.variations?.[curVar];
+  if (!v) return alert('Escolha uma coleção e uma variação primeiro.');
+  const key = i.kind === 'apparel' ? 'apparel' : (i.kind === 'ranged' || i.kind === 'melee') ? 'weapons' : 'inventory';
+  const it = {def: i.def};
+  if (key === 'inventory') {
+    const ex = v.inventory.find(x => x.def === i.def);
+    const step = i.def.startsWith('Ammo_') ? ammoCount(v.weapons.map(w => ITEMS[w.def]).find(w => w?.ammo?.includes(i.def))) : 1;
+    if (ex) { ex.count = (ex.count || 1) + step; dirty(); renderMain(); return; }
+    it.count = step;
+  }
+  if (key === 'apparel') {   // a peça nova tira as que ocupam a mesma camada e parte do corpo
+    const out = v.apparel.filter(a => apparelClash(a.def, i.def));
+    if (out.length) {
+      v.apparel = v.apparel.filter(a => !out.includes(a));
+      toast('Substituiu: ' + out.map(a => ITEMS[a.def]?.label || a.def).join(', ') + ' → ' + i.label);
+    }
+  }
+  v[key].push(it); dirty(); renderMain();
+}
+
+// ------------------------------------------------------------ importar do Character Creator
+function openImport() {
+  if (!mceNames.length) return alert('Nenhum personagem salvo no Character Creator (pasta MCEPawns).');
+  const chosen = new Set();
+  const used = new Set(curCol.variations.map(v => v.source));
+  const grid = el('div', {class: 'mceGrid'}, mceNames.map(n => {
+    const card = el('div', {class: 'mce', onclick: () => { chosen.has(n) ? chosen.delete(n) : chosen.add(n); card.classList.toggle('sel'); }},
+      el('img', {src: '/mce/' + encodeURIComponent(n) + '.png', loading: 'lazy'}), el('div', {}, n), used.has('MCEPawns/' + n) ? el('div', {class: 'meta'}, '(já nesta coleção)') : null);
+    return card;
+  }));
+  const modal = el('div', {class: 'modal', onclick: e => { if (e.target === modal) modal.remove(); }},
+    el('div', {class: 'box'},
+      el('div', {class: 'row'}, el('b', {}, 'Importar personagens salvos no Character Creator'), el('span', {class: 'meta'}, 'clique para marcar; cada um vira uma variação')),
+      grid,
+      el('div', {class: 'row', style: 'margin-top:10px;justify-content:flex-end'},
+        el('button', {onclick: () => modal.remove()}, 'Cancelar'),
+        el('button', {class: 'primary', onclick: async () => {
+          for (const n of chosen) {
+            const r = await fetch('/api/mce/' + encodeURIComponent(n)); const v = await r.json();
+            if (v.error) { alert(n + ': ' + v.error); continue; }
+            curCol.variations.push(v);
+          }
+          // tira variações vazias que sobraram da criação
+          curCol.variations = curCol.variations.filter(v => v.apparel.length || v.weapons.length || v.inventory.length || v.source);
+          curVar = Math.max(0, curCol.variations.length - 1);
+          modal.remove(); dirty(); renderMain();
+        }}, 'Importar'))));
+  document.body.append(modal);
+}
+
+// ------------------------------------------------------------ gerar Defs
+async function build() {
+  clearTimeout(saveTimer);
+  if (curCol) { const body = JSON.stringify(curCol, (k, v) => k.startsWith('_') ? undefined : v); await fetch('/api/colecao/' + encodeURIComponent(curCol._file || curCol.id), {method: 'PUT', body}); curCol._file = curCol.id; }
+  const r = await fetch('/api/build', {method: 'POST'}); const j = await r.json();
+  const modal = el('div', {class: 'modal', onclick: e => { if (e.target === modal) modal.remove(); }},
+    el('div', {class: 'box'}, el('b', {}, 'Defs gerados'), el('pre', {}, j.report),
+      el('div', {class: 'meta'}, 'Para valer no jogo: abrir o jogo de novo (ou rodar um teste). Peça ao Claude para conferir com o executor de testes.'),
+      el('div', {class: 'row', style: 'justify-content:flex-end;margin-top:8px'}, el('button', {onclick: () => modal.remove()}, 'Fechar'))));
+  document.body.append(modal);
+}
+
+function renderAll() {
+  $('#app').classList.toggle('units', mode === 'units');
+  $('#mKits').classList.toggle('sel', mode === 'kits'); $('#mUnits').classList.toggle('sel', mode === 'units');
+  if (mode === 'units') { renderFacs(); renderUnits(); return; }
+  renderCols(); renderMain(); renderCat();
+}
+// ------------------------------------------------------------ unidades
+const ROLES = [['combatente', 'Combatente'], ['civil', 'Civil (não luta)'], ['mercador', 'Mercador de caravana'], ['lider', 'Líder da facção']];
+const GROUP_LABELS = [['Combat', 'Ataques'], ['Peaceful', 'Visitas'], ['Settlement', 'Defesa da base'], ['TraderGuard', 'Guarda de caravana'], ['Trader', 'Mercador da caravana']];
+const unitDef = (fac, id) => 'EQ_U_' + fac.replace('EQ_Faction_', '') + '_' + id;
+function allKinds() {
+  const extra = [];
+  for (const f of UNITS) for (const u of f.units || []) {
+    const fl = FACTIONS.find(x => x.def === f.faction);
+    extra.push({def: unitDef(f.faction, u.id), label: (u.label || u.id) + (u.status === 'pronta' ? ' (nova)' : ' (rascunho)'), faction: f.faction, factionLabel: fl?.label || f.faction, points: u.points, editor: true});
+  }
+  return [...KINDS, ...extra];
+}
+function facData(fac) {
+  let f = UNITS.find(x => x.faction === fac);
+  if (!f) { f = {faction: fac, replaceExisting: false, units: []}; UNITS.push(f); }
+  return f;
+}
+let unitTimer = null;
+function unitsDirty(f) {
+  $('#saveState').textContent = 'alterado…';
+  clearTimeout(unitTimer);
+  unitTimer = setTimeout(async () => {
+    const r = await fetch('/api/unidades/' + encodeURIComponent(f.faction), {method: 'PUT', body: JSON.stringify(f)});
+    const j = await r.json();
+    $('#saveState').textContent = j.error ? 'ERRO: ' + j.error : 'salvo ' + new Date().toLocaleTimeString();
+  }, 500);
+}
+function renderFacs() {
+  const box = $('#colList'); box.innerHTML = '';
+  box.append(el('h3', {}, 'Facções'));
+  for (const fa of FACTIONS) {
+    const f = UNITS.find(x => x.faction === fa.def);
+    const n = f ? f.units.length : 0, old = KINDS.filter(k => k.faction === fa.def).length;
+    box.append(el('div', {class: 'colItem' + (fa.def === curFac ? ' sel' : ''), onclick: () => { curFac = fa.def; renderAll(); }},
+      el('span', {}, fa.label), el('span', {class: 'n', title: 'novas / antigas'}, n + ' / ' + old)));
+  }
+}
+function newUnit() {
+  if (!curFac) return;
+  let id = prompt('Nome interno da unidade (letras, números e _), ex.: soldado_raso');
+  if (!id) return;
+  id = id.trim().replace(/\s+/g, '_');
+  if (!/^[A-Za-z0-9_]+$/.test(id)) return alert('Use só letras sem acento, números e _.');
+  const f = facData(curFac);
+  if (f.units.some(u => u.id === id)) return alert('Já existe.');
+  f.units.push({id, label: id.replace(/_/g, ' '), labelPlural: '', role: 'combatente', points: 60, status: 'rascunho',
+    groups: {Combat: 5, Settlement: 5}, xenos: {}, kits: [], notes: ''});
+  unitsDirty(f); renderAll();
+}
+function renderUnits() {
+  const m = $('#main'); m.innerHTML = '';
+  if (!CAT) { m.append(el('div', {class: 'empty'}, 'Falta o catálogo.')); return; }
+  if (!curFac) { m.append(el('div', {class: 'empty'}, 'Escolha uma facção à esquerda.')); return; }
+  const fa = FACTIONS.find(x => x.def === curFac), f = facData(curFac);
+  m.append(el('h2', {}, fa.label, el('small', {}, curFac)));
+  m.append(el('div', {class: 'row'}, el('label', {title: 'Nos grupos (ataque, base, caravana…) que tiverem alguma unidade nova, as antigas saem. Grupos sem unidade nova continuam com as antigas.'},
+    el('input', {type: 'checkbox', checked: !!f.replaceExisting, onchange: e => { f.replaceExisting = e.target.checked; unitsDirty(f); renderUnits(); }}),
+    'Usar só as unidades novas nos grupos onde elas aparecem (as antigas saem)')));
+  const old = KINDS.filter(k => k.faction === curFac);
+  if (old.length) {
+    m.append(el('div', {class: 'meta'}, 'Unidades antigas (definidas à mão no mod)' + (f.replaceExisting ? ' — saem dos grupos que tiverem unidade nova:' : ':')));
+    m.append(el('table', {class: 'old'}, el('tr', {}, el('th', {}, 'Unidade'), el('th', {}, 'defName'), el('th', {}, 'Pontos'), el('th', {}, 'Kit')),
+      old.map(k => el('tr', {}, el('td', {}, k.label), el('td', {class: 'meta'}, k.def), el('td', {}, String(k.points)),
+        el('td', {class: 'meta'}, cols.filter(c => (c.pawnKinds || []).includes(k.def)).map(c => c.label || c.id).join(', ') || 'arsenal da facção')))));
+  }
+  m.append(el('h2', {}, 'Unidades novas', el('small', {}, 'rascunho = só planejamento (não vai para o jogo); pronta = gera a unidade no "Gerar Defs"')));
+  if (!f.units.length) m.append(el('div', {class: 'meta'}, 'Nenhuma ainda. Use "+ Nova unidade" à esquerda.'));
+  f.units.forEach((u, idx) => m.append(unitCard(f, u, idx)));
+}
+function unitCard(f, u, idx) {
+  const set = (k, v, re) => { u[k] = v; unitsDirty(f); if (re) renderUnits(); };
+  const num = (k, attrs = {}) => el('input', Object.assign({type: 'number', value: u[k] ?? '', onchange: e => set(k, e.target.value === '' ? undefined : +e.target.value)}, attrs));
+  u.groups ||= {}; u.xenos ||= {}; u.kits ||= [];
+  const xenoOpts = CAT.xenotypes.slice().sort((a, b) => (b.def.startsWith('EQ_') - a.def.startsWith('EQ_')) || a.label.localeCompare(b.label));
+  const kitThumbs = colId => {
+    const c = cols.find(x => x.id === colId); const box = el('span', {class: 'kitThumbs'});
+    if (!c) return el('span', {class: 'warn'}, ' (não existe)');
+    for (const v of (c.variations || []).slice(0, 4)) {
+      const a = v.apparel.find(x => ITEMS[x.def]?.layers?.some(l => /Shell|Middle/.test(l))) || v.apparel[0] || v.weapons[0];
+      if (a) box.append(iconImg(a.def, a.stuff, a.color));
+    }
+    return box;
+  };
+  return el('div', {class: 'unit' + (u.status === 'pronta' ? '' : ' draft')},
+    el('div', {class: 'row'},
+      el('b', {}, u.label || u.id), el('span', {class: 'meta'}, unitDef(f.faction, u.id)),
+      el('span', {style: 'flex:1'}),
+      el('select', {onchange: e => set('status', e.target.value, true)},
+        el('option', {value: 'rascunho', selected: u.status !== 'pronta'}, 'Rascunho'), el('option', {value: 'pronta', selected: u.status === 'pronta'}, 'Pronta')),
+      el('button', {class: 'small danger', onclick: () => { if (confirm('Apagar a unidade ' + u.id + '?')) { f.units.splice(idx, 1); unitsDirty(f); renderUnits(); } }}, 'Apagar')),
+    el('div', {class: 'row'},
+      el('label', {}, 'Nome', el('input', {value: u.label || '', size: 22, oninput: e => set('label', e.target.value)})),
+      el('label', {}, 'Plural', el('input', {value: u.labelPlural || '', size: 22, placeholder: (u.label || '') + 's', oninput: e => set('labelPlural', e.target.value)})),
+      el('label', {}, 'Papel', el('select', {onchange: e => set('role', e.target.value, true)}, ROLES.map(([r, l]) => el('option', {value: r, selected: (u.role || 'combatente') === r}, l)))),
+      el('label', {title: 'Custo em pontos de ataque (quanto maior, menos dessas vêm por ataque)'}, 'Pontos', num('points', {min: 10, step: 5})),
+      el('label', {}, 'Idade', num('minAge', {min: 13, max: 120, placeholder: 'mín'}), '–', num('maxAge', {min: 13, max: 200, placeholder: 'máx'})),
+      el('label', {title: 'Membro básico: usado quando o jogo precisa de "um membro qualquer" da facção (visitas, missões)'},
+        el('input', {type: 'checkbox', checked: !!u.basic, onchange: e => { f.units.forEach(x => delete x.basic); if (e.target.checked) u.basic = true; unitsDirty(f); renderUnits(); }}), 'membro básico')),
+    el('div', {class: 'row'}, el('label', {}, 'Aparece em (peso; vazio = não aparece):'),
+      el('div', {class: 'grp'}, GROUP_LABELS.map(([g, l]) => el('label', {}, l, el('input', {type: 'number', min: 0, step: 0.5, value: u.groups[g] ?? '',
+        onchange: e => { if (e.target.value === '' || +e.target.value === 0) delete u.groups[g]; else u.groups[g] = +e.target.value; unitsDirty(f); }}))))),
+    el('div', {class: 'row'}, el('label', {}, 'Xenos:'),
+      el('div', {class: 'chips'}, Object.entries(u.xenos).map(([x, w]) => el('span', {class: 'chip'}, (XENOS[x] || x) + ' ',
+        el('input', {type: 'number', min: 0, step: 0.5, value: w, style: 'width:46px', onchange: e => { u.xenos[x] = +e.target.value; unitsDirty(f); }}),
+        el('b', {onclick: () => { delete u.xenos[x]; unitsDirty(f); renderUnits(); }}, '×')))),
+      el('select', {onchange: e => { if (e.target.value) { u.xenos[e.target.value] = 1; unitsDirty(f); renderUnits(); } }},
+        el('option', {value: ''}, Object.keys(u.xenos).length ? '+ xeno…' : 'xenos da facção (padrão) / + xeno…'),
+        xenoOpts.map(x => el('option', {value: x.def}, x.label + ' (' + x.def + ')')))),
+    el('div', {class: 'row'}, el('label', {}, 'Kits:'),
+      el('div', {class: 'chips'}, u.kits.map(k => el('span', {class: 'chip'}, (cols.find(c => c.id === k)?.label || k) + ' ', kitThumbs(k),
+        el('b', {title: 'Abrir a coleção', onclick: () => { curCol = cols.find(c => c.id === k) || curCol; curVar = 0; mode = 'kits'; $('#btnNewCol').textContent = '+ Nova coleção'; renderAll(); }}, '✎'),
+        el('b', {onclick: () => { u.kits = u.kits.filter(x => x !== k); unitsDirty(f); renderUnits(); }}, '×')))),
+      el('select', {onchange: e => { if (e.target.value && !u.kits.includes(e.target.value)) { u.kits.push(e.target.value); unitsDirty(f); renderUnits(); } }},
+        el('option', {value: ''}, '+ coleção de kit…'),
+        cols.filter(c => !c.faction || c.faction === f.faction).map(c => el('option', {value: c.id}, (c.label || c.id) + ' (' + (c.variations || []).length + ' variações)'))),
+      el('button', {class: 'small', onclick: () => {
+        const id = (f.faction.replace('EQ_Faction_', '') + '_' + u.id).replace(/[^A-Za-z0-9_]/g, '');
+        let c = cols.find(x => x.id === id);
+        if (!c) { c = {id, label: u.label || u.id, faction: f.faction, pawnKinds: [], chance: 1, variations: [blankVar('Variação 1')]}; cols.push(c); curCol = c; dirty(); }
+        if (!u.kits.includes(id)) { u.kits.push(id); unitsDirty(f); }
+        curCol = c; curVar = 0; mode = 'kits'; $('#btnNewCol').textContent = '+ Nova coleção'; renderAll();
+      }}, '+ criar coleção para esta unidade')),
+    el('textarea', {placeholder: 'Notas: papel na facção, quando aparece, ideia de visual…', oninput: e => set('notes', e.target.value)}, u.notes || ''));
+}
+
+
+async function init() {
+  const st = await (await fetch('/api/state')).json();
+  cols = st.colecoes; cols.forEach(c => c._file = c.id); mceNames = st.mce; UNITS = st.unidades || [];
+  if (st.catalog) {
+    CAT = await (await fetch('/api/catalog')).json();
+    for (const i of CAT.items) ITEMS[i.def] = i;
+    for (const s of CAT.stuff) STUFF[s.def] = s;
+    for (const x of CAT.xenotypes) XENOS[x.def] = x.label;
+    KINDS = CAT.pawnkinds; FACTIONS = CAT.factions;
+    renderCatTabs(); fillCatFilters();
+  }
+  $('#btnNewCol').onclick = () => mode === 'units' ? newUnit() : newCol();
+  $('#mKits').onclick = () => { mode = 'kits'; $('#btnNewCol').textContent = '+ Nova coleção'; renderAll(); };
+  $('#mUnits').onclick = () => { mode = 'units'; $('#btnNewCol').textContent = '+ Nova unidade'; curFac ||= FACTIONS[0]?.def; renderAll(); };
+  $('#btnBuild').onclick = build;
+  $('#catSearch').oninput = () => { clearTimeout(catTimer); catTimer = setTimeout(renderCat, 150); };
+  for (const s of ['#catMod', '#catLayer', '#catTech']) $(s).onchange = renderCat;
+  curCol = cols[0] || null;
+  renderAll();
+}
+init();
+</script>
+</body>
+</html>

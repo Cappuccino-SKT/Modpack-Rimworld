@@ -1,0 +1,219 @@
+{
+ "id": "Irmandade_Soldado",
+ "label": "Irmandade Soldado",
+ "faction": "EQ_Faction_Forja",
+ "pawnKinds": [
+  "EQ_U_Forja_Soldado"
+ ],
+ "chance": 1,
+ "variations": [
+  {
+   "name": "Trincheiro",
+   "weight": 1,
+   "apparel": [
+    {
+     "def": "CE_Armor_Gambeson"
+    },
+    {
+     "def": "Apparel_Broadwrap"
+    },
+    {
+     "def": "Apparel_SimpleHelmet"
+    },
+    {
+     "def": "CE_Apparel_Backpack"
+    },
+    {
+     "def": "CE_Armor_Cuirass"
+    }
+   ],
+   "weapons": [
+    {
+     "def": "CE_Gun_M1Garand"
+    },
+    {
+     "def": "VWEFT_Gun_FrontierPistol"
+    },
+    {
+     "def": "VWE_MeleeWeapon_Shovel"
+    }
+   ],
+   "inventory": [
+    {
+     "def": "Ammo_3006Springfield_AP",
+     "count": 40
+    },
+    {
+     "def": "Ammo_763x25mmMauser_HP",
+     "count": 20
+    },
+    {
+     "def": "MealSurvivalPack",
+     "count": 2
+    },
+    {
+     "def": "VBE_Cigarettes",
+     "count": 2
+    }
+   ]
+  },
+  {
+   "name": "Toxico",
+   "weight": 1,
+   "apparel": [
+    {
+     "def": "CE_Armor_Gambeson"
+    },
+    {
+     "def": "Apparel_Broadwrap"
+    },
+    {
+     "def": "Apparel_SimpleHelmet"
+    },
+    {
+     "def": "CE_Apparel_Backpack"
+    },
+    {
+     "def": "CE_Apparel_ImprovGasMask"
+    },
+    {
+     "def": "CE_Armor_Cuirass"
+    }
+   ],
+   "weapons": [
+    {
+     "def": "CE_Gun_M1Garand"
+    },
+    {
+     "def": "VWEFT_Gun_FrontierPistol"
+    },
+    {
+     "def": "VWE_MeleeWeapon_Shovel"
+    },
+    {
+     "def": "Weapon_GrenadeTox"
+    }
+   ],
+   "inventory": [
+    {
+     "def": "Ammo_3006Springfield_AP",
+     "count": 40
+    },
+    {
+     "def": "Ammo_763x25mmMauser_HP",
+     "count": 20
+    },
+    {
+     "def": "VBE_Cigarettes",
+     "count": 2
+    },
+    {
+     "def": "MealSurvivalPack",
+     "count": 2
+    }
+   ]
+  },
+  {
+   "name": "Raider",
+   "weight": 1,
+   "apparel": [
+    {
+     "def": "CE_Armor_Gambeson"
+    },
+    {
+     "def": "Apparel_Broadwrap"
+    },
+    {
+     "def": "Apparel_SimpleHelmet"
+    },
+    {
+     "def": "CE_Apparel_Backpack"
+    },
+    {
+     "def": "CE_Apparel_ImprovGasMask"
+    },
+    {
+     "def": "CE_Armor_Cuirass"
+    }
+   ],
+   "weapons": [
+    {
+     "def": "VWE_TrenchGun"
+    },
+    {
+     "def": "VWEFT_Gun_FrontierPistol"
+    },
+    {
+     "def": "VWE_MeleeWeapon_Shovel"
+    },
+    {
+     "def": "CE_Weapon_SatchelCharge"
+    }
+   ],
+   "inventory": [
+    {
+     "def": "Ammo_12Gauge_Buck",
+     "count": 30
+    },
+    {
+     "def": "Ammo_763x25mmMauser_HP",
+     "count": 20
+    },
+    {
+     "def": "MealSurvivalPack",
+     "count": 2
+    },
+    {
+     "def": "VBE_Cigarettes",
+     "count": 2
+    }
+   ]
+  },
+  {
+   "name": "Suporte",
+   "weight": 1,
+   "apparel": [
+    {
+     "def": "CE_Armor_Gambeson"
+    },
+    {
+     "def": "Apparel_Broadwrap"
+    },
+    {
+     "def": "Apparel_SimpleHelmet"
+    },
+    {
+     "def": "CE_Apparel_Backpack"
+    },
+    {
+     "def": "CE_Armor_Cuirass"
+    },
+    {
+     "def": "CE_Apparel_TacVest"
+    }
+   ],
+   "weapons": [
+    {
+     "def": "CE_Gun_BAR"
+    },
+    {
+     "def": "VWE_MeleeWeapon_Shovel"
+    }
+   ],
+   "inventory": [
+    {
+     "def": "MealSurvivalPack",
+     "count": 2
+    },
+    {
+     "def": "VBE_Cigarettes",
+     "count": 2
+    },
+    {
+     "def": "Ammo_3006Springfield_HP",
+     "count": 100
+    }
+   ]
+  }
+ ]
+}

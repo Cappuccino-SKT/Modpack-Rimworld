@@ -1,0 +1,46 @@
+# Etapa 10d: tropas das potências (exércitos no mapa-múndi, guarnições, tesouro, batalha abstrata, chamada às armas).
+newgame
+timeout 900
+forces frontchance 0
+join forja
+wait 1h
+leader set 0
+psy title 1 forja
+wait 1h
+forces
+# guerra pelo Hegemony (aviso enfileirado → mobilização e chamada às armas no próximo tique)
+forces hegwar forja coro
+wait 1h
+forces
+letters
+# carta automática: pagar o soldo
+give Silver 400
+choose Chamada às armas 1
+forces
+# guerra forçada (sem depender da IA do Hegemony) e exército levantado à mão
+forces war forja helice
+forces raise forja helice 40
+forces call forja
+choose Chamada às armas 0
+forces
+# vitória garantida: guarnição fraca
+forces garrison helice 5
+forces arrive
+forces
+# volta para casa (passos) e vira guarnição
+forces step 60
+forces
+# derrota garantida: guarnição enorme
+forces raise forja helice 20
+forces garrison helice 500
+forces arrive
+# recusa = falta
+forces call forja
+choose Chamada às armas 2
+obligations
+# dias: renda, manutenção, moral, mobilização sozinha
+forces treasury forja 3000
+forces daily 5
+forces
+forces log
+dump

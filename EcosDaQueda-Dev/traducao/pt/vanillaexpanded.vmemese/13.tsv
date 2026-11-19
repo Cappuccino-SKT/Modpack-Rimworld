@@ -1,0 +1,278 @@
+## DefInjected/RitualOutcomeEffectDef/Ritual_Outcomes_InsectoidHymn.xml
+VME_InsectoidHymnRitualOutcome.outcomeChances.0.label	Desinteressante
+VME_InsectoidHymnRitualOutcome.outcomeChances.0.description	O(a) {0} foi incrivelmente desinteressante. Tá, tá, insetos são legais. Bah.\n\nO ritual não teve efeito na habilidade de construir ninhos do pastor de insetoides.
+VME_InsectoidHymnRitualOutcome.outcomeChances.1.description	O(a) {0} foi constrangedor(a). O discurso foi repetitivo e não nos convenceu em nada da divindade dos nossos amados insetos.\n\nO ritual não teve efeito na habilidade de construir ninhos do pastor de insetoides.
+VME_InsectoidHymnRitualOutcome.outcomeChances.2.description	O(a) {0} foi muito empolgante. O cantor mostrou uma habilidade impressionante, e o hino exaltou como devia as virtudes do nosso modo de vida.\n\nO ritual zerou a recarga da habilidade de construir ninhos do pastor de insetoides.
+VME_InsectoidHymnRitualOutcome.outcomeChances.3.label	Hipnotizante
+VME_InsectoidHymnRitualOutcome.outcomeChances.3.description	O(a) {0} foi hipnotizante! Ainda ouvimos as palavras fascinantes do hino, como incontáveis patinhas de inseto rastejando pelo corpo.\n\nO ritual zerou a recarga da habilidade de construir ninhos do pastor de insetoides.\n\nO ritual também fez fugir os insetoides que atacavam a colônia.
+## DefInjected/RitualOutcomeEffectDef/Ritual_Outcomes_LeadershipChallenge.xml
+VME_LeadershipChallengeRitualOutcome.comps.0.label	organizador do desafio presente
+VME_LeadershipChallengeRitualOutcome.comps.2.labelAbstract	impacto social do organizador
+VME_LeadershipChallengeRitualOutcome.outcomeChances.0.description	O desafio pela liderança foi terrível! Os lutadores ficaram se atrapalhando, desviando um do outro sem jeito numa longa demonstração de covardia e fraqueza. Assistir só deixou todo mundo triste.
+VME_LeadershipChallengeRitualOutcome.outcomeChances.1.description	O desafio pela liderança foi chato. Os lutadores não se entregaram, então não houve momentos empolgantes. Pelo menos nosso líder é o mais forte.
+VME_LeadershipChallengeRitualOutcome.outcomeChances.2.description	O desafio pela liderança foi bom. Os lutadores foram para o sangue e mostraram garra. Agora sabemos que nosso líder é o mais forte.
+VME_LeadershipChallengeRitualOutcome.outcomeChances.3.description	O desafio pela liderança foi inesquecível! Os dois lutadores deram tudo de si, e sabemos que nosso líder agora é o mais forte entre nós!
+## DefInjected/RitualOutcomeEffectDef/Ritual_Outcomes_Orgy.xml
+VME_OrgyRitualOutcome.description	Todo participante recebe a memória "recebeu um carinho", mas os efeitos negativos de uma orgia ruim são bem mais severos que o normal. Conforme a qualidade do ritual, os participantes recebem entre {MINMOOD} e {MAXMOOD} de humor por {MOODDAYS} dias.\nTodos os participantes precisam ser adultos que consentem. Se o guia moral não for adulto, o ritual aparece bloqueado.
+VME_OrgyRitualOutcome.comps.0.label	organizador da orgia presente
+VME_OrgyRitualOutcome.comps.2.labelAbstract	impacto social do organizador
+VME_OrgyRitualOutcome.outcomeChances.0.label	Grotesca
+VME_OrgyRitualOutcome.outcomeChances.0.description	O(a) {0} foi grotesco(a)! Quando se pensa numa orgia, a gente imagina gente atraente. Isso foi... o exato oposto. As imagens mentais vão demorar a ir embora.
+VME_OrgyRitualOutcome.outcomeChances.1.description	O(a) {0} foi constrangedor(a). Todo mundo ficou sentado sem saber direito o que fazer, com corpos nus jogados por toda parte. Bem decepcionante.
+VME_OrgyRitualOutcome.outcomeChances.2.label	Sensual
+VME_OrgyRitualOutcome.outcomeChances.2.description	O(a) {0} foi muito sensual. Entregamo-nos uns aos outros numa expressão coletiva das nossas paixões mais profundas.
+VME_OrgyRitualOutcome.outcomeChances.3.label	Arrebatadora
+VME_OrgyRitualOutcome.outcomeChances.3.description	O(a) {0} foi arrebatador(a)! Todos pusemos máscaras de baile de gala e despimos o corpo. Uma enxurrada de êxtase sem igual fez nossos corpos tremerem de excitação mal disfarçada.
+## DefInjected/RitualOutcomeEffectDef/Ritual_Outcomes_PlagueFestival.xml
+VME_PlagueFestivalRitualOutcome.description	Conforme a qualidade do ritual, os participantes recebem entre {MINMOOD} e {MAXMOOD} de humor por {MOODDAYS} dias. Se o ritual for chato ou melhor, todos os participantes ganham a peste de recompensa.
+VME_PlagueFestivalRitualOutcome.outcomeChances.0.description	O(a) {0} foi terrível! O discurso foi gaguejado e incoerente, e a técnica de abate foi um fiasco. O cadáver ficou ali, inerte, e nenhum miasma sagrado saiu dele. Que perda de tempo!
+VME_PlagueFestivalRitualOutcome.outcomeChances.1.description	O(a) {0} foi chato(a). O discurso foi repetitivo e a técnica de abate teve falhas visíveis. Mas a peste abençoada agora está entre nós.
+VME_PlagueFestivalRitualOutcome.outcomeChances.2.description	O(a) {0} foi satisfatório(a). O discurso pareceu significativo, e um miasma sagrado saiu do cadáver, banhando a todos num vento sagrado de peste.
+VME_PlagueFestivalRitualOutcome.outcomeChances.3.description	O(a) {0} foi espetacular! O discurso levou todos à beira do frenesi, e um vento sagrado de peste soprou do cadáver do animal, nos abençoando.
+## DefInjected/RitualOutcomeEffectDef/Ritual_Outcomes_SlaveEmancipation.xml
+VME_SlaveEmancipationOutcome.outcomeChances.0.label	Demagógica
+VME_SlaveEmancipationOutcome.outcomeChances.0.description	O(a) {0} foi horrivelmente demagógico(a)! Acabamos parecendo os vilões da história... Com uma apresentação dessas, é improvável que alguém queira se juntar à colônia de livre vontade.
+VME_SlaveEmancipationOutcome.outcomeChances.1.label	Livre-pensadora
+VME_SlaveEmancipationOutcome.outcomeChances.1.description	O(a) {0} foi uma bela demonstração de livre pensamento. O discurso do nosso líder foi claro e sucinto, explicando de forma concisa todos os males da escravidão. Os escravos participantes têm 25% de chance de se juntar à colônia.
+VME_SlaveEmancipationOutcome.outcomeChances.2.label	Libertadora
+VME_SlaveEmancipationOutcome.outcomeChances.2.description	O(a) {0} quebrou grilhões. O discurso do nosso líder foi muito inspirador, detalhando todos os males da escravidão e as imensas vantagens de uma sociedade livre. Os escravos participantes têm 50% de chance de se juntar à colônia.
+VME_SlaveEmancipationOutcome.outcomeChances.3.label	Redentora
+VME_SlaveEmancipationOutcome.outcomeChances.3.description	O(a) {0} foi redentor(a)! O discurso do nosso líder foi uma aula magna sobre as virtudes de uma sociedade livre, liberta dos grilhões da escravidão. Os escravos participantes têm 75% de chance de se juntar à colônia.
+VME_SlaveEmancipationOutcome.outcomeChances.4.description	O(a) {0} foi incrível! Contarão lendas sobre o discurso do nosso líder e sobre como essas palavras ecoarão no futuro, elevando a causa da emancipação. Os escravos participantes têm 100% de chance de se juntar à colônia.
+## DefInjected/RitualOutcomeEffectDef/Ritual_Outcomes_TradingFair.xml
+VME_TradingFairRitualOutcome.description	Conforme a qualidade do ritual, e desde que seja positiva, chegam de 1 a 6 caravanas comerciais de facções amigas. Também conforme a qualidade, os participantes recebem entre {MINMOOD} e {MAXMOOD} de humor por {MOODDAYS} dias.\n\nSe Microeletrônica já foi pesquisada, é preciso ter pelo menos 200 de prata perto de um sinalizador de comércio válido para a feira funcionar direito; senão os participantes recebem a penalidade de humor "feira comercial pobre".
+VME_TradingFairRitualOutcome.comps.0.label	organizador da feira presente
+VME_TradingFairRitualOutcome.outcomeChances.0.label	Mal organizada
+VME_TradingFairRitualOutcome.outcomeChances.0.description	O(a) {0} foi muito mal organizado(a)! Com um esforço tão fraco, nenhuma caravana extra será atraída ao nosso assentamento...
+VME_TradingFairRitualOutcome.outcomeChances.1.label	Sem graça
+VME_TradingFairRitualOutcome.outcomeChances.1.description	O(a) {0} foi sem graça. Houve algumas transações empolgantes, mas a maior parte foi conversa de negócios chata. Por sorte, foi interessante o bastante para atrair uma caravana ao nosso assentamento, que deve chegar logo.
+VME_TradingFairRitualOutcome.outcomeChances.2.label	Bem organizada
+VME_TradingFairRitualOutcome.outcomeChances.2.description	O(a) {0} foi muito bem organizado(a). Houve muito vaivém e networking. Por sorte, pelo menos três caravanas serão atraídas ao nosso assentamento e devem chegar logo.
+VME_TradingFairRitualOutcome.outcomeChances.3.label	Maravilhosa
+VME_TradingFairRitualOutcome.outcomeChances.3.description	O(a) {0} foi um evento maravilhoso! Discutimos paradigmas econômicos empolgantes e inovadores, e nosso assentamento será famoso como centro de estudos financeiros. Com uma demonstração dessas, pelo menos seis caravanas serão atraídas ao assentamento e devem chegar logo.
+## DefInjected/RitualOutcomeEffectDef/Ritual_Outcomes_ViolentConversion.xml
+VME_ViolentConversionRitualOutcome.description	A conversão violenta tem 50% de chance de converter o participante por completo à sua ideologia ou de simplesmente executá-lo. Conforme a qualidade do ritual, os participantes recebem entre {MINMOOD} e {MAXMOOD} de humor por {MOODDAYS} dias.
+VME_ViolentConversionRitualOutcome.outcomeChances.0.description	O(a) {0} foi constrangedor(a). O discurso se arrastou e virou um bate-boca inútil. As palavras foram vagas e nada convincentes.
+VME_ViolentConversionRitualOutcome.outcomeChances.1.description	O(a) {0} foi satisfatório(a). O discurso foi emocionante e agradável de ouvir.
+VME_ViolentConversionRitualOutcome.outcomeChances.2.description	O(a) {0} foi espetacular! Com certeza nossas crenças prevalecerão sobre quaisquer outras!
+## DefInjected/RitualOutcomeEffectDef/Ritual_Outcomes_WickerManBurning.xml
+VME_WickerManBurningOutcome.description	Um prisioneiro da colônia é trancado numa jaula e incendiado, morrendo no processo. Conforme a qualidade do ritual, os participantes recebem entre {MINMOOD} e {MAXMOOD} de humor por {MOODDAYS} dias.
+VME_WickerManBurningOutcome.outcomeChances.0.description	O(a) {0} foi terrível! O prisioneiro sacudiu a jaula o tempo todo, e cheirava a bacon estragado.
+VME_WickerManBurningOutcome.outcomeChances.1.description	O(a) {0} foi sem graça. O prisioneiro morreu queimado rápido demais, e o fogo nem animou muito a gente.
+VME_WickerManBurningOutcome.outcomeChances.2.description	O(a) {0} foi bom(boa). Os gritos de agonia do prisioneiro vão ecoar em nós por muito tempo, mais uma alma consumida pelas chamas.
+VME_WickerManBurningOutcome.outcomeChances.3.label	Gloriosa
+VME_WickerManBurningOutcome.outcomeChances.3.description	O(a) {0} foi glorioso(a)! Lembraremos para sempre do prisioneiro se debatendo, do crescendo assustado dos gritos enquanto mais uma alma era consumida pelas chamas sagradas.
+## DefInjected/RitualPatternDef/Ritual_Patterns_CeremonialSuicide.xml
+VME_CeremonialSuicideRitual.ritualExpectedDesc	Quando um membro de {IDEO} é derrotado duas vezes em combate honroso contra um inimigo hostil, os outros {MEMBERS} esperam que {RITUAL_labelDef} aconteça para limpar a desonra da colônia.
+## DefInjected/RitualPatternDef/Ritual_Patterns_Incantation.xml
+VME_IncantationPattern.ritualExplanation	O ritual aumenta em 10% a necessidade de corrupção dos participantes. Se a necessidade passar de 100%, eles correm o risco de enlouquecer com os encantamentos sobrenaturais.
+## DefInjected/RitualPatternDef/Ritual_Patterns_LeadershipChallenge.xml
+VME_LeadershipChallengeRitual.ritualExpectedDesc	Um membro de {IDEO} tem mais habilidade corpo a corpo que o líder atual; os outros {MEMBERS} esperam que {RITUAL_labelDef} aconteça para que só o líder mais forte os governe.
+## DefInjected/RitualPatternDef/Ritual_Patterns_SlaveEmancipation.xml
+VME_SlaveEmancipationPattern.ritualExplanation	O ritual emancipa todos os escravos participantes. Conforme o resultado, uma porcentagem crescente dos escravos decide se juntar à colônia ou ir embora.
+## DefInjected/RulePackDef/Interrogate.xml
+VFEA_InterrogationSuccess.rulePack.rulesStrings[0]	sent->[RECIPIENT_nameDef] cedeu.
+## DefInjected/RulePackDef/RulePacks_Deity_Names.xml
+VME_DietyTypeMakerEldritch.rulePack.rulesStrings[0]	r_deityType->Progenitor [concept]
+VME_DietyTypeMakerEldritch.rulePack.rulesStrings[1]	r_deityType->Corruptor [concept]
+VME_DietyTypeMakerEldritch.rulePack.rulesStrings[2]	r_deityType->Ruína [concept]
+VME_DietyTypeMakerEldritch.rulePack.rulesStrings[3]	r_deityType->Inimigo [concept]
+VME_DietyTypeMakerEldritch.rulePack.rulesStrings[4]	r_deityType->Devorador [concept]
+VME_DietyTypeMakerEldritch.rulePack.rulesStrings[5]	r_deityType->Flagelo [concept]
+VME_DietyTypeMakerEldritch.rulePack.rulesStrings[6]	r_deityType->O Incompreensível [concept]
+VME_DietyTypeMakerEldritch.rulePack.rulesStrings[7]	r_deityType->O ruído no centro [concept]
+VME_DietyTypeMakerEldritch.rulePack.rulesStrings[8]	r_deityType->[concept2] [concept3]
+VME_DietyTypeMakerEldritch.rulePack.rulesStrings[9]	concept->de tudo
+VME_DietyTypeMakerEldritch.rulePack.rulesStrings[10]	concept->do todo
+VME_DietyTypeMakerEldritch.rulePack.rulesStrings[11]	concept->do universo
+VME_DietyTypeMakerEldritch.rulePack.rulesStrings[12]	concept->das estrelas
+VME_DietyTypeMakerEldritch.rulePack.rulesStrings[13]	concept->das almas
+VME_DietyTypeMakerEldritch.rulePack.rulesStrings[14]	concept->da humanidade
+VME_DietyTypeMakerEldritch.rulePack.rulesStrings[15]	concept->do espaço
+VME_DietyTypeMakerEldritch.rulePack.rulesStrings[16]	concept->dos nossos sonhos
+VME_DietyTypeMakerEldritch.rulePack.rulesStrings[17]	concept->dos nossos medos mais profundos
+VME_DietyTypeMakerEldritch.rulePack.rulesStrings[18]	concept2->A Cor
+VME_DietyTypeMakerEldritch.rulePack.rulesStrings[19]	concept2->Os Mil Bodes
+VME_DietyTypeMakerEldritch.rulePack.rulesStrings[20]	concept2->A Fome
+VME_DietyTypeMakerEldritch.rulePack.rulesStrings[21]	concept2->A Cintilação
+VME_DietyTypeMakerEldritch.rulePack.rulesStrings[22]	concept2->O Inchaço de Tinta
+VME_DietyTypeMakerEldritch.rulePack.rulesStrings[23]	concept2->A Loucura
+VME_DietyTypeMakerEldritch.rulePack.rulesStrings[24]	concept2->A Insanidade
+VME_DietyTypeMakerEldritch.rulePack.rulesStrings[25]	concept3->do espaço
+VME_DietyTypeMakerEldritch.rulePack.rulesStrings[26]	concept3->das profundezas
+VME_DietyTypeMakerEldritch.rulePack.rulesStrings[27]	concept3->do abismo ctônico
+VME_DietyTypeMakerEldritch.rulePack.rulesStrings[28]	concept3->do Hades
+VME_DietyTypeMakerEldritch.rulePack.rulesStrings[29]	concept3->dos nossos pesadelos
+VME_DietyTypeMakerEldritch.rulePack.rulesStrings[30]	concept3->dos nossos sonhos
+VME_DietyTypeMakerEldritch.rulePack.rulesStrings[31]	concept3->dos nossos medos mais profundos
+VME_NamerCultofPersonality.rulePack.rulesStrings[0]	r_deityName->Nosso Líder Supremo
+VME_NamerCultofPersonality.rulePack.rulesStrings[1]	r_deityName->Líder Supremo
+VME_DietyTypeMakerCultofPersonality.rulePack.rulesStrings[0]	r_deityType->[name1] [name2]
+VME_DietyTypeMakerCultofPersonality.rulePack.rulesStrings[1]	name1->Almirante
+VME_DietyTypeMakerCultofPersonality.rulePack.rulesStrings[2]	name1->Pontífice
+VME_DietyTypeMakerCultofPersonality.rulePack.rulesStrings[3]	name1->Palatino
+VME_DietyTypeMakerCultofPersonality.rulePack.rulesStrings[4]	name1->Imperador
+VME_DietyTypeMakerCultofPersonality.rulePack.rulesStrings[5]	name1->Delegado
+VME_DietyTypeMakerCultofPersonality.rulePack.rulesStrings[6]	name1->Suserano
+VME_DietyTypeMakerCultofPersonality.rulePack.rulesStrings[7]	name1->Presidente
+VME_DietyTypeMakerCultofPersonality.rulePack.rulesStrings[8]	name1->Guardião
+VME_DietyTypeMakerCultofPersonality.rulePack.rulesStrings[9]	name1->Exarca
+VME_DietyTypeMakerCultofPersonality.rulePack.rulesStrings[10]	name2->da Verdade
+VME_DietyTypeMakerCultofPersonality.rulePack.rulesStrings[11]	name2->da Justiça
+VME_DietyTypeMakerCultofPersonality.rulePack.rulesStrings[12]	name2->do Povo
+VME_DietyTypeMakerCultofPersonality.rulePack.rulesStrings[13]	name2->dos Rios
+VME_DietyTypeMakerCultofPersonality.rulePack.rulesStrings[14]	name2->dos Sonhos
+VME_DietyTypeMakerCultofPersonality.rulePack.rulesStrings[15]	name2->da Eternidade
+VME_DietyTypeMakerCultofPersonality.rulePack.rulesStrings[16]	name2->da Adoração
+VME_DietyTypeMakerCultofPersonality.rulePack.rulesStrings[17]	name2->da Misericórdia
+VME_DietyTypeMakerCultofPersonality.rulePack.rulesStrings[18]	name2->da Unidade
+VME_DietyTypeMakerCultofPersonality.rulePack.rulesStrings[19]	name2->do Novo Reino
+VME_DietyTypeMakerCultofPersonality.rulePack.rulesStrings[20]	name2->do Domínio
+VME_NamerPantheism.rulePack.rulesStrings[0]	r_deityName->O Universo
+VME_NamerPantheism.rulePack.rulesStrings[1]	r_deityName->O Cosmos
+VME_NamerPantheism.rulePack.rulesStrings[2]	r_deityName->A Existência
+VME_DietyTypeMakerPantheism.rulePack.rulesStrings[0]	r_deityType->[name2] [name1]
+VME_DietyTypeMakerPantheism.rulePack.rulesStrings[1]	name1->Abrangente
+VME_DietyTypeMakerPantheism.rulePack.rulesStrings[2]	name1->Onipresente
+VME_DietyTypeMakerPantheism.rulePack.rulesStrings[3]	name1->Ubíquo
+VME_DietyTypeMakerPantheism.rulePack.rulesStrings[4]	name1->Universal
+VME_DietyTypeMakerPantheism.rulePack.rulesStrings[5]	name1->Sempre-Presente
+VME_DietyTypeMakerPantheism.rulePack.rulesStrings[6]	name1->Penetrante
+VME_DietyTypeMakerPantheism.rulePack.rulesStrings[7]	name1->Ilimitado
+VME_DietyTypeMakerPantheism.rulePack.rulesStrings[8]	name2->Cosmos
+VME_DietyTypeMakerPantheism.rulePack.rulesStrings[9]	name2->Espaço
+VME_DietyTypeMakerPantheism.rulePack.rulesStrings[10]	name2->Vácuo
+VME_DietyTypeMakerPantheism.rulePack.rulesStrings[11]	name2->Todo
+VME_DietyTypeMakerPantheism.rulePack.rulesStrings[12]	name2->Infinito
+VME_DietyTypeMakerPantheism.rulePack.rulesStrings[13]	name2->Firmamento
+VME_NamerCorporate.rulePack.rulesStrings[0]	r_deityName->A Empresa
+VME_NamerCorporate.rulePack.rulesStrings[1]	r_deityName->O Negócio
+VME_NamerCorporate.rulePack.rulesStrings[2]	r_deityName->A Corporação
+VME_NamerCorporate.rulePack.rulesStrings[3]	r_deityName->A Organização
+## DefInjected/RulePackDef/RulePacks_Ideo_Role.xml
+VME_NamerSecondTriumvir.rulePack.rulesStrings[0]	r_roleName->segundo triúnviro
+VME_NamerThirdTriumvir.rulePack.rulesStrings[0]	r_roleName->terceiro triúnviro
+VME_RoleFireKeeper.rulePack.rulesStrings[0]	r_roleName(p=7)->[secondPart] [firstPart]
+VME_RoleFireKeeper.rulePack.rulesStrings[1]	r_roleName->guardião do fogo
+VME_RoleFireKeeper.rulePack.rulesStrings[2]	r_roleName->guardião da chama
+VME_RoleFireKeeper.rulePack.rulesStrings[3]	firstPart->da chama
+VME_RoleFireKeeper.rulePack.rulesStrings[4]	firstPart->das cinzas
+VME_RoleFireKeeper.rulePack.rulesStrings[5]	firstPart->do fogo
+VME_RoleFireKeeper.rulePack.rulesStrings[6]	firstPart->do calor
+VME_RoleFireKeeper.rulePack.rulesStrings[7]	firstPart->do brilho
+VME_RoleFireKeeper.rulePack.rulesStrings[8]	firstPart->da luz
+VME_RoleFireKeeper.rulePack.rulesStrings[9]	firstPart->do forno
+VME_RoleFireKeeper.rulePack.rulesStrings[10]	firstPart->da forja
+VME_RoleFireKeeper.rulePack.rulesStrings[11]	secondPart(p=4)->ungido
+VME_RoleFireKeeper.rulePack.rulesStrings[12]	secondPart(p=4)->vigia
+VME_RoleFireKeeper.rulePack.rulesStrings[13]	secondPart(p=4)->arauto
+VME_RoleFireKeeper.rulePack.rulesStrings[14]	secondPart(p=4)->protetor
+VME_RoleFireKeeper.rulePack.rulesStrings[15]	secondPart(p=4)->defensor
+VME_RoleFireKeeper.rulePack.rulesStrings[16]	secondPart(p=4)->buscador
+VME_RoleFireKeeper.rulePack.rulesStrings[17]	secondPart(p=4)->sussurrador
+VME_RoleFireKeeper.rulePack.rulesStrings[18]	secondPart(p=4)->guardião
+VME_Mechacker.rulePack.rulesStrings[0]	r_roleName(p=7)->[secondPart] [firstPart]
+VME_Mechacker.rulePack.rulesStrings[1]	r_roleName->Mecahacker
+VME_Mechacker.rulePack.rulesStrings[2]	firstPart->dos Motores
+VME_Mechacker.rulePack.rulesStrings[3]	firstPart->Mecanoide
+VME_Mechacker.rulePack.rulesStrings[4]	firstPart->Biônico
+VME_Mechacker.rulePack.rulesStrings[5]	firstPart->Tecnológico
+VME_Mechacker.rulePack.rulesStrings[6]	firstPart->Eletrônico
+VME_Mechacker.rulePack.rulesStrings[7]	firstPart->Artificial
+VME_Mechacker.rulePack.rulesStrings[8]	firstPart->Científico
+VME_Mechacker.rulePack.rulesStrings[9]	firstPart->Brilhante
+VME_Mechacker.rulePack.rulesStrings[10]	secondPart(p=4)->Vidente das Máquinas
+VME_Mechacker.rulePack.rulesStrings[11]	secondPart(p=4)->Artífice
+VME_Mechacker.rulePack.rulesStrings[12]	secondPart(p=4)->Maquinista
+VME_Mechacker.rulePack.rulesStrings[13]	secondPart(p=4)->Adivinho
+VME_Mechacker.rulePack.rulesStrings[14]	secondPart(p=4)->Projetista
+VME_Mechacker.rulePack.rulesStrings[15]	secondPart(p=4)->Mestre Hacker
+VME_Mechacker.rulePack.rulesStrings[16]	secondPart(p=4)->Mentor
+VME_Mechacker.rulePack.rulesStrings[17]	secondPart(p=4)->Inventor
+VME_PartyHost.rulePack.rulesStrings[0]	r_roleName(p=7)->[secondPart] [firstPart]
+VME_PartyHost.rulePack.rulesStrings[1]	r_roleName->anfitrião de festas
+VME_PartyHost.rulePack.rulesStrings[2]	r_roleName->animal de festa
+VME_PartyHost.rulePack.rulesStrings[3]	firstPart->empolgante
+VME_PartyHost.rulePack.rulesStrings[4]	firstPart->cômico
+VME_PartyHost.rulePack.rulesStrings[5]	firstPart->estimado
+VME_PartyHost.rulePack.rulesStrings[6]	firstPart->hilário
+VME_PartyHost.rulePack.rulesStrings[7]	firstPart->doidão
+VME_PartyHost.rulePack.rulesStrings[8]	firstPart->selvagem
+VME_PartyHost.rulePack.rulesStrings[9]	firstPart->jubiloso
+VME_PartyHost.rulePack.rulesStrings[10]	firstPart->alegre
+VME_PartyHost.rulePack.rulesStrings[11]	secondPart(p=4)->gênio
+VME_PartyHost.rulePack.rulesStrings[12]	secondPart(p=4)->animador
+VME_PartyHost.rulePack.rulesStrings[13]	secondPart(p=4)->anfitrião
+VME_PartyHost.rulePack.rulesStrings[14]	secondPart(p=4)->bobo da corte
+VME_PartyHost.rulePack.rulesStrings[15]	secondPart(p=4)->piadista
+VME_PartyHost.rulePack.rulesStrings[16]	secondPart(p=4)->animal
+VME_PartyHost.rulePack.rulesStrings[17]	secondPart(p=4)->artista
+VME_PartyHost.rulePack.rulesStrings[18]	secondPart(p=4)->comediante
+VME_InsectoidHerder.rulePack.rulesStrings[0]	r_roleName(p=7)->[secondPart] [firstPart]
+VME_InsectoidHerder.rulePack.rulesStrings[1]	r_roleName->Pastor de Insetoides
+VME_InsectoidHerder.rulePack.rulesStrings[2]	firstPart->das Aranhas
+VME_InsectoidHerder.rulePack.rulesStrings[3]	firstPart->dos Vermes
+VME_InsectoidHerder.rulePack.rulesStrings[4]	firstPart->dos Escaravelhos
+VME_InsectoidHerder.rulePack.rulesStrings[5]	firstPart->dos Grilos
+VME_InsectoidHerder.rulePack.rulesStrings[6]	firstPart->dos Carrapatos
+VME_InsectoidHerder.rulePack.rulesStrings[7]	firstPart->das Larvas
+VME_InsectoidHerder.rulePack.rulesStrings[8]	firstPart->dos Besouros
+VME_InsectoidHerder.rulePack.rulesStrings[9]	firstPart->dos Gafanhotos
+VME_InsectoidHerder.rulePack.rulesStrings[10]	secondPart(p=4)->Colhedor
+VME_InsectoidHerder.rulePack.rulesStrings[11]	secondPart(p=4)->Tratador
+VME_InsectoidHerder.rulePack.rulesStrings[12]	secondPart(p=4)->Irmão de Ninhada
+VME_InsectoidHerder.rulePack.rulesStrings[13]	secondPart(p=4)->Devoto
+VME_InsectoidHerder.rulePack.rulesStrings[14]	secondPart(p=4)->Psíquico da Colmeia
+VME_InsectoidHerder.rulePack.rulesStrings[15]	secondPart(p=4)->Comandante da Colmeia
+VME_InsectoidHerder.rulePack.rulesStrings[16]	secondPart(p=4)->Cria da Colmeia
+VME_InsectoidHerder.rulePack.rulesStrings[17]	secondPart(p=4)->Escravo da Colmeia
+VME_Trader.rulePack.rulesStrings[0]	r_roleName(p=7)->[secondPart] [firstPart]
+VME_Trader.rulePack.rulesStrings[1]	r_roleName->Comerciante
+VME_Trader.rulePack.rulesStrings[2]	firstPart->Generoso
+VME_Trader.rulePack.rulesStrings[3]	firstPart->Itinerante
+VME_Trader.rulePack.rulesStrings[4]	firstPart->Inescrupuloso
+VME_Trader.rulePack.rulesStrings[5]	firstPart->Respeitável
+VME_Trader.rulePack.rulesStrings[6]	firstPart->Abastado
+VME_Trader.rulePack.rulesStrings[7]	firstPart->Próspero
+VME_Trader.rulePack.rulesStrings[8]	firstPart->Opulento
+VME_Trader.rulePack.rulesStrings[9]	firstPart->Rico
+VME_Trader.rulePack.rulesStrings[10]	secondPart(p=4)->Mercador
+VME_Trader.rulePack.rulesStrings[11]	secondPart(p=4)->Operador
+VME_Trader.rulePack.rulesStrings[12]	secondPart(p=4)->Vendedor
+VME_Trader.rulePack.rulesStrings[13]	secondPart(p=4)->Lojista
+VME_Trader.rulePack.rulesStrings[14]	secondPart(p=4)->Ambulante
+VME_Trader.rulePack.rulesStrings[15]	secondPart(p=4)->Corretor
+VME_Trader.rulePack.rulesStrings[16]	secondPart(p=4)->Atacadista
+VME_Trader.rulePack.rulesStrings[17]	secondPart(p=4)->Representante
+VME_Patissier.rulePack.rulesStrings[0]	r_roleName(p=7)->[secondPart] [firstPart]
+VME_Patissier.rulePack.rulesStrings[1]	r_roleName->Pâtissier
+VME_Patissier.rulePack.rulesStrings[2]	firstPart->Habilidoso
+VME_Patissier.rulePack.rulesStrings[3]	firstPart->Consagrado
+VME_Patissier.rulePack.rulesStrings[4]	firstPart->Talentoso
+VME_Patissier.rulePack.rulesStrings[5]	firstPart->Primoroso
+VME_Patissier.rulePack.rulesStrings[6]	firstPart->Experiente
+VME_Patissier.rulePack.rulesStrings[7]	firstPart->Magistral
+VME_Patissier.rulePack.rulesStrings[8]	secondPart(p=4)->Culinarista
+VME_Patissier.rulePack.rulesStrings[9]	secondPart(p=4)->Epicurista
+VME_Patissier.rulePack.rulesStrings[10]	secondPart(p=4)->Padeiro
+VME_Patissier.rulePack.rulesStrings[11]	secondPart(p=4)->Pâtissier
+VME_Patissier.rulePack.rulesStrings[12]	secondPart(p=4)->Banqueteiro
+VME_Patissier.rulePack.rulesStrings[13]	secondPart(p=4)->Sorveteiro
+VME_Patissier.rulePack.rulesStrings[14]	secondPart(p=4)->Confeiteiro
+VME_Commissar.rulePack.rulesStrings[0]	r_roleName->Comissário
+VME_Fleshcrafter.rulePack.rulesStrings[0]	r_roleName->Carnemoldador
+VME_Nurse.rulePack.rulesStrings[0]	r_roleName->Enfermeiro
+VME_Majordomo.rulePack.rulesStrings[0]	r_roleName->Mordomo-mor
+## DefInjected/StyleCategoryDef/StyleCategoryDefs.xml
+VME_Serketist.label	serketista
+VME_Corporate.label	corporativo
+VME_Authoritarian.label	autoritário
+VME_Shintaoism.label	shintaoísta
+VME_Esotericism.label	esotérico
+VME_Hedonist.label	hedonista
+VME_Eschatological.label	escatológico
+VME_CultOfPersonality.label	culto à personalidade
+VME_Pantheist.label	panteísta
+VME_Omnist.label	omnista
+VME_Agnostic.label	agnóstico
+VME_SecularSpirituality.label	espiritualidade secular

@@ -1,0 +1,144 @@
+{
+ "faction": "EQ_Faction_Forja",
+ "replaceExisting": true,
+ "units": [
+  {
+   "id": "Recruta",
+   "label": "Recruta",
+   "labelPlural": "",
+   "role": "combatente",
+   "points": 60,
+   "status": "rascunho",
+   "groups": {
+    "Combat": 5,
+    "Settlement": 5
+   },
+   "xenos": {
+    "EQ_Xeno_Graxeiro": 2,
+    "EQ_Xeno_Vagante": 1
+   },
+   "kits": [
+    "Irmandade_Recruta"
+   ],
+   "notes": "Recruta é a unidade militar mais basica da Irmandade da Forja",
+   "minAge": 18,
+   "maxAge": 20
+  },
+  {
+   "id": "Soldado",
+   "label": "Soldado",
+   "labelPlural": "",
+   "role": "combatente",
+   "points": 60,
+   "status": "rascunho",
+   "groups": {
+    "Combat": 5,
+    "Settlement": 5
+   },
+   "xenos": {
+    "EQ_Xeno_Graxeiro": 2,
+    "EQ_Xeno_Vagante": 1
+   },
+   "kits": [
+    "Irmandade_Soldado"
+   ],
+   "notes": "Soldado é a principal tropa usada para combates, pela Irmandade da Forja"
+  },
+  {
+   "id": "Cavaleiro",
+   "label": "Cavaleiro",
+   "labelPlural": "",
+   "role": "combatente",
+   "points": 60,
+   "status": "rascunho",
+   "groups": {
+    "Combat": 5,
+    "Settlement": 5
+   },
+   "xenos": {
+    "EQ_Xeno_Cavaleiro": 1
+   },
+   "kits": [
+    "Irmandade_Cavaleiro"
+   ],
+   "notes": "O Cavaleiro é a principal Undade de combate armadurado da Irmandade da Forja"
+  },
+  {
+   "id": "Fuzileiro",
+   "label": "Fuzileiro",
+   "labelPlural": "",
+   "role": "combatente",
+   "points": 60,
+   "status": "rascunho",
+   "groups": {
+    "Combat": 5,
+    "Settlement": 5
+   },
+   "xenos": {
+    "EQ_Xeno_Graxeiro": 2,
+    "EQ_Xeno_Vagante": 1
+   },
+   "kits": [
+    "Irmandade_Fuzileiro"
+   ],
+   "notes": "Os fuzileiros são as unidades de elite da Irmandade da Forja"
+  },
+  {
+   "id": "Paladino",
+   "label": "Paladino",
+   "labelPlural": "",
+   "role": "combatente",
+   "points": 60,
+   "status": "rascunho",
+   "groups": {
+    "Combat": 5,
+    "Settlement": 5
+   },
+   "xenos": {
+    "EQ_Xeno_Cavaleiro": 1
+   },
+   "kits": [
+    "Irmandade_Paladino"
+   ],
+   "notes": "Unidade Armadurada de Elite com alta capacidade de combate"
+  },
+  {
+   "id": "Gauss",
+   "label": "Gauss",
+   "labelPlural": "",
+   "role": "combatente",
+   "points": 60,
+   "status": "rascunho",
+   "groups": {
+    "Combat": 5,
+    "Settlement": 5
+   },
+   "xenos": {
+    "EQ_Xeno_Graxeiro": 2,
+    "EQ_Xeno_Vagante": 1
+   },
+   "kits": [
+    "Irmandade_Gauss"
+   ],
+   "notes": "Unidade Especial da Irmandade da Forja que utiliza a  tecnologia avançada de canhões eletricos (gauss) como seu equipamento militar."
+  },
+  {
+   "id": "Guardiao",
+   "label": "Guardiao",
+   "labelPlural": "",
+   "role": "combatente",
+   "points": 60,
+   "status": "rascunho",
+   "groups": {
+    "Settlement": 5
+   },
+   "xenos": {
+    "EQ_Xeno_EngenheiroPrimaz": 1
+   },
+   "kits": [
+    "Irmandade_Guardiao"
+   ],
+   "notes": "São a elite da elite dentro da Irmandade da Forja eles protegem diretametne o lider, e a capital."
+  }
+ ]
+}

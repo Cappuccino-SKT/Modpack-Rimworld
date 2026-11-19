@@ -1,0 +1,180 @@
+## DefInjected/MemeDef/Memes_Misc.xml
+VME_Gestalt.descriptionMaker.rules.rulesStrings[18]	eschatologismFact(tag=meme_Gestalt)->Uniremos nossas mentes numa harmonia de propósito e pensamento; sem indecisão, sem dúvidas. Um só propósito, uma só vontade: destruir.
+VME_Gestalt.descriptionMaker.rules.rulesStrings[19]	introMemo(tag=meme_Gestalt)->Correm boatos desagradáveis sobre um prêmio de "valorização do colaborador". Lembro que nesta Empresa todos agimos como Um. Buscamos uma harmonia de propósito e pensamento; sem indecisão, sem dúvidas; a segurança e a força de uma vontade unificada. É isso que nossos clientes querem, é isso que nossos clientes MERECEM.
+VME_Gestalt.descriptionMaker.rules.rulesStrings[20]	alienistProphecy(tag=meme_Gestalt)->Se tivermos de julgar se todas essas criações geneticamente modificadas são boas ou más, faremos isso juntos.
+VME_Gestalt.generalRules.rulesStrings[1]	memeAdjective->amalgamado(a)
+VME_Gestalt.generalRules.rulesStrings[2]	memeAdjective->colmeal
+VME_Gestalt.generalRules.rulesStrings[3]	memeAdjective->coalescente
+VME_Gestalt.generalRules.rulesStrings[4]	memeAdjective->agregado(a)
+VME_Gestalt.generalRules.rulesStrings[6]	memeCreed->colmeia
+VME_Gestalt.generalRules.rulesStrings[7]	memeConcept->unidade total
+VME_Gestalt.generalRules.rulesStrings[8]	memeLeaderNoun->muitos-em-um
+VME_Gestalt.generalRules.rulesStrings[9]	memeLeaderNoun->enxame
+VME_Gestalt.symbolPacks.0.adjective	gestáltico
+VME_Gestalt.symbolPacks.0.ideoName	Gestalt
+VME_Gestalt.symbolPacks.0.member	extensão
+VME_Gestalt.symbolPacks.0.theme	mente de colmeia
+VME_Fleshcrafters.label	carnemoldagem
+VME_Fleshcrafters.description	Só com experimentos biológicos extremos podemos liberar nosso potencial escondido.
+VME_Fleshcrafters.descriptionMaker.rules.rulesStrings[0]	creation(tag=meme_Fleshcrafting)        ->[deity0_name] nos concedeu o conhecimento da carnemoldagem, para que possamos usá-lo para nos melhorar e nos refazer à sua imagem perfeita.
+VME_Fleshcrafters.descriptionMaker.rules.rulesStrings[1]	episode(uses=1,tag=meme_Fleshcrafting)  ->Biomodeladores humanos estudaram as obras de [deity0_name], o que o(a) agradou.
+VME_Fleshcrafters.descriptionMaker.rules.rulesStrings[2]	intro(tag=meme_Fleshcrafting)           ->Em [place_summary] [place_name], os [memberNamePlural] encontraram as palavras de [deity0_name] gravadas na carne trêmula e mutante de uma gigantesca criatura espacial.
+VME_Fleshcrafters.descriptionMaker.rules.rulesStrings[3]	conflict(tag=meme_Fleshcrafting)        ->Um(a) [foeLeader] tecnologista invejou o progresso aprimorado dos [memberNamePlural], e seus [foeSoldiers] destruíram os tanques de carne deles com [place_personalWeapon]s.
+VME_Fleshcrafters.descriptionMaker.rules.rulesStrings[4]	founderJoin(tag=meme_Fleshcrafting)     ->Um(a) astuto(a) [place_job] chamado(a) [founderName] fez as próprias cordas vocais sofrerem mutação para avisar os [memberNamePlural] da chegada dos [foeSoldiers].
+VME_Fleshcrafters.descriptionMaker.rules.rulesStrings[5]	victory(tag=meme_Fleshcrafting)         ->[founderName] recebeu de [deity0_name] o conhecimento divino da carnemoldagem e o usou para aprimorar os corpos e as mentes dos [memberNamePlural], para que derrotassem os [foeSoldiers].
+VME_Fleshcrafters.descriptionMaker.rules.rulesStrings[6]	setup(tag=meme_Fleshcrafting)           ->[founderName] foi um(a) biocientista nos primeiros dias da colonização planetária humana. Vendo as restrições éticas absurdas das colônias comuns, [founder_pronoun] pegou uma pequena nave para fundar seu próprio movimento.
+VME_Fleshcrafters.descriptionMaker.rules.rulesStrings[7]	story(uses=1,tag=meme_Fleshcrafting)    ->[founderName] reuniu uma equipe de grandes carnemoldadores e geneticistas para redefinir a humanidade.
+VME_Fleshcrafters.descriptionMaker.rules.rulesStrings[8]	lessonIntro(tag=meme_Fleshcrafting)         ->O modelador mais antigo da minha divisão me ensinou a história da carnemoldagem, como os experimentos genéticos em humanos sempre foram vistos com medo, mas essa não era sua verdadeira lição. Ele estava, na verdade, me levando a entender que
+VME_Fleshcrafters.descriptionMaker.rules.rulesStrings[9]	lesson(tag=meme_Fleshcrafting)              ->a carne humana não passa de uma tela. Uma tela branca e vazia esperando para ser preenchida
+VME_Fleshcrafters.descriptionMaker.rules.rulesStrings[10]	lessonReinforcement(tag=meme_Fleshcrafting) ->E qualquer limite imposto ao artista só serve para estragar o resultado final da sua arte.
+VME_Fleshcrafters.descriptionMaker.rules.rulesStrings[11]	archistBasis(tag=meme_Fleshcrafting)    ->A busca da humanidade pela tecnologia deu origem aos arquotécnicos todo-poderosos como o próximo passo legítimo no desenvolvimento da consciência.
+VME_Fleshcrafters.descriptionMaker.rules.rulesStrings[12]	archistFact(tag=meme_Fleshcrafting)     ->A carnemoldagem nos ensina que a tecnologia sozinha é desumana se não vier acompanhada da mão guia da evolução biológica.
+VME_Fleshcrafters.descriptionMaker.rules.rulesStrings[13]	archistProphecy(tag=meme_Fleshcrafting) ->[inTheEnd], modificaremos nossos próprios corpos e os entrelaçaremos com os arquotécnicos.
+VME_Fleshcrafters.descriptionMaker.rules.rulesStrings[14]	animistBasis(tag=meme_Fleshcrafting)    ->O mundo espiritual move cada ação do universo, e a carne mortal é só mais uma manifestação dele.
+VME_Fleshcrafters.descriptionMaker.rules.rulesStrings[15]	animistFact(tag=meme_Fleshcrafting)     ->Modificaremos nossos próprios corpos até que sejam recipientes dignos dos espíritos.
+VME_Fleshcrafters.descriptionMaker.rules.rulesStrings[16]	animistFact(tag=meme_Fleshcrafting)     ->Quando os espíritos se fundirem à nossa carne, ambos se combinarão e ficarão mais poderosos.
+VME_Fleshcrafters.descriptionMaker.rules.rulesStrings[17]	animistProphecy(tag=meme_Fleshcrafting) ->[itIsSaid] que um dia o portador do(a) [relic0_name] invocará seu espírito, que ensinará à humanidade a dádiva suprema da carnemoldagem.
+VME_Fleshcrafters.descriptionMaker.rules.rulesStrings[18]	serketistProphecy(tag=meme_Fleshcrafting)->[itIsSaid] com a tecnologia certa moldaremos nossos corpos para serem como os dos insetos. Duras e imutáveis, nossas novas formas estridulantes estarão o mais perto possível da perfeição.
+VME_Fleshcrafters.descriptionMaker.rules.rulesStrings[19]	chthonianProphecy(tag=meme_Fleshcrafting)->Nossos corpos humanos não vão aguentar a loucura e a insanidade cósmica trazidas por essas entidades: precisamos moldar nossas formas além do imaginável para que resistam ao ataque delas.
+VME_Fleshcrafters.descriptionMaker.rules.rulesStrings[20]	esotericismProphecy(tag=meme_Fleshcrafting)->Moldando nossos corpos, ganharemos uma visão inestimável dos segredos do Cosmos.
+VME_Fleshcrafters.descriptionMaker.rules.rulesStrings[21]	eschatologismFact(tag=meme_Fleshcrafting)->Moldaremos nossos corpos, contorcendo-os em formas de pesadelo que trarão o fim de todas as coisas.
+VME_Fleshcrafters.descriptionMaker.rules.rulesStrings[22]	introMemo(tag=meme_Fleshcrafting)->A política da empresa sobre automutilação e carnemoldagem é clara como cristal: se ajudar no resultado, vá em frente. Só limpem a sala de reuniões depois, por favor.
+VME_Fleshcrafters.descriptionMaker.rules.rulesStrings[23]	alienistProphecy(tag=meme_Fleshcrafting)->Todas essas criações desgarradas da humanidade nos dão uma fartura infinita de carne para nossos experimentos.
+VME_Fleshcrafters.generalRules.rulesStrings[0]	memeAdjective->biotecnológico(a)
+VME_Fleshcrafters.generalRules.rulesStrings[1]	memeAdjective->aberrante
+VME_Fleshcrafters.generalRules.rulesStrings[3]	memeAdjective->carnemoldado(a)
+VME_Fleshcrafters.generalRules.rulesStrings[4]	memeAdjective->mutante
+VME_Fleshcrafters.generalRules.rulesStrings[5]	memeCreed->modificação
+VME_Fleshcrafters.generalRules.rulesStrings[6]	memeCreed->mutação
+VME_Fleshcrafters.generalRules.rulesStrings[7]	memeHyphenPrefix->bio
+VME_Fleshcrafters.generalRules.rulesStrings[8]	memeHyphenPrefix->biomecânico
+VME_Fleshcrafters.generalRules.rulesStrings[10]	memeLeaderNoun->moldador de carne
+VME_Fleshcrafters.generalRules.rulesStrings[11]	memeLeaderNoun->supermutante
+VME_Fleshcrafters.generalRules.rulesStrings[12]	memeLeaderNoun->modelador
+VME_Fleshcrafters.generalRules.rulesStrings[13]	memeLeaderAdjective->bio
+VME_Fleshcrafters.generalRules.rulesStrings[14]	memeMoralist->artesão
+VME_Fleshcrafters.generalRules.rulesStrings[15]	memeMoralist->mutador
+VME_Fleshcrafters.symbolPacks.0.adjective	biotecnologista
+VME_Fleshcrafters.symbolPacks.0.ideoName	Biotecnologismo
+VME_Fleshcrafters.symbolPacks.0.member	biotecnologista
+VME_Fleshcrafters.symbolPacks.0.theme	biotecnologia
+VME_Fleshcrafters.symbolPacks.1.ideoName	Carnemoldagem
+VME_Fleshcrafters.symbolPacks.1.theme	carnemoldagem
+VME_Fleshcrafters.symbolPacks.2.adjective	modelador
+VME_Fleshcrafters.symbolPacks.2.ideoName	Modelagem
+VME_Fleshcrafters.symbolPacks.2.theme	modelagem
+VME_HolyDiseases.label	doenças sagradas
+VME_HolyDiseases.description	A doença é uma bênção e deve ser vista como um presente.
+VME_HolyDiseases.descriptionMaker.rules.rulesStrings[0]	creation(tag=meme_HolyDiseases)        ->[deity0_name] encheu o Universo de todo tipo de vírus e bactéria, organismos minúsculos que carregam suas dádivas.
+VME_HolyDiseases.descriptionMaker.rules.rulesStrings[1]	episode(uses=1,tag=meme_HolyDiseases)  ->Aceitamos a generosidade de [deity0_name], oferecendo nossos corpos como recipientes de suas incontáveis doenças, o que o(a) agradou.
+VME_HolyDiseases.descriptionMaker.rules.rulesStrings[2]	intro(tag=meme_HolyDiseases)           ->Em [place_summary] [place_name], os [memberNamePlural] encontraram uma tumba selada com um enorme símbolo sagrado de [deity0_name].
+VME_HolyDiseases.descriptionMaker.rules.rulesStrings[3]	conflict(tag=meme_HolyDiseases)        ->Um arqueólogo guiou os [memberNamePlural] na abertura da tumba antiga, e dentro dela acharam os arquivos microbiológicos de uma civilização perdida havia muito: uma panóplia de doenças contagiosas como o mundo não via há milênios.
+VME_HolyDiseases.descriptionMaker.rules.rulesStrings[4]	founderJoin(tag=meme_HolyDiseases)     ->Um(a) sacerdote(isa) muito reverenciado(a) chamado(a) [founderName] se infectou com uma das doenças do arquivo, mostrando aos [memberNamePlural] que elas eram, na verdade, um presente de [deity0_name].
+VME_HolyDiseases.descriptionMaker.rules.rulesStrings[5]	victory(tag=meme_HolyDiseases)         ->[founderName] recebeu a bênção de [deity0_name], e até hoje oferecemos nossos corpos como recipientes de suas incontáveis doenças.
+VME_HolyDiseases.descriptionMaker.rules.rulesStrings[6]	setup(tag=meme_HolyDiseases)           ->[founderName] foi um(a) biocientista nos primeiros dias da colonização planetária humana. Vendo o comportamento mole e acomodado das colônias, [founder_pronoun] pegou uma pequena nave para fundar seu próprio movimento.
+VME_HolyDiseases.descriptionMaker.rules.rulesStrings[7]	story(uses=1,tag=meme_HolyDiseases)    ->[founderName] reuniu uma equipe de grandes geneticistas para modificar o corpo humano, tornando-o mais resistente às doenças ao infectar aos poucos corpos saudáveis com elas.
+VME_HolyDiseases.descriptionMaker.rules.rulesStrings[8]	lessonIntro(tag=meme_HolyDiseases)         ->O médico mais velho do meu hospital me ensinou a história das doenças, como a humanidade sempre temeu a doença e a morte. Ele estava, na verdade, me levando a entender que
+VME_HolyDiseases.descriptionMaker.rules.rulesStrings[9]	lesson(tag=meme_HolyDiseases)              ->os microrganismos também fazem parte da natureza, e ao não abraçar a doença só nos tornamos mais fracos diante dela
+VME_HolyDiseases.descriptionMaker.rules.rulesStrings[10]	lessonReinforcement(tag=meme_HolyDiseases) ->Só aceitando a doença como parte integral da vida podemos realizar de verdade nosso potencial.
+VME_HolyDiseases.descriptionMaker.rules.rulesStrings[11]	archistBasis(tag=meme_HolyDiseases)    ->Já que somos como micróbios insignificantes para os arquotécnicos, precisamos nos perguntar: queremos ser tratados como os micróbios costumam ser?
+VME_HolyDiseases.descriptionMaker.rules.rulesStrings[12]	archistFact(tag=meme_HolyDiseases)     ->Se os arquotécnicos nos tratassem como tratamos as criaturas que nos parecem insignificantes, já teriam nos varrido da existência há muito tempo.
+VME_HolyDiseases.descriptionMaker.rules.rulesStrings[13]	archistProphecy(tag=meme_HolyDiseases) ->Por isso, é lógico tratar as doenças como gostaríamos de ser tratados por entidades que estão tão acima de nós na escala evolutiva quanto estamos acima dos microrganismos.
+VME_HolyDiseases.descriptionMaker.rules.rulesStrings[14]	animistBasis(tag=meme_HolyDiseases)    ->No mundo dos espíritos, tudo tem uma entidade correspondente que o guarda e o protege.
+VME_HolyDiseases.descriptionMaker.rules.rulesStrings[15]	animistFact(tag=meme_HolyDiseases)     ->É lógico que até os seres mais insignificantes e minúsculos também tenham um espírito correspondente.
+VME_HolyDiseases.descriptionMaker.rules.rulesStrings[16]	animistProphecy(tag=meme_HolyDiseases) ->Oferecendo nossos corpos mortais como recipientes para os espíritos da doença, garantiremos estar sempre nas boas graças deles.
+VME_HolyDiseases.descriptionMaker.rules.rulesStrings[17]	serketistProphecy(tag=meme_HolyDiseases)->[itIsSaid] as maiores pragas descerão sobre nós trazidas por insetos temíveis, e as abraçaremos com alegria, pois seu toque será sagrado e reinará supremo.
+VME_HolyDiseases.descriptionMaker.rules.rulesStrings[18]	chthonianProphecy(tag=meme_HolyDiseases)->Só submetendo nossos corpos mortais às doenças mais perigosas fortaleceremos a mente para resistir ao ataque dessas entidades extranormais completamente insanas.
+VME_HolyDiseases.descriptionMaker.rules.rulesStrings[19]	esotericismProphecy(tag=meme_HolyDiseases)->Acreditamos que, pelo sofrimento das doenças que corrompem a carne, concentraremos a mente para decifrar os maiores segredos.
+VME_HolyDiseases.descriptionMaker.rules.rulesStrings[20]	eschatologismFact(tag=meme_HolyDiseases)->Haverá quatro sinais do Apocalipse iminente: Peste, Fome, Guerra e Morte, e abraçaremos o primeiro cavaleiro com alegria.
+VME_HolyDiseases.descriptionMaker.rules.rulesStrings[21]	introMemo(tag=meme_HolyDiseases)->Quanto à licença médica remunerada, a empresa não se opõe, desde que vocês trabalhem de casa, e trabalhem mais. Uns graus de febre nunca mataram ninguém! E se mataram, foi a serviço da empresa, então no fim deu tudo certo! Pensem de forma proativa!
+VME_HolyDiseases.descriptionMaker.rules.rulesStrings[22]	alienistProphecy(tag=meme_HolyDiseases)->Todas essas criações desgarradas da humanidade nos dão um reservatório infinito de doenças sagradas, uma cornucópia de pragas.
+VME_HolyDiseases.generalRules.rulesStrings[0]	memeAdjective->doente
+VME_HolyDiseases.generalRules.rulesStrings[1]	memeAdjective->enfermo(a)
+VME_HolyDiseases.generalRules.rulesStrings[2]	memeAdjective->adoentado(a)
+VME_HolyDiseases.generalRules.rulesStrings[3]	memeAdjective->achacado(a)
+VME_HolyDiseases.generalRules.rulesStrings[4]	memeAdjective->mórbido(a)
+VME_HolyDiseases.generalRules.rulesStrings[5]	memeHyphenPrefix->pesti
+VME_HolyDiseases.generalRules.rulesStrings[6]	memeConcept->doença
+VME_HolyDiseases.generalRules.rulesStrings[7]	memeConcept->enfermidade
+VME_HolyDiseases.generalRules.rulesStrings[8]	memeLeaderNoun->purulento
+VME_HolyDiseases.generalRules.rulesStrings[9]	memeLeaderNoun->arauto de Esculápio
+VME_HolyDiseases.generalRules.rulesStrings[10]	memeLeaderNoun->portador da peste
+VME_HolyDiseases.generalRules.rulesStrings[11]	memeMoralist->médico da peste
+VME_HolyDiseases.symbolPacks.0.adjective	pestífero
+VME_HolyDiseases.symbolPacks.0.ideoName	Pestiferismo
+VME_HolyDiseases.symbolPacks.0.theme	peste
+VME_HolyDiseases.symbolPacks.1.adjective	doente
+VME_HolyDiseases.symbolPacks.1.ideoName	Enfermidade
+VME_HolyDiseases.symbolPacks.1.member	enfermo
+VME_HolyDiseases.symbolPacks.1.theme	doença
+VME_CraftCulture.label	cultura artesã
+VME_CraftCulture.description	A fabricação é parte essencial da nossa cultura, e a tratamos com grande respeito.
+VME_CraftCulture.descriptionMaker.rules.rulesStrings[0]	creation(tag=meme_CraftCulture)        ->[deity0_name] é o(a) Grande Artífice; criou o Universo e moldou os primeiros humanos do barro primordial.
+VME_CraftCulture.descriptionMaker.rules.rulesStrings[1]	episode(uses=1,tag=meme_CraftCulture)  ->[deity0_name] disse a todos os [memberNamePlural]: "Não há dom maior que o Fazer, pois assim seguis meus passos."
+VME_CraftCulture.descriptionMaker.rules.rulesStrings[2]	intro(tag=meme_CraftCulture)           ->Os [memberNamePlural] fizeram um(a) grande [altarName] em [place_summary] [place_name], um monumento à glória de [deity0_name] e um testemunho da habilidade dos nossos artesãos.
+VME_CraftCulture.descriptionMaker.rules.rulesStrings[3]	conflict(tag=meme_CraftCulture)        ->Um(a) [foeLeader] covarde, querendo negar a obra de [deity0_name], tentou destruir as criações dos [memberNamePlural].
+VME_CraftCulture.descriptionMaker.rules.rulesStrings[4]	founderJoin(tag=meme_CraftCulture)     ->[deity0_name] abençoou [founderName] com uma relíquia artesanal maravilhosa, o(a) [relic0_name], que lhe permitiu consertar e remendar o estrago feito pelo(a) [foeLeader] antes que fosse tarde.
+VME_CraftCulture.descriptionMaker.rules.rulesStrings[5]	victory(tag=meme_CraftCulture)         ->[founderName] olhou para o(a) [foeLeader] exausto(a) à sua frente, com um sorriso de canto: "Tolo, você não pode destruir as criações dos seguidores de [deity0_name], pois somos abençoados por sua destreza, e nossas invenções também."
+VME_CraftCulture.descriptionMaker.rules.rulesStrings[6]	setup(tag=meme_CraftCulture)           ->Nosso(a) fundador(a), [founderName], foi um(a) grande artesão(ã); não havia arte ou máquina além da capacidade de suas mãos.
+VME_CraftCulture.descriptionMaker.rules.rulesStrings[7]	story(uses=1,tag=meme_CraftCulture)    ->Seus seguidores passaram a amar e valorizar suas técnicas e suas criações primorosas.
+VME_CraftCulture.descriptionMaker.rules.rulesStrings[8]	lessonIntro(tag=meme_CraftCulture)         ->Em todos os meus anos criando invenções maravilhosas, aprendi uma lição acima de todas:
+VME_CraftCulture.descriptionMaker.rules.rulesStrings[9]	lesson(tag=meme_CraftCulture)              ->só criando podemos imprimir nossa alma neste Universo indiferente
+VME_CraftCulture.descriptionMaker.rules.rulesStrings[10]	lessonReinforcement(tag=meme_CraftCulture) ->Ninguém vai se importar com você depois de morto, mas você continuará vivo enquanto alguém puder olhar o que você criou e se alegrar.
+VME_CraftCulture.descriptionMaker.rules.rulesStrings[11]	archistBasis(tag=meme_CraftCulture)    ->Os arquotécnicos não são um fenômeno natural do Universo. Foram criados, foram fabricados. E por mãos humanas.
+VME_CraftCulture.descriptionMaker.rules.rulesStrings[12]	archistFact(tag=meme_CraftCulture)     ->Os arquotécnicos são sábios além de toda razão, e sua sabedoria deve ter sido semeada desde o momento da criação.
+VME_CraftCulture.descriptionMaker.rules.rulesStrings[13]	archistProphecy(tag=meme_CraftCulture) ->[inTheEnd], fabricando e aperfeiçoando criações tão maravilhosas quanto o(a) poderoso(a) [relic0_name], seremos tão hábeis quanto os criadores esquecidos que desvendaram os segredos da arquotecnologia.
+VME_CraftCulture.descriptionMaker.rules.rulesStrings[14]	animistFact(tag=meme_CraftCulture)     ->Os espíritos precisam de um recipiente para se manifestar no mundo material, e criando invenções maravilhosas poderemos lhes dar um receptáculo adequado.
+VME_CraftCulture.descriptionMaker.rules.rulesStrings[15]	serketistProphecy(tag=meme_CraftCulture)->[itIsSaid] imitando a diligência dos insetos, fabricaremos e criaremos milhares de invenções poderosas e maravilhosas.
+VME_CraftCulture.descriptionMaker.rules.rulesStrings[16]	chthonianProphecy(tag=meme_CraftCulture)->Talvez só uma invenção arcana de origem sobrenatural possa nos proteger dessa insanidade. Fabricaremos nosso caminho até a salvação.
+VME_CraftCulture.descriptionMaker.rules.rulesStrings[17]	esotericismProphecy(tag=meme_CraftCulture)->Estudando os mecanismos de criações maravilhosas, talvez desvendemos alguns desses segredos antigos e possamos contemplar o desconhecido.
+VME_CraftCulture.descriptionMaker.rules.rulesStrings[18]	eschatologismFact(tag=meme_CraftCulture)->Guardem minhas palavras: o mundo vai acabar, e seremos os artesãos da sua ruína.
+VME_CraftCulture.descriptionMaker.rules.rulesStrings[19]	introMemo(tag=meme_CraftCulture)->A partir da próxima terça, teremos cotas de produção em cada bancada. Lembrem que se afastar demais dessas cotas pode resultar em advertência imediata da Alta Gerência. Pessoal, isto aqui não é caridade, estamos aqui para PRODUZIR.
+VME_CraftCulture.descriptionMaker.rules.rulesStrings[20]	alienistProphecy(tag=meme_CraftCulture)->Todas essas criações desgarradas da humanidade nos dão inspiração infinita para nossas próprias criações.
+VME_CraftCulture.generalRules.rulesStrings[0]	memeAdjective->artífice
+VME_CraftCulture.generalRules.rulesStrings[1]	memeAdjective->artesanal
+VME_CraftCulture.generalRules.rulesStrings[2]	memeAdjective->forjador(a)
+VME_CraftCulture.generalRules.rulesStrings[3]	memeAdjective->fazedor(a)
+VME_CraftCulture.generalRules.rulesStrings[4]	memeHyphenPrefix->arte
+VME_CraftCulture.generalRules.rulesStrings[5]	memeConcept->artesanato
+VME_CraftCulture.generalRules.rulesStrings[6]	memeLeaderNoun->grão-artífice
+VME_CraftCulture.generalRules.rulesStrings[7]	memeMoralist->funileiro
+VME_CraftCulture.generalRules.rulesStrings[8]	memeMoralist->artesão
+VME_CraftCulture.symbolPacks.0.ideoName	Artesanato
+VME_CraftCulture.symbolPacks.1.adjective	fazedor
+VME_CraftCulture.symbolPacks.1.ideoName	Fazer
+VME_CraftCulture.symbolPacks.1.member	fazedor
+VME_CraftCulture.symbolPacks.1.theme	fazer
+VME_CraftCulture.symbolPacks.2.adjective	artificial
+VME_CraftCulture.symbolPacks.2.ideoName	Artifício
+VME_CraftCulture.symbolPacks.2.theme	artifício
+VME_CraftCulture.symbolPacks.3.adjective	funileiro
+VME_CraftCulture.symbolPacks.3.ideoName	Funilaria
+VME_CraftCulture.symbolPacks.3.theme	funilaria
+VME_Progressive.description	Devemos usar a automação no trabalho; pessoas não devem fazer trabalho que normalmente é de máquina.
+VME_Progressive.descriptionMaker.rules.rulesStrings[0]	creation(tag=meme_Progressive)        ->[deity0_name] viu os [memberNamePlural] penando com suas máquinas e riu deles com bom humor: "Não dei a vocês as ferramentas para fazer as máquinas trabalharem por vocês? Não faz sentido penar."
+VME_Progressive.descriptionMaker.rules.rulesStrings[1]	episode(uses=1,tag=meme_Progressive)  ->[deity0_name] disse a todos os [memberNamePlural]: "O trabalho manual não é sagrado para mim. Na verdade, vocês me honram liberando seu tempo ao automatizar suas tarefas."
+VME_Progressive.descriptionMaker.rules.rulesStrings[2]	intro(tag=meme_Progressive)           ->Os [memberNamePlural] usaram fábricas automatizadas para fazer um(a) grande [altarName] em [place_summary] [place_name], um monumento à glória de [deity0_name].
+VME_Progressive.descriptionMaker.rules.rulesStrings[3]	conflict(tag=meme_Progressive)        ->Uma colmeia mecanoide enfurecida, querendo destruir as máquinas automatizadas de [deity0_name], tentou destruir as criações dos [memberNamePlural].
+VME_Progressive.descriptionMaker.rules.rulesStrings[4]	founderJoin(tag=meme_Progressive)     ->[deity0_name] instruiu [founderName] a reaproveitar as fábricas para criar uma relíquia sagrada, o(a) [relic0_name], que lhe permitiu repelir o ataque dos mecanoides antes que fosse tarde.
+VME_Progressive.descriptionMaker.rules.rulesStrings[5]	victory(tag=meme_Progressive)         ->[founderName] esmagou as máquinas antigas à sua frente e depenou o exército delas atrás de peças para construir as próximas fábricas melhoradas.
+VME_Progressive.descriptionMaker.rules.rulesStrings[6]	setup(tag=meme_Progressive)           ->Nosso(a) fundador(a), [founderName], foi um(a) grande engenheiro(a), especialista renomado(a) na arte de automatizar linhas de produção. Não havia processo que suas mãos não conseguissem automatizar.
+VME_Progressive.descriptionMaker.rules.rulesStrings[7]	story(uses=1,tag=meme_Progressive)    ->Seus seguidores estudaram suas técnicas de automação por décadas, examinando suas ideias e aplicando-as em suas próprias fábricas.
+VME_Progressive.descriptionMaker.rules.rulesStrings[8]	lessonIntro(tag=meme_Progressive)         ->Em todos os meus anos otimizando a vazão das linhas de produção, aprendi uma lição acima de todas:
+VME_Progressive.descriptionMaker.rules.rulesStrings[9]	lesson(tag=meme_Progressive)              ->a primeira regra de qualquer tecnologia usada num negócio é que a automação aplicada a uma operação eficiente amplia a eficiência
+VME_Progressive.descriptionMaker.rules.rulesStrings[10]	lessonReinforcement(tag=meme_Progressive) ->A automação é uma ideia tão incrível que, se continuarmos aprimorando essa capacidade, as aplicações serão praticamente ilimitadas.
+VME_Progressive.descriptionMaker.rules.rulesStrings[11]	archistBasis(tag=meme_Progressive)    ->Os arquotécnicos são perfeitos. Aperfeiçoaram formas de manipular o Universo muito além da nossa compreensão.
+VME_Progressive.descriptionMaker.rules.rulesStrings[12]	archistFact(tag=meme_Progressive)     ->Você acha mesmo que um arquotécnico faria alguma coisa à mão?
+VME_Progressive.descriptionMaker.rules.rulesStrings[13]	archistProphecy(tag=meme_Progressive) ->[inTheEnd], o único jeito de chegar perto das capacidades deles será alcançar um nível de automação que nos deixe focar na ascensão.
+VME_Progressive.descriptionMaker.rules.rulesStrings[14]	animistFact(tag=meme_Progressive)     ->Os espíritos são pura mente. Inteligências supremas muito além do mundano e do físico. Por isso, desaprovam o trabalho manual. Por que fazer as coisas à mão se uma máquina sem alma pode fazer por você?
+VME_Progressive.descriptionMaker.rules.rulesStrings[15]	serketistProphecy(tag=meme_Progressive)->[itIsSaid] a linha de produção de uma fábrica é como um grande inseto, com suas muitas partes se movendo numa só melodia coordenada, como o trabalho em equipe de um formigueiro.
+VME_Progressive.descriptionMaker.rules.rulesStrings[16]	chthonianProphecy(tag=meme_Progressive)->Não podemos desperdiçar nossas vidas preciosas em trabalho manual sem sentido. Projetaremos máquinas automatizadas maravilhosas que nos livrarão do trabalho e nos deixarão focar nas realidades do transmundano.
+VME_Progressive.descriptionMaker.rules.rulesStrings[17]	esotericismProphecy(tag=meme_Progressive)->Estudando os mecanismos e processos das nossas fábricas automatizadas, talvez desvendemos alguns desses segredos antigos e possamos contemplar o desconhecido.
+VME_Progressive.descriptionMaker.rules.rulesStrings[18]	eschatologismFact(tag=meme_Progressive)->Não pararemos num só mundo. Nossas fábricas orbitais automatizadas encherão o Cosmos de uma infinidade de máquinas destrutivas. Traremos o fim de tudo.
+VME_Progressive.descriptionMaker.rules.rulesStrings[19]	introMemo(tag=meme_Progressive)->Recebemos reclamações do Estêvão do suporte técnico sobre a relutância de alguns de vocês em adotar as novas políticas de automação de processos. Ouviram alguém dizer: "Passei 30 horas automatizando um processo que eu fazia à mão em meia hora!". Que FALTA DE VISÃO!
+VME_Progressive.descriptionMaker.rules.rulesStrings[20]	alienistProphecy(tag=meme_Progressive)->Todas essas criações desgarradas da humanidade mostram o que ela consegue com tecnologia automatizada: laboratórios genéticos maravilhosos sequenciando o genoma em velocidade alucinante.
+VME_Progressive.generalRules.rulesStrings[0]	memeAdjective->automatizado(a)
+VME_Progressive.generalRules.rulesStrings[1]	memeAdjective->progressista
+VME_Progressive.generalRules.rulesStrings[2]	memeHyphenPrefix->auto
+VME_Progressive.generalRules.rulesStrings[3]	memeConcept->automação
+VME_Progressive.generalRules.rulesStrings[4]	memeLeaderNoun->grande automante
+VME_Progressive.symbolPacks.0.adjective	automático

@@ -1,0 +1,48 @@
+# Etapa 11c: comando de exército (cargo 5+): oferta, recusa (falta), aceitar, alvo, postura, soldo, vitória (apaga falta),
+# soldo atrasado (moral), recuo (favor), derrota (falta).
+newgame
+timeout 900
+forces frontchance 0
+join forja
+wait 1h
+leader set 0
+psy title 5 forja
+wait 1h
+obligations
+# guerra no Hegemony: a Forja mobiliza e oferece o comando (cargo 5)
+forces hegwar forja coro
+wait 1h
+letters
+choose Comando de campanha 1
+obligations
+# nova oferta para o mesmo exército: aceitar
+forces offer
+choose Comando de campanha 0
+forces
+forces target
+forces target 0
+forces posture agressiva
+give Silver 1000
+forces pay
+forces garrison coro 5
+forces arrive
+obligations
+# soldo atrasado: moral cai
+forces unpaid
+forces daily 1
+forces
+forces retreat
+forces step 400
+# novo exército: aceitar e recuar (favor -2, sem falta)
+forces raise forja coro 30
+choose Comando de campanha 0
+forces retreat
+forces step 400
+# novo exército: aceitar e perder (falta)
+forces raise forja coro 30
+choose Comando de campanha 0
+forces garrison coro 500
+forces arrive
+obligations
+forces log
+dump

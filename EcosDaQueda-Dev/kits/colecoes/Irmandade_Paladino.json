@@ -1,0 +1,125 @@
+{
+ "id": "Irmandade_Paladino",
+ "label": "Irmandade Paladino",
+ "faction": "EQ_Faction_Forja",
+ "pawnKinds": [
+  "EQ_U_Forja_Paladino"
+ ],
+ "chance": 1,
+ "variations": [
+  {
+   "name": "Linha",
+   "weight": 1,
+   "apparel": [
+    {
+     "def": "VFEP_Warcasket_Bodysuit",
+     "quality": "Good"
+    },
+    {
+     "def": "VFEP_Warcasket_Marine",
+     "quality": "Good"
+    },
+    {
+     "def": "VFEP_WarcasketHelmet_Marine",
+     "quality": "Good"
+    },
+    {
+     "def": "VFEP_WarcasketShoulders_Marine",
+     "quality": "Good"
+    }
+   ],
+   "weapons": [
+    {
+     "def": "VFEP_WarcasketGun_Minigun",
+     "quality": "Good"
+    },
+    {
+     "def": "VFEP_WarcasketMeleeWeapon_CombatKnife",
+     "quality": "Good"
+    }
+   ],
+   "inventory": [
+    {
+     "def": "Ammo_338Norma_Incendiary",
+     "count": 1000
+    }
+   ]
+  },
+  {
+   "name": "Vanguarda",
+   "weight": 1,
+   "apparel": [
+    {
+     "def": "VFEP_Warcasket_Bodysuit",
+     "quality": "Good"
+    },
+    {
+     "def": "VFEP_Warcasket_Marine",
+     "quality": "Good"
+    },
+    {
+     "def": "VFEP_WarcasketHelmet_Marine",
+     "quality": "Good"
+    },
+    {
+     "def": "VFEP_WarcasketShoulders_Marine",
+     "quality": "Good"
+    }
+   ],
+   "weapons": [
+    {
+     "def": "VFEP_WarcasketGun_UraniumSlugRifle",
+     "quality": "Good"
+    },
+    {
+     "def": "VFEP_WarcasketMeleeWeapon_CombatKnife",
+     "quality": "Good"
+    }
+   ],
+   "inventory": [
+    {
+     "def": "Ammo_25x137mmNATO_HE",
+     "count": 80
+    }
+   ]
+  },
+  {
+   "name": "Vanguarda (cópia)",
+   "weight": 1,
+   "apparel": [
+    {
+     "def": "VFEP_Warcasket_Bodysuit",
+     "quality": "Good"
+    },
+    {
+     "def": "VFEP_Warcasket_Marine",
+     "quality": "Good"
+    },
+    {
+     "def": "VFEP_WarcasketHelmet_Marine",
+     "quality": "Good"
+    },
+    {
+     "def": "VFEP_WarcasketShoulders_Marine",
+     "quality": "Good"
+    }
+   ],
+   "weapons": [
+    {
+     "def": "VFEP_WarcasketGun_GrenadeLauncher",
+     "quality": "Good"
+    },
+    {
+     "def": "VFEP_WarcasketMeleeWeapon_CombatKnife",
+     "quality": "Good"
+    }
+   ],
+   "inventory": [
+    {
+     "def": "Ammo_40x53mmGrenade_HE_TFuzed",
+     "count": 60
+    }
+   ]
+  }
+ ]
+}

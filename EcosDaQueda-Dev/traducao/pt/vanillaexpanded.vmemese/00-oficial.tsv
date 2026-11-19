@@ -1,0 +1,402 @@
+## DefInjected/AbilityDef/Abilities_ExaltedPriesthood.xml
+VME_LeaderConversionRitual.description	Tente persuadir alguém a adotar suas crenças. Se der certo, eles perderão alguma certeza em sua ideologia e poderão se converter. Se o tiro sair pela culatra, eles ganharão a certeza de suas antigas crenças.\n\nPara iniciar este ritual em um lugar específico, selecione um ponto de ritual ou altar/ideograma correspondente.
+VME_LeaderConvert.description	Tente converter alguém à ideologia do locutor. Isso reduzirá a certeza do alvo em suas próprias crenças. A redução da certeza depende da habilidade de negociação do locutor.
+VME_LeaderConvert.comps.CompAbilityEffect_Convert.failMessage	{INITIATOR_labelShort} falhou ao converter {RECIPIENT_labelShort}. {RECIPIENT_labelShort} ficou chateado(a) com a tentativa, mas sua certeza caiu de {CERTAINTYBEFORE} para {CERTAINTYAFTER}.
+VME_LeaderConvert.comps.CompAbilityEffect_Convert.successMessage	{INITIATOR_labelShort} converteu {RECIPIENT_labelShort} para {IDEO}.
+VME_LeaderPreachHealth.description	Pregue força moral a uma pessoa doente ou ferida por meio dos conceitos de sua ideologia. Isso melhorará a taxa de cicatrização de feridas e o ganho de imunidade.
+VME_LeaderReassure.description	Aumente a certeza de alguém em suas próprias crenças. A certeza recuperada é baseada na habilidade de negociação do locutor.
+VME_LeaderReassure.comps.CompAbilityEffect_Reassure.successMessage	{INITIATOR_labelShort} reassegurou {RECIPIENT_labelShort}, aumentando sua certeza em {IDEO} de {BEFORECERTAINTY} para {AFTERCERTAINTY}.
+VME_LeaderCounsel.description	Ofereça conselho a uma pessoa para cancelar o efeito de uma memória triste. A chance de sucesso depende das habilidades sociais do locutor e de seu relacionamento com o ouvinte.
+VME_LeaderCounsel.comps.CompAbilityEffect_Counsel.failMessage	{INITIATOR_labelShort} fracassou na tentativa de aconselhar {RECIPIENT_labelShort}. {RECIPIENT_labelShort} ficou chateado(a).
+VME_LeaderCounsel.comps.CompAbilityEffect_Counsel.successMessage	{INITIATOR_labelShort} aconselhou com sucesso {RECIPIENT_labelShort}, cancelando o impacto do humor de {2}.
+VME_LeaderCounsel.comps.CompAbilityEffect_Counsel.successMessageNoNegativeThought	{INITIATOR_labelShort} aconselhou com sucesso {RECIPIENT_labelShort}, aumentando seu humor em {MOODBONUS}.
+## DefInjected/HediffDef/Hediffs_BodyParts_Natural.xml
+VME_FleshcraftedArmHediff.comps.HediffComp_VerbGiver.tools.fist.label	punho
+VME_FleshcraftedHandHediff.comps.HediffComp_VerbGiver.tools.fist.label	punho
+## DefInjected/HistoryEventDef/Precepts_Firefighting.xml
+VME_Firefighting.label	combate a incêndios.
+## DefInjected/HistoryEventDef/Precepts_Recruiting.xml
+VFEA_RecruitAttempt.label	tentativa de recrutamento
+## DefInjected/IdeoStoryPatternDef/RulePacks_Ideo_Description.xml
+VME_CultOfPersonalityDescription.rules.rulesStrings[0]	story(priority=-999)->
+VME_PantheismDescription.rules.rulesStrings[0]	episode(priority=-1)->
+VME_OmnismDescription.rules.rulesStrings[0]	episode(priority=-1)->
+VME_AgnosticismDescription.rules.rulesStrings[0]	story(priority=-999)->
+VME_TaoismDescription.rules.rulesStrings[0]	episode(priority=-1)->
+## DefInjected/IssueDef/Precepts_Alcohol.xml
+VME_Alcohol.label	álcool
+## DefInjected/IssueDef/Precepts_BookReading.xml
+VME_BookReadingSpeed.label	velocidade de leitura
+## DefInjected/IssueDef/Precepts_Death.xml
+VME_Death.label	morte
+## DefInjected/IssueDef/Precepts_Firefighting.xml
+VME_Firefighting.label	combate a incêndios.
+## DefInjected/IssueDef/Precepts_Hospital.xml
+VME_Hospital.label	hospital
+## DefInjected/IssueDef/Precepts_Mechanoids.xml
+VME_Mechanoids.label	mecanoides
+## DefInjected/IssueDef/Precepts_Mood.xml
+VME_Mood.label	humor
+## DefInjected/IssueDef/Precepts_PsychicSensitivity.xml
+VME_PsychicSensitivity.label	sensibilidade psíquica
+## DefInjected/IssueDef/Precepts_Recreation.xml
+VME_Recreation.label	lazer
+## DefInjected/IssueDef/Precepts_SlaveTrading.xml
+VME_SlaveTrading.label	comércio de escravos
+## DefInjected/IssueDef/Precepts_TatteredApparel.xml
+VME_TatteredApparel.label	vestindo roupas rasgadas
+## DefInjected/IssueDef/Precepts_Violence.xml
+VME_Violence.label	violência
+## DefInjected/JobDef/Jobs_Misc.xml
+VFEA_PrisonerInterrogate.reportString	interrogando TargetA
+## DefInjected/MemeDef/Memes_Misc.xml
+VME_ViolentConversion.symbolPacks.2.member	Inquisidor
+VME_Astrology.generalRules.rulesStrings[2]	memeHyphenPrefix->astro
+VME_Astrology.generalRules.rulesStrings[3]	memeConcept->estrelas
+VME_Gestalt.generalRules.rulesStrings[0]	memeAdjective->unificado(a)
+VME_Gestalt.generalRules.rulesStrings[5]	memeCreed->coletivo
+VME_Fleshcrafters.generalRules.rulesStrings[9]	memeConcept->acréscimo
+VME_Fleshcrafters.symbolPacks.1.adjective	arquiteto carnal
+VME_Fleshcrafters.symbolPacks.1.member	arquiteto carnal
+VME_Fleshcrafters.symbolPacks.2.member	Modelador
+VME_HolyDiseases.symbolPacks.0.member	acólito
+VME_CraftCulture.symbolPacks.0.adjective	fabricação
+VME_CraftCulture.symbolPacks.0.member	Artesão
+VME_CraftCulture.symbolPacks.0.theme	fabricação
+VME_CraftCulture.symbolPacks.2.member	Artífice
+VME_Elders.generalRules.rulesStrings[7]	memeLeaderNoun->anciã(o)
+VME_Vegan.symbolPacks.1.adjective	vegetariano
+VME_Vegan.symbolPacks.1.member	vegetariano
+VME_Bushido.generalRules.rulesStrings[3]	memeAdjective->leal
+VME_Nomad.label	Nômade
+VME_Nomad.symbolPacks.0.adjective	Nômade
+VME_Nomad.symbolPacks.0.member	Nômade
+VME_BloodCourt.symbolPacks.0.theme	violência
+VME_CityBuilders.symbolPacks.0.adjective	Construtor
+VME_CityBuilders.symbolPacks.0.member	Construtor
+VME_CityBuilders.symbolPacks.0.theme	construção
+VME_MechanoidSupremacy.generalRules.rulesStrings[1]	memeAdjective->mecânico(a)
+VME_MechanoidSupremacy.generalRules.rulesStrings[5]	memeHyphenPrefix->tecno
+VME_MechanoidSupremacy.generalRules.rulesStrings[6]	memeHyphenPrefix->ciber
+VME_MechanoidSupremacy.generalRules.rulesStrings[8]	memeConcept->tecnologia
+VME_MechanoidSupremacy.generalRules.rulesStrings[9]	memeConcept->silício
+VME_MechanoidSupremacy.generalRules.rulesStrings[12]	memeLeaderAdjective->tecnológico(a)
+VME_MechanoidSupremacy.symbolPacks.0.adjective	mecanoide
+VME_MechanoidSupremacy.symbolPacks.0.ideoName	Mecanoide
+VME_MechanoidSupremacy.symbolPacks.0.theme	mecanoides
+VME_Emancipation.generalRules.rulesStrings[7]	memeConcept->liberdade
+VME_Healthcare.symbolPacks.0.adjective	medicina
+VFEA_Isolationist.generalRules.rulesStrings[7]	memeCreed->exército
+VFEA_Isolationist.generalRules.rulesStrings[10]	memeConcept->guerra
+VFEA_Isolationist.generalRules.rulesStrings[13]	memeLeaderNoun->general
+VFEA_Isolationist.generalRules.rulesStrings[15]	memeLeaderNoun->marechal
+VFEA_Isolationist.generalRules.rulesStrings[16]	memeLeaderNoun->capitão
+VFEA_Isolationist.generalRules.rulesStrings[18]	memeLeaderNoun->ditador
+## DefInjected/MemeDef/Memes_Misc_Royalty.xml
+VME_PsychicFocus.label	concentração psíquica
+VME_Royal.label	real
+VME_Royal.symbolPacks.0.ideoName	Royalty
+## DefInjected/MemeDef/Memes_Structures_Basic.xml
+VME_Structure_Serketist.generalRules.rulesStrings[8]	memeMoralist->xamã
+VME_Structure_ChthonianCult.symbolPacks.0.member	cultista
+VME_Structure_CultOfPersonality.generalRules.rulesStrings[0]	memeAdjective->unificado(a)
+VME_Structure_CultOfPersonality.generalRules.rulesStrings[13]	memeLeaderNoun->ditador
+VME_Structure_Pantheism.generalRules.rulesStrings[11]	memeLeaderAdjective->iluminado(a)
+VME_Structure_Omnism.generalRules.rulesStrings[7]	memeLeaderAdjective->sensato(a)
+VME_Structure_Omnism.generalRules.rulesStrings[9]	memeMoralist->sacerdote
+VME_Structure_SecularSpirituality.generalRules.rulesStrings[7]	memeLeaderAdjective->espiritual
+VME_Structure_Shintaoism.generalRules.rulesStrings[7]	memeLeaderAdjective->espiritual
+## DefInjected/PreceptDef/Precepts_Alcohol.xml
+VME_Alcohol_Desired.label	desejado
+## DefInjected/PreceptDef/Precepts_Apostasy.xml
+Apostasy_Despicable.comps.0.description	Mudou de ideologia
+## DefInjected/PreceptDef/Precepts_BookQuality.xml
+VME_BookQuality_Desired.label	desejado
+## DefInjected/PreceptDef/Precepts_Corruption.xml
+VME_Corruption_Essential.label	essencial
+## DefInjected/PreceptDef/Precepts_Death.xml
+VME_Death_DontCare.label	normal
+VME_Death_Normal.label	normal
+## DefInjected/PreceptDef/Precepts_Expectations.xml
+VME_Expectations_Low.label	baixo
+## DefInjected/PreceptDef/Precepts_Fire.xml
+VME_Fire_Desired.label	desejado
+## DefInjected/PreceptDef/Precepts_Firefighting.xml
+VME_Firefighting_Preferred.label	preferível
+## DefInjected/PreceptDef/Precepts_FungusEating.xml
+VME_FungusEating_DontCare.label	normal
+## DefInjected/PreceptDef/Precepts_Illness.xml
+VME_Illness_Preferred.label	preferível
+## DefInjected/PreceptDef/Precepts_Immunity.xml
+VME_Immunity_Enhanced.label	aprimorado
+## DefInjected/PreceptDef/Precepts_InsectJelly.xml
+VME_InsectJellyEaten_Neutral_Classic.label	neutro
+VME_InsectJellyEaten_Loved_Classic.label	amado
+## DefInjected/PreceptDef/Precepts_InsectMeat.xml
+VME_InsectMeatEating_DontCare.label	normal
+## DefInjected/PreceptDef/Precepts_Junk.xml
+VME_Junk_Beautiful.label	bonito
+VME_Junk_Preferred.label	preferível
+## DefInjected/PreceptDef/Precepts_KillingWithFire.xml
+VME_KillingWithFire_Preferred.label	preferível
+## DefInjected/PreceptDef/Precepts_Mood.xml
+VME_Mood_Normal.label	normal
+## DefInjected/PreceptDef/Precepts_Pain.xml
+VME_Pain_DontCare.label	normal
+## DefInjected/PreceptDef/Precepts_PermanentBases.xml
+VME_PermanentBases_Desired.label	desejado
+## DefInjected/PreceptDef/Precepts_Power.xml
+VME_Power_Desired.label	desejado
+VME_Power_Preferred.label	preferível
+## DefInjected/PreceptDef/Precepts_Proselytizing.xml
+VME_Proselytizing_Forceful.label	forte
+## DefInjected/PreceptDef/Precepts_Raiders.xml
+VME_Raiding_Honorable.label	honroso
+## DefInjected/PreceptDef/Precepts_Ranching.xml
+VME_Ranching_Nomadic.label	Nômade
+## DefInjected/PreceptDef/Precepts_Recreation.xml
+VME_Recreation_Loved.label	amado
+VME_Recreation_Normal.label	normal
+VME_Recreation_Disapproved.label	desaprovado
+## DefInjected/PreceptDef/Precepts_Role_Commissar.xml
+VME_IdeoRole_Commissar.label	Comissário
+## DefInjected/PreceptDef/Precepts_Role_FireKeeper.xml
+VME_IdeoRole_FireKeeper.label	Guardião do fogo
+## DefInjected/PreceptDef/Precepts_Role_Fleshcrafter.xml
+VME_IdeoRole_Fleshcrafter.label	arquiteto carnal
+## DefInjected/PreceptDef/Precepts_Role_Mechacker.xml
+VME_IdeoRole_Mechacker.label	Mechacker
+## DefInjected/PreceptDef/Precepts_Role_Nurse.xml
+VME_IdeoRole_Nurse.label	Enfermeiro
+## DefInjected/PreceptDef/Precepts_Role_Republic.xml
+VME_IdeoRole_LeaderSecond.description	Um líder que mantém o grupo unido e representa sua facção nas interações diplomáticas.
+VME_IdeoRole_LeaderThird.description	Um líder que mantém o grupo unido e representa sua facção nas interações diplomáticas.
+## DefInjected/PreceptDef/Precepts_Scars.xml
+VME_Scars_Honorable.label	honroso
+VME_Scars_Disgusting.label	nojento
+## DefInjected/PreceptDef/Precepts_SkilledLabor.xml
+VME_SkilledLabor_Relaxed.label	relaxado
+## DefInjected/PreceptDef/Precepts_SlaveTrading.xml
+VME_SlaveTrading_OnlyBuying.comps.3.description	Alguém vendeu um escravo
+## DefInjected/PreceptDef/Precepts_TaintedApparel.xml
+VME_TaintedApparel_DontCare.label	normal
+VME_TaintedApparel_Disapproved.label	desaprovado
+## DefInjected/PreceptDef/Precepts_TatteredApparel.xml
+VME_TatteredApparel_DontCare.label	normal
+VME_TatteredApparel_Disapproved.label	desaprovado
+## DefInjected/PreceptDef/Precepts_Travel.xml
+VME_Travel_Desired.label	desejado
+## DefInjected/PreceptDef/Precepts_Violence.xml
+VME_Violence_Honorable.label	honroso
+VME_Violence_Acceptable.label	aceitável
+VME_Violence_Disapproved.label	desaprovado
+## DefInjected/PrisonerInteractionModeDef/PrisonerInteractionModeDefs.xml
+VFEA_Interrogate.label	interrogar
+## DefInjected/RitualBehaviorDef/Ritual_Behaviors_LeaderConversion.xml
+VME_LeaderConversionBehavior.roles.1.label	convertedor
+VME_LeaderConversionBehavior.stages.0.failTriggers.0.desc	O prisioneiro não está acessível.
+## DefInjected/RitualBehaviorDef/Ritual_Behaviors_LeadershipChallenge.xml
+VME_LeadershipChallengeRitualBehaviour.roles.1.label	Duelista
+VME_LeadershipChallengeRitualBehaviour.roles.1.categoryLabel	duelistas
+VME_LeadershipChallengeRitualBehaviour.roles.2.categoryLabel	duelistas
+VME_LeadershipChallengeRitualBehaviour.spectatorsLabel	Participantes
+## DefInjected/RitualBehaviorDef/Ritual_Behaviors_PlagueFestival.xml
+VME_PlagueFestivalRitualBehaviour.roles.0.label	cortador
+VME_PlagueFestivalRitualBehaviour.roles.1.label	Sacrificio
+VME_PlagueFestivalRitualBehaviour.roles.1.missingDesc	um animal com tamanho corporal de pelo menos 0,8
+VME_PlagueFestivalRitualBehaviour.stages.0.failTriggers.0.desc	O animal não está acessível.
+## DefInjected/RitualBehaviorDef/Ritual_Behaviors_ViolentConversion.xml
+VME_ViolentConversionRitualBehaviour.roles.0.label	Inquisidor
+VME_ViolentConversionRitualBehaviour.roles.1.label	Prisioneiro
+VME_ViolentConversionRitualBehaviour.roles.1.missingDesc	um prisioneiro
+VME_ViolentConversionRitualBehaviour.stages.0.failTriggers.0.desc	O prisioneiro não está acessível.
+## DefInjected/RitualBehaviorDef/Ritual_Behaviors_WickerManBurning.xml
+VME_WickerManBurningBehaviour.roles.0.label	Inquisidor
+VME_WickerManBurningBehaviour.roles.1.label	Prisioneiro
+VME_WickerManBurningBehaviour.roles.1.missingDesc	um prisioneiro
+VME_WickerManBurningBehaviour.stages.0.failTriggers.0.desc	O prisioneiro não está acessível.
+## DefInjected/RitualOutcomeEffectDef/Ritual_Outcomes_Bonfire.xml
+VME_BonfireOutcome.outcomeChances.1.label	Confuso
+## DefInjected/RitualOutcomeEffectDef/Ritual_Outcomes_CeremonialSuicide.xml
+VME_CeremonialSuicideRitualOutcome.outcomeChances.2.label	Honrosa
+VME_CeremonialSuicideRitualOutcome.outcomeChances.3.label	Inesquecível
+## DefInjected/RitualOutcomeEffectDef/Ritual_Outcomes_LeaderConversion.xml
+VME_LeaderConversionOutcome.description	Se tudo ocorrer bem, a certeza da ideologia do alvo será reduzida ou eles se converterão. Se der errado, eles ganharão certeza em suas antigas crenças.
+VME_LeaderConversionOutcome.comps.3.label	Expectativas de {PAWN_labelShort}
+VME_LeaderConversionOutcome.comps.3.labelAbstract	expectativas do conversor
+VME_LeaderConversionOutcome.outcomeChances.0.description	O {0} foi terrível! Desde a primeira palavra, foi uma discussão infrutífera de vaivém. Isso se arrastou por um tempo assustadoramente longo.
+VME_LeaderConversionOutcome.outcomeChances.1.label	Ineficaz
+VME_LeaderConversionOutcome.outcomeChances.1.description	O {0} foi ineficaz. A maioria dos argumentos não era clara e o conversor convertido rebateu aqueles que faziam sentido.
+VME_LeaderConversionOutcome.outcomeChances.2.label	Eficaz
+VME_LeaderConversionOutcome.outcomeChances.2.description	O {0} foi eficaz. O discurso não apenas apresentou argumentos sólidos e visivelmente influenciou os pensamentos do converte, mas também manteve a multidão entretida.
+VME_LeaderConversionOutcome.outcomeChances.3.label	Magistral
+VME_LeaderConversionOutcome.outcomeChances.3.description	O {0} foi magistral! Velhas crenças pareciam se dissolver sem esforço e inevitavelmente, e nosso verdadeiro conhecimento foi aceito.
+## DefInjected/RitualOutcomeEffectDef/Ritual_Outcomes_LeadershipChallenge.xml
+VME_LeadershipChallengeRitualOutcome.outcomeChances.3.label	Inesquecível
+## DefInjected/RitualOutcomeEffectDef/Ritual_Outcomes_PlagueFestival.xml
+VME_PlagueFestivalRitualOutcome.comps.2.label	guia moral presente
+VME_PlagueFestivalRitualOutcome.comps.4.label	começou em altar
+VME_PlagueFestivalRitualOutcome.comps.4.expectedThingLabelTip	um altar
+VME_PlagueFestivalRitualOutcome.outcomeChances.2.label	Satisfatório
+VME_PlagueFestivalRitualOutcome.outcomeChances.3.label	Espetacular
+## DefInjected/RitualOutcomeEffectDef/Ritual_Outcomes_ViolentConversion.xml
+VME_ViolentConversionRitualOutcome.comps.2.label	começou em altar or ideograma
+VME_ViolentConversionRitualOutcome.comps.2.expectedThingLabelTip	um altar ou um ideograma
+VME_ViolentConversionRitualOutcome.outcomeChances.1.label	Satisfatório
+VME_ViolentConversionRitualOutcome.outcomeChances.2.label	Espetacular
+## DefInjected/RitualOutcomeEffectDef/Ritual_Outcomes_WickerManBurning.xml
+VME_WickerManBurningOutcome.outcomeChances.1.label	Confuso
+## DefInjected/RitualPatternDef/Ritual_Patterns_LeaderConversion.xml
+VME_LeaderConversionPattern.ritualExplanation	Em caso de sucesso, seu arbítrio será reduzido ou ele(a) se converterá imediatamente. Se o tiro sair pela culatra, sua certeza nas próprias crenças aumentará.
+## DefInjected/RulePackDef/Interrogate.xml
+VFEA_InterrogationRefused.rulePack.rulesStrings[0]	sent->[RECIPIENT_nameDef] rejeitou a oferta.
+## DefInjected/RulePackDef/RulePacks_Deity_Names.xml
+VME_DietyTypeMakerCorporate.rulePack.rulesStrings[12]	maybe_adjective->
+VME_DietyTypeMakerCorporate.rulePack.rulesStrings[13]	maybe_adjective->[Color]
+VME_DietyTypeMakerCorporate.rulePack.rulesStrings[14]	maybe_adjective-> [AdjectiveFriendly]
+VME_DietyTypeMakerCorporate.rulePack.rulesStrings[15]	maybe_adjective->[AdjectiveBadass]
+## DefInjected/ThingDef/Buildings_Ancient_Indoors.xml
+VME_AncientSystemRack.label	sistema de servidores de computador ancestral
+VME_AncientSystemRack.description	Uma unidade de servidores computacionais antiga repleta de dispositivos não identificáveis. Faltam peças valiosas e tudo o mais está degradado à inutilidade.
+VME_AncientEquipmentBlocks.label	blocos de equipamentos ancestrais
+VME_AncientEquipmentBlocks.description	Uma coleção de blocos de equipamentos ancestrais de função desconhecida. Faltam peças valiosas e tudo o mais está degradado à inutilidade.
+VME_AncientMachine.label	máquina ancestral
+VME_AncientMachine.description	Uma grande caixa de máquina antiga cheia de maquinário desconhecido. Faltam peças valiosas e tudo mais está inutilizável.
+VME_AncientStorageCylinder.label	cilindro de armazenamento ancestral
+VME_AncientStorageCylinder.description	Um dispositivo ancestral que se parece com isso já armazenou algum tipo de fluido. Faltam peças valiosas e tudo o mais está degradado à inutilidade.
+VME_AncientLamp.label	luminária ancestral
+VME_AncientLamp.description	Uma antiga luminária com energização própria. Sua fonte de energia interna está muito esgotada, mas ainda emite um brilho fraco.
+VME_AncientBed.label	cama ancestral
+VME_AncientBed.description	Um colchão velho e podre em uma estrutura enferrujada. Embora desconfortável, ainda pode ser usado, mas está muito dilapidado para ser restaurado.
+VME_AncientDisplayBank.label	grupo de monitores ancestrais
+VME_AncientDisplayBank.description	Uma interface de computador antiga. Faltam peças valiosas e tudo o mais está degradado à inutilidade.
+VME_AncientLockerBank.label	grupo de armários ancestrais
+VME_AncientLockerBank.description	Um grupo de armários ancestrais e enferrujados. Todos eles foram abertos à força e nada de valioso foi deixado para trás.
+VME_AncientCrate.label	caixa ancestral
+VME_AncientCrate.description	Um caixote ancestral e quebrado. Quaisquer objetos de valor que uma vez continha degradaram-se à inutilidade.
+VME_AncientMilitaryCrate.label	caixa militar ancestral
+VME_AncientMilitaryCrate.description	Um caixote ancestral de aparência militar. Foi quebrado há muito tempo e todos os objetos de valor que continha foram saqueados.
+VME_AncientSpacerCrate.label	caixa espacial antiga
+VME_AncientSpacerCrate.description	Um caixote ancestral quebrado. Quaisquer objetos de valor que uma vez continha foram saqueados há muito tempo.
+VME_AncientBarrel.label	barril ancestral
+VME_AncientBarrel.description	Um barril ancestral quebrado que parece ter contido algum tipo de resíduo. A única coisa que contém agora é uma mancha de lama seca.
+VME_AncientGenerator.label	gerador ancestral
+VME_AncientGenerator.description	Um gerador elétrico ancestral. Suas partes utilizáveis foram destruídas ou saqueadas há muito tempo, e o resto enferrujou e se tornou inútil.
+VME_AncientOperatingTable.label	mesa de operação ancestral
+VME_AncientOperatingTable.description	Uma mesa que já foi usada para operações cirúrgicas. Há muito que se deteriorou e se tornou inútil.
+## DefInjected/ThingDef/Buildings_Ancient_Outdoors.xml
+VME_AncientShoppingCart.label	carrinho de compras ancestral
+VME_AncientShoppingCart.description	Um carrinho de compras ancestral e enferrujado. Como exatamente chegou aqui é um mistério, mas a história é longa e provavelmente muito triste.
+VME_AncientPostbox.label	caixa postal ancestral
+VME_AncientPostbox.description	Uma caixa de correio ancestral, destruída e deteriorada até a inutilidade. Parece ter sido movida para cá há muito tempo por algum motivo desconhecido.
+VME_AncientVendingMachine.label	máquina de vendas ancestral
+VME_AncientVendingMachine.description	Uma máquina de vendas automática ancestral. Foi destruída há muito tempo e gerações de saqueadores levaram todas as partes úteis. Como tudo acabou aqui é um mistério.
+VME_AncientAirConditioner.label	condicionador de ar ancestral
+VME_AncientAirConditioner.description	Uma máquina ancestral de ar condicionado. Seus internos foram destruídos há muito tempo e o que não foi saqueado enferrujou desde então.
+VME_AncientKitchenSink.label	pia de cozinha ancestral
+VME_AncientKitchenSink.description	Uma pia de cozinha ancestral feita de algum material de folha de fibra não metálica. Está muito deteriorada e não há como salvar nada dela.\n\nComo chegou aqui deve ser uma longa história.
+VME_AncientStove.label	fogão ancestral
+VME_AncientOven.label	fornalha ancestral
+VME_AncientOven.description	Uma fornalha ancestral. Esmagada e enferrujada, é completamente inútil agora.\n\nComo chegou aqui é difícil dizer.
+VME_AncientATM.label	caixa eletrônico ancestral
+VME_AncientATM.description	Um caixa eletrônico ancestral. Esmagado e enferrujado, é completamente inútil agora.\n\nComo chegou aqui é difícil dizer.
+VME_AncientWashingMachine.label	máquina de lavar ancestral
+VME_AncientWashingMachine.description	Um dispositivo ancestral usado para lavar tecidos. Esmagada e enferrujada, é completamente inútil agora.\n\nComo chegou aqui é difícil dizer.
+VME_AncientHydrant.label	hidrante ancestral
+VME_AncientHydrant.description	Um hidrante ancestral. Muito enferrujado, é completamente inútil agora.\n\nComo chegou aqui é difícil dizer.
+VME_AncientMicrowave.label	micro-ondas ancestral
+VME_AncientMicrowave.description	Um dispositivo ancestral para aquecer alimentos. Esmagado e enferrujado, é completamente inútil agora.\n\nComo chegou aqui é difícil dizer.
+VME_AncientToilet.label	privada ancestral
+VME_AncientRefrigerator.label	geladeira ancestral
+VME_AncientRefrigerator.description	Uma geladeira ancestral. Foi despojada de partes interessantes há muito tempo.
+VME_AncientSmallCrate.label	caixa pequena ancestral
+VME_AncientSmallCrate.description	Uma pequena caixa vazia que foi abandonada há muito tempo. Está muito enferrujada para armazenar qualquer coisa.
+VME_AncientLongCrate.label	caixa longa ancestral
+VME_AncientLongCrate.description	Um caixote longo e vazio que foi abandonado há muito tempo. Está muito enferrujado para armazenar qualquer coisa.
+VME_AncientLargeCrate.label	caixa grande ancestral
+VME_AncientLargeCrate.description	Uma grande caixa que foi abandonada há muito tempo. Está muito enferrujada para armazenar qualquer coisa.
+VME_AncientWheel.label	roda ancestral
+VME_AncientWheel.description	Uma roda ancestral de algum tipo de veículo. A borracha está deteriorada e o metal está torcido e enferrujado.
+VME_AncientGiantWheel.label	roda gigante ancestral
+VME_AncientGiantWheel.description	Uma roda gigante que saiu de um grande veículo há muitos anos. A borracha se desintegrou e o metal está retorcido e enferrujado.
+VME_AncientRustedCar.label	carro ancestral
+VME_AncientRustedCar.description	Um carro velho e quebrado. Tudo que não está enferrujado foi saqueado há muito tempo.
+VME_AncientRustedTruck.label	caminhão ancestral
+VME_AncientRustedTruck.description	Um ancestral e quebrado caminhão. Tudo que não está enferrujado foi saqueado há muito tempo.
+VME_AncientRustedJeep.label	transportador de tropas ancestral
+VME_AncientRustedJeep.description	Um avariado transportador de tropas ancestral. Tudo que não está enferrujado foi saqueado há muito tempo.
+VME_AncientRustedCarFrame.label	armação de carro ancestral
+VME_AncientRustedCarFrame.description	Uma estrutura de carro enferrujada ancestral. A carroceria há muito tempo se desfez em nada.
+VME_AncientWarwalkerTorso.label	torso de guerreiro ancestral
+VME_AncientWarwalkerTorso.description	O torso de um guerreiro de porte médio que caiu aqui nos tempos ancestrais. As peças valiosas foram saqueadas há muito tempo.
+VME_AncientRustedDropship.label	torso de guerreiro ancestral
+VME_AncientRustedDropship.description	O torso de um guerreiro de porte médio que caiu aqui nos tempos ancestrais. As peças valiosas foram saqueadas há muito tempo.
+VME_AncientWarwalkerClaw.label	transporte ancestral
+VME_AncientWarwalkerClaw.description	Os restos de um módulo de transporte ancestral. As peças valiosas foram saqueadas há muito tempo e o resto se deteriorou e tornou-se inútil.
+VME_AncientWarwalkerLeg.label	perna de guerreiro ancestral
+VME_AncientWarwalkerLeg.description	A perna quebrada de um guerreiro de porte médio que caiu aqui há muito tempo. Foi limpo por saqueadores e não sobrou nenhum componente valioso.
+VME_AncientMiniWarwalkerRemains.label	destroços de guerreiro ancestral
+VME_AncientMiniWarwalkerRemains.description	Os restos destroçados de um guerreiro ancestral de subescala. Todas as partes que não estavam arruinadas quando foi destruída foram saqueadas há muito tempo.
+VME_AncientWarspiderRemains.label	destroços de guerraranha anancestraltiga
+VME_AncientWarspiderRemains.description	Os restos em ruínas de uma guerraranha ancestral de escala média. Foi saqueado várias vezes e não há mais nada valioso.
+VME_AncientPipelineSection.label	seção de oleoduto ancestral
+VME_AncientPipelineSection.description	Uma seção de um oleoduto ancestral. Antigamente, transportava um fluido valioso por longas distâncias. Agora foi saqueado e deteriorado até a inutilidade.
+VME_AncientWarwalkerFoot.label	pé de guerreiro ancestral
+VME_AncientWarwalkerFoot.description	Um pé enorme de um guerreiro ancestral. Parece ter sido arrancado de seu dono por algum tipo de arma pesada. Todos os componentes úteis foram saqueados ou deteriorados há muito tempo.
+VME_AncientTank.label	tanque ancestral em ruínas
+VME_AncientTank.description	Os restos de um tanque ancestral que foi destruído por algum tipo de arma pesada. Todos os componentes úteis foram saqueados ou deteriorados há muito tempo.
+VME_AncientAPC.label	VBCI ancestral em ruínas
+VME_AncientWarwalkerShell.label	carcaça de guerreiro ancestral
+VME_AncientWarwalkerShell.description	A maior parte da carapaça blindada de um guerreiro. Parece ter sido arrancado por algum sistema de armas colossal. Todas as peças valiosas foram saqueadas e o resto está muito deteriorado.
+VME_AncientJetEngine.label	motor ancestral
+VME_AncientJetEngine.description	Um motor a jato ancestral, provavelmente separado de um grande avião. Suas delicadas partes internas estão enferrujadas e inutilizadas, e as peças valiosas foram saqueadas há muito tempo.
+VME_AncientDropshipEngine.label	motor de transporte ancestral
+VME_AncientDropshipEngine.description	Um motor de transporte ancestral. Provavelmente saiu de um porta-aviões militar. Suas delicadas partes internas estão enferrujadas e inutilizadas, e as peças valiosas foram saqueadas há muito tempo.
+VME_AncientPodCar.label	carro automatizado ancestral
+VME_AncientPodCar.description	Um carro ancestral que já foi capaz de voo automatizado. Suas partes valiosas foram saqueadas há muito tempo e o resto está muito deteriorado.
+VME_AncientTankTrap.label	armadilha ancestral
+VME_AncientTankTrap.description	Uma fortificação defensiva para parar veículos. Está se deteriorando há muitos anos.
+VME_AncientLargeRustedEngineBlock.label	bloco de macro-motor ancestral
+VME_AncientFence.label	cerca ancestral
+VME_AncientFence.description	Uma cerca ancestral feita de postes unidos por painéis.
+VME_AncientRazorWire.label	arame farpado ancestral
+VME_AncientRazorWire.description	Um pedaço de arame farpado ancestral. Está se deteriorando há muitos anos e não representa mais nenhum perigo.
+VME_AncientPipes.label	dutos ancestrais
+VME_AncientPipes.description	Um monte de canos velhos enferrujados. É difícil dizer como eles acabaram aqui.
+VME_AncientMegaCannonTripod.label	plataforma de mega-canhão ancestral
+VME_AncientMegaCannonTripod.description	Uma plataforma de montagem que antes continha algum tipo de canhão. Está quebrada há muitos anos e todos os componentes úteis foram saqueados há muito tempo.
+VME_AncientMegaCannonBarrel.label	cano de mega-canhão ancestral
+VME_AncientMegaCannonBarrel.description	Um cano de um canhão de longo alcance para artilharia. Quando era novo, deve ter sido assustadoramente poderoso. Agora, está muito além do reparo e todos os componentes úteis foram saqueados.
+VME_AncientContainer.label	contêiner ancestral
+VME_AncientMechDropBeacon.label	farol de pouso mecanoide ancestral
+VME_AncientMechDropBeacon.description	A carcaça de um farol de pouso mecanoide. Seus componentes úteis estão faltando e a carcaça se deteriorou depois de muitos anos.
+VME_AncientSecurityTurret.label	torreta de segurança ancestral
+VME_AncientSecurityTurret.description	Uma torreta de segurança ancestral quebrada. As peças valiosas foram todas saqueadas ou destruídas.
+VME_AncientRustedEngineBlock.label	bloco de motor ancestral
+VME_AncientRustedEngineBlock.description	Um bloco de motor ancestral que está enferrujado. Nenhum reparo poderia salvar isso.
+VME_AncientShipBeacon.label	farol de aterrissagem ancestral
+VME_AncientShipBeacon.description	Um farol de aterrissagem de naves ancestral quebrado. Todos os componentes úteis foram saqueados há muito tempo.
+## DefInjected/ThoughtDef/Precepts_InsectMeat.xml
+VME_AteInsectMeat_Sacrilegious.stages.ate_insect_meat.label	comeu carne de inseto
+VME_AteInsectMeatAsIngredient_Sacrilegious.stages.ate_cooked_insect_meat.label	comeu carne de inseto cozida
+## DefInjected/ThoughtDef/Precepts_Lighting.xml
+VME_Darklight_NormalPreferred_Darklight.stages.darklight.label	luz negra
+## DefInjected/ThoughtDef/Precepts_Raiders.xml
+VME_ParticipatedInRaid_Honorable.stages.participated_in_raid.label	participou de ataque
+VME_RecentConquest_Honorable.stages.recent_conquest.label	conquista recente
+VME_RecentConquest_Honorable.stages.no_recent_conquest.label	nenhuma conquista recente
+VME_ParticipatedInRaid_Abhorrent.stages.participated_in_raid.label	participou de ataque
+VME_RecentConquest_Abhorrent.stages.recent_conquest.label	conquista recente
+VME_RecentConquest_Abhorrent.stages.no_recent_conquest.label	nenhuma conquista recente
+## DefInjected/ThoughtDef/Precepts_Ranching.xml
+VME_Ranching_Disliked_SowedPlant.stages.sowed_human_food_plant.label	planta alimentícia semeada
+## DefInjected/ThoughtDef/Precepts_Scars.xml
+VME_Scars_Honorable.stages.scarred.label	Assustado
+VME_Scars_Disgusting.stages.scarred.label	Assustado
+## DefInjected/ThoughtDef/Precepts_SlaveTrading.xml
+VME_SoldSlave_Know_Forbidden.stages.sold_slave.label	vendeu escravo
+## DefInjected/ThoughtDef/Thoughts_Memory_Gatherings.xml
+VME_AttendedParty.stages.attended_superb_party.description	Eu me diverti naquela festa.
+## DefInjected/WorkGiverDef/WorkGivers_Misc.xml
+VFEA_Interrogate.gerund	interrogando
+VFEA_Interrogate.verb	interrogar

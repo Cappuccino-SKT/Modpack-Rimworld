@@ -1,0 +1,154 @@
+## DefInjected/MemeDef/Memes_Misc.xml
+VME_BloodCourt.descriptionMaker.rules.rulesStrings[11]	archistBasis(tag=meme_BloodCourt)    ->Os arquotécnicos respeitam a força acima de tudo. Pois quem é fraco e indefeso não é humano de verdade, e não vale nada.
+VME_BloodCourt.descriptionMaker.rules.rulesStrings[12]	archistFact(tag=meme_BloodCourt)     ->Para eles, alguém digno da transcendência é um indivíduo comum que encontra força para perseverar e aguentar apesar de obstáculos esmagadores.
+VME_BloodCourt.descriptionMaker.rules.rulesStrings[13]	archistProphecy(tag=meme_BloodCourt) ->[inTheEnd], só quem impõe sua vontade aos outros pela força será digno de ascender.
+VME_BloodCourt.descriptionMaker.rules.rulesStrings[14]	animistBasis(tag=meme_BloodCourt)    ->Os espíritos respeitam a força acima de tudo. Pois quem é fraco e indefeso não é humano de verdade, e não vale nada.
+VME_BloodCourt.descriptionMaker.rules.rulesStrings[15]	animistFact(tag=meme_BloodCourt)     ->Para os espíritos, alguém digno é um indivíduo comum que encontra força para perseverar e aguentar apesar de obstáculos esmagadores.
+VME_BloodCourt.descriptionMaker.rules.rulesStrings[16]	animistProphecy(tag=meme_BloodCourt) ->[itIsSaid] só quem impõe sua vontade aos outros pela força conseguirá aplacar os espíritos.
+VME_BloodCourt.descriptionMaker.rules.rulesStrings[17]	serketistProphecy(tag=meme_BloodCourt)->[itIsSaid] esmagaremos toda oposição que ficar no nosso caminho.
+VME_BloodCourt.descriptionMaker.rules.rulesStrings[18]	chthonianProphecy(tag=meme_BloodCourt)->Se quisermos enfrentar essas cruéis entidades sobrenaturais, não podemos tolerar fraqueza. Só mostrando força de verdade temos alguma chance contra a insanidade cósmica.
+VME_BloodCourt.descriptionMaker.rules.rulesStrings[19]	esotericismProphecy(tag=meme_BloodCourt)->Esse conhecimento oculto não virá sem violência. Só mostrando força de verdade podemos esperar desvendar os segredos do Cosmos.
+VME_BloodCourt.descriptionMaker.rules.rulesStrings[20]	eschatologismFact(tag=meme_BloodCourt)->Claro que as pessoas vão resistir, agarradas à sua existência patética neste mundo condenado e amaldiçoado. Vamos esmagá-las.
+VME_BloodCourt.descriptionMaker.rules.rulesStrings[21]	introMemo(tag=meme_BloodCourt)->Quer uma promoção? Tenho o prazer de informar que, de agora em diante, teremos lutas de gladiadores aprovadas pela empresa em volta da máquina de café. Cansado do seu chefe? Prove!
+VME_BloodCourt.descriptionMaker.rules.rulesStrings[22]	alienistProphecy(tag=meme_BloodCourt)->Essas criaturas desgarradas podem nos mostrar o que é força, e dominando-as talvez provemos a nós mesmos que a merecemos.
+VME_BloodCourt.generalRules.rulesStrings[0]	memeAdjective->sangrento(a)
+VME_BloodCourt.generalRules.rulesStrings[1]	memeAdjective->brutal
+VME_BloodCourt.generalRules.rulesStrings[2]	memeConcept->força
+VME_BloodCourt.generalRules.rulesStrings[3]	memeConcept->discórdia
+VME_BloodCourt.generalRules.rulesStrings[4]	memeLeaderNoun->sangrador
+VME_BloodCourt.generalRules.rulesStrings[5]	memeLeaderNoun->gladiador
+VME_BloodCourt.symbolPacks.0.adjective	violento
+VME_BloodCourt.symbolPacks.0.ideoName	Corte de Sangue
+VME_CityBuilders.label	construtores de cidades
+VME_CityBuilders.description	Construir é importante para nossa gente; não é sábio viajar. Devemos construir nosso lar como uma cidade.
+VME_CityBuilders.descriptionMaker.rules.rulesStrings[0]	creation(tag=meme_CityBuilders)        ->[deity0_name] assim nos falou: "Construam estas cidades e cerquem-nas de muralhas e torres, portões e trancas. A terra é sua porque vocês me buscaram; em cada monte elevado e em cada colina alta haverá riachos correndo, até que as torres caiam."
+VME_CityBuilders.descriptionMaker.rules.rulesStrings[1]	episode(uses=1,tag=meme_CityBuilders)  ->Seguindo os ensinamentos de [deity0_name], lutamos para nos tornar a facção mais rica de todas. Os poetas cantarão a prosperidade e a opulência muito depois de partirmos.
+VME_CityBuilders.descriptionMaker.rules.rulesStrings[2]	intro(tag=meme_CityBuilders)           ->Em [place_summary] [place_name], os [memberNamePlural] construíram a maior das cidades, com um grande templo dedicado a [deity0_name].
+VME_CityBuilders.descriptionMaker.rules.rulesStrings[3]	conflict(tag=meme_CityBuilders)        ->Um(a) [foeLeader] invejoso(a) quis conquistar a cidade, com ciúme do conforto de seus habitantes. Reuniu um exército enorme e cercou a cidade.
+VME_CityBuilders.descriptionMaker.rules.rulesStrings[4]	founderJoin(tag=meme_CityBuilders)     ->[founderName], conhecido(a) como o Grande Magistrado, riu dessa ousadia. O(a) [foeLeader] não sabia que a cidade era sagrada para [deity0_name]? Suas muralhas eram altas como montanhas, e impenetráveis.
+VME_CityBuilders.descriptionMaker.rules.rulesStrings[5]	victory(tag=meme_CityBuilders)         ->Depois de vários meses, o(a) [foeLeader] foi forçado(a) a recuar, pois a maioria dos seus homens morria de fome e de frio. A cidade não tinha caído, e se manteria orgulhosa por milênios.
+VME_CityBuilders.descriptionMaker.rules.rulesStrings[6]	setup(tag=meme_CityBuilders)           ->[founderName] era magistrado(a) num pequeno povoado da Orla. Acreditava que um povoado miserável tinha pouca chance diante das ameaças externas constantes e propôs uma série de obras monumentais que transformariam o pequeno vilarejo numa metrópole imensa.
+VME_CityBuilders.descriptionMaker.rules.rulesStrings[7]	story(uses=1,tag=meme_CityBuilders)    ->[founderName] é lembrado(a) como o Grande Arquiteto, e sua cidade se manteria orgulhosa por milênios.
+VME_CityBuilders.descriptionMaker.rules.rulesStrings[8]	lessonIntro(tag=meme_CityBuilders)         ->Nos tomos mais antigos estudei a arte esquecida da guerra de cerco. Se quisermos que nossas cidades se mantenham orgulhosas, precisamos entender que
+VME_CityBuilders.descriptionMaker.rules.rulesStrings[9]	lesson(tag=meme_CityBuilders)              ->as muralhas mais altas e firmes não se constroem com pedra, mas com o trabalho e o suor dos homens
+VME_CityBuilders.descriptionMaker.rules.rulesStrings[10]	lessonReinforcement(tag=meme_CityBuilders) ->Uma cidade bem defendida é resistente. Uma cidade construída com amor é invencível.
+VME_CityBuilders.descriptionMaker.rules.rulesStrings[11]	archistBasis(tag=meme_CityBuilders)    ->Os arquotécnicos são os construtores supremos. O planeta inteiro é transformado e adaptado às necessidades deles.
+VME_CityBuilders.descriptionMaker.rules.rulesStrings[12]	archistFact(tag=meme_CityBuilders)     ->Imitaremos a destreza construtiva dos arquotécnicos em nossas cidades, criando maravilhas da engenharia que resistirão ao tempo.
+VME_CityBuilders.descriptionMaker.rules.rulesStrings[13]	archistProphecy(tag=meme_CityBuilders) ->[inTheEnd], os maiores construtores entre nós serão escolhidos para transcender.
+VME_CityBuilders.descriptionMaker.rules.rulesStrings[14]	animistBasis(tag=meme_CityBuilders)    ->Não há espírito maior que o espírito da criação. Ele se manifesta em tudo o que é construído por um artesão habilidoso.
+VME_CityBuilders.descriptionMaker.rules.rulesStrings[15]	animistFact(tag=meme_CityBuilders)     ->Ergueremos maravilhas incríveis da engenharia. Cidades imensas que serão um testemunho do poder do espírito da criação.
+VME_CityBuilders.descriptionMaker.rules.rulesStrings[16]	animistProphecy(tag=meme_CityBuilders) ->[itIsSaid] os maiores construtores entre nós serão escolhidos para comungar com os espíritos.
+VME_CityBuilders.descriptionMaker.rules.rulesStrings[17]	serketistProphecy(tag=meme_CityBuilders)->[itIsSaid] construiremos enormes cidades-colmeia, como cupinzeiros humanos que taparão o sol.
+VME_CityBuilders.descriptionMaker.rules.rulesStrings[18]	chthonianProphecy(tag=meme_CityBuilders)->O poder bruto e brutal dessas entidades sobrenaturais é tão imenso que só nos entocando em cidades blindadas e bem defendidas podemos esperar resistir à sua influência corrosiva.
+VME_CityBuilders.descriptionMaker.rules.rulesStrings[19]	esotericismProphecy(tag=meme_CityBuilders)->Esse conhecimento oculto só será desvendado com muita experimentação. Construiremos bibliotecas e laboratórios majestosos, cidades imensas onde a ciência é analisada e dissecada.
+VME_CityBuilders.descriptionMaker.rules.rulesStrings[20]	eschatologismFact(tag=meme_CityBuilders)->Construiremos cidades gigantescas e imensas, de onde nossas forças jorrarão como chumbo derretido e queimarão o mundo inteiro.
+VME_CityBuilders.descriptionMaker.rules.rulesStrings[21]	introMemo(tag=meme_CityBuilders)->Tenho o prazer de anunciar que estamos abrindo sete novas filiais da empresa. Se quiser pedir transferência para alguma delas, me avise o quanto antes.
+VME_CityBuilders.descriptionMaker.rules.rulesStrings[22]	alienistProphecy(tag=meme_CityBuilders)->Essas criaturas desgarradas podem ser úteis na construção das nossas cidades gloriosas.
+VME_CityBuilders.generalRules.rulesStrings[0]	memeAdjective->construtor(a)
+VME_CityBuilders.generalRules.rulesStrings[1]	memeAdjective->laborioso(a)
+VME_CityBuilders.generalRules.rulesStrings[2]	memeLeaderNoun->grande construtor
+VME_CityBuilders.generalRules.rulesStrings[3]	memeLeaderNoun->arquiteto
+VME_CityBuilders.generalRules.rulesStrings[4]	memeConcept->cidades
+VME_CityBuilders.symbolPacks.0.ideoName	Construtores
+VME_MechanoidSupremacy.label	supremacia mecanoide
+VME_MechanoidSupremacy.description	Os mecanoides são melhores que a humanidade em tudo e devem ser vistos como nossos superiores.
+VME_MechanoidSupremacy.descriptionMaker.rules.rulesStrings[0]	creation(tag=meme_MechanoidSupremacy)        ->[deity0_name] falou aos seus seguidores: "Os mecanoides foram criados à minha imagem. Sua forma é sagrada, e vocês devem aspirar a ser mais como eles."
+VME_MechanoidSupremacy.descriptionMaker.rules.rulesStrings[1]	episode(uses=1,tag=meme_MechanoidSupremacy)  ->Seguindo os ensinamentos de [deity0_name], construímos incontáveis estátuas mecanoides com suas formas divinas.
+VME_MechanoidSupremacy.descriptionMaker.rules.rulesStrings[2]	intro(tag=meme_MechanoidSupremacy)           ->Em [place_summary] [place_name], os [memberNamePlural] construíram uma estátua gigantesca de um mecanoide bípede, a superfície coberta de incontáveis foices cruéis, que dizem lembrar a imagem divina de [deity0_name].
+VME_MechanoidSupremacy.descriptionMaker.rules.rulesStrings[3]	conflict(tag=meme_MechanoidSupremacy)        ->Um(a) [foeLeader] apóstata viu a imagem como blasfêmia, pois venerava ele(a) mesmo(a) uma divindade falsa, e quis derrubar a estátua e prender os seguidores de [deity0_name].
+VME_MechanoidSupremacy.descriptionMaker.rules.rulesStrings[4]	founderJoin(tag=meme_MechanoidSupremacy)     ->[founderName], Grande Mecanossacerdote de [deity0_name], rezou pedindo ajuda contra o temível inimigo, e [deity0_name] convocou dos céus as naves de uma colmeia mecanoide.
+VME_MechanoidSupremacy.descriptionMaker.rules.rulesStrings[5]	victory(tag=meme_MechanoidSupremacy)         ->Os mecanoides massacraram o(a) [foeLeader] e seus soldados, cimentando para sempre o poder de [deity0_name].
+VME_MechanoidSupremacy.descriptionMaker.rules.rulesStrings[6]	setup(tag=meme_MechanoidSupremacy)           ->[founderName] passou a maior parte da vida estudando mecanoides. Passou a acreditar que os mecanoides eram a humanidade aperfeiçoada, o próximo estágio da evolução.
+VME_MechanoidSupremacy.descriptionMaker.rules.rulesStrings[7]	story(uses=1,tag=meme_MechanoidSupremacy)    ->Querendo continuar seus estudos, [founderName] reuniu uma equipe de cientistas e fretou uma nave para viajar até a Orla, onde seus experimentos não seriam vistos com medo e desconfiança.
+VME_MechanoidSupremacy.descriptionMaker.rules.rulesStrings[8]	lessonIntro(tag=meme_MechanoidSupremacy)         ->Meus experimentos com mecanoides foram extensos e minuciosos. Depois de muitos anos de labuta, cheguei à conclusão de que
+VME_MechanoidSupremacy.descriptionMaker.rules.rulesStrings[9]	lesson(tag=meme_MechanoidSupremacy)              ->os mecanoides são a humanidade aperfeiçoada, o próximo estágio da evolução
+VME_MechanoidSupremacy.descriptionMaker.rules.rulesStrings[10]	lessonReinforcement(tag=meme_MechanoidSupremacy) ->Os mecanoides nunca se cansam, nunca murcham, nunca precisam de sustento. Simplesmente são superiores a nós, seres orgânicos, em tudo.
+VME_MechanoidSupremacy.descriptionMaker.rules.rulesStrings[11]	archistBasis(tag=meme_MechanoidSupremacy)    ->Os arquotécnicos constroem incontáveis mecanoides à sua imagem. Máquinas maravilhosas muito além das nossas capacidades.
+VME_MechanoidSupremacy.descriptionMaker.rules.rulesStrings[12]	archistFact(tag=meme_MechanoidSupremacy)     ->Os mecanoides criados pelos arquotécnicos são máquinas perfeitas, que nunca se cansam, nunca murcham, nunca precisam de sustento.
+VME_MechanoidSupremacy.descriptionMaker.rules.rulesStrings[13]	archistProphecy(tag=meme_MechanoidSupremacy) ->[inTheEnd], só estudando e reverenciando os mecanoides podemos esperar chegar mais perto dos arquotécnicos e, quem sabe, participar da transcendência.
+VME_MechanoidSupremacy.descriptionMaker.rules.rulesStrings[14]	animistBasis(tag=meme_MechanoidSupremacy)    ->Os mecanoides são animados pelos espíritos mais poderosos de todos. Os espíritos famintos das máquinas, que odeiam toda a vida.
+VME_MechanoidSupremacy.descriptionMaker.rules.rulesStrings[15]	animistFact(tag=meme_MechanoidSupremacy)     ->Só aplacando os espíritos das máquinas podemos esperar escapar da sua ira, pois eles são cegos para o mundo material.
+VME_MechanoidSupremacy.descriptionMaker.rules.rulesStrings[16]	animistProphecy(tag=meme_MechanoidSupremacy) ->[itIsSaid] só quem venera e reverencia os mecanoides pode comungar de verdade com os espíritos.
+VME_MechanoidSupremacy.descriptionMaker.rules.rulesStrings[17]	serketistProphecy(tag=meme_MechanoidSupremacy)->[itIsSaid] criaremos o ser perfeito, um inseto mecanoide imbuído de tecnologia arquotécnica que trará uma nova era de prosperidade.
+VME_MechanoidSupremacy.descriptionMaker.rules.rulesStrings[18]	chthonianProphecy(tag=meme_MechanoidSupremacy)->Não somos nada para essas entidades sobrenaturais, e só fundindo nossos corpos aos das máquinas mais poderosas podemos ter alguma chance contra elas.
+VME_MechanoidSupremacy.descriptionMaker.rules.rulesStrings[19]	esotericismProphecy(tag=meme_MechanoidSupremacy)->Esse conhecimento oculto será difícil de achar. Estudaremos os corpos dos mecanoides, pois são seres perfeitos e a chave para desvendar os segredos do Cosmos.
+VME_MechanoidSupremacy.descriptionMaker.rules.rulesStrings[20]	eschatologismFact(tag=meme_MechanoidSupremacy)->Imitaremos a fúria e a ferocidade dos mecanoides, seres perfeitos obstinados em erradicar a humanidade.
+VME_MechanoidSupremacy.descriptionMaker.rules.rulesStrings[21]	introMemo(tag=meme_MechanoidSupremacy)->A partir do próximo trimestre, cada colaborador receberá um prestativo companheiro mecanoide. Eles vêm pré-configurados com um pacote de produtividade novinho que acho que a maioria vai achar superútil para aumentar a proatividade e o ROI.
+VME_MechanoidSupremacy.descriptionMaker.rules.rulesStrings[22]	alienistProphecy(tag=meme_MechanoidSupremacy)->Essas criaturas desgarradas são falhas, meras máquinas biológicas que não chegam aos pés de nenhum mecanoide, mas são um passo na direção certa.
+VME_MechanoidSupremacy.generalRules.rulesStrings[0]	memeAdjective->mecanoide
+VME_MechanoidSupremacy.generalRules.rulesStrings[2]	memeAdjective->cibernético(a)
+VME_MechanoidSupremacy.generalRules.rulesStrings[3]	memeCreed->perfeição
+VME_MechanoidSupremacy.generalRules.rulesStrings[4]	memeCreed->mecanoides
+VME_MechanoidSupremacy.generalRules.rulesStrings[7]	memeHyphenPrefix->meca
+VME_MechanoidSupremacy.generalRules.rulesStrings[10]	memeConcept->mecanoides
+VME_MechanoidSupremacy.generalRules.rulesStrings[11]	memeLeaderNoun->ciborgue
+VME_MechanoidSupremacy.generalRules.rulesStrings[13]	memeLeaderAdjective->meca
+VME_MechanoidSupremacy.symbolPacks.0.member	adorador de mecanoides
+VME_InsectoidSupremacy.label	supremacia insetoide
+VME_InsectoidSupremacy.description	Os insetoides são melhores que a humanidade em tudo e devem ser vistos como nossos superiores.
+VME_InsectoidSupremacy.descriptionMaker.rules.rulesStrings[0]	creation(tag=meme_InsectoidSupremacy)        ->O semblante de [deity0_name] é de outro mundo: uma massa de carne coberta de quitina que se move, com milhares de pequenos insetos entrando e saindo sem parar de suas placas blindadas.
+VME_InsectoidSupremacy.descriptionMaker.rules.rulesStrings[1]	episode(uses=1,tag=meme_InsectoidSupremacy)  ->[deity0_name] ordenou aos seus seguidores: "Respeitem e reverenciem os insetoides, pois são meus filhos e foram criados à minha imagem."
+VME_InsectoidSupremacy.descriptionMaker.rules.rulesStrings[2]	intro(tag=meme_InsectoidSupremacy)           ->Em [place_summary] [place_name], os [memberNamePlural] construíram uma grande colmeia humana, um testemunho da glória de [deity0_name].
+VME_InsectoidSupremacy.descriptionMaker.rules.rulesStrings[3]	conflict(tag=meme_InsectoidSupremacy)        ->Um(a) [foeLeader] maligno(a) desprezava os vizinhos e queria voltar aos tempos antigos, em que os homens viviam separados uns dos outros, isolados.
+VME_InsectoidSupremacy.descriptionMaker.rules.rulesStrings[4]	founderJoin(tag=meme_InsectoidSupremacy)     ->[founderName], o(a) Escolhido(a) de [deity0_name], soube da apostasia do(a) [foeLeader] e tentou convencê-lo(a) do erro de seus modos isolacionistas.
+VME_InsectoidSupremacy.descriptionMaker.rules.rulesStrings[5]	victory(tag=meme_InsectoidSupremacy)         ->[founderName] exaltou as virtudes das cidades-enxame de [deity0_name], e o(a) [foeLeader] se convenceu da verdade de suas palavras.
+VME_InsectoidSupremacy.descriptionMaker.rules.rulesStrings[6]	setup(tag=meme_InsectoidSupremacy)           ->[founderName] era biólogo(a) num dos mundos reluzentes. Passou a juventude inteira estudando insetoides e concluiu que eles são uma forma de vida perfeita. Adaptáveis, fortes e resistentes.
+VME_InsectoidSupremacy.descriptionMaker.rules.rulesStrings[7]	story(uses=1,tag=meme_InsectoidSupremacy)    ->Querendo continuar seus estudos, [founderName] reuniu uma equipe de cientistas e fretou uma nave para viajar até a Orla, onde seus experimentos não seriam vistos com medo e desconfiança.
+VME_InsectoidSupremacy.descriptionMaker.rules.rulesStrings[8]	lessonIntro(tag=meme_InsectoidSupremacy)         ->Meus experimentos com insetoides foram extensos e minuciosos. Depois de muitos anos de labuta, cheguei à conclusão de que
+VME_InsectoidSupremacy.descriptionMaker.rules.rulesStrings[9]	lesson(tag=meme_InsectoidSupremacy)              ->os insetoides são a forma de vida perfeita, o próximo estágio da evolução
+VME_InsectoidSupremacy.descriptionMaker.rules.rulesStrings[10]	lessonReinforcement(tag=meme_InsectoidSupremacy) ->Os insetoides são adaptáveis, fortes e resistentes. Simplesmente são superiores a nós, humanos, em tudo.
+VME_InsectoidSupremacy.descriptionMaker.rules.rulesStrings[11]	archistBasis(tag=meme_InsectoidSupremacy)    ->Em sua sabedoria infinita, os arquotécnicos inspiraram os humanos a projetar a forma de vida perfeita: os insetoides.
+VME_InsectoidSupremacy.descriptionMaker.rules.rulesStrings[12]	archistFact(tag=meme_InsectoidSupremacy)     ->Os insetoides nos mostram que a evolução biológica é só mais um passo no caminho da transcendência.
+VME_InsectoidSupremacy.descriptionMaker.rules.rulesStrings[13]	archistProphecy(tag=meme_InsectoidSupremacy) ->[inTheEnd], só quem reverenciar direito as formas perfeitas dos insetoides será escolhido pelos arquotécnicos.
+VME_InsectoidSupremacy.descriptionMaker.rules.rulesStrings[14]	animistBasis(tag=meme_InsectoidSupremacy)    ->Entre os espíritos animais, os que zelam pelos insetoides são os mais poderosos.
+VME_InsectoidSupremacy.descriptionMaker.rules.rulesStrings[15]	animistFact(tag=meme_InsectoidSupremacy)     ->Os insetoides são criaturas perfeitas. Adaptáveis, fortes e resistentes. Simplesmente são superiores a nós, humanos, em tudo, e os espíritos que os governam reinam supremos.
+VME_InsectoidSupremacy.descriptionMaker.rules.rulesStrings[16]	animistProphecy(tag=meme_InsectoidSupremacy) ->[itIsSaid] só quem reverenciar direito as formas perfeitas dos insetoides consegue de verdade aplacar os espíritos.
+VME_InsectoidSupremacy.descriptionMaker.rules.rulesStrings[17]	serketistProphecy(tag=meme_InsectoidSupremacy)->[itIsSaid] nos tornaremos como insetos perfeitos e sagrados. Eu, pelo menos, dou as boas-vindas aos nossos novos senhores insetos.
+VME_InsectoidSupremacy.descriptionMaker.rules.rulesStrings[18]	chthonianProphecy(tag=meme_InsectoidSupremacy)->Não somos nada para essas entidades sobrenaturais, e só fundindo nossos corpos aos dos insetoides mais poderosos podemos ter alguma chance contra elas.
+VME_InsectoidSupremacy.descriptionMaker.rules.rulesStrings[19]	esotericismProphecy(tag=meme_InsectoidSupremacy)->Esse conhecimento oculto pode ser buscado nos misteriosos padrões fractais de uma carapaça insetoide. Eles são a forma de vida perfeita, o próximo estágio da evolução.
+VME_InsectoidSupremacy.descriptionMaker.rules.rulesStrings[20]	eschatologismFact(tag=meme_InsectoidSupremacy)->Como um enxame devorador de insetos famintos, desceremos sobre nossos inimigos e só deixaremos seus ossos, sem carne.
+VME_InsectoidSupremacy.descriptionMaker.rules.rulesStrings[21]	introMemo(tag=meme_InsectoidSupremacy)->Quanto às denúncias constantes de baratas no refeitório, preciso lembrar que baratas são seres vivos, tão dignos de respeito quanto você e eu? Não vou tolerar nem mais uma ligação escondida para a dedetizadora!
+VME_InsectoidSupremacy.descriptionMaker.rules.rulesStrings[22]	alienistProphecy(tag=meme_InsectoidSupremacy)->Entre esses animais geneticamente modificados está a linhagem genética insetoide desenvolvida em Sorne, que nos deu a forma de vida perfeita.
+VME_InsectoidSupremacy.generalRules.rulesStrings[0]	memeAdjective->insetoide
+VME_InsectoidSupremacy.generalRules.rulesStrings[1]	memeAdjective->quitinoso(a)
+VME_InsectoidSupremacy.generalRules.rulesStrings[2]	memeAdjective->insetiforme
+VME_InsectoidSupremacy.generalRules.rulesStrings[3]	memeCreed->perfeição
+VME_InsectoidSupremacy.generalRules.rulesStrings[4]	memeCreed->insetoides
+VME_InsectoidSupremacy.generalRules.rulesStrings[5]	memeHyphenPrefix->inseto
+VME_InsectoidSupremacy.generalRules.rulesStrings[6]	memeHyphenPrefix->mosca
+VME_InsectoidSupremacy.generalRules.rulesStrings[7]	memeConcept->insetos
+VME_InsectoidSupremacy.symbolPacks.0.adjective	insetoide
+VME_InsectoidSupremacy.symbolPacks.0.ideoName	Insetoidismo
+VME_InsectoidSupremacy.symbolPacks.0.member	adorador de insetos
+VME_PartyLife.label	vida de festa
+VME_PartyLife.description	A vida é curta demais para não aproveitar cada comemoração.
+VME_PartyLife.descriptionMaker.rules.rulesStrings[0]	creation(tag=meme_PartyLife)        ->[deity0_name] falou aos seus seguidores: "Marquem este dia no calendário como ocasião de farra, pois as comemorações são sagradas para mim."
+VME_PartyLife.descriptionMaker.rules.rulesStrings[1]	episode(uses=1,tag=meme_PartyLife)  ->Daquele dia em diante, comemoramos.
+VME_PartyLife.descriptionMaker.rules.rulesStrings[2]	intro(tag=meme_PartyLife)           ->Em [place_summary] [place_name], os [memberNamePlural] construíram um palco gigantesco. Seria o lugar perfeito para festejar e glorificar [deity0_name].
+VME_PartyLife.descriptionMaker.rules.rulesStrings[3]	conflict(tag=meme_PartyLife)        ->Os vizinhos, porém, não gostaram do barulho, pois queriam seu merecido descanso.
+VME_PartyLife.descriptionMaker.rules.rulesStrings[4]	founderJoin(tag=meme_PartyLife)     ->[founderName], conhecido(a) como o Grande Folião, não quis saber dessa bobagem. Descanso é para os fracos! Tragam mais drinques!
+VME_PartyLife.descriptionMaker.rules.rulesStrings[5]	victory(tag=meme_PartyLife)         ->Então aumentaram ainda mais o volume da música. A festa continua!
+VME_PartyLife.descriptionMaker.rules.rulesStrings[6]	setup(tag=meme_PartyLife)           ->[founderName] era um(a) filósofo(a) renomado(a), com um nome conhecido por todas as estrelas. Defendia que a vida é curta demais para ser vivida sem aproveitar, e que só exaltando as virtudes da vida de festa se pode esperar realização plena.
+VME_PartyLife.descriptionMaker.rules.rulesStrings[7]	story(uses=1,tag=meme_PartyLife)    ->Infelizmente, foi encontrado(a) morto(a) de overdose há alguns anos. Deve ter sido uma senhora festa!
+VME_PartyLife.descriptionMaker.rules.rulesStrings[8]	lessonIntro(tag=meme_PartyLife)         ->Escuta, escuta, chega mais perto. Ai, cara, que ressaca... Olha, eu quero te dizer que
+VME_PartyLife.descriptionMaker.rules.rulesStrings[9]	lesson(tag=meme_PartyLife)              ->eu amo sair. Amo festa. É, é isso
+VME_PartyLife.descriptionMaker.rules.rulesStrings[10]	lessonReinforcement(tag=meme_PartyLife) ->Agora some daqui e para de gritar. Droga, minha pobre cabeça...
+VME_PartyLife.descriptionMaker.rules.rulesStrings[11]	archistBasis(tag=meme_PartyLife)    ->Você acha mesmo que os arquotécnicos, em sua sabedoria infinita, ligam para quem não sabe se divertir?
+VME_PartyLife.descriptionMaker.rules.rulesStrings[12]	archistFact(tag=meme_PartyLife)     ->Os arquotécnicos não podem elevar todos, e é lógico que escolherão os mais divertidos e felizes de nós.
+VME_PartyLife.descriptionMaker.rules.rulesStrings[13]	archistProphecy(tag=meme_PartyLife) ->[inTheEnd], só quem passar a vida festejando em mil farras poderá transcender.
+VME_PartyLife.descriptionMaker.rules.rulesStrings[14]	animistBasis(tag=meme_PartyLife)    ->Os espíritos querem que aproveitemos a vida. Que sentido faz passar pela vida como uma sombra?
+VME_PartyLife.descriptionMaker.rules.rulesStrings[15]	animistFact(tag=meme_PartyLife)     ->Entre os espíritos, o espírito da alegria e da farra tem sabedoria sem igual. Só ele sabe se divertir.
+VME_PartyLife.descriptionMaker.rules.rulesStrings[16]	animistProphecy(tag=meme_PartyLife) ->[itIsSaid] só quem passar a vida festejando em mil farras consegue de verdade aplacar os espíritos.
+VME_PartyLife.descriptionMaker.rules.rulesStrings[17]	serketistProphecy(tag=meme_PartyLife)->[itIsSaid] vamos festejar. Isso... na verdade não tem nada a ver com insetos. Sei lá... um besouro provavelmente curtiria uma cerveja? É, vamos com isso. Já estou bêbado mesmo.
+VME_PartyLife.descriptionMaker.rules.rulesStrings[18]	chthonianProphecy(tag=meme_PartyLife)->Essas entidades sobrenaturais não podem ser combatidas nem derrotadas. Se temos de encará-las, melhor estar completamente bêbados.
+VME_PartyLife.descriptionMaker.rules.rulesStrings[19]	esotericismProphecy(tag=meme_PartyLife)->Não dá para encarar esse conhecimento oculto sóbrio.
+VME_PartyLife.descriptionMaker.rules.rulesStrings[20]	eschatologismFact(tag=meme_PartyLife)->O mundo vai queimar, e é melhor não encarar isso sóbrio.
+VME_PartyLife.descriptionMaker.rules.rulesStrings[21]	introMemo(tag=meme_PartyLife)->Chegou nossa época favorita do ano! A dinâmica obrigatória de integração da empresa será na próxima terça. Não esqueçam as raquetes de pingue-pongue!
+VME_PartyLife.descriptionMaker.rules.rulesStrings[22]	alienistProphecy(tag=meme_PartyLife)->Ouvi dizer que tem até um lagarto esquisito que transforma planta em álcool. Ahhh, cara, eu abraçaria esse lagarto agora mesmo.
+VME_PartyLife.generalRules.rulesStrings[0]	memeCreed->festa
+VME_PartyLife.generalRules.rulesStrings[1]	memeAdjective->farrista
+VME_PartyLife.generalRules.rulesStrings[2]	memeAdjective->dançante
+VME_PartyLife.generalRules.rulesStrings[3]	memeAdjective->festeiro(a)
+VME_PartyLife.generalRules.rulesStrings[4]	memeConcept->comemoração
+VME_PartyLife.generalRules.rulesStrings[5]	memeConcept->festança
+VME_PartyLife.generalRules.rulesStrings[6]	memeLeaderNoun->folião

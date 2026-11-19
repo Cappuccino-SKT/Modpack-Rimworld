@@ -1,0 +1,288 @@
+{
+ "id": "Irmandade_Fuzileiro",
+ "label": "Irmandade Fuzileiro",
+ "faction": "EQ_Faction_Forja",
+ "pawnKinds": [
+  "EQ_U_Forja_Fuzileiro"
+ ],
+ "chance": 1,
+ "variations": [
+  {
+   "name": "Urbano",
+   "weight": 1,
+   "apparel": [
+    {
+     "def": "CE_Armor_FragSuit",
+     "quality": "Good"
+    },
+    {
+     "def": "CE_Armor_LargeBackpack",
+     "quality": "Good"
+    },
+    {
+     "def": "Apparel_Broadwrap",
+     "quality": "Good"
+    },
+    {
+     "def": "Apparel_AdvancedHelmet",
+     "quality": "Good"
+    },
+    {
+     "def": "CE_Apparel_CompositeVest",
+     "quality": "Good"
+    },
+    {
+     "def": "CE_Apparel_TacVest",
+     "quality": "Good"
+    },
+    {
+     "def": "CE_Armor_BallisticGoggles",
+     "quality": "Good"
+    }
+   ],
+   "weapons": [
+    {
+     "def": "CE_Gun_FNFAL",
+     "quality": "Good"
+    },
+    {
+     "def": "CE_Gun_FNFiveSeven",
+     "quality": "Good"
+    },
+    {
+     "def": "Weapon_GrenadeFrag"
+    },
+    {
+     "def": "VWE_MeleeWeapon_CombatKnife",
+     "quality": "Good"
+    }
+   ],
+   "inventory": [
+    {
+     "def": "MealSurvivalPack",
+     "count": 2
+    },
+    {
+     "def": "MedicineIndustrial",
+     "count": 2
+    },
+    {
+     "def": "Ammo_762x51mmNATO_FMJ",
+     "count": 100
+    },
+    {
+     "def": "Ammo_FN57x28mm_HP",
+     "count": 20
+    }
+   ]
+  },
+  {
+   "name": "Toxico",
+   "weight": 1,
+   "apparel": [
+    {
+     "def": "CE_Armor_FragSuit",
+     "quality": "Good"
+    },
+    {
+     "def": "CE_Armor_LargeBackpack",
+     "quality": "Good"
+    },
+    {
+     "def": "Apparel_Broadwrap",
+     "quality": "Good"
+    },
+    {
+     "def": "Apparel_AdvancedHelmet",
+     "quality": "Good"
+    },
+    {
+     "def": "CE_Apparel_CompositeVest",
+     "quality": "Good"
+    },
+    {
+     "def": "CE_Apparel_TacVest",
+     "quality": "Good"
+    },
+    {
+     "def": "CE_Apparel_GasMask",
+     "quality": "Good"
+    }
+   ],
+   "weapons": [
+    {
+     "def": "CE_Gun_FNFAL",
+     "quality": "Good"
+    },
+    {
+     "def": "CE_Gun_FNFiveSeven",
+     "quality": "Good"
+    },
+    {
+     "def": "Weapon_GrenadeTox"
+    },
+    {
+     "def": "VWE_MeleeWeapon_CombatKnife",
+     "quality": "Good"
+    },
+    {
+     "def": "Weapon_GrenadeFrag"
+    }
+   ],
+   "inventory": [
+    {
+     "def": "MealSurvivalPack",
+     "count": 2
+    },
+    {
+     "def": "MedicineIndustrial",
+     "count": 2
+    },
+    {
+     "def": "Ammo_762x51mmNATO_FMJ",
+     "count": 100
+    },
+    {
+     "def": "Ammo_FN57x28mm_HP",
+     "count": 20
+    }
+   ]
+  },
+  {
+   "name": "Granadeiro",
+   "weight": 1,
+   "apparel": [
+    {
+     "def": "CE_Armor_FragSuit",
+     "quality": "Good"
+    },
+    {
+     "def": "CE_Armor_LargeBackpack",
+     "quality": "Good"
+    },
+    {
+     "def": "Apparel_Broadwrap",
+     "quality": "Good"
+    },
+    {
+     "def": "Apparel_AdvancedHelmet",
+     "quality": "Good"
+    },
+    {
+     "def": "CE_Apparel_CompositeVest",
+     "quality": "Good"
+    },
+    {
+     "def": "CE_Apparel_TacVest",
+     "quality": "Good"
+    },
+    {
+     "def": "CE_Apparel_GasMask",
+     "quality": "Good"
+    }
+   ],
+   "weapons": [
+    {
+     "def": "CE_Gun_FNFAL",
+     "quality": "Good"
+    },
+    {
+     "def": "CE_Gun_FNFiveSeven",
+     "quality": "Good"
+    },
+    {
+     "def": "VWE_MeleeWeapon_CombatKnife",
+     "quality": "Good"
+    },
+    {
+     "def": "CE_Gun_RPGSeven",
+     "quality": "Good"
+    }
+   ],
+   "inventory": [
+    {
+     "def": "MealSurvivalPack",
+     "count": 2
+    },
+    {
+     "def": "MedicineIndustrial",
+     "count": 2
+    },
+    {
+     "def": "Ammo_762x51mmNATO_FMJ",
+     "count": 100
+    },
+    {
+     "def": "Ammo_FN57x28mm_HP",
+     "count": 20
+    },
+    {
+     "def": "Ammo_RPG7Grenade_HEAT",
+     "count": 3
+    }
+   ]
+  },
+  {
+   "name": "Suporte",
+   "weight": 1,
+   "apparel": [
+    {
+     "def": "CE_Armor_FragSuit",
+     "quality": "Good"
+    },
+    {
+     "def": "CE_Armor_LargeBackpack",
+     "quality": "Good"
+    },
+    {
+     "def": "Apparel_Broadwrap",
+     "quality": "Good"
+    },
+    {
+     "def": "Apparel_AdvancedHelmet",
+     "quality": "Good"
+    },
+    {
+     "def": "CE_Apparel_CompositeVest",
+     "quality": "Good"
+    },
+    {
+     "def": "CE_Apparel_TacVest",
+     "quality": "Good"
+    },
+    {
+     "def": "CE_Apparel_GasMask",
+     "quality": "Good"
+    }
+   ],
+   "weapons": [
+    {
+     "def": "CE_Gun_PKM",
+     "quality": "Good"
+    },
+    {
+     "def": "CE_Gun_FNFiveSeven",
+     "quality": "Good"
+    }
+   ],
+   "inventory": [
+    {
+     "def": "MealSurvivalPack",
+     "count": 2
+    },
+    {
+     "def": "MedicineIndustrial",
+     "count": 2
+    },
+    {
+     "def": "Ammo_762x54mmR_AP",
+     "count": 200
+    },
+    {
+     "def": "Ammo_FN57x28mm_HP",
+     "count": 20
+    }
+   ]
+  }
+ ]
+}

@@ -13,3 +13,13 @@
 /EcosDaQueda-Dev/test-profile/
 /EcosDaQueda-Dev/tests/out/
 /EcosDaQueda-Dev/trans-export/
+# Editor de kits: catálogo e ícones são gerados do jogo (kits.py catalog); o extrator compila em tool/bin e tool/obj
+/EcosDaQueda-Dev/kits/kitcatalog.json
+/EcosDaQueda-Dev/kits/icons/
+/EcosDaQueda-Dev/kits/tool/bin/
+/EcosDaQueda-Dev/kits/tool/obj/
+/EcosDaQueda-Dev/kits/__pycache__/
+
+# Cache do Python e configuração local do Claude Code
+__pycache__/
+/EcosDaQueda-Dev/.claude/

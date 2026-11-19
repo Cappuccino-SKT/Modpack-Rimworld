@@ -1,0 +1,41 @@
+# Etapa 10e: frente de trincheira (abstrata no fim do prazo; jogada com mapa: trincheiras, dois lados, onda, avanço, fim).
+newgame
+timeout 900
+forces frontchance 0
+join forja
+wait 1h
+leader set 0
+psy title 5 forja
+wait 1h
+forces hegwar forja coro
+wait 1h
+choose Comando de campanha 0
+forces played
+forces arrive
+forces front
+letters
+# sem visita: o prazo vence e a batalha se decide sozinha
+forces front expire
+wait 1h
+forces front
+forces
+forces step 400
+# com visita: mapa da frente (guerra forçada: a do Hegemony acaba com a primeira conquista)
+forces war forja coro
+forces raise forja coro 30
+choose Comando de campanha 0
+forces played
+forces arrive
+forces front visit
+forces front
+wait 3h
+forces front check
+wait 4h
+forces front
+forces front
+forces front kill defender
+forces front check
+forces front
+obligations
+forces log
+dump

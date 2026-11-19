@@ -1,17 +1,3 @@
-# Etapa 3a: árvore própria e trava da pesquisa fora da bancada.
-newgame
-tech status
-tech try Electricity
-tech try MultiAnalyzer
-tech finish MicroelectronicsBasics
-tech try MultiAnalyzer
-tech try Xenogermination
-tech try VWE_LaserWeapons
-tech current Xenogermination
-tech grant Xenogermination
-tech try Xenogermination
-tech current Xenogermination
-tech work 200
-tech revoke Xenogermination
-tech work 200
-tech status
+# Pesquisa do editor de árvore: confere os projetos gerados (desbloqueios aplicados, aba, ramo) e um projeto de teste na memória.
+newgame EQ_Scenario_Abrigo EQ_Storyteller_Central
+pesquisa

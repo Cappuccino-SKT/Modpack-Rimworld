@@ -1,0 +1,16 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <!-- Extrai os ícones dos itens do catálogo (kits/kitcatalog.json) para kits/icons/<defName>.png, sem abrir o jogo.
+       Usa as bibliotecas do próprio jogo (pasta raiz do RimWorld): ZstdSharp (Assets.zip do Waylith),
+       Waylith (junta as texturas ".split") e AssetRipper.TextureDecoder (BC1/BC3/BC7). -->
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net10.0</TargetFramework>
+    <Nullable>disable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <GameDir>$(MSBuildThisFileDirectory)..\..\..\</GameDir>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ZstdSharp"><HintPath>$(GameDir)ZstdSharp.dll</HintPath></Reference>
+    <Reference Include="AssetRipper.TextureDecoder"><HintPath>$(GameDir)AssetRipper.TextureDecoder.dll</HintPath></Reference>
+  </ItemGroup>
+</Project>
