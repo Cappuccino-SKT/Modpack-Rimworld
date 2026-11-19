@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <!--
+    Mundo fixo (MUNDO.md, M3): quando o mundo vem do preset "EcosDaQueda" do Worldbuilder, as facções da lista
+    perdem as cidades sorteadas e ganham estas. Coordenadas do MUNDO NOVO (calota 25%), as mesmas de mundo/pintura.tsv
+    (prévia mundo/preview-v2.png: x = (lon+60)*10, y = (90-lat)*10). Se o tile exato não serve (água, montanha
+    intransponível, outra cidade perto), vale o tile livre mais próximo. A primeira cidade de cada potência é a capital.
+  -->
+  <EcosDaQueda.FixedWorldDef>
+    <defName>EQ_MundoFixo</defName>
+    <label>mundo do Ecos da Queda</label>
+    <presetName>EcosDaQueda</presetName>
+    <minSpacing>4</minSpacing>
+    <searchRadius>6</searchRadius>
+    <settlements>
+      <!-- Irmandade da Forja: Grandes Lagos / cinturão da ferrugem -->
+      <li><faction>EQ_Faction_Forja</faction><name>Detroit, a Linha-Mãe</name><lat>39.5</lat><lon>36</lon><capital>true</capital></li>
+      <li><faction>EQ_Faction_Forja</faction><name>Pittsburgh das Fornalhas</name><lat>36.5</lat><lon>38.5</lon></li>
+      <li><faction>EQ_Faction_Forja</faction><name>Chicago do Recall</name><lat>37.5</lat><lon>30.5</lon></li>
+      <!-- Concílio da Hélice: Costa Oeste -->
+      <li><faction>EQ_Faction_Helice</faction><name>Vale do Silício, Sede Central</name><lat>33</lat><lon>-9.5</lon><capital>true</capital></li>
+      <li><faction>EQ_Faction_Helice</faction><name>Los Angeles por Assinatura</name><lat>30</lat><lon>-6</lon></li>
+      <li><faction>EQ_Faction_Helice</faction><name>Seattle Patenteada</name><lat>42.5</lat><lon>-10</lon></li>
+      <!-- O Coro Ascendente: Costa Leste -->
+      <li><faction>EQ_Faction_Coro</faction><name>Washington, a Corte</name><lat>35</lat><lon>43</lon><capital>true</capital></li>
+      <li><faction>EQ_Faction_Coro</faction><name>Nova York Tributária</name><lat>37.5</lat><lon>46</lon></li>
+      <li><faction>EQ_Faction_Coro</faction><name>Boston dos Salmos</name><lat>40</lat><lon>49.5</lon></li>
+      <!-- Ordem do Silêncio Perpétuo: Montanhas Rochosas e o norte -->
+      <li><faction>EQ_Faction_Silencio</faction><name>Monte Cheyenne, o Cofre Mudo</name><lat>34</lat><lon>8</lon><capital>true</capital></li>
+      <li><faction>EQ_Faction_Silencio</faction><name>Los Alamos Lacrada</name><lat>29.5</lat><lon>7</lon></li>
+      <li><faction>EQ_Faction_Silencio</faction><name>Yellowknife do Arquivo</name><lat>62</lat><lon>3.5</lon></li>
+      <!-- Facções menores: uma cidade cada -->
+      <li><faction>EQ_Faction_SindicatoDoSaque</faction><name>Las Vegas, a Banca</name><lat>29.5</lat><lon>-2</lon></li>
+      <li><faction>EQ_Faction_ReinoDoLodo</faction><name>Nova Orleans Submersa</name><lat>18.5</lat><lon>27.5</lon></li>
+      <li><faction>EQ_Faction_NaoCatalogados</faction><name>Ninho dos Apalaches</name><lat>33</lat><lon>36</lon></li>
+      <li><faction>EQ_Faction_ColmeiaErguida</faction><name>Colmeia do Texas</name><lat>24</lat><lon>15</lon></li>
+    </settlements>
+  </EcosDaQueda.FixedWorldDef>
+</Defs>
