@@ -1,0 +1,11 @@
+# F3: rendimento do território no mundo fixo. Cada tile rende pelo bioma para a cidade mais próxima da facção.
+# yield mostra o que um dia entrega e o estoque; yieldnow entrega um dia na hora.
+newgame EQ_Scenario_Andarilhos
+timeout 1500
+frontierskip 12
+wait 1d
+yield
+yieldnow
+yield
+wait 1d
+yield

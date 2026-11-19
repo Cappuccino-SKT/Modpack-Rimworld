@@ -124,6 +124,14 @@ Riscos: o Worldbuilder é recente e grande (65 MB); pode brigar com mods de mund
 - **Medição** (roteiro `fronteira.txt`, comandos `frontier` e `frontierskip`): dia 2 ≈ 100–120 tiles no total (antes ~950); +12 dias ≈ 850; +40 dias ≈ 1.300, com 10–11 cidades novas (potências com 5). Las Vegas: 1 tile no dia 2, ~14 por cidade no fim.
 - **Achado à parte:** com "Saídos do abrigo" (começo no abrigo selado do VQE Ancients), o Hospitality falha ao trazer visitas ("parms couldn't be resolved", dia 2–3), também sem o F2. O roteiro usa "Andarilhos".
 
+### Resultado do F3 (2026-11-19): bônus por tile
+
+- **O que o Hegemony já fazia:** os modificadores da cidade (`SettlementTerrain.Modifiers`) vêm só do **tile da própria cidade** (bioma por `BiomeEffectDef`, morro, rio, costa, estrada, marco); os **marcos e sítios dentro do território** já vão para a cidade (`LandmarkHoldings`). Faltava o resto do território render. As 12 zonas da Queda não tinham perfil (fórmula genérica pela densidade de plantas).
+- **Perfis das zonas da Queda** (`Mods/Hegemony/Defs/EQ_HegemonyZonasDaQueda.xml`, `BiomeEffectDef` do Hegemony): comida, materiais, componentes, defesa, pesquisa, felicidade e água insegura com descrição satírica (ex.: intrusão mecanoide dá metal e componentes e tira comida e felicidade; prados idílicos dão comida e um contentamento que ninguém explica).
+- **Rendimento por tile** (`TerritoryYield.cs`, `Defs/World/EQ_RendimentoTerritorio.xml`): uma vez por dia, cada tile do território (fora os de cidade) vai para a cidade mais próxima da facção dona (até 60 tiles por cidade, os mais perto) e rende comida, madeira/pedra/metal e prosperidade × (1 + perfil do bioma × 2); morro e montanha dão pedra e metal; rio dá comida; estrada dá prosperidade; zonas com componentes dão componentes. Entrega nos estoques do Hegemony (`FoodStocks.Change`, `Materials.Add` por reflexão; prosperidade e felicidade públicas). Só no mundo fixo. Jogador fica de fora (F4).
+- **Calibração** (roteiro `rendimento.txt`, comandos `yield`/`yieldnow`): numa cidade com 60 tiles, ~+30% de prosperidade, ~+30% de comida e ~+10% de materiais sobre o crescimento natural de um dia. Las Vegas não tira comida do deserto (perfil negativo).
+- **Tentativa descartada:** somar direto no `SettlementModifiers` (struct interna) exigiria publicizar a DLL do Hegemony com um pacote externo; o ambiente recusou e a via pública (estoques) bastou.
+
 ## 5. Blocos (ordem sugerida)
 
 | Bloco | O que entrega | Depende de |
@@ -134,7 +142,7 @@ Riscos: o Worldbuilder é recente e grande (65 MB); pode brigar com mods de mund
 | ~~**M3**~~ | (**M3a e M3b feitos 2026-11-19**: cidades fixas, marcos, mutadores, estradas; preset no mod, Worldbuilder no modpack, cenários abrem no mundo) Mundo do Ecos: posições fixas das facções (✱ mapa de regiões), marcos, zonas; cenários usam o mundo; geração aleatória desligada | M2, ✱ regiões |
 | ~~**F1**~~ | Como o território do Hegemony cresce e se dá para controlar por cidade (**feito 2026-11-19**: dá, pelo multiplicador por cidade; caminho A confirmado) | — |
 | ~~**F2**~~ | Fronteira que cresce aos poucos + cidade nova pela distância (NPCs) (**feito 2026-11-19**, com capital) | F1 |
-| **F3** | Bônus por tile (bioma, zona da Queda, marcos) | F1 |
+| ~~**F3**~~ | Bônus por tile (bioma, zona da Queda, marcos) (**feito 2026-11-19**; marcos já eram do Hegemony) | F1 |
 | **F4** | Fronteira do jogador: marcos de fronteira, direção, cidade nova do jogador | F2 |
 | **F5** | Exército toma fronteira (frentes de fronteira passam tiles) | F2, 10d |
 | **F6** | Medição de desempenho em jogo longo no mundo novo (10a) e ajustes | tudo |
