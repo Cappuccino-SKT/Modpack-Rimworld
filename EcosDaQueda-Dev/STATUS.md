@@ -22,7 +22,7 @@ _Só o estado atual e os próximos passos. Manter curto (até ~60 linhas). Detal
 
 ## Não commitado
 
-Blocos 11b, 11d, 10d (1ª parte), 11c e 10e (2º bloco: `Fronts.cs`, `Forces.cs`, `HegemonyIntegration.cs`, `ForcesDebug.cs`, `tests/frente-hegemony.txt`) (`Forces.cs`, `EQ_Forces.xml`, `ForcesDebug.cs`, `tests/comando.txt`), 10e (`Fronts.cs`, `tests/frente.txt`; `TestRunner.cs` ignora o log do CE sobre roupa sem armadura). 11b/11d: `Encargos.cs`, `EQ_Encargos.xml`, `Allegiance.cs`, `PowerEvents.cs`, `Leadership.cs`, `MainTabWindow_Reputation.cs`; debug `EncargosDebug.cs`, `TestRunner.cs`; `tests/encargos.txt`, `tests/promocao.txt`. 10d: `Forces.cs`, `EQ_Forces.xml`, `PowerEvents.cs` (`warCall`, `armyStrength`/`armyMorale`), `HegemonyIntegration.cs`, `MainTabWindow_Reputation.cs`; debug `ForcesDebug.cs`, `TestRunner.cs` (`forces`); `tests/tropas.txt`, `regress.ps1`. Docs (STATUS, HISTORICO, PLANO, TESTES, `tecnico/codigo.md`).
+Nada: commit e push de 2026-11-19 (main, mod/ecos-da-queda, -debug e -traducao, inclusive a tradução do VMemes). Resumo geral do projeto: `RESUMO.md`.
 
 ## Próximo passo
 
