@@ -56,6 +56,10 @@ namespace EcosDaQueda
         public float retaliationChance;
         public float retaliationDelayDays = 2f;
         public float retaliationPointsFactor = 0.8f;
+
+        /// <summary>Etapa 10d: reforço ao exército da potência em marcha (chamada às armas).</summary>
+        public float armyStrength;
+        public float armyMorale;
     }
 
     /// <summary>
@@ -85,6 +89,8 @@ namespace EcosDaQueda
         public int minGoodwill = -100;
         /// <summary>Etapa 5c: a carta pode vir de facção hostil (ex.: trégua oferecida pelos Não Catalogados).</summary>
         public bool allowHostile;
+        /// <summary>Etapa 10d: chamada às armas; só sai quando a potência levanta um exército (Forces.cs), nunca por MTB.</summary>
+        public bool warCall;
         [MustTranslate] public string letterLabel;
         [MustTranslate] public string letterText;
         public List<PowerEventOption> options = new List<PowerEventOption>();
@@ -175,6 +181,16 @@ namespace EcosDaQueda
             return EQPowerEvents.Demote(alg, f);
         }
 
+        /// <summary>Etapa 11d: serviço bem feito apaga uma falta (encargo cumprido).</summary>
+        public bool ClearStrike(Faction f)
+        {
+            int n = StrikesWith(f);
+            if (n <= 0) return false;
+            strikes[f.def.defName] = n - 1;
+            Messages.Message(f.Name + ": uma falta apagada pelo bom serviço (" + (n - 1) + " de " + StrikesToDemote + ").", MessageTypeDefOf.PositiveEvent);
+            return true;
+        }
+
         public void Lend(Pawn p, Faction f, float days)
         {
             Map map = p.MapHeld;
@@ -218,6 +234,7 @@ namespace EcosDaQueda
             Faction f = FactionOf(d);
             if (f == null || f.defeated) return "potência ausente";
             if (f.HostileTo(Faction.OfPlayer) && !d.allowHostile) return "potência hostil";
+            if (d.warCall && !ignoreTime) return "só quando a potência mobiliza um exército";
             Map map = Find.AnyPlayerHomeMap;
             if (map == null) return "sem colônia";
             if (!ignoreTime && lastFired.TryGetValue(d.defName, out int last) && Find.TickManager.TicksGame - last < d.minIntervalDays * 60000)
@@ -354,11 +371,14 @@ namespace EcosDaQueda
                 Pawn p = map.mapPawns.PrisonersOfColonySpawned.FirstOrDefault();
                 if (p != null) EQItems.HandOver(p, f);
             }
+            Pawn lentPawn = null;
             if (o.lendColonistDays > 0)
             {
-                Pawn lentPawn = EQPowerEvents.ChooseLent(map, o.lendSkill);
+                lentPawn = EQPowerEvents.ChooseLent(map, o.lendSkill);
                 if (lentPawn != null) WorldComponent_PowerEvents.Current?.Lend(lentPawn, f, o.lendColonistDays);
             }
+            if ((o.armyStrength > 0 || o.armyMorale > 0) && WorldComponent_EQForces.Current != null)
+                EQPowerEvents.LastArmySupport = WorldComponent_EQForces.Current.Support(f, o.armyStrength, o.armyMorale, lentPawn != null);
             WorldComponent_Allegiance.ApplyOutcome(f, o.fame, o.infamy, o.goodwill);
             if (o.favorLoss > 0)
             {
@@ -454,6 +474,7 @@ namespace EcosDaQueda
         /// <summary>Teste: o próximo contra-ataque sorteado acontece com certeza.</summary>
         public static bool ForceRetaliation;
         public static string LastRetaliation;
+        public static string LastArmySupport;
 
         /// <summary>Quem vai servir: colono livre, nunca o líder nem o último; o melhor na perícia pedida.</summary>
         public static Pawn ChooseLent(Map map, SkillDef skill)

@@ -19,6 +19,7 @@ namespace EcosDaQueda
             EQVehicles.Apply();
             EQSanity.Apply();
             EQResearch.Apply();
+            EQResearchUnlocks.ApplyAll();
             EQThirdPartyFixes.CleanBadRules();
         }
     }

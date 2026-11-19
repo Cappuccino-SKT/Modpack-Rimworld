@@ -242,6 +242,29 @@ namespace EcosDaQueda
         public bool hegLinked;
         public bool needsLeaderChoice;
         public int lastCeremonyQuestTick = -999999;
+        /// <summary>Etapa 11d: o jogador recusa promoções (fica no cargo e nas obrigações dele; o favor continua acumulando).</summary>
+        public bool refusePromotion;
+
+        public void SetRefusePromotion(bool refuse)
+        {
+            refusePromotion = refuse;
+            Faction power = ActivePower;
+            if (refuse && power != null && leader?.royalty?.GetCurrentTitle(power) != null)
+            {
+                Quest q = RoyalTitleUtility.GetCurrentBestowingCeremonyQuest(leader, power);
+                if (q != null && (q.State == QuestState.Ongoing || q.State == QuestState.NotYetAccepted))
+                    q.End(QuestEndOutcome.Fail, sendLetter: false);
+            }
+            if (!refuse)
+            {
+                lastCeremonyQuestTick = -999999;
+                if (power != null && leader?.royalty != null && !power.HostileTo(Faction.OfPlayer) && RoyalTitleUtility.ShouldGetBestowingCeremonyQuest(leader, power))
+                    RoyalTitleUtility.GenerateBestowingCeremonyQuest(leader, power);
+            }
+            Messages.Message(refuse
+                ? "Promoções recusadas: " + (power?.Name ?? "a potência") + " não marca cerimônias de promoção. O favor continua acumulando (pode comprar licenças)."
+                : "Promoções aceitas de novo: a próxima cerimônia vem quando houver favor para o cargo seguinte.", MessageTypeDefOf.NeutralEvent);
+        }
         public Dictionary<string, int> favorCounters = new Dictionary<string, int>();
 
         public int joinedTick = -1;
@@ -313,6 +336,7 @@ namespace EcosDaQueda
             Scribe_Values.Look(ref cachedFavor, "cachedFavor");
             Scribe_Values.Look(ref hegLinked, "hegLinked");
             Scribe_Values.Look(ref lastCeremonyQuestTick, "lastCeremonyQuestTick", -999999);
+            Scribe_Values.Look(ref refusePromotion, "refusePromotion");
             Scribe_Collections.Look(ref favorCounters, "favorCounters", LookMode.Value, LookMode.Value);
             Scribe_Values.Look(ref joinedTick, "joinedTick", -1);
             Scribe_Values.Look(ref lastRank, "lastRank", -1);

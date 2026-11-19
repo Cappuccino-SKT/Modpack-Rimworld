@@ -91,6 +91,12 @@ namespace EcosDaQueda
                 Find.WindowStack.Add(new Dialog_EQLicenses());
             if (Widgets.ButtonText(new Rect(inner.xMax - 130f, inner.y + 48f, 130f, 22f), "Sucessor"))
                 Find.WindowStack.Add(new Dialog_EQChooseLeader(forced: false, successorMode: true));
+            Rect promo = new Rect(inner.xMax - 266f, inner.y, 130f, 22f);
+            if (Widgets.ButtonText(promo, alg.refusePromotion ? "Aceitar promoções" : "Recusar promoções"))
+                alg.SetRefusePromotion(!alg.refusePromotion);
+            TooltipHandler.TipRegion(promo, alg.refusePromotion
+                ? "Promoções recusadas: a potência não marca cerimônias de promoção e o líder fica no cargo atual (com as obrigações dele). O favor continua acumulando."
+                : "Recusar promoções: o líder fica no cargo atual e nas obrigações dele; o favor continua acumulando e pode comprar licenças.");
             Rect third = new Rect(inner.xMax - 130f, inner.y + 72f, 130f, 22f);
             if (leader == null)
             {
@@ -104,9 +110,18 @@ namespace EcosDaQueda
             GUI.DrawTexture(iconRect, alg.memberOf.def.FactionIcon);
             GUI.color = Color.white;
             float x = iconRect.xMax + 10f;
-            float w = inner.width - 214f;
+            float w = inner.width - 350f;
             Text.Font = GameFont.Small;
-            Widgets.Label(new Rect(x, inner.y, w, 24f), "<b>Lealdade:</b> " + alg.RankLabel + " de " + alg.memberOf.Name);
+            string encargo = WorldComponent_Encargos.Current?.Describe();
+            string war = WorldComponent_EQForces.Current?.Describe(alg.memberOf);
+            Rect lealRect = new Rect(x, inner.y, w, 24f);
+            Widgets.Label(lealRect, "<b>Lealdade:</b> " + alg.RankLabel + " de " + alg.memberOf.Name
+                + (encargo != null ? "   ·   <b>Encargo:</b> " + encargo : "")
+                + (war != null ? "   ·   <b>Em guerra</b>" : ""));
+            if (encargo != null || war != null)
+                TooltipHandler.TipRegion(lealRect, (encargo != null ? "Andamento: " + WorldComponent_Encargos.Current.ProgressLine() : "")
+                    + (encargo != null && war != null ? "\n\n" : "")
+                    + (war != null ? alg.memberOf.Name + ": " + war + "." : ""));
             if (d == null || rank < 0)
                 return;
             string next = rank + 1 < d.ranks.Count && d.ranks[rank + 1].title != null

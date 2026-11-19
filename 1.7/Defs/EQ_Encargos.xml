@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <!-- Etapa 11b: encargos (Encargos.cs). A partir do 3º cargo (minRank 2), a potência entrega ao membro algo para
+       administrar, com metas por período (15 dias) e relatório. Metas crescem 50% por cargo acima do mínimo (perRank).
+       Entregas (DeliverThing/DeliverTag) saem da área de casa no dia do relatório; as outras contam o que aconteceu no
+       período (TradeSilver = prata negociada; QualityCrafted = itens de qualidade minQuality+; ResearchFinished;
+       RitualFinished). Cumprir tudo: favor + Fama + recompensa. Metade ou mais: favor pequeno. Menos: favor perdido e
+       uma falta (as mesmas faltas das obrigações: 3 = rebaixamento). Recusar ou renunciar também conta uma falta. -->
+
+  <LetterDef ParentName="CustomChoiceLetterBase">
+    <defName>EQ_EncargoLetter</defName>
+    <letterClass>EcosDaQueda.ChoiceLetter_EQEncargo</letterClass>
+  </LetterDef>
+
+  <!-- ===================================================================== FORJA -->
+  <EcosDaQueda.EncargoDef>
+    <defName>EQ_Encargo_Forja_Linha</defName>
+    <label>Linha de Montagem 7-B</label>
+    <faction>EQ_Faction_Forja</faction>
+    <offerLabel>Encargo: Linha de Montagem 7-B</offerLabel>
+    <offerText>Parabéns pelo cargo! Com ele vem a responsabilidade por uma linha de montagem terceirizada da Forja: a sua oficina passa a ser a "Linha 7-B" nos registros da Ordem, com cota de produção e inspeção de garantia a cada quinzena.\n\nA Forja fornece o nome da linha e o carimbo. Você fornece o resto.</offerText>
+    <acceptLabel>Assumir a Linha 7-B</acceptLabel>
+    <refuseLabel>Recusar a linha (uma falta)</refuseLabel>
+    <renounceLabel>Devolver a linha (uma falta)</renounceLabel>
+    <goals>
+      <li>
+        <type>DeliverThing</type>
+        <label>componentes industriais</label>
+        <thing>ComponentIndustrial</thing>
+        <count>8</count>
+      </li>
+      <li>
+        <type>DeliverThing</type>
+        <label>aço</label>
+        <thing>Steel</thing>
+        <count>150</count>
+      </li>
+      <li>
+        <type>QualityCrafted</type>
+        <label>itens de qualidade boa ou melhor fabricados</label>
+        <count>3</count>
+        <minQuality>Good</minQuality>
+      </li>
+    </goals>
+    <successFavor>6</successFavor>
+    <successFame>5</successFame>
+    <rewardThings>
+      <ComponentSpacer>1</ComponentSpacer>
+    </rewardThings>
+    <successText>O inspetor da garantia conferiu a cota, carimbou cada peça e deixou um componente espacial "como incentivo à produtividade". A Linha 7-B subiu um ponto no quadro de metas da Ordem.</successText>
+    <partialText>A cota chegou incompleta. O inspetor anotou "desempenho dentro da tolerância", que na Forja quer dizer "da próxima vez, não".</partialText>
+    <failText>A cota não chegou. O inspetor abriu um chamado de não conformidade com o seu nome no campo "causa raiz".</failText>
+  </EcosDaQueda.EncargoDef>
+
+  <!-- ===================================================================== HÉLICE -->
+  <EcosDaQueda.EncargoDef>
+    <defName>EQ_Encargo_Helice_Filial</defName>
+    <label>filial franqueada</label>
+    <faction>EQ_Faction_Helice</faction>
+    <offerLabel>Encargo: filial franqueada</offerLabel>
+    <offerText>O Concílio da Hélice tem o prazer de oferecer ao seu assentamento a franquia de uma filial! Todo comércio que vocês fizerem passa a constar como faturamento da marca, e a marca cobra royalties fixos por quinzena.\n\nNão há como faturar pouco e continuar sendo uma filial. Há como faturar pouco, uma vez.</offerText>
+    <acceptLabel>Assinar a franquia</acceptLabel>
+    <refuseLabel>Recusar a franquia (uma falta)</refuseLabel>
+    <renounceLabel>Rescindir a franquia (uma falta)</renounceLabel>
+    <goals>
+      <li>
+        <type>TradeSilver</type>
+        <label>prata negociada (compra e venda)</label>
+        <count>1500</count>
+      </li>
+      <li>
+        <type>DeliverThing</type>
+        <label>prata de royalties</label>
+        <thing>Silver</thing>
+        <count>150</count>
+      </li>
+    </goals>
+    <successFavor>6</successFavor>
+    <successFame>5</successFame>
+    <rewardThings>
+      <MedicineUltratech>2</MedicineUltratech>
+    </rewardThings>
+    <successText>Meta batida! O Concílio enviou um kit de bonificação ("remédio de luxo, não revenda") e um certificado de Filial Destaque que ninguém pediu.</successText>
+    <partialText>Faturamento abaixo do esperado. O Concílio mandou uma apostila motivacional sobre "mentalidade de crescimento".</partialText>
+    <failText>A filial não bateu nem metade da meta. O Concílio registrou o prejuízo na sua ficha de linhagem, ao lado de "potencial genético: a revisar".</failText>
+  </EcosDaQueda.EncargoDef>
+
+  <!-- ===================================================================== SILÊNCIO -->
+  <EcosDaQueda.EncargoDef>
+    <defName>EQ_Encargo_Silencio_SalaLeitura</defName>
+    <label>sala de leitura do Arquivo</label>
+    <faction>EQ_Faction_Silencio</faction>
+    <offerLabel>Encargo: sala de leitura do Arquivo</offerLabel>
+    <offerText>A Ordem do Silêncio Perpétuo designa o seu assentamento como sala de leitura avulsa do Arquivo. Isso significa produzir conhecimento a cada quinzena e manter estoque de remédio para os leitores, que às vezes leem coisas que não deviam.\n\nA sala não pode ficar vazia. O Arquivo não gosta de salas vazias.</offerText>
+    <acceptLabel>Abrir a sala de leitura</acceptLabel>
+    <refuseLabel>Recusar a sala (uma falta)</refuseLabel>
+    <renounceLabel>Fechar a sala (uma falta)</renounceLabel>
+    <goals>
+      <li>
+        <type>ResearchFinished</type>
+        <label>pesquisas concluídas</label>
+        <count>1</count>
+      </li>
+      <li>
+        <type>DeliverThing</type>
+        <label>remédios industriais para os leitores</label>
+        <thing>MedicineIndustrial</thing>
+        <count>5</count>
+      </li>
+    </goals>
+    <successFavor>6</successFavor>
+    <successFame>5</successFame>
+    <rewardThings>
+      <EQ_ManualTecnico>1</EQ_ManualTecnico>
+    </rewardThings>
+    <successText>O arquivista leu o relatório em silêncio, assentiu em silêncio e deixou um manual técnico do Arquivo sobre a mesa. Em silêncio.</successText>
+    <partialText>A produção da sala foi "aceitável". O arquivista sublinhou a palavra duas vezes.</partialText>
+    <failText>A sala de leitura ficou vazia. O Arquivo não gosta de salas vazias, e agora tem o seu nome numa delas.</failText>
+  </EcosDaQueda.EncargoDef>
+
+  <!-- ===================================================================== CORO -->
+  <EcosDaQueda.EncargoDef>
+    <defName>EQ_Encargo_Coro_Temporada</defName>
+    <label>temporada da corte</label>
+    <faction>EQ_Faction_Coro</faction>
+    <offerLabel>Encargo: temporada da corte</offerLabel>
+    <offerText>O Coro Estelar honra o seu cargo com uma temporada da corte na sua região: a cada quinzena, um evento solene digno do Coro e a coleta do tributo dos vizinhos (que, por acaso, são vocês).\n\nA corte não se apresenta para salas vazias, nem de graça.</offerText>
+    <acceptLabel>Abrir a temporada</acceptLabel>
+    <refuseLabel>Recusar a temporada (uma falta)</refuseLabel>
+    <renounceLabel>Encerrar a temporada (uma falta)</renounceLabel>
+    <goals>
+      <li>
+        <type>RitualFinished</type>
+        <label>rituais concluídos</label>
+        <count>1</count>
+      </li>
+      <li>
+        <type>DeliverThing</type>
+        <label>prata de tributo da região</label>
+        <thing>Silver</thing>
+        <count>250</count>
+      </li>
+    </goals>
+    <successFavor>6</successFavor>
+    <successFame>5</successFame>
+    <rewardThings>
+      <Gold>20</Gold>
+    </rewardThings>
+    <successText>A temporada foi um sucesso. O Maestro mandou ouro "para o figurino" e uma partitura que ninguém do assentamento consegue ler sem sangrar um pouco do nariz.</successText>
+    <partialText>A temporada foi morna. A corte aplaudiu por educação, que no Coro é a forma mais alta de desprezo.</partialText>
+    <failText>A temporada foi um fiasco. A corte registrou a sua desafinação, e o Coro não esquece uma nota errada.</failText>
+  </EcosDaQueda.EncargoDef>
+</Defs>

@@ -80,6 +80,8 @@ namespace EcosDaQueda.HegemonyCompat
                         postfix: new HarmonyMethod(typeof(HegemonyIntegration), nameof(BlockPostfix)));
                 }
 
+                RegisterForces();
+
                 peaceVeto = HegemonyApi.RegisterVeto(HegemonyVetoKind.AIPeaceOrTreaty, ctx =>
                     FactionRelationPresetDef.ArePermanentEnemies(ctx.Actor, ctx.Other)
                         ? ctx.Actor?.Name + " jamais fará paz com " + ctx.Other?.Name + "."
@@ -89,6 +91,53 @@ namespace EcosDaQueda.HegemonyCompat
             {
                 Log.Error("[Ecos da Queda] Falha ao registrar integração com o Hegemony: " + ex);
             }
+        }
+
+        private const string Provider = "ecosdaqueda";
+        private static IDisposable eventSub;
+
+        /// <summary>Etapa 10d: guerras, conquista, território e aviso de guerra nova para os exércitos (Forces.cs).</summary>
+        private static void RegisterForces()
+        {
+            EQForces.WarsProvider = Wars;
+            EQForces.TerritoryProvider = f => HegemonyApi.IsAvailable ? HegemonyApi.GetTerritoryTileCount(f) : 0;
+            EQForces.ConquestHandler = (settlement, attacker, id) =>
+            {
+                if (!HegemonyApi.IsAvailable) return "Hegemony indisponível";
+                if (!HegemonyApi.AreAtWar(attacker, settlement.Faction)) return "sem guerra formal no Hegemony";
+                return HegemonyApi.TryTransferSettlement(Provider, id, settlement, attacker, null, HegemonyOwnershipReason.Invasion, out string reason)
+                    ? null : (reason ?? "recusado");
+            };
+            EQForces.DeclareWarHandler = (a, b, id) =>
+            {
+                if (!HegemonyApi.IsAvailable) return "Hegemony indisponível";
+                return HegemonyApi.TryDeclareWar(Provider, id, a, b, WarObjective.Conquest, 1, null, 1.0, null, out string reason)
+                    ? null : (reason ?? "recusado");
+            };
+            eventSub = HegemonyApi.SubscribeToEvents(e =>
+            {
+                // Callback só de leitura: enfileira e o WorldComponent processa no próximo tique.
+                if (e != null && e.Kind == HegemonyEventKind.WarStarted && e.First != null && e.Second != null)
+                    lock (WorldComponent_EQForces.PendingWarStarts)
+                        WorldComponent_EQForces.PendingWarStarts.Add(new System.Collections.Generic.KeyValuePair<Faction, Faction>(e.First, e.Second));
+                // Etapa 10e (2º bloco): invasões entre facções abrem/fecham frentes de trincheira (Fronts.cs).
+                if (e != null && (e.Kind == HegemonyEventKind.InvasionArrived || e.Kind == HegemonyEventKind.InvasionResolved))
+                    lock (EQFronts.PendingInvasions)
+                        EQFronts.PendingInvasions.Add(new EQFronts.InvasionNote
+                        {
+                            arrived = e.Kind == HegemonyEventKind.InvasionArrived,
+                            attacker = e.First, defender = e.Second, winner = e.Winner,
+                            location = e.Location, marker = e.MarkerId, forceSize = e.ForceSize,
+                        });
+            });
+        }
+
+        private static System.Collections.Generic.IEnumerable<System.Collections.Generic.KeyValuePair<Faction, Faction>> Wars()
+        {
+            if (!HegemonyApi.IsAvailable) yield break;
+            foreach (HegemonyWar w in HegemonyApi.GetWars())
+                if (w?.First != null && w.Second != null)
+                    yield return new System.Collections.Generic.KeyValuePair<Faction, Faction>(w.First, w.Second);
         }
 
         /// <summary>O jogador só vira vassalo de uma potência pela cerimônia de submissão.</summary>

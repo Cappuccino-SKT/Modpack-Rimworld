@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <!-- Etapa 10d: tropas das potências (Forces.cs). Exército em marcha no mapa-múndi; luta de forma abstrata
+       contra a guarnição do assentamento alvo. Vitória com guerra formal no Hegemony = toma o assentamento. -->
+  <WorldObjectDef>
+    <defName>EQ_Army</defName>
+    <label>exército</label>
+    <description>Uma coluna de soldados de uma potência em marcha. Come, atrasa, deserta e, de vez em quando, vence.</description>
+    <worldObjectClass>EcosDaQueda.WorldObject_EQArmy</worldObjectClass>
+    <texture>World/WorldObjects/Caravan</texture>
+    <useDynamicDrawer>true</useDynamicDrawer>
+    <expandingIcon>true</expandingIcon>
+    <expandingIconTexture>World/WorldObjects/Expanding/Caravan</expandingIconTexture>
+    <expandingIconPriority>90</expandingIconPriority>
+    <expandMore>true</expandMore>
+    <selectable>true</selectable>
+  </WorldObjectDef>
+
+  <!-- Etapa 10e: frente de trincheira (Fronts.cs). Mapa de encontro com duas linhas de trincheira e os dois lados. -->
+  <WorldObjectDef>
+    <defName>EQ_TrenchFront</defName>
+    <label>frente de trincheira</label>
+    <description>Duas linhas de trincheira, lama, arame e dois exércitos convencidos de que a história está do lado deles.</description>
+    <worldObjectClass>EcosDaQueda.WorldObject_EQFront</worldObjectClass>
+    <texture>World/WorldObjects/Ambush</texture>
+    <expandingIcon>true</expandingIcon>
+    <expandingIconTexture>World/WorldObjects/Expanding/Ambush</expandingIconTexture>
+    <expandingIconPriority>95</expandingIconPriority>
+    <expandMore>true</expandMore>
+    <mapGenerator>Encounter</mapGenerator>
+    <canHaveFaction>true</canHaveFaction>
+    <selectable>true</selectable>
+  </WorldObjectDef>
+
+  <!-- Etapa 11c: oferta de comando (cargo 5+), no lugar da chamada às armas. -->
+  <LetterDef ParentName="CustomChoiceLetterBase">
+    <defName>EQ_CommandLetter</defName>
+    <letterClass>EcosDaQueda.ChoiceLetter_EQCommand</letterClass>
+  </LetterDef>
+
+  <!-- Chamadas às armas (warCall): saem quando a potência patrona levanta um exército (no máximo uma a cada 5 dias).
+       Opção 1 empresta um colono (vai para a campanha e volta sozinho), opção 2 paga o soldo, a última é a recusa
+       (falta: 3 faltas = rebaixamento). armyStrength/armyMorale reforçam o exército em marcha. -->
+
+  <!-- ===================================================================== SILÊNCIO -->
+  <EcosDaQueda.PowerEventDef>
+    <defName>EQ_ChamadaArmas_Silencio</defName>
+    <label>chamada às armas (Silêncio)</label>
+    <faction>EQ_Faction_Silencio</faction>
+    <warCall>true</warCall>
+    <membersOnly>true</membersOnly>
+    <mtbDays>99999</mtbDays>
+    <deadlineDays>2</deadlineDays>
+    <letterLabel>Chamada às armas: Ordem do Silêncio Perpétuo</letterLabel>
+    <letterText>A Ordem não declara guerras: ela "corrige registros". Uma coluna de acólitos armados já marcha para corrigir um registro particularmente teimoso, e cada membro deve contribuir.\n\nMande alguém que saiba atirar por seis dias, ou pague o soldo dos acólitos (que juram não precisar de soldo, mas comem). A recusa será arquivada.</letterText>
+    <options>
+      <li>
+        <label>Mandar o melhor atirador para a campanha (6 dias)</label>
+        <lendColonistDays>6</lendColonistDays>
+        <lendSkill>Shooting</lendSkill>
+        <armyStrength>10</armyStrength>
+        <armyMorale>0.05</armyMorale>
+        <favor>2</favor>
+        <fame>2</fame>
+        <resultText>O colono recebeu um capuz e a ordem de não perguntar o nome do inimigo. Nem o próprio.</resultText>
+      </li>
+      <li>
+        <label>Pagar o soldo dos acólitos (400 de prata)</label>
+        <costSilver>400</costSilver>
+        <armyStrength>6</armyStrength>
+        <armyMorale>0.15</armyMorale>
+        <favor>1</favor>
+        <resultText>A prata some num cofre sem fechadura. Ninguém ousa abrir um cofre do Silêncio.</resultText>
+      </li>
+      <li>
+        <label>Recusar</label>
+        <strike>true</strike>
+        <favorLoss>3</favorLoss>
+        <resultText>A recusa foi transcrita em três vias. Uma delas foi queimada, para que o fogo também saiba.</resultText>
+      </li>
+    </options>
+  </EcosDaQueda.PowerEventDef>
+
+  <!-- ===================================================================== HÉLICE -->
+  <EcosDaQueda.PowerEventDef>
+    <defName>EQ_ChamadaArmas_Helice</defName>
+    <label>chamada às armas (Hélice)</label>
+    <faction>EQ_Faction_Helice</faction>
+    <warCall>true</warCall>
+    <membersOnly>true</membersOnly>
+    <mtbDays>99999</mtbDays>
+    <deadlineDays>2</deadlineDays>
+    <letterLabel>Chamada às armas: Hélice</letterLabel>
+    <letterText>A Hélice abriu uma "aquisição hostil" com tropas de verdade. O departamento de Recursos Humanos (no sentido literal) convoca os associados a contribuir com pessoal ou capital.\n\nCada colono enviado conta como um investimento de risco. Cada moeda, como um investimento de baixo risco. A recusa conta como quebra de contrato.</letterText>
+    <options>
+      <li>
+        <label>Ceder um colono à campanha (6 dias)</label>
+        <lendColonistDays>6</lendColonistDays>
+        <lendSkill>Shooting</lendSkill>
+        <armyStrength>10</armyStrength>
+        <armyMorale>0.05</armyMorale>
+        <favor>2</favor>
+        <fame>2</fame>
+        <resultText>O colono assinou um termo de consentimento de onze páginas. A página oito menciona "reaproveitamento de tecido".</resultText>
+      </li>
+      <li>
+        <label>Investir no soldo (400 de prata)</label>
+        <costSilver>400</costSilver>
+        <armyStrength>6</armyStrength>
+        <armyMorale>0.15</armyMorale>
+        <favor>1</favor>
+        <resultText>A Hélice agradece o aporte e promete dividendos. O prospecto não diz em quê.</resultText>
+      </li>
+      <li>
+        <label>Recusar</label>
+        <strike>true</strike>
+        <favorLoss>3</favorLoss>
+        <resultText>O jurídico da Hélice abre um processo. O processo tem um processo.</resultText>
+      </li>
+    </options>
+  </EcosDaQueda.PowerEventDef>
+
+  <!-- ===================================================================== FORJA -->
+  <EcosDaQueda.PowerEventDef>
+    <defName>EQ_ChamadaArmas_Forja</defName>
+    <label>chamada às armas (Forja)</label>
+    <faction>EQ_Faction_Forja</faction>
+    <warCall>true</warCall>
+    <membersOnly>true</membersOnly>
+    <mtbDays>99999</mtbDays>
+    <deadlineDays>2</deadlineDays>
+    <letterLabel>Chamada às armas: Forja</letterLabel>
+    <letterText>A Forja colocou uma linha de produção em marcha: uma coluna de mechs e operários que vai "recolher" um assentamento fora da garantia. Toda linha precisa de manutenção, e todo membro é peça de reposição.\n\nMande alguém que saiba atirar, ou pague o óleo e os turnos extras. Quem recusa tem o número de série anotado.</letterText>
+    <options>
+      <li>
+        <label>Mandar o melhor atirador para a linha (6 dias)</label>
+        <lendColonistDays>6</lendColonistDays>
+        <lendSkill>Shooting</lendSkill>
+        <armyStrength>10</armyStrength>
+        <armyMorale>0.05</armyMorale>
+        <favor>2</favor>
+        <fame>2</fame>
+        <resultText>O colono recebeu um crachá, um capacete e um manual de 400 páginas sobre como não ficar entre dois mechs.</resultText>
+      </li>
+      <li>
+        <label>Pagar óleo e turnos extras (400 de prata)</label>
+        <costSilver>400</costSilver>
+        <armyStrength>6</armyStrength>
+        <armyMorale>0.15</armyMorale>
+        <favor>1</favor>
+        <resultText>A Forja emite um recibo em triplicata e uma garantia de 90 dias sobre a vitória.</resultText>
+      </li>
+      <li>
+        <label>Recusar</label>
+        <strike>true</strike>
+        <favorLoss>3</favorLoss>
+        <resultText>Um técnico anota "peça defeituosa" ao lado do nome da sua colônia.</resultText>
+      </li>
+    </options>
+  </EcosDaQueda.PowerEventDef>
+
+  <!-- ===================================================================== CORO -->
+  <EcosDaQueda.PowerEventDef>
+    <defName>EQ_ChamadaArmas_Coro</defName>
+    <label>chamada às armas (Coro)</label>
+    <faction>EQ_Faction_Coro</faction>
+    <warCall>true</warCall>
+    <membersOnly>true</membersOnly>
+    <mtbDays>99999</mtbDays>
+    <deadlineDays>2</deadlineDays>
+    <letterLabel>Chamada às armas: Coro</letterLabel>
+    <letterText>O Coro marcha para a guerra, e a guerra do Coro é um espetáculo: estandartes, tambores, um tenor na frente da coluna para "inspirar". A corte espera que cada vassalo mande figurantes, ou pague o figurino.\n\nOs figurantes também lutam. Ninguém avisou os figurantes.</letterText>
+    <options>
+      <li>
+        <label>Mandar o melhor atirador como figurante armado (6 dias)</label>
+        <lendColonistDays>6</lendColonistDays>
+        <lendSkill>Shooting</lendSkill>
+        <armyStrength>10</armyStrength>
+        <armyMorale>0.05</armyMorale>
+        <favor>2</favor>
+        <fame>2</fame>
+        <resultText>O colono partiu de capa vermelha e um verso para decorar. O verso termina com o nome dele, no passado.</resultText>
+      </li>
+      <li>
+        <label>Pagar figurino e tambores (400 de prata)</label>
+        <costSilver>400</costSilver>
+        <armyStrength>6</armyStrength>
+        <armyMorale>0.15</armyMorale>
+        <favor>1</favor>
+        <resultText>O Coro agradece com uma estrofe sobre a sua generosidade. É curta. Foram só 400.</resultText>
+      </li>
+      <li>
+        <label>Recusar</label>
+        <strike>true</strike>
+        <favorLoss>3</favorLoss>
+        <resultText>Na próxima ópera da corte, um vilão covarde tem o nome da sua colônia. A plateia vaia com gosto.</resultText>
+      </li>
+    </options>
+  </EcosDaQueda.PowerEventDef>
+</Defs>

@@ -163,3 +163,24 @@ namespace EcosDaQueda
         }
     }
 }
+
+namespace EcosDaQueda
+{
+    /// <summary>
+    /// Alpha Memes: o postfix de TaleUtility.Notify_PawnDied registra "alguém morreu" para todo humano, inclusive quem morre
+    /// durante a própria geração (HediffGiver_Birthday simulando a idade). Nesse momento o pawn ainda não está pronto e
+    /// algum preceito quebra em HistoryEventsManager.RecordEvent (NullReferenceException intermitente nos testes).
+    /// Pula o postfix só para pawn ainda em geração.
+    /// </summary>
+    [HarmonyPatch]
+    public static class Patch_AlphaMemes_NotifyEnemyDied_Generating
+    {
+        private static MethodBase Target => AccessTools.Method(AccessTools.TypeByName("AlphaMemes.AlphaMemes_TaleUtility_Notify_PawnDied_Patch"), "NotifyEnemyDied");
+
+        public static bool Prepare() => Target != null;
+
+        public static MethodBase TargetMethod() => Target;
+
+        public static bool Prefix(Pawn victim) => victim == null || !PawnGenerator.IsBeingGenerated(victim);
+    }
+}

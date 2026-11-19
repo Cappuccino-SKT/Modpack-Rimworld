@@ -182,6 +182,7 @@ namespace EcosDaQueda
         /// <summary>Um evento temático aconteceu; se a potência do jogador o valoriza, conta para o favor.</summary>
         public static void Notify(FavorEventType type, int count = 1, QualityCategory quality = QualityCategory.Legendary)
         {
+            WorldComponent_Encargos.Current?.Notify(type, count, quality);
             var alg = WorldComponent_Allegiance.Current;
             FactionAllegianceDef d = alg?.Def;
             if (d == null || count <= 0 || alg.leader == null)
@@ -447,7 +448,7 @@ namespace EcosDaQueda
 
             string name = submission ? d.ceremonyLabel : d.promotionLabel;
             string text = (submission ? d.ceremonyText : d.promotionText) ?? "";
-            string price = submission ? "Preço da submissão, recolhido pelo emissário ao fim da cerimônia: " + d.PriceText() + "." : "A promoção não tem custo além do favor já acumulado.";
+            string price = submission ? "Preço da submissão, recolhido pelo emissário ao fim da cerimônia: " + d.PriceText() + "." : "A promoção não tem custo além do favor já acumulado. Quem não quiser o cargo novo (e as obrigações que vêm com ele) pode recusar promoções na aba Reputação.";
             var nameRules = new List<Rule>();
             nameRules.AddRange(GrammarUtility.RulesForPawn("pawn", pawn));
             nameRules.Add(new Rule_String("newTitle", newTitle.GetLabelCapFor(pawn)));
@@ -477,6 +478,9 @@ namespace EcosDaQueda
             if (!EQAllegiance.IsPower(faction))
                 return true;
             if (pawn == null || pawn.Dead)
+                return false;
+            // Etapa 11d: promoção recusada (a submissão, sem cargo, continua possível).
+            if (WorldComponent_Allegiance.Current?.refusePromotion == true && pawn.royalty?.GetCurrentTitle(faction) != null)
                 return false;
             QuestScriptDef script = DefDatabase<QuestScriptDef>.GetNamedSilentFail("EQ_Ceremony");
             if (script == null)

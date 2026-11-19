@@ -83,7 +83,10 @@ namespace EcosDaQueda
 
             foreach (ResearchProjectDef r in DefDatabase<ResearchProjectDef>.AllDefsListForReading)
             {
-                if (!explicitMap.TryGetValue(r.defName, out ResearchBranchDef b))
+                // Pesquisa do editor de árvore: ramo escolhido lá; com keepTab fica na aba e posição desenhadas no editor.
+                ResearchEditorExt ext = r.GetModExtension<ResearchEditorExt>();
+                ResearchBranchDef b = ext?.branch;
+                if (b == null && !explicitMap.TryGetValue(r.defName, out b))
                 {
                     string pkg = r.modContentPack?.PackageId?.ToLowerInvariant();
                     b = branches.FirstOrDefault(x => pkg != null && x.mods.Contains(pkg) && !x.exceptProjects.Contains(r.defName))
@@ -92,7 +95,7 @@ namespace EcosDaQueda
                 }
                 BranchOf[r] = b;
                 // Pesquisa da Anomalia (conhecimento) fica na aba própria; o resto vai para a aba do ramo.
-                if (r.knowledgeCategory == null && b.tab != null)
+                if (r.knowledgeCategory == null && b.tab != null && !(ext != null && ext.keepTab && r.tab != null))
                 {
                     if (r.tab != null && r.tab != b.tab)
                         OriginalTab[r] = r.tab;
