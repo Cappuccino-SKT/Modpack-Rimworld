@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Coleção de kits só para o teste automático (tests/kits.txt, comando kittest). Independe das coleções do usuário. -->
+<Defs>
+  <EcosDaQueda.KitCollectionDef>
+    <defName>EQ_Kit_Teste</defName>
+    <label>kit de teste</label>
+    <pawnKinds><li>EQ_U_Teste_Recruta</li></pawnKinds>
+    <variations>
+      <li>
+        <label>Fuzileiro</label>
+        <weight>3</weight>
+        <apparel>
+          <li><thing>Apparel_CollarShirt</thing><stuff>Cloth</stuff><color>(0.43, 0.36, 0.24, 1)</color></li>
+          <li><thing>Apparel_Pants</thing><stuff>Cloth</stuff></li>
+          <li><thing>Apparel_FlakVest</thing><stuff>Steel</stuff><quality>Good</quality></li>
+          <li><thing>Apparel_SimpleHelmet</thing><stuff>Steel</stuff></li>
+          <li><thing>Apparel_NaoExiste</thing></li>
+        </apparel>
+        <weapons>
+          <li><thing>CE_Gun_FNFAL</thing></li>
+          <li><thing>MeleeWeapon_Knife</thing><stuff>Steel</stuff></li>
+        </weapons>
+        <inventory>
+          <li><thing>Ammo_762x51mmNATO_FMJ</thing><count>120</count></li>
+          <li><thing>MedicineIndustrial</thing><count>2</count></li>
+        </inventory>
+      </li>
+      <li>
+        <label>Mateiro</label>
+        <weight>1</weight>
+        <apparel>
+          <li><thing>Apparel_Parka</thing><stuff>Leather_Plain</stuff></li>
+          <li><thing>Apparel_Pants</thing><stuff>Cloth</stuff></li>
+          <li><thing>Apparel_CowboyHat</thing><stuff>Cloth</stuff><chance>0.5</chance></li>
+        </apparel>
+        <weapons>
+          <li><thing>Bow_Recurve</thing></li>
+        </weapons>
+      </li>
+    </variations>
+  </EcosDaQueda.KitCollectionDef>
+
+  <!-- Unidade e elenco de teste (tests/kits.txt, comando "roster EQ_Faction_Forja EQ_Elenco_Teste"): só entram nos
+       grupos quando o comando aplica o elenco (applyOnStartup false), para não mudar os ataques dos outros testes. -->
+  <PawnKindDef ParentName="MercenaryMidTierBase">
+    <defName>EQ_U_Teste_Recruta</defName>
+    <label>recruta de teste</label>
+    <defaultFactionDef>EQ_Faction_Forja</defaultFactionDef>
+    <combatPower>60</combatPower>
+    <useFactionXenotypes>false</useFactionXenotypes>
+    <xenotypeSet Inherit="False">
+      <xenotypeChances>
+        <EQ_Xeno_HumanoAntigo>1</EQ_Xeno_HumanoAntigo>
+      </xenotypeChances>
+    </xenotypeSet>
+  </PawnKindDef>
+
+  <EcosDaQueda.UnitRosterDef>
+    <defName>EQ_Elenco_Teste</defName>
+    <faction>EQ_Faction_Forja</faction>
+    <applyOnStartup>false</applyOnStartup>
+    <entries>
+      <li><kind>EQ_U_Teste_Recruta</kind><group>Combat</group><weight>4</weight></li>
+      <li><kind>EQ_U_Teste_Recruta</kind><group>TraderGuard</group><weight>2</weight></li>
+    </entries>
+  </EcosDaQueda.UnitRosterDef>
+</Defs>

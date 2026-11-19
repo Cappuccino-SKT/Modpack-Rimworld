@@ -861,6 +861,25 @@ namespace EcosDaQueda.DebugTools
             return sb.ToString().TrimEnd();
         }
 
+        /// <summary>11d: por que a cerimônia de promoção não é gerada (teste da missão e estado do líder).</summary>
+        public static string CeremonyTestRun()
+        {
+            var alg = WorldComponent_Allegiance.Current;
+            Pawn p = alg?.leader;
+            Faction f = alg?.memberOf;
+            if (p == null || f == null) return "testrun=sem líder/potência";
+            QuestScriptDef script = DefDatabase<QuestScriptDef>.GetNamedSilentFail("EQ_Ceremony");
+            var slate = new RimWorld.QuestGen.Slate();
+            slate.Set("titleHolder", p);
+            slate.Set("bestowingFaction", f);
+            bool ok = script != null && p.MapHeld != null && script.root.TestRun(slate);
+            Quest cur = RoyalTitleUtility.GetCurrentBestowingCeremonyQuest(p, f);
+            return "testrun=" + ok + " morto=" + p.Dead + " dentro_de=" + (p.ParentHolder?.ToString() ?? "-") + " líder=" + p.LabelShort + " mapa=" + (p.MapHeld?.ToString() ?? "nenhum") + " spawn=" + p.Spawned
+                + " facção=" + p.Faction?.Name + " hostil=" + f.HostileTo(Faction.OfPlayer)
+                + " missão_atual=" + (cur == null ? "-" : cur.name + "/" + cur.State)
+                + " título_novo=" + p.royalty?.GetTitleAwardedWhenUpdating(f, p.royalty.GetFavor(f))?.defName;
+        }
+
         public static string Quests()
         {
             var sb = new StringBuilder();

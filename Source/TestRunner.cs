@@ -153,6 +153,8 @@ namespace EcosDaQueda.DebugTools
             // Idem: sem texturas lidas da placa, o CE não tem a silhueta de árvores/pawns para calcular cobertura
             if (text.Contains("Combat Extended :: CropVertical") || text.Contains("was not cached. This is a bug - texture should have been collected")) return;
             if (text.StartsWith("Error in ParallelForEach") && text.Contains("Combat Extended")) return;
+            // CE: roupa sem nenhuma armadura (Sharp/Blunt/Heat = 0) atingida; só log, o dano segue igual (ArmorUtilityCE.TryPenetrateArmor)
+            if (text.StartsWith("penAmount or armorAmount are zero for")) return;
             errorCount++;
             if (errorCount <= 40)
             {
@@ -462,6 +464,10 @@ namespace EcosDaQueda.DebugTools
                 case "serum": return EQDebug.UseSerum(int.Parse(Arg(1) ?? "1"));
                 case "cecheck": return EQDebug.CECheck(Arg(1));
                 case "weapontags": return EQDebug.WeaponTags(Arg(1));
+                case "kitcatalog": return KitCatalog.Export(Arg(1));
+                case "pesquisa": return ResearchCatalog.Test();
+                case "roster": return KitCatalog.Roster(Arg(1), Arg(2));
+                case "kittest": return KitCatalog.Test(Arg(1), Arg(2), int.Parse(Arg(3) ?? "12"));
                 case "kit": return EQDebug.Kit(Arg(1), int.Parse(Arg(2) ?? "20"));
                 case "tradeinfo": return EQDebug.TradeInfo();
                 case "trader": return EQDebug.TraderStock(Arg(1), Arg(2));
@@ -490,10 +496,19 @@ namespace EcosDaQueda.DebugTools
                 case "fungobi": return EQFungobiDebug.Run(Arg(1), Arg(2));
                 case "ritualoutcome": return EQRitualDebug.Run(Arg(1), Arg(2));
                 case "obligations": return EQPowerEventsDebug.Obligations(Arg(1) == "return");
+                case "promo":
+                    if (Arg(1) == "refuse" || Arg(1) == "accept") WorldComponent_Allegiance.Current?.SetRefusePromotion(Arg(1) == "refuse");
+                    return "recusa_promocao=" + WorldComponent_Allegiance.Current?.refusePromotion
+                        + " deve_ter_cerimonia=" + (WorldComponent_Allegiance.Current?.leader != null && WorldComponent_Allegiance.Current.memberOf != null
+                            ? RoyalTitleUtility.ShouldGetBestowingCeremonyQuest(WorldComponent_Allegiance.Current.leader, WorldComponent_Allegiance.Current.memberOf).ToString() : "-")
+                        + " ultimo_pedido_tick=" + WorldComponent_Allegiance.Current?.lastCeremonyQuestTick
+                        + " " + EQDebug.CeremonyTestRun() + "\n" + EQDebug.DescribeAllegiance() + "\n" + EQDebug.Quests();
+                case "encargo": return EQEncargosDebug.Run(Arg(1), Arg(2), Arg(3), Arg(4));
                 case "exposure": return EQPowerEventsDebug.Exposure(Arg(1), Arg(2));
                 case "retaliation": EQPowerEvents.ForceRetaliation = true; return "o próximo contra-ataque sorteado acontece com certeza";
                 case "lastretaliation": return "último contra-ataque agendado: " + (EQPowerEvents.LastRetaliation ?? "nenhum");
                 case "truce": return EQPowerEventsDebug.Truce(Fac(1));
+                case "forces": return EQForcesDebug.Run(a);
                 case "events": return EQPowerEventsDebug.List();
                 case "event": return EQPowerEventsDebug.Fire(Arg(1));
                 case "perf": return Arg(1) == "report" ? EQPerf.Report(Arg(2)) : EQPerf.Start();
