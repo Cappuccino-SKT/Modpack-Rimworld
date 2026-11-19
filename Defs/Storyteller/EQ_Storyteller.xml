@@ -1,19 +1,40 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
 
-  <!-- Narrador provisório do Ecos da Queda: o ritmo é o da Cassandra (copiado por código, já com o que os
-       mods acrescentaram a ela). O narrador definitivo, que conhece reputação, cargos e potências, é a
-       etapa 6 do PLANO.md. Retrato emprestado do jogo até termos arte própria. -->
+  <!-- Narrador principal do Ecos da Queda (etapa 6a): o ritmo é o da Cassandra (copiado por código, já com o que
+       os mods acrescentaram a ela); por cima, EcosDaQueda.EQNarrator escolhe quem ataca pela Infâmia com as
+       potências hostis (Sindicato com mais peso no começo) e segura o fim de jogo (teto de pontos e incidentes
+       grandes) até o jogador ter cargo numa potência ou pesquisa espacial. Variações (6b) e retrato: a decidir. -->
   <StorytellerDef>
     <defName>EQ_Storyteller_Central</defName>
     <label>Central de Atendimento</label>
-    <description>"Sua sobrevivência é muito importante para nós."\n\nA Central de Atendimento ao Sobrevivente é a última repartição do mundo antigo ainda em funcionamento. Ninguém sabe onde fica nem quem a programou. Ela distribui as catástrofes por ordem de chegada, em ritmo crescente, com pausas regulamentares para o cliente respirar.\n\nReclamações são registradas e ignoradas com protocolo.</description>
+    <description>"Sua sobrevivência é muito importante para nós."\n\nA Central de Atendimento ao Sobrevivente é a última repartição do mundo antigo ainda em funcionamento. Ninguém sabe onde fica nem quem a programou. Ela distribui as catástrofes por ordem de chegada, em ritmo crescente, com pausas regulamentares para o cliente respirar.\n\nReclamações são registradas e ignoradas com protocolo.
+
+A Central lê a sua ficha: quem você irritou é quem bate na porta (o Sindicato do Saque cuida dos recém-chegados), e as catástrofes de grande porte ficam na fila até você ser alguém numa potência ou mexer com tecnologia espacial.</description>
     <portraitLarge>UI/HeroArt/Storytellers/CassandraClassic</portraitLarge>
     <portraitTiny>UI/HeroArt/Storytellers/CassandraClassicTiny</portraitTiny>
     <listOrder>1</listOrder>
     <modExtensions>
       <li Class="EcosDaQueda.StorytellerCopyExtension">
         <copyFrom>Cassandra</copyFrom>
+      </li>
+      <li Class="EcosDaQueda.EQStorytellerExtension">
+        <pickChance>0.75</pickChance>
+        <infamyPerWeight>40</infamyPerWeight>
+        <earlyFactions>
+          <li>EQ_Faction_SindicatoDoSaque</li>
+        </earlyFactions>
+        <earlyWeight>5</earlyWeight>
+        <earlyDays>20</earlyDays>
+        <heldPointsCap>2500</heldPointsCap>
+        <unlockRank>1</unlockRank>
+        <unlockTech>Spacer</unlockTech>
+        <unlockDays>150</unlockDays>
+        <heldIncidents>
+          <li>MechCluster</li>
+          <li>DefoliatorShipPartCrash</li>
+          <li>PsychicEmanatorShipPartCrash</li>
+        </heldIncidents>
       </li>
     </modExtensions>
   </StorytellerDef>

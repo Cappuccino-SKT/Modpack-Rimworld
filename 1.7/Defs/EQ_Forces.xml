@@ -38,6 +38,12 @@
     <letterClass>EcosDaQueda.ChoiceLetter_EQCommand</letterClass>
   </LetterDef>
 
+  <!-- Etapa 10d (resto): conselho de guerra da patrona (cargo 3+) quando a tensão com outra potência chega a 75. -->
+  <LetterDef ParentName="CustomChoiceLetterBase">
+    <defName>EQ_TensionLetter</defName>
+    <letterClass>EcosDaQueda.ChoiceLetter_EQTension</letterClass>
+  </LetterDef>
+
   <!-- Chamadas às armas (warCall): saem quando a potência patrona levanta um exército (no máximo uma a cada 5 dias).
        Opção 1 empresta um colono (vai para a campanha e volta sozinho), opção 2 paga o soldo, a última é a recusa
        (falta: 3 faltas = rebaixamento). armyStrength/armyMorale reforçam o exército em marcha. -->

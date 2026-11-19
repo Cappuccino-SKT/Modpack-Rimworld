@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <!-- Investigação de estrutura: botão no menu Ordens (EcosDaQueda.Designator_EQInvestigate). -->
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/DesignationCategoryDef[defName="Orders"]/specialDesignatorClasses</xpath>
+    <value>
+      <li>EcosDaQueda.Designator_EQInvestigate</li>
+    </value>
+  </Operation>
+</Patch>

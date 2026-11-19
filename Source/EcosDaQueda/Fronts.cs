@@ -43,6 +43,9 @@ namespace EcosDaQueda
         /// <summary>Lado que o jogador apoia (null = de fora); sideChosen = já escolheu na primeira entrada.</summary>
         public Faction supported;
         public bool sideChosen;
+        /// <summary>Etapa 10d (resto): frente de fronteira entre territórios em guerra (sem exército nem invasão).</summary>
+        public bool borderFront;
+        public Settlement attackerSettlement;
 
         public const float OpenDays = 3f;
         public const float HegemonyOpenDays = 4f;
@@ -177,7 +180,12 @@ namespace EcosDaQueda
         public string ResolveAbstract()
         {
             if (resolved) return "já resolvida";
-            if (IsHegemonyFront)
+            if (borderFront)
+            {
+                bool atkWon = Rand.Chance(Mathf.Clamp((float)attackerStrength / Mathf.Max(1, attackerStrength + defenderStrength), 0.15f, 0.85f));
+                result = "sem testemunhas: " + (atkWon ? attacker?.Name : defender?.Name) + " venceu. " + EQWarDiplomacy.BorderOutcome(this, atkWon);
+            }
+            else if (IsHegemonyFront)
                 result = "sem testemunhas: " + (hegemonyResult ?? "a invasão não deu notícia");
             else if (army != null && !army.Destroyed)
             {
@@ -196,7 +204,9 @@ namespace EcosDaQueda
             if (resolved) return "já resolvida";
             resolved = true;
             string r;
-            if (IsHegemonyFront)
+            if (borderFront)
+                r = EQWarDiplomacy.BorderOutcome(this, attackerWon);
+            else if (IsHegemonyFront)
                 r = "A escaramuça não decide a cidade: " + (hegemonyResult ?? "a invasão do Hegemony segue diante de " + targetSettlement?.LabelCap + ".");
             else
             {
@@ -361,6 +371,8 @@ namespace EcosDaQueda
             Scribe_Values.Look(ref hegemonyResult, "hegemonyResult");
             Scribe_References.Look(ref supported, "supported");
             Scribe_Values.Look(ref sideChosen, "sideChosen");
+            Scribe_Values.Look(ref borderFront, "borderFront");
+            Scribe_References.Look(ref attackerSettlement, "attackerSettlement");
         }
     }
 

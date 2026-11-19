@@ -446,6 +446,10 @@ namespace EcosDaQueda
         /// <summary>Guerras forçadas pelo teste ("defA|defB").</summary>
         public List<string> forcedWars = new List<string>();
         public List<string> log = new List<string>();
+        /// <summary>Etapa 10d (resto): tensão entre pares de potências ("defA|defB" em ordem) 0–100.</summary>
+        public Dictionary<string, float> tension = new Dictionary<string, float>();
+        /// <summary>Último fim de frente de fronteira por par (tique), para o intervalo entre frentes.</summary>
+        public Dictionary<string, int> lastBorderFront = new Dictionary<string, int>();
         public int nextArmyId = 1;
         public int lastCallTick = -9999999;
         /// <summary>Guerras recém-começadas (avisadas pelo Hegemony fora do tique; processadas no próximo).</summary>
@@ -505,7 +509,12 @@ namespace EcosDaQueda
                 EQFronts.ProcessPending();
             if (now % 250 == 99)
                 foreach (Letter l in Find.LetterStack.LettersListForReading.ToList())
-                    if (l is ChoiceLetter_EQCommand c && !c.resolved && c.deadline >= 0 && now >= c.deadline)
+                    if (l is ChoiceLetter_EQTension tl && !tl.resolved && tl.deadline >= 0 && now >= tl.deadline)
+                    {
+                        tl.resolved = true; // a corte decidiu sem você: a tensão segue o curso
+                        Find.LetterStack.RemoveLetter(tl);
+                    }
+                    else if (l is ChoiceLetter_EQCommand c && !c.resolved && c.deadline >= 0 && now >= c.deadline)
                     {
                         Messages.Message("Comando de campanha sem resposta: conta como recusa.", MessageTypeDefOf.NegativeEvent);
                         c.Refuse();
@@ -548,6 +557,8 @@ namespace EcosDaQueda
             foreach (Faction p in EQAllegiance.Powers)
                 if (!p.defeated && Rand.MTBEventOccurs(EQForces.MobilizeMtbDays, 1f, 1f))
                     TryMobilize(p, null, out _);
+            try { sb.Add(EQWarDiplomacy.Daily(this)); }
+            catch (Exception ex) { Log("[erro] tensão/fronteira: " + ex.Message, false); global::Verse.Log.Warning("[Ecos da Queda] tensão/fronteira: " + ex); }
             return string.Join(", ", sb);
         }
 
@@ -751,12 +762,16 @@ namespace EcosDaQueda
             Scribe_Collections.Look(ref treasury, "treasury", LookMode.Value, LookMode.Value);
             Scribe_Collections.Look(ref forcedWars, "forcedWars", LookMode.Value);
             Scribe_Collections.Look(ref log, "log", LookMode.Value);
+            Scribe_Collections.Look(ref tension, "tension", LookMode.Value, LookMode.Value);
+            Scribe_Collections.Look(ref lastBorderFront, "lastBorderFront", LookMode.Value, LookMode.Value);
             Scribe_Values.Look(ref nextArmyId, "nextArmyId", 1);
             Scribe_Values.Look(ref lastCallTick, "lastCallTick", -9999999);
             if (garrisons == null) garrisons = new Dictionary<int, int>();
             if (treasury == null) treasury = new Dictionary<string, float>();
             if (forcedWars == null) forcedWars = new List<string>();
             if (log == null) log = new List<string>();
+            if (tension == null) tension = new Dictionary<string, float>();
+            if (lastBorderFront == null) lastBorderFront = new Dictionary<string, int>();
         }
 
         /// <summary>Resumo para a aba Reputação: guerras e exércitos da potência patrona.</summary>

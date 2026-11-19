@@ -25,6 +25,8 @@ namespace EcosDaQueda
     {
         private static readonly AccessTools.FieldRef<ResearchProjectDef, List<Def>> fUnlocked =
             AccessTools.FieldRefAccess<ResearchProjectDef, List<Def>>("cachedUnlockedDefs");
+        private static readonly AccessTools.FieldRef<ResearchProjectDef, float> fX = AccessTools.FieldRefAccess<ResearchProjectDef, float>("x");
+        private static readonly AccessTools.FieldRef<ResearchProjectDef, float> fY = AccessTools.FieldRefAccess<ResearchProjectDef, float>("y");
 
         public static void ApplyAll()
         {
@@ -34,6 +36,12 @@ namespace EcosDaQueda
                 ResearchEditorExt ext = r.GetModExtension<ResearchEditorExt>();
                 if (ext == null) continue;
                 foreach (string w in Apply(r, ext)) Log.Warning("[Ecos da Queda] pesquisa " + r.defName + ": " + w);
+                if (ext.keepTab)
+                {
+                    // posição desenhada no editor (o Clean Research Sort e o YART ainda podem reorganizar depois)
+                    fX(r) = r.researchViewX;
+                    fY(r) = r.researchViewY;
+                }
                 n++;
             }
             if (n > 0) ClearCaches();

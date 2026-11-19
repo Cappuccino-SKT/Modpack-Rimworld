@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <!-- Investigação de estrutura (par da engenharia reversa do 3c, para construções): ordem "investigar estrutura"
+       (Ordens e botão ao selecionar), feita por quem trabalha com pesquisa, sem bancada e sem pesquisa prévia.
+       Rende parte do projeto que constrói o prédio (pré-requisitos) ou, nas ruínas do Velho Mundo, o que está abaixo;
+       a estrutura é desmontada no fim. Nomes em texto: o que não existir no modpack é ignorado. (EcosDaQueda.EQStructures) -->
+
+  <DesignationDef>
+    <defName>EQ_InvestigarEstrutura</defName>
+    <texturePath>Designations/Deconstruct</texturePath>
+    <targetType>Thing</targetType>
+  </DesignationDef>
+
+  <JobDef>
+    <defName>EQ_InvestigarEstrutura</defName>
+    <driverClass>EcosDaQueda.JobDriver_EQInvestigate</driverClass>
+    <reportString>investigando TargetA.</reportString>
+  </JobDef>
+
+  <WorkGiverDef>
+    <defName>EQ_InvestigarEstrutura</defName>
+    <label>investigar estruturas</label>
+    <giverClass>EcosDaQueda.WorkGiver_EQInvestigate</giverClass>
+    <workType>Research</workType>
+    <priorityInType>60</priorityInType>
+    <verb>investigar</verb>
+    <gerund>investigando</gerund>
+    <requiredCapacities>
+      <li>Manipulation</li>
+      <li>Sight</li>
+    </requiredCapacities>
+  </WorkGiverDef>
+
+  <EcosDaQueda.StructureInvestigationDef>
+    <defName>EQ_InvestigacaoEstrutura</defName>
+    <label>investigação de estrutura</label>
+    <workPerCell>500</workPerCell>
+    <minWork>900</minWork>
+    <maxWork>6000</maxWork>
+    <defaultFraction>0.25</defaultFraction>
+    <text>Investigação: {ITEM} rendeu {GAIN} de {PROJECT} (agora {TOTAL}). Sobrou o que dava para desparafusar.</text>
+    <nothingText>Investigaram {ITEM} até o último parafuso e não aprenderam nada que já não soubessem.</nothingText>
+    <lessons>
+      <!-- energia -->
+      <li><building>AncientGenerator</building><research><li>Electricity</li><li>Batteries</li></research><fraction>0.35</fraction></li>
+      <li><building>AncientMilitaryGeneratorSmall</building><research><li>Electricity</li><li>Batteries</li></research></li>
+      <li><building>AncientWindTurbineBody</building><research><li>Electricity</li></research></li>
+      <li><building>AncientToxifierGenerator</building><research><li>ToxifierGenerator</li><li>Electricity</li></research></li>
+      <li><building>AncientLamp</building><research><li>Electricity</li></research><fraction>0.12</fraction></li>
+      <li><building>AncientLamppost</building><research><li>Electricity</li></research><fraction>0.12</fraction></li>
+      <li><building>AncientMicrowave</building><research><li>Electricity</li></research><fraction>0.12</fraction></li>
+      <li><building>AncientWashingMachine</building><research><li>Electricity</li></research><fraction>0.12</fraction></li>
+      <li><building>AncientTV</building><research><li>Electricity</li></research><fraction>0.12</fraction></li>
+      <!-- clima e frio -->
+      <li><building>AncientAirConditioner</building><research><li>AirConditioning</li></research></li>
+      <li><building>AncientHeatVent</building><research><li>AirConditioning</li></research><fraction>0.15</fraction></li>
+      <li><building>AncientRefrigerator</building><research><li>AirConditioning</li></research><fraction>0.2</fraction></li>
+      <li><building>AncientColdStorage</building><research><li>AirConditioning</li></research></li>
+      <!-- bancadas -->
+      <li><building>AncientTableMachining</building><research><li>Machining</li></research><fraction>0.35</fraction></li>
+      <li><building>AncientTableSmithingElectric</building><research><li>Smithing</li><li>Electricity</li></research></li>
+      <li><building>AncientTableSmithingFueled</building><research><li>Smithing</li></research></li>
+      <li><building>AncientTableStoveElectric</building><research><li>Electricity</li></research></li>
+      <li><building>AncientStove</building><research><li>Electricity</li></research><fraction>0.15</fraction></li>
+      <li><building>AncientTableTailorElectric</building><research><li>Electricity</li></research></li>
+      <li><building>AncientTableDrugLab</building><research><li>DrugProduction</li></research><fraction>0.35</fraction></li>
+      <li><building>AncientTableBrewery</building><research><li>Brewing</li></research><fraction>0.35</fraction></li>
+      <li><building>AncientOperatingTable</building><research><li>HospitalBed</li><li>VitalsMonitor</li></research></li>
+      <!-- eletrônica e comunicação -->
+      <li><building>AncientTerminal</building><research><li>MicroelectronicsBasics</li></research></li>
+      <li><building>AncientSecurityTerminal</building><research><li>MicroelectronicsBasics</li></research></li>
+      <li><building>AncientCommsConsole</building><research><li>MicroelectronicsBasics</li></research><fraction>0.35</fraction></li>
+      <li><building>AncientSystemRack</building><research><li>MicroelectronicsBasics</li><li>MultiAnalyzer</li></research></li>
+      <li><building>AncientDisplayBank</building><research><li>MicroelectronicsBasics</li></research><fraction>0.2</fraction></li>
+      <li><building>AncientDestroyedConsole</building><research><li>MicroelectronicsBasics</li></research><fraction>0.15</fraction></li>
+      <li><building>AncientDestroyedConsoleLarge</building><research><li>MicroelectronicsBasics</li></research><fraction>0.2</fraction></li>
+      <li><building>AncientUplink</building><research><li>MicroelectronicsBasics</li></research></li>
+      <li><building>AncientAntenna</building><research><li>MicroelectronicsBasics</li></research><fraction>0.15</fraction></li>
+      <li><building>AncientBlastDoor</building><research><li>Autodoors</li></research></li>
+      <!-- defesa -->
+      <li><building>AncientSecurityTurret</building><research><li>GunTurrets</li></research><fraction>0.35</fraction></li>
+      <li><building>AncientAutocannonTurret</building><research><li>HeavyTurrets</li><li>GunTurrets</li></research><fraction>0.35</fraction></li>
+      <li><building>AncientUraniumSlugTurret</building><research><li>HeavyTurrets</li></research><fraction>0.35</fraction></li>
+      <li><building>AncientMortar</building><research><li>Mortars</li></research><fraction>0.35</fraction></li>
+      <!-- espacial, mecanoides, mineração -->
+      <li><building>AncientCryptosleepCasket</building><research><li>Cryptosleep</li></research><fraction>0.3</fraction></li>
+      <li><building>AncientCryptosleepPod</building><research><li>Cryptosleep</li></research><fraction>0.3</fraction></li>
+      <li><building>AncientTransportPod</building><research><li>TransportPod</li></research><fraction>0.3</fraction></li>
+      <li><building>AncientShipBeacon</building><research><li>ShipBasics</li></research></li>
+      <li><building>AncientDropshipEngine</building><research><li>ShipBasics</li></research></li>
+      <li><building>AncientGravEngine</building><research><li>BasicGravtech</li></research><fraction>0.3</fraction></li>
+      <li><building>AncientGravReactor</building><research><li>BasicGravtech</li></research><fraction>0.3</fraction></li>
+      <li><building>AncientMechGestator</building><research><li>BasicMechtech</li></research><fraction>0.3</fraction></li>
+      <li><building>AncientLargeMechGestator</building><research><li>StandardMechtech</li><li>BasicMechtech</li></research><fraction>0.3</fraction></li>
+      <li><building>AncientBasicRecharger</building><research><li>BasicMechtech</li></research></li>
+      <li><building>AncientStandardRecharger</building><research><li>StandardMechtech</li><li>BasicMechtech</li></research></li>
+      <li><building>AncientDrillPlatform</building><research><li>DeepDrilling</li></research><fraction>0.35</fraction></li>
+    </lessons>
+  </EcosDaQueda.StructureInvestigationDef>
+
+</Defs>

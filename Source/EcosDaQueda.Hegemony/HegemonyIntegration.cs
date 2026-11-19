@@ -1,4 +1,5 @@
 using System;
+using System.Linq;
 using System.Reflection;
 using FactionTerritories2;
 using HarmonyLib;
@@ -101,6 +102,18 @@ namespace EcosDaQueda.HegemonyCompat
         {
             EQForces.WarsProvider = Wars;
             EQForces.TerritoryProvider = f => HegemonyApi.IsAvailable ? HegemonyApi.GetTerritoryTileCount(f) : 0;
+            EQWarDiplomacy.BorderProvider = Border;
+            // Fronteiras vivas (MUNDO.md, F1): leitura do território e da prosperidade.
+            EQTerritory.ClaimsProvider = () =>
+            {
+                var l = new System.Collections.Generic.List<System.Collections.Generic.KeyValuePair<RimWorld.Planet.PlanetTile, Faction>>();
+                if (!HegemonyApi.IsAvailable || HegemonyApi.ApiVersion < 4) return l;
+                foreach (HegemonyTileClaim c in HegemonyApi.GetTerritoryClaims())
+                    if (c != null && !c.Contested && c.Owner != null)
+                        l.Add(new System.Collections.Generic.KeyValuePair<RimWorld.Planet.PlanetTile, Faction>(c.Tile, c.Owner));
+                return l;
+            };
+            EQTerritory.ProsperityProvider = s => HegemonyApi.TryGetSettlementState(s, out SettlementState st) && st != null ? st.prosperity : -1f;
             EQForces.ConquestHandler = (settlement, attacker, id) =>
             {
                 if (!HegemonyApi.IsAvailable) return "Hegemony indisponível";
@@ -130,6 +143,32 @@ namespace EcosDaQueda.HegemonyCompat
                             location = e.Location, marker = e.MarkerId, forceSize = e.ForceSize,
                         });
             });
+        }
+
+        /// <summary>Tiles de A que encostam em tiles de B (ou disputados entre os dois). Lido sob demanda, uma vez por dia no máximo.</summary>
+        private static System.Collections.Generic.List<RimWorld.Planet.PlanetTile> Border(Faction a, Faction b)
+        {
+            var res = new System.Collections.Generic.List<RimWorld.Planet.PlanetTile>();
+            if (!HegemonyApi.IsAvailable || HegemonyApi.ApiVersion < 4) return res;
+            a = EQUtil.Canonical(a); b = EQUtil.Canonical(b);
+            var ofB = new System.Collections.Generic.HashSet<RimWorld.Planet.PlanetTile>();
+            var ofA = new System.Collections.Generic.List<RimWorld.Planet.PlanetTile>();
+            foreach (HegemonyTileClaim c in HegemonyApi.GetTerritoryClaims())
+            {
+                if (c == null) continue;
+                Faction o = EQUtil.Canonical(c.Owner);
+                if (c.Contested && c.Parties != null && c.Parties.Any(p => EQUtil.Canonical(p) == a) && c.Parties.Any(p => EQUtil.Canonical(p) == b)) res.Add(c.Tile);
+                else if (o == a) ofA.Add(c.Tile);
+                else if (o == b) ofB.Add(c.Tile);
+            }
+            var tmp = new System.Collections.Generic.List<RimWorld.Planet.PlanetTile>();
+            foreach (var t in ofA)
+            {
+                tmp.Clear();
+                Find.WorldGrid.GetTileNeighbors(t, tmp);
+                if (tmp.Any(ofB.Contains)) res.Add(t);
+            }
+            return res;
         }
 
         private static System.Collections.Generic.IEnumerable<System.Collections.Generic.KeyValuePair<Faction, Faction>> Wars()
