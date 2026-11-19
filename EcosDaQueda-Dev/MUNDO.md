@@ -98,6 +98,14 @@ Riscos: o Worldbuilder é recente e grande (65 MB); pode brigar com mods de mund
 - **Resultado** (`mundo/preview-v2.png`, preset em `mundo/preset-v2/`): **31 de 31 biomas de superfície**; jogo novo com o preset sai igual, com rios (roteiro `mundo-m2c.txt`).
 - **Falta:** estradas (dependem das cidades fixas, M3); a pontinha do Yucatán fica na borda da calota.
 
+### Resultado do M3a (2026-11-19): cidades fixas
+
+- **Como funciona:** `FixedWorld.cs` + `Defs/World/EQ_MundoFixo.xml` (`EcosDaQueda.FixedWorldDef`: `presetName`, `minSpacing`, `searchRadius`, lista de cidades com facção, nome, lat/lon do mundo novo). Postfix em `World.FinalizeInit` (prioridade última, depois do Worldbuilder aplicar o terreno), só quando o preset carregado tem o nome do Def. Sem Worldbuilder ou com outro preset, nada muda.
+- **Passos:** (1) as facções da lista perdem as cidades sorteadas e ganham as fixas, no tile livre mais perto do ponto (terra, `canBuildBase`, não intransponível, a ≥ 4 tiles de outra); (2) cidades de outras facções (insetos) só são realocadas se caírem em tile ruim; (3) limpa mutadores e marcos velhos; (4) marcos (`WorldGenStep_Landmarks`), mutadores (`WorldGenStep_Mutators.AddMutatorsFromTile`) e estradas (`WorldGenStep_Roads`) refeitos com a semente da partida.
+- **Achado:** o preset troca biomas mas **não limpa os mutadores** sorteados para o terreno aleatório (~59 mil tiles); um "bosque" de planta que o bioma novo não tem quebra o Faction Territories 2 (`TileMutatorWorker_PlantGrove.GetLabel` NRE, simulação da cidade parada). Resolvido no passo 3.
+- **Resultado** (roteiro `mundo-m3.txt`, `mundo/preview-m3.png`): 16 cidades nas regiões da seção 6, nenhuma na água; 178 marcos; ~870 tiles de estrada; no dia 3 o Hegemony dá ~950 tiles de território (Forja 279, Coro 248, Hélice 166, insetos 120, Silêncio 61, menores 4–26). **Las Vegas só pega 4 tiles** (deserto) e o Silêncio ~20 por cidade: ver no F2.
+- **Falta no M3:** cenários próprios usando o mundo; Worldbuilder + The Earth no modpack e o preset dentro do nosso mod (pasta `Worldbuilder/`); capital com algum efeito (hoje é só a primeira da lista).
+
 ## 5. Blocos (ordem sugerida)
 
 | Bloco | O que entrega | Depende de |
@@ -105,7 +113,7 @@ Riscos: o Worldbuilder é recente e grande (65 MB); pode brigar com mods de mund
 | ~~**M1**~~ | Baixar e testar Worldbuilder + The Earth [Odyssey] no perfil de teste; ler o formato; lista de biomas (**feito 2026-11-19**) | — |
 | ~~**M2**~~ | Conversor América do Norte → 25%; primeiro mundo gerado e carregado no executor (**feito 2026-11-19**, preset v1) | M1 |
 | ~~**M2b**~~ | Pintar os 17 biomas que faltam, refazer rios e nomes (**feito 2026-11-19**, preset v2; estradas vão para o M3) | M2 |
-| **M3** | Mundo do Ecos: posições fixas das facções (✱ mapa de regiões), marcos, zonas; cenários usam o mundo; geração aleatória desligada | M2, ✱ regiões |
+| **M3** | (**M3a feito 2026-11-19**: cidades fixas, marcos, mutadores, estradas) Mundo do Ecos: posições fixas das facções (✱ mapa de regiões), marcos, zonas; cenários usam o mundo; geração aleatória desligada | M2, ✱ regiões |
 | ~~**F1**~~ | Como o território do Hegemony cresce e se dá para controlar por cidade (**feito 2026-11-19**: dá, pelo multiplicador por cidade; caminho A confirmado) | — |
 | **F2** | Fronteira que cresce aos poucos + cidade nova pela distância (NPCs) | F1 |
 | **F3** | Bônus por tile (bioma, zona da Queda, marcos) | F1 |

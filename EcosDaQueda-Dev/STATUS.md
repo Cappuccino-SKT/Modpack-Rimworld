@@ -2,26 +2,23 @@
 
 _Só o estado atual e os próximos passos. Manter curto (até ~60 linhas). Detalhe do que já foi feito: `HISTORICO.md` (buscar, não ler inteiro). Visão geral do projeto: `RESUMO.md`._
 
-## Onde estamos (2026-11-19, fim do dia; tudo commitado e no GitHub)
+## Onde estamos (2026-11-19, noite; tudo commitado e no GitHub)
 
 - **Base pronta e testada:** 4 potências e 7 facções menores (com os Fungobi), ideologias do usuário, xenos próprios, Fama/Infâmia, cerimônia, cargos, permissões, bases, serviços. Hegemony é a camada de estratégia.
 - **Concluídas:** Etapas 1, 2, 3 (3a–3e), 4 (4a, 4b sem Rimesis, 4c em parte), 5 (5a–5g), 8 (quase tudo), 11 (11a–11d), **10d** (menos a otimização do Hegemony), **10e** (2 blocos), **6a** (narrador principal), 10a (só a ferramenta `perf`).
 - **Últimos blocos (2026-11-19):** frentes nas invasões do Hegemony e escolha de lado (10e); investigação de estrutura (`Structures.cs`: ordem "investigar estrutura", ruínas do Velho Mundo ensinam pesquisa); narrador (`Narrator.cs`); tensão entre potências, conselho de guerra, guerra declarada e frentes de fronteira (`WarDiplomacy.cs`).
 - **Mundo fixo e fronteiras vivas (em andamento, tudo em `MUNDO.md`):**
   - Decidido: América do Norte + México (sem Caribe) num mundo de 25%; biomas fixos com os 31 de superfície; marcos, ruínas e sítios variam por partida; 3 cidades por potência (1 capital), menores com 1; regiões da seção 6 do `MUNDO.md` aprovadas; território = Hegemony + regras nossas.
-  - **M1, M2, M2b e F1 feitos.** Preset do Worldbuilder `EcosDaQueda` v2 em `mundo/preset-v2/` (prévia `mundo/preview-v2.png`): escala real, latitudes reais, 31/31 biomas, rios e nomes; recarrega igual num jogo novo. Pintura editável em `mundo/pintura.tsv`.
+  - **M1, M2, M2b, F1 e M3a feitos.** M3a: com o preset `EcosDaQueda`, 16 cidades em lugares fixos (`Defs/World/EQ_MundoFixo.xml`, editável), marcos, mutadores e estradas refeitos por partida (`FixedWorld.cs`; roteiro `mundo-m3.txt`, prévia `mundo/preview-m3.png`).
+  - Preset do Worldbuilder `EcosDaQueda` v2 em `mundo/preset-v2/` (prévia `mundo/preview-v2.png`): escala real, latitudes reais, 31/31 biomas, rios e nomes; recarrega igual num jogo novo. Pintura editável em `mundo/pintura.tsv`.
   - Worldbuilder (`ferny.worldbuilder`, Workshop 3522102833) e The Earth [Odyssey] (3556550577) estão em `Mods/` (não versionados; numa máquina nova: SteamCMD) e **fora do ModsConfig do usuário**: só entram nos testes com `run-test.ps1 -Include ferny.worldbuilder,allyjamy.terraearthodysseyv.wb`.
 - **Testes:** regressão de 54 roteiros sem erros (2026-11-19, antes dos blocos do mundo; os roteiros do mundo precisam do `-Include` e ficam fora do `regress.ps1`).
 
 ## Próximo passo (escolher um; um bloco por sessão)
 
-1. **M3 — mundo fixo jogável** (recomendado):
-   - posições fixas das cidades no preset (`savedSettlementsData`: 3 por potência nas regiões aprovadas, 1 por menor) ou criadas por código nosso ao iniciar; sem as 68 cidades sorteadas;
-   - estradas entre as cidades (passo `WorldGenStep_Roads` ou ligação nossa);
-   - marcos, ruínas e sítios sorteados por partida em cima do preset (o preset sai sem eles);
-   - cenários próprios usando o mundo; Worldbuilder + The Earth no modpack (`modpack/`: ModsConfig, workshop-ids, mods.md, install.ps1) e preset dentro do nosso mod (pasta `Worldbuilder/` como a do Earth).
+1. **M3b — mundo fixo jogável** (recomendado): preset dentro do nosso mod (pasta `Worldbuilder/` como a do Earth); Worldbuilder + The Earth no modpack (`modpack/`: ModsConfig, workshop-ids, mods.md, install.ps1); cenários próprios que já abrem no mundo `EcosDaQueda`; conferir o que o jogador vê na criação do mundo (✱ visual). Capital com efeito (hoje é só a primeira da lista).
    - Refazer o preset: roteiros `tests/mundo-m2a.txt` (Terra → `tests/out/terra-america.tsv`), `mundo-m2b.txt` (converte, pinta, rios, salva) e `mundo-m2c.txt` (confere), todos com `-Include`.
-2. **F2 — fronteira que cresce:** postfix em `TerritorySolver.SettlementDecay` (raio permitido cresce até um teto) + cidade nova pela distância. Primeiro confirmar se o Hegemony recalcula o território quando só o nosso multiplicador muda (ver `MUNDO.md` › F1).
+2. **F2 — fronteira que cresce** (no mundo fixo Las Vegas só pega 4 tiles e o Silêncio ~20 por cidade: entender junto): postfix em `TerritorySolver.SettlementDecay` (raio permitido cresce até um teto) + cidade nova pela distância. Primeiro confirmar se o Hegemony recalcula o território quando só o nosso multiplicador muda (ver `MUNDO.md` › F1).
 3. Sem depender do usuário: lições de investigação para estruturas de outros mods; medição de jogo longo (10a) para a otimização do Hegemony.
 
 ## Precisa do usuário (✱)
