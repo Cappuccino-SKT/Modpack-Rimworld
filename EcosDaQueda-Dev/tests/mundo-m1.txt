@@ -1,0 +1,6 @@
+# 10b/M1: Worldbuilder + The Earth [Odyssey] carregam no 1.7/Waylith? Lista de biomas do modpack.
+# Rodar com: run-test.ps1 -Script ...\mundo-m1.txt -Include ferny.worldbuilder,allyjamy.terraearthodysseyv.wb
+newgame
+timeout 900
+worldinfo
+biomes C:\Users\Felipe\Desktop\RimWorld\EcosDaQueda-Dev\tests\out\biomes.tsv

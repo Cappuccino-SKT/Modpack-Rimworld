@@ -1,0 +1,21 @@
+# Etapa 6a: narrador principal (Central de Atendimento): quem ataca pela Infâmia, Sindicato no começo, fim de jogo segurado.
+newgame EQ_Scenario_Abrigo EQ_Storyteller_Central
+timeout 900
+narrator
+narrator pick 300
+# Forja hostil com muita Infâmia: passa a atacar mais
+goodwill forja -100
+rep forja add 0 80
+narrator pick 300
+# fim de jogo segurado: aglomerado mecanoide bloqueado, pontos com teto
+narrator canfire MechCluster
+narrator canfire RaidEnemy
+# cargo numa potência libera
+join helice
+wait 1h
+leader set 0
+wait 1h
+psy title 2 helice
+wait 1h
+narrator canfire MechCluster
+narrator

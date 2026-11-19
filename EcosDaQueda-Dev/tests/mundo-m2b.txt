@@ -1,0 +1,12 @@
+# M2/M2b: mundo de 25% (calota em 45°N); aplica a América do Norte em escala real, pinta os biomas que faltam,
+# refaz rios e nomes e salva o preset do Ecos. Rodar com -Include ferny.worldbuilder,allyjamy.terraearthodysseyv.wb (depois do mundo-m2a)
+newgame cov=0.25 seed=EcosDaQueda
+timeout 1500
+worldinfo
+worldgrid C:\Users\Felipe\Desktop\RimWorld\EcosDaQueda-Dev\tests\out\grade-25.tsv
+worldconvert C:\Users\Felipe\Desktop\RimWorld\EcosDaQueda-Dev\tests\out\terra-america.tsv 35 -102 1 -
+worldpaint C:\Users\Felipe\Desktop\RimWorld\EcosDaQueda-Dev\mundo\pintura.tsv
+worldrivers EcosDaQueda
+worldpreview C:\Users\Felipe\Desktop\RimWorld\EcosDaQueda-Dev\tests\out\mundo-ecos-v2.ppm
+worldsave EcosDaQueda
+biomes C:\Users\Felipe\Desktop\RimWorld\EcosDaQueda-Dev\tests\out\biomes-america.tsv

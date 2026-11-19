@@ -1,0 +1,22 @@
+# Investigação de estrutura: estudar um prédio no lugar (ruína do Velho Mundo ou prédio com pré-requisito) rende pesquisa.
+newgame
+timeout 900
+investigate
+# o exemplo: sem energia elétrica, o gerador antigo ensina energia (zera toda a pesquisa do cenário)
+investigate research Electricity 0
+# gerador antigo: um colono investiga sozinho (trabalho de pesquisa) e aprende energia elétrica
+investigate spawn AncientGenerator
+investigate designate
+wait 12h
+investigate
+# terminal antigo, aplicado direto: microeletrônica
+investigate spawn AncientTerminal
+investigate apply
+# prédio comum com pré-requisito (bateria): ensina baterias
+investigate spawn Battery
+investigate apply
+# com energia concluída, a lâmpada antiga não ensina nada
+investigate research Electricity 1
+investigate spawn AncientLamp
+investigate designate
+dump

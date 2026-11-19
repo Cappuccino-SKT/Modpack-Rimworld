@@ -1,0 +1,6 @@
+# M2, parte 1: abre o mundo da Terra (Worldbuilder, cobertura 100%) e despeja os tiles da América do Norte + México.
+# Rodar com -Include ferny.worldbuilder,allyjamy.terraearthodysseyv.wb
+newgame cov=1 seed=SOL3 preset=Earth_[No_Factions]_[Odyssey]
+timeout 2400
+worldinfo
+worlddump C:\Users\Felipe\Desktop\RimWorld\EcosDaQueda-Dev\tests\out\terra-america.tsv

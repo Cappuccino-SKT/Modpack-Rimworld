@@ -21,6 +21,7 @@ param(
     [switch]$Build,
     [switch]$Full,              # imprime o relatório inteiro (o padrão é só o resumo: erros, PROBLEMAS e RESULTADO)
     [string]$Show,              # regex: no resumo, mostra também as linhas do relatório que casarem
+    [string[]]$Include = @(),   # packageIds a ativar só no perfil de teste (entram antes do ecosdaqueda.core; ex.: ferny.worldbuilder)
     [string[]]$Exclude = @(),   # packageIds a desativar no perfil de teste (ex.: ecosdaqueda.traducao ao exportar textos)
     [int]$TimeoutSec = 1200,    # normal: limite do jogo inteiro; lote: limite de CADA roteiro (mundo.txt ganha 2400)
     [int]$StallSec = 0          # lote: sem nenhuma linha nova no relatório por N s = travado (0 = desligado)
@@ -52,6 +53,12 @@ foreach ($f in 'Prefs.xml', 'KeyPrefs.xml', 'Knowledge.xml') {
 [xml]$cfg = Get-Content (Join-Path $userData 'Config\ModsConfig.xml') -Raw -Encoding UTF8
 $active = $cfg.ModsConfigData.activeMods
 @($active.SelectNodes('li') | Where-Object { $_.InnerText -eq 'ecosdaqueda.debug' -or $Exclude -contains $_.InnerText }) | ForEach-Object { [void]$active.RemoveChild($_) }
+$core = @($active.SelectNodes('li') | Where-Object { $_.InnerText -eq 'ecosdaqueda.core' })[0]
+foreach ($inc in @($Include | ForEach-Object { $_ -split ',' } | Where-Object { $_ })) {
+    if (@($active.SelectNodes('li') | Where-Object { $_.InnerText -eq $inc }).Count) { continue }
+    $n = $cfg.CreateElement('li'); $n.InnerText = $inc
+    if ($core) { [void]$active.InsertBefore($n, $core) } else { [void]$active.AppendChild($n) }
+}
 $li = $cfg.CreateElement('li'); $li.InnerText = 'ecosdaqueda.debug'; [void]$active.AppendChild($li)
 $cfg.Save((Join-Path $profileDir 'Config\ModsConfig.xml'))
 

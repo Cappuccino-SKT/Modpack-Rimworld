@@ -1,0 +1,25 @@
+# Pintura dos biomas que a Terra não tem (MUNDO.md, M2b). Coordenadas do MUNDO NOVO (calota 25%: lat 0–90, lon −60 a 60),
+# lidas da prévia mundo/preview-v1.png (x = (lon+60)*10, y = (90−lat)*10). Raio em graus (1 tile ≈ 0,27°); borda com ruído.
+# sobre: terra (não água/gelo), agua (oceano), frio (tundra/geleira/boreal), quente (deserto/árido/pastagem/tropical), costa (terra a até 2 tiles do mar)
+# bioma	lat	lon	raio	sobre	lugar real (e facção/zona)
+ColdBog	51	31	3.0	terra	Terras baixas da Baía de Hudson (turfeiras)
+ExtremeDesert	27	-4	2.2	terra	Vale da Morte e Mojave (Sindicato do Saque)
+ExtremeDesert	19	-1	1.8	terra	Deserto de Sonora / Altar
+TropicalSwamp	13	19	1.8	terra	Pântanos de Tabasco (sul do México)
+GlacialPlain	74	12	3.0	frio	Ilhas do Ártico canadense
+GlacialPlain	66	52	2.5	frio	Costa de Baffin / Labrador norte
+Glowforest	44	-12	1.8	terra	Floresta temperada úmida do Pacífico (Olympic) — mistério do Silêncio
+SeaIce	83	0	6.0	agua	Oceano Ártico
+SeaIce	70	35	2.0	agua	Bacia de Foxe
+AB_MechanoidIntrusion	45	27	1.6	terra	Cinturão da ferrugem (Forja; zona da Queda: mecanoides)
+AB_TarPits	30	-7	1.0	terra	La Brea, Los Angeles (Hélice; zona da Queda: piche)
+AB_PropaneLakes	53	0	1.8	terra	Areias betuminosas de Alberta (zona da Queda: propano)
+AB_PyroclasticConflagration	41	3	1.6	terra	Yellowstone (Silêncio; zona da Queda: fogo)
+AB_RockyCrags	33	-1	1.8	terra	Grand Canyon / Platô do Colorado (penhascos abandonados)
+AB_GallatrossGraveyard	42	12	1.6	terra	Badlands das Dakotas (ossadas gigantes)
+AB_OcularForest	33	36	1.4	terra	Apalaches (Não Catalogados; zona da Queda: olhos)
+AB_GelatinousSuperorganism	19	26	1.4	terra	Pântanos da Luisiana (Reino do Lodo)
+AB_MiasmicMangrove	18	35.5	2.0	costa	Everglades, Flórida (manguezal)
+AB_FeraliskInfestedJungle	11	12	1.8	terra	Selva de Chiapas (sul do México)
+AB_MycoticJungle	15	15	1.4	terra	Veracruz úmida (Fungobi)
+AB_IdyllicMeadows	34	41	1.4	terra	Colinas da Virgínia (Coro: jardins da corte)

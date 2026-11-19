@@ -1,0 +1,37 @@
+# Etapa 10d (resto): tensão entre potências → incidente → conselho de guerra → guerra declarada; frentes de fronteira.
+newgame
+timeout 900
+forces frontchance 0
+forces tension
+forces tensionday 5
+# membro da Hélice com cargo 3: a patrona consulta aos 75
+join helice
+wait 1h
+leader set 0
+wait 1h
+psy title 3 helice
+wait 1h
+forces tension helice forja 49
+forces tension helice forja 50
+letters
+forces tension helice forja 75
+letters
+# acalmar: tensão cai
+forces council calm
+forces tension
+# segunda vez: inflamar = guerra declarada já
+forces tension helice forja 75
+forces council inflame
+forces
+letters
+# frente de fronteira entre Hélice e Forja (território do Hegemony ou meio do caminho)
+forces border helice forja
+forces front
+forces front expire
+wait 1h
+forces front
+forces log
+# sem consulta (Silêncio × Coro não envolve a patrona): chega a 100 e declara sozinho
+forces tension silencio coro 99
+forces tensionday 1
+forces

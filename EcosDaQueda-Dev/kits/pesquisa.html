@@ -1,0 +1,851 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Árvore de Pesquisa</title>
+<style>
+:root {
+  --bg: #15171a; --panel: #1d2024; --panel2: #24282d; --line: #343a41; --text: #dfe3e6; --dim: #8b949c;
+  --accent: #c8a55a; --accent2: #7fb3c9; --bad: #d26a5c; --ok: #7ab87a; --sel: #2f3a44;
+}
+* { box-sizing: border-box; }
+html, body { margin: 0; height: 100%; background: var(--bg); color: var(--text); font: 13px/1.35 "Segoe UI", system-ui, sans-serif; overflow: hidden; }
+button, input, select, textarea { font: inherit; color: inherit; }
+button { background: var(--panel2); border: 1px solid var(--line); border-radius: 4px; padding: 4px 10px; cursor: pointer; }
+button:hover { border-color: var(--accent); }
+button.primary { background: #5a4a26; border-color: var(--accent); }
+button.danger:hover { border-color: var(--bad); color: var(--bad); }
+button.small { padding: 1px 6px; font-size: 12px; }
+button.sel { border-color: var(--accent); color: var(--accent); }
+input, select, textarea { background: #121417; border: 1px solid var(--line); border-radius: 3px; padding: 3px 5px; }
+input[type=number] { width: 80px; }
+textarea { width: 100%; min-height: 60px; resize: vertical; }
+a { color: var(--accent2); }
+.app { display: grid; grid-template-columns: 250px 1fr 380px; grid-template-rows: 42px 1fr; height: 100vh; }
+header { grid-column: 1 / -1; display: flex; align-items: center; gap: 12px; padding: 0 12px; background: var(--panel); border-bottom: 1px solid var(--line); }
+header h1 { font-size: 15px; margin: 0; color: var(--accent); letter-spacing: .5px; }
+header .sp { flex: 1; }
+#saveState { color: var(--dim); font-size: 12px; }
+aside, #panel { background: var(--panel); overflow: auto; padding: 8px; }
+aside { border-right: 1px solid var(--line); }
+#panel { border-left: 1px solid var(--line); padding: 10px 12px 40px; }
+aside h3, #panel h3 { font-size: 11px; text-transform: uppercase; color: var(--dim); margin: 12px 4px 4px; letter-spacing: .6px; }
+.li { padding: 5px 8px; border-radius: 4px; cursor: pointer; display: flex; justify-content: space-between; gap: 6px; }
+.li:hover { background: var(--panel2); }
+.li.sel { background: var(--sel); color: #fff; }
+.li .n { color: var(--dim); font-size: 11px; white-space: nowrap; }
+.meta { color: var(--dim); font-size: 11px; }
+.warn { color: var(--bad); font-size: 12px; }
+.okc { color: var(--ok); }
+.row { display: flex; gap: 8px; align-items: center; flex-wrap: wrap; margin-bottom: 7px; }
+.f { display: flex; flex-direction: column; gap: 2px; margin-bottom: 7px; }
+.f > span { color: var(--dim); font-size: 11px; }
+.chk { display: flex; gap: 6px; align-items: center; color: var(--text); margin-bottom: 6px; }
+h2 { font-size: 13px; color: var(--accent); margin: 2px 0 8px; display: flex; gap: 8px; align-items: baseline; flex-wrap: wrap; }
+h2 small { color: var(--dim); font-weight: normal; font-size: 11px; }
+.empty { color: var(--dim); padding: 30px 10px; text-align: center; }
+.help { color: var(--dim); font-size: 12px; background: #17191c; border: 1px solid var(--line); border-radius: 6px; padding: 8px 10px; margin: 8px 0; }
+.help b { color: var(--text); }
+/* grafo */
+#graph { position: relative; overflow: hidden; background: #111315; background-image: radial-gradient(#23272b 1px, transparent 1px); background-size: 19px 20px; cursor: grab; }
+#graph.panning { cursor: grabbing; }
+.world { position: absolute; left: 0; top: 0; transform-origin: 0 0; }
+svg.edges { position: absolute; left: 0; top: 0; overflow: visible; }
+svg.edges path.e { fill: none; stroke: #4b545d; stroke-width: 1.6; }
+svg.edges path.e.hl { stroke: var(--accent); stroke-width: 2.4; }
+svg.edges path.e.dep { stroke: var(--accent2); stroke-width: 2.2; }
+svg.edges path.e.sel { stroke: var(--bad); stroke-width: 3; }
+svg.edges path.e.tmp { stroke: var(--accent); stroke-dasharray: 5 4; }
+svg.edges path.hit { fill: none; stroke: transparent; stroke-width: 12; cursor: pointer; pointer-events: stroke; }
+.gn { position: absolute; width: 140px; height: 50px; background: var(--panel2); border: 1px solid #424a52; border-left: 5px solid var(--tc, #555); border-radius: 4px; padding: 2px 5px; cursor: pointer; user-select: none; overflow: hidden; }
+.gn:hover { border-color: var(--accent); border-left-color: var(--tc, #555); }
+.gn.sel { box-shadow: 0 0 0 2px var(--accent); }
+.gn.pre { box-shadow: 0 0 0 2px var(--accent); opacity: 1; }
+.gn.dep { box-shadow: 0 0 0 2px var(--accent2); }
+.gn.ref { border-style: dashed; background: #1b1e21; }
+.gn.bad { border-color: var(--bad); }
+.gn.mine { background: #2a2a22; }
+.gn.found { box-shadow: 0 0 0 3px #e0d070; }
+.gn .t { font-size: 11.5px; font-weight: 600; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; line-height: 15px; }
+.gn .c { font-size: 10px; color: var(--dim); display: flex; gap: 4px; align-items: center; height: 14px; white-space: nowrap; }
+.gn .ics { display: flex; gap: 2px; height: 17px; align-items: center; }
+.gn .ics img { max-width: 16px; max-height: 16px; }
+.gn .ics .more { font-size: 10px; color: var(--dim); }
+.gn .h { position: absolute; right: -1px; top: 15px; width: 12px; height: 18px; background: var(--accent); border-radius: 6px 0 0 6px; cursor: crosshair; opacity: .45; }
+.gn .h:hover { opacity: 1; }
+.gn .flag { position: absolute; right: 13px; top: 1px; font-size: 11px; }
+.gtools { position: absolute; right: 10px; top: 10px; display: flex; gap: 6px; z-index: 5; }
+.gtools button { background: rgba(36,40,45,.92); }
+.ghint { position: absolute; left: 10px; bottom: 8px; color: var(--dim); font-size: 11px; z-index: 5; background: rgba(17,19,21,.85); padding: 3px 8px; border-radius: 4px; pointer-events: none; }
+/* painel */
+.ul { display: flex; flex-direction: column; gap: 3px; }
+.u { display: grid; grid-template-columns: 30px 1fr auto; gap: 6px; align-items: center; background: var(--panel2); border: 1px solid var(--line); border-radius: 4px; padding: 3px 5px; }
+.u .ic { width: 30px; height: 30px; display: flex; align-items: center; justify-content: center; background: #101214; border-radius: 3px; font-size: 14px; color: var(--dim); }
+.u .ic img { max-width: 28px; max-height: 28px; }
+.u .x { cursor: pointer; color: var(--dim); padding: 0 4px; }
+.u .x:hover { color: var(--bad); }
+.u.moved { opacity: .55; }
+.lnk { color: var(--accent2); cursor: pointer; }
+.lnk:hover { text-decoration: underline; }
+.chips { display: flex; gap: 4px; flex-wrap: wrap; }
+.chip { background: var(--panel2); border: 1px solid var(--line); border-radius: 10px; padding: 1px 8px; font-size: 12px; }
+.chip b { cursor: pointer; color: var(--dim); margin-left: 4px; }
+.res { max-height: 260px; overflow: auto; border: 1px solid var(--line); border-radius: 4px; margin-top: 4px; }
+.res .li { border-radius: 0; border-bottom: 1px solid #23272b; }
+/* modal */
+.modal { position: fixed; inset: 0; background: rgba(0,0,0,.6); display: flex; align-items: center; justify-content: center; z-index: 40; }
+.modal .box { background: var(--panel); border: 1px solid var(--line); border-radius: 8px; padding: 14px; width: min(1000px, 94vw); max-height: 88vh; display: flex; flex-direction: column; gap: 8px; }
+.pgrid { overflow: auto; display: grid; grid-template-columns: repeat(auto-fill, minmax(210px, 1fr)); gap: 4px; padding-right: 4px; }
+.pi { display: grid; grid-template-columns: 34px 1fr; gap: 6px; background: var(--panel2); border: 1px solid transparent; border-radius: 4px; padding: 4px; cursor: pointer; }
+.pi:hover { border-color: var(--accent); }
+.pi.on { border-color: var(--ok); background: #22301f; }
+.pi .ic { width: 34px; height: 34px; display: flex; align-items: center; justify-content: center; background: #101214; border-radius: 3px; color: var(--dim); }
+.pi .ic img { max-width: 32px; max-height: 32px; }
+.pi .nm { font-size: 12px; font-weight: 600; line-height: 1.2; }
+.pi .meta { line-height: 1.2; }
+pre { white-space: pre-wrap; background: #101214; padding: 8px; border-radius: 4px; overflow: auto; }
+#toast { position: fixed; bottom: 16px; left: 50%; transform: translateX(-50%); background: #2a2416; border: 1px solid var(--accent); border-radius: 6px; padding: 8px 14px; z-index: 60; display: none; }
+</style>
+</head>
+<body>
+<div class="app" id="app">
+  <header>
+    <h1>ÁRVORE DE PESQUISA · Ecos da Queda</h1>
+    <span><button id="vOrig">Árvore original</button> <button id="vMine">Minhas árvores</button></span>
+    <span id="saveState"></span>
+    <span class="sp"></span>
+    <a href="/">← Kits e unidades</a>
+    <button id="btnBuild" class="primary" title="Gera os Defs do editor: kits, unidades e árvores de pesquisa">Gerar Defs do mod</button>
+  </header>
+  <aside id="side"></aside>
+  <div id="graph"></div>
+  <div id="panel"></div>
+</div>
+<script>
+const $ = s => document.querySelector(s);
+const el = (tag, attrs = {}, ...kids) => {
+  const e = document.createElement(tag);
+  for (const [k, v] of Object.entries(attrs)) {
+    if (k === 'class') e.className = v; else if (k.startsWith('on')) e.addEventListener(k.slice(2), v);
+    else if (k === 'html') e.innerHTML = v; else if (k === 'value') e.value = v ?? '';
+    else if (v !== undefined && v !== null && v !== false) e.setAttribute(k, v === true ? '' : v);
+  }
+  for (const c of kids.flat()) if (c !== null && c !== undefined && c !== false) e.append(c.nodeType ? c : document.createTextNode(c));
+  return e;
+};
+const esc = s => String(s ?? '').replace(/[&<>"]/g, c => ({'&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;'}[c]));
+let toastTimer = null;
+function toast(msg) {
+  let t = $('#toast');
+  if (!t) { t = el('div', {id: 'toast'}); document.body.append(t); }
+  t.textContent = msg; t.style.display = 'block';
+  clearTimeout(toastTimer); toastTimer = setTimeout(() => t.style.display = 'none', 3500);
+}
+
+// ------------------------------------------------------------ dados
+const SX = 190, SY = 100, NW = 140, NH = 50;              // mesma escala da tela de pesquisa do jogo
+const TECHS = [['Neolithic', 'Neolítico', '#8a6d3b'], ['Medieval', 'Medieval', '#a8843f'], ['Industrial', 'Industrial', '#4f8296'],
+  ['Spacer', 'Espacial', '#5c6fb8'], ['Ultra', 'Ultra', '#9a5cb8'], ['Archotech', 'Arcotec', '#c05a5a']];
+const TECH = Object.fromEntries(TECHS.map(([k, l, c]) => [k, {label: l, color: c}]));
+const KINDS = [['building', 'Construção'], ['item', 'Item'], ['plant', 'Planta'], ['terrain', 'Piso'], ['recipe', 'Receita / cirurgia']];
+const KIND = Object.fromEntries(KINDS);
+let CAT = null, R = null, PROJ = {}, UNL = {}, REQBY = {}, TABS = [], BRANCH = {};
+let TREES = [];
+let view = 'orig', origTab = null, selOrig = null, curTree = null, selNode = null, selEdge = null, origSearch = '';
+const undo = [];
+
+async function load() {
+  const st = await (await fetch('/api/pesquisa')).json();
+  TREES = st.arvores; TREES.forEach(t => t._file = t.id);
+  if (!st.catalog) { $('#graph').append(el('div', {class: 'empty'}, 'Falta o catálogo: peça ao Claude para rodar "python kits/kits.py catalog".')); return; }
+  CAT = await (await fetch('/api/catalog')).json();
+  R = CAT.research;
+  if (!R) { $('#graph').append(el('div', {class: 'empty'}, 'O catálogo é antigo (sem pesquisas): rode de novo "python kits/kits.py catalog".')); return; }
+  for (const p of R.projects) { PROJ[p.def] = p; for (const q of p.prereqs) (REQBY[q] ||= []).push(p.def); }
+  for (const u of R.unlocks) UNL[u.def] = u;
+  for (const b of R.branches) BRANCH[b.def] = b;
+  TABS = R.tabs.filter(t => t.n > 0);
+  origTab = TABS.find(t => t.def === 'EQ_Tab_Bancada')?.def || TABS[0]?.def;
+  curTree = TREES[0] || null;
+  renderAll();
+}
+
+// ------------------------------------------------------------ ícones
+function icon(def, size) {
+  const u = UNL[def];
+  if (u && u.kind === 'recipe') return el('span', {}, /Cirurgia/.test(u.cat) ? '✚' : '⚙');
+  const img = el('img', {alt: '', loading: 'lazy', src: '/icons/' + encodeURIComponent(def) + '.png'});
+  img.onerror = () => img.replaceWith(el('span', {}, (u?.label || def)[0]));
+  return img;
+}
+const ulabel = d => UNL[d]?.label || d;
+const plabel = d => PROJ[d]?.label || d;
+
+// ------------------------------------------------------------ grafo (pan, zoom, arrastar, ligar)
+const VIEWS = {};
+class GraphView {
+  constructor(host, o) {
+    this.host = host; this.o = o; this.pos = {};
+    const v = VIEWS[o.key] || (VIEWS[o.key] = {z: 1, px: 40, py: 40, fresh: true});
+    this.v = v;
+    host.innerHTML = '';
+    this.world = el('div', {class: 'world'});
+    this.svg = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
+    this.svg.setAttribute('class', 'edges'); this.svg.setAttribute('width', 1); this.svg.setAttribute('height', 1);
+    this.world.append(this.svg);
+    host.append(this.world);
+    if (o.tools) host.append(o.tools);
+    if (o.hint) host.append(el('div', {class: 'ghint'}, o.hint));
+    host.onmousedown = e => this.down(e);
+    host.ondblclick = e => { if (!e.target.closest('.gn') && o.onDblBg) { const g = this.toGrid(e); o.onDblBg(g.x, g.y); } };
+    host.onwheel = e => {
+      e.preventDefault();
+      const r = host.getBoundingClientRect(), mx = e.clientX - r.left, my = e.clientY - r.top;
+      const nz = Math.min(2, Math.max(0.15, v.z * (e.deltaY < 0 ? 1.12 : 1 / 1.12)));
+      v.px = mx - (mx - v.px) * nz / v.z; v.py = my - (my - v.py) * nz / v.z; v.z = nz; this.apply();
+    };
+  }
+  apply() { this.world.style.transform = `translate(${this.v.px}px,${this.v.py}px) scale(${this.v.z})`; }
+  toGrid(e) {
+    const r = this.host.getBoundingClientRect();
+    return {x: ((e.clientX - r.left - this.v.px) / this.v.z - NW / 2) / SX, y: ((e.clientY - r.top - this.v.py) / this.v.z - NH / 2) / SY};
+  }
+  set(nodes, edges) {
+    this.nodes = nodes; this.edges = edges;
+    this.world.querySelectorAll('.gn').forEach(n => n.remove());
+    this.pos = {};
+    for (const n of nodes) {
+      const d = el('div', {class: 'gn ' + (n.cls || ''), 'data-k': n.key, title: n.title || ''});
+      d.style.left = n.x * SX + 'px'; d.style.top = n.y * SY + 'px';
+      if (n.color) d.style.setProperty('--tc', n.color);
+      d.append(n.content);
+      if (this.o.editable && !n.noLink) d.append(el('div', {class: 'h', title: 'Arraste até outra pesquisa: esta vira pré-requisito dela'}));
+      this.world.append(d);
+      this.pos[n.key] = {x: n.x * SX, y: n.y * SY, el: d};
+    }
+    this.drawEdges();
+    if (this.v.fresh) { this.v.fresh = false; this.fit(); } else this.apply();
+  }
+  path(a, b) {
+    const x1 = a.x + NW, y1 = a.y + NH / 2, x2 = b.x, y2 = b.y + NH / 2, dx = Math.max(40, Math.abs(x2 - x1) / 2);
+    return `M${x1},${y1} C${x1 + dx},${y1} ${x2 - dx},${y2} ${x2},${y2}`;
+  }
+  drawEdges(tmp) {
+    let s = '<defs><marker id="ar" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L8,4 L0,8 z" fill="#6b747d"/></marker></defs>';
+    for (const e of this.edges) {
+      const a = this.pos[e.from], b = this.pos[e.to];
+      if (!a || !b) continue;
+      const d = this.path(a, b);
+      s += `<path class="e ${e.cls || ''}" d="${d}" marker-end="url(#ar)"/>`;
+      if (this.o.editable) s += `<path class="hit" data-f="${esc(e.from)}" data-t="${esc(e.to)}" d="${d}"><title>Clique para selecionar a ligação</title></path>`;
+    }
+    if (tmp) s += `<path class="e tmp" d="${tmp}"/>`;
+    this.svg.innerHTML = s;
+  }
+  fit() {
+    const ps = Object.values(this.pos);
+    const r = this.host.getBoundingClientRect();
+    if (!ps.length || !r.width) { this.v.px = 40; this.v.py = 40; this.v.z = 1; this.apply(); return; }
+    const x0 = Math.min(...ps.map(p => p.x)), y0 = Math.min(...ps.map(p => p.y)), x1 = Math.max(...ps.map(p => p.x)) + NW, y1 = Math.max(...ps.map(p => p.y)) + NH;
+    const z = Math.min(1.1, Math.max(0.15, Math.min((r.width - 60) / (x1 - x0), (r.height - 60) / (y1 - y0))));
+    this.v.z = z; this.v.px = 30 - x0 * z + Math.max(0, (r.width - 60 - (x1 - x0) * z) / 2); this.v.py = 30 - y0 * z;
+    this.apply();
+  }
+  center(key) {
+    const p = this.pos[key], r = this.host.getBoundingClientRect();
+    if (!p) return;
+    if (this.v.z < 0.6) this.v.z = 0.8;
+    this.v.px = r.width / 2 - (p.x + NW / 2) * this.v.z; this.v.py = r.height / 2 - (p.y + NH / 2) * this.v.z; this.apply();
+  }
+  down(e) {
+    if (e.button !== 0 || e.target.closest('.gtools')) return;
+    const v = this.v, o = this.o, sx = e.clientX, sy = e.clientY;
+    let moved = false, move, up;
+    const h = e.target.closest('.h'), node = e.target.closest('.gn'), hit = e.target.closest('path.hit');
+    if (h && o.editable) {
+      const k = node.dataset.k, a = this.pos[k];
+      move = ev => {
+        const r = this.host.getBoundingClientRect();
+        const mx = (ev.clientX - r.left - v.px) / v.z, my = (ev.clientY - r.top - v.py) / v.z;
+        const x1 = a.x + NW, y1 = a.y + NH / 2;
+        this.drawEdges(`M${x1},${y1} C${x1 + 60},${y1} ${mx - 60},${my} ${mx},${my}`);
+      };
+      up = ev => {
+        this.drawEdges();
+        const t = document.elementFromPoint(ev.clientX, ev.clientY)?.closest('.gn');
+        if (t && t.dataset.k !== k) o.onConnect(k, t.dataset.k);
+      };
+    } else if (node) {
+      const k = node.dataset.k, p = this.pos[k], ox = p.x, oy = p.y;
+      move = ev => {
+        if (!o.editable) return;
+        const dx = (ev.clientX - sx) / v.z, dy = (ev.clientY - sy) / v.z;
+        if (!moved && Math.abs(dx) + Math.abs(dy) < 4) return;
+        moved = true;
+        const gx = Math.round((ox + dx) / SX * 4) / 4, gy = Math.round((oy + dy) / SY * 4) / 4;
+        p.x = gx * SX; p.y = gy * SY; p.el.style.left = p.x + 'px'; p.el.style.top = p.y + 'px';
+        this.drawEdges();
+      };
+      up = () => { if (moved) o.onMove(k, p.x / SX, p.y / SY); else o.onSelect(k); };
+    } else if (hit) {
+      up = () => o.onEdge && o.onEdge(hit.dataset.f, hit.dataset.t);
+    } else {
+      const px = v.px, py = v.py;
+      this.host.classList.add('panning');
+      move = ev => { const dx = ev.clientX - sx, dy = ev.clientY - sy; if (Math.abs(dx) + Math.abs(dy) > 3) moved = true; v.px = px + dx; v.py = py + dy; this.apply(); };
+      up = () => { this.host.classList.remove('panning'); if (!moved) o.onSelect(null); };
+    }
+    e.preventDefault();
+    const mm = ev => move && move(ev);
+    const mu = ev => { window.removeEventListener('mousemove', mm); window.removeEventListener('mouseup', mu); up && up(ev); };
+    window.addEventListener('mousemove', mm); window.addEventListener('mouseup', mu);
+  }
+}
+let G = null;
+
+function nodeBody(label, sub, unlocks, flag) {
+  const ics = el('div', {class: 'ics'});
+  (unlocks || []).slice(0, 6).forEach(u => ics.append(icon(u)));
+  if ((unlocks || []).length > 6) ics.append(el('span', {class: 'more'}, '+' + (unlocks.length - 6)));
+  return el('div', {}, flag ? el('span', {class: 'flag'}, flag) : null, el('div', {class: 't'}, label), el('div', {class: 'c'}, sub), ics);
+}
+
+// ------------------------------------------------------------ minhas árvores: estado e gravação
+function claims() {      // def desbloqueado -> [{tree, node}]
+  const m = {};
+  for (const t of TREES) for (const n of t.nodes || []) if (!n.ref) for (const u of n.unlocks || []) (m[u] ||= []).push({t, n});
+  return m;
+}
+const saveTimers = {};
+function save(t) {
+  $('#saveState').textContent = 'alterado…';
+  clearTimeout(saveTimers[t._file || t.id]);
+  saveTimers[t._file || t.id] = setTimeout(async () => {
+    const body = JSON.stringify(t, (k, v) => k.startsWith('_') ? undefined : v);
+    const r = await fetch('/api/pesquisa/' + encodeURIComponent(t._file || t.id), {method: 'PUT', body});
+    const j = await r.json();
+    if (j.error) { $('#saveState').textContent = 'ERRO: ' + j.error; return; }
+    t._file = t.id;
+    $('#saveState').textContent = 'salvo ' + new Date().toLocaleTimeString();
+  }, 400);
+}
+function mutate(fn, rerender = true) {
+  if (!curTree) return;
+  undo.push({id: curTree.id, json: JSON.stringify(curTree, (k, v) => k.startsWith('_') ? undefined : v)});
+  if (undo.length > 80) undo.shift();
+  fn();
+  save(curTree);
+  if (rerender) renderAll();
+}
+function doUndo() {
+  const u = undo.pop();
+  if (!u) return toast('Nada para desfazer');
+  const t = TREES.find(x => x.id === u.id || x._file === u.id);
+  if (!t) return;
+  const old = JSON.parse(u.json);
+  for (const k of Object.keys(t)) if (!k.startsWith('_')) delete t[k];
+  Object.assign(t, old);
+  curTree = t; selNode = t.nodes.some(n => n.id === selNode) ? selNode : null; selEdge = null;
+  save(t); renderAll(); toast('Desfeito');
+}
+function slug(s) {
+  const w = String(s || '').normalize('NFD').replace(/[̀-ͯ]/g, '').split(/[^A-Za-z0-9]+/).filter(Boolean);
+  let r = w.map(x => x[0].toUpperCase() + x.slice(1)).join('');
+  if (!r) r = 'P';
+  if (/^\d/.test(r)) r = 'P' + r;
+  return r.slice(0, 40);
+}
+function uniqId(t, base) {
+  const ids = new Set((t.nodes || []).map(n => n.id));
+  if (!ids.has(base)) return base;
+  for (let i = 2; ; i++) if (!ids.has(base + i)) return base + i;
+}
+function node(id) { return curTree?.nodes.find(n => n.id === id); }
+function renameNode(n, nid) {
+  for (const o of curTree.nodes) o.prereqs = (o.prereqs || []).map(p => p === n.id ? nid : p);
+  if (selNode === n.id) selNode = nid;
+  n.id = nid;
+}
+function ancestors(id, seen = new Set()) {
+  for (const p of node(id)?.prereqs || []) if (!seen.has(p)) { seen.add(p); ancestors(p, seen); }
+  return seen;
+}
+function newTree(label, nodes) {
+  const id = slug(label);
+  if (TREES.some(t => t.id === id)) { alert('Já existe uma árvore com o nome interno ' + id); return null; }
+  const t = {id, label, desc: '', active: false, ownTab: true, branch: 'EQ_Ramo_Bancada', replace: true, nodes: nodes || []};
+  TREES.push(t); curTree = t; selNode = null; selEdge = null;
+  save(t);
+  return t;
+}
+function addNode(x, y, extra) {
+  if (!curTree) return;
+  let id;
+  mutate(() => {
+    const label = extra?.label || 'Nova pesquisa';
+    id = uniqId(curTree, slug(label));
+    curTree.nodes.push(Object.assign({id, idAuto: true, label, desc: '', cost: 500, tech: 'Industrial', x: Math.round(x * 4) / 4, y: Math.round(y * 4) / 4,
+      prereqs: [], unlocks: []}, extra || {}, {id}));
+    selNode = id; selEdge = null;
+  });
+  return id;
+}
+function freeSpot(x) {
+  const ys = curTree.nodes.filter(n => Math.abs(n.x - x) < 0.6).map(n => n.y);
+  let y = 0; while (ys.some(v => Math.abs(v - y) < 0.6)) y += 0.75;
+  return y;
+}
+function addRef(def, nearX) {
+  const ex = curTree.nodes.find(n => n.ref === def);
+  if (ex) return ex.id;
+  const xs = curTree.nodes.filter(n => !n.ref).map(n => n.x);
+  const x = nearX ?? (xs.length ? Math.min(...xs) - 1.5 : 0);
+  const id = uniqId(curTree, 'ref_' + def.replace(/[^A-Za-z0-9_]/g, ''));
+  curTree.nodes.push({id, ref: def, x, y: freeSpot(x), prereqs: []});
+  return id;
+}
+function ensureTree() {
+  if (curTree) return curTree;
+  const label = prompt('Nome da nova árvore (vira a aba no jogo):', 'Minha árvore');
+  return label ? newTree(label) : null;
+}
+// cópia de um projeto original como pesquisa nova (os pré-requisitos viram referências à árvore original)
+function copyProject(p, x, y) {
+  const pre = p.prereqs.map(q => addRef(q, x - 1.5));
+  return {label: p.label, desc: p.desc, cost: p.cost, tech: p.tech, x, y, prereqs: pre, unlocks: p.unlocks.filter(u => UNL[u]),
+    branch: p.branch, bench: p.bench, facilities: p.facilities, techprints: p.techprints, from: p.def};
+}
+function copyTab(tabDef) {
+  const tab = TABS.find(t => t.def === tabDef);
+  const label = prompt('Copiar a aba "' + tab.label + '" para uma árvore nova. Nome da árvore:', tab.label + ' (minha)');
+  if (!label) return;
+  const t = newTree(label);
+  if (!t) return;
+  const ps = R.projects.filter(p => p.tab === tabDef), ids = {};
+  for (const p of ps) ids[p.def] = uniqId({nodes: Object.values(ids).map(id => ({id}))}, slug(p.label));
+  for (const p of ps)
+    t.nodes.push({id: ids[p.def], label: p.label, desc: p.desc, cost: p.cost, tech: p.tech, x: p.x, y: p.y, prereqs: [],
+      unlocks: p.unlocks.filter(u => UNL[u]), branch: p.branch, bench: p.bench, facilities: p.facilities, techprints: p.techprints, from: p.def});
+  const minX = Math.min(...ps.map(p => p.x)) - 1.5;
+  for (const p of ps) {
+    const n = t.nodes.find(x => x.id === ids[p.def]);
+    for (const q of p.prereqs) {
+      if (ids[q]) n.prereqs.push(ids[q]);
+      else { curTree = t; n.prereqs.push(addRef(q, minX)); }
+    }
+  }
+  save(t); view = 'mine'; VIEWS['t:' + t.id] = null; delete VIEWS['t:' + t.id]; renderAll();
+  toast('Copiada: ' + ps.length + ' pesquisas. Ative a árvore quando quiser que ela vá para o jogo.');
+}
+
+// ------------------------------------------------------------ render
+function renderAll() {
+  $('#vOrig').classList.toggle('sel', view === 'orig'); $('#vMine').classList.toggle('sel', view === 'mine');
+  if (!R) return;
+  if (view === 'orig') { renderOrigSide(); renderOrigGraph(); renderOrigPanel(); }
+  else { renderMineSide(); renderMineGraph(); renderMinePanel(); }
+}
+
+// ---- árvore original
+function renderOrigSide() {
+  const s = $('#side'); s.innerHTML = '';
+  const inp = el('input', {placeholder: 'Buscar pesquisa ou o que ela libera…', style: 'width:100%', value: origSearch});
+  const res = el('div');
+  const doSearch = () => {
+    origSearch = inp.value; res.innerHTML = '';
+    const q = origSearch.trim().toLowerCase();
+    if (q.length < 2) return;
+    const hits = [];
+    for (const p of R.projects) if (p.label.toLowerCase().includes(q) || p.def.toLowerCase().includes(q)) hits.push({p, why: ''});
+    for (const u of R.unlocks) if (u.label.toLowerCase().includes(q) || u.def.toLowerCase().includes(q))
+      for (const r of u.research) if (PROJ[r]) hits.push({p: PROJ[r], why: 'libera ' + u.label});
+    const box = el('div', {class: 'res'});
+    hits.slice(0, 80).forEach(h => box.append(el('div', {class: 'li', onclick: () => { origTab = h.p.tab; selOrig = h.p.def; renderAll(); G.center(h.p.def); }},
+      el('span', {}, h.p.label, h.why ? el('div', {class: 'meta'}, h.why) : null), el('span', {class: 'n'}, TABS.find(t => t.def === h.p.tab)?.label || ''))));
+    if (!hits.length) box.append(el('div', {class: 'meta', style: 'padding:6px'}, 'Nada encontrado.'));
+    res.append(box);
+  };
+  inp.oninput = doSearch;
+  s.append(inp, res);
+  s.append(el('h3', {}, 'Abas do jogo'));
+  for (const t of TABS)
+    s.append(el('div', {class: 'li' + (t.def === origTab ? ' sel' : ''), onclick: () => { origTab = t.def; selOrig = null; renderAll(); }},
+      el('span', {}, t.label), el('span', {class: 'n'}, t.n)));
+  s.append(el('button', {style: 'width:100%;margin-top:10px', onclick: () => copyTab(origTab)}, 'Copiar esta aba para uma árvore minha'));
+  s.append(el('div', {class: 'help'}, 'Esta é a árvore como está no jogo agora (vanilla + mods, já nas abas dos ramos do Ecos da Queda). Só leitura: para mudar, copie a aba ou pesquisas para uma árvore sua.'));
+  if (origSearch) doSearch();
+}
+function renderOrigGraph() {
+  const ps = R.projects.filter(p => p.tab === origTab);
+  const set = new Set(ps.map(p => p.def));
+  const sel = selOrig && PROJ[selOrig];
+  const pre = new Set(sel ? sel.prereqs : []), dep = new Set(sel ? (REQBY[sel.def] || []) : []);
+  const cl = claims();
+  const nodes = ps.map(p => {
+    const ext = p.prereqs.filter(q => !set.has(q));
+    const moved = p.unlocks.filter(u => cl[u]).length;
+    return {key: p.def, x: p.x, y: p.y, color: TECH[p.tech]?.color,
+      cls: (p.def === selOrig ? 'sel' : pre.has(p.def) ? 'pre' : dep.has(p.def) ? 'dep' : '') + (p.editor ? ' mine' : ''),
+      title: p.label + (ext.length ? '\nPré-requisitos de outras abas: ' + ext.map(plabel).join(', ') : ''),
+      content: nodeBody(p.label, [p.cost + ' pts', TECH[p.tech]?.label || p.tech, ext.length ? '↖' + ext.length : '', moved ? '→ ' + moved + ' movidos' : ''].filter(Boolean).join(' · '), p.unlocks)};
+  });
+  const edges = [];
+  for (const p of ps) for (const q of p.prereqs) if (set.has(q))
+    edges.push({from: q, to: p.def, cls: sel && p.def === sel.def ? 'hl' : sel && q === sel.def ? 'dep' : ''});
+  G = new GraphView($('#graph'), {key: 'o:' + origTab, editable: false,
+    onSelect: k => { selOrig = k; renderAll(); },
+    tools: el('div', {class: 'gtools'}, el('button', {onclick: () => G.fit()}, 'Ver tudo')),
+    hint: 'Arraste o fundo para mover · roda do mouse = zoom · clique numa pesquisa para ver o que ela libera'});
+  G.set(nodes, edges);
+}
+function unlockRow(d, extra, onX) {
+  const u = UNL[d];
+  return el('div', {class: 'u', title: (u?.desc || '') + '\n' + d + (u ? ' · ' + u.mod : '')},
+    el('div', {class: 'ic'}, icon(d)),
+    el('div', {}, el('div', {}, ulabel(d)), el('div', {class: 'meta'}, [u ? KIND[u.kind] + (u.cat ? ' · ' + u.cat : '') : 'não está no catálogo', extra].filter(Boolean).join(' · '))),
+    onX ? el('span', {class: 'x', title: 'Tirar', onclick: onX}, '×') : el('span'));
+}
+function projLink(d) { return el('span', {class: 'lnk', onclick: () => { if (!PROJ[d]) return; origTab = PROJ[d].tab; selOrig = d; view = 'orig'; renderAll(); G.center(d); }}, plabel(d)); }
+function renderOrigPanel() {
+  const P = $('#panel'); P.innerHTML = '';
+  const p = selOrig && PROJ[selOrig];
+  if (!p) {
+    P.append(el('h2', {}, TABS.find(t => t.def === origTab)?.label || ''),
+      el('div', {class: 'help'}, el('b', {}, 'Cores: '), TECHS.map(([k, l, c]) => el('span', {style: 'color:' + c + ';margin-right:8px'}, '■ ' + l)),
+        el('br'), 'Linha entre pesquisas = pré-requisito (da esquerda para a direita). ↖n = tem n pré-requisitos em outras abas. Os ícones são o que a pesquisa libera.'));
+    return;
+  }
+  const cl = claims();
+  P.append(el('h2', {}, p.label, el('small', {}, p.def)));
+  P.append(el('div', {class: 'meta'}, [p.cost + ' pontos', TECH[p.tech]?.label || p.tech, 'ramo: ' + (BRANCH[p.branch]?.label || '—'), 'mod: ' + p.mod].join(' · ')));
+  if (p.bench || p.facilities.length) P.append(el('div', {class: 'meta'}, 'Exige: ' + [p.bench, ...p.facilities].filter(Boolean).map(b => R.benches.find(x => x.def === b)?.label || b).join(', ')));
+  if (p.techprints) P.append(el('div', {class: 'meta'}, 'Techprints: ' + p.techprints));
+  if (p.knowledge) P.append(el('div', {class: 'meta'}, 'Pesquisa de conhecimento da Anomaly (' + p.knowledge + ')'));
+  if (p.editor) P.append(el('div', {class: 'okc'}, 'Criada no editor (uma árvore sua).'));
+  P.append(el('p', {}, p.desc));
+  P.append(el('div', {class: 'row'},
+    el('button', {onclick: () => { const t = ensureTree(); if (!t) return; let id; mutate(() => { id = addRef(p.def); selNode = id; }, false); view = 'mine'; renderAll(); G.center(id); }},
+      'Usar como pré-requisito na minha árvore'),
+    el('button', {onclick: () => { const t = ensureTree(); if (!t) return; const xs = t.nodes.map(n => n.x); const x = xs.length ? Math.max(...xs) + 1 : 0;
+      const id = addNode(x, freeSpot(x), copyProject(p, x, 0)); node(id).y = freeSpot(x); save(curTree); view = 'mine'; renderAll(); G.center(id); }},
+      'Copiar para minha árvore')));
+  P.append(el('div', {class: 'meta'}, curTree ? 'Árvore atual: ' + curTree.label : 'Você ainda não tem árvore; o botão cria uma.'));
+  P.append(el('h3', {}, 'Pré-requisitos'));
+  P.append(p.prereqs.length ? el('div', {class: 'chips'}, p.prereqs.map(d => el('span', {class: 'chip'}, projLink(d)))) : el('div', {class: 'meta'}, 'nenhum'));
+  if (p.hidden.length) P.append(el('div', {class: 'meta'}, 'Ocultos: ', p.hidden.map(plabel).join(', ')));
+  P.append(el('h3', {}, 'Libera as pesquisas'));
+  const rb = REQBY[p.def] || [];
+  P.append(rb.length ? el('div', {class: 'chips'}, rb.map(d => el('span', {class: 'chip'}, projLink(d)))) : el('div', {class: 'meta'}, 'nenhuma'));
+  P.append(el('h3', {}, 'Desbloqueia (' + p.unlocks.length + ')'));
+  const ul = el('div', {class: 'ul'});
+  for (const d of p.unlocks) {
+    const c = cl[d];
+    const r = unlockRow(d, c ? '→ ' + c.map(x => x.t.label + ' › ' + (x.n.label || x.n.id)).join(', ') : '');
+    if (c) r.classList.add('moved');
+    ul.append(r);
+  }
+  if (!p.unlocks.length) ul.append(el('div', {class: 'meta'}, 'nada (só abre caminho para outras pesquisas)'));
+  P.append(ul);
+}
+
+// ---- minhas árvores
+function treeWarnings(t) {
+  const w = [], cl = claims(), by = Object.fromEntries(t.nodes.map(n => [n.id, n]));
+  for (const n of t.nodes) {
+    if (n.ref) { if (!PROJ[n.ref]) w.push({n, m: 'pesquisa original não existe: ' + n.ref}); continue; }
+    if (!(n.unlocks || []).length) w.push({n, m: 'não desbloqueia nada'});
+    for (const u of n.unlocks || []) {
+      if (!UNL[u]) w.push({n, m: 'não está no catálogo: ' + u});
+      const c = (cl[u] || []).filter(x => x.n !== n);
+      if (c.length) w.push({n, m: ulabel(u) + ' também em ' + c.map(x => x.n.label || x.n.id).join(', ')});
+    }
+    if (n.prereqs?.some(p => p === n.id || ancestors(p).has(n.id))) w.push({n, m: 'ciclo de pré-requisitos'});
+    if (n.prereqs?.some(p => !by[p])) w.push({n, m: 'pré-requisito sumiu'});
+  }
+  return w;
+}
+function renderMineSide() {
+  const s = $('#side'); s.innerHTML = '';
+  s.append(el('button', {style: 'width:100%', onclick: () => { const l = prompt('Nome da nova árvore (vira a aba no jogo):', 'Minha árvore'); if (l && newTree(l)) renderAll(); }}, '+ Nova árvore'));
+  s.append(el('h3', {}, 'Árvores'));
+  if (!TREES.length) s.append(el('div', {class: 'meta', style: 'padding:4px'}, 'Nenhuma ainda.'));
+  for (const t of TREES)
+    s.append(el('div', {class: 'li' + (t === curTree ? ' sel' : ''), onclick: () => { curTree = t; selNode = null; selEdge = null; renderAll(); }},
+      el('span', {}, t.label), el('span', {class: 'n', title: t.active ? 'vai para o jogo' : 'rascunho: não vai para o jogo'},
+        t.nodes.filter(n => !n.ref).length + (t.active ? ' ✔' : ' ✎'))));
+  if (!curTree) return;
+  const w = treeWarnings(curTree);
+  s.append(el('h3', {}, 'Avisos (' + w.length + ')'));
+  if (!w.length) s.append(el('div', {class: 'meta okc', style: 'padding:4px'}, 'nenhum'));
+  w.slice(0, 60).forEach(x => s.append(el('div', {class: 'li', onclick: () => { selNode = x.n.id; selEdge = null; renderAll(); G.center(x.n.id); }},
+    el('span', {}, el('b', {}, x.n.label || x.n.ref || x.n.id), el('div', {class: 'warn'}, x.m)))));
+}
+function renderMineGraph() {
+  const host = $('#graph');
+  if (!curTree) {
+    host.innerHTML = '';
+    host.append(el('div', {class: 'empty'}, 'Crie uma árvore à esquerda (ou copie uma aba na Árvore original).'));
+    return;
+  }
+  const cl = claims();
+  const sel = node(selNode);
+  const nodes = curTree.nodes.map(n => {
+    if (n.ref) {
+      const p = PROJ[n.ref];
+      return {key: n.id, x: n.x, y: n.y, color: TECH[p?.tech]?.color, cls: 'ref' + (n.id === selNode ? ' sel' : '') + (p ? '' : ' bad'),
+        title: 'Pesquisa original (já existe no jogo): ' + (p?.label || n.ref), content: nodeBody(p?.label || n.ref, 'original · ' + (p ? p.cost + ' pts' : '?'), [])};
+    }
+    const bad = (n.unlocks || []).some(u => (cl[u] || []).length > 1 || !UNL[u]);
+    const empty = !(n.unlocks || []).length;
+    return {key: n.id, x: n.x, y: n.y, color: TECH[n.tech]?.color,
+      cls: (n.id === selNode ? 'sel' : sel?.prereqs?.includes(n.id) ? 'pre' : sel && n.prereqs?.includes(sel.id) ? 'dep' : '') + (bad ? ' bad' : ''),
+      title: (n.label || n.id) + (n.desc ? '\n' + n.desc : ''),
+      content: nodeBody(n.label || n.id, (n.cost || 0) + ' pts · ' + (TECH[n.tech]?.label || n.tech), n.unlocks, empty ? '⚠' : bad ? '❗' : '')};
+  });
+  const edges = [];
+  for (const n of curTree.nodes) for (const p of n.prereqs || [])
+    edges.push({from: p, to: n.id, cls: selEdge && selEdge.from === p && selEdge.to === n.id ? 'sel' : n.id === selNode ? 'hl' : p === selNode ? 'dep' : ''});
+  G = new GraphView(host, {key: 't:' + curTree.id, editable: true,
+    onSelect: k => { selNode = k; selEdge = null; renderAll(); },
+    onMove: (k, x, y) => mutate(() => { const n = node(k); n.x = x; n.y = y; selNode = k; selEdge = null; }),
+    onConnect: (a, b) => {
+      const nb = node(b);
+      if (nb.ref) return toast('Pesquisa original não pode ganhar pré-requisito aqui (ela já existe no jogo).');
+      if (nb.prereqs.includes(a)) return toast('Essa ligação já existe.');
+      if (ancestors(a).has(b)) return toast('Isso faria um ciclo: ' + (node(a).label || a) + ' já depende de ' + (nb.label || b) + '.');
+      mutate(() => { nb.prereqs.push(a); selEdge = {from: a, to: b}; selNode = null; });
+    },
+    onEdge: (a, b) => { selEdge = {from: a, to: b}; selNode = null; renderAll(); },
+    onDblBg: (x, y) => { addNode(x, y); setTimeout(() => $('#nLabel')?.select(), 60); },
+    tools: el('div', {class: 'gtools'},
+      el('button', {onclick: () => { const r = $('#graph').getBoundingClientRect(); const v = VIEWS['t:' + curTree.id];
+        addNode(((r.width / 2 - v.px) / v.z - NW / 2) / SX, ((r.height / 2 - v.py) / v.z - NH / 2) / SY); setTimeout(() => $('#nLabel')?.select(), 60); }}, '+ Pesquisa'),
+      el('button', {onclick: () => openProjPicker(d => { let id; mutate(() => { id = addRef(d); selNode = id; }); G.center(id); })}, '+ Pesquisa original'),
+      el('button', {onclick: doUndo, title: 'Ctrl+Z'}, 'Desfazer'),
+      el('button', {onclick: () => G.fit()}, 'Ver tudo')),
+    hint: 'Duplo clique no fundo = nova pesquisa · arraste a alça dourada de uma pesquisa até outra para ligar · Delete apaga o selecionado · Ctrl+Z desfaz'});
+  G.set(nodes, edges);
+}
+function field(label, input) { return el('label', {class: 'f'}, el('span', {}, label), input); }
+function renderMinePanel() {
+  const P = $('#panel'); P.innerHTML = '';
+  if (!curTree) { P.append(el('div', {class: 'help'}, 'Aqui você monta sua própria árvore de pesquisa. Crie uma árvore à esquerda.')); return; }
+  const n = node(selNode);
+  if (selEdge) {
+    const a = node(selEdge.from), b = node(selEdge.to);
+    P.append(el('h2', {}, 'Ligação'), el('p', {}, el('b', {}, a?.label || PROJ[a?.ref]?.label || selEdge.from), ' é pré-requisito de ', el('b', {}, b?.label || selEdge.to), '.'),
+      el('button', {class: 'danger', onclick: delSel}, 'Apagar ligação (Delete)'));
+    return;
+  }
+  if (n && n.ref) return refPanel(P, n);
+  if (n) return nodePanel(P, n);
+  treePanel(P);
+}
+function treePanel(P) {
+  const t = curTree;
+  const set = (k, v, re) => mutate(() => { t[k] = v; }, re);
+  P.append(el('h2', {}, 'Árvore', el('small', {}, t.active ? 'vai para o jogo' : 'rascunho')));
+  P.append(field('Nome (aba no jogo)', el('input', {value: t.label, oninput: e => { t.label = e.target.value; save(t); renderMineSide(); }})));
+  const idIn = el('input', {value: t.id, onchange: e => {
+    const v = e.target.value.trim();
+    if (!/^[A-Za-z0-9_]+$/.test(v)) { alert('Use só letras sem acento, números e _'); e.target.value = t.id; return; }
+    if (TREES.some(x => x !== t && x.id === v)) { alert('Já existe.'); e.target.value = t.id; return; }
+    delete VIEWS['t:' + t.id]; t.id = v; save(t); renderAll(); }});
+  P.append(field('Nome interno (os projetos viram EQ_R_' + t.id + '_<nome>)', idIn));
+  P.append(field('Descrição da aba', el('textarea', {oninput: e => { t.desc = e.target.value; save(t); }}, t.desc || '')));
+  P.append(el('label', {class: 'chk'}, el('input', {type: 'checkbox', checked: !!t.active, onchange: e => set('active', e.target.checked)}),
+    'Ativa: vai para o jogo no "Gerar Defs"'));
+  P.append(el('label', {class: 'chk', title: 'Desligado: cada pesquisa vai para a aba do ramo dela, com a posição automática do mod'},
+    el('input', {type: 'checkbox', checked: t.ownTab !== false, onchange: e => set('ownTab', e.target.checked)}), 'Aba própria no jogo (posições deste desenho)'));
+  P.append(el('label', {class: 'chk', title: 'Desligado: a coisa passa a exigir as duas pesquisas (a antiga e a sua)'},
+    el('input', {type: 'checkbox', checked: t.replace !== false, onchange: e => set('replace', e.target.checked)}), 'Desbloqueio sai da pesquisa antiga'));
+  P.append(field('Ramo padrão (licença da facção)', branchSelect(t.branch, v => set('branch', v), false)));
+  P.append(el('div', {class: 'help'},
+    el('b', {}, 'Como usar: '), 'duplo clique no fundo cria uma pesquisa; clique nela para editar aqui (nome, custo, o que desbloqueia). ',
+    'Para dizer que A vem antes de B, arraste a alça dourada (lado direito de A) até B. Use "+ Pesquisa original" para ligar a algo que já existe no jogo (ex.: Eletricidade). ',
+    el('br'), el('br'), el('b', {}, 'No jogo: '), 'o YART e o Clean Research Sort podem reorganizar as posições; as ligações e desbloqueios valem sempre. ',
+    'Pesquisa original que perder todos os desbloqueios continua aparecendo (vazia).'));
+  P.append(el('div', {class: 'row', style: 'margin-top:14px'},
+    el('button', {class: 'danger', onclick: async () => {
+      if (!confirm('Apagar a árvore "' + t.label + '"? (não dá para desfazer)')) return;
+      await fetch('/api/pesquisa/' + encodeURIComponent(t._file || t.id), {method: 'DELETE'});
+      TREES = TREES.filter(x => x !== t); curTree = TREES[0] || null; selNode = null; renderAll(); }}, 'Apagar árvore')));
+}
+function branchSelect(cur, onch, withDefault) {
+  return el('select', {onchange: e => onch(e.target.value)},
+    withDefault ? el('option', {value: '', selected: !cur}, 'padrão da árvore (' + (BRANCH[curTree.branch]?.label || '—') + ')') : null,
+    R.branches.map(b => el('option', {value: b.def, selected: cur === b.def}, b.label + (b.free ? ' (livre)' : b.faction ? ' (licença)' : ''))));
+}
+function nodePanel(P, n) {
+  const set = (k, v, re = true) => mutate(() => { n[k] = v; }, re);
+  P.append(el('h2', {}, n.label || n.id, el('small', {}, 'EQ_R_' + curTree.id + '_' + n.id)));
+  P.append(field('Nome', el('input', {id: 'nLabel', value: n.label, onchange: e => mutate(() => {
+    n.label = e.target.value;
+    if (n.idAuto) renameNode(n, uniqId({nodes: curTree.nodes.filter(x => x !== n)}, slug(n.label)));
+  })})));
+  P.append(field('Nome interno', el('input', {value: n.id, onchange: e => {
+    const v = e.target.value.trim();
+    if (!/^[A-Za-z0-9_]+$/.test(v) || curTree.nodes.some(x => x !== n && x.id === v)) { alert('Nome interno inválido ou repetido (letras sem acento, números e _).'); e.target.value = n.id; return; }
+    mutate(() => { renameNode(n, v); n.idAuto = false; });
+  }})));
+  P.append(field('Descrição', el('textarea', {onchange: e => set('desc', e.target.value, false)}, n.desc || '')));
+  P.append(el('div', {class: 'row'},
+    field('Custo (pontos)', el('input', {type: 'number', min: 0, step: 50, value: n.cost, onchange: e => set('cost', +e.target.value)})),
+    field('Nível tecnológico', el('select', {onchange: e => set('tech', e.target.value)}, TECHS.map(([k, l]) => el('option', {value: k, selected: n.tech === k}, l))))));
+  P.append(field('Ramo (licença)', branchSelect(n.branch || '', v => set('branch', v || undefined), true)));
+
+  P.append(el('h3', {}, 'Desbloqueia (' + (n.unlocks || []).length + ')'));
+  const cl = claims(), ul = el('div', {class: 'ul'});
+  for (const d of n.unlocks || []) {
+    const u = UNL[d], others = (cl[d] || []).filter(x => x.n !== n);
+    const today = (u?.research || []).filter(r => r !== 'EQ_R_' + curTree.id + '_' + n.id);
+    const extra = others.length ? '❗ também em ' + others.map(x => x.n.label).join(', ') : today.length ? 'hoje: ' + today.map(plabel).join(', ') : 'hoje: livre';
+    ul.append(unlockRow(d, extra, () => set('unlocks', n.unlocks.filter(x => x !== d))));
+  }
+  P.append(ul);
+  P.append(el('div', {class: 'row', style: 'margin-top:6px'}, el('button', {class: 'primary', onclick: () => openUnlockPicker(n)}, '+ Adicionar o que desbloqueia')));
+
+  P.append(el('h3', {}, 'Pré-requisitos'));
+  const pre = el('div', {class: 'chips'});
+  for (const p of n.prereqs || []) {
+    const q = node(p);
+    pre.append(el('span', {class: 'chip'}, q?.ref ? '◌ ' + plabel(q.ref) : (q?.label || p), el('b', {title: 'Tirar', onclick: () => set('prereqs', n.prereqs.filter(x => x !== p))}, '×')));
+  }
+  if (!(n.prereqs || []).length) pre.append(el('span', {class: 'meta'}, 'nenhum (fica no começo da árvore)'));
+  P.append(pre);
+  const addSel = el('select', {onchange: e => {
+    const v = e.target.value; e.target.value = '';
+    if (v === '__orig') return openProjPicker(d => mutate(() => { n.prereqs.push(addRef(d, n.x - 1.5)); }));
+    if (!v) return;
+    if (ancestors(v).has(n.id)) return toast('Isso faria um ciclo.');
+    set('prereqs', [...n.prereqs, v]);
+  }}, el('option', {value: ''}, '+ pré-requisito…'), el('option', {value: '__orig'}, 'Pesquisa original do jogo…'),
+    curTree.nodes.filter(x => x !== n && !(n.prereqs || []).includes(x.id)).map(x => el('option', {value: x.id}, x.ref ? '◌ ' + plabel(x.ref) : x.label)));
+  P.append(el('div', {class: 'row', style: 'margin-top:4px'}, addSel));
+
+  P.append(el('h3', {}, 'Exigências'));
+  P.append(field('Bancada de pesquisa', el('select', {onchange: e => set('bench', e.target.value || undefined, false)},
+    el('option', {value: ''}, 'qualquer bancada'), R.benches.filter(b => !b.facility).map(b => el('option', {value: b.def, selected: n.bench === b.def}, b.label)))));
+  const fac = el('div', {class: 'chips'});
+  for (const f of R.benches.filter(b => b.facility))
+    fac.append(el('label', {class: 'chk'}, el('input', {type: 'checkbox', checked: (n.facilities || []).includes(f.def),
+      onchange: e => set('facilities', e.target.checked ? [...(n.facilities || []), f.def] : (n.facilities || []).filter(x => x !== f.def), false)}), f.label));
+  P.append(field('Instalações junto da bancada', fac));
+  P.append(el('div', {class: 'row'}, field('Techprints', el('input', {type: 'number', min: 0, value: n.techprints || 0, onchange: e => set('techprints', +e.target.value)}))));
+  if (n.techprints > 0) {
+    const tags = el('div', {class: 'chips'}, (n.techprintTags || []).map(t => el('span', {class: 'chip'}, t, el('b', {onclick: () => set('techprintTags', n.techprintTags.filter(x => x !== t))}, '×'))));
+    P.append(field('Facções que guardam os techprints (categoria)', el('div', {}, tags,
+      el('select', {onchange: e => { if (e.target.value) set('techprintTags', [...(n.techprintTags || []), e.target.value]); }},
+        el('option', {value: ''}, '+ categoria de facção…'), R.factionTags.filter(t => !(n.techprintTags || []).includes(t)).map(t => el('option', {value: t}, t))))));
+  }
+  P.append(field('Notas (só para você; vão como comentário no XML)', el('textarea', {onchange: e => set('notes', e.target.value, false)}, n.notes || '')));
+  if (n.from) P.append(el('div', {class: 'meta'}, 'Copiada de: ', projLink(n.from)));
+  P.append(el('div', {class: 'row', style: 'margin-top:12px'},
+    el('button', {onclick: () => { const id = addNode(n.x, n.y + 0.75, Object.assign(JSON.parse(JSON.stringify(n)), {label: n.label + ' (cópia)', unlocks: [], y: n.y + 0.75})); G.center(id); }}, 'Duplicar (sem desbloqueios)'),
+    el('button', {class: 'danger', onclick: delSel}, 'Apagar pesquisa (Delete)')));
+}
+function refPanel(P, n) {
+  const p = PROJ[n.ref];
+  P.append(el('h2', {}, p?.label || n.ref, el('small', {}, n.ref)));
+  P.append(el('div', {class: 'help'}, 'Pesquisa que já existe no jogo, posta aqui só para servir de pré-requisito das suas. Ela não muda.'));
+  if (p) {
+    P.append(el('div', {class: 'meta'}, [p.cost + ' pontos', TECH[p.tech]?.label, 'aba: ' + (TABS.find(t => t.def === p.tab)?.label || p.tab)].join(' · ')));
+    P.append(el('p', {}, p.desc));
+    P.append(el('div', {class: 'row'}, el('button', {onclick: () => projLink(p.def).click()}, 'Ver na árvore original')));
+    P.append(el('h3', {}, 'Ela desbloqueia (' + p.unlocks.length + ')'));
+    const ul = el('div', {class: 'ul'}); p.unlocks.slice(0, 40).forEach(d => ul.append(unlockRow(d))); P.append(ul);
+  }
+  P.append(el('div', {class: 'row', style: 'margin-top:12px'}, el('button', {class: 'danger', onclick: delSel}, 'Tirar da árvore (Delete)')));
+}
+function delSel() {
+  if (selEdge) {
+    const {from, to} = selEdge;
+    mutate(() => { const b = node(to); if (b) b.prereqs = b.prereqs.filter(x => x !== from); selEdge = null; });
+  } else if (selNode) {
+    const id = selNode;
+    mutate(() => { curTree.nodes = curTree.nodes.filter(x => x.id !== id); for (const o of curTree.nodes) o.prereqs = (o.prereqs || []).filter(x => x !== id); selNode = null; });
+  }
+}
+
+// ------------------------------------------------------------ escolher desbloqueios / pesquisas
+function openUnlockPicker(n) {
+  let kind = '', q = '', mod = '';
+  const grid = el('div', {class: 'pgrid'}), info = el('span', {class: 'meta'});
+  const mods = [...new Set(R.unlocks.map(u => u.mod))].sort();
+  const tabs = el('div', {class: 'row', style: 'margin:0'});
+  const draw = () => {
+    tabs.innerHTML = '';
+    [['', 'Tudo'], ...KINDS].forEach(([k, l]) => tabs.append(el('button', {class: kind === k ? 'sel' : '', onclick: () => { kind = k; draw(); }}, l)));
+    grid.innerHTML = '';
+    const cl = claims(), ql = q.toLowerCase();
+    const list = R.unlocks.filter(u => (!kind || u.kind === kind) && (!mod || u.mod === mod) && (!ql || u.label.toLowerCase().includes(ql) || u.def.toLowerCase().includes(ql)));
+    info.textContent = list.length + ' encontrados' + (list.length > 400 ? ' (mostrando 400; refine a busca)' : '');
+    for (const u of list.slice(0, 400)) {
+      const on = (n.unlocks || []).includes(u.def), others = (cl[u.def] || []).filter(x => x.n !== n);
+      const today = u.research.map(plabel).join(', ');
+      grid.append(el('div', {class: 'pi' + (on ? ' on' : ''), title: u.desc + '\n' + u.def + ' · ' + u.mod + (u.benches?.length ? '\nfeito em: ' + u.benches.join(', ') : ''),
+        onclick: () => { mutate(() => { n.unlocks = on ? n.unlocks.filter(x => x !== u.def) : [...(n.unlocks || []), u.def]; }); draw(); }},
+        el('div', {class: 'ic'}, icon(u.def)),
+        el('div', {}, el('div', {class: 'nm'}, u.label), el('div', {class: 'meta'}, KIND[u.kind] + (u.cat ? ' · ' + u.cat : '')),
+          el('div', {class: 'meta'}, others.length ? '❗ já em ' + others.map(x => x.n.label).join(', ') : today ? 'hoje: ' + today : 'hoje: livre'))));
+    }
+  };
+  const search = el('input', {placeholder: 'Buscar (nome ou defName)…', style: 'flex:1', oninput: e => { q = e.target.value; draw(); }});
+  const modal = el('div', {class: 'modal', onclick: e => { if (e.target === modal) modal.remove(); }},
+    el('div', {class: 'box'},
+      el('div', {class: 'row', style: 'margin:0'}, el('b', {}, 'O que "' + (n.label || n.id) + '" desbloqueia'), el('span', {style: 'flex:1'}), info,
+        el('button', {onclick: () => modal.remove()}, 'Pronto')),
+      tabs,
+      el('div', {class: 'row', style: 'margin:0'}, search, el('select', {onchange: e => { mod = e.target.value; draw(); }}, el('option', {value: ''}, 'Todos os mods'), mods.map(m => el('option', {value: m}, m)))),
+      el('div', {class: 'meta'}, 'Clique para marcar/desmarcar. Item = todas as receitas que fazem o item. "hoje" = pesquisa que libera hoje no jogo.'),
+      grid));
+  document.body.append(modal);
+  draw(); search.focus();
+}
+function openProjPicker(onPick) {
+  let q = '';
+  const list = el('div', {class: 'pgrid'});
+  const draw = () => {
+    list.innerHTML = '';
+    const ql = q.toLowerCase();
+    R.projects.filter(p => !ql || p.label.toLowerCase().includes(ql) || p.def.toLowerCase().includes(ql)).slice(0, 300).forEach(p =>
+      list.append(el('div', {class: 'pi', style: 'grid-template-columns:1fr', onclick: () => { modal.remove(); onPick(p.def); }},
+        el('div', {}, el('div', {class: 'nm'}, p.label), el('div', {class: 'meta'}, p.cost + ' pts · ' + (TECH[p.tech]?.label || p.tech) + ' · ' + (TABS.find(t => t.def === p.tab)?.label || p.tab)),
+          el('div', {class: 'meta'}, p.unlocks.slice(0, 4).map(ulabel).join(', '))))));
+  };
+  const search = el('input', {placeholder: 'Buscar pesquisa do jogo…', style: 'flex:1', oninput: e => { q = e.target.value; draw(); }});
+  const modal = el('div', {class: 'modal', onclick: e => { if (e.target === modal) modal.remove(); }},
+    el('div', {class: 'box'}, el('div', {class: 'row', style: 'margin:0'}, el('b', {}, 'Escolher pesquisa original'), search, el('button', {onclick: () => modal.remove()}, 'Cancelar')), list));
+  document.body.append(modal);
+  draw(); search.focus();
+}
+
+// ------------------------------------------------------------ gerar
+async function build() {
+  for (const t of TREES) {
+    const k = t._file || t.id;
+    if (saveTimers[k]) { clearTimeout(saveTimers[k]); await fetch('/api/pesquisa/' + encodeURIComponent(k), {method: 'PUT', body: JSON.stringify(t, (a, v) => a.startsWith('_') ? undefined : v)}); t._file = t.id; }
+  }
+  const r = await fetch('/api/build', {method: 'POST'}); const j = await r.json();
+  const modal = el('div', {class: 'modal', onclick: e => { if (e.target === modal) modal.remove(); }},
+    el('div', {class: 'box'}, el('b', {}, 'Defs gerados'), el('pre', {}, j.report),
+      el('div', {class: 'meta'}, 'Só as árvores marcadas como "Ativa" vão para o jogo. Para valer: abrir o jogo de novo. Peça ao Claude para conferir com o executor de testes (comando "pesquisa").'),
+      el('div', {class: 'row', style: 'justify-content:flex-end;margin-top:8px'}, el('button', {onclick: () => modal.remove()}, 'Fechar'))));
+  document.body.append(modal);
+}
+
+$('#vOrig').onclick = () => { view = 'orig'; renderAll(); };
+$('#vMine').onclick = () => { view = 'mine'; renderAll(); };
+$('#btnBuild').onclick = build;
+document.addEventListener('keydown', e => {
+  if (e.target.closest('input, textarea, select') || document.querySelector('.modal')) return;
+  if (view !== 'mine') return;
+  if (e.key === 'Delete' || e.key === 'Backspace') { e.preventDefault(); delSel(); }
+  if ((e.ctrlKey || e.metaKey) && e.key.toLowerCase() === 'z') { e.preventDefault(); doUndo(); }
+});
+window.addEventListener('resize', () => G && G.apply());
+load();
+</script>
+</body>
+</html>

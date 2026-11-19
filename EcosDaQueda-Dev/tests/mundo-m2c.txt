@@ -1,0 +1,7 @@
+# M2, parte 3: jogo novo carregando o preset EcosDaQueda (Worldbuilder) tem que sair com os mesmos biomas da conversão.
+# Rodar com -Include ferny.worldbuilder,allyjamy.terraearthodysseyv.wb (depois do mundo-m2b)
+newgame cov=0.25 seed=EcosDaQueda preset=EcosDaQueda
+timeout 900
+worldinfo
+biomes C:\Users\Felipe\Desktop\RimWorld\EcosDaQueda-Dev\tests\out\biomes-preset.tsv
+worldpreview C:\Users\Felipe\Desktop\RimWorld\EcosDaQueda-Dev\tests\out\mundo-preset-check.ppm

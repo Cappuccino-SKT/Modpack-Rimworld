@@ -29,6 +29,8 @@ _Retrato do projeto nesta data: tudo o que já foi adicionado e o planejamento d
 
 ### Guerra (camada de estratégia)
 - **Exércitos das potências** no mapa-múndi: força, moral, tesouro, manutenção e guarnições abstratas. Mobilizam-se pelas guerras do Hegemony, e a batalha abstrata pode conquistar a cidade pelo Hegemony.
+- **Tensão entre potências**: cresce pelo ódio entre elas; vira incidente de fronteira, depois conselho de guerra (se você tem cargo alto, opina: inflamar ou acalmar) e, no limite, guerra declarada pelo Hegemony.
+- **Frentes de fronteira** onde territórios em guerra se encostam; quem perde recua (guarnição e tesouro).
 - **Chamada às armas do vassalo**: mandar um colono, pagar soldo ou recusar (recusar conta como falta).
 - **Frentes de trincheira**:
   - Abrem quando um exército nosso chega ao alvo, ou ao lado das invasões do próprio Hegemony entre NPCs.
@@ -39,6 +41,7 @@ _Retrato do projeto nesta data: tudo o que já foi adicionado e o planejamento d
 - **Árvore de pesquisa em 6 abas** (Bancada, Velho Mundo, Silêncio, Hélice, Forja, Coro). Fora da bancada (industrial básico), tudo trancado.
 - **Licenças por cargo** ou compradas com favor. Fabricar sem licença é **pirataria** (Infâmia).
 - **Engenharia reversa**: bancada própria; desmontar um item dá de 15 a 30% do projeto.
+- **Investigação de estrutura**: o colono estuda um prédio no lugar (inclusive ruínas do Velho Mundo) e aprende parte da pesquisa dele; um gerador antigo ensina energia elétrica.
 - **Dados antigos**: manual técnico e disco do Velho Mundo, encontrados em abrigos, ruínas, marcos e na Feira.
 - **Dízimo tecnológico** da Forja (mech de trabalho, título de veículo).
 - Psycasts do VPE licenciados pelos cargos do Coro; androides e veículos de combate licenciados pela Forja; sanidade ligada à pesquisa (VAE Insanity).
@@ -57,7 +60,8 @@ _Retrato do projeto nesta data: tudo o que já foi adicionado e o planejamento d
 - **Resultados de ritual** próprios (um por potência); trincheiras e arame nos cercos.
 
 ### Início de jogo, comércio e outros
-- **6 cenários próprios**; na criação, só os nossos xenos; narrador provisório (Central de Atendimento); narradores de terceiros ocultos.
+- **6 cenários próprios**; na criação, só os nossos xenos; narradores de terceiros ocultos.
+- **Narrador próprio** (Central de Atendimento): quem você irrita é quem ataca (Sindicato no começo); catástrofes grandes seguradas até você ter cargo ou tecnologia espacial.
 - **15 comerciantes próprios**: sementes na Feira, órgãos, genepacks, vinho do Coro.
 - **Veículos** (Vehicle Framework) com regras de patente; bichos de lixão no Sindicato e no Reino do Lodo.
 - **Correções de terceiros** por patch: VEE, Alpha Memes, traduções oficiais da Anomaly e da Odyssey, spam do Hegemony, livros de pesquisa.
@@ -80,8 +84,8 @@ _Retrato do projeto nesta data: tudo o que já foi adicionado e o planejamento d
 **✱ = depende de decisão ou material seu.** Um bloco por sessão.
 
 ### Próximos sem depender de você
-1. **Etapa 6/7 na parte que não exige escolha**: a base do narrador próprio, que escolhe as ameaças pela reputação, usa o Sindicato no começo e segura o fim de jogo até você ter cargo ou tecnologia.
-2. **10d, resto**: guerras declaradas pelas potências por eventos nossos e frentes entre territórios. A otimização do Hegemony espera uma medição de jogo longo (10a).
+1. ~~Base do narrador (6a)~~ e ~~investigação de estrutura~~: feitos em 2026-11-19.
+2. ~~10d, resto~~ (feito em 2026-11-19). Falta só a otimização do Hegemony, que espera uma medição de jogo longo (10a).
 3. **Opcional**: ligar a escaramuça das frentes do Hegemony à batalha dele (`TryContributeExternalForce`), para que ajudar um lado mude o resultado da invasão.
 
 ### Precisam de você ✱
