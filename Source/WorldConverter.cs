@@ -293,6 +293,7 @@ namespace EcosDaQueda.DebugTools
                 int y = Mathf.RoundToInt((90f - lat) / 90f * (H - 1));
                 Color c = BiomeColor(surface[i].PrimaryBiome);
                 if (surface[i] is SurfaceTile stl && stl.Rivers != null && stl.Rivers.Count > 0) c = new Color(0.45f, 0.75f, 1f);
+                if (surface[i] is SurfaceTile str && str.Roads != null && str.Roads.Count > 0) c = new Color(0.35f, 0.22f, 0.12f);
                 for (int dy = -4; dy <= 4; dy++)
                     for (int dx = -4; dx <= 4; dx++)
                     {
@@ -302,6 +303,23 @@ namespace EcosDaQueda.DebugTools
                         int k = py * W + px;
                         if (d >= zbuf[k]) continue;
                         zbuf[k] = d;
+                        img[k * 3] = (byte)(c.r * 255); img[k * 3 + 1] = (byte)(c.g * 255); img[k * 3 + 2] = (byte)(c.b * 255);
+                    }
+            }
+            // Cidades (M3): quadrado na cor da facção com borda preta.
+            foreach (Settlement st in Find.WorldObjects.Settlements)
+            {
+                if (st.Tile.Layer != surface) continue;
+                Vector2 ll = grid.LongLatOf(st.Tile);
+                int x = Mathf.RoundToInt((ll.x + 60f) / 120f * (W - 1)), y = Mathf.RoundToInt((90f - ll.y) / 90f * (H - 1));
+                Color fc = st.Faction?.Color ?? Color.white;
+                for (int dy = -6; dy <= 6; dy++)
+                    for (int dx = -6; dx <= 6; dx++)
+                    {
+                        int px = x + dx, py = y + dy;
+                        if (px < 0 || py < 0 || px >= W || py >= H) continue;
+                        Color c = Math.Abs(dx) >= 5 || Math.Abs(dy) >= 5 ? Color.black : fc;
+                        int k = py * W + px;
                         img[k * 3] = (byte)(c.r * 255); img[k * 3 + 1] = (byte)(c.g * 255); img[k * 3 + 2] = (byte)(c.b * 255);
                     }
             }

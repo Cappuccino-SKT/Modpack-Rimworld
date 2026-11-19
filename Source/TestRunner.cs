@@ -442,6 +442,7 @@ namespace EcosDaQueda.DebugTools
                 case "biomes": return EQMundoDebug.Biomes(Arg(1));
                 case "worldinfo": return EQMundoDebug.Info();
                 case "territory": return EQMundoDebug.Territory();
+                case "worldfixed": return EQMundoDebug.Fixed();
                 case "worlddump": return EQWorldConverter.Dump(Arg(1));
                 case "worldgrid": return EQWorldConverter.GridDump(Arg(1));
                 case "worldpaint": return EQWorldConverter.Paint(Arg(1));

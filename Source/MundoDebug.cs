@@ -50,6 +50,29 @@ namespace EcosDaQueda.DebugTools
                 + " [" + string.Join("; ", r.cities) + "]"));
         }
 
+        /// <summary>M3: mundo fixo. Relatório da aplicação e as cidades por facção (nome, tile, lat/lon, bioma, estrada).</summary>
+        public static string Fixed()
+        {
+            var w = Find.World;
+            if (w == null) return "sem mundo";
+            FixedWorldDef def = EQFixedWorld.ActiveDef();
+            var sb = new StringBuilder();
+            sb.Append("preset=" + (EQFixedWorld.CurrentPresetName() ?? "-") + " def=" + (def?.defName ?? "-") + " relatorio=" + EQFixedWorld.LastReport);
+            sb.Append("\n  cidades=" + w.worldObjects.Settlements.Count + " na_agua=" + w.worldObjects.Settlements.Count(s => w.grid[s.Tile].WaterCovered));
+            foreach (var g in w.worldObjects.Settlements.Where(s => s.Faction != null).GroupBy(s => s.Faction).OrderBy(g => g.Key.def.defName))
+            {
+                sb.Append("\n  " + g.Key.def.defName.Replace("EQ_Faction_", "") + " (" + g.Count() + "): ");
+                sb.Append(string.Join("; ", g.Select(s =>
+                {
+                    var ll = w.grid.LongLatOf(s.Tile);
+                    var t = w.grid[s.Tile];
+                    bool road = t is SurfaceTile st && !st.Roads.NullOrEmpty();
+                    return s.Name + " @" + s.Tile.tileId + " (" + ll.y.ToString("0.0") + "," + ll.x.ToString("0.0") + ") " + t.PrimaryBiome?.defName + (road ? " +estrada" : "");
+                })));
+            }
+            return sb.ToString();
+        }
+
         public static string Info()
         {
             var w = Find.World;
