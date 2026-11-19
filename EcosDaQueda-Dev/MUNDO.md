@@ -115,6 +115,15 @@ Riscos: o Worldbuilder é recente e grande (65 MB); pode brigar com mods de mund
 - **Executor:** `newgame <cenário>` sem `preset=` segue o caminho do cenário (preset, cobertura e semente do preset). Roteiro `mundo-m3b.txt` (na regressão): 16 cidades, 178 marcos, ~870 tiles de estrada, 0 erros.
 - **Fica para depois:** capital com efeito (melhor junto do F2, que mexe no multiplicador de território por cidade); texto da peça de cenário vem em inglês do Worldbuilder ("Start in world: EcosDaQueda").
 
+### Resultado do F2 (2026-11-19): fronteira que cresce
+
+- **Recálculo confirmado no código:** a assinatura que decide se o Hegemony refaz o território (`TerritorySolver.Signature`) inclui o `decayMultiplier` de cada cidade; mudar só o nosso multiplicador refaz (checagem a cada 5 s reais). A distância do Hegemony é **custo de caminho** (`Edge`: `movementDifficulty` do bioma + morro 0,5/1, montanha 2, intransponível 10; estrada reduz), não tiles: por isso Las Vegas, entre montanhas, pega poucos tiles.
+- **Como funciona** (`Frontier.cs`, `Defs/World/EQ_Fronteira.xml`, postfix em `SettlementDecay` no módulo do Hegemony): cada cidade de NPC tem raio permitido R (começa em 1,5, +1 tile a cada 5 dias se pobre até 3 dias se rica; progresso salvo, em degraus de 1 tile para o Hegemony só recalcular quando muda) e teto C = raio natural do Hegemony × facção × capital (1,3). O multiplicador vira m = 2·log2(√P ÷ 10) ÷ (1,5 · min(R, C)). Só no mundo fixo (`WorldComponent_EQFrontier.active`, ligado pelo `FixedWorld`, salvo no jogo). Jogador fica como o Hegemony faz (F4).
+- **Capital com efeito:** teto ×1,3 (as 4 capitais marcadas pelo `FixedWorld`). **Facções:** Sindicato teto ×2 (deserto e montanha), Silêncio ×1,4 (Rochosas), Não Catalogados não fundam cidades.
+- **Cidade nova:** cidade no teto → a facção funda outra a 6–9 tiles, na própria terra ou em terra de ninguém (nunca na de outra facção), a ≥ 4 tiles de qualquer assentamento, preferindo estrada; 1 a cada 20 dias por facção; até 6 cidades (potências) ou 2 (menores do mundo fixo). Nome pelo gerador da facção; mensagem para o jogador.
+- **Medição** (roteiro `fronteira.txt`, comandos `frontier` e `frontierskip`): dia 2 ≈ 100–120 tiles no total (antes ~950); +12 dias ≈ 850; +40 dias ≈ 1.300, com 10–11 cidades novas (potências com 5). Las Vegas: 1 tile no dia 2, ~14 por cidade no fim.
+- **Achado à parte:** com "Saídos do abrigo" (começo no abrigo selado do VQE Ancients), o Hospitality falha ao trazer visitas ("parms couldn't be resolved", dia 2–3), também sem o F2. O roteiro usa "Andarilhos".
+
 ## 5. Blocos (ordem sugerida)
 
 | Bloco | O que entrega | Depende de |
@@ -124,7 +133,7 @@ Riscos: o Worldbuilder é recente e grande (65 MB); pode brigar com mods de mund
 | ~~**M2b**~~ | Pintar os 17 biomas que faltam, refazer rios e nomes (**feito 2026-11-19**, preset v2; estradas vão para o M3) | M2 |
 | ~~**M3**~~ | (**M3a e M3b feitos 2026-11-19**: cidades fixas, marcos, mutadores, estradas; preset no mod, Worldbuilder no modpack, cenários abrem no mundo) Mundo do Ecos: posições fixas das facções (✱ mapa de regiões), marcos, zonas; cenários usam o mundo; geração aleatória desligada | M2, ✱ regiões |
 | ~~**F1**~~ | Como o território do Hegemony cresce e se dá para controlar por cidade (**feito 2026-11-19**: dá, pelo multiplicador por cidade; caminho A confirmado) | — |
-| **F2** | Fronteira que cresce aos poucos + cidade nova pela distância (NPCs) | F1 |
+| ~~**F2**~~ | Fronteira que cresce aos poucos + cidade nova pela distância (NPCs) (**feito 2026-11-19**, com capital) | F1 |
 | **F3** | Bônus por tile (bioma, zona da Queda, marcos) | F1 |
 | **F4** | Fronteira do jogador: marcos de fronteira, direção, cidade nova do jogador | F2 |
 | **F5** | Exército toma fronteira (frentes de fronteira passam tiles) | F2, 10d |

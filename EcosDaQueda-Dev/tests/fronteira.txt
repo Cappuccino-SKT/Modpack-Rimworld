@@ -1,0 +1,16 @@
+# F2: fronteira que cresce no mundo fixo (cenário do Ecos abre no preset EcosDaQueda; não o do abrigo: ver STATUS, Hospitality).
+# Dia 0-2: território pequeno (raio ~1,5). frontierskip avança o crescimento sem passar o tempo; o Hegemony
+# recalcula porque o multiplicador entra na assinatura dele. Cidades que batem no teto fundam outras.
+newgame EQ_Scenario_Andarilhos
+timeout 1500
+frontier
+wait 2d
+territory
+frontierskip 12
+wait 1d
+frontier
+territory
+frontierskip 40
+wait 1d
+frontier
+territory
