@@ -1,5 +1,5 @@
 # M3: mundo fixo (cidades fixas, marcos, mutadores, estradas) no preset EcosDaQueda.
-# Rodar com -Include ferny.worldbuilder,allyjamy.terraearthodysseyv.wb
+# Desde o M3b não precisa de -Include
 newgame cov=0.25 seed=EcosDaQueda preset=EcosDaQueda
 timeout 1200
 worldinfo

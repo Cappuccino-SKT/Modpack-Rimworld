@@ -1,5 +1,5 @@
 # M2/M2b: mundo de 25% (calota em 45°N); aplica a América do Norte em escala real, pinta os biomas que faltam,
-# refaz rios e nomes e salva o preset do Ecos. Rodar com -Include ferny.worldbuilder,allyjamy.terraearthodysseyv.wb (depois do mundo-m2a)
+# refaz rios e nomes e salva o preset do Ecos. Desde o M3b não precisa de -Include (depois do mundo-m2a). O preset sai em test-profile/full/Worldbuilder/EcosDaQueda: copiar para Mods/EcosDaQueda/Worldbuilder/EcosDaQueda
 newgame cov=0.25 seed=EcosDaQueda
 timeout 1500
 worldinfo

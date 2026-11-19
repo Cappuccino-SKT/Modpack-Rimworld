@@ -106,6 +106,15 @@ Riscos: o Worldbuilder é recente e grande (65 MB); pode brigar com mods de mund
 - **Resultado** (roteiro `mundo-m3.txt`, `mundo/preview-m3.png`): 16 cidades nas regiões da seção 6, nenhuma na água; 178 marcos; ~870 tiles de estrada; no dia 3 o Hegemony dá ~950 tiles de território (Forja 279, Coro 248, Hélice 166, insetos 120, Silêncio 61, menores 4–26). **Las Vegas só pega 4 tiles** (deserto) e o Silêncio ~20 por cidade: ver no F2.
 - **Falta no M3:** cenários próprios usando o mundo; Worldbuilder + The Earth no modpack e o preset dentro do nosso mod (pasta `Worldbuilder/`); capital com algum efeito (hoje é só a primeira da lista).
 
+### Resultado do M3b (2026-11-19): mundo fixo jogável
+
+- **Preset dentro do mod:** `Mods/EcosDaQueda/Worldbuilder/EcosDaQueda/` (Preset.xml, TerrainData.xml, Thumbnail.png). O Worldbuilder lê a pasta `Worldbuilder/` de cada pasta carregada dos mods ativos (`WorldPresetManager.GetAllPresets`). É a cópia que vale; `mundo/preset-v2/` fica como histórico. Ao refazer o preset (`mundo-m2b.txt`), copiar o resultado de `test-profile/full/Worldbuilder/EcosDaQueda` para lá (preset de mesmo nome na pasta do usuário ganha da do mod e mistura caminhos).
+- **Modpack:** só o **Worldbuilder** entrou (ModsConfig do usuário e `modpack/`, logo depois do VEF; `loadAfter` no nosso About). **O The Earth fica fora:** traz facções, culturas e genes próprios e só serve para refazer o preset (`-Include allyjamy.terraearthodysseyv.wb`).
+- **Cenários:** os 6 cenários do Ecos têm a peça `WB_StartInWorld` (`worldPresetName` EcosDaQueda, `MayRequire="ferny.worldbuilder"`). O Worldbuilder pula a tela de parâmetros do mundo e gera direto do preset: o jogador vai da escolha do cenário/narrador para a escolha do tile (✱ conferir na tela).
+- **Semente:** nesse caminho o Worldbuilder usa sempre a semente gravada no preset (`EcosDaQueda`), então marcos, ruínas, estradas e mapas sairiam iguais em toda partida. `FixedWorldDef.fixedSeed`: quando o mundo chega com ela, `FixedWorld` sorteia outra antes de refazer marcos/mutadores/estradas (relatório `semente_nova=`). Semente dada pelo executor (`seed=`) fica como veio.
+- **Executor:** `newgame <cenário>` sem `preset=` segue o caminho do cenário (preset, cobertura e semente do preset). Roteiro `mundo-m3b.txt` (na regressão): 16 cidades, 178 marcos, ~870 tiles de estrada, 0 erros.
+- **Fica para depois:** capital com efeito (melhor junto do F2, que mexe no multiplicador de território por cidade); texto da peça de cenário vem em inglês do Worldbuilder ("Start in world: EcosDaQueda").
+
 ## 5. Blocos (ordem sugerida)
 
 | Bloco | O que entrega | Depende de |
@@ -113,7 +122,7 @@ Riscos: o Worldbuilder é recente e grande (65 MB); pode brigar com mods de mund
 | ~~**M1**~~ | Baixar e testar Worldbuilder + The Earth [Odyssey] no perfil de teste; ler o formato; lista de biomas (**feito 2026-11-19**) | — |
 | ~~**M2**~~ | Conversor América do Norte → 25%; primeiro mundo gerado e carregado no executor (**feito 2026-11-19**, preset v1) | M1 |
 | ~~**M2b**~~ | Pintar os 17 biomas que faltam, refazer rios e nomes (**feito 2026-11-19**, preset v2; estradas vão para o M3) | M2 |
-| **M3** | (**M3a feito 2026-11-19**: cidades fixas, marcos, mutadores, estradas) Mundo do Ecos: posições fixas das facções (✱ mapa de regiões), marcos, zonas; cenários usam o mundo; geração aleatória desligada | M2, ✱ regiões |
+| ~~**M3**~~ | (**M3a e M3b feitos 2026-11-19**: cidades fixas, marcos, mutadores, estradas; preset no mod, Worldbuilder no modpack, cenários abrem no mundo) Mundo do Ecos: posições fixas das facções (✱ mapa de regiões), marcos, zonas; cenários usam o mundo; geração aleatória desligada | M2, ✱ regiões |
 | ~~**F1**~~ | Como o território do Hegemony cresce e se dá para controlar por cidade (**feito 2026-11-19**: dá, pelo multiplicador por cidade; caminho A confirmado) | — |
 | **F2** | Fronteira que cresce aos poucos + cidade nova pela distância (NPCs) | F1 |
 | **F3** | Bônus por tile (bioma, zona da Queda, marcos) | F1 |

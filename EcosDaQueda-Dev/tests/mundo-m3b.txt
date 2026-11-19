@@ -1,0 +1,8 @@
+# M3b: mundo fixo jogável. Worldbuilder no ModsConfig (sem -Include), preset dentro do Ecos da Queda,
+# cenário "Saídos do abrigo" abre no mundo EcosDaQueda com a semente do preset, trocada por uma sorteada.
+newgame EQ_Scenario_Abrigo
+timeout 1200
+worldinfo
+worldfixed
+wait 2d
+territory

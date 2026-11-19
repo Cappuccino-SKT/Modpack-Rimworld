@@ -1,5 +1,5 @@
 # M2, parte 1: abre o mundo da Terra (Worldbuilder, cobertura 100%) e despeja os tiles da América do Norte + México.
-# Rodar com -Include ferny.worldbuilder,allyjamy.terraearthodysseyv.wb
+# Rodar com -Include allyjamy.terraearthodysseyv.wb (o Worldbuilder já está no ModsConfig desde o M3b)
 newgame cov=1 seed=SOL3 preset=Earth_[No_Factions]_[Odyssey]
 timeout 2400
 worldinfo
