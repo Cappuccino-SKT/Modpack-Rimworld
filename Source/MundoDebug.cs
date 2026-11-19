@@ -50,6 +50,27 @@ namespace EcosDaQueda.DebugTools
                 + " [" + string.Join("; ", r.cities) + "]"));
         }
 
+        /// <summary>F2: fronteira que cresce. Raio permitido, teto e multiplicador por cidade; cidades novas.</summary>
+        public static string Frontier()
+        {
+            var c = WorldComponent_EQFrontier.Current;
+            return c == null ? "sem componente" : c.Report();
+        }
+
+        /// <summary>F2: avança o crescimento n dias (um passo por dia, com as cidades novas), sem passar o tempo do jogo.</summary>
+        public static string FrontierSkip(int days)
+        {
+            var c = WorldComponent_EQFrontier.Current;
+            if (c == null || !c.Enabled) return "fronteira desligada";
+            int before = Find.WorldObjects.Settlements.Count;
+            for (int i = 0; i < days; i++)
+            {
+                c.AdvanceDays(1f);
+                foreach (string k in c.lastNewCity.Keys.ToList()) c.lastNewCity[k] -= GenDate.TicksPerDay;
+            }
+            return "avançou " + days + " dias; assentamentos " + before + " → " + Find.WorldObjects.Settlements.Count;
+        }
+
         /// <summary>M3: mundo fixo. Relatório da aplicação e as cidades por facção (nome, tile, lat/lon, bioma, estrada).</summary>
         public static string Fixed()
         {
