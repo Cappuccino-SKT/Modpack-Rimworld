@@ -29,6 +29,10 @@ namespace EcosDaQueda
         /// <summary>Raio de busca (graus) em volta do ponto pedido quando o tile exato não serve.</summary>
         public float searchRadius = 6f;
         public bool regenerateLandmarks = true, regenerateMutators = true, regenerateRoads = true;
+        /// <summary>Semente gravada no preset. O Worldbuilder sempre gera o mundo do preset com ela (pelo cenário ou
+        /// pela tela de mundos); quando o mundo chega com ela, sorteamos outra para marcos, ruínas, estradas e mapas
+        /// variarem por partida. Outra semente (ex.: a do executor de testes) fica como veio.</summary>
+        public string fixedSeed;
         public List<FixedSettlement> settlements = new List<FixedSettlement>();
     }
 
@@ -145,6 +149,13 @@ namespace EcosDaQueda
                 }
                 sb.Insert(0, "removidas=" + removed + " postas=" + placed + " falhas=" + failed + " realocadas=" + moved);
 
+                if (!def.fixedSeed.NullOrEmpty() && world.info.seedString == def.fixedSeed)
+                {
+                    Rand.PushState(Environment.TickCount ^ Guid.NewGuid().GetHashCode());
+                    try { world.info.seedString = GenText.RandomSeedString(); }
+                    finally { Rand.PopState(); }
+                    sb.Append(" semente_nova=" + world.info.seedString);
+                }
                 int seed = GenText.StableStringHash(world.info.seedString);
                 // 2b) Mutadores velhos: o preset troca o bioma mas não limpa os mutadores sorteados para o terreno
                 // antigo (um "bosque" num bioma sem aquela planta quebra o rótulo). Limpa tudo e refaz.

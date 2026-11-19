@@ -10,6 +10,8 @@
     <defName>EQ_MundoFixo</defName>
     <label>mundo do Ecos da Queda</label>
     <presetName>EcosDaQueda</presetName>
+    <!-- Semente do preset (worldInfo/seedString): trocada por uma sorteada em cada partida. -->
+    <fixedSeed>EcosDaQueda</fixedSeed>
     <minSpacing>4</minSpacing>
     <searchRadius>6</searchRadius>
     <settlements>

@@ -1,0 +1,165 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<worldPreset>
+	<name>EcosDaQueda</name>
+	<difficulty>0</difficulty>
+	<sortPriority>0</sortPriority>
+	<biomes>
+		<li>AB_RockyCrags</li>
+		<li>BorealForest</li>
+		<li>Ocean</li>
+		<li>TemperateForest</li>
+		<li>Grasslands</li>
+		<li>Tundra</li>
+		<li>IceSheet</li>
+		<li>Desert</li>
+		<li>AridShrubland</li>
+		<li>SeaIce</li>
+		<li>AB_TarPits</li>
+		<li>AB_OcularForest</li>
+		<li>TropicalRainforest</li>
+		<li>AB_GallatrossGraveyard</li>
+		<li>AB_MechanoidIntrusion</li>
+		<li>ExtremeDesert</li>
+		<li>AB_PyroclasticConflagration</li>
+		<li>AB_PropaneLakes</li>
+		<li>TropicalSwamp</li>
+		<li>AB_IdyllicMeadows</li>
+		<li>Lake</li>
+		<li>ColdBog</li>
+		<li>AB_FeraliskInfestedJungle</li>
+		<li>AB_MycoticJungle</li>
+		<li>GlacialPlain</li>
+		<li>TemperateSwamp</li>
+		<li>Glowforest</li>
+		<li>AB_GelatinousSuperorganism</li>
+		<li>AB_MiasmicMangrove</li>
+		<li>Scarlands</li>
+		<li>LavaField</li>
+	</biomes>
+	<landmarks />
+	<features>
+		<li>GL_River</li>
+		<li>GL_RiverTerrain</li>
+		<li>GL_CaveEntrance</li>
+		<li>GL_DesertPlateau</li>
+		<li>GL_Rift</li>
+		<li>Caves</li>
+		<li>GL_Crater</li>
+		<li>GL_CoveWithIsland</li>
+		<li>GL_RiverSource</li>
+		<li>GL_CoastCorner</li>
+		<li>GL_LoneMountain</li>
+		<li>GL_SurfaceCave</li>
+		<li>GL_Cirque</li>
+		<li>GL_Caldera</li>
+		<li>GL_Canyon</li>
+		<li>Mountain</li>
+		<li>VEE_MechanoidShipChunks</li>
+		<li>VEE_DistressedWildlife</li>
+		<li>VEE_WanderingCompanions</li>
+		<li>AB_AncientGreyPallVent</li>
+		<li>GL_SwampHill</li>
+		<li>GL_Tombolo</li>
+		<li>Junkyard</li>
+		<li>VEE_IncreasedInfestations</li>
+		<li>VEE_MineralDevoid</li>
+		<li>VEE_HardToTraverse</li>
+		<li>MixedBiome</li>
+		<li>GL_SecludedCove</li>
+		<li>VEE_AbundantPredators</li>
+		<li>GL_RiverIsland</li>
+		<li>AB_AncientBloodRainVent</li>
+		<li>GL_Sinkhole</li>
+		<li>GL_SecludedValley</li>
+		<li>GL_Badlands</li>
+		<li>GL_IceOasis</li>
+		<li>GL_RiverConfluence</li>
+		<li>GL_Landbridge</li>
+		<li>VEE_LargerRegion</li>
+		<li>AB_AncientDeathPallVent</li>
+		<li>Coast</li>
+		<li>AnimalLife_Decreased</li>
+		<li>GL_Gorge</li>
+		<li>VEE_ToxicVents</li>
+		<li>VEE_FertileRains</li>
+		<li>AB_GoldenTrees</li>
+		<li>VEE_AuburnTree_Oaks</li>
+		<li>VEE_Blooming_ForgetMeNot</li>
+		<li>VEE_Blooming_Knapweed</li>
+		<li>PlantLife_Increased</li>
+		<li>VEE_Mycelium</li>
+		<li>VEE_MoreSolarPower</li>
+		<li>VEE_ReducedPrey</li>
+		<li>VEE_ReducedPredators</li>
+		<li>AB_DryClimate</li>
+		<li>VEE_RodentPlagues</li>
+		<li>AB_DerelictArchonexus</li>
+		<li>PlantGrove</li>
+		<li>GL_Island</li>
+		<li>WetClimate</li>
+		<li>VEE_AggressiveHerds</li>
+		<li>VEE_SmokeVents</li>
+		<li>VEE_DeepOrePoor</li>
+		<li>VEE_NoTrees</li>
+		<li>AnimalHabitat</li>
+		<li>VEE_BombardedSurface</li>
+		<li>VEE_Megafauna</li>
+		<li>AnimalLife_Increased</li>
+		<li>VEE_SmallerRegion</li>
+		<li>SunnyMutator</li>
+		<li>VEE_NobleSteeds</li>
+		<li>VEE_RotstinkVents</li>
+		<li>VEE_EltexDeposits</li>
+		<li>VEE_AbundantPrey</li>
+		<li>VEE_ColossalFauna</li>
+		<li>AB_OcularTransformation</li>
+		<li>Fertile</li>
+		<li>GL_Glacier</li>
+		<li>VEE_PlantLife_Decimated</li>
+		<li>AB_ExplodingAnimals</li>
+		<li>GL_RiverDelta</li>
+		<li>VEE_MigratoryHerds</li>
+		<li>DryGround</li>
+		<li>AB_EdibleAirborneMicrofungi</li>
+		<li>GL_Atoll</li>
+		<li>AB_QuicksandPits</li>
+		<li>VEE_Fertility_Reduced</li>
+		<li>VEE_Sinkholes</li>
+		<li>VEE_MineableComponentSpacer</li>
+		<li>VEE_NaturalAerie</li>
+		<li>VEE_Microfauna</li>
+		<li>AB_DessertTrees</li>
+	</features>
+	<description>América do Norte e México depois da Queda. Mundo fixo do Ecos da Queda (biomas e relevo fixos; marcos, ruínas e sítios variam por partida).</description>
+	<saveTerrain>True</saveTerrain>
+	<scenParts IsNull="True" />
+	<scenPartDefs IsNull="True" />
+	<customizationDefaults>
+		<keys />
+		<values />
+	</customizationDefaults>
+	<factionSettlementCustomizationDefaults IsNull="True" />
+	<factionNameOverrides IsNull="True" />
+	<factionDescriptionOverrides IsNull="True" />
+	<factionIconOverrides IsNull="True" />
+	<factionIdeoIconOverrides IsNull="True" />
+	<factionColorOverrides IsNull="True" />
+	<factionPopulationOverrides IsNull="True" />
+	<presetStories />
+	<savedFactionDefs IsNull="True" />
+	<savedIdeoFactionMapping IsNull="True" />
+	<savedSettlementsData IsNull="True" />
+	<savedMapMarkersData IsNull="True" />
+	<savedMapTextFeaturesData IsNull="True" />
+	<worldInfo>
+		<name>TC 334 Última</name>
+		<planetCoverage>0.25</planetCoverage>
+		<seedString>EcosDaQueda</seedString>
+		<persistentRandomValue>-1471825377</persistentRandomValue>
+		<overallRainfall>Normal</overallRainfall>
+		<overallTemperature>Normal</overallTemperature>
+		<initialMapSize>(250, 1, 250)</initialMapSize>
+		<factions IsNull="True" />
+	</worldInfo>
+	<generationData IsNull="True" />
+</worldPreset>

@@ -31,6 +31,11 @@
     <scenario>
       <summary>Três ocupantes de um abrigo antigo, bem equipados e sem a menor ideia do que aconteceu lá fora. O início clássico.</summary>
       <parts>
+        <!-- Mundo fixo (MUNDO.md, M3b): com o Worldbuilder, o cenário abre direto no mundo EcosDaQueda. -->
+        <li Class="Worldbuilder.ScenPart_StartInWorld" MayRequire="ferny.worldbuilder">
+          <def>WB_StartInWorld</def>
+          <worldPresetName>EcosDaQueda</worldPresetName>
+        </li>
         <li Class="ScenPart_ConfigPage_ConfigureStartingPawns">
           <def>ConfigPage_ConfigureStartingPawns</def>
           <pawnCount>3</pawnCount>
@@ -142,6 +147,11 @@
     <scenario>
       <summary>Cinco andarilhos pobres e calejados resolvem fincar raiz. Começo difícil, com pouco equipamento.</summary>
       <parts>
+        <!-- Mundo fixo (MUNDO.md, M3b): com o Worldbuilder, o cenário abre direto no mundo EcosDaQueda. -->
+        <li Class="Worldbuilder.ScenPart_StartInWorld" MayRequire="ferny.worldbuilder">
+          <def>WB_StartInWorld</def>
+          <worldPresetName>EcosDaQueda</worldPresetName>
+        </li>
         <li Class="ScenPart_ConfigPage_ConfigureStartingPawns">
           <def>ConfigPage_ConfigureStartingPawns</def>
           <pawnCount>5</pawnCount>
@@ -238,6 +248,11 @@
     <scenario>
       <summary>Quatro ex-colaboradores da Ordem do Silêncio em fuga. A Ordem não esquece nem arquiva: começa malvista por ela.</summary>
       <parts>
+        <!-- Mundo fixo (MUNDO.md, M3b): com o Worldbuilder, o cenário abre direto no mundo EcosDaQueda. -->
+        <li Class="Worldbuilder.ScenPart_StartInWorld" MayRequire="ferny.worldbuilder">
+          <def>WB_StartInWorld</def>
+          <worldPresetName>EcosDaQueda</worldPresetName>
+        </li>
         <li Class="ScenPart_ConfigPage_ConfigureStartingPawns">
           <def>ConfigPage_ConfigureStartingPawns</def>
           <pawnCount>4</pawnCount>
@@ -321,6 +336,11 @@
     <scenario>
       <summary>Quatro modelos descontinuados fogem da reciclagem. Começa malvisto pelo Concílio da Hélice.</summary>
       <parts>
+        <!-- Mundo fixo (MUNDO.md, M3b): com o Worldbuilder, o cenário abre direto no mundo EcosDaQueda. -->
+        <li Class="Worldbuilder.ScenPart_StartInWorld" MayRequire="ferny.worldbuilder">
+          <def>WB_StartInWorld</def>
+          <worldPresetName>EcosDaQueda</worldPresetName>
+        </li>
         <li Class="ScenPart_ConfigPage_ConfigureStartingPawns">
           <def>ConfigPage_ConfigureStartingPawns</def>
           <pawnCount>4</pawnCount>
@@ -405,6 +425,11 @@
     <scenario>
       <summary>Quatro graxeiros desertam da Irmandade da Forja com as ferramentas. Começa malvisto por ela.</summary>
       <parts>
+        <!-- Mundo fixo (MUNDO.md, M3b): com o Worldbuilder, o cenário abre direto no mundo EcosDaQueda. -->
+        <li Class="Worldbuilder.ScenPart_StartInWorld" MayRequire="ferny.worldbuilder">
+          <def>WB_StartInWorld</def>
+          <worldPresetName>EcosDaQueda</worldPresetName>
+        </li>
         <li Class="ScenPart_ConfigPage_ConfigureStartingPawns">
           <def>ConfigPage_ConfigureStartingPawns</def>
           <pawnCount>4</pawnCount>
@@ -494,6 +519,11 @@
     <scenario>
       <summary>Quatro coristas abandonam o Coro Ascendente. Começa malvisto por ele.</summary>
       <parts>
+        <!-- Mundo fixo (MUNDO.md, M3b): com o Worldbuilder, o cenário abre direto no mundo EcosDaQueda. -->
+        <li Class="Worldbuilder.ScenPart_StartInWorld" MayRequire="ferny.worldbuilder">
+          <def>WB_StartInWorld</def>
+          <worldPresetName>EcosDaQueda</worldPresetName>
+        </li>
         <li Class="ScenPart_ConfigPage_ConfigureStartingPawns">
           <def>ConfigPage_ConfigureStartingPawns</def>
           <pawnCount>4</pawnCount>
