@@ -321,9 +321,28 @@ namespace EcosDaQueda.DebugTools
                 else if (k == "preset") presetName = v.Replace('_', ' ');
             }
             string[] a = all.Where(x => !x.Contains("=")).ToArray();
+            ScenarioDef scen = a.Length > 0 ? DefDatabase<ScenarioDef>.GetNamed(a[0]) : ScenarioDefOf.Crashlanded;
+            // Cenário com "começar no mundo X" (Worldbuilder, M3b): sem preset= na linha, segue o caminho do jogo
+            // (WorldGeneratorUtility.GenerateWorldFromPreset): preset do cenário, com a cobertura e a semente gravadas nele.
+            if (presetName == null)
+            {
+                object part = scen.scenario.AllParts.FirstOrDefault(p => p.GetType().FullName == "Worldbuilder.ScenPart_StartInWorld");
+                string scenPreset = part == null ? null : Traverse.Create(part).Field("worldPresetName").GetValue<string>();
+                if (!scenPreset.NullOrEmpty())
+                {
+                    presetName = scenPreset;
+                    object preset = GenTypes.GetTypeInAnyAssembly("Worldbuilder.WorldPresetManager")?.GetMethod("GetPreset", System.Reflection.BindingFlags.Static | System.Reflection.BindingFlags.Public)?.Invoke(null, new object[] { scenPreset });
+                    object info = preset == null ? null : Traverse.Create(preset).Field("worldInfo").GetValue();
+                    if (info != null && Traverse.Create(preset).Field("saveTerrain").GetValue<bool>())
+                    {
+                        if (!all.Any(x => x.StartsWith("cov="))) coverage = Traverse.Create(info).Field("planetCoverage").GetValue<float>();
+                        if (!all.Any(x => x.StartsWith("seed="))) seed = Traverse.Create(info).Field("seedString").GetValue<string>();
+                    }
+                    Write("# cenário abre no mundo " + scenPreset + " (preset " + (preset == null ? "NÃO ENCONTRADO" : "ok") + ", cov=" + coverage + " seed=" + seed + ")");
+                }
+            }
             var wbName = GenTypes.GetTypeInAnyAssembly("Worldbuilder.World_ExposeData_Patch")?.GetProperty("WorldPresetName", System.Reflection.BindingFlags.Static | System.Reflection.BindingFlags.Public | System.Reflection.BindingFlags.NonPublic);
             if (wbName != null && wbName.CanWrite) wbName.SetValue(null, presetName);
-            ScenarioDef scen = a.Length > 0 ? DefDatabase<ScenarioDef>.GetNamed(a[0]) : ScenarioDefOf.Crashlanded;
             StorytellerDef teller = a.Length > 1 ? DefDatabase<StorytellerDef>.GetNamed(a[1]) : StorytellerDefOf.Cassandra;
             Current.ProgramState = ProgramState.Entry;
             Game.ClearCaches();
