@@ -198,6 +198,7 @@
         </traders>
         <carriers>
           <Muffalo>6</Muffalo>
+          <Dromedary>3</Dromedary>
         </carriers>
         <guards>
           <EQ_NaoCatalogado_Extraviado>10</EQ_NaoCatalogado_Extraviado>
@@ -590,11 +591,11 @@ Não negociam, não fazem paz e não têm ouvidoria. Em compensação, fazem gre
       <li>
         <kindDef>Trader</kindDef>
         <traders>
-          <EQ_Lodo_Bruta>1</EQ_Lodo_Bruta>
+          <EQ_Lodo_Feirante>1</EQ_Lodo_Feirante>
         </traders>
         <carriers>
           <Muffalo>6</Muffalo>
-          <Pig>2</Pig>
+          <Dromedary>3</Dromedary>
         </carriers>
         <guards>
           <EQ_Lodo_Bruto>10</EQ_Lodo_Bruto>
@@ -710,10 +711,11 @@ Não negociam, não fazem paz e não têm ouvidoria. Em compensação, fazem gre
       <li>
         <kindDef>Trader</kindDef>
         <traders>
-          <EQ_Colmeia_Operario>1</EQ_Colmeia_Operario>
+          <EQ_Colmeia_Mercador>1</EQ_Colmeia_Mercador>
         </traders>
         <carriers>
           <Muffalo>6</Muffalo>
+          <Dromedary>3</Dromedary>
         </carriers>
         <guards>
           <EQ_Colmeia_Soldado>10</EQ_Colmeia_Soldado>

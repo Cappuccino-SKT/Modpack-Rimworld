@@ -1,0 +1,1584 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <!--
+    N2b (NACAO.md › 3.7, nacao/memes.md grupos 1 a 4): governo pela ideologia (N2b: grupos 1 e 2; N2c: 3 e 4). Um GovMemeDef por meme (defName em texto:
+    meme de mod ausente fica inerte). Valem com o meme na ideologia principal do jogador e a nação fundada (o canal "revolt" dos
+    efeitos fixos vale já na revolta da proclamação). Reforma que tira o meme tira a cadeira (o conselheiro volta para casa).
+    - seats: cadeiras novas. role = cadeira de função (ocupada por quem tem a função da ideologia); leaderSeat = do líder;
+      sem os dois = o jogador nomeia. Mesma key em memes diferentes = a mesma cadeira, +seatStackBonus (EQ_Conselho.xml) por meme a mais.
+    - effects: efeitos fixos do meme. Canais: ver EQ_Conselho.xml.
+    - seatFactor (todas as cadeiras), seatFactors (uma), renames, leaderTakes, leaderFillsEmpty, dropOneFixedSeat, noPassedOver,
+      noSwapCooldown, moodScaled, majorDecisionVote, fixedSeatsRequireTitle, fixedSeatMinAge; succession é só texto até o N3.
+    Valores propostos; ajustar aqui.
+  -->
+
+  <!-- ============================================================ 1. Forma de governo -->
+
+  <EcosDaQueda.GovMemeDef>
+    <defName>EQ_Gov_Republica</defName>
+    <meme>VME_Republic</meme>
+    <summary>Triunvirato: cada triúnviro cuida de uma pasta (Relações com o líder, Guerra com o 2º, Terras com o 3º). Jurar lealdade e proclamar exigem 2 dos 3 triúnviros com humor acima de 40%.</summary>
+    <succession>sem revolta, os outros dois triúnviros seguram o país (regra do N3)</succession>
+    <seats>
+      <li>
+        <key>pasta_relacoes</key>
+        <label>pasta das Relações</label>
+        <description>Do líder (1º triúnviro). Um pouco mais de boa vontade, tensão da patrona mais lenta, cerimônias mais baratas.</description>
+        <skills>
+          <li>Social</li>
+        </skills>
+        <leaderSeat>true</leaderSeat>
+        <effects>
+          <li><channel>goodwill</channel><amount>0.10</amount></li>
+          <li><channel>patronTension</channel><amount>-0.10</amount></li>
+          <li><channel>ceremony</channel><amount>-0.05</amount></li>
+        </effects>
+      </li>
+      <li>
+        <key>pasta_guerra</key>
+        <label>pasta da Guerra</label>
+        <description>Do 2º triúnviro. Exércitos sob o comando do jogador mais fortes, revoltas menores.</description>
+        <skills>
+          <li>Shooting</li>
+          <li>Melee</li>
+        </skills>
+        <role>VME_IdeoRole_LeaderSecond</role>
+        <effects>
+          <li><channel>army</channel><amount>0.10</amount></li>
+          <li><channel>revolt</channel><amount>-0.10</amount></li>
+        </effects>
+      </li>
+      <li>
+        <key>pasta_terras</key>
+        <label>pasta das Terras</label>
+        <description>Do 3º triúnviro. Fronteira mais rápida e tributo maior.</description>
+        <skills>
+          <li>Intellectual</li>
+        </skills>
+        <role>VME_IdeoRole_LeaderThird</role>
+        <effects>
+          <li><channel>frontier</channel><amount>0.10</amount></li>
+          <li><channel>tribute</channel><amount>0.10</amount></li>
+        </effects>
+      </li>
+    </seats>
+    <majorDecisionVote>true</majorDecisionVote>
+  </EcosDaQueda.GovMemeDef>
+
+  <EcosDaQueda.GovMemeDef>
+    <defName>EQ_Gov_Real</defName>
+    <meme>VME_Royal</meme>
+    <summary>A coroa passa de pai para filho, e o resto é detalhe.</summary>
+    <succession>por herança: com herdeiro designado, sem revolta nem nova proclamação; sem herdeiro, revolta maior (regra do N3)</succession>
+  </EcosDaQueda.GovMemeDef>
+
+  <EcosDaQueda.GovMemeDef>
+    <defName>EQ_Gov_Aristocratico</defName>
+    <meme>VME_Aristocratic</meme>
+    <summary>Cadeira do Nobre; as cadeiras fixas só aceitam quem tem título de nobreza.</summary>
+    <seats>
+      <li>
+        <key>nobre</key>
+        <label>nobre</label>
+        <description>Social, com título de nobreza. Sabe com que garfo se come na corte: cerimônias das potências bem mais baratas.</description>
+        <skills>
+          <li>Social</li>
+        </skills>
+        <requireTitle>true</requireTitle>
+        <effects>
+          <li><channel>ceremony</channel><amount>-0.20</amount></li>
+        </effects>
+      </li>
+    </seats>
+    <fixedSeatsRequireTitle>true</fixedSeatsRequireTitle>
+  </EcosDaQueda.GovMemeDef>
+
+  <EcosDaQueda.GovMemeDef>
+    <defName>EQ_Gov_DeusImperador</defName>
+    <meme>VME_GodEmperor</meme>
+    <summary>O líder vale por meio conselho: cadeira fixa vazia rende metade do bônus pelo líder. Revolta da proclamação 30% menor: ninguém se revolta contra um deus, só contra o preço do pão.</summary>
+    <succession>se o líder morrer, revolta grande e o conselho cai (regra do N3)</succession>
+    <effects>
+      <li><channel>revolt</channel><amount>-0.30</amount></li>
+    </effects>
+    <leaderFillsEmpty>0.5</leaderFillsEmpty>
+  </EcosDaQueda.GovMemeDef>
+
+  <EcosDaQueda.GovMemeDef>
+    <defName>EQ_Gov_SacerdocioExaltado</defName>
+    <meme>VME_ExaltedPriesthood</meme>
+    <summary>Líder e guia moral viram um só: as cadeiras do guia moral e do sumo sacerdote passam a ser do líder.</summary>
+    <leaderTakes>
+      <li>guia_moral</li>
+      <li>sumo_sacerdote</li>
+    </leaderTakes>
+  </EcosDaQueda.GovMemeDef>
+
+  <EcosDaQueda.GovMemeDef>
+    <defName>EQ_Gov_Anciaos</defName>
+    <meme>VME_Elders</meme>
+    <summary>Cadeira do Conselho dos anciãos (60 anos ou mais); as cadeiras fixas exigem 30 anos ou mais.</summary>
+    <seats>
+      <li>
+        <key>anciaos</key>
+        <label>conselho dos anciãos</label>
+        <description>Média de Intelectual e Social, 60 anos ou mais. Já viu três fronteiras subirem e caírem: fronteira e tributo maiores.</description>
+        <skills>
+          <li>Intellectual</li>
+          <li>Social</li>
+        </skills>
+        <averageSkills>true</averageSkills>
+        <minAge>60</minAge>
+        <effects>
+          <li><channel>frontier</channel><amount>0.15</amount></li>
+          <li><channel>tribute</channel><amount>0.15</amount></li>
+        </effects>
+      </li>
+    </seats>
+    <fixedSeatMinAge>30</fixedSeatMinAge>
+  </EcosDaQueda.GovMemeDef>
+
+  <EcosDaQueda.GovMemeDef>
+    <defName>EQ_Gov_Igualitario</defName>
+    <meme>VME_Egalitarian</meme>
+    <summary>Ninguém se sente preterido no conselho (a perícia ainda conta no bônus).</summary>
+    <noPassedOver>true</noPassedOver>
+  </EcosDaQueda.GovMemeDef>
+
+  <EcosDaQueda.GovMemeDef>
+    <defName>EQ_Gov_Nacionalista</defName>
+    <meme>VME_Nationalist</meme>
+    <summary>Revoltas 25% menores; boa vontade ganha com facções de outra ideologia 10% menor; General 10% mais forte.</summary>
+    <effects>
+      <li><channel>revolt</channel><amount>-0.25</amount></li>
+      <li><channel>goodwillOtherIdeo</channel><amount>-0.10</amount></li>
+    </effects>
+    <seatFactors>
+      <li><key>general</key><factor>1.10</factor></li>
+    </seatFactors>
+  </EcosDaQueda.GovMemeDef>
+
+  <EcosDaQueda.GovMemeDef>
+    <defName>EQ_Gov_Coletivista</defName>
+    <meme>Collectivist</meme>
+    <summary>Uma cadeira a mais (representante do povo), mas cada cadeira vale 80%: todo mundo opina um pouco.</summary>
+    <seats>
+      <li>
+        <key>representante_povo</key>
+        <label>representante do povo</label>
+        <description>Social. Fala pela colônia inteira, um pouco de tudo: boa vontade, revolta, fronteira e tributo.</description>
+        <skills>
+          <li>Social</li>
+        </skills>
+        <effects>
+          <li><channel>goodwill</channel><amount>0.05</amount></li>
+          <li><channel>revolt</channel><amount>-0.05</amount></li>
+          <li><channel>frontier</channel><amount>0.05</amount></li>
+          <li><channel>tribute</channel><amount>0.05</amount></li>
+        </effects>
+      </li>
+    </seats>
+    <seatFactor>0.8</seatFactor>
+  </EcosDaQueda.GovMemeDef>
+
+  <EcosDaQueda.GovMemeDef>
+    <defName>EQ_Gov_Individualista</defName>
+    <meme>Individualist</meme>
+    <summary>Feche uma cadeira fixa na janela do conselho: as que ficam valem 130%.</summary>
+    <dropOneFixedSeat>true</dropOneFixedSeat>
+    <seatFactor>1.3</seatFactor>
+  </EcosDaQueda.GovMemeDef>
+
+  <EcosDaQueda.GovMemeDef>
+    <defName>EQ_Gov_Lealista</defName>
+    <meme>Loyalist</meme>
+    <summary>A lealdade passa adiante junto com o trono.</summary>
+    <succession>sem revolta nem nova proclamação se o sucessor já estiver escolhido (regra do N3)</succession>
+  </EcosDaQueda.GovMemeDef>
+
+  <EcosDaQueda.GovMemeDef>
+    <defName>EQ_Gov_Autoritarismo</defName>
+    <meme>VME_Structure_Authoritarianism</meme>
+    <summary>O líder destitui conselheiros na hora (sem espera de troca); revoltas 20% menores.</summary>
+    <effects>
+      <li><channel>revolt</channel><amount>-0.20</amount></li>
+    </effects>
+    <noSwapCooldown>true</noSwapCooldown>
+  </EcosDaQueda.GovMemeDef>
+
+  <EcosDaQueda.GovMemeDef>
+    <defName>EQ_Gov_CultoPersonalidade</defName>
+    <meme>VME_Structure_CultOfPersonality</meme>
+    <summary>Os bônus do conselho seguem o humor do líder: até +20% feliz, até −30% triste.</summary>
+    <moodScaled>true</moodScaled>
+  </EcosDaQueda.GovMemeDef>
+
+  <EcosDaQueda.GovMemeDef>
+    <defName>EQ_Gov_Corporativo</defName>
+    <meme>VME_Structure_Corporate</meme>
+    <summary>A nação é uma empresa: cadeira do Diretor financeiro, e o Embaixador vira Relações com investidores.</summary>
+    <seats>
+      <li>
+        <key>diretor_financeiro</key>
+        <label>diretor financeiro</label>
+        <description>Média de Social e Intelectual. Transforma prosperidade em dividendos: a prata do tributo dobra.</description>
+        <skills>
+          <li>Social</li>
+          <li>Intellectual</li>
+        </skills>
+        <averageSkills>true</averageSkills>
+        <effects>
+          <li><channel>tributeSilver</channel><amount>1.0</amount></li>
+        </effects>
+      </li>
+    </seats>
+    <renames>
+      <li><key>embaixador</key><label>relações com investidores</label></li>
+    </renames>
+  </EcosDaQueda.GovMemeDef>
+
+  <EcosDaQueda.GovMemeDef>
+    <defName>EQ_Gov_Ideologico</defName>
+    <meme>Structure_Ideological</meme>
+    <summary>Cadeira do guia moral (função da ideologia) e, sem sacerdote, a do Secretário de Estado.</summary>
+    <seats>
+      <li>
+        <key>guia_moral</key>
+        <label>guia moral</label>
+        <description>Função de guia moral. Prega a ideologia aos vizinhos e aos de casa: revoltas menores e um pouco mais de boa vontade.</description>
+        <skills>
+          <li>Social</li>
+        </skills>
+        <role>IdeoRole_Moralist</role>
+        <effects>
+          <li><channel>revolt</channel><amount>-0.10</amount></li>
+          <li><channel>goodwill</channel><amount>0.05</amount></li>
+        </effects>
+      </li>
+      <li>
+        <key>secretario</key>
+        <label>secretário de Estado</label>
+        <description>Intelectual. Papelada, carimbo e planilha: um pouco de fronteira, tributo e pesquisa.</description>
+        <skills>
+          <li>Intellectual</li>
+        </skills>
+        <effects>
+          <li><channel>frontier</channel><amount>0.05</amount></li>
+          <li><channel>tribute</channel><amount>0.05</amount></li>
+          <li><channel>research</channel><amount>0.03</amount></li>
+        </effects>
+      </li>
+    </seats>
+  </EcosDaQueda.GovMemeDef>
+
+  <!-- ============================================================ 2. Cadeiras ligadas a funções -->
+
+  <EcosDaQueda.GovMemeDef>
+    <defName>EQ_Gov_PrimaziaHumana</defName>
+    <meme>HumanPrimacy</meme>
+    <summary>Cadeira do Ministro da Indústria (especialista de produção).</summary>
+    <seats>
+      <li>
+        <key>ministro_industria</key>
+        <label>ministro da indústria</label>
+        <description>Função de especialista de produção. Bancadas da colônia mais rápidas e mais materiais no tributo do território.</description>
+        <skills>
+          <li>Crafting</li>
+        </skills>
+        <role>IdeoRole_ProductionSpecialist</role>
+        <effects>
+          <li><channel>workSpeed</channel><amount>0.10</amount></li>
+          <li><channel>tributeMaterials</channel><amount>0.25</amount></li>
+        </effects>
+      </li>
+    </seats>
+  </EcosDaQueda.GovMemeDef>
+
+  <EcosDaQueda.GovMemeDef>
+    <defName>EQ_Gov_Industrialismo</defName>
+    <meme>VME_HardcoreIndustrialism</meme>
+    <summary>Cadeira do Ministro da Indústria (especialista de produção); com a Primazia humana, a cadeira vale 150%.</summary>
+    <seats>
+      <li>
+        <key>ministro_industria</key>
+        <label>ministro da indústria</label>
+        <description>Função de especialista de produção. Bancadas da colônia mais rápidas e mais materiais no tributo do território.</description>
+        <skills>
+          <li>Crafting</li>
+        </skills>
+        <role>IdeoRole_ProductionSpecialist</role>
+        <effects>
+          <li><channel>workSpeed</channel><amount>0.10</amount></li>
+          <li><channel>tributeMaterials</channel><amount>0.25</amount></li>
+        </effects>
+      </li>
+    </seats>
+  </EcosDaQueda.GovMemeDef>
+
+  <EcosDaQueda.GovMemeDef>
+    <defName>EQ_Gov_Transumanista</defName>
+    <meme>Transhumanist</meme>
+    <summary>Cadeira do Ministro da Ciência (especialista de pesquisa).</summary>
+    <seats>
+      <li>
+        <key>ministro_ciencia</key>
+        <label>ministro da ciência</label>
+        <description>Função de especialista de pesquisa. Pesquisa mais rápida na colônia.</description>
+        <skills>
+          <li>Intellectual</li>
+        </skills>
+        <role>IdeoRole_ResearchSpecialist</role>
+        <effects>
+          <li><channel>research</channel><amount>0.10</amount></li>
+        </effects>
+      </li>
+    </seats>
+  </EcosDaQueda.GovMemeDef>
+
+  <EcosDaQueda.GovMemeDef>
+    <defName>EQ_Gov_CulturaArtesa</defName>
+    <meme>VME_CraftCulture</meme>
+    <summary>Cadeira do Mestre de ofícios (especialista de produção).</summary>
+    <seats>
+      <li>
+        <key>mestre_oficios</key>
+        <label>mestre de ofícios</label>
+        <description>Função de especialista de produção. Itens feitos na colônia com chance de sair um nível de qualidade acima (até obra-prima).</description>
+        <skills>
+          <li>Crafting</li>
+        </skills>
+        <role>IdeoRole_ProductionSpecialist</role>
+        <effects>
+          <li><channel>quality</channel><amount>0.15</amount></li>
+        </effects>
+      </li>
+    </seats>
+  </EcosDaQueda.GovMemeDef>
+
+  <EcosDaQueda.GovMemeDef>
+    <defName>EQ_Gov_Fazendeiro</defName>
+    <meme>Rancher</meme>
+    <summary>Cadeira do Ministro da Pecuária (especialista de animais).</summary>
+    <seats>
+      <li>
+        <key>ministro_pecuaria</key>
+        <label>ministro da pecuária</label>
+        <description>Função de especialista de animais. Mais comida no tributo do território.</description>
+        <skills>
+          <li>Animals</li>
+        </skills>
+        <role>IdeoRole_AnimalsSpecialist</role>
+        <effects>
+          <li><channel>tributeFood</channel><amount>0.30</amount></li>
+        </effects>
+      </li>
+    </seats>
+  </EcosDaQueda.GovMemeDef>
+
+  <EcosDaQueda.GovMemeDef>
+    <defName>EQ_Gov_PrimaziaNatureza</defName>
+    <meme>NaturePrimacy</meme>
+    <summary>Cadeira do Guardião da Terra (especialista de plantio).</summary>
+    <seats>
+      <li>
+        <key>guardiao_terra</key>
+        <label>guardião da terra</label>
+        <description>Função de especialista de plantio. Os tiles verdes do território (floresta, prado, mata) rendem bem mais comida, madeira e prosperidade.</description>
+        <skills>
+          <li>Plants</li>
+        </skills>
+        <role>IdeoRole_PlantSpecialist</role>
+        <effects>
+          <li><channel>yieldGreen</channel><amount>0.50</amount></li>
+        </effects>
+      </li>
+    </seats>
+  </EcosDaQueda.GovMemeDef>
+
+  <EcosDaQueda.GovMemeDef>
+    <defName>EQ_Gov_ConexaoArvores</defName>
+    <meme>TreeConnection</meme>
+    <summary>Cadeira do Guardião da Terra (especialista de plantio).</summary>
+    <seats>
+      <li>
+        <key>guardiao_terra</key>
+        <label>guardião da terra</label>
+        <description>Função de especialista de plantio. Os tiles verdes do território (floresta, prado, mata) rendem bem mais comida, madeira e prosperidade.</description>
+        <skills>
+          <li>Plants</li>
+        </skills>
+        <role>IdeoRole_PlantSpecialist</role>
+        <effects>
+          <li><channel>yieldGreen</channel><amount>0.50</amount></li>
+        </effects>
+      </li>
+    </seats>
+  </EcosDaQueda.GovMemeDef>
+
+  <EcosDaQueda.GovMemeDef>
+    <defName>EQ_Gov_Gauranlen</defName>
+    <meme>AM_GauranlenSupremacy</meme>
+    <summary>Cadeira do Guardião da Terra (especialista de plantio).</summary>
+    <seats>
+      <li>
+        <key>guardiao_terra</key>
+        <label>guardião da terra</label>
+        <description>Função de especialista de plantio. Os tiles verdes do território (floresta, prado, mata) rendem bem mais comida, madeira e prosperidade.</description>
+        <skills>
+          <li>Plants</li>
+        </skills>
+        <role>IdeoRole_PlantSpecialist</role>
+        <effects>
+          <li><channel>yieldGreen</channel><amount>0.50</amount></li>
+        </effects>
+      </li>
+    </seats>
+  </EcosDaQueda.GovMemeDef>
+
+  <EcosDaQueda.GovMemeDef>
+    <defName>EQ_Gov_Escavador</defName>
+    <meme>Tunneler</meme>
+    <summary>Cadeira do Ministro das Minas (especialista de mineração).</summary>
+    <seats>
+      <li>
+        <key>ministro_minas</key>
+        <label>ministro das minas</label>
+        <description>Função de especialista de mineração. Morros e montanhas do território rendem pedra e metal em dobro.</description>
+        <skills>
+          <li>Mining</li>
+        </skills>
+        <role>IdeoRole_MiningSpecialist</role>
+        <effects>
+          <li><channel>yieldHills</channel><amount>1.0</amount></li>
+        </effects>
+      </li>
+    </seats>
+  </EcosDaQueda.GovMemeDef>
+
+  <EcosDaQueda.GovMemeDef>
+    <defName>EQ_Gov_SupremaciaMecanoide</defName>
+    <meme>VME_MechanoidSupremacy</meme>
+    <summary>Cadeira do Comandante de mechs (um mecanitor).</summary>
+    <seats>
+      <li>
+        <key>comandante_mechs</key>
+        <label>comandante de mechs</label>
+        <description>Intelectual, precisa ser mecanitor. Os exércitos da nação andam com mechs: mais fortes.</description>
+        <skills>
+          <li>Intellectual</li>
+        </skills>
+        <requireMechanitor>true</requireMechanitor>
+        <effects>
+          <li><channel>army</channel><amount>0.10</amount></li>
+        </effects>
+      </li>
+    </seats>
+  </EcosDaQueda.GovMemeDef>
+
+  <EcosDaQueda.GovMemeDef>
+    <defName>EQ_Gov_SupremaciaInsetoide</defName>
+    <meme>VME_InsectoidSupremacy</meme>
+    <summary>Cadeira da Rainha-mãe honorária.</summary>
+    <seats>
+      <li>
+        <key>rainha_mae</key>
+        <label>rainha-mãe honorária</label>
+        <description>Animais. A colmeia lembra quem a alimenta: exércitos um pouco mais fortes e revoltas que pensam duas vezes.</description>
+        <skills>
+          <li>Animals</li>
+        </skills>
+        <effects>
+          <li><channel>army</channel><amount>0.05</amount></li>
+          <li><channel>revolt</channel><amount>-0.05</amount></li>
+        </effects>
+      </li>
+    </seats>
+  </EcosDaQueda.GovMemeDef>
+
+  <EcosDaQueda.GovMemeDef>
+    <defName>EQ_Gov_AtiradorElite</defName>
+    <meme>AM_Sharpshooter</meme>
+    <summary>Cadeira do Mestre de armas (especialista de tiro).</summary>
+    <seats>
+      <li>
+        <key>mestre_armas</key>
+        <label>mestre de armas</label>
+        <description>Função de especialista de tiro. Exércitos sob o comando do jogador mais fortes.</description>
+        <skills>
+          <li>Shooting</li>
+        </skills>
+        <role>IdeoRole_ShootingSpecialist</role>
+        <effects>
+          <li><channel>army</channel><amount>0.10</amount></li>
+        </effects>
+      </li>
+    </seats>
+  </EcosDaQueda.GovMemeDef>
+
+  <EcosDaQueda.GovMemeDef>
+    <defName>EQ_Gov_Gladiador</defName>
+    <meme>AM_Gladiator</meme>
+    <summary>Cadeira do Campeão (especialista de corpo a corpo).</summary>
+    <seats>
+      <li>
+        <key>campeao</key>
+        <label>campeão</label>
+        <description>Função de especialista de corpo a corpo. Exércitos um pouco mais fortes e revoltas menores: ninguém quer ser o primeiro a enfrentá-lo.</description>
+        <skills>
+          <li>Melee</li>
+        </skills>
+        <role>IdeoRole_MeleeSpecialist</role>
+        <effects>
+          <li><channel>army</channel><amount>0.05</amount></li>
+          <li><channel>revolt</channel><amount>-0.10</amount></li>
+        </effects>
+      </li>
+    </seats>
+  </EcosDaQueda.GovMemeDef>
+
+  <EcosDaQueda.GovMemeDef>
+    <defName>EQ_Gov_Bushido</defName>
+    <meme>VME_Bushido</meme>
+    <summary>Cadeira do Campeão (especialista de corpo a corpo).</summary>
+    <seats>
+      <li>
+        <key>campeao</key>
+        <label>campeão</label>
+        <description>Função de especialista de corpo a corpo. Exércitos um pouco mais fortes e revoltas menores: ninguém quer ser o primeiro a enfrentá-lo.</description>
+        <skills>
+          <li>Melee</li>
+        </skills>
+        <role>IdeoRole_MeleeSpecialist</role>
+        <effects>
+          <li><channel>army</channel><amount>0.05</amount></li>
+          <li><channel>revolt</channel><amount>-0.10</amount></li>
+        </effects>
+      </li>
+    </seats>
+  </EcosDaQueda.GovMemeDef>
+
+  <EcosDaQueda.GovMemeDef>
+    <defName>EQ_Gov_Ritualista</defName>
+    <meme>Ritualist</meme>
+    <summary>Cadeira do Mestre de cerimônias (guia moral).</summary>
+    <seats>
+      <li>
+        <key>mestre_cerimonias</key>
+        <label>mestre de cerimônias</label>
+        <description>Função de guia moral. Sabe a ordem dos discursos: cerimônias das potências mais baratas.</description>
+        <skills>
+          <li>Social</li>
+        </skills>
+        <role>IdeoRole_Moralist</role>
+        <effects>
+          <li><channel>ceremony</channel><amount>-0.10</amount></li>
+        </effects>
+      </li>
+    </seats>
+  </EcosDaQueda.GovMemeDef>
+
+  <EcosDaQueda.GovMemeDef>
+    <defName>EQ_Gov_Proselitista</defName>
+    <meme>Proselytizer</meme>
+    <summary>Cadeira do guia moral (missionário); com o Ideológico, a cadeira vale 150%.</summary>
+    <seats>
+      <li>
+        <key>guia_moral</key>
+        <label>guia moral</label>
+        <description>Função de guia moral. Prega a ideologia aos vizinhos e aos de casa: revoltas menores e um pouco mais de boa vontade.</description>
+        <skills>
+          <li>Social</li>
+        </skills>
+        <role>IdeoRole_Moralist</role>
+        <effects>
+          <li><channel>revolt</channel><amount>-0.10</amount></li>
+          <li><channel>goodwill</channel><amount>0.05</amount></li>
+        </effects>
+      </li>
+    </seats>
+  </EcosDaQueda.GovMemeDef>
+
+  <EcosDaQueda.GovMemeDef>
+    <defName>EQ_Gov_Comerciante</defName>
+    <meme>VME_Trader</meme>
+    <summary>Cadeira do Ministro do Comércio.</summary>
+    <seats>
+      <li>
+        <key>ministro_comercio</key>
+        <label>ministro do comércio</label>
+        <description>Social. Preços melhores com comerciantes para os colonos e mais prata no tributo.</description>
+        <skills>
+          <li>Social</li>
+        </skills>
+        <effects>
+          <li><channel>tradePrice</channel><amount>0.05</amount></li>
+          <li><channel>tributeSilver</channel><amount>0.50</amount></li>
+        </effects>
+      </li>
+    </seats>
+  </EcosDaQueda.GovMemeDef>
+
+  <EcosDaQueda.GovMemeDef>
+    <defName>EQ_Gov_SaudePublica</defName>
+    <meme>VME_Healthcare</meme>
+    <summary>Cadeira do Ministro da Saúde (médico).</summary>
+    <seats>
+      <li>
+        <key>ministro_saude</key>
+        <label>ministro da saúde</label>
+        <description>Função de médico. Exércitos voltam com menos baixas (por isso um pouco mais fortes). Atende primeiro o conselho, claro.</description>
+        <skills>
+          <li>Medicine</li>
+        </skills>
+        <role>IdeoRole_MedicalSpecialist</role>
+        <effects>
+          <li><channel>army</channel><amount>0.05</amount></li>
+        </effects>
+      </li>
+    </seats>
+  </EcosDaQueda.GovMemeDef>
+
+  <EcosDaQueda.GovMemeDef>
+    <defName>EQ_Gov_Saqueador</defName>
+    <meme>Raider</meme>
+    <summary>Cadeira do Capitão de saques.</summary>
+    <seats>
+      <li>
+        <key>capitao_saques</key>
+        <label>capitão de saques</label>
+        <description>Tiro ou Corpo a corpo. Decide onde a nação "recolhe impostos" dos vizinhos: exércitos sob o seu comando mais fortes.</description>
+        <skills>
+          <li>Shooting</li>
+          <li>Melee</li>
+        </skills>
+        <effects>
+          <li><channel>army</channel><amount>0.10</amount></li>
+        </effects>
+      </li>
+    </seats>
+  </EcosDaQueda.GovMemeDef>
+
+  <EcosDaQueda.GovMemeDef>
+    <defName>EQ_Gov_Pirata</defName>
+    <meme>VFEP_PirateMeme</meme>
+    <summary>Cadeira do Capitão de saques.</summary>
+    <seats>
+      <li>
+        <key>capitao_saques</key>
+        <label>capitão de saques</label>
+        <description>Tiro ou Corpo a corpo. Decide onde a nação "recolhe impostos" dos vizinhos: exércitos sob o seu comando mais fortes.</description>
+        <skills>
+          <li>Shooting</li>
+          <li>Melee</li>
+        </skills>
+        <effects>
+          <li><channel>army</channel><amount>0.10</amount></li>
+        </effects>
+      </li>
+    </seats>
+  </EcosDaQueda.GovMemeDef>
+
+  <EcosDaQueda.GovMemeDef>
+    <defName>EQ_Gov_Corsario</defName>
+    <meme>AM_Structure_Corsair</meme>
+    <summary>Cadeira do Capitão de saques.</summary>
+    <seats>
+      <li>
+        <key>capitao_saques</key>
+        <label>capitão de saques</label>
+        <description>Tiro ou Corpo a corpo. Decide onde a nação "recolhe impostos" dos vizinhos: exércitos sob o seu comando mais fortes.</description>
+        <skills>
+          <li>Shooting</li>
+          <li>Melee</li>
+        </skills>
+        <effects>
+          <li><channel>army</channel><amount>0.10</amount></li>
+        </effects>
+      </li>
+    </seats>
+  </EcosDaQueda.GovMemeDef>
+
+  <!-- ============================================================ 3. Regras e bônus no território, revolta e Hegemony (N2c) -->
+
+  <EcosDaQueda.GovMemeDef>
+    <defName>EQ_Gov_ConstrutoresCidades</defName>
+    <meme>VME_CityBuilders</meme>
+    <summary>A fronteira cresce 30% mais rápido; um marco a menos por colônia (eles constroem, não andam).</summary>
+    <effects>
+      <li><channel>frontier</channel><amount>0.30</amount></li>
+      <li><channel>markers</channel><amount>-1</amount></li>
+    </effects>
+  </EcosDaQueda.GovMemeDef>
+
+  <EcosDaQueda.GovMemeDef>
+    <defName>EQ_Gov_Nomade</defName>
+    <meme>VME_Nomad</meme>
+    <summary>Marcos de fronteira pela metade do preço, mas somem 30 dias depois de prontos: o povo já levantou acampamento.</summary>
+    <effects>
+      <li><channel>markerCost</channel><amount>-0.5</amount></li>
+    </effects>
+    <markerLifeDays>30</markerLifeDays>
+  </EcosDaQueda.GovMemeDef>
+
+  <EcosDaQueda.GovMemeDef>
+    <defName>EQ_Gov_Isolacionista</defName>
+    <meme>VFEA_Isolationist</meme>
+    <summary>Invasões do Hegemony contra a nação desistem 30% das vezes; o Embaixador vale metade.</summary>
+    <effects>
+      <li><channel>invasionVeto</channel><amount>0.30</amount></li>
+    </effects>
+    <seatFactors>
+      <li><key>embaixador</key><factor>0.5</factor></li>
+    </seatFactors>
+  </EcosDaQueda.GovMemeDef>
+
+  <EcosDaQueda.GovMemeDef>
+    <defName>EQ_Gov_Viajantes</defName>
+    <meme>VVE_Travelers</meme>
+    <summary>Tiles com estrada rendem prosperidade em dobro; marcos podem ficar até 3 tiles da borda.</summary>
+    <effects>
+      <li><channel>yieldRoad</channel><amount>1.0</amount></li>
+      <li><channel>markerReach</channel><amount>1.5</amount></li>
+    </effects>
+  </EcosDaQueda.GovMemeDef>
+
+  <EcosDaQueda.GovMemeDef>
+    <defName>EQ_Gov_FuriaEstrada</defName>
+    <meme>VVE_Roadragers</meme>
+    <summary>Exércitos com veículos, um pouco mais fortes; o Sindicato do Saque respeita (boa vontade ganha +20%).</summary>
+    <effects>
+      <li><channel>army</channel><amount>0.05</amount></li>
+      <li><channel>goodwill</channel><amount>0.20</amount><faction>EQ_Faction_SindicatoDoSaque</faction></li>
+    </effects>
+  </EcosDaQueda.GovMemeDef>
+
+  <EcosDaQueda.GovMemeDef>
+    <defName>EQ_Gov_Nauticos</defName>
+    <meme>VVE_Nauticals</meme>
+    <summary>Tiles da costa rendem 50% mais comida.</summary>
+    <effects>
+      <li><channel>yieldCoast</channel><amount>0.5</amount></li>
+    </effects>
+  </EcosDaQueda.GovMemeDef>
+
+  <EcosDaQueda.GovMemeDef>
+    <defName>EQ_Gov_BuscadoresCeu</defName>
+    <meme>VVE_Skyseekers</meme>
+    <summary>Marcos podem ficar até 6 tiles da borda (agrimensores de aeronave).</summary>
+    <effects>
+      <li><channel>markerReach</channel><amount>4.5</amount></li>
+    </effects>
+  </EcosDaQueda.GovMemeDef>
+
+  <EcosDaQueda.GovMemeDef>
+    <defName>EQ_Gov_NascidosNave</defName>
+    <meme>Shipborn</meme>
+    <summary>Marcos podem ficar até ~10 tiles da borda (a nave leva os agrimensores).</summary>
+    <effects>
+      <li><channel>markerReach</channel><amount>8</amount></li>
+    </effects>
+  </EcosDaQueda.GovMemeDef>
+
+  <EcosDaQueda.GovMemeDef>
+    <defName>EQ_Gov_Desmatamento</defName>
+    <meme>AM_Deforestation</meme>
+    <summary>Tiles de floresta rendem madeira em dobro e metade da prosperidade (a floresta acaba).</summary>
+    <effects>
+      <li><channel>yieldForestWood</channel><amount>1.0</amount></li>
+      <li><channel>yieldForestProsperity</channel><amount>-0.5</amount></li>
+    </effects>
+  </EcosDaQueda.GovMemeDef>
+
+  <EcosDaQueda.GovMemeDef>
+    <defName>EQ_Gov_PrimaziaAgua</defName>
+    <meme>AM_WaterPrimacy</meme>
+    <summary>Tiles com rio rendem o dobro; o Sindicato do Saque (que também diz ser dono da água) vira rival: boa vontade ganha −20%.</summary>
+    <effects>
+      <li><channel>yieldRiver</channel><amount>1.0</amount></li>
+      <li><channel>goodwill</channel><amount>-0.20</amount><faction>EQ_Faction_SindicatoDoSaque</faction></li>
+    </effects>
+  </EcosDaQueda.GovMemeDef>
+
+  <EcosDaQueda.GovMemeDef>
+    <defName>EQ_Gov_FerroVelho</defName>
+    <meme>VME_Scrapper</meme>
+    <summary>O tributo do território traz o dobro de componentes.</summary>
+    <effects>
+      <li><channel>tributeComponents</channel><amount>1.0</amount></li>
+    </effects>
+  </EcosDaQueda.GovMemeDef>
+
+  <EcosDaQueda.GovMemeDef>
+    <defName>EQ_Gov_PreFabricados</defName>
+    <meme>AM_PrefabPreference</meme>
+    <summary>Marcos pagos em aço (metade do número) e prontos na metade do tempo.</summary>
+    <effects>
+      <li><channel>markerSetup</channel><amount>-0.5</amount></li>
+    </effects>
+    <markerSteel>true</markerSteel>
+  </EcosDaQueda.GovMemeDef>
+
+  <EcosDaQueda.GovMemeDef>
+    <defName>EQ_Gov_Pacifista</defName>
+    <meme>VME_Pacifist</meme>
+    <summary>Sem General. Na proclamação, o líder pode negociar com o síndico (Social): se der certo, a nação nasce sem luta; se não, a revolta vem 30% menor.</summary>
+    <blockSeats>
+      <li>general</li>
+    </blockSeats>
+    <negotiateRevolt>true</negotiateRevolt>
+  </EcosDaQueda.GovMemeDef>
+
+  <EcosDaQueda.GovMemeDef>
+    <defName>EQ_Gov_NaoViolencia</defName>
+    <meme>AM_NonViolence</meme>
+    <summary>Como o Pacifista: sem General e revolta negociada.</summary>
+    <blockSeats>
+      <li>general</li>
+    </blockSeats>
+    <negotiateRevolt>true</negotiateRevolt>
+  </EcosDaQueda.GovMemeDef>
+
+  <EcosDaQueda.GovMemeDef>
+    <defName>EQ_Gov_Baluarte</defName>
+    <meme>AM_Bulwark</meme>
+    <summary>Exércitos um pouco mais fortes; postos de ocupação contra a nação reivindicam 30% menos.</summary>
+    <effects>
+      <li><channel>army</channel><amount>0.05</amount></li>
+      <li><channel>borderDefense</channel><amount>0.30</amount></li>
+    </effects>
+  </EcosDaQueda.GovMemeDef>
+
+  <EcosDaQueda.GovMemeDef>
+    <defName>EQ_Gov_ConversaoViolenta</defName>
+    <meme>VME_ViolentConversion</meme>
+    <summary>Vencer a revolta converte 1 a 3 revoltosos caídos à causa ("voluntários").</summary>
+    <convertRevolters>3</convertRevolters>
+  </EcosDaQueda.GovMemeDef>
+
+  <EcosDaQueda.GovMemeDef>
+    <defName>EQ_Gov_Supremacista</defName>
+    <meme>Supremacist</meme>
+    <summary>Revolta 20% maior, mas a vitória dá Fama com todos e a fronteira nasce 1 tile maior ("a região aprendeu").</summary>
+    <effects>
+      <li><channel>revolt</channel><amount>0.20</amount></li>
+      <li><channel>startRadius</channel><amount>1</amount></li>
+    </effects>
+    <foundingFame>10</foundingFame>
+  </EcosDaQueda.GovMemeDef>
+
+  <EcosDaQueda.GovMemeDef>
+    <defName>EQ_Gov_Canibal</defName>
+    <meme>Cannibal</meme>
+    <summary>Na fundação, boa vontade −5 com todos (a notícia do banquete se espalha). Os corpos dos revoltosos ficam na despensa.</summary>
+    <foundingGoodwill>-5</foundingGoodwill>
+  </EcosDaQueda.GovMemeDef>
+
+  <EcosDaQueda.GovMemeDef>
+    <defName>EQ_Gov_Tecnofobia</defName>
+    <meme>VQE_Technophobia</meme>
+    <summary>Sem Ministro da Ciência; na fundação, Forja e Hélice baixam a boa vontade em 10.</summary>
+    <blockSeats>
+      <li>ministro_ciencia</li>
+    </blockSeats>
+    <foundingGoodwill>-10</foundingGoodwill>
+    <foundingGoodwillFactions>
+      <li>EQ_Faction_Forja</li>
+      <li>EQ_Faction_Helice</li>
+    </foundingGoodwillFactions>
+  </EcosDaQueda.GovMemeDef>
+
+  <EcosDaQueda.GovMemeDef>
+    <defName>EQ_Gov_Progressista</defName>
+    <meme>VME_Progressive</meme>
+    <summary>Pesquisa +5% por cadeira ocupada e valendo; o Coro se ofende (boa vontade ganha −10%).</summary>
+    <effects>
+      <li><channel>goodwill</channel><amount>-0.10</amount><faction>EQ_Faction_Coro</faction></li>
+    </effects>
+    <perSeat>
+      <li><channel>research</channel><amount>0.05</amount></li>
+    </perSeat>
+  </EcosDaQueda.GovMemeDef>
+
+  <EcosDaQueda.GovMemeDef>
+    <defName>EQ_Gov_Emancipacao</defName>
+    <meme>VME_Emancipation</meme>
+    <summary>Revoltas 10% menores (quem é livre tem menos do que reclamar).</summary>
+    <effects>
+      <li><channel>revolt</channel><amount>-0.10</amount></li>
+    </effects>
+  </EcosDaQueda.GovMemeDef>
+
+  <EcosDaQueda.GovMemeDef>
+    <defName>EQ_Gov_CorteSangue</defName>
+    <meme>VME_BloodCourt</meme>
+    <summary>Executar um conselheiro dará legitimidade em vez de tirar (legitimidade vem no N3).</summary>
+  </EcosDaQueda.GovMemeDef>
+
+  <EcosDaQueda.GovMemeDef>
+    <defName>EQ_Gov_AlimentacaoSangue</defName>
+    <meme>Bloodfeeding</meme>
+    <summary>Cadeira do Sanguífago de guerra.</summary>
+    <seats>
+      <li>
+        <key>sanguifago</key>
+        <label>sanguífago de guerra</label>
+        <description>Tiro ou Corpo a corpo, precisa ser sanguífago. Os exércitos dele andam à noite: mais fortes.</description>
+        <skills>
+          <li>Shooting</li>
+          <li>Melee</li>
+        </skills>
+        <requireHemogen>true</requireHemogen>
+        <effects>
+          <li><channel>army</channel><amount>0.10</amount></li>
+        </effects>
+      </li>
+    </seats>
+  </EcosDaQueda.GovMemeDef>
+
+  <EcosDaQueda.GovMemeDef>
+    <defName>EQ_Gov_Inumano</defName>
+    <meme>Inhuman</meme>
+    <summary>Revoltas 15% menores (os vizinhos fogem antes); na fundação, boa vontade −10 com todos.</summary>
+    <effects>
+      <li><channel>revolt</channel><amount>-0.15</amount></li>
+    </effects>
+    <foundingGoodwill>-10</foundingGoodwill>
+  </EcosDaQueda.GovMemeDef>
+
+  <EcosDaQueda.GovMemeDef>
+    <defName>EQ_Gov_Escuridao</defName>
+    <meme>Darkness</meme>
+    <summary>Exércitos um pouco mais fortes (atacam à noite).</summary>
+    <effects>
+      <li><channel>army</channel><amount>0.05</amount></li>
+    </effects>
+  </EcosDaQueda.GovMemeDef>
+
+  <EcosDaQueda.GovMemeDef>
+    <defName>EQ_Gov_Culpado</defName>
+    <meme>Guilty</meme>
+    <summary>Perder uma revolta dará legitimidade (expiação), quando houver legitimidade (N3).</summary>
+  </EcosDaQueda.GovMemeDef>
+
+  <EcosDaQueda.GovMemeDef>
+    <defName>EQ_Gov_ConcentracaoPsiquica</defName>
+    <meme>VME_PsychicFocus</meme>
+    <summary>O Coro aprecia (boa vontade ganha +10%); cadeira do Psíquico de corte.</summary>
+    <seats>
+      <li>
+        <key>psiquico</key>
+        <label>psíquico de corte</label>
+        <description>Social, precisa de psicolink. Fala a língua do Coro: boa vontade ganha com ele bem maior.</description>
+        <skills>
+          <li>Social</li>
+        </skills>
+        <requirePsylink>true</requirePsylink>
+        <effects>
+          <li><channel>goodwill</channel><amount>0.30</amount><faction>EQ_Faction_Coro</faction></li>
+        </effects>
+      </li>
+    </seats>
+    <effects>
+      <li><channel>goodwill</channel><amount>0.10</amount><faction>EQ_Faction_Coro</faction></li>
+    </effects>
+  </EcosDaQueda.GovMemeDef>
+
+  <!-- ============================================================ 4. Estruturas (N2c): uma regra pequena cada -->
+
+  <EcosDaQueda.GovMemeDef>
+    <defName>EQ_Gov_Teista_Structure_TheistEmbodied</defName>
+    <meme>Structure_TheistEmbodied</meme>
+    <summary>Cadeira do Sumo sacerdote (guia moral).</summary>
+    <seats>
+      <li>
+        <key>sumo_sacerdote</key>
+        <label>sumo sacerdote</label>
+        <description>Função de guia moral. A fé segura o povo: revoltas menores e cerimônias um pouco mais baratas.</description>
+        <skills>
+          <li>Social</li>
+        </skills>
+        <role>IdeoRole_Moralist</role>
+        <effects>
+          <li><channel>revolt</channel><amount>-0.10</amount></li>
+          <li><channel>ceremony</channel><amount>-0.05</amount></li>
+        </effects>
+      </li>
+    </seats>
+  </EcosDaQueda.GovMemeDef>
+
+  <EcosDaQueda.GovMemeDef>
+    <defName>EQ_Gov_Teista_Structure_TheistAbstract</defName>
+    <meme>Structure_TheistAbstract</meme>
+    <summary>Cadeira do Sumo sacerdote (guia moral).</summary>
+    <seats>
+      <li>
+        <key>sumo_sacerdote</key>
+        <label>sumo sacerdote</label>
+        <description>Função de guia moral. A fé segura o povo: revoltas menores e cerimônias um pouco mais baratas.</description>
+        <skills>
+          <li>Social</li>
+        </skills>
+        <role>IdeoRole_Moralist</role>
+        <effects>
+          <li><channel>revolt</channel><amount>-0.10</amount></li>
+          <li><channel>ceremony</channel><amount>-0.05</amount></li>
+        </effects>
+      </li>
+    </seats>
+  </EcosDaQueda.GovMemeDef>
+
+  <EcosDaQueda.GovMemeDef>
+    <defName>EQ_Gov_Teista_VME_Structure_Pantheism</defName>
+    <meme>VME_Structure_Pantheism</meme>
+    <summary>Cadeira do Sumo sacerdote (guia moral).</summary>
+    <seats>
+      <li>
+        <key>sumo_sacerdote</key>
+        <label>sumo sacerdote</label>
+        <description>Função de guia moral. A fé segura o povo: revoltas menores e cerimônias um pouco mais baratas.</description>
+        <skills>
+          <li>Social</li>
+        </skills>
+        <role>IdeoRole_Moralist</role>
+        <effects>
+          <li><channel>revolt</channel><amount>-0.10</amount></li>
+          <li><channel>ceremony</channel><amount>-0.05</amount></li>
+        </effects>
+      </li>
+    </seats>
+  </EcosDaQueda.GovMemeDef>
+
+  <EcosDaQueda.GovMemeDef>
+    <defName>EQ_Gov_Teista_VME_Structure_Omnism</defName>
+    <meme>VME_Structure_Omnism</meme>
+    <summary>Cadeira do Sumo sacerdote (guia moral).</summary>
+    <seats>
+      <li>
+        <key>sumo_sacerdote</key>
+        <label>sumo sacerdote</label>
+        <description>Função de guia moral. A fé segura o povo: revoltas menores e cerimônias um pouco mais baratas.</description>
+        <skills>
+          <li>Social</li>
+        </skills>
+        <role>IdeoRole_Moralist</role>
+        <effects>
+          <li><channel>revolt</channel><amount>-0.10</amount></li>
+          <li><channel>ceremony</channel><amount>-0.05</amount></li>
+        </effects>
+      </li>
+    </seats>
+  </EcosDaQueda.GovMemeDef>
+
+  <EcosDaQueda.GovMemeDef>
+    <defName>EQ_Gov_Teista_AM_Structure_Kemetism</defName>
+    <meme>AM_Structure_Kemetism</meme>
+    <summary>Cadeira do Sumo sacerdote (guia moral).</summary>
+    <seats>
+      <li>
+        <key>sumo_sacerdote</key>
+        <label>sumo sacerdote</label>
+        <description>Função de guia moral. A fé segura o povo: revoltas menores e cerimônias um pouco mais baratas.</description>
+        <skills>
+          <li>Social</li>
+        </skills>
+        <role>IdeoRole_Moralist</role>
+        <effects>
+          <li><channel>revolt</channel><amount>-0.10</amount></li>
+          <li><channel>ceremony</channel><amount>-0.05</amount></li>
+        </effects>
+      </li>
+    </seats>
+  </EcosDaQueda.GovMemeDef>
+
+  <EcosDaQueda.GovMemeDef>
+    <defName>EQ_Gov_Teista_VME_Structure_Shintaoism</defName>
+    <meme>VME_Structure_Shintaoism</meme>
+    <summary>Cadeira do Sumo sacerdote (guia moral).</summary>
+    <seats>
+      <li>
+        <key>sumo_sacerdote</key>
+        <label>sumo sacerdote</label>
+        <description>Função de guia moral. A fé segura o povo: revoltas menores e cerimônias um pouco mais baratas.</description>
+        <skills>
+          <li>Social</li>
+        </skills>
+        <role>IdeoRole_Moralist</role>
+        <effects>
+          <li><channel>revolt</channel><amount>-0.10</amount></li>
+          <li><channel>ceremony</channel><amount>-0.05</amount></li>
+        </effects>
+      </li>
+    </seats>
+  </EcosDaQueda.GovMemeDef>
+
+  <EcosDaQueda.GovMemeDef>
+    <defName>EQ_Gov_Teista_VFEM2_Structure_Norse</defName>
+    <meme>VFEM2_Structure_Norse</meme>
+    <summary>Cadeira do Sumo sacerdote (guia moral).</summary>
+    <seats>
+      <li>
+        <key>sumo_sacerdote</key>
+        <label>sumo sacerdote</label>
+        <description>Função de guia moral. A fé segura o povo: revoltas menores e cerimônias um pouco mais baratas.</description>
+        <skills>
+          <li>Social</li>
+        </skills>
+        <role>IdeoRole_Moralist</role>
+        <effects>
+          <li><channel>revolt</channel><amount>-0.10</amount></li>
+          <li><channel>ceremony</channel><amount>-0.05</amount></li>
+        </effects>
+      </li>
+    </seats>
+  </EcosDaQueda.GovMemeDef>
+
+  <EcosDaQueda.GovMemeDef>
+    <defName>EQ_Gov_Teista_AM_Structure_Mesoamerican</defName>
+    <meme>AM_Structure_Mesoamerican</meme>
+    <summary>Cadeira do Sumo sacerdote (guia moral).</summary>
+    <seats>
+      <li>
+        <key>sumo_sacerdote</key>
+        <label>sumo sacerdote</label>
+        <description>Função de guia moral. A fé segura o povo: revoltas menores e cerimônias um pouco mais baratas.</description>
+        <skills>
+          <li>Social</li>
+        </skills>
+        <role>IdeoRole_Moralist</role>
+        <effects>
+          <li><channel>revolt</channel><amount>-0.10</amount></li>
+          <li><channel>ceremony</channel><amount>-0.05</amount></li>
+        </effects>
+      </li>
+    </seats>
+  </EcosDaQueda.GovMemeDef>
+
+  <EcosDaQueda.GovMemeDef>
+    <defName>EQ_Gov_Teista_Structure_OriginChristian</defName>
+    <meme>Structure_OriginChristian</meme>
+    <summary>Cadeira do Sumo sacerdote (guia moral).</summary>
+    <seats>
+      <li>
+        <key>sumo_sacerdote</key>
+        <label>sumo sacerdote</label>
+        <description>Função de guia moral. A fé segura o povo: revoltas menores e cerimônias um pouco mais baratas.</description>
+        <skills>
+          <li>Social</li>
+        </skills>
+        <role>IdeoRole_Moralist</role>
+        <effects>
+          <li><channel>revolt</channel><amount>-0.10</amount></li>
+          <li><channel>ceremony</channel><amount>-0.05</amount></li>
+        </effects>
+      </li>
+    </seats>
+  </EcosDaQueda.GovMemeDef>
+
+  <EcosDaQueda.GovMemeDef>
+    <defName>EQ_Gov_Teista_Structure_OriginIslamic</defName>
+    <meme>Structure_OriginIslamic</meme>
+    <summary>Cadeira do Sumo sacerdote (guia moral).</summary>
+    <seats>
+      <li>
+        <key>sumo_sacerdote</key>
+        <label>sumo sacerdote</label>
+        <description>Função de guia moral. A fé segura o povo: revoltas menores e cerimônias um pouco mais baratas.</description>
+        <skills>
+          <li>Social</li>
+        </skills>
+        <role>IdeoRole_Moralist</role>
+        <effects>
+          <li><channel>revolt</channel><amount>-0.10</amount></li>
+          <li><channel>ceremony</channel><amount>-0.05</amount></li>
+        </effects>
+      </li>
+    </seats>
+  </EcosDaQueda.GovMemeDef>
+
+  <EcosDaQueda.GovMemeDef>
+    <defName>EQ_Gov_Teista_Structure_OriginBuddhist</defName>
+    <meme>Structure_OriginBuddhist</meme>
+    <summary>Cadeira do Sumo sacerdote (guia moral).</summary>
+    <seats>
+      <li>
+        <key>sumo_sacerdote</key>
+        <label>sumo sacerdote</label>
+        <description>Função de guia moral. A fé segura o povo: revoltas menores e cerimônias um pouco mais baratas.</description>
+        <skills>
+          <li>Social</li>
+        </skills>
+        <role>IdeoRole_Moralist</role>
+        <effects>
+          <li><channel>revolt</channel><amount>-0.10</amount></li>
+          <li><channel>ceremony</channel><amount>-0.05</amount></li>
+        </effects>
+      </li>
+    </seats>
+  </EcosDaQueda.GovMemeDef>
+
+  <EcosDaQueda.GovMemeDef>
+    <defName>EQ_Gov_Teista_Structure_OriginHindu</defName>
+    <meme>Structure_OriginHindu</meme>
+    <summary>Cadeira do Sumo sacerdote (guia moral).</summary>
+    <seats>
+      <li>
+        <key>sumo_sacerdote</key>
+        <label>sumo sacerdote</label>
+        <description>Função de guia moral. A fé segura o povo: revoltas menores e cerimônias um pouco mais baratas.</description>
+        <skills>
+          <li>Social</li>
+        </skills>
+        <role>IdeoRole_Moralist</role>
+        <effects>
+          <li><channel>revolt</channel><amount>-0.10</amount></li>
+          <li><channel>ceremony</channel><amount>-0.05</amount></li>
+        </effects>
+      </li>
+    </seats>
+  </EcosDaQueda.GovMemeDef>
+
+  <EcosDaQueda.GovMemeDef>
+    <defName>EQ_Gov_Teista_AM_Structure_Jewish</defName>
+    <meme>AM_Structure_Jewish</meme>
+    <summary>Cadeira do Sumo sacerdote (guia moral).</summary>
+    <seats>
+      <li>
+        <key>sumo_sacerdote</key>
+        <label>sumo sacerdote</label>
+        <description>Função de guia moral. A fé segura o povo: revoltas menores e cerimônias um pouco mais baratas.</description>
+        <skills>
+          <li>Social</li>
+        </skills>
+        <role>IdeoRole_Moralist</role>
+        <effects>
+          <li><channel>revolt</channel><amount>-0.10</amount></li>
+          <li><channel>ceremony</channel><amount>-0.05</amount></li>
+        </effects>
+      </li>
+    </seats>
+  </EcosDaQueda.GovMemeDef>
+
+  <EcosDaQueda.GovMemeDef>
+    <defName>EQ_Gov_Teista_AM_Structure_Sikhism</defName>
+    <meme>AM_Structure_Sikhism</meme>
+    <summary>Cadeira do Sumo sacerdote (guia moral).</summary>
+    <seats>
+      <li>
+        <key>sumo_sacerdote</key>
+        <label>sumo sacerdote</label>
+        <description>Função de guia moral. A fé segura o povo: revoltas menores e cerimônias um pouco mais baratas.</description>
+        <skills>
+          <li>Social</li>
+        </skills>
+        <role>IdeoRole_Moralist</role>
+        <effects>
+          <li><channel>revolt</channel><amount>-0.10</amount></li>
+          <li><channel>ceremony</channel><amount>-0.05</amount></li>
+        </effects>
+      </li>
+    </seats>
+  </EcosDaQueda.GovMemeDef>
+
+  <EcosDaQueda.GovMemeDef>
+    <defName>EQ_Gov_Teista_AM_Structure_Jainism</defName>
+    <meme>AM_Structure_Jainism</meme>
+    <summary>Cadeira do Sumo sacerdote (guia moral).</summary>
+    <seats>
+      <li>
+        <key>sumo_sacerdote</key>
+        <label>sumo sacerdote</label>
+        <description>Função de guia moral. A fé segura o povo: revoltas menores e cerimônias um pouco mais baratas.</description>
+        <skills>
+          <li>Social</li>
+        </skills>
+        <role>IdeoRole_Moralist</role>
+        <effects>
+          <li><channel>revolt</channel><amount>-0.10</amount></li>
+          <li><channel>ceremony</channel><amount>-0.05</amount></li>
+        </effects>
+      </li>
+    </seats>
+  </EcosDaQueda.GovMemeDef>
+
+  <EcosDaQueda.GovMemeDef>
+    <defName>EQ_Gov_Secular_AM_Structure_Atheist</defName>
+    <meme>AM_Structure_Atheist</meme>
+    <summary>Sem sacerdote: cadeira do Secretário de Estado.</summary>
+    <seats>
+      <li>
+        <key>secretario</key>
+        <label>secretário de Estado</label>
+        <description>Intelectual. Papelada, carimbo e planilha: um pouco de fronteira, tributo e pesquisa.</description>
+        <skills>
+          <li>Intellectual</li>
+        </skills>
+        <effects>
+          <li><channel>frontier</channel><amount>0.05</amount></li>
+          <li><channel>tribute</channel><amount>0.05</amount></li>
+          <li><channel>research</channel><amount>0.03</amount></li>
+        </effects>
+      </li>
+    </seats>
+  </EcosDaQueda.GovMemeDef>
+
+  <EcosDaQueda.GovMemeDef>
+    <defName>EQ_Gov_Secular_VME_Structure_Agnosticism</defName>
+    <meme>VME_Structure_Agnosticism</meme>
+    <summary>Sem sacerdote: cadeira do Secretário de Estado.</summary>
+    <seats>
+      <li>
+        <key>secretario</key>
+        <label>secretário de Estado</label>
+        <description>Intelectual. Papelada, carimbo e planilha: um pouco de fronteira, tributo e pesquisa.</description>
+        <skills>
+          <li>Intellectual</li>
+        </skills>
+        <effects>
+          <li><channel>frontier</channel><amount>0.05</amount></li>
+          <li><channel>tribute</channel><amount>0.05</amount></li>
+          <li><channel>research</channel><amount>0.03</amount></li>
+        </effects>
+      </li>
+    </seats>
+  </EcosDaQueda.GovMemeDef>
+
+  <EcosDaQueda.GovMemeDef>
+    <defName>EQ_Gov_Secular_VME_Structure_SecularSpirituality</defName>
+    <meme>VME_Structure_SecularSpirituality</meme>
+    <summary>Sem sacerdote: cadeira do Secretário de Estado.</summary>
+    <seats>
+      <li>
+        <key>secretario</key>
+        <label>secretário de Estado</label>
+        <description>Intelectual. Papelada, carimbo e planilha: um pouco de fronteira, tributo e pesquisa.</description>
+        <skills>
+          <li>Intellectual</li>
+        </skills>
+        <effects>
+          <li><channel>frontier</channel><amount>0.05</amount></li>
+          <li><channel>tribute</channel><amount>0.05</amount></li>
+          <li><channel>research</channel><amount>0.03</amount></li>
+        </effects>
+      </li>
+    </seats>
+  </EcosDaQueda.GovMemeDef>
+
+  <EcosDaQueda.GovMemeDef>
+    <defName>EQ_Gov_Animista</defName>
+    <meme>Structure_Animist</meme>
+    <summary>Cadeira do Guardião da Terra (especialista de plantio).</summary>
+    <seats>
+      <li>
+        <key>guardiao_terra</key>
+        <label>guardião da terra</label>
+        <description>Função de especialista de plantio. Os tiles verdes do território (floresta, prado, mata) rendem bem mais comida, madeira e prosperidade.</description>
+        <skills>
+          <li>Plants</li>
+        </skills>
+        <role>IdeoRole_PlantSpecialist</role>
+        <effects>
+          <li><channel>yieldGreen</channel><amount>0.50</amount></li>
+        </effects>
+      </li>
+    </seats>
+  </EcosDaQueda.GovMemeDef>
+
+  <EcosDaQueda.GovMemeDef>
+    <defName>EQ_Gov_Arquista</defName>
+    <meme>Structure_Archist</meme>
+    <summary>Cadeira do Ministro da Ciência (especialista de pesquisa); o Silêncio aprecia (boa vontade ganha +10%).</summary>
+    <seats>
+      <li>
+        <key>ministro_ciencia</key>
+        <label>ministro da ciência</label>
+        <description>Função de especialista de pesquisa. Pesquisa mais rápida na colônia.</description>
+        <skills>
+          <li>Intellectual</li>
+        </skills>
+        <role>IdeoRole_ResearchSpecialist</role>
+        <effects>
+          <li><channel>research</channel><amount>0.10</amount></li>
+        </effects>
+      </li>
+    </seats>
+    <effects>
+      <li><channel>goodwill</channel><amount>0.10</amount><faction>EQ_Faction_Silencio</faction></li>
+    </effects>
+  </EcosDaQueda.GovMemeDef>
+
+  <EcosDaQueda.GovMemeDef>
+    <defName>EQ_Gov_Oculta_VME_Structure_ChthonianCult</defName>
+    <meme>VME_Structure_ChthonianCult</meme>
+    <summary>Cadeira do Oráculo; o Silêncio vigia a nação (boa vontade ganha −10%).</summary>
+    <seats>
+      <li>
+        <key>oraculo</key>
+        <label>oráculo</label>
+        <description>Intelectual. Vê o que vem: algumas invasões desistem antes de sair, e as revoltas um pouco menores.</description>
+        <skills>
+          <li>Intellectual</li>
+        </skills>
+        <effects>
+          <li><channel>invasionVeto</channel><amount>0.15</amount></li>
+          <li><channel>revolt</channel><amount>-0.05</amount></li>
+        </effects>
+      </li>
+    </seats>
+    <effects>
+      <li><channel>goodwill</channel><amount>-0.10</amount><faction>EQ_Faction_Silencio</faction></li>
+    </effects>
+  </EcosDaQueda.GovMemeDef>
+
+  <EcosDaQueda.GovMemeDef>
+    <defName>EQ_Gov_Oculta_AM_Structure_Horaxian</defName>
+    <meme>AM_Structure_Horaxian</meme>
+    <summary>Cadeira do Oráculo; o Silêncio vigia a nação (boa vontade ganha −10%).</summary>
+    <seats>
+      <li>
+        <key>oraculo</key>
+        <label>oráculo</label>
+        <description>Intelectual. Vê o que vem: algumas invasões desistem antes de sair, e as revoltas um pouco menores.</description>
+        <skills>
+          <li>Intellectual</li>
+        </skills>
+        <effects>
+          <li><channel>invasionVeto</channel><amount>0.15</amount></li>
+          <li><channel>revolt</channel><amount>-0.05</amount></li>
+        </effects>
+      </li>
+    </seats>
+    <effects>
+      <li><channel>goodwill</channel><amount>-0.10</amount><faction>EQ_Faction_Silencio</faction></li>
+    </effects>
+  </EcosDaQueda.GovMemeDef>
+
+  <EcosDaQueda.GovMemeDef>
+    <defName>EQ_Gov_Oculta_VME_Structure_Eschatologism</defName>
+    <meme>VME_Structure_Eschatologism</meme>
+    <summary>Cadeira do Oráculo; o Silêncio vigia a nação (boa vontade ganha −10%).</summary>
+    <seats>
+      <li>
+        <key>oraculo</key>
+        <label>oráculo</label>
+        <description>Intelectual. Vê o que vem: algumas invasões desistem antes de sair, e as revoltas um pouco menores.</description>
+        <skills>
+          <li>Intellectual</li>
+        </skills>
+        <effects>
+          <li><channel>invasionVeto</channel><amount>0.15</amount></li>
+          <li><channel>revolt</channel><amount>-0.05</amount></li>
+        </effects>
+      </li>
+    </seats>
+    <effects>
+      <li><channel>goodwill</channel><amount>-0.10</amount><faction>EQ_Faction_Silencio</faction></li>
+    </effects>
+  </EcosDaQueda.GovMemeDef>
+
+  <EcosDaQueda.GovMemeDef>
+    <defName>EQ_Gov_Oculta_VME_Structure_Esotericism</defName>
+    <meme>VME_Structure_Esotericism</meme>
+    <summary>Cadeira do Oráculo; o Silêncio vigia a nação (boa vontade ganha −10%).</summary>
+    <seats>
+      <li>
+        <key>oraculo</key>
+        <label>oráculo</label>
+        <description>Intelectual. Vê o que vem: algumas invasões desistem antes de sair, e as revoltas um pouco menores.</description>
+        <skills>
+          <li>Intellectual</li>
+        </skills>
+        <effects>
+          <li><channel>invasionVeto</channel><amount>0.15</amount></li>
+          <li><channel>revolt</channel><amount>-0.05</amount></li>
+        </effects>
+      </li>
+    </seats>
+    <effects>
+      <li><channel>goodwill</channel><amount>-0.10</amount><faction>EQ_Faction_Silencio</faction></li>
+    </effects>
+  </EcosDaQueda.GovMemeDef>
+
+  <EcosDaQueda.GovMemeDef>
+    <defName>EQ_Gov_Oculta_AM_Structure_FleshCult</defName>
+    <meme>AM_Structure_FleshCult</meme>
+    <summary>Cadeira do Oráculo; o Silêncio vigia a nação (boa vontade ganha −10%).</summary>
+    <seats>
+      <li>
+        <key>oraculo</key>
+        <label>oráculo</label>
+        <description>Intelectual. Vê o que vem: algumas invasões desistem antes de sair, e as revoltas um pouco menores.</description>
+        <skills>
+          <li>Intellectual</li>
+        </skills>
+        <effects>
+          <li><channel>invasionVeto</channel><amount>0.15</amount></li>
+          <li><channel>revolt</channel><amount>-0.05</amount></li>
+        </effects>
+      </li>
+    </seats>
+    <effects>
+      <li><channel>goodwill</channel><amount>-0.10</amount><faction>EQ_Faction_Silencio</faction></li>
+    </effects>
+  </EcosDaQueda.GovMemeDef>
+
+  <EcosDaQueda.GovMemeDef>
+    <defName>EQ_Gov_Oculta_VME_Structure_Serketist</defName>
+    <meme>VME_Structure_Serketist</meme>
+    <summary>Cadeira do Oráculo; o Silêncio vigia a nação (boa vontade ganha −10%).</summary>
+    <seats>
+      <li>
+        <key>oraculo</key>
+        <label>oráculo</label>
+        <description>Intelectual. Vê o que vem: algumas invasões desistem antes de sair, e as revoltas um pouco menores.</description>
+        <skills>
+          <li>Intellectual</li>
+        </skills>
+        <effects>
+          <li><channel>invasionVeto</channel><amount>0.15</amount></li>
+          <li><channel>revolt</channel><amount>-0.05</amount></li>
+        </effects>
+      </li>
+    </seats>
+    <effects>
+      <li><channel>goodwill</channel><amount>-0.10</amount><faction>EQ_Faction_Silencio</faction></li>
+    </effects>
+  </EcosDaQueda.GovMemeDef>
+
+  <EcosDaQueda.GovMemeDef>
+    <defName>EQ_Gov_Bacanal</defName>
+    <meme>VME_Structure_Bacchanalianism</meme>
+    <summary>Conselho feliz (humor médio 60%+) vale +10%; triste (abaixo de 40%), −20%.</summary>
+    <councilMoodScaled>true</councilMoodScaled>
+  </EcosDaQueda.GovMemeDef>
+
+  <EcosDaQueda.GovMemeDef>
+    <defName>EQ_Gov_Neolitico</defName>
+    <meme>AM_Structure_Neolithic</meme>
+    <summary>Revoltas 15% menores (vizinhos com lanças); sem Ministro da Ciência.</summary>
+    <effects>
+      <li><channel>revolt</channel><amount>-0.15</amount></li>
+    </effects>
+    <blockSeats>
+      <li>ministro_ciencia</li>
+    </blockSeats>
+  </EcosDaQueda.GovMemeDef>
+
+  <EcosDaQueda.GovMemeDef>
+    <defName>EQ_Gov_Catador</defName>
+    <meme>AM_Structure_Scavenger</meme>
+    <summary>O tributo do território traz 50% mais componentes.</summary>
+    <effects>
+      <li><channel>tributeComponents</channel><amount>0.5</amount></li>
+    </effects>
+  </EcosDaQueda.GovMemeDef>
+
+  <EcosDaQueda.GovMemeDef>
+    <defName>EQ_Gov_Steampunk</defName>
+    <meme>AM_Structure_SteampunkRevival</meme>
+    <summary>Bancadas da colônia 5% mais rápidas (vapor e orgulho).</summary>
+    <effects>
+      <li><channel>workSpeed</channel><amount>0.05</amount></li>
+    </effects>
+  </EcosDaQueda.GovMemeDef>
+
+</Defs>

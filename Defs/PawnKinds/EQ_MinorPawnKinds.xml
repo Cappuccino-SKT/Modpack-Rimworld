@@ -784,7 +784,7 @@
     </modExtensions>
   </PawnKindDef>
 
-  <PawnKindDef ParentName="MercenaryMidTierBase">
+  <PawnKindDef Name="EQ_Lodo_BrutaBase" ParentName="MercenaryMidTierBase">
     <defName>EQ_Lodo_Bruta</defName>
     <label>bruta</label>
     <labelPlural>brutas</labelPlural>
@@ -810,10 +810,18 @@
     <initialResistanceRange>18~30</initialResistanceRange>
   </PawnKindDef>
 
+  <!-- Comerciante das caravanas do Lodo (o grupo Trader exige um tipo com trader=true). -->
+  <PawnKindDef ParentName="EQ_Lodo_BrutaBase">
+    <defName>EQ_Lodo_Feirante</defName>
+    <label>feirante do lodo</label>
+    <labelPlural>feirantes do lodo</labelPlural>
+    <trader>true</trader>
+  </PawnKindDef>
+
   <!-- =====================================================================
        A COLMEIA ERGUIDA (insetoides). Operários e soldados machos; a rainha é a líder.
        ===================================================================== -->
-  <PawnKindDef ParentName="MercenaryMidTierBase">
+  <PawnKindDef Name="EQ_Colmeia_OperarioBase" ParentName="MercenaryMidTierBase">
     <defName>EQ_Colmeia_Operario</defName>
     <label>operário da colmeia</label>
     <labelPlural>operários da colmeia</labelPlural>
@@ -838,6 +846,14 @@
     </weaponTags>
     <techHediffsChance>0</techHediffsChance>
     <initialResistanceRange>15~25</initialResistanceRange>
+  </PawnKindDef>
+
+  <!-- Comerciante das caravanas da Colmeia (o grupo Trader exige um tipo com trader=true). -->
+  <PawnKindDef ParentName="EQ_Colmeia_OperarioBase">
+    <defName>EQ_Colmeia_Mercador</defName>
+    <label>intermediário da colmeia</label>
+    <labelPlural>intermediários da colmeia</labelPlural>
+    <trader>true</trader>
   </PawnKindDef>
 
   <PawnKindDef ParentName="MercenaryMidTierBase">

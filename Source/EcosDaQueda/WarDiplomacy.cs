@@ -273,6 +273,9 @@ namespace EcosDaQueda
             foreach (var army in c.ArmiesOf(lose)) army.morale = Math.Max(0f, army.morale - 0.1f);
             c.lastBorderFront[Key(win, lose)] = Find.TickManager.TicksGame;
             string s = lose.Name + " recua: guarnição de " + (lostAt?.LabelCap ?? "?") + " -" + loss + ", tesouro -150; " + win.Name + " +200.";
+            // F5: o vencedor planta um posto de ocupação na terra do perdedor (e derruba os postos do perdedor por perto).
+            try { s += " Ocupação: " + EQOccupation.OnBorderWin(f.Tile, win, lose) + "."; }
+            catch (Exception ex) { Log.ErrorOnce("[Ecos da Queda] Ocupação (F5): " + ex, 0x4E51F5); }
             c.Log("Fim da frente de fronteira: " + s, false);
             return s;
         }

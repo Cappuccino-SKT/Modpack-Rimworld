@@ -261,6 +261,8 @@ namespace EcosDaQueda
             if (!HasPrice(d, leader.MapHeld, out string missing)) return "Falta o preço: " + missing;
             string heg = EQAllegiance.SubmitBlock(power);
             if (heg != null) return heg;
+            string vote = EQGov.VoteBlock("jurar lealdade");
+            if (vote != null) return vote;
             return null;
         }
 

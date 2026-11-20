@@ -110,6 +110,8 @@ namespace EcosDaQueda
             if (adults < d.minAdults) return "Um país precisa de súditos: faltam " + (d.minAdults - adults) + " adultos livres (mínimo " + d.minAdults + ").";
             if (EQLeader.LeaderRole == null) return "A ideologia da colônia não tem o cargo de líder.";
             if (EQLeader.Candidates().Count == 0) return "Ninguém pode ser líder: é preciso um adulto livre que siga a ideologia e cumpra as exigências do cargo de líder.";
+            string vote = EQGov.VoteBlock("proclamar um líder");
+            if (vote != null) return vote;
             return null;
         }
 
@@ -170,6 +172,8 @@ namespace EcosDaQueda
         public List<Pawn> revolters = new List<Pawn>();
         public string lastOutcome;
         public bool faithPending;
+        /// <summary>N2c (Pacifista): já tentou negociar nesta proclamação.</summary>
+        public bool negotiated;
 
         public WorldComponent_EQNation(World world) : base(world) { }
 
@@ -209,6 +213,7 @@ namespace EcosDaQueda
             Scribe_Collections.Look(ref revolters, "revolters", LookMode.Reference);
             Scribe_Values.Look(ref lastOutcome, "lastOutcome");
             Scribe_Values.Look(ref faithPending, "faithPending");
+            Scribe_Values.Look(ref negotiated, "negotiated");
             if (Scribe.mode == LoadSaveMode.PostLoadInit)
             {
                 if (revolters == null) revolters = new List<Pawn>();
@@ -231,6 +236,7 @@ namespace EcosDaQueda
             map = th?.Map ?? p.MapHeld ?? Find.AnyPlayerHomeMap;
             stage = NationStage.Proclaimed;
             bribed = false;
+            negotiated = false;
             throneTicks = 0;
             revolters.Clear();
             points = EQNation.RevoltPoints(map, failures);
@@ -270,6 +276,34 @@ namespace EcosDaQueda
             EQNation.LastReport = "suborno de " + cost + " de prata: -" + (cut * 100f).ToString("0") + "% (" + points.ToString("0") + " pontos)";
             Messages.Message("Parte dos vizinhos descobriu que o seu país tem bons argumentos (" + cost + " de prata). A revolta vem " + (cut * 100f).ToString("0") + "% menor.",
                 MessageTypeDefOf.NeutralEvent, false);
+            return null;
+        }
+
+        /// <summary>N2c (Pacifista, Voto de não violência): chance de negociar pela perícia Social do líder.</summary>
+        public float NegotiateChance => Mathf.Clamp(0.1f + 0.04f * (leader?.skills?.GetSkill(SkillDefOf.Social)?.Level ?? 0), 0.1f, 0.8f);
+
+        /// <summary>Negociar com o síndico: sucesso funda a nação sem luta; fracasso traz a revolta 30% menor. force: resultado fixo (testes).</summary>
+        public string Negotiate(bool? force = null)
+        {
+            if (stage != NationStage.Proclaimed) return "Não há revolta para negociar.";
+            if (negotiated) return "O síndico já ouviu a proposta e não quer ouvir de novo.";
+            if (!EQGov.Rule(g => g.negotiateRevolt)) return "A ideologia não negocia (só Pacifista ou Voto de não violência).";
+            negotiated = true;
+            float ch = NegotiateChance;
+            bool ok = force ?? Rand.Chance(ch);
+            if (ok)
+            {
+                EQNation.LastReport = "negociação aceita (chance " + (ch * 100f).ToString("0") + "%)";
+                Messages.Message((leader?.LabelShort ?? "O líder") + " conversou com o síndico por horas. A ata diz \"acordo de convivência\"; os vizinhos voltam para casa.",
+                    MessageTypeDefOf.PositiveEvent, false);
+                Victory();
+            }
+            else
+            {
+                points *= 0.7f;
+                EQNation.LastReport = "negociação recusada (chance " + (ch * 100f).ToString("0") + "%): revolta 30% menor (" + points.ToString("0") + " pontos)";
+                Messages.Message("O síndico rasgou a proposta, mas parte dos vizinhos ficou em casa. A revolta vem 30% menor.", MessageTypeDefOf.NeutralEvent, false);
+            }
             return null;
         }
 
@@ -386,6 +420,8 @@ namespace EcosDaQueda
                 + "\n\n" + pf.Name + " agora é uma nação, com " + (leader?.LabelShort ?? "o líder proclamado") + " no trono. "
                 + "A colônia passa a ter território e fronteira, e as potências aceitam ouvir propostas de vassalagem (aba Reputação).",
                 LetterDefOf.PositiveEvent, leader != null && leader.Spawned ? new LookTargets(leader) : LookTargets.Invalid);
+            EQGov.OnFounding(this);
+            EQCouncil.Dirty();
             if (!EQLeader.SuppressDialogs && Find.WindowStack != null)
                 Find.WindowStack.Add(new Dialog_NamePlayerFaction());
             EQNationFaith.BeginFounding(this);
@@ -452,6 +488,13 @@ namespace EcosDaQueda
                 else if (EQPlayerFrontier.SilverOn(c.map ?? Find.AnyPlayerHomeMap) < cost) bribe.Disable("falta prata");
                 bribe.action = () => { c.Bribe(); };
                 yield return bribe;
+                if (EQGov.Rule(g => g.negotiateRevolt))
+                {
+                    var talk = new DiaOption("Negociar com o síndico (" + (c.NegotiateChance * 100f).ToString("0") + "% pela perícia Social de " + (c.leader?.LabelShort ?? "o líder") + "; se falhar, a revolta vem 30% menor)") { resolveTree = true };
+                    if (c.negotiated) talk.Disable("já negociou");
+                    talk.action = () => { c.Negotiate(); if (c.stage != NationStage.Proclaimed) Find.LetterStack.RemoveLetter(this); };
+                    yield return talk;
+                }
                 var give = new DiaOption("Desistir da proclamação") { resolveTree = true };
                 give.action = () => { c.GiveUp(); Find.LetterStack.RemoveLetter(this); };
                 yield return give;

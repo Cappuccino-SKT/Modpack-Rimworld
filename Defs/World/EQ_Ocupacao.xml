@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <!--
+    F5 (MUNDO.md › Resultado do F5): exército toma fronteira. Quem vence uma frente de fronteira (WarDiplomacy.cs) planta um
+    posto de ocupação no tile do perdedor mais perto da frente (até searchRadius; a frente pode ser o meio do
+    caminho entre as cidades quando os territórios ainda não se encostam; sem tile do perdedor, o posto fica na própria frente). O posto é uma fonte de território do
+    vencedor no Hegemony: prosperidade = maior das cidades envolvidas × strengthFactor (no mínimo minProsperity), raio radius,
+    radiusGrown depois de growDays. Vencer uma frente a até retakeDistance de um posto do perdedor derruba o posto.
+    Até maxPerFaction postos por facção (o mais antigo é abandonado). Contra o jogador, o raio cai pelo canal borderDefense
+    (General 25%, Baluarte 30%, até maxPlayerDefense). Valores propostos; ajustar aqui.
+  -->
+  <EcosDaQueda.OccupationDef>
+    <defName>EQ_Ocupacao</defName>
+    <label>ocupação de fronteira</label>
+    <radius>1.5</radius>
+    <radiusGrown>2.5</radiusGrown>
+    <growDays>10</growDays>
+    <strengthFactor>2</strengthFactor>
+    <minProsperity>10000</minProsperity>
+    <searchRadius>12</searchRadius>
+    <retakeDistance>3</retakeDistance>
+    <maxPerFaction>4</maxPerFaction>
+    <maxPlayerDefense>0.6</maxPlayerDefense>
+    <!-- o Hegemony mede distância por custo de caminho (bioma, morro), não por tiles: raio × isto -->
+    <pathCostPerTile>2</pathCostPerTile>
+  </EcosDaQueda.OccupationDef>
+
+  <WorldObjectDef>
+    <defName>EQ_OccupationPost</defName>
+    <label>posto de ocupação</label>
+    <description>Uma barraca, uma bandeira nova, um soldado entediado e um decreto dizendo que a terra em volta "sempre foi nossa". Os mapas ainda não concordam.</description>
+    <worldObjectClass>EcosDaQueda.WorldObject_EQOccupation</worldObjectClass>
+    <texture>World/WorldObjects/Sites/GenericSite</texture>
+    <expandingIcon>true</expandingIcon>
+    <expandingIconTexture>World/WorldObjects/Expanding/Camp</expandingIconTexture>
+    <expandingIconPriority>65</expandingIconPriority>
+    <canHaveFaction>true</canHaveFaction>
+    <selectable>true</selectable>
+    <saved>true</saved>
+  </WorldObjectDef>
+</Defs>

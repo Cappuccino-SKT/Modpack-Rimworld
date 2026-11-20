@@ -65,7 +65,7 @@ namespace EcosDaQueda
             get
             {
                 PlayerFrontierDef d = PlayerFrontierDef.Active;
-                return d != null && colony != null && !colony.Destroyed && colony.Faction == Faction.OfPlayer && AgeDays >= d.markerSetupDays;
+                return d != null && colony != null && !colony.Destroyed && colony.Faction == Faction.OfPlayer && AgeDays >= EQPlayerFrontier.SetupDays;
             }
         }
 
@@ -75,7 +75,7 @@ namespace EcosDaQueda
             {
                 PlayerFrontierDef d = PlayerFrontierDef.Active;
                 if (d == null) return 1.5f;
-                return AgeDays >= d.markerSetupDays + d.markerGrowDays ? d.markerRadiusGrown : d.markerRadius;
+                return AgeDays >= EQPlayerFrontier.SetupDays + d.markerGrowDays ? d.markerRadiusGrown : d.markerRadius;
             }
         }
 
@@ -85,8 +85,8 @@ namespace EcosDaQueda
             if (sb.Length > 0) sb.AppendLine();
             sb.Append("Colônia: " + (colony?.LabelCap ?? "nenhuma (marco abandonado)"));
             PlayerFrontierDef d = PlayerFrontierDef.Active;
-            if (d != null && AgeDays < d.markerSetupDays)
-                sb.Append("\nEm demarcação: faltam " + (d.markerSetupDays - AgeDays).ToString("0.0") + " dias de estacas, cordas e discussões.");
+            if (d != null && AgeDays < EQPlayerFrontier.SetupDays)
+                sb.Append("\nEm demarcação: faltam " + (EQPlayerFrontier.SetupDays - AgeDays).ToString("0.0") + " dias de estacas, cordas e discussões.");
             else
                 sb.Append("\nReivindica " + Radius.ToString("0.0") + " tiles em volta.");
             return sb.ToString();
@@ -182,7 +182,7 @@ namespace EcosDaQueda
         {
             PlayerFrontierDef d = PlayerFrontierDef.Active;
             c.growth.TryGetValue(s.ID, out float g);
-            return (d?.startRadius ?? 2f) + (float)Math.Floor(g);
+            return (d?.startRadius ?? 2f) + EQCouncil.Channel("startRadius") + (float)Math.Floor(g);
         }
 
         /// <summary>Multiplicador para um raio desejado com essa prosperidade/riqueza (a força chega ao limiar no raio).</summary>
@@ -225,6 +225,7 @@ namespace EcosDaQueda
         {
             PlayerFrontierDef d = PlayerFrontierDef.Active;
             if (d == null || !EQNation.Founded) return; // N1: sem nação, a fronteira não cresce nem sugere cidade nova
+            ExpireMarkers();
             foreach (Settlement s in Colonies().ToList())
             {
                 if (!c.growth.ContainsKey(s.ID))
@@ -322,6 +323,7 @@ namespace EcosDaQueda
                 foreach (var t in kv.Value.OrderBy(x => x.Key).Take(d.maxTilesPerSettlement))
                 {
                     TileYield y = EQTerritoryYield.YieldOf(t.Value, d);
+                    EQCouncil.AdjustPlayerYield(y, t.Value);
                     if (y != null) total.Add(y);
                 }
                 res[kv.Key] = total;
@@ -360,12 +362,12 @@ namespace EcosDaQueda
             if (map == null) return false;
             var stacks = new List<(ThingDef def, int count)>
             {
-                (Named("RawPotatoes", ThingDefOf.Pemmican), (int)(st.food * d.tributeFactor * EQCouncil.TributeFactor)),
-                (ThingDefOf.WoodLog, (int)(st.wood * d.tributeFactor * EQCouncil.TributeFactor)),
-                (Named("BlocksGranite", ThingDefOf.Steel), (int)(st.stone * d.tributeFactor * EQCouncil.TributeFactor)),
-                (ThingDefOf.Steel, (int)(st.metal * d.tributeFactor * EQCouncil.TributeFactor)),
-                (ThingDefOf.ComponentIndustrial, (int)(st.components * d.tributeFactor * EQCouncil.TributeFactor)),
-                (ThingDefOf.Silver, (int)(st.prosperity * d.tributeFactor * EQCouncil.TributeFactor * d.prosperityToSilver)),
+                (Named("RawPotatoes", ThingDefOf.Pemmican), (int)(st.food * d.tributeFactor * EQCouncil.Tribute("tributeFood"))),
+                (ThingDefOf.WoodLog, (int)(st.wood * d.tributeFactor * EQCouncil.Tribute("tributeMaterials"))),
+                (Named("BlocksGranite", ThingDefOf.Steel), (int)(st.stone * d.tributeFactor * EQCouncil.Tribute("tributeMaterials"))),
+                (ThingDefOf.Steel, (int)(st.metal * d.tributeFactor * EQCouncil.Tribute("tributeMaterials"))),
+                (ThingDefOf.ComponentIndustrial, (int)(st.components * d.tributeFactor * (EQCouncil.Tribute("tributeMaterials") + EQCouncil.Channel("tributeComponents")))),
+                (ThingDefOf.Silver, (int)(st.prosperity * d.tributeFactor * EQCouncil.Tribute("tributeSilver") * d.prosperityToSilver)),
             };
             var things = new List<Thing>();
             var lines = new List<string>();
@@ -406,7 +408,8 @@ namespace EcosDaQueda
             if (!EQNation.Founded) return EQNation.NoFrontierReason;
             if (!IsColony(colony)) return "Só uma colônia com mapa pode mandar agrimensores.";
             if (MarkersOf(colony) >= (d.markersPerColony + EQCouncil.ExtraMarkers)) return "Esta colônia já tem " + (d.markersPerColony + EQCouncil.ExtraMarkers) + " marcos. Mais estaca que gente.";
-            if (!free && SilverOn(colony.Map) < d.markerCostSilver) return "Faltam " + d.markerCostSilver + " de prata na colônia (estaca é barata, agrimensor não).";
+            var price = MarkerPrice();
+            if (!free && CountOn(colony.Map, price.def) < price.count) return "Faltam " + price.count + " de " + price.def.label + " na colônia (estaca é barata, agrimensor não).";
             if (!tile.Valid || tile.Layer != colony.Tile.Layer) return "Escolha um tile na mesma superfície da colônia.";
             Tile t = Find.WorldGrid[tile];
             if (t == null || t.WaterCovered || t.hilliness == Hilliness.Impassable || !Find.WorldPathGrid.Passable(tile)) return "Escolha um tile de terra transitável.";
@@ -422,14 +425,59 @@ namespace EcosDaQueda
             {
                 if (c.Key == tile) owner = EQUtil.Canonical(c.Value);
                 if (!nearBorder && EQUtil.Canonical(c.Value) == me && c.Key.Layer == tile.Layer
-                    && Find.WorldGrid.ApproxDistanceInTiles(c.Key, tile) <= d.markerMaxFromBorder)
+                    && Find.WorldGrid.ApproxDistanceInTiles(c.Key, tile) <= MaxFromBorder)
                     nearBorder = true;
             }
             foreach (WorldObject_EQFrontierMarker m in Markers())
-                if (!nearBorder && m.Tile.Layer == tile.Layer && Find.WorldGrid.ApproxDistanceInTiles(m.Tile, tile) <= d.markerMaxFromBorder + 1f) nearBorder = true;
+                if (!nearBorder && m.Tile.Layer == tile.Layer && Find.WorldGrid.ApproxDistanceInTiles(m.Tile, tile) <= MaxFromBorder + 1f) nearBorder = true;
             if (owner != null && owner != me) return "Esse tile é de " + owner.Name + ". Para isso existem exércitos, não estacas.";
-            if (!nearBorder) return "O marco precisa encostar na fronteira atual (até " + d.markerMaxFromBorder.ToString("0.#") + " tile de um tile seu).";
+            if (!nearBorder) return "O marco precisa encostar na fronteira atual (até " + MaxFromBorder.ToString("0.#") + " tile de um tile seu).";
             return null;
+        }
+
+        /// <summary>N2c: preço do marco (Nômade: metade; Pré-fabricados: em aço, metade do número).</summary>
+        public static (ThingDef def, int count) MarkerPrice()
+        {
+            PlayerFrontierDef d = PlayerFrontierDef.Active;
+            bool steel = EQGov.Rule(g => g.markerSteel);
+            float n = (d?.markerCostSilver ?? 150) * EQCouncil.Factor("markerCost") * (steel ? 0.5f : 1f);
+            return (steel ? ThingDefOf.Steel : ThingDefOf.Silver, Mathf.Max(5, Mathf.RoundToInt(n / 5f) * 5));
+        }
+
+        /// <summary>Distância máxima da borda (Viajantes, Buscadores do céu, Nascidos na nave).</summary>
+        public static float MaxFromBorder => (PlayerFrontierDef.Active?.markerMaxFromBorder ?? 1.5f) + Math.Max(0f, EQCouncil.Channel("markerReach"));
+
+        /// <summary>Dias de demarcação (Pré-fabricados: metade).</summary>
+        public static float SetupDays => (PlayerFrontierDef.Active?.markerSetupDays ?? 2f) * EQCouncil.Factor("markerSetup");
+
+        public static int CountOn(Map map, ThingDef def) => map == null ? 0 : map.listerThings.ThingsOfDef(def).Where(t => !t.IsForbidden(Faction.OfPlayer)).Sum(t => t.stackCount);
+
+        private static void Take(Map map, ThingDef def, int amount)
+        {
+            foreach (Thing t in map.listerThings.ThingsOfDef(def).Where(x => !x.IsForbidden(Faction.OfPlayer)).ToList())
+            {
+                if (amount <= 0) break;
+                int take = Math.Min(amount, t.stackCount);
+                t.SplitOff(take).Destroy();
+                amount -= take;
+            }
+        }
+
+        /// <summary>Nômade: marcos somem depois de markerLifeDays de prontos. Devolve quantos sumiram.</summary>
+        public static int ExpireMarkers()
+        {
+            float life = EQGov.ActiveDefs().Select(g => g.markerLifeDays).Where(x => x > 0f).DefaultIfEmpty(0f).Min();
+            if (life <= 0f) return 0;
+            int n = 0;
+            foreach (WorldObject_EQFrontierMarker m in Markers().ToList())
+                if (m.AgeDays >= SetupDays + life)
+                {
+                    m.Destroy();
+                    n++;
+                }
+            if (n > 0 && !EQLeader.SuppressDialogs)
+                Messages.Message(n + " marco(s) de fronteira ficaram para trás: o povo nômade já levantou acampamento.", MessageTypeDefOf.NeutralEvent, false);
+            return n;
         }
 
         public static int SilverOn(Map map) => map == null ? 0 : map.listerThings.ThingsOfDef(ThingDefOf.Silver).Where(t => !t.IsForbidden(Faction.OfPlayer)).Sum(t => t.stackCount);
@@ -448,7 +496,7 @@ namespace EcosDaQueda
         public static WorldObject_EQFrontierMarker PlaceMarker(Settlement colony, PlanetTile tile, bool free)
         {
             PlayerFrontierDef d = PlayerFrontierDef.Active;
-            if (!free) TakeSilver(colony.Map, d.markerCostSilver);
+            if (!free) { var price = MarkerPrice(); Take(colony.Map, price.def, price.count); }
             var m = (WorldObject_EQFrontierMarker)WorldObjectMaker.MakeWorldObject(DefDatabase<WorldObjectDef>.GetNamed("EQ_FrontierMarker"));
             m.SetFaction(Faction.OfPlayer);
             m.Tile = tile;
@@ -489,10 +537,10 @@ namespace EcosDaQueda
             {
                 defaultLabel = "Plantar marco de fronteira",
                 defaultDesc = "Manda agrimensores fincarem uma estaca com placa num tile encostado na fronteira (até "
-                              + d.markerMaxDistance.ToString("0") + " tiles da colônia). Depois de " + d.markerSetupDays.ToString("0")
+                              + d.markerMaxDistance.ToString("0") + " tiles da colônia). Depois de " + SetupDays.ToString("0.#")
                               + " dias de demarcação, o território cresce em volta do marco (" + d.markerRadius.ToString("0.#") + " tiles; "
                               + d.markerRadiusGrown.ToString("0.#") + " depois de " + d.markerGrowDays.ToString("0") + " dias). Custa "
-                              + d.markerCostSilver + " de prata. Até " + (d.markersPerColony + EQCouncil.ExtraMarkers) + " por colônia.\n\nMarcos desta colônia: " + MarkersOf(colony) + ".",
+                              + MarkerPrice().count + " de " + MarkerPrice().def.label + ". Até " + (d.markersPerColony + EQCouncil.ExtraMarkers) + " por colônia.\n\nMarcos desta colônia: " + MarkersOf(colony) + ".",
                 icon = ContentFinder<Texture2D>.Get("World/WorldObjects/Expanding/SurveySiteExpanding", false) ?? BaseContent.BadTex,
                 action = () =>
                 {
@@ -501,7 +549,7 @@ namespace EcosDaQueda
                         string why = CanPlaceMarker(colony, target.Tile, false);
                         if (why != null) { Messages.Message(why, MessageTypeDefOf.RejectInput, false); return false; }
                         PlaceMarker(colony, target.Tile, false);
-                        Messages.Message("Os agrimensores partiram com estacas, cordas e opiniões. A demarcação leva " + d.markerSetupDays.ToString("0") + " dias.",
+                        Messages.Message("Os agrimensores partiram com estacas, cordas e opiniões. A demarcação leva " + SetupDays.ToString("0.#") + " dias.",
                             MessageTypeDefOf.TaskCompletion, false);
                         return true;
                     }, true, extraLabelGetter: target => CanPlaceMarker(colony, target.Tile, false) ?? "Plantar marco aqui");
@@ -509,7 +557,7 @@ namespace EcosDaQueda
             };
             string block = !EQNation.Founded ? EQNation.NoFrontierReason
                 : MarkersOf(colony) >= (d.markersPerColony + EQCouncil.ExtraMarkers) ? "Esta colônia já tem " + (d.markersPerColony + EQCouncil.ExtraMarkers) + " marcos."
-                : SilverOn(colony.Map) < d.markerCostSilver ? "Faltam " + d.markerCostSilver + " de prata na colônia." : null;
+                : CountOn(colony.Map, MarkerPrice().def) < MarkerPrice().count ? "Faltam " + MarkerPrice().count + " de " + MarkerPrice().def.label + " na colônia." : null;
             if (block != null) cmd.Disable(block);
             return cmd;
         }

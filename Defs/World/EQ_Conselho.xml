@@ -5,12 +5,14 @@
     - Cada cadeira tem um adulto livre (não o líder; um colono numa cadeira só). Bônus 0 na perícia skillZero, cheio na skillFull,
       e só vale com o conselheiro vivo, consciente e na colônia (o Embaixador também numa caravana).
     - Trocar quem ocupa uma cadeira: espera de swapCooldownDays dias (cadeira vaga por morte não espera).
-    - Embaixador (Social): +goodwillGain na boa vontade ganha com qualquer facção; a tensão diária entre a patrona e as outras
-      potências sobe patronTensionSlowdown mais devagar; −ceremonyDiscount no preço da cerimônia e nos dízimos.
-    - General (Tiro ou Corpo a corpo, a maior): +armyStrength de força nos exércitos sob comando do jogador; revoltas futuras
-      revoltReduction menores.
-    - Conselheiro (Intelectual): fronteira cresce frontierSpeed mais rápido; +tributeBonus no tributo; +extraMarkers marco por
-      colônia (com o bônus em pelo menos 50%).
+    - Efeitos por canal (GovEffect): o fator de cada canal é 1 + soma de (amount × bônus da cadeira). Canais: goodwill, goodwillOtherIdeo,
+      patronTension, ceremony, army, revolt, frontier, tribute, tributeFood, tributeMaterials, tributeSilver, markers (inteiro, com o
+      bônus ≥ markerThreshold), workSpeed (bancadas), research, tradePrice (soma), quality (chance de +1 nível), yieldGreen, yieldHills; N2c/F5: ver EQ_Governo.xml e EQ_Ocupacao.xml (borderDefense).
+      Cadeiras vindas dos memes: EQ_Governo.xml (N2b).
+    - Embaixador (Social): boa vontade ganha +20%, tensão da patrona −30%, cerimônia e dízimos −15%. Vale também em caravana.
+    - General (Tiro ou Corpo a corpo, a maior): exércitos sob comando do jogador +15%, revoltas futuras −20%; posto de ocupação
+      contra o jogador com raio −25% (F5, canal borderDefense).
+    - Conselheiro (Intelectual): fronteira +25%, tributo +25%, +1 marco por colônia (com o bônus em pelo menos 50%).
   -->
   <EcosDaQueda.CouncilDef>
     <defName>EQ_Conselho</defName>
@@ -18,14 +20,8 @@
     <skillZero>4</skillZero>
     <skillFull>15</skillFull>
     <swapCooldownDays>3</swapCooldownDays>
-    <goodwillGain>0.20</goodwillGain>
-    <patronTensionSlowdown>0.30</patronTensionSlowdown>
-    <ceremonyDiscount>0.15</ceremonyDiscount>
-    <armyStrength>0.15</armyStrength>
-    <revoltReduction>0.20</revoltReduction>
-    <frontierSpeed>0.25</frontierSpeed>
-    <tributeBonus>0.25</tributeBonus>
-    <extraMarkers>1</extraMarkers>
+    <markerThreshold>0.5</markerThreshold>
+    <seatStackBonus>0.5</seatStackBonus>
     <memberThought>EQ_ConselhoMembro</memberThought>
     <passedOverThought>EQ_ConselhoPreterido</passedOverThought>
     <seats>
@@ -37,6 +33,11 @@
           <li>Social</li>
         </skills>
         <allowCaravan>true</allowCaravan>
+        <effects>
+          <li><channel>goodwill</channel><amount>0.20</amount></li>
+          <li><channel>patronTension</channel><amount>-0.30</amount></li>
+          <li><channel>ceremony</channel><amount>-0.15</amount></li>
+        </effects>
       </li>
       <li>
         <key>general</key>
@@ -46,6 +47,11 @@
           <li>Shooting</li>
           <li>Melee</li>
         </skills>
+        <effects>
+          <li><channel>army</channel><amount>0.15</amount></li>
+          <li><channel>revolt</channel><amount>-0.20</amount></li>
+          <li><channel>borderDefense</channel><amount>0.25</amount></li>
+        </effects>
       </li>
       <li>
         <key>conselheiro</key>
@@ -54,6 +60,11 @@
         <skills>
           <li>Intellectual</li>
         </skills>
+        <effects>
+          <li><channel>frontier</channel><amount>0.25</amount></li>
+          <li><channel>tribute</channel><amount>0.25</amount></li>
+          <li><channel>markers</channel><amount>1</amount></li>
+        </effects>
       </li>
     </seats>
   </EcosDaQueda.CouncilDef>

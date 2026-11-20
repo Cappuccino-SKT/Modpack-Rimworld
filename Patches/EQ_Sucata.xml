@@ -11,7 +11,9 @@
       <value>
         <carriers>
           <VAEWaste_Wasteffalo>6</VAEWaste_Wasteffalo>
-          <VAEWaste_Wasteboar>2</VAEWaste_Wasteboar>
+          <!-- reserva: os bichos do lixo não carregam em todo bioma (o grupo de comércio precisa de um que sirva no tile) -->
+          <Muffalo>2</Muffalo>
+          <Dromedary>2</Dromedary>
         </carriers>
       </value>
     </match>

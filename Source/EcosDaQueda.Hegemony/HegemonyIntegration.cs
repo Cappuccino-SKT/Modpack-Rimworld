@@ -88,7 +88,7 @@ namespace EcosDaQueda.HegemonyCompat
                 invasionVeto = HegemonyApi.RegisterVeto(HegemonyVetoKind.InvasionTarget, ctx =>
                     !EQNation.Founded && (ctx.Other?.IsPlayer == true || ctx.Target?.Faction?.IsPlayer == true)
                         ? "Ninguém invade um sítio: " + Faction.OfPlayer?.Name + " ainda não é uma nação."
-                        : null);
+                        : (ctx.Other?.IsPlayer == true || ctx.Target?.Faction?.IsPlayer == true) ? EQGov.InvasionVeto(ctx.Actor) : null);
                 // Para o executor de testes: pergunta ao próprio Hegemony se uma invasão de conquista contra a colônia passa.
                 MethodInfo block = AccessTools.Method(AccessTools.TypeByName("FactionTerritories2.ApiLifecycle"), "Block");
                 if (block != null)
@@ -279,6 +279,22 @@ namespace EcosDaQueda.HegemonyCompat
         public static void SourcesPostfix(object __result)
         {
             if (!(__result is System.Collections.IList list)) return;
+            // F5: postos de ocupação (de qualquer facção; os do jogador só com a nação fundada) viram fontes do dono.
+            try
+            {
+                foreach (var o in EQOccupation.Sources())
+                {
+                    Faction claim = claimOwner?.Invoke(null, new object[] { o.owner }) as Faction ?? o.owner;
+                    object src = Activator.CreateInstance(sourceType);
+                    srcTile.SetValue(src, o.tile);
+                    srcFaction.SetValue(src, claim);
+                    srcLocal.SetValue(src, o.owner);
+                    srcProsperity.SetValue(src, o.prosperity);
+                    srcDecay.SetValue(src, o.decay);
+                    list.Add(src);
+                }
+            }
+            catch (Exception ex) { Log.ErrorOnce("[Ecos da Queda] Ocupação (F5): " + ex, 0x4E51F6); }
             // N1: antes da fundação a colônia (e o que mais for do jogador) não é fonte de território. Vale em qualquer mundo.
             if (!EQNation.Founded)
             {
