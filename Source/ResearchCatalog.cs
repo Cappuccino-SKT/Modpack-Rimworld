@@ -37,6 +37,7 @@ namespace EcosDaQueda.DebugTools
                     PL("prereqs", (r.prerequisites ?? new List<ResearchProjectDef>()).Select(p => p.defName)),
                     PL("hidden", (r.hiddenPrerequisites ?? new List<ResearchProjectDef>()).Select(p => p.defName)),
                     P("eqHidden", EQHiddenResearch.Hidden.Contains(r) ? 1 : 0),
+                    P("eqAbsorbedBy", EQAbsorbedResearch.By.TryGetValue(r, out ResearchProjectDef absBy) ? absBy.defName : ""),
                     P("bench", r.requiredResearchBuilding?.defName ?? ""),
                     PL("facilities", (r.requiredResearchFacilities ?? new List<ThingDef>()).Select(f => f.defName)),
                     P("techprints", r.techprintCount),
@@ -223,8 +224,75 @@ namespace EcosDaQueda.DebugTools
                 if (yartMostra > 0) problemas++;
                 sb.AppendLine("  YART mostra escondidas: " + yartMostra);
             }
+            // coerência planta x produto: item liberado por uma árvore cujo ingrediente vem de planta que a cadeia dele não libera
+            var sowBy = new Dictionary<ThingDef, List<ThingDef>>();
+            foreach (ThingDef pl in DefDatabase<ThingDef>.AllDefsListForReading.Where(x => x.plant != null && x.plant.Sowable && x.plant.harvestedThingDef != null))
+            {
+                if (!sowBy.TryGetValue(pl.plant.harvestedThingDef, out var l)) sowBy[pl.plant.harvestedThingDef] = l = new List<ThingDef>();
+                l.Add(pl);
+            }
+            int incoer = 0;
+            foreach (ResearchProjectDef pj in DefDatabase<ResearchProjectDef>.AllDefsListForReading.Where(x => x.HasModExtension<ResearchEditorExt>()))
+            {
+                var anc = new HashSet<ResearchProjectDef>();
+                var st = new Stack<ResearchProjectDef>(); st.Push(pj);
+                while (st.Count > 0) { var q = st.Pop(); if (!anc.Add(q)) continue; foreach (var z in q.prerequisites ?? new List<ResearchProjectDef>()) st.Push(z); }
+                foreach (string u in pj.GetModExtension<ResearchEditorExt>().unlocks)
+                {
+                    ThingDef it = DefDatabase<ThingDef>.GetNamedSilentFail(u);
+                    if (it == null || it.plant != null || it.designationCategory != null) continue;
+                    var falhas = new List<string>();
+                    List<RecipeDef> recsIt = EQResearchUnlocks.RecipesFor(it);
+                    int recOk = 0;
+                    foreach (RecipeDef rec in recsIt)
+                    {
+                        int antes = falhas.Count;
+                        foreach (IngredientCount ing in rec.ingredients ?? new List<IngredientCount>())
+                        {
+                            var allowed = ing.filter?.AllowedThingDefs?.ToList() ?? new List<ThingDef>();
+                            if (allowed.Count == 0 || allowed.Count > 3) continue;   // ingrediente genérico (qualquer carne, qualquer vegetal)
+                            // livre: não vem de planta, vem de árvore (lenha nativa), ou a planta não exige nada / exige só a cadeia do item
+                            bool algumLivre = allowed.Any(a => !sowBy.ContainsKey(a) || sowBy[a].Any(pl => pl.plant.IsTree
+                                || pl.plant.sowResearchPrerequisites.NullOrEmpty() || pl.plant.sowResearchPrerequisites.All(anc.Contains)));
+                            if (algumLivre) continue;
+                            falhas.Add(string.Join("/", allowed.Select(a => a.defName))
+                                + " (planta em " + string.Join(",", allowed.SelectMany(a => sowBy[a]).SelectMany(pl => pl.plant.sowResearchPrerequisites).Distinct().Select(x => x.defName)) + ")");
+                        }
+                        if (falhas.Count == antes) recOk++;
+                    }
+                    // basta uma receita do item funcionar com o que a cadeia libera
+                    if (recsIt.Count > 0 && recOk == 0 && falhas.Count > 0)
+                    {
+                        incoer++;
+                        if (incoer <= 30) sb.AppendLine("  coerência: " + pj.defName + " libera " + u + ", que usa " + string.Join("; ", falhas.Distinct()));
+                    }
+                }
+            }
+            sb.AppendLine("  coerência planta x produto: " + incoer + " caso(s)");
+            // pesquisas absorvidas: escondidas, ninguém mais exige a original
+            var abs = EQAbsorbedResearch.By;
+            int exigeAbs = 0;
+            foreach (ThingDef t in DefDatabase<ThingDef>.AllDefsListForReading)
+                if ((t.researchPrerequisites?.Any(abs.ContainsKey) ?? false) || (t.plant?.sowResearchPrerequisites?.Any(abs.ContainsKey) ?? false)) { exigeAbs++; if (exigeAbs <= 5) sb.AppendLine("  " + t.defName + " ainda exige absorvida"); }
+            foreach (TerrainDef t in DefDatabase<TerrainDef>.AllDefsListForReading)
+                if (t.researchPrerequisites?.Any(abs.ContainsKey) ?? false) { exigeAbs++; if (exigeAbs <= 5) sb.AppendLine("  " + t.defName + " ainda exige absorvida"); }
+            foreach (RecipeDef rec in DefDatabase<RecipeDef>.AllDefsListForReading)
+                if ((rec.researchPrerequisite != null && abs.ContainsKey(rec.researchPrerequisite)) || (rec.researchPrerequisites?.Any(abs.ContainsKey) ?? false)) { exigeAbs++; if (exigeAbs <= 5) sb.AppendLine("  " + rec.defName + " ainda exige absorvida"); }
+            foreach (ResearchProjectDef r in DefDatabase<ResearchProjectDef>.AllDefsListForReading.Where(r => !abs.ContainsKey(r)))
+                if ((r.prerequisites ?? new List<ResearchProjectDef>()).Concat(r.hiddenPrerequisites ?? new List<ResearchProjectDef>()).Any(abs.ContainsKey)) { exigeAbs++; sb.AppendLine("  " + r.defName + " ainda exige absorvida"); }
+            int absVisivel = abs.Keys.Count(o => !hid.Contains(o));
+            if (exigeAbs + absVisivel > 0) problemas++;
+            sb.AppendLine("  absorvidas: " + abs.Count + ", ainda exigidas " + exigeAbs + ", visíveis " + absVisivel);
+            foreach (var grp in abs.GroupBy(kv => kv.Value))
+                sb.AppendLine("    " + grp.Key.defName + " (" + grp.Key.UnlockedDefs.Count + " desbloqueios) <- " + string.Join(", ", grp.Select(kv => kv.Key.defName)));
             var proj = new ResearchProjectDef { defName = "EQ_R_TesteMemoria", label = "teste", baseCost = 100, techLevel = TechLevel.Industrial };
             var e = new ResearchEditorExt { unlocks = new List<string> { "Bed", "MealSimple", "Plant_Rice", "WoodPlankFloor", "Anesthetize", "EQ_NaoExiste" } };
+            // o teste mexe em defs de verdade (cama, refeição simples, arroz...): guarda e restaura no fim, senão roteiros
+            // seguintes no mesmo lote veem esses itens travados pelo projeto de teste
+            var tPre = DefDatabase<ThingDef>.AllDefsListForReading.ToDictionary(t => t, t => t.researchPrerequisites);
+            var tSow = DefDatabase<ThingDef>.AllDefsListForReading.Where(t => t.plant != null).ToDictionary(t => t, t => t.plant.sowResearchPrerequisites);
+            var terPre = DefDatabase<TerrainDef>.AllDefsListForReading.ToDictionary(t => t, t => t.researchPrerequisites);
+            var rPre = DefDatabase<RecipeDef>.AllDefsListForReading.ToDictionary(r => r, r => (r.researchPrerequisite, r.researchPrerequisites));
             List<string> avisos = EQResearchUnlocks.Apply(proj, e);
             EQResearchUnlocks.ClearCaches();
             var unl = proj.UnlockedDefs.Select(d => d.defName).ToList();
@@ -236,6 +304,14 @@ namespace EcosDaQueda.DebugTools
             }
             if (avisos.Count != 1) problemas++;
             sb.AppendLine("  avisos: " + string.Join("; ", avisos));
+            foreach (var kv in tPre) kv.Key.researchPrerequisites = kv.Value;
+            foreach (var kv in tSow) kv.Key.plant.sowResearchPrerequisites = kv.Value;
+            foreach (var kv in terPre) kv.Key.researchPrerequisites = kv.Value;
+            foreach (var kv in rPre) { kv.Key.researchPrerequisite = kv.Value.Item1; kv.Key.researchPrerequisites = kv.Value.Item2; }
+            EQResearchUnlocks.ClearCaches();
+            bool restaurado = !EQResearchUnlocks.Requires("MealSimple", proj) && !EQResearchUnlocks.Requires("Bed", proj);
+            if (!restaurado) problemas++;
+            sb.AppendLine("  teste restaurado: " + (restaurado ? "ok" : "FALHOU"));
             sb.Append(problemas == 0 ? "  OK" : "  PROBLEMAS: " + problemas);
             return sb.ToString();
         }

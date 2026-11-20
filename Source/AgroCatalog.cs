@@ -188,7 +188,16 @@ namespace EcosDaQueda.DebugTools
                 foreach (string k in kit)
                 {
                     bool? ok = Available(k);
-                    if (ok == true) kitOk++; else resumo.AppendLine("  KIT INDISPONÍVEL: " + k + (ok == null ? " (não existe)" : ""));
+                    if (ok == true) kitOk++;
+                    else
+                    {
+                        resumo.AppendLine("  KIT INDISPONÍVEL: " + k + (ok == null ? " (não existe)" : ""));
+                        ThingDef kt = DefDatabase<ThingDef>.GetNamedSilentFail(k);
+                        if (kt != null)
+                            foreach (RecipeDef r in DefDatabase<RecipeDef>.AllDefsListForReading.Where(r => r.products != null && r.products.Any(p => p.thingDef == kt)))
+                                resumo.AppendLine("    receita " + r.defName + " pré=" + string.Join(",", new[] { r.researchPrerequisite }.Concat(r.researchPrerequisites ?? new List<ResearchProjectDef>()).Where(x => x != null).Select(x => x.defName))
+                                    + " memes=" + string.Join(",", (r.memePrerequisitesAny ?? new List<MemeDef>()).Select(m => m.defName)) + " users=" + string.Join(",", r.AllRecipeUsers.Select(u => u.defName)));
+                    }
                 }
                 resumo.AppendLine("  kit livre: " + kitOk + "/" + kit.Count);
                 int trav = 0, livre = 0;
