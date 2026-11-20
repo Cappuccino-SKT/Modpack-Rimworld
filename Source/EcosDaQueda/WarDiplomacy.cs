@@ -92,6 +92,7 @@ namespace EcosDaQueda
                 sb.Add(Thresholds(c, a, b, before, now));
             }
             sb.Add(BorderFronts(c, false));
+            sb.Add(PlayerBorderFronts(c, false));
             LastDaily = string.Join(" ", sb.Where(s => !s.NullOrEmpty()));
             return LastDaily;
         }
@@ -258,6 +259,77 @@ namespace EcosDaQueda
             return "aberta: " + front.Label + " " + front.attackerStrength + "x" + front.defenderStrength + " por " + how;
         }
 
+        // ------------------------------------------------------------ F5b: frente de fronteira contra a nação do jogador
+
+        public const float PlayerFrontChancePerDay = 0.15f;
+        public const float PlayerFrontCooldownDays = 10f;
+        public const float PlayerFrontMaxDistance = 30f;
+        /// <summary>Teste: abre a frente mesmo com a potência longe.</summary>
+        public static bool TestIgnoreDistance;
+
+        /// <summary>Só com a nação fundada de verdade (não com a suposição do executor de testes).</summary>
+        public static bool PlayerFrontsOn => EQNation.Applies && (WorldComponent_EQNation.Current?.IsFounded ?? false);
+
+        /// <summary>Força da milícia da nação quando ninguém vai à frente: colonos adultos × exército (General, Alistamento...).</summary>
+        public static int PlayerDefense() =>
+            Mathf.Clamp(Mathf.RoundToInt((6f + 1.5f * EQNation.AdultFreeColonists()) * EQCouncil.ArmyFactor), 8, 40);
+
+        /// <summary>Potências hostis ao jogador com cidade a até PlayerFrontMaxDistance de uma colônia (ou com fronteira encostada) abrem frente.</summary>
+        public static string PlayerBorderFronts(WorldComponent_EQForces c, bool force, Faction only = null)
+        {
+            if (EQFronts.FrontDef == null) return force ? "sem def" : null;
+            if (!PlayerFrontsOn && !force) return null;
+            if (!PlayerFrontsOn) return "sem nação fundada";
+            if (Find.WorldObjects.AllWorldObjects.OfType<WorldObject_EQFront>().Any(f => f.IsPlayerFront && !f.resolved)) return force ? "já há uma frente contra a nação" : null;
+            var r = new List<string>();
+            Faction pf = Faction.OfPlayer;
+            foreach (Faction e in EQAllegiance.Powers.Where(f => f != null && !f.defeated && f.HostileTo(pf)).ToList())
+            {
+                if (only != null && e != only) continue;
+                if (!force && c.lastBorderFront.TryGetValue(Key(e, pf), out int last) && Find.TickManager.TicksGame - last < PlayerFrontCooldownDays * 60000) continue;
+                if (!force && !Rand.Chance(PlayerFrontChancePerDay)) continue;
+                string s = OpenPlayerBorderFront(c, e);
+                r.Add(s);
+                if (s.StartsWith("aberta")) break;
+            }
+            return r.Count == 0 ? (force ? "nenhuma potência hostil perto" : null) : "fronteira da nação: " + string.Join("; ", r);
+        }
+
+        public static string OpenPlayerBorderFront(WorldComponent_EQForces c, Faction enemy)
+        {
+            Faction pf = Faction.OfPlayer;
+            if (!EQForces.TryFindFront(enemy, pf, out Settlement hE, out Settlement hP)) return enemy.Name + ": sem cidades";
+            List<PlanetTile> border = null;
+            try { border = BorderProvider?.Invoke(enemy, pf); } catch { }
+            float dist = EQForces.Distance(hE.Tile, hP.Tile);
+            if ((border == null || border.Count == 0) && dist > PlayerFrontMaxDistance && !TestIgnoreDistance) return enemy.Name + ": longe (" + dist.ToString("0") + " tiles)";
+            PlanetTile tile = FindBorderTile(enemy, pf, out string how);
+            if (!tile.Valid) return enemy.Name + ": sem tile (" + how + ")";
+            var front = (WorldObject_EQFront)WorldObjectMaker.MakeWorldObject(EQFronts.FrontDef);
+            front.Tile = tile;
+            front.SetFaction(enemy);
+            front.borderFront = true;
+            front.attacker = enemy;
+            front.defender = pf;
+            front.targetSettlement = hP;
+            front.attackerSettlement = hE;
+            front.attackerStrength = Mathf.Clamp(c.GarrisonOf(hE) / 2 + Rand.RangeInclusive(0, 6), 8, 40);
+            front.defenderStrength = PlayerDefense();
+            front.openedTick = Find.TickManager.TicksGame;
+            front.deadlineTick = front.openedTick + (int)(WorldObject_EQFront.OpenDays * 60000);
+            front.wereHostile = true;
+            front.sideChosen = true;
+            Find.WorldObjects.Add(front);
+            c.lastBorderFront[Key(enemy, pf)] = Find.TickManager.TicksGame;
+            Find.LetterStack.ReceiveLetter("Frente na fronteira: " + enemy.Name,
+                enemy.Name + " cavou trincheiras na divisa de " + pf.Name + ", perto de " + hP.LabelCap + ": " + front.attackerStrength + " soldados contra a milícia da nação ("
+                + front.defenderStrength + ", pelos colonos, pelo General e pelos decretos).\n\nMande uma caravana defender a trincheira (\"Defender a fronteira\") ou deixe a milícia decidir: em "
+                + WorldObject_EQFront.OpenDays.ToString("0") + " dias, sem testemunhas, decide-se sozinha. Quem vence planta um posto de ocupação na terra do outro, e a legitimidade sente.",
+                LetterDefOf.ThreatSmall, front);
+            c.Log("Frente na fronteira da nação: " + front.Label + " (" + how + ").", false);
+            return "aberta: " + front.Label + " " + front.attackerStrength + "x" + front.defenderStrength + " por " + how;
+        }
+
         /// <summary>Resultado de uma frente de fronteira: quem perde perde guarnição e tesouro; revanche vira tensão depois da paz.</summary>
         public static string BorderOutcome(WorldObject_EQFront f, bool attackerWon)
         {
@@ -266,13 +338,15 @@ namespace EcosDaQueda
             Faction win = attackerWon ? f.attacker : f.defender, lose = attackerWon ? f.defender : f.attacker;
             Settlement lostAt = attackerWon ? f.targetSettlement : f.attackerSettlement;
             int loss = Rand.RangeInclusive(8, 15);
-            if (lostAt != null && !lostAt.Destroyed) c.SetGarrison(lostAt, c.GarrisonOf(lostAt) - loss);
-            c.SetTreasury(win, c.Treasury(win) + 200f);
-            c.SetTreasury(lose, c.Treasury(lose) - 150f);
+            if (lostAt != null && !lostAt.Destroyed && !lose.IsPlayer) c.SetGarrison(lostAt, c.GarrisonOf(lostAt) - loss);
+            if (!win.IsPlayer) c.SetTreasury(win, c.Treasury(win) + 200f);
+            if (!lose.IsPlayer) c.SetTreasury(lose, c.Treasury(lose) - 150f);
             foreach (var army in c.ArmiesOf(win)) army.morale = Math.Min(1f, army.morale + 0.1f);
             foreach (var army in c.ArmiesOf(lose)) army.morale = Math.Max(0f, army.morale - 0.1f);
             c.lastBorderFront[Key(win, lose)] = Find.TickManager.TicksGame;
-            string s = lose.Name + " recua: guarnição de " + (lostAt?.LabelCap ?? "?") + " -" + loss + ", tesouro -150; " + win.Name + " +200.";
+            string s = lose.IsPlayer ? "A milícia de " + lose.Name + " recua; " + win.Name + " +200 no tesouro."
+                : win.IsPlayer ? lose.Name + " recua: guarnição de " + (lostAt?.LabelCap ?? "?") + " -" + loss + ", tesouro -150."
+                : lose.Name + " recua: guarnição de " + (lostAt?.LabelCap ?? "?") + " -" + loss + ", tesouro -150; " + win.Name + " +200.";
             // F5: o vencedor planta um posto de ocupação na terra do perdedor (e derruba os postos do perdedor por perto).
             try { s += " Ocupação: " + EQOccupation.OnBorderWin(f.Tile, win, lose) + "."; }
             catch (Exception ex) { Log.ErrorOnce("[Ecos da Queda] Ocupação (F5): " + ex, 0x4E51F5); }

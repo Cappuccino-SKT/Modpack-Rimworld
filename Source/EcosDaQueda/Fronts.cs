@@ -57,6 +57,9 @@ namespace EcosDaQueda
 
         public bool IsHegemonyFront => hegemonyMarker >= 0;
 
+        /// <summary>F5b: frente de fronteira de uma potência contra a nação do jogador (o jogador é o defensor).</summary>
+        public bool IsPlayerFront => borderFront && defender != null && defender.IsPlayer;
+
         public Faction Opponent(Faction side) => side == attacker ? defender : side == defender ? attacker : null;
 
         public override string GetInspectString()
@@ -66,7 +69,8 @@ namespace EcosDaQueda
             if (resolved) return s + "Batalha decidida: " + result;
             s += "Atacante: " + attacker?.Name + " (" + attackerStrength + " soldados)\nDefensor: " + defender?.Name + " (" + defenderStrength + " soldados)";
             if (IsHegemonyFront) s += "\nInvasão do Hegemony contra " + (targetSettlement?.LabelCap ?? "?") + (hegemonyResult != null ? ": " + hegemonyResult : "");
-            if (sideChosen) s += "\nVocê: " + (supported != null ? "apoia " + supported.Name : "de fora");
+            if (IsPlayerFront) s += "\nVocê: defende a própria fronteira (" + (targetSettlement?.LabelCap ?? "?") + ")";
+            else if (sideChosen) s += "\nVocê: " + (supported != null ? "apoia " + supported.Name : "de fora");
             if (!HasMap)
                 s += "\nSe ninguém for lá, a batalha se decide sozinha em " + ((deadlineTick - Find.TickManager.TicksGame) / 60000f).ToString("0.0") + " dias.";
             return s;
@@ -75,6 +79,13 @@ namespace EcosDaQueda
         public override IEnumerable<FloatMenuOption> GetFloatMenuOptions(Caravan caravan)
         {
             foreach (FloatMenuOption o in base.GetFloatMenuOptions(caravan)) yield return o;
+            if (IsPlayerFront)
+            {
+                foreach (FloatMenuOption o in CaravanArrivalActionUtility.GetFloatMenuOptions(
+                             () => SideReport(null), () => new CaravanArrivalAction_EQFront(this, 1), "Defender a fronteira", caravan, Tile, this))
+                    yield return o;
+                yield break;
+            }
             for (int side = -1; side <= 1; side++)
             {
                 int sd = side;
@@ -97,6 +108,7 @@ namespace EcosDaQueda
         /// <summary>Tomar partido: Fama com o apoiado na hora, Infâmia e hostilidade do outro lado (para lutar no mapa).</summary>
         public string ChooseSide(Faction side)
         {
+            if (IsPlayerFront) { sideChosen = true; supported = null; return "defende a própria fronteira"; }
             if (sideChosen) return "lado já escolhido: " + (supported?.Name ?? "de fora");
             sideChosen = true;
             supported = side;
@@ -184,6 +196,11 @@ namespace EcosDaQueda
             {
                 bool atkWon = Rand.Chance(Mathf.Clamp((float)attackerStrength / Mathf.Max(1, attackerStrength + defenderStrength), 0.15f, 0.85f));
                 result = "sem testemunhas: " + (atkWon ? attacker?.Name : defender?.Name) + " venceu. " + EQWarDiplomacy.BorderOutcome(this, atkWon);
+                if (IsPlayerFront)
+                    Find.LetterStack.ReceiveLetter(atkWon ? "Fronteira perdida: " + attacker?.Name : "Fronteira defendida",
+                        (atkWon ? "A milícia de " + defender?.Name + " não segurou a trincheira contra " + attacker?.Name + "."
+                                : "A milícia de " + defender?.Name + " segurou a trincheira; " + attacker?.Name + " voltou para casa contando os mortos.")
+                        + "\n\n" + result, atkWon ? LetterDefOf.NegativeEvent : LetterDefOf.PositiveEvent, LookTargets.Invalid);
             }
             else if (IsHegemonyFront)
                 result = "sem testemunhas: " + (hegemonyResult ?? "a invasão não deu notícia");
@@ -218,7 +235,7 @@ namespace EcosDaQueda
                 }
             }
             result = (attackerWon ? attacker?.Name : defender?.Name) + " venceu " + how + ". " + r;
-            string extra = playerVisited ? Reward(attackerWon) : "";
+            string extra = playerVisited && !IsPlayerFront ? Reward(attackerWon) : "";
             Find.LetterStack.ReceiveLetter("Fim da frente: " + (attackerWon ? attacker?.Name : defender?.Name) + " venceu",
                 Label + ": " + result + extra + "\n\nO que ficou no chão (armas, armaduras, corpos) é de quem chegar primeiro.",
                 LetterDefOf.NeutralEvent, HasMap ? new LookTargets(Map.Center, Map) : LookTargets.Invalid);
@@ -314,7 +331,7 @@ namespace EcosDaQueda
         private void SpawnSide(Faction f, float soldiers, bool isAttacker, bool wave)
         {
             Map map = Map;
-            if (map == null || f == null || soldiers < 1f) return;
+            if (map == null || f == null || soldiers < 1f || f.IsPlayer) return; // F5b: o lado do jogador é a caravana dele
             float points = Mathf.Clamp(soldiers * PointsPerSoldier, 200f, MaxPointsPerSide);
             var parms = new PawnGroupMakerParms
             {
@@ -404,7 +421,8 @@ namespace EcosDaQueda
             if (fresh)
                 Find.LetterStack.ReceiveLetter(front.Label,
                     "A caravana chegou a uma frente de trincheira: " + front.attacker?.Name + " de um lado, " + front.defender?.Name + " do outro, e muita lama no meio.\n\n"
-                    + (front.supported != null ? "Você veio lutar por " + front.supported.Name + ": quem vencer lembra de quem estava na lama ao lado. " : "Você veio sem bandeira: fique de fora e espere o fim para recolher o que sobrar. ")
+                    + (front.IsPlayerFront ? "Você veio defender a fronteira de " + front.defender?.Name + ": se a trincheira cair, " + front.attacker?.Name + " planta um posto na sua terra. "
+                       : front.supported != null ? "Você veio lutar por " + front.supported.Name + ": quem vencer lembra de quem estava na lama ao lado. " : "Você veio sem bandeira: fique de fora e espere o fim para recolher o que sobrar. ")
                     + "A segunda onda chega em umas 6 horas; em 12, o atacante sai das trincheiras.",
                     LetterDefOf.ThreatBig, new LookTargets(map.Center, map));
         }
