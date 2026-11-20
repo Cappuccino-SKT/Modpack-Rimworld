@@ -81,6 +81,29 @@ namespace EcosDaQueda.DebugTools
                     string err2 = n.HireMercs();
                     return (err2 ?? EQLegitimacy.LastReport) + " (custo " + cost2 + ", desconto " + c.mercDiscount + ")";
                 }
+                // Decretos: "legit decree list | <defName> | revoke <defName> | cooldown | stats"
+                case "decree":
+                {
+                    if (arg == null || arg == "list")
+                        return string.Join("\n  ", EQDecrees.All.Select(d => d.defName + (EQDecrees.IsActive(d) ? " [em vigor]" : "") + ": " + ((EQDecrees.IsActive(d) ? EQDecrees.CannotRevoke(d) : EQDecrees.CannotEnact(d)) ?? "pode"))) + "\n" + Show();
+                    if (arg == "cooldown") { c.decreeTick = -999999; return "espera zerada\n" + Show(); }
+                    if (arg == "stats")
+                    {
+                        Pawn p = EQLeader.AllFreeColonists().FirstOrDefault();
+                        ThoughtDef th = DefDatabase<ThoughtDef>.GetNamedSilentFail("EQ_Decreto_Alistamento");
+                        bool mood = p?.needs?.mood?.thoughts != null && th != null && th.Worker.CurrentState(p).Active;
+                        return "exército×" + EQCouncil.ArmyFactor.ToString("0.00") + " revolta×" + EQCouncil.RevoltFactor.ToString("0.00") + " tributo×" + EQCouncil.TributeFactor.ToString("0.00")
+                               + " boa_vontade×" + EQCouncil.GoodwillFactor.ToString("0.00") + " comércio+" + EQCouncil.Channel("tradePrice").ToString("0.00") + " pesquisa" + EQCouncil.Channel("research").ToString("+0.00;-0.00")
+                               + " defesa_fronteira" + EQCouncil.Channel("borderDefense").ToString("+0.00;-0.00") + " | pensamento alistamento em " + p?.LabelShort + "=" + mood
+                               + " | legitimidade/dia dos decretos=" + EQDecrees.LegitimacyDaily.ToString("+0.##;-0.##;0") + " peso da Infâmia×" + EQDecrees.InfamyFactor.ToString("0.0");
+                    }
+                    bool rev = arg == "revoke";
+                    DecreeDef d = DefDatabase<DecreeDef>.GetNamedSilentFail(rev ? (a.Length > 3 ? a[3] : "") : arg);
+                    if (d == null) return "decreto desconhecido";
+                    string err = rev ? EQDecrees.Revoke(d) : EQDecrees.Enact(d);
+                    return (err != null ? "RECUSADO: " + err : EQDecrees.LastReport) + "\n" + Show();
+                }
+                case "slots": EQDecrees.CheckSlots(); return (EQDecrees.LastReport ?? "-") + "\n" + Show();
                 case "sindfriend":
                 {
                     Faction f = EQMercs.Faction;
