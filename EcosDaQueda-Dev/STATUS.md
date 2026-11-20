@@ -2,7 +2,7 @@
 
 _Só o estado atual e os próximos passos. Manter curto (até ~60 linhas). Detalhe do que já foi feito: `HISTORICO.md` (buscar, não ler inteiro). Visão geral do projeto: `RESUMO.md`._
 
-## Onde estamos (2026-11-19, noite; F4 e N1 ainda não commitados)
+## Onde estamos (2026-11-20)
 
 - **Base pronta e testada:** 4 potências e 7 facções menores (com os Fungobi), ideologias do usuário, xenos próprios, Fama/Infâmia, cerimônia, cargos, permissões, bases, serviços. Hegemony é a camada de estratégia.
 - **Concluídas:** Etapas 1, 2, 3 (3a–3e), 4 (4a, 4b sem Rimesis, 4c em parte), 5 (5a–5g), 8 (quase tudo), 11 (11a–11d), **10d** (menos a otimização do Hegemony), **10e** (2 blocos), **6a** (narrador principal), 10a (só a ferramenta `perf`).
@@ -16,17 +16,18 @@ _Só o estado atual e os próximos passos. Manter curto (até ~60 linhas). Detal
   - **F4 feito: fronteira do jogador.** A colônia (o Hegemony não tem estado para ela; usa a riqueza do mapa) nasce com raio 2 e cresce como as NPCs; botão **"Plantar marco de fronteira"** na colônia (mapa-múndi; 150 de prata, encostado na borda, até 3 por colônia) puxa o território para um lado; colônia no teto recebe carta com lugar sugerido (fundar perto dá +1 tile); o território rende um **tributo em drop pod** a cada 5 dias (`PlayerFrontier.cs`, `Defs/World/EQ_FronteiraJogador.xml`, postfix em `TerritorySolver.Sources`). Detalhe em `MUNDO.md` › F4.
   - **Worldbuilder** (`ferny.worldbuilder`, 3522102833) está no ModsConfig do usuário e no `modpack/`. **The Earth [Odyssey]** (3556550577) fica fora (traz facções próprias); só para refazer o preset: `-Include allyjamy.terraearthodysseyv.wb`.
 - **N1 feito: fundação da nação** (`NACAO.md` › Resultado do N1; `Nation.cs`, `Defs/World/EQ_Nacao.xml`). Com o Hegemony, em qualquer mundo: sem nação não há território, F4, cerimônia nem invasão de conquista contra o jogador. Botão **"Proclamar líder"** no trono (sala do trono, 3 adultos livres) → carta (esperar / comprar parte dos vizinhos / desistir) → revolta dos **Povos da Região** em 1–2 dias (pontos × 1,3) → vitória funda a nação (nome, F4, cerimônia); derrota (líder morto/capturado, 6 h na sala do trono) → 15 dias e +20%. Vassalo de save antigo conta como fundado.
+- **N1b feito: ideologia clássica até a fundação** (`NACAO.md` › Resultado do N1b; `NationFaith.cs`). Cenários do Ecos pulam a tela de ideologia: o jogador começa com uma clássica só dele (o modo clássico global fica desligado, as NPC seguem com as delas). Na vitória da revolta ela vira fluida, abre a escolha de estrutura + 1 meme, o líder proclamado volta à função e a 1ª reforma fica liberada.
 - **Testes:** regressão de 58 roteiros sem erros (2026-11-19, com F3). Depois do F4 e do N1 só rodou o lote do mundo (`mundo-m3b`, `fronteira`, `rendimento`, `fronteira-jogador`) + `nacao`, `cerimonia-coro`, `fungobi`; falta a regressão completa (60 roteiros). O executor começa com a nação fundada (`nation lock` liga a trava).
 
 ## Próximo passo (escolher um; um bloco por sessão)
 
-1. **N1b — ideologia clássica até a fundação** (recomendado; `NACAO.md` › 4): começar no modo clássico, na vitória da revolta abrir a escolha dos primeiros memes e virar fluida. Risco: `classicMode` é lido em ~80 pontos. Antes, rodar a regressão completa. Depois: **N2** (conselho) e **F5**.
+1. **N2 — conselho** (recomendado; `NACAO.md` › 3.4): 3 cadeiras fixas (Embaixador, General, Conselheiro), janela no trono, bônus nos sistemas (F4, frentes, boa vontade, tensão, cerimônias), pensamentos. Antes, o usuário decide ✱6 (bônus e 4ª cadeira). Depois: **N2b** (governo pelos memes).
 2. **F5 — exército toma fronteira**: vitória numa frente de fronteira (`WarDiplomacy.cs`, `Fronts.cs`) passa tiles do perdedor para o vencedor (ex.: marco/posto de ocupação como fonte de território, como os marcos do F4). Depois: **F6** (medição de jogo longo). Pendências do F4: cidades do jogador sem mapa (tomadas/vassalas, com estado no Hegemony) ainda ficam fora da regra; marco é instantâneo (sem caravana de agrimensores).
 3. Sem depender do usuário: traduzir o texto da peça de cenário do Worldbuilder ("Start in world") no mod de tradução; lições de investigação para estruturas de outros mods; medição de jogo longo (10a) para a otimização do Hegemony.
 
 ## Precisa do usuário (✱)
 
-- **Nação (`NACAO.md` › 5):** o N1 seguiu as propostas de ✱1–✱5 (ajustar em `EQ_Nacao.xml` se quiser); faltam bônus do conselho (4ª cadeira?), quais sugestões extras entram; **o que cada meme acrescenta ao governo** (3.7) e se a ideologia clássica vale em todo cenário.
+- **Nação (`NACAO.md` › 5):** o N1 seguiu as propostas de ✱1–✱5 (ajustar em `EQ_Nacao.xml` se quiser); faltam bônus do conselho (4ª cadeira?), quais sugestões extras entram; **o que cada meme acrescenta ao governo** (3.7) e se a ideologia clássica vale em todo cenário (✱9; hoje só nos do Ecos, `classicStartAllScenarios` em `EQ_Nacao.xml`) e se a reforma liberada na fundação fica (`freeReformOnFounding`).
 - **Mundo (`MUNDO.md` › 7):** valores do F4 propostos em `Defs/World/EQ_FronteiraJogador.xml` (raio 2, marco 150 de prata/raio 1,5→2,5/até 3, tributo a cada 5 dias × 0,6). Os do F2 estão com a proposta (cidade nova a 6 tiles, 1 tile a cada 3–5 dias, capital ×1,3, até 6 cidades por potência): ajustar em `Defs/World/EQ_Fronteira.xml` se quiser; onde o jogador começa (tile livre ou fixo por cenário).
 - **3f Pesquisa por manual:** planejar a nova árvore (editor em `http://127.0.0.1:8765/pesquisa`, `python kits/kits.py`; "Gerar Defs" → `Defs/Pesquisa/EQ_Pesquisa.xml`). Árvore **Fazenda** ativa (`kits/pesquisa/Fazenda.json`, 61 pesquisas, mescla de Cultivo/Agricultura/Animais): Lavoura (as 230 plantas: Alimentícia, Souvenir, Recurso com Medicamento e Drogas), Agricultura (mobília, solo, manejo, ferramentas), Pecuária (abrigo, alimentação, abate, criação, produtos). Sementes: `EQSeedRecipes` (87 extrair, 108 propagar). Levantamentos: comandos `agro` e `animais`. Pesquisa original esvaziada pelo editor some da tela (`EQHiddenResearch`, jogo e YART; 11 hoje). Plano das árvores para todo o modpack: **`ARVORES.md`** (22 árvores, mapa em `kits/arvores-mapa.tsv`; decidir munição, pisos, cirurgias e o que fica livre antes de montar). **Início com pouca coisa liberada:** 0 pesquisas no início (`EQ_InicioSemPesquisa.xml`), kit livre de 36 coisas, o resto livre na árvore provisória **Fundamentos** (13 pesquisas); comando `inicio` confere.
 - **Editor de kits/unidades:** nenhuma unidade pronta nem coleção ligada ainda.
@@ -48,6 +49,7 @@ _Só o estado atual e os próximos passos. Manter curto (até ~60 linhas). Detal
 
 ## A conferir pelo usuário (só visual)
 
+- **N1b:** jogo novo num cenário do Ecos pula a tela de ideologia (aba Ideologia mostra a clássica); na vitória da revolta, a janela de memes (estrutura, depois 1 meme; "Voltar" fecha e ela reabre em alguns segundos), a carta "A fé da nação" e a reforma liberada na aba Ideologia.
 - **N1:** botão "Proclamar líder" no trono (ícone, motivo quando desabilitado, menu dos candidatos); carta da proclamação com as 3 opções; carta da revolta; janela de nome na vitória; recusa na aba Reputação › Cerimônia antes da fundação.
 - **F4:** botão "Plantar marco de fronteira" na colônia (mapa-múndi), mira no tile com o motivo da recusa, ícone do marco e o texto de inspeção; cartas "Tributo do território" e "Bordas longe demais".
 

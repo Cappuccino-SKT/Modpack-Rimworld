@@ -101,6 +101,12 @@ Feito com as propostas (✱1: qualquer mundo com o Hegemony; ✱2: 3 adultos liv
 - **Vitória:** carta "Nação fundada", janela de nome da facção, território do F4. **Derrota:** carta, sobra da revolta vai embora, 15 dias de espera.
 - **Fica para o N1b:** ideologia clássica → fluida e o editor de memes na vitória (o líder proclamado já é o líder da ideologia). Não fiz: o número de pessoas na carta é aproximado (pontos/85); a revolta ainda não usa roupas e armas das facções vizinhas (sugestão da 3.3).
 
+### Resultado do N1b (2026-11-19)
+
+- **Começo:** nos cenários do Ecos (com o Hegemony e a Ideology) a tela de escolha de ideologia é pulada e o jogador começa com uma ideologia **clássica só dele**; o modo clássico global do jogo continua desligado (as facções NPC têm as delas; o risco dos ~80 pontos não se aplica). `classicStartAllScenarios` liga em todo cenário (✱9 continua aberto; proposta: só os do Ecos).
+- **Fundação:** a ideologia vira fluida e abre a escolha dos memes do jogo (estrutura + 1, impacto ≤ 2, regras da fluida). Fechar a janela sem terminar faz ela reabrir. Depois: nome, título do líder e ícone novos, o líder proclamado volta à função, e a 1ª reforma já fica liberada (`freeReformOnFounding`) para acertar os preceitos sorteados. Carta "A fé da nação".
+- Jogos sem a ideologia clássica (outro cenário, save antigo) fundam a nação como no N1, sem mexer na fé.
+
 ## 4. Blocos
 
 | Bloco | O que entrega | Depende de |

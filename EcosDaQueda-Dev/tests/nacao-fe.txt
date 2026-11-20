@@ -1,0 +1,19 @@
+# N1b (NACAO.md): ideologia clássica até a fundação. O executor não passa pela tela de ideologia, então "nation classic"
+# troca a ideologia do jogador por uma clássica (o mesmo estado que o patch da tela monta). Proclamação no trono com a
+# ideologia clássica -> revolta -> vitória -> a ideologia vira fluida com estrutura + 1 meme (sorteados sem janela), o
+# líder proclamado volta à função de líder e a primeira reforma fica liberada.
+newgame EQ_Scenario_Andarilhos
+timeout 1500
+nation lock
+nation classic
+wait 1d
+nation
+nation throne
+nation proclaim 0
+nation revolt
+wait 2h
+nation win
+nation faith
+wait 2d
+nation faith
+letters
