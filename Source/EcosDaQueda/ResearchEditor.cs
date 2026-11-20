@@ -24,6 +24,10 @@ namespace EcosDaQueda
         /// <summary>Com o SeedsPlease: cada planta desbloqueada ganha uma receita de semente que exige este projeto
         /// (extrair da colheita, ou propagar a partir de uma semente quando a colheita não dá semente).</summary>
         public bool seeds = true;
+        /// <summary>Pesquisas originais que este projeto substitui (por nome): somem da tela e tudo que dependia delas
+        /// (construções, receitas, pisos, plantas, outros projetos) passa a depender deste. O progresso fica sincronizado
+        /// nos dois sentidos, para o código que pergunta pela original (<see cref="EQAbsorbedResearch"/>).</summary>
+        public List<string> absorbs = new List<string>();
     }
 
     public static class EQResearchUnlocks
@@ -52,6 +56,7 @@ namespace EcosDaQueda
             }
             if (n > 0)
             {
+                EQAbsorbedResearch.Apply();
                 ClearCaches();
                 EQHiddenResearch.Apply(before);
                 // depois de todos os construtores estáticos: o SeedsPlease cria as sementes no dele
@@ -221,6 +226,91 @@ namespace EcosDaQueda
     /// Pesquisas originais que as árvores do editor esvaziaram (liberavam algo antes e agora não liberam nada) somem da
     /// tela de pesquisa (a do jogo e a do YART). Quem as tinha como pré-requisito passa a exigir os pré-requisitos delas.
     /// </summary>
+    /// <summary>Pesquisas originais absorvidas por projetos do editor (<see cref="ResearchEditorExt.absorbs"/>).</summary>
+    public static class EQAbsorbedResearch
+    {
+        /// <summary>original → projeto do editor que a substitui.</summary>
+        public static readonly Dictionary<ResearchProjectDef, ResearchProjectDef> By = new Dictionary<ResearchProjectDef, ResearchProjectDef>();
+        private static readonly AccessTools.FieldRef<ResearchManager, Dictionary<ResearchProjectDef, float>> fProgress =
+            AccessTools.FieldRefAccess<ResearchManager, Dictionary<ResearchProjectDef, float>>("progress");
+
+        public static void Apply()
+        {
+            By.Clear();
+            foreach (ResearchProjectDef r in DefDatabase<ResearchProjectDef>.AllDefsListForReading)
+            {
+                ResearchEditorExt ext = r.GetModExtension<ResearchEditorExt>();
+                if (ext?.absorbs == null) continue;
+                foreach (string name in ext.absorbs)
+                {
+                    ResearchProjectDef o = DefDatabase<ResearchProjectDef>.GetNamedSilentFail(name);
+                    if (o == null) { Log.Warning("[Ecos da Queda] pesquisa " + r.defName + ": absorvida não existe: " + name); continue; }
+                    if (o == r || o.HasModExtension<ResearchEditorExt>()) continue;
+                    if (By.TryGetValue(o, out ResearchProjectDef other)) { Log.Warning("[Ecos da Queda] " + name + " absorvida por " + other.defName + " e " + r.defName); continue; }
+                    By[o] = r;
+                }
+            }
+            if (By.Count == 0) return;
+            foreach (ThingDef t in DefDatabase<ThingDef>.AllDefsListForReading)
+            {
+                t.researchPrerequisites = Swap(t.researchPrerequisites, null);
+                if (t.plant != null) t.plant.sowResearchPrerequisites = Swap(t.plant.sowResearchPrerequisites, null);
+            }
+            foreach (TerrainDef t in DefDatabase<TerrainDef>.AllDefsListForReading)
+                t.researchPrerequisites = Swap(t.researchPrerequisites, null);
+            foreach (RecipeDef rec in DefDatabase<RecipeDef>.AllDefsListForReading)
+            {
+                if (rec.researchPrerequisite != null && By.TryGetValue(rec.researchPrerequisite, out ResearchProjectDef np)) rec.researchPrerequisite = np;
+                rec.researchPrerequisites = Swap(rec.researchPrerequisites, null);
+            }
+            foreach (ResearchProjectDef p in DefDatabase<ResearchProjectDef>.AllDefsListForReading)
+            {
+                if (By.ContainsKey(p)) continue;
+                p.prerequisites = Swap(p.prerequisites, p);
+                p.hiddenPrerequisites = Swap(p.hiddenPrerequisites, p);
+            }
+            Log.Message("[Ecos da Queda] pesquisas absorvidas: " + string.Join(", ", By.Select(kv => kv.Key.defName + "→" + kv.Value.defName)));
+        }
+
+        private static List<ResearchProjectDef> Swap(List<ResearchProjectDef> list, ResearchProjectDef self)
+        {
+            if (list == null || !list.Any(x => x != null && By.ContainsKey(x))) return list;
+            var outList = new List<ResearchProjectDef>();
+            foreach (ResearchProjectDef x in list)
+            {
+                ResearchProjectDef y = x != null && By.TryGetValue(x, out ResearchProjectDef n) ? n : x;
+                if (y != null && y != self && !outList.Contains(y)) outList.Add(y);
+            }
+            return outList;
+        }
+
+        /// <summary>Concluída uma, conclui a outra (sem passar pelo FinishProject, que concluiria os pré-requisitos).</summary>
+        public static void Sync()
+        {
+            ResearchManager rm = Find.ResearchManager;
+            if (rm == null || By.Count == 0) return;
+            Dictionary<ResearchProjectDef, float> prog = fProgress(rm);
+            foreach (KeyValuePair<ResearchProjectDef, ResearchProjectDef> kv in By)
+            {
+                bool of = kv.Key.IsFinished, nf = kv.Value.IsFinished;
+                if (nf && !of && kv.Key.baseCost > 0f) prog[kv.Key] = kv.Key.baseCost;
+                else if (of && !nf && kv.Value.baseCost > 0f) prog[kv.Value] = kv.Value.baseCost;
+            }
+        }
+    }
+
+    [HarmonyPatch(typeof(ResearchManager), nameof(ResearchManager.FinishProject))]
+    public static class Patch_ResearchManager_FinishProject_Absorbed
+    {
+        public static void Postfix() => EQAbsorbedResearch.Sync();
+    }
+
+    [HarmonyPatch(typeof(Game), nameof(Game.FinalizeInit))]
+    public static class Patch_Game_FinalizeInit_Absorbed
+    {
+        public static void Postfix() => EQAbsorbedResearch.Sync();
+    }
+
     public static class EQHiddenResearch
     {
         public static readonly HashSet<ResearchProjectDef> Hidden = new HashSet<ResearchProjectDef>();
@@ -245,6 +335,7 @@ namespace EcosDaQueda
                 try { now = r.UnlockedDefs.Count; } catch { continue; }
                 if (now == 0) Hidden.Add(r);
             }
+            foreach (ResearchProjectDef o in EQAbsorbedResearch.By.Keys) Hidden.Add(o);
             if (Hidden.Count == 0) return;
             foreach (ResearchProjectDef r in DefDatabase<ResearchProjectDef>.AllDefsListForReading)
             {
