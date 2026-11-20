@@ -49,7 +49,7 @@ namespace EcosDaQueda
                 float r = AgeDays >= d.growDays ? d.radiusGrown : d.radius;
                 // A fronteira do jogador cai mais devagar com General e Baluarte (canal borderDefense).
                 if (loser != null && loser.IsPlayer)
-                    r *= 1f - Mathf.Clamp(EQCouncil.Channel("borderDefense"), 0f, d.maxPlayerDefense);
+                    r *= 1f - Mathf.Clamp(EQCouncil.Channel("borderDefense"), -0.5f, d.maxPlayerDefense); // negativo (Fronteiras abertas) cai mais rápido
                 return Mathf.Max(1f, r);
             }
         }

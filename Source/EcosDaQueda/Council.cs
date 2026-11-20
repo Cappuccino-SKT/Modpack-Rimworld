@@ -539,6 +539,7 @@ namespace EcosDaQueda
             {
                 DrawSeat(seat, c, view.width, ref y);
             }
+            DrawDecrees(view.width, ref y);
 
             var gov = EQGov.ActiveDefs();
             if (gov.Count > 0)
@@ -576,6 +577,47 @@ namespace EcosDaQueda
             }
             viewHeight = y + 10f;
             Widgets.EndScrollView();
+        }
+
+        /// <summary>Decretos da nação: em vigor e disponíveis, com prós, contras e o botão.</summary>
+        private static void DrawDecrees(float width, ref float y)
+        {
+            if (!EQLegitimacy.On || EQDecrees.All.Count == 0) return;
+            Text.Font = GameFont.Medium;
+            Widgets.Label(new Rect(0f, y, width, 30f), "Decretos (" + EQDecrees.Active.Count + "/" + EQDecrees.Slots + ")");
+            Text.Font = GameFont.Small;
+            y += 32f;
+            float cd = EQDecrees.CooldownLeftDays;
+            string head = "Uma lei por vez; duas com legitimidade " + LegitimacyDef.Active.decreeSecondSlotAt.ToString("0") + " ou mais. Decretar custa "
+                          + LegitimacyDef.Active.decreeChangeCost.ToString("0") + " de legitimidade; trocar espera " + LegitimacyDef.Active.decreeCooldownDays.ToString("0") + " dias"
+                          + (cd > 0f ? " (faltam " + cd.ToString("0.#") + ")." : ".");
+            float hh = Text.CalcHeight(head, width);
+            GUI.color = Color.gray;
+            Widgets.Label(new Rect(0f, y, width, hh), head);
+            GUI.color = Color.white;
+            y += hh + 4f;
+            foreach (DecreeDef d in EQDecrees.All)
+            {
+                bool on = EQDecrees.IsActive(d);
+                string text = "<b>" + d.LabelCap + "</b>" + (on ? "  <color=#80c080>(em vigor)</color>" : "") + "\n<color=#80c080>+</color> " + d.pros + "\n<color=#d08080>−</color> " + d.cons;
+                float h = Mathf.Max(66f, Text.CalcHeight(text, width - 150f));
+                Rect r = new Rect(0f, y, width, h);
+                if (on) Widgets.DrawHighlight(r);
+                Widgets.Label(new Rect(0f, y, width - 150f, h), text);
+                TooltipHandler.TipRegion(new Rect(0f, y, width - 150f, h), d.description);
+                Rect b = new Rect(width - 140f, y + 4f, 140f, 28f);
+                string why = on ? EQDecrees.CannotRevoke(d) : EQDecrees.CannotEnact(d);
+                if (why != null) GUI.color = Color.gray;
+                if (Widgets.ButtonText(b, on ? "Revogar" : "Decretar"))
+                {
+                    string err = why ?? (on ? EQDecrees.Revoke(d) : EQDecrees.Enact(d));
+                    if (err != null) Messages.Message(err, MessageTypeDefOf.RejectInput, false);
+                }
+                GUI.color = Color.white;
+                if (why != null) TooltipHandler.TipRegion(b, why);
+                y += h + 6f;
+            }
+            y += 6f;
         }
 
         private static void DrawSeat(ActiveSeat seat, WorldComponent_EQCouncil c, float width, ref float y)

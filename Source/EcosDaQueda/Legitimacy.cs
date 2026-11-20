@@ -42,6 +42,8 @@ namespace EcosDaQueda
         // mercenários
         public FactionDef mercFaction;
         public float mercPointsFactor = 0.5f, mercSilverPerPoint = 1f, mercFleeChance = 0.15f;
+        // decretos
+        public float decreeSecondSlotAt = 70f, decreeChangeCost = 5f, decreeCooldownDays = 15f;
 
         public static LegitimacyDef Active => DefDatabase<LegitimacyDef>.AllDefsListForReading.FirstOrDefault();
     }
@@ -127,6 +129,7 @@ namespace EcosDaQueda
             if (c.value >= d.highAbove) foreach (GovEffect fx in d.highEffects) yield return new KeyValuePair<string, float>(fx.Key, fx.amount);
             else if (c.value < d.unrestBelow) foreach (GovEffect fx in d.lowEffects) yield return new KeyValuePair<string, float>(fx.Key, fx.amount);
             if (c.franchiseUntil > Find.TickManager.TicksGame) yield return new KeyValuePair<string, float>("ceremony", d.heliceCeremony);
+            foreach (var kv in EQDecrees.Channels()) yield return kv;
         }
 
         public static Building_Throne FindThrone(Map preferred = null)
@@ -439,6 +442,9 @@ namespace EcosDaQueda
         public float mercDiscount;
         public int lastRaidTick = -999999;
         public List<string> log = new List<string>();
+        /// <summary>Decretos em vigor (defNames) e o tick da última troca.</summary>
+        public List<string> decrees = new List<string>();
+        public int decreeTick = -999999;
 
         public WorldComponent_EQLegitimacy(World world) : base(world) { }
 
@@ -461,7 +467,10 @@ namespace EcosDaQueda
             Scribe_Values.Look(ref mercDiscount, "mercDiscount");
             Scribe_Values.Look(ref lastRaidTick, "lastRaidTick", -999999);
             Scribe_Collections.Look(ref log, "log", LookMode.Value);
+            Scribe_Collections.Look(ref decrees, "decrees", LookMode.Value);
+            Scribe_Values.Look(ref decreeTick, "decreeTick", -999999);
             if (Scribe.mode == LoadSaveMode.PostLoadInit && log == null) log = new List<string>();
+            if (Scribe.mode == LoadSaveMode.PostLoadInit && decrees == null) decrees = new List<string>();
         }
 
         public void Add(float amount, string why, bool silent = false)
@@ -514,6 +523,7 @@ namespace EcosDaQueda
             if (now % GenDate.TicksPerHour == 0)
             {
                 Add(DailyDrift(out _) / 24f, "o dia a dia", silent: true);
+                EQDecrees.CheckSlots();
                 if (value < d.unrestBelow && revolt == null && now >= unrestCooldownUntil && Rand.MTBEventOccurs(d.unrestMtbDays, GenDate.TicksPerDay, GenDate.TicksPerHour))
                     StartRevolt("unrest", d.unrestPointsFactor, false);
             }
@@ -539,9 +549,12 @@ namespace EcosDaQueda
                 {
                     float fame = recs.Max(r => r.fame) / s.maxValue, inf = recs.Max(r => r.infamy) / s.maxValue;
                     if (d.fameDaily * fame >= 0.005f) { v += d.fameDaily * fame; parts.Add("Fama " + (d.fameDaily * fame).ToString("+0.##")); }
-                    if (-d.infamyDaily * inf >= 0.005f) { v += d.infamyDaily * inf; parts.Add("Infâmia " + (d.infamyDaily * inf).ToString("+0.##;-0.##")); }
+                    float infF = EQDecrees.InfamyFactor;
+                    if (-d.infamyDaily * inf * infF >= 0.005f) { v += d.infamyDaily * inf * infF; parts.Add("Infâmia " + (d.infamyDaily * inf * infF).ToString("+0.##;-0.##")); }
                 }
             }
+            float dec = EQDecrees.LegitimacyDaily;
+            if (dec != 0f) { v += dec; parts.Add("decretos " + dec.ToString("+0.##;-0.##")); }
             detail = parts.Count == 0 ? "nada" : string.Join(", ", parts);
             return v;
         }
@@ -779,6 +792,7 @@ namespace EcosDaQueda
                    + (revolt != null ? " revolta=" + revolt.kind + (revolt.started ? " em curso " + revolt.revolters.Count(p => !WorldComponent_EQNation.OutOfFight(p, revolt.map)) + "/" + revolt.revolters.Count : " em " + ((revolt.arriveTick - now) / (float)GenDate.TicksPerDay).ToString("0.0") + "d") + " pontos=" + revolt.points.ToString("0") + (revolt.mercsHired ? " mercs" : "") + (revolt.bribed ? " suborno" : "") : "")
                    + (franchiseUntil > now ? " franquia=" + ((franchiseUntil - now) / (float)GenDate.TicksPerDay).ToString("0") + "d" : "")
                    + (mercDiscount > 0f ? " desconto_merc=" + (mercDiscount * 100f).ToString("0") + "%" : "")
+                   + " decretos=" + (decrees.Count == 0 ? "-" : string.Join(",", decrees)) + "/" + EQDecrees.Slots + (EQDecrees.CooldownLeftDays > 0f ? " espera=" + EQDecrees.CooldownLeftDays.ToString("0.#") + "d" : "")
                    + " fronteira×" + EQLegitimacy.FrontierFactor.ToString("0")
                    + " canais=" + string.Join(",", EQLegitimacy.ExtraChannels().Select(kv => kv.Key + kv.Value.ToString("+0.##;-0.##")))
                    + "\n  últimos: " + string.Join(" | ", log.Skip(Math.Max(0, log.Count - 5)));

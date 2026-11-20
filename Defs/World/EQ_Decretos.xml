@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <!--
+    Decretos da nação (NACAO.md › 3.6 item 5), na janela do Conselho. 1 vaga; 2 com legitimidade decreeSecondSlotAt ou mais
+    (EQ_Legitimidade.xml). Decretar custa decreeChangeCost de legitimidade; decretar ou revogar abre uma espera de
+    decreeCooldownDays dias. Se a legitimidade cair abaixo da 2ª vaga, o decreto mais novo cai sozinho. República: precisa do voto.
+    - effects: canais do conselho (EQ_Conselho.xml); legitimacyDaily: por dia; infamyFactor: peso da Infâmia na legitimidade;
+      thought: pensamento em todos os colonos livres enquanto vale.
+    Valores propostos; ajustar aqui.
+  -->
+  <EcosDaQueda.DecreeDef>
+    <defName>EQ_Decreto_Alistamento</defName>
+    <label>alistamento obrigatório</label>
+    <description>Todo adulto da nação é, a partir de hoje, um reservista. Os uniformes chegam semana que vem; as obrigações, hoje.</description>
+    <pros>Exércitos +15%; revoltas 10% menores.</pros>
+    <cons>Humor −3 em todos os colonos; legitimidade −0,1 por dia.</cons>
+    <effects>
+      <li><channel>army</channel><amount>0.15</amount></li>
+      <li><channel>revolt</channel><amount>-0.10</amount></li>
+    </effects>
+    <legitimacyDaily>-0.1</legitimacyDaily>
+    <thought>EQ_Decreto_Alistamento</thought>
+  </EcosDaQueda.DecreeDef>
+
+  <EcosDaQueda.DecreeDef>
+    <defName>EQ_Decreto_Pedagio</defName>
+    <label>pedágio nas estradas</label>
+    <description>Cada estrada do território ganha uma cancela, um funcionário e uma tabela de preços que muda conforme o humor do funcionário.</description>
+    <pros>Tributo do território +20%.</pros>
+    <cons>Boa vontade ganha com todas as facções −10%.</cons>
+    <effects>
+      <li><channel>tribute</channel><amount>0.20</amount></li>
+      <li><channel>goodwill</channel><amount>-0.10</amount></li>
+    </effects>
+  </EcosDaQueda.DecreeDef>
+
+  <EcosDaQueda.DecreeDef>
+    <defName>EQ_Decreto_FronteirasAbertas</defName>
+    <label>fronteiras abertas</label>
+    <description>Entra quem quiser, sai quem puder. A placa na divisa diz "bem-vindos"; a de trás, ninguém leu.</description>
+    <pros>Boa vontade ganha +15%; comércio +3%.</pros>
+    <cons>Postos de ocupação inimigos crescem mais: defesa da fronteira −25%.</cons>
+    <effects>
+      <li><channel>goodwill</channel><amount>0.15</amount></li>
+      <li><channel>tradePrice</channel><amount>0.03</amount></li>
+      <li><channel>borderDefense</channel><amount>-0.25</amount></li>
+    </effects>
+  </EcosDaQueda.DecreeDef>
+
+  <EcosDaQueda.DecreeDef>
+    <defName>EQ_Decreto_MinisterioVerdade</defName>
+    <label>Ministério da Verdade</label>
+    <description>A nação sempre teve razão, inclusive nas vezes em que não teve. O Ministério cuida para que os registros concordem.</description>
+    <pros>Legitimidade +0,2 por dia; a Infâmia tira metade da legitimidade.</pros>
+    <cons>Pesquisa −10% (os livros passam pela censura antes).</cons>
+    <effects>
+      <li><channel>research</channel><amount>-0.10</amount></li>
+    </effects>
+    <legitimacyDaily>0.2</legitimacyDaily>
+    <infamyFactor>0.5</infamyFactor>
+  </EcosDaQueda.DecreeDef>
+
+  <ThoughtDef>
+    <defName>EQ_Decreto_Alistamento</defName>
+    <workerClass>EcosDaQueda.ThoughtWorker_EQDecree</workerClass>
+    <validWhileDespawned>true</validWhileDespawned>
+    <stages>
+      <li>
+        <label>alistamento obrigatório</label>
+        <description>Agora sou reservista. Ninguém me perguntou, mas assinaram por mim com muita convicção.</description>
+        <baseMoodEffect>-3</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+</Defs>

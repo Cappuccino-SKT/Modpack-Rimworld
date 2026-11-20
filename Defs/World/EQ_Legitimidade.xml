@@ -76,6 +76,10 @@
     <mercPointsFactor>0.5</mercPointsFactor>
     <mercSilverPerPoint>1</mercSilverPerPoint>
     <mercFleeChance>0.15</mercFleeChance>
+    <!-- Decretos (EQ_Decretos.xml): 2ª vaga com esta legitimidade, custo de decretar, espera depois de decretar/revogar. -->
+    <decreeSecondSlotAt>70</decreeSecondSlotAt>
+    <decreeChangeCost>5</decreeChangeCost>
+    <decreeCooldownDays>15</decreeCooldownDays>
   </EcosDaQueda.LegitimacyDef>
 
   <!-- Mercenários: o Sindicato do Saque é inimigo permanente, mas a Seção de Contratos dele (oculta, neutra) trabalha para quem paga.
