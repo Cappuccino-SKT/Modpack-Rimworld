@@ -1,0 +1,32 @@
+# F5b (MUNDO.md): frente de fronteira de uma potência hostil contra a nação do jogador. Sem nação não abre; com a nação
+# fundada abre (milícia pelos colonos × exército), resolve sozinha (posto de ocupação na terra do perdedor, legitimidade),
+# e com a caravana no mapa (só o lado atacante gera soldados; opção "Defender a fronteira").
+newgame EQ_Scenario_Andarilhos
+timeout 2400
+council recruit 3
+nation lock
+wait 1d
+frontierskip 20
+forces playerborder Forja hostile
+nation throne
+nation proclaim 0
+nation revolt
+nation win
+wait 2h
+forces playerborder Forja hostile
+forces playerborder Forja hostile anywhere
+forces playerfront
+forces playerfront abstract
+forces playerborder Forja hostile anywhere
+legit decree EQ_Decreto_Alistamento
+forces playerborder Forja hostile anywhere
+occupation clear
+forces playerborder Forja hostile anywhere
+forces playerfront visit
+forces playerfront resolve def
+legit
+forces playerborder Forja hostile anywhere
+forces playerfront resolve atk
+legit
+occupation
+letters

@@ -149,7 +149,15 @@ Riscos: o Worldbuilder é recente e grande (65 MB); pode brigar com mods de mund
 - **Retomada:** vencer uma frente a até 3 tiles de um posto do perdedor derruba o posto (e planta o do vencedor). Até 4 postos por facção (o mais antigo é abandonado). Posto de facção derrotada some; posto do jogador some se a nação não estiver fundada.
 - **Jogador:** perde terra para postos (carta "Fronteira ocupada") e ganha com os seus. O canal **`borderDefense`** encolhe o raio dos postos contra a nação: General 25% (pela perícia), Baluarte 30% (até 60%).
 - **Medição** (roteiro `ocupacao.txt`, comando `occupation`): no mundo fixo as potências ainda não se encostam com 30 dias de fronteira (a frente fica no meio do caminho entre as cidades). Posto do Coro na terra da Forja: 2 tiles com 1 dia, 15 depois de crescido (a Forja cai de 22 para 11 em volta); posto contra o jogador tira 8–9 tiles; posto do jogador ganha 15.
-- **Fica para depois:** postos não têm guarnição nem podem ser atacados no mapa (só caem por outra frente); a frente de fronteira ainda nasce só entre potências em guerra (10d), então o jogador só perde/ganha terra quando entra numa (ou pelo teste); a ocupação não muda a prosperidade das cidades.
+- **Fica para depois:** postos não têm guarnição nem podem ser atacados no mapa (só caem por outra frente); a ocupação não muda a prosperidade das cidades. (A frente contra o jogador veio no F5b.)
+
+### Resultado do F5b (2026-11-20): frente contra a nação do jogador
+
+- **Quando:** com a nação fundada de verdade, uma potência **hostil ao jogador** com cidade a até 30 tiles de uma colônia (ou com território encostado, pelo Hegemony) tem 15% por dia de abrir uma frente de fronteira contra a nação; uma de cada vez, 10 dias de folga por par (`EQWarDiplomacy.PlayerBorderFronts`, junto do dia das tensões).
+- **Lados:** a potência ataca com metade da guarnição da cidade mais próxima (8–40); a **milícia da nação** defende com (6 + 1,5 × adultos livres) × fator de exército (General, Alistamento, memes), 8–40.
+- **Sem ninguém lá:** em 3 dias decide-se sozinha pela força (carta "Fronteira defendida" ou "Fronteira perdida"). **Com a caravana** ("Defender a fronteira" no mapa-múndi): mapa de trincheira, só o atacante gera soldados (o lado do jogador é a caravana; se ela sair, a trincheira cai).
+- **Resultado:** o mesmo da frente entre potências (F5): posto de ocupação do vencedor na terra do perdedor, retomada dos postos por perto; legitimidade +6/−8 (N3). Tesouro e guarnição só mexem do lado da potência.
+- **Fica para depois:** postos com guarnição/atacáveis no mapa; a milícia não gera soldados no mapa (só a força abstrata).
 
 ## 5. Blocos (ordem sugerida)
 
