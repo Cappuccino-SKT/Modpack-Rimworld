@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <!--
+    N1 (NACAO.md): fundação da nação do jogador. Só vale com o Hegemony (em qualquer mundo).
+    - Antes da fundação: sem território no Hegemony, sem marco/tributo/carta de cidade nova (F4), sem submissão,
+      e o Hegemony não manda invasões de conquista contra o jogador (veto InvasionTarget). Raids comuns continuam.
+    - Proclamação: botão "Proclamar líder" no trono, numa sala do trono válida, com pelo menos minAdults adultos livres.
+      O escolhido vira o líder da ideologia. A revolta chega em revoltDelayMinDays a revoltDelayMaxDays dias.
+    - Revolta: facção revoltFaction, pontos de raid do mapa × revoltPointsFactor × (1 + failGrowth)^falhas, entre
+      revoltMinPoints e revoltMaxPoints. Suborno na carta: bribeSilverPerPoint de prata por ponto tira bribeMinCut a bribeMaxCut.
+    - Vitória (todos mortos, caídos, presos ou fugidos): nação fundada. Derrota (líder morto/capturado, ou revoltosos
+      throneHoldHours horas na sala do trono): nova tentativa em retryDays dias.
+  -->
+  <EcosDaQueda.NationDef>
+    <defName>EQ_Nacao</defName>
+    <label>nação do jogador</label>
+    <minAdults>3</minAdults>
+    <revoltDelayMinDays>1</revoltDelayMinDays>
+    <revoltDelayMaxDays>2</revoltDelayMaxDays>
+    <revoltPointsFactor>1.3</revoltPointsFactor>
+    <revoltMinPoints>200</revoltMinPoints>
+    <revoltMaxPoints>8000</revoltMaxPoints>
+    <failGrowth>0.2</failGrowth>
+    <retryDays>15</retryDays>
+    <throneHoldHours>6</throneHoldHours>
+    <bribeMinCut>0.30</bribeMinCut>
+    <bribeMaxCut>0.40</bribeMaxCut>
+    <bribeSilverPerPoint>0.6</bribeSilverPerPoint>
+    <revoltFaction>EQ_Faction_PovosDaRegiao</revoltFaction>
+  </EcosDaQueda.NationDef>
+
+  <LetterDef ParentName="CustomChoiceLetterBase">
+    <defName>EQ_ProclamationLetter</defName>
+    <letterClass>EcosDaQueda.ChoiceLetter_EQProclamation</letterClass>
+    <color>(0.8, 0.35, 0.35)</color>
+    <flashColor>(0.9, 0.4, 0.4)</flashColor>
+  </LetterDef>
+
+  <FactionDef ParentName="FactionBase">
+    <defName>EQ_Faction_PovosDaRegiao</defName>
+    <label>Povos da Região</label>
+    <description>Não é bem uma facção: é a vizinhança. Agricultores, andarilhos, veteranos de guerras que ninguém lembra e um síndico com um abaixo-assinado, unidos pela convicção de que ninguém manda na região. Aparecem quando alguém se proclama dono dela.</description>
+    <pawnSingular>vizinho</pawnSingular>
+    <pawnsPlural>vizinhos</pawnsPlural>
+    <fixedName>Associação de Moradores da Região</fixedName>
+    <leaderTitle>síndico</leaderTitle>
+    <categoryTag>EQ_PovosDaRegiao</categoryTag>
+    <requiredCountAtGameStart>1</requiredCountAtGameStart>
+    <maxConfigurableAtWorldCreation>1</maxConfigurableAtWorldCreation>
+    <displayInFactionSelection>false</displayInFactionSelection>
+    <canGenerateQuestSites>false</canGenerateQuestSites>
+    <hidden>true</hidden>
+    <permanentEnemy>true</permanentEnemy>
+    <autoFlee>true</autoFlee>
+    <canStageAttacks>false</canStageAttacks>
+    <rescueesCanJoin>true</rescueesCanJoin>
+    <humanlikeFaction>true</humanlikeFaction>
+    <techLevel>Industrial</techLevel>
+    <fixedIdeo>true</fixedIdeo>
+    <ideoName>Assembleia Geral</ideoName>
+    <ideoDescription>A crença, firme e votada por aclamação, de que todo rei é só um vizinho que esqueceu de pedir licença.</ideoDescription>
+    <hiddenIdeo>true</hiddenIdeo>
+    <factionIconPath>World/WorldObjects/Expanding/Town</factionIconPath>
+    <colorSpectrum>
+      <li>(0.62, 0.50, 0.36)</li>
+    </colorSpectrum>
+    <backstoryFilters>
+      <li>
+        <categories>
+          <li>Outlander</li>
+        </categories>
+        <commonality>0.6</commonality>
+      </li>
+      <li>
+        <categories>
+          <li>Tribal</li>
+        </categories>
+        <commonality>0.25</commonality>
+      </li>
+      <li>
+        <categories>
+          <li>Pirate</li>
+        </categories>
+        <commonality>0.15</commonality>
+      </li>
+    </backstoryFilters>
+    <raidCommonalityFromPointsCurve>
+      <points>
+        <li>(0, 0)</li>
+      </points>
+    </raidCommonalityFromPointsCurve>
+    <maxPawnCostPerTotalPointsCurve>
+      <points>
+        <li>(0, 50)</li>
+        <li>(400, 100)</li>
+        <li>(2000, 200)</li>
+        <li>(10000, 10000)</li>
+      </points>
+    </maxPawnCostPerTotalPointsCurve>
+    <pawnGroupMakers>
+      <li>
+        <kindDef>Combat</kindDef>
+        <commonality>100</commonality>
+        <options>
+          <EQ_Revolta_Sindico>1</EQ_Revolta_Sindico>
+          <Villager>3</Villager>
+          <Drifter>6</Drifter>
+          <Scavenger>4</Scavenger>
+          <Tribal_Warrior>5</Tribal_Warrior>
+          <Tribal_Archer>3</Tribal_Archer>
+          <Town_Guard>3</Town_Guard>
+          <Mercenary_Gunner>2</Mercenary_Gunner>
+          <Mercenary_Slasher>1.5</Mercenary_Slasher>
+        </options>
+      </li>
+    </pawnGroupMakers>
+  </FactionDef>
+
+  <PawnKindDef ParentName="CouncilmanBase">
+    <defName>EQ_Revolta_Sindico</defName>
+    <label>síndico</label>
+    <labelPlural>síndicos</labelPlural>
+    <defaultFactionDef>EQ_Faction_PovosDaRegiao</defaultFactionDef>
+    <combatPower>45</combatPower>
+    <factionLeader>true</factionLeader>
+    <isFighter>true</isFighter>
+  </PawnKindDef>
+</Defs>

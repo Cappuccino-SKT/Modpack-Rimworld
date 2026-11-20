@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <!--
+    Fronteiras vivas, F4 (MUNDO.md): a fronteira do jogador, só no mundo fixo (com a fronteira que cresce, F2).
+    - Colônia: o território nasce com raio startRadius e cresce 1 tile a cada daysPerTilePoor (riqueza do mapa
+      ≤ poorWealth) a daysPerTileRich (≥ richWealth) dias, até o raio natural do Hegemony pela riqueza × capMultiplier.
+    - Marco de fronteira (botão na colônia, no mapa-múndi): num tile a até markerMaxFromBorder de um tile do jogador
+      e até markerMaxDistance da colônia; custa markerCostSilver de prata do mapa; vale depois de markerSetupDays; reivindica
+      markerRadius em volta (markerRadiusGrown depois de markerGrowDays). Até markersPerColony por colônia.
+    - Colônia no teto: carta com um lugar sugerido (regra da cidade nova do F2); fundar a até suggestNearTiles dali em
+      suggestValidDays dias dá newColonyBonusTiles de fronteira. Uma carta a cada suggestCooldownDays.
+    - Tributo: o rendimento do território (F3) acumula por colônia e chega em drop pod a cada tributeIntervalDays,
+      × tributeFactor (prosperidade vira prata × prosperityToSilver). Valores propostos (✱ usuário ajusta).
+  -->
+  <EcosDaQueda.PlayerFrontierDef>
+    <defName>EQ_FronteiraJogador</defName>
+    <label>fronteira do jogador</label>
+    <startRadius>2</startRadius>
+    <daysPerTilePoor>5</daysPerTilePoor>
+    <daysPerTileRich>3</daysPerTileRich>
+    <poorWealth>20000</poorWealth>
+    <richWealth>150000</richWealth>
+    <capMultiplier>1</capMultiplier>
+    <markerRadius>1.5</markerRadius>
+    <markerRadiusGrown>2.5</markerRadiusGrown>
+    <markerGrowDays>10</markerGrowDays>
+    <markerSetupDays>2</markerSetupDays>
+    <markersPerColony>3</markersPerColony>
+    <markerMaxDistance>10</markerMaxDistance>
+    <markerMaxFromBorder>1.5</markerMaxFromBorder>
+    <markerCostSilver>150</markerCostSilver>
+    <suggestCooldownDays>30</suggestCooldownDays>
+    <suggestValidDays>60</suggestValidDays>
+    <suggestNearTiles>2</suggestNearTiles>
+    <newColonyBonusTiles>1</newColonyBonusTiles>
+    <maxPlayerColonies>4</maxPlayerColonies>
+    <tributeIntervalDays>5</tributeIntervalDays>
+    <tributeFactor>0.6</tributeFactor>
+    <prosperityToSilver>0.3</prosperityToSilver>
+    <tributeMinTiles>3</tributeMinTiles>
+  </EcosDaQueda.PlayerFrontierDef>
+
+  <WorldObjectDef>
+    <defName>EQ_FrontierMarker</defName>
+    <label>marco de fronteira</label>
+    <description>Uma estaca, uma placa pintada à mão ("PROPRIEDADE DA COLÔNIA, NÃO ENTRE, ISSO VALE PARA VOCÊ") e a convicção de que isso basta. Por enquanto, basta.</description>
+    <worldObjectClass>EcosDaQueda.WorldObject_EQFrontierMarker</worldObjectClass>
+    <texture>World/WorldObjects/Sites/GenericSite</texture>
+    <expandingIcon>true</expandingIcon>
+    <expandingIconTexture>World/WorldObjects/Expanding/SurveySiteExpanding</expandingIconTexture>
+    <expandingIconPriority>60</expandingIconPriority>
+    <canHaveFaction>true</canHaveFaction>
+    <selectable>true</selectable>
+    <saved>true</saved>
+  </WorldObjectDef>
+</Defs>

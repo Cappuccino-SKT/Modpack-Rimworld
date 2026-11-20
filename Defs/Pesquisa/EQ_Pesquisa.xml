@@ -3,23 +3,23 @@
 <Defs>
 
   <ResearchTabDef>
-    <defName>EQ_RTab_Cultivo</defName>
-    <label>Cultivo</label>
-    <generalTitle>Cultivo</generalTitle>
-    <generalDescription>Cultivos separados em Alimentícia (frutífera, vegetal, fúngica), Souvenir e Recurso (tecido, madeira, medicamento, drogas, outros), do nível I ao IV. Arroz, batata, milho e feno continuam livres, sem pesquisa.</generalDescription>
+    <defName>EQ_RTab_Fazenda</defName>
+    <label>Fazenda</label>
+    <generalTitle>Fazenda</generalTitle>
+    <generalDescription>Tudo o que envolve fazenda. Lavoura: as plantas, em Alimentícia (frutífera, vegetal, fúngica), Souvenir e Recurso (tecido, madeira, medicamento, drogas, outros). Agricultura: mobília, solo, manejo e ferramentas. Pecuária: abrigo, alimentação, abate, criação e produtos.</generalDescription>
   </ResearchTabDef>
 
-  <!-- Alimentícia &gt; Frutífera &gt; nível I -->
+  <!-- Fazenda &gt; Lavoura &gt; Frutífera &gt; nível I -->
   <ResearchProjectDef>
-    <defName>EQ_R_Cultivo_Frutifera_1</defName>
+    <defName>EQ_R_Fazenda_Lav_Frutifera_1</defName>
     <label>Frutífera I: Pomar de quintal</label>
     <description>Árvores e arbustos de fruta que crescem rápido e não pedem muito. A fome também não pede.</description>
     <baseCost>300</baseCost>
     <techLevel>Neolithic</techLevel>
-    <tab>EQ_RTab_Cultivo</tab>
+    <tab>EQ_RTab_Fazenda</tab>
     <researchViewX>0</researchViewX>
     <researchViewY>0</researchViewY>
-    <prerequisites><li>EQ_R_Cultivo_Madeira_1</li></prerequisites>
+    <prerequisites><li>EQ_R_Fazenda_Lav_Madeira_1</li></prerequisites>
     <modExtensions>
       <li Class="EcosDaQueda.ResearchEditorExt">
         <unlocks><li>VEE_Plant_DatePalm</li><li>VCE_PearTree</li><li>VCE_Opuntia</li><li>VCE_BearBerryBush</li></unlocks>
@@ -28,17 +28,17 @@
     </modExtensions>
   </ResearchProjectDef>
 
-  <!-- Alimentícia &gt; Frutífera &gt; nível II -->
+  <!-- Fazenda &gt; Lavoura &gt; Frutífera &gt; nível II -->
   <ResearchProjectDef>
-    <defName>EQ_R_Cultivo_Frutifera_2</defName>
+    <defName>EQ_R_Fazenda_Lav_Frutifera_2</defName>
     <label>Frutífera II: Pomar clássico</label>
     <description>As frutíferas que o Velho Mundo vendia em embalagem plástica. Levam um mês para dar fruta, mas dão muita.</description>
     <baseCost>700</baseCost>
     <techLevel>Medieval</techLevel>
-    <tab>EQ_RTab_Cultivo</tab>
+    <tab>EQ_RTab_Fazenda</tab>
     <researchViewX>2</researchViewX>
     <researchViewY>0</researchViewY>
-    <prerequisites><li>EQ_R_Cultivo_Frutifera_1</li></prerequisites>
+    <prerequisites><li>EQ_R_Fazenda_Lav_Frutifera_1</li></prerequisites>
     <modExtensions>
       <li Class="EcosDaQueda.ResearchEditorExt">
         <unlocks><li>VCE_AppleTree</li><li>VCE_BananaTree</li><li>VCE_CherryTree</li><li>VCE_OrangeTree</li><li>VCE_PeachTree</li><li>VCE_PlumTree</li><li>VBE_LemonTree</li><li>VCE_TreeMango</li><li>VCE_TreeOlive</li><li>VCE_TreeAlmond</li><li>VFEM2_Plant_Grape</li></unlocks>
@@ -47,17 +47,17 @@
     </modExtensions>
   </ResearchProjectDef>
 
-  <!-- Alimentícia &gt; Frutífera &gt; nível III -->
+  <!-- Fazenda &gt; Lavoura &gt; Frutífera &gt; nível III -->
   <ResearchProjectDef>
-    <defName>EQ_R_Cultivo_Frutifera_3</defName>
+    <defName>EQ_R_Fazenda_Lav_Frutifera_3</defName>
     <label>Frutífera III: Frutas de luxo</label>
     <description>Cacau, coco e abacate: solo certo, mão experiente e paciência de quem ainda acredita em sobremesa.</description>
     <baseCost>1500</baseCost>
     <techLevel>Industrial</techLevel>
-    <tab>EQ_RTab_Cultivo</tab>
+    <tab>EQ_RTab_Fazenda</tab>
     <researchViewX>4</researchViewX>
     <researchViewY>0</researchViewY>
-    <prerequisites><li>EQ_R_Cultivo_Frutifera_2</li></prerequisites>
+    <prerequisites><li>EQ_R_Fazenda_Lav_Frutifera_2</li></prerequisites>
     <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
     <modExtensions>
       <li Class="EcosDaQueda.ResearchEditorExt">
@@ -67,17 +67,17 @@
     </modExtensions>
   </ResearchProjectDef>
 
-  <!-- Alimentícia &gt; Frutífera &gt; nível IV -->
+  <!-- Fazenda &gt; Lavoura &gt; Frutífera &gt; nível IV -->
   <ResearchProjectDef>
-    <defName>EQ_R_Cultivo_Frutifera_4</defName>
+    <defName>EQ_R_Fazenda_Lav_Frutifera_4</defName>
     <label>Frutífera IV: Árvores que escorrem</label>
     <description>Xenoflora que produz gosma comestível. Ninguém pergunta de onde vem o gosto.</description>
     <baseCost>3000</baseCost>
     <techLevel>Spacer</techLevel>
-    <tab>EQ_RTab_Cultivo</tab>
+    <tab>EQ_RTab_Fazenda</tab>
     <researchViewX>6</researchViewX>
     <researchViewY>0</researchViewY>
-    <prerequisites><li>EQ_R_Cultivo_Frutifera_3</li></prerequisites>
+    <prerequisites><li>EQ_R_Fazenda_Lav_Frutifera_3</li></prerequisites>
     <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
     <modExtensions>
       <li Class="EcosDaQueda.ResearchEditorExt">
@@ -87,35 +87,35 @@
     </modExtensions>
   </ResearchProjectDef>
 
-  <!-- Alimentícia &gt; Vegetal &gt; nível I -->
+  <!-- Fazenda &gt; Lavoura &gt; Vegetal &gt; nível I -->
   <ResearchProjectDef>
-    <defName>EQ_R_Cultivo_Vegetal_1</defName>
+    <defName>EQ_R_Fazenda_Lav_Vegetal_1</defName>
     <label>Vegetal I: Horta de sobrevivência</label>
     <description>Raízes, folhas e grãos que qualquer um planta e quase nada mata.</description>
     <baseCost>300</baseCost>
     <techLevel>Neolithic</techLevel>
-    <tab>EQ_RTab_Cultivo</tab>
+    <tab>EQ_RTab_Fazenda</tab>
     <researchViewX>0</researchViewX>
     <researchViewY>1</researchViewY>
     <modExtensions>
       <li Class="EcosDaQueda.ResearchEditorExt">
-        <unlocks><li>VCE_Carrot</li><li>VCE_Cabbage</li><li>VCE_Onion</li><li>VCE_Beans</li><li>VCE_Peas</li><li>VCE_Lettuce</li><li>VCE_Cassava</li><li>VCE_SweetPotato</li><li>VCE_Pumpkin</li><li>VCE_Garlic</li><li>VCE_Agave</li><li>VCE_Buckwheat</li><li>VCE_Oats</li><li>VCE_Sunflower</li><li>VCE_Peanut</li><li>VCE_Chickpea</li></unlocks>
+        <unlocks><li>Plant_Rice</li><li>Plant_Potato</li><li>Plant_Corn</li><li>Plant_Haygrass</li><li>VCE_Carrot</li><li>VCE_Cabbage</li><li>VCE_Onion</li><li>VCE_Beans</li><li>VCE_Peas</li><li>VCE_Lettuce</li><li>VCE_Cassava</li><li>VCE_SweetPotato</li><li>VCE_Pumpkin</li><li>VCE_Garlic</li><li>VCE_Agave</li><li>VCE_Buckwheat</li><li>VCE_Oats</li><li>VCE_Sunflower</li><li>VCE_Peanut</li><li>VCE_Chickpea</li></unlocks>
         <branch>EQ_Ramo_Bancada</branch>
       </li>
     </modExtensions>
   </ResearchProjectDef>
 
-  <!-- Alimentícia &gt; Vegetal &gt; nível II -->
+  <!-- Fazenda &gt; Lavoura &gt; Vegetal &gt; nível II -->
   <ResearchProjectDef>
-    <defName>EQ_R_Cultivo_Vegetal_2</defName>
+    <defName>EQ_R_Fazenda_Lav_Vegetal_2</defName>
     <label>Vegetal II: Horta temperada</label>
     <description>Frutas de canteiro, grãos para farinha e temperos. Comida que alguém gostaria de comer.</description>
     <baseCost>700</baseCost>
     <techLevel>Medieval</techLevel>
-    <tab>EQ_RTab_Cultivo</tab>
+    <tab>EQ_RTab_Fazenda</tab>
     <researchViewX>2</researchViewX>
     <researchViewY>1</researchViewY>
-    <prerequisites><li>EQ_R_Cultivo_Vegetal_1</li></prerequisites>
+    <prerequisites><li>EQ_R_Fazenda_Lav_Vegetal_1</li></prerequisites>
     <modExtensions>
       <li Class="EcosDaQueda.ResearchEditorExt">
         <unlocks><li>Plant_Strawberry</li><li>VCE_Blueberry</li><li>VCE_Tomato</li><li>VCE_Eggplant</li><li>VCE_BellPepper</li><li>VCE_Pepper</li><li>VCE_Okra</li><li>VCE_BrusselsSprout</li><li>VCE_Radish</li><li>VCE_Beet</li><li>VCE_Celery</li><li>VCE_Pineapple</li><li>VCE_Wheat</li><li>VCE_Barley</li><li>VCE_Sorghum</li><li>VBE_MintPlant</li><li>VCE_Allspice</li><li>VCE_Sugarcane</li></unlocks>
@@ -124,17 +124,17 @@
     </modExtensions>
   </ResearchProjectDef>
 
-  <!-- Alimentícia &gt; Vegetal &gt; nível III -->
+  <!-- Fazenda &gt; Lavoura &gt; Vegetal &gt; nível III -->
   <ResearchProjectDef>
-    <defName>EQ_R_Cultivo_Vegetal_3</defName>
+    <defName>EQ_R_Fazenda_Lav_Vegetal_3</defName>
     <label>Vegetal III: Solo difícil</label>
     <description>Areia, alagado e caverna: lavouras para os lugares onde a horta comum desiste.</description>
     <baseCost>1500</baseCost>
     <techLevel>Industrial</techLevel>
-    <tab>EQ_RTab_Cultivo</tab>
+    <tab>EQ_RTab_Fazenda</tab>
     <researchViewX>4</researchViewX>
     <researchViewY>1</researchViewY>
-    <prerequisites><li>EQ_R_Cultivo_Vegetal_2</li></prerequisites>
+    <prerequisites><li>EQ_R_Fazenda_Lav_Vegetal_2</li></prerequisites>
     <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
     <modExtensions>
       <li Class="EcosDaQueda.ResearchEditorExt">
@@ -144,17 +144,17 @@
     </modExtensions>
   </ResearchProjectDef>
 
-  <!-- Alimentícia &gt; Vegetal &gt; nível IV -->
+  <!-- Fazenda &gt; Lavoura &gt; Vegetal &gt; nível IV -->
   <ResearchProjectDef>
-    <defName>EQ_R_Cultivo_Vegetal_4</defName>
+    <defName>EQ_R_Fazenda_Lav_Vegetal_4</defName>
     <label>Vegetal IV: Lavoura do colapso</label>
     <description>Batata que gosta de veneno e plantas que dão carne. O progresso não perguntou se você queria.</description>
     <baseCost>3000</baseCost>
     <techLevel>Spacer</techLevel>
-    <tab>EQ_RTab_Cultivo</tab>
+    <tab>EQ_RTab_Fazenda</tab>
     <researchViewX>6</researchViewX>
     <researchViewY>1</researchViewY>
-    <prerequisites><li>EQ_R_Cultivo_Vegetal_3</li></prerequisites>
+    <prerequisites><li>EQ_R_Fazenda_Lav_Vegetal_3</li></prerequisites>
     <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
     <modExtensions>
       <li Class="EcosDaQueda.ResearchEditorExt">
@@ -164,17 +164,17 @@
     </modExtensions>
   </ResearchProjectDef>
 
-  <!-- Alimentícia &gt; Fúngica &gt; nível I -->
+  <!-- Fazenda &gt; Lavoura &gt; Fúngica &gt; nível I -->
   <ResearchProjectDef>
-    <defName>EQ_R_Cultivo_Fungica_1</defName>
+    <defName>EQ_R_Fazenda_Lav_Fungica_1</defName>
     <label>Fúngica I: Fungos de porão</label>
     <description>Cogumelos que crescem no escuro, rápido e sem reclamar. Igual aos colonos.</description>
     <baseCost>300</baseCost>
     <techLevel>Neolithic</techLevel>
-    <tab>EQ_RTab_Cultivo</tab>
+    <tab>EQ_RTab_Fazenda</tab>
     <researchViewX>0</researchViewX>
     <researchViewY>2</researchViewY>
-    <prerequisites><li>EQ_R_Cultivo_Vegetal_1</li></prerequisites>
+    <prerequisites><li>EQ_R_Fazenda_Lav_Vegetal_1</li></prerequisites>
     <modExtensions>
       <li Class="EcosDaQueda.ResearchEditorExt">
         <unlocks><li>Plant_Nutrifungus</li><li>VPE_Plant_Stinker</li></unlocks>
@@ -183,17 +183,17 @@
     </modExtensions>
   </ResearchProjectDef>
 
-  <!-- Alimentícia &gt; Fúngica &gt; nível II -->
+  <!-- Fazenda &gt; Lavoura &gt; Fúngica &gt; nível II -->
   <ResearchProjectDef>
-    <defName>EQ_R_Cultivo_Fungica_2</defName>
+    <defName>EQ_R_Fazenda_Lav_Fungica_2</defName>
     <label>Fúngica II: Fungos de caverna</label>
     <description>Cogumelos que pedem caverna, perícia ou estômago forte.</description>
     <baseCost>700</baseCost>
     <techLevel>Medieval</techLevel>
-    <tab>EQ_RTab_Cultivo</tab>
+    <tab>EQ_RTab_Fazenda</tab>
     <researchViewX>2</researchViewX>
     <researchViewY>2</researchViewY>
-    <prerequisites><li>EQ_R_Cultivo_Fungica_1</li></prerequisites>
+    <prerequisites><li>EQ_R_Fazenda_Lav_Fungica_1</li></prerequisites>
     <modExtensions>
       <li Class="EcosDaQueda.ResearchEditorExt">
         <unlocks><li>Glowstool</li><li>VPE_Plant_Glowcap</li><li>VPE_Plant_Bileceps</li><li>VEE_Plant_MysticCap</li></unlocks>
@@ -202,17 +202,17 @@
     </modExtensions>
   </ResearchProjectDef>
 
-  <!-- Alimentícia &gt; Fúngica &gt; nível III -->
+  <!-- Fazenda &gt; Lavoura &gt; Fúngica &gt; nível III -->
   <ResearchProjectDef>
-    <defName>EQ_R_Cultivo_Fungica_3</defName>
+    <defName>EQ_R_Fazenda_Lav_Fungica_3</defName>
     <label>Fúngica III: Fungos alienígenas</label>
     <description>Esporos de outros biomas. Comestíveis, na maioria das vezes.</description>
     <baseCost>1500</baseCost>
     <techLevel>Industrial</techLevel>
-    <tab>EQ_RTab_Cultivo</tab>
+    <tab>EQ_RTab_Fazenda</tab>
     <researchViewX>4</researchViewX>
     <researchViewY>2</researchViewY>
-    <prerequisites><li>EQ_R_Cultivo_Fungica_2</li></prerequisites>
+    <prerequisites><li>EQ_R_Fazenda_Lav_Fungica_2</li></prerequisites>
     <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
     <modExtensions>
       <li Class="EcosDaQueda.ResearchEditorExt">
@@ -222,14 +222,14 @@
     </modExtensions>
   </ResearchProjectDef>
 
-  <!-- Souvenir &gt; Souvenir &gt; nível I -->
+  <!-- Fazenda &gt; Lavoura &gt; Souvenir &gt; nível I -->
   <ResearchProjectDef>
-    <defName>EQ_R_Cultivo_Souvenir_1</defName>
+    <defName>EQ_R_Fazenda_Lav_Souvenir_1</defName>
     <label>Souvenir I: Jardim selvagem</label>
     <description>Grama e flores do mato. Ninguém come, mas alguém sorri.</description>
     <baseCost>150</baseCost>
     <techLevel>Neolithic</techLevel>
-    <tab>EQ_RTab_Cultivo</tab>
+    <tab>EQ_RTab_Fazenda</tab>
     <researchViewX>0</researchViewX>
     <researchViewY>3.5</researchViewY>
     <modExtensions>
@@ -240,17 +240,17 @@
     </modExtensions>
   </ResearchProjectDef>
 
-  <!-- Souvenir &gt; Souvenir &gt; nível II -->
+  <!-- Fazenda &gt; Lavoura &gt; Souvenir &gt; nível II -->
   <ResearchProjectDef>
-    <defName>EQ_R_Cultivo_Souvenir_2</defName>
+    <defName>EQ_R_Fazenda_Lav_Souvenir_2</defName>
     <label>Souvenir II: Canteiro de flores</label>
     <description>Flores de canteiro e de jardim, para quem já tem tempo de enfeitar o fim do mundo.</description>
     <baseCost>350</baseCost>
     <techLevel>Medieval</techLevel>
-    <tab>EQ_RTab_Cultivo</tab>
+    <tab>EQ_RTab_Fazenda</tab>
     <researchViewX>2</researchViewX>
     <researchViewY>3.5</researchViewY>
-    <prerequisites><li>EQ_R_Cultivo_Souvenir_1</li></prerequisites>
+    <prerequisites><li>EQ_R_Fazenda_Lav_Souvenir_1</li></prerequisites>
     <modExtensions>
       <li Class="EcosDaQueda.ResearchEditorExt">
         <unlocks><li>VEE_Plant_Bluebell</li><li>VEE_Plant_Gardenia</li><li>VEE_Plant_Gentian</li><li>VEE_Plant_Petunia</li><li>VCE_FragrantbloomRose</li><li>VCE_Hyacinth</li><li>VCE_Jasmine</li><li>VCE_Lavender</li><li>VCE_Lily</li><li>VCE_Orchid</li><li>VCE_Plumeria</li><li>VCE_Tulip</li><li>VCE_Vanilla</li><li>VCE_Violet</li><li>VCE_YlangYlang</li></unlocks>
@@ -259,17 +259,17 @@
     </modExtensions>
   </ResearchProjectDef>
 
-  <!-- Souvenir &gt; Souvenir &gt; nível III -->
+  <!-- Fazenda &gt; Lavoura &gt; Souvenir &gt; nível III -->
   <ResearchProjectDef>
-    <defName>EQ_R_Cultivo_Souvenir_3</defName>
+    <defName>EQ_R_Fazenda_Lav_Souvenir_3</defName>
     <label>Souvenir III: Ornamentais raras</label>
     <description>Bonsai, cogumelo vermelho e a flor que faz dormir. Status em vaso.</description>
     <baseCost>750</baseCost>
     <techLevel>Industrial</techLevel>
-    <tab>EQ_RTab_Cultivo</tab>
+    <tab>EQ_RTab_Fazenda</tab>
     <researchViewX>4</researchViewX>
     <researchViewY>3.5</researchViewY>
-    <prerequisites><li>EQ_R_Cultivo_Souvenir_2</li></prerequisites>
+    <prerequisites><li>EQ_R_Fazenda_Lav_Souvenir_2</li></prerequisites>
     <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
     <modExtensions>
       <li Class="EcosDaQueda.ResearchEditorExt">
@@ -279,17 +279,17 @@
     </modExtensions>
   </ResearchProjectDef>
 
-  <!-- Souvenir &gt; Souvenir &gt; nível IV -->
+  <!-- Fazenda &gt; Lavoura &gt; Souvenir &gt; nível IV -->
   <ResearchProjectDef>
-    <defName>EQ_R_Cultivo_Souvenir_4</defName>
+    <defName>EQ_R_Fazenda_Lav_Souvenir_4</defName>
     <label>Souvenir IV: Xenoflores</label>
     <description>Gama: flores de outro mundo que brilham. Lindas, inúteis e caríssimas.</description>
     <baseCost>1500</baseCost>
     <techLevel>Spacer</techLevel>
-    <tab>EQ_RTab_Cultivo</tab>
+    <tab>EQ_RTab_Fazenda</tab>
     <researchViewX>6</researchViewX>
     <researchViewY>3.5</researchViewY>
-    <prerequisites><li>EQ_R_Cultivo_Souvenir_3</li></prerequisites>
+    <prerequisites><li>EQ_R_Fazenda_Lav_Souvenir_3</li></prerequisites>
     <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
     <modExtensions>
       <li Class="EcosDaQueda.ResearchEditorExt">
@@ -299,14 +299,14 @@
     </modExtensions>
   </ResearchProjectDef>
 
-  <!-- Recurso &gt; Tecido &gt; nível I -->
+  <!-- Fazenda &gt; Lavoura &gt; Tecido &gt; nível I -->
   <ResearchProjectDef>
-    <defName>EQ_R_Cultivo_Tecido_1</defName>
+    <defName>EQ_R_Fazenda_Lav_Tecido_1</defName>
     <label>Tecido I: Algodão</label>
     <description>Fibra simples para roupa simples.</description>
     <baseCost>300</baseCost>
     <techLevel>Neolithic</techLevel>
-    <tab>EQ_RTab_Cultivo</tab>
+    <tab>EQ_RTab_Fazenda</tab>
     <researchViewX>0</researchViewX>
     <researchViewY>5</researchViewY>
     <modExtensions>
@@ -317,17 +317,17 @@
     </modExtensions>
   </ResearchProjectDef>
 
-  <!-- Recurso &gt; Tecido &gt; nível II -->
+  <!-- Fazenda &gt; Lavoura &gt; Tecido &gt; nível II -->
   <ResearchProjectDef>
-    <defName>EQ_R_Cultivo_Tecido_2</defName>
+    <defName>EQ_R_Fazenda_Lav_Tecido_2</defName>
     <label>Tecido II: Micofio</label>
     <description>Fio de cogumelo de caverna. Esquenta e cheira a porão.</description>
     <baseCost>700</baseCost>
     <techLevel>Medieval</techLevel>
-    <tab>EQ_RTab_Cultivo</tab>
+    <tab>EQ_RTab_Fazenda</tab>
     <researchViewX>2</researchViewX>
     <researchViewY>5</researchViewY>
-    <prerequisites><li>EQ_R_Cultivo_Tecido_1</li><li>EQ_R_Cultivo_Fungica_1</li></prerequisites>
+    <prerequisites><li>EQ_R_Fazenda_Lav_Tecido_1</li><li>EQ_R_Fazenda_Lav_Fungica_1</li></prerequisites>
     <modExtensions>
       <li Class="EcosDaQueda.ResearchEditorExt">
         <unlocks><li>VPE_Plant_MycothreadMushroom</li></unlocks>
@@ -336,17 +336,17 @@
     </modExtensions>
   </ResearchProjectDef>
 
-  <!-- Recurso &gt; Tecido &gt; nível III -->
+  <!-- Fazenda &gt; Lavoura &gt; Tecido &gt; nível III -->
   <ResearchProjectDef>
-    <defName>EQ_R_Cultivo_Tecido_3</defName>
+    <defName>EQ_R_Fazenda_Lav_Tecido_3</defName>
     <label>Tecido III: Fio do diabo</label>
     <description>Fungo que vira o tecido mais resistente que se planta. O nome é merecido.</description>
     <baseCost>1500</baseCost>
     <techLevel>Industrial</techLevel>
-    <tab>EQ_RTab_Cultivo</tab>
+    <tab>EQ_RTab_Fazenda</tab>
     <researchViewX>4</researchViewX>
     <researchViewY>5</researchViewY>
-    <prerequisites><li>EQ_R_Cultivo_Tecido_2</li></prerequisites>
+    <prerequisites><li>EQ_R_Fazenda_Lav_Tecido_2</li></prerequisites>
     <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
     <modExtensions>
       <li Class="EcosDaQueda.ResearchEditorExt">
@@ -356,17 +356,17 @@
     </modExtensions>
   </ResearchProjectDef>
 
-  <!-- Recurso &gt; Tecido &gt; nível IV -->
+  <!-- Fazenda &gt; Lavoura &gt; Tecido &gt; nível IV -->
   <ResearchProjectDef>
-    <defName>EQ_R_Cultivo_Tecido_4</defName>
+    <defName>EQ_R_Fazenda_Lav_Tecido_4</defName>
     <label>Tecido IV: Septimum</label>
     <description>Planta que dá Ultima, tecido de luxo de outro mundo.</description>
     <baseCost>3000</baseCost>
     <techLevel>Spacer</techLevel>
-    <tab>EQ_RTab_Cultivo</tab>
+    <tab>EQ_RTab_Fazenda</tab>
     <researchViewX>6</researchViewX>
     <researchViewY>5</researchViewY>
-    <prerequisites><li>EQ_R_Cultivo_Tecido_3</li></prerequisites>
+    <prerequisites><li>EQ_R_Fazenda_Lav_Tecido_3</li></prerequisites>
     <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
     <modExtensions>
       <li Class="EcosDaQueda.ResearchEditorExt">
@@ -376,14 +376,14 @@
     </modExtensions>
   </ResearchProjectDef>
 
-  <!-- Recurso &gt; Madeira &gt; nível I -->
+  <!-- Fazenda &gt; Lavoura &gt; Madeira &gt; nível I -->
   <ResearchProjectDef>
-    <defName>EQ_R_Cultivo_Madeira_1</defName>
+    <defName>EQ_R_Fazenda_Lav_Madeira_1</defName>
     <label>Madeira I: Silvicultura básica</label>
     <description>Árvores e cactos comuns que crescem rápido. Lenha para o primeiro inverno.</description>
     <baseCost>300</baseCost>
     <techLevel>Neolithic</techLevel>
-    <tab>EQ_RTab_Cultivo</tab>
+    <tab>EQ_RTab_Fazenda</tab>
     <researchViewX>0</researchViewX>
     <researchViewY>6</researchViewY>
     <modExtensions>
@@ -394,17 +394,17 @@
     </modExtensions>
   </ResearchProjectDef>
 
-  <!-- Recurso &gt; Madeira &gt; nível II -->
+  <!-- Fazenda &gt; Lavoura &gt; Madeira &gt; nível II -->
   <ResearchProjectDef>
-    <defName>EQ_R_Cultivo_Madeira_2</defName>
+    <defName>EQ_R_Fazenda_Lav_Madeira_2</defName>
     <label>Madeira II: Madeiras nobres</label>
     <description>Árvores lentas e grandes. Quem planta não costuma estar vivo para cortar.</description>
     <baseCost>700</baseCost>
     <techLevel>Medieval</techLevel>
-    <tab>EQ_RTab_Cultivo</tab>
+    <tab>EQ_RTab_Fazenda</tab>
     <researchViewX>2</researchViewX>
     <researchViewY>6</researchViewY>
-    <prerequisites><li>EQ_R_Cultivo_Madeira_1</li></prerequisites>
+    <prerequisites><li>EQ_R_Fazenda_Lav_Madeira_1</li></prerequisites>
     <modExtensions>
       <li Class="EcosDaQueda.ResearchEditorExt">
         <unlocks><li>Plant_TreeOak</li><li>Plant_TreeMaple</li><li>Plant_TreeCypress</li><li>Plant_TreeTeak</li><li>Plant_TreeDrago</li><li>VEE_Plant_TreeBirch_Auburn</li><li>VEE_Plant_TreeMaple_Auburn</li><li>VEE_Plant_TreeOak_Auburn</li><li>VEE_Plant_TreePoplar_Auburn</li><li>VEE_Plant_Laurel</li><li>VEE_Plant_GnarledPine</li><li>VEE_Plant_Firewood</li></unlocks>
@@ -413,17 +413,17 @@
     </modExtensions>
   </ResearchProjectDef>
 
-  <!-- Recurso &gt; Madeira &gt; nível III -->
+  <!-- Fazenda &gt; Lavoura &gt; Madeira &gt; nível III -->
   <ResearchProjectDef>
-    <defName>EQ_R_Cultivo_Madeira_3</defName>
+    <defName>EQ_R_Fazenda_Lav_Madeira_3</defName>
     <label>Madeira III: Madeiras resistentes</label>
     <description>Madeira de caverna, de hidroponia, de terra poluída e de biomas exóticos.</description>
     <baseCost>1500</baseCost>
     <techLevel>Industrial</techLevel>
-    <tab>EQ_RTab_Cultivo</tab>
+    <tab>EQ_RTab_Fazenda</tab>
     <researchViewX>4</researchViewX>
     <researchViewY>6</researchViewY>
-    <prerequisites><li>EQ_R_Cultivo_Madeira_2</li></prerequisites>
+    <prerequisites><li>EQ_R_Fazenda_Lav_Madeira_2</li></prerequisites>
     <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
     <modExtensions>
       <li Class="EcosDaQueda.ResearchEditorExt">
@@ -433,17 +433,17 @@
     </modExtensions>
   </ResearchProjectDef>
 
-  <!-- Recurso &gt; Madeira &gt; nível IV -->
+  <!-- Fazenda &gt; Lavoura &gt; Madeira &gt; nível IV -->
   <ResearchProjectDef>
-    <defName>EQ_R_Cultivo_Madeira_4</defName>
+    <defName>EQ_R_Fazenda_Lav_Madeira_4</defName>
     <label>Madeira IV: Xenoflorestas</label>
     <description>Árvores de anima, de carne, de máquina e de outro mundo. A madeira é madeira; o resto é melhor não olhar.</description>
     <baseCost>3000</baseCost>
     <techLevel>Spacer</techLevel>
-    <tab>EQ_RTab_Cultivo</tab>
+    <tab>EQ_RTab_Fazenda</tab>
     <researchViewX>6</researchViewX>
     <researchViewY>6</researchViewY>
-    <prerequisites><li>EQ_R_Cultivo_Madeira_3</li></prerequisites>
+    <prerequisites><li>EQ_R_Fazenda_Lav_Madeira_3</li></prerequisites>
     <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
     <modExtensions>
       <li Class="EcosDaQueda.ResearchEditorExt">
@@ -453,14 +453,14 @@
     </modExtensions>
   </ResearchProjectDef>
 
-  <!-- Recurso &gt; Medicamento &gt; nível I -->
+  <!-- Fazenda &gt; Lavoura &gt; Medicamento &gt; nível I -->
   <ResearchProjectDef>
-    <defName>EQ_R_Cultivo_Medicamento_1</defName>
+    <defName>EQ_R_Fazenda_Lav_Medicamento_1</defName>
     <label>Medicamento I: Ervas de cura</label>
     <description>Raiz da cura e as folhas, pétalas e flores que viram poção e remédio caseiro. Funciona, às vezes.</description>
     <baseCost>300</baseCost>
     <techLevel>Neolithic</techLevel>
-    <tab>EQ_RTab_Cultivo</tab>
+    <tab>EQ_RTab_Fazenda</tab>
     <researchViewX>0</researchViewX>
     <researchViewY>7</researchViewY>
     <modExtensions>
@@ -471,17 +471,17 @@
     </modExtensions>
   </ResearchProjectDef>
 
-  <!-- Recurso &gt; Medicamento &gt; nível II -->
+  <!-- Fazenda &gt; Lavoura &gt; Medicamento &gt; nível II -->
   <ResearchProjectDef>
-    <defName>EQ_R_Cultivo_Medicamento_2</defName>
+    <defName>EQ_R_Fazenda_Lav_Medicamento_2</defName>
     <label>Medicamento II: Trufa-cura</label>
     <description>Fungo de caverna que já sai da terra como remédio.</description>
     <baseCost>700</baseCost>
     <techLevel>Medieval</techLevel>
-    <tab>EQ_RTab_Cultivo</tab>
+    <tab>EQ_RTab_Fazenda</tab>
     <researchViewX>2</researchViewX>
     <researchViewY>7</researchViewY>
-    <prerequisites><li>EQ_R_Cultivo_Medicamento_1</li></prerequisites>
+    <prerequisites><li>EQ_R_Fazenda_Lav_Medicamento_1</li></prerequisites>
     <modExtensions>
       <li Class="EcosDaQueda.ResearchEditorExt">
         <unlocks><li>VPE_Plant_Healtruffle</li></unlocks>
@@ -490,17 +490,17 @@
     </modExtensions>
   </ResearchProjectDef>
 
-  <!-- Recurso &gt; Medicamento &gt; nível III -->
+  <!-- Fazenda &gt; Lavoura &gt; Medicamento &gt; nível III -->
   <ResearchProjectDef>
-    <defName>EQ_R_Cultivo_Medicamento_3</defName>
+    <defName>EQ_R_Fazenda_Lav_Medicamento_3</defName>
     <label>Medicamento III: Farmácia que brota</label>
     <description>Babosa e cogumelo-cura: remédio de verdade, para quem tem areia, caverna e mão firme.</description>
     <baseCost>1500</baseCost>
     <techLevel>Industrial</techLevel>
-    <tab>EQ_RTab_Cultivo</tab>
+    <tab>EQ_RTab_Fazenda</tab>
     <researchViewX>4</researchViewX>
     <researchViewY>7</researchViewY>
-    <prerequisites><li>EQ_R_Cultivo_Medicamento_2</li></prerequisites>
+    <prerequisites><li>EQ_R_Fazenda_Lav_Medicamento_2</li></prerequisites>
     <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
     <modExtensions>
       <li Class="EcosDaQueda.ResearchEditorExt">
@@ -510,14 +510,14 @@
     </modExtensions>
   </ResearchProjectDef>
 
-  <!-- Recurso &gt; Drogas &gt; nível I -->
+  <!-- Fazenda &gt; Lavoura &gt; Drogas &gt; nível I -->
   <ResearchProjectDef>
-    <defName>EQ_R_Cultivo_Drogas_1</defName>
+    <defName>EQ_R_Fazenda_Lav_Drogas_1</defName>
     <label>Drogas I: Vícios de quintal</label>
     <description>Lúpulo, folha de fumo e chá. O primeiro passo de toda economia.</description>
     <baseCost>300</baseCost>
     <techLevel>Neolithic</techLevel>
-    <tab>EQ_RTab_Cultivo</tab>
+    <tab>EQ_RTab_Fazenda</tab>
     <researchViewX>0</researchViewX>
     <researchViewY>8</researchViewY>
     <modExtensions>
@@ -528,17 +528,17 @@
     </modExtensions>
   </ResearchProjectDef>
 
-  <!-- Recurso &gt; Drogas &gt; nível II -->
+  <!-- Fazenda &gt; Lavoura &gt; Drogas &gt; nível II -->
   <ResearchProjectDef>
-    <defName>EQ_R_Cultivo_Drogas_2</defName>
+    <defName>EQ_R_Fazenda_Lav_Drogas_2</defName>
     <label>Drogas II: Lavoura de exportação</label>
     <description>Café, tabaco e psicoide. Rende mais que comida, e todo mundo sabe disso.</description>
     <baseCost>700</baseCost>
     <techLevel>Medieval</techLevel>
-    <tab>EQ_RTab_Cultivo</tab>
+    <tab>EQ_RTab_Fazenda</tab>
     <researchViewX>2</researchViewX>
     <researchViewY>8</researchViewY>
-    <prerequisites><li>EQ_R_Cultivo_Drogas_1</li></prerequisites>
+    <prerequisites><li>EQ_R_Fazenda_Lav_Drogas_1</li></prerequisites>
     <modExtensions>
       <li Class="EcosDaQueda.ResearchEditorExt">
         <unlocks><li>VBE_Plant_Coffee</li><li>VBE_Plant_Tobacco</li><li>Plant_Psychoid</li></unlocks>
@@ -547,17 +547,17 @@
     </modExtensions>
   </ResearchProjectDef>
 
-  <!-- Recurso &gt; Drogas &gt; nível III -->
+  <!-- Fazenda &gt; Lavoura &gt; Drogas &gt; nível III -->
   <ResearchProjectDef>
-    <defName>EQ_R_Cultivo_Drogas_3</defName>
+    <defName>EQ_R_Fazenda_Lav_Drogas_3</defName>
     <label>Drogas III: Fungos da alegria</label>
     <description>Cogumelos que mudam o humor e, de vez em quando, o resto.</description>
     <baseCost>1500</baseCost>
     <techLevel>Industrial</techLevel>
-    <tab>EQ_RTab_Cultivo</tab>
+    <tab>EQ_RTab_Fazenda</tab>
     <researchViewX>4</researchViewX>
     <researchViewY>8</researchViewY>
-    <prerequisites><li>EQ_R_Cultivo_Drogas_2</li></prerequisites>
+    <prerequisites><li>EQ_R_Fazenda_Lav_Drogas_2</li></prerequisites>
     <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
     <modExtensions>
       <li Class="EcosDaQueda.ResearchEditorExt">
@@ -567,14 +567,14 @@
     </modExtensions>
   </ResearchProjectDef>
 
-  <!-- Recurso &gt; Outros &gt; nível I -->
+  <!-- Fazenda &gt; Lavoura &gt; Outros &gt; nível I -->
   <ResearchProjectDef>
-    <defName>EQ_R_Cultivo_Outros_1</defName>
+    <defName>EQ_R_Fazenda_Lav_Outros_1</defName>
     <label>Outros I: Tinturas</label>
     <description>Tintória: cor para um mundo cinza.</description>
     <baseCost>300</baseCost>
     <techLevel>Neolithic</techLevel>
-    <tab>EQ_RTab_Cultivo</tab>
+    <tab>EQ_RTab_Fazenda</tab>
     <researchViewX>0</researchViewX>
     <researchViewY>9</researchViewY>
     <modExtensions>
@@ -585,17 +585,17 @@
     </modExtensions>
   </ResearchProjectDef>
 
-  <!-- Recurso &gt; Outros &gt; nível II -->
+  <!-- Fazenda &gt; Lavoura &gt; Outros &gt; nível II -->
   <ResearchProjectDef>
-    <defName>EQ_R_Cultivo_Outros_2</defName>
+    <defName>EQ_R_Fazenda_Lav_Outros_2</defName>
     <label>Outros II: Óleo e corante</label>
     <description>Canola para óleo e cogumelo-tintura para quem não tem sol.</description>
     <baseCost>700</baseCost>
     <techLevel>Medieval</techLevel>
-    <tab>EQ_RTab_Cultivo</tab>
+    <tab>EQ_RTab_Fazenda</tab>
     <researchViewX>2</researchViewX>
     <researchViewY>9</researchViewY>
-    <prerequisites><li>EQ_R_Cultivo_Outros_1</li></prerequisites>
+    <prerequisites><li>EQ_R_Fazenda_Lav_Outros_1</li></prerequisites>
     <modExtensions>
       <li Class="EcosDaQueda.ResearchEditorExt">
         <unlocks><li>VCE_Canola</li><li>VCE_Tinctshroom</li></unlocks>
@@ -604,17 +604,17 @@
     </modExtensions>
   </ResearchProjectDef>
 
-  <!-- Recurso &gt; Outros &gt; nível III -->
+  <!-- Fazenda &gt; Lavoura &gt; Outros &gt; nível III -->
   <ResearchProjectDef>
-    <defName>EQ_R_Cultivo_Outros_3</defName>
+    <defName>EQ_R_Fazenda_Lav_Outros_3</defName>
     <label>Outros III: Plantas utilitárias</label>
     <description>Cogumelo que apaga fogo, solta gás, dá choque ou esquenta, dardo venenoso e bulbo de combustível.</description>
     <baseCost>1500</baseCost>
     <techLevel>Industrial</techLevel>
-    <tab>EQ_RTab_Cultivo</tab>
+    <tab>EQ_RTab_Fazenda</tab>
     <researchViewX>4</researchViewX>
     <researchViewY>9</researchViewY>
-    <prerequisites><li>EQ_R_Cultivo_Outros_2</li></prerequisites>
+    <prerequisites><li>EQ_R_Fazenda_Lav_Outros_2</li></prerequisites>
     <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
     <modExtensions>
       <li Class="EcosDaQueda.ResearchEditorExt">
@@ -624,21 +624,804 @@
     </modExtensions>
   </ResearchProjectDef>
 
-  <!-- Recurso &gt; Outros &gt; nível IV -->
+  <!-- Fazenda &gt; Lavoura &gt; Outros &gt; nível IV -->
   <ResearchProjectDef>
-    <defName>EQ_R_Cultivo_Outros_4</defName>
+    <defName>EQ_R_Fazenda_Lav_Outros_4</defName>
     <label>Outros IV: Minerais vivos</label>
     <description>Plantas que dão resina, metal e pedra. A geologia desistiu de ser lenta.</description>
     <baseCost>3000</baseCost>
     <techLevel>Spacer</techLevel>
-    <tab>EQ_RTab_Cultivo</tab>
+    <tab>EQ_RTab_Fazenda</tab>
     <researchViewX>6</researchViewX>
     <researchViewY>9</researchViewY>
-    <prerequisites><li>EQ_R_Cultivo_Outros_3</li></prerequisites>
+    <prerequisites><li>EQ_R_Fazenda_Lav_Outros_3</li></prerequisites>
     <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
     <modExtensions>
       <li Class="EcosDaQueda.ResearchEditorExt">
         <unlocks><li>AB_KeeningCordax</li><li>AB_LivingAlcyonite</li><li>AB_Tooth</li></unlocks>
+        <branch>EQ_Ramo_Bancada</branch>
+      </li>
+    </modExtensions>
+  </ResearchProjectDef>
+
+  <!-- Fazenda &gt; Agricultura &gt; Mobília &gt; nível I -->
+  <ResearchProjectDef>
+    <defName>EQ_R_Fazenda_Agr_Mobilia_1</defName>
+    <label>Mobília I: Vasos e jardineiras</label>
+    <description>Vaso e jardineira: horta onde der, até dentro de casa. A primeira propriedade privada de toda colônia.</description>
+    <baseCost>300</baseCost>
+    <techLevel>Neolithic</techLevel>
+    <tab>EQ_RTab_Fazenda</tab>
+    <researchViewX>0</researchViewX>
+    <researchViewY>11</researchViewY>
+    <modExtensions>
+      <li Class="EcosDaQueda.ResearchEditorExt">
+        <unlocks><li>PlantPot</li><li>VFE_PlanterBox</li><li>VFE_PlanterBox_Tilable</li></unlocks>
+        <branch>EQ_Ramo_Bancada</branch>
+      </li>
+    </modExtensions>
+  </ResearchProjectDef>
+
+  <!-- Fazenda &gt; Agricultura &gt; Mobília &gt; nível II -->
+  <ResearchProjectDef>
+    <defName>EQ_R_Fazenda_Agr_Mobilia_2</defName>
+    <label>Mobília II: Vasos finos</label>
+    <description>Vaso de bonsai e vaso longo. Plantar por enfeite é sinal de que a fome passou, por enquanto.</description>
+    <baseCost>700</baseCost>
+    <techLevel>Medieval</techLevel>
+    <tab>EQ_RTab_Fazenda</tab>
+    <researchViewX>2</researchViewX>
+    <researchViewY>11</researchViewY>
+    <prerequisites><li>EQ_R_Fazenda_Agr_Mobilia_1</li></prerequisites>
+    <modExtensions>
+      <li Class="EcosDaQueda.ResearchEditorExt">
+        <unlocks><li>PlantPot_Bonsai</li><li>VFE_LongPlantPot</li></unlocks>
+        <branch>EQ_Ramo_Bancada</branch>
+      </li>
+    </modExtensions>
+  </ResearchProjectDef>
+
+  <!-- Fazenda &gt; Agricultura &gt; Mobília &gt; nível III -->
+  <ResearchProjectDef>
+    <defName>EQ_R_Fazenda_Agr_Mobilia_3</defName>
+    <label>Mobília III: Cultivo sob luz</label>
+    <description>Lâmpada solar e bacias de hidroponia: colheita sem sol, sem estação e sem desculpa.</description>
+    <baseCost>1500</baseCost>
+    <techLevel>Industrial</techLevel>
+    <tab>EQ_RTab_Fazenda</tab>
+    <researchViewX>4</researchViewX>
+    <researchViewY>11</researchViewY>
+    <prerequisites><li>EQ_R_Fazenda_Agr_Mobilia_2</li><li>Electricity</li></prerequisites>
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <modExtensions>
+      <li Class="EcosDaQueda.ResearchEditorExt">
+        <unlocks><li>SunLamp</li><li>HydroponicsBasin</li><li>VFE_Hydroponics_Tilable</li></unlocks>
+        <branch>EQ_Ramo_Bancada</branch>
+      </li>
+    </modExtensions>
+  </ResearchProjectDef>
+
+  <!-- Fazenda &gt; Agricultura &gt; Mobília &gt; nível IV -->
+  <ResearchProjectDef>
+    <defName>EQ_R_Fazenda_Agr_Mobilia_4</defName>
+    <label>Mobília IV: Ecossistemas artificiais</label>
+    <description>Canteiro fechado com luz, solo e clima próprios. A natureza, finalmente sob contrato.</description>
+    <baseCost>3000</baseCost>
+    <techLevel>Spacer</techLevel>
+    <tab>EQ_RTab_Fazenda</tab>
+    <researchViewX>6</researchViewX>
+    <researchViewY>11</researchViewY>
+    <prerequisites><li>EQ_R_Fazenda_Agr_Mobilia_3</li></prerequisites>
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <requiredResearchFacilities><li>MultiAnalyzer</li></requiredResearchFacilities>
+    <modExtensions>
+      <li Class="EcosDaQueda.ResearchEditorExt">
+        <unlocks><li>VFE_Ecosystem</li><li>VFE_Ecosystem_Tilable</li></unlocks>
+        <branch>EQ_Ramo_VelhoMundo</branch>
+      </li>
+    </modExtensions>
+  </ResearchProjectDef>
+
+  <!-- Fazenda &gt; Agricultura &gt; Solo &gt; nível I -->
+  <ResearchProjectDef>
+    <defName>EQ_R_Fazenda_Agr_Solo_1</defName>
+    <label>Solo I: Terra arada</label>
+    <description>Arar o chão para deixar o solo mais fértil. O trabalho mais velho do mundo, e o mais ingrato.</description>
+    <baseCost>300</baseCost>
+    <techLevel>Neolithic</techLevel>
+    <tab>EQ_RTab_Fazenda</tab>
+    <researchViewX>0</researchViewX>
+    <researchViewY>12</researchViewY>
+    <modExtensions>
+      <li Class="EcosDaQueda.ResearchEditorExt">
+        <unlocks><li>VCE_TilledSoil</li></unlocks>
+        <branch>EQ_Ramo_Bancada</branch>
+      </li>
+    </modExtensions>
+  </ResearchProjectDef>
+
+  <!-- Fazenda &gt; Agricultura &gt; Solo &gt; nível II -->
+  <ResearchProjectDef>
+    <defName>EQ_R_Fazenda_Agr_Solo_2</defName>
+    <label>Solo II: Paisagismo</label>
+    <description>Grama plantada e gramado aparado. Solo fértil que alguém insiste em cortar.</description>
+    <baseCost>700</baseCost>
+    <techLevel>Medieval</techLevel>
+    <tab>EQ_RTab_Fazenda</tab>
+    <researchViewX>2</researchViewX>
+    <researchViewY>12</researchViewY>
+    <prerequisites><li>EQ_R_Fazenda_Agr_Solo_1</li></prerequisites>
+    <modExtensions>
+      <li Class="EcosDaQueda.ResearchEditorExt">
+        <unlocks><li>VFEArch_Grass</li><li>VFEArch_LawnPlot</li></unlocks>
+        <branch>EQ_Ramo_Bancada</branch>
+      </li>
+    </modExtensions>
+  </ResearchProjectDef>
+
+  <!-- Fazenda &gt; Agricultura &gt; Solo &gt; nível III -->
+  <ResearchProjectDef>
+    <defName>EQ_R_Fazenda_Agr_Solo_3</defName>
+    <label>Solo III: Solo fúngico</label>
+    <description>Cascalho fúngico e solo fúngico rico: chão para cogumelo crescer onde a terra não presta.</description>
+    <baseCost>1500</baseCost>
+    <techLevel>Industrial</techLevel>
+    <tab>EQ_RTab_Fazenda</tab>
+    <researchViewX>4</researchViewX>
+    <researchViewY>12</researchViewY>
+    <prerequisites><li>EQ_R_Fazenda_Agr_Solo_2</li></prerequisites>
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <modExtensions>
+      <li Class="EcosDaQueda.ResearchEditorExt">
+        <unlocks><li>FungalGravel</li><li>AM_RichFungalGravel</li></unlocks>
+        <branch>EQ_Ramo_Bancada</branch>
+      </li>
+    </modExtensions>
+  </ResearchProjectDef>
+
+  <!-- Fazenda &gt; Agricultura &gt; Manejo &gt; nível I -->
+  <ResearchProjectDef>
+    <defName>EQ_R_Fazenda_Agr_Manejo_1</defName>
+    <label>Manejo I: Sementeira</label>
+    <description>Um canto do chão para separar sementes. Sem semente, a lavoura do ano que vem é só uma ideia.</description>
+    <baseCost>300</baseCost>
+    <techLevel>Neolithic</techLevel>
+    <tab>EQ_RTab_Fazenda</tab>
+    <researchViewX>0</researchViewX>
+    <researchViewY>13</researchViewY>
+    <prerequisites><li>EQ_R_Fazenda_Lav_Vegetal_1</li></prerequisites>
+    <modExtensions>
+      <li Class="EcosDaQueda.ResearchEditorExt">
+        <unlocks><li>SeedExtractionSpot</li></unlocks>
+        <branch>EQ_Ramo_Bancada</branch>
+      </li>
+    </modExtensions>
+  </ResearchProjectDef>
+
+  <!-- Fazenda &gt; Agricultura &gt; Manejo &gt; nível II -->
+  <ResearchProjectDef>
+    <defName>EQ_R_Fazenda_Agr_Manejo_2</defName>
+    <label>Manejo II: Técnicas agrícolas</label>
+    <description>Espantalho e bancada de sementes. Proteger a lavoura e guardar o que sobrou dela.</description>
+    <baseCost>700</baseCost>
+    <techLevel>Medieval</techLevel>
+    <tab>EQ_RTab_Fazenda</tab>
+    <researchViewX>2</researchViewX>
+    <researchViewY>13</researchViewY>
+    <prerequisites><li>EQ_R_Fazenda_Agr_Manejo_1</li><li>EQ_R_Fazenda_Agr_Mobilia_1</li></prerequisites>
+    <modExtensions>
+      <li Class="EcosDaQueda.ResearchEditorExt">
+        <unlocks><li>VFE_Scarecrow</li><li>SeedExtractionBench</li></unlocks>
+        <branch>EQ_Ramo_Bancada</branch>
+      </li>
+    </modExtensions>
+  </ResearchProjectDef>
+
+  <!-- Fazenda &gt; Agricultura &gt; Manejo &gt; nível III -->
+  <ResearchProjectDef>
+    <defName>EQ_R_Fazenda_Agr_Manejo_3</defName>
+    <label>Manejo III: Água e adubo</label>
+    <description>Irrigadores e processador de fertilizante: o esgoto da colônia volta para a horta, como sempre voltou.</description>
+    <baseCost>1500</baseCost>
+    <techLevel>Industrial</techLevel>
+    <tab>EQ_RTab_Fazenda</tab>
+    <researchViewX>4</researchViewX>
+    <researchViewY>13</researchViewY>
+    <prerequisites><li>EQ_R_Fazenda_Agr_Manejo_2</li><li>Plumbing</li></prerequisites>
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <modExtensions>
+      <li Class="EcosDaQueda.ResearchEditorExt">
+        <unlocks><li>VFE_Sprinkler</li><li>IrrigationSprinkler</li><li>BiosolidsComposter</li></unlocks>
+        <branch>EQ_Ramo_Bancada</branch>
+      </li>
+    </modExtensions>
+  </ResearchProjectDef>
+
+  <!-- Fazenda &gt; Agricultura &gt; Ferramentas &gt; nível I -->
+  <ResearchProjectDef>
+    <defName>EQ_R_Fazenda_Agr_Ferramentas_1</defName>
+    <label>Ferramentas I: Machadinha</label>
+    <description>Machadinha de lenhador: corta árvore um pouco mais rápido e, se precisar, outras coisas também.</description>
+    <baseCost>500</baseCost>
+    <techLevel>Medieval</techLevel>
+    <tab>EQ_RTab_Fazenda</tab>
+    <researchViewX>0</researchViewX>
+    <researchViewY>14</researchViewY>
+    <modExtensions>
+      <li Class="EcosDaQueda.ResearchEditorExt">
+        <unlocks><li>VWE_MeleeWeapon_Axe</li></unlocks>
+        <branch>EQ_Ramo_Bancada</branch>
+      </li>
+    </modExtensions>
+  </ResearchProjectDef>
+
+  <!-- Fazenda &gt; Agricultura &gt; Ferramentas &gt; nível II -->
+  <ResearchProjectDef>
+    <defName>EQ_R_Fazenda_Agr_Ferramentas_2</defName>
+    <label>Ferramentas II: Trator Scytheman</label>
+    <description>Veículo de colheita do Velho Mundo. Faz o trabalho de dez colonos e o barulho de cem.</description>
+    <baseCost>1200</baseCost>
+    <techLevel>Industrial</techLevel>
+    <tab>EQ_RTab_Fazenda</tab>
+    <researchViewX>2</researchViewX>
+    <researchViewY>14</researchViewY>
+    <prerequisites><li>EQ_R_Fazenda_Agr_Ferramentas_1</li><li>VVE_BasicVehicles</li></prerequisites>
+    <modExtensions>
+      <li Class="EcosDaQueda.ResearchEditorExt">
+        <unlocks><li>VVE_Scytheman_Blueprint</li></unlocks>
+        <branch>EQ_Ramo_Bancada</branch>
+      </li>
+    </modExtensions>
+  </ResearchProjectDef>
+
+  <!-- Fazenda &gt; Agricultura &gt; Ferramentas &gt; nível III -->
+  <ResearchProjectDef>
+    <defName>EQ_R_Fazenda_Agr_Ferramentas_3</defName>
+    <label>Ferramentas III: Lavradores sem alma</label>
+    <description>Mecanoide agrimãos: planta e colhe sem comer o que planta. Nem reclama do salário, porque não tem.</description>
+    <baseCost>1500</baseCost>
+    <techLevel>Industrial</techLevel>
+    <tab>EQ_RTab_Fazenda</tab>
+    <researchViewX>4</researchViewX>
+    <researchViewY>14</researchViewY>
+    <prerequisites><li>EQ_R_Fazenda_Agr_Ferramentas_2</li><li>BasicMechtech</li></prerequisites>
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <modExtensions>
+      <li Class="EcosDaQueda.ResearchEditorExt">
+        <unlocks><li>Mech_Agrihand</li></unlocks>
+        <branch>EQ_Ramo_Bancada</branch>
+      </li>
+    </modExtensions>
+  </ResearchProjectDef>
+
+  <!-- Fazenda &gt; Agricultura &gt; Ferramentas &gt; nível IV -->
+  <ResearchProjectDef>
+    <defName>EQ_R_Fazenda_Agr_Ferramentas_4</defName>
+    <label>Ferramentas IV: Mão do campo</label>
+    <description>Prótese agrícola que faz o colono plantar e colher muito mais rápido. Ele não pediu, mas agradece.</description>
+    <baseCost>3000</baseCost>
+    <techLevel>Spacer</techLevel>
+    <tab>EQ_RTab_Fazenda</tab>
+    <researchViewX>6</researchViewX>
+    <researchViewY>14</researchViewY>
+    <prerequisites><li>EQ_R_Fazenda_Agr_Ferramentas_3</li></prerequisites>
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <modExtensions>
+      <li Class="EcosDaQueda.ResearchEditorExt">
+        <unlocks><li>FieldHand</li><li>InstallFieldHand</li></unlocks>
+        <branch>EQ_Ramo_Bancada</branch>
+      </li>
+    </modExtensions>
+  </ResearchProjectDef>
+
+  <!-- Fazenda &gt; Pecuária &gt; Abrigo &gt; nível I -->
+  <ResearchProjectDef>
+    <defName>EQ_R_Fazenda_Pec_Abrigo_1</defName>
+    <label>Abrigo I: Curral e ninho</label>
+    <description>Marcador de curral, ponto de dormir, porteira e caixa de ovos. Cercar o jantar antes que ele fuja.</description>
+    <baseCost>300</baseCost>
+    <techLevel>Neolithic</techLevel>
+    <tab>EQ_RTab_Fazenda</tab>
+    <researchViewX>0</researchViewX>
+    <researchViewY>16</researchViewY>
+    <modExtensions>
+      <li Class="EcosDaQueda.ResearchEditorExt">
+        <unlocks><li>PenMarker</li><li>AnimalSleepingSpot</li><li>VFEArch_AnimalGate</li><li>EggBox</li></unlocks>
+        <branch>EQ_Ramo_Bancada</branch>
+      </li>
+    </modExtensions>
+  </ResearchProjectDef>
+
+  <!-- Fazenda &gt; Pecuária &gt; Abrigo &gt; nível II -->
+  <ResearchProjectDef>
+    <defName>EQ_R_Fazenda_Pec_Abrigo_2</defName>
+    <label>Abrigo II: Estábulo</label>
+    <description>Caixa de dormir, cama e portinhola para animais. Bicho descansado rende mais leite, lã e carne.</description>
+    <baseCost>700</baseCost>
+    <techLevel>Medieval</techLevel>
+    <tab>EQ_RTab_Fazenda</tab>
+    <researchViewX>2</researchViewX>
+    <researchViewY>16</researchViewY>
+    <prerequisites><li>EQ_R_Fazenda_Pec_Abrigo_1</li></prerequisites>
+    <modExtensions>
+      <li Class="EcosDaQueda.ResearchEditorExt">
+        <unlocks><li>AnimalSleepingBox</li><li>AnimalBed</li><li>AnimalFlap</li></unlocks>
+        <branch>EQ_Ramo_Bancada</branch>
+      </li>
+    </modExtensions>
+  </ResearchProjectDef>
+
+  <!-- Fazenda &gt; Pecuária &gt; Abrigo &gt; nível III -->
+  <ResearchProjectDef>
+    <defName>EQ_R_Fazenda_Pec_Abrigo_3</defName>
+    <label>Abrigo III: Memorial animal</label>
+    <description>Sarcófago para o bicho de estimação e lajes animalistas. Luto por quem nunca pediu para ser adotado.</description>
+    <baseCost>1500</baseCost>
+    <techLevel>Industrial</techLevel>
+    <tab>EQ_RTab_Fazenda</tab>
+    <researchViewX>4</researchViewX>
+    <researchViewY>16</researchViewY>
+    <prerequisites><li>EQ_R_Fazenda_Pec_Abrigo_2</li><li>ComplexFurniture</li></prerequisites>
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <modExtensions>
+      <li Class="EcosDaQueda.ResearchEditorExt">
+        <unlocks><li>VFE_AnimalSarcophagus</li><li>AnimalistSlab_Medium</li><li>AnimalistSlab_Broad</li></unlocks>
+        <branch>EQ_Ramo_Bancada</branch>
+      </li>
+    </modExtensions>
+  </ResearchProjectDef>
+
+  <!-- Fazenda &gt; Pecuária &gt; Alimentação &gt; nível I -->
+  <ResearchProjectDef>
+    <defName>EQ_R_Fazenda_Pec_Alimentacao_1</defName>
+    <label>Alimentação I: Feno</label>
+    <description>Secar capim para o inverno. Se o bicho come, a colônia come depois.</description>
+    <baseCost>300</baseCost>
+    <techLevel>Neolithic</techLevel>
+    <tab>EQ_RTab_Fazenda</tab>
+    <researchViewX>0</researchViewX>
+    <researchViewY>17</researchViewY>
+    <prerequisites><li>EQ_R_Fazenda_Lav_Vegetal_1</li></prerequisites>
+    <modExtensions>
+      <li Class="EcosDaQueda.ResearchEditorExt">
+        <unlocks><li>Hay</li></unlocks>
+        <branch>EQ_Ramo_Bancada</branch>
+      </li>
+    </modExtensions>
+  </ResearchProjectDef>
+
+  <!-- Fazenda &gt; Pecuária &gt; Alimentação &gt; nível II -->
+  <ResearchProjectDef>
+    <defName>EQ_R_Fazenda_Pec_Alimentacao_2</defName>
+    <label>Alimentação II: Ração</label>
+    <description>Carne e vegetais moídos numa papa que só animal aceita. E alguns colonos, em anos ruins.</description>
+    <baseCost>700</baseCost>
+    <techLevel>Medieval</techLevel>
+    <tab>EQ_RTab_Fazenda</tab>
+    <researchViewX>2</researchViewX>
+    <researchViewY>17</researchViewY>
+    <prerequisites><li>EQ_R_Fazenda_Pec_Alimentacao_1</li><li>EQ_R_Fazenda_Pec_Abate_1</li></prerequisites>
+    <modExtensions>
+      <li Class="EcosDaQueda.ResearchEditorExt">
+        <unlocks><li>Kibble</li></unlocks>
+        <branch>EQ_Ramo_Bancada</branch>
+      </li>
+    </modExtensions>
+  </ResearchProjectDef>
+
+  <!-- Fazenda &gt; Pecuária &gt; Alimentação &gt; nível III -->
+  <ResearchProjectDef>
+    <defName>EQ_R_Fazenda_Pec_Alimentacao_3</defName>
+    <label>Alimentação III: Bico de pasta</label>
+    <description>Pasta nutritiva direto no cocho, por cano. O animal agradece; o colono que comia a mesma pasta, nem tanto.</description>
+    <baseCost>1500</baseCost>
+    <techLevel>Industrial</techLevel>
+    <tab>EQ_RTab_Fazenda</tab>
+    <researchViewX>4</researchViewX>
+    <researchViewY>17</researchViewY>
+    <prerequisites><li>EQ_R_Fazenda_Pec_Alimentacao_2</li><li>NutrientPaste</li></prerequisites>
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <modExtensions>
+      <li Class="EcosDaQueda.ResearchEditorExt">
+        <unlocks><li>VNPE_NutrientPasteFeeder</li></unlocks>
+        <branch>EQ_Ramo_Bancada</branch>
+      </li>
+    </modExtensions>
+  </ResearchProjectDef>
+
+  <!-- Fazenda &gt; Pecuária &gt; Abate &gt; nível I -->
+  <ResearchProjectDef>
+    <defName>EQ_R_Fazenda_Pec_Abate_1</defName>
+    <label>Abate I: Açougue</label>
+    <description>Um canto do chão e uma faca. Todo churrasco começa com uma decisão.</description>
+    <baseCost>300</baseCost>
+    <techLevel>Neolithic</techLevel>
+    <tab>EQ_RTab_Fazenda</tab>
+    <researchViewX>0</researchViewX>
+    <researchViewY>18</researchViewY>
+    <modExtensions>
+      <li Class="EcosDaQueda.ResearchEditorExt">
+        <unlocks><li>ButcherSpot</li></unlocks>
+        <branch>EQ_Ramo_Bancada</branch>
+      </li>
+    </modExtensions>
+  </ResearchProjectDef>
+
+  <!-- Fazenda &gt; Pecuária &gt; Abate &gt; nível II -->
+  <ResearchProjectDef>
+    <defName>EQ_R_Fazenda_Pec_Abate_2</defName>
+    <label>Abate II: Mesa de açougueiro</label>
+    <description>Bancada para carnear rápido e aproveitar mais. Inclusive o que não deveria.</description>
+    <baseCost>700</baseCost>
+    <techLevel>Medieval</techLevel>
+    <tab>EQ_RTab_Fazenda</tab>
+    <researchViewX>2</researchViewX>
+    <researchViewY>18</researchViewY>
+    <prerequisites><li>EQ_R_Fazenda_Pec_Abate_1</li></prerequisites>
+    <modExtensions>
+      <li Class="EcosDaQueda.ResearchEditorExt">
+        <unlocks><li>TableButcher</li></unlocks>
+        <branch>EQ_Ramo_Bancada</branch>
+      </li>
+    </modExtensions>
+  </ResearchProjectDef>
+
+  <!-- Fazenda &gt; Pecuária &gt; Abate &gt; nível III -->
+  <ResearchProjectDef>
+    <defName>EQ_R_Fazenda_Pec_Abate_3</defName>
+    <label>Abate III: Açougue elétrico</label>
+    <description>Serra e moedor elétricos: abate em escala industrial, com a ética de uma também.</description>
+    <baseCost>1500</baseCost>
+    <techLevel>Industrial</techLevel>
+    <tab>EQ_RTab_Fazenda</tab>
+    <researchViewX>4</researchViewX>
+    <researchViewY>18</researchViewY>
+    <prerequisites><li>EQ_R_Fazenda_Pec_Abate_2</li><li>Electricity</li></prerequisites>
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <modExtensions>
+      <li Class="EcosDaQueda.ResearchEditorExt">
+        <unlocks><li>VFE_TableButcherElectric</li></unlocks>
+        <branch>EQ_Ramo_Bancada</branch>
+      </li>
+    </modExtensions>
+  </ResearchProjectDef>
+
+  <!-- Fazenda &gt; Pecuária &gt; Criação &gt; nível I -->
+  <ResearchProjectDef>
+    <defName>EQ_R_Fazenda_Pec_Criacao_1</defName>
+    <label>Criação I: Castração</label>
+    <description>Controlar quem cruza com quem. O rebanho decide pouco, como todo mundo aqui.</description>
+    <baseCost>300</baseCost>
+    <techLevel>Neolithic</techLevel>
+    <tab>EQ_RTab_Fazenda</tab>
+    <researchViewX>0</researchViewX>
+    <researchViewY>19</researchViewY>
+    <modExtensions>
+      <li Class="EcosDaQueda.ResearchEditorExt">
+        <unlocks><li>Sterilize</li></unlocks>
+        <branch>EQ_Ramo_Bancada</branch>
+      </li>
+    </modExtensions>
+  </ResearchProjectDef>
+
+  <!-- Fazenda &gt; Pecuária &gt; Criação &gt; nível II -->
+  <ResearchProjectDef>
+    <defName>EQ_R_Fazenda_Pec_Criacao_2</defName>
+    <label>Criação II: Apicultura</label>
+    <description>Apiário: abelhas fazem mel perto das flores e ferroam perto de todo o resto.</description>
+    <baseCost>700</baseCost>
+    <techLevel>Medieval</techLevel>
+    <tab>EQ_RTab_Fazenda</tab>
+    <researchViewX>2</researchViewX>
+    <researchViewY>19</researchViewY>
+    <prerequisites><li>EQ_R_Fazenda_Pec_Criacao_1</li><li>EQ_R_Fazenda_Pec_Abrigo_1</li></prerequisites>
+    <modExtensions>
+      <li Class="EcosDaQueda.ResearchEditorExt">
+        <unlocks><li>VFEM2_Apiary</li></unlocks>
+        <branch>EQ_Ramo_Bancada</branch>
+      </li>
+    </modExtensions>
+  </ResearchProjectDef>
+
+  <!-- Fazenda &gt; Pecuária &gt; Criação &gt; nível III -->
+  <ResearchProjectDef>
+    <defName>EQ_R_Fazenda_Pec_Criacao_3</defName>
+    <label>Criação III: Zootecnia</label>
+    <description>Banco de dados animal: cada bicho escaneado vira dado. Se o banco queimar, os dados vão junto.</description>
+    <baseCost>1500</baseCost>
+    <techLevel>Industrial</techLevel>
+    <tab>EQ_RTab_Fazenda</tab>
+    <researchViewX>4</researchViewX>
+    <researchViewY>19</researchViewY>
+    <prerequisites><li>EQ_R_Fazenda_Pec_Criacao_2</li></prerequisites>
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <modExtensions>
+      <li Class="EcosDaQueda.ResearchEditorExt">
+        <unlocks><li>AM_AnimalDatabase</li></unlocks>
+        <branch>EQ_Ramo_Bancada</branch>
+      </li>
+    </modExtensions>
+  </ResearchProjectDef>
+
+  <!-- Fazenda &gt; Pecuária &gt; Produtos &gt; nível I -->
+  <ResearchProjectDef>
+    <defName>EQ_R_Fazenda_Pec_Produtos_1</defName>
+    <label>Produtos I: Queijaria</label>
+    <description>Prensa de queijo: o leite que sobrou vira algo que dura o inverno, e cheira como ele.</description>
+    <baseCost>700</baseCost>
+    <techLevel>Medieval</techLevel>
+    <tab>EQ_RTab_Fazenda</tab>
+    <researchViewX>0</researchViewX>
+    <researchViewY>20</researchViewY>
+    <prerequisites><li>EQ_R_Fazenda_Pec_Abrigo_1</li></prerequisites>
+    <modExtensions>
+      <li Class="EcosDaQueda.ResearchEditorExt">
+        <unlocks><li>VCE_CheesePress</li></unlocks>
+        <branch>EQ_Ramo_Bancada</branch>
+      </li>
+    </modExtensions>
+  </ResearchProjectDef>
+
+  <!-- Fazenda &gt; Pecuária &gt; Produtos &gt; nível II -->
+  <ResearchProjectDef>
+    <defName>EQ_R_Fazenda_Pec_Produtos_2</defName>
+    <label>Produtos II: Leite vegetal</label>
+    <description>Extrator que tira leite de grão e semente. Para quem não tem vaca, ou não confia nela.</description>
+    <baseCost>1500</baseCost>
+    <techLevel>Industrial</techLevel>
+    <tab>EQ_RTab_Fazenda</tab>
+    <researchViewX>2</researchViewX>
+    <researchViewY>20</researchViewY>
+    <prerequisites><li>EQ_R_Fazenda_Pec_Produtos_1</li><li>EQ_R_Fazenda_Lav_Vegetal_1</li><li>Electricity</li></prerequisites>
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <modExtensions>
+      <li Class="EcosDaQueda.ResearchEditorExt">
+        <unlocks><li>VCE_VegMilkExtractor</li><li>Milk</li></unlocks>
+        <branch>EQ_Ramo_Bancada</branch>
+      </li>
+    </modExtensions>
+  </ResearchProjectDef>
+
+  <ResearchTabDef>
+    <defName>EQ_RTab_Fundamentos</defName>
+    <label>Fundamentos</label>
+    <generalTitle>Fundamentos</generalTitle>
+    <generalDescription>Árvore provisória: o que era livre no início e não está no kit de sobrevivência (ARVORES.md, Início da partida). Pesquisas baratas; o conteúdo migra para as árvores temáticas quando elas forem montadas.</generalDescription>
+  </ResearchTabDef>
+
+  <!-- Fundamentos &gt; Abrigo -->
+  <ResearchProjectDef>
+    <defName>EQ_R_Fundamentos_Carpintaria</defName>
+    <label>Carpintaria</label>
+    <description>Porta de verdade, coluna, parede de toras, paliçada, cercas e ponte. Sair do buraco começa com uma porta que fecha.</description>
+    <baseCost>250</baseCost>
+    <techLevel>Neolithic</techLevel>
+    <tab>EQ_RTab_Fundamentos</tab>
+    <researchViewX>0</researchViewX>
+    <researchViewY>0</researchViewY>
+    <modExtensions>
+      <li Class="EcosDaQueda.ResearchEditorExt">
+        <unlocks><li>Door</li><li>Column</li><li>VFEArch_LogWall</li><li>VFEArch_FineWall</li><li>VFEM2_Palisade</li><li>VFEArch_PicketFence</li><li>VFEArch_LowFence</li><li>VFEArch_HedgeWall</li><li>VFEArch_InvisibleFence</li><li>Bridge</li><li>AB_ExoticWall</li><li>AB_ExoticDoor</li><li>AB_ExoticColumn</li></unlocks>
+        <branch>EQ_Ramo_Bancada</branch>
+      </li>
+    </modExtensions>
+  </ResearchProjectDef>
+
+  <!-- Fundamentos &gt; Abrigo -->
+  <ResearchProjectDef>
+    <defName>EQ_R_Fundamentos_Alvenaria</defName>
+    <label>Alvenaria rústica</label>
+    <description>Muro de pedra bruta e lajes de pedra: o que não queima também não cai fácil.</description>
+    <baseCost>400</baseCost>
+    <techLevel>Neolithic</techLevel>
+    <tab>EQ_RTab_Fundamentos</tab>
+    <researchViewX>2</researchViewX>
+    <researchViewY>0</researchViewY>
+    <prerequisites><li>EQ_R_Fundamentos_Carpintaria</li></prerequisites>
+    <modExtensions>
+      <li Class="EcosDaQueda.ResearchEditorExt">
+        <unlocks><li>VFEM2_CobblestoneWall_ChunkGranite</li><li>VFEM2_CobblestoneWall_ChunkLimestone</li><li>VFEM2_CobblestoneWall_ChunkMarble</li><li>VFEM2_CobblestoneWall_ChunkSandstone</li><li>VFEM2_CobblestoneWall_ChunkSlate</li><li>VFEM2_CobblestoneWall_ChunkVacstone</li><li>VFEM2_CobblestoneWall_AB_ChunkCragstone</li><li>VFEM2_CobblestoneWall_AB_ChunkMudstone</li><li>VFEM2_CobblestoneWall_AB_ChunkObsidian</li><li>VFEM2_CobblestoneWall_AB_ChunkSlimeStone</li><li>VFEM2_CobblestoneWall_GU_ChunkRoseQuartz</li><li>FlagstoneGranite</li><li>FlagstoneLimestone</li><li>FlagstoneMarble</li><li>FlagstoneSandstone</li><li>FlagstoneSlate</li><li>AB_FlagstoneCragstone</li><li>AB_FlagstoneMudstone</li><li>AB_FlagstoneObsidian</li><li>AB_FlagstoneRoseQuartz</li><li>VFEArch_CobblestoneFloorGranite</li><li>VFEArch_CobblestoneFloorLimestone</li><li>VFEArch_CobblestoneFloorMarble</li><li>VFEArch_CobblestoneFloorSandstone</li><li>VFEArch_CobblestoneFloorSlate</li><li>AB_AsphaltFloor</li><li>AB_AsphaltBridge</li></unlocks>
+        <branch>EQ_Ramo_Bancada</branch>
+      </li>
+    </modExtensions>
+  </ResearchProjectDef>
+
+  <!-- Fundamentos &gt; Abrigo -->
+  <ResearchProjectDef>
+    <defName>EQ_R_Fundamentos_Pisos</defName>
+    <label>Pisos rústicos</label>
+    <description>Terra batida, palha, areia, tábuas, parquete e tapetes. Chão limpo é o primeiro luxo.</description>
+    <baseCost>250</baseCost>
+    <techLevel>Neolithic</techLevel>
+    <tab>EQ_RTab_Fundamentos</tab>
+    <researchViewX>4</researchViewX>
+    <researchViewY>0</researchViewY>
+    <modExtensions>
+      <li Class="EcosDaQueda.ResearchEditorExt">
+        <unlocks><li>VFEArch_PlayerPackedDirt</li><li>StrawMatting</li><li>AB_CompactedSand</li><li>VFEM2_Chemdrench</li><li>WoodPlankFloor</li><li>VFEArch_WoodPlankFloorBirch</li><li>VFEArch_WoodPlankFloorMahogany</li><li>VFEArch_WoodPlankFloorWalnut</li><li>VFEArch_FineWoodenFloor</li><li>VFEArch_FineWoodenFloorBirch</li><li>VFEArch_FineWoodenFloorMahogany</li><li>VFEArch_FineWoodenFloorWalnut</li><li>VFEArch_WoodenParquet</li><li>VFEArch_WoodenParquetBirch</li><li>VFEArch_WoodenParquetMahogany</li><li>VFEArch_WoodenParquetWalnut</li><li>AB_AlienWoodFloors_CrystalWood</li><li>AB_AlienWoodFloors_MushroomStalks</li><li>AB_AlienWoodFloors_RedWood</li><li>RusticRug_Broad</li><li>RusticRug_Medium</li><li>TotemicSlab_Broad</li><li>TotemicSlab_Medium</li><li>SpikecoreFloorStar_Broad</li><li>SpikecoreFloorStar_Medium</li><li>Boards_Totemic</li><li>Plates_Spikecore</li><li>Tile_Transhumanist</li></unlocks>
+        <branch>EQ_Ramo_Bancada</branch>
+      </li>
+    </modExtensions>
+  </ResearchProjectDef>
+
+  <!-- Fundamentos &gt; Casa -->
+  <ResearchProjectDef>
+    <defName>EQ_R_Fundamentos_Mobilia</defName>
+    <label>Mobília rústica</label>
+    <description>Colchonete duplo, berço, cama de pedra, banco, almofada, mesas, tochas negras, capachos e fogueira de pedra.</description>
+    <baseCost>250</baseCost>
+    <techLevel>Neolithic</techLevel>
+    <tab>EQ_RTab_Fundamentos</tab>
+    <researchViewX>0</researchViewX>
+    <researchViewY>1</researchViewY>
+    <prerequisites><li>EQ_R_Fundamentos_Carpintaria</li></prerequisites>
+    <modExtensions>
+      <li Class="EcosDaQueda.ResearchEditorExt">
+        <unlocks><li>BedrollDouble</li><li>Crib</li><li>AM_CubicCrib</li><li>Bed_StoneSlab</li><li>VFE_Bed_StoneSlabDouble</li><li>Stool</li><li>Seat_Cushion</li><li>Table_1x1c</li><li>Table1x2c</li><li>Table2x2c</li><li>Table2x4c</li><li>Table3x3c</li><li>Darktorch</li><li>DarktorchFungus</li><li>LT_DoorMatLeather</li><li>LT_DoorMatBigLeather</li><li>LT_DoorMatCheckerLeather</li><li>LT_DoorMatBigCheckerLeather</li><li>Stone_Campfire</li><li>Stone_DarklightCampfire</li><li>NatureShrine_Small</li><li>NatureShrine_Large</li></unlocks>
+        <branch>EQ_Ramo_Bancada</branch>
+      </li>
+    </modExtensions>
+  </ResearchProjectDef>
+
+  <!-- Fundamentos &gt; Casa -->
+  <ResearchProjectDef>
+    <defName>EQ_R_Fundamentos_Arte</defName>
+    <label>Arte e jogos</label>
+    <description>Mesa de escultor, esculturas, jogo-de-Ur, anel de pedra e ferraduras. Para não enlouquecer antes da hora.</description>
+    <baseCost>250</baseCost>
+    <techLevel>Neolithic</techLevel>
+    <tab>EQ_RTab_Fundamentos</tab>
+    <researchViewX>2</researchViewX>
+    <researchViewY>1</researchViewY>
+    <modExtensions>
+      <li Class="EcosDaQueda.ResearchEditorExt">
+        <unlocks><li>TableSculpting</li><li>SculptureSmall</li><li>SculptureLarge</li><li>SculptureGrand</li><li>SculptureTerror</li><li>GameOfUrBoard</li><li>HoopstoneRing</li><li>HorseshoesPin</li></unlocks>
+        <branch>EQ_Ramo_Bancada</branch>
+      </li>
+    </modExtensions>
+  </ResearchProjectDef>
+
+  <!-- Fundamentos &gt; Casa -->
+  <ResearchProjectDef>
+    <defName>EQ_R_Fundamentos_Armazenamento</defName>
+    <label>Armazenamento rústico</label>
+    <description>Porão, pilha grande de lenha, varal de carne, fosso, tenda, cestos e armeiro.</description>
+    <baseCost>200</baseCost>
+    <techLevel>Neolithic</techLevel>
+    <tab>EQ_RTab_Fundamentos</tab>
+    <researchViewX>4</researchViewX>
+    <researchViewY>1</researchViewY>
+    <modExtensions>
+      <li Class="EcosDaQueda.ResearchEditorExt">
+        <unlocks><li>ASF_CellarWood</li><li>ASF_LargeLogPile</li><li>ASF_MeatRack</li><li>ASF_StoragePit</li><li>ASF_StorageTent</li><li>ASF_WeaponRack</li><li>ASF_WovenBasket</li><li>ASF_WovenBasketDouble</li><li>ASF_WovenBasketTriple</li></unlocks>
+        <branch>EQ_Ramo_Bancada</branch>
+      </li>
+    </modExtensions>
+  </ResearchProjectDef>
+
+  <!-- Fundamentos &gt; Casa -->
+  <ResearchProjectDef>
+    <defName>EQ_R_Fundamentos_Higiene</defName>
+    <label>Higiene rústica</label>
+    <description>Caixa de areia, porta de box e tapete de banheiro. A dignidade também se pesquisa.</description>
+    <baseCost>150</baseCost>
+    <techLevel>Neolithic</techLevel>
+    <tab>EQ_RTab_Fundamentos</tab>
+    <researchViewX>6</researchViewX>
+    <researchViewY>1</researchViewY>
+    <modExtensions>
+      <li Class="EcosDaQueda.ResearchEditorExt">
+        <unlocks><li>LitterBox</li><li>ToiletStallDoor</li><li>BathMat</li></unlocks>
+        <branch>EQ_Ramo_Bancada</branch>
+      </li>
+    </modExtensions>
+  </ResearchProjectDef>
+
+  <!-- Fundamentos &gt; Sustento -->
+  <ResearchProjectDef>
+    <defName>EQ_R_Fundamentos_Cozinha</defName>
+    <label>Cozinha de fogão</label>
+    <description>Fogão a lenha e as refeições boas, luxuosas e gourmet. Comer bem é privilégio de quem pesquisou.</description>
+    <baseCost>300</baseCost>
+    <techLevel>Neolithic</techLevel>
+    <tab>EQ_RTab_Fundamentos</tab>
+    <researchViewX>0</researchViewX>
+    <researchViewY>2</researchViewY>
+    <modExtensions>
+      <li Class="EcosDaQueda.ResearchEditorExt">
+        <unlocks><li>FueledStove</li><li>MealFine</li><li>MealFine_Meat</li><li>MealFine_Veg</li><li>MealLavish</li><li>MealLavish_Meat</li><li>MealLavish_Veg</li><li>VCE_MealGourmet</li></unlocks>
+        <branch>EQ_Ramo_Bancada</branch>
+      </li>
+    </modExtensions>
+  </ResearchProjectDef>
+
+  <!-- Fundamentos &gt; Sustento -->
+  <ResearchProjectDef>
+    <defName>EQ_R_Fundamentos_Roupas</defName>
+    <label>Roupas de couro e pano</label>
+    <description>Capuz, turbante, cocar, máscaras, manto, capa, burca, murça, armadura acolchoada, cinto de tochas, mochila e escudos de vime.</description>
+    <baseCost>250</baseCost>
+    <techLevel>Neolithic</techLevel>
+    <tab>EQ_RTab_Fundamentos</tab>
+    <researchViewX>2</researchViewX>
+    <researchViewY>2</researchViewY>
+    <modExtensions>
+      <li Class="EcosDaQueda.ResearchEditorExt">
+        <unlocks><li>Apparel_HatHood</li><li>Apparel_Headwrap</li><li>Apparel_TribalHeaddress</li><li>Apparel_WarMask</li><li>Apparel_WarVeil</li><li>Apparel_VisageMask</li><li>Apparel_Broadwrap</li><li>Apparel_Slicecap</li><li>Apparel_AuthorityCap</li><li>Apparel_Blindfold</li><li>Apparel_Collar</li><li>Apparel_TortureCrown</li><li>CE_Apparel_ImprovGasMask</li><li>Apparel_BodyStrap</li><li>Apparel_Burka</li><li>Apparel_KidParka</li><li>Apparel_Robe</li><li>Apparel_Cape</li><li>VFEM2_Apparel_Mantle</li><li>VFEM2_Apparel_PaddedArmor</li><li>VFEM2_Apparel_TorchBelt</li><li>CE_Apparel_TribalBackpack</li><li>CE_Apparel_WickerShield</li><li>CE_Apparel_Pavise</li></unlocks>
+        <branch>EQ_Ramo_Bancada</branch>
+      </li>
+    </modExtensions>
+  </ResearchProjectDef>
+
+  <!-- Fundamentos &gt; Sustento -->
+  <ResearchProjectDef>
+    <defName>EQ_R_Fundamentos_Fumo</defName>
+    <label>Fumo e química de quintal</label>
+    <description>Baseado de folha de fumo e psycho. O primeiro comércio de toda colônia.</description>
+    <baseCost>200</baseCost>
+    <techLevel>Neolithic</techLevel>
+    <tab>EQ_RTab_Fundamentos</tab>
+    <researchViewX>4</researchViewX>
+    <researchViewY>2</researchViewY>
+    <modExtensions>
+      <li Class="EcosDaQueda.ResearchEditorExt">
+        <unlocks><li>SmokeleafJoint</li><li>Psycho</li></unlocks>
+        <branch>EQ_Ramo_Bancada</branch>
+      </li>
+    </modExtensions>
+  </ResearchProjectDef>
+
+  <!-- Fundamentos &gt; Defesa -->
+  <ResearchProjectDef>
+    <defName>EQ_R_Fundamentos_Armas</defName>
+    <label>Armas improvisadas</label>
+    <description>Bastão, machado e facas de arremesso, molotov, bomba de pavio e de fumaça.</description>
+    <baseCost>300</baseCost>
+    <techLevel>Neolithic</techLevel>
+    <tab>EQ_RTab_Fundamentos</tab>
+    <researchViewX>0</researchViewX>
+    <researchViewY>3</researchViewY>
+    <modExtensions>
+      <li Class="EcosDaQueda.ResearchEditorExt">
+        <unlocks><li>CE_Melee_QuarterStaff</li><li>VFEM2_ThrowingAxe</li><li>VWE_Throwing_Knives</li><li>Weapon_GrenadeMolotov</li><li>CE_Weapon_GrenadeStickBomb</li><li>CE_Weapon_SmokeBomb</li></unlocks>
+        <branch>EQ_Ramo_Bancada</branch>
+      </li>
+    </modExtensions>
+  </ResearchProjectDef>
+
+  <!-- Fundamentos &gt; Defesa -->
+  <ResearchProjectDef>
+    <defName>EQ_R_Fundamentos_Fortificacao</defName>
+    <label>Fortificação de campo</label>
+    <description>Barricada, sacos de areia, armadilha de estacas, trincheiras, arame farpado e seteira.</description>
+    <baseCost>300</baseCost>
+    <techLevel>Neolithic</techLevel>
+    <tab>EQ_RTab_Fundamentos</tab>
+    <researchViewX>2</researchViewX>
+    <researchViewY>3</researchViewY>
+    <prerequisites><li>EQ_R_Fundamentos_Carpintaria</li></prerequisites>
+    <modExtensions>
+      <li Class="EcosDaQueda.ResearchEditorExt">
+        <unlocks><li>Barricade</li><li>Sandbags</li><li>TrapSpike</li><li>Tr_TrenchDirt</li><li>Tr_TrenchParapet</li><li>Tr_Duckboards</li><li>Tr_Parados</li><li>Tr_BarbedWire</li><li>CE_Embrasure</li></unlocks>
+        <branch>EQ_Ramo_Bancada</branch>
+      </li>
+    </modExtensions>
+  </ResearchProjectDef>
+
+  <!-- Fundamentos &gt; Defesa -->
+  <ResearchProjectDef>
+    <defName>EQ_R_Fundamentos_Alcionita</defName>
+    <label>Alcionita</label>
+    <description>Geradores solares de alcionita: cristal que bebe luz e devolve energia.</description>
+    <baseCost>1000</baseCost>
+    <techLevel>Industrial</techLevel>
+    <tab>EQ_RTab_Fundamentos</tab>
+    <researchViewX>4</researchViewX>
+    <researchViewY>3</researchViewY>
+    <prerequisites><li>Electricity</li></prerequisites>
+    <modExtensions>
+      <li Class="EcosDaQueda.ResearchEditorExt">
+        <unlocks><li>AB_AlcyoniteSolar</li><li>AB_AlcyoniteSolar_Advanced</li></unlocks>
         <branch>EQ_Ramo_Bancada</branch>
       </li>
     </modExtensions>

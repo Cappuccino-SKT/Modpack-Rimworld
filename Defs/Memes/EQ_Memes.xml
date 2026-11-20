@@ -10,6 +10,14 @@
     <exclusionTags>
       <li>EQ_SignatureMeme</li>
     </exclusionTags>
+    <!-- Exclusivos das superpotências (decisão do usuário, 2026-11-19): o jogador não escolhe estes memes
+         (Dialog_ChooseMemes esconde o que IdeoUtility.IsMemeAllowedFor recusa para a facção do jogador). -->
+    <factionWhitelist>
+      <li>EQ_Faction_Silencio</li>
+      <li>EQ_Faction_Helice</li>
+      <li>EQ_Faction_Forja</li>
+      <li>EQ_Faction_Coro</li>
+    </factionWhitelist>
   </MemeDef>
 
   <MemeDef ParentName="EQ_SignatureMemeBase">

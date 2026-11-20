@@ -63,6 +63,10 @@ namespace EcosDaQueda
         /// <summary>Última cidade nova por facção (defName → tique).</summary>
         public Dictionary<string, int> lastNewCity = new Dictionary<string, int>();
         public List<string> log = new List<string>();
+        /// <summary>F4: lugar sugerido ao jogador para a próxima colônia (tileId, −1 = nenhum) e quando.</summary>
+        public int playerSuggestTile = -1, playerSuggestTick;
+        /// <summary>F4: rendimento do território do jogador acumulado até o próximo tributo.</summary>
+        public List<PlayerYieldStock> playerYield = new List<PlayerYieldStock>();
 
         public WorldComponent_EQFrontier(World world) : base(world) { }
 
@@ -75,12 +79,16 @@ namespace EcosDaQueda
             Scribe_Collections.Look(ref capitals, "capitals", LookMode.Value);
             Scribe_Collections.Look(ref lastNewCity, "lastNewCity", LookMode.Value, LookMode.Value);
             Scribe_Collections.Look(ref log, "log", LookMode.Value);
+            Scribe_Values.Look(ref playerSuggestTile, "playerSuggestTile", -1);
+            Scribe_Values.Look(ref playerSuggestTick, "playerSuggestTick");
+            Scribe_Collections.Look(ref playerYield, "playerYield", LookMode.Deep);
             if (Scribe.mode == LoadSaveMode.PostLoadInit)
             {
                 growth = growth ?? new Dictionary<int, float>();
                 capitals = capitals ?? new List<int>();
                 lastNewCity = lastNewCity ?? new Dictionary<string, int>();
                 log = log ?? new List<string>();
+                playerYield = playerYield ?? new List<PlayerYieldStock>();
             }
         }
 
@@ -90,6 +98,8 @@ namespace EcosDaQueda
             // F3: rendimento diário do território (TerritoryYield.cs; liga sozinho no mundo fixo).
             if (t == 1300) EQTerritoryYield.ApplyDaily();
             if (!Enabled) return;
+            // F4: tributo do território do jogador (acumula por dia, entrega no intervalo).
+            if (t == 1350) EQPlayerFrontier.YieldDaily(this);
             if (t == 1234) AdvanceDays(1f);
         }
 
@@ -121,6 +131,7 @@ namespace EcosDaQueda
                 growth[s.ID] = g + days / Math.Max(0.1f, daysPerTile);
             }
             TryNewCities(d);
+            EQPlayerFrontier.AdvanceDays(this, days);
         }
 
         private static float Mathf01(float v) => v < 0f ? 0f : (v > 1f ? 1f : v);
@@ -208,7 +219,7 @@ namespace EcosDaQueda
             }
         }
 
-        private static PlanetTile FindSite(Settlement from, FrontierDef d, List<Settlement> all, List<KeyValuePair<PlanetTile, Faction>> claims)
+        public static PlanetTile FindSite(Settlement from, FrontierDef d, List<Settlement> all, List<KeyValuePair<PlanetTile, Faction>> claims)
         {
             World w = Find.World;
             Faction f = EQUtil.Canonical(from.Faction);
@@ -281,6 +292,7 @@ namespace EcosDaQueda
                               + " m=" + DecayFor(s, p, 1f).ToString("0.00") + ";");
                 }
             }
+            sb.Append("\n  " + EQPlayerFrontier.Report(this));
             if (log.Count > 0) sb.Append("\n  cidades novas: " + string.Join(" | ", log));
             return sb.ToString();
         }

@@ -35,6 +35,7 @@ namespace EcosDaQueda
 
         public static void ApplyAll()
         {
+            Dictionary<ResearchProjectDef, int> before = EQHiddenResearch.Snapshot();
             int n = 0;
             foreach (ResearchProjectDef r in DefDatabase<ResearchProjectDef>.AllDefsListForReading)
             {
@@ -52,6 +53,7 @@ namespace EcosDaQueda
             if (n > 0)
             {
                 ClearCaches();
+                EQHiddenResearch.Apply(before);
                 // depois de todos os construtores estáticos: o SeedsPlease cria as sementes no dele
                 LongEventHandler.ExecuteWhenFinished(EQSeedRecipes.Apply);
             }
@@ -212,6 +214,85 @@ namespace EcosDaQueda
             ic.filter.SetAllow(ingredient, true);
             r.defaultIngredientFilter?.SetAllow(ingredient, true);
             return r;
+        }
+    }
+
+    /// <summary>
+    /// Pesquisas originais que as árvores do editor esvaziaram (liberavam algo antes e agora não liberam nada) somem da
+    /// tela de pesquisa (a do jogo e a do YART). Quem as tinha como pré-requisito passa a exigir os pré-requisitos delas.
+    /// </summary>
+    public static class EQHiddenResearch
+    {
+        public static readonly HashSet<ResearchProjectDef> Hidden = new HashSet<ResearchProjectDef>();
+
+        public static Dictionary<ResearchProjectDef, int> Snapshot()
+        {
+            var d = new Dictionary<ResearchProjectDef, int>();
+            foreach (ResearchProjectDef r in DefDatabase<ResearchProjectDef>.AllDefsListForReading)
+            {
+                try { d[r] = r.UnlockedDefs.Count; } catch { d[r] = 0; }
+            }
+            return d;
+        }
+
+        public static void Apply(Dictionary<ResearchProjectDef, int> before)
+        {
+            Hidden.Clear();
+            foreach (ResearchProjectDef r in DefDatabase<ResearchProjectDef>.AllDefsListForReading)
+            {
+                if (r.HasModExtension<ResearchEditorExt>() || !before.TryGetValue(r, out int n) || n == 0) continue;
+                int now;
+                try { now = r.UnlockedDefs.Count; } catch { continue; }
+                if (now == 0) Hidden.Add(r);
+            }
+            if (Hidden.Count == 0) return;
+            foreach (ResearchProjectDef r in DefDatabase<ResearchProjectDef>.AllDefsListForReading)
+            {
+                if (Hidden.Contains(r)) continue;
+                r.prerequisites = Expand(r.prerequisites);
+                r.hiddenPrerequisites = Expand(r.hiddenPrerequisites);
+            }
+            Log.Message("[Ecos da Queda] pesquisas originais vazias escondidas: " + string.Join(", ", Hidden.Select(h => h.defName)));
+        }
+
+        /// <summary>Troca cada pré-requisito escondido pelos pré-requisitos dele (recursivo).</summary>
+        public static List<ResearchProjectDef> Expand(List<ResearchProjectDef> list)
+        {
+            if (list == null || !list.Any(Hidden.Contains)) return list;
+            var outList = new List<ResearchProjectDef>();
+            var seen = new HashSet<ResearchProjectDef>();
+            var stack = new Stack<ResearchProjectDef>(list.AsEnumerable().Reverse());
+            while (stack.Count > 0)
+            {
+                ResearchProjectDef p = stack.Pop();
+                if (p == null || !seen.Add(p)) continue;
+                if (!Hidden.Contains(p)) { outList.Add(p); continue; }
+                foreach (ResearchProjectDef q in (p.prerequisites ?? new List<ResearchProjectDef>()).Concat(p.hiddenPrerequisites ?? new List<ResearchProjectDef>()))
+                    stack.Push(q);
+            }
+            return outList;
+        }
+    }
+
+    [HarmonyPatch(typeof(MainTabWindow_Research), "VisibleResearchProjects", MethodType.Getter)]
+    public static class Patch_Research_VisibleProjects
+    {
+        public static void Postfix(List<ResearchProjectDef> __result)
+        {
+            if (EQHiddenResearch.Hidden.Count > 0 && __result != null)
+                __result.RemoveAll(r => EQHiddenResearch.Hidden.Contains(r) && !Find.ResearchManager.IsCurrentProject(r));
+        }
+    }
+
+    /// <summary>YART (seohyeon.yart, opcional): a árvore dele filtra por WorldTechLevelCompat.ShouldShow.</summary>
+    [HarmonyPatch]
+    public static class Patch_YART_ShouldShow
+    {
+        public static bool Prepare() => AccessTools.TypeByName("YART.Compat.WorldTechLevelCompat") != null;
+        public static System.Reflection.MethodBase TargetMethod() => AccessTools.Method(AccessTools.TypeByName("YART.Compat.WorldTechLevelCompat"), "ShouldShow");
+        public static void Postfix(ResearchProjectDef def, ref bool __result)
+        {
+            if (__result && EQHiddenResearch.Hidden.Contains(def)) __result = false;
         }
     }
 }

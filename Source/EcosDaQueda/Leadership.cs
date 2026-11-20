@@ -252,6 +252,7 @@ namespace EcosDaQueda
             if (!ModsConfig.RoyaltyActive) return "Exige a DLC Royalty";
             if (alg.memberOf != null) return "O assentamento já pertence a " + alg.memberOf.Name;
             if (alg.pendingPower != null) return "Já há uma cerimônia solicitada com " + alg.pendingPower.Name;
+            if (!EQNation.Founded) return EQNation.NotNationReason;
             if (power.HostileTo(Faction.OfPlayer)) return "Potência hostil";
             Pawn leader = EQLeader.IdeoLeader;
             if (leader == null) return "O assentamento não tem líder (o líder da sua ideologia)";

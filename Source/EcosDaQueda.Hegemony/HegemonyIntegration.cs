@@ -17,7 +17,7 @@ namespace EcosDaQueda.HegemonyCompat
     [StaticConstructorOnStartup]
     public static class HegemonyIntegration
     {
-        private static IDisposable peaceVeto;
+        private static IDisposable peaceVeto, invasionVeto;
 
         private static MethodInfo overlordMethod;
         private static MethodInfo submitMethod;
@@ -83,6 +83,24 @@ namespace EcosDaQueda.HegemonyCompat
 
                 RegisterForces();
 
+                // N1 (NACAO.md): antes da fundação o jogador é um assentamento comum.
+                EQNation.HegemonyPresent = true;
+                invasionVeto = HegemonyApi.RegisterVeto(HegemonyVetoKind.InvasionTarget, ctx =>
+                    !EQNation.Founded && (ctx.Other?.IsPlayer == true || ctx.Target?.Faction?.IsPlayer == true)
+                        ? "Ninguém invade um sítio: " + Faction.OfPlayer?.Name + " ainda não é uma nação."
+                        : null);
+                // Para o executor de testes: pergunta ao próprio Hegemony se uma invasão de conquista contra a colônia passa.
+                MethodInfo block = AccessTools.Method(AccessTools.TypeByName("FactionTerritories2.ApiLifecycle"), "Block");
+                if (block != null)
+                    EQNation.InvasionVetoProbe = (attacker, target) =>
+                    {
+                        var ps = block.GetParameters();
+                        var args = new object[ps.Length];
+                        for (int k = 0; k < ps.Length; k++) args[k] = ps[k].HasDefaultValue ? ps[k].DefaultValue : null;
+                        args[0] = HegemonyVetoKind.InvasionTarget; args[1] = attacker; args[2] = Faction.OfPlayer; args[3] = target;
+                        return block.Invoke(null, args) as string;
+                    };
+
                 peaceVeto = HegemonyApi.RegisterVeto(HegemonyVetoKind.AIPeaceOrTreaty, ctx =>
                     FactionRelationPresetDef.ArePermanentEnemies(ctx.Actor, ctx.Other)
                         ? ctx.Actor?.Name + " jamais fará paz com " + ctx.Other?.Name + "."
@@ -121,6 +139,22 @@ namespace EcosDaQueda.HegemonyCompat
                 new Harmony("ecosdaqueda.hegemony.frontier").Patch(decay, postfix: new HarmonyMethod(typeof(HegemonyIntegration), nameof(SettlementDecayPostfix)));
             else
                 Log.Warning("[Ecos da Queda] Não achei TerritorySolver.SettlementDecay no Hegemony; a fronteira que cresce (F2) fica desligada.");
+            // F4: fronteira do jogador (colônia com mapa não tem estado no Hegemony) e marcos de fronteira, no fim de Sources().
+            Type solver = AccessTools.TypeByName("FactionTerritories2.TerritorySolver");
+            MethodInfo sources = solver == null ? null : AccessTools.Method(solver, "Sources");
+            sourceType = solver == null ? null : AccessTools.Inner(solver, "Source");
+            claimOwner = AccessTools.Method(typeof(FactionFealty), "ClaimOwner", new[] { typeof(Faction) });
+            if (sources != null && sourceType != null)
+            {
+                srcTile = AccessTools.Field(sourceType, "tile");
+                srcFaction = AccessTools.Field(sourceType, "faction");
+                srcLocal = AccessTools.Field(sourceType, "localOwner");
+                srcProsperity = AccessTools.Field(sourceType, "prosperity");
+                srcDecay = AccessTools.Field(sourceType, "decayMultiplier");
+                new Harmony("ecosdaqueda.hegemony.playerfrontier").Patch(sources, postfix: new HarmonyMethod(typeof(HegemonyIntegration), nameof(SourcesPostfix)));
+            }
+            else
+                Log.Warning("[Ecos da Queda] Não achei TerritorySolver.Sources no Hegemony; a fronteira do jogador (F4) fica desligada.");
             EQForces.ConquestHandler = (settlement, attacker, id) =>
             {
                 if (!HegemonyApi.IsAvailable) return "Hegemony indisponível";
@@ -236,12 +270,65 @@ namespace EcosDaQueda.HegemonyCompat
             catch (Exception ex) { Log.ErrorOnce("[Ecos da Queda] Fronteira (F2): " + ex, 0x4E51F2); }
         }
 
+        private static Type sourceType;
+        private static FieldInfo srcTile, srcFaction, srcLocal, srcProsperity, srcDecay;
+        private static MethodInfo claimOwner;
+
+        /// <summary>F4: na lista de fontes do território (List&lt;Source&gt;, struct privada), a colônia do jogador ganha o
+        /// raio da fronteira que cresce e cada marco de fronteira ativo vira uma fonte do jogador.</summary>
+        public static void SourcesPostfix(object __result)
+        {
+            if (!(__result is System.Collections.IList list)) return;
+            // N1: antes da fundação a colônia (e o que mais for do jogador) não é fonte de território. Vale em qualquer mundo.
+            if (!EQNation.Founded)
+            {
+                try
+                {
+                    for (int i = list.Count - 1; i >= 0; i--)
+                        if (srcLocal.GetValue(list[i]) is Faction lo && lo.IsPlayer) list.RemoveAt(i);
+                }
+                catch (Exception ex) { Log.ErrorOnce("[Ecos da Queda] Nação (N1), trava do território: " + ex, 0x4E51A1); }
+                return;
+            }
+            if (!EQPlayerFrontier.Enabled) return;
+            try
+            {
+                var colonies = EQPlayerFrontier.Colonies().ToDictionary(s => s.Tile);
+                if (colonies.Count == 0) return;
+                for (int i = 0; i < list.Count; i++)
+                {
+                    object src = list[i];
+                    var tile = (RimWorld.Planet.PlanetTile)srcTile.GetValue(src);
+                    if (!colonies.TryGetValue(tile, out RimWorld.Planet.Settlement s)) continue;
+                    if (!(srcLocal.GetValue(src) is Faction lo) || !lo.IsPlayer) continue;
+                    float p = (float)srcProsperity.GetValue(src);
+                    srcDecay.SetValue(src, EQPlayerFrontier.DecayForColony(s, p, (float)srcDecay.GetValue(src)));
+                    list[i] = src;
+                }
+                Faction owner = Faction.OfPlayer;
+                Faction claim = claimOwner?.Invoke(null, new object[] { owner }) as Faction ?? owner;
+                foreach (var m in EQPlayerFrontier.MarkerSources())
+                {
+                    object src = Activator.CreateInstance(sourceType);
+                    srcTile.SetValue(src, m.tile);
+                    srcFaction.SetValue(src, claim);
+                    srcLocal.SetValue(src, owner);
+                    srcProsperity.SetValue(src, m.prosperity);
+                    srcDecay.SetValue(src, m.decay);
+                    list.Add(src);
+                }
+            }
+            catch (Exception ex) { Log.ErrorOnce("[Ecos da Queda] Fronteira do jogador (F4): " + ex, 0x4E51F4); }
+        }
+
         /// <summary>O jogador só vira vassalo de uma potência pela cerimônia de submissão.</summary>
         public static void BlockPostfix(Faction subject, Faction overlord, ref string __result)
         {
             if (__result != null || EQAllegiance.AllowSubmit || subject == null || !subject.IsPlayer)
                 return;
-            if (EQAllegiance.IsPower(EQUtil.Canonical(overlord)))
+            if (!EQNation.Founded)
+                __result = EQNation.NotNationReason;
+            else if (EQAllegiance.IsPower(EQUtil.Canonical(overlord)))
                 __result = "Esta potência só aceita a submissão por cerimônia (aba Reputação › Cerimônia).";
         }
     }

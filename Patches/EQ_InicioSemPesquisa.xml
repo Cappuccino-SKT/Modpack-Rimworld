@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Início sem pesquisa (ARVORES.md, "Início da partida"): a colônia do jogador não começa com nenhuma pesquisa concluída.
+     Tudo sai do kit livre mínimo e da árvore de pesquisa (Fundamentos e as demais). -->
+<Patch>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/FactionDef[defName="PlayerColony"]/startingResearchTags</xpath>
+    <match Class="PatchOperationRemove">
+      <xpath>Defs/FactionDef[defName="PlayerColony"]/startingResearchTags</xpath>
+    </match>
+  </Operation>
+</Patch>
