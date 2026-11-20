@@ -3,6 +3,329 @@
 <Defs>
 
   <ResearchTabDef>
+    <defName>EQ_RTab_Agua</defName>
+    <label>Água, clima e higiene</label>
+    <generalTitle>Água, clima e higiene</generalTitle>
+    <generalDescription>Água limpa é o novo ouro: depois da Queda, quem controla o cano controla a vila. Água (encanamento, moderna, industrial, purificação), Esgoto (fossa, tratamento), Higiene (rústica, banhos e sauna, banheiro de luxo, biônicos da Hélice) e Clima (refrigerador primitivo, água quente, climatização, aquecimento central, refrigeração, combate a incêndio).</generalDescription>
+  </ResearchTabDef>
+
+  <!-- Água &gt; Água &gt; nível I -->
+  <ResearchProjectDef>
+    <defName>EQ_R_Agua_Ag_Primitiva</defName>
+    <label>Água I: Encanamento</label>
+    <description>Canos, válvula, barril e torre de água, poço tubular, captação de superfície, bomba de vento, saída de esgoto, pia e banheira. Depois da Queda, água limpa é o novo ouro, e o cano é o cofre.</description>
+    <baseCost>400</baseCost>
+    <techLevel>Medieval</techLevel>
+    <tab>EQ_RTab_Agua</tab>
+    <researchViewX>0</researchViewX>
+    <researchViewY>0</researchViewY>
+    <modExtensions>
+      <li Class="EcosDaQueda.ResearchEditorExt">
+        <unlocks><li>sewagePipeStuff</li><li>sewagePipeHidden</li><li>plumbingValve</li><li>WaterButt</li><li>WaterTowerS</li><li>WaterWellInlet</li><li>SurfaceWaterInlet</li><li>WindPump</li><li>SewageOutlet</li><li>BasinStuff</li><li>BathtubStuff</li></unlocks>
+        <absorbs><li>Plumbing</li></absorbs>
+        <branch>EQ_Ramo_Bancada</branch>
+      </li>
+    </modExtensions>
+  </ResearchProjectDef>
+
+  <!-- Água &gt; Água &gt; nível II -->
+  <ResearchProjectDef>
+    <defName>EQ_R_Agua_Ag_Moderna</defName>
+    <label>Água II: Água moderna</label>
+    <description>Vaso sanitário, chuveiros, bebedouro, pia de cozinha e bomba elétrica. Descarga que funciona: luxo que o Velho Mundo achava direito.</description>
+    <baseCost>600</baseCost>
+    <techLevel>Industrial</techLevel>
+    <tab>EQ_RTab_Agua</tab>
+    <researchViewX>2.5</researchViewX>
+    <researchViewY>0</researchViewY>
+    <prerequisites><li>EQ_R_Agua_Ag_Primitiva</li><li>EQ_R_Energia_Ger_Eletricidade</li></prerequisites>
+    <modExtensions>
+      <li Class="EcosDaQueda.ResearchEditorExt">
+        <unlocks><li>ToiletStuff</li><li>ShowerSimple</li><li>ShowerStuff</li><li>Fountain</li><li>KitchenSink</li><li>ElectricPump</li></unlocks>
+        <absorbs><li>ModernFixtures</li><li>ElectricPumps</li></absorbs>
+        <branch>EQ_Ramo_Bancada</branch>
+      </li>
+    </modExtensions>
+  </ResearchProjectDef>
+
+  <!-- Água &gt; Água &gt; nível III -->
+  <ResearchProjectDef>
+    <defName>EQ_R_Agua_Ag_Industrial</defName>
+    <label>Água III: Água industrial</label>
+    <description>Estação de bombeamento, torre de água industrial e poço profundo. A água do lençol mais fundo ainda não sabe que houve guerra.</description>
+    <baseCost>1500</baseCost>
+    <techLevel>Industrial</techLevel>
+    <tab>EQ_RTab_Agua</tab>
+    <researchViewX>5</researchViewX>
+    <researchViewY>0</researchViewY>
+    <prerequisites><li>EQ_R_Agua_Ag_Moderna</li><li>EQ_R_Producao_Fabrica_Usinagem</li></prerequisites>
+    <modExtensions>
+      <li Class="EcosDaQueda.ResearchEditorExt">
+        <unlocks><li>PumpingStation</li><li>WaterTowerL</li><li>DeepWaterWellInlet</li></unlocks>
+        <absorbs><li>LargeWaterPumps</li><li>DeepWells</li></absorbs>
+        <branch>EQ_Ramo_Bancada</branch>
+      </li>
+    </modExtensions>
+  </ResearchProjectDef>
+
+  <!-- Água &gt; Água &gt; nível III -->
+  <ResearchProjectDef>
+    <defName>EQ_R_Agua_Ag_Filtragem</defName>
+    <label>Água III: Purificação de água</label>
+    <description>Sistema de filtragem de água. Uma vila com purificador manda na região; as outras bebem o que a chuva ácida trouxe.</description>
+    <baseCost>1500</baseCost>
+    <techLevel>Industrial</techLevel>
+    <tab>EQ_RTab_Agua</tab>
+    <researchViewX>5</researchViewX>
+    <researchViewY>1</researchViewY>
+    <prerequisites><li>EQ_R_Agua_Ag_Moderna</li></prerequisites>
+    <modExtensions>
+      <li Class="EcosDaQueda.ResearchEditorExt">
+        <unlocks><li>WaterTreatment</li></unlocks>
+        <absorbs><li>WaterFiltration</li></absorbs>
+        <branch>EQ_Ramo_Bancada</branch>
+      </li>
+    </modExtensions>
+  </ResearchProjectDef>
+
+  <!-- Água &gt; Esgoto &gt; nível I -->
+  <ResearchProjectDef>
+    <defName>EQ_R_Agua_Esg_Fossa</defName>
+    <label>Esgoto I: Fossa</label>
+    <description>Fossa séptica. Para onde vai tudo aquilo, e por quanto tempo fica lá.</description>
+    <baseCost>500</baseCost>
+    <techLevel>Medieval</techLevel>
+    <tab>EQ_RTab_Agua</tab>
+    <researchViewX>0</researchViewX>
+    <researchViewY>2</researchViewY>
+    <prerequisites><li>EQ_R_Agua_Ag_Primitiva</li></prerequisites>
+    <modExtensions>
+      <li Class="EcosDaQueda.ResearchEditorExt">
+        <unlocks><li>SewageSepticTank</li></unlocks>
+        <absorbs><li>SepticTanks</li></absorbs>
+        <branch>EQ_Ramo_Bancada</branch>
+      </li>
+    </modExtensions>
+  </ResearchProjectDef>
+
+  <!-- Água &gt; Esgoto &gt; nível III -->
+  <ResearchProjectDef>
+    <defName>EQ_R_Agua_Esg_Tratamento</defName>
+    <label>Esgoto III: Tratamento de esgoto</label>
+    <description>Sistema de tratamento de esgoto. O que sai dele volta para a horta; os colonos preferem não saber.</description>
+    <baseCost>2000</baseCost>
+    <techLevel>Industrial</techLevel>
+    <tab>EQ_RTab_Agua</tab>
+    <researchViewX>5</researchViewX>
+    <researchViewY>2</researchViewY>
+    <prerequisites><li>EQ_R_Agua_Esg_Fossa</li><li>EQ_R_Energia_Ger_Eletricidade</li></prerequisites>
+    <modExtensions>
+      <li Class="EcosDaQueda.ResearchEditorExt">
+        <unlocks><li>SewageTreatment</li></unlocks>
+        <absorbs><li>SewageTreatment</li></absorbs>
+        <branch>EQ_Ramo_Bancada</branch>
+      </li>
+    </modExtensions>
+  </ResearchProjectDef>
+
+  <!-- Água &gt; Higiene &gt; nível I -->
+  <ResearchProjectDef>
+    <defName>EQ_R_Agua_Hig_Rustica</defName>
+    <label>Higiene I: Higiene rústica</label>
+    <description>Caixa de areia, porta de box e tapete de banheiro. A dignidade também se pesquisa.</description>
+    <baseCost>150</baseCost>
+    <techLevel>Neolithic</techLevel>
+    <tab>EQ_RTab_Agua</tab>
+    <researchViewX>0</researchViewX>
+    <researchViewY>3.5</researchViewY>
+    <modExtensions>
+      <li Class="EcosDaQueda.ResearchEditorExt">
+        <unlocks><li>LitterBox</li><li>ToiletStallDoor</li><li>BathMat</li></unlocks>
+        <branch>EQ_Ramo_Bancada</branch>
+      </li>
+    </modExtensions>
+  </ResearchProjectDef>
+
+  <!-- Água &gt; Higiene &gt; nível II -->
+  <ResearchProjectDef>
+    <defName>EQ_R_Agua_Hig_Banho</defName>
+    <label>Higiene II: Banhos e sauna</label>
+    <description>Sauna a lenha e elétrica, piscina, ladrilho de piscina e mosaicos de pedra. O banho público era o luxo do Império; agora é o luxo de quem tem lenha sobrando.</description>
+    <baseCost>600</baseCost>
+    <techLevel>Medieval</techLevel>
+    <tab>EQ_RTab_Agua</tab>
+    <researchViewX>2.5</researchViewX>
+    <researchViewY>3.5</researchViewY>
+    <prerequisites><li>EQ_R_Agua_Ag_Primitiva</li><li>EQ_R_Agua_Cli_Lenha</li><li>EQ_R_Producao_Oficio_Cantaria</li></prerequisites>
+    <modExtensions>
+      <li Class="EcosDaQueda.ResearchEditorExt">
+        <unlocks><li>DBHSaunaHeaterLog</li><li>DBHSaunaHeaterElec</li><li>DBHSaunaSeating</li><li>DBHSwimmingPool</li><li>DBHPoolTile</li><li>DBHMosaicGranite</li><li>DBHMosaicLimestone</li><li>DBHMosaicMarble</li><li>DBHMosaicSandstone</li><li>DBHMosaicSlate</li><li>DBHMosaicTile</li></unlocks>
+        <absorbs><li>Saunas</li><li>SwimmingPools</li></absorbs>
+        <branch>EQ_Ramo_Bancada</branch>
+      </li>
+    </modExtensions>
+  </ResearchProjectDef>
+
+  <!-- Água &gt; Higiene &gt; nível III -->
+  <ResearchProjectDef>
+    <defName>EQ_R_Agua_Hig_Luxo</defName>
+    <label>Higiene III: Banheiro de luxo</label>
+    <description>Hidromassagem, chuveiro elétrico, vaso avançado e máquina de lavar. O Coro mede a nobreza de uma casa pelo número de descargas.</description>
+    <baseCost>1500</baseCost>
+    <techLevel>Industrial</techLevel>
+    <tab>EQ_RTab_Agua</tab>
+    <researchViewX>5</researchViewX>
+    <researchViewY>3.5</researchViewY>
+    <prerequisites><li>EQ_R_Agua_Ag_Moderna</li></prerequisites>
+    <modExtensions>
+      <li Class="EcosDaQueda.ResearchEditorExt">
+        <unlocks><li>HotTub</li><li>ShowerAdvStuff</li><li>ToiletAdvStuff</li><li>WashingMachine</li></unlocks>
+        <absorbs><li>HotTubs</li><li>AdvancedShowers</li><li>AdvancedToilets</li><li>WashingMachines</li></absorbs>
+        <branch>EQ_Ramo_Bancada</branch>
+      </li>
+    </modExtensions>
+  </ResearchProjectDef>
+
+  <!-- Água &gt; Higiene &gt; nível IV -->
+  <ResearchProjectDef>
+    <defName>EQ_R_Agua_Hig_Bionicos</defName>
+    <label>Higiene IV: Biônicos de higiene</label>
+    <description>Bexiga artificial e intensificador de higiene. A Hélice vende como "upgrade de conforto"; a assinatura mensal vem na letra miúda.</description>
+    <baseCost>2500</baseCost>
+    <techLevel>Spacer</techLevel>
+    <tab>EQ_RTab_Agua</tab>
+    <researchViewX>7.5</researchViewX>
+    <researchViewY>3.5</researchViewY>
+    <prerequisites><li>EQ_R_Agua_Ag_Filtragem</li><li>EQ_R_Producao_Comp_Fabricacao</li><li>Prosthetics</li></prerequisites>
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <modExtensions>
+      <li Class="EcosDaQueda.ResearchEditorExt">
+        <unlocks><li>BionicBladder</li><li>HygieneEnhancer</li></unlocks>
+        <absorbs><li>HygieneBionics</li></absorbs>
+        <branch>EQ_Ramo_Helice</branch>
+      </li>
+    </modExtensions>
+  </ResearchProjectDef>
+
+  <!-- Água &gt; Clima &gt; nível I -->
+  <ResearchProjectDef>
+    <defName>EQ_R_Agua_Cli_Passivo</defName>
+    <label>Clima I: Refrigerador primitivo</label>
+    <description>Refrigerador passivo: água, vento e paciência. A carne dura um pouco mais; o verão, não.</description>
+    <baseCost>300</baseCost>
+    <techLevel>Neolithic</techLevel>
+    <tab>EQ_RTab_Agua</tab>
+    <researchViewX>0</researchViewX>
+    <researchViewY>5</researchViewY>
+    <modExtensions>
+      <li Class="EcosDaQueda.ResearchEditorExt">
+        <unlocks><li>PassiveCooler</li></unlocks>
+        <absorbs><li>PassiveCooler</li></absorbs>
+        <branch>EQ_Ramo_Bancada</branch>
+      </li>
+    </modExtensions>
+  </ResearchProjectDef>
+
+  <!-- Água &gt; Clima &gt; nível I -->
+  <ResearchProjectDef>
+    <defName>EQ_R_Agua_Cli_Lenha</defName>
+    <label>Clima I: Água quente</label>
+    <description>Aquecedor a lenha e reservatório de calor. Banho quente depois da Queda: a única revolução que ninguém combateu.</description>
+    <baseCost>400</baseCost>
+    <techLevel>Medieval</techLevel>
+    <tab>EQ_RTab_Agua</tab>
+    <researchViewX>0</researchViewX>
+    <researchViewY>6</researchViewY>
+    <modExtensions>
+      <li Class="EcosDaQueda.ResearchEditorExt">
+        <unlocks><li>LogBoiler</li><li>HotWaterTank</li></unlocks>
+        <absorbs><li>LogBoilers</li></absorbs>
+        <branch>EQ_Ramo_Bancada</branch>
+      </li>
+    </modExtensions>
+  </ResearchProjectDef>
+
+  <!-- Água &gt; Clima &gt; nível II -->
+  <ResearchProjectDef>
+    <defName>EQ_R_Agua_Cli_Eletrico</defName>
+    <label>Clima II: Climatização</label>
+    <description>Refrigerador, aquecedor, aquecedor a propano, ventiladores de teto e saídas de ventilação. Inverno e verão viram uma questão de gerador.</description>
+    <baseCost>500</baseCost>
+    <techLevel>Industrial</techLevel>
+    <tab>EQ_RTab_Agua</tab>
+    <researchViewX>2.5</researchViewX>
+    <researchViewY>5</researchViewY>
+    <prerequisites><li>EQ_R_Agua_Cli_Passivo</li><li>EQ_R_Energia_Ger_Eletricidade</li></prerequisites>
+    <modExtensions>
+      <li Class="EcosDaQueda.ResearchEditorExt">
+        <unlocks><li>Cooler</li><li>Cooler_Over</li><li>Cooler_Over2W</li><li>Heater</li><li>AB_PropaneHeater</li><li>CeilingFan</li><li>CeilingFanS</li><li>Vent</li><li>Vent_Over</li><li>Vent_Over2W</li></unlocks>
+        <absorbs><li>AirConditioning</li></absorbs>
+        <branch>EQ_Ramo_Bancada</branch>
+      </li>
+    </modExtensions>
+  </ResearchProjectDef>
+
+  <!-- Água &gt; Clima &gt; nível II -->
+  <ResearchProjectDef>
+    <defName>EQ_R_Agua_Cli_Central</defName>
+    <label>Clima II: Aquecimento central</label>
+    <description>Aquecedores elétrico e a gás, radiadores, porta-toalha, painel solar térmico, termostato e aquecedor geotérmico. Calor por cano, como nos abrigos antigos.</description>
+    <baseCost>600</baseCost>
+    <techLevel>Industrial</techLevel>
+    <tab>EQ_RTab_Agua</tab>
+    <researchViewX>2.5</researchViewX>
+    <researchViewY>6</researchViewY>
+    <prerequisites><li>EQ_R_Agua_Cli_Lenha</li><li>EQ_R_Agua_Ag_Primitiva</li><li>EQ_R_Energia_Ger_Eletricidade</li></prerequisites>
+    <modExtensions>
+      <li Class="EcosDaQueda.ResearchEditorExt">
+        <unlocks><li>ElectricBoiler</li><li>GasBoiler</li><li>RadiatorLarge</li><li>RadiatorStuffed</li><li>RadiatorTowelRail</li><li>SolarHeater</li><li>Thermostat</li><li>GeothermHeater</li></unlocks>
+        <absorbs><li>CentralHeating</li><li>GeothermalHeating</li></absorbs>
+        <branch>EQ_Ramo_Bancada</branch>
+      </li>
+    </modExtensions>
+  </ResearchProjectDef>
+
+  <!-- Água &gt; Clima &gt; nível III -->
+  <ResearchProjectDef>
+    <defName>EQ_R_Agua_Cli_Refrigeracao</defName>
+    <label>Clima III: Refrigeração</label>
+    <description>Ar-condicionado interno e externo, freezer e tubos de ar. Frio sob encomenda num planeta que a guerra deixou quente.</description>
+    <baseCost>900</baseCost>
+    <techLevel>Industrial</techLevel>
+    <tab>EQ_RTab_Agua</tab>
+    <researchViewX>5</researchViewX>
+    <researchViewY>5</researchViewY>
+    <prerequisites><li>EQ_R_Agua_Cli_Eletrico</li></prerequisites>
+    <modExtensions>
+      <li Class="EcosDaQueda.ResearchEditorExt">
+        <unlocks><li>AirConOutdoorUnit</li><li>AirconIndoorUnit</li><li>FreezerUnit</li><li>airPipe</li><li>airPipeHidden</li></unlocks>
+        <absorbs><li>MultiSplitAirCon</li></absorbs>
+        <branch>EQ_Ramo_Bancada</branch>
+      </li>
+    </modExtensions>
+  </ResearchProjectDef>
+
+  <!-- Água &gt; Clima &gt; nível III -->
+  <ResearchProjectDef>
+    <defName>EQ_R_Agua_Cli_Incendio</defName>
+    <label>Clima III: Combate a incêndio</label>
+    <description>Sprinkler anti-incêndio. Toda colônia aprende a pesquisar isso depois do primeiro molotov.</description>
+    <baseCost>600</baseCost>
+    <techLevel>Industrial</techLevel>
+    <tab>EQ_RTab_Agua</tab>
+    <researchViewX>5</researchViewX>
+    <researchViewY>6</researchViewY>
+    <prerequisites><li>EQ_R_Agua_Ag_Moderna</li></prerequisites>
+    <modExtensions>
+      <li Class="EcosDaQueda.ResearchEditorExt">
+        <unlocks><li>FireSprinkler</li></unlocks>
+        <absorbs><li>FireSuppression</li></absorbs>
+        <branch>EQ_Ramo_Bancada</branch>
+      </li>
+    </modExtensions>
+  </ResearchProjectDef>
+
+  <ResearchTabDef>
     <defName>EQ_RTab_Construcao</defName>
     <label>Construção</label>
     <generalTitle>Construção</generalTitle>
@@ -331,6 +654,328 @@
       <li Class="EcosDaQueda.ResearchEditorExt">
         <unlocks><li>VFEM2_HeraldicRugBroad</li><li>VFEM2_HeraldicRugGrand</li><li>VFEM2_HeraldicRugNarrow</li></unlocks>
         <absorbs><li>VFEM2_Heraldry</li></absorbs>
+        <branch>EQ_Ramo_Bancada</branch>
+      </li>
+    </modExtensions>
+  </ResearchProjectDef>
+
+  <ResearchTabDef>
+    <defName>EQ_RTab_Cozinha</defName>
+    <label>Cozinha e bebidas</label>
+    <generalTitle>Cozinha e bebidas</generalTitle>
+    <generalDescription>Comida de verdade depois da pasta. Cozinha (fogão a lenha, carne-seca e condimentos, grelha, confeitaria, cozinha elétrica, comida de prateleira), Pasta nutritiva e Bebidas (cerveja e chá, vinho, hidromel, destilaria, café, expresso, mixologia). Cada bebida exige a planta que a faz na Fazenda.</generalDescription>
+  </ResearchTabDef>
+
+  <!-- Cozinha &gt; Cozinha &gt; nível I -->
+  <ResearchProjectDef>
+    <defName>EQ_R_Cozinha_Coz_Fogao</defName>
+    <label>Cozinha I: Fogão a lenha</label>
+    <description>Fogão a lenha e as refeições boas, luxuosas e gourmet. Comer bem é privilégio de quem pesquisou; os outros comem pasta.</description>
+    <baseCost>300</baseCost>
+    <techLevel>Neolithic</techLevel>
+    <tab>EQ_RTab_Cozinha</tab>
+    <researchViewX>0</researchViewX>
+    <researchViewY>0</researchViewY>
+    <modExtensions>
+      <li Class="EcosDaQueda.ResearchEditorExt">
+        <unlocks><li>FueledStove</li><li>MealFine</li><li>MealFine_Meat</li><li>MealFine_Veg</li><li>MealLavish</li><li>MealLavish_Meat</li><li>MealLavish_Veg</li><li>VCE_MealGourmet</li></unlocks>
+        <branch>EQ_Ramo_Bancada</branch>
+      </li>
+    </modExtensions>
+  </ResearchProjectDef>
+
+  <!-- Cozinha &gt; Cozinha &gt; nível I -->
+  <ResearchProjectDef>
+    <defName>EQ_R_Cozinha_Coz_Conserva</defName>
+    <label>Cozinha I: Carne-seca e condimentos</label>
+    <description>Carne-seca, mesa de condimentos, sal, maionese, néctar de agave e compota de geleia de inseto. Tempero é o que separa o jantar da sobrevivência.</description>
+    <baseCost>400</baseCost>
+    <techLevel>Neolithic</techLevel>
+    <tab>EQ_RTab_Cozinha</tab>
+    <researchViewX>0</researchViewX>
+    <researchViewY>1</researchViewY>
+    <prerequisites><li>EQ_R_Fazenda_Lav_Vegetal_1</li></prerequisites>
+    <modExtensions>
+      <li Class="EcosDaQueda.ResearchEditorExt">
+        <unlocks><li>Pemmican</li><li>VCE_CondimentPrepTable</li><li>VCE_Salt</li><li>VCE_Mayo</li><li>VCE_AgaveNectar</li><li>VCE_InsectJellyPreserves</li></unlocks>
+        <absorbs><li>Pemmican</li><li>VCE_CondimentsResearch</li></absorbs>
+        <branch>EQ_Ramo_Bancada</branch>
+      </li>
+    </modExtensions>
+  </ResearchProjectDef>
+
+  <!-- Cozinha &gt; Cozinha &gt; nível II -->
+  <ResearchProjectDef>
+    <defName>EQ_R_Cozinha_Coz_Molhos</defName>
+    <label>Cozinha II: Molhos</label>
+    <description>Ketchup e molho picante, do tomate e da pimenta da horta, e manteiga de folha de fumo. O Velho Mundo deixou poucas receitas; o ketchup foi a primeira a voltar.</description>
+    <baseCost>500</baseCost>
+    <techLevel>Medieval</techLevel>
+    <tab>EQ_RTab_Cozinha</tab>
+    <researchViewX>2.5</researchViewX>
+    <researchViewY>2</researchViewY>
+    <prerequisites><li>EQ_R_Cozinha_Coz_Conserva</li><li>EQ_R_Fazenda_Lav_Vegetal_2</li><li>EQ_R_Fazenda_Lav_Drogas_1</li></prerequisites>
+    <modExtensions>
+      <li Class="EcosDaQueda.ResearchEditorExt">
+        <unlocks><li>VCE_Ketchup</li><li>VCE_HotSauce</li><li>VCE_SmokeleafButter</li></unlocks>
+        <branch>EQ_Ramo_Bancada</branch>
+      </li>
+    </modExtensions>
+  </ResearchProjectDef>
+
+  <!-- Cozinha &gt; Cozinha &gt; nível III -->
+  <ResearchProjectDef>
+    <defName>EQ_R_Cozinha_Coz_Chocolate</defName>
+    <label>Cozinha III: Chocolate</label>
+    <description>Calda de chocolate e café moca, com o cacau das frutas de luxo. Doce de verdade: o Coro paga em prata, e os saqueadores, em balas.</description>
+    <baseCost>800</baseCost>
+    <techLevel>Medieval</techLevel>
+    <tab>EQ_RTab_Cozinha</tab>
+    <researchViewX>5</researchViewX>
+    <researchViewY>1.5</researchViewY>
+    <prerequisites><li>EQ_R_Cozinha_Coz_Forno</li><li>EQ_R_Cozinha_Beb_Cafe</li><li>EQ_R_Fazenda_Lav_Frutifera_3</li></prerequisites>
+    <modExtensions>
+      <li Class="EcosDaQueda.ResearchEditorExt">
+        <unlocks><li>VCE_ChocolateSyrup</li><li>VBE_MochaCoffee</li></unlocks>
+        <branch>EQ_Ramo_Bancada</branch>
+      </li>
+    </modExtensions>
+  </ResearchProjectDef>
+
+  <!-- Cozinha &gt; Cozinha &gt; nível II -->
+  <ResearchProjectDef>
+    <defName>EQ_R_Cozinha_Coz_Grelha</defName>
+    <label>Cozinha II: Grelha</label>
+    <description>Grelha de ferro. Churrasco: a única tradição do Velho Mundo que sobreviveu intacta.</description>
+    <baseCost>400</baseCost>
+    <techLevel>Medieval</techLevel>
+    <tab>EQ_RTab_Cozinha</tab>
+    <researchViewX>2.5</researchViewX>
+    <researchViewY>0</researchViewY>
+    <prerequisites><li>EQ_R_Cozinha_Coz_Fogao</li><li>EQ_R_Producao_Oficio_Metalurgia</li></prerequisites>
+    <modExtensions>
+      <li Class="EcosDaQueda.ResearchEditorExt">
+        <unlocks><li>VCE_Grill</li></unlocks>
+        <absorbs><li>VCE_Grilling</li></absorbs>
+        <branch>EQ_Ramo_Bancada</branch>
+      </li>
+    </modExtensions>
+  </ResearchProjectDef>
+
+  <!-- Cozinha &gt; Cozinha &gt; nível II -->
+  <ResearchProjectDef>
+    <defName>EQ_R_Cozinha_Coz_Forno</defName>
+    <label>Cozinha II: Confeitaria</label>
+    <description>Forno de confeitaria a lenha. Pão, bolo e sobremesa: o Coro não recebe embaixador sem doce na mesa.</description>
+    <baseCost>600</baseCost>
+    <techLevel>Medieval</techLevel>
+    <tab>EQ_RTab_Cozinha</tab>
+    <researchViewX>2.5</researchViewX>
+    <researchViewY>1</researchViewY>
+    <prerequisites><li>EQ_R_Cozinha_Coz_Fogao</li></prerequisites>
+    <modExtensions>
+      <li Class="EcosDaQueda.ResearchEditorExt">
+        <unlocks><li>VCE_BakeryOven_Fueled</li></unlocks>
+        <absorbs><li>VCE_DecorativeBaking</li></absorbs>
+        <branch>EQ_Ramo_Bancada</branch>
+      </li>
+    </modExtensions>
+  </ResearchProjectDef>
+
+  <!-- Cozinha &gt; Cozinha &gt; nível III -->
+  <ResearchProjectDef>
+    <defName>EQ_R_Cozinha_Coz_Eletrica</defName>
+    <label>Cozinha III: Cozinha elétrica</label>
+    <description>Fogão elétrico e a propano, forno de confeitaria elétrico, panela elétrica (sopas) e fritadeira. Comida rápida, para colonos que não têm mais tempo de ter fome.</description>
+    <baseCost>600</baseCost>
+    <techLevel>Industrial</techLevel>
+    <tab>EQ_RTab_Cozinha</tab>
+    <researchViewX>5</researchViewX>
+    <researchViewY>0.5</researchViewY>
+    <prerequisites><li>EQ_R_Cozinha_Coz_Fogao</li><li>EQ_R_Energia_Ger_Eletricidade</li></prerequisites>
+    <modExtensions>
+      <li Class="EcosDaQueda.ResearchEditorExt">
+        <unlocks><li>ElectricStove</li><li>AB_PropaneStove</li><li>VCE_BakeryOven_Electric</li><li>VCE_ElectricPot</li><li>VCE_DeepFrier</li></unlocks>
+        <absorbs><li>VCE_SoupCooking</li><li>VCE_DeepFrying</li></absorbs>
+        <branch>EQ_Ramo_Bancada</branch>
+      </li>
+    </modExtensions>
+  </ResearchProjectDef>
+
+  <!-- Cozinha &gt; Cozinha &gt; nível IV -->
+  <ResearchProjectDef>
+    <defName>EQ_R_Cozinha_Coz_Industrial</defName>
+    <label>Cozinha IV: Comida de prateleira</label>
+    <description>Fogão grande, enlatadora e refeição de sobrevivência embalada. Comida que dura mais que a colônia; os abrigos antigos ainda têm latas do tempo do Império.</description>
+    <baseCost>1200</baseCost>
+    <techLevel>Industrial</techLevel>
+    <tab>EQ_RTab_Cozinha</tab>
+    <researchViewX>7.5</researchViewX>
+    <researchViewY>0.5</researchViewY>
+    <prerequisites><li>EQ_R_Cozinha_Coz_Eletrica</li><li>EQ_R_Producao_Fabrica_Usinagem</li></prerequisites>
+    <modExtensions>
+      <li Class="EcosDaQueda.ResearchEditorExt">
+        <unlocks><li>VFE_TableStoveLarge</li><li>VCE_CanningMachine</li><li>MealSurvivalPack</li></unlocks>
+        <absorbs><li>VCE_Canning</li><li>PackagedSurvivalMeal</li></absorbs>
+        <branch>EQ_Ramo_Bancada</branch>
+      </li>
+    </modExtensions>
+  </ResearchProjectDef>
+
+  <!-- Cozinha &gt; Pasta &gt; nível II -->
+  <ResearchProjectDef>
+    <defName>EQ_R_Cozinha_Pasta_Nutrientes</defName>
+    <label>Pasta II: Pasta nutritiva</label>
+    <description>Dispensador e funil, tonel, moedor, gotejador, torneiras e canos de pasta. A comida oficial do fim do mundo: ninguém gosta, todo mundo come, e a Hélice jura que tem todas as vitaminas.</description>
+    <baseCost>400</baseCost>
+    <techLevel>Industrial</techLevel>
+    <tab>EQ_RTab_Cozinha</tab>
+    <researchViewX>2.5</researchViewX>
+    <researchViewY>2.5</researchViewY>
+    <prerequisites><li>EQ_R_Energia_Ger_Eletricidade</li></prerequisites>
+    <modExtensions>
+      <li Class="EcosDaQueda.ResearchEditorExt">
+        <unlocks><li>NutrientPasteDispenser</li><li>Hopper</li><li>VNPE_NutrientPasteVat</li><li>VNPE_NutrientPasteGrinder</li><li>VNPE_NutrientPasteDripper</li><li>VNPE_NutrientPasteTap</li><li>VNPE_NutrientPasteValve</li><li>VNPE_NutrientPastePipe</li><li>VNPE_UndergroundNutrientPastePipe</li></unlocks>
+        <absorbs><li>NutrientPaste</li></absorbs>
+        <branch>EQ_Ramo_Bancada</branch>
+      </li>
+    </modExtensions>
+  </ResearchProjectDef>
+
+  <!-- Cozinha &gt; Bebidas &gt; nível I -->
+  <ResearchProjectDef>
+    <defName>EQ_R_Cozinha_Beb_Cerveja</defName>
+    <label>Bebidas I: Cerveja e chá</label>
+    <description>Cervejaria, barril de fermentação, sidra não fermentada e chá. Com o lúpulo e o chá da horta: a primeira bebida de toda vila é a cerveja, e a segunda briga é por causa dela.</description>
+    <baseCost>400</baseCost>
+    <techLevel>Neolithic</techLevel>
+    <tab>EQ_RTab_Cozinha</tab>
+    <researchViewX>0</researchViewX>
+    <researchViewY>4</researchViewY>
+    <prerequisites><li>EQ_R_Fazenda_Lav_Drogas_1</li></prerequisites>
+    <modExtensions>
+      <li Class="EcosDaQueda.ResearchEditorExt">
+        <unlocks><li>Brewery</li><li>FermentingBarrel</li><li>VBE_UnfermentedCider</li><li>VBE_Tea</li></unlocks>
+        <absorbs><li>Brewing</li></absorbs>
+        <branch>EQ_Ramo_Bancada</branch>
+      </li>
+    </modExtensions>
+  </ResearchProjectDef>
+
+  <!-- Cozinha &gt; Bebidas &gt; nível II -->
+  <ResearchProjectDef>
+    <defName>EQ_R_Cozinha_Beb_Vinho</defName>
+    <label>Bebidas II: Vinho</label>
+    <description>Barril de vinho e mosto de uva, da videira do pomar. O Coro só brinda com vinho; o resto do mundo, com o que tiver.</description>
+    <baseCost>600</baseCost>
+    <techLevel>Medieval</techLevel>
+    <tab>EQ_RTab_Cozinha</tab>
+    <researchViewX>2.5</researchViewX>
+    <researchViewY>3.5</researchViewY>
+    <prerequisites><li>EQ_R_Cozinha_Beb_Cerveja</li><li>EQ_R_Fazenda_Lav_Frutifera_2</li></prerequisites>
+    <modExtensions>
+      <li Class="EcosDaQueda.ResearchEditorExt">
+        <unlocks><li>VFEM2_WineBarrel</li><li>VFEM2_Must</li></unlocks>
+        <absorbs><li>VFEM2_Wine</li></absorbs>
+        <branch>EQ_Ramo_Bancada</branch>
+      </li>
+    </modExtensions>
+  </ResearchProjectDef>
+
+  <!-- Cozinha &gt; Bebidas &gt; nível II -->
+  <ResearchProjectDef>
+    <defName>EQ_R_Cozinha_Beb_Hidromel</defName>
+    <label>Bebidas II: Hidromel</label>
+    <description>Barril de hidromel e pãozinho doce, com o mel do apiário. Doce, forte e antigo como o Império.</description>
+    <baseCost>500</baseCost>
+    <techLevel>Medieval</techLevel>
+    <tab>EQ_RTab_Cozinha</tab>
+    <researchViewX>2.5</researchViewX>
+    <researchViewY>4.5</researchViewY>
+    <prerequisites><li>EQ_R_Cozinha_Beb_Cerveja</li><li>EQ_R_Fazenda_Pec_Criacao_2</li></prerequisites>
+    <modExtensions>
+      <li Class="EcosDaQueda.ResearchEditorExt">
+        <unlocks><li>VFEM2_MeadFermentingBarrel</li><li>VFEM2_Sweetroll</li></unlocks>
+        <absorbs><li>VFEM2_Beekeeping</li></absorbs>
+        <branch>EQ_Ramo_Bancada</branch>
+      </li>
+    </modExtensions>
+  </ResearchProjectDef>
+
+  <!-- Cozinha &gt; Bebidas &gt; nível II -->
+  <ResearchProjectDef>
+    <defName>EQ_R_Cozinha_Beb_Destilaria</defName>
+    <label>Bebidas II: Destilaria</label>
+    <description>Alambique de gim, barril de tequila, tambor de vodca, tonel de uísque e os mostos. Batata, milho e agave viram o que faz o deserto parecer menor.</description>
+    <baseCost>700</baseCost>
+    <techLevel>Medieval</techLevel>
+    <tab>EQ_RTab_Cozinha</tab>
+    <researchViewX>2.5</researchViewX>
+    <researchViewY>5.5</researchViewY>
+    <prerequisites><li>EQ_R_Cozinha_Beb_Cerveja</li><li>EQ_R_Fazenda_Lav_Vegetal_1</li></prerequisites>
+    <modExtensions>
+      <li Class="EcosDaQueda.ResearchEditorExt">
+        <unlocks><li>VBE_GinStill</li><li>VBE_TequilaBarrel</li><li>VBE_VodkaDrum</li><li>VBE_WhiskeyCask</li><li>VBE_GinMush</li><li>VBE_TequilaMust</li><li>VBE_VodkaMash</li><li>VBE_WhiskeyMash</li></unlocks>
+        <absorbs><li>VBE_LiquorBrewing</li></absorbs>
+        <branch>EQ_Ramo_Bancada</branch>
+      </li>
+    </modExtensions>
+  </ResearchProjectDef>
+
+  <!-- Cozinha &gt; Bebidas &gt; nível II -->
+  <ResearchProjectDef>
+    <defName>EQ_R_Cozinha_Beb_Cafe</defName>
+    <label>Bebidas II: Café e limonada</label>
+    <description>Café passado e limonada, com o café da lavoura e o limão do pomar. Acordado, ninguém é saqueado dormindo.</description>
+    <baseCost>400</baseCost>
+    <techLevel>Medieval</techLevel>
+    <tab>EQ_RTab_Cozinha</tab>
+    <researchViewX>2.5</researchViewX>
+    <researchViewY>6.5</researchViewY>
+    <prerequisites><li>EQ_R_Cozinha_Beb_Cerveja</li><li>EQ_R_Fazenda_Lav_Drogas_2</li><li>EQ_R_Fazenda_Lav_Vegetal_2</li><li>EQ_R_Fazenda_Lav_Frutifera_2</li></prerequisites>
+    <modExtensions>
+      <li Class="EcosDaQueda.ResearchEditorExt">
+        <unlocks><li>VBE_HotCoffee</li><li>VBE_Lemonade</li></unlocks>
+        <branch>EQ_Ramo_Bancada</branch>
+      </li>
+    </modExtensions>
+  </ResearchProjectDef>
+
+  <!-- Cozinha &gt; Bebidas &gt; nível III -->
+  <ResearchProjectDef>
+    <defName>EQ_R_Cozinha_Beb_Expresso</defName>
+    <label>Bebidas III: Máquina de expresso</label>
+    <description>Máquina de expresso e os cafés e chás finos: latte, dalgona, earl grey, masala chai, kombucha... e o café canibal, sobre o qual é melhor não perguntar.</description>
+    <baseCost>500</baseCost>
+    <techLevel>Industrial</techLevel>
+    <tab>EQ_RTab_Cozinha</tab>
+    <researchViewX>5</researchViewX>
+    <researchViewY>6.5</researchViewY>
+    <prerequisites><li>EQ_R_Cozinha_Beb_Cafe</li><li>EQ_R_Energia_Ger_Eletricidade</li><li>EQ_R_Fazenda_Lav_Fungica_1</li></prerequisites>
+    <modExtensions>
+      <li Class="EcosDaQueda.ResearchEditorExt">
+        <unlocks><li>VBE_EspressoMachineBuilding</li><li>VBE_LatteCoffee</li><li>VBE_DalgonaCoffee</li><li>VBE_IrishCoffee</li><li>VBE_LemonCoffee</li><li>VBE_MintCoffee</li><li>VBE_CannibalCoffee</li><li>VBE_BlackTea</li><li>VBE_GreenTea</li><li>VBE_EarlGreyTea</li><li>VBE_LemonTea</li><li>VBE_MintTea</li><li>VBE_MasalaChai</li><li>VBE_NoonChai</li><li>VBE_Yuenyeung</li><li>VBE_Kombucha</li></unlocks>
+        <absorbs><li>VBE_EspressoMachine</li></absorbs>
+        <branch>EQ_Ramo_Bancada</branch>
+      </li>
+    </modExtensions>
+  </ResearchProjectDef>
+
+  <!-- Cozinha &gt; Bebidas &gt; nível III -->
+  <ResearchProjectDef>
+    <defName>EQ_R_Cozinha_Beb_Mixologia</defName>
+    <label>Bebidas III: Mixologia</label>
+    <description>Bar, máquina de refrigerante, destilaria de ambrandy, coquetéis, suco, energético e xaropes. O refrigerante do Velho Mundo voltou; a receita, ninguém sabe se é a original.</description>
+    <baseCost>900</baseCost>
+    <techLevel>Industrial</techLevel>
+    <tab>EQ_RTab_Cozinha</tab>
+    <researchViewX>5</researchViewX>
+    <researchViewY>5.5</researchViewY>
+    <prerequisites><li>EQ_R_Cozinha_Beb_Destilaria</li><li>EQ_R_Cozinha_Beb_Cafe</li><li>EQ_R_Energia_Ger_Eletricidade</li></prerequisites>
+    <modExtensions>
+      <li Class="EcosDaQueda.ResearchEditorExt">
+        <unlocks><li>VBE_Bar</li><li>VBE_SodaFountain</li><li>VBE_AmbrandyDistillery</li><li>VBE_AmbrandyMush</li><li>VBE_SimpleCocktail</li><li>VBE_FineCocktail</li><li>VBE_LavishCocktail</li><li>VBE_GourmetCocktail</li><li>VBE_Juice</li><li>VBE_EnergyDrink</li><li>VBE_SodaSyrup</li></unlocks>
+        <absorbs><li>VBE_MixologyResearch</li></absorbs>
         <branch>EQ_Ramo_Bancada</branch>
       </li>
     </modExtensions>
@@ -1115,7 +1760,7 @@
   <ResearchProjectDef>
     <defName>EQ_R_Fazenda_Lav_Drogas_2</defName>
     <label>Drogas II: Lavoura de exportação</label>
-    <description>Café, tabaco e psicoide, e o psycho em pó feito da folha. Rende mais que comida na Feira, e todo mundo sabe disso.</description>
+    <description>Café, tabaco e psicoide, com o cigarro, o charuto e o psycho em pó feito das folhas. Rende mais que comida na Feira, e todo mundo sabe disso.</description>
     <baseCost>700</baseCost>
     <techLevel>Medieval</techLevel>
     <tab>EQ_RTab_Fazenda</tab>
@@ -1124,7 +1769,7 @@
     <prerequisites><li>EQ_R_Fazenda_Lav_Drogas_1</li></prerequisites>
     <modExtensions>
       <li Class="EcosDaQueda.ResearchEditorExt">
-        <unlocks><li>VBE_Plant_Coffee</li><li>VBE_Plant_Tobacco</li><li>Plant_Psychoid</li><li>Psycho</li></unlocks>
+        <unlocks><li>VBE_Plant_Coffee</li><li>VBE_Plant_Tobacco</li><li>Plant_Psychoid</li><li>Psycho</li><li>VBE_Cigarettes</li><li>VBE_Cigars</li></unlocks>
         <branch>EQ_Ramo_Bancada</branch>
       </li>
     </modExtensions>
@@ -1410,7 +2055,7 @@
     <tab>EQ_RTab_Fazenda</tab>
     <researchViewX>5</researchViewX>
     <researchViewY>13</researchViewY>
-    <prerequisites><li>EQ_R_Fazenda_Agr_Manejo_2</li><li>Plumbing</li><li>EQ_R_Producao_Fabrica_Usinagem</li></prerequisites>
+    <prerequisites><li>EQ_R_Fazenda_Agr_Manejo_2</li><li>EQ_R_Agua_Ag_Primitiva</li><li>EQ_R_Producao_Fabrica_Usinagem</li></prerequisites>
     <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
     <modExtensions>
       <li Class="EcosDaQueda.ResearchEditorExt">
@@ -1545,7 +2190,7 @@
     <tab>EQ_RTab_Fazenda</tab>
     <researchViewX>5</researchViewX>
     <researchViewY>16</researchViewY>
-    <prerequisites><li>EQ_R_Fazenda_Pec_Abrigo_2</li><li>ComplexFurniture</li></prerequisites>
+    <prerequisites><li>EQ_R_Fazenda_Pec_Abrigo_2</li><li>EQ_R_Mobilia_Casa_Complexa</li></prerequisites>
     <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
     <modExtensions>
       <li Class="EcosDaQueda.ResearchEditorExt">
@@ -1602,7 +2247,7 @@
     <tab>EQ_RTab_Fazenda</tab>
     <researchViewX>5</researchViewX>
     <researchViewY>17</researchViewY>
-    <prerequisites><li>EQ_R_Fazenda_Pec_Alimentacao_2</li><li>NutrientPaste</li></prerequisites>
+    <prerequisites><li>EQ_R_Fazenda_Pec_Alimentacao_2</li><li>EQ_R_Cozinha_Pasta_Nutrientes</li></prerequisites>
     <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
     <modExtensions>
       <li Class="EcosDaQueda.ResearchEditorExt">
@@ -1753,115 +2398,6 @@
     <generalDescription>Árvore provisória: o que era livre no início e não está no kit de sobrevivência (ARVORES.md, Início da partida). Pesquisas baratas; o conteúdo migra para as árvores temáticas quando elas forem montadas.</generalDescription>
   </ResearchTabDef>
 
-  <!-- Fundamentos &gt; Casa -->
-  <ResearchProjectDef>
-    <defName>EQ_R_Fundamentos_Mobilia</defName>
-    <label>Mobília rústica</label>
-    <description>Colchonete duplo, berço, cama de pedra, banco, almofada, mesas, tochas negras, capachos e fogueira de pedra.</description>
-    <baseCost>250</baseCost>
-    <techLevel>Neolithic</techLevel>
-    <tab>EQ_RTab_Fundamentos</tab>
-    <researchViewX>0</researchViewX>
-    <researchViewY>1</researchViewY>
-    <prerequisites><li>EQ_R_Construcao_Est_Carpintaria</li></prerequisites>
-    <modExtensions>
-      <li Class="EcosDaQueda.ResearchEditorExt">
-        <unlocks><li>BedrollDouble</li><li>Crib</li><li>AM_CubicCrib</li><li>Bed_StoneSlab</li><li>VFE_Bed_StoneSlabDouble</li><li>Stool</li><li>Seat_Cushion</li><li>Table_1x1c</li><li>Table1x2c</li><li>Table2x2c</li><li>Table2x4c</li><li>Table3x3c</li><li>Darktorch</li><li>DarktorchFungus</li><li>LT_DoorMatLeather</li><li>LT_DoorMatBigLeather</li><li>LT_DoorMatCheckerLeather</li><li>LT_DoorMatBigCheckerLeather</li><li>Stone_Campfire</li><li>Stone_DarklightCampfire</li><li>NatureShrine_Small</li><li>NatureShrine_Large</li></unlocks>
-        <branch>EQ_Ramo_Bancada</branch>
-      </li>
-    </modExtensions>
-  </ResearchProjectDef>
-
-  <!-- Fundamentos &gt; Casa -->
-  <ResearchProjectDef>
-    <defName>EQ_R_Fundamentos_Arte</defName>
-    <label>Arte e jogos</label>
-    <description>Mesa de escultor, esculturas, jogo-de-Ur, anel de pedra e ferraduras. Para não enlouquecer antes da hora.</description>
-    <baseCost>250</baseCost>
-    <techLevel>Neolithic</techLevel>
-    <tab>EQ_RTab_Fundamentos</tab>
-    <researchViewX>2</researchViewX>
-    <researchViewY>1</researchViewY>
-    <modExtensions>
-      <li Class="EcosDaQueda.ResearchEditorExt">
-        <unlocks><li>TableSculpting</li><li>SculptureSmall</li><li>SculptureLarge</li><li>SculptureGrand</li><li>SculptureTerror</li><li>GameOfUrBoard</li><li>HoopstoneRing</li><li>HorseshoesPin</li></unlocks>
-        <branch>EQ_Ramo_Bancada</branch>
-      </li>
-    </modExtensions>
-  </ResearchProjectDef>
-
-  <!-- Fundamentos &gt; Casa -->
-  <ResearchProjectDef>
-    <defName>EQ_R_Fundamentos_Armazenamento</defName>
-    <label>Armazenamento rústico</label>
-    <description>Porão, pilha grande de lenha, varal de carne, fosso, tenda, cestos e armeiro.</description>
-    <baseCost>200</baseCost>
-    <techLevel>Neolithic</techLevel>
-    <tab>EQ_RTab_Fundamentos</tab>
-    <researchViewX>4</researchViewX>
-    <researchViewY>1</researchViewY>
-    <modExtensions>
-      <li Class="EcosDaQueda.ResearchEditorExt">
-        <unlocks><li>ASF_CellarWood</li><li>ASF_LargeLogPile</li><li>ASF_MeatRack</li><li>ASF_StoragePit</li><li>ASF_StorageTent</li><li>ASF_WeaponRack</li><li>ASF_WovenBasket</li><li>ASF_WovenBasketDouble</li><li>ASF_WovenBasketTriple</li></unlocks>
-        <branch>EQ_Ramo_Bancada</branch>
-      </li>
-    </modExtensions>
-  </ResearchProjectDef>
-
-  <!-- Fundamentos &gt; Casa -->
-  <ResearchProjectDef>
-    <defName>EQ_R_Fundamentos_Higiene</defName>
-    <label>Higiene rústica</label>
-    <description>Caixa de areia, porta de box e tapete de banheiro. A dignidade também se pesquisa.</description>
-    <baseCost>150</baseCost>
-    <techLevel>Neolithic</techLevel>
-    <tab>EQ_RTab_Fundamentos</tab>
-    <researchViewX>6</researchViewX>
-    <researchViewY>1</researchViewY>
-    <modExtensions>
-      <li Class="EcosDaQueda.ResearchEditorExt">
-        <unlocks><li>LitterBox</li><li>ToiletStallDoor</li><li>BathMat</li></unlocks>
-        <branch>EQ_Ramo_Bancada</branch>
-      </li>
-    </modExtensions>
-  </ResearchProjectDef>
-
-  <!-- Fundamentos &gt; Sustento -->
-  <ResearchProjectDef>
-    <defName>EQ_R_Fundamentos_Cozinha</defName>
-    <label>Cozinha de fogão</label>
-    <description>Fogão a lenha e as refeições boas, luxuosas e gourmet. Comer bem é privilégio de quem pesquisou.</description>
-    <baseCost>300</baseCost>
-    <techLevel>Neolithic</techLevel>
-    <tab>EQ_RTab_Fundamentos</tab>
-    <researchViewX>0</researchViewX>
-    <researchViewY>2</researchViewY>
-    <modExtensions>
-      <li Class="EcosDaQueda.ResearchEditorExt">
-        <unlocks><li>FueledStove</li><li>MealFine</li><li>MealFine_Meat</li><li>MealFine_Veg</li><li>MealLavish</li><li>MealLavish_Meat</li><li>MealLavish_Veg</li><li>VCE_MealGourmet</li></unlocks>
-        <branch>EQ_Ramo_Bancada</branch>
-      </li>
-    </modExtensions>
-  </ResearchProjectDef>
-
-  <!-- Fundamentos &gt; Sustento -->
-  <ResearchProjectDef>
-    <defName>EQ_R_Fundamentos_Roupas</defName>
-    <label>Roupas de couro e pano</label>
-    <description>Capuz, turbante, cocar, máscaras, manto, capa, burca, murça, armadura acolchoada, cinto de tochas, mochila e escudos de vime.</description>
-    <baseCost>250</baseCost>
-    <techLevel>Neolithic</techLevel>
-    <tab>EQ_RTab_Fundamentos</tab>
-    <researchViewX>2</researchViewX>
-    <researchViewY>2</researchViewY>
-    <modExtensions>
-      <li Class="EcosDaQueda.ResearchEditorExt">
-        <unlocks><li>Apparel_HatHood</li><li>Apparel_Headwrap</li><li>Apparel_TribalHeaddress</li><li>Apparel_WarMask</li><li>Apparel_WarVeil</li><li>Apparel_VisageMask</li><li>Apparel_Broadwrap</li><li>Apparel_Slicecap</li><li>Apparel_AuthorityCap</li><li>Apparel_Blindfold</li><li>Apparel_Collar</li><li>Apparel_TortureCrown</li><li>CE_Apparel_ImprovGasMask</li><li>Apparel_BodyStrap</li><li>Apparel_Burka</li><li>Apparel_KidParka</li><li>Apparel_Robe</li><li>Apparel_Cape</li><li>VFEM2_Apparel_Mantle</li><li>VFEM2_Apparel_PaddedArmor</li><li>VFEM2_Apparel_TorchBelt</li><li>CE_Apparel_TribalBackpack</li><li>CE_Apparel_WickerShield</li><li>CE_Apparel_Pavise</li></unlocks>
-        <branch>EQ_Ramo_Bancada</branch>
-      </li>
-    </modExtensions>
-  </ResearchProjectDef>
-
   <!-- Fundamentos &gt; Defesa -->
   <ResearchProjectDef>
     <defName>EQ_R_Fundamentos_Armas</defName>
@@ -1896,6 +2432,429 @@
       <li Class="EcosDaQueda.ResearchEditorExt">
         <unlocks><li>Barricade</li><li>Sandbags</li><li>TrapSpike</li><li>Tr_TrenchDirt</li><li>Tr_TrenchParapet</li><li>Tr_Duckboards</li><li>Tr_Parados</li><li>Tr_BarbedWire</li><li>CE_Embrasure</li></unlocks>
         <branch>EQ_Ramo_Bancada</branch>
+      </li>
+    </modExtensions>
+  </ResearchProjectDef>
+
+  <ResearchTabDef>
+    <defName>EQ_RTab_Logistica</defName>
+    <label>Logística</label>
+    <generalTitle>Logística</generalTitle>
+    <generalDescription>Quem guarda, sobrevive: do cesto de vime ao cofre. Armazenamento rústico, caixotes e barris, celeiro, estantes e cabides, vitrines, metal e cofres. (A reciclagem está na Produção, bloco Ferro-velho.)</generalDescription>
+  </ResearchTabDef>
+
+  <!-- Logística &gt; Armazenamento &gt; nível I -->
+  <ResearchProjectDef>
+    <defName>EQ_R_Logistica_Arm_Rustico</defName>
+    <label>Armazenamento I: Cestos e pilhas</label>
+    <description>Porão de madeira, pilha grande de lenha, varal de carne, fosso, tenda, cestos e armeiro. O catador guarda tudo; o catador que não guarda vira o saque do próximo.</description>
+    <baseCost>200</baseCost>
+    <techLevel>Neolithic</techLevel>
+    <tab>EQ_RTab_Logistica</tab>
+    <researchViewX>0</researchViewX>
+    <researchViewY>1</researchViewY>
+    <modExtensions>
+      <li Class="EcosDaQueda.ResearchEditorExt">
+        <unlocks><li>ASF_CellarWood</li><li>ASF_LargeLogPile</li><li>ASF_MeatRack</li><li>ASF_StoragePit</li><li>ASF_StorageTent</li><li>ASF_WeaponRack</li><li>ASF_WovenBasket</li><li>ASF_WovenBasketDouble</li><li>ASF_WovenBasketTriple</li></unlocks>
+        <branch>EQ_Ramo_Bancada</branch>
+      </li>
+    </modExtensions>
+  </ResearchProjectDef>
+
+  <!-- Logística &gt; Armazenamento &gt; nível II -->
+  <ResearchProjectDef>
+    <defName>EQ_R_Logistica_Arm_Caixotes</defName>
+    <label>Armazenamento II: Caixotes e barris</label>
+    <description>Caixotes, barris, paletes, caçamba, cesto de comida e trouxas de pano. A Feira mede a riqueza de uma vila pelo número de caixotes, e o saqueador também.</description>
+    <baseCost>500</baseCost>
+    <techLevel>Medieval</techLevel>
+    <tab>EQ_RTab_Logistica</tab>
+    <researchViewX>2.5</researchViewX>
+    <researchViewY>0</researchViewY>
+    <prerequisites><li>EQ_R_Logistica_Arm_Rustico</li><li>EQ_R_Construcao_Est_Carpintaria</li></prerequisites>
+    <modExtensions>
+      <li Class="EcosDaQueda.ResearchEditorExt">
+        <unlocks><li>CrateA</li><li>CrateB</li><li>CrateC</li><li>CrateD</li><li>CrateE</li><li>CrateF</li><li>CrateG</li><li>BarrelA</li><li>BarrelB</li><li>BarrelC</li><li>PalletCrateA</li><li>PalletCrateB</li><li>sbz_Crate</li><li>sbz_MidCrate</li><li>sbz_SmallCrate</li><li>sbz_TallCrate</li><li>sbz_Pallet</li><li>sbz_HalfPallet</li><li>sbz_MiniPallet</li><li>ASF_Pallet</li><li>ASF_Skip</li><li>ASF_Basket</li><li>BundleA</li><li>BundleB</li><li>BundleC</li></unlocks>
+        <branch>EQ_Ramo_Bancada</branch>
+      </li>
+    </modExtensions>
+  </ResearchProjectDef>
+
+  <!-- Logística &gt; Armazenamento &gt; nível II -->
+  <ResearchProjectDef>
+    <defName>EQ_R_Logistica_Arm_Celeiro</defName>
+    <label>Armazenamento II: Celeiro</label>
+    <description>Celeiro, palheiro, porão de pedra e potes de barro. Comida guardada é inverno vencido; o rato do deserto discorda.</description>
+    <baseCost>600</baseCost>
+    <techLevel>Medieval</techLevel>
+    <tab>EQ_RTab_Logistica</tab>
+    <researchViewX>2.5</researchViewX>
+    <researchViewY>1</researchViewY>
+    <prerequisites><li>EQ_R_Logistica_Arm_Rustico</li><li>EQ_R_Producao_Oficio_Cantaria</li><li>EQ_R_Fazenda_Pec_Alimentacao_1</li></prerequisites>
+    <modExtensions>
+      <li Class="EcosDaQueda.ResearchEditorExt">
+        <unlocks><li>ASF_Granary</li><li>ASF_Hayloft</li><li>ASF_CellarStone</li><li>ASF_CoveredClayPot</li><li>ASF_UncoveredClayPot</li></unlocks>
+        <branch>EQ_Ramo_Bancada</branch>
+      </li>
+    </modExtensions>
+  </ResearchProjectDef>
+
+  <!-- Logística &gt; Armazenamento &gt; nível II -->
+  <ResearchProjectDef>
+    <defName>EQ_R_Logistica_Arm_Estantes</defName>
+    <label>Armazenamento II: Estantes e cabides</label>
+    <description>Estantes altas e simples, guarda-roupas, arara, cesto de roupa, porta-bandejas, armário de remédios, expositores de roupa, varal de tecido, ganchos de carne e armeiros de madeira. Cada coisa no seu lugar, e o lugar no inventário.</description>
+    <baseCost>600</baseCost>
+    <techLevel>Medieval</techLevel>
+    <tab>EQ_RTab_Logistica</tab>
+    <researchViewX>2.5</researchViewX>
+    <researchViewY>2</researchViewY>
+    <prerequisites><li>EQ_R_Logistica_Arm_Caixotes</li><li>EQ_R_Producao_Oficio_Metalurgia</li></prerequisites>
+    <modExtensions>
+      <li Class="EcosDaQueda.ResearchEditorExt">
+        <unlocks><li>ASF_BigShelf</li><li>ASF_BigSShelf</li><li>ASF_VeryBigShelf</li><li>ASF_VeryBigSShelf</li><li>sbz_OpenShelf</li><li>sbz_TallDisplayShelf</li><li>sbz_NarrowTallDisplayShelf</li><li>sbz_HangerShelf</li><li>sbz_WideHangerShelf</li><li>ASF_ClothingRack</li><li>ASF_FabricHamper</li><li>ASF_TrayRack</li><li>ASF_MedCab</li><li>Building_OutfitStand</li><li>Building_KidOutfitStand</li><li>sbz_TextileRack</li><li>ASF_MeatHook</li><li>sbz_MeatHook</li><li>sbz_WeaponRack</li><li>Shelf_WeaponRack</li></unlocks>
+        <branch>EQ_Ramo_Bancada</branch>
+      </li>
+    </modExtensions>
+  </ResearchProjectDef>
+
+  <!-- Logística &gt; Armazenamento &gt; nível III -->
+  <ResearchProjectDef>
+    <defName>EQ_R_Logistica_Arm_Vitrines</defName>
+    <label>Armazenamento III: Vitrines</label>
+    <description>Vitrines, expositores, estante de dois andares e pedestal. Para expor o que foi saqueado como se tivesse sido herdado.</description>
+    <baseCost>800</baseCost>
+    <techLevel>Medieval</techLevel>
+    <tab>EQ_RTab_Logistica</tab>
+    <researchViewX>5</researchViewX>
+    <researchViewY>2</researchViewY>
+    <prerequisites><li>EQ_R_Logistica_Arm_Estantes</li></prerequisites>
+    <modExtensions>
+      <li Class="EcosDaQueda.ResearchEditorExt">
+        <unlocks><li>sbz_DisplayCabinet</li><li>sbz_NarrowDisplayCabinet</li><li>sbz_DisplayShelf</li><li>sbz_SmallDisplayShelf</li><li>sbz_TwoTierDisplayShelf</li><li>sbz_DisplayTable</li><li>sbz_RoundPedestal</li></unlocks>
+        <branch>EQ_Ramo_Bancada</branch>
+      </li>
+    </modExtensions>
+  </ResearchProjectDef>
+
+  <!-- Logística &gt; Armazenamento &gt; nível III -->
+  <ResearchProjectDef>
+    <defName>EQ_R_Logistica_Arm_Metal</defName>
+    <label>Armazenamento III: Metal e cofres</label>
+    <description>Caixas de metal, tambor, galões, cofres, armário e armeiros de armas e o armário antigo de vestiário. O que vale a pena roubar fica atrás de chapa e fechadura.</description>
+    <baseCost>800</baseCost>
+    <techLevel>Industrial</techLevel>
+    <tab>EQ_RTab_Logistica</tab>
+    <researchViewX>5</researchViewX>
+    <researchViewY>0.5</researchViewY>
+    <prerequisites><li>EQ_R_Logistica_Arm_Caixotes</li><li>EQ_R_Producao_Fabrica_Usinagem</li></prerequisites>
+    <modExtensions>
+      <li Class="EcosDaQueda.ResearchEditorExt">
+        <unlocks><li>MetalCrateA</li><li>MetalCrateB</li><li>MetalCrateC</li><li>MetalCrateD</li><li>sbz_Drum</li><li>CanisterA</li><li>CanisterB</li><li>sbz_Safe</li><li>ASF_Safe</li><li>ASF_WeaponsLocker</li><li>ASF_WeaponsCabinet</li><li>sbz_HorizontalWeaponRack</li><li>sbz_VerticalWeaponRack</li><li>AM_AncientLockerBank</li></unlocks>
+        <branch>EQ_Ramo_Bancada</branch>
+      </li>
+    </modExtensions>
+  </ResearchProjectDef>
+
+  <ResearchTabDef>
+    <defName>EQ_RTab_Mobilia</defName>
+    <label>Mobília e lazer</label>
+    <generalTitle>Mobília e lazer</generalTitle>
+    <generalDescription>Um lar no fim do mundo: do caixote à cama de dossel. Casa (rústica, de verdade, moderna, artesanal), Luz (luminárias e luzes avançadas), Lazer (arte, jogos de salão, instrumentos, televisão de tubo, tela plana) e Nobreza, do Coro Ascendente (decorações nobres, piano de cauda, órgão, trono estélico).</generalDescription>
+  </ResearchTabDef>
+
+  <!-- Mobília &gt; Casa &gt; nível I -->
+  <ResearchProjectDef>
+    <defName>EQ_R_Mobilia_Casa_Rustica</defName>
+    <label>Casa I: Mobília rústica</label>
+    <description>Colchonete duplo, berço, camas simples, de peles, de laje e de pedra, banco, almofada, mesas, tochas negras, capachos, fogueira de pedra e santuários. O primeiro móvel depois da Queda foi um caixote; este é o segundo.</description>
+    <baseCost>250</baseCost>
+    <techLevel>Neolithic</techLevel>
+    <tab>EQ_RTab_Mobilia</tab>
+    <researchViewX>0</researchViewX>
+    <researchViewY>0</researchViewY>
+    <prerequisites><li>EQ_R_Construcao_Est_Carpintaria</li></prerequisites>
+    <modExtensions>
+      <li Class="EcosDaQueda.ResearchEditorExt">
+        <unlocks><li>BedrollDouble</li><li>Crib</li><li>AM_CubicCrib</li><li>Bed_StoneSlab</li><li>VFE_Bed_StoneSlabDouble</li><li>Stool</li><li>Seat_Cushion</li><li>Table_1x1c</li><li>Table1x2c</li><li>Table2x2c</li><li>Table2x4c</li><li>Table3x3c</li><li>Darktorch</li><li>DarktorchFungus</li><li>LT_DoorMatLeather</li><li>LT_DoorMatBigLeather</li><li>LT_DoorMatCheckerLeather</li><li>LT_DoorMatBigCheckerLeather</li><li>Stone_Campfire</li><li>Stone_DarklightCampfire</li><li>NatureShrine_Small</li><li>NatureShrine_Large</li><li>Bed_Simple</li><li>VFE_Bed_SimpleDouble</li><li>VFEM2_FurBed</li><li>VFEM2_DoubleFurBed</li><li>SlabBed</li><li>SlabDoubleBed</li></unlocks>
+        <branch>EQ_Ramo_Bancada</branch>
+      </li>
+    </modExtensions>
+  </ResearchProjectDef>
+
+  <!-- Mobília &gt; Casa &gt; nível II -->
+  <ResearchProjectDef>
+    <defName>EQ_R_Mobilia_Casa_Complexa</defName>
+    <label>Casa II: Mobília de verdade</label>
+    <description>Cama e cama de casal, cadeiras, poltrona, sofá, cômoda, guarda-roupa, estantes, lareira, braseiro, cortina, trono e o que as crianças quebram (berço, lousa, carteira, caixa de brinquedo). Uma casa onde se mora, não onde se esconde.</description>
+    <baseCost>700</baseCost>
+    <techLevel>Medieval</techLevel>
+    <tab>EQ_RTab_Mobilia</tab>
+    <researchViewX>2.5</researchViewX>
+    <researchViewY>0</researchViewY>
+    <prerequisites><li>EQ_R_Mobilia_Casa_Rustica</li></prerequisites>
+    <modExtensions>
+      <li Class="EcosDaQueda.ResearchEditorExt">
+        <unlocks><li>Bed</li><li>DoubleBed</li><li>Seat_Bench</li><li>DiningChair</li><li>Seat_SquareChair</li><li>Armchair</li><li>Couch</li><li>EndTable</li><li>Dresser</li><li>Table_Counter</li><li>Table_Wardrobe</li><li>Shelf</li><li>ShelfSmall</li><li>Bookcase</li><li>BookcaseSmall</li><li>VFEM2_Hearth</li><li>VFEM2_HearthDarklight</li><li>Brazier</li><li>DarklightBrazier</li><li>Drape</li><li>Throne</li><li>GrandThrone</li><li>BabyDecoration</li><li>ToyBox</li><li>Blackboard</li><li>SchoolDesk</li></unlocks>
+        <absorbs><li>ComplexFurniture</li><li>MF_BasicFurniture</li></absorbs>
+        <branch>EQ_Ramo_Bancada</branch>
+      </li>
+    </modExtensions>
+  </ResearchProjectDef>
+
+  <!-- Mobília &gt; Casa &gt; nível III -->
+  <ResearchProjectDef>
+    <defName>EQ_R_Mobilia_Casa_Moderna</defName>
+    <label>Casa III: Mobília moderna</label>
+    <description>Cama e cadeira ergonômicas, mesa de centro, sofá modular, espreguiçadeira, arquivo e lixeiras. O escritório do Velho Mundo, remontado com peças de três escritórios diferentes.</description>
+    <baseCost>1000</baseCost>
+    <techLevel>Industrial</techLevel>
+    <tab>EQ_RTab_Mobilia</tab>
+    <researchViewX>5</researchViewX>
+    <researchViewY>0</researchViewY>
+    <prerequisites><li>EQ_R_Mobilia_Casa_Complexa</li><li>EQ_R_Producao_Fabrica_Usinagem</li></prerequisites>
+    <modExtensions>
+      <li Class="EcosDaQueda.ResearchEditorExt">
+        <unlocks><li>Bed_Ergonomic</li><li>Bed_DoubleErgonomic</li><li>Seat_ModernChair</li><li>VFE_CoffeeTable</li><li>VFE_ModularCouch</li><li>VFE_Lounger</li><li>Misc_FileCabinet</li><li>Bin_Small</li><li>Bin_Large</li></unlocks>
+        <absorbs><li>MF_ModernFurniture</li><li>MF_WasteDisposal</li></absorbs>
+        <branch>EQ_Ramo_Bancada</branch>
+      </li>
+    </modExtensions>
+  </ResearchProjectDef>
+
+  <!-- Mobília &gt; Casa &gt; nível III -->
+  <ResearchProjectDef>
+    <defName>EQ_R_Mobilia_Casa_Artesanal</defName>
+    <label>Casa III: Mobília artesanal</label>
+    <description>Cama de dossel, cama nobre, mesas, cadeiras, cômoda e guarda-roupa entalhados, luminária real e porta ornamentada. Luxo feito à mão para quem quer parecer nobre sem pagar o dízimo do Coro.</description>
+    <baseCost>1000</baseCost>
+    <techLevel>Medieval</techLevel>
+    <tab>EQ_RTab_Mobilia</tab>
+    <researchViewX>5</researchViewX>
+    <researchViewY>1</researchViewY>
+    <prerequisites><li>EQ_R_Mobilia_Casa_Complexa</li></prerequisites>
+    <modExtensions>
+      <li Class="EcosDaQueda.ResearchEditorExt">
+        <unlocks><li>Bed_Kingsize</li><li>RoyalBed</li><li>Seat_RoyalArmchair</li><li>Seat_RoyalChair</li><li>Table_Royal1x1c</li><li>Table_Royal1x2c</li><li>Table_Royal2x2c</li><li>Table_Royal2x4c</li><li>Table_Royal3x3c</li><li>Table_RoyalDresser</li><li>Table_RoyalEndTable</li><li>VFE_RoyalWardrobe</li><li>VFE_RoyalLamp</li><li>OrnateDoor</li></unlocks>
+        <absorbs><li>MF_RoyalFurniture</li></absorbs>
+        <branch>EQ_Ramo_Bancada</branch>
+      </li>
+    </modExtensions>
+  </ResearchProjectDef>
+
+  <!-- Mobília &gt; Luz &gt; nível II -->
+  <ResearchProjectDef>
+    <defName>EQ_R_Mobilia_Luz_Eletrica</defName>
+    <label>Luz II: Luminárias</label>
+    <description>Luminária de chão, de parede e de mesa. Luz que não fumaça nem queima a casa; só a conta do gerador.</description>
+    <baseCost>400</baseCost>
+    <techLevel>Industrial</techLevel>
+    <tab>EQ_RTab_Mobilia</tab>
+    <researchViewX>2.5</researchViewX>
+    <researchViewY>2.5</researchViewY>
+    <prerequisites><li>EQ_R_Mobilia_Casa_Rustica</li><li>EQ_R_Energia_Ger_Eletricidade</li></prerequisites>
+    <modExtensions>
+      <li Class="EcosDaQueda.ResearchEditorExt">
+        <unlocks><li>StandingLamp</li><li>WallLamp</li><li>VFE_DeskLamp</li></unlocks>
+        <branch>EQ_Ramo_Bancada</branch>
+      </li>
+    </modExtensions>
+  </ResearchProjectDef>
+
+  <!-- Mobília &gt; Luz &gt; nível III -->
+  <ResearchProjectDef>
+    <defName>EQ_R_Mobilia_Luz_Avancada</defName>
+    <label>Luz III: Luzes avançadas</label>
+    <description>Holofote e poste de rua. Iluminar o pátio inteiro: os saqueadores enxergam você, mas você também os enxerga.</description>
+    <baseCost>500</baseCost>
+    <techLevel>Industrial</techLevel>
+    <tab>EQ_RTab_Mobilia</tab>
+    <researchViewX>5</researchViewX>
+    <researchViewY>2.5</researchViewY>
+    <prerequisites><li>EQ_R_Mobilia_Luz_Eletrica</li></prerequisites>
+    <modExtensions>
+      <li Class="EcosDaQueda.ResearchEditorExt">
+        <unlocks><li>FloodLight</li><li>Light_Streetlamp</li></unlocks>
+        <absorbs><li>ColoredLights</li></absorbs>
+        <branch>EQ_Ramo_Bancada</branch>
+      </li>
+    </modExtensions>
+  </ResearchProjectDef>
+
+  <!-- Mobília &gt; Lazer &gt; nível I -->
+  <ResearchProjectDef>
+    <defName>EQ_R_Mobilia_Lazer_Arte</defName>
+    <label>Lazer I: Arte e jogos</label>
+    <description>Mesa de escultor, esculturas, jogo-de-Ur, anel de pedra e ferraduras. Para não enlouquecer antes da hora.</description>
+    <baseCost>250</baseCost>
+    <techLevel>Neolithic</techLevel>
+    <tab>EQ_RTab_Mobilia</tab>
+    <researchViewX>0</researchViewX>
+    <researchViewY>4</researchViewY>
+    <modExtensions>
+      <li Class="EcosDaQueda.ResearchEditorExt">
+        <unlocks><li>TableSculpting</li><li>SculptureSmall</li><li>SculptureLarge</li><li>SculptureGrand</li><li>SculptureTerror</li><li>GameOfUrBoard</li><li>HoopstoneRing</li><li>HorseshoesPin</li></unlocks>
+        <branch>EQ_Ramo_Bancada</branch>
+      </li>
+    </modExtensions>
+  </ResearchProjectDef>
+
+  <!-- Mobília &gt; Lazer &gt; nível II -->
+  <ResearchProjectDef>
+    <defName>EQ_R_Mobilia_Lazer_Salao</defName>
+    <label>Lazer II: Jogos de salão</label>
+    <description>Xadrez, bilhar, pôquer, dardos, saco de pancada, alvo de arco e boneco de treino. O bar da vila, onde se perde a prata que o tributo não levou.</description>
+    <baseCost>600</baseCost>
+    <techLevel>Medieval</techLevel>
+    <tab>EQ_RTab_Mobilia</tab>
+    <researchViewX>2.5</researchViewX>
+    <researchViewY>4</researchViewY>
+    <prerequisites><li>EQ_R_Mobilia_Lazer_Arte</li></prerequisites>
+    <modExtensions>
+      <li Class="EcosDaQueda.ResearchEditorExt">
+        <unlocks><li>ChessTable</li><li>BilliardsTable</li><li>PokerTable</li><li>Joy_DartsBoard</li><li>Joy_PunchingBag</li><li>VFEM2_ArcheryTarget</li><li>VFEM2_TrainingDummy</li></unlocks>
+        <branch>EQ_Ramo_Bancada</branch>
+      </li>
+    </modExtensions>
+  </ResearchProjectDef>
+
+  <!-- Mobília &gt; Lazer &gt; nível II -->
+  <ResearchProjectDef>
+    <defName>EQ_R_Mobilia_Lazer_Musica</defName>
+    <label>Lazer II: Instrumentos</label>
+    <description>Harpa e cravo. Música de verdade, sem gerador; o Coro diz que é afinação errada.</description>
+    <baseCost>700</baseCost>
+    <techLevel>Medieval</techLevel>
+    <tab>EQ_RTab_Mobilia</tab>
+    <researchViewX>2.5</researchViewX>
+    <researchViewY>5</researchViewY>
+    <prerequisites><li>EQ_R_Mobilia_Lazer_Arte</li><li>EQ_R_Producao_Oficio_Metalurgia</li></prerequisites>
+    <modExtensions>
+      <li Class="EcosDaQueda.ResearchEditorExt">
+        <unlocks><li>Harp</li><li>Harpsichord</li></unlocks>
+        <absorbs><li>Harp</li><li>Harpsichord</li></absorbs>
+        <branch>EQ_Ramo_Bancada</branch>
+      </li>
+    </modExtensions>
+  </ResearchProjectDef>
+
+  <!-- Mobília &gt; Lazer &gt; nível III -->
+  <ResearchProjectDef>
+    <defName>EQ_R_Mobilia_Lazer_Tubo</defName>
+    <label>Lazer III: Televisão de tubo</label>
+    <description>Televisão de tubo, fliperama, computador velho, rádio, piano de armário e roleta. As fitas do Velho Mundo ainda passam; ninguém sabe dizer se eram novela ou noticiário.</description>
+    <baseCost>1000</baseCost>
+    <techLevel>Industrial</techLevel>
+    <tab>EQ_RTab_Mobilia</tab>
+    <researchViewX>5</researchViewX>
+    <researchViewY>4.5</researchViewY>
+    <prerequisites><li>EQ_R_Mobilia_Lazer_Salao</li><li>EQ_R_Energia_Ger_Eletricidade</li></prerequisites>
+    <modExtensions>
+      <li Class="EcosDaQueda.ResearchEditorExt">
+        <unlocks><li>TubeTelevision</li><li>Joy_Arcade</li><li>Joy_InudstrialComputer</li><li>Radio_Industrial</li><li>Joy_Piano</li><li>Joy_RouletteTable</li></unlocks>
+        <absorbs><li>TubeTelevision</li></absorbs>
+        <branch>EQ_Ramo_Bancada</branch>
+      </li>
+    </modExtensions>
+  </ResearchProjectDef>
+
+  <!-- Mobília &gt; Lazer &gt; nível IV -->
+  <ResearchProjectDef>
+    <defName>EQ_R_Mobilia_Lazer_TelaPlana</defName>
+    <label>Lazer IV: Tela plana</label>
+    <description>Televisão de tela plana, computador moderno e rádio de ondas longas. Tecnologia do Velho Mundo para assistir ao fim dele em alta definição.</description>
+    <baseCost>2000</baseCost>
+    <techLevel>Industrial</techLevel>
+    <tab>EQ_RTab_Mobilia</tab>
+    <researchViewX>7.5</researchViewX>
+    <researchViewY>4.5</researchViewY>
+    <prerequisites><li>EQ_R_Mobilia_Lazer_Tubo</li><li>EQ_R_Producao_Lab_Micro</li></prerequisites>
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <modExtensions>
+      <li Class="EcosDaQueda.ResearchEditorExt">
+        <unlocks><li>FlatscreenTelevision</li><li>Joy_ModernComputer</li><li>Radio_Spacer</li></unlocks>
+        <absorbs><li>FlatscreenTelevision</li></absorbs>
+        <branch>EQ_Ramo_VelhoMundo</branch>
+      </li>
+    </modExtensions>
+  </ResearchProjectDef>
+
+  <!-- Mobília &gt; Nobreza &gt; nível II -->
+  <ResearchProjectDef>
+    <defName>EQ_R_Mobilia_Nob_Decoracoes</defName>
+    <label>Nobreza II: Decorações nobres</label>
+    <description>Candelabro, cadeira e mesa imponentes, espelho, banqueta, estandarte, esculturas imperiais, estela, tapetes reais e laje imperial. Etiqueta do Coro Ascendente: sem candelabro, a visita do nobre vira multa.</description>
+    <baseCost>500</baseCost>
+    <techLevel>Medieval</techLevel>
+    <tab>EQ_RTab_Mobilia</tab>
+    <researchViewX>2.5</researchViewX>
+    <researchViewY>6.5</researchViewY>
+    <prerequisites><li>EQ_R_Mobilia_Casa_Complexa</li></prerequisites>
+    <modExtensions>
+      <li Class="EcosDaQueda.ResearchEditorExt">
+        <unlocks><li>VFEE_Candelabra</li><li>VFEE_GrandChair</li><li>VFEE_GrandTable</li><li>VFEE_RoyalMirror</li><li>VFEE_RoyalStool</li><li>VFEE_ImperialBanner</li><li>VFEE_RoyalSculptureSmall</li><li>VFEE_RoyalSculptureLarge</li><li>VFEE_RoyalSculptureGrand</li><li>VFEE_SteleSmall</li><li>VFEE_GrandRoyalRug</li><li>VFEE_LargeRoyalRug</li><li>VFEE_ImperialSlab</li></unlocks>
+        <absorbs><li>VFEE_NobleDecorations</li></absorbs>
+        <branch>EQ_Ramo_Coro</branch>
+      </li>
+    </modExtensions>
+  </ResearchProjectDef>
+
+  <!-- Mobília &gt; Nobreza &gt; nível III -->
+  <ResearchProjectDef>
+    <defName>EQ_R_Mobilia_Nob_Piano</defName>
+    <label>Nobreza III: Piano de cauda</label>
+    <description>Piano de cauda. O Coro só aceita música tocada nele, e só se o pianista pagou a licença de afinação.</description>
+    <baseCost>2000</baseCost>
+    <techLevel>Industrial</techLevel>
+    <tab>EQ_RTab_Mobilia</tab>
+    <researchViewX>5</researchViewX>
+    <researchViewY>5.5</researchViewY>
+    <prerequisites><li>EQ_R_Mobilia_Lazer_Musica</li></prerequisites>
+    <modExtensions>
+      <li Class="EcosDaQueda.ResearchEditorExt">
+        <unlocks><li>Piano</li></unlocks>
+        <absorbs><li>Piano</li></absorbs>
+        <branch>EQ_Ramo_Coro</branch>
+      </li>
+    </modExtensions>
+  </ResearchProjectDef>
+
+  <!-- Mobília &gt; Nobreza &gt; nível IV -->
+  <ResearchProjectDef>
+    <defName>EQ_R_Mobilia_Nob_Orgao</defName>
+    <label>Nobreza IV: Órgão de tubos</label>
+    <description>Órgão de tubos. Um salão inteiro vibrando na mesma nota: o mais perto do coro psíquico que um surdo chega.</description>
+    <baseCost>2000</baseCost>
+    <techLevel>Industrial</techLevel>
+    <tab>EQ_RTab_Mobilia</tab>
+    <researchViewX>7.5</researchViewX>
+    <researchViewY>5.5</researchViewY>
+    <prerequisites><li>EQ_R_Mobilia_Nob_Piano</li></prerequisites>
+    <modExtensions>
+      <li Class="EcosDaQueda.ResearchEditorExt">
+        <unlocks><li>VFEE_PipeOrgan</li></unlocks>
+        <absorbs><li>VFEE_PipeOrgans</li></absorbs>
+        <branch>EQ_Ramo_Coro</branch>
+      </li>
+    </modExtensions>
+  </ResearchProjectDef>
+
+  <!-- Mobília &gt; Nobreza &gt; nível III -->
+  <ResearchProjectDef>
+    <defName>EQ_R_Mobilia_Nob_Trono</defName>
+    <label>Nobreza III: Trono estélico</label>
+    <description>Trono de meditação estélico. Sentar nele não dá poder; mostrar que se pode pagar por ele, sim.</description>
+    <baseCost>1000</baseCost>
+    <techLevel>Industrial</techLevel>
+    <tab>EQ_RTab_Mobilia</tab>
+    <researchViewX>5</researchViewX>
+    <researchViewY>6.5</researchViewY>
+    <prerequisites><li>EQ_R_Mobilia_Nob_Decoracoes</li></prerequisites>
+    <modExtensions>
+      <li Class="EcosDaQueda.ResearchEditorExt">
+        <unlocks><li>VFEE_StellicThrone</li></unlocks>
+        <absorbs><li>VFEE_StellicThrone</li></absorbs>
+        <branch>EQ_Ramo_Coro</branch>
       </li>
     </modExtensions>
   </ResearchProjectDef>
@@ -2224,6 +3183,151 @@
         <unlocks><li>GroundPenetratingScanner</li><li>LongRangeMineralScanner</li></unlocks>
         <absorbs><li>GroundPenetratingScanner</li><li>LongRangeMineralScanner</li></absorbs>
         <branch>EQ_Ramo_Silencio</branch>
+      </li>
+    </modExtensions>
+  </ResearchProjectDef>
+
+  <ResearchTabDef>
+    <defName>EQ_RTab_Vestuario</defName>
+    <label>Vestuário</label>
+    <generalTitle>Vestuário</generalTitle>
+    <generalDescription>Vestir o fim do mundo. Costura (couro e pano, alfaiataria, confecção), Moda (nobre e real, para os títulos do Coro) e Equipamento (máscaras de gás e cintos, escudos do Velho Mundo). Armaduras e capacetes ficam na árvore Armaduras.</generalDescription>
+  </ResearchTabDef>
+
+  <!-- Vestuário &gt; Costura &gt; nível I -->
+  <ResearchProjectDef>
+    <defName>EQ_R_Vestuario_Ves_Rustica</defName>
+    <label>Costura I: Roupas de couro e pano</label>
+    <description>Capuz, turbante, cocar, máscaras, manto, capa, burca, murça, armadura acolchoada, cinto de tochas, mochila e escudos de vime. A moda depois da Queda tem duas cores: cru e sujo.</description>
+    <baseCost>250</baseCost>
+    <techLevel>Neolithic</techLevel>
+    <tab>EQ_RTab_Vestuario</tab>
+    <researchViewX>0</researchViewX>
+    <researchViewY>0</researchViewY>
+    <modExtensions>
+      <li Class="EcosDaQueda.ResearchEditorExt">
+        <unlocks><li>Apparel_HatHood</li><li>Apparel_Headwrap</li><li>Apparel_TribalHeaddress</li><li>Apparel_WarMask</li><li>Apparel_WarVeil</li><li>Apparel_VisageMask</li><li>Apparel_Broadwrap</li><li>Apparel_Slicecap</li><li>Apparel_AuthorityCap</li><li>Apparel_Blindfold</li><li>Apparel_Collar</li><li>Apparel_TortureCrown</li><li>CE_Apparel_ImprovGasMask</li><li>Apparel_BodyStrap</li><li>Apparel_Burka</li><li>Apparel_KidParka</li><li>Apparel_Robe</li><li>Apparel_Cape</li><li>VFEM2_Apparel_Mantle</li><li>VFEM2_Apparel_PaddedArmor</li><li>VFEM2_Apparel_TorchBelt</li><li>CE_Apparel_TribalBackpack</li><li>CE_Apparel_WickerShield</li><li>CE_Apparel_Pavise</li></unlocks>
+        <branch>EQ_Ramo_Bancada</branch>
+      </li>
+    </modExtensions>
+  </ResearchProjectDef>
+
+  <!-- Vestuário &gt; Costura &gt; nível II -->
+  <ResearchProjectDef>
+    <defName>EQ_R_Vestuario_Ves_Alfaiataria</defName>
+    <label>Costura II: Alfaiataria</label>
+    <description>Mesa de alfaiate manual, caldeirão de couro, camiseta, camisa de botão, calças, jaqueta, gabardina, chapéus, roupas de criança, jaleco, poncho, macacão e as roupas de corte medieval. Roupa com molde: o primeiro sinal de que alguém pretende ficar.</description>
+    <baseCost>600</baseCost>
+    <techLevel>Medieval</techLevel>
+    <tab>EQ_RTab_Vestuario</tab>
+    <researchViewX>2.5</researchViewX>
+    <researchViewY>0</researchViewY>
+    <prerequisites><li>EQ_R_Vestuario_Ves_Rustica</li><li>EQ_R_Fazenda_Lav_Tecido_1</li></prerequisites>
+    <modExtensions>
+      <li Class="EcosDaQueda.ResearchEditorExt">
+        <unlocks><li>HandTailoringBench</li><li>VFEM2_LeatherBoilpot</li><li>Apparel_BasicShirt</li><li>Apparel_CollarShirt</li><li>Apparel_Pants</li><li>Apparel_Jacket</li><li>Apparel_Duster</li><li>Apparel_BowlerHat</li><li>Apparel_CowboyHat</li><li>Apparel_Tuque</li><li>Apparel_ClothMask</li><li>Apparel_KidShirt</li><li>Apparel_KidPants</li><li>Apparel_KidRomper</li><li>Apparel_LabCoat</li><li>CE_Armor_Poncho</li><li>CE_Armor_Jumpsuit</li><li>VFEM2_Apparel_DameDress</li><li>VFEM2_Apparel_DameHat</li><li>VFEM2_Apparel_Chaperon</li></unlocks>
+        <absorbs><li>ComplexClothing</li></absorbs>
+        <branch>EQ_Ramo_Bancada</branch>
+      </li>
+    </modExtensions>
+  </ResearchProjectDef>
+
+  <!-- Vestuário &gt; Costura &gt; nível III -->
+  <ResearchProjectDef>
+    <defName>EQ_R_Vestuario_Ves_Eletrica</defName>
+    <label>Costura III: Confecção</label>
+    <description>Mesa de alfaiate elétrica, mesa de alfaiataria grande e armário de alfaiataria. Costura em série: a fábrica de roupa voltou, e as costureiras continuam sem folga.</description>
+    <baseCost>800</baseCost>
+    <techLevel>Industrial</techLevel>
+    <tab>EQ_RTab_Vestuario</tab>
+    <researchViewX>5</researchViewX>
+    <researchViewY>0</researchViewY>
+    <prerequisites><li>EQ_R_Vestuario_Ves_Alfaiataria</li><li>EQ_R_Energia_Ger_Eletricidade</li></prerequisites>
+    <modExtensions>
+      <li Class="EcosDaQueda.ResearchEditorExt">
+        <unlocks><li>ElectricTailoringBench</li><li>VFE_TableTailorLarge</li><li>VFE_TailorCabinet</li></unlocks>
+        <branch>EQ_Ramo_Bancada</branch>
+      </li>
+    </modExtensions>
+  </ResearchProjectDef>
+
+  <!-- Vestuário &gt; Moda &gt; nível II -->
+  <ResearchProjectDef>
+    <defName>EQ_R_Vestuario_Ves_Nobre</defName>
+    <label>Moda II: Vestuário nobre</label>
+    <description>Boina, espartilho, chapéu de senhora, cartola, camisa plissada e colete real. A etiqueta do Coro Ascendente exige; o espartilho, ninguém exige, mas todo mundo usa.</description>
+    <baseCost>500</baseCost>
+    <techLevel>Medieval</techLevel>
+    <tab>EQ_RTab_Vestuario</tab>
+    <researchViewX>2.5</researchViewX>
+    <researchViewY>1.5</researchViewY>
+    <prerequisites><li>EQ_R_Vestuario_Ves_Alfaiataria</li></prerequisites>
+    <modExtensions>
+      <li Class="EcosDaQueda.ResearchEditorExt">
+        <unlocks><li>Apparel_Beret</li><li>Apparel_Corset</li><li>Apparel_HatLadies</li><li>Apparel_HatTop</li><li>Apparel_ShirtRuffle</li><li>Apparel_VestRoyal</li></unlocks>
+        <absorbs><li>NobleApparel</li></absorbs>
+        <branch>EQ_Ramo_Bancada</branch>
+      </li>
+    </modExtensions>
+  </ResearchProjectDef>
+
+  <!-- Vestuário &gt; Moda &gt; nível III -->
+  <ResearchProjectDef>
+    <defName>EQ_R_Vestuario_Ves_Real</defName>
+    <label>Moda III: Vestuário real</label>
+    <description>Coroneta, coroa, coroa de aço, coroa do rei, manto real, manto do rei e túnica estélica. Para receber um título do Império que não existe mais, de alguém que diz representá-lo.</description>
+    <baseCost>700</baseCost>
+    <techLevel>Medieval</techLevel>
+    <tab>EQ_RTab_Vestuario</tab>
+    <researchViewX>5</researchViewX>
+    <researchViewY>1.5</researchViewY>
+    <prerequisites><li>EQ_R_Vestuario_Ves_Nobre</li><li>EQ_R_Producao_Oficio_Metalurgia</li></prerequisites>
+    <modExtensions>
+      <li Class="EcosDaQueda.ResearchEditorExt">
+        <unlocks><li>Apparel_Coronet</li><li>Apparel_Crown</li><li>Apparel_CrownStellic</li><li>VFEM2_Apparel_KingsCrown</li><li>Apparel_RobeRoyal</li><li>VFEM2_Apparel_KingsRobes</li><li>VFE_Apparel_StellicRobe</li></unlocks>
+        <absorbs><li>RoyalApparel</li></absorbs>
+        <branch>EQ_Ramo_Bancada</branch>
+      </li>
+    </modExtensions>
+  </ResearchProjectDef>
+
+  <!-- Vestuário &gt; Equipamento &gt; nível II -->
+  <ResearchProjectDef>
+    <defName>EQ_R_Vestuario_Ves_Protecao</defName>
+    <label>Equipamento II: Máscaras e cintos</label>
+    <description>Máscaras de gás, cinto de bomba de fumaça e mochila de espuma contra fogo. No deserto poluído, a máscara é a roupa mais importante; a segunda é a que esconde a máscara.</description>
+    <baseCost>500</baseCost>
+    <techLevel>Industrial</techLevel>
+    <tab>EQ_RTab_Vestuario</tab>
+    <researchViewX>2.5</researchViewX>
+    <researchViewY>3</researchViewY>
+    <prerequisites><li>EQ_R_Vestuario_Ves_Rustica</li><li>EQ_R_Producao_Fabrica_Usinagem</li></prerequisites>
+    <modExtensions>
+      <li Class="EcosDaQueda.ResearchEditorExt">
+        <unlocks><li>Apparel_GasMask</li><li>CE_Apparel_GasMask</li><li>Apparel_SmokepopBelt</li><li>Apparel_FirefoampopPack</li></unlocks>
+        <absorbs><li>SmokepopBelt</li></absorbs>
+        <branch>EQ_Ramo_Bancada</branch>
+      </li>
+    </modExtensions>
+  </ResearchProjectDef>
+
+  <!-- Vestuário &gt; Equipamento &gt; nível IV -->
+  <ResearchProjectDef>
+    <defName>EQ_R_Vestuario_Ves_Escudo</defName>
+    <label>Equipamento IV: Cintos de escudo</label>
+    <description>Cinto com escudo protetor e aparato de escudo holográfico. Tecnologia do Velho Mundo que segura bala, mas não a conta.</description>
+    <baseCost>1000</baseCost>
+    <techLevel>Spacer</techLevel>
+    <tab>EQ_RTab_Vestuario</tab>
+    <researchViewX>7.5</researchViewX>
+    <researchViewY>3</researchViewY>
+    <prerequisites><li>EQ_R_Vestuario_Ves_Protecao</li><li>EQ_R_Producao_Lab_Micro</li></prerequisites>
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <modExtensions>
+      <li Class="EcosDaQueda.ResearchEditorExt">
+        <unlocks><li>Apparel_ShieldBelt</li><li>Apparel_PackBroadshield</li></unlocks>
+        <absorbs><li>ShieldBelt</li></absorbs>
+        <branch>EQ_Ramo_VelhoMundo</branch>
       </li>
     </modExtensions>
   </ResearchProjectDef>
