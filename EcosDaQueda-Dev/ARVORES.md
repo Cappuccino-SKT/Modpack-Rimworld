@@ -28,7 +28,7 @@ Legenda da tabela:
 | 10 | Medicina e farmácia (próteses, implantes, cirurgias, drogas) | 507 | 332 | **Hélice 23**, Bancada 13 | a fazer |
 | 11 | Armas e munição | 1.099 | 380 | Bancada 16, Velho Mundo 8, Silêncio 5, Forja 4 | **feita** (46 pesquisas, 372 coisas, 20 absorvidas) |
 | 12 | Armaduras | 40 | 3 | Bancada 6, Forja 4 | **feita** (16 pesquisas, 60 coisas, 10 absorvidas) |
-| 13 | Defesa (torretas, armadilhas, trincheiras) | 115 | 8 | Bancada 18, **Forja 13**, Velho Mundo 9 | a fazer |
+| 13 | Defesa (torretas, armadilhas, trincheiras) | 115 | 8 | Bancada 18, **Forja 13**, Velho Mundo 9 | **feita** (26 pesquisas, 169 coisas, 22 absorvidas) |
 | 14 | Veículos | 40 | 0 | Bancada 6, **Forja 4** | licença da Forja |
 | 15 | Mecanoides e drones | 62 | 7 | **Forja 7** | licença da Forja |
 | 16 | Androides | 41 | 1 | **Forja 2** | licença da Forja |
@@ -190,6 +190,14 @@ Para cada árvore: as pesquisas originais que ela absorve (projetos cuja maior p
 - Conteúdo: torretas (VFE Security, CE, Pirates, Deserters), trincheiras e IEDs.
 - Absorve: Torretas de disparo, Torretas pesadas, Torreta de urânio, Canhão de espuma, Enxame de foguetes, Trincheiras, Railgun, EMP, Repulsor, Cerco, Defesas ocultas e Demolição remota.
 - Também absorve o armamento de caixão de guerra (Pirates).
+- **Feita em 2026-11-20** (`kits/pesquisa/Defesa.json`, "segurar o que é seu"), no modelo das Armas (linhas em passos, cada uma pedindo a anterior):
+  - **Fortificação** (Bancada, depois de Fundamentos › Fortificação): trincheiras escoradas → arame e armadilhas → guerra de trincheira → concreto e defesas ocultas.
+  - **Minas:** IEDs e mina terrestre → minas especiais (PEM, espuma, tóxica, choque; pede Microeletrônica) → demolição remota e antigrão (Forja).
+  - **Torretas** (pedem Oficina automática I e Eletricidade): leves → metralhadoras montadas (com caixa de munição e carregadores) → metralhadoras pesadas (Velho Mundo) → canhões automáticos (Velho Mundo); depois **Defesas espaciais** (Forja): urânio e enxame → carga → imperiais, tesla e railgun → graser e repulsores.
+  - **Cerco** (pedem Metalurgia; canhões pedem Pólvora negra IV): armas de muralha → balista e catapulta → canhões → órgão e Gatling. **Artilharia:** morteiros → canhão de campanha → obuses → morteiro automático, mais **Munição especial: Artilharia** (pede a Munição especial I das Armas, pelo prometeu).
+  - **Armamento de caixão de guerra I e II** (Forja, depois de Armaduras › Caixões de guerra).
+  - **Munição de torreta:** o catálogo agora exporta a munição do canhão de cada torreta (`ammo` nos prédios; `ResearchCatalog.cs` do mod de debug). A comum vem com a torreta; a especial (incendiária, fumaça, PEM, tóxica, sabot…) na Munição especial: Artilharia. Ficam de fora a munição já dada pelas Armas, a do kit livre (as lanças da balista) e a que não se fabrica (projéteis antigrão, só saque).
+  - Fora: complexo incinerador pesado (bioferrita; árvore Vazio). Fundamentos ainda tem Armas improvisadas e Fortificação de campo: decidir se somem agora que Armas e Defesa estão prontas.
 
 **14 a 16. Forja (licença).**
 - **Veículos:** os 4 projetos do VVE.

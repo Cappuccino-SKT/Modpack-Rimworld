@@ -1,0 +1,883 @@
+{
+ "id": "Defesa",
+ "label": "Defesa",
+ "active": true,
+ "ownTab": true,
+ "replace": true,
+ "branch": "EQ_Ramo_Bancada",
+ "desc": "Segurar o que é seu. Fortificação, minas, torretas (leves, montadas, pesadas, canhões automáticos e defesas espaciais da Forja), cerco de pólvora, artilharia e o armamento dos caixões de guerra. A munição das torretas vem com a torreta; a especial, na Munição especial: Artilharia.",
+ "nodes": [
+  {
+   "id": "ref_Fund_Fortificacao",
+   "ref": "EQ_R_Fundamentos_Fortificacao",
+   "x": -2.5,
+   "y": 0.0
+  },
+  {
+   "id": "ref_Oficio_Metalurgia",
+   "ref": "EQ_R_Producao_Oficio_Metalurgia",
+   "x": -2.5,
+   "y": 6.0
+  },
+  {
+   "id": "ref_Ger_Eletricidade",
+   "ref": "EQ_R_Energia_Ger_Eletricidade",
+   "x": -2.5,
+   "y": 3.0
+  },
+  {
+   "id": "ref_Lab_Micro",
+   "ref": "EQ_R_Producao_Lab_Micro",
+   "x": 5.0,
+   "y": 4.5
+  },
+  {
+   "id": "ref_Lab_Refinaria",
+   "ref": "EQ_R_Producao_Lab_Refinaria",
+   "x": 2.5,
+   "y": 4.5
+  },
+  {
+   "id": "ref_Comp_Fabricacao",
+   "ref": "EQ_R_Producao_Comp_Fabricacao",
+   "x": 10.0,
+   "y": 4.5
+  },
+  {
+   "id": "ref_Armas_Pol_4",
+   "ref": "EQ_R_Armas_Pol_4",
+   "x": 2.5,
+   "y": 7.5
+  },
+  {
+   "id": "ref_Armas_Aut_1",
+   "ref": "EQ_R_Armas_Aut_1",
+   "x": 0.0,
+   "y": 4.5
+  },
+  {
+   "id": "ref_Armas_Aut_3",
+   "ref": "EQ_R_Armas_Aut_3",
+   "x": 7.5,
+   "y": 4.5
+  },
+  {
+   "id": "ref_Armas_VM_1",
+   "ref": "EQ_R_Armas_VM_1",
+   "x": 12.5,
+   "y": 4.5
+  },
+  {
+   "id": "ref_Armas_Fo_1",
+   "ref": "EQ_R_Armas_Fo_1",
+   "x": 20.0,
+   "y": 4.5
+  },
+  {
+   "id": "ref_Armas_Suc_Esp",
+   "ref": "EQ_R_Armas_Suc_Esp",
+   "x": 0.0,
+   "y": 10.5
+  },
+  {
+   "id": "ref_Armaduras_Caixao",
+   "ref": "EQ_R_Armaduras_Caixao",
+   "x": 10.0,
+   "y": 12.0
+  },
+  {
+   "id": "For_1",
+   "idAuto": false,
+   "label": "Fortificação I: Trincheiras escoradas",
+   "desc": "Trincheira escorada, abrigo pequeno e abrigo subterrâneo. A Queda ensinou a cavar antes de ensinar a plantar.",
+   "cost": 250,
+   "tech": "Neolithic",
+   "x": 0.0,
+   "y": 0,
+   "prereqs": [
+    "ref_Fund_Fortificacao"
+   ],
+   "unlocks": [
+    "Tr_Trench",
+    "Tr_SmallShelter",
+    "Tr_DeepDugout"
+   ],
+   "absorbs": [
+    "Tr_TimberedTrenches"
+   ],
+   "branch": "",
+   "bench": "",
+   "facilities": [],
+   "techprints": 0,
+   "techprintTags": [],
+   "notes": "Defesa > For_1"
+  },
+  {
+   "id": "For_2",
+   "idAuto": false,
+   "label": "Fortificação II: Arame e armadilhas",
+   "desc": "Arame farpado do CE, arame laminado, armadilha de urso e estacas antecavalaria. O Sindicato chama de \"cerca trabalhista\".",
+   "cost": 450,
+   "tech": "Medieval",
+   "x": 2.5,
+   "y": 0,
+   "prereqs": [
+    "For_1"
+   ],
+   "unlocks": [
+    "CE_BarbedWire",
+    "VFES_BarbedWire",
+    "VFES_BearTrap",
+    "VFES_CavalrySpikes"
+   ],
+   "absorbs": [],
+   "branch": "",
+   "bench": "",
+   "facilities": [],
+   "techprints": 0,
+   "techprintTags": [],
+   "notes": "Defesa > For_2"
+  },
+  {
+   "id": "For_3",
+   "idAuto": false,
+   "label": "Fortificação III: Guerra de trincheira",
+   "desc": "Trincheira, abrigo de trincheira e plataforma de tiro. A frente de fronteira do Hegemony vira isto em uma semana.",
+   "cost": 800,
+   "tech": "Industrial",
+   "x": 5.0,
+   "y": 0,
+   "prereqs": [
+    "For_2"
+   ],
+   "unlocks": [
+    "VFES_Trench",
+    "VFES_Dugout",
+    "VFES_Platform"
+   ],
+   "absorbs": [
+    "VWE_TrenchWarfare"
+   ],
+   "branch": "",
+   "bench": "",
+   "facilities": [],
+   "techprints": 0,
+   "techprintTags": [],
+   "notes": "Defesa > For_3"
+  },
+  {
+   "id": "For_4",
+   "idAuto": false,
+   "label": "Fortificação IV: Concreto e defesas ocultas",
+   "desc": "Trincheira de concreto, barreira oculta e torreta oculta. A colônia que parece abandonada é a que mais mata.",
+   "cost": 1200,
+   "tech": "Industrial",
+   "x": 7.5,
+   "y": 0,
+   "prereqs": [
+    "For_3"
+   ],
+   "unlocks": [
+    "Tr_TrenchConcrete",
+    "VFES_ConcealedBarrier",
+    "VFES_Turret_Concealed"
+   ],
+   "absorbs": [
+    "Tr_ConcreteTrenches",
+    "VFES_ConcealedDefenses"
+   ],
+   "branch": "",
+   "bench": "",
+   "facilities": [],
+   "techprints": 0,
+   "techprintTags": [],
+   "notes": "Defesa > For_4"
+  },
+  {
+   "id": "Min_1",
+   "idAuto": false,
+   "label": "Minas I: Explosivos improvisados",
+   "desc": "Armadilha IED explosiva, incendiária e de fumaça e a mina terrestre. Lata, prego e um fio no caminho: a recepção que o Lodo prepara para cobradores.",
+   "cost": 500,
+   "tech": "Industrial",
+   "x": 2.5,
+   "y": 1.5,
+   "prereqs": [
+    "For_1",
+    "ref_Ger_Eletricidade"
+   ],
+   "unlocks": [
+    "TrapIED_HighExplosive",
+    "TrapIED_Incendiary",
+    "TrapIED_Smoke",
+    "VEFS_TrapLandmine"
+   ],
+   "absorbs": [
+    "IEDs"
+   ],
+   "branch": "",
+   "bench": "",
+   "facilities": [],
+   "techprints": 0,
+   "techprintTags": [],
+   "notes": "Defesa > Min_1"
+  },
+  {
+   "id": "Min_2",
+   "idAuto": false,
+   "label": "Minas II: Minas especiais",
+   "desc": "IED de PEM, de espuma e tóxica e a mina de choque. Para visitas que trazem mecanoides, fogo ou pulmões.",
+   "cost": 900,
+   "tech": "Industrial",
+   "x": 5.0,
+   "y": 1.5,
+   "prereqs": [
+    "Min_1",
+    "ref_Lab_Micro"
+   ],
+   "unlocks": [
+    "TrapIED_EMP",
+    "TrapIED_Firefoam",
+    "TrapIED_ToxGas",
+    "VEFS_TrapShockmine"
+   ],
+   "absorbs": [],
+   "branch": "",
+   "bench": "",
+   "facilities": [],
+   "techprints": 0,
+   "techprintTags": [],
+   "notes": "Defesa > Min_2"
+  },
+  {
+   "id": "Min_3",
+   "idAuto": false,
+   "label": "Minas III: Demolição remota",
+   "desc": "Cargas remotas (explosiva, incendiária, fumaça, PEM, espuma, tóxica e antigrão) e o IED de ogiva antigrão. A Forja vende o detonador; o botão é por sua conta.",
+   "cost": 1500,
+   "tech": "Industrial",
+   "x": 7.5,
+   "y": 1.5,
+   "prereqs": [
+    "Min_2",
+    "ref_Comp_Fabricacao"
+   ],
+   "unlocks": [
+    "VFED_RemoteTrapIED_HighExplosive",
+    "VFED_RemoteTrapIED_Incendiary",
+    "VFED_RemoteTrapIED_Smoke",
+    "VFED_RemoteTrapIED_EMP",
+    "VFED_RemoteTrapIED_Firefoam",
+    "VFED_RemoteTrapIED_ToxGas",
+    "VFED_RemoteTrapIED_AntigrainWarhead",
+    "TrapIED_AntigrainWarhead"
+   ],
+   "absorbs": [
+    "VFED_RemoteDemolition"
+   ],
+   "branch": "EQ_Ramo_Forja",
+   "bench": "",
+   "facilities": [],
+   "techprints": 0,
+   "techprintTags": [],
+   "notes": "Defesa > Min_3"
+  },
+  {
+   "id": "Tor_1",
+   "idAuto": false,
+   "label": "Torretas I: Torretas leves",
+   "desc": "Mini-torreta, torreta de escopeta, torreta blindada, torreta a propano e o holofote. Um vigia que não dorme, não come e não pede aumento.",
+   "cost": 600,
+   "tech": "Industrial",
+   "x": 2.5,
+   "y": 3.0,
+   "prereqs": [
+    "ref_Armas_Aut_1",
+    "ref_Ger_Eletricidade"
+   ],
+   "unlocks": [
+    "Turret_MiniTurret",
+    "CE_Turret_ShotgunTurret",
+    "VFES_Turret_ArmoredTurret",
+    "AB_Turret_Propane",
+    "VFES_Turret_Searchlight"
+   ],
+   "absorbs": [
+    "GunTurrets"
+   ],
+   "branch": "",
+   "bench": "",
+   "facilities": [],
+   "techprints": 0,
+   "techprintTags": [],
+   "notes": "Defesa > Tor_1"
+  },
+  {
+   "id": "Tor_2",
+   "idAuto": false,
+   "label": "Torretas II: Metralhadoras montadas",
+   "desc": "Vickers, M1919, torreta militar, torreta de escopeta pesada, torreta lança-chamas, torreta e dispositivo de espuma, caixa de munição e carregadores automáticos. O ninho de metralhadora que o Velho Mundo esqueceu na beira da estrada.",
+   "cost": 1000,
+   "tech": "Industrial",
+   "x": 5.0,
+   "y": 3.0,
+   "prereqs": [
+    "Tor_1",
+    "ref_Armas_Aut_3",
+    "ref_Lab_Refinaria"
+   ],
+   "unlocks": [
+    "CE_Turret_Vickers",
+    "CE_Turret_M1919Browning",
+    "VFES_Turret_MilitaryTurret",
+    "VFES_Turret_ShotgunTurret",
+    "VFES_Turret_Flame",
+    "Turret_FoamTurret",
+    "FirefoamPopper",
+    "VFES_AmmoCrate",
+    "CE_AutoloaderElectric",
+    "CE_AutoloaderManualHiCal"
+   ],
+   "absorbs": [
+    "FoamTurret"
+   ],
+   "branch": "",
+   "bench": "",
+   "facilities": [],
+   "techprints": 0,
+   "techprintTags": [],
+   "notes": "Defesa > Tor_2"
+  },
+  {
+   "id": "Tor_3",
+   "idAuto": false,
+   "label": "Torretas III: Metralhadoras pesadas",
+   "desc": "Torreta média, PKM, M240B, M2 Browning, KPV, complexo de metralhadora, torretas giratórias e antiaérea. Arsenal do Velho Mundo aparafusado no chão.",
+   "cost": 1800,
+   "tech": "Industrial",
+   "x": 7.5,
+   "y": 3.0,
+   "prereqs": [
+    "Tor_2",
+    "ref_Armas_VM_1",
+    "ref_Lab_Micro"
+   ],
+   "unlocks": [
+    "Turret_Medium",
+    "CE_Turret_PKM",
+    "Turret_M240B",
+    "CE_Turret_M2HB",
+    "Turret_KPV",
+    "VFES_Complex_Hmg",
+    "VFES_Turret_Minigun",
+    "VFES_Complex_Minigun",
+    "VFES_Turret_AntiAir"
+   ],
+   "absorbs": [
+    "CE_TurretHeavyWeapons"
+   ],
+   "branch": "EQ_Ramo_VelhoMundo",
+   "bench": "",
+   "facilities": [],
+   "techprints": 0,
+   "techprintTags": [],
+   "notes": "Defesa > Tor_3"
+  },
+  {
+   "id": "Tor_4",
+   "idAuto": false,
+   "label": "Torretas IV: Canhões automáticos",
+   "desc": "Torreta pesada, canhão automático (simples e duplo), SPG-9, antiaérea de 90 mm, Mk 19 e AGS-30. Para quando o vizinho chega de blindado.",
+   "cost": 2600,
+   "tech": "Industrial",
+   "x": 10.0,
+   "y": 3.0,
+   "prereqs": [
+    "Tor_3"
+   ],
+   "unlocks": [
+    "Turret_Heavy",
+    "Turret_Autocannon",
+    "VFES_Turret_AutocannonDouble",
+    "CE_Turret_SPGNine",
+    "Turret_Flak",
+    "CE_Turret_MkNineteenGL",
+    "Turret_AGSThirty",
+    "Ammo_20x102mmNATO_AP",
+    "Ammo_20x102mmNATO_HE",
+    "Ammo_SPG9Rocket_HEAT",
+    "Ammo_SPG9Rocket_Frag",
+    "Ammo_90mmCannonShell_HEAT",
+    "Ammo_90mmCannonShell_AP",
+    "Ammo_90mmCannonShell_HE",
+    "Ammo_90mmCannonShell_HE_TFuzed",
+    "Ammo_40x53mmGrenade_HE",
+    "Ammo_40x53mmGrenade_HE_TFuzed",
+    "Ammo_40x53mmGrenade_HEDP",
+    "Ammo_30x29mmGrenade_HE",
+    "Ammo_30x29mmGrenade_HE_TFuzed",
+    "Ammo_30x29mmGrenade_HEDP"
+   ],
+   "absorbs": [
+    "CE_HeavyTurret",
+    "HeavyTurrets"
+   ],
+   "branch": "EQ_Ramo_VelhoMundo",
+   "bench": "",
+   "facilities": [],
+   "techprints": 0,
+   "techprintTags": [],
+   "notes": "Defesa > Tor_4"
+  },
+  {
+   "id": "Spc_1",
+   "idAuto": false,
+   "label": "Defesas espaciais I: Urânio e enxame",
+   "desc": "Torreta de bala de urânio e lançador de enxame de foguetes. A Forja instala; a manutenção é por contrato.",
+   "cost": 3000,
+   "tech": "Spacer",
+   "x": 12.5,
+   "y": 4.5,
+   "prereqs": [
+    "Tor_4",
+    "ref_Comp_Fabricacao"
+   ],
+   "unlocks": [
+    "Turret_Sniper",
+    "Turret_RocketswarmLauncher",
+    "Ammo_40x311mmR_AP",
+    "Ammo_40x311mmR_HE",
+    "Ammo_50mmRocket_HE"
+   ],
+   "absorbs": [
+    "SniperTurret",
+    "RocketswarmLauncher"
+   ],
+   "branch": "EQ_Ramo_Forja",
+   "bench": "",
+   "facilities": [],
+   "techprints": 0,
+   "techprintTags": [],
+   "notes": "Defesa > Spc_1"
+  },
+  {
+   "id": "Spc_2",
+   "idAuto": false,
+   "label": "Defesas espaciais II: Torretas de carga",
+   "desc": "Torreta blaster de carga, torreta de carga e complexo de carga. A garantia cobre o disparo, não o alvo.",
+   "cost": 3500,
+   "tech": "Spacer",
+   "x": 15.0,
+   "y": 4.5,
+   "prereqs": [
+    "Spc_1",
+    "ref_Armas_Fo_1"
+   ],
+   "unlocks": [
+    "Turret_Blaster",
+    "VFES_Turret_ChargeTurret",
+    "VFES_Complex_Charge"
+   ],
+   "absorbs": [
+    "CE_ChargeTurret"
+   ],
+   "branch": "EQ_Ramo_Forja",
+   "bench": "",
+   "facilities": [],
+   "techprints": 0,
+   "techprintTags": [],
+   "notes": "Defesa > Spc_2"
+  },
+  {
+   "id": "Spc_3",
+   "idAuto": false,
+   "label": "Defesas espaciais III: Defesas imperiais",
+   "desc": "Kontarion, Onager, Palintone, as caixas de munição delas, blaster tesla e railgun de carga. Herança do Império que perdeu a guerra; a Forja chama de \"seminovo\".",
+   "cost": 4500,
+   "tech": "Spacer",
+   "x": 17.5,
+   "y": 4.5,
+   "prereqs": [
+    "Spc_2"
+   ],
+   "unlocks": [
+    "VFED_Turret_Kontarion",
+    "VFED_Turret_Onager",
+    "VFED_Turret_Palintone",
+    "VFED_AmmoBox_Autocannon",
+    "VFED_AmmoBox_Missile",
+    "VFED_AmmoBox_UraniumSlug",
+    "VFES_Turret_TeslaBlaster",
+    "VFES_Turret_ChargeRailgun"
+   ],
+   "absorbs": [
+    "VFED_ImperialDefenses",
+    "VFES_EMPCannon",
+    "VFES_Railgun"
+   ],
+   "branch": "EQ_Ramo_Forja",
+   "bench": "",
+   "facilities": [],
+   "techprints": 0,
+   "techprintTags": [],
+   "notes": "Defesa > Spc_3"
+  },
+  {
+   "id": "Spc_4",
+   "idAuto": false,
+   "label": "Defesas espaciais IV: Graser e repulsores",
+   "desc": "Complexo de canhão graser e repulsores (pequeno e grande). A última muralha: luz que corta e um campo que empurra o mundo para fora.",
+   "cost": 6000,
+   "tech": "Ultra",
+   "x": 20.0,
+   "y": 4.5,
+   "prereqs": [
+    "Spc_3"
+   ],
+   "unlocks": [
+    "VFES_Complex_GraserCannon",
+    "VFES_SmallRepulsor",
+    "VFES_LargeRepulsor"
+   ],
+   "absorbs": [
+    "VFES_RepulsorTechnology"
+   ],
+   "branch": "EQ_Ramo_Forja",
+   "bench": "",
+   "facilities": [],
+   "techprints": 0,
+   "techprintTags": [],
+   "notes": "Defesa > Spc_4"
+  },
+  {
+   "id": "Cer_1",
+   "idAuto": false,
+   "label": "Cerco I: Armas de muralha",
+   "desc": "Arcabuz de muralha e balestra de muralha. O castelo do Reino do Lodo é um chiqueiro com ameias, mas as ameias funcionam.",
+   "cost": 400,
+   "tech": "Medieval",
+   "x": 0.0,
+   "y": 6.0,
+   "prereqs": [
+    "ref_Oficio_Metalurgia"
+   ],
+   "unlocks": [
+    "VFEM2_Turret_WallMountedArquebus",
+    "VFEM2_Turret_WallMountedArbalest"
+   ],
+   "absorbs": [],
+   "branch": "",
+   "bench": "",
+   "facilities": [],
+   "techprints": 0,
+   "techprintTags": [],
+   "notes": "Defesa > Cer_1"
+  },
+  {
+   "id": "Cer_2",
+   "idAuto": false,
+   "label": "Cerco II: Balista e catapulta",
+   "desc": "Balista e catapulta. Engenharia medieval para um mundo que voltou a ela por falta de manual.",
+   "cost": 600,
+   "tech": "Medieval",
+   "x": 2.5,
+   "y": 6.0,
+   "prereqs": [
+    "Cer_1"
+   ],
+   "unlocks": [
+    "VFES_Turret_Ballista",
+    "VFES_Turret_Catapult",
+    "Ammo_Catapult_Boulder"
+   ],
+   "absorbs": [
+    "VFES_SiegeEquipment"
+   ],
+   "branch": "",
+   "bench": "",
+   "facilities": [],
+   "techprints": 0,
+   "techprintTags": [],
+   "notes": "Defesa > Cer_2"
+  },
+  {
+   "id": "Cer_3",
+   "idAuto": false,
+   "label": "Cerco III: Canhões de pólvora",
+   "desc": "Canhão de 12 libras, bombarda e canhão. Bala de ferro e muita pólvora negra: o argumento definitivo de qualquer rei-capataz.",
+   "cost": 900,
+   "tech": "Medieval",
+   "x": 5.0,
+   "y": 6.0,
+   "prereqs": [
+    "Cer_2",
+    "ref_Armas_Pol_4"
+   ],
+   "unlocks": [
+    "CE_Turret_TwelvePounder",
+    "CE_Turret_12PounderBombard",
+    "VFEP_Turret_Cannon",
+    "Ammo_CannonBall_Round"
+   ],
+   "absorbs": [],
+   "branch": "",
+   "bench": "",
+   "facilities": [],
+   "techprints": 0,
+   "techprintTags": [],
+   "notes": "Defesa > Cer_3"
+  },
+  {
+   "id": "Cer_4",
+   "idAuto": false,
+   "label": "Cerco IV: Órgão e Gatling",
+   "desc": "Canhão-órgão e metralhadora Gatling. A manivela que transformou a guerra em indústria, de volta depois da Queda.",
+   "cost": 1200,
+   "tech": "Industrial",
+   "x": 7.5,
+   "y": 6.0,
+   "prereqs": [
+    "Cer_3"
+   ],
+   "unlocks": [
+    "CE_Turret_OrganGun",
+    "CE_Turret_GatlingGun"
+   ],
+   "absorbs": [],
+   "branch": "",
+   "bench": "",
+   "facilities": [],
+   "techprints": 0,
+   "techprintTags": [],
+   "notes": "Defesa > Cer_4"
+  },
+  {
+   "id": "Art_1",
+   "idAuto": false,
+   "label": "Artilharia I: Morteiros",
+   "desc": "Morteiro e morteiro portátil de 60 mm, com os projéteis comuns. Quem tem morteiro não precisa de diplomata.",
+   "cost": 1200,
+   "tech": "Industrial",
+   "x": 2.5,
+   "y": 7.5,
+   "prereqs": [
+    "Tor_1"
+   ],
+   "unlocks": [
+    "Turret_Mortar",
+    "CE_Turret_PortableMortar",
+    "Shell_HighExplosive",
+    "Shell_HighExplosive_HFuzed",
+    "AB_Shell_Tar",
+    "Shell_60mmMortar_HE"
+   ],
+   "absorbs": [
+    "Mortars"
+   ],
+   "branch": "",
+   "bench": "",
+   "facilities": [],
+   "techprints": 0,
+   "techprintTags": [],
+   "notes": "Defesa > Art_1"
+  },
+  {
+   "id": "Art_2",
+   "idAuto": false,
+   "label": "Artilharia II: Canhão de campanha",
+   "desc": "Canhão de campanha. Puxado por boi no Lodo, por caminhão na Feira e por servo no Coro.",
+   "cost": 1600,
+   "tech": "Industrial",
+   "x": 5.0,
+   "y": 7.5,
+   "prereqs": [
+    "Art_1"
+   ],
+   "unlocks": [
+    "VFEP_Turret_FieldGun",
+    "Ammo_762x385mmRCannonShell_HEAT",
+    "Ammo_762x385mmRCannonShell_AP",
+    "Ammo_762x385mmRCannonShell_HE"
+   ],
+   "absorbs": [],
+   "branch": "",
+   "bench": "",
+   "facilities": [],
+   "techprints": 0,
+   "techprintTags": [],
+   "notes": "Defesa > Art_2"
+  },
+  {
+   "id": "Art_3",
+   "idAuto": false,
+   "label": "Artilharia III: Obuses",
+   "desc": "Obus de 105 mm e a peça de artilharia. Acertar o que não se vê: a especialidade de quem nunca precisou ver o que acertou.",
+   "cost": 2400,
+   "tech": "Industrial",
+   "x": 7.5,
+   "y": 7.5,
+   "prereqs": [
+    "Art_2"
+   ],
+   "unlocks": [
+    "CE_Artillery_Howitzer",
+    "VFES_Turret_Artillery",
+    "Ammo_105mmHowitzerShell_HE",
+    "Ammo_105mmHowitzerShell_HE_HFuzed",
+    "Ammo_155mmHowitzerShell_HE",
+    "Ammo_155mmHowitzerShell_HE_HFuzed"
+   ],
+   "absorbs": [],
+   "branch": "EQ_Ramo_VelhoMundo",
+   "bench": "",
+   "facilities": [],
+   "techprints": 0,
+   "techprintTags": [],
+   "notes": "Defesa > Art_3"
+  },
+  {
+   "id": "Art_4",
+   "idAuto": false,
+   "label": "Artilharia IV: Morteiro automático",
+   "desc": "Morteiro automático. Dispara sozinho; o operador só assina o relatório.",
+   "cost": 3000,
+   "tech": "Industrial",
+   "x": 10.0,
+   "y": 7.5,
+   "prereqs": [
+    "Art_3",
+    "ref_Lab_Micro"
+   ],
+   "unlocks": [
+    "VFES_Turret_AutomatedMortar"
+   ],
+   "absorbs": [],
+   "branch": "EQ_Ramo_VelhoMundo",
+   "bench": "",
+   "facilities": [],
+   "techprints": 0,
+   "techprintTags": [],
+   "notes": "Defesa > Art_4"
+  },
+  {
+   "id": "Art_Esp",
+   "idAuto": false,
+   "label": "Munição especial: Artilharia",
+   "desc": "Projéteis incendiários, de fumaça, PEM, tóxicos, de espuma e as munições especiais das torretas. O que sobe precisa descer, de preferência pegando fogo.",
+   "cost": 1500,
+   "tech": "Industrial",
+   "x": 5.0,
+   "y": 8.5,
+   "prereqs": [
+    "Art_1",
+    "ref_Armas_Suc_Esp"
+   ],
+   "unlocks": [
+    "Ammo_20x102mmNATO_Incendiary",
+    "Ammo_20x102mmNATO_Sabot",
+    "Ammo_SPG9Rocket_Thermobaric",
+    "Ammo_SPG9Rocket_EMP",
+    "Ammo_90mmCannonShell_APCR",
+    "Ammo_90mmCannonShell_EMP",
+    "Ammo_40x53mmGrenade_EMP",
+    "Ammo_40x53mmGrenade_Smoke",
+    "Ammo_30x29mmGrenade_EMP",
+    "Ammo_30x29mmGrenade_Smoke",
+    "Ammo_40x311mmR_Incendiary",
+    "Ammo_40x311mmR_Sabot",
+    "Ammo_CannonBall_Bursting",
+    "Ammo_CannonBall_Incendiary",
+    "Ammo_CannonBall_Grape",
+    "Shell_Incendiary",
+    "Shell_EMP",
+    "Shell_Firefoam",
+    "Shell_Smoke",
+    "Shell_Toxic",
+    "Shell_Deadlife",
+    "Shell_60mmMortar_Incendiary",
+    "Shell_60mmMortar_EMP",
+    "Shell_60mmMortar_Firefoam",
+    "Shell_60mmMortar_Smoke",
+    "Ammo_762x385mmRCannonShell_APCR",
+    "Ammo_762x385mmRCannonShell_EMP",
+    "Ammo_105mmHowitzerShell_Incendiary",
+    "Ammo_105mmHowitzerShell_EMP",
+    "Ammo_105mmHowitzerShell_Smoke",
+    "Ammo_155mmHowitzerShell_Incendiary",
+    "Ammo_155mmHowitzerShell_EMP",
+    "Ammo_155mmHowitzerShell_Smoke"
+   ],
+   "absorbs": [],
+   "branch": "",
+   "bench": "",
+   "facilities": [],
+   "techprints": 0,
+   "techprintTags": [],
+   "notes": "Defesa > Art_Esp"
+  },
+  {
+   "id": "Cxg_1",
+   "idAuto": false,
+   "label": "Armamento de caixão de guerra I",
+   "desc": "Fuzil automático, lança-balotes, canhão de mão, lança-granadas, lança-chamas pesado, metralhadora giratória, fuzil de urânio, faca, espada larga e martelo gravitacional para caixões de guerra. A Forja aparafusa a arma no braço; o resto do soldado já veio aparafusado.",
+   "cost": 2000,
+   "tech": "Industrial",
+   "x": 12.5,
+   "y": 9.0,
+   "prereqs": [
+    "ref_Armaduras_Caixao"
+   ],
+   "unlocks": [
+    "VFEP_Box_Autorifle",
+    "VFEP_Box_Slugthrower",
+    "VFEP_Box_HandheldCannon",
+    "VFEP_Box_GrenadeLauncher",
+    "VFEP_Box_HeavyFlamer",
+    "VFEP_Box_Minigun",
+    "VFEP_Box_UraniumSlugRifle",
+    "VFEP_Box_CombatKnife",
+    "VFEP_Box_Broadsword",
+    "VFEP_Box_GravityHammer"
+   ],
+   "absorbs": [
+    "VFEP_WarcasketWeaponry"
+   ],
+   "branch": "EQ_Ramo_Forja",
+   "bench": "",
+   "facilities": [],
+   "techprints": 0,
+   "techprintTags": [],
+   "notes": "Defesa > Cxg_1"
+  },
+  {
+   "id": "Cxg_2",
+   "idAuto": false,
+   "label": "Armamento de caixão de guerra II: espacial",
+   "desc": "Disparador de carga, lança de carga, canhão elétrico, erradicador laser recuperado e lança-raios para caixões de guerra. O último upgrade do cliente fidelizado.",
+   "cost": 3500,
+   "tech": "Spacer",
+   "x": 15.0,
+   "y": 9.0,
+   "prereqs": [
+    "Cxg_1",
+    "ref_Armas_Fo_1"
+   ],
+   "unlocks": [
+    "VFEP_Box_ChargeBlaster",
+    "VFEP_Box_ChargeLance",
+    "VFEP_Box_Railgun",
+    "VFEP_Box_SalvagedLaserEradicator",
+    "VFEP_Box_Warbolter"
+   ],
+   "absorbs": [
+    "VFEP_SpacerWarcasketWeaponry"
+   ],
+   "branch": "EQ_Ramo_Forja",
+   "bench": "",
+   "facilities": [],
+   "techprints": 0,
+   "techprintTags": [],
+   "notes": "Defesa > Cxg_2"
+  }
+ ]
+}
