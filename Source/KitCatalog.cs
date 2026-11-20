@@ -177,7 +177,7 @@ namespace EcosDaQueda.DebugTools
 
         /// <summary>Munições que a arma aceita (Combat Extended: CompProperties_AmmoUser.ammoSet.ammoTypes[].ammo) e o
         /// tamanho do carregador, por reflexão (o CE é opcional).</summary>
-        private static (List<string>, int) CEAmmo(ThingDef t)
+        internal static (List<string>, int) CEAmmo(ThingDef t)
         {
             var list = new List<string>();
             int mag = 0;

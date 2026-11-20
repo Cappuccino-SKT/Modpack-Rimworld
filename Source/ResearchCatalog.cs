@@ -70,6 +70,14 @@ namespace EcosDaQueda.DebugTools
                         }
 
             var rows = new List<string>();
+            // torreta: munição do canhão dela (Combat Extended), para a árvore Defesa liberar a munição junto com a torreta
+            string TurretAmmo(ThingDef t)
+            {
+                ThingDef gun = t.building?.turretGunDef;
+                if (gun == null) return null;
+                var ammo = KitCatalog.CEAmmo(gun).Item1;
+                return ammo.Count > 0 ? PL("ammo", ammo) : null;
+            }
             string Row(Def d, string kind, string tex, string icon, string gclass, UnityEngine.Color color, string cat, IEnumerable<ResearchProjectDef> req,
                 TechLevel tech, IEnumerable<string> benches, string extra = null)
             {
@@ -94,7 +102,8 @@ namespace EcosDaQueda.DebugTools
                             "Planta", t.plant.sowResearchPrerequisites ?? new List<ResearchProjectDef>(), t.techLevel, null, PlantInfo(t)));
                     else if (t.designationCategory != null)
                         rows.Add(Row(t, "building", t.graphicData?.texPath, t.uiIconPath, t.graphicData?.graphicClass?.Name, t.graphicData?.color ?? UnityEngine.Color.white,
-                            t.designationCategory.LabelCap.ToString(), t.researchPrerequisites ?? new List<ResearchProjectDef>(), t.techLevel, null));
+                            t.designationCategory.LabelCap.ToString(), t.researchPrerequisites ?? new List<ResearchProjectDef>(), t.techLevel, null,
+                            TurretAmmo(t)));
                     else if (productOf.TryGetValue(t, out var recs) && !t.IsCorpse)
                         rows.Add(Row(t, "item", t.graphicData?.texPath, t.uiIconPath, t.graphicData?.graphicClass?.Name, t.graphicData?.color ?? UnityEngine.Color.white,
                             t.FirstThingCategory?.LabelCap.ToString() ?? "", recs.SelectMany(RecReq), t.techLevel,
