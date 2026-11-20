@@ -27,7 +27,7 @@ Legenda da tabela:
 | 9 | Vestuário | 108 | 29 | Bancada (Forja 7) | **feita** (7 pesquisas, 5 absorvidas) |
 | 10 | Medicina e farmácia (próteses, implantes, cirurgias, drogas) | 507 | 332 | **Hélice 23**, Bancada 13 | a fazer |
 | 11 | Armas e munição | 1.099 | 380 | Bancada 16, Velho Mundo 8, Silêncio 5, Forja 4 | **feita** (46 pesquisas, 372 coisas, 20 absorvidas) |
-| 12 | Armaduras | 40 | 3 | Bancada 6, Forja 4 | a fazer |
+| 12 | Armaduras | 40 | 3 | Bancada 6, Forja 4 | **feita** (16 pesquisas, 60 coisas, 10 absorvidas) |
 | 13 | Defesa (torretas, armadilhas, trincheiras) | 115 | 8 | Bancada 18, **Forja 13**, Velho Mundo 9 | a fazer |
 | 14 | Veículos | 40 | 0 | Bancada 6, **Forja 4** | licença da Forja |
 | 15 | Mecanoides e drones | 62 | 7 | **Forja 7** | licença da Forja |
@@ -179,6 +179,12 @@ Para cada árvore: as pesquisas originais que ela absorve (projetos cuja maior p
 **12. Armaduras (40).**
 - Conteúdo: armaduras CE e Royalty, colete de carga e escudos.
 - Absorve: Placas, À prova de balas, Fuzileiro, Reconhecimento, Catafrata, Aparatos de salto e Janízaro.
+- **Feita em 2026-11-20** (`kits/pesquisa/Armaduras.json`, "ficar vivo depois da Queda"), no mesmo modelo das Armas: 3 eras em 4 passos (cabeça → peito leve → armadura completa → pesada/escudos), a seguinte abre depois do IV.
+  - **Couro e ferro** (Bancada, Medieval, pede Metalurgia): elmos → couro, gibão e escudos → couraça e couro pesado → placas (absorve Placas).
+  - **Balística** (Bancada, pede Usinagem; o IV pede Microeletrônica): colete macio e equipamento de carga (mochilas, colete tático, bandoleira, óculos) → antiestilhaço (absorve À prova de balas) → compósitos → escudos balísticos, exoesqueleto e mochila de rádio.
+  - **Armadura espacial** (Forja, pede Fabricação): reconhecimento e visor eletrônico → fuzileiro e corsário → janízaro → catafrata.
+  - Ao lado: **Óptica I e II** (visão noturna; ramo Silêncio, como as originais), **Aparato de salto** e armadura gafanhoto (Coro) e **Caixões de guerra** (fundição; Forja).
+  - Capacetes que estavam mapeados para Vestuário vieram para cá. Ficam fora: capacetes eltex (Psíquica), de mecanitor (Mecanoides), de vácuo (Espaço), renegados (Genética).
 
 **13. Defesa (115).**
 - Conteúdo: torretas (VFE Security, CE, Pirates, Deserters), trincheiras e IEDs.

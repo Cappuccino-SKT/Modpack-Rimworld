@@ -1,0 +1,472 @@
+{
+ "id": "Armaduras",
+ "label": "Armaduras",
+ "active": true,
+ "ownTab": true,
+ "replace": true,
+ "branch": "EQ_Ramo_Bancada",
+ "desc": "Ficar vivo depois da Queda. Três eras como nas Armas (Couro e ferro, Balística, Armadura espacial), cada uma em quatro passos: cabeça, peito leve, armadura completa e pesada. Ao lado: óptica (Silêncio), aparato de salto (Coro) e caixões de guerra (Forja).",
+ "nodes": [
+  {
+   "id": "ref_Oficio_Metalurgia",
+   "ref": "EQ_R_Producao_Oficio_Metalurgia",
+   "x": -2.5,
+   "y": 0.0
+  },
+  {
+   "id": "ref_Fabrica_Usinagem",
+   "ref": "EQ_R_Producao_Fabrica_Usinagem",
+   "x": 7.5,
+   "y": 0.0
+  },
+  {
+   "id": "ref_Lab_Micro",
+   "ref": "EQ_R_Producao_Lab_Micro",
+   "x": 15.0,
+   "y": 0.0
+  },
+  {
+   "id": "ref_Comp_Fabricacao",
+   "ref": "EQ_R_Producao_Comp_Fabricacao",
+   "x": 17.5,
+   "y": 1.5
+  },
+  {
+   "id": "Fer_1",
+   "idAuto": false,
+   "label": "Couro e ferro I: Elmos",
+   "desc": "Capacete simples, capacete de criança, elmo de couro e elmo acolchoado. Depois da Queda, a primeira coisa que se protege é a cabeça; a segunda é a lata de comida.",
+   "cost": 300,
+   "tech": "Medieval",
+   "x": 0.0,
+   "y": 0.75,
+   "prereqs": [
+    "ref_Oficio_Metalurgia"
+   ],
+   "unlocks": [
+    "Apparel_SimpleHelmet",
+    "Apparel_KidHelmet",
+    "VFEM2_Apparel_LeatherHelmet",
+    "VFEM2_Apparel_PaddedHelmet"
+   ],
+   "absorbs": [],
+   "branch": "",
+   "bench": "",
+   "facilities": [],
+   "techprints": 0,
+   "techprintTags": [],
+   "notes": "Armaduras > Fer_1"
+  },
+  {
+   "id": "Fer_2",
+   "idAuto": false,
+   "label": "Couro e ferro II: Couro e escudos",
+   "desc": "Armadura de couro, gibão acolchoado, broquel, escudo redondo e escudo de combate. O couro do bicho que te atacou ontem protege contra o próximo.",
+   "cost": 450,
+   "tech": "Medieval",
+   "x": 2.5,
+   "y": 0.75,
+   "prereqs": [
+    "Fer_1"
+   ],
+   "unlocks": [
+    "VFEM2_Apparel_LeatherArmor",
+    "CE_Armor_Gambeson",
+    "CE_Apparel_Buckler",
+    "VFEM2_Shield_Round",
+    "CE_Apparel_MeleeShield"
+   ],
+   "absorbs": [],
+   "branch": "",
+   "bench": "",
+   "facilities": [],
+   "techprints": 0,
+   "techprintTags": [],
+   "notes": "Armaduras > Fer_2"
+  },
+  {
+   "id": "Fer_3",
+   "idAuto": false,
+   "label": "Couro e ferro III: Couraça",
+   "desc": "Couraça, armadura de couro pesada, elmo de couro pesado e elmo de placas. Chapa de carro batida no joelho: a couraça do Sindicato tem até o emblema da montadora.",
+   "cost": 600,
+   "tech": "Medieval",
+   "x": 5.0,
+   "y": 0.75,
+   "prereqs": [
+    "Fer_2"
+   ],
+   "unlocks": [
+    "CE_Armor_Cuirass",
+    "VFEM2_Apparel_HeavyLeatherArmor",
+    "VFEM2_Apparel_HeavyLeatherHelmet",
+    "CE_Apparel_PlateHelmet"
+   ],
+   "absorbs": [],
+   "branch": "",
+   "bench": "",
+   "facilities": [],
+   "techprints": 0,
+   "techprintTags": [],
+   "notes": "Armaduras > Fer_3"
+  },
+  {
+   "id": "Fer_4",
+   "idAuto": false,
+   "label": "Couro e ferro IV: Placas",
+   "desc": "Armadura de placas, armadura de placas pesada, elmo de placas pesado e escudo de cavaleiro. O arrombador do Reino do Lodo não lê manual, mas sabe ficar de pé debaixo de flechas.",
+   "cost": 800,
+   "tech": "Medieval",
+   "x": 7.5,
+   "y": 0.75,
+   "prereqs": [
+    "Fer_3"
+   ],
+   "unlocks": [
+    "Apparel_PlateArmor",
+    "VFEM2_Apparel_PlateArmorHeavy",
+    "VFEM2_Apparel_PlateHelmetHeavy",
+    "VFEM2_Shield_Heater"
+   ],
+   "absorbs": [
+    "PlateArmor"
+   ],
+   "branch": "",
+   "bench": "",
+   "facilities": [],
+   "techprints": 0,
+   "techprintTags": [],
+   "notes": "Armaduras > Fer_4"
+  },
+  {
+   "id": "Bal_1",
+   "idAuto": false,
+   "label": "Balística I: Colete e equipamento de carga",
+   "desc": "Colete macio, colete tático, mochilas (adulto, criança e grande), bandoleira pesada e óculos balísticos. Antes de parar uma bala, é preciso carregar munição suficiente para devolver.",
+   "cost": 800,
+   "tech": "Industrial",
+   "x": 7.5,
+   "y": 2.25,
+   "prereqs": [
+    "Fer_4",
+    "ref_Fabrica_Usinagem"
+   ],
+   "unlocks": [
+    "CE_Armor_SoftVest",
+    "CE_Apparel_TacVest",
+    "CE_Apparel_Backpack",
+    "CE_Apparel_KidBackpack",
+    "CE_Armor_LargeBackpack",
+    "Apparel_Bandolier",
+    "CE_Armor_BallisticGoggles"
+   ],
+   "absorbs": [],
+   "branch": "",
+   "bench": "",
+   "facilities": [],
+   "techprints": 0,
+   "techprintTags": [],
+   "notes": "Armaduras > Bal_1"
+  },
+  {
+   "id": "Bal_2",
+   "idAuto": false,
+   "label": "Balística II: Antiestilhaço",
+   "desc": "Colete, calça e jaqueta antiestilhaço e o capacete avançado. Costurados com o tecido de para-quedas do Velho Mundo; o selo de garantia ainda está lá.",
+   "cost": 1200,
+   "tech": "Industrial",
+   "x": 10.0,
+   "y": 2.25,
+   "prereqs": [
+    "Bal_1"
+   ],
+   "unlocks": [
+    "Apparel_FlakVest",
+    "Apparel_FlakPants",
+    "Apparel_FlakJacket",
+    "Apparel_AdvancedHelmet"
+   ],
+   "absorbs": [
+    "FlakArmor"
+   ],
+   "branch": "",
+   "bench": "",
+   "facilities": [],
+   "techprints": 0,
+   "techprintTags": [],
+   "notes": "Armaduras > Bal_2"
+  },
+  {
+   "id": "Bal_3",
+   "idAuto": false,
+   "label": "Balística III: Compósitos",
+   "desc": "Colete compósito, armadura compósita, traje antiestilhaço, macacão Gorka e capacete compósito pesado. Cerâmica e fibra: a Hélice garante que protege, desde que você não precise dela duas vezes.",
+   "cost": 1600,
+   "tech": "Industrial",
+   "x": 12.5,
+   "y": 2.25,
+   "prereqs": [
+    "Bal_2"
+   ],
+   "unlocks": [
+    "CE_Apparel_CompositeVest",
+    "CE_Apparel_CompositeArmor",
+    "CE_Armor_FragSuit",
+    "CE_Apparel_Gorka",
+    "CE_Apparel_HeavyCompositeHelmet"
+   ],
+   "absorbs": [],
+   "branch": "",
+   "bench": "",
+   "facilities": [],
+   "techprints": 0,
+   "techprintTags": [],
+   "notes": "Armaduras > Bal_3"
+  },
+  {
+   "id": "Bal_4",
+   "idAuto": false,
+   "label": "Balística IV: Escudos balísticos e exoesqueleto",
+   "desc": "Escudo de assalto, escudo balístico, exoesqueleto motorizado e mochila de rádio. A tropa de choque que a Feira aluga para cobrar dívidas.",
+   "cost": 2000,
+   "tech": "Industrial",
+   "x": 15.0,
+   "y": 2.25,
+   "prereqs": [
+    "Bal_3",
+    "ref_Lab_Micro"
+   ],
+   "unlocks": [
+    "CE_Apparel_AssaultShield",
+    "CE_Apparel_BallisticShield",
+    "CE_Apparel_ExoFrame",
+    "CE_Apparel_RadioPack"
+   ],
+   "absorbs": [],
+   "branch": "",
+   "bench": "",
+   "facilities": [],
+   "techprints": 0,
+   "techprintTags": [],
+   "notes": "Armaduras > Bal_4"
+  },
+  {
+   "id": "Spc_1",
+   "idAuto": false,
+   "label": "Armadura espacial I: Reconhecimento",
+   "desc": "Armadura e capacete de reconhecimento (com as versões de prestígio) e o visor eletrônico. A Forja chama de \"entrada de linha\"; custa o mesmo que uma colônia pequena.",
+   "cost": 3500,
+   "tech": "Spacer",
+   "x": 17.5,
+   "y": 3.75,
+   "prereqs": [
+    "Bal_4",
+    "ref_Comp_Fabricacao"
+   ],
+   "unlocks": [
+    "Apparel_ArmorRecon",
+    "Apparel_ArmorReconPrestige",
+    "Apparel_ArmorHelmetRecon",
+    "Apparel_ArmorHelmetReconPrestige",
+    "Apparel_Gunlink"
+   ],
+   "absorbs": [
+    "ReconArmor",
+    "Gunlink"
+   ],
+   "branch": "EQ_Ramo_Forja",
+   "bench": "",
+   "facilities": [],
+   "techprints": 0,
+   "techprintTags": [],
+   "notes": "Armaduras > Spc_1"
+  },
+  {
+   "id": "Spc_2",
+   "idAuto": false,
+   "label": "Armadura espacial II: Fuzileiro",
+   "desc": "Armadura e capacete de fuzileiro, armadura granadeira, armadura de corsário e as versões de prestígio. O cavaleiro da garantia dentro dela; o recall vem junto.",
+   "cost": 4500,
+   "tech": "Spacer",
+   "x": 20.0,
+   "y": 3.75,
+   "prereqs": [
+    "Spc_1"
+   ],
+   "unlocks": [
+    "Apparel_PowerArmor",
+    "Apparel_PowerArmorHelmet",
+    "Apparel_ArmorMarineGrenadier",
+    "VFEP_Apparel_Privateer",
+    "Apparel_ArmorMarinePrestige",
+    "Apparel_ArmorMarineHelmetPrestige"
+   ],
+   "absorbs": [
+    "PoweredArmor"
+   ],
+   "branch": "EQ_Ramo_Forja",
+   "bench": "",
+   "facilities": [],
+   "techprints": 0,
+   "techprintTags": [],
+   "notes": "Armaduras > Spc_2"
+  },
+  {
+   "id": "Spc_3",
+   "idAuto": false,
+   "label": "Armadura espacial III: Janízaro",
+   "desc": "Couraça e capacete de janízaro. Desenho de uma guarda imperial que sobreviveu ao Império; o Coro compra, a Forja fabrica, e os dois fingem que não se conhecem.",
+   "cost": 5000,
+   "tech": "Spacer",
+   "x": 22.5,
+   "y": 3.75,
+   "prereqs": [
+    "Spc_2"
+   ],
+   "unlocks": [
+    "VFEE_Apparel_JanissaryCuirass",
+    "VFEE_Apparel_JanissaryHelmet"
+   ],
+   "absorbs": [
+    "VFEE_JanissaryGear"
+   ],
+   "branch": "EQ_Ramo_Forja",
+   "bench": "",
+   "facilities": [],
+   "techprints": 0,
+   "techprintTags": [],
+   "notes": "Armaduras > Spc_3"
+  },
+  {
+   "id": "Spc_4",
+   "idAuto": false,
+   "label": "Armadura espacial IV: Catafrata",
+   "desc": "Armadura catafrática, armadura fênix, capacete catafrático e as versões de prestígio. O tanque que anda: a última coisa que o enxame viu antes de vencer a guerra mesmo assim.",
+   "cost": 6000,
+   "tech": "Spacer",
+   "x": 25.0,
+   "y": 3.75,
+   "prereqs": [
+    "Spc_3"
+   ],
+   "unlocks": [
+    "Apparel_ArmorCataphract",
+    "Apparel_ArmorCataphractPhoenix",
+    "Apparel_ArmorCataphractPrestige",
+    "Apparel_ArmorHelmetCataphract",
+    "Apparel_ArmorHelmetCataphractPrestige"
+   ],
+   "absorbs": [
+    "CataphractArmor"
+   ],
+   "branch": "EQ_Ramo_Forja",
+   "bench": "",
+   "facilities": [],
+   "techprints": 0,
+   "techprintTags": [],
+   "notes": "Armaduras > Spc_4"
+  },
+  {
+   "id": "Opt_1",
+   "idAuto": false,
+   "label": "Óptica I: Visão noturna",
+   "desc": "Monóculo de visão noturna. A Ordem do Silêncio estuda o escuro há gerações; vende o monóculo para quem promete contar o que viu.",
+   "cost": 900,
+   "tech": "Industrial",
+   "x": 10.0,
+   "y": 0.75,
+   "prereqs": [
+    "Bal_1"
+   ],
+   "unlocks": [
+    "CE_Apparel_SimpleNightVision"
+   ],
+   "absorbs": [
+    "CE_SimpleNV"
+   ],
+   "branch": "EQ_Ramo_Silencio",
+   "bench": "",
+   "facilities": [],
+   "techprints": 0,
+   "techprintTags": [],
+   "notes": "Armaduras > Opt_1"
+  },
+  {
+   "id": "Opt_2",
+   "idAuto": false,
+   "label": "Óptica II: Visão noturna avançada",
+   "desc": "Óculos de visão noturna avançados. Enxergar no escuro é fácil; difícil é esquecer o que a Ordem pediu para você não ver.",
+   "cost": 1200,
+   "tech": "Industrial",
+   "x": 15.0,
+   "y": 1.5,
+   "prereqs": [
+    "Opt_1",
+    "ref_Lab_Micro"
+   ],
+   "unlocks": [
+    "CE_Apparel_AdvancedNightVision"
+   ],
+   "absorbs": [
+    "CE_AdvancedNV"
+   ],
+   "branch": "EQ_Ramo_Silencio",
+   "bench": "",
+   "facilities": [],
+   "techprints": 0,
+   "techprintTags": [],
+   "notes": "Armaduras > Opt_2"
+  },
+  {
+   "id": "Salto",
+   "idAuto": false,
+   "label": "Aparato de salto",
+   "desc": "Aparato de salto e a armadura gafanhoto. O Coro usa para que o tenor de guerra chegue antes da própria voz.",
+   "cost": 2500,
+   "tech": "Spacer",
+   "x": 20.0,
+   "y": 5.0,
+   "prereqs": [
+    "Spc_1"
+   ],
+   "unlocks": [
+    "Apparel_PackJump",
+    "Apparel_ArmorLocust"
+   ],
+   "absorbs": [
+    "JumpPack"
+   ],
+   "branch": "EQ_Ramo_Coro",
+   "bench": "",
+   "facilities": [],
+   "techprints": 0,
+   "techprintTags": [],
+   "notes": "Armaduras > Salto"
+  },
+  {
+   "id": "Caixao",
+   "idAuto": false,
+   "label": "Caixões de guerra",
+   "desc": "Fundição de caixão de guerra. Um soldado soldado dentro da armadura para sempre: a Forja chama de \"fidelização do cliente\".",
+   "cost": 3000,
+   "tech": "Industrial",
+   "x": 15.0,
+   "y": 3.0,
+   "prereqs": [
+    "Bal_4"
+   ],
+   "unlocks": [
+    "VFEP_WarcasketFoundry"
+   ],
+   "absorbs": [
+    "VFEP_Warcaskets"
+   ],
+   "branch": "EQ_Ramo_Forja",
+   "bench": "",
+   "facilities": [],
+   "techprints": 0,
+   "techprintTags": [],
+   "notes": "Armaduras > Caixao"
+  }
+ ]
+}
