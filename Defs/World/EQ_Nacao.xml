@@ -27,6 +27,11 @@
     <bribeMaxCut>0.40</bribeMaxCut>
     <bribeSilverPerPoint>0.6</bribeSilverPerPoint>
     <revoltFaction>EQ_Faction_PovosDaRegiao</revoltFaction>
+    <!-- N1b: ideologia do jogador clássica até a fundação (só nos cenários do Ecos; classicStartAllScenarios liga em todos).
+         Na vitória ela vira fluida e o jogador escolhe estrutura + 1 meme; freeReformOnFounding libera a 1ª reforma na hora. -->
+    <classicStart>true</classicStart>
+    <classicStartAllScenarios>false</classicStartAllScenarios>
+    <freeReformOnFounding>true</freeReformOnFounding>
   </EcosDaQueda.NationDef>
 
   <LetterDef ParentName="CustomChoiceLetterBase">

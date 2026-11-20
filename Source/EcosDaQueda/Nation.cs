@@ -22,6 +22,11 @@ namespace EcosDaQueda
         public float bribeMinCut = 0.30f, bribeMaxCut = 0.40f;
         public float bribeSilverPerPoint = 0.6f;
         public FactionDef revoltFaction;
+        /// <summary>N1b: ideologia do jogador clássica até a fundação (só cenários do Ecos, salvo classicStartAllScenarios).</summary>
+        public bool classicStart = true;
+        public bool classicStartAllScenarios = false;
+        /// <summary>N1b: a fé nova já começa com a primeira reforma liberada (para acertar os preceitos sorteados).</summary>
+        public bool freeReformOnFounding = true;
 
         public static NationDef Active => DefDatabase<NationDef>.AllDefsListForReading.FirstOrDefault();
     }
@@ -164,6 +169,7 @@ namespace EcosDaQueda
         public int revoltStartTick = -1;
         public List<Pawn> revolters = new List<Pawn>();
         public string lastOutcome;
+        public bool faithPending;
 
         public WorldComponent_EQNation(World world) : base(world) { }
 
@@ -202,6 +208,7 @@ namespace EcosDaQueda
             Scribe_Values.Look(ref revoltStartTick, "revoltStartTick", -1);
             Scribe_Collections.Look(ref revolters, "revolters", LookMode.Reference);
             Scribe_Values.Look(ref lastOutcome, "lastOutcome");
+            Scribe_Values.Look(ref faithPending, "faithPending");
             if (Scribe.mode == LoadSaveMode.PostLoadInit)
             {
                 if (revolters == null) revolters = new List<Pawn>();
@@ -295,6 +302,7 @@ namespace EcosDaQueda
             if (!EQNation.Applies) return;
             int now = Find.TickManager.TicksGame;
             if (now % 250 != 0) return;
+            if (faithPending && now % 1000 == 0 && !EQLeader.SuppressDialogs && Find.WindowStack != null) EQNationFaith.OpenChooser(this);
             if (stage == NationStage.Proclaimed && now >= revoltTick) StartRevolt();
             else if (stage == NationStage.Revolt) CheckRevolt();
         }
@@ -380,6 +388,7 @@ namespace EcosDaQueda
                 LetterDefOf.PositiveEvent, leader != null && leader.Spawned ? new LookTargets(leader) : LookTargets.Invalid);
             if (!EQLeader.SuppressDialogs && Find.WindowStack != null)
                 Find.WindowStack.Add(new Dialog_NamePlayerFaction());
+            EQNationFaith.BeginFounding(this);
         }
 
         public void Defeat(string why)
@@ -412,7 +421,10 @@ namespace EcosDaQueda
                    + (retryTick > now ? " espera=" + ((retryTick - now) / (float)GenDate.TicksPerDay).ToString("0.0") + "d" : "")
                    + (stage == NationStage.Proclaimed ? " revolta_em=" + ((revoltTick - now) / (float)GenDate.TicksPerDay).ToString("0.00") + "d pontos=" + points.ToString("0") + " suborno=" + bribed : "")
                    + (stage == NationStage.Revolt ? " revoltosos=" + revolters.Count(p => !OutOfFight(p, map)) + "/" + revolters.Count + " trono_ocupado=" + throneTicks + "t" : "")
-                   + " líder=" + (leader?.LabelShort ?? "-") + " último=" + (lastOutcome ?? "-");
+                   + " líder=" + (leader?.LabelShort ?? "-") + " último=" + (lastOutcome ?? "-")
+                   + " ideologia=" + (EQNationFaith.PlayerIdeo?.name ?? "-") + " clássica=" + EQNationFaith.PlayerIdeoClassic
+                   + " fluida=" + (EQNationFaith.PlayerIdeo?.Fluid == true) + " memes=" + (EQNationFaith.PlayerIdeo?.memes.Count ?? 0)
+                   + (faithPending ? " fé_pendente" : "");
         }
     }
 
