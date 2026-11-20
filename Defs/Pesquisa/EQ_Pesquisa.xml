@@ -2200,6 +2200,524 @@
   </ResearchProjectDef>
 
   <ResearchTabDef>
+    <defName>EQ_RTab_Defesa</defName>
+    <label>Defesa</label>
+    <generalTitle>Defesa</generalTitle>
+    <generalDescription>Segurar o que é seu. Fortificação, minas, torretas (leves, montadas, pesadas, canhões automáticos e defesas espaciais da Forja), cerco de pólvora, artilharia e o armamento dos caixões de guerra. A munição das torretas vem com a torreta; a especial, na Munição especial: Artilharia.</generalDescription>
+  </ResearchTabDef>
+
+  <!-- Defesa &gt; For_1 -->
+  <ResearchProjectDef>
+    <defName>EQ_R_Defesa_For_1</defName>
+    <label>Fortificação I: Trincheiras escoradas</label>
+    <description>Trincheira escorada, abrigo pequeno e abrigo subterrâneo. A Queda ensinou a cavar antes de ensinar a plantar.</description>
+    <baseCost>250</baseCost>
+    <techLevel>Neolithic</techLevel>
+    <tab>EQ_RTab_Defesa</tab>
+    <researchViewX>0</researchViewX>
+    <researchViewY>0</researchViewY>
+    <prerequisites><li>EQ_R_Fundamentos_Fortificacao</li></prerequisites>
+    <modExtensions>
+      <li Class="EcosDaQueda.ResearchEditorExt">
+        <unlocks><li>Tr_Trench</li><li>Tr_SmallShelter</li><li>Tr_DeepDugout</li></unlocks>
+        <absorbs><li>Tr_TimberedTrenches</li></absorbs>
+        <branch>EQ_Ramo_Bancada</branch>
+      </li>
+    </modExtensions>
+  </ResearchProjectDef>
+
+  <!-- Defesa &gt; For_2 -->
+  <ResearchProjectDef>
+    <defName>EQ_R_Defesa_For_2</defName>
+    <label>Fortificação II: Arame e armadilhas</label>
+    <description>Arame farpado do CE, arame laminado, armadilha de urso e estacas antecavalaria. O Sindicato chama de "cerca trabalhista".</description>
+    <baseCost>450</baseCost>
+    <techLevel>Medieval</techLevel>
+    <tab>EQ_RTab_Defesa</tab>
+    <researchViewX>2.5</researchViewX>
+    <researchViewY>0</researchViewY>
+    <prerequisites><li>EQ_R_Defesa_For_1</li></prerequisites>
+    <modExtensions>
+      <li Class="EcosDaQueda.ResearchEditorExt">
+        <unlocks><li>CE_BarbedWire</li><li>VFES_BarbedWire</li><li>VFES_BearTrap</li><li>VFES_CavalrySpikes</li></unlocks>
+        <branch>EQ_Ramo_Bancada</branch>
+      </li>
+    </modExtensions>
+  </ResearchProjectDef>
+
+  <!-- Defesa &gt; For_3 -->
+  <ResearchProjectDef>
+    <defName>EQ_R_Defesa_For_3</defName>
+    <label>Fortificação III: Guerra de trincheira</label>
+    <description>Trincheira, abrigo de trincheira e plataforma de tiro. A frente de fronteira do Hegemony vira isto em uma semana.</description>
+    <baseCost>800</baseCost>
+    <techLevel>Industrial</techLevel>
+    <tab>EQ_RTab_Defesa</tab>
+    <researchViewX>5</researchViewX>
+    <researchViewY>0</researchViewY>
+    <prerequisites><li>EQ_R_Defesa_For_2</li></prerequisites>
+    <modExtensions>
+      <li Class="EcosDaQueda.ResearchEditorExt">
+        <unlocks><li>VFES_Trench</li><li>VFES_Dugout</li><li>VFES_Platform</li></unlocks>
+        <absorbs><li>VWE_TrenchWarfare</li></absorbs>
+        <branch>EQ_Ramo_Bancada</branch>
+      </li>
+    </modExtensions>
+  </ResearchProjectDef>
+
+  <!-- Defesa &gt; For_4 -->
+  <ResearchProjectDef>
+    <defName>EQ_R_Defesa_For_4</defName>
+    <label>Fortificação IV: Concreto e defesas ocultas</label>
+    <description>Trincheira de concreto, barreira oculta e torreta oculta. A colônia que parece abandonada é a que mais mata.</description>
+    <baseCost>1200</baseCost>
+    <techLevel>Industrial</techLevel>
+    <tab>EQ_RTab_Defesa</tab>
+    <researchViewX>7.5</researchViewX>
+    <researchViewY>0</researchViewY>
+    <prerequisites><li>EQ_R_Defesa_For_3</li></prerequisites>
+    <modExtensions>
+      <li Class="EcosDaQueda.ResearchEditorExt">
+        <unlocks><li>Tr_TrenchConcrete</li><li>VFES_ConcealedBarrier</li><li>VFES_Turret_Concealed</li></unlocks>
+        <absorbs><li>Tr_ConcreteTrenches</li><li>VFES_ConcealedDefenses</li></absorbs>
+        <branch>EQ_Ramo_Bancada</branch>
+      </li>
+    </modExtensions>
+  </ResearchProjectDef>
+
+  <!-- Defesa &gt; Min_1 -->
+  <ResearchProjectDef>
+    <defName>EQ_R_Defesa_Min_1</defName>
+    <label>Minas I: Explosivos improvisados</label>
+    <description>Armadilha IED explosiva, incendiária e de fumaça e a mina terrestre. Lata, prego e um fio no caminho: a recepção que o Lodo prepara para cobradores.</description>
+    <baseCost>500</baseCost>
+    <techLevel>Industrial</techLevel>
+    <tab>EQ_RTab_Defesa</tab>
+    <researchViewX>2.5</researchViewX>
+    <researchViewY>1.5</researchViewY>
+    <prerequisites><li>EQ_R_Defesa_For_1</li><li>EQ_R_Energia_Ger_Eletricidade</li></prerequisites>
+    <modExtensions>
+      <li Class="EcosDaQueda.ResearchEditorExt">
+        <unlocks><li>TrapIED_HighExplosive</li><li>TrapIED_Incendiary</li><li>TrapIED_Smoke</li><li>VEFS_TrapLandmine</li></unlocks>
+        <absorbs><li>IEDs</li></absorbs>
+        <branch>EQ_Ramo_Bancada</branch>
+      </li>
+    </modExtensions>
+  </ResearchProjectDef>
+
+  <!-- Defesa &gt; Min_2 -->
+  <ResearchProjectDef>
+    <defName>EQ_R_Defesa_Min_2</defName>
+    <label>Minas II: Minas especiais</label>
+    <description>IED de PEM, de espuma e tóxica e a mina de choque. Para visitas que trazem mecanoides, fogo ou pulmões.</description>
+    <baseCost>900</baseCost>
+    <techLevel>Industrial</techLevel>
+    <tab>EQ_RTab_Defesa</tab>
+    <researchViewX>5</researchViewX>
+    <researchViewY>1.5</researchViewY>
+    <prerequisites><li>EQ_R_Defesa_Min_1</li><li>EQ_R_Producao_Lab_Micro</li></prerequisites>
+    <modExtensions>
+      <li Class="EcosDaQueda.ResearchEditorExt">
+        <unlocks><li>TrapIED_EMP</li><li>TrapIED_Firefoam</li><li>TrapIED_ToxGas</li><li>VEFS_TrapShockmine</li></unlocks>
+        <branch>EQ_Ramo_Bancada</branch>
+      </li>
+    </modExtensions>
+  </ResearchProjectDef>
+
+  <!-- Defesa &gt; Min_3 -->
+  <ResearchProjectDef>
+    <defName>EQ_R_Defesa_Min_3</defName>
+    <label>Minas III: Demolição remota</label>
+    <description>Cargas remotas (explosiva, incendiária, fumaça, PEM, espuma, tóxica e antigrão) e o IED de ogiva antigrão. A Forja vende o detonador; o botão é por sua conta.</description>
+    <baseCost>1500</baseCost>
+    <techLevel>Industrial</techLevel>
+    <tab>EQ_RTab_Defesa</tab>
+    <researchViewX>7.5</researchViewX>
+    <researchViewY>1.5</researchViewY>
+    <prerequisites><li>EQ_R_Defesa_Min_2</li><li>EQ_R_Producao_Comp_Fabricacao</li></prerequisites>
+    <modExtensions>
+      <li Class="EcosDaQueda.ResearchEditorExt">
+        <unlocks><li>VFED_RemoteTrapIED_HighExplosive</li><li>VFED_RemoteTrapIED_Incendiary</li><li>VFED_RemoteTrapIED_Smoke</li><li>VFED_RemoteTrapIED_EMP</li><li>VFED_RemoteTrapIED_Firefoam</li><li>VFED_RemoteTrapIED_ToxGas</li><li>VFED_RemoteTrapIED_AntigrainWarhead</li><li>TrapIED_AntigrainWarhead</li></unlocks>
+        <absorbs><li>VFED_RemoteDemolition</li></absorbs>
+        <branch>EQ_Ramo_Forja</branch>
+      </li>
+    </modExtensions>
+  </ResearchProjectDef>
+
+  <!-- Defesa &gt; Tor_1 -->
+  <ResearchProjectDef>
+    <defName>EQ_R_Defesa_Tor_1</defName>
+    <label>Torretas I: Torretas leves</label>
+    <description>Mini-torreta, torreta de escopeta, torreta blindada, torreta a propano e o holofote. Um vigia que não dorme, não come e não pede aumento.</description>
+    <baseCost>600</baseCost>
+    <techLevel>Industrial</techLevel>
+    <tab>EQ_RTab_Defesa</tab>
+    <researchViewX>2.5</researchViewX>
+    <researchViewY>3</researchViewY>
+    <prerequisites><li>EQ_R_Armas_Aut_1</li><li>EQ_R_Energia_Ger_Eletricidade</li></prerequisites>
+    <modExtensions>
+      <li Class="EcosDaQueda.ResearchEditorExt">
+        <unlocks><li>Turret_MiniTurret</li><li>CE_Turret_ShotgunTurret</li><li>VFES_Turret_ArmoredTurret</li><li>AB_Turret_Propane</li><li>VFES_Turret_Searchlight</li></unlocks>
+        <absorbs><li>GunTurrets</li></absorbs>
+        <branch>EQ_Ramo_Bancada</branch>
+      </li>
+    </modExtensions>
+  </ResearchProjectDef>
+
+  <!-- Defesa &gt; Tor_2 -->
+  <ResearchProjectDef>
+    <defName>EQ_R_Defesa_Tor_2</defName>
+    <label>Torretas II: Metralhadoras montadas</label>
+    <description>Vickers, M1919, torreta militar, torreta de escopeta pesada, torreta lança-chamas, torreta e dispositivo de espuma, caixa de munição e carregadores automáticos. O ninho de metralhadora que o Velho Mundo esqueceu na beira da estrada.</description>
+    <baseCost>1000</baseCost>
+    <techLevel>Industrial</techLevel>
+    <tab>EQ_RTab_Defesa</tab>
+    <researchViewX>5</researchViewX>
+    <researchViewY>3</researchViewY>
+    <prerequisites><li>EQ_R_Defesa_Tor_1</li><li>EQ_R_Armas_Aut_3</li><li>EQ_R_Producao_Lab_Refinaria</li></prerequisites>
+    <modExtensions>
+      <li Class="EcosDaQueda.ResearchEditorExt">
+        <unlocks><li>CE_Turret_Vickers</li><li>CE_Turret_M1919Browning</li><li>VFES_Turret_MilitaryTurret</li><li>VFES_Turret_ShotgunTurret</li><li>VFES_Turret_Flame</li><li>Turret_FoamTurret</li><li>FirefoamPopper</li><li>VFES_AmmoCrate</li><li>CE_AutoloaderElectric</li><li>CE_AutoloaderManualHiCal</li></unlocks>
+        <absorbs><li>FoamTurret</li></absorbs>
+        <branch>EQ_Ramo_Bancada</branch>
+      </li>
+    </modExtensions>
+  </ResearchProjectDef>
+
+  <!-- Defesa &gt; Tor_3 -->
+  <ResearchProjectDef>
+    <defName>EQ_R_Defesa_Tor_3</defName>
+    <label>Torretas III: Metralhadoras pesadas</label>
+    <description>Torreta média, PKM, M240B, M2 Browning, KPV, complexo de metralhadora, torretas giratórias e antiaérea. Arsenal do Velho Mundo aparafusado no chão.</description>
+    <baseCost>1800</baseCost>
+    <techLevel>Industrial</techLevel>
+    <tab>EQ_RTab_Defesa</tab>
+    <researchViewX>7.5</researchViewX>
+    <researchViewY>3</researchViewY>
+    <prerequisites><li>EQ_R_Defesa_Tor_2</li><li>EQ_R_Armas_VM_1</li><li>EQ_R_Producao_Lab_Micro</li></prerequisites>
+    <modExtensions>
+      <li Class="EcosDaQueda.ResearchEditorExt">
+        <unlocks><li>Turret_Medium</li><li>CE_Turret_PKM</li><li>Turret_M240B</li><li>CE_Turret_M2HB</li><li>Turret_KPV</li><li>VFES_Complex_Hmg</li><li>VFES_Turret_Minigun</li><li>VFES_Complex_Minigun</li><li>VFES_Turret_AntiAir</li></unlocks>
+        <absorbs><li>CE_TurretHeavyWeapons</li></absorbs>
+        <branch>EQ_Ramo_VelhoMundo</branch>
+      </li>
+    </modExtensions>
+  </ResearchProjectDef>
+
+  <!-- Defesa &gt; Tor_4 -->
+  <ResearchProjectDef>
+    <defName>EQ_R_Defesa_Tor_4</defName>
+    <label>Torretas IV: Canhões automáticos</label>
+    <description>Torreta pesada, canhão automático (simples e duplo), SPG-9, antiaérea de 90 mm, Mk 19 e AGS-30. Para quando o vizinho chega de blindado.</description>
+    <baseCost>2600</baseCost>
+    <techLevel>Industrial</techLevel>
+    <tab>EQ_RTab_Defesa</tab>
+    <researchViewX>10</researchViewX>
+    <researchViewY>3</researchViewY>
+    <prerequisites><li>EQ_R_Defesa_Tor_3</li></prerequisites>
+    <modExtensions>
+      <li Class="EcosDaQueda.ResearchEditorExt">
+        <unlocks><li>Turret_Heavy</li><li>Turret_Autocannon</li><li>VFES_Turret_AutocannonDouble</li><li>CE_Turret_SPGNine</li><li>Turret_Flak</li><li>CE_Turret_MkNineteenGL</li><li>Turret_AGSThirty</li><li>Ammo_20x102mmNATO_AP</li><li>Ammo_20x102mmNATO_HE</li><li>Ammo_SPG9Rocket_HEAT</li><li>Ammo_SPG9Rocket_Frag</li><li>Ammo_90mmCannonShell_HEAT</li><li>Ammo_90mmCannonShell_AP</li><li>Ammo_90mmCannonShell_HE</li><li>Ammo_90mmCannonShell_HE_TFuzed</li><li>Ammo_40x53mmGrenade_HE</li><li>Ammo_40x53mmGrenade_HE_TFuzed</li><li>Ammo_40x53mmGrenade_HEDP</li><li>Ammo_30x29mmGrenade_HE</li><li>Ammo_30x29mmGrenade_HE_TFuzed</li><li>Ammo_30x29mmGrenade_HEDP</li></unlocks>
+        <absorbs><li>CE_HeavyTurret</li><li>HeavyTurrets</li></absorbs>
+        <branch>EQ_Ramo_VelhoMundo</branch>
+      </li>
+    </modExtensions>
+  </ResearchProjectDef>
+
+  <!-- Defesa &gt; Spc_1 -->
+  <ResearchProjectDef>
+    <defName>EQ_R_Defesa_Spc_1</defName>
+    <label>Defesas espaciais I: Urânio e enxame</label>
+    <description>Torreta de bala de urânio e lançador de enxame de foguetes. A Forja instala; a manutenção é por contrato.</description>
+    <baseCost>3000</baseCost>
+    <techLevel>Spacer</techLevel>
+    <tab>EQ_RTab_Defesa</tab>
+    <researchViewX>12.5</researchViewX>
+    <researchViewY>4.5</researchViewY>
+    <prerequisites><li>EQ_R_Defesa_Tor_4</li><li>EQ_R_Producao_Comp_Fabricacao</li></prerequisites>
+    <modExtensions>
+      <li Class="EcosDaQueda.ResearchEditorExt">
+        <unlocks><li>Turret_Sniper</li><li>Turret_RocketswarmLauncher</li><li>Ammo_40x311mmR_AP</li><li>Ammo_40x311mmR_HE</li><li>Ammo_50mmRocket_HE</li></unlocks>
+        <absorbs><li>SniperTurret</li><li>RocketswarmLauncher</li></absorbs>
+        <branch>EQ_Ramo_Forja</branch>
+      </li>
+    </modExtensions>
+  </ResearchProjectDef>
+
+  <!-- Defesa &gt; Spc_2 -->
+  <ResearchProjectDef>
+    <defName>EQ_R_Defesa_Spc_2</defName>
+    <label>Defesas espaciais II: Torretas de carga</label>
+    <description>Torreta blaster de carga, torreta de carga e complexo de carga. A garantia cobre o disparo, não o alvo.</description>
+    <baseCost>3500</baseCost>
+    <techLevel>Spacer</techLevel>
+    <tab>EQ_RTab_Defesa</tab>
+    <researchViewX>15</researchViewX>
+    <researchViewY>4.5</researchViewY>
+    <prerequisites><li>EQ_R_Defesa_Spc_1</li><li>EQ_R_Armas_Fo_1</li></prerequisites>
+    <modExtensions>
+      <li Class="EcosDaQueda.ResearchEditorExt">
+        <unlocks><li>Turret_Blaster</li><li>VFES_Turret_ChargeTurret</li><li>VFES_Complex_Charge</li></unlocks>
+        <absorbs><li>CE_ChargeTurret</li></absorbs>
+        <branch>EQ_Ramo_Forja</branch>
+      </li>
+    </modExtensions>
+  </ResearchProjectDef>
+
+  <!-- Defesa &gt; Spc_3 -->
+  <ResearchProjectDef>
+    <defName>EQ_R_Defesa_Spc_3</defName>
+    <label>Defesas espaciais III: Defesas imperiais</label>
+    <description>Kontarion, Onager, Palintone, as caixas de munição delas, blaster tesla e railgun de carga. Herança do Império que perdeu a guerra; a Forja chama de "seminovo".</description>
+    <baseCost>4500</baseCost>
+    <techLevel>Spacer</techLevel>
+    <tab>EQ_RTab_Defesa</tab>
+    <researchViewX>17.5</researchViewX>
+    <researchViewY>4.5</researchViewY>
+    <prerequisites><li>EQ_R_Defesa_Spc_2</li></prerequisites>
+    <modExtensions>
+      <li Class="EcosDaQueda.ResearchEditorExt">
+        <unlocks><li>VFED_Turret_Kontarion</li><li>VFED_Turret_Onager</li><li>VFED_Turret_Palintone</li><li>VFED_AmmoBox_Autocannon</li><li>VFED_AmmoBox_Missile</li><li>VFED_AmmoBox_UraniumSlug</li><li>VFES_Turret_TeslaBlaster</li><li>VFES_Turret_ChargeRailgun</li></unlocks>
+        <absorbs><li>VFED_ImperialDefenses</li><li>VFES_EMPCannon</li><li>VFES_Railgun</li></absorbs>
+        <branch>EQ_Ramo_Forja</branch>
+      </li>
+    </modExtensions>
+  </ResearchProjectDef>
+
+  <!-- Defesa &gt; Spc_4 -->
+  <ResearchProjectDef>
+    <defName>EQ_R_Defesa_Spc_4</defName>
+    <label>Defesas espaciais IV: Graser e repulsores</label>
+    <description>Complexo de canhão graser e repulsores (pequeno e grande). A última muralha: luz que corta e um campo que empurra o mundo para fora.</description>
+    <baseCost>6000</baseCost>
+    <techLevel>Ultra</techLevel>
+    <tab>EQ_RTab_Defesa</tab>
+    <researchViewX>20</researchViewX>
+    <researchViewY>4.5</researchViewY>
+    <prerequisites><li>EQ_R_Defesa_Spc_3</li></prerequisites>
+    <modExtensions>
+      <li Class="EcosDaQueda.ResearchEditorExt">
+        <unlocks><li>VFES_Complex_GraserCannon</li><li>VFES_SmallRepulsor</li><li>VFES_LargeRepulsor</li></unlocks>
+        <absorbs><li>VFES_RepulsorTechnology</li></absorbs>
+        <branch>EQ_Ramo_Forja</branch>
+      </li>
+    </modExtensions>
+  </ResearchProjectDef>
+
+  <!-- Defesa &gt; Cer_1 -->
+  <ResearchProjectDef>
+    <defName>EQ_R_Defesa_Cer_1</defName>
+    <label>Cerco I: Armas de muralha</label>
+    <description>Arcabuz de muralha e balestra de muralha. O castelo do Reino do Lodo é um chiqueiro com ameias, mas as ameias funcionam.</description>
+    <baseCost>400</baseCost>
+    <techLevel>Medieval</techLevel>
+    <tab>EQ_RTab_Defesa</tab>
+    <researchViewX>0</researchViewX>
+    <researchViewY>6</researchViewY>
+    <prerequisites><li>EQ_R_Producao_Oficio_Metalurgia</li></prerequisites>
+    <modExtensions>
+      <li Class="EcosDaQueda.ResearchEditorExt">
+        <unlocks><li>VFEM2_Turret_WallMountedArquebus</li><li>VFEM2_Turret_WallMountedArbalest</li></unlocks>
+        <branch>EQ_Ramo_Bancada</branch>
+      </li>
+    </modExtensions>
+  </ResearchProjectDef>
+
+  <!-- Defesa &gt; Cer_2 -->
+  <ResearchProjectDef>
+    <defName>EQ_R_Defesa_Cer_2</defName>
+    <label>Cerco II: Balista e catapulta</label>
+    <description>Balista e catapulta. Engenharia medieval para um mundo que voltou a ela por falta de manual.</description>
+    <baseCost>600</baseCost>
+    <techLevel>Medieval</techLevel>
+    <tab>EQ_RTab_Defesa</tab>
+    <researchViewX>2.5</researchViewX>
+    <researchViewY>6</researchViewY>
+    <prerequisites><li>EQ_R_Defesa_Cer_1</li></prerequisites>
+    <modExtensions>
+      <li Class="EcosDaQueda.ResearchEditorExt">
+        <unlocks><li>VFES_Turret_Ballista</li><li>VFES_Turret_Catapult</li><li>Ammo_Catapult_Boulder</li></unlocks>
+        <absorbs><li>VFES_SiegeEquipment</li></absorbs>
+        <branch>EQ_Ramo_Bancada</branch>
+      </li>
+    </modExtensions>
+  </ResearchProjectDef>
+
+  <!-- Defesa &gt; Cer_3 -->
+  <ResearchProjectDef>
+    <defName>EQ_R_Defesa_Cer_3</defName>
+    <label>Cerco III: Canhões de pólvora</label>
+    <description>Canhão de 12 libras, bombarda e canhão. Bala de ferro e muita pólvora negra: o argumento definitivo de qualquer rei-capataz.</description>
+    <baseCost>900</baseCost>
+    <techLevel>Medieval</techLevel>
+    <tab>EQ_RTab_Defesa</tab>
+    <researchViewX>5</researchViewX>
+    <researchViewY>6</researchViewY>
+    <prerequisites><li>EQ_R_Defesa_Cer_2</li><li>EQ_R_Armas_Pol_4</li></prerequisites>
+    <modExtensions>
+      <li Class="EcosDaQueda.ResearchEditorExt">
+        <unlocks><li>CE_Turret_TwelvePounder</li><li>CE_Turret_12PounderBombard</li><li>VFEP_Turret_Cannon</li><li>Ammo_CannonBall_Round</li></unlocks>
+        <branch>EQ_Ramo_Bancada</branch>
+      </li>
+    </modExtensions>
+  </ResearchProjectDef>
+
+  <!-- Defesa &gt; Cer_4 -->
+  <ResearchProjectDef>
+    <defName>EQ_R_Defesa_Cer_4</defName>
+    <label>Cerco IV: Órgão e Gatling</label>
+    <description>Canhão-órgão e metralhadora Gatling. A manivela que transformou a guerra em indústria, de volta depois da Queda.</description>
+    <baseCost>1200</baseCost>
+    <techLevel>Industrial</techLevel>
+    <tab>EQ_RTab_Defesa</tab>
+    <researchViewX>7.5</researchViewX>
+    <researchViewY>6</researchViewY>
+    <prerequisites><li>EQ_R_Defesa_Cer_3</li></prerequisites>
+    <modExtensions>
+      <li Class="EcosDaQueda.ResearchEditorExt">
+        <unlocks><li>CE_Turret_OrganGun</li><li>CE_Turret_GatlingGun</li></unlocks>
+        <branch>EQ_Ramo_Bancada</branch>
+      </li>
+    </modExtensions>
+  </ResearchProjectDef>
+
+  <!-- Defesa &gt; Art_1 -->
+  <ResearchProjectDef>
+    <defName>EQ_R_Defesa_Art_1</defName>
+    <label>Artilharia I: Morteiros</label>
+    <description>Morteiro e morteiro portátil de 60 mm, com os projéteis comuns. Quem tem morteiro não precisa de diplomata.</description>
+    <baseCost>1200</baseCost>
+    <techLevel>Industrial</techLevel>
+    <tab>EQ_RTab_Defesa</tab>
+    <researchViewX>2.5</researchViewX>
+    <researchViewY>7.5</researchViewY>
+    <prerequisites><li>EQ_R_Defesa_Tor_1</li></prerequisites>
+    <modExtensions>
+      <li Class="EcosDaQueda.ResearchEditorExt">
+        <unlocks><li>Turret_Mortar</li><li>CE_Turret_PortableMortar</li><li>Shell_HighExplosive</li><li>Shell_HighExplosive_HFuzed</li><li>AB_Shell_Tar</li><li>Shell_60mmMortar_HE</li></unlocks>
+        <absorbs><li>Mortars</li></absorbs>
+        <branch>EQ_Ramo_Bancada</branch>
+      </li>
+    </modExtensions>
+  </ResearchProjectDef>
+
+  <!-- Defesa &gt; Art_2 -->
+  <ResearchProjectDef>
+    <defName>EQ_R_Defesa_Art_2</defName>
+    <label>Artilharia II: Canhão de campanha</label>
+    <description>Canhão de campanha. Puxado por boi no Lodo, por caminhão na Feira e por servo no Coro.</description>
+    <baseCost>1600</baseCost>
+    <techLevel>Industrial</techLevel>
+    <tab>EQ_RTab_Defesa</tab>
+    <researchViewX>5</researchViewX>
+    <researchViewY>7.5</researchViewY>
+    <prerequisites><li>EQ_R_Defesa_Art_1</li></prerequisites>
+    <modExtensions>
+      <li Class="EcosDaQueda.ResearchEditorExt">
+        <unlocks><li>VFEP_Turret_FieldGun</li><li>Ammo_762x385mmRCannonShell_HEAT</li><li>Ammo_762x385mmRCannonShell_AP</li><li>Ammo_762x385mmRCannonShell_HE</li></unlocks>
+        <branch>EQ_Ramo_Bancada</branch>
+      </li>
+    </modExtensions>
+  </ResearchProjectDef>
+
+  <!-- Defesa &gt; Art_3 -->
+  <ResearchProjectDef>
+    <defName>EQ_R_Defesa_Art_3</defName>
+    <label>Artilharia III: Obuses</label>
+    <description>Obus de 105 mm e a peça de artilharia. Acertar o que não se vê: a especialidade de quem nunca precisou ver o que acertou.</description>
+    <baseCost>2400</baseCost>
+    <techLevel>Industrial</techLevel>
+    <tab>EQ_RTab_Defesa</tab>
+    <researchViewX>7.5</researchViewX>
+    <researchViewY>7.5</researchViewY>
+    <prerequisites><li>EQ_R_Defesa_Art_2</li></prerequisites>
+    <modExtensions>
+      <li Class="EcosDaQueda.ResearchEditorExt">
+        <unlocks><li>CE_Artillery_Howitzer</li><li>VFES_Turret_Artillery</li><li>Ammo_105mmHowitzerShell_HE</li><li>Ammo_105mmHowitzerShell_HE_HFuzed</li><li>Ammo_155mmHowitzerShell_HE</li><li>Ammo_155mmHowitzerShell_HE_HFuzed</li></unlocks>
+        <branch>EQ_Ramo_VelhoMundo</branch>
+      </li>
+    </modExtensions>
+  </ResearchProjectDef>
+
+  <!-- Defesa &gt; Art_4 -->
+  <ResearchProjectDef>
+    <defName>EQ_R_Defesa_Art_4</defName>
+    <label>Artilharia IV: Morteiro automático</label>
+    <description>Morteiro automático. Dispara sozinho; o operador só assina o relatório.</description>
+    <baseCost>3000</baseCost>
+    <techLevel>Industrial</techLevel>
+    <tab>EQ_RTab_Defesa</tab>
+    <researchViewX>10</researchViewX>
+    <researchViewY>7.5</researchViewY>
+    <prerequisites><li>EQ_R_Defesa_Art_3</li><li>EQ_R_Producao_Lab_Micro</li></prerequisites>
+    <modExtensions>
+      <li Class="EcosDaQueda.ResearchEditorExt">
+        <unlocks><li>VFES_Turret_AutomatedMortar</li></unlocks>
+        <branch>EQ_Ramo_VelhoMundo</branch>
+      </li>
+    </modExtensions>
+  </ResearchProjectDef>
+
+  <!-- Defesa &gt; Art_Esp -->
+  <ResearchProjectDef>
+    <defName>EQ_R_Defesa_Art_Esp</defName>
+    <label>Munição especial: Artilharia</label>
+    <description>Projéteis incendiários, de fumaça, PEM, tóxicos, de espuma e as munições especiais das torretas. O que sobe precisa descer, de preferência pegando fogo.</description>
+    <baseCost>1500</baseCost>
+    <techLevel>Industrial</techLevel>
+    <tab>EQ_RTab_Defesa</tab>
+    <researchViewX>5</researchViewX>
+    <researchViewY>8.5</researchViewY>
+    <prerequisites><li>EQ_R_Defesa_Art_1</li><li>EQ_R_Armas_Suc_Esp</li></prerequisites>
+    <modExtensions>
+      <li Class="EcosDaQueda.ResearchEditorExt">
+        <unlocks><li>Ammo_20x102mmNATO_Incendiary</li><li>Ammo_20x102mmNATO_Sabot</li><li>Ammo_SPG9Rocket_Thermobaric</li><li>Ammo_SPG9Rocket_EMP</li><li>Ammo_90mmCannonShell_APCR</li><li>Ammo_90mmCannonShell_EMP</li><li>Ammo_40x53mmGrenade_EMP</li><li>Ammo_40x53mmGrenade_Smoke</li><li>Ammo_30x29mmGrenade_EMP</li><li>Ammo_30x29mmGrenade_Smoke</li><li>Ammo_40x311mmR_Incendiary</li><li>Ammo_40x311mmR_Sabot</li><li>Ammo_CannonBall_Bursting</li><li>Ammo_CannonBall_Incendiary</li><li>Ammo_CannonBall_Grape</li><li>Shell_Incendiary</li><li>Shell_EMP</li><li>Shell_Firefoam</li><li>Shell_Smoke</li><li>Shell_Toxic</li><li>Shell_Deadlife</li><li>Shell_60mmMortar_Incendiary</li><li>Shell_60mmMortar_EMP</li><li>Shell_60mmMortar_Firefoam</li><li>Shell_60mmMortar_Smoke</li><li>Ammo_762x385mmRCannonShell_APCR</li><li>Ammo_762x385mmRCannonShell_EMP</li><li>Ammo_105mmHowitzerShell_Incendiary</li><li>Ammo_105mmHowitzerShell_EMP</li><li>Ammo_105mmHowitzerShell_Smoke</li><li>Ammo_155mmHowitzerShell_Incendiary</li><li>Ammo_155mmHowitzerShell_EMP</li><li>Ammo_155mmHowitzerShell_Smoke</li></unlocks>
+        <branch>EQ_Ramo_Bancada</branch>
+      </li>
+    </modExtensions>
+  </ResearchProjectDef>
+
+  <!-- Defesa &gt; Cxg_1 -->
+  <ResearchProjectDef>
+    <defName>EQ_R_Defesa_Cxg_1</defName>
+    <label>Armamento de caixão de guerra I</label>
+    <description>Fuzil automático, lança-balotes, canhão de mão, lança-granadas, lança-chamas pesado, metralhadora giratória, fuzil de urânio, faca, espada larga e martelo gravitacional para caixões de guerra. A Forja aparafusa a arma no braço; o resto do soldado já veio aparafusado.</description>
+    <baseCost>2000</baseCost>
+    <techLevel>Industrial</techLevel>
+    <tab>EQ_RTab_Defesa</tab>
+    <researchViewX>12.5</researchViewX>
+    <researchViewY>9</researchViewY>
+    <prerequisites><li>EQ_R_Armaduras_Caixao</li></prerequisites>
+    <modExtensions>
+      <li Class="EcosDaQueda.ResearchEditorExt">
+        <unlocks><li>VFEP_Box_Autorifle</li><li>VFEP_Box_Slugthrower</li><li>VFEP_Box_HandheldCannon</li><li>VFEP_Box_GrenadeLauncher</li><li>VFEP_Box_HeavyFlamer</li><li>VFEP_Box_Minigun</li><li>VFEP_Box_UraniumSlugRifle</li><li>VFEP_Box_CombatKnife</li><li>VFEP_Box_Broadsword</li><li>VFEP_Box_GravityHammer</li></unlocks>
+        <absorbs><li>VFEP_WarcasketWeaponry</li></absorbs>
+        <branch>EQ_Ramo_Forja</branch>
+      </li>
+    </modExtensions>
+  </ResearchProjectDef>
+
+  <!-- Defesa &gt; Cxg_2 -->
+  <ResearchProjectDef>
+    <defName>EQ_R_Defesa_Cxg_2</defName>
+    <label>Armamento de caixão de guerra II: espacial</label>
+    <description>Disparador de carga, lança de carga, canhão elétrico, erradicador laser recuperado e lança-raios para caixões de guerra. O último upgrade do cliente fidelizado.</description>
+    <baseCost>3500</baseCost>
+    <techLevel>Spacer</techLevel>
+    <tab>EQ_RTab_Defesa</tab>
+    <researchViewX>15</researchViewX>
+    <researchViewY>9</researchViewY>
+    <prerequisites><li>EQ_R_Defesa_Cxg_1</li><li>EQ_R_Armas_Fo_1</li></prerequisites>
+    <modExtensions>
+      <li Class="EcosDaQueda.ResearchEditorExt">
+        <unlocks><li>VFEP_Box_ChargeBlaster</li><li>VFEP_Box_ChargeLance</li><li>VFEP_Box_Railgun</li><li>VFEP_Box_SalvagedLaserEradicator</li><li>VFEP_Box_Warbolter</li></unlocks>
+        <absorbs><li>VFEP_SpacerWarcasketWeaponry</li></absorbs>
+        <branch>EQ_Ramo_Forja</branch>
+      </li>
+    </modExtensions>
+  </ResearchProjectDef>
+
+  <ResearchTabDef>
     <defName>EQ_RTab_Energia</defName>
     <label>Energia</label>
     <generalTitle>Energia</generalTitle>
