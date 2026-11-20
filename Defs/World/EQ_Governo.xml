@@ -8,7 +8,9 @@
       sem os dois = o jogador nomeia. Mesma key em memes diferentes = a mesma cadeira, +seatStackBonus (EQ_Conselho.xml) por meme a mais.
     - effects: efeitos fixos do meme. Canais: ver EQ_Conselho.xml.
     - seatFactor (todas as cadeiras), seatFactors (uma), renames, leaderTakes, leaderFillsEmpty, dropOneFixedSeat, noPassedOver,
-      noSwapCooldown, moodScaled, majorDecisionVote, fixedSeatsRequireTitle, fixedSeatMinAge; succession é só texto até o N3.
+      noSwapCooldown, moodScaled, majorDecisionVote, fixedSeatsRequireTitle, fixedSeatMinAge; succession é o texto da regra, e as regras
+      do N3 (EQ_Legitimidade.xml) são successionNoCrown, successionHeirCrowned, successionNoHeirFactor, successionRevoltNow,
+      successionRevoltFactor, successionCouncilFalls, bloodCourtLegitimacy, guiltyExpiation.
     Valores propostos; ajustar aqui.
   -->
 
@@ -18,7 +20,8 @@
     <defName>EQ_Gov_Republica</defName>
     <meme>VME_Republic</meme>
     <summary>Triunvirato: cada triúnviro cuida de uma pasta (Relações com o líder, Guerra com o 2º, Terras com o 3º). Jurar lealdade e proclamar exigem 2 dos 3 triúnviros com humor acima de 40%.</summary>
-    <succession>sem revolta, os outros dois triúnviros seguram o país (regra do N3)</succession>
+    <succession>sem coroação nem revolta: os outros dois triúnviros seguram o país</succession>
+    <successionNoCrown>true</successionNoCrown>
     <seats>
       <li>
         <key>pasta_relacoes</key>
@@ -69,7 +72,9 @@
     <defName>EQ_Gov_Real</defName>
     <meme>VME_Royal</meme>
     <summary>A coroa passa de pai para filho, e o resto é detalhe.</summary>
-    <succession>por herança: com herdeiro designado, sem revolta nem nova proclamação; sem herdeiro, revolta maior (regra do N3)</succession>
+    <succession>por herança: o herdeiro designado assume já coroado; sem ele, a revolta da sucessão vem 50% maior</succession>
+    <successionHeirCrowned>true</successionHeirCrowned>
+    <successionNoHeirFactor>1.5</successionNoHeirFactor>
   </EcosDaQueda.GovMemeDef>
 
   <EcosDaQueda.GovMemeDef>
@@ -97,7 +102,10 @@
     <defName>EQ_Gov_DeusImperador</defName>
     <meme>VME_GodEmperor</meme>
     <summary>O líder vale por meio conselho: cadeira fixa vazia rende metade do bônus pelo líder. Revolta da proclamação 30% menor: ninguém se revolta contra um deus, só contra o preço do pão.</summary>
-    <succession>se o líder morrer, revolta grande e o conselho cai (regra do N3)</succession>
+    <succession>se o deus morrer, revolta 50% maior sem prazo, e o conselho cai</succession>
+    <successionRevoltNow>true</successionRevoltNow>
+    <successionRevoltFactor>1.5</successionRevoltFactor>
+    <successionCouncilFalls>true</successionCouncilFalls>
     <effects>
       <li><channel>revolt</channel><amount>-0.30</amount></li>
     </effects>
@@ -193,7 +201,8 @@
     <defName>EQ_Gov_Lealista</defName>
     <meme>Loyalist</meme>
     <summary>A lealdade passa adiante junto com o trono.</summary>
-    <succession>sem revolta nem nova proclamação se o sucessor já estiver escolhido (regra do N3)</succession>
+    <succession>o sucessor designado assume já coroado</succession>
+    <successionHeirCrowned>true</successionHeirCrowned>
   </EcosDaQueda.GovMemeDef>
 
   <EcosDaQueda.GovMemeDef>
@@ -911,7 +920,8 @@
   <EcosDaQueda.GovMemeDef>
     <defName>EQ_Gov_CorteSangue</defName>
     <meme>VME_BloodCourt</meme>
-    <summary>Executar um conselheiro dará legitimidade em vez de tirar (legitimidade vem no N3).</summary>
+    <summary>Executar um conselheiro dá legitimidade em vez de tirar.</summary>
+    <bloodCourtLegitimacy>true</bloodCourtLegitimacy>
   </EcosDaQueda.GovMemeDef>
 
   <EcosDaQueda.GovMemeDef>
@@ -957,7 +967,8 @@
   <EcosDaQueda.GovMemeDef>
     <defName>EQ_Gov_Culpado</defName>
     <meme>Guilty</meme>
-    <summary>Perder uma revolta dará legitimidade (expiação), quando houver legitimidade (N3).</summary>
+    <summary>Perder uma revolta menor dá legitimidade em vez de tirar (expiação).</summary>
+    <guiltyExpiation>true</guiltyExpiation>
   </EcosDaQueda.GovMemeDef>
 
   <EcosDaQueda.GovMemeDef>

@@ -727,6 +727,7 @@ namespace EcosDaQueda
                 bool took = text.Contains(" tomou ");
                 if (win)
                 {
+                    EQLegitimacy.Event(LegitimacyDef.Active?.armyWin ?? 0f, "vitória do " + army.Label);
                     int favor = 6 + (took ? 4 : 0);
                     EQFavor.Award(army.Faction, favor, "vitória do " + army.Label);
                     WorldComponent_Allegiance.ApplyOutcome(army.Faction, took ? 10f : 6f, 0f, 8);
@@ -735,6 +736,7 @@ namespace EcosDaQueda
                 }
                 else
                 {
+                    EQLegitimacy.Event(LegitimacyDef.Active?.armyLoss ?? 0f, "derrota do " + army.Label);
                     WorldComponent_Encargos.LoseFavor(army.Faction, 4);
                     WorldComponent_PowerEvents.Current?.AddStrike(army.Faction);
                     extra = "\n\nDerrota sob o seu comando: -4 de favor e uma falta. Os sobreviventes voltam para casa contando a versão deles.";

@@ -268,6 +268,9 @@ namespace EcosDaQueda
                     if (fx.channel == "markers") { markersCache += Mathf.RoundToInt(fx.amount); continue; }
                     if (founded || fx.channel == "revolt") Add(fx.Key, fx.amount);
                 }
+            // N3: faixa da legitimidade e franquia da Hélice
+            if (founded)
+                foreach (var kv in EQLegitimacy.ExtraChannels()) Add(kv.Key, kv.Value);
         }
 
         private static void Add(string ch, float v)
@@ -514,7 +517,21 @@ namespace EcosDaQueda
             Widgets.Label(new Rect(0f, 0f, inRect.width, 35f), "Conselho de " + Faction.OfPlayer.Name);
             Text.Font = GameFont.Small;
             Widgets.Label(new Rect(0f, 40f, inRect.width, 40f), "O líder (" + (EQLeader.IdeoLeader?.LabelShort ?? "ninguém") + ") preside e não ocupa cadeira. O bônus vale com o conselheiro vivo, consciente e na colônia.");
-            Rect outer = new Rect(0f, 84f, inRect.width, inRect.height - 84f - CloseButSize.y - 8f);
+            // N3: legitimidade, coroação pendente e sucessor
+            var lg = WorldComponent_EQLegitimacy.Current;
+            if (EQLegitimacy.On && lg != null && lg.initialized)
+            {
+                float drift = lg.DailyDrift(out string detail);
+                Rect lr = new Rect(0f, 84f, inRect.width - 140f, 24f);
+                Widgets.Label(lr, "<b>Legitimidade:</b> " + lg.value.ToString("0") + "/100 (" + EQLegitimacy.Tier(lg.value) + "), " + drift.ToString("+0.##;-0.##") + " por dia"
+                                  + (lg.crownPending ? "  ·  <color=#e0a040>coroação pendente</color>" : ""));
+                TooltipHandler.TipRegion(lr, "Sobe com o líder coroado no trono, Fama, vitórias e revoltas vencidas; cai com Infâmia, derrotas, morte do líder e sala do trono sem trono."
+                                             + "\nAbaixo de 30: revoltas menores voltam de tempos em tempos. Abaixo de 10: o território para de crescer. 70 ou mais: tributo e fronteira um pouco melhores."
+                                             + "\n\nHoje: " + detail + "\n\nÚltimos: " + string.Join("\n", lg.log.Skip(Math.Max(0, lg.log.Count - 6))));
+                if (Widgets.ButtonText(new Rect(inRect.width - 130f, 84f, 130f, 24f), "Sucessor"))
+                    Find.WindowStack.Add(new Dialog_EQChooseLeader(forced: false, successorMode: true));
+            }
+            Rect outer = new Rect(0f, 112f, inRect.width, inRect.height - 112f - CloseButSize.y - 8f);
             Rect view = new Rect(0f, 0f, outer.width - 16f, viewHeight);
             Widgets.BeginScrollView(outer, ref scroll, view);
             float y = 0f;

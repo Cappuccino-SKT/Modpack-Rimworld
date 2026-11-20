@@ -54,7 +54,19 @@ namespace EcosDaQueda
         public bool negotiateRevolt;
         /// <summary>Conversão violenta: na vitória, até este número de revoltosos caídos se junta à colônia (mínimo 1).</summary>
         public int convertRevolters;
-        /// <summary>Regra de sucessão (texto; a sucessão coroada é do N3).</summary>
+        // ---- N3 (sucessão coroada e legitimidade)
+        /// <summary>República: troca de líder sem coroação.</summary>
+        public bool successionNoCrown;
+        /// <summary>Real, Lealista: o herdeiro designado assume já coroado.</summary>
+        public bool successionHeirCrowned;
+        /// <summary>Real: sem o herdeiro designado, a revolta da sucessão vem maior.</summary>
+        public float successionNoHeirFactor = 1f;
+        /// <summary>Deus-imperador: morte do líder traz a revolta sem prazo, deste tamanho, e o conselho cai.</summary>
+        public bool successionRevoltNow, successionCouncilFalls;
+        public float successionRevoltFactor = 1f;
+        /// <summary>Corte de sangue: executar conselheiro dá legitimidade. Culpado: perder revolta dá (expiação).</summary>
+        public bool bloodCourtLegitimacy, guiltyExpiation;
+        /// <summary>Regra de sucessão (texto para a janela do conselho).</summary>
         [MustTranslate] public string succession;
         [MustTranslate] public string summary;
 

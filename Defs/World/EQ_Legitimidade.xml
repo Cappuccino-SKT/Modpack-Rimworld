@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <!--
+    N3 (NACAO.md › 3.6): legitimidade da nação, sucessão coroada, reações das potências e mercenários. Só depois da fundação (N1).
+    - Legitimidade 0–100, começa em start na fundação. Por dia: líder coroado com trono numa sala do trono (throneDaily), sem trono
+      (noThroneDaily), sem líder (noLeaderDaily), Fama e Infâmia (a maior com uma potência, proporcional ao teto da reputação).
+    - Eventos: raid hostil rechaçado na colônia (metade ou mais caiu, raidMinPawns ou mais; no máximo 1 por dia), exército sob o seu
+      comando vence/perde, frente de fronteira vencida/perdida (F5), morte ou troca do líder, coroação, revolta menor vencida/perdida,
+      execução de conselheiro (Corte de sangue: dá em vez de tirar; Culpado: perder revolta dá, expiação).
+    - Abaixo de unrestBelow: revolta menor (Povos da Região, pontos × unrestPointsFactor) com intervalo médio unrestMtbDays,
+      pelo menos unrestCooldownDays depois da última. Abaixo de frozenBelow: o território do jogador (F4) não cresce.
+      lowEffects (abaixo de unrestBelow) e highEffects (highAbove ou mais) são canais do conselho (EQ_Conselho.xml).
+    - Sucessão: líder morto, perdido ou trocado → o novo precisa ser coroado no trono (botão "Coroar") em crownDays dias, senão revolta
+      da sucessão (pontos × successionPointsFactor). Regras dos memes em EQ_Governo.xml (successionNoCrown, successionHeirCrowned...).
+      Sem potência, o sucessor designado (botão "Sucessor" no conselho) assume sozinho.
+    - Reações na fundação: Coro (boa vontade ± coroGoodwill pela qualidade do trono), Hélice (franquia: cerimônias heliceCeremony
+      por heliceDays dias), Forja (registro: forjaSteel de aço), Silêncio (catalogado: legitimidade), Sindicato (desconto nos mercenários).
+    - Mercenários: na carta da proclamação e das revoltas menores. Custam pontos da revolta × mercPointsFactor × mercSilverPerPoint
+      de prata; chegam com a revolta (mercPointsFactor dos pontos dela); mercFleeChance de não virem. A facção é a Seção de Contratos
+      (oculta, neutra); se ficar hostil (atirar nos contratados), não há contrato.
+    Valores propostos; ajustar aqui.
+  -->
+  <EcosDaQueda.LegitimacyDef>
+    <defName>EQ_Legitimidade</defName>
+    <label>legitimidade da nação</label>
+    <start>50</start>
+    <max>100</max>
+    <throneDaily>0.3</throneDaily>
+    <noThroneDaily>-0.5</noThroneDaily>
+    <noLeaderDaily>-1</noLeaderDaily>
+    <fameDaily>0.3</fameDaily>
+    <infamyDaily>-0.4</infamyDaily>
+    <raidRepelled>3</raidRepelled>
+    <raidMinPawns>3</raidMinPawns>
+    <armyWin>5</armyWin>
+    <armyLoss>-6</armyLoss>
+    <borderWin>6</borderWin>
+    <borderLoss>-8</borderLoss>
+    <leaderDied>-20</leaderDied>
+    <leaderChanged>-5</leaderChanged>
+    <crowned>5</crowned>
+    <revoltWon>12</revoltWon>
+    <revoltLost>-15</revoltLost>
+    <guiltyRevoltLost>8</guiltyRevoltLost>
+    <councilExecuted>-10</councilExecuted>
+    <bloodCourtExecuted>6</bloodCourtExecuted>
+    <unrestBelow>30</unrestBelow>
+    <frozenBelow>10</frozenBelow>
+    <highAbove>70</highAbove>
+    <unrestMtbDays>8</unrestMtbDays>
+    <unrestCooldownDays>10</unrestCooldownDays>
+    <unrestPointsFactor>0.6</unrestPointsFactor>
+    <highEffects>
+      <li><channel>tribute</channel><amount>0.10</amount></li>
+      <li><channel>frontier</channel><amount>0.10</amount></li>
+    </highEffects>
+    <lowEffects>
+      <li><channel>tribute</channel><amount>-0.20</amount></li>
+    </lowEffects>
+    <crownDays>10</crownDays>
+    <successionPointsFactor>1</successionPointsFactor>
+    <revoltDelayMinDays>1</revoltDelayMinDays>
+    <revoltDelayMaxDays>2</revoltDelayMaxDays>
+    <coroGoodwill>5</coroGoodwill>
+    <coroMinQuality>Excellent</coroMinQuality>
+    <heliceCeremony>-0.20</heliceCeremony>
+    <heliceDays>60</heliceDays>
+    <heliceGoodwill>5</heliceGoodwill>
+    <forjaSteel>80</forjaSteel>
+    <forjaGoodwill>10</forjaGoodwill>
+    <forjaRefuse>-5</forjaRefuse>
+    <forjaLegitimacy>5</forjaLegitimacy>
+    <silencioLegitimacy>3</silencioLegitimacy>
+    <sindicatoDiscount>0.25</sindicatoDiscount>
+    <mercFaction>EQ_Faction_SindicatoContratos</mercFaction>
+    <mercPointsFactor>0.5</mercPointsFactor>
+    <mercSilverPerPoint>1</mercSilverPerPoint>
+    <mercFleeChance>0.15</mercFleeChance>
+  </EcosDaQueda.LegitimacyDef>
+
+  <!-- Mercenários: o Sindicato do Saque é inimigo permanente, mas a Seção de Contratos dele (oculta, neutra) trabalha para quem paga.
+       Atacar os contratados estraga a relação com a seção e fecha o contrato. -->
+  <FactionDef ParentName="FactionBase">
+    <defName>EQ_Faction_SindicatoContratos</defName>
+    <label>Sindicato do Saque, Seção de Contratos</label>
+    <description>O braço do Sindicato do Saque que atende pessoa jurídica. Nas terças a categoria assalta a sua colônia; nas quintas, a Seção de Contratos defende o seu trono, com nota fiscal. Ninguém no Sindicato vê contradição nisso: são departamentos diferentes.</description>
+    <pawnSingular>filiado contratado</pawnSingular>
+    <pawnsPlural>filiados contratados</pawnsPlural>
+    <fixedName>Sindicato do Saque, Seção de Contratos</fixedName>
+    <leaderTitle>gerente de contratos</leaderTitle>
+    <categoryTag>EQ_SindicatoContratos</categoryTag>
+    <requiredCountAtGameStart>1</requiredCountAtGameStart>
+    <maxConfigurableAtWorldCreation>1</maxConfigurableAtWorldCreation>
+    <displayInFactionSelection>false</displayInFactionSelection>
+    <canGenerateQuestSites>false</canGenerateQuestSites>
+    <hidden>true</hidden>
+    <autoFlee>true</autoFlee>
+    <canStageAttacks>false</canStageAttacks>
+    <humanlikeFaction>true</humanlikeFaction>
+    <techLevel>Industrial</techLevel>
+    <basicMemberKind>EQ_Sindicato_Filiado</basicMemberKind>
+    <fixedIdeo>true</fixedIdeo>
+    <ideoName>Convenção Coletiva</ideoName>
+    <ideoDescription>A crença de que todo trabalho merece pagamento, inclusive o de não assaltar quem pagou.</ideoDescription>
+    <hiddenIdeo>true</hiddenIdeo>
+    <factionIconPath>World/WorldObjects/Expanding/PirateOutpost</factionIconPath>
+    <colorSpectrum>
+      <li>(0.85, 0.55, 0.15)</li>
+    </colorSpectrum>
+    <xenotypeSet>
+      <xenotypeChances>
+        <EQ_Xeno_Vagante>0.65</EQ_Xeno_Vagante>
+        <EQ_Xeno_VaganteEsqueletico>0.35</EQ_Xeno_VaganteEsqueletico>
+      </xenotypeChances>
+    </xenotypeSet>
+    <backstoryFilters>
+      <li>
+        <categories>
+          <li>Pirate</li>
+        </categories>
+        <commonality>0.7</commonality>
+      </li>
+      <li>
+        <categories>
+          <li>Outlander</li>
+        </categories>
+        <commonality>0.3</commonality>
+      </li>
+    </backstoryFilters>
+    <raidCommonalityFromPointsCurve>
+      <points>
+        <li>(0, 0)</li>
+      </points>
+    </raidCommonalityFromPointsCurve>
+    <maxPawnCostPerTotalPointsCurve>
+      <points>
+        <li>(0, 50)</li>
+        <li>(400, 100)</li>
+        <li>(2000, 200)</li>
+        <li>(10000, 10000)</li>
+      </points>
+    </maxPawnCostPerTotalPointsCurve>
+    <pawnGroupMakers>
+      <li>
+        <kindDef>Combat</kindDef>
+        <commonality>100</commonality>
+        <options>
+          <EQ_Sindicato_Filiado>10</EQ_Sindicato_Filiado>
+          <EQ_Sindicato_Piqueteiro>5</EQ_Sindicato_Piqueteiro>
+          <EQ_Sindicato_Cobrador>8</EQ_Sindicato_Cobrador>
+          <EQ_Sindicato_Delegado>3</EQ_Sindicato_Delegado>
+        </options>
+      </li>
+    </pawnGroupMakers>
+  </FactionDef>
+
+  <LetterDef ParentName="CustomChoiceLetterBase">
+    <defName>EQ_UnrestLetter</defName>
+    <letterClass>EcosDaQueda.ChoiceLetter_EQUnrest</letterClass>
+    <color>(0.8, 0.35, 0.35)</color>
+    <flashColor>(0.9, 0.4, 0.4)</flashColor>
+  </LetterDef>
+
+  <LetterDef ParentName="CustomChoiceLetterBase">
+    <defName>EQ_ReactionLetter</defName>
+    <letterClass>EcosDaQueda.ChoiceLetter_EQReaction</letterClass>
+    <color>(0.55, 0.65, 0.8)</color>
+    <flashColor>(0.6, 0.7, 0.9)</flashColor>
+  </LetterDef>
+</Defs>

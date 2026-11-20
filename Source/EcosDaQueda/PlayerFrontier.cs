@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -251,7 +251,7 @@ namespace EcosDaQueda
                 float daysPerTile = d.daysPerTilePoor + (d.daysPerTileRich - d.daysPerTilePoor) * t;
                 float g = c.growth[s.ID];
                 if (d.startRadius + g >= Cap(s, w) + 1f) continue;
-                c.growth[s.ID] = g + days * EQCouncil.FrontierSpeedFactor / Math.Max(0.1f, daysPerTile);
+                c.growth[s.ID] = g + days * EQCouncil.FrontierSpeedFactor * EQLegitimacy.FrontierFactor / Math.Max(0.1f, daysPerTile);
             }
             TrySuggestColony(c, d);
         }
@@ -451,6 +451,8 @@ namespace EcosDaQueda
         public static float SetupDays => (PlayerFrontierDef.Active?.markerSetupDays ?? 2f) * EQCouncil.Factor("markerSetup");
 
         public static int CountOn(Map map, ThingDef def) => map == null ? 0 : map.listerThings.ThingsOfDef(def).Where(t => !t.IsForbidden(Faction.OfPlayer)).Sum(t => t.stackCount);
+
+        public static void TakeFrom(Map map, ThingDef def, int amount) => Take(map, def, amount);
 
         private static void Take(Map map, ThingDef def, int amount)
         {

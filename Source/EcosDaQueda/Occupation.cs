@@ -136,6 +136,8 @@ namespace EcosDaQueda
                 p.Destroy();
                 parts.Add("posto de " + lose.Name + " retomado");
             }
+            if (win.IsPlayer) EQLegitimacy.Event(LegitimacyDef.Active?.borderWin ?? 0f, "frente de fronteira vencida contra " + lose.Name);
+            else if (lose.IsPlayer) EQLegitimacy.Event(LegitimacyDef.Active?.borderLoss ?? 0f, "frente de fronteira perdida para " + win.Name);
             PlanetTile tile = FindTile(front, lose);
             if (!tile.Valid) { parts.Add("sem tile para o posto"); return LastReport = string.Join("; ", parts); }
             float pr = Math.Max(d.minProsperity, Math.Max(ProsperityOf(win, tile), ProsperityOf(lose, tile)) * d.strengthFactor);

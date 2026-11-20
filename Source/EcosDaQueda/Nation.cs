@@ -174,6 +174,9 @@ namespace EcosDaQueda
         public bool faithPending;
         /// <summary>N2c (Pacifista): já tentou negociar nesta proclamação.</summary>
         public bool negotiated;
+        /// <summary>N3: mercenários do Sindicato.</summary>
+        public bool mercsHired;
+        public List<Pawn> mercs = new List<Pawn>();
 
         public WorldComponent_EQNation(World world) : base(world) { }
 
@@ -214,10 +217,14 @@ namespace EcosDaQueda
             Scribe_Values.Look(ref lastOutcome, "lastOutcome");
             Scribe_Values.Look(ref faithPending, "faithPending");
             Scribe_Values.Look(ref negotiated, "negotiated");
+            Scribe_Values.Look(ref mercsHired, "mercsHired");
+            Scribe_Collections.Look(ref mercs, "mercs", LookMode.Reference);
             if (Scribe.mode == LoadSaveMode.PostLoadInit)
             {
                 if (revolters == null) revolters = new List<Pawn>();
                 revolters.RemoveAll(p => p == null);
+                if (mercs == null) mercs = new List<Pawn>();
+                mercs.RemoveAll(p => p == null);
             }
         }
 
@@ -237,6 +244,8 @@ namespace EcosDaQueda
             stage = NationStage.Proclaimed;
             bribed = false;
             negotiated = false;
+            mercsHired = false;
+            mercs.Clear();
             throneTicks = 0;
             revolters.Clear();
             points = EQNation.RevoltPoints(map, failures);
@@ -307,7 +316,14 @@ namespace EcosDaQueda
             return null;
         }
 
-        private static void TakeSilver(Map m, int amount)
+        /// <summary>N3: mercenários do Sindicato contratados nesta proclamação.</summary>
+        public string HireMercs()
+        {
+            if (stage != NationStage.Proclaimed) return "Não há revolta marcada.";
+            return EQMercs.Hire(map ?? Find.AnyPlayerHomeMap, points, ref mercsHired);
+        }
+
+        public static void TakeSilver(Map m, int amount)
         {
             foreach (Thing t in m.listerThings.ThingsOfDef(ThingDefOf.Silver).Where(t => !t.IsForbidden(Faction.OfPlayer)).ToList())
             {
@@ -352,6 +368,22 @@ namespace EcosDaQueda
                 return;
             }
             map = m;
+            revolters = SpawnRevolt(m, f, points, "Revolta: os povos da região",
+                "Os vizinhos chegaram para desfazer a proclamação de " + (leader?.LabelShort ?? "seu líder")
+                + ". O síndico traz o abaixo-assinado; o resto traz o resto.\n\nVença a revolta para fundar a nação.");
+            stage = NationStage.Revolt;
+            revoltStartTick = Find.TickManager.TicksGame;
+            throneTicks = 0;
+            if (mercsHired) mercs = EQMercs.Arrive(m, points);
+            EQNation.LastReport = "revolta com " + revolters.Count + " pessoas (" + points.ToString("0") + " pontos): "
+                                  + string.Join(",", revolters.GroupBy(p => p.kindDef.defName).Select(g => g.Key + "x" + g.Count()))
+                                  + (mercsHired ? "; mercenários: " + EQMercs.LastArrival : "");
+            if (revolters.Count == 0) Victory();
+        }
+
+        /// <summary>Gera a revolta dos Povos da Região (raid, ou plano B na borda). Usada também pelas revoltas menores (N3).</summary>
+        public static List<Pawn> SpawnRevolt(Map m, Faction f, float points, string label, string text)
+        {
             var before = new HashSet<Pawn>(m.mapPawns.SpawnedPawnsInFaction(f));
             var parms = new IncidentParms
             {
@@ -361,16 +393,15 @@ namespace EcosDaQueda
                 forced = true,
                 raidStrategy = RaidStrategyDefOf.ImmediateAttack,
                 raidArrivalMode = PawnsArrivalModeDefOf.EdgeWalkIn,
-                customLetterLabel = "Revolta: os povos da região",
-                customLetterText = "Os vizinhos chegaram para desfazer a proclamação de " + (leader?.LabelShort ?? "seu líder")
-                                   + ". O síndico traz o abaixo-assinado; o resto traz o resto.\n\nVença a revolta para fundar a nação.",
+                customLetterLabel = label,
+                customLetterText = text,
                 customLetterDef = LetterDefOf.ThreatBig,
             };
             bool ok = false;
             try { ok = IncidentDefOf.RaidEnemy.Worker.TryExecute(parms); }
             catch (Exception ex) { Log.Warning("[Ecos da Queda] Raid da revolta falhou: " + ex.Message); }
-            revolters = m.mapPawns.SpawnedPawnsInFaction(f).Where(p => !before.Contains(p)).ToList();
-            if (!ok || revolters.Count == 0)
+            List<Pawn> got = m.mapPawns.SpawnedPawnsInFaction(f).Where(p => !before.Contains(p)).ToList();
+            if (!ok || got.Count == 0)
             {
                 // Plano B: gera e põe na borda.
                 var gp = new PawnGroupMakerParms { groupKind = PawnGroupKindDefOf.Combat, faction = f, points = points, tile = m.Tile };
@@ -379,16 +410,11 @@ namespace EcosDaQueda
                 {
                     foreach (Pawn p in pawns) GenSpawn.Spawn(p, CellFinder.RandomClosewalkCellNear(entry, m, 6), m);
                     LordMaker.MakeNewLord(f, new LordJob_AssaultColony(f, canKidnap: true, canTimeoutOrFlee: true), m, pawns);
-                    Find.LetterStack.ReceiveLetter(parms.customLetterLabel, parms.customLetterText, LetterDefOf.ThreatBig, new LookTargets(pawns));
-                    revolters = pawns;
+                    Find.LetterStack.ReceiveLetter(label, text, LetterDefOf.ThreatBig, new LookTargets(pawns));
+                    got = pawns;
                 }
             }
-            stage = NationStage.Revolt;
-            revoltStartTick = Find.TickManager.TicksGame;
-            throneTicks = 0;
-            EQNation.LastReport = "revolta com " + revolters.Count + " pessoas (" + points.ToString("0") + " pontos): "
-                                  + string.Join(",", revolters.GroupBy(p => p.kindDef.defName).Select(g => g.Key + "x" + g.Count()));
-            if (revolters.Count == 0) Victory();
+            return got;
         }
 
         public static bool OutOfFight(Pawn p, Map m) =>
@@ -421,6 +447,8 @@ namespace EcosDaQueda
                 + "A colônia passa a ter território e fronteira, e as potências aceitam ouvir propostas de vassalagem (aba Reputação).",
                 LetterDefOf.PositiveEvent, leader != null && leader.Spawned ? new LookTargets(leader) : LookTargets.Invalid);
             EQGov.OnFounding(this);
+            EQMercs.Dismiss(mercs, map);
+            WorldComponent_EQLegitimacy.Current?.OnFounding(this);
             EQCouncil.Dirty();
             if (!EQLeader.SuppressDialogs && Find.WindowStack != null)
                 Find.WindowStack.Add(new Dialog_NamePlayerFaction());
@@ -434,6 +462,7 @@ namespace EcosDaQueda
             failures++;
             retryTick = Find.TickManager.TicksGame + (int)(d.retryDays * GenDate.TicksPerDay);
             lastOutcome = "derrota: " + why;
+            EQMercs.Dismiss(mercs, map);
             EQNation.LastReport = "proclamação falhou (" + why + "); nova tentativa em " + d.retryDays.ToString("0") + " dias, revolta +" + (d.failGrowth * 100f).ToString("0") + "%";
             // Quem sobrou volta para casa, contando vantagem.
             Faction f = EQNation.RevoltFaction;
@@ -488,6 +517,7 @@ namespace EcosDaQueda
                 else if (EQPlayerFrontier.SilverOn(c.map ?? Find.AnyPlayerHomeMap) < cost) bribe.Disable("falta prata");
                 bribe.action = () => { c.Bribe(); };
                 yield return bribe;
+                yield return ChoiceLetter_EQUnrest.MercOption(c.points, c.mercsHired, c.map ?? Find.AnyPlayerHomeMap, () => c.HireMercs());
                 if (EQGov.Rule(g => g.negotiateRevolt))
                 {
                     var talk = new DiaOption("Negociar com o síndico (" + (c.NegotiateChance * 100f).ToString("0") + "% pela perícia Social de " + (c.leader?.LabelShort ?? "o líder") + "; se falhar, a revolta vem 30% menor)") { resolveTree = true };
