@@ -464,6 +464,11 @@ namespace EcosDaQueda.DebugTools
                 case "frontier": return EQMundoDebug.Frontier();
                 case "yield": return EQMundoDebug.Yield();
                 case "yieldnow": return EQMundoDebug.YieldNow();
+                case "frontiermark": return EQMundoDebug.FrontierMark();
+                case "frontiermarkage": return EQMundoDebug.FrontierMarkAge(float.Parse(Arg(1), System.Globalization.CultureInfo.InvariantCulture));
+                case "tributenow": return EQMundoDebug.TributeNow();
+                case "playertiles": return EQMundoDebug.PlayerTiles();
+                case "nation": return EQNacaoDebug.Run(a);
                 case "frontierskip": return EQMundoDebug.FrontierSkip(int.Parse(Arg(1)));
                 case "worldfixed": return EQMundoDebug.Fixed();
                 case "worlddump": return EQWorldConverter.Dump(Arg(1));
@@ -514,6 +519,9 @@ namespace EcosDaQueda.DebugTools
                 case "weapontags": return EQDebug.WeaponTags(Arg(1));
                 case "kitcatalog": return KitCatalog.Export(Arg(1));
                 case "pesquisa": return ResearchCatalog.Test();
+                case "agro": return AgroCatalog.Export();
+                case "animais": return AgroCatalog.Animals();
+                case "inicio": return AgroCatalog.Start();
                 case "roster": return KitCatalog.Roster(Arg(1), Arg(2));
                 case "kittest": return KitCatalog.Test(Arg(1), Arg(2), int.Parse(Arg(3) ?? "12"));
                 case "kit": return EQDebug.Kit(Arg(1), int.Parse(Arg(2) ?? "20"));

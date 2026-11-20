@@ -63,6 +63,44 @@ namespace EcosDaQueda.DebugTools
         /// <summary>F3: entrega um dia de rendimento agora.</summary>
         public static string YieldNow() => "cidades com rendimento=" + EQTerritoryYield.ApplyDaily();
 
+        /// <summary>F4: planta um marco de fronteira (de graça) no tile válido mais longe da primeira colônia.</summary>
+        public static string FrontierMark()
+        {
+            Settlement col = EQPlayerFrontier.Colonies().FirstOrDefault();
+            if (col == null) return "sem colônia";
+            var tile = EQPlayerFrontier.AutoMarkerTile(col);
+            if (!tile.Valid) return "sem tile válido; motivo no tile vizinho: " + EQPlayerFrontier.CanPlaceMarker(col, tile, true);
+            var m = EQPlayerFrontier.PlaceMarker(col, tile, true);
+            return "marco no tile " + tile.tileId + " a " + Find.WorldGrid.ApproxDistanceInTiles(col.Tile, tile).ToString("0.0") + " de " + col.Name
+                   + "; outro igual agora: " + (EQPlayerFrontier.CanPlaceMarker(col, tile, true) ?? "pode");
+        }
+
+        /// <summary>F4: envelhece os marcos n dias (demarcação e crescimento do raio).</summary>
+        public static string FrontierMarkAge(float days)
+        {
+            int n = 0;
+            foreach (var m in EQPlayerFrontier.Markers()) { m.placedTick -= (int)(days * GenDate.TicksPerDay); n++; }
+            return n + " marcos envelhecidos " + days + " dias";
+        }
+
+        /// <summary>F4: um dia de rendimento do jogador e entrega do tributo na hora.</summary>
+        public static string TributeNow()
+        {
+            var c = WorldComponent_EQFrontier.Current;
+            if (c == null) return "sem componente";
+            int n = EQPlayerFrontier.YieldDaily(c, true);
+            return "tributos entregues=" + n + " | " + (EQPlayerFrontier.LastTribute ?? "-");
+        }
+
+        /// <summary>F4: território do jogador (tiles).</summary>
+        public static string PlayerTiles()
+        {
+            var claims = EQTerritory.ClaimsProvider?.Invoke();
+            if (claims == null) return "sem Hegemony";
+            Faction me = EQUtil.Canonical(Faction.OfPlayer);
+            return "tiles do jogador=" + claims.Count(x => EQUtil.Canonical(x.Value) == me);
+        }
+
         /// <summary>F2: avança o crescimento n dias (um passo por dia, com as cidades novas), sem passar o tempo do jogo.</summary>
         public static string FrontierSkip(int days)
         {
@@ -73,6 +111,7 @@ namespace EcosDaQueda.DebugTools
             {
                 c.AdvanceDays(1f);
                 foreach (string k in c.lastNewCity.Keys.ToList()) c.lastNewCity[k] -= GenDate.TicksPerDay;
+                if (c.playerSuggestTick > 0) c.playerSuggestTick -= GenDate.TicksPerDay;
             }
             return "avançou " + days + " dias; assentamentos " + before + " → " + Find.WorldObjects.Settlements.Count;
         }

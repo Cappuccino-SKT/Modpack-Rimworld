@@ -36,6 +36,7 @@ namespace EcosDaQueda.DebugTools
                     P("origTab", EQResearch.OriginalTab.TryGetValue(r, out ResearchTabDef ot) ? ot.defName : ""),
                     PL("prereqs", (r.prerequisites ?? new List<ResearchProjectDef>()).Select(p => p.defName)),
                     PL("hidden", (r.hiddenPrerequisites ?? new List<ResearchProjectDef>()).Select(p => p.defName)),
+                    P("eqHidden", EQHiddenResearch.Hidden.Contains(r) ? 1 : 0),
                     P("bench", r.requiredResearchBuilding?.defName ?? ""),
                     PL("facilities", (r.requiredResearchFacilities ?? new List<ThingDef>()).Select(f => f.defName)),
                     P("techprints", r.techprintCount),
@@ -201,6 +202,26 @@ namespace EcosDaQueda.DebugTools
                 RecipeDef amostra = EQSeedRecipes.Created.FirstOrDefault();
                 if (amostra != null) sb.AppendLine("  ex.: " + amostra.defName + " [" + amostra.label + "] " + amostra.ingredients[0].Summary + " -> "
                     + amostra.products[0].Label + " em " + string.Join(",", amostra.AllRecipeUsers.Select(t => t.defName)));
+            }
+            // pesquisas originais vazias: escondidas e fora dos pré-requisitos de quem continua visível
+            var hid = EQHiddenResearch.Hidden;
+            foreach (ResearchProjectDef h in hid)
+                if (h.UnlockedDefs.Count > 0) { problemas++; sb.AppendLine("  escondida mas libera algo: " + h.defName); }
+            foreach (ResearchProjectDef r in DefDatabase<ResearchProjectDef>.AllDefsListForReading.Where(r => !hid.Contains(r)))
+            {
+                var ruim = (r.prerequisites ?? new List<ResearchProjectDef>()).Concat(r.hiddenPrerequisites ?? new List<ResearchProjectDef>()).Where(hid.Contains).ToList();
+                if (ruim.Count > 0) { problemas++; sb.AppendLine("  " + r.defName + " ainda exige escondida: " + string.Join(",", ruim.Select(x => x.defName))); }
+            }
+            var win = new MainTabWindow_Research();
+            int naTela = win.VisibleResearchProjects.Count(hid.Contains);
+            if (naTela > 0) { problemas++; sb.AppendLine("  escondidas ainda na tela: " + naTela); }
+            sb.AppendLine("  escondidas (" + hid.Count + "): " + string.Join(", ", hid.Select(h => h.defName)));
+            var yart = HarmonyLib.AccessTools.Method(HarmonyLib.AccessTools.TypeByName("YART.Compat.WorldTechLevelCompat"), "ShouldShow");
+            if (yart != null)
+            {
+                int yartMostra = hid.Count(h => (bool)yart.Invoke(null, new object[] { h }));
+                if (yartMostra > 0) problemas++;
+                sb.AppendLine("  YART mostra escondidas: " + yartMostra);
             }
             var proj = new ResearchProjectDef { defName = "EQ_R_TesteMemoria", label = "teste", baseCost = 100, techLevel = TechLevel.Industrial };
             var e = new ResearchEditorExt { unlocks = new List<string> { "Bed", "MealSimple", "Plant_Rice", "WoodPlankFloor", "Anesthetize", "EQ_NaoExiste" } };

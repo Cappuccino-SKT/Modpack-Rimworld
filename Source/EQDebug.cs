@@ -507,6 +507,7 @@ namespace EcosDaQueda.DebugTools
         /// senão o teste seguinte herda referências a facções do jogo anterior.</summary>
         public static void ResetBetweenTests()
         {
+            EQNation.TestAssumeFounded = true; // roteiros antigos: nação fundada; "nation lock" liga a trava do N1
             if (providerOverridden)
             {
                 EQAllegiance.PlayerOverlordProvider = originalProvider;
