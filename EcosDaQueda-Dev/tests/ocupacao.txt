@@ -1,0 +1,38 @@
+# F5 (MUNDO.md › Resultado do F5): exército toma fronteira. Vencer uma frente de fronteira planta um posto de ocupação do
+# vencedor no tile do perdedor perto da frente; o posto é fonte de território do vencedor no Hegemony e cresce em 10 dias.
+# Retomada (o perdedor vence ali perto), frente de verdade (OpenBorderFront + Resolve), posto contra o jogador com o General
+# (canal borderDefense) e sem nação.
+newgame EQ_Scenario_Andarilhos
+timeout 2400
+wait 2d
+frontierskip 30
+wait 6h
+occupation
+occupation auto
+wait 1d
+wait 6h
+occupation
+occupation age 12
+wait 6h
+occupation
+occupation retake
+wait 6h
+occupation
+occupation clear
+occupation front Forja Coro
+wait 1d
+occupation
+occupation clear
+council recruit 2
+council sit general 0
+council skill general 15
+occupation player auto
+wait 1d
+occupation
+occupation clear
+occupation playerwin auto
+wait 1d
+occupation
+nation lock
+wait 3h
+occupation

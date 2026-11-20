@@ -123,6 +123,9 @@ Memes de costume, comida, corpo ou estética. Já mudam o jogo pela ideologia e 
 
 ## 6. Decisões do usuário (2026-11-19)
 
+> **N2b e N2c feitos (2026-11-20):** os 4 grupos em `Defs/World/EQ_Governo.xml` (93 memes); resultado e simplificações em `NACAO.md` › Resultado do N2b e do N2c. Falta só o grupo 5 (supremacias de gênero, se o usuário quiser).
+
+
 1. **Sem limite de cadeiras** vindas de memes; o limite natural é o dos 4 memes da ideologia. Conselho grande não é problema.
 2. **República:** como proposto (pastas Relações, Guerra e Terras; decisões grandes com 2 dos 3).
 3. **Primazia humana:** como proposto (Ministro da Indústria: +10% de velocidade nas bancadas e +25% no tributo de materiais).

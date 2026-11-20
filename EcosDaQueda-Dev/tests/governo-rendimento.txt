@@ -1,0 +1,22 @@
+# N2b/N2c: rendimento do território do jogador no mundo fixo pelos memes (Viajantes: estrada; Primazia da água: rio;
+# Náuticos: costa; Desmatamento: floresta; Escavador: morros, com o Ministro das Minas).
+newgame EQ_Scenario_Andarilhos
+timeout 1500
+wait 2d
+council recruit 2
+council meme clear
+playertiles
+council yield
+council meme add VVE_Travelers
+council yield
+council meme add AM_WaterPrimacy
+council yield
+council meme add VVE_Nauticals
+council yield
+council meme add AM_Deforestation
+council yield
+council meme clear
+council meme add Tunneler
+council role IdeoRole_MiningSpecialist 0
+council skill ministro_minas 15
+council yield

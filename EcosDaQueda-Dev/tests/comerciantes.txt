@@ -1,0 +1,11 @@
+# Caravanas de comércio das facções menores: o grupo Trader precisa de um tipo com trader=true (Colmeia: intermediário;
+# Lodo: feirante) e de animal de carga que ande no bioma (dromedário além do muffalo).
+newgame EQ_Scenario_Andarilhos
+timeout 900
+wait 6h
+tradergroup ColmeiaErguida
+tradergroup ReinoDoLodo
+tradergroup FeiraAndante
+
+tradergroup Coro
+tradergroup Forja

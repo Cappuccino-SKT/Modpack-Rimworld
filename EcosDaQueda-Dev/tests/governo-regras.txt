@@ -1,0 +1,63 @@
+# N2c (nacao/memes.md grupos 3 e 4): marcos (Construtores de cidades, Nômade, Pré-fabricados, Viajantes), veto de invasão
+# (Isolacionista), boa vontade por facção (Fúria da estrada), Pacifista (sem General, revolta negociada), Progressista (pesquisa
+# por cadeira), Sumo sacerdote (teísta) assumido pelo líder (Sacerdócio exaltado), Bacanal (humor do conselho), efeitos da
+# fundação (Inumano, Tecnofobia), Conversão violenta e Supremacista na vitória da revolta.
+newgame EQ_Scenario_Andarilhos
+timeout 2000
+wait 1d
+council recruit 6
+council meme clear
+council leader embaixador
+council sit embaixador 0
+council skill embaixador 15
+council sit general 0
+council skill general 15
+council sit conselheiro 0
+council skill conselheiro 15
+council marker
+council meme add VME_CityBuilders
+council meme add VME_Nomad
+council marker
+council meme add AM_PrefabPreference
+council marker
+council meme add VVE_Travelers
+council marker
+council meme clear
+council meme add VFEA_Isolationist
+council veto
+council meme add VVE_Roadragers
+council goodwill
+council meme clear
+council meme add VME_Progressive
+council meme add VME_Pacifist
+council meme clear
+council meme add Structure_TheistAbstract
+council role IdeoRole_Moralist 0
+council meme add VME_ExaltedPriesthood
+council meme clear
+council meme add VME_Structure_Bacchanalianism
+council mood embaixador 0.9
+council mood conselheiro 0.9
+council mood embaixador 0.2
+council mood conselheiro 0.2
+council meme clear
+council meme add Inhuman
+council meme add VQE_Technophobia
+council founding
+council meme clear
+council meme add VME_Pacifist
+nation lock
+nation throne
+nation proclaim 0
+nation negotiate fail
+nation negotiate
+nation revolt
+council meme add VME_ViolentConversion
+council meme add Supremacist
+nation windown
+council marker
+nation lock
+nation retry
+nation proclaim 0
+nation negotiate ok
+council

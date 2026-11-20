@@ -142,6 +142,15 @@ Riscos: o Worldbuilder é recente e grande (65 MB); pode brigar com mods de mund
 - **Medição** (roteiro `fronteira-jogador.txt`, comandos `playertiles`, `frontiermark`, `frontiermarkage`, `tributenow`): a colônia começa com 2 tiles (antes 8); com o marco ativo, 3; marco crescido, 8; +30 dias, 23. Varia com o tile inicial (outra rodada: 7 → 12 → 19 → 46). Tributo de 5 dias: com ×0,4 e prata ×0,05, 7 tiles davam ~5 batatas e 1 de prata (pouco); com ×0,6 e prata ×0,3, 18 tiles dão 27 batatas, 16 madeiras, 26 blocos, 16 aços e 42 de prata.
 - **Fica para depois:** cidades do jogador sem mapa (tomadas ou vassalas, com estado no Hegemony) seguem a regra do Hegemony; o marco é instantâneo (sem caravana de agrimensores).
 
+### Resultado do F5 (2026-11-20): exército toma fronteira
+
+- **Como funciona** (`Occupation.cs`, `Defs/World/EQ_Ocupacao.xml`, `OccupationDef`): quem vence uma **frente de fronteira** (`EQWarDiplomacy.BorderOutcome`, 10d) planta um **posto de ocupação** (`WorldObject_EQOccupation`) no tile do perdedor mais perto da frente (até 12 tiles; sem tile do perdedor, na própria frente). O posto é uma **fonte de território do vencedor** no Hegemony (mesmo postfix em `TerritorySolver.Sources` do F4, agora para qualquer facção): prosperidade = maior das cidades envolvidas × 2 (mínimo 10 mil), raio 1,5 tile e 2,5 depois de 10 dias.
+- **Achado:** o Hegemony mede distância por **custo de caminho** (bioma, morro), não por tiles; com raio 1,5 "em tiles" o posto só pegava o próprio tile. O raio do posto é multiplicado por `pathCostPerTile` (2). O tile fica com a fonte de maior força (`claim.uncontested` = 0 no Hegemony: sem proteção perto da cidade); empate perto vira tile contestado.
+- **Retomada:** vencer uma frente a até 3 tiles de um posto do perdedor derruba o posto (e planta o do vencedor). Até 4 postos por facção (o mais antigo é abandonado). Posto de facção derrotada some; posto do jogador some se a nação não estiver fundada.
+- **Jogador:** perde terra para postos (carta "Fronteira ocupada") e ganha com os seus. O canal **`borderDefense`** encolhe o raio dos postos contra a nação: General 25% (pela perícia), Baluarte 30% (até 60%).
+- **Medição** (roteiro `ocupacao.txt`, comando `occupation`): no mundo fixo as potências ainda não se encostam com 30 dias de fronteira (a frente fica no meio do caminho entre as cidades). Posto do Coro na terra da Forja: 2 tiles com 1 dia, 15 depois de crescido (a Forja cai de 22 para 11 em volta); posto contra o jogador tira 8–9 tiles; posto do jogador ganha 15.
+- **Fica para depois:** postos não têm guarnição nem podem ser atacados no mapa (só caem por outra frente); a frente de fronteira ainda nasce só entre potências em guerra (10d), então o jogador só perde/ganha terra quando entra numa (ou pelo teste); a ocupação não muda a prosperidade das cidades.
+
 ## 5. Blocos (ordem sugerida)
 
 | Bloco | O que entrega | Depende de |
@@ -154,7 +163,7 @@ Riscos: o Worldbuilder é recente e grande (65 MB); pode brigar com mods de mund
 | ~~**F2**~~ | Fronteira que cresce aos poucos + cidade nova pela distância (NPCs) (**feito 2026-11-19**, com capital) | F1 |
 | ~~**F3**~~ | Bônus por tile (bioma, zona da Queda, marcos) (**feito 2026-11-19**; marcos já eram do Hegemony) | F1 |
 | ~~**F4**~~ | Fronteira do jogador: marcos de fronteira, direção, cidade nova do jogador (**feito 2026-11-19**, com tributo do território) | F2 |
-| **F5** | Exército toma fronteira (frentes de fronteira passam tiles) | F2, 10d |
+| ~~**F5**~~ | Exército toma fronteira (frentes de fronteira passam tiles) (**feito 2026-11-20**: postos de ocupação) | F2, 10d |
 | **F6** | Medição de desempenho em jogo longo no mundo novo (10a) e ajustes | tudo |
 
 ## 6. Proposta de regiões (para o usuário ajustar)

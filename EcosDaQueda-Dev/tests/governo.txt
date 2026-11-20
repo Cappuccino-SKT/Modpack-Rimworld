@@ -1,0 +1,87 @@
+# N2b (NACAO.md › 3.7, nacao/memes.md grupos 1 e 2): governo pela ideologia. Cadeira de função (Primazia humana: Ministro da
+# Indústria) e pilha com o Industrialismo; Mestre de ofícios (qualidade); República (pastas e voto de 2 dos 3); Coletivista
+# (cadeira a mais, ×0,8; sai com a reforma); Individualista (fecha uma fixa, ×1,3); Deus-imperador (líder cobre cadeira vazia);
+# Anciãos (30+ nas fixas); Nacionalista; Autoritarismo (sem espera); Culto à personalidade (humor do líder); Corporativo
+# (nome trocado, prata); Transumanista (pesquisa), Comerciante (comércio), guia moral (Ideológico + Proselitista = 150%) e
+# Sacerdócio exaltado (o líder assume), Aristocrático (fixas exigem título); Escavador; sem nação nada vale.
+newgame EQ_Scenario_Andarilhos
+timeout 1800
+wait 1d
+council recruit 6
+council meme clear
+council leader embaixador
+council sit embaixador 0
+council skill embaixador 15
+council sit general 0
+council skill general 15
+council sit conselheiro 0
+council skill conselheiro 15
+council stats
+council meme add HumanPrimacy
+council role IdeoRole_ProductionSpecialist 0
+council skill ministro_industria 15
+council stats
+council meme add VME_HardcoreIndustrialism
+council meme add VME_CraftCulture
+council stats
+council meme remove VME_CraftCulture
+council meme remove VME_HardcoreIndustrialism
+council meme remove HumanPrimacy
+council meme add VME_Republic
+council role VME_IdeoRole_LeaderSecond 0
+council role VME_IdeoRole_LeaderThird 0
+council mood leader 0.2
+council mood pasta_guerra 0.2
+council vote
+council mood leader 0.8
+council mood pasta_guerra 0.8
+council vote
+council meme remove VME_Republic
+council meme add Collectivist
+council sit representante_povo 0
+council meme remove Collectivist
+council meme add Individualist
+council drop general
+council drop none
+council meme remove Individualist
+council cooldown
+council empty general
+council meme add VME_GodEmperor
+council skill general 15 leader
+council meme remove VME_GodEmperor
+council meme add VME_Elders
+council sit anciaos 1
+council age 1 65
+council sit anciaos 0
+council meme remove VME_Elders
+council meme add Transhumanist
+council role IdeoRole_ResearchSpecialist 0
+council skill ministro_ciencia 15
+council stats
+council meme remove Transhumanist
+council meme add VME_Trader
+council sit ministro_comercio 0
+council skill ministro_comercio 15
+council stats
+council meme remove VME_Trader
+council meme add Structure_Ideological
+council role IdeoRole_Moralist 0
+council meme add Proselytizer
+council meme add VME_ExaltedPriesthood
+council meme clear
+council meme add VME_Aristocratic
+council meme remove VME_Aristocratic
+council meme add VME_Nationalist
+council goodwill
+council meme add VME_Structure_Authoritarianism
+council sit general 0
+council sit general 1
+council meme add VME_Structure_CultOfPersonality
+council mood leader 0.9
+council mood leader 0.2
+council meme add VME_Structure_Corporate
+council meme add Tunneler
+council role IdeoRole_MiningSpecialist 0
+council yield
+nation lock
+council
