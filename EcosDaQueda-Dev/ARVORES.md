@@ -26,7 +26,7 @@ Legenda da tabela:
 | 8 | Cozinha e bebidas | 109 | 38 | Bancada | **feita** (16 pesquisas, 15 absorvidas) |
 | 9 | Vestuário | 108 | 29 | Bancada (Forja 7) | **feita** (7 pesquisas, 5 absorvidas) |
 | 10 | Medicina e farmácia (próteses, implantes, cirurgias, drogas) | 507 | 332 | **Hélice 23**, Bancada 13 | a fazer |
-| 11 | Armas e munição | 1.099 | 380 | Bancada 16, Velho Mundo 8, Silêncio 5, Forja 4 | a fazer |
+| 11 | Armas e munição | 1.099 | 380 | Bancada 16, Velho Mundo 8, Silêncio 5, Forja 4 | **feita** (46 pesquisas, 372 coisas, 20 absorvidas) |
 | 12 | Armaduras | 40 | 3 | Bancada 6, Forja 4 | a fazer |
 | 13 | Defesa (torretas, armadilhas, trincheiras) | 115 | 8 | Bancada 18, **Forja 13**, Velho Mundo 9 | a fazer |
 | 14 | Veículos | 40 | 0 | Bancada 6, **Forja 4** | licença da Forja |
@@ -80,6 +80,7 @@ Comandos usados: `inicio` (roteiro `tests/inicio-pesquisa.txt`, grava `tests/out
    - Cada calibre tem de 3 a 6 tipos (FMJ, AP, HP, incendiária etc.).
    - Proposta: não pôr munição à mão. A munição comum de cada calibre seria liberada junto com a primeira arma que a usa. Os tipos avançados (AP-HE, incendiária, sabot) iriam para uma pesquisa "Munição avançada" por era.
    - Isso dá para gerar automaticamente: o catálogo já sabe as munições de cada arma.
+   - **Decidido (2026-11-20, usuário):** munição comum (FMJ, AP, HP, chumbo, balote…) vem com a primeira arma do calibre, mesmo que uma arma de nível menor libere munição de uma maior; a especial (incendiária, HE dos calibres de fuzil, sabot, flechette, PEM, iônica…) tem pesquisa própria por era. Aplicado na árvore Armas (abaixo).
 2. **Pisos (489, quase todos tapetes e ladrilhos em várias cores).**
    - Proposta: uma pesquisa por material ou estilo, e não por cor. Por exemplo: madeira, pedra polida, tapete, tapete fino, metal e estéril.
 3. **Cirurgias (367, 330 sem pesquisa).**
@@ -163,6 +164,17 @@ Para cada árvore: as pesquisas originais que ela absorve (projetos cuja maior p
 **11. Armas e munição (1.099).**
 - Conteúdo: CE + Armory + Guns, VWE (+ Frontier, Laser, Coilguns, Makeshift, Bioferrite) e Medieval 2.
 - Absorve: Armas de fogo, Contragolpe, Operação a gás, Precisão, Morteiros, Lança-granadas, Armas pesadas, Pólvora, Munição avançada, Optoeletrônica, Arcos, Lâminas longas, Mecha de fogo, Feixe, Laser e Munição de carga.
+- **Feita em 2026-11-20** (`kits/pesquisa/Armas.json`, "do cano de encanamento ao laser do Império"), pela regra do usuário: as armas de **sucata** são as primeiras armas de fogo, **sem pré-requisito**, e cada era se divide em 4 passos por evolução (I pistolas → II armas leves: submetralhadoras, escopetas, carabinas → III fuzis → IV apoio: metralhadoras); a era seguinte só abre depois do IV da anterior. A escolha de que arma vai em cada nível ficou comigo (critério: mecanismo e época da arma, que é a ordem das pesquisas originais):
+  - **Sucata** (Bancada, Medieval, 300–700): pistola, submetralhadora + escopeta, fuzil, metralhadora leve improvisados (VWE Makeshift). O I traz também a **bancada de recarga** (`AmmoBench`, que estava com Armas de fogo).
+  - **Armaria** (Bancada, ação manual, 600–1.200; pede Usinagem): revólveres e pistolas antigas → escopetas e carabinas de alavanca → fuzis de ferrolho → primeiras metralhadoras (Lewis, Madsen, Boys, binóculo-rádio).
+  - **Oficina automática** (Bancada, contragolpe e gás, 1.200–1.900): pistolas automáticas → submetralhadoras e escopetas automáticas → fuzis semiautomáticos → metralhadoras de apoio (LMG, BAR, DP-27, PTRS).
+  - **Arsenal do Velho Mundo** (ramo Velho Mundo, 2.000–3.200; pede Microeletrônica): carabinas compactas e PDW → fuzis de assalto → fuzis de batalha e precisão → metralhadoras e antimaterial (inclui a giratória).
+  - **Armas de carga** (ramo Forja, Spacer, 3.200–4.500; pede Fabricação): pistolas de carga e gauss → escopetas/submetralhadoras de carga → fuzis de carga (e a LAS-40C) → blasters, lança gauss e feixe de graser.
+  - **Laser recuperado** (ramo Forja, Ultra, 5.000–7.000): pistolas → escopeta → fuzis → repetidora.
+  - **Munição especial I a V**, uma por era (a I pede a lavoura "Outros I: Tinta e chama", por causa do prometeu; cada uma pede a anterior). A III absorve a Munição avançada do CE.
+  - Linhas laterais: **Pólvora negra** (Bancada, pede Metalurgia: pederneira → bacamarte/arcabuz/canhão de mão → mosquetes → fuzil de muralha e morteiro de mão); **Explosivos** (granadas e pistola sinalizadora depois de Sucata III; lança-granadas e lança-chamas, foguetes e lançadores avançados no ramo Velho Mundo; munição especial de explosivos); **Arcos** (recurvo, arcos de guerra, bestas, composto; flechas especiais de fogo e veneno); **Corpo a corpo** (ferro, lâminas longas e haste, trincheira).
+  - Gerado por script (no rascunho da sessão; refazer à mão pelo editor `/pesquisa`). Teste `arvore-pesquisa`: coerência planta × produto 0, absorvidas 107 (20 desta árvore), `pesquisa` e `inicio-pesquisa` sem erros.
+  - **Ficaram de fora (a fazer):** munição de calibres sem arma no modpack (UNSC, Lebel, Arisaka etc.: continuam livres, mas a especial delas foi junto com a Munição avançada absorvida) e a munição de torretas, morteiros e artilharia (árvore **Defesa**); armas bioférricas (Silêncio, árvore Vazio), cajado de eltex (Psíquica), faca de caixão de guerra (Armaduras), granadas PEM/tóxica/de espuma (ficam nas pesquisas delas), estandarte heráldico e bisturi. Fundamentos continua com faca, porrete, arco curto e arremessáveis.
 
 **12. Armaduras (40).**
 - Conteúdo: armaduras CE e Royalty, colete de carga e escudos.

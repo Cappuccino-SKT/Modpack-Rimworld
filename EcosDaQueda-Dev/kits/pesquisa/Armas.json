@@ -1,0 +1,1482 @@
+{
+ "id": "Armas",
+ "label": "Armas e munição",
+ "active": true,
+ "ownTab": true,
+ "replace": true,
+ "branch": "EQ_Ramo_Bancada",
+ "desc": "Do cano de encanamento ao laser do Império. Armas de fogo por era (Sucata, Armaria, Oficina automática, Arsenal do Velho Mundo, Armas de carga, Laser recuperado), cada era em quatro passos: pistolas, armas leves, fuzis e apoio. A munição comum vem com a primeira arma do calibre; a especial tem pesquisa própria por era. Linhas laterais: Pólvora negra, Explosivos, Arcos e Corpo a corpo.",
+ "nodes": [
+  {
+   "id": "ref_Oficio_Metalurgia",
+   "ref": "EQ_R_Producao_Oficio_Metalurgia",
+   "x": -2.5,
+   "y": 12.0
+  },
+  {
+   "id": "ref_Fabrica_Usinagem",
+   "ref": "EQ_R_Producao_Fabrica_Usinagem",
+   "x": 5.0,
+   "y": 2.5
+  },
+  {
+   "id": "ref_Lab_Micro",
+   "ref": "EQ_R_Producao_Lab_Micro",
+   "x": 20.0,
+   "y": 5.5
+  },
+  {
+   "id": "ref_Comp_Fabricacao",
+   "ref": "EQ_R_Producao_Comp_Fabricacao",
+   "x": 27.5,
+   "y": 7.0
+  },
+  {
+   "id": "ref_Lav_Outros_1",
+   "ref": "EQ_R_Fazenda_Lav_Outros_1",
+   "x": 5.0,
+   "y": -1.5
+  },
+  {
+   "id": "ref_Lav_Medicamento_2",
+   "ref": "EQ_R_Fazenda_Lav_Medicamento_2",
+   "x": 5.0,
+   "y": 15.5
+  },
+  {
+   "id": "Suc_1",
+   "idAuto": false,
+   "label": "Sucata I: Pistola de cano",
+   "desc": "Pistola improvisada (9×19 mm) e a bancada de recarga, com a munição comum. Cano de encanamento, mola de colchão e fé. É a primeira arma de fogo que qualquer um consegue montar depois da Queda, e o Sindicato do Saque jura que a patente é dele.",
+   "cost": 300,
+   "tech": "Medieval",
+   "x": 0.0,
+   "y": 0,
+   "prereqs": [],
+   "unlocks": [
+    "VWE_Gun_MakeshiftPistol",
+    "AmmoBench",
+    "Ammo_9x19mmPara_AP",
+    "Ammo_9x19mmPara_FMJ",
+    "Ammo_9x19mmPara_HP"
+   ],
+   "absorbs": [
+    "VWE_MakeshiftWeapons"
+   ],
+   "branch": "",
+   "bench": "",
+   "facilities": [],
+   "techprints": 0,
+   "techprintTags": [],
+   "notes": "Armas e munição > Suc_1"
+  },
+  {
+   "id": "Suc_2",
+   "idAuto": false,
+   "label": "Sucata II: Submetralhadora e escopeta de lata",
+   "desc": "Submetralhadora improvisada e escopeta improvisada (calibre 12, com chumbo, balote e bala de borracha). Disparam quando querem, mas quase sempre para a frente.",
+   "cost": 400,
+   "tech": "Medieval",
+   "x": 2.5,
+   "y": 0,
+   "prereqs": [
+    "Suc_1"
+   ],
+   "unlocks": [
+    "VWE_Gun_MakeshiftSMG",
+    "VWE_Gun_MakeshiftShotgun",
+    "Ammo_12Gauge_Beanbag",
+    "Ammo_12Gauge_Buck",
+    "Ammo_12Gauge_Slug"
+   ],
+   "absorbs": [],
+   "branch": "",
+   "bench": "",
+   "facilities": [],
+   "techprints": 0,
+   "techprintTags": [],
+   "notes": "Armas e munição > Suc_2"
+  },
+  {
+   "id": "Suc_3",
+   "idAuto": false,
+   "label": "Sucata III: Fuzil de sucata",
+   "desc": "Fuzil improvisado (7,62×39 mm). Montado com três fuzis do Velho Mundo que não funcionavam; agora é um que funciona mais ou menos.",
+   "cost": 500,
+   "tech": "Medieval",
+   "x": 5.0,
+   "y": 0,
+   "prereqs": [
+    "Suc_2"
+   ],
+   "unlocks": [
+    "VWE_Gun_MakeshiftRifle",
+    "Ammo_762x39mmSoviet_AP",
+    "Ammo_762x39mmSoviet_FMJ",
+    "Ammo_762x39mmSoviet_HP"
+   ],
+   "absorbs": [],
+   "branch": "",
+   "bench": "",
+   "facilities": [],
+   "techprints": 0,
+   "techprintTags": [],
+   "notes": "Armas e munição > Suc_3"
+  },
+  {
+   "id": "Suc_4",
+   "idAuto": false,
+   "label": "Sucata IV: Metralhadora de ferro-velho",
+   "desc": "Metralhadora leve improvisada (7,62×54 mmR). Quando ela canta, o piquete do Sindicato vira barricada e a negociação salarial termina.",
+   "cost": 700,
+   "tech": "Medieval",
+   "x": 7.5,
+   "y": 0,
+   "prereqs": [
+    "Suc_3"
+   ],
+   "unlocks": [
+    "VWE_Gun_MakeshiftLMG",
+    "Ammo_762x54mmR_AP",
+    "Ammo_762x54mmR_FMJ",
+    "Ammo_762x54mmR_HP"
+   ],
+   "absorbs": [],
+   "branch": "",
+   "bench": "",
+   "facilities": [],
+   "techprints": 0,
+   "techprintTags": [],
+   "notes": "Armas e munição > Suc_4"
+  },
+  {
+   "id": "Suc_Esp",
+   "idAuto": false,
+   "label": "Munição especial I: Recarga suja",
+   "desc": "Munição incendiária, explosiva e perfurante (sabot) dos calibres de sucata. Pólvora de adubo e ponta de prego; o Reino do Lodo chama isso de \"tempero\".",
+   "cost": 600,
+   "tech": "Medieval",
+   "x": 7.5,
+   "y": -0.75,
+   "prereqs": [
+    "Suc_4",
+    "ref_Lav_Outros_1"
+   ],
+   "unlocks": [
+    "Ammo_12Gauge_ElectroSlug",
+    "Ammo_762x39mmSoviet_HE",
+    "Ammo_762x39mmSoviet_Incendiary",
+    "Ammo_762x39mmSoviet_Sabot",
+    "Ammo_762x54mmR_HE",
+    "Ammo_762x54mmR_Incendiary",
+    "Ammo_762x54mmR_Sabot"
+   ],
+   "absorbs": [],
+   "branch": "",
+   "bench": "",
+   "facilities": [],
+   "techprints": 0,
+   "techprintTags": [],
+   "notes": "Armas e munição > Suc_Esp"
+  },
+  {
+   "id": "Arm_1",
+   "idAuto": false,
+   "label": "Armaria I: Revólveres e pistolas antigas",
+   "desc": "Revólver, revólver pesado, revólveres da fronteira, pistola Volcanic, pistola da fronteira (Mauser), S&W Governor, Taurus Judge, com a munição comum de cada calibre. Os manuais do Velho Mundo chamavam isso de \"arma de colecionador\". Aqui chamam de \"arma\".",
+   "cost": 600,
+   "tech": "Industrial",
+   "x": 7.5,
+   "y": 1.5,
+   "prereqs": [
+    "Suc_4",
+    "ref_Fabrica_Usinagem"
+   ],
+   "unlocks": [
+    "Gun_Revolver",
+    "VWE_Gun_HandCannon",
+    "VWEFT_Gun_HeavyRevolver",
+    "VWEFT_Gun_FrontierPistol",
+    "VWEFT_Gun_VolcanicPistol",
+    "CE_Gun_SWGovernor",
+    "CE_Gun_TaurusJudge",
+    "Ammo_44Magnum_AP",
+    "Ammo_44Magnum_FMJ",
+    "Ammo_44Magnum_HP",
+    "Ammo_357Magnum_AP",
+    "Ammo_357Magnum_FMJ",
+    "Ammo_357Magnum_HP",
+    "Ammo_763x25mmMauser_AP",
+    "Ammo_763x25mmMauser_FMJ",
+    "Ammo_763x25mmMauser_HP",
+    "Ammo_25ACP_AP",
+    "Ammo_25ACP_FMJ",
+    "Ammo_25ACP_HP",
+    "Ammo_45ACP_AP",
+    "Ammo_45ACP_FMJ",
+    "Ammo_45ACP_HP",
+    "Ammo_410Bore_Beanbag",
+    "Ammo_410Bore_Buck",
+    "Ammo_410Bore_Slug",
+    "Ammo_45Colt_AP",
+    "Ammo_45Colt_FMJ",
+    "Ammo_45Colt_HP"
+   ],
+   "absorbs": [
+    "Gunsmithing"
+   ],
+   "branch": "",
+   "bench": "",
+   "facilities": [],
+   "techprints": 0,
+   "techprintTags": [],
+   "notes": "Armas e munição > Arm_1"
+  },
+  {
+   "id": "Arm_2",
+   "idAuto": false,
+   "label": "Armaria II: Escopetas e carabinas de alavanca",
+   "desc": "Escopeta de bomba, escopetas de cano serrado, escopeta de repetição, KS-23 e as carabinas de alavanca (Winchester 94 e 1886, Henry Side Gate, Henry Big Boy, fuzil de alavanca). A arma da fronteira volta porque a fronteira voltou.",
+   "cost": 800,
+   "tech": "Industrial",
+   "x": 10.0,
+   "y": 1.5,
+   "prereqs": [
+    "Arm_1"
+   ],
+   "unlocks": [
+    "Gun_PumpShotgun",
+    "CE_Gun_SawedOff",
+    "VWE_SawedOffShotgun",
+    "VWEFT_Gun_RepeatingShotgun",
+    "CE_Gun_KSTwentyThree",
+    "CE_Gun_WinchesterNintyFour",
+    "CE_Gun_WinchesterEightySix",
+    "CE_Gun_HenrySideGate",
+    "CE_Gun_BigBoy",
+    "VWE_Gun_LeverActionRifle",
+    "Ammo_23x75mmR_Beanbag",
+    "Ammo_23x75mmR_Buck",
+    "Ammo_23x75mmR_Slug",
+    "Ammo_4570Gov_AP",
+    "Ammo_4570Gov_FMJ",
+    "Ammo_4570Gov_HP",
+    "Ammo_3030Winchester_AP",
+    "Ammo_3030Winchester_FMJ",
+    "Ammo_3030Winchester_HP"
+   ],
+   "absorbs": [
+    "VWEFT_FrontierWeapons"
+   ],
+   "branch": "",
+   "bench": "",
+   "facilities": [],
+   "techprints": 0,
+   "techprintTags": [],
+   "notes": "Armas e munição > Arm_2"
+  },
+  {
+   "id": "Arm_3",
+   "idAuto": false,
+   "label": "Armaria III: Fuzis de ferrolho",
+   "desc": "Espingarda de repetição, Mosin-Nagant, M1917 Enfield, M1903 Springfield, fuzil Rolling Block e o MosqueFAL. Um tiro, um ferrolho, um morto: a matemática preferida dos caçadores de cabeça.",
+   "cost": 1000,
+   "tech": "Industrial",
+   "x": 12.5,
+   "y": 1.5,
+   "prereqs": [
+    "Arm_2"
+   ],
+   "unlocks": [
+    "Gun_BoltActionRifle",
+    "CE_Gun_MosinNagant",
+    "CE_Gun_M1917Enfield",
+    "CE_Gun_M1903Springfield",
+    "VWEFT_Gun_RollingBlockRifle",
+    "CE_Gun_MosqueFAL",
+    "Ammo_303British_AP",
+    "Ammo_303British_FMJ",
+    "Ammo_303British_HP",
+    "Ammo_3006Springfield_AP",
+    "Ammo_3006Springfield_FMJ",
+    "Ammo_3006Springfield_HP",
+    "Ammo_762x51mmNATO_AP",
+    "Ammo_762x51mmNATO_FMJ",
+    "Ammo_762x51mmNATO_HP"
+   ],
+   "absorbs": [],
+   "branch": "",
+   "bench": "",
+   "facilities": [],
+   "techprints": 0,
+   "techprintTags": [],
+   "notes": "Armas e munição > Arm_3"
+  },
+  {
+   "id": "Arm_4",
+   "idAuto": false,
+   "label": "Armaria IV: Primeiras metralhadoras",
+   "desc": "Metralhadora Lewis, metralhadora Madsen, fuzil antitanque Boys e o binóculo com rádio para guiar a artilharia. O tipo de arma que ganhou guerras antes da guerra que perdeu o mundo.",
+   "cost": 1200,
+   "tech": "Industrial",
+   "x": 15.0,
+   "y": 1.5,
+   "prereqs": [
+    "Arm_3"
+   ],
+   "unlocks": [
+    "CE_Gun_Lewis",
+    "CE_Gun_MadsenLMG",
+    "CE_Gun_BoysRifle",
+    "Gun_BinocularsRadio",
+    "Ammo_50BMG_AP",
+    "Ammo_50BMG_FMJ"
+   ],
+   "absorbs": [],
+   "branch": "",
+   "bench": "",
+   "facilities": [],
+   "techprints": 0,
+   "techprintTags": [],
+   "notes": "Armas e munição > Arm_4"
+  },
+  {
+   "id": "Arm_Esp",
+   "idAuto": false,
+   "label": "Munição especial II: Cartucho de armeiro",
+   "desc": "Munição incendiária, explosiva, sabot e flechette dos calibres da Armaria. O armeiro cobra por cartucho e jura que cada um foi carregado à mão; alguns foram.",
+   "cost": 1000,
+   "tech": "Industrial",
+   "x": 15.0,
+   "y": 0.75,
+   "prereqs": [
+    "Arm_4",
+    "Suc_Esp"
+   ],
+   "unlocks": [
+    "Ammo_410Bore_ElectroSlug",
+    "Ammo_23x75mmR_ElectroSlug",
+    "Ammo_4570Gov_HE",
+    "Ammo_4570Gov_Incendiary",
+    "Ammo_4570Gov_Sabot",
+    "Ammo_3030Winchester_HE",
+    "Ammo_3030Winchester_Incendiary",
+    "Ammo_3030Winchester_Sabot",
+    "Ammo_303British_HE",
+    "Ammo_303British_Incendiary",
+    "Ammo_303British_Sabot",
+    "Ammo_3006Springfield_HE",
+    "Ammo_3006Springfield_Incendiary",
+    "Ammo_3006Springfield_Sabot",
+    "Ammo_762x51mmNATO_HE",
+    "Ammo_762x51mmNATO_Incendiary",
+    "Ammo_762x51mmNATO_Sabot",
+    "Ammo_50BMG_HE",
+    "Ammo_50BMG_Incendiary",
+    "Ammo_50BMG_Sabot"
+   ],
+   "absorbs": [],
+   "branch": "",
+   "bench": "",
+   "facilities": [],
+   "techprints": 0,
+   "techprintTags": [],
+   "notes": "Armas e munição > Arm_Esp"
+  },
+  {
+   "id": "Aut_1",
+   "idAuto": false,
+   "label": "Oficina automática I: Pistolas automáticas",
+   "desc": "Pistola automática, Jericho 941, pistola de combate, Five-seveN, KelTec CP33 e Desert Eagle. Contragolpe: a arma se recarrega sozinha. O atirador ainda precisa ser recarregado com comida.",
+   "cost": 1200,
+   "tech": "Industrial",
+   "x": 15.0,
+   "y": 3.0,
+   "prereqs": [
+    "Arm_4"
+   ],
+   "unlocks": [
+    "Gun_Autopistol",
+    "CE_Gun_Jericho",
+    "VWE_CombatHandgun",
+    "CE_Gun_FNFiveSeven",
+    "CE_Gun_KelTecCPThirtyThree",
+    "CE_Gun_Deagke",
+    "Ammo_FN57x28mm_AP",
+    "Ammo_FN57x28mm_FMJ",
+    "Ammo_FN57x28mm_HP",
+    "Ammo_22LR_AP",
+    "Ammo_22LR_FMJ",
+    "Ammo_22LR_HP"
+   ],
+   "absorbs": [
+    "BlowbackOperation"
+   ],
+   "branch": "",
+   "bench": "",
+   "facilities": [],
+   "techprints": 0,
+   "techprintTags": [],
+   "notes": "Armas e munição > Aut_1"
+  },
+  {
+   "id": "Aut_2",
+   "idAuto": false,
+   "label": "Oficina automática II: Submetralhadoras",
+   "desc": "Submetralhadora, submetralhadora pesada, submetralhadora leve, SMG, Uzi, Micro Uzi, American-180, espingarda automática e a escopeta de trincheira. Para quando o problema chega em grupo.",
+   "cost": 1400,
+   "tech": "Industrial",
+   "x": 17.5,
+   "y": 3.0,
+   "prereqs": [
+    "Aut_1"
+   ],
+   "unlocks": [
+    "Gun_MachinePistol",
+    "Gun_HeavySMG",
+    "VWE_Gun_LightSMG",
+    "VWE_Gun_SMG",
+    "CE_Gun_Uzi",
+    "CE_Gun_MicroUzi",
+    "CE_Gun_AmericanOneEighty",
+    "Gun_ChainShotgun",
+    "VWE_TrenchGun"
+   ],
+   "absorbs": [],
+   "branch": "",
+   "bench": "",
+   "facilities": [],
+   "techprints": 0,
+   "techprintTags": [],
+   "notes": "Armas e munição > Aut_2"
+  },
+  {
+   "id": "Aut_3",
+   "idAuto": false,
+   "label": "Oficina automática III: Fuzis semiautomáticos",
+   "desc": "M1 Garand, SKS, fuzil semiautomático e Ruger Mini-14. Operação a gás, o mesmo princípio que o Reino do Lodo usa no chiqueiro.",
+   "cost": 1600,
+   "tech": "Industrial",
+   "x": 20.0,
+   "y": 3.0,
+   "prereqs": [
+    "Aut_2"
+   ],
+   "unlocks": [
+    "CE_Gun_M1Garand",
+    "CE_Gun_SKS",
+    "VWE_Gun_SemiAutomaticRifle",
+    "CE_Gun_MiniFourteen",
+    "Ammo_556x45mmNATO_AP",
+    "Ammo_556x45mmNATO_FMJ",
+    "Ammo_556x45mmNATO_HP"
+   ],
+   "absorbs": [
+    "GasOperation"
+   ],
+   "branch": "",
+   "bench": "",
+   "facilities": [],
+   "techprints": 0,
+   "techprintTags": [],
+   "notes": "Armas e munição > Aut_3"
+  },
+  {
+   "id": "Aut_4",
+   "idAuto": false,
+   "label": "Oficina automática IV: Metralhadoras de apoio",
+   "desc": "Metralhadora leve, Browning Automatic Rifle, DP-27 e o fuzil antitanque PTRS-41. Metralhadora de verdade, com cano de troca, para quem já tem algo que vale a pena defender.",
+   "cost": 1900,
+   "tech": "Industrial",
+   "x": 22.5,
+   "y": 3.0,
+   "prereqs": [
+    "Aut_3"
+   ],
+   "unlocks": [
+    "Gun_LMG",
+    "CE_Gun_BAR",
+    "CE_Gun_DPtwentySeven",
+    "CE_Gun_PTRS",
+    "Ammo_145x114mm_AP",
+    "Ammo_145x114mm_FMJ"
+   ],
+   "absorbs": [],
+   "branch": "",
+   "bench": "",
+   "facilities": [],
+   "techprints": 0,
+   "techprintTags": [],
+   "notes": "Armas e munição > Aut_4"
+  },
+  {
+   "id": "Aut_Esp",
+   "idAuto": false,
+   "label": "Munição especial III: Munição militar",
+   "desc": "Munição incendiária, explosiva e sabot dos calibres automáticos; substitui a Munição avançada do Combat Extended. Vendida em caixas com o selo de um exército que não existe mais.",
+   "cost": 1500,
+   "tech": "Industrial",
+   "x": 22.5,
+   "y": 2.25,
+   "prereqs": [
+    "Aut_4",
+    "Arm_Esp"
+   ],
+   "unlocks": [
+    "Ammo_556x45mmNATO_HE",
+    "Ammo_556x45mmNATO_Incendiary",
+    "Ammo_556x45mmNATO_Sabot",
+    "Ammo_145x114mm_HE",
+    "Ammo_145x114mm_Incendiary",
+    "Ammo_145x114mm_Sabot"
+   ],
+   "absorbs": [
+    "CE_AdvancedAmmo"
+   ],
+   "branch": "",
+   "bench": "",
+   "facilities": [],
+   "techprints": 0,
+   "techprintTags": [],
+   "notes": "Armas e munição > Aut_Esp"
+  },
+  {
+   "id": "VM_1",
+   "idAuto": false,
+   "label": "Arsenal do Velho Mundo I: Carabinas compactas",
+   "desc": "AKMS-U, AKS-74U, SIG MCX e P90. Desenhos militares de antes da Queda, tirados de abrigos e de discos que ninguém devia ter lido.",
+   "cost": 2000,
+   "tech": "Industrial",
+   "x": 22.5,
+   "y": 4.5,
+   "prereqs": [
+    "Aut_4",
+    "ref_Lab_Micro"
+   ],
+   "unlocks": [
+    "CE_Gun_AKMSU",
+    "CE_Gun_AKSSeventyFourU",
+    "CE_Gun_SigMCX",
+    "CE_Gun_PNinety",
+    "Ammo_545x39mmSoviet_AP",
+    "Ammo_545x39mmSoviet_FMJ",
+    "Ammo_545x39mmSoviet_HP"
+   ],
+   "absorbs": [
+    "PrecisionRifling"
+   ],
+   "branch": "EQ_Ramo_VelhoMundo",
+   "bench": "",
+   "facilities": [],
+   "techprints": 0,
+   "techprintTags": [],
+   "notes": "Armas e munição > VM_1"
+  },
+  {
+   "id": "VM_2",
+   "idAuto": false,
+   "label": "Arsenal do Velho Mundo II: Fuzis de assalto",
+   "desc": "Rifle de assalto, AKM, AK-12, AK-74 com lança-granadas, fuzil de serviço, carabina e a escopeta automática USAS-12. O fuzil que derrubou governos agora derruba cercas de vizinho.",
+   "cost": 2400,
+   "tech": "Industrial",
+   "x": 25.0,
+   "y": 4.5,
+   "prereqs": [
+    "VM_1"
+   ],
+   "unlocks": [
+    "Gun_AssaultRifle",
+    "CE_Gun_AKM",
+    "CE_Gun_AKTwelve",
+    "CE_Gun_AK74GL",
+    "VWE_Gun_ServiceRifle",
+    "VWE_Gun_Carbine",
+    "CE_Gun_USASTwelve"
+   ],
+   "absorbs": [],
+   "branch": "EQ_Ramo_VelhoMundo",
+   "bench": "",
+   "facilities": [],
+   "techprints": 0,
+   "techprintTags": [],
+   "notes": "Armas e munição > VM_2"
+  },
+  {
+   "id": "VM_3",
+   "idAuto": false,
+   "label": "Arsenal do Velho Mundo III: Fuzis de batalha e precisão",
+   "desc": "FN FAL, fuzil de batalha, SR-25, Tavor 7, M7, SVD, fuzil de atirador, AVB-7.62, SRS e o rifle de precisão. Para resolver a diplomacia a oitocentos metros.",
+   "cost": 2800,
+   "tech": "Industrial",
+   "x": 27.5,
+   "y": 4.5,
+   "prereqs": [
+    "VM_2"
+   ],
+   "unlocks": [
+    "CE_Gun_FNFAL",
+    "VWE_Gun_BattleRifle",
+    "CE_Gun_SRTweintyFive",
+    "CE_Gun_TavorSeven",
+    "CE_Gun_MSeven",
+    "CE_Gun_SVD",
+    "VWE_Gun_MarksmanRifle",
+    "CE_Gun_AVB",
+    "CE_Gun_SRS",
+    "Gun_SniperRifle",
+    "Ammo_277Fury_AP",
+    "Ammo_277Fury_FMJ",
+    "Ammo_277Fury_HP",
+    "Ammo_338Norma_AP",
+    "Ammo_338Norma_FMJ"
+   ],
+   "absorbs": [],
+   "branch": "EQ_Ramo_VelhoMundo",
+   "bench": "",
+   "facilities": [],
+   "techprints": 0,
+   "techprintTags": [],
+   "notes": "Armas e munição > VM_3"
+  },
+  {
+   "id": "VM_4",
+   "idAuto": false,
+   "label": "Arsenal do Velho Mundo IV: Metralhadoras e antimaterial",
+   "desc": "RPD, RPK-16, M249, FightLite MCR, PKM, M60, metralhadora pesada, M250, MG 338, Kord, metralhadora giratória e os fuzis antimaterial (Barrett, Hecate II, Tac-50 e o comum). O arsenal que um exército inteiro usou para perder a guerra, agora na mão de uma colônia.",
+   "cost": 3200,
+   "tech": "Industrial",
+   "x": 30.0,
+   "y": 4.5,
+   "prereqs": [
+    "VM_3"
+   ],
+   "unlocks": [
+    "CE_Gun_RPD",
+    "CE_Gun_RPKSixteen",
+    "CE_Gun_MTwoFourNine",
+    "CE_Gun_FightLiteMCR",
+    "CE_Gun_PKM",
+    "CE_Gun_MSixty",
+    "VWE_Gun_HMG",
+    "CE_Gun_MTwoFifty",
+    "CE_Gun_MGThreeThreeEight",
+    "CE_Gun_KordPortable",
+    "Gun_Minigun",
+    "CE_Gun_M82A2Barrett",
+    "CE_Gun_HecateTwo",
+    "CE_Gun_TacFifty",
+    "VWE_Gun_AntiMaterialRifle"
+   ],
+   "absorbs": [
+    "MultibarrelWeapons"
+   ],
+   "branch": "EQ_Ramo_VelhoMundo",
+   "bench": "",
+   "facilities": [],
+   "techprints": 0,
+   "techprintTags": [],
+   "notes": "Armas e munição > VM_4"
+  },
+  {
+   "id": "VM_Esp",
+   "idAuto": false,
+   "label": "Munição especial IV: Munição de arsenal",
+   "desc": "Munição incendiária, explosiva, sabot e perfurante de núcleo duro dos calibres do Velho Mundo. Cada caixa tem número de série; a Forja pede que você não pergunte de quem era.",
+   "cost": 2600,
+   "tech": "Industrial",
+   "x": 30.0,
+   "y": 3.75,
+   "prereqs": [
+    "VM_4",
+    "Aut_Esp"
+   ],
+   "unlocks": [
+    "Ammo_545x39mmSoviet_HE",
+    "Ammo_545x39mmSoviet_Incendiary",
+    "Ammo_545x39mmSoviet_Sabot",
+    "Ammo_277Fury_HE",
+    "Ammo_277Fury_Incendiary",
+    "Ammo_277Fury_Sabot",
+    "Ammo_338Norma_HE",
+    "Ammo_338Norma_Incendiary",
+    "Ammo_338Norma_Sabot"
+   ],
+   "absorbs": [],
+   "branch": "EQ_Ramo_VelhoMundo",
+   "bench": "",
+   "facilities": [],
+   "techprints": 0,
+   "techprintTags": [],
+   "notes": "Armas e munição > VM_Esp"
+  },
+  {
+   "id": "Fo_1",
+   "idAuto": false,
+   "label": "Armas de carga I: Pistolas de carga e gauss",
+   "desc": "Pistolas de carga, revólver gauss e o Magnum gauss, com a munição de carga. A Irmandade da Forja vende a licença com garantia de 90 dias, que vence no primeiro disparo.",
+   "cost": 3200,
+   "tech": "Spacer",
+   "x": 30.0,
+   "y": 6.0,
+   "prereqs": [
+    "VM_4",
+    "ref_Comp_Fabricacao"
+   ],
+   "unlocks": [
+    "CE_Gun_ChargePistol",
+    "VWE_Gun_ChargePistol",
+    "VWEFT_Gun_GaussRevolver",
+    "VWE_Gun_GaussMagnum",
+    "Ammo_6x18mmCharged",
+    "Ammo_6x18mmCharged_AP"
+   ],
+   "absorbs": [
+    "ChargedShot",
+    "VWE_MassDrivers"
+   ],
+   "branch": "EQ_Ramo_Forja",
+   "bench": "",
+   "facilities": [],
+   "techprints": 0,
+   "techprintTags": [],
+   "notes": "Armas e munição > Fo_1"
+  },
+  {
+   "id": "Fo_2",
+   "idAuto": false,
+   "label": "Armas de carga II: Escopetas e submetralhadoras de carga",
+   "desc": "Escopetas de carga, submetralhadoras de carga, ciclador de carga e o repetidor gauss. Tecnologia espacial tirada de naves caídas, peça por peça, com o manual numa língua que ninguém fala.",
+   "cost": 3600,
+   "tech": "Spacer",
+   "x": 32.5,
+   "y": 6.0,
+   "prereqs": [
+    "Fo_1"
+   ],
+   "unlocks": [
+    "CE_Gun_ChargeShotgun",
+    "VWE_Gun_ChargeShotgun",
+    "CE_Gun_ChargeSMG",
+    "VWE_Gun_ChargeSMG",
+    "VFED_Gun_ChargeCycler",
+    "VWEFT_Gun_GaussRepeater",
+    "Ammo_12GaugeCharged",
+    "Ammo_12GaugeCharged_Slug",
+    "Ammo_10x18mmCharged",
+    "Ammo_10x18mmCharged_AP"
+   ],
+   "absorbs": [],
+   "branch": "EQ_Ramo_Forja",
+   "bench": "",
+   "facilities": [],
+   "techprints": 0,
+   "techprintTags": [],
+   "notes": "Armas e munição > Fo_2"
+  },
+  {
+   "id": "Fo_3",
+   "idAuto": false,
+   "label": "Armas de carga III: Fuzis de carga",
+   "desc": "Rifle de carga, fuzis de precisão de carga, fuzil antimaterial de carga, fuzil gauss, carabina laser LAS-40C e o impactador de carga. O cavaleiro da garantia não aceita reclamação de quem foi atingido.",
+   "cost": 4000,
+   "tech": "Spacer",
+   "x": 35.0,
+   "y": 6.0,
+   "prereqs": [
+    "Fo_2"
+   ],
+   "unlocks": [
+    "Gun_ChargeRifle",
+    "CE_Gun_ChargeSniperRifle",
+    "VWE_Gun_ChargeSniperRifle",
+    "CE_Gun_ChargeAMR",
+    "VWE_Gun_GaussRifle",
+    "CE_Gun_LaserCarbine",
+    "VFEE_Gun_ChargeThumper",
+    "Ammo_6x24mmCharged",
+    "Ammo_6x24mmCharged_AP",
+    "Ammo_8x50mmCharged",
+    "Ammo_8x50mmCharged_AP",
+    "Ammo_12x72mmCharged",
+    "Ammo_12x72mmCharged_AP",
+    "Ammo_LaserChargePack"
+   ],
+   "absorbs": [],
+   "branch": "EQ_Ramo_Forja",
+   "bench": "",
+   "facilities": [],
+   "techprints": 0,
+   "techprintTags": [],
+   "notes": "Armas e munição > Fo_3"
+  },
+  {
+   "id": "Fo_4",
+   "idAuto": false,
+   "label": "Armas de carga IV: Blasters, lança gauss e feixe",
+   "desc": "Metralhadora de carga, blasters de carga, lançador de mísseis de carga, lança gauss e o feixe de graser. O topo do catálogo da Forja; o recall é feito com o mesmo equipamento.",
+   "cost": 4500,
+   "tech": "Spacer",
+   "x": 37.5,
+   "y": 6.0,
+   "prereqs": [
+    "Fo_3"
+   ],
+   "unlocks": [
+    "CE_Gun_ChargeLMG",
+    "VWE_Gun_ChargeLMG",
+    "VWE_Gun_ChargeMinigun",
+    "VWE_Gun_ChargeRocketLauncher",
+    "VWE_Gun_GaussLance",
+    "Gun_BeamGraser",
+    "Ammo_8x35mmCharged",
+    "Ammo_8x35mmCharged_AP",
+    "Ammo_ChargedRocket",
+    "Ammo_ChargedRocket_BB"
+   ],
+   "absorbs": [
+    "VWE_LaserTargetingSystems",
+    "BeamWeapons"
+   ],
+   "branch": "EQ_Ramo_Forja",
+   "bench": "",
+   "facilities": [],
+   "techprints": 0,
+   "techprintTags": [],
+   "notes": "Armas e munição > Fo_4"
+  },
+  {
+   "id": "Fo_Esp",
+   "idAuto": false,
+   "label": "Munição especial V: Células iônicas",
+   "desc": "Munição iônica e incendiária das armas de carga. Um tiro que apaga o escudo e o portador, nessa ordem.",
+   "cost": 3600,
+   "tech": "Spacer",
+   "x": 37.5,
+   "y": 5.25,
+   "prereqs": [
+    "Fo_4",
+    "VM_Esp"
+   ],
+   "unlocks": [
+    "Ammo_6x18mmCharged_Ion",
+    "Ammo_6mmRailgun_Sabot",
+    "Ammo_12GaugeCharged_Ion",
+    "Ammo_10x18mmCharged_Ion",
+    "Ammo_6x24mmCharged_Ion",
+    "Ammo_8x50mmCharged_Ion",
+    "Ammo_12x72mmCharged_Ion",
+    "Ammo_40x68mmDemo_Thump",
+    "Ammo_8x35mmCharged_Ion",
+    "Ammo_ChargedRocket_ICP",
+    "Ammo_8mmRailgun_Sabot"
+   ],
+   "absorbs": [],
+   "branch": "EQ_Ramo_Forja",
+   "bench": "",
+   "facilities": [],
+   "techprints": 0,
+   "techprintTags": [],
+   "notes": "Armas e munição > Fo_Esp"
+  },
+  {
+   "id": "Las_1",
+   "idAuto": false,
+   "label": "Laser recuperado I: Pistolas laser",
+   "desc": "Pistola laser recuperada e revólver laser recuperado. Armas de antes da guerra que queimou o planeta, consertadas pela Forja e alugadas por assinatura.",
+   "cost": 5000,
+   "tech": "Ultra",
+   "x": 37.5,
+   "y": 7.5,
+   "prereqs": [
+    "Fo_4"
+   ],
+   "unlocks": [
+    "VWEL_Gun_SalvagedLaserPistol",
+    "VWEFT_Gun_SalvagedLaserRevolver"
+   ],
+   "absorbs": [
+    "VWE_LaserWeapons"
+   ],
+   "branch": "EQ_Ramo_Forja",
+   "bench": "",
+   "facilities": [],
+   "techprints": 0,
+   "techprintTags": [],
+   "notes": "Armas e munição > Las_1"
+  },
+  {
+   "id": "Las_2",
+   "idAuto": false,
+   "label": "Laser recuperado II: Escopeta laser",
+   "desc": "Escopeta laser recuperada. Espalha luz como um padre espalha bênção, e com o mesmo resultado para quem está na frente.",
+   "cost": 5500,
+   "tech": "Ultra",
+   "x": 40.0,
+   "y": 7.5,
+   "prereqs": [
+    "Las_1"
+   ],
+   "unlocks": [
+    "VWEL_Gun_SalvagedLaserShotgun"
+   ],
+   "absorbs": [],
+   "branch": "EQ_Ramo_Forja",
+   "bench": "",
+   "facilities": [],
+   "techprints": 0,
+   "techprintTags": [],
+   "notes": "Armas e munição > Las_2"
+  },
+  {
+   "id": "Las_3",
+   "idAuto": false,
+   "label": "Laser recuperado III: Fuzis laser",
+   "desc": "Fuzil laser, fuzil de caça laser e fuzil de precisão laser recuperados. Não faz barulho, não faz fumaça e não deixa corpo para enterrar.",
+   "cost": 6000,
+   "tech": "Ultra",
+   "x": 42.5,
+   "y": 7.5,
+   "prereqs": [
+    "Las_2"
+   ],
+   "unlocks": [
+    "VWEL_Gun_SalvagedLaserRifle",
+    "VWEFT_Gun_SalvagedLaserHuntingRifle",
+    "VWEL_Gun_SalvagedLaserSniperRifle"
+   ],
+   "absorbs": [],
+   "branch": "EQ_Ramo_Forja",
+   "bench": "",
+   "facilities": [],
+   "techprints": 0,
+   "techprintTags": [],
+   "notes": "Armas e munição > Las_3"
+  },
+  {
+   "id": "Las_4",
+   "idAuto": false,
+   "label": "Laser recuperado IV: Repetidora laser",
+   "desc": "Repetidora laser recuperada. A última arma que o Império usou contra o enxame; o enxame venceu, mas a garantia continua valendo.",
+   "cost": 7000,
+   "tech": "Ultra",
+   "x": 45.0,
+   "y": 7.5,
+   "prereqs": [
+    "Las_3"
+   ],
+   "unlocks": [
+    "VWEFT_Gun_SalvagedLaserRepeater"
+   ],
+   "absorbs": [],
+   "branch": "EQ_Ramo_Forja",
+   "bench": "",
+   "facilities": [],
+   "techprints": 0,
+   "techprintTags": [],
+   "notes": "Armas e munição > Las_4"
+  },
+  {
+   "id": "Pol_1",
+   "idAuto": false,
+   "label": "Pólvora negra I: Pederneira",
+   "desc": "Pistolas de pederneira e a pólvora negra. No Reino do Lodo ela nunca saiu de moda: não precisa de manual, só de esterco, carvão e paciência.",
+   "cost": 300,
+   "tech": "Medieval",
+   "x": 0.0,
+   "y": 10.0,
+   "prereqs": [
+    "ref_Oficio_Metalurgia"
+   ],
+   "unlocks": [
+    "CE_Gun_FlintlockPistol",
+    "VFEM2_Gun_Flintlock",
+    "Ammo_MusketBall"
+   ],
+   "absorbs": [
+    "CE_Gunpowder"
+   ],
+   "branch": "",
+   "bench": "",
+   "facilities": [],
+   "techprints": 0,
+   "techprintTags": [],
+   "notes": "Armas e munição > Pol_1"
+  },
+  {
+   "id": "Pol_2",
+   "idAuto": false,
+   "label": "Pólvora negra II: Bacamarte e arcabuz",
+   "desc": "Bacamarte de pederneira, arcabuz e canhão de mão. Erra o alvo, acerta o vizinho, assusta os dois.",
+   "cost": 450,
+   "tech": "Medieval",
+   "x": 2.5,
+   "y": 10.0,
+   "prereqs": [
+    "Pol_1"
+   ],
+   "unlocks": [
+    "CE_Gun_FlintlockBlunderbuss",
+    "VFEM2_Gun_Arquebus",
+    "VFEM2_Gun_HandCannon",
+    "Ammo_BlunderbussShot"
+   ],
+   "absorbs": [
+    "VFEM2_Matchlocks"
+   ],
+   "branch": "",
+   "bench": "",
+   "facilities": [],
+   "techprints": 0,
+   "techprintTags": [],
+   "notes": "Armas e munição > Pol_2"
+  },
+  {
+   "id": "Pol_3",
+   "idAuto": false,
+   "label": "Pólvora negra III: Mosquetes",
+   "desc": "Mosquete e mosquete de pederneira. A arma do bacamarteiro do Lodo: lenta, barulhenta e convincente.",
+   "cost": 600,
+   "tech": "Medieval",
+   "x": 5.0,
+   "y": 10.0,
+   "prereqs": [
+    "Pol_2"
+   ],
+   "unlocks": [
+    "CE_Gun_FlintlockMusket",
+    "VFEM2_Gun_Musket"
+   ],
+   "absorbs": [],
+   "branch": "",
+   "bench": "",
+   "facilities": [],
+   "techprints": 0,
+   "techprintTags": [],
+   "notes": "Armas e munição > Pol_3"
+  },
+  {
+   "id": "Pol_4",
+   "idAuto": false,
+   "label": "Pólvora negra IV: Fuzil de muralha e morteiro de mão",
+   "desc": "Fuzil de muralha e morteiro de mão, com metralha, bala explosiva e incendiária. Artilharia para quem ainda acha que castelo é moradia.",
+   "cost": 800,
+   "tech": "Medieval",
+   "x": 7.5,
+   "y": 10.0,
+   "prereqs": [
+    "Pol_3"
+   ],
+   "unlocks": [
+    "CE_Gun_WallGun",
+    "CE_Gun_HandMortar",
+    "Ammo_MiniCannonBall_Grape",
+    "Ammo_MiniCannonBall_Round",
+    "Ammo_MortarGrenade"
+   ],
+   "absorbs": [],
+   "branch": "",
+   "bench": "",
+   "facilities": [],
+   "techprints": 0,
+   "techprintTags": [],
+   "notes": "Armas e munição > Pol_4"
+  },
+  {
+   "id": "Exp_1",
+   "idAuto": false,
+   "label": "Explosivos I: Granadas",
+   "desc": "Granada de fragmentação, granada de luz, granada de fumaça, granada de concussão, carga de mochila e a pistola sinalizadora. Lata, prego e pólvora: o kit de boas-vindas da Feira para quem chega sem convite.",
+   "cost": 700,
+   "tech": "Industrial",
+   "x": 7.5,
+   "y": 11.5,
+   "prereqs": [
+    "Suc_3",
+    "ref_Lav_Outros_1"
+   ],
+   "unlocks": [
+    "CE_FlareGun",
+    "Weapon_GrenadeFrag",
+    "CE_Weapon_GrenadeFlashbang",
+    "CE_Weapon_GrenadeSmoke",
+    "CE_Weapon_GrenadeConcussion",
+    "CE_Weapon_SatchelCharge",
+    "Ammo_Flare",
+    "Ammo_FlareBioferrite"
+   ],
+   "absorbs": [],
+   "branch": "",
+   "bench": "",
+   "facilities": [],
+   "techprints": 0,
+   "techprintTags": [],
+   "notes": "Armas e munição > Exp_1"
+  },
+  {
+   "id": "Exp_2",
+   "idAuto": false,
+   "label": "Explosivos II: Lança-granadas e lança-chamas",
+   "desc": "M79, lança-granadas, Milkor MGL e os lança-chamas, com as granadas de 40 mm e o combustível. A solução do Silêncio para \"amostra contaminada\".",
+   "cost": 1500,
+   "tech": "Industrial",
+   "x": 17.5,
+   "y": 11.5,
+   "prereqs": [
+    "Exp_1",
+    "Aut_3"
+   ],
+   "unlocks": [
+    "CE_GrenadeLauncher",
+    "VWE_Gun_GrenadeLauncher",
+    "CE_Gun_MilkorMGL",
+    "CE_Gun_Flamethrower",
+    "VWE_Gun_Flamethrower",
+    "Ammo_40x46mmGrenade_HE",
+    "Ammo_40x46mmGrenade_HEDP",
+    "Ammo_40x46mmGrenade_HE_TFuzed",
+    "Ammo_40x46mmGrenade_Smoke",
+    "Ammo_Flamethrower_Bioferrite"
+   ],
+   "absorbs": [
+    "CE_Launchers"
+   ],
+   "branch": "EQ_Ramo_VelhoMundo",
+   "bench": "",
+   "facilities": [],
+   "techprints": 0,
+   "techprintTags": [],
+   "notes": "Armas e munição > Exp_2"
+  },
+  {
+   "id": "Exp_3",
+   "idAuto": false,
+   "label": "Explosivos III: Foguetes",
+   "desc": "M72 LAW, AT4, RPG-7, Carl Gustaf e o lança-foguetes. O abridor de latas preferido contra blindados da Forja e muralhas do Coro.",
+   "cost": 2400,
+   "tech": "Industrial",
+   "x": 25.0,
+   "y": 11.5,
+   "prereqs": [
+    "Exp_2",
+    "VM_1"
+   ],
+   "unlocks": [
+    "CE_DisposableRocketLauncher",
+    "CE_ATFour",
+    "CE_Gun_RPGSeven",
+    "CE_Gun_CarlGustaf",
+    "VWE_Gun_RocketLauncher",
+    "Ammo_RPG7Grenade_Frag",
+    "Ammo_RPG7Grenade_HEAT",
+    "Ammo_84x246mmR_CAN",
+    "Ammo_84x246mmR_Frag",
+    "Ammo_84x246mmR_HE",
+    "Ammo_84x246mmR_HEAT",
+    "Ammo_84x246mmR_HEDP",
+    "Ammo_84x246mmR_HE_TFuzed",
+    "Ammo_84x246mmR_Smoke"
+   ],
+   "absorbs": [],
+   "branch": "EQ_Ramo_VelhoMundo",
+   "bench": "",
+   "facilities": [],
+   "techprints": 0,
+   "techprintTags": [],
+   "notes": "Armas e munição > Exp_3"
+  },
+  {
+   "id": "Exp_4",
+   "idAuto": false,
+   "label": "Explosivos IV: Lançadores avançados",
+   "desc": "Lançador de foguetes triplo, lançador de foguetes apocalíptico e lançador incendiário. Munição que custa mais que o alvo, para alvos que custam mais que a colônia.",
+   "cost": 3400,
+   "tech": "Spacer",
+   "x": 32.5,
+   "y": 11.5,
+   "prereqs": [
+    "Exp_3",
+    "VM_4"
+   ],
+   "unlocks": [
+    "Gun_TripleRocket",
+    "Gun_DoomsdayRocket",
+    "Gun_IncendiaryLauncher"
+   ],
+   "absorbs": [
+    "CE_AdvancedLaunchers"
+   ],
+   "branch": "EQ_Ramo_VelhoMundo",
+   "bench": "",
+   "facilities": [],
+   "techprints": 0,
+   "techprintTags": [],
+   "notes": "Armas e munição > Exp_4"
+  },
+  {
+   "id": "Exp_Esp",
+   "idAuto": false,
+   "label": "Munição especial: Explosivos",
+   "desc": "Granadas e foguetes PEM, incendiários e termobáricos para os lançadores. Quem atira isso dentro de casa não precisa mais de casa.",
+   "cost": 2200,
+   "tech": "Industrial",
+   "x": 27.5,
+   "y": 12.5,
+   "prereqs": [
+    "Exp_3"
+   ],
+   "unlocks": [
+    "Ammo_40x46mmGrenade_EMP",
+    "Ammo_40x46mmGrenade_Tox",
+    "Ammo_Flamethrower_Napalm",
+    "Ammo_Flamethrower_Prometheum",
+    "Ammo_RPG7Grenade_Thermobaric",
+    "Ammo_84x246mmR_EMP",
+    "Ammo_84x246mmR_Incendiary",
+    "Ammo_84x246mmR_Thermobaric",
+    "Ammo_30x64mmFuel_Foam",
+    "Ammo_30x64mmFuel_Incendiary",
+    "Ammo_30x64mmFuel_Thermobaric"
+   ],
+   "absorbs": [],
+   "branch": "EQ_Ramo_VelhoMundo",
+   "bench": "",
+   "facilities": [],
+   "techprints": 0,
+   "techprintTags": [],
+   "notes": "Armas e munição > Exp_Esp"
+  },
+  {
+   "id": "Arc_1",
+   "idAuto": false,
+   "label": "Arcos I: Arco recurvo",
+   "desc": "Arco recurvo, com flechas de pedra e de aço. Silencioso, barato e sem pirataria: ninguém tem a patente do arco.",
+   "cost": 300,
+   "tech": "Neolithic",
+   "x": 0.0,
+   "y": 13.0,
+   "prereqs": [],
+   "unlocks": [
+    "Bow_Recurve",
+    "Ammo_Arrow_Plasteel",
+    "Ammo_Arrow_Steel",
+    "Ammo_Arrow_Stone"
+   ],
+   "absorbs": [
+    "RecurveBow"
+   ],
+   "branch": "",
+   "bench": "",
+   "facilities": [],
+   "techprints": 0,
+   "techprintTags": [],
+   "notes": "Armas e munição > Arc_1"
+  },
+  {
+   "id": "Arc_2",
+   "idAuto": false,
+   "label": "Arcos II: Arcos de guerra",
+   "desc": "Arco grande, arco de guerra e arco longo, com as flechas grandes. A artilharia dos tribais que sobreviveram à Queda melhor que as cidades.",
+   "cost": 450,
+   "tech": "Neolithic",
+   "x": 2.5,
+   "y": 13.0,
+   "prereqs": [
+    "Arc_1"
+   ],
+   "unlocks": [
+    "Bow_Great",
+    "VFEM2_Warbow",
+    "VWE_Bow_Long",
+    "Ammo_GreatArrow_Plasteel",
+    "Ammo_GreatArrow_Steel",
+    "Ammo_GreatArrow_Stone"
+   ],
+   "absorbs": [
+    "Greatbow"
+   ],
+   "branch": "",
+   "bench": "",
+   "facilities": [],
+   "techprints": 0,
+   "techprintTags": [],
+   "notes": "Armas e munição > Arc_2"
+  },
+  {
+   "id": "Arc_3",
+   "idAuto": false,
+   "label": "Arcos III: Bestas",
+   "desc": "Bestas e balestra, com os virotes. Qualquer camponês com uma manivela derruba um cavaleiro.",
+   "cost": 600,
+   "tech": "Medieval",
+   "x": 5.0,
+   "y": 13.0,
+   "prereqs": [
+    "Arc_2",
+    "ref_Oficio_Metalurgia"
+   ],
+   "unlocks": [
+    "CE_Gun_Crossbow",
+    "VWE_Bow_Crossbow",
+    "VFEM2_Arbalest",
+    "Ammo_CrossbowBolt_Plasteel",
+    "Ammo_CrossbowBolt_Steel",
+    "Ammo_CrossbowBolt_Stone"
+   ],
+   "absorbs": [],
+   "branch": "",
+   "bench": "",
+   "facilities": [],
+   "techprints": 0,
+   "techprintTags": [],
+   "notes": "Armas e munição > Arc_3"
+  },
+  {
+   "id": "Arc_4",
+   "idAuto": false,
+   "label": "Arcos IV: Arco composto",
+   "desc": "Arco composto, de roldana e fibra. O arco que o Velho Mundo vendia em loja de esportes; agora é esporte de verdade.",
+   "cost": 900,
+   "tech": "Industrial",
+   "x": 7.5,
+   "y": 13.0,
+   "prereqs": [
+    "Arc_3",
+    "ref_Fabrica_Usinagem"
+   ],
+   "unlocks": [
+    "VWE_Bow_Compound"
+   ],
+   "absorbs": [],
+   "branch": "",
+   "bench": "",
+   "facilities": [],
+   "techprints": 0,
+   "techprintTags": [],
+   "notes": "Armas e munição > Arc_4"
+  },
+  {
+   "id": "Arc_Esp",
+   "idAuto": false,
+   "label": "Arcos: Flechas especiais",
+   "desc": "Flechas, flechas grandes e virotes de fogo (prometeu) e de veneno (trufa-cura). O tribal não conhece química, mas conhece quem morreu dela.",
+   "cost": 500,
+   "tech": "Neolithic",
+   "x": 5.0,
+   "y": 13.75,
+   "prereqs": [
+    "Arc_2",
+    "ref_Lav_Outros_1",
+    "ref_Lav_Medicamento_2"
+   ],
+   "unlocks": [
+    "Ammo_Arrow_Flame",
+    "Ammo_Arrow_Venom",
+    "Ammo_GreatArrow_Flame",
+    "Ammo_GreatArrow_Venom",
+    "Ammo_CrossbowBolt_Flame",
+    "Ammo_CrossbowBolt_Venom"
+   ],
+   "absorbs": [],
+   "branch": "",
+   "bench": "",
+   "facilities": [],
+   "techprints": 0,
+   "techprintTags": [],
+   "notes": "Armas e munição > Arc_Esp"
+  },
+  {
+   "id": "Cac_1",
+   "idAuto": false,
+   "label": "Corpo a corpo I: Armas de ferro",
+   "desc": "Maça, maça pesada, martelo, machado, machado de irrupção, mangual, gládio, espada curta, ikwa e facão. Ferro batido na bigorna: dura mais que a munição.",
+   "cost": 400,
+   "tech": "Medieval",
+   "x": 0,
+   "y": 14.5,
+   "prereqs": [
+    "ref_Oficio_Metalurgia"
+   ],
+   "unlocks": [
+    "MeleeWeapon_Mace",
+    "VFEM2_MeleeWeapon_HeavyMace",
+    "VWE_MeleeWeapon_Hammer",
+    "MeleeWeapon_Axe",
+    "MeleeWeapon_BreachAxe",
+    "VFEM2_MeleeWeapon_Flail",
+    "MeleeWeapon_Gladius",
+    "VFEM2_MeleeWeapon_Shortsword",
+    "MeleeWeapon_Ikwa",
+    "CE_Melee_Machete"
+   ],
+   "absorbs": [],
+   "branch": "",
+   "bench": "",
+   "facilities": [],
+   "techprints": 0,
+   "techprintTags": [],
+   "notes": "Armas e munição > Cac_1"
+  },
+  {
+   "id": "Cac_2",
+   "idAuto": false,
+   "label": "Corpo a corpo II: Lâminas longas e armas de haste",
+   "desc": "Espada longa, claymore, sabre, lança, pique, alabardas, machado dinamarquês, machado de batalha, martelo de guerra, bec de corbin e pollaxe. O arrombador do Lodo não lê manual, mas sabe onde o machado entra.",
+   "cost": 700,
+   "tech": "Medieval",
+   "x": 2.5,
+   "y": 14.5,
+   "prereqs": [
+    "Cac_1"
+   ],
+   "unlocks": [
+    "MeleeWeapon_LongSword",
+    "VFEM2_MeleeWeapon_Claymore",
+    "CE_Melee_Saber",
+    "MeleeWeapon_Spear",
+    "VFEM2_MeleeWeapon_Pike",
+    "VWE_MeleeWeapon_Halberd",
+    "VFEM2_MeleeWeapon_Halberd",
+    "VFEM2_MeleeWeapon_DaneAxe",
+    "VWE_MeleeWeapon_BattleAxe",
+    "MeleeWeapon_Warhammer",
+    "CE_Melee_BecDeCorbin",
+    "CE_Melee_Pollaxe"
+   ],
+   "absorbs": [
+    "LongBlades"
+   ],
+   "branch": "",
+   "bench": "",
+   "facilities": [],
+   "techprints": 0,
+   "techprintTags": [],
+   "notes": "Armas e munição > Cac_2"
+  },
+  {
+   "id": "Cac_3",
+   "idAuto": false,
+   "label": "Corpo a corpo III: Armas de trincheira",
+   "desc": "Faca de combate, cassetete e pá de trincheira. Para quando a munição acaba antes da guerra.",
+   "cost": 900,
+   "tech": "Industrial",
+   "x": 10.0,
+   "y": 14.5,
+   "prereqs": [
+    "Cac_2",
+    "Arm_1"
+   ],
+   "unlocks": [
+    "VWE_MeleeWeapon_CombatKnife",
+    "VWE_MeleeWeapon_Baton",
+    "VWE_MeleeWeapon_Shovel"
+   ],
+   "absorbs": [],
+   "branch": "",
+   "bench": "",
+   "facilities": [],
+   "techprints": 0,
+   "techprintTags": [],
+   "notes": "Armas e munição > Cac_3"
+  }
+ ]
+}
