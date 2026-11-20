@@ -326,6 +326,327 @@
   </ResearchProjectDef>
 
   <ResearchTabDef>
+    <defName>EQ_RTab_Armaduras</defName>
+    <label>Armaduras</label>
+    <generalTitle>Armaduras</generalTitle>
+    <generalDescription>Ficar vivo depois da Queda. Três eras como nas Armas (Couro e ferro, Balística, Armadura espacial), cada uma em quatro passos: cabeça, peito leve, armadura completa e pesada. Ao lado: óptica (Silêncio), aparato de salto (Coro) e caixões de guerra (Forja).</generalDescription>
+  </ResearchTabDef>
+
+  <!-- Armaduras &gt; Fer_1 -->
+  <ResearchProjectDef>
+    <defName>EQ_R_Armaduras_Fer_1</defName>
+    <label>Couro e ferro I: Elmos</label>
+    <description>Capacete simples, capacete de criança, elmo de couro e elmo acolchoado. Depois da Queda, a primeira coisa que se protege é a cabeça; a segunda é a lata de comida.</description>
+    <baseCost>300</baseCost>
+    <techLevel>Medieval</techLevel>
+    <tab>EQ_RTab_Armaduras</tab>
+    <researchViewX>0</researchViewX>
+    <researchViewY>0.75</researchViewY>
+    <prerequisites><li>EQ_R_Producao_Oficio_Metalurgia</li></prerequisites>
+    <modExtensions>
+      <li Class="EcosDaQueda.ResearchEditorExt">
+        <unlocks><li>Apparel_SimpleHelmet</li><li>Apparel_KidHelmet</li><li>VFEM2_Apparel_LeatherHelmet</li><li>VFEM2_Apparel_PaddedHelmet</li></unlocks>
+        <branch>EQ_Ramo_Bancada</branch>
+      </li>
+    </modExtensions>
+  </ResearchProjectDef>
+
+  <!-- Armaduras &gt; Fer_2 -->
+  <ResearchProjectDef>
+    <defName>EQ_R_Armaduras_Fer_2</defName>
+    <label>Couro e ferro II: Couro e escudos</label>
+    <description>Armadura de couro, gibão acolchoado, broquel, escudo redondo e escudo de combate. O couro do bicho que te atacou ontem protege contra o próximo.</description>
+    <baseCost>450</baseCost>
+    <techLevel>Medieval</techLevel>
+    <tab>EQ_RTab_Armaduras</tab>
+    <researchViewX>2.5</researchViewX>
+    <researchViewY>0.75</researchViewY>
+    <prerequisites><li>EQ_R_Armaduras_Fer_1</li></prerequisites>
+    <modExtensions>
+      <li Class="EcosDaQueda.ResearchEditorExt">
+        <unlocks><li>VFEM2_Apparel_LeatherArmor</li><li>CE_Armor_Gambeson</li><li>CE_Apparel_Buckler</li><li>VFEM2_Shield_Round</li><li>CE_Apparel_MeleeShield</li></unlocks>
+        <branch>EQ_Ramo_Bancada</branch>
+      </li>
+    </modExtensions>
+  </ResearchProjectDef>
+
+  <!-- Armaduras &gt; Fer_3 -->
+  <ResearchProjectDef>
+    <defName>EQ_R_Armaduras_Fer_3</defName>
+    <label>Couro e ferro III: Couraça</label>
+    <description>Couraça, armadura de couro pesada, elmo de couro pesado e elmo de placas. Chapa de carro batida no joelho: a couraça do Sindicato tem até o emblema da montadora.</description>
+    <baseCost>600</baseCost>
+    <techLevel>Medieval</techLevel>
+    <tab>EQ_RTab_Armaduras</tab>
+    <researchViewX>5</researchViewX>
+    <researchViewY>0.75</researchViewY>
+    <prerequisites><li>EQ_R_Armaduras_Fer_2</li></prerequisites>
+    <modExtensions>
+      <li Class="EcosDaQueda.ResearchEditorExt">
+        <unlocks><li>CE_Armor_Cuirass</li><li>VFEM2_Apparel_HeavyLeatherArmor</li><li>VFEM2_Apparel_HeavyLeatherHelmet</li><li>CE_Apparel_PlateHelmet</li></unlocks>
+        <branch>EQ_Ramo_Bancada</branch>
+      </li>
+    </modExtensions>
+  </ResearchProjectDef>
+
+  <!-- Armaduras &gt; Fer_4 -->
+  <ResearchProjectDef>
+    <defName>EQ_R_Armaduras_Fer_4</defName>
+    <label>Couro e ferro IV: Placas</label>
+    <description>Armadura de placas, armadura de placas pesada, elmo de placas pesado e escudo de cavaleiro. O arrombador do Reino do Lodo não lê manual, mas sabe ficar de pé debaixo de flechas.</description>
+    <baseCost>800</baseCost>
+    <techLevel>Medieval</techLevel>
+    <tab>EQ_RTab_Armaduras</tab>
+    <researchViewX>7.5</researchViewX>
+    <researchViewY>0.75</researchViewY>
+    <prerequisites><li>EQ_R_Armaduras_Fer_3</li></prerequisites>
+    <modExtensions>
+      <li Class="EcosDaQueda.ResearchEditorExt">
+        <unlocks><li>Apparel_PlateArmor</li><li>VFEM2_Apparel_PlateArmorHeavy</li><li>VFEM2_Apparel_PlateHelmetHeavy</li><li>VFEM2_Shield_Heater</li></unlocks>
+        <absorbs><li>PlateArmor</li></absorbs>
+        <branch>EQ_Ramo_Bancada</branch>
+      </li>
+    </modExtensions>
+  </ResearchProjectDef>
+
+  <!-- Armaduras &gt; Bal_1 -->
+  <ResearchProjectDef>
+    <defName>EQ_R_Armaduras_Bal_1</defName>
+    <label>Balística I: Colete e equipamento de carga</label>
+    <description>Colete macio, colete tático, mochilas (adulto, criança e grande), bandoleira pesada e óculos balísticos. Antes de parar uma bala, é preciso carregar munição suficiente para devolver.</description>
+    <baseCost>800</baseCost>
+    <techLevel>Industrial</techLevel>
+    <tab>EQ_RTab_Armaduras</tab>
+    <researchViewX>7.5</researchViewX>
+    <researchViewY>2.25</researchViewY>
+    <prerequisites><li>EQ_R_Armaduras_Fer_4</li><li>EQ_R_Producao_Fabrica_Usinagem</li></prerequisites>
+    <modExtensions>
+      <li Class="EcosDaQueda.ResearchEditorExt">
+        <unlocks><li>CE_Armor_SoftVest</li><li>CE_Apparel_TacVest</li><li>CE_Apparel_Backpack</li><li>CE_Apparel_KidBackpack</li><li>CE_Armor_LargeBackpack</li><li>Apparel_Bandolier</li><li>CE_Armor_BallisticGoggles</li></unlocks>
+        <branch>EQ_Ramo_Bancada</branch>
+      </li>
+    </modExtensions>
+  </ResearchProjectDef>
+
+  <!-- Armaduras &gt; Bal_2 -->
+  <ResearchProjectDef>
+    <defName>EQ_R_Armaduras_Bal_2</defName>
+    <label>Balística II: Antiestilhaço</label>
+    <description>Colete, calça e jaqueta antiestilhaço e o capacete avançado. Costurados com o tecido de para-quedas do Velho Mundo; o selo de garantia ainda está lá.</description>
+    <baseCost>1200</baseCost>
+    <techLevel>Industrial</techLevel>
+    <tab>EQ_RTab_Armaduras</tab>
+    <researchViewX>10</researchViewX>
+    <researchViewY>2.25</researchViewY>
+    <prerequisites><li>EQ_R_Armaduras_Bal_1</li></prerequisites>
+    <modExtensions>
+      <li Class="EcosDaQueda.ResearchEditorExt">
+        <unlocks><li>Apparel_FlakVest</li><li>Apparel_FlakPants</li><li>Apparel_FlakJacket</li><li>Apparel_AdvancedHelmet</li></unlocks>
+        <absorbs><li>FlakArmor</li></absorbs>
+        <branch>EQ_Ramo_Bancada</branch>
+      </li>
+    </modExtensions>
+  </ResearchProjectDef>
+
+  <!-- Armaduras &gt; Bal_3 -->
+  <ResearchProjectDef>
+    <defName>EQ_R_Armaduras_Bal_3</defName>
+    <label>Balística III: Compósitos</label>
+    <description>Colete compósito, armadura compósita, traje antiestilhaço, macacão Gorka e capacete compósito pesado. Cerâmica e fibra: a Hélice garante que protege, desde que você não precise dela duas vezes.</description>
+    <baseCost>1600</baseCost>
+    <techLevel>Industrial</techLevel>
+    <tab>EQ_RTab_Armaduras</tab>
+    <researchViewX>12.5</researchViewX>
+    <researchViewY>2.25</researchViewY>
+    <prerequisites><li>EQ_R_Armaduras_Bal_2</li></prerequisites>
+    <modExtensions>
+      <li Class="EcosDaQueda.ResearchEditorExt">
+        <unlocks><li>CE_Apparel_CompositeVest</li><li>CE_Apparel_CompositeArmor</li><li>CE_Armor_FragSuit</li><li>CE_Apparel_Gorka</li><li>CE_Apparel_HeavyCompositeHelmet</li></unlocks>
+        <branch>EQ_Ramo_Bancada</branch>
+      </li>
+    </modExtensions>
+  </ResearchProjectDef>
+
+  <!-- Armaduras &gt; Bal_4 -->
+  <ResearchProjectDef>
+    <defName>EQ_R_Armaduras_Bal_4</defName>
+    <label>Balística IV: Escudos balísticos e exoesqueleto</label>
+    <description>Escudo de assalto, escudo balístico, exoesqueleto motorizado e mochila de rádio. A tropa de choque que a Feira aluga para cobrar dívidas.</description>
+    <baseCost>2000</baseCost>
+    <techLevel>Industrial</techLevel>
+    <tab>EQ_RTab_Armaduras</tab>
+    <researchViewX>15</researchViewX>
+    <researchViewY>2.25</researchViewY>
+    <prerequisites><li>EQ_R_Armaduras_Bal_3</li><li>EQ_R_Producao_Lab_Micro</li></prerequisites>
+    <modExtensions>
+      <li Class="EcosDaQueda.ResearchEditorExt">
+        <unlocks><li>CE_Apparel_AssaultShield</li><li>CE_Apparel_BallisticShield</li><li>CE_Apparel_ExoFrame</li><li>CE_Apparel_RadioPack</li></unlocks>
+        <branch>EQ_Ramo_Bancada</branch>
+      </li>
+    </modExtensions>
+  </ResearchProjectDef>
+
+  <!-- Armaduras &gt; Spc_1 -->
+  <ResearchProjectDef>
+    <defName>EQ_R_Armaduras_Spc_1</defName>
+    <label>Armadura espacial I: Reconhecimento</label>
+    <description>Armadura e capacete de reconhecimento (com as versões de prestígio) e o visor eletrônico. A Forja chama de "entrada de linha"; custa o mesmo que uma colônia pequena.</description>
+    <baseCost>3500</baseCost>
+    <techLevel>Spacer</techLevel>
+    <tab>EQ_RTab_Armaduras</tab>
+    <researchViewX>17.5</researchViewX>
+    <researchViewY>3.75</researchViewY>
+    <prerequisites><li>EQ_R_Armaduras_Bal_4</li><li>EQ_R_Producao_Comp_Fabricacao</li></prerequisites>
+    <modExtensions>
+      <li Class="EcosDaQueda.ResearchEditorExt">
+        <unlocks><li>Apparel_ArmorRecon</li><li>Apparel_ArmorReconPrestige</li><li>Apparel_ArmorHelmetRecon</li><li>Apparel_ArmorHelmetReconPrestige</li><li>Apparel_Gunlink</li></unlocks>
+        <absorbs><li>ReconArmor</li><li>Gunlink</li></absorbs>
+        <branch>EQ_Ramo_Forja</branch>
+      </li>
+    </modExtensions>
+  </ResearchProjectDef>
+
+  <!-- Armaduras &gt; Spc_2 -->
+  <ResearchProjectDef>
+    <defName>EQ_R_Armaduras_Spc_2</defName>
+    <label>Armadura espacial II: Fuzileiro</label>
+    <description>Armadura e capacete de fuzileiro, armadura granadeira, armadura de corsário e as versões de prestígio. O cavaleiro da garantia dentro dela; o recall vem junto.</description>
+    <baseCost>4500</baseCost>
+    <techLevel>Spacer</techLevel>
+    <tab>EQ_RTab_Armaduras</tab>
+    <researchViewX>20</researchViewX>
+    <researchViewY>3.75</researchViewY>
+    <prerequisites><li>EQ_R_Armaduras_Spc_1</li></prerequisites>
+    <modExtensions>
+      <li Class="EcosDaQueda.ResearchEditorExt">
+        <unlocks><li>Apparel_PowerArmor</li><li>Apparel_PowerArmorHelmet</li><li>Apparel_ArmorMarineGrenadier</li><li>VFEP_Apparel_Privateer</li><li>Apparel_ArmorMarinePrestige</li><li>Apparel_ArmorMarineHelmetPrestige</li></unlocks>
+        <absorbs><li>PoweredArmor</li></absorbs>
+        <branch>EQ_Ramo_Forja</branch>
+      </li>
+    </modExtensions>
+  </ResearchProjectDef>
+
+  <!-- Armaduras &gt; Spc_3 -->
+  <ResearchProjectDef>
+    <defName>EQ_R_Armaduras_Spc_3</defName>
+    <label>Armadura espacial III: Janízaro</label>
+    <description>Couraça e capacete de janízaro. Desenho de uma guarda imperial que sobreviveu ao Império; o Coro compra, a Forja fabrica, e os dois fingem que não se conhecem.</description>
+    <baseCost>5000</baseCost>
+    <techLevel>Spacer</techLevel>
+    <tab>EQ_RTab_Armaduras</tab>
+    <researchViewX>22.5</researchViewX>
+    <researchViewY>3.75</researchViewY>
+    <prerequisites><li>EQ_R_Armaduras_Spc_2</li></prerequisites>
+    <modExtensions>
+      <li Class="EcosDaQueda.ResearchEditorExt">
+        <unlocks><li>VFEE_Apparel_JanissaryCuirass</li><li>VFEE_Apparel_JanissaryHelmet</li></unlocks>
+        <absorbs><li>VFEE_JanissaryGear</li></absorbs>
+        <branch>EQ_Ramo_Forja</branch>
+      </li>
+    </modExtensions>
+  </ResearchProjectDef>
+
+  <!-- Armaduras &gt; Spc_4 -->
+  <ResearchProjectDef>
+    <defName>EQ_R_Armaduras_Spc_4</defName>
+    <label>Armadura espacial IV: Catafrata</label>
+    <description>Armadura catafrática, armadura fênix, capacete catafrático e as versões de prestígio. O tanque que anda: a última coisa que o enxame viu antes de vencer a guerra mesmo assim.</description>
+    <baseCost>6000</baseCost>
+    <techLevel>Spacer</techLevel>
+    <tab>EQ_RTab_Armaduras</tab>
+    <researchViewX>25</researchViewX>
+    <researchViewY>3.75</researchViewY>
+    <prerequisites><li>EQ_R_Armaduras_Spc_3</li></prerequisites>
+    <modExtensions>
+      <li Class="EcosDaQueda.ResearchEditorExt">
+        <unlocks><li>Apparel_ArmorCataphract</li><li>Apparel_ArmorCataphractPhoenix</li><li>Apparel_ArmorCataphractPrestige</li><li>Apparel_ArmorHelmetCataphract</li><li>Apparel_ArmorHelmetCataphractPrestige</li></unlocks>
+        <absorbs><li>CataphractArmor</li></absorbs>
+        <branch>EQ_Ramo_Forja</branch>
+      </li>
+    </modExtensions>
+  </ResearchProjectDef>
+
+  <!-- Armaduras &gt; Opt_1 -->
+  <ResearchProjectDef>
+    <defName>EQ_R_Armaduras_Opt_1</defName>
+    <label>Óptica I: Visão noturna</label>
+    <description>Monóculo de visão noturna. A Ordem do Silêncio estuda o escuro há gerações; vende o monóculo para quem promete contar o que viu.</description>
+    <baseCost>900</baseCost>
+    <techLevel>Industrial</techLevel>
+    <tab>EQ_RTab_Armaduras</tab>
+    <researchViewX>10</researchViewX>
+    <researchViewY>0.75</researchViewY>
+    <prerequisites><li>EQ_R_Armaduras_Bal_1</li></prerequisites>
+    <modExtensions>
+      <li Class="EcosDaQueda.ResearchEditorExt">
+        <unlocks><li>CE_Apparel_SimpleNightVision</li></unlocks>
+        <absorbs><li>CE_SimpleNV</li></absorbs>
+        <branch>EQ_Ramo_Silencio</branch>
+      </li>
+    </modExtensions>
+  </ResearchProjectDef>
+
+  <!-- Armaduras &gt; Opt_2 -->
+  <ResearchProjectDef>
+    <defName>EQ_R_Armaduras_Opt_2</defName>
+    <label>Óptica II: Visão noturna avançada</label>
+    <description>Óculos de visão noturna avançados. Enxergar no escuro é fácil; difícil é esquecer o que a Ordem pediu para você não ver.</description>
+    <baseCost>1200</baseCost>
+    <techLevel>Industrial</techLevel>
+    <tab>EQ_RTab_Armaduras</tab>
+    <researchViewX>15</researchViewX>
+    <researchViewY>1.5</researchViewY>
+    <prerequisites><li>EQ_R_Armaduras_Opt_1</li><li>EQ_R_Producao_Lab_Micro</li></prerequisites>
+    <modExtensions>
+      <li Class="EcosDaQueda.ResearchEditorExt">
+        <unlocks><li>CE_Apparel_AdvancedNightVision</li></unlocks>
+        <absorbs><li>CE_AdvancedNV</li></absorbs>
+        <branch>EQ_Ramo_Silencio</branch>
+      </li>
+    </modExtensions>
+  </ResearchProjectDef>
+
+  <!-- Armaduras &gt; Salto -->
+  <ResearchProjectDef>
+    <defName>EQ_R_Armaduras_Salto</defName>
+    <label>Aparato de salto</label>
+    <description>Aparato de salto e a armadura gafanhoto. O Coro usa para que o tenor de guerra chegue antes da própria voz.</description>
+    <baseCost>2500</baseCost>
+    <techLevel>Spacer</techLevel>
+    <tab>EQ_RTab_Armaduras</tab>
+    <researchViewX>20</researchViewX>
+    <researchViewY>5</researchViewY>
+    <prerequisites><li>EQ_R_Armaduras_Spc_1</li></prerequisites>
+    <modExtensions>
+      <li Class="EcosDaQueda.ResearchEditorExt">
+        <unlocks><li>Apparel_PackJump</li><li>Apparel_ArmorLocust</li></unlocks>
+        <absorbs><li>JumpPack</li></absorbs>
+        <branch>EQ_Ramo_Coro</branch>
+      </li>
+    </modExtensions>
+  </ResearchProjectDef>
+
+  <!-- Armaduras &gt; Caixao -->
+  <ResearchProjectDef>
+    <defName>EQ_R_Armaduras_Caixao</defName>
+    <label>Caixões de guerra</label>
+    <description>Fundição de caixão de guerra. Um soldado soldado dentro da armadura para sempre: a Forja chama de "fidelização do cliente".</description>
+    <baseCost>3000</baseCost>
+    <techLevel>Industrial</techLevel>
+    <tab>EQ_RTab_Armaduras</tab>
+    <researchViewX>15</researchViewX>
+    <researchViewY>3</researchViewY>
+    <prerequisites><li>EQ_R_Armaduras_Bal_4</li></prerequisites>
+    <modExtensions>
+      <li Class="EcosDaQueda.ResearchEditorExt">
+        <unlocks><li>VFEP_WarcasketFoundry</li></unlocks>
+        <absorbs><li>VFEP_Warcaskets</li></absorbs>
+        <branch>EQ_Ramo_Forja</branch>
+      </li>
+    </modExtensions>
+  </ResearchProjectDef>
+
+  <ResearchTabDef>
     <defName>EQ_RTab_Armas</defName>
     <label>Armas e munição</label>
     <generalTitle>Armas e munição</generalTitle>
