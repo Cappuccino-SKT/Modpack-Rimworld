@@ -469,6 +469,8 @@ namespace EcosDaQueda.DebugTools
                 case "tributenow": return EQMundoDebug.TributeNow();
                 case "playertiles": return EQMundoDebug.PlayerTiles();
                 case "nation": return EQNacaoDebug.Run(a); case "council": return EQConselhoDebug.Run(a);
+                case "occupation": return EQOcupacaoDebug.Run(a);
+                case "tradergroup": return EQOcupacaoDebug.TraderGroup(Arg(1));
                 case "frontierskip": return EQMundoDebug.FrontierSkip(int.Parse(Arg(1)));
                 case "worldfixed": return EQMundoDebug.Fixed();
                 case "worlddump": return EQWorldConverter.Dump(Arg(1));

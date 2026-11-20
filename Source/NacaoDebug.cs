@@ -87,6 +87,24 @@ namespace EcosDaQueda.DebugTools
                 case "classic": return EQNationFaith.MakePlayerClassic() + "\n" + Show();
                 case "faith": return "fé: " + (EQNationFaith.LastReport ?? "-") + "\n" + Show();
                 case "found": c.Victory(); return EQNation.LastReport + "\n" + Show();
+                // N2c: "nation negotiate [ok|fail]" (Pacifista) e "nation windown" (vence derrubando, sem matar: Conversão violenta)
+                case "negotiate":
+                {
+                    bool? force = a.Length > 2 ? (bool?)(a[2] == "ok") : null;
+                    string err = c.Negotiate(force);
+                    return (err != null ? "RECUSADO: " + err : EQNation.LastReport) + " | fundação: " + (EQGov.LastFounding ?? "-") + "\n" + Show();
+                }
+                case "windown":
+                {
+                    if (c.stage != NationStage.Revolt) return "sem revolta";
+                    Faction rf = EQNation.RevoltFaction;
+                    int n = 0;
+                    foreach (Pawn p in c.revolters.Concat(c.map?.mapPawns.SpawnedPawnsInFaction(rf) ?? new List<Pawn>()).Distinct().ToList())
+                        if (!p.Dead && p.Spawned && !p.Downed) { HealthUtility.DamageUntilDowned(p, allowBleedingWounds: false); n++; }
+                    c.CheckRevolt();
+                    return "revoltosos derrubados=" + n + "; " + EQNation.LastReport + " | fundação: " + (EQGov.LastFounding ?? "-")
+                           + " | colonos=" + Find.AnyPlayerHomeMap?.mapPawns.FreeColonistsCount + "\n" + Show();
+                }
                 case "invasion":
                 {
                     if (EQNation.InvasionVetoProbe == null) return "sem sonda do Hegemony";
