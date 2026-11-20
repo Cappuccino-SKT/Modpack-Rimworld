@@ -326,6 +326,903 @@
   </ResearchProjectDef>
 
   <ResearchTabDef>
+    <defName>EQ_RTab_Armas</defName>
+    <label>Armas e munição</label>
+    <generalTitle>Armas e munição</generalTitle>
+    <generalDescription>Do cano de encanamento ao laser do Império. Armas de fogo por era (Sucata, Armaria, Oficina automática, Arsenal do Velho Mundo, Armas de carga, Laser recuperado), cada era em quatro passos: pistolas, armas leves, fuzis e apoio. A munição comum vem com a primeira arma do calibre; a especial tem pesquisa própria por era. Linhas laterais: Pólvora negra, Explosivos, Arcos e Corpo a corpo.</generalDescription>
+  </ResearchTabDef>
+
+  <!-- Armas e munição &gt; Suc_1 -->
+  <ResearchProjectDef>
+    <defName>EQ_R_Armas_Suc_1</defName>
+    <label>Sucata I: Pistola de cano</label>
+    <description>Pistola improvisada (9×19 mm) e a bancada de recarga, com a munição comum. Cano de encanamento, mola de colchão e fé. É a primeira arma de fogo que qualquer um consegue montar depois da Queda, e o Sindicato do Saque jura que a patente é dele.</description>
+    <baseCost>300</baseCost>
+    <techLevel>Medieval</techLevel>
+    <tab>EQ_RTab_Armas</tab>
+    <researchViewX>0</researchViewX>
+    <researchViewY>0</researchViewY>
+    <modExtensions>
+      <li Class="EcosDaQueda.ResearchEditorExt">
+        <unlocks><li>VWE_Gun_MakeshiftPistol</li><li>AmmoBench</li><li>Ammo_9x19mmPara_AP</li><li>Ammo_9x19mmPara_FMJ</li><li>Ammo_9x19mmPara_HP</li></unlocks>
+        <absorbs><li>VWE_MakeshiftWeapons</li></absorbs>
+        <branch>EQ_Ramo_Bancada</branch>
+      </li>
+    </modExtensions>
+  </ResearchProjectDef>
+
+  <!-- Armas e munição &gt; Suc_2 -->
+  <ResearchProjectDef>
+    <defName>EQ_R_Armas_Suc_2</defName>
+    <label>Sucata II: Submetralhadora e escopeta de lata</label>
+    <description>Submetralhadora improvisada e escopeta improvisada (calibre 12, com chumbo, balote e bala de borracha). Disparam quando querem, mas quase sempre para a frente.</description>
+    <baseCost>400</baseCost>
+    <techLevel>Medieval</techLevel>
+    <tab>EQ_RTab_Armas</tab>
+    <researchViewX>2.5</researchViewX>
+    <researchViewY>0</researchViewY>
+    <prerequisites><li>EQ_R_Armas_Suc_1</li></prerequisites>
+    <modExtensions>
+      <li Class="EcosDaQueda.ResearchEditorExt">
+        <unlocks><li>VWE_Gun_MakeshiftSMG</li><li>VWE_Gun_MakeshiftShotgun</li><li>Ammo_12Gauge_Beanbag</li><li>Ammo_12Gauge_Buck</li><li>Ammo_12Gauge_Slug</li></unlocks>
+        <branch>EQ_Ramo_Bancada</branch>
+      </li>
+    </modExtensions>
+  </ResearchProjectDef>
+
+  <!-- Armas e munição &gt; Suc_3 -->
+  <ResearchProjectDef>
+    <defName>EQ_R_Armas_Suc_3</defName>
+    <label>Sucata III: Fuzil de sucata</label>
+    <description>Fuzil improvisado (7,62×39 mm). Montado com três fuzis do Velho Mundo que não funcionavam; agora é um que funciona mais ou menos.</description>
+    <baseCost>500</baseCost>
+    <techLevel>Medieval</techLevel>
+    <tab>EQ_RTab_Armas</tab>
+    <researchViewX>5</researchViewX>
+    <researchViewY>0</researchViewY>
+    <prerequisites><li>EQ_R_Armas_Suc_2</li></prerequisites>
+    <modExtensions>
+      <li Class="EcosDaQueda.ResearchEditorExt">
+        <unlocks><li>VWE_Gun_MakeshiftRifle</li><li>Ammo_762x39mmSoviet_AP</li><li>Ammo_762x39mmSoviet_FMJ</li><li>Ammo_762x39mmSoviet_HP</li></unlocks>
+        <branch>EQ_Ramo_Bancada</branch>
+      </li>
+    </modExtensions>
+  </ResearchProjectDef>
+
+  <!-- Armas e munição &gt; Suc_4 -->
+  <ResearchProjectDef>
+    <defName>EQ_R_Armas_Suc_4</defName>
+    <label>Sucata IV: Metralhadora de ferro-velho</label>
+    <description>Metralhadora leve improvisada (7,62×54 mmR). Quando ela canta, o piquete do Sindicato vira barricada e a negociação salarial termina.</description>
+    <baseCost>700</baseCost>
+    <techLevel>Medieval</techLevel>
+    <tab>EQ_RTab_Armas</tab>
+    <researchViewX>7.5</researchViewX>
+    <researchViewY>0</researchViewY>
+    <prerequisites><li>EQ_R_Armas_Suc_3</li></prerequisites>
+    <modExtensions>
+      <li Class="EcosDaQueda.ResearchEditorExt">
+        <unlocks><li>VWE_Gun_MakeshiftLMG</li><li>Ammo_762x54mmR_AP</li><li>Ammo_762x54mmR_FMJ</li><li>Ammo_762x54mmR_HP</li></unlocks>
+        <branch>EQ_Ramo_Bancada</branch>
+      </li>
+    </modExtensions>
+  </ResearchProjectDef>
+
+  <!-- Armas e munição &gt; Suc_Esp -->
+  <ResearchProjectDef>
+    <defName>EQ_R_Armas_Suc_Esp</defName>
+    <label>Munição especial I: Recarga suja</label>
+    <description>Munição incendiária, explosiva e perfurante (sabot) dos calibres de sucata. Pólvora de adubo e ponta de prego; o Reino do Lodo chama isso de "tempero".</description>
+    <baseCost>600</baseCost>
+    <techLevel>Medieval</techLevel>
+    <tab>EQ_RTab_Armas</tab>
+    <researchViewX>7.5</researchViewX>
+    <researchViewY>-0.75</researchViewY>
+    <prerequisites><li>EQ_R_Armas_Suc_4</li><li>EQ_R_Fazenda_Lav_Outros_1</li></prerequisites>
+    <modExtensions>
+      <li Class="EcosDaQueda.ResearchEditorExt">
+        <unlocks><li>Ammo_12Gauge_ElectroSlug</li><li>Ammo_762x39mmSoviet_HE</li><li>Ammo_762x39mmSoviet_Incendiary</li><li>Ammo_762x39mmSoviet_Sabot</li><li>Ammo_762x54mmR_HE</li><li>Ammo_762x54mmR_Incendiary</li><li>Ammo_762x54mmR_Sabot</li></unlocks>
+        <branch>EQ_Ramo_Bancada</branch>
+      </li>
+    </modExtensions>
+  </ResearchProjectDef>
+
+  <!-- Armas e munição &gt; Arm_1 -->
+  <ResearchProjectDef>
+    <defName>EQ_R_Armas_Arm_1</defName>
+    <label>Armaria I: Revólveres e pistolas antigas</label>
+    <description>Revólver, revólver pesado, revólveres da fronteira, pistola Volcanic, pistola da fronteira (Mauser), S&amp;W Governor, Taurus Judge, com a munição comum de cada calibre. Os manuais do Velho Mundo chamavam isso de "arma de colecionador". Aqui chamam de "arma".</description>
+    <baseCost>600</baseCost>
+    <techLevel>Industrial</techLevel>
+    <tab>EQ_RTab_Armas</tab>
+    <researchViewX>7.5</researchViewX>
+    <researchViewY>1.5</researchViewY>
+    <prerequisites><li>EQ_R_Armas_Suc_4</li><li>EQ_R_Producao_Fabrica_Usinagem</li></prerequisites>
+    <modExtensions>
+      <li Class="EcosDaQueda.ResearchEditorExt">
+        <unlocks><li>Gun_Revolver</li><li>VWE_Gun_HandCannon</li><li>VWEFT_Gun_HeavyRevolver</li><li>VWEFT_Gun_FrontierPistol</li><li>VWEFT_Gun_VolcanicPistol</li><li>CE_Gun_SWGovernor</li><li>CE_Gun_TaurusJudge</li><li>Ammo_44Magnum_AP</li><li>Ammo_44Magnum_FMJ</li><li>Ammo_44Magnum_HP</li><li>Ammo_357Magnum_AP</li><li>Ammo_357Magnum_FMJ</li><li>Ammo_357Magnum_HP</li><li>Ammo_763x25mmMauser_AP</li><li>Ammo_763x25mmMauser_FMJ</li><li>Ammo_763x25mmMauser_HP</li><li>Ammo_25ACP_AP</li><li>Ammo_25ACP_FMJ</li><li>Ammo_25ACP_HP</li><li>Ammo_45ACP_AP</li><li>Ammo_45ACP_FMJ</li><li>Ammo_45ACP_HP</li><li>Ammo_410Bore_Beanbag</li><li>Ammo_410Bore_Buck</li><li>Ammo_410Bore_Slug</li><li>Ammo_45Colt_AP</li><li>Ammo_45Colt_FMJ</li><li>Ammo_45Colt_HP</li></unlocks>
+        <absorbs><li>Gunsmithing</li></absorbs>
+        <branch>EQ_Ramo_Bancada</branch>
+      </li>
+    </modExtensions>
+  </ResearchProjectDef>
+
+  <!-- Armas e munição &gt; Arm_2 -->
+  <ResearchProjectDef>
+    <defName>EQ_R_Armas_Arm_2</defName>
+    <label>Armaria II: Escopetas e carabinas de alavanca</label>
+    <description>Escopeta de bomba, escopetas de cano serrado, escopeta de repetição, KS-23 e as carabinas de alavanca (Winchester 94 e 1886, Henry Side Gate, Henry Big Boy, fuzil de alavanca). A arma da fronteira volta porque a fronteira voltou.</description>
+    <baseCost>800</baseCost>
+    <techLevel>Industrial</techLevel>
+    <tab>EQ_RTab_Armas</tab>
+    <researchViewX>10</researchViewX>
+    <researchViewY>1.5</researchViewY>
+    <prerequisites><li>EQ_R_Armas_Arm_1</li></prerequisites>
+    <modExtensions>
+      <li Class="EcosDaQueda.ResearchEditorExt">
+        <unlocks><li>Gun_PumpShotgun</li><li>CE_Gun_SawedOff</li><li>VWE_SawedOffShotgun</li><li>VWEFT_Gun_RepeatingShotgun</li><li>CE_Gun_KSTwentyThree</li><li>CE_Gun_WinchesterNintyFour</li><li>CE_Gun_WinchesterEightySix</li><li>CE_Gun_HenrySideGate</li><li>CE_Gun_BigBoy</li><li>VWE_Gun_LeverActionRifle</li><li>Ammo_23x75mmR_Beanbag</li><li>Ammo_23x75mmR_Buck</li><li>Ammo_23x75mmR_Slug</li><li>Ammo_4570Gov_AP</li><li>Ammo_4570Gov_FMJ</li><li>Ammo_4570Gov_HP</li><li>Ammo_3030Winchester_AP</li><li>Ammo_3030Winchester_FMJ</li><li>Ammo_3030Winchester_HP</li></unlocks>
+        <absorbs><li>VWEFT_FrontierWeapons</li></absorbs>
+        <branch>EQ_Ramo_Bancada</branch>
+      </li>
+    </modExtensions>
+  </ResearchProjectDef>
+
+  <!-- Armas e munição &gt; Arm_3 -->
+  <ResearchProjectDef>
+    <defName>EQ_R_Armas_Arm_3</defName>
+    <label>Armaria III: Fuzis de ferrolho</label>
+    <description>Espingarda de repetição, Mosin-Nagant, M1917 Enfield, M1903 Springfield, fuzil Rolling Block e o MosqueFAL. Um tiro, um ferrolho, um morto: a matemática preferida dos caçadores de cabeça.</description>
+    <baseCost>1000</baseCost>
+    <techLevel>Industrial</techLevel>
+    <tab>EQ_RTab_Armas</tab>
+    <researchViewX>12.5</researchViewX>
+    <researchViewY>1.5</researchViewY>
+    <prerequisites><li>EQ_R_Armas_Arm_2</li></prerequisites>
+    <modExtensions>
+      <li Class="EcosDaQueda.ResearchEditorExt">
+        <unlocks><li>Gun_BoltActionRifle</li><li>CE_Gun_MosinNagant</li><li>CE_Gun_M1917Enfield</li><li>CE_Gun_M1903Springfield</li><li>VWEFT_Gun_RollingBlockRifle</li><li>CE_Gun_MosqueFAL</li><li>Ammo_303British_AP</li><li>Ammo_303British_FMJ</li><li>Ammo_303British_HP</li><li>Ammo_3006Springfield_AP</li><li>Ammo_3006Springfield_FMJ</li><li>Ammo_3006Springfield_HP</li><li>Ammo_762x51mmNATO_AP</li><li>Ammo_762x51mmNATO_FMJ</li><li>Ammo_762x51mmNATO_HP</li></unlocks>
+        <branch>EQ_Ramo_Bancada</branch>
+      </li>
+    </modExtensions>
+  </ResearchProjectDef>
+
+  <!-- Armas e munição &gt; Arm_4 -->
+  <ResearchProjectDef>
+    <defName>EQ_R_Armas_Arm_4</defName>
+    <label>Armaria IV: Primeiras metralhadoras</label>
+    <description>Metralhadora Lewis, metralhadora Madsen, fuzil antitanque Boys e o binóculo com rádio para guiar a artilharia. O tipo de arma que ganhou guerras antes da guerra que perdeu o mundo.</description>
+    <baseCost>1200</baseCost>
+    <techLevel>Industrial</techLevel>
+    <tab>EQ_RTab_Armas</tab>
+    <researchViewX>15</researchViewX>
+    <researchViewY>1.5</researchViewY>
+    <prerequisites><li>EQ_R_Armas_Arm_3</li></prerequisites>
+    <modExtensions>
+      <li Class="EcosDaQueda.ResearchEditorExt">
+        <unlocks><li>CE_Gun_Lewis</li><li>CE_Gun_MadsenLMG</li><li>CE_Gun_BoysRifle</li><li>Gun_BinocularsRadio</li><li>Ammo_50BMG_AP</li><li>Ammo_50BMG_FMJ</li></unlocks>
+        <branch>EQ_Ramo_Bancada</branch>
+      </li>
+    </modExtensions>
+  </ResearchProjectDef>
+
+  <!-- Armas e munição &gt; Arm_Esp -->
+  <ResearchProjectDef>
+    <defName>EQ_R_Armas_Arm_Esp</defName>
+    <label>Munição especial II: Cartucho de armeiro</label>
+    <description>Munição incendiária, explosiva, sabot e flechette dos calibres da Armaria. O armeiro cobra por cartucho e jura que cada um foi carregado à mão; alguns foram.</description>
+    <baseCost>1000</baseCost>
+    <techLevel>Industrial</techLevel>
+    <tab>EQ_RTab_Armas</tab>
+    <researchViewX>15</researchViewX>
+    <researchViewY>0.75</researchViewY>
+    <prerequisites><li>EQ_R_Armas_Arm_4</li><li>EQ_R_Armas_Suc_Esp</li></prerequisites>
+    <modExtensions>
+      <li Class="EcosDaQueda.ResearchEditorExt">
+        <unlocks><li>Ammo_410Bore_ElectroSlug</li><li>Ammo_23x75mmR_ElectroSlug</li><li>Ammo_4570Gov_HE</li><li>Ammo_4570Gov_Incendiary</li><li>Ammo_4570Gov_Sabot</li><li>Ammo_3030Winchester_HE</li><li>Ammo_3030Winchester_Incendiary</li><li>Ammo_3030Winchester_Sabot</li><li>Ammo_303British_HE</li><li>Ammo_303British_Incendiary</li><li>Ammo_303British_Sabot</li><li>Ammo_3006Springfield_HE</li><li>Ammo_3006Springfield_Incendiary</li><li>Ammo_3006Springfield_Sabot</li><li>Ammo_762x51mmNATO_HE</li><li>Ammo_762x51mmNATO_Incendiary</li><li>Ammo_762x51mmNATO_Sabot</li><li>Ammo_50BMG_HE</li><li>Ammo_50BMG_Incendiary</li><li>Ammo_50BMG_Sabot</li></unlocks>
+        <branch>EQ_Ramo_Bancada</branch>
+      </li>
+    </modExtensions>
+  </ResearchProjectDef>
+
+  <!-- Armas e munição &gt; Aut_1 -->
+  <ResearchProjectDef>
+    <defName>EQ_R_Armas_Aut_1</defName>
+    <label>Oficina automática I: Pistolas automáticas</label>
+    <description>Pistola automática, Jericho 941, pistola de combate, Five-seveN, KelTec CP33 e Desert Eagle. Contragolpe: a arma se recarrega sozinha. O atirador ainda precisa ser recarregado com comida.</description>
+    <baseCost>1200</baseCost>
+    <techLevel>Industrial</techLevel>
+    <tab>EQ_RTab_Armas</tab>
+    <researchViewX>15</researchViewX>
+    <researchViewY>3</researchViewY>
+    <prerequisites><li>EQ_R_Armas_Arm_4</li></prerequisites>
+    <modExtensions>
+      <li Class="EcosDaQueda.ResearchEditorExt">
+        <unlocks><li>Gun_Autopistol</li><li>CE_Gun_Jericho</li><li>VWE_CombatHandgun</li><li>CE_Gun_FNFiveSeven</li><li>CE_Gun_KelTecCPThirtyThree</li><li>CE_Gun_Deagke</li><li>Ammo_FN57x28mm_AP</li><li>Ammo_FN57x28mm_FMJ</li><li>Ammo_FN57x28mm_HP</li><li>Ammo_22LR_AP</li><li>Ammo_22LR_FMJ</li><li>Ammo_22LR_HP</li></unlocks>
+        <absorbs><li>BlowbackOperation</li></absorbs>
+        <branch>EQ_Ramo_Bancada</branch>
+      </li>
+    </modExtensions>
+  </ResearchProjectDef>
+
+  <!-- Armas e munição &gt; Aut_2 -->
+  <ResearchProjectDef>
+    <defName>EQ_R_Armas_Aut_2</defName>
+    <label>Oficina automática II: Submetralhadoras</label>
+    <description>Submetralhadora, submetralhadora pesada, submetralhadora leve, SMG, Uzi, Micro Uzi, American-180, espingarda automática e a escopeta de trincheira. Para quando o problema chega em grupo.</description>
+    <baseCost>1400</baseCost>
+    <techLevel>Industrial</techLevel>
+    <tab>EQ_RTab_Armas</tab>
+    <researchViewX>17.5</researchViewX>
+    <researchViewY>3</researchViewY>
+    <prerequisites><li>EQ_R_Armas_Aut_1</li></prerequisites>
+    <modExtensions>
+      <li Class="EcosDaQueda.ResearchEditorExt">
+        <unlocks><li>Gun_MachinePistol</li><li>Gun_HeavySMG</li><li>VWE_Gun_LightSMG</li><li>VWE_Gun_SMG</li><li>CE_Gun_Uzi</li><li>CE_Gun_MicroUzi</li><li>CE_Gun_AmericanOneEighty</li><li>Gun_ChainShotgun</li><li>VWE_TrenchGun</li></unlocks>
+        <branch>EQ_Ramo_Bancada</branch>
+      </li>
+    </modExtensions>
+  </ResearchProjectDef>
+
+  <!-- Armas e munição &gt; Aut_3 -->
+  <ResearchProjectDef>
+    <defName>EQ_R_Armas_Aut_3</defName>
+    <label>Oficina automática III: Fuzis semiautomáticos</label>
+    <description>M1 Garand, SKS, fuzil semiautomático e Ruger Mini-14. Operação a gás, o mesmo princípio que o Reino do Lodo usa no chiqueiro.</description>
+    <baseCost>1600</baseCost>
+    <techLevel>Industrial</techLevel>
+    <tab>EQ_RTab_Armas</tab>
+    <researchViewX>20</researchViewX>
+    <researchViewY>3</researchViewY>
+    <prerequisites><li>EQ_R_Armas_Aut_2</li></prerequisites>
+    <modExtensions>
+      <li Class="EcosDaQueda.ResearchEditorExt">
+        <unlocks><li>CE_Gun_M1Garand</li><li>CE_Gun_SKS</li><li>VWE_Gun_SemiAutomaticRifle</li><li>CE_Gun_MiniFourteen</li><li>Ammo_556x45mmNATO_AP</li><li>Ammo_556x45mmNATO_FMJ</li><li>Ammo_556x45mmNATO_HP</li></unlocks>
+        <absorbs><li>GasOperation</li></absorbs>
+        <branch>EQ_Ramo_Bancada</branch>
+      </li>
+    </modExtensions>
+  </ResearchProjectDef>
+
+  <!-- Armas e munição &gt; Aut_4 -->
+  <ResearchProjectDef>
+    <defName>EQ_R_Armas_Aut_4</defName>
+    <label>Oficina automática IV: Metralhadoras de apoio</label>
+    <description>Metralhadora leve, Browning Automatic Rifle, DP-27 e o fuzil antitanque PTRS-41. Metralhadora de verdade, com cano de troca, para quem já tem algo que vale a pena defender.</description>
+    <baseCost>1900</baseCost>
+    <techLevel>Industrial</techLevel>
+    <tab>EQ_RTab_Armas</tab>
+    <researchViewX>22.5</researchViewX>
+    <researchViewY>3</researchViewY>
+    <prerequisites><li>EQ_R_Armas_Aut_3</li></prerequisites>
+    <modExtensions>
+      <li Class="EcosDaQueda.ResearchEditorExt">
+        <unlocks><li>Gun_LMG</li><li>CE_Gun_BAR</li><li>CE_Gun_DPtwentySeven</li><li>CE_Gun_PTRS</li><li>Ammo_145x114mm_AP</li><li>Ammo_145x114mm_FMJ</li></unlocks>
+        <branch>EQ_Ramo_Bancada</branch>
+      </li>
+    </modExtensions>
+  </ResearchProjectDef>
+
+  <!-- Armas e munição &gt; Aut_Esp -->
+  <ResearchProjectDef>
+    <defName>EQ_R_Armas_Aut_Esp</defName>
+    <label>Munição especial III: Munição militar</label>
+    <description>Munição incendiária, explosiva e sabot dos calibres automáticos; substitui a Munição avançada do Combat Extended. Vendida em caixas com o selo de um exército que não existe mais.</description>
+    <baseCost>1500</baseCost>
+    <techLevel>Industrial</techLevel>
+    <tab>EQ_RTab_Armas</tab>
+    <researchViewX>22.5</researchViewX>
+    <researchViewY>2.25</researchViewY>
+    <prerequisites><li>EQ_R_Armas_Aut_4</li><li>EQ_R_Armas_Arm_Esp</li></prerequisites>
+    <modExtensions>
+      <li Class="EcosDaQueda.ResearchEditorExt">
+        <unlocks><li>Ammo_556x45mmNATO_HE</li><li>Ammo_556x45mmNATO_Incendiary</li><li>Ammo_556x45mmNATO_Sabot</li><li>Ammo_145x114mm_HE</li><li>Ammo_145x114mm_Incendiary</li><li>Ammo_145x114mm_Sabot</li></unlocks>
+        <absorbs><li>CE_AdvancedAmmo</li></absorbs>
+        <branch>EQ_Ramo_Bancada</branch>
+      </li>
+    </modExtensions>
+  </ResearchProjectDef>
+
+  <!-- Armas e munição &gt; VM_1 -->
+  <ResearchProjectDef>
+    <defName>EQ_R_Armas_VM_1</defName>
+    <label>Arsenal do Velho Mundo I: Carabinas compactas</label>
+    <description>AKMS-U, AKS-74U, SIG MCX e P90. Desenhos militares de antes da Queda, tirados de abrigos e de discos que ninguém devia ter lido.</description>
+    <baseCost>2000</baseCost>
+    <techLevel>Industrial</techLevel>
+    <tab>EQ_RTab_Armas</tab>
+    <researchViewX>22.5</researchViewX>
+    <researchViewY>4.5</researchViewY>
+    <prerequisites><li>EQ_R_Armas_Aut_4</li><li>EQ_R_Producao_Lab_Micro</li></prerequisites>
+    <modExtensions>
+      <li Class="EcosDaQueda.ResearchEditorExt">
+        <unlocks><li>CE_Gun_AKMSU</li><li>CE_Gun_AKSSeventyFourU</li><li>CE_Gun_SigMCX</li><li>CE_Gun_PNinety</li><li>Ammo_545x39mmSoviet_AP</li><li>Ammo_545x39mmSoviet_FMJ</li><li>Ammo_545x39mmSoviet_HP</li></unlocks>
+        <absorbs><li>PrecisionRifling</li></absorbs>
+        <branch>EQ_Ramo_VelhoMundo</branch>
+      </li>
+    </modExtensions>
+  </ResearchProjectDef>
+
+  <!-- Armas e munição &gt; VM_2 -->
+  <ResearchProjectDef>
+    <defName>EQ_R_Armas_VM_2</defName>
+    <label>Arsenal do Velho Mundo II: Fuzis de assalto</label>
+    <description>Rifle de assalto, AKM, AK-12, AK-74 com lança-granadas, fuzil de serviço, carabina e a escopeta automática USAS-12. O fuzil que derrubou governos agora derruba cercas de vizinho.</description>
+    <baseCost>2400</baseCost>
+    <techLevel>Industrial</techLevel>
+    <tab>EQ_RTab_Armas</tab>
+    <researchViewX>25</researchViewX>
+    <researchViewY>4.5</researchViewY>
+    <prerequisites><li>EQ_R_Armas_VM_1</li></prerequisites>
+    <modExtensions>
+      <li Class="EcosDaQueda.ResearchEditorExt">
+        <unlocks><li>Gun_AssaultRifle</li><li>CE_Gun_AKM</li><li>CE_Gun_AKTwelve</li><li>CE_Gun_AK74GL</li><li>VWE_Gun_ServiceRifle</li><li>VWE_Gun_Carbine</li><li>CE_Gun_USASTwelve</li></unlocks>
+        <branch>EQ_Ramo_VelhoMundo</branch>
+      </li>
+    </modExtensions>
+  </ResearchProjectDef>
+
+  <!-- Armas e munição &gt; VM_3 -->
+  <ResearchProjectDef>
+    <defName>EQ_R_Armas_VM_3</defName>
+    <label>Arsenal do Velho Mundo III: Fuzis de batalha e precisão</label>
+    <description>FN FAL, fuzil de batalha, SR-25, Tavor 7, M7, SVD, fuzil de atirador, AVB-7.62, SRS e o rifle de precisão. Para resolver a diplomacia a oitocentos metros.</description>
+    <baseCost>2800</baseCost>
+    <techLevel>Industrial</techLevel>
+    <tab>EQ_RTab_Armas</tab>
+    <researchViewX>27.5</researchViewX>
+    <researchViewY>4.5</researchViewY>
+    <prerequisites><li>EQ_R_Armas_VM_2</li></prerequisites>
+    <modExtensions>
+      <li Class="EcosDaQueda.ResearchEditorExt">
+        <unlocks><li>CE_Gun_FNFAL</li><li>VWE_Gun_BattleRifle</li><li>CE_Gun_SRTweintyFive</li><li>CE_Gun_TavorSeven</li><li>CE_Gun_MSeven</li><li>CE_Gun_SVD</li><li>VWE_Gun_MarksmanRifle</li><li>CE_Gun_AVB</li><li>CE_Gun_SRS</li><li>Gun_SniperRifle</li><li>Ammo_277Fury_AP</li><li>Ammo_277Fury_FMJ</li><li>Ammo_277Fury_HP</li><li>Ammo_338Norma_AP</li><li>Ammo_338Norma_FMJ</li></unlocks>
+        <branch>EQ_Ramo_VelhoMundo</branch>
+      </li>
+    </modExtensions>
+  </ResearchProjectDef>
+
+  <!-- Armas e munição &gt; VM_4 -->
+  <ResearchProjectDef>
+    <defName>EQ_R_Armas_VM_4</defName>
+    <label>Arsenal do Velho Mundo IV: Metralhadoras e antimaterial</label>
+    <description>RPD, RPK-16, M249, FightLite MCR, PKM, M60, metralhadora pesada, M250, MG 338, Kord, metralhadora giratória e os fuzis antimaterial (Barrett, Hecate II, Tac-50 e o comum). O arsenal que um exército inteiro usou para perder a guerra, agora na mão de uma colônia.</description>
+    <baseCost>3200</baseCost>
+    <techLevel>Industrial</techLevel>
+    <tab>EQ_RTab_Armas</tab>
+    <researchViewX>30</researchViewX>
+    <researchViewY>4.5</researchViewY>
+    <prerequisites><li>EQ_R_Armas_VM_3</li></prerequisites>
+    <modExtensions>
+      <li Class="EcosDaQueda.ResearchEditorExt">
+        <unlocks><li>CE_Gun_RPD</li><li>CE_Gun_RPKSixteen</li><li>CE_Gun_MTwoFourNine</li><li>CE_Gun_FightLiteMCR</li><li>CE_Gun_PKM</li><li>CE_Gun_MSixty</li><li>VWE_Gun_HMG</li><li>CE_Gun_MTwoFifty</li><li>CE_Gun_MGThreeThreeEight</li><li>CE_Gun_KordPortable</li><li>Gun_Minigun</li><li>CE_Gun_M82A2Barrett</li><li>CE_Gun_HecateTwo</li><li>CE_Gun_TacFifty</li><li>VWE_Gun_AntiMaterialRifle</li></unlocks>
+        <absorbs><li>MultibarrelWeapons</li></absorbs>
+        <branch>EQ_Ramo_VelhoMundo</branch>
+      </li>
+    </modExtensions>
+  </ResearchProjectDef>
+
+  <!-- Armas e munição &gt; VM_Esp -->
+  <ResearchProjectDef>
+    <defName>EQ_R_Armas_VM_Esp</defName>
+    <label>Munição especial IV: Munição de arsenal</label>
+    <description>Munição incendiária, explosiva, sabot e perfurante de núcleo duro dos calibres do Velho Mundo. Cada caixa tem número de série; a Forja pede que você não pergunte de quem era.</description>
+    <baseCost>2600</baseCost>
+    <techLevel>Industrial</techLevel>
+    <tab>EQ_RTab_Armas</tab>
+    <researchViewX>30</researchViewX>
+    <researchViewY>3.75</researchViewY>
+    <prerequisites><li>EQ_R_Armas_VM_4</li><li>EQ_R_Armas_Aut_Esp</li></prerequisites>
+    <modExtensions>
+      <li Class="EcosDaQueda.ResearchEditorExt">
+        <unlocks><li>Ammo_545x39mmSoviet_HE</li><li>Ammo_545x39mmSoviet_Incendiary</li><li>Ammo_545x39mmSoviet_Sabot</li><li>Ammo_277Fury_HE</li><li>Ammo_277Fury_Incendiary</li><li>Ammo_277Fury_Sabot</li><li>Ammo_338Norma_HE</li><li>Ammo_338Norma_Incendiary</li><li>Ammo_338Norma_Sabot</li></unlocks>
+        <branch>EQ_Ramo_VelhoMundo</branch>
+      </li>
+    </modExtensions>
+  </ResearchProjectDef>
+
+  <!-- Armas e munição &gt; Fo_1 -->
+  <ResearchProjectDef>
+    <defName>EQ_R_Armas_Fo_1</defName>
+    <label>Armas de carga I: Pistolas de carga e gauss</label>
+    <description>Pistolas de carga, revólver gauss e o Magnum gauss, com a munição de carga. A Irmandade da Forja vende a licença com garantia de 90 dias, que vence no primeiro disparo.</description>
+    <baseCost>3200</baseCost>
+    <techLevel>Spacer</techLevel>
+    <tab>EQ_RTab_Armas</tab>
+    <researchViewX>30</researchViewX>
+    <researchViewY>6</researchViewY>
+    <prerequisites><li>EQ_R_Armas_VM_4</li><li>EQ_R_Producao_Comp_Fabricacao</li></prerequisites>
+    <modExtensions>
+      <li Class="EcosDaQueda.ResearchEditorExt">
+        <unlocks><li>CE_Gun_ChargePistol</li><li>VWE_Gun_ChargePistol</li><li>VWEFT_Gun_GaussRevolver</li><li>VWE_Gun_GaussMagnum</li><li>Ammo_6x18mmCharged</li><li>Ammo_6x18mmCharged_AP</li></unlocks>
+        <absorbs><li>ChargedShot</li><li>VWE_MassDrivers</li></absorbs>
+        <branch>EQ_Ramo_Forja</branch>
+      </li>
+    </modExtensions>
+  </ResearchProjectDef>
+
+  <!-- Armas e munição &gt; Fo_2 -->
+  <ResearchProjectDef>
+    <defName>EQ_R_Armas_Fo_2</defName>
+    <label>Armas de carga II: Escopetas e submetralhadoras de carga</label>
+    <description>Escopetas de carga, submetralhadoras de carga, ciclador de carga e o repetidor gauss. Tecnologia espacial tirada de naves caídas, peça por peça, com o manual numa língua que ninguém fala.</description>
+    <baseCost>3600</baseCost>
+    <techLevel>Spacer</techLevel>
+    <tab>EQ_RTab_Armas</tab>
+    <researchViewX>32.5</researchViewX>
+    <researchViewY>6</researchViewY>
+    <prerequisites><li>EQ_R_Armas_Fo_1</li></prerequisites>
+    <modExtensions>
+      <li Class="EcosDaQueda.ResearchEditorExt">
+        <unlocks><li>CE_Gun_ChargeShotgun</li><li>VWE_Gun_ChargeShotgun</li><li>CE_Gun_ChargeSMG</li><li>VWE_Gun_ChargeSMG</li><li>VFED_Gun_ChargeCycler</li><li>VWEFT_Gun_GaussRepeater</li><li>Ammo_12GaugeCharged</li><li>Ammo_12GaugeCharged_Slug</li><li>Ammo_10x18mmCharged</li><li>Ammo_10x18mmCharged_AP</li></unlocks>
+        <branch>EQ_Ramo_Forja</branch>
+      </li>
+    </modExtensions>
+  </ResearchProjectDef>
+
+  <!-- Armas e munição &gt; Fo_3 -->
+  <ResearchProjectDef>
+    <defName>EQ_R_Armas_Fo_3</defName>
+    <label>Armas de carga III: Fuzis de carga</label>
+    <description>Rifle de carga, fuzis de precisão de carga, fuzil antimaterial de carga, fuzil gauss, carabina laser LAS-40C e o impactador de carga. O cavaleiro da garantia não aceita reclamação de quem foi atingido.</description>
+    <baseCost>4000</baseCost>
+    <techLevel>Spacer</techLevel>
+    <tab>EQ_RTab_Armas</tab>
+    <researchViewX>35</researchViewX>
+    <researchViewY>6</researchViewY>
+    <prerequisites><li>EQ_R_Armas_Fo_2</li></prerequisites>
+    <modExtensions>
+      <li Class="EcosDaQueda.ResearchEditorExt">
+        <unlocks><li>Gun_ChargeRifle</li><li>CE_Gun_ChargeSniperRifle</li><li>VWE_Gun_ChargeSniperRifle</li><li>CE_Gun_ChargeAMR</li><li>VWE_Gun_GaussRifle</li><li>CE_Gun_LaserCarbine</li><li>VFEE_Gun_ChargeThumper</li><li>Ammo_6x24mmCharged</li><li>Ammo_6x24mmCharged_AP</li><li>Ammo_8x50mmCharged</li><li>Ammo_8x50mmCharged_AP</li><li>Ammo_12x72mmCharged</li><li>Ammo_12x72mmCharged_AP</li><li>Ammo_LaserChargePack</li></unlocks>
+        <branch>EQ_Ramo_Forja</branch>
+      </li>
+    </modExtensions>
+  </ResearchProjectDef>
+
+  <!-- Armas e munição &gt; Fo_4 -->
+  <ResearchProjectDef>
+    <defName>EQ_R_Armas_Fo_4</defName>
+    <label>Armas de carga IV: Blasters, lança gauss e feixe</label>
+    <description>Metralhadora de carga, blasters de carga, lançador de mísseis de carga, lança gauss e o feixe de graser. O topo do catálogo da Forja; o recall é feito com o mesmo equipamento.</description>
+    <baseCost>4500</baseCost>
+    <techLevel>Spacer</techLevel>
+    <tab>EQ_RTab_Armas</tab>
+    <researchViewX>37.5</researchViewX>
+    <researchViewY>6</researchViewY>
+    <prerequisites><li>EQ_R_Armas_Fo_3</li></prerequisites>
+    <modExtensions>
+      <li Class="EcosDaQueda.ResearchEditorExt">
+        <unlocks><li>CE_Gun_ChargeLMG</li><li>VWE_Gun_ChargeLMG</li><li>VWE_Gun_ChargeMinigun</li><li>VWE_Gun_ChargeRocketLauncher</li><li>VWE_Gun_GaussLance</li><li>Gun_BeamGraser</li><li>Ammo_8x35mmCharged</li><li>Ammo_8x35mmCharged_AP</li><li>Ammo_ChargedRocket</li><li>Ammo_ChargedRocket_BB</li></unlocks>
+        <absorbs><li>VWE_LaserTargetingSystems</li><li>BeamWeapons</li></absorbs>
+        <branch>EQ_Ramo_Forja</branch>
+      </li>
+    </modExtensions>
+  </ResearchProjectDef>
+
+  <!-- Armas e munição &gt; Fo_Esp -->
+  <ResearchProjectDef>
+    <defName>EQ_R_Armas_Fo_Esp</defName>
+    <label>Munição especial V: Células iônicas</label>
+    <description>Munição iônica e incendiária das armas de carga. Um tiro que apaga o escudo e o portador, nessa ordem.</description>
+    <baseCost>3600</baseCost>
+    <techLevel>Spacer</techLevel>
+    <tab>EQ_RTab_Armas</tab>
+    <researchViewX>37.5</researchViewX>
+    <researchViewY>5.25</researchViewY>
+    <prerequisites><li>EQ_R_Armas_Fo_4</li><li>EQ_R_Armas_VM_Esp</li></prerequisites>
+    <modExtensions>
+      <li Class="EcosDaQueda.ResearchEditorExt">
+        <unlocks><li>Ammo_6x18mmCharged_Ion</li><li>Ammo_6mmRailgun_Sabot</li><li>Ammo_12GaugeCharged_Ion</li><li>Ammo_10x18mmCharged_Ion</li><li>Ammo_6x24mmCharged_Ion</li><li>Ammo_8x50mmCharged_Ion</li><li>Ammo_12x72mmCharged_Ion</li><li>Ammo_40x68mmDemo_Thump</li><li>Ammo_8x35mmCharged_Ion</li><li>Ammo_ChargedRocket_ICP</li><li>Ammo_8mmRailgun_Sabot</li></unlocks>
+        <branch>EQ_Ramo_Forja</branch>
+      </li>
+    </modExtensions>
+  </ResearchProjectDef>
+
+  <!-- Armas e munição &gt; Las_1 -->
+  <ResearchProjectDef>
+    <defName>EQ_R_Armas_Las_1</defName>
+    <label>Laser recuperado I: Pistolas laser</label>
+    <description>Pistola laser recuperada e revólver laser recuperado. Armas de antes da guerra que queimou o planeta, consertadas pela Forja e alugadas por assinatura.</description>
+    <baseCost>5000</baseCost>
+    <techLevel>Ultra</techLevel>
+    <tab>EQ_RTab_Armas</tab>
+    <researchViewX>37.5</researchViewX>
+    <researchViewY>7.5</researchViewY>
+    <prerequisites><li>EQ_R_Armas_Fo_4</li></prerequisites>
+    <modExtensions>
+      <li Class="EcosDaQueda.ResearchEditorExt">
+        <unlocks><li>VWEL_Gun_SalvagedLaserPistol</li><li>VWEFT_Gun_SalvagedLaserRevolver</li></unlocks>
+        <absorbs><li>VWE_LaserWeapons</li></absorbs>
+        <branch>EQ_Ramo_Forja</branch>
+      </li>
+    </modExtensions>
+  </ResearchProjectDef>
+
+  <!-- Armas e munição &gt; Las_2 -->
+  <ResearchProjectDef>
+    <defName>EQ_R_Armas_Las_2</defName>
+    <label>Laser recuperado II: Escopeta laser</label>
+    <description>Escopeta laser recuperada. Espalha luz como um padre espalha bênção, e com o mesmo resultado para quem está na frente.</description>
+    <baseCost>5500</baseCost>
+    <techLevel>Ultra</techLevel>
+    <tab>EQ_RTab_Armas</tab>
+    <researchViewX>40</researchViewX>
+    <researchViewY>7.5</researchViewY>
+    <prerequisites><li>EQ_R_Armas_Las_1</li></prerequisites>
+    <modExtensions>
+      <li Class="EcosDaQueda.ResearchEditorExt">
+        <unlocks><li>VWEL_Gun_SalvagedLaserShotgun</li></unlocks>
+        <branch>EQ_Ramo_Forja</branch>
+      </li>
+    </modExtensions>
+  </ResearchProjectDef>
+
+  <!-- Armas e munição &gt; Las_3 -->
+  <ResearchProjectDef>
+    <defName>EQ_R_Armas_Las_3</defName>
+    <label>Laser recuperado III: Fuzis laser</label>
+    <description>Fuzil laser, fuzil de caça laser e fuzil de precisão laser recuperados. Não faz barulho, não faz fumaça e não deixa corpo para enterrar.</description>
+    <baseCost>6000</baseCost>
+    <techLevel>Ultra</techLevel>
+    <tab>EQ_RTab_Armas</tab>
+    <researchViewX>42.5</researchViewX>
+    <researchViewY>7.5</researchViewY>
+    <prerequisites><li>EQ_R_Armas_Las_2</li></prerequisites>
+    <modExtensions>
+      <li Class="EcosDaQueda.ResearchEditorExt">
+        <unlocks><li>VWEL_Gun_SalvagedLaserRifle</li><li>VWEFT_Gun_SalvagedLaserHuntingRifle</li><li>VWEL_Gun_SalvagedLaserSniperRifle</li></unlocks>
+        <branch>EQ_Ramo_Forja</branch>
+      </li>
+    </modExtensions>
+  </ResearchProjectDef>
+
+  <!-- Armas e munição &gt; Las_4 -->
+  <ResearchProjectDef>
+    <defName>EQ_R_Armas_Las_4</defName>
+    <label>Laser recuperado IV: Repetidora laser</label>
+    <description>Repetidora laser recuperada. A última arma que o Império usou contra o enxame; o enxame venceu, mas a garantia continua valendo.</description>
+    <baseCost>7000</baseCost>
+    <techLevel>Ultra</techLevel>
+    <tab>EQ_RTab_Armas</tab>
+    <researchViewX>45</researchViewX>
+    <researchViewY>7.5</researchViewY>
+    <prerequisites><li>EQ_R_Armas_Las_3</li></prerequisites>
+    <modExtensions>
+      <li Class="EcosDaQueda.ResearchEditorExt">
+        <unlocks><li>VWEFT_Gun_SalvagedLaserRepeater</li></unlocks>
+        <branch>EQ_Ramo_Forja</branch>
+      </li>
+    </modExtensions>
+  </ResearchProjectDef>
+
+  <!-- Armas e munição &gt; Pol_1 -->
+  <ResearchProjectDef>
+    <defName>EQ_R_Armas_Pol_1</defName>
+    <label>Pólvora negra I: Pederneira</label>
+    <description>Pistolas de pederneira e a pólvora negra. No Reino do Lodo ela nunca saiu de moda: não precisa de manual, só de esterco, carvão e paciência.</description>
+    <baseCost>300</baseCost>
+    <techLevel>Medieval</techLevel>
+    <tab>EQ_RTab_Armas</tab>
+    <researchViewX>0</researchViewX>
+    <researchViewY>10</researchViewY>
+    <prerequisites><li>EQ_R_Producao_Oficio_Metalurgia</li></prerequisites>
+    <modExtensions>
+      <li Class="EcosDaQueda.ResearchEditorExt">
+        <unlocks><li>CE_Gun_FlintlockPistol</li><li>VFEM2_Gun_Flintlock</li><li>Ammo_MusketBall</li></unlocks>
+        <absorbs><li>CE_Gunpowder</li></absorbs>
+        <branch>EQ_Ramo_Bancada</branch>
+      </li>
+    </modExtensions>
+  </ResearchProjectDef>
+
+  <!-- Armas e munição &gt; Pol_2 -->
+  <ResearchProjectDef>
+    <defName>EQ_R_Armas_Pol_2</defName>
+    <label>Pólvora negra II: Bacamarte e arcabuz</label>
+    <description>Bacamarte de pederneira, arcabuz e canhão de mão. Erra o alvo, acerta o vizinho, assusta os dois.</description>
+    <baseCost>450</baseCost>
+    <techLevel>Medieval</techLevel>
+    <tab>EQ_RTab_Armas</tab>
+    <researchViewX>2.5</researchViewX>
+    <researchViewY>10</researchViewY>
+    <prerequisites><li>EQ_R_Armas_Pol_1</li></prerequisites>
+    <modExtensions>
+      <li Class="EcosDaQueda.ResearchEditorExt">
+        <unlocks><li>CE_Gun_FlintlockBlunderbuss</li><li>VFEM2_Gun_Arquebus</li><li>VFEM2_Gun_HandCannon</li><li>Ammo_BlunderbussShot</li></unlocks>
+        <absorbs><li>VFEM2_Matchlocks</li></absorbs>
+        <branch>EQ_Ramo_Bancada</branch>
+      </li>
+    </modExtensions>
+  </ResearchProjectDef>
+
+  <!-- Armas e munição &gt; Pol_3 -->
+  <ResearchProjectDef>
+    <defName>EQ_R_Armas_Pol_3</defName>
+    <label>Pólvora negra III: Mosquetes</label>
+    <description>Mosquete e mosquete de pederneira. A arma do bacamarteiro do Lodo: lenta, barulhenta e convincente.</description>
+    <baseCost>600</baseCost>
+    <techLevel>Medieval</techLevel>
+    <tab>EQ_RTab_Armas</tab>
+    <researchViewX>5</researchViewX>
+    <researchViewY>10</researchViewY>
+    <prerequisites><li>EQ_R_Armas_Pol_2</li></prerequisites>
+    <modExtensions>
+      <li Class="EcosDaQueda.ResearchEditorExt">
+        <unlocks><li>CE_Gun_FlintlockMusket</li><li>VFEM2_Gun_Musket</li></unlocks>
+        <branch>EQ_Ramo_Bancada</branch>
+      </li>
+    </modExtensions>
+  </ResearchProjectDef>
+
+  <!-- Armas e munição &gt; Pol_4 -->
+  <ResearchProjectDef>
+    <defName>EQ_R_Armas_Pol_4</defName>
+    <label>Pólvora negra IV: Fuzil de muralha e morteiro de mão</label>
+    <description>Fuzil de muralha e morteiro de mão, com metralha, bala explosiva e incendiária. Artilharia para quem ainda acha que castelo é moradia.</description>
+    <baseCost>800</baseCost>
+    <techLevel>Medieval</techLevel>
+    <tab>EQ_RTab_Armas</tab>
+    <researchViewX>7.5</researchViewX>
+    <researchViewY>10</researchViewY>
+    <prerequisites><li>EQ_R_Armas_Pol_3</li></prerequisites>
+    <modExtensions>
+      <li Class="EcosDaQueda.ResearchEditorExt">
+        <unlocks><li>CE_Gun_WallGun</li><li>CE_Gun_HandMortar</li><li>Ammo_MiniCannonBall_Grape</li><li>Ammo_MiniCannonBall_Round</li><li>Ammo_MortarGrenade</li></unlocks>
+        <branch>EQ_Ramo_Bancada</branch>
+      </li>
+    </modExtensions>
+  </ResearchProjectDef>
+
+  <!-- Armas e munição &gt; Exp_1 -->
+  <ResearchProjectDef>
+    <defName>EQ_R_Armas_Exp_1</defName>
+    <label>Explosivos I: Granadas</label>
+    <description>Granada de fragmentação, granada de luz, granada de fumaça, granada de concussão, carga de mochila e a pistola sinalizadora. Lata, prego e pólvora: o kit de boas-vindas da Feira para quem chega sem convite.</description>
+    <baseCost>700</baseCost>
+    <techLevel>Industrial</techLevel>
+    <tab>EQ_RTab_Armas</tab>
+    <researchViewX>7.5</researchViewX>
+    <researchViewY>11.5</researchViewY>
+    <prerequisites><li>EQ_R_Armas_Suc_3</li><li>EQ_R_Fazenda_Lav_Outros_1</li></prerequisites>
+    <modExtensions>
+      <li Class="EcosDaQueda.ResearchEditorExt">
+        <unlocks><li>CE_FlareGun</li><li>Weapon_GrenadeFrag</li><li>CE_Weapon_GrenadeFlashbang</li><li>CE_Weapon_GrenadeSmoke</li><li>CE_Weapon_GrenadeConcussion</li><li>CE_Weapon_SatchelCharge</li><li>Ammo_Flare</li><li>Ammo_FlareBioferrite</li></unlocks>
+        <branch>EQ_Ramo_Bancada</branch>
+      </li>
+    </modExtensions>
+  </ResearchProjectDef>
+
+  <!-- Armas e munição &gt; Exp_2 -->
+  <ResearchProjectDef>
+    <defName>EQ_R_Armas_Exp_2</defName>
+    <label>Explosivos II: Lança-granadas e lança-chamas</label>
+    <description>M79, lança-granadas, Milkor MGL e os lança-chamas, com as granadas de 40 mm e o combustível. A solução do Silêncio para "amostra contaminada".</description>
+    <baseCost>1500</baseCost>
+    <techLevel>Industrial</techLevel>
+    <tab>EQ_RTab_Armas</tab>
+    <researchViewX>17.5</researchViewX>
+    <researchViewY>11.5</researchViewY>
+    <prerequisites><li>EQ_R_Armas_Exp_1</li><li>EQ_R_Armas_Aut_3</li></prerequisites>
+    <modExtensions>
+      <li Class="EcosDaQueda.ResearchEditorExt">
+        <unlocks><li>CE_GrenadeLauncher</li><li>VWE_Gun_GrenadeLauncher</li><li>CE_Gun_MilkorMGL</li><li>CE_Gun_Flamethrower</li><li>VWE_Gun_Flamethrower</li><li>Ammo_40x46mmGrenade_HE</li><li>Ammo_40x46mmGrenade_HEDP</li><li>Ammo_40x46mmGrenade_HE_TFuzed</li><li>Ammo_40x46mmGrenade_Smoke</li><li>Ammo_Flamethrower_Bioferrite</li></unlocks>
+        <absorbs><li>CE_Launchers</li></absorbs>
+        <branch>EQ_Ramo_VelhoMundo</branch>
+      </li>
+    </modExtensions>
+  </ResearchProjectDef>
+
+  <!-- Armas e munição &gt; Exp_3 -->
+  <ResearchProjectDef>
+    <defName>EQ_R_Armas_Exp_3</defName>
+    <label>Explosivos III: Foguetes</label>
+    <description>M72 LAW, AT4, RPG-7, Carl Gustaf e o lança-foguetes. O abridor de latas preferido contra blindados da Forja e muralhas do Coro.</description>
+    <baseCost>2400</baseCost>
+    <techLevel>Industrial</techLevel>
+    <tab>EQ_RTab_Armas</tab>
+    <researchViewX>25</researchViewX>
+    <researchViewY>11.5</researchViewY>
+    <prerequisites><li>EQ_R_Armas_Exp_2</li><li>EQ_R_Armas_VM_1</li></prerequisites>
+    <modExtensions>
+      <li Class="EcosDaQueda.ResearchEditorExt">
+        <unlocks><li>CE_DisposableRocketLauncher</li><li>CE_ATFour</li><li>CE_Gun_RPGSeven</li><li>CE_Gun_CarlGustaf</li><li>VWE_Gun_RocketLauncher</li><li>Ammo_RPG7Grenade_Frag</li><li>Ammo_RPG7Grenade_HEAT</li><li>Ammo_84x246mmR_CAN</li><li>Ammo_84x246mmR_Frag</li><li>Ammo_84x246mmR_HE</li><li>Ammo_84x246mmR_HEAT</li><li>Ammo_84x246mmR_HEDP</li><li>Ammo_84x246mmR_HE_TFuzed</li><li>Ammo_84x246mmR_Smoke</li></unlocks>
+        <branch>EQ_Ramo_VelhoMundo</branch>
+      </li>
+    </modExtensions>
+  </ResearchProjectDef>
+
+  <!-- Armas e munição &gt; Exp_4 -->
+  <ResearchProjectDef>
+    <defName>EQ_R_Armas_Exp_4</defName>
+    <label>Explosivos IV: Lançadores avançados</label>
+    <description>Lançador de foguetes triplo, lançador de foguetes apocalíptico e lançador incendiário. Munição que custa mais que o alvo, para alvos que custam mais que a colônia.</description>
+    <baseCost>3400</baseCost>
+    <techLevel>Spacer</techLevel>
+    <tab>EQ_RTab_Armas</tab>
+    <researchViewX>32.5</researchViewX>
+    <researchViewY>11.5</researchViewY>
+    <prerequisites><li>EQ_R_Armas_Exp_3</li><li>EQ_R_Armas_VM_4</li></prerequisites>
+    <modExtensions>
+      <li Class="EcosDaQueda.ResearchEditorExt">
+        <unlocks><li>Gun_TripleRocket</li><li>Gun_DoomsdayRocket</li><li>Gun_IncendiaryLauncher</li></unlocks>
+        <absorbs><li>CE_AdvancedLaunchers</li></absorbs>
+        <branch>EQ_Ramo_VelhoMundo</branch>
+      </li>
+    </modExtensions>
+  </ResearchProjectDef>
+
+  <!-- Armas e munição &gt; Exp_Esp -->
+  <ResearchProjectDef>
+    <defName>EQ_R_Armas_Exp_Esp</defName>
+    <label>Munição especial: Explosivos</label>
+    <description>Granadas e foguetes PEM, incendiários e termobáricos para os lançadores. Quem atira isso dentro de casa não precisa mais de casa.</description>
+    <baseCost>2200</baseCost>
+    <techLevel>Industrial</techLevel>
+    <tab>EQ_RTab_Armas</tab>
+    <researchViewX>27.5</researchViewX>
+    <researchViewY>12.5</researchViewY>
+    <prerequisites><li>EQ_R_Armas_Exp_3</li></prerequisites>
+    <modExtensions>
+      <li Class="EcosDaQueda.ResearchEditorExt">
+        <unlocks><li>Ammo_40x46mmGrenade_EMP</li><li>Ammo_40x46mmGrenade_Tox</li><li>Ammo_Flamethrower_Napalm</li><li>Ammo_Flamethrower_Prometheum</li><li>Ammo_RPG7Grenade_Thermobaric</li><li>Ammo_84x246mmR_EMP</li><li>Ammo_84x246mmR_Incendiary</li><li>Ammo_84x246mmR_Thermobaric</li><li>Ammo_30x64mmFuel_Foam</li><li>Ammo_30x64mmFuel_Incendiary</li><li>Ammo_30x64mmFuel_Thermobaric</li></unlocks>
+        <branch>EQ_Ramo_VelhoMundo</branch>
+      </li>
+    </modExtensions>
+  </ResearchProjectDef>
+
+  <!-- Armas e munição &gt; Arc_1 -->
+  <ResearchProjectDef>
+    <defName>EQ_R_Armas_Arc_1</defName>
+    <label>Arcos I: Arco recurvo</label>
+    <description>Arco recurvo, com flechas de pedra e de aço. Silencioso, barato e sem pirataria: ninguém tem a patente do arco.</description>
+    <baseCost>300</baseCost>
+    <techLevel>Neolithic</techLevel>
+    <tab>EQ_RTab_Armas</tab>
+    <researchViewX>0</researchViewX>
+    <researchViewY>13</researchViewY>
+    <modExtensions>
+      <li Class="EcosDaQueda.ResearchEditorExt">
+        <unlocks><li>Bow_Recurve</li><li>Ammo_Arrow_Plasteel</li><li>Ammo_Arrow_Steel</li><li>Ammo_Arrow_Stone</li></unlocks>
+        <absorbs><li>RecurveBow</li></absorbs>
+        <branch>EQ_Ramo_Bancada</branch>
+      </li>
+    </modExtensions>
+  </ResearchProjectDef>
+
+  <!-- Armas e munição &gt; Arc_2 -->
+  <ResearchProjectDef>
+    <defName>EQ_R_Armas_Arc_2</defName>
+    <label>Arcos II: Arcos de guerra</label>
+    <description>Arco grande, arco de guerra e arco longo, com as flechas grandes. A artilharia dos tribais que sobreviveram à Queda melhor que as cidades.</description>
+    <baseCost>450</baseCost>
+    <techLevel>Neolithic</techLevel>
+    <tab>EQ_RTab_Armas</tab>
+    <researchViewX>2.5</researchViewX>
+    <researchViewY>13</researchViewY>
+    <prerequisites><li>EQ_R_Armas_Arc_1</li></prerequisites>
+    <modExtensions>
+      <li Class="EcosDaQueda.ResearchEditorExt">
+        <unlocks><li>Bow_Great</li><li>VFEM2_Warbow</li><li>VWE_Bow_Long</li><li>Ammo_GreatArrow_Plasteel</li><li>Ammo_GreatArrow_Steel</li><li>Ammo_GreatArrow_Stone</li></unlocks>
+        <absorbs><li>Greatbow</li></absorbs>
+        <branch>EQ_Ramo_Bancada</branch>
+      </li>
+    </modExtensions>
+  </ResearchProjectDef>
+
+  <!-- Armas e munição &gt; Arc_3 -->
+  <ResearchProjectDef>
+    <defName>EQ_R_Armas_Arc_3</defName>
+    <label>Arcos III: Bestas</label>
+    <description>Bestas e balestra, com os virotes. Qualquer camponês com uma manivela derruba um cavaleiro.</description>
+    <baseCost>600</baseCost>
+    <techLevel>Medieval</techLevel>
+    <tab>EQ_RTab_Armas</tab>
+    <researchViewX>5</researchViewX>
+    <researchViewY>13</researchViewY>
+    <prerequisites><li>EQ_R_Armas_Arc_2</li><li>EQ_R_Producao_Oficio_Metalurgia</li></prerequisites>
+    <modExtensions>
+      <li Class="EcosDaQueda.ResearchEditorExt">
+        <unlocks><li>CE_Gun_Crossbow</li><li>VWE_Bow_Crossbow</li><li>VFEM2_Arbalest</li><li>Ammo_CrossbowBolt_Plasteel</li><li>Ammo_CrossbowBolt_Steel</li><li>Ammo_CrossbowBolt_Stone</li></unlocks>
+        <branch>EQ_Ramo_Bancada</branch>
+      </li>
+    </modExtensions>
+  </ResearchProjectDef>
+
+  <!-- Armas e munição &gt; Arc_4 -->
+  <ResearchProjectDef>
+    <defName>EQ_R_Armas_Arc_4</defName>
+    <label>Arcos IV: Arco composto</label>
+    <description>Arco composto, de roldana e fibra. O arco que o Velho Mundo vendia em loja de esportes; agora é esporte de verdade.</description>
+    <baseCost>900</baseCost>
+    <techLevel>Industrial</techLevel>
+    <tab>EQ_RTab_Armas</tab>
+    <researchViewX>7.5</researchViewX>
+    <researchViewY>13</researchViewY>
+    <prerequisites><li>EQ_R_Armas_Arc_3</li><li>EQ_R_Producao_Fabrica_Usinagem</li></prerequisites>
+    <modExtensions>
+      <li Class="EcosDaQueda.ResearchEditorExt">
+        <unlocks><li>VWE_Bow_Compound</li></unlocks>
+        <branch>EQ_Ramo_Bancada</branch>
+      </li>
+    </modExtensions>
+  </ResearchProjectDef>
+
+  <!-- Armas e munição &gt; Arc_Esp -->
+  <ResearchProjectDef>
+    <defName>EQ_R_Armas_Arc_Esp</defName>
+    <label>Arcos: Flechas especiais</label>
+    <description>Flechas, flechas grandes e virotes de fogo (prometeu) e de veneno (trufa-cura). O tribal não conhece química, mas conhece quem morreu dela.</description>
+    <baseCost>500</baseCost>
+    <techLevel>Neolithic</techLevel>
+    <tab>EQ_RTab_Armas</tab>
+    <researchViewX>5</researchViewX>
+    <researchViewY>13.75</researchViewY>
+    <prerequisites><li>EQ_R_Armas_Arc_2</li><li>EQ_R_Fazenda_Lav_Outros_1</li><li>EQ_R_Fazenda_Lav_Medicamento_2</li></prerequisites>
+    <modExtensions>
+      <li Class="EcosDaQueda.ResearchEditorExt">
+        <unlocks><li>Ammo_Arrow_Flame</li><li>Ammo_Arrow_Venom</li><li>Ammo_GreatArrow_Flame</li><li>Ammo_GreatArrow_Venom</li><li>Ammo_CrossbowBolt_Flame</li><li>Ammo_CrossbowBolt_Venom</li></unlocks>
+        <branch>EQ_Ramo_Bancada</branch>
+      </li>
+    </modExtensions>
+  </ResearchProjectDef>
+
+  <!-- Armas e munição &gt; Cac_1 -->
+  <ResearchProjectDef>
+    <defName>EQ_R_Armas_Cac_1</defName>
+    <label>Corpo a corpo I: Armas de ferro</label>
+    <description>Maça, maça pesada, martelo, machado, machado de irrupção, mangual, gládio, espada curta, ikwa e facão. Ferro batido na bigorna: dura mais que a munição.</description>
+    <baseCost>400</baseCost>
+    <techLevel>Medieval</techLevel>
+    <tab>EQ_RTab_Armas</tab>
+    <researchViewX>0</researchViewX>
+    <researchViewY>14.5</researchViewY>
+    <prerequisites><li>EQ_R_Producao_Oficio_Metalurgia</li></prerequisites>
+    <modExtensions>
+      <li Class="EcosDaQueda.ResearchEditorExt">
+        <unlocks><li>MeleeWeapon_Mace</li><li>VFEM2_MeleeWeapon_HeavyMace</li><li>VWE_MeleeWeapon_Hammer</li><li>MeleeWeapon_Axe</li><li>MeleeWeapon_BreachAxe</li><li>VFEM2_MeleeWeapon_Flail</li><li>MeleeWeapon_Gladius</li><li>VFEM2_MeleeWeapon_Shortsword</li><li>MeleeWeapon_Ikwa</li><li>CE_Melee_Machete</li></unlocks>
+        <branch>EQ_Ramo_Bancada</branch>
+      </li>
+    </modExtensions>
+  </ResearchProjectDef>
+
+  <!-- Armas e munição &gt; Cac_2 -->
+  <ResearchProjectDef>
+    <defName>EQ_R_Armas_Cac_2</defName>
+    <label>Corpo a corpo II: Lâminas longas e armas de haste</label>
+    <description>Espada longa, claymore, sabre, lança, pique, alabardas, machado dinamarquês, machado de batalha, martelo de guerra, bec de corbin e pollaxe. O arrombador do Lodo não lê manual, mas sabe onde o machado entra.</description>
+    <baseCost>700</baseCost>
+    <techLevel>Medieval</techLevel>
+    <tab>EQ_RTab_Armas</tab>
+    <researchViewX>2.5</researchViewX>
+    <researchViewY>14.5</researchViewY>
+    <prerequisites><li>EQ_R_Armas_Cac_1</li></prerequisites>
+    <modExtensions>
+      <li Class="EcosDaQueda.ResearchEditorExt">
+        <unlocks><li>MeleeWeapon_LongSword</li><li>VFEM2_MeleeWeapon_Claymore</li><li>CE_Melee_Saber</li><li>MeleeWeapon_Spear</li><li>VFEM2_MeleeWeapon_Pike</li><li>VWE_MeleeWeapon_Halberd</li><li>VFEM2_MeleeWeapon_Halberd</li><li>VFEM2_MeleeWeapon_DaneAxe</li><li>VWE_MeleeWeapon_BattleAxe</li><li>MeleeWeapon_Warhammer</li><li>CE_Melee_BecDeCorbin</li><li>CE_Melee_Pollaxe</li></unlocks>
+        <absorbs><li>LongBlades</li></absorbs>
+        <branch>EQ_Ramo_Bancada</branch>
+      </li>
+    </modExtensions>
+  </ResearchProjectDef>
+
+  <!-- Armas e munição &gt; Cac_3 -->
+  <ResearchProjectDef>
+    <defName>EQ_R_Armas_Cac_3</defName>
+    <label>Corpo a corpo III: Armas de trincheira</label>
+    <description>Faca de combate, cassetete e pá de trincheira. Para quando a munição acaba antes da guerra.</description>
+    <baseCost>900</baseCost>
+    <techLevel>Industrial</techLevel>
+    <tab>EQ_RTab_Armas</tab>
+    <researchViewX>10</researchViewX>
+    <researchViewY>14.5</researchViewY>
+    <prerequisites><li>EQ_R_Armas_Cac_2</li><li>EQ_R_Armas_Arm_1</li></prerequisites>
+    <modExtensions>
+      <li Class="EcosDaQueda.ResearchEditorExt">
+        <unlocks><li>VWE_MeleeWeapon_CombatKnife</li><li>VWE_MeleeWeapon_Baton</li><li>VWE_MeleeWeapon_Shovel</li></unlocks>
+        <branch>EQ_Ramo_Bancada</branch>
+      </li>
+    </modExtensions>
+  </ResearchProjectDef>
+
+  <ResearchTabDef>
     <defName>EQ_RTab_Construcao</defName>
     <label>Construção</label>
     <generalTitle>Construção</generalTitle>
