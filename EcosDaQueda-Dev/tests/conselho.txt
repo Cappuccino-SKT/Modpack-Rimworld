@@ -1,0 +1,24 @@
+# N2 (NACAO.md › 3.4): conselho. Cadeiras (Embaixador, General, Conselheiro), recusas (líder, mesma pessoa em duas,
+# troca antes da espera), bônus pela perícia (0 na 4, cheio na 15), fatores nos sistemas, conselheiro caído não vale,
+# pensamentos, e sem nação nada vale.
+newgame EQ_Scenario_Andarilhos
+timeout 1500
+wait 1d
+council recruit 4
+council
+council leader embaixador
+council sit embaixador 0
+council skill embaixador 15
+council goodwill
+council sit general 0
+council skill general 4
+council sit conselheiro 0
+council skill conselheiro 20
+council sit embaixador 0
+council cooldown
+council empty general
+wait 1d
+council thoughts
+council down conselheiro
+nation lock
+council

@@ -107,6 +107,14 @@ Feito com as propostas (✱1: qualquer mundo com o Hegemony; ✱2: 3 adultos liv
 - **Fundação:** a ideologia vira fluida e abre a escolha dos memes do jogo (estrutura + 1, impacto ≤ 2, regras da fluida). Fechar a janela sem terminar faz ela reabrir. Depois: nome, título do líder e ícone novos, o líder proclamado volta à função, e a 1ª reforma já fica liberada (`freeReformOnFounding`) para acertar os preceitos sorteados. Carta "A fé da nação".
 - Jogos sem a ideologia clássica (outro cenário, save antigo) fundam a nação como no N1, sem mexer na fé.
 
+### Resultado do N2 (2026-11-20)
+
+Feito com a tabela da 3.4 e as sugestões de pensamentos e espera; **sem a 4ª cadeira** (✱6 continua aberto). Valores em `Defs/World/EQ_Conselho.xml` (`CouncilDef`); código em `Council.cs`.
+- **Conselho:** botão "Conselho" no trono depois da fundação; janela com as 3 cadeiras (nomear, trocar, deixar vazia). Líder não senta; um colono por cadeira. Bônus 0 na perícia 4, cheio na 15 (perícia efetiva, com os genes); vale com o conselheiro vivo, consciente e na colônia (Embaixador também em caravana). Trocar quem ocupa: espera de 3 dias; cadeira vaga por morte não espera.
+- **Ganchos:** Embaixador: boa vontade ganha ×1,2 (prefix em `TryAffectGoodwillWith`), tensão diária entre a patrona e as outras potências ×0,7, cerimônia e dízimos ×0,85. General: exércitos sob o comando do jogador ×1,15 na batalha, revoltas futuras ×0,8. Conselheiro: fronteira ×1,25, tributo ×1,25, +1 marco com o bônus ≥ 50%.
+- **Pensamentos:** "membro do conselho" +4; "preterido no conselho" −3 (quem tem 3+ de perícia a mais que um conselheiro e ficou de fora).
+- **Não fiz:** aviso 1 dia antes das invasões do Hegemony (General), paz mais fácil com NPCs (Embaixador), força do jogador nas frentes de trincheira jogadas no mapa (lá ele luta de verdade; só os exércitos abstratos ganham o bônus), colônia sugerida com mais opções (Conselheiro), fronteira caindo mais devagar (depende do F5).
+
 ## 4. Blocos
 
 | Bloco | O que entrega | Depende de |
