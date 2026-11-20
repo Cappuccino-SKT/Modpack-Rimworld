@@ -1,0 +1,65 @@
+# N3 (NACAO.md › 3.6): legitimidade, sucessão coroada, reações das potências e mercenários.
+# Fundação com mercenários -> reações (Hélice, Forja) -> raid rechaçado -> deriva diária -> agitação (suborno, mercenários,
+# vitória) -> território congelado -> sucessão (sem meme, Real com herdeiro, troca sem herdeiro e revolta da sucessão perdida)
+# -> Culpado (expiação) -> Deus-imperador (revolta sem prazo, conselho cai) -> Corte de sangue (execução).
+newgame EQ_Scenario_Andarilhos
+timeout 3000
+council recruit 6
+nation lock
+nation throne
+nation proclaim 0
+legit sindfriend
+legit mercnation come
+nation revolt
+legit mercs
+nation win
+legit letters
+legit
+legit react helice yes
+legit react forja yes
+legit raid
+wait 2h
+legit
+legit day 10
+legit set 25
+legit unrest
+legit sindfriend
+legit merc come
+legit bribe
+legit arrive
+legit mercs
+legit win
+legit set 5
+legit
+legit set 80
+legit
+legit set 50
+council meme clear
+legit heir 0
+legit kill
+legit crown
+council meme add VME_Royal
+legit heir 0
+legit kill
+legit leader 0
+legit deadline
+legit arrive
+legit lose
+council meme clear
+council meme add Guilty
+legit unrest
+legit merc flee
+legit arrive
+legit lose
+council meme clear
+council meme add VME_BloodCourt
+council sit general 0
+legit execute
+council meme clear
+council meme add VME_GodEmperor
+council sit general 1
+council sit embaixador 2
+legit kill
+legit leader 0
+legit crown
+letters

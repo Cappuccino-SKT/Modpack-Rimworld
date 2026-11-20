@@ -133,6 +133,14 @@ Grupos 3 e 4 do `nacao/memes.md`: mais **57 memes** (27 do grupo 3; 30 estrutura
 - **Quando vale:** os efeitos da fundação e da revolta usam os memes da ideologia **no momento** da proclamação/vitória (nos cenários do Ecos, a clássica; a escolha de memes do N1b vem depois).
 - **Simplificações:** Nômade sem "nação na caravana"; Isolacionista sem teto; Náuticos sem atravessar água; Desmatamento sem os 30 dias; Fúria da estrada, Baluarte e Escuridão viram força de exército; Corte de sangue e Culpado só texto (legitimidade no N3); Oráculo sem aviso de invasão. Estrada, rio e costa conferidos só no código (o território do teste não tem esses tiles).
 
+### Resultado do N3 (2026-11-20)
+
+O usuário aprovou as 4 sugestões da 3.6 (1 a 4; decretos ficam para depois). Código em `Legitimacy.cs`, valores em `Defs/World/EQ_Legitimidade.xml` (propostos).
+- **Legitimidade 0–100** (começa em 50 na fundação; só com a nação fundada de verdade, não com a suposição do executor). Por dia: líder coroado com trono numa sala do trono +0,3; sala do trono sem trono −0,5; sem líder −1; Fama +0,3 e Infâmia −0,4 (a maior com uma potência, proporcional ao teto). Eventos: raid hostil rechaçado na colônia +3 (metade ou mais caiu, 3+ atacantes, 1 por dia; patch em `LordManager.RemoveLord`), exército sob comando +5/−6, frente de fronteira +6/−8 (F5), morte do líder −20, troca −5, coroação +5, revolta menor +12/−15, execução de conselheiro −10. **Abaixo de 30**: revolta menor dos Povos da Região (pontos × 0,6, intervalo médio 8 dias, 10 de folga depois de uma) e tributo −20%; **abaixo de 10**: o território do jogador não cresce (F4); **70 ou mais**: tributo e fronteira +10% (canais do conselho). Aparece na janela do Conselho (linha com detalhe no tooltip e botão "Sucessor").
+- **Sucessão coroada:** líder morto, perdido ou trocado → o novo precisa do botão **"Coroar"** no trono (líder no mapa do trono, consciente) em 10 dias; senão revolta da sucessão (pontos × 1). Sem potência, o sucessor designado assume sozinho. Memes: **República** troca sem coroação; **Real** e **Lealista** coroam o herdeiro designado na hora (Real sem herdeiro: revolta 50% maior); **Deus-imperador**: morte do deus traz a revolta sem prazo (×1,5, coroar não a cancela) e o conselho cai; **Corte de sangue**: executar conselheiro dá +6; **Culpado**: perder revolta menor dá +8 (expiação). Revolta da sucessão perdida: o líder fica, com a legitimidade no chão.
+- **Reações à fundação:** Coro (nota de protocolo: boa vontade +5 com trono excelente ou melhor, −5 abaixo), Hélice (carta: franquia, cerimônias −20% por 60 dias e boa vontade +5), Forja (carta: registro por 80 de aço, boa vontade +10 e legitimidade +5; recusar −5), Silêncio ("você foi catalogado", legitimidade +3), Sindicato (cartão de visitas: 25% de desconto no primeiro contrato). Potência hostil não manda carta de proposta.
+- **Mercenários:** opção nas cartas da proclamação e das revoltas menores. O Sindicato do Saque é pirata (inimigo permanente), então quem vende é a facção oculta **Seção de Contratos** (`EQ_Faction_SindicatoContratos`, neutra; atirar nos contratados fecha o contrato). Preço: pontos da revolta × 0,5 em prata; chegam com a revolta (metade dos pontos dela) com `LordJob_AssistColony`, hostis aos Povos da Região; 15% de chance de "assembleia" (não vêm, prata perdida); no fim vão embora.
+- **Simplificações:** coroação é instantânea (sem ritual); o raid conta pela trava do lord, não pela defesa em si; revolta menor perdida não tira território.
 ## 4. Blocos
 
 | Bloco | O que entrega | Depende de |
@@ -154,6 +162,6 @@ Ordem sugerida: **N1 e N1b antes do F5** (mudam o começo de todo jogo); N2 logo
 4. **Tamanho da revolta:** pontos de raid × 1,3?
 5. **Comprar parte dos vizinhos** (suborno) e **desistir** na carta: entram?
 6. **Conselho:** os bônus da tabela servem? Entra a 4ª cadeira (Intendente)?
-7. **Sugestões extras (3.6):** quais entram (1 a 5)?
+7. ~~**Sugestões extras (3.6)**~~ decidido em 2026-11-20: entram 1 a 4 (N3 feito); decretos (5) ficam para outro bloco. Valores propostos em `EQ_Legitimidade.xml`.
 8. ~~**Governo pela ideologia (3.7)**~~ decidido em 2026-11-19 (`nacao/memes.md` › 6): sem limite de cadeiras (o limite são os 4 memes), República e Primazia humana como propostas, N2b começa pelos grupos 1 e 2, memes do Ecos exclusivos das potências (já feito por `factionWhitelist`).
 9. **Ideologia clássica no começo:** vale para todo cenário ou só os do Ecos? Quantos memes na primeira escolha (proposta: as regras da ideologia fluida do jogo)?
