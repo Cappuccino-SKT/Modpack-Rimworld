@@ -141,6 +141,14 @@ O usuário aprovou as 4 sugestões da 3.6 (1 a 4; decretos ficam para depois). C
 - **Reações à fundação:** Coro (nota de protocolo: boa vontade +5 com trono excelente ou melhor, −5 abaixo), Hélice (carta: franquia, cerimônias −20% por 60 dias e boa vontade +5), Forja (carta: registro por 80 de aço, boa vontade +10 e legitimidade +5; recusar −5), Silêncio ("você foi catalogado", legitimidade +3), Sindicato (cartão de visitas: 25% de desconto no primeiro contrato). Potência hostil não manda carta de proposta.
 - **Mercenários:** opção nas cartas da proclamação e das revoltas menores. O Sindicato do Saque é pirata (inimigo permanente), então quem vende é a facção oculta **Seção de Contratos** (`EQ_Faction_SindicatoContratos`, neutra; atirar nos contratados fecha o contrato). Preço: pontos da revolta × 0,5 em prata; chegam com a revolta (metade dos pontos dela) com `LordJob_AssistColony`, hostis aos Povos da Região; 15% de chance de "assembleia" (não vêm, prata perdida); no fim vão embora.
 - **Simplificações:** coroação é instantânea (sem ritual); o raid conta pela trava do lord, não pela defesa em si; revolta menor perdida não tira território.
+### Resultado dos decretos (2026-11-20)
+
+Item 5 da 3.6, com as escolhas do usuário: os 4 decretos propostos, 1 vaga e 2 com legitimidade 70 ou mais. Código em `Decrees.cs`, decretos em `Defs/World/EQ_Decretos.xml`, regras de vaga em `EQ_Legitimidade.xml` (valores propostos).
+- **Alistamento obrigatório:** exército +15%, revoltas −10%; humor −3 em todos os colonos livres, legitimidade −0,1/dia.
+- **Pedágio nas estradas:** tributo +20%; boa vontade ganha −10%.
+- **Fronteiras abertas:** boa vontade ganha +15%, comércio +3%; defesa da fronteira −25% (postos de ocupação inimigos crescem mais; o `borderDefense` agora aceita negativo até −50%).
+- **Ministério da Verdade:** legitimidade +0,2/dia e a Infâmia tira metade; pesquisa −10%.
+- **Regras:** decretar custa 5 de legitimidade; decretar ou revogar abre 15 dias de espera; se a legitimidade cai abaixo de 70 com 2 decretos, o mais novo cai sozinho; República precisa do voto (2 de 3 triúnviros). Seção "Decretos" na janela do Conselho (prós, contras, botão Decretar/Revogar com o motivo da recusa).
 ## 4. Blocos
 
 | Bloco | O que entrega | Depende de |

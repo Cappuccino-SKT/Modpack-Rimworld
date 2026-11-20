@@ -1,0 +1,41 @@
+# Decretos da nação (NACAO.md › 3.6 item 5): 1 vaga (2 com legitimidade 70+), custo, espera, efeitos nos canais,
+# pensamento do alistamento, legitimidade por dia e peso da Infâmia (Ministério da Verdade), queda da 2ª vaga, voto da República.
+newgame EQ_Scenario_Andarilhos
+timeout 2000
+council recruit 4
+nation lock
+legit decree list
+nation throne
+nation proclaim 0
+nation revolt
+nation win
+legit decree list
+legit decree stats
+legit decree EQ_Decreto_Alistamento
+legit decree stats
+wait 2h
+legit decree stats
+legit decree EQ_Decreto_Pedagio
+legit set 75
+legit decree EQ_Decreto_Pedagio
+legit decree cooldown
+legit decree EQ_Decreto_Pedagio
+legit decree stats
+legit set 60
+legit slots
+legit decree cooldown
+legit decree revoke EQ_Decreto_Alistamento
+legit decree cooldown
+legit decree EQ_Decreto_FronteirasAbertas
+legit decree stats
+legit decree cooldown
+legit decree revoke EQ_Decreto_FronteirasAbertas
+legit decree cooldown
+legit decree EQ_Decreto_MinisterioVerdade
+legit decree stats
+legit day 1
+council meme add VME_Republic
+legit decree cooldown
+legit decree revoke EQ_Decreto_MinisterioVerdade
+legit decree cooldown
+legit decree EQ_Decreto_Pedagio
