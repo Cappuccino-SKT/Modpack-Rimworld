@@ -83,6 +83,8 @@ namespace EcosDaQueda
                 if (EQForces.AtWar(a, b)) { c.tension[k] = 0f; continue; }
                 float g = Growth(a, b);
                 if (g <= 0f) continue;
+                Faction patron = EQAllegiance.PlayerOverlord;
+                if (patron != null && (a == patron || b == patron)) g *= EQCouncil.PatronTensionFactor;
                 float before = c.tension.TryGetValue(k, out float t) ? t : 0f;
                 float now = Mathf.Min(WarAt, before + g * Rand.Range(0.6f, 1.4f));
                 c.tension[k] = now;

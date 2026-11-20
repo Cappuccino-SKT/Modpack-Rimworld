@@ -219,8 +219,8 @@ namespace EcosDaQueda
                 if (d.joinPrisoner && !map.mapPawns.PrisonersOfColonySpawned.Any())
                     lacks.Add("1 prisioneiro");
                 foreach (ThingDefCountClass c in d.joinThings)
-                    if (c?.thingDef != null && EQItems.CountOnMap(map, c.thingDef) < c.count)
-                        lacks.Add(c.count + "x " + c.thingDef.label);
+                    if (c?.thingDef != null && EQItems.CountOnMap(map, c.thingDef) < EQCouncil.CeremonyCount(c.count))
+                        lacks.Add(EQCouncil.CeremonyCount(c.count) + "x " + c.thingDef.label);
             }
             missing = lacks.Count == 0 ? null : string.Join(", ", lacks);
             return missing == null;
@@ -230,7 +230,7 @@ namespace EcosDaQueda
         {
             foreach (ThingDefCountClass c in d.joinThings)
                 if (c?.thingDef != null)
-                    EQItems.TakeFromMap(map, c.thingDef, c.count);
+                    EQItems.TakeFromMap(map, c.thingDef, EQCouncil.CeremonyCount(c.count));
             if (d.joinPrisoner)
             {
                 Pawn prisoner = map.mapPawns.PrisonersOfColonySpawned.FirstOrDefault();

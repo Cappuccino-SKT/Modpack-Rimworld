@@ -117,7 +117,7 @@ namespace EcosDaQueda
         {
             NationDef d = NationDef.Active;
             float baseP = map != null ? StorytellerUtility.DefaultThreatPointsNow(map) : 500f;
-            float p = baseP * d.revoltPointsFactor * Mathf.Pow(1f + d.failGrowth, failures);
+            float p = baseP * d.revoltPointsFactor * Mathf.Pow(1f + d.failGrowth, failures) * EQCouncil.RevoltFactor;
             return Mathf.Clamp(p, d.revoltMinPoints, d.revoltMaxPoints);
         }
 

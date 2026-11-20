@@ -250,7 +250,7 @@ namespace EcosDaQueda
                 float daysPerTile = d.daysPerTilePoor + (d.daysPerTileRich - d.daysPerTilePoor) * t;
                 float g = c.growth[s.ID];
                 if (d.startRadius + g >= Cap(s, w) + 1f) continue;
-                c.growth[s.ID] = g + days / Math.Max(0.1f, daysPerTile);
+                c.growth[s.ID] = g + days * EQCouncil.FrontierSpeedFactor / Math.Max(0.1f, daysPerTile);
             }
             TrySuggestColony(c, d);
         }
@@ -360,12 +360,12 @@ namespace EcosDaQueda
             if (map == null) return false;
             var stacks = new List<(ThingDef def, int count)>
             {
-                (Named("RawPotatoes", ThingDefOf.Pemmican), (int)(st.food * d.tributeFactor)),
-                (ThingDefOf.WoodLog, (int)(st.wood * d.tributeFactor)),
-                (Named("BlocksGranite", ThingDefOf.Steel), (int)(st.stone * d.tributeFactor)),
-                (ThingDefOf.Steel, (int)(st.metal * d.tributeFactor)),
-                (ThingDefOf.ComponentIndustrial, (int)(st.components * d.tributeFactor)),
-                (ThingDefOf.Silver, (int)(st.prosperity * d.tributeFactor * d.prosperityToSilver)),
+                (Named("RawPotatoes", ThingDefOf.Pemmican), (int)(st.food * d.tributeFactor * EQCouncil.TributeFactor)),
+                (ThingDefOf.WoodLog, (int)(st.wood * d.tributeFactor * EQCouncil.TributeFactor)),
+                (Named("BlocksGranite", ThingDefOf.Steel), (int)(st.stone * d.tributeFactor * EQCouncil.TributeFactor)),
+                (ThingDefOf.Steel, (int)(st.metal * d.tributeFactor * EQCouncil.TributeFactor)),
+                (ThingDefOf.ComponentIndustrial, (int)(st.components * d.tributeFactor * EQCouncil.TributeFactor)),
+                (ThingDefOf.Silver, (int)(st.prosperity * d.tributeFactor * EQCouncil.TributeFactor * d.prosperityToSilver)),
             };
             var things = new List<Thing>();
             var lines = new List<string>();
@@ -405,7 +405,7 @@ namespace EcosDaQueda
             if (d == null || !Enabled) return "A fronteira viva só vale no mundo fixo do Ecos.";
             if (!EQNation.Founded) return EQNation.NoFrontierReason;
             if (!IsColony(colony)) return "Só uma colônia com mapa pode mandar agrimensores.";
-            if (MarkersOf(colony) >= d.markersPerColony) return "Esta colônia já tem " + d.markersPerColony + " marcos. Mais estaca que gente.";
+            if (MarkersOf(colony) >= (d.markersPerColony + EQCouncil.ExtraMarkers)) return "Esta colônia já tem " + (d.markersPerColony + EQCouncil.ExtraMarkers) + " marcos. Mais estaca que gente.";
             if (!free && SilverOn(colony.Map) < d.markerCostSilver) return "Faltam " + d.markerCostSilver + " de prata na colônia (estaca é barata, agrimensor não).";
             if (!tile.Valid || tile.Layer != colony.Tile.Layer) return "Escolha um tile na mesma superfície da colônia.";
             Tile t = Find.WorldGrid[tile];
@@ -492,7 +492,7 @@ namespace EcosDaQueda
                               + d.markerMaxDistance.ToString("0") + " tiles da colônia). Depois de " + d.markerSetupDays.ToString("0")
                               + " dias de demarcação, o território cresce em volta do marco (" + d.markerRadius.ToString("0.#") + " tiles; "
                               + d.markerRadiusGrown.ToString("0.#") + " depois de " + d.markerGrowDays.ToString("0") + " dias). Custa "
-                              + d.markerCostSilver + " de prata. Até " + d.markersPerColony + " por colônia.\n\nMarcos desta colônia: " + MarkersOf(colony) + ".",
+                              + d.markerCostSilver + " de prata. Até " + (d.markersPerColony + EQCouncil.ExtraMarkers) + " por colônia.\n\nMarcos desta colônia: " + MarkersOf(colony) + ".",
                 icon = ContentFinder<Texture2D>.Get("World/WorldObjects/Expanding/SurveySiteExpanding", false) ?? BaseContent.BadTex,
                 action = () =>
                 {
@@ -508,7 +508,7 @@ namespace EcosDaQueda
                 }
             };
             string block = !EQNation.Founded ? EQNation.NoFrontierReason
-                : MarkersOf(colony) >= d.markersPerColony ? "Esta colônia já tem " + d.markersPerColony + " marcos."
+                : MarkersOf(colony) >= (d.markersPerColony + EQCouncil.ExtraMarkers) ? "Esta colônia já tem " + (d.markersPerColony + EQCouncil.ExtraMarkers) + " marcos."
                 : SilverOn(colony.Map) < d.markerCostSilver ? "Faltam " + d.markerCostSilver + " de prata na colônia." : null;
             if (block != null) cmd.Disable(block);
             return cmd;

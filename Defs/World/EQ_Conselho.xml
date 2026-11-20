@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <!--
+    N2 (NACAO.md › 3.4): conselho da nação. Só depois da fundação (N1); botão "Conselho" no trono.
+    - Cada cadeira tem um adulto livre (não o líder; um colono numa cadeira só). Bônus 0 na perícia skillZero, cheio na skillFull,
+      e só vale com o conselheiro vivo, consciente e na colônia (o Embaixador também numa caravana).
+    - Trocar quem ocupa uma cadeira: espera de swapCooldownDays dias (cadeira vaga por morte não espera).
+    - Embaixador (Social): +goodwillGain na boa vontade ganha com qualquer facção; a tensão diária entre a patrona e as outras
+      potências sobe patronTensionSlowdown mais devagar; −ceremonyDiscount no preço da cerimônia e nos dízimos.
+    - General (Tiro ou Corpo a corpo, a maior): +armyStrength de força nos exércitos sob comando do jogador; revoltas futuras
+      revoltReduction menores.
+    - Conselheiro (Intelectual): fronteira cresce frontierSpeed mais rápido; +tributeBonus no tributo; +extraMarkers marco por
+      colônia (com o bônus em pelo menos 50%).
+  -->
+  <EcosDaQueda.CouncilDef>
+    <defName>EQ_Conselho</defName>
+    <label>conselho da nação</label>
+    <skillZero>4</skillZero>
+    <skillFull>15</skillFull>
+    <swapCooldownDays>3</swapCooldownDays>
+    <goodwillGain>0.20</goodwillGain>
+    <patronTensionSlowdown>0.30</patronTensionSlowdown>
+    <ceremonyDiscount>0.15</ceremonyDiscount>
+    <armyStrength>0.15</armyStrength>
+    <revoltReduction>0.20</revoltReduction>
+    <frontierSpeed>0.25</frontierSpeed>
+    <tributeBonus>0.25</tributeBonus>
+    <extraMarkers>1</extraMarkers>
+    <memberThought>EQ_ConselhoMembro</memberThought>
+    <passedOverThought>EQ_ConselhoPreterido</passedOverThought>
+    <seats>
+      <li>
+        <key>embaixador</key>
+        <label>embaixador</label>
+        <description>Social. Mais boa vontade com todas as facções, a tensão da patrona com as outras potências sobe mais devagar, cerimônia e dízimos mais baratos. Vale também em caravana.</description>
+        <skills>
+          <li>Social</li>
+        </skills>
+        <allowCaravan>true</allowCaravan>
+      </li>
+      <li>
+        <key>general</key>
+        <label>general</label>
+        <description>Tiro ou Corpo a corpo (a maior). Exércitos sob o seu comando mais fortes; as próximas revoltas vêm menores.</description>
+        <skills>
+          <li>Shooting</li>
+          <li>Melee</li>
+        </skills>
+      </li>
+      <li>
+        <key>conselheiro</key>
+        <label>conselheiro</label>
+        <description>Intelectual. A fronteira cresce mais rápido, o tributo do território rende mais e, com metade do bônus, cabe mais um marco por colônia.</description>
+        <skills>
+          <li>Intellectual</li>
+        </skills>
+      </li>
+    </seats>
+  </EcosDaQueda.CouncilDef>
+
+  <ThoughtDef>
+    <defName>EQ_ConselhoMembro</defName>
+    <workerClass>EcosDaQueda.ThoughtWorker_EQCouncilMember</workerClass>
+    <validWhileDespawned>true</validWhileDespawned>
+    <stages>
+      <li>
+        <label>membro do conselho</label>
+        <description>Tenho uma cadeira no conselho. Ninguém lê os meus pareceres, mas a cadeira é minha.</description>
+        <baseMoodEffect>4</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+  <ThoughtDef>
+    <defName>EQ_ConselhoPreterido</defName>
+    <workerClass>EcosDaQueda.ThoughtWorker_EQCouncilPassedOver</workerClass>
+    <validWhileDespawned>true</validWhileDespawned>
+    <stages>
+      <li>
+        <label>preterido no conselho</label>
+        <description>Entendo do assunto muito mais do que quem senta naquela cadeira. Mas ninguém pergunta para mim.</description>
+        <baseMoodEffect>-3</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+</Defs>

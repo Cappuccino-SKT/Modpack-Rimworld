@@ -151,7 +151,7 @@ namespace EcosDaQueda
             var parts = new List<string>();
             if (joinPrisoner) parts.Add("1 prisioneiro");
             foreach (ThingDefCountClass c in joinThings)
-                if (c?.thingDef != null) parts.Add(c.count + "x " + c.thingDef.label);
+                if (c?.thingDef != null) parts.Add(EQCouncil.CeremonyCount(c.count) + "x " + c.thingDef.label);
             string text = parts.Count == 0 ? "nada" : string.Join(", ", parts);
             if (!joinPriceNote.NullOrEmpty()) text += ". " + joinPriceNote;
             return text;
@@ -737,7 +737,7 @@ namespace EcosDaQueda
                 foreach (TitheOption opt in allegianceDef.titheOptions)
                 {
                     TitheOption o = opt;
-                    int count = Math.Max(1, o.count * multiplier);
+                    int count = EQCouncil.CeremonyCount(Math.Max(1, o.count * multiplier));
                     string label = o.label.Formatted(count.Named("COUNT"));
                     var dia = new DiaOption(label);
                     string disabled = CanPay(o, count, out Pawn pawn);

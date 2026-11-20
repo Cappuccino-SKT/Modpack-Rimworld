@@ -245,7 +245,7 @@ namespace EcosDaQueda
             if (comp == null || target == null) return "sem alvo";
             int garrison = comp.GarrisonOf(target);
             int before = strength;
-            float att = strength * (0.5f + morale) * AttackFactor * Rand.Range(0.75f, 1.25f);
+            float att = strength * (0.5f + morale) * AttackFactor * Rand.Range(0.75f, 1.25f) * (playerCommand ? EQCouncil.ArmyFactor : 1f);
             float def = garrison * 1.2f * Rand.Range(0.75f, 1.25f);
             bool win = forcedWin ?? att > def;
             int attLoss = (int)Math.Round(Math.Min(1f, (win ? Rand.Range(0.1f, 0.3f) : Rand.Range(0.5f, 0.8f)) * LossFactor) * strength);
