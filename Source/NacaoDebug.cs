@@ -7,7 +7,7 @@ using Verse;
 namespace EcosDaQueda.DebugTools
 {
     /// <summary>
-    /// N1 (NACAO.md): "nation [show|lock|throne|proclaim [i]|bribe|giveup|revolt|win|lose leader|lose throne|retry|invasion|found]".
+    /// N1 (NACAO.md): "nation [show|lock|classic|faith|throne|proclaim [i]|bribe|giveup|revolt|win|lose leader|lose throne|retry|invasion|found]".
     /// </summary>
     public static class EQNacaoDebug
     {
@@ -84,6 +84,8 @@ namespace EcosDaQueda.DebugTools
                     return "líder morto; " + EQNation.LastReport + "\n" + Show();
                 }
                 case "retry": c.retryTick = -1; return "espera zerada\n" + Show();
+                case "classic": return EQNationFaith.MakePlayerClassic() + "\n" + Show();
+                case "faith": return "fé: " + (EQNationFaith.LastReport ?? "-") + "\n" + Show();
                 case "found": c.Victory(); return EQNation.LastReport + "\n" + Show();
                 case "invasion":
                 {
@@ -102,6 +104,7 @@ namespace EcosDaQueda.DebugTools
             return c.Report() + "\n  adultos livres=" + EQNation.AdultFreeColonists() + " candidatos=" + EQLeader.Candidates().Count
                    + " proclamar: " + (EQNation.CanProclaim(lastThrone) ?? "pode")
                    + "\n  fronteira: " + (EQNation.Founded ? "liberada" : EQNation.NoFrontierReason)
+                   + "\n  começo clássico neste cenário: " + EQNationFaith.ClassicStartApplies(Find.Scenario)
                    + "\n  ideologias: principal=" + Faction.OfPlayer.ideos?.PrimaryIdeo?.name + " | " + string.Join(", ", EQLeader.AllFreeColonists().Distinct().Select(p => p.LabelShort + "=" + p.Ideo?.name));
         }
 
