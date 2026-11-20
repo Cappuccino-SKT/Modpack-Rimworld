@@ -1,0 +1,1595 @@
+{
+ "id": "Fazenda",
+ "label": "Fazenda",
+ "active": true,
+ "ownTab": true,
+ "replace": true,
+ "branch": "EQ_Ramo_Bancada",
+ "desc": "Tudo o que envolve fazenda. Lavoura: as plantas, em Alimentícia (frutífera, vegetal, fúngica), Souvenir e Recurso (tecido, madeira, medicamento, drogas, outros). Agricultura: mobília, solo, manejo e ferramentas. Pecuária: abrigo, alimentação, abate, criação e produtos.",
+ "nodes": [
+  {
+   "id": "Lav_Frutifera_1",
+   "idAuto": false,
+   "label": "Frutífera I: Pomar de quintal",
+   "desc": "Árvores e arbustos de fruta que crescem rápido e não pedem muito. A fome também não pede.",
+   "cost": 300,
+   "tech": "Neolithic",
+   "x": 0.0,
+   "y": 0,
+   "prereqs": [
+    "Lav_Madeira_1"
+   ],
+   "unlocks": [
+    "VEE_Plant_DatePalm",
+    "VCE_PearTree",
+    "VCE_Opuntia",
+    "VCE_BearBerryBush"
+   ],
+   "branch": "",
+   "bench": "",
+   "facilities": [],
+   "techprints": 0,
+   "techprintTags": [],
+   "notes": "Fazenda > Lavoura > Frutífera > nível I"
+  },
+  {
+   "id": "Lav_Frutifera_2",
+   "idAuto": false,
+   "label": "Frutífera II: Pomar clássico",
+   "desc": "As frutíferas que o Velho Mundo vendia em embalagem plástica. Levam um mês para dar fruta, mas dão muita.",
+   "cost": 700,
+   "tech": "Medieval",
+   "x": 2.0,
+   "y": 0,
+   "prereqs": [
+    "Lav_Frutifera_1"
+   ],
+   "unlocks": [
+    "VCE_AppleTree",
+    "VCE_BananaTree",
+    "VCE_CherryTree",
+    "VCE_OrangeTree",
+    "VCE_PeachTree",
+    "VCE_PlumTree",
+    "VBE_LemonTree",
+    "VCE_TreeMango",
+    "VCE_TreeOlive",
+    "VCE_TreeAlmond",
+    "VFEM2_Plant_Grape"
+   ],
+   "branch": "",
+   "bench": "",
+   "facilities": [],
+   "techprints": 0,
+   "techprintTags": [],
+   "notes": "Fazenda > Lavoura > Frutífera > nível II"
+  },
+  {
+   "id": "Lav_Frutifera_3",
+   "idAuto": false,
+   "label": "Frutífera III: Frutas de luxo",
+   "desc": "Cacau, coco e abacate: solo certo, mão experiente e paciência de quem ainda acredita em sobremesa.",
+   "cost": 1500,
+   "tech": "Industrial",
+   "x": 4.0,
+   "y": 0,
+   "prereqs": [
+    "Lav_Frutifera_2"
+   ],
+   "unlocks": [
+    "VCE_CoconutPalm",
+    "VCE_TreeAvocado",
+    "Plant_TreeCocoa",
+    "VCE_ChocolateBush"
+   ],
+   "branch": "",
+   "bench": "HiTechResearchBench",
+   "facilities": [],
+   "techprints": 0,
+   "techprintTags": [],
+   "notes": "Fazenda > Lavoura > Frutífera > nível III"
+  },
+  {
+   "id": "Lav_Frutifera_4",
+   "idAuto": false,
+   "label": "Frutífera IV: Árvores que escorrem",
+   "desc": "Xenoflora que produz gosma comestível. Ninguém pergunta de onde vem o gosto.",
+   "cost": 3000,
+   "tech": "Spacer",
+   "x": 6.0,
+   "y": 0,
+   "prereqs": [
+    "Lav_Frutifera_3"
+   ],
+   "unlocks": [
+    "AB_SlimyTree",
+    "AB_LargeSlimyTree"
+   ],
+   "branch": "",
+   "bench": "HiTechResearchBench",
+   "facilities": [],
+   "techprints": 0,
+   "techprintTags": [],
+   "notes": "Fazenda > Lavoura > Frutífera > nível IV"
+  },
+  {
+   "id": "Lav_Vegetal_1",
+   "idAuto": false,
+   "label": "Vegetal I: Horta de sobrevivência",
+   "desc": "Raízes, folhas e grãos que qualquer um planta e quase nada mata.",
+   "cost": 300,
+   "tech": "Neolithic",
+   "x": 0.0,
+   "y": 1,
+   "prereqs": [],
+   "unlocks": [
+    "Plant_Rice",
+    "Plant_Potato",
+    "Plant_Corn",
+    "Plant_Haygrass",
+    "VCE_Carrot",
+    "VCE_Cabbage",
+    "VCE_Onion",
+    "VCE_Beans",
+    "VCE_Peas",
+    "VCE_Lettuce",
+    "VCE_Cassava",
+    "VCE_SweetPotato",
+    "VCE_Pumpkin",
+    "VCE_Garlic",
+    "VCE_Agave",
+    "VCE_Buckwheat",
+    "VCE_Oats",
+    "VCE_Sunflower",
+    "VCE_Peanut",
+    "VCE_Chickpea"
+   ],
+   "branch": "",
+   "bench": "",
+   "facilities": [],
+   "techprints": 0,
+   "techprintTags": [],
+   "notes": "Fazenda > Lavoura > Vegetal > nível I"
+  },
+  {
+   "id": "Lav_Vegetal_2",
+   "idAuto": false,
+   "label": "Vegetal II: Horta temperada",
+   "desc": "Frutas de canteiro, grãos para farinha e temperos. Comida que alguém gostaria de comer.",
+   "cost": 700,
+   "tech": "Medieval",
+   "x": 2.0,
+   "y": 1,
+   "prereqs": [
+    "Lav_Vegetal_1"
+   ],
+   "unlocks": [
+    "Plant_Strawberry",
+    "VCE_Blueberry",
+    "VCE_Tomato",
+    "VCE_Eggplant",
+    "VCE_BellPepper",
+    "VCE_Pepper",
+    "VCE_Okra",
+    "VCE_BrusselsSprout",
+    "VCE_Radish",
+    "VCE_Beet",
+    "VCE_Celery",
+    "VCE_Pineapple",
+    "VCE_Wheat",
+    "VCE_Barley",
+    "VCE_Sorghum",
+    "VBE_MintPlant",
+    "VCE_Allspice",
+    "VCE_Sugarcane"
+   ],
+   "branch": "",
+   "bench": "",
+   "facilities": [],
+   "techprints": 0,
+   "techprintTags": [],
+   "notes": "Fazenda > Lavoura > Vegetal > nível II"
+  },
+  {
+   "id": "Lav_Vegetal_3",
+   "idAuto": false,
+   "label": "Vegetal III: Solo difícil",
+   "desc": "Areia, alagado e caverna: lavouras para os lugares onde a horta comum desiste.",
+   "cost": 1500,
+   "tech": "Industrial",
+   "x": 4.0,
+   "y": 1,
+   "prereqs": [
+    "Lav_Vegetal_2"
+   ],
+   "unlocks": [
+    "VCE_Rye",
+    "VCE_Melon",
+    "VCE_Cucumber",
+    "VCE_ButternutSquash",
+    "VCE_Lotus",
+    "VCE_Taro",
+    "VCE_WaterChestnut",
+    "VCE_Watercress",
+    "VCE_Moss"
+   ],
+   "branch": "",
+   "bench": "HiTechResearchBench",
+   "facilities": [],
+   "techprints": 0,
+   "techprintTags": [],
+   "notes": "Fazenda > Lavoura > Vegetal > nível III"
+  },
+  {
+   "id": "Lav_Vegetal_4",
+   "idAuto": false,
+   "label": "Vegetal IV: Lavoura do colapso",
+   "desc": "Batata que gosta de veneno e plantas que dão carne. O progresso não perguntou se você queria.",
+   "cost": 3000,
+   "tech": "Spacer",
+   "x": 6.0,
+   "y": 1,
+   "prereqs": [
+    "Lav_Vegetal_3"
+   ],
+   "unlocks": [
+    "Plant_Toxipotato",
+    "AB_FleshTentacle",
+    "AB_FleshyTumor"
+   ],
+   "branch": "",
+   "bench": "HiTechResearchBench",
+   "facilities": [],
+   "techprints": 0,
+   "techprintTags": [],
+   "notes": "Fazenda > Lavoura > Vegetal > nível IV"
+  },
+  {
+   "id": "Lav_Fungica_1",
+   "idAuto": false,
+   "label": "Fúngica I: Fungos de porão",
+   "desc": "Cogumelos que crescem no escuro, rápido e sem reclamar. Igual aos colonos.",
+   "cost": 300,
+   "tech": "Neolithic",
+   "x": 0.0,
+   "y": 2,
+   "prereqs": [
+    "Lav_Vegetal_1"
+   ],
+   "unlocks": [
+    "Plant_Nutrifungus",
+    "VPE_Plant_Stinker"
+   ],
+   "branch": "",
+   "bench": "",
+   "facilities": [],
+   "techprints": 0,
+   "techprintTags": [],
+   "notes": "Fazenda > Lavoura > Fúngica > nível I"
+  },
+  {
+   "id": "Lav_Fungica_2",
+   "idAuto": false,
+   "label": "Fúngica II: Fungos de caverna",
+   "desc": "Cogumelos que pedem caverna, perícia ou estômago forte.",
+   "cost": 700,
+   "tech": "Medieval",
+   "x": 2.0,
+   "y": 2,
+   "prereqs": [
+    "Lav_Fungica_1"
+   ],
+   "unlocks": [
+    "Glowstool",
+    "VPE_Plant_Glowcap",
+    "VPE_Plant_Bileceps",
+    "VEE_Plant_MysticCap"
+   ],
+   "branch": "",
+   "bench": "",
+   "facilities": [],
+   "techprints": 0,
+   "techprintTags": [],
+   "notes": "Fazenda > Lavoura > Fúngica > nível II"
+  },
+  {
+   "id": "Lav_Fungica_3",
+   "idAuto": false,
+   "label": "Fúngica III: Fungos alienígenas",
+   "desc": "Esporos de outros biomas. Comestíveis, na maioria das vezes.",
+   "cost": 1500,
+   "tech": "Industrial",
+   "x": 4.0,
+   "y": 2,
+   "prereqs": [
+    "Lav_Fungica_2"
+   ],
+   "unlocks": [
+    "AB_Glowstool",
+    "AB_Agarilux",
+    "AB_LilacBeacon",
+    "AB_WitchesOyster",
+    "AB_SlimyPholiota"
+   ],
+   "branch": "",
+   "bench": "HiTechResearchBench",
+   "facilities": [],
+   "techprints": 0,
+   "techprintTags": [],
+   "notes": "Fazenda > Lavoura > Fúngica > nível III"
+  },
+  {
+   "id": "Lav_Souvenir_1",
+   "idAuto": false,
+   "label": "Souvenir I: Jardim selvagem",
+   "desc": "Grama e flores do mato. Ninguém come, mas alguém sorri.",
+   "cost": 150,
+   "tech": "Neolithic",
+   "x": 0.0,
+   "y": 3.5,
+   "prereqs": [],
+   "unlocks": [
+    "Plant_Grass",
+    "VCE_Grass",
+    "VCE_TallGrass",
+    "Plant_Dandelion",
+    "Plant_Daylily",
+    "Plant_Rose",
+    "VEE_ButtercupFlower",
+    "VEE_ForgetMeNot"
+   ],
+   "branch": "",
+   "bench": "",
+   "facilities": [],
+   "techprints": 0,
+   "techprintTags": [],
+   "notes": "Fazenda > Lavoura > Souvenir > nível I"
+  },
+  {
+   "id": "Lav_Souvenir_2",
+   "idAuto": false,
+   "label": "Souvenir II: Canteiro de flores",
+   "desc": "Flores de canteiro e de jardim, para quem já tem tempo de enfeitar o fim do mundo.",
+   "cost": 350,
+   "tech": "Medieval",
+   "x": 2.0,
+   "y": 3.5,
+   "prereqs": [
+    "Lav_Souvenir_1"
+   ],
+   "unlocks": [
+    "VEE_Plant_Bluebell",
+    "VEE_Plant_Gardenia",
+    "VEE_Plant_Gentian",
+    "VEE_Plant_Petunia",
+    "VCE_FragrantbloomRose",
+    "VCE_Hyacinth",
+    "VCE_Jasmine",
+    "VCE_Lavender",
+    "VCE_Lily",
+    "VCE_Orchid",
+    "VCE_Plumeria",
+    "VCE_Tulip",
+    "VCE_Vanilla",
+    "VCE_Violet",
+    "VCE_YlangYlang"
+   ],
+   "branch": "",
+   "bench": "",
+   "facilities": [],
+   "techprints": 0,
+   "techprintTags": [],
+   "notes": "Fazenda > Lavoura > Souvenir > nível II"
+  },
+  {
+   "id": "Lav_Souvenir_3",
+   "idAuto": false,
+   "label": "Souvenir III: Ornamentais raras",
+   "desc": "Bonsai, cogumelo vermelho e a flor que faz dormir. Status em vaso.",
+   "cost": 750,
+   "tech": "Industrial",
+   "x": 4.0,
+   "y": 3.5,
+   "prereqs": [
+    "Lav_Souvenir_2"
+   ],
+   "unlocks": [
+    "Plant_TreeBonsai",
+    "VPE_Plant_Redcap",
+    "VPE_Plant_Lullabloom"
+   ],
+   "branch": "",
+   "bench": "HiTechResearchBench",
+   "facilities": [],
+   "techprints": 0,
+   "techprintTags": [],
+   "notes": "Fazenda > Lavoura > Souvenir > nível III"
+  },
+  {
+   "id": "Lav_Souvenir_4",
+   "idAuto": false,
+   "label": "Souvenir IV: Xenoflores",
+   "desc": "Gama: flores de outro mundo que brilham. Lindas, inúteis e caríssimas.",
+   "cost": 1500,
+   "tech": "Spacer",
+   "x": 6.0,
+   "y": 3.5,
+   "prereqs": [
+    "Lav_Souvenir_3"
+   ],
+   "unlocks": [
+    "AG_Gamma",
+    "AG_DarkGamma",
+    "AB_GiantGamma"
+   ],
+   "branch": "",
+   "bench": "HiTechResearchBench",
+   "facilities": [],
+   "techprints": 0,
+   "techprintTags": [],
+   "notes": "Fazenda > Lavoura > Souvenir > nível IV"
+  },
+  {
+   "id": "Lav_Tecido_1",
+   "idAuto": false,
+   "label": "Tecido I: Algodão",
+   "desc": "Fibra simples para roupa simples.",
+   "cost": 300,
+   "tech": "Neolithic",
+   "x": 0.0,
+   "y": 5,
+   "prereqs": [],
+   "unlocks": [
+    "Plant_Cotton"
+   ],
+   "branch": "",
+   "bench": "",
+   "facilities": [],
+   "techprints": 0,
+   "techprintTags": [],
+   "notes": "Fazenda > Lavoura > Tecido > nível I"
+  },
+  {
+   "id": "Lav_Tecido_2",
+   "idAuto": false,
+   "label": "Tecido II: Micofio",
+   "desc": "Fio de cogumelo de caverna. Esquenta e cheira a porão.",
+   "cost": 700,
+   "tech": "Medieval",
+   "x": 2.0,
+   "y": 5,
+   "prereqs": [
+    "Lav_Tecido_1",
+    "Lav_Fungica_1"
+   ],
+   "unlocks": [
+    "VPE_Plant_MycothreadMushroom"
+   ],
+   "branch": "",
+   "bench": "",
+   "facilities": [],
+   "techprints": 0,
+   "techprintTags": [],
+   "notes": "Fazenda > Lavoura > Tecido > nível II"
+  },
+  {
+   "id": "Lav_Tecido_3",
+   "idAuto": false,
+   "label": "Tecido III: Fio do diabo",
+   "desc": "Fungo que vira o tecido mais resistente que se planta. O nome é merecido.",
+   "cost": 1500,
+   "tech": "Industrial",
+   "x": 4.0,
+   "y": 5,
+   "prereqs": [
+    "Lav_Tecido_2"
+   ],
+   "unlocks": [
+    "Plant_Devilstrand"
+   ],
+   "branch": "",
+   "bench": "HiTechResearchBench",
+   "facilities": [],
+   "techprints": 0,
+   "techprintTags": [],
+   "notes": "Fazenda > Lavoura > Tecido > nível III"
+  },
+  {
+   "id": "Lav_Tecido_4",
+   "idAuto": false,
+   "label": "Tecido IV: Septimum",
+   "desc": "Planta que dá Ultima, tecido de luxo de outro mundo.",
+   "cost": 3000,
+   "tech": "Spacer",
+   "x": 6.0,
+   "y": 5,
+   "prereqs": [
+    "Lav_Tecido_3"
+   ],
+   "unlocks": [
+    "AG_Septimum"
+   ],
+   "branch": "",
+   "bench": "HiTechResearchBench",
+   "facilities": [],
+   "techprints": 0,
+   "techprintTags": [],
+   "notes": "Fazenda > Lavoura > Tecido > nível IV"
+  },
+  {
+   "id": "Lav_Madeira_1",
+   "idAuto": false,
+   "label": "Madeira I: Silvicultura básica",
+   "desc": "Árvores e cactos comuns que crescem rápido. Lenha para o primeiro inverno.",
+   "cost": 300,
+   "tech": "Neolithic",
+   "x": 0.0,
+   "y": 6,
+   "prereqs": [],
+   "unlocks": [
+    "Plant_TreeBamboo",
+    "Plant_TreePoplar",
+    "Plant_TreePine",
+    "Plant_TreeBirch",
+    "Plant_TreeWillow",
+    "Plant_TreePalm",
+    "Plant_TreeCecropia",
+    "Plant_SaguaroCactus",
+    "VEE_Plant_BarrelCactus",
+    "VEE_Plant_BeavertailCactus",
+    "VEE_Plant_ChollaCactus",
+    "VEE_Plant_HedgehogCactus",
+    "VEE_Plant_HoodiaCactus",
+    "VEE_Plant_OrganPipeCactus",
+    "VEE_Mangrove",
+    "VEE_Plant_ScrewPine"
+   ],
+   "branch": "",
+   "bench": "",
+   "facilities": [],
+   "techprints": 0,
+   "techprintTags": [],
+   "notes": "Fazenda > Lavoura > Madeira > nível I"
+  },
+  {
+   "id": "Lav_Madeira_2",
+   "idAuto": false,
+   "label": "Madeira II: Madeiras nobres",
+   "desc": "Árvores lentas e grandes. Quem planta não costuma estar vivo para cortar.",
+   "cost": 700,
+   "tech": "Medieval",
+   "x": 2.0,
+   "y": 6,
+   "prereqs": [
+    "Lav_Madeira_1"
+   ],
+   "unlocks": [
+    "Plant_TreeOak",
+    "Plant_TreeMaple",
+    "Plant_TreeCypress",
+    "Plant_TreeTeak",
+    "Plant_TreeDrago",
+    "VEE_Plant_TreeBirch_Auburn",
+    "VEE_Plant_TreeMaple_Auburn",
+    "VEE_Plant_TreeOak_Auburn",
+    "VEE_Plant_TreePoplar_Auburn",
+    "VEE_Plant_Laurel",
+    "VEE_Plant_GnarledPine",
+    "VEE_Plant_Firewood"
+   ],
+   "branch": "",
+   "bench": "",
+   "facilities": [],
+   "techprints": 0,
+   "techprintTags": [],
+   "notes": "Fazenda > Lavoura > Madeira > nível II"
+  },
+  {
+   "id": "Lav_Madeira_3",
+   "idAuto": false,
+   "label": "Madeira III: Madeiras resistentes",
+   "desc": "Madeira de caverna, de hidroponia, de terra poluída e de biomas exóticos.",
+   "cost": 1500,
+   "tech": "Industrial",
+   "x": 4.0,
+   "y": 6,
+   "prereqs": [
+    "Lav_Madeira_2"
+   ],
+   "unlocks": [
+    "Plant_Timbershroom",
+    "VPE_Plant_Timbercap",
+    "Plant_Fibercorn",
+    "Plant_TreeGrayPine",
+    "Plant_PebbleCactus",
+    "Plant_RatPalm",
+    "Plant_Witchwood",
+    "Plant_TreeSnagroot",
+    "AB_FanPalm",
+    "AB_MangrovePalm",
+    "AB_MangroveTree",
+    "AB_JungleTree",
+    "AB_JungleTree_Polluted",
+    "AB_Plant_GinkgoTree",
+    "AB_Plant_TreeWillow",
+    "AB_Plant_TreeClover",
+    "AB_Plant_TreeLilypad",
+    "AB_EuphorbiaDesiccata",
+    "AB_GiantAgariTox",
+    "AB_GiantAgarilux",
+    "AB_RecurvedStropharia",
+    "AB_ArbuscularMycorrhiza",
+    "AB_GiantStikehr",
+    "AB_PollutedStikehr"
+   ],
+   "branch": "",
+   "bench": "HiTechResearchBench",
+   "facilities": [],
+   "techprints": 0,
+   "techprintTags": [],
+   "notes": "Fazenda > Lavoura > Madeira > nível III"
+  },
+  {
+   "id": "Lav_Madeira_4",
+   "idAuto": false,
+   "label": "Madeira IV: Xenoflorestas",
+   "desc": "Árvores de anima, de carne, de máquina e de outro mundo. A madeira é madeira; o resto é melhor não olhar.",
+   "cost": 3000,
+   "tech": "Spacer",
+   "x": 6.0,
+   "y": 6,
+   "prereqs": [
+    "Lav_Madeira_3"
+   ],
+   "unlocks": [
+    "VEE_Plant_FakeAnimaTree",
+    "VEE_Plant_YoungAnimaTree",
+    "VEE_Plant_AnimaHusk",
+    "AB_Plant_AnimaCactus_Small",
+    "AB_Plant_AnimaCactus_Medium",
+    "AB_Plant_AnimaCactus_Grand",
+    "AB_Plant_AnimaPalm",
+    "AB_Plant_GiantGauTree",
+    "AB_Plant_MauvebloomTree",
+    "AB_LuminescentTree",
+    "AB_TechnoTree",
+    "AB_MechCorruption",
+    "AB_MechNode",
+    "AB_SessileMechanoid",
+    "AB_FleshTree",
+    "AB_AlienTree",
+    "AB_AlienTree_Polluted",
+    "AB_GlobularPlant_Polluted",
+    "AB_Plant_OcularCactus_Small",
+    "AB_Plant_OcularCactus_Large",
+    "AB_GoldenCubeTree",
+    "AB_DessertTree",
+    "AB_ChocolateTree",
+    "AB_DeadBowerTree",
+    "AB_CalcifiedRemnant",
+    "AB_FirevineTree",
+    "AB_GiantSunflower",
+    "AB_GiantTulip",
+    "AB_GiantPaleRose",
+    "AB_GiantSeptimum",
+    "AB_GiantToxicFlower",
+    "AB_GiantToxicFlower_Odyssey",
+    "AB_GiantToxicHornbloom",
+    "AB_ToxiBulb",
+    "AB_ToxicGamma"
+   ],
+   "branch": "",
+   "bench": "HiTechResearchBench",
+   "facilities": [],
+   "techprints": 0,
+   "techprintTags": [],
+   "notes": "Fazenda > Lavoura > Madeira > nível IV"
+  },
+  {
+   "id": "Lav_Medicamento_1",
+   "idAuto": false,
+   "label": "Medicamento I: Ervas de cura",
+   "desc": "Raiz da cura e as folhas, pétalas e flores que viram poção e remédio caseiro. Funciona, às vezes.",
+   "cost": 300,
+   "tech": "Neolithic",
+   "x": 0.0,
+   "y": 7,
+   "prereqs": [],
+   "unlocks": [
+    "Plant_Healroot",
+    "Plant_Alocasia",
+    "Plant_Astragalus",
+    "Plant_Clivia",
+    "Plant_Rafflesia"
+   ],
+   "branch": "",
+   "bench": "",
+   "facilities": [],
+   "techprints": 0,
+   "techprintTags": [],
+   "notes": "Fazenda > Lavoura > Medicamento > nível I"
+  },
+  {
+   "id": "Lav_Medicamento_2",
+   "idAuto": false,
+   "label": "Medicamento II: Trufa-cura",
+   "desc": "Fungo de caverna que já sai da terra como remédio.",
+   "cost": 700,
+   "tech": "Medieval",
+   "x": 2.0,
+   "y": 7,
+   "prereqs": [
+    "Lav_Medicamento_1"
+   ],
+   "unlocks": [
+    "VPE_Plant_Healtruffle"
+   ],
+   "branch": "",
+   "bench": "",
+   "facilities": [],
+   "techprints": 0,
+   "techprintTags": [],
+   "notes": "Fazenda > Lavoura > Medicamento > nível II"
+  },
+  {
+   "id": "Lav_Medicamento_3",
+   "idAuto": false,
+   "label": "Medicamento III: Farmácia que brota",
+   "desc": "Babosa e cogumelo-cura: remédio de verdade, para quem tem areia, caverna e mão firme.",
+   "cost": 1500,
+   "tech": "Industrial",
+   "x": 4.0,
+   "y": 7,
+   "prereqs": [
+    "Lav_Medicamento_2"
+   ],
+   "unlocks": [
+    "VCE_Healshroom",
+    "VCE_AloeVera"
+   ],
+   "branch": "",
+   "bench": "HiTechResearchBench",
+   "facilities": [],
+   "techprints": 0,
+   "techprintTags": [],
+   "notes": "Fazenda > Lavoura > Medicamento > nível III"
+  },
+  {
+   "id": "Lav_Drogas_1",
+   "idAuto": false,
+   "label": "Drogas I: Vícios de quintal",
+   "desc": "Lúpulo, folha de fumo e chá. O primeiro passo de toda economia.",
+   "cost": 300,
+   "tech": "Neolithic",
+   "x": 0.0,
+   "y": 8,
+   "prereqs": [],
+   "unlocks": [
+    "Plant_Hops",
+    "Plant_Smokeleaf",
+    "VBE_Plant_Tea"
+   ],
+   "branch": "",
+   "bench": "",
+   "facilities": [],
+   "techprints": 0,
+   "techprintTags": [],
+   "notes": "Fazenda > Lavoura > Drogas > nível I"
+  },
+  {
+   "id": "Lav_Drogas_2",
+   "idAuto": false,
+   "label": "Drogas II: Lavoura de exportação",
+   "desc": "Café, tabaco e psicoide. Rende mais que comida, e todo mundo sabe disso.",
+   "cost": 700,
+   "tech": "Medieval",
+   "x": 2.0,
+   "y": 8,
+   "prereqs": [
+    "Lav_Drogas_1"
+   ],
+   "unlocks": [
+    "VBE_Plant_Coffee",
+    "VBE_Plant_Tobacco",
+    "Plant_Psychoid"
+   ],
+   "branch": "",
+   "bench": "",
+   "facilities": [],
+   "techprints": 0,
+   "techprintTags": [],
+   "notes": "Fazenda > Lavoura > Drogas > nível II"
+  },
+  {
+   "id": "Lav_Drogas_3",
+   "idAuto": false,
+   "label": "Drogas III: Fungos da alegria",
+   "desc": "Cogumelos que mudam o humor e, de vez em quando, o resto.",
+   "cost": 1500,
+   "tech": "Industrial",
+   "x": 4.0,
+   "y": 8,
+   "prereqs": [
+    "Lav_Drogas_2"
+   ],
+   "unlocks": [
+    "VPE_Plant_Blisscap",
+    "AB_AgaricusDomeCap"
+   ],
+   "branch": "",
+   "bench": "HiTechResearchBench",
+   "facilities": [],
+   "techprints": 0,
+   "techprintTags": [],
+   "notes": "Fazenda > Lavoura > Drogas > nível III"
+  },
+  {
+   "id": "Lav_Outros_1",
+   "idAuto": false,
+   "label": "Outros I: Tinturas",
+   "desc": "Tintória: cor para um mundo cinza.",
+   "cost": 300,
+   "tech": "Neolithic",
+   "x": 0.0,
+   "y": 9,
+   "prereqs": [],
+   "unlocks": [
+    "Plant_Tinctoria"
+   ],
+   "branch": "",
+   "bench": "",
+   "facilities": [],
+   "techprints": 0,
+   "techprintTags": [],
+   "notes": "Fazenda > Lavoura > Outros > nível I"
+  },
+  {
+   "id": "Lav_Outros_2",
+   "idAuto": false,
+   "label": "Outros II: Óleo e corante",
+   "desc": "Canola para óleo e cogumelo-tintura para quem não tem sol.",
+   "cost": 700,
+   "tech": "Medieval",
+   "x": 2.0,
+   "y": 9,
+   "prereqs": [
+    "Lav_Outros_1"
+   ],
+   "unlocks": [
+    "VCE_Canola",
+    "VCE_Tinctshroom"
+   ],
+   "branch": "",
+   "bench": "",
+   "facilities": [],
+   "techprints": 0,
+   "techprintTags": [],
+   "notes": "Fazenda > Lavoura > Outros > nível II"
+  },
+  {
+   "id": "Lav_Outros_3",
+   "idAuto": false,
+   "label": "Outros III: Plantas utilitárias",
+   "desc": "Cogumelo que apaga fogo, solta gás, dá choque ou esquenta, dardo venenoso e bulbo de combustível.",
+   "cost": 1500,
+   "tech": "Industrial",
+   "x": 4.0,
+   "y": 9,
+   "prereqs": [
+    "Lav_Outros_2"
+   ],
+   "unlocks": [
+    "PlantBlazebulb",
+    "VPE_Plant_Foampuffer",
+    "VPE_Plant_Toxpuff",
+    "VPE_Plant_Zapcap",
+    "VPE_Plant_Thermoregulus",
+    "AB_DribblingCap"
+   ],
+   "branch": "",
+   "bench": "HiTechResearchBench",
+   "facilities": [],
+   "techprints": 0,
+   "techprintTags": [],
+   "notes": "Fazenda > Lavoura > Outros > nível III"
+  },
+  {
+   "id": "Lav_Outros_4",
+   "idAuto": false,
+   "label": "Outros IV: Minerais vivos",
+   "desc": "Plantas que dão resina, metal e pedra. A geologia desistiu de ser lenta.",
+   "cost": 3000,
+   "tech": "Spacer",
+   "x": 6.0,
+   "y": 9,
+   "prereqs": [
+    "Lav_Outros_3"
+   ],
+   "unlocks": [
+    "AB_KeeningCordax",
+    "AB_LivingAlcyonite",
+    "AB_Tooth"
+   ],
+   "branch": "",
+   "bench": "HiTechResearchBench",
+   "facilities": [],
+   "techprints": 0,
+   "techprintTags": [],
+   "notes": "Fazenda > Lavoura > Outros > nível IV"
+  },
+  {
+   "id": "Agr_Mobilia_1",
+   "idAuto": false,
+   "label": "Mobília I: Vasos e jardineiras",
+   "desc": "Vaso e jardineira: horta onde der, até dentro de casa. A primeira propriedade privada de toda colônia.",
+   "cost": 300,
+   "tech": "Neolithic",
+   "x": 0.0,
+   "y": 11,
+   "prereqs": [],
+   "unlocks": [
+    "PlantPot",
+    "VFE_PlanterBox",
+    "VFE_PlanterBox_Tilable"
+   ],
+   "branch": "",
+   "bench": "",
+   "facilities": [],
+   "techprints": 0,
+   "techprintTags": [],
+   "notes": "Fazenda > Agricultura > Mobília > nível I"
+  },
+  {
+   "id": "Agr_Mobilia_2",
+   "idAuto": false,
+   "label": "Mobília II: Vasos finos",
+   "desc": "Vaso de bonsai e vaso longo. Plantar por enfeite é sinal de que a fome passou, por enquanto.",
+   "cost": 700,
+   "tech": "Medieval",
+   "x": 2.0,
+   "y": 11,
+   "prereqs": [
+    "Agr_Mobilia_1"
+   ],
+   "unlocks": [
+    "PlantPot_Bonsai",
+    "VFE_LongPlantPot"
+   ],
+   "branch": "",
+   "bench": "",
+   "facilities": [],
+   "techprints": 0,
+   "techprintTags": [],
+   "notes": "Fazenda > Agricultura > Mobília > nível II"
+  },
+  {
+   "id": "Agr_Mobilia_3",
+   "idAuto": false,
+   "label": "Mobília III: Cultivo sob luz",
+   "desc": "Lâmpada solar e bacias de hidroponia: colheita sem sol, sem estação e sem desculpa.",
+   "cost": 1500,
+   "tech": "Industrial",
+   "x": 4.0,
+   "y": 11,
+   "prereqs": [
+    "Agr_Mobilia_2",
+    "ref_Electricity"
+   ],
+   "unlocks": [
+    "SunLamp",
+    "HydroponicsBasin",
+    "VFE_Hydroponics_Tilable"
+   ],
+   "branch": "",
+   "bench": "HiTechResearchBench",
+   "facilities": [],
+   "techprints": 0,
+   "techprintTags": [],
+   "notes": "Fazenda > Agricultura > Mobília > nível III"
+  },
+  {
+   "id": "Agr_Mobilia_4",
+   "idAuto": false,
+   "label": "Mobília IV: Ecossistemas artificiais",
+   "desc": "Canteiro fechado com luz, solo e clima próprios. A natureza, finalmente sob contrato.",
+   "cost": 3000,
+   "tech": "Spacer",
+   "x": 6.0,
+   "y": 11,
+   "prereqs": [
+    "Agr_Mobilia_3"
+   ],
+   "unlocks": [
+    "VFE_Ecosystem",
+    "VFE_Ecosystem_Tilable"
+   ],
+   "branch": "EQ_Ramo_VelhoMundo",
+   "bench": "HiTechResearchBench",
+   "facilities": [
+    "MultiAnalyzer"
+   ],
+   "techprints": 0,
+   "techprintTags": [],
+   "notes": "Fazenda > Agricultura > Mobília > nível IV"
+  },
+  {
+   "id": "Agr_Solo_1",
+   "idAuto": false,
+   "label": "Solo I: Terra arada",
+   "desc": "Arar o chão para deixar o solo mais fértil. O trabalho mais velho do mundo, e o mais ingrato.",
+   "cost": 300,
+   "tech": "Neolithic",
+   "x": 0.0,
+   "y": 12,
+   "prereqs": [],
+   "unlocks": [
+    "VCE_TilledSoil"
+   ],
+   "branch": "",
+   "bench": "",
+   "facilities": [],
+   "techprints": 0,
+   "techprintTags": [],
+   "notes": "Fazenda > Agricultura > Solo > nível I"
+  },
+  {
+   "id": "Agr_Solo_2",
+   "idAuto": false,
+   "label": "Solo II: Paisagismo",
+   "desc": "Grama plantada e gramado aparado. Solo fértil que alguém insiste em cortar.",
+   "cost": 700,
+   "tech": "Medieval",
+   "x": 2.0,
+   "y": 12,
+   "prereqs": [
+    "Agr_Solo_1"
+   ],
+   "unlocks": [
+    "VFEArch_Grass",
+    "VFEArch_LawnPlot"
+   ],
+   "branch": "",
+   "bench": "",
+   "facilities": [],
+   "techprints": 0,
+   "techprintTags": [],
+   "notes": "Fazenda > Agricultura > Solo > nível II"
+  },
+  {
+   "id": "Agr_Solo_3",
+   "idAuto": false,
+   "label": "Solo III: Solo fúngico",
+   "desc": "Cascalho fúngico e solo fúngico rico: chão para cogumelo crescer onde a terra não presta.",
+   "cost": 1500,
+   "tech": "Industrial",
+   "x": 4.0,
+   "y": 12,
+   "prereqs": [
+    "Agr_Solo_2"
+   ],
+   "unlocks": [
+    "FungalGravel",
+    "AM_RichFungalGravel"
+   ],
+   "branch": "",
+   "bench": "HiTechResearchBench",
+   "facilities": [],
+   "techprints": 0,
+   "techprintTags": [],
+   "notes": "Fazenda > Agricultura > Solo > nível III"
+  },
+  {
+   "id": "Agr_Manejo_1",
+   "idAuto": false,
+   "label": "Manejo I: Sementeira",
+   "desc": "Um canto do chão para separar sementes. Sem semente, a lavoura do ano que vem é só uma ideia.",
+   "cost": 300,
+   "tech": "Neolithic",
+   "x": 0.0,
+   "y": 13,
+   "prereqs": [
+    "Lav_Vegetal_1"
+   ],
+   "unlocks": [
+    "SeedExtractionSpot"
+   ],
+   "branch": "",
+   "bench": "",
+   "facilities": [],
+   "techprints": 0,
+   "techprintTags": [],
+   "notes": "Fazenda > Agricultura > Manejo > nível I"
+  },
+  {
+   "id": "Agr_Manejo_2",
+   "idAuto": false,
+   "label": "Manejo II: Técnicas agrícolas",
+   "desc": "Espantalho e bancada de sementes. Proteger a lavoura e guardar o que sobrou dela.",
+   "cost": 700,
+   "tech": "Medieval",
+   "x": 2.0,
+   "y": 13,
+   "prereqs": [
+    "Agr_Manejo_1",
+    "Agr_Mobilia_1"
+   ],
+   "unlocks": [
+    "VFE_Scarecrow",
+    "SeedExtractionBench"
+   ],
+   "branch": "",
+   "bench": "",
+   "facilities": [],
+   "techprints": 0,
+   "techprintTags": [],
+   "notes": "Fazenda > Agricultura > Manejo > nível II"
+  },
+  {
+   "id": "Agr_Manejo_3",
+   "idAuto": false,
+   "label": "Manejo III: Água e adubo",
+   "desc": "Irrigadores e processador de fertilizante: o esgoto da colônia volta para a horta, como sempre voltou.",
+   "cost": 1500,
+   "tech": "Industrial",
+   "x": 4.0,
+   "y": 13,
+   "prereqs": [
+    "Agr_Manejo_2",
+    "ref_Plumbing"
+   ],
+   "unlocks": [
+    "VFE_Sprinkler",
+    "IrrigationSprinkler",
+    "BiosolidsComposter"
+   ],
+   "branch": "",
+   "bench": "HiTechResearchBench",
+   "facilities": [],
+   "techprints": 0,
+   "techprintTags": [],
+   "notes": "Fazenda > Agricultura > Manejo > nível III"
+  },
+  {
+   "id": "Agr_Ferramentas_1",
+   "idAuto": false,
+   "label": "Ferramentas I: Machadinha",
+   "desc": "Machadinha de lenhador: corta árvore um pouco mais rápido e, se precisar, outras coisas também.",
+   "cost": 500,
+   "tech": "Medieval",
+   "x": 0.0,
+   "y": 14,
+   "prereqs": [],
+   "unlocks": [
+    "VWE_MeleeWeapon_Axe"
+   ],
+   "branch": "",
+   "bench": "",
+   "facilities": [],
+   "techprints": 0,
+   "techprintTags": [],
+   "notes": "Fazenda > Agricultura > Ferramentas > nível I"
+  },
+  {
+   "id": "Agr_Ferramentas_2",
+   "idAuto": false,
+   "label": "Ferramentas II: Trator Scytheman",
+   "desc": "Veículo de colheita do Velho Mundo. Faz o trabalho de dez colonos e o barulho de cem.",
+   "cost": 1200,
+   "tech": "Industrial",
+   "x": 2.0,
+   "y": 14,
+   "prereqs": [
+    "Agr_Ferramentas_1",
+    "ref_VVE_BasicVehicles"
+   ],
+   "unlocks": [
+    "VVE_Scytheman_Blueprint"
+   ],
+   "branch": "",
+   "bench": "",
+   "facilities": [],
+   "techprints": 0,
+   "techprintTags": [],
+   "notes": "Fazenda > Agricultura > Ferramentas > nível II"
+  },
+  {
+   "id": "Agr_Ferramentas_3",
+   "idAuto": false,
+   "label": "Ferramentas III: Lavradores sem alma",
+   "desc": "Mecanoide agrimãos: planta e colhe sem comer o que planta. Nem reclama do salário, porque não tem.",
+   "cost": 1500,
+   "tech": "Industrial",
+   "x": 4.0,
+   "y": 14,
+   "prereqs": [
+    "Agr_Ferramentas_2",
+    "ref_BasicMechtech"
+   ],
+   "unlocks": [
+    "Mech_Agrihand"
+   ],
+   "branch": "",
+   "bench": "HiTechResearchBench",
+   "facilities": [],
+   "techprints": 0,
+   "techprintTags": [],
+   "notes": "Fazenda > Agricultura > Ferramentas > nível III"
+  },
+  {
+   "id": "Agr_Ferramentas_4",
+   "idAuto": false,
+   "label": "Ferramentas IV: Mão do campo",
+   "desc": "Prótese agrícola que faz o colono plantar e colher muito mais rápido. Ele não pediu, mas agradece.",
+   "cost": 3000,
+   "tech": "Spacer",
+   "x": 6.0,
+   "y": 14,
+   "prereqs": [
+    "Agr_Ferramentas_3"
+   ],
+   "unlocks": [
+    "FieldHand",
+    "InstallFieldHand"
+   ],
+   "branch": "",
+   "bench": "HiTechResearchBench",
+   "facilities": [],
+   "techprints": 0,
+   "techprintTags": [],
+   "notes": "Fazenda > Agricultura > Ferramentas > nível IV"
+  },
+  {
+   "id": "Pec_Abrigo_1",
+   "idAuto": false,
+   "label": "Abrigo I: Curral e ninho",
+   "desc": "Marcador de curral, ponto de dormir, porteira e caixa de ovos. Cercar o jantar antes que ele fuja.",
+   "cost": 300,
+   "tech": "Neolithic",
+   "x": 0.0,
+   "y": 16,
+   "prereqs": [],
+   "unlocks": [
+    "PenMarker",
+    "AnimalSleepingSpot",
+    "VFEArch_AnimalGate",
+    "EggBox"
+   ],
+   "branch": "",
+   "bench": "",
+   "facilities": [],
+   "techprints": 0,
+   "techprintTags": [],
+   "notes": "Fazenda > Pecuária > Abrigo > nível I"
+  },
+  {
+   "id": "Pec_Abrigo_2",
+   "idAuto": false,
+   "label": "Abrigo II: Estábulo",
+   "desc": "Caixa de dormir, cama e portinhola para animais. Bicho descansado rende mais leite, lã e carne.",
+   "cost": 700,
+   "tech": "Medieval",
+   "x": 2.0,
+   "y": 16,
+   "prereqs": [
+    "Pec_Abrigo_1"
+   ],
+   "unlocks": [
+    "AnimalSleepingBox",
+    "AnimalBed",
+    "AnimalFlap"
+   ],
+   "branch": "",
+   "bench": "",
+   "facilities": [],
+   "techprints": 0,
+   "techprintTags": [],
+   "notes": "Fazenda > Pecuária > Abrigo > nível II"
+  },
+  {
+   "id": "Pec_Abrigo_3",
+   "idAuto": false,
+   "label": "Abrigo III: Memorial animal",
+   "desc": "Sarcófago para o bicho de estimação e lajes animalistas. Luto por quem nunca pediu para ser adotado.",
+   "cost": 1500,
+   "tech": "Industrial",
+   "x": 4.0,
+   "y": 16,
+   "prereqs": [
+    "Pec_Abrigo_2",
+    "ref_ComplexFurniture"
+   ],
+   "unlocks": [
+    "VFE_AnimalSarcophagus",
+    "AnimalistSlab_Medium",
+    "AnimalistSlab_Broad"
+   ],
+   "branch": "",
+   "bench": "HiTechResearchBench",
+   "facilities": [],
+   "techprints": 0,
+   "techprintTags": [],
+   "notes": "Fazenda > Pecuária > Abrigo > nível III"
+  },
+  {
+   "id": "Pec_Alimentacao_1",
+   "idAuto": false,
+   "label": "Alimentação I: Feno",
+   "desc": "Secar capim para o inverno. Se o bicho come, a colônia come depois.",
+   "cost": 300,
+   "tech": "Neolithic",
+   "x": 0.0,
+   "y": 17,
+   "prereqs": [
+    "Lav_Vegetal_1"
+   ],
+   "unlocks": [
+    "Hay"
+   ],
+   "branch": "",
+   "bench": "",
+   "facilities": [],
+   "techprints": 0,
+   "techprintTags": [],
+   "notes": "Fazenda > Pecuária > Alimentação > nível I"
+  },
+  {
+   "id": "Pec_Alimentacao_2",
+   "idAuto": false,
+   "label": "Alimentação II: Ração",
+   "desc": "Carne e vegetais moídos numa papa que só animal aceita. E alguns colonos, em anos ruins.",
+   "cost": 700,
+   "tech": "Medieval",
+   "x": 2.0,
+   "y": 17,
+   "prereqs": [
+    "Pec_Alimentacao_1",
+    "Pec_Abate_1"
+   ],
+   "unlocks": [
+    "Kibble"
+   ],
+   "branch": "",
+   "bench": "",
+   "facilities": [],
+   "techprints": 0,
+   "techprintTags": [],
+   "notes": "Fazenda > Pecuária > Alimentação > nível II"
+  },
+  {
+   "id": "Pec_Alimentacao_3",
+   "idAuto": false,
+   "label": "Alimentação III: Bico de pasta",
+   "desc": "Pasta nutritiva direto no cocho, por cano. O animal agradece; o colono que comia a mesma pasta, nem tanto.",
+   "cost": 1500,
+   "tech": "Industrial",
+   "x": 4.0,
+   "y": 17,
+   "prereqs": [
+    "Pec_Alimentacao_2",
+    "ref_NutrientPaste"
+   ],
+   "unlocks": [
+    "VNPE_NutrientPasteFeeder"
+   ],
+   "branch": "",
+   "bench": "HiTechResearchBench",
+   "facilities": [],
+   "techprints": 0,
+   "techprintTags": [],
+   "notes": "Fazenda > Pecuária > Alimentação > nível III"
+  },
+  {
+   "id": "Pec_Abate_1",
+   "idAuto": false,
+   "label": "Abate I: Açougue",
+   "desc": "Um canto do chão e uma faca. Todo churrasco começa com uma decisão.",
+   "cost": 300,
+   "tech": "Neolithic",
+   "x": 0.0,
+   "y": 18,
+   "prereqs": [],
+   "unlocks": [
+    "ButcherSpot"
+   ],
+   "branch": "",
+   "bench": "",
+   "facilities": [],
+   "techprints": 0,
+   "techprintTags": [],
+   "notes": "Fazenda > Pecuária > Abate > nível I"
+  },
+  {
+   "id": "Pec_Abate_2",
+   "idAuto": false,
+   "label": "Abate II: Mesa de açougueiro",
+   "desc": "Bancada para carnear rápido e aproveitar mais. Inclusive o que não deveria.",
+   "cost": 700,
+   "tech": "Medieval",
+   "x": 2.0,
+   "y": 18,
+   "prereqs": [
+    "Pec_Abate_1"
+   ],
+   "unlocks": [
+    "TableButcher"
+   ],
+   "branch": "",
+   "bench": "",
+   "facilities": [],
+   "techprints": 0,
+   "techprintTags": [],
+   "notes": "Fazenda > Pecuária > Abate > nível II"
+  },
+  {
+   "id": "Pec_Abate_3",
+   "idAuto": false,
+   "label": "Abate III: Açougue elétrico",
+   "desc": "Serra e moedor elétricos: abate em escala industrial, com a ética de uma também.",
+   "cost": 1500,
+   "tech": "Industrial",
+   "x": 4.0,
+   "y": 18,
+   "prereqs": [
+    "Pec_Abate_2",
+    "ref_Electricity"
+   ],
+   "unlocks": [
+    "VFE_TableButcherElectric"
+   ],
+   "branch": "",
+   "bench": "HiTechResearchBench",
+   "facilities": [],
+   "techprints": 0,
+   "techprintTags": [],
+   "notes": "Fazenda > Pecuária > Abate > nível III"
+  },
+  {
+   "id": "Pec_Criacao_1",
+   "idAuto": false,
+   "label": "Criação I: Castração",
+   "desc": "Controlar quem cruza com quem. O rebanho decide pouco, como todo mundo aqui.",
+   "cost": 300,
+   "tech": "Neolithic",
+   "x": 0.0,
+   "y": 19,
+   "prereqs": [],
+   "unlocks": [
+    "Sterilize"
+   ],
+   "branch": "",
+   "bench": "",
+   "facilities": [],
+   "techprints": 0,
+   "techprintTags": [],
+   "notes": "Fazenda > Pecuária > Criação > nível I"
+  },
+  {
+   "id": "Pec_Criacao_2",
+   "idAuto": false,
+   "label": "Criação II: Apicultura",
+   "desc": "Apiário: abelhas fazem mel perto das flores e ferroam perto de todo o resto.",
+   "cost": 700,
+   "tech": "Medieval",
+   "x": 2.0,
+   "y": 19,
+   "prereqs": [
+    "Pec_Criacao_1",
+    "Pec_Abrigo_1"
+   ],
+   "unlocks": [
+    "VFEM2_Apiary"
+   ],
+   "branch": "",
+   "bench": "",
+   "facilities": [],
+   "techprints": 0,
+   "techprintTags": [],
+   "notes": "Fazenda > Pecuária > Criação > nível II"
+  },
+  {
+   "id": "Pec_Criacao_3",
+   "idAuto": false,
+   "label": "Criação III: Zootecnia",
+   "desc": "Banco de dados animal: cada bicho escaneado vira dado. Se o banco queimar, os dados vão junto.",
+   "cost": 1500,
+   "tech": "Industrial",
+   "x": 4.0,
+   "y": 19,
+   "prereqs": [
+    "Pec_Criacao_2"
+   ],
+   "unlocks": [
+    "AM_AnimalDatabase"
+   ],
+   "branch": "",
+   "bench": "HiTechResearchBench",
+   "facilities": [],
+   "techprints": 0,
+   "techprintTags": [],
+   "notes": "Fazenda > Pecuária > Criação > nível III"
+  },
+  {
+   "id": "Pec_Produtos_1",
+   "idAuto": false,
+   "label": "Produtos I: Queijaria",
+   "desc": "Prensa de queijo: o leite que sobrou vira algo que dura o inverno, e cheira como ele.",
+   "cost": 700,
+   "tech": "Medieval",
+   "x": 0.0,
+   "y": 20,
+   "prereqs": [
+    "Pec_Abrigo_1"
+   ],
+   "unlocks": [
+    "VCE_CheesePress"
+   ],
+   "branch": "",
+   "bench": "",
+   "facilities": [],
+   "techprints": 0,
+   "techprintTags": [],
+   "notes": "Fazenda > Pecuária > Produtos > nível I"
+  },
+  {
+   "id": "Pec_Produtos_2",
+   "idAuto": false,
+   "label": "Produtos II: Leite vegetal",
+   "desc": "Extrator que tira leite de grão e semente. Para quem não tem vaca, ou não confia nela.",
+   "cost": 1500,
+   "tech": "Industrial",
+   "x": 2.0,
+   "y": 20,
+   "prereqs": [
+    "Pec_Produtos_1",
+    "Lav_Vegetal_1",
+    "ref_Electricity"
+   ],
+   "unlocks": [
+    "VCE_VegMilkExtractor",
+    "Milk"
+   ],
+   "branch": "",
+   "bench": "HiTechResearchBench",
+   "facilities": [],
+   "techprints": 0,
+   "techprintTags": [],
+   "notes": "Fazenda > Pecuária > Produtos > nível II"
+  },
+  {
+   "id": "ref_Electricity",
+   "ref": "Electricity",
+   "x": 3.0,
+   "y": 10.5
+  },
+  {
+   "id": "ref_Plumbing",
+   "ref": "Plumbing",
+   "x": 3.0,
+   "y": 12.5
+  },
+  {
+   "id": "ref_VVE_BasicVehicles",
+   "ref": "VVE_BasicVehicles",
+   "x": 1.0,
+   "y": 13.5
+  },
+  {
+   "id": "ref_BasicMechtech",
+   "ref": "BasicMechtech",
+   "x": 3.0,
+   "y": 13.5
+  },
+  {
+   "id": "ref_ComplexFurniture",
+   "ref": "ComplexFurniture",
+   "x": 3.0,
+   "y": 15.5
+  },
+  {
+   "id": "ref_NutrientPaste",
+   "ref": "NutrientPaste",
+   "x": 3.0,
+   "y": 16.5
+  }
+ ]
+}

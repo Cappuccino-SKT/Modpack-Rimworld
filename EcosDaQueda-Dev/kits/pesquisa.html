@@ -521,6 +521,7 @@ function renderOrigPanel() {
   P.append(el('div', {class: 'meta'}, [p.cost + ' pontos', TECH[p.tech]?.label || p.tech, 'ramo: ' + (BRANCH[p.branch]?.label || '—'), 'mod: ' + p.mod].join(' · ')));
   if (p.bench || p.facilities.length) P.append(el('div', {class: 'meta'}, 'Exige: ' + [p.bench, ...p.facilities].filter(Boolean).map(b => R.benches.find(x => x.def === b)?.label || b).join(', ')));
   if (p.techprints) P.append(el('div', {class: 'meta'}, 'Techprints: ' + p.techprints));
+  if (p.eqHidden) P.append(el('div', {class: 'meta', style: 'color:var(--warn,#c90)'}, 'Escondida no jogo: ficou vazia, o que ela liberava foi para as suas árvores.'));
   if (p.knowledge) P.append(el('div', {class: 'meta'}, 'Pesquisa de conhecimento da Anomaly (' + p.knowledge + ')'));
   if (p.editor) P.append(el('div', {class: 'okc'}, 'Criada no editor (uma árvore sua).'));
   P.append(el('p', {}, p.desc));

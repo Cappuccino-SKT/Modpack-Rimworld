@@ -59,6 +59,8 @@ Um bloco por sessão. Estimativa: **~25 blocos**. Ordem recomendada (cada linha 
 
 **Etapa 10 — estratégia, desempenho e mundo fixo (~9 blocos; lista do usuário de 2026-11-17).** Detalhe na seção da Etapa 10. Ordem sugerida: 10a logo depois do 3e; 10b antes da Etapa 5 (os eventos usam o mundo); 10c–10e junto ou logo depois da 5a (guerras); 10f por último, antes da Etapa 9.
 
+**Nação do jogador (~3 blocos; ideia do usuário de 2026-11-19, ver `NACAO.md`).** O jogador começa como assentamento comum; sala do trono + "Proclamar líder" traz a revolta dos povos da região; vencer funda a nação (entra no Hegemony; só então pode jurar lealdade). Ideologia no modo clássico até a fundação; na fundação escolhe os primeiros memes e vira fluida; cada meme muda o governo (cadeiras, líderes, regras). Blocos **N1** fundação e revolta (antes do F5), **N1b** ideologia clássica → fluida, **N2** conselho (Embaixador, General, Conselheiro), **N2b** governo pela ideologia (tabela de memes ✱), **N3** sugestões aprovadas (legitimidade, sucessão coroada, reações das potências, mercenários). Decisões ✱ no `NACAO.md` › 5.
+
 **Etapa 11 — cargos com obrigações (~4 blocos; pedido do usuário de 2026-11-18).** Detalhe na seção da Etapa 11. 11a pode vir logo (só usa sistemas prontos); 11c depende do 10d.
 
 **Etapa 9 — polimento e lançamento (4–5 blocos).**
@@ -177,7 +179,7 @@ Ideia central: num mundo pós-apocalíptico ninguém "inventa" do zero; **recupe
     3. O manual **não é consumido**: fica com o jogador e pode ser vendido depois.
     4. Licença de cargo dá **só a permissão legal**, não o manual.
     5. O manual destranca a pesquisa **mesmo sem os pré-requisitos** (ela espera a cadeia para ser pesquisada).
-    6. **A árvore de pesquisa atual (abas da 3a) vai ser desfeita e remontada** de acordo com o modpack; o desenho da nova árvore **ainda não foi planejado ✱** e vem antes (ou junto) do primeiro bloco do 3f. A classificação dos projetos por ramo (`tecnico/pesquisa-classificacao.md`) também pode mudar.
+    6. **A árvore de pesquisa atual (abas da 3a) vai ser desfeita e remontada** de acordo com o modpack; o desenho da nova árvore está em **`ARVORES.md`** (22 árvores; a Fazenda já feita) e vem antes (ou junto) do primeiro bloco do 3f. A classificação dos projetos por ramo (`tecnico/pesquisa-classificacao.md`) também pode mudar.
   - **Blocos sugeridos:** (1) trava total + manual destrancando + pesquisas iniciais por cenário; (2) engenharia reversa por item com contagem por projeto; (3) fontes: estoque de manuais por facção, missão dirigida e missões especiais das potências.
 
 ## Etapa 4 — Utilidade para os outros mods (média)

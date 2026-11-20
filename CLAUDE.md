@@ -7,7 +7,9 @@ Esta pasta é uma instalação do **RimWorld 1.7** (não-Steam, motor Waylith) o
 Leia **`EcosDaQueda-Dev/STATUS.md`** (curto: onde paramos e próximos passos). Depois, **só o que a tarefa pedir**:
 - `EcosDaQueda-Dev/PLANO.md` — plano de desenvolvimento em etapas (o que vem a seguir e em que ordem).
 - `EcosDaQueda-Dev/DESIGN.md` — visão, facções, sistemas planejados.
+- `EcosDaQueda-Dev/NACAO.md` — nação do jogador: fundação pelo trono, revolta, conselho, lealdade só para nações.
 - `EcosDaQueda-Dev/MUNDO.md` — mundo fixo (América do Norte) e fronteiras vivas: desenho, blocos e decisões.
+- `EcosDaQueda-Dev/ARVORES.md` — plano das árvores de pesquisa para todo o modpack (22 árvores, mapa em `kits/arvores-mapa.tsv`).
 - `EcosDaQueda-Dev/TECNICO.md` — ambiente, estrutura, packageIds e **índice** das notas por assunto em `EcosDaQueda-Dev/tecnico/` (ler só o arquivo do assunto).
 - `EcosDaQueda-Dev/TESTES.md` — como testar, ruído conhecido do log, limitações.
 - `EcosDaQueda-Dev/HISTORICO.md` — registro detalhado do que já foi feito. **Não ler inteiro**; buscar o termo quando precisar.

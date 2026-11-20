@@ -1,0 +1,21 @@
+# F4: fronteira do jogador no mundo fixo. A colônia nasce com raio 2 e cresce; marco de fronteira puxa o território;
+# tributo do território em drop pod; carta com lugar sugerido quando a colônia chega ao teto.
+newgame EQ_Scenario_Andarilhos
+timeout 1500
+wait 2d
+playertiles
+frontier
+frontiermark
+frontiermarkage 3
+wait 1d
+playertiles
+frontier
+frontiermarkage 12
+wait 1d
+playertiles
+tributenow
+frontierskip 30
+wait 1d
+playertiles
+frontier
+tributenow

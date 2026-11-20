@@ -1,0 +1,37 @@
+# N1 (NACAO.md): fundação da nação. Antes: sem território, sem cerimônia, sem invasão de conquista do Hegemony.
+# Proclamação no trono -> revolta dos Povos da Região -> derrota (sala do trono tomada) -> espera -> nova proclamação
+# (suborno) -> vitória -> nação fundada: território do F4, cerimônia liberada.
+newgame EQ_Scenario_Andarilhos
+timeout 1500
+nation lock
+wait 2d
+nation
+playertiles
+frontiermark
+ceremony coro
+nation invasion
+nation proclaim
+nation throne
+nation proclaim
+nation proclaim 0
+nation proclaim
+nation revolt
+wait 2h
+nation lose throne
+nation clear
+nation proclaim
+nation retry
+nation proclaim 0
+nation bribe
+nation revolt
+wait 2h
+nation
+nation win
+ceremony coro
+wait 2d
+nation
+playertiles
+nation invasion
+frontiermark
+playertiles
+letters
