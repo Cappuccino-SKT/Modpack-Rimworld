@@ -468,7 +468,7 @@ namespace EcosDaQueda.DebugTools
                 case "frontiermarkage": return EQMundoDebug.FrontierMarkAge(float.Parse(Arg(1), System.Globalization.CultureInfo.InvariantCulture));
                 case "tributenow": return EQMundoDebug.TributeNow();
                 case "playertiles": return EQMundoDebug.PlayerTiles();
-                case "nation": return EQNacaoDebug.Run(a);
+                case "nation": return EQNacaoDebug.Run(a); case "council": return EQConselhoDebug.Run(a);
                 case "frontierskip": return EQMundoDebug.FrontierSkip(int.Parse(Arg(1)));
                 case "worldfixed": return EQMundoDebug.Fixed();
                 case "worlddump": return EQWorldConverter.Dump(Arg(1));
