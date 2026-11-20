@@ -777,7 +777,7 @@
    "id": "Lav_Drogas_2",
    "idAuto": false,
    "label": "Drogas II: Lavoura de exportação",
-   "desc": "Café, tabaco e psicoide, e o psycho em pó feito da folha. Rende mais que comida na Feira, e todo mundo sabe disso.",
+   "desc": "Café, tabaco e psicoide, com o cigarro, o charuto e o psycho em pó feito das folhas. Rende mais que comida na Feira, e todo mundo sabe disso.",
    "cost": 700,
    "tech": "Medieval",
    "x": 2.5,
@@ -789,7 +789,9 @@
     "VBE_Plant_Coffee",
     "VBE_Plant_Tobacco",
     "Plant_Psychoid",
-    "Psycho"
+    "Psycho",
+    "VBE_Cigarettes",
+    "VBE_Cigars"
    ],
    "branch": "",
    "bench": "",
@@ -1548,7 +1550,7 @@
   },
   {
    "id": "ref_Plumbing",
-   "ref": "Plumbing",
+   "ref": "EQ_R_Agua_Ag_Primitiva",
    "x": 3.75,
    "y": 12.5
   },
@@ -1566,13 +1568,13 @@
   },
   {
    "id": "ref_ComplexFurniture",
-   "ref": "ComplexFurniture",
+   "ref": "EQ_R_Mobilia_Casa_Complexa",
    "x": 3.75,
    "y": 15.5
   },
   {
    "id": "ref_NutrientPaste",
-   "ref": "NutrientPaste",
+   "ref": "EQ_R_Cozinha_Pasta_Nutrientes",
    "x": 3.75,
    "y": 16.5
   },

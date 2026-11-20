@@ -1,0 +1,554 @@
+{
+ "id": "Cozinha",
+ "label": "Cozinha e bebidas",
+ "active": true,
+ "ownTab": true,
+ "replace": true,
+ "branch": "EQ_Ramo_Bancada",
+ "desc": "Comida de verdade depois da pasta. Cozinha (fogão a lenha, carne-seca e condimentos, grelha, confeitaria, cozinha elétrica, comida de prateleira), Pasta nutritiva e Bebidas (cerveja e chá, vinho, hidromel, destilaria, café, expresso, mixologia). Cada bebida exige a planta que a faz na Fazenda.",
+ "nodes": [
+  {
+   "id": "Coz_Fogao",
+   "idAuto": false,
+   "label": "Cozinha I: Fogão a lenha",
+   "desc": "Fogão a lenha e as refeições boas, luxuosas e gourmet. Comer bem é privilégio de quem pesquisou; os outros comem pasta.",
+   "cost": 300,
+   "tech": "Neolithic",
+   "x": 0.0,
+   "y": 0,
+   "prereqs": [],
+   "unlocks": [
+    "FueledStove",
+    "MealFine",
+    "MealFine_Meat",
+    "MealFine_Veg",
+    "MealLavish",
+    "MealLavish_Meat",
+    "MealLavish_Veg",
+    "VCE_MealGourmet"
+   ],
+   "absorbs": [],
+   "branch": "",
+   "bench": "",
+   "facilities": [],
+   "techprints": 0,
+   "techprintTags": [],
+   "notes": "Cozinha > Cozinha > nível I"
+  },
+  {
+   "id": "Coz_Conserva",
+   "idAuto": false,
+   "label": "Cozinha I: Carne-seca e condimentos",
+   "desc": "Carne-seca, mesa de condimentos, sal, maionese, néctar de agave e compota de geleia de inseto. Tempero é o que separa o jantar da sobrevivência.",
+   "cost": 400,
+   "tech": "Neolithic",
+   "x": 0.0,
+   "y": 1,
+   "prereqs": [
+    "ref_Lav_Vegetal_1"
+   ],
+   "unlocks": [
+    "Pemmican",
+    "VCE_CondimentPrepTable",
+    "VCE_Salt",
+    "VCE_Mayo",
+    "VCE_AgaveNectar",
+    "VCE_InsectJellyPreserves"
+   ],
+   "absorbs": [
+    "Pemmican",
+    "VCE_CondimentsResearch"
+   ],
+   "branch": "",
+   "bench": "",
+   "facilities": [],
+   "techprints": 0,
+   "techprintTags": [],
+   "notes": "Cozinha > Cozinha > nível I"
+  },
+  {
+   "id": "Coz_Molhos",
+   "idAuto": false,
+   "label": "Cozinha II: Molhos",
+   "desc": "Ketchup e molho picante, do tomate e da pimenta da horta, e manteiga de folha de fumo. O Velho Mundo deixou poucas receitas; o ketchup foi a primeira a voltar.",
+   "cost": 500,
+   "tech": "Medieval",
+   "x": 2.5,
+   "y": 2,
+   "prereqs": [
+    "Coz_Conserva",
+    "ref_Lav_Vegetal_2",
+    "ref_Lav_Drogas_1"
+   ],
+   "unlocks": [
+    "VCE_Ketchup",
+    "VCE_HotSauce",
+    "VCE_SmokeleafButter"
+   ],
+   "absorbs": [],
+   "branch": "",
+   "bench": "",
+   "facilities": [],
+   "techprints": 0,
+   "techprintTags": [],
+   "notes": "Cozinha > Cozinha > nível II"
+  },
+  {
+   "id": "Coz_Chocolate",
+   "idAuto": false,
+   "label": "Cozinha III: Chocolate",
+   "desc": "Calda de chocolate e café moca, com o cacau das frutas de luxo. Doce de verdade: o Coro paga em prata, e os saqueadores, em balas.",
+   "cost": 800,
+   "tech": "Medieval",
+   "x": 5.0,
+   "y": 1.5,
+   "prereqs": [
+    "Coz_Forno",
+    "Beb_Cafe",
+    "ref_Lav_Frutifera_3"
+   ],
+   "unlocks": [
+    "VCE_ChocolateSyrup",
+    "VBE_MochaCoffee"
+   ],
+   "absorbs": [],
+   "branch": "",
+   "bench": "",
+   "facilities": [],
+   "techprints": 0,
+   "techprintTags": [],
+   "notes": "Cozinha > Cozinha > nível III"
+  },
+  {
+   "id": "Coz_Grelha",
+   "idAuto": false,
+   "label": "Cozinha II: Grelha",
+   "desc": "Grelha de ferro. Churrasco: a única tradição do Velho Mundo que sobreviveu intacta.",
+   "cost": 400,
+   "tech": "Medieval",
+   "x": 2.5,
+   "y": 0,
+   "prereqs": [
+    "Coz_Fogao",
+    "ref_Oficio_Metalurgia"
+   ],
+   "unlocks": [
+    "VCE_Grill"
+   ],
+   "absorbs": [
+    "VCE_Grilling"
+   ],
+   "branch": "",
+   "bench": "",
+   "facilities": [],
+   "techprints": 0,
+   "techprintTags": [],
+   "notes": "Cozinha > Cozinha > nível II"
+  },
+  {
+   "id": "Coz_Forno",
+   "idAuto": false,
+   "label": "Cozinha II: Confeitaria",
+   "desc": "Forno de confeitaria a lenha. Pão, bolo e sobremesa: o Coro não recebe embaixador sem doce na mesa.",
+   "cost": 600,
+   "tech": "Medieval",
+   "x": 2.5,
+   "y": 1,
+   "prereqs": [
+    "Coz_Fogao"
+   ],
+   "unlocks": [
+    "VCE_BakeryOven_Fueled"
+   ],
+   "absorbs": [
+    "VCE_DecorativeBaking"
+   ],
+   "branch": "",
+   "bench": "",
+   "facilities": [],
+   "techprints": 0,
+   "techprintTags": [],
+   "notes": "Cozinha > Cozinha > nível II"
+  },
+  {
+   "id": "Coz_Eletrica",
+   "idAuto": false,
+   "label": "Cozinha III: Cozinha elétrica",
+   "desc": "Fogão elétrico e a propano, forno de confeitaria elétrico, panela elétrica (sopas) e fritadeira. Comida rápida, para colonos que não têm mais tempo de ter fome.",
+   "cost": 600,
+   "tech": "Industrial",
+   "x": 5.0,
+   "y": 0.5,
+   "prereqs": [
+    "Coz_Fogao",
+    "ref_Ger_Eletricidade"
+   ],
+   "unlocks": [
+    "ElectricStove",
+    "AB_PropaneStove",
+    "VCE_BakeryOven_Electric",
+    "VCE_ElectricPot",
+    "VCE_DeepFrier"
+   ],
+   "absorbs": [
+    "VCE_SoupCooking",
+    "VCE_DeepFrying"
+   ],
+   "branch": "",
+   "bench": "",
+   "facilities": [],
+   "techprints": 0,
+   "techprintTags": [],
+   "notes": "Cozinha > Cozinha > nível III"
+  },
+  {
+   "id": "Coz_Industrial",
+   "idAuto": false,
+   "label": "Cozinha IV: Comida de prateleira",
+   "desc": "Fogão grande, enlatadora e refeição de sobrevivência embalada. Comida que dura mais que a colônia; os abrigos antigos ainda têm latas do tempo do Império.",
+   "cost": 1200,
+   "tech": "Industrial",
+   "x": 7.5,
+   "y": 0.5,
+   "prereqs": [
+    "Coz_Eletrica",
+    "ref_Fabrica_Usinagem"
+   ],
+   "unlocks": [
+    "VFE_TableStoveLarge",
+    "VCE_CanningMachine",
+    "MealSurvivalPack"
+   ],
+   "absorbs": [
+    "VCE_Canning",
+    "PackagedSurvivalMeal"
+   ],
+   "branch": "",
+   "bench": "",
+   "facilities": [],
+   "techprints": 0,
+   "techprintTags": [],
+   "notes": "Cozinha > Cozinha > nível IV"
+  },
+  {
+   "id": "Pasta_Nutrientes",
+   "idAuto": false,
+   "label": "Pasta II: Pasta nutritiva",
+   "desc": "Dispensador e funil, tonel, moedor, gotejador, torneiras e canos de pasta. A comida oficial do fim do mundo: ninguém gosta, todo mundo come, e a Hélice jura que tem todas as vitaminas.",
+   "cost": 400,
+   "tech": "Industrial",
+   "x": 2.5,
+   "y": 2.5,
+   "prereqs": [
+    "ref_Ger_Eletricidade"
+   ],
+   "unlocks": [
+    "NutrientPasteDispenser",
+    "Hopper",
+    "VNPE_NutrientPasteVat",
+    "VNPE_NutrientPasteGrinder",
+    "VNPE_NutrientPasteDripper",
+    "VNPE_NutrientPasteTap",
+    "VNPE_NutrientPasteValve",
+    "VNPE_NutrientPastePipe",
+    "VNPE_UndergroundNutrientPastePipe"
+   ],
+   "absorbs": [
+    "NutrientPaste"
+   ],
+   "branch": "",
+   "bench": "",
+   "facilities": [],
+   "techprints": 0,
+   "techprintTags": [],
+   "notes": "Cozinha > Pasta > nível II"
+  },
+  {
+   "id": "Beb_Cerveja",
+   "idAuto": false,
+   "label": "Bebidas I: Cerveja e chá",
+   "desc": "Cervejaria, barril de fermentação, sidra não fermentada e chá. Com o lúpulo e o chá da horta: a primeira bebida de toda vila é a cerveja, e a segunda briga é por causa dela.",
+   "cost": 400,
+   "tech": "Neolithic",
+   "x": 0.0,
+   "y": 4,
+   "prereqs": [
+    "ref_Lav_Drogas_1"
+   ],
+   "unlocks": [
+    "Brewery",
+    "FermentingBarrel",
+    "VBE_UnfermentedCider",
+    "VBE_Tea"
+   ],
+   "absorbs": [
+    "Brewing"
+   ],
+   "branch": "",
+   "bench": "",
+   "facilities": [],
+   "techprints": 0,
+   "techprintTags": [],
+   "notes": "Cozinha > Bebidas > nível I"
+  },
+  {
+   "id": "Beb_Vinho",
+   "idAuto": false,
+   "label": "Bebidas II: Vinho",
+   "desc": "Barril de vinho e mosto de uva, da videira do pomar. O Coro só brinda com vinho; o resto do mundo, com o que tiver.",
+   "cost": 600,
+   "tech": "Medieval",
+   "x": 2.5,
+   "y": 3.5,
+   "prereqs": [
+    "Beb_Cerveja",
+    "ref_Lav_Frutifera_2"
+   ],
+   "unlocks": [
+    "VFEM2_WineBarrel",
+    "VFEM2_Must"
+   ],
+   "absorbs": [
+    "VFEM2_Wine"
+   ],
+   "branch": "",
+   "bench": "",
+   "facilities": [],
+   "techprints": 0,
+   "techprintTags": [],
+   "notes": "Cozinha > Bebidas > nível II"
+  },
+  {
+   "id": "Beb_Hidromel",
+   "idAuto": false,
+   "label": "Bebidas II: Hidromel",
+   "desc": "Barril de hidromel e pãozinho doce, com o mel do apiário. Doce, forte e antigo como o Império.",
+   "cost": 500,
+   "tech": "Medieval",
+   "x": 2.5,
+   "y": 4.5,
+   "prereqs": [
+    "Beb_Cerveja",
+    "ref_Pec_Criacao_2"
+   ],
+   "unlocks": [
+    "VFEM2_MeadFermentingBarrel",
+    "VFEM2_Sweetroll"
+   ],
+   "absorbs": [
+    "VFEM2_Beekeeping"
+   ],
+   "branch": "",
+   "bench": "",
+   "facilities": [],
+   "techprints": 0,
+   "techprintTags": [],
+   "notes": "Cozinha > Bebidas > nível II"
+  },
+  {
+   "id": "Beb_Destilaria",
+   "idAuto": false,
+   "label": "Bebidas II: Destilaria",
+   "desc": "Alambique de gim, barril de tequila, tambor de vodca, tonel de uísque e os mostos. Batata, milho e agave viram o que faz o deserto parecer menor.",
+   "cost": 700,
+   "tech": "Medieval",
+   "x": 2.5,
+   "y": 5.5,
+   "prereqs": [
+    "Beb_Cerveja",
+    "ref_Lav_Vegetal_1"
+   ],
+   "unlocks": [
+    "VBE_GinStill",
+    "VBE_TequilaBarrel",
+    "VBE_VodkaDrum",
+    "VBE_WhiskeyCask",
+    "VBE_GinMush",
+    "VBE_TequilaMust",
+    "VBE_VodkaMash",
+    "VBE_WhiskeyMash"
+   ],
+   "absorbs": [
+    "VBE_LiquorBrewing"
+   ],
+   "branch": "",
+   "bench": "",
+   "facilities": [],
+   "techprints": 0,
+   "techprintTags": [],
+   "notes": "Cozinha > Bebidas > nível II"
+  },
+  {
+   "id": "Beb_Cafe",
+   "idAuto": false,
+   "label": "Bebidas II: Café e limonada",
+   "desc": "Café passado e limonada, com o café da lavoura e o limão do pomar. Acordado, ninguém é saqueado dormindo.",
+   "cost": 400,
+   "tech": "Medieval",
+   "x": 2.5,
+   "y": 6.5,
+   "prereqs": [
+    "Beb_Cerveja",
+    "ref_Lav_Drogas_2",
+    "ref_Lav_Vegetal_2",
+    "ref_Lav_Frutifera_2"
+   ],
+   "unlocks": [
+    "VBE_HotCoffee",
+    "VBE_Lemonade"
+   ],
+   "absorbs": [],
+   "branch": "",
+   "bench": "",
+   "facilities": [],
+   "techprints": 0,
+   "techprintTags": [],
+   "notes": "Cozinha > Bebidas > nível II"
+  },
+  {
+   "id": "Beb_Expresso",
+   "idAuto": false,
+   "label": "Bebidas III: Máquina de expresso",
+   "desc": "Máquina de expresso e os cafés e chás finos: latte, dalgona, earl grey, masala chai, kombucha... e o café canibal, sobre o qual é melhor não perguntar.",
+   "cost": 500,
+   "tech": "Industrial",
+   "x": 5.0,
+   "y": 6.5,
+   "prereqs": [
+    "Beb_Cafe",
+    "ref_Ger_Eletricidade",
+    "ref_Lav_Fungica_1"
+   ],
+   "unlocks": [
+    "VBE_EspressoMachineBuilding",
+    "VBE_LatteCoffee",
+    "VBE_DalgonaCoffee",
+    "VBE_IrishCoffee",
+    "VBE_LemonCoffee",
+    "VBE_MintCoffee",
+    "VBE_CannibalCoffee",
+    "VBE_BlackTea",
+    "VBE_GreenTea",
+    "VBE_EarlGreyTea",
+    "VBE_LemonTea",
+    "VBE_MintTea",
+    "VBE_MasalaChai",
+    "VBE_NoonChai",
+    "VBE_Yuenyeung",
+    "VBE_Kombucha"
+   ],
+   "absorbs": [
+    "VBE_EspressoMachine"
+   ],
+   "branch": "",
+   "bench": "",
+   "facilities": [],
+   "techprints": 0,
+   "techprintTags": [],
+   "notes": "Cozinha > Bebidas > nível III"
+  },
+  {
+   "id": "Beb_Mixologia",
+   "idAuto": false,
+   "label": "Bebidas III: Mixologia",
+   "desc": "Bar, máquina de refrigerante, destilaria de ambrandy, coquetéis, suco, energético e xaropes. O refrigerante do Velho Mundo voltou; a receita, ninguém sabe se é a original.",
+   "cost": 900,
+   "tech": "Industrial",
+   "x": 5.0,
+   "y": 5.5,
+   "prereqs": [
+    "Beb_Destilaria",
+    "Beb_Cafe",
+    "ref_Ger_Eletricidade"
+   ],
+   "unlocks": [
+    "VBE_Bar",
+    "VBE_SodaFountain",
+    "VBE_AmbrandyDistillery",
+    "VBE_AmbrandyMush",
+    "VBE_SimpleCocktail",
+    "VBE_FineCocktail",
+    "VBE_LavishCocktail",
+    "VBE_GourmetCocktail",
+    "VBE_Juice",
+    "VBE_EnergyDrink",
+    "VBE_SodaSyrup"
+   ],
+   "absorbs": [
+    "VBE_MixologyResearch"
+   ],
+   "branch": "",
+   "bench": "",
+   "facilities": [],
+   "techprints": 0,
+   "techprintTags": [],
+   "notes": "Cozinha > Bebidas > nível III"
+  },
+  {
+   "id": "ref_Lav_Vegetal_1",
+   "ref": "EQ_R_Fazenda_Lav_Vegetal_1",
+   "x": -1.25,
+   "y": 0.5
+  },
+  {
+   "id": "ref_Lav_Vegetal_2",
+   "ref": "EQ_R_Fazenda_Lav_Vegetal_2",
+   "x": 1.25,
+   "y": 1.5
+  },
+  {
+   "id": "ref_Lav_Drogas_1",
+   "ref": "EQ_R_Fazenda_Lav_Drogas_1",
+   "x": 1.25,
+   "y": 1.5
+  },
+  {
+   "id": "ref_Lav_Frutifera_3",
+   "ref": "EQ_R_Fazenda_Lav_Frutifera_3",
+   "x": 3.75,
+   "y": 1.0
+  },
+  {
+   "id": "ref_Oficio_Metalurgia",
+   "ref": "EQ_R_Producao_Oficio_Metalurgia",
+   "x": 1.25,
+   "y": -0.5
+  },
+  {
+   "id": "ref_Ger_Eletricidade",
+   "ref": "EQ_R_Energia_Ger_Eletricidade",
+   "x": 3.75,
+   "y": 0.0
+  },
+  {
+   "id": "ref_Fabrica_Usinagem",
+   "ref": "EQ_R_Producao_Fabrica_Usinagem",
+   "x": 6.25,
+   "y": 0.0
+  },
+  {
+   "id": "ref_Lav_Frutifera_2",
+   "ref": "EQ_R_Fazenda_Lav_Frutifera_2",
+   "x": 1.25,
+   "y": 3.0
+  },
+  {
+   "id": "ref_Pec_Criacao_2",
+   "ref": "EQ_R_Fazenda_Pec_Criacao_2",
+   "x": 1.25,
+   "y": 4.0
+  },
+  {
+   "id": "ref_Lav_Drogas_2",
+   "ref": "EQ_R_Fazenda_Lav_Drogas_2",
+   "x": 1.25,
+   "y": 6.0
+  },
+  {
+   "id": "ref_Lav_Fungica_1",
+   "ref": "EQ_R_Fazenda_Lav_Fungica_1",
+   "x": 3.75,
+   "y": 6.0
+  }
+ ]
+}

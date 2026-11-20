@@ -1,0 +1,502 @@
+{
+ "id": "Agua",
+ "label": "Água, clima e higiene",
+ "active": true,
+ "ownTab": true,
+ "replace": true,
+ "branch": "EQ_Ramo_Bancada",
+ "desc": "Água limpa é o novo ouro: depois da Queda, quem controla o cano controla a vila. Água (encanamento, moderna, industrial, purificação), Esgoto (fossa, tratamento), Higiene (rústica, banhos e sauna, banheiro de luxo, biônicos da Hélice) e Clima (refrigerador primitivo, água quente, climatização, aquecimento central, refrigeração, combate a incêndio).",
+ "nodes": [
+  {
+   "id": "Ag_Primitiva",
+   "idAuto": false,
+   "label": "Água I: Encanamento",
+   "desc": "Canos, válvula, barril e torre de água, poço tubular, captação de superfície, bomba de vento, saída de esgoto, pia e banheira. Depois da Queda, água limpa é o novo ouro, e o cano é o cofre.",
+   "cost": 400,
+   "tech": "Medieval",
+   "x": 0,
+   "y": 0,
+   "prereqs": [],
+   "unlocks": [
+    "sewagePipeStuff",
+    "sewagePipeHidden",
+    "plumbingValve",
+    "WaterButt",
+    "WaterTowerS",
+    "WaterWellInlet",
+    "SurfaceWaterInlet",
+    "WindPump",
+    "SewageOutlet",
+    "BasinStuff",
+    "BathtubStuff"
+   ],
+   "absorbs": [
+    "Plumbing"
+   ],
+   "branch": "",
+   "bench": "",
+   "facilities": [],
+   "techprints": 0,
+   "techprintTags": [],
+   "notes": "Água > Água > nível I"
+  },
+  {
+   "id": "Ag_Moderna",
+   "idAuto": false,
+   "label": "Água II: Água moderna",
+   "desc": "Vaso sanitário, chuveiros, bebedouro, pia de cozinha e bomba elétrica. Descarga que funciona: luxo que o Velho Mundo achava direito.",
+   "cost": 600,
+   "tech": "Industrial",
+   "x": 2.5,
+   "y": 0,
+   "prereqs": [
+    "Ag_Primitiva",
+    "ref_Ger_Eletricidade"
+   ],
+   "unlocks": [
+    "ToiletStuff",
+    "ShowerSimple",
+    "ShowerStuff",
+    "Fountain",
+    "KitchenSink",
+    "ElectricPump"
+   ],
+   "absorbs": [
+    "ModernFixtures",
+    "ElectricPumps"
+   ],
+   "branch": "",
+   "bench": "",
+   "facilities": [],
+   "techprints": 0,
+   "techprintTags": [],
+   "notes": "Água > Água > nível II"
+  },
+  {
+   "id": "Ag_Industrial",
+   "idAuto": false,
+   "label": "Água III: Água industrial",
+   "desc": "Estação de bombeamento, torre de água industrial e poço profundo. A água do lençol mais fundo ainda não sabe que houve guerra.",
+   "cost": 1500,
+   "tech": "Industrial",
+   "x": 5,
+   "y": 0,
+   "prereqs": [
+    "Ag_Moderna",
+    "ref_Fabrica_Usinagem"
+   ],
+   "unlocks": [
+    "PumpingStation",
+    "WaterTowerL",
+    "DeepWaterWellInlet"
+   ],
+   "absorbs": [
+    "LargeWaterPumps",
+    "DeepWells"
+   ],
+   "branch": "",
+   "bench": "",
+   "facilities": [],
+   "techprints": 0,
+   "techprintTags": [],
+   "notes": "Água > Água > nível III"
+  },
+  {
+   "id": "Ag_Filtragem",
+   "idAuto": false,
+   "label": "Água III: Purificação de água",
+   "desc": "Sistema de filtragem de água. Uma vila com purificador manda na região; as outras bebem o que a chuva ácida trouxe.",
+   "cost": 1500,
+   "tech": "Industrial",
+   "x": 5,
+   "y": 1,
+   "prereqs": [
+    "Ag_Moderna"
+   ],
+   "unlocks": [
+    "WaterTreatment"
+   ],
+   "absorbs": [
+    "WaterFiltration"
+   ],
+   "branch": "",
+   "bench": "",
+   "facilities": [],
+   "techprints": 0,
+   "techprintTags": [],
+   "notes": "Água > Água > nível III"
+  },
+  {
+   "id": "Esg_Fossa",
+   "idAuto": false,
+   "label": "Esgoto I: Fossa",
+   "desc": "Fossa séptica. Para onde vai tudo aquilo, e por quanto tempo fica lá.",
+   "cost": 500,
+   "tech": "Medieval",
+   "x": 0,
+   "y": 2,
+   "prereqs": [
+    "Ag_Primitiva"
+   ],
+   "unlocks": [
+    "SewageSepticTank"
+   ],
+   "absorbs": [
+    "SepticTanks"
+   ],
+   "branch": "",
+   "bench": "",
+   "facilities": [],
+   "techprints": 0,
+   "techprintTags": [],
+   "notes": "Água > Esgoto > nível I"
+  },
+  {
+   "id": "Esg_Tratamento",
+   "idAuto": false,
+   "label": "Esgoto III: Tratamento de esgoto",
+   "desc": "Sistema de tratamento de esgoto. O que sai dele volta para a horta; os colonos preferem não saber.",
+   "cost": 2000,
+   "tech": "Industrial",
+   "x": 5,
+   "y": 2,
+   "prereqs": [
+    "Esg_Fossa",
+    "ref_Ger_Eletricidade"
+   ],
+   "unlocks": [
+    "SewageTreatment"
+   ],
+   "absorbs": [
+    "SewageTreatment"
+   ],
+   "branch": "",
+   "bench": "",
+   "facilities": [],
+   "techprints": 0,
+   "techprintTags": [],
+   "notes": "Água > Esgoto > nível III"
+  },
+  {
+   "id": "Hig_Rustica",
+   "idAuto": false,
+   "label": "Higiene I: Higiene rústica",
+   "desc": "Caixa de areia, porta de box e tapete de banheiro. A dignidade também se pesquisa.",
+   "cost": 150,
+   "tech": "Neolithic",
+   "x": 0,
+   "y": 3.5,
+   "prereqs": [],
+   "unlocks": [
+    "LitterBox",
+    "ToiletStallDoor",
+    "BathMat"
+   ],
+   "absorbs": [],
+   "branch": "",
+   "bench": "",
+   "facilities": [],
+   "techprints": 0,
+   "techprintTags": [],
+   "notes": "Água > Higiene > nível I"
+  },
+  {
+   "id": "Hig_Banho",
+   "idAuto": false,
+   "label": "Higiene II: Banhos e sauna",
+   "desc": "Sauna a lenha e elétrica, piscina, ladrilho de piscina e mosaicos de pedra. O banho público era o luxo do Império; agora é o luxo de quem tem lenha sobrando.",
+   "cost": 600,
+   "tech": "Medieval",
+   "x": 2.5,
+   "y": 3.5,
+   "prereqs": [
+    "Ag_Primitiva",
+    "Cli_Lenha",
+    "ref_Oficio_Cantaria"
+   ],
+   "unlocks": [
+    "DBHSaunaHeaterLog",
+    "DBHSaunaHeaterElec",
+    "DBHSaunaSeating",
+    "DBHSwimmingPool",
+    "DBHPoolTile",
+    "DBHMosaicGranite",
+    "DBHMosaicLimestone",
+    "DBHMosaicMarble",
+    "DBHMosaicSandstone",
+    "DBHMosaicSlate",
+    "DBHMosaicTile"
+   ],
+   "absorbs": [
+    "Saunas",
+    "SwimmingPools"
+   ],
+   "branch": "",
+   "bench": "",
+   "facilities": [],
+   "techprints": 0,
+   "techprintTags": [],
+   "notes": "Água > Higiene > nível II"
+  },
+  {
+   "id": "Hig_Luxo",
+   "idAuto": false,
+   "label": "Higiene III: Banheiro de luxo",
+   "desc": "Hidromassagem, chuveiro elétrico, vaso avançado e máquina de lavar. O Coro mede a nobreza de uma casa pelo número de descargas.",
+   "cost": 1500,
+   "tech": "Industrial",
+   "x": 5,
+   "y": 3.5,
+   "prereqs": [
+    "Ag_Moderna"
+   ],
+   "unlocks": [
+    "HotTub",
+    "ShowerAdvStuff",
+    "ToiletAdvStuff",
+    "WashingMachine"
+   ],
+   "absorbs": [
+    "HotTubs",
+    "AdvancedShowers",
+    "AdvancedToilets",
+    "WashingMachines"
+   ],
+   "branch": "",
+   "bench": "",
+   "facilities": [],
+   "techprints": 0,
+   "techprintTags": [],
+   "notes": "Água > Higiene > nível III"
+  },
+  {
+   "id": "Hig_Bionicos",
+   "idAuto": false,
+   "label": "Higiene IV: Biônicos de higiene",
+   "desc": "Bexiga artificial e intensificador de higiene. A Hélice vende como \"upgrade de conforto\"; a assinatura mensal vem na letra miúda.",
+   "cost": 2500,
+   "tech": "Spacer",
+   "x": 7.5,
+   "y": 3.5,
+   "prereqs": [
+    "Ag_Filtragem",
+    "ref_Comp_Fabricacao",
+    "ref_Prosthetics"
+   ],
+   "unlocks": [
+    "BionicBladder",
+    "HygieneEnhancer"
+   ],
+   "absorbs": [
+    "HygieneBionics"
+   ],
+   "branch": "EQ_Ramo_Helice",
+   "bench": "HiTechResearchBench",
+   "facilities": [],
+   "techprints": 0,
+   "techprintTags": [],
+   "notes": "Água > Higiene > nível IV"
+  },
+  {
+   "id": "Cli_Passivo",
+   "idAuto": false,
+   "label": "Clima I: Refrigerador primitivo",
+   "desc": "Refrigerador passivo: água, vento e paciência. A carne dura um pouco mais; o verão, não.",
+   "cost": 300,
+   "tech": "Neolithic",
+   "x": 0,
+   "y": 5,
+   "prereqs": [],
+   "unlocks": [
+    "PassiveCooler"
+   ],
+   "absorbs": [
+    "PassiveCooler"
+   ],
+   "branch": "",
+   "bench": "",
+   "facilities": [],
+   "techprints": 0,
+   "techprintTags": [],
+   "notes": "Água > Clima > nível I"
+  },
+  {
+   "id": "Cli_Lenha",
+   "idAuto": false,
+   "label": "Clima I: Água quente",
+   "desc": "Aquecedor a lenha e reservatório de calor. Banho quente depois da Queda: a única revolução que ninguém combateu.",
+   "cost": 400,
+   "tech": "Medieval",
+   "x": 0,
+   "y": 6,
+   "prereqs": [],
+   "unlocks": [
+    "LogBoiler",
+    "HotWaterTank"
+   ],
+   "absorbs": [
+    "LogBoilers"
+   ],
+   "branch": "",
+   "bench": "",
+   "facilities": [],
+   "techprints": 0,
+   "techprintTags": [],
+   "notes": "Água > Clima > nível I"
+  },
+  {
+   "id": "Cli_Eletrico",
+   "idAuto": false,
+   "label": "Clima II: Climatização",
+   "desc": "Refrigerador, aquecedor, aquecedor a propano, ventiladores de teto e saídas de ventilação. Inverno e verão viram uma questão de gerador.",
+   "cost": 500,
+   "tech": "Industrial",
+   "x": 2.5,
+   "y": 5,
+   "prereqs": [
+    "Cli_Passivo",
+    "ref_Ger_Eletricidade"
+   ],
+   "unlocks": [
+    "Cooler",
+    "Cooler_Over",
+    "Cooler_Over2W",
+    "Heater",
+    "AB_PropaneHeater",
+    "CeilingFan",
+    "CeilingFanS",
+    "Vent",
+    "Vent_Over",
+    "Vent_Over2W"
+   ],
+   "absorbs": [
+    "AirConditioning"
+   ],
+   "branch": "",
+   "bench": "",
+   "facilities": [],
+   "techprints": 0,
+   "techprintTags": [],
+   "notes": "Água > Clima > nível II"
+  },
+  {
+   "id": "Cli_Central",
+   "idAuto": false,
+   "label": "Clima II: Aquecimento central",
+   "desc": "Aquecedores elétrico e a gás, radiadores, porta-toalha, painel solar térmico, termostato e aquecedor geotérmico. Calor por cano, como nos abrigos antigos.",
+   "cost": 600,
+   "tech": "Industrial",
+   "x": 2.5,
+   "y": 6,
+   "prereqs": [
+    "Cli_Lenha",
+    "Ag_Primitiva",
+    "ref_Ger_Eletricidade"
+   ],
+   "unlocks": [
+    "ElectricBoiler",
+    "GasBoiler",
+    "RadiatorLarge",
+    "RadiatorStuffed",
+    "RadiatorTowelRail",
+    "SolarHeater",
+    "Thermostat",
+    "GeothermHeater"
+   ],
+   "absorbs": [
+    "CentralHeating",
+    "GeothermalHeating"
+   ],
+   "branch": "",
+   "bench": "",
+   "facilities": [],
+   "techprints": 0,
+   "techprintTags": [],
+   "notes": "Água > Clima > nível II"
+  },
+  {
+   "id": "Cli_Refrigeracao",
+   "idAuto": false,
+   "label": "Clima III: Refrigeração",
+   "desc": "Ar-condicionado interno e externo, freezer e tubos de ar. Frio sob encomenda num planeta que a guerra deixou quente.",
+   "cost": 900,
+   "tech": "Industrial",
+   "x": 5,
+   "y": 5,
+   "prereqs": [
+    "Cli_Eletrico"
+   ],
+   "unlocks": [
+    "AirConOutdoorUnit",
+    "AirconIndoorUnit",
+    "FreezerUnit",
+    "airPipe",
+    "airPipeHidden"
+   ],
+   "absorbs": [
+    "MultiSplitAirCon"
+   ],
+   "branch": "",
+   "bench": "",
+   "facilities": [],
+   "techprints": 0,
+   "techprintTags": [],
+   "notes": "Água > Clima > nível III"
+  },
+  {
+   "id": "Cli_Incendio",
+   "idAuto": false,
+   "label": "Clima III: Combate a incêndio",
+   "desc": "Sprinkler anti-incêndio. Toda colônia aprende a pesquisar isso depois do primeiro molotov.",
+   "cost": 600,
+   "tech": "Industrial",
+   "x": 5,
+   "y": 6,
+   "prereqs": [
+    "Ag_Moderna"
+   ],
+   "unlocks": [
+    "FireSprinkler"
+   ],
+   "absorbs": [
+    "FireSuppression"
+   ],
+   "branch": "",
+   "bench": "",
+   "facilities": [],
+   "techprints": 0,
+   "techprintTags": [],
+   "notes": "Água > Clima > nível III"
+  },
+  {
+   "id": "ref_Ger_Eletricidade",
+   "ref": "EQ_R_Energia_Ger_Eletricidade",
+   "x": 1.25,
+   "y": -0.5
+  },
+  {
+   "id": "ref_Fabrica_Usinagem",
+   "ref": "EQ_R_Producao_Fabrica_Usinagem",
+   "x": 3.75,
+   "y": -0.5
+  },
+  {
+   "id": "ref_Oficio_Cantaria",
+   "ref": "EQ_R_Producao_Oficio_Cantaria",
+   "x": 1.25,
+   "y": 3
+  },
+  {
+   "id": "ref_Comp_Fabricacao",
+   "ref": "EQ_R_Producao_Comp_Fabricacao",
+   "x": 6.25,
+   "y": 3
+  },
+  {
+   "id": "ref_Prosthetics",
+   "ref": "Prosthetics",
+   "x": 6.25,
+   "y": 3
+  }
+ ]
+}

@@ -18,13 +18,13 @@ Legenda da tabela:
 |---|---|---|---|---|---|
 | 1 | **Fazenda** | 278 | 0 | Bancada | **feita** (61 pesquisas; textos na lore e ligada à Produção em 2026-11-20) |
 | 2 | Construção (paredes, portas, pisos) | 557 | 80 | Bancada | **feita** (17 pesquisas, 519 coisas) |
-| 3 | Mobília e lazer | 179 | 41 | Bancada (Coro 4) | a fazer |
+| 3 | Mobília e lazer | 179 | 41 | Bancada (Coro 4) | **feita** (15 pesquisas, 14 absorvidas) |
 | 4 | Produção e indústria | 79 | 19 | Bancada (Silêncio 6, Forja 4) | **feita** (16 pesquisas, 15 absorvidas) |
-| 5 | Logística (armazenamento, canos, reciclagem) | 92 | 11 | Bancada | a fazer |
+| 5 | Logística (armazenamento, canos, reciclagem) | 92 | 11 | Bancada | **feita** (6 pesquisas) |
 | 6 | Energia | 45 | 16 | Bancada (Velho Mundo 2) | **feita** (12 pesquisas, 11 absorvidas) |
-| 7 | Água, clima e higiene (DBH + temperatura) | 83 | 10 | Bancada (Velho Mundo 3) | a fazer |
-| 8 | Cozinha e bebidas | 109 | 38 | Bancada | a fazer |
-| 9 | Vestuário | 108 | 29 | Bancada (Forja 7) | a fazer |
+| 7 | Água, clima e higiene (DBH + temperatura) | 83 | 10 | Bancada (Velho Mundo 3) | **feita** (16 pesquisas, 22 absorvidas) |
+| 8 | Cozinha e bebidas | 109 | 38 | Bancada | **feita** (16 pesquisas, 15 absorvidas) |
+| 9 | Vestuário | 108 | 29 | Bancada (Forja 7) | **feita** (7 pesquisas, 5 absorvidas) |
 | 10 | Medicina e farmácia (próteses, implantes, cirurgias, drogas) | 507 | 332 | **Hélice 23**, Bancada 13 | a fazer |
 | 11 | Armas e munição | 1.099 | 380 | Bancada 16, Velho Mundo 8, Silêncio 5, Forja 4 | a fazer |
 | 12 | Armaduras | 40 | 3 | Bancada 6, Forja 4 | a fazer |
@@ -116,7 +116,9 @@ Para cada árvore: as pesquisas originais que ela absorve (projetos cuja maior p
 **3. Mobília e lazer (179).**
 - Mods principais: VFE (mobília básica, moderna e artesanal), Medieval 2 (oficinas complexas), Empire (decorações nobres, órgãos, trono), Door Mat e Alpha Biomes.
 - Absorve: Mobília básica, Mobília moderna, Mobília artesanal, Descarte de lixo, Luzes avançadas, TV de tubo, TV de tela plana, Harpa, Cravo, Piano, Decorações nobres, Órgãos de tubos e Trono estélico.
-- Atenção: Eletricidade, Refinação de biocombustível e Perfuração profunda caíram aqui só por arrasto. São pesquisas-base e devem ficar como nós de referência.
+- **Feita em 2026-11-20** (`kits/pesquisa/Mobilia.json`), "um lar no fim do mundo": **Casa** (rústica I, de verdade II com o trono, moderna III com lixeiras, artesanal III com a porta ornamentada), **Luz** (luminárias II, luzes avançadas III), **Lazer** (arte e jogos I, jogos de salão II, instrumentos II, televisão de tubo III, tela plana IV/Velho Mundo) e **Nobreza/Coro** (decorações nobres II, piano de cauda III, órgão IV, trono estélico III).
+- Absorve também Mobília complexa (hub: por enquanto traz 108 coisas, quase todas de armazenamento, que vão para a Logística). Mobília e Arte saíram de Fundamentos (6 pesquisas). A Fazenda (Memorial animal) exige a Mobília de verdade nova.
+- O trono fica no ramo livre (a fundação da nação precisa dele).
 
 **4. Produção e indústria (79). Feita em 2026-11-20** (`kits/pesquisa/Producao.json`, gerador no histórico).
 - História: "do ferro-velho à linha de montagem" — a Queda levou o saber de fabricar; componentes são do Velho Mundo, a linha de montagem e o componente avançado da Forja, escâneres e multi-analisador do Silêncio.
@@ -127,6 +129,7 @@ Para cada árvore: as pesquisas originais que ela absorve (projetos cuja maior p
 **5. Logística (92).**
 - Conteúdo: armazenamento (Neat, Adaptive, LWM) e canos. (A reciclagem foi para a Produção, bloco Ferro-velho.)
 - Absorve: o armazenamento que hoje está em Mobília complexa e Usinagem.
+- **Feita em 2026-11-20** (`kits/pesquisa/Logistica.json`), "quem guarda, sobrevive": Armazenamento rústico I (saiu de Fundamentos, que fica com 5 pesquisas), caixotes e barris II, celeiro II (exige a Cantaria e o feno da Fazenda), estantes e cabides II, vitrines III, metal e cofres III (Usinagem). 80 coisas, sem absorver original (o armazenamento era arrasto de Mobília complexa, Usinagem, Metalurgia, Cantaria e Vestuário complexo).
 
 **6. Energia (45). Feita em 2026-11-20** (`kits/pesquisa/Energia.json`).
 - História: "acender as luzes de novo". Blocos: **Combustão** (Eletricidade I, geradores químicos II, industriais III, nuclear IV/Forja), **Renováveis** (vento e água II, sol e alcionita II, maré e calor da terra III, fontes avançadas IV/Velho Mundo), **Baterias** (II, avançadas IV/Velho Mundo) e **Poluição** (gerador toxificante II, bombas de poluição II).
@@ -137,14 +140,19 @@ Para cada árvore: as pesquisas originais que ela absorve (projetos cuja maior p
 **7. Água, clima e higiene (83).**
 - Conteúdo: todo o Dubs Bad Hygiene, mais condicionadores e refrigeradores.
 - Absorve: as 22 pesquisas do DBH (sistema de água, esgoto, poços, aquecimento, saunas, piscinas etc.), Condicionamento de ar e Refrigerador primitivo.
+- **Feita em 2026-11-20** (`kits/pesquisa/Agua.json`), "água limpa é o novo ouro": **Água** (encanamento I, moderna II, industrial III, purificação III), **Esgoto** (fossa I, tratamento III), **Higiene** (rústica I, saiu de Fundamentos; banhos e sauna II com os mosaicos; banheiro de luxo III; biônicos de higiene IV/Hélice) e **Clima** (refrigerador primitivo I, água quente I, climatização II com aquecedor e ventilação, aquecimento central II, refrigeração III, combate a incêndio III). A Fazenda (Água e adubo) exige o Encanamento novo. Ficam para a árvore Espaço: água no espaço do Odyssey (nó criogênico, recuperação de água, vaso a vácuo, tanques).
 
 **8. Cozinha e bebidas (109).**
 - Conteúdo: VCE (inclusive confeitaria), VBE (inclusive cafés e chás) e pasta nutritiva.
 - Absorve: Pasta nutritiva, Refeição de sobrevivência, Carne-seca, Expresso, Destilaria, Mixologia, Enlatamento, Condimentos, Confeitaria, Frituras, Grelhados, Sopas e Apicultura (a parte que sobrou: hidromel e pão doce).
+- **Feita em 2026-11-20** (`kits/pesquisa/Cozinha.json`), "comida de verdade depois da pasta": **Cozinha** (fogão a lenha I, saiu de Fundamentos; carne-seca e condimentos I; grelha II; confeitaria II; molhos II; cozinha elétrica III com sopas e frituras; chocolate III; comida de prateleira IV com enlatadora e refeição embalada), **Pasta nutritiva** II e **Bebidas** (cerveja e chá I, vinho II, hidromel II, destilaria II, café e limonada II, expresso III, mixologia III). Absorve também Fabricação de cerveja e Vinho (decisão do usuário).
+- Cada receita exige a planta dela na Fazenda (lúpulo, uva, mel, grãos, café, limão, açúcar, menta, especiarias, cacau, fungo); a coerência planta × produto deu 17 casos na primeira versão e 0 depois. Cigarro e charuto foram para Drogas II da Fazenda, com o tabaco.
 
 **9. Vestuário (108).**
 - Conteúdo: chapéus, roupas, vestuário nobre e utilitários (cintos).
 - Absorve: Vestuário complexo, Vestuário nobre, Vestuário real, Visor eletrônico, Cintos de escudo, Cintos bomba de fumaça e Fermentação de suor.
+- **Feita em 2026-11-20** (`kits/pesquisa/Vestuario.json`), "vestir o fim do mundo": **Costura** (couro e pano I, saiu de Fundamentos; alfaiataria II, exige o algodão; confecção III com a mesa grande), **Moda** (nobre II, real III) e **Equipamento** (máscaras de gás e cintos II, cintos de escudo IV/Velho Mundo). Absorve Vestuário complexo, nobre e real, Cintos de bomba de fumaça e de escudo.
+- Ficam para outras árvores: armaduras e capacetes (Armaduras), comunicadores e mochilas de mecanitor (Mecanoides), visor eletrônico e aparato de salto (Armaduras), mochila tóxica, traje de rum, máscara de peste (Medicina: usa remédio de ervas). A mesa grande de alfaiataria e o fogão grande saíram da licença da Forja (eram da Manufatura).
 - Atenção: 7 pesquisas hoje ficam no ramo da Forja.
 
 **10. Medicina e farmácia (507).**

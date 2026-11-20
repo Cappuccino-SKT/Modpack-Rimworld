@@ -1,0 +1,528 @@
+{
+ "id": "Mobilia",
+ "label": "Mobília e lazer",
+ "active": true,
+ "ownTab": true,
+ "replace": true,
+ "branch": "EQ_Ramo_Bancada",
+ "desc": "Um lar no fim do mundo: do caixote à cama de dossel. Casa (rústica, de verdade, moderna, artesanal), Luz (luminárias e luzes avançadas), Lazer (arte, jogos de salão, instrumentos, televisão de tubo, tela plana) e Nobreza, do Coro Ascendente (decorações nobres, piano de cauda, órgão, trono estélico).",
+ "nodes": [
+  {
+   "id": "Casa_Rustica",
+   "idAuto": false,
+   "label": "Casa I: Mobília rústica",
+   "desc": "Colchonete duplo, berço, camas simples, de peles, de laje e de pedra, banco, almofada, mesas, tochas negras, capachos, fogueira de pedra e santuários. O primeiro móvel depois da Queda foi um caixote; este é o segundo.",
+   "cost": 250,
+   "tech": "Neolithic",
+   "x": 0,
+   "y": 0,
+   "prereqs": [
+    "ref_Est_Carpintaria"
+   ],
+   "unlocks": [
+    "BedrollDouble",
+    "Crib",
+    "AM_CubicCrib",
+    "Bed_StoneSlab",
+    "VFE_Bed_StoneSlabDouble",
+    "Stool",
+    "Seat_Cushion",
+    "Table_1x1c",
+    "Table1x2c",
+    "Table2x2c",
+    "Table2x4c",
+    "Table3x3c",
+    "Darktorch",
+    "DarktorchFungus",
+    "LT_DoorMatLeather",
+    "LT_DoorMatBigLeather",
+    "LT_DoorMatCheckerLeather",
+    "LT_DoorMatBigCheckerLeather",
+    "Stone_Campfire",
+    "Stone_DarklightCampfire",
+    "NatureShrine_Small",
+    "NatureShrine_Large",
+    "Bed_Simple",
+    "VFE_Bed_SimpleDouble",
+    "VFEM2_FurBed",
+    "VFEM2_DoubleFurBed",
+    "SlabBed",
+    "SlabDoubleBed"
+   ],
+   "absorbs": [],
+   "branch": "",
+   "bench": "",
+   "facilities": [],
+   "techprints": 0,
+   "techprintTags": [],
+   "notes": "Mobília > Casa > nível I"
+  },
+  {
+   "id": "Casa_Complexa",
+   "idAuto": false,
+   "label": "Casa II: Mobília de verdade",
+   "desc": "Cama e cama de casal, cadeiras, poltrona, sofá, cômoda, guarda-roupa, estantes, lareira, braseiro, cortina, trono e o que as crianças quebram (berço, lousa, carteira, caixa de brinquedo). Uma casa onde se mora, não onde se esconde.",
+   "cost": 700,
+   "tech": "Medieval",
+   "x": 2.5,
+   "y": 0,
+   "prereqs": [
+    "Casa_Rustica"
+   ],
+   "unlocks": [
+    "Bed",
+    "DoubleBed",
+    "Seat_Bench",
+    "DiningChair",
+    "Seat_SquareChair",
+    "Armchair",
+    "Couch",
+    "EndTable",
+    "Dresser",
+    "Table_Counter",
+    "Table_Wardrobe",
+    "Shelf",
+    "ShelfSmall",
+    "Bookcase",
+    "BookcaseSmall",
+    "VFEM2_Hearth",
+    "VFEM2_HearthDarklight",
+    "Brazier",
+    "DarklightBrazier",
+    "Drape",
+    "Throne",
+    "GrandThrone",
+    "BabyDecoration",
+    "ToyBox",
+    "Blackboard",
+    "SchoolDesk"
+   ],
+   "absorbs": [
+    "ComplexFurniture",
+    "MF_BasicFurniture"
+   ],
+   "branch": "",
+   "bench": "",
+   "facilities": [],
+   "techprints": 0,
+   "techprintTags": [],
+   "notes": "Mobília > Casa > nível II"
+  },
+  {
+   "id": "Casa_Moderna",
+   "idAuto": false,
+   "label": "Casa III: Mobília moderna",
+   "desc": "Cama e cadeira ergonômicas, mesa de centro, sofá modular, espreguiçadeira, arquivo e lixeiras. O escritório do Velho Mundo, remontado com peças de três escritórios diferentes.",
+   "cost": 1000,
+   "tech": "Industrial",
+   "x": 5,
+   "y": 0,
+   "prereqs": [
+    "Casa_Complexa",
+    "ref_Fabrica_Usinagem"
+   ],
+   "unlocks": [
+    "Bed_Ergonomic",
+    "Bed_DoubleErgonomic",
+    "Seat_ModernChair",
+    "VFE_CoffeeTable",
+    "VFE_ModularCouch",
+    "VFE_Lounger",
+    "Misc_FileCabinet",
+    "Bin_Small",
+    "Bin_Large"
+   ],
+   "absorbs": [
+    "MF_ModernFurniture",
+    "MF_WasteDisposal"
+   ],
+   "branch": "",
+   "bench": "",
+   "facilities": [],
+   "techprints": 0,
+   "techprintTags": [],
+   "notes": "Mobília > Casa > nível III"
+  },
+  {
+   "id": "Casa_Artesanal",
+   "idAuto": false,
+   "label": "Casa III: Mobília artesanal",
+   "desc": "Cama de dossel, cama nobre, mesas, cadeiras, cômoda e guarda-roupa entalhados, luminária real e porta ornamentada. Luxo feito à mão para quem quer parecer nobre sem pagar o dízimo do Coro.",
+   "cost": 1000,
+   "tech": "Medieval",
+   "x": 5,
+   "y": 1,
+   "prereqs": [
+    "Casa_Complexa"
+   ],
+   "unlocks": [
+    "Bed_Kingsize",
+    "RoyalBed",
+    "Seat_RoyalArmchair",
+    "Seat_RoyalChair",
+    "Table_Royal1x1c",
+    "Table_Royal1x2c",
+    "Table_Royal2x2c",
+    "Table_Royal2x4c",
+    "Table_Royal3x3c",
+    "Table_RoyalDresser",
+    "Table_RoyalEndTable",
+    "VFE_RoyalWardrobe",
+    "VFE_RoyalLamp",
+    "OrnateDoor"
+   ],
+   "absorbs": [
+    "MF_RoyalFurniture"
+   ],
+   "branch": "",
+   "bench": "",
+   "facilities": [],
+   "techprints": 0,
+   "techprintTags": [],
+   "notes": "Mobília > Casa > nível III"
+  },
+  {
+   "id": "Luz_Eletrica",
+   "idAuto": false,
+   "label": "Luz II: Luminárias",
+   "desc": "Luminária de chão, de parede e de mesa. Luz que não fumaça nem queima a casa; só a conta do gerador.",
+   "cost": 400,
+   "tech": "Industrial",
+   "x": 2.5,
+   "y": 2.5,
+   "prereqs": [
+    "Casa_Rustica",
+    "ref_Ger_Eletricidade"
+   ],
+   "unlocks": [
+    "StandingLamp",
+    "WallLamp",
+    "VFE_DeskLamp"
+   ],
+   "absorbs": [],
+   "branch": "",
+   "bench": "",
+   "facilities": [],
+   "techprints": 0,
+   "techprintTags": [],
+   "notes": "Mobília > Luz > nível II"
+  },
+  {
+   "id": "Luz_Avancada",
+   "idAuto": false,
+   "label": "Luz III: Luzes avançadas",
+   "desc": "Holofote e poste de rua. Iluminar o pátio inteiro: os saqueadores enxergam você, mas você também os enxerga.",
+   "cost": 500,
+   "tech": "Industrial",
+   "x": 5,
+   "y": 2.5,
+   "prereqs": [
+    "Luz_Eletrica"
+   ],
+   "unlocks": [
+    "FloodLight",
+    "Light_Streetlamp"
+   ],
+   "absorbs": [
+    "ColoredLights"
+   ],
+   "branch": "",
+   "bench": "",
+   "facilities": [],
+   "techprints": 0,
+   "techprintTags": [],
+   "notes": "Mobília > Luz > nível III"
+  },
+  {
+   "id": "Lazer_Arte",
+   "idAuto": false,
+   "label": "Lazer I: Arte e jogos",
+   "desc": "Mesa de escultor, esculturas, jogo-de-Ur, anel de pedra e ferraduras. Para não enlouquecer antes da hora.",
+   "cost": 250,
+   "tech": "Neolithic",
+   "x": 0,
+   "y": 4,
+   "prereqs": [],
+   "unlocks": [
+    "TableSculpting",
+    "SculptureSmall",
+    "SculptureLarge",
+    "SculptureGrand",
+    "SculptureTerror",
+    "GameOfUrBoard",
+    "HoopstoneRing",
+    "HorseshoesPin"
+   ],
+   "absorbs": [],
+   "branch": "",
+   "bench": "",
+   "facilities": [],
+   "techprints": 0,
+   "techprintTags": [],
+   "notes": "Mobília > Lazer > nível I"
+  },
+  {
+   "id": "Lazer_Salao",
+   "idAuto": false,
+   "label": "Lazer II: Jogos de salão",
+   "desc": "Xadrez, bilhar, pôquer, dardos, saco de pancada, alvo de arco e boneco de treino. O bar da vila, onde se perde a prata que o tributo não levou.",
+   "cost": 600,
+   "tech": "Medieval",
+   "x": 2.5,
+   "y": 4,
+   "prereqs": [
+    "Lazer_Arte"
+   ],
+   "unlocks": [
+    "ChessTable",
+    "BilliardsTable",
+    "PokerTable",
+    "Joy_DartsBoard",
+    "Joy_PunchingBag",
+    "VFEM2_ArcheryTarget",
+    "VFEM2_TrainingDummy"
+   ],
+   "absorbs": [],
+   "branch": "",
+   "bench": "",
+   "facilities": [],
+   "techprints": 0,
+   "techprintTags": [],
+   "notes": "Mobília > Lazer > nível II"
+  },
+  {
+   "id": "Lazer_Musica",
+   "idAuto": false,
+   "label": "Lazer II: Instrumentos",
+   "desc": "Harpa e cravo. Música de verdade, sem gerador; o Coro diz que é afinação errada.",
+   "cost": 700,
+   "tech": "Medieval",
+   "x": 2.5,
+   "y": 5,
+   "prereqs": [
+    "Lazer_Arte",
+    "ref_Oficio_Metalurgia"
+   ],
+   "unlocks": [
+    "Harp",
+    "Harpsichord"
+   ],
+   "absorbs": [
+    "Harp",
+    "Harpsichord"
+   ],
+   "branch": "",
+   "bench": "",
+   "facilities": [],
+   "techprints": 0,
+   "techprintTags": [],
+   "notes": "Mobília > Lazer > nível II"
+  },
+  {
+   "id": "Lazer_Tubo",
+   "idAuto": false,
+   "label": "Lazer III: Televisão de tubo",
+   "desc": "Televisão de tubo, fliperama, computador velho, rádio, piano de armário e roleta. As fitas do Velho Mundo ainda passam; ninguém sabe dizer se eram novela ou noticiário.",
+   "cost": 1000,
+   "tech": "Industrial",
+   "x": 5,
+   "y": 4.5,
+   "prereqs": [
+    "Lazer_Salao",
+    "ref_Ger_Eletricidade"
+   ],
+   "unlocks": [
+    "TubeTelevision",
+    "Joy_Arcade",
+    "Joy_InudstrialComputer",
+    "Radio_Industrial",
+    "Joy_Piano",
+    "Joy_RouletteTable"
+   ],
+   "absorbs": [
+    "TubeTelevision"
+   ],
+   "branch": "",
+   "bench": "",
+   "facilities": [],
+   "techprints": 0,
+   "techprintTags": [],
+   "notes": "Mobília > Lazer > nível III"
+  },
+  {
+   "id": "Lazer_TelaPlana",
+   "idAuto": false,
+   "label": "Lazer IV: Tela plana",
+   "desc": "Televisão de tela plana, computador moderno e rádio de ondas longas. Tecnologia do Velho Mundo para assistir ao fim dele em alta definição.",
+   "cost": 2000,
+   "tech": "Industrial",
+   "x": 7.5,
+   "y": 4.5,
+   "prereqs": [
+    "Lazer_Tubo",
+    "ref_Lab_Micro"
+   ],
+   "unlocks": [
+    "FlatscreenTelevision",
+    "Joy_ModernComputer",
+    "Radio_Spacer"
+   ],
+   "absorbs": [
+    "FlatscreenTelevision"
+   ],
+   "branch": "EQ_Ramo_VelhoMundo",
+   "bench": "HiTechResearchBench",
+   "facilities": [],
+   "techprints": 0,
+   "techprintTags": [],
+   "notes": "Mobília > Lazer > nível IV"
+  },
+  {
+   "id": "Nob_Decoracoes",
+   "idAuto": false,
+   "label": "Nobreza II: Decorações nobres",
+   "desc": "Candelabro, cadeira e mesa imponentes, espelho, banqueta, estandarte, esculturas imperiais, estela, tapetes reais e laje imperial. Etiqueta do Coro Ascendente: sem candelabro, a visita do nobre vira multa.",
+   "cost": 500,
+   "tech": "Medieval",
+   "x": 2.5,
+   "y": 6.5,
+   "prereqs": [
+    "Casa_Complexa"
+   ],
+   "unlocks": [
+    "VFEE_Candelabra",
+    "VFEE_GrandChair",
+    "VFEE_GrandTable",
+    "VFEE_RoyalMirror",
+    "VFEE_RoyalStool",
+    "VFEE_ImperialBanner",
+    "VFEE_RoyalSculptureSmall",
+    "VFEE_RoyalSculptureLarge",
+    "VFEE_RoyalSculptureGrand",
+    "VFEE_SteleSmall",
+    "VFEE_GrandRoyalRug",
+    "VFEE_LargeRoyalRug",
+    "VFEE_ImperialSlab"
+   ],
+   "absorbs": [
+    "VFEE_NobleDecorations"
+   ],
+   "branch": "EQ_Ramo_Coro",
+   "bench": "",
+   "facilities": [],
+   "techprints": 0,
+   "techprintTags": [],
+   "notes": "Mobília > Nobreza > nível II"
+  },
+  {
+   "id": "Nob_Piano",
+   "idAuto": false,
+   "label": "Nobreza III: Piano de cauda",
+   "desc": "Piano de cauda. O Coro só aceita música tocada nele, e só se o pianista pagou a licença de afinação.",
+   "cost": 2000,
+   "tech": "Industrial",
+   "x": 5,
+   "y": 5.5,
+   "prereqs": [
+    "Lazer_Musica"
+   ],
+   "unlocks": [
+    "Piano"
+   ],
+   "absorbs": [
+    "Piano"
+   ],
+   "branch": "EQ_Ramo_Coro",
+   "bench": "",
+   "facilities": [],
+   "techprints": 0,
+   "techprintTags": [],
+   "notes": "Mobília > Nobreza > nível III"
+  },
+  {
+   "id": "Nob_Orgao",
+   "idAuto": false,
+   "label": "Nobreza IV: Órgão de tubos",
+   "desc": "Órgão de tubos. Um salão inteiro vibrando na mesma nota: o mais perto do coro psíquico que um surdo chega.",
+   "cost": 2000,
+   "tech": "Industrial",
+   "x": 7.5,
+   "y": 5.5,
+   "prereqs": [
+    "Nob_Piano"
+   ],
+   "unlocks": [
+    "VFEE_PipeOrgan"
+   ],
+   "absorbs": [
+    "VFEE_PipeOrgans"
+   ],
+   "branch": "EQ_Ramo_Coro",
+   "bench": "",
+   "facilities": [],
+   "techprints": 0,
+   "techprintTags": [],
+   "notes": "Mobília > Nobreza > nível IV"
+  },
+  {
+   "id": "Nob_Trono",
+   "idAuto": false,
+   "label": "Nobreza III: Trono estélico",
+   "desc": "Trono de meditação estélico. Sentar nele não dá poder; mostrar que se pode pagar por ele, sim.",
+   "cost": 1000,
+   "tech": "Industrial",
+   "x": 5,
+   "y": 6.5,
+   "prereqs": [
+    "Nob_Decoracoes"
+   ],
+   "unlocks": [
+    "VFEE_StellicThrone"
+   ],
+   "absorbs": [
+    "VFEE_StellicThrone"
+   ],
+   "branch": "EQ_Ramo_Coro",
+   "bench": "",
+   "facilities": [],
+   "techprints": 0,
+   "techprintTags": [],
+   "notes": "Mobília > Nobreza > nível III"
+  },
+  {
+   "id": "ref_Est_Carpintaria",
+   "ref": "EQ_R_Construcao_Est_Carpintaria",
+   "x": -1.25,
+   "y": -0.5,
+   "prereqs": []
+  },
+  {
+   "id": "ref_Fabrica_Usinagem",
+   "ref": "EQ_R_Producao_Fabrica_Usinagem",
+   "x": 3.75,
+   "y": -0.5,
+   "prereqs": []
+  },
+  {
+   "id": "ref_Ger_Eletricidade",
+   "ref": "EQ_R_Energia_Ger_Eletricidade",
+   "x": 1.25,
+   "y": 2,
+   "prereqs": []
+  },
+  {
+   "id": "ref_Oficio_Metalurgia",
+   "ref": "EQ_R_Producao_Oficio_Metalurgia",
+   "x": 1.25,
+   "y": 4.5,
+   "prereqs": []
+  },
+  {
+   "id": "ref_Lab_Micro",
+   "ref": "EQ_R_Producao_Lab_Micro",
+   "x": 6.25,
+   "y": 4,
+   "prereqs": []
+  }
+ ]
+}

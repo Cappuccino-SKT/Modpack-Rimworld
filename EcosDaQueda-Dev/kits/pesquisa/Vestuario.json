@@ -1,0 +1,274 @@
+{
+ "id": "Vestuario",
+ "label": "Vestuário",
+ "active": true,
+ "ownTab": true,
+ "replace": true,
+ "branch": "EQ_Ramo_Bancada",
+ "desc": "Vestir o fim do mundo. Costura (couro e pano, alfaiataria, confecção), Moda (nobre e real, para os títulos do Coro) e Equipamento (máscaras de gás e cintos, escudos do Velho Mundo). Armaduras e capacetes ficam na árvore Armaduras.",
+ "nodes": [
+  {
+   "id": "Ves_Rustica",
+   "idAuto": false,
+   "label": "Costura I: Roupas de couro e pano",
+   "desc": "Capuz, turbante, cocar, máscaras, manto, capa, burca, murça, armadura acolchoada, cinto de tochas, mochila e escudos de vime. A moda depois da Queda tem duas cores: cru e sujo.",
+   "cost": 250,
+   "tech": "Neolithic",
+   "x": 0.0,
+   "y": 0,
+   "prereqs": [],
+   "unlocks": [
+    "Apparel_HatHood",
+    "Apparel_Headwrap",
+    "Apparel_TribalHeaddress",
+    "Apparel_WarMask",
+    "Apparel_WarVeil",
+    "Apparel_VisageMask",
+    "Apparel_Broadwrap",
+    "Apparel_Slicecap",
+    "Apparel_AuthorityCap",
+    "Apparel_Blindfold",
+    "Apparel_Collar",
+    "Apparel_TortureCrown",
+    "CE_Apparel_ImprovGasMask",
+    "Apparel_BodyStrap",
+    "Apparel_Burka",
+    "Apparel_KidParka",
+    "Apparel_Robe",
+    "Apparel_Cape",
+    "VFEM2_Apparel_Mantle",
+    "VFEM2_Apparel_PaddedArmor",
+    "VFEM2_Apparel_TorchBelt",
+    "CE_Apparel_TribalBackpack",
+    "CE_Apparel_WickerShield",
+    "CE_Apparel_Pavise"
+   ],
+   "absorbs": [],
+   "branch": "",
+   "bench": "",
+   "facilities": [],
+   "techprints": 0,
+   "techprintTags": [],
+   "notes": "Vestuário > Costura > nível I"
+  },
+  {
+   "id": "Ves_Alfaiataria",
+   "idAuto": false,
+   "label": "Costura II: Alfaiataria",
+   "desc": "Mesa de alfaiate manual, caldeirão de couro, camiseta, camisa de botão, calças, jaqueta, gabardina, chapéus, roupas de criança, jaleco, poncho, macacão e as roupas de corte medieval. Roupa com molde: o primeiro sinal de que alguém pretende ficar.",
+   "cost": 600,
+   "tech": "Medieval",
+   "x": 2.5,
+   "y": 0,
+   "prereqs": [
+    "Ves_Rustica",
+    "ref_Lav_Tecido_1"
+   ],
+   "unlocks": [
+    "HandTailoringBench",
+    "VFEM2_LeatherBoilpot",
+    "Apparel_BasicShirt",
+    "Apparel_CollarShirt",
+    "Apparel_Pants",
+    "Apparel_Jacket",
+    "Apparel_Duster",
+    "Apparel_BowlerHat",
+    "Apparel_CowboyHat",
+    "Apparel_Tuque",
+    "Apparel_ClothMask",
+    "Apparel_KidShirt",
+    "Apparel_KidPants",
+    "Apparel_KidRomper",
+    "Apparel_LabCoat",
+    "CE_Armor_Poncho",
+    "CE_Armor_Jumpsuit",
+    "VFEM2_Apparel_DameDress",
+    "VFEM2_Apparel_DameHat",
+    "VFEM2_Apparel_Chaperon"
+   ],
+   "absorbs": [
+    "ComplexClothing"
+   ],
+   "branch": "",
+   "bench": "",
+   "facilities": [],
+   "techprints": 0,
+   "techprintTags": [],
+   "notes": "Vestuário > Costura > nível II"
+  },
+  {
+   "id": "Ves_Eletrica",
+   "idAuto": false,
+   "label": "Costura III: Confecção",
+   "desc": "Mesa de alfaiate elétrica, mesa de alfaiataria grande e armário de alfaiataria. Costura em série: a fábrica de roupa voltou, e as costureiras continuam sem folga.",
+   "cost": 800,
+   "tech": "Industrial",
+   "x": 5.0,
+   "y": 0,
+   "prereqs": [
+    "Ves_Alfaiataria",
+    "ref_Ger_Eletricidade"
+   ],
+   "unlocks": [
+    "ElectricTailoringBench",
+    "VFE_TableTailorLarge",
+    "VFE_TailorCabinet"
+   ],
+   "absorbs": [],
+   "branch": "",
+   "bench": "",
+   "facilities": [],
+   "techprints": 0,
+   "techprintTags": [],
+   "notes": "Vestuário > Costura > nível III"
+  },
+  {
+   "id": "Ves_Nobre",
+   "idAuto": false,
+   "label": "Moda II: Vestuário nobre",
+   "desc": "Boina, espartilho, chapéu de senhora, cartola, camisa plissada e colete real. A etiqueta do Coro Ascendente exige; o espartilho, ninguém exige, mas todo mundo usa.",
+   "cost": 500,
+   "tech": "Medieval",
+   "x": 2.5,
+   "y": 1.5,
+   "prereqs": [
+    "Ves_Alfaiataria"
+   ],
+   "unlocks": [
+    "Apparel_Beret",
+    "Apparel_Corset",
+    "Apparel_HatLadies",
+    "Apparel_HatTop",
+    "Apparel_ShirtRuffle",
+    "Apparel_VestRoyal"
+   ],
+   "absorbs": [
+    "NobleApparel"
+   ],
+   "branch": "",
+   "bench": "",
+   "facilities": [],
+   "techprints": 0,
+   "techprintTags": [],
+   "notes": "Vestuário > Moda > nível II"
+  },
+  {
+   "id": "Ves_Real",
+   "idAuto": false,
+   "label": "Moda III: Vestuário real",
+   "desc": "Coroneta, coroa, coroa de aço, coroa do rei, manto real, manto do rei e túnica estélica. Para receber um título do Império que não existe mais, de alguém que diz representá-lo.",
+   "cost": 700,
+   "tech": "Medieval",
+   "x": 5.0,
+   "y": 1.5,
+   "prereqs": [
+    "Ves_Nobre",
+    "ref_Oficio_Metalurgia"
+   ],
+   "unlocks": [
+    "Apparel_Coronet",
+    "Apparel_Crown",
+    "Apparel_CrownStellic",
+    "VFEM2_Apparel_KingsCrown",
+    "Apparel_RobeRoyal",
+    "VFEM2_Apparel_KingsRobes",
+    "VFE_Apparel_StellicRobe"
+   ],
+   "absorbs": [
+    "RoyalApparel"
+   ],
+   "branch": "",
+   "bench": "",
+   "facilities": [],
+   "techprints": 0,
+   "techprintTags": [],
+   "notes": "Vestuário > Moda > nível III"
+  },
+  {
+   "id": "Ves_Protecao",
+   "idAuto": false,
+   "label": "Equipamento II: Máscaras e cintos",
+   "desc": "Máscaras de gás, cinto de bomba de fumaça e mochila de espuma contra fogo. No deserto poluído, a máscara é a roupa mais importante; a segunda é a que esconde a máscara.",
+   "cost": 500,
+   "tech": "Industrial",
+   "x": 2.5,
+   "y": 3,
+   "prereqs": [
+    "Ves_Rustica",
+    "ref_Fabrica_Usinagem"
+   ],
+   "unlocks": [
+    "Apparel_GasMask",
+    "CE_Apparel_GasMask",
+    "Apparel_SmokepopBelt",
+    "Apparel_FirefoampopPack"
+   ],
+   "absorbs": [
+    "SmokepopBelt"
+   ],
+   "branch": "",
+   "bench": "",
+   "facilities": [],
+   "techprints": 0,
+   "techprintTags": [],
+   "notes": "Vestuário > Equipamento > nível II"
+  },
+  {
+   "id": "Ves_Escudo",
+   "idAuto": false,
+   "label": "Equipamento IV: Cintos de escudo",
+   "desc": "Cinto com escudo protetor e aparato de escudo holográfico. Tecnologia do Velho Mundo que segura bala, mas não a conta.",
+   "cost": 1000,
+   "tech": "Spacer",
+   "x": 7.5,
+   "y": 3,
+   "prereqs": [
+    "Ves_Protecao",
+    "ref_Lab_Micro"
+   ],
+   "unlocks": [
+    "Apparel_ShieldBelt",
+    "Apparel_PackBroadshield"
+   ],
+   "absorbs": [
+    "ShieldBelt"
+   ],
+   "branch": "EQ_Ramo_VelhoMundo",
+   "bench": "HiTechResearchBench",
+   "facilities": [],
+   "techprints": 0,
+   "techprintTags": [],
+   "notes": "Vestuário > Equipamento > nível IV"
+  },
+  {
+   "id": "ref_Lav_Tecido_1",
+   "ref": "EQ_R_Fazenda_Lav_Tecido_1",
+   "x": 1.25,
+   "y": -0.5
+  },
+  {
+   "id": "ref_Ger_Eletricidade",
+   "ref": "EQ_R_Energia_Ger_Eletricidade",
+   "x": 3.75,
+   "y": -0.5
+  },
+  {
+   "id": "ref_Oficio_Metalurgia",
+   "ref": "EQ_R_Producao_Oficio_Metalurgia",
+   "x": 3.75,
+   "y": 1.0
+  },
+  {
+   "id": "ref_Fabrica_Usinagem",
+   "ref": "EQ_R_Producao_Fabrica_Usinagem",
+   "x": 1.25,
+   "y": 2.5
+  },
+  {
+   "id": "ref_Lab_Micro",
+   "ref": "EQ_R_Producao_Lab_Micro",
+   "x": 6.25,
+   "y": 2.5
+  }
+ ]
+}
