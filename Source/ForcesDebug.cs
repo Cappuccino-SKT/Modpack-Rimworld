@@ -271,6 +271,38 @@ namespace EcosDaQueda.DebugTools
                     extra = "tile=" + tile + " (" + how + ") | " + (EQWarDiplomacy.BorderFronts(comp, true, x, y) ?? "sem frente (não estão em guerra?)");
                     break;
                 }
+                // F5b: "forces playerborder [facção] | playerfront [resolve atk|def | abstract | visit]"
+                case "playerborder":
+                {
+                    Faction x = Arg(2) != null ? Fac(2) : null;
+                    EQWarDiplomacy.TestIgnoreDistance = Arg(3) == "anywhere" || Arg(4) == "anywhere";
+                    if (x != null && (Arg(3) == "hostile" || Arg(4) == "hostile"))
+                    {
+                        int gw = x.GoodwillWith(Faction.OfPlayer);
+                        if (gw > -100) x.ChangeGoodwill_Debug(Faction.OfPlayer, -100 - gw);
+                    }
+                    extra = "milícia=" + EQWarDiplomacy.PlayerDefense() + " exército×" + EQCouncil.ArmyFactor.ToString("0.00") + " | "
+                            + (EQWarDiplomacy.PlayerBorderFronts(comp, true, x) ?? "-");
+                    break;
+                }
+                case "playerfront":
+                {
+                    var f = Find.WorldObjects.AllWorldObjects.OfType<WorldObject_EQFront>().FirstOrDefault(o => o.IsPlayerFront && !o.resolved);
+                    if (f == null) { extra = "sem frente contra a nação"; break; }
+                    string what = Arg(2);
+                    if (what == "abstract") extra = "abstrata: " + f.ResolveAbstract();
+                    else if (what == "resolve") extra = "resolvida: " + f.Resolve(Arg(3) == "atk", "(teste)");
+                    else if (what == "visit")
+                    {
+                        Map m = f.GenerateFrontMap();
+                        f.playerVisited = true;
+                        extra = "mapa gerado; atacantes=" + f.Fighters(f.attacker).Count() + " defensores(jogador)=" + f.Fighters(f.defender).Count()
+                                + " | opções da caravana: " + string.Join(" / ", f.GetFloatMenuOptions(Find.WorldObjects.Caravans.FirstOrDefault() ?? (Caravan)null).Select(o => o.Label));
+                    }
+                    else extra = f.Label + " " + f.attackerStrength + "x" + f.defenderStrength + " tile=" + f.Tile + " alvo=" + f.targetSettlement?.LabelCap + " | " + f.GetInspectString().Replace("\n", " | ");
+                    extra += " | legitimidade: " + (EQLegitimacy.LastReport ?? "-") + " | ocupação: " + (EQOccupation.LastReport ?? "-");
+                    break;
+                }
                 case "unpaid":
                 {
                     var army = Commanded(comp);
