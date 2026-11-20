@@ -1,0 +1,355 @@
+{
+ "id": "Energia",
+ "label": "Energia",
+ "active": true,
+ "ownTab": true,
+ "replace": true,
+ "branch": "EQ_Ramo_Bancada",
+ "desc": "Acender as luzes de novo: depois da Queda, energia é o que separa uma colônia de um acampamento. Combustão (lenha, químico, industrial, nuclear), Renováveis (vento, água, sol, alcionita, maré, calor da terra, fontes avançadas), Baterias e Poluição (o gerador toxificante e as bombas que limpam a sujeira). A Eletricidade é a base de tudo: Produção, Fazenda e Fundamentos dependem dela.",
+ "nodes": [
+  {
+   "id": "Ger_Eletricidade",
+   "idAuto": false,
+   "label": "Combustão I: Eletricidade",
+   "desc": "Gerador a lenha, cabos, cabo à prova d'água e interruptor. O fio vem do ferro-velho; a luz, do que você tiver para queimar. A primeira lâmpada acesa desde a Queda atrai mariposas, vizinhos e saqueadores, nessa ordem.",
+   "cost": 1200,
+   "tech": "Industrial",
+   "x": 0,
+   "y": 1.5,
+   "prereqs": [],
+   "unlocks": [
+    "WoodFiredGenerator",
+    "PowerConduit",
+    "HiddenConduit",
+    "WaterproofConduit",
+    "PowerSwitch"
+   ],
+   "absorbs": [
+    "Electricity"
+   ],
+   "branch": "",
+   "bench": "",
+   "facilities": [],
+   "techprints": 0,
+   "techprintTags": [],
+   "notes": "Energia > Combustão > nível I"
+  },
+  {
+   "id": "Ger_Quimico",
+   "idAuto": false,
+   "label": "Combustão II: Geradores químicos",
+   "desc": "Gerador a combustível químico e os portáteis, a lenha e a combustível. Energia que cabe numa caravana e fede a viagem inteira.",
+   "cost": 800,
+   "tech": "Industrial",
+   "x": 2.5,
+   "y": 0,
+   "prereqs": [
+    "Ger_Eletricidade",
+    "ref_Producao_Lab_Refinaria"
+   ],
+   "unlocks": [
+    "ChemfuelPoweredGenerator",
+    "VFE_PortableChemfuelPoweredGenerator",
+    "VFE_PortableWoodFiredGenerator"
+   ],
+   "absorbs": [],
+   "branch": "",
+   "bench": "",
+   "facilities": [],
+   "techprints": 0,
+   "techprintTags": [],
+   "notes": "Energia > Combustão > nível II"
+  },
+  {
+   "id": "Ger_Industrial",
+   "idAuto": false,
+   "label": "Combustão III: Geradores industriais",
+   "desc": "Geradores industriais a lenha e a combustível químico. Uma floresta por semana, mas a fábrica não para.",
+   "cost": 1800,
+   "tech": "Industrial",
+   "x": 5,
+   "y": 0,
+   "prereqs": [
+    "Ger_Quimico",
+    "ref_Producao_Fabrica_Usinagem"
+   ],
+   "unlocks": [
+    "VFE_IndustrialWoodFiredGenerator",
+    "VFE_IndustrialChemfuelPoweredGenerator"
+   ],
+   "absorbs": [
+    "VFE_IndustrialGenerators"
+   ],
+   "branch": "",
+   "bench": "HiTechResearchBench",
+   "facilities": [],
+   "techprints": 0,
+   "techprintTags": [],
+   "notes": "Energia > Combustão > nível III"
+  },
+  {
+   "id": "Ger_Nuclear",
+   "idAuto": false,
+   "label": "Combustão IV: Energia nuclear",
+   "desc": "Reator nuclear. A Irmandade da Forja garante que é seguro; a garantia não cobre derretimento, mutação nem descendentes.",
+   "cost": 3500,
+   "tech": "Spacer",
+   "x": 7.5,
+   "y": 0,
+   "prereqs": [
+    "Ger_Industrial",
+    "ref_Producao_Lab_Micro"
+   ],
+   "unlocks": [
+    "VPE_NuclearGenerator"
+   ],
+   "absorbs": [
+    "VFE_NuclearPower"
+   ],
+   "branch": "EQ_Ramo_Forja",
+   "bench": "HiTechResearchBench",
+   "facilities": [],
+   "techprints": 0,
+   "techprintTags": [],
+   "notes": "Energia > Combustão > nível IV"
+  },
+  {
+   "id": "Ren_Vento",
+   "idAuto": false,
+   "label": "Renováveis II: Vento e água",
+   "desc": "Turbina de vento e gerador de moinho. O vento é a única coisa que a guerra não conseguiu racionar.",
+   "cost": 700,
+   "tech": "Industrial",
+   "x": 2.5,
+   "y": 1.5,
+   "prereqs": [
+    "Ger_Eletricidade"
+   ],
+   "unlocks": [
+    "WindTurbine",
+    "WatermillGenerator"
+   ],
+   "absorbs": [
+    "WatermillGenerator"
+   ],
+   "branch": "",
+   "bench": "",
+   "facilities": [],
+   "techprints": 0,
+   "techprintTags": [],
+   "notes": "Energia > Renováveis > nível II"
+  },
+  {
+   "id": "Ren_Sol",
+   "idAuto": false,
+   "label": "Renováveis II: Sol e alcionita",
+   "desc": "Gerador solar e os geradores de alcionita, o cristal que bebe luz e devolve energia. O céu ainda está meio sujo de cinza; o painel não reclama.",
+   "cost": 800,
+   "tech": "Industrial",
+   "x": 2.5,
+   "y": 2.5,
+   "prereqs": [
+    "Ger_Eletricidade"
+   ],
+   "unlocks": [
+    "SolarGenerator",
+    "AB_AlcyoniteSolar",
+    "AB_AlcyoniteSolar_Advanced"
+   ],
+   "absorbs": [
+    "SolarPanels"
+   ],
+   "branch": "",
+   "bench": "",
+   "facilities": [],
+   "techprints": 0,
+   "techprintTags": [],
+   "notes": "Energia > Renováveis > nível II"
+  },
+  {
+   "id": "Ren_Terra",
+   "idAuto": false,
+   "label": "Renováveis III: Maré e calor da terra",
+   "desc": "Gerador geotérmico, magmatérmico e de maré. O planeta ainda está quente da guerra; é justo que pague a conta de luz.",
+   "cost": 2500,
+   "tech": "Industrial",
+   "x": 5,
+   "y": 2,
+   "prereqs": [
+    "Ren_Vento",
+    "ref_Producao_Fabrica_Usinagem"
+   ],
+   "unlocks": [
+    "GeothermalGenerator",
+    "AB_MagmaThermalPlant",
+    "VFE_TidalGenerator"
+   ],
+   "absorbs": [
+    "GeothermalPower",
+    "VFE_TidalPower"
+   ],
+   "branch": "",
+   "bench": "HiTechResearchBench",
+   "facilities": [],
+   "techprints": 0,
+   "techprintTags": [],
+   "notes": "Energia > Renováveis > nível III"
+  },
+  {
+   "id": "Ren_Avancada",
+   "idAuto": false,
+   "label": "Renováveis IV: Fontes avançadas",
+   "desc": "Solar, eólica, roda d'água e geotérmica avançadas, com tecnologia de mundo-cintilante. O Velho Mundo tinha energia limpa e mesmo assim deu um jeito de acabar.",
+   "cost": 2500,
+   "tech": "Spacer",
+   "x": 7.5,
+   "y": 2,
+   "prereqs": [
+    "Ren_Sol",
+    "Ren_Terra",
+    "ref_Producao_Lab_Micro"
+   ],
+   "unlocks": [
+    "VFE_AdvancedSolarGenerator",
+    "VFE_AdvancedWindTurbine",
+    "VFE_AdvancedWatermillGenerator",
+    "VPE_AdvancedGeothermalGenerator",
+    "AB_MagmaThermalPlant_Advanced"
+   ],
+   "absorbs": [
+    "VFE_AdvancedPowerSources"
+   ],
+   "branch": "EQ_Ramo_VelhoMundo",
+   "bench": "HiTechResearchBench",
+   "facilities": [],
+   "techprints": 0,
+   "techprintTags": [],
+   "notes": "Energia > Renováveis > nível IV"
+  },
+  {
+   "id": "Bat_Baterias",
+   "idAuto": false,
+   "label": "Baterias II: Baterias",
+   "desc": "Bateria, bateria pequena e grande. Guardar a luz do dia para a noite, quando os saqueadores chegam.",
+   "cost": 500,
+   "tech": "Industrial",
+   "x": 2.5,
+   "y": 3.5,
+   "prereqs": [
+    "Ger_Eletricidade"
+   ],
+   "unlocks": [
+    "Battery",
+    "VFE_SmallBattery",
+    "VFE_LargeBattery"
+   ],
+   "absorbs": [
+    "Batteries"
+   ],
+   "branch": "",
+   "bench": "",
+   "facilities": [],
+   "techprints": 0,
+   "techprintTags": [],
+   "notes": "Energia > Baterias > nível II"
+  },
+  {
+   "id": "Bat_Avancadas",
+   "idAuto": false,
+   "label": "Baterias IV: Baterias avançadas",
+   "desc": "Baterias avançadas, normal e grande. Células do Velho Mundo que guardam um mês de energia e explodem como um.",
+   "cost": 2000,
+   "tech": "Spacer",
+   "x": 7.5,
+   "y": 3.5,
+   "prereqs": [
+    "Bat_Baterias",
+    "ref_Producao_Lab_Micro"
+   ],
+   "unlocks": [
+    "VFE_AdvancedBattery",
+    "VFE_LargeAdvancedBattery"
+   ],
+   "absorbs": [
+    "VFE_AdvancedBatteries"
+   ],
+   "branch": "EQ_Ramo_VelhoMundo",
+   "bench": "HiTechResearchBench",
+   "facilities": [],
+   "techprints": 0,
+   "techprintTags": [],
+   "notes": "Energia > Baterias > nível IV"
+  },
+  {
+   "id": "Poluicao_Toxificante",
+   "idAuto": false,
+   "label": "Poluição II: Gerador toxificante",
+   "desc": "Gerador toxificante: muita energia, nenhum combustível e um pântano de veneno ao redor. Energia barata para quem não respira o ar do vizinho; o vizinho é que respira.",
+   "cost": 800,
+   "tech": "Industrial",
+   "x": 2.5,
+   "y": 5,
+   "prereqs": [
+    "Ger_Eletricidade"
+   ],
+   "unlocks": [
+    "ToxifierGenerator"
+   ],
+   "absorbs": [
+    "ToxifierGenerator"
+   ],
+   "branch": "",
+   "bench": "",
+   "facilities": [],
+   "techprints": 0,
+   "techprintTags": [],
+   "notes": "Energia > Poluição > nível II"
+  },
+  {
+   "id": "Poluicao_Bombas",
+   "idAuto": false,
+   "label": "Poluição II: Bombas de poluição",
+   "desc": "Bombas de poluição, comum, grande e rápida: sugam a sujeira da Queda do chão e guardam em pacotes de resíduo. Para onde vão os pacotes é problema do próximo.",
+   "cost": 800,
+   "tech": "Industrial",
+   "x": 2.5,
+   "y": 6,
+   "prereqs": [
+    "Ger_Eletricidade"
+   ],
+   "unlocks": [
+    "PollutionPump",
+    "VRecyclingE_LargePollutionPump",
+    "VRecyclingE_PollutionFastPump"
+   ],
+   "absorbs": [],
+   "branch": "",
+   "bench": "",
+   "facilities": [],
+   "techprints": 0,
+   "techprintTags": [],
+   "notes": "Energia > Poluição > nível II"
+  },
+  {
+   "id": "ref_Producao_Lab_Refinaria",
+   "ref": "EQ_R_Producao_Lab_Refinaria",
+   "x": 1.25,
+   "y": -0.5,
+   "prereqs": []
+  },
+  {
+   "id": "ref_Producao_Fabrica_Usinagem",
+   "ref": "EQ_R_Producao_Fabrica_Usinagem",
+   "x": 3.75,
+   "y": -0.5,
+   "prereqs": []
+  },
+  {
+   "id": "ref_Producao_Lab_Micro",
+   "ref": "EQ_R_Producao_Lab_Micro",
+   "x": 6.25,
+   "y": -0.5,
+   "prereqs": []
+  }
+ ]
+}

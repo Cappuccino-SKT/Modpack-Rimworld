@@ -5,13 +5,13 @@
  "ownTab": true,
  "replace": true,
  "branch": "EQ_Ramo_Bancada",
- "desc": "Tudo o que envolve fazenda. Lavoura: as plantas, em Alimentícia (frutífera, vegetal, fúngica), Souvenir e Recurso (tecido, madeira, medicamento, drogas, outros). Agricultura: mobília, solo, manejo e ferramentas. Pecuária: abrigo, alimentação, abate, criação e produtos.",
+ "desc": "Da horta de sobrevivência ao agronegócio: a Queda queimou as florestas e envenenou o solo, e cada colônia reaprende a comer com o que sobrou. Lavoura: as plantas, em Alimentícia (frutífera, vegetal, fúngica), Souvenir e Recurso (tecido, madeira, medicamento, drogas, outros). Agricultura: mobília, solo, manejo e ferramentas. Pecuária: abrigo, alimentação, abate, criação e produtos. Liga-se à Produção (forja, usinagem, eletrificação, microeletrônica).",
  "nodes": [
   {
    "id": "Lav_Frutifera_1",
    "idAuto": false,
    "label": "Frutífera I: Pomar de quintal",
-   "desc": "Árvores e arbustos de fruta que crescem rápido e não pedem muito. A fome também não pede.",
+   "desc": "Árvores e arbustos de fruta que crescem rápido e não pedem muito. A fome também não pede. Primeira lição da Queda: o que dá fruta não se queima para aquecer.",
    "cost": 300,
    "tech": "Neolithic",
    "x": 0.0,
@@ -35,11 +35,11 @@
   {
    "id": "Lav_Frutifera_2",
    "idAuto": false,
-   "label": "Frutífera II: Pomar clássico",
-   "desc": "As frutíferas que o Velho Mundo vendia em embalagem plástica. Levam um mês para dar fruta, mas dão muita.",
+   "label": "Frutífera II: Pomar do Velho Mundo",
+   "desc": "As frutíferas que o Velho Mundo vendia em bandeja de plástico. Levam um mês para dar fruta, mas dão muita; a bandeja não volta mais.",
    "cost": 700,
    "tech": "Medieval",
-   "x": 2.0,
+   "x": 2.5,
    "y": 0,
    "prereqs": [
     "Lav_Frutifera_1"
@@ -68,10 +68,10 @@
    "id": "Lav_Frutifera_3",
    "idAuto": false,
    "label": "Frutífera III: Frutas de luxo",
-   "desc": "Cacau, coco e abacate: solo certo, mão experiente e paciência de quem ainda acredita em sobremesa.",
+   "desc": "Cacau, coco e abacate: solo certo, mão experiente e a paciência de quem ainda acredita em sobremesa. O Coro paga bem para tê-las no banquete.",
    "cost": 1500,
    "tech": "Industrial",
-   "x": 4.0,
+   "x": 5.0,
    "y": 0,
    "prereqs": [
     "Lav_Frutifera_2"
@@ -93,10 +93,10 @@
    "id": "Lav_Frutifera_4",
    "idAuto": false,
    "label": "Frutífera IV: Árvores que escorrem",
-   "desc": "Xenoflora que produz gosma comestível. Ninguém pergunta de onde vem o gosto.",
+   "desc": "Xenoflora que produz gosma comestível, trazida de mundos que o Império colonizou e esqueceu. Ninguém pergunta de onde vem o gosto.",
    "cost": 3000,
    "tech": "Spacer",
-   "x": 6.0,
+   "x": 7.5,
    "y": 0,
    "prereqs": [
     "Lav_Frutifera_3"
@@ -116,7 +116,7 @@
    "id": "Lav_Vegetal_1",
    "idAuto": false,
    "label": "Vegetal I: Horta de sobrevivência",
-   "desc": "Raízes, folhas e grãos que qualquer um planta e quase nada mata.",
+   "desc": "Arroz, batata, milho e o que mais quase nada mata. O cardápio do primeiro ano depois da Queda, e do segundo, e do terceiro.",
    "cost": 300,
    "tech": "Neolithic",
    "x": 0.0,
@@ -126,7 +126,6 @@
     "Plant_Rice",
     "Plant_Potato",
     "Plant_Corn",
-    "Plant_Haygrass",
     "VCE_Carrot",
     "VCE_Cabbage",
     "VCE_Onion",
@@ -154,11 +153,11 @@
   {
    "id": "Lav_Vegetal_2",
    "idAuto": false,
-   "label": "Vegetal II: Horta temperada",
-   "desc": "Frutas de canteiro, grãos para farinha e temperos. Comida que alguém gostaria de comer.",
+   "label": "Vegetal II: Horta de vila",
+   "desc": "Frutas de canteiro, grãos para farinha e temperos. Comida que alguém gostaria de comer, e que a vila vizinha gostaria de levar.",
    "cost": 700,
    "tech": "Medieval",
-   "x": 2.0,
+   "x": 2.5,
    "y": 1,
    "prereqs": [
     "Lav_Vegetal_1"
@@ -193,11 +192,11 @@
   {
    "id": "Lav_Vegetal_3",
    "idAuto": false,
-   "label": "Vegetal III: Solo difícil",
-   "desc": "Areia, alagado e caverna: lavouras para os lugares onde a horta comum desiste.",
+   "label": "Vegetal III: Terra que sobrou",
+   "desc": "Areia, alagado e caverna: lavouras para os lugares onde a guerra deixou só o que ninguém queria.",
    "cost": 1500,
    "tech": "Industrial",
-   "x": 4.0,
+   "x": 5.0,
    "y": 1,
    "prereqs": [
     "Lav_Vegetal_2"
@@ -224,10 +223,10 @@
    "id": "Lav_Vegetal_4",
    "idAuto": false,
    "label": "Vegetal IV: Lavoura do colapso",
-   "desc": "Batata que gosta de veneno e plantas que dão carne. O progresso não perguntou se você queria.",
+   "desc": "Batata que gosta de veneno e plantas que dão carne. O solo poluído não vai sarar; quem se adapta é a planta. O progresso não perguntou se você queria.",
    "cost": 3000,
    "tech": "Spacer",
-   "x": 6.0,
+   "x": 7.5,
    "y": 1,
    "prereqs": [
     "Lav_Vegetal_3"
@@ -248,7 +247,7 @@
    "id": "Lav_Fungica_1",
    "idAuto": false,
    "label": "Fúngica I: Fungos de porão",
-   "desc": "Cogumelos que crescem no escuro, rápido e sem reclamar. Igual aos colonos.",
+   "desc": "Cogumelos que crescem no escuro, rápido e sem reclamar. Foi o que manteve vivos os abrigos antigos enquanto lá fora o céu queimava.",
    "cost": 300,
    "tech": "Neolithic",
    "x": 0.0,
@@ -271,10 +270,10 @@
    "id": "Lav_Fungica_2",
    "idAuto": false,
    "label": "Fúngica II: Fungos de caverna",
-   "desc": "Cogumelos que pedem caverna, perícia ou estômago forte.",
+   "desc": "Cogumelos que pedem caverna, perícia ou estômago forte. Os moradores de abrigo juram que o gosto melhora depois da terceira geração.",
    "cost": 700,
    "tech": "Medieval",
-   "x": 2.0,
+   "x": 2.5,
    "y": 2,
    "prereqs": [
     "Lav_Fungica_1"
@@ -296,10 +295,10 @@
    "id": "Lav_Fungica_3",
    "idAuto": false,
    "label": "Fúngica III: Fungos alienígenas",
-   "desc": "Esporos de outros biomas. Comestíveis, na maioria das vezes.",
+   "desc": "Esporos de outros biomas que vieram grudados nas naves da guerra. Comestíveis, na maioria das vezes.",
    "cost": 1500,
    "tech": "Industrial",
-   "x": 4.0,
+   "x": 5.0,
    "y": 2,
    "prereqs": [
     "Lav_Fungica_2"
@@ -322,16 +321,13 @@
    "id": "Lav_Souvenir_1",
    "idAuto": false,
    "label": "Souvenir I: Jardim selvagem",
-   "desc": "Grama e flores do mato. Ninguém come, mas alguém sorri.",
+   "desc": "Flores do mato. Ninguém come, mas alguém sorri, e no deserto isso já é luxo.",
    "cost": 150,
    "tech": "Neolithic",
    "x": 0.0,
    "y": 3.5,
    "prereqs": [],
    "unlocks": [
-    "Plant_Grass",
-    "VCE_Grass",
-    "VCE_TallGrass",
     "Plant_Dandelion",
     "Plant_Daylily",
     "Plant_Rose",
@@ -352,7 +348,7 @@
    "desc": "Flores de canteiro e de jardim, para quem já tem tempo de enfeitar o fim do mundo.",
    "cost": 350,
    "tech": "Medieval",
-   "x": 2.0,
+   "x": 2.5,
    "y": 3.5,
    "prereqs": [
     "Lav_Souvenir_1"
@@ -384,11 +380,11 @@
   {
    "id": "Lav_Souvenir_3",
    "idAuto": false,
-   "label": "Souvenir III: Ornamentais raras",
-   "desc": "Bonsai, cogumelo vermelho e a flor que faz dormir. Status em vaso.",
+   "label": "Souvenir III: Ornamentais de salão",
+   "desc": "Bonsai, cogumelo vermelho e a flor que faz dormir. Status em vaso: o Coro não recebe visita em sala sem planta rara.",
    "cost": 750,
    "tech": "Industrial",
-   "x": 4.0,
+   "x": 5.0,
    "y": 3.5,
    "prereqs": [
     "Lav_Souvenir_2"
@@ -409,10 +405,10 @@
    "id": "Lav_Souvenir_4",
    "idAuto": false,
    "label": "Souvenir IV: Xenoflores",
-   "desc": "Gama: flores de outro mundo que brilham. Lindas, inúteis e caríssimas.",
+   "desc": "Flores de mundos-cintilantes que brilham sozinhas. Lindas, inúteis e caríssimas na Feira.",
    "cost": 1500,
    "tech": "Spacer",
-   "x": 6.0,
+   "x": 7.5,
    "y": 3.5,
    "prereqs": [
     "Lav_Souvenir_3"
@@ -433,7 +429,7 @@
    "id": "Lav_Tecido_1",
    "idAuto": false,
    "label": "Tecido I: Algodão",
-   "desc": "Fibra simples para roupa simples.",
+   "desc": "Fibra simples para roupa simples. A moda pós-Queda tem duas cores: cru e sujo.",
    "cost": 300,
    "tech": "Neolithic",
    "x": 0.0,
@@ -453,10 +449,10 @@
    "id": "Lav_Tecido_2",
    "idAuto": false,
    "label": "Tecido II: Micofio",
-   "desc": "Fio de cogumelo de caverna. Esquenta e cheira a porão.",
+   "desc": "Fio de cogumelo de caverna, invenção dos abrigos antigos. Esquenta e cheira a porão.",
    "cost": 700,
    "tech": "Medieval",
-   "x": 2.0,
+   "x": 2.5,
    "y": 5,
    "prereqs": [
     "Lav_Tecido_1",
@@ -476,10 +472,10 @@
    "id": "Lav_Tecido_3",
    "idAuto": false,
    "label": "Tecido III: Fio do diabo",
-   "desc": "Fungo que vira o tecido mais resistente que se planta. O nome é merecido.",
+   "desc": "Fungo que vira o tecido mais resistente que se planta. O nome é merecido; a Hélice tenta patentear o esporo.",
    "cost": 1500,
    "tech": "Industrial",
-   "x": 4.0,
+   "x": 5.0,
    "y": 5,
    "prereqs": [
     "Lav_Tecido_2"
@@ -498,10 +494,10 @@
    "id": "Lav_Tecido_4",
    "idAuto": false,
    "label": "Tecido IV: Septimum",
-   "desc": "Planta que dá Ultima, tecido de luxo de outro mundo.",
+   "desc": "Planta que dá Ultima, tecido de luxo de outro mundo. Uma muda vale mais que a colônia que a planta.",
    "cost": 3000,
    "tech": "Spacer",
-   "x": 6.0,
+   "x": 7.5,
    "y": 5,
    "prereqs": [
     "Lav_Tecido_3"
@@ -519,8 +515,8 @@
   {
    "id": "Lav_Madeira_1",
    "idAuto": false,
-   "label": "Madeira I: Silvicultura básica",
-   "desc": "Árvores e cactos comuns que crescem rápido. Lenha para o primeiro inverno.",
+   "label": "Madeira I: Lenha do primeiro inverno",
+   "desc": "Árvores e cactos comuns que crescem rápido. A floresta antiga virou cinza na guerra; a nova, alguém precisa plantar.",
    "cost": 300,
    "tech": "Neolithic",
    "x": 0.0,
@@ -555,10 +551,10 @@
    "id": "Lav_Madeira_2",
    "idAuto": false,
    "label": "Madeira II: Madeiras nobres",
-   "desc": "Árvores lentas e grandes. Quem planta não costuma estar vivo para cortar.",
+   "desc": "Árvores lentas e grandes. Quem planta não costuma estar vivo para cortar, mas o neto agradece, se houver neto.",
    "cost": 700,
    "tech": "Medieval",
-   "x": 2.0,
+   "x": 2.5,
    "y": 6,
    "prereqs": [
     "Lav_Madeira_1"
@@ -587,11 +583,11 @@
   {
    "id": "Lav_Madeira_3",
    "idAuto": false,
-   "label": "Madeira III: Madeiras resistentes",
-   "desc": "Madeira de caverna, de hidroponia, de terra poluída e de biomas exóticos.",
+   "label": "Madeira III: Madeiras teimosas",
+   "desc": "Madeira de caverna, de hidroponia, de terra poluída e de biomas exóticos. Cresce onde a árvore comum já morreu.",
    "cost": 1500,
    "tech": "Industrial",
-   "x": 4.0,
+   "x": 5.0,
    "y": 6,
    "prereqs": [
     "Lav_Madeira_2"
@@ -636,7 +632,7 @@
    "desc": "Árvores de anima, de carne, de máquina e de outro mundo. A madeira é madeira; o resto é melhor não olhar.",
    "cost": 3000,
    "tech": "Spacer",
-   "x": 6.0,
+   "x": 7.5,
    "y": 6,
    "prereqs": [
     "Lav_Madeira_3"
@@ -689,7 +685,7 @@
    "id": "Lav_Medicamento_1",
    "idAuto": false,
    "label": "Medicamento I: Ervas de cura",
-   "desc": "Raiz da cura e as folhas, pétalas e flores que viram poção e remédio caseiro. Funciona, às vezes.",
+   "desc": "Raiz da cura e as folhas, pétalas e flores que viram poção e remédio caseiro. Funciona, às vezes, e é o único remédio que não vem com bula da Hélice.",
    "cost": 300,
    "tech": "Neolithic",
    "x": 0.0,
@@ -713,10 +709,10 @@
    "id": "Lav_Medicamento_2",
    "idAuto": false,
    "label": "Medicamento II: Trufa-cura",
-   "desc": "Fungo de caverna que já sai da terra como remédio.",
+   "desc": "Fungo de caverna que já sai da terra como remédio. Os abrigos guardavam o lugar onde ela brota como segredo de família.",
    "cost": 700,
    "tech": "Medieval",
-   "x": 2.0,
+   "x": 2.5,
    "y": 7,
    "prereqs": [
     "Lav_Medicamento_1"
@@ -735,10 +731,10 @@
    "id": "Lav_Medicamento_3",
    "idAuto": false,
    "label": "Medicamento III: Farmácia que brota",
-   "desc": "Babosa e cogumelo-cura: remédio de verdade, para quem tem areia, caverna e mão firme.",
+   "desc": "Babosa e cogumelo-cura: remédio de verdade, para quem tem areia, caverna e mão firme. Concorrência direta com a assinatura de saúde da Hélice.",
    "cost": 1500,
    "tech": "Industrial",
-   "x": 4.0,
+   "x": 5.0,
    "y": 7,
    "prereqs": [
     "Lav_Medicamento_2"
@@ -758,7 +754,7 @@
    "id": "Lav_Drogas_1",
    "idAuto": false,
    "label": "Drogas I: Vícios de quintal",
-   "desc": "Lúpulo, folha de fumo e chá. O primeiro passo de toda economia.",
+   "desc": "Lúpulo, folha de fumo e chá, e o baseado enrolado na hora. O primeiro passo de toda economia, e o segundo também.",
    "cost": 300,
    "tech": "Neolithic",
    "x": 0.0,
@@ -767,7 +763,8 @@
    "unlocks": [
     "Plant_Hops",
     "Plant_Smokeleaf",
-    "VBE_Plant_Tea"
+    "VBE_Plant_Tea",
+    "SmokeleafJoint"
    ],
    "branch": "",
    "bench": "",
@@ -780,10 +777,10 @@
    "id": "Lav_Drogas_2",
    "idAuto": false,
    "label": "Drogas II: Lavoura de exportação",
-   "desc": "Café, tabaco e psicoide. Rende mais que comida, e todo mundo sabe disso.",
+   "desc": "Café, tabaco e psicoide, e o psycho em pó feito da folha. Rende mais que comida na Feira, e todo mundo sabe disso.",
    "cost": 700,
    "tech": "Medieval",
-   "x": 2.0,
+   "x": 2.5,
    "y": 8,
    "prereqs": [
     "Lav_Drogas_1"
@@ -791,7 +788,8 @@
    "unlocks": [
     "VBE_Plant_Coffee",
     "VBE_Plant_Tobacco",
-    "Plant_Psychoid"
+    "Plant_Psychoid",
+    "Psycho"
    ],
    "branch": "",
    "bench": "",
@@ -804,10 +802,10 @@
    "id": "Lav_Drogas_3",
    "idAuto": false,
    "label": "Drogas III: Fungos da alegria",
-   "desc": "Cogumelos que mudam o humor e, de vez em quando, o resto.",
+   "desc": "Cogumelos que mudam o humor e, de vez em quando, o resto. A Ordem do Silêncio diz que é assim que se começa a escutar.",
    "cost": 1500,
    "tech": "Industrial",
-   "x": 4.0,
+   "x": 5.0,
    "y": 8,
    "prereqs": [
     "Lav_Drogas_2"
@@ -826,15 +824,16 @@
   {
    "id": "Lav_Outros_1",
    "idAuto": false,
-   "label": "Outros I: Tinturas",
-   "desc": "Tintória: cor para um mundo cinza.",
+   "label": "Outros I: Tinta e chama",
+   "desc": "Tintória e blazebulb: cor para um mundo que a Queda pintou de cinza, e o prometeu que põe fogo nele de novo.",
    "cost": 300,
    "tech": "Neolithic",
    "x": 0.0,
    "y": 9,
    "prereqs": [],
    "unlocks": [
-    "Plant_Tinctoria"
+    "Plant_Tinctoria",
+    "PlantBlazebulb"
    ],
    "branch": "",
    "bench": "",
@@ -847,10 +846,10 @@
    "id": "Lav_Outros_2",
    "idAuto": false,
    "label": "Outros II: Óleo e corante",
-   "desc": "Canola para óleo e cogumelo-tintura para quem não tem sol.",
+   "desc": "Canola para óleo e cogumelo-tintura para quem não tem sol. Óleo que não vem de poço, porque os poços são da Forja.",
    "cost": 700,
    "tech": "Medieval",
-   "x": 2.0,
+   "x": 2.5,
    "y": 9,
    "prereqs": [
     "Lav_Outros_1"
@@ -870,16 +869,15 @@
    "id": "Lav_Outros_3",
    "idAuto": false,
    "label": "Outros III: Plantas utilitárias",
-   "desc": "Cogumelo que apaga fogo, solta gás, dá choque ou esquenta, dardo venenoso e bulbo de combustível.",
+   "desc": "Cogumelo que apaga fogo, solta gás, dá choque ou esquenta, e o chapéu-babão. A natureza aprendeu com a guerra.",
    "cost": 1500,
    "tech": "Industrial",
-   "x": 4.0,
+   "x": 5.0,
    "y": 9,
    "prereqs": [
     "Lav_Outros_2"
    ],
    "unlocks": [
-    "PlantBlazebulb",
     "VPE_Plant_Foampuffer",
     "VPE_Plant_Toxpuff",
     "VPE_Plant_Zapcap",
@@ -897,10 +895,10 @@
    "id": "Lav_Outros_4",
    "idAuto": false,
    "label": "Outros IV: Minerais vivos",
-   "desc": "Plantas que dão resina, metal e pedra. A geologia desistiu de ser lenta.",
+   "desc": "Plantas que dão resina, metal e pedra. A geologia desistiu de ser lenta; o ferro-velho ganhou concorrência.",
    "cost": 3000,
    "tech": "Spacer",
-   "x": 6.0,
+   "x": 7.5,
    "y": 9,
    "prereqs": [
     "Lav_Outros_3"
@@ -946,7 +944,7 @@
    "desc": "Vaso de bonsai e vaso longo. Plantar por enfeite é sinal de que a fome passou, por enquanto.",
    "cost": 700,
    "tech": "Medieval",
-   "x": 2.0,
+   "x": 2.5,
    "y": 11,
    "prereqs": [
     "Agr_Mobilia_1"
@@ -966,14 +964,15 @@
    "id": "Agr_Mobilia_3",
    "idAuto": false,
    "label": "Mobília III: Cultivo sob luz",
-   "desc": "Lâmpada solar e bacias de hidroponia: colheita sem sol, sem estação e sem desculpa.",
+   "desc": "Lâmpada solar e bacias de hidroponia: colheita sem sol, sem estação e sem desculpa. Os abrigos antigos viviam disso; agora a conta de luz é sua.",
    "cost": 1500,
    "tech": "Industrial",
-   "x": 4.0,
+   "x": 5.0,
    "y": 11,
    "prereqs": [
     "Agr_Mobilia_2",
-    "ref_Electricity"
+    "ref_Electricity",
+    "ref_Producao_Lab_Micro"
    ],
    "unlocks": [
     "SunLamp",
@@ -991,10 +990,10 @@
    "id": "Agr_Mobilia_4",
    "idAuto": false,
    "label": "Mobília IV: Ecossistemas artificiais",
-   "desc": "Canteiro fechado com luz, solo e clima próprios. A natureza, finalmente sob contrato.",
+   "desc": "Canteiro fechado com luz, solo e clima próprios, tecnologia de mundo-cintilante. A natureza, finalmente sob contrato.",
    "cost": 3000,
    "tech": "Spacer",
-   "x": 6.0,
+   "x": 7.5,
    "y": 11,
    "prereqs": [
     "Agr_Mobilia_3"
@@ -1016,7 +1015,7 @@
    "id": "Agr_Solo_1",
    "idAuto": false,
    "label": "Solo I: Terra arada",
-   "desc": "Arar o chão para deixar o solo mais fértil. O trabalho mais velho do mundo, e o mais ingrato.",
+   "desc": "Arar o chão para deixar o solo mais fértil. O trabalho mais velho do mundo, e o único que a Queda não mudou.",
    "cost": 300,
    "tech": "Neolithic",
    "x": 0.0,
@@ -1036,10 +1035,10 @@
    "id": "Agr_Solo_2",
    "idAuto": false,
    "label": "Solo II: Paisagismo",
-   "desc": "Grama plantada e gramado aparado. Solo fértil que alguém insiste em cortar.",
+   "desc": "Grama plantada e gramado aparado. Solo fértil que alguém insiste em cortar, para parecer o Velho Mundo nas fotos.",
    "cost": 700,
    "tech": "Medieval",
-   "x": 2.0,
+   "x": 2.5,
    "y": 12,
    "prereqs": [
     "Agr_Solo_1"
@@ -1059,10 +1058,10 @@
    "id": "Agr_Solo_3",
    "idAuto": false,
    "label": "Solo III: Solo fúngico",
-   "desc": "Cascalho fúngico e solo fúngico rico: chão para cogumelo crescer onde a terra não presta.",
+   "desc": "Cascalho fúngico e solo fúngico rico: chão para cogumelo crescer onde a terra não presta, e quase nenhuma presta.",
    "cost": 1500,
    "tech": "Industrial",
-   "x": 4.0,
+   "x": 5.0,
    "y": 12,
    "prereqs": [
     "Agr_Solo_2"
@@ -1082,7 +1081,7 @@
    "id": "Agr_Manejo_1",
    "idAuto": false,
    "label": "Manejo I: Sementeira",
-   "desc": "Um canto do chão para separar sementes. Sem semente, a lavoura do ano que vem é só uma ideia.",
+   "desc": "Um canto do chão para separar sementes. Sem semente, a lavoura do ano que vem é só uma ideia, e a Hélice adoraria vender a sua.",
    "cost": 300,
    "tech": "Neolithic",
    "x": 0.0,
@@ -1104,10 +1103,10 @@
    "id": "Agr_Manejo_2",
    "idAuto": false,
    "label": "Manejo II: Técnicas agrícolas",
-   "desc": "Espantalho e bancada de sementes. Proteger a lavoura e guardar o que sobrou dela.",
+   "desc": "Espantalho e bancada de sementes. Proteger a lavoura e guardar o que sobrou dela, sem pagar licença de semente a ninguém.",
    "cost": 700,
    "tech": "Medieval",
-   "x": 2.0,
+   "x": 2.5,
    "y": 13,
    "prereqs": [
     "Agr_Manejo_1",
@@ -1128,14 +1127,15 @@
    "id": "Agr_Manejo_3",
    "idAuto": false,
    "label": "Manejo III: Água e adubo",
-   "desc": "Irrigadores e processador de fertilizante: o esgoto da colônia volta para a horta, como sempre voltou.",
+   "desc": "Irrigadores e processador de fertilizante: o esgoto da colônia volta para a horta, como sempre voltou. Cano usinado, adubo nem tanto.",
    "cost": 1500,
    "tech": "Industrial",
-   "x": 4.0,
+   "x": 5.0,
    "y": 13,
    "prereqs": [
     "Agr_Manejo_2",
-    "ref_Plumbing"
+    "ref_Plumbing",
+    "ref_Producao_Fabrica_Usinagem"
    ],
    "unlocks": [
     "VFE_Sprinkler",
@@ -1153,12 +1153,14 @@
    "id": "Agr_Ferramentas_1",
    "idAuto": false,
    "label": "Ferramentas I: Machadinha",
-   "desc": "Machadinha de lenhador: corta árvore um pouco mais rápido e, se precisar, outras coisas também.",
+   "desc": "Machadinha de lenhador, saída da forja: corta árvore um pouco mais rápido e, se precisar, outras coisas também.",
    "cost": 500,
    "tech": "Medieval",
    "x": 0.0,
    "y": 14,
-   "prereqs": [],
+   "prereqs": [
+    "ref_Producao_Oficio_Metalurgia"
+   ],
    "unlocks": [
     "VWE_MeleeWeapon_Axe"
    ],
@@ -1173,10 +1175,10 @@
    "id": "Agr_Ferramentas_2",
    "idAuto": false,
    "label": "Ferramentas II: Trator Scytheman",
-   "desc": "Veículo de colheita do Velho Mundo. Faz o trabalho de dez colonos e o barulho de cem.",
+   "desc": "Veículo de colheita do Velho Mundo, ressuscitado do ferro-velho. Faz o trabalho de dez colonos e o barulho de cem.",
    "cost": 1200,
    "tech": "Industrial",
-   "x": 2.0,
+   "x": 2.5,
    "y": 14,
    "prereqs": [
     "Agr_Ferramentas_1",
@@ -1196,10 +1198,10 @@
    "id": "Agr_Ferramentas_3",
    "idAuto": false,
    "label": "Ferramentas III: Lavradores sem alma",
-   "desc": "Mecanoide agrimãos: planta e colhe sem comer o que planta. Nem reclama do salário, porque não tem.",
+   "desc": "Mecanoide agrimãos: planta e colhe sem comer o que planta. A Forja chama de \"mão de obra com garantia\"; ninguém lembra que foi um mecanoide que queimou o mundo.",
    "cost": 1500,
    "tech": "Industrial",
-   "x": 4.0,
+   "x": 5.0,
    "y": 14,
    "prereqs": [
     "Agr_Ferramentas_2",
@@ -1222,7 +1224,7 @@
    "desc": "Prótese agrícola que faz o colono plantar e colher muito mais rápido. Ele não pediu, mas agradece.",
    "cost": 3000,
    "tech": "Spacer",
-   "x": 6.0,
+   "x": 7.5,
    "y": 14,
    "prereqs": [
     "Agr_Ferramentas_3"
@@ -1242,7 +1244,7 @@
    "id": "Pec_Abrigo_1",
    "idAuto": false,
    "label": "Abrigo I: Curral e ninho",
-   "desc": "Marcador de curral, ponto de dormir, porteira e caixa de ovos. Cercar o jantar antes que ele fuja.",
+   "desc": "Marcador de curral, ponto de dormir, porteira e caixa de ovos. Cercar o jantar antes que ele fuja, ou que os saqueadores o levem.",
    "cost": 300,
    "tech": "Neolithic",
    "x": 0.0,
@@ -1265,10 +1267,10 @@
    "id": "Pec_Abrigo_2",
    "idAuto": false,
    "label": "Abrigo II: Estábulo",
-   "desc": "Caixa de dormir, cama e portinhola para animais. Bicho descansado rende mais leite, lã e carne.",
+   "desc": "Caixa de dormir, cama e portinhola para animais. Bicho descansado rende mais leite, lã e carne; no deserto, nem todo colono tem cama.",
    "cost": 700,
    "tech": "Medieval",
-   "x": 2.0,
+   "x": 2.5,
    "y": 16,
    "prereqs": [
     "Pec_Abrigo_1"
@@ -1292,7 +1294,7 @@
    "desc": "Sarcófago para o bicho de estimação e lajes animalistas. Luto por quem nunca pediu para ser adotado.",
    "cost": 1500,
    "tech": "Industrial",
-   "x": 4.0,
+   "x": 5.0,
    "y": 16,
    "prereqs": [
     "Pec_Abrigo_2",
@@ -1313,16 +1315,18 @@
   {
    "id": "Pec_Alimentacao_1",
    "idAuto": false,
-   "label": "Alimentação I: Feno",
-   "desc": "Secar capim para o inverno. Se o bicho come, a colônia come depois.",
+   "label": "Alimentação I: Pasto e feno",
+   "desc": "Capim-feno, grama e capim alto: pasto para o curral e feno seco para o inverno. Se o bicho come, a colônia come depois.",
    "cost": 300,
    "tech": "Neolithic",
    "x": 0.0,
    "y": 17,
-   "prereqs": [
-    "Lav_Vegetal_1"
-   ],
+   "prereqs": [],
    "unlocks": [
+    "Plant_Grass",
+    "VCE_Grass",
+    "VCE_TallGrass",
+    "Plant_Haygrass",
     "Hay"
    ],
    "branch": "",
@@ -1336,14 +1340,13 @@
    "id": "Pec_Alimentacao_2",
    "idAuto": false,
    "label": "Alimentação II: Ração",
-   "desc": "Carne e vegetais moídos numa papa que só animal aceita. E alguns colonos, em anos ruins.",
+   "desc": "Carne e vegetais moídos numa papa que só animal aceita. E alguns colonos, em anos ruins, que depois da Queda foram quase todos.",
    "cost": 700,
    "tech": "Medieval",
-   "x": 2.0,
+   "x": 2.5,
    "y": 17,
    "prereqs": [
-    "Pec_Alimentacao_1",
-    "Pec_Abate_1"
+    "Pec_Alimentacao_1"
    ],
    "unlocks": [
     "Kibble"
@@ -1359,10 +1362,10 @@
    "id": "Pec_Alimentacao_3",
    "idAuto": false,
    "label": "Alimentação III: Bico de pasta",
-   "desc": "Pasta nutritiva direto no cocho, por cano. O animal agradece; o colono que comia a mesma pasta, nem tanto.",
+   "desc": "Pasta nutritiva direto no cocho, por cano. O animal agradece; o colono que come a mesma pasta, nem tanto.",
    "cost": 1500,
    "tech": "Industrial",
-   "x": 4.0,
+   "x": 5.0,
    "y": 17,
    "prereqs": [
     "Pec_Alimentacao_2",
@@ -1381,15 +1384,15 @@
   {
    "id": "Pec_Abate_1",
    "idAuto": false,
-   "label": "Abate I: Açougue",
-   "desc": "Um canto do chão e uma faca. Todo churrasco começa com uma decisão.",
+   "label": "Abate I: Mesa de açougueiro",
+   "desc": "Bancada para carnear rápido e aproveitar mais. Inclusive o que não deveria; a Ordem não pergunta a origem da carne que compra.",
    "cost": 300,
    "tech": "Neolithic",
    "x": 0.0,
    "y": 18,
    "prereqs": [],
    "unlocks": [
-    "ButcherSpot"
+    "TableButcher"
    ],
    "branch": "",
    "bench": "",
@@ -1401,37 +1404,16 @@
   {
    "id": "Pec_Abate_2",
    "idAuto": false,
-   "label": "Abate II: Mesa de açougueiro",
-   "desc": "Bancada para carnear rápido e aproveitar mais. Inclusive o que não deveria.",
-   "cost": 700,
-   "tech": "Medieval",
-   "x": 2.0,
-   "y": 18,
-   "prereqs": [
-    "Pec_Abate_1"
-   ],
-   "unlocks": [
-    "TableButcher"
-   ],
-   "branch": "",
-   "bench": "",
-   "facilities": [],
-   "techprints": 0,
-   "techprintTags": [],
-   "notes": "Fazenda > Pecuária > Abate > nível II"
-  },
-  {
-   "id": "Pec_Abate_3",
-   "idAuto": false,
-   "label": "Abate III: Açougue elétrico",
+   "label": "Abate II: Açougue elétrico",
    "desc": "Serra e moedor elétricos: abate em escala industrial, com a ética de uma também.",
-   "cost": 1500,
+   "cost": 700,
    "tech": "Industrial",
-   "x": 4.0,
+   "x": 2.5,
    "y": 18,
    "prereqs": [
-    "Pec_Abate_2",
-    "ref_Electricity"
+    "Pec_Abate_1",
+    "ref_Electricity",
+    "ref_Producao_Fabrica_Eletrificacao"
    ],
    "unlocks": [
     "VFE_TableButcherElectric"
@@ -1441,7 +1423,7 @@
    "facilities": [],
    "techprints": 0,
    "techprintTags": [],
-   "notes": "Fazenda > Pecuária > Abate > nível III"
+   "notes": "Fazenda > Pecuária > Abate > nível II"
   },
   {
    "id": "Pec_Criacao_1",
@@ -1467,14 +1449,15 @@
    "id": "Pec_Criacao_2",
    "idAuto": false,
    "label": "Criação II: Apicultura",
-   "desc": "Apiário: abelhas fazem mel perto das flores e ferroam perto de todo o resto.",
+   "desc": "Apiário perto do canteiro de flores: abelhas fazem mel perto das flores e ferroam perto de todo o resto. Uma das poucas espécies que a guerra não conseguiu matar.",
    "cost": 700,
    "tech": "Medieval",
-   "x": 2.0,
+   "x": 2.5,
    "y": 19,
    "prereqs": [
     "Pec_Criacao_1",
-    "Pec_Abrigo_1"
+    "Pec_Abrigo_1",
+    "Lav_Souvenir_1"
    ],
    "unlocks": [
     "VFEM2_Apiary"
@@ -1490,13 +1473,14 @@
    "id": "Pec_Criacao_3",
    "idAuto": false,
    "label": "Criação III: Zootecnia",
-   "desc": "Banco de dados animal: cada bicho escaneado vira dado. Se o banco queimar, os dados vão junto.",
+   "desc": "Banco de dados animal: cada bicho escaneado vira dado. A Hélice compra os dados; se o banco queimar, o rebanho continua, os dados não.",
    "cost": 1500,
    "tech": "Industrial",
-   "x": 4.0,
+   "x": 5.0,
    "y": 19,
    "prereqs": [
-    "Pec_Criacao_2"
+    "Pec_Criacao_2",
+    "ref_Producao_Lab_Micro"
    ],
    "unlocks": [
     "AM_AnimalDatabase"
@@ -1537,12 +1521,13 @@
    "desc": "Extrator que tira leite de grão e semente. Para quem não tem vaca, ou não confia nela.",
    "cost": 1500,
    "tech": "Industrial",
-   "x": 2.0,
+   "x": 2.5,
    "y": 20,
    "prereqs": [
     "Pec_Produtos_1",
     "Lav_Vegetal_1",
-    "ref_Electricity"
+    "ref_Electricity",
+    "ref_Producao_Fabrica_Usinagem"
    ],
    "unlocks": [
     "VCE_VegMilkExtractor",
@@ -1557,39 +1542,63 @@
   },
   {
    "id": "ref_Electricity",
-   "ref": "Electricity",
-   "x": 3.0,
+   "ref": "EQ_R_Energia_Ger_Eletricidade",
+   "x": 3.75,
    "y": 10.5
   },
   {
    "id": "ref_Plumbing",
    "ref": "Plumbing",
-   "x": 3.0,
+   "x": 3.75,
    "y": 12.5
   },
   {
    "id": "ref_VVE_BasicVehicles",
    "ref": "VVE_BasicVehicles",
-   "x": 1.0,
+   "x": 1.25,
    "y": 13.5
   },
   {
    "id": "ref_BasicMechtech",
    "ref": "BasicMechtech",
-   "x": 3.0,
+   "x": 3.75,
    "y": 13.5
   },
   {
    "id": "ref_ComplexFurniture",
    "ref": "ComplexFurniture",
-   "x": 3.0,
+   "x": 3.75,
    "y": 15.5
   },
   {
    "id": "ref_NutrientPaste",
    "ref": "NutrientPaste",
-   "x": 3.0,
+   "x": 3.75,
    "y": 16.5
+  },
+  {
+   "id": "ref_Producao_Oficio_Metalurgia",
+   "ref": "EQ_R_Producao_Oficio_Metalurgia",
+   "x": -1.25,
+   "y": 13.5
+  },
+  {
+   "id": "ref_Producao_Lab_Micro",
+   "ref": "EQ_R_Producao_Lab_Micro",
+   "x": 3.75,
+   "y": 10.5
+  },
+  {
+   "id": "ref_Producao_Fabrica_Usinagem",
+   "ref": "EQ_R_Producao_Fabrica_Usinagem",
+   "x": 3.75,
+   "y": 12.5
+  },
+  {
+   "id": "ref_Producao_Fabrica_Eletrificacao",
+   "ref": "EQ_R_Producao_Fabrica_Eletrificacao",
+   "x": 3.75,
+   "y": 17.5
   }
  ]
 }

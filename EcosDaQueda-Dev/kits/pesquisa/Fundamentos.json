@@ -42,136 +42,10 @@
   "Apparel_TribalA",
   "Apparel_KidTribal",
   "Apparel_Parka",
-  "MedicineHerbal"
+  "MedicineHerbal",
+  "ButcherSpot"
  ],
  "nodes": [
-  {
-   "id": "Carpintaria",
-   "idAuto": false,
-   "label": "Carpintaria",
-   "desc": "Porta de verdade, coluna, parede de toras, paliçada, cercas e ponte. Sair do buraco começa com uma porta que fecha.",
-   "cost": 250,
-   "tech": "Neolithic",
-   "x": 0.0,
-   "y": 0,
-   "prereqs": [],
-   "unlocks": [
-    "Door",
-    "Column",
-    "VFEArch_LogWall",
-    "VFEArch_FineWall",
-    "VFEM2_Palisade",
-    "VFEArch_PicketFence",
-    "VFEArch_LowFence",
-    "VFEArch_HedgeWall",
-    "VFEArch_InvisibleFence",
-    "Bridge",
-    "AB_ExoticWall",
-    "AB_ExoticDoor",
-    "AB_ExoticColumn"
-   ],
-   "branch": "",
-   "bench": "",
-   "facilities": [],
-   "techprints": 0,
-   "techprintTags": [],
-   "notes": "Fundamentos > Abrigo"
-  },
-  {
-   "id": "Alvenaria",
-   "idAuto": false,
-   "label": "Alvenaria rústica",
-   "desc": "Muro de pedra bruta e lajes de pedra: o que não queima também não cai fácil.",
-   "cost": 400,
-   "tech": "Neolithic",
-   "x": 2.0,
-   "y": 0,
-   "prereqs": [
-    "Carpintaria"
-   ],
-   "unlocks": [
-    "VFEM2_CobblestoneWall_ChunkGranite",
-    "VFEM2_CobblestoneWall_ChunkLimestone",
-    "VFEM2_CobblestoneWall_ChunkMarble",
-    "VFEM2_CobblestoneWall_ChunkSandstone",
-    "VFEM2_CobblestoneWall_ChunkSlate",
-    "VFEM2_CobblestoneWall_ChunkVacstone",
-    "VFEM2_CobblestoneWall_AB_ChunkCragstone",
-    "VFEM2_CobblestoneWall_AB_ChunkMudstone",
-    "VFEM2_CobblestoneWall_AB_ChunkObsidian",
-    "VFEM2_CobblestoneWall_AB_ChunkSlimeStone",
-    "VFEM2_CobblestoneWall_GU_ChunkRoseQuartz",
-    "FlagstoneGranite",
-    "FlagstoneLimestone",
-    "FlagstoneMarble",
-    "FlagstoneSandstone",
-    "FlagstoneSlate",
-    "AB_FlagstoneCragstone",
-    "AB_FlagstoneMudstone",
-    "AB_FlagstoneObsidian",
-    "AB_FlagstoneRoseQuartz",
-    "VFEArch_CobblestoneFloorGranite",
-    "VFEArch_CobblestoneFloorLimestone",
-    "VFEArch_CobblestoneFloorMarble",
-    "VFEArch_CobblestoneFloorSandstone",
-    "VFEArch_CobblestoneFloorSlate",
-    "AB_AsphaltFloor",
-    "AB_AsphaltBridge"
-   ],
-   "branch": "",
-   "bench": "",
-   "facilities": [],
-   "techprints": 0,
-   "techprintTags": [],
-   "notes": "Fundamentos > Abrigo"
-  },
-  {
-   "id": "Pisos",
-   "idAuto": false,
-   "label": "Pisos rústicos",
-   "desc": "Terra batida, palha, areia, tábuas, parquete e tapetes. Chão limpo é o primeiro luxo.",
-   "cost": 250,
-   "tech": "Neolithic",
-   "x": 4.0,
-   "y": 0,
-   "prereqs": [],
-   "unlocks": [
-    "VFEArch_PlayerPackedDirt",
-    "StrawMatting",
-    "AB_CompactedSand",
-    "VFEM2_Chemdrench",
-    "WoodPlankFloor",
-    "VFEArch_WoodPlankFloorBirch",
-    "VFEArch_WoodPlankFloorMahogany",
-    "VFEArch_WoodPlankFloorWalnut",
-    "VFEArch_FineWoodenFloor",
-    "VFEArch_FineWoodenFloorBirch",
-    "VFEArch_FineWoodenFloorMahogany",
-    "VFEArch_FineWoodenFloorWalnut",
-    "VFEArch_WoodenParquet",
-    "VFEArch_WoodenParquetBirch",
-    "VFEArch_WoodenParquetMahogany",
-    "VFEArch_WoodenParquetWalnut",
-    "AB_AlienWoodFloors_CrystalWood",
-    "AB_AlienWoodFloors_MushroomStalks",
-    "AB_AlienWoodFloors_RedWood",
-    "RusticRug_Broad",
-    "RusticRug_Medium",
-    "TotemicSlab_Broad",
-    "TotemicSlab_Medium",
-    "SpikecoreFloorStar_Broad",
-    "SpikecoreFloorStar_Medium",
-    "Boards_Totemic",
-    "Plates_Spikecore",
-    "Tile_Transhumanist"
-   ],
-   "branch": "",
-   "bench": "",
-   "facilities": [],
-   "techprints": 0,
-   "techprintTags": [],
-   "notes": "Fundamentos > Abrigo"
-  },
   {
    "id": "Mobilia",
    "idAuto": false,
@@ -182,7 +56,7 @@
    "x": 0.0,
    "y": 1,
    "prereqs": [
-    "Carpintaria"
+    "ref_Construcao_Carpintaria"
    ],
    "unlocks": [
     "BedrollDouble",
@@ -363,36 +237,17 @@
    "notes": "Fundamentos > Sustento"
   },
   {
-   "id": "Fumo",
-   "idAuto": false,
-   "label": "Fumo e química de quintal",
-   "desc": "Baseado de folha de fumo e psycho. O primeiro comércio de toda colônia.",
-   "cost": 200,
-   "tech": "Neolithic",
-   "x": 4.0,
-   "y": 2,
-   "prereqs": [],
-   "unlocks": [
-    "SmokeleafJoint",
-    "Psycho"
-   ],
-   "branch": "",
-   "bench": "",
-   "facilities": [],
-   "techprints": 0,
-   "techprintTags": [],
-   "notes": "Fundamentos > Sustento"
-  },
-  {
    "id": "Armas",
    "idAuto": false,
    "label": "Armas improvisadas",
-   "desc": "Bastão, machado e facas de arremesso, molotov, bomba de pavio e de fumaça.",
+   "desc": "Bastão, machado e facas de arremesso, molotov, bomba de pavio e de fumaça. O molotov e a bomba de fumaça pedem o prometeu do blazebulb.",
    "cost": 300,
    "tech": "Neolithic",
    "x": 0.0,
    "y": 3,
-   "prereqs": [],
+   "prereqs": [
+    "ref_EQ_R_Fazenda_Lav_Outros_1"
+   ],
    "unlocks": [
     "CE_Melee_QuarterStaff",
     "VFEM2_ThrowingAxe",
@@ -418,7 +273,7 @@
    "x": 2.0,
    "y": 3,
    "prereqs": [
-    "Carpintaria"
+    "ref_Construcao_Carpintaria"
    ],
    "unlocks": [
     "Barricade",
@@ -439,33 +294,16 @@
    "notes": "Fundamentos > Defesa"
   },
   {
-   "id": "Alcionita",
-   "idAuto": false,
-   "label": "Alcionita",
-   "desc": "Geradores solares de alcionita: cristal que bebe luz e devolve energia.",
-   "cost": 1000,
-   "tech": "Industrial",
-   "x": 4.0,
-   "y": 3,
-   "prereqs": [
-    "ref_Electricity"
-   ],
-   "unlocks": [
-    "AB_AlcyoniteSolar",
-    "AB_AlcyoniteSolar_Advanced"
-   ],
-   "branch": "",
-   "bench": "",
-   "facilities": [],
-   "techprints": 0,
-   "techprintTags": [],
-   "notes": "Fundamentos > Defesa"
+   "id": "ref_EQ_R_Fazenda_Lav_Outros_1",
+   "ref": "EQ_R_Fazenda_Lav_Outros_1",
+   "x": -1.0,
+   "y": 2.5
   },
   {
-   "id": "ref_Electricity",
-   "ref": "Electricity",
-   "x": 3.0,
-   "y": 2.5
+   "id": "ref_Construcao_Carpintaria",
+   "ref": "EQ_R_Construcao_Est_Carpintaria",
+   "x": -1.0,
+   "y": 0.5
   }
  ]
 }

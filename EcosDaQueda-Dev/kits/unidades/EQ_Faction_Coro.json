@@ -1,0 +1,63 @@
+{
+ "faction": "EQ_Faction_Coro",
+ "replaceExisting": true,
+ "units": [
+  {
+   "id": "Recruta",
+   "label": "Recruta",
+   "labelPlural": "",
+   "role": "combatente",
+   "points": 60,
+   "status": "rascunho",
+   "groups": {
+    "Combat": 5,
+    "Settlement": 5
+   },
+   "xenos": {
+    "EQ_Xeno_Corista": 2,
+    "EQ_Xeno_Vagante": 1
+   },
+   "kits": [
+    "Coro_Recruta"
+   ],
+   "notes": ""
+  },
+  {
+   "id": "Soldado",
+   "label": "Soldado",
+   "labelPlural": "",
+   "role": "combatente",
+   "points": 60,
+   "status": "rascunho",
+   "groups": {
+    "Combat": 5,
+    "Settlement": 5
+   },
+   "xenos": {
+    "EQ_Xeno_Corista": 2,
+    "EQ_Xeno_Vagante": 1
+   },
+   "kits": [
+    "Coro_Soldado"
+   ],
+   "notes": ""
+  },
+  {
+   "id": "Soldado_Psy",
+   "label": "Soldado Psy",
+   "labelPlural": "",
+   "role": "combatente",
+   "points": 60,
+   "status": "rascunho",
+   "groups": {
+    "Combat": 5,
+    "Settlement": 5
+   },
+   "xenos": {
+    "EQ_Xeno_Tenor": 1
+   },
+   "kits": [],
+   "notes": ""
+  }
+ ]
+}

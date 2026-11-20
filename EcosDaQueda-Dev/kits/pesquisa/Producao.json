@@ -1,0 +1,432 @@
+{
+ "id": "Producao",
+ "label": "Produção e indústria",
+ "active": true,
+ "ownTab": true,
+ "replace": true,
+ "branch": "EQ_Ramo_Bancada",
+ "desc": "Do ferro-velho à linha de montagem: a Queda levou o saber de fabricar, e cada colônia o recupera do jeito que dá. Ferro-velho (reciclagem), Ofícios (cantaria, metalurgia, oficinas), Fábrica (usinagem, eletrificação, linha de montagem), Componentes e Laboratório e prospecção. Cada nó absorve a pesquisa original: o que dependia dela passa a depender dele.",
+ "nodes": [
+  {
+   "id": "Sucata_1",
+   "idAuto": false,
+   "label": "Ferro-velho I: Catação",
+   "desc": "Bancada de reciclagem e caixa de resíduos. Tudo que o Velho Mundo deixou ainda serve. Quase tudo. Não pergunte de onde veio a mancha.",
+   "cost": 500,
+   "tech": "Industrial",
+   "x": 0.0,
+   "y": 0,
+   "prereqs": [],
+   "unlocks": [
+    "VRecyclingE_RecyclingWorkbench",
+    "VRecyclingE_WasteCrate"
+   ],
+   "absorbs": [
+    "VRecyclingE_BasicRecycling"
+   ],
+   "branch": "",
+   "bench": "",
+   "facilities": [],
+   "techprints": 0,
+   "techprintTags": [],
+   "notes": "Produção > Ferro-velho > nível I"
+  },
+  {
+   "id": "Sucata_2",
+   "idAuto": false,
+   "label": "Ferro-velho II: Desmanche",
+   "desc": "Bancada de reciclagem elétrica. Desmontar com motor é mais rápido, e o barulho espanta os catadores rivais.",
+   "cost": 800,
+   "tech": "Industrial",
+   "x": 2.5,
+   "y": 0,
+   "prereqs": [
+    "Sucata_1",
+    "ref_Electricity"
+   ],
+   "unlocks": [
+    "VRecyclingE_ElectricRecyclingWorkbench"
+   ],
+   "absorbs": [],
+   "branch": "",
+   "bench": "",
+   "facilities": [],
+   "techprints": 0,
+   "techprintTags": [],
+   "notes": "Produção > Ferro-velho > nível II"
+  },
+  {
+   "id": "Sucata_3",
+   "idAuto": false,
+   "label": "Ferro-velho III: Reciclagem complexa",
+   "desc": "Separador de liga, compactador de lixo, piso de tijolo de lixo e urânio tirado do refugo. O Velho Mundo jogava fora o que hoje vale uma guerra.",
+   "cost": 3000,
+   "tech": "Spacer",
+   "x": 5.0,
+   "y": 0,
+   "prereqs": [
+    "Sucata_2",
+    "Lab_Micro"
+   ],
+   "unlocks": [
+    "VRecyclingE_AlloypackSplitter",
+    "VRecyclingE_GarbageCompactor"
+   ],
+   "absorbs": [
+    "VRecyclingE_ComplexRecycling"
+   ],
+   "branch": "EQ_Ramo_VelhoMundo",
+   "bench": "HiTechResearchBench",
+   "facilities": [],
+   "techprints": 0,
+   "techprintTags": [],
+   "notes": "Produção > Ferro-velho > nível III"
+  },
+  {
+   "id": "Oficio_Cantaria",
+   "idAuto": false,
+   "label": "Ofícios I: Cantaria",
+   "desc": "Mesa de canteiro e compactador de gosma: pedra bruta vira bloco, e bloco vira tudo o que não pega fogo.",
+   "cost": 300,
+   "tech": "Medieval",
+   "x": 0.0,
+   "y": 1.5,
+   "prereqs": [],
+   "unlocks": [
+    "TableStonecutter",
+    "AB_SlimeCompressor"
+   ],
+   "absorbs": [
+    "Stonecutting"
+   ],
+   "branch": "",
+   "bench": "",
+   "facilities": [],
+   "techprints": 0,
+   "techprintTags": [],
+   "notes": "Produção > Ofícios > nível I"
+  },
+  {
+   "id": "Oficio_Metalurgia",
+   "idAuto": false,
+   "label": "Ofícios I: Metalurgia",
+   "desc": "Forja abastecida, forja a propano e fundição a lenha. O aço não se faz sozinho; antes da Queda, fazia.",
+   "cost": 700,
+   "tech": "Medieval",
+   "x": 0.0,
+   "y": 2.5,
+   "prereqs": [],
+   "unlocks": [
+    "FueledSmithy",
+    "AB_PropaneFueledSmithy",
+    "VFE_FueledSmelter"
+   ],
+   "absorbs": [
+    "Smithing"
+   ],
+   "branch": "",
+   "bench": "",
+   "facilities": [],
+   "techprints": 0,
+   "techprintTags": [],
+   "notes": "Produção > Ofícios > nível I"
+  },
+  {
+   "id": "Oficio_Oficinas",
+   "idAuto": false,
+   "label": "Ofícios II: Oficinas complexas",
+   "desc": "Bigorna, fole, suportes de cinzéis e cutelos, tear, manequim, quadro de pesquisa e o armário de ferraria. Ferramenta pendurada no lugar certo: o mais perto de uma fábrica que uma vila chega.",
+   "cost": 1200,
+   "tech": "Medieval",
+   "x": 2.5,
+   "y": 2,
+   "prereqs": [
+    "Oficio_Metalurgia",
+    "Oficio_Cantaria"
+   ],
+   "unlocks": [
+    "VFE_SmithyCabinet"
+   ],
+   "absorbs": [
+    "VFEM2_ComplexWorkshops"
+   ],
+   "branch": "",
+   "bench": "",
+   "facilities": [],
+   "techprints": 0,
+   "techprintTags": [],
+   "notes": "Produção > Ofícios > nível II"
+  },
+  {
+   "id": "Fabrica_Usinagem",
+   "idAuto": false,
+   "label": "Fábrica II: Usinagem",
+   "desc": "Mesa de usinagem (elétrica ou a propano) e o armário de usinagem. Peça de máquina feita por máquina: a primeira vez desde a Queda que alguém aqui fala em \"tolerância\".",
+   "cost": 1000,
+   "tech": "Industrial",
+   "x": 2.5,
+   "y": 3.5,
+   "prereqs": [
+    "Oficio_Metalurgia",
+    "ref_Electricity"
+   ],
+   "unlocks": [
+    "TableMachining",
+    "AB_PropaneTableMachining",
+    "VFE_MachiningCabinet"
+   ],
+   "absorbs": [
+    "Machining"
+   ],
+   "branch": "",
+   "bench": "",
+   "facilities": [],
+   "techprints": 0,
+   "techprintTags": [],
+   "notes": "Produção > Fábrica > nível II"
+  },
+  {
+   "id": "Fabrica_Eletrificacao",
+   "idAuto": false,
+   "label": "Fábrica II: Eletrificação das oficinas",
+   "desc": "Forja, fundição e cantaria elétricas, fundição a propano e crematório elétrico. O fole se aposenta; o gerador, nunca.",
+   "cost": 800,
+   "tech": "Industrial",
+   "x": 2.5,
+   "y": 4.5,
+   "prereqs": [
+    "Oficio_Metalurgia",
+    "Oficio_Cantaria",
+    "ref_Electricity"
+   ],
+   "unlocks": [
+    "ElectricSmithy",
+    "ElectricSmelter",
+    "VFE_TableStonecutterElectric",
+    "AB_PropaneSmelter",
+    "ElectricCrematorium"
+   ],
+   "absorbs": [],
+   "branch": "",
+   "bench": "",
+   "facilities": [],
+   "techprints": 0,
+   "techprintTags": [],
+   "notes": "Produção > Fábrica > nível II"
+  },
+  {
+   "id": "Fabrica_Linha",
+   "idAuto": false,
+   "label": "Fábrica IV: Linha de montagem",
+   "desc": "As mesas grandes de produção. Processo licenciado pela Irmandade da Forja; a garantia é anulada se você entender como funciona.",
+   "cost": 4000,
+   "tech": "Industrial",
+   "x": 7.5,
+   "y": 3.5,
+   "prereqs": [
+    "Comp_Fabricacao",
+    "Fabrica_Usinagem"
+   ],
+   "unlocks": [
+    "VFE_TableMachiningLarge",
+    "VFE_TableSmithyLarge"
+   ],
+   "absorbs": [
+    "VFE_Manufacturing"
+   ],
+   "branch": "EQ_Ramo_Forja",
+   "bench": "",
+   "facilities": [],
+   "techprints": 0,
+   "techprintTags": [],
+   "notes": "Produção > Fábrica > nível IV"
+  },
+  {
+   "id": "Comp_Fabricacao",
+   "idAuto": false,
+   "label": "Componentes III: Fabricação",
+   "desc": "Bancada de fabricação, bancada de montagem e armário de fabricação. Ninguém lembra como se faz um componente. Lembramos muito bem como se desmonta um.",
+   "cost": 3000,
+   "tech": "Industrial",
+   "x": 5.0,
+   "y": 6,
+   "prereqs": [
+    "Fabrica_Usinagem",
+    "Lab_Micro"
+   ],
+   "unlocks": [
+    "FabricationBench",
+    "VFE_ComponentFabricationBench",
+    "VFE_FabricationCabinet"
+   ],
+   "absorbs": [
+    "Fabrication"
+   ],
+   "branch": "EQ_Ramo_VelhoMundo",
+   "bench": "HiTechResearchBench",
+   "facilities": [],
+   "techprints": 0,
+   "techprintTags": [],
+   "notes": "Produção > Componentes > nível III"
+  },
+  {
+   "id": "Comp_Avancada",
+   "idAuto": false,
+   "label": "Componentes IV: Fabricação avançada",
+   "desc": "Componente avançado. A Forja chama de \"peça de reposição autorizada\"; os outros chamam de monopólio.",
+   "cost": 4000,
+   "tech": "Spacer",
+   "x": 7.5,
+   "y": 6,
+   "prereqs": [
+    "Comp_Fabricacao"
+   ],
+   "unlocks": [
+    "ComponentSpacer"
+   ],
+   "absorbs": [
+    "AdvancedFabrication"
+   ],
+   "branch": "EQ_Ramo_Forja",
+   "bench": "HiTechResearchBench",
+   "facilities": [],
+   "techprints": 0,
+   "techprintTags": [],
+   "notes": "Produção > Componentes > nível IV"
+  },
+  {
+   "id": "Lab_Micro",
+   "idAuto": false,
+   "label": "Laboratório e prospecção II: Microeletrônica",
+   "desc": "Bancada de pesquisa de alta tecnologia. Soldar o que cabe na ponta do dedo, com a mão que tremeu a vida toda.",
+   "cost": 2000,
+   "tech": "Industrial",
+   "x": 2.5,
+   "y": 7.5,
+   "prereqs": [
+    "ref_Electricity"
+   ],
+   "unlocks": [
+    "HiTechResearchBench"
+   ],
+   "absorbs": [
+    "MicroelectronicsBasics"
+   ],
+   "branch": "",
+   "bench": "",
+   "facilities": [],
+   "techprints": 0,
+   "techprintTags": [],
+   "notes": "Produção > Laboratório e prospecção > nível II"
+  },
+  {
+   "id": "Lab_Refinaria",
+   "idAuto": false,
+   "label": "Laboratório e prospecção II: Refinação de biocombustível",
+   "desc": "Refinaria de biocombustível, rede de propano e galões. Combustível de qualquer coisa que um dia esteve viva.",
+   "cost": 700,
+   "tech": "Industrial",
+   "x": 2.5,
+   "y": 8.5,
+   "prereqs": [
+    "ref_Electricity"
+   ],
+   "unlocks": [
+    "BiofuelRefinery"
+   ],
+   "absorbs": [
+    "BiofuelRefining"
+   ],
+   "branch": "",
+   "bench": "",
+   "facilities": [],
+   "techprints": 0,
+   "techprintTags": [],
+   "notes": "Produção > Laboratório e prospecção > nível II"
+  },
+  {
+   "id": "Lab_Perfuracao",
+   "idAuto": false,
+   "label": "Laboratório e prospecção III: Perfuração profunda",
+   "desc": "Broca profunda. O subsolo ainda guarda o que o Império não teve tempo de minerar.",
+   "cost": 1000,
+   "tech": "Industrial",
+   "x": 5.0,
+   "y": 8.5,
+   "prereqs": [
+    "Lab_Micro"
+   ],
+   "unlocks": [
+    "DeepDrill"
+   ],
+   "absorbs": [
+    "DeepDrilling"
+   ],
+   "branch": "",
+   "bench": "HiTechResearchBench",
+   "facilities": [],
+   "techprints": 0,
+   "techprintTags": [],
+   "notes": "Produção > Laboratório e prospecção > nível III"
+  },
+  {
+   "id": "Lab_Analisador",
+   "idAuto": false,
+   "label": "Laboratório e prospecção III: Multi-analisador",
+   "desc": "Multi-analisador. A Ordem do Silêncio empresta a técnica em troca de uma cópia de tudo o que você descobrir.",
+   "cost": 3000,
+   "tech": "Industrial",
+   "x": 5.0,
+   "y": 7.5,
+   "prereqs": [
+    "Lab_Micro"
+   ],
+   "unlocks": [
+    "MultiAnalyzer"
+   ],
+   "absorbs": [
+    "MultiAnalyzer"
+   ],
+   "branch": "EQ_Ramo_Silencio",
+   "bench": "HiTechResearchBench",
+   "facilities": [],
+   "techprints": 0,
+   "techprintTags": [],
+   "notes": "Produção > Laboratório e prospecção > nível III"
+  },
+  {
+   "id": "Lab_Escaneres",
+   "idAuto": false,
+   "label": "Laboratório e prospecção IV: Escâneres",
+   "desc": "Escaneadora penetradora subterrânea e de minerais de longo alcance. A Ordem mede o subsolo; o que se escuta lá embaixo não entra no relatório.",
+   "cost": 2000,
+   "tech": "Industrial",
+   "x": 7.5,
+   "y": 8.5,
+   "prereqs": [
+    "Lab_Perfuracao",
+    "Lab_Analisador"
+   ],
+   "unlocks": [
+    "GroundPenetratingScanner",
+    "LongRangeMineralScanner"
+   ],
+   "absorbs": [
+    "GroundPenetratingScanner",
+    "LongRangeMineralScanner"
+   ],
+   "branch": "EQ_Ramo_Silencio",
+   "bench": "HiTechResearchBench",
+   "facilities": [],
+   "techprints": 0,
+   "techprintTags": [],
+   "notes": "Produção > Laboratório e prospecção > nível IV"
+  },
+  {
+   "id": "ref_Electricity",
+   "ref": "EQ_R_Energia_Ger_Eletricidade",
+   "x": 1.25,
+   "y": -1.0
+  }
+ ]
+}

@@ -1,0 +1,118 @@
+{
+ "id": "Coro_Recruta",
+ "label": "Coro Recruta",
+ "faction": "EQ_Faction_Coro",
+ "pawnKinds": [
+  "EQ_U_Coro_Recruta"
+ ],
+ "chance": 1,
+ "variations": [
+  {
+   "name": "Linha",
+   "weight": 1,
+   "apparel": [
+    {
+     "def": "VFEM2_Apparel_PaddedArmor",
+     "quality": "Poor"
+    },
+    {
+     "def": "Apparel_Tailcap",
+     "quality": "Poor"
+    },
+    {
+     "def": "VFEM2_Apparel_Mantle",
+     "quality": "Poor"
+    },
+    {
+     "def": "Apparel_Bandolier",
+     "quality": "Poor"
+    }
+   ],
+   "weapons": [
+    {
+     "def": "CE_Gun_MosinNagant",
+     "quality": "Poor"
+    },
+    {
+     "def": "Gun_Revolver",
+     "quality": "Poor"
+    },
+    {
+     "def": "MeleeWeapon_Knife",
+     "quality": "Poor"
+    }
+   ],
+   "inventory": [
+    {
+     "def": "Ammo_762x54mmR_FMJ",
+     "count": 40
+    },
+    {
+     "def": "Ammo_44Magnum_HP",
+     "count": 24
+    },
+    {
+     "def": "MealSurvivalPack",
+     "count": 2
+    }
+   ]
+  },
+  {
+   "name": "Toxico",
+   "weight": 1,
+   "apparel": [
+    {
+     "def": "VFEM2_Apparel_PaddedArmor",
+     "quality": "Poor"
+    },
+    {
+     "def": "Apparel_Tailcap",
+     "quality": "Poor"
+    },
+    {
+     "def": "VFEM2_Apparel_Mantle",
+     "quality": "Poor"
+    },
+    {
+     "def": "Apparel_Bandolier",
+     "quality": "Poor"
+    },
+    {
+     "def": "CE_Apparel_ImprovGasMask",
+     "quality": "Poor"
+    }
+   ],
+   "weapons": [
+    {
+     "def": "CE_Gun_MosinNagant",
+     "quality": "Poor"
+    },
+    {
+     "def": "Gun_Revolver",
+     "quality": "Poor"
+    },
+    {
+     "def": "MeleeWeapon_Knife",
+     "quality": "Poor"
+    },
+    {
+     "def": "Weapon_GrenadeTox"
+    }
+   ],
+   "inventory": [
+    {
+     "def": "Ammo_762x54mmR_FMJ",
+     "count": 40
+    },
+    {
+     "def": "Ammo_44Magnum_HP",
+     "count": 24
+    },
+    {
+     "def": "MealSurvivalPack",
+     "count": 2
+    }
+   ]
+  }
+ ]
+}

@@ -3,9 +3,10 @@
 Cada árvore é kits/pesquisa/<id>.json:
   {id, label, desc, active, ownTab, branch, replace,
    nodes: [{id, label, desc, cost, tech, x, y, prereqs: [id de nó], unlocks: [defName], branch, bench,
-            facilities: [defName], techprints, techprintTags: [tag], notes}
+            facilities: [defName], techprints, techprintTags: [tag], absorbs: [ResearchProjectDef original], notes}
            | {id, ref: <ResearchProjectDef original>, x, y}]}
 Nó com "ref" é uma pesquisa que já existe no jogo, posta na árvore só para servir de pré-requisito.
+"absorbs" lista pesquisas originais que o nó substitui: elas somem e tudo que dependia delas passa a depender do nó.
 build_research() gera Mods/EcosDaQueda/Defs/Pesquisa/EQ_Pesquisa.xml com as árvores ativas: uma ResearchTabDef por
 árvore (se ownTab) e um ResearchProjectDef EQ_R_<árvore>_<nó> por nó, com a extensão EcosDaQueda.ResearchEditorExt
 (desbloqueios, ramo, manter aba). O código do mod (ResearchEditor.cs) aplica os desbloqueios na carga.
@@ -83,6 +84,7 @@ def build_research(catalog=None):
              '<Defs>']
     n_proj = n_trees = 0
     claimed = {}
+    claimed_abs = {}
     for t in load_trees():
         if not t.get('active'):
             continue
@@ -176,6 +178,15 @@ def build_research(catalog=None):
             lines += ['    <modExtensions>', '      <li Class="EcosDaQueda.ResearchEditorExt">']
             if unl:
                 lines.append('        <unlocks>' + ''.join('<li>%s</li>' % u for u in unl) + '</unlocks>')
+            ab = [a for a in n.get('absorbs', []) if a]
+            for a in ab:
+                if known_proj and a not in known_proj and not a.startswith('EQ_R_'):
+                    report.append('%s: pesquisa absorvida não existe no catálogo: %s' % (name, a))
+                if a in claimed_abs:
+                    report.append('%s: %s também é absorvida por %s' % (name, a, claimed_abs[a]))
+                claimed_abs[a] = name
+            if ab:
+                lines.append('        <absorbs>' + ''.join('<li>%s</li>' % a for a in ab) + '</absorbs>')
             if not t.get('replace', True):
                 lines.append('        <replace>false</replace>')
             if branch:

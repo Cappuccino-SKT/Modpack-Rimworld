@@ -16,12 +16,12 @@ Legenda da tabela:
 
 | # | Árvore | Itens | Sem pesq. | Ramo de hoje | Situação |
 |---|---|---|---|---|---|
-| 1 | **Fazenda** | 278 | 0 | Bancada | **feita** (61 pesquisas) |
-| 2 | Construção (paredes, portas, pisos) | 557 | 80 | Bancada | a fazer |
+| 1 | **Fazenda** | 278 | 0 | Bancada | **feita** (61 pesquisas; textos na lore e ligada à Produção em 2026-11-20) |
+| 2 | Construção (paredes, portas, pisos) | 557 | 80 | Bancada | **feita** (17 pesquisas, 519 coisas) |
 | 3 | Mobília e lazer | 179 | 41 | Bancada (Coro 4) | a fazer |
-| 4 | Produção e indústria | 79 | 19 | Bancada (Silêncio 6, Forja 4) | a fazer |
+| 4 | Produção e indústria | 79 | 19 | Bancada (Silêncio 6, Forja 4) | **feita** (16 pesquisas, 15 absorvidas) |
 | 5 | Logística (armazenamento, canos, reciclagem) | 92 | 11 | Bancada | a fazer |
-| 6 | Energia | 45 | 16 | Bancada (Velho Mundo 2) | a fazer |
+| 6 | Energia | 45 | 16 | Bancada (Velho Mundo 2) | **feita** (12 pesquisas, 11 absorvidas) |
 | 7 | Água, clima e higiene (DBH + temperatura) | 83 | 10 | Bancada (Velho Mundo 3) | a fazer |
 | 8 | Cozinha e bebidas | 109 | 38 | Bancada | a fazer |
 | 9 | Vestuário | 108 | 29 | Bancada (Forja 7) | a fazer |
@@ -56,7 +56,7 @@ Comandos usados: `inicio` (roteiro `tests/inicio-pesquisa.txt`, grava `tests/out
 - Por árvore: Armas e munição 380 (quase tudo munição), Medicina 331 (quase tudo cirurgias), Ideologia 204, Construção 143, Mobília 94, Logística 65, Vestuário 62, Cozinha 45, Água 40, Produção 35, Energia 26, Clima 13, e o resto com menos de 10.
 - Algumas coisas já ficam presas por outro caminho, sem pesquisa própria: drones (precisam da bancada de drones), ARCs (vêm da missão do gerador), munição (precisa da arma), aço e plastaço (precisam de bancada).
 
-**Aplicado em 2026-11-19 (proposta aprovada):** `Patches/EQ_InicioSemPesquisa.xml` tira as tags de início da `PlayerColony` (0 pesquisas concluídas; os memes ainda dão as deles). O kit livre está em `kits/pesquisa/Fundamentos.json` (campo `kit`, 36 defs). As outras 161 coisas livres foram para a árvore provisória **Fundamentos** (13 pesquisas baratas: Carpintaria, Alvenaria, Pisos, Mobília, Arte, Armazenamento, Higiene, Cozinha, Roupas, Fumo, Armas, Fortificação, Alcionita). O comando `inicio` confere tudo (`concluídas agora: 0`, `kit livre 36/36`, `Fundamentos travados 161`). Ficaram de fora porque já têm outra trava: munição (precisa da arma), cirurgias (precisam do implante), itens de ideologia (precisam do preceito), drones e ARCs, e recursos feitos em bancada.
+**Aplicado em 2026-11-19 (proposta aprovada):** `Patches/EQ_InicioSemPesquisa.xml` tira as tags de início da `PlayerColony` (0 pesquisas concluídas; os memes ainda dão as deles). O kit livre está em `kits/pesquisa/Fundamentos.json` (campo `kit`, 36 defs). As outras 161 coisas livres foram para a árvore provisória **Fundamentos** (13 pesquisas baratas: Carpintaria, Alvenaria, Pisos, Mobília, Arte, Armazenamento, Higiene, Cozinha, Roupas, Fumo, Armas, Fortificação, Alcionita). O comando `inicio` confere tudo (`concluídas agora: 0`, `kit livre 36/36`, `Fundamentos travados 161`). Em 2026-11-20 o açougue (`ButcherSpot`) entrou no kit (37) e o nó Fumo saiu de Fundamentos (baseado e psycho foram para Drogas I e II da Fazenda). Ficaram de fora porque já têm outra trava: munição (precisa da arma), cirurgias (precisam do implante), itens de ideologia (precisam do preceito), drones e ARCs, e recursos feitos em bancada.
 
 **Proposta original:**
 1. **Zerar as pesquisas iniciais.** Nenhum cenário começa com Eletricidade, água encanada etc. Opcional: um toque por cenário, como o Abrigo sabendo Eletricidade ou a Forja sabendo Metalurgia.
@@ -106,28 +106,33 @@ Para cada árvore: as pesquisas originais que ela absorve (projetos cuja maior p
 - Categorias: pisos (498) e estrutura (59).
 - Mods principais: VFE Architect, Ideology, Alpha Biomes e VFE Medieval 2. O mod "?" (389) são as variantes de cor de piso geradas.
 - Absorve: Portas automáticas, Fabricação de carpete, Arquitetura medieval, Heráldica e parte de Metalurgia.
-- Ideia de blocos:
-  - Paredes e portas, por era: madeira → pedra → aço → plastaço/autoportas.
-  - Pisos, por material: chão batido → madeira → pedra → tapete → metal/estéril.
-  - Arquitetura medieval e heráldica.
+- **Feita em 2026-11-20** (`kits/pesquisa/Construcao.json`), "reconstruir o que a guerra derrubou"; caso 2 decidido: **pisos por material, as cores vêm juntas**.
+  - **Estrutura:** Carpintaria I, Alvenaria rústica I, Pedra lavrada II (cerca de tijolos, pontes de pedra), Ferro e grade II (cela, alambrado, reforçados do CE), Portas automáticas III, Blindagem IV (Velho Mundo).
+  - **Pisos:** Rústicos I, Pedra bruta I, Ladrilho de pedra II, Tapete II (257 cores), Ladrilho fino III, Tapete fino III (63), Concreto e asfalto III, Ladrilho metálico IV, Materiais estéreis IV.
+  - **Arquitetura:** Arquitetura medieval II (castelo, enxaimel, esteiras de couro), Heráldica III.
+  - Absorve: Portas automáticas, Fabricação de carpete, Arquitetura medieval, Heráldica, Materiais estéreis. Carpintaria, Alvenaria e Pisos saíram de Fundamentos (8 pesquisas agora).
+  - Ficam de fora: pisos e lajes de ideologia (mórbido, espinhoso, totêmico, viking; vão para Ideologia, por ora com a Cantaria), decorações nobres e porta ornamentada (Mobília/Coro), os pisos de prefab do framework e o que está no kit.
 
 **3. Mobília e lazer (179).**
 - Mods principais: VFE (mobília básica, moderna e artesanal), Medieval 2 (oficinas complexas), Empire (decorações nobres, órgãos, trono), Door Mat e Alpha Biomes.
 - Absorve: Mobília básica, Mobília moderna, Mobília artesanal, Descarte de lixo, Luzes avançadas, TV de tubo, TV de tela plana, Harpa, Cravo, Piano, Decorações nobres, Órgãos de tubos e Trono estélico.
 - Atenção: Eletricidade, Refinação de biocombustível e Perfuração profunda caíram aqui só por arrasto. São pesquisas-base e devem ficar como nós de referência.
 
-**4. Produção e indústria (79).**
-- Conteúdo: bancadas (fabricação, usinagem, manufatura VFE), escâneres, bomba de umidade, multi-analisador e autópsias.
-- Absorve: Fabricação, Manufatura, Escaneadoras, Multi-analisador, Autópsias, Produção de drogas, Fabricação de cerveja e Vinho.
-- Atenção: cerveja e vinho talvez fiquem melhor em Cozinha e bebidas.
+**4. Produção e indústria (79). Feita em 2026-11-20** (`kits/pesquisa/Producao.json`, gerador no histórico).
+- História: "do ferro-velho à linha de montagem" — a Queda levou o saber de fabricar; componentes são do Velho Mundo, a linha de montagem e o componente avançado da Forja, escâneres e multi-analisador do Silêncio.
+- Blocos e níveis (I medieval, II industrial, III exige bancada de alta tecnologia, IV espacial): **Ferro-velho** (catação, desmanche, reciclagem complexa), **Ofícios** (cantaria, metalurgia, oficinas complexas), **Fábrica** (usinagem, eletrificação das oficinas, linha de montagem), **Componentes** (fabricação, fabricação avançada), **Laboratório e prospecção** (microeletrônica, refinação de biocombustível, perfuração profunda, multi-analisador, escâneres).
+- **Absorve** (campo `absorbs`): Lapidação, Metalurgia, Oficinas complexas, Usinagem, Manufatura, Fabricação, Fabricação avançada, Microeletrônica, Refinação de biocombustível, Perfuração profunda, Multi-analisador, as 2 escaneadoras e as 2 reciclagens. A original some e tudo que dependia dela passa a depender do nó novo; por isso Cantaria (208 desbloqueios), Microeletrônica (68) e Metalurgia (44) trazem, por enquanto, conteúdo de outras árvores (pisos, munição EMP, armas), que sai quando elas forem montadas.
+- Decisões: cerveja, vinho, hidromel e mosto vão para **Cozinha**; a reciclagem veio da Logística; as oficinas complexas, da Mobília. Fogões, alfaiataria, laboratórios de drogas e poções, autópsias, bancada de munição e fundição de warcasket ficam para Cozinha, Vestuário, Drogas, Medicina, Armas e Armaduras. A bancada de engenharia reversa continua no projeto próprio (exige Catação pela absorção). Fogão grande e alfaiataria grande ficam na Linha de montagem até Cozinha e Vestuário.
 
 **5. Logística (92).**
-- Conteúdo: armazenamento (Neat, Adaptive, LWM), reciclagem (VRecycling) e canos.
-- Absorve: Reciclagem básica e Reciclagem complexa, mais o armazenamento que hoje está em Mobília complexa e Usinagem.
+- Conteúdo: armazenamento (Neat, Adaptive, LWM) e canos. (A reciclagem foi para a Produção, bloco Ferro-velho.)
+- Absorve: o armazenamento que hoje está em Mobília complexa e Usinagem.
 
-**6. Energia (45).**
-- Conteúdo: VQE Generator (ARCs), VFE Power e Core.
-- Absorve: Baterias, Baterias avançadas, Painéis solares, Geotérmica, Maremotriz, Moinho, Geradores industriais, Nuclear, Fontes de energia avançadas e Gerador toxificante.
+**6. Energia (45). Feita em 2026-11-20** (`kits/pesquisa/Energia.json`).
+- História: "acender as luzes de novo". Blocos: **Combustão** (Eletricidade I, geradores químicos II, industriais III, nuclear IV/Forja), **Renováveis** (vento e água II, sol e alcionita II, maré e calor da terra III, fontes avançadas IV/Velho Mundo), **Baterias** (II, avançadas IV/Velho Mundo) e **Poluição** (gerador toxificante II, bombas de poluição II).
+- Absorve: Eletricidade, Baterias, Baterias avançadas, Painéis solares, Geotérmica, Maremotriz, Moinho, Geradores industriais, Nuclear, Fontes de energia avançadas e Gerador toxificante. Liga-se à Produção (refinaria, usinagem, microeletrônica).
+- A Eletricidade nova é a base de Produção, Fazenda e Fundamentos (as refs foram trocadas). Por absorção ela traz, por enquanto, 32 coisas de outras árvores (luzes, aquecedor, fogão elétrico, alto-falante, batedores dos insetos...).
+- A Alcionita saiu de Fundamentos. As variantes do ARC (VQE The Generator) não entram: vêm pela missão; o ARC básico vem com a Eletricidade.
 
 **7. Água, clima e higiene (83).**
 - Conteúdo: todo o Dubs Bad Hygiene, mais condicionadores e refrigeradores.
@@ -197,4 +202,5 @@ Cada árvore pode ser montada como a Fazenda:
 - um script gera o JSON a partir do mapa;
 - você revisa e ajusta no editor (`/pesquisa`);
 - "Gerar Defs" aplica no jogo;
-- a pesquisa original que esvaziar some sozinha.
+- a pesquisa original que esvaziar some sozinha; a que for substituída de vez entra em `absorbs` do nó.
+- Textos no tom da Produção e da Fazenda: o nome do nível diz o que é, a descrição diz o conteúdo e termina com uma frase da lore (a Queda, o Velho Mundo, as 4 potências, a Feira).

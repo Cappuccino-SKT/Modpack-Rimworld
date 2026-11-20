@@ -1,0 +1,222 @@
+{
+ "id": "Coro_Soldado",
+ "label": "Coro Soldado",
+ "faction": "EQ_Faction_Coro",
+ "pawnKinds": [
+  "EQ_U_Coro_Soldado"
+ ],
+ "chance": 1,
+ "variations": [
+  {
+   "name": "Linha",
+   "weight": 1,
+   "apparel": [
+    {
+     "def": "VFEM2_Apparel_PaddedArmor"
+    },
+    {
+     "def": "Apparel_Bandolier",
+     "quality": "Normal"
+    },
+    {
+     "def": "CE_Armor_Balaclava"
+    },
+    {
+     "def": "Apparel_SimpleHelmet"
+    },
+    {
+     "def": "CE_Armor_Cuirass"
+    }
+   ],
+   "weapons": [
+    {
+     "def": "CE_Gun_SKS"
+    },
+    {
+     "def": "Gun_Revolver"
+    },
+    {
+     "def": "CE_Melee_Saber"
+    }
+   ],
+   "inventory": [
+    {
+     "def": "Ammo_762x39mmSoviet_FMJ",
+     "count": 40
+    },
+    {
+     "def": "Ammo_44Magnum_FMJ",
+     "count": 24
+    },
+    {
+     "def": "MealSurvivalPack",
+     "count": 2
+    },
+    {
+     "def": "VBE_HotCoffee",
+     "count": 2
+    }
+   ]
+  },
+  {
+   "name": "Toxico",
+   "weight": 1,
+   "apparel": [
+    {
+     "def": "VFEM2_Apparel_PaddedArmor"
+    },
+    {
+     "def": "Apparel_Bandolier",
+     "quality": "Normal"
+    },
+    {
+     "def": "CE_Armor_Balaclava"
+    },
+    {
+     "def": "Apparel_SimpleHelmet"
+    },
+    {
+     "def": "CE_Armor_Cuirass"
+    },
+    {
+     "def": "CE_Apparel_ImprovGasMask"
+    }
+   ],
+   "weapons": [
+    {
+     "def": "CE_Gun_SKS"
+    },
+    {
+     "def": "Gun_Revolver"
+    },
+    {
+     "def": "CE_Melee_Saber"
+    },
+    {
+     "def": "Weapon_GrenadeTox"
+    }
+   ],
+   "inventory": [
+    {
+     "def": "Ammo_762x39mmSoviet_FMJ",
+     "count": 40
+    },
+    {
+     "def": "Ammo_44Magnum_FMJ",
+     "count": 24
+    },
+    {
+     "def": "MealSurvivalPack",
+     "count": 2
+    },
+    {
+     "def": "VBE_HotCoffee",
+     "count": 2
+    }
+   ]
+  },
+  {
+   "name": "Suporte",
+   "weight": 1,
+   "apparel": [
+    {
+     "def": "VFEM2_Apparel_PaddedArmor"
+    },
+    {
+     "def": "CE_Armor_Balaclava"
+    },
+    {
+     "def": "Apparel_SimpleHelmet"
+    },
+    {
+     "def": "CE_Armor_Cuirass"
+    },
+    {
+     "def": "CE_Apparel_Backpack"
+    }
+   ],
+   "weapons": [
+    {
+     "def": "CE_Gun_MadsenLMG"
+    },
+    {
+     "def": "Gun_Revolver"
+    },
+    {
+     "def": "MeleeWeapon_Knife"
+    }
+   ],
+   "inventory": [
+    {
+     "def": "MealSurvivalPack",
+     "count": 2
+    },
+    {
+     "def": "VBE_HotCoffee",
+     "count": 2
+    },
+    {
+     "def": "Ammo_762x51mmNATO_HP",
+     "count": 120
+    },
+    {
+     "def": "Ammo_44Magnum_HP",
+     "count": 24
+    }
+   ]
+  },
+  {
+   "name": "Cincinerador",
+   "weight": 1,
+   "apparel": [
+    {
+     "def": "VFEM2_Apparel_PaddedArmor"
+    },
+    {
+     "def": "CE_Armor_Balaclava"
+    },
+    {
+     "def": "Apparel_SimpleHelmet"
+    },
+    {
+     "def": "CE_Armor_Cuirass"
+    },
+    {
+     "def": "CE_Apparel_ImprovGasMask"
+    },
+    {
+     "def": "CE_Apparel_Backpack"
+    }
+   ],
+   "weapons": [
+    {
+     "def": "VWE_Gun_Flamethrower"
+    },
+    {
+     "def": "Gun_Revolver"
+    },
+    {
+     "def": "CE_Melee_Saber"
+    }
+   ],
+   "inventory": [
+    {
+     "def": "MealSurvivalPack",
+     "count": 2
+    },
+    {
+     "def": "VBE_HotCoffee",
+     "count": 2
+    },
+    {
+     "def": "Ammo_Flamethrower_Napalm",
+     "count": 160
+    },
+    {
+     "def": "Ammo_44Magnum_HP",
+     "count": 24
+    }
+   ]
+  }
+ ]
+}
